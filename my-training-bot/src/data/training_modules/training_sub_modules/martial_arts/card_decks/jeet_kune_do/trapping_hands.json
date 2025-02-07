@@ -1,0 +1,32 @@
+{
+    "id": "trapping_hands",
+    "name": "Trapping Hands",
+    "description": "Develop hand control techniques that allow rapid offense and defense within close-range combat.",
+    "focus": ["Hand Sensitivity", "Control"],
+    "cards": [
+        {
+            "id": "pak_sao",
+            "title": "Pak Sao (Slap Block)",
+            "description": "A redirection technique that deflects an opponent’s attack to create an opening.",
+            "bulletpoints": [
+                "Use the palm to deflect an incoming strike sideways",
+                "Maintain relaxed shoulders for quicker follow-up",
+                "Transition into an immediate counterattack"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "lop_sao",
+            "title": "Lop Sao (Grab and Pull)",
+            "description": "A technique used to trap and pull an opponent’s arm, disrupting their attack.",
+            "bulletpoints": [
+                "Grip the opponent’s wrist firmly while pulling",
+                "Keep elbows close to the body for better leverage",
+                "Follow up with a counterstrike or takedown"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

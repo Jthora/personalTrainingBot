@@ -1,0 +1,26 @@
+{
+    "id": "dance",
+    "name": "Dance Training",
+    "description": "A structured training module for high-energy, flow-based, and EDM-inspired dance styles.",
+    "difficulty": "Beginner to Advanced",
+    "estimated_time": "6-24 months",
+    "focus": [
+        "Rhythm & Musicality",
+        "Prop-Based Flow",
+        "Dynamic Footwork"
+    ],
+    "submodules": [
+        "dance/contact_staff_flow",
+        "dance/poi_spinning",
+        "dance/liquid_dance",
+        "dance/fan_dancing",
+        "dance/industrial_dance",
+        "dance/jumpstyle_hardstyle",
+        "dance/cutting_shapes",
+        "dance/gloving_tutting",
+        "dance/breakdance",
+        "dance/rock_dance",
+        "dance/dubstep_glitch",
+        "dance/freestyle_rave"
+    ]
+}

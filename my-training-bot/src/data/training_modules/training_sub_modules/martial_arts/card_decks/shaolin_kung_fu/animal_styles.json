@@ -1,0 +1,32 @@
+{
+    "id": "animal_styles",
+    "name": "Animal Styles",
+    "description": "Train in the legendary animal-inspired Shaolin techniques, each emphasizing a different combat strategy.",
+    "focus": ["Agility", "Power"],
+    "cards": [
+        {
+            "id": "tiger_claw",
+            "title": "Tiger Claw",
+            "description": "A powerful technique that mimics the crushing force of a tiger’s strike.",
+            "bulletpoints": [
+                "Use an open-hand grip with fingers slightly curved",
+                "Strike with the palm while raking with fingers",
+                "Target pressure points like the face, throat, or ribs"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "crane_beak",
+            "title": "Crane Beak Strike",
+            "description": "A precision-based attack targeting soft tissue areas.",
+            "bulletpoints": [
+                "Form the fingers into a beak-like shape",
+                "Strike upward with the tips of the fingers",
+                "Use fluid movements to maintain agility"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

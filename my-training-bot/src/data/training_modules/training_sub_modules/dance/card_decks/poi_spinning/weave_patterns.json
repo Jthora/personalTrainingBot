@@ -1,0 +1,32 @@
+{
+    "id": "weave_patterns",
+    "name": "Weave Patterns",
+    "description": "Learn the foundational and advanced weave movements to enhance poi spinning flow.",
+    "focus": ["Cross-Body Coordination", "Continuous Motion"],
+    "cards": [
+        {
+            "id": "three_beat_weave",
+            "title": "Three-Beat Weave",
+            "description": "A fundamental poi weave pattern that involves crossing the arms and alternating sides.",
+            "bulletpoints": [
+                "Keep elbows loose to allow smooth transitions",
+                "Use controlled wrist movements for better accuracy",
+                "Start slow and increase speed gradually"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "reverse_weave",
+            "title": "Reverse Weave",
+            "description": "A movement where the weave pattern is reversed, adding complexity to transitions.",
+            "bulletpoints": [
+                "Begin with slow reverse motions before attempting full flow",
+                "Maintain rhythm and timing between both poi",
+                "Experiment with transitioning between forward and reverse weaves"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "id": "wushu",
+    "name": "Wushu",
+    "description": "A Chinese martial art known for its acrobatics, dynamic forms, and powerful striking techniques.",
+    "difficulty": "Advanced",
+    "estimated_time": "12-36 months",
+    "focus": ["Speed", "Explosiveness", "Aerial Movements"],
+    "cardDecks": [
+        "martial_arts/card_decks/wushu/dynamic_forms",
+        "martial_arts/card_decks/wushu/aerial_movements",
+        "martial_arts/card_decks/wushu/long_fist_and_southern_fist"
+    ]
+}

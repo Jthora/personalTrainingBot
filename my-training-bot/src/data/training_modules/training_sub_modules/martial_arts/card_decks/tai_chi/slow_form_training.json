@@ -1,0 +1,32 @@
+{
+    "id": "slow_form_training",
+    "name": "Slow Form Training",
+    "description": "Step-by-step guidance on practicing slow, deliberate Tai Chi forms to improve flow and mindfulness.",
+    "focus": ["Posture", "Controlled Movement"],
+    "cards": [
+        {
+            "id": "ward_off_movement",
+            "title": "Ward Off Movement",
+            "description": "A fundamental movement that builds stability and control.",
+            "bulletpoints": [
+                "Shift weight smoothly between both legs",
+                "Extend one arm while maintaining a rounded posture",
+                "Keep movements continuous and uninterrupted"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "grasp_the_bird_tail",
+            "title": "Grasp the Bird’s Tail",
+            "description": "A combination of Tai Chi movements incorporating balance and coordination.",
+            "bulletpoints": [
+                "Move through each transition slowly and with intent",
+                "Maintain a relaxed yet controlled posture",
+                "Use breath to guide each movement"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

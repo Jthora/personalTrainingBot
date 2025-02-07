@@ -1,0 +1,12 @@
+{
+    "id": "gloving_tutting",
+    "name": "Gloving & Tutting",
+    "description": "Beat-synced, intricate finger and hand movements used in EDM dance.",
+    "difficulty": "Intermediate",
+    "estimated_time": "4-10 months",
+    "focus": ["Hand Coordination", "Illusions", "Precision"],
+    "cardDecks": [
+        "dance/card_decks/gloving_tutting/finger_isolations",
+        "dance/card_decks/gloving_tutting/box_tutting_patterns"
+    ]
+}

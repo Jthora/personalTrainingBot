@@ -1,0 +1,32 @@
+{
+    "id": "butterfly_moves",
+    "name": "Butterfly Moves",
+    "description": "Master symmetrical and dynamic poi movements with butterfly-style spins.",
+    "focus": ["Hand Coordination", "Poi Flow"],
+    "cards": [
+        {
+            "id": "basic_butterfly",
+            "title": "Basic Butterfly",
+            "description": "A simple inward butterfly movement where both poi move in opposite directions in front of the body.",
+            "bulletpoints": [
+                "Keep wrists close together for better control",
+                "Focus on maintaining even poi spacing",
+                "Practice with slow movements before increasing speed"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "split_time_butterfly",
+            "title": "Split-Time Butterfly",
+            "description": "A variation where one poi moves slightly before the other, creating a staggered effect.",
+            "bulletpoints": [
+                "Introduce slight delay in one poi movement",
+                "Maintain relaxed wrists for better fluidity",
+                "Gradually increase speed for smoother execution"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

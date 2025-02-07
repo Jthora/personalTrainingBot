@@ -1,0 +1,32 @@
+{
+    "id": "ginga_and_fluidity",
+    "name": "Ginga and Fluidity",
+    "description": "Develop the foundational movement of Capoeira, the Ginga, which allows fluid transitions between attacks and defenses.",
+    "focus": ["Rhythm", "Footwork"],
+    "cards": [
+        {
+            "id": "basic_ginga",
+            "title": "Basic Ginga Movement",
+            "description": "A fundamental side-to-side rocking motion used to maintain fluidity and readiness.",
+            "bulletpoints": [
+                "Keep knees slightly bent for mobility",
+                "Move arms naturally for balance",
+                "Maintain a constant rhythm to the music"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "advanced_ginga",
+            "title": "Advanced Ginga Variations",
+            "description": "Enhance the Ginga by integrating directional shifts and feints.",
+            "bulletpoints": [
+                "Use feints to mislead your opponent",
+                "Keep your center of gravity low for better stability",
+                "Practice transitioning smoothly between movements"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "id": "animal_forms",
+    "name": "Animal Forms",
+    "description": "Master Xing Yi’s animal-inspired techniques for agility and striking power.",
+    "focus": ["Animal Imitation", "Combat Application"],
+    "cards": [
+        {
+            "id": "tiger_form",
+            "title": "Tiger Form",
+            "description": "A ferocious forward-driving attack that embodies the strength of a tiger.",
+            "bulletpoints": [
+                "Sink into a low stance for power",
+                "Use both hands in simultaneous claw-like strikes",
+                "Generate explosive force from the hips"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "eagle_form",
+            "title": "Eagle Form",
+            "description": "A long-range technique that focuses on precision strikes and quick movement.",
+            "bulletpoints": [
+                "Use sweeping arm movements to control space",
+                "Keep a light and agile stance",
+                "Strike with focused fingertips targeting pressure points"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

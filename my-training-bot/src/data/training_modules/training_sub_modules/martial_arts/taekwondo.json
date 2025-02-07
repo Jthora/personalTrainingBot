@@ -1,0 +1,13 @@
+{
+    "id": "taekwondo",
+    "name": "Taekwondo",
+    "description": "A Korean martial art known for its high-speed kicking techniques and agility.",
+    "difficulty": "Intermediate",
+    "estimated_time": "12-24 months",
+    "focus": ["Kicking Techniques", "Speed", "Flexibility"],
+    "cardDecks": [
+        "martial_arts/card_decks/taekwondo/explosive_kicking",
+        "martial_arts/card_decks/taekwondo/spinning_and_aerial_kicks",
+        "martial_arts/card_decks/taekwondo/breaking_techniques"
+    ]
+}

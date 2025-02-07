@@ -1,0 +1,12 @@
+{
+    "id": "poi_spinning",
+    "name": "Poi Spinning",
+    "description": "A dance flow art focusing on circles, tracers, and rhythmic hand coordination.",
+    "difficulty": "Beginner to Advanced",
+    "estimated_time": "4-12 months",
+    "focus": ["Hand Coordination", "Flow Techniques", "Visual Effects"],
+    "cardDecks": [
+        "dance/card_decks/poi_spinning/weave_patterns",
+        "dance/card_decks/poi_spinning/butterfly_moves"
+    ]
+}

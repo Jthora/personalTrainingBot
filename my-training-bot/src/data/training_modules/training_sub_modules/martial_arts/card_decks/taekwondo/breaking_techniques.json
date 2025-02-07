@@ -1,0 +1,32 @@
+{
+    "id": "breaking_techniques",
+    "name": "Breaking Techniques",
+    "description": "Learn how to generate force and precision for board and brick breaking in Taekwondo.",
+    "focus": ["Precision", "Power"],
+    "cards": [
+        {
+            "id": "palm_strike_break",
+            "title": "Palm Strike Break",
+            "description": "A forceful palm strike used for breaking wooden boards.",
+            "bulletpoints": [
+                "Strike with the base of the palm",
+                "Use a snapping motion for maximum power",
+                "Follow through the target rather than stopping at impact"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "axe_kick_break",
+            "title": "Axe Kick Board Break",
+            "description": "A downward striking kick designed for breaking hard objects.",
+            "bulletpoints": [
+                "Raise the leg high before driving downward",
+                "Strike with the heel for maximum force",
+                "Engage the core to control balance and stability"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

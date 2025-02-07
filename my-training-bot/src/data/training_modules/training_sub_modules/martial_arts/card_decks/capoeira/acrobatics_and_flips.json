@@ -1,0 +1,32 @@
+{
+    "id": "acrobatics_and_flips",
+    "name": "Acrobatics and Flips",
+    "description": "Train in dynamic aerial movements that enhance agility, creativity, and control.",
+    "focus": ["Explosiveness", "Body Control"],
+    "cards": [
+        {
+            "id": "au_cartwheel",
+            "title": "Au (Capoeira Cartwheel)",
+            "description": "A fluid cartwheel-like motion used for evasion and attack positioning.",
+            "bulletpoints": [
+                "Keep arms extended for balance",
+                "Engage core muscles to maintain control",
+                "Land softly and prepare for follow-up moves"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "macaco_flip",
+            "title": "Macaco (Back Handspring Variation)",
+            "description": "A backward acrobatic flip that develops explosive power and transitions.",
+            "bulletpoints": [
+                "Squat low before launching backward",
+                "Push off with one arm for stability",
+                "Spot the ground for a controlled landing"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

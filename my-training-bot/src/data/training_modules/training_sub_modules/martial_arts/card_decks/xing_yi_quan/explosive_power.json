@@ -1,0 +1,32 @@
+{
+    "id": "explosive_power",
+    "name": "Explosive Power",
+    "description": "Train internal energy and whole-body coordination to generate maximum force.",
+    "focus": ["Power Generation", "Internal Energy"],
+    "cards": [
+        {
+            "id": "fa_jin_training",
+            "title": "Fa Jin Training",
+            "description": "A practice for developing sudden explosive energy release.",
+            "bulletpoints": [
+                "Relax the muscles before each strike",
+                "Generate power from the ground up",
+                "Snap movements quickly to create an explosive effect"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "coiling_force",
+            "title": "Coiling Force Application",
+            "description": "A technique that stores energy through coiling motions before release.",
+            "bulletpoints": [
+                "Twist the torso to build up kinetic energy",
+                "Release power through a snapping motion",
+                "Maintain fluidity between transitions"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "id": "cutting_shapes",
+    "name": "Cutting Shapes",
+    "description": "Quick footwork techniques used in tech shuffle and Melbourne shuffle.",
+    "difficulty": "Intermediate to Advanced",
+    "estimated_time": "3-9 months",
+    "focus": ["Fast Footwork", "Agility", "Synchronization"],
+    "cardDecks": [
+        "dance/card_decks/cutting_shapes/heel_toe_variations",
+        "dance/card_decks/cutting_shapes/speed_training"
+    ]
+}

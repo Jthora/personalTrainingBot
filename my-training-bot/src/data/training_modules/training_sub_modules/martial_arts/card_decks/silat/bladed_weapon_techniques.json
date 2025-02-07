@@ -1,0 +1,32 @@
+{
+    "id": "bladed_weapon_techniques",
+    "name": "Bladed Weapon Techniques",
+    "description": "Learn efficient and deadly techniques for using knives and short blades in combat.",
+    "focus": ["Weapon Handling", "Precision"],
+    "cards": [
+        {
+            "id": "reverse_grip_slash",
+            "title": "Reverse Grip Slash",
+            "description": "A cutting technique using a reverse grip to create close-quarters control.",
+            "bulletpoints": [
+                "Hold the blade in a downward grip",
+                "Use quick, slicing motions to target limbs",
+                "Keep the blade close to the body for control"
+            ],
+            "duration": 5,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "deflect_and_stab",
+            "title": "Deflect and Stab Counter",
+            "description": "A defensive maneuver that redirects an attack and follows up with a stab.",
+            "bulletpoints": [
+                "Parry the incoming strike using a small circular motion",
+                "Step off the centerline to avoid counterattacks",
+                "Follow up with a precise thrust to a vital area"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

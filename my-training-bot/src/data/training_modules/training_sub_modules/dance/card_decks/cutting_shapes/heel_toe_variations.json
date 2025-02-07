@@ -1,0 +1,32 @@
+{
+    "id": "heel_toe_variations",
+    "name": "Heel-Toe Variations",
+    "description": "Master the fundamental heel-toe movements used in shuffle and cutting shapes styles.",
+    "focus": ["Foot Precision", "Rhythmic Control"],
+    "cards": [
+        {
+            "id": "basic_heel_toe",
+            "title": "Basic Heel-Toe Step",
+            "description": "Learn the essential heel-toe motion to create smooth shuffle movements.",
+            "bulletpoints": [
+                "Lift one heel while placing weight on the opposite toe",
+                "Switch feet in sync with the beat",
+                "Maintain a low stance for better control"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "reverse_heel_toe",
+            "title": "Reverse Heel-Toe Slide",
+            "description": "A reverse movement technique to add style to your footwork.",
+            "bulletpoints": [
+                "Push forward with your heel while pulling back with the opposite toe",
+                "Keep weight balanced between both feet",
+                "Use subtle knee bends for better flow"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

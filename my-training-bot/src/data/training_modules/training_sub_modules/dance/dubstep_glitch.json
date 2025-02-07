@@ -1,0 +1,12 @@
+{
+    "id": "dubstep_glitch",
+    "name": "Dubstep & Glitch Dance",
+    "description": "Slow-motion, popping, and robotic isolation movement synced with bass music.",
+    "difficulty": "Intermediate",
+    "estimated_time": "4-12 months",
+    "focus": ["Popping", "Tutting", "Illusion-Based Moves"],
+    "cardDecks": [
+        "dance/card_decks/dubstep_glitch/slow_motion_effects",
+        "dance/card_decks/dubstep_glitch/bass_drop_isolations"
+    ]
+}

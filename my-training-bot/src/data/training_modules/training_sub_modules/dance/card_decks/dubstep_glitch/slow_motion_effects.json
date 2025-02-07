@@ -1,0 +1,32 @@
+{
+    "id": "slow_motion_effects",
+    "name": "Slow Motion Effects",
+    "description": "Learn how to create the illusion of slow-motion movement to match dubstep's halftime sections.",
+    "focus": ["Illusion Techniques", "Smooth Flow"],
+    "cards": [
+        {
+            "id": "drag_step",
+            "title": "Drag Step",
+            "description": "A technique that simulates the feeling of moving underwater in slow motion.",
+            "bulletpoints": [
+                "Slow down each movement while maintaining smoothness",
+                "Use exaggerated arm swings to create weight illusion",
+                "Sync motion perfectly with slow breakdowns in the music"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "frame_by_frame",
+            "title": "Frame-by-Frame Control",
+            "description": "Breaking down movement into separate 'frames' to simulate a stop-motion effect.",
+            "bulletpoints": [
+                "Hold each position for a brief second before transitioning",
+                "Use precise pauses to mimic video frame rates",
+                "Focus on finger and hand movements for added detail"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

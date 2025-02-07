@@ -1,0 +1,32 @@
+{
+    "id": "staff_and_weaponry",
+    "name": "Staff and Weaponry",
+    "description": "Master traditional Shaolin weapons, including the staff and swords.",
+    "focus": ["Precision", "Fluid Motion"],
+    "cards": [
+        {
+            "id": "basic_staff_spin",
+            "title": "Basic Staff Spin",
+            "description": "A foundational movement for controlling the Shaolin staff with speed and accuracy.",
+            "bulletpoints": [
+                "Keep a loose but firm grip for maximum rotation speed",
+                "Practice switching hand positions smoothly",
+                "Use wrist movement to generate momentum"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "broadsword_slash",
+            "title": "Broadsword Slash",
+            "description": "A powerful, sweeping attack using the Shaolin broadsword.",
+            "bulletpoints": [
+                "Lead with the edge of the sword for cutting efficiency",
+                "Maintain a fluid transition between strikes",
+                "Use body rotation to generate additional power"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

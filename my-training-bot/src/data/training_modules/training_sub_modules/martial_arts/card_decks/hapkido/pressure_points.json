@@ -1,0 +1,32 @@
+{
+    "id": "pressure_points",
+    "name": "Pressure Points",
+    "description": "Learn how to use pressure points to manipulate an opponent’s movement and cause temporary pain compliance.",
+    "focus": ["Pain Compliance", "Targeted Striking"],
+    "cards": [
+        {
+            "id": "wrist_pressure",
+            "title": "Wrist Pressure Point Control",
+            "description": "Applying targeted pressure on the wrist to force compliance.",
+            "bulletpoints": [
+                "Use thumb or knuckle to apply pressure",
+                "Target the nerve cluster near the wrist joint",
+                "Combine with joint locks for greater effect"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "neck_pressure",
+            "title": "Neck Pressure Point Strike",
+            "description": "A precise strike to the neck that causes temporary discomfort and disorientation.",
+            "bulletpoints": [
+                "Strike with controlled force to avoid injury",
+                "Use the fingertips or the edge of the hand",
+                "Target the carotid artery or nerve points"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

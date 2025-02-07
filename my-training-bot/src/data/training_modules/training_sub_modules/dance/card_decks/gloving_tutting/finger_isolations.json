@@ -1,0 +1,32 @@
+{
+    "id": "finger_isolations",
+    "name": "Finger Isolations",
+    "description": "Develop precision control over individual fingers for complex tutting and gloving sequences.",
+    "focus": ["Finger Dexterity", "Micro-Movements"],
+    "cards": [
+        {
+            "id": "wave_isolation",
+            "title": "Wave Isolation",
+            "description": "Control each finger independently to create seamless wave-like effects.",
+            "bulletpoints": [
+                "Move fingers in a controlled sequence",
+                "Ensure smooth motion between each joint",
+                "Practice slow-to-fast transitions for illusion effect"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "knuckle_rolls",
+            "title": "Knuckle Rolls",
+            "description": "Use knuckle-based finger rolls to create advanced illusionary effects.",
+            "bulletpoints": [
+                "Engage finger joints individually",
+                "Focus on creating a fluid rolling effect",
+                "Combine with wrist movements for added complexity"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

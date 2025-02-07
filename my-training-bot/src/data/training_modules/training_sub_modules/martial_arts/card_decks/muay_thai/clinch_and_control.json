@@ -1,0 +1,32 @@
+{
+    "id": "clinch_and_control",
+    "name": "Clinch and Control",
+    "description": "Develop close-range control techniques to dominate an opponent in the clinch.",
+    "focus": ["Close Combat", "Control"],
+    "cards": [
+        {
+            "id": "double_collar_tie",
+            "title": "Double Collar Tie",
+            "description": "A dominant clinch position that allows control over the opponent’s head movement.",
+            "bulletpoints": [
+                "Grip the back of the opponent’s head with both hands",
+                "Keep elbows close together to maintain control",
+                "Use head movement to prevent counterattacks"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "inside_clinch_control",
+            "title": "Inside Clinch Control",
+            "description": "A positioning technique that allows control over the opponent’s upper body while avoiding strikes.",
+            "bulletpoints": [
+                "Position one arm under the opponent’s shoulder",
+                "Use hip movement to stay balanced",
+                "Look for opportunities to land knee strikes"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

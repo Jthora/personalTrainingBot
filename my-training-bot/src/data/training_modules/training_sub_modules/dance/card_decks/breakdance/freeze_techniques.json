@@ -1,0 +1,32 @@
+{
+    "id": "freeze_techniques",
+    "name": "Freeze Techniques",
+    "description": "Learn how to hold dynamic poses and freezes to punctuate breakdance sequences.",
+    "focus": ["Strength", "Balance"],
+    "cards": [
+        {
+            "id": "baby_freeze",
+            "title": "Baby Freeze",
+            "description": "A foundational freeze where the body rests on one elbow for stability.",
+            "bulletpoints": [
+                "Plant one elbow into your side for support",
+                "Lean forward and balance using your head",
+                "Keep legs tucked for better control"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "shoulder_freeze",
+            "title": "Shoulder Freeze",
+            "description": "A more advanced pose where the body is balanced on one shoulder.",
+            "bulletpoints": [
+                "Roll onto your shoulder and plant your arm for stability",
+                "Engage core muscles to hold position",
+                "Use opposite leg to balance and create a dynamic shape"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

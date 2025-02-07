@@ -1,0 +1,32 @@
+{
+    "id": "elbow_and_knee_strikes",
+    "name": "Elbow and Knee Strikes",
+    "description": "Master powerful and devastating close-range strikes using elbows and knees.",
+    "focus": ["Close-Range Striking", "Explosiveness"],
+    "cards": [
+        {
+            "id": "horizontal_elbow",
+            "title": "Horizontal Elbow Strike",
+            "description": "A fast and sharp elbow strike aimed at cutting through an opponent’s defense.",
+            "bulletpoints": [
+                "Keep elbow level with the target for maximum impact",
+                "Pivot on the lead foot to generate power",
+                "Aim for the temple, jaw, or ribs"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "straight_knee",
+            "title": "Straight Knee Strike",
+            "description": "A powerful knee strike delivered to the opponent’s midsection.",
+            "bulletpoints": [
+                "Thrust the hips forward to drive the knee",
+                "Keep the foot flexed to avoid injury",
+                "Use the clinch for better control and positioning"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

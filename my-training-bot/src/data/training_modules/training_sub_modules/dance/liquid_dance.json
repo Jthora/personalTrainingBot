@@ -1,0 +1,12 @@
+{
+    "id": "liquid_dance",
+    "name": "Liquid Dance",
+    "description": "Smooth, wave-like movements that create an illusion of continuous motion.",
+    "difficulty": "Beginner to Intermediate",
+    "estimated_time": "3-9 months",
+    "focus": ["Arm Waves", "Hand Flow", "Body Isolation"],
+    "cardDecks": [
+        "dance/card_decks/liquid_dance/wave_techniques",
+        "dance/card_decks/liquid_dance/hand_glides"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "id": "silat",
+    "name": "Silat",
+    "description": "An Indonesian martial art known for its fluid striking, low stances, and blade techniques.",
+    "difficulty": "Advanced",
+    "estimated_time": "18-36 months",
+    "focus": ["Rapid Striking", "Weapon Techniques", "Ground Movement"],
+    "cardDecks": [
+        "martial_arts/card_decks/silat/rapid_striking",
+        "martial_arts/card_decks/silat/bladed_weapon_techniques",
+        "martial_arts/card_decks/silat/low_stance_combat"
+    ]
+}

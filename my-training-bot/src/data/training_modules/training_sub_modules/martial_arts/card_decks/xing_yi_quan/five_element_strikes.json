@@ -1,0 +1,32 @@
+{
+    "id": "five_element_strikes",
+    "name": "Five Element Strikes",
+    "description": "Train the five core striking techniques based on the five elements in Xing Yi Quan.",
+    "focus": ["Explosiveness", "Precision"],
+    "cards": [
+        {
+            "id": "pi_quan",
+            "title": "Pi Quan (Splitting Strike)",
+            "description": "A downward splitting strike representing the element of Metal.",
+            "bulletpoints": [
+                "Drive the force downward in a cutting motion",
+                "Maintain a strong stance for stability",
+                "Focus on speed and fluidity between movements"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "beng_quan",
+            "title": "Beng Quan (Crushing Strike)",
+            "description": "A forward-driving punch that embodies the element of Wood.",
+            "bulletpoints": [
+                "Extend the punch in a straight line with force",
+                "Keep the shoulders relaxed for speed",
+                "Use the rear foot to generate forward momentum"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

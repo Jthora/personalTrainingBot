@@ -1,0 +1,10 @@
+{
+    "id": "{{module_id}}",
+    "name": "{{module_name}}",
+    "description": "{{module_description}}",
+    "submodules": [
+        "{{submodule_id_1}}",
+        "{{submodule_id_2}}",
+        "{{submodule_id_3}}"
+    ]
+}

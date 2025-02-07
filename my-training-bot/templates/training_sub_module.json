@@ -1,0 +1,17 @@
+{
+    "id": "{{submodule_id}}",
+    "name": "{{submodule_name}}",
+    "description": "{{submodule_description}}",
+    "difficulty": "{{difficulty_level}}",
+    "estimated_time": "{{estimated_training_time}}",
+    "focus": [
+        "{{focus_1}}",
+        "{{focus_2}}",
+        "{{focus_3}}"
+    ],
+    "cardDecks": [
+        "{{card_deck_id_1}}",
+        "{{card_deck_id_2}}",
+        "{{card_deck_id_3}}"
+    ]
+}

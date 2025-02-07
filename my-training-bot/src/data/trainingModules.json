@@ -1,0 +1,16 @@
+{
+    "modules": [
+        { "id": "agencies", "name": "Agency Training" },
+        { "id": "combat", "name": "Combat Training" },
+        { "id": "cybersecurity", "name": "Cybersecurity Training" },
+        { "id": "dance", "name": "Dance Training" },
+        { "id": "espionage", "name": "Espionage Training" },
+        { "id": "fitness", "name": "Fitness Training" },
+        { "id": "intelligence", "name": "Intelligence Training" },
+        { "id": "investigation", "name": "Investigation Training" },
+        { "id": "martial_arts", "name": "Martial Arts Training" },
+        { "id": "psyops", "name": "PsyOps Training" },
+        { "id": "psiops", "name": "PsiOps Training" },
+        { "id": "war_strategy", "name": "War Strategy Training" }
+    ]
+}

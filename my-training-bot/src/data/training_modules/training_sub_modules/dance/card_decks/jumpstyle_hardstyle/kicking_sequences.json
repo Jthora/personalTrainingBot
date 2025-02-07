@@ -1,0 +1,32 @@
+{
+    "id": "kicking_sequences",
+    "name": "Kicking Sequences",
+    "description": "Learn the foundational and advanced kick patterns for Jumpstyle and Hardstyle dance.",
+    "focus": ["Leg Coordination", "Beat Synchronization"],
+    "cards": [
+        {
+            "id": "basic_jump_kick",
+            "title": "Basic Jump Kick",
+            "description": "A simple alternating kick executed in rhythm with the beat.",
+            "bulletpoints": [
+                "Kick forward with one foot while hopping off the other",
+                "Keep your core engaged for balance",
+                "Maintain a steady pace with the beat"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "cross_kick",
+            "title": "Cross-Kick Transition",
+            "description": "A more advanced variation that involves crossing the legs mid-air.",
+            "bulletpoints": [
+                "Lift one leg and cross it over the other while jumping",
+                "Land softly and immediately transition into the next kick",
+                "Use ankle and knee control to avoid impact stress"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "id": "hapkido",
+    "name": "Hapkido",
+    "description": "A Korean martial art that emphasizes joint locks, throws, and circular motion.",
+    "difficulty": "Intermediate",
+    "estimated_time": "12-24 months",
+    "focus": ["Joint Locks", "Throws", "Defensive Techniques"],
+    "cardDecks": [
+        "martial_arts/card_decks/hapkido/joint_locks",
+        "martial_arts/card_decks/hapkido/throws_and_takedowns",
+        "martial_arts/card_decks/hapkido/pressure_points"
+    ]
+}

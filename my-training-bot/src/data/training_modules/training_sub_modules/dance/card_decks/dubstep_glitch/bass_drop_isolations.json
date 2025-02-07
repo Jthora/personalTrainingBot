@@ -1,0 +1,32 @@
+{
+    "id": "bass_drop_isolations",
+    "name": "Bass Drop Isolations",
+    "description": "Master controlled isolations and sharp hits that match the intensity of bass drops in dubstep tracks.",
+    "focus": ["Precision Control", "Impact Timing"],
+    "cards": [
+        {
+            "id": "chest_pop",
+            "title": "Chest Pop",
+            "description": "A sudden, sharp chest movement that accentuates bass-heavy beats.",
+            "bulletpoints": [
+                "Contract and release chest muscles in sync with the bass hit",
+                "Maintain a slight bend in the knees for better control",
+                "Exaggerate movement for stronger impact"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "robotic_snap",
+            "title": "Robotic Snap",
+            "description": "Quick, robotic movements that punctuate glitches in the music.",
+            "bulletpoints": [
+                "Use short, controlled arm and hand movements",
+                "Lock joints momentarily for an instant freeze effect",
+                "Focus on exaggerated stops to enhance illusion"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

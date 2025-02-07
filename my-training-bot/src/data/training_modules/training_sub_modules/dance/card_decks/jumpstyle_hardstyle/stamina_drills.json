@@ -1,0 +1,32 @@
+{
+    "id": "stamina_drills",
+    "name": "Stamina Drills",
+    "description": "Develop endurance and control for high-intensity Jumpstyle and Hardstyle performances.",
+    "focus": ["Cardio Endurance", "Energy Control"],
+    "cards": [
+        {
+            "id": "tempo_control",
+            "title": "Tempo Control Drill",
+            "description": "Adjust speed and energy levels to build long-lasting endurance.",
+            "bulletpoints": [
+                "Start slow and gradually increase tempo",
+                "Focus on controlled breathing to avoid fatigue",
+                "Use arm movements to maintain overall balance"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "nonstop_combo",
+            "title": "Non-Stop Kick Combo",
+            "description": "A continuous cycle of Jumpstyle kicks to improve stamina and consistency.",
+            "bulletpoints": [
+                "Perform alternating kicks for a set duration",
+                "Maintain form even as fatigue sets in",
+                "Increase complexity by adding knee lifts or spins"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

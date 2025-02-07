@@ -1,0 +1,32 @@
+{
+    "id": "palm_strikes",
+    "name": "Palm Strikes",
+    "description": "Develop powerful and precise palm strikes used in Baguazhang for energy redirection and impact.",
+    "focus": ["Hand Strikes", "Energy Redirection"],
+    "cards": [
+        {
+            "id": "piercing_palm",
+            "title": "Piercing Palm Strike",
+            "description": "A straight palm strike that focuses energy into a single point for penetration.",
+            "bulletpoints": [
+                "Align the wrist with the forearm for structural integrity",
+                "Strike with the base of the palm for maximum force",
+                "Use a snapping motion to increase speed and impact"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "spiral_palm",
+            "title": "Spiral Palm Strike",
+            "description": "A rotating palm strike designed to slip through an opponent's defenses.",
+            "bulletpoints": [
+                "Rotate the wrist as you extend the strike",
+                "Maintain a relaxed yet firm hand position",
+                "Follow through with body movement for added power"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

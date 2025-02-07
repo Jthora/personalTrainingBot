@@ -1,0 +1,12 @@
+{
+    "id": "breakdance",
+    "name": "Breakdance",
+    "description": "A high-energy style featuring power moves, spins, freezes, and stalls.",
+    "difficulty": "Advanced",
+    "estimated_time": "6-18 months",
+    "focus": ["Floorwork", "Power Moves", "Strength"],
+    "cardDecks": [
+        "dance/card_decks/breakdance/basic_toprock_moves",
+        "dance/card_decks/breakdance/freeze_techniques"
+    ]
+}

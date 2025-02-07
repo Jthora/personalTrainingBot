@@ -1,0 +1,32 @@
+{
+    "id": "footwork_patterns",
+    "name": "Footwork Patterns",
+    "description": "Develop powerful, rhythmic stomp-based footwork sequences.",
+    "focus": ["Leg Strength", "Beat Synchronization"],
+    "cards": [
+        {
+            "id": "stomp_step",
+            "title": "Stomp Step",
+            "description": "A strong, grounded stomp movement performed in sync with industrial beats.",
+            "bulletpoints": [
+                "Keep knees slightly bent for shock absorption",
+                "Land on the beat for maximum impact",
+                "Use controlled energy to avoid excessive strain"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "cross_stomp",
+            "title": "Cross Stomp Transition",
+            "description": "A footwork transition combining stomp steps with side-to-side movement.",
+            "bulletpoints": [
+                "Shift weight smoothly between feet",
+                "Time each movement precisely with the music",
+                "Experiment with different tempos to build endurance"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

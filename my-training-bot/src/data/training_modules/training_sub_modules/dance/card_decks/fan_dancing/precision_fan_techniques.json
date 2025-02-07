@@ -1,0 +1,32 @@
+{
+    "id": "precision_fan_techniques",
+    "name": "Precision Fan Techniques",
+    "description": "Learn precise fan control, wrist articulation, and dynamic fan openings for maximum visual effect.",
+    "focus": ["Hand Control", "Fan Manipulation"],
+    "cards": [
+        {
+            "id": "snap_open",
+            "title": "Snap Open",
+            "description": "A quick wrist flick to open the fan instantly with a strong visual impact.",
+            "bulletpoints": [
+                "Hold the fan loosely before the flick",
+                "Use a sharp, controlled wrist movement",
+                "Ensure full extension for maximum effect"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "wrist_twist",
+            "title": "Wrist Twist Flourish",
+            "description": "A rotational movement that creates a fluid spinning motion with the fan.",
+            "bulletpoints": [
+                "Rotate the wrist smoothly while holding the fan",
+                "Use small circles to maintain momentum",
+                "Experiment with both clockwise and counterclockwise motions"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

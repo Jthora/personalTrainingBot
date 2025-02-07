@@ -1,0 +1,32 @@
+{
+    "id": "chi_sao_sensitivity",
+    "name": "Chi Sao Sensitivity",
+    "description": "Develop tactile reflexes and sensitivity through Wing Chun’s signature Chi Sao (Sticky Hands) drills.",
+    "focus": ["Tactile Reflexes", "Close-Range Control"],
+    "cards": [
+        {
+            "id": "single_hand_chi_sao",
+            "title": "Single-Hand Chi Sao",
+            "description": "A fundamental drill to build sensitivity and energy flow in close combat.",
+            "bulletpoints": [
+                "Maintain relaxed yet responsive arm contact",
+                "Focus on feeling the opponent’s energy rather than brute force",
+                "Use circular hand movements to deflect incoming strikes"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "double_hand_chi_sao",
+            "title": "Double-Hand Chi Sao",
+            "description": "An advanced variation that integrates both hands to develop reflexive counterattacks.",
+            "bulletpoints": [
+                "Maintain centerline control while engaging both hands",
+                "Use light, controlled pressure to manipulate the opponent",
+                "Flow between offense and defense seamlessly"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "id": "throws_and_takedowns",
+    "name": "Throws and Takedowns",
+    "description": "Master techniques for off-balancing and taking down an opponent with controlled force.",
+    "focus": ["Balance Disruption", "Ground Control"],
+    "cards": [
+        {
+            "id": "hip_throw",
+            "title": "Basic Hip Throw",
+            "description": "A fundamental throwing technique used to lift and flip an opponent over the hip.",
+            "bulletpoints": [
+                "Get close to the opponent for maximum leverage",
+                "Rotate the hips to generate momentum",
+                "Control the fall to prevent injury"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "sweep_takedown",
+            "title": "Leg Sweep Takedown",
+            "description": "A sweeping motion used to trip an opponent off balance.",
+            "bulletpoints": [
+                "Use a low stance for stability",
+                "Sweep the leg in a controlled manner",
+                "Follow up with a pin or submission"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

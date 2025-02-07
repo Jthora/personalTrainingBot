@@ -1,0 +1,32 @@
+{
+    "id": "hand_glides",
+    "name": "Hand Glides",
+    "description": "Master smooth and continuous hand gliding techniques for liquid dance illusions.",
+    "focus": ["Hand Flow", "Illusion Techniques"],
+    "cards": [
+        {
+            "id": "basic_hand_glide",
+            "title": "Basic Hand Glide",
+            "description": "A foundational movement that creates the illusion of hands sliding through air.",
+            "bulletpoints": [
+                "Keep fingers slightly curved for a natural effect",
+                "Move hands in a continuous circular motion",
+                "Maintain even speed to enhance illusion"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "interweaving_glide",
+            "title": "Interweaving Hand Glide",
+            "description": "A more complex hand glide technique incorporating figure-eight movements.",
+            "bulletpoints": [
+                "Alternate hands for a seamless effect",
+                "Use elbow movement to enhance fluidity",
+                "Slow down transitions for better control"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

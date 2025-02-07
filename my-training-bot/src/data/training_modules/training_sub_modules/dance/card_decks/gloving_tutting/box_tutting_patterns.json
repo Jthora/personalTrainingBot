@@ -1,0 +1,32 @@
+{
+    "id": "box_tutting_patterns",
+    "name": "Box Tutting Patterns",
+    "description": "Master the structured, geometric hand and arm positions that define tutting.",
+    "focus": ["Precision", "Geometric Hand Control"],
+    "cards": [
+        {
+            "id": "basic_box",
+            "title": "Basic Box Formation",
+            "description": "Learn the fundamental hand positioning for creating box shapes.",
+            "bulletpoints": [
+                "Keep fingers straight and locked",
+                "Maintain sharp 90-degree angles",
+                "Use slow, controlled movements"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "box_rotation",
+            "title": "Box Rotation Transitions",
+            "description": "Practice moving box formations while maintaining clean angles.",
+            "bulletpoints": [
+                "Rotate boxes smoothly without breaking structure",
+                "Use elbow control for fluidity",
+                "Experiment with different speed variations"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

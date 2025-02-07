@@ -1,0 +1,32 @@
+{
+    "id": "arm_synchronization",
+    "name": "Arm Synchronization",
+    "description": "Master precise, robotic arm movements in sync with industrial beats.",
+    "focus": ["Precision", "Mechanical Movement"],
+    "cards": [
+        {
+            "id": "linear_strikes",
+            "title": "Linear Arm Strikes",
+            "description": "Sharp, controlled arm movements with precise stopping points.",
+            "bulletpoints": [
+                "Keep arms stiff and movements sharp",
+                "Use shoulder and elbow control for precision",
+                "Match each strike to the beat for better sync"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "sync_double_strikes",
+            "title": "Synchronized Double Strikes",
+            "description": "Moving both arms in unison while maintaining mechanical precision.",
+            "bulletpoints": [
+                "Start with slow, controlled movement before increasing speed",
+                "Keep motions robotic with clear stopping points",
+                "Engage core for stability and balance"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

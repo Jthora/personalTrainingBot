@@ -1,0 +1,32 @@
+{
+    "id": "iron_body_training",
+    "name": "Iron Body Training",
+    "description": "Develop endurance and conditioning through traditional Shaolin iron body techniques.",
+    "focus": ["Resilience", "Endurance"],
+    "cards": [
+        {
+            "id": "iron_palm",
+            "title": "Iron Palm Conditioning",
+            "description": "A training method to toughen the hands for striking without injury.",
+            "bulletpoints": [
+                "Practice slapping sandbags for increased palm strength",
+                "Use progressive conditioning to avoid long-term damage",
+                "Focus on proper breathing to channel energy"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "qigong_breathing",
+            "title": "Qigong Breath Control",
+            "description": "A breathing exercise to enhance internal energy and resilience.",
+            "bulletpoints": [
+                "Inhale deeply through the nose and expand the diaphragm",
+                "Exhale slowly while focusing on energy circulation",
+                "Maintain a relaxed but powerful posture"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

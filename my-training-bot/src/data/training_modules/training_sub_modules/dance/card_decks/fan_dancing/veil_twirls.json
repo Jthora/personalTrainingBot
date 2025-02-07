@@ -1,0 +1,32 @@
+{
+    "id": "veil_twirls",
+    "name": "Veil Twirls",
+    "description": "Master elegant and dramatic veil twirling techniques to enhance flow and expression.",
+    "focus": ["Expressiveness", "Continuous Motion"],
+    "cards": [
+        {
+            "id": "basic_twirls",
+            "title": "Basic Veil Twirl",
+            "description": "A smooth and controlled twirl to create flowing veil movements.",
+            "bulletpoints": [
+                "Keep the arms extended while twirling",
+                "Maintain a relaxed grip on the veil",
+                "Use breath control to enhance fluidity"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "overhead_swirls",
+            "title": "Overhead Swirls",
+            "description": "A circular motion above the head for dramatic veil movement.",
+            "bulletpoints": [
+                "Lift the arms and keep the veil extended",
+                "Move in a controlled circular motion",
+                "Ensure even weight distribution for a balanced effect"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

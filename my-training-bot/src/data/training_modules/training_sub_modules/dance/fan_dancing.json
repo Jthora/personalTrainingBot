@@ -1,0 +1,12 @@
+{
+    "id": "fan_dancing",
+    "name": "Fan Dancing & Silk Flow",
+    "description": "Create high-energy visual effects with fans, silk veils, and LED props.",
+    "difficulty": "Intermediate",
+    "estimated_time": "3-6 months",
+    "focus": ["Hand Control", "Choreography", "Expression"],
+    "cardDecks": [
+        "dance/card_decks/fan_dancing/veil_twirls",
+        "dance/card_decks/fan_dancing/precision_fan_techniques"
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "id": "footwork_and_speed",
+    "name": "Footwork and Speed",
+    "description": "Enhance mobility and speed to control distance and positioning in combat.",
+    "focus": ["Agility", "Explosive Movement"],
+    "cards": [
+        {
+            "id": "pendulum_step",
+            "title": "Pendulum Step",
+            "description": "A fast, bouncing movement used to advance or retreat while staying balanced.",
+            "bulletpoints": [
+                "Keep weight on the balls of your feet for quick movement",
+                "Use small, rapid steps rather than large leaps",
+                "Maintain constant motion to avoid becoming a static target"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "angle_step",
+            "title": "Angle Step Evasion",
+            "description": "A sidestepping maneuver used to evade attacks and create new angles of attack.",
+            "bulletpoints": [
+                "Shift laterally instead of retreating backward",
+                "Keep hands up while moving to maintain defense",
+                "Use foot pivots to quickly change direction"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

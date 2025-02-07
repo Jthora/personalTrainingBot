@@ -1,0 +1,32 @@
+{
+    "id": "speed_training",
+    "name": "Speed Training",
+    "description": "Develop agility and control for faster cutting shapes movement sequences.",
+    "focus": ["Foot Speed", "Timing"],
+    "cards": [
+        {
+            "id": "tempo_drills",
+            "title": "Tempo Drills",
+            "description": "Increase foot speed while maintaining balance and control.",
+            "bulletpoints": [
+                "Start slow and gradually increase speed",
+                "Focus on landing softly to avoid impact stress",
+                "Keep core engaged for better stability"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "high_speed_switches",
+            "title": "High-Speed Foot Switches",
+            "description": "Rapidly alternate foot positions to create an illusion of floating movement.",
+            "bulletpoints": [
+                "Keep feet close to the ground to minimize effort",
+                "Use ankle control to switch directions seamlessly",
+                "Stay in sync with the beat to maintain rhythm"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

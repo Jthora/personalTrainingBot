@@ -1,0 +1,32 @@
+{
+    "id": "spins_and_transitions",
+    "name": "Spins & Transitions",
+    "description": "Master continuous spinning techniques and seamless transitions.",
+    "focus": ["Circular Motion", "Seamless Transitions"],
+    "cards": [
+        {
+            "id": "continuous_wrist_spin",
+            "title": "Continuous Wrist Spin",
+            "description": "A fluid wrist-based spin that maintains momentum.",
+            "bulletpoints": [
+                "Keep the grip relaxed to allow free rotation",
+                "Use subtle wrist flicks to maintain speed",
+                "Practice switching hands smoothly"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "figure_eight_pass",
+            "title": "Figure Eight Pass",
+            "description": "A transition where the staff flows through a figure-eight motion between hands.",
+            "bulletpoints": [
+                "Engage your core to guide the movement",
+                "Use wrist rotations for better fluidity",
+                "Practice both clockwise and counterclockwise motions"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "id": "low_stance_combat",
+    "name": "Low Stance Combat",
+    "description": "Master Silat’s unique low stances that improve balance, mobility, and evasiveness.",
+    "focus": ["Agility", "Ground Combat"],
+    "cards": [
+        {
+            "id": "squat_evade",
+            "title": "Squat Evade and Counter",
+            "description": "A defensive movement that allows quick evasions followed by counterattacks.",
+            "bulletpoints": [
+                "Drop into a deep squat to avoid high attacks",
+                "Keep weight evenly distributed for fast transitions",
+                "Use hand strikes while rising for added power"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "low_sweep",
+            "title": "Low Leg Sweep",
+            "description": "A sweeping attack targeting an opponent’s base to take them off balance.",
+            "bulletpoints": [
+                "Stay low and use a circular sweeping motion",
+                "Engage hips to generate more power",
+                "Follow up immediately to prevent recovery"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

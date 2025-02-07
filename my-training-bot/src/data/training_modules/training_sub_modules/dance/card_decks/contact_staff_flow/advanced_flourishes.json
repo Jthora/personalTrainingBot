@@ -1,0 +1,32 @@
+{
+    "id": "advanced_flourishes",
+    "name": "Advanced Flourishes",
+    "description": "Learn intricate staff movements that enhance style and fluidity.",
+    "focus": ["Dexterity", "Advanced Control"],
+    "cards": [
+        {
+            "id": "neck_wrap",
+            "title": "Neck Wrap",
+            "description": "A seamless transition where the staff wraps around the neck before being caught.",
+            "bulletpoints": [
+                "Start with a slow spin and guide the staff behind your head",
+                "Tuck your chin slightly to allow the wrap",
+                "Catch the staff smoothly without disrupting its motion"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "aerial_release",
+            "title": "Aerial Release",
+            "description": "A dynamic trick where the staff is released mid-air and caught with precision.",
+            "bulletpoints": [
+                "Use controlled force to flick the staff upwards",
+                "Keep your eyes on the staff at all times",
+                "Time your catch to continue the movement fluidly"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

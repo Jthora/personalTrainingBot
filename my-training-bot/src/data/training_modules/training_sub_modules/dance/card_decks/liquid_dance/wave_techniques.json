@@ -1,0 +1,32 @@
+{
+    "id": "wave_techniques",
+    "name": "Wave Techniques",
+    "description": "Learn how to create continuous wave illusions through the arms and body.",
+    "focus": ["Body Isolation", "Smooth Flow"],
+    "cards": [
+        {
+            "id": "arm_wave",
+            "title": "Basic Arm Wave",
+            "description": "A smooth arm motion that mimics the flow of an energy wave.",
+            "bulletpoints": [
+                "Start with fingers and move through each joint",
+                "Keep movements controlled and fluid",
+                "Use both arms for symmetrical effect"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "chest_wave",
+            "title": "Chest Wave",
+            "description": "A full-body wave starting from the chest and rolling through the spine.",
+            "bulletpoints": [
+                "Engage core muscles to guide movement",
+                "Use small shoulder shifts for better transition",
+                "Focus on controlled speed for a better illusion"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "id": "martial_arts",
+    "name": "Martial Arts Training",
+    "description": "A comprehensive training module covering various martial arts disciplines.",
+    "difficulty": "Beginner to Advanced",
+    "estimated_time": "12-36 months",
+    "submodules": [
+        "martial_arts/baguazhang",
+        "martial_arts/capoeira",
+        "martial_arts/wing_chun",
+        "martial_arts/shaolin_kung_fu"
+    ]
+}

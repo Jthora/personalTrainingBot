@@ -1,0 +1,13 @@
+{
+    "id": "jeet_kune_do",
+    "name": "Jeet Kune Do",
+    "description": "Bruce Lee’s philosophy-based martial art focused on efficiency, directness, and adaptability.",
+    "difficulty": "Advanced",
+    "estimated_time": "12-36 months",
+    "focus": ["Speed", "Efficiency", "Adaptability"],
+    "cardDecks": [
+        "martial_arts/card_decks/jeet_kune_do/intercepting_fist",
+        "martial_arts/card_decks/jeet_kune_do/trapping_hands",
+        "martial_arts/card_decks/jeet_kune_do/footwork_and_speed"
+    ]
+}

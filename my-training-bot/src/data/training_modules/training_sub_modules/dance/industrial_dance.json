@@ -1,0 +1,12 @@
+{
+    "id": "industrial_dance",
+    "name": "Industrial Dance",
+    "description": "Heavy, mechanical, and stomp-based movement inspired by cyber-goth styles.",
+    "difficulty": "Beginner to Advanced",
+    "estimated_time": "2-8 months",
+    "focus": ["Heavy Stomps", "Arm & Leg Isolation", "Rhythmic Precision"],
+    "cardDecks": [
+        "dance/card_decks/industrial_dance/footwork_patterns",
+        "dance/card_decks/industrial_dance/arm_synchronization"
+    ]
+}

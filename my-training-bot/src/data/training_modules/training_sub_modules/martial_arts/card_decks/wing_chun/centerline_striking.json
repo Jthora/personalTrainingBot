@@ -1,0 +1,32 @@
+{
+    "id": "centerline_striking",
+    "name": "Centerline Striking",
+    "description": "Develop precise and rapid strikes along the centerline for maximum efficiency.",
+    "focus": ["Speed", "Direct Attacks"],
+    "cards": [
+        {
+            "id": "chain_punching",
+            "title": "Chain Punching",
+            "description": "A continuous series of rapid punches aimed at overwhelming the opponent.",
+            "bulletpoints": [
+                "Keep punches compact and aligned along the centerline",
+                "Use wrist relaxation to increase speed",
+                "Maintain forward pressure without overextending"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "vertical_palm_strike",
+            "title": "Vertical Palm Strike",
+            "description": "A palm-heel strike aimed at delivering controlled force while protecting the hands.",
+            "bulletpoints": [
+                "Keep the palm vertical and fingers pointed upward",
+                "Strike with the base of the palm for added stability",
+                "Engage the hips to generate extra power"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "id": "internal_energy",
+    "name": "Internal Energy",
+    "description": "Training methods to develop and control the internal energy (Qi) within Tai Chi practice.",
+    "focus": ["Energy Flow", "Breath Control"],
+    "cards": [
+        {
+            "id": "qigong_breathing",
+            "title": "Qigong Breathing",
+            "description": "A foundational breathing technique for cultivating internal energy.",
+            "bulletpoints": [
+                "Inhale deeply through the nose, expanding the diaphragm",
+                "Exhale slowly and visualize energy flowing through the body",
+                "Maintain a calm and steady rhythm"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "dan_tian_focus",
+            "title": "Dan Tian Energy Focus",
+            "description": "A meditative practice for concentrating energy in the lower abdomen.",
+            "bulletpoints": [
+                "Place hands over the lower abdomen and focus on warmth",
+                "Use circular hand motions to guide internal energy",
+                "Coordinate slow movements with deep breathing"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

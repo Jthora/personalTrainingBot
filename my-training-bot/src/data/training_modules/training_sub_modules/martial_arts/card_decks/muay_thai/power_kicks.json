@@ -1,0 +1,32 @@
+{
+    "id": "power_kicks",
+    "name": "Power Kicks",
+    "description": "Develop explosive and powerful kicks that can deal significant damage in a fight.",
+    "focus": ["Leg Strength", "Speed"],
+    "cards": [
+        {
+            "id": "roundhouse_kick",
+            "title": "Roundhouse Kick",
+            "description": "A signature Muay Thai kick delivered with full-body rotation for maximum force.",
+            "bulletpoints": [
+                "Pivot on the supporting foot for power",
+                "Strike with the shin rather than the foot",
+                "Follow through to maintain balance"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "low_kick",
+            "title": "Low Leg Kick",
+            "description": "A powerful kick aimed at the opponent’s thigh to slow them down.",
+            "bulletpoints": [
+                "Aim for the inner or outer thigh",
+                "Use the hips to generate force",
+                "Quickly reset stance to avoid counters"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

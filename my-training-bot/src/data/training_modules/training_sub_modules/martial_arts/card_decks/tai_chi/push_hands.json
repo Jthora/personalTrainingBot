@@ -1,0 +1,32 @@
+{
+    "id": "push_hands",
+    "name": "Push Hands",
+    "description": "A sensitivity training exercise to develop balance, coordination, and energy flow.",
+    "focus": ["Sensitivity", "Balance"],
+    "cards": [
+        {
+            "id": "basic_push_hands",
+            "title": "Basic Push Hands",
+            "description": "A foundational Tai Chi drill that teaches sensitivity and redirection.",
+            "bulletpoints": [
+                "Maintain a relaxed posture and stable stance",
+                "Use circular hand movements to redirect energy",
+                "Focus on feeling the opponent's force rather than resisting it"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "single_hand_drill",
+            "title": "Single-Hand Push Hands Drill",
+            "description": "A variation that isolates one hand to refine coordination and control.",
+            "bulletpoints": [
+                "Focus on using one hand to maintain contact",
+                "Practice maintaining balance while pivoting",
+                "Use breath control to enhance relaxation and fluidity"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

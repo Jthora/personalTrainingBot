@@ -1,0 +1,32 @@
+{
+    "id": "evasive_movement",
+    "name": "Evasive Movement",
+    "description": "Train in evasive maneuvers that allow you to avoid attacks while maintaining offensive positioning.",
+    "focus": ["Agility", "Energy Redirection"],
+    "cards": [
+        {
+            "id": "shoulder_dodge",
+            "title": "Shoulder Roll Dodge",
+            "description": "A defensive maneuver that utilizes circular shoulder movement to evade strikes.",
+            "bulletpoints": [
+                "Roll the shoulder back to deflect incoming force",
+                "Use the motion to transition into a counterattack",
+                "Keep the movement smooth and fluid"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "side_step_sway",
+            "title": "Side Step and Sway",
+            "description": "A lateral evasion technique that keeps you within range for a counterstrike.",
+            "bulletpoints": [
+                "Step off the centerline while maintaining balance",
+                "Use body rotation to follow up with a strike",
+                "Stay light on the feet for quick re-engagement"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

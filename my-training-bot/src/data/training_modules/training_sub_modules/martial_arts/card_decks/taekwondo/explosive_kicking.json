@@ -1,0 +1,32 @@
+{
+    "id": "explosive_kicking",
+    "name": "Explosive Kicking",
+    "description": "Train powerful and high-speed kicks that maximize impact and efficiency.",
+    "focus": ["Speed", "Power"],
+    "cards": [
+        {
+            "id": "front_snap_kick",
+            "title": "Front Snap Kick",
+            "description": "A quick and powerful kick aimed at the opponent’s midsection or head.",
+            "bulletpoints": [
+                "Chamber the knee before extending the leg",
+                "Snap the foot forward for a sharp impact",
+                "Retract quickly to maintain balance"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "roundhouse_kick",
+            "title": "Roundhouse Kick",
+            "description": "A powerful circular kick aimed at the ribs or head.",
+            "bulletpoints": [
+                "Pivot on the standing foot to generate torque",
+                "Keep the leg extended throughout the motion",
+                "Follow through for maximum force"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "id": "dynamic_forms",
+    "name": "Dynamic Forms",
+    "description": "Train in the fluid, high-speed movements of Wushu forms for agility and precision.",
+    "focus": ["Speed", "Fluidity"],
+    "cards": [
+        {
+            "id": "chain_punching",
+            "title": "Chain Punching Combination",
+            "description": "A rapid sequence of punches designed to overwhelm opponents with speed.",
+            "bulletpoints": [
+                "Keep movements continuous and fluid",
+                "Ensure minimal telegraphing for faster execution",
+                "Focus on maintaining centerline control"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "tornado_kick_combo",
+            "title": "Tornado Kick Combo",
+            "description": "A spinning kick sequence that blends power with acrobatics.",
+            "bulletpoints": [
+                "Generate momentum through a full-body rotation",
+                "Keep the supporting foot grounded for balance",
+                "Follow through for maximum impact"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

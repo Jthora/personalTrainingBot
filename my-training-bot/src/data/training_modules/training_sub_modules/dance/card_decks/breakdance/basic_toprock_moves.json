@@ -1,0 +1,32 @@
+{
+    "id": "basic_toprock_moves",
+    "name": "Basic Toprock Moves",
+    "description": "Master the foundational steps of breakdancing with proper posture and rhythm.",
+    "focus": ["Footwork", "Timing"],
+    "cards": [
+        {
+            "id": "side_step",
+            "title": "Side Step",
+            "description": "A basic side-to-side movement that sets the rhythm for more complex footwork.",
+            "bulletpoints": [
+                "Step side to side while maintaining a slight bounce",
+                "Keep arms relaxed and engaged",
+                "Move to the beat to create flow"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "crossover_step",
+            "title": "Crossover Step",
+            "description": "A dynamic movement where one foot crosses over the other in sync with the beat.",
+            "bulletpoints": [
+                "Step forward and cross one foot over the other",
+                "Use your arms to guide the motion",
+                "Stay light on your feet for quick transitions"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

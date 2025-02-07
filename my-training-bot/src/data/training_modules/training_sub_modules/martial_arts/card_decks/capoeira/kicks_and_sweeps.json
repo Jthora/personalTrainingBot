@@ -1,0 +1,32 @@
+{
+    "id": "kicks_and_sweeps",
+    "name": "Kicks and Sweeps",
+    "description": "Develop powerful and deceptive kicks combined with low sweeps to control combat engagements.",
+    "focus": ["Striking", "Balance"],
+    "cards": [
+        {
+            "id": "meia_lua_de_frente",
+            "title": "Meia Lua de Frente",
+            "description": "A half-moon kick that arcs across the opponent's body.",
+            "bulletpoints": [
+                "Pivot on the standing foot for better rotation",
+                "Extend the leg smoothly to maintain control",
+                "Use hips to generate power"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "rasteira_sweep",
+            "title": "Rasteira (Leg Sweep)",
+            "description": "A low sweeping motion aimed at knocking an opponent off balance.",
+            "bulletpoints": [
+                "Maintain a low center of gravity",
+                "Use hips to drive power into the sweep",
+                "Follow through with a return to standing position"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "id": "aerial_movements",
+    "name": "Aerial Movements",
+    "description": "Develop acrobatic jumping techniques to enhance agility and combat versatility.",
+    "focus": ["Explosiveness", "Air Control"],
+    "cards": [
+        {
+            "id": "butterfly_kick",
+            "title": "Butterfly Kick",
+            "description": "A signature Wushu move combining aerial grace with combat effectiveness.",
+            "bulletpoints": [
+                "Lean forward and sweep the legs in a circular motion",
+                "Generate lift by pushing off with both feet",
+                "Use arm movement to stabilize in midair"
+            ],
+            "duration": 5,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "540_kick",
+            "title": "540 Kick",
+            "description": "An advanced spinning kick requiring exceptional control and explosiveness.",
+            "bulletpoints": [
+                "Initiate a strong jump with a full-body rotation",
+                "Focus on tucking the legs for additional spin",
+                "Land softly with proper weight distribution"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "id": "rapid_striking",
+    "name": "Rapid Striking",
+    "description": "Develop lightning-fast strikes that overwhelm opponents through speed and precision.",
+    "focus": ["Speed", "Efficiency"],
+    "cards": [
+        {
+            "id": "straight_punch_chain",
+            "title": "Straight Punch Chain",
+            "description": "A rapid combination of straight punches used to break through an opponent’s guard.",
+            "bulletpoints": [
+                "Keep punches compact for speed",
+                "Maintain a strong centerline position",
+                "Focus on precision rather than brute force"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "palm_strike_blitz",
+            "title": "Palm Strike Blitz",
+            "description": "A rapid sequence of open-hand palm strikes aimed at soft targets.",
+            "bulletpoints": [
+                "Use the base of the palm to strike",
+                "Target the chin, nose, or solar plexus",
+                "Chain multiple strikes together for continuous pressure"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

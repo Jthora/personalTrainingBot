@@ -1,0 +1,32 @@
+{
+    "id": "body_bounce_rhythm",
+    "name": "Body Bounce Rhythm",
+    "description": "Master rhythmic bouncing techniques to stay in sync with high-energy rave beats.",
+    "focus": ["Beat Synchronization", "Energy Control"],
+    "cards": [
+        {
+            "id": "basic_bounce",
+            "title": "Basic Bounce Step",
+            "description": "A continuous up-and-down motion that helps maintain a fluid groove.",
+            "bulletpoints": [
+                "Keep knees soft to absorb movement",
+                "Bounce in time with the beat",
+                "Use slight weight shifts for variations"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "dynamic_bounce",
+            "title": "Dynamic Bounce Variations",
+            "description": "Add intensity and foot patterns to the bounce for a unique freestyle style.",
+            "bulletpoints": [
+                "Increase bounce height for emphasis",
+                "Integrate small hops for variation",
+                "Experiment with side-to-side weight shifts"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "id": "intercepting_fist",
+    "name": "Intercepting Fist",
+    "description": "Master Bruce Lee’s concept of attacking while the opponent initiates an attack, maximizing speed and efficiency.",
+    "focus": ["Timing", "Explosive Counterattacks"],
+    "cards": [
+        {
+            "id": "straight_lead",
+            "title": "Straight Lead Punch",
+            "description": "A fast and direct punch designed to intercept an opponent's attack.",
+            "bulletpoints": [
+                "Extend the arm directly forward with minimal movement",
+                "Strike from the centerline for maximum efficiency",
+                "Use explosive speed and minimal telegraphing"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "stop_hit",
+            "title": "Stop-Hit Counter",
+            "description": "A defensive counter that disrupts an incoming attack before it lands.",
+            "bulletpoints": [
+                "Time the strike just as the opponent initiates movement",
+                "Use the least amount of force necessary for interruption",
+                "Follow up immediately with an offensive combination"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

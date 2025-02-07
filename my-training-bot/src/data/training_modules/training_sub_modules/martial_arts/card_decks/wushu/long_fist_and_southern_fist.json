@@ -1,0 +1,32 @@
+{
+    "id": "long_fist_and_southern_fist",
+    "name": "Long Fist and Southern Fist",
+    "description": "Master both the extended-range strikes of Long Fist and the powerful stances of Southern Fist.",
+    "focus": ["Power", "Endurance"],
+    "cards": [
+        {
+            "id": "long_fist_combo",
+            "title": "Long Fist Combination",
+            "description": "A flowing series of extended strikes and evasive maneuvers.",
+            "bulletpoints": [
+                "Keep strikes loose yet controlled for maximum reach",
+                "Incorporate low stances for balance and fluidity",
+                "Ensure quick recovery for the next movement"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "southern_fist_power_strike",
+            "title": "Southern Fist Power Strike",
+            "description": "A rooted, explosive strike emphasizing strength and impact.",
+            "bulletpoints": [
+                "Generate power from the hips and core",
+                "Keep a low, stable stance for balance",
+                "Focus on decisive execution with each movement"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

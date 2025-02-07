@@ -1,0 +1,32 @@
+{
+    "id": "flow_transitions",
+    "name": "Flow Transitions",
+    "description": "Learn how to move seamlessly between different dance styles without breaking rhythm.",
+    "focus": ["Smooth Transitions", "Freestyle Creativity"],
+    "cards": [
+        {
+            "id": "hand_to_foot",
+            "title": "Hand to Foot Sync",
+            "description": "Transition movements between upper and lower body flow.",
+            "bulletpoints": [
+                "Use arm waves to guide foot movements",
+                "Keep shoulders relaxed for better fluidity",
+                "Time transitions with beat changes"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "tempo_shift",
+            "title": "Tempo Shift Adjustment",
+            "description": "Adjust speed and intensity smoothly to match changes in the music.",
+            "bulletpoints": [
+                "Slow down or speed up movement gradually",
+                "Use pauses and accents to mark transitions",
+                "Stay aware of the music's progression"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "id": "wooden_dummy_drills",
+    "name": "Wooden Dummy Drills",
+    "description": "Train precise strikes, deflections, and footwork using the Wing Chun wooden dummy.",
+    "focus": ["Striking Accuracy", "Defensive Positioning"],
+    "cards": [
+        {
+            "id": "basic_dan_gee",
+            "title": "Basic Dan Gee Drill",
+            "description": "A fundamental drill for practicing proper hand positioning and deflection angles.",
+            "bulletpoints": [
+                "Strike with controlled force, not brute power",
+                "Keep elbows down to maintain Wing Chun structure",
+                "Flow from one technique to the next smoothly"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "lop_sao_gan_sao",
+            "title": "Lop Sao & Gan Sao Sequence",
+            "description": "A sequence using pulling and deflecting techniques to control the opponent.",
+            "bulletpoints": [
+                "Use the Lop Sao (grabbing hand) to redirect attacks",
+                "Follow up with Gan Sao (low sweeping deflection)",
+                "Maintain strong root and balance throughout"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "id": "wing_chun",
+    "name": "Wing Chun",
+    "description": "A close-quarters Chinese martial art emphasizing centerline strikes and deflections.",
+    "difficulty": "Intermediate",
+    "estimated_time": "12-24 months",
+    "focus": ["Close Combat", "Efficiency", "Sensitivity"],
+    "cardDecks": [
+        "martial_arts/card_decks/wing_chun/chi_sao_sensitivity",
+        "martial_arts/card_decks/wing_chun/wooden_dummy_drills",
+        "martial_arts/card_decks/wing_chun/centerline_striking"
+    ]
+}

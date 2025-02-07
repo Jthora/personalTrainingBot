@@ -1,0 +1,255 @@
+.
+├── .gitignore
+├── README.md
+├── directory-structure.txt
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── public
+│   └── vite.svg
+├── src
+│   ├── App.tsx
+│   ├── assets
+│   │   ├── fonts
+│   │   ├── react.svg
+│   │   └── sounds
+│   ├── components
+│   │   ├── Card.tsx
+│   │   ├── CardDeck.tsx
+│   │   ├── CardTable.tsx
+│   │   ├── Header.tsx
+│   │   ├── Schedule.tsx
+│   │   ├── SettingsPanel.tsx
+│   │   ├── Sidebar.tsx
+│   │   ├── StatsPanel.tsx
+│   │   ├── Timer.tsx
+│   │   ├── TrainingDifficulty.tsx
+│   │   └── TrainingSequence.tsx
+│   ├── context
+│   │   ├── ScheduleContext.tsx
+│   │   ├── SettingsContext.tsx
+│   │   └── TrainingSequenceContext.tsx
+│   ├── data
+│   │   ├── trainingModules.json
+│   │   └── training_modules
+│   │       ├── agencies.json
+│   │       ├── combat.json
+│   │       ├── cybersecurity.json
+│   │       ├── dance.json
+│   │       ├── espionage.json
+│   │       ├── fitness.json
+│   │       ├── intelligence.json
+│   │       ├── investigation.json
+│   │       ├── martial_arts.json
+│   │       ├── psiops.json
+│   │       ├── psyops.json
+│   │       ├── training_sub_modules
+│   │       │   ├── agencies
+│   │       │   │   ├── card_decks
+│   │       │   │   ├── cia_training.json
+│   │       │   │   └── fbi_training.json
+│   │       │   ├── combat
+│   │       │   │   ├── card_decks
+│   │       │   │   ├── close_quarters_combat.json
+│   │       │   │   ├── defensive_tactics.json
+│   │       │   │   ├── firearms_and_weapons.json
+│   │       │   │   ├── grappling_and_ground_fighting.json
+│   │       │   │   ├── handgun_marksmanship.json
+│   │       │   │   ├── improvised_weapons_training.json
+│   │       │   │   ├── knife_fighting.json
+│   │       │   │   ├── rifle_marksmanship.json
+│   │       │   │   ├── room_clearing.json
+│   │       │   │   ├── situational_awareness.json
+│   │       │   │   ├── squad_tactics.json
+│   │       │   │   ├── stealth_and_silent_takedowns.json
+│   │       │   │   ├── tactical_survival.json
+│   │       │   │   ├── urban_warfare.json
+│   │       │   │   └── weapons_handling.json
+│   │       │   ├── cybersecurity
+│   │       │   │   ├── card_decks
+│   │       │   │   ├── cybersecurity_training.json
+│   │       │   │   └── hacking_training.json
+│   │       │   ├── dance
+│   │       │   │   ├── breakdance.json
+│   │       │   │   ├── card_decks
+│   │       │   │   │   ├── breakdance
+│   │       │   │   │   │   ├── basic_toprock_moves.json
+│   │       │   │   │   │   └── freeze_techniques.json
+│   │       │   │   │   ├── contact_staff_flow
+│   │       │   │   │   │   ├── advanced_flourishes.json
+│   │       │   │   │   │   └── spins_and_transitions.json
+│   │       │   │   │   ├── cutting_shapes
+│   │       │   │   │   │   ├── heel_toe_variations.json
+│   │       │   │   │   │   └── speed_training.json
+│   │       │   │   │   ├── dubstep_glitch
+│   │       │   │   │   │   ├── bass_drop_isolations.json
+│   │       │   │   │   │   └── slow_motion_effects.json
+│   │       │   │   │   ├── fan_dancing
+│   │       │   │   │   │   ├── precision_fan_techniques.json
+│   │       │   │   │   │   └── veil_twirls.json
+│   │       │   │   │   ├── freestyle_rave
+│   │       │   │   │   │   ├── body_bounce_rhythm.json
+│   │       │   │   │   │   └── flow_transitions.json
+│   │       │   │   │   ├── gloving_tutting
+│   │       │   │   │   │   ├── box_tutting_patterns.json
+│   │       │   │   │   │   └── finger_isolations.json
+│   │       │   │   │   ├── industrial_dance
+│   │       │   │   │   │   ├── arm_synchronization.json
+│   │       │   │   │   │   └── footwork_patterns.json
+│   │       │   │   │   ├── jumpstyle_hardstyle
+│   │       │   │   │   │   ├── kicking_sequences.json
+│   │       │   │   │   │   └── stamina_drills.json
+│   │       │   │   │   ├── liquid_dance
+│   │       │   │   │   │   ├── hand_glides.json
+│   │       │   │   │   │   └── wave_techniques.json
+│   │       │   │   │   ├── poi_spinning
+│   │       │   │   │   │   ├── butterfly_moves.json
+│   │       │   │   │   │   └── weave_patterns.json
+│   │       │   │   │   └── rock_dance
+│   │       │   │   │       ├── chaotic_flow.json
+│   │       │   │   │       └── headbang_rhythm.json
+│   │       │   │   ├── contact_staff_flow.json
+│   │       │   │   ├── cutting_shapes.json
+│   │       │   │   ├── dubstep_glitch.json
+│   │       │   │   ├── fan_dancing.json
+│   │       │   │   ├── freestyle_rave.json
+│   │       │   │   ├── gloving_tutting.json
+│   │       │   │   ├── industrial_dance.json
+│   │       │   │   ├── jumpstyle_hardstyle.json
+│   │       │   │   ├── liquid_dance.json
+│   │       │   │   ├── poi_spinning.json
+│   │       │   │   └── rock_dance.json
+│   │       │   ├── espionage
+│   │       │   │   ├── card_decks
+│   │       │   │   ├── counter_espionage_training.json
+│   │       │   │   └── deception_and_counterintelligence.json
+│   │       │   ├── fitness
+│   │       │   │   ├── card_decks
+│   │       │   │   ├── cardio_training.json
+│   │       │   │   ├── endurance_training.json
+│   │       │   │   ├── flexibility_training.json
+│   │       │   │   ├── high_intensity_interval_training.json
+│   │       │   │   └── strength_training.json
+│   │       │   ├── intelligence
+│   │       │   │   ├── card_decks
+│   │       │   │   └── strategic_intelligence.json
+│   │       │   ├── investigation
+│   │       │   │   ├── card_decks
+│   │       │   │   └── forensic_investigation_training.json
+│   │       │   ├── martial_arts
+│   │       │   │   ├── baguazhang.json
+│   │       │   │   ├── capoeira.json
+│   │       │   │   ├── card_decks
+│   │       │   │   │   ├── baguazhang
+│   │       │   │   │   │   ├── circle_walking.json
+│   │       │   │   │   │   ├── evasive_movement.json
+│   │       │   │   │   │   └── palm_strikes.json
+│   │       │   │   │   ├── capoeira
+│   │       │   │   │   │   ├── acrobatics_and_flips.json
+│   │       │   │   │   │   ├── ginga_and_fluidity.json
+│   │       │   │   │   │   └── kicks_and_sweeps.json
+│   │       │   │   │   ├── hapkido
+│   │       │   │   │   │   ├── joint_locks.json
+│   │       │   │   │   │   ├── pressure_points.json
+│   │       │   │   │   │   └── throws_and_takedowns.json
+│   │       │   │   │   ├── jeet_kune_do
+│   │       │   │   │   │   ├── footwork_and_speed.json
+│   │       │   │   │   │   ├── intercepting_fist.json
+│   │       │   │   │   │   └── trapping_hands.json
+│   │       │   │   │   ├── muay_thai
+│   │       │   │   │   │   ├── clinch_and_control.json
+│   │       │   │   │   │   ├── elbow_and_knee_strikes.json
+│   │       │   │   │   │   └── power_kicks.json
+│   │       │   │   │   ├── shaolin_kung_fu
+│   │       │   │   │   │   ├── animal_styles.json
+│   │       │   │   │   │   ├── iron_body_training.json
+│   │       │   │   │   │   └── staff_and_weaponry.json
+│   │       │   │   │   ├── silat
+│   │       │   │   │   │   ├── bladed_weapon_techniques.json
+│   │       │   │   │   │   ├── low_stance_combat.json
+│   │       │   │   │   │   └── rapid_striking.json
+│   │       │   │   │   ├── taekwondo
+│   │       │   │   │   │   ├── breaking_techniques.json
+│   │       │   │   │   │   ├── explosive_kicking.json
+│   │       │   │   │   │   └── spinning_and_aerial_kicks.json
+│   │       │   │   │   ├── tai_chi
+│   │       │   │   │   │   ├── internal_energy.json
+│   │       │   │   │   │   ├── push_hands.json
+│   │       │   │   │   │   └── slow_form_training.json
+│   │       │   │   │   ├── wing_chun
+│   │       │   │   │   │   ├── centerline_striking.json
+│   │       │   │   │   │   ├── chi_sao_sensitivity.json
+│   │       │   │   │   │   └── wooden_dummy_drills.json
+│   │       │   │   │   ├── wushu
+│   │       │   │   │   │   ├── aerial_movements.json
+│   │       │   │   │   │   ├── dynamic_forms.json
+│   │       │   │   │   │   └── long_fist_and_southern_fist.json
+│   │       │   │   │   └── xing_yi_quan
+│   │       │   │   │       ├── animal_forms.json
+│   │       │   │   │       ├── explosive_power.json
+│   │       │   │   │       └── five_element_strikes.json
+│   │       │   │   ├── hapkido.json
+│   │       │   │   ├── jeet_kune_do.json
+│   │       │   │   ├── muay_thai.json
+│   │       │   │   ├── shaolin_kung_fu.json
+│   │       │   │   ├── silat.json
+│   │       │   │   ├── taekwondo.json
+│   │       │   │   ├── tai_chi.json
+│   │       │   │   ├── wing_chun.json
+│   │       │   │   ├── wushu.json
+│   │       │   │   └── xing_yi_quan.json
+│   │       │   ├── psiops
+│   │       │   │   ├── card_decks
+│   │       │   │   ├── psi_ops_training.json
+│   │       │   │   └── psionics_training.json
+│   │       │   ├── psyops
+│   │       │   │   ├── card_decks
+│   │       │   │   ├── counter_psyops_training.json
+│   │       │   │   └── psychological_warfare_training.json
+│   │       │   └── war_strategy
+│   │       │       ├── card_decks
+│   │       │       ├── cyber_warfare.json
+│   │       │       ├── guerrilla_warfare.json
+│   │       │       ├── military_tactics.json
+│   │       │       ├── psychological_operations.json
+│   │       │       └── strategic_warfare.json
+│   │       └── war_strategy.json
+│   ├── hooks
+│   │   ├── useTimer.ts
+│   │   └── useTraining.ts
+│   ├── main.tsx
+│   ├── models
+│   │   ├── CardDeckModel.ts
+│   │   ├── CardModel.ts
+│   │   ├── ScheduleModel.ts
+│   │   └── TrainingSequenceModel.ts
+│   ├── pages
+│   │   ├── HomePage.tsx
+│   │   ├── SchedulePage.tsx
+│   │   ├── SettingsPage.tsx
+│   │   └── TrainingSequencePage.tsx
+│   ├── styles
+│   │   ├── App.css
+│   │   └── index.css
+│   ├── types
+│   │   ├── CardDeckType.ts
+│   │   ├── CardType.ts
+│   │   ├── ScheduleType.ts
+│   │   └── TrainingSequenceType.ts
+│   ├── utils
+│   │   ├── CardDeckFactory.ts
+│   │   ├── DataLoader.ts
+│   │   ├── ScheduleGenerator.ts
+│   │   └── SoundManager.ts
+│   └── vite-env.d.ts
+├── templates
+│   ├── card_deck.json
+│   ├── training_module.json
+│   └── training_sub_module.json
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
+
+66 directories, 187 files

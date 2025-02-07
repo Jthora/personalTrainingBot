@@ -1,0 +1,32 @@
+{
+    "id": "joint_locks",
+    "name": "Joint Locks",
+    "description": "Learn the fundamental joint locking techniques in Hapkido used for control and submission.",
+    "focus": ["Control", "Pain Compliance"],
+    "cards": [
+        {
+            "id": "wrist_lock",
+            "title": "Basic Wrist Lock",
+            "description": "A technique used to control an opponent by applying pressure on the wrist joint.",
+            "bulletpoints": [
+                "Use circular motion to apply the lock",
+                "Maintain close contact to limit opponent's movement",
+                "Apply gradual pressure to avoid injury"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "elbow_lock",
+            "title": "Elbow Hyperextension Lock",
+            "description": "A defensive technique that hyperextends the opponent’s elbow joint.",
+            "bulletpoints": [
+                "Step to the side while applying pressure",
+                "Control the opponent’s wrist to limit escape",
+                "Use leverage rather than brute force"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

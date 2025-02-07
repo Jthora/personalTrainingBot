@@ -1,0 +1,32 @@
+{
+    "id": "circle_walking",
+    "name": "Circle Walking",
+    "description": "Master the core footwork pattern of Baguazhang to improve agility, balance, and energy flow.",
+    "focus": ["Circular Motion", "Footwork Control"],
+    "cards": [
+        {
+            "id": "basic_circle_walk",
+            "title": "Basic Circle Walk",
+            "description": "A foundational technique for moving fluidly around an opponent while maintaining a defensive posture.",
+            "bulletpoints": [
+                "Keep your posture upright and relaxed",
+                "Step with the heel first and roll onto the toes",
+                "Maintain consistent spacing between steps"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "direction_change",
+            "title": "Direction Change Drill",
+            "description": "Learn how to shift directions smoothly while maintaining balance and fluidity.",
+            "bulletpoints": [
+                "Pivot on the ball of your foot to change direction",
+                "Keep upper body steady while transitioning",
+                "Use coordinated breathing to maintain stability"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

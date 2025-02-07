@@ -1,0 +1,32 @@
+{
+    "id": "spinning_and_aerial_kicks",
+    "name": "Spinning and Aerial Kicks",
+    "description": "Develop high-flying, spinning, and acrobatic kicks for advanced Taekwondo techniques.",
+    "focus": ["Agility", "Balance"],
+    "cards": [
+        {
+            "id": "tornado_kick",
+            "title": "Tornado Kick",
+            "description": "A spinning kick that generates speed and power through rotation.",
+            "bulletpoints": [
+                "Step forward and pivot for momentum",
+                "Use the rear leg to execute a full spin",
+                "Strike with the instep or shin for impact"
+            ],
+            "duration": 5,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "jumping_back_kick",
+            "title": "Jumping Back Kick",
+            "description": "A counterattack kick that delivers a powerful blow while retreating.",
+            "bulletpoints": [
+                "Jump backward while rotating the hips",
+                "Kick straight back with a fully extended leg",
+                "Land smoothly to maintain control"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

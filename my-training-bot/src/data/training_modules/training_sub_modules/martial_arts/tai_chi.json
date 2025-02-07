@@ -1,0 +1,13 @@
+{
+    "id": "tai_chi",
+    "name": "Tai Chi",
+    "description": "An internal Chinese martial art focused on slow movements, energy flow, and balance.",
+    "difficulty": "Beginner",
+    "estimated_time": "12-36 months",
+    "focus": ["Internal Energy", "Balance", "Soft Power"],
+    "cardDecks": [
+        "martial_arts/card_decks/tai_chi/push_hands",
+        "martial_arts/card_decks/tai_chi/internal_energy",
+        "martial_arts/card_decks/tai_chi/slow_form_training"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "id": "capoeira",
+    "name": "Capoeira",
+    "description": "A Brazilian martial art that combines acrobatics, dance, and fluid combat.",
+    "difficulty": "Intermediate",
+    "estimated_time": "12-18 months",
+    "focus": ["Flow", "Acrobatics", "Rhythmic Combat"],
+    "cardDecks": [
+        "martial_arts/card_decks/capoeira/ginga_and_fluidity",
+        "martial_arts/card_decks/capoeira/acrobatics_and_flips",
+        "martial_arts/card_decks/capoeira/kicks_and_sweeps"
+    ]
+}

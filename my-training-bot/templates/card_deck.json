@@ -1,0 +1,27 @@
+{
+    "id": "{{card_deck_id}}",
+    "name": "{{card_deck_name}}",
+    "description": "{{card_deck_description}}",
+    "focus": [
+        "{{focus_1}}",
+        "{{focus_2}}"
+    ],
+    "cards": [
+        {
+        "id": "{{card_id_1}}",
+        "title": "{{card_title_1}}",
+        "description": "{{card_description_1}}",
+        "bulletpoints": "{{card_bulletpoints_1}}",
+        "duration": "{{duration_in_minutes}}",
+        "difficulty": "{{card_difficulty}}"
+        },
+        {
+        "id": "{{card_id_2}}",
+        "title": "{{card_title_2}}",
+        "description": "{{card_description_2}}",
+        "bulletpoints": "{{card_bulletpoints_2}}",
+        "duration": "{{duration_in_minutes}}",
+        "difficulty": "{{card_difficulty}}"
+        }
+    ]
+}

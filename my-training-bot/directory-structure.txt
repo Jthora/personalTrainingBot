@@ -220,10 +220,9 @@
 │   │   └── useTraining.ts
 │   ├── main.tsx
 │   ├── models
-│   │   ├── CardDeckModel.ts
-│   │   ├── CardModel.ts
-│   │   ├── ScheduleModel.ts
-│   │   └── TrainingSequenceModel.ts
+│   │   ├── Schedule.ts
+│   │   ├── TrainingModuleCache.ts
+│   │   └── TrainingSequence.ts
 │   ├── pages
 │   │   ├── HomePage.tsx
 │   │   ├── SchedulePage.tsx
@@ -233,10 +232,10 @@
 │   │   ├── App.css
 │   │   └── index.css
 │   ├── types
-│   │   ├── CardDeckType.ts
-│   │   ├── CardType.ts
-│   │   ├── ScheduleType.ts
-│   │   └── TrainingSequenceType.ts
+│   │   ├── Card.ts
+│   │   ├── CardDeck.ts
+│   │   ├── TrainingModule.ts
+│   │   └── TrainingSubModule.ts
 │   ├── utils
 │   │   ├── CardDeckFactory.ts
 │   │   ├── DataLoader.ts
@@ -252,4 +251,4 @@
 ├── tsconfig.node.json
 └── vite.config.ts
 
-66 directories, 187 files
+66 directories, 186 files

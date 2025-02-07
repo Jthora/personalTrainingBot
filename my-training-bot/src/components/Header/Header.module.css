@@ -1,0 +1,24 @@
+@import '../../styles/theme.css';
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #001f3f;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.logo {
+    height: 162px;
+    margin-right: 10px;
+}
+
+.settingsButton {
+    margin-left: auto;
+    background-color: #0074D9;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}

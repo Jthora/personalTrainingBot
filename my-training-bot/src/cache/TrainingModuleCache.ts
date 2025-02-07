@@ -2,7 +2,7 @@ import { TrainingModule } from "../types/TrainingModule";
 
 export class TrainingModuleCache {
     private static instance: TrainingModuleCache;
-    private cache: Map<string, TrainingModule>;
+    public cache: Map<string, TrainingModule>;
 
     private constructor() {
         this.cache = new Map();

@@ -1,0 +1,20 @@
+@import '../../styles/theme.css';
+
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+
+.nav {
+    padding: var(--padding);
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-text-color);
+}
+
+.content {
+    display: flex;
+    flex: 1;
+}

@@ -1,0 +1,12 @@
+@import '../../styles/theme.css';
+
+.sidebar {
+    width: 60px;
+    background-color: #001f3f;
+    color: #ffffff;
+    overflow-y: auto;
+}
+
+.moduleItem {
+    padding: 10px;
+}@import '../../styles/theme.css';

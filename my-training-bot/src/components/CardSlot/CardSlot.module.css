@@ -1,0 +1,10 @@
+@import '../../styles/theme.css';
+
+.cardSlot {
+    border: 1px solid #0074D9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #001f3f;
+    color: #ffffff;
+}

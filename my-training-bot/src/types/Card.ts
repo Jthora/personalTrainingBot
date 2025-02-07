@@ -4,5 +4,5 @@ export type Card = {
     description: string;
     bulletpoints: string[];
     duration: number; // in minutes
-    difficulty: "Beginner" | "Intermediate" | "Advanced";
+    difficulty: "Beginner" | "Light" | "Standard" | "Intermediate" | "Advanced" | "Heavy" | "Challenge" | "Unknown";
 };

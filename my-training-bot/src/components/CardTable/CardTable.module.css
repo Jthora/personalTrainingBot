@@ -1,0 +1,10 @@
+@import '../../styles/theme.css';
+
+.cardTable {
+    flex: 1;
+    display: 'flex';
+    flexDirection: 'column';
+    padding: '10px';
+    background-color: #001f3f;
+    color: #ffffff;
+}

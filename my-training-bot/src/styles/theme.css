@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Aldrich';
+    src: url('../assets/fonts/Aldrich-Regular.ttf') format('truetype');
+}
+
 :root {
     --primary-bg-color: #001f3f;
     --secondary-bg-color: #0074D9;
@@ -11,5 +16,6 @@
 body {
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
-    font-family: 'Arial', sans-serif;
+    font-family: 'Aldrich', Arial, sans-serif;
+    margin: 0;
 }

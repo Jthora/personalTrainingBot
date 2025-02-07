@@ -3,22 +3,33 @@
 .header {
     display: flex;
     align-items: center;
-    padding: 10px;
-    background-color: #001f3f;
+    padding: 0px;
+    background-color: #000000; /* Change to black */
     justify-content: space-between;
-    color: #ffffff;
+    color: #ffffff; /* Ensure text is white */
 }
 
 .logo {
-    height: 162px;
+    height: 100px;
     margin-right: 10px;
 }
 
+.headerTitle {
+    font-size: 3em; /* Double the font size */
+}
+
 .settingsButton {
-    margin-left: auto;
     background-color: #0074D9;
     color: #ffffff;
     border: none;
-    padding: 5px 10px;
+    padding: 10px;
+    margin: 10px;
     cursor: pointer;
+    font-size: 2em; /* Double the font size */
+    font-family: Aldrich, sans-serif;
+}
+
+.headerContent {
+    display: flex;
+    align-items: center;
 }

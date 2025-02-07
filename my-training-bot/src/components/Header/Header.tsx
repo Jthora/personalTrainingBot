@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './Header.module.css';
+import logo from '../../assets/images/WingCommanderLogo-288x162.gif';
 
 const Header: React.FC = () => {
     const navigate = useNavigate();
@@ -11,11 +12,11 @@ const Header: React.FC = () => {
 
     return (
         <header className={styles.header}>
-            <button onClick={navigateToSettings} className={styles.settingsButton}>Settings</button>
-            <div style={{ display: 'flex', alignItems: 'center' }}>
-                <img src="../assets/images/WingCommanderLogo-288x162.gif" alt="Logo" className={styles.logo} />
-                <h1>Training Bot</h1>
+            <div className={styles.headerContent}>
+                <img src={logo} alt="Logo" className={styles.logo} />
+                <h1 className={styles.headerTitle}>Training Bot</h1>
             </div>
+            <button onClick={navigateToSettings} className={styles.settingsButton}>Settings</button>
         </header>
     );
 };

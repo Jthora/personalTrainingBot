@@ -1,0 +1,27 @@
+{
+    "id": "clairvoyant_perception",
+    "name": "Clairvoyant Perception",
+    "description": "Developing the ability to perceive hidden knowledge beyond ordinary sight.",
+    "focus": [
+        "Remote Viewing",
+        "Higher Sight"
+    ],
+    "cards": [
+        {
+            "id": "clairvoyance_1",
+            "title": "Activating the Third Eye",
+            "description": "Practices to enhance energetic perception and vision beyond physical sight.",
+            "bulletpoints": "Pineal Gland Activation, Energy Field Sensing, Subtle Vision Tuning",
+            "duration": "60",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "clairvoyance_2",
+            "title": "Tuning Into Past, Present, and Future Events",
+            "description": "Aligning perception to receive information across timelines.",
+            "bulletpoints": "Energetic Imprint Reading, Temporal Sensory Training, Symbolic Associations",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": "high_stress_drills",
+    "name": "High-Stress Drills",
+    "description": "Training designed to improve decision-making and combat efficiency under extreme pressure.",
+    "focus": [
+        "Adrenaline Management",
+        "Cognitive Processing Under Stress"
+    ],
+    "cards": [
+        {
+            "id": "stress_drill_1",
+            "title": "Blindfolded Reaction Drill",
+            "description": "Training to respond to sudden threats while deprived of vision.",
+            "bulletpoints": "Rely on auditory and tactile cues, execute immediate defensive action, maintain situational awareness",
+            "duration": "10",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "stress_drill_2",
+            "title": "Disarm and Evade Under Fire",
+            "description": "Reacting to an armed opponent while engaging in controlled evasion.",
+            "bulletpoints": "Identify escape routes, control attacker’s firearm, neutralize immediate threat",
+            "duration": "10",
+            "difficulty": "Expert"
+        }
+    ]
+}

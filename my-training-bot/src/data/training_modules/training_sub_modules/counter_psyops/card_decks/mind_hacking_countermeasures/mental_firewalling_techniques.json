@@ -1,0 +1,27 @@
+{
+    "id": "mental_firewalling_techniques",
+    "name": "Mental Firewalling Techniques",
+    "description": "Cognitive defense strategies to block intrusive psychological manipulation.",
+    "focus": [
+        "Cognitive Firewalling",
+        "Mental Intrusion Defense"
+    ],
+    "cards": [
+        {
+            "id": "firewall_1",
+            "title": "Building Mental Shields",
+            "description": "Techniques for constructing cognitive barriers against invasive psychological influence.",
+            "bulletpoints": "Visualization-based shielding, controlled thought redirection, subconscious gatekeeping",
+            "duration": "20",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "firewall_2",
+            "title": "Defensive Mental Looping",
+            "description": "Using repetitive cognitive structures to resist forced thought patterns.",
+            "bulletpoints": "Internal mantra reinforcement, cognitive pattern disruption, loop-based mental conditioning",
+            "duration": "15",
+            "difficulty": "Expert"
+        }
+    ]
+}

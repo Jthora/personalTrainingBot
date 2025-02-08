@@ -1,0 +1,27 @@
+{
+    "id": "psychic_perception",
+    "name": "Psychic Perception",
+    "description": "Developing heightened mental sensitivity for retrieving detailed information remotely.",
+    "focus": [
+        "Mind Projection",
+        "Extrasensory Awareness"
+    ],
+    "cards": [
+        {
+            "id": "psychic_perception_1",
+            "title": "Tuning into Psychic Frequencies",
+            "description": "Methods for aligning mental focus with subtle energy signals.",
+            "bulletpoints": "Resonance Matching, Psychic Frequency Tuning, Signal Isolation",
+            "duration": "45",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "psychic_perception_2",
+            "title": "Extracting Information from Remote Sites",
+            "description": "Training to receive, interpret, and analyze remote viewing data.",
+            "bulletpoints": "Symbolic Translation, Mind Mapping, Data Retention Techniques",
+            "duration": "65",
+            "difficulty": "Advanced"
+        }
+    ]
+}

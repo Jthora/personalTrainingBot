@@ -1,0 +1,27 @@
+{
+    "id": "telekinetic_strikes",
+    "name": "Telekinetic Strikes",
+    "description": "Utilizing psionic force to deliver non-physical blows to opponents.",
+    "focus": [
+        "Telekinetic Force",
+        "Psionic Impact"
+    ],
+    "cards": [
+        {
+            "id": "telekinetic_strike_1",
+            "title": "Generating a Telekinetic Strike",
+            "description": "Techniques to direct psionic force in a concentrated impact.",
+            "bulletpoints": "Force Channeling, Shockwave Techniques, Target Focus",
+            "duration": "45",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "telekinetic_strike_2",
+            "title": "Advanced Telekinetic Combat",
+            "description": "Refining strikes for increased force and strategic application.",
+            "bulletpoints": "Multi-Strike Projection, Energy Wave Expansion, Target Disruption",
+            "duration": "60",
+            "difficulty": "Advanced"
+        }
+    ]
+}

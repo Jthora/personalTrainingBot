@@ -1,0 +1,27 @@
+{
+    "id": "knife_fighting_tactics",
+    "name": "Knife Fighting Tactics",
+    "description": "Training in offensive and defensive knife combat techniques for close-quarters engagements.",
+    "focus": [
+        "Knife Defense",
+        "Offensive Blade Techniques"
+    ],
+    "cards": [
+        {
+            "id": "knife_1",
+            "title": "Grip and Stance",
+            "description": "Understanding the proper grip techniques and stances for effective knife combat.",
+            "bulletpoints": "Reverse grip vs. forward grip, defensive stance, mobility and footwork",
+            "duration": "10",
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "knife_2",
+            "title": "Blade Deflections and Counters",
+            "description": "Techniques to deflect an incoming knife attack and counter with precision.",
+            "bulletpoints": "Parrying techniques, control and counter, quick response drills",
+            "duration": "15",
+            "difficulty": "Intermediate"
+        }
+    ]
+}

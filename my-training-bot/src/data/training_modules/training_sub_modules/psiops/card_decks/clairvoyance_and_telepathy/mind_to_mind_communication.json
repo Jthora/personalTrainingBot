@@ -1,0 +1,27 @@
+{
+    "id": "mind_to_mind_communication",
+    "name": "Mind-to-Mind Communication",
+    "description": "Developing the ability to transmit and receive thoughts telepathically.",
+    "focus": [
+        "Mental Linking",
+        "Telepathic Projection"
+    ],
+    "cards": [
+        {
+            "id": "telepathy_1",
+            "title": "Establishing a Telepathic Link",
+            "description": "Techniques for syncing brainwave patterns and focusing intent for clear mental communication.",
+            "bulletpoints": "Theta State Induction, Empathic Resonance, Thought Projection",
+            "duration": "60",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "telepathy_2",
+            "title": "Receiving and Translating Thought Patterns",
+            "description": "Enhancing clarity in perceiving thoughts and mental imagery from another mind.",
+            "bulletpoints": "Sensory Mind Mapping, Symbolic Translation, Conscious Thought Alignment",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

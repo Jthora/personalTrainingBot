@@ -1,0 +1,27 @@
+{
+    "id": "mission_planning_and_execution",
+    "name": "Mission Planning and Execution",
+    "description": "Comprehensive training in planning and executing high-stakes special operations missions.",
+    "focus": [
+        "Operational Strategy",
+        "Tactical Coordination"
+    ],
+    "cards": [
+        {
+            "id": "mission_1",
+            "title": "Developing Mission Blueprints",
+            "description": "Creating a structured plan for executing covert and high-risk operations.",
+            "bulletpoints": "Objective assessment, risk mitigation, contingency planning",
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mission_2",
+            "title": "Team Coordination and Execution",
+            "description": "Executing missions with precise team-based coordination and dynamic adaptability.",
+            "bulletpoints": "Command hierarchy, rapid decision-making, mission flow adjustments",
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

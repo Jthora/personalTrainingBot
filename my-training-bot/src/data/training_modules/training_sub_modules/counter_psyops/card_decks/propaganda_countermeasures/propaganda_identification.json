@@ -1,0 +1,27 @@
+{
+    "id": "propaganda_identification",
+    "name": "Propaganda Identification",
+    "description": "Techniques for detecting propaganda and misinformation campaigns used in media and politics.",
+    "focus": [
+        "Mass Media Manipulation Detection",
+        "Psychological Persuasion Techniques"
+    ],
+    "cards": [
+        {
+            "id": "propaganda_1",
+            "title": "Recognizing Propaganda Techniques",
+            "description": "Identifying the core strategies used in modern propaganda campaigns.",
+            "bulletpoints": "Analyze emotional appeals, false dilemmas, authority bias, and repetition conditioning",
+            "duration": "20",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "propaganda_2",
+            "title": "Psychological Triggers in Propaganda",
+            "description": "Understanding how propaganda exploits cognitive biases to influence perception.",
+            "bulletpoints": "Identify confirmation bias exploitation, groupthink induction, and fear-based persuasion",
+            "duration": "25",
+            "difficulty": "Advanced"
+        }
+    ]
+}

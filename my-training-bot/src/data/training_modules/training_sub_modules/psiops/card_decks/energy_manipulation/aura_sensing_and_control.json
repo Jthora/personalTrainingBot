@@ -1,0 +1,27 @@
+{
+    "id": "aura_sensing_and_control",
+    "name": "Aura Sensing and Control",
+    "description": "Enhancing perception of energy fields and manipulating aura dynamics.",
+    "focus": [
+        "Energetic Sensory Perception",
+        "Personal Energy Field Mastery"
+    ],
+    "cards": [
+        {
+            "id": "aura_1",
+            "title": "Sensing and Analyzing Energy Fields",
+            "description": "Techniques to detect and interpret auras and energetic imprints.",
+            "bulletpoints": "Aura Scanning, Electromagnetic Sensory Training, Energy Signature Recognition",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "aura_2",
+            "title": "Expanding and Contracting the Aura",
+            "description": "Controlling the density and size of the aura for tactical advantage.",
+            "bulletpoints": "Aura Expansion Exercises, Vibrational Alignment, Aura Compression Training",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": "nlp_resistance_strategies",
+    "name": "NLP Resistance Strategies",
+    "description": "Defensive strategies against Neuro-Linguistic Programming (NLP) manipulation tactics.",
+    "focus": [
+        "Neuro-Linguistic Programming Resistance",
+        "Linguistic Pattern Awareness"
+    ],
+    "cards": [
+        {
+            "id": "nlp_1",
+            "title": "Countering Conversational Traps",
+            "description": "Recognizing and deflecting hypnotic language and suggestive speech patterns.",
+            "bulletpoints": "Avoiding linguistic framing, detecting hypnotic cadence, questioning ambiguous presuppositions",
+            "duration": "20",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "nlp_2",
+            "title": "Breaking NLP Anchoring Techniques",
+            "description": "Disrupting NLP-based associations and conditioned responses.",
+            "bulletpoints": "Interfering with sensory linkage, reprogramming mental anchors, disrupting automatic compliance",
+            "duration": "15",
+            "difficulty": "Expert"
+        }
+    ]
+}

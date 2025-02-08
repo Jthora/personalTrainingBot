@@ -1,0 +1,27 @@
+{
+    "id": "network_monitoring_tools",
+    "name": "Network Monitoring Tools",
+    "description": "Understanding and deploying network monitoring solutions for security and performance analysis.",
+    "focus": [
+        "Traffic Analysis",
+        "Threat Detection"
+    ],
+    "cards": [
+        {
+            "id": "monitoring_1",
+            "title": "Introduction to Network Monitoring",
+            "description": "Overview of network monitoring concepts, tools, and techniques.",
+            "bulletpoints": "SNMP, NetFlow, Packet Capture, SIEM solutions",
+            "duration": "90",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "monitoring_2",
+            "title": "Using Wireshark for Packet Analysis",
+            "description": "Understanding how to capture and analyze network traffic using Wireshark.",
+            "bulletpoints": "Packet filtering, protocol dissection, suspicious activity detection",
+            "duration": "120",
+            "difficulty": "Intermediate"
+        }
+    ]
+}

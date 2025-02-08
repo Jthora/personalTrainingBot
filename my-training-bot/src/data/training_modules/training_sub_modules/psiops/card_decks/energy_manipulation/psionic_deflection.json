@@ -1,0 +1,27 @@
+{
+    "id": "psionic_deflection",
+    "name": "Psionic Deflection",
+    "description": "Methods to shield and redirect hostile energy attacks.",
+    "focus": [
+        "Energy Barriers",
+        "Defensive Psionics"
+    ],
+    "cards": [
+        {
+            "id": "deflection_1",
+            "title": "Creating an Energy Shield",
+            "description": "Forming an energetic barrier to block and absorb incoming forces.",
+            "bulletpoints": "Shield Formation, Layered Protection, Psionic Field Reinforcement",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "deflection_2",
+            "title": "Deflecting and Redirecting Attacks",
+            "description": "Using psionic control to neutralize and reflect negative forces.",
+            "bulletpoints": "Redirection Techniques, Energy Absorption, Reverse Flow Manipulation",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

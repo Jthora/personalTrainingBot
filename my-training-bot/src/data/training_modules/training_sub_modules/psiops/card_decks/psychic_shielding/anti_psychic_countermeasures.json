@@ -1,0 +1,27 @@
+{
+    "id": "anti_psychic_countermeasures",
+    "name": "Anti-Psychic Countermeasures",
+    "description": "Strategies to detect, block, and reverse psychic intrusions and mind-control attempts.",
+    "focus": [
+        "Countering Psychic Attacks",
+        "Mind Protection"
+    ],
+    "cards": [
+        {
+            "id": "anti_psychic_1",
+            "title": "Identifying Psychic Threats",
+            "description": "Training in recognizing and neutralizing external psychic influences.",
+            "bulletpoints": "Threat Detection, Energy Disruption, Mind Signature Analysis",
+            "duration": "55",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "anti_psychic_2",
+            "title": "Defensive Combat Against Psychic Manipulation",
+            "description": "Using counter-strategies to resist and repel mental manipulation.",
+            "bulletpoints": "Psychic Reflection, Energy Mirror Techniques, Thought Recalibration",
+            "duration": "70",
+            "difficulty": "Expert"
+        }
+    ]
+}

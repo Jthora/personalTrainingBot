@@ -1,0 +1,27 @@
+{
+    "id": "narrative_deconstruction_methods",
+    "name": "Narrative Deconstruction Methods",
+    "description": "Techniques for breaking down and exposing false or misleading narratives.",
+    "focus": [
+        "Critical Thinking",
+        "Disinformation Dissection"
+    ],
+    "cards": [
+        {
+            "id": "narrative_1",
+            "title": "Tracing Narrative Origins",
+            "description": "Tracking where a story originates and how it spreads through media.",
+            "bulletpoints": "Analyze press releases, think tank affiliations, and coordinated talking points",
+            "duration": "20",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "narrative_2",
+            "title": "Spotting Logical Fallacies in Narratives",
+            "description": "Identifying manipulative logic and rhetorical tricks used in deceptive storytelling.",
+            "bulletpoints": "Break down strawman arguments, false equivalencies, and ad hominem attacks",
+            "duration": "25",
+            "difficulty": "Expert"
+        }
+    ]
+}

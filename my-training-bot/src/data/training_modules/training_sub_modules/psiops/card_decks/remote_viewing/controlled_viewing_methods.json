@@ -1,0 +1,27 @@
+{
+    "id": "controlled_viewing_methods",
+    "name": "Controlled Viewing Methods",
+    "description": "Techniques to refine and stabilize remote viewing accuracy under controlled conditions.",
+    "focus": [
+        "Clairvoyant Precision",
+        "Mental Projection"
+    ],
+    "cards": [
+        {
+            "id": "controlled_viewing_1",
+            "title": "Enhancing Viewing Clarity",
+            "description": "Methods to filter out distractions and focus on precise imagery.",
+            "bulletpoints": "Image Stabilization, Focus Anchors, Environmental Filtering",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "controlled_viewing_2",
+            "title": "Multi-Layer Perception",
+            "description": "Training to perceive details across multiple energetic layers.",
+            "bulletpoints": "Cross-Dimensional Viewing, Layered Sensory Analysis, Perception Expansion",
+            "duration": "80",
+            "difficulty": "Advanced"
+        }
+    ]
+}

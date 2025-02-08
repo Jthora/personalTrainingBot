@@ -1,0 +1,27 @@
+{
+    "id": "log_analysis_and_correlation",
+    "name": "Log Analysis and Correlation",
+    "description": "Investigating security incidents by analyzing system and network logs.",
+    "focus": [
+        "Event Correlation",
+        "Threat Hunting"
+    ],
+    "cards": [
+        {
+            "id": "log_1",
+            "title": "Parsing System and Network Logs",
+            "description": "Using forensic techniques to analyze log files for security incidents.",
+            "bulletpoints": "Syslog analysis, SIEM tools, log parsing techniques",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "log_2",
+            "title": "Threat Correlation and Incident Response",
+            "description": "Connecting multiple log sources to identify and mitigate security threats.",
+            "bulletpoints": "Cross-log correlation, anomaly detection, attack pattern recognition",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": "rifle_tactics",
+    "name": "Rifle Tactics",
+    "description": "Training on handling and engaging targets effectively with rifles in combat environments.",
+    "focus": [
+        "Long-Range Accuracy",
+        "Tactical Movement"
+    ],
+    "cards": [
+        {
+            "id": "rifle_1",
+            "title": "Controlled Pair Drill",
+            "description": "Firing two precise shots in succession to neutralize threats efficiently.",
+            "bulletpoints": "Rapid sight picture acquisition, trigger reset efficiency, recoil management",
+            "duration": "10",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "rifle_2",
+            "title": "Cover and Fire Maneuver",
+            "description": "Using cover effectively while engaging hostile targets in tactical movement.",
+            "bulletpoints": "Shooting from cover, movement coordination, suppressive fire tactics",
+            "duration": "15",
+            "difficulty": "Advanced"
+        }
+    ]
+}

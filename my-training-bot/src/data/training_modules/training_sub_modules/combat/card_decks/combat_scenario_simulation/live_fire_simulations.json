@@ -1,0 +1,27 @@
+{
+    "id": "live_fire_simulations",
+    "name": "Live Fire Simulations",
+    "description": "Realistic combat drills using live ammunition to enhance combat readiness.",
+    "focus": [
+        "Tactical Precision",
+        "Live Ammunition Handling"
+    ],
+    "cards": [
+        {
+            "id": "live_fire_1",
+            "title": "Timed Cover and Engage",
+            "description": "Shooting drill designed to maximize accuracy and cover usage under time constraints.",
+            "bulletpoints": "Engage multiple targets, seek cover effectively, fire under pressure",
+            "duration": "10",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "live_fire_2",
+            "title": "Dynamic Room Clearing",
+            "description": "Engaging threats in close quarters while maintaining a low profile.",
+            "bulletpoints": "Control angles of approach, maintain sight alignment, avoid crossfire",
+            "duration": "15",
+            "difficulty": "Expert"
+        }
+    ]
+}

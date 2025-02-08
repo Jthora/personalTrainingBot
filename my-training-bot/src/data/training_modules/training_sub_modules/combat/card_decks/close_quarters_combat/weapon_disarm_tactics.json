@@ -1,0 +1,27 @@
+{
+    "id": "weapon_disarm_tactics",
+    "name": "Weapon Disarm Tactics",
+    "description": "Techniques for disarming and neutralizing opponents wielding weapons.",
+    "focus": [
+        "Knife and Gun Disarms",
+        "Weapon Retention"
+    ],
+    "cards": [
+        {
+            "id": "disarm_1",
+            "title": "Knife Disarm Basics",
+            "description": "Essential movements for disarming an attacker with a bladed weapon.",
+            "bulletpoints": "Redirecting blade trajectory, control grips, counterattacks",
+            "duration": "10",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "disarm_2",
+            "title": "Handgun Disarm Techniques",
+            "description": "Neutralizing a firearm threat within arm’s reach.",
+            "bulletpoints": "Redirecting barrel, rapid control, disabling opponent",
+            "duration": "10",
+            "difficulty": "Expert"
+        }
+    ]
+}

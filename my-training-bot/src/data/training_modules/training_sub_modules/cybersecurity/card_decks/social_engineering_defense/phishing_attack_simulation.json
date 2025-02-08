@@ -1,0 +1,27 @@
+{
+    "id": "phishing_attack_simulation",
+    "name": "Phishing Attack Simulation",
+    "description": "Training to recognize, prevent, and respond to phishing attacks.",
+    "focus": [
+        "Email Spoofing",
+        "Credential Theft"
+    ],
+    "cards": [
+        {
+            "id": "phishing_defense_1",
+            "title": "Recognizing Phishing Attempts",
+            "description": "How to identify phishing emails, messages, and phone scams.",
+            "bulletpoints": "Email Headers, Suspicious Links, Urgency Cues, Spoofed Domains",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "phishing_defense_2",
+            "title": "Simulating and Testing Phishing Attacks",
+            "description": "Conducting controlled phishing attack simulations to train employees.",
+            "bulletpoints": "Phishing Kits, Red Team Exercises, Threat Awareness Training",
+            "duration": "90",
+            "difficulty": "Intermediate"
+        }
+    ]
+}

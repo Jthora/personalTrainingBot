@@ -1,0 +1,27 @@
+{
+    "id": "identifying_coercion_tactics",
+    "name": "Identifying Coercion Tactics",
+    "description": "Training to recognize and counteract coercion and social pressure tactics.",
+    "focus": [
+        "Tactical Persuasion Recognition",
+        "Power Dynamics Awareness"
+    ],
+    "cards": [
+        {
+            "id": "coercion_1",
+            "title": "Spotting Manipulative Language",
+            "description": "Analyzing speech patterns that indicate psychological coercion.",
+            "bulletpoints": "Identify guilt-tripping, false urgency, and strategic vagueness in persuasion attempts",
+            "duration": "15",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "coercion_2",
+            "title": "The Compliance Trap",
+            "description": "Understanding social compliance tactics and learning counter-strategies.",
+            "bulletpoints": "Recognize authority pressure, peer conformity tactics, and the reciprocity effect",
+            "duration": "20",
+            "difficulty": "Advanced"
+        }
+    ]
+}

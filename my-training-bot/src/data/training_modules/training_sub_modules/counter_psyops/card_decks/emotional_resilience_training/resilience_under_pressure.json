@@ -1,0 +1,27 @@
+{
+    "id": "resilience_under_pressure",
+    "name": "Resilience Under Pressure",
+    "description": "Training in maintaining mental resilience in high-stress situations.",
+    "focus": [
+        "Stress Tolerance",
+        "Crisis Adaptation"
+    ],
+    "cards": [
+        {
+            "id": "resilience_1",
+            "title": "Controlled Exposure to Stressors",
+            "description": "Practicing adaptive responses to controlled psychological stress.",
+            "bulletpoints": "Incremental exposure, breathing regulation, controlled emotional response training",
+            "duration": "15",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "resilience_2",
+            "title": "Mental Fortitude Development",
+            "description": "Building long-term mental endurance through discipline and adaptive mindset techniques.",
+            "bulletpoints": "Mindfulness resilience, long-term stress conditioning, high-pressure decision-making drills",
+            "duration": "20",
+            "difficulty": "Expert"
+        }
+    ]
+}

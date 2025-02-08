@@ -1,0 +1,27 @@
+{
+    "id": "corporate_security_training",
+    "name": "Corporate Security Training",
+    "description": "Enhancing organizational defenses against social engineering threats.",
+    "focus": [
+        "Insider Threats",
+        "Security Awareness"
+    ],
+    "cards": [
+        {
+            "id": "corporate_security_1",
+            "title": "Training Employees on Security Awareness",
+            "description": "Ensuring all employees are trained in security best practices.",
+            "bulletpoints": "Security Workshops, Threat Recognition, Access Control Policies",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "corporate_security_2",
+            "title": "Mitigating Insider Threats",
+            "description": "Identifying and neutralizing insider threats before they cause damage.",
+            "bulletpoints": "Employee Monitoring, Threat Reporting, Behavioral Red Flags",
+            "duration": "90",
+            "difficulty": "Intermediate"
+        }
+    ]
+}

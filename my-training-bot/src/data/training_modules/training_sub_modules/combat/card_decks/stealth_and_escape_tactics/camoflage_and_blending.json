@@ -1,0 +1,27 @@
+{
+    "id": "camouflage_and_blending",
+    "name": "Camouflage and Blending",
+    "description": "Methods for blending into different environments and avoiding detection.",
+    "focus": [
+        "Concealment Techniques",
+        "Adaptive Appearance"
+    ],
+    "cards": [
+        {
+            "id": "camouflage_1",
+            "title": "Natural Environment Camouflage",
+            "description": "Utilizing terrain and foliage to blend into outdoor environments.",
+            "bulletpoints": "Using shadows, breaking up silhouette, adjusting to lighting conditions",
+            "duration": "15",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "camouflage_2",
+            "title": "Social Engineering Disguises",
+            "description": "Altering appearance and behavior to blend into social environments.",
+            "bulletpoints": "Changing gait, speech modulation, dressing for context",
+            "duration": "15",
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": "force_maneuvering",
+    "name": "Force Maneuvering",
+    "description": "Advanced tactics for positioning and movement of military forces to gain strategic advantage.",
+    "focus": [
+        "Battlefield Maneuvers",
+        "Force Deployment"
+    ],
+    "cards": [
+        {
+            "id": "maneuver_1",
+            "title": "Flanking and Encirclement Tactics",
+            "description": "Using positioning to neutralize enemy forces through flanking and encirclement.",
+            "bulletpoints": "Pincer movements, hammer-and-anvil tactics, blitzkrieg strategies",
+            "duration": "60",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "maneuver_2",
+            "title": "Rapid Deployment and Mobility",
+            "description": "Utilizing speed and terrain for effective force deployment.",
+            "bulletpoints": "Airborne insertions, mechanized warfare, strategic positioning",
+            "duration": "50",
+            "difficulty": "Advanced"
+        }
+    ]
+}

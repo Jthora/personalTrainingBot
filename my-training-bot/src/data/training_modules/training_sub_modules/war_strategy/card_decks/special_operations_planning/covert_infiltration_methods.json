@@ -1,0 +1,27 @@
+{
+    "id": "covert_infiltration_methods",
+    "name": "Covert Infiltration Methods",
+    "description": "Training in silent entry, disguise, and stealth movement for deep-cover operations.",
+    "focus": [
+        "Stealth Tactics",
+        "Disguise and Camouflage"
+    ],
+    "cards": [
+        {
+            "id": "infiltration_1",
+            "title": "Silent Entry Techniques",
+            "description": "Approaching and breaching enemy territory without detection.",
+            "bulletpoints": "Noise discipline, shadow positioning, silent movement drills",
+            "duration": "60",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "infiltration_2",
+            "title": "Advanced Camouflage and Disguise",
+            "description": "Utilizing environment and disguise to remain undetected in hostile zones.",
+            "bulletpoints": "Urban camouflage, identity forging, environmental adaptation",
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

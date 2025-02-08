@@ -1,0 +1,27 @@
+{
+    "id": "urban_warfare_strategies",
+    "name": "Urban Warfare Strategies",
+    "description": "Tactics for engaging in combat within densely populated urban environments.",
+    "focus": [
+        "Urban Combat",
+        "Building Clearance"
+    ],
+    "cards": [
+        {
+            "id": "urban_1",
+            "title": "Close-Quarters Battle Tactics",
+            "description": "Effective movement and engagement techniques for combat in confined spaces.",
+            "bulletpoints": "Utilize cover, room clearing maneuvers, and cornering strategies",
+            "duration": "30",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "urban_2",
+            "title": "High-Risk Extraction Operations",
+            "description": "Executing personnel extractions and hostage rescue missions in hostile urban zones.",
+            "bulletpoints": "Coordinate fireteams, use non-lethal options, and execute timed extractions",
+            "duration": "40",
+            "difficulty": "Expert"
+        }
+    ]
+}

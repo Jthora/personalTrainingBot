@@ -1,0 +1,27 @@
+{
+    "id": "striking_and_counterattacks",
+    "name": "Striking and Counterattacks",
+    "description": "Techniques for powerful strikes and effective counterattacks in close-quarters combat.",
+    "focus": [
+        "Punching and Kicking",
+        "Counterattack Strategies"
+    ],
+    "cards": [
+        {
+            "id": "strike_1",
+            "title": "Jab-Cross Combination",
+            "description": "Fundamental striking combination used to create openings and disrupt opponents.",
+            "bulletpoints": "Proper stance, speed, targeting vital points, follow-up strikes",
+            "duration": "5",
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "strike_2",
+            "title": "Elbow and Knee Strikes",
+            "description": "Short-range powerful attacks used in clinch fighting.",
+            "bulletpoints": "Angle control, rapid execution, generating force from core",
+            "duration": "5",
+            "difficulty": "Intermediate"
+        }
+    ]
+}

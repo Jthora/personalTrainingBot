@@ -1,0 +1,27 @@
+{
+    "id": "covert_psychological_warfare",
+    "name": "Covert Psychological Warfare",
+    "description": "Using deception, misinformation, and psychological triggers to disrupt enemy forces.",
+    "focus": [
+        "Disinformation",
+        "Perception Manipulation"
+    ],
+    "cards": [
+        {
+            "id": "psyops_1",
+            "title": "Planting False Information",
+            "description": "Techniques for spreading misinformation to destabilize adversaries.",
+            "bulletpoints": "Seeding fake reports, controlled opposition, deepfake tactics",
+            "duration": "55",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psyops_2",
+            "title": "Psychological Shock and Awe",
+            "description": "Utilizing fear, confusion, and unpredictability to break enemy morale.",
+            "bulletpoints": "Sensory overload, fear-based narratives, symbolic warfare",
+            "duration": "60",
+            "difficulty": "Advanced"
+        }
+    ]
+}

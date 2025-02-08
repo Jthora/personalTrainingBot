@@ -1,0 +1,27 @@
+{
+    "id": "fire_and_maneuver",
+    "name": "Fire and Maneuver",
+    "description": "Coordinated movement and suppressive fire tactics for battlefield mobility.",
+    "focus": [
+        "Team Coordination",
+        "Cover Fire Deployment"
+    ],
+    "cards": [
+        {
+            "id": "maneuver_1",
+            "title": "Bounding Overwatch",
+            "description": "Alternating cover fire while moving towards an objective.",
+            "bulletpoints": "Move in pairs, suppress enemy positions, use cover effectively",
+            "duration": "15",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "maneuver_2",
+            "title": "Flanking and Envelopment",
+            "description": "Executing a flanking maneuver to neutralize threats from an advantageous position.",
+            "bulletpoints": "Identify enemy weak points, coordinate flanking approach, maintain team communication",
+            "duration": "20",
+            "difficulty": "Advanced"
+        }
+    ]
+}

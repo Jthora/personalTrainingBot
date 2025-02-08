@@ -1,0 +1,27 @@
+{
+    "id": "psionic_meditation",
+    "name": "Psionic Meditation",
+    "description": "Meditative techniques to enhance mental clarity and increase psionic awareness.",
+    "focus": [
+        "Mental Focus",
+        "Energetic Awareness"
+    ],
+    "cards": [
+        {
+            "id": "meditation_1",
+            "title": "Breath Control for Psionic Awareness",
+            "description": "Breathing techniques to enhance focus and psionic perception.",
+            "bulletpoints": "Deep Breathing Cycles, Energy Alignment, Mind-Body Synchronization",
+            "duration": "30",
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "meditation_2",
+            "title": "Third Eye Activation",
+            "description": "Guided meditation for opening and strengthening the third eye.",
+            "bulletpoints": "Visualization Training, Sensory Expansion, Chakra Focus",
+            "duration": "45",
+            "difficulty": "Intermediate"
+        }
+    ]
+}

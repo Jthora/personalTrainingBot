@@ -1,0 +1,27 @@
+{
+    "id": "energy_barriers",
+    "name": "Energy Barriers",
+    "description": "Creating and sustaining protective energetic fields against psychic intrusions.",
+    "focus": [
+        "Energy Projection",
+        "Shield Reinforcement"
+    ],
+    "cards": [
+        {
+            "id": "energy_barrier_1",
+            "title": "Forming an Energy Barrier",
+            "description": "Techniques for creating a protective psionic field around oneself.",
+            "bulletpoints": "Energy Flow Control, Field Expansion, Shield Density",
+            "duration": "50",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "energy_barrier_2",
+            "title": "Advanced Shielding Applications",
+            "description": "Multi-layered shielding techniques to block stronger attacks.",
+            "bulletpoints": "Frequency Modulation, Absorption Shielding, Multi-Layer Protection",
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

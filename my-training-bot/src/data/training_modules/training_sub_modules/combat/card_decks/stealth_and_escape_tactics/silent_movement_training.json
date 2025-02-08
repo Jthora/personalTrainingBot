@@ -1,0 +1,27 @@
+{
+    "id": "silent_movement_training",
+    "name": "Silent Movement Training",
+    "description": "Techniques to minimize noise and remain undetected during movement.",
+    "focus": [
+        "Footstep Control",
+        "Environmental Awareness"
+    ],
+    "cards": [
+        {
+            "id": "silent_move_1",
+            "title": "Soft Footfall Technique",
+            "description": "Methods for reducing footstep noise across different surfaces.",
+            "bulletpoints": "Heel-to-toe rolling, crouched movement, surface adaptation",
+            "duration": "10",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "silent_move_2",
+            "title": "Breath Control for Stealth",
+            "description": "Using controlled breathing to maintain calmness and reduce sound production.",
+            "bulletpoints": "Slow diaphragmatic breathing, controlled exhalation, masking breath with environmental noise",
+            "duration": "10",
+            "difficulty": "Advanced"
+        }
+    ]
+}

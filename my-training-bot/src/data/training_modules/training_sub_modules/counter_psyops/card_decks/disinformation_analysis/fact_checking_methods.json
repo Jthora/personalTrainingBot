@@ -1,0 +1,27 @@
+{
+    "id": "fact_checking_methods",
+    "name": "Fact-Checking Methods",
+    "description": "Techniques to systematically verify information and counter misinformation.",
+    "focus": [
+        "Source Verification",
+        "Media Literacy"
+    ],
+    "cards": [
+        {
+            "id": "fact_check_1",
+            "title": "Source Validation",
+            "description": "Assessing the credibility and reliability of an information source.",
+            "bulletpoints": "Identify original sources, cross-check multiple reports, evaluate author credibility",
+            "duration": "15",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "fact_check_2",
+            "title": "Reverse Image Search",
+            "description": "Using image verification tools to detect manipulated or misattributed media.",
+            "bulletpoints": "Use reverse search engines, analyze metadata, cross-reference similar content",
+            "duration": "10",
+            "difficulty": "Beginner"
+        }
+    ]
+}

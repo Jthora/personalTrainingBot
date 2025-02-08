@@ -1,0 +1,27 @@
+{
+    "id": "political_warfare_analysis",
+    "name": "Political Warfare Analysis",
+    "description": "Understanding the use of political influence and subversion as a tool of warfare.",
+    "focus": [
+        "Influence Operations",
+        "Soft Power Tactics"
+    ],
+    "cards": [
+        {
+            "id": "political_1",
+            "title": "Election Interference Tactics",
+            "description": "Analyzing state-sponsored influence campaigns on global elections.",
+            "bulletpoints": "Misinformation campaigns, social media manipulation, hacking voter infrastructure",
+            "duration": "50",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "political_2",
+            "title": "Psychological Warfare in Politics",
+            "description": "How political entities use psychological manipulation to control narratives.",
+            "bulletpoints": "Propaganda frameworks, mass perception control, media warfare",
+            "duration": "45",
+            "difficulty": "Advanced"
+        }
+    ]
+}

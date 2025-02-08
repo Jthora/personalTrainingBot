@@ -1,0 +1,27 @@
+{
+    "id": "economic_sanctions_tactics",
+    "name": "Economic Sanctions Tactics",
+    "description": "Strategies for leveraging economic power as a means of warfare.",
+    "focus": [
+        "Economic Warfare",
+        "Sanction Design"
+    ],
+    "cards": [
+        {
+            "id": "sanctions_1",
+            "title": "Strategic Use of Sanctions",
+            "description": "Understanding the impact of financial restrictions on global actors.",
+            "bulletpoints": "Case studies on U.S. sanctions, impact on adversaries, countermeasures",
+            "duration": "40",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "sanctions_2",
+            "title": "Bypassing and Countering Sanctions",
+            "description": "Methods countries use to evade and counteract sanctions.",
+            "bulletpoints": "Cryptocurrency laundering, offshore banking, black market trade",
+            "duration": "45",
+            "difficulty": "Advanced"
+        }
+    ]
+}

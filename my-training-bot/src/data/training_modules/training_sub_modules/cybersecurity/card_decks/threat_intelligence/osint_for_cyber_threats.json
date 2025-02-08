@@ -1,0 +1,27 @@
+{
+    "id": "osint_for_cyber_threats",
+    "name": "OSINT for Cyber Threats",
+    "description": "Leveraging open-source intelligence to identify and monitor cyber threats.",
+    "focus": [
+        "OSINT Techniques",
+        "Threat Actor Research"
+    ],
+    "cards": [
+        {
+            "id": "osint_cyber_1",
+            "title": "Gathering Threat Intelligence from Public Sources",
+            "description": "Using OSINT techniques to track and analyze cyber threats.",
+            "bulletpoints": "WHOIS Lookup, DNS Enumeration, Social Media Threat Monitoring",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "osint_cyber_2",
+            "title": "Analyzing and Correlating OSINT Data",
+            "description": "Building threat intelligence reports from collected OSINT data.",
+            "bulletpoints": "Data Cross-Referencing, Threat Correlation, Attribution Analysis",
+            "duration": "90",
+            "difficulty": "Intermediate"
+        }
+    ]
+}

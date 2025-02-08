@@ -1,0 +1,27 @@
+{
+    "id": "mental_fortress_building",
+    "name": "Mental Fortress Building",
+    "description": "Strengthening the mind against psychic influence and external control.",
+    "focus": [
+        "Mental Resilience",
+        "Cognitive Defense"
+    ],
+    "cards": [
+        {
+            "id": "mental_fortress_1",
+            "title": "Constructing a Mental Barrier",
+            "description": "Building a fortified mental structure to resist intrusions.",
+            "bulletpoints": "Visualization Training, Focus Anchors, Resistance Drills",
+            "duration": "45",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "mental_fortress_2",
+            "title": "Maintaining a Psychic Stronghold",
+            "description": "Techniques to reinforce and sustain long-term mental shielding.",
+            "bulletpoints": "Energy Reinforcement, Thought Encryption, Rapid Deployment",
+            "duration": "60",
+            "difficulty": "Advanced"
+        }
+    ]
+}

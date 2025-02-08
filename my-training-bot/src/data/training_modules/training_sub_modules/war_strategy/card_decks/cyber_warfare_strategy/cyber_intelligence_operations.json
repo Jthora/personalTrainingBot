@@ -1,0 +1,27 @@
+{
+    "id": "cyber_intelligence_operations",
+    "name": "Cyber Intelligence Operations",
+    "description": "Gathering intelligence from cyberspace for strategic advantage and security.",
+    "focus": [
+        "Cyber Espionage",
+        "Threat Intelligence"
+    ],
+    "cards": [
+        {
+            "id": "intel_1",
+            "title": "Open Source Intelligence (OSINT) Gathering",
+            "description": "Using publicly available sources for cyber intelligence collection.",
+            "bulletpoints": "Social media monitoring, domain research, metadata analysis",
+            "duration": "30",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "intel_2",
+            "title": "Dark Web Monitoring and Analysis",
+            "description": "Tracking underground cyber threats and illicit activities.",
+            "bulletpoints": "TOR network reconnaissance, marketplace intelligence, malware tracking",
+            "duration": "50",
+            "difficulty": "Advanced"
+        }
+    ]
+}

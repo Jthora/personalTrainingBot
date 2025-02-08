@@ -1,0 +1,27 @@
+{
+    "id": "deprogramming_psyops_effects",
+    "name": "Deprogramming PsyOps Effects",
+    "description": "Methods to reverse subconscious conditioning and cognitive programming imposed by PsyOps tactics.",
+    "focus": [
+        "Subconscious Reprogramming",
+        "Mental Detoxification"
+    ],
+    "cards": [
+        {
+            "id": "deprogram_1",
+            "title": "Breaking Conditioned Responses",
+            "description": "Counteracting conditioned thought patterns and automatic compliance behaviors.",
+            "bulletpoints": "Use exposure reversal, neural repatterning, and cognitive autonomy reinforcement",
+            "duration": "20",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "deprogram_2",
+            "title": "Neutralizing Emotional Anchors",
+            "description": "Eliminating emotional triggers and anchors placed by psychological manipulation tactics.",
+            "bulletpoints": "Implement emotional desensitization, anchor dissociation, and subconscious untethering techniques",
+            "duration": "25",
+            "difficulty": "Expert"
+        }
+    ]
+}

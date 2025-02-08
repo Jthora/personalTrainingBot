@@ -1,0 +1,27 @@
+{
+    "id": "offensive_cyber_tactics",
+    "name": "Offensive Cyber Tactics",
+    "description": "Techniques for cyber attacks, penetration testing, and network exploitation.",
+    "focus": [
+        "Cyber Attacks",
+        "Red Team Operations"
+    ],
+    "cards": [
+        {
+            "id": "offensive_1",
+            "title": "Advanced Exploitation Techniques",
+            "description": "Utilizing zero-day vulnerabilities and advanced hacking methods.",
+            "bulletpoints": "Exploit chaining, privilege escalation, persistence mechanisms",
+            "duration": "45",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "offensive_2",
+            "title": "Command and Control (C2) Frameworks",
+            "description": "Using advanced C2 infrastructures for stealthy remote access.",
+            "bulletpoints": "Develop C2 infrastructure, evade detection, maintain persistence",
+            "duration": "50",
+            "difficulty": "Expert"
+        }
+    ]
+}

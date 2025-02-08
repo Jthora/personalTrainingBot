@@ -1,0 +1,27 @@
+{
+    "id": "web_application_hacking",
+    "name": "Web Application Hacking",
+    "description": "Techniques for identifying and exploiting security flaws in web applications.",
+    "focus": [
+        "OWASP Top 10",
+        "Injection Attacks"
+    ],
+    "cards": [
+        {
+            "id": "web_hacking_1",
+            "title": "Understanding the OWASP Top 10",
+            "description": "A deep dive into the most critical security risks affecting web applications.",
+            "bulletpoints": "SQL Injection, XSS, CSRF, Broken Authentication",
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "web_hacking_2",
+            "title": "Exploiting Web Vulnerabilities",
+            "description": "Hands-on exploitation techniques using Burp Suite, Metasploit, and other tools.",
+            "bulletpoints": "Session Hijacking, IDOR, API Exploits",
+            "duration": "120",
+            "difficulty": "Advanced"
+        }
+    ]
+}

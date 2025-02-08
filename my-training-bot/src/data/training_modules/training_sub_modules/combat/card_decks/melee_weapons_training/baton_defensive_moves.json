@@ -1,0 +1,27 @@
+{
+    "id": "baton_defensive_moves",
+    "name": "Baton Defensive Moves",
+    "description": "Mastering the defensive and offensive applications of the baton in melee combat.",
+    "focus": [
+        "Blocking and Countering",
+        "Impact Targeting"
+    ],
+    "cards": [
+        {
+            "id": "baton_1",
+            "title": "Baton Blocking Techniques",
+            "description": "Using the baton to block and deflect incoming attacks.",
+            "bulletpoints": "Angle-based blocking, impact absorption, redirection tactics",
+            "duration": "10",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "baton_2",
+            "title": "Joint Manipulation with Baton",
+            "description": "Using the baton for joint locks and control holds.",
+            "bulletpoints": "Targeting pressure points, leverage-based control, submission techniques",
+            "duration": "15",
+            "difficulty": "Advanced"
+        }
+    ]
+}

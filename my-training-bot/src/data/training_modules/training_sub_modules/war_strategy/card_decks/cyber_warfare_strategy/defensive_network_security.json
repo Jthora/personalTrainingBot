@@ -1,0 +1,27 @@
+{
+    "id": "defensive_network_security",
+    "name": "Defensive Network Security",
+    "description": "Techniques for preventing cyber intrusions and securing sensitive systems.",
+    "focus": [
+        "Cyber Defense",
+        "Blue Team Operations"
+    ],
+    "cards": [
+        {
+            "id": "defensive_1",
+            "title": "Threat Detection and Response",
+            "description": "Identifying and mitigating cyber threats in real-time.",
+            "bulletpoints": "Intrusion detection, SIEM analysis, forensic investigation",
+            "duration": "40",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "defensive_2",
+            "title": "Incident Response Planning",
+            "description": "Developing rapid response strategies for cyber incidents.",
+            "bulletpoints": "Containment strategies, threat intelligence sharing, rapid remediation",
+            "duration": "45",
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": "false_flag_identification",
+    "name": "False Flag Identification",
+    "description": "Training in detecting staged events and manipulated narratives used for strategic deception.",
+    "focus": [
+        "Pattern Recognition",
+        "Strategic Deception Awareness"
+    ],
+    "cards": [
+        {
+            "id": "false_flag_1",
+            "title": "Historical False Flag Patterns",
+            "description": "Studying historical false flag events to recognize key indicators.",
+            "bulletpoints": "Government use of deception, common strategic justifications, media complicity",
+            "duration": "20",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "false_flag_2",
+            "title": "Analyzing Event Anomalies",
+            "description": "Techniques for identifying inconsistencies and suspicious narratives in major incidents.",
+            "bulletpoints": "Contradictory evidence, changes in official stories, suppression of alternative narratives",
+            "duration": "20",
+            "difficulty": "Expert"
+        }
+    ]
+}

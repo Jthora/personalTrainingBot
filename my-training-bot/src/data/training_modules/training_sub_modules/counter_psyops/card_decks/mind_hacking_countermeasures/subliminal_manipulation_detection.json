@@ -1,0 +1,27 @@
+{
+    "id": "subliminal_manipulation_detection",
+    "name": "Subliminal Manipulation Detection",
+    "description": "Recognizing and countering subliminal messaging and subconscious influence tactics.",
+    "focus": [
+        "Subliminal Influence Defense",
+        "Subconscious Programming Awareness"
+    ],
+    "cards": [
+        {
+            "id": "subliminal_1",
+            "title": "Identifying Subliminal Messaging",
+            "description": "Detecting hidden cues in media, language, and visual stimuli designed to manipulate.",
+            "bulletpoints": "Analyzing imagery frequency, backmasking awareness, unconscious suggestion detection",
+            "duration": "15",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "subliminal_2",
+            "title": "Breaking Subliminal Conditioning",
+            "description": "Methods to deprogram subconscious manipulations and restore independent thought.",
+            "bulletpoints": "Reverse conditioning techniques, exposure-based desensitization, active critical awareness drills",
+            "duration": "20",
+            "difficulty": "Advanced"
+        }
+    ]
+}

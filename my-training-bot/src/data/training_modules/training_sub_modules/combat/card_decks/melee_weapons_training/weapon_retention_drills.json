@@ -1,0 +1,27 @@
+{
+    "id": "weapon_retention_drills",
+    "name": "Weapon Retention Drills",
+    "description": "Training in securing melee weapons during combat and preventing disarmament.",
+    "focus": [
+        "Retention Under Attack",
+        "Disarm Prevention"
+    ],
+    "cards": [
+        {
+            "id": "retention_1",
+            "title": "Grip Strength and Weapon Control",
+            "description": "Developing grip endurance and hand control to prevent weapon loss.",
+            "bulletpoints": "Strength drills, grip adjustment techniques, counter-disarm maneuvers",
+            "duration": "10",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "retention_2",
+            "title": "Retention in Close Quarters",
+            "description": "Defending against disarmament attempts in grappling range.",
+            "bulletpoints": "Body positioning, leverage advantage, reactive counters",
+            "duration": "15",
+            "difficulty": "Advanced"
+        }
+    ]
+}

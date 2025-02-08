@@ -1,0 +1,27 @@
+{
+    "id": "cover_usage_tactics",
+    "name": "Cover Usage Tactics",
+    "description": "Maximizing survival by effectively using cover in combat scenarios.",
+    "focus": [
+        "Cover and Concealment",
+        "Survival Movement"
+    ],
+    "cards": [
+        {
+            "id": "cover_1",
+            "title": "Hard vs. Soft Cover",
+            "description": "Identifying effective cover options in different combat scenarios.",
+            "bulletpoints": "Recognize bullet-resistant vs. bullet-penetrable surfaces, use depth perception, avoid exposing limbs",
+            "duration": "10",
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "cover_2",
+            "title": "Dynamic Cover Transitioning",
+            "description": "Moving between cover positions while minimizing exposure.",
+            "bulletpoints": "Use short, controlled sprints, time movement with distractions, stay unpredictable",
+            "duration": "15",
+            "difficulty": "Intermediate"
+        }
+    ]
+}

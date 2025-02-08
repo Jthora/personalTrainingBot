@@ -1,0 +1,27 @@
+{
+    "id": "global_conflict_trends",
+    "name": "Global Conflict Trends",
+    "description": "Analyzing historical and emerging global conflicts and their strategic implications.",
+    "focus": [
+        "Military Conflicts",
+        "Geopolitical Shifts"
+    ],
+    "cards": [
+        {
+            "id": "conflict_1",
+            "title": "Major Wars and Conflicts",
+            "description": "Studying key military conflicts and their strategic lessons.",
+            "bulletpoints": "WWII, Cold War proxy wars, modern hybrid warfare case studies",
+            "duration": "60",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "conflict_2",
+            "title": "Current Geopolitical Tensions",
+            "description": "Tracking ongoing global disputes and potential hotspots.",
+            "bulletpoints": "South China Sea, Ukraine conflict, Middle Eastern tensions",
+            "duration": "50",
+            "difficulty": "Intermediate"
+        }
+    ]
+}

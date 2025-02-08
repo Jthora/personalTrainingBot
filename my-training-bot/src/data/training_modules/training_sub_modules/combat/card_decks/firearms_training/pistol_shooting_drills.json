@@ -1,0 +1,27 @@
+{
+    "id": "pistol_shooting_drills",
+    "name": "Pistol Shooting Drills",
+    "description": "Essential drills to improve accuracy, draw speed, and target transitions with a handgun.",
+    "focus": [
+        "Handgun Accuracy",
+        "Rapid Target Engagement"
+    ],
+    "cards": [
+        {
+            "id": "pistol_1",
+            "title": "Draw and Fire Drill",
+            "description": "Developing quick draw and precision shooting under time constraints.",
+            "bulletpoints": "Grip stability, sight alignment, trigger control, rapid target acquisition",
+            "duration": "10",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "pistol_2",
+            "title": "Failure-to-Stop Drill",
+            "description": "Engaging threats with precision shots to neutralize quickly.",
+            "bulletpoints": "Two shots to the torso, follow-up shot to the head, adjusting for target movement",
+            "duration": "10",
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": "cognitive_bias_training",
+    "name": "Cognitive Bias Training",
+    "description": "Identifying and mitigating the influence of cognitive biases on perception and decision-making.",
+    "focus": [
+        "Bias Recognition",
+        "Logical Fallacies"
+    ],
+    "cards": [
+        {
+            "id": "bias_1",
+            "title": "Confirmation Bias Awareness",
+            "description": "Understanding how personal biases influence interpretation of information.",
+            "bulletpoints": "Challenge assumptions, seek diverse perspectives, avoid echo chambers",
+            "duration": "15",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "bias_2",
+            "title": "Debunking Logical Fallacies",
+            "description": "Recognizing and countering common logical fallacies in arguments.",
+            "bulletpoints": "Strawman arguments, false dichotomies, appeals to emotion vs. logic",
+            "duration": "10",
+            "difficulty": "Advanced"
+        }
+    ]
+}

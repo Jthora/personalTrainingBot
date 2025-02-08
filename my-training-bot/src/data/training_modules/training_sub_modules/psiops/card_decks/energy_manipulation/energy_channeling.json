@@ -1,0 +1,27 @@
+{
+    "id": "energy_channeling",
+    "name": "Energy Channeling",
+    "description": "Techniques to direct and manipulate psionic energy flows.",
+    "focus": [
+        "Energy Projection",
+        "Qi Flow Control"
+    ],
+    "cards": [
+        {
+            "id": "channeling_1",
+            "title": "Directing Energy Through the Body",
+            "description": "Practices for channeling energy along meridians and pathways.",
+            "bulletpoints": "Qi Flow Awareness, Hand-to-Hand Energy Transfer, Breath-Driven Energy Circulation",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "channeling_2",
+            "title": "Amplifying and Releasing Psionic Energy",
+            "description": "Techniques to store, build, and discharge energy effectively.",
+            "bulletpoints": "Energy Accumulation, Projection Training, Discharge Control",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": "network_penetration_tests",
+    "name": "Network Penetration Tests",
+    "description": "Techniques for conducting penetration tests on enterprise and cloud networks.",
+    "focus": [
+        "Network Reconnaissance",
+        "Privilege Escalation"
+    ],
+    "cards": [
+        {
+            "id": "network_pentest_1",
+            "title": "Network Scanning and Reconnaissance",
+            "description": "Identifying open ports, services, and vulnerabilities using network scanning techniques.",
+            "bulletpoints": "Nmap, Shodan, Enumeration, Active/Passive Recon",
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "network_pentest_2",
+            "title": "Exploiting and Gaining Access",
+            "description": "Using Metasploit, exploitation scripts, and privilege escalation techniques.",
+            "bulletpoints": "Brute-Force Attacks, Credential Stuffing, Remote Code Execution",
+            "duration": "120",
+            "difficulty": "Advanced"
+        }
+    ]
+}

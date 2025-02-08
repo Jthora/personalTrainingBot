@@ -1,0 +1,27 @@
+{
+    "id": "insurgency_tactics",
+    "name": "Insurgency Tactics",
+    "description": "Methods used by insurgent forces to destabilize superior military opponents.",
+    "focus": [
+        "Guerrilla Warfare",
+        "Ambush Techniques"
+    ],
+    "cards": [
+        {
+            "id": "insurgency_1",
+            "title": "Hit-and-Run Attacks",
+            "description": "Executing rapid ambushes and withdrawing before retaliation.",
+            "bulletpoints": "Use speed, small unit coordination, and mobile concealment",
+            "duration": "25",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "insurgency_2",
+            "title": "Sabotage and Supply Chain Disruption",
+            "description": "Targeting logistical vulnerabilities to weaken enemy forces.",
+            "bulletpoints": "Disrupt supply lines, destroy key infrastructure, and utilize deception",
+            "duration": "35",
+            "difficulty": "Expert"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": "counter_psyops_strategies",
+    "name": "Counter-PsyOps Strategies",
+    "description": "Recognizing and neutralizing psychological influence tactics used against target populations.",
+    "focus": [
+        "Defense Against PsyOps",
+        "Narrative Reversal"
+    ],
+    "cards": [
+        {
+            "id": "counter_1",
+            "title": "Detecting Psychological Manipulation",
+            "description": "Techniques for identifying subliminal and overt influence tactics.",
+            "bulletpoints": "Gaslighting indicators, false flag recognition, mass conditioning techniques",
+            "duration": "50",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "counter_2",
+            "title": "Reversing Propaganda Effects",
+            "description": "Methods for countering enemy PsyOps and restoring critical thinking.",
+            "bulletpoints": "Deprogramming strategies, controlled narrative dismantling, truth injection techniques",
+            "duration": "55",
+            "difficulty": "Advanced"
+        }
+    ]
+}

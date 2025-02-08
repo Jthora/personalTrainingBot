@@ -1,0 +1,27 @@
+{
+    "id": "combined_arms_operations",
+    "name": "Combined Arms Operations",
+    "description": "Coordinating multiple branches of military forces for joint operations.",
+    "focus": [
+        "Multiforce Coordination",
+        "Integrated Warfare"
+    ],
+    "cards": [
+        {
+            "id": "combined_1",
+            "title": "Coordinating Air and Ground Forces",
+            "description": "Using air superiority to support ground combat operations.",
+            "bulletpoints": "Close air support, joint strike coordination, aerial reconnaissance",
+            "duration": "55",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "combined_2",
+            "title": "Naval and Amphibious Operations",
+            "description": "Integrating naval forces in land-based combat.",
+            "bulletpoints": "Amphibious landings, fleet support, carrier strike group tactics",
+            "duration": "60",
+            "difficulty": "Advanced"
+        }
+    ]
+}

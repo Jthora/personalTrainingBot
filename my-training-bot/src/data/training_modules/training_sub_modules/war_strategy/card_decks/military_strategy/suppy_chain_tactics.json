@@ -1,0 +1,27 @@
+{
+    "id": "supply_chain_tactics",
+    "name": "Supply Chain Tactics",
+    "description": "Logistical strategies for maintaining a steady flow of supplies in warfare scenarios.",
+    "focus": [
+        "Resource Management",
+        "Battlefield Logistics"
+    ],
+    "cards": [
+        {
+            "id": "supply_1",
+            "title": "Supply Line Defense and Disruption",
+            "description": "Strategies for securing and disrupting enemy supply chains.",
+            "bulletpoints": "Logistical hubs, interdiction operations, convoy protection",
+            "duration": "45",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "supply_2",
+            "title": "Sustaining Operations in Warzones",
+            "description": "Ensuring continuous resupply during prolonged engagements.",
+            "bulletpoints": "Strategic stockpiling, resupply missions, wartime rationing",
+            "duration": "50",
+            "difficulty": "Advanced"
+        }
+    ]
+}

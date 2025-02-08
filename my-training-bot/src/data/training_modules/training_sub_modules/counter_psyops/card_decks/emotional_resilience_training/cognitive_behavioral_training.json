@@ -1,0 +1,27 @@
+{
+    "id": "cognitive_behavioral_training",
+    "name": "Cognitive Behavioral Training",
+    "description": "Using cognitive restructuring and behavioral adaptation to resist psychological influence.",
+    "focus": [
+        "Cognitive Reframing",
+        "Behavioral Conditioning"
+    ],
+    "cards": [
+        {
+            "id": "cbt_1",
+            "title": "Challenging Negative Thought Patterns",
+            "description": "Recognizing and restructuring negative self-talk and irrational beliefs.",
+            "bulletpoints": "Cognitive reframing, positive self-dialogue, logical evaluation of thoughts",
+            "duration": "15",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "cbt_2",
+            "title": "Anchoring and Mental Conditioning",
+            "description": "Using mental conditioning to reinforce resilience against psychological attacks.",
+            "bulletpoints": "Neural conditioning, memory anchors for stability, adaptive behavioral responses",
+            "duration": "20",
+            "difficulty": "Advanced"
+        }
+    ]
+}

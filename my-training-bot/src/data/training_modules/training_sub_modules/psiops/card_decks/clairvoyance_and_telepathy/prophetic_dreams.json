@@ -1,0 +1,27 @@
+{
+    "id": "prophetic_dreams",
+    "name": "Prophetic Dreams",
+    "description": "Training in recognizing and interpreting visions received through dreams.",
+    "focus": [
+        "Dream Recall",
+        "Future Vision"
+    ],
+    "cards": [
+        {
+            "id": "dreams_1",
+            "title": "Enhancing Dream Recall",
+            "description": "Practices to retain and analyze symbolic messages from the subconscious.",
+            "bulletpoints": "Dream Journaling, Lucid Dream Triggers, Intention Setting",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "dreams_2",
+            "title": "Deciphering Prophetic Visions",
+            "description": "Interpreting future-oriented dream sequences and signs.",
+            "bulletpoints": "Pattern Recognition, Symbolic Archetypes, Intuition Calibration",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

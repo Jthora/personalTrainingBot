@@ -1,0 +1,27 @@
+{
+    "id": "emotional_control_methods",
+    "name": "Emotional Control Methods",
+    "description": "Techniques for regulating emotions and maintaining psychological stability under stress.",
+    "focus": [
+        "Emotional Intelligence",
+        "Self-Regulation"
+    ],
+    "cards": [
+        {
+            "id": "emotion_1",
+            "title": "Recognizing Emotional Triggers",
+            "description": "Identifying internal and external triggers that influence emotional responses.",
+            "bulletpoints": "Self-awareness drills, tracking emotional patterns, recognizing manipulation triggers",
+            "duration": "15",
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "emotion_2",
+            "title": "Emotional Detachment Techniques",
+            "description": "Methods to detach from emotionally charged situations and maintain clarity.",
+            "bulletpoints": "Cognitive distancing, reframing emotional narratives, mindfulness under pressure",
+            "duration": "20",
+            "difficulty": "Intermediate"
+        }
+    ]
+}

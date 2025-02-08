@@ -1,0 +1,27 @@
+{
+    "id": "gaslighting_and_brainwashing_defense",
+    "name": "Gaslighting and Brainwashing Defense",
+    "description": "Techniques to recognize and neutralize psychological gaslighting and mind control attempts.",
+    "focus": [
+        "Gaslighting Recognition",
+        "Cognitive Integrity Maintenance"
+    ],
+    "cards": [
+        {
+            "id": "gaslight_1",
+            "title": "Recognizing Gaslighting Techniques",
+            "description": "Identifying signs of gaslighting in conversations and relationships.",
+            "bulletpoints": "Notice denial of past statements, contradiction loops, and forced self-doubt",
+            "duration": "15",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "gaslight_2",
+            "title": "Breaking Brainwashing Cycles",
+            "description": "Methods to reverse psychological conditioning from manipulative influences.",
+            "bulletpoints": "Deconstruct false narratives, strengthen personal reality anchors, avoid isolation effects",
+            "duration": "20",
+            "difficulty": "Advanced"
+        }
+    ]
+}

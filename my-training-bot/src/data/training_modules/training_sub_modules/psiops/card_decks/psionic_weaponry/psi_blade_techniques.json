@@ -1,0 +1,27 @@
+{
+    "id": "psi_blade_techniques",
+    "name": "Psi Blade Techniques",
+    "description": "Training in forming, stabilizing, and utilizing energy-based blades in combat.",
+    "focus": [
+        "Energy Manifestation",
+        "Precision Strikes"
+    ],
+    "cards": [
+        {
+            "id": "psi_blade_1",
+            "title": "Forming a Psi Blade",
+            "description": "Methods for stabilizing and projecting an energy blade.",
+            "bulletpoints": "Focus Refinement, Energy Hardening, Blade Extension",
+            "duration": "45",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psi_blade_2",
+            "title": "Combat Techniques with Psi Blades",
+            "description": "Using psi blades for offensive and defensive combat applications.",
+            "bulletpoints": "Parrying, Striking Precision, Energy Amplification",
+            "duration": "60",
+            "difficulty": "Expert"
+        }
+    ]
+}

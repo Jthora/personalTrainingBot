@@ -1,0 +1,27 @@
+{
+    "id": "incident_response_intelligence",
+    "name": "Incident Response Intelligence",
+    "description": "Using threat intelligence to enhance cyber incident response efforts.",
+    "focus": [
+        "Threat Attribution",
+        "Tactical Intelligence"
+    ],
+    "cards": [
+        {
+            "id": "incident_response_1",
+            "title": "Integrating Threat Intelligence in Incident Response",
+            "description": "Applying cyber threat intelligence to detect and respond to incidents.",
+            "bulletpoints": "SIEM Correlation, Threat Hunting, Incident Prioritization",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "incident_response_2",
+            "title": "Attribution Analysis in Cyber Attacks",
+            "description": "Tracking threat actors and linking cyber incidents to known adversaries.",
+            "bulletpoints": "MITRE ATT&CK Mapping, Threat Actor Profiles, IOC Correlation",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

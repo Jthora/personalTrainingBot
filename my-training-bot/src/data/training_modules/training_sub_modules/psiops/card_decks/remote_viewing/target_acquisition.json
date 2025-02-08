@@ -1,0 +1,27 @@
+{
+    "id": "target_acquisition",
+    "name": "Target Acquisition",
+    "description": "Developing the ability to locate distant or hidden targets through remote viewing techniques.",
+    "focus": [
+        "Target Identification",
+        "Perceptual Locking"
+    ],
+    "cards": [
+        {
+            "id": "target_acquisition_1",
+            "title": "Establishing a Target Connection",
+            "description": "Techniques to mentally lock onto a target for remote viewing.",
+            "bulletpoints": "Coordinate Remote Viewing, Sensory Link, Thought Calibration",
+            "duration": "50",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "target_acquisition_2",
+            "title": "Advanced Target Tracking",
+            "description": "Using psionic sensory extensions to trace moving or hidden targets.",
+            "bulletpoints": "Tracking Signatures, Energetic Footprint Analysis, Distance Projection",
+            "duration": "70",
+            "difficulty": "Advanced"
+        }
+    ]
+}

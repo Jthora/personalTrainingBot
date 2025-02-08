@@ -1,0 +1,27 @@
+{
+    "id": "social_manipulation_tactics",
+    "name": "Social Manipulation Tactics",
+    "description": "Understanding psychological manipulation methods used in social engineering attacks.",
+    "focus": [
+        "Psychological Coercion",
+        "Social Engineering Red Flags"
+    ],
+    "cards": [
+        {
+            "id": "social_engineering_1",
+            "title": "Common Manipulation Techniques",
+            "description": "Tactics used by attackers to gain access through deception.",
+            "bulletpoints": "Pretexting, Authority Exploitation, Fear Induction, Reciprocity",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "social_engineering_2",
+            "title": "Counteracting Social Engineering",
+            "description": "Defensive measures to prevent social engineering exploitation.",
+            "bulletpoints": "Verification Protocols, Psychological Awareness Training, Identity Verification",
+            "duration": "90",
+            "difficulty": "Intermediate"
+        }
+    ]
+}

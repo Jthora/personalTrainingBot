@@ -1,0 +1,27 @@
+{
+    "id": "mission_based_training",
+    "name": "Mission-Based Training",
+    "description": "Scenarios that simulate real-world combat engagements with strategic objectives.",
+    "focus": [
+        "Team Coordination",
+        "Objective-Driven Combat"
+    ],
+    "cards": [
+        {
+            "id": "mission_1",
+            "title": "Hostage Rescue Simulation",
+            "description": "Executing a structured rescue operation in a hostile environment.",
+            "bulletpoints": "Assess threats, secure hostages, extract team safely",
+            "duration": "20",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mission_2",
+            "title": "Night Operations Tactical Raid",
+            "description": "Executing a mission under low-visibility conditions with stealth tactics.",
+            "bulletpoints": "Use NVGs effectively, engage in silent takedowns, maintain minimal light exposure",
+            "duration": "25",
+            "difficulty": "Expert"
+        }
+    ]
+}

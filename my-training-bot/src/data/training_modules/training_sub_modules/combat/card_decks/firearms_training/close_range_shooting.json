@@ -1,0 +1,27 @@
+{
+    "id": "close_range_shooting",
+    "name": "Close Range Shooting",
+    "description": "Drills for engaging threats in confined spaces with split-second reaction times.",
+    "focus": [
+        "Point Shooting",
+        "Rapid Engagement"
+    ],
+    "cards": [
+        {
+            "id": "close_range_1",
+            "title": "Reflexive Shooting Drill",
+            "description": "Fast engagement of targets using instinctive aiming techniques.",
+            "bulletpoints": "Index shooting mechanics, target tracking, movement integration",
+            "duration": "10",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "close_range_2",
+            "title": "CQB Room Clearing",
+            "description": "Clearing confined spaces using efficient shooting and movement techniques.",
+            "bulletpoints": "Pie slicing tactics, target priority assessment, low-light adaptability",
+            "duration": "15",
+            "difficulty": "Expert"
+        }
+    ]
+}

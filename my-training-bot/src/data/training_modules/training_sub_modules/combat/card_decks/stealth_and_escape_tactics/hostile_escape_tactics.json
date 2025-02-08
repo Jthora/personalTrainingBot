@@ -1,0 +1,27 @@
+{
+    "id": "hostile_escape_tactics",
+    "name": "Hostile Escape Tactics",
+    "description": "Training in escaping from hostile environments and avoiding capture.",
+    "focus": [
+        "Evasion Techniques",
+        "Counter-Capture Maneuvers"
+    ],
+    "cards": [
+        {
+            "id": "escape_1",
+            "title": "Urban Escape Route Planning",
+            "description": "Identifying multiple escape routes in urban environments before engaging in an operation.",
+            "bulletpoints": "Mapping safe zones, exploiting blind spots, blending with crowds",
+            "duration": "15",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "escape_2",
+            "title": "Restraint Evasion",
+            "description": "Techniques to escape from handcuffs, zip ties, and rope bindings.",
+            "bulletpoints": "Shim techniques, breaking zip ties, exploiting binding weaknesses",
+            "duration": "20",
+            "difficulty": "Expert"
+        }
+    ]
+}

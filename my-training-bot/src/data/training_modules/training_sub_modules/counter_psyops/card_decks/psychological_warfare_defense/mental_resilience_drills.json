@@ -1,0 +1,27 @@
+{
+    "id": "mental_resilience_drills",
+    "name": "Mental Resilience Drills",
+    "description": "Techniques to build mental endurance and resistance against psychological stress and manipulation.",
+    "focus": [
+        "Mental Resilience",
+        "Emotional Regulation"
+    ],
+    "cards": [
+        {
+            "id": "resilience_1",
+            "title": "Cognitive Fortification Techniques",
+            "description": "Developing thought patterns that resist external influence and manipulation.",
+            "bulletpoints": "Practice mindfulness anchoring, self-reinforcement scripts, and thought re-centering methods",
+            "duration": "20",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "resilience_2",
+            "title": "Exposure to Psychological Stressors",
+            "description": "Building mental toughness through controlled exposure to psychological stress.",
+            "bulletpoints": "Simulated gaslighting scenarios, controlled cognitive pressure exercises, emotional reframing drills",
+            "duration": "25",
+            "difficulty": "Expert"
+        }
+    ]
+}

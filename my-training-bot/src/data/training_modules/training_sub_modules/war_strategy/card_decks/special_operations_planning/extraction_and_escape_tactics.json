@@ -1,0 +1,27 @@
+{
+    "id": "extraction_and_escape_tactics",
+    "name": "Extraction and Escape Tactics",
+    "description": "Advanced techniques for escaping hostile zones and extracting high-value personnel.",
+    "focus": [
+        "Hostile Area Escape",
+        "Personnel Extraction"
+    ],
+    "cards": [
+        {
+            "id": "extraction_1",
+            "title": "Evading Pursuers and Escape Routes",
+            "description": "Utilizing terrain and cover to evade detection and reach extraction points.",
+            "bulletpoints": "Escape route planning, terrain utilization, counter-tracking techniques",
+            "duration": "70",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "extraction_2",
+            "title": "Tactical Extraction of High-Value Targets",
+            "description": "Planning and executing rescue operations under high-risk conditions.",
+            "bulletpoints": "Fast extraction planning, defensive positioning, securing personnel",
+            "duration": "85",
+            "difficulty": "Advanced"
+        }
+    ]
+}

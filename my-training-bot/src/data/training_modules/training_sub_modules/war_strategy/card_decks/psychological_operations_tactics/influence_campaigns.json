@@ -1,0 +1,27 @@
+{
+    "id": "influence_campaigns",
+    "name": "Influence Campaigns",
+    "description": "Designing and executing influence operations to control narratives and public perception.",
+    "focus": [
+        "Strategic Messaging",
+        "Mass Influence"
+    ],
+    "cards": [
+        {
+            "id": "campaign_1",
+            "title": "Constructing Effective Narratives",
+            "description": "Techniques for shaping public perception through persuasive storytelling.",
+            "bulletpoints": "Emotional triggers, hero vs villain dynamics, repetition strategies",
+            "duration": "60",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "campaign_2",
+            "title": "Target Audience Manipulation",
+            "description": "Identifying psychological weak points in different demographics.",
+            "bulletpoints": "Demographic profiling, cognitive biases, psychographic targeting",
+            "duration": "50",
+            "difficulty": "Advanced"
+        }
+    ]
+}

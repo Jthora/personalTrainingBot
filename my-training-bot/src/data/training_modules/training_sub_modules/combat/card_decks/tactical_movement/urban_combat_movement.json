@@ -1,0 +1,27 @@
+{
+    "id": "urban_combat_movement",
+    "name": "Urban Combat Movement",
+    "description": "Navigating and engaging in combat within urban environments.",
+    "focus": [
+        "Room Clearing",
+        "Cover and Concealment in Structures"
+    ],
+    "cards": [
+        {
+            "id": "urban_move_1",
+            "title": "Corner Peeking and Pie Slicing",
+            "description": "Minimizing exposure while peeking around corners in urban combat.",
+            "bulletpoints": "Use slow, controlled movements, minimize silhouette exposure, employ angle advantage",
+            "duration": "15",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "urban_move_2",
+            "title": "Stairwell and Hallway Tactics",
+            "description": "Clearing stairwells and hallways while maintaining a tactical advantage.",
+            "bulletpoints": "Maintain fireteam spacing, control vertical movement, identify ambush points",
+            "duration": "20",
+            "difficulty": "Advanced"
+        }
+    ]
+}

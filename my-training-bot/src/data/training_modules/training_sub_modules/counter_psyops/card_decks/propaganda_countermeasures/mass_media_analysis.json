@@ -1,0 +1,27 @@
+{
+    "id": "mass_media_analysis",
+    "name": "Mass Media Analysis",
+    "description": "Training in deconstructing media narratives and uncovering hidden biases.",
+    "focus": [
+        "Media Framing Analysis",
+        "Information Warfare"
+    ],
+    "cards": [
+        {
+            "id": "media_1",
+            "title": "Dissecting Media Bias",
+            "description": "Identifying biased reporting and slanted narratives in mainstream media.",
+            "bulletpoints": "Assess language framing, source reliability, and omission of counterpoints",
+            "duration": "20",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "media_2",
+            "title": "Recognizing Controlled Opposition",
+            "description": "Detecting when media personalities or sources are controlled dissent.",
+            "bulletpoints": "Analyze funding sources, agenda consistency, and narrative gatekeeping",
+            "duration": "25",
+            "difficulty": "Advanced"
+        }
+    ]
+}

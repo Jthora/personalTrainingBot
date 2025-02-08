@@ -1,0 +1,27 @@
+{
+    "id": "intrusion_detection_methods",
+    "name": "Intrusion Detection Methods",
+    "description": "Detecting unauthorized activity within a network using IDS and anomaly detection techniques.",
+    "focus": [
+        "Threat Identification",
+        "Anomaly Detection"
+    ],
+    "cards": [
+        {
+            "id": "ids_1",
+            "title": "Signature-Based vs. Anomaly-Based Detection",
+            "description": "Understanding the differences between IDS detection methods.",
+            "bulletpoints": "SNORT, Suricata, Behavioral Analysis, False Positives",
+            "duration": "90",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "ids_2",
+            "title": "Deploying an IDS/IPS",
+            "description": "Setting up an Intrusion Detection and Prevention System for active monitoring.",
+            "bulletpoints": "Host-Based vs. Network-Based IDS, Log Correlation, SIEM Integration",
+            "duration": "120",
+            "difficulty": "Intermediate"
+        }
+    ]
+}

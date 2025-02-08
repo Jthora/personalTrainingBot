@@ -1,0 +1,27 @@
+{
+    "id": "advanced_behavioral_analysis",
+    "name": "Advanced Behavioral Analysis",
+    "description": "Training in identifying deception and manipulative behavior through nonverbal cues and psychological profiling.",
+    "focus": [
+        "Deception Detection",
+        "Behavioral Pattern Recognition"
+    ],
+    "cards": [
+        {
+            "id": "behavioral_1",
+            "title": "Microexpression Analysis",
+            "description": "Learning to read fleeting facial expressions that reveal concealed emotions.",
+            "bulletpoints": "Identify microexpressions, connect with emotional context, detect incongruencies",
+            "duration": "20",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "behavioral_2",
+            "title": "Recognizing Manipulative Body Language",
+            "description": "Decoding nonverbal cues associated with deceptive intent.",
+            "bulletpoints": "Analyze shifts in posture, eye movements, hand positioning, and speech hesitation",
+            "duration": "15",
+            "difficulty": "Expert"
+        }
+    ]
+}

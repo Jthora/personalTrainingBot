@@ -1,0 +1,27 @@
+{
+    "id": "mental_energy_control",
+    "name": "Mental Energy Control",
+    "description": "Training in controlling, storing, and projecting mental energy for psionic use.",
+    "focus": [
+        "Energy Projection",
+        "Conscious Energy Manipulation"
+    ],
+    "cards": [
+        {
+            "id": "energy_control_1",
+            "title": "Energy Accumulation Techniques",
+            "description": "Methods for gathering and concentrating personal energy reserves.",
+            "bulletpoints": "Energy Pooling, Qi Expansion, Focused Absorption",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "energy_control_2",
+            "title": "Directed Energy Projection",
+            "description": "Focusing and releasing energy through thought and intention.",
+            "bulletpoints": "Energy Stream Projection, Thought-Form Directing, Intent-Focused Release",
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

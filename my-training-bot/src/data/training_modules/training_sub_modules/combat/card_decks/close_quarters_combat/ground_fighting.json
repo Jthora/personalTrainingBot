@@ -1,0 +1,27 @@
+{
+    "id": "ground_fighting",
+    "name": "Ground Fighting",
+    "description": "Mastering grappling, submissions, and escapes in ground combat scenarios.",
+    "focus": [
+        "Grappling Control",
+        "Submissions and Escapes"
+    ],
+    "cards": [
+        {
+            "id": "grappling_1",
+            "title": "Mount Escape Techniques",
+            "description": "Methods for escaping from an opponent’s dominant mount position.",
+            "bulletpoints": "Bridge and roll, shrimp escape, frame and guard recovery",
+            "duration": "10",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "grappling_2",
+            "title": "Rear Naked Choke Execution",
+            "description": "Applying a high-percentage submission hold to neutralize opponents.",
+            "bulletpoints": "Grip placement, securing hooks, pressure application",
+            "duration": "10",
+            "difficulty": "Advanced"
+        }
+    ]
+}

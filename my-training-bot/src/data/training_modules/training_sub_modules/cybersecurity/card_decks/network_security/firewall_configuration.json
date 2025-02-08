@@ -1,0 +1,27 @@
+{
+    "id": "firewall_configuration",
+    "name": "Firewall Configuration",
+    "description": "Configuring firewalls to enhance security by restricting unauthorized network traffic.",
+    "focus": [
+        "Access Control",
+        "Traffic Filtering"
+    ],
+    "cards": [
+        {
+            "id": "firewall_1",
+            "title": "Firewall Fundamentals",
+            "description": "Understanding how firewalls work and their role in network security.",
+            "bulletpoints": "Stateful vs. Stateless Firewalls, Packet Filtering, Rule-Based Access Control",
+            "duration": "90",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "firewall_2",
+            "title": "Configuring a Next-Gen Firewall",
+            "description": "Implementing policies and rules for a next-generation firewall (NGFW).",
+            "bulletpoints": "Deep Packet Inspection, Application Layer Filtering, Intrusion Prevention System (IPS) Integration",
+            "duration": "120",
+            "difficulty": "Intermediate"
+        }
+    ]
+}

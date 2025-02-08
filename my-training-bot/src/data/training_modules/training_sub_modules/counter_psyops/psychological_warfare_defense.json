@@ -1,0 +1,17 @@
+{
+    "id": "psychological_warfare_defense",
+    "name": "Psychological Warfare Defense",
+    "description": "Defensive strategies against psychological manipulation tactics used in warfare and covert influence campaigns.",
+    "difficulty": "Advanced",
+    "estimated_time": "18-36 months",
+    "focus": [
+        "Mental Resilience",
+        "Counter-Influence Tactics",
+        "Subconscious Reprogramming"
+    ],
+    "cardDecks": [
+        "mental_resilience_drills",
+        "counter_propaganda_strategies",
+        "deprogramming_psyops_effects"
+    ]
+}

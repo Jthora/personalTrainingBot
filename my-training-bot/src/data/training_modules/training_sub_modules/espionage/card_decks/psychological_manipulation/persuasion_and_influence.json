@@ -1,0 +1,35 @@
+{
+    "id": "persuasion_and_influence",
+    "name": "Persuasion and Influence",
+    "description": "Techniques for controlling narratives and influencing decision-making in intelligence operations.",
+    "focus": [
+        "Persuasion Tactics",
+        "Cognitive Manipulation"
+    ],
+    "cards": [
+        {
+            "id": "framing_effect",
+            "title": "Framing Effect & Narrative Control",
+            "description": "Shaping how information is presented to influence decision-making.",
+            "bulletpoints": [
+                "Use selective language to guide perception",
+                "Implement contrast principles to control emotional responses",
+                "Apply cognitive biases to reinforce desired conclusions"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "trust_exploitation",
+            "title": "Trust Exploitation and Rapport Building",
+            "description": "Establishing trust with targets to manipulate behaviors and gain intelligence.",
+            "bulletpoints": [
+                "Identify and mirror psychological vulnerabilities",
+                "Use progressive disclosure to deepen trust over time",
+                "Control body language and vocal tonality to reinforce credibility"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

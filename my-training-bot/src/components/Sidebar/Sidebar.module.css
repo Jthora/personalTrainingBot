@@ -5,8 +5,24 @@
     background-color: #001f3f;
     color: #ffffff;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.moduleItem {
-    padding: 10px;
-}@import '../../styles/theme.css';
+.moduleButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.moduleIcon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,17 @@
+{
+    "id": "cia_training",
+    "name": "CIA Training",
+    "description": "Training programs for operatives focusing on intelligence gathering, tradecraft, and covert operations.",
+    "difficulty": "Advanced",
+    "estimated_time": "24-48 months",
+    "focus": [
+        "Clandestine Operations",
+        "Counterintelligence",
+        "Psychological Manipulation"
+    ],
+    "cardDecks": [
+        "spy_tradecraft",
+        "undercover_surveillance",
+        "counterintelligence_tactics"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "id": "disinformation_analysis",
+    "name": "Disinformation Analysis",
+    "description": "Training to detect, analyze, and neutralize false narratives and misleading information.",
+    "difficulty": "Advanced",
+    "estimated_time": "12-24 months",
+    "focus": [
+        "Identifying False Narratives",
+        "Cognitive Bias Recognition",
+        "Information Verification"
+    ],
+    "cardDecks": [
+        "fact_checking_methods",
+        "cognitive_bias_training",
+        "false_flag_identification"
+    ]
+}

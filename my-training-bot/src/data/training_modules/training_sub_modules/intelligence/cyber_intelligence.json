@@ -1,0 +1,17 @@
+{
+    "id": "cyber_intelligence",
+    "name": "Cyber Intelligence",
+    "description": "Training on tracking digital threats, cybercriminal networks, and state-sponsored hacking groups.",
+    "difficulty": "Advanced",
+    "estimated_time": "18-36 months",
+    "focus": [
+        "Cyber Threat Analysis",
+        "Digital Forensics",
+        "Threat Actor Profiling"
+    ],
+    "cardDecks": [
+        "cyber_threat_detection",
+        "digital_forensic_methods",
+        "threat_actor_profiling"
+    ]
+}

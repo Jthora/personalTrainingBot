@@ -1,0 +1,17 @@
+{
+    "id": "penetration_testing",
+    "name": "Penetration Testing",
+    "description": "Training in ethical hacking techniques to identify and exploit vulnerabilities in systems.",
+    "difficulty": "Advanced",
+    "estimated_time": "18-36 months",
+    "focus": [
+        "Red Team Operations",
+        "Vulnerability Exploitation",
+        "Security Hardening"
+    ],
+    "cardDecks": [
+        "web_application_hacking",
+        "network_penetration_tests",
+        "physical_security_exploitation"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "id": "psionic_training",
+    "name": "Psionic Training",
+    "description": "Foundational training in psychic abilities, mental focus, and energy control.",
+    "difficulty": "Beginner to Advanced",
+    "estimated_time": "6-24 months",
+    "focus": [
+        "Mental Focus",
+        "Energy Perception",
+        "Intuitive Sensory Training"
+    ],
+    "cardDecks": [
+        "psionic_meditation",
+        "mental_energy_control",
+        "psi_exercises"
+    ]
+}

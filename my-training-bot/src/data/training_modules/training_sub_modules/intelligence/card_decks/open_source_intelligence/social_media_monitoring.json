@@ -1,0 +1,35 @@
+{
+    "id": "social_media_monitoring",
+    "name": "Social Media Monitoring",
+    "description": "Tracking, analyzing, and extracting intelligence from social media platforms.",
+    "focus": [
+        "Social Media Analysis",
+        "Network Mapping"
+    ],
+    "cards": [
+        {
+            "id": "trend_tracking",
+            "title": "Trend Tracking and Hashtag Monitoring",
+            "description": "Identifying emerging trends and real-time intelligence from social media.",
+            "bulletpoints": [
+                "Use Twitter API and sentiment analysis for trend detection",
+                "Track hashtags and geotagged posts for live event monitoring",
+                "Identify influencers and key opinion leaders in information networks"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "profile_attribution",
+            "title": "Profile Attribution and Fake Account Detection",
+            "description": "Identifying and verifying user profiles across multiple platforms.",
+            "bulletpoints": [
+                "Cross-reference accounts using username correlation techniques",
+                "Analyze profile behavior and post timing for bot detection",
+                "Use reverse image searches to trace profile pictures and avatars"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

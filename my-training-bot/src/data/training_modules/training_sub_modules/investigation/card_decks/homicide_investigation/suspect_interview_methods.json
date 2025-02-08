@@ -1,0 +1,35 @@
+{
+    "id": "suspect_interview_methods",
+    "name": "Suspect Interview Methods",
+    "description": "Techniques for interrogating suspects to extract reliable and legally admissible confessions.",
+    "focus": [
+        "Suspect Interrogation",
+        "Psychological Tactics"
+    ],
+    "cards": [
+        {
+            "id": "reid_technique",
+            "title": "Reid Technique & Psychological Pressure",
+            "description": "Applying structured interrogation tactics to elicit truthful statements.",
+            "bulletpoints": [
+                "Use step-by-step persuasive questioning methods",
+                "Analyze suspect body language and microexpressions",
+                "Differentiate between truthful responses and deceptive tactics"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cognitive_interviewing",
+            "title": "Cognitive Interviewing for Witnesses & Suspects",
+            "description": "Enhancing memory recall and extracting key details from subjects.",
+            "bulletpoints": [
+                "Use visualization and recall techniques to reconstruct crime events",
+                "Minimize leading questions to maintain accuracy",
+                "Adapt interview strategies based on suspect or witness psychology"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

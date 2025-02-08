@@ -1,0 +1,35 @@
+{
+    "id": "ladder_drills",
+    "name": "Ladder Drills",
+    "description": "Enhancing footwork, agility, and coordination using agility ladder exercises.",
+    "focus": [
+        "Footwork",
+        "Reaction Time"
+    ],
+    "cards": [
+        {
+            "id": "quick_feet_ladder",
+            "title": "Quick Feet Ladder Drill",
+            "description": "Increasing foot speed and coordination with rapid step sequences.",
+            "bulletpoints": [
+                "Step lightly and quickly through the ladder squares",
+                "Focus on smooth transitions between steps",
+                "Keep upper body stable and minimize head movement"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "lateral_agility_drill",
+            "title": "Lateral Agility Ladder Drill",
+            "description": "Improving lateral movement speed and balance.",
+            "bulletpoints": [
+                "Step side-to-side through the ladder as quickly as possible",
+                "Keep knees slightly bent for better stability",
+                "Engage core muscles to maintain control and speed"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

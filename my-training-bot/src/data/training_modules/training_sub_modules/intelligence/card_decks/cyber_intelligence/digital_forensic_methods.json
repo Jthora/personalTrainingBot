@@ -1,0 +1,35 @@
+{
+    "id": "digital_forensic_methods",
+    "name": "Digital Forensic Methods",
+    "description": "Investigative techniques for analyzing digital artifacts and cybercrime evidence.",
+    "focus": [
+        "Digital Forensics",
+        "Cybercrime Investigation"
+    ],
+    "cards": [
+        {
+            "id": "memory_forensics",
+            "title": "Memory Forensics & Live System Analysis",
+            "description": "Extracting volatile data from compromised systems for forensic analysis.",
+            "bulletpoints": [
+                "Use tools like Volatility and Rekall for RAM analysis",
+                "Identify running processes, network connections, and active malware",
+                "Detect and analyze rootkits, trojans, and fileless attacks"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "log_analysis",
+            "title": "Log Analysis & Event Correlation",
+            "description": "Using system logs and event correlation to trace cyber incidents.",
+            "bulletpoints": [
+                "Monitor SIEM platforms for anomaly detection",
+                "Correlate logs across endpoints, firewalls, and cloud platforms",
+                "Identify exfiltration and unauthorized access patterns"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": "osint_tools_and_methods",
+    "name": "OSINT Tools and Methods",
+    "description": "Techniques and tools for gathering intelligence from publicly available online sources.",
+    "focus": [
+        "Web Scraping",
+        "Data Collection"
+    ],
+    "cards": [
+        {
+            "id": "automated_scraping",
+            "title": "Automated Web Scraping for OSINT",
+            "description": "Using automation to extract intelligence from online sources.",
+            "bulletpoints": [
+                "Use Python libraries like BeautifulSoup and Scrapy for scraping",
+                "Set up proxies and user-agent rotation to avoid detection",
+                "Extract structured data from forums, news, and public websites"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "metadata_extraction",
+            "title": "Metadata Extraction and File Analysis",
+            "description": "Analyzing metadata from documents, images, and digital files for intelligence.",
+            "bulletpoints": [
+                "Extract metadata using ExifTool, FOCA, and CyberChef",
+                "Analyze timestamps, geolocation, and authorship data",
+                "Identify digital forgeries and document tampering"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

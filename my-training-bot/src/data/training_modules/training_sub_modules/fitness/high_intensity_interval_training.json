@@ -1,0 +1,17 @@
+{
+    "id": "high_intensity_interval_training",
+    "name": "High-Intensity Interval Training (HIIT)",
+    "description": "Maximizing fat loss and endurance through short bursts of intense exercise.",
+    "difficulty": "Advanced",
+    "estimated_time": "6-12 months",
+    "focus": [
+        "Explosive Power",
+        "Fat Burning",
+        "Anaerobic Endurance"
+    ],
+    "cardDecks": [
+        "tabata_protocol",
+        "sprint_intervals",
+        "circuit_training"
+    ]
+}

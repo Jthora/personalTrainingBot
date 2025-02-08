@@ -1,0 +1,17 @@
+{
+    "id": "behavioral_profiling",
+    "name": "Behavioral Profiling",
+    "description": "Training on analyzing psychological patterns and predicting human behavior in intelligence operations.",
+    "difficulty": "Advanced",
+    "estimated_time": "24-36 months",
+    "focus": [
+        "Psychological Profiling",
+        "Behavioral Patterns",
+        "Threat Prediction"
+    ],
+    "cardDecks": [
+        "criminal_behavior_analysis",
+        "threat_behavior_assessment",
+        "psychological_operations"
+    ]
+}

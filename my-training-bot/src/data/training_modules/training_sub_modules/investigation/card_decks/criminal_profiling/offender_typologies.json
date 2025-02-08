@@ -1,0 +1,35 @@
+{
+    "id": "offender_typologies",
+    "name": "Offender Typologies",
+    "description": "Categorizing offenders based on psychological, social, and criminal factors.",
+    "focus": [
+        "Psychological Profiling",
+        "Offender Classification"
+    ],
+    "cards": [
+        {
+            "id": "organized_vs_disorganized",
+            "title": "Organized vs. Disorganized Offenders",
+            "description": "Understanding distinctions between methodical and chaotic criminal behavior.",
+            "bulletpoints": [
+                "Identify crime scene traits linked to offender organization level",
+                "Analyze post-crime behavior and forensic evidence",
+                "Profile offenders based on control vs. impulsiveness"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psychopathy_and_sociopathy",
+            "title": "Psychopathy and Sociopathy in Criminals",
+            "description": "Profiling offenders based on psychopathic and sociopathic tendencies.",
+            "bulletpoints": [
+                "Assess lack of empathy, remorse, and manipulative tendencies",
+                "Identify risk levels for recidivism",
+                "Differentiate between psychopathy and sociopathy in offenders"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

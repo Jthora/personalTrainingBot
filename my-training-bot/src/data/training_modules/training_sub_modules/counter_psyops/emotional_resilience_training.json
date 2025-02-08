@@ -1,0 +1,17 @@
+{
+    "id": "emotional_resilience_training",
+    "name": "Emotional Resilience Training",
+    "description": "Building resistance to psychological and emotional manipulation techniques used in PsyOps.",
+    "difficulty": "Beginner to Advanced",
+    "estimated_time": "6-24 months",
+    "focus": [
+        "Emotional Intelligence",
+        "Cognitive Behavioral Techniques",
+        "Stress Adaptation"
+    ],
+    "cardDecks": [
+        "emotional_control_methods",
+        "cognitive_behavioral_training",
+        "resilience_under_pressure"
+    ]
+}

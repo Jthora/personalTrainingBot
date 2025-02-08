@@ -1,0 +1,17 @@
+{
+    "id": "stealth_and_escape_tactics",
+    "name": "Stealth and Escape Tactics",
+    "description": "Training in stealth movement, evasion, and counter-capture techniques.",
+    "difficulty": "Advanced",
+    "estimated_time": "18-36 months",
+    "focus": [
+        "Silent Movement",
+        "Escape and Evasion",
+        "Camouflage Techniques"
+    ],
+    "cardDecks": [
+        "silent_movement_training",
+        "hostile_escape_tactics",
+        "camouflage_and_blending"
+    ]
+}

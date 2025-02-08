@@ -1,0 +1,35 @@
+{
+    "id": "crime_scene_processing",
+    "name": "Crime Scene Processing",
+    "description": "Techniques for properly securing, documenting, and analyzing crime scenes.",
+    "focus": [
+        "Crime Scene Analysis",
+        "Evidence Collection"
+    ],
+    "cards": [
+        {
+            "id": "scene_preservation",
+            "title": "Scene Preservation & Contamination Control",
+            "description": "Ensuring a crime scene remains uncontaminated and all evidence is preserved.",
+            "bulletpoints": [
+                "Establish and secure crime scene perimeters",
+                "Use proper PPE and contamination control procedures",
+                "Document scene layout, environmental factors, and evidence placement"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "evidence_tagging",
+            "title": "Evidence Tagging and Documentation",
+            "description": "Properly labeling, collecting, and logging evidence for forensic analysis.",
+            "bulletpoints": [
+                "Use chain of custody protocols for legal integrity",
+                "Tag evidence using barcode systems and logs",
+                "Take high-quality photos and sketches of all critical elements"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

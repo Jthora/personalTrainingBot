@@ -1,0 +1,17 @@
+{
+    "id": "core_strengthening",
+    "name": "Core Strengthening",
+    "description": "Building core stability and strength to support overall athleticism and injury prevention.",
+    "difficulty": "Intermediate",
+    "estimated_time": "6-12 months",
+    "focus": [
+        "Abdominal Strength",
+        "Lower Back Stability",
+        "Postural Control"
+    ],
+    "cardDecks": [
+        "planks_and_static_holds",
+        "rotational_core_exercises",
+        "dynamic_core_workouts"
+    ]
+}

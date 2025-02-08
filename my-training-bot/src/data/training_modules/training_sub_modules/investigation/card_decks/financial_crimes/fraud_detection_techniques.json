@@ -1,0 +1,35 @@
+{
+    "id": "fraud_detection_techniques",
+    "name": "Fraud Detection Techniques",
+    "description": "Methods for identifying, analyzing, and preventing financial fraud.",
+    "focus": [
+        "Fraud Detection",
+        "Investigative Techniques"
+    ],
+    "cards": [
+        {
+            "id": "credit_card_fraud",
+            "title": "Credit Card Fraud Detection",
+            "description": "Identifying fraudulent credit card transactions and behavioral anomalies.",
+            "bulletpoints": [
+                "Analyze spending patterns for unauthorized activity",
+                "Use AI and machine learning models for fraud detection",
+                "Investigate cloned and stolen credit card fraud cases"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "phishing_schemes",
+            "title": "Phishing and Online Fraud Investigations",
+            "description": "Tracking and mitigating fraudulent email and social engineering attacks.",
+            "bulletpoints": [
+                "Recognize phishing tactics in emails and fake websites",
+                "Trace fraudulent accounts used for identity theft",
+                "Investigate cybercriminal networks behind phishing schemes"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

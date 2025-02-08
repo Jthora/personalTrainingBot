@@ -1,0 +1,35 @@
+{
+    "id": "predictive_analysis",
+    "name": "Predictive Analysis",
+    "description": "Using data modeling and trend analysis to anticipate future intelligence threats.",
+    "focus": [
+        "Threat Assessment",
+        "Strategic Forecasting"
+    ],
+    "cards": [
+        {
+            "id": "data_trend_analysis",
+            "title": "Data Trend Analysis & Intelligence Forecasting",
+            "description": "Identifying patterns and anomalies in intelligence data.",
+            "bulletpoints": [
+                "Use statistical modeling to predict emerging threats",
+                "Apply machine learning algorithms to detect evolving trends",
+                "Analyze geopolitical shifts for intelligence implications"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "scenario_planning",
+            "title": "Scenario Planning & Risk Mitigation",
+            "description": "Developing intelligence-based strategies to prepare for possible outcomes.",
+            "bulletpoints": [
+                "Use wargaming techniques to simulate adversarial strategies",
+                "Model best-case, worst-case, and most-likely-case scenarios",
+                "Develop contingency plans based on intelligence assessments"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "id": "manipulation_detection",
+    "name": "Manipulation Detection",
+    "description": "Recognizing and countering psychological manipulation tactics used by individuals and organizations.",
+    "difficulty": "Intermediate",
+    "estimated_time": "12-24 months",
+    "focus": [
+        "Tactical Persuasion Recognition",
+        "Gaslighting Defense",
+        "Behavioral Analysis"
+    ],
+    "cardDecks": [
+        "identifying_coercion_tactics",
+        "gaslighting_and_brainwashing_defense",
+        "advanced_behavioral_analysis"
+    ]
+}

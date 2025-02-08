@@ -1,0 +1,35 @@
+{
+    "id": "foam_rolling_and_massage",
+    "name": "Foam Rolling and Massage",
+    "description": "Using self-myofascial release techniques to reduce muscle tension and improve recovery.",
+    "focus": [
+        "Joint Mobility",
+        "Muscle Recovery"
+    ],
+    "cards": [
+        {
+            "id": "quad_rolling",
+            "title": "Foam Rolling for Quadriceps",
+            "description": "Releasing tension and improving blood flow in the quads.",
+            "bulletpoints": [
+                "Position the foam roller under the thighs",
+                "Roll slowly from hips to knees, pausing on tight spots",
+                "Apply moderate pressure to release adhesions"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "upper_back_release",
+            "title": "Upper Back Foam Rolling for Posture Correction",
+            "description": "Reducing tension in the upper back and improving thoracic mobility.",
+            "bulletpoints": [
+                "Place the foam roller under the upper back",
+                "Gently roll from the mid-back to shoulders",
+                "Avoid rolling directly on the lower back"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        }
+    ]
+}

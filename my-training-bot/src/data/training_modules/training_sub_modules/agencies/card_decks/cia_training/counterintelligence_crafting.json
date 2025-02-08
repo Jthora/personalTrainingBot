@@ -1,0 +1,35 @@
+{
+    "id": "counterintelligence_tactics",
+    "name": "Counterintelligence Tactics",
+    "description": "Defensive measures to detect and neutralize enemy intelligence operations.",
+    "focus": [
+        "Spy Detection",
+        "Deception Analysis"
+    ],
+    "cards": [
+        {
+            "id": "double_agent_detection",
+            "title": "Double Agent Identification",
+            "description": "Recognizing and handling infiltrators within an organization.",
+            "bulletpoints": [
+                "Analyze inconsistencies in behavior",
+                "Cross-check mission details",
+                "Implement controlled misinformation"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "disinformation_campaigns",
+            "title": "Disinformation & Psychological Warfare",
+            "description": "Using controlled leaks and deceptive strategies to mislead adversaries.",
+            "bulletpoints": [
+                "Seed false intelligence through secure channels",
+                "Use media manipulation to alter narratives",
+                "Employ psychological tactics to destabilize targets"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

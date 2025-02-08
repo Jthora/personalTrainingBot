@@ -1,0 +1,35 @@
+{
+    "id": "threat_actor_profiling",
+    "name": "Threat Actor Profiling",
+    "description": "Analyzing cybercriminal groups, APTs, and state-sponsored hacking operations.",
+    "focus": [
+        "Threat Actor Profiling",
+        "Cyber Espionage"
+    ],
+    "cards": [
+        {
+            "id": "apt_tracking",
+            "title": "Tracking Advanced Persistent Threats (APTs)",
+            "description": "Identifying and monitoring nation-state and corporate-sponsored hacking groups.",
+            "bulletpoints": [
+                "Map APT tactics, techniques, and procedures (TTPs) using MITRE ATT&CK",
+                "Monitor geopolitical events for cyber warfare trends",
+                "Analyze malware strains associated with state actors"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cybercriminal_networks",
+            "title": "Cybercriminal Network Analysis",
+            "description": "Profiling cybercrime syndicates and underground hacking forums.",
+            "bulletpoints": [
+                "Monitor dark web marketplaces for illicit activity",
+                "Analyze ransomware gangs and extortion tactics",
+                "Track stolen data circulation and financial laundering operations"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

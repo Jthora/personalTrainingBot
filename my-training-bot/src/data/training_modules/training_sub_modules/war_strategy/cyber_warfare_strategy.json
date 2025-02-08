@@ -1,0 +1,17 @@
+{
+    "id": "cyber_warfare_strategy",
+    "name": "Cyber Warfare Strategy",
+    "description": "Developing offensive and defensive strategies in the realm of cyber conflict.",
+    "difficulty": "Advanced",
+    "estimated_time": "24-48 months",
+    "focus": [
+        "Offensive Cyber Operations",
+        "Defensive Cybersecurity",
+        "Electronic Warfare"
+    ],
+    "cardDecks": [
+        "offensive_cyber_tactics",
+        "defensive_network_security",
+        "cyber_intelligence_operations"
+    ]
+}

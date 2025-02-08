@@ -1,0 +1,17 @@
+{
+    "id": "homeland_security",
+    "name": "Homeland Security",
+    "description": "National security training focused on terrorism prevention, border security, and emergency response.",
+    "difficulty": "Intermediate",
+    "estimated_time": "18-24 months",
+    "focus": [
+        "Terrorism Prevention",
+        "Border Security",
+        "Crisis Management"
+    ],
+    "cardDecks": [
+        "terrorist_threat_analysis",
+        "border_control_tactics",
+        "emergency_response_drills"
+    ]
+}

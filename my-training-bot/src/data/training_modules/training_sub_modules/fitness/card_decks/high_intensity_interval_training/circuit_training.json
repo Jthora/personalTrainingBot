@@ -1,0 +1,35 @@
+{
+    "id": "circuit_training",
+    "name": "Circuit Training",
+    "description": "A full-body workout alternating between strength and cardio-based exercises.",
+    "focus": [
+        "Fat Burning",
+        "Muscular Endurance"
+    ],
+    "cards": [
+        {
+            "id": "bodyweight_circuit",
+            "title": "Bodyweight HIIT Circuit",
+            "description": "A circuit combining strength and cardio exercises in rapid succession.",
+            "bulletpoints": [
+                "Perform squats, push-ups, lunges, and mountain climbers",
+                "Work for 45 seconds per exercise, rest for 15 seconds",
+                "Repeat for 3-4 rounds depending on fitness level"
+            ],
+            "duration": 7,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "kettlebell_hiit",
+            "title": "Kettlebell HIIT Routine",
+            "description": "Incorporating kettlebell exercises into high-intensity circuits.",
+            "bulletpoints": [
+                "Combine swings, goblet squats, and high pulls",
+                "Use 30-second work intervals with 15 seconds of rest",
+                "Maintain proper form and controlled breathing"
+            ],
+            "duration": 8,
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "id": "asymmetric_warfare",
+    "name": "Asymmetric Warfare",
+    "description": "Unconventional warfare tactics used against superior military forces.",
+    "difficulty": "Advanced",
+    "estimated_time": "18-36 months",
+    "focus": [
+        "Guerrilla Tactics",
+        "Counter-Insurgency",
+        "Unconventional Warfare"
+    ],
+    "cardDecks": [
+        "urban_warfare_strategies",
+        "insurgency_tactics",
+        "counter_terrorism_operations"
+    ]
+}

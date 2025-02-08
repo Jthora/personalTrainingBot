@@ -1,0 +1,17 @@
+{
+    "id": "propaganda_countermeasures",
+    "name": "Propaganda Countermeasures",
+    "description": "Training in recognizing, resisting, and neutralizing mass influence campaigns designed for control and deception.",
+    "difficulty": "Intermediate",
+    "estimated_time": "12-24 months",
+    "focus": [
+        "Mass Media Manipulation Detection",
+        "Psychological Persuasion Techniques",
+        "Narrative Deconstruction"
+    ],
+    "cardDecks": [
+        "propaganda_identification",
+        "mass_media_analysis",
+        "narrative_deconstruction_methods"
+    ]
+}

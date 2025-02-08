@@ -1,0 +1,35 @@
+{
+    "id": "emergency_response_drills",
+    "name": "Emergency Response Drills",
+    "description": "Preparing for rapid and coordinated responses to national security incidents and disasters.",
+    "focus": [
+        "Crisis Management",
+        "Disaster Response"
+    ],
+    "cards": [
+        {
+            "id": "mass_casualty_incident_response",
+            "title": "Mass Casualty Incident Response",
+            "description": "Managing large-scale emergencies, including terrorist attacks and natural disasters.",
+            "bulletpoints": [
+                "Establish emergency triage protocols",
+                "Coordinate with medical and law enforcement agencies",
+                "Develop rapid deployment response plans"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "active_shooter_response",
+            "title": "Active Shooter Response",
+            "description": "Strategies for neutralizing threats and securing civilians in mass attack scenarios.",
+            "bulletpoints": [
+                "Implement ALERRT (Advanced Law Enforcement Rapid Response Training)",
+                "Establish immediate incident containment zones",
+                "Coordinate tactical entry and hostage rescue operations"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

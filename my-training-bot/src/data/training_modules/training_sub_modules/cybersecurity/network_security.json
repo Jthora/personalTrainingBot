@@ -1,0 +1,17 @@
+{
+    "id": "network_security",
+    "name": "Network Security",
+    "description": "Securing computer networks against cyber threats and unauthorized access.",
+    "difficulty": "Intermediate",
+    "estimated_time": "12-24 months",
+    "focus": [
+        "Firewalls & IDS",
+        "Network Hardening",
+        "Zero Trust Security"
+    ],
+    "cardDecks": [
+        "network_monitoring_tools",
+        "firewall_configuration",
+        "intrusion_detection_methods"
+    ]
+}

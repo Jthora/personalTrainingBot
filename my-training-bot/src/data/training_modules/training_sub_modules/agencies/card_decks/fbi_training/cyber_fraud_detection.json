@@ -1,0 +1,35 @@
+{
+    "id": "cyber_fraud_detection",
+    "name": "Cyber Fraud Detection",
+    "description": "Training in digital financial crime investigations and online fraud prevention.",
+    "focus": [
+        "Financial Crime",
+        "Cybersecurity Threats"
+    ],
+    "cards": [
+        {
+            "id": "digital_payment_fraud",
+            "title": "Digital Payment Fraud & Identity Theft",
+            "description": "Identifying and preventing fraudulent financial transactions online.",
+            "bulletpoints": [
+                "Detect anomalies in payment transactions",
+                "Trace fraudulent cryptocurrency transfers",
+                "Use AI-based fraud detection tools"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "dark_web_financial_crime",
+            "title": "Dark Web Financial Crime Investigations",
+            "description": "Investigating illegal financial activities on encrypted online marketplaces.",
+            "bulletpoints": [
+                "Analyze blockchain transactions for illicit activity",
+                "Use OSINT to track dark web financial fraud",
+                "Understand money laundering techniques in cybercrime"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

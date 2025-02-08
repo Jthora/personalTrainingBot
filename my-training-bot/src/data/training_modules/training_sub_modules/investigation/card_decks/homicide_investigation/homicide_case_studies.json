@@ -1,0 +1,35 @@
+{
+    "id": "homicide_case_studies",
+    "name": "Homicide Case Studies",
+    "description": "Analyzing real-life homicide cases to understand patterns and investigative approaches.",
+    "focus": [
+        "Crime Scene Reconstruction",
+        "Behavioral Analysis"
+    ],
+    "cards": [
+        {
+            "id": "serial_killer_profiles",
+            "title": "Serial Killer Profiles & Pattern Analysis",
+            "description": "Examining patterns in serial homicides to predict offender behavior.",
+            "bulletpoints": [
+                "Identify common psychological and behavioral traits of serial killers",
+                "Analyze modus operandi and signature behaviors",
+                "Compare historical serial cases to active investigations"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cold_case_reviews",
+            "title": "Cold Case Reviews & Modern Forensic Techniques",
+            "description": "Re-examining unsolved cases using updated forensic methods.",
+            "bulletpoints": [
+                "Utilize new forensic DNA analysis and database cross-referencing",
+                "Reconstruct timelines and suspect profiles using modern OSINT tools",
+                "Identify common factors leading to case resolution after extended periods"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

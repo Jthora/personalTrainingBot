@@ -1,0 +1,35 @@
+{
+    "id": "reaction_time_drills",
+    "name": "Reaction Time Drills",
+    "description": "Training the nervous system for faster reaction times and reflex-based movements.",
+    "focus": [
+        "Cognitive Speed",
+        "Neuromuscular Coordination"
+    ],
+    "cards": [
+        {
+            "id": "visual_stimulus_drills",
+            "title": "Visual Stimulus & Reflex Training",
+            "description": "Enhancing reaction time using visual cues and stimulus-response drills.",
+            "bulletpoints": [
+                "Use agility lights or reaction balls to train unpredictability",
+                "Develop peripheral vision awareness for better field perception",
+                "Incorporate partner drills to improve decision-making speed"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "hand_eye_coordination",
+            "title": "Hand-Eye Coordination & Reflex Training",
+            "description": "Improving precision and timing in athletic movements.",
+            "bulletpoints": [
+                "Use ball drills for quick hand-eye response development",
+                "Practice shadow boxing and reflex sparring drills",
+                "Incorporate multi-sensory training for cognitive processing speed"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

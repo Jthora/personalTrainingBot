@@ -1,0 +1,35 @@
+{
+    "id": "cyber_threat_detection",
+    "name": "Cyber Threat Detection",
+    "description": "Techniques for identifying and mitigating cyber threats in real-time environments.",
+    "focus": [
+        "Cyber Threat Analysis",
+        "Network Defense"
+    ],
+    "cards": [
+        {
+            "id": "threat_hunting",
+            "title": "Threat Hunting & Anomaly Detection",
+            "description": "Proactively identifying cyber threats through network and system monitoring.",
+            "bulletpoints": [
+                "Use AI and behavioral analytics to detect anomalies",
+                "Monitor for Indicators of Compromise (IoCs)",
+                "Deploy honeypots and deception techniques to track attackers"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "intrusion_prevention",
+            "title": "Intrusion Prevention and Mitigation",
+            "description": "Blocking and mitigating cyber intrusions before they cause damage.",
+            "bulletpoints": [
+                "Implement endpoint detection and response (EDR) tools",
+                "Use firewall rules and IDS/IPS for active threat mitigation",
+                "Monitor dark web forums for pre-attack planning intelligence"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

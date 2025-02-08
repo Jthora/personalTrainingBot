@@ -1,0 +1,35 @@
+{
+    "id": "static_stretching",
+    "name": "Static Stretching",
+    "description": "Holding positions to elongate muscles and improve flexibility.",
+    "focus": [
+        "Stretching Techniques",
+        "Injury Prevention"
+    ],
+    "cards": [
+        {
+            "id": "hamstring_stretch",
+            "title": "Hamstring Stretch for Posterior Chain Flexibility",
+            "description": "A deep stretch for the hamstrings and lower back.",
+            "bulletpoints": [
+                "Keep one leg extended and hinge at the hips",
+                "Hold the stretch for 20-30 seconds without bouncing",
+                "Maintain a straight back to prevent injury"
+            ],
+            "duration": 6,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "chest_opener",
+            "title": "Chest Opener for Shoulder Flexibility",
+            "description": "Expanding the chest and opening the shoulders for improved posture.",
+            "bulletpoints": [
+                "Interlace fingers behind the back and lift slightly",
+                "Hold the position while keeping shoulders down",
+                "Breathe deeply to enhance relaxation"
+            ],
+            "duration": 6,
+            "difficulty": "Beginner"
+        }
+    ]
+}

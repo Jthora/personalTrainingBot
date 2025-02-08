@@ -1,0 +1,17 @@
+{
+    "id": "cybercrime_analysis",
+    "name": "Cybercrime Analysis",
+    "description": "Training in cyber threat investigations, hacking methodologies, and online fraud detection.",
+    "difficulty": "Advanced",
+    "estimated_time": "18-36 months",
+    "focus": [
+        "Cyber Threat Analysis",
+        "Hacking Methodologies",
+        "Online Fraud Detection"
+    ],
+    "cardDecks": [
+        "dark_web_investigations",
+        "malware_analysis",
+        "cyber_fraud_detection"
+    ]
+}

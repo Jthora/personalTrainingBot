@@ -1,0 +1,17 @@
+{
+    "id": "psionic_weaponry",
+    "name": "Psionic Weaponry",
+    "description": "Utilizing psychic energy to enhance combat techniques, attack, and defend through non-physical means.",
+    "difficulty": "Advanced",
+    "estimated_time": "18-48 months",
+    "focus": [
+        "Energy Projection",
+        "Combat Applications",
+        "Psionic Constructs"
+    ],
+    "cardDecks": [
+        "psi_blade_techniques",
+        "telekinetic_strikes",
+        "energy_weapons_training"
+    ]
+}

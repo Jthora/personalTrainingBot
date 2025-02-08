@@ -1,0 +1,17 @@
+{
+    "id": "tradecraft",
+    "name": "Tradecraft",
+    "description": "Espionage skills training including cryptography, surveillance evasion, and intelligence gathering.",
+    "difficulty": "Intermediate",
+    "estimated_time": "12-24 months",
+    "focus": [
+        "Cryptography",
+        "Secure Communications",
+        "Dead Drops"
+    ],
+    "cardDecks": [
+        "encryption_and_decryption",
+        "secure_messaging",
+        "dead_drop_methods"
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": "criminal_profiling_methods",
+    "name": "Criminal Profiling Methods",
+    "description": "Techniques for analyzing behavior patterns and predicting criminal actions.",
+    "focus": [
+        "Behavioral Analysis",
+        "Psychological Profiling"
+    ],
+    "cards": [
+        {
+            "id": "offender_typologies",
+            "title": "Offender Typologies",
+            "description": "Classifying criminals based on behavior, motive, and crime patterns.",
+            "bulletpoints": [
+                "Identify signature behaviors",
+                "Differentiate organized vs. disorganized offenders",
+                "Analyze crime scene characteristics"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "threat_assessment",
+            "title": "Threat Assessment & Risk Evaluation",
+            "description": "Evaluating potential threats based on historical behavioral data.",
+            "bulletpoints": [
+                "Analyze suspect psychological markers",
+                "Apply structured risk assessment models",
+                "Identify pre-incident indicators of violence"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

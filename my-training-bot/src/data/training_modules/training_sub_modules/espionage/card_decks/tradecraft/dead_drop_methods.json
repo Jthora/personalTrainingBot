@@ -1,0 +1,35 @@
+{
+    "id": "dead_drop_methods",
+    "name": "Dead Drop Methods",
+    "description": "Techniques for covert information exchange using hidden physical locations.",
+    "focus": [
+        "Dead Drops",
+        "Counter-Surveillance"
+    ],
+    "cards": [
+        {
+            "id": "brush_pass",
+            "title": "Brush Pass and Live Drops",
+            "description": "Executing rapid, undetectable exchanges in public settings.",
+            "bulletpoints": [
+                "Use crowd density and movement to mask exchanges",
+                "Deploy synchronized gestures and inconspicuous signals",
+                "Plan timed encounters to avoid unwanted attention"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "container_concealment",
+            "title": "Container Concealment and Dead Drop Locations",
+            "description": "Hiding sensitive materials in secure yet accessible locations.",
+            "bulletpoints": [
+                "Use magnetic compartments and false-bottom containers",
+                "Identify high-traffic but low-security dead drop locations",
+                "Develop retrieval and monitoring strategies to avoid detection"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

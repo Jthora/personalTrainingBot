@@ -1,0 +1,17 @@
+{
+    "id": "cardiovascular_endurance",
+    "name": "Cardiovascular Endurance",
+    "description": "Enhancing heart health, stamina, and aerobic capacity through sustained physical activity.",
+    "difficulty": "Intermediate",
+    "estimated_time": "6-18 months",
+    "focus": [
+        "Aerobic Capacity",
+        "Heart Rate Optimization",
+        "Endurance Training"
+    ],
+    "cardDecks": [
+        "steady_state_cardio",
+        "interval_running",
+        "cycling_endurance"
+    ]
+}

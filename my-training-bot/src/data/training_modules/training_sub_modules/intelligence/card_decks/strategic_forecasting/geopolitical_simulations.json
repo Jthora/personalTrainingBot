@@ -1,0 +1,35 @@
+{
+    "id": "geopolitical_simulations",
+    "name": "Geopolitical Simulations",
+    "description": "Modeling geopolitical conflicts, economic shifts, and international crises.",
+    "focus": [
+        "Geopolitical Risk Assessment",
+        "Scenario-Based Forecasting"
+    ],
+    "cards": [
+        {
+            "id": "wargaming_simulation",
+            "title": "Wargaming & Strategic Conflict Simulations",
+            "description": "Using scenario-based models to anticipate international conflicts.",
+            "bulletpoints": [
+                "Simulate potential military conflicts using historical data and AI models",
+                "Analyze strategic movements of state and non-state actors",
+                "Apply game theory to predict adversarial decision-making"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "economic_forecasting",
+            "title": "Economic Forecasting & Global Market Analysis",
+            "description": "Predicting financial market shifts and macroeconomic trends.",
+            "bulletpoints": [
+                "Use economic indicators to predict inflation, recession, and currency movements",
+                "Analyze the impact of trade policies and global supply chain disruptions",
+                "Identify emerging market opportunities and risks"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

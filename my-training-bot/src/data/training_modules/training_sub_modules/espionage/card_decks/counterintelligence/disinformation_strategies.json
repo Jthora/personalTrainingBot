@@ -1,0 +1,35 @@
+{
+    "id": "disinformation_strategies",
+    "name": "Disinformation Strategies",
+    "description": "Advanced techniques for deploying strategic misinformation to manipulate enemy intelligence operations.",
+    "focus": [
+        "Deception Tactics",
+        "Psychological Warfare"
+    ],
+    "cards": [
+        {
+            "id": "controlled_leaks",
+            "title": "Controlled Leaks & Narrative Control",
+            "description": "Strategic release of falsified intelligence to shape adversary perception.",
+            "bulletpoints": [
+                "Use media manipulation to reinforce misleading narratives",
+                "Identify target audiences for selective disinformation",
+                "Coordinate with intelligence assets to amplify false leads"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "false_flag_operations",
+            "title": "False Flag Operations & Deceptive Intelligence",
+            "description": "Implementing controlled operations that disguise the true source of intelligence actions.",
+            "bulletpoints": [
+                "Craft plausible narratives to misdirect enemy analysis",
+                "Employ cutouts and misattribution techniques",
+                "Use proxies to plant evidence and alter investigative trails"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

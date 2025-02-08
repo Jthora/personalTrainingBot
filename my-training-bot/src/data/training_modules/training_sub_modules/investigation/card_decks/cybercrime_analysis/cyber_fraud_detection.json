@@ -1,0 +1,35 @@
+{
+    "id": "cyber_fraud_detection",
+    "name": "Cyber Fraud Detection",
+    "description": "Techniques for detecting and preventing online fraud and financial cybercrimes.",
+    "focus": [
+        "Online Fraud Detection",
+        "Financial Cybercrime"
+    ],
+    "cards": [
+        {
+            "id": "identity_theft_investigation",
+            "title": "Identity Theft Investigation",
+            "description": "Tracking and dismantling digital identity fraud schemes.",
+            "bulletpoints": [
+                "Analyze phishing tactics used in identity theft",
+                "Use OSINT tools to trace fraudulent accounts and transactions",
+                "Deploy behavioral biometrics to detect unauthorized access"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "payment_fraud_analysis",
+            "title": "Payment Fraud Analysis & Detection",
+            "description": "Identifying fraudulent financial transactions across online platforms.",
+            "bulletpoints": [
+                "Use AI and machine learning to detect abnormal payment patterns",
+                "Investigate money laundering techniques in cryptocurrency transactions",
+                "Analyze credit card fraud and digital payment fraud trends"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

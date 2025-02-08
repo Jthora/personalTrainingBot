@@ -1,0 +1,17 @@
+{
+    "id": "recovery_and_injury_prevention",
+    "name": "Recovery and Injury Prevention",
+    "description": "Optimizing recovery strategies to improve performance and prevent injuries.",
+    "difficulty": "Beginner",
+    "estimated_time": "3-12 months",
+    "focus": [
+        "Active Recovery",
+        "Soft Tissue Therapy",
+        "Injury Mitigation"
+    ],
+    "cardDecks": [
+        "mobility_routines",
+        "self_myofascial_release",
+        "rehabilitative_exercises"
+    ]
+}

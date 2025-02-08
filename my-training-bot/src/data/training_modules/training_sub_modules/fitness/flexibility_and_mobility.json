@@ -1,0 +1,17 @@
+{
+    "id": "flexibility_and_mobility",
+    "name": "Flexibility and Mobility",
+    "description": "Improving range of motion, joint stability, and overall movement efficiency.",
+    "difficulty": "Beginner",
+    "estimated_time": "6-12 months",
+    "focus": [
+        "Joint Mobility",
+        "Stretching Techniques",
+        "Injury Prevention"
+    ],
+    "cardDecks": [
+        "dynamic_warmups",
+        "static_stretching",
+        "foam_rolling_and_massage"
+    ]
+}

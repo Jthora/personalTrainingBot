@@ -1,0 +1,35 @@
+{
+    "id": "risk_prediction_models",
+    "name": "Risk Prediction Models",
+    "description": "Using probabilistic models to predict risks and mitigate potential threats.",
+    "focus": [
+        "Scenario Planning",
+        "Quantitative Risk Analysis"
+    ],
+    "cards": [
+        {
+            "id": "monte_carlo_simulation",
+            "title": "Monte Carlo Simulations & Risk Forecasting",
+            "description": "Applying probabilistic models to assess strategic risks.",
+            "bulletpoints": [
+                "Use stochastic modeling to predict risk probability distributions",
+                "Analyze financial and security risks using Monte Carlo methods",
+                "Simulate multiple scenarios to identify best-case and worst-case outcomes"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "network_risk_assessment",
+            "title": "Network Risk Assessment & Complex Systems Analysis",
+            "description": "Modeling risk factors in interconnected global systems.",
+            "bulletpoints": [
+                "Use Bayesian networks for decision-making under uncertainty",
+                "Analyze cascading failures in financial, energy, and cyber systems",
+                "Develop countermeasures for mitigating high-impact global risks"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

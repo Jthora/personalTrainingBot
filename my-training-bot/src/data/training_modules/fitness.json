@@ -1,0 +1,19 @@
+{
+    "id": "fitness_training",
+    "name": "Fitness Training",
+    "description": "A comprehensive training program designed to enhance physical performance, endurance, and overall health.",
+    "submodules": [
+        "strength_training",
+        "cardiovascular_endurance",
+        "flexibility_and_mobility",
+        "core_strengthening",
+        "high_intensity_interval_training",
+        "calisthenics",
+        "speed_and_agility",
+        "functional_fitness",
+        "balance_and_stability",
+        "athletic_performance",
+        "mind_body_fitness",
+        "recovery_and_injury_prevention"
+    ]
+}

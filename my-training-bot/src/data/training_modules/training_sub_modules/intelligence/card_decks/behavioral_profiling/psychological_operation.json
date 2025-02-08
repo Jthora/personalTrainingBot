@@ -1,0 +1,35 @@
+{
+    "id": "psychological_operations",
+    "name": "Psychological Operations",
+    "description": "Using behavioral psychology to influence, manipulate, and control outcomes in intelligence settings.",
+    "focus": [
+        "Behavioral Manipulation",
+        "Cognitive Influence"
+    ],
+    "cards": [
+        {
+            "id": "coercion_and_persuasion",
+            "title": "Coercion and Persuasion Tactics",
+            "description": "Psychological methods for influencing decisions and altering behaviors.",
+            "bulletpoints": [
+                "Apply social engineering principles for intelligence gathering",
+                "Use framing and priming techniques to control narratives",
+                "Leverage fear, obligation, and guilt for compliance"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psyops_strategies",
+            "title": "Strategic Psychological Operations",
+            "description": "Coordinating large-scale psychological campaigns to shift perceptions and create division.",
+            "bulletpoints": [
+                "Use media and propaganda to influence public perception",
+                "Exploit psychological vulnerabilities in adversarial groups",
+                "Deploy misinformation and disinformation tactics for strategic advantage"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

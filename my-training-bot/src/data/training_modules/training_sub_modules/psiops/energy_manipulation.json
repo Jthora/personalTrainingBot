@@ -1,0 +1,17 @@
+{
+    "id": "energy_manipulation",
+    "name": "Energy Manipulation",
+    "description": "Training in sensing, directing, and harnessing different forms of psionic energy.",
+    "difficulty": "Intermediate",
+    "estimated_time": "6-24 months",
+    "focus": [
+        "Energy Projection",
+        "Qi Control",
+        "Energetic Sensory Perception"
+    ],
+    "cardDecks": [
+        "energy_channeling",
+        "psionic_deflection",
+        "aura_sensing_and_control"
+    ]
+}

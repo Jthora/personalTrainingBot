@@ -1,0 +1,35 @@
+{
+    "id": "criminal_network_tracking",
+    "name": "Criminal Network Tracking",
+    "description": "Identifying and dismantling transnational organized crime groups and syndicates.",
+    "focus": [
+        "Organized Crime",
+        "Financial Tracking"
+    ],
+    "cards": [
+        {
+            "id": "money_laundering_networks",
+            "title": "Money Laundering & Financial Crime Networks",
+            "description": "Tracking illicit financial flows across international banking systems.",
+            "bulletpoints": [
+                "Analyze suspicious transaction reports (STRs)",
+                "Identify shell companies used for money laundering",
+                "Coordinate with financial intelligence units (FIUs)"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cartel_investigations",
+            "title": "Drug Cartel & Human Trafficking Investigations",
+            "description": "Methods for infiltrating and dismantling international criminal syndicates.",
+            "bulletpoints": [
+                "Utilize undercover operations in organized crime cases",
+                "Monitor encrypted communication channels",
+                "Analyze trafficking routes and logistics networks"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

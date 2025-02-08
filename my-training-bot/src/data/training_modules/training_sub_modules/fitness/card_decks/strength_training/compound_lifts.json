@@ -1,0 +1,35 @@
+{
+    "id": "compound_lifts",
+    "name": "Compound Lifts",
+    "description": "Building full-body strength with multi-joint exercises that engage multiple muscle groups.",
+    "focus": [
+        "Muscle Growth",
+        "Power Development"
+    ],
+    "cards": [
+        {
+            "id": "barbell_squat",
+            "title": "Barbell Squat for Lower Body Strength",
+            "description": "A fundamental strength-building exercise that targets the legs and core.",
+            "bulletpoints": [
+                "Keep feet shoulder-width apart and maintain an upright chest",
+                "Descend until thighs are parallel to the ground",
+                "Drive through the heels to return to the standing position"
+            ],
+            "duration": 8,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "deadlift",
+            "title": "Deadlift for Total Body Power",
+            "description": "One of the most effective lifts for developing overall strength.",
+            "bulletpoints": [
+                "Maintain a neutral spine and engage the core",
+                "Drive hips forward to lift the barbell smoothly",
+                "Lower the bar with control to avoid injury"
+            ],
+            "duration": 8,
+            "difficulty": "Advanced"
+        }
+    ]
+}

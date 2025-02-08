@@ -1,0 +1,35 @@
+{
+    "id": "speed_endurance_training",
+    "name": "Speed & Endurance Training",
+    "description": "Developing explosive speed and the endurance to maintain peak performance.",
+    "focus": [
+        "Acceleration",
+        "Sustained Performance"
+    ],
+    "cards": [
+        {
+            "id": "sprint_mechanics",
+            "title": "Sprint Mechanics & Acceleration Drills",
+            "description": "Improving sprint technique for faster acceleration and top speed.",
+            "bulletpoints": [
+                "Enhance knee drive and foot strike efficiency",
+                "Use resisted sprints for acceleration training",
+                "Perfect arm swing mechanics for better sprint posture"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "tempo_runs",
+            "title": "Tempo Runs & Energy System Development",
+            "description": "Building endurance for sustained high-intensity performance.",
+            "bulletpoints": [
+                "Utilize sprint-float-sprint methods for race simulation",
+                "Incorporate active recovery drills to prevent fatigue buildup",
+                "Balance aerobic and anaerobic training for optimal endurance"
+            ],
+            "duration": 7,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

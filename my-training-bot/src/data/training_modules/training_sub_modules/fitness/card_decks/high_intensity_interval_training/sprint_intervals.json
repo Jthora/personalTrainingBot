@@ -1,0 +1,35 @@
+{
+    "id": "sprint_intervals",
+    "name": "Sprint Intervals",
+    "description": "Alternating high-intensity sprints with low-intensity recovery for endurance and fat loss.",
+    "focus": [
+        "Anaerobic Endurance",
+        "Explosive Power"
+    ],
+    "cards": [
+        {
+            "id": "30_second_sprints",
+            "title": "30-Second Sprints with Active Recovery",
+            "description": "Pushing the anaerobic threshold through all-out sprint bursts.",
+            "bulletpoints": [
+                "Sprint at 90-100% effort for 30 seconds",
+                "Recover with slow jogging or walking for 60 seconds",
+                "Maintain a tall posture and strong arm drive"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "hill_repeats",
+            "title": "Hill Repeats for Power and Endurance",
+            "description": "Using an incline to enhance strength and cardiovascular fitness.",
+            "bulletpoints": [
+                "Sprint uphill at maximum effort",
+                "Walk or jog back down as recovery",
+                "Focus on short, powerful strides"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

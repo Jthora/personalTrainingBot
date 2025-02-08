@@ -1,0 +1,35 @@
+{
+    "id": "deception_detection_techniques",
+    "name": "Deception Detection Techniques",
+    "description": "Methods for identifying deception and manipulation in verbal and written communication.",
+    "focus": [
+        "Deception Detection",
+        "Linguistic Cues"
+    ],
+    "cards": [
+        {
+            "id": "statement_analysis",
+            "title": "Statement Analysis and Truth Verification",
+            "description": "Using forensic linguistic techniques to evaluate credibility.",
+            "bulletpoints": [
+                "Identify linguistic patterns associated with deception",
+                "Analyze pronoun use, distancing language, and passive voice",
+                "Apply forensic statement analysis for investigative interviews"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "voice_stress_analysis",
+            "title": "Voice Stress and Acoustic Deception Detection",
+            "description": "Detecting stress-based deception in verbal communication.",
+            "bulletpoints": [
+                "Measure micro-tremors and vocal stress under pressure",
+                "Analyze speech hesitation, filler words, and pitch modulation",
+                "Use AI-driven voice profiling to assess truthfulness"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

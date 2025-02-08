@@ -1,0 +1,35 @@
+{
+    "id": "spy_identification",
+    "name": "Spy Identification",
+    "description": "Methods for identifying covert operatives and foreign intelligence threats.",
+    "focus": [
+        "Spy Detection",
+        "Behavioral Analysis"
+    ],
+    "cards": [
+        {
+            "id": "behavioral_analysis",
+            "title": "Behavioral Analysis of Espionage Agents",
+            "description": "Identifying suspicious behavioral patterns indicative of espionage activity.",
+            "bulletpoints": [
+                "Analyze inconsistencies in cover stories",
+                "Identify signs of nervousness or over-prepared responses",
+                "Use deception detection techniques in interviews"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "analyzing_communications",
+            "title": "Analyzing Covert Communications",
+            "description": "Tracking clandestine messaging techniques used by foreign operatives.",
+            "bulletpoints": [
+                "Monitor use of coded language in digital and verbal exchanges",
+                "Identify anomalies in encrypted communication methods",
+                "Use metadata analysis to track message transmission points"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

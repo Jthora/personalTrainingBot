@@ -1,0 +1,35 @@
+{
+    "id": "sprint_training",
+    "name": "Sprint Training",
+    "description": "Developing explosive acceleration and top-end sprinting speed through drills.",
+    "focus": [
+        "Acceleration",
+        "Reaction Time"
+    ],
+    "cards": [
+        {
+            "id": "acceleration_drills",
+            "title": "Acceleration Drills for Speed Development",
+            "description": "Improving explosive first steps and acceleration phase of sprinting.",
+            "bulletpoints": [
+                "Start in a low, forward-leaning stance",
+                "Drive the knees and pump arms aggressively",
+                "Use short, powerful strides for maximum speed"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "flying_sprints",
+            "title": "Flying Sprints for Maximum Velocity",
+            "description": "Enhancing top-end sprinting speed with gradual acceleration phases.",
+            "bulletpoints": [
+                "Build up to top speed over 30-40 meters",
+                "Maintain relaxed shoulders and efficient arm mechanics",
+                "Keep ground contact time minimal for maximum efficiency"
+            ],
+            "duration": 8,
+            "difficulty": "Advanced"
+        }
+    ]
+}

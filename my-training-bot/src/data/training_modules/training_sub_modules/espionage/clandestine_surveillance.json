@@ -1,0 +1,17 @@
+{
+    "id": "clandestine_surveillance",
+    "name": "Clandestine Surveillance",
+    "description": "Covert surveillance training for tracking and intelligence gathering without detection.",
+    "difficulty": "Advanced",
+    "estimated_time": "24-36 months",
+    "focus": [
+        "Foot Surveillance",
+        "Vehicle Tracking",
+        "Electronic Surveillance"
+    ],
+    "cardDecks": [
+        "shadowing_techniques",
+        "vehicle_tailing",
+        "signal_interception"
+    ]
+}

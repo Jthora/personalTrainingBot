@@ -1,0 +1,35 @@
+{
+    "id": "self_myofascial_release",
+    "name": "Self-Myofascial Release",
+    "description": "Techniques for releasing muscle tightness and improving circulation.",
+    "focus": [
+        "Soft Tissue Therapy",
+        "Injury Mitigation"
+    ],
+    "cards": [
+        {
+            "id": "foam_rolling_quads",
+            "title": "Foam Rolling for Quadriceps",
+            "description": "Using a foam roller to release tension in the quadriceps muscles.",
+            "bulletpoints": [
+                "Place a foam roller under the front of your thighs",
+                "Roll slowly from the hips to just above the knees",
+                "Pause on tight areas and apply gentle pressure"
+            ],
+            "duration": 6,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "lacrosse_ball_glutes",
+            "title": "Lacrosse Ball Massage for Glutes",
+            "description": "Targeting deep tissue in the glutes using a small massage ball.",
+            "bulletpoints": [
+                "Sit on a lacrosse ball and apply gentle pressure",
+                "Slowly move in small circles to release tension",
+                "Perform on both sides to improve symmetry"
+            ],
+            "duration": 6,
+            "difficulty": "Beginner"
+        }
+    ]
+}

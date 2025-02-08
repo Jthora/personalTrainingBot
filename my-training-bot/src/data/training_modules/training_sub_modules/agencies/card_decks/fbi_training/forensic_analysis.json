@@ -1,0 +1,35 @@
+{
+    "id": "forensic_analysis",
+    "name": "Forensic Analysis",
+    "description": "Applying scientific principles to criminal investigations and evidence evaluation.",
+    "focus": [
+        "Crime Scene Processing",
+        "Evidence Examination"
+    ],
+    "cards": [
+        {
+            "id": "dna_fingerprint_analysis",
+            "title": "DNA & Fingerprint Analysis",
+            "description": "Extracting and matching biological evidence to confirm suspect identities.",
+            "bulletpoints": [
+                "Collect and store DNA samples properly",
+                "Match fingerprint patterns using AFIS",
+                "Analyze trace DNA for forensic leads"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ballistics_forensics",
+            "title": "Ballistics & Firearms Forensics",
+            "description": "Identifying weapons and ammunition used in crimes through forensic techniques.",
+            "bulletpoints": [
+                "Analyze bullet striations and shell casings",
+                "Match firearm residues to specific guns",
+                "Utilize gunshot residue (GSR) testing"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "id": "military_strategy",
+    "name": "Military Strategy",
+    "description": "Developing and executing strategic operations in large-scale warfare.",
+    "difficulty": "Advanced",
+    "estimated_time": "24-48 months",
+    "focus": [
+        "Operational Planning",
+        "Tactical Deployment",
+        "Strategic Command"
+    ],
+    "cardDecks": [
+        "force_maneuvering",
+        "supply_chain_tactics",
+        "combined_arms_operations"
+    ]
+}

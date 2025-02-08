@@ -1,0 +1,35 @@
+{
+    "id": "signal_interception",
+    "name": "Signal Interception",
+    "description": "Techniques for monitoring electronic communications and gathering intelligence from digital sources.",
+    "focus": [
+        "Electronic Surveillance",
+        "Signal Intelligence (SIGINT)"
+    ],
+    "cards": [
+        {
+            "id": "cell_phone_interception",
+            "title": "Cell Phone Interception & Tracking",
+            "description": "Using advanced techniques to monitor and track mobile communications.",
+            "bulletpoints": [
+                "Deploy IMSI catchers for call interception",
+                "Analyze metadata for geolocation tracking",
+                "Decrypt encrypted communications using AI models"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "wiretap_methods",
+            "title": "Wiretap Methods & Digital Monitoring",
+            "description": "Legally and covertly placing wiretaps on targets under surveillance.",
+            "bulletpoints": [
+                "Use fiber optic taps for real-time data access",
+                "Employ passive and active wiretaps for different use cases",
+                "Manage encryption protocols to bypass security layers"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

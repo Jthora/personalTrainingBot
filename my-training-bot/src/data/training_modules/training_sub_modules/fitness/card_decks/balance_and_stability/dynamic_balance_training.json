@@ -1,0 +1,35 @@
+{
+    "id": "dynamic_balance_training",
+    "name": "Dynamic Balance Training",
+    "description": "Training the body to maintain stability during movement and sport-specific actions.",
+    "focus": [
+        "Core Engagement",
+        "Dynamic Stability"
+    ],
+    "cards": [
+        {
+            "id": "agility_ladder_balance",
+            "title": "Agility Ladder & Balance Coordination",
+            "description": "Improving footwork, reaction time, and balance with ladder drills.",
+            "bulletpoints": [
+                "Perform single-leg ladder drills for increased difficulty",
+                "Maintain control during rapid footwork transitions",
+                "Incorporate multidirectional movements to enhance coordination"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "unstable_surface_training",
+            "title": "Unstable Surface Training for Core Control",
+            "description": "Enhancing core stability using balance pads, wobble boards, or foam surfaces.",
+            "bulletpoints": [
+                "Perform exercises on an unstable surface to activate stabilizer muscles",
+                "Increase difficulty by incorporating dynamic movements",
+                "Progress by using one arm or one leg to challenge stability"
+            ],
+            "duration": 7,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "id": "functional_fitness",
+    "name": "Functional Fitness",
+    "description": "Training for real-world strength, coordination, and movement efficiency.",
+    "difficulty": "Intermediate",
+    "estimated_time": "6-18 months",
+    "focus": [
+        "Movement Mechanics",
+        "Multi-Planar Training",
+        "Daily Life Strength"
+    ],
+    "cardDecks": [
+        "kettlebell_workouts",
+        "sandbag_training",
+        "resistance_band_exercises"
+    ]
+}

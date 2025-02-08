@@ -1,0 +1,35 @@
+{
+    "id": "pushup_variations",
+    "name": "Push-Up Variations",
+    "description": "Developing upper body strength and endurance through progressive push-up variations.",
+    "focus": [
+        "Bodyweight Strength",
+        "Endurance Training"
+    ],
+    "cards": [
+        {
+            "id": "diamond_pushups",
+            "title": "Diamond Push-Ups for Triceps & Chest",
+            "description": "A close-grip push-up variation that targets the triceps and inner chest.",
+            "bulletpoints": [
+                "Keep hands close together forming a diamond shape",
+                "Maintain a straight body line to engage the core",
+                "Perform slow and controlled reps to maximize muscle activation"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "archer_pushups",
+            "title": "Archer Push-Ups for Unilateral Strength",
+            "description": "A push-up variation focusing on unilateral strength and control.",
+            "bulletpoints": [
+                "Extend one arm while shifting weight towards the bent arm",
+                "Maintain core engagement for stability",
+                "Increase range of motion progressively to improve mobility"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

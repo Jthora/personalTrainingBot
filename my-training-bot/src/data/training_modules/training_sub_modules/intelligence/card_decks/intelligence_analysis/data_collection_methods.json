@@ -1,0 +1,35 @@
+{
+    "id": "data_collection_methods",
+    "name": "Data Collection Methods",
+    "description": "Techniques for gathering raw intelligence from multiple sources.",
+    "focus": [
+        "Critical Thinking",
+        "Source Validation"
+    ],
+    "cards": [
+        {
+            "id": "osint_techniques",
+            "title": "Open Source Intelligence (OSINT) Techniques",
+            "description": "Gathering intelligence from publicly available sources.",
+            "bulletpoints": [
+                "Use advanced search operators for deep web intelligence gathering",
+                "Monitor social media for emerging threat indicators",
+                "Validate sources and detect misinformation or disinformation"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "humint_methods",
+            "title": "Human Intelligence (HUMINT) Collection",
+            "description": "Using interpersonal sources to acquire intelligence.",
+            "bulletpoints": [
+                "Build and manage informant networks",
+                "Use psychological techniques to elicit information covertly",
+                "Assess the credibility and reliability of human sources"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

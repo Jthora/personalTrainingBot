@@ -1,0 +1,35 @@
+{
+    "id": "cross_border_smuggling_cases",
+    "name": "Cross-Border Smuggling Cases",
+    "description": "Investigative strategies for combating smuggling of weapons, narcotics, and contraband.",
+    "focus": [
+        "Smuggling Tactics",
+        "International Coordination"
+    ],
+    "cards": [
+        {
+            "id": "contraband_detection",
+            "title": "Contraband Detection & Seizure Operations",
+            "description": "Identifying hidden smuggling compartments in vehicles, cargo, and luggage.",
+            "bulletpoints": [
+                "Use advanced scanning and X-ray technologies",
+                "Train in physical search methods for hidden compartments",
+                "Analyze smuggling patterns based on historical data"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "covert_border_surveillance",
+            "title": "Covert Border Surveillance & Intelligence Sharing",
+            "description": "Monitoring border crossings for illegal smuggling activities.",
+            "bulletpoints": [
+                "Deploy real-time border surveillance technologies",
+                "Coordinate intelligence-sharing with neighboring countries",
+                "Implement tracking methods for smuggling convoys"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

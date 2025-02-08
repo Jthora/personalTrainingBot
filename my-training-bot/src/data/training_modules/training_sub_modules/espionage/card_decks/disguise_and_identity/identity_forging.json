@@ -1,0 +1,35 @@
+{
+    "id": "identity_forging",
+    "name": "Identity Forging",
+    "description": "Techniques for creating and maintaining false identities in covert operations.",
+    "focus": [
+        "False Identities",
+        "Document Fabrication"
+    ],
+    "cards": [
+        {
+            "id": "forged_passports",
+            "title": "Forged Passports & Legal Documents",
+            "description": "Creating and acquiring falsified identity documents for deep cover operations.",
+            "bulletpoints": [
+                "Analyze security features in authentic documents",
+                "Modify biometric data without raising suspicion",
+                "Maintain consistency across multiple identity records"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "backstory_creation",
+            "title": "Backstory Creation & Legend Maintenance",
+            "description": "Crafting believable backstories to reinforce covert identities.",
+            "bulletpoints": [
+                "Develop family and work history that aligns with mission parameters",
+                "Practice linguistic and cultural assimilation techniques",
+                "Ensure digital footprint consistency with assumed identities"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

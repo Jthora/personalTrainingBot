@@ -1,0 +1,17 @@
+{
+    "id": "speed_and_agility",
+    "name": "Speed and Agility",
+    "description": "Enhancing quickness, reaction time, and explosive movement through specialized drills.",
+    "difficulty": "Intermediate",
+    "estimated_time": "6-12 months",
+    "focus": [
+        "Acceleration",
+        "Footwork",
+        "Reaction Time"
+    ],
+    "cardDecks": [
+        "sprint_training",
+        "ladder_drills",
+        "plyometric_workouts"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "id": "digital_forensics",
+    "name": "Digital Forensics",
+    "description": "Techniques for recovering and analyzing digital evidence from computers, networks, and mobile devices.",
+    "difficulty": "Advanced",
+    "estimated_time": "24-48 months",
+    "focus": [
+        "Data Recovery",
+        "Network Forensics",
+        "Device Exploitation"
+    ],
+    "cardDecks": [
+        "computer_forensic_methods",
+        "network_packet_analysis",
+        "mobile_device_exploitation"
+    ]
+}

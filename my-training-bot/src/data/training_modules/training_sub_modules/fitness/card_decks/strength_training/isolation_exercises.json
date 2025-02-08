@@ -1,0 +1,35 @@
+{
+    "id": "isolation_exercises",
+    "name": "Isolation Exercises",
+    "description": "Targeting individual muscles to enhance symmetry, strength, and endurance.",
+    "focus": [
+        "Muscle Growth",
+        "Progressive Overload"
+    ],
+    "cards": [
+        {
+            "id": "bicep_curl",
+            "title": "Bicep Curl for Arm Development",
+            "description": "A staple exercise for improving upper arm strength and aesthetics.",
+            "bulletpoints": [
+                "Keep elbows close to the torso while curling the weight",
+                "Squeeze the biceps at the top of the movement",
+                "Lower the weight slowly to maximize muscle activation"
+            ],
+            "duration": 6,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "leg_extension",
+            "title": "Leg Extension for Quadriceps Strength",
+            "description": "Isolating the quadriceps for better knee stability and muscular balance.",
+            "bulletpoints": [
+                "Adjust seat so knees are aligned with the machine’s pivot point",
+                "Extend legs fully while keeping movements controlled",
+                "Avoid locking out knees at the top of the movement"
+            ],
+            "duration": 6,
+            "difficulty": "Beginner"
+        }
+    ]
+}

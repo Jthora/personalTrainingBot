@@ -1,0 +1,17 @@
+{
+    "id": "financial_crimes",
+    "name": "Financial Crimes",
+    "description": "Training in fraud detection, forensic accounting, and money laundering investigations.",
+    "difficulty": "Intermediate",
+    "estimated_time": "12-24 months",
+    "focus": [
+        "Fraud Detection",
+        "Forensic Accounting",
+        "Money Laundering Prevention"
+    ],
+    "cardDecks": [
+        "fraud_detection_techniques",
+        "financial_statement_analysis",
+        "money_laundering_patterns"
+    ]
+}

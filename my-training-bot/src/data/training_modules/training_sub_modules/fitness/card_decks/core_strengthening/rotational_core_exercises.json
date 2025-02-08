@@ -1,0 +1,35 @@
+{
+    "id": "rotational_core_exercises",
+    "name": "Rotational Core Exercises",
+    "description": "Improving core strength through twisting and rotational movements.",
+    "focus": [
+        "Lower Back Stability",
+        "Functional Strength"
+    ],
+    "cards": [
+        {
+            "id": "russian_twists",
+            "title": "Russian Twists for Oblique Strength",
+            "description": "A core rotation exercise targeting the obliques and overall core engagement.",
+            "bulletpoints": [
+                "Keep feet off the ground for added difficulty",
+                "Use a weighted ball or dumbbell for resistance",
+                "Maintain a controlled motion to avoid excessive twisting"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "cable_woodchoppers",
+            "title": "Cable Woodchoppers for Rotational Power",
+            "description": "Strengthening the core through controlled rotational movement.",
+            "bulletpoints": [
+                "Engage the core to drive the movement, not the arms",
+                "Use a slow, controlled tempo for better muscle activation",
+                "Perform both high-to-low and low-to-high variations"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

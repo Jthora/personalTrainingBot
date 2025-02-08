@@ -1,0 +1,35 @@
+{
+    "id": "threat_assessment",
+    "name": "Threat Assessment",
+    "description": "Evaluating individuals and situations to assess potential criminal threats.",
+    "focus": [
+        "Risk Evaluation",
+        "Threat Analysis"
+    ],
+    "cards": [
+        {
+            "id": "violence_risk_assessment",
+            "title": "Violence Risk Assessment",
+            "description": "Analyzing behavioral and environmental factors that contribute to violent crime.",
+            "bulletpoints": [
+                "Use threat matrices to classify individuals by risk level",
+                "Evaluate escalation indicators and stressors",
+                "Employ forensic psychology tools for predicting violent tendencies"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "geographic_profiling",
+            "title": "Geographic Profiling in Criminal Investigations",
+            "description": "Using location-based data to identify offender movement patterns.",
+            "bulletpoints": [
+                "Map crime scene locations to predict future activity",
+                "Analyze buffer zones and offender hunting patterns",
+                "Use GIS tools to narrow down suspect residency areas"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

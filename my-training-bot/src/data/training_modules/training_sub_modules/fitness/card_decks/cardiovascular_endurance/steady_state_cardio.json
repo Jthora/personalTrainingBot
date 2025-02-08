@@ -1,0 +1,35 @@
+{
+    "id": "steady_state_cardio",
+    "name": "Steady State Cardio",
+    "description": "Developing aerobic endurance through sustained, moderate-intensity cardiovascular exercise.",
+    "focus": [
+        "Aerobic Capacity",
+        "Heart Rate Optimization"
+    ],
+    "cards": [
+        {
+            "id": "long_distance_running",
+            "title": "Long-Distance Running for Aerobic Endurance",
+            "description": "Building stamina through extended running sessions at a steady pace.",
+            "bulletpoints": [
+                "Maintain a consistent pace to enhance cardiovascular efficiency",
+                "Monitor heart rate zones to optimize fat burning and endurance",
+                "Increase mileage gradually to avoid overtraining and injuries"
+            ],
+            "duration": 30,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "low_impact_cardio",
+            "title": "Low-Impact Cardio for Sustainable Training",
+            "description": "Using alternative aerobic exercises to reduce joint strain while maintaining endurance.",
+            "bulletpoints": [
+                "Engage in brisk walking, elliptical training, or swimming for low-impact endurance",
+                "Maintain a steady heart rate within the aerobic training zone",
+                "Gradually increase session duration to build long-term stamina"
+            ],
+            "duration": 40,
+            "difficulty": "Beginner"
+        }
+    ]
+}

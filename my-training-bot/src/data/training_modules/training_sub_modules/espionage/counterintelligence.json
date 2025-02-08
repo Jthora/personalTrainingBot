@@ -1,0 +1,17 @@
+{
+    "id": "counterintelligence",
+    "name": "Counterintelligence",
+    "description": "Training on identifying, neutralizing, and counteracting enemy intelligence operations.",
+    "difficulty": "Advanced",
+    "estimated_time": "24-36 months",
+    "focus": [
+        "Spy Detection",
+        "Double Agent Handling",
+        "Deception Tactics"
+    ],
+    "cardDecks": [
+        "spy_identification",
+        "double_agent_management",
+        "disinformation_strategies"
+    ]
+}

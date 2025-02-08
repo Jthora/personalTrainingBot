@@ -1,0 +1,13 @@
+{
+    "id": "espionage",
+    "name": "Espionage",
+    "description": "Training modules covering the art of intelligence gathering, deception, and covert operations.",
+    "submodules": [
+        "covert_operations",
+        "counterintelligence",
+        "tradecraft",
+        "clandestine_surveillance",
+        "disguise_and_identity",
+        "psychological_manipulation"
+    ]
+}

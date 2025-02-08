@@ -1,0 +1,17 @@
+{
+    "id": "combat_scenario_simulation",
+    "name": "Combat Scenario Simulation",
+    "description": "Realistic combat simulations for skill application and tactical decision-making.",
+    "difficulty": "Advanced",
+    "estimated_time": "12-36 months",
+    "focus": [
+        "Situational Awareness",
+        "Split-Second Decision Making",
+        "High-Intensity Combat Training"
+    ],
+    "cardDecks": [
+        "high_stress_drills",
+        "live_fire_simulations",
+        "mission_based_training"
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": "olympic_lifting_basics",
+    "name": "Olympic Lifting Basics",
+    "description": "Fundamentals of Olympic weightlifting for explosive power and athletic performance.",
+    "focus": [
+        "Power Development",
+        "Explosive Strength"
+    ],
+    "cards": [
+        {
+            "id": "snatch_technique",
+            "title": "Snatch Technique & Progressions",
+            "description": "Mastering the snatch movement for maximum power output.",
+            "bulletpoints": [
+                "Focus on triple extension for explosive movement",
+                "Develop mobility in shoulders and hips for better lift mechanics",
+                "Break down the snatch into pull, turnover, and receiving positions"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "clean_and_jerk",
+            "title": "Clean & Jerk Fundamentals",
+            "description": "Building strength and coordination through proper clean and jerk technique.",
+            "bulletpoints": [
+                "Improve front squat positioning for a stronger clean",
+                "Develop upper-body power for an efficient jerk phase",
+                "Refine bar path and grip to enhance lifting efficiency"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": "spy_tradecraft",
+    "name": "Spy Tradecraft",
+    "description": "Core espionage skills including deception, disguise, and clandestine communication.",
+    "focus": [
+        "Deception Tactics",
+        "Operational Security"
+    ],
+    "cards": [
+        {
+            "id": "legend_building",
+            "title": "Legend Building",
+            "description": "Creating and maintaining false identities for deep cover operations.",
+            "bulletpoints": [
+                "Develop detailed backstories",
+                "Memorize false credentials",
+                "Practice consistent mannerisms"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "dead_drops",
+            "title": "Dead Drops & Secure Communications",
+            "description": "Using hidden drop locations for safe, anonymous intelligence exchange.",
+            "bulletpoints": [
+                "Select inconspicuous locations",
+                "Use one-time codes for retrieval",
+                "Ensure minimal exposure to counterintelligence"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

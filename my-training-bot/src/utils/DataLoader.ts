@@ -1,5 +1,3 @@
-import fs from "fs";
-import path from "path";
 import { TrainingModule } from "../types/TrainingModule";
 import { TrainingSubModule } from "../types/TrainingSubModule";
 import { CardDeck } from "../types/CardDeck";
@@ -8,13 +6,15 @@ import TrainingModuleCache from "../cache/TrainingModuleCache";
 import { TrainingModuleReference } from "../types/TrainingModuleReference";
 
 class DataLoader {
-    private dataPath = path.join(__dirname, "../data");
+    private dataPath = "/src/data";
 
     // Load all data and cache it
     async loadAllData() {
         try {
+            console.log("Starting to load all data...");
             const trainingModules = await this.loadTrainingModules();
             TrainingModuleCache.getInstance().loadData(trainingModules);
+            console.log("Successfully loaded and cached all data.");
         } catch (error) {
             console.error("Failed to load all data:", error);
         }
@@ -22,16 +22,24 @@ class DataLoader {
 
     // Load training modules from JSON files
     async loadTrainingModules(): Promise<TrainingModule[]> {
-        const modulesPath = path.join(this.dataPath, "training_modules.json");
+        const modulesPath = `${this.dataPath}/training_modules.json`;
         let data;
         try {
-            // Read and parse the main training modules JSON file
-            data = JSON.parse(fs.readFileSync(modulesPath, "utf-8"));
-        } catch (error) {
-            console.error(`Failed to read or parse ${modulesPath}:`, error);
-            if (error instanceof Error) {
-                throw new Error(`Could not load training modules: ${error.message}`);
+            console.log(`Fetching training modules from ${modulesPath}...`);
+            // Fetch and parse the main training modules JSON file
+            const response = await fetch(modulesPath);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
             }
+            data = await response.json();
+            console.log("Successfully fetched and parsed training modules JSON.");
+        } catch (error) {
+            console.error(`Failed to fetch or parse ${modulesPath}:`, error);
+            throw new Error(`Could not load training modules: ${error.message}`);
+        }
+
+        if (!data || !data.modules) {
+            throw new Error("Invalid data format: 'modules' field is missing.");
         }
 
         const trainingModules: TrainingModule[] = [];
@@ -39,22 +47,40 @@ class DataLoader {
         // Iterate over each module reference in the main JSON file
         for (const moduleRef of data.modules as TrainingModuleReference[]) {
             try {
-                const modulePath = path.join(this.dataPath, "training_modules", `${moduleRef.id}.json`);
-                const moduleData = JSON.parse(fs.readFileSync(modulePath, "utf-8"));
+                const modulePath = `${this.dataPath}/training_modules/${moduleRef.id}.json`;
+                console.log(`Fetching training module from ${modulePath}...`);
+                const moduleResponse = await fetch(modulePath);
+                if (!moduleResponse.ok) {
+                    throw new Error(`HTTP error! status: ${moduleResponse.status}`);
+                }
+                const moduleData = await moduleResponse.json();
+                console.log(`Successfully fetched and parsed training module ${moduleRef.id}.`);
 
                 // Load submodules for each training module
                 const subModules: TrainingSubModule[] = await Promise.all(
                     moduleData.submodules.map(async (subModuleId: string) => {
                         try {
-                            const subModulePath = path.join(this.dataPath, "training_modules", "training_sub_modules", `${subModuleId}.json`);
-                            const subModuleData = JSON.parse(fs.readFileSync(subModulePath, "utf-8"));
+                            const subModulePath = `${this.dataPath}/training_modules/training_sub_modules/${subModuleId}.json`;
+                            console.log(`Fetching submodule from ${subModulePath}...`);
+                            const subModuleResponse = await fetch(subModulePath);
+                            if (!subModuleResponse.ok) {
+                                throw new Error(`HTTP error! status: ${subModuleResponse.status}`);
+                            }
+                            const subModuleData = await subModuleResponse.json();
+                            console.log(`Successfully fetched and parsed submodule ${subModuleId}.`);
 
                             // Load card decks for each submodule
                             const cardDecks: CardDeck[] = await Promise.all(
                                 subModuleData.cardDecks.map(async (deckId: string) => {
                                     try {
-                                        const deckPath = path.join(this.dataPath, "training_modules", "card_decks", `${deckId}.json`);
-                                        const deckData = JSON.parse(fs.readFileSync(deckPath, "utf-8"));
+                                        const deckPath = `${this.dataPath}/training_modules/card_decks/${deckId}.json`;
+                                        console.log(`Fetching card deck from ${deckPath}...`);
+                                        const deckResponse = await fetch(deckPath);
+                                        if (!deckResponse.ok) {
+                                            throw new Error(`HTTP error! status: ${deckResponse.status}`);
+                                        }
+                                        const deckData = await deckResponse.json();
+                                        console.log(`Successfully fetched and parsed card deck ${deckId}.`);
                                         return {
                                             id: deckData.id,
                                             name: deckData.name,

@@ -1,0 +1,35 @@
+{
+    "id": "vehicle_tailing",
+    "name": "Vehicle Tailing",
+    "description": "Methods for tracking a target by car while avoiding counter-surveillance detection.",
+    "focus": [
+        "Vehicle Tracking",
+        "Route Analysis"
+    ],
+    "cards": [
+        {
+            "id": "covert_following",
+            "title": "Covert Following & Route Analysis",
+            "description": "Tail a target’s vehicle while maintaining proper distance and avoiding detection.",
+            "bulletpoints": [
+                "Use three-car rule for minimizing suspicion",
+                "Vary routes and speeds to match traffic flow",
+                "Anticipate sudden turns and stops to maintain coverage"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mobile_surveillance_switching",
+            "title": "Mobile Surveillance Switching",
+            "description": "Handing off the target between multiple vehicles to avoid counter-surveillance detection.",
+            "bulletpoints": [
+                "Use staggered positions to seamlessly switch cars",
+                "Coordinate with aerial and ground support",
+                "Deploy decoy vehicles to mislead the target"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

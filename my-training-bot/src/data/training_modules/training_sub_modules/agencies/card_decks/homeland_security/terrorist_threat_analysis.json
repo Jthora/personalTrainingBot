@@ -1,0 +1,35 @@
+{
+    "id": "terrorist_threat_analysis",
+    "name": "Terrorist Threat Analysis",
+    "description": "Identifying and assessing potential terrorist threats through intelligence and behavioral analysis.",
+    "focus": [
+        "Threat Detection",
+        "Behavioral Profiling"
+    ],
+    "cards": [
+        {
+            "id": "radicalization_indicators",
+            "title": "Identifying Radicalization Indicators",
+            "description": "Understanding behavioral and ideological markers associated with terrorist recruitment.",
+            "bulletpoints": [
+                "Analyze social media activity for extremist rhetoric",
+                "Identify recruitment patterns and radicalization pipelines",
+                "Monitor changes in behavioral and financial activities"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "explosive_device_recognition",
+            "title": "Explosive Device Recognition",
+            "description": "Recognizing common IED components and understanding terrorist attack methodologies.",
+            "bulletpoints": [
+                "Identify chemical precursors and suspicious purchases",
+                "Analyze past attack case studies for threat modeling",
+                "Understand bomb-making techniques used by terrorist cells"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

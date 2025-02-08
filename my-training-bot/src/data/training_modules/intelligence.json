@@ -1,0 +1,13 @@
+{
+    "id": "intelligence",
+    "name": "Intelligence",
+    "description": "Training on intelligence analysis, prediction models, and global strategy.",
+    "submodules": [
+        "intelligence_analysis",
+        "open_source_intelligence",
+        "strategic_forecasting",
+        "cyber_intelligence",
+        "linguistic_analysis",
+        "behavioral_profiling"
+    ]
+}

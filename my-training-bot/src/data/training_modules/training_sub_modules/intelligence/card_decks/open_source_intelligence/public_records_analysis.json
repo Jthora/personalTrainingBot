@@ -1,0 +1,35 @@
+{
+    "id": "public_records_analysis",
+    "name": "Public Records Analysis",
+    "description": "Using government, corporate, and public databases for intelligence gathering.",
+    "focus": [
+        "Public Database Research",
+        "Legal and Corporate Intelligence"
+    ],
+    "cards": [
+        {
+            "id": "corporate_research",
+            "title": "Corporate Research and Business Intelligence",
+            "description": "Investigating businesses, financials, and corporate relationships.",
+            "bulletpoints": [
+                "Use tools like OpenCorporates and SEC EDGAR for corporate lookups",
+                "Analyze financial reports and SEC filings for hidden risks",
+                "Track shell companies and money laundering operations"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "government_database_access",
+            "title": "Government and Legal Database Access",
+            "description": "Extracting intelligence from public records and government databases.",
+            "bulletpoints": [
+                "Use FOIA (Freedom of Information Act) requests for legal intelligence",
+                "Search court records, patent filings, and land registry databases",
+                "Leverage electoral rolls and leaked government databases for investigations"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

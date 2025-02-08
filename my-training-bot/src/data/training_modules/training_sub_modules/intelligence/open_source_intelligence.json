@@ -1,0 +1,17 @@
+{
+    "id": "open_source_intelligence",
+    "name": "Open Source Intelligence (OSINT)",
+    "description": "Techniques for gathering intelligence from publicly available sources, including social media, databases, and news.",
+    "difficulty": "Intermediate",
+    "estimated_time": "12-24 months",
+    "focus": [
+        "Web Scraping",
+        "Social Media Analysis",
+        "Public Database Research"
+    ],
+    "cardDecks": [
+        "osint_tools_and_methods",
+        "social_media_monitoring",
+        "public_records_analysis"
+    ]
+}

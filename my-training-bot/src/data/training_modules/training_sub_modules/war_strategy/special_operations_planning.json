@@ -1,0 +1,17 @@
+{
+    "id": "special_operations_planning",
+    "name": "Special Operations Planning",
+    "description": "Advanced planning and execution of covert and high-risk military operations.",
+    "difficulty": "Advanced",
+    "estimated_time": "24-48 months",
+    "focus": [
+        "Covert Missions",
+        "Counter-Terrorism",
+        "Tactical Extraction"
+    ],
+    "cardDecks": [
+        "mission_planning_and_execution",
+        "covert_infiltration_methods",
+        "extraction_and_escape_tactics"
+    ]
+}

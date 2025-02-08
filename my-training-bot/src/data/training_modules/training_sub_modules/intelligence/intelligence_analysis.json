@@ -1,0 +1,17 @@
+{
+    "id": "intelligence_analysis",
+    "name": "Intelligence Analysis",
+    "description": "Training on processing and analyzing raw intelligence data to extract actionable insights.",
+    "difficulty": "Advanced",
+    "estimated_time": "24-36 months",
+    "focus": [
+        "Critical Thinking",
+        "Pattern Recognition",
+        "Threat Assessment"
+    ],
+    "cardDecks": [
+        "data_collection_methods",
+        "threat_assessment_models",
+        "predictive_analysis"
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": "kettlebell_workouts",
+    "name": "Kettlebell Workouts",
+    "description": "Developing functional strength and movement efficiency using kettlebell exercises.",
+    "focus": [
+        "Movement Mechanics",
+        "Multi-Planar Training"
+    ],
+    "cards": [
+        {
+            "id": "kettlebell_swings",
+            "title": "Kettlebell Swings for Explosive Power",
+            "description": "A powerful hip-hinge movement that builds explosive strength and endurance.",
+            "bulletpoints": [
+                "Engage the hips and core to generate momentum",
+                "Keep the back straight and avoid excessive knee bending",
+                "Use a controlled motion to maintain efficiency and safety"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "turkish_get_up",
+            "title": "Turkish Get-Up for Full-Body Control",
+            "description": "A complex movement requiring coordination, stability, and strength.",
+            "bulletpoints": [
+                "Maintain a strong grip on the kettlebell throughout the movement",
+                "Follow a step-by-step approach to ensure controlled execution",
+                "Use lighter weights initially to focus on technique"
+            ],
+            "duration": 8,
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "id": "threat_intelligence",
+    "name": "Threat Intelligence",
+    "description": "Gathering and analyzing intelligence on cyber threats and adversary tactics.",
+    "difficulty": "Intermediate",
+    "estimated_time": "12-24 months",
+    "focus": [
+        "Cyber Threat Analysis",
+        "Adversary Profiling",
+        "Cyber Kill Chain Tactics"
+    ],
+    "cardDecks": [
+        "osint_for_cyber_threats",
+        "dark_web_monitoring",
+        "incident_response_intelligence"
+    ]
+}

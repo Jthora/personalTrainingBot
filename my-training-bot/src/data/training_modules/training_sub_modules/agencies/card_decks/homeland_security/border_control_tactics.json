@@ -1,0 +1,35 @@
+{
+    "id": "border_control_tactics",
+    "name": "Border Control Tactics",
+    "description": "Strategies for monitoring, securing, and managing border operations to prevent illegal activities.",
+    "focus": [
+        "Border Surveillance",
+        "Smuggling Prevention"
+    ],
+    "cards": [
+        {
+            "id": "human_trafficking_detection",
+            "title": "Human Trafficking Detection",
+            "description": "Identifying and intercepting human trafficking operations at national borders.",
+            "bulletpoints": [
+                "Recognize signs of coerced and trafficked individuals",
+                "Utilize biometric and database matching for identity verification",
+                "Work with international agencies to disrupt trafficking networks"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "drug_smuggling_prevention",
+            "title": "Drug Smuggling Prevention",
+            "description": "Detecting and intercepting illegal narcotics transported across borders.",
+            "bulletpoints": [
+                "Identify concealment methods used in drug smuggling",
+                "Use canine units and chemical detection systems",
+                "Implement predictive analytics for trafficking patterns"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

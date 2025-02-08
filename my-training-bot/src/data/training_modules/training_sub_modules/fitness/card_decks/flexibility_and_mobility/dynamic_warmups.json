@@ -1,0 +1,35 @@
+{
+    "id": "dynamic_warmups",
+    "name": "Dynamic Warmups",
+    "description": "Preparing the body for movement by increasing blood flow and joint mobility.",
+    "focus": [
+        "Joint Mobility",
+        "Injury Prevention"
+    ],
+    "cards": [
+        {
+            "id": "leg_swings",
+            "title": "Leg Swings for Hip Mobility",
+            "description": "Increasing hip range of motion through controlled leg swings.",
+            "bulletpoints": [
+                "Perform front-to-back and side-to-side swings",
+                "Engage the core to maintain balance",
+                "Start with small swings and gradually increase range"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "arm_circles",
+            "title": "Arm Circles for Shoulder Mobility",
+            "description": "Warming up the shoulders with circular movements.",
+            "bulletpoints": [
+                "Perform small, medium, and large circles in both directions",
+                "Keep arms extended to maximize stretch",
+                "Increase speed gradually to activate muscles"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        }
+    ]
+}

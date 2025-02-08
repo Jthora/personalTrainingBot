@@ -1,0 +1,35 @@
+{
+    "id": "cause_of_death_forensics",
+    "name": "Cause of Death Forensics",
+    "description": "Examining forensic evidence to determine cause, manner, and time of death.",
+    "focus": [
+        "Forensic Pathology",
+        "Toxicology Analysis"
+    ],
+    "cards": [
+        {
+            "id": "autopsy_procedures",
+            "title": "Autopsy Procedures & Forensic Pathology",
+            "description": "Step-by-step analysis of human remains to determine cause of death.",
+            "bulletpoints": [
+                "Perform external and internal examinations on remains",
+                "Analyze organ damage, wound patterns, and trauma indicators",
+                "Document findings for use in legal proceedings"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "toxicology_reports",
+            "title": "Toxicology Reports & Poisoning Investigations",
+            "description": "Identifying toxins, drugs, and other substances in homicide investigations.",
+            "bulletpoints": [
+                "Use forensic chemistry to detect poisons and overdose substances",
+                "Analyze blood and tissue samples for chemical traces",
+                "Correlate toxicology findings with cause and manner of death"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

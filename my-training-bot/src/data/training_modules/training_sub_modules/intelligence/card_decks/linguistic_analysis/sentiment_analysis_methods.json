@@ -1,0 +1,35 @@
+{
+    "id": "sentiment_analysis_methods",
+    "name": "Sentiment Analysis Methods",
+    "description": "Techniques for determining the emotional tone and intent behind communications.",
+    "focus": [
+        "Sentiment Analysis",
+        "Psycholinguistics"
+    ],
+    "cards": [
+        {
+            "id": "emotion_detection",
+            "title": "Emotion Detection in Text and Speech",
+            "description": "Using linguistic cues to infer emotions and psychological states.",
+            "bulletpoints": [
+                "Identify affective markers in written and spoken language",
+                "Distinguish between genuine and exaggerated emotional expressions",
+                "Utilize NLP models for automated emotion classification"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "social_media_sentiment",
+            "title": "Social Media Sentiment Analysis",
+            "description": "Tracking public opinion and political movements through sentiment trends.",
+            "bulletpoints": [
+                "Use AI tools to measure sentiment shifts in real-time",
+                "Monitor narratives in mass communication platforms",
+                "Correlate sentiment changes with geopolitical events"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

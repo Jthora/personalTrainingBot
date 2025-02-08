@@ -1,0 +1,35 @@
+{
+    "id": "financial_fraud_detection",
+    "name": "Financial Fraud Detection",
+    "description": "Investigating fraudulent financial transactions and identifying money laundering activities.",
+    "focus": [
+        "Forensic Accounting",
+        "Cyber Fraud Prevention"
+    ],
+    "cards": [
+        {
+            "id": "fake_currency_detection",
+            "title": "Counterfeit Currency Detection",
+            "description": "Techniques for identifying and intercepting counterfeit currency.",
+            "bulletpoints": [
+                "Analyze security features in legal tender",
+                "Use UV scanning and microprint detection techniques",
+                "Track illegal printing operations and distribution networks"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "forensic_accounting_investigations",
+            "title": "Forensic Accounting Investigations",
+            "description": "Tracing illicit financial activities through forensic auditing.",
+            "bulletpoints": [
+                "Analyze financial statements for irregularities",
+                "Identify shell companies and fraudulent bookkeeping",
+                "Work with international agencies on cross-border fraud cases"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": "single_leg_stability_drills",
+    "name": "Single-Leg Stability Drills",
+    "description": "Improving unilateral balance and coordination for injury prevention.",
+    "focus": [
+        "Stabilizer Muscle Activation",
+        "Joint Stability"
+    ],
+    "cards": [
+        {
+            "id": "single_leg_deadlifts",
+            "title": "Single-Leg Deadlifts for Balance & Strength",
+            "description": "Enhancing posterior chain strength and balance with single-leg deadlifts.",
+            "bulletpoints": [
+                "Maintain a neutral spine while hinging at the hips",
+                "Engage glutes and hamstrings for stability",
+                "Use light weights to improve control and coordination"
+            ],
+            "duration": 6,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "y_balance_test",
+            "title": "Y-Balance Test & Progression",
+            "description": "Assessing and improving dynamic balance and stability.",
+            "bulletpoints": [
+                "Use tape markers to measure reach distances in different directions",
+                "Improve lower body stability by strengthening weak movement patterns",
+                "Repeat tests periodically to track progress in balance"
+            ],
+            "duration": 7,
+            "difficulty": "Beginner"
+        }
+    ]
+}

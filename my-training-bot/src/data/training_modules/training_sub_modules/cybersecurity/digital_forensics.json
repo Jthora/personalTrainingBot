@@ -1,0 +1,17 @@
+{
+    "id": "digital_forensics",
+    "name": "Digital Forensics",
+    "description": "Techniques for analyzing and recovering digital evidence from cyber incidents.",
+    "difficulty": "Advanced",
+    "estimated_time": "24-48 months",
+    "focus": [
+        "Data Recovery",
+        "Network Packet Analysis",
+        "Cybercrime Investigation"
+    ],
+    "cardDecks": [
+        "forensic_image_analysis",
+        "malware_reversing",
+        "log_analysis_and_correlation"
+    ]
+}

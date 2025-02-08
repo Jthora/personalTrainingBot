@@ -1,0 +1,35 @@
+{
+    "id": "network_packet_analysis",
+    "name": "Network Packet Analysis",
+    "description": "Capturing and analyzing network traffic for forensic investigations.",
+    "focus": [
+        "Network Forensics",
+        "Intrusion Detection"
+    ],
+    "cards": [
+        {
+            "id": "packet_capture",
+            "title": "Packet Capture and Traffic Analysis",
+            "description": "Using network monitoring tools to analyze suspicious activity.",
+            "bulletpoints": [
+                "Capture and inspect packets using Wireshark and tcpdump",
+                "Identify malicious payloads in network traffic",
+                "Analyze protocol anomalies and encrypted communications"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "intrusion_detection",
+            "title": "Intrusion Detection and Threat Hunting",
+            "description": "Detecting and analyzing cyber threats through network activity.",
+            "bulletpoints": [
+                "Use Snort and Suricata to detect network intrusions",
+                "Analyze DNS tunneling and covert communication channels",
+                "Correlate network logs with endpoint forensic data"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

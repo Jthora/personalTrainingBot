@@ -1,0 +1,17 @@
+{
+    "id": "tactical_movement",
+    "name": "Tactical Movement",
+    "description": "Training in battlefield positioning, cover usage, and movement under fire.",
+    "difficulty": "Intermediate",
+    "estimated_time": "12-24 months",
+    "focus": [
+        "Cover and Concealment",
+        "Squad Movement",
+        "Evasion Techniques"
+    ],
+    "cardDecks": [
+        "fire_and_maneuver",
+        "urban_combat_movement",
+        "cover_usage_tactics"
+    ]
+}

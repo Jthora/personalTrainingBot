@@ -1,0 +1,17 @@
+{
+    "id": "calisthenics",
+    "name": "Calisthenics",
+    "description": "Bodyweight exercises designed to build strength, endurance, and functional fitness.",
+    "difficulty": "Intermediate",
+    "estimated_time": "6-24 months",
+    "focus": [
+        "Bodyweight Strength",
+        "Functional Movement",
+        "Endurance Training"
+    ],
+    "cardDecks": [
+        "pushup_variations",
+        "pullup_and_dip_training",
+        "bodyweight_leg_workouts"
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": "tai_chi_sequences",
+    "name": "Tai Chi Sequences",
+    "description": "Slow, deliberate movements designed to cultivate balance, coordination, and internal energy.",
+    "focus": [
+        "Controlled Breathing",
+        "Neuromuscular Connection"
+    ],
+    "cards": [
+        {
+            "id": "silk_reeling",
+            "title": "Silk Reeling for Flow and Coordination",
+            "description": "A foundational Tai Chi movement that enhances joint mobility and energy flow.",
+            "bulletpoints": [
+                "Perform smooth, circular arm movements",
+                "Maintain relaxed but upright posture",
+                "Focus on deep, controlled breathing"
+            ],
+            "duration": 7,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "yang_24_form",
+            "title": "Yang 24-Form Tai Chi Sequence",
+            "description": "A simplified Tai Chi form emphasizing slow, controlled transitions.",
+            "bulletpoints": [
+                "Move through 24 structured positions with fluidity",
+                "Maintain a stable stance and relaxed shoulders",
+                "Focus on mindfulness and breath synchronization"
+            ],
+            "duration": 12,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": "criminal_behavior_analysis",
+    "name": "Criminal Behavior Analysis",
+    "description": "Techniques for analyzing criminal behavior and psychological motivations.",
+    "focus": [
+        "Psychological Profiling",
+        "Criminal Mindset"
+    ],
+    "cards": [
+        {
+            "id": "deception_patterns",
+            "title": "Deception Patterns in Criminal Behavior",
+            "description": "Identifying lies, inconsistencies, and deceptive behaviors in suspects.",
+            "bulletpoints": [
+                "Analyze microexpressions and body language for deception",
+                "Use linguistic cues to detect inconsistencies in statements",
+                "Apply cognitive load techniques to expose lies"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "serial_offender_traits",
+            "title": "Traits of Serial Offenders & Recidivists",
+            "description": "Examining patterns of repeat offenders and serial criminals.",
+            "bulletpoints": [
+                "Profile the psychological motivators of serial offenders",
+                "Differentiate between organized and disorganized criminal behavior",
+                "Use behavioral pattern recognition for threat prediction"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

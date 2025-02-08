@@ -1,0 +1,35 @@
+{
+    "id": "plyometric_workouts",
+    "name": "Plyometric Workouts",
+    "description": "Building explosive power and agility through jump-based exercises.",
+    "focus": [
+        "Acceleration",
+        "Explosive Power"
+    ],
+    "cards": [
+        {
+            "id": "box_jumps",
+            "title": "Box Jumps for Explosive Leg Power",
+            "description": "Enhancing lower-body explosiveness with controlled box jumps.",
+            "bulletpoints": [
+                "Use a sturdy box or platform at an appropriate height",
+                "Engage core and arms to propel upward",
+                "Land softly with knees slightly bent to absorb impact"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "depth_jumps",
+            "title": "Depth Jumps for Maximum Power Output",
+            "description": "Developing reactive power and explosive takeoff ability.",
+            "bulletpoints": [
+                "Step off a platform and immediately explode into a vertical jump",
+                "Minimize ground contact time for better power transfer",
+                "Engage calves, quads, and glutes for maximum lift"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

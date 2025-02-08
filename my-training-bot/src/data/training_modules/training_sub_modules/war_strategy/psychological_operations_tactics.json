@@ -1,0 +1,17 @@
+{
+    "id": "psychological_operations_tactics",
+    "name": "Psychological Operations Tactics",
+    "description": "Using psychological influence to gain strategic advantages in warfare.",
+    "difficulty": "Advanced",
+    "estimated_time": "18-36 months",
+    "focus": [
+        "Propaganda Warfare",
+        "PsyOps Influence Tactics",
+        "Psychological Deterrence"
+    ],
+    "cardDecks": [
+        "influence_campaigns",
+        "covert_psychological_warfare",
+        "counter_psyops_strategies"
+    ]
+}

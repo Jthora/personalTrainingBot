@@ -1,0 +1,35 @@
+{
+    "id": "money_laundering_patterns",
+    "name": "Money Laundering Patterns",
+    "description": "Techniques used to track and prevent the illegal movement of funds.",
+    "focus": [
+        "Money Laundering Prevention",
+        "Transaction Monitoring"
+    ],
+    "cards": [
+        {
+            "id": "structuring_smurfing",
+            "title": "Structuring and Smurfing Detection",
+            "description": "Identifying small, structured transactions used to launder money.",
+            "bulletpoints": [
+                "Monitor cash deposits below reporting thresholds",
+                "Identify multiple accounts linked to the same entity",
+                "Analyze transaction frequency and timing for laundering indicators"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "crypto_laundering",
+            "title": "Cryptocurrency Money Laundering",
+            "description": "Investigating illicit financial activity within blockchain transactions.",
+            "bulletpoints": [
+                "Track cryptocurrency wallets linked to illicit activities",
+                "Analyze blockchain transactions for laundering patterns",
+                "Use forensic tools to trace funds across multiple exchanges"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

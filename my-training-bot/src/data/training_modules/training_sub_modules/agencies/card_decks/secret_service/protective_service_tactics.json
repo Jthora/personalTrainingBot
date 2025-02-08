@@ -1,0 +1,35 @@
+{
+    "id": "protective_service_tactics",
+    "name": "Protective Service Tactics",
+    "description": "Strategies and techniques for VIP and dignitary protection in high-risk environments.",
+    "focus": [
+        "Close Protection",
+        "Threat Neutralization"
+    ],
+    "cards": [
+        {
+            "id": "advance_security_planning",
+            "title": "Advance Security Planning",
+            "description": "Developing detailed security protocols and contingency plans before a protective mission.",
+            "bulletpoints": [
+                "Conduct site assessments and vulnerability analyses",
+                "Plan primary and secondary evacuation routes",
+                "Coordinate security teams for seamless operations"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "protective_formation_drills",
+            "title": "Protective Formation Drills",
+            "description": "Executing defensive formations and response tactics during a live security threat.",
+            "bulletpoints": [
+                "Utilize diamond and wedge formations for optimal coverage",
+                "React dynamically to evolving threats",
+                "Manage crowd control and civilian safety under pressure"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

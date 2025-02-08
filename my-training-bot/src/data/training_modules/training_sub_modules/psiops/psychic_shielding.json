@@ -1,0 +1,17 @@
+{
+    "id": "psychic_shielding",
+    "name": "Psychic Shielding",
+    "description": "Defensive techniques for protecting the mind from external psychic attacks and manipulations.",
+    "difficulty": "Intermediate to Advanced",
+    "estimated_time": "12-24 months",
+    "focus": [
+        "Mental Resilience",
+        "Shielding Techniques",
+        "Countering Psychic Attacks"
+    ],
+    "cardDecks": [
+        "mental_fortress_building",
+        "energy_barriers",
+        "anti_psychic_countermeasures"
+    ]
+}

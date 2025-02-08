@@ -1,0 +1,17 @@
+{
+    "id": "fbi_training",
+    "name": "FBI Training",
+    "description": "Federal Bureau of Investigation training on criminal investigations, profiling, and forensic analysis.",
+    "difficulty": "Advanced",
+    "estimated_time": "36 months",
+    "focus": [
+        "Criminal Profiling",
+        "Cybercrime Investigation",
+        "Counterterrorism"
+    ],
+    "cardDecks": [
+        "criminal_profiling_methods",
+        "forensic_analysis",
+        "cyber_fraud_detection"
+    ]
+}

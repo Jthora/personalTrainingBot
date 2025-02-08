@@ -1,0 +1,13 @@
+{
+    "id": "war_strategy",
+    "name": "War Strategy",
+    "description": "Strategic military planning, battlefield tactics, and intelligence operations for modern warfare.",
+    "submodules": [
+        "military_strategy",
+        "asymmetric_warfare",
+        "geopolitical_analysis",
+        "special_operations_planning",
+        "psychological_operations_tactics",
+        "cyber_warfare_strategy"
+    ]
+}

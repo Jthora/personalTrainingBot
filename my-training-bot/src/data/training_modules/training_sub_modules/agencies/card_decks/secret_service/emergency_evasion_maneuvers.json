@@ -1,0 +1,35 @@
+{
+    "id": "emergency_evasion_maneuvers",
+    "name": "Emergency Evasion Maneuvers",
+    "description": "High-speed escape and defensive driving techniques for emergency situations.",
+    "focus": [
+        "Evasive Driving",
+        "High-Risk Escape Tactics"
+    ],
+    "cards": [
+        {
+            "id": "high_speed_escape_drills",
+            "title": "High-Speed Escape Drills",
+            "description": "Executing rapid escape maneuvers to evade potential threats.",
+            "bulletpoints": [
+                "Perform J-turns, PIT maneuvers, and evasive acceleration techniques",
+                "Utilize cover and concealment during high-risk pursuits",
+                "React dynamically to hostile vehicle threats"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "defensive_countermeasures",
+            "title": "Defensive Countermeasures in Close Quarters",
+            "description": "Applying defensive techniques in confined and high-stress situations.",
+            "bulletpoints": [
+                "Utilize emergency barricading strategies",
+                "Evade attackers using close-quarters movement",
+                "Deploy tactical response measures to neutralize immediate threats"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

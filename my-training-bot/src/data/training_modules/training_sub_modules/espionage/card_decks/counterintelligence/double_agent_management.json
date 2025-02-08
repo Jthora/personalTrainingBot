@@ -1,0 +1,35 @@
+{
+    "id": "double_agent_management",
+    "name": "Double Agent Management",
+    "description": "Techniques for handling and controlling double agents to feed misinformation or neutralize threats.",
+    "focus": [
+        "Double Agent Handling",
+        "Counterespionage"
+    ],
+    "cards": [
+        {
+            "id": "identifying_double_agents",
+            "title": "Identifying and Vetting Double Agents",
+            "description": "Assessing the reliability and loyalty of an operative suspected of being a double agent.",
+            "bulletpoints": [
+                "Implement controlled exposure tests to confirm loyalties",
+                "Analyze inconsistencies in mission reports",
+                "Monitor for unauthorized contacts with hostile intelligence agencies"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "feeding_misinformation",
+            "title": "Feeding Misinformation to Double Agents",
+            "description": "Using controlled leaks and deceptive intelligence to mislead adversaries.",
+            "bulletpoints": [
+                "Strategically release selective data to test information flow",
+                "Maintain plausible deniability for exposed operations",
+                "Use fabricated scenarios to divert adversarial resources"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

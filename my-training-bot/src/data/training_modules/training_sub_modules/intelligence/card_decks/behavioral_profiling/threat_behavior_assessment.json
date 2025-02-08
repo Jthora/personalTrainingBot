@@ -1,0 +1,35 @@
+{
+    "id": "threat_behavior_assessment",
+    "name": "Threat Behavior Assessment",
+    "description": "Assessing behavioral indicators of potential security threats and violent actors.",
+    "focus": [
+        "Threat Prediction",
+        "Risk Assessment"
+    ],
+    "cards": [
+        {
+            "id": "pre_attack_indicators",
+            "title": "Pre-Attack Indicators & Behavioral Cues",
+            "description": "Recognizing signs of impending violent or terrorist activity.",
+            "bulletpoints": [
+                "Analyze shifts in routine behaviors and erratic movements",
+                "Detect radicalization and extremist ideologies through speech patterns",
+                "Assess last-minute changes in financial transactions and communications"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "workplace_and_public_threats",
+            "title": "Workplace & Public Space Threat Assessments",
+            "description": "Identifying and mitigating threats in civilian and organizational environments.",
+            "bulletpoints": [
+                "Evaluate employee behavioral changes for insider threats",
+                "Monitor public spaces for indicators of potential attacks",
+                "Coordinate predictive threat modeling with intelligence agencies"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

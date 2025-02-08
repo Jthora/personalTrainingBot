@@ -1,0 +1,17 @@
+{
+    "id": "forensic_investigation",
+    "name": "Forensic Investigation",
+    "description": "Techniques for crime scene analysis, evidence handling, and forensic science applications.",
+    "difficulty": "Advanced",
+    "estimated_time": "24-48 months",
+    "focus": [
+        "Crime Scene Analysis",
+        "Evidence Collection",
+        "DNA and Trace Analysis"
+    ],
+    "cardDecks": [
+        "crime_scene_processing",
+        "dna_and_fingerprint_analysis",
+        "forensic_lab_procedures"
+    ]
+}

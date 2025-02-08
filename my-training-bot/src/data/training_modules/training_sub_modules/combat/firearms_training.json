@@ -1,0 +1,17 @@
+{
+    "id": "firearms_training",
+    "name": "Firearms Training",
+    "description": "Weapons handling, marksmanship, and tactical shooting drills.",
+    "difficulty": "Advanced",
+    "estimated_time": "12-36 months",
+    "focus": [
+        "Weapon Handling",
+        "Marksmanship",
+        "Tactical Shooting"
+    ],
+    "cardDecks": [
+        "pistol_shooting_drills",
+        "rifle_tactics",
+        "close_range_shooting"
+    ]
+}

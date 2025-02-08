@@ -16,9 +16,10 @@ const Sidebar: React.FC = () => {
     return (
         <aside className={styles.sidebar}>
             {trainingModules.map(module => (
-                <div key={module.id} className={styles.moduleItem}>
-                    {module.name}
-                </div>
+                <button key={module.id} className={styles.moduleButton}>
+                    <img src={`/icons/${module.id}.png`} alt={module.name} className={styles.moduleIcon} />
+                    <span>{module.name}</span>
+                </button>
             ))}
         </aside>
     );

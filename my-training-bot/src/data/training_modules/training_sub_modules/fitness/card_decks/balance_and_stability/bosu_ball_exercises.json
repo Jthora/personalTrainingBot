@@ -1,0 +1,35 @@
+{
+    "id": "bosu_ball_exercises",
+    "name": "BOSU Ball Exercises",
+    "description": "Training stability and balance using BOSU ball drills.",
+    "focus": [
+        "Postural Control",
+        "Core Engagement"
+    ],
+    "cards": [
+        {
+            "id": "bosu_squats",
+            "title": "BOSU Squats & Lower Body Stability",
+            "description": "Strengthening lower body stability and proprioception using the BOSU ball.",
+            "bulletpoints": [
+                "Perform squats on a BOSU ball to challenge balance",
+                "Engage core muscles to maintain upright posture",
+                "Increase difficulty by adding weights or performing single-leg squats"
+            ],
+            "duration": 6,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "bosu_planks",
+            "title": "BOSU Planks & Core Activation",
+            "description": "Using the BOSU ball to enhance core stability and upper body balance.",
+            "bulletpoints": [
+                "Hold plank position on an inverted BOSU ball",
+                "Engage deep core muscles for postural stability",
+                "Progress by adding movement such as leg lifts or shoulder taps"
+            ],
+            "duration": 7,
+            "difficulty": "Beginner"
+        }
+    ]
+}

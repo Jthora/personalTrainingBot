@@ -1,0 +1,35 @@
+{
+    "id": "secure_messaging",
+    "name": "Secure Messaging",
+    "description": "Ensuring confidentiality and integrity in intelligence communications.",
+    "focus": [
+        "Secure Communications",
+        "Operational Security"
+    ],
+    "cards": [
+        {
+            "id": "one_time_pads",
+            "title": "One-Time Pads and Unbreakable Encryption",
+            "description": "Using disposable encryption keys for ultra-secure communication.",
+            "bulletpoints": [
+                "Understand the principles of perfect secrecy",
+                "Generate and distribute one-time pad keys securely",
+                "Apply OTP encryption and decryption techniques manually"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "burner_devices",
+            "title": "Burner Devices and Secure Channels",
+            "description": "Using disposable communication methods to avoid tracking and interception.",
+            "bulletpoints": [
+                "Select secure devices and operating systems",
+                "Deploy encrypted messaging platforms (Signal, Tails OS, ProtonMail)",
+                "Implement compartmentalization techniques to protect identity"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "id": "mind_body_fitness",
+    "name": "Mind-Body Fitness",
+    "description": "Enhancing mental resilience and body awareness through controlled movement and breathwork.",
+    "difficulty": "Beginner",
+    "estimated_time": "3-12 months",
+    "focus": [
+        "Mental Clarity",
+        "Controlled Breathing",
+        "Neuromuscular Connection"
+    ],
+    "cardDecks": [
+        "yoga_flows",
+        "tai_chi_sequences",
+        "breathwork_and_meditation"
+    ]
+}

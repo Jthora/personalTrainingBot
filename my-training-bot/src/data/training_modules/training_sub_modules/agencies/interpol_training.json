@@ -1,0 +1,17 @@
+{
+    "id": "interpol_training",
+    "name": "Interpol Training",
+    "description": "International law enforcement training covering cross-border criminal investigations and international law.",
+    "difficulty": "Intermediate",
+    "estimated_time": "12-24 months",
+    "focus": [
+        "International Law",
+        "Cross-Border Investigations",
+        "Organized Crime Tracking"
+    ],
+    "cardDecks": [
+        "international_law_basics",
+        "criminal_network_tracking",
+        "cross_border_smuggling_cases"
+    ]
+}

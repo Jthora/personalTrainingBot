@@ -1,0 +1,17 @@
+{
+    "id": "geopolitical_analysis",
+    "name": "Geopolitical Analysis",
+    "description": "Understanding the impact of global politics and economics on military strategies.",
+    "difficulty": "Intermediate",
+    "estimated_time": "12-36 months",
+    "focus": [
+        "International Relations",
+        "Economic Warfare",
+        "Military Diplomacy"
+    ],
+    "cardDecks": [
+        "global_conflict_trends",
+        "economic_sanctions_tactics",
+        "political_warfare_analysis"
+    ]
+}

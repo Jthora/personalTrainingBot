@@ -1,0 +1,35 @@
+{
+    "id": "strength_periodization",
+    "name": "Strength Periodization",
+    "description": "A structured training approach to progressively build strength over time.",
+    "focus": [
+        "Power Development",
+        "Progressive Overload"
+    ],
+    "cards": [
+        {
+            "id": "linear_progression",
+            "title": "Linear Progression for Strength Gains",
+            "description": "Gradually increasing weight over time to build muscle and power.",
+            "bulletpoints": [
+                "Start with manageable weights and increase weekly",
+                "Prioritize good form over rapid progress",
+                "Adjust workload based on fatigue levels"
+            ],
+            "duration": 7,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "deload_weeks",
+            "title": "Deload Weeks for Recovery and Growth",
+            "description": "Reducing intensity periodically to prevent overtraining and optimize gains.",
+            "bulletpoints": [
+                "Lower weights by 40-50% every 4-6 weeks",
+                "Maintain training frequency with reduced intensity",
+                "Allow muscles and joints to recover before resuming intensity"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

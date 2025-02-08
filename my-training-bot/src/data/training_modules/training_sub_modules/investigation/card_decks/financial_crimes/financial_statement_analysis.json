@@ -1,0 +1,35 @@
+{
+    "id": "financial_statement_analysis",
+    "name": "Financial Statement Analysis",
+    "description": "Examining corporate financial records for fraud, misrepresentation, and tax evasion.",
+    "focus": [
+        "Forensic Accounting",
+        "Data Analysis"
+    ],
+    "cards": [
+        {
+            "id": "forensic_auditing",
+            "title": "Forensic Auditing and Red Flag Indicators",
+            "description": "Identifying signs of fraud within corporate financial statements.",
+            "bulletpoints": [
+                "Analyze inconsistencies in balance sheets and income statements",
+                "Identify shell companies and fraudulent bookkeeping practices",
+                "Use forensic tools to cross-reference financial transactions"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "tax_evasion",
+            "title": "Tax Evasion and Financial Misconduct",
+            "description": "Investigating illegal tax avoidance schemes and fraudulent financial reporting.",
+            "bulletpoints": [
+                "Track offshore accounts used for tax evasion",
+                "Analyze false deductions and fraudulent tax returns",
+                "Collaborate with international agencies for financial compliance"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

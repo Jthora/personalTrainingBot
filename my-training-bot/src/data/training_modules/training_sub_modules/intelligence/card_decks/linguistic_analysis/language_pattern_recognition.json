@@ -1,0 +1,35 @@
+{
+    "id": "language_pattern_recognition",
+    "name": "Language Pattern Recognition",
+    "description": "Analyzing text and speech patterns to extract intelligence insights.",
+    "focus": [
+        "Natural Language Processing",
+        "Pattern Recognition"
+    ],
+    "cards": [
+        {
+            "id": "syntax_and_semantics",
+            "title": "Syntax and Semantics in Intelligence Analysis",
+            "description": "Understanding how structure and meaning shape communication in intelligence contexts.",
+            "bulletpoints": [
+                "Differentiate between syntax and semantic structures",
+                "Analyze grammatical markers for implicit meaning",
+                "Apply NLP tools to detect variations in speech patterns"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "topic_modeling",
+            "title": "Topic Modeling and Key Phrase Extraction",
+            "description": "Extracting core themes and identifying important keywords in text analysis.",
+            "bulletpoints": [
+                "Use TF-IDF and LDA for automated topic modeling",
+                "Identify high-frequency words and contextual phrases",
+                "Analyze sentiment-weighted keywords for deeper insights"
+            ],
+            "duration": 7,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

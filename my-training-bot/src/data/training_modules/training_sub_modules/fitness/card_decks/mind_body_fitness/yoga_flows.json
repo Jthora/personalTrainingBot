@@ -1,0 +1,35 @@
+{
+    "id": "yoga_flows",
+    "name": "Yoga Flows",
+    "description": "A series of controlled movements designed to improve flexibility, stability, and mindfulness.",
+    "focus": [
+        "Mental Clarity",
+        "Neuromuscular Connection"
+    ],
+    "cards": [
+        {
+            "id": "sun_salutation",
+            "title": "Sun Salutation Flow",
+            "description": "A foundational yoga sequence that enhances flexibility and promotes relaxation.",
+            "bulletpoints": [
+                "Perform a sequence of forward bends, lunges, and upward stretches",
+                "Synchronize breath with each movement",
+                "Complete 5-10 rounds to energize the body"
+            ],
+            "duration": 8,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "warrior_sequence",
+            "title": "Warrior Sequence for Strength and Stability",
+            "description": "A dynamic yoga flow that strengthens the lower body and improves balance.",
+            "bulletpoints": [
+                "Move through Warrior I, II, and III positions",
+                "Engage the core for better posture and control",
+                "Hold each position for a few breaths to deepen flexibility"
+            ],
+            "duration": 10,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

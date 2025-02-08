@@ -1,0 +1,17 @@
+{
+    "id": "covert_operations",
+    "name": "Covert Operations",
+    "description": "Training in executing undercover missions, infiltration, and sabotage tactics.",
+    "difficulty": "Advanced",
+    "estimated_time": "24-48 months",
+    "focus": [
+        "Undercover Infiltration",
+        "Sabotage Tactics",
+        "Operational Security"
+    ],
+    "cardDecks": [
+        "undercover_roles",
+        "covert_sabotage",
+        "escape_and_evasion"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "id": "criminal_profiling",
+    "name": "Criminal Profiling",
+    "description": "Training in psychological profiling, behavioral analysis, and offender pattern recognition.",
+    "difficulty": "Advanced",
+    "estimated_time": "24-36 months",
+    "focus": [
+        "Behavioral Analysis",
+        "Psychological Profiling",
+        "Offender Patterns"
+    ],
+    "cardDecks": [
+        "behavioral_profiling_methods",
+        "offender_typologies",
+        "threat_assessment"
+    ]
+}

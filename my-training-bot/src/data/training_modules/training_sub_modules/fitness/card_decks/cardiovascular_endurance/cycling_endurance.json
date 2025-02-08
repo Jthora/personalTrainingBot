@@ -1,0 +1,35 @@
+{
+    "id": "cycling_endurance",
+    "name": "Cycling Endurance",
+    "description": "Building aerobic endurance and lower body strength through cycling-based workouts.",
+    "focus": [
+        "Aerobic Capacity",
+        "Leg Strength"
+    ],
+    "cards": [
+        {
+            "id": "long_ride_endurance",
+            "title": "Long Ride Endurance Training",
+            "description": "Cycling at a moderate pace for extended periods to improve aerobic efficiency.",
+            "bulletpoints": [
+                "Maintain a consistent cadence for efficient pedaling",
+                "Use a heart rate monitor to stay in the endurance training zone",
+                "Increase distance progressively to enhance stamina"
+            ],
+            "duration": 60,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "interval_cycling",
+            "title": "Interval Cycling for Power & Speed",
+            "description": "Alternating high-intensity sprints with recovery periods to improve overall cycling performance.",
+            "bulletpoints": [
+                "Sprint for 30 seconds, then recover at an easy pace for 1-2 minutes",
+                "Increase resistance or pedal speed for greater intensity",
+                "Focus on controlled breathing to sustain effort levels"
+            ],
+            "duration": 45,
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": "tabata_protocol",
+    "name": "Tabata Protocol",
+    "description": "A structured HIIT routine alternating 20 seconds of intense effort with 10 seconds of rest.",
+    "focus": [
+        "Explosive Power",
+        "Fat Burning"
+    ],
+    "cards": [
+        {
+            "id": "tabata_burpees",
+            "title": "Tabata Burpees for Total-Body Conditioning",
+            "description": "Performing burpees in an intense 20/10 format for cardiovascular and muscular endurance.",
+            "bulletpoints": [
+                "Explode off the ground with full-body engagement",
+                "Maintain a steady pace throughout all rounds",
+                "Modify by removing the jump or push-up if needed"
+            ],
+            "duration": 4,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "tabata_squat_jumps",
+            "title": "Tabata Squat Jumps for Lower Body Power",
+            "description": "Engaging fast-twitch muscle fibers for explosive leg strength.",
+            "bulletpoints": [
+                "Land softly to protect the knees",
+                "Explode upward with maximum effort",
+                "Use arm swings to generate momentum"
+            ],
+            "duration": 4,
+            "difficulty": "Advanced"
+        }
+    ]
+}

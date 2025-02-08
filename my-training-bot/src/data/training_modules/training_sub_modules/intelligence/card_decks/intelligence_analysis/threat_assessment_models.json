@@ -1,0 +1,35 @@
+{
+    "id": "threat_assessment_models",
+    "name": "Threat Assessment Models",
+    "description": "Frameworks for evaluating potential security threats based on intelligence data.",
+    "focus": [
+        "Pattern Recognition",
+        "Risk Analysis"
+    ],
+    "cards": [
+        {
+            "id": "link_analysis",
+            "title": "Link Analysis & Network Mapping",
+            "description": "Connecting data points to uncover hidden relationships.",
+            "bulletpoints": [
+                "Use graph analysis tools to identify key actors in criminal networks",
+                "Track communications between suspected threats",
+                "Assess degrees of separation and clustering behaviors"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "behavioral_risk_analysis",
+            "title": "Behavioral Risk Analysis & Predictive Profiling",
+            "description": "Evaluating behavioral trends to predict potential threats.",
+            "bulletpoints": [
+                "Identify pre-attack indicators through anomaly detection",
+                "Assess psychological motivations of threat actors",
+                "Use historical data to model escalation and threat levels"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "id": "close_quarters_combat",
+    "name": "Close Quarters Combat",
+    "description": "Training in hand-to-hand combat techniques for self-defense and high-risk encounters.",
+    "difficulty": "Advanced",
+    "estimated_time": "12-36 months",
+    "focus": [
+        "Hand-to-Hand Combat",
+        "Grappling and Submissions",
+        "Disarmament Techniques"
+    ],
+    "cardDecks": [
+        "striking_and_counterattacks",
+        "ground_fighting",
+        "weapon_disarm_tactics"
+    ]
+}

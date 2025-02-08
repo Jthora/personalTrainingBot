@@ -1,0 +1,17 @@
+{
+    "id": "melee_weapons_training",
+    "name": "Melee Weapons Training",
+    "description": "Mastery of melee combat weapons including knives, batons, and improvised tools.",
+    "difficulty": "Intermediate",
+    "estimated_time": "12-24 months",
+    "focus": [
+        "Edged Weapons",
+        "Blunt Force Weapons",
+        "Improvised Combat Tools"
+    ],
+    "cardDecks": [
+        "knife_fighting_tactics",
+        "baton_defensive_moves",
+        "weapon_retention_drills"
+    ]
+}

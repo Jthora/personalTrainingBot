@@ -1,0 +1,17 @@
+{
+    "id": "clairvoyance_and_telepathy",
+    "name": "Clairvoyance and Telepathy",
+    "description": "Developing abilities related to seeing beyond normal perception and direct mind-to-mind communication.",
+    "difficulty": "Advanced",
+    "estimated_time": "12-36 months",
+    "focus": [
+        "Mind Linking",
+        "Prophetic Vision",
+        "Telepathic Communication"
+    ],
+    "cardDecks": [
+        "mind_to_mind_communication",
+        "prophetic_dreams",
+        "clairvoyant_perception"
+    ]
+}

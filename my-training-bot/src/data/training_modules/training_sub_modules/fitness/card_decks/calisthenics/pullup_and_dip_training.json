@@ -1,0 +1,35 @@
+{
+    "id": "pullup_and_dip_training",
+    "name": "Pull-Up and Dip Training",
+    "description": "Building upper body strength through controlled pull-up and dip progressions.",
+    "focus": [
+        "Functional Movement",
+        "Upper Body Endurance"
+    ],
+    "cards": [
+        {
+            "id": "negative_pullups",
+            "title": "Negative Pull-Ups for Strength Development",
+            "description": "Lowering phase pull-ups to build pulling strength.",
+            "bulletpoints": [
+                "Start at the top position and lower yourself slowly",
+                "Engage lats and biceps to maintain controlled descent",
+                "Perform multiple slow reps to develop pulling power"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "ring_dips",
+            "title": "Ring Dips for Shoulder Stability",
+            "description": "Advanced dip variation using rings for added instability and engagement.",
+            "bulletpoints": [
+                "Maintain shoulder stability by keeping arms close to the body",
+                "Engage the core to prevent unnecessary swinging",
+                "Control the lowering phase to avoid joint stress"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

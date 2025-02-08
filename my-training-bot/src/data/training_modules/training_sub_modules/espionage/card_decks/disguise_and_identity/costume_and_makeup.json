@@ -1,0 +1,35 @@
+{
+    "id": "costume_and_makeup",
+    "name": "Costume and Makeup",
+    "description": "Using disguises, prosthetics, and physical transformation for covert operations.",
+    "focus": [
+        "Physical Disguise",
+        "Appearance Alteration"
+    ],
+    "cards": [
+        {
+            "id": "quick_disguises",
+            "title": "Quick-Change Disguises",
+            "description": "Methods for rapidly changing appearance in the field.",
+            "bulletpoints": [
+                "Use layered clothing for instant transformations",
+                "Employ wigs, hats, and glasses for visual deception",
+                "Master movement and posture adjustments to enhance disguise"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "prosthetic_makeup",
+            "title": "Prosthetic Makeup & Facial Alteration",
+            "description": "Using prosthetics and special effects makeup to alter facial structure.",
+            "bulletpoints": [
+                "Apply latex prosthetics for enhanced physical disguise",
+                "Use shading and contouring techniques to adjust facial features",
+                "Simulate aging or ethnic transformation using professional methods"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

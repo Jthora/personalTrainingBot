@@ -1,0 +1,13 @@
+{
+    "id": "agencies",
+    "name": "Agencies",
+    "description": "Training programs for intelligence and law enforcement agencies.",
+    "submodules": [
+        "cia_training",
+        "fbi_training",
+        "homeland_security",
+        "secret_service",
+        "interpol_training",
+        "military_intelligence"
+    ]
+}

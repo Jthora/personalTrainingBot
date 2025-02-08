@@ -1,0 +1,35 @@
+{
+    "id": "mobility_routines",
+    "name": "Mobility Routines",
+    "description": "Improving joint mobility and movement efficiency through controlled exercises.",
+    "focus": [
+        "Active Recovery",
+        "Injury Mitigation"
+    ],
+    "cards": [
+        {
+            "id": "joint_circles",
+            "title": "Joint Circles for Full-Body Mobility",
+            "description": "Performing controlled joint rotations to improve range of motion.",
+            "bulletpoints": [
+                "Rotate ankles, wrists, shoulders, and hips in controlled movements",
+                "Focus on slow, deliberate motion to prevent injury",
+                "Perform daily to maintain flexibility and joint health"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "spinal_twists",
+            "title": "Spinal Twists for Back Mobility",
+            "description": "Loosening up the spine and improving rotational movement.",
+            "bulletpoints": [
+                "Sit or lie down and twist gently to one side",
+                "Engage the core for controlled movement",
+                "Hold for 15-30 seconds and switch sides"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": "encryption_and_decryption",
+    "name": "Encryption and Decryption",
+    "description": "Techniques for encoding and decoding sensitive intelligence communications.",
+    "focus": [
+        "Cryptography",
+        "Data Security"
+    ],
+    "cards": [
+        {
+            "id": "cipher_analysis",
+            "title": "Cipher Analysis and Code Breaking",
+            "description": "Understanding and cracking cryptographic ciphers used in intelligence operations.",
+            "bulletpoints": [
+                "Identify common cipher algorithms (Caesar, Vigenère, RSA, AES)",
+                "Use frequency analysis to break substitution ciphers",
+                "Apply modern decryption techniques with computational tools"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "steganography",
+            "title": "Steganography and Hidden Data Transmission",
+            "description": "Embedding covert messages in digital media for secure transmission.",
+            "bulletpoints": [
+                "Use image, audio, and text-based steganographic techniques",
+                "Detect and decode hidden messages within digital content",
+                "Implement steganographic payloads with advanced cryptography"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

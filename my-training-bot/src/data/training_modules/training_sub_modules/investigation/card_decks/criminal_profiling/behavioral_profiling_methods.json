@@ -1,0 +1,35 @@
+{
+    "id": "behavioral_profiling_methods",
+    "name": "Behavioral Profiling Methods",
+    "description": "Techniques for analyzing human behavior to predict and profile criminal activity.",
+    "focus": [
+        "Behavioral Analysis",
+        "Pattern Recognition"
+    ],
+    "cards": [
+        {
+            "id": "criminal_behavior_patterns",
+            "title": "Criminal Behavior Patterns",
+            "description": "Identifying recurring behavioral traits in criminals based on case studies.",
+            "bulletpoints": [
+                "Analyze repeated offense patterns",
+                "Identify triggers and escalation markers",
+                "Use psychological models to predict future actions"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "lie_detection",
+            "title": "Lie Detection and Deceptive Behavior",
+            "description": "Detecting deception through verbal and non-verbal cues.",
+            "bulletpoints": [
+                "Analyze microexpressions and body language",
+                "Assess inconsistencies in suspect statements",
+                "Apply forensic interview techniques to detect dishonesty"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

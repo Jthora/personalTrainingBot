@@ -1,0 +1,35 @@
+{
+    "id": "bodyweight_leg_workouts",
+    "name": "Bodyweight Leg Workouts",
+    "description": "Strengthening lower body muscles using bodyweight resistance.",
+    "focus": [
+        "Leg Strength",
+        "Balance and Stability"
+    ],
+    "cards": [
+        {
+            "id": "pistol_squats",
+            "title": "Pistol Squats for Single-Leg Strength",
+            "description": "A unilateral squat movement that enhances leg control and balance.",
+            "bulletpoints": [
+                "Lower yourself down on one leg while extending the other",
+                "Keep your chest upright and engage the core",
+                "Use assistance (like a band) if needed to build strength"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "wall_sits",
+            "title": "Wall Sits for Isometric Endurance",
+            "description": "Holding a squat position against a wall to build endurance.",
+            "bulletpoints": [
+                "Keep knees at a 90-degree angle for proper form",
+                "Engage quadriceps and glutes to hold the position",
+                "Increase duration over time to improve endurance"
+            ],
+            "duration": 7,
+            "difficulty": "Beginner"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": "planks_and_static_holds",
+    "name": "Planks and Static Holds",
+    "description": "Developing core endurance and stability through isometric holds.",
+    "focus": [
+        "Abdominal Strength",
+        "Postural Control"
+    ],
+    "cards": [
+        {
+            "id": "forearm_plank",
+            "title": "Forearm Plank for Core Endurance",
+            "description": "Holding a forearm plank to engage the core and stabilize posture.",
+            "bulletpoints": [
+                "Maintain a neutral spine and avoid arching the lower back",
+                "Engage glutes and quads to support the position",
+                "Gradually increase duration to build endurance"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "side_plank",
+            "title": "Side Plank for Oblique Activation",
+            "description": "Strengthening the obliques and stabilizer muscles through side planks.",
+            "bulletpoints": [
+                "Align body in a straight line from head to feet",
+                "Engage the obliques to prevent sagging",
+                "Progress by adding leg lifts or arm reaches"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

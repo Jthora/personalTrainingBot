@@ -1,0 +1,35 @@
+{
+    "id": "shadowing_techniques",
+    "name": "Shadowing Techniques",
+    "description": "Advanced foot surveillance techniques to track targets discreetly in various environments.",
+    "focus": [
+        "Foot Surveillance",
+        "Covert Movement"
+    ],
+    "cards": [
+        {
+            "id": "single_agent_shadowing",
+            "title": "Single-Agent Shadowing",
+            "description": "Following a target alone while maintaining anonymity and avoiding detection.",
+            "bulletpoints": [
+                "Use environmental cover for seamless movement",
+                "Adjust pace to match the target’s movements",
+                "Employ counter-surveillance tactics to detect suspicion"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "team_based_surveillance",
+            "title": "Team-Based Surveillance",
+            "description": "Coordinating multiple agents to track a subject while minimizing exposure.",
+            "bulletpoints": [
+                "Rotate observers to prevent recognition",
+                "Communicate non-verbally to coordinate movements",
+                "Use relay points and choke points for optimal coverage"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

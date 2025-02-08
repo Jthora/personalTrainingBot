@@ -1,0 +1,17 @@
+{
+    "id": "strength_training",
+    "name": "Strength Training",
+    "description": "Building muscular strength through resistance training, weightlifting, and progressive overload techniques.",
+    "difficulty": "Intermediate",
+    "estimated_time": "12-24 months",
+    "focus": [
+        "Muscle Growth",
+        "Power Development",
+        "Progressive Overload"
+    ],
+    "cardDecks": [
+        "compound_lifts",
+        "isolation_exercises",
+        "strength_periodization"
+    ]
+}

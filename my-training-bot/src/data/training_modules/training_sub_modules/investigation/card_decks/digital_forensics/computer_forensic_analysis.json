@@ -1,0 +1,35 @@
+{
+    "id": "computer_forensic_methods",
+    "name": "Computer Forensic Methods",
+    "description": "Techniques for analyzing and recovering digital evidence from computers and storage devices.",
+    "focus": [
+        "Data Recovery",
+        "File System Analysis"
+    ],
+    "cards": [
+        {
+            "id": "disk_imaging",
+            "title": "Disk Imaging and Evidence Preservation",
+            "description": "Creating forensic copies of digital storage devices while preserving integrity.",
+            "bulletpoints": [
+                "Use tools like FTK Imager and dd for disk imaging",
+                "Ensure write-blocking to maintain evidence integrity",
+                "Verify hash values to confirm forensic accuracy"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "deleted_file_recovery",
+            "title": "Deleted File Recovery and Metadata Analysis",
+            "description": "Recovering deleted files and analyzing metadata for investigative leads.",
+            "bulletpoints": [
+                "Use data carving techniques to extract lost information",
+                "Analyze file timestamps and access logs for forensic reconstruction",
+                "Identify hidden partitions and encrypted file containers"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

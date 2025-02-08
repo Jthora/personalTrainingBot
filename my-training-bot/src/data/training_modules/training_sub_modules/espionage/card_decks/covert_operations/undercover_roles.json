@@ -1,0 +1,35 @@
+{
+    "id": "undercover_roles",
+    "name": "Undercover Roles",
+    "description": "Techniques for assuming and maintaining covert identities in high-risk environments.",
+    "focus": [
+        "Undercover Infiltration",
+        "Identity Crafting"
+    ],
+    "cards": [
+        {
+            "id": "legend_building",
+            "title": "Legend Building & Deep Cover",
+            "description": "Creating and maintaining a false identity to operate in hostile environments.",
+            "bulletpoints": [
+                "Develop comprehensive backstories and personal narratives",
+                "Memorize details of cover identities and supporting documentation",
+                "Adapt speech patterns and behaviors to match target demographics"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "social_infiltration",
+            "title": "Social Infiltration & Manipulation",
+            "description": "Gaining access to restricted environments through social engineering techniques.",
+            "bulletpoints": [
+                "Utilize pretexting to gain trust within target organizations",
+                "Develop rapport-building techniques for intelligence gathering",
+                "Avoid common pitfalls that could compromise undercover roles"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "id": "psiops",
+    "name": "PsiOps (Psychic Operations and Psionics Technology)",
+    "description": "Training in the use of psychic abilities, psionic technology, and advanced mental defense techniques.",
+    "submodules": [
+        "psionic_training",
+        "remote_viewing",
+        "energy_manipulation",
+        "psychic_shielding",
+        "clairvoyance_and_telepathy",
+        "psionic_weaponry"
+    ]
+}

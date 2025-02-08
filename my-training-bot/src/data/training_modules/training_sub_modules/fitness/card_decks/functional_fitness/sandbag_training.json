@@ -1,0 +1,35 @@
+{
+    "id": "sandbag_training",
+    "name": "Sandbag Training",
+    "description": "Building strength and stability using unstable resistance from sandbags.",
+    "focus": [
+        "Daily Life Strength",
+        "Multi-Planar Training"
+    ],
+    "cards": [
+        {
+            "id": "sandbag_cleans",
+            "title": "Sandbag Cleans for Full-Body Power",
+            "description": "A dynamic lift that enhances functional strength and explosiveness.",
+            "bulletpoints": [
+                "Use a strong hip extension to propel the sandbag upward",
+                "Maintain a tight core to stabilize the movement",
+                "Control the descent to build eccentric strength"
+            ],
+            "duration": 7,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "sandbag_overhead_carry",
+            "title": "Overhead Sandbag Carry for Stability",
+            "description": "Carrying a sandbag overhead to develop stability and shoulder endurance.",
+            "bulletpoints": [
+                "Keep arms locked out and core engaged",
+                "Walk with controlled steps to maintain balance",
+                "Use different grip variations to challenge coordination"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        }
+    ]
+}

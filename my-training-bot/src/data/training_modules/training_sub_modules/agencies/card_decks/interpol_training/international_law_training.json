@@ -1,0 +1,35 @@
+{
+    "id": "international_law_basics",
+    "name": "International Law Basics",
+    "description": "Fundamental principles of international law, treaties, and jurisdictional challenges.",
+    "focus": [
+        "Legal Frameworks",
+        "Jurisdictional Coordination"
+    ],
+    "cards": [
+        {
+            "id": "treaty_enforcement",
+            "title": "Treaty Enforcement & International Agreements",
+            "description": "Understanding the role of treaties and agreements in international criminal law.",
+            "bulletpoints": [
+                "Analyze key international legal agreements",
+                "Understand the role of the United Nations in enforcement",
+                "Coordinate investigations across multiple jurisdictions"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "extradition_laws",
+            "title": "Extradition Laws & Procedures",
+            "description": "Mechanisms for requesting and executing extraditions across borders.",
+            "bulletpoints": [
+                "Understand bilateral and multilateral extradition treaties",
+                "Navigate legal challenges in high-profile extraditions",
+                "Identify cases where diplomatic immunity applies"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

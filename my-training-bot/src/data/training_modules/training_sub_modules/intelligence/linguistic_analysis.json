@@ -1,0 +1,17 @@
+{
+    "id": "linguistic_analysis",
+    "name": "Linguistic Analysis",
+    "description": "Training in language processing, sentiment analysis, and detecting deception in communication.",
+    "difficulty": "Intermediate",
+    "estimated_time": "12-24 months",
+    "focus": [
+        "Natural Language Processing",
+        "Deception Detection",
+        "Sentiment Analysis"
+    ],
+    "cardDecks": [
+        "language_pattern_recognition",
+        "sentiment_analysis_methods",
+        "deception_detection_techniques"
+    ]
+}

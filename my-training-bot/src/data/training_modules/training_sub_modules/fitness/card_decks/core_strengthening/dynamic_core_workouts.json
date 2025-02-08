@@ -1,0 +1,35 @@
+{
+    "id": "dynamic_core_workouts",
+    "name": "Dynamic Core Workouts",
+    "description": "Engaging multiple muscle groups through explosive core exercises.",
+    "focus": [
+        "Explosive Core Strength",
+        "Functional Movement"
+    ],
+    "cards": [
+        {
+            "id": "hanging_leg_raises",
+            "title": "Hanging Leg Raises for Lower Ab Strength",
+            "description": "Building lower abdominal and hip flexor strength through controlled leg raises.",
+            "bulletpoints": [
+                "Keep legs straight and avoid swinging",
+                "Control both the upward and downward phases",
+                "Modify by bending knees if necessary"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "medicine_ball_slams",
+            "title": "Medicine Ball Slams for Power and Core Activation",
+            "description": "Developing explosive core strength with full-body engagement.",
+            "bulletpoints": [
+                "Engage the core to generate maximum force",
+                "Use a non-bouncing medicine ball for better resistance",
+                "Focus on speed and power while maintaining control"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

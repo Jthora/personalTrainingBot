@@ -1,0 +1,17 @@
+{
+    "id": "strategic_forecasting",
+    "name": "Strategic Forecasting",
+    "description": "Training in predictive intelligence, scenario planning, and long-term geopolitical forecasting.",
+    "difficulty": "Advanced",
+    "estimated_time": "24-48 months",
+    "focus": [
+        "Predictive Analytics",
+        "Scenario Planning",
+        "Geopolitical Risk Assessment"
+    ],
+    "cardDecks": [
+        "future_trend_analysis",
+        "risk_prediction_models",
+        "geopolitical_simulations"
+    ]
+}

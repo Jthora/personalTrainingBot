@@ -1,0 +1,17 @@
+{
+    "id": "social_engineering_defense",
+    "name": "Social Engineering Defense",
+    "description": "Preventing human-targeted attacks such as phishing, deception, and psychological exploitation.",
+    "difficulty": "Intermediate",
+    "estimated_time": "12-24 months",
+    "focus": [
+        "Phishing Awareness",
+        "Psychological Manipulation Defense",
+        "Insider Threat Mitigation"
+    ],
+    "cardDecks": [
+        "phishing_attack_simulation",
+        "social_manipulation_tactics",
+        "corporate_security_training"
+    ]
+}

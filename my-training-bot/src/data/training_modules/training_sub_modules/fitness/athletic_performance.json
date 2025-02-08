@@ -1,0 +1,17 @@
+{
+    "id": "athletic_performance",
+    "name": "Athletic Performance",
+    "description": "Improving strength, endurance, and coordination for enhanced athletic ability.",
+    "difficulty": "Advanced",
+    "estimated_time": "12-24 months",
+    "focus": [
+        "Sport-Specific Conditioning",
+        "Power Development",
+        "Explosive Strength"
+    ],
+    "cardDecks": [
+        "olympic_lifting_basics",
+        "speed_endurance_training",
+        "reaction_time_drills"
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": "escape_and_evasion",
+    "name": "Escape & Evasion",
+    "description": "Survival techniques for eluding capture and escaping from hostile environments.",
+    "focus": [
+        "Operational Security",
+        "Survival Tactics"
+    ],
+    "cards": [
+        {
+            "id": "urban_evasion",
+            "title": "Urban Evasion & Disguise",
+            "description": "Avoiding detection and blending into civilian populations during high-risk escapes.",
+            "bulletpoints": [
+                "Use disguises and quick wardrobe changes to avoid recognition",
+                "Navigate urban landscapes while minimizing exposure",
+                "Employ decoy tactics to mislead pursuers"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "wilderness_escape",
+            "title": "Wilderness Escape & Survival",
+            "description": "Tactics for surviving in remote environments while evading trackers.",
+            "bulletpoints": [
+                "Use counter-tracking techniques to confuse pursuers",
+                "Source food and water while maintaining a low profile",
+                "Employ natural cover and terrain navigation strategies"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

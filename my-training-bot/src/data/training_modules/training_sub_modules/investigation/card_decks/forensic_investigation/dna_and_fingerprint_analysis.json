@@ -1,0 +1,35 @@
+{
+    "id": "dna_and_fingerprint_analysis",
+    "name": "DNA and Fingerprint Analysis",
+    "description": "Methods for extracting and analyzing biological evidence and latent fingerprints.",
+    "focus": [
+        "DNA Analysis",
+        "Fingerprint Identification"
+    ],
+    "cards": [
+        {
+            "id": "dna_extraction",
+            "title": "DNA Extraction & Profiling",
+            "description": "Collecting and analyzing biological samples for forensic investigations.",
+            "bulletpoints": [
+                "Use sterile collection techniques for blood, hair, and bodily fluids",
+                "Apply PCR and STR analysis for DNA matching",
+                "Interpret CODIS database results to identify suspects"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "latent_fingerprint_analysis",
+            "title": "Latent Fingerprint Analysis & Matching",
+            "description": "Recovering and analyzing fingerprints from crime scenes.",
+            "bulletpoints": [
+                "Use dusting, cyanoacrylate fuming, and chemical methods for print recovery",
+                "Compare fingerprint ridge patterns using AFIS databases",
+                "Differentiate between class, loop, arch, and whorl fingerprint types"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

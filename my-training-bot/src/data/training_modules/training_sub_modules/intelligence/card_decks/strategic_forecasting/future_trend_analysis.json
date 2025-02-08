@@ -1,0 +1,35 @@
+{
+    "id": "future_trend_analysis",
+    "name": "Future Trend Analysis",
+    "description": "Techniques for identifying emerging trends and forecasting global developments.",
+    "focus": [
+        "Predictive Analytics",
+        "Data-Driven Insights"
+    ],
+    "cards": [
+        {
+            "id": "data_trend_extrapolation",
+            "title": "Data Trend Extrapolation & Forecasting",
+            "description": "Using historical data and AI-driven models to predict future developments.",
+            "bulletpoints": [
+                "Apply time-series analysis to forecast industry and geopolitical trends",
+                "Use machine learning models for predictive intelligence",
+                "Monitor pattern shifts to anticipate disruptive global events"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "technological_advancements",
+            "title": "Technological Advancements & Disruptive Innovation",
+            "description": "Tracking emerging technologies and their potential impact.",
+            "bulletpoints": [
+                "Analyze breakthroughs in AI, quantum computing, and biotech",
+                "Forecast industry disruptions caused by automation and digital transformation",
+                "Identify early indicators of paradigm-shifting technological advances"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

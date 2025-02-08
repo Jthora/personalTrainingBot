@@ -1,0 +1,35 @@
+{
+    "id": "interval_running",
+    "name": "Interval Running",
+    "description": "Improving speed and endurance through high-intensity interval training (HIIT) techniques.",
+    "focus": [
+        "Endurance Training",
+        "Heart Rate Optimization"
+    ],
+    "cards": [
+        {
+            "id": "fartlek_training",
+            "title": "Fartlek Training for Speed & Stamina",
+            "description": "Incorporating variable-speed intervals to enhance running efficiency.",
+            "bulletpoints": [
+                "Alternate between jogging, moderate running, and sprinting",
+                "Improve aerobic and anaerobic conditioning through pace variations",
+                "Use landmarks or time-based intervals to structure workouts"
+            ],
+            "duration": 20,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "hill_sprints",
+            "title": "Hill Sprints for Power & Cardio Conditioning",
+            "description": "Utilizing inclines to increase leg strength and cardiovascular endurance.",
+            "bulletpoints": [
+                "Sprint uphill at 80-90% maximum effort for short bursts",
+                "Recover by walking or jogging downhill",
+                "Engage glutes and hamstrings for explosive power"
+            ],
+            "duration": 15,
+            "difficulty": "Advanced"
+        }
+    ]
+}

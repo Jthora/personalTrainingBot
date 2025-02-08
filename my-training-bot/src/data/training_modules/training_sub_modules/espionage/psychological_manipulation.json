@@ -1,0 +1,17 @@
+{
+    "id": "psychological_manipulation",
+    "name": "Psychological Manipulation",
+    "description": "Techniques for influencing and controlling human behavior in intelligence operations.",
+    "difficulty": "Advanced",
+    "estimated_time": "24-48 months",
+    "focus": [
+        "Persuasion Tactics",
+        "Mind Control Techniques",
+        "Behavioral Exploitation"
+    ],
+    "cardDecks": [
+        "persuasion_and_influence",
+        "coercion_methods",
+        "emotional_exploitation"
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": "coercion_methods",
+    "name": "Coercion Methods",
+    "description": "Psychological pressure tactics for gaining compliance in intelligence operations.",
+    "focus": [
+        "Mind Control Techniques",
+        "Strategic Intimidation"
+    ],
+    "cards": [
+        {
+            "id": "fear_induction",
+            "title": "Fear Induction and Compliance Strategies",
+            "description": "Using psychological pressure to control behavior.",
+            "bulletpoints": [
+                "Leverage uncertainty to create psychological distress",
+                "Use selective reinforcement to condition responses",
+                "Employ time pressure to force rapid decision-making"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "manipulative_confessions",
+            "title": "Manipulating Confessions and Testimony",
+            "description": "Techniques for extracting information through psychological leverage.",
+            "bulletpoints": [
+                "Use guilt and moral framing to elicit voluntary confessions",
+                "Introduce false evidence to create internal doubt",
+                "Employ strategic pauses and silence to induce discomfort"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

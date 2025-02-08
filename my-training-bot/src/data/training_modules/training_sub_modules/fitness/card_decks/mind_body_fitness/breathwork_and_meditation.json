@@ -1,0 +1,35 @@
+{
+    "id": "breathwork_and_meditation",
+    "name": "Breathwork and Meditation",
+    "description": "Techniques for calming the mind and improving focus through controlled breathing and meditation.",
+    "focus": [
+        "Mental Clarity",
+        "Controlled Breathing"
+    ],
+    "cards": [
+        {
+            "id": "box_breathing",
+            "title": "Box Breathing for Focus and Stress Reduction",
+            "description": "A structured breathing technique to regulate stress and improve concentration.",
+            "bulletpoints": [
+                "Inhale for 4 seconds, hold for 4 seconds, exhale for 4 seconds, and hold again",
+                "Repeat for 5-10 minutes to enhance relaxation",
+                "Use during stressful situations to regain composure"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "body_scan_meditation",
+            "title": "Body Scan Meditation for Relaxation",
+            "description": "A guided meditation practice focusing on different body parts to release tension.",
+            "bulletpoints": [
+                "Start at the feet and mentally scan upward to the head",
+                "Acknowledge and release any tension found",
+                "Maintain slow, deep breaths throughout the session"
+            ],
+            "duration": 10,
+            "difficulty": "Beginner"
+        }
+    ]
+}

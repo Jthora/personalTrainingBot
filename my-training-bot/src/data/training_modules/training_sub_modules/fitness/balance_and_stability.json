@@ -1,0 +1,17 @@
+{
+    "id": "balance_and_stability",
+    "name": "Balance and Stability",
+    "description": "Developing coordination and stability for injury prevention and improved athleticism.",
+    "difficulty": "Beginner",
+    "estimated_time": "3-12 months",
+    "focus": [
+        "Postural Control",
+        "Stabilizer Muscle Activation",
+        "Core Engagement"
+    ],
+    "cardDecks": [
+        "bosu_ball_exercises",
+        "single_leg_stability_drills",
+        "dynamic_balance_training"
+    ]
+}

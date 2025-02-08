@@ -1,0 +1,13 @@
+{
+    "id": "investigation",
+    "name": "Investigation",
+    "description": "Comprehensive training on investigative techniques across multiple disciplines.",
+    "submodules": [
+        "criminal_profiling",
+        "forensic_investigation",
+        "financial_crimes",
+        "homicide_investigation",
+        "cybercrime_analysis",
+        "digital_forensics"
+    ]
+}

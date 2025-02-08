@@ -1,0 +1,17 @@
+{
+    "id": "disguise_and_identity",
+    "name": "Disguise and Identity",
+    "description": "Training in adopting false identities, physical disguises, and legend-building.",
+    "difficulty": "Intermediate",
+    "estimated_time": "12-24 months",
+    "focus": [
+        "False Identities",
+        "Physical Disguise",
+        "Social Engineering"
+    ],
+    "cardDecks": [
+        "identity_forging",
+        "costume_and_makeup",
+        "social_deception"
+    ]
+}

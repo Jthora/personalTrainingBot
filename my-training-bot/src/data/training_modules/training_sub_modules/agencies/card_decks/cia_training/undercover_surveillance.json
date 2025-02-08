@@ -1,0 +1,35 @@
+{
+    "id": "undercover_surveillance",
+    "name": "Undercover Surveillance",
+    "description": "Training in covert observation, intelligence gathering, and tailing suspects without detection.",
+    "focus": [
+        "Foot Surveillance",
+        "Electronic Tracking"
+    ],
+    "cards": [
+        {
+            "id": "shadowing",
+            "title": "Shadowing & Tail Techniques",
+            "description": "Following a target without raising suspicion.",
+            "bulletpoints": [
+                "Maintain varying distances",
+                "Use multiple observers to avoid detection",
+                "Blend into urban and rural environments"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "electronic_monitoring",
+            "title": "Electronic Surveillance Basics",
+            "description": "Using high-tech methods to track and monitor targets remotely.",
+            "bulletpoints": [
+                "Deploy covert listening devices",
+                "Analyze movement patterns",
+                "Use encrypted channels for secure data transmission"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        }
+    ]
+}

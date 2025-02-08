@@ -1,0 +1,17 @@
+{
+    "id": "mind_hacking_countermeasures",
+    "name": "Mind Hacking Countermeasures",
+    "description": "Developing defenses against psychological hacking and mental infiltration tactics.",
+    "difficulty": "Advanced",
+    "estimated_time": "18-36 months",
+    "focus": [
+        "Cognitive Firewalling",
+        "Subliminal Influence Defense",
+        "Neuro-Linguistic Programming Resistance"
+    ],
+    "cardDecks": [
+        "mental_firewalling_techniques",
+        "subliminal_manipulation_detection",
+        "nlp_resistance_strategies"
+    ]
+}

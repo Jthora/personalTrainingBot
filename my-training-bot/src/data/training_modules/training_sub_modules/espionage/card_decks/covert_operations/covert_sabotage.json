@@ -1,0 +1,35 @@
+{
+    "id": "covert_sabotage",
+    "name": "Covert Sabotage",
+    "description": "Strategies for executing stealth-based disruption operations in high-risk missions.",
+    "focus": [
+        "Sabotage Tactics",
+        "Stealth Operations"
+    ],
+    "cards": [
+        {
+            "id": "infrastructure_disruption",
+            "title": "Infrastructure Disruption",
+            "description": "Tactics for disabling critical systems without detection.",
+            "bulletpoints": [
+                "Use EMP and electronic warfare tools to disable networks",
+                "Target key structural weaknesses in industrial facilities",
+                "Deploy timed sabotage for optimal operational impact"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "vehicle_sabotage",
+            "title": "Vehicle Sabotage & Mobility Denial",
+            "description": "Techniques for neutralizing enemy transportation assets without detection.",
+            "bulletpoints": [
+                "Disable vehicle electronics using advanced disruption tools",
+                "Implement slow-acting fuel contamination for long-term disruption",
+                "Use remote-triggered tampering for high-profile missions"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

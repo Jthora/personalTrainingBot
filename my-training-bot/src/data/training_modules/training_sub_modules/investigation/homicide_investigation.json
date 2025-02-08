@@ -1,0 +1,17 @@
+{
+    "id": "homicide_investigation",
+    "name": "Homicide Investigation",
+    "description": "Training in murder investigations, crime scene analysis, and suspect interrogation techniques.",
+    "difficulty": "Advanced",
+    "estimated_time": "24-36 months",
+    "focus": [
+        "Crime Scene Reconstruction",
+        "Suspect Interrogation",
+        "Cause of Death Analysis"
+    ],
+    "cardDecks": [
+        "homicide_case_studies",
+        "suspect_interview_methods",
+        "cause_of_death_forensics"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "id": "counter_psyops",
+    "name": "Counter PsyOps",
+    "description": "Training to recognize, resist, and dismantle psychological operations designed to manipulate perception and control behavior.",
+    "submodules": [
+        "disinformation_analysis",
+        "psychological_warfare_defense",
+        "propaganda_countermeasures",
+        "emotional_resilience_training",
+        "manipulation_detection",
+        "mind_hacking_countermeasures"
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": "social_deception",
+    "name": "Social Deception",
+    "description": "Manipulating social interactions and exploiting psychological weaknesses for identity concealment.",
+    "focus": [
+        "Social Engineering",
+        "Psychological Manipulation"
+    ],
+    "cards": [
+        {
+            "id": "verbal_pretexting",
+            "title": "Verbal Pretexting & Conversational Manipulation",
+            "description": "Using deception to extract information and maintain cover identities.",
+            "bulletpoints": [
+                "Develop pretexting scripts for various scenarios",
+                "Redirect suspicion through controlled conversational pivots",
+                "Employ linguistic cues to reinforce assumed backgrounds"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "body_language_control",
+            "title": "Body Language Control & Psychological Projection",
+            "description": "Mastering nonverbal cues to enhance deception and believability.",
+            "bulletpoints": [
+                "Adjust posture and gait to match identity roles",
+                "Control microexpressions to avoid unintended signals",
+                "Use mirroring techniques to build trust with targets"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": "dark_web_investigations",
+    "name": "Dark Web Investigations",
+    "description": "Techniques for tracking illegal activities on hidden networks and marketplaces.",
+    "focus": [
+        "Cyber Threat Analysis",
+        "Darknet Intelligence"
+    ],
+    "cards": [
+        {
+            "id": "tor_network_tracking",
+            "title": "TOR Network Tracking & OSINT",
+            "description": "Using open-source intelligence (OSINT) to monitor illegal activities on TOR.",
+            "bulletpoints": [
+                "Identify common TOR marketplaces for illicit activities",
+                "Use blockchain analysis to track cryptocurrency transactions",
+                "Deploy darknet crawlers to index and map hidden services"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "darknet_investigation_methods",
+            "title": "Darknet Investigation Methods",
+            "description": "Covertly gathering intelligence from forums, vendors, and communication channels.",
+            "bulletpoints": [
+                "Establish undercover identities and maintain operational security",
+                "Extract intelligence from forum conversations and vendor reviews",
+                "Trace illegal digital goods, cyberweapons, and stolen data"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

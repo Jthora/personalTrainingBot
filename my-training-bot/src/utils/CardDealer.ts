@@ -26,7 +26,22 @@ class CardDealer {
             }
         });
 
+        console.log(`Available cards: ${cards.length}`);
+        if (cards.length === 0) {
+            console.error('No cards available in the cache.');
+        }
+
         return cards;
+    }
+
+    public getRandomCard(): Card | null {
+        const cards = this.getCards();
+        if (cards.length === 0) {
+            console.error('No cards available to select.');
+            return null;
+        }
+        const randomIndex = Math.floor(Math.random() * cards.length);
+        return cards[randomIndex];
     }
 }
 

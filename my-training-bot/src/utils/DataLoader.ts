@@ -13,7 +13,8 @@ class DataLoader {
         try {
             console.log("Starting to load all data...");
             const trainingModules = await this.loadTrainingModules();
-            TrainingModuleCache.getInstance().loadData(trainingModules);
+            console.log(`Fetched ${trainingModules.length} training modules.`);
+            await TrainingModuleCache.getInstance().loadData(trainingModules);
             console.log("Successfully loaded and cached all data.");
         } catch (error) {
             console.error("Failed to load all data:", error);
@@ -48,39 +49,32 @@ class DataLoader {
         for (const moduleRef of data.modules as TrainingModuleReference[]) {
             try {
                 const modulePath = `${this.dataPath}/training_modules/${moduleRef.id}.json`;
-                console.log(`Fetching training module from ${modulePath}...`);
                 const moduleResponse = await fetch(modulePath);
                 if (!moduleResponse.ok) {
                     throw new Error(`HTTP error! status: ${moduleResponse.status}`);
                 }
                 const moduleData = await moduleResponse.json();
-                console.log(`Successfully fetched and parsed training module ${moduleRef.id}.`);
 
                 const subModules: TrainingSubModule[] = await Promise.all(
                     moduleData.submodules.map(async (subModuleId: string) => {
                         try {
                             const subModulePath = `${this.dataPath}/training_modules/training_sub_modules/${moduleRef.id}/${subModuleId}.json`;
-                            console.log(`Fetching submodule from ${subModulePath}...`);
                             const subModuleResponse = await fetch(subModulePath);
                             if (!subModuleResponse.ok) {
                                 throw new Error(`HTTP error! status: ${subModuleResponse.status}`);
                             }
                             const subModuleData = await subModuleResponse.json();
-                            console.log(`Successfully fetched and parsed submodule ${subModuleId}.`);
 
                             const cardDecks: CardDeck[] = await Promise.all(
                                 subModuleData.cardDecks.map(async (deckId: string) => {
                                     try {
                                         const deckPath = `${this.dataPath}/training_modules/training_sub_modules/${moduleRef.id}/card_decks/${subModuleId}/${deckId}.json`;
-                                        console.log(`Fetching card deck from ${deckPath}...`);
                                         const deckResponse = await fetch(deckPath);
                                         if (!deckResponse.ok) {
                                             throw new Error(`HTTP error! status: ${deckResponse.status}`);
                                         }
                                         const deckText = await deckResponse.text();
-                                        console.log(`Card deck response text: ${deckText}`);
                                         const deckData = JSON.parse(deckText);
-                                        console.log(`Successfully fetched and parsed card deck ${deckId}.`);
                                         return {
                                             id: deckData.id,
                                             name: deckData.name,
@@ -90,7 +84,7 @@ class DataLoader {
                                                 id: card.id,
                                                 title: card.title,
                                                 description: card.description,
-                                                bulletpoints: card.bulletpoints,
+                                                bulletpoints: Array.isArray(card.bulletpoints) ? card.bulletpoints : [],
                                                 duration: card.duration,
                                                 difficulty: card.difficulty
                                             }))

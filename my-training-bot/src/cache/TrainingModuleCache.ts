@@ -16,31 +16,44 @@ export class TrainingModuleCache {
         this.selectedCards = new Set();
     }
 
-    /**
-     * Get singleton instance of TrainingModuleCache
-     */
     public static getInstance(): TrainingModuleCache {
-        if (!this.instance) {
-            this.instance = new TrainingModuleCache();
+        if (!TrainingModuleCache.instance) {
+            TrainingModuleCache.instance = new TrainingModuleCache();
         }
-        return this.instance;
+        return TrainingModuleCache.instance;
     }
 
-    /**
-     * Load training modules into cache
-     */
-    public loadData(trainingModules: TrainingModule[]): void {
-        trainingModules.forEach(module => {
-            this.cache.set(module.id, module);
-            this.selectedModules.add(module.id);
-            module.submodules.forEach(subModule => {
-                this.selectedSubModules.add(subModule.id);
-                subModule.cardDecks.forEach(deck => {
-                    this.selectedCardDecks.add(deck.id);
-                    deck.cards.forEach(card => this.selectedCards.add(card.id));
+    public async loadData(trainingModules: TrainingModule[]): Promise<void> {
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                trainingModules.forEach(module => {
+                    this.cache.set(module.id, module);
+                    this.selectedModules.add(module.id);
+                    module.submodules.forEach(subModule => {
+                        this.selectedSubModules.add(subModule.id);
+                        subModule.cardDecks.forEach(deck => {
+                            this.selectedCardDecks.add(deck.id);
+                            deck.cards.forEach(card => {
+                                this.selectedCards.add(card.id);
+                            });
+                        });
+                    });
                 });
-            });
+                console.log(`Loaded ${this.cache.size} training modules.`);
+                console.log(`Loaded ${this.selectedSubModules.size} training submodules.`);
+                console.log(`Loaded ${this.selectedCardDecks.size} card decks.`);
+                console.log(`Loaded ${this.selectedCards.size} cards.`);
+                resolve();
+            }, 1000); // Simulate a delay
         });
+    }
+
+    public isLoaded(): boolean {
+        return this.cache.size > 0;
+    }
+
+    public getTrainingModule(id: string): TrainingModule | undefined {
+        return this.cache.get(id);
     }
 
     public toggleModuleSelection(id: string): void {
@@ -91,23 +104,6 @@ export class TrainingModuleCache {
         return this.selectedCards.has(id);
     }
 
-    /**
-     * Get a Training Module by ID
-     */
-    public getTrainingModule(id: string): TrainingModule | null {
-        return this.cache.get(id) || null;
-    }
-
-    /**
-     * Check if data is loaded
-     */
-    public isLoaded(): boolean {
-        return this.cache.size > 0;
-    }
-
-    /**
-     * Clear Cache (Useful for Reloading Data)
-     */
     public clearCache(): void {
         this.cache.clear();
         this.selectedModules.clear();

@@ -2,28 +2,36 @@ import React from 'react';
 import { Card } from '../../types/Card';
 import styles from './CardSlot.module.css';
 
-const CardSlot: React.FC = () => {
-    // Example card data
-    const cardData: Card = {
-        id: '1',
-        title: 'Sample Card',
-        description: 'This is a sample card description.',
-        bulletpoints: ['Point 1', 'Point 2', 'Point 3'],
-        duration: 30,
-        difficulty: 'Beginner'
-    };
+interface CardSlotProps {
+    card: Card | null;
+    onDealNextCard: () => void;
+}
+
+const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
+    if (!card) {
+        console.log('Card is null in CardSlot');
+        return <div className={styles.cardSlot}>No card available</div>;
+    }
+
+    console.log('Card in CardSlot:', card);
+
+    if (!Array.isArray(card.bulletpoints)) {
+        console.error('Card bulletpoints is not an array:', card.bulletpoints);
+        return <div className={styles.cardSlot}>Invalid card data</div>;
+    }
 
     return (
         <div className={styles.cardSlot}>
-            <h2>{cardData.title}</h2>
-            <p>{cardData.description}</p>
+            <h2>{card.title}</h2>
+            <p>{card.description}</p>
             <ul>
-                {cardData.bulletpoints.map((point, index) => (
+                {card.bulletpoints.map((point, index) => (
                     <li key={index}>{point}</li>
                 ))}
             </ul>
-            <p>Duration: {cardData.duration} minutes</p>
-            <p>Difficulty: {cardData.difficulty}</p>
+            <p>Duration: {card.duration} minutes</p>
+            <p>Difficulty: {card.difficulty}</p>
+            <button onClick={onDealNextCard}>Deal Next Card</button>
         </div>
     );
 };

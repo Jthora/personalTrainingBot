@@ -1,45 +1,36 @@
 import coachTrainingCache from '../cache/CoachTrainingCache';
-import { Workout } from '../types/Workout';
+import { SubWorkout } from '../types/SubWorkout';
 import { WorkoutSchedule } from '../types/WorkoutSchedule';
 
 interface WorkoutScheduleOptions {
     categories?: string[];
-    includeSubWorkouts?: boolean;
     date?: string;
 }
 
 export const createWorkoutSchedule = async (options: WorkoutScheduleOptions = {}): Promise<WorkoutSchedule> => {
     const {
         categories = ['cardio', 'strength', 'agility', 'combat', 'mental'],
-        includeSubWorkouts = false,
         date = new Date().toISOString().split('T')[0]
     } = options;
 
-    const workouts: Workout[] = [];
+    // Wait for the cache to be ready
+    while (coachTrainingCache.isLoading()) {
+        await new Promise(resolve => setTimeout(resolve, 100));
+    }
+
+    const subWorkouts: SubWorkout[] = [];
 
     for (const category of categories) {
-        const categoryWorkouts = coachTrainingCache.getWorkoutByCategory(category, 'default');
-        if (categoryWorkouts) {
-            if (includeSubWorkouts) {
-                for (const workout of categoryWorkouts) {
-                    workouts.push(workout);
-                    if (workout.sub_workouts) {
-                        workouts.push(...workout.sub_workouts.map(subWorkout => ({
-                            ...subWorkout,
-                            sub_workouts: []
-                        })));
-                    }
-                }
-            } else {
-                workouts.push(...categoryWorkouts);
-            }
+        const categorySubWorkouts = coachTrainingCache.getSubWorkoutsByCategory(category);
+        if (categorySubWorkouts) {
+            subWorkouts.push(...categorySubWorkouts);
         } else {
-            console.warn(`No workouts found for category ${category}`);
+            console.warn(`No sub-workouts found for category ${category}`);
         }
     }
 
     return {
         date,
-        workouts,
+        workouts: subWorkouts,
     };
 };

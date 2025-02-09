@@ -27,9 +27,6 @@
 │   │   ├── CoachTrainingCache.ts
 │   │   └── TrainingModuleCache.ts
 │   ├── components
-│   │   ├── AudioPlayer
-│   │   │   ├── AudioPlayer.module.css
-│   │   │   └── AudioPlayer.tsx
 │   │   ├── CardSelector
 │   │   │   ├── CardSelector.module.css
 │   │   │   └── CardSelector.tsx
@@ -72,14 +69,21 @@
 │   │   ├── WorkoutDetails
 │   │   │   ├── WorkoutDetails.module.css
 │   │   │   └── WorkoutDetails.tsx
-│   │   └── WorkoutScheduler
-│   │       ├── WorkoutScheduler.module.css
-│   │       └── WorkoutScheduler.tsx
+│   │   ├── WorkoutList
+│   │   │   ├── WorkoutList.module.css
+│   │   │   └── WorkoutList.tsx
+│   │   ├── WorkoutScheduler
+│   │   │   ├── WorkoutScheduler.module.css
+│   │   │   └── WorkoutScheduler.tsx
+│   │   └── WorkoutTimer
+│   │       ├── WorkoutTimer.tsx
+│   │       └── workoutTimer.module.tsx
 │   ├── context
 │   │   ├── CardContext.tsx
 │   │   ├── ScheduleContext.tsx
 │   │   ├── SettingsContext.tsx
-│   │   └── TrainingSequenceContext.tsx
+│   │   ├── TrainingSequenceContext.tsx
+│   │   └── WorkoutContext.tsx
 │   ├── data
 │   │   ├── .DS_Store
 │   │   ├── training_coach_data
@@ -583,17 +587,23 @@
 │   ├── types
 │   │   ├── Card.ts
 │   │   ├── CardDeck.ts
-│   │   ├── CoachTypes.ts
+│   │   ├── SubWorkout.ts
 │   │   ├── TrainingModule.ts
 │   │   ├── TrainingModuleReference.ts
-│   │   └── TrainingSubModule.ts
+│   │   ├── TrainingSubModule.ts
+│   │   ├── Workout.ts
+│   │   ├── WorkoutCategory.ts
+│   │   ├── WorkoutDifficultyLevel.ts
+│   │   ├── WorkoutRank.ts
+│   │   ├── WorkoutSchedule.ts
+│   │   └── WorkoutsData.ts
 │   ├── utils
+│   │   ├── AudioPlayer.ts
 │   │   ├── CardDealer.ts
 │   │   ├── CoachDataLoader.ts
 │   │   ├── DataLoader.ts
 │   │   ├── ScheduleGenerator.ts
-│   │   ├── SoundManager.ts
-│   │   └── WorkoutTimer.ts
+│   │   └── WorkoutScheduleCreator.ts
 │   └── vite-env.d.ts
 ├── templates
 │   ├── card_deck.json
@@ -604,4 +614,4 @@
 ├── tsconfig.node.json
 └── vite.config.ts
 
-156 directories, 449 files
+157 directories, 458 files

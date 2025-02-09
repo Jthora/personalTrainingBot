@@ -1,0 +1,51 @@
+.coachDialog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.icon {
+    width: 128px;
+    height: 128px;
+}
+
+.title {
+    margin-left: 20px;
+    font-size: 1.5em;
+    flex-grow: 1;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+.workoutDetails {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.timer {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}

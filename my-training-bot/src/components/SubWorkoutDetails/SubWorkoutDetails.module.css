@@ -1,0 +1,24 @@
+.workoutDetails {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.workoutDetails h2 {
+    margin: 0 0 8px;
+    font-size: 1.5em;
+}
+
+.workoutDetails p {
+    margin: 4px 0;
+    font-size: 1em;
+}
+
+.noWorkout {
+    text-align: center;
+    font-size: 1.2em;
+    color: #666;
+}

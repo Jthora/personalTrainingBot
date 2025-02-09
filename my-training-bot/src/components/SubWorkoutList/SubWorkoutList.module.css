@@ -1,0 +1,12 @@
+.workoutList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 16px;
+}
+
+.loading {
+    text-align: center;
+    font-size: 1.2em;
+    color: #666;
+}

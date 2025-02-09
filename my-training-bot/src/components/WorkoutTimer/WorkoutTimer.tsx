@@ -1,24 +1,29 @@
 import React, { useState, useEffect } from 'react';
 
-const WorkoutTimer: React.FC = () => {
-    const [timeLeft, setTimeLeft] = useState(30); // Example: 30 minutes
+const WorkoutTimer: React.FC<{ onComplete: () => void }> = ({ onComplete }) => {
+    const [timeLeft, setTimeLeft] = useState(45 * 60); // 45 minutes in seconds
 
     useEffect(() => {
         const timer = setInterval(() => {
-            setTimeLeft(prev => prev - 1);
-        }, 60000);
+            setTimeLeft(prev => {
+                if (prev <= 1) {
+                    clearInterval(timer);
+                    onComplete();
+                    return 45 * 60; // Reset to 45 minutes
+                }
+                return prev - 1;
+            });
+        }, 1000);
 
         return () => clearInterval(timer);
-    }, []);
+    }, [onComplete]);
 
-    const handleCompletion = () => {
-        // Handle workout completion logic
-    };
+    const minutes = Math.floor(timeLeft / 60);
+    const seconds = timeLeft % 60;
 
     return (
         <div>
-            <div>{timeLeft} minutes left</div>
-            <button onClick={handleCompletion}>Complete Workout</button>
+            <div>{`${minutes} minutes ${seconds} seconds left`}</div>
         </div>
     );
 };

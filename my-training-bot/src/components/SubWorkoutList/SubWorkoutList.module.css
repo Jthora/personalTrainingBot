@@ -1,7 +1,6 @@
 .workoutList {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
     padding: 16px;
 }
 

@@ -1,0 +1,20 @@
+.cardSelector {
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.module, .subModule, .cardDeck, .card {
+    margin-bottom: 10px;
+}
+
+.module > input, .subModule > input, .cardDeck > input, .card > input {
+    margin-right: 10px;
+}
+
+.subModules, .cardDecks, .cards {
+    margin-left: 20px;
+    padding-left: 10px;
+    border-left: 2px solid #ddd;
+}

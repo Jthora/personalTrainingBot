@@ -6,8 +6,8 @@ import logo from '../../assets/images/WingCommanderLogo-288x162.gif';
 const Header: React.FC = () => {
     const navigate = useNavigate();
 
-    const navigateToSettings = () => {
-        navigate('/settings');
+    const navigateTo = (path: string) => {
+        navigate(path);
     };
 
     return (
@@ -16,7 +16,12 @@ const Header: React.FC = () => {
                 <img src={logo} alt="Logo" className={styles.logo} />
                 <h1 className={styles.headerTitle}>Training Bot</h1>
             </div>
-            <button onClick={navigateToSettings} className={styles.settingsButton}>Settings</button>
+            <nav className={styles.nav}>
+                <button onClick={() => navigateTo('/')} className={styles.navButton}>Home</button> | 
+                <button onClick={() => navigateTo('/training-sequence')} className={styles.navButton}>Training Sequence</button> | 
+                <button onClick={() => navigateTo('/settings')} className={styles.navButton}>Settings</button> | 
+                <button onClick={() => navigateTo('/schedule')} className={styles.navButton}>Schedule</button>
+            </nav>
         </header>
     );
 };

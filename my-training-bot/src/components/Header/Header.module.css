@@ -33,3 +33,20 @@
     display: flex;
     align-items: center;
 }
+
+.nav {
+    margin-left: auto;
+    padding: var(--padding);
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-text-color);
+}
+
+.navButton {
+    /* existing styles */
+}
+
+.active {
+    /* styles for the active button */
+    font-weight: bold;
+    color: #000; /* Example: change color to black */
+}

@@ -35,7 +35,9 @@ class DataLoader {
             console.log("Successfully fetched and parsed training modules JSON.");
         } catch (error) {
             console.error(`Failed to fetch or parse ${modulesPath}:`, error);
-            throw new Error(`Could not load training modules: ${error.message}`);
+            if (error instanceof Error) {
+                throw new Error(`Could not load training modules: ${error.message}`);
+            }
         }
 
         if (!data || !data.modules) {

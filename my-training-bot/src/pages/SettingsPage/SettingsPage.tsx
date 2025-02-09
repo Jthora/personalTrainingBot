@@ -1,14 +1,14 @@
-import styles from './SettingsPage.module.css';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Header from '../../components/Header/Header';
+import CardSelector from '../../components/CardSelector/CardSelector';
+import styles from './SettingsPage.module.css';
 
 const SettingsPage: React.FC = () => {
     return (
         <div className={styles.pageContainer}>
-            <nav className={styles.nav}>
-                <Link to="/">Home</Link> | <Link to="/training-sequence">Training Sequence</Link> | <Link to="/settings">Settings</Link> | <Link to="/schedule">Schedule</Link>
-            </nav>
+            <Header />
             <h1>Settings Page</h1>
+            <CardSelector />
         </div>
     );
 };

@@ -6,8 +6,8 @@
     "estimated_time": "12-36 months",
     "focus": ["Internal Energy", "Balance", "Soft Power"],
     "cardDecks": [
-        "martial_arts/card_decks/tai_chi/push_hands",
-        "martial_arts/card_decks/tai_chi/internal_energy",
-        "martial_arts/card_decks/tai_chi/slow_form_training"
+        "push_hands",
+        "internal_energy",
+        "slow_form_training"
     ]
 }

@@ -6,7 +6,7 @@
     "estimated_time": "3-9 months",
     "focus": ["Arm Waves", "Hand Flow", "Body Isolation"],
     "cardDecks": [
-        "dance/card_decks/liquid_dance/wave_techniques",
-        "dance/card_decks/liquid_dance/hand_glides"
+        "wave_techniques",
+        "hand_glides"
     ]
 }

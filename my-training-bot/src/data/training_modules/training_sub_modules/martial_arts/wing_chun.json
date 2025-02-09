@@ -6,8 +6,8 @@
     "estimated_time": "12-24 months",
     "focus": ["Close Combat", "Efficiency", "Sensitivity"],
     "cardDecks": [
-        "martial_arts/card_decks/wing_chun/chi_sao_sensitivity",
-        "martial_arts/card_decks/wing_chun/wooden_dummy_drills",
-        "martial_arts/card_decks/wing_chun/centerline_striking"
+        "chi_sao_sensitivity",
+        "wooden_dummy_drills",
+        "centerline_striking"
     ]
 }

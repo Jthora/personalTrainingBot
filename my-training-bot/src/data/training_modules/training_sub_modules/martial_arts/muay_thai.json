@@ -6,8 +6,8 @@
     "estimated_time": "12-24 months",
     "focus": ["Striking", "Clinch Fighting", "Powerful Kicks"],
     "cardDecks": [
-        "martial_arts/card_decks/muay_thai/elbow_and_knee_strikes",
-        "martial_arts/card_decks/muay_thai/clinch_and_control",
-        "martial_arts/card_decks/muay_thai/power_kicks"
+        "elbow_and_knee_strikes",
+        "clinch_and_control",
+        "power_kicks"
     ]
 }

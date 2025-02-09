@@ -6,8 +6,8 @@
     "estimated_time": "12-24 months",
     "focus": ["Circular Motion", "Energy Redirection", "Footwork"],
     "cardDecks": [
-        "martial_arts/card_decks/baguazhang/circle_walking",
-        "martial_arts/card_decks/baguazhang/palm_strikes",
-        "martial_arts/card_decks/baguazhang/evasive_movement"
+        "circle_walking",
+        "palm_strikes",
+        "evasive_movement"
     ]
 }

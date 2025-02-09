@@ -26,7 +26,6 @@ class DataLoader {
         let data;
         try {
             console.log(`Fetching training modules from ${modulesPath}...`);
-            // Fetch and parse the main training modules JSON file
             const response = await fetch(modulesPath);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
@@ -46,7 +45,6 @@ class DataLoader {
 
         const trainingModules: TrainingModule[] = [];
 
-        // Iterate over each module reference in the main JSON file
         for (const moduleRef of data.modules as TrainingModuleReference[]) {
             try {
                 const modulePath = `${this.dataPath}/training_modules/${moduleRef.id}.json`;
@@ -58,11 +56,10 @@ class DataLoader {
                 const moduleData = await moduleResponse.json();
                 console.log(`Successfully fetched and parsed training module ${moduleRef.id}.`);
 
-                // Load submodules for each training module
                 const subModules: TrainingSubModule[] = await Promise.all(
                     moduleData.submodules.map(async (subModuleId: string) => {
                         try {
-                            const subModulePath = `${this.dataPath}/training_modules/training_sub_modules/${subModuleId}.json`;
+                            const subModulePath = `${this.dataPath}/training_modules/training_sub_modules/${moduleRef.id}/${subModuleId}.json`;
                             console.log(`Fetching submodule from ${subModulePath}...`);
                             const subModuleResponse = await fetch(subModulePath);
                             if (!subModuleResponse.ok) {
@@ -71,17 +68,18 @@ class DataLoader {
                             const subModuleData = await subModuleResponse.json();
                             console.log(`Successfully fetched and parsed submodule ${subModuleId}.`);
 
-                            // Load card decks for each submodule
                             const cardDecks: CardDeck[] = await Promise.all(
                                 subModuleData.cardDecks.map(async (deckId: string) => {
                                     try {
-                                        const deckPath = `${this.dataPath}/training_modules/card_decks/${deckId}.json`;
+                                        const deckPath = `${this.dataPath}/training_modules/training_sub_modules/${moduleRef.id}/card_decks/${subModuleId}/${deckId}.json`;
                                         console.log(`Fetching card deck from ${deckPath}...`);
                                         const deckResponse = await fetch(deckPath);
                                         if (!deckResponse.ok) {
                                             throw new Error(`HTTP error! status: ${deckResponse.status}`);
                                         }
-                                        const deckData = await deckResponse.json();
+                                        const deckText = await deckResponse.text();
+                                        console.log(`Card deck response text: ${deckText}`);
+                                        const deckData = JSON.parse(deckText);
                                         console.log(`Successfully fetched and parsed card deck ${deckId}.`);
                                         return {
                                             id: deckData.id,
@@ -120,7 +118,6 @@ class DataLoader {
                     })
                 );
 
-                // Add the loaded training module to the list
                 trainingModules.push({
                     id: moduleData.id,
                     name: moduleData.name,
@@ -136,7 +133,6 @@ class DataLoader {
         return trainingModules;
     }
 
-    // Create a fallback card deck in case of failure
     private createFallbackCardDeck(deckId: string): CardDeck {
         return {
             id: deckId,
@@ -147,7 +143,6 @@ class DataLoader {
         };
     }
 
-    // Create a fallback submodule in case of failure
     private createFallbackSubModule(subModuleId: string): TrainingSubModule {
         return {
             id: subModuleId,
@@ -160,7 +155,6 @@ class DataLoader {
         };
     }
 
-    // Create a fallback training module in case of failure
     private createFallbackTrainingModule(moduleId: string): TrainingModule {
         return {
             id: moduleId,

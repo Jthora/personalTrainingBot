@@ -6,8 +6,8 @@
     "estimated_time": "12-36 months",
     "focus": ["Speed", "Efficiency", "Adaptability"],
     "cardDecks": [
-        "martial_arts/card_decks/jeet_kune_do/intercepting_fist",
-        "martial_arts/card_decks/jeet_kune_do/trapping_hands",
-        "martial_arts/card_decks/jeet_kune_do/footwork_and_speed"
+        "intercepting_fist",
+        "trapping_hands",
+        "footwork_and_speed"
     ]
 }

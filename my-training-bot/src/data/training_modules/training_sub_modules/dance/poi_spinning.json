@@ -6,7 +6,7 @@
     "estimated_time": "4-12 months",
     "focus": ["Hand Coordination", "Flow Techniques", "Visual Effects"],
     "cardDecks": [
-        "dance/card_decks/poi_spinning/weave_patterns",
-        "dance/card_decks/poi_spinning/butterfly_moves"
+        "weave_patterns",
+        "butterfly_moves"
     ]
 }

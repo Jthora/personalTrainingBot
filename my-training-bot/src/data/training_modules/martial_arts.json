@@ -5,9 +5,17 @@
     "difficulty": "Beginner to Advanced",
     "estimated_time": "12-36 months",
     "submodules": [
-        "martial_arts/baguazhang",
-        "martial_arts/capoeira",
-        "martial_arts/wing_chun",
-        "martial_arts/shaolin_kung_fu"
+        "baguazhang",
+        "capoeira",
+        "hapkido",
+        "jeet_kune_do",
+        "muay_thai",
+        "shaolin_kung_fu",
+        "silat",
+        "taekwondo",
+        "tai_chi",
+        "wing_chun",
+        "wushu",
+        "xing_yi_quan"
     ]
 }

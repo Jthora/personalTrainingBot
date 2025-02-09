@@ -6,8 +6,8 @@
     "estimated_time": "24-48 months",
     "focus": ["Animal Forms", "Weaponry", "Endurance"],
     "cardDecks": [
-        "martial_arts/card_decks/shaolin_kung_fu/animal_styles",
-        "martial_arts/card_decks/shaolin_kung_fu/iron_body_training",
-        "martial_arts/card_decks/shaolin_kung_fu/staff_and_weaponry"
+        "animal_styles",
+        "iron_body_training",
+        "staff_and_weaponry"
     ]
 }

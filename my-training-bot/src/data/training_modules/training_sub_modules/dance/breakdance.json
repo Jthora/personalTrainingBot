@@ -6,7 +6,7 @@
     "estimated_time": "6-18 months",
     "focus": ["Floorwork", "Power Moves", "Strength"],
     "cardDecks": [
-        "dance/card_decks/breakdance/basic_toprock_moves",
-        "dance/card_decks/breakdance/freeze_techniques"
+        "basic_toprock_moves",
+        "freeze_techniques"
     ]
 }

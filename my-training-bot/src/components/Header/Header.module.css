@@ -42,11 +42,25 @@
 }
 
 .navButton {
-    /* existing styles */
+    background-color: #007BFF; /* Blue */
+    color: #FFFFFF; /* White */
+    border: 2px solid #0056b3; /* Darker blue for border */
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: Aldrich, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: #FFFFFF; /* White */
 }
 
 .active {
-    /* styles for the active button */
+    background-color: #20c997; /* Teal */
+    color: #000000; /* Black */
     font-weight: bold;
-    color: #000; /* Example: change color to black */
+    border: 2px solid #198754; /* Darker teal for border */
 }

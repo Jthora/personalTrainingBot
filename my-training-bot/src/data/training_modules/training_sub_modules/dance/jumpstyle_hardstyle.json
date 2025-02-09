@@ -6,7 +6,7 @@
     "estimated_time": "3-6 months",
     "focus": ["Leg Strength", "High-Tempo Footwork", "Cardio"],
     "cardDecks": [
-        "dance/card_decks/jumpstyle_hardstyle/kicking_sequences",
-        "dance/card_decks/jumpstyle_hardstyle/stamina_drills"
+        "kicking_sequences",
+        "stamina_drills"
     ]
 }

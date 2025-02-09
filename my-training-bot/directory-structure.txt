@@ -21,6 +21,9 @@
 │   ├── cache
 │   │   └── TrainingModuleCache.ts
 │   ├── components
+│   │   ├── CardSelector
+│   │   │   ├── CardSelector.module.css
+│   │   │   └── CardSelector.tsx
 │   │   ├── CardSlot
 │   │   │   ├── CardSlot.module.css
 │   │   │   └── CardSlot.tsx
@@ -56,9 +59,11 @@
 │   │   ├── SettingsContext.tsx
 │   │   └── TrainingSequenceContext.tsx
 │   ├── data
+│   │   ├── .DS_Store
 │   │   ├── training_modules
 │   │   │   ├── agencies.json
 │   │   │   ├── combat.json
+│   │   │   ├── counter_psyops.json
 │   │   │   ├── cybersecurity.json
 │   │   │   ├── dance.json
 │   │   │   ├── espionage.json
@@ -67,33 +72,130 @@
 │   │   │   ├── investigation.json
 │   │   │   ├── martial_arts.json
 │   │   │   ├── psiops.json
-│   │   │   ├── psyops.json
 │   │   │   ├── training_sub_modules
 │   │   │   │   ├── agencies
 │   │   │   │   │   ├── card_decks
+│   │   │   │   │   │   ├── cia_training
+│   │   │   │   │   │   │   ├── counterintelligence_crafting.json
+│   │   │   │   │   │   │   ├── spy_tradecraft.json
+│   │   │   │   │   │   │   └── undercover_surveillance.json
+│   │   │   │   │   │   ├── fbi_training
+│   │   │   │   │   │   │   ├── criminal_profiling_methods.json
+│   │   │   │   │   │   │   ├── cyber_fraud_detection.json
+│   │   │   │   │   │   │   └── forensic_analysis.json
+│   │   │   │   │   │   ├── homeland_security
+│   │   │   │   │   │   │   ├── border_control_tactics.json
+│   │   │   │   │   │   │   ├── emergency_response_drills.json
+│   │   │   │   │   │   │   └── terrorist_threat_analysis.json
+│   │   │   │   │   │   ├── interpol_training
+│   │   │   │   │   │   │   ├── criminal_network_tracking.json
+│   │   │   │   │   │   │   ├── cross_boarder_smuggling_cases.json
+│   │   │   │   │   │   │   └── international_law_training.json
+│   │   │   │   │   │   └── secret_service
+│   │   │   │   │   │       ├── emergency_evasion_maneuvers.json
+│   │   │   │   │   │       ├── financial_fraud_detection.json
+│   │   │   │   │   │       └── protective_service_tactics.json
 │   │   │   │   │   ├── cia_training.json
-│   │   │   │   │   └── fbi_training.json
+│   │   │   │   │   ├── fbi_training.json
+│   │   │   │   │   ├── homeland_security.json
+│   │   │   │   │   ├── interpol_training.json
+│   │   │   │   │   └── secret_service.json
 │   │   │   │   ├── combat
 │   │   │   │   │   ├── card_decks
+│   │   │   │   │   │   ├── close_quarters_combat
+│   │   │   │   │   │   │   ├── ground_fighting.json
+│   │   │   │   │   │   │   ├── striking_and_countermeasures.json
+│   │   │   │   │   │   │   └── weapon_disarm_tactics.json
+│   │   │   │   │   │   ├── combat_scenario_simulation
+│   │   │   │   │   │   │   ├── high_stress_drills.json
+│   │   │   │   │   │   │   ├── live_fire_simulations.json
+│   │   │   │   │   │   │   └── mission_based_training.json
+│   │   │   │   │   │   ├── firearms_training
+│   │   │   │   │   │   │   ├── close_range_shooting.json
+│   │   │   │   │   │   │   ├── pistol_shooting_drills.json
+│   │   │   │   │   │   │   └── rifle_tactics.json
+│   │   │   │   │   │   ├── melee_weapons_training
+│   │   │   │   │   │   │   ├── baton_defensive_moves.json
+│   │   │   │   │   │   │   ├── knife_fighting_tactics.json
+│   │   │   │   │   │   │   └── weapon_retention_drills.json
+│   │   │   │   │   │   ├── stealth_and_escape_tactics
+│   │   │   │   │   │   │   ├── camoflage_and_blending.json
+│   │   │   │   │   │   │   ├── hostile_escape_tactics.json
+│   │   │   │   │   │   │   └── silent_movement_training.json
+│   │   │   │   │   │   └── tactical_movement
+│   │   │   │   │   │       ├── cover_usage_tactics.json
+│   │   │   │   │   │       ├── fire_and_maneuver.json
+│   │   │   │   │   │       └── urban_combat_movement.json
 │   │   │   │   │   ├── close_quarters_combat.json
-│   │   │   │   │   ├── defensive_tactics.json
-│   │   │   │   │   ├── firearms_and_weapons.json
-│   │   │   │   │   ├── grappling_and_ground_fighting.json
-│   │   │   │   │   ├── handgun_marksmanship.json
-│   │   │   │   │   ├── improvised_weapons_training.json
-│   │   │   │   │   ├── knife_fighting.json
-│   │   │   │   │   ├── rifle_marksmanship.json
-│   │   │   │   │   ├── room_clearing.json
-│   │   │   │   │   ├── situational_awareness.json
-│   │   │   │   │   ├── squad_tactics.json
-│   │   │   │   │   ├── stealth_and_silent_takedowns.json
-│   │   │   │   │   ├── tactical_survival.json
-│   │   │   │   │   ├── urban_warfare.json
-│   │   │   │   │   └── weapons_handling.json
+│   │   │   │   │   ├── combat_scenario_simulation.json
+│   │   │   │   │   ├── firearms_training.json
+│   │   │   │   │   ├── melee_weapons_training.json
+│   │   │   │   │   ├── stealth_and_escape_tactics.json
+│   │   │   │   │   └── tactical_movement.json
+│   │   │   │   ├── counter_psyops
+│   │   │   │   │   ├── card_decks
+│   │   │   │   │   │   ├── disinformation_analysis
+│   │   │   │   │   │   │   ├── cognitive_bias_training.json
+│   │   │   │   │   │   │   ├── fact_checking_methods.json
+│   │   │   │   │   │   │   └── false_flag_identification.json
+│   │   │   │   │   │   ├── emotional_resilience_training
+│   │   │   │   │   │   │   ├── cognitive_behavioral_training.json
+│   │   │   │   │   │   │   ├── emotional_control_methods.json
+│   │   │   │   │   │   │   └── resilience_under_pressure.json
+│   │   │   │   │   │   ├── manipulation_detection
+│   │   │   │   │   │   │   ├── advanced_behavioral_analysis.json
+│   │   │   │   │   │   │   ├── gaslighting_and_brainwashing_defense.json
+│   │   │   │   │   │   │   └── identifying_coercion_tactics.json
+│   │   │   │   │   │   ├── mind_hacking_countermeasures
+│   │   │   │   │   │   │   ├── mental_firewalling_techniques.json
+│   │   │   │   │   │   │   ├── nlp_resistance_strategies.json
+│   │   │   │   │   │   │   └── subliminal_manipulation_detection.json
+│   │   │   │   │   │   ├── propaganda_countermeasures
+│   │   │   │   │   │   │   ├── mass_media_analysis.json
+│   │   │   │   │   │   │   ├── narrative_deconstruction_methods.json
+│   │   │   │   │   │   │   └── propaganda_identification.json
+│   │   │   │   │   │   └── psychological_warfare_defense
+│   │   │   │   │   │       ├── counter_propaganda_strategies.json
+│   │   │   │   │   │       ├── deprogramming_psyops_effects.json
+│   │   │   │   │   │       └── mental_resilience_drills.json
+│   │   │   │   │   ├── disinformation_analysis.json
+│   │   │   │   │   ├── emotional_resilience_training.json
+│   │   │   │   │   ├── manipulation_detection.json
+│   │   │   │   │   ├── mind_hacking_countermeasures.json
+│   │   │   │   │   ├── propaganda_countermeasures.json
+│   │   │   │   │   └── psychological_warfare_defense.json
 │   │   │   │   ├── cybersecurity
 │   │   │   │   │   ├── card_decks
-│   │   │   │   │   ├── cybersecurity_training.json
-│   │   │   │   │   └── hacking_training.json
+│   │   │   │   │   │   ├── digital_forensics
+│   │   │   │   │   │   │   ├── forensic_image_analysis.json
+│   │   │   │   │   │   │   ├── log_analysis_and_correlation.json
+│   │   │   │   │   │   │   └── malware_reversing.json
+│   │   │   │   │   │   ├── malware_analysis
+│   │   │   │   │   │   │   ├── binary_disassembly_methods.json
+│   │   │   │   │   │   │   ├── malware_detection_and_removal.json
+│   │   │   │   │   │   │   └── sandbox_analysis.json
+│   │   │   │   │   │   ├── network_security
+│   │   │   │   │   │   │   ├── firewall_configuration.json
+│   │   │   │   │   │   │   ├── intrusion_detection_methods.json
+│   │   │   │   │   │   │   └── network_monitoring_tools.json
+│   │   │   │   │   │   ├── penetration_testing
+│   │   │   │   │   │   │   ├── network_penetration_tests.json
+│   │   │   │   │   │   │   ├── physical_security_exploitation.json
+│   │   │   │   │   │   │   └── web_application_hacking.json
+│   │   │   │   │   │   ├── social_engineering_defense
+│   │   │   │   │   │   │   ├── corporate_security_training.json
+│   │   │   │   │   │   │   ├── phishing_attack_simulation.json
+│   │   │   │   │   │   │   └── social_manipulation_tactics.json
+│   │   │   │   │   │   └── threat_intelligence
+│   │   │   │   │   │       ├── dark_web_monitoring.json
+│   │   │   │   │   │       ├── incident_response_intelligence.json
+│   │   │   │   │   │       └── osint_for_cyber_threats.json
+│   │   │   │   │   ├── digital_forensics.json
+│   │   │   │   │   ├── malware_analysis.json
+│   │   │   │   │   ├── network_security.json
+│   │   │   │   │   ├── penetration_testing.json
+│   │   │   │   │   ├── social_engineering_defense.json
+│   │   │   │   │   └── threat_intelligence.json
 │   │   │   │   ├── dance
 │   │   │   │   │   ├── breakdance.json
 │   │   │   │   │   ├── card_decks
@@ -146,21 +248,162 @@
 │   │   │   │   │   └── rock_dance.json
 │   │   │   │   ├── espionage
 │   │   │   │   │   ├── card_decks
-│   │   │   │   │   ├── counter_espionage_training.json
-│   │   │   │   │   └── deception_and_counterintelligence.json
+│   │   │   │   │   │   ├── clandestine_surveillance
+│   │   │   │   │   │   │   ├── shadowing_techniques.json
+│   │   │   │   │   │   │   ├── signal_interception.json
+│   │   │   │   │   │   │   └── vehicle_tailling.json
+│   │   │   │   │   │   ├── counterintelligence
+│   │   │   │   │   │   │   ├── disinformation_strategies.json
+│   │   │   │   │   │   │   ├── double_agent_management.json
+│   │   │   │   │   │   │   └── spy_identification.json
+│   │   │   │   │   │   ├── covert_operations
+│   │   │   │   │   │   │   ├── covert_sabotage.json
+│   │   │   │   │   │   │   ├── escape_and_evasion.json
+│   │   │   │   │   │   │   └── undercover_roles.json
+│   │   │   │   │   │   ├── disguise_and_identity
+│   │   │   │   │   │   │   ├── costume_and_makeup.json
+│   │   │   │   │   │   │   ├── identity_forging.json
+│   │   │   │   │   │   │   └── social_deception.json
+│   │   │   │   │   │   ├── psychological_manipulation
+│   │   │   │   │   │   │   ├── coercion_methods.json
+│   │   │   │   │   │   │   ├── emotional_exploitation.json
+│   │   │   │   │   │   │   └── persuasion_and_influence.json
+│   │   │   │   │   │   └── tradecraft
+│   │   │   │   │   │       ├── dead_drop_methods.json
+│   │   │   │   │   │       ├── encryption_and_decryption.json
+│   │   │   │   │   │       └── secure_messaging.json
+│   │   │   │   │   ├── clandestine_surveillance.json
+│   │   │   │   │   ├── counterintelligence.json
+│   │   │   │   │   ├── covert_operations.json
+│   │   │   │   │   ├── disguise_and_identity.json
+│   │   │   │   │   ├── psychological_manipulation.json
+│   │   │   │   │   └── tradecraft.json
 │   │   │   │   ├── fitness
+│   │   │   │   │   ├── athletic_performance.json
+│   │   │   │   │   ├── balance_and_stability.json
+│   │   │   │   │   ├── calisthenics.json
 │   │   │   │   │   ├── card_decks
-│   │   │   │   │   ├── cardio_training.json
-│   │   │   │   │   ├── endurance_training.json
-│   │   │   │   │   ├── flexibility_training.json
+│   │   │   │   │   │   ├── athletic_performance
+│   │   │   │   │   │   │   ├── olympic_lifting_basics.json
+│   │   │   │   │   │   │   ├── reaction_time_drills.json
+│   │   │   │   │   │   │   └── speed_endurance_training.json
+│   │   │   │   │   │   ├── balance_and_stability
+│   │   │   │   │   │   │   ├── bosu_ball_exercises.json
+│   │   │   │   │   │   │   ├── dynamic_balance_training.json
+│   │   │   │   │   │   │   └── single_leg_stability_drills.json
+│   │   │   │   │   │   ├── calisthenics
+│   │   │   │   │   │   │   ├── bodyweight_leg_workouts.json
+│   │   │   │   │   │   │   ├── pullup_and_dip_training.json
+│   │   │   │   │   │   │   └── pushup_variations.json
+│   │   │   │   │   │   ├── cardiovascular_endurance
+│   │   │   │   │   │   │   ├── cycling_endurance.json
+│   │   │   │   │   │   │   ├── interval_running.json
+│   │   │   │   │   │   │   └── steady_state_cardio.json
+│   │   │   │   │   │   ├── core_strengthening
+│   │   │   │   │   │   │   ├── dynamic_core_workouts.json
+│   │   │   │   │   │   │   ├── planks_and_static_holds.json
+│   │   │   │   │   │   │   └── rotational_core_exercises.json
+│   │   │   │   │   │   ├── flexibility_and_mobility
+│   │   │   │   │   │   │   ├── dynamic_warmups.json
+│   │   │   │   │   │   │   ├── foam_rolling_and_massage.json
+│   │   │   │   │   │   │   └── static_stretching.json
+│   │   │   │   │   │   ├── functional_fitness
+│   │   │   │   │   │   │   ├── kettlebell_workouts.json
+│   │   │   │   │   │   │   ├── resistance_band_exercises.json
+│   │   │   │   │   │   │   └── sandbag_training.json
+│   │   │   │   │   │   ├── high_intensity_interval_training
+│   │   │   │   │   │   │   ├── circuit_training.json
+│   │   │   │   │   │   │   ├── sprint_intervals.json
+│   │   │   │   │   │   │   └── tabata_protocol.json
+│   │   │   │   │   │   ├── mind_body_fitness
+│   │   │   │   │   │   │   ├── breathwork_and_meditation.json
+│   │   │   │   │   │   │   ├── tai_chi_sequences.json
+│   │   │   │   │   │   │   └── yoga_flows.json
+│   │   │   │   │   │   ├── recovery_and_injury_prevention
+│   │   │   │   │   │   │   ├── mobility_routines.json
+│   │   │   │   │   │   │   ├── rehabilitative_exercises.json
+│   │   │   │   │   │   │   └── self_myofascial_release.json
+│   │   │   │   │   │   ├── speed_and_agility
+│   │   │   │   │   │   │   ├── ladder_drills.json
+│   │   │   │   │   │   │   ├── plyometric_workouts.json
+│   │   │   │   │   │   │   └── sprint_training.json
+│   │   │   │   │   │   └── strength_training
+│   │   │   │   │   │       ├── compound_lifts.json
+│   │   │   │   │   │       ├── isolation_exercises.json
+│   │   │   │   │   │       └── strength_periodization.json
+│   │   │   │   │   ├── cardiovascular_endurance.json
+│   │   │   │   │   ├── core_strengthening.json
+│   │   │   │   │   ├── flexibility_and_mobility.json
+│   │   │   │   │   ├── functional_fitness.json
 │   │   │   │   │   ├── high_intensity_interval_training.json
+│   │   │   │   │   ├── mind_body_fitness.json
+│   │   │   │   │   ├── recovery_and_injury_prevention.json
+│   │   │   │   │   ├── speed_and_agility.json
 │   │   │   │   │   └── strength_training.json
 │   │   │   │   ├── intelligence
+│   │   │   │   │   ├── behavioral_profiling.json
 │   │   │   │   │   ├── card_decks
-│   │   │   │   │   └── strategic_intelligence.json
+│   │   │   │   │   │   ├── behavioral_profiling
+│   │   │   │   │   │   │   ├── criminal_behavior_analysis.json
+│   │   │   │   │   │   │   ├── psychological_operation.json
+│   │   │   │   │   │   │   └── threat_behavior_assessment.json
+│   │   │   │   │   │   ├── cyber_intelligence
+│   │   │   │   │   │   │   ├── cyber_threat_detection.json
+│   │   │   │   │   │   │   ├── digital_forensic_methods.json
+│   │   │   │   │   │   │   └── threat_actor_profiling.json
+│   │   │   │   │   │   ├── intelligence_analysis
+│   │   │   │   │   │   │   ├── data_collection_methods.json
+│   │   │   │   │   │   │   ├── predictive_analysis.json
+│   │   │   │   │   │   │   └── threat_assessment_models.json
+│   │   │   │   │   │   ├── linguistic_analysis
+│   │   │   │   │   │   │   ├── deception_detection_techniques.json
+│   │   │   │   │   │   │   ├── language_pattern_recognition.json
+│   │   │   │   │   │   │   └── sentiment_analysis_methods.json
+│   │   │   │   │   │   ├── open_source_intelligence
+│   │   │   │   │   │   │   ├── osint_tools_and_methods.json
+│   │   │   │   │   │   │   ├── public_records_analysis.json
+│   │   │   │   │   │   │   └── social_media_monitoring.json
+│   │   │   │   │   │   └── strategic_forecasting
+│   │   │   │   │   │       ├── future_trend_analysis.json
+│   │   │   │   │   │       ├── geopolitical_simulations.json
+│   │   │   │   │   │       └── risk_prediction_models.json
+│   │   │   │   │   ├── cyber_intelligence.json
+│   │   │   │   │   ├── intelligence_analysis.json
+│   │   │   │   │   ├── linguistic_analysis.json
+│   │   │   │   │   ├── open_source_intelligence.json
+│   │   │   │   │   └── strategic_forecasting.json
 │   │   │   │   ├── investigation
 │   │   │   │   │   ├── card_decks
-│   │   │   │   │   └── forensic_investigation_training.json
+│   │   │   │   │   │   ├── criminal_profiling
+│   │   │   │   │   │   │   ├── behavioral_profiling_methods.json
+│   │   │   │   │   │   │   ├── offender_typologies.json
+│   │   │   │   │   │   │   └── threat_assessment.json
+│   │   │   │   │   │   ├── cybercrime_analysis
+│   │   │   │   │   │   │   ├── cyber_fraud_detection.json
+│   │   │   │   │   │   │   ├── dark_web_investigations.json
+│   │   │   │   │   │   │   └── malware_analysis.json
+│   │   │   │   │   │   ├── digital_forensics
+│   │   │   │   │   │   │   ├── computer_forensic_analysis.json
+│   │   │   │   │   │   │   ├── mobile_device_exploitation.json
+│   │   │   │   │   │   │   └── network_packet_analysis.json
+│   │   │   │   │   │   ├── financial_crimes
+│   │   │   │   │   │   │   ├── financial_statement_analysis.json
+│   │   │   │   │   │   │   ├── fraud_detection_techniques.json
+│   │   │   │   │   │   │   └── money_laundering_patterns.json
+│   │   │   │   │   │   ├── forensic_investigation
+│   │   │   │   │   │   │   ├── crime_scene_processing.json
+│   │   │   │   │   │   │   ├── dna_and_fingerprint_analysis.json
+│   │   │   │   │   │   │   └── forensic_lab_procedures.json
+│   │   │   │   │   │   └── homicide_investigation
+│   │   │   │   │   │       ├── cause_of_death_forensics.json
+│   │   │   │   │   │       ├── homicide_case_studies.json
+│   │   │   │   │   │       └── suspect_interview_methods.json
+│   │   │   │   │   ├── criminal_profiling.json
+│   │   │   │   │   ├── cybercrime_analysis.json
+│   │   │   │   │   ├── digital_forensics.json
+│   │   │   │   │   ├── financial_crimes.json
+│   │   │   │   │   ├── forensic_investigation.json
+│   │   │   │   │   └── homicide_investigation.json
 │   │   │   │   ├── martial_arts
 │   │   │   │   │   ├── baguazhang.json
 │   │   │   │   │   ├── capoeira.json
@@ -225,19 +468,68 @@
 │   │   │   │   │   └── xing_yi_quan.json
 │   │   │   │   ├── psiops
 │   │   │   │   │   ├── card_decks
-│   │   │   │   │   ├── psi_ops_training.json
-│   │   │   │   │   └── psionics_training.json
-│   │   │   │   ├── psyops
-│   │   │   │   │   ├── card_decks
-│   │   │   │   │   ├── counter_psyops_training.json
-│   │   │   │   │   └── psychological_warfare_training.json
+│   │   │   │   │   │   ├── clairvoyance_and_telepathy
+│   │   │   │   │   │   │   ├── clairvoyant_perception.json
+│   │   │   │   │   │   │   ├── mind_to_mind_communication.json
+│   │   │   │   │   │   │   └── prophetic_dreams.json
+│   │   │   │   │   │   ├── energy_manipulation
+│   │   │   │   │   │   │   ├── aura_sensing_and_control.json
+│   │   │   │   │   │   │   ├── energy_channeling.json
+│   │   │   │   │   │   │   └── psionic_deflection.json
+│   │   │   │   │   │   ├── psionic_training
+│   │   │   │   │   │   │   ├── mental_energy_control.json
+│   │   │   │   │   │   │   ├── psi_exercises.json
+│   │   │   │   │   │   │   └── psionic_meditation.json
+│   │   │   │   │   │   ├── psionic_weaponry
+│   │   │   │   │   │   │   ├── energy_weapon_training.json
+│   │   │   │   │   │   │   ├── psi_blade_techniques.json
+│   │   │   │   │   │   │   └── telekinetic_strikes.json
+│   │   │   │   │   │   ├── psychic_shielding
+│   │   │   │   │   │   │   ├── anti_psychic_countermeasures.json
+│   │   │   │   │   │   │   ├── energy_barriers.json
+│   │   │   │   │   │   │   └── mental_fortress_building.json
+│   │   │   │   │   │   └── remote_viewing
+│   │   │   │   │   │       ├── controlled_viewing_methods.json
+│   │   │   │   │   │       ├── psychic_perception.json
+│   │   │   │   │   │       └── target_acquisition.json
+│   │   │   │   │   ├── clairvoyance_and_telepathy.json
+│   │   │   │   │   ├── energy_manipulation.json
+│   │   │   │   │   ├── psionic_training.json
+│   │   │   │   │   ├── psionic_weaponry.json
+│   │   │   │   │   ├── psychic_shielding.json
+│   │   │   │   │   └── remote_viewing.json
 │   │   │   │   └── war_strategy
+│   │   │   │       ├── asymmetric_warfare.json
 │   │   │   │       ├── card_decks
-│   │   │   │       ├── cyber_warfare.json
-│   │   │   │       ├── guerrilla_warfare.json
-│   │   │   │       ├── military_tactics.json
-│   │   │   │       ├── psychological_operations.json
-│   │   │   │       └── strategic_warfare.json
+│   │   │   │       │   ├── asymmetric_warfare
+│   │   │   │       │   │   ├── counter_terrorism_operations.json
+│   │   │   │       │   │   ├── insurgency_tactics.json
+│   │   │   │       │   │   └── urban_warfare_strategies.json
+│   │   │   │       │   ├── cyber_warfare_strategy
+│   │   │   │       │   │   ├── cyber_intelligence_operations.json
+│   │   │   │       │   │   ├── defensive_network_security.json
+│   │   │   │       │   │   └── offensive_cyber_tactics.json
+│   │   │   │       │   ├── geopolitical_analysis
+│   │   │   │       │   │   ├── economic_sanctions_tactics.json
+│   │   │   │       │   │   ├── global_conflict_trends.json
+│   │   │   │       │   │   └── pilitical_warfare_analysis.json
+│   │   │   │       │   ├── military_strategy
+│   │   │   │       │   │   ├── combined_arms_operations.json
+│   │   │   │       │   │   ├── force_maneuvering.json
+│   │   │   │       │   │   └── suppy_chain_tactics.json
+│   │   │   │       │   ├── psychological_operations_tactics
+│   │   │   │       │   │   ├── counter_psyops_strategies.json
+│   │   │   │       │   │   ├── covert_psychological_warfare.json
+│   │   │   │       │   │   └── influence_campaigns.json
+│   │   │   │       │   └── special_operations_planning
+│   │   │   │       │       ├── covert_infiltration_methods.json
+│   │   │   │       │       ├── extraction_and_escape_tactics.json
+│   │   │   │       │       └── mission_planning_and_execution.json
+│   │   │   │       ├── cyber_warfare_strategy.json
+│   │   │   │       ├── geopolitical_analysis.json
+│   │   │   │       ├── military_strategy.json
+│   │   │   │       ├── psychological_operations_tactics.json
+│   │   │   │       └── special_operations_planning.json
 │   │   │   └── war_strategy.json
 │   │   └── training_modules.json
 │   ├── hooks
@@ -271,6 +563,7 @@
 │   │   ├── TrainingModuleReference.ts
 │   │   └── TrainingSubModule.ts
 │   ├── utils
+│   │   ├── CardDealer.ts
 │   │   ├── DataLoader.ts
 │   │   ├── ScheduleGenerator.ts
 │   │   └── SoundManager.ts
@@ -284,4 +577,4 @@
 ├── tsconfig.node.json
 └── vite.config.ts
 
-84 directories, 201 files
+150 directories, 428 files

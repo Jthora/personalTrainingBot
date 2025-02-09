@@ -6,7 +6,7 @@
     "estimated_time": "4-12 months",
     "focus": ["Popping", "Tutting", "Illusion-Based Moves"],
     "cardDecks": [
-        "dance/card_decks/dubstep_glitch/slow_motion_effects",
-        "dance/card_decks/dubstep_glitch/bass_drop_isolations"
+        "slow_motion_effects",
+        "bass_drop_isolations"
     ]
 }

@@ -6,7 +6,7 @@
     "estimated_time": "3-9 months",
     "focus": ["Fast Footwork", "Agility", "Synchronization"],
     "cardDecks": [
-        "dance/card_decks/cutting_shapes/heel_toe_variations",
-        "dance/card_decks/cutting_shapes/speed_training"
+        "heel_toe_variations",
+        "speed_training"
     ]
 }

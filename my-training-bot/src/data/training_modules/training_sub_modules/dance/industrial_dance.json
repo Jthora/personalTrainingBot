@@ -6,7 +6,7 @@
     "estimated_time": "2-8 months",
     "focus": ["Heavy Stomps", "Arm & Leg Isolation", "Rhythmic Precision"],
     "cardDecks": [
-        "dance/card_decks/industrial_dance/footwork_patterns",
-        "dance/card_decks/industrial_dance/arm_synchronization"
+        "footwork_patterns",
+        "arm_synchronization"
     ]
 }

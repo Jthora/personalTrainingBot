@@ -6,7 +6,7 @@
     "estimated_time": "4-10 months",
     "focus": ["Hand Coordination", "Illusions", "Precision"],
     "cardDecks": [
-        "dance/card_decks/gloving_tutting/finger_isolations",
-        "dance/card_decks/gloving_tutting/box_tutting_patterns"
+        "finger_isolations",
+        "box_tutting_patterns"
     ]
 }

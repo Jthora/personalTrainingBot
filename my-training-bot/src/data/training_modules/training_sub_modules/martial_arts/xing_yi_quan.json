@@ -6,8 +6,8 @@
     "estimated_time": "12-24 months",
     "focus": ["Explosive Power", "Internal Strength", "Animal Forms"],
     "cardDecks": [
-        "martial_arts/card_decks/xing_yi_quan/five_element_strikes",
-        "martial_arts/card_decks/xing_yi_quan/animal_forms",
-        "martial_arts/card_decks/xing_yi_quan/explosive_power"
+        "five_element_strikes",
+        "animal_forms",
+        "explosive_power"
     ]
 }

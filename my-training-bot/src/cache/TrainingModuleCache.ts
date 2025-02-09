@@ -51,6 +51,30 @@ export class TrainingModuleCache {
         }
     }
 
+    public toggleSubModuleSelection(id: string): void {
+        if (this.selectedSubModules.has(id)) {
+            this.selectedSubModules.delete(id);
+        } else {
+            this.selectedSubModules.add(id);
+        }
+    }
+
+    public toggleCardDeckSelection(id: string): void {
+        if (this.selectedCardDecks.has(id)) {
+            this.selectedCardDecks.delete(id);
+        } else {
+            this.selectedCardDecks.add(id);
+        }
+    }
+
+    public toggleCardSelection(id: string): void {
+        if (this.selectedCards.has(id)) {
+            this.selectedCards.delete(id);
+        } else {
+            this.selectedCards.add(id);
+        }
+    }
+
     public isModuleSelected(id: string): boolean {
         return this.selectedModules.has(id);
     }

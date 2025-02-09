@@ -6,7 +6,7 @@
     "estimated_time": "Ongoing",
     "focus": ["Personal Style", "Beat Sensitivity", "Crowd Interaction"],
     "cardDecks": [
-        "dance/card_decks/freestyle_rave/body_bounce_rhythm",
-        "dance/card_decks/freestyle_rave/flow_transitions"
+        "body_bounce_rhythm",
+        "flow_transitions"
     ]
 }

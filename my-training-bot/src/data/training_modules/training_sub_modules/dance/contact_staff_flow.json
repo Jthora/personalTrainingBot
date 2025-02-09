@@ -6,7 +6,7 @@
     "estimated_time": "3-6 months",
     "focus": ["Prop Manipulation", "Balance", "Body Rolls"],
     "cardDecks": [
-        "dance/card_decks/contact_staff_flow/spins_and_transitions",
-        "dance/card_decks/contact_staff_flow/advanced_flourishes"
+        "spins_and_transitions",
+        "advanced_flourishes"
     ]
 }

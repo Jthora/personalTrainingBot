@@ -80,14 +80,21 @@ class DataLoader {
                                             name: deckData.name,
                                             description: deckData.description,
                                             focus: deckData.focus,
-                                            cards: deckData.cards.map((card: Card) => ({
-                                                id: card.id,
-                                                title: card.title,
-                                                description: card.description,
-                                                bulletpoints: Array.isArray(card.bulletpoints) ? card.bulletpoints : [],
-                                                duration: card.duration,
-                                                difficulty: card.difficulty
-                                            }))
+                                            cards: deckData.cards.map((card: Card) => {
+                                                const bulletpoints = Array.isArray(card.bulletpoints)
+                                                    ? card.bulletpoints
+                                                    : typeof card.bulletpoints === 'string'
+                                                    ? (card.bulletpoints as string).split(',').map((point: string) => point.trim())
+                                                    : [];
+                                                return {
+                                                    id: card.id,
+                                                    title: card.title,
+                                                    description: card.description,
+                                                    bulletpoints: bulletpoints,
+                                                    duration: card.duration,
+                                                    difficulty: card.difficulty
+                                                };
+                                            })
                                         };
                                     } catch (error) {
                                         console.error(`Failed to load card deck ${deckId}:`, error);

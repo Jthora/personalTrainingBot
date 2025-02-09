@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Weak",
+        "description": "Basic mobility & recovery level."
+    },
+    {
+        "name": "Beginner",
+        "description": "Light endurance & strength training."
+    },
+    {
+        "name": "Light",
+        "description": "Increased intensity, low reps."
+    },
+    {
+        "name": "Basic",
+        "description": "Standard bodyweight training."
+    },
+    {
+        "name": "Intermediate",
+        "description": "Introduction of weighted elements."
+    },
+    {
+        "name": "Standard",
+        "description": "USMC Standard-level fitness."
+    },
+    {
+        "name": "Experienced",
+        "description": "Above military standard training."
+    },
+    {
+        "name": "Heavy",
+        "description": "Intense strength, endurance, and agility combo."
+    },
+    {
+        "name": "Advanced",
+        "description": "Near Special Forces-level intensity."
+    },
+    {
+        "name": "Challenge",
+        "description": "Extreme combat-ready training."
+    },
+    {
+        "name": "Expert",
+        "description": "Tactical athlete level, preparing for real-world battles."
+    },
+    {
+        "name": "Extreme",
+        "description": "Overcoming elite military physical training."
+    }
+]

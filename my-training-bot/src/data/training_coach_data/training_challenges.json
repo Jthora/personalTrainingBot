@@ -1,0 +1,182 @@
+[
+    {
+        "name": "Newbie Challenge",
+        "task": "Run 1 mile in 12 minutes, perform 10 pushups, and 15 situps.",
+        "level": 0
+    },
+    {
+        "name": "Newbie Strength Test",
+        "task": "Perform 1 pullup, 10 squats, and 10 burpees.",
+        "level": 0
+    },
+    {
+        "name": "Newbie Endurance",
+        "task": "Hold a plank for 30 seconds, and do 20 jumping jacks.",
+        "level": 0
+    },
+    {
+        "name": "Beginner Challenge",
+        "task": "Run 1 mile in 10 minutes, perform 20 pushups, and 25 situps.",
+        "level": 1
+    },
+    {
+        "name": "Beginner Strength Test",
+        "task": "Perform 2 pullups, 20 squats, and 20 burpees.",
+        "level": 1
+    },
+    {
+        "name": "Beginner Endurance",
+        "task": "Hold a plank for 45 seconds, and do 30 jumping jacks.",
+        "level": 1
+    },
+    {
+        "name": "Novice Challenge",
+        "task": "Run 1.5 miles in 13 minutes, perform 30 pushups, and 35 situps.",
+        "level": 2
+    },
+    {
+        "name": "Novice Strength Test",
+        "task": "Perform 3 pullups, 30 squats, and 30 burpees.",
+        "level": 2
+    },
+    {
+        "name": "Novice Endurance",
+        "task": "Hold a plank for 1 minute, and do 40 jumping jacks.",
+        "level": 2
+    },
+    {
+        "name": "Intermediate Challenge",
+        "task": "Run 2 miles in 16 minutes, perform 40 pushups, and 45 situps.",
+        "level": 3
+    },
+    {
+        "name": "Intermediate Strength Test",
+        "task": "Perform 5 pullups, 40 squats, and 40 burpees.",
+        "level": 3
+    },
+    {
+        "name": "Intermediate Endurance",
+        "task": "Hold a plank for 1.5 minutes, and do 50 jumping jacks.",
+        "level": 3
+    },
+    {
+        "name": "Skilled Challenge",
+        "task": "Run 2.5 miles in 20 minutes, perform 50 pushups, and 55 situps.",
+        "level": 4
+    },
+    {
+        "name": "Skilled Strength Test",
+        "task": "Perform 7 pullups, 50 squats, and 50 burpees.",
+        "level": 4
+    },
+    {
+        "name": "Skilled Endurance",
+        "task": "Hold a plank for 2 minutes, and do 60 jumping jacks.",
+        "level": 4
+    },
+    {
+        "name": "Advanced Challenge",
+        "task": "Run 3 miles in 24 minutes, perform 60 pushups, and 65 situps.",
+        "level": 5
+    },
+    {
+        "name": "Advanced Strength Test",
+        "task": "Perform 10 pullups, 60 squats, and 60 burpees.",
+        "level": 5
+    },
+    {
+        "name": "Advanced Endurance",
+        "task": "Hold a plank for 2.5 minutes, and do 70 jumping jacks.",
+        "level": 5
+    },
+    {
+        "name": "Expert Challenge",
+        "task": "Run 3.5 miles in 28 minutes, perform 70 pushups, and 75 situps.",
+        "level": 6
+    },
+    {
+        "name": "Expert Strength Test",
+        "task": "Perform 15 pullups, 70 squats, and 70 burpees.",
+        "level": 6
+    },
+    {
+        "name": "Expert Endurance",
+        "task": "Hold a plank for 3 minutes, and do 80 jumping jacks.",
+        "level": 6
+    },
+    {
+        "name": "Elite Challenge",
+        "task": "Run 4 miles in 32 minutes, perform 80 pushups, and 85 situps.",
+        "level": 7
+    },
+    {
+        "name": "Elite Strength Test",
+        "task": "Perform 20 pullups, 80 squats, and 80 burpees.",
+        "level": 7
+    },
+    {
+        "name": "Elite Endurance",
+        "task": "Hold a plank for 3.5 minutes, and do 90 jumping jacks.",
+        "level": 7
+    },
+    {
+        "name": "Master Challenge",
+        "task": "Run 4.5 miles in 36 minutes, perform 90 pushups, and 95 situps.",
+        "level": 8
+    },
+    {
+        "name": "Master Strength Test",
+        "task": "Perform 30 pullups, 90 squats, and 90 burpees.",
+        "level": 8
+    },
+    {
+        "name": "Master Endurance",
+        "task": "Hold a plank for 4 minutes, and do 100 jumping jacks.",
+        "level": 8
+    },
+    {
+        "name": "Legendary Challenge",
+        "task": "Run 5 miles in 40 minutes, perform 100 pushups, and 105 situps.",
+        "level": 9
+    },
+    {
+        "name": "Legendary Strength Test",
+        "task": "Perform 40 pullups, 100 squats, and 100 burpees.",
+        "level": 9
+    },
+    {
+        "name": "Legendary Endurance",
+        "task": "Hold a plank for 4.5 minutes, and do 110 jumping jacks.",
+        "level": 9
+    },
+    {
+        "name": "Mythical Challenge",
+        "task": "Run 5.5 miles in 44 minutes, perform 110 pushups, and 115 situps.",
+        "level": 10
+    },
+    {
+        "name": "Mythical Strength Test",
+        "task": "Perform 50 pullups, 110 squats, and 110 burpees.",
+        "level": 10
+    },
+    {
+        "name": "Mythical Endurance",
+        "task": "Hold a plank for 5 minutes, and do 120 jumping jacks.",
+        "level": 10
+    },
+    {
+        "name": "Godlike Challenge",
+        "task": "Run 6 miles in 48 minutes, perform 120 pushups, and 125 situps.",
+        "level": 11
+    },
+    {
+        "name": "Godlike Strength Test",
+        "task": "Perform 60 pullups, 120 squats, and 120 burpees.",
+        "level": 11
+    },
+    {
+        "name": "Godlike Endurance",
+        "task": "Hold a plank for 5.5 minutes, and do 130 jumping jacks.",
+        "level": 11
+    }
+]

@@ -1,0 +1,118 @@
+{
+    "cardio": [
+        {
+            "name": "Treadmill Sprint",
+            "description": "Run at full speed for 1-minute bursts.",
+            "difficulty": [
+                "Intermediate",
+                "Advanced",
+                "Extreme"
+            ]
+        },
+        {
+            "name": "Shadow Running",
+            "description": "Run silently and land lightly to improve agility.",
+            "difficulty": [
+                "Basic",
+                "Intermediate",
+                "Advanced"
+            ]
+        },
+        {
+            "name": "Tiger Chase Mode",
+            "description": "Sprint as if you are hunting prey.",
+            "difficulty": [
+                "Advanced",
+                "Expert",
+                "Extreme"
+            ]
+        }
+    ],
+    "strength": [
+        {
+            "name": "Pushups",
+            "description": "Standard pushups, increasing difficulty over time.",
+            "difficulty": [
+                "Beginner",
+                "Intermediate",
+                "Advanced"
+            ]
+        },
+        {
+            "name": "Kettlebell Swings",
+            "description": "Swing the kettlebell overhead for explosive power.",
+            "difficulty": [
+                "Basic",
+                "Intermediate",
+                "Experienced"
+            ]
+        },
+        {
+            "name": "Pull-Ups",
+            "description": "Perform full-range pull-ups, increasing reps.",
+            "difficulty": [
+                "Standard",
+                "Experienced",
+                "Expert"
+            ]
+        }
+    ],
+    "agility": [
+        {
+            "name": "Jo Staff Drills",
+            "description": "Practice flow and striking accuracy.",
+            "difficulty": [
+                "Basic",
+                "Intermediate",
+                "Advanced"
+            ]
+        },
+        {
+            "name": "Jump Training",
+            "description": "Leap to your maximum height.",
+            "difficulty": [
+                "Intermediate",
+                "Advanced",
+                "Extreme"
+            ]
+        },
+        {
+            "name": "Rolling & Evasion",
+            "description": "Dodge attacks and roll into position.",
+            "difficulty": [
+                "Basic",
+                "Intermediate",
+                "Advanced"
+            ]
+        }
+    ],
+    "combat": [
+        {
+            "name": "Punching Bag Strikes",
+            "description": "Unleash full-power strikes with speed.",
+            "difficulty": [
+                "Standard",
+                "Experienced",
+                "Expert"
+            ]
+        },
+        {
+            "name": "Gun Draw Speed",
+            "description": "Practice drawing and aiming under pressure.",
+            "difficulty": [
+                "Intermediate",
+                "Advanced",
+                "Extreme"
+            ]
+        },
+        {
+            "name": "Tiger Fury Combo",
+            "description": "A combination of punches, kicks, and counters.",
+            "difficulty": [
+                "Advanced",
+                "Expert",
+                "Extreme"
+            ]
+        }
+    ]
+}

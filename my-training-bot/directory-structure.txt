@@ -14,13 +14,22 @@
 │   │   ├── fonts
 │   │   │   └── Aldrich-Regular.ttf
 │   │   ├── images
+│   │   │   ├── .DS_Store
 │   │   │   ├── WingCommanderLogo-288x162.gif
 │   │   │   └── icons
+│   │   │       ├── .DS_Store
+│   │   │       ├── tiger_fitness_god-icon-512x.png
+│   │   │       ├── tiger_fitness_god-icon.png
+│   │   │       └── training_modules
 │   │   ├── react.svg
 │   │   └── sounds
 │   ├── cache
+│   │   ├── CoachTrainingCache.ts
 │   │   └── TrainingModuleCache.ts
 │   ├── components
+│   │   ├── AudioPlayer
+│   │   │   ├── AudioPlayer.module.css
+│   │   │   └── AudioPlayer.tsx
 │   │   ├── CardSelector
 │   │   │   ├── CardSelector.module.css
 │   │   │   └── CardSelector.tsx
@@ -30,6 +39,9 @@
 │   │   ├── CardTable
 │   │   │   ├── CardTable.module.css
 │   │   │   └── CardTable.tsx
+│   │   ├── CoachDialog
+│   │   │   ├── CoachDialog.module.css
+│   │   │   └── CoachDialog.tsx
 │   │   ├── Header
 │   │   │   ├── Header.module.css
 │   │   │   └── Header.tsx
@@ -45,21 +57,37 @@
 │   │   ├── StatsPanel
 │   │   │   ├── StatsPanel.module.css
 │   │   │   └── StatsPanel.tsx
-│   │   ├── Timer
-│   │   │   ├── Timer.module.css
-│   │   │   └── Timer.tsx
+│   │   ├── TimerControls
+│   │   │   ├── TimerControls.module.css
+│   │   │   └── TimerControls.tsx
 │   │   ├── TrainingDfficulty
 │   │   │   ├── TrainingDifficulty.module.css
 │   │   │   └── TrainingDifficulty.tsx
-│   │   └── TrainingSequence
-│   │       ├── TrainingSequence.module.css
-│   │       └── TrainingSequence.tsx
+│   │   ├── TrainingSequence
+│   │   │   ├── TrainingSequence.module.css
+│   │   │   └── TrainingSequence.tsx
+│   │   ├── WorkoutCard
+│   │   │   ├── WorkoutCard.module.css
+│   │   │   └── WorkoutCard.tsx
+│   │   ├── WorkoutDetails
+│   │   │   ├── WorkoutDetails.module.css
+│   │   │   └── WorkoutDetails.tsx
+│   │   └── WorkoutScheduler
+│   │       ├── WorkoutScheduler.module.css
+│   │       └── WorkoutScheduler.tsx
 │   ├── context
+│   │   ├── CardContext.tsx
 │   │   ├── ScheduleContext.tsx
 │   │   ├── SettingsContext.tsx
 │   │   └── TrainingSequenceContext.tsx
 │   ├── data
 │   │   ├── .DS_Store
+│   │   ├── training_coach_data
+│   │   │   ├── difficulty_levels.json
+│   │   │   ├── ranks.json
+│   │   │   ├── tiger_speech.json
+│   │   │   ├── training_challenges.json
+│   │   │   └── workouts.json
 │   │   ├── training_modules
 │   │   │   ├── agencies.json
 │   │   │   ├── combat.json
@@ -76,7 +104,7 @@
 │   │   │   │   ├── agencies
 │   │   │   │   │   ├── card_decks
 │   │   │   │   │   │   ├── cia_training
-│   │   │   │   │   │   │   ├── counterintelligence_crafting.json
+│   │   │   │   │   │   │   ├── counterintelligence_tactics.json
 │   │   │   │   │   │   │   ├── spy_tradecraft.json
 │   │   │   │   │   │   │   └── undercover_surveillance.json
 │   │   │   │   │   │   ├── fbi_training
@@ -89,8 +117,8 @@
 │   │   │   │   │   │   │   └── terrorist_threat_analysis.json
 │   │   │   │   │   │   ├── interpol_training
 │   │   │   │   │   │   │   ├── criminal_network_tracking.json
-│   │   │   │   │   │   │   ├── cross_boarder_smuggling_cases.json
-│   │   │   │   │   │   │   └── international_law_training.json
+│   │   │   │   │   │   │   ├── cross_border_smuggling_cases.json
+│   │   │   │   │   │   │   └── international_law_basics.json
 │   │   │   │   │   │   └── secret_service
 │   │   │   │   │   │       ├── emergency_evasion_maneuvers.json
 │   │   │   │   │   │       ├── financial_fraud_detection.json
@@ -104,7 +132,7 @@
 │   │   │   │   │   ├── card_decks
 │   │   │   │   │   │   ├── close_quarters_combat
 │   │   │   │   │   │   │   ├── ground_fighting.json
-│   │   │   │   │   │   │   ├── striking_and_countermeasures.json
+│   │   │   │   │   │   │   ├── striking_and_counterattacks.json
 │   │   │   │   │   │   │   └── weapon_disarm_tactics.json
 │   │   │   │   │   │   ├── combat_scenario_simulation
 │   │   │   │   │   │   │   ├── high_stress_drills.json
@@ -119,7 +147,7 @@
 │   │   │   │   │   │   │   ├── knife_fighting_tactics.json
 │   │   │   │   │   │   │   └── weapon_retention_drills.json
 │   │   │   │   │   │   ├── stealth_and_escape_tactics
-│   │   │   │   │   │   │   ├── camoflage_and_blending.json
+│   │   │   │   │   │   │   ├── camouflage_and_blending.json
 │   │   │   │   │   │   │   ├── hostile_escape_tactics.json
 │   │   │   │   │   │   │   └── silent_movement_training.json
 │   │   │   │   │   │   └── tactical_movement
@@ -229,12 +257,9 @@
 │   │   │   │   │   │   ├── liquid_dance
 │   │   │   │   │   │   │   ├── hand_glides.json
 │   │   │   │   │   │   │   └── wave_techniques.json
-│   │   │   │   │   │   ├── poi_spinning
-│   │   │   │   │   │   │   ├── butterfly_moves.json
-│   │   │   │   │   │   │   └── weave_patterns.json
-│   │   │   │   │   │   └── rock_dance
-│   │   │   │   │   │       ├── chaotic_flow.json
-│   │   │   │   │   │       └── headbang_rhythm.json
+│   │   │   │   │   │   └── poi_spinning
+│   │   │   │   │   │       ├── butterfly_moves.json
+│   │   │   │   │   │       └── weave_patterns.json
 │   │   │   │   │   ├── contact_staff_flow.json
 │   │   │   │   │   ├── cutting_shapes.json
 │   │   │   │   │   ├── dubstep_glitch.json
@@ -244,14 +269,13 @@
 │   │   │   │   │   ├── industrial_dance.json
 │   │   │   │   │   ├── jumpstyle_hardstyle.json
 │   │   │   │   │   ├── liquid_dance.json
-│   │   │   │   │   ├── poi_spinning.json
-│   │   │   │   │   └── rock_dance.json
+│   │   │   │   │   └── poi_spinning.json
 │   │   │   │   ├── espionage
 │   │   │   │   │   ├── card_decks
 │   │   │   │   │   │   ├── clandestine_surveillance
 │   │   │   │   │   │   │   ├── shadowing_techniques.json
 │   │   │   │   │   │   │   ├── signal_interception.json
-│   │   │   │   │   │   │   └── vehicle_tailling.json
+│   │   │   │   │   │   │   └── vehicle_tailing.json
 │   │   │   │   │   │   ├── counterintelligence
 │   │   │   │   │   │   │   ├── disinformation_strategies.json
 │   │   │   │   │   │   │   ├── double_agent_management.json
@@ -345,7 +369,7 @@
 │   │   │   │   │   ├── card_decks
 │   │   │   │   │   │   ├── behavioral_profiling
 │   │   │   │   │   │   │   ├── criminal_behavior_analysis.json
-│   │   │   │   │   │   │   ├── psychological_operation.json
+│   │   │   │   │   │   │   ├── psychological_operations.json
 │   │   │   │   │   │   │   └── threat_behavior_assessment.json
 │   │   │   │   │   │   ├── cyber_intelligence
 │   │   │   │   │   │   │   ├── cyber_threat_detection.json
@@ -383,7 +407,7 @@
 │   │   │   │   │   │   │   ├── dark_web_investigations.json
 │   │   │   │   │   │   │   └── malware_analysis.json
 │   │   │   │   │   │   ├── digital_forensics
-│   │   │   │   │   │   │   ├── computer_forensic_analysis.json
+│   │   │   │   │   │   │   ├── computer_forensic_methods.json
 │   │   │   │   │   │   │   ├── mobile_device_exploitation.json
 │   │   │   │   │   │   │   └── network_packet_analysis.json
 │   │   │   │   │   │   ├── financial_crimes
@@ -481,7 +505,7 @@
 │   │   │   │   │   │   │   ├── psi_exercises.json
 │   │   │   │   │   │   │   └── psionic_meditation.json
 │   │   │   │   │   │   ├── psionic_weaponry
-│   │   │   │   │   │   │   ├── energy_weapon_training.json
+│   │   │   │   │   │   │   ├── energy_weapons_training.json
 │   │   │   │   │   │   │   ├── psi_blade_techniques.json
 │   │   │   │   │   │   │   └── telekinetic_strikes.json
 │   │   │   │   │   │   ├── psychic_shielding
@@ -512,11 +536,11 @@
 │   │   │   │       │   ├── geopolitical_analysis
 │   │   │   │       │   │   ├── economic_sanctions_tactics.json
 │   │   │   │       │   │   ├── global_conflict_trends.json
-│   │   │   │       │   │   └── pilitical_warfare_analysis.json
+│   │   │   │       │   │   └── political_warfare_analysis.json
 │   │   │   │       │   ├── military_strategy
 │   │   │   │       │   │   ├── combined_arms_operations.json
 │   │   │   │       │   │   ├── force_maneuvering.json
-│   │   │   │       │   │   └── suppy_chain_tactics.json
+│   │   │   │       │   │   └── supply_chain_tactics.json
 │   │   │   │       │   ├── psychological_operations_tactics
 │   │   │   │       │   │   ├── counter_psyops_strategies.json
 │   │   │   │       │   │   ├── covert_psychological_warfare.json
@@ -559,14 +583,17 @@
 │   ├── types
 │   │   ├── Card.ts
 │   │   ├── CardDeck.ts
+│   │   ├── CoachTypes.ts
 │   │   ├── TrainingModule.ts
 │   │   ├── TrainingModuleReference.ts
 │   │   └── TrainingSubModule.ts
 │   ├── utils
 │   │   ├── CardDealer.ts
+│   │   ├── CoachDataLoader.ts
 │   │   ├── DataLoader.ts
 │   │   ├── ScheduleGenerator.ts
-│   │   └── SoundManager.ts
+│   │   ├── SoundManager.ts
+│   │   └── WorkoutTimer.ts
 │   └── vite-env.d.ts
 ├── templates
 │   ├── card_deck.json
@@ -577,4 +604,4 @@
 ├── tsconfig.node.json
 └── vite.config.ts
 
-150 directories, 428 files
+156 directories, 449 files

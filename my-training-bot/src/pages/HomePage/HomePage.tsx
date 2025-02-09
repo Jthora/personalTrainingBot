@@ -4,6 +4,7 @@ import Header from '../../components/Header/Header';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import CardTable from '../../components/CardTable/CardTable';
 import { CardProvider } from '../../context/CardContext';
+import { WorkoutProvider } from '../../context/WorkoutContext';
 import TrainingModuleCache from '../../cache/TrainingModuleCache';
 import { TrainingModule } from '../../types/TrainingModule';
 
@@ -35,7 +36,9 @@ const HomePage: React.FC = () => {
         <div className={styles.pageContainer}>
             <Header />
             <div className={styles.content}>
-                <Sidebar />
+                <WorkoutProvider>
+                    <Sidebar />
+                </WorkoutProvider>
                 <CardProvider>
                     <CardTable />
                 </CardProvider>

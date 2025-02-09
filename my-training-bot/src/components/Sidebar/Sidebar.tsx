@@ -1,27 +1,21 @@
-import React, { useEffect, useState } from 'react';
-import TrainingModuleCache from '../../cache/TrainingModuleCache';
-import { TrainingModule } from '../../types/TrainingModule';
+import React, { useState } from 'react'; 
+import CoachDialog from '../CoachDialog/CoachDialog'; 
+import WorkoutList from '../WorkoutList/WorkoutList'; 
 import styles from './Sidebar.module.css';
+import { Workout } from '../../types/Workout';
 
 const Sidebar: React.FC = () => {
-    const [trainingModules, setTrainingModules] = useState<TrainingModule[]>([]);
+    const [currentWorkout, setCurrentWorkout] = useState<Workout | null>(null);
 
-    useEffect(() => {
-        const cache = TrainingModuleCache.getInstance();
-        if (cache.isLoaded()) {
-            setTrainingModules(Array.from(cache.cache.values()));
-        }
-    }, []);
+    const handleCompleteWorkout = () => {
+        setCurrentWorkout(null);
+    };
 
     return (
-        <aside className={styles.sidebar}>
-            {trainingModules.map(module => (
-                <button key={module.id} className={styles.moduleButton}>
-                    <img src={`/icons/${module.id}.png`} alt={module.name} className={styles.moduleIcon} />
-                    <span>{module.name}</span>
-                </button>
-            ))}
-        </aside>
+        <div className={styles.sidebar}>
+            <CoachDialog currentWorkout={currentWorkout} onComplete={handleCompleteWorkout} />
+            <WorkoutList />
+        </div>
     );
 };
 

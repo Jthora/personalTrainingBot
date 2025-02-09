@@ -3,10 +3,14 @@ import ranksData from "../data/training_coach_data/ranks.json";
 import tigerSpeech from "../data/training_coach_data/tiger_speech.json";
 import trainingChallenges from "../data/training_coach_data/training_challenges.json";
 import workouts from "../data/training_coach_data/workouts.json";
-import { DifficultyLevel, Rank, Workout, WorkoutsData, SubWorkout } from "../types/CoachTypes";
+import { WorkoutDifficultyLevel } from "../types/WorkoutDifficultyLevel";
+import { WorkoutRank } from "../types/WorkoutRank";
+import { Workout } from "../types/Workout";
+import { WorkoutsData } from "../types/WorkoutsData";
+import { SubWorkout } from "../types/SubWorkout";
 
 // Ensure ranks data has the correct type
-const ranks: Rank[] = ranksData.map(rank => ({
+const ranks: WorkoutRank[] = ranksData.map(rank => ({
     name: rank.rank,
     description: rank.description,
     // ...other properties from rank
@@ -16,116 +20,198 @@ const ranks: Rank[] = ranksData.map(rank => ({
 const getRandomItem = <T>(array: T[]): T => array[Math.floor(Math.random() * array.length)];
 
 // Fetches a random motivational speech
-export const fetchSpeech = (): string => getRandomItem(tigerSpeech.motivational_quotes);
+export const fetchSpeech = (): string => {
+    try {
+        return getRandomItem(tigerSpeech.motivational_quotes);
+    } catch (error) {
+        console.error("Failed to fetch speech:", error);
+        return "";
+    }
+};
 
 // Fetches a random workout challenge
-export const fetchWorkout = (): string => getRandomItem(trainingChallenges).task;
+export const fetchWorkout = (): string => {
+    try {
+        return getRandomItem(trainingChallenges).task;
+    } catch (error) {
+        console.error("Failed to fetch workout challenge:", error);
+        return "";
+    }
+};
 
 // Fetches a random workout from a specific category and sub-category
 export const fetchWorkoutByCategory = (category: string, subCategory: string): Workout | null => {
-    const categoryData = (workouts as WorkoutsData)[category];
-    if (!categoryData) {
+    try {
+        const categoryData = (workouts as WorkoutsData)[category];
+        if (!categoryData) {
+            console.warn(`Category ${category} not found.`);
+            return null;
+        }
+        const subCategoryData = categoryData[subCategory];
+        if (!subCategoryData) {
+            console.warn(`Sub-category ${subCategory} not found in category ${category}.`);
+            return null;
+        }
+        return getRandomItem(subCategoryData);
+    } catch (error) {
+        console.error(`Failed to fetch workout by category ${category} and sub-category ${subCategory}:`, error);
         return null;
     }
-    const subCategoryData = categoryData[subCategory];
-    if (!subCategoryData) {
-        return null;
-    }
-    return getRandomItem(subCategoryData);
 };
 
 // Fetches a random sub-workout from a specific workout
 export const fetchSubWorkout = (category: string, subCategory: string, workoutName: string): SubWorkout | null => {
-    const categoryData = (workouts as WorkoutsData)[category];
-    if (!categoryData) {
+    try {
+        const categoryData = (workouts as WorkoutsData)[category];
+        if (!categoryData) {
+            console.warn(`Category ${category} not found.`);
+            return null;
+        }
+        const subCategoryData = categoryData[subCategory];
+        if (!subCategoryData) {
+            console.warn(`Sub-category ${subCategory} not found in category ${category}.`);
+            return null;
+        }
+        const workout = subCategoryData.find(workout => workout.name === workoutName);
+        if (!workout) {
+            console.warn(`Workout ${workoutName} not found in sub-category ${subCategory} of category ${category}.`);
+            return null;
+        }
+        return getRandomItem(workout.sub_workouts);
+    } catch (error) {
+        console.error(`Failed to fetch sub-workout for workout ${workoutName} in category ${category} and sub-category ${subCategory}:`, error);
         return null;
     }
-    const subCategoryData = categoryData[subCategory];
-    if (!subCategoryData) {
-        return null;
-    }
-    const workout = subCategoryData.find(workout => workout.name === workoutName);
-    if (!workout) {
-        return null;
-    }
-    return getRandomItem(workout.sub_workouts);
 };
 
 // Fetches all workouts in a specific category
 export const fetchAllWorkoutsInCategory = (category: string): Workout[] | null => {
-    const categoryData = (workouts as WorkoutsData)[category];
-    return Array.isArray(categoryData) ? categoryData : null;
+    try {
+        const categoryData = (workouts as WorkoutsData)[category];
+        return Array.isArray(categoryData) ? categoryData : null;
+    } catch (error) {
+        console.error(`Failed to fetch all workouts in category ${category}:`, error);
+        return null;
+    }
 };
 
 // Fetches all sub-workouts for a specific workout
 export const fetchAllSubWorkouts = (category: string, subCategory: string, workoutName: string): SubWorkout[] | null => {
-    const categoryData = (workouts as WorkoutsData)[category];
-    if (!categoryData) {
+    try {
+        const categoryData = (workouts as WorkoutsData)[category];
+        if (!categoryData) {
+            console.warn(`Category ${category} not found.`);
+            return null;
+        }
+        const subCategoryData = categoryData[subCategory];
+        if (!subCategoryData) {
+            console.warn(`Sub-category ${subCategory} not found in category ${category}.`);
+            return null;
+        }
+        const workout = subCategoryData.find(workout => workout.name === workoutName);
+        if (!workout) {
+            console.warn(`Workout ${workoutName} not found in sub-category ${subCategory} of category ${category}.`);
+            return null;
+        }
+        return workout.sub_workouts || null;
+    } catch (error) {
+        console.error(`Failed to fetch all sub-workouts for workout ${workoutName} in category ${category} and sub-category ${subCategory}:`, error);
         return null;
     }
-    const subCategoryData = categoryData[subCategory];
-    if (!subCategoryData) {
-        return null;
-    }
-    const workout = subCategoryData.find(workout => workout.name === workoutName);
-    if (!workout) {
-        return null;
-    }
-    return workout.sub_workouts || null;
 };
 
 // Fetches all ranks
-export const fetchAllRanks = (): Rank[] | null => {
-    return ranks || null;
+export const fetchAllRanks = (): WorkoutRank[] | null => {
+    try {
+        return ranks || null;
+    } catch (error) {
+        console.error("Failed to fetch all ranks:", error);
+        return null;
+    }
 };
 
 // Fetches a specific rank by name
-export const fetchRankByName = (rankName: string): Rank | null => {
-    return ranks.find(rank => rank.name === rankName) || null;
+export const fetchRankByName = (rankName: string): WorkoutRank | null => {
+    try {
+        return ranks.find(rank => rank.name === rankName) || null;
+    } catch (error) {
+        console.error(`Failed to fetch rank by name ${rankName}:`, error);
+        return null;
+    }
 };
 
 // Fetches the next rank based on the current rank
-export const fetchNextRank = (currentRankName: string): Rank | null => {
-    const currentRankIndex = ranks.findIndex(rank => rank.name === currentRankName);
-    if (currentRankIndex === -1 || currentRankIndex === ranks.length - 1) {
+export const fetchNextRank = (currentRankName: string): WorkoutRank | null => {
+    try {
+        const currentRankIndex = ranks.findIndex(rank => rank.name === currentRankName);
+        if (currentRankIndex === -1 || currentRankIndex === ranks.length - 1) {
+            return null;
+        }
+        return ranks[currentRankIndex + 1];
+    } catch (error) {
+        console.error(`Failed to fetch next rank for current rank ${currentRankName}:`, error);
         return null;
     }
-    return ranks[currentRankIndex + 1];
 };
 
 // Fetches the previous rank based on the current rank
-export const fetchPreviousRank = (currentRankName: string): Rank | null => {
-    const currentRankIndex = ranks.findIndex(rank => rank.name === currentRankName);
-    if (currentRankIndex <= 0) {
+export const fetchPreviousRank = (currentRankName: string): WorkoutRank | null => {
+    try {
+        const currentRankIndex = ranks.findIndex(rank => rank.name === currentRankName);
+        if (currentRankIndex <= 0) {
+            return null;
+        }
+        return ranks[currentRankIndex - 1];
+    } catch (error) {
+        console.error(`Failed to fetch previous rank for current rank ${currentRankName}:`, error);
         return null;
     }
-    return ranks[currentRankIndex - 1];
 };
 
 // Fetches all difficulty levels
-export const fetchAllDifficultyLevels = (): DifficultyLevel[] | null => {
-    return difficultyLevels as DifficultyLevel[] || null;
+export const fetchAllDifficultyLevels = (): WorkoutDifficultyLevel[] | null => {
+    try {
+        return difficultyLevels as WorkoutDifficultyLevel[] || null;
+    } catch (error) {
+        console.error("Failed to fetch all difficulty levels:", error);
+        return null;
+    }
 };
 
 // Fetches a specific difficulty level by name
-export const fetchDifficultyLevelByName = (levelName: string): DifficultyLevel | null => {
-    return (difficultyLevels as DifficultyLevel[]).find(level => level.name === levelName) || null;
+export const fetchDifficultyLevelByName = (levelName: string): WorkoutDifficultyLevel | null => {
+    try {
+        return (difficultyLevels as WorkoutDifficultyLevel[]).find(level => level.name === levelName) || null;
+    } catch (error) {
+        console.error(`Failed to fetch difficulty level by name ${levelName}:`, error);
+        return null;
+    }
 };
 
 // Fetches the next difficulty level based on the current level
-export const fetchNextDifficultyLevel = (currentLevelName: string): DifficultyLevel | null => {
-    const currentLevelIndex = (difficultyLevels as DifficultyLevel[]).findIndex(level => level.name === currentLevelName);
-    if (currentLevelIndex === -1 || currentLevelIndex === (difficultyLevels as DifficultyLevel[]).length - 1) {
+export const fetchNextDifficultyLevel = (currentLevelName: string): WorkoutDifficultyLevel | null => {
+    try {
+        const currentLevelIndex = (difficultyLevels as WorkoutDifficultyLevel[]).findIndex(level => level.name === currentLevelName);
+        if (currentLevelIndex === -1 || currentLevelIndex === (difficultyLevels as WorkoutDifficultyLevel[]).length - 1) {
+            return null;
+        }
+        return (difficultyLevels as WorkoutDifficultyLevel[])[currentLevelIndex + 1];
+    } catch (error) {
+        console.error(`Failed to fetch next difficulty level for current level ${currentLevelName}:`, error);
         return null;
     }
-    return (difficultyLevels as DifficultyLevel[])[currentLevelIndex + 1];
 };
 
 // Fetches the previous difficulty level based on the current level
-export const fetchPreviousDifficultyLevel = (currentLevelName: string): DifficultyLevel | null => {
-    const currentLevelIndex = (difficultyLevels as DifficultyLevel[]).findIndex(level => level.name === currentLevelName);
-    if (currentLevelIndex <= 0) {
+export const fetchPreviousDifficultyLevel = (currentLevelName: string): WorkoutDifficultyLevel | null => {
+    try {
+        const currentLevelIndex = (difficultyLevels as WorkoutDifficultyLevel[]).findIndex(level => level.name === currentLevelName);
+        if (currentLevelIndex <= 0) {
+            return null;
+        }
+        return (difficultyLevels as WorkoutDifficultyLevel[])[currentLevelIndex - 1];
+    } catch (error) {
+        console.error(`Failed to fetch previous difficulty level for current level ${currentLevelName}:`, error);
         return null;
     }
-    return (difficultyLevels as DifficultyLevel[])[currentLevelIndex - 1];
 };

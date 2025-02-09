@@ -5,11 +5,16 @@ import {
     fetchWorkout,
     fetchAllWorkoutsInCategory
 } from "../utils/CoachDataLoader";
-import { DifficultyLevel, Rank, Workout, WorkoutsData, Category } from "../types/CoachTypes";
+import { WorkoutDifficultyLevel } from "../types/WorkoutDifficultyLevel";
+import { WorkoutRank } from "../types/WorkoutRank";
+import { Workout } from "../types/Workout";
+import { WorkoutsData } from "../types/WorkoutsData";
+import { SubWorkout } from "../types/SubWorkout";
+import { WorkoutCategory } from "../types/WorkoutCategory";
 
 class CoachTrainingCache {
-    private difficultyLevels!: DifficultyLevel[];
-    private ranks!: Rank[];
+    private difficultyLevels!: WorkoutDifficultyLevel[];
+    private ranks!: WorkoutRank[];
     private tigerSpeech!: string[];
     private trainingChallenges!: { task: string }[];
     private workouts!: WorkoutsData;
@@ -33,7 +38,7 @@ class CoachTrainingCache {
                         }
                         acc[subCategory].push(workout);
                         return acc;
-                    }, {} as Category);
+                    }, {} as WorkoutCategory);
                 }
             } catch (error) {
                 console.error(`Failed to load workouts for category ${category}:`, error);
@@ -95,11 +100,11 @@ class CoachTrainingCache {
         }
     }
 
-    getDifficultyLevels(): DifficultyLevel[] {
+    getDifficultyLevels(): WorkoutDifficultyLevel[] {
         return this.difficultyLevels;
     }
 
-    getRanks(): Rank[] {
+    getRanks(): WorkoutRank[] {
         return this.ranks;
     }
 
@@ -124,7 +129,7 @@ class CoachTrainingCache {
         return categoryData[subCategory] || null;
     }
 
-    getSubWorkout(category: string, subCategory: string, workoutName: string): Workout | null {
+    getSubWorkout(category: string, subCategory: string, workoutName: string): SubWorkout | null {
         const categoryData = this.workouts[category];
         if (!categoryData) {
             console.warn(`Category ${category} not found.`);
@@ -140,9 +145,11 @@ class CoachTrainingCache {
             console.warn(`Workout ${workoutName} not found in sub-category ${subCategory} of category ${category}.`);
             return null;
         }
-        return workout;
+        return getRandomItem(workout.sub_workouts);
     }
 }
+
+const getRandomItem = <T>(array: T[]): T => array[Math.floor(Math.random() * array.length)];
 
 const coachTrainingCache = new CoachTrainingCache();
 export default coachTrainingCache;

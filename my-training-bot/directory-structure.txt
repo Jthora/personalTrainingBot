@@ -54,6 +54,15 @@
 │   │   ├── StatsPanel
 │   │   │   ├── StatsPanel.module.css
 │   │   │   └── StatsPanel.tsx
+│   │   ├── SubWorkoutCard
+│   │   │   ├── SubWorkoutCard.module.css
+│   │   │   └── SubWorkoutCard.tsx
+│   │   ├── SubWorkoutDetails
+│   │   │   ├── SubWorkoutDetails.module.css
+│   │   │   └── SubWorkoutDetails.tsx
+│   │   ├── SubWorkoutList
+│   │   │   ├── SubWorkoutList.module.css
+│   │   │   └── SubWorkoutList.tsx
 │   │   ├── TimerControls
 │   │   │   ├── TimerControls.module.css
 │   │   │   └── TimerControls.tsx
@@ -63,15 +72,6 @@
 │   │   ├── TrainingSequence
 │   │   │   ├── TrainingSequence.module.css
 │   │   │   └── TrainingSequence.tsx
-│   │   ├── WorkoutCard
-│   │   │   ├── WorkoutCard.module.css
-│   │   │   └── WorkoutCard.tsx
-│   │   ├── WorkoutDetails
-│   │   │   ├── WorkoutDetails.module.css
-│   │   │   └── WorkoutDetails.tsx
-│   │   ├── WorkoutList
-│   │   │   ├── WorkoutList.module.css
-│   │   │   └── WorkoutList.tsx
 │   │   ├── WorkoutScheduler
 │   │   │   ├── WorkoutScheduler.module.css
 │   │   │   └── WorkoutScheduler.tsx
@@ -80,10 +80,9 @@
 │   │       └── workoutTimer.module.tsx
 │   ├── context
 │   │   ├── CardContext.tsx
-│   │   ├── ScheduleContext.tsx
 │   │   ├── SettingsContext.tsx
-│   │   ├── TrainingSequenceContext.tsx
-│   │   └── WorkoutContext.tsx
+│   │   ├── WorkoutContext.tsx
+│   │   └── WorkoutScheduleContext.tsx
 │   ├── data
 │   │   ├── .DS_Store
 │   │   ├── training_coach_data
@@ -614,4 +613,4 @@
 ├── tsconfig.node.json
 └── vite.config.ts
 
-157 directories, 458 files
+157 directories, 457 files

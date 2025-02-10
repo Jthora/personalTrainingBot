@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useImperativeHandle, forwardRef } from 'react';
+import styles from './SubWorkoutTimer.module.css';
 
 const getRandomTime = () => {
     const min = 45 * 60; // 45 minutes in seconds
@@ -40,8 +41,8 @@ const SubWorkoutTimer: React.FC<{ onComplete: () => void }> = forwardRef(({ onCo
         <div>
             <div style={{ display: 'flex', alignItems: 'center' }}>
                 <div>{`Time Left: ${minutes}:${seconds}`}</div>
-                <button onClick={togglePause} style={{ marginLeft: '8px' }}>
-                    {isPaused ? '▶️' : '⏸️'}
+                <button onClick={togglePause} className={styles.button}>
+                    {isPaused ? '⏸️' : '▶️'}
                 </button>
             </div>
         </div>

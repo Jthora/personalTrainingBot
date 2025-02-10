@@ -68,8 +68,8 @@ const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
                         ))}
                     </ul>
                     <div className={styles.bubbleContainer}>
-                        <span className={`${styles.bubble} ${styles.bubble1}`} style={{ backgroundColor: color }}>{subTrainingModule}</span>
-                        <span className={`${styles.bubble} ${styles.bubble1}`} style={{ backgroundColor: color }}>{cardDeck}</span>
+                        <span className={`${styles.bubble} ${styles.bubble2}`} style={{ backgroundColor: color }}>{subTrainingModule}</span>
+                        <span className={`${styles.bubble} ${styles.bubble3}`} style={{ backgroundColor: color }}>{cardDeck}</span>
                     </div>
                 </div>
                 <div className={styles.rightSide}>

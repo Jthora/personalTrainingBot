@@ -29,6 +29,26 @@ export const fetchSpeech = (): string => {
     }
 };
 
+// Fetches a random boast
+export const fetchBoast = (): string => {
+    try {
+        return getRandomItem(tigerSpeech.boasts);
+    } catch (error) {
+        console.error("Failed to fetch boast:", error);
+        return "";
+    }
+};
+
+// Fetches a random growl
+export const fetchGrowl = (): string => {
+    try {
+        return getRandomItem(tigerSpeech.growls);
+    } catch (error) {
+        console.error("Failed to fetch growl:", error);
+        return "";
+    }
+};
+
 // Fetches a random workout challenge
 export const fetchWorkout = (): string => {
     try {

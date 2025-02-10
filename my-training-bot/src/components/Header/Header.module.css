@@ -10,12 +10,12 @@
 }
 
 .logo {
-    height: 100px;
+    height: 80px;
     margin-right: 10px;
 }
 
 .headerTitle {
-    font-size: 3em; /* Double the font size */
+    font-size: 2em; /* Double the font size */
 }
 
 .settingsButton {

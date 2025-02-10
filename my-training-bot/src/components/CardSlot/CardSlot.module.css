@@ -43,19 +43,15 @@
 }
 
 .bubble {
-    padding: 1px 15px;
     border-radius: 15px;
     color: #000000;
 }
 
 .bubble1 {
-    background-color: #FF4136; /* Red */
+    padding: 2px 15px;
 }
 
-.bubble2 {
-    background-color: #2ECC40; /* Green */
-}
-
-.bubble3 {
-    background-color: #0074D9; /* Blue */
+.bubble2, .bubble3 {
+    padding: 1px 15px;
+    font-size: 0.8em;
 }

@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { SubWorkout } from '../../types/SubWorkout';
 import styles from './SubWorkoutDetails.module.css';
 import SubWorkoutTimer from '../SubWorkoutTimer/SubWorkoutTimer';
-import { playCompleteSound, playSkipSound } from '../../utils/AudioPlayer';
+import { playCompleteSound, playSkipSound, playTimeoutSound } from '../../utils/AudioPlayer';
 
 interface SubWorkoutDetailsProps {
     workout: SubWorkout | null;
@@ -11,15 +11,23 @@ interface SubWorkoutDetailsProps {
 }
 
 const SubWorkoutDetails: React.FC<SubWorkoutDetailsProps> = ({ workout, onSkipWorkout, onCompleteWorkout }) => {
+    const timerRef = useRef<{ resetTimer: () => void }>(null);
 
     const handleCompleteWorkout = () => {
         playCompleteSound();
         onCompleteWorkout();
+        timerRef.current?.resetTimer();
     };
 
     const handleSkipWorkout = () => {
         playSkipSound();
         onSkipWorkout();
+        timerRef.current?.resetTimer();
+    };
+
+    const handleTimeoutWorkout = () => {
+        playTimeoutSound();
+        onCompleteWorkout();
     };
 
     if (!workout) {
@@ -40,7 +48,7 @@ const SubWorkoutDetails: React.FC<SubWorkoutDetailsProps> = ({ workout, onSkipWo
                     <button onClick={handleSkipWorkout}>Skip ⏭️</button>
                 </div>
                 <div className={styles.bottom}>
-                    <SubWorkoutTimer onComplete={handleCompleteWorkout} />
+                    <SubWorkoutTimer ref={timerRef} onComplete={handleTimeoutWorkout} />
                 </div>
             </div>
         </div>

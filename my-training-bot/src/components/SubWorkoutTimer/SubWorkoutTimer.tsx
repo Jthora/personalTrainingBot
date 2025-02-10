@@ -1,7 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useImperativeHandle, forwardRef } from 'react';
 
-const SubWorkoutTimer: React.FC<{ onComplete: () => void }> = ({ onComplete }) => {
-    const [timeLeft, setTimeLeft] = useState(45 * 60); // 45 minutes in seconds
+const getRandomTime = () => {
+    const min = 45 * 60; // 45 minutes in seconds
+    const max = 75 * 60; // 75 minutes in seconds
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+
+const SubWorkoutTimer: React.FC<{ onComplete: () => void }> = forwardRef(({ onComplete }, ref) => {
+    const [timeLeft, setTimeLeft] = useState(getRandomTime());
 
     useEffect(() => {
         const timer = setInterval(() => {
@@ -9,7 +15,7 @@ const SubWorkoutTimer: React.FC<{ onComplete: () => void }> = ({ onComplete }) =
                 if (prev <= 1) {
                     clearInterval(timer);
                     onComplete();
-                    return 45 * 60; // Reset to 45 minutes
+                    return getRandomTime(); // Reset to a random time between 15 and 75 minutes
                 }
                 return prev - 1;
             });
@@ -17,6 +23,10 @@ const SubWorkoutTimer: React.FC<{ onComplete: () => void }> = ({ onComplete }) =
 
         return () => clearInterval(timer);
     }, [onComplete]);
+
+    useImperativeHandle(ref, () => ({
+        resetTimer: () => setTimeLeft(getRandomTime())
+    }));
 
     const minutes = String(Math.floor(timeLeft / 60)).padStart(2, '0');
     const seconds = String(timeLeft % 60).padStart(2, '0');
@@ -26,6 +36,6 @@ const SubWorkoutTimer: React.FC<{ onComplete: () => void }> = ({ onComplete }) =
             <div>{`Time Left: ${minutes}:${seconds}`}</div>
         </div>
     );
-};
+});
 
 export default SubWorkoutTimer;

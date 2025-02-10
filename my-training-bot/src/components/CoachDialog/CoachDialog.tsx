@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from './CoachDialog.module.css';
 import tigerIcon from '../../assets/images/icons/tiger_fitness_god-icon-512x.png';
-import { fetchSpeech } from '../../utils/CoachDataLoader';
+import { fetchSpeech, fetchBoast, fetchGrowl } from '../../utils/CoachDataLoader';
 import SubWorkoutDetails from '../SubWorkoutDetails/SubWorkoutDetails';
 import { useWorkoutSchedule } from '../../context/WorkoutScheduleContext';
 import { SubWorkout } from '../../types/SubWorkout';
@@ -31,10 +31,12 @@ const CoachDialog: React.FC = () => {
 
     const handleCompleteWorkout = () => {
         completeCurrentWorkout();
+        setQuote(fetchBoast());
     };
 
     const handleSkipWorkout = () => {
         skipCurrentWorkout();
+        setQuote(fetchGrowl());
     };
 
     return (

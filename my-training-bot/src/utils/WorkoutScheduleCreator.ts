@@ -7,6 +7,11 @@ interface WorkoutScheduleOptions {
     date?: string;
 }
 
+const getRandomItems = <T>(array: T[], count: number): T[] => {
+    const shuffled = array.sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+};
+
 export const createWorkoutSchedule = async (options: WorkoutScheduleOptions = {}): Promise<WorkoutSchedule> => {
     const {
         categories = ['cardio', 'strength', 'agility', 'combat', 'mental'],
@@ -29,8 +34,10 @@ export const createWorkoutSchedule = async (options: WorkoutScheduleOptions = {}
         }
     }
 
+    const selectedSubWorkouts = getRandomItems(subWorkouts, 10);
+
     return {
         date,
-        workouts: subWorkouts,
+        workouts: selectedSubWorkouts,
     };
 };

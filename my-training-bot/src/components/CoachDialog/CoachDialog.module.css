@@ -16,14 +16,23 @@
     height: 128px;
 }
 
-.title {
+.textContainer {
+    display: flex;
+    flex-direction: column;
     margin-left: 20px;
-    font-size: 1.5em;
     flex-grow: 1;
 }
 
-.spacer {
-    flex-grow: 1;
+.title {
+    font-size: 1.5em;
+}
+
+.quote {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-style: italic;
+    color: #ffaa00;
+    text-align: left;
 }
 
 .workoutDetails {

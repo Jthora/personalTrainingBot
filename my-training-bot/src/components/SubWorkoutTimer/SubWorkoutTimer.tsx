@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const WorkoutTimer: React.FC<{ onComplete: () => void }> = ({ onComplete }) => {
+const SubWorkoutTimer: React.FC<{ onComplete: () => void }> = ({ onComplete }) => {
     const [timeLeft, setTimeLeft] = useState(45 * 60); // 45 minutes in seconds
 
     useEffect(() => {
@@ -18,14 +18,14 @@ const WorkoutTimer: React.FC<{ onComplete: () => void }> = ({ onComplete }) => {
         return () => clearInterval(timer);
     }, [onComplete]);
 
-    const minutes = Math.floor(timeLeft / 60);
-    const seconds = timeLeft % 60;
+    const minutes = String(Math.floor(timeLeft / 60)).padStart(2, '0');
+    const seconds = String(timeLeft % 60).padStart(2, '0');
 
     return (
         <div>
-            <div>{`${minutes} minutes ${seconds} seconds left`}</div>
+            <div>{`Time Left: ${minutes}:${seconds}`}</div>
         </div>
     );
 };
 
-export default WorkoutTimer;
+export default SubWorkoutTimer;

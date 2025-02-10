@@ -1,24 +1,47 @@
+@import '../../styles/theme.css';
+
 .workoutDetails {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    padding: 16px;
-    margin: 8px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
 }
 
-.workoutDetails h2 {
-    margin: 0 0 8px;
-    font-size: 1.5em;
+.left {
+    flex: 1;
 }
 
-.workoutDetails p {
-    margin: 4px 0;
-    font-size: 1em;
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
 }
 
 .noWorkout {
     text-align: center;
     font-size: 1.2em;
     color: #666;
+}
+
+button {
+    font-family: 'Aldrich', sans-serif;
+    font-weight: bold;
 }

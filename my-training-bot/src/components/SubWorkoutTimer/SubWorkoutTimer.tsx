@@ -40,7 +40,7 @@ const SubWorkoutTimer: React.FC<{ onComplete: () => void }> = forwardRef(({ onCo
     return (
         <div>
             <div style={{ display: 'flex', alignItems: 'center' }}>
-                <div>{`Time Left: ${minutes}:${seconds}`}</div>
+                <div className={styles.timeLeft}>{`Time Left: ${minutes}:${seconds}`}</div>
                 <button onClick={togglePause} className={styles.button}>
                     {isPaused ? '⏸️' : '▶️'}
                 </button>

@@ -24,7 +24,12 @@
 }
 
 .title {
-    font-size: 1.5em;
+    line-height: .2em;
+}
+
+.titleContainer {
+    line-height: .2em;
+    padding: 0;
 }
 
 .quote {

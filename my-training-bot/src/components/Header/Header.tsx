@@ -17,7 +17,7 @@ const Header: React.FC = () => {
         <header className={styles.header}>
             <div className={styles.headerContent}>
                 <img src={logo} alt="Logo" className={styles.logo} />
-                <h1 className={styles.headerTitle}>Training Bot</h1>
+                <h1 className={styles.headerTitle}>Personal Training Bot</h1>
             </div>
             <nav className={styles.nav}>
                 <button 

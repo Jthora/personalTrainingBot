@@ -44,7 +44,10 @@ const CoachDialog: React.FC = () => {
             <div className={styles.header}>
                 <img src={tigerIcon} alt="Coach Icon" className={styles.icon} width="128" height="128" />
                 <div className={styles.textContainer}>
-                    <h3 className={styles.title}>Coach: Tiger Fitness God</h3>
+                    <div className={styles.titleContainer}>
+                        <h3 className={styles.title}>Coach:</h3>
+                        <h2 className={styles.title}>Tiger Fitness God</h2>
+                    </div>
                     <div className={styles.quote}>"{quote}"</div>
                 </div>
             </div>

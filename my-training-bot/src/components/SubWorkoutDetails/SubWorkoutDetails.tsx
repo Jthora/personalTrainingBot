@@ -37,18 +37,20 @@ const SubWorkoutDetails: React.FC<SubWorkoutDetailsProps> = ({ workout, onSkipWo
     return (
         <div className={styles.workoutDetails}>
             <div className={styles.left}>
-                <h2>{workout.name}</h2>
-                <p>{workout.description}</p>
-                <p>Duration: {workout.duration}</p>
-                <p>Intensity: {workout.intensity}</p>
+                <h1>{workout.name}</h1>
+                <div className={styles.subDetails}>
+                    <p>{workout.description}</p>
+                    <p>⏱️ {workout.duration}</p>
+                    <p>🔥 {workout.intensity}</p>
+                </div>
             </div>
             <div className={styles.right}>
                 <div className={styles.top}>
                     <button onClick={handleCompleteWorkout}>Complete ✅</button>
                     <button onClick={handleSkipWorkout}>Skip ⏭️</button>
+                    <SubWorkoutTimer ref={timerRef} onComplete={handleTimeoutWorkout} />
                 </div>
                 <div className={styles.bottom}>
-                    <SubWorkoutTimer ref={timerRef} onComplete={handleTimeoutWorkout} />
                 </div>
             </div>
         </div>

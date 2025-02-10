@@ -15,7 +15,9 @@
 }
 
 .headerTitle {
-    font-size: 2em; /* Double the font size */
+    font-size: 3em; /* Double the font size */
+    padding: 0px;
+    line-height: 0em; /* Decrease the line spacing */
 }
 
 .settingsButton {

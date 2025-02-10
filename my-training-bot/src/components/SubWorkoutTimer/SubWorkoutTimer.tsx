@@ -8,21 +8,24 @@ const getRandomTime = () => {
 
 const SubWorkoutTimer: React.FC<{ onComplete: () => void }> = forwardRef(({ onComplete }, ref) => {
     const [timeLeft, setTimeLeft] = useState(getRandomTime());
+    const [isPaused, setIsPaused] = useState(false);
 
     useEffect(() => {
+        if (isPaused) return;
+
         const timer = setInterval(() => {
             setTimeLeft(prev => {
                 if (prev <= 1) {
                     clearInterval(timer);
                     onComplete();
-                    return getRandomTime(); // Reset to a random time between 15 and 75 minutes
+                    return getRandomTime(); // Reset to a random time between 45 and 75 minutes
                 }
                 return prev - 1;
             });
         }, 1000);
 
         return () => clearInterval(timer);
-    }, [onComplete]);
+    }, [onComplete, isPaused]);
 
     useImperativeHandle(ref, () => ({
         resetTimer: () => setTimeLeft(getRandomTime())
@@ -31,9 +34,16 @@ const SubWorkoutTimer: React.FC<{ onComplete: () => void }> = forwardRef(({ onCo
     const minutes = String(Math.floor(timeLeft / 60)).padStart(2, '0');
     const seconds = String(timeLeft % 60).padStart(2, '0');
 
+    const togglePause = () => setIsPaused(!isPaused);
+
     return (
         <div>
-            <div>{`Time Left: ${minutes}:${seconds}`}</div>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+                <div>{`Time Left: ${minutes}:${seconds}`}</div>
+                <button onClick={togglePause} style={{ marginLeft: '8px' }}>
+                    {isPaused ? '▶️' : '⏸️'}
+                </button>
+            </div>
         </div>
     );
 });

@@ -1,6 +1,7 @@
 {
     "id": "investigation",
     "name": "Investigation",
+    "color": "#4682B4",
     "description": "Comprehensive training on investigative techniques across multiple disciplines.",
     "submodules": [
         "criminal_profiling",

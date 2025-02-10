@@ -1,6 +1,7 @@
 {
     "id": "intelligence",
     "name": "Intelligence",
+    "color": "#7B68EE",
     "description": "Training on intelligence analysis, prediction models, and global strategy.",
     "submodules": [
         "intelligence_analysis",

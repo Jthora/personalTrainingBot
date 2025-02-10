@@ -36,3 +36,26 @@
     justify-content: flex-end;
     align-items: center;
 }
+
+.bubbleContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.bubble {
+    padding: 1px 15px;
+    border-radius: 15px;
+    color: #000000;
+}
+
+.bubble1 {
+    background-color: #FF4136; /* Red */
+}
+
+.bubble2 {
+    background-color: #2ECC40; /* Green */
+}
+
+.bubble3 {
+    background-color: #0074D9; /* Blue */
+}

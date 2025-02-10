@@ -1,14 +1,8 @@
 {
     "id": "dance",
     "name": "Dance Training",
+    "color": "#87CEEB",
     "description": "A structured training module for high-energy, flow-based, and EDM-inspired dance styles.",
-    "difficulty": "Beginner to Advanced",
-    "estimated_time": "6-24 months",
-    "focus": [
-        "Rhythm & Musicality",
-        "Prop-Based Flow",
-        "Dynamic Footwork"
-    ],
     "submodules": [
         "contact_staff_flow",
         "poi_spinning",

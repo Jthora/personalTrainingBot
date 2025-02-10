@@ -1,6 +1,7 @@
 {
     "id": "cybersecurity",
     "name": "Cybersecurity",
+    "color": "#00BFFF",
     "description": "Advanced training in cyber defense, ethical hacking, and information warfare.",
     "submodules": [
         "penetration_testing",

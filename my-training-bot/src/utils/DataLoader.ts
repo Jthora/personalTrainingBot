@@ -123,6 +123,7 @@ class DataLoader {
                     id: moduleData.id,
                     name: moduleData.name,
                     description: moduleData.description,
+                    color: moduleData.color,
                     submodules: subModules
                 });
             } catch (error) {
@@ -161,6 +162,7 @@ class DataLoader {
             id: moduleId,
             name: "Unknown Module",
             description: "No description available",
+            color: "#FFFFFF", // Add this line
             submodules: []
         };
     }

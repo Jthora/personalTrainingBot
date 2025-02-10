@@ -1,6 +1,7 @@
 {
     "id": "combat",
     "name": "Combat",
+    "color": "#FF0000",
     "description": "Training in hand-to-hand combat, weapon proficiency, and tactical movement.",
     "submodules": [
         "close_quarters_combat",

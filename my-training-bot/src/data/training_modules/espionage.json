@@ -1,6 +1,7 @@
 {
     "id": "espionage",
     "name": "Espionage",
+    "color": "#1E90FF",
     "description": "Training modules covering the art of intelligence gathering, deception, and covert operations.",
     "submodules": [
         "covert_operations",

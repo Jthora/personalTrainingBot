@@ -1,6 +1,7 @@
 {
     "id": "war_strategy",
     "name": "War Strategy",
+    "color": "#FF4500",
     "description": "Strategic military planning, battlefield tactics, and intelligence operations for modern warfare.",
     "submodules": [
         "military_strategy",

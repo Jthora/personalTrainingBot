@@ -1,6 +1,7 @@
 {
     "id": "counter_psyops",
     "name": "Counter PsyOps",
+    "color": "#FF6347",
     "description": "Training to recognize, resist, and dismantle psychological operations designed to manipulate perception and control behavior.",
     "submodules": [
         "disinformation_analysis",

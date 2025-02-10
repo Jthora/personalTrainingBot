@@ -6,6 +6,7 @@ import TrainingModuleCache from '../cache/TrainingModuleCache';
 interface CardContextProps {
     cards: (Card | null)[];
     dealNextCard: (index: number) => void;
+    getCardDetails: (card: Card) => { trainingModule: string; subTrainingModule: string; cardDeck: string; color: string };
 }
 
 interface CardProviderProps {
@@ -34,6 +35,25 @@ export const CardProvider: React.FC<CardProviderProps> = ({ children }) => {
         }
     };
 
+    const getCardDetails = (card: Card) => {
+        const cache = TrainingModuleCache.getInstance();
+        for (const module of cache.cache.values()) {
+            for (const subModule of module.submodules) {
+                for (const deck of subModule.cardDecks) {
+                    if (deck.cards.some(c => c.id === card.id)) {
+                        return {
+                            trainingModule: module.name,
+                            subTrainingModule: subModule.name,
+                            cardDeck: deck.name,
+                            color: module.color
+                        };
+                    }
+                }
+            }
+        }
+        return { trainingModule: '', subTrainingModule: '', cardDeck: '', color: '' };
+    };
+
     useEffect(() => {
         const loadCache = async () => {
             const cache = TrainingModuleCache.getInstance();
@@ -54,7 +74,7 @@ export const CardProvider: React.FC<CardProviderProps> = ({ children }) => {
     }
 
     return (
-        <CardContext.Provider value={{ cards, dealNextCard }}>
+        <CardContext.Provider value={{ cards, dealNextCard, getCardDetails }}>
             {children}
         </CardContext.Provider>
     );

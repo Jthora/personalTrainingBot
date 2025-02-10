@@ -1,6 +1,7 @@
 {
     "id": "psiops",
-    "name": "PsiOps (Psychic Operations and Psionics Technology)",
+    "name": "PsiOps",
+    "color": "#00CED1",
     "description": "Training in the use of psychic abilities, psionic technology, and advanced mental defense techniques.",
     "submodules": [
         "psionic_training",

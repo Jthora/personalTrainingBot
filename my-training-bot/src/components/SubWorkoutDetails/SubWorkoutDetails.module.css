@@ -7,6 +7,8 @@
     border: 1px solid #ccc;
     border-radius: 8px;
     margin-bottom: 16px;
+    white-space: normal; /* Ensure text wraps */
+    word-wrap: break-word; /* Break long words */
 }
 
 .left {

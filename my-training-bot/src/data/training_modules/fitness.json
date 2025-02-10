@@ -1,6 +1,7 @@
 {
     "id": "fitness_training",
     "name": "Fitness Training",
+    "color": "#32CD32",
     "description": "A comprehensive training program designed to enhance physical performance, endurance, and overall health.",
     "submodules": [
         "strength_training",

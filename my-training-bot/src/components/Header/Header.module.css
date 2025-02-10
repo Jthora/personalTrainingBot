@@ -39,6 +39,7 @@
     padding: var(--padding);
     background-color: var(--secondary-bg-color);
     color: var(--primary-text-color);
+    margin: 25px;
 }
 
 .navButton {

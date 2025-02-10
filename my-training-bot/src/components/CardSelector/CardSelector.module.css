@@ -18,3 +18,17 @@
     padding-left: 10px;
     border-left: 2px solid #ddd;
 }
+
+.dropdownButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 2px 4px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.dropdownButton:hover {
+    background-color: #0056b3;
+}

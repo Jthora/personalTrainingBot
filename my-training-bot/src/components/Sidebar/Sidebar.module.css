@@ -1,0 +1,4 @@
+.sidebar {
+    width: 35%; /* Set a fixed width relative to the HomePage */
+    background-color: #003366; /* Set a darker shade of blue */
+}

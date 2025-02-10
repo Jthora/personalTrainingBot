@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import AppRoutes from './routes/Routes';
 import DataLoader from './utils/DataLoader';

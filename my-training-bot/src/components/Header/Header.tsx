@@ -27,22 +27,10 @@ const Header: React.FC = () => {
                     Home
                 </button> | 
                 <button 
-                    onClick={() => navigateTo('/training-sequence')} 
-                    className={`${styles.navButton} ${isActive('/training-sequence') ? styles.active : ''}`}
-                >
-                    Training Sequence
-                </button> | 
-                <button 
                     onClick={() => navigateTo('/settings')} 
                     className={`${styles.navButton} ${isActive('/settings') ? styles.active : ''}`}
                 >
                     Settings
-                </button> | 
-                <button 
-                    onClick={() => navigateTo('/schedule')} 
-                    className={`${styles.navButton} ${isActive('/schedule') ? styles.active : ''}`}
-                >
-                    Schedule
                 </button>
             </nav>
         </header>

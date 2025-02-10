@@ -8,3 +8,31 @@
     background-color: #001f3f;
     color: #ffffff;
 }
+
+.cardDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftSide {
+    flex: 2; /* Increased flex-grow value */
+}
+
+.rightSide {
+    flex: 1; /* Default flex-grow value */
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.topSide {
+    margin-bottom: 10px;
+}
+
+.bottomSide {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

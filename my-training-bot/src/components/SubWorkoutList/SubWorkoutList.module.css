@@ -1,7 +1,8 @@
 .workoutList {
     display: flex;
     flex-direction: column;
-    padding: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .loading {

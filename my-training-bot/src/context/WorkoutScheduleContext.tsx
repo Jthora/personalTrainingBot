@@ -13,7 +13,11 @@ interface WorkoutScheduleContextProps {
 
 const WorkoutScheduleContext = createContext<WorkoutScheduleContextProps | undefined>(undefined);
 
-export const WorkoutScheduleProvider: React.FC = ({ children }) => {
+interface WorkoutScheduleProviderProps {
+    children: React.ReactNode;
+}
+
+export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = ({ children }) => {
     const [schedule, setSchedule] = useState<SubWorkout[]>([]);
 
     useEffect(() => {

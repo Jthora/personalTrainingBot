@@ -54,23 +54,32 @@ const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
 
     return (
         <div className={styles.cardSlot}>
-            <h2>{card.title}</h2>
-            <p>{card.description}</p>
-            <ul>
-                {card.bulletpoints.map((point, index) => (
-                    <li key={index}>{point}</li>
-                ))}
-            </ul>
-            <p>Duration: {card.duration} minutes</p>
-            <p>Difficulty: {card.difficulty}</p>
-            <div className={styles.controls}>
-                <button onClick={onDealNextCard}>Deal Next Card</button>
-                <label style={{ marginLeft: 'ich', display: 'inline-block', width: '75px' }}>
-                    <input type="checkbox" checked={isHeld} onChange={handleHoldChange} />
-                    Hold
-                </label>
-                <span>Time left: {formatTime(timeLeft)}</span>
-                
+            <div className={styles.cardDetails}>
+                <div className={styles.leftSide}>
+                <h2>{card.title}</h2>
+                <p>{card.description}</p>
+                    <ul>
+                        {card.bulletpoints.map((point, index) => (
+                            <li key={index}>{point}</li>
+                        ))}
+                    </ul>
+                </div>
+                <div className={styles.rightSide}>
+                    <div className={styles.topSide}>
+                        <p>Duration: {card.duration} minutes</p>
+                        <p>Difficulty: {card.difficulty}</p>
+                        <span>Time left: {formatTime(timeLeft)}</span>
+                    </div>
+                    <div className={styles.bottomSide}>
+                        <div className={styles.controls}>
+                            <label style={{ marginLeft: '1ch', marginRight: '1ch', display: 'inline-block', width: '60px' }}>
+                                <input type="checkbox" checked={isHeld} onChange={handleHoldChange} />
+                                Hold
+                            </label>
+                            <button onClick={onDealNextCard}>Deal Next Card 🎴</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );

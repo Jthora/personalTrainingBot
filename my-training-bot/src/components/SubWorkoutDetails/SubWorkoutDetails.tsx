@@ -46,7 +46,10 @@ const SubWorkoutDetails: React.FC<SubWorkoutDetailsProps> = ({ workout, onSkipWo
                         </div>
                     </div>
                     <div className={styles.right}>
-                        <SubWorkoutTimer ref={timerRef} onComplete={handleTimeoutWorkout} />
+                        <SubWorkoutTimer
+                            ref={timerRef}
+                            onComplete={handleTimeoutWorkout}
+                        />
                         <button onClick={handleCompleteWorkout}>Complete ✅</button>
                         <button onClick={handleSkipWorkout}>Skip ⏭️</button>
                     </div>

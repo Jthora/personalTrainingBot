@@ -1,6 +1,6 @@
-import { Workout } from './Workout';
+import { SubWorkout } from './SubWorkout';
 
 export interface WorkoutSchedule {
     date: string;
-    workouts: Workout[];
+    workouts: SubWorkout[];
 }

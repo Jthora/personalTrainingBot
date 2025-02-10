@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import CoachDialog from '../CoachDialog/CoachDialog';
 import SubWorkoutList from '../SubWorkoutList/SubWorkoutList';
 import styles from './Sidebar.module.css';
-import { useWorkoutSchedule } from '../../context/WorkoutScheduleContext';
+import { useWorkoutSchedule } from '../../hooks/useWorkoutSchedule';
 import { SubWorkout } from '../../types/SubWorkout';
 
 const Sidebar: React.FC = () => {
@@ -21,13 +21,17 @@ const Sidebar: React.FC = () => {
         setCurrentWorkout(null);
     };
 
-    const handleWorkoutComplete = (workout: SubWorkout) => {
+    const handleWorkoutComplete = () => {
         setCurrentWorkout(schedule[0] || null);
     };
 
     return (
         <div className={styles.sidebar}>
-            <CoachDialog currentWorkout={currentWorkout} onComplete={handleCompleteWorkout} onSkip={handleSkipWorkout} />
+            <CoachDialog 
+                currentWorkout={currentWorkout} 
+                onComplete={handleCompleteWorkout} 
+                onSkip={handleSkipWorkout} 
+            />
             <SubWorkoutList onWorkoutComplete={handleWorkoutComplete} />
         </div>
     );

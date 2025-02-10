@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useImperativeHandle, forwardRef } from 'react';
+import { useState, useEffect, useImperativeHandle, forwardRef, useRef } from 'react';
 import styles from './SubWorkoutTimer.module.css';
 
 const getRandomTime = () => {
@@ -7,9 +7,14 @@ const getRandomTime = () => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
-const SubWorkoutTimer: React.FC<{ onComplete: () => void }> = forwardRef(({ onComplete }, ref) => {
+interface SubWorkoutTimerProps {
+    onComplete: () => void;
+}
+
+const SubWorkoutTimer = forwardRef<{ resetTimer: () => void }, SubWorkoutTimerProps>(({ onComplete }, ref) => {
     const [timeLeft, setTimeLeft] = useState(getRandomTime());
     const [isPaused, setIsPaused] = useState(false);
+    const internalRef = useRef(null);
 
     useEffect(() => {
         if (isPaused) return;
@@ -38,7 +43,7 @@ const SubWorkoutTimer: React.FC<{ onComplete: () => void }> = forwardRef(({ onCo
     const togglePause = () => setIsPaused(!isPaused);
 
     return (
-        <div>
+        <div ref={internalRef}>
             <div style={{ display: 'flex', alignItems: 'center' }}>
                 <div className={styles.timeLeft}>{`Time Left: ${minutes}:${seconds}`}</div>
                 <button onClick={togglePause} className={styles.button}>

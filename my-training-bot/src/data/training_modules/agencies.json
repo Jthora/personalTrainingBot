@@ -1,7 +1,7 @@
 {
     "id": "agencies",
     "name": "Agencies",
-    "color": "#FF5733",
+    "color": "#8B4513",
     "description": "Training programs for intelligence and law enforcement agencies.",
     "submodules": [
         "cia_training",

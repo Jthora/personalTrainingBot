@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 import { createWorkoutSchedule } from '../utils/WorkoutScheduleCreator';
 import { SubWorkout } from '../types/SubWorkout';
 
@@ -23,14 +23,14 @@ export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = (
     useEffect(() => {
         const initializeSchedule = async () => {
             const newSchedule = await createWorkoutSchedule();
-            setSchedule(newSchedule.workouts);
+            setSchedule(newSchedule.workouts as unknown as SubWorkout[]);
         };
         initializeSchedule();
     }, []);
 
     const createRandomWorkout = async () => {
         const newSchedule = await createWorkoutSchedule();
-        setSchedule(newSchedule.workouts);
+        setSchedule(newSchedule.workouts as unknown as SubWorkout[]);
     };
 
     const shuffleCurrentWorkout = () => {
@@ -45,7 +45,7 @@ export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = (
         const newWorkout = await createWorkoutSchedule({ categories: ['cardio', 'strength', 'agility', 'combat', 'mental'] });
         setSchedule(prevSchedule => {
             if (prevSchedule.length > 0) {
-                return [...prevSchedule.slice(1), newWorkout.workouts[0]];
+                return [...prevSchedule.slice(1), newWorkout.workouts[0] as unknown as SubWorkout];
             }
             return prevSchedule;
         });
@@ -56,7 +56,7 @@ export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = (
         setSchedule(prevSchedule => {
             if (prevSchedule.length > 1) {
                 const [current, ...rest] = prevSchedule;
-                return [...rest, current, newWorkout.workouts[0]];
+                return [...rest, current, newWorkout.workouts[0] as unknown as SubWorkout];
             }
             return prevSchedule;
         });
@@ -69,10 +69,4 @@ export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = (
     );
 };
 
-export const useWorkoutSchedule = () => {
-    const context = useContext(WorkoutScheduleContext);
-    if (!context) {
-        throw new Error('useWorkoutSchedule must be used within a WorkoutScheduleProvider');
-    }
-    return context;
-};
+export default WorkoutScheduleContext

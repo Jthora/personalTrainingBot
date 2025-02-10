@@ -1,7 +1,7 @@
 import React from 'react';
 import SubWorkoutCard from '../SubWorkoutCard/SubWorkoutCard';
 import styles from './SubWorkoutList.module.css';
-import { useWorkoutSchedule } from '../../context/WorkoutScheduleContext';
+import { useWorkoutSchedule } from '../../hooks/useWorkoutSchedule';
 import { SubWorkout } from '../../types/SubWorkout';
 
 const SubWorkoutList: React.FC<{ onWorkoutComplete: (workout: SubWorkout) => void }> = ({ onWorkoutComplete }) => {

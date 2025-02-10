@@ -3,13 +3,18 @@ import styles from './CoachDialog.module.css';
 import tigerIcon from '../../assets/images/icons/tiger_fitness_god-icon-512x.png';
 import { fetchSpeech, fetchBoast, fetchGrowl } from '../../utils/CoachDataLoader';
 import SubWorkoutDetails from '../SubWorkoutDetails/SubWorkoutDetails';
-import { useWorkoutSchedule } from '../../context/WorkoutScheduleContext';
+import { useWorkoutSchedule } from '../../hooks/useWorkoutSchedule';
 import { SubWorkout } from '../../types/SubWorkout';
 
-const CoachDialog: React.FC = () => {
+interface CoachDialogProps {
+    currentWorkout: SubWorkout | null;
+    onComplete: () => void;
+    onSkip: () => void;
+  }
+
+const CoachDialog: React.FC<CoachDialogProps> = ({ currentWorkout, onComplete, onSkip }) => {
     const [quote, setQuote] = useState('');
-    const { schedule, completeCurrentWorkout, skipCurrentWorkout } = useWorkoutSchedule();
-    const [currentWorkout, setCurrentWorkout] = useState<SubWorkout | null>(schedule[0] || null);
+    const { completeCurrentWorkout, skipCurrentWorkout } = useWorkoutSchedule();
 
     useEffect(() => {
         const updateQuote = () => {
@@ -25,18 +30,16 @@ const CoachDialog: React.FC = () => {
         return () => clearInterval(intervalId); // Cleanup interval on component unmount
     }, []);
 
-    useEffect(() => {
-        setCurrentWorkout(schedule[0] || null); // Update current workout whenever the schedule changes
-    }, [schedule]);
-
     const handleCompleteWorkout = () => {
         completeCurrentWorkout();
         setQuote(fetchBoast());
+        onComplete();
     };
 
     const handleSkipWorkout = () => {
         skipCurrentWorkout();
         setQuote(fetchGrowl());
+        onSkip();
     };
 
     return (

@@ -2,7 +2,7 @@
 
 .workoutDetails {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Change to column to stack elements vertically */
     padding: 16px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -13,6 +13,11 @@
 
 .left {
     flex: 1;
+    text-align: left;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    margin-top: 0px;
+    padding: 0px;
 }
 
 .right {
@@ -20,21 +25,32 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
+    text-align: right;
     gap: 8px;
 }
 
 .top {
+    margin-top: 0px;
+    padding: 0px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 16px;
+    justify-content: space-between;
+}
+
+.top h1 {
+    margin: 2px;
+    padding: 0px;
 }
 
 .bottom {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 8px;
+    text-align: left;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.bottom p {
+    margin: 0;
+    padding: 0;
 }
 
 .noWorkout {

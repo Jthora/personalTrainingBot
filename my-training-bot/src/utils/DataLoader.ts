@@ -3,11 +3,11 @@ import { TrainingSubModule } from "../types/TrainingSubModule";
 import { CardDeck } from "../types/CardDeck";
 import { Card } from "../types/Card";
 import TrainingModuleCache from "../cache/TrainingModuleCache";
-import { TrainingModuleReference } from "../types/TrainingModuleReference";
+import { modulePaths } from "./modulePaths"; // Import the generated module paths
+import { subModulePaths } from "./subModulePaths"; // Import the generated submodule paths
+import { cardDeckPaths } from "./cardDeckPaths"; // Import the generated card deck paths
 
 class DataLoader {
-    private dataPath = "/src/data";
-
     // Load all data and cache it
     async loadAllData() {
         try {
@@ -23,58 +23,20 @@ class DataLoader {
 
     // Load training modules from JSON files
     async loadTrainingModules(): Promise<TrainingModule[]> {
-        const modulesPath = `${this.dataPath}/training_modules.json`;
-        let data;
-        try {
-            console.log(`Fetching training modules from ${modulesPath}...`);
-            const response = await fetch(modulesPath);
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            data = await response.json();
-            console.log("Successfully fetched and parsed training modules JSON.");
-        } catch (error) {
-            console.error(`Failed to fetch or parse ${modulesPath}:`, error);
-            if (error instanceof Error) {
-                throw new Error(`Could not load training modules: ${error.message}`);
-            }
-        }
-
-        if (!data || !data.modules) {
-            throw new Error("Invalid data format: 'modules' field is missing.");
-        }
-
         const trainingModules: TrainingModule[] = [];
 
-        for (const moduleRef of data.modules as TrainingModuleReference[]) {
+        for (const moduleId in modulePaths) {
             try {
-                const modulePath = `${this.dataPath}/training_modules/${moduleRef.id}.json`;
-                const moduleResponse = await fetch(modulePath);
-                if (!moduleResponse.ok) {
-                    throw new Error(`HTTP error! status: ${moduleResponse.status}`);
-                }
-                const moduleData = await moduleResponse.json();
-
+                const moduleData = await modulePaths[moduleId]();
                 const subModules: TrainingSubModule[] = await Promise.all(
                     moduleData.submodules.map(async (subModuleId: string) => {
                         try {
-                            const subModulePath = `${this.dataPath}/training_modules/training_sub_modules/${moduleRef.id}/${subModuleId}.json`;
-                            const subModuleResponse = await fetch(subModulePath);
-                            if (!subModuleResponse.ok) {
-                                throw new Error(`HTTP error! status: ${subModuleResponse.status}`);
-                            }
-                            const subModuleData = await subModuleResponse.json();
+                            const subModuleData = await subModulePaths[`${moduleId}_${subModuleId}`]();
 
                             const cardDecks: CardDeck[] = await Promise.all(
                                 subModuleData.cardDecks.map(async (deckId: string) => {
                                     try {
-                                        const deckPath = `${this.dataPath}/training_modules/training_sub_modules/${moduleRef.id}/card_decks/${subModuleId}/${deckId}.json`;
-                                        const deckResponse = await fetch(deckPath);
-                                        if (!deckResponse.ok) {
-                                            throw new Error(`HTTP error! status: ${deckResponse.status}`);
-                                        }
-                                        const deckText = await deckResponse.text();
-                                        const deckData = JSON.parse(deckText);
+                                        const deckData = await cardDeckPaths[`${moduleId}_${subModuleId}_${deckId}`]();
                                         return {
                                             id: deckData.id,
                                             name: deckData.name,
@@ -127,8 +89,8 @@ class DataLoader {
                     submodules: subModules
                 });
             } catch (error) {
-                console.error(`Failed to load training module ${moduleRef.id}:`, error);
-                trainingModules.push(this.createFallbackTrainingModule(moduleRef.id));
+                console.error(`Failed to load training module ${moduleId}:`, error);
+                trainingModules.push(this.createFallbackTrainingModule(moduleId));
             }
         }
 
@@ -162,7 +124,7 @@ class DataLoader {
             id: moduleId,
             name: "Unknown Module",
             description: "No description available",
-            color: "#FFFFFF", // Add this line
+            color: "#FFFFFF",
             submodules: []
         };
     }

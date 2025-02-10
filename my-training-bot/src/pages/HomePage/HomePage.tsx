@@ -6,12 +6,6 @@ import CardTable from '../../components/CardTable/CardTable';
 import { CardProvider } from '../../context/CardContext';
 import { WorkoutScheduleProvider } from '../../context/WorkoutScheduleContext';
 import TrainingModuleCache from '../../cache/TrainingModuleCache';
-import { TrainingModule } from '../../types/TrainingModule';
-
-// Mock data for demonstration purposes
-const mockTrainingModules: TrainingModule[] = [
-    // Add your mock training modules here
-];
 
 const HomePage: React.FC = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -20,16 +14,19 @@ const HomePage: React.FC = () => {
         const loadCache = async () => {
             const cache = TrainingModuleCache.getInstance();
             if (!cache.isLoaded()) {
-                await cache.loadData(mockTrainingModules);
+                setIsLoading(true);
+                await cache.loadData([]); // Ensure the cache is loaded
+                setIsLoading(false);
+            } else {
+                setIsLoading(false);
             }
-            setIsLoading(false);
         };
 
         loadCache();
     }, []);
 
     if (isLoading) {
-        return <div>Loading...</div>;
+        return <div>HomePage Loading...</div>;
     }
 
     return (

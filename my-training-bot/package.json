@@ -4,8 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "generate-module-paths": "npx tsx src/utils/generateModulePaths.tsx",
+    "generate-submodule-paths": "npx tsx src/utils/generateSubModulePaths.tsx",
+    "generate-carddeck-paths": "npx tsx src/utils/generateCardDeckPaths.tsx",
+    "dev": "npm run generate-module-paths && npm run generate-submodule-paths && npm run generate-carddeck-paths && vite",
+    "build": "npm run generate-module-paths && npm run generate-submodule-paths && npm run generate-carddeck-paths && tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -32,6 +35,9 @@
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.18",
     "globals": "^15.14.0",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.19.2",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.22.0",
     "vite": "^6.1.0"

@@ -1,13 +1,31 @@
 .
+├── .DS_Store
 ├── .gitignore
+├── .vercel
+│   ├── README.txt
+│   └── project.json
 ├── README.md
 ├── directory-structure.txt
+├── dist
+│   ├── assets
+│   │   ├── Aldrich-Regular-BJ2Af9cL.ttf
+│   │   ├── WingCommanderLogo-288x162-Dr7UFZxN.gif
+│   │   ├── complete-BBmFiQXS.mp3
+│   │   ├── index-BqLQ6mfC.css
+│   │   ├── index-Efwo4LE1.js
+│   │   ├── skip-rD65AU5b.wav
+│   │   ├── tiger_fitness_god-icon-512x-Dyqy8vof.png
+│   │   └── timeout-BMk_9bRO.wav
+│   ├── favicon.ico
+│   ├── favicon.png
+│   └── index.html
 ├── eslint.config.js
 ├── index.html
 ├── package-lock.json
 ├── package.json
 ├── public
-│   └── vite.svg
+│   ├── favicon.ico
+│   └── favicon.png
 ├── src
 │   ├── App.tsx
 │   ├── assets
@@ -67,7 +85,7 @@
 │   │   │   ├── SubWorkoutList.module.css
 │   │   │   └── SubWorkoutList.tsx
 │   │   ├── SubWorkoutTimer
-│   │   │   ├── SubWorkoutTimer.module.tsx
+│   │   │   ├── SubWorkoutTimer.module.css
 │   │   │   └── SubWorkoutTimer.tsx
 │   │   ├── TimerControls
 │   │   │   ├── TimerControls.module.css
@@ -563,7 +581,8 @@
 │   │   └── training_modules.json
 │   ├── hooks
 │   │   ├── useTimer.ts
-│   │   └── useTraining.ts
+│   │   ├── useTraining.ts
+│   │   └── useWorkoutSchedule.ts
 │   ├── main.tsx
 │   ├── models
 │   │   ├── Schedule.ts
@@ -603,8 +622,11 @@
 │   │   ├── CardDealer.ts
 │   │   ├── CoachDataLoader.ts
 │   │   ├── DataLoader.ts
+│   │   ├── InitialDataLoader.ts
 │   │   ├── ScheduleGenerator.ts
-│   │   └── WorkoutScheduleCreator.ts
+│   │   ├── WorkoutScheduleCreator.ts
+│   │   ├── generateModulePaths.tsx
+│   │   └── modulePaths.ts
 │   └── vite-env.d.ts
 ├── templates
 │   ├── card_deck.json
@@ -615,4 +637,4 @@
 ├── tsconfig.node.json
 └── vite.config.ts
 
-157 directories, 459 files
+160 directories, 478 files

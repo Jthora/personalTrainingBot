@@ -10,9 +10,12 @@ const SubWorkoutList: React.FC<{ onWorkoutComplete: (workout: SubWorkout) => voi
     return (
         <div className={styles.workoutList}>
             Up Next:
-            {schedule.slice(1).map((workout, index) => (
-                <SubWorkoutCard key={index} workout={workout} onClick={() => onWorkoutComplete(workout)} />
-            ))}
+            {schedule.map((workout, index) => {
+                if (index === 0) {
+                    return null;
+                }
+                return <SubWorkoutCard key={index} workout={workout} onClick={() => onWorkoutComplete(workout)} />;
+            })}
         </div>
     );
 };

@@ -3,7 +3,6 @@ import { SubWorkout } from '../../types/SubWorkout';
 import styles from './SubWorkoutDetails.module.css';
 import SubWorkoutTimer from '../SubWorkoutTimer/SubWorkoutTimer';
 import { playCompleteSound, playSkipSound } from '../../utils/AudioPlayer';
-import { useWorkoutSchedule } from '../../context/WorkoutScheduleContext';
 
 interface SubWorkoutDetailsProps {
     workout: SubWorkout | null;
@@ -12,18 +11,15 @@ interface SubWorkoutDetailsProps {
 }
 
 const SubWorkoutDetails: React.FC<SubWorkoutDetailsProps> = ({ workout, onSkipWorkout, onCompleteWorkout }) => {
-    const { addWorkoutToEnd } = useWorkoutSchedule();
 
     const handleCompleteWorkout = () => {
         playCompleteSound();
         onCompleteWorkout();
-        addWorkoutToEnd(workout);
     };
 
     const handleSkipWorkout = () => {
         playSkipSound();
         onSkipWorkout();
-        addWorkoutToEnd(workout);
     };
 
     if (!workout) {

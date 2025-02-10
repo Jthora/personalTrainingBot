@@ -8,7 +8,7 @@ import { SubWorkout } from '../../types/SubWorkout';
 
 const CoachDialog: React.FC = () => {
     const [quote, setQuote] = useState('');
-    const { schedule, addWorkoutToEnd } = useWorkoutSchedule();
+    const { schedule, completeCurrentWorkout, skipCurrentWorkout } = useWorkoutSchedule();
     const [currentWorkout, setCurrentWorkout] = useState<SubWorkout | null>(schedule[0] || null);
 
     useEffect(() => {
@@ -30,17 +30,11 @@ const CoachDialog: React.FC = () => {
     }, [schedule]);
 
     const handleCompleteWorkout = () => {
-        if (currentWorkout) {
-            addWorkoutToEnd(currentWorkout);
-            setCurrentWorkout(schedule[1] || null); // Move to the next workout
-        }
+        completeCurrentWorkout();
     };
 
     const handleSkipWorkout = () => {
-        if (currentWorkout) {
-            addWorkoutToEnd(currentWorkout);
-            setCurrentWorkout(schedule[1] || null); // Move to the next workout
-        }
+        skipCurrentWorkout();
     };
 
     return (

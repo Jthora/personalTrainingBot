@@ -6,6 +6,9 @@ interface WorkoutScheduleContextProps {
     schedule: SubWorkout[];
     createRandomWorkout: () => void;
     shuffleCurrentWorkout: () => void;
+    addWorkoutToEnd: (workout: SubWorkout) => void;
+    completeCurrentWorkout: () => void;
+    skipCurrentWorkout: () => void;
 }
 
 const WorkoutScheduleContext = createContext<WorkoutScheduleContextProps | undefined>(undefined);
@@ -30,8 +33,33 @@ export const WorkoutScheduleProvider: React.FC = ({ children }) => {
         setSchedule(prevSchedule => [...prevSchedule.sort(() => Math.random() - 0.5)]);
     };
 
+    const addWorkoutToEnd = (workout: SubWorkout) => {
+        setSchedule(prevSchedule => [...prevSchedule, workout]);
+    };
+
+    const completeCurrentWorkout = async () => {
+        const newWorkout = await createWorkoutSchedule({ categories: ['cardio', 'strength', 'agility', 'combat', 'mental'] });
+        setSchedule(prevSchedule => {
+            if (prevSchedule.length > 0) {
+                return [...prevSchedule.slice(1), newWorkout.workouts[0]];
+            }
+            return prevSchedule;
+        });
+    };
+
+    const skipCurrentWorkout = async () => {
+        const newWorkout = await createWorkoutSchedule({ categories: ['cardio', 'strength', 'agility', 'combat', 'mental'] });
+        setSchedule(prevSchedule => {
+            if (prevSchedule.length > 1) {
+                const [current, ...rest] = prevSchedule;
+                return [...rest, current, newWorkout.workouts[0]];
+            }
+            return prevSchedule;
+        });
+    };
+
     return (
-        <WorkoutScheduleContext.Provider value={{ schedule, createRandomWorkout, shuffleCurrentWorkout }}>
+        <WorkoutScheduleContext.Provider value={{ schedule, createRandomWorkout, shuffleCurrentWorkout, addWorkoutToEnd, completeCurrentWorkout, skipCurrentWorkout }}>
             {children}
         </WorkoutScheduleContext.Provider>
     );

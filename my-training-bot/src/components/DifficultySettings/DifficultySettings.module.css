@@ -1,0 +1,43 @@
+.difficultySettings {
+    margin-top: 20px;
+}
+
+.difficultySettings label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.difficultySettings select {
+    width: 100%;
+    padding: 8px;
+    font-size: 1em;
+}
+
+.difficultySettings .description {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #cccccc;
+}
+
+.additionalInfo {
+    margin-top: 1em;
+}
+
+.militarySoldier, .athleteArchetype {
+    margin-top: 0.5em;
+}
+
+.militarySoldier ul, .athleteArchetype ul {
+    list-style-type: disc;
+    margin-left: 1.5em;
+}
+
+.pft {
+    margin-top: 1em;
+}
+
+.pft ul {
+    list-style-type: disc;
+    margin-left: 1.5em;
+}

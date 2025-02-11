@@ -1,50 +1,362 @@
 [
     {
         "name": "Weak",
-        "description": "Basic mobility & recovery level."
+        "description": "Minimal physical activity, suitable for recovery.",
+        "military_soldier": ["None", "None"],
+        "athlete_archetype": ["Injured", "Elderly"],
+        "level": -1,
+        "pft": {
+            "pushups": 2,
+            "situps": 2,
+            "run": "0.5 mile in 15 minutes",
+            "pullups": 0,
+            "plank": "15 seconds",
+            "squats": 2
+        },
+        "requirements": {
+            "soldier_requirement": "Basic mobility drills: arm circles",
+            "athlete_requirement": "Gentle stretching routines such as yoga",
+            "description_requirement": "Minimal physical effort: slow walking"
+        }
+    },
+    {
+        "name": "Novice",
+        "description": "Basic mobility & recovery level.",
+        "military_soldier": ["None", "None"],
+        "athlete_archetype": ["Rehabilitation Patient", "Elderly"],
+        "level": 0,
+        "pft": {
+            "pushups": 5,
+            "situps": 5,
+            "run": "1 mile in 20 minutes",
+            "pullups": 0,
+            "plank": "30 seconds",
+            "squats": 5
+        },
+        "requirements": {
+            "soldier_requirement": "Light jogging sessions around the track",
+            "athlete_requirement": "Simple body movements like leg lifts",
+            "description_requirement": "Low intensity brisk walking"
+        }
     },
     {
         "name": "Beginner",
-        "description": "Light endurance & strength training."
+        "description": "Light endurance & strength training.",
+        "military_soldier": ["None", "None"],
+        "athlete_archetype": ["New Gym Member", "Casual Jogger"],
+        "level": 1,
+        "pft": {
+            "pushups": 10,
+            "situps": 10,
+            "run": "1 mile in 15 minutes",
+            "pullups": 1,
+            "plank": "45 seconds",
+            "squats": 10
+        },
+        "requirements": {
+            "soldier_requirement": "Basic training jumping jacks",
+            "athlete_requirement": "Light weight lifting with dumbbells",
+            "description_requirement": "Introductory treadmill walking"
+        }
     },
     {
         "name": "Light",
-        "description": "Increased intensity, low reps."
+        "description": "Increased intensity, low reps.",
+        "military_soldier": ["Recruit", "Cadet"],
+        "athlete_archetype": ["Weekend Warrior", "Recreational Cyclist"],
+        "level": 2,
+        "pft": {
+            "pushups": 20,
+            "situps": 20,
+            "run": "1.5 miles in 14 minutes",
+            "pullups": 3,
+            "plank": "1 minute",
+            "squats": 20
+        },
+        "requirements": {
+            "soldier_requirement": "Recruit obstacle course with hurdles",
+            "athlete_requirement": "Moderate cycling on weekends",
+            "description_requirement": "Low repetition sets: 10 pushups"
+        }
     },
     {
         "name": "Basic",
-        "description": "Standard bodyweight training."
+        "description": "Moderate intensity, suitable for general fitness.",
+        "military_soldier": ["Bootcamp Graduate", "Infantryman"],
+        "athlete_archetype": ["Regular Gym Goer", "Amateur Runner"],
+        "level": 3,
+        "pft": {
+            "pushups": 30,
+            "situps": 30,
+            "run": "2 miles in 18 minutes",
+            "pullups": 5,
+            "plank": "1.5 minutes",
+            "squats": 30
+        },
+        "requirements": {
+            "soldier_requirement": "Bootcamp rope climbing",
+            "athlete_requirement": "Regular gym sessions with weights",
+            "description_requirement": "Moderate intensity circuit training"
+        }
+    },
+    {
+        "name": "Average",
+        "description": "Standard bodyweight training.",
+        "military_soldier": ["Infantryman", "Rifleman"],
+        "athlete_archetype": ["Fitness Enthusiast", "CrossFit Beginner"],
+        "level": 4,
+        "pft": {
+            "pushups": 40,
+            "situps": 40,
+            "run": "2 miles in 16 minutes",
+            "pullups": 7,
+            "plank": "2 minutes",
+            "squats": 40
+        },
+        "requirements": {
+            "soldier_requirement": "Infantry sandbag carries",
+            "athlete_requirement": "CrossFit burpees",
+            "description_requirement": "Standard squats and lunges"
+        }
+    },
+    {
+        "name": "Moderate",
+        "description": "Enhanced bodyweight training with light weights.",
+        "military_soldier": ["Gunner", "Trooper"],
+        "athlete_archetype": ["Intermediate CrossFit Athlete", "Advanced Runner"],
+        "level": 5,
+        "pft": {
+            "pushups": 50,
+            "situps": 50,
+            "run": "2.5 miles in 20 minutes",
+            "pullups": 10,
+            "plank": "2.5 minutes",
+            "squats": 50
+        },
+        "requirements": {
+            "soldier_requirement": "Gunner fitness: tire flips",
+            "athlete_requirement": "Intermediate weight lifting with barbells",
+            "description_requirement": "Weighted pull-ups"
+        }
     },
     {
         "name": "Intermediate",
-        "description": "Introduction of weighted elements."
+        "description": "Introduction of medium weighted elements.",
+        "military_soldier": ["Sharpshooter", "Recon Scout"],
+        "athlete_archetype": ["Amateur Bodybuilder", "Competitive Runner"],
+        "level": 6,
+        "pft": {
+            "pushups": 60,
+            "situps": 60,
+            "run": "3 miles in 24 minutes",
+            "pullups": 12,
+            "plank": "3 minutes",
+            "squats": 60
+        },
+        "requirements": {
+            "soldier_requirement": "Sharpshooter sniper crawls",
+            "athlete_requirement": "Medium weight bench presses",
+            "description_requirement": "Competitive interval sprints"
+        }
     },
     {
         "name": "Standard",
-        "description": "USMC Standard-level fitness."
+        "description": "Combat Standard-level fitness.",
+        "military_soldier": ["Assault Specialist", "Combat Engineer"],
+        "athlete_archetype": ["CrossFit Athlete", "Triathlete"],
+        "level": 7,
+        "pft": {
+            "pushups": 70,
+            "situps": 70,
+            "run": "3 miles in 22 minutes",
+            "pullups": 15,
+            "plank": "3.5 minutes",
+            "squats": 70
+        },
+        "requirements": {
+            "soldier_requirement": "Combat readiness battlefield sprints",
+            "athlete_requirement": "Triathlon brick workouts",
+            "description_requirement": "Standard full-body circuits"
+        }
+    },
+    {
+        "name": "Proficient",
+        "description": "High-level fitness with advanced techniques.",
+        "military_soldier": ["Field Medic", "Paratrooper"],
+        "athlete_archetype": ["Advanced CrossFit Athlete", "Semi-Professional Athlete"],
+        "level": 8,
+        "pft": {
+            "pushups": 80,
+            "situps": 80,
+            "run": "3.5 miles in 26 minutes",
+            "pullups": 18,
+            "plank": "4 minutes",
+            "squats": 80
+        },
+        "requirements": {
+            "soldier_requirement": "Parachute runs",
+            "athlete_requirement": "CrossFit muscle-ups",
+            "description_requirement": "HIIT sessions"
+        }
     },
     {
         "name": "Experienced",
-        "description": "Above military standard training."
+        "description": "Above military standard training.",
+        "military_soldier": ["Raider", "Commando"],
+        "athlete_archetype": ["Advanced CrossFit Athlete", "Marathon Runner"],
+        "level": 9,
+        "pft": {
+            "pushups": 90,
+            "situps": 90,
+            "run": "4 miles in 30 minutes",
+            "pullups": 20,
+            "plank": "4.5 minutes",
+            "squats": 90
+        },
+        "requirements": {
+            "soldier_requirement": "amphibious assaults",
+            "athlete_requirement": "Marathon preparation long runs",
+            "description_requirement": "Above standard endurance circuits"
+        }
     },
     {
         "name": "Heavy",
-        "description": "Intense strength, endurance, and agility combo."
+        "description": "Intense strength, endurance, and agility combo.",
+        "military_soldier": ["Ranger", "Green Beret"],
+        "athlete_archetype": ["Elite Bodybuilder", "Ironman Triathlete"],
+        "level": 10,
+        "pft": {
+            "pushups": 100,
+            "situps": 100,
+            "run": "4.5 miles in 34 minutes",
+            "pullups": 25,
+            "plank": "5 minutes",
+            "squats": 100
+        },
+        "requirements": {
+            "soldier_requirement": "mountain climbs",
+            "athlete_requirement": "swim-bike-run",
+            "description_requirement": "heavy lifting"
+        }
     },
     {
         "name": "Advanced",
-        "description": "Near Special Forces-level intensity."
+        "description": "Near Special Forces-level intensity.",
+        "military_soldier": ["SEAL", "Delta Force"],
+        "athlete_archetype": ["Professional Athlete", "Olympic Weightlifter"],
+        "level": 11,
+        "pft": {
+            "pushups": 120,
+            "situps": 120,
+            "run": "5 miles in 38 minutes",
+            "pullups": 32,
+            "plank": "6 minutes",
+            "squats": 120
+        },
+        "requirements": {
+            "soldier_requirement": "SEAL underwater combat swimming",
+            "athlete_requirement": "Olympic weightlifting: clean and jerk",
+            "description_requirement": "Special Forces tactical drills"
+        }
     },
     {
         "name": "Challenge",
-        "description": "Extreme combat-ready training."
+        "description": "Special operations combat-ready training.",
+        "military_soldier": ["Force Recon", "Air Force PJ"],
+        "athlete_archetype": ["Ultra Marathon Runner", "Extreme Endurance Athlete"],
+        "level": 12,
+        "pft": {
+            "pushups": 140,
+            "situps": 140,
+            "run": "5.5 miles in 42 minutes",
+            "pullups": 40,
+            "plank": "7 minutes",
+            "squats": 140
+        },
+        "requirements": {
+            "soldier_requirement": "Amphibious landings",
+            "athlete_requirement": "50-mile runs",
+            "description_requirement": "Survival training"
+        }
     },
     {
         "name": "Expert",
-        "description": "Tactical athlete level, preparing for real-world battles."
+        "description": "Tactical athlete level for deep infiltration.",
+        "military_soldier": ["Black Ops", "Covert Operative"],
+        "athlete_archetype": ["World-Class Athlete", "Decathlete"],
+        "level": 13,
+        "pft": {
+            "pushups": 160,
+            "situps": 160,
+            "run": "6 miles in 46 minutes",
+            "pullups": 60,
+            "plank": "9 minutes",
+            "squats": 160
+        },
+        "requirements": {
+            "soldier_requirement": "Night navigation",
+            "athlete_requirement": "Pole vaulting",
+            "description_requirement": "Multi-event training"
+        }
     },
     {
         "name": "Extreme",
-        "description": "Overcoming elite military physical training."
+        "description": "Beyond elite military physical training.",
+        "military_soldier": ["Psi-Commando", "Cybernetic Warrior"],
+        "athlete_archetype": ["Peak Human Performance", "Ultimate Athlete"],
+        "level": 14,
+        "pft": {
+            "pushups": 180,
+            "situps": 180,
+            "run": "7 miles in 54 minutes",
+            "pullups": 80,
+            "plank": "12 minutes",
+            "squats": 180
+        },
+        "requirements": {
+            "soldier_requirement": "Mental resilience training",
+            "athlete_requirement": "Mind-body synchronization",
+            "description_requirement": "Extreme conditioning"
+        }
+    },
+    {
+        "name": "Super",
+        "description": "Human limits surpassed beyond expectations.",
+        "military_soldier": ["Super Soldier", "Cyber Ninja"],
+        "athlete_archetype": ["Super Human", "Transcendent Athlete"],
+        "level": 15,
+        "pft": {
+            "pushups": 200,
+            "situps": 200,
+            "run": "9 miles in 62 minutes",
+            "pullups": 100,
+            "plank": "18 minutes",
+            "squats": 200
+        },
+        "requirements": {
+            "soldier_requirement": "Zero-gravity combat drills",
+            "athlete_requirement": "Car-lifting workouts",
+            "description_requirement": "Ultra-endurance events"
+        }
+    },
+    {
+        "name": "Hyper",
+        "description": "Incredible physical feats far beyond human limits.",
+        "military_soldier": ["Hyper-Enhanced Infantry", "Power Ranger"],
+        "athlete_archetype": ["Omega-Level", "Cosmic Athlete"],
+        "level": 16,
+        "pft": {
+            "pushups": 300,
+            "situps": 300,
+            "run": "12 miles in 70 minutes",
+            "pullups": 150,
+            "plank": "30 minutes",
+            "squats": 300
+        },
+        "requirements": {
+            "soldier_requirement": "Astroid punching training",
+            "athlete_requirement": "Extreme-gravity workouts",
+            "description_requirement": "Giant robot wrestling"
+        }
     }
 ]

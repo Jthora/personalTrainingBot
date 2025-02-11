@@ -211,6 +211,10 @@ class CoachTrainingCache {
         console.log(`Fetching sub-workouts for category: ${category}`);
         return this.subWorkouts[category] || null;
     }
+
+    getSelectedDifficultyLevel(): string {
+        return localStorage.getItem('selectedDifficulty') || 'Standard';
+    }
 }
 
 const getRandomItem = <T>(array: T[]): T => array[Math.floor(Math.random() * array.length)];

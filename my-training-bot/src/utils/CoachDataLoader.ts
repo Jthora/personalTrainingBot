@@ -211,12 +211,20 @@ export const fetchPreviousRank = (currentRankName: string): WorkoutRank | null =
 };
 
 // Fetches all difficulty levels
-export const fetchAllDifficultyLevels = (): WorkoutDifficultyLevel[] | null => {
+export const fetchAllDifficultyLevels = async (): Promise<WorkoutDifficultyLevel[]> => {
     try {
-        return difficultyLevels as WorkoutDifficultyLevel[] || null;
+        return difficultyLevels.map(level => ({
+            name: level.name,
+            description: level.description,
+            military_soldier: level.military_soldier,
+            athlete_archetype: level.athlete_archetype,
+            level: level.level,
+            pft: level.pft,
+            requirements: level.requirements
+        })) as WorkoutDifficultyLevel[];
     } catch (error) {
-        console.error("Failed to fetch all difficulty levels:", error);
-        return null;
+        console.error("Failed to fetch difficulty levels:", error);
+        return [];
     }
 };
 

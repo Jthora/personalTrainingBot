@@ -4,10 +4,38 @@
     padding: var(--padding);
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .nav {
     padding: var(--padding);
     background-color: var(--secondary-bg-color);
     color: var(--primary-text-color);
+}
+
+.contentContainer {
+    display: flex;
+    margin-top: var(--padding);
+    flex: 1;
+}
+
+.cardSelectorContainer {
+    flex: 1;
+    padding-right: var(--padding);
+}
+
+.settingsWindowContainer {
+    flex: 2;
+    padding: 0 var(--padding);
+}
+
+.settingsSidebarContainer {
+    width: 25%;
+    padding-left: var(--padding);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }

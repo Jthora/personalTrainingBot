@@ -8,11 +8,49 @@ const sounds = {
     timeout: timeoutSound
 };
 
+const defaultSoundSettings = {
+    globalVolume: 1,
+    skip: { enabled: true, volume: 1 },
+    complete: { enabled: true, volume: 1 },
+    timeout: { enabled: true, volume: 1 }
+};
+
+const loadSoundSettings = () => {
+    const savedSettings = localStorage.getItem('soundSettings');
+    return savedSettings ? JSON.parse(savedSettings) : defaultSoundSettings;
+};
+
+const soundSettings = loadSoundSettings();
+
+const saveSoundSettings = () => {
+    localStorage.setItem('soundSettings', JSON.stringify(soundSettings));
+};
+
 let currentAudios: HTMLAudioElement[] = [];
 
-export const playSound = (soundUrl: string) => {
+export const setSoundEnabled = (sound: keyof typeof sounds, enabled: boolean) => {
+    soundSettings[sound].enabled = enabled;
+    saveSoundSettings();
+};
+
+export const setSoundVolume = (sound: keyof typeof sounds, volume: number) => {
+    soundSettings[sound].volume = volume;
+    saveSoundSettings();
+};
+
+export const setGlobalVolume = (volume: number) => {
+    soundSettings.globalVolume = volume;
+    currentAudios.forEach(audio => {
+        audio.volume = volume;
+    });
+    saveSoundSettings();
+};
+
+export const playSound = (soundUrl: string, sound: keyof typeof sounds) => {
+    if (!soundSettings[sound].enabled) return;
     try {
         const audio = new Audio(soundUrl);
+        audio.volume = soundSettings[sound].volume * soundSettings.globalVolume;
         audio.play();
         currentAudios.push(audio);
         audio.addEventListener('ended', () => {
@@ -41,20 +79,14 @@ export const stopSound = (soundUrl?: string) => {
     }
 };
 
-export const setVolume = (volume: number) => {
-    currentAudios.forEach(audio => {
-        audio.volume = volume;
-    });
-};
-
 export const playSkipSound = () => {
-    playSound(sounds.skip);
+    playSound(sounds.skip, 'skip');
 };
 
 export const playCompleteSound = () => {
-    playSound(sounds.complete);
+    playSound(sounds.complete, 'complete');
 };
 
 export const playTimeoutSound = () => {
-    playSound(sounds.timeout);
+    playSound(sounds.timeout, 'timeout');
 };

@@ -54,7 +54,8 @@ const CardSelector: React.FC = () => {
 
     return (
         <div className={styles.cardSelector}>
-            <h3>Training Module Select</h3>
+            <h1>Card Selector</h1>
+            <h3>Training Modules</h3>
             {trainingModules.map(module => (
                 <div key={module.id} className={styles.module}>
                     <input

@@ -1,9 +1,9 @@
 {
-    "sub_workout_groups": [
+    "workout_groups": [
         {
             "name": "Weapon Handling Drills",
             "description": "Exercises to improve weapon handling skills.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Basic Weapon Handling",
                     "duration": "5 minutes",
@@ -37,7 +37,7 @@
         {
             "name": "Intermediate Weapon Handling",
             "description": "Intermediate weapon handling exercises.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Weapon Handling Drills with Movement",
                     "duration": "10 minutes",
@@ -78,7 +78,7 @@
         {
             "name": "Advanced Weapon Handling",
             "description": "Advanced weapon handling exercises.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Tactical Reload Drills",
                     "duration": "5 minutes",
@@ -98,7 +98,7 @@
         {
             "name": "Elite Tactical Weapon Handling",
             "description": "High-intensity weapon handling exercises for elite tactical athletes.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Dynamic Weapon Handling Drills",
                     "duration": "10 minutes",
@@ -118,7 +118,7 @@
         {
             "name": "Tactical Weapon Handling Challenges",
             "description": "Challenging weapon handling exercises for tactical athletes.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Weapon Handling with Obstacles Drills",
                     "duration": "10 minutes",
@@ -138,7 +138,7 @@
         {
             "name": "Elite Tactical Weapon Handling Challenges",
             "description": "High-intensity weapon handling challenges for elite tactical athletes.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Weapon Handling with Movement Drills",
                     "duration": "15 minutes",

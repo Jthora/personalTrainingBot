@@ -10,12 +10,365 @@
 │   ├── assets
 │   │   ├── Aldrich-Regular-BJ2Af9cL.ttf
 │   │   ├── WingCommanderLogo-288x162-Dr7UFZxN.gif
+│   │   ├── acrobatics_and_flips-gVZHwan7.js
+│   │   ├── advanced_behavioral_analysis-CQB3Gh3L.js
+│   │   ├── advanced_flourishes-DuQxaeGm.js
+│   │   ├── aerial_movements-xz3Sran2.js
+│   │   ├── agencies-BrNn5WMB.js
+│   │   ├── animal_forms-BgLCUR8g.js
+│   │   ├── animal_styles-ssI0HdNT.js
+│   │   ├── anti_psychic_countermeasures-YxB-Ad5n.js
+│   │   ├── arm_synchronization-CixYBQxB.js
+│   │   ├── asymmetric_warfare-BmlCEv5C.js
+│   │   ├── athletic_performance-CkDgJbMi.js
+│   │   ├── aura_sensing_and_control-CRoRfHGd.js
+│   │   ├── baguazhang-CjwhaWi7.js
+│   │   ├── balance_and_stability-Csusf_KV.js
+│   │   ├── basic_toprock_moves-N31gVAoJ.js
+│   │   ├── bass_drop_isolations-BxynYBO_.js
+│   │   ├── baton_defensive_moves-CpRSfU88.js
+│   │   ├── behavioral_profiling-DiUWY4Sp.js
+│   │   ├── behavioral_profiling_methods-BP_ZBJ7j.js
+│   │   ├── binary_disassembly_methods-Aes-Xvrx.js
+│   │   ├── bladed_weapon_techniques-BJSmuuik.js
+│   │   ├── body_bounce_rhythm-n8Bae2hC.js
+│   │   ├── bodyweight_leg_workouts-Qyv0H2cJ.js
+│   │   ├── border_control_tactics-CLdB0x_z.js
+│   │   ├── bosu_ball_exercises-BhaaiCti.js
+│   │   ├── box_tutting_patterns-dqF_BFaW.js
+│   │   ├── breakdance-IsjaSraP.js
+│   │   ├── breaking_techniques-DviNoYCH.js
+│   │   ├── breathwork_and_meditation-CGOt4cyQ.js
+│   │   ├── butterfly_moves-BIBvXjG6.js
+│   │   ├── calisthenics-y8RNABfg.js
+│   │   ├── camouflage_and_blending-DUDucyOc.js
+│   │   ├── capoeira-DV1sijvT.js
+│   │   ├── cardiovascular_endurance-CL-vlipp.js
+│   │   ├── cause_of_death_forensics-ufRPGR72.js
+│   │   ├── centerline_striking-CG2wkkzU.js
+│   │   ├── chi_sao_sensitivity-CUyALMUS.js
+│   │   ├── cia_training-a0vd-Bt9.js
+│   │   ├── circle_walking-Bl8dM2To.js
+│   │   ├── circuit_training-CBapPzfk.js
+│   │   ├── clairvoyance_and_telepathy-LTJ4YtXg.js
+│   │   ├── clairvoyant_perception-D-pCH0FY.js
+│   │   ├── clandestine_surveillance-DUqfD2Cg.js
+│   │   ├── clinch_and_control-Dc0IV4-Q.js
+│   │   ├── close_quarters_combat-BD24kP7o.js
+│   │   ├── close_range_shooting-CY4TxyKM.js
+│   │   ├── coercion_methods-Cnoc8ORA.js
+│   │   ├── cognitive_behavioral_training-E3vI2QJn.js
+│   │   ├── cognitive_bias_training-6VF316Zt.js
+│   │   ├── combat-Z-Lw82EN.js
+│   │   ├── combat_scenario_simulation-DKFYX7YU.js
+│   │   ├── combined_arms_operations-hTOLTceM.js
 │   │   ├── complete-BBmFiQXS.mp3
-│   │   ├── index-BqLQ6mfC.css
-│   │   ├── index-Efwo4LE1.js
+│   │   ├── compound_lifts-WBCLAU-u.js
+│   │   ├── computer_forensic_methods-Cem7mNGO.js
+│   │   ├── contact_staff_flow-BYPGlw_d.js
+│   │   ├── controlled_viewing_methods-DuUKgPxh.js
+│   │   ├── core_strengthening-CKn5g2oX.js
+│   │   ├── corporate_security_training-CJbJvlU8.js
+│   │   ├── costume_and_makeup-BuxX5DXc.js
+│   │   ├── counter_propaganda_strategies-CTR3V_9X.js
+│   │   ├── counter_psyops-BFkwTgBr.js
+│   │   ├── counter_psyops_strategies-C6HihajW.js
+│   │   ├── counter_terrorism_operations-CilSzIba.js
+│   │   ├── counterintelligence-Ba47WEhi.js
+│   │   ├── counterintelligence_tactics-CWHvI2cQ.js
+│   │   ├── cover_usage_tactics-B68iFYoD.js
+│   │   ├── covert_infiltration_methods-eDGCMZ5N.js
+│   │   ├── covert_operations-DiXXR-z2.js
+│   │   ├── covert_psychological_warfare-DMZD7JIr.js
+│   │   ├── covert_sabotage-8gk7EkgJ.js
+│   │   ├── crime_scene_processing-DniMGVo-.js
+│   │   ├── criminal_behavior_analysis-6V5XidZr.js
+│   │   ├── criminal_network_tracking-D8yYFE6z.js
+│   │   ├── criminal_profiling-DslfuCc9.js
+│   │   ├── criminal_profiling_methods-BRo6uHP-.js
+│   │   ├── cross_border_smuggling_cases-DL7yXSAJ.js
+│   │   ├── cutting_shapes-CXx76_kj.js
+│   │   ├── cyber_fraud_detection-DK4Hu_jQ.js
+│   │   ├── cyber_fraud_detection-DsUV2Fn2.js
+│   │   ├── cyber_intelligence-BWgz6xmt.js
+│   │   ├── cyber_intelligence_operations-Cs3snieA.js
+│   │   ├── cyber_threat_detection-B7B7iKuy.js
+│   │   ├── cyber_warfare_strategy-ZE1vvJ1Q.js
+│   │   ├── cybercrime_analysis-Zabmu_GZ.js
+│   │   ├── cybersecurity-m3kLvScI.js
+│   │   ├── cycling_endurance-BUAe__U5.js
+│   │   ├── dance-CM_x_URm.js
+│   │   ├── dark_web_investigations-DwnlWqNp.js
+│   │   ├── dark_web_monitoring-EV-iMHBV.js
+│   │   ├── data_collection_methods-BrLSnRDw.js
+│   │   ├── dead_drop_methods-ByDZwiM8.js
+│   │   ├── deception_detection_techniques-C0JO2XKX.js
+│   │   ├── defensive_network_security-CKxCBWcV.js
+│   │   ├── deprogramming_psyops_effects-Bn3pD_OT.js
+│   │   ├── digital_forensic_methods-khxsvrsr.js
+│   │   ├── digital_forensics-DDA-ys9K.js
+│   │   ├── digital_forensics-Dp6vqyP2.js
+│   │   ├── disguise_and_identity-BMT2OWFK.js
+│   │   ├── disinformation_analysis-CQZ51pB2.js
+│   │   ├── disinformation_strategies-B45I5oH_.js
+│   │   ├── dna_and_fingerprint_analysis-BUN-xVat.js
+│   │   ├── double_agent_management-BBb2Bdnh.js
+│   │   ├── dubstep_glitch-Sd5LJb3s.js
+│   │   ├── dynamic_balance_training-DfgTieD6.js
+│   │   ├── dynamic_core_workouts-C0_RNZMG.js
+│   │   ├── dynamic_forms-B3akZDlM.js
+│   │   ├── dynamic_warmups-CZMmpNYc.js
+│   │   ├── economic_sanctions_tactics-D8_MNdRB.js
+│   │   ├── elbow_and_knee_strikes-mYWIIB8k.js
+│   │   ├── emergency_evasion_maneuvers-Dw8eUuw2.js
+│   │   ├── emergency_response_drills-Cly252bM.js
+│   │   ├── emotional_control_methods-BRcvEjVV.js
+│   │   ├── emotional_exploitation-CdCIl60X.js
+│   │   ├── emotional_resilience_training-Dqd2vMS7.js
+│   │   ├── encryption_and_decryption-ByPDyjtI.js
+│   │   ├── energy_barriers-vP4AxDWp.js
+│   │   ├── energy_channeling-DQ5VVotM.js
+│   │   ├── energy_manipulation-DLj2eQyW.js
+│   │   ├── energy_weapons_training-WffGWNIX.js
+│   │   ├── escape_and_evasion-C2Wsni3a.js
+│   │   ├── espionage-BbyWmI7x.js
+│   │   ├── evasive_movement-D74VopkM.js
+│   │   ├── explosive_kicking-B9LTQ9vQ.js
+│   │   ├── explosive_power-C85ZxMsi.js
+│   │   ├── extraction_and_escape_tactics-z_YGebIt.js
+│   │   ├── fact_checking_methods-BtlR9uOr.js
+│   │   ├── false_flag_identification-Y1ur4H2X.js
+│   │   ├── fan_dancing-BTJ9vCef.js
+│   │   ├── fbi_training-g78_wuZP.js
+│   │   ├── financial_crimes-BlMYop31.js
+│   │   ├── financial_fraud_detection-DsLPbVLy.js
+│   │   ├── financial_statement_analysis-CC4VR5ec.js
+│   │   ├── finger_isolations-CBYWRJt8.js
+│   │   ├── fire_and_maneuver-D69QoDTD.js
+│   │   ├── firearms_training-CjY1G3N6.js
+│   │   ├── firewall_configuration-B7jVde0O.js
+│   │   ├── fitness-1P-MU2mP.js
+│   │   ├── five_element_strikes-Cc0D-fw5.js
+│   │   ├── flexibility_and_mobility-CdvuusJP.js
+│   │   ├── flow_transitions-DVZgsc_M.js
+│   │   ├── foam_rolling_and_massage-CCuKY8Ue.js
+│   │   ├── footwork_and_speed-CZUSW0cc.js
+│   │   ├── footwork_patterns-B7sRWrKQ.js
+│   │   ├── force_maneuvering-DrXIVnkc.js
+│   │   ├── forensic_analysis-o13D5dcr.js
+│   │   ├── forensic_image_analysis-z_YGebIt.js
+│   │   ├── forensic_investigation-Ctp18eVt.js
+│   │   ├── forensic_lab_procedures-Bdi5I_o5.js
+│   │   ├── fraud_detection_techniques-CbXHAc37.js
+│   │   ├── freestyle_rave-BKd04dS1.js
+│   │   ├── freeze_techniques-o3N7J5ZO.js
+│   │   ├── functional_fitness-B6CG7EuE.js
+│   │   ├── future_trend_analysis-C3O07ilj.js
+│   │   ├── gaslighting_and_brainwashing_defense-DIYZez2z.js
+│   │   ├── geopolitical_analysis-BtL51M9B.js
+│   │   ├── geopolitical_simulations-DFBDekMZ.js
+│   │   ├── ginga_and_fluidity-DBKShgnc.js
+│   │   ├── global_conflict_trends-DVw_s5Ny.js
+│   │   ├── gloving_tutting-DXlri-uG.js
+│   │   ├── ground_fighting-Dn4UpcWL.js
+│   │   ├── hand_glides-LSaFg6Qf.js
+│   │   ├── hapkido-C7QyEtQ5.js
+│   │   ├── heel_toe_variations-CYfiO358.js
+│   │   ├── high_intensity_interval_training-DmVfEemi.js
+│   │   ├── high_stress_drills-BHzItUNG.js
+│   │   ├── homeland_security-B4z60qmA.js
+│   │   ├── homicide_case_studies-Dls2lqKb.js
+│   │   ├── homicide_investigation-oO-eVA38.js
+│   │   ├── hostile_escape_tactics-DISfn6sS.js
+│   │   ├── identifying_coercion_tactics-CFfesXkJ.js
+│   │   ├── identity_forging-Ba9bWZFM.js
+│   │   ├── incident_response_intelligence-C4rlSFea.js
+│   │   ├── index-CQcmxQ1p.css
+│   │   ├── index-LMWLqldO.js
+│   │   ├── industrial_dance-ZB87DP2X.js
+│   │   ├── influence_campaigns-zONQGkhE.js
+│   │   ├── insurgency_tactics-DZW_Hbxh.js
+│   │   ├── intelligence-bJLuh_im.js
+│   │   ├── intelligence_analysis-BvNLNoy1.js
+│   │   ├── intercepting_fist-CwsCuYhZ.js
+│   │   ├── internal_energy-BxqEEQSA.js
+│   │   ├── international_law_basics-SvjvsXef.js
+│   │   ├── interpol_training-D-lQnIcO.js
+│   │   ├── interval_running-Pbfl0Yq5.js
+│   │   ├── intrusion_detection_methods-BhjEkp-1.js
+│   │   ├── investigation-iuP1uxDX.js
+│   │   ├── iron_body_training-J7gAyeh_.js
+│   │   ├── isolation_exercises-DyArQPOI.js
+│   │   ├── jeet_kune_do-BgmaRx89.js
+│   │   ├── joint_locks-CjoTv62D.js
+│   │   ├── jumpstyle_hardstyle-CIAJdl79.js
+│   │   ├── kettlebell_workouts-B9BS8Wwv.js
+│   │   ├── kicking_sequences-D-SQaf6T.js
+│   │   ├── kicks_and_sweeps-DMPkSSwa.js
+│   │   ├── knife_fighting_tactics-RGCgTFky.js
+│   │   ├── ladder_drills-BGvVj5Ad.js
+│   │   ├── language_pattern_recognition-CHgU5jp2.js
+│   │   ├── linguistic_analysis-etxm61hV.js
+│   │   ├── liquid_dance-Dj0_f3kU.js
+│   │   ├── live_fire_simulations-IxdXnJYx.js
+│   │   ├── log_analysis_and_correlation-Dyb81aHC.js
+│   │   ├── long_fist_and_southern_fist-gLsTThBh.js
+│   │   ├── low_stance_combat-B4vXNYL2.js
+│   │   ├── malware_analysis-CKK53mxX.js
+│   │   ├── malware_analysis-ChuAx_Vg.js
+│   │   ├── malware_detection_and_removal-BvU29dRt.js
+│   │   ├── malware_reversing-C2kaJjQo.js
+│   │   ├── manipulation_detection-DLdwPzfq.js
+│   │   ├── martial_arts-CInVkN0Z.js
+│   │   ├── mass_media_analysis-P4UYFLh4.js
+│   │   ├── melee_weapons_training-hzPeIMHK.js
+│   │   ├── mental_energy_control-CKKFHmT3.js
+│   │   ├── mental_firewalling_techniques-Bifce52U.js
+│   │   ├── mental_fortress_building-BT0Q4Rkr.js
+│   │   ├── mental_resilience_drills-B2ahsFbu.js
+│   │   ├── military_strategy-jYUOVjdp.js
+│   │   ├── mind_body_fitness-7ruH-81F.js
+│   │   ├── mind_hacking_countermeasures-CLU1oKQO.js
+│   │   ├── mind_to_mind_communication-CLtKwSfH.js
+│   │   ├── mission_based_training-BivTMvk9.js
+│   │   ├── mission_planning_and_execution-COiijBGu.js
+│   │   ├── mobile_device_exploitation-AijkCyiz.js
+│   │   ├── mobility_routines-Cle2h_WT.js
+│   │   ├── money_laundering_patterns-uWuq09_2.js
+│   │   ├── muay_thai-BFq3rmJp.js
+│   │   ├── narrative_deconstruction_methods-C5yvRnax.js
+│   │   ├── network_monitoring_tools-B77VuvGN.js
+│   │   ├── network_packet_analysis-CGY9zPhB.js
+│   │   ├── network_penetration_tests-DK5PHUZ4.js
+│   │   ├── network_security-DDbgp5nN.js
+│   │   ├── nlp_resistance_strategies-BzauE7dW.js
+│   │   ├── offender_typologies-Bqukk6XC.js
+│   │   ├── offensive_cyber_tactics-BWTFDpNF.js
+│   │   ├── olympic_lifting_basics-DUgLuBWw.js
+│   │   ├── open_source_intelligence-CK-C_zJJ.js
+│   │   ├── osint_for_cyber_threats-BEGNbP1n.js
+│   │   ├── osint_tools_and_methods-Cq1mh542.js
+│   │   ├── palm_strikes-B-As7-VH.js
+│   │   ├── penetration_testing-DuUBJ0Gn.js
+│   │   ├── persuasion_and_influence-DV7Lj1Ss.js
+│   │   ├── phishing_attack_simulation-DziP79Nl.js
+│   │   ├── physical_security_exploitation-CN13XttE.js
+│   │   ├── pistol_shooting_drills-C8aCjbeb.js
+│   │   ├── planks_and_static_holds-DxEEwbBx.js
+│   │   ├── plyometric_workouts-CiZAAg0e.js
+│   │   ├── poi_spinning-Cyyt4cMd.js
+│   │   ├── political_warfare_analysis-DDGQj-dq.js
+│   │   ├── power_kicks-5joG_ao-.js
+│   │   ├── precision_fan_techniques-CuqF5qVh.js
+│   │   ├── predictive_analysis-EFkXlTXK.js
+│   │   ├── pressure_points-8K2AAZ-g.js
+│   │   ├── propaganda_countermeasures-DYs-IdZB.js
+│   │   ├── propaganda_identification-LkRHyjtg.js
+│   │   ├── prophetic_dreams-C_l71u9T.js
+│   │   ├── protective_service_tactics-B7ZfPrmM.js
+│   │   ├── psi_blade_techniques-D7UKg9-g.js
+│   │   ├── psi_exercises-GjoaBQNq.js
+│   │   ├── psionic_deflection-CJ_O6i6f.js
+│   │   ├── psionic_meditation-rRBEOo0O.js
+│   │   ├── psionic_training-QyQ4rZvM.js
+│   │   ├── psionic_weaponry-ID-98ekW.js
+│   │   ├── psiops-DGDJirco.js
+│   │   ├── psychic_perception-L6GGJAEQ.js
+│   │   ├── psychic_shielding-DVOvzA-K.js
+│   │   ├── psychological_manipulation-DpztqqQl.js
+│   │   ├── psychological_operations-_hQOft7a.js
+│   │   ├── psychological_operations_tactics-C3M1DiQw.js
+│   │   ├── psychological_warfare_defense-CExZUJX8.js
+│   │   ├── public_records_analysis-BhzqAyQI.js
+│   │   ├── pullup_and_dip_training-CQGAmI1M.js
+│   │   ├── push_hands-C9mpGO6u.js
+│   │   ├── pushup_variations-B82d_ivf.js
+│   │   ├── rapid_striking-DfePJATT.js
+│   │   ├── reaction_time_drills-RotRBmD6.js
+│   │   ├── recovery_and_injury_prevention-l6Yp9kLE.js
+│   │   ├── rehabilitative_exercises-DQniIbBZ.js
+│   │   ├── remote_viewing-B08GKqn7.js
+│   │   ├── resilience_under_pressure-D84VJfUf.js
+│   │   ├── resistance_band_exercises-Cdf1rIWh.js
+│   │   ├── rifle_tactics-C5osA9Y9.js
+│   │   ├── risk_prediction_models-B0_P-QZo.js
+│   │   ├── rotational_core_exercises-CP_dbDsq.js
+│   │   ├── sandbag_training-BRf4jlGg.js
+│   │   ├── sandbox_analysis-DicZ8rbh.js
+│   │   ├── secret_service-C2BbM8fy.js
+│   │   ├── secure_messaging-CHGZg9LR.js
+│   │   ├── self_myofascial_release-CT-ye_um.js
+│   │   ├── sentiment_analysis_methods-DKH7WPEs.js
+│   │   ├── shadowing_techniques-BjBZTTLz.js
+│   │   ├── shaolin_kung_fu-sQBFOZX3.js
+│   │   ├── signal_interception-Mfdu4b3q.js
+│   │   ├── silat-BaOA0DZW.js
+│   │   ├── silent_movement_training-BBU0tWR9.js
+│   │   ├── single_leg_stability_drills-KVvkzyUJ.js
 │   │   ├── skip-rD65AU5b.wav
+│   │   ├── slow_form_training-D4lmw-H9.js
+│   │   ├── slow_motion_effects-BKjoOmPC.js
+│   │   ├── social_deception-eGfIYnpW.js
+│   │   ├── social_engineering_defense-Bsy1hkRj.js
+│   │   ├── social_manipulation_tactics-DpaAaoxE.js
+│   │   ├── social_media_monitoring-XvgrRK0Z.js
+│   │   ├── special_operations_planning-CqvR79bZ.js
+│   │   ├── speed_and_agility-l2EMJMgY.js
+│   │   ├── speed_endurance_training-Cyyoi8cN.js
+│   │   ├── speed_training-U6ocja6I.js
+│   │   ├── spinning_and_aerial_kicks-kM4ni4lY.js
+│   │   ├── spins_and_transitions-oDLiDPJc.js
+│   │   ├── sprint_intervals-Bzc0I5PY.js
+│   │   ├── sprint_training-CwmNMzAg.js
+│   │   ├── spy_identification-CyBjzNf6.js
+│   │   ├── spy_tradecraft-BKYmLHzm.js
+│   │   ├── staff_and_weaponry-BPlSPVy9.js
+│   │   ├── stamina_drills-D9e9Toof.js
+│   │   ├── static_stretching-Bun1MZsT.js
+│   │   ├── steady_state_cardio-Czi0cQxh.js
+│   │   ├── stealth_and_escape_tactics-DceedXyU.js
+│   │   ├── strategic_forecasting-_ki-4RqS.js
+│   │   ├── strength_periodization-CsT8OOGr.js
+│   │   ├── strength_training-i89TYX40.js
+│   │   ├── striking_and_counterattacks-BDbd4p88.js
+│   │   ├── subliminal_manipulation_detection-PsAALsOh.js
+│   │   ├── supply_chain_tactics-DPCVhRlS.js
+│   │   ├── suspect_interview_methods-QDnYIaSW.js
+│   │   ├── tabata_protocol-Ba4ZLLet.js
+│   │   ├── tactical_movement-F1UtUQpk.js
+│   │   ├── taekwondo-DZvcvq9j.js
+│   │   ├── tai_chi-CLKmvfMh.js
+│   │   ├── tai_chi_sequences-DtofxjPb.js
+│   │   ├── target_acquisition-C3jfiAmb.js
+│   │   ├── telekinetic_strikes-NBglh54C.js
+│   │   ├── terrorist_threat_analysis-BRlxK21M.js
+│   │   ├── threat_actor_profiling-BYoVd0uj.js
+│   │   ├── threat_assessment-Blrd-A0o.js
+│   │   ├── threat_assessment_models-DziZeIMH.js
+│   │   ├── threat_behavior_assessment-DhyYCVIZ.js
+│   │   ├── threat_intelligence-D3NVBt2e.js
+│   │   ├── throws_and_takedowns-Bu7FSyM0.js
 │   │   ├── tiger_fitness_god-icon-512x-Dyqy8vof.png
-│   │   └── timeout-BMk_9bRO.wav
+│   │   ├── timeout-BMk_9bRO.wav
+│   │   ├── tradecraft-XajcM2LO.js
+│   │   ├── trapping_hands-BGOtPyt_.js
+│   │   ├── undercover_roles-CBzIjrB-.js
+│   │   ├── undercover_surveillance--urvY1ez.js
+│   │   ├── urban_combat_movement-CbLrweA2.js
+│   │   ├── urban_warfare_strategies-19E0KC1z.js
+│   │   ├── vehicle_tailing-IkOvc2Nf.js
+│   │   ├── veil_twirls-3QSnGHP5.js
+│   │   ├── war_strategy-DZspVMlU.js
+│   │   ├── wave_techniques-Cdsmts_X.js
+│   │   ├── weapon_disarm_tactics-5gvAbUJn.js
+│   │   ├── weapon_retention_drills-LBZLEy9e.js
+│   │   ├── weave_patterns-BGwdxEpi.js
+│   │   ├── web_application_hacking-bzQI4V8N.js
+│   │   ├── wing_chun-CRlSvwmQ.js
+│   │   ├── wooden_dummy_drills-CUJcY_TU.js
+│   │   ├── wushu-BnBMAd28.js
+│   │   ├── xing_yi_quan-COgPlnVf.js
+│   │   └── yoga_flows-B9VS6knB.js
 │   ├── favicon.ico
 │   ├── favicon.png
 │   └── index.html
@@ -60,18 +413,33 @@
 │   │   ├── CoachDialog
 │   │   │   ├── CoachDialog.module.css
 │   │   │   └── CoachDialog.tsx
+│   │   ├── DifficultySettings
+│   │   │   ├── DifficultySettings.module.css
+│   │   │   └── DifficultySettings.tsx
 │   │   ├── Header
 │   │   │   ├── Header.module.css
 │   │   │   └── Header.tsx
+│   │   ├── LoadingMessage
+│   │   │   ├── LoadingMessage.module.css
+│   │   │   └── LoadingMessage.tsx
 │   │   ├── Schedule
 │   │   │   ├── Schedule.module.css
 │   │   │   └── Schedule.tsx
 │   │   ├── SettingsPanel
 │   │   │   ├── SettingsPanel.module.css
 │   │   │   └── SettingsPanel.tsx
+│   │   ├── SettingsSidebar
+│   │   │   ├── SettingsSidebar.module.css
+│   │   │   └── SettingsSidebar.tsx
+│   │   ├── SettingsWindow
+│   │   │   ├── SettingsWindow.module.css
+│   │   │   └── SettingsWindow.tsx
 │   │   ├── Sidebar
 │   │   │   ├── Sidebar.module.css
 │   │   │   └── Sidebar.tsx
+│   │   ├── SoundSettings
+│   │   │   ├── SoundSettings.module.css
+│   │   │   └── SoundSettings.tsx
 │   │   ├── StatsPanel
 │   │   │   ├── StatsPanel.module.css
 │   │   │   └── StatsPanel.tsx
@@ -110,6 +478,76 @@
 │   │   │   ├── ranks.json
 │   │   │   ├── tiger_speech.json
 │   │   │   ├── training_challenges.json
+│   │   │   ├── workouts
+│   │   │   │   ├── agility.json
+│   │   │   │   ├── balance.json
+│   │   │   │   ├── cardio.json
+│   │   │   │   ├── combat.json
+│   │   │   │   ├── coordination.json
+│   │   │   │   ├── endurance.json
+│   │   │   │   ├── mental.json
+│   │   │   │   ├── mobility.json
+│   │   │   │   ├── strength.json
+│   │   │   │   ├── subcategories
+│   │   │   │   │   ├── agility
+│   │   │   │   │   │   ├── change_of_direction.json
+│   │   │   │   │   │   ├── footwork.json
+│   │   │   │   │   │   ├── jo_staff_agility.json
+│   │   │   │   │   │   ├── jumping.json
+│   │   │   │   │   │   ├── quickness.json
+│   │   │   │   │   │   ├── reaction.json
+│   │   │   │   │   │   └── weapon_handling.json
+│   │   │   │   │   ├── balance
+│   │   │   │   │   │   ├── core_control.json
+│   │   │   │   │   │   ├── dynamic_balance.json
+│   │   │   │   │   │   ├── single_leg.json
+│   │   │   │   │   │   └── stability.json
+│   │   │   │   │   ├── cardio
+│   │   │   │   │   │   ├── breathing.json
+│   │   │   │   │   │   ├── endurance.json
+│   │   │   │   │   │   └── speed.json
+│   │   │   │   │   ├── combat
+│   │   │   │   │   │   ├── grappling.json
+│   │   │   │   │   │   ├── gun_draw.json
+│   │   │   │   │   │   ├── jo_staff_fighting.json
+│   │   │   │   │   │   └── striking.json
+│   │   │   │   │   ├── coordination
+│   │   │   │   │   │   ├── balance.json
+│   │   │   │   │   │   ├── foot_eye.json
+│   │   │   │   │   │   ├── hand_eye.json
+│   │   │   │   │   │   ├── jo_staff_spins.json
+│   │   │   │   │   │   └── reaction_time.json
+│   │   │   │   │   ├── endurance
+│   │   │   │   │   │   ├── cardiovascular.json
+│   │   │   │   │   │   ├── mental.json
+│   │   │   │   │   │   └── muscular.json
+│   │   │   │   │   ├── mental
+│   │   │   │   │   │   ├── breathing.json
+│   │   │   │   │   │   ├── focus.json
+│   │   │   │   │   │   ├── meditation.json
+│   │   │   │   │   │   ├── mindset.json
+│   │   │   │   │   │   └── visualization.json
+│   │   │   │   │   ├── mobility
+│   │   │   │   │   │   ├── dynamic_stretching.json
+│   │   │   │   │   │   ├── foam_rolling.json
+│   │   │   │   │   │   ├── joint_mobility.json
+│   │   │   │   │   │   └── static_stretching.json
+│   │   │   │   │   ├── strength
+│   │   │   │   │   │   ├── bodybuilding.json
+│   │   │   │   │   │   ├── core.json
+│   │   │   │   │   │   ├── flexibility.json
+│   │   │   │   │   │   ├── grip.json
+│   │   │   │   │   │   ├── lower_body.json
+│   │   │   │   │   │   ├── powerlifting.json
+│   │   │   │   │   │   └── upper_body.json
+│   │   │   │   │   └── superhero
+│   │   │   │   │       ├── agility_and_reflex.json
+│   │   │   │   │       ├── combat_and_survival.json
+│   │   │   │   │       ├── endurance_and_survival.json
+│   │   │   │   │       ├── psionic_and_sensory.json
+│   │   │   │   │       ├── strength_and_power.json
+│   │   │   │   │       └── super_and_hyper.json
+│   │   │   │   └── superhero.json
 │   │   │   └── workouts.json
 │   │   ├── training_modules
 │   │   │   ├── agencies.json
@@ -597,9 +1035,12 @@
 │   │   ├── SettingsPage
 │   │   │   ├── SettingsPage.module.css
 │   │   │   └── SettingsPage.tsx
-│   │   └── TrainingSequencePage
-│   │       ├── TrainingSequencePage.module.css
-│   │       └── TrainingSequencePage.tsx
+│   │   ├── TrainingSequencePage
+│   │   │   ├── TrainingSequencePage.module.css
+│   │   │   └── TrainingSequencePage.tsx
+│   │   └── WorkoutPlannerPage
+│   │       ├── WorkoutPlannerPage.module.css
+│   │       └── WorkoutPlannerPage.tsx
 │   ├── routes
 │   │   └── Routes.tsx
 │   ├── styles
@@ -623,10 +1064,15 @@
 │   │   ├── CoachDataLoader.ts
 │   │   ├── DataLoader.ts
 │   │   ├── InitialDataLoader.ts
-│   │   ├── ScheduleGenerator.ts
 │   │   ├── WorkoutScheduleCreator.ts
+│   │   ├── cardDeckPaths.ts
+│   │   ├── generateCardDeckPaths.tsx
 │   │   ├── generateModulePaths.tsx
-│   │   └── modulePaths.ts
+│   │   ├── generateSubModulePaths.tsx
+│   │   ├── generateWorkoutCategoryPaths.tsx
+│   │   ├── generateWorkoutSubCategoryPaths.tsx
+│   │   ├── modulePaths.ts
+│   │   └── subModulePaths.ts
 │   └── vite-env.d.ts
 ├── templates
 │   ├── card_deck.json
@@ -637,4 +1083,4 @@
 ├── tsconfig.node.json
 └── vite.config.ts
 
-160 directories, 478 files
+178 directories, 906 files

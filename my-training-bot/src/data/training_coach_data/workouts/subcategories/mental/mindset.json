@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Mindset",
             "description": "Train mental resilience, discipline, and a positive outlook through mindset exercises.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Gratitude Journaling",
                     "duration": "5 minutes",
@@ -44,7 +44,7 @@
         {
             "name": "Advanced Mindset Training",
             "description": "Train the mind to develop unshakable resilience, discipline, and a mindset of indomitable willpower.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Cold Endurance Challenge",
                     "duration": "15 minutes",
@@ -85,7 +85,7 @@
         {
             "name": "Mental Conditioning Techniques",
             "description": "Train the mind to develop unshakable resilience, discipline, and a mindset of indomitable willpower.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Controlled Discomfort Training",
                     "duration": "15 minutes",
@@ -126,7 +126,7 @@
         {
             "name": "Psi Mindset Techniques",
             "description": "Break through reality constraints, reshape perception, and develop an indomitable psi-mind.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Reality Fluidity Conditioning",
                     "duration": "30 minutes",

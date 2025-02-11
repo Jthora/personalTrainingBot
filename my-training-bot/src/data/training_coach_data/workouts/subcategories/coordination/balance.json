@@ -1,0 +1,45 @@
+{
+    "workout_groups": [
+        {
+            "name": "Balance and Stability Drills",
+            "description": "Exercises to improve balance and stability.",
+            "workouts": [
+                {
+                    "name": "Basic Balance Drills",
+                    "duration": "5 minutes",
+                    "intensity": "Low",
+                    "description": "Perform basic balance drills for 5 minutes.",
+                    "difficulty_range": [0, 2]
+                },
+                {
+                    "name": "Intermediate Balance Drills",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform intermediate balance drills for 10 minutes.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Advanced Balance Drills",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Perform advanced balance drills for 15 minutes.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Balance Drills with Resistance Bands",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Perform balance drills with resistance bands for 15 minutes.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Balance Drills with Resistance Bands and Sparring",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Perform balance drills with resistance bands and sparring for 15 minutes.",
+                    "difficulty_range": [4, 6]
+                }
+            ]
+        }
+    ]
+}

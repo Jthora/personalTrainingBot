@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import coachTrainingCache from '../../cache/CoachTrainingCache';
+import DifficultySettingsStore from '../../store/DifficultySettingsStore';
 import styles from './DifficultySettings.module.css';
 
 interface DifficultyLevel {
@@ -31,6 +32,8 @@ const DifficultySettings: React.FC = () => {
     const [selectedAthleteArchetype, setSelectedAthleteArchetype] = useState<string[]>([]);
     const [selectedPFT, setSelectedPFT] = useState<DifficultyLevel['pft'] | null>(null);
     const [selectedRequirements, setSelectedRequirements] = useState<DifficultyLevel['requirements'] | null>(null);
+    const [minRange, setMinRange] = useState<number>(0);
+    const [maxRange, setMaxRange] = useState<number>(0);
 
     useEffect(() => {
         const loadDifficultyLevels = async () => {
@@ -42,15 +45,17 @@ const DifficultySettings: React.FC = () => {
             setDifficultyLevels(levels); // Ensure levels are strings
 
             // Load the selected difficulty from localStorage
-            const savedDifficulty = localStorage.getItem('selectedDifficulty');
-            if (savedDifficulty && levels.some(level => level.name === savedDifficulty)) {
-                const selectedLevel = levels.find(level => level.name === savedDifficulty);
-                setSelectedDifficulty(savedDifficulty);
+            const settings = DifficultySettingsStore.getSettings();
+            if (settings.selectedDifficulty && levels.some(level => level.name === settings.selectedDifficulty)) {
+                const selectedLevel = levels.find(level => level.name === settings.selectedDifficulty);
+                setSelectedDifficulty(settings.selectedDifficulty);
                 setSelectedDescription(selectedLevel?.description || '');
                 setSelectedMilitarySoldier(selectedLevel?.military_soldier || []);
                 setSelectedAthleteArchetype(selectedLevel?.athlete_archetype || []);
                 setSelectedPFT(selectedLevel?.pft || null);
                 setSelectedRequirements(selectedLevel?.requirements || null);
+                setMinRange(settings.minRange || selectedLevel?.level || 0);
+                setMaxRange(settings.maxRange || selectedLevel?.level || 0);
             } else {
                 const defaultLevel = levels[0];
                 setSelectedDifficulty(defaultLevel.name);
@@ -59,6 +64,8 @@ const DifficultySettings: React.FC = () => {
                 setSelectedAthleteArchetype(defaultLevel.athlete_archetype);
                 setSelectedPFT(defaultLevel.pft);
                 setSelectedRequirements(defaultLevel.requirements);
+                setMinRange(defaultLevel.level);
+                setMaxRange(defaultLevel.level);
             }
         };
         loadDifficultyLevels();
@@ -73,7 +80,26 @@ const DifficultySettings: React.FC = () => {
         setSelectedAthleteArchetype(selectedLevel?.athlete_archetype || []);
         setSelectedPFT(selectedLevel?.pft || null);
         setSelectedRequirements(selectedLevel?.requirements || null);
-        localStorage.setItem('selectedDifficulty', newDifficulty); // Save the selected difficulty to localStorage
+        setMinRange(selectedLevel?.level || 0);
+        setMaxRange(selectedLevel?.level || 0);
+        DifficultySettingsStore.saveSettings({ selectedDifficulty: newDifficulty, minRange: selectedLevel?.level || 0, maxRange: selectedLevel?.level || 0 });
+    };
+
+    const handleRangeChange = (type: 'min' | 'max', value: number) => {
+        if (type === 'min') {
+            setMinRange(value);
+        } else {
+            setMaxRange(value);
+        }
+        DifficultySettingsStore.saveSettings({ selectedDifficulty, minRange: type === 'min' ? value : minRange, maxRange: type === 'max' ? value : maxRange });
+    };
+
+    const getWeightedRandomDifficulty = () => {
+        const mean = difficultyLevels.find(level => level.name === selectedDifficulty)?.level || 0;
+        const stdDev = (maxRange - minRange) / 6; // Approximation for standard deviation
+        const randomValue = Math.random() * (maxRange - minRange) + minRange;
+        const weightedRandom = Math.round(mean + stdDev * (randomValue - 0.5));
+        return Math.max(minRange, Math.min(maxRange, weightedRandom));
     };
 
     return (
@@ -87,6 +113,23 @@ const DifficultySettings: React.FC = () => {
                 ))}
             </select>
             <p className={styles.description}>{selectedDescription}</p>
+            <div className={styles.rangeInputs}>
+                <label htmlFor="minRange">Min Range:</label>
+                <input
+                    type="number"
+                    id="minRange"
+                    value={minRange}
+                    onChange={(e) => handleRangeChange('min', parseInt(e.target.value))}
+                />
+                <label htmlFor="maxRange">Max Range:</label>
+                <input
+                    type="number"
+                    id="maxRange"
+                    value={maxRange}
+                    onChange={(e) => handleRangeChange('max', parseInt(e.target.value))}
+                />
+            </div>
+            <button onClick={getWeightedRandomDifficulty}>Get Weighted Random Difficulty</button>
             <div className={styles.additionalInfo}>
                 <div className={styles.militarySoldier}>
                     <strong>Soldier Tier:</strong>

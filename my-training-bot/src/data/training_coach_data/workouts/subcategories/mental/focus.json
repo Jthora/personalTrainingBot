@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Focus",
             "description": "Enhance mental clarity, attention span, and ability to maintain deep concentration.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Single-Point Focus",
                     "duration": "5 minutes",
@@ -44,7 +44,7 @@
         {
             "name": "Advanced Focus Techniques",
             "description": "Train the mind to maintain extreme levels of concentration, awareness, and cognitive processing under stress.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Micro-Saccade Training",
                     "duration": "10 minutes",
@@ -85,7 +85,7 @@
         {
             "name": "Psi Focus Techniques",
             "description": "Expand perception, heighten awareness, and surpass cognitive limitations through psionic attunement.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Etheric Sight Activation",
                     "duration": "20 minutes",

@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Jo Staff Basic Spins",
             "description": "Fundamental spinning techniques to build coordination and control.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Basic Forward Spin",
                     "duration": "5 minutes",
@@ -65,7 +65,7 @@
         {
             "name": "Jo Staff Advanced Spins",
             "description": "More complex spinning techniques that enhance control, fluidity, and movement.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Overhead Spin",
                     "duration": "10 minutes",
@@ -113,7 +113,7 @@
         {
             "name": "Jo Staff Special Spins",
             "description": "High-speed spinning techniques for specialized application.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Aerial Spin (Throw & Catch)",
                     "duration": "15 minutes",
@@ -175,7 +175,7 @@
         {
             "name": "Jo Staff Dance Spins",
             "description": "Dance-inspired spinning techniques to enhance fluidity and rhythm.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Basic Dance Spin",
                     "duration": "5 minutes",
@@ -272,7 +272,7 @@
         {
             "name": "Jo Staff Hand-Eye Unique Techniques",
             "description": "Unique techniques to enhance Jo staff hand-eye coordination.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Basic Toss and Catch",
                     "duration": "5 minutes",
@@ -341,7 +341,7 @@
         {
             "name": "Jo Staff Advanced Hand-Eye Skill Sequences",
             "description": "Complex multi-move sequences to challenge and enhance Jo staff hand-eye coordination.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Spin and Strike Sequence",
                     "duration": "10 minutes",

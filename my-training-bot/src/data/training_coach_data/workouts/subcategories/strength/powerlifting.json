@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Beginner Powerlifting Foundations Routine",
             "description": "A structured program to develop strength and technique for squats, bench press, and deadlifts.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Back Squat",
                     "duration": "4 sets of 8 reps",
@@ -44,7 +44,7 @@
         {
             "name": "Squat & Deadlift Strength Routine",
             "description": "A specialized routine focusing on building maximum strength in the squat and deadlift.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Low-Bar Squat",
                     "duration": "5 sets of 5 reps",
@@ -85,7 +85,7 @@
         {
             "name": "Bench Press & Upper Body Power Routine",
             "description": "A specialized upper body routine designed to increase pressing strength.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Comp Bench Press",
                     "duration": "5 sets of 5 reps",
@@ -126,7 +126,7 @@
         {
             "name": "Explosive Powerlifting Speed Routine",
             "description": "Speed-focused variations of the Big Three lifts to develop bar speed and explosiveness.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Speed Deadlifts",
                     "duration": "6 sets of 3 reps",
@@ -167,7 +167,7 @@
         {
             "name": "Super Powerlifting Max Strength Routine",
             "description": "Elite-level program designed for maximal strength and competition performance.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "1-Rep Max Squat Attempt",
                     "duration": "3 sets of 1 rep",

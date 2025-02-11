@@ -1,9 +1,9 @@
 {
-    "sub_workout_groups": [
+    "workout_groups": [
         {
             "name": "Gun Draw & Targeting",
             "description": "Quick draw practice, room-clearing maneuvers.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Draw from holster",
                     "duration": "5 seconds",
@@ -72,7 +72,7 @@
         {
             "name": "Gun Draw & Holster",
             "description": "Practice drawing, re-holstering, and transitioning between ready and secure positions.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Draw from holster (slow)",
                     "duration": "5 seconds",

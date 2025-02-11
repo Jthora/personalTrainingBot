@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Jo Staff Techniques Training",
             "description": "Specific techniques for Jo staff training.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Tsuki (Thrust)",
                     "duration": "5 minutes",
@@ -72,7 +72,7 @@
         {
             "name": "Advanced Jo Staff Techniques",
             "description": "Advanced techniques for Jo staff training.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Muso Gamae (Ready Stance)",
                     "duration": "10 minutes",

@@ -4,13 +4,13 @@ import tigerIcon from '../../assets/images/icons/tiger_fitness_god-icon-512x.png
 import { fetchSpeech, fetchBoast, fetchGrowl } from '../../utils/CoachDataLoader';
 import SubWorkoutDetails from '../SubWorkoutDetails/SubWorkoutDetails';
 import { useWorkoutSchedule } from '../../hooks/useWorkoutSchedule';
-import { SubWorkout } from '../../types/SubWorkout';
+import { Workout } from '../../types/WorkoutCategory';
 
 interface CoachDialogProps {
-    currentWorkout: SubWorkout | null;
+    currentWorkout: Workout | null;
     onComplete: () => void;
     onSkip: () => void;
-  }
+}
 
 const CoachDialog: React.FC<CoachDialogProps> = ({ currentWorkout, onComplete, onSkip }) => {
     const [quote, setQuote] = useState('');

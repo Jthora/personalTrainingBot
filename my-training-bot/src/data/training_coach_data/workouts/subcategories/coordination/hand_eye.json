@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Hand-Eye Coordination Drills",
             "description": "Drills to improve hand-eye coordination.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Basic Hand-Eye Coordination Drills",
                     "duration": "5 minutes",
@@ -44,7 +44,7 @@
         {
             "name": "Hand-Eye Coordination with Sparring",
             "description": "Hand-eye coordination drills with sparring.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Basic Hand-Eye Coordination with Sparring",
                     "duration": "5 minutes",
@@ -71,7 +71,7 @@
         {
             "name": "Hand-Eye Unique Techniques",
             "description": "Unique techniques to enhance hand-eye coordination.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Ball Toss Against Wall",
                     "duration": "5 minutes",
@@ -119,7 +119,7 @@
         {
             "name": "Advanced Hand-Eye Unique Techniques",
             "description": "Advanced techniques to further enhance hand-eye coordination.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Two-Ball Juggling",
                     "duration": "10 minutes",

@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Hyper Agility & Reflex Training",
             "description": "Elite agility training to enhance reaction time, movement efficiency, and acrobatics.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Wall Run & Vault",
                     "duration": "4 sets of 8 reps",

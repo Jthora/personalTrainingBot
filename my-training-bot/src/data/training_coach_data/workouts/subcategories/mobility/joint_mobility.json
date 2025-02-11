@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Beginner Joint Mobility",
             "description": "Gentle joint mobility exercises to improve movement fluidity and prevent stiffness.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Neck Circles",
                     "duration": "30 seconds",
@@ -58,7 +58,7 @@
         {
             "name": "Advanced Joint Mobility",
             "description": "More dynamic and targeted joint mobility drills for improved flexibility and movement efficiency.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Thoracic Spine Rotations",
                     "duration": "30 seconds per side",
@@ -106,7 +106,7 @@
         {
             "name": "Super Joint Mobility",
             "description": "Elite joint mobility drills for maximizing range of motion, control, and joint resilience.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Hanging Shoulder Rotations",
                     "duration": "30 seconds",

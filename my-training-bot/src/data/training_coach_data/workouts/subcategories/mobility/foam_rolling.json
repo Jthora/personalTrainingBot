@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Beginner Foam Rolling",
             "description": "Basic foam rolling techniques for muscle relaxation and improved mobility.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Back Roll",
                     "duration": "30 seconds",
@@ -51,7 +51,7 @@
         {
             "name": "Recovery & Deep Tissue Foam Rolling",
             "description": "More advanced foam rolling techniques to break up deep muscle knots and improve recovery.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Thoracic Extension Roll",
                     "duration": "30 seconds",
@@ -99,7 +99,7 @@
         {
             "name": "Performance & Mobility Foam Rolling",
             "description": "High-level foam rolling techniques designed to improve movement efficiency and prevent injuries.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Rolling Plank Challenge",
                     "duration": "30 seconds",

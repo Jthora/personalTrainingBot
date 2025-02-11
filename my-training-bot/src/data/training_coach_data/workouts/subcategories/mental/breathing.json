@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Breathing",
             "description": "Improve respiratory control, oxygen efficiency, and endurance through controlled breathing exercises.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Box Breathing",
                     "duration": "5 minutes",
@@ -44,7 +44,7 @@
         {
             "name": "Advanced Breathing Techniques",
             "description": "Master complex breathing methods to enhance endurance, mental resilience, and energy control.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Tummo Fire Breath",
                     "duration": "10 minutes",
@@ -85,7 +85,7 @@
         {
             "name": "Psi Breathing Techniques",
             "description": "Develop breath control beyond physiological limits, unlocking psi-energy flow and resonance harmonization.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Pranic Energy Breathwork",
                     "duration": "20 minutes",

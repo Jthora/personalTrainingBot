@@ -2,9 +2,9 @@
     "name": "Balance",
     "description": "Balance exercises to improve stability, core control, and dynamic balance.",
     "subcategories": {
-        "stability": "stability.json",
         "core_control": "core_control.json",
+        "dynamic_balance": "dynamic_balance.json",
         "single_leg": "single_leg.json",
-        "dynamic_balance": "dynamic_balance.json"
+        "stability": "stability.json"
     }
 }

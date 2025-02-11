@@ -2,10 +2,10 @@
     "name": "Mental",
     "description": "Mental exercises to improve focus, breathing, mindset, visualization, and meditation.",
     "subcategories": {
-        "focus": "focus.json",
         "breathing": "breathing.json",
+        "focus": "focus.json",
+        "meditation": "meditation.json",
         "mindset": "mindset.json",
-        "visualization": "visualization.json",
-        "meditation": "meditation.json"
+        "visualization": "visualization.json"
     }
 }

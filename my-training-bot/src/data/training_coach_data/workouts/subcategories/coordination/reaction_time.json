@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Reaction Time Training",
             "description": "Develop hand-eye coordination, reflexes, and quick decision-making through drills.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Coin Drop Catch",
                     "duration": "5 minutes",

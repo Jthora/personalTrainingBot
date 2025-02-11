@@ -2,9 +2,9 @@ import React from 'react';
 import SubWorkoutCard from '../SubWorkoutCard/SubWorkoutCard';
 import styles from './SubWorkoutList.module.css';
 import { useWorkoutSchedule } from '../../hooks/useWorkoutSchedule';
-import { SubWorkout } from '../../types/SubWorkout';
+import { Workout } from '../../types/WorkoutCategory';
 
-const SubWorkoutList: React.FC<{ onWorkoutComplete: (workout: SubWorkout) => void }> = ({ onWorkoutComplete }) => {
+const SubWorkoutList: React.FC<{ onWorkoutComplete: (workout: Workout) => void }> = ({ onWorkoutComplete }) => {
     const { schedule } = useWorkoutSchedule();
 
     return (

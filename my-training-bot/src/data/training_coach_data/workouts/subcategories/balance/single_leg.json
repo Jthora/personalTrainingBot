@@ -1,9 +1,9 @@
 {
-    "sub_workout_groups": [
+    "workout_groups": [
         {
             "name": "Basic Single-Leg Balance Exercises",
             "description": "Beginner single-leg balance exercises.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Single-Leg Stand",
                     "duration": "1 minute",
@@ -37,7 +37,7 @@
         {
             "name": "Single-Leg Balance Exercises",
             "description": "Exercises to improve balance and stability on one leg.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Single-Leg Stand",
                     "duration": "1 minute",
@@ -71,7 +71,7 @@
         {
             "name": "Advanced Single-Leg Balance",
             "description": "Single-leg balance exercises for advanced levels.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Single-Leg Stand with Eyes Closed",
                     "duration": "1 minute",

@@ -1,5 +1,29 @@
-import { Workout } from './Workout';
+export interface WorkoutCategory {
+    id: string;
+    name: string;
+    description: string;
+    subCategories: WorkoutSubCategory[];
+}
 
-export type WorkoutCategory = {
-    [key: string]: Workout[];
-};
+export interface WorkoutSubCategory {
+    id: string;
+    name: string;
+    description: string;
+    workoutGroups: WorkoutGroup[];
+}
+
+export interface WorkoutGroup {
+    id: string;
+    name: string;
+    description: string;
+    workouts: Workout[];
+}
+
+export interface Workout {
+    id: string;
+    name: string;
+    description: string;
+    duration: number;
+    intensity: string; // Changed from difficulty to intensity
+    difficultyRange: [number, number];
+}

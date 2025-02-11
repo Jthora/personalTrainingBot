@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Visualization",
             "description": "Improve mental imagery skills to enhance performance, decision-making, and goal-setting.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Success Visualization",
                     "duration": "10 minutes",
@@ -44,7 +44,7 @@
         {
             "name": "Advanced Visualization Training",
             "description": "Train the mind to create hyper-detailed mental images that enhance cognitive function and performance.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Multisensory Visualization",
                     "duration": "10 minutes",
@@ -78,7 +78,7 @@
         {
             "name": "Psi Visualization Techniques",
             "description": "Project thoughtforms, generate hyper-realistic mental imagery, and explore dimensional overlays.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Projected Astral Sight",
                     "duration": "30 minutes",

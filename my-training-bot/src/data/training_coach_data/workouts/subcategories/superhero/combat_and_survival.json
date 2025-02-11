@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Tactical Combat & Survival Training",
             "description": "Master combat, stealth, and extreme survival tactics for real-world superhero missions.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Full Contact Hand-to-Hand Combat",
                     "duration": "5 rounds of 3 minutes",

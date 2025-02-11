@@ -1,9 +1,9 @@
 {
-    "sub_workout_group":[
+    "workout_groups":[
         {
             "name": "Jumping & Vault Training",
             "description": "Max-height leaps, precision landings.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Basic Jumping Drills",
                     "duration": "5 minutes",

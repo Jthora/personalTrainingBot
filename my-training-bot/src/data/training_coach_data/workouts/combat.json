@@ -2,10 +2,9 @@
     "name": "Combat",
     "description": "Combat training to improve striking, grappling, and self-defense skills.",
     "subcategories": {
-        "striking": "striking.json",
-        "gun_draw": "gun_draw.json",
         "grappling": "grappling.json",
-        "self_defense": "self_defense.json",
-        "weapon_training": "weapon_training.json"
+        "gun_draw": "gun_draw.json",
+        "jo_staff_fighting": "jo_staff_fighting.json",
+        "striking": "striking.json"
     }
 }

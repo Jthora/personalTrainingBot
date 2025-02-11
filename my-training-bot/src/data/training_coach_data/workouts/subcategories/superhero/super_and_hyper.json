@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Superhero Strength & Power Mastery",
             "description": "Brutal strength training designed for extreme power output—lifting cars, smashing obstacles, and taking on massive forces.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Car Lift & Flip",
                     "duration": "4 sets of 2 reps",

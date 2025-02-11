@@ -1,5 +1,5 @@
 import coachTrainingCache from '../cache/CoachTrainingCache';
-import { SubWorkout } from '../types/SubWorkout';
+import { Workout } from '../types/WorkoutCategory';
 import { WorkoutSchedule } from '../types/WorkoutSchedule';
 
 interface WorkoutScheduleOptions {
@@ -14,7 +14,7 @@ const getRandomItems = <T>(array: T[], count: number): T[] => {
 
 export const createWorkoutSchedule = async (options: WorkoutScheduleOptions = {}): Promise<WorkoutSchedule> => {
     const {
-        categories = ['cardio', 'strength', 'agility', 'combat', 'mental'],
+        categories = [],
         date = new Date().toISOString().split('T')[0]
     } = options;
 
@@ -23,21 +23,23 @@ export const createWorkoutSchedule = async (options: WorkoutScheduleOptions = {}
         await new Promise(resolve => setTimeout(resolve, 100));
     }
 
-    const subWorkouts: SubWorkout[] = [];
+    const allCategories = coachTrainingCache.getWorkoutCategories().map(category => category.id);
+    const selectedCategories = categories.length > 0 ? categories : allCategories;
 
-    for (const category of categories) {
-        const categorySubWorkouts = coachTrainingCache.getSubWorkoutsByCategory(category);
-        if (categorySubWorkouts) {
-            subWorkouts.push(...categorySubWorkouts);
-        } else {
-            console.warn(`No sub-workouts found for category ${category}`);
+    const workouts: Workout[] = [];
+    for (const category of selectedCategories) {
+        const categoryWorkouts = await coachTrainingCache.fetchAllWorkoutsInCategory(category);
+        if (categoryWorkouts) {
+            workouts.push(...categoryWorkouts);
         }
     }
 
-    const selectedSubWorkouts = getRandomItems(subWorkouts, 10);
+    const selectedWorkouts = getRandomItems(workouts, 10).map(() => {
+        return coachTrainingCache.getWeightedRandomWorkout();
+    }).filter(workout => workout !== null) as Workout[];
 
     return {
         date,
-        workouts: selectedSubWorkouts,
+        workouts: selectedWorkouts,
     };
 };

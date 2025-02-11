@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Jo Staff Flow Training",
             "description": "Continuous movement, weapon handling, and strikes.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Basic Jo Staff Flow",
                     "duration": "5 minutes",
@@ -44,7 +44,7 @@
         {
             "name": "Jo Staff Agility Training",
             "description": "Agility drills with Jo staff.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Basic Agility Drills",
                     "duration": "5 minutes",

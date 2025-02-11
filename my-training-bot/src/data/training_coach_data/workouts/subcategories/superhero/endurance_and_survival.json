@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Super Endurance & Survival Conditioning",
             "description": "Develop ultra-endurance, resilience, and survival capability in extreme conditions.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Ultra-Distance Running",
                     "duration": "10+ miles",

@@ -1,9 +1,9 @@
 {
-    "sub_workout_group":[
+    "workout_groups":[
         {
             "name": "Reaction Drills",
             "description": "Drills to improve general reaction time.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Basic Reaction Drills",
                     "duration": "5 minutes",
@@ -58,7 +58,7 @@
         {
             "name": "Gun Draw Speed Drills",
             "description": "Gun draw speed drills.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Basic Gun Draw Speed Drills",
                     "duration": "5 minutes",
@@ -106,7 +106,7 @@
         {
             "name": "Punching Bag Reaction Drills",
             "description": "Punching bag reaction drills.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Basic Punching Bag Reaction Drills",
                     "duration": "5 minutes",

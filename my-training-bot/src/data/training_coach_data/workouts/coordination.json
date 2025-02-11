@@ -2,9 +2,10 @@
     "name": "Coordination",
     "description": "Coordination exercises to improve hand-eye and foot-eye coordination, balance, and reaction time.",
     "subcategories": {
-        "hand_eye": "hand_eye.json",
-        "foot_eye": "foot_eye.json",
         "balance": "balance.json",
+        "foot_eye": "foot_eye.json",
+        "hand_eye": "hand_eye.json",
+        "jo_staff_spins": "jo_staff_spins.json",
         "reaction_time": "reaction_time.json"
     }
 }

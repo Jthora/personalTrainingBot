@@ -2,12 +2,11 @@ import difficultyLevels from "../data/training_coach_data/difficulty_levels.json
 import ranksData from "../data/training_coach_data/ranks.json";
 import tigerSpeech from "../data/training_coach_data/tiger_speech.json";
 import trainingChallenges from "../data/training_coach_data/training_challenges.json";
-import workouts from "../data/training_coach_data/workouts.json";
 import { WorkoutDifficultyLevel } from "../types/WorkoutDifficultyLevel";
 import { WorkoutRank } from "../types/WorkoutRank";
-import { Workout } from "../types/Workout";
-import { WorkoutsData } from "../types/WorkoutsData";
-import { SubWorkout } from "../types/SubWorkout";
+import { WorkoutCategory, WorkoutSubCategory, WorkoutGroup, Workout } from "../types/WorkoutCategory";
+import { workoutCategoryPaths } from "./workoutCategoryPaths";
+import { workoutSubCategoryPaths } from "./workoutSubCategoryPaths";
 
 // Ensure ranks data has the correct type
 const ranks: WorkoutRank[] = ranksData.map(rank => ({
@@ -60,104 +59,96 @@ export const fetchWorkout = (): string => {
 };
 
 // Fetches a random workout from a specific category and sub-category
-export const fetchWorkoutByCategory = (category: string, subCategory: string): Workout | null => {
+export const fetchWorkoutByCategory = async (category: string, subCategory: string): Promise<Workout | null> => {
     try {
-        const categoryData = (workouts as WorkoutsData)[category];
+        const categoryData = await workoutCategoryPaths[category]();
         if (!categoryData) {
             console.warn(`Category ${category} not found.`);
             return null;
         }
-        const subCategoryData = categoryData[subCategory];
+        const subCategoryData = await workoutSubCategoryPaths[`${category}_${subCategory}`]();
         if (!subCategoryData) {
             console.warn(`Sub-category ${subCategory} not found in category ${category}.`);
             return null;
         }
-        return getRandomItem(subCategoryData);
+        const allWorkouts = subCategoryData.workout_groups.flatMap((group: WorkoutGroup) => group.workouts);
+        return getRandomItem(allWorkouts);
     } catch (error) {
         console.error(`Failed to fetch workout by category ${category} and sub-category ${subCategory}:`, error);
         return null;
     }
 };
 
-// Fetches a random sub-workout from a specific workout
-export const fetchSubWorkout = (category: string, subCategory: string, workoutName: string): SubWorkout | null => {
+// Fetches a random workout from a specific workout group
+export const fetchWorkoutFromGroup = async (category: string, subCategory: string, groupName: string): Promise<Workout | null> => {
     try {
-        const categoryData = (workouts as WorkoutsData)[category];
+        const categoryData = await workoutCategoryPaths[category]();
         if (!categoryData) {
             console.warn(`Category ${category} not found.`);
             return null;
         }
-        const subCategoryData = categoryData[subCategory];
+        const subCategoryData = await workoutSubCategoryPaths[`${category}_${subCategory}`]();
         if (!subCategoryData) {
             console.warn(`Sub-category ${subCategory} not found in category ${category}.`);
             return null;
         }
-        const workout = subCategoryData.find(workout => workout.name === workoutName);
-        if (!workout) {
-            console.warn(`Workout ${workoutName} not found in sub-category ${subCategory} of category ${category}.`);
+        const group = subCategoryData.workout_groups.find((group: WorkoutGroup) => group.name === groupName);
+        if (!group) {
+            console.warn(`Workout group ${groupName} not found in sub-category ${subCategory} of category ${category}.`);
             return null;
         }
-        return getRandomItem(workout.sub_workouts);
+        return getRandomItem(group.workouts);
     } catch (error) {
-        console.error(`Failed to fetch sub-workout for workout ${workoutName} in category ${category} and sub-category ${subCategory}:`, error);
+        console.error(`Failed to fetch workout from group ${groupName} in category ${category} and sub-category ${subCategory}:`, error);
         return null;
     }
 };
 
 // Fetches all workouts in a specific category
-export const fetchAllWorkoutsInCategory = (category: string): Workout[] | null => {
+export const fetchAllWorkoutsInCategory = async (category: string): Promise<Workout[] | null> => {
     try {
-        const categoryData = (workouts as WorkoutsData)[category];
-        return Array.isArray(categoryData) ? categoryData : null;
+        const categoryData = await workoutCategoryPaths[category]();
+        if (!categoryData) {
+            console.warn(`Category ${category} not found.`);
+            return null;
+        }
+        const workoutsList: Workout[] = [];
+        for (const subCategoryId in workoutSubCategoryPaths) {
+            if (subCategoryId.startsWith(category)) {
+                const subCategoryData = await workoutSubCategoryPaths[subCategoryId]();
+                subCategoryData.workout_groups.forEach((group: WorkoutGroup) => {
+                    workoutsList.push(...group.workouts);
+                });
+            }
+        }
+        return workoutsList;
     } catch (error) {
         console.error(`Failed to fetch all workouts in category ${category}:`, error);
         return null;
     }
 };
 
-// Fetches all sub-workouts for a specific workout
-export const fetchAllSubWorkouts = (category: string, subCategory: string, workoutName: string): SubWorkout[] | null => {
+// Fetches all workouts for a specific workout group
+export const fetchAllWorkoutsInGroup = async (category: string, subCategory: string, groupName: string): Promise<Workout[] | null> => {
     try {
-        const categoryData = (workouts as WorkoutsData)[category];
+        const categoryData = await workoutCategoryPaths[category]();
         if (!categoryData) {
             console.warn(`Category ${category} not found.`);
             return null;
         }
-        const subCategoryData = categoryData[subCategory];
+        const subCategoryData = await workoutSubCategoryPaths[`${category}_${subCategory}`]();
         if (!subCategoryData) {
             console.warn(`Sub-category ${subCategory} not found in category ${category}.`);
             return null;
         }
-        const workout = subCategoryData.find(workout => workout.name === workoutName);
-        if (!workout) {
-            console.warn(`Workout ${workoutName} not found in sub-category ${subCategory} of category ${category}.`);
+        const group = subCategoryData.workout_groups.find((group: WorkoutGroup) => group.name === groupName);
+        if (!group) {
+            console.warn(`Workout group ${groupName} not found in sub-category ${subCategory} of category ${category}.`);
             return null;
         }
-        return workout.sub_workouts || null;
+        return group.workouts || null;
     } catch (error) {
-        console.error(`Failed to fetch all sub-workouts for workout ${workoutName} in category ${category} and sub-category ${subCategory}:`, error);
-        return null;
-    }
-};
-
-// Fetches all sub-workouts in a specific category
-export const fetchAllSubWorkoutsInCategory = (category: string): SubWorkout[] | null => {
-    try {
-        const categoryData = (workouts as WorkoutsData)[category];
-        if (!categoryData) {
-            console.warn(`Category ${category} not found.`);
-            return null;
-        }
-        const subWorkouts: SubWorkout[] = [];
-        for (const subCategory in categoryData) {
-            const workoutsInSubCategory = categoryData[subCategory];
-            workoutsInSubCategory.forEach(workout => {
-                subWorkouts.push(...workout.sub_workouts);
-            });
-        }
-        return subWorkouts;
-    } catch (error) {
-        console.error(`Failed to fetch all sub-workouts in category ${category}:`, error);
+        console.error(`Failed to fetch all workouts in group ${groupName} for category ${category} and sub-category ${subCategory}:`, error);
         return null;
     }
 };
@@ -264,4 +255,96 @@ export const fetchPreviousDifficultyLevel = (currentLevelName: string): WorkoutD
         console.error(`Failed to fetch previous difficulty level for current level ${currentLevelName}:`, error);
         return null;
     }
-};
+}
+
+class CoachDataLoader {
+    async loadWorkoutCategories(): Promise<WorkoutCategory[]> {
+        const categories: WorkoutCategory[] = [];
+
+        for (const categoryId in workoutCategoryPaths) {
+            try {
+                const categoryData = await workoutCategoryPaths[categoryId]();
+                if (!categoryData || Object.keys(categoryData).length === 0) {
+                    console.warn(`Category ${categoryId} is empty.`);
+                    continue;
+                }
+                const subCategories = await this.loadSubCategories(categoryId, categoryData.subcategories);
+                categories.push({
+                    id: categoryId,
+                    name: categoryData.name,
+                    description: categoryData.description,
+                    subCategories: subCategories
+                });
+            } catch (error) {
+                console.error(`Failed to load category ${categoryId}:`, error);
+            }
+        }
+
+        return categories;
+    }
+
+    async loadSubCategories(categoryId: string, subCategoryPaths: { [key: string]: string }): Promise<WorkoutSubCategory[]> {
+        const subCategories: WorkoutSubCategory[] = [];
+
+        for (const subCategoryId in subCategoryPaths) {
+            try {
+                const subCategoryData = await workoutSubCategoryPaths[`${categoryId}_${subCategoryId}`]();
+                if (!subCategoryData || Object.keys(subCategoryData).length === 0) {
+                    console.warn(`Sub-category ${subCategoryId} is empty.`);
+                    continue;
+                }
+                if (!subCategoryData.workout_groups) {
+                    console.warn(`Sub-category ${subCategoryId} has no workout groups.`);
+                    continue;
+                }
+                const workoutGroups = subCategoryData.workout_groups.map((group: any) => ({
+                    id: group.name.toLowerCase().replace(/\s+/g, '_'),
+                    name: group.name,
+                    description: group.description,
+                    workouts: group.workouts.map((workout: any) => ({
+                        id: workout.name.toLowerCase().replace(/\s+/g, '_'),
+                        name: workout.name,
+                        description: workout.description,
+                        duration: workout.duration,
+                        intensity: workout.intensity, // Changed from difficulty to intensity
+                        difficultyRange: this.parseDifficultyRange(workout.difficulty_range)
+                    }))
+                }));
+                subCategories.push({
+                    id: subCategoryId,
+                    name: subCategoryData.name,
+                    description: subCategoryData.description,
+                    workoutGroups: workoutGroups
+                });
+            } catch (error) {
+                console.error(`Failed to load sub-category ${subCategoryId}:`, error);
+            }
+        }
+
+        return subCategories;
+    }
+
+    parseDifficultyRange(difficultyRange: [number, number]): { min: number, max: number } {
+        const [min, max] = difficultyRange;
+        return { min, max };
+    }
+
+    async fetchAllDifficultyLevels(): Promise<WorkoutDifficultyLevel[]> {
+        try {
+            return difficultyLevels.map(level => ({
+                name: level.name,
+                description: level.description,
+                military_soldier: level.military_soldier,
+                athlete_archetype: level.athlete_archetype,
+                level: level.level,
+                pft: level.pft,
+                requirements: level.requirements
+            })) as WorkoutDifficultyLevel[];
+        } catch (error) {
+            console.error("Failed to fetch difficulty levels:", error);
+            return [];
+        }
+    }
+}
+
+export default CoachDataLoader;

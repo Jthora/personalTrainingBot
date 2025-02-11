@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Beginner Lower Body Strength Routine",
             "description": "Basic lower body exercises to build strength, stability, and endurance.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Bodyweight Squats",
                     "duration": "3 sets of 12 reps",
@@ -44,7 +44,7 @@
         {
             "name": "Intermediate Lower Body Strength Routine",
             "description": "A balanced lower body workout focusing on strength and hypertrophy.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Goblet Squats",
                     "duration": "4 sets of 10-12 reps",
@@ -85,7 +85,7 @@
         {
             "name": "Strength & Hypertrophy Lower Body Routine",
             "description": "A muscle-growth-focused leg workout using moderate weights and higher reps.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Barbell Squats",
                     "duration": "4 sets of 8-10 reps",
@@ -126,7 +126,7 @@
         {
             "name": "Explosive Power & Speed Routine",
             "description": "Exercises to develop speed, jumping ability, and explosive power.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Box Jumps",
                     "duration": "4 sets of 8 reps",
@@ -167,7 +167,7 @@
         {
             "name": "Functional & Athletic Lower Body Routine",
             "description": "A lower body workout that improves balance, stability, and functional strength.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Single-Leg Deadlifts",
                     "duration": "3 sets of 10 reps per leg",
@@ -208,7 +208,7 @@
         {
             "name": "Super Lower Body Strength Routine",
             "description": "Advanced strength and hypertrophy workout designed for elite lifters and athletes.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Front Squats",
                     "duration": "5 sets of 5 reps",

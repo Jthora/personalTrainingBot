@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Superhuman Strength & Power",
             "description": "Extreme strength and durability training to push the limits of human potential.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Atlas Lift",
                     "duration": "3 sets of 3 reps",

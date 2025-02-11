@@ -1,9 +1,9 @@
 {
-    "sub_workout_groups": [
+    "workout_groups": [
         {
             "name": "Ground Fighting Fundamentals",
             "description": "Grappling with weighted resistance, roll recovery.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Basic Grappling",
                     "duration": "5 minutes",

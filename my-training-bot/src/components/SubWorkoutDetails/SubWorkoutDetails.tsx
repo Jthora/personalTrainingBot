@@ -1,11 +1,11 @@
 import React, { useRef } from 'react';
-import { SubWorkout } from '../../types/SubWorkout';
+import { Workout } from '../../types/WorkoutCategory';
 import styles from './SubWorkoutDetails.module.css';
 import SubWorkoutTimer from '../SubWorkoutTimer/SubWorkoutTimer';
 import { playCompleteSound, playSkipSound, playTimeoutSound } from '../../utils/AudioPlayer';
 
 interface SubWorkoutDetailsProps {
-    workout: SubWorkout | null;
+    workout: Workout | null;
     onSkipWorkout: () => void;
     onCompleteWorkout: () => void;
 }
@@ -43,6 +43,7 @@ const SubWorkoutDetails: React.FC<SubWorkoutDetailsProps> = ({ workout, onSkipWo
                         <div className={styles.subDetails}>
                             <p>⏱️ {workout.duration}</p>
                             <p>🔥 {workout.intensity} Intensity</p>
+                            <p>📈 Lv: [{workout.difficultyRange[0]} - {workout.difficultyRange[1]}]</p>
                         </div>
                     </div>
                     <div className={styles.right}>

@@ -1,9 +1,9 @@
 {
-    "sub_workout_group":[
+    "workout_groups":[
         {
             "name": "Tactical Footwork Drills",
             "description": "Rapid direction changes and dodging techniques.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Basic Footwork Drills",
                     "duration": "10 minutes",
@@ -30,7 +30,7 @@
         {
             "name": "Ladder Drills",
             "description": "Footwork drills using an agility ladder to improve speed and coordination.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Basic Ladder Drills",
                     "duration": "10 minutes",
@@ -50,7 +50,7 @@
         {
             "name": "Cone Drills",
             "description": "Agility drills using cones to improve quickness and change of direction.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Basic Cone Drills",
                     "duration": "10 minutes",

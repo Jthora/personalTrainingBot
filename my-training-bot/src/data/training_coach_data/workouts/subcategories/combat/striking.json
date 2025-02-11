@@ -2,7 +2,7 @@
     {
         "name": "Striking Power Development",
         "description": "Punching bag impact drills, endurance striking.",
-        "sub_workouts": [
+        "workouts": [
             {
                 "name": "Heavy Bag Punches",
                 "duration": "5 minutes",
@@ -26,7 +26,7 @@
     {
         "name": "Shadow Boxing",
         "description": "Practice striking techniques and footwork without a partner.",
-        "sub_workouts": [
+        "workouts": [
             {
                 "name": "Basic Combinations",
                 "duration": "5 minutes",
@@ -50,7 +50,7 @@
     {
         "name": "Kickboxing Drills",
         "description": "Combining punches and kicks in various combinations.",
-        "sub_workouts": [
+        "workouts": [
             {
                 "name": "Punch-Kick Combos",
                 "duration": "5 minutes",

@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Beginner Static Stretching",
             "description": "Basic static stretches to improve flexibility and mobility, ideal for beginners.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Standing Hamstring Stretch",
                     "duration": "30 seconds per leg",
@@ -58,7 +58,7 @@
         {
             "name": "Advanced Static Stretching",
             "description": "Deeper and more intense static stretches to improve flexibility and mobility.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Standing Wide-Leg Forward Fold",
                     "duration": "45 seconds",
@@ -113,7 +113,7 @@
         {
             "name": "Super Static Stretching",
             "description": "Elite static stretching for extreme flexibility, muscle elongation, and deep mobility work.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Full Pancake Stretch",
                     "duration": "60 seconds",

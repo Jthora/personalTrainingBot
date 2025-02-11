@@ -1,9 +1,9 @@
 {
-    "sub_workout_groups": [
+    "workout_groups": [
         {
             "name": "Treadmill Endurance Protocols",
             "description": "Interval running to build endurance.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "10-minute endurance run",
                     "duration": "10 minutes",
@@ -79,7 +79,7 @@
         {
             "name": "Cycling Endurance Protocols",
             "description": "Long-distance cycling to build endurance.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "30-minute cycling",
                     "duration": "30 minutes",
@@ -127,7 +127,7 @@
         {
             "name": "Swimming Endurance Protocols",
             "description": "Long-distance swimming to build endurance.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "15-minute swim",
                     "duration": "15 minutes",
@@ -175,7 +175,7 @@
         {
             "name": "Bodyweight Endurance Circuits",
             "description": "High-repetition bodyweight exercises to build endurance.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "10-minute bodyweight circuit",
                     "duration": "10 minutes",
@@ -223,7 +223,7 @@
         {
             "name": "Stationary Bike Endurance",
             "description": "Long-duration stationary bike sessions to build endurance.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "15-minute stationary bike ride",
                     "duration": "15 minutes",
@@ -271,7 +271,7 @@
         {
             "name": "Quiet Ninja Cardio",
             "description": "Low-impact, quiet cardio exercises to build endurance without disturbing others.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "1-minute quiet ninja cardio",
                     "duration": "1 minute",
@@ -375,7 +375,7 @@
         {
             "name": "Dynamic Bodyweight Cardio",
             "description": "High-energy bodyweight cardio exercises to build endurance.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "1-minute dynamic bodyweight cardio",
                     "duration": "1 minute",

@@ -1,9 +1,9 @@
 {
-    "sub_workout_groups": [
+    "workout_groups": [
         {
             "name": "Core Stability Drills",
             "description": "Exercises to strengthen the core and improve stability.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Plank",
                     "duration": "1 minute",
@@ -37,7 +37,7 @@
         {
             "name": "Balance Board Training",
             "description": "Exercises using a balance board to improve stability.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Balance Board Stand",
                     "duration": "1 minute",
@@ -71,7 +71,7 @@
         {
             "name": "Advanced Stability Drills",
             "description": "Advanced stability exercises for athletes.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Single-Leg Balance with Arm Reach",
                     "duration": "2 minutes",
@@ -105,7 +105,7 @@
         {
             "name": "Elite Tactical Stability",
             "description": "High-intensity stability exercises for elite tactical athletes.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Weighted Plank",
                     "duration": "2+ minutes",
@@ -139,7 +139,7 @@
         {
             "name": "Extreme Endurance Balance",
             "description": "Extreme balance exercises for high endurance athletes.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Single-Leg Stand with Eyes Closed and Weighted Vest",
                     "duration": "3+ minutes",

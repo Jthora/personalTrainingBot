@@ -2,12 +2,12 @@
     "name": "Strength",
     "description": "Strength training to improve upper body, core, grip, lower body, flexibility, powerlifting, and bodybuilding.",
     "subcategories": {
-        "upper_body": "upper_body.json",
+        "bodybuilding": "bodybuilding.json",
         "core": "core.json",
+        "flexibility": "flexibility.json",
         "grip": "grip.json",
         "lower_body": "lower_body.json",
-        "flexibility": "flexibility.json",
         "powerlifting": "powerlifting.json",
-        "bodybuilding": "bodybuilding.json"
+        "upper_body": "upper_body.json"
     }
 }

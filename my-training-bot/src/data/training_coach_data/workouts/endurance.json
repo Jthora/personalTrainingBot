@@ -2,8 +2,8 @@
     "name": "Endurance",
     "description": "Endurance exercises to improve running, cycling, swimming, and rowing performance.",
     "subcategories": {
-        "running": "cardiovascular.json",
-        "cycling": "muscular.json",
-        "swimming": "mental.json"
+        "cardiovascular": "cardiovascular.json",
+        "muscular": "muscular.json",
+        "mental": "mental.json"
     }
 }

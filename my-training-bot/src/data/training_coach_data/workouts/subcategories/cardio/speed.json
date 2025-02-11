@@ -1,9 +1,9 @@
 {
-    "sub_workout_groups": [
+    "workout_groups": [
         {
             "name": "High-Intensity Speed Drills",
             "description": "Short bursts of sprinting.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "10-second sprints",
                     "duration": "10 seconds",
@@ -149,7 +149,7 @@
         {
             "name": "Jump Rope Intervals",
             "description": "High-intensity jump rope sessions to improve cardiovascular health.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "30-second intervals",
                     "duration": "30 seconds",
@@ -295,7 +295,7 @@
         {
             "name": "Hill Sprints",
             "description": "Sprinting uphill to build strength and endurance.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "10-second hill sprints",
                     "duration": "10 seconds",
@@ -371,7 +371,7 @@
         {
             "name": "Stair Climbing Intervals",
             "description": "High-intensity stair climbing to improve leg strength and cardiovascular health.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "30-second stair climbs",
                     "duration": "30 seconds",
@@ -447,7 +447,7 @@
         {
             "name": "Treadmill Sprints",
             "description": "High-intensity treadmill running to improve speed and endurance.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "30-Second Treadmill Sprints",
                     "duration": "30 seconds",

@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Meditation",
             "description": "Cultivate mindfulness, relaxation, and mental discipline through meditation practices.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Guided Meditation",
                     "duration": "10 minutes",
@@ -44,7 +44,7 @@
         {
             "name": "Advanced Meditation Techniques",
             "description": "Deepen meditative practice with techniques that push the mind beyond conventional mindfulness training.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Void Meditation",
                     "duration": "15 minutes",
@@ -85,7 +85,7 @@
         {
             "name": "Psi Meditation Techniques",
             "description": "Access non-ordinary states of consciousness through deep psionic meditation practices.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Psionic Void Immersion",
                     "duration": "30 minutes",

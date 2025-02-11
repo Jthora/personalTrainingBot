@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Cardiovascular Endurance",
             "description": "Improve stamina, heart health, and overall cardiovascular endurance with home-friendly exercises.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Jump Rope Intervals",
                     "duration": "10 minutes",

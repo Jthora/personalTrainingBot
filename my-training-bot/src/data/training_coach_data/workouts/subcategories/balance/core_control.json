@@ -1,9 +1,9 @@
 {
-    "sub_workout_groups": [
+    "workout_groups": [
         {
             "name": "Core Control Drills",
             "description": "Exercises to improve core control and stability.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Plank",
                     "duration": "1 minute",
@@ -37,7 +37,7 @@
         {
             "name": "Intermediate Core Stability",
             "description": "Core stability exercises for intermediate levels.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Plank with Leg Lift",
                     "duration": "1 minute",
@@ -71,7 +71,7 @@
         {
             "name": "Advanced Core Stability",
             "description": "Advanced core stability exercises.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Plank with Arm Reach",
                     "duration": "1+ minute",
@@ -105,7 +105,7 @@
         {
             "name": "Core Control Challenges",
             "description": "Core control exercises for higher difficulty levels.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Plank with Arm and Leg Lift",
                     "duration": "1+ minute",

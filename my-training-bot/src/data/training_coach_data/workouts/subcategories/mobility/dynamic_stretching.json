@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Beginner Level Dynamic Stretching",
             "description": "Improve mobility, flexibility, and movement range with beginner-friendly dynamic stretches.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Arm Circles",
                     "duration": "30 seconds",
@@ -107,7 +107,7 @@
         {
             "name": "Mid-Level Dynamic Stretching",
             "description": "More complex mobility drills to enhance flexibility, stability, and coordination.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "High-Knee Pulls",
                     "duration": "30 seconds per leg",
@@ -162,7 +162,7 @@
         {
             "name": "Advanced Dynamic Stretching",
             "description": "High-level dynamic stretching movements for increased mobility and flexibility.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Explosive Cossack Squats",
                     "duration": "30 seconds per side",
@@ -210,7 +210,7 @@
         {
             "name": "Super Dynamic Stretching",
             "description": "Extreme flexibility, agility, and power movements for elite mobility training.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Aerial Pike Kicks",
                     "duration": "30 seconds",

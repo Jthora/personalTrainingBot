@@ -2,7 +2,7 @@
     {
         "name": "Tactical Breathing Exercises",
         "description": "Improve oxygen efficiency under stress.",
-        "sub_workouts": [
+        "workouts": [
             {
                 "name": "Box breathing",
                 "duration": "5 minutes",
@@ -22,11 +22,11 @@
                 "description": "Breathe deeply into the diaphragm for 5 minutes."
             }
         ],
-        "sub_workout_groups": [
+        "workout_groups": [
             {
                 "name": "Tactical Breathing Exercises",
                 "description": "Improve oxygen efficiency under stress.",
-                "sub_workouts": [
+                "workouts": [
                     {
                         "name": "1-minute box breathing",
                         "duration": "1 minute",

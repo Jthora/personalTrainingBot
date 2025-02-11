@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Psionic & Sensory Mastery",
             "description": "Develop heightened awareness, mental fortitude, and sensory perception beyond human limits.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Blindfolded Combat Drills",
                     "duration": "Timed Event",

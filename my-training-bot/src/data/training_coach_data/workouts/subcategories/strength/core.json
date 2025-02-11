@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Beginner Core Strength Routine",
             "description": "Basic core exercises to build foundational abdominal and lower back strength.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Plank Hold",
                     "duration": "30 seconds",
@@ -51,7 +51,7 @@
         {
             "name": "Intermediate Core Strength Routine",
             "description": "Moderate core exercises to enhance abdominal and lower back strength.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Plank with Shoulder Taps",
                     "duration": "30 seconds",
@@ -92,7 +92,7 @@
         {
             "name": "Advanced Core Power Routine",
             "description": "More intense core exercises to build strength, endurance, and power.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Hanging Leg Raises",
                     "duration": "30 seconds",
@@ -140,7 +140,7 @@
         {
             "name": "Super Core Strength Routine",
             "description": "Extreme core exercises designed for elite athletes and advanced lifters.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Dragon Flags",
                     "duration": "30 seconds",

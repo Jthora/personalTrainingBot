@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Beginner Flexibility Routine",
             "description": "Basic stretches and mobility work to improve flexibility and prevent stiffness.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Standing Forward Fold",
                     "duration": "30 seconds",
@@ -51,7 +51,7 @@
         {
             "name": "Intermediate Flexibility Routine",
             "description": "Moderate stretches and mobility work to enhance flexibility and range of motion.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Pigeon Pose",
                     "duration": "30 seconds per side",
@@ -99,7 +99,7 @@
         {
             "name": "Advanced Flexibility & Strength Routine",
             "description": "Combining static and active flexibility to improve mobility and muscular control.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Standing Leg Hold",
                     "duration": "30 seconds per leg",
@@ -147,7 +147,7 @@
         {
             "name": "Elite Flexibility Routine",
             "description": "Advanced flexibility training to achieve extreme ranges of motion and control.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Full Split Hold",
                     "duration": "60 seconds per leg",
@@ -188,7 +188,7 @@
         {
             "name": "Super Flexibility Routine",
             "description": "Elite-level flexibility training designed for maximum mobility, strength, and control.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Pancake Stretch with Weighted Reach",
                     "duration": "60 seconds",

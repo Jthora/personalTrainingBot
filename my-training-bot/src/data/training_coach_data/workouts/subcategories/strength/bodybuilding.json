@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Hypertrophy Bodybuilding Routine",
             "description": "A muscle-growth-focused workout using moderate weights and high reps to maximize hypertrophy.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Dumbbell Bench Press",
                     "duration": "4 sets of 10-12 reps",
@@ -58,7 +58,7 @@
         {
             "name": "Strength & Size Hybrid Routine",
             "description": "Combining strength training and muscle-building techniques for maximum growth and power.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Barbell Deadlift",
                     "duration": "4 sets of 5-8 reps",
@@ -113,7 +113,7 @@
         {
             "name": "Bodybuilding Split Routine",
             "description": "A traditional bodybuilding split routine focusing on hypertrophy and muscle isolation.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Chest and Triceps",
                     "duration": "4 sets of 8-12 reps",
@@ -140,7 +140,7 @@
         {
             "name": "Super Bodybuilding Routine",
             "description": "An advanced muscle-building program designed for elite lifters looking for maximum hypertrophy and strength.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Deficit Deadlifts",
                     "duration": "5 sets of 4-6 reps",

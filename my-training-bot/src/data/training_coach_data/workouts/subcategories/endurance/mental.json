@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Mental Endurance & Breath Control",
             "description": "Enhance endurance through breathing techniques and mental resilience training.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Box Breathing",
                     "duration": "5 minutes",

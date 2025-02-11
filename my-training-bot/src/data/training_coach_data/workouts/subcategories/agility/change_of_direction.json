@@ -1,9 +1,9 @@
 {
-    "sub_workout_group":[
+    "workout_groups":[
         {
             "name": "Tactical Change of Direction Drills",
             "description": "Drills to improve agility and change of direction.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Basic Change of Direction Drills",
                     "duration": "5 minutes",

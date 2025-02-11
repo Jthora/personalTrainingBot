@@ -2,10 +2,8 @@
     "name": "Cardio",
     "description": "Cardio exercises to improve endurance, speed, and breathing.",
     "subcategories": {
-        "endurance": "endurance.json",
-        "speed": "speed.json",
         "breathing": "breathing.json",
-        "HIIT": "HIIT.json",
-        "steady_state": "steady_state.json"
+        "endurance": "endurance.json",
+        "speed": "speed.json"
     }
 }

@@ -7,8 +7,10 @@
     "generate-module-paths": "npx tsx src/utils/generateModulePaths.tsx",
     "generate-submodule-paths": "npx tsx src/utils/generateSubModulePaths.tsx",
     "generate-carddeck-paths": "npx tsx src/utils/generateCardDeckPaths.tsx",
-    "dev": "npm run generate-module-paths && npm run generate-submodule-paths && npm run generate-carddeck-paths && vite",
-    "build": "npm run generate-module-paths && npm run generate-submodule-paths && npm run generate-carddeck-paths && tsc -b && vite build",
+    "generate-workout-category-paths": "npx tsx src/utils/generateWorkoutCategoryPaths.tsx",
+    "generate-workout-subcategory-paths": "npx tsx src/utils/generateWorkoutSubCategoryPaths.tsx",
+    "dev": "npm run generate-module-paths && npm run generate-submodule-paths && npm run generate-carddeck-paths && npm run generate-workout-category-paths && npm run generate-workout-subcategory-paths && vite",
+    "build": "npm run generate-module-paths && npm run generate-submodule-paths && npm run generate-carddeck-paths && npm run generate-workout-category-paths && npm run generate-workout-subcategory-paths && tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },

@@ -1,9 +1,9 @@
 {
-    "sub_workout_groups": [
+    "workout_groups": [
         {
             "name": "Dynamic Stability Workouts",
             "description": "Exercises to improve dynamic stability and coordination.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Lateral Hops",
                     "duration": "1 minute",
@@ -37,7 +37,7 @@
         {
             "name": "Dynamic Balance Challenges",
             "description": "Dynamic balance exercises for higher difficulty levels.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Lateral Hops with Pause",
                     "duration": "1 minute",

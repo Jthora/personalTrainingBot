@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Beginner Upper Body Strength Routine",
             "description": "A foundational routine to build upper body strength and stability.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Push-Ups",
                     "duration": "3 sets of 12 reps",
@@ -44,7 +44,7 @@
         {
             "name": "Upper Body Strength & Hypertrophy Routine",
             "description": "A routine designed to build muscle and strength in the chest, shoulders, and arms.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Bench Press",
                     "duration": "4 sets of 8 reps",
@@ -85,7 +85,7 @@
         {
             "name": "Explosive Upper Body Power Routine",
             "description": "A workout focusing on speed, explosiveness, and fast-twitch muscle activation.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Speed Bench Press",
                     "duration": "6 sets of 3 reps",
@@ -126,7 +126,7 @@
         {
             "name": "Functional Upper Body Strength Routine",
             "description": "A workout designed to improve real-world upper body strength and mobility.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Farmer’s Carry",
                     "duration": "3 sets of 30 meters",
@@ -167,7 +167,7 @@
         {
             "name": "Super Upper Body Strength Routine",
             "description": "An advanced routine focused on achieving elite-level upper body strength.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Weighted Pull-Ups",
                     "duration": "4 sets of 6 reps",

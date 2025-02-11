@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Muscular Endurance",
             "description": "Increase strength endurance by performing high-rep bodyweight exercises.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Push-Up Burnout Set",
                     "duration": "10 minutes",

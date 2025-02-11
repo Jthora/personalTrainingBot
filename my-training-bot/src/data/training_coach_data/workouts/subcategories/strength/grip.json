@@ -1,9 +1,9 @@
 {
-    "sub_workout_group": [
+    "workout_groups": [
         {
             "name": "Beginner Grip Endurance Routine",
             "description": "Basic grip-strengthening exercises to build endurance and foundational hand strength.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Dead Hang",
                     "duration": "30 seconds",
@@ -44,7 +44,7 @@
         {
             "name": "Crushing Grip Strength Routine",
             "description": "Intermediate grip exercises focusing on crushing strength, necessary for heavy lifting and sports performance.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Heavy Dead Hangs",
                     "duration": "4 sets of 30 seconds",
@@ -85,7 +85,7 @@
         {
             "name": "Pinch Grip Power Routine",
             "description": "A specialized grip workout focused on pinching strength, useful for lifting, climbing, and combat sports.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Plate Pinch Deadlifts",
                     "duration": "3 sets of 8 reps",
@@ -126,7 +126,7 @@
         {
             "name": "Wrist & Forearm Strength Routine",
             "description": "A grip workout designed to improve wrist stability and forearm endurance for lifting and combat sports.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Reverse Wrist Curls",
                     "duration": "3 sets of 12 reps",
@@ -167,7 +167,7 @@
         {
             "name": "Super Grip Strength Routine",
             "description": "Elite grip training for maximum hand and forearm strength, suited for athletes and strength competitors.",
-            "sub_workouts": [
+            "workouts": [
                 {
                     "name": "Rolling Thunder Deadlifts",
                     "duration": "4 sets of 6 reps",

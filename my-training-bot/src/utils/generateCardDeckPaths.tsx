@@ -70,7 +70,7 @@ const generateCardDeckPaths = async () => {
         }
 
         const cardDeckPaths = trainingModules.modules.flatMap(getCardDeckPaths).join(',\n');
-        const fileContent = `export const cardDeckPaths: { [key: string]: () => Promise<any> } = {\n${cardDeckPaths}\n};\n`;
+        const fileContent = `export const cardDeckPaths: { [key: string]: () => Promise<any> } = {\n${cardDeckPaths}\n};\n\nexport const totalCardDecks = Object.keys(cardDeckPaths).length;\n`;
 
         fs.writeFileSync(outputPath, fileContent, 'utf-8');
         console.log('Successfully generated card deck paths.');

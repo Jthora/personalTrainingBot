@@ -2,27 +2,27 @@ import { TrainingModule } from "../types/TrainingModule";
 import { TrainingSubModule } from "../types/TrainingSubModule";
 import { CardDeck } from "../types/CardDeck";
 import { Card } from "../types/Card";
-import TrainingModuleCache from "../cache/TrainingModuleCache";
+//import TrainingModuleCache from "../cache/TrainingModuleCache";
 import { modulePaths } from "./modulePaths"; // Import the generated module paths
 import { subModulePaths } from "./subModulePaths"; // Import the generated submodule paths
 import { cardDeckPaths } from "./cardDeckPaths"; // Import the generated card deck paths
 
 class DataLoader {
     // Load all data and cache it
-    async loadAllData() {
+    async loadAllData(onProgress: () => void): Promise<TrainingModule[]> {
         try {
             console.log("Starting to load all data...");
-            const trainingModules = await this.loadTrainingModules();
+            const trainingModules = await this.loadTrainingModules(onProgress);
             console.log(`Fetched ${trainingModules.length} training modules.`);
-            await TrainingModuleCache.getInstance().loadData(trainingModules);
-            console.log("Successfully loaded and cached all data.");
+            return trainingModules; // Return loaded data
         } catch (error) {
             console.error("Failed to load all data:", error);
+            return [];
         }
     }
 
     // Load training modules from JSON files
-    async loadTrainingModules(): Promise<TrainingModule[]> {
+    async loadTrainingModules(onProgress: () => void): Promise<TrainingModule[]> {
         const trainingModules: TrainingModule[] = [];
 
         for (const moduleId in modulePaths) {
@@ -37,6 +37,7 @@ class DataLoader {
                                 subModuleData.cardDecks.map(async (deckId: string) => {
                                     try {
                                         const deckData = await cardDeckPaths[`${moduleId}_${subModuleId}_${deckId}`]();
+                                        onProgress(); // Update progress
                                         return {
                                             id: deckData.id,
                                             name: deckData.name,

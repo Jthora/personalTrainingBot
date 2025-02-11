@@ -14,12 +14,9 @@ const HomePage: React.FC = () => {
         const loadCache = async () => {
             const cache = TrainingModuleCache.getInstance();
             if (!cache.isLoaded()) {
-                setIsLoading(true);
                 await cache.loadData([]); // Ensure the cache is loaded
-                setIsLoading(false);
-            } else {
-                setIsLoading(false);
             }
+            setIsLoading(false);
         };
 
         loadCache();

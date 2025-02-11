@@ -253,3 +253,5 @@ export const cardDeckPaths: { [key: string]: () => Promise<any> } = {
     war_strategy_special_operations_planning_extraction_and_escape_tactics: () => import("../data/training_modules/training_sub_modules/war_strategy/card_decks/special_operations_planning/extraction_and_escape_tactics.json"),
     war_strategy_special_operations_planning_mission_planning_and_execution: () => import("../data/training_modules/training_sub_modules/war_strategy/card_decks/special_operations_planning/mission_planning_and_execution.json")
 };
+
+export const totalCardDecks = Object.keys(cardDeckPaths).length;

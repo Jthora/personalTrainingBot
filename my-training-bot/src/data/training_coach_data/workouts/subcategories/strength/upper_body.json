@@ -1,0 +1,188 @@
+{
+    "sub_workout_group": [
+        {
+            "name": "Beginner Upper Body Strength Routine",
+            "description": "A foundational routine to build upper body strength and stability.",
+            "sub_workouts": [
+                {
+                    "name": "Push-Ups",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Low",
+                    "description": "Perform slow and controlled push-ups with full range of motion.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Dumbbell Shoulder Press",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Low",
+                    "description": "Press dumbbells overhead while keeping a controlled motion.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Lat Pulldown",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Low",
+                    "description": "Engage the lats and pull the bar down with control.",
+                    "difficulty_range": [2, 5]
+                },
+                {
+                    "name": "Seated Row",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Low",
+                    "description": "Strengthen the upper back by pulling the handle toward your torso.",
+                    "difficulty_range": [2, 5]
+                },
+                {
+                    "name": "Bicep Curls",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Low",
+                    "description": "Perform controlled curls to develop arm strength.",
+                    "difficulty_range": [1, 3]
+                }
+            ]
+        },
+        {
+            "name": "Upper Body Strength & Hypertrophy Routine",
+            "description": "A routine designed to build muscle and strength in the chest, shoulders, and arms.",
+            "sub_workouts": [
+                {
+                    "name": "Bench Press",
+                    "duration": "4 sets of 8 reps",
+                    "intensity": "Moderate",
+                    "description": "Lift moderate-to-heavy weight with controlled tempo.",
+                    "difficulty_range": [5, 9]
+                },
+                {
+                    "name": "Pull-Ups",
+                    "duration": "4 sets of 8 reps",
+                    "intensity": "Moderate",
+                    "description": "Perform strict pull-ups focusing on lat activation.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Dumbbell Arnold Press",
+                    "duration": "4 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Rotate the dumbbells through the press for full shoulder engagement.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Face Pulls",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Moderate",
+                    "description": "Use a cable or resistance band to strengthen the rear delts and traps.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Incline Dumbbell Curls",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Moderate",
+                    "description": "Focus on full range of motion to maximize bicep activation.",
+                    "difficulty_range": [5, 8]
+                }
+            ]
+        },
+        {
+            "name": "Explosive Upper Body Power Routine",
+            "description": "A workout focusing on speed, explosiveness, and fast-twitch muscle activation.",
+            "sub_workouts": [
+                {
+                    "name": "Speed Bench Press",
+                    "duration": "6 sets of 3 reps",
+                    "intensity": "High",
+                    "description": "Press the bar with explosive force from the chest.",
+                    "difficulty_range": [8, 12]
+                },
+                {
+                    "name": "Medicine Ball Slams",
+                    "duration": "4 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Slam a medicine ball into the ground as fast as possible.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Clap Push-Ups",
+                    "duration": "4 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Perform push-ups with an explosive clap at the top.",
+                    "difficulty_range": [7, 11]
+                },
+                {
+                    "name": "Seated Explosive Shoulder Press",
+                    "duration": "4 sets of 6 reps",
+                    "intensity": "High",
+                    "description": "Press dumbbells overhead as quickly as possible with controlled form.",
+                    "difficulty_range": [8, 12]
+                },
+                {
+                    "name": "Kettlebell Swings",
+                    "duration": "4 sets of 15 reps",
+                    "intensity": "High",
+                    "description": "Use an explosive hip drive to swing the kettlebell overhead.",
+                    "difficulty_range": [8, 12]
+                }
+            ]
+        },
+        {
+            "name": "Functional Upper Body Strength Routine",
+            "description": "A workout designed to improve real-world upper body strength and mobility.",
+            "sub_workouts": [
+                {
+                    "name": "Farmer’s Carry",
+                    "duration": "3 sets of 30 meters",
+                    "intensity": "Moderate",
+                    "description": "Walk with heavy dumbbells or kettlebells while maintaining posture.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Rope Climbs",
+                    "duration": "3 sets of 2 climbs",
+                    "intensity": "High",
+                    "description": "Climb a rope using only upper body strength.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Landmine Press",
+                    "duration": "3 sets of 10 reps per arm",
+                    "intensity": "Moderate",
+                    "description": "Press a landmine barbell in a controlled manner to engage shoulders and core.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Parallel Bar Dips",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Perform controlled dips to target chest and triceps.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "One-Arm Dumbbell Snatch",
+                    "duration": "3 sets of 10 reps per side",
+                    "intensity": "High",
+                    "description": "Lift a dumbbell explosively from the ground to overhead in one motion.",
+                    "difficulty_range": [7, 10]
+                }
+            ]
+        },
+        {
+            "name": "Super Upper Body Strength Routine",
+            "description": "An advanced routine focused on achieving elite-level upper body strength.",
+            "sub_workouts": [
+                {
+                    "name": "Weighted Pull-Ups",
+                    "duration": "4 sets of 6 reps",
+                    "intensity": "Elite",
+                    "description": "Perform strict pull-ups with added weight.",
+                    "difficulty_range": [11, 15]
+                },
+                {
+                    "name": "One-Arm Push-Ups",
+                    "duration": "4 sets of 6 reps per arm",
+                    "intensity": "Elite",
+                    "description": "Perform push-ups on one arm while maintaining core stability.",
+                    "difficulty_range": [11, 15]
+                }
+            ]
+        }
+    ]
+}

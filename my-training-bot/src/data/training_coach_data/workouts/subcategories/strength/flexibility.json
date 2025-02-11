@@ -1,0 +1,237 @@
+{
+    "sub_workout_group": [
+        {
+            "name": "Beginner Flexibility Routine",
+            "description": "Basic stretches and mobility work to improve flexibility and prevent stiffness.",
+            "sub_workouts": [
+                {
+                    "name": "Standing Forward Fold",
+                    "duration": "30 seconds",
+                    "intensity": "Low",
+                    "description": "Bend at the hips and reach toward your toes while keeping your legs straight.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Cat-Cow Stretch",
+                    "duration": "30 seconds",
+                    "intensity": "Low",
+                    "description": "Move between arching and rounding your back to increase spinal flexibility.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Seated Butterfly Stretch",
+                    "duration": "30 seconds",
+                    "intensity": "Low",
+                    "description": "Sit with the soles of your feet together and gently press your knees toward the floor.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Wall Shoulder Stretch",
+                    "duration": "30 seconds per side",
+                    "intensity": "Low",
+                    "description": "Place your hand against a wall and slowly turn away to stretch the chest and shoulder.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Hip Flexor Stretch",
+                    "duration": "30 seconds per leg",
+                    "intensity": "Low",
+                    "description": "Step one foot forward into a lunge and gently push your hips forward.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Neck Stretch",
+                    "duration": "30 seconds per side",
+                    "intensity": "Low",
+                    "description": "Gently tilt your head to one side, bringing your ear toward your shoulder.",
+                    "difficulty_range": [1, 3]
+                }
+            ]
+        },
+        {
+            "name": "Intermediate Flexibility Routine",
+            "description": "Moderate stretches and mobility work to enhance flexibility and range of motion.",
+            "sub_workouts": [
+                {
+                    "name": "Pigeon Pose",
+                    "duration": "30 seconds per side",
+                    "intensity": "Moderate",
+                    "description": "Bring one leg forward and extend the other leg back to stretch the hips and glutes.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Cobra Stretch",
+                    "duration": "30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Lie on your stomach and push up with your hands to stretch the front of your body.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Lateral Side Bend",
+                    "duration": "30 seconds per side",
+                    "intensity": "Moderate",
+                    "description": "Stand tall and reach one arm overhead while bending to the opposite side.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Hamstring Stretch with Strap",
+                    "duration": "30 seconds per leg",
+                    "intensity": "Moderate",
+                    "description": "Use a strap or towel to pull one leg toward you while keeping it straight.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Child's Pose with Side Stretch",
+                    "duration": "30 seconds per side",
+                    "intensity": "Moderate",
+                    "description": "In Child's Pose, reach one arm out to the side to stretch the lats and shoulders.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Standing Quad Stretch",
+                    "duration": "30 seconds per leg",
+                    "intensity": "Moderate",
+                    "description": "Stand on one leg and pull the opposite foot toward your glutes to stretch the quads.",
+                    "difficulty_range": [4, 6]
+                }
+            ]
+        },
+        {
+            "name": "Advanced Flexibility & Strength Routine",
+            "description": "Combining static and active flexibility to improve mobility and muscular control.",
+            "sub_workouts": [
+                {
+                    "name": "Standing Leg Hold",
+                    "duration": "30 seconds per leg",
+                    "intensity": "Moderate",
+                    "description": "Lift one leg in front of you and hold it as high as possible while maintaining balance.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Bridge Hold",
+                    "duration": "30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Lift your hips off the ground and hold a strong bridge position.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Seated Forward Fold with Weight",
+                    "duration": "30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Hold a light weight while folding forward to increase hamstring flexibility.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Deep Cossack Squats",
+                    "duration": "30 seconds per leg",
+                    "intensity": "Moderate",
+                    "description": "Shift your weight from side to side in a deep lateral squat.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Thoracic Spine Twists",
+                    "duration": "30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Sit in a deep squat and rotate your torso, opening the chest toward the ceiling.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Loaded Shoulder Stretch",
+                    "duration": "30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Hold a resistance band or weight overhead while slowly stretching the shoulders.",
+                    "difficulty_range": [6, 9]
+                }
+            ]
+        },
+        {
+            "name": "Elite Flexibility Routine",
+            "description": "Advanced flexibility training to achieve extreme ranges of motion and control.",
+            "sub_workouts": [
+                {
+                    "name": "Full Split Hold",
+                    "duration": "60 seconds per leg",
+                    "intensity": "High",
+                    "description": "Achieve a full split and hold the position to increase flexibility.",
+                    "difficulty_range": [8, 12]
+                },
+                {
+                    "name": "Backbend with Leg Extension",
+                    "duration": "60 seconds",
+                    "intensity": "High",
+                    "description": "Perform a deep backbend while extending one leg for added difficulty.",
+                    "difficulty_range": [9, 13]
+                },
+                {
+                    "name": "Overhead Squat Hold",
+                    "duration": "60 seconds",
+                    "intensity": "High",
+                    "description": "Hold a squat position with arms extended overhead to improve hip and shoulder flexibility.",
+                    "difficulty_range": [8, 12]
+                },
+                {
+                    "name": "Cossack Squat with Reach",
+                    "duration": "60 seconds per side",
+                    "intensity": "High",
+                    "description": "Perform a deep lateral squat while reaching toward the floor for added stretch.",
+                    "difficulty_range": [9, 13]
+                },
+                {
+                    "name": "Weighted Forward Fold",
+                    "duration": "60 seconds",
+                    "intensity": "High",
+                    "description": "Hold a weight while folding forward to increase hamstring flexibility.",
+                    "difficulty_range": [9, 13]
+                }
+            ]
+        },
+        {
+            "name": "Super Flexibility Routine",
+            "description": "Elite-level flexibility training designed for maximum mobility, strength, and control.",
+            "sub_workouts": [
+                {
+                    "name": "Pancake Stretch with Weighted Reach",
+                    "duration": "60 seconds",
+                    "intensity": "Elite",
+                    "description": "Sit with legs wide apart and use a weight to deepen the forward fold.",
+                    "difficulty_range": [10, 14]
+                },
+                {
+                    "name": "Hanging Splits",
+                    "duration": "60 seconds per leg",
+                    "intensity": "Elite",
+                    "description": "Support yourself on a bar and slowly lower into a split.",
+                    "difficulty_range": [11, 15]
+                },
+                {
+                    "name": "Standing Needle Hold",
+                    "duration": "30 seconds per leg",
+                    "intensity": "Elite",
+                    "description": "Lift one leg overhead while standing, requiring extreme balance and flexibility.",
+                    "difficulty_range": [11, 15]
+                },
+                {
+                    "name": "Extreme Backbend Hold",
+                    "duration": "60 seconds",
+                    "intensity": "Elite",
+                    "description": "Perform a deep backbend and hold the position with control.",
+                    "difficulty_range": [10, 14]
+                },
+                {
+                    "name": "Planche with Shoulder Stretch",
+                    "duration": "30 seconds",
+                    "intensity": "Superhuman",
+                    "description": "Hold a planche position while engaging a deep shoulder stretch.",
+                    "difficulty_range": [12, 15]
+                },
+                {
+                    "name": "Overhead Weighted Pike Stretch",
+                    "duration": "60 seconds",
+                    "intensity": "Elite",
+                    "description": "Hold a weight overhead while bending into a deep pike stretch, requiring hamstring and shoulder mobility.",
+                    "difficulty_range": [11, 14]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "sub_workout_group": [
+        {
+            "name": "Visualization",
+            "description": "Improve mental imagery skills to enhance performance, decision-making, and goal-setting.",
+            "sub_workouts": [
+                {
+                    "name": "Success Visualization",
+                    "duration": "10 minutes",
+                    "intensity": "Low",
+                    "description": "Mentally rehearse yourself successfully achieving a goal or performing a task.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Mental Walkthrough",
+                    "duration": "15 minutes",
+                    "intensity": "Moderate",
+                    "description": "Imagine yourself going through a complex scenario step by step with precision.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Speed Visualization Drill",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Quickly visualize a scenario and make rapid mental adjustments to reactions.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Sensory Amplification",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Visualize with extreme detail—sounds, textures, emotions—to enhance memory and performance.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Future Self Projection",
+                    "duration": "20 minutes",
+                    "intensity": "High",
+                    "description": "Visualize and embody the best version of yourself in full detail.",
+                    "difficulty_range": [5, 7]
+                }
+            ]
+        },
+        {
+            "name": "Advanced Visualization Training",
+            "description": "Train the mind to create hyper-detailed mental images that enhance cognitive function and performance.",
+            "sub_workouts": [
+                {
+                    "name": "Multisensory Visualization",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Visualize a scenario while engaging all five senses in full detail.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "4D Mental Projection",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Visualize an environment from multiple perspectives (top-down, side view, first-person).",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "High-Speed Mental Simulation",
+                    "duration": "10 minutes",
+                    "intensity": "Elite",
+                    "description": "Rapidly run through multiple scenarios in sequence, training for split-second adaptability.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Precision Mental Rehearsal",
+                    "duration": "20 minutes",
+                    "intensity": "Elite",
+                    "description": "Perform complex tasks in your mind with exact precision and timing before executing them in reality.",
+                    "difficulty_range": [9, 10]
+                }
+            ]
+        },
+        {
+            "name": "Psi Visualization Techniques",
+            "description": "Project thoughtforms, generate hyper-realistic mental imagery, and explore dimensional overlays.",
+            "sub_workouts": [
+                {
+                    "name": "Projected Astral Sight",
+                    "duration": "30 minutes",
+                    "intensity": "Psi-Tier",
+                    "description": "Extend visualization beyond the physical body, seeing in multi-layered energetic overlays.",
+                    "difficulty_range": [9, 11, 13]
+                },
+                {
+                    "name": "Tesseract Perception Training",
+                    "duration": "40 minutes",
+                    "intensity": "Psi-Mastery",
+                    "description": "Visualize and manipulate fourth-dimensional structures, breaking traditional spatial limitations.",
+                    "difficulty_range": [10, 12, 14]
+                },
+                {
+                    "name": "Psi-Symbol Encoding",
+                    "duration": "45 minutes",
+                    "intensity": "Psi-Tier",
+                    "description": "Imprint mental symbols into your consciousness for advanced subconscious programming.",
+                    "difficulty_range": [11, 13, 15]
+                },
+                {
+                    "name": "Dimensional Layer Synchronization",
+                    "duration": "60 minutes",
+                    "intensity": "Psi-Mastery",
+                    "description": "Align your consciousness with multiple dimensional overlays, creating an expanded perception matrix.",
+                    "difficulty_range": [12, 14, 16]
+                }
+            ]
+        }
+    ]
+}

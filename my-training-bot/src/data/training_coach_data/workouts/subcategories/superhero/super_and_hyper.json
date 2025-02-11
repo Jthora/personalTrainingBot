@@ -1,0 +1,185 @@
+{
+    "sub_workout_group": [
+        {
+            "name": "Superhero Strength & Power Mastery",
+            "description": "Brutal strength training designed for extreme power output—lifting cars, smashing obstacles, and taking on massive forces.",
+            "sub_workouts": [
+                {
+                    "name": "Car Lift & Flip",
+                    "duration": "4 sets of 2 reps",
+                    "intensity": "Hyper",
+                    "description": "Lift and flip a small car (~2,500 lbs) using raw lower-body and grip strength.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Meteor Punch Training",
+                    "duration": "5 sets of 10 reps",
+                    "intensity": "Hyper",
+                    "description": "Strike reinforced steel blocks or impact-resistant bags to condition knuckles and maximize force output.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Giant Robot Grappling",
+                    "duration": "Timed Event",
+                    "intensity": "Hyper",
+                    "description": "Wrestle with a heavy, moving resistance dummy (~600 lbs) simulating combat against large opponents.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "One-Arm Car Drag",
+                    "duration": "3 sets of 20 meters",
+                    "intensity": "Hyper",
+                    "description": "Drag a full-sized vehicle (~3,000 lbs) using a single arm to simulate superhuman pulling strength.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Steel Beam Carry",
+                    "duration": "Timed Event",
+                    "intensity": "Hyper",
+                    "description": "Carry a long steel beam (~500 lbs) across a simulated battlefield, preparing for massive load-bearing feats.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Asteroid Destruction Punch",
+                    "duration": "4 sets of 5 reps",
+                    "intensity": "Hyper",
+                    "description": "Perform full-force hammer punches on reinforced concrete blocks to simulate planetary-level destruction.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Titanic Deadlifts",
+                    "duration": "3 sets of 2 reps",
+                    "intensity": "Hyper",
+                    "description": "Deadlift over **1,500 lbs** for max raw strength gains.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Shockwave Stomp",
+                    "duration": "4 sets of 6 reps",
+                    "intensity": "Hyper",
+                    "description": "Leap and land with explosive force, creating a high-impact ground shockwave effect.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Superhero Landing Endurance",
+                    "duration": "5 sets of 5 reps",
+                    "intensity": "Hyper",
+                    "description": "Drop from a **20+ foot height**, absorbing impact through controlled deceleration and tensed muscles.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Airplane Tow Sprint",
+                    "duration": "3 sets of 15 meters",
+                    "intensity": "Hyper",
+                    "description": "Pull an aircraft (small private jet) using a full-body harness sprint for ultimate power conditioning.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Concrete Punching Power",
+                    "duration": "5 sets of 10 reps",
+                    "intensity": "Hyper",
+                    "description": "Break concrete blocks using precision force to train impact durability.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Explosive Steel Door Smash",
+                    "duration": "4 sets of 3 reps",
+                    "intensity": "Hyper",
+                    "description": "Charge into and break through reinforced steel doors using full-body kinetic force.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Weighted Hero Sprint",
+                    "duration": "3 sets of 100 meters",
+                    "intensity": "Hyper",
+                    "description": "Sprint at **maximum speed** while carrying over **200+ lbs** on the shoulders.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Power Pole Vault Over Buildings",
+                    "duration": "3 sets of 3 reps",
+                    "intensity": "Hyper",
+                    "description": "Vault over high obstacles (~15+ feet) using raw explosive leg power and pole-assisted propulsion.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Train Track Resisting Hold",
+                    "duration": "Timed Challenge",
+                    "intensity": "Hyper",
+                    "description": "Hold back a rolling heavy-weight sled (~1,000 lbs) for as long as possible to simulate stopping a train.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Super Speed Reaction Slams",
+                    "duration": "5 sets of 10 reps",
+                    "intensity": "Hyper",
+                    "description": "React to random objects falling and slam them away before they hit the ground.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Catapult Toss",
+                    "duration": "5 sets of 5 reps",
+                    "intensity": "Hyper",
+                    "description": "Throw a **300+ lb** object with explosive full-body strength.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Mega Jump Acceleration",
+                    "duration": "4 sets of 6 reps",
+                    "intensity": "Hyper",
+                    "description": "Perform consecutive high jumps (~10+ feet) with rapid reloading in between.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Ground Pound Shockwave",
+                    "duration": "5 sets of 3 reps",
+                    "intensity": "Hyper",
+                    "description": "Leap and smash both fists into the ground, maximizing force dispersion.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "One-Arm Pole Hang with Weighted Suit",
+                    "duration": "Timed Hold",
+                    "intensity": "Hyper",
+                    "description": "Hold onto a single bar or pole **with one arm** while carrying an additional **150+ lbs**.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Giant Chain Breakout",
+                    "duration": "5 attempts",
+                    "intensity": "Hyper",
+                    "description": "Break out of reinforced chains using **raw muscle power and tension control**.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Tectonic Plate Press",
+                    "duration": "4 sets of 6 reps",
+                    "intensity": "Hyper",
+                    "description": "Perform maximum-effort leg presses with over **2,000+ lbs** for extreme power conditioning.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Human-Sized Boulder Toss",
+                    "duration": "3 sets of 3 reps",
+                    "intensity": "Hyper",
+                    "description": "Lift and throw a **600+ lb** boulder over a **10-foot** barrier.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Titan Grip Hanging Hold",
+                    "duration": "Timed Hold",
+                    "intensity": "Hyper",
+                    "description": "Hang from a moving structure (crane, helicopter, or shifting platform) while maintaining control.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Building Leap Training",
+                    "duration": "4 sets of 3 reps",
+                    "intensity": "Hyper",
+                    "description": "Jump from one rooftop to another (~20 feet apart) with precise landing control.",
+                    "difficulty_range": [15, 16]
+                }
+            ]
+        }
+    ]
+}

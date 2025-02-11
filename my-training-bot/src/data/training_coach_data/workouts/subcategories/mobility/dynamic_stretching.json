@@ -1,0 +1,259 @@
+{
+    "sub_workout_group": [
+        {
+            "name": "Beginner Level Dynamic Stretching",
+            "description": "Improve mobility, flexibility, and movement range with beginner-friendly dynamic stretches.",
+            "sub_workouts": [
+                {
+                    "name": "Arm Circles",
+                    "duration": "30 seconds",
+                    "intensity": "Low",
+                    "description": "Rotate your arms in small, controlled circles, gradually increasing the size.",
+                    "difficulty_range": [1, 2]
+                },
+                {
+                    "name": "Leg Swings (Front to Back)",
+                    "duration": "30 seconds per leg",
+                    "intensity": "Low",
+                    "description": "Swing one leg forward and backward in a controlled motion to loosen the hips.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Torso Twists",
+                    "duration": "30 seconds",
+                    "intensity": "Low",
+                    "description": "Stand with feet shoulder-width apart and rotate your torso side to side gently.",
+                    "difficulty_range": [1, 2]
+                },
+                {
+                    "name": "Knee Raises",
+                    "duration": "30 seconds",
+                    "intensity": "Low",
+                    "description": "March in place while bringing your knees up to waist level.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Shoulder Rolls",
+                    "duration": "30 seconds",
+                    "intensity": "Low",
+                    "description": "Roll your shoulders forward and backward in smooth, controlled motions.",
+                    "difficulty_range": [1, 2]
+                },
+                {
+                    "name": "Side Lunges",
+                    "duration": "30 seconds",
+                    "intensity": "Low",
+                    "description": "Step to the side and shift your weight, stretching the inner thigh dynamically.",
+                    "difficulty_range": [2, 3]
+                },
+                {
+                    "name": "Ankle Circles",
+                    "duration": "30 seconds per ankle",
+                    "intensity": "Low",
+                    "description": "Rotate your ankle in circles, first clockwise, then counterclockwise.",
+                    "difficulty_range": [1, 2]
+                },
+                {
+                    "name": "Hip Circles",
+                    "duration": "30 seconds",
+                    "intensity": "Low",
+                    "description": "Stand with feet apart and rotate your hips in large circles.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Heel-to-Toe Walk",
+                    "duration": "30 seconds",
+                    "intensity": "Low",
+                    "description": "Walk forward in a straight line, placing each foot heel-to-toe to improve balance and flexibility.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Standing Side Bends",
+                    "duration": "30 seconds",
+                    "intensity": "Low",
+                    "description": "Lean side to side, stretching your obliques while keeping movement fluid.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Toe Touch Walks",
+                    "duration": "30 seconds",
+                    "intensity": "Low",
+                    "description": "Walk forward while reaching to touch your toes with each step.",
+                    "difficulty_range": [2, 3]
+                },
+                {
+                    "name": "Wrist Circles",
+                    "duration": "30 seconds",
+                    "intensity": "Low",
+                    "description": "Gently rotate your wrists in circular motions to improve mobility.",
+                    "difficulty_range": [1, 2]
+                },
+                {
+                    "name": "Quadriceps Pull",
+                    "duration": "30 seconds per leg",
+                    "intensity": "Low",
+                    "description": "While walking, pull your ankle toward your glutes, stretching the quadriceps dynamically.",
+                    "difficulty_range": [2, 3]
+                },
+                {
+                    "name": "Neck Rolls",
+                    "duration": "30 seconds",
+                    "intensity": "Low",
+                    "description": "Slowly roll your head in a circular motion to release neck tension.",
+                    "difficulty_range": [1, 2]
+                }
+            ]
+        },
+        {
+            "name": "Mid-Level Dynamic Stretching",
+            "description": "More complex mobility drills to enhance flexibility, stability, and coordination.",
+            "sub_workouts": [
+                {
+                    "name": "High-Knee Pulls",
+                    "duration": "30 seconds per leg",
+                    "intensity": "Moderate",
+                    "description": "Pull your knee to your chest while balancing on the opposite leg.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Lateral Leg Swings",
+                    "duration": "30 seconds per leg",
+                    "intensity": "Moderate",
+                    "description": "Swing your leg side-to-side to open up hip mobility.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Dynamic Lunge Twists",
+                    "duration": "30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Perform forward lunges while twisting your torso over the front leg.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Scorpion Kicks",
+                    "duration": "30 seconds per side",
+                    "intensity": "Moderate",
+                    "description": "Lay on your stomach and reach one foot over your body toward the opposite hand.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "World’s Greatest Stretch",
+                    "duration": "30 seconds per side",
+                    "intensity": "Moderate",
+                    "description": "A deep lunge stretch with one arm reaching to the sky, opening up hips and thoracic spine.",
+                    "difficulty_range": [5, 6]
+                },
+                {
+                    "name": "Spinal Wave Rolls",
+                    "duration": "30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Roll your spine from head to tailbone in a fluid motion.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Pigeon Walks",
+                    "duration": "30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Move forward in a pigeon pose stretch, alternating legs to mobilize hips.",
+                    "difficulty_range": [4, 6]
+                }
+            ]
+        },
+        {
+            "name": "Advanced Dynamic Stretching",
+            "description": "High-level dynamic stretching movements for increased mobility and flexibility.",
+            "sub_workouts": [
+                {
+                    "name": "Explosive Cossack Squats",
+                    "duration": "30 seconds per side",
+                    "intensity": "High",
+                    "description": "Perform deep side squats with explosive transitions between legs.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Jumping Lunge Twists",
+                    "duration": "30 seconds",
+                    "intensity": "High",
+                    "description": "Perform lunges with a jump transition while twisting the torso dynamically.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "Frog Squat to Stand",
+                    "duration": "30 seconds",
+                    "intensity": "High",
+                    "description": "Squat deep into a frog stance, then push into a full standing stretch.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "Dynamic Bridge Kickovers",
+                    "duration": "30 seconds per side",
+                    "intensity": "High",
+                    "description": "Push into a bridge and kick one leg over to land into a lunge position.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Rolling Shoulder Stretch",
+                    "duration": "30 seconds",
+                    "intensity": "High",
+                    "description": "Roll forward into a shoulder stretch and smoothly transition between positions.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "Split Walks",
+                    "duration": "30 seconds",
+                    "intensity": "High",
+                    "description": "Walk forward in a split position, alternating legs to increase hamstring flexibility.",
+                    "difficulty_range": [8, 10]
+                }
+            ]
+        },
+        {
+            "name": "Super Dynamic Stretching",
+            "description": "Extreme flexibility, agility, and power movements for elite mobility training.",
+            "sub_workouts": [
+                {
+                    "name": "Aerial Pike Kicks",
+                    "duration": "30 seconds",
+                    "intensity": "Elite",
+                    "description": "Explosively kick your legs into a pike stretch mid-air before landing.",
+                    "difficulty_range": [8, 12]
+                },
+                {
+                    "name": "Planche Walks",
+                    "duration": "30 seconds",
+                    "intensity": "Elite",
+                    "description": "Hold a planche position while stepping forward with your hands.",
+                    "difficulty_range": [9, 14]
+                },
+                {
+                    "name": "Dragon Pistol Squats",
+                    "duration": "30 seconds per side",
+                    "intensity": "Elite",
+                    "description": "Perform a pistol squat with the opposite leg wrapping behind the standing leg.",
+                    "difficulty_range": [8, 13]
+                },
+                {
+                    "name": "Reverse Bridge Rollouts",
+                    "duration": "30 seconds",
+                    "intensity": "Elite",
+                    "description": "Roll from a full bridge position into a standing stretch seamlessly.",
+                    "difficulty_range": [9, 14]
+                },
+                {
+                    "name": "Explosive Handstand Push-off",
+                    "duration": "30 seconds",
+                    "intensity": "Elite",
+                    "description": "Push off the floor dynamically from a handstand and transition smoothly into another movement.",
+                    "difficulty_range": [10, 15]
+                },
+                {
+                    "name": "Dynamic Van Damme Splits",
+                    "duration": "30 seconds",
+                    "intensity": "Superhuman",
+                    "description": "Perform split jumps, landing with feet further apart each time to increase range.",
+                    "difficulty_range": [10, 15]
+                }
+            ]
+        }
+    ]
+}

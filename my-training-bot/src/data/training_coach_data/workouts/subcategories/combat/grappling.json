@@ -1,0 +1,178 @@
+{
+    "sub_workout_groups": [
+        {
+            "name": "Ground Fighting Fundamentals",
+            "description": "Grappling with weighted resistance, roll recovery.",
+            "sub_workouts": [
+                {
+                    "name": "Basic Grappling",
+                    "duration": "5 minutes",
+                    "intensity": "High",
+                    "description": "Practice basic grappling techniques.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Weighted Resistance Drills",
+                    "duration": "5 minutes",
+                    "intensity": "High",
+                    "description": "Practice grappling with weighted resistance.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Roll Recovery",
+                    "duration": "5 minutes",
+                    "intensity": "High",
+                    "description": "Practice roll recovery techniques.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Grappling with Sparring",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Practice grappling with sparring.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Grappling with Sparring and Weighted Resistance",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Practice grappling with sparring and weighted resistance.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Weighted Vest Grappling with Sparring and Weighted Resistance",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Practice weighted vest grappling with sparring and weighted resistance.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Grappling with Blindfold",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Practice grappling techniques while blindfolded to enhance spatial awareness.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Grappling with One Arm",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Practice grappling techniques using only one arm to improve adaptability.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Grappling with Resistance Bands",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Practice grappling techniques with resistance bands to build strength.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Grappling with Partner Switching",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Practice grappling techniques with frequent partner switching to improve versatility.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Grappling with Obstacle Course",
+                    "duration": "20 minutes",
+                    "intensity": "High",
+                    "description": "Practice grappling techniques while navigating an obstacle course to enhance agility.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Grappling with Weighted Vest",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Practice grappling techniques while wearing a weighted vest to increase endurance.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Grappling with Sandbags",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Practice grappling techniques with sandbags to simulate real-life resistance.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Grappling with Multiple Opponents",
+                    "duration": "20 minutes",
+                    "intensity": "High",
+                    "description": "Practice grappling techniques against multiple opponents to improve defensive skills.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Grappling with Limited Vision",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Practice grappling techniques with limited vision to enhance reaction time.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Grappling with Tactical Gear",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Practice grappling techniques while wearing tactical gear to simulate real-world scenarios.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Grappling with Weighted Vest and Blindfold",
+                    "duration": "20 minutes",
+                    "intensity": "High",
+                    "description": "Practice grappling techniques while wearing a weighted vest and blindfolded to enhance spatial awareness and strength.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Grappling with Multiple Opponents and Resistance Bands",
+                    "duration": "25 minutes",
+                    "intensity": "High",
+                    "description": "Practice grappling techniques against multiple opponents with resistance bands to improve defensive skills and strength.",
+                    "difficulty_range": [9, 11]
+                },
+                {
+                    "name": "Grappling with Tactical Gear and Weighted Vest",
+                    "duration": "30 minutes",
+                    "intensity": "High",
+                    "description": "Practice grappling techniques while wearing tactical gear and a weighted vest to simulate real-world scenarios.",
+                    "difficulty_range": [10, 12]
+                },
+                {
+                    "name": "Grappling with Limited Vision and Multiple Opponents",
+                    "duration": "20 minutes",
+                    "intensity": "High",
+                    "description": "Practice grappling techniques with limited vision against multiple opponents to enhance reaction time and defensive skills.",
+                    "difficulty_range": [11, 13]
+                },
+                {
+                    "name": "Grappling with Obstacle Course and Weighted Vest",
+                    "duration": "25 minutes",
+                    "intensity": "High",
+                    "description": "Practice grappling techniques while navigating an obstacle course and wearing a weighted vest to enhance agility and endurance.",
+                    "difficulty_range": [12, 14]
+                },
+                {
+                    "name": "Grappling with Sandbags and Blindfold",
+                    "duration": "20 minutes",
+                    "intensity": "High",
+                    "description": "Practice grappling techniques with sandbags while blindfolded to simulate real-life resistance and enhance spatial awareness.",
+                    "difficulty_range": [13, 15]
+                },
+                {
+                    "name": "Grappling with Tactical Gear and Resistance Bands",
+                    "duration": "30 minutes",
+                    "intensity": "High",
+                    "description": "Practice grappling techniques while wearing tactical gear and using resistance bands to simulate real-world scenarios and build strength.",
+                    "difficulty_range": [14, 16]
+                },
+                {
+                    "name": "Grappling with Multiple Opponents and Tactical Gear",
+                    "duration": "30 minutes",
+                    "intensity": "High",
+                    "description": "Practice grappling techniques against multiple opponents while wearing tactical gear to improve defensive skills and simulate real-world scenarios.",
+                    "difficulty_range": [10, 16]
+                }
+            ]
+        }
+    ]
+}

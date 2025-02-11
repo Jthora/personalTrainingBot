@@ -1,0 +1,148 @@
+{
+    "sub_workout_group": [
+        {
+            "name": "Beginner Foam Rolling",
+            "description": "Basic foam rolling techniques for muscle relaxation and improved mobility.",
+            "sub_workouts": [
+                {
+                    "name": "Back Roll",
+                    "duration": "30 seconds",
+                    "intensity": "Low",
+                    "description": "Roll gently along your upper and mid-back to release tension.",
+                    "difficulty_range": [1, 2]
+                },
+                {
+                    "name": "Calf Roll",
+                    "duration": "30 seconds per leg",
+                    "intensity": "Low",
+                    "description": "Roll from the ankle to just below the knee to loosen the calf muscles.",
+                    "difficulty_range": [1, 2]
+                },
+                {
+                    "name": "Quad Roll",
+                    "duration": "30 seconds per leg",
+                    "intensity": "Low",
+                    "description": "Lie face down and roll from the hip to the knee to release tight quads.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Hamstring Roll",
+                    "duration": "30 seconds per leg",
+                    "intensity": "Low",
+                    "description": "Sit with the foam roller under your hamstrings and roll gently from knee to hip.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Glute Roll",
+                    "duration": "30 seconds per side",
+                    "intensity": "Low",
+                    "description": "Sit on the foam roller and roll back and forth to relieve glute tightness.",
+                    "difficulty_range": [2, 3]
+                },
+                {
+                    "name": "IT Band Roll",
+                    "duration": "30 seconds per side",
+                    "intensity": "Low",
+                    "description": "Roll along the outside of the thigh to target the IT band.",
+                    "difficulty_range": [2, 3]
+                }
+            ]
+        },
+        {
+            "name": "Recovery & Deep Tissue Foam Rolling",
+            "description": "More advanced foam rolling techniques to break up deep muscle knots and improve recovery.",
+            "sub_workouts": [
+                {
+                    "name": "Thoracic Extension Roll",
+                    "duration": "30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Roll slowly on the upper back while pausing to extend over the foam roller.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Lateral Quad Roll",
+                    "duration": "30 seconds per leg",
+                    "intensity": "Moderate",
+                    "description": "Roll at an angle across the quads to release deeper tension.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Glute Trigger Point Release",
+                    "duration": "30 seconds per side",
+                    "intensity": "Moderate",
+                    "description": "Use slow movements and pause on tight spots to release glute knots.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Adductor Roll",
+                    "duration": "30 seconds per leg",
+                    "intensity": "Moderate",
+                    "description": "Lie on your stomach and roll along the inside of the thigh for deep tissue release.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Lower Back Release",
+                    "duration": "30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Roll gently along the lower back, avoiding excess pressure on the spine.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Chest & Shoulder Opener",
+                    "duration": "30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Lay on the foam roller lengthwise and let arms fall open to stretch the chest and shoulders.",
+                    "difficulty_range": [4, 6]
+                }
+            ]
+        },
+        {
+            "name": "Performance & Mobility Foam Rolling",
+            "description": "High-level foam rolling techniques designed to improve movement efficiency and prevent injuries.",
+            "sub_workouts": [
+                {
+                    "name": "Rolling Plank Challenge",
+                    "duration": "30 seconds",
+                    "intensity": "High",
+                    "description": "Hold a plank position while rolling the foam roller under different muscle groups.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "Advanced IT Band Release",
+                    "duration": "30 seconds per leg",
+                    "intensity": "High",
+                    "description": "Use small, controlled rolls and hold on tight trigger points to increase mobility.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Active Hip Opener",
+                    "duration": "30 seconds per leg",
+                    "intensity": "High",
+                    "description": "Roll deep into the hip flexors while performing active mobility drills.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Single-Leg Foam Roller Balance",
+                    "duration": "30 seconds per side",
+                    "intensity": "High",
+                    "description": "Balance on one foot while rolling the other leg to improve stability and mobility.",
+                    "difficulty_range": [9, 11]
+                },
+                {
+                    "name": "Dynamic Thoracic Mobilization",
+                    "duration": "30 seconds",
+                    "intensity": "High",
+                    "description": "Roll through the upper back while actively reaching overhead for full thoracic expansion.",
+                    "difficulty_range": [9, 11]
+                },
+                {
+                    "name": "Explosive Foam Rolling Transitions",
+                    "duration": "30 seconds",
+                    "intensity": "Elite",
+                    "description": "Move rapidly between different rolling positions, integrating core stability and control.",
+                    "difficulty_range": [10, 12]
+                }
+            ]
+        }
+    ]
+}

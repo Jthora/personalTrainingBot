@@ -1,0 +1,10 @@
+{
+    "name": "Coordination",
+    "description": "Coordination exercises to improve hand-eye and foot-eye coordination, balance, and reaction time.",
+    "subcategories": {
+        "hand_eye": "hand_eye.json",
+        "foot_eye": "foot_eye.json",
+        "balance": "balance.json",
+        "reaction_time": "reaction_time.json"
+    }
+}

@@ -1,0 +1,106 @@
+{
+    "sub_workout_groups": [
+        {
+            "name": "Basic Single-Leg Balance Exercises",
+            "description": "Beginner single-leg balance exercises.",
+            "sub_workouts": [
+                {
+                    "name": "Single-Leg Stand",
+                    "duration": "1 minute",
+                    "intensity": "Low",
+                    "description": "Stand on one leg for 1 minute.",
+                    "difficulty_range": [0, 2]
+                },
+                {
+                    "name": "Single-Leg Squat",
+                    "duration": "1 minute",
+                    "intensity": "Low",
+                    "description": "Perform single-leg squats for 1 minute on each leg.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Single-Leg Deadlift",
+                    "duration": "2 minutes",
+                    "intensity": "Low",
+                    "description": "Perform single-leg deadlifts for 2 minutes.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Single-Leg Calf Raise",
+                    "duration": "2 minutes",
+                    "intensity": "Low",
+                    "description": "Perform single-leg calf raises for 2 minutes.",
+                    "difficulty_range": [0, 2]
+                }
+            ]
+        },
+        {
+            "name": "Single-Leg Balance Exercises",
+            "description": "Exercises to improve balance and stability on one leg.",
+            "sub_workouts": [
+                {
+                    "name": "Single-Leg Stand",
+                    "duration": "1 minute",
+                    "intensity": "Moderate",
+                    "description": "Stand on one leg for 1 minute.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Single-Leg Squat",
+                    "duration": "1 minute",
+                    "intensity": "Moderate",
+                    "description": "Perform single-leg squats for 1 minute on each leg.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Single-Leg Deadlift",
+                    "duration": "2 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform single-leg deadlifts for 2 minutes.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Single-Leg Calf Raise",
+                    "duration": "2 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform single-leg calf raises for 2 minutes.",
+                    "difficulty_range": [1, 3]
+                }
+            ]
+        },
+        {
+            "name": "Advanced Single-Leg Balance",
+            "description": "Single-leg balance exercises for advanced levels.",
+            "sub_workouts": [
+                {
+                    "name": "Single-Leg Stand with Eyes Closed",
+                    "duration": "1 minute",
+                    "intensity": "Moderate",
+                    "description": "Stand on one leg with eyes closed for 1 minute.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Single-Leg Squat with Reach",
+                    "duration": "1 minute",
+                    "intensity": "Moderate",
+                    "description": "Perform single-leg squats with reach for 1 minute on each leg.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "Single-Leg Deadlift with Twist",
+                    "duration": "2 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform single-leg deadlifts with twist for 2 minutes.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Single-Leg Calf Raise with Hold",
+                    "duration": "2 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform single-leg calf raises with hold for 2 minutes.",
+                    "difficulty_range": [7, 9]
+                }
+            ]
+        }
+    ]
+}

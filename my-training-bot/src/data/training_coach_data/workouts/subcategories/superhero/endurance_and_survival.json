@@ -1,0 +1,206 @@
+{
+    "sub_workout_group": [
+        {
+            "name": "Super Endurance & Survival Conditioning",
+            "description": "Develop ultra-endurance, resilience, and survival capability in extreme conditions.",
+            "sub_workouts": [
+                {
+                    "name": "Ultra-Distance Running",
+                    "duration": "10+ miles",
+                    "intensity": "Super",
+                    "description": "Run extreme distances at competitive speeds with no rest.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Extreme Temperature Training",
+                    "duration": "30-minute exposure",
+                    "intensity": "Hyper",
+                    "description": "Train in sub-zero or extreme heat conditions without protective clothing.",
+                    "difficulty_range": [14, 16]
+                },
+                {
+                    "name": "Submersion Breath Holding",
+                    "duration": "Timed Event",
+                    "intensity": "Super",
+                    "description": "Hold breath underwater for extended durations under stress.",
+                    "difficulty_range": [13, 15]
+                },
+                {
+                    "name": "Load-Bearing Mountain Climb",
+                    "duration": "Multi-hour event",
+                    "intensity": "Super",
+                    "description": "Climb a steep mountain with 150+ lbs of gear.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Full Gear Weighted Ruck March",
+                    "duration": "20+ miles",
+                    "intensity": "Hyper",
+                    "description": "March long distances with 100+ lbs of gear, no stops.",
+                    "difficulty_range": [14, 16]
+                },
+                {
+                    "name": "Desert Heat Endurance Test",
+                    "duration": "Timed Event",
+                    "intensity": "Super",
+                    "description": "Survive high-temperature exertion without excessive hydration.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Frozen Water Submersion Test",
+                    "duration": "10-minute immersion",
+                    "intensity": "Hyper",
+                    "description": "Stay submerged in near-freezing water to train cold resistance.",
+                    "difficulty_range": [14, 16]
+                },
+                {
+                    "name": "Combat Endurance Sprint Drill",
+                    "duration": "10 sets of 50 meters",
+                    "intensity": "Super",
+                    "description": "Sprint between cover points in a combat scenario under extreme fatigue.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Survival Fire & Shelter Drill",
+                    "duration": "Timed Challenge",
+                    "intensity": "Super",
+                    "description": "Build a survival shelter and fire in a harsh environment with minimal tools.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "24-Hour Sleep Deprivation Challenge",
+                    "duration": "24 hours",
+                    "intensity": "Hyper",
+                    "description": "Operate at full capacity without sleep, completing survival and endurance tasks.",
+                    "difficulty_range": [14, 16]
+                },
+                {
+                    "name": "Underwater Navigation Course",
+                    "duration": "Timed Event",
+                    "intensity": "Super",
+                    "description": "Navigate an underwater course while breath-holding and avoiding obstacles.",
+                    "difficulty_range": [13, 15]
+                },
+                {
+                    "name": "Jungle Survival Training",
+                    "duration": "3-Day Solo",
+                    "intensity": "Hyper",
+                    "description": "Survive in the jungle with only a knife and basic gear.",
+                    "difficulty_range": [14, 16]
+                },
+                {
+                    "name": "Frozen Cliffside Climb",
+                    "duration": "Timed Event",
+                    "intensity": "Super",
+                    "description": "Climb an icy mountain face with minimal gear.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Hyperoxia Breath Training",
+                    "duration": "Timed Event",
+                    "intensity": "Hyper",
+                    "description": "Train oxygen efficiency by controlling breath cycles under stress.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Fasted Ultra-Endurance Challenge",
+                    "duration": "Multi-hour",
+                    "intensity": "Hyper",
+                    "description": "Complete high-intensity physical challenges while in a fasted state.",
+                    "difficulty_range": [14, 16]
+                },
+                {
+                    "name": "Cold Water Endurance Swim",
+                    "duration": "Timed Event",
+                    "intensity": "Super",
+                    "description": "Swim for extended distances in frigid waters with minimal gear.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Super Long-Distance Sand Dune Sprint",
+                    "duration": "Timed Event",
+                    "intensity": "Super",
+                    "description": "Sprint over deep sand dunes for miles, testing stamina and footwork.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Urban Survival & Evasion",
+                    "duration": "Timed Challenge",
+                    "intensity": "Hyper",
+                    "description": "Survive and evade capture in a simulated urban environment for 48 hours.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Full Submersion Ice Survival",
+                    "duration": "Timed Event",
+                    "intensity": "Hyper",
+                    "description": "Survive in an ice-cold water immersion scenario, maintaining core temperature control.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Cave Diving Endurance",
+                    "duration": "Timed Event",
+                    "intensity": "Super",
+                    "description": "Swim through an underwater cave system with breath-hold segments.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Tundra Expedition Endurance",
+                    "duration": "Multi-hour trek",
+                    "intensity": "Hyper",
+                    "description": "Travel across arctic terrain with minimal supplies.",
+                    "difficulty_range": [14, 16]
+                },
+                {
+                    "name": "Torrential Rain Trail Run",
+                    "duration": "Timed Event",
+                    "intensity": "Super",
+                    "description": "Run through rough jungle terrain during a heavy downpour, maintaining speed and balance.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Volcanic Heat Resistance Training",
+                    "duration": "Timed Challenge",
+                    "intensity": "Hyper",
+                    "description": "Train in extreme geothermal heat zones to adapt to high temperatures.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Underground Tunnel Escape",
+                    "duration": "Timed Challenge",
+                    "intensity": "Super",
+                    "description": "Escape a pitch-black underground tunnel system with limited oxygen supply.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Tree-to-Tree Canopy Traverse",
+                    "duration": "Timed Event",
+                    "intensity": "Super",
+                    "description": "Navigate a dense jungle canopy using only tree branches and rope systems.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Desert Night Navigation",
+                    "duration": "Timed Challenge",
+                    "intensity": "Hyper",
+                    "description": "Travel across an open desert at night without GPS, using only celestial navigation.",
+                    "difficulty_range": [14, 16]
+                },
+                {
+                    "name": "Marathon Portage Test",
+                    "duration": "26+ miles",
+                    "intensity": "Hyper",
+                    "description": "Carry a 75+ lb object for marathon distance over varied terrain.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Mountain Descent Free Climb",
+                    "duration": "Timed Challenge",
+                    "intensity": "Hyper",
+                    "description": "Descend a steep mountain with no ropes, testing control and foot placement.",
+                    "difficulty_range": [15, 16]
+                }
+            ]
+        }
+    ]
+}

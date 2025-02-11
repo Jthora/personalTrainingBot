@@ -1,0 +1,142 @@
+{
+    "sub_workout_group": [
+        {
+            "name": "Jo Staff Techniques Training",
+            "description": "Specific techniques for Jo staff training.",
+            "sub_workouts": [
+                {
+                    "name": "Tsuki (Thrust)",
+                    "duration": "5 minutes",
+                    "intensity": "Moderate",
+                    "description": "Practice the Tsuki thrust technique for 5 minutes.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Uchi (Strike)",
+                    "duration": "5 minutes",
+                    "intensity": "Moderate",
+                    "description": "Practice the Uchi strike technique for 5 minutes.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Hiki Otoshi (Dropping Strike)",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Practice the Hiki Otoshi dropping strike technique for 10 minutes.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Kaeshi Waza (Counter Techniques)",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Practice Kaeshi Waza counter techniques for 15 minutes.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Mawari Waza (Spinning Techniques)",
+                    "duration": "20 minutes",
+                    "intensity": "High",
+                    "description": "Practice Mawari Waza spinning techniques for 20 minutes.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Kuzushi (Breaking Balance)",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Practice Kuzushi breaking balance techniques for 10 minutes.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Kuzushi with Sparring",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Practice Kuzushi breaking balance techniques with sparring for 15 minutes.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Kuzushi with Sparring and Resistance Bands",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Practice Kuzushi breaking balance techniques with sparring and resistance bands for 15 minutes.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Weighted Vest Kuzushi with Sparring",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Practice Kuzushi breaking balance techniques with weighted vest and sparring for 15 minutes.",
+                    "difficulty_range": [6, 8]
+                }
+            ]
+        },
+        {
+            "name": "Advanced Jo Staff Techniques",
+            "description": "Advanced techniques for Jo staff training.",
+            "sub_workouts": [
+                {
+                    "name": "Muso Gamae (Ready Stance)",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Practice Muso Gamae ready stance technique for 10 minutes.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Kaiten Nage (Rotational Throw)",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Practice Kaiten Nage rotational throw technique for 15 minutes.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Sankyo (Third Control)",
+                    "duration": "20 minutes",
+                    "intensity": "High",
+                    "description": "Practice Sankyo third control technique for 20 minutes.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Irimi Nage (Entering Throw)",
+                    "duration": "20 minutes",
+                    "intensity": "High",
+                    "description": "Practice Irimi Nage entering throw technique for 20 minutes.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Shiho Nage (Four-Direction Throw)",
+                    "duration": "20 minutes",
+                    "intensity": "High",
+                    "description": "Practice Shiho Nage four-direction throw technique for 20 minutes.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "Kokyu Nage (Breath Throw)",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Practice Kokyu Nage breath throw technique for 15 minutes.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Kote Gaeshi (Wrist Twist)",
+                    "duration": "20 minutes",
+                    "intensity": "High",
+                    "description": "Practice Kote Gaeshi wrist twist technique for 20 minutes.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Tenkan (Pivoting)",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Practice Tenkan pivoting technique for 15 minutes.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Ushiro Waza (Rear Techniques)",
+                    "duration": "20 minutes",
+                    "intensity": "High",
+                    "description": "Practice Ushiro Waza rear techniques for 20 minutes.",
+                    "difficulty_range": [7, 9]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,432 @@
+{
+    "sub_workout_group": [
+        {
+            "name": "Jo Staff Basic Spins",
+            "description": "Fundamental spinning techniques to build coordination and control.",
+            "sub_workouts": [
+                {
+                    "name": "Basic Forward Spin",
+                    "duration": "5 minutes",
+                    "intensity": "Moderate",
+                    "description": "Practice continuous forward spinning motion for coordination and hand control.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Basic Reverse Spin",
+                    "duration": "5 minutes",
+                    "intensity": "Moderate",
+                    "description": "Practice continuous reverse spinning motion for improved dexterity.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Alternating Forward & Reverse Spin",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Switch between forward and reverse spinning smoothly without losing control.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Palm Roll Spin",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform spins with palm rolling transitions for fluidity and control.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Short Forward Spin",
+                    "duration": "3 minutes",
+                    "intensity": "Low",
+                    "description": "Practice continuous forward spinning motion for coordination and hand control.",
+                    "difficulty_range": [1, 2]
+                },
+                {
+                    "name": "Extended Forward Spin",
+                    "duration": "15 minutes",
+                    "intensity": "Moderate",
+                    "description": "Practice continuous forward spinning motion for extended duration.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Short Reverse Spin",
+                    "duration": "3 minutes",
+                    "intensity": "Low",
+                    "description": "Practice continuous reverse spinning motion for improved dexterity.",
+                    "difficulty_range": [1, 2]
+                },
+                {
+                    "name": "Extended Reverse Spin",
+                    "duration": "15 minutes",
+                    "intensity": "Moderate",
+                    "description": "Practice continuous reverse spinning motion for extended duration.",
+                    "difficulty_range": [2, 4]
+                }
+            ]
+        },
+        {
+            "name": "Jo Staff Advanced Spins",
+            "description": "More complex spinning techniques that enhance control, fluidity, and movement.",
+            "sub_workouts": [
+                {
+                    "name": "Overhead Spin",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Spin the Jo staff overhead in a controlled motion, maintaining speed and balance.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Low Guard Spin",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Practice spinning at a low guard position for defensive applications.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Behind-the-Back Spin",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Pass the Jo staff behind your back while maintaining continuous spin motion.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "One-Handed Spin",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Control and spin the Jo staff with one hand, switching between hands smoothly.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Figure-Eight Spin",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Perform continuous figure-eight motions to maximize control and flow.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Short Overhead Spin",
+                    "duration": "5 minutes",
+                    "intensity": "High",
+                    "description": "Spin the Jo staff overhead in a controlled motion, maintaining speed and balance.",
+                    "difficulty_range": [4, 5]
+                }
+            ]
+        },
+        {
+            "name": "Jo Staff Special Spins",
+            "description": "High-speed spinning techniques for specialized application.",
+            "sub_workouts": [
+                {
+                    "name": "Aerial Spin (Throw & Catch)",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Practice controlled tosses and spins, catching the staff while maintaining flow.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Continuous Wrist Roll Spin",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Perform wrist roll spins continuously for enhanced dexterity and fluid motion.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "High-Speed Combat Spin",
+                    "duration": "20 minutes",
+                    "intensity": "Elite",
+                    "description": "Perform rapid, high-speed spinning techniques applicable for combat engagements.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "Double Staff Spin",
+                    "duration": "20 minutes",
+                    "intensity": "Elite",
+                    "description": "Practice spinning two Jo staffs simultaneously for enhanced coordination and control.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Reverse Grip Spin",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Perform spins using a reverse grip for improved versatility and control.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "360 Degree Spin",
+                    "duration": "20 minutes",
+                    "intensity": "Elite",
+                    "description": "Practice full 360-degree spins for maximum control and fluidity.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Spin with Footwork",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Combine spinning techniques with dynamic footwork for enhanced agility.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "Spin with Strikes",
+                    "duration": "20 minutes",
+                    "intensity": "Elite",
+                    "description": "Integrate spinning techniques with striking motions for practical combat application.",
+                    "difficulty_range": [8, 10]
+                }
+            ]
+        },
+        {
+            "name": "Jo Staff Dance Spins",
+            "description": "Dance-inspired spinning techniques to enhance fluidity and rhythm.",
+            "sub_workouts": [
+                {
+                    "name": "Basic Dance Spin",
+                    "duration": "5 minutes",
+                    "intensity": "Moderate",
+                    "description": "Practice basic dance-inspired spins to build rhythm and fluidity.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Intermediate Dance Spin",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform intermediate dance-inspired spins to enhance coordination.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Advanced Dance Spin",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Practice advanced dance-inspired spins for improved control and fluidity.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Dance Spin with Footwork",
+                    "duration": "20 minutes",
+                    "intensity": "High",
+                    "description": "Combine dance-inspired spins with dynamic footwork for enhanced agility.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Dance Spin with Strikes",
+                    "duration": "20 minutes",
+                    "intensity": "High",
+                    "description": "Integrate dance-inspired spins with striking motions for practical application.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Double Staff Dance Spin",
+                    "duration": "20 minutes",
+                    "intensity": "Elite",
+                    "description": "Practice spinning two Jo staffs simultaneously with dance-inspired movements.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Reverse Grip Dance Spin",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Perform dance-inspired spins using a reverse grip for improved versatility.",
+                    "difficulty_range": [4, 10]
+                },
+                {
+                    "name": "360 Degree Dance Spin",
+                    "duration": "20 minutes",
+                    "intensity": "Elite",
+                    "description": "Practice full 360-degree dance-inspired spins for maximum control and fluidity.",
+                    "difficulty_range": [4, 11]
+                },
+                {
+                    "name": "Dance Spin with Aerials",
+                    "duration": "20 minutes",
+                    "intensity": "Elite",
+                    "description": "Combine dance-inspired spins with aerial tosses and catches for advanced coordination.",
+                    "difficulty_range": [4, 12]
+                },
+                {
+                    "name": "Elite Spin Staff Dance Combat",
+                    "duration": "5 minutes",
+                    "intensity": "Elite",
+                    "description": "Perform a complex routine combining various dance-inspired spins and techniques.",
+                    "difficulty_range": [6, 11]
+                },
+                {
+                    "name": "Elite Spin Staff Dance Combat",
+                    "duration": "10 minutes",
+                    "intensity": "Elite",
+                    "description": "Perform a complex routine combining various dance-inspired spins and techniques.",
+                    "difficulty_range": [7, 12]
+                },
+                {
+                    "name": "Elite Spin Staff Dance Combat",
+                    "duration": "20 minutes",
+                    "intensity": "Elite",
+                    "description": "Perform a complex routine combining various dance-inspired spins and techniques.",
+                    "difficulty_range": [9, 13]
+                },
+                {
+                    "name": "Elite Spin Staff Dance Combat",
+                    "duration": "30 minutes",
+                    "intensity": "Elite",
+                    "description": "Perform a complex routine combining various dance-inspired spins and techniques.",
+                    "difficulty_range": [10, 13]
+                }
+            ]
+        },
+        {
+            "name": "Jo Staff Hand-Eye Unique Techniques",
+            "description": "Unique techniques to enhance Jo staff hand-eye coordination.",
+            "sub_workouts": [
+                {
+                    "name": "Basic Toss and Catch",
+                    "duration": "5 minutes",
+                    "intensity": "Low",
+                    "description": "Toss the Jo staff and catch it to improve hand-eye coordination.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Spin and Catch",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Spin the Jo staff and catch it to enhance coordination and control.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "One-Handed Toss and Catch",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Toss and catch the Jo staff with one hand to improve dexterity.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Toss and Catch with Movement",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Toss the Jo staff and catch it while moving to enhance agility and coordination.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Spin and Catch with Footwork",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Combine spinning and catching the Jo staff with dynamic footwork.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Toss and Catch with Partner",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Toss the Jo staff to a partner and catch it to improve coordination and teamwork.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Advanced Toss and Catch",
+                    "duration": "20 minutes",
+                    "intensity": "High",
+                    "description": "Perform advanced toss and catch techniques to enhance hand-eye coordination.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Toss and Catch with Blindfold",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Toss and catch the Jo staff while blindfolded to improve spatial awareness.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "Spin and Catch with Partner",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Combine spinning and catching the Jo staff with a partner for advanced coordination.",
+                    "difficulty_range": [6, 8]
+                }
+            ]
+        },
+        {
+            "name": "Jo Staff Advanced Hand-Eye Skill Sequences",
+            "description": "Complex multi-move sequences to challenge and enhance Jo staff hand-eye coordination.",
+            "sub_workouts": [
+                {
+                    "name": "Spin and Strike Sequence",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Perform a sequence combining spins and strikes to improve coordination and control.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Toss, Spin, and Catch Sequence",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Execute a sequence involving tossing, spinning, and catching the Jo staff.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Footwork and Spin Sequence",
+                    "duration": "20 minutes",
+                    "intensity": "High",
+                    "description": "Combine dynamic footwork with spinning techniques in a complex sequence.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "Aerial Spin and Catch Sequence",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Perform a sequence involving aerial spins and catches to enhance hand-eye coordination.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Reverse Grip Spin and Strike Sequence",
+                    "duration": "20 minutes",
+                    "intensity": "Elite",
+                    "description": "Execute a sequence combining reverse grip spins and strikes for advanced control.",
+                    "difficulty_range": [9, 11]
+                },
+                {
+                    "name": "360 Degree Spin and Strike Sequence",
+                    "duration": "20 minutes",
+                    "intensity": "Elite",
+                    "description": "Perform a full 360-degree spin followed by a strike in a challenging sequence.",
+                    "difficulty_range": [10, 12]
+                },
+                {
+                    "name": "Double Staff Spin and Catch Sequence",
+                    "duration": "20 minutes",
+                    "intensity": "Elite",
+                    "description": "Practice a sequence involving spinning and catching two Jo staffs simultaneously.",
+                    "difficulty_range": [11, 13]
+                },
+                {
+                    "name": "Kicky Flips, Spin, Strike, and Footwork Sequence",
+                    "duration": "25 minutes",
+                    "intensity": "Elite",
+                    "description": "Combine spins, strikes, and dynamic footwork in a complex sequence.",
+                    "difficulty_range": [12, 14]
+                },
+                {
+                    "name": "Short Spin and Strike Sequence",
+                    "duration": "5 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform a short sequence combining spins and strikes to improve coordination.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Short Toss, Spin, and Catch Sequence",
+                    "duration": "5 minutes",
+                    "intensity": "Moderate",
+                    "description": "Execute a short sequence involving tossing, spinning, and catching the Jo staff.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Short Footwork and Spin Sequence",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Combine dynamic footwork with spinning techniques in a short sequence.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Short Aerial Spin and Catch Sequence",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Perform a short sequence involving aerial spins and catches to enhance hand-eye coordination.",
+                    "difficulty_range": [6, 8]
+                }
+            ]
+        }
+    ]
+}

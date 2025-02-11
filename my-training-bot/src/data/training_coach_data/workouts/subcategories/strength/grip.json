@@ -1,0 +1,188 @@
+{
+    "sub_workout_group": [
+        {
+            "name": "Beginner Grip Endurance Routine",
+            "description": "Basic grip-strengthening exercises to build endurance and foundational hand strength.",
+            "sub_workouts": [
+                {
+                    "name": "Dead Hang",
+                    "duration": "30 seconds",
+                    "intensity": "Low",
+                    "description": "Hang from a pull-up bar with a relaxed grip to build endurance.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Wrist Curls",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Low",
+                    "description": "Use light dumbbells to strengthen the wrist flexors.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Finger Extensions",
+                    "duration": "3 sets of 15 reps",
+                    "intensity": "Low",
+                    "description": "Use a rubber band around your fingers and extend outward to strengthen extensor muscles.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Plate Pinch Hold",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "Low",
+                    "description": "Pinch a light weight plate with your fingers to develop grip endurance.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Towel Grip Hold",
+                    "duration": "30 seconds",
+                    "intensity": "Low",
+                    "description": "Wrap a towel around a pull-up bar and hang from it to improve finger strength.",
+                    "difficulty_range": [2, 4]
+                }
+            ]
+        },
+        {
+            "name": "Crushing Grip Strength Routine",
+            "description": "Intermediate grip exercises focusing on crushing strength, necessary for heavy lifting and sports performance.",
+            "sub_workouts": [
+                {
+                    "name": "Heavy Dead Hangs",
+                    "duration": "4 sets of 30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Hold onto a bar with added weight using a weighted vest or belt.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Gripper Crush Holds",
+                    "duration": "3 sets of 15 reps",
+                    "intensity": "Moderate",
+                    "description": "Use a hand gripper to strengthen your crushing grip.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Farmer’s Walk",
+                    "duration": "4 sets of 40 seconds",
+                    "intensity": "Moderate",
+                    "description": "Carry heavy dumbbells or kettlebells while walking to engage forearm and grip strength.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Thick Bar Holds",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "Moderate",
+                    "description": "Hold onto a thick barbell or use thick grips to challenge forearm muscles.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Pull-Up Bar Hang with Towel Grip",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Wrap a towel around a pull-up bar and grip it tightly while hanging.",
+                    "difficulty_range": [5, 8]
+                }
+            ]
+        },
+        {
+            "name": "Pinch Grip Power Routine",
+            "description": "A specialized grip workout focused on pinching strength, useful for lifting, climbing, and combat sports.",
+            "sub_workouts": [
+                {
+                    "name": "Plate Pinch Deadlifts",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Lift a pair of plates pinched together to increase pinch grip power.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Block Weight Lifts",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Grip and lift a block-shaped object like a brick or a thick piece of metal.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Pinch Grip Holds",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "High",
+                    "description": "Hold onto a weighted plate using only finger strength.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Thumb Pinch Presses",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Pinch a heavy object between the thumb and fingers and press it upward.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "One-Handed Plate Pinch Lift",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Lift a heavy plate with one hand using only your fingertips.",
+                    "difficulty_range": [7, 10]
+                }
+            ]
+        },
+        {
+            "name": "Wrist & Forearm Strength Routine",
+            "description": "A grip workout designed to improve wrist stability and forearm endurance for lifting and combat sports.",
+            "sub_workouts": [
+                {
+                    "name": "Reverse Wrist Curls",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Curl a barbell or dumbbell with your palms facing downward.",
+                    "difficulty_range": [6, 10]
+                },
+                {
+                    "name": "Hammer Curls",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Perform curls with a neutral grip to target the forearm flexors.",
+                    "difficulty_range": [7, 11]
+                },
+                {
+                    "name": "Rice Bucket Finger Curls",
+                    "duration": "3 sets of 20 reps",
+                    "intensity": "High",
+                    "description": "Dig fingers into a bucket of rice and curl them for resistance.",
+                    "difficulty_range": [7, 12]
+                },
+                {
+                    "name": "Wrist Roller",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Roll up and down a weight using a wrist roller tool.",
+                    "difficulty_range": [7, 12]
+                },
+                {
+                    "name": "Barbell Finger Rolls",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Let a barbell roll to your fingertips and curl it back up.",
+                    "difficulty_range": [6, 11]
+                }
+            ]
+        },
+        {
+            "name": "Super Grip Strength Routine",
+            "description": "Elite grip training for maximum hand and forearm strength, suited for athletes and strength competitors.",
+            "sub_workouts": [
+                {
+                    "name": "Rolling Thunder Deadlifts",
+                    "duration": "4 sets of 6 reps",
+                    "intensity": "Elite",
+                    "description": "Use a thick rotating handle to perform deadlifts and test crushing grip power.",
+                    "difficulty_range": [12, 15]
+                },
+                {
+                    "name": "One-Finger Dead Hangs",
+                    "duration": "4 sets of 15 seconds",
+                    "intensity": "Elite",
+                    "description": "Hang from a bar using only one finger per hand.",
+                    "difficulty_range": [13, 15]
+                }
+            ]
+        }
+    ]
+}

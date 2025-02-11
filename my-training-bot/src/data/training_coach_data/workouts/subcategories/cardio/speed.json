@@ -1,0 +1,594 @@
+{
+    "sub_workout_groups": [
+        {
+            "name": "High-Intensity Speed Drills",
+            "description": "Short bursts of sprinting.",
+            "sub_workouts": [
+                {
+                    "name": "10-second sprints",
+                    "duration": "10 seconds",
+                    "intensity": "High",
+                    "description": "Sprint at full speed for 10 seconds.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "20-second sprints",
+                    "duration": "20 seconds",
+                    "intensity": "High",
+                    "description": "Sprint at full speed for 20 seconds.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "30-second sprints",
+                    "duration": "30 seconds",
+                    "intensity": "High",
+                    "description": "Sprint at full speed for 30 seconds.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "40-second sprints",
+                    "duration": "40 seconds",
+                    "intensity": "High",
+                    "description": "Sprint at full speed for 40 seconds.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "50-second sprints",
+                    "duration": "50 seconds",
+                    "intensity": "High",
+                    "description": "Sprint at full speed for 50 seconds.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "1-minute sprints",
+                    "duration": "1 minute",
+                    "intensity": "High",
+                    "description": "Sprint at full speed for 1 minute.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "1.5-minute sprints",
+                    "duration": "1.5 minutes",
+                    "intensity": "High",
+                    "description": "Sprint at full speed for 1.5 minutes.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "2-minute sprints",
+                    "duration": "2 minutes",
+                    "intensity": "High",
+                    "description": "Sprint at full speed for 2 minutes.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "3-minute sprints",
+                    "duration": "3 minutes",
+                    "intensity": "High",
+                    "description": "Sprint at full speed for 3 minutes.",
+                    "difficulty_range": [9, 11]
+                },
+                {
+                    "name": "4-minute sprints",
+                    "duration": "4 minutes",
+                    "intensity": "High",
+                    "description": "Sprint at full speed for 4 minutes.",
+                    "difficulty_range": [10, 12]
+                },
+                {
+                    "name": "5-minute sprints",
+                    "duration": "5 minutes",
+                    "intensity": "High",
+                    "description": "Sprint at full speed for 5 minutes.",
+                    "difficulty_range": [11, 13]
+                },
+                {
+                    "name": "6-minute sprints",
+                    "duration": "6 minutes",
+                    "intensity": "High",
+                    "description": "Sprint at full speed for 6 minutes.",
+                    "difficulty_range": [12, 14]
+                },
+                {
+                    "name": "7-minute sprints",
+                    "duration": "7 minutes",
+                    "intensity": "High",
+                    "description": "Sprint at full speed for 7 minutes.",
+                    "difficulty_range": [13, 15]
+                },
+                {
+                    "name": "8-minute sprints",
+                    "duration": "8 minutes",
+                    "intensity": "High",
+                    "description": "Sprint at full speed for 8 minutes.",
+                    "difficulty_range": [14, 16]
+                },
+                {
+                    "name": "9-minute sprints",
+                    "duration": "9 minutes",
+                    "intensity": "High",
+                    "description": "Sprint at full speed for 9 minutes.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "10-minute sprints",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Sprint at full speed for 10 minutes.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "15-second sprints",
+                    "duration": "15 seconds",
+                    "intensity": "High",
+                    "description": "Sprint at full speed for 15 seconds.",
+                    "difficulty_range": [1, 4]
+                },
+                {
+                    "name": "25-second sprints",
+                    "duration": "25 seconds",
+                    "intensity": "High",
+                    "description": "Sprint at full speed for 25 seconds.",
+                    "difficulty_range": [2, 5]
+                },
+                {
+                    "name": "35-second sprints",
+                    "duration": "35 seconds",
+                    "intensity": "High",
+                    "description": "Sprint at full speed for 35 seconds.",
+                    "difficulty_range": [3, 6]
+                },
+                {
+                    "name": "45-second sprints",
+                    "duration": "45 seconds",
+                    "intensity": "High",
+                    "description": "Sprint at full speed for 45 seconds.",
+                    "difficulty_range": [4, 7]
+                }
+            ]
+        },
+        {
+            "name": "Jump Rope Intervals",
+            "description": "High-intensity jump rope sessions to improve cardiovascular health.",
+            "sub_workouts": [
+                {
+                    "name": "30-second intervals",
+                    "duration": "30 seconds",
+                    "intensity": "High",
+                    "description": "Jump rope at high intensity for 30 seconds.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "1-minute intervals",
+                    "duration": "1 minute",
+                    "intensity": "High",
+                    "description": "Jump rope at high intensity for 1 minute.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "2-minute intervals",
+                    "duration": "2 minutes",
+                    "intensity": "High",
+                    "description": "Jump rope at high intensity for 2 minutes.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "3-minute intervals",
+                    "duration": "3 minutes",
+                    "intensity": "High",
+                    "description": "Jump rope at high intensity for 3 minutes.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "4-minute intervals",
+                    "duration": "4 minutes",
+                    "intensity": "High",
+                    "description": "Jump rope at high intensity for 4 minutes.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "5-minute intervals",
+                    "duration": "5 minutes",
+                    "intensity": "High",
+                    "description": "Jump rope at high intensity for 5 minutes.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "6-minute intervals",
+                    "duration": "6 minutes",
+                    "intensity": "High",
+                    "description": "Jump rope at high intensity for 6 minutes.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "7-minute intervals",
+                    "duration": "7 minutes",
+                    "intensity": "High",
+                    "description": "Jump rope at high intensity for 7 minutes.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "8-minute intervals",
+                    "duration": "8 minutes",
+                    "intensity": "High",
+                    "description": "Jump rope at high intensity for 8 minutes.",
+                    "difficulty_range": [9, 11]
+                },
+                {
+                    "name": "9-minute intervals",
+                    "duration": "9 minutes",
+                    "intensity": "High",
+                    "description": "Jump rope at high intensity for 9 minutes.",
+                    "difficulty_range": [10, 12]
+                },
+                {
+                    "name": "10-minute intervals",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Jump rope at high intensity for 10 minutes.",
+                    "difficulty_range": [11, 13]
+                },
+                {
+                    "name": "15-second intervals",
+                    "duration": "15 seconds",
+                    "intensity": "High",
+                    "description": "Jump rope at high intensity for 15 seconds.",
+                    "difficulty_range": [1, 2]
+                },
+                {
+                    "name": "20-second intervals",
+                    "duration": "20 seconds",
+                    "intensity": "High",
+                    "description": "Jump rope at high intensity for 20 seconds.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "25-second intervals",
+                    "duration": "25 seconds",
+                    "intensity": "High",
+                    "description": "Jump rope at high intensity for 25 seconds.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "35-second intervals",
+                    "duration": "35 seconds",
+                    "intensity": "High",
+                    "description": "Jump rope at high intensity for 35 seconds.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "45-second intervals",
+                    "duration": "45 seconds",
+                    "intensity": "High",
+                    "description": "Jump rope at high intensity for 45 seconds.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "50-second intervals",
+                    "duration": "50 seconds",
+                    "intensity": "High",
+                    "description": "Jump rope at high intensity for 50 seconds.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "1.5-minute intervals",
+                    "duration": "1.5 minutes",
+                    "intensity": "High",
+                    "description": "Jump rope at high intensity for 1.5 minutes.",
+                    "difficulty_range": [2, 5]
+                },
+                {
+                    "name": "2.5-minute intervals",
+                    "duration": "2.5 minutes",
+                    "intensity": "High",
+                    "description": "Jump rope at high intensity for 2.5 minutes.",
+                    "difficulty_range": [3, 6]
+                },
+                {
+                    "name": "3.5-minute intervals",
+                    "duration": "3.5 minutes",
+                    "intensity": "High",
+                    "description": "Jump rope at high intensity for 3.5 minutes.",
+                    "difficulty_range": [4, 7]
+                }
+            ]
+        },
+        {
+            "name": "Hill Sprints",
+            "description": "Sprinting uphill to build strength and endurance.",
+            "sub_workouts": [
+                {
+                    "name": "10-second hill sprints",
+                    "duration": "10 seconds",
+                    "intensity": "High",
+                    "description": "Sprint uphill at full speed for 10 seconds.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "20-second hill sprints",
+                    "duration": "20 seconds",
+                    "intensity": "High",
+                    "description": "Sprint uphill at full speed for 20 seconds.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "30-second hill sprints",
+                    "duration": "30 seconds",
+                    "intensity": "High",
+                    "description": "Sprint uphill at full speed for 30 seconds.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "40-second hill sprints",
+                    "duration": "40 seconds",
+                    "intensity": "High",
+                    "description": "Sprint uphill at full speed for 40 seconds.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "50-second hill sprints",
+                    "duration": "50 seconds",
+                    "intensity": "High",
+                    "description": "Sprint uphill at full speed for 50 seconds.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "1-minute hill sprints",
+                    "duration": "1 minute",
+                    "intensity": "High",
+                    "description": "Sprint uphill at full speed for 1 minute.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "1.5-minute hill sprints",
+                    "duration": "1.5 minutes",
+                    "intensity": "High",
+                    "description": "Sprint uphill at full speed for 1.5 minutes.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "2-minute hill sprints",
+                    "duration": "2 minutes",
+                    "intensity": "High",
+                    "description": "Sprint uphill at full speed for 2 minutes.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "3-minute hill sprints",
+                    "duration": "3 minutes",
+                    "intensity": "High",
+                    "description": "Sprint uphill at full speed for 3 minutes.",
+                    "difficulty_range": [9, 11]
+                },
+                {
+                    "name": "4-minute hill sprints",
+                    "duration": "4 minutes",
+                    "intensity": "High",
+                    "description": "Sprint uphill at full speed for 4 minutes.",
+                    "difficulty_range": [10, 12]
+                }
+            ]
+        },
+        {
+            "name": "Stair Climbing Intervals",
+            "description": "High-intensity stair climbing to improve leg strength and cardiovascular health.",
+            "sub_workouts": [
+                {
+                    "name": "30-second stair climbs",
+                    "duration": "30 seconds",
+                    "intensity": "High",
+                    "description": "Climb stairs at high intensity for 30 seconds.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "1-minute stair climbs",
+                    "duration": "1 minute",
+                    "intensity": "High",
+                    "description": "Climb stairs at high intensity for 1 minute.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "2-minute stair climbs",
+                    "duration": "2 minutes",
+                    "intensity": "High",
+                    "description": "Climb stairs at high intensity for 2 minutes.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "3-minute stair climbs",
+                    "duration": "3 minutes",
+                    "intensity": "High",
+                    "description": "Climb stairs at high intensity for 3 minutes.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "4-minute stair climbs",
+                    "duration": "4 minutes",
+                    "intensity": "High",
+                    "description": "Climb stairs at high intensity for 4 minutes.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "5-minute stair climbs",
+                    "duration": "5 minutes",
+                    "intensity": "High",
+                    "description": "Climb stairs at high intensity for 5 minutes.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "6-minute stair climbs",
+                    "duration": "6 minutes",
+                    "intensity": "High",
+                    "description": "Climb stairs at high intensity for 6 minutes.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "7-minute stair climbs",
+                    "duration": "7 minutes",
+                    "intensity": "High",
+                    "description": "Climb stairs at high intensity for 7 minutes.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "8-minute stair climbs",
+                    "duration": "8 minutes",
+                    "intensity": "High",
+                    "description": "Climb stairs at high intensity for 8 minutes.",
+                    "difficulty_range": [9, 11]
+                },
+                {
+                    "name": "9-minute stair climbs",
+                    "duration": "9 minutes",
+                    "intensity": "High",
+                    "description": "Climb stairs at high intensity for 9 minutes.",
+                    "difficulty_range": [10, 12]
+                }
+            ]
+        },
+        {
+            "name": "Treadmill Sprints",
+            "description": "High-intensity treadmill running to improve speed and endurance.",
+            "sub_workouts": [
+                {
+                    "name": "30-Second Treadmill Sprints",
+                    "duration": "30 seconds",
+                    "intensity": "High",
+                    "speed": 3,
+                    "difficulty_range": [0, 1]
+                },
+                {
+                    "name": "1-Minute Treadmill Sprints",
+                    "duration": "1 minute",
+                    "intensity": "High",
+                    "speed": 3.5,
+                    "difficulty_range": [0, 2]
+                },
+                {
+                    "name": "3-Minute Treadmill Sprints",
+                    "duration": "3 minutes",
+                    "intensity": "High",
+                    "speed": 4,
+                    "difficulty_range": [0, 3]
+                },
+                {
+                    "name": "5-Minute Treadmill Sprints",
+                    "duration": "5 minutes",
+                    "intensity": "High",
+                    "speed": 5,
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "6-Minute Treadmill Sprints",
+                    "duration": "6 minutes",
+                    "intensity": "High",
+                    "speed": 5.2,
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "8-Minute Treadmill Sprints",
+                    "duration": "8 minutes",
+                    "intensity": "High",
+                    "speed": 5.5,
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "10-Minute Treadmill Sprints",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "speed": 5.8,
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "11-Minute Treadmill Sprints",
+                    "duration": "11 minutes",
+                    "intensity": "High",
+                    "speed": 6.0,
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "13-Minute Treadmill Sprints",
+                    "duration": "13 minutes",
+                    "intensity": "High",
+                    "speed": 6.2,
+                    "difficulty_range": [3, 4]
+                },
+                {
+                    "name": "15-Minute Treadmill Sprints",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "speed": 6.5,
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "16-Minute Treadmill Sprints",
+                    "duration": "16 minutes",
+                    "intensity": "High",
+                    "speed": 6.9,
+                    "difficulty_range": [3, 6]
+                },
+                {
+                    "name": "18-Minute Treadmill Sprints",
+                    "duration": "18 minutes",
+                    "intensity": "High",
+                    "speed": 7.3,
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "20-Minute Treadmill Sprints",
+                    "duration": "20 minutes",
+                    "intensity": "High",
+                    "speed": 7.6,
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "21-Minute Treadmill Sprints",
+                    "duration": "21 minutes",
+                    "intensity": "High",
+                    "speed": 7.9,
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "22-Minute Treadmill Sprints",
+                    "duration": "22 minutes",
+                    "intensity": "High",
+                    "speed": 8.2,
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "23-Minute Treadmill Sprints",
+                    "duration": "23 minutes",
+                    "intensity": "High",
+                    "speed": 8.0,
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "25-Minute Treadmill Sprints",
+                    "duration": "25 minutes",
+                    "intensity": "High",
+                    "speed": 8.1,
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "26-Minute Treadmill Sprints",
+                    "duration": "26 minutes",
+                    "intensity": "High",
+                    "speed": 8.3,
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "28-Minute Treadmill Sprints",
+                    "duration": "28 minutes",
+                    "intensity": "High",
+                    "speed": 8.5,
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "30-Minute Treadmill Sprints",
+                    "duration": "30 minutes",
+                    "intensity": "High",
+                    "speed": 8.7,
+                    "difficulty_range": [8, 11]
+                }
+            ]
+        }
+    ]
+}

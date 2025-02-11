@@ -1,0 +1,13 @@
+{
+    "name": "Agility",
+    "description": "Agility drills to improve quickness, balance, and coordination.",
+    "subcategories": {
+        "footwork":"footwork.json",
+        "jumping":"jumping.json",
+        "reaction":"reaction.json",
+        "weapon_handling":"weapon_handling.json",
+        "quickness": "quickness.json",
+        "change_of_direction": "change_of_direction.json",
+        "jo_staff_agility": "jo_staff_agility.json"
+    }
+}

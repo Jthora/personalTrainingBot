@@ -1,0 +1,169 @@
+{
+    "sub_workout_group": [
+        {
+            "name": "Beginner Static Stretching",
+            "description": "Basic static stretches to improve flexibility and mobility, ideal for beginners.",
+            "sub_workouts": [
+                {
+                    "name": "Standing Hamstring Stretch",
+                    "duration": "30 seconds per leg",
+                    "intensity": "Low",
+                    "description": "Bend at the hips and reach toward your toes while keeping your legs straight.",
+                    "difficulty_range": [1, 2]
+                },
+                {
+                    "name": "Seated Forward Fold",
+                    "duration": "30 seconds",
+                    "intensity": "Low",
+                    "description": "Sit with your legs extended and reach forward while keeping your back straight.",
+                    "difficulty_range": [1, 2]
+                },
+                {
+                    "name": "Quadriceps Stretch",
+                    "duration": "30 seconds per leg",
+                    "intensity": "Low",
+                    "description": "Stand on one leg, pull the opposite ankle toward your glutes, and hold the stretch.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Chest Stretch Against Wall",
+                    "duration": "30 seconds per side",
+                    "intensity": "Low",
+                    "description": "Place your hand against a wall and slowly turn your body away to stretch the chest.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Neck Side Stretch",
+                    "duration": "30 seconds per side",
+                    "intensity": "Low",
+                    "description": "Tilt your head to one side, bringing your ear toward your shoulder to stretch the neck.",
+                    "difficulty_range": [1, 4]
+                },
+                {
+                    "name": "Child’s Pose Stretch",
+                    "duration": "30 seconds",
+                    "intensity": "Low",
+                    "description": "Sit back on your heels and extend your arms forward, keeping your back straight.",
+                    "difficulty_range": [1, 4]
+                },
+                {
+                    "name": "Calf Stretch Against Wall",
+                    "duration": "30 seconds per leg",
+                    "intensity": "Low",
+                    "description": "Press your foot against a wall while keeping your heel down to stretch the calf muscles.",
+                    "difficulty_range": [1, 4]
+                }
+            ]
+        },
+        {
+            "name": "Advanced Static Stretching",
+            "description": "Deeper and more intense static stretches to improve flexibility and mobility.",
+            "sub_workouts": [
+                {
+                    "name": "Standing Wide-Leg Forward Fold",
+                    "duration": "45 seconds",
+                    "intensity": "Moderate",
+                    "description": "Stand with legs wide and fold forward, bringing hands to the ground.",
+                    "difficulty_range": [3, 6]
+                },
+                {
+                    "name": "Lying Glute Stretch",
+                    "duration": "45 seconds per leg",
+                    "intensity": "Moderate",
+                    "description": "Lie on your back, cross one ankle over the opposite knee, and pull the knee toward your chest.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Deep Lunge Hip Flexor Stretch",
+                    "duration": "45 seconds per side",
+                    "intensity": "Moderate",
+                    "description": "Sink into a deep lunge position, keeping your back leg extended for a hip flexor stretch.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Butterfly Stretch",
+                    "duration": "45 seconds",
+                    "intensity": "Moderate",
+                    "description": "Sit with your feet together and gently push your knees toward the floor.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Seated Side Stretch",
+                    "duration": "45 seconds per side",
+                    "intensity": "Moderate",
+                    "description": "Sit with legs extended and reach one arm over your head, stretching to the side.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Wall Chest & Shoulder Stretch",
+                    "duration": "45 seconds per side",
+                    "intensity": "Moderate",
+                    "description": "Stand facing a wall, place your hand against it, and turn your torso away to stretch the shoulder and chest.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Seated Frog Stretch",
+                    "duration": "45 seconds",
+                    "intensity": "Moderate",
+                    "description": "Sit with knees bent outward, pressing feet together, and lean forward to stretch the groin.",
+                    "difficulty_range": [5, 9]
+                }
+            ]
+        },
+        {
+            "name": "Super Static Stretching",
+            "description": "Elite static stretching for extreme flexibility, muscle elongation, and deep mobility work.",
+            "sub_workouts": [
+                {
+                    "name": "Full Pancake Stretch",
+                    "duration": "60 seconds",
+                    "intensity": "High",
+                    "description": "Sit with legs spread wide and fold forward, trying to bring your chest to the floor.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Wall Split Stretch",
+                    "duration": "60 seconds per side",
+                    "intensity": "High",
+                    "description": "Lie with one leg against the wall in a vertical split position, holding for deep flexibility gains.",
+                    "difficulty_range": [8, 11]
+                },
+                {
+                    "name": "Extreme Hip Opener Stretch",
+                    "duration": "60 seconds",
+                    "intensity": "High",
+                    "description": "Sink into a deep squat, press knees outward, and hold while keeping the chest upright.",
+                    "difficulty_range": [9, 11]
+                },
+                {
+                    "name": "Overhead Shoulder Stretch",
+                    "duration": "60 seconds",
+                    "intensity": "High",
+                    "description": "Hold a pole or towel overhead and stretch the shoulders backward into deep extension.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Front Split Hold",
+                    "duration": "60 seconds per side",
+                    "intensity": "High",
+                    "description": "Slowly lower into a full front split position and hold with proper alignment.",
+                    "difficulty_range": [9, 12]
+                },
+                {
+                    "name": "Full Cobra Stretch",
+                    "duration": "60 seconds",
+                    "intensity": "High",
+                    "description": "Lie face down and push your chest up into a deep backbend, engaging spinal mobility.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Elevated Pigeon Pose",
+                    "duration": "60 seconds per leg",
+                    "intensity": "High",
+                    "description": "Place your front leg on an elevated surface and lean forward to deepen the stretch.",
+                    "difficulty_range": [9, 12]
+                }
+            ]
+        }
+    ]
+}

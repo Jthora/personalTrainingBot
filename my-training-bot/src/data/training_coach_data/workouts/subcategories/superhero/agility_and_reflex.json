@@ -1,0 +1,185 @@
+{
+    "sub_workout_group": [
+        {
+            "name": "Hyper Agility & Reflex Training",
+            "description": "Elite agility training to enhance reaction time, movement efficiency, and acrobatics.",
+            "sub_workouts": [
+                {
+                    "name": "Wall Run & Vault",
+                    "duration": "4 sets of 8 reps",
+                    "intensity": "Super",
+                    "description": "Sprint toward a wall, run up it, and vault over.",
+                    "difficulty_range": [13, 15]
+                },
+                {
+                    "name": "Bullet-Dodge Reflex Training",
+                    "duration": "5 sets of 15 seconds",
+                    "intensity": "Hyper",
+                    "description": "Dodge moving objects fired at high speed using predictive movement.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Double Backflip Precision Landing",
+                    "duration": "4 sets of 3 reps",
+                    "intensity": "Super",
+                    "description": "Perform a double backflip with precision landing on small platforms.",
+                    "difficulty_range": [14, 16]
+                },
+                {
+                    "name": "Super Speed Reaction Drill",
+                    "duration": "6 sets of 10 seconds",
+                    "intensity": "Hyper",
+                    "description": "React to sudden light signals by sprinting in different directions at maximum speed.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "High-Speed Parkour Course",
+                    "duration": "Timed Event",
+                    "intensity": "Super",
+                    "description": "Navigate a high-difficulty parkour course as fast as possible.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Superhuman Ledge Grab Pull-Up",
+                    "duration": "5 sets of 8 reps",
+                    "intensity": "Super",
+                    "description": "Leap up to a ledge, grab it, and perform a controlled pull-up.",
+                    "difficulty_range": [13, 15]
+                },
+                {
+                    "name": "Explosive Sprint Start Training",
+                    "duration": "5 sets of 30 meters",
+                    "intensity": "Super",
+                    "description": "Accelerate to top speed from a stationary position as quickly as possible.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Aerial Cartwheel to Precision Landing",
+                    "duration": "4 sets of 5 reps",
+                    "intensity": "Super",
+                    "description": "Perform an aerial cartwheel and land on a small target area.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "360° Obstacle Evasion",
+                    "duration": "4 sets of 15 seconds",
+                    "intensity": "Hyper",
+                    "description": "Dodge and weave through randomly moving obstacles at full speed.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Reactive Explosive Jump Drill",
+                    "duration": "5 sets of 10 jumps",
+                    "intensity": "Super",
+                    "description": "Jump in different directions based on random light or sound cues.",
+                    "difficulty_range": [14, 16]
+                },
+                {
+                    "name": "Rapid Fire Evasion Footwork",
+                    "duration": "4 sets of 20 seconds",
+                    "intensity": "Hyper",
+                    "description": "Perform high-speed footwork patterns while dodging incoming projectiles.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Extreme Angle Wall Climb",
+                    "duration": "3 sets of 10 meters",
+                    "intensity": "Super",
+                    "description": "Climb a 60° or steeper wall using parkour techniques.",
+                    "difficulty_range": [13, 15]
+                },
+                {
+                    "name": "Spider Reflex Drill",
+                    "duration": "5 sets of 10 seconds",
+                    "intensity": "Hyper",
+                    "description": "Use full-body agility to reactively jump, flip, or evade without warning.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Ceiling Hang & Traverse",
+                    "duration": "3 sets of 5 meters",
+                    "intensity": "Super",
+                    "description": "Hang from a horizontal bar and traverse sideways without dropping.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Rolling Escape Tactics",
+                    "duration": "4 sets of 10 reps",
+                    "intensity": "Super",
+                    "description": "Roll out of falls or attacks and transition seamlessly into a sprint or vault.",
+                    "difficulty_range": [13, 15]
+                },
+                {
+                    "name": "Blindfolded Parkour Course",
+                    "duration": "Timed Event",
+                    "intensity": "Hyper",
+                    "description": "Navigate an obstacle course with limited vision using spatial awareness.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Explosive Directional Change Sprints",
+                    "duration": "4 sets of 40 meters",
+                    "intensity": "Super",
+                    "description": "Sprint at full speed, stop on command, and change direction instantly.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Precision Footwork on Unstable Terrain",
+                    "duration": "3 sets of 10 meters",
+                    "intensity": "Super",
+                    "description": "Run across narrow or shifting surfaces without losing balance.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Dual-Wall Parkour Sprint",
+                    "duration": "4 sets of 10 meters",
+                    "intensity": "Super",
+                    "description": "Sprint using alternating foot plants on two parallel walls.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "High-G Reflex Training",
+                    "duration": "4 sets of 20 seconds",
+                    "intensity": "Hyper",
+                    "description": "React to multiple high-speed stimuli under gravitational resistance.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Rooftop Sprint & Leap",
+                    "duration": "5 sets of 10 meters",
+                    "intensity": "Super",
+                    "description": "Sprint across an elevated platform and leap across a gap.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Momentum Swing & Grab",
+                    "duration": "5 sets of 5 reps",
+                    "intensity": "Super",
+                    "description": "Swing from one handhold to another at maximum speed and precision.",
+                    "difficulty_range": [13, 15]
+                },
+                {
+                    "name": "Dynamic Mid-Air Direction Shift",
+                    "duration": "4 sets of 5 reps",
+                    "intensity": "Hyper",
+                    "description": "Jump forward and change direction mid-air before landing.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Super Sprint Vault to Roll",
+                    "duration": "5 sets of 10 reps",
+                    "intensity": "Super",
+                    "description": "Sprint at full speed, vault over an obstacle, and roll into a sprint.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Superhero Dive Roll",
+                    "duration": "4 sets of 5 reps",
+                    "intensity": "Super",
+                    "description": "Leap forward into a rolling landing to absorb high-impact falls.",
+                    "difficulty_range": [13, 16]
+                }
+            ]
+        }
+    ]
+}

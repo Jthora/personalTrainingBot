@@ -1,0 +1,182 @@
+{
+    "sub_workout_group": [
+        {
+            "name": "Hand-Eye Coordination Drills",
+            "description": "Drills to improve hand-eye coordination.",
+            "sub_workouts": [
+                {
+                    "name": "Basic Hand-Eye Coordination Drills",
+                    "duration": "5 minutes",
+                    "intensity": "Low",
+                    "description": "Perform basic hand-eye coordination drills for 5 minutes.",
+                    "difficulty_range": [0, 2]
+                },
+                {
+                    "name": "Intermediate Hand-Eye Coordination Drills",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform intermediate hand-eye coordination drills for 10 minutes.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Advanced Hand-Eye Coordination Drills",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Perform advanced hand-eye coordination drills for 15 minutes.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Hand-Eye Coordination with Sparring",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Perform hand-eye coordination drills with sparring for 15 minutes.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Hand-Eye Coordination with Sparring and Resistance Bands",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Perform hand-eye coordination drills with sparring and resistance bands for 15 minutes.",
+                    "difficulty_range": [4, 6]
+                }
+            ]
+        },
+        {
+            "name": "Hand-Eye Coordination with Sparring",
+            "description": "Hand-eye coordination drills with sparring.",
+            "sub_workouts": [
+                {
+                    "name": "Basic Hand-Eye Coordination with Sparring",
+                    "duration": "5 minutes",
+                    "intensity": "Low",
+                    "description": "Perform basic hand-eye coordination drills with sparring for 5 minutes.",
+                    "difficulty_range": [0, 2]
+                },
+                {
+                    "name": "Intermediate Hand-Eye Coordination with Sparring",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform intermediate hand-eye coordination drills with sparring for 10 minutes.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Advanced Hand-Eye Coordination with Sparring",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Perform advanced hand-eye coordination drills with sparring for 15 minutes.",
+                    "difficulty_range": [2, 4]
+                }
+            ]
+        },
+        {
+            "name": "Hand-Eye Unique Techniques",
+            "description": "Unique techniques to enhance hand-eye coordination.",
+            "sub_workouts": [
+                {
+                    "name": "Ball Toss Against Wall",
+                    "duration": "5 minutes",
+                    "intensity": "Low",
+                    "description": "Toss a ball against a wall and catch it to improve hand-eye coordination.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Juggling",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Practice juggling with three balls to enhance coordination and focus.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Clap and Catch",
+                    "duration": "5 minutes",
+                    "intensity": "Low",
+                    "description": "Toss a ball, clap your hands, and catch it to improve reaction time.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Target Practice with Soft Objects",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Throw soft objects at a target to improve accuracy and coordination.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Balloon Tap",
+                    "duration": "5 minutes",
+                    "intensity": "Low",
+                    "description": "Keep a balloon in the air by tapping it to enhance hand-eye coordination.",
+                    "difficulty_range": [1, 2]
+                },
+                {
+                    "name": "Coin Catch",
+                    "duration": "5 minutes",
+                    "intensity": "Low",
+                    "description": "Drop a coin and catch it before it hits the ground to improve reaction time.",
+                    "difficulty_range": [1, 3]
+                }
+            ]
+        },
+        {
+            "name": "Advanced Hand-Eye Unique Techniques",
+            "description": "Advanced techniques to further enhance hand-eye coordination.",
+            "sub_workouts": [
+                {
+                    "name": "Two-Ball Juggling",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Practice juggling with two balls in one hand to improve coordination and focus.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Reaction Ball Drills",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Use a reaction ball to perform drills that enhance reaction time and coordination.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Wall Ball with Partner",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Toss a ball against a wall with a partner, alternating catches to improve coordination.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Speed Bag Drills",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Perform speed bag drills to enhance hand-eye coordination and rhythm.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Double Ball Toss",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Toss two balls simultaneously and catch them to improve coordination and timing.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Advanced Target Practice",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Throw objects at multiple targets to improve accuracy and hand-eye coordination.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "Balloon Tap with Movement",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Keep a balloon in the air while moving around to enhance coordination and agility.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Coin Catch with Partner",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Drop a coin and have a partner catch it before it hits the ground to improve reaction time.",
+                    "difficulty_range": [5, 7]
+                }
+            ]
+        }
+    ]
+}

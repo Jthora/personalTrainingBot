@@ -1,0 +1,115 @@
+{
+    "sub_workout_group": [
+        {
+            "name": "Reaction Time Training",
+            "description": "Develop hand-eye coordination, reflexes, and quick decision-making through drills.",
+            "sub_workouts": [
+                {
+                    "name": "Coin Drop Catch",
+                    "duration": "5 minutes",
+                    "intensity": "Low",
+                    "description": "Drop a coin from eye level and try to catch it before it hits the ground.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Tennis Ball Wall Bounce",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Throw a tennis ball at the wall and react to catch it as it rebounds unpredictably.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Mirror Hand Reflex",
+                    "duration": "5 minutes",
+                    "intensity": "Low",
+                    "description": "Have a partner randomly move their hand while you mirror their motion with minimal delay.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Clap Reaction Test",
+                    "duration": "5 minutes",
+                    "intensity": "Low",
+                    "description": "Close your eyes and clap immediately when you hear a sound cue from a partner or device.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Drop Stick Test",
+                    "duration": "5 minutes",
+                    "intensity": "Moderate",
+                    "description": "Have a partner hold a ruler or stick, drop it randomly, and try to catch it as quickly as possible.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Reaction Light Drill",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Use an app or light source that randomly flashes, reacting by tapping or moving on cue.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Shadowboxing with Random Calls",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Have a partner call out random numbers or moves while shadowboxing, reacting instantly.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Peripheral Vision Reaction",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Focus straight ahead while reacting to objects moving in your peripheral vision.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Sound Cue Jump",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Jump in place immediately when a sound cue is given, varying the timing to improve reaction time.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Balloon Tap Challenge",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Keep a balloon in the air while tapping it only when it comes into your blind spot.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "One-Handed Catch Drill",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Throw a small object in the air and catch it with the same or opposite hand rapidly.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Random Object Grab",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Scatter small objects on a table and react to grab one as fast as possible when called.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Fast Finger Tap",
+                    "duration": "5 minutes",
+                    "intensity": "Low",
+                    "description": "Tap your fingers rapidly against a surface, increasing speed and reaction time.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Reaction Dodge",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Have a partner lightly toss objects toward you, dodging them without moving out of place.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Pattern Change Reflex",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Perform an action (jump, squat, punch) when a pattern or signal changes unexpectedly.",
+                    "difficulty_range": [5, 7]
+                }
+            ]
+        }
+    ]
+}

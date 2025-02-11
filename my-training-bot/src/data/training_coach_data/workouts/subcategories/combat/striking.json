@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Striking Power Development",
+        "description": "Punching bag impact drills, endurance striking.",
+        "sub_workouts": [
+            {
+                "name": "Heavy Bag Punches",
+                "duration": "5 minutes",
+                "intensity": "High",
+                "description": "Practice powerful punches on a heavy bag."
+            },
+            {
+                "name": "Speed Bag Drills",
+                "duration": "5 minutes",
+                "intensity": "High",
+                "description": "Practice speed punches on a speed bag."
+            },
+            {
+                "name": "Combination Strikes",
+                "duration": "5 minutes",
+                "intensity": "High",
+                "description": "Practice combinations of punches and strikes."
+            }
+        ]
+    },
+    {
+        "name": "Shadow Boxing",
+        "description": "Practice striking techniques and footwork without a partner.",
+        "sub_workouts": [
+            {
+                "name": "Basic Combinations",
+                "duration": "5 minutes",
+                "intensity": "Moderate",
+                "description": "Practice basic punch combinations."
+            },
+            {
+                "name": "Advanced Combinations",
+                "duration": "5 minutes",
+                "intensity": "High",
+                "description": "Practice advanced punch combinations."
+            },
+            {
+                "name": "Footwork Drills",
+                "duration": "5 minutes",
+                "intensity": "Moderate",
+                "description": "Practice footwork techniques."
+            }
+        ]
+    },
+    {
+        "name": "Kickboxing Drills",
+        "description": "Combining punches and kicks in various combinations.",
+        "sub_workouts": [
+            {
+                "name": "Punch-Kick Combos",
+                "duration": "5 minutes",
+                "intensity": "High",
+                "description": "Practice combinations of punches and kicks."
+            },
+            {
+                "name": "Knee Strikes",
+                "duration": "5 minutes",
+                "intensity": "High",
+                "description": "Practice knee strikes."
+            },
+            {
+                "name": "Elbow Strikes",
+                "duration": "5 minutes",
+                "intensity": "High",
+                "description": "Practice elbow strikes."
+            }
+        ]
+    }
+]

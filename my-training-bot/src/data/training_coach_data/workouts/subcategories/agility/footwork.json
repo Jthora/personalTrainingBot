@@ -1,0 +1,106 @@
+{
+    "sub_workout_group":[
+        {
+            "name": "Tactical Footwork Drills",
+            "description": "Rapid direction changes and dodging techniques.",
+            "sub_workouts": [
+                {
+                    "name": "Basic Footwork Drills",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Practice basic footwork drills for 10 minutes.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Advanced Footwork Drills",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Practice advanced footwork drills for 15 minutes.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Footwork with Resistance Bands",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Practice footwork drills with resistance bands for 10 minutes.",
+                    "difficulty_range": [3, 5]
+                }
+            ]
+        },
+        {
+            "name": "Ladder Drills",
+            "description": "Footwork drills using an agility ladder to improve speed and coordination.",
+            "sub_workouts": [
+                {
+                    "name": "Basic Ladder Drills",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform basic ladder drills for 10 minutes.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Advanced Ladder Drills",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Perform advanced ladder drills for 15 minutes.",
+                    "difficulty_range": [4, 6]
+                }
+            ]
+        },
+        {
+            "name": "Cone Drills",
+            "description": "Agility drills using cones to improve quickness and change of direction.",
+            "sub_workouts": [
+                {
+                    "name": "Basic Cone Drills",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform basic cone drills for 10 minutes.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Intermediate Cone Drills",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform intermediate cone drills for 10 minutes.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Advanced Cone Drills with Resistance Bands",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Perform advanced cone drills with resistance bands for 15 minutes.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Advanced Cone Drills with Sparring",
+                    "duration": "20 minutes",
+                    "intensity": "High",
+                    "description": "Perform advanced cone drills with sparring for 20 minutes.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Advanced Cone Drills with Sparring and Resistance Bands",
+                    "duration": "20 minutes",
+                    "intensity": "High",
+                    "description": "Perform advanced cone drills with sparring and resistance bands for 20 minutes.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Weighted Vest Cone Drills with Sparring and Resistance Bands",
+                    "duration": "20 minutes",
+                    "intensity": "High",
+                    "description": "Perform advanced cone drills with sparring and resistance bands and weighted vest for 20 minutes.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Advanced Cone Drills",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Perform advanced cone drills for 15 minutes.",
+                    "difficulty_range": [4, 6]
+                }
+            ]
+        }
+    ]
+}

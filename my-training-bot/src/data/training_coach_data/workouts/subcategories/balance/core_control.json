@@ -1,0 +1,140 @@
+{
+    "sub_workout_groups": [
+        {
+            "name": "Core Control Drills",
+            "description": "Exercises to improve core control and stability.",
+            "sub_workouts": [
+                {
+                    "name": "Plank",
+                    "duration": "1 minute",
+                    "intensity": "Moderate",
+                    "description": "Hold a plank position for 1 minute.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Side Plank",
+                    "duration": "1 minute",
+                    "intensity": "Moderate",
+                    "description": "Hold a side plank position for 1 minute on each side.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Bird Dog",
+                    "duration": "2 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform bird dog exercise for 2 minutes.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Dead Bug",
+                    "duration": "2 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform dead bug exercise for 2 minutes.",
+                    "difficulty_range": [3, 5]
+                }
+            ]
+        },
+        {
+            "name": "Intermediate Core Stability",
+            "description": "Core stability exercises for intermediate levels.",
+            "sub_workouts": [
+                {
+                    "name": "Plank with Leg Lift",
+                    "duration": "1 minute",
+                    "intensity": "Moderate",
+                    "description": "Hold a plank position and lift one leg for 1 minute.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Side Plank with Hip Dips",
+                    "duration": "1 minute",
+                    "intensity": "Moderate",
+                    "description": "Perform side plank with hip dips for 1 minute on each side.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Bird Dog with Elbow to Knee",
+                    "duration": "2 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform bird dog with elbow to knee touch for 2 minutes.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Dead Bug with Leg Extension",
+                    "duration": "2 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform dead bug with leg extension for 2 minutes.",
+                    "difficulty_range": [5, 7]
+                }
+            ]
+        },
+        {
+            "name": "Advanced Core Stability",
+            "description": "Advanced core stability exercises.",
+            "sub_workouts": [
+                {
+                    "name": "Plank with Arm Reach",
+                    "duration": "1+ minute",
+                    "intensity": "High",
+                    "description": "Hold a plank position and reach one arm forward for 1 minute.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Side Plank with Leg Lift",
+                    "duration": "1+ minute",
+                    "intensity": "High",
+                    "description": "Perform side plank with leg lift for 1 minute on each side.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "Bird Dog with Resistance Band",
+                    "duration": "2+ minutes",
+                    "intensity": "High",
+                    "description": "Perform bird dog with resistance band for 2 minutes.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Dead Bug with Resistance Band",
+                    "duration": "2+ minutes",
+                    "intensity": "High",
+                    "description": "Perform dead bug with resistance band for 2 minutes.",
+                    "difficulty_range": [7, 9]
+                }
+            ]
+        },
+        {
+            "name": "Core Control Challenges",
+            "description": "Core control exercises for higher difficulty levels.",
+            "sub_workouts": [
+                {
+                    "name": "Plank with Arm and Leg Lift",
+                    "duration": "1+ minute",
+                    "intensity": "High",
+                    "description": "Hold a plank position and lift one arm and one leg for 1 minute.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Side Plank with Leg Lift and Reach",
+                    "duration": "1+ minute",
+                    "intensity": "High",
+                    "description": "Perform side plank with leg lift and reach for 1 minute on each side.",
+                    "difficulty_range": [9, 11]
+                },
+                {
+                    "name": "Bird Dog with Resistance Band and Reach",
+                    "duration": "2+ minutes",
+                    "intensity": "High",
+                    "description": "Perform bird dog with resistance band and reach for 2 minutes.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Dead Bug with Resistance Band and Reach",
+                    "duration": "2+ minutes",
+                    "intensity": "High",
+                    "description": "Perform dead bug with resistance band and reach for 2 minutes.",
+                    "difficulty_range": [9, 11]
+                }
+            ]
+        }
+    ]
+}

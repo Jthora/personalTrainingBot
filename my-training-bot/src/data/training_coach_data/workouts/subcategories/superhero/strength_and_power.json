@@ -1,0 +1,178 @@
+{
+    "sub_workout_group": [
+        {
+            "name": "Superhuman Strength & Power",
+            "description": "Extreme strength and durability training to push the limits of human potential.",
+            "sub_workouts": [
+                {
+                    "name": "Atlas Lift",
+                    "duration": "3 sets of 3 reps",
+                    "intensity": "Super",
+                    "description": "Lift a 500+ lb stone or object from the ground onto a platform.",
+                    "difficulty_range": [13, 15]
+                },
+                {
+                    "name": "Car Push Sprints",
+                    "duration": "4 sets of 20 meters",
+                    "intensity": "Super",
+                    "description": "Push a full-sized vehicle in a sprint motion.",
+                    "difficulty_range": [14, 16]
+                },
+                {
+                    "name": "Deadlift to Overhead Press",
+                    "duration": "4 sets of 4 reps",
+                    "intensity": "Super",
+                    "description": "Lift 500+ lbs from the floor to an overhead press position.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Superhuman Punching Power",
+                    "duration": "5 sets of 10 reps",
+                    "intensity": "Hyper",
+                    "description": "Strike a reinforced heavy bag at full force, aiming for impact destruction.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Explosive Jump Squats with Weight Vest",
+                    "duration": "4 sets of 8 reps",
+                    "intensity": "Super",
+                    "description": "Perform squat jumps while wearing a 150+ lb vest.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Superhuman Weighted Pull-Ups",
+                    "duration": "4 sets of 6 reps",
+                    "intensity": "Super",
+                    "description": "Perform strict pull-ups with a 100+ lb weighted vest or belt.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Triple Bodyweight Deadlifts",
+                    "duration": "3 sets of 3 reps",
+                    "intensity": "Hyper",
+                    "description": "Deadlift three times your body weight for extreme power development.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "One-Arm Bodyweight Pull-Up",
+                    "duration": "3 sets of 3 reps",
+                    "intensity": "Super",
+                    "description": "Perform pull-ups using only one arm to develop supreme upper-body power.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Giant Tire Flips",
+                    "duration": "5 sets of 6 reps",
+                    "intensity": "Super",
+                    "description": "Flip a 600+ lb tire multiple times across a field.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Full-Force Steel Bar Bending",
+                    "duration": "5 attempts",
+                    "intensity": "Hyper",
+                    "description": "Bend a steel bar using raw upper-body and grip strength.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Keg Carry & Sprint",
+                    "duration": "4 sets of 30 meters",
+                    "intensity": "Super",
+                    "description": "Sprint carrying a 250+ lb keg over a set distance.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Sledgehammer Strikes",
+                    "duration": "4 sets of 20 reps",
+                    "intensity": "Super",
+                    "description": "Swing a sledgehammer at a heavy tire with full force.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Log Clean & Press",
+                    "duration": "3 sets of 5 reps",
+                    "intensity": "Super",
+                    "description": "Lift and press a 250+ lb log overhead using full-body strength.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Vertical Wall Climb with Weight Vest",
+                    "duration": "4 sets of 10 meters",
+                    "intensity": "Super",
+                    "description": "Climb a wall or rope while wearing an additional 100+ lbs.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Superhuman Grip Strength Hang",
+                    "duration": "Timed Event",
+                    "intensity": "Hyper",
+                    "description": "Hang from a pull-up bar with one hand for 90+ seconds while weighted.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Explosive Lateral Leaps",
+                    "duration": "4 sets of 6 reps per side",
+                    "intensity": "Super",
+                    "description": "Leap laterally across a 6+ foot gap repeatedly for power and agility.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Unstable Surface Weighted Squats",
+                    "duration": "4 sets of 6 reps",
+                    "intensity": "Super",
+                    "description": "Perform barbell squats on an unstable surface to build extreme balance and strength.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Weighted Explosive Clapping Push-Ups",
+                    "duration": "5 sets of 10 reps",
+                    "intensity": "Super",
+                    "description": "Perform clapping push-ups while wearing a 50+ lb weighted vest.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Back-to-Back Spartan Carries",
+                    "duration": "4 sets of 40 meters",
+                    "intensity": "Hyper",
+                    "description": "Carry a teammate or heavy dummy across the battlefield under extreme fatigue.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Human Resistance Sprint Drags",
+                    "duration": "4 sets of 20 meters",
+                    "intensity": "Super",
+                    "description": "Sprint while dragging a 200+ lb resistance sled or partner.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Superhuman Forward Shoulder Throws",
+                    "duration": "5 sets of 8 reps",
+                    "intensity": "Super",
+                    "description": "Lift and throw a 150+ lb sandbag overhead to simulate enemy throws.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Full-Body Weighted Rope Slams",
+                    "duration": "4 sets of 15 reps",
+                    "intensity": "Super",
+                    "description": "Slam heavy battle ropes with full force to develop power and endurance.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "High-Speed Resistance Band Sprint",
+                    "duration": "4 sets of 40 meters",
+                    "intensity": "Super",
+                    "description": "Sprint against high-resistance bands for explosive power.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Max Weight Farmer’s Carry",
+                    "duration": "4 sets of 30 meters",
+                    "intensity": "Hyper",
+                    "description": "Carry the heaviest weight possible for distance, maintaining perfect posture.",
+                    "difficulty_range": [15, 16]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,188 @@
+{
+    "sub_workout_group": [
+        {
+            "name": "Beginner Powerlifting Foundations Routine",
+            "description": "A structured program to develop strength and technique for squats, bench press, and deadlifts.",
+            "sub_workouts": [
+                {
+                    "name": "Back Squat",
+                    "duration": "4 sets of 8 reps",
+                    "intensity": "Moderate",
+                    "description": "Focus on full range of motion and proper form with a moderate weight.",
+                    "difficulty_range": [2, 5]
+                },
+                {
+                    "name": "Bench Press",
+                    "duration": "4 sets of 8 reps",
+                    "intensity": "Moderate",
+                    "description": "Develop pressing strength with controlled tempo and full range of motion.",
+                    "difficulty_range": [2, 5]
+                },
+                {
+                    "name": "Deadlift",
+                    "duration": "4 sets of 6 reps",
+                    "intensity": "Moderate",
+                    "description": "Maintain a neutral spine and proper hip hinge mechanics.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Seated Row",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Strengthen the upper back to support pulling mechanics.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Plank Hold",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Low",
+                    "description": "Build core stability to improve squat and deadlift performance.",
+                    "difficulty_range": [1, 3]
+                }
+            ]
+        },
+        {
+            "name": "Squat & Deadlift Strength Routine",
+            "description": "A specialized routine focusing on building maximum strength in the squat and deadlift.",
+            "sub_workouts": [
+                {
+                    "name": "Low-Bar Squat",
+                    "duration": "5 sets of 5 reps",
+                    "intensity": "High",
+                    "description": "Develop strength by shifting the bar lower on the back for greater leverage.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Conventional Deadlift",
+                    "duration": "5 sets of 4 reps",
+                    "intensity": "High",
+                    "description": "Lift heavier weights while maintaining a strong hip drive.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Good Mornings",
+                    "duration": "4 sets of 8 reps",
+                    "intensity": "Moderate",
+                    "description": "Strengthen posterior chain muscles, improving hip hinge strength.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Front Squats",
+                    "duration": "4 sets of 6 reps",
+                    "intensity": "High",
+                    "description": "Improve quad strength and upper back stability for better squat mechanics.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Romanian Deadlifts",
+                    "duration": "4 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Build hamstring strength and hip mobility.",
+                    "difficulty_range": [5, 8]
+                }
+            ]
+        },
+        {
+            "name": "Bench Press & Upper Body Power Routine",
+            "description": "A specialized upper body routine designed to increase pressing strength.",
+            "sub_workouts": [
+                {
+                    "name": "Comp Bench Press",
+                    "duration": "5 sets of 5 reps",
+                    "intensity": "High",
+                    "description": "Perform the bench press with full range of motion and competition setup.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Close-Grip Bench Press",
+                    "duration": "4 sets of 8 reps",
+                    "intensity": "Moderate",
+                    "description": "Focus on triceps strength to improve lockout.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Overhead Press",
+                    "duration": "4 sets of 6 reps",
+                    "intensity": "High",
+                    "description": "Build shoulder and triceps strength to assist pressing power.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Weighted Dips",
+                    "duration": "4 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Strengthen the chest and triceps with a weighted dip variation.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Barbell Rows",
+                    "duration": "4 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Strengthen the upper back to support pressing mechanics.",
+                    "difficulty_range": [6, 9]
+                }
+            ]
+        },
+        {
+            "name": "Explosive Powerlifting Speed Routine",
+            "description": "Speed-focused variations of the Big Three lifts to develop bar speed and explosiveness.",
+            "sub_workouts": [
+                {
+                    "name": "Speed Deadlifts",
+                    "duration": "6 sets of 3 reps",
+                    "intensity": "High",
+                    "description": "Perform fast, explosive reps with moderate weight.",
+                    "difficulty_range": [9, 12]
+                },
+                {
+                    "name": "Dynamic Effort Box Squats",
+                    "duration": "6 sets of 3 reps",
+                    "intensity": "High",
+                    "description": "Perform squats to a box to enhance rate of force development.",
+                    "difficulty_range": [8, 11]
+                },
+                {
+                    "name": "Speed Bench Press",
+                    "duration": "6 sets of 3 reps",
+                    "intensity": "High",
+                    "description": "Use a controlled eccentric phase followed by an explosive press.",
+                    "difficulty_range": [8, 12]
+                },
+                {
+                    "name": "Banded Deadlifts",
+                    "duration": "4 sets of 4 reps",
+                    "intensity": "High",
+                    "description": "Attach resistance bands to a deadlift for accommodating resistance.",
+                    "difficulty_range": [8, 12]
+                },
+                {
+                    "name": "Broad Jumps",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "High",
+                    "description": "Develop explosive power through maximum-effort jumps.",
+                    "difficulty_range": [8, 12]
+                }
+            ]
+        },
+        {
+            "name": "Super Powerlifting Max Strength Routine",
+            "description": "Elite-level program designed for maximal strength and competition performance.",
+            "sub_workouts": [
+                {
+                    "name": "1-Rep Max Squat Attempt",
+                    "duration": "3 sets of 1 rep",
+                    "intensity": "Elite",
+                    "description": "Work up to a heavy single at 90-100% of max.",
+                    "difficulty_range": [11, 15]
+                },
+                {
+                    "name": "1-Rep Max Bench Press Attempt",
+                    "duration": "3 sets of 1 rep",
+                    "intensity": "Elite",
+                    "description": "Work up to a heavy single at 90-100% of max.",
+                    "difficulty_range": [11, 15]
+                }
+            ]
+        }
+    ]
+}

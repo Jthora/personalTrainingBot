@@ -1,0 +1,11 @@
+{
+    "name": "Super Hero",
+    "description": "Super Hero exercises to improve strength, flexibility, and endurance.",
+    "subcategories": {
+        "strength_and_power": "strength_and_power.json",
+        "agility_and_reflex": "agility_and_reflex.json",
+        "combat_and_survival": "combat_and_survival.json",
+        "endurance_and_survival ": "endurance_and_survival.json",
+        "psionic_and_Sensory": "psionic_and_Sensory.json"
+    }
+}

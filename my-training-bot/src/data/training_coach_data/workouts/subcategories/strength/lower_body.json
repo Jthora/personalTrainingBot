@@ -1,0 +1,229 @@
+{
+    "sub_workout_group": [
+        {
+            "name": "Beginner Lower Body Strength Routine",
+            "description": "Basic lower body exercises to build strength, stability, and endurance.",
+            "sub_workouts": [
+                {
+                    "name": "Bodyweight Squats",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Low",
+                    "description": "Perform controlled squats focusing on full range of motion.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Glute Bridge",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Low",
+                    "description": "Engage the glutes and hamstrings by lifting your hips off the ground.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Step-Ups",
+                    "duration": "3 sets of 10 reps per leg",
+                    "intensity": "Low",
+                    "description": "Step onto a sturdy platform, alternating legs.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Calf Raises",
+                    "duration": "3 sets of 15 reps",
+                    "intensity": "Low",
+                    "description": "Rise onto your toes, holding at the top for a second before lowering.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Lunges",
+                    "duration": "3 sets of 10 reps per leg",
+                    "intensity": "Low",
+                    "description": "Step forward and lower into a lunge while keeping your knee behind your toes.",
+                    "difficulty_range": [2, 4]
+                }
+            ]
+        },
+        {
+            "name": "Intermediate Lower Body Strength Routine",
+            "description": "A balanced lower body workout focusing on strength and hypertrophy.",
+            "sub_workouts": [
+                {
+                    "name": "Goblet Squats",
+                    "duration": "4 sets of 10-12 reps",
+                    "intensity": "Moderate",
+                    "description": "Hold a dumbbell or kettlebell at chest level while squatting.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Deadlifts",
+                    "duration": "4 sets of 8-10 reps",
+                    "intensity": "Moderate",
+                    "description": "Lift a barbell from the ground to hip level, focusing on form.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Leg Curls",
+                    "duration": "3 sets of 12-15 reps",
+                    "intensity": "Moderate",
+                    "description": "Use a leg curl machine to target the hamstrings.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Leg Extensions",
+                    "duration": "3 sets of 12-15 reps",
+                    "intensity": "Moderate",
+                    "description": "Use a leg extension machine to target the quadriceps.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Walking Lunges",
+                    "duration": "3 sets of 10 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Perform lunges while walking forward, alternating legs.",
+                    "difficulty_range": [5, 8]
+                }
+            ]
+        },
+        {
+            "name": "Strength & Hypertrophy Lower Body Routine",
+            "description": "A muscle-growth-focused leg workout using moderate weights and higher reps.",
+            "sub_workouts": [
+                {
+                    "name": "Barbell Squats",
+                    "duration": "4 sets of 8-10 reps",
+                    "intensity": "Moderate",
+                    "description": "Perform squats with a barbell, focusing on depth and control.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Romanian Deadlifts",
+                    "duration": "4 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Maintain a slight bend in the knees while hinging at the hips to target the hamstrings.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Bulgarian Split Squats",
+                    "duration": "3 sets of 10 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Elevate one foot behind you and perform deep lunges to engage the quads and glutes.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Seated Calf Raises",
+                    "duration": "3 sets of 15 reps",
+                    "intensity": "Moderate",
+                    "description": "Perform calf raises while seated to emphasize the soleus muscle.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Leg Press",
+                    "duration": "4 sets of 12 reps",
+                    "intensity": "Moderate",
+                    "description": "Push the sled with control, avoiding full knee lockout at the top.",
+                    "difficulty_range": [6, 9]
+                }
+            ]
+        },
+        {
+            "name": "Explosive Power & Speed Routine",
+            "description": "Exercises to develop speed, jumping ability, and explosive power.",
+            "sub_workouts": [
+                {
+                    "name": "Box Jumps",
+                    "duration": "4 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Jump onto a box with full power, landing softly.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Depth Jumps",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "High",
+                    "description": "Step off a box and immediately explode into a jump.",
+                    "difficulty_range": [8, 11]
+                },
+                {
+                    "name": "Speed Skater Lunges",
+                    "duration": "3 sets of 10 reps per side",
+                    "intensity": "High",
+                    "description": "Jump laterally from one foot to the other in a controlled manner.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Broad Jumps",
+                    "duration": "4 sets of 6 reps",
+                    "intensity": "High",
+                    "description": "Jump forward as far as possible with controlled landings.",
+                    "difficulty_range": [8, 11]
+                },
+                {
+                    "name": "Sled Push",
+                    "duration": "4 sets of 30 meters",
+                    "intensity": "High",
+                    "description": "Push a weighted sled as fast as possible to develop lower body explosiveness.",
+                    "difficulty_range": [8, 12]
+                }
+            ]
+        },
+        {
+            "name": "Functional & Athletic Lower Body Routine",
+            "description": "A lower body workout that improves balance, stability, and functional strength.",
+            "sub_workouts": [
+                {
+                    "name": "Single-Leg Deadlifts",
+                    "duration": "3 sets of 10 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Balance on one leg while hinging at the hips, maintaining control.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Step-Through Lunges",
+                    "duration": "3 sets of 12 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Lunge forward and backward in one smooth motion.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Cossack Squats",
+                    "duration": "3 sets of 10 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Shift weight side to side in a deep lateral squat.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Banded Lateral Walks",
+                    "duration": "3 sets of 15 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Use a resistance band around the legs to strengthen the glutes and hip stabilizers.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Pistol Squats",
+                    "duration": "3 sets of 8 reps per leg",
+                    "intensity": "High",
+                    "description": "Lower into a deep squat on one leg while keeping the other extended forward.",
+                    "difficulty_range": [7, 12]
+                }
+            ]
+        },
+        {
+            "name": "Super Lower Body Strength Routine",
+            "description": "Advanced strength and hypertrophy workout designed for elite lifters and athletes.",
+            "sub_workouts": [
+                {
+                    "name": "Front Squats",
+                    "duration": "5 sets of 5 reps",
+                    "intensity": "Elite",
+                    "description": "Hold the barbell in front rack position to challenge posture and core engagement.",
+                    "difficulty_range": [10, 14]
+                },
+                {
+                    "name": "Nordic Hamstring Curls",
+                    "duration": "4 sets of 8 reps",
+                    "intensity": "Elite",
+                    "description": "Lower yourself slowly with controlled eccentric movement.",
+                    "difficulty_range": [12, 15]
+                }
+            ]
+        }
+    ]
+}

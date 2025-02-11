@@ -1,0 +1,155 @@
+{
+    "sub_workout_group": [
+        {
+            "name": "Beginner Joint Mobility",
+            "description": "Gentle joint mobility exercises to improve movement fluidity and prevent stiffness.",
+            "sub_workouts": [
+                {
+                    "name": "Neck Circles",
+                    "duration": "30 seconds",
+                    "intensity": "Low",
+                    "description": "Slowly rotate your neck in a circular motion to improve cervical mobility.",
+                    "difficulty_range": [1, 2]
+                },
+                {
+                    "name": "Shoulder Rolls",
+                    "duration": "30 seconds",
+                    "intensity": "Low",
+                    "description": "Roll your shoulders forward and backward in smooth, controlled motions.",
+                    "difficulty_range": [1, 2]
+                },
+                {
+                    "name": "Elbow Rotations",
+                    "duration": "30 seconds",
+                    "intensity": "Low",
+                    "description": "Rotate your elbows in circles, keeping your upper arms steady.",
+                    "difficulty_range": [1, 2]
+                },
+                {
+                    "name": "Wrist Flex & Extend",
+                    "duration": "30 seconds",
+                    "intensity": "Low",
+                    "description": "Gently move your wrists up and down to improve flexibility.",
+                    "difficulty_range": [1, 2]
+                },
+                {
+                    "name": "Hip Circles",
+                    "duration": "30 seconds",
+                    "intensity": "Low",
+                    "description": "Rotate your hips in large, slow circles to enhance mobility.",
+                    "difficulty_range": [1, 4]
+                },
+                {
+                    "name": "Knee Circles",
+                    "duration": "30 seconds",
+                    "intensity": "Low",
+                    "description": "Stand with feet together and gently rotate your knees in circles.",
+                    "difficulty_range": [1, 4]
+                },
+                {
+                    "name": "Ankle Rolls",
+                    "duration": "30 seconds per foot",
+                    "intensity": "Low",
+                    "description": "Lift one foot off the ground and rotate your ankle in smooth circles.",
+                    "difficulty_range": [1, 4]
+                }
+            ]
+        },
+        {
+            "name": "Advanced Joint Mobility",
+            "description": "More dynamic and targeted joint mobility drills for improved flexibility and movement efficiency.",
+            "sub_workouts": [
+                {
+                    "name": "Thoracic Spine Rotations",
+                    "duration": "30 seconds per side",
+                    "intensity": "Moderate",
+                    "description": "Rotate your upper back while seated or in a half-kneeling position.",
+                    "difficulty_range": [3, 6]
+                },
+                {
+                    "name": "Shoulder CARs (Controlled Articular Rotations)",
+                    "duration": "30 seconds per side",
+                    "intensity": "Moderate",
+                    "description": "Move your shoulder through its full range of motion in a controlled manner.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Wrist Circles with Resistance",
+                    "duration": "30 seconds per wrist",
+                    "intensity": "Moderate",
+                    "description": "Hold a light resistance band while performing slow, controlled wrist circles.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Hip CARs",
+                    "duration": "30 seconds per leg",
+                    "intensity": "Moderate",
+                    "description": "Move your hip joint through its complete range of motion while standing or in a quadruped position.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Deep Squat Mobility Drill",
+                    "duration": "30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Sit in a deep squat and shift your weight from side to side to improve ankle, knee, and hip mobility.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Ankle Dorsiflexion Stretch",
+                    "duration": "30 seconds per side",
+                    "intensity": "Moderate",
+                    "description": "Gently rock forward while keeping the heel planted to improve ankle mobility.",
+                    "difficulty_range": [3, 7]
+                }
+            ]
+        },
+        {
+            "name": "Super Joint Mobility",
+            "description": "Elite joint mobility drills for maximizing range of motion, control, and joint resilience.",
+            "sub_workouts": [
+                {
+                    "name": "Hanging Shoulder Rotations",
+                    "duration": "30 seconds",
+                    "intensity": "High",
+                    "description": "Hang from a bar and slowly rotate your shoulders through different angles.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Full Bridge Press",
+                    "duration": "30 seconds",
+                    "intensity": "High",
+                    "description": "Push up into a full bridge position while maintaining control through the shoulders and spine.",
+                    "difficulty_range": [9, 11]
+                },
+                {
+                    "name": "Dynamic Scapular Control",
+                    "duration": "30 seconds",
+                    "intensity": "High",
+                    "description": "Perform controlled scapular retractions and depressions in a hanging or plank position.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "90/90 Flow Sequence",
+                    "duration": "30 seconds per side",
+                    "intensity": "High",
+                    "description": "Move dynamically between seated 90/90 hip positions while keeping the spine tall.",
+                    "difficulty_range": [8, 11]
+                },
+                {
+                    "name": "Extreme Spinal Wave Control",
+                    "duration": "30 seconds",
+                    "intensity": "High",
+                    "description": "Perform a full spinal wave, segment by segment, from head to tailbone with perfect control.",
+                    "difficulty_range": [9, 12]
+                },
+                {
+                    "name": "Deep Ankle & Toe Stretch",
+                    "duration": "30 seconds per side",
+                    "intensity": "High",
+                    "description": "Sit on your heels with toes flexed under to deeply stretch the ankle and toe joints.",
+                    "difficulty_range": [9, 12]
+                }
+            ]
+        }
+    ]
+}

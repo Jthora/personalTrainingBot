@@ -1,0 +1,196 @@
+{
+    "sub_workout_group": [
+        {
+            "name": "Hypertrophy Bodybuilding Routine",
+            "description": "A muscle-growth-focused workout using moderate weights and high reps to maximize hypertrophy.",
+            "sub_workouts": [
+                {
+                    "name": "Dumbbell Bench Press",
+                    "duration": "4 sets of 10-12 reps",
+                    "intensity": "Moderate",
+                    "description": "Press dumbbells while keeping a controlled tempo for optimal muscle activation.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Seated Shoulder Press",
+                    "duration": "4 sets of 10-12 reps",
+                    "intensity": "Moderate",
+                    "description": "Use dumbbells or a barbell to press overhead, focusing on controlled movement.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Barbell Squats",
+                    "duration": "4 sets of 8-10 reps",
+                    "intensity": "Moderate",
+                    "description": "Perform controlled squats to build lower body size and strength.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Lat Pulldown",
+                    "duration": "4 sets of 10-12 reps",
+                    "intensity": "Moderate",
+                    "description": "Engage the lats fully by pulling down with a slow, controlled motion.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Leg Press",
+                    "duration": "4 sets of 12-15 reps",
+                    "intensity": "Moderate",
+                    "description": "Perform controlled reps to target the quadriceps, hamstrings, and glutes.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Dumbbell Lateral Raises",
+                    "duration": "4 sets of 12-15 reps",
+                    "intensity": "Moderate",
+                    "description": "Lift dumbbells to the side, keeping arms slightly bent for full deltoid activation.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Bicep Curls",
+                    "duration": "4 sets of 12-15 reps",
+                    "intensity": "Moderate",
+                    "description": "Focus on controlled movement to maximize bicep contraction.",
+                    "difficulty_range": [4, 6]
+                }
+            ]
+        },
+        {
+            "name": "Strength & Size Hybrid Routine",
+            "description": "Combining strength training and muscle-building techniques for maximum growth and power.",
+            "sub_workouts": [
+                {
+                    "name": "Barbell Deadlift",
+                    "duration": "4 sets of 5-8 reps",
+                    "intensity": "High",
+                    "description": "Lift heavy with proper form to build posterior chain strength and size.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Incline Barbell Press",
+                    "duration": "4 sets of 8-10 reps",
+                    "intensity": "High",
+                    "description": "Press at an incline to target the upper chest and anterior delts.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Pull-Ups",
+                    "duration": "4 sets of 8-12 reps",
+                    "intensity": "High",
+                    "description": "Engage lats and biceps in strict pull-ups for back and arm hypertrophy.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Hack Squats",
+                    "duration": "4 sets of 10-12 reps",
+                    "intensity": "High",
+                    "description": "Use a hack squat machine to isolate the quadriceps.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Dumbbell Bulgarian Split Squats",
+                    "duration": "3 sets of 12 reps per leg",
+                    "intensity": "High",
+                    "description": "Increase leg strength and stability by focusing on one leg at a time.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "Seated Calf Raises",
+                    "duration": "4 sets of 15-20 reps",
+                    "intensity": "Moderate",
+                    "description": "Focus on slow, controlled reps to build the calves effectively.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Weighted Dips",
+                    "duration": "4 sets of 8-12 reps",
+                    "intensity": "High",
+                    "description": "Use bodyweight or added weight to target the chest, triceps, and shoulders.",
+                    "difficulty_range": [7, 10]
+                }
+            ]
+        },
+        {
+            "name": "Bodybuilding Split Routine",
+            "description": "A traditional bodybuilding split routine focusing on hypertrophy and muscle isolation.",
+            "sub_workouts": [
+                {
+                    "name": "Chest and Triceps",
+                    "duration": "4 sets of 8-12 reps",
+                    "intensity": "Moderate",
+                    "description": "Focus on chest and triceps with exercises like bench press and tricep extensions.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Back and Biceps",
+                    "duration": "4 sets of 8-12 reps",
+                    "intensity": "Moderate",
+                    "description": "Focus on back and biceps with exercises like pull-ups and bicep curls.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Legs and Shoulders",
+                    "duration": "4 sets of 8-12 reps",
+                    "intensity": "Moderate",
+                    "description": "Focus on legs and shoulders with exercises like squats and shoulder presses.",
+                    "difficulty_range": [5, 7]
+                }
+            ]
+        },
+        {
+            "name": "Super Bodybuilding Routine",
+            "description": "An advanced muscle-building program designed for elite lifters looking for maximum hypertrophy and strength.",
+            "sub_workouts": [
+                {
+                    "name": "Deficit Deadlifts",
+                    "duration": "5 sets of 4-6 reps",
+                    "intensity": "Elite",
+                    "description": "Perform deadlifts from an elevated platform to increase range of motion.",
+                    "difficulty_range": [11, 14]
+                },
+                {
+                    "name": "Floor Press",
+                    "duration": "5 sets of 6-8 reps",
+                    "intensity": "Elite",
+                    "description": "A partial-range bench press focusing on lockout strength.",
+                    "difficulty_range": [10, 13]
+                },
+                {
+                    "name": "Front Squats",
+                    "duration": "5 sets of 6-8 reps",
+                    "intensity": "Elite",
+                    "description": "Requires extreme core engagement and quad activation.",
+                    "difficulty_range": [10, 13]
+                },
+                {
+                    "name": "Overhead Squats",
+                    "duration": "4 sets of 6 reps",
+                    "intensity": "Elite",
+                    "description": "One of the most demanding exercises, requiring mobility, core strength, and balance.",
+                    "difficulty_range": [11, 15]
+                },
+                {
+                    "name": "Nordic Hamstring Curls",
+                    "duration": "4 sets of 8 reps",
+                    "intensity": "Elite",
+                    "description": "A brutal but effective hamstring builder using eccentric control.",
+                    "difficulty_range": [11, 14]
+                },
+                {
+                    "name": "Sissy Squats",
+                    "duration": "4 sets of 12 reps",
+                    "intensity": "Elite",
+                    "description": "A bodyweight movement that isolates the quadriceps in extreme knee flexion.",
+                    "difficulty_range": [10, 13]
+                },
+                {
+                    "name": "One-Arm Weighted Pull-Ups",
+                    "duration": "3 sets of 6 reps per arm",
+                    "intensity": "Superhuman",
+                    "description": "An extreme lat and bicep exercise requiring full-body control.",
+                    "difficulty_range": [12, 15]
+                }
+            ]
+        }
+    ]
+}

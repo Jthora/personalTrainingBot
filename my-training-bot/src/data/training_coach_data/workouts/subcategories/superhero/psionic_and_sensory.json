@@ -1,0 +1,199 @@
+{
+    "sub_workout_group": [
+        {
+            "name": "Psionic & Sensory Mastery",
+            "description": "Develop heightened awareness, mental fortitude, and sensory perception beyond human limits.",
+            "sub_workouts": [
+                {
+                    "name": "Blindfolded Combat Drills",
+                    "duration": "Timed Event",
+                    "intensity": "Super",
+                    "description": "Engage in martial arts sparring while blindfolded to enhance intuition and reaction time.",
+                    "difficulty_range": [10, 16]
+                },
+                {
+                    "name": "Mind-Over-Pain Training",
+                    "duration": "Timed Endurance",
+                    "intensity": "Super",
+                    "description": "Resist extreme pain stimuli through mental control.",
+                    "difficulty_range": [14, 16]
+                },
+                {
+                    "name": "Echo Location Navigation",
+                    "duration": "Timed Challenge",
+                    "intensity": "Super",
+                    "description": "Move through an obstacle course using sound-based awareness with no vision.",
+                    "difficulty_range": [14, 16]
+                },
+                {
+                    "name": "Sensory Deprivation Meditation",
+                    "duration": "60 minutes",
+                    "intensity": "Super",
+                    "description": "Meditate in a sensory deprivation tank to train heightened perception of internal signals.",
+                    "difficulty_range": [10, 16]
+                },
+                {
+                    "name": "Silent Environment Detection",
+                    "duration": "Timed Event",
+                    "intensity": "Super",
+                    "description": "Identify and track objects or people in a completely silent room using other senses.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Bioelectric Field Awareness Training",
+                    "duration": "30 minutes",
+                    "intensity": "Super",
+                    "description": "Develop the ability to sense electromagnetic energy fields around living beings.",
+                    "difficulty_range": [12, 16]
+                },
+                {
+                    "name": "Blindfolded Maze Navigation",
+                    "duration": "Timed Challenge",
+                    "intensity": "Super",
+                    "description": "Navigate through a complex maze using only tactile and auditory input.",
+                    "difficulty_range": [14, 16]
+                },
+                {
+                    "name": "Enhanced Peripheral Vision Training",
+                    "duration": "Timed Drills",
+                    "intensity": "Super",
+                    "description": "Identify moving objects and details in the extreme corners of your vision range.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Emotional Resonance Detection",
+                    "duration": "Timed Challenge",
+                    "intensity": "Hyper",
+                    "description": "Detect the emotional states of others without verbal cues or facial expressions.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Light Sensory Overload Training",
+                    "duration": "Timed Event",
+                    "intensity": "Super",
+                    "description": "Adapt to rapid light flashes and maintain visual clarity under extreme brightness changes.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Silent Thought Communication Drills",
+                    "duration": "Timed Challenge",
+                    "intensity": "Hyper",
+                    "description": "Practice non-verbal communication and intuition-based decision-making in a team setting.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Tactile Sensitivity Enhancement",
+                    "duration": "Timed Drills",
+                    "intensity": "Super",
+                    "description": "Distinguish textures and shapes with extreme precision using only touch.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Micro-Movement Detection Training",
+                    "duration": "Timed Event",
+                    "intensity": "Super",
+                    "description": "Detect the smallest muscle twitches in an opponent before they attack.",
+                    "difficulty_range": [14, 16]
+                },
+                {
+                    "name": "Advanced Pattern Recognition",
+                    "duration": "Timed Challenge",
+                    "intensity": "Super",
+                    "description": "Analyze and predict sequences from complex patterns at superhuman speed.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Extreme Pain Control via Breathwork",
+                    "duration": "Timed Event",
+                    "intensity": "Hyper",
+                    "description": "Use breath control techniques to override pain receptors and extend endurance under duress.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Multi-Layered Auditory Processing",
+                    "duration": "Timed Event",
+                    "intensity": "Super",
+                    "description": "Train the brain to isolate and focus on individual sounds in chaotic environments.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Blindfolded Object Identification",
+                    "duration": "Timed Challenge",
+                    "intensity": "Super",
+                    "description": "Identify and categorize various objects using only touch and spatial awareness.",
+                    "difficulty_range": [14, 16]
+                },
+                {
+                    "name": "Subconscious Threat Awareness Training",
+                    "duration": "Timed Event",
+                    "intensity": "Hyper",
+                    "description": "Detect incoming attacks or dangerous intent before it manifests physically.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Ultra-Long Distance Perception",
+                    "duration": "Timed Challenge",
+                    "intensity": "Hyper",
+                    "description": "Train to see and recognize objects and movement at extreme distances beyond normal human limits.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Heat Signature Tracking",
+                    "duration": "Timed Challenge",
+                    "intensity": "Super",
+                    "description": "Track and identify living beings in total darkness by detecting heat variations.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Intuition-Based Decision Making",
+                    "duration": "Timed Challenge",
+                    "intensity": "Hyper",
+                    "description": "Make real-time decisions using only instinct and subconscious processing.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Animal Communication Sensory Test",
+                    "duration": "Timed Challenge",
+                    "intensity": "Super",
+                    "description": "Use body language, sound, and intent to communicate with animals.",
+                    "difficulty_range": [8, 16]
+                },
+                {
+                    "name": "Delayed Vision Reflex Training",
+                    "duration": "Timed Challenge",
+                    "intensity": "Super",
+                    "description": "Train the brain to predict motion in situations with visual lag.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Neural Pathway Reconfiguration",
+                    "duration": "Timed Challenge",
+                    "intensity": "Hyper",
+                    "description": "Reprogram mental thought patterns to eliminate distractions and enhance awareness.",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Multi-Layered Focus Drills",
+                    "duration": "Timed Challenge",
+                    "intensity": "Super",
+                    "description": "Perform multiple complex cognitive tasks simultaneously to expand processing ability.",
+                    "difficulty_range": [13, 16]
+                },
+                {
+                    "name": "Synesthesia Induction Training",
+                    "duration": "Timed Challenge",
+                    "intensity": "Hyper",
+                    "description": "Train the brain to experience sensory crossover (e.g., seeing sounds, feeling colors).",
+                    "difficulty_range": [15, 16]
+                },
+                {
+                    "name": "Superhuman Perceptual Awareness",
+                    "duration": "Timed Challenge",
+                    "intensity": "Hyper",
+                    "description": "Expand conscious perception beyond the normal range to detect unseen variables in an environment.",
+                    "difficulty_range": [15, 16]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,127 @@
+{
+    "sub_workout_group": [
+        {
+            "name": "Breathing",
+            "description": "Improve respiratory control, oxygen efficiency, and endurance through controlled breathing exercises.",
+            "sub_workouts": [
+                {
+                    "name": "Box Breathing",
+                    "duration": "5 minutes",
+                    "intensity": "Low",
+                    "description": "Inhale for 4 seconds, hold for 4 seconds, exhale for 4 seconds, and hold again.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Wim Hof Method",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform deep inhales and forceful exhales, followed by breath retention.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Diaphragmatic Breathing",
+                    "duration": "5 minutes",
+                    "intensity": "Low",
+                    "description": "Breathe deeply into the diaphragm to enhance oxygen intake and relaxation.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Breath Ladder Drill",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform light physical activity while gradually reducing breaths per movement.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Nasal Breathing Endurance",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Breathe exclusively through the nose during a sustained activity to improve efficiency.",
+                    "difficulty_range": [4, 6]
+                }
+            ]
+        },
+        {
+            "name": "Advanced Breathing Techniques",
+            "description": "Master complex breathing methods to enhance endurance, mental resilience, and energy control.",
+            "sub_workouts": [
+                {
+                    "name": "Tummo Fire Breath",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "A Tibetan breathing technique that generates body heat through controlled hyperventilation and visualization.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Apnea Walk",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Hold your breath while walking, gradually increasing distance to improve CO2 tolerance and lung capacity.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Double Nasal Lock",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Breathe exclusively through alternate nostrils while performing controlled movement exercises.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Negative Exhale Training",
+                    "duration": "15 minutes",
+                    "intensity": "Elite",
+                    "description": "Extend exhale duration past the inhale phase, conditioning breath control under stress.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "Extreme Low-Oxygen Training",
+                    "duration": "20 minutes",
+                    "intensity": "Elite",
+                    "description": "Train in hypoxic conditions (low oxygen) by reducing breath frequency while performing endurance drills.",
+                    "difficulty_range": [8, 10]
+                }
+            ]
+        },
+        {
+            "name": "Psi Breathing Techniques",
+            "description": "Develop breath control beyond physiological limits, unlocking psi-energy flow and resonance harmonization.",
+            "sub_workouts": [
+                {
+                    "name": "Pranic Energy Breathwork",
+                    "duration": "20 minutes",
+                    "intensity": "Extreme",
+                    "description": "Inhale and direct pranic energy (life force) throughout your body using intent-driven breath cycles.",
+                    "difficulty_range": [8, 12]
+                },
+                {
+                    "name": "Hyper-Oxygenation Psi Shift",
+                    "duration": "15 minutes",
+                    "intensity": "Extreme",
+                    "description": "Sustain ultra-oxygenated states to induce altered consciousness and psi-state activation.",
+                    "difficulty_range": [9, 13]
+                },
+                {
+                    "name": "Zero Breath Suspension",
+                    "duration": "25 minutes",
+                    "intensity": "Psi-Tier",
+                    "description": "Enter a breathless state where oxygen efficiency is maximized, sustaining psi-activation beyond conventional limits.",
+                    "difficulty_range": [10, 14]
+                },
+                {
+                    "name": "Psi Resonance Pulse Breathing",
+                    "duration": "30 minutes",
+                    "intensity": "Psi-Tier",
+                    "description": "Use controlled vibrational breath pulses to synchronize brainwaves with external energies.",
+                    "difficulty_range": [11, 15]
+                },
+                {
+                    "name": "Etheric Breath Alignment",
+                    "duration": "40 minutes",
+                    "intensity": "Psi-Mastery",
+                    "description": "Breathe with your entire energetic field, aligning breath cycles with external etheric currents.",
+                    "difficulty_range": [12, 16]
+                }
+            ]
+        }
+    ]
+}

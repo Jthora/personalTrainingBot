@@ -1,0 +1,120 @@
+{
+    "sub_workout_group": [
+        {
+            "name": "Meditation",
+            "description": "Cultivate mindfulness, relaxation, and mental discipline through meditation practices.",
+            "sub_workouts": [
+                {
+                    "name": "Guided Meditation",
+                    "duration": "10 minutes",
+                    "intensity": "Low",
+                    "description": "Follow an audio-guided meditation session for relaxation and clarity.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Breath Awareness Meditation",
+                    "duration": "10 minutes",
+                    "intensity": "Low",
+                    "description": "Focus only on the rhythm of your breath, maintaining stillness.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Mantra Meditation",
+                    "duration": "15 minutes",
+                    "intensity": "Moderate",
+                    "description": "Repeat a personal or traditional mantra to cultivate inner peace.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Silent Observation",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Sit in complete silence, observing thoughts without engaging in them.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Deep Tranquility Practice",
+                    "duration": "20 minutes",
+                    "intensity": "High",
+                    "description": "Meditate with the goal of reaching a fully relaxed, thoughtless state.",
+                    "difficulty_range": [5, 7]
+                }
+            ]
+        },
+        {
+            "name": "Advanced Meditation Techniques",
+            "description": "Deepen meditative practice with techniques that push the mind beyond conventional mindfulness training.",
+            "sub_workouts": [
+                {
+                    "name": "Void Meditation",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Enter a state of complete mental emptiness, silencing all internal thought for an extended period.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Sensory Deprivation Training",
+                    "duration": "20 minutes",
+                    "intensity": "High",
+                    "description": "Meditate in a completely dark and silent room, removing all external sensory input.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "Hyper Awareness Meditation",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Expand awareness to register every micro-movement, breath, and environmental detail.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Breath Suspension Meditation",
+                    "duration": "20 minutes",
+                    "intensity": "Elite",
+                    "description": "Meditate while holding your breath for extended durations, mastering breath control in stillness.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Pain Tolerance Meditation",
+                    "duration": "20 minutes",
+                    "intensity": "Elite",
+                    "description": "Sit with mild physical discomfort (ice, stretching, or stillness) while maintaining complete relaxation.",
+                    "difficulty_range": [8, 10]
+                }
+            ]
+        },
+        {
+            "name": "Psi Meditation Techniques",
+            "description": "Access non-ordinary states of consciousness through deep psionic meditation practices.",
+            "sub_workouts": [
+                {
+                    "name": "Psionic Void Immersion",
+                    "duration": "30 minutes",
+                    "intensity": "Psi-Tier",
+                    "description": "Enter a full void state where individual identity dissolves, aligning with higher intelligence.",
+                    "difficulty_range": [9, 13]
+                },
+                {
+                    "name": "Cosmic Harmonic Resonance",
+                    "duration": "40 minutes",
+                    "intensity": "Psi-Mastery",
+                    "description": "Meditate while aligning your consciousness to the vibrational resonance of cosmic forces.",
+                    "difficulty_range": [10, 14]
+                },
+                {
+                    "name": "Temporal Slipstream Meditation",
+                    "duration": "45 minutes",
+                    "intensity": "Psi-Mastery",
+                    "description": "Meditate on the fluidity of time, allowing perception to detach from linear constraints.",
+                    "difficulty_range": [11, 15]
+                },
+                {
+                    "name": "Akashic Stream Synchronization",
+                    "duration": "60 minutes",
+                    "intensity": "Psi-Mastery",
+                    "description": "Align with the Akashic records and download information beyond ordinary cognition.",
+                    "difficulty_range": [12, 16]
+                }
+            ]
+        }
+    ]
+}

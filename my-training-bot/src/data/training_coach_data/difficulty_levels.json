@@ -82,7 +82,7 @@
     {
         "name": "Basic",
         "description": "Moderate intensity, suitable for general fitness.",
-        "military_soldier": ["Bootcamp Graduate", "Infantryman"],
+        "military_soldier": ["Bootcamp Graduate", "USSF Entry Level"],
         "athlete_archetype": ["Regular Gym Goer", "Amateur Runner"],
         "level": 3,
         "pft": {
@@ -122,7 +122,7 @@
     {
         "name": "Moderate",
         "description": "Enhanced bodyweight training with light weights.",
-        "military_soldier": ["Gunner", "Trooper"],
+        "military_soldier": ["Gunner/Trooper", "USMC Entry Level"],
         "athlete_archetype": ["Intermediate CrossFit Athlete", "Advanced Runner"],
         "level": 5,
         "pft": {
@@ -162,7 +162,7 @@
     {
         "name": "Standard",
         "description": "Combat Standard-level fitness.",
-        "military_soldier": ["Assault Specialist", "Combat Engineer"],
+        "military_soldier": ["Assault Specialist", "USMC Full Marine"],
         "athlete_archetype": ["CrossFit Athlete", "Triathlete"],
         "level": 7,
         "pft": {
@@ -202,7 +202,7 @@
     {
         "name": "Experienced",
         "description": "Above military standard training.",
-        "military_soldier": ["Raider", "Commando"],
+        "military_soldier": ["USMC Raider", "Commando"],
         "athlete_archetype": ["Advanced CrossFit Athlete", "Marathon Runner"],
         "level": 9,
         "pft": {
@@ -222,7 +222,7 @@
     {
         "name": "Heavy",
         "description": "Intense strength, endurance, and agility combo.",
-        "military_soldier": ["Ranger", "Green Beret"],
+        "military_soldier": ["Army Ranger", "Green Beret"],
         "athlete_archetype": ["Elite Bodybuilder", "Ironman Triathlete"],
         "level": 10,
         "pft": {
@@ -262,7 +262,7 @@
     {
         "name": "Challenge",
         "description": "Special operations combat-ready training.",
-        "military_soldier": ["Force Recon", "Air Force PJ"],
+        "military_soldier": ["USMC Force Recon", "Air Force PJ"],
         "athlete_archetype": ["Ultra Marathon Runner", "Extreme Endurance Athlete"],
         "level": 12,
         "pft": {
@@ -282,7 +282,7 @@
     {
         "name": "Expert",
         "description": "Tactical athlete level for deep infiltration.",
-        "military_soldier": ["Black Ops", "Covert Operative"],
+        "military_soldier": ["Tier 1 Special Forces", "JSOC Ghost Recon"],
         "athlete_archetype": ["World-Class Athlete", "Decathlete"],
         "level": 13,
         "pft": {

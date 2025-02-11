@@ -1,0 +1,45 @@
+{
+    "sub_workout_group": [
+        {
+            "name": "Muscular Endurance",
+            "description": "Increase strength endurance by performing high-rep bodyweight exercises.",
+            "sub_workouts": [
+                {
+                    "name": "Push-Up Burnout Set",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Perform as many push-ups as possible, resting only when necessary.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Wall Sit Hold",
+                    "duration": "5 minutes",
+                    "intensity": "High",
+                    "description": "Hold a deep wall sit position for as long as possible.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Plank Challenge",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Hold a plank for as long as possible with minimal rest.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Bodyweight Squat Marathon",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Perform as many squats as possible, maintaining proper form.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Triceps Dip Burnout",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform high-rep triceps dips using a chair or low surface.",
+                    "difficulty_range": [4, 6]
+                }
+            ]
+        }
+    ]
+}

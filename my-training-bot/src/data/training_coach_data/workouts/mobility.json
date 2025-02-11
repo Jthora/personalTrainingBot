@@ -1,0 +1,10 @@
+{
+    "name": "Mobility",
+    "description": "Mobility exercises to improve dynamic and static stretching, foam rolling, and joint mobility.",
+    "subcategories": {
+        "dynamic_stretching": "dynamic_stretching.json",
+        "static_stretching": "static_stretching.json",
+        "foam_rolling": "foam_rolling.json",
+        "joint_mobility": "joint_mobility.json"
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "sub_workout_group": [
+        {
+            "name": "Cardiovascular Endurance",
+            "description": "Improve stamina, heart health, and overall cardiovascular endurance with home-friendly exercises.",
+            "sub_workouts": [
+                {
+                    "name": "Jump Rope Intervals",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Perform jump rope intervals, alternating between high and low intensity.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Stair Climb Drill",
+                    "duration": "15 minutes",
+                    "intensity": "Moderate",
+                    "description": "Climb stairs continuously at a steady pace for endurance training.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "High-Knee Sprints",
+                    "duration": "5 minutes",
+                    "intensity": "High",
+                    "description": "Sprint in place with high knees as fast as possible.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Burpee Marathon",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Perform as many burpees as possible with minimal rest.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Shadowboxing Endurance",
+                    "duration": "15 minutes",
+                    "intensity": "Moderate",
+                    "description": "Throw non-stop punches with footwork for sustained endurance training.",
+                    "difficulty_range": [4, 6]
+                }
+            ]
+        }
+    ]
+}

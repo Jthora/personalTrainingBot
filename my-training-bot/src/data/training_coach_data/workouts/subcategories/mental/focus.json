@@ -1,0 +1,127 @@
+{
+    "sub_workout_group": [
+        {
+            "name": "Focus",
+            "description": "Enhance mental clarity, attention span, and ability to maintain deep concentration.",
+            "sub_workouts": [
+                {
+                    "name": "Single-Point Focus",
+                    "duration": "5 minutes",
+                    "intensity": "Low",
+                    "description": "Stare at a fixed object without blinking to train deep focus.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Peripheral Awareness Training",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Keep focus on a central point while becoming aware of movements in peripheral vision.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Memory Recall Challenge",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Memorize a pattern, phrase, or object placements and recall them after a delay.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Noise Filtering",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Listen to multiple sounds and train your brain to filter out distractions.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Visualization Tracking",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Track moving objects while maintaining awareness of background details.",
+                    "difficulty_range": [3, 5]
+                }
+            ]
+        },
+        {
+            "name": "Advanced Focus Techniques",
+            "description": "Train the mind to maintain extreme levels of concentration, awareness, and cognitive processing under stress.",
+            "sub_workouts": [
+                {
+                    "name": "Micro-Saccade Training",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Track small, fast-moving objects with your eyes to strengthen focus and peripheral awareness.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Split Attention Drill",
+                    "duration": "15 minutes",
+                    "intensity": "High",
+                    "description": "Engage in two separate cognitive tasks simultaneously (e.g., reading while solving a math problem).",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Auditory Overload Focus",
+                    "duration": "10 minutes",
+                    "intensity": "High",
+                    "description": "Maintain deep focus while multiple audio distractions (music, conversations, white noise) play in the background.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Blindfolded Object Tracking",
+                    "duration": "15 minutes",
+                    "intensity": "Elite",
+                    "description": "Memorize the location of multiple objects, then move them while blindfolded and recall their positions.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "Extreme Decision Speed Test",
+                    "duration": "20 minutes",
+                    "intensity": "Elite",
+                    "description": "Perform rapid-fire decision-making exercises under intense pressure and unpredictable scenarios.",
+                    "difficulty_range": [8, 10]
+                }
+            ]
+        },
+        {
+            "name": "Psi Focus Techniques",
+            "description": "Expand perception, heighten awareness, and surpass cognitive limitations through psionic attunement.",
+            "sub_workouts": [
+                {
+                    "name": "Etheric Sight Activation",
+                    "duration": "20 minutes",
+                    "intensity": "Extreme",
+                    "description": "Train peripheral and energetic sight to perceive subtle energy movements in your environment.",
+                    "difficulty_range": [8, 12]
+                },
+                {
+                    "name": "Quantum Focus Lock",
+                    "duration": "30 minutes",
+                    "intensity": "Psi-Tier",
+                    "description": "Focus deeply on a single object, expanding awareness of subatomic vibration and time dilation effects.",
+                    "difficulty_range": [9, 13]
+                },
+                {
+                    "name": "Neural Frequency Resonance",
+                    "duration": "40 minutes",
+                    "intensity": "Psi-Mastery",
+                    "description": "Align cognitive frequencies with external psi-fields to interface with higher-dimensional thought.",
+                    "difficulty_range": [10, 14]
+                },
+                {
+                    "name": "No-Mind Stream Entry",
+                    "duration": "45 minutes",
+                    "intensity": "Psi-Tier",
+                    "description": "Eliminate all internal thought and synchronize your awareness with the collective mindstream.",
+                    "difficulty_range": [11, 15]
+                },
+                {
+                    "name": "Astral Cognition Expansion",
+                    "duration": "60 minutes",
+                    "intensity": "Psi-Mastery",
+                    "description": "Extend focused awareness beyond the physical plane, perceiving multidimensional information fields.",
+                    "difficulty_range": [12, 16]
+                }
+            ]
+        }
+    ]
+}

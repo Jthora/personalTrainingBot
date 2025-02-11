@@ -1,0 +1,480 @@
+{
+    "sub_workout_groups": [
+        {
+            "name": "Treadmill Endurance Protocols",
+            "description": "Interval running to build endurance.",
+            "sub_workouts": [
+                {
+                    "name": "10-minute endurance run",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Run at a steady pace for 10 minutes.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "20-minute endurance run",
+                    "duration": "20 minutes",
+                    "intensity": "Moderate",
+                    "description": "Run at a steady pace for 20 minutes.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "30-minute endurance run",
+                    "duration": "30 minutes",
+                    "intensity": "Moderate",
+                    "description": "Run at a steady pace for 30 minutes.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "40-minute endurance run",
+                    "duration": "40 minutes",
+                    "intensity": "Moderate",
+                    "description": "Run at a steady pace for 40 minutes.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "50-minute endurance run",
+                    "duration": "50 minutes",
+                    "intensity": "Moderate",
+                    "description": "Run at a steady pace for 50 minutes.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "1-hour endurance run",
+                    "duration": "1 hour",
+                    "intensity": "Moderate",
+                    "description": "Run at a steady pace for 1 hour.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "1.5-hour endurance run",
+                    "duration": "1.5 hours",
+                    "intensity": "Moderate",
+                    "description": "Run at a steady pace for 1.5 hours.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "2-hour endurance run",
+                    "duration": "2 hours",
+                    "intensity": "Moderate",
+                    "description": "Run at a steady pace for 2 hours.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "2.5-hour endurance run",
+                    "duration": "2.5 hours",
+                    "intensity": "Moderate",
+                    "description": "Run at a steady pace for 2.5 hours.",
+                    "difficulty_range": [9, 11]
+                },
+                {
+                    "name": "3-hour endurance run",
+                    "duration": "3 hours",
+                    "intensity": "Moderate",
+                    "description": "Run at a steady pace for 3 hours.",
+                    "difficulty_range": [10, 12]
+                }
+            ]
+        },
+        {
+            "name": "Cycling Endurance Protocols",
+            "description": "Long-distance cycling to build endurance.",
+            "sub_workouts": [
+                {
+                    "name": "30-minute cycling",
+                    "duration": "30 minutes",
+                    "intensity": "Moderate",
+                    "description": "Cycle at a steady pace for 30 minutes.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "1-hour cycling",
+                    "duration": "1 hour",
+                    "intensity": "Moderate",
+                    "description": "Cycle at a steady pace for 1 hour.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "1.5-hour cycling",
+                    "duration": "1.5 hours",
+                    "intensity": "Moderate",
+                    "description": "Cycle at a steady pace for 1.5 hours.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "2-hour cycling",
+                    "duration": "2 hours",
+                    "intensity": "Moderate",
+                    "description": "Cycle at a steady pace for 2 hours.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "2.5-hour cycling",
+                    "duration": "2.5 hours",
+                    "intensity": "Moderate",
+                    "description": "Cycle at a steady pace for 2.5 hours.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "3-hour cycling",
+                    "duration": "3 hours",
+                    "intensity": "Moderate",
+                    "description": "Cycle at a steady pace for 3 hours.",
+                    "difficulty_range": [6, 8]
+                }
+            ]
+        },
+        {
+            "name": "Swimming Endurance Protocols",
+            "description": "Long-distance swimming to build endurance.",
+            "sub_workouts": [
+                {
+                    "name": "15-minute swim",
+                    "duration": "15 minutes",
+                    "intensity": "Moderate",
+                    "description": "Swim at a steady pace for 15 minutes.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "30-minute swim",
+                    "duration": "30 minutes",
+                    "intensity": "Moderate",
+                    "description": "Swim at a steady pace for 30 minutes.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "45-minute swim",
+                    "duration": "45 minutes",
+                    "intensity": "Moderate",
+                    "description": "Swim at a steady pace for 45 minutes.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "1-hour swim",
+                    "duration": "1 hour",
+                    "intensity": "Moderate",
+                    "description": "Swim at a steady pace for 1 hour.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "1.5-hour swim",
+                    "duration": "1.5 hours",
+                    "intensity": "Moderate",
+                    "description": "Swim at a steady pace for 1.5 hours.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "2-hour swim",
+                    "duration": "2 hours",
+                    "intensity": "Moderate",
+                    "description": "Swim at a steady pace for 2 hours.",
+                    "difficulty_range": [6, 8]
+                }
+            ]
+        },
+        {
+            "name": "Bodyweight Endurance Circuits",
+            "description": "High-repetition bodyweight exercises to build endurance.",
+            "sub_workouts": [
+                {
+                    "name": "10-minute bodyweight circuit",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform a circuit of bodyweight exercises for 10 minutes.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "20-minute bodyweight circuit",
+                    "duration": "20 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform a circuit of bodyweight exercises for 20 minutes.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "30-minute bodyweight circuit",
+                    "duration": "30 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform a circuit of bodyweight exercises for 30 minutes.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "40-minute bodyweight circuit",
+                    "duration": "40 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform a circuit of bodyweight exercises for 40 minutes.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "50-minute bodyweight circuit",
+                    "duration": "50 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform a circuit of bodyweight exercises for 50 minutes.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "1-hour bodyweight circuit",
+                    "duration": "1 hour",
+                    "intensity": "Moderate",
+                    "description": "Perform a circuit of bodyweight exercises for 1 hour.",
+                    "difficulty_range": [6, 8]
+                }
+            ]
+        },
+        {
+            "name": "Stationary Bike Endurance",
+            "description": "Long-duration stationary bike sessions to build endurance.",
+            "sub_workouts": [
+                {
+                    "name": "15-minute stationary bike ride",
+                    "duration": "15 minutes",
+                    "intensity": "Moderate",
+                    "description": "Ride a stationary bike at a steady pace for 15 minutes.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "30-minute stationary bike ride",
+                    "duration": "30 minutes",
+                    "intensity": "Moderate",
+                    "description": "Ride a stationary bike at a steady pace for 30 minutes.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "45-minute stationary bike ride",
+                    "duration": "45 minutes",
+                    "intensity": "Moderate",
+                    "description": "Ride a stationary bike at a steady pace for 45 minutes.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "1-hour stationary bike ride",
+                    "duration": "1 hour",
+                    "intensity": "Moderate",
+                    "description": "Ride a stationary bike at a steady pace for 1 hour.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "1.5-hour stationary bike ride",
+                    "duration": "1.5 hours",
+                    "intensity": "Moderate",
+                    "description": "Ride a stationary bike at a steady pace for 1.5 hours.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "2-hour stationary bike ride",
+                    "duration": "2 hours",
+                    "intensity": "Moderate",
+                    "description": "Ride a stationary bike at a steady pace for 2 hours.",
+                    "difficulty_range": [6, 9]
+                }
+            ]
+        },
+        {
+            "name": "Quiet Ninja Cardio",
+            "description": "Low-impact, quiet cardio exercises to build endurance without disturbing others.",
+            "sub_workouts": [
+                {
+                    "name": "1-minute quiet ninja cardio",
+                    "duration": "1 minute",
+                    "intensity": "Moderate",
+                    "description": "Perform low-impact, quiet cardio exercises for 1 minute.",
+                    "difficulty_range": [0, 1]
+                },
+                {
+                    "name": "2-minute quiet ninja cardio",
+                    "duration": "2 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform low-impact, quiet cardio exercises for 2 minutes.",
+                    "difficulty_range": [0, 2]
+                },
+                {
+                    "name": "3-minute quiet ninja cardio",
+                    "duration": "3 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform low-impact, quiet cardio exercises for 3 minutes.",
+                    "difficulty_range": [0, 2]
+                },
+                {
+                    "name": "5-minute quiet ninja cardio",
+                    "duration": "5 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform low-impact, quiet cardio exercises for 5 minutes.",
+                    "difficulty_range": [0, 3]
+                },
+                {
+                    "name": "8-minute quiet ninja cardio",
+                    "duration": "8 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform low-impact, quiet cardio exercises for 8 minutes.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "10-minute quiet ninja cardio",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform low-impact, quiet cardio exercises for 10 minutes.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "13-minute quiet ninja cardio",
+                    "duration": "13 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform low-impact, quiet cardio exercises for 13 minutes.",
+                    "difficulty_range": [1, 4]
+                },
+                {
+                    "name": "20-minute quiet ninja cardio",
+                    "duration": "20 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform low-impact, quiet cardio exercises for 20 minutes.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "21-minute quiet ninja cardio",
+                    "duration": "21 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform low-impact, quiet cardio exercises for 21 minutes.",
+                    "difficulty_range": [2, 5]
+                },
+                {
+                    "name": "30-minute quiet ninja cardio",
+                    "duration": "30 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform low-impact, quiet cardio exercises for 30 minutes.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "34-minute quiet ninja cardio",
+                    "duration": "34 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform low-impact, quiet cardio exercises for 34 minutes.",
+                    "difficulty_range": [3, 6]
+                },
+                {
+                    "name": "40-minute quiet ninja cardio",
+                    "duration": "40 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform low-impact, quiet cardio exercises for 40 minutes.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "50-minute quiet ninja cardio",
+                    "duration": "50 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform low-impact, quiet cardio exercises for 50 minutes.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "1-hour quiet ninja cardio",
+                    "duration": "1 hour",
+                    "intensity": "Moderate",
+                    "description": "Perform low-impact, quiet cardio exercises for 1 hour.",
+                    "difficulty_range": [6, 9]
+                }
+            ]
+        },
+        {
+            "name": "Dynamic Bodyweight Cardio",
+            "description": "High-energy bodyweight cardio exercises to build endurance.",
+            "sub_workouts": [
+                {
+                    "name": "1-minute dynamic bodyweight cardio",
+                    "duration": "1 minute",
+                    "intensity": "Moderate",
+                    "description": "Perform high-energy bodyweight cardio exercises for 1 minute.",
+                    "difficulty_range": [0, 1]
+                },
+                {
+                    "name": "2-minute dynamic bodyweight cardio",
+                    "duration": "2 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform high-energy bodyweight cardio exercises for 2 minutes.",
+                    "difficulty_range": [0, 1]
+                },
+                {
+                    "name": "3-minute dynamic bodyweight cardio",
+                    "duration": "3 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform high-energy bodyweight cardio exercises for 3 minutes.",
+                    "difficulty_range": [0, 2]
+                },
+                {
+                    "name": "5-minute dynamic bodyweight cardio",
+                    "duration": "5 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform high-energy bodyweight cardio exercises for 5 minutes.",
+                    "difficulty_range": [1, 2]
+                },
+                {
+                    "name": "8-minute dynamic bodyweight cardio",
+                    "duration": "8 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform high-energy bodyweight cardio exercises for 8 minutes.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "10-minute dynamic bodyweight cardio",
+                    "duration": "10 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform high-energy bodyweight cardio exercises for 10 minutes.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "13-minute dynamic bodyweight cardio",
+                    "duration": "13 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform high-energy bodyweight cardio exercises for 13 minutes.",
+                    "difficulty_range": [1, 4]
+                },
+                {
+                    "name": "20-minute dynamic bodyweight cardio",
+                    "duration": "20 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform high-energy bodyweight cardio exercises for 20 minutes.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "21-minute dynamic bodyweight cardio",
+                    "duration": "21 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform high-energy bodyweight cardio exercises for 21 minutes.",
+                    "difficulty_range": [2, 5]
+                },
+                {
+                    "name": "30-minute dynamic bodyweight cardio",
+                    "duration": "30 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform high-energy bodyweight cardio exercises for 30 minutes.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "34-minute dynamic bodyweight cardio",
+                    "duration": "34 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform high-energy bodyweight cardio exercises for 34 minutes.",
+                    "difficulty_range": [3, 6]
+                },
+                {
+                    "name": "40-minute dynamic bodyweight cardio",
+                    "duration": "40 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform high-energy bodyweight cardio exercises for 40 minutes.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "50-minute dynamic bodyweight cardio",
+                    "duration": "50 minutes",
+                    "intensity": "Moderate",
+                    "description": "Perform high-energy bodyweight cardio exercises for 50 minutes.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "1-hour dynamic bodyweight cardio",
+                    "duration": "1 hour",
+                    "intensity": "Moderate",
+                    "description": "Perform high-energy bodyweight cardio exercises for 1 hour.",
+                    "difficulty_range": [6, 8]
+                }
+            ]
+        }
+    ]
+}

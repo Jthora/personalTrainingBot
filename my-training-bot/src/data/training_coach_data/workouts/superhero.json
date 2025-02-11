@@ -5,8 +5,8 @@
         "strength_and_power": "strength_and_power.json",
         "agility_and_reflex": "agility_and_reflex.json",
         "combat_and_survival": "combat_and_survival.json",
-        "endurance_and_survival ": "endurance_and_survival.json",
-        "psionic_and_Sensory": "psionic_and_Sensory.json",
+        "endurance_and_survival": "endurance_and_survival.json",
+        "psionic_and_sensory": "psionic_and_sensory.json",
         "super_and_hyper": "super_and_hyper.json"
     }
 }

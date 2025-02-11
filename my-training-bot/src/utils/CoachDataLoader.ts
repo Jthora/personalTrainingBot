@@ -116,6 +116,10 @@ export const fetchAllWorkoutsInCategory = async (category: string): Promise<Work
         for (const subCategoryId in workoutSubCategoryPaths) {
             if (subCategoryId.startsWith(category)) {
                 const subCategoryData = await workoutSubCategoryPaths[subCategoryId]();
+                if (!subCategoryData.workout_groups) {
+                    console.warn(`Sub-category ${subCategoryId} has no workout groups.`);
+                    continue;
+                }
                 subCategoryData.workout_groups.forEach((group: WorkoutGroup) => {
                     workoutsList.push(...group.workouts);
                 });
@@ -327,6 +331,33 @@ class CoachDataLoader {
     parseDifficultyRange(difficultyRange: [number, number]): { min: number, max: number } {
         const [min, max] = difficultyRange;
         return { min, max };
+    }
+
+    async fetchAllWorkoutsInCategory(category: string): Promise<Workout[] | null> {
+        try {
+            const categoryData = await workoutCategoryPaths[category]();
+            if (!categoryData) {
+                console.warn(`Category ${category} not found.`);
+                return null;
+            }
+            const workoutsList: Workout[] = [];
+            for (const subCategoryId in workoutSubCategoryPaths) {
+                if (subCategoryId.startsWith(category)) {
+                    const subCategoryData = await workoutSubCategoryPaths[subCategoryId]();
+                    if (!subCategoryData.workout_groups) {
+                        console.warn(`Sub-category ${subCategoryId} has no workout groups.`);
+                        continue;
+                    }
+                    subCategoryData.workout_groups.forEach((group: WorkoutGroup) => {
+                        workoutsList.push(...group.workouts);
+                    });
+                }
+            }
+            return workoutsList;
+        } catch (error) {
+            console.error(`Failed to fetch all workouts in category ${category}:`, error);
+            return null;
+        }
     }
 
     async fetchAllDifficultyLevels(): Promise<WorkoutDifficultyLevel[]> {

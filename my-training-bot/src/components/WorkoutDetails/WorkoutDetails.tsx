@@ -65,7 +65,7 @@ const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ onSkipWorkout, onComple
                         <div className={styles.subDetails}>
                             <p>⏱️ {workout.duration}</p>
                             <p>🔥 {workout.intensity} Intensity</p>
-                            <p>📈 Lv: [{workout.difficulty_range[0]} - {workout.difficulty_range[1]}]</p>
+                            <p>📈 Level {workout.difficulty_range[0]} - {workout.difficulty_range[1]}</p>
                         </div>
                     </div>
                     <div className={styles.right}>
@@ -73,8 +73,10 @@ const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ onSkipWorkout, onComple
                             ref={timerRef}
                             onComplete={handleTimeoutWorkout}
                         />
-                        <button onClick={handleCompleteWorkout}>Complete ✅</button>
-                        <button onClick={handleSkipWorkout}>Skip ⏭️</button>
+                        <div className={styles.workoutDetailsButtonGroup}>
+                            <button className={styles.workoutDetailsButton} onClick={handleCompleteWorkout}>✅</button>
+                            <button className={styles.workoutDetailsButton} onClick={handleSkipWorkout}>⏭️</button>
+                        </div>
                     </div>
                 </div>
                 <div className={styles.bottom}>

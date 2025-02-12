@@ -23,7 +23,6 @@
 .right {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: flex-end;
     text-align: right;
     gap: 8px;
@@ -59,11 +58,32 @@
     color: #666;
 }
 
-button {
+.workoutDetailsButtonGroup {
+    margin-top: 16px;
+    gap: 8px;
+}
+
+.workoutDetailsButton {
     font-family: 'Aldrich', sans-serif;
-    font-weight: bold;
+    font-size: 4em;
+    margin: 2px;
+    padding: 0;
+    color: #000000;
+    background: none;
+    border-style: none;
+    line-height: 1em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.workoutDetailsButton:hover {
+    transform: translateY(-2px);
+}
+
+.workoutDetailsButton:active {
+    transform: translateY(0);
 }
 
 .subDetails {
-    line-height: .5em;
+    line-height: .2em;
 }

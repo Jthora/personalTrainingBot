@@ -85,7 +85,7 @@ const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
                                 <input type="checkbox" checked={isHeld} onChange={handleHoldChange} />
                                 Hold
                             </label>
-                            <button onClick={onDealNextCard}>Deal Next Card 🎴</button>
+                            <button className={`${styles.cardButton}`} onClick={onDealNextCard}>Next Card ⏭🎴</button>
                         </div>
                     </div>
                 </div>

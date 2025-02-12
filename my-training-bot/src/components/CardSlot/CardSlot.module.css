@@ -56,3 +56,29 @@
     padding: 1px 15px;
     font-size: 0.8em;
 }
+
+.cardButton {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 1em;
+    margin: 10px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cardButton:hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+    transform: translateY(-2px);
+}
+
+.cardButton:active {
+    background: linear-gradient(135deg, #003f7f, #002a5c);
+    transform: translateY(0);
+}

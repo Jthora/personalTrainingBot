@@ -7,7 +7,7 @@ import { modulePaths } from "./modulePaths"; // Import the generated module path
 import { subModulePaths } from "./subModulePaths"; // Import the generated submodule paths
 import { cardDeckPaths } from "./cardDeckPaths"; // Import the generated card deck paths
 
-class DataLoader {
+class CardDataLoader {
     // Load all data and cache it
     async loadAllData(onProgress: () => void): Promise<TrainingModule[]> {
         try {
@@ -131,4 +131,4 @@ class DataLoader {
     }
 }
 
-export default DataLoader;
+export default CardDataLoader;

@@ -1,16 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import CoachDialog from '../CoachDialog/CoachDialog';
-import SubWorkoutList from '../SubWorkoutList/SubWorkoutList';
+import WorkoutList from '../WorkoutList/WorkoutList';
 import styles from './Sidebar.module.css';
-import { useWorkoutSchedule } from '../../hooks/useWorkoutSchedule';
-import { SubWorkout } from '../../types/SubWorkout';
+import useWorkoutSchedule from '../../hooks/useWorkoutSchedule';
+import { Workout } from '../../types/WorkoutCategory';
 
 const Sidebar: React.FC = () => {
-    const { schedule } = useWorkoutSchedule();
-    const [currentWorkout, setCurrentWorkout] = useState<SubWorkout | null>(schedule[0] || null);
+    const { schedule, loadSchedule, isLoading } = useWorkoutSchedule();
+    const [currentWorkout, setCurrentWorkout] = useState<Workout | null>(schedule.workouts[0] || null);
 
     useEffect(() => {
-        setCurrentWorkout(schedule[0] || null);
+        loadSchedule(); // Load the workout schedule on component mount
+    }, [loadSchedule]);
+
+    useEffect(() => {
+        setCurrentWorkout(schedule.workouts[0] || null);
     }, [schedule]);
 
     const handleCompleteWorkout = () => {
@@ -22,8 +26,12 @@ const Sidebar: React.FC = () => {
     };
 
     const handleWorkoutComplete = () => {
-        setCurrentWorkout(schedule[0] || null);
+        setCurrentWorkout(schedule.workouts[0] || null);
     };
+
+    if (isLoading) {
+        return <div className={styles.loading}>Loading...</div>;
+    }
 
     return (
         <div className={styles.sidebar}>
@@ -32,7 +40,7 @@ const Sidebar: React.FC = () => {
                 onComplete={handleCompleteWorkout} 
                 onSkip={handleSkipWorkout} 
             />
-            <SubWorkoutList onWorkoutComplete={handleWorkoutComplete} />
+            <WorkoutList onWorkoutComplete={handleWorkoutComplete} />
         </div>
     );
 };

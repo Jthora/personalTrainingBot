@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import coachTrainingCache from '../../cache/CoachTrainingCache';
+import WorkoutCategoryCache from '../../cache/WorkoutCategoryCache';
 import DifficultySettingsStore from '../../store/DifficultySettingsStore';
 import styles from './DifficultySettings.module.css';
 
@@ -38,10 +38,10 @@ const DifficultySettings: React.FC = () => {
     useEffect(() => {
         const loadDifficultyLevels = async () => {
             // Wait for the cache to be ready
-            while (coachTrainingCache.isLoading()) {
+            while (WorkoutCategoryCache.isLoading()) {
                 await new Promise(resolve => setTimeout(resolve, 100));
             }
-            const levels = coachTrainingCache.getDifficultyLevels();
+            const levels = WorkoutCategoryCache.getDifficultyLevels();
             setDifficultyLevels(levels); // Ensure levels are strings
 
             // Load the selected difficulty from localStorage

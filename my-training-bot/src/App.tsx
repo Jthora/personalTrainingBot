@@ -3,8 +3,9 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import AppRoutes from './routes/Routes';
 import InitialDataLoader from './utils/InitialDataLoader';
 import LoadingMessage from './components/LoadingMessage/LoadingMessage'; // Import the new component
+import { WorkoutScheduleProvider } from './context/WorkoutScheduleContext';
 
-function App() {
+const App: React.FC = () => {
   const [isDataLoaded, setIsDataLoaded] = useState(false);
   const [loadingProgress, setLoadingProgress] = useState(0); // Add loading progress state
 
@@ -22,9 +23,11 @@ function App() {
   }
 
   return (
-    <Router>
-      <AppRoutes />
-    </Router>
+    <WorkoutScheduleProvider>
+      <Router>
+        <AppRoutes />
+      </Router>
+    </WorkoutScheduleProvider>
   );
 }
 

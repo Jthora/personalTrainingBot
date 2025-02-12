@@ -25,5 +25,5 @@ export interface Workout {
     description: string;
     duration: number;
     intensity: string; // Changed from difficulty to intensity
-    difficultyRange: [number, number];
+    difficulty_range: [number, number];
 }

@@ -1,17 +1,24 @@
-import React, { useRef } from 'react';
-import { Workout } from '../../types/WorkoutCategory';
-import styles from './SubWorkoutDetails.module.css';
-import SubWorkoutTimer from '../SubWorkoutTimer/SubWorkoutTimer';
+import React, { useEffect, useRef } from 'react';
+import styles from './WorkoutDetails.module.css';
+import WorkoutTimer from '../WorkoutTimer/WorkoutTimer';
 import { playCompleteSound, playSkipSound, playTimeoutSound } from '../../utils/AudioPlayer';
+import useWorkoutSchedule from '../../hooks/useWorkoutSchedule';
 
-interface SubWorkoutDetailsProps {
-    workout: Workout | null;
+interface WorkoutDetailsProps {
     onSkipWorkout: () => void;
     onCompleteWorkout: () => void;
 }
 
-const SubWorkoutDetails: React.FC<SubWorkoutDetailsProps> = ({ workout, onSkipWorkout, onCompleteWorkout }) => {
+const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ onSkipWorkout, onCompleteWorkout }) => {
+    const { schedule, isLoading } = useWorkoutSchedule();
+    const workout = schedule.workouts[0] || null;
     const timerRef = useRef<{ resetTimer: () => void }>(null);
+
+    useEffect(() => {
+        if (workout) {
+            timerRef.current?.resetTimer();
+        }
+    }, [workout]);
 
     const handleCompleteWorkout = () => {
         playCompleteSound();
@@ -30,6 +37,10 @@ const SubWorkoutDetails: React.FC<SubWorkoutDetailsProps> = ({ workout, onSkipWo
         onCompleteWorkout();
     };
 
+    if (isLoading) {
+        return <div className={styles.loading}>Loading...</div>;
+    }
+
     if (!workout) {
         return <div className={styles.noWorkout}>No workout selected</div>;
     }
@@ -43,11 +54,11 @@ const SubWorkoutDetails: React.FC<SubWorkoutDetailsProps> = ({ workout, onSkipWo
                         <div className={styles.subDetails}>
                             <p>⏱️ {workout.duration}</p>
                             <p>🔥 {workout.intensity} Intensity</p>
-                            <p>📈 Lv: [{workout.difficultyRange[0]} - {workout.difficultyRange[1]}]</p>
+                            <p>📈 Lv: [{workout.difficulty_range[0]} - {workout.difficulty_range[1]}]</p>
                         </div>
                     </div>
                     <div className={styles.right}>
-                        <SubWorkoutTimer
+                        <WorkoutTimer
                             ref={timerRef}
                             onComplete={handleTimeoutWorkout}
                         />
@@ -60,8 +71,7 @@ const SubWorkoutDetails: React.FC<SubWorkoutDetailsProps> = ({ workout, onSkipWo
                 </div>
             </div>
         </div>
-        
     );
 };
 
-export default SubWorkoutDetails;
+export default WorkoutDetails;

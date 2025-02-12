@@ -261,121 +261,109 @@ export const fetchPreviousDifficultyLevel = (currentLevelName: string): WorkoutD
     }
 }
 
-class CoachDataLoader {
-    async loadWorkoutCategories(): Promise<WorkoutCategory[]> {
-        const categories: WorkoutCategory[] = [];
+class WorkoutDataLoader {
+    async loadAllData(onProgress: () => void): Promise<WorkoutCategory[]> {
+        try {
+            console.log("Starting to load all workout data...");
+            const workoutCategories = await this.loadWorkoutCategories(onProgress);
+            console.log(`Fetched ${workoutCategories.length} workout categories.`);
+            return workoutCategories;
+        } catch (error) {
+            console.error("Failed to load all workout data:", error);
+            return [];
+        }
+    }
+
+    async loadWorkoutCategories(onProgress: () => void): Promise<WorkoutCategory[]> {
+        const workoutCategories: WorkoutCategory[] = [];
 
         for (const categoryId in workoutCategoryPaths) {
             try {
                 const categoryData = await workoutCategoryPaths[categoryId]();
-                if (!categoryData || Object.keys(categoryData).length === 0) {
-                    console.warn(`Category ${categoryId} is empty.`);
-                    continue;
+                if (typeof categoryData.subcategories !== 'object' || Array.isArray(categoryData.subcategories)) {
+                    throw new Error(`Invalid subcategories format for category ${categoryId}`);
                 }
-                const subCategories = await this.loadSubCategories(categoryId, categoryData.subcategories);
-                categories.push({
-                    id: categoryId,
+                const subCategories: WorkoutSubCategory[] = await Promise.all(
+                    Object.keys(categoryData.subcategories).map(async (subCategoryId: string) => {
+                        try {
+                            const subCategoryData = await workoutSubCategoryPaths[`${categoryId}_${subCategoryId}`]();
+
+                            const workoutGroups: WorkoutGroup[] = subCategoryData.workout_groups.map((group: any) => ({
+                                id: group.name.toLowerCase().replace(/\s+/g, '_'),
+                                name: group.name,
+                                description: group.description,
+                                workouts: group.workouts.map((workout: any) => ({
+                                    id: workout.name.toLowerCase().replace(/\s+/g, '_'),
+                                    name: workout.name,
+                                    description: workout.description,
+                                    duration: workout.duration,
+                                    intensity: workout.intensity,
+                                    difficulty_range: this.parseDifficultyRange(workout.difficulty_range)
+                                }))
+                            }));
+
+                            onProgress(); // Update progress
+
+                            return {
+                                id: subCategoryData.id,
+                                name: subCategoryData.name,
+                                description: subCategoryData.description,
+                                workoutGroups: workoutGroups
+                            };
+                        } catch (error) {
+                            console.error(`Failed to load subcategory ${subCategoryId}:`, error);
+                            return this.createFallbackSubCategory(subCategoryId);
+                        }
+                    })
+                );
+
+                workoutCategories.push({
+                    id: categoryData.id,
                     name: categoryData.name,
                     description: categoryData.description,
                     subCategories: subCategories
                 });
             } catch (error) {
-                console.error(`Failed to load category ${categoryId}:`, error);
+                console.error(`Failed to load workout category ${categoryId}:`, error);
+                workoutCategories.push(this.createFallbackCategory(categoryId));
             }
         }
 
-        return categories;
+        return workoutCategories;
     }
 
-    async loadSubCategories(categoryId: string, subCategoryPaths: { [key: string]: string }): Promise<WorkoutSubCategory[]> {
-        const subCategories: WorkoutSubCategory[] = [];
+    private createFallbackCategory(categoryId: string): WorkoutCategory {
+        return {
+            id: categoryId,
+            name: "Unknown Category",
+            description: "No description available",
+            subCategories: []
+        };
+    }
 
-        for (const subCategoryId in subCategoryPaths) {
-            try {
-                const subCategoryData = await workoutSubCategoryPaths[`${categoryId}_${subCategoryId}`]();
-                if (!subCategoryData || Object.keys(subCategoryData).length === 0) {
-                    console.warn(`Sub-category ${subCategoryId} is empty.`);
-                    continue;
-                }
-                if (!subCategoryData.workout_groups) {
-                    console.warn(`Sub-category ${subCategoryId} has no workout groups.`);
-                    continue;
-                }
-                const workoutGroups = subCategoryData.workout_groups.map((group: any) => ({
-                    id: group.name.toLowerCase().replace(/\s+/g, '_'),
-                    name: group.name,
-                    description: group.description,
-                    workouts: group.workouts.map((workout: any) => ({
-                        id: workout.name.toLowerCase().replace(/\s+/g, '_'),
-                        name: workout.name,
-                        description: workout.description,
-                        duration: workout.duration,
-                        intensity: workout.intensity, // Changed from difficulty to intensity
-                        difficultyRange: this.parseDifficultyRange(workout.difficulty_range)
-                    }))
-                }));
-                subCategories.push({
-                    id: subCategoryId,
-                    name: subCategoryData.name,
-                    description: subCategoryData.description,
-                    workoutGroups: workoutGroups
-                });
-            } catch (error) {
-                console.error(`Failed to load sub-category ${subCategoryId}:`, error);
-            }
+    private createFallbackSubCategory(subCategoryId: string): WorkoutSubCategory {
+        return {
+            id: subCategoryId,
+            name: "Unknown Subcategory",
+            description: "No description available",
+            workoutGroups: []
+        };
+    }
+
+    private parseDifficultyRange(difficultyRange: [number, number]): [number, number] {
+        if (!Array.isArray(difficultyRange) || difficultyRange.length !== 2) {
+            console.error(`Invalid difficulty range format. Expected an array of two numbers.`);
+            return [1, 1];
         }
 
-        return subCategories;
-    }
-
-    parseDifficultyRange(difficultyRange: [number, number]): { min: number, max: number } {
-        const [min, max] = difficultyRange;
-        return { min, max };
-    }
-
-    async fetchAllWorkoutsInCategory(category: string): Promise<Workout[] | null> {
-        try {
-            const categoryData = await workoutCategoryPaths[category]();
-            if (!categoryData) {
-                console.warn(`Category ${category} not found.`);
-                return null;
-            }
-            const workoutsList: Workout[] = [];
-            for (const subCategoryId in workoutSubCategoryPaths) {
-                if (subCategoryId.startsWith(category)) {
-                    const subCategoryData = await workoutSubCategoryPaths[subCategoryId]();
-                    if (!subCategoryData.workout_groups) {
-                        console.warn(`Sub-category ${subCategoryId} has no workout groups.`);
-                        continue;
-                    }
-                    subCategoryData.workout_groups.forEach((group: WorkoutGroup) => {
-                        workoutsList.push(...group.workouts);
-                    });
-                }
-            }
-            return workoutsList;
-        } catch (error) {
-            console.error(`Failed to fetch all workouts in category ${category}:`, error);
-            return null;
+        const [minDifficulty, maxDifficulty] = difficultyRange;
+        if (typeof minDifficulty !== 'number' || typeof maxDifficulty !== 'number' || minDifficulty > maxDifficulty) {
+            console.error(`Invalid difficulty range values. Ensure min and max are numbers and min is less than or equal to max.`);
+            return [1, 1];
         }
-    }
 
-    async fetchAllDifficultyLevels(): Promise<WorkoutDifficultyLevel[]> {
-        try {
-            return difficultyLevels.map(level => ({
-                name: level.name,
-                description: level.description,
-                military_soldier: level.military_soldier,
-                athlete_archetype: level.athlete_archetype,
-                level: level.level,
-                pft: level.pft,
-                requirements: level.requirements
-            })) as WorkoutDifficultyLevel[];
-        } catch (error) {
-            console.error("Failed to fetch difficulty levels:", error);
-            return [];
-        }
+        return difficultyRange;
     }
 }
 
-export default CoachDataLoader;
+export default WorkoutDataLoader;

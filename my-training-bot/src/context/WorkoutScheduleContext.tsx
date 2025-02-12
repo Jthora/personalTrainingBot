@@ -1,14 +1,16 @@
-import React, { createContext, useState, useEffect } from 'react';
+import React, { createContext, useState, useEffect, useCallback } from 'react';
 import { createWorkoutSchedule } from '../utils/WorkoutScheduleCreator';
-import { Workout } from '../types/WorkoutCategory';
+import { WorkoutSchedule } from '../types/WorkoutSchedule';
 
 interface WorkoutScheduleContextProps {
-    schedule: Workout[];
-    createRandomWorkout: () => void;
-    shuffleCurrentWorkout: () => void;
-    addWorkoutToEnd: (workout: Workout) => void;
+    schedule: WorkoutSchedule;
+    loadSchedule: () => Promise<void>;
     completeCurrentWorkout: () => void;
     skipCurrentWorkout: () => void;
+    resetSchedule: () => void;
+    updateSchedule: (newSchedule: WorkoutSchedule) => void;
+    isLoading: boolean;
+    error: string | null;
 }
 
 const WorkoutScheduleContext = createContext<WorkoutScheduleContextProps | undefined>(undefined);
@@ -18,52 +20,51 @@ interface WorkoutScheduleProviderProps {
 }
 
 export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = ({ children }) => {
-    const [schedule, setSchedule] = useState<Workout[]>([]);
+    const [schedule, setSchedule] = useState<WorkoutSchedule>({ date: '', workouts: [] });
+    const [isLoading, setIsLoading] = useState<boolean>(true);
+    const [error, setError] = useState<string | null>(null);
 
-    useEffect(() => {
-        const initializeSchedule = async () => {
+    const loadSchedule = useCallback(async () => {
+        setIsLoading(true);
+        setError(null);
+        try {
             const newSchedule = await createWorkoutSchedule();
-            setSchedule(newSchedule.workouts as unknown as Workout[]);
-        };
-        initializeSchedule();
+            setSchedule(newSchedule);
+        } catch {
+            setError('WorkoutScheduleContext Failed to load schedule');
+        } finally {
+            setIsLoading(false);
+        }
     }, []);
 
-    const createRandomWorkout = async () => {
-        const newSchedule = await createWorkoutSchedule();
-        setSchedule(newSchedule.workouts as unknown as Workout[]);
+    useEffect(() => {
+        loadSchedule(); // Load the workout schedule on provider mount
+    }, [loadSchedule]);
+
+    const completeCurrentWorkout = () => {
+        setSchedule(prevSchedule => ({
+            ...prevSchedule,
+            workouts: prevSchedule.workouts.slice(1)
+        }));
     };
 
-    const shuffleCurrentWorkout = () => {
-        setSchedule(prevSchedule => [...prevSchedule.sort(() => Math.random() - 0.5)]);
+    const skipCurrentWorkout = () => {
+        setSchedule(prevSchedule => ({
+            ...prevSchedule,
+            workouts: prevSchedule.workouts.slice(1)
+        }));
     };
 
-    const addWorkoutToEnd = (workout: Workout) => {
-        setSchedule(prevSchedule => [...prevSchedule, workout]);
+    const resetSchedule = () => {
+        setSchedule({ date: '', workouts: [] });
     };
 
-    const completeCurrentWorkout = async () => {
-        const newWorkout = await createWorkoutSchedule();
-        setSchedule(prevSchedule => {
-            if (prevSchedule.length > 0) {
-                return [...prevSchedule.slice(1), newWorkout.workouts[0] as unknown as Workout];
-            }
-            return prevSchedule;
-        });
-    };
-
-    const skipCurrentWorkout = async () => {
-        const newWorkout = await createWorkoutSchedule();
-        setSchedule(prevSchedule => {
-            if (prevSchedule.length > 1) {
-                const [current, ...rest] = prevSchedule;
-                return [...rest, current, newWorkout.workouts[0] as unknown as Workout];
-            }
-            return prevSchedule;
-        });
+    const updateSchedule = (newSchedule: WorkoutSchedule) => {
+        setSchedule(newSchedule);
     };
 
     return (
-        <WorkoutScheduleContext.Provider value={{ schedule, createRandomWorkout, shuffleCurrentWorkout, addWorkoutToEnd, completeCurrentWorkout, skipCurrentWorkout }}>
+        <WorkoutScheduleContext.Provider value={{ schedule, loadSchedule, completeCurrentWorkout, skipCurrentWorkout, resetSchedule, updateSchedule, isLoading, error }}>
             {children}
         </WorkoutScheduleContext.Provider>
     );

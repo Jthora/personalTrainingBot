@@ -398,7 +398,7 @@
 │   │       ├── skip.wav
 │   │       └── timeout.wav
 │   ├── cache
-│   │   ├── CoachTrainingCache.ts
+│   │   ├── WorkoutCategoryCache.ts
 │   │   └── TrainingModuleCache.ts
 │   ├── components
 │   │   ├── CardSelector
@@ -1061,7 +1061,7 @@
 │   ├── utils
 │   │   ├── AudioPlayer.ts
 │   │   ├── CardDealer.ts
-│   │   ├── CoachDataLoader.ts
+│   │   ├── WorkoutDataLoader.ts
 │   │   ├── DataLoader.ts
 │   │   ├── InitialDataLoader.ts
 │   │   ├── WorkoutScheduleCreator.ts

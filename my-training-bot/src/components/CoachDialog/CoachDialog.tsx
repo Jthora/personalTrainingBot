@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import styles from './CoachDialog.module.css';
 import tigerIcon from '../../assets/images/icons/tiger_fitness_god-icon-512x.png';
-import { fetchSpeech, fetchBoast, fetchGrowl } from '../../utils/CoachDataLoader';
-import SubWorkoutDetails from '../SubWorkoutDetails/SubWorkoutDetails';
-import { useWorkoutSchedule } from '../../hooks/useWorkoutSchedule';
+import { fetchSpeech, fetchBoast, fetchGrowl } from '../../utils/WorkoutDataLoader';
+import WorkoutDetails from '../WorkoutDetails/WorkoutDetails';
+import useWorkoutSchedule from '../../hooks/useWorkoutSchedule';
 import { Workout } from '../../types/WorkoutCategory';
 
 interface CoachDialogProps {
@@ -14,7 +14,7 @@ interface CoachDialogProps {
 
 const CoachDialog: React.FC<CoachDialogProps> = ({ currentWorkout, onComplete, onSkip }) => {
     const [quote, setQuote] = useState('');
-    const { completeCurrentWorkout, skipCurrentWorkout } = useWorkoutSchedule();
+    const { completeCurrentWorkout, skipCurrentWorkout, isLoading } = useWorkoutSchedule();
 
     useEffect(() => {
         const updateQuote = () => {
@@ -42,6 +42,10 @@ const CoachDialog: React.FC<CoachDialogProps> = ({ currentWorkout, onComplete, o
         onSkip();
     };
 
+    if (isLoading) {
+        return <div className={styles.loading}>Loading...</div>;
+    }
+
     return (
         <div className={styles.coachDialog}>
             <div className={styles.header}>
@@ -55,7 +59,7 @@ const CoachDialog: React.FC<CoachDialogProps> = ({ currentWorkout, onComplete, o
                 </div>
             </div>
             <div className={styles.workoutDetails}>
-                <SubWorkoutDetails workout={currentWorkout} onSkipWorkout={handleSkipWorkout} onCompleteWorkout={handleCompleteWorkout} />
+                <WorkoutDetails onSkipWorkout={handleSkipWorkout} onCompleteWorkout={handleCompleteWorkout} />
             </div>
         </div>
     );

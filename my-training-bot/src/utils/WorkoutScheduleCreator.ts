@@ -1,4 +1,4 @@
-import coachTrainingCache from '../cache/CoachTrainingCache';
+import WorkoutCategoryCache from '../cache/WorkoutCategoryCache';
 import { Workout } from '../types/WorkoutCategory';
 import { WorkoutSchedule } from '../types/WorkoutSchedule';
 
@@ -19,23 +19,23 @@ export const createWorkoutSchedule = async (options: WorkoutScheduleOptions = {}
     } = options;
 
     // Wait for the cache to be ready
-    while (coachTrainingCache.isLoading()) {
+    while (WorkoutCategoryCache.isLoading()) {
         await new Promise(resolve => setTimeout(resolve, 100));
     }
 
-    const allCategories = coachTrainingCache.getWorkoutCategories().map(category => category.id);
+    const allCategories = WorkoutCategoryCache.getWorkoutCategories().map(category => category.id);
     const selectedCategories = categories.length > 0 ? categories : allCategories;
 
     const workouts: Workout[] = [];
     for (const category of selectedCategories) {
-        const categoryWorkouts = await coachTrainingCache.fetchAllWorkoutsInCategory(category);
+        const categoryWorkouts = await WorkoutCategoryCache.fetchAllWorkoutsInCategory(category);
         if (categoryWorkouts) {
             workouts.push(...categoryWorkouts);
         }
     }
 
     const selectedWorkouts = getRandomItems(workouts, 10).map(() => {
-        return coachTrainingCache.getWeightedRandomWorkout();
+        return WorkoutCategoryCache.getWeightedRandomWorkout();
     }).filter(workout => workout !== null) as Workout[];
 
     return {

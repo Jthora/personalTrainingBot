@@ -84,28 +84,28 @@
                     "duration": "30 minutes",
                     "intensity": "Psi-Tier",
                     "description": "Extend visualization beyond the physical body, seeing in multi-layered energetic overlays.",
-                    "difficulty_range": [9, 11, 13]
+                    "difficulty_range": [9, 13]
                 },
                 {
                     "name": "Tesseract Perception Training",
                     "duration": "40 minutes",
                     "intensity": "Psi-Mastery",
                     "description": "Visualize and manipulate fourth-dimensional structures, breaking traditional spatial limitations.",
-                    "difficulty_range": [10, 12, 14]
+                    "difficulty_range": [10, 14]
                 },
                 {
                     "name": "Psi-Symbol Encoding",
                     "duration": "45 minutes",
                     "intensity": "Psi-Tier",
                     "description": "Imprint mental symbols into your consciousness for advanced subconscious programming.",
-                    "difficulty_range": [11, 13, 15]
+                    "difficulty_range": [11, 15]
                 },
                 {
                     "name": "Dimensional Layer Synchronization",
                     "duration": "60 minutes",
                     "intensity": "Psi-Mastery",
                     "description": "Align your consciousness with multiple dimensional overlays, creating an expanded perception matrix.",
-                    "difficulty_range": [12, 14, 16]
+                    "difficulty_range": [12, 16]
                 }
             ]
         }

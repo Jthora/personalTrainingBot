@@ -9,63 +9,63 @@
                     "duration": "5 seconds",
                     "intensity": "Medium",
                     "description": "Practice drawing your firearm from a holster and aiming at a target.",
-                    "difficulty_range": [2, 3, 4]
+                    "difficulty_range": [2, 4]
                 },
                 {
                     "name": "Draw from concealment",
                     "duration": "5 seconds",
                     "intensity": "Medium",
                     "description": "Practice drawing your firearm from a concealed position and aiming at a target.",
-                    "difficulty_range": [3, 4, 5]
+                    "difficulty_range": [3, 5]
                 },
                 {
                     "name": "Draw and fire 1 shot",
                     "duration": "5 seconds",
                     "intensity": "Medium",
                     "description": "Practice drawing your firearm and firing one shot at a target.",
-                    "difficulty_range": [3, 4, 5]
+                    "difficulty_range": [3, 5]
                 },
                 {
                     "name": "Draw and fire 2 shots",
                     "duration": "5 seconds",
                     "intensity": "Medium",
                     "description": "Practice drawing your firearm and firing two shots at a target.",
-                    "difficulty_range": [4, 5, 6]
+                    "difficulty_range": [4, 6]
                 },
                 {
                     "name": "Draw and fire 3 shots",
                     "duration": "5 seconds",
                     "intensity": "Medium",
                     "description": "Practice drawing your firearm and firing three shots at a target.",
-                    "difficulty_range": [5, 6, 7]
+                    "difficulty_range": [5, 7]
                 },
                 {
                     "name": "Draw and fire 5 shots",
                     "duration": "5 seconds",
                     "intensity": "Medium",
                     "description": "Practice drawing your firearm and firing five shots at a target.",
-                    "difficulty_range": [6, 7, 8]
+                    "difficulty_range": [6, 8]
                 },
                 {
                     "name": "Draw and fire 10 shots",
                     "duration": "5 seconds",
                     "intensity": "Medium",
                     "description": "Practice drawing your firearm and firing ten shots at a target.",
-                    "difficulty_range": [7, 8, 9]
+                    "difficulty_range": [7, 9]
                 },
                 {
                     "name": "Draw and fire 15 shots",
                     "duration": "5 seconds",
                     "intensity": "Medium",
                     "description": "Practice drawing your firearm and firing fifteen shots at a target.",
-                    "difficulty_range": [8, 9, 10]
+                    "difficulty_range": [8, 10]
                 },
                 {
                     "name": "Draw and fire 20 shots",
                     "duration": "5 seconds",
                     "intensity": "Medium",
                     "description": "Practice drawing your firearm and firing twenty shots at a target.",
-                    "difficulty_range": [9, 10, 11]
+                    "difficulty_range": [9, 11]
                 }
             ]
         },

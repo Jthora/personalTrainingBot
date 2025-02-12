@@ -1,5 +1,5 @@
 import React from 'react';
-import { useWorkoutSchedule } from '../../hooks/useWorkoutSchedule';
+import useWorkoutSchedule from '../../hooks/useWorkoutSchedule';
 import styles from './WorkoutScheduler.module.css';
 
 const WorkoutScheduler: React.FC = () => {

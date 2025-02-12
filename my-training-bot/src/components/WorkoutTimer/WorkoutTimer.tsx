@@ -1,5 +1,5 @@
 import { useState, useEffect, useImperativeHandle, forwardRef, useRef } from 'react';
-import styles from './SubWorkoutTimer.module.css';
+import styles from './WorkoutTimer.module.css';
 
 const getRandomTime = () => {
     const min = 45 * 60; // 45 minutes in seconds
@@ -7,11 +7,11 @@ const getRandomTime = () => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
-interface SubWorkoutTimerProps {
+interface WorkoutTimerProps {
     onComplete: () => void;
 }
 
-const SubWorkoutTimer = forwardRef<{ resetTimer: () => void }, SubWorkoutTimerProps>(({ onComplete }, ref) => {
+const WorkoutTimer = forwardRef<{ resetTimer: () => void }, WorkoutTimerProps>(({ onComplete }, ref) => {
     const [timeLeft, setTimeLeft] = useState(getRandomTime());
     const [isPaused, setIsPaused] = useState(false);
     const internalRef = useRef(null);
@@ -54,4 +54,4 @@ const SubWorkoutTimer = forwardRef<{ resetTimer: () => void }, SubWorkoutTimerPr
     );
 });
 
-export default SubWorkoutTimer;
+export default WorkoutTimer;

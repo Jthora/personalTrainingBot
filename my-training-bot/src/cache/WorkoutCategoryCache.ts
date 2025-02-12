@@ -48,6 +48,11 @@ class WorkoutCategoryCache {
         });
     }
 
+    public async reloadData(workoutCategories: WorkoutCategory[]): Promise<void> {
+        this.clearCache();
+        await this.loadData(workoutCategories);
+    }
+
     public isLoaded(): boolean {
         return this.cache.size > 0;
     }
@@ -110,6 +115,22 @@ class WorkoutCategoryCache {
         this.selectedSubCategories.clear();
         this.selectedWorkoutGroups.clear();
         this.selectedWorkouts.clear();
+    }
+
+    public getDifficultyLevels(): DifficultyLevel[] {
+        const levels: DifficultyLevel[] = [];
+        this.cache.forEach(category => {
+            category.subCategories.forEach(subCategory => {
+                subCategory.workoutGroups.forEach(group => {
+                    group.workouts.forEach(workout => {
+                        if (workout.difficultyLevel) {
+                            levels.push(workout.difficultyLevel);
+                        }
+                    });
+                });
+            });
+        });
+        return levels;
     }
 }
 

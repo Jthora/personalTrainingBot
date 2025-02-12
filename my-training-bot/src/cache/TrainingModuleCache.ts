@@ -39,10 +39,10 @@ export class TrainingModuleCache {
                         });
                     });
                 });
-                console.log(`Loaded ${this.cache.size} training modules.`);
-                console.log(`Loaded ${this.selectedSubModules.size} training submodules.`);
-                console.log(`Loaded ${this.selectedCardDecks.size} card decks.`);
-                console.log(`Loaded ${this.selectedCards.size} cards.`);
+                console.log(`TrainingModuleCache Loaded ${this.cache.size} training modules.`);
+                console.log(`TrainingModuleCache Loaded ${this.selectedSubModules.size} training submodules.`);
+                console.log(`TrainingModuleCache Loaded ${this.selectedCardDecks.size} card decks.`);
+                console.log(`TrainingModuleCache Loaded ${this.selectedCards.size} cards.`);
                 resolve();
             }, 1000); // Simulate a delay
         });

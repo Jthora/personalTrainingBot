@@ -1,6 +1,5 @@
 import React from 'react';
 import SoundSettings from '../SoundSettings/SoundSettings';
-import DifficultySettings from '../DifficultySettings/DifficultySettings';
 import styles from './SettingsSidebar.module.css';
 
 const SettingsSidebar: React.FC = () => {

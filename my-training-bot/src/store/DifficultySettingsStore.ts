@@ -11,6 +11,9 @@ const DifficultySettingsStore = {
     },
     saveSettings(settings: DifficultySettings) {
         localStorage.setItem('difficultySettings', JSON.stringify(settings));
+    },
+    clearSettings() {
+        localStorage.removeItem('difficultySettings');
     }
 };
 

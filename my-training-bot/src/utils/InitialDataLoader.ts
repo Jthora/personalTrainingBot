@@ -17,7 +17,7 @@ class InitialDataLoader {
             const updateProgress = (totalSteps: number) => {
                 currentStep += 1;
                 onProgress((currentStep / totalSteps) * 100);
-                console.log(`Progress: (${currentStep}/${totalSteps})`);
+                //console.log(`Progress: (${currentStep}/${totalSteps})`);
             };
 
             const totalSteps = totalCardDecks + totalWorkoutSubCategories;
@@ -41,16 +41,16 @@ class InitialDataLoader {
     }
 
     private static async loadTrainingModules(dataLoader: CardDataLoader, updateProgress: (totalSteps: number) => void, totalSteps: number) {
-        console.log("Loading training modules...");
+        //console.log("Loading training modules...");
         const trainingModules = await dataLoader.loadAllData(() => updateProgress(totalSteps));
-        console.log(`Loaded ${trainingModules.length} training modules.`);
+        //console.log(`Loaded ${trainingModules.length} training modules.`);
         await TrainingModuleCache.getInstance().loadData(trainingModules); // Load data into cache
     }
 
     private static async loadWorkoutCategories(dataLoader: WorkoutDataLoader, updateProgress: (totalSteps: number) => void, totalSteps: number) {
-        console.log("Loading workout categories...");
+        //console.log("Loading workout categories...");
         const workoutCategories = await dataLoader.loadAllData(() => updateProgress(totalSteps));
-        console.log(`Loaded ${workoutCategories.length} workout categories.`);
+        //console.log(`Loaded ${workoutCategories.length} workout categories.`);
         await WorkoutCategoryCache.getInstance().loadData(workoutCategories); // Load data into cache
     }
 }

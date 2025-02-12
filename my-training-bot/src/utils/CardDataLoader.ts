@@ -13,7 +13,7 @@ class CardDataLoader {
         try {
             console.log("Starting to load all data...");
             const trainingModules = await this.loadTrainingModules(onProgress);
-            console.log(`Fetched ${trainingModules.length} training modules.`);
+            console.log(`CardDataLoader Fetched ${trainingModules.length} training modules.`);
             return trainingModules; // Return loaded data
         } catch (error) {
             console.error("Failed to load all data:", error);

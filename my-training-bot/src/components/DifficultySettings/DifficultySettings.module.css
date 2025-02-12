@@ -9,7 +9,7 @@
 }
 
 .difficultySettings select {
-    width: 100%;
+    width: auto;
     padding: 8px;
     font-size: 1em;
 }
@@ -18,6 +18,35 @@
     margin-top: 10px;
     font-size: 0.9em;
     color: #cccccc;
+}
+
+.dropdown {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+.rangeInputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.rangeInput {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin: 0 0.5rem;
+}
+
+.rangeInput label {
+    margin-right: 0.5rem;
+}
+
+.rangeInput input {
+    width: 100%;
+    max-width: 80px;
+    text-align: center;
 }
 
 .additionalInfo {

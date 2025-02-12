@@ -1,4 +1,4 @@
-import { WorkoutCategory } from "../types/WorkoutCategory";
+import { Workout, WorkoutCategory } from "../types/WorkoutCategory";
 
 class WorkoutCategoryCache {
     private static instance: WorkoutCategoryCache;
@@ -117,20 +117,29 @@ class WorkoutCategoryCache {
         this.selectedWorkouts.clear();
     }
 
-    public getDifficultyLevels(): DifficultyLevel[] {
-        const levels: DifficultyLevel[] = [];
+    public getWorkoutsByDifficultyRange(minLevel: number, maxLevel: number, count: number): Workout[] {
+        const workouts: Workout[] = [];
         this.cache.forEach(category => {
             category.subCategories.forEach(subCategory => {
                 subCategory.workoutGroups.forEach(group => {
                     group.workouts.forEach(workout => {
-                        if (workout.difficultyLevel) {
-                            levels.push(workout.difficultyLevel);
+                        if (workout.difficulty_range[0] <= maxLevel && workout.difficulty_range[1] >= minLevel) {
+                            workouts.push(workout);
                         }
                     });
                 });
             });
         });
-        return levels;
+        return this.getRandomItems(workouts, count);
+    }
+
+    public getWorkoutsBySingleDifficultyLevel(level: number, count: number): Workout[] {
+        return this.getWorkoutsByDifficultyRange(level, level, count);
+    }
+
+    private getRandomItems<T>(array: T[], count: number): T[] {
+        const shuffled = array.sort(() => 0.5 - Math.random());
+        return shuffled.slice(0, count);
     }
 }
 

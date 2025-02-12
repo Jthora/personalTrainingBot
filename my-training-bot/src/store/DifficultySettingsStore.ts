@@ -2,24 +2,22 @@ import DifficultyLevel from '../types/DifficultyLevel';
 import DifficultyRange from '../types/DifficultyRange';
 import DifficultySetting from '../types/DifficultySetting';
 
-interface DifficultySettings {
-    selectedDifficulty: DifficultyLevel;
-    range: DifficultyRange;
-}
-
 const DifficultySettingsStore = {
-    getSettings(): DifficultySettings {
+    getSettings(): DifficultySetting {
         const settings = localStorage.getItem('difficultySettings');
-        return settings ? JSON.parse(settings) : { selectedDifficulty: 7, range: [0, 0] };
+        return settings ? JSON.parse(settings) : { level: 7, range: [0, 0] };
     },
-    saveSettings(settings: DifficultySettings) {
-        localStorage.setItem('difficultySettings', JSON.stringify(settings));
+    saveSettings(setting: DifficultySetting) {
+        localStorage.setItem('difficultySettings', JSON.stringify(setting));
     },
     clearSettings() {
         localStorage.removeItem('difficultySettings');
     },
-    getWeightedRandomDifficulty(difficultyLevels: DifficultyLevel[], selectedDifficulty: DifficultyLevel, range: DifficultyRange): DifficultyLevel {
-        const mean = selectedDifficulty;
+    getWeightedRandomDifficulty(setting: DifficultySetting): DifficultyLevel {
+        return this.getWeightedRandomDifficultyFor(setting.level, setting.range);
+    },
+    getWeightedRandomDifficultyFor(level: DifficultyLevel, range: DifficultyRange): DifficultyLevel {
+        const mean = level;
         const stdDev = (range[1] - range[0]) / 6; // Approximation for standard deviation
         const randomValue = Math.random() * (range[1] - range[0]) + range[0];
         const weightedRandom = Math.round(mean + stdDev * (randomValue - 0.5));

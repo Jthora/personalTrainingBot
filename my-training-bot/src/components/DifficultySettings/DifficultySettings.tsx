@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import TrainingCoachCache from '../../cache/TrainingCoachCache';
 import DifficultySettingsStore from '../../store/DifficultySettingsStore';
 import styles from './DifficultySettings.module.css';
-import DifficultyLevel from '../../types/DifficultyLevel';
+import DifficultySetting, { createDifficultySetting, createDifficultySettingFromLevel } from '../../types/DifficultySetting';
 import DifficultyLevelData from '../../types/DifficultyLevelData';
 import DifficultyRange from '../../types/DifficultyRange';
 
 const DifficultySettings: React.FC = () => {
-    const [difficultyLevels, setDifficultyLevels] = useState<DifficultyLevelData[]>([]);
-    const [selectedDifficulty, setSelectedDifficulty] = useState<DifficultyLevel>(7);
+    const [difficultyLevelData, setDifficultyLevelData] = useState<DifficultyLevelData[]>([]);
+    const [selectedDifficultySetting, setSelectedDifficultySetting] = useState<DifficultySetting>(createDifficultySetting(7, [7, 7]));
     const [selectedDescription, setSelectedDescription] = useState<string>('');
     const [selectedMilitarySoldier, setSelectedMilitarySoldier] = useState<string[]>([]);
     const [selectedAthleteArchetype, setSelectedAthleteArchetype] = useState<string[]>([]);
@@ -17,18 +17,18 @@ const DifficultySettings: React.FC = () => {
     const [range, setRange] = useState<DifficultyRange>([0, 0]);
 
     useEffect(() => {
-        const loadDifficultyLevels = async () => {
+        const loadDifficultyLevelData = async () => {
             try {
                 const cache = TrainingCoachCache.getInstance();
                 await cache.loadData();
                 const levels = cache.getDifficultyLevels();
-                setDifficultyLevels(levels);
+                setDifficultyLevelData(levels);
 
                 // Load the selected difficulty from localStorage
                 const settings = DifficultySettingsStore.getSettings();
-                if (settings.selectedDifficulty && levels.some(level => level.level === settings.selectedDifficulty)) {
-                    const selectedLevel = levels.find(level => level.level === settings.selectedDifficulty);
-                    setSelectedDifficulty(settings.selectedDifficulty);
+                if (settings.level && levels.some(level => level.level === settings.level)) {
+                    const selectedLevel = levels.find(level => level.level === settings.level);
+                    setSelectedDifficultySetting(settings);
                     setSelectedDescription(selectedLevel?.description || '');
                     setSelectedMilitarySoldier(selectedLevel?.military_soldier || []);
                     setSelectedAthleteArchetype(selectedLevel?.athlete_archetype || []);
@@ -38,7 +38,7 @@ const DifficultySettings: React.FC = () => {
                 } else if (levels.length > 0) {
                     const defaultLevel = levels[0];
                     if (defaultLevel) {
-                        setSelectedDifficulty(defaultLevel.level);
+                        setSelectedDifficultySetting(createDifficultySettingFromLevel(defaultLevel.level));
                         setSelectedDescription(defaultLevel.description);
                         setSelectedMilitarySoldier(defaultLevel.military_soldier);
                         setSelectedAthleteArchetype(defaultLevel.athlete_archetype);
@@ -51,84 +51,49 @@ const DifficultySettings: React.FC = () => {
                 console.error("Error loading difficulty levels:", error);
             }
         };
-        loadDifficultyLevels();
+        loadDifficultyLevelData();
     }, []);
-
-    const reloadDifficultyLevels = async () => {
-        try {
-            const cache = TrainingCoachCache.getInstance();
-            await cache.loadData();
-            const levels = cache.getDifficultyLevels();
-            setDifficultyLevels(levels);
-
-            // Load the selected difficulty from localStorage
-            const settings = DifficultySettingsStore.getSettings();
-            if (settings.selectedDifficulty && levels.some(level => level.level === settings.selectedDifficulty)) {
-                const selectedLevel = levels.find(level => level.level === settings.selectedDifficulty);
-                setSelectedDifficulty(settings.selectedDifficulty);
-                setSelectedDescription(selectedLevel?.description || '');
-                setSelectedMilitarySoldier(selectedLevel?.military_soldier || []);
-                setSelectedAthleteArchetype(selectedLevel?.athlete_archetype || []);
-                setSelectedPFT(selectedLevel?.pft || null);
-                setSelectedRequirements(selectedLevel?.requirements || null);
-                setRange(settings.range || [selectedLevel?.level || 0, selectedLevel?.level || 0]);
-            } else if (levels.length > 0) {
-                const defaultLevel = levels[0];
-                if (defaultLevel) {
-                    setSelectedDifficulty(defaultLevel.level);
-                    setSelectedDescription(defaultLevel.description);
-                    setSelectedMilitarySoldier(defaultLevel.military_soldier);
-                    setSelectedAthleteArchetype(defaultLevel.athlete_archetype);
-                    setSelectedPFT(defaultLevel.pft);
-                    setSelectedRequirements(defaultLevel.requirements);
-                    setRange([defaultLevel.level, defaultLevel.level]);
-                }
-            }
-        } catch (error) {
-            console.error("Error reloading difficulty levels:", error);
-        }
-    };
 
     const handleDifficultyChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         const newDifficulty = parseInt(event.target.value, 10);
-        const selectedLevel = difficultyLevels.find(level => level.level === newDifficulty);
+        const selectedLevel = difficultyLevelData.find(level => level.level === newDifficulty);
         if (selectedLevel) {
-            const levelChange = selectedLevel.level - (difficultyLevels.find(level => level.level === selectedDifficulty)?.level || 0);
-            const newRange: DifficultyRange = [Math.max(-1, range[0] + levelChange), Math.min(Math.max(...difficultyLevels.map(level => level.level)), range[1] + levelChange)];
+            const levelChange = selectedLevel.level - (difficultyLevelData.find(level => level.level === selectedDifficultySetting.level)?.level || 0);
+            const newRange: DifficultyRange = [Math.max(-1, range[0] + levelChange), Math.min(Math.max(...difficultyLevelData.map(level => level.level)), range[1] + levelChange)];
 
-            setSelectedDifficulty(newDifficulty);
+            setSelectedDifficultySetting(createDifficultySetting(newDifficulty, newRange));
             setSelectedDescription(selectedLevel.description || '');
             setSelectedMilitarySoldier(selectedLevel.military_soldier || []);
             setSelectedAthleteArchetype(selectedLevel.athlete_archetype || []);
             setSelectedPFT(selectedLevel.pft || null);
             setSelectedRequirements(selectedLevel.requirements || null);
             setRange(newRange);
-            DifficultySettingsStore.saveSettings({ selectedDifficulty: newDifficulty, range: newRange });
+            DifficultySettingsStore.saveSettings(createDifficultySetting(newDifficulty, newRange));
         }
     };
 
     const handleRangeChange = (type: 'min' | 'max', value: number) => {
-        const selectedLevel = difficultyLevels.find(level => level.level === selectedDifficulty)?.level || 0;
+        const selectedLevel = difficultyLevelData.find(level => level.level === selectedDifficultySetting.level)?.level || 0;
         if (type === 'min') {
             const newRange: DifficultyRange = [Math.min(value, selectedLevel), range[1]];
             setRange(newRange);
-            DifficultySettingsStore.saveSettings({ selectedDifficulty, range: newRange });
+            DifficultySettingsStore.saveSettings(createDifficultySetting(selectedDifficultySetting.level, newRange));
         } else {
             const newRange: DifficultyRange = [range[0], Math.max(value, selectedLevel)];
             setRange(newRange);
-            DifficultySettingsStore.saveSettings({ selectedDifficulty, range: newRange });
+            DifficultySettingsStore.saveSettings(createDifficultySetting(selectedDifficultySetting.level, newRange));
         }
     };
 
     const getWeightedRandomDifficulty = () => {
-        return DifficultySettingsStore.getWeightedRandomDifficulty(difficultyLevels, selectedDifficulty, range);
+        return DifficultySettingsStore.getWeightedRandomDifficulty(selectedDifficultySetting);
     };
 
     return (
         <div className={styles.difficultySettings}>
             <label htmlFor="difficulty">Select Difficulty Level:</label>
-            <select id="difficulty" value={selectedDifficulty} onChange={handleDifficultyChange} className={styles.dropdown}>
-                {difficultyLevels.map(level => (
+            <select id="difficulty" value={selectedDifficultySetting.level} onChange={handleDifficultyChange} className={styles.dropdown}>
+                {difficultyLevelData.map(level => (
                     <option key={level.level} value={level.level}>
                         {`[${level.level}] ${level.name}`}
                     </option>
@@ -144,7 +109,7 @@ const DifficultySettings: React.FC = () => {
                         value={range[0]}
                         onChange={(e) => handleRangeChange('min', parseInt(e.target.value))}
                         min={-1}
-                        max={selectedDifficulty ? difficultyLevels.find(level => level.level === selectedDifficulty)?.level : range[1]}
+                        max={selectedDifficultySetting.level ? difficultyLevelData.find(level => level.level === selectedDifficultySetting.level)?.level : range[1]}
                     />
                 </div>
                 <div className={styles.rangeInput}>
@@ -154,8 +119,8 @@ const DifficultySettings: React.FC = () => {
                         id="maxRange"
                         value={range[1]}
                         onChange={(e) => handleRangeChange('max', parseInt(e.target.value))}
-                        min={selectedDifficulty ? difficultyLevels.find(level => level.level === selectedDifficulty)?.level : range[0]}
-                        max={Math.max(...difficultyLevels.map(level => level.level))}
+                        min={selectedDifficultySetting.level ? difficultyLevelData.find(level => level.level === selectedDifficultySetting.level)?.level : range[0]}
+                        max={Math.max(...difficultyLevelData.map(level => level.level))}
                     />
                 </div>
             </div>

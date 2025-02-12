@@ -1,6 +1,7 @@
 import WorkoutCategoryCache from '../cache/WorkoutCategoryCache';
 import { Workout } from '../types/WorkoutCategory';
 import { WorkoutSchedule } from '../types/WorkoutSchedule';
+import DifficultySettingsStore from '../store/DifficultySettingsStore';
 
 interface WorkoutScheduleOptions {
     categories?: string[];
@@ -38,8 +39,15 @@ export const createWorkoutSchedule = async (options: WorkoutScheduleOptions = {}
         return WorkoutCategoryCache.getWeightedRandomWorkout();
     }).filter(workout => workout !== null) as Workout[];
 
+    const difficultySettings = DifficultySettingsStore.getSettings();
+    const difficultyLevel = DifficultySettingsStore.getWeightedRandomDifficulty(difficultySettings);
+
     return {
         date,
         workouts: selectedWorkouts,
+        difficultySettings: {
+            level: difficultyLevel,
+            range: difficultySettings.range
+        }
     };
 };

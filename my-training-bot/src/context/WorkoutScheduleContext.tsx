@@ -1,6 +1,7 @@
 import React, { createContext, useState, useEffect, useCallback } from 'react';
 import { createWorkoutSchedule } from '../utils/WorkoutScheduleCreator';
 import { WorkoutSchedule } from '../types/WorkoutSchedule';
+import DifficultySettingsStore from '../store/DifficultySettingsStore';
 
 interface WorkoutScheduleContextProps {
     schedule: WorkoutSchedule;
@@ -20,7 +21,7 @@ interface WorkoutScheduleProviderProps {
 }
 
 export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = ({ children }) => {
-    const [schedule, setSchedule] = useState<WorkoutSchedule>({ date: '', workouts: [] });
+    const [schedule, setSchedule] = useState<WorkoutSchedule>({ date: '', workouts: [], difficultySettings: { level: 0, range: [0, 0] } });
     const [isLoading, setIsLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
 
@@ -56,7 +57,8 @@ export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = (
     };
 
     const resetSchedule = () => {
-        setSchedule({ date: '', workouts: [] });
+        const difficultySettings = DifficultySettingsStore.getSetting();
+        setSchedule({ date: '', workouts: [], difficultySettings });
     };
 
     const updateSchedule = (newSchedule: WorkoutSchedule) => {

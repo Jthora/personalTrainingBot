@@ -7,6 +7,7 @@ class WorkoutCategoryCache {
     public selectedSubCategories: Set<string>;
     public selectedWorkoutGroups: Set<string>;
     public selectedWorkouts: Set<string>;
+    private loading: boolean;
 
     private constructor() {
         this.cache = new Map();
@@ -14,6 +15,7 @@ class WorkoutCategoryCache {
         this.selectedSubCategories = new Set();
         this.selectedWorkoutGroups = new Set();
         this.selectedWorkouts = new Set();
+        this.loading = false;
     }
 
     public static getInstance(): WorkoutCategoryCache {
@@ -24,6 +26,7 @@ class WorkoutCategoryCache {
     }
 
     public async loadData(workoutCategories: WorkoutCategory[]): Promise<void> {
+        this.loading = true;
         return new Promise((resolve) => {
             setTimeout(() => {
                 workoutCategories.forEach(category => {
@@ -43,6 +46,7 @@ class WorkoutCategoryCache {
                 console.log(`Loaded ${this.selectedSubCategories.size} workout subcategories.`);
                 console.log(`Loaded ${this.selectedWorkoutGroups.size} workout groups.`);
                 console.log(`Loaded ${this.selectedWorkouts.size} workouts.`);
+                this.loading = false;
                 resolve();
             }, 1000); // Simulate a delay
         });
@@ -53,8 +57,26 @@ class WorkoutCategoryCache {
         await this.loadData(workoutCategories);
     }
 
-    public isLoaded(): boolean {
-        return this.cache.size > 0;
+    public isLoading(): boolean {
+        return this.loading;
+    }
+
+    public getWorkoutCategories(): WorkoutCategory[] {
+        return Array.from(this.cache.values());
+    }
+
+    public async fetchAllWorkoutsInCategory(categoryId: string): Promise<Workout[]> {
+        const category = this.cache.get(categoryId);
+        if (!category) {
+            return [];
+        }
+        const workouts: Workout[] = [];
+        category.subCategories.forEach(subCategory => {
+            subCategory.workoutGroups.forEach(group => {
+                workouts.push(...group.workouts);
+            });
+        });
+        return workouts;
     }
 
     public getWorkoutCategory(id: string): WorkoutCategory | undefined {

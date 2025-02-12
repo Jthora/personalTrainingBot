@@ -10,28 +10,42 @@ const Sidebar: React.FC = () => {
     const [currentWorkout, setCurrentWorkout] = useState<Workout | null>(schedule.workouts[0] || null);
 
     useEffect(() => {
-        loadSchedule(); // Load the workout schedule on component mount
+        console.log('Loading schedule...');
+        loadSchedule().catch(error => {
+            console.error('Failed to load schedule:', error);
+        }); // Load the workout schedule on component mount
     }, [loadSchedule]);
 
     useEffect(() => {
         setCurrentWorkout(schedule.workouts[0] || null);
+        // Log schedule changes for debugging
+        console.log('Schedule updated:', schedule);
     }, [schedule]);
 
+    if (isLoading) {
+        console.log('Schedule is loading...');
+        return <div className={styles.loading}>Loading...</div>;
+    }
+
+    if (schedule.workouts.length === 0) {
+        console.warn('No workouts available in the schedule.');
+        return <div className={styles.noWorkouts}>No workouts available</div>;
+    }
+
     const handleCompleteWorkout = () => {
+        console.log('Workout completed:', currentWorkout);
         setCurrentWorkout(null);
     };
 
     const handleSkipWorkout = () => {
+        console.log('Workout skipped:', currentWorkout);
         setCurrentWorkout(null);
     };
 
     const handleWorkoutComplete = () => {
+        console.log('Workout complete handler called');
         setCurrentWorkout(schedule.workouts[0] || null);
     };
-
-    if (isLoading) {
-        return <div className={styles.loading}>Loading...</div>;
-    }
 
     return (
         <div className={styles.sidebar}>

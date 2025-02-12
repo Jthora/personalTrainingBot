@@ -2,10 +2,11 @@ import React, { createContext, useState, useEffect, useCallback } from 'react';
 import { createWorkoutSchedule } from '../utils/WorkoutScheduleCreator';
 import { WorkoutSchedule } from '../types/WorkoutSchedule';
 import DifficultySettingsStore from '../store/DifficultySettingsStore';
+import WorkoutScheduleStore from '../store/WorkoutScheduleStore';
 
 interface WorkoutScheduleContextProps {
     schedule: WorkoutSchedule;
-    loadSchedule: () => Promise<void>;
+    loadSchedule: (options?: { categories?: string[], date?: string, duration?: number, type?: string }) => Promise<void>;
     completeCurrentWorkout: () => void;
     skipCurrentWorkout: () => void;
     resetSchedule: () => void;
@@ -21,48 +22,93 @@ interface WorkoutScheduleProviderProps {
 }
 
 export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = ({ children }) => {
-    const [schedule, setSchedule] = useState<WorkoutSchedule>({ date: '', workouts: [], difficultySettings: { level: 0, range: [0, 0] } });
+    const [schedule, setSchedule] = useState<WorkoutSchedule>(() => {
+        const savedSchedule = WorkoutScheduleStore.getSchedule();
+        return savedSchedule || { date: '', workouts: [], difficultySettings: { level: 0, range: [0, 0] } };
+    });
     const [isLoading, setIsLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
 
-    const loadSchedule = useCallback(async () => {
+    const loadSchedule = useCallback(async (options = {}) => {
         setIsLoading(true);
         setError(null);
         try {
-            const newSchedule = await createWorkoutSchedule();
+            console.log('Loading schedule with options:', options);
+            const newSchedule = await createWorkoutSchedule(options);
+            console.log('New schedule created:', newSchedule);
             setSchedule(newSchedule);
-        } catch {
-            setError('WorkoutScheduleContext Failed to load schedule');
+            WorkoutScheduleStore.saveSchedule(newSchedule);
+        } catch (error) {
+            console.error('Failed to load schedule:', error);
+            setError('Failed to load schedule');
         } finally {
             setIsLoading(false);
         }
     }, []);
 
     useEffect(() => {
-        loadSchedule(); // Load the workout schedule on provider mount
+        const initializeSchedule = async () => {
+            const savedSchedule = WorkoutScheduleStore.getSchedule();
+            if (!savedSchedule) {
+                await loadSchedule(); // Load the workout schedule on provider mount if not already saved
+            } else {
+                console.log('Loaded saved schedule:', savedSchedule);
+                setSchedule(savedSchedule);
+                setIsLoading(false);
+            }
+        };
+
+        initializeSchedule().catch(error => {
+            console.error('Failed to initialize schedule:', error);
+            setError('Failed to initialize schedule');
+            setIsLoading(false);
+        });
     }, [loadSchedule]);
 
     const completeCurrentWorkout = () => {
-        setSchedule(prevSchedule => ({
-            ...prevSchedule,
-            workouts: prevSchedule.workouts.slice(1)
-        }));
+        setSchedule(prevSchedule => {
+            if (!prevSchedule) return prevSchedule;
+            const updatedSchedule = {
+                ...prevSchedule,
+                workouts: prevSchedule.workouts.slice(1)
+            };
+            console.log('Completed current workout. Updated schedule:', updatedSchedule);
+            WorkoutScheduleStore.saveSchedule(updatedSchedule);
+            return updatedSchedule;
+        });
     };
 
     const skipCurrentWorkout = () => {
-        setSchedule(prevSchedule => ({
-            ...prevSchedule,
-            workouts: prevSchedule.workouts.slice(1)
-        }));
+        setSchedule(prevSchedule => {
+            if (!prevSchedule) return prevSchedule;
+            const updatedSchedule = {
+                ...prevSchedule,
+                workouts: prevSchedule.workouts.slice(1)
+            };
+            console.log('Skipped current workout. Updated schedule:', updatedSchedule);
+            WorkoutScheduleStore.saveSchedule(updatedSchedule);
+            return updatedSchedule;
+        });
     };
 
-    const resetSchedule = () => {
-        const difficultySettings = DifficultySettingsStore.getSetting();
-        setSchedule({ date: '', workouts: [], difficultySettings });
+    const resetSchedule = async () => {
+        setIsLoading(true);
+        try {
+            const newSchedule = await createWorkoutSchedule();
+            console.log('Reset schedule. New schedule:', newSchedule);
+            setSchedule(newSchedule);
+            WorkoutScheduleStore.saveSchedule(newSchedule);
+        } catch (error) {
+            console.error('Failed to reset schedule:', error);
+            setError('Failed to reset schedule');
+        } finally {
+            setIsLoading(false);
+        }
     };
 
     const updateSchedule = (newSchedule: WorkoutSchedule) => {
         setSchedule(newSchedule);
+        WorkoutScheduleStore.saveSchedule(newSchedule);
     };
 
     return (

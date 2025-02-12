@@ -6,6 +6,8 @@ import DifficultySettingsStore from '../store/DifficultySettingsStore';
 interface WorkoutScheduleOptions {
     categories?: string[];
     date?: string;
+    duration?: number; // in minutes
+    type?: string; // e.g., "cardio", "strength"
 }
 
 const getRandomItems = <T>(array: T[], count: number): T[] => {
@@ -16,31 +18,51 @@ const getRandomItems = <T>(array: T[], count: number): T[] => {
 export const createWorkoutSchedule = async (options: WorkoutScheduleOptions = {}): Promise<WorkoutSchedule> => {
     const {
         categories = [],
-        date = new Date().toISOString().split('T')[0]
+        date = new Date().toISOString().split('T')[0],
     } = options;
 
+    console.log('Starting to create workout schedule with options:', options);
+
     // Wait for the cache to be ready
-    while (WorkoutCategoryCache.isLoading()) {
+    while (WorkoutCategoryCache.getInstance().isLoading()) {
         await new Promise(resolve => setTimeout(resolve, 100));
     }
 
-    const allCategories = WorkoutCategoryCache.getWorkoutCategories().map(category => category.id);
+    const allCategories = WorkoutCategoryCache.getInstance().getWorkoutCategories().map(category => category.id);
     const selectedCategories = categories.length > 0 ? categories : allCategories;
+
+    console.log('Selected categories:', selectedCategories);
+
+    const difficultySettings = DifficultySettingsStore.getSettings();
+    const difficultyLevel = DifficultySettingsStore.getWeightedRandomDifficulty(difficultySettings);
+
+    console.log('Difficulty settings:', difficultySettings);
+    console.log('Calculated difficulty level:', difficultyLevel);
 
     const workouts: Workout[] = [];
     for (const category of selectedCategories) {
-        const categoryWorkouts = await WorkoutCategoryCache.fetchAllWorkoutsInCategory(category);
+        const categoryWorkouts = await WorkoutCategoryCache.getInstance().fetchAllWorkoutsInCategory(category);
         if (categoryWorkouts) {
             workouts.push(...categoryWorkouts);
         }
     }
 
-    const selectedWorkouts = getRandomItems(workouts, 10).map(() => {
-        return WorkoutCategoryCache.getWeightedRandomWorkout();
-    }).filter(workout => workout !== null) as Workout[];
+    console.log('Total workouts fetched:', workouts.length);
 
-    const difficultySettings = DifficultySettingsStore.getSettings();
-    const difficultyLevel = DifficultySettingsStore.getWeightedRandomDifficulty(difficultySettings);
+    const filteredWorkouts = workouts.filter(workout => 
+        workout.difficulty_range[0] <= difficultyLevel && 
+        workout.difficulty_range[1] >= difficultyLevel
+    );
+
+    console.log('Filtered workouts based on difficulty level:', filteredWorkouts.length);
+
+    if (filteredWorkouts.length === 0) {
+        console.warn('No workouts found within the specified difficulty level.');
+    }
+
+    const selectedWorkouts = getRandomItems(filteredWorkouts, 10);
+
+    console.log('Selected workouts:', selectedWorkouts.length);
 
     return {
         date,

@@ -5,13 +5,17 @@ import DifficultySetting from '../types/DifficultySetting';
 const DifficultySettingsStore = {
     getSettings(): DifficultySetting {
         const settings = localStorage.getItem('difficultySettings');
-        return settings ? JSON.parse(settings) : { level: 7, range: [0, 0] };
+        return settings ? JSON.parse(settings) : { level: 7, range: [1, 10] };
     },
     saveSettings(setting: DifficultySetting) {
         localStorage.setItem('difficultySettings', JSON.stringify(setting));
     },
     clearSettings() {
         localStorage.removeItem('difficultySettings');
+    },
+    getWeightedRandomDifficultyFromCurrentSelectedSetting(): DifficultyLevel {
+        const setting = this.getSettings();
+        return this.getWeightedRandomDifficultyFor(setting.level, setting.range);
     },
     getWeightedRandomDifficulty(setting: DifficultySetting): DifficultyLevel {
         return this.getWeightedRandomDifficultyFor(setting.level, setting.range);

@@ -16,34 +16,45 @@ const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ onSkipWorkout, onComple
 
     useEffect(() => {
         if (workout) {
+            console.log('Workout updated:', workout);
             timerRef.current?.resetTimer();
         }
     }, [workout]);
 
+    useEffect(() => {
+        // Log schedule changes for debugging
+        console.log('Schedule updated:', schedule);
+    }, [schedule]);
+
+    if (isLoading) {
+        console.log('Loading workouts...');
+        return <div className={styles.loading}>Loading...</div>;
+    }
+
+    if (!workout) {
+        console.warn('No workout selected.');
+        return <div className={styles.noWorkout}>No workout selected</div>;
+    }
+
     const handleCompleteWorkout = () => {
+        console.log('Workout completed:', workout);
         playCompleteSound();
         onCompleteWorkout();
         timerRef.current?.resetTimer();
     };
 
     const handleSkipWorkout = () => {
+        console.log('Workout skipped:', workout);
         playSkipSound();
         onSkipWorkout();
         timerRef.current?.resetTimer();
     };
 
     const handleTimeoutWorkout = () => {
+        console.log('Workout timed out:', workout);
         playTimeoutSound();
         onCompleteWorkout();
     };
-
-    if (isLoading) {
-        return <div className={styles.loading}>Loading...</div>;
-    }
-
-    if (!workout) {
-        return <div className={styles.noWorkout}>No workout selected</div>;
-    }
 
     return (
         <div>

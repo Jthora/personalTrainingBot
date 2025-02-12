@@ -85,10 +85,6 @@ const DifficultySettings: React.FC = () => {
         }
     };
 
-    const getWeightedRandomDifficulty = () => {
-        return DifficultySettingsStore.getWeightedRandomDifficulty(selectedDifficultySetting);
-    };
-
     return (
         <div className={styles.difficultySettings}>
             <label htmlFor="difficulty">Select Difficulty Level:</label>

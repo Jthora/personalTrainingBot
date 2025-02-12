@@ -1,6 +1,5 @@
 import difficultyLevels from "../data/training_coach_data/difficulty_levels.json";
 import ranksData from "../data/training_coach_data/ranks.json";
-import tigerSpeech from "../data/training_coach_data/tiger_speech.json";
 import trainingChallenges from "../data/training_coach_data/training_challenges.json";
 import { WorkoutDifficultyLevel } from "../types/WorkoutDifficultyLevel";
 import { WorkoutRank } from "../types/WorkoutRank";
@@ -17,36 +16,6 @@ const ranks: WorkoutRank[] = ranksData.map(rank => ({
 
 // Random selection function
 const getRandomItem = <T>(array: T[]): T => array[Math.floor(Math.random() * array.length)];
-
-// Fetches a random motivational speech
-export const fetchSpeech = (): string => {
-    try {
-        return getRandomItem(tigerSpeech.motivational_quotes);
-    } catch (error) {
-        console.error("Failed to fetch speech:", error);
-        return "";
-    }
-};
-
-// Fetches a random boast
-export const fetchBoast = (): string => {
-    try {
-        return getRandomItem(tigerSpeech.boasts);
-    } catch (error) {
-        console.error("Failed to fetch boast:", error);
-        return "";
-    }
-};
-
-// Fetches a random growl
-export const fetchGrowl = (): string => {
-    try {
-        return getRandomItem(tigerSpeech.growls);
-    } catch (error) {
-        console.error("Failed to fetch growl:", error);
-        return "";
-    }
-};
 
 // Fetches a random workout challenge
 export const fetchWorkout = (): string => {

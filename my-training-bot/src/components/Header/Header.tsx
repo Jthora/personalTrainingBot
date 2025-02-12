@@ -27,6 +27,18 @@ const Header: React.FC = () => {
                     Home
                 </button> | 
                 <button 
+                    onClick={() => navigateTo('/workouts')} 
+                    className={`${styles.navButton} ${isActive('/workouts') ? styles.active : ''}`}
+                >
+                    Workouts
+                </button> | 
+                <button 
+                    onClick={() => navigateTo('/training')} 
+                    className={`${styles.navButton} ${isActive('/training') ? styles.active : ''}`}
+                >
+                    Training
+                </button> | 
+                <button 
                     onClick={() => navigateTo('/settings')} 
                     className={`${styles.navButton} ${isActive('/settings') ? styles.active : ''}`}
                 >

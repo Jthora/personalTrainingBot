@@ -9,9 +9,6 @@ const SettingsSidebar: React.FC = () => {
             <div className={styles.scrollableContent}>
                 <h2>Sound Settings</h2>
                 <SoundSettings />
-                <hr className={styles.divider} /> {/* Divider line */}
-                <h2>Difficulty Settings</h2>
-                <DifficultySettings />
             </div>
         </div>
     );

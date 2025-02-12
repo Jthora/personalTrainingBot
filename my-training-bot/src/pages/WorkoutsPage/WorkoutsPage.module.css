@@ -11,3 +11,18 @@
     background-color: var(--secondary-bg-color);
     color: var(--primary-text-color);
 }
+
+.contentContainer {
+    display: flex;
+    margin-top: var(--padding);
+}
+
+.workoutsSidebarContainer {
+    width: 25%;
+    padding-left: var(--padding);
+}
+
+.workoutsWindowContainer {
+    flex: 2;
+    margin-top: var(--padding);
+}

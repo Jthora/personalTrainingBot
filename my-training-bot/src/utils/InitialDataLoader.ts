@@ -4,6 +4,7 @@ import { totalCardDecks } from './cardDeckPaths'; // Import total card decks
 import { totalWorkoutSubCategories } from './workoutSubCategoryPaths'; // Import total workout subcategories
 import WorkoutCategoryCache from '../cache/WorkoutCategoryCache'; // Import WorkoutCategoryCache
 import TrainingModuleCache from '../cache/TrainingModuleCache';
+import TrainingCoachCache from '../cache/TrainingCoachCache';
 
 class InitialDataLoader {
     static async initialize(onProgress: (progress: number) => void) {
@@ -21,7 +22,7 @@ class InitialDataLoader {
 
             const totalSteps = totalCardDecks + totalWorkoutSubCategories;
             console.log(`Total steps for progress: ${totalSteps}`);
-
+            await this.loadCoachData();
             await this.loadTrainingModules(cardDataLoader, updateProgress, totalSteps);
             await this.loadWorkoutCategories(workoutDataLoader, updateProgress, totalSteps);
 
@@ -33,6 +34,10 @@ class InitialDataLoader {
                 console.error(`Stack trace: ${error.stack}`);
             }
         }
+    }
+
+    private static async loadCoachData() {
+        await TrainingCoachCache.getInstance().loadData();
     }
 
     private static async loadTrainingModules(dataLoader: CardDataLoader, updateProgress: (totalSteps: number) => void, totalSteps: number) {

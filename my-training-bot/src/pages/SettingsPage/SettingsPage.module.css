@@ -22,10 +22,7 @@
     flex: 1;
 }
 
-.cardSelectorContainer {
-    flex: 1;
-    padding-right: var(--padding);
-}
+/* Removed cardSelectorContainer */
 
 .settingsWindowContainer {
     flex: 2;

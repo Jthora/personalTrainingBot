@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from './CoachDialog.module.css';
 import tigerIcon from '../../assets/images/icons/tiger_fitness_god-icon-512x.png';
-import { fetchSpeech, fetchBoast, fetchGrowl } from '../../utils/WorkoutDataLoader';
+import TrainingCoachCache from '../../cache/TrainingCoachCache';
 import WorkoutDetails from '../WorkoutDetails/WorkoutDetails';
 import useWorkoutSchedule from '../../hooks/useWorkoutSchedule';
 import { Workout } from '../../types/WorkoutCategory';
@@ -17,28 +17,30 @@ const CoachDialog: React.FC<CoachDialogProps> = ({ currentWorkout, onComplete, o
     const { completeCurrentWorkout, skipCurrentWorkout, isLoading } = useWorkoutSchedule();
 
     useEffect(() => {
-        const updateQuote = () => {
-            setQuote(fetchSpeech());
+        const loadMotivationalQuote = async () => {
+            setQuote(TrainingCoachCache.getInstance().getRandomMotivationalQuote());
         };
 
-        updateQuote(); // Initial fetch
+        loadMotivationalQuote(); // Initial fetch
 
         const getRandomInterval = () => Math.floor((Math.random() * 10) + 1) * 60000; // Random interval between 10 and 30 minutes
 
-        const intervalId = setInterval(updateQuote, getRandomInterval());
+        const intervalId = setInterval(() => {
+            setQuote(TrainingCoachCache.getInstance().getRandomMotivationalQuote());
+        }, getRandomInterval());
 
         return () => clearInterval(intervalId); // Cleanup interval on component unmount
     }, []);
 
     const handleCompleteWorkout = () => {
         completeCurrentWorkout();
-        setQuote(fetchBoast());
+        setQuote(TrainingCoachCache.getInstance().getRandomBoast());
         onComplete();
     };
 
     const handleSkipWorkout = () => {
         skipCurrentWorkout();
-        setQuote(fetchGrowl());
+        setQuote(TrainingCoachCache.getInstance().getRandomGrowl());
         onSkip();
     };
 

@@ -11,3 +11,18 @@
     background-color: var(--secondary-bg-color);
     color: var(--primary-text-color);
 }
+
+.cardSelectorContainer {
+    flex: 1;
+    margin-top: var(--padding);
+}
+
+.contentContainer {
+    display: flex;
+    margin-top: var(--padding);
+}
+
+.trainingWindowContainer {
+    flex: 2;
+    margin-top: var(--padding);
+}

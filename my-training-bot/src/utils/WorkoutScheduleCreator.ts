@@ -2,12 +2,12 @@ import WorkoutCategoryCache from '../cache/WorkoutCategoryCache';
 import { Workout } from '../types/WorkoutCategory';
 import { WorkoutSchedule } from '../types/WorkoutSchedule';
 import DifficultySettingsStore from '../store/DifficultySettingsStore';
+import WorkoutScheduleStore from '../store/WorkoutScheduleStore';
 
 interface WorkoutScheduleOptions {
     categories?: string[];
     date?: string;
-    duration?: number; // in minutes
-    type?: string; // e.g., "cardio", "strength"
+    workoutCount?: number; // number of workouts to include
 }
 
 const getRandomItems = <T>(array: T[], count: number): T[] => {
@@ -19,6 +19,7 @@ export const createWorkoutSchedule = async (options: WorkoutScheduleOptions = {}
     const {
         categories = [],
         date = new Date().toISOString().split('T')[0],
+        workoutCount = 10 // default to 10 workouts
     } = options;
 
     console.log('Starting to create workout schedule with options:', options);
@@ -28,9 +29,15 @@ export const createWorkoutSchedule = async (options: WorkoutScheduleOptions = {}
         await new Promise(resolve => setTimeout(resolve, 100));
     }
 
-    const allCategories = WorkoutCategoryCache.getInstance().getWorkoutCategories().map(category => category.id);
-    const selectedCategories = categories.length > 0 ? categories : allCategories;
+    const allCategories = WorkoutCategoryCache.getInstance().getWorkoutCategories().map(category => category.id).filter(Boolean);
+    let selectedCategories = categories.length > 0 ? categories : WorkoutScheduleStore.getSelectedWorkoutCategories();
 
+    if (selectedCategories.length === 0) {
+        selectedCategories = allCategories;
+        WorkoutScheduleStore.saveSelectedWorkoutCategories(allCategories);
+    }
+
+    console.log('All categories:', allCategories);
     console.log('Selected categories:', selectedCategories);
 
     const difficultySettings = DifficultySettingsStore.getSettings();
@@ -58,9 +65,17 @@ export const createWorkoutSchedule = async (options: WorkoutScheduleOptions = {}
 
     if (filteredWorkouts.length === 0) {
         console.warn('No workouts found within the specified difficulty level.');
+        return {
+            date,
+            workouts: [],
+            difficultySettings: {
+                level: difficultyLevel,
+                range: difficultySettings.range
+            }
+        };
     }
 
-    const selectedWorkouts = getRandomItems(filteredWorkouts, 10);
+    const selectedWorkouts = getRandomItems(filteredWorkouts, Math.min(workoutCount, filteredWorkouts.length));
 
     console.log('Selected workouts:', selectedWorkouts.length);
 

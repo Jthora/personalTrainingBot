@@ -1,7 +1,6 @@
 import React, { createContext, useState, useEffect, useCallback } from 'react';
 import { createWorkoutSchedule } from '../utils/WorkoutScheduleCreator';
 import { WorkoutSchedule } from '../types/WorkoutSchedule';
-import DifficultySettingsStore from '../store/DifficultySettingsStore';
 import WorkoutScheduleStore from '../store/WorkoutScheduleStore';
 
 interface WorkoutScheduleContextProps {
@@ -23,7 +22,7 @@ interface WorkoutScheduleProviderProps {
 
 export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = ({ children }) => {
     const [schedule, setSchedule] = useState<WorkoutSchedule>(() => {
-        const savedSchedule = WorkoutScheduleStore.getSchedule();
+        const savedSchedule = WorkoutScheduleStore.getScheduleSync(); // Use a synchronous method
         return savedSchedule || { date: '', workouts: [], difficultySettings: { level: 0, range: [0, 0] } };
     });
     const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -67,7 +66,7 @@ export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = (
 
     const completeCurrentWorkout = () => {
         setSchedule(prevSchedule => {
-            if (!prevSchedule) return prevSchedule;
+            if (!prevSchedule || prevSchedule.workouts.length === 0) return prevSchedule;
             const updatedSchedule = {
                 ...prevSchedule,
                 workouts: prevSchedule.workouts.slice(1)
@@ -80,7 +79,7 @@ export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = (
 
     const skipCurrentWorkout = () => {
         setSchedule(prevSchedule => {
-            if (!prevSchedule) return prevSchedule;
+            if (!prevSchedule || prevSchedule.workouts.length === 0) return prevSchedule;
             const updatedSchedule = {
                 ...prevSchedule,
                 workouts: prevSchedule.workouts.slice(1)

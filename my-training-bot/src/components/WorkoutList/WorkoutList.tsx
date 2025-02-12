@@ -24,7 +24,7 @@ const WorkoutList: React.FC<{ onWorkoutComplete: (workout: Workout) => void }> =
         return <div className={styles.loading}>Loading...</div>;
     }
 
-    if (schedule.workouts.length === 0) {
+    if (!schedule || schedule.workouts.length === 0) {
         console.warn('No workouts available in the schedule.');
         return <div className={styles.noWorkouts}>No workouts available</div>;
     }

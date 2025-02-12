@@ -11,7 +11,7 @@ interface WorkoutDetailsProps {
 
 const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ onSkipWorkout, onCompleteWorkout }) => {
     const { schedule, isLoading } = useWorkoutSchedule();
-    const workout = schedule.workouts[0] || null;
+    const workout = schedule?.workouts[0] || null;
     const timerRef = useRef<{ resetTimer: () => void }>(null);
 
     useEffect(() => {

@@ -7,7 +7,7 @@ import { Workout } from '../../types/WorkoutCategory';
 
 const Sidebar: React.FC = () => {
     const { schedule, loadSchedule, isLoading } = useWorkoutSchedule();
-    const [currentWorkout, setCurrentWorkout] = useState<Workout | null>(schedule.workouts[0] || null);
+    const [currentWorkout, setCurrentWorkout] = useState<Workout | null>(schedule?.workouts[0] || null);
 
     useEffect(() => {
         console.log('Loading schedule...');
@@ -17,7 +17,7 @@ const Sidebar: React.FC = () => {
     }, [loadSchedule]);
 
     useEffect(() => {
-        setCurrentWorkout(schedule.workouts[0] || null);
+        setCurrentWorkout(schedule?.workouts[0] || null);
         // Log schedule changes for debugging
         console.log('Schedule updated:', schedule);
     }, [schedule]);
@@ -27,7 +27,7 @@ const Sidebar: React.FC = () => {
         return <div className={styles.loading}>Loading...</div>;
     }
 
-    if (schedule.workouts.length === 0) {
+    if (schedule?.workouts.length === 0) {
         console.warn('No workouts available in the schedule.');
         return <div className={styles.noWorkouts}>No workouts available</div>;
     }
@@ -44,7 +44,7 @@ const Sidebar: React.FC = () => {
 
     const handleWorkoutComplete = () => {
         console.log('Workout complete handler called');
-        setCurrentWorkout(schedule.workouts[0] || null);
+        setCurrentWorkout(schedule?.workouts[0] || null);
     };
 
     return (

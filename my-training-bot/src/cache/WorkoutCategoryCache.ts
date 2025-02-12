@@ -1,4 +1,5 @@
 import { Workout, WorkoutCategory } from "../types/WorkoutCategory";
+import WorkoutDataLoader from '../utils/WorkoutDataLoader';
 
 class WorkoutCategoryCache {
     private static instance: WorkoutCategoryCache;
@@ -8,6 +9,7 @@ class WorkoutCategoryCache {
     public selectedWorkoutGroups: Set<string>;
     public selectedWorkouts: Set<string>;
     private loading: boolean;
+    private categories: WorkoutCategory[] = [];
 
     private constructor() {
         this.cache = new Map();
@@ -15,7 +17,8 @@ class WorkoutCategoryCache {
         this.selectedSubCategories = new Set();
         this.selectedWorkoutGroups = new Set();
         this.selectedWorkouts = new Set();
-        this.loading = false;
+        this.loading = true;
+        this.loadCategories();
     }
 
     public static getInstance(): WorkoutCategoryCache {
@@ -23,6 +26,16 @@ class WorkoutCategoryCache {
             WorkoutCategoryCache.instance = new WorkoutCategoryCache();
         }
         return WorkoutCategoryCache.instance;
+    }
+
+    private async loadCategories() {
+        const dataLoader = new WorkoutDataLoader();
+        this.categories = await dataLoader.loadAllData(() => {});
+        this.categories.forEach(category => {
+            this.cache.set(category.id, category);
+        });
+        this.loading = false;
+        console.log(`Loaded ${this.cache.size} workout categories.`);
     }
 
     public async loadData(workoutCategories: WorkoutCategory[]): Promise<void> {
@@ -62,7 +75,7 @@ class WorkoutCategoryCache {
     }
 
     public getWorkoutCategories(): WorkoutCategory[] {
-        return Array.from(this.cache.values());
+        return this.categories;
     }
 
     public async fetchAllWorkoutsInCategory(categoryId: string): Promise<Workout[]> {

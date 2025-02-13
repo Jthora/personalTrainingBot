@@ -1,19 +1,16 @@
-import DifficultyLevel from './DifficultyLevel';
-import DifficultyRange from './DifficultyRange';
+export type DifficultyLevel = number;
+export type DifficultyRange = [number, number];
 
-interface DifficultySetting {
+export class DifficultySetting {
     level: DifficultyLevel;
     range: DifficultyRange;
+
+    constructor(level: DifficultyLevel, range: DifficultyRange) {
+        this.level = level;
+        this.range = range;
+    }
+
+    static fromLevel(level: DifficultyLevel): DifficultySetting {
+        return new DifficultySetting(level, [level, level]);
+    }
 }
-
-export const createDifficultySetting = (level: DifficultyLevel, range: DifficultyRange): DifficultySetting => ({
-    level,
-    range
-});
-
-export const createDifficultySettingFromLevel = (level: DifficultyLevel): DifficultySetting => ({
-    level,
-    range: [level, level]
-});
-
-export default DifficultySetting;

@@ -27,3 +27,6 @@ export interface Workout {
     intensity: string; // Changed from difficulty to intensity
     difficulty_range: [number, number];
 }
+
+type SelectedWorkoutCategories = { [key: string]: boolean };
+export default SelectedWorkoutCategories;

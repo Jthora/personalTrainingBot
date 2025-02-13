@@ -2,13 +2,12 @@ import React, { useState, useEffect } from 'react';
 import TrainingCoachCache from '../../cache/TrainingCoachCache';
 import DifficultySettingsStore from '../../store/DifficultySettingsStore';
 import styles from './DifficultySettings.module.css';
-import DifficultySetting, { createDifficultySetting, createDifficultySettingFromLevel } from '../../types/DifficultySetting';
+import { DifficultySetting, DifficultyRange } from '../../types/DifficultySetting';
 import DifficultyLevelData from '../../types/DifficultyLevelData';
-import DifficultyRange from '../../types/DifficultyRange';
 
 const DifficultySettings: React.FC = () => {
     const [difficultyLevelData, setDifficultyLevelData] = useState<DifficultyLevelData[]>([]);
-    const [selectedDifficultySetting, setSelectedDifficultySetting] = useState<DifficultySetting>(createDifficultySetting(7, [7, 7]));
+    const [selectedDifficultySetting, setSelectedDifficultySetting] = useState<DifficultySetting>(new DifficultySetting(7, [7, 7]));
     const [selectedDescription, setSelectedDescription] = useState<string>('');
     const [selectedMilitarySoldier, setSelectedMilitarySoldier] = useState<string[]>([]);
     const [selectedAthleteArchetype, setSelectedAthleteArchetype] = useState<string[]>([]);
@@ -38,7 +37,7 @@ const DifficultySettings: React.FC = () => {
                 } else if (levels.length > 0) {
                     const defaultLevel = levels[0];
                     if (defaultLevel) {
-                        setSelectedDifficultySetting(createDifficultySettingFromLevel(defaultLevel.level));
+                        setSelectedDifficultySetting(DifficultySetting.fromLevel(defaultLevel.level));
                         setSelectedDescription(defaultLevel.description);
                         setSelectedMilitarySoldier(defaultLevel.military_soldier);
                         setSelectedAthleteArchetype(defaultLevel.athlete_archetype);
@@ -61,14 +60,14 @@ const DifficultySettings: React.FC = () => {
             const levelChange = selectedLevel.level - (difficultyLevelData.find(level => level.level === selectedDifficultySetting.level)?.level || 0);
             const newRange: DifficultyRange = [Math.max(-1, range[0] + levelChange), Math.min(Math.max(...difficultyLevelData.map(level => level.level)), range[1] + levelChange)];
 
-            setSelectedDifficultySetting(createDifficultySetting(newDifficulty, newRange));
+            setSelectedDifficultySetting(new DifficultySetting(newDifficulty, newRange));
             setSelectedDescription(selectedLevel.description || '');
             setSelectedMilitarySoldier(selectedLevel.military_soldier || []);
             setSelectedAthleteArchetype(selectedLevel.athlete_archetype || []);
             setSelectedPFT(selectedLevel.pft || null);
             setSelectedRequirements(selectedLevel.requirements || null);
             setRange(newRange);
-            DifficultySettingsStore.saveSettings(createDifficultySetting(newDifficulty, newRange));
+            DifficultySettingsStore.saveSettings(new DifficultySetting(newDifficulty, newRange));
         }
     };
 
@@ -77,11 +76,11 @@ const DifficultySettings: React.FC = () => {
         if (type === 'min') {
             const newRange: DifficultyRange = [Math.min(value, selectedLevel), range[1]];
             setRange(newRange);
-            DifficultySettingsStore.saveSettings(createDifficultySetting(selectedDifficultySetting.level, newRange));
+            DifficultySettingsStore.saveSettings(new DifficultySetting(selectedDifficultySetting.level, newRange));
         } else {
             const newRange: DifficultyRange = [range[0], Math.max(value, selectedLevel)];
             setRange(newRange);
-            DifficultySettingsStore.saveSettings(createDifficultySetting(selectedDifficultySetting.level, newRange));
+            DifficultySettingsStore.saveSettings(new DifficultySetting(selectedDifficultySetting.level, newRange));
         }
     };
 

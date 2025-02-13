@@ -47,8 +47,6 @@ const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
         return <div className={styles.cardSlot}>No card available</div>;
     }
 
-    //console.log('Card in CardSlot:', card);
-
     if (!Array.isArray(card.bulletpoints)) {
         console.error('Card bulletpoints is not an array:', card.bulletpoints);
         return <div className={styles.cardSlot}>Invalid card data</div>;
@@ -59,7 +57,7 @@ const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
     return (
         <div className={styles.cardSlot}>
             <div className={styles.cardDetails}>
-                <div className={styles.leftSide}>
+                <div className={styles.topLeft}>
                     <h2>{card.title}</h2>
                     <p>{card.description}</p>
                     <ul>
@@ -67,26 +65,30 @@ const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
                             <li key={index}>{point}</li>
                         ))}
                     </ul>
-                    <div className={styles.bubbleContainer}>
+                </div>
+                <div className={styles.topRight}>
+                    <div className={styles.bubbleContainer2}>
+                        <span className={`${styles.bubble} ${styles.bubble1}`} style={{ backgroundColor: color }}>{trainingModule}</span>
+                    </div>
+                    <div className={styles.stats}>
+                        <p>⏱️: {card.duration} minutes</p>
+                        <p>🎚️: {card.difficulty}</p>
+                        <span>⏳: {formatTime(timeLeft)}</span>
+                    </div>
+                    <label>
+                        Hold 
+                        <input type="checkbox" checked={isHeld} onChange={handleHoldChange} />
+                    </label>
+                </div>
+                <div className={styles.bottomLeft}>
+                    <div className={styles.bubbleContainer1}>
                         <span className={`${styles.bubble} ${styles.bubble2}`} style={{ backgroundColor: color }}>{subTrainingModule}</span>
-                        <span className={`${styles.bubble} ${styles.bubble3}`} style={{ backgroundColor: color }}>{cardDeck}</span>
+                        <span className={`${styles.bubble} ${styles.bubble2}`} style={{ backgroundColor: color }}>{cardDeck}</span>
                     </div>
                 </div>
-                <div className={styles.rightSide}>
-                    <div className={styles.topSide}>
-                        <span className={`${styles.bubble} ${styles.bubble1}`} style={{ backgroundColor: color }}>{trainingModule}</span>
-                        <p>Duration: {card.duration} minutes</p>
-                        <p>Difficulty: {card.difficulty}</p>
-                        <span>Time left: {formatTime(timeLeft)}</span>
-                    </div>
-                    <div className={styles.bottomSide}>
-                        <div className={styles.controls}>
-                            <label style={{ marginLeft: '1ch', marginRight: '1ch', display: 'inline-block', width: '60px' }}>
-                                <input type="checkbox" checked={isHeld} onChange={handleHoldChange} />
-                                Hold
-                            </label>
-                            <button className={`${styles.cardButton}`} onClick={onDealNextCard}>Next Card ⏭🎴</button>
-                        </div>
+                <div className={styles.bottomRight}>
+                    <div className={styles.controls}>
+                        <button className={`${styles.cardButton}`} onClick={onDealNextCard}>Next ⏭</button>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,4 @@
-import DifficultyLevel from '../types/DifficultyLevel';
-import DifficultyRange from '../types/DifficultyRange';
-import DifficultySetting from '../types/DifficultySetting';
+import { DifficultySetting, DifficultyLevel, DifficultyRange } from '../types/DifficultySetting';
 
 const DifficultySettingsStore = {
     getSettings(): DifficultySetting {

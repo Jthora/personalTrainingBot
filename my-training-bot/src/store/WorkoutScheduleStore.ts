@@ -1,6 +1,7 @@
 import { WorkoutSchedule } from '../types/WorkoutSchedule';
 import WorkoutCategoryCache from '../cache/WorkoutCategoryCache';
 import { createWorkoutSchedule } from '../utils/WorkoutScheduleCreator';
+import SelectedWorkoutCategories from '../types/WorkoutCategory';
 
 const WorkoutScheduleStore = {
     async getSchedule(options = {}): Promise<WorkoutSchedule | null> {
@@ -10,7 +11,7 @@ const WorkoutScheduleStore = {
                 console.log('Retrieved workout schedule from localStorage.');
                 return JSON.parse(schedule);
             } else {
-                console.warn('No workout schedule found in localStorage. Creating a new schedule.');
+                console.warn('getSchedule: No workout schedule found in localStorage. Creating a new schedule.');
                 const defaultSchedule = await createWorkoutSchedule(options);
                 this.saveSchedule(defaultSchedule);
                 return defaultSchedule;
@@ -29,7 +30,7 @@ const WorkoutScheduleStore = {
                 console.log('Retrieved workout schedule from localStorage.');
                 return JSON.parse(schedule);
             } else {
-                console.warn('No workout schedule found in localStorage.');
+                console.warn('getScheduleSync: No workout schedule found in localStorage.');
                 return null;
             }
         } catch (error) {
@@ -53,7 +54,7 @@ const WorkoutScheduleStore = {
             console.error('Failed to clear workout schedule:', error);
         }
     },
-    async getSelectedWorkoutCategories(): Promise<string[]> {
+    async getSelectedWorkoutCategories(): Promise<SelectedWorkoutCategories> {
         try {
             const categories = localStorage.getItem('selectedWorkoutCategories');
             if (categories) {
@@ -61,18 +62,26 @@ const WorkoutScheduleStore = {
                 return JSON.parse(categories);
             } else {
                 console.warn('No selected workout categories found in localStorage. Using all categories.');
-                const allCategories = WorkoutCategoryCache.getInstance().getWorkoutCategories().map(category => category.id);
-                this.saveSelectedWorkoutCategories(allCategories);
-                return allCategories;
+                const allCategories = WorkoutCategoryCache.getInstance().getWorkoutCategories();
+                const selectedCategories = allCategories.reduce((acc, category) => {
+                    acc[category.id] = true;
+                    return acc;
+                }, {} as SelectedWorkoutCategories);
+                this.saveSelectedWorkoutCategories(selectedCategories);
+                return selectedCategories;
             }
         } catch (error) {
             console.error('Failed to get selected workout categories:', error);
-            const allCategories = WorkoutCategoryCache.getInstance().getWorkoutCategories().map(category => category.id);
-            this.saveSelectedWorkoutCategories(allCategories);
-            return allCategories;
+            const allCategories = WorkoutCategoryCache.getInstance().getWorkoutCategories();
+            const selectedCategories = allCategories.reduce((acc, category) => {
+                acc[category.id] = true;
+                return acc;
+            }, {} as SelectedWorkoutCategories);
+            this.saveSelectedWorkoutCategories(selectedCategories);
+            return selectedCategories;
         }
     },
-    saveSelectedWorkoutCategories(categories: string[]) {
+    saveSelectedWorkoutCategories(categories: SelectedWorkoutCategories) {
         try {
             localStorage.setItem('selectedWorkoutCategories', JSON.stringify(categories));
             console.log('Saved selected workout categories to localStorage.');

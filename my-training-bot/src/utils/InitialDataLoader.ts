@@ -20,7 +20,7 @@ class InitialDataLoader {
                 //console.log(`Progress: (${currentStep}/${totalSteps})`);
             };
 
-            const totalSteps = totalCardDecks + totalWorkoutSubCategories;
+            const totalSteps = totalCardDecks + Object.keys(totalWorkoutSubCategories).length;
             console.log(`Total steps for progress: ${totalSteps}`);
             await this.loadCoachData();
             await this.loadTrainingModules(cardDataLoader, updateProgress, totalSteps);

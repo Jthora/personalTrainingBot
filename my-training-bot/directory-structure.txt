@@ -398,8 +398,9 @@
 │   │       ├── skip.wav
 │   │       └── timeout.wav
 │   ├── cache
-│   │   ├── WorkoutCategoryCache.ts
-│   │   └── TrainingModuleCache.ts
+│   │   ├── TrainingCoachCache.ts
+│   │   ├── TrainingModuleCache.ts
+│   │   └── WorkoutCategoryCache.ts
 │   ├── components
 │   │   ├── CardSelector
 │   │   │   ├── CardSelector.module.css
@@ -443,18 +444,6 @@
 │   │   ├── StatsPanel
 │   │   │   ├── StatsPanel.module.css
 │   │   │   └── StatsPanel.tsx
-│   │   ├── SubWorkoutCard
-│   │   │   ├── SubWorkoutCard.module.css
-│   │   │   └── SubWorkoutCard.tsx
-│   │   ├── SubWorkoutDetails
-│   │   │   ├── SubWorkoutDetails.module.css
-│   │   │   └── SubWorkoutDetails.tsx
-│   │   ├── SubWorkoutList
-│   │   │   ├── SubWorkoutList.module.css
-│   │   │   └── SubWorkoutList.tsx
-│   │   ├── SubWorkoutTimer
-│   │   │   ├── SubWorkoutTimer.module.css
-│   │   │   └── SubWorkoutTimer.tsx
 │   │   ├── TimerControls
 │   │   │   ├── TimerControls.module.css
 │   │   │   └── TimerControls.tsx
@@ -464,9 +453,31 @@
 │   │   ├── TrainingSequence
 │   │   │   ├── TrainingSequence.module.css
 │   │   │   └── TrainingSequence.tsx
-│   │   └── WorkoutScheduler
-│   │       ├── WorkoutScheduler.module.css
-│   │       └── WorkoutScheduler.tsx
+│   │   ├── TrainingWindow
+│   │   │   ├── TrainingWindow.module.css
+│   │   │   └── TrainingWindow.tsx
+│   │   ├── WorkoutCard
+│   │   │   ├── WorkoutCard.module.css
+│   │   │   └── WorkoutCard.tsx
+│   │   ├── WorkoutDetails
+│   │   │   ├── WorkoutDetails.module.css
+│   │   │   └── WorkoutDetails.tsx
+│   │   ├── WorkoutList
+│   │   │   ├── WorkoutList.module.css
+│   │   │   └── WorkoutList.tsx
+│   │   ├── WorkoutScheduleCreator.ts
+│   │   ├── WorkoutScheduler
+│   │   │   ├── WorkoutScheduler.module.css
+│   │   │   └── WorkoutScheduler.tsx
+│   │   ├── WorkoutTimer
+│   │   │   ├── WorkoutTimer.module.css
+│   │   │   └── WorkoutTimer.tsx
+│   │   ├── WorkoutsSidebar
+│   │   │   ├── WorkoutsSidebar.module.css
+│   │   │   └── WorkoutsSidebar.tsx
+│   │   └── WorkoutsWindow
+│   │       ├── WorkoutsWindow.module.css
+│   │       └── WorkoutsWindow.tsx
 │   ├── context
 │   │   ├── CardContext.tsx
 │   │   ├── SettingsContext.tsx
@@ -474,9 +485,9 @@
 │   ├── data
 │   │   ├── .DS_Store
 │   │   ├── training_coach_data
+│   │   │   ├── coach_speech.json
 │   │   │   ├── difficulty_levels.json
 │   │   │   ├── ranks.json
-│   │   │   ├── tiger_speech.json
 │   │   │   ├── training_challenges.json
 │   │   │   ├── workouts
 │   │   │   │   ├── agility.json
@@ -1029,30 +1040,34 @@
 │   │   ├── HomePage
 │   │   │   ├── HomePage.module.css
 │   │   │   └── HomePage.tsx
-│   │   ├── SchedulePage
-│   │   │   ├── SchedulePage.module.css
-│   │   │   └── SchedulePage.tsx
 │   │   ├── SettingsPage
 │   │   │   ├── SettingsPage.module.css
 │   │   │   └── SettingsPage.tsx
-│   │   ├── TrainingSequencePage
-│   │   │   ├── TrainingSequencePage.module.css
-│   │   │   └── TrainingSequencePage.tsx
-│   │   └── WorkoutPlannerPage
-│   │       ├── WorkoutPlannerPage.module.css
-│   │       └── WorkoutPlannerPage.tsx
+│   │   ├── TrainingPage
+│   │   │   ├── TrainingPage.module.css
+│   │   │   └── TrainingPage.tsx
+│   │   └── WorkoutsPage
+│   │       ├── WorkoutsPage.module.css
+│   │       └── WorkoutsPage.tsx
 │   ├── routes
 │   │   └── Routes.tsx
+│   ├── services
+│   ├── store
+│   │   ├── DifficultySettingsStore.ts
+│   │   └── WorkoutScheduleStore.ts
 │   ├── styles
 │   │   └── theme.css
 │   ├── types
 │   │   ├── Card.ts
 │   │   ├── CardDeck.ts
-│   │   ├── SubWorkout.ts
+│   │   ├── CoachData.ts
+│   │   ├── DifficultyLevel.ts
+│   │   ├── DifficultyLevelData.ts
+│   │   ├── DifficultyRange.ts
+│   │   ├── DifficultySetting.ts
 │   │   ├── TrainingModule.ts
 │   │   ├── TrainingModuleReference.ts
 │   │   ├── TrainingSubModule.ts
-│   │   ├── Workout.ts
 │   │   ├── WorkoutCategory.ts
 │   │   ├── WorkoutDifficultyLevel.ts
 │   │   ├── WorkoutRank.ts
@@ -1060,10 +1075,11 @@
 │   │   └── WorkoutsData.ts
 │   ├── utils
 │   │   ├── AudioPlayer.ts
+│   │   ├── CardDataLoader.ts
 │   │   ├── CardDealer.ts
-│   │   ├── WorkoutDataLoader.ts
-│   │   ├── DataLoader.ts
+│   │   ├── CoachDataLoader.ts
 │   │   ├── InitialDataLoader.ts
+│   │   ├── WorkoutDataLoader.ts
 │   │   ├── WorkoutScheduleCreator.ts
 │   │   ├── cardDeckPaths.ts
 │   │   ├── generateCardDeckPaths.tsx
@@ -1072,7 +1088,9 @@
 │   │   ├── generateWorkoutCategoryPaths.tsx
 │   │   ├── generateWorkoutSubCategoryPaths.tsx
 │   │   ├── modulePaths.ts
-│   │   └── subModulePaths.ts
+│   │   ├── subModulePaths.ts
+│   │   ├── workoutCategoryPaths.ts
+│   │   └── workoutSubCategoryPaths.ts
 │   └── vite-env.d.ts
 ├── templates
 │   ├── card_deck.json
@@ -1083,4 +1101,4 @@
 ├── tsconfig.node.json
 └── vite.config.ts
 
-178 directories, 906 files
+182 directories, 920 files

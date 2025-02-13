@@ -29,13 +29,8 @@ export const createWorkoutSchedule = async (options: WorkoutScheduleOptions = {}
         await new Promise(resolve => setTimeout(resolve, 100));
     }
 
-    const allCategories = WorkoutCategoryCache.getInstance().getWorkoutCategories().map(category => category.id).filter(Boolean);
-    let selectedCategories = categories.length > 0 ? categories : WorkoutScheduleStore.getSelectedWorkoutCategories();
-
-    if (selectedCategories.length === 0) {
-        selectedCategories = allCategories;
-        WorkoutScheduleStore.saveSelectedWorkoutCategories(allCategories);
-    }
+    const allCategories = WorkoutCategoryCache.getInstance().getWorkoutCategories();
+    const selectedCategories = WorkoutScheduleStore.getSelectedWorkoutCategories();
 
     console.log('All categories:', allCategories);
     console.log('Selected categories:', selectedCategories);
@@ -47,12 +42,8 @@ export const createWorkoutSchedule = async (options: WorkoutScheduleOptions = {}
     console.log('Calculated difficulty level:', difficultyLevel);
 
     const workouts: Workout[] = [];
-    for (const category of selectedCategories) {
-        const categoryWorkouts = await WorkoutCategoryCache.getInstance().fetchAllWorkoutsInCategory(category);
-        if (categoryWorkouts) {
-            workouts.push(...categoryWorkouts);
-        }
-    }
+
+    // TODO: Use selectedCategories to randomly select workouts
 
     console.log('Total workouts fetched:', workouts.length);
 

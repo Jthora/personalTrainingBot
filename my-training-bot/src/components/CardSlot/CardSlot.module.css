@@ -5,6 +5,7 @@
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
+    margin-right: 10px;
     background-color: #001f3f;
     color: #ffffff;
     height: auto; /* Ensure it stretches with its content */
@@ -31,6 +32,7 @@
     line-height: 1em;
     height: 100%; /* Ensure it fills vertically */
     width: 100%; /* Ensure it fills horizontally */
+    margin-right: 10px;
 }
 
 .topLeft {
@@ -61,6 +63,13 @@
     height: 100%;
 }
 
+.cardDescription {
+    font-size: 1em;
+    line-height: 1em;
+    margin: 0px;
+    padding: 5px;
+}
+
 .bubbleContainer1 {
     gap: 10px;
     height: 100%;
@@ -86,23 +95,23 @@
 
 .stats {
     flex-direction: column;
-    gap: 10px;
+    align-items: right;
+    justify-content: start;
+    line-height: 0.5em;
+    gap: 5px;
     margin-bottom: 10px;
 }
 
 .controls {
     display: flex;
     flex-direction: column;
-    align-items: right;
-    align-content: right;
-    align-self: right;
-    text-align: right;
-    gap: 10px;
+    align-items: flex-end; /* Align items to the end */
+    gap: 5px;
 }
 
 .cardButton {
     font-family: 'Aldrich', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 0px;
     padding: 12px 20px;
     border-radius: 25px;
@@ -114,6 +123,7 @@
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 1px;
+    align-self: flex-end; /* Prevent stretching */
 }
 
 .cardButton:hover {

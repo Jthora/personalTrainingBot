@@ -59,7 +59,7 @@ const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
             <div className={styles.cardDetails}>
                 <div className={styles.topLeft}>
                     <h2>{card.title}</h2>
-                    <p>{card.description}</p>
+                    <p className={styles.cardDescription}>{card.description}</p>
                     <ul>
                         {card.bulletpoints.map((point, index) => (
                             <li key={index}>{point}</li>
@@ -71,9 +71,9 @@ const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
                         <span className={`${styles.bubble} ${styles.bubble1}`} style={{ backgroundColor: color }}>{trainingModule}</span>
                     </div>
                     <div className={styles.stats}>
-                        <p>⏱️: {card.duration} minutes</p>
-                        <p>🎚️: {card.difficulty}</p>
-                        <span>⏳: {formatTime(timeLeft)}</span>
+                        <p>{card.duration} minutes ⏱️</p>
+                        <p>{card.difficulty} 🎚️</p>
+                        <span>{formatTime(timeLeft)} ⏳</span>
                     </div>
                     <label>
                         Hold 

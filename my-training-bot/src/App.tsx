@@ -8,15 +8,22 @@ import { WorkoutScheduleProvider } from './context/WorkoutScheduleContext';
 const App: React.FC = () => {
   const [isDataLoaded, setIsDataLoaded] = useState(false);
   const [loadingProgress, setLoadingProgress] = useState(0); // Add loading progress state
+  const [initializationPromise, setInitializationPromise] = useState<Promise<void> | null>(null);
 
   useEffect(() => {
-    const initializeData = async () => {
-      await InitialDataLoader.initialize((progress) => setLoadingProgress(progress)); // Pass progress callback
-      setIsDataLoaded(true);
-    };
+    if (!initializationPromise) {
+      const initializeData = async () => {
+        console.log('App: Initializing data...');
+        await InitialDataLoader.initialize((progress) => setLoadingProgress(progress)); // Pass progress callback
+        setIsDataLoaded(true);
+      };
 
-    initializeData();
-  }, []);
+      const promise = initializeData();
+      setInitializationPromise(promise);
+    } else {
+      console.warn('App: Data is already loading.');
+    }
+  }, [initializationPromise]);
 
   if (!isDataLoaded) {
     return <LoadingMessage progress={loadingProgress} />; // Use the new component with progress

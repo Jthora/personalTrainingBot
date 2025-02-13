@@ -22,7 +22,7 @@ export const fetchWorkout = (): string => {
     try {
         return getRandomItem(trainingChallenges).task;
     } catch (error) {
-        console.error("Failed to fetch workout challenge:", error);
+        console.error("WorkoutDataLoader: Failed to fetch workout challenge:", error);
         return "";
     }
 };
@@ -32,18 +32,18 @@ export const fetchWorkoutByCategory = async (category: string, subCategory: stri
     try {
         const categoryData = await workoutCategoryPaths[category]();
         if (!categoryData) {
-            console.warn(`Category ${category} not found.`);
+            console.warn(`WorkoutDataLoader: Category ${category} not found.`);
             return null;
         }
         const subCategoryData = await workoutSubCategoryPaths[`${category}_${subCategory}`]();
         if (!subCategoryData) {
-            console.warn(`Sub-category ${subCategory} not found in category ${category}.`);
+            console.warn(`WorkoutDataLoader: Sub-category ${subCategory} not found in category ${category}.`);
             return null;
         }
         const allWorkouts = subCategoryData.workout_groups.flatMap((group: WorkoutGroup) => group.workouts);
         return getRandomItem(allWorkouts);
     } catch (error) {
-        console.error(`Failed to fetch workout by category ${category} and sub-category ${subCategory}:`, error);
+        console.error(`WorkoutDataLoader: Failed to fetch workout by category ${category} and sub-category ${subCategory}:`, error);
         return null;
     }
 };
@@ -53,22 +53,22 @@ export const fetchWorkoutFromGroup = async (category: string, subCategory: strin
     try {
         const categoryData = await workoutCategoryPaths[category]();
         if (!categoryData) {
-            console.warn(`Category ${category} not found.`);
+            console.warn(`WorkoutDataLoader: Category ${category} not found.`);
             return null;
         }
         const subCategoryData = await workoutSubCategoryPaths[`${category}_${subCategory}`]();
         if (!subCategoryData) {
-            console.warn(`Sub-category ${subCategory} not found in category ${category}.`);
+            console.warn(`WorkoutDataLoader: Sub-category ${subCategory} not found in category ${category}.`);
             return null;
         }
         const group = subCategoryData.workout_groups.find((group: WorkoutGroup) => group.name === groupName);
         if (!group) {
-            console.warn(`Workout group ${groupName} not found in sub-category ${subCategory} of category ${category}.`);
+            console.warn(`WorkoutDataLoader: Workout group ${groupName} not found in sub-category ${subCategory} of category ${category}.`);
             return null;
         }
         return getRandomItem(group.workouts);
     } catch (error) {
-        console.error(`Failed to fetch workout from group ${groupName} in category ${category} and sub-category ${subCategory}:`, error);
+        console.error(`WorkoutDataLoader: Failed to fetch workout from group ${groupName} in category ${category} and sub-category ${subCategory}:`, error);
         return null;
     }
 };
@@ -78,7 +78,7 @@ export const fetchAllWorkoutsInCategory = async (category: string): Promise<Work
     try {
         const categoryData = await workoutCategoryPaths[category]();
         if (!categoryData) {
-            console.warn(`Category ${category} not found.`);
+            console.warn(`WorkoutDataLoader: Category ${category} not found.`);
             return null;
         }
         const workoutsList: Workout[] = [];
@@ -86,7 +86,7 @@ export const fetchAllWorkoutsInCategory = async (category: string): Promise<Work
             if (subCategoryId.startsWith(category)) {
                 const subCategoryData = await workoutSubCategoryPaths[subCategoryId]();
                 if (!subCategoryData.workout_groups) {
-                    console.warn(`Sub-category ${subCategoryId} has no workout groups.`);
+                    console.warn(`WorkoutDataLoader: Sub-category ${subCategoryId} has no workout groups.`);
                     continue;
                 }
                 subCategoryData.workout_groups.forEach((group: WorkoutGroup) => {
@@ -96,7 +96,7 @@ export const fetchAllWorkoutsInCategory = async (category: string): Promise<Work
         }
         return workoutsList;
     } catch (error) {
-        console.error(`Failed to fetch all workouts in category ${category}:`, error);
+        console.error(`WorkoutDataLoader: Failed to fetch all workouts in category ${category}:`, error);
         return null;
     }
 };
@@ -106,22 +106,22 @@ export const fetchAllWorkoutsInGroup = async (category: string, subCategory: str
     try {
         const categoryData = await workoutCategoryPaths[category]();
         if (!categoryData) {
-            console.warn(`Category ${category} not found.`);
+            console.warn(`WorkoutDataLoader: Category ${category} not found.`);
             return null;
         }
         const subCategoryData = await workoutSubCategoryPaths[`${category}_${subCategory}`]();
         if (!subCategoryData) {
-            console.warn(`Sub-category ${subCategory} not found in category ${category}.`);
+            console.warn(`WorkoutDataLoader: Sub-category ${subCategory} not found in category ${category}.`);
             return null;
         }
         const group = subCategoryData.workout_groups.find((group: WorkoutGroup) => group.name === groupName);
         if (!group) {
-            console.warn(`Workout group ${groupName} not found in sub-category ${subCategory} of category ${category}.`);
+            console.warn(`WorkoutDataLoader: Workout group ${groupName} not found in sub-category ${subCategory} of category ${category}.`);
             return null;
         }
         return group.workouts || null;
     } catch (error) {
-        console.error(`Failed to fetch all workouts in group ${groupName} for category ${category} and sub-category ${subCategory}:`, error);
+        console.error(`WorkoutDataLoader: Failed to fetch all workouts in group ${groupName} for category ${category} and sub-category ${subCategory}:`, error);
         return null;
     }
 };
@@ -131,7 +131,7 @@ export const fetchAllRanks = (): WorkoutRank[] | null => {
     try {
         return ranks || null;
     } catch (error) {
-        console.error("Failed to fetch all ranks:", error);
+        console.error("WorkoutDataLoader: Failed to fetch all ranks:", error);
         return null;
     }
 };
@@ -141,7 +141,7 @@ export const fetchRankByName = (rankName: string): WorkoutRank | null => {
     try {
         return ranks.find(rank => rank.name === rankName) || null;
     } catch (error) {
-        console.error(`Failed to fetch rank by name ${rankName}:`, error);
+        console.error(`WorkoutDataLoader: Failed to fetch rank by name ${rankName}:`, error);
         return null;
     }
 };
@@ -155,7 +155,7 @@ export const fetchNextRank = (currentRankName: string): WorkoutRank | null => {
         }
         return ranks[currentRankIndex + 1];
     } catch (error) {
-        console.error(`Failed to fetch next rank for current rank ${currentRankName}:`, error);
+        console.error(`WorkoutDataLoader: Failed to fetch next rank for current rank ${currentRankName}:`, error);
         return null;
     }
 };
@@ -169,7 +169,7 @@ export const fetchPreviousRank = (currentRankName: string): WorkoutRank | null =
         }
         return ranks[currentRankIndex - 1];
     } catch (error) {
-        console.error(`Failed to fetch previous rank for current rank ${currentRankName}:`, error);
+        console.error(`WorkoutDataLoader: Failed to fetch previous rank for current rank ${currentRankName}:`, error);
         return null;
     }
 };
@@ -187,7 +187,7 @@ export const fetchAllDifficultyLevels = async (): Promise<WorkoutDifficultyLevel
             requirements: level.requirements
         })) as WorkoutDifficultyLevel[];
     } catch (error) {
-        console.error("Failed to fetch difficulty levels:", error);
+        console.error("WorkoutDataLoader: Failed to fetch difficulty levels:", error);
         return [];
     }
 };
@@ -197,7 +197,7 @@ export const fetchDifficultyLevelByName = (levelName: string): WorkoutDifficulty
     try {
         return (difficultyLevels as WorkoutDifficultyLevel[]).find(level => level.name === levelName) || null;
     } catch (error) {
-        console.error(`Failed to fetch difficulty level by name ${levelName}:`, error);
+        console.error(`WorkoutDataLoader: Failed to fetch difficulty level by name ${levelName}:`, error);
         return null;
     }
 };
@@ -211,7 +211,7 @@ export const fetchNextDifficultyLevel = (currentLevelName: string): WorkoutDiffi
         }
         return (difficultyLevels as WorkoutDifficultyLevel[])[currentLevelIndex + 1];
     } catch (error) {
-        console.error(`Failed to fetch next difficulty level for current level ${currentLevelName}:`, error);
+        console.error(`WorkoutDataLoader: Failed to fetch next difficulty level for current level ${currentLevelName}:`, error);
         return null;
     }
 };
@@ -225,7 +225,7 @@ export const fetchPreviousDifficultyLevel = (currentLevelName: string): WorkoutD
         }
         return (difficultyLevels as WorkoutDifficultyLevel[])[currentLevelIndex - 1];
     } catch (error) {
-        console.error(`Failed to fetch previous difficulty level for current level ${currentLevelName}:`, error);
+        console.error(`WorkoutDataLoader: Failed to fetch previous difficulty level for current level ${currentLevelName}:`, error);
         return null;
     }
 }
@@ -233,12 +233,12 @@ export const fetchPreviousDifficultyLevel = (currentLevelName: string): WorkoutD
 class WorkoutDataLoader {
     async loadAllData(onProgress: () => void): Promise<WorkoutCategory[]> {
         try {
-            console.log("Starting to load all workout data...");
+            console.log("WorkoutDataLoader: Starting to load all workout data...");
             const workoutCategories = await this.loadWorkoutCategories(onProgress);
-            console.log(`Fetched ${workoutCategories.length} workout categories.`);
+            console.log(`WorkoutDataLoader: Fetched ${workoutCategories.length} workout categories.`);
             return workoutCategories;
         } catch (error) {
-            console.error("Failed to load all workout data:", error);
+            console.error("WorkoutDataLoader: Failed to load all workout data:", error);
             return [];
         }
     }
@@ -250,7 +250,7 @@ class WorkoutDataLoader {
             try {
                 const categoryData = await workoutCategoryPaths[categoryId]();
                 if (typeof categoryData.subcategories !== 'object' || Array.isArray(categoryData.subcategories)) {
-                    throw new Error(`Invalid subcategories format for category ${categoryId}`);
+                    throw new Error(`WorkoutDataLoader: Invalid subcategories format for category ${categoryId}`);
                 }
                 const subCategories: WorkoutSubCategory[] = await Promise.all(
                     Object.keys(categoryData.subcategories).map(async (subCategoryId: string) => {
@@ -280,7 +280,7 @@ class WorkoutDataLoader {
                                 workoutGroups: workoutGroups
                             };
                         } catch (error) {
-                            console.error(`Failed to load subcategory ${subCategoryId}:`, error);
+                            console.error(`WorkoutDataLoader: Failed to load subcategory ${subCategoryId}:`, error);
                             return this.createFallbackSubCategory(subCategoryId);
                         }
                     })
@@ -321,13 +321,13 @@ class WorkoutDataLoader {
 
     private parseDifficultyRange(difficultyRange: [number, number]): [number, number] {
         if (!Array.isArray(difficultyRange) || difficultyRange.length !== 2) {
-            console.error(`Invalid difficulty range format. Expected an array of two numbers.`);
+            console.error(`WorkoutDataLoader: Invalid difficulty range format. Expected an array of two numbers.`);
             return [1, 1];
         }
 
         const [minDifficulty, maxDifficulty] = difficultyRange;
         if (typeof minDifficulty !== 'number' || typeof maxDifficulty !== 'number' || minDifficulty > maxDifficulty) {
-            console.error(`Invalid difficulty range values. Ensure min and max are numbers and min is less than or equal to max.`);
+            console.error(`WorkoutDataLoader: Invalid difficulty range values. Ensure min and max are numbers and min is less than or equal to max.`);
             return [1, 1];
         }
 

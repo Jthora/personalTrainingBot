@@ -11,59 +11,59 @@ class CoachDataLoader {
 
     public async loadAllData(): Promise<void> {
         try {
-            console.log("Starting to load all coach data...");
+            console.log("CoachDataLoader: Starting to load all coach data...");
             await this.loadTrainingChallenges();
             await this.loadCoachSpeech();
             await this.loadRanks();
             await this.loadDifficultyLevels();
-            console.log("Successfully loaded all coach data.");
+            console.log("CoachDataLoader: Successfully loaded all coach data.");
         } catch (error) {
-            console.error("Failed to load all coach data:", error);
+            console.error("CoachDataLoader: Failed to load all coach data:", error);
         }
     }
 
     public async loadTrainingChallenges(): Promise<void> {
         try {
-            console.log("Loading training challenges...");
+            console.log("CoachDataLoader: Loading training challenges...");
             // Simulate async loading
             await new Promise(resolve => setTimeout(resolve, 500));
-            console.log(`Loaded ${trainingChallenges.length} training challenges.`);
+            console.log(`CoachDataLoader: Loaded ${trainingChallenges.length} training challenges.`);
         } catch (error) {
-            console.error("Failed to load training challenges:", error);
+            console.error("CoachDataLoader: Failed to load training challenges:", error);
         }
     }
 
     public async loadCoachSpeech(): Promise<void> {
         try {
-            console.log("Loading coach speech...");
+            console.log("CoachDataLoader: Loading coach speech...");
             // Simulate async loading
             await new Promise(resolve => setTimeout(resolve, 500));
             this.coachData = coachSpeech.coaches;
-            console.log(`Loaded coach speech for ${Object.keys(this.coachData).length} coaches.`);
+            console.log(`CoachDataLoader: Loaded coach speech for ${Object.keys(this.coachData).length} coaches.`);
         } catch (error) {
-            console.error("Failed to load coach speech:", error);
+            console.error("CoachDataLoader: Failed to load coach speech:", error);
         }
     }
 
     public async loadRanks(): Promise<void> {
         try {
-            console.log("Loading ranks...");
+            console.log("CoachDataLoader: Loading ranks...");
             // Simulate async loading
             await new Promise(resolve => setTimeout(resolve, 500));
-            console.log(`Loaded ${ranksData.length} ranks.`);
+            console.log(`CoachDataLoader: Loaded ${ranksData.length} ranks.`);
         } catch (error) {
-            console.error("Failed to load ranks:", error);
+            console.error("CoachDataLoader: Failed to load ranks:", error);
         }
     }
 
     public async loadDifficultyLevels(): Promise<void> {
         try {
-            console.log("Loading difficulty levels...");
+            console.log("CoachDataLoader: Loading difficulty levels...");
             // Simulate async loading
             await new Promise(resolve => setTimeout(resolve, 500));
             console.log(`Loaded ${difficultyLevels.length} difficulty levels.`);
         } catch (error) {
-            console.error("Failed to load difficulty levels:", error);
+            console.error("CoachDataLoader: Failed to load difficulty levels:", error);
         }
     }
 

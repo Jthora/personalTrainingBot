@@ -10,34 +10,35 @@ const useWorkoutSchedule = () => {
     const [isLoading, setIsLoading] = useState(false);
 
     const loadSchedule = useCallback(async (options = {}) => {
+        if (isLoading) return;
         setIsLoading(true);
-        const storedSchedule = await WorkoutScheduleStore.getSchedule(options);
-        if (storedSchedule) {
+        console.log('useWorkoutSchedule: Loading schedule...');
+        try {
+            const storedSchedule = await WorkoutScheduleStore.getSchedule(options);
             setSchedule(storedSchedule);
-        } else {
+        } catch (error) {
+            console.error('useWorkoutSchedule: Failed to load schedule:', error);
+        } finally {
+            setIsLoading(false);
+            console.log('useWorkoutSchedule: Finished loading schedule.');
+        }
+    }, [isLoading]);
+
+    const createRandomWorkout = useCallback(async (options = {}) => {
+        if (isLoading) return;
+        setIsLoading(true);
+        console.log('useWorkoutSchedule: Creating random workout...');
+        try {
             const newSchedule: WorkoutSchedule = await createWorkoutSchedule(options);
             WorkoutScheduleStore.saveSchedule(newSchedule);
             setSchedule(newSchedule);
+        } catch (error) {
+            console.error('useWorkoutSchedule: Failed to create random workout:', error);
+        } finally {
+            setIsLoading(false);
+            console.log('useWorkoutSchedule: Finished creating random workout.');
         }
-        setIsLoading(false);
-    }, []);
-
-    const createRandomWorkout = useCallback(async (options = {}) => {
-        setIsLoading(true);
-        const newSchedule: WorkoutSchedule = await createWorkoutSchedule(options);
-        WorkoutScheduleStore.saveSchedule(newSchedule);
-        setSchedule(newSchedule);
-        setIsLoading(false);
-    }, []);
-
-    const shuffleCurrentWorkout = useCallback(() => {
-        if (schedule && schedule.workouts.length > 0) {
-            const shuffledWorkouts = [...schedule.workouts].sort(() => 0.5 - Math.random());
-            const newSchedule = { ...schedule, workouts: shuffledWorkouts };
-            WorkoutScheduleStore.saveSchedule(newSchedule);
-            setSchedule(newSchedule);
-        }
-    }, [schedule]);
+    }, [isLoading]);
 
     const completeCurrentWorkout = useCallback(() => {
         if (schedule && schedule.workouts.length > 0) {
@@ -45,6 +46,7 @@ const useWorkoutSchedule = () => {
             const newSchedule = { ...schedule, workouts: remainingWorkouts };
             WorkoutScheduleStore.saveSchedule(newSchedule);
             setSchedule(newSchedule);
+            console.log('useWorkoutSchedule: Completed current workout.');
         }
     }, [schedule]);
 
@@ -55,6 +57,7 @@ const useWorkoutSchedule = () => {
             const newSchedule = { ...schedule, workouts: [...remainingWorkouts, skippedWorkout] };
             WorkoutScheduleStore.saveSchedule(newSchedule);
             setSchedule(newSchedule);
+            console.log('useWorkoutSchedule: Skipped current workout.');
         }
     }, [schedule]);
 
@@ -63,7 +66,6 @@ const useWorkoutSchedule = () => {
         isLoading,
         loadSchedule,
         createRandomWorkout,
-        shuffleCurrentWorkout,
         completeCurrentWorkout,
         skipCurrentWorkout
     };

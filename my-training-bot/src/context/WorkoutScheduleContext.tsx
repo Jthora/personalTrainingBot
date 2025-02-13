@@ -31,35 +31,37 @@ export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = (
     const loadSchedule = useCallback(async (options = {}) => {
         setIsLoading(true);
         setError(null);
+        console.log('WorkoutScheduleProvider: Loading schedule with options:', options);
         try {
-            console.log('Loading schedule with options:', options);
             const newSchedule = await createWorkoutSchedule(options);
-            console.log('New schedule created:', newSchedule);
+            console.log('WorkoutScheduleProvider: New schedule created:', newSchedule);
             setSchedule(newSchedule);
             WorkoutScheduleStore.saveSchedule(newSchedule);
         } catch (error) {
-            console.error('Failed to load schedule:', error);
-            setError('Failed to load schedule');
+            console.error('WorkoutScheduleProvider: Failed to load schedule:', error);
+            setError('WorkoutScheduleProvider: Failed to load schedule');
         } finally {
             setIsLoading(false);
+            console.log('WorkoutScheduleProvider: Finished loading schedule.');
         }
     }, []);
 
     useEffect(() => {
         const initializeSchedule = async () => {
-            const savedSchedule = WorkoutScheduleStore.getSchedule();
+            console.log('WorkoutScheduleProvider: Initializing schedule...');
+            const savedSchedule = await WorkoutScheduleStore.getSchedule();
             if (!savedSchedule) {
                 await loadSchedule(); // Load the workout schedule on provider mount if not already saved
             } else {
-                console.log('Loaded saved schedule:', savedSchedule);
+                console.log('WorkoutScheduleProvider: Loaded saved schedule:', savedSchedule);
                 setSchedule(savedSchedule);
                 setIsLoading(false);
             }
         };
 
         initializeSchedule().catch(error => {
-            console.error('Failed to initialize schedule:', error);
-            setError('Failed to initialize schedule');
+            console.error('WorkoutScheduleProvider: Failed to initialize schedule:', error);
+            setError('WorkoutScheduleProvider: Failed to initialize schedule');
             setIsLoading(false);
         });
     }, [loadSchedule]);
@@ -71,7 +73,7 @@ export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = (
                 ...prevSchedule,
                 workouts: prevSchedule.workouts.slice(1)
             };
-            console.log('Completed current workout. Updated schedule:', updatedSchedule);
+            console.log('WorkoutScheduleProvider: Completed current workout. Updated schedule:', updatedSchedule);
             WorkoutScheduleStore.saveSchedule(updatedSchedule);
             return updatedSchedule;
         });
@@ -84,7 +86,7 @@ export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = (
                 ...prevSchedule,
                 workouts: prevSchedule.workouts.slice(1)
             };
-            console.log('Skipped current workout. Updated schedule:', updatedSchedule);
+            console.log('WorkoutScheduleProvider: Skipped current workout. Updated schedule:', updatedSchedule);
             WorkoutScheduleStore.saveSchedule(updatedSchedule);
             return updatedSchedule;
         });
@@ -92,22 +94,25 @@ export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = (
 
     const resetSchedule = async () => {
         setIsLoading(true);
+        console.log('WorkoutScheduleProvider: Resetting schedule...');
         try {
             const newSchedule = await createWorkoutSchedule();
-            console.log('Reset schedule. New schedule:', newSchedule);
+            console.log('WorkoutScheduleProvider: Reset schedule. New schedule:', newSchedule);
             setSchedule(newSchedule);
             WorkoutScheduleStore.saveSchedule(newSchedule);
         } catch (error) {
-            console.error('Failed to reset schedule:', error);
-            setError('Failed to reset schedule');
+            console.error('WorkoutScheduleProvider: Failed to reset schedule:', error);
+            setError('WorkoutScheduleProvider: Failed to reset schedule');
         } finally {
             setIsLoading(false);
+            console.log('WorkoutScheduleProvider: Finished resetting schedule.');
         }
     };
 
     const updateSchedule = (newSchedule: WorkoutSchedule) => {
         setSchedule(newSchedule);
         WorkoutScheduleStore.saveSchedule(newSchedule);
+        console.log('WorkoutScheduleProvider: Updated schedule:', newSchedule);
     };
 
     return (

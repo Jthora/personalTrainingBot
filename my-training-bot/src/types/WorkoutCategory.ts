@@ -59,3 +59,6 @@ export class Workout {
 }
 
 export type SelectedWorkoutCategories = { [key: string]: boolean };
+export type SelectedWorkoutSubCategories = { [key: string]: boolean };
+export type SelectedWorkoutGroups = { [key: string]: boolean };
+export type SelectedWorkouts = { [key: string]: boolean };

@@ -9,15 +9,15 @@ const useWorkoutSchedule = () => {
     });
     const [isLoading, setIsLoading] = useState(false);
 
-    const loadSchedule = useCallback(async (options = {}) => {
+    const loadSchedule = useCallback(async () => {
         if (isLoading) return;
         setIsLoading(true);
         console.log('useWorkoutSchedule: Loading schedule...');
         try {
-            let storedSchedule = await WorkoutScheduleStore.getSchedule(options);
+            let storedSchedule = await WorkoutScheduleStore.getSchedule();
             if (storedSchedule?.workouts.length === 0) {
                 console.warn('useWorkoutSchedule: No workouts in the schedule. Creating a new schedule.');
-                storedSchedule = await WorkoutScheduleStore.createNewSchedule(options);
+                storedSchedule = await WorkoutScheduleStore.createNewSchedule();
                 WorkoutScheduleStore.saveSchedule(storedSchedule);
             }
             setSchedule(storedSchedule);
@@ -29,12 +29,12 @@ const useWorkoutSchedule = () => {
         }
     }, [isLoading]);
 
-    const createRandomWorkout = useCallback(async (options = {}) => {
+    const createRandomWorkout = useCallback(async () => {
         if (isLoading) return;
         setIsLoading(true);
         console.log('useWorkoutSchedule: Creating random workout...');
         try {
-            const newSchedule: WorkoutSchedule = await createWorkoutSchedule(options);
+            const newSchedule: WorkoutSchedule = await createWorkoutSchedule();
             WorkoutScheduleStore.saveSchedule(newSchedule);
             setSchedule(newSchedule);
         } catch (error) {

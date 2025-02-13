@@ -1,5 +1,5 @@
-import { Workout, WorkoutCategory } from "../types/WorkoutCategory";
-
+import { Workout, WorkoutCategory, SelectedWorkoutCategories, SelectedWorkoutGroups, SelectedWorkoutSubCategories, SelectedWorkouts } from "../types/WorkoutCategory";
+import WorkoutScheduleStore from "../store/WorkoutScheduleStore";
 class WorkoutCategoryCache {
     private static instance: WorkoutCategoryCache;
     public cache: Map<string, WorkoutCategory>;
@@ -86,6 +86,26 @@ class WorkoutCategoryCache {
         return workouts;
     }
 
+    public getAllWorkoutsSelected(): Workout[] {
+        const selectedWorkoutCategories = WorkoutScheduleStore.getSelectedWorkoutCategoriesSync();
+        const selectedWorkoutSubCategories = WorkoutScheduleStore.getSelectedWorkoutSubCategoriesSync();
+        const selectedWorkoutGroups = WorkoutScheduleStore.getSelectedWorkoutGroupsSync();
+        const selectedWorkouts = WorkoutScheduleStore.getSelectedWorkoutsSync();
+        return this.getAllWorkoutsFilteredBy(selectedWorkoutCategories, selectedWorkoutSubCategories, selectedWorkoutGroups, selectedWorkouts);
+    }
+
+    public getAllWorkouts(): Workout[] {
+        const workouts: Workout[] = [];
+        this.cache.forEach(category => {
+            category.subCategories.forEach(subCategory => {
+                subCategory.workoutGroups.forEach(group => {
+                    workouts.push(...group.workouts);
+                });
+            });
+        });
+        return workouts;
+    }
+
     public getWorkoutCategory(id: string): WorkoutCategory | undefined {
         return this.cache.get(id);
     }
@@ -164,6 +184,33 @@ class WorkoutCategoryCache {
 
     public getWorkoutsBySingleDifficultyLevel(level: number, count: number): Workout[] {
         return this.getWorkoutsByDifficultyRange(level, level, count);
+    }
+
+    public getAllWorkoutsFilteredBy(
+        selectedCategories: SelectedWorkoutCategories,
+        selectedSubCategories: SelectedWorkoutSubCategories,
+        selectedGroups: SelectedWorkoutGroups,
+        selectedWorkouts: SelectedWorkouts
+    ): Workout[] {
+        const workouts: Workout[] = [];
+        this.cache.forEach(category => {
+            if (selectedCategories[category.id]) {
+                category.subCategories.forEach(subCategory => {
+                    if (selectedSubCategories[subCategory.id]) {
+                        subCategory.workoutGroups.forEach(group => {
+                            if (selectedGroups[group.id]) {
+                                group.workouts.forEach(workout => {
+                                    if (selectedWorkouts[workout.id]) {
+                                        workouts.push(workout);
+                                    }
+                                });
+                            }
+                        });
+                    }
+                });
+            }
+        });
+        return workouts;
     }
 
     private getRandomItems<T>(array: T[], count: number): T[] {

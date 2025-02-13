@@ -1,8 +1,14 @@
 import { Workout } from './WorkoutCategory';
-import DifficultySetting from './DifficultySetting';
+import { DifficultySetting } from './DifficultySetting';
 
-export interface WorkoutSchedule {
+export class WorkoutSchedule {
     date: string;
     workouts: Workout[];
-    difficultySettings: DifficultySetting; // Add difficultySettings to the interface
+    difficultySettings: DifficultySetting;
+
+    constructor(date: string, workouts: Workout[], difficultySettings: DifficultySetting) {
+        this.date = date;
+        this.workouts = workouts;
+        this.difficultySettings = difficultySettings;
+    }
 }

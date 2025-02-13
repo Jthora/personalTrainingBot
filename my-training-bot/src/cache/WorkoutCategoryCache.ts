@@ -1,4 +1,4 @@
-import { Workout, WorkoutCategory, WorkoutSubCategory } from "../types/WorkoutCategory";
+import { Workout, WorkoutCategory } from "../types/WorkoutCategory";
 
 class WorkoutCategoryCache {
     private static instance: WorkoutCategoryCache;
@@ -8,7 +8,6 @@ class WorkoutCategoryCache {
     public selectedWorkoutGroups: Set<string>;
     public selectedWorkouts: Set<string>;
     private loading: boolean;
-    private categories: WorkoutCategory[] = [];
 
     private constructor() {
         this.cache = new Map();
@@ -69,7 +68,8 @@ class WorkoutCategoryCache {
     }
 
     public getWorkoutCategories(): WorkoutCategory[] {
-        return this.categories;
+        // Return all WorkoutCategories from the cache
+        return Array.from(this.cache.values());
     }
 
     public async fetchAllWorkoutsInCategory(categoryId: string): Promise<Workout[]> {

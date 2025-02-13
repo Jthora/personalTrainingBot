@@ -23,7 +23,7 @@ interface WorkoutScheduleProviderProps {
 export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = ({ children }) => {
     const [schedule, setSchedule] = useState<WorkoutSchedule>(() => {
         const savedSchedule = WorkoutScheduleStore.getScheduleSync(); // Use a synchronous method
-        return savedSchedule || { date: '', workouts: [], difficultySettings: { level: 0, range: [0, 0] } };
+        return savedSchedule || new WorkoutSchedule('', [], { level: 0, range: [0, 0] });
     });
     const [isLoading, setIsLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
@@ -33,7 +33,11 @@ export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = (
         setError(null);
         console.log('WorkoutScheduleProvider: Loading schedule with options:', options);
         try {
-            const newSchedule = await createWorkoutSchedule(options);
+            let newSchedule = await createWorkoutSchedule(options);
+            if (newSchedule.workouts.length === 0) {
+                console.warn('WorkoutScheduleProvider: No workouts in the schedule. Creating a new schedule.');
+                newSchedule = await WorkoutScheduleStore.createNewSchedule(options);
+            }
             console.log('WorkoutScheduleProvider: New schedule created:', newSchedule);
             setSchedule(newSchedule);
             WorkoutScheduleStore.saveSchedule(newSchedule);
@@ -49,14 +53,15 @@ export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = (
     useEffect(() => {
         const initializeSchedule = async () => {
             console.log('WorkoutScheduleProvider: Initializing schedule...');
-            const savedSchedule = await WorkoutScheduleStore.getSchedule();
-            if (!savedSchedule) {
-                await loadSchedule(); // Load the workout schedule on provider mount if not already saved
-            } else {
-                console.log('WorkoutScheduleProvider: Loaded saved schedule:', savedSchedule);
-                setSchedule(savedSchedule);
-                setIsLoading(false);
+            let savedSchedule = await WorkoutScheduleStore.getSchedule();
+            if (!savedSchedule || savedSchedule.workouts.length === 0) {
+                console.warn('WorkoutScheduleProvider: No saved schedule or no workouts in the schedule. Creating a new schedule.');
+                savedSchedule = await WorkoutScheduleStore.createNewSchedule();
+                WorkoutScheduleStore.saveSchedule(savedSchedule);
             }
+            console.log('WorkoutScheduleProvider: Loaded saved schedule:', savedSchedule);
+            setSchedule(savedSchedule);
+            setIsLoading(false);
         };
 
         initializeSchedule().catch(error => {
@@ -69,10 +74,11 @@ export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = (
     const completeCurrentWorkout = () => {
         setSchedule(prevSchedule => {
             if (!prevSchedule || prevSchedule.workouts.length === 0) return prevSchedule;
-            const updatedSchedule = {
-                ...prevSchedule,
-                workouts: prevSchedule.workouts.slice(1)
-            };
+            const updatedSchedule = new WorkoutSchedule(
+                prevSchedule.date,
+                prevSchedule.workouts.slice(1),
+                prevSchedule.difficultySettings
+            );
             console.log('WorkoutScheduleProvider: Completed current workout. Updated schedule:', updatedSchedule);
             WorkoutScheduleStore.saveSchedule(updatedSchedule);
             return updatedSchedule;
@@ -82,10 +88,11 @@ export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = (
     const skipCurrentWorkout = () => {
         setSchedule(prevSchedule => {
             if (!prevSchedule || prevSchedule.workouts.length === 0) return prevSchedule;
-            const updatedSchedule = {
-                ...prevSchedule,
-                workouts: prevSchedule.workouts.slice(1)
-            };
+            const updatedSchedule = new WorkoutSchedule(
+                prevSchedule.date,
+                prevSchedule.workouts.slice(1),
+                prevSchedule.difficultySettings
+            );
             console.log('WorkoutScheduleProvider: Skipped current workout. Updated schedule:', updatedSchedule);
             WorkoutScheduleStore.saveSchedule(updatedSchedule);
             return updatedSchedule;

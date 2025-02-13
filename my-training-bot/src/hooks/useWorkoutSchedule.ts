@@ -14,7 +14,12 @@ const useWorkoutSchedule = () => {
         setIsLoading(true);
         console.log('useWorkoutSchedule: Loading schedule...');
         try {
-            const storedSchedule = await WorkoutScheduleStore.getSchedule(options);
+            let storedSchedule = await WorkoutScheduleStore.getSchedule(options);
+            if (storedSchedule?.workouts.length === 0) {
+                console.warn('useWorkoutSchedule: No workouts in the schedule. Creating a new schedule.');
+                storedSchedule = await WorkoutScheduleStore.createNewSchedule(options);
+                WorkoutScheduleStore.saveSchedule(storedSchedule);
+            }
             setSchedule(storedSchedule);
         } catch (error) {
             console.error('useWorkoutSchedule: Failed to load schedule:', error);
@@ -43,7 +48,7 @@ const useWorkoutSchedule = () => {
     const completeCurrentWorkout = useCallback(() => {
         if (schedule && schedule.workouts.length > 0) {
             const remainingWorkouts = schedule.workouts.slice(1);
-            const newSchedule = { ...schedule, workouts: remainingWorkouts };
+            const newSchedule = new WorkoutSchedule(schedule.date, remainingWorkouts, schedule.difficultySettings);
             WorkoutScheduleStore.saveSchedule(newSchedule);
             setSchedule(newSchedule);
             console.log('useWorkoutSchedule: Completed current workout.');
@@ -54,7 +59,7 @@ const useWorkoutSchedule = () => {
         if (schedule && schedule.workouts.length > 0) {
             const skippedWorkout = schedule.workouts[0];
             const remainingWorkouts = schedule.workouts.slice(1);
-            const newSchedule = { ...schedule, workouts: [...remainingWorkouts, skippedWorkout] };
+            const newSchedule = new WorkoutSchedule(schedule.date, [...remainingWorkouts, skippedWorkout], schedule.difficultySettings);
             WorkoutScheduleStore.saveSchedule(newSchedule);
             setSchedule(newSchedule);
             console.log('useWorkoutSchedule: Skipped current workout.');

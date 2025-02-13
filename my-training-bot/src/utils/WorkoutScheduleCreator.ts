@@ -30,7 +30,7 @@ export const createWorkoutSchedule = async (options: WorkoutScheduleOptions = {}
     }
 
     const allCategories = WorkoutCategoryCache.getInstance().getWorkoutCategories();
-    const selectedCategories = WorkoutScheduleStore.getSelectedWorkoutCategories();
+    const selectedCategories = await WorkoutScheduleStore.getSelectedWorkoutCategories();
 
     console.log('All categories:', allCategories);
     console.log('Selected categories:', selectedCategories);
@@ -43,7 +43,18 @@ export const createWorkoutSchedule = async (options: WorkoutScheduleOptions = {}
 
     const workouts: Workout[] = [];
 
-    // TODO: Use selectedCategories to randomly select workouts
+    // Use selectedCategories to randomly select workouts
+    allCategories.forEach(category => {
+        category.subCategories.forEach(subCategory => {
+            subCategory.workoutGroups.forEach(group => {
+                group.workouts.forEach(workout => {
+                    if (selectedCategories[workout.id]) {
+                        workouts.push(workout);
+                    }
+                });
+            });
+        });
+    });
 
     console.log('Total workouts fetched:', workouts.length);
 

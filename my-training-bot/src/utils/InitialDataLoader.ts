@@ -5,6 +5,8 @@ import { totalWorkoutSubCategories } from './workoutSubCategoryPaths'; // Import
 import WorkoutCategoryCache from '../cache/WorkoutCategoryCache'; // Import WorkoutCategoryCache
 import TrainingModuleCache from '../cache/TrainingModuleCache';
 import TrainingCoachCache from '../cache/TrainingCoachCache';
+import WorkoutScheduleStore from '../store/WorkoutScheduleStore'; // Import WorkoutScheduleStore
+import { createWorkoutSchedule } from '../utils/WorkoutScheduleCreator'; // Import createWorkoutSchedule
 
 class InitialDataLoader {
     private static initializationPromise: Promise<void> | null = null;
@@ -33,6 +35,7 @@ class InitialDataLoader {
                 await this.loadCoachData();
                 await this.loadTrainingModules(cardDataLoader, updateProgress, totalSteps);
                 await this.loadWorkoutCategories(workoutDataLoader, updateProgress, totalSteps);
+                await this.loadWorkoutSchedule(); // Load workout schedule
 
                 console.log("InitialDataLoader: Successfully loaded and cached all data.");
             } catch (error) {
@@ -64,6 +67,13 @@ class InitialDataLoader {
         const workoutCategories = await dataLoader.loadAllData(() => updateProgress(totalSteps));
         console.log(`InitialDataLoader: Loaded ${workoutCategories.length} workout categories.`);
         await WorkoutCategoryCache.getInstance().loadData(workoutCategories); // Load data into cache
+    }
+
+    private static async loadWorkoutSchedule() {
+        console.log("InitialDataLoader: Loading workout schedule...");
+        const schedule = await createWorkoutSchedule();
+        WorkoutScheduleStore.saveSchedule(schedule);
+        console.log("InitialDataLoader: Loaded and saved workout schedule.");
     }
 }
 

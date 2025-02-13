@@ -9,16 +9,24 @@ const WorkoutScheduleStore = {
             const schedule = localStorage.getItem('workoutSchedule');
             if (schedule) {
                 console.log('WorkoutScheduleStore: getSchedule: Retrieved workout schedule from localStorage.');
-                return JSON.parse(schedule);
+                const parsedSchedule = JSON.parse(schedule);
+                const workoutSchedule = new WorkoutSchedule(parsedSchedule.date, parsedSchedule.workouts, parsedSchedule.difficultySettings);
+                if (workoutSchedule.workouts.length === 0) {
+                    console.warn('WorkoutScheduleStore: No workouts in the schedule. Creating a new schedule.');
+                    const newSchedule = await this.createNewSchedule(options);
+                    this.saveSchedule(newSchedule);
+                    return newSchedule;
+                }
+                return workoutSchedule;
             } else {
                 console.warn('getSchedule: No workout schedule found in localStorage. Creating a new schedule.');
-                const defaultSchedule = await createWorkoutSchedule(options);
+                const defaultSchedule = await this.createNewSchedule(options);
                 this.saveSchedule(defaultSchedule);
                 return defaultSchedule;
             }
         } catch (error) {
             console.error('Failed to get workout schedule:', error);
-            const defaultSchedule = await createWorkoutSchedule(options);
+            const defaultSchedule = await this.createNewSchedule(options);
             this.saveSchedule(defaultSchedule);
             return defaultSchedule;
         }
@@ -28,7 +36,15 @@ const WorkoutScheduleStore = {
             const schedule = localStorage.getItem('workoutSchedule');
             if (schedule) {
                 console.log('WorkoutScheduleStore: getScheduleSync: Retrieved workout schedule from localStorage.');
-                return JSON.parse(schedule);
+                const parsedSchedule = JSON.parse(schedule);
+                const workoutSchedule = new WorkoutSchedule(parsedSchedule.date, parsedSchedule.workouts, parsedSchedule.difficultySettings);
+                if (workoutSchedule.workouts.length === 0) {
+                    console.warn('WorkoutScheduleStore: No workouts in the schedule. Creating a new schedule.');
+                    const newSchedule = this.createNewScheduleSync();
+                    this.saveSchedule(newSchedule);
+                    return newSchedule;
+                }
+                return workoutSchedule;
             } else {
                 console.warn('getScheduleSync: No workout schedule found in localStorage.');
                 return null;
@@ -95,6 +111,45 @@ const WorkoutScheduleStore = {
             console.log('Cleared selected workout categories from localStorage.');
         } catch (error) {
             console.error('Failed to clear selected workout categories:', error);
+        }
+    },
+    async createNewSchedule(options = {}): Promise<WorkoutSchedule> {
+        const selectedCategories = await this.getSelectedWorkoutCategories();
+        const allWorkouts = WorkoutCategoryCache.getInstance().getAllWorkouts().filter(workout => selectedCategories[workout.id]);
+        const randomWorkouts = allWorkouts.sort(() => 0.5 - Math.random()).slice(0, 10);
+        return new WorkoutSchedule(new Date().toISOString(), randomWorkouts, { level: 1, range: [1, 10] });
+    },
+    createNewScheduleSync(): WorkoutSchedule {
+        const selectedCategories = this.getSelectedWorkoutCategoriesSync();
+        const allWorkouts = WorkoutCategoryCache.getInstance().getAllWorkouts().filter(workout => selectedCategories[workout.id]);
+        const randomWorkouts = allWorkouts.sort(() => 0.5 - Math.random()).slice(0, 10);
+        return new WorkoutSchedule(new Date().toISOString(), randomWorkouts, { level: 1, range: [1, 10] });
+    },
+    getSelectedWorkoutCategoriesSync(): SelectedWorkoutCategories {
+        try {
+            const categories = localStorage.getItem('selectedWorkoutCategories');
+            if (categories) {
+                console.log('Retrieved selected workout categories from localStorage.');
+                return JSON.parse(categories);
+            } else {
+                console.warn('No selected workout categories found in localStorage. Using all categories.');
+                const allCategories = WorkoutCategoryCache.getInstance().getWorkoutCategories();
+                const selectedCategories = allCategories.reduce((acc, category) => {
+                    acc[category.id] = true;
+                    return acc;
+                }, {} as SelectedWorkoutCategories);
+                this.saveSelectedWorkoutCategories(selectedCategories);
+                return selectedCategories;
+            }
+        } catch (error) {
+            console.error('Failed to get selected workout categories:', error);
+            const allCategories = WorkoutCategoryCache.getInstance().getWorkoutCategories();
+            const selectedCategories = allCategories.reduce((acc, category) => {
+                acc[category.id] = true;
+                return acc;
+            }, {} as SelectedWorkoutCategories);
+            this.saveSelectedWorkoutCategories(selectedCategories);
+            return selectedCategories;
         }
     }
 };

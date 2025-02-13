@@ -10,9 +10,16 @@ interface WorkoutDetailsProps {
 }
 
 const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ onSkipWorkout, onCompleteWorkout }) => {
-    const { schedule, isLoading } = useWorkoutSchedule();
+    const { schedule, isLoading, loadSchedule } = useWorkoutSchedule();
     const workout = schedule?.workouts[0] || null;
     const timerRef = useRef<{ resetTimer: () => void }>(null);
+
+    useEffect(() => {
+        console.log('WorkoutDetails: Loading schedule...');
+        loadSchedule().catch(error => {
+            console.error('Failed to load schedule:', error);
+        }); // Load the workout schedule on component mount
+    }, [loadSchedule]);
 
     useEffect(() => {
         if (workout) {

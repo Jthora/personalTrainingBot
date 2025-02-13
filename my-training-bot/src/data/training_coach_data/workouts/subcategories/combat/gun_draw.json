@@ -1,4 +1,6 @@
 {
+    "name": "Gun Draw",
+    "description": "Gun draw exercises to improve speed and accuracy.",
     "workout_groups": [
         {
             "name": "Gun Draw & Targeting",

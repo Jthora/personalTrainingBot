@@ -1,4 +1,6 @@
 {
+    "name": "Joint Mobility",
+    "description": "Joint mobility exercises to improve flexibility and range of motion.",
     "workout_groups": [
         {
             "name": "Beginner Joint Mobility",

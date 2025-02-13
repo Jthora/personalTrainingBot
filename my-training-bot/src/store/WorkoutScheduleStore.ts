@@ -1,14 +1,14 @@
 import { WorkoutSchedule } from '../types/WorkoutSchedule';
 import WorkoutCategoryCache from '../cache/WorkoutCategoryCache';
 import { createWorkoutSchedule } from '../utils/WorkoutScheduleCreator';
-import SelectedWorkoutCategories from '../types/WorkoutCategory';
+import { SelectedWorkoutCategories } from '../types/WorkoutCategory';
 
 const WorkoutScheduleStore = {
     async getSchedule(options = {}): Promise<WorkoutSchedule | null> {
         try {
             const schedule = localStorage.getItem('workoutSchedule');
             if (schedule) {
-                console.log('Retrieved workout schedule from localStorage.');
+                console.log('WorkoutScheduleStore: getSchedule: Retrieved workout schedule from localStorage.');
                 return JSON.parse(schedule);
             } else {
                 console.warn('getSchedule: No workout schedule found in localStorage. Creating a new schedule.');
@@ -27,7 +27,7 @@ const WorkoutScheduleStore = {
         try {
             const schedule = localStorage.getItem('workoutSchedule');
             if (schedule) {
-                console.log('Retrieved workout schedule from localStorage.');
+                console.log('WorkoutScheduleStore: getScheduleSync: Retrieved workout schedule from localStorage.');
                 return JSON.parse(schedule);
             } else {
                 console.warn('getScheduleSync: No workout schedule found in localStorage.');

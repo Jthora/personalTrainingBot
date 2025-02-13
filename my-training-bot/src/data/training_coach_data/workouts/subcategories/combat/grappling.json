@@ -1,4 +1,6 @@
 {
+    "name": "Grappling",
+    "description": "Grappling exercises to improve ground fighting skills, roll recovery, and sparring techniques.",
     "workout_groups": [
         {
             "name": "Ground Fighting Fundamentals",

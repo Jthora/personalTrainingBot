@@ -1,4 +1,6 @@
 {
+    "name": "Muscular",
+    "description": "Muscular endurance exercises to improve strength and stamina.",
     "workout_groups": [
         {
             "name": "Muscular Endurance",

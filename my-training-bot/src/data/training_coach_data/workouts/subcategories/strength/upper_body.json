@@ -1,4 +1,6 @@
 {
+    "name": "Upper Body",
+    "description": "Upper body strength and hypertrophy workouts.",
     "workout_groups": [
         {
             "name": "Beginner Upper Body Strength Routine",

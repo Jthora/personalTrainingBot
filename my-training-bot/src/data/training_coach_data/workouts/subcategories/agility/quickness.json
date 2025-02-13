@@ -1,4 +1,6 @@
 {
+    "name": "Quickness",
+    "description": "Quickness exercises to improve speed and reaction time.",
     "workout_groups":[
         {
             "name": "Tactical Quickness Drills",

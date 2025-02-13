@@ -1,4 +1,6 @@
 {
+    "name": "Weapon Handling",
+    "description": "Exercises to improve weapon handling skills.",
     "workout_groups": [
         {
             "name": "Weapon Handling Drills",

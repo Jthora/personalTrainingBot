@@ -1,4 +1,6 @@
 {
+    "name": "Agility & Reflex",
+    "description": "Agility and reflex training for superheroes.",
     "workout_groups": [
         {
             "name": "Hyper Agility & Reflex Training",

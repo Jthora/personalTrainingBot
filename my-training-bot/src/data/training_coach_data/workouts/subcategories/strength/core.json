@@ -1,4 +1,6 @@
 {
+    "name": "Core",
+    "description": "Core exercises to improve strength, stability, and endurance.",
     "workout_groups": [
         {
             "name": "Beginner Core Strength Routine",

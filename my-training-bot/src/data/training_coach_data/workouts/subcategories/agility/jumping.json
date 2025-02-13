@@ -1,4 +1,6 @@
 {
+    "name":"Jumping",
+    "description":"Jumping exercises to improve agility and reflexes.",
     "workout_groups":[
         {
             "name": "Jumping & Vault Training",

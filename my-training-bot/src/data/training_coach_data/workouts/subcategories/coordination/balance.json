@@ -1,4 +1,6 @@
 {
+    "name": "Balance",
+    "description": "Balance exercises to improve stability and coordination.",
     "workout_groups": [
         {
             "name": "Balance and Stability Drills",

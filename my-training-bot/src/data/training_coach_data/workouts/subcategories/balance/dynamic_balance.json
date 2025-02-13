@@ -1,4 +1,6 @@
 {
+    "name": "Dynamic Balance",
+    "description": "Dynamic balance exercises to improve stability and coordination.",
     "workout_groups": [
         {
             "name": "Dynamic Stability Workouts",

@@ -1,4 +1,6 @@
 {
+    "name": "Bodybuilding",
+    "description": "Bodybuilding exercises to improve muscle size and definition.",
     "workout_groups": [
         {
             "name": "Hypertrophy Bodybuilding Routine",

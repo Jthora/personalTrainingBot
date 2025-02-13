@@ -1,4 +1,6 @@
 {
+    "name": "Reaction",
+    "description": "Exercises to improve reaction time and reflexes.",
     "workout_groups":[
         {
             "name": "Reaction Drills",

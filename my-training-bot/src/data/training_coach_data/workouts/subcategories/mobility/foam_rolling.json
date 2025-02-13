@@ -1,4 +1,6 @@
 {
+    "name": "Foam Rolling",
+    "description": "Foam rolling exercises to improve flexibility, reduce muscle soreness, and enhance recovery.",
     "workout_groups": [
         {
             "name": "Beginner Foam Rolling",

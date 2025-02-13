@@ -1,4 +1,6 @@
 {
+    "name": "Single-Leg",
+    "description": "Single-leg balance exercises to improve stability and strength.",
     "workout_groups": [
         {
             "name": "Basic Single-Leg Balance Exercises",

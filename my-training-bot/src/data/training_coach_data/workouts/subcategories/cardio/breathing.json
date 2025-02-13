@@ -1,4 +1,6 @@
 {
+    "name": "Breathing",
+    "description": "Breathing exercises to improve lung capacity, relaxation, and focus.",
     "workout_groups": [
         {
             "name": "Breathing Techniques Training",

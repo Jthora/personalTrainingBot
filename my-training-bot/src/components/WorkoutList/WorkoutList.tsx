@@ -8,7 +8,7 @@ const WorkoutList: React.FC<{ onWorkoutComplete: (workout: Workout) => void }> =
     const { schedule, loadSchedule, isLoading } = useWorkoutSchedule();
 
     useEffect(() => {
-        console.log('Loading schedule...');
+        console.log('WorkoutList: Loading schedule...');
         loadSchedule().catch(error => {
             console.error('Failed to load schedule:', error);
         }); // Load the workout schedule on component mount

@@ -10,7 +10,7 @@ const Sidebar: React.FC = () => {
     const [currentWorkout, setCurrentWorkout] = useState<Workout | null>(schedule?.workouts[0] || null);
 
     useEffect(() => {
-        console.log('Loading schedule...');
+        console.log('Sidebar: Loading schedule...');
         loadSchedule().catch(error => {
             console.error('Failed to load schedule:', error);
         }); // Load the workout schedule on component mount

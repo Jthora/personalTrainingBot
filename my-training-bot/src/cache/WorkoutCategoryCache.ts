@@ -1,4 +1,4 @@
-import { Workout, WorkoutCategory } from "../types/WorkoutCategory";
+import { Workout, WorkoutCategory, WorkoutSubCategory } from "../types/WorkoutCategory";
 
 class WorkoutCategoryCache {
     private static instance: WorkoutCategoryCache;
@@ -32,9 +32,10 @@ class WorkoutCategoryCache {
             return;
         }
         this.loading = true;
-        console.log('WorkoutCategoryCache: Starting to cache data...');
+        console.log(`WorkoutCategoryCache: Starting to cache ${workoutCategories.length} workout categories...`);
         return new Promise((resolve) => {
             setTimeout(() => {
+                console.log(`WorkoutCategoryCache: Now caching ${workoutCategories.length} workout categories...`);
                 workoutCategories.forEach(category => {
                     this.cache.set(category.id, category);
                     this.selectedCategories.add(category.id);
@@ -48,10 +49,10 @@ class WorkoutCategoryCache {
                         });
                     });
                 });
-                console.log(`Cached ${this.cache.size} workout categories.`);
-                console.log(`Cached ${this.selectedSubCategories.size} workout subcategories.`);
-                console.log(`Cached ${this.selectedWorkoutGroups.size} workout groups.`);
-                console.log(`Cached ${this.selectedWorkouts.size} workouts.`);
+                console.log(`WorkoutCategoryCache: Cached ${this.cache.size} workout categories.`);
+                console.log(`WorkoutCategoryCache: Cached ${this.selectedSubCategories.size} workout subcategories.`);
+                console.log(`WorkoutCategoryCache: Cached ${this.selectedWorkoutGroups.size} workout groups.`);
+                console.log(`WorkoutCategoryCache: Cached ${this.selectedWorkouts.size} workouts.`);
                 this.loading = false;
                 resolve();
             }, 1000); // Simulate a delay

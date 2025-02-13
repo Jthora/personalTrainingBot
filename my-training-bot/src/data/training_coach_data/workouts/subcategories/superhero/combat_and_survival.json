@@ -1,4 +1,6 @@
 {
+    "name": "Combat & Survival",
+    "description": "Combat and survival exercises for superheroes.",
     "workout_groups": [
         {
             "name": "Tactical Combat & Survival Training",

@@ -1,4 +1,6 @@
 {
+    "name": "Reaction Time",
+    "description": "Exercises to improve reaction time and reflexes.",
     "workout_groups": [
         {
             "name": "Reaction Time Training",

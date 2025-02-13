@@ -1,4 +1,6 @@
 {
+    "name": "Jo Staff Fighting",
+    "description": "Jo staff fighting techniques and drills.",
     "workout_groups": [
         {
             "name": "Jo Staff Techniques Training",

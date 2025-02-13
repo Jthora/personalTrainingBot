@@ -1,4 +1,6 @@
 {
+    "name": "Mental",
+    "description": "Mental endurance exercises to improve focus, resilience, and breath control.",
     "workout_groups": [
         {
             "name": "Mental Endurance & Breath Control",

@@ -1,4 +1,6 @@
 {
+    "name": "Cardiovascular",
+    "description": "Cardiovascular endurance exercises to improve stamina and heart health.",
     "workout_groups": [
         {
             "name": "Cardiovascular Endurance",

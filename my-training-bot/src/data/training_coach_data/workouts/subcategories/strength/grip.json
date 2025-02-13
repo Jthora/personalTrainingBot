@@ -1,4 +1,6 @@
 {
+    "name": "Grip",
+    "description": "Grip training exercises to improve hand strength and endurance.",
     "workout_groups": [
         {
             "name": "Beginner Grip Endurance Routine",

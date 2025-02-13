@@ -1,4 +1,6 @@
 {
+    "name": "Jo Staff Agility",
+    "description": "Agility training with Jo staff.",
     "workout_groups": [
         {
             "name": "Jo Staff Flow Training",

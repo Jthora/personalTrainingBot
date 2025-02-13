@@ -1,4 +1,6 @@
 {
+    "name": "Core Control",
+    "description": "Exercises to improve core control and stability.",
     "workout_groups": [
         {
             "name": "Core Control Drills",

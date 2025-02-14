@@ -23,8 +23,15 @@
     flex-grow: 1;
 }
 
+.coach {
+    line-height: -1em;
+    margin-top: 4px;
+    margin-bottom: -8px;
+}
+
 .title {
-    line-height: .2em;
+    line-height: 1em;
+    margin-bottom: 0px;
 }
 
 .titleContainer {

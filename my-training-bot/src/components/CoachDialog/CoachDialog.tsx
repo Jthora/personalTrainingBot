@@ -4,17 +4,10 @@ import tigerIcon from '../../assets/images/icons/tiger_fitness_god-icon-512x.png
 import TrainingCoachCache from '../../cache/TrainingCoachCache';
 import WorkoutDetails from '../WorkoutDetails/WorkoutDetails';
 import useWorkoutSchedule from '../../hooks/useWorkoutSchedule';
-import { Workout } from '../../types/WorkoutCategory';
 
-interface CoachDialogProps {
-    currentWorkout: Workout | null;
-    onComplete: () => void;
-    onSkip: () => void;
-}
-
-const CoachDialog: React.FC<CoachDialogProps> = ({ currentWorkout, onComplete, onSkip }) => {
+const CoachDialog: React.FC = () => {
     const [quote, setQuote] = useState('');
-    const { completeCurrentWorkout, skipCurrentWorkout, isLoading } = useWorkoutSchedule();
+    const { isLoading } = useWorkoutSchedule(); // TODO: a hook for TrainingCoachCache is what should used for this loading
 
     useEffect(() => {
         const loadMotivationalQuote = async () => {
@@ -32,18 +25,6 @@ const CoachDialog: React.FC<CoachDialogProps> = ({ currentWorkout, onComplete, o
         return () => clearInterval(intervalId); // Cleanup interval on component unmount
     }, []);
 
-    const handleCompleteWorkout = () => {
-        completeCurrentWorkout();
-        setQuote(TrainingCoachCache.getInstance().getRandomBoast());
-        onComplete();
-    };
-
-    const handleSkipWorkout = () => {
-        skipCurrentWorkout();
-        setQuote(TrainingCoachCache.getInstance().getRandomGrowl());
-        onSkip();
-    };
-
     if (isLoading) {
         return <div className={styles.loading}>Loading...</div>;
     }
@@ -54,14 +35,14 @@ const CoachDialog: React.FC<CoachDialogProps> = ({ currentWorkout, onComplete, o
                 <img src={tigerIcon} alt="Coach Icon" className={styles.icon} width="128" height="128" />
                 <div className={styles.textContainer}>
                     <div className={styles.titleContainer}>
-                        <h3 className={styles.title}>Coach:</h3>
+                        <h3 className={styles.coach}>Coach:</h3>
                         <h2 className={styles.title}>Tiger Fitness God</h2>
                     </div>
                     <div className={styles.quote}>"{quote}"</div>
                 </div>
             </div>
             <div className={styles.workoutDetails}>
-                <WorkoutDetails onSkipWorkout={handleSkipWorkout} onCompleteWorkout={handleCompleteWorkout} />
+                <WorkoutDetails />
             </div>
         </div>
     );

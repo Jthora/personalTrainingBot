@@ -4,13 +4,8 @@ import WorkoutTimer from '../WorkoutTimer/WorkoutTimer';
 import { playCompleteSound, playSkipSound, playTimeoutSound } from '../../utils/AudioPlayer';
 import useWorkoutSchedule from '../../hooks/useWorkoutSchedule';
 
-interface WorkoutDetailsProps {
-    onSkipWorkout: () => void;
-    onCompleteWorkout: () => void;
-}
-
-const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ onSkipWorkout, onCompleteWorkout }) => {
-    const { schedule, isLoading, loadSchedule } = useWorkoutSchedule();
+const WorkoutDetails: React.FC = () => {
+    const { schedule, isLoading, loadSchedule, completeCurrentWorkout, skipCurrentWorkout } = useWorkoutSchedule();
     const workout = schedule?.workouts[0] || null;
     const timerRef = useRef<{ resetTimer: () => void }>(null);
 
@@ -46,21 +41,21 @@ const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ onSkipWorkout, onComple
     const handleCompleteWorkout = () => {
         console.log('Workout completed:', workout);
         playCompleteSound();
-        onCompleteWorkout();
+        completeCurrentWorkout();
         timerRef.current?.resetTimer();
     };
 
     const handleSkipWorkout = () => {
         console.log('Workout skipped:', workout);
         playSkipSound();
-        onSkipWorkout();
+        skipCurrentWorkout();
         timerRef.current?.resetTimer();
     };
 
     const handleTimeoutWorkout = () => {
         console.log('Workout timed out:', workout);
         playTimeoutSound();
-        onCompleteWorkout();
+        skipCurrentWorkout();
     };
 
     return (

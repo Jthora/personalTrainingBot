@@ -59,8 +59,10 @@
 }
 
 .workoutDetailsButtonGroup {
-    margin-top: 16px;
-    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    gap: 2px;
 }
 
 .workoutDetailsButton {

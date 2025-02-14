@@ -96,32 +96,60 @@ const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ item }) => {
         if (!currentWorkout) {
             return <div className={styles.noWorkout}>All workouts in this set are completed.</div>;
         }
-        const [workout, completed] = currentWorkout;
+        const [workout] = currentWorkout;
         return (
             <div className={styles.workoutDetails}>
-                <h3>{workout.name}</h3>
-                <p>{workout.description}</p>
-                <p>Duration: {workout.duration}</p>
-                <p>Intensity: {workout.intensity}</p>
-                <p>Difficulty Range: {workout.difficulty_range[0]} - {workout.difficulty_range[1]}</p>
-                <p>Completed: {completed ? 'Yes' : 'No'}</p>
-                <div className={styles.buttons}>
-                    <button onClick={handleCompleteWorkout} className={styles.completeButton}>✅</button>
-                    <button onClick={handleSkipWorkout} className={styles.skipButton}>⏭️</button>
+                <div className={styles.title}>
+                    <h1>{workout.name}</h1>
+                </div>
+                <div className={styles.bottom}>
+                    <div className={styles.left}>
+                        <div className={styles.subDetails}>
+                            <p>⏱️ {workout.duration}</p>
+                            <p>🔥 {workout.intensity}</p>
+                            <p>🎚️ {workout.difficulty_range[0]} - {workout.difficulty_range[1]}</p>
+                        </div>
+                    </div>
+                    <div className={styles.right}>
+                        <div className={styles.buttons}>
+                            <button onClick={handleCompleteWorkout} className={styles.completeButton}>✅</button>
+                            <button onClick={handleSkipWorkout} className={styles.skipButton}>⏭️</button>
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.description}>
+                    <p>{workout.description}</p>
                 </div>
             </div>
         );
     } else if (item instanceof WorkoutBlock) {
         return (
             <div className={styles.workoutDetails}>
-                <h3>{item.name}</h3>
-                <p>{item.description}</p>
-                <p>Duration: {item.duration} minutes</p>
-                <p>{item.intervalDetails}</p>
-                <WorkoutTimer ref={timerRef} duration={item.duration * 60} onComplete={handleTimeoutWorkout} />
-                <div className={styles.buttons}>
-                    <button onClick={handleCompleteWorkout} className={styles.completeButton}>✅</button>
-                    <button onClick={handleSkipWorkout} className={styles.skipButton}>⏭️</button>
+                <div className={styles.top}>
+                    <div className={styles.title}>
+                        <h1>{item.name}</h1>
+                    </div>
+                    <div className={styles.timer}>
+                        <WorkoutTimer ref={timerRef} duration={item.duration * 60} onComplete={handleTimeoutWorkout} />
+                    </div>
+                </div>
+                
+                <div className={styles.bottom}>
+                    <div className={styles.left}>
+                        <div className={styles.subDetails}>
+                            <p>Duration: {item.duration} minutes</p>
+                            <p>{item.description}</p>
+                        </div>
+                    </div>
+                    <div className={styles.right}>
+                        <div className={styles.buttons}>
+                            <button onClick={handleCompleteWorkout} className={styles.completeButton}>✅</button>
+                            <button onClick={handleSkipWorkout} className={styles.skipButton}>⏭️</button>
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.description}>
+                    <p>{item.intervalDetails}</p>
                 </div>
             </div>
         );

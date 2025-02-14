@@ -35,21 +35,23 @@
     justify-content: space-between;
 }
 
-.top h1 {
-    margin: 2px;
-    padding: 0px;
+.title {
+    margin-top: -20px;
+    padding-top: -20px;
+    margin-bottom: -10px;
+    padding-bottom: -10px;
+}
+
+.description {
+    font-size: 1em;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    color:#CCCCCC;
 }
 
 .bottom {
-    text-align: left;
-    margin-top: 8px;
-    margin-bottom: 0px;
-    padding: 0px;
-}
-
-.bottom p {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: row;
 }
 
 .noWorkout {
@@ -87,5 +89,5 @@
 }
 
 .subDetails {
-    line-height: .2em;
+    line-height: .3em;
 }

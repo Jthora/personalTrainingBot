@@ -40,10 +40,9 @@ const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ item }) => {
     }
 
     if (!item) {
-        console.warn('No workout selected.');
+        console.warn('WorkoutDetails: No workout sets or blocks.');
         return (
             <div className={styles.noWorkout}>
-                No workout selected
                 {schedule && schedule.scheduleItems.length === 0 && (
                     <button onClick={createNewSchedule} className={styles.createNewScheduleButton}>
                         Create New Workout Schedule

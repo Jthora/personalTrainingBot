@@ -24,9 +24,18 @@ const WorkoutList: React.FC = () => {
         return <div className={styles.loading}>Loading...</div>;
     }
 
-    if (!schedule || schedule.scheduleItems.length === 0) {
-        console.warn('No workouts available in the schedule.');
-        return <div className={styles.noWorkouts}>No workouts available</div>;
+    if (!schedule) {
+        console.warn('WorkoutList: The schedule is missing.');
+        return <div className={styles.noWorkouts}>No workout schedule</div>;
+    }
+
+    if (schedule.scheduleItems.length === 0) {
+        console.log('WorkoutList: No workouts available in the schedule.');
+        return (
+            <div>
+                <div className={styles.noWorkouts}>Workout schedule is empty</div>
+            </div>
+        );
     }
 
     console.log('Rendering workout list...');

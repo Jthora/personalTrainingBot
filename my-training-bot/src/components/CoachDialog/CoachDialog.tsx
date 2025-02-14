@@ -7,7 +7,7 @@ import useWorkoutSchedule from '../../hooks/useWorkoutSchedule';
 
 const CoachDialog: React.FC = () => {
     const [quote, setQuote] = useState('');
-    const { schedule, isLoading } = useWorkoutSchedule();
+    const { schedule, isLoading, createNewSchedule } = useWorkoutSchedule();
     const currentItem = schedule?.scheduleItems[0];
 
     useEffect(() => {
@@ -39,7 +39,16 @@ const CoachDialog: React.FC = () => {
                 </div>
             </div>
             <div className={styles.workoutDetails}>
-                {!isLoading && currentItem && <WorkoutDetails item={currentItem} />}
+                {!isLoading && currentItem ? (
+                    <WorkoutDetails item={currentItem} />
+                ) : (
+                    <div className={styles.noWorkout}>
+                        <p>All workouts are completed or skipped.</p>
+                        <button onClick={createNewSchedule} className={styles.createNewScheduleButton}>
+                            Create New Workout Schedule
+                        </button>
+                    </div>
+                )}
             </div>
         </div>
     );

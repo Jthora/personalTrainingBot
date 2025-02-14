@@ -99,11 +99,11 @@ const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ item }) => {
         const [workout] = currentWorkout;
         return (
             <div className={styles.workoutDetails}>
-                <div className={styles.title}>
-                    <h1>{workout.name}</h1>
-                </div>
-                <div className={styles.bottom}>
+                <div className={styles.top}>
                     <div className={styles.left}>
+                        <div className={styles.title}>
+                            <h1>{workout.name}</h1>
+                        </div>
                         <div className={styles.subDetails}>
                             <p>⏱️ {workout.duration}</p>
                             <p>🔥 {workout.intensity}</p>
@@ -111,9 +111,13 @@ const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ item }) => {
                         </div>
                     </div>
                     <div className={styles.right}>
-                        <div className={styles.buttons}>
-                            <button onClick={handleCompleteWorkout} className={styles.completeButton}>✅</button>
-                            <button onClick={handleSkipWorkout} className={styles.skipButton}>⏭️</button>
+                        <div className={styles.workoutDetailsButtonGroup}>
+                            <div className={styles.workoutDetailsButton}>
+                                <button onClick={handleCompleteWorkout}>✅</button>
+                            </div>
+                            <div className={styles.workoutDetailsButton}>
+                                <button onClick={handleSkipWorkout}>⏭️</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -126,30 +130,33 @@ const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ item }) => {
         return (
             <div className={styles.workoutDetails}>
                 <div className={styles.top}>
-                    <div className={styles.title}>
-                        <h1>{item.name}</h1>
-                    </div>
-                    <div className={styles.timer}>
-                        <WorkoutTimer ref={timerRef} duration={item.duration * 60} onComplete={handleTimeoutWorkout} />
-                    </div>
-                </div>
-                
-                <div className={styles.bottom}>
                     <div className={styles.left}>
-                        <div className={styles.subDetails}>
-                            <p>Duration: {item.duration} minutes</p>
-                            <p>{item.description}</p>
+                        <div className={styles.title}>
+                            <h1>{item.name}</h1>
+                        </div>
+                        <div className={styles.left}>
+                            <div className={styles.subDetails}>
+                                <p>{item.description}</p>
+                                <p>Duration: {item.duration} minutes</p>
+                            </div>
+                            <div className={styles.timer}>
+                                <WorkoutTimer ref={timerRef} duration={item.duration * 60} onComplete={handleTimeoutWorkout} />
+                            </div>
+                            <div className={styles.description}>
+                                <p>{item.intervalDetails}</p>
+                            </div>
                         </div>
                     </div>
                     <div className={styles.right}>
-                        <div className={styles.buttons}>
-                            <button onClick={handleCompleteWorkout} className={styles.completeButton}>✅</button>
-                            <button onClick={handleSkipWorkout} className={styles.skipButton}>⏭️</button>
+                        <div className={styles.workoutDetailsButtonGroup}>
+                            <div className={styles.workoutDetailsButton}>
+                                <button onClick={handleCompleteWorkout}>✅</button>
+                            </div>
+                            <div className={styles.workoutDetailsButton}>
+                                <button onClick={handleSkipWorkout}>⏭️</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className={styles.description}>
-                    <p>{item.intervalDetails}</p>
                 </div>
             </div>
         );

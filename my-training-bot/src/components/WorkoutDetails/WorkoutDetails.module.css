@@ -44,7 +44,7 @@
 
 .description {
     font-size: 1em;
-    margin-top: -20px;
+    margin-top: 0px;
     margin-bottom: -20px;
     color:#CCCCCC;
 }
@@ -67,7 +67,7 @@
     gap: 2px;
 }
 
-.workoutDetailsButton {
+.workoutDetailsButton button {
     font-family: 'Aldrich', sans-serif;
     font-size: 4em;
     margin: 2px;

@@ -1,4 +1,4 @@
-import { WorkoutSchedule } from '../types/WorkoutSchedule';
+import { WorkoutSchedule, WorkoutSet, WorkoutBlock } from '../types/WorkoutSchedule';
 import WorkoutCategoryCache from '../cache/WorkoutCategoryCache';
 import { SelectedWorkoutCategories, SelectedWorkoutGroups, SelectedWorkoutSubCategories, SelectedWorkouts } from '../types/WorkoutCategory';
 
@@ -9,8 +9,18 @@ const WorkoutScheduleStore = {
             if (schedule) {
                 console.log('WorkoutScheduleStore: getSchedule: Retrieved workout schedule from localStorage.');
                 const parsedSchedule = JSON.parse(schedule);
-                const workoutSchedule = new WorkoutSchedule(parsedSchedule.date, parsedSchedule.workouts, parsedSchedule.difficultySettings);
-                if (workoutSchedule.workouts.length === 0) {
+                const workoutSchedule = new WorkoutSchedule(
+                    parsedSchedule.date,
+                    parsedSchedule.scheduleItems.map((item: any) => {
+                        if (item.workouts) {
+                            return { workouts: item.workouts.map(([workout, completed]: [any, boolean]) => [workout, completed]) };
+                        } else {
+                            return new WorkoutBlock(item.name, item.description, item.duration, item.intervalDetails);
+                        }
+                    }),
+                    parsedSchedule.difficultySettings
+                );
+                if (workoutSchedule.scheduleItems.length === 0) {
                     console.warn('WorkoutScheduleStore: No workouts in the schedule. Creating a new schedule.');
                     const newSchedule = await this.createNewSchedule();
                     this.saveSchedule(newSchedule);
@@ -36,8 +46,18 @@ const WorkoutScheduleStore = {
             if (schedule) {
                 console.log('WorkoutScheduleStore: getScheduleSync: Retrieved workout schedule from localStorage.');
                 const parsedSchedule = JSON.parse(schedule);
-                const workoutSchedule = new WorkoutSchedule(parsedSchedule.date, parsedSchedule.workouts, parsedSchedule.difficultySettings);
-                if (workoutSchedule.workouts.length === 0) {
+                const workoutSchedule = new WorkoutSchedule(
+                    parsedSchedule.date,
+                    parsedSchedule.scheduleItems.map((item: any) => {
+                        if (item.workouts) {
+                            return { workouts: item.workouts.map(([workout, completed]: [any, boolean]) => [workout, completed]) };
+                        } else {
+                            return new WorkoutBlock(item.name, item.description, item.duration, item.intervalDetails);
+                        }
+                    }),
+                    parsedSchedule.difficultySettings
+                );
+                if (workoutSchedule.scheduleItems.length === 0) {
                     console.warn('WorkoutScheduleStore: No workouts in the schedule. Creating a new schedule.');
                     const newSchedule = this.createNewScheduleSync();
                     this.saveSchedule(newSchedule);
@@ -122,13 +142,13 @@ const WorkoutScheduleStore = {
             selectedCategories, selectedGroups, selectedSubCategories, selectedWorkouts
         );
         const randomWorkouts = allWorkouts.sort(() => 0.5 - Math.random()).slice(0, 10);
-        return new WorkoutSchedule(new Date().toISOString(), randomWorkouts, { level: 1, range: [1, 10] });
+        return new WorkoutSchedule(new Date().toISOString(), randomWorkouts.map(workout => ({ workouts: [[workout, false]] })), { level: 1, range: [1, 10] });
     },
     createNewScheduleSync(): WorkoutSchedule {
         const selectedCategories = this.getSelectedWorkoutCategoriesSync();
         const allWorkouts = WorkoutCategoryCache.getInstance().getAllWorkouts().filter(workout => selectedCategories[workout.id]);
         const randomWorkouts = allWorkouts.sort(() => 0.5 - Math.random()).slice(0, 10);
-        return new WorkoutSchedule(new Date().toISOString(), randomWorkouts, { level: 1, range: [1, 10] });
+        return new WorkoutSchedule(new Date().toISOString(), randomWorkouts.map(workout => ({ workouts: [[workout, false]] })), { level: 1, range: [1, 10] });
     },
     getSelectedWorkoutCategoriesSync(): SelectedWorkoutCategories {
         try {

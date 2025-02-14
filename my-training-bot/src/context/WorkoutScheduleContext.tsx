@@ -1,6 +1,6 @@
 import React, { createContext, useState, useEffect, useCallback } from 'react';
 import { createWorkoutSchedule } from '../utils/WorkoutScheduleCreator';
-import { WorkoutSchedule } from '../types/WorkoutSchedule';
+import { WorkoutSchedule, WorkoutSet, WorkoutBlock } from '../types/WorkoutSchedule';
 import WorkoutScheduleStore from '../store/WorkoutScheduleStore';
 
 interface WorkoutScheduleContextProps {
@@ -39,7 +39,7 @@ export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = (
         console.log('WorkoutScheduleProvider: Loading schedule...');
         try {
             let newSchedule = await WorkoutScheduleStore.getSchedule();
-            if (!newSchedule || newSchedule.workouts.length === 0) {
+            if (!newSchedule || newSchedule.scheduleItems.length === 0) {
                 console.warn('WorkoutScheduleProvider: No workouts in the schedule. Creating a new schedule.');
                 newSchedule = await createWorkoutSchedule();
                 WorkoutScheduleStore.saveSchedule(newSchedule);
@@ -75,25 +75,45 @@ export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = (
 
     const completeCurrentWorkout = useCallback(() => {
         setSchedule(prevSchedule => {
-            if (!prevSchedule || prevSchedule.workouts.length === 0) return prevSchedule;
-            const updatedSchedule = new WorkoutSchedule(
-                prevSchedule.date,
-                prevSchedule.workouts.slice(1),
-                prevSchedule.difficultySettings
-            );
-            WorkoutScheduleStore.saveSchedule(updatedSchedule);
-            incrementScheduleVersion();
-            return updatedSchedule;
+            if (!prevSchedule || prevSchedule.scheduleItems.length === 0) return prevSchedule;
+            const currentItem = prevSchedule.scheduleItems[0];
+            if ('workouts' in currentItem) {
+                const updatedWorkouts = currentItem.workouts.map(([workout, completed], index) => [workout, true]);
+                const updatedScheduleItems = [
+                    { ...currentItem, workouts: updatedWorkouts },
+                    ...prevSchedule.scheduleItems.slice(1)
+                ];
+                const updatedSchedule = new WorkoutSchedule(
+                    prevSchedule.date,
+                    updatedScheduleItems,
+                    prevSchedule.difficultySettings
+                );
+                WorkoutScheduleStore.saveSchedule(updatedSchedule);
+                incrementScheduleVersion();
+                return updatedSchedule;
+            } else {
+                currentItem.handleTimerExpiration(prevSchedule.scheduleItems[1] as WorkoutSet);
+                const updatedScheduleItems = prevSchedule.scheduleItems.slice(1);
+                const updatedSchedule = new WorkoutSchedule(
+                    prevSchedule.date,
+                    updatedScheduleItems,
+                    prevSchedule.difficultySettings
+                );
+                WorkoutScheduleStore.saveSchedule(updatedSchedule);
+                incrementScheduleVersion();
+                return updatedSchedule;
+            }
         });
     }, [incrementScheduleVersion]);
 
     const skipCurrentWorkout = useCallback(() => {
         setSchedule(prevSchedule => {
-            if (!prevSchedule || prevSchedule.workouts.length === 0) return prevSchedule;
-            const skippedWorkout = prevSchedule.workouts[0];
+            if (!prevSchedule || prevSchedule.scheduleItems.length === 0) return prevSchedule;
+            const skippedItem = prevSchedule.scheduleItems[0];
+            const updatedScheduleItems = [...prevSchedule.scheduleItems.slice(1), skippedItem];
             const updatedSchedule = new WorkoutSchedule(
                 prevSchedule.date,
-                [...prevSchedule.workouts.slice(1), skippedWorkout],
+                updatedScheduleItems,
                 prevSchedule.difficultySettings
             );
             WorkoutScheduleStore.saveSchedule(updatedSchedule);

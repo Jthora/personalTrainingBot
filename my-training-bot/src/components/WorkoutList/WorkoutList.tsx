@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import WorkoutCard from '../WorkoutCard/WorkoutCard';
 import styles from './WorkoutList.module.css';
 import useWorkoutSchedule from '../../hooks/useWorkoutSchedule';
+import { WorkoutSet, WorkoutBlock } from '../../types/WorkoutSchedule';
 
 const WorkoutList: React.FC = () => {
     const { schedule, loadSchedule, isLoading, scheduleVersion } = useWorkoutSchedule();
@@ -23,7 +24,7 @@ const WorkoutList: React.FC = () => {
         return <div className={styles.loading}>Loading...</div>;
     }
 
-    if (!schedule || schedule.workouts.length === 0) {
+    if (!schedule || schedule.scheduleItems.length === 0) {
         console.warn('No workouts available in the schedule.');
         return <div className={styles.noWorkouts}>No workouts available</div>;
     }
@@ -32,11 +33,21 @@ const WorkoutList: React.FC = () => {
     return (
         <div className={styles.workoutList}>
             Up Next:
-            {schedule.workouts.slice(1).map((workout, index) => ( // Skip the first workout
-                <WorkoutCard key={index} workout={workout} onClick={() => {
-                    console.log('WorkoutList Card Clicked:', workout.id);
-                }} />
-            ))}
+            {schedule.scheduleItems.slice(1).map((item, index) => {
+                if ('workouts' in item) {
+                    return item.workouts.map(([workout, completed], workoutIndex) => (
+                        <WorkoutCard key={`${index}-${workoutIndex}`} item={workout} onClick={() => {
+                            console.log('WorkoutList Card Clicked:', workout.id);
+                        }} />
+                    ));
+                } else {
+                    return (
+                        <WorkoutCard key={index} item={item} onClick={() => {
+                            console.log('WorkoutList Card Clicked:', index);
+                        }} />
+                    );
+                }
+            })}
         </div>
     );
 };

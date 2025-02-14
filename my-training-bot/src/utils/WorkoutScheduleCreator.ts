@@ -1,6 +1,6 @@
 import WorkoutCategoryCache from '../cache/WorkoutCategoryCache';
 import { Workout } from '../types/WorkoutCategory';
-import { WorkoutSchedule } from '../types/WorkoutSchedule';
+import { WorkoutSchedule, WorkoutSet, WorkoutBlock } from '../types/WorkoutSchedule';
 import DifficultySettingsStore from '../store/DifficultySettingsStore';
 
 const getRandomItems = <T>(array: T[], count: number): T[] => {
@@ -8,8 +8,17 @@ const getRandomItems = <T>(array: T[], count: number): T[] => {
     return shuffled.slice(0, count);
 };
 
-export const createWorkoutSchedule = async (): Promise<WorkoutSchedule> => {
+const createDefaultWorkoutBlock = (index: number): WorkoutBlock => {
+    const duration = Math.floor(Math.random() * (45 - 30 + 1)) + 30; // Random duration between 30 and 45 minutes
+    return new WorkoutBlock(
+        `Block ${index + 1}`,
+        'Do something productive!',
+        duration,
+        'Take a break and do something productive between workout sets.'
+    );
+};
 
+export const createWorkoutSchedule = async (): Promise<WorkoutSchedule> => {
     const workoutCount = 10;
     const date = new Date().toISOString().split('T')[0];
     
@@ -18,16 +27,12 @@ export const createWorkoutSchedule = async (): Promise<WorkoutSchedule> => {
         await new Promise(resolve => setTimeout(resolve, 100));
     }
 
-    const workouts: Workout[] = WorkoutCategoryCache.getInstance().getAllWorkoutsSelected()
-
-
+    const workouts: Workout[] = WorkoutCategoryCache.getInstance().getAllWorkoutsSelected();
     const difficultySettings = DifficultySettingsStore.getSettings();
     const difficultyLevel = DifficultySettingsStore.getWeightedRandomDifficulty(difficultySettings);
 
     console.log('Difficulty settings:', difficultySettings);
     console.log('Calculated difficulty level:', difficultyLevel);
-
-
     console.log('Total workouts fetched:', workouts.length);
 
     const filteredWorkouts = workouts.filter(workout => 
@@ -39,26 +44,26 @@ export const createWorkoutSchedule = async (): Promise<WorkoutSchedule> => {
 
     if (filteredWorkouts.length === 0) {
         console.warn('No workouts found within the specified difficulty level.');
-        return {
-            date,
-            workouts: [],
-            difficultySettings: {
-                level: difficultyLevel,
-                range: difficultySettings.range
-            }
-        };
+        return new WorkoutSchedule(date, [], difficultySettings);
     }
 
     const selectedWorkouts = getRandomItems(filteredWorkouts, Math.min(workoutCount, filteredWorkouts.length));
-
     console.log('Selected workouts:', selectedWorkouts.length);
 
-    return {
-        date,
-        workouts: selectedWorkouts,
-        difficultySettings: {
-            level: difficultyLevel,
-            range: difficultySettings.range
+    const workoutSets: WorkoutSet[] = [];
+    for (let i = 0; i < selectedWorkouts.length; i += 3) {
+        workoutSets.push({ workouts: selectedWorkouts.slice(i, i + 3).map(workout => [workout, false]) });
+    }
+
+    const workoutBlocks: WorkoutBlock[] = workoutSets.map((_, index) => createDefaultWorkoutBlock(index));
+
+    const scheduleItems: (WorkoutSet | WorkoutBlock)[] = [];
+    workoutSets.forEach((set, index) => {
+        scheduleItems.push(set);
+        if (workoutBlocks[index]) {
+            scheduleItems.push(workoutBlocks[index]);
         }
-    };
+    });
+
+    return new WorkoutSchedule(date, scheduleItems, difficultySettings);
 };

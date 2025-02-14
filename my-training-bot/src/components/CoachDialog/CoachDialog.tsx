@@ -3,10 +3,12 @@ import styles from './CoachDialog.module.css';
 import tigerIcon from '../../assets/images/icons/tiger_fitness_god-icon-512x.png';
 import TrainingCoachCache from '../../cache/TrainingCoachCache';
 import WorkoutDetails from '../WorkoutDetails/WorkoutDetails';
+import useWorkoutSchedule from '../../hooks/useWorkoutSchedule';
 
 const CoachDialog: React.FC = () => {
     const [quote, setQuote] = useState('');
-    // TODO: a hook for TrainingCoachCache is what should used for this loading
+    const { schedule, isLoading } = useWorkoutSchedule();
+    const currentItem = schedule?.scheduleItems[0];
 
     useEffect(() => {
         const loadMotivationalQuote = async () => {
@@ -37,7 +39,7 @@ const CoachDialog: React.FC = () => {
                 </div>
             </div>
             <div className={styles.workoutDetails}>
-                <WorkoutDetails />
+                {!isLoading && currentItem && <WorkoutDetails item={currentItem} />}
             </div>
         </div>
     );

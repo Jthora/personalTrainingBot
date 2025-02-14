@@ -45,9 +45,9 @@ const WorkoutTimer = forwardRef<{ resetTimer: () => void }, WorkoutTimerProps>((
     return (
         <div ref={internalRef}>
             <div style={{ display: 'flex', alignItems: 'center' }}>
-                <div className={styles.timeLeft}>{`Time Left: ${minutes}:${seconds}`}</div>
+                <div className={styles.timeLeft}>{`⏳ ${minutes}:${seconds}`}</div>
                 <button onClick={togglePause} className={styles.button}>
-                    {isPaused ? '⏸️' : '▶️'}
+                    {"⏯️"}
                 </button>
             </div>
         </div>

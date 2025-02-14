@@ -3,11 +3,10 @@ import styles from './CoachDialog.module.css';
 import tigerIcon from '../../assets/images/icons/tiger_fitness_god-icon-512x.png';
 import TrainingCoachCache from '../../cache/TrainingCoachCache';
 import WorkoutDetails from '../WorkoutDetails/WorkoutDetails';
-import useWorkoutSchedule from '../../hooks/useWorkoutSchedule';
 
 const CoachDialog: React.FC = () => {
     const [quote, setQuote] = useState('');
-    const { isLoading } = useWorkoutSchedule(); // TODO: a hook for TrainingCoachCache is what should used for this loading
+    // TODO: a hook for TrainingCoachCache is what should used for this loading
 
     useEffect(() => {
         const loadMotivationalQuote = async () => {
@@ -24,10 +23,6 @@ const CoachDialog: React.FC = () => {
 
         return () => clearInterval(intervalId); // Cleanup interval on component unmount
     }, []);
-
-    if (isLoading) {
-        return <div className={styles.loading}>Loading...</div>;
-    }
 
     return (
         <div className={styles.coachDialog}>

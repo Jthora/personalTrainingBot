@@ -2,9 +2,8 @@ import React, { useEffect } from 'react';
 import WorkoutCard from '../WorkoutCard/WorkoutCard';
 import styles from './WorkoutList.module.css';
 import useWorkoutSchedule from '../../hooks/useWorkoutSchedule';
-import { Workout } from '../../types/WorkoutCategory';
 
-const WorkoutList: React.FC<{ onWorkoutComplete: (workout: Workout) => void }> = ({ onWorkoutComplete }) => {
+const WorkoutList: React.FC = () => {
     const { schedule, loadSchedule, isLoading } = useWorkoutSchedule();
 
     useEffect(() => {
@@ -24,7 +23,7 @@ const WorkoutList: React.FC<{ onWorkoutComplete: (workout: Workout) => void }> =
         return <div className={styles.loading}>Loading...</div>;
     }
 
-    if (schedule?.workouts.length === 0) {
+    if (!schedule || schedule.workouts.length === 0) {
         console.warn('No workouts available in the schedule.');
         return <div className={styles.noWorkouts}>No workouts available</div>;
     }
@@ -33,10 +32,9 @@ const WorkoutList: React.FC<{ onWorkoutComplete: (workout: Workout) => void }> =
     return (
         <div className={styles.workoutList}>
             Up Next:
-            {schedule?.workouts.map((workout, index) => (
+            {schedule.workouts.map((workout, index) => (
                 <WorkoutCard key={index} workout={workout} onClick={() => {
-                    console.log('Workout completed:', workout);
-                    onWorkoutComplete(workout);
+                    console.log('WorkoutList Card Clicked:', workout.id);
                 }} />
             ))}
         </div>

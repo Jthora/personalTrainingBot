@@ -1,11 +1,11 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useContext } from 'react';
 import styles from './WorkoutDetails.module.css';
 import WorkoutTimer from '../WorkoutTimer/WorkoutTimer';
 import { playCompleteSound, playSkipSound, playTimeoutSound } from '../../utils/AudioPlayer';
 import useWorkoutSchedule from '../../hooks/useWorkoutSchedule';
 
 const WorkoutDetails: React.FC = () => {
-    const { schedule, isLoading, loadSchedule, completeCurrentWorkout, skipCurrentWorkout } = useWorkoutSchedule();
+    const { schedule, isLoading, loadSchedule, completeCurrentWorkout, skipCurrentWorkout, createNewSchedule, scheduleVersion } = useWorkoutSchedule();
     const workout = schedule?.workouts[0] || null;
     const timerRef = useRef<{ resetTimer: () => void }>(null);
 
@@ -26,7 +26,7 @@ const WorkoutDetails: React.FC = () => {
     useEffect(() => {
         // Log schedule changes for debugging
         console.log('Schedule updated:', schedule);
-    }, [schedule]);
+    }, [schedule, scheduleVersion]);
 
     if (isLoading) {
         console.log('Loading workouts...');
@@ -35,24 +35,33 @@ const WorkoutDetails: React.FC = () => {
 
     if (!workout) {
         console.warn('No workout selected.');
-        return <div className={styles.noWorkout}>No workout selected</div>;
+        return (
+            <div className={styles.noWorkout}>
+                No workout selected
+                {schedule && schedule.workouts.length === 0 && (
+                    <button onClick={createNewSchedule} className={styles.createNewScheduleButton}>
+                        Create New Workout Schedule
+                    </button>
+                )}
+            </div>
+        );
     }
 
-    const handleCompleteWorkout = () => {
+    const handleCompleteWorkout = async () => {
         console.log('Workout completed:', workout);
         playCompleteSound();
         completeCurrentWorkout();
         timerRef.current?.resetTimer();
     };
 
-    const handleSkipWorkout = () => {
+    const handleSkipWorkout = async () => {
         console.log('Workout skipped:', workout);
         playSkipSound();
         skipCurrentWorkout();
         timerRef.current?.resetTimer();
     };
 
-    const handleTimeoutWorkout = () => {
+    const handleTimeoutWorkout = async () => {
         console.log('Workout timed out:', workout);
         playTimeoutSound();
         skipCurrentWorkout();

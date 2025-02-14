@@ -2,28 +2,17 @@ import WorkoutCategoryCache from '../cache/WorkoutCategoryCache';
 import { Workout } from '../types/WorkoutCategory';
 import { WorkoutSchedule } from '../types/WorkoutSchedule';
 import DifficultySettingsStore from '../store/DifficultySettingsStore';
-import WorkoutScheduleStore from '../store/WorkoutScheduleStore';
-
-interface WorkoutScheduleOptions {
-    categories?: string[];
-    date?: string;
-    workoutCount?: number; // number of workouts to include
-}
 
 const getRandomItems = <T>(array: T[], count: number): T[] => {
     const shuffled = array.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, count);
 };
 
-export const createWorkoutSchedule = async (options: WorkoutScheduleOptions = {}): Promise<WorkoutSchedule> => {
-    const {
-        categories = [],
-        date = new Date().toISOString().split('T')[0],
-        workoutCount = 10 // default to 10 workouts
-    } = options;
+export const createWorkoutSchedule = async (): Promise<WorkoutSchedule> => {
 
-    console.log('Starting to create workout schedule with options:', options);
-
+    const workoutCount = 10;
+    const date = new Date().toISOString().split('T')[0];
+    
     // Wait for the cache to be ready
     while (WorkoutCategoryCache.getInstance().isLoading()) {
         await new Promise(resolve => setTimeout(resolve, 100));

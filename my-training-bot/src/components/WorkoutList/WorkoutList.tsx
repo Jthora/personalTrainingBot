@@ -4,7 +4,7 @@ import styles from './WorkoutList.module.css';
 import useWorkoutSchedule from '../../hooks/useWorkoutSchedule';
 
 const WorkoutList: React.FC = () => {
-    const { schedule, loadSchedule, isLoading } = useWorkoutSchedule();
+    const { schedule, loadSchedule, isLoading, scheduleVersion } = useWorkoutSchedule();
 
     useEffect(() => {
         console.log('WorkoutList: Loading schedule...');
@@ -16,7 +16,7 @@ const WorkoutList: React.FC = () => {
     useEffect(() => {
         // Log schedule changes for debugging
         console.log('Schedule updated:', schedule);
-    }, [schedule]);
+    }, [schedule, scheduleVersion]);
 
     if (isLoading) {
         console.log('Schedule is loading...');
@@ -32,7 +32,7 @@ const WorkoutList: React.FC = () => {
     return (
         <div className={styles.workoutList}>
             Up Next:
-            {schedule.workouts.map((workout, index) => (
+            {schedule.workouts.slice(1).map((workout, index) => ( // Skip the first workout
                 <WorkoutCard key={index} workout={workout} onClick={() => {
                     console.log('WorkoutList Card Clicked:', workout.id);
                 }} />

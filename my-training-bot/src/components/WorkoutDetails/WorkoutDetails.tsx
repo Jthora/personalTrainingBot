@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { WorkoutSet, WorkoutBlock } from '../../types/WorkoutSchedule';
 import styles from './WorkoutDetails.module.css';
 import WorkoutTimer from '../WorkoutTimer/WorkoutTimer';
@@ -12,6 +12,7 @@ interface WorkoutDetailsProps {
 const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ item }) => {
     const { schedule, isLoading, loadSchedule, completeCurrentWorkout, skipCurrentWorkout, createNewSchedule, scheduleVersion } = useWorkoutSchedule();
     const timerRef = useRef<{ resetTimer: () => void }>(null);
+    const [currentWorkoutIndex, setCurrentWorkoutIndex] = useState(0);
 
     useEffect(() => {
         console.log('WorkoutDetails: Loading schedule...');
@@ -55,6 +56,7 @@ const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ item }) => {
         console.log('Workout completed:', item);
         playCompleteSound();
         completeCurrentWorkout();
+        setCurrentWorkoutIndex(prevIndex => prevIndex + 1);
         timerRef.current?.resetTimer();
     };
 
@@ -62,6 +64,7 @@ const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ item }) => {
         console.log('Workout skipped:', item);
         playSkipSound();
         skipCurrentWorkout();
+        setCurrentWorkoutIndex(prevIndex => prevIndex + 1);
         timerRef.current?.resetTimer();
     };
 
@@ -69,21 +72,23 @@ const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ item }) => {
         console.log('Workout timed out:', item);
         playTimeoutSound();
         skipCurrentWorkout();
+        setCurrentWorkoutIndex(prevIndex => prevIndex + 1);
     };
 
     if ('workouts' in item) {
+        const currentWorkout = item.workouts[currentWorkoutIndex];
+        if (!currentWorkout) {
+            return <div className={styles.noWorkout}>All workouts in this set are completed.</div>;
+        }
+        const [workout, completed] = currentWorkout;
         return (
             <div className={styles.workoutDetails}>
-                {item.workouts.map(([workout, completed], index) => (
-                    <div key={index}>
-                        <h3>{workout.name}</h3>
-                        <p>{workout.description}</p>
-                        <p>Duration: {workout.duration}</p>
-                        <p>Intensity: {workout.intensity}</p>
-                        <p>Difficulty Range: {workout.difficulty_range[0]} - {workout.difficulty_range[1]}</p>
-                        <p>Completed: {completed ? 'Yes' : 'No'}</p>
-                    </div>
-                ))}
+                <h3>{workout.name}</h3>
+                <p>{workout.description}</p>
+                <p>Duration: {workout.duration}</p>
+                <p>Intensity: {workout.intensity}</p>
+                <p>Difficulty Range: {workout.difficulty_range[0]} - {workout.difficulty_range[1]}</p>
+                <p>Completed: {completed ? 'Yes' : 'No'}</p>
                 <div className={styles.buttons}>
                     <button onClick={handleCompleteWorkout} className={styles.completeButton}>✅</button>
                     <button onClick={handleSkipWorkout} className={styles.skipButton}>⏭️</button>
@@ -97,6 +102,7 @@ const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ item }) => {
                 <p>{item.description}</p>
                 <p>Duration: {item.duration} minutes</p>
                 <p>{item.intervalDetails}</p>
+                <WorkoutTimer ref={timerRef} duration={item.duration * 60} onComplete={handleTimeoutWorkout} />
                 <div className={styles.buttons}>
                     <button onClick={handleCompleteWorkout} className={styles.completeButton}>✅</button>
                     <button onClick={handleSkipWorkout} className={styles.skipButton}>⏭️</button>

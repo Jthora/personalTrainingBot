@@ -8,11 +8,12 @@ const getRandomTime = () => {
 };
 
 interface WorkoutTimerProps {
+    duration?: number;
     onComplete: () => void;
 }
 
-const WorkoutTimer = forwardRef<{ resetTimer: () => void }, WorkoutTimerProps>(({ onComplete }, ref) => {
-    const [timeLeft, setTimeLeft] = useState(getRandomTime());
+const WorkoutTimer = forwardRef<{ resetTimer: () => void }, WorkoutTimerProps>(({ duration, onComplete }, ref) => {
+    const [timeLeft, setTimeLeft] = useState(duration || getRandomTime());
     const [isPaused, setIsPaused] = useState(false);
     const internalRef = useRef(null);
 
@@ -24,17 +25,17 @@ const WorkoutTimer = forwardRef<{ resetTimer: () => void }, WorkoutTimerProps>((
                 if (prev <= 1) {
                     clearInterval(timer);
                     onComplete();
-                    return getRandomTime(); // Reset to a random time between 45 and 75 minutes
+                    return duration || getRandomTime(); // Reset to a random time between 45 and 75 minutes
                 }
                 return prev - 1;
             });
         }, 1000);
 
         return () => clearInterval(timer);
-    }, [onComplete, isPaused]);
+    }, [onComplete, isPaused, duration]);
 
     useImperativeHandle(ref, () => ({
-        resetTimer: () => setTimeLeft(getRandomTime())
+        resetTimer: () => setTimeLeft(duration || getRandomTime())
     }));
 
     const minutes = String(Math.floor(timeLeft / 60)).padStart(2, '0');

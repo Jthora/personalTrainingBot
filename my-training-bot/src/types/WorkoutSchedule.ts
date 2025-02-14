@@ -11,6 +11,60 @@ export class WorkoutSchedule {
         this.scheduleItems = scheduleItems;
         this.difficultySettings = difficultySettings;
     }
+
+    completeNextItem() {
+        console.log('WorkoutSchedule: completeNextItem called');
+        if (this.scheduleItems.length === 0) {
+            console.log('WorkoutSchedule: No items to complete');
+            return;
+        }
+
+        const currentItem = this.scheduleItems[0];
+        console.log('WorkoutSchedule: Current item:', currentItem);
+
+        if ('workouts' in currentItem) {
+            for (let i = 0; i < currentItem.workouts.length; i++) {
+                if (!currentItem.workouts[i][1]) {
+                    console.log(`WorkoutSchedule: Completing workout at index ${i}:`, currentItem.workouts[i][0]);
+                    currentItem.workouts[i][1] = true;
+                    this.scheduleItems[0] = { ...currentItem };
+                    return;
+                }
+            }
+            console.log('WorkoutSchedule: All workouts in the set are completed. Removing completed WorkoutSet');
+            this.scheduleItems.shift();
+        } else {
+            console.log('WorkoutSchedule: Completing WorkoutBlock:', currentItem);
+            this.scheduleItems.shift();
+        }
+    }
+
+    skipNextItem() {
+        console.log('WorkoutSchedule: skipNextItem called');
+        if (this.scheduleItems.length === 0) {
+            console.log('WorkoutSchedule: No items to skip');
+            return;
+        }
+
+        const currentItem = this.scheduleItems[0];
+        console.log('WorkoutSchedule: Current item:', currentItem);
+
+        if ('workouts' in currentItem) {
+            for (let i = 0; i < currentItem.workouts.length; i++) {
+                if (!currentItem.workouts[i][1]) {
+                    console.log(`WorkoutSchedule: Skipping workout at index ${i}:`, currentItem.workouts[i][0]);
+                    currentItem.workouts[i][1] = true;
+                    this.scheduleItems[0] = { ...currentItem };
+                    return;
+                }
+            }
+            console.log('WorkoutSchedule: All workouts in the set are completed. Removing completed WorkoutSet');
+            this.scheduleItems.shift();
+        } else {
+            console.log('WorkoutSchedule: Skipping WorkoutBlock:', currentItem);
+            this.scheduleItems.shift();
+        }
+    }
 }
 
 export type WorkoutSet = { workouts: [Workout, boolean][] };

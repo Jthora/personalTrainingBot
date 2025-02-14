@@ -33,13 +33,15 @@ const WorkoutList: React.FC = () => {
     return (
         <div className={styles.workoutList}>
             Up Next:
-            {schedule.scheduleItems.slice(1).map((item, index) => {
+            {schedule.scheduleItems.map((item, index) => {
                 if ('workouts' in item) {
-                    return item.workouts.map(([workout, completed], workoutIndex) => (
-                        <WorkoutCard key={`${index}-${workoutIndex}`} item={workout} onClick={() => {
-                            console.log('WorkoutList Card Clicked:', workout.id);
-                        }} />
-                    ));
+                    return item.workouts
+                        .filter(([_, completed]) => !completed)
+                        .map(([workout, _], workoutIndex) => (
+                            <WorkoutCard key={`${index}-${workoutIndex}`} item={workout} onClick={() => {
+                                console.log('WorkoutList Card Clicked:', workout.id);
+                            }} />
+                        ));
                 } else {
                     return (
                         <WorkoutCard key={index} item={item} onClick={() => {

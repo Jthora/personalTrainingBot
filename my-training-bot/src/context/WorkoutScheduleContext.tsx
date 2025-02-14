@@ -74,48 +74,41 @@ export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = (
     }, [incrementScheduleVersion]);
 
     const completeCurrentWorkout = useCallback(() => {
+        console.log('WorkoutScheduleProvider: completeCurrentWorkout called');
         setSchedule(prevSchedule => {
-            if (!prevSchedule || prevSchedule.scheduleItems.length === 0) return prevSchedule;
-            const currentItem = prevSchedule.scheduleItems[0];
-            if ('workouts' in currentItem) {
-                const updatedWorkouts = currentItem.workouts.map(([workout, completed], index) => [workout, true]);
-                const updatedScheduleItems = [
-                    { ...currentItem, workouts: updatedWorkouts },
-                    ...prevSchedule.scheduleItems.slice(1)
-                ];
-                const updatedSchedule = new WorkoutSchedule(
-                    prevSchedule.date,
-                    updatedScheduleItems,
-                    prevSchedule.difficultySettings
-                );
-                WorkoutScheduleStore.saveSchedule(updatedSchedule);
-                incrementScheduleVersion();
-                return updatedSchedule;
-            } else {
-                currentItem.handleTimerExpiration(prevSchedule.scheduleItems[1] as WorkoutSet);
-                const updatedScheduleItems = prevSchedule.scheduleItems.slice(1);
-                const updatedSchedule = new WorkoutSchedule(
-                    prevSchedule.date,
-                    updatedScheduleItems,
-                    prevSchedule.difficultySettings
-                );
-                WorkoutScheduleStore.saveSchedule(updatedSchedule);
-                incrementScheduleVersion();
-                return updatedSchedule;
+            if (!prevSchedule || prevSchedule.scheduleItems.length === 0) {
+                console.log('WorkoutScheduleProvider: No items to complete');
+                return prevSchedule;
             }
+            console.log('WorkoutScheduleProvider: Current schedule:', prevSchedule);
+            const updatedSchedule = new WorkoutSchedule(
+                prevSchedule.date,
+                [...prevSchedule.scheduleItems],
+                prevSchedule.difficultySettings
+            );
+            updatedSchedule.completeNextItem();
+            console.log('WorkoutScheduleProvider: Updated schedule after completion:', updatedSchedule);
+            WorkoutScheduleStore.saveSchedule(updatedSchedule);
+            incrementScheduleVersion();
+            return updatedSchedule;
         });
     }, [incrementScheduleVersion]);
 
     const skipCurrentWorkout = useCallback(() => {
+        console.log('WorkoutScheduleProvider: skipCurrentWorkout called');
         setSchedule(prevSchedule => {
-            if (!prevSchedule || prevSchedule.scheduleItems.length === 0) return prevSchedule;
-            const skippedItem = prevSchedule.scheduleItems[0];
-            const updatedScheduleItems = [...prevSchedule.scheduleItems.slice(1), skippedItem];
+            if (!prevSchedule || prevSchedule.scheduleItems.length === 0) {
+                console.log('WorkoutScheduleProvider: No items to skip');
+                return prevSchedule;
+            }
+            console.log('WorkoutScheduleProvider: Current schedule:', prevSchedule);
             const updatedSchedule = new WorkoutSchedule(
                 prevSchedule.date,
-                updatedScheduleItems,
+                [...prevSchedule.scheduleItems],
                 prevSchedule.difficultySettings
             );
+            updatedSchedule.skipNextItem();
+            console.log('WorkoutScheduleProvider: Updated schedule after skipping:', updatedSchedule);
             WorkoutScheduleStore.saveSchedule(updatedSchedule);
             incrementScheduleVersion();
             return updatedSchedule;

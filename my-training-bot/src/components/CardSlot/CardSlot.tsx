@@ -86,19 +86,20 @@ const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
                     </ul>
                 </div>
                 <div className={styles.topRight}>
-                    <div className={styles.bubbleContainer2}>
-                        <span className={`${styles.bubble} ${styles.bubble1}`} style={{ backgroundColor: color }}>{trainingModule}</span>
+                    <div>
+                        <div className={styles.bubbleContainer2}>
+                            <span className={`${styles.bubble} ${styles.bubble1}`} style={{ backgroundColor: color }}>{trainingModule}</span>
+                        </div>
+                        <div className={styles.stats}>
+                            <p>{card.duration} minutes ⏱️</p>
+                            <p>{card.difficulty} 🎚️</p>
+                        </div>
                     </div>
-                    <div className={styles.stats}>
-                        <p>{card.duration} minutes ⏱️</p>
-                        <p>{card.difficulty} 🎚️</p>
-                        <span>{formatTime(timeLeft)} ⏳</span>
-                    </div>
-                    <label>
-                        Hold 
-                        <input type="checkbox" checked={isHeld} onChange={handleHoldChange} />
-                    </label>
                     <div className={styles.controls}>
+                        <label>
+                            Hold 
+                            <input type="checkbox" checked={isHeld} onChange={handleHoldChange} />
+                        </label>
                         <button className={`${styles.cardButton}`} onClick={onDealNextCard}>Next ⏭</button>
                     </div>
                 </div>
@@ -109,6 +110,7 @@ const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
                     </div>
                 </div>
                 <div className={styles.bottomRight}>
+                    <span>{formatTime(timeLeft)} ⏳</span>
                 </div>
             </div>
         </div>

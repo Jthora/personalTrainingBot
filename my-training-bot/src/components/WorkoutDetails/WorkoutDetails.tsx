@@ -12,6 +12,7 @@ interface WorkoutDetailsProps {
 const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ item }) => {
     const { schedule, isLoading, loadSchedule, completeCurrentWorkout, skipCurrentWorkout, createNewSchedule, scheduleVersion } = useWorkoutSchedule();
     const timerRef = useRef<{ resetTimer: () => void }>(null);
+    const [currentScheduleIndex, setCurrentScheduleIndex] = useState(0);
     const [currentWorkoutIndex, setCurrentWorkoutIndex] = useState(0);
 
     useEffect(() => {
@@ -56,7 +57,12 @@ const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ item }) => {
         console.log('Workout completed:', item);
         playCompleteSound();
         completeCurrentWorkout();
-        setCurrentWorkoutIndex(prevIndex => prevIndex + 1);
+        if (item instanceof WorkoutSet && currentWorkoutIndex < item.workouts.length - 1) {
+            setCurrentWorkoutIndex(prevIndex => prevIndex + 1);
+        } else {
+            setCurrentScheduleIndex(prevIndex => prevIndex + 1);
+            setCurrentWorkoutIndex(0);
+        }
         timerRef.current?.resetTimer();
     };
 
@@ -64,7 +70,12 @@ const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ item }) => {
         console.log('Workout skipped:', item);
         playSkipSound();
         skipCurrentWorkout();
-        setCurrentWorkoutIndex(prevIndex => prevIndex + 1);
+        if (item instanceof WorkoutSet && currentWorkoutIndex < item.workouts.length - 1) {
+            setCurrentWorkoutIndex(prevIndex => prevIndex + 1);
+        } else {
+            setCurrentScheduleIndex(prevIndex => prevIndex + 1);
+            setCurrentWorkoutIndex(0);
+        }
         timerRef.current?.resetTimer();
     };
 
@@ -72,10 +83,15 @@ const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ item }) => {
         console.log('Workout timed out:', item);
         playTimeoutSound();
         skipCurrentWorkout();
-        setCurrentWorkoutIndex(prevIndex => prevIndex + 1);
+        if (item instanceof WorkoutSet && currentWorkoutIndex < item.workouts.length - 1) {
+            setCurrentWorkoutIndex(prevIndex => prevIndex + 1);
+        } else {
+            setCurrentScheduleIndex(prevIndex => prevIndex + 1);
+            setCurrentWorkoutIndex(0);
+        }
     };
 
-    if ('workouts' in item) {
+    if (item instanceof WorkoutSet) {
         const currentWorkout = item.workouts[currentWorkoutIndex];
         if (!currentWorkout) {
             return <div className={styles.noWorkout}>All workouts in this set are completed.</div>;
@@ -95,7 +111,7 @@ const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ item }) => {
                 </div>
             </div>
         );
-    } else {
+    } else if (item instanceof WorkoutBlock) {
         return (
             <div className={styles.workoutDetails}>
                 <h3>{item.name}</h3>
@@ -109,6 +125,9 @@ const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ item }) => {
                 </div>
             </div>
         );
+    } else {
+        console.error(`WorkoutDetails: Unknown workout type: ${item} at index [${currentScheduleIndex}]`);
+        return <div className={styles.noWorkout}>Unknown workout type</div>;
     }
 };
 

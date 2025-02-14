@@ -22,12 +22,12 @@ export class WorkoutSchedule {
         const currentItem = this.scheduleItems[0];
         console.log('WorkoutSchedule: Current item:', currentItem);
 
-        if ('workouts' in currentItem) {
+        if (currentItem instanceof WorkoutSet) {
             for (let i = 0; i < currentItem.workouts.length; i++) {
                 if (!currentItem.workouts[i][1]) {
                     console.log(`WorkoutSchedule: Completing workout at index ${i}:`, currentItem.workouts[i][0]);
                     currentItem.workouts[i][1] = true;
-                    this.scheduleItems[0] = { ...currentItem };
+                    this.scheduleItems[0] = new WorkoutSet(currentItem.workouts);
                     return;
                 }
             }
@@ -49,12 +49,12 @@ export class WorkoutSchedule {
         const currentItem = this.scheduleItems[0];
         console.log('WorkoutSchedule: Current item:', currentItem);
 
-        if ('workouts' in currentItem) {
+        if (currentItem instanceof WorkoutSet) {
             for (let i = 0; i < currentItem.workouts.length; i++) {
                 if (!currentItem.workouts[i][1]) {
                     console.log(`WorkoutSchedule: Skipping workout at index ${i}:`, currentItem.workouts[i][0]);
                     currentItem.workouts[i][1] = true;
-                    this.scheduleItems[0] = { ...currentItem };
+                    this.scheduleItems[0] = new WorkoutSet(currentItem.workouts);
                     return;
                 }
             }
@@ -67,7 +67,17 @@ export class WorkoutSchedule {
     }
 }
 
-export type WorkoutSet = { workouts: [Workout, boolean][] };
+export class WorkoutSet {
+    workouts: [Workout, boolean][];
+
+    constructor(workouts: [Workout, boolean][]) {
+        this.workouts = workouts;
+    }
+
+    get allWorkoutsCompleted(): boolean {
+        return this.workouts.every(([_, completed]) => completed);
+    }
+}
 
 export class WorkoutBlock {
     name: string;

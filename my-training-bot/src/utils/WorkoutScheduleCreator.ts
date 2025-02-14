@@ -52,7 +52,10 @@ export const createWorkoutSchedule = async (): Promise<WorkoutSchedule> => {
 
     const workoutSets: WorkoutSet[] = [];
     for (let i = 0; i < selectedWorkouts.length; i += 3) {
-        workoutSets.push({ workouts: selectedWorkouts.slice(i, i + 3).map(workout => [workout, false]) });
+        const workoutsSlice = selectedWorkouts.slice(i, i + 3);
+        const workoutsWithCompletion = workoutsSlice.map(workout => [workout, false] as [Workout, boolean]);
+        const workoutSet = new WorkoutSet(workoutsWithCompletion);
+        workoutSets.push(workoutSet);
     }
 
     const workoutBlocks: WorkoutBlock[] = workoutSets.map((_, index) => createDefaultWorkoutBlock(index));

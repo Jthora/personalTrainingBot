@@ -34,7 +34,7 @@ const WorkoutList: React.FC = () => {
         <div className={styles.workoutList}>
             Up Next:
             {schedule.scheduleItems.map((item, index) => {
-                if ('workouts' in item) {
+                if (item instanceof WorkoutSet) {
                     return item.workouts
                         .filter(([_, completed]) => !completed)
                         .map(([workout, _], workoutIndex) => (
@@ -42,12 +42,15 @@ const WorkoutList: React.FC = () => {
                                 console.log('WorkoutList Card Clicked:', workout.id);
                             }} />
                         ));
-                } else {
+                } else if (item instanceof WorkoutBlock) {
                     return (
                         <WorkoutCard key={index} item={item} onClick={() => {
                             console.log('WorkoutList Card Clicked:', index);
                         }} />
                     );
+                } else {
+                    console.error('Unknown item type in schedule:', item);
+                    return <div key={index} className={styles.unknownItem}>Unknown Item</div>;
                 }
             })}
         </div>

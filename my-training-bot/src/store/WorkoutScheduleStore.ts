@@ -1,6 +1,6 @@
 import { WorkoutSchedule, WorkoutSet, WorkoutBlock } from '../types/WorkoutSchedule';
 import WorkoutCategoryCache from '../cache/WorkoutCategoryCache';
-import { SelectedWorkoutCategories, SelectedWorkoutGroups, SelectedWorkoutSubCategories, SelectedWorkouts } from '../types/WorkoutCategory';
+import { SelectedWorkoutCategories, SelectedWorkoutGroups, SelectedWorkoutSubCategories, SelectedWorkouts, Workout } from '../types/WorkoutCategory';
 
 const WorkoutScheduleStore = {
     async getSchedule(): Promise<WorkoutSchedule | null> {
@@ -13,7 +13,17 @@ const WorkoutScheduleStore = {
                     parsedSchedule.date,
                     parsedSchedule.scheduleItems.map((item: any) => {
                         if (item.workouts) {
-                            return { workouts: item.workouts.map(([workout, completed]: [any, boolean]) => [workout, completed]) };
+                            const workouts = item.workouts.map(([workout, completed]: [any, boolean]) => {
+                                const reconstructedWorkout = new Workout(
+                                    workout.name,
+                                    workout.description,
+                                    workout.duration,
+                                    workout.intensity,
+                                    workout.difficulty_range
+                                );
+                                return [reconstructedWorkout, completed];
+                            });
+                            return new WorkoutSet(workouts);
                         } else {
                             return new WorkoutBlock(item.name, item.description, item.duration, item.intervalDetails);
                         }
@@ -50,7 +60,17 @@ const WorkoutScheduleStore = {
                     parsedSchedule.date,
                     parsedSchedule.scheduleItems.map((item: any) => {
                         if (item.workouts) {
-                            return { workouts: item.workouts.map(([workout, completed]: [any, boolean]) => [workout, completed]) };
+                            const workouts = item.workouts.map(([workout, completed]: [any, boolean]) => {
+                                const reconstructedWorkout = new Workout(
+                                    workout.name,
+                                    workout.description,
+                                    workout.duration,
+                                    workout.intensity,
+                                    workout.difficulty_range
+                                );
+                                return [reconstructedWorkout, completed];
+                            });
+                            return new WorkoutSet(workouts);
                         } else {
                             return new WorkoutBlock(item.name, item.description, item.duration, item.intervalDetails);
                         }
@@ -142,13 +162,29 @@ const WorkoutScheduleStore = {
             selectedCategories, selectedGroups, selectedSubCategories, selectedWorkouts
         );
         const randomWorkouts = allWorkouts.sort(() => 0.5 - Math.random()).slice(0, 10);
-        return new WorkoutSchedule(new Date().toISOString(), randomWorkouts.map(workout => ({ workouts: [[workout, false]] })), { level: 1, range: [1, 10] });
+
+        const workoutSets: WorkoutSet[] = [];
+        for (let i = 0; i < randomWorkouts.length; i++) {
+            const workout = randomWorkouts[i];
+            const workoutSet = new WorkoutSet([[workout, false]]);
+            workoutSets.push(workoutSet);
+        }
+
+        return new WorkoutSchedule(new Date().toISOString(), workoutSets, { level: 1, range: [1, 10] });
     },
     createNewScheduleSync(): WorkoutSchedule {
         const selectedCategories = this.getSelectedWorkoutCategoriesSync();
         const allWorkouts = WorkoutCategoryCache.getInstance().getAllWorkouts().filter(workout => selectedCategories[workout.id]);
         const randomWorkouts = allWorkouts.sort(() => 0.5 - Math.random()).slice(0, 10);
-        return new WorkoutSchedule(new Date().toISOString(), randomWorkouts.map(workout => ({ workouts: [[workout, false]] })), { level: 1, range: [1, 10] });
+
+        const workoutSets: WorkoutSet[] = [];
+        for (let i = 0; i < randomWorkouts.length; i++) {
+            const workout = randomWorkouts[i];
+            const workoutSet = new WorkoutSet([[workout, false]]);
+            workoutSets.push(workoutSet);
+        }
+
+        return new WorkoutSchedule(new Date().toISOString(), workoutSets, { level: 1, range: [1, 10] });
     },
     getSelectedWorkoutCategoriesSync(): SelectedWorkoutCategories {
         try {

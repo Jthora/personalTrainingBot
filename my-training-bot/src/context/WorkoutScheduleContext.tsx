@@ -1,6 +1,6 @@
 import React, { createContext, useState, useEffect, useCallback } from 'react';
 import { createWorkoutSchedule } from '../utils/WorkoutScheduleCreator';
-import { WorkoutSchedule, WorkoutSet, WorkoutBlock } from '../types/WorkoutSchedule';
+import { WorkoutSchedule } from '../types/WorkoutSchedule';
 import WorkoutScheduleStore from '../store/WorkoutScheduleStore';
 
 interface WorkoutScheduleContextProps {

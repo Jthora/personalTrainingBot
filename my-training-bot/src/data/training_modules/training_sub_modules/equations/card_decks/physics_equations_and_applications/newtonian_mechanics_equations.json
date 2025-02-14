@@ -39,7 +39,7 @@
             "title": "Work, Energy, & The Work-Energy Theorem",
             "description": "Understanding the relationship between work, kinetic energy, and potential energy.",
             "bulletpoints": [
-                "Use the **work-energy theorem**: \\[ W = \\Delta KE = \\frac{1}{2} m v^2 - \\frac{1}{2} m v_0^2 \\].",
+                "Use the work-energy theorem: \\[ W = \\Delta KE = \\frac{1}{2} m v^2 - \\frac{1}{2} m v_0^2 \\].",
                 "Define gravitational potential energy: \\[ U = mgh \\] and elastic potential energy: \\[ U = \\frac{1}{2} k x^2 \\].",
                 "Apply conservation of energy: \\[ KE_i + PE_i = KE_f + PE_f \\]."
             ],
@@ -52,7 +52,7 @@
             "description": "Studying momentum principles and their applications in collisions.",
             "bulletpoints": [
                 "Define momentum: \\[ \\mathbf{p} = m \\mathbf{v} \\].",
-                "Apply the **impulse-momentum theorem**: \\[ \\Delta \\mathbf{p} = \\mathbf{F} \\Delta t \\].",
+                "Apply the impulse-momentum theorem: \\[ \\Delta \\mathbf{p} = \\mathbf{F} \\Delta t \\].",
                 "Use the conservation of momentum for collisions: \\[ m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2' \\]."
             ],
             "duration": 10,
@@ -113,7 +113,7 @@
             "bulletpoints": [
                 "Define damped motion equation: \\[ m \\ddot{x} + b \\dot{x} + kx = 0 \\].",
                 "Study resonance effects in driven harmonic oscillators: \\[ x(t) = A_0 e^{-\\beta t} \\cos(\\omega t) \\].",
-                "Apply these principles to **mechanical, electrical, and biological systems**."
+                "Apply these principles to mechanical, electrical, and biological systems."
             ],
             "duration": 16,
             "difficulty": "Expert"
@@ -125,7 +125,7 @@
             "bulletpoints": [
                 "Define the center of mass: \\[ \\mathbf{R} = \\frac{\\sum m_i \\mathbf{r}_i}{\\sum m_i} \\].",
                 "Analyze equilibrium conditions: \\[ \\sum F = 0, \\quad \\sum \\tau = 0 \\].",
-                "Apply these concepts to **balancing problems and stability analysis**."
+                "Apply these concepts to balancing problems and stability analysis."
             ],
             "duration": 12,
             "difficulty": "Advanced"

@@ -91,6 +91,10 @@ class WorkoutCategoryCache {
         const selectedWorkoutSubCategories = WorkoutScheduleStore.getSelectedWorkoutSubCategoriesSync();
         const selectedWorkoutGroups = WorkoutScheduleStore.getSelectedWorkoutGroupsSync();
         const selectedWorkouts = WorkoutScheduleStore.getSelectedWorkoutsSync();
+        console.log('Selected categories:', selectedWorkoutCategories);
+        console.log('Selected subcategories:', selectedWorkoutSubCategories);
+        console.log('Selected groups:', selectedWorkoutGroups);
+        console.log('Selected workouts:', selectedWorkouts);
         return this.getAllWorkoutsFilteredBy(selectedWorkoutCategories, selectedWorkoutSubCategories, selectedWorkoutGroups, selectedWorkouts);
     }
 

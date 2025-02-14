@@ -1,5 +1,6 @@
 import { Workout, WorkoutCategory, SelectedWorkoutCategories, SelectedWorkoutGroups, SelectedWorkoutSubCategories, SelectedWorkouts } from "../types/WorkoutCategory";
 import WorkoutScheduleStore from "../store/WorkoutScheduleStore";
+
 class WorkoutCategoryCache {
     private static instance: WorkoutCategoryCache;
     public cache: Map<string, WorkoutCategory>;

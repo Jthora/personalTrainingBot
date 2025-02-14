@@ -465,7 +465,6 @@
 │   │   ├── WorkoutList
 │   │   │   ├── WorkoutList.module.css
 │   │   │   └── WorkoutList.tsx
-│   │   ├── WorkoutScheduleCreator.ts
 │   │   ├── WorkoutScheduler
 │   │   │   ├── WorkoutScheduler.module.css
 │   │   │   └── WorkoutScheduler.tsx
@@ -1061,9 +1060,7 @@
 │   │   ├── Card.ts
 │   │   ├── CardDeck.ts
 │   │   ├── CoachData.ts
-│   │   ├── DifficultyLevel.ts
 │   │   ├── DifficultyLevelData.ts
-│   │   ├── DifficultyRange.ts
 │   │   ├── DifficultySetting.ts
 │   │   ├── TrainingModule.ts
 │   │   ├── TrainingModuleReference.ts
@@ -1101,4 +1098,4 @@
 ├── tsconfig.node.json
 └── vite.config.ts
 
-182 directories, 920 files
+182 directories, 917 files

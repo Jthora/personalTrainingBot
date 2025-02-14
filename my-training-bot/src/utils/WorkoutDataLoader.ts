@@ -47,7 +47,7 @@ class WorkoutDataLoader {
                                 return new WorkoutGroup(group.name, group.description, workouts);
                             });
                             totalWorkoutGroups += workoutGroups.length;
-                            const workoutSubCategory = new WorkoutSubCategory(subCategoryId, subCategoryData.description, subCategoryData.name, workoutGroups);
+                            const workoutSubCategory = new WorkoutSubCategory(subCategoryId, subCategoryData.name, subCategoryData.description, workoutGroups);
 
                             onProgress(); // Update progress
 

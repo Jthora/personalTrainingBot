@@ -1,12 +1,11 @@
 import React from 'react';
 import styles from './WorkoutsWindow.module.css';
-import WorkoutScheduler from '../WorkoutScheduler/WorkoutScheduler';
+import WorkoutSelector from '../WorkoutSelector/WorkoutSelector';
 
 const WorkoutsWindow: React.FC = () => {
     return (
         <div className={styles.workoutsWindow}>
-            {/* Add your workouts window content here */}
-            <WorkoutScheduler />
+            <WorkoutSelector />
         </div>
     );
 };

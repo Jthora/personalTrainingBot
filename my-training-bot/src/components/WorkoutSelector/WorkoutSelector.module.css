@@ -1,0 +1,73 @@
+.workoutSelector {
+    padding: 20px;
+    background-color: #333333;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.category, .subCategory, .group, .workout {
+    margin-bottom: 10px;
+}
+
+.category > input, .subCategory > input, .group > input, .workout > input {
+    margin-right: 10px;
+}
+
+.subCategories, .groups, .workouts {
+    margin-left: 20px;
+    padding-left: 10px;
+    border-left: 2px solid #ddd;
+}
+
+.dropdownButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 2px 4px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease; /* Add animation */
+}
+
+.dropdownButton:hover {
+    background-color: #0056b3;
+}
+
+.workoutControls {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 10;
+}
+
+.createNewScheduleButton, .selectAllButton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add animation */
+}
+
+.createNewScheduleButton:hover, .selectAllButton:hover {
+    background-color: #218838;
+    transform: scale(1.05); /* Add animation */
+}
+
+.stats {
+    margin-top: 10px;
+    color: white;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.5); /* Add background */
+    padding: 10px;
+    border-radius: 4px;
+}

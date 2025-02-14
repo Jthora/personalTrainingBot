@@ -174,7 +174,13 @@ const WorkoutScheduleStore = {
     },
     createNewScheduleSync(): WorkoutSchedule {
         const selectedCategories = this.getSelectedWorkoutCategoriesSync();
-        const allWorkouts = WorkoutCategoryCache.getInstance().getAllWorkouts().filter(workout => selectedCategories[workout.id]);
+        const selectedGroups = this.getSelectedWorkoutGroupsSync();
+        const selectedSubCategories = this.getSelectedWorkoutSubCategoriesSync();
+        const selectedWorkouts = this.getSelectedWorkoutsSync();
+        
+        const allWorkouts = WorkoutCategoryCache.getInstance().getAllWorkoutsFilteredBy(
+            selectedCategories, selectedGroups, selectedSubCategories, selectedWorkouts
+        );
         const randomWorkouts = allWorkouts.sort(() => 0.5 - Math.random()).slice(0, 10);
 
         const workoutSets: WorkoutSet[] = [];

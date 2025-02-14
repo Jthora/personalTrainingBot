@@ -11,7 +11,7 @@
                     "duration": "Timed Event",
                     "intensity": "Super",
                     "description": "Engage in martial arts sparring while blindfolded to enhance intuition and reaction time.",
-                    "difficulty_range": [10, 16]
+                    "difficulty_range": [14, 16]
                 },
                 {
                     "name": "Mind-Over-Pain Training",
@@ -32,7 +32,7 @@
                     "duration": "60 minutes",
                     "intensity": "Super",
                     "description": "Meditate in a sensory deprivation tank to train heightened perception of internal signals.",
-                    "difficulty_range": [10, 16]
+                    "difficulty_range": [14, 16]
                 },
                 {
                     "name": "Silent Environment Detection",
@@ -46,7 +46,7 @@
                     "duration": "30 minutes",
                     "intensity": "Super",
                     "description": "Develop the ability to sense electromagnetic energy fields around living beings.",
-                    "difficulty_range": [12, 16]
+                    "difficulty_range": [15, 16]
                 },
                 {
                     "name": "Blindfolded Maze Navigation",
@@ -158,7 +158,7 @@
                     "duration": "Timed Challenge",
                     "intensity": "Super",
                     "description": "Use body language, sound, and intent to communicate with animals.",
-                    "difficulty_range": [8, 16]
+                    "difficulty_range": [13, 16]
                 },
                 {
                     "name": "Delayed Vision Reflex Training",

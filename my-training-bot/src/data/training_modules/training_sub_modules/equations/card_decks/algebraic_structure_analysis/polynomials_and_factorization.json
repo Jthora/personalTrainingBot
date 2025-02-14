@@ -1,0 +1,108 @@
+{
+    "id": "polynomials_and_factorization",
+    "name": "Polynomials & Factorization",
+    "description": "Breaking down polynomials into simpler factors to reveal structure and solutions.",
+    "focus": [
+        "Polynomial Structure",
+        "Factorization Techniques",
+        "Polynomial Theorems",
+        "Graphing and Roots"
+    ],
+    "cards": [
+        {
+            "id": "factoring_methods",
+            "title": "Common Factoring Methods",
+            "description": "Understanding basic factoring techniques to simplify polynomials.",
+            "bulletpoints": [
+                "Factor out the greatest common factor (GCF): \\[ ax^n + bx^{n-1} = x^{n-1} (ax + b) \\].",
+                "Recognize special binomial patterns: \\[ a^2 - b^2 = (a - b)(a + b) \\] (difference of squares).",
+                "Factor sum and difference of cubes: \\[ a^3 - b^3 = (a - b)(a^2 + ab + b^2) \\], \\[ a^3 + b^3 = (a + b)(a^2 - ab + b^2) \\].",
+                "Use grouping methods for higher-degree polynomials, such as factoring four-term polynomials."
+            ],
+            "duration": 8,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "synthetic_division",
+            "title": "Polynomial Division & Synthetic Division",
+            "description": "Techniques for dividing polynomials and finding roots efficiently.",
+            "bulletpoints": [
+                "Use long division to divide polynomials: \\[ \\frac{x^3 + 2x^2 - 4x - 8}{x - 2} \\].",
+                "Apply synthetic division for division by linear factors \\( x - c \\). Example:",
+                "\\[ \\begin{array}{r|rrrr} 2 & 1 & 2 & -4 & -8 \\\\ \\hline & 1 & 4 & 4 & 0 \\end{array} \\].",
+                "Use the remainder theorem: If \\( f(c) = 0 \\), then \\( x - c \\) is a factor of \\( f(x) \\).",
+                "Apply the factor theorem to identify divisors: If \\( f(x) \\) has a factor \\( (x - c) \\), then \\( f(c) = 0 \\)."
+            ],
+            "duration": 9,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "roots_and_graphing",
+            "title": "Finding Roots & Graphing Polynomials",
+            "description": "Understanding how to locate the zeros of polynomial functions and analyze their graphs.",
+            "bulletpoints": [
+                "Find polynomial roots by factoring completely: \\[ (x - 2)(x + 3) = 0 \\Rightarrow x = 2, -3 \\].",
+                "Apply the Rational Root Theorem: Possible rational roots of \\( ax^n + bx^{n-1} + ... + c \\) are \\( \\pm \\frac{p}{q} \\), where \\( p \\) and \\( q \\) are factors of the constant term and leading coefficient.",
+                "Analyze end behavior using the degree and leading coefficient:",
+                "  - If \\( n \\) is even and \\( a_n > 0 \\), both ends point up.",
+                "  - If \\( n \\) is even and \\( a_n < 0 \\), both ends point down.",
+                "  - If \\( n \\) is odd and \\( a_n > 0 \\), the function rises to the right and falls to the left.",
+                "  - If \\( n \\) is odd and \\( a_n < 0 \\), the function falls to the right and rises to the left."
+            ],
+            "duration": 10,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "quadratic_factoring",
+            "title": "Factoring Quadratic Polynomials",
+            "description": "Breaking down second-degree polynomials into factors.",
+            "bulletpoints": [
+                "Factor trinomials of the form \\( ax^2 + bx + c \\) using trial and error or AC method.",
+                "Recognize perfect square trinomials: \\[ a^2 + 2ab + b^2 = (a + b)^2 \\].",
+                "Solve quadratic equations using factoring: \\[ x^2 - 5x + 6 = 0 \\Rightarrow (x - 2)(x - 3) = 0 \\Rightarrow x = 2, 3 \\]."
+            ],
+            "duration": 7,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "irreducible_polynomials",
+            "title": "Irreducible Polynomials & Prime Factorization",
+            "description": "Identifying polynomials that cannot be factored further over a given number system.",
+            "bulletpoints": [
+                "A polynomial is irreducible over the real numbers if it cannot be factored into two lower-degree real polynomials.",
+                "Example: \\( x^2 + 1 \\) is irreducible over \\( \\mathbb{R} \\) but factorable over \\( \\mathbb{C} \\): \\[ x^2 + 1 = (x - i)(x + i) \\].",
+                "Identify prime polynomials which cannot be factored further in a given field."
+            ],
+            "duration": 8,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "polynomial_identities",
+            "title": "Polynomial Identities & Special Products",
+            "description": "Recognizing and using algebraic identities for rapid factorization.",
+            "bulletpoints": [
+                "Sum and difference of cubes:",
+                "  - \\[ a^3 - b^3 = (a - b)(a^2 + ab + b^2) \\].",
+                "  - \\[ a^3 + b^3 = (a + b)(a^2 - ab + b^2) \\].",
+                "Recognize the difference of squares: \\[ a^2 - b^2 = (a - b)(a + b) \\].",
+                "Recognize the trinomial square patterns: \\[ a^2 + 2ab + b^2 = (a + b)^2 \\]."
+            ],
+            "duration": 7,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "binomial_theorem",
+            "title": "Binomial Theorem & Expansion",
+            "description": "Using binomial expansion to express polynomials raised to powers.",
+            "bulletpoints": [
+                "The Binomial Theorem states:",
+                "  \\[ (a + b)^n = \\sum_{k=0}^{n} \\binom{n}{k} a^{n-k} b^k \\].",
+                "Example: Expand \\( (x + 2)^3 \\):",
+                "  \\[ (x + 2)^3 = x^3 + 3x^2(2) + 3x(4) + 8 = x^3 + 6x^2 + 12x + 8 \\].",
+                "Each coefficient is given by the binomial coefficient: \\[ \\binom{n}{k} = \\frac{n!}{k!(n-k)!} \\]."
+            ],
+            "duration": 9,
+            "difficulty": "Advanced"
+        }
+    ]
+}

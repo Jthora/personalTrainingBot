@@ -1,0 +1,155 @@
+{
+    "id": "truth_tables_and_logic_gates",
+    "name": "Truth Tables & Logic Gates",
+    "description": "Understanding the fundamentals of logical statements, their evaluation, and how they form the basis of computation.",
+    "focus": [
+        "Boolean Logic",
+        "Logical Operations"
+    ],
+    "cards": [
+        {
+            "id": "boolean_operators",
+            "title": "Boolean Operators & Logical Connectives",
+            "description": "Exploring the fundamental operators used in logic.",
+            "bulletpoints": [
+                "Define Boolean operators: AND \\( (A \\land B) \\), OR \\( (A \\lor B) \\), NOT \\( (\\neg A) \\), XOR \\( (A \\oplus B) \\).",
+                "Evaluate Boolean expressions using truth tables.",
+                "Apply logical operators in mathematical proofs and computational logic."
+            ],
+            "duration": 8,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "truth_table_analysis",
+            "title": "Truth Tables & Logical Equivalence",
+            "description": "Using truth tables to determine the validity of logical statements.",
+            "bulletpoints": [
+                "Construct truth tables for compound statements such as \\[ (A \\lor B) \\land \\neg C \\].",
+                "Identify logical equivalences such as De Morgan’s Laws: \\[ \\neg(A \\land B) \\equiv \\neg A \\lor \\neg B \\].",
+                "Verify logical identities using truth tables."
+            ],
+            "duration": 10,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "logic_gates",
+            "title": "Logic Gates & Circuit Representation",
+            "description": "Understanding how symbolic logic applies to digital circuits.",
+            "bulletpoints": [
+                "Define logic gates: AND \\( (A \\land B) \\), OR \\( (A \\lor B) \\), NOT \\( (\\neg A) \\), NAND, NOR, XOR, and XNOR.",
+                "Analyze how logic gates perform binary computations: \\[ Y = (A \\land B) \\lor \\neg C \\].",
+                "Explore real-world applications in processor design and hardware logic."
+            ],
+            "duration": 12,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "nand_nor_universality",
+            "title": "NAND & NOR: Universal Gates",
+            "description": "Understanding how NAND and NOR gates alone can implement all Boolean functions.",
+            "bulletpoints": [
+                "Define NAND gate as \\[ \\neg(A \\land B) \\] and NOR gate as \\[ \\neg(A \\lor B) \\].",
+                "Show that all basic logic gates can be constructed using only NAND or NOR.",
+                "Design a universal logic system using only one type of gate."
+            ],
+            "duration": 12,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "karnaugh_maps",
+            "title": "Karnaugh Maps & Logical Simplification",
+            "description": "Using Karnaugh maps (K-maps) to simplify Boolean expressions.",
+            "bulletpoints": [
+                "Construct Karnaugh maps for functions with 2 to 4 variables.",
+                "Apply grouping techniques to minimize logic expressions.",
+                "Convert complex Boolean expressions into simplified forms for circuit optimization."
+            ],
+            "duration": 14,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "boolean_algebra",
+            "title": "Boolean Algebra & Simplification Rules",
+            "description": "Understanding Boolean algebra and its application in logic circuits.",
+            "bulletpoints": [
+                "Apply Boolean algebra rules: \\[ A \\lor \\neg A = 1, \\quad A \\land \\neg A = 0 \\].",
+                "Use distributive, associative, and commutative properties for simplification.",
+                "Derive minimal logic expressions for optimized digital circuits."
+            ],
+            "duration": 14,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "binary_logic_arithmetic",
+            "title": "Binary Logic & Arithmetic Operations",
+            "description": "Exploring how Boolean logic forms the basis of binary arithmetic.",
+            "bulletpoints": [
+                "Define binary addition using XOR and AND: \\[ S = A \\oplus B, \\quad C = A \\land B \\].",
+                "Understand half-adder and full-adder circuits.",
+                "Apply logic gates to build arithmetic logic units (ALUs) in CPUs."
+            ],
+            "duration": 14,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "sequential_logic",
+            "title": "Sequential Logic & State Machines",
+            "description": "Analyzing circuits with memory elements and feedback loops.",
+            "bulletpoints": [
+                "Differentiate between combinational and sequential logic systems.",
+                "Explore flip-flops (SR, D, JK, T) and their functions.",
+                "Design state machines for digital control systems."
+            ],
+            "duration": 16,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "logic_gate_delays",
+            "title": "Propagation Delay & Timing in Logic Circuits",
+            "description": "Examining the effects of gate delays and timing analysis in circuits.",
+            "bulletpoints": [
+                "Define gate delay as the time taken for a logic change to propagate.",
+                "Analyze timing diagrams and critical path delay.",
+                "Design circuits to minimize delay and increase processing speed."
+            ],
+            "duration": 14,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "programmable_logic",
+            "title": "Programmable Logic & FPGA Design",
+            "description": "Understanding how programmable logic devices implement digital circuits.",
+            "bulletpoints": [
+                "Define Field-Programmable Gate Arrays (FPGAs) and how they function.",
+                "Use hardware description languages (HDLs) to configure logic gates.",
+                "Explore real-time logic programming for adaptive computing."
+            ],
+            "duration": 16,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "logic_gate_truth_table_design",
+            "title": "Truth Table Design for Logic Circuits",
+            "description": "Using truth tables to analyze and construct logic circuits.",
+            "bulletpoints": [
+                "Construct truth tables for logic functions with multiple inputs.",
+                "Use truth tables to verify the correctness of circuit designs.",
+                "Design combinational circuits by mapping inputs to outputs logically."
+            ],
+            "duration": 12,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "quantum_logic_gates",
+            "title": "Quantum Logic Gates & Reversible Computation",
+            "description": "Exploring logic gates in the context of quantum computing.",
+            "bulletpoints": [
+                "Define basic quantum gates: Hadamard (H), CNOT, and Toffoli.",
+                "Express quantum states using qubit superposition: \\[ |\\psi\\rangle = \\alpha |0\\rangle + \\beta |1\\rangle \\].",
+                "Analyze how reversible logic enables quantum computation."
+            ],
+            "duration": 18,
+            "difficulty": "Expert"
+        }
+    ]
+}

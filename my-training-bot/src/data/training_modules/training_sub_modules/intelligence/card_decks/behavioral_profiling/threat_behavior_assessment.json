@@ -30,6 +30,78 @@
             ],
             "duration": 7,
             "difficulty": "Advanced"
+        },
+        {
+            "id": "psychological_red_flags",
+            "title": "Psychological Red Flags in Threat Profiling",
+            "description": "Understanding psychological markers that indicate a potential threat actor.",
+            "bulletpoints": [
+                "Identify escalating grievances and personal vendettas",
+                "Recognize paranoia, grandiosity, and fixation on violent ideologies",
+                "Analyze behavioral patterns related to narcissistic and antisocial disorders"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "social_media_risk_assessment",
+            "title": "Social Media & Digital Footprint Risk Assessment",
+            "description": "Using online behavior analysis to predict threats and violent intent.",
+            "bulletpoints": [
+                "Monitor social media for hate speech, radicalization, and manifestos",
+                "Identify coded language, dog whistles, and extremist recruitment tactics",
+                "Analyze digital footprints to track behavioral escalation"
+            ],
+            "duration": 8,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "group_dynamics_and_mob_behavior",
+            "title": "Group Dynamics & Mob Behavior in Security Threats",
+            "description": "Understanding the role of social influence in radicalization and violent events.",
+            "bulletpoints": [
+                "Assess groupthink, deindividuation, and escalation in hostile crowds",
+                "Identify how extremist groups manipulate emotions for recruitment",
+                "Use predictive modeling to assess the likelihood of coordinated attacks"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "lone_actor_threat_profiles",
+            "title": "Lone Actor Threat Profiles & Risk Indicators",
+            "description": "Profiling individuals who act independently in carrying out violent threats.",
+            "bulletpoints": [
+                "Identify behavioral traits of lone wolf attackers",
+                "Understand the psychological differences between organized groups and individual threats",
+                "Recognize social isolation, grievance accumulation, and radicalization pathways"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "threat_communication_patterns",
+            "title": "Threat Communication Patterns & Warning Behaviors",
+            "description": "Analyzing verbal and nonverbal communication cues of potential attackers.",
+            "bulletpoints": [
+                "Detect verbal leaks and unintentional self-incrimination in threat actors",
+                "Analyze facial microexpressions and body language for deception and intent",
+                "Recognize linguistic patterns that signal ideological extremism or violent planning"
+            ],
+            "duration": 8,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "pre_criminal_behavioral_analysis",
+            "title": "Pre-Criminal Behavioral Analysis",
+            "description": "Using behavioral analysis techniques to predict and prevent violent crimes.",
+            "bulletpoints": [
+                "Study precursor behaviors that lead to violent action",
+                "Utilize behavioral drift analysis to detect increasing risk factors",
+                "Differentiate between fantasy-driven threats and operationally capable individuals"
+            ],
+            "duration": 9,
+            "difficulty": "Expert"
         }
     ]
 }

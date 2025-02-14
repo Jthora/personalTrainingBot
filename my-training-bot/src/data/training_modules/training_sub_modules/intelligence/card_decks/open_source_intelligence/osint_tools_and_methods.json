@@ -4,7 +4,10 @@
     "description": "Techniques and tools for gathering intelligence from publicly available online sources.",
     "focus": [
         "Web Scraping",
-        "Data Collection"
+        "Data Collection",
+        "Metadata Analysis",
+        "Geolocation",
+        "Social Media Intelligence (SOCMINT)"
     ],
     "cards": [
         {
@@ -30,6 +33,150 @@
             ],
             "duration": 7,
             "difficulty": "Advanced"
+        },
+        {
+            "id": "exiftool_analysis",
+            "title": "Analyzing Image Metadata with ExifTool",
+            "description": "Using ExifTool to extract metadata from images and digital media.",
+            "bulletpoints": [
+                "Extract geolocation, timestamps, and device details from images",
+                "Identify hidden metadata that reveals source information",
+                "Cross-reference metadata with OSINT databases"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "foca_document_analysis",
+            "title": "FOCA for Document Metadata Analysis",
+            "description": "Using FOCA to extract metadata from documents for OSINT investigations.",
+            "bulletpoints": [
+                "Analyze metadata in PDFs, Word, and Excel documents",
+                "Reveal author, editing history, and network paths",
+                "Use FOCA for reconnaissance on leaked or public corporate documents"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cyberchef_data_processing",
+            "title": "Data Analysis and Transformation with CyberChef",
+            "description": "Using CyberChef for encoding, decoding, and data extraction in OSINT.",
+            "bulletpoints": [
+                "Extract hidden data from encoded or encrypted strings",
+                "Automate text manipulation, decryption, and hashing",
+                "Analyze network traffic, steganography, and forensic artifacts"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "shodan_network_scanning",
+            "title": "Using Shodan for Network OSINT",
+            "description": "Leveraging Shodan to identify exposed devices and infrastructure.",
+            "bulletpoints": [
+                "Scan public IPs for exposed services and vulnerabilities",
+                "Identify open ports, webcams, and industrial control systems",
+                "Monitor for leaked credentials and misconfigured databases"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "maltego_visual_intelligence",
+            "title": "Graph-based OSINT with Maltego",
+            "description": "Using Maltego for link analysis and visual intelligence mapping.",
+            "bulletpoints": [
+                "Map connections between domains, emails, and organizations",
+                "Use transforms to enrich OSINT data from public and private sources",
+                "Analyze relationships between individuals, networks, and entities"
+            ],
+            "duration": 8,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "google_dorking",
+            "title": "Google Dorking for Deep Search OSINT",
+            "description": "Using advanced Google search operators to uncover hidden information.",
+            "bulletpoints": [
+                "Find exposed documents, databases, and login pages",
+                "Use site: and filetype: operators for targeted searches",
+                "Identify sensitive information leaks in public websites"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "whois_domain_analysis",
+            "title": "Domain Intelligence with WHOIS",
+            "description": "Extracting information about domains, registrants, and IP addresses.",
+            "bulletpoints": [
+                "Identify domain ownership, creation date, and hosting provider",
+                "Analyze historical WHOIS records for infrastructure tracking",
+                "Cross-reference domain data with OSINT threat databases"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "wayback_machine",
+            "title": "Investigating Archived Websites with Wayback Machine",
+            "description": "Using archived versions of websites for OSINT research.",
+            "bulletpoints": [
+                "Retrieve deleted web pages and historical site data",
+                "Identify content changes over time for forensic analysis",
+                "Use archived pages to investigate cyber threats and misinformation"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "twint_twitter_intelligence",
+            "title": "Extracting Social Media Intelligence with Twint",
+            "description": "Using Twint to collect Twitter data without API restrictions.",
+            "bulletpoints": [
+                "Scrape Twitter data for usernames, hashtags, and geolocation",
+                "Analyze tweet sentiment and network connections",
+                "Extract deleted tweets and investigate digital footprints"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "osint_framework",
+            "title": "OSINT Framework: Finding the Right Tools",
+            "description": "Exploring the OSINT Framework to identify the best tools for investigations.",
+            "bulletpoints": [
+                "Navigate the OSINT Framework to find category-specific tools",
+                "Use pre-built collections of tools for SOCMINT, GEOINT, and more",
+                "Understand the role of automation in streamlining OSINT workflows"
+            ],
+            "duration": 4,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "reverse_image_search",
+            "title": "Reverse Image Search for OSINT",
+            "description": "Using image search tools to track visuals across the web.",
+            "bulletpoints": [
+                "Use Google Reverse Image Search, Yandex, and TinEye",
+                "Identify duplicate images and track their origins",
+                "Find manipulated images, deepfakes, and fraudulent profiles"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "geo_osint",
+            "title": "Geospatial Intelligence (GEOINT) with OpenStreetMap",
+            "description": "Using OpenStreetMap and satellite imagery for OSINT.",
+            "bulletpoints": [
+                "Analyze satellite imagery for location intelligence",
+                "Identify buildings, terrain, and movement patterns",
+                "Cross-reference geolocation data with other OSINT sources"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
         }
     ]
 }

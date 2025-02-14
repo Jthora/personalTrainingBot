@@ -1,0 +1,44 @@
+{
+    "id": "thermodynamics_and_statistical_mechanics",
+    "name": "Thermodynamics & Statistical Mechanics",
+    "description": "Understanding the mathematical principles of heat, energy transfer, and entropy.",
+    "focus": ["Heat Transfer", "Entropy", "Statistical Physics"],
+    "cards": [
+        {
+            "id": "laws_of_thermodynamics",
+            "title": "Laws of Thermodynamics & Energy Conservation",
+            "description": "Exploring the fundamental laws governing heat and energy transfer.",
+            "bulletpoints": [
+                "Understand the First Law of Thermodynamics and conservation of energy.",
+                "Apply the Second Law of Thermodynamics to entropy and heat engines.",
+                "Explore the implications of the Third Law of Thermodynamics in extreme temperatures."
+            ],
+            "duration": 10,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "heat_transfer_equations",
+            "title": "Heat Transfer & Thermal Conduction",
+            "description": "Understanding how heat moves through conduction, convection, and radiation.",
+            "bulletpoints": [
+                "Use Fourier’s Law to analyze heat conduction in materials.",
+                "Understand Newton’s Law of Cooling and convective heat transfer.",
+                "Apply Stefan-Boltzmann Law to radiative heat exchange."
+            ],
+            "duration": 12,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "statistical_mechanics",
+            "title": "Statistical Mechanics & Entropy Calculations",
+            "description": "Using probability and statistics to understand microscopic states of matter.",
+            "bulletpoints": [
+                "Study Boltzmann’s entropy formula and statistical interpretation of thermodynamics.",
+                "Analyze partition functions and probability distributions in statistical mechanics.",
+                "Explore applications of statistical physics in quantum mechanics and black holes."
+            ],
+            "duration": 14,
+            "difficulty": "Expert"
+        }
+    ]
+}

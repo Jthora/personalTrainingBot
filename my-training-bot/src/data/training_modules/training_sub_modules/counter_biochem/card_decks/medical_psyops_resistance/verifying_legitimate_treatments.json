@@ -1,0 +1,36 @@
+{
+    "id": "verifying_legitimate_treatments",
+    "name": "Verifying Legitimate Treatments",
+    "description": "Training in identifying authentic medical treatments while filtering out suppressed cures and controlled industry deception.",
+    "focus": [
+        "Investigating Treatment Efficacy",
+        "Separating Real Science from Fraud",
+        "Exposing Censored Cures"
+    ],
+    "cards": [
+        {
+            "id": "treatment_1",
+            "title": "How to Research Medical Treatments Independently",
+            "description": "Techniques for conducting unbiased investigations into treatment options.",
+            "bulletpoints": "Analyzing study methodologies, funding source tracking, cross-referencing global research",
+            "duration": "12",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "treatment_2",
+            "title": "Suppressed Treatments and Alternative Medicine",
+            "description": "Investigating natural remedies and suppressed medical solutions.",
+            "bulletpoints": "Herbal antivirals, non-toxic cancer treatments, historical suppression of cures",
+            "duration": "14",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "treatment_3",
+            "title": "Recognizing Weaponized Medicine & Controlled Harm",
+            "description": "Distinguishing between genuine healthcare and industry-driven harm.",
+            "bulletpoints": "Long-term side effect monitoring, depopulation agendas, unethical human trials",
+            "duration": "14",
+            "difficulty": "Expert"
+        }
+    ]
+}

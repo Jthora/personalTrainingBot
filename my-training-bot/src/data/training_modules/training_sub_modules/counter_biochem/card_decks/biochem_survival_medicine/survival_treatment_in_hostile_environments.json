@@ -1,0 +1,129 @@
+{
+    "id": "survival_treatment_in_hostile_environments",
+    "name": "Survival Treatment in Hostile Environments",
+    "description": "Emergency medical and survival treatment strategies for exposure to biological, chemical, and environmental hazards in high-risk areas.",
+    "focus": [
+        "Field-Ready Medical Interventions",
+        "Resourceful Survival Medicine",
+        "Counteracting Extreme BioChem Threats"
+    ],
+    "cards": [
+        {
+            "id": "survival_treatment_1",
+            "title": "Field-Ready Antidotes & Improvised Treatments",
+            "description": "Using natural, locally available resources to neutralize poisons, toxins, and chemical contaminants when standard medical supplies are unavailable.",
+            "bulletpoints": [
+                "Activated charcoal for absorbing ingested poisons and neutralizing toxins.",
+                "Apple cider vinegar and baking soda mixture for counteracting mild chemical burns.",
+                "Crushed plantain leaves as an emergency wound dressing with antimicrobial properties.",
+                "Honey as an antiseptic and wound barrier to prevent infection."
+            ],
+            "duration": "14",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "survival_treatment_2",
+            "title": "Wound Care & Infection Control Without Modern Supplies",
+            "description": "Preventing infections and promoting healing using natural antimicrobial and wound management techniques.",
+            "bulletpoints": [
+                "Honey dressings to prevent bacterial infections and speed up healing.",
+                "Clay poultices (e.g., bentonite clay) to draw out toxins and reduce inflammation.",
+                "Cauterization with heated metal or fire sterilization for deep cuts when no sutures are available.",
+                "Saltwater (saline) irrigation for cleaning wounds and preventing bacterial growth."
+            ],
+            "duration": "12",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "survival_treatment_3",
+            "title": "Treating Radiation & Heavy Metal Poisoning in Crisis",
+            "description": "Emergency detox protocols for radioactive exposure and heavy metal contamination.",
+            "bulletpoints": [
+                "Potassium iodide (KI) to block radioactive iodine absorption in the thyroid.",
+                "Zeolite clay and activated charcoal to bind heavy metals and remove toxins from the body.",
+                "Chlorella and spirulina for detoxifying radiation and repairing cellular damage.",
+                "Vitamin C megadosing to neutralize free radicals caused by radiation exposure."
+            ],
+            "duration": "14",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "survival_treatment_4",
+            "title": "Respiratory Protection & Emergency Air Filtration",
+            "description": "Techniques for preventing inhalation of airborne biological, chemical, and radioactive particulates.",
+            "bulletpoints": [
+                "Improvised gas masks using activated charcoal and cloth filters.",
+                "Creating a basic air filtration system using damp fabric to trap airborne particles.",
+                "Building a sealed room using plastic sheeting and duct tape to block airborne threats.",
+                "Breathing techniques for minimizing lung exposure in high-risk environments."
+            ],
+            "duration": "12",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "survival_treatment_5",
+            "title": "Water Purification & Anti-Contamination Strategies",
+            "description": "Ensuring safe drinking water by neutralizing biological, chemical, and radioactive contaminants.",
+            "bulletpoints": [
+                "Boiling water for at least 10 minutes to kill bacteria, viruses, and parasites.",
+                "Using activated charcoal to remove chemical contaminants and improve water taste.",
+                "Solar distillation (solar still) to remove heavy metals and desalinate seawater.",
+                "Iodine and chlorine dioxide tablets to purify water in emergency situations."
+            ],
+            "duration": "12",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "survival_treatment_6",
+            "title": "Emergency Biological Threat Isolation & Quarantine",
+            "description": "Strategies for preventing pathogen spread in a crisis where infectious diseases or bioweapons are involved.",
+            "bulletpoints": [
+                "Creating an improvised quarantine zone using plastic barriers and sealed rooms.",
+                "Using UV-C light for sterilizing small items and surfaces.",
+                "DIY (Do-It-Yourself) personal protective equipment (PPE) such as gloves, masks, and face shields.",
+                "Natural air filtration using plants that absorb toxins and release oxygen."
+            ],
+            "duration": "14",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "survival_treatment_7",
+            "title": "Emergency Herbal Medicine for BioChem Threats",
+            "description": "Using plant-based medicine to counteract chemical and biological warfare threats.",
+            "bulletpoints": [
+                "Garlic and oregano oil as natural antibiotics for bacterial infections.",
+                "Turmeric and black pepper for reducing inflammation and toxin buildup.",
+                "Dandelion and milk thistle to support liver detoxification from chemical exposure.",
+                "Elderberry and echinacea to strengthen the immune system against viral threats."
+            ],
+            "duration": "12",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "survival_treatment_8",
+            "title": "Combatting Nerve Agent & Neurotoxin Exposure",
+            "description": "Methods for neutralizing exposure to nerve agents and neurotoxic chemicals.",
+            "bulletpoints": [
+                "Atropine as an emergency antidote for organophosphate nerve agents.",
+                "Sodium bicarbonate (baking soda) to help alkalize the body and reduce toxicity.",
+                "Magnesium sulfate (Epsom salts) for nervous system support after neurotoxin exposure.",
+                "Breathing exercises to maintain oxygen flow and counteract paralysis effects."
+            ],
+            "duration": "14",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "survival_treatment_9",
+            "title": "Decontaminating Clothing & Skin After Exposure",
+            "description": "Emergency decontamination protocols to remove chemical and biological agents from the body and clothing.",
+            "bulletpoints": [
+                "Removing and safely disposing of contaminated clothing to prevent re-exposure.",
+                "Using a clay or activated charcoal scrub to absorb chemical toxins from skin.",
+                "Taking a cold shower with mild soap to minimize skin absorption of hazardous substances.",
+                "Rinsing eyes with saline or clean water for exposure to chemical irritants."
+            ],
+            "duration": "12",
+            "difficulty": "Advanced"
+        }
+    ]
+}

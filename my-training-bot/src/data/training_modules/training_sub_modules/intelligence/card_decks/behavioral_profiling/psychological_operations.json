@@ -12,9 +12,9 @@
             "title": "Coercion and Persuasion Tactics",
             "description": "Psychological methods for influencing decisions and altering behaviors.",
             "bulletpoints": [
-                "Apply social engineering principles for intelligence gathering",
-                "Use framing and priming techniques to control narratives",
-                "Leverage fear, obligation, and guilt for compliance"
+                "Apply social engineering techniques such as pretexting, baiting, and authority exploitation to gain trust and extract information",
+                "Use framing (shaping how information is presented) and priming (subconscious influence) to steer perception and decision-making",
+                "Leverage psychological motivators like fear, obligation, and guilt to increase compliance and reduce resistance"
             ],
             "duration": 6,
             "difficulty": "Advanced"
@@ -24,12 +24,48 @@
             "title": "Strategic Psychological Operations",
             "description": "Coordinating large-scale psychological campaigns to shift perceptions and create division.",
             "bulletpoints": [
-                "Use media and propaganda to influence public perception",
-                "Exploit psychological vulnerabilities in adversarial groups",
-                "Deploy misinformation and disinformation tactics for strategic advantage"
+                "Use propaganda techniques such as repetition, emotional appeal, and selective information to shape public opinion",
+                "Exploit cognitive biases, including confirmation bias (favoring information that aligns with existing beliefs) and bandwagon effect (influencing behavior through social proof), to manipulate adversarial groups",
+                "Deploy misinformation (false or misleading information) and disinformation (deliberately deceptive content) to undermine opponents and control narratives"
             ],
             "duration": 7,
             "difficulty": "Advanced"
+        },
+        {
+            "id": "perception_management",
+            "title": "Perception Management & Narrative Control",
+            "description": "Shaping how individuals or groups interpret events to guide behavior and decision-making.",
+            "bulletpoints": [
+                "Construct narratives (coherent, persuasive storylines) that align with strategic objectives and influence emotions",
+                "Use media manipulation tactics such as selective reporting, false attribution, and staged events to control information flow",
+                "Apply subliminal messaging (hidden persuasive cues) and neuro-linguistic programming (NLP) (language-based influence) to shape perception at a subconscious level"
+            ],
+            "duration": 7,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "group_psychology_manipulation",
+            "title": "Group Psychology & Mass Influence",
+            "description": "Exploiting group dynamics to amplify psychological control.",
+            "bulletpoints": [
+                "Leverage groupthink (desire for harmony leading to poor decision-making) to push targeted narratives within closed communities",
+                "Use moral disengagement techniques (justifying unethical actions) to radicalize individuals and encourage ideological commitment",
+                "Implement identity reinforcement strategies, such as in-group favoritism and out-group demonization, to strengthen group cohesion and create division"
+            ],
+            "duration": 8,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "subversion_and_psychological_warfare",
+            "title": "Subversion & Psychological Warfare",
+            "description": "Undermining adversaries through psychological destabilization.",
+            "bulletpoints": [
+                "Deploy active measures (covert actions like forgeries, leaked documents, and false intelligence) to weaken enemy credibility",
+                "Use emotional exhaustion tactics such as relentless fear, uncertainty, and doubt (FUD) campaigns to wear down adversarial resolve",
+                "Exploit information overload (flooding adversaries with conflicting data) to induce confusion and paralysis in decision-making"
+            ],
+            "duration": 9,
+            "difficulty": "Expert"
         }
     ]
 }

@@ -4,7 +4,10 @@
     "description": "Using government, corporate, and public databases for intelligence gathering.",
     "focus": [
         "Public Database Research",
-        "Legal and Corporate Intelligence"
+        "Legal and Corporate Intelligence",
+        "Property & Asset Investigations",
+        "Identity Verification",
+        "Regulatory & Compliance Intelligence"
     ],
     "cards": [
         {
@@ -30,6 +33,138 @@
             ],
             "duration": 7,
             "difficulty": "Advanced"
+        },
+        {
+            "id": "real_estate_investigations",
+            "title": "Property and Real Estate Intelligence",
+            "description": "Analyzing real estate transactions, ownership, and hidden assets.",
+            "bulletpoints": [
+                "Use Zillow, county assessor databases, and land registries to verify ownership",
+                "Track offshore real estate holdings and money laundering properties",
+                "Analyze mortgage records for financial vulnerabilities"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "sanctions_watchlists",
+            "title": "Sanctions and Watchlist Intelligence",
+            "description": "Checking individuals and entities against global sanctions lists.",
+            "bulletpoints": [
+                "Use OFAC, Interpol, and UN sanctions lists for restricted entities",
+                "Analyze export control lists and trade restrictions",
+                "Track individuals flagged by financial crime watchlists"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "patent_trademark_analysis",
+            "title": "Patent and Trademark Investigations",
+            "description": "Researching intellectual property ownership and legal disputes.",
+            "bulletpoints": [
+                "Use USPTO, WIPO, and EPO databases for patents and trademarks",
+                "Identify corporate ownership and innovation trends",
+                "Analyze patent litigation history to assess legal risk"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "criminal_records_search",
+            "title": "Criminal Records and Court Case Analysis",
+            "description": "Researching criminal histories and active legal proceedings.",
+            "bulletpoints": [
+                "Access federal and state court databases for case records",
+                "Use PACER and state judiciary portals for criminal cases",
+                "Analyze legal filings, verdicts, and sentencing history"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "regulatory_filings",
+            "title": "Regulatory and Compliance Filings",
+            "description": "Extracting intelligence from financial, environmental, and corporate filings.",
+            "bulletpoints": [
+                "Analyze SEC, EPA, and financial regulatory filings",
+                "Track corporate disclosures and risk reports",
+                "Monitor companies flagged for compliance violations"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "identity_verification",
+            "title": "Identity Verification and Background Checks",
+            "description": "Validating identities using public records and databases.",
+            "bulletpoints": [
+                "Use Social Security Death Index and voter records for verification",
+                "Analyze public utility and property records to confirm residency",
+                "Cross-check alias usage, known associates, and past addresses"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "leaked_database_search",
+            "title": "Investigating Leaked Databases",
+            "description": "Analyzing publicly available leaked records for intelligence gathering.",
+            "bulletpoints": [
+                "Search Have I Been Pwned and breach directories for compromised data",
+                "Analyze leaked email addresses, passwords, and database dumps",
+                "Investigate leaked financial, legal, and government databases"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ucc_filings",
+            "title": "Uniform Commercial Code (UCC) Filings for Financial Intelligence",
+            "description": "Using UCC records to uncover financial relationships and secured assets.",
+            "bulletpoints": [
+                "Identify liens and financial obligations tied to businesses and individuals",
+                "Analyze loan and collateral details for financial vulnerability",
+                "Track mergers, acquisitions, and business debt structuring"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "property_liens",
+            "title": "Tax Liens and Property Debt Investigations",
+            "description": "Analyzing tax liens, foreclosures, and unpaid debts.",
+            "bulletpoints": [
+                "Use IRS, state, and county records for outstanding liens",
+                "Investigate foreclosure databases for financial distress signals",
+                "Track bankruptcy records and creditor claims for individuals and corporations"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "corporate_offshore_analysis",
+            "title": "Tracking Offshore Companies and Hidden Wealth",
+            "description": "Uncovering offshore corporate structures and financial secrecy.",
+            "bulletpoints": [
+                "Use OpenCorporates and Panama Papers leaks for shell company research",
+                "Analyze tax haven jurisdictions and financial secrecy laws",
+                "Investigate beneficial ownership and proxy directors"
+            ],
+            "duration": 8,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "public_contracts",
+            "title": "Public Contracts and Procurement Analysis",
+            "description": "Investigating government contracts and vendor relationships.",
+            "bulletpoints": [
+                "Use USASpending.gov and procurement databases for contract intelligence",
+                "Analyze defense, infrastructure, and tech procurement records",
+                "Track vendor relationships and political donations tied to contracts"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
         }
     ]
 }

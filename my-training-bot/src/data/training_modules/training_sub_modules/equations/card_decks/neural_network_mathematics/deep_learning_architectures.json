@@ -1,0 +1,113 @@
+{
+    "id": "deep_learning_architectures",
+    "name": "Deep Learning Architectures",
+    "description": "Exploring advanced neural network structures and their applications.",
+    "focus": [
+        "Convolutional Networks",
+        "Recurrent Networks",
+        "Transformer Models",
+        "Generative AI",
+        "Neuromorphic Computing"
+    ],
+    "cards": [
+        {
+            "id": "cnn_convolution",
+            "title": "Convolutional Neural Networks (CNNs) & Image Processing",
+            "description": "Understanding how convolutional layers extract spatial features from images.",
+            "bulletpoints": [
+                "Define a convolution operation: \\[ (I * K)(x, y) = \\sum_{i=-k}^{k} \\sum_{j=-k}^{k} I(x - i, y - j) K(i, j) \\], where \\( I \\) is the input image and \\( K \\) is the kernel.",
+                "Understand max pooling: \\[ P(i, j) = \\max_{(m, n) \\in R(i, j)} f(m, n) \\], reducing spatial dimensions while preserving key features.",
+                "Explore real-world applications such as object detection, facial recognition, and medical imaging."
+            ],
+            "duration": 10,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "rnn_lstm",
+            "title": "Recurrent Neural Networks (RNNs) & Long Short-Term Memory (LSTM)",
+            "description": "Exploring networks designed for sequential data processing.",
+            "bulletpoints": [
+                "Understand how RNNs use a hidden state \\( h_t \\) to capture past information: \\[ h_t = \\phi(W h_{t-1} + U x_t + b) \\].",
+                "Learn about the vanishing gradient problem, where long sequences lead to diminishing weight updates: \\[ \\frac{\\partial L}{\\partial W} \\approx \\lambda^t \\frac{\\partial L}{\\partial h_t} \\] with \\( \\lambda \\ll 1 \\).",
+                "Study LSTM gating mechanisms, preventing vanishing gradients using forget, input, and output gates: \\[ f_t = \\sigma(W_f h_{t-1} + U_f x_t + b_f) \\].",
+                "Apply RNNs and LSTMs in speech recognition, language modeling, and time-series forecasting."
+            ],
+            "duration": 12,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "transformers",
+            "title": "Transformer Networks & Attention Mechanisms",
+            "description": "Understanding the architecture behind modern language models such as GPT and BERT.",
+            "bulletpoints": [
+                "Define self-attention: \\[ \text{Attention}(Q, K, V) = \text{softmax} \\left( \\frac{Q K^T}{\\sqrt{d_k}} \\right) V \\], where \\( Q, K, V \\) are query, key, and value matrices.",
+                "Explore how multi-head attention enables parallel processing of information across different representation subspaces.",
+                "Analyze the computational efficiency of transformer models: \\( O(n^2) \\) for self-attention vs. \\( O(n) \\) for recurrent architectures.",
+                "Compare BERT (Bidirectional Encoding Representations from Transformers) with GPT (Generative Pretrained Transformer) for natural language processing (NLP)."
+            ],
+            "duration": 14,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "gan",
+            "title": "Generative Adversarial Networks (GANs)",
+            "description": "Exploring deep learning models that generate synthetic data.",
+            "bulletpoints": [
+                "Define the GAN objective function, where a generator \\( G \\) and discriminator \\( D \\) play a minimax game: \\[ \\min_G \\max_D V(D, G) = \\mathbb{E}_{x \\sim p_{\\text{data}}} [\\log D(x)] + \\mathbb{E}_{z \\sim p_z} [\\log (1 - D(G(z)))] \\].",
+                "Study how latent space sampling generates realistic outputs.",
+                "Apply GANs to image synthesis, deepfake generation, and drug discovery."
+            ],
+            "duration": 13,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "spiking_neural_networks",
+            "title": "Spiking Neural Networks (SNNs) & Neuromorphic Computing",
+            "description": "Exploring biologically inspired neural networks that process spikes instead of continuous signals.",
+            "bulletpoints": [
+                "Define spike response model: \\[ V_m(t) = \\sum_i w_i K(t - t_i) \\], where \\( K(t) \\) is a synaptic kernel function.",
+                "Analyze Hebbian learning: \\[ \\Delta w = \\eta x_i y_j \\] (neurons that fire together, wire together).",
+                "Investigate how neuromorphic hardware (IBM TrueNorth, Intel Loihi) mimics biological networks.",
+                "Explore applications in low-power AI systems and brain-computer interfaces."
+            ],
+            "duration": 15,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "capsule_networks",
+            "title": "Capsule Networks & Hierarchical Representations",
+            "description": "Understanding how capsule networks improve feature detection and representation.",
+            "bulletpoints": [
+                "Define capsule activation: \\[ v_j = \\sum_i c_{ij} \\mathbf{W}_{ij} u_i \\] where \\( u_i \\) is the input vector and \\( c_{ij} \\) are dynamic routing coefficients.",
+                "Study how capsule networks maintain spatial hierarchies using dynamic routing between layers.",
+                "Apply CapsNets in pose detection, 3D object recognition, and medical imaging."
+            ],
+            "duration": 14,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "autoencoders",
+            "title": "Autoencoders & Dimensionality Reduction",
+            "description": "Learning how autoencoders encode data into a compressed latent representation.",
+            "bulletpoints": [
+                "Define an autoencoder loss function: \\[ L = ||X - \\hat{X}||^2 \\], where \\( X \\) is input data and \\( \\hat{X} \\) is the reconstructed output.",
+                "Analyze applications in denoising, feature learning, and anomaly detection.",
+                "Explore variational autoencoders (VAEs) for latent space disentanglement."
+            ],
+            "duration": 12,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "graph_neural_networks",
+            "title": "Graph Neural Networks (GNNs) & Relational Learning",
+            "description": "Exploring neural architectures that process structured data on graphs.",
+            "bulletpoints": [
+                "Define graph convolution: \\[ h_i^{(k+1)} = \\sigma \\left( \\sum_{j \\in N(i)} \\frac{1}{|N(i)|} W h_j^{(k)} \\right) \\], where \\( N(i) \\) is the neighborhood of node \\( i \\).",
+                "Study applications in recommendation systems, social networks, and molecular chemistry.",
+                "Compare GNNs with traditional convolutional architectures."
+            ],
+            "duration": 13,
+            "difficulty": "Expert"
+        }
+    ]
+}

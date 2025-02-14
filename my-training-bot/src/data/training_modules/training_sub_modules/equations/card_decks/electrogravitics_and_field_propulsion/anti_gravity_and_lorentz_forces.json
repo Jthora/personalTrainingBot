@@ -1,0 +1,123 @@
+{
+    "id": "anti_gravity_and_lorentz_forces",
+    "name": "Anti-Gravity & Lorentz Forces",
+    "description": "Exploring the relationship between electromagnetism and gravity, focusing on exotic propulsion methods.",
+    "focus": [
+        "Gravity Control",
+        "Electromagnetic Propulsion",
+        "Lorentz Force Interactions",
+        "Exotic Propulsion Physics"
+    ],
+    "cards": [
+        {
+            "id": "biefeld_brown_effect",
+            "title": "Biefeld-Brown Effect & Electrogravitic Lift",
+            "description": "Studying the hypothesis that high-voltage fields can create an anti-gravity effect.",
+            "bulletpoints": [
+                "Understand the historical experiments conducted by Thomas Townsend Brown on dielectric polarization effects.",
+                "Analyze the force exerted on a capacitor in an asymmetric electric field: \\[ F = \\frac{1}{2} \\varepsilon E^2 A \\] where \\( \\varepsilon \\) is permittivity, \\( E \\) is the applied field, and \\( A \\) is the capacitor plate area.",
+                "Investigate links between dielectric breakdown and mass modulation effects using ion wind suppression techniques.",
+                "Explore potential applications in electrogravitic propulsion and inertial modification."
+            ],
+            "duration": 12,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "lorentz_force_thrusters",
+            "title": "Lorentz Force & Electromagnetic Propulsion",
+            "description": "Exploring how charged particles moving in a magnetic field generate thrust.",
+            "bulletpoints": [
+                "Understand the Lorentz force equation: \\[ \\mathbf{F} = q (\\mathbf{E} + \\mathbf{v} \\times \\mathbf{B}) \\] where \\( q \\) is charge, \\( \\mathbf{E} \\) is the electric field, \\( \\mathbf{B} \\) is the magnetic field, and \\( \\mathbf{v} \\) is velocity.",
+                "Explore Hall-effect thrusters, which operate via electron drift currents in an applied magnetic field.",
+                "Investigate applications of magnetoplasmadynamic (MPD) thrusters using high-current discharges in plasma flow."
+            ],
+            "duration": 14,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "gravitomagnetism",
+            "title": "Gravitomagnetism & Spacetime Distortion",
+            "description": "Examining theories of frame-dragging and their applications in gravity control.",
+            "bulletpoints": [
+                "Understand how a rotating mass generates a gravitomagnetic field analogous to electromagnetism.",
+                "Study Lense-Thirring frame-dragging effects predicted by general relativity: \\[ \\nabla \\times \\mathbf{g} = - \\frac{4}{c^2} \\mathbf{J} \\] where \\( \\mathbf{g} \\) is gravitational acceleration and \\( \\mathbf{J} \\) is angular momentum.",
+                "Investigate experimental detection methods such as Gravity Probe B and ring laser gyroscopes.",
+                "Explore potential applications in gravitomagnetic propulsion systems."
+            ],
+            "duration": 16,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "warp_metrics",
+            "title": "Warp Metrics & Negative Energy Solutions",
+            "description": "Exploring spacetime engineering concepts using solutions to Einstein’s equations.",
+            "bulletpoints": [
+                "Study the Alcubierre metric for faster-than-light travel: \\[ ds^2 = -c^2 dt^2 + (dx - v_s f(r) dt)^2 + dy^2 + dz^2 \\] where \\( v_s \\) is the warp bubble velocity and \\( f(r) \\) is the spacetime distortion function.",
+                "Investigate the role of negative energy densities in exotic spacetime configurations.",
+                "Analyze potential uses of Casimir vacuum fluctuations in generating negative mass-energy fields."
+            ],
+            "duration": 18,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "einstein_cartan_theory",
+            "title": "Einstein-Cartan Theory & Torsion Fields",
+            "description": "Investigating extensions of general relativity incorporating torsion effects.",
+            "bulletpoints": [
+                "Explore the modification of Einstein’s field equations to include spacetime torsion: \\[ R_{\\mu\\nu} - \\frac{1}{2} g_{\\mu\\nu} R + \\Lambda g_{\\mu\\nu} = \\frac{8 \\pi G}{c^4} T_{\\mu\\nu} \\].",
+                "Understand how spin-coupling modifies gravitational interactions and may lead to new propulsion mechanisms.",
+                "Analyze experimental proposals for detecting torsion fields in high-energy astrophysical phenomena."
+            ],
+            "duration": 17,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "plasma_gravity_interactions",
+            "title": "Plasma-Gravity Coupling & Electrogravity Waves",
+            "description": "Exploring interactions between high-energy plasma flows and gravitational fields.",
+            "bulletpoints": [
+                "Investigate plasma currents generating local spacetime perturbations via nonlinear interactions.",
+                "Apply Maxwell’s equations to plasma environments in gravitational fields.",
+                "Analyze possible experimental methods for producing localized curvature distortions using high-energy plasma discharges."
+            ],
+            "duration": 15,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "exotic_matter_stability",
+            "title": "Exotic Matter & Stability in High-Energy Fields",
+            "description": "Analyzing the conditions required for stable exotic matter configurations.",
+            "bulletpoints": [
+                "Understand the energy conditions required for exotic mass states: \\[ T_{00} < 0 \\].",
+                "Study solutions to Einstein’s equations that permit negative energy flux in a vacuum.",
+                "Investigate the connection between exotic matter stability and Alcubierre warp drive feasibility."
+            ],
+            "duration": 14,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "zero_point_field",
+            "title": "Zero-Point Energy & Electromagnetic Vacuum Effects",
+            "description": "Examining quantum vacuum fluctuations as a potential energy source.",
+            "bulletpoints": [
+                "Analyze the quantum vacuum stress-energy tensor: \\[ \\langle T_{\\mu\\nu} \\rangle = \\frac{1}{2} \\sum_k \\hbar \\omega_k \\].",
+                "Study experimental attempts to measure Casimir force fluctuations and extract usable energy.",
+                "Explore theoretical models for zero-point energy propulsion."
+            ],
+            "duration": 13,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "electrostatic_gravity_control",
+            "title": "Electrostatic Field Manipulation & Gravity Effects",
+            "description": "Investigating the use of static electric fields in gravitational modification.",
+            "bulletpoints": [
+                "Explore links between electrostatic potentials and gravitational field distortions.",
+                "Analyze possible field configurations that could influence local gravitational gradients.",
+                "Examine experiments utilizing high-voltage capacitors to generate anomalous lift effects."
+            ],
+            "duration": 12,
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -4,7 +4,9 @@
     "description": "Modeling geopolitical conflicts, economic shifts, and international crises.",
     "focus": [
         "Geopolitical Risk Assessment",
-        "Scenario-Based Forecasting"
+        "Scenario-Based Forecasting",
+        "Strategic Decision-Making",
+        "Crisis Simulation Modeling"
     ],
     "cards": [
         {
@@ -12,9 +14,9 @@
             "title": "Wargaming & Strategic Conflict Simulations",
             "description": "Using scenario-based models to anticipate international conflicts.",
             "bulletpoints": [
-                "Simulate potential military conflicts using historical data and AI models",
-                "Analyze strategic movements of state and non-state actors",
-                "Apply game theory to predict adversarial decision-making"
+                "Simulate potential military conflicts using historical data and Artificial Intelligence (AI) models",
+                "Analyze strategic movements of state and non-state actors in global conflicts",
+                "Apply game theory to predict adversarial decision-making and escalation patterns"
             ],
             "duration": 6,
             "difficulty": "Advanced"
@@ -24,9 +26,105 @@
             "title": "Economic Forecasting & Global Market Analysis",
             "description": "Predicting financial market shifts and macroeconomic trends.",
             "bulletpoints": [
-                "Use economic indicators to predict inflation, recession, and currency movements",
-                "Analyze the impact of trade policies and global supply chain disruptions",
-                "Identify emerging market opportunities and risks"
+                "Use economic indicators like Gross Domestic Product (GDP), Consumer Price Index (CPI), and trade balances to forecast inflation and recession risks",
+                "Analyze the impact of trade policies, international sanctions, and global supply chain disruptions",
+                "Identify emerging market opportunities and economic vulnerabilities for strategic positioning"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "energy_crisis_simulation",
+            "title": "Energy Crisis & Resource Conflict Modeling",
+            "description": "Simulating the impact of energy shortages and resource-driven geopolitical tensions.",
+            "bulletpoints": [
+                "Analyze the role of oil, gas, and rare-earth minerals in international conflicts",
+                "Model supply chain disruptions caused by energy crises or trade restrictions",
+                "Assess the geopolitical influence of energy superpowers like Russia, Saudi Arabia, and the United States"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cyber_warfare",
+            "title": "Cyber Warfare & Digital Conflict Simulations",
+            "description": "Modeling state-sponsored cyber attacks and global cybersecurity threats.",
+            "bulletpoints": [
+                "Analyze the impact of cyber attacks on national security, financial systems, and infrastructure",
+                "Use attack tree analysis to simulate adversary cyber strategies",
+                "Assess cyber warfare as a tool for asymmetric conflict and hybrid warfare scenarios"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "climate_crisis_simulation",
+            "title": "Climate Change & Geopolitical Instability",
+            "description": "Simulating geopolitical consequences of environmental disasters and resource scarcity.",
+            "bulletpoints": [
+                "Model migration patterns resulting from climate-driven displacement",
+                "Analyze how rising sea levels and extreme weather affect national security",
+                "Assess geopolitical tensions over water access and arable land scarcity"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ai_psyops_simulation",
+            "title": "AI-Driven Psychological Operations (PsyOps) & Disinformation Warfare",
+            "description": "Simulating the influence of AI-powered propaganda and information warfare.",
+            "bulletpoints": [
+                "Examine how generative AI and deepfake technology shape public perception",
+                "Model the spread of disinformation campaigns and social media manipulation",
+                "Analyze how AI-driven PsyOps impact election security and civil unrest"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "nuclear_deterrence",
+            "title": "Nuclear Deterrence & Strategic Stability Modeling",
+            "description": "Assessing nuclear strategy, deterrence theory, and escalation dynamics.",
+            "bulletpoints": [
+                "Apply Mutually Assured Destruction (MAD) theory to strategic simulations",
+                "Analyze the role of second-strike capability in nuclear deterrence",
+                "Model crisis scenarios involving nuclear proliferation and diplomatic resolutions"
+            ],
+            "duration": 8,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "supply_chain_resilience",
+            "title": "Global Supply Chain Disruption Simulations",
+            "description": "Modeling vulnerabilities in global trade networks and logistics systems.",
+            "bulletpoints": [
+                "Analyze how supply chain bottlenecks impact geopolitical stability",
+                "Simulate the effects of trade wars, sanctions, and industrial espionage",
+                "Assess the strategic importance of rare-earth elements and semiconductor manufacturing"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "biowarfare_simulation",
+            "title": "Biological Warfare & Pandemic Response Modeling",
+            "description": "Simulating global pandemic responses and biosecurity threats.",
+            "bulletpoints": [
+                "Assess how pandemics impact international relations and economic stability",
+                "Analyze the role of bioterrorism in modern warfare scenarios",
+                "Model government response strategies, including quarantine enforcement and vaccine diplomacy"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "great_power_competition",
+            "title": "Great Power Competition & Global Hegemony",
+            "description": "Modeling strategic rivalries between major world powers.",
+            "bulletpoints": [
+                "Analyze the shifting balance of power between the United States, China, Russia, and the European Union",
+                "Assess military posturing, economic policies, and soft power strategies",
+                "Simulate scenarios where regional conflicts escalate into global crises"
             ],
             "duration": 7,
             "difficulty": "Advanced"

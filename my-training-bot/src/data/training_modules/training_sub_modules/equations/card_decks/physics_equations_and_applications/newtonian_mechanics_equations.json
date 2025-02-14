@@ -1,0 +1,134 @@
+{
+    "id": "newtonian_mechanics_equations",
+    "name": "Newtonian Mechanics Equations",
+    "description": "Exploring fundamental equations that describe motion, forces, and energy in classical mechanics.",
+    "focus": [
+        "Kinematics",
+        "Forces",
+        "Energy & Momentum",
+        "Rotational Dynamics",
+        "Oscillatory Motion"
+    ],
+    "cards": [
+        {
+            "id": "kinematic_equations",
+            "title": "Kinematic Equations & Motion Analysis",
+            "description": "Understanding the equations governing motion in one and two dimensions.",
+            "bulletpoints": [
+                "Define the kinematic equations for constant acceleration: \\[ v = v_0 + at \\], \\[ x = x_0 + v_0 t + \\frac{1}{2} a t^2 \\], \\[ v^2 = v_0^2 + 2a x \\].",
+                "Analyze projectile motion using horizontal and vertical components: \\[ x = v_0 \\cos(\\theta) t \\], \\[ y = v_0 \\sin(\\theta) t - \\frac{1}{2} g t^2 \\].",
+                "Interpret motion graphs for displacement, velocity, and acceleration."
+            ],
+            "duration": 8,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "newtons_laws",
+            "title": "Newton’s Laws of Motion",
+            "description": "Exploring the fundamental principles of force and motion.",
+            "bulletpoints": [
+                "State Newton’s three laws: \\( \\sum \\mathbf{F} = m \\mathbf{a} \\), the principle of inertia, and action-reaction pairs.",
+                "Apply force equations: \\[ \\mathbf{F} = m \\mathbf{a} \\] to analyze dynamics in different scenarios.",
+                "Examine friction, tension, normal force, and net force problems in real-world applications."
+            ],
+            "duration": 10,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "work_energy_theorem",
+            "title": "Work, Energy, & The Work-Energy Theorem",
+            "description": "Understanding the relationship between work, kinetic energy, and potential energy.",
+            "bulletpoints": [
+                "Use the **work-energy theorem**: \\[ W = \\Delta KE = \\frac{1}{2} m v^2 - \\frac{1}{2} m v_0^2 \\].",
+                "Define gravitational potential energy: \\[ U = mgh \\] and elastic potential energy: \\[ U = \\frac{1}{2} k x^2 \\].",
+                "Apply conservation of energy: \\[ KE_i + PE_i = KE_f + PE_f \\]."
+            ],
+            "duration": 12,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "momentum_conservation",
+            "title": "Momentum, Impulse, & Conservation Laws",
+            "description": "Studying momentum principles and their applications in collisions.",
+            "bulletpoints": [
+                "Define momentum: \\[ \\mathbf{p} = m \\mathbf{v} \\].",
+                "Apply the **impulse-momentum theorem**: \\[ \\Delta \\mathbf{p} = \\mathbf{F} \\Delta t \\].",
+                "Use the conservation of momentum for collisions: \\[ m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2' \\]."
+            ],
+            "duration": 10,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "rotational_kinematics",
+            "title": "Rotational Kinematics & Torque",
+            "description": "Understanding angular motion and rotational forces.",
+            "bulletpoints": [
+                "Define angular displacement, velocity, and acceleration: \\[ \\theta = \\theta_0 + \\omega_0 t + \\frac{1}{2} \\alpha t^2 \\].",
+                "Relate linear and angular motion: \\[ v = r \\omega \\], \\[ a = r \\alpha \\].",
+                "Define torque: \\[ \\tau = r F \\sin(\\theta) \\] and rotational equilibrium."
+            ],
+            "duration": 12,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "angular_momentum",
+            "title": "Angular Momentum & Rotational Energy",
+            "description": "Studying the conservation of angular momentum and rotational kinetic energy.",
+            "bulletpoints": [
+                "Define angular momentum: \\[ L = I \\omega \\] and its conservation: \\[ \\sum \\tau = \\frac{dL}{dt} \\].",
+                "Calculate rotational kinetic energy: \\[ KE_{rot} = \\frac{1}{2} I \\omega^2 \\].",
+                "Apply conservation of angular momentum in systems with no external torque."
+            ],
+            "duration": 14,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "harmonic_motion",
+            "title": "Simple Harmonic Motion & Oscillations",
+            "description": "Understanding periodic motion in mass-spring and pendulum systems.",
+            "bulletpoints": [
+                "Define the equation of motion for a mass-spring system: \\[ x(t) = A \\cos(\\omega t + \\phi) \\].",
+                "Use Hooke’s law: \\[ F = -kx \\] and angular frequency: \\[ \\omega = \\sqrt{\\frac{k}{m}} \\].",
+                "Analyze the motion of a simple pendulum: \\[ \\omega = \\sqrt{\\frac{g}{L}} \\]."
+            ],
+            "duration": 12,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "gravitational_motion",
+            "title": "Newton’s Law of Universal Gravitation",
+            "description": "Studying the effects of gravity in celestial and planetary motion.",
+            "bulletpoints": [
+                "Define the gravitational force equation: \\[ F = G \\frac{m_1 m_2}{r^2} \\].",
+                "Apply Kepler’s laws of planetary motion to orbital mechanics.",
+                "Analyze gravitational potential energy in planetary systems: \\[ U = -G \\frac{m_1 m_2}{r} \\]."
+            ],
+            "duration": 14,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "damped_and_forced_motion",
+            "title": "Damped & Driven Harmonic Motion",
+            "description": "Exploring oscillatory motion under external forces and damping effects.",
+            "bulletpoints": [
+                "Define damped motion equation: \\[ m \\ddot{x} + b \\dot{x} + kx = 0 \\].",
+                "Study resonance effects in driven harmonic oscillators: \\[ x(t) = A_0 e^{-\\beta t} \\cos(\\omega t) \\].",
+                "Apply these principles to **mechanical, electrical, and biological systems**."
+            ],
+            "duration": 16,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "center_of_mass",
+            "title": "Center of Mass & Equilibrium",
+            "description": "Understanding the motion of extended objects and static equilibrium.",
+            "bulletpoints": [
+                "Define the center of mass: \\[ \\mathbf{R} = \\frac{\\sum m_i \\mathbf{r}_i}{\\sum m_i} \\].",
+                "Analyze equilibrium conditions: \\[ \\sum F = 0, \\quad \\sum \\tau = 0 \\].",
+                "Apply these concepts to **balancing problems and stability analysis**."
+            ],
+            "duration": 12,
+            "difficulty": "Advanced"
+        }
+    ]
+}

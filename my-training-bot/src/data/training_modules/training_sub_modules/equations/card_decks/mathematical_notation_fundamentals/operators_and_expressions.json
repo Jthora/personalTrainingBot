@@ -1,0 +1,131 @@
+{
+    "id": "operators_and_expressions",
+    "name": "Operators & Expressions",
+    "description": "Understanding mathematical operators and how they are used in expressions.",
+    "focus": [
+        "Order of Operations",
+        "Expression Simplification"
+    ],
+    "cards": [
+        {
+            "id": "order_of_operations",
+            "title": "Order of Operations & PEMDAS",
+            "description": "Learning the correct sequence of operations in mathematical expressions.",
+            "bulletpoints": [
+                "Apply the order of operations: \\( P \rightarrow E \rightarrow MD \rightarrow AS \\) (Parentheses, Exponents, Multiplication/Division, Addition/Subtraction)",
+                "Evaluate expressions step-by-step following the priority rules: \\[ (3 + 5) \times 2 = 8 \times 2 = 16 \\]",
+                "Understand the role of parentheses in overriding default precedence: \\[ 3 + 5 \times 2 \neq (3 + 5) \times 2 \\]"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "exponents_and_roots",
+            "title": "Exponents & Roots",
+            "description": "Understanding the rules governing exponents and radicals.",
+            "bulletpoints": [
+                "Learn exponent laws: \\( a^m \times a^n = a^{m+n} \\), \\( \frac{a^m}{a^n} = a^{m-n} \\), \\( (a^m)^n = a^{m \times n} \\)",
+                "Convert between exponent and radical notation: \\[ \\sqrt[3]{8} = 8^{\frac{1}{3}} = 2 \\]",
+                "Simplify expressions with exponents and roots: \\[ (2^3)^2 = 2^6 = 64 \\]"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "algebraic_expressions",
+            "title": "Algebraic Expressions & Simplification",
+            "description": "Breaking down and simplifying algebraic expressions.",
+            "bulletpoints": [
+                "Expand expressions using the distributive property: \\[ a(b + c) = ab + ac \\]",
+                "Factorize expressions by finding common factors: \\[ x^2 - 5x = x(x - 5) \\]",
+                "Combine like terms to simplify: \\[ 3x + 5x - 2x = 6x \\]"
+            ],
+            "duration": 7,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "absolute_value",
+            "title": "Absolute Value & Number Line",
+            "description": "Understanding absolute value and its role in expressions.",
+            "bulletpoints": [
+                "Interpret absolute value as the distance from zero: \\[ |x| = \begin{cases} x, & x \\geq 0 \\ -x, & x < 0 \\end{cases} \\]",
+                "Solve absolute value equations: \\[ |x - 3| = 7 \\Rightarrow x - 3 = 7 \text{ or } x - 3 = -7 \\]",
+                "Graph absolute value functions: \\[ y = |x| \\] forms a V-shape on the coordinate plane"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "logarithms",
+            "title": "Logarithms & Exponential Relationships",
+            "description": "Understanding how logarithms relate to exponents.",
+            "bulletpoints": [
+                "Define logarithms as the inverse of exponentiation: \\[ \\log_b(x) = y \\Leftrightarrow b^y = x \\]",
+                "Use logarithmic identities: \\[ \\log_b(xy) = \\log_b x + \\log_b y \\]",
+                "Convert between logarithmic and exponential form: \\[ 10^2 = 100 \\Leftrightarrow \\log_{10}(100) = 2 \\]"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "modulus_operator",
+            "title": "Modulus Operator & Remainders",
+            "description": "Using modulus to determine remainders in division.",
+            "bulletpoints": [
+                "Define modulus operation: \\[ a \\mod b = r \text{ where } a = qb + r \text{ and } 0 \\leq r < b \\]",
+                "Example: \\[ 17 \\mod 5 = 2 \\] because \\( 17 = 5 \times 3 + 2 \\)",
+                "Use modular arithmetic in number systems and cryptography"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "inequalities",
+            "title": "Solving & Graphing Inequalities",
+            "description": "Working with inequalities and their graphical representations.",
+            "bulletpoints": [
+                "Solve linear inequalities and express them in interval notation: \\[ x + 2 > 5 \\Rightarrow x > 3 \\Rightarrow (3, \\infty) \\]",
+                "Flip the inequality sign when multiplying or dividing by a negative number: \\[ -3x > 9 \\Rightarrow x < -3 \\]",
+                "Graph compound inequalities on a number line"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "complex_numbers",
+            "title": "Complex Numbers & Imaginary Unit",
+            "description": "Working with imaginary numbers and complex expressions.",
+            "bulletpoints": [
+                "Define the imaginary unit: \\[ i^2 = -1 \\]",
+                "Perform operations with complex numbers: \\[ (3 + 2i) + (1 - 4i) = 4 - 2i \\]",
+                "Represent complex numbers on the complex plane"
+            ],
+            "duration": 8,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "summation_operator",
+            "title": "Summation Notation & Series",
+            "description": "Using sigma notation to represent sums.",
+            "bulletpoints": [
+                "Use sigma notation to represent sums: \\[ \\sum_{k=1}^{n} k = \frac{n(n+1)}{2} \\]",
+                "Compute arithmetic series: \\[ S_n = \frac{n}{2} (a + l) \\]",
+                "Evaluate geometric series using the formula: \\[ S_n = \frac{a(1 - r^n)}{1 - r} \\]"
+            ],
+            "duration": 8,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "matrix_operations",
+            "title": "Matrix Operations & Determinants",
+            "description": "Understanding fundamental matrix operations.",
+            "bulletpoints": [
+                "Perform matrix multiplication: \\[ A \times B = C \text{ where } C_{ij} = \\sum_{k} A_{ik} B_{kj} \\]",
+                "Compute determinants for 2x2 matrices: \\[ \\det(A) = ad - bc \text{ for } A = \begin{bmatrix} a & b \\ c & d \\end{bmatrix} \\]",
+                "Apply inverse matrices to solve systems of equations"
+            ],
+            "duration": 9,
+            "difficulty": "Advanced"
+        }
+    ]
+}

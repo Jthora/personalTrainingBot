@@ -1,0 +1,36 @@
+{
+    "id": "water_supply_purification_methods",
+    "name": "Water Supply Purification Methods",
+    "description": "Ensuring safe and clean water by detecting contaminants and using effective purification techniques.",
+    "focus": [
+        "Water Quality Testing",
+        "Filtration & Purification",
+        "Waterborne Disease Prevention"
+    ],
+    "cards": [
+        {
+            "id": "water_1",
+            "title": "Testing for Chemical Contaminants in Water",
+            "description": "Methods to detect heavy metals, pesticides, and industrial pollutants in water.",
+            "bulletpoints": "pH testing, heavy metal detection, pesticide residue analysis",
+            "duration": "12",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "water_2",
+            "title": "Emergency Water Purification Techniques",
+            "description": "Practical methods to purify water in survival situations or after suspected contamination.",
+            "bulletpoints": "Boiling, chemical treatment, solar disinfection, filtration",
+            "duration": "10",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "water_3",
+            "title": "Waterborne Disease Prevention & Response",
+            "description": "Protecting against infections caused by contaminated water sources.",
+            "bulletpoints": "Cholera, Giardia, Cryptosporidium prevention strategies",
+            "duration": "12",
+            "difficulty": "Expert"
+        }
+    ]
+}

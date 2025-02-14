@@ -1,0 +1,36 @@
+{
+    "id": "combatting_psyops_in_healthcare",
+    "name": "Combatting PsyOps in Healthcare",
+    "description": "Counteracting psychological warfare used to manipulate medical decisions, suppress real cures, and enforce harmful treatments.",
+    "focus": [
+        "Psychological Manipulation in Medicine",
+        "Counteracting Coercive Medical Tactics",
+        "Protecting Against Medical PsyOps"
+    ],
+    "cards": [
+        {
+            "id": "med_psyops_1",
+            "title": "Exposing the Illusion of Scientific Consensus",
+            "description": "Identifying how the perception of scientific agreement is artificially engineered.",
+            "bulletpoints": "Controlled expert panels, selective peer review, silencing of dissenting voices",
+            "duration": "14",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "med_psyops_2",
+            "title": "Coercion Tactics in Public Health Policies",
+            "description": "Understanding how fear and social pressure are used to enforce medical compliance.",
+            "bulletpoints": "Mandates vs. informed consent, social ostracization, crisis exploitation",
+            "duration": "12",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "med_psyops_3",
+            "title": "Breaking the Cycle of Institutional Trust Abuse",
+            "description": "Revealing how global institutions are weaponized to maintain medical control structures.",
+            "bulletpoints": "NGOs & foundations as soft power tools, regulatory capture, historical case studies",
+            "duration": "14",
+            "difficulty": "Expert"
+        }
+    ]
+}

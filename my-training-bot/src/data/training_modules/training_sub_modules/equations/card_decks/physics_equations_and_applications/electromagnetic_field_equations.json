@@ -1,0 +1,128 @@
+{
+    "id": "electromagnetic_field_equations",
+    "name": "Electromagnetic Field Equations",
+    "description": "Exploring the mathematical relationships governing electric and magnetic fields.",
+    "focus": ["Electrostatics", "Magnetism", "Maxwell’s Equations"],
+    "cards": [
+        {
+            "id": "coulombs_law",
+            "title": "Coulomb’s Law & Electric Force",
+            "description": "Understanding how charged particles interact through electrostatic forces.",
+            "bulletpoints": [
+                "Use Coulomb’s Law to calculate the force between two point charges: \\[ F = k_e \\frac{|q_1 q_2|}{r^2} \\] where \\( k_e = 8.99 \\times 10^9 \\) N·m²/C².",
+                "Understand how electric field strength \\( E \\) is defined by: \\[ E = \\frac{F}{q} = \\frac{k_e Q}{r^2} \\].",
+                "Analyze electric potential energy: \\[ U = k_e \\frac{q_1 q_2}{r} \\]."
+            ],
+            "duration": 8,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "lorentz_force",
+            "title": "Lorentz Force & Motion in Magnetic Fields",
+            "description": "Exploring the relationship between electric charge, velocity, and magnetic forces.",
+            "bulletpoints": [
+                "Apply the Lorentz force equation: \\[ \\mathbf{F} = q(\\mathbf{E} + \\mathbf{v} \\times \\mathbf{B}) \\].",
+                "Use the right-hand rule to determine the force direction in magnetic fields.",
+                "Explore applications in electric motors and generators where \\( \\mathbf{F} = I \\mathbf{L} \\times \\mathbf{B} \\)."
+            ],
+            "duration": 10,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "gauss_law",
+            "title": "Gauss’s Law for Electric Fields",
+            "description": "Understanding the relationship between electric charge and electric flux.",
+            "bulletpoints": [
+                "Use Gauss’s Law to calculate the electric flux through a closed surface: \\[ \\oint \\mathbf{E} \\cdot d\\mathbf{A} = \\frac{Q_{enc}}{\\epsilon_0} \\].",
+                "Apply symmetry arguments to find electric fields in charge distributions.",
+                "Analyze applications in capacitors and electric shielding."
+            ],
+            "duration": 10,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "faraday_law",
+            "title": "Faraday’s Law of Electromagnetic Induction",
+            "description": "Exploring how changing magnetic fields induce electric currents.",
+            "bulletpoints": [
+                "Express Faraday’s Law mathematically: \\[ \\mathcal{E} = - \\frac{d \\Phi_B}{dt} \\], where \\( \\Phi_B = \\oint \\mathbf{B} \\cdot d\\mathbf{A} \\).",
+                "Understand Lenz’s Law, which states that the induced current opposes the change in flux.",
+                "Analyze applications in transformers and electromagnetic wave generation."
+            ],
+            "duration": 12,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "ampere_maxwell_law",
+            "title": "Ampère’s Law & Maxwell’s Correction",
+            "description": "Understanding how electric currents and changing electric fields create magnetic fields.",
+            "bulletpoints": [
+                "Use Ampère’s Law: \\[ \\oint \\mathbf{B} \\cdot d\\mathbf{s} = \\mu_0 I_{enc} \\].",
+                "Extend it to include Maxwell’s displacement current term: \\[ \\oint \\mathbf{B} \\cdot d\\mathbf{s} = \\mu_0 \\left( I_{enc} + \\epsilon_0 \\frac{d\\Phi_E}{dt} \\right) \\].",
+                "Analyze how this equation unifies electricity and magnetism into a single framework."
+            ],
+            "duration": 12,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "maxwells_equations",
+            "title": "Maxwell’s Equations & Electromagnetic Waves",
+            "description": "Understanding the set of equations that describe electric and magnetic fields.",
+            "bulletpoints": [
+                "Study the four Maxwell equations: \\[ \\nabla \\cdot \\mathbf{E} = \\frac{\\rho}{\\epsilon_0} \\] (Gauss’s Law), \\[ \\nabla \\cdot \\mathbf{B} = 0 \\] (No Magnetic Monopoles), \\[ \\nabla \\times \\mathbf{E} = - \\frac{\\partial \\mathbf{B}}{\\partial t} \\] (Faraday’s Law), \\[ \\nabla \\times \\mathbf{B} = \\mu_0 \\mathbf{J} + \\mu_0 \\epsilon_0 \\frac{\\partial \\mathbf{E}}{\\partial t} \\] (Ampère-Maxwell Law).",
+                "Analyze how Maxwell’s equations predict the existence of electromagnetic waves.",
+                "Derive the wave equation \\( \\nabla^2 \\mathbf{E} - \\mu_0 \\epsilon_0 \\frac{\\partial^2 \\mathbf{E}}{\\partial t^2} = 0 \\)."
+            ],
+            "duration": 14,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "poynting_vector",
+            "title": "Poynting Vector & Energy Flow",
+            "description": "Exploring how energy propagates in electromagnetic fields.",
+            "bulletpoints": [
+                "Define the Poynting vector as \\[ \\mathbf{S} = \\mathbf{E} \\times \\mathbf{H} \\].",
+                "Understand how energy flux is directed perpendicular to \\( \\mathbf{E} \\) and \\( \\mathbf{B} \\).",
+                "Analyze applications in waveguides, antennas, and radiative energy transfer."
+            ],
+            "duration": 12,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "wave_equation",
+            "title": "Electromagnetic Wave Propagation",
+            "description": "Deriving the wave equation from Maxwell’s equations.",
+            "bulletpoints": [
+                "Express the wave equation in free space: \\[ \\nabla^2 \\mathbf{E} = \\mu_0 \\epsilon_0 \\frac{\\partial^2 \\mathbf{E}}{\\partial t^2} \\].",
+                "Understand how solutions take the form \\[ \\mathbf{E}(x,t) = E_0 e^{i(kx - \\omega t)} \\].",
+                "Analyze polarization, reflection, and transmission of electromagnetic waves."
+            ],
+            "duration": 14,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "plasma_equations",
+            "title": "Plasma Electrodynamics & Magnetohydrodynamics",
+            "description": "Understanding how charged particle fluids interact with electromagnetic fields.",
+            "bulletpoints": [
+                "Use the plasma continuity equation: \\[ \\frac{\\partial n}{\\partial t} + \\nabla \\cdot (n \\mathbf{v}) = 0 \\].",
+                "Analyze the motion of charged particles in magnetized plasmas via the Lorentz force.",
+                "Explore applications in controlled nuclear fusion and space plasma physics."
+            ],
+            "duration": 16,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "electromagnetic_potential",
+            "title": "Electromagnetic Potentials & Gauge Theory",
+            "description": "Exploring the role of potentials in electrodynamics and quantum field theory.",
+            "bulletpoints": [
+                "Define the vector potential \\( \\mathbf{A} \\) and scalar potential \\( \\phi \\) such that \\[ \\mathbf{B} = \\nabla \\times \\mathbf{A}, \\quad \\mathbf{E} = - \\nabla \\phi - \\frac{\\partial \\mathbf{A}}{\\partial t} \\].",
+                "Understand gauge transformations and their role in simplifying equations.",
+                "Explore applications in quantum electrodynamics (QED) and superconductivity."
+            ],
+            "duration": 16,
+            "difficulty": "Expert"
+        }
+    ]
+}

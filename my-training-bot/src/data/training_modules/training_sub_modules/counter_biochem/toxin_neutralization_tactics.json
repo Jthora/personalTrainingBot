@@ -1,0 +1,17 @@
+{
+    "id": "toxin_neutralization_tactics",
+    "name": "Toxin Neutralization Tactics",
+    "description": "Training in the identification, counteraction, and detoxification of poisons, venom, synthetic biochem threats, and mutagenic agents.",
+    "difficulty": "Advanced",
+    "estimated_time": "12-36 months",
+    "focus": [
+        "Poison & Venom Antidotes",
+        "Chemical Detoxification",
+        "Mutagenic Agent Reversal"
+    ],
+    "cardDecks": [
+        "toxin_detection_and_testing",
+        "antidote_and_detox_methods",
+        "biochem_emergency_treatment"
+    ]
+}

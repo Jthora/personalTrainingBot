@@ -4,7 +4,10 @@
     "description": "Techniques for identifying and mitigating cyber threats in real-time environments.",
     "focus": [
         "Cyber Threat Analysis",
-        "Network Defense"
+        "Network Defense",
+        "Malware Analysis",
+        "Threat Intelligence",
+        "Incident Response"
     ],
     "cards": [
         {
@@ -27,6 +30,162 @@
                 "Implement endpoint detection and response (EDR) tools",
                 "Use firewall rules and IDS/IPS for active threat mitigation",
                 "Monitor dark web forums for pre-attack planning intelligence"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "malware_analysis",
+            "title": "Static and Dynamic Malware Analysis",
+            "description": "Analyzing malware behavior to understand its impact and origin.",
+            "bulletpoints": [
+                "Use tools like IDA Pro and Ghidra to reverse engineer binaries",
+                "Run malware in a sandbox (e.g., Cuckoo Sandbox) to analyze behavior",
+                "Extract IoCs from infected systems for threat attribution"
+            ],
+            "duration": 7,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "phishing_analysis",
+            "title": "Phishing Email Analysis & Detection",
+            "description": "Identifying phishing emails and analyzing attack techniques.",
+            "bulletpoints": [
+                "Extract header information and analyze email metadata",
+                "Use VirusTotal and Hybrid Analysis to check for malicious attachments",
+                "Reverse engineer phishing sites to uncover attacker infrastructure"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "osint_threat_tracking",
+            "title": "OSINT for Cyber Threat Intelligence",
+            "description": "Leveraging open-source intelligence (OSINT) to track cyber threats.",
+            "bulletpoints": [
+                "Use WHOIS and PassiveDNS to track attacker infrastructure",
+                "Monitor dark web marketplaces for leaked credentials and exploits",
+                "Use Maltego and SpiderFoot to map threat actor connections"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "siem_log_analysis",
+            "title": "Security Information and Event Management (SIEM) Log Analysis",
+            "description": "Using SIEM tools to detect and investigate cyber threats.",
+            "bulletpoints": [
+                "Analyze logs in Splunk, ELK, or Graylog for suspicious activity",
+                "Correlate events across multiple systems to identify breaches",
+                "Set up automated alerts for privilege escalation and data exfiltration"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "dns_tunneling_detection",
+            "title": "Detecting DNS Tunneling Attacks",
+            "description": "Identifying and mitigating covert data exfiltration through DNS queries.",
+            "bulletpoints": [
+                "Monitor for unusually long DNS queries and subdomain requests",
+                "Use machine learning to detect abnormal DNS traffic patterns",
+                "Block unauthorized DNS resolvers and enforce strict DNS filtering"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ransomware_analysis",
+            "title": "Ransomware Detection and Response",
+            "description": "Identifying and mitigating ransomware attacks before encryption spreads.",
+            "bulletpoints": [
+                "Monitor file system changes for rapid encryption activity",
+                "Use YARA rules to detect ransomware signatures",
+                "Implement network segmentation to isolate infected systems"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "zero_day_tracking",
+            "title": "Zero-Day Exploit Tracking",
+            "description": "Monitoring and mitigating threats from undisclosed vulnerabilities.",
+            "bulletpoints": [
+                "Use CVE tracking tools like Vulners and ExploitDB",
+                "Monitor threat intelligence feeds for zero-day exploit activity",
+                "Apply virtual patching to mitigate risks before vendor updates"
+            ],
+            "duration": 8,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "ai_based_threats",
+            "title": "AI-Driven Cyber Threats & Detection",
+            "description": "Understanding AI-generated attacks and how to defend against them.",
+            "bulletpoints": [
+                "Monitor for adversarial AI and automated phishing attacks",
+                "Analyze AI-generated malware and polymorphic threats",
+                "Deploy AI-powered defenses for real-time attack mitigation"
+            ],
+            "duration": 8,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "dark_web_monitoring",
+            "title": "Dark Web Monitoring for Threat Intelligence",
+            "description": "Tracking cybercriminal activities on the dark web.",
+            "bulletpoints": [
+                "Use Tor search engines to identify leaked credentials and exploits",
+                "Monitor dark web forums for attack planning discussions",
+                "Cross-reference leaked data with known breach records"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "command_control_detection",
+            "title": "Detecting Command & Control (C2) Communications",
+            "description": "Identifying and disrupting malware command-and-control activity.",
+            "bulletpoints": [
+                "Monitor network traffic for beaconing behavior",
+                "Analyze HTTP, DNS, and HTTPS-based C2 channels",
+                "Use behavioral analytics to detect stealthy persistent C2 connections"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cloud_security_monitoring",
+            "title": "Cloud Security Threat Monitoring",
+            "description": "Detecting security risks in cloud environments.",
+            "bulletpoints": [
+                "Monitor AWS CloudTrail, Azure Security Center, and Google Cloud Logging",
+                "Identify misconfigured storage buckets and API key leaks",
+                "Use cloud SIEM solutions to detect unauthorized access"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "insider_threat_detection",
+            "title": "Insider Threat Detection and Mitigation",
+            "description": "Identifying and preventing threats from within an organization.",
+            "bulletpoints": [
+                "Monitor user behavior analytics (UBA) for privilege misuse",
+                "Detect unusual data transfers and unauthorized access attempts",
+                "Implement role-based access controls (RBAC) and strict logging policies"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "threat_actor_profiling",
+            "title": "Threat Actor Profiling and Attribution",
+            "description": "Tracking cybercriminal groups and nation-state actors.",
+            "bulletpoints": [
+                "Analyze Tactics, Techniques, and Procedures (TTPs) from APT reports",
+                "Use MITRE ATT&CK framework for threat actor profiling",
+                "Map threat group activity to known malware campaigns"
             ],
             "duration": 7,
             "difficulty": "Advanced"

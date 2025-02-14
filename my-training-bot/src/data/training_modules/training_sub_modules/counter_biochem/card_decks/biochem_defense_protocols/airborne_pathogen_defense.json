@@ -1,0 +1,36 @@
+{
+    "id": "airborne_pathogen_defense",
+    "name": "Airborne Pathogen Defense",
+    "description": "Techniques and strategies to prevent, detect, and neutralize airborne biological threats.",
+    "focus": [
+        "Respiratory Protection",
+        "Filtration and Air Purification",
+        "Biohazard Detection"
+    ],
+    "cards": [
+        {
+            "id": "pathogen_1",
+            "title": "Respiratory Protection Against Airborne Threats",
+            "description": "Understanding and using proper respirators and filtration systems to prevent inhalation exposure.",
+            "bulletpoints": "N95 vs. P100, full-face respirators, SCBA systems",
+            "duration": "8",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "pathogen_2",
+            "title": "Air Filtration and Containment Strategies",
+            "description": "Utilizing air purification and containment methods to prevent pathogen spread.",
+            "bulletpoints": "HEPA filtration, UV light sterilization, airlock procedures",
+            "duration": "10",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "pathogen_3",
+            "title": "Rapid Biohazard Detection & Analysis",
+            "description": "Techniques for identifying airborne biological threats in real time.",
+            "bulletpoints": "Portable air samplers, biotoxin detection strips, environmental monitoring",
+            "duration": "12",
+            "difficulty": "Advanced"
+        }
+    ]
+}

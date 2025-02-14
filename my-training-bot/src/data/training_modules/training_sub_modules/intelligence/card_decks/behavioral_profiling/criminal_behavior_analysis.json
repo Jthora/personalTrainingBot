@@ -4,7 +4,10 @@
     "description": "Techniques for analyzing criminal behavior and psychological motivations.",
     "focus": [
         "Psychological Profiling",
-        "Criminal Mindset"
+        "Criminal Mindset",
+        "Behavioral Analysis",
+        "Deception Detection",
+        "Threat Assessment"
     ],
     "cards": [
         {
@@ -12,9 +15,9 @@
             "title": "Deception Patterns in Criminal Behavior",
             "description": "Identifying lies, inconsistencies, and deceptive behaviors in suspects.",
             "bulletpoints": [
-                "Analyze microexpressions and body language for deception",
-                "Use linguistic cues to detect inconsistencies in statements",
-                "Apply cognitive load techniques to expose lies"
+                "Analyze microexpressions (involuntary facial movements) to detect deception",
+                "Use Statement Analysis to identify linguistic inconsistencies in suspect testimonies",
+                "Apply cognitive load techniques (e.g., unexpected questions) to expose lies"
             ],
             "duration": 6,
             "difficulty": "Advanced"
@@ -24,12 +27,132 @@
             "title": "Traits of Serial Offenders & Recidivists",
             "description": "Examining patterns of repeat offenders and serial criminals.",
             "bulletpoints": [
-                "Profile the psychological motivators of serial offenders",
-                "Differentiate between organized and disorganized criminal behavior",
-                "Use behavioral pattern recognition for threat prediction"
+                "Profile the psychological motivators behind serial offenses (compulsion, control, power)",
+                "Differentiate between organized (methodical, planned) and disorganized (impulsive, erratic) criminal behavior",
+                "Use behavioral pattern recognition to predict escalation in criminal activity"
             ],
             "duration": 7,
             "difficulty": "Advanced"
+        },
+        {
+            "id": "criminal_motives",
+            "title": "Understanding Criminal Motivations",
+            "description": "Examining why criminals commit crimes and their psychological drivers.",
+            "bulletpoints": [
+                "Study the Routine Activity Theory (RAT)—how opportunity and motivation intersect",
+                "Understand intrinsic vs. extrinsic motivators (psychological vs. situational drivers)",
+                "Use the Crime Classification Manual (CCM) to categorize offender typologies"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "psychopathy_vs_sociopathy",
+            "title": "Psychopathy vs. Sociopathy in Criminal Behavior",
+            "description": "Distinguishing psychopathy and sociopathy in criminal offenders.",
+            "bulletpoints": [
+                "Use the Hare Psychopathy Checklist-Revised (PCL-R) to assess psychopathic traits",
+                "Differentiate between primary psychopathy (cold, calculating) and secondary sociopathy (impulsive, reactive)",
+                "Analyze case studies of infamous psychopaths and sociopaths in criminal history"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "victimology",
+            "title": "Victimology & Target Selection",
+            "description": "Analyzing how criminals select their victims and the patterns of victimization.",
+            "bulletpoints": [
+                "Study the Victim-Offender Overlap (VOO)—how some victims and offenders share backgrounds",
+                "Understand target selection strategies (opportunistic vs. premeditated victimization)",
+                "Use crime mapping to identify high-risk areas and serial offender hunting grounds"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "threat_assessment",
+            "title": "Threat Assessment & Risk Evaluation",
+            "description": "Predicting dangerous behavior through structured risk assessment tools.",
+            "bulletpoints": [
+                "Use Structured Professional Judgment (SPJ) models to assess risk (e.g., HCR-20 for violence risk assessment)",
+                "Evaluate Behavioral Threat Assessment (BTA) indicators for workplace and public safety threats",
+                "Analyze pre-attack behaviors in individuals likely to commit violent acts"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "stalking_behaviors",
+            "title": "Understanding Stalking & Fixation Behaviors",
+            "description": "Profiling individuals who engage in stalking and persistent harassment.",
+            "bulletpoints": [
+                "Differentiate between intimacy-seeking, resentful, and predatory stalkers",
+                "Use the Stalking Risk Profile (SRP) tool to evaluate threat levels",
+                "Analyze patterns of obsessive behaviors leading to escalation"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "digital_criminal_behavior",
+            "title": "Digital Criminal Behavior & Cyber Offenders",
+            "description": "Profiling cybercriminals, online fraudsters, and dark web offenders.",
+            "bulletpoints": [
+                "Categorize cybercriminal typologies (e.g., hacktivists, cyberstalkers, financial fraudsters)",
+                "Analyze Dark Web behaviors to track cybercriminal activity",
+                "Use digital footprint tracking to uncover anonymous online offenders"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "organized_crime",
+            "title": "Analyzing Organized Crime Networks",
+            "description": "Understanding how criminal enterprises operate.",
+            "bulletpoints": [
+                "Use Social Network Analysis (SNA) to map criminal syndicates",
+                "Identify hierarchical vs. decentralized gang structures",
+                "Study money laundering methods used by transnational crime syndicates"
+            ],
+            "duration": 8,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "criminal_narcissism",
+            "title": "Narcissism & Power in Criminal Behavior",
+            "description": "Examining the role of narcissistic traits in criminal activity.",
+            "bulletpoints": [
+                "Differentiate between grandiose vs. vulnerable narcissists in crime",
+                "Study power-seeking behaviors in white-collar criminals and cult leaders",
+                "Use forensic psychology to assess manipulation tactics in offenders"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "false_confessions",
+            "title": "Understanding False Confessions",
+            "description": "Analyzing why individuals confess to crimes they didn’t commit.",
+            "bulletpoints": [
+                "Study Reid Interrogation Technique and its role in false confessions",
+                "Recognize coercion tactics used in police interrogations",
+                "Analyze wrongful conviction cases where psychological pressure led to false admissions"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "violent_extremism",
+            "title": "Psychological Pathways to Violent Extremism",
+            "description": "Profiling individuals who become radicalized into violent extremist groups.",
+            "bulletpoints": [
+                "Understand social identity theory and its role in radicalization",
+                "Analyze online propaganda and recruitment methods used by extremist groups",
+                "Use Countering Violent Extremism (CVE) methodologies to identify early warning signs"
+            ],
+            "duration": 8,
+            "difficulty": "Expert"
         }
     ]
 }

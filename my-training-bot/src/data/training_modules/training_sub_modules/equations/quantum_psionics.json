@@ -1,0 +1,17 @@
+{
+    "id": "quantum_psionics",
+    "name": "Quantum Psionics & Nonlocal Influence",
+    "description": "Training in the theoretical and experimental principles of psionics, consciousness-field interactions, and nonlocal information processing.",
+    "difficulty": "Expert",
+    "estimated_time": "36-72 months",
+    "focus": [
+        "Consciousness & Quantum Fields",
+        "Psi Amplification & Energy Focus",
+        "Remote Influence & Information Transfer"
+    ],
+    "cardDecks": [
+        "psi_energy_dynamics",
+        "nonlocal_consciousness_effects",
+        "psionic_resonance_and_entanglement"
+    ]
+}

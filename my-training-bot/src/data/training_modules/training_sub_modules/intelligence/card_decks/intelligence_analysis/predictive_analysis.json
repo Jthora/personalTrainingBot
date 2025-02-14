@@ -14,7 +14,8 @@
             "bulletpoints": [
                 "Use statistical modeling to predict emerging threats",
                 "Apply machine learning algorithms to detect evolving trends",
-                "Analyze geopolitical shifts for intelligence implications"
+                "Analyze geopolitical shifts for intelligence implications",
+                "Correlate historical intelligence data with real-time events"
             ],
             "duration": 6,
             "difficulty": "Advanced"
@@ -26,7 +27,47 @@
             "bulletpoints": [
                 "Use wargaming techniques to simulate adversarial strategies",
                 "Model best-case, worst-case, and most-likely-case scenarios",
-                "Develop contingency plans based on intelligence assessments"
+                "Develop contingency plans based on intelligence assessments",
+                "Assess cascading consequences of geopolitical disruptions"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "behavioral_predictive_analysis",
+            "title": "Behavioral Predictive Analysis",
+            "description": "Using psychology and data analytics to forecast adversarial actions.",
+            "bulletpoints": [
+                "Analyze behavioral patterns to anticipate threat actor decisions",
+                "Use sentiment analysis on public and dark web communications",
+                "Employ cognitive bias assessments to refine intelligence forecasts",
+                "Map predictive threat escalation based on historical behaviors"
+            ],
+            "duration": 8,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "ai_assisted_forecasting",
+            "title": "AI-Assisted Intelligence Forecasting",
+            "description": "Leveraging artificial intelligence to improve predictive capabilities.",
+            "bulletpoints": [
+                "Develop neural networks to model adversarial strategies",
+                "Use deep learning to analyze high-dimensional intelligence data",
+                "Train AI systems to detect weak signals of future events",
+                "Enhance decision-making with AI-generated risk assessments"
+            ],
+            "duration": 9,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "geospatial_predictive_modeling",
+            "title": "Geospatial Predictive Modeling",
+            "description": "Forecasting security threats based on spatial data analysis.",
+            "bulletpoints": [
+                "Identify high-risk zones through geospatial trend mapping",
+                "Use remote sensing to detect early signs of conflict",
+                "Correlate migration patterns with security vulnerabilities",
+                "Analyze terrain and infrastructure for strategic forecasting"
             ],
             "duration": 7,
             "difficulty": "Advanced"

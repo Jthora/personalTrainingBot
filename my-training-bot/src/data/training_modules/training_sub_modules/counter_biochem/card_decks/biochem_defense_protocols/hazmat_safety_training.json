@@ -1,0 +1,36 @@
+{
+    "id": "hazmat_safety_training",
+    "name": "Hazmat Safety Training",
+    "description": "Mastering the use of hazardous materials (HazMat) protective gear, contamination control, and exposure response.",
+    "focus": [
+        "Personal Protective Equipment (PPE) Usage",
+        "Decontamination Procedures",
+        "Emergency Exposure Response"
+    ],
+    "cards": [
+        {
+            "id": "hazmat_1",
+            "title": "Proper Use of PPE in BioChem Environments",
+            "description": "Training in the correct donning, doffing, and maintenance of protective gear in hazardous environments.",
+            "bulletpoints": "Hazmat suit layers, glove sealing, respirator fitting",
+            "duration": "10",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "hazmat_2",
+            "title": "Decontamination Protocols for BioChem Exposure",
+            "description": "Step-by-step procedures to remove and neutralize biohazards from personnel and equipment.",
+            "bulletpoints": "Chemical neutralization, UV sterilization, containment zone decon",
+            "duration": "12",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "hazmat_3",
+            "title": "Emergency Response to BioChem Exposure",
+            "description": "Rapid response strategies for treating exposure to biological and chemical agents.",
+            "bulletpoints": "Neutralization agents, emergency isolation, first aid for chemical burns",
+            "duration": "10",
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "id": "medical_psyops_resistance",
+    "name": "Medical PsyOps Resistance",
+    "description": "Training in countering medical disinformation, identifying false medical authorities, and ensuring correct treatment strategies against TCS/IDC/CBC medical warfare.",
+    "difficulty": "Advanced",
+    "estimated_time": "12-24 months",
+    "focus": [
+        "Medical Misinformation Resistance",
+        "Recognizing Fake Doctors",
+        "Verifying Medical Treatment"
+    ],
+    "cardDecks": [
+        "detecting_medical_disinformation",
+        "combatting_psyops_in_healthcare",
+        "verifying_legitimate_treatments"
+    ]
+}

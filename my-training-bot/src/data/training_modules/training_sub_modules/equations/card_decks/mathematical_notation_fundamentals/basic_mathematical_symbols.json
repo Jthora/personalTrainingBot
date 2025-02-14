@@ -1,0 +1,160 @@
+{
+    "id": "basic_mathematical_symbols",
+    "name": "Basic Mathematical Symbols",
+    "description": "Understanding fundamental mathematical symbols and their meanings.",
+    "focus": ["Symbol Recognition", "Mathematical Language"],
+    "cards": [
+        {
+            "id": "arithmetic_symbols",
+            "title": "Arithmetic Symbols & Their Meaning",
+            "description": "Understanding the foundational symbols used in basic arithmetic operations.",
+            "bulletpoints": [
+                "Addition: \\( + \\)",
+                "Subtraction: \\( - \\)",
+                "Multiplication: \\( \\times, * \\)",
+                "Division: \\( \\div, / \\)",
+                "Parentheses and Brackets: \\( ( ), [ ] \\)",
+                "Equality: \\( = \\)",
+                "Approximate Equality: \\( \\approx \\)",
+                "Inequality: \\( \\neq, \\geq, \\leq \\)"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "algebraic_symbols",
+            "title": "Algebraic Symbols & Variables",
+            "description": "Exploring symbols used to represent unknowns and relationships in equations.",
+            "bulletpoints": [
+                "Variables: \\( x, y, z \\)",
+                "Exponentiation: \\( x^n \\)",
+                "Radicals (Roots): \\( \\sqrt{x}, \\sqrt[n]{x} \\)",
+                "Factorial: \\( n! \\)",
+                "Summation: \\( \\sum_{i=1}^{n} a_i \\)",
+                "Product Notation: \\( \\prod_{i=1}^{n} a_i \\)"
+            ],
+            "duration": 6,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "logical_symbols",
+            "title": "Logical Symbols & Set Notation",
+            "description": "Understanding symbols used in logic, set theory, and formal proofs.",
+            "bulletpoints": [
+                "Logical AND: \\( \\land \\)",
+                "Logical OR: \\( \\lor \\)",
+                "Logical NOT: \\( \\neg \\)",
+                "Set Membership: \\( \\in, \\notin \\)",
+                "Subset and Superset: \\( \\subset, \\supset \\)",
+                "Universal Quantifier: \\( \\forall \\)",
+                "Existential Quantifier: \\( \\exists \\)"
+            ],
+            "duration": 7,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "relational_symbols",
+            "title": "Relational Symbols & Inequalities",
+            "description": "Symbols used to express relationships between numbers and expressions.",
+            "bulletpoints": [
+                "Greater Than: \\( > \\)",
+                "Less Than: \\( < \\)",
+                "Greater Than or Equal To: \\( \\geq \\)",
+                "Less Than or Equal To: \\( \\leq \\)",
+                "Approximately Equal: \\( \\approx \\)",
+                "Proportional To: \\( \\propto \\)",
+                "Identically Equal: \\( \\equiv \\)"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "calculus_symbols",
+            "title": "Calculus Symbols & Differentiation",
+            "description": "Symbols used in calculus to express derivatives and integrals.",
+            "bulletpoints": [
+                "Derivative: \\( \\frac{d}{dx}, f'(x) \\)",
+                "Partial Derivative: \\( \\frac{\\partial}{\\partial x} \\)",
+                "Integral: \\( \\int f(x)dx \\)",
+                "Definite Integral: \\( \\int_{a}^{b} f(x)dx \\)",
+                "Limit: \\( \\lim_{x \\to a} f(x) \\)",
+                "Summation: \\( \\sum_{n=1}^{\\infty} a_n \\)"
+            ],
+            "duration": 8,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "matrix_notation",
+            "title": "Matrix & Vector Notation",
+            "description": "Symbols used in linear algebra for matrices and vectors.",
+            "bulletpoints": [
+                "Matrix Representation: \\( [A] \\) or \\( (A) \\)",
+                "Transpose: \\( A^T \\)",
+                "Inverse: \\( A^{-1} \\)",
+                "Determinant: \\( \\det(A) \\)",
+                "Dot Product: \\( \\mathbf{a} \\cdot \\mathbf{b} \\)",
+                "Cross Product: \\( \\mathbf{a} \\times \\mathbf{b} \\)"
+            ],
+            "duration": 7,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "complex_numbers",
+            "title": "Complex Numbers & Imaginary Units",
+            "description": "Symbols used in complex number representation.",
+            "bulletpoints": [
+                "Imaginary Unit: \\( i = \\sqrt{-1} \\)",
+                "Complex Number: \\( a + bi \\)",
+                "Complex Conjugate: \\( \\overline{z} \\)"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "probability_symbols",
+            "title": "Probability & Statistics Symbols",
+            "description": "Symbols used in probability theory and statistics.",
+            "bulletpoints": [
+                "Probability of an Event: \\( P(A) \\)",
+                "Conditional Probability: \\( P(A | B) \\)",
+                "Expectation: \\( E[X] \\)",
+                "Variance: \\( \\text{Var}(X) \\)",
+                "Standard Deviation: \\( \\sigma \\)",
+                "Factorial: \\( n! \\)",
+                "Binomial Coefficient: \\( \\binom{n}{r} \\)"
+            ],
+            "duration": 7,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "trigonometric_symbols",
+            "title": "Trigonometric & Hyperbolic Functions",
+            "description": "Symbols used in trigonometry and hyperbolic functions.",
+            "bulletpoints": [
+                "Sine: \\( \\sin(x) \\)",
+                "Cosine: \\( \\cos(x) \\)",
+                "Tangent: \\( \\tan(x) \\)",
+                "Inverse Functions: \\( \\sin^{-1}(x), \\cos^{-1}(x), \\tan^{-1}(x) \\)",
+                "Hyperbolic Functions: \\( \\sinh(x), \\cosh(x), \\tanh(x) \\)",
+                "Degrees: \\( ^\\circ \\)",
+                "Pi: \\( \\pi \\)"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "quantum_mechanics_symbols",
+            "title": "Quantum Mechanics Notation",
+            "description": "Symbols used in quantum mechanics and wave equations.",
+            "bulletpoints": [
+                "Wavefunction: \\( \\Psi \\)",
+                "Dirac Notation: \\( \\langle \\psi | \\) and \\( | \\psi \\rangle \\)",
+                "Planck's Constant: \\( \\hbar \\)",
+                "Hamiltonian: \\( \\hat{H} \\)",
+                "Schrödinger's Equation: \\[ i \\hbar \\frac{\\partial}{\\partial t} \\Psi = \\hat{H} \\Psi \\]"
+            ],
+            "duration": 9,
+            "difficulty": "Expert"
+        }
+    ]
+}

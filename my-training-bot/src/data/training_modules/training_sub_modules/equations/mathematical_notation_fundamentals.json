@@ -1,0 +1,17 @@
+{
+    "id": "mathematical_notation_fundamentals",
+    "name": "Mathematical Notation Fundamentals",
+    "description": "Training on understanding mathematical symbols, operators, and their meanings across different fields.",
+    "difficulty": "Beginner",
+    "estimated_time": "6-12 months",
+    "focus": [
+        "Mathematical Symbols",
+        "Operational Conventions",
+        "Equation Structure"
+    ],
+    "cardDecks": [
+        "basic_mathematical_symbols",
+        "operators_and_expressions",
+        "notation_in_different_disciplines"
+    ]
+}

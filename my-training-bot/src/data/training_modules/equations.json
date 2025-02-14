@@ -1,0 +1,20 @@
+{
+    "id": "equations",
+    "name": "Equations",
+    "color": "#8B00FF",
+    "description": "Training modules for developing mathematical fluency, understanding symbolic logic, and interpreting equations across scientific disciplines.",
+    "submodules": [
+        "mathematical_notation_fundamentals",
+        "algebraic_structure_analysis",
+        "symbolic_logic_and_proofs",
+        "calculus_and_rate_of_change",
+        "physics_equations_and_applications",
+        "abstract_mathematical_models",
+        "quantum_psionics",
+        "electrogravitics_and_field_propulsion",
+        "neural_network_mathematics",
+        "temporal_mechanics",
+        "bioelectric_psionic_tech",
+        "hyperdimensional_mathematics"
+    ]
+}

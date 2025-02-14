@@ -1,0 +1,104 @@
+{
+    "id": "tensor_notation_and_applications",
+    "name": "Tensor Notation & Applications",
+    "description": "Mastering tensor calculus, index notation, and their applications in physics and engineering.",
+    "focus": ["Multidimensional Calculus", "Geometric Transformations"],
+    "cards": [
+        {
+            "id": "tensor_basics",
+            "title": "Tensor Basics & Index Notation",
+            "description": "Understanding the fundamental rules of tensor notation and how it generalizes vectors and matrices.",
+            "bulletpoints": [
+                "Define tensors as multi-dimensional arrays that transform under coordinate changes.",
+                "Use Einstein summation convention: \\( a^i b_i = \\sum_{i} a^i b_i \\).",
+                "Explore tensor ranks: scalars (rank-0, \\( A \\)), vectors (rank-1, \\( A^i \\)), matrices (rank-2, \\( A^{ij} \\))."
+            ],
+            "duration": 7,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "tensor_operations",
+            "title": "Tensor Operations & Contractions",
+            "description": "Exploring operations like contraction, outer products, and Kronecker delta simplifications.",
+            "bulletpoints": [
+                "Perform tensor contraction: \\( A^i_i = \\sum_i A^i_i \\).",
+                "Use the Kronecker delta \\( \\delta^i_j \\) as the identity tensor: \\( A^i_j \\delta^j_k = A^i_k \\).",
+                "Understand outer products: \\( C^{ij} = A^i B^j \\) expands a vector space."
+            ],
+            "duration": 8,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "metric_tensors",
+            "title": "Metric Tensors & Spacetime Geometry",
+            "description": "Using tensors to describe curvature, relativity, and differential geometry.",
+            "bulletpoints": [
+                "Define the metric tensor: \\( g_{ij} \\) transforms coordinate distances: \\[ ds^2 = g_{ij} dx^i dx^j \\].",
+                "Study Minkowski spacetime metric for relativity: \\[ g_{\\mu \\nu} = \\begin{bmatrix} -1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 1 & 0 \\\\ 0 & 0 & 0 & 1 \\end{bmatrix} \\].",
+                "Understand Christoffel symbols: \\( \\Gamma^i_{jk} = \\frac{1}{2} g^{im} ( \\partial_j g_{mk} + \\partial_k g_{mj} - \\partial_m g_{jk} ) \\)."
+            ],
+            "duration": 10,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "riemann_tensor",
+            "title": "Riemann Curvature Tensor & Einstein Equations",
+            "description": "Exploring the Riemann curvature tensor and how it appears in general relativity.",
+            "bulletpoints": [
+                "Define the Riemann curvature tensor: \\[ R^i_{jkl} = \\partial_k \\Gamma^i_{jl} - \\partial_l \\Gamma^i_{jk} + \\Gamma^m_{jl} \\Gamma^i_{mk} - \\Gamma^m_{jk} \\Gamma^i_{ml} \\].",
+                "Study the Ricci tensor: \\( R_{ij} = R^m_{imj} \\) as a trace of the Riemann tensor.",
+                "Understand Einstein's field equation: \\[ R_{\\mu \\nu} - \\frac{1}{2} g_{\\mu \\nu} R + \\Lambda g_{\\mu \\nu} = \\frac{8 \\pi G}{c^4} T_{\\mu \\nu} \\]."
+            ],
+            "duration": 12,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "stress_energy",
+            "title": "Stress-Energy Tensors in Physics",
+            "description": "Applying tensors to describe energy, momentum, and stress in physical systems.",
+            "bulletpoints": [
+                "Define the stress-energy tensor: \\[ T^{\\mu \\nu} = \\left( \\begin{matrix} \\rho & S^1 & S^2 & S^3 \\\\ S^1 & T^{11} & T^{12} & T^{13} \\\\ S^2 & T^{21} & T^{22} & T^{23} \\\\ S^3 & T^{31} & T^{32} & T^{33} \\end{matrix} \\right) \\], where \\( \\rho \\) is energy density, \\( S^i \\) is momentum flux, and \\( T^{ij} \\) is stress.",
+                "Use conservation laws: \\( \\nabla_\\mu T^{\\mu \\nu} = 0 \\) ensures energy-momentum conservation.",
+                "Apply stress-energy tensors in fluid dynamics: \\( T^{\\mu \\nu} = (\\rho + p) u^\\mu u^\\nu + p g^{\\mu \\nu} \\)."
+            ],
+            "duration": 9,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "einstein_summation",
+            "title": "Einstein Summation Convention & Applications",
+            "description": "Learning how to simplify tensor expressions with Einstein notation.",
+            "bulletpoints": [
+                "Apply Einstein summation convention: repeated indices imply summation: \\( A^i B_i = \\sum_i A^i B_i \\).",
+                "Understand raising/lowering indices using the metric tensor: \\( A^i = g^{ij} A_j \\).",
+                "Apply in physics: Maxwell's equations in tensor form \\( \\partial^\\mu F_{\\mu \\nu} = j_\\nu \\)."
+            ],
+            "duration": 8,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "covariant_derivative",
+            "title": "Covariant Derivatives & Tensor Transport",
+            "description": "Understanding derivatives in curved space and parallel transport.",
+            "bulletpoints": [
+                "Define the covariant derivative: \\[ \\nabla_k A^i = \\partial_k A^i + \\Gamma^i_{jk} A^j \\].",
+                "Use parallel transport: A vector remains unchanged along a curve if \\( \\nabla_k A^i = 0 \\).",
+                "Apply in general relativity: geodesic equation \\( \\frac{d^2 x^i}{d \\tau^2} + \\Gamma^i_{jk} \\frac{dx^j}{d \\tau} \\frac{dx^k}{d \\tau} = 0 \\)."
+            ],
+            "duration": 10,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "electromagnetism_tensor",
+            "title": "Electromagnetism in Tensor Form",
+            "description": "Using tensor notation to describe electromagnetism and Maxwell's equations.",
+            "bulletpoints": [
+                "Define the electromagnetic field tensor: \\[ F_{\\mu \\nu} = \\begin{bmatrix} 0 & -E_x & -E_y & -E_z \\\\ E_x & 0 & -B_z & B_y \\\\ E_y & B_z & 0 & -B_x \\\\ E_z & -B_y & B_x & 0 \\end{bmatrix} \\].",
+                "Write Maxwell's equations in tensor form: \\( \\partial^\\mu F_{\\mu \\nu} = j_\\nu \\), \\( \\partial_{[\\alpha} F_{\\beta \\gamma]} = 0 \\).",
+                "Understand electromagnetic wave solutions using the d'Alembertian operator: \\( \\Box A^\\mu = 0 \\)."
+            ],
+            "duration": 12,
+            "difficulty": "Expert"
+        }
+    ]
+}

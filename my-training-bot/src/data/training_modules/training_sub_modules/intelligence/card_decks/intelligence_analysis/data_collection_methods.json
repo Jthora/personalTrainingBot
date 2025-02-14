@@ -14,7 +14,9 @@
             "bulletpoints": [
                 "Use advanced search operators for deep web intelligence gathering",
                 "Monitor social media for emerging threat indicators",
-                "Validate sources and detect misinformation or disinformation"
+                "Validate sources and detect misinformation or disinformation",
+                "Utilize metadata analysis on leaked documents for deeper insights",
+                "Leverage public records, domain lookups, and WHOIS searches for entity tracking"
             ],
             "duration": 6,
             "difficulty": "Advanced"
@@ -26,10 +28,124 @@
             "bulletpoints": [
                 "Build and manage informant networks",
                 "Use psychological techniques to elicit information covertly",
-                "Assess the credibility and reliability of human sources"
+                "Assess the credibility and reliability of human sources",
+                "Apply tradecraft techniques to protect identities and maintain secrecy",
+                "Establish rapport and gain access to insider information"
             ],
             "duration": 7,
             "difficulty": "Advanced"
+        },
+        {
+            "id": "sigint_methods",
+            "title": "Signals Intelligence (SIGINT) Collection",
+            "description": "Intercepting and analyzing electronic communications and signals.",
+            "bulletpoints": [
+                "Intercept radio, cellular, and satellite communications",
+                "Analyze network traffic for covert transmissions",
+                "Use frequency scanning tools for detecting unauthorized broadcasts",
+                "Decrypt and analyze encrypted communications",
+                "Employ data packet analysis techniques for cyber threat intelligence"
+            ],
+            "duration": 8,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "imint_methods",
+            "title": "Imagery Intelligence (IMINT) Collection",
+            "description": "Using visual imagery for intelligence analysis.",
+            "bulletpoints": [
+                "Utilize satellite and aerial imagery for reconnaissance",
+                "Analyze geospatial metadata for location intelligence",
+                "Detect changes in terrain and infrastructure for pattern analysis",
+                "Employ AI-assisted image recognition for anomaly detection",
+                "Use thermal and infrared imaging for nighttime and obscured environments"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "masint_methods",
+            "title": "Measurement and Signature Intelligence (MASINT)",
+            "description": "Collecting intelligence through scientific analysis of signatures and emissions.",
+            "bulletpoints": [
+                "Analyze electromagnetic emissions for covert communication detection",
+                "Use chemical and radiological detection for nuclear threat assessment",
+                "Employ acoustic and seismic sensors for underground activity monitoring",
+                "Detect and analyze environmental changes for WMD detection",
+                "Leverage hyperspectral imaging for material composition analysis"
+            ],
+            "duration": 9,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cyberint_methods",
+            "title": "Cyber Intelligence (CYBINT) Collection",
+            "description": "Collecting intelligence through cyber-based sources and networks.",
+            "bulletpoints": [
+                "Monitor dark web forums and marketplaces for threat actors",
+                "Use honeypots to lure and analyze cyber adversaries",
+                "Analyze malware behavior for attribution and defense",
+                "Track cryptocurrency transactions for illicit financial activities",
+                "Leverage botnet monitoring to identify coordinated cyberattacks"
+            ],
+            "duration": 8,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "geoint_methods",
+            "title": "Geospatial Intelligence (GEOINT) Collection",
+            "description": "Gathering intelligence through geospatial analysis and mapping.",
+            "bulletpoints": [
+                "Analyze GPS metadata from images and videos for location tracking",
+                "Use LiDAR and 3D mapping for urban intelligence operations",
+                "Integrate geospatial intelligence with social media monitoring",
+                "Detect military movements through geospatial pattern analysis",
+                "Employ crowdsource mapping techniques for real-time situational awareness"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "finint_methods",
+            "title": "Financial Intelligence (FININT) Collection",
+            "description": "Tracking financial transactions and illicit financial networks.",
+            "bulletpoints": [
+                "Analyze banking transactions for money laundering patterns",
+                "Track offshore accounts and shell companies for illicit activity",
+                "Monitor cryptocurrency transactions for darknet market activity",
+                "Use AI-driven financial forensics for fraud detection",
+                "Identify economic indicators for intelligence on national stability"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "socmint_methods",
+            "title": "Social Media Intelligence (SOCMINT) Collection",
+            "description": "Extracting intelligence from social media platforms.",
+            "bulletpoints": [
+                "Monitor trends and sentiment analysis for real-time intelligence",
+                "Track terrorist recruitment and radicalization patterns",
+                "Analyze network graphs for identifying key influencers",
+                "Use geotagged posts to track movements and events",
+                "Detect coordinated disinformation campaigns"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "medint_methods",
+            "title": "Medical Intelligence (MEDINT) Collection",
+            "description": "Gathering intelligence on medical and biosecurity threats.",
+            "bulletpoints": [
+                "Monitor epidemiological data for biosecurity threats",
+                "Analyze pharmaceutical supply chain disruptions",
+                "Track bioweapon-related research and facilities",
+                "Identify emerging health crises through patient data trends",
+                "Assess national healthcare infrastructure for strategic planning"
+            ],
+            "duration": 8,
+            "difficulty": "Expert"
         }
     ]
 }

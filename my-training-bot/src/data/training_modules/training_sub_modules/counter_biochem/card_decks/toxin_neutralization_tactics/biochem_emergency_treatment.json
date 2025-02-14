@@ -1,0 +1,36 @@
+{
+    "id": "biochem_emergency_treatment",
+    "name": "BioChem Emergency Treatment",
+    "description": "Training in immediate response tactics for exposure to weaponized biological and chemical agents.",
+    "focus": [
+        "Emergency Neutralization",
+        "Field Treatment Protocols",
+        "Survival in BioChemical Attack Scenarios"
+    ],
+    "cards": [
+        {
+            "id": "biochem_treat_1",
+            "title": "Field Treatment for Chemical & Bioweapon Exposure",
+            "description": "Emergency response techniques for rapid decontamination and counteraction of biochem threats.",
+            "bulletpoints": "Skin decontamination, gas mask usage, rapid chelation protocols",
+            "duration": "14",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "biochem_treat_2",
+            "title": "Neutralizing Food & Water Poisoning in Crisis Situations",
+            "description": "Immediate countermeasures for ingesting contaminated food and water in survival scenarios.",
+            "bulletpoints": "Emergency purging, gastrointestinal binding agents, rapid hydration techniques",
+            "duration": "12",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "biochem_treat_3",
+            "title": "Surviving Long-Term Exposure to Environmental Biochem Warfare",
+            "description": "Techniques for mitigating damage from slow-acting bio-accumulative toxins.",
+            "bulletpoints": "Hormonal repair, immune system restoration, cellular regeneration protocols",
+            "duration": "14",
+            "difficulty": "Expert"
+        }
+    ]
+}

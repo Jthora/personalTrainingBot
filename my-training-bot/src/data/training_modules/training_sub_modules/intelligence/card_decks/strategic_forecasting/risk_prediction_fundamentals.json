@@ -1,0 +1,120 @@
+{
+    "id": "risk_prediction_fundamentals",
+    "name": "Risk Prediction Fundamentals",
+    "description": "Key concepts in risk prediction, statistical modeling, and decision science.",
+    "focus": [
+        "Statistical Methods",
+        "Decision Theory",
+        "Computational Modeling"
+    ],
+    "cards": [
+        {
+            "id": "monte_carlo_simulation",
+            "title": "Monte Carlo Simulation",
+            "description": "A statistical technique that uses random sampling to model the probability of different outcomes in an uncertain process.",
+            "bulletpoints": [
+                "Use repeated random sampling to estimate probabilities in complex systems",
+                "Model risk in finance, engineering, cybersecurity, and logistics",
+                "Simulate a wide range of scenarios to test decision-making under uncertainty"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "bayesian_networks",
+            "title": "Bayesian Networks",
+            "description": "A probabilistic graphical model that represents relationships between variables for decision-making under uncertainty.",
+            "bulletpoints": [
+                "Use conditional probabilities to model dependencies between risk factors",
+                "Improve decision-making in security, finance, and artificial intelligence",
+                "Analyze risk scenarios where complete data is unavailable"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "anomaly_detection",
+            "title": "Anomaly Detection",
+            "description": "A method for identifying unusual patterns or outliers that do not conform to expected behavior.",
+            "bulletpoints": [
+                "Detect fraud, cyberattacks, and insider threats through pattern analysis",
+                "Use machine learning to identify deviations from normal behavior",
+                "Analyze financial transactions and network traffic for risk management"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "game_theory",
+            "title": "Game Theory",
+            "description": "A mathematical framework for modeling competitive and strategic interactions where each participant's outcome depends on others' choices.",
+            "bulletpoints": [
+                "Model conflict and cooperation in competitive environments",
+                "Apply strategic decision-making to cybersecurity and military tactics",
+                "Understand how rational actors make choices under risk and uncertainty"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "nash_equilibrium",
+            "title": "Nash Equilibrium",
+            "description": "A game theory concept where no player has an incentive to change their strategy given the choices of others.",
+            "bulletpoints": [
+                "Analyze stable decision points in competitive environments",
+                "Use in economics, security planning, and negotiation strategies",
+                "Predict outcomes in adversarial situations, such as cyberwarfare or financial markets"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "agent_based_modeling",
+            "title": "Agent-Based Modeling",
+            "description": "A computational modeling approach that simulates interactions between autonomous agents to analyze complex systems.",
+            "bulletpoints": [
+                "Simulate crowd behavior, economic trends, and supply chain disruptions",
+                "Use artificial intelligence to model real-world decision-making",
+                "Analyze emergent behaviors in large-scale risk scenarios"
+            ],
+            "duration": 8,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "black_swan_events",
+            "title": "Black Swan Events",
+            "description": "Rare, high-impact events that are difficult to predict but often rationalized in hindsight.",
+            "bulletpoints": [
+                "Recognize unpredictable risks in geopolitics, markets, and technology",
+                "Develop resilience strategies to minimize catastrophic impacts",
+                "Analyze historical Black Swan events for better preparedness"
+            ],
+            "duration": 7,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "fuzzy_logic",
+            "title": "Fuzzy Logic",
+            "description": "A computational method that deals with uncertainty by allowing values between absolute true and false states.",
+            "bulletpoints": [
+                "Handle ambiguity in decision-making processes",
+                "Apply in artificial intelligence, control systems, and risk assessments",
+                "Improve decision models when exact probabilities are unknown"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "big_data_analytics",
+            "title": "Big Data Analytics",
+            "description": "The process of analyzing vast datasets to uncover hidden patterns, correlations, and trends for decision-making.",
+            "bulletpoints": [
+                "Use AI-driven analytics for predictive modeling in risk management",
+                "Process structured and unstructured data to detect security threats",
+                "Improve business intelligence and real-time risk assessment"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        }
+    ]
+}

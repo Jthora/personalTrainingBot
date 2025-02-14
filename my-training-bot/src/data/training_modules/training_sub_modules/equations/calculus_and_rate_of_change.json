@@ -1,0 +1,17 @@
+{
+    "id": "calculus_and_rate_of_change",
+    "name": "Calculus & Rate of Change",
+    "description": "Training in differentiation, integration, and their applications in understanding motion, growth, and optimization.",
+    "difficulty": "Advanced",
+    "estimated_time": "18-36 months",
+    "focus": [
+        "Limits and Continuity",
+        "Differentiation",
+        "Integration"
+    ],
+    "cardDecks": [
+        "fundamentals_of_derivatives",
+        "integration_methods_and_applications",
+        "differential_equations_and_series"
+    ]
+}

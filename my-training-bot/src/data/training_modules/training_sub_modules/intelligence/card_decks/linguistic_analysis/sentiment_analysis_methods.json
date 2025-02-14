@@ -12,9 +12,9 @@
             "title": "Emotion Detection in Text and Speech",
             "description": "Using linguistic cues to infer emotions and psychological states.",
             "bulletpoints": [
-                "Identify affective markers in written and spoken language",
-                "Distinguish between genuine and exaggerated emotional expressions",
-                "Utilize NLP models for automated emotion classification"
+                "Identify affective markers such as tone, intensity, and sentiment shifts in written and spoken language",
+                "Distinguish between genuine, exaggerated, and suppressed emotional expressions through psycholinguistic analysis",
+                "Utilize Natural Language Processing (NLP) models to classify emotions into categories such as anger, joy, sadness, and fear"
             ],
             "duration": 6,
             "difficulty": "Intermediate"
@@ -24,12 +24,60 @@
             "title": "Social Media Sentiment Analysis",
             "description": "Tracking public opinion and political movements through sentiment trends.",
             "bulletpoints": [
-                "Use AI tools to measure sentiment shifts in real-time",
-                "Monitor narratives in mass communication platforms",
-                "Correlate sentiment changes with geopolitical events"
+                "Use artificial intelligence (AI) tools to detect sentiment trends in real-time across multiple social media platforms",
+                "Monitor mass communication channels for coordinated disinformation campaigns and narrative shifts",
+                "Correlate sentiment fluctuations with geopolitical, economic, and social events to predict potential unrest"
             ],
             "duration": 7,
             "difficulty": "Advanced"
+        },
+        {
+            "id": "sentiment_polarity_analysis",
+            "title": "Sentiment Polarity and Opinion Mining",
+            "description": "Determining whether text conveys positive, negative, or neutral sentiment.",
+            "bulletpoints": [
+                "Classify sentiment polarity using lexicon-based, machine learning, and hybrid approaches",
+                "Detect linguistic cues that indicate sarcasm, irony, or hidden sentiment",
+                "Evaluate opinion strength by analyzing intensifiers, negations, and rhetorical structures"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "psycholinguistic_profiling",
+            "title": "Psycholinguistic Profiling for Threat Assessment",
+            "description": "Using language-based analysis to assess psychological intent and radicalization.",
+            "bulletpoints": [
+                "Analyze language patterns to identify signs of stress, deception, or extremist ideology",
+                "Use linguistic markers to assess cognitive distortions in speech and writing",
+                "Employ stylometry to detect authorship similarities in online radicalization networks"
+            ],
+            "duration": 8,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "contextual_sentiment_analysis",
+            "title": "Context-Aware Sentiment Analysis",
+            "description": "Evaluating sentiment with respect to contextual and cultural factors.",
+            "bulletpoints": [
+                "Use semantic analysis to differentiate literal from figurative language",
+                "Account for cultural and demographic variations in emotional expression",
+                "Identify shifts in sentiment based on historical and regional linguistic norms"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "multimodal_sentiment_analysis",
+            "title": "Multimodal Sentiment Analysis",
+            "description": "Combining text, voice, and facial expressions for enhanced sentiment detection.",
+            "bulletpoints": [
+                "Integrate text-based sentiment analysis with speech and visual emotion recognition",
+                "Analyze tonal shifts, voice modulation, and nonverbal cues to improve accuracy",
+                "Use deep learning techniques to fuse multimodal data for real-time emotion detection"
+            ],
+            "duration": 9,
+            "difficulty": "Expert"
         }
     ]
 }

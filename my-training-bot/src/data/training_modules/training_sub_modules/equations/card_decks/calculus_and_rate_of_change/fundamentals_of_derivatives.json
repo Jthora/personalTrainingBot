@@ -1,0 +1,136 @@
+{
+    "id": "fundamentals_of_derivatives",
+    "name": "Fundamentals of Derivatives",
+    "description": "Understanding differentiation as a mathematical tool to measure rate of change.",
+    "focus": [
+        "Rate of Change",
+        "Tangent Slopes",
+        "Optimization",
+        "Bioelectric Psionic Applications"
+    ],
+    "cards": [
+        {
+            "id": "limits_and_continuity",
+            "title": "Limits & Continuity",
+            "description": "Exploring the foundational concept of limits and ensuring function continuity before differentiation.",
+            "bulletpoints": [
+                "Define a limit using epsilon-delta notation: \\[ \\lim_{x \\to a} f(x) = L \\iff \\forall \\epsilon > 0, \\exists \\delta > 0, \\text{ such that } |x - a| < \\delta \\Rightarrow |f(x) - L| < \\epsilon \\].",
+                "Evaluate limits using direct substitution, factoring, and L'Hôpital’s Rule: \\[ \\lim_{x \\to 0} \\frac{\\sin x}{x} = 1 \\].",
+                "Identify continuous and discontinuous functions by checking if: \\[ \\lim_{x \\to a} f(x) = f(a) \\]."
+            ],
+            "duration": 8,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "basic_derivative_rules",
+            "title": "Basic Derivative Rules",
+            "description": "Learning fundamental differentiation rules to compute rates of change.",
+            "bulletpoints": [
+                "Power Rule: \\[ \\frac{d}{dx} x^n = n x^{n-1} \\].",
+                "Product Rule: \\[ \\frac{d}{dx} [uv] = u' v + u v' \\].",
+                "Quotient Rule: \\[ \\frac{d}{dx} \\left( \\frac{u}{v} \\right) = \\frac{u' v - u v'}{v^2} \\].",
+                "Chain Rule: \\[ \\frac{d}{dx} f(g(x)) = f'(g(x)) g'(x) \\].",
+                "Differentiate exponential and trigonometric functions: \\[ \\frac{d}{dx} e^x = e^x, \\quad \\frac{d}{dx} \\sin x = \\cos x \\]."
+            ],
+            "duration": 10,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "higher_order_derivatives",
+            "title": "Higher-Order Derivatives & Concavity",
+            "description": "Examining the second and third derivatives for curvature and physical interpretation.",
+            "bulletpoints": [
+                "Second derivative: \\[ f''(x) = \\frac{d^2 f}{dx^2} \\] represents concavity.",
+                "Test for inflection points by solving \\( f''(x) = 0 \\).",
+                "Applications to acceleration: \\[ a(t) = v'(t) = x''(t) \\]."
+            ],
+            "duration": 9,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "implicit_differentiation",
+            "title": "Implicit Differentiation",
+            "description": "Differentiating equations where \\( y \\) is defined implicitly.",
+            "bulletpoints": [
+                "Differentiate both sides of an equation: \\[ \\frac{d}{dx} [x^2 + y^2] = \\frac{d}{dx} [25] \\].",
+                "Apply the Chain Rule to \\( y \\): \\[ 2x + 2y \\frac{dy}{dx} = 0 \\].",
+                "Solve for \\( \\frac{dy}{dx} \\) to find slopes in implicit curves."
+            ],
+            "duration": 9,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "applications_of_derivatives",
+            "title": "Applications of Derivatives",
+            "description": "Using derivatives for real-world optimization, curve sketching, and motion analysis.",
+            "bulletpoints": [
+                "Find critical points by solving \\( f'(x) = 0 \\).",
+                "Classify extrema using the First Derivative Test.",
+                "Use Related Rates: \\[ \\frac{dx}{dt} \\] and \\[ \\frac{dy}{dt} \\] to model changing systems.",
+                "Apply derivatives to motion equations: \\[ v(t) = x'(t), \\quad a(t) = v'(t) \\]."
+            ],
+            "duration": 12,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "partial_derivatives",
+            "title": "Partial Derivatives & Multivariable Functions",
+            "description": "Extending differentiation to functions of multiple variables.",
+            "bulletpoints": [
+                "Compute \\( \\frac{\\partial f}{\\partial x} \\) while treating \\( y \\) as a constant.",
+                "Use the Gradient \\( \\nabla f = \\left( \\frac{\\partial f}{\\partial x}, \\frac{\\partial f}{\\partial y} \\right) \\).",
+                "Apply to **electric field intensity**: \\[ \\mathbf{E} = -\\nabla V \\]."
+            ],
+            "duration": 11,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "bioelectric_derivatives",
+            "title": "Bioelectric Derivatives & Energy Flow",
+            "description": "Applying derivatives to bioelectric psionic energy dynamics.",
+            "bulletpoints": [
+                "Model bioelectric charge distribution using Maxwell’s Equations.",
+                "Calculate energy flow using the Poynting vector: \\[ \\mathbf{S} = \\mathbf{E} \\times \\mathbf{H} \\].",
+                "Differentiate neural action potential waveforms: \\[ \\frac{dV}{dt} = \\frac{-V}{RC} \\]."
+            ],
+            "duration": 12,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "laplacian_and_wave_equations",
+            "title": "Laplacian & Wave Equations in Energy Fields",
+            "description": "Differential equations governing energy waves and bioelectric fields.",
+            "bulletpoints": [
+                "Solve the Laplace Equation: \\[ \\nabla^2 V = 0 \\].",
+                "Apply the Wave Equation: \\[ \\frac{\\partial^2 \\psi}{\\partial t^2} = c^2 \\nabla^2 \\psi \\].",
+                "Interpret solutions in the context of psionic resonance fields."
+            ],
+            "duration": 13,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "fourier_derivatives",
+            "title": "Fourier Derivatives & Frequency Analysis",
+            "description": "Using derivatives to analyze signal components in psionic energy fields.",
+            "bulletpoints": [
+                "Fourier Transform Derivative Rule: \\[ \\mathcal{F}\\{ f'(x) \\} = i \\omega F(\\omega) \\].",
+                "Use frequency components to **analyze energy modulation patterns**.",
+                "Apply spectral analysis to **brainwave activity and psionic harmonics**."
+            ],
+            "duration": 14,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "lagrangian_derivatives",
+            "title": "Lagrangian & Variational Derivatives",
+            "description": "Applying calculus of variations to psionic energy systems.",
+            "bulletpoints": [
+                "Lagrangian mechanics: \\[ L = T - V \\].",
+                "Euler-Lagrange equation: \\[ \\frac{d}{dt} \\left( \\frac{\\partial L}{\\partial \\dot{q}} \\right) - \\frac{\\partial L}{\\partial q} = 0 \\].",
+                "Optimize psionic energy paths using extremal functionals."
+            ],
+            "duration": 15,
+            "difficulty": "Expert"
+        }
+    ]
+}

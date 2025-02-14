@@ -1,0 +1,155 @@
+{
+    "id": "solving_equations_and_expressions",
+    "name": "Solving Equations & Expressions",
+    "description": "Mastering techniques for solving algebraic equations and simplifying mathematical expressions.",
+    "focus": [
+        "Equation Solving",
+        "Expression Simplification"
+    ],
+    "cards": [
+        {
+            "id": "linear_equations",
+            "title": "Solving Linear Equations",
+            "description": "Understanding how to solve equations with one variable and interpret their solutions.",
+            "bulletpoints": [
+                "A linear equation is of the form \\( ax + b = 0 \\), where \\( a \\neq 0 \\)",
+                "Solve for \\( x \\) by isolating the variable: \\[ x = \\frac{-b}{a} \\]",
+                "Balance equations by applying the same operation to both sides"
+            ],
+            "duration": 7,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "quadratic_equations",
+            "title": "Solving Quadratic Equations",
+            "description": "Techniques for solving second-degree polynomial equations.",
+            "bulletpoints": [
+                "A quadratic equation has the form \\( ax^2 + bx + c = 0 \\)",
+                "Use the quadratic formula: \\[ x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\]",
+                "Factor quadratics when possible: \\[ x^2 - 5x + 6 = (x - 2)(x - 3) = 0 \\]"
+            ],
+            "duration": 8,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "polynomial_equations",
+            "title": "Solving Higher-Degree Polynomial Equations",
+            "description": "Techniques for solving polynomials of degree 3 or higher.",
+            "bulletpoints": [
+                "A polynomial equation has the general form \\( P(x) = 0 \\)",
+                "Use synthetic division to test rational roots",
+                "Factor polynomials when possible, then apply the zero product property"
+            ],
+            "duration": 9,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "exponential_and_logarithmic",
+            "title": "Solving Exponential & Logarithmic Equations",
+            "description": "Understanding how to solve equations involving exponentials and logarithms.",
+            "bulletpoints": [
+                "An exponential equation has the form \\( a^x = b \\); take the logarithm of both sides",
+                "Convert between exponential and logarithmic form: \\[ x = \\log_b(y) \\Leftrightarrow b^x = y \\]",
+                "Use logarithmic properties: \\[ \\log(a^b) = b \\log a \\]"
+            ],
+            "duration": 9,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "rational_equations",
+            "title": "Solving Rational Equations",
+            "description": "Solving equations involving fractions with variables in the denominator.",
+            "bulletpoints": [
+                "A rational equation is of the form \\( \\frac{P(x)}{Q(x)} = 0 \\)",
+                "Clear denominators by multiplying by the least common denominator (LCD)",
+                "Check for extraneous solutions by verifying restrictions on \\( x \\)"
+            ],
+            "duration": 8,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "absolute_value_equations",
+            "title": "Solving Absolute Value Equations",
+            "description": "Understanding solutions for equations involving absolute values.",
+            "bulletpoints": [
+                "An absolute value equation has the form \\( |x - a| = b \\)",
+                "Solve by splitting into two cases: \\[ x - a = b \\text{ or } x - a = -b \\]",
+                "Graph absolute value functions to visualize their solutions"
+            ],
+            "duration": 7,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "systems_of_equations",
+            "title": "Solving Systems of Equations",
+            "description": "Techniques for solving multiple equations with multiple variables.",
+            "bulletpoints": [
+                "A system of equations consists of multiple equations with shared variables",
+                "Solve using substitution: \\[ x + y = 5, \\quad 2x - y = 3 \\]",
+                "Use elimination to eliminate a variable by adding or subtracting equations"
+            ],
+            "duration": 9,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "inequalities",
+            "title": "Solving and Graphing Inequalities",
+            "description": "Understanding how to solve and visualize inequalities.",
+            "bulletpoints": [
+                "A linear inequality has the form \\( ax + b > c \\)",
+                "Solve like an equation, but reverse the inequality when multiplying/dividing by a negative number",
+                "Graph solutions on a number line, using open/closed circles for strict/non-strict inequalities"
+            ],
+            "duration": 7,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "trigonometric_equations",
+            "title": "Solving Trigonometric Equations",
+            "description": "Finding solutions for equations involving trigonometric functions.",
+            "bulletpoints": [
+                "Solve equations like \\( \\sin x = \\frac{1}{2} \\) using inverse trigonometric functions",
+                "Use trigonometric identities to simplify equations",
+                "Consider periodic solutions: \\[ \\theta = \\frac{\\pi}{6} + 2\\pi k \\text{ for integer } k \\]"
+            ],
+            "duration": 10,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "complex_numbers",
+            "title": "Solving Equations with Complex Numbers",
+            "description": "Handling solutions involving imaginary numbers.",
+            "bulletpoints": [
+                "The imaginary unit is defined as \\( i^2 = -1 \\)",
+                "Solve quadratic equations with negative discriminants: \\[ x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\]",
+                "Express complex solutions in the form \\( a + bi \\)"
+            ],
+            "duration": 10,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "matrix_equations",
+            "title": "Solving Matrix Equations",
+            "description": "Techniques for solving equations using matrices.",
+            "bulletpoints": [
+                "A system of equations can be written as \\( AX = B \\) where \\( A \\) is a coefficient matrix",
+                "Find solutions using the inverse matrix: \\[ X = A^{-1} B \\]",
+                "Use row reduction (Gaussian elimination) to simplify systems"
+            ],
+            "duration": 10,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "summation_and_series",
+            "title": "Solving Summation and Series Equations",
+            "description": "Understanding summation notation and solving series-related problems.",
+            "bulletpoints": [
+                "Use sigma notation to express sums: \\[ \\sum_{k=1}^{n} k = \\frac{n(n+1)}{2} \\]",
+                "Solve arithmetic series equations: \\[ S_n = \\frac{n}{2} (a + l) \\]",
+                "Evaluate geometric series using: \\[ S_n = \\frac{a(1 - r^n)}{1 - r} \\]"
+            ],
+            "duration": 9,
+            "difficulty": "Advanced"
+        }
+    ]
+}

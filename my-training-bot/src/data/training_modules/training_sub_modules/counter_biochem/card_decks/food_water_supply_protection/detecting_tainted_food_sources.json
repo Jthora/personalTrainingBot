@@ -1,0 +1,36 @@
+{
+    "id": "detecting_tainted_food_sources",
+    "name": "Detecting Tainted Food Sources",
+    "description": "Techniques to identify and prevent contamination, poisoning, and nutritional sabotage in food supplies.",
+    "focus": [
+        "Foodborne Toxin Detection",
+        "Pathogen Identification",
+        "Supply Chain Inspection"
+    ],
+    "cards": [
+        {
+            "id": "food_1",
+            "title": "Identifying Spoiled & Contaminated Foods",
+            "description": "Recognizing signs of microbial growth, chemical alterations, and toxin presence in food.",
+            "bulletpoints": "Visual cues, chemical testing, microbial culture methods",
+            "duration": "10",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "food_2",
+            "title": "Foodborne Pathogen Detection",
+            "description": "Testing and identifying bacterial, viral, and fungal contaminants in food sources.",
+            "bulletpoints": "Listeria, Salmonella, E. coli, mycotoxins detection methods",
+            "duration": "12",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "food_3",
+            "title": "Detecting Slow Poisoning & Bio-Accumulation",
+            "description": "Recognizing symptoms and patterns of slow-acting poisons in food over time.",
+            "bulletpoints": "Heavy metal testing, synthetic toxin markers, long-term exposure symptoms",
+            "duration": "12",
+            "difficulty": "Expert"
+        }
+    ]
+}

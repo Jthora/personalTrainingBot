@@ -1,0 +1,14 @@
+{
+    "id": "counter_biochem",
+    "name": "Counter BioChem",
+    "color": "#228B22",
+    "description": "Defense, healing, detection, prevention, and recovery from biological and chemical threats deployed by hostile entities.",
+    "submodules": [
+        "biochem_defense_protocols",
+        "contagion_containment_strategies",
+        "toxin_neutralization_tactics",
+        "medical_psyops_resistance",
+        "food_water_supply_protection",
+        "biochem_survival_medicine"
+    ]
+}

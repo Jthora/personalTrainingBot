@@ -1,0 +1,132 @@
+{
+    "id": "ai_model_training_and_tuning",
+    "name": "AI Model Training & Tuning",
+    "description": "Optimizing neural networks through training techniques, hyperparameter tuning, and performance evaluation.",
+    "focus": [
+        "Gradient Descent",
+        "Regularization",
+        "Hyperparameter Optimization"
+    ],
+    "cards": [
+        {
+            "id": "gradient_descent",
+            "title": "Gradient Descent & Backpropagation",
+            "description": "Understanding how neural networks learn by adjusting weights iteratively.",
+            "bulletpoints": [
+                "Study the gradient descent algorithm and its role in minimizing loss functions: \\[ \\theta := \\theta - \\alpha \\nabla J(\\theta) \\]",
+                "Understand the backpropagation process using the chain rule: \\[ \\frac{\\partial J}{\\partial w} = \\frac{\\partial J}{\\partial a} \\frac{\\partial a}{\\partial z} \\frac{\\partial z}{\\partial w} \\]",
+                "Explore variations such as Stochastic Gradient Descent (SGD) and Adam optimizer: \\[ m_t = \\beta_1 m_{t-1} + (1 - \\beta_1) g_t \\]"
+            ],
+            "duration": 10,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "regularization_methods",
+            "title": "Regularization Methods & Overfitting Prevention",
+            "description": "Techniques to improve model generalization and prevent overfitting.",
+            "bulletpoints": [
+                "Apply L1 (Lasso) and L2 (Ridge) regularization: \\[ J(\\theta) = \\sum_{i=1}^{m} (h_\\theta(x^{(i)}) - y^{(i)})^2 + \\lambda \\sum_{j=1}^{n} \\theta_j^2 \\]",
+                "Use dropout layers to prevent co-adaptation of neurons: \\[ h^l = f(W^l h^{l-1} + b^l) \\] with random dropout of neurons.",
+                "Perform cross-validation to evaluate model performance on unseen data."
+            ],
+            "duration": 12,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "hyperparameter_tuning",
+            "title": "Hyperparameter Tuning & Model Selection",
+            "description": "Optimizing neural network architectures by selecting the best hyperparameters.",
+            "bulletpoints": [
+                "Optimize learning rate \\( \\alpha \\) to balance convergence speed and stability: \\[ \\theta := \\theta - \\alpha \\nabla J(\\theta) \\]",
+                "Use grid search and random search for hyperparameter selection.",
+                "Explore Bayesian Optimization to model the performance function using Gaussian Processes."
+            ],
+            "duration": 14,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "batch_normalization",
+            "title": "Batch Normalization & Internal Covariate Shift",
+            "description": "Improving training stability and convergence speed using batch normalization.",
+            "bulletpoints": [
+                "Normalize activations using batch mean \\( \\mu \\) and variance \\( \\sigma^2 \\): \\[ \\hat{x}^{(i)} = \\frac{x^{(i)} - \\mu}{\\sqrt{\\sigma^2 + \\epsilon}} \\]",
+                "Learn scale and shift parameters \\( \\gamma, \\beta \\) to maintain model expressivity: \\[ y^{(i)} = \\gamma \\hat{x}^{(i)} + \\beta \\]",
+                "Use batch normalization to accelerate convergence and reduce dependence on initialization."
+            ],
+            "duration": 13,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "loss_functions",
+            "title": "Loss Functions & Optimization Objectives",
+            "description": "Understanding different loss functions for various machine learning tasks.",
+            "bulletpoints": [
+                "Minimize mean squared error (MSE) for regression: \\[ J(\\theta) = \\frac{1}{2m} \\sum_{i=1}^{m} (h_\\theta(x^{(i)}) - y^{(i)})^2 \\]",
+                "Use cross-entropy loss for classification problems: \\[ J(\\theta) = - \\sum y_i \\log(\\hat{y}_i) \\]",
+                "Optimize model robustness using hinge loss in support vector machines: \\[ J(\\theta) = \\sum \\max(0, 1 - y_i w^T x_i) \\]"
+            ],
+            "duration": 12,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "learning_rate_scheduling",
+            "title": "Learning Rate Scheduling & Adaptive Methods",
+            "description": "Adjusting the learning rate dynamically during training.",
+            "bulletpoints": [
+                "Use exponential decay for adaptive learning rate scheduling: \\[ \\alpha_t = \\alpha_0 e^{-kt} \\]",
+                "Implement cyclical learning rates to escape local minima.",
+                "Explore optimizers like RMSProp and Adam, which adapt learning rates for each parameter."
+            ],
+            "duration": 13,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "weight_initialization",
+            "title": "Weight Initialization Strategies",
+            "description": "Choosing appropriate initialization methods to avoid vanishing or exploding gradients.",
+            "bulletpoints": [
+                "Use Xavier (Glorot) initialization for sigmoid and tanh activations: \\[ W \\sim \\mathcal{N}(0, \\frac{2}{n_{in} + n_{out}}) \\]",
+                "Apply He initialization for ReLU activations: \\[ W \\sim \\mathcal{N}(0, \\frac{2}{n_{in}}) \\]",
+                "Analyze the effects of poor initialization on training stability and convergence."
+            ],
+            "duration": 11,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "transfer_learning",
+            "title": "Transfer Learning & Model Reuse",
+            "description": "Leveraging pre-trained models to improve learning efficiency.",
+            "bulletpoints": [
+                "Fine-tune a pre-trained model by freezing lower layers and training higher layers.",
+                "Use feature extraction from convolutional networks for image recognition tasks.",
+                "Transfer knowledge from large datasets to smaller, domain-specific datasets."
+            ],
+            "duration": 14,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "model_pruning",
+            "title": "Model Pruning & Weight Quantization",
+            "description": "Reducing model size while maintaining performance.",
+            "bulletpoints": [
+                "Remove insignificant weights using magnitude-based pruning.",
+                "Use quantization to reduce model precision, improving inference speed.",
+                "Optimize memory and computation requirements for edge AI deployments."
+            ],
+            "duration": 12,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "adversarial_training",
+            "title": "Adversarial Training & Robustness",
+            "description": "Improving model resistance to adversarial attacks.",
+            "bulletpoints": [
+                "Generate adversarial examples using the Fast Gradient Sign Method (FGSM): \\[ x' = x + \\epsilon \\text{sign}(\\nabla_x J(\\theta, x, y)) \\]",
+                "Train networks to recognize and resist perturbations in input data.",
+                "Develop robust models that generalize well under adversarial conditions."
+            ],
+            "duration": 15,
+            "difficulty": "Expert"
+        }
+    ]
+}

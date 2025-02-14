@@ -30,6 +30,90 @@
             ],
             "duration": 7,
             "difficulty": "Advanced"
+        },
+        {
+            "id": "predictive_ai_models",
+            "title": "Artificial Intelligence & Machine Learning in Risk Prediction",
+            "description": "Leveraging AI-driven analytics for predictive risk assessment.",
+            "bulletpoints": [
+                "Train machine learning models to detect emerging threats",
+                "Use anomaly detection to identify unusual patterns in data",
+                "Apply deep learning techniques to enhance risk forecasting accuracy"
+            ],
+            "duration": 8,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "game_theory_risk_analysis",
+            "title": "Game Theory & Strategic Decision-Making in Risk Analysis",
+            "description": "Using mathematical models of conflict and cooperation to anticipate threats.",
+            "bulletpoints": [
+                "Apply Nash equilibrium models to predict adversarial behavior",
+                "Use zero-sum and non-zero-sum game strategies for risk mitigation",
+                "Analyze competitive and cooperative strategies in security scenarios"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "agent_based_modeling",
+            "title": "Agent-Based Modeling for Risk Simulations",
+            "description": "Simulating the interactions of autonomous agents to predict complex risks.",
+            "bulletpoints": [
+                "Model human and machine behaviors in dynamic risk environments",
+                "Analyze large-scale simulations for disaster response and financial crises",
+                "Use adaptive learning agents to refine predictive accuracy over time"
+            ],
+            "duration": 8,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "early_warning_systems",
+            "title": "Early Warning Systems & Real-Time Risk Monitoring",
+            "description": "Developing automated systems for rapid risk detection and response.",
+            "bulletpoints": [
+                "Use sensor networks and real-time analytics for continuous monitoring",
+                "Integrate geospatial intelligence for disaster prediction",
+                "Develop automated alerts and risk mitigation protocols"
+            ],
+            "duration": 7,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "black_swan_theory",
+            "title": "Black Swan Events & Low-Probability High-Impact Risks",
+            "description": "Understanding unpredictable events that defy conventional risk models.",
+            "bulletpoints": [
+                "Identify characteristics of Black Swan events in geopolitical and financial domains",
+                "Develop resilience strategies to mitigate unexpected catastrophes",
+                "Analyze historical case studies of extreme risk occurrences"
+            ],
+            "duration": 8,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "fuzzy_logic_risk_assessment",
+            "title": "Fuzzy Logic & Risk Scoring in Uncertain Environments",
+            "description": "Applying fuzzy set theory to assess ambiguous and imprecise risks.",
+            "bulletpoints": [
+                "Develop risk scoring models for complex and uncertain scenarios",
+                "Use fuzzy inference systems for probabilistic decision-making",
+                "Improve risk management in sectors with incomplete or evolving data"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "big_data_risk_analysis",
+            "title": "Big Data Analytics in Risk Prediction",
+            "description": "Harnessing large-scale data to improve predictive modeling.",
+            "bulletpoints": [
+                "Analyze structured and unstructured data to detect risk patterns",
+                "Use cloud-based analytics for large-scale trend identification",
+                "Leverage cross-domain intelligence for comprehensive risk assessment"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
         }
     ]
 }

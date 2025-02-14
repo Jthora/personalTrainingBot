@@ -1,0 +1,36 @@
+{
+    "id": "emergency_containment_protocols",
+    "name": "Emergency Containment Protocols",
+    "description": "Training in rapid containment strategies for biological outbreaks and bioweapon releases.",
+    "focus": [
+        "Crisis Response",
+        "Rapid Pathogen Suppression",
+        "Containment Team Coordination"
+    ],
+    "cards": [
+        {
+            "id": "containment_1",
+            "title": "Rapid Response to Biohazard Incidents",
+            "description": "Emergency procedures for handling sudden pathogen outbreaks or bioweapon releases.",
+            "bulletpoints": "First responder coordination, decontamination drills, isolation protocols",
+            "duration": "12",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "containment_2",
+            "title": "Deployment of Mobile Containment Units",
+            "description": "Setting up field containment zones and temporary biohazard response stations.",
+            "bulletpoints": "Mobile quarantine tents, rapid diagnostic stations, emergency airlocks",
+            "duration": "10",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "containment_3",
+            "title": "Counteracting Bioweapon Dispersal Methods",
+            "description": "Identifying and neutralizing different delivery methods used in bioterrorism.",
+            "bulletpoints": "Aerosolized dispersal, water supply contamination, foodborne pathogen mitigation",
+            "duration": "12",
+            "difficulty": "Expert"
+        }
+    ]
+}

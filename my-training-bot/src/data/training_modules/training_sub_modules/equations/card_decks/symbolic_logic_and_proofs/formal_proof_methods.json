@@ -1,0 +1,133 @@
+{
+    "id": "formal_proof_methods",
+    "name": "Formal Proof Methods",
+    "description": "Mastering the different proof techniques used in mathematics and logic.",
+    "focus": [
+        "Mathematical Proofs",
+        "Logical Deduction",
+        "Set Theory",
+        "Abstract Algebra"
+    ],
+    "cards": [
+        {
+            "id": "direct_proofs",
+            "title": "Direct Proofs & Logical Deduction",
+            "description": "Learning how to construct step-by-step logical arguments.",
+            "bulletpoints": [
+                "A direct proof shows that \\( P \\Rightarrow Q \\) by assuming \\( P \\) and deriving \\( Q \\).",
+                "Example: Prove that if \\( n \\) is even, then \\( n^2 \\) is even: \\[ n = 2k \\Rightarrow n^2 = 4k^2 = 2(2k^2) \\].",
+                "Apply direct proofs in number theory, inequalities, and algebra."
+            ],
+            "duration": 8,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "indirect_proofs",
+            "title": "Indirect Proofs: Contradiction & Contraposition",
+            "description": "Using indirect reasoning to establish the truth of mathematical statements.",
+            "bulletpoints": [
+                "Proof by contraposition: To prove \\( P \\Rightarrow Q \\), prove \\( \\neg Q \\Rightarrow \\neg P \\).",
+                "Proof by contradiction assumes \\( \\neg P \\) and derives a contradiction: \\[ P \\Rightarrow (Q \\land \\neg Q) \\Rightarrow \\text{False} \\].",
+                "Example: Prove \\( \\sqrt{2} \\) is irrational by contradiction."
+            ],
+            "duration": 10,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mathematical_induction",
+            "title": "Mathematical Induction & Recursive Proofs",
+            "description": "Using induction to prove statements about sequences and structures.",
+            "bulletpoints": [
+                "Mathematical induction consists of two steps: \\[ \\text{Base Case: Prove } P(1). \\] \\[ \\text{Inductive Step: Assume } P(k) \\text{ and prove } P(k+1). \\]",
+                "Example: Prove \\( 1 + 2 + ... + n = \\frac{n(n+1)}{2} \\) using induction.",
+                "Strong induction applies when the inductive step depends on multiple prior cases."
+            ],
+            "duration": 12,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "contradiction_paradoxes",
+            "title": "Proof by Contradiction & Paradoxes",
+            "description": "Examining famous contradictions and logical paradoxes.",
+            "bulletpoints": [
+                "Understand the principle of reductio ad absurdum, proving \\( P \\) by showing \\( \\neg P \\) leads to a contradiction.",
+                "Explore Russell’s paradox in naive set theory: \\[ R = \\{ x \\mid x \\notin x \\} \\Rightarrow R \\in R \\iff R \\notin R \\].",
+                "Apply contradiction proofs to irrational numbers and prime theorems."
+            ],
+            "duration": 14,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "set_theory_proofs",
+            "title": "Proofs in Set Theory & Cardinality",
+            "description": "Using logical methods to establish properties of sets and cardinality.",
+            "bulletpoints": [
+                "Prove set identities using the subset method: \\[ A \\subseteq B \\text{ and } B \\subseteq A \\Rightarrow A = B \\].",
+                "Establish the uncountability of \\( \\mathbb{R} \\) using Cantor’s diagonal argument.",
+                "Apply proof techniques to power sets, unions, and intersections."
+            ],
+            "duration": 14,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "epsilon_delta",
+            "title": "Epsilon-Delta Proofs in Analysis",
+            "description": "Constructing rigorous proofs of limits and continuity.",
+            "bulletpoints": [
+                "Prove that \\( \\lim_{x \\to a} f(x) = L \\) using the definition: \\[ \\forall \\epsilon > 0, \\exists \\delta > 0 \\text{ such that } |x - a| < \\delta \\Rightarrow |f(x) - L| < \\epsilon. \\]",
+                "Use epsilon-delta arguments to prove function continuity and differentiability.",
+                "Apply these methods to sequences, functions, and real analysis."
+            ],
+            "duration": 16,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "proofs_in_number_theory",
+            "title": "Proofs in Number Theory",
+            "description": "Exploring classic number theory proofs and divisibility rules.",
+            "bulletpoints": [
+                "Prove the infinitude of primes using contradiction: \\[ \\prod_{i=1}^{n} p_i + 1 \\text{ is prime or has a new prime factor.} \\]",
+                "Prove modular arithmetic properties: \\[ a \\equiv b \\pmod{m} \\Rightarrow a^k \\equiv b^k \\pmod{m}. \\]",
+                "Use Diophantine equation proofs in integer solutions."
+            ],
+            "duration": 15,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "graph_theory_proofs",
+            "title": "Proofs in Graph Theory",
+            "description": "Applying formal proof methods to properties of graphs and networks.",
+            "bulletpoints": [
+                "Use induction to prove properties of trees: \\[ |V| - |E| = 1 \\text{ for connected acyclic graphs.} \\]",
+                "Apply contradiction to show that a graph with odd-degree vertices has an Eulerian path.",
+                "Use planarity proofs and coloring theorems."
+            ],
+            "duration": 16,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "group_theory_proofs",
+            "title": "Proofs in Group Theory",
+            "description": "Constructing rigorous proofs in abstract algebra.",
+            "bulletpoints": [
+                "Prove that a group of prime order is cyclic: \\[ |G| = p \\Rightarrow G \\text{ is cyclic.} \\]",
+                "Use Lagrange’s theorem: \\[ |H| \\text{ divides } |G| \\text{ for any finite group } G. \\]",
+                "Apply homomorphism and isomorphism theorems."
+            ],
+            "duration": 17,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "axiomatic_proofs",
+            "title": "Axiomatic Proofs & First-Order Logic",
+            "description": "Using formal axiomatic systems to construct rigorous proofs.",
+            "bulletpoints": [
+                "Study Peano’s axioms and the foundations of number theory.",
+                "Use Hilbert’s formalism to derive theorems in logic.",
+                "Understand Gödel’s incompleteness theorem: \\[ \\text{Any consistent formal system } S \\text{ contains true statements that cannot be proven.} \\]"
+            ],
+            "duration": 18,
+            "difficulty": "Expert"
+        }
+    ]
+}

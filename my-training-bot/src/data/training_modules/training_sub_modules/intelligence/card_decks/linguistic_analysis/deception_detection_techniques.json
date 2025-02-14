@@ -30,6 +30,54 @@
             ],
             "duration": 7,
             "difficulty": "Advanced"
+        },
+        {
+            "id": "nonverbal_cues",
+            "title": "Nonverbal Cues and Body Language Analysis",
+            "description": "Detecting deception through involuntary physical behaviors.",
+            "bulletpoints": [
+                "Identify microexpressions that reveal concealed emotions",
+                "Analyze body posture, hand movements, and eye contact shifts",
+                "Assess inconsistencies between verbal and nonverbal communication"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "baseline_analysis",
+            "title": "Baseline Analysis and Behavioral Shifts",
+            "description": "Establishing normal behavior patterns to detect deviations.",
+            "bulletpoints": [
+                "Create a subject's baseline behavior during neutral questioning",
+                "Detect subtle shifts in speech rate, tone, or physical movement",
+                "Assess deviations from baseline under stress or scrutiny"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "written_text_deception",
+            "title": "Written Text Deception Analysis",
+            "description": "Identifying deception in written communication and documents.",
+            "bulletpoints": [
+                "Detect excessive vagueness, unnecessary details, and linguistic distancing",
+                "Analyze sentence structure and word choice for inconsistencies",
+                "Apply stylometric analysis to compare writing patterns"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psychophysiological_methods",
+            "title": "Psychophysiological Methods for Deception Detection",
+            "description": "Using physiological responses to assess deception indicators.",
+            "bulletpoints": [
+                "Measure autonomic nervous system responses such as heart rate and sweating",
+                "Analyze pupil dilation and blink rates during questioning",
+                "Use polygraph data in conjunction with linguistic and behavioral analysis"
+            ],
+            "duration": 8,
+            "difficulty": "Expert"
         }
     ]
 }

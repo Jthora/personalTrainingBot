@@ -1,0 +1,36 @@
+{
+    "id": "toxin_detection_and_testing",
+    "name": "Toxin Detection & Testing",
+    "description": "Training in identifying and testing for synthetic poisons, venom, and industrial biotoxins used in covert chemical warfare.",
+    "focus": [
+        "Toxin Identification",
+        "Covert Poisoning Detection",
+        "Testing Methods & Analysis"
+    ],
+    "cards": [
+        {
+            "id": "toxin_detect_1",
+            "title": "Identifying Synthetic Poisons in Consumer Products",
+            "description": "Recognizing hidden toxins in food, cosmetics, pharmaceuticals, and household items.",
+            "bulletpoints": "Heavy metals, endocrine disruptors, neurotoxic additives",
+            "duration": "12",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "toxin_detect_2",
+            "title": "Water & Airborne Toxin Testing Methods",
+            "description": "Techniques for detecting chemical and biological contaminants in drinking water and air.",
+            "bulletpoints": "pH imbalance, volatile organic compounds, aerosolized neurotoxins",
+            "duration": "14",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "toxin_detect_3",
+            "title": "Covert Poisoning Indicators & Early Warning Signs",
+            "description": "Recognizing subtle poisoning attempts through gradual exposure methods.",
+            "bulletpoints": "Fatigue patterns, cognitive decline, immune suppression effects",
+            "duration": "12",
+            "difficulty": "Expert"
+        }
+    ]
+}

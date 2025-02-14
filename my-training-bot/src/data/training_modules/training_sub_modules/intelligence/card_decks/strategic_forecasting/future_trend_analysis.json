@@ -9,24 +9,72 @@
     "cards": [
         {
             "id": "data_trend_extrapolation",
-            "title": "Data Trend Extrapolation & Forecasting",
-            "description": "Using historical data and AI-driven models to predict future developments.",
+            "title": "Data Trend Extrapolation and Forecasting",
+            "description": "Using historical data and artificial intelligence-driven models to predict future developments.",
             "bulletpoints": [
                 "Apply time-series analysis to forecast industry and geopolitical trends",
-                "Use machine learning models for predictive intelligence",
-                "Monitor pattern shifts to anticipate disruptive global events"
+                "Use machine learning models for predictive intelligence by identifying hidden patterns in large datasets",
+                "Monitor shifts in economic, political, and social patterns to anticipate disruptive global events"
             ],
             "duration": 6,
             "difficulty": "Advanced"
         },
         {
             "id": "technological_advancements",
-            "title": "Technological Advancements & Disruptive Innovation",
+            "title": "Technological Advancements and Disruptive Innovation",
             "description": "Tracking emerging technologies and their potential impact.",
             "bulletpoints": [
-                "Analyze breakthroughs in AI, quantum computing, and biotech",
-                "Forecast industry disruptions caused by automation and digital transformation",
-                "Identify early indicators of paradigm-shifting technological advances"
+                "Analyze breakthroughs in artificial intelligence, quantum computing, and biotechnology to assess future capabilities",
+                "Forecast industry disruptions caused by automation, digital transformation, and decentralized technologies",
+                "Identify early indicators of paradigm-shifting innovations such as neural interfaces and nanotechnology"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "geopolitical_risk_analysis",
+            "title": "Geopolitical Risk Analysis and Global Stability Forecasting",
+            "description": "Assessing global political, economic, and security risks.",
+            "bulletpoints": [
+                "Monitor shifts in international relations, trade policies, and military posturing to predict geopolitical conflicts",
+                "Use scenario modeling to evaluate the impact of economic sanctions, resource scarcity, and diplomatic shifts",
+                "Track emerging political ideologies, populist movements, and election outcomes to anticipate global instability"
+            ],
+            "duration": 8,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "societal_shifts",
+            "title": "Societal Shifts and Cultural Evolution",
+            "description": "Understanding long-term transformations in public values, behaviors, and demographics.",
+            "bulletpoints": [
+                "Analyze generational shifts in values, consumer behavior, and ideological trends",
+                "Use social media and behavioral data to detect early signs of large-scale cultural transformations",
+                "Track the rise of decentralized movements, alternative governance models, and changing labor market dynamics"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "climate_and_resource_forecasting",
+            "title": "Climate Change and Resource Scarcity Forecasting",
+            "description": "Predicting the impact of environmental changes on global stability.",
+            "bulletpoints": [
+                "Monitor temperature shifts, extreme weather patterns, and sea-level rise projections to assess global risks",
+                "Track water, food, and energy scarcity as potential drivers of geopolitical conflicts",
+                "Use environmental modeling and satellite imagery to predict resource-driven migration patterns"
+            ],
+            "duration": 8,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "economic_trend_forecasting",
+            "title": "Economic Trend Forecasting and Market Disruptions",
+            "description": "Predicting shifts in global and national economies.",
+            "bulletpoints": [
+                "Use macroeconomic indicators such as inflation, interest rates, and employment trends to forecast economic downturns",
+                "Analyze market cycles and financial models to identify early warning signs of recessions and financial crises",
+                "Track the adoption of decentralized finance, cryptocurrency markets, and alternative economic structures"
             ],
             "duration": 7,
             "difficulty": "Advanced"

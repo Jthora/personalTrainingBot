@@ -12,9 +12,9 @@
             "title": "Link Analysis & Network Mapping",
             "description": "Connecting data points to uncover hidden relationships.",
             "bulletpoints": [
-                "Use graph analysis tools to identify key actors in criminal networks",
-                "Track communications between suspected threats",
-                "Assess degrees of separation and clustering behaviors"
+                "Use network graph visualization tools to reveal associations between individuals, groups, and assets",
+                "Analyze communications and financial transactions to identify covert networks",
+                "Assess degrees of separation to detect central figures and hidden influencers within a threat network"
             ],
             "duration": 6,
             "difficulty": "Advanced"
@@ -24,12 +24,48 @@
             "title": "Behavioral Risk Analysis & Predictive Profiling",
             "description": "Evaluating behavioral trends to predict potential threats.",
             "bulletpoints": [
-                "Identify pre-attack indicators through anomaly detection",
-                "Assess psychological motivations of threat actors",
-                "Use historical data to model escalation and threat levels"
+                "Identify pre-incident indicators by analyzing deviations from normal activity patterns",
+                "Assess psychological and ideological motivations behind potential threat actors",
+                "Use historical case studies to refine predictive threat models and escalation pathways"
             ],
             "duration": 7,
             "difficulty": "Advanced"
+        },
+        {
+            "id": "attack_surface_analysis",
+            "title": "Attack Surface Analysis & Vulnerability Assessment",
+            "description": "Identifying weaknesses that adversaries could exploit.",
+            "bulletpoints": [
+                "Map out physical, cyber, and human vulnerabilities in an organization's security infrastructure",
+                "Assess potential entry points that adversaries could use to launch an attack",
+                "Develop mitigation strategies to reduce the likelihood of exploitation"
+            ],
+            "duration": 7,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "threat_vector_modeling",
+            "title": "Threat Vector Modeling & Adversarial Tactics",
+            "description": "Evaluating the methods adversaries use to conduct attacks.",
+            "bulletpoints": [
+                "Analyze past attack methodologies to predict future threats",
+                "Use the MITRE ATT&CK framework to classify adversary tactics and techniques",
+                "Develop response plans based on known adversarial capabilities and motivations"
+            ],
+            "duration": 8,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "risk_mitigation_strategies",
+            "title": "Risk Mitigation Strategies & Intelligence-Based Decision Making",
+            "description": "Creating security policies based on threat intelligence assessments.",
+            "bulletpoints": [
+                "Prioritize threats based on likelihood, impact, and available countermeasures",
+                "Use intelligence-driven risk scoring models to refine security policies",
+                "Integrate real-time threat intelligence feeds into proactive decision-making"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
         }
     ]
 }

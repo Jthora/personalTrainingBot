@@ -1,0 +1,44 @@
+{
+    "id": "psionic_technology_and_consciousness_interfaces",
+    "name": "Psionic Technology & Consciousness Interfaces",
+    "description": "Examining the integration of technology with consciousness to enhance psionic abilities and energy control.",
+    "focus": ["Cybernetic Psionics", "Consciousness-Machine Integration"],
+    "cards": [
+        {
+            "id": "psionic_devices",
+            "title": "Psionic Devices & Amplifiers",
+            "description": "Exploring tools designed to enhance and direct psionic energy.",
+            "bulletpoints": [
+                "Learn about ancient and modern devices such as orgone accumulators and radionics machines.",
+                "Understand how crystal matrices and geometric structures influence energy flow.",
+                "Experiment with wearable psionic tech to augment sensory perception."
+            ],
+            "duration": 10,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "neural_link",
+            "title": "Neural-Link Technology & Psi Augmentation",
+            "description": "Investigating the potential of neural-linked implants and consciousness-augmenting technologies.",
+            "bulletpoints": [
+                "Study the effects of external electromagnetic fields on psionic potential.",
+                "Explore prototype neuro-implants designed to enhance cognition and extrasensory perception.",
+                "Analyze ethical considerations of human-machine integration for psionic applications."
+            ],
+            "duration": 12,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psi_ai_hybrids",
+            "title": "Psionic AI & Consciousness Synergy",
+            "description": "Understanding the relationship between artificial intelligence and psionic abilities.",
+            "bulletpoints": [
+                "Investigate theories on AI-driven consciousness expansion.",
+                "Explore how AI-assisted meditation and biofeedback can enhance psi abilities.",
+                "Develop protocols for merging psionic intent with AI-guided energy amplification."
+            ],
+            "duration": 14,
+            "difficulty": "Expert"
+        }
+    ]
+}

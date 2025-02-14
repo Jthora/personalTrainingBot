@@ -2,9 +2,11 @@
     "modules": [
         { "id": "agencies", "name": "Agency Training" },
         { "id": "combat", "name": "Combat Training" },
+        { "id": "counter_biochem", "name": "Counter BioChem Training" },
         { "id": "counter_psyops", "name": "Counter PsyOps Training" },
         { "id": "cybersecurity", "name": "Cybersecurity Training" },
         { "id": "dance", "name": "Dance Training" },
+        { "id": "equations", "name": "Equation Training" },
         { "id": "espionage", "name": "Espionage Training" },
         { "id": "fitness", "name": "Fitness Training" },
         { "id": "intelligence", "name": "Intelligence Training" },

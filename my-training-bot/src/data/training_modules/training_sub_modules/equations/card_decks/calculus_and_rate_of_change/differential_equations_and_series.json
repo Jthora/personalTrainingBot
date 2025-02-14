@@ -1,0 +1,145 @@
+{
+    "id": "differential_equations_and_series",
+    "name": "Differential Equations & Series",
+    "description": "Exploring the use of calculus in solving equations that model real-world dynamic systems.",
+    "focus": [
+        "Solving ODEs",
+        "Infinite Series",
+        "Mathematical Modeling"
+    ],
+    "cards": [
+        {
+            "id": "first_order_odes",
+            "title": "First-Order Differential Equations",
+            "description": "Solving basic ordinary differential equations (ODEs) and understanding their applications.",
+            "bulletpoints": [
+                "Recognize and classify first-order ODEs, including separable, linear, and exact equations.",
+                "Solve separable equations using integration: \\[ \\int \\frac{dx}{x} = \\int dt \\Rightarrow x = Ce^t \\]",
+                "Use the integrating factor method for linear ODEs: \\[ y' + p(x)y = q(x) \\Rightarrow \\mu(x) y = \\int \\mu(x) q(x) dx \\]",
+                "Apply first-order ODEs to population growth \\( P' = rP \\) and radioactive decay \\( N' = -\\lambda N \\)."
+            ],
+            "duration": 10,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "second_order_odes",
+            "title": "Second-Order Differential Equations",
+            "description": "Solving second-order ODEs with constant coefficients.",
+            "bulletpoints": [
+                "Solve homogeneous second-order ODEs using the characteristic equation: \\[ ay'' + by' + cy = 0 \\Rightarrow r^2 + br + c = 0 \\]",
+                "Use undetermined coefficients for nonhomogeneous equations: \\[ y_p = A e^{rx} + B e^{-rx} \\]",
+                "Model harmonic motion and electrical circuits with equations like \\[ m y'' + c y' + k y = F(t) \\]."
+            ],
+            "duration": 12,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "higher_order_odes",
+            "title": "Higher-Order Differential Equations",
+            "description": "Extending solution methods to third- and higher-order differential equations.",
+            "bulletpoints": [
+                "Generalize characteristic equation solutions to higher-order ODEs: \\[ a_n y^{(n)} + a_{n-1} y^{(n-1)} + ... + a_1 y' + a_0 y = 0 \\]",
+                "Apply reduction of order for second solutions when one solution is known.",
+                "Model complex physical systems such as mechanical vibrations and wave propagation."
+            ],
+            "duration": 14,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "laplace_transform",
+            "title": "Laplace Transforms & Differential Equations",
+            "description": "Using the Laplace transform to solve ODEs efficiently.",
+            "bulletpoints": [
+                "Define the Laplace transform: \\[ \\mathcal{L}\\{f(t)\\} = \\int_0^{\\infty} e^{-st} f(t) dt \\]",
+                "Solve ODEs by transforming them into algebraic equations in \\( s \\)-space.",
+                "Apply Laplace methods to step functions and impulse response problems."
+            ],
+            "duration": 13,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "fourier_series",
+            "title": "Fourier Series & PDE Solutions",
+            "description": "Expanding periodic functions into trigonometric series.",
+            "bulletpoints": [
+                "Express a function \\( f(x) \\) as a Fourier series: \\[ f(x) = a_0 + \\sum_{n=1}^{\\infty} \\left( a_n \\cos(n\\pi x) + b_n \\sin(n\\pi x) \\right) \\]",
+                "Calculate Fourier coefficients using integration over a period.",
+                "Apply Fourier series to solve boundary-value problems in physics and engineering."
+            ],
+            "duration": 12,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "power_series_methods",
+            "title": "Power Series & Taylor Series",
+            "description": "Understanding how infinite series approximate functions and solve differential equations.",
+            "bulletpoints": [
+                "Expand a function in a Taylor series about \\( x=a \\): \\[ f(x) = \\sum_{n=0}^{\\infty} \\frac{f^{(n)}(a)}{n!} (x - a)^n \\]",
+                "Use power series methods to solve ODEs near ordinary points.",
+                "Determine the radius of convergence using the ratio test."
+            ],
+            "duration": 14,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "bessel_functions",
+            "title": "Bessel Functions & Special Solutions",
+            "description": "Studying Bessel’s equation and its applications in physics.",
+            "bulletpoints": [
+                "Solve Bessel’s differential equation: \\[ x^2 y'' + x y' + (x^2 - n^2)y = 0 \\]",
+                "Define Bessel functions of the first and second kind: \\( J_n(x) \\) and \\( Y_n(x) \\).",
+                "Apply Bessel functions to wave equations, heat conduction, and vibration problems."
+            ],
+            "duration": 15,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "legendre_equation",
+            "title": "Legendre Polynomials & Orthogonal Functions",
+            "description": "Solving Legendre’s equation and applying orthogonal polynomials.",
+            "bulletpoints": [
+                "Solve Legendre’s differential equation: \\[ (1-x^2) y'' - 2x y' + n(n+1)y = 0 \\]",
+                "Generate Legendre polynomials \\( P_n(x) \\) using Rodrigues’ formula.",
+                "Use Legendre functions in potential theory and spherical harmonics."
+            ],
+            "duration": 15,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "series_solutions",
+            "title": "Series Solutions of Differential Equations",
+            "description": "Solving ODEs using Frobenius and power series methods.",
+            "bulletpoints": [
+                "Use Frobenius’ method for singular points: \\[ y(x) = \\sum_{n=0}^{\\infty} a_n x^{n+r} \\]",
+                "Determine indicial roots from the lowest-order term.",
+                "Apply series solutions to Bessel and Legendre equations."
+            ],
+            "duration": 16,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "nonlinear_odes",
+            "title": "Nonlinear Differential Equations",
+            "description": "Exploring methods for solving nonlinear ODEs.",
+            "bulletpoints": [
+                "Identify autonomous nonlinear equations: \\[ \\frac{dx}{dt} = f(x) \\]",
+                "Use phase plane analysis to study stability and equilibrium points.",
+                "Apply perturbation methods to approximate solutions."
+            ],
+            "duration": 17,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "chaotic_systems",
+            "title": "Chaos Theory & Differential Equations",
+            "description": "Understanding how differential equations model chaotic systems.",
+            "bulletpoints": [
+                "Define a chaotic system using sensitive dependence on initial conditions.",
+                "Analyze the Lorenz system equations: \\[ \\frac{dx}{dt} = \\sigma(y - x), \\quad \\frac{dy}{dt} = x(\\rho - z) - y, \\quad \\frac{dz}{dt} = xy - \\beta z \\]",
+                "Explore chaotic attractors and fractal geometry in dynamical systems."
+            ],
+            "duration": 18,
+            "difficulty": "Expert"
+        }
+    ]
+}

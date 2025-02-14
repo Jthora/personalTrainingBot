@@ -1,0 +1,36 @@
+{
+    "id": "supply_chain_protection_tactics",
+    "name": "Supply Chain Protection Tactics",
+    "description": "Strategies to prevent food and water supply tampering and ensure security in distribution networks.",
+    "focus": [
+        "Supply Chain Surveillance",
+        "Tampering Detection",
+        "Security & Defense Measures"
+    ],
+    "cards": [
+        {
+            "id": "supply_1",
+            "title": "Monitoring for Supply Chain Tampering",
+            "description": "Detecting disruptions and intentional contamination in food and water distribution systems.",
+            "bulletpoints": "Inspection checkpoints, tracking supply anomalies, packaging integrity checks",
+            "duration": "12",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "supply_2",
+            "title": "Defensive Measures Against Food & Water Sabotage",
+            "description": "Developing safeguards to prevent malicious alterations in critical supply networks.",
+            "bulletpoints": "Supply chain fortification, storage security, protective barriers",
+            "duration": "10",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "supply_3",
+            "title": "Covert and Overt Protection Strategies for Food & Water Reserves",
+            "description": "Using both visible and hidden security measures to protect against large-scale contamination attempts.",
+            "bulletpoints": "Surveillance methods, tamper-proof seals, strategic stockpiling",
+            "duration": "12",
+            "difficulty": "Expert"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "id": "bioelectric_psionic_tech",
+    "name": "Bioelectric & Psionic Enhancement Technologies",
+    "description": "Training in human bioelectricity, brainwave entrainment, and technologies enhancing psionic capabilities.",
+    "difficulty": "Advanced",
+    "estimated_time": "24-48 months",
+    "focus": [
+        "Bioelectric Field Manipulation",
+        "Brainwave Synchronization & Amplification",
+        "Cybernetic & Psionic Interface Technologies"
+    ],
+    "cardDecks": [
+        "human_biofield_and_energy_systems",
+        "electromagnetic_brainwave_interaction",
+        "psionic_technology_and_consciousness_interfaces"
+    ]
+}

@@ -1,0 +1,128 @@
+{
+    "id": "non_euclidean_geometry_and_manifolds",
+    "name": "Non-Euclidean Geometry & Manifolds",
+    "description": "Exploring geometries beyond Euclidean space and their applications in physics.",
+    "focus": ["Hyperbolic Geometry", "Differential Manifolds"],
+    "cards": [
+        {
+            "id": "hyperbolic_geometry",
+            "title": "Hyperbolic Geometry & Curved Spaces",
+            "description": "Understanding non-Euclidean spaces where parallel lines diverge.",
+            "bulletpoints": [
+                "Study how hyperbolic geometry differs from Euclidean space by satisfying \\[ \\sum \\theta_i < 180^{\\circ} \\] for triangle angles.",
+                "Explore the Poincaré disk model, where geodesics appear as circular arcs that meet the boundary at right angles.",
+                "Analyze applications in relativity, where spacetime curvature can be described by hyperbolic metrics."
+            ],
+            "duration": 12,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "riemannian_manifolds",
+            "title": "Riemannian Manifolds & Metric Spaces",
+            "description": "Exploring curved manifolds and how they relate to general relativity.",
+            "bulletpoints": [
+                "Understand the mathematical foundation of Riemannian geometry through the metric tensor \\( g_{\\mu\\nu} \\).",
+                "Explore geodesics defined by the Christoffel symbols: \\[ \\frac{d^2 x^\\mu}{ds^2} + \\Gamma^\\mu_{\\nu\\lambda} \\frac{dx^\\nu}{ds} \\frac{dx^\\lambda}{ds} = 0 \\].",
+                "Analyze gravitational lensing and cosmic topology using the Einstein field equations: \\[ R_{\\mu\\nu} - \\frac{1}{2} R g_{\\mu\\nu} = \\frac{8\\pi G}{c^4} T_{\\mu\\nu} \\]."
+            ],
+            "duration": 14,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "higher_dimensional_manifolds",
+            "title": "Higher-Dimensional Manifolds & Exotic Spaces",
+            "description": "Studying mathematical structures used in higher-dimensional physics and string theory.",
+            "bulletpoints": [
+                "Learn about fiber bundles, where a space \\( E \\) is locally a product space \\( B \\times F \\).",
+                "Explore exotic smooth structures such as the \\( 7 \\)-dimensional Milnor spheres.",
+                "Analyze extra dimensions in string theory, described by compactified Calabi-Yau manifolds."
+            ],
+            "duration": 16,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "lorentzian_manifolds",
+            "title": "Lorentzian Manifolds & Spacetime Geometry",
+            "description": "Understanding manifolds with a metric signature that allows time-like dimensions.",
+            "bulletpoints": [
+                "Study the Lorentz metric: \\[ ds^2 = -c^2 dt^2 + dx^2 + dy^2 + dz^2 \\].",
+                "Explore time dilation and event horizons in curved Lorentzian manifolds.",
+                "Analyze how black hole horizons and causal structures are encoded in Penrose diagrams."
+            ],
+            "duration": 14,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cartan_formalism",
+            "title": "Cartan's Formalism & Differential Forms",
+            "description": "Using differential forms to describe geometry and physics.",
+            "bulletpoints": [
+                "Define differential forms as antisymmetric tensors: \\[ \\omega = f dx^1 \\wedge dx^2 \\wedge \\cdots \\wedge dx^n \\].",
+                "Explore how the exterior derivative \\( d \\) generalizes the gradient, curl, and divergence.",
+                "Apply Cartan’s formalism to general relativity, encoding curvature in the curvature 2-form."
+            ],
+            "duration": 16,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "einstein_cartan_theory",
+            "title": "Einstein-Cartan Theory & Spacetime Torsion",
+            "description": "Generalizing Einstein's relativity to include spacetime torsion effects.",
+            "bulletpoints": [
+                "Study the torsion tensor \\( T^\\lambda_{\\mu\\nu} \\), which modifies geodesic equations.",
+                "Explore how spin and torsion interact in quantum gravity.",
+                "Analyze solutions to Einstein-Cartan equations for rotating black holes."
+            ],
+            "duration": 18,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "symplectic_geometry",
+            "title": "Symplectic Geometry & Hamiltonian Mechanics",
+            "description": "Exploring phase space structures used in classical and quantum physics.",
+            "bulletpoints": [
+                "Define a symplectic manifold \\( (M, \\omega) \\) where \\( \\omega \\) is a closed, non-degenerate 2-form.",
+                "Understand Hamiltonian mechanics via Poisson brackets: \\[ \\{f, g\\} = \\sum \\frac{\\partial f}{\\partial q^i} \\frac{\\partial g}{\\partial p_i} - \\frac{\\partial f}{\\partial p_i} \\frac{\\partial g}{\\partial q^i} \\].",
+                "Analyze applications in quantum mechanics, where observables form a non-commutative algebra."
+            ],
+            "duration": 16,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "klein_geometry",
+            "title": "Klein's Erlangen Program & Homogeneous Spaces",
+            "description": "Understanding geometry through transformation groups.",
+            "bulletpoints": [
+                "Study Klein’s idea that geometries are defined by their symmetry groups.",
+                "Analyze homogeneous spaces \\( G/H \\), where \\( G \\) is a Lie group and \\( H \\) is a stabilizer subgroup.",
+                "Explore applications in string theory and supergravity, where extra dimensions are modeled by homogeneous spaces."
+            ],
+            "duration": 14,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "non_commutative_geometry",
+            "title": "Non-Commutative Geometry & Quantum Spaces",
+            "description": "Extending geometry to spaces where coordinates do not commute.",
+            "bulletpoints": [
+                "Study how coordinates in quantum spaces satisfy \\[ [x^i, x^j] = i \\theta^{ij} \\].",
+                "Analyze spectral triples \\( (A, H, D) \\), where \\( A \\) is an algebra of functions, \\( H \\) a Hilbert space, and \\( D \\) a Dirac operator.",
+                "Explore applications to quantum gravity and string theory."
+            ],
+            "duration": 18,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "topological_insulators",
+            "title": "Topological Insulators & Quantum Hall Effect",
+            "description": "Understanding how topology protects electronic states in condensed matter physics.",
+            "bulletpoints": [
+                "Study Berry phase and Chern numbers in quantum Hall systems.",
+                "Analyze how edge states in topological insulators are protected by topology.",
+                "Explore applications of topological materials in quantum computing."
+            ],
+            "duration": 16,
+            "difficulty": "Expert"
+        }
+    ]
+}

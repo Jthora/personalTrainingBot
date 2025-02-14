@@ -1,0 +1,36 @@
+{
+    "id": "holistic_and_herbal_remedies",
+    "name": "Holistic & Herbal Remedies",
+    "description": "Utilizing herbal medicine, traditional healing methods, and alternative therapies for BioChem recovery.",
+    "focus": [
+        "Herbal Antidotes & Detox",
+        "Regenerative Healing",
+        "Natural Immunity Boosting"
+    ],
+    "cards": [
+        {
+            "id": "herbal_1",
+            "title": "Herbal Detoxification & Antidotes",
+            "description": "Using medicinal plants and natural compounds to neutralize toxins and support recovery.",
+            "bulletpoints": "Activated charcoal, milk thistle, turmeric for liver detox",
+            "duration": "12",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "herbal_2",
+            "title": "Regenerative Medicine & Tissue Recovery",
+            "description": "Natural methods to accelerate healing, reduce inflammation, and repair damaged tissues.",
+            "bulletpoints": "Collagen regeneration, essential oils, cellular rejuvenation",
+            "duration": "14",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "herbal_3",
+            "title": "Immune System Fortification",
+            "description": "Strengthening the body’s natural defenses against biological threats and environmental toxins.",
+            "bulletpoints": "Adaptogens, immune boosters, nutritional therapy",
+            "duration": "10",
+            "difficulty": "Intermediate"
+        }
+    ]
+}

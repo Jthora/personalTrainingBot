@@ -12,6 +12,7 @@
     "cardDecks": [
         "future_trend_analysis",
         "risk_prediction_models",
+        "risk_prediction_fundamentals",
         "geopolitical_simulations"
     ]
 }

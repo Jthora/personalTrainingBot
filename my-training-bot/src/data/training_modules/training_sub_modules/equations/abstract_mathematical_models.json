@@ -1,0 +1,17 @@
+{
+    "id": "abstract_mathematical_models",
+    "name": "Abstract Mathematical Models",
+    "description": "Training in advanced mathematical structures used in theoretical and applied sciences.",
+    "difficulty": "Expert",
+    "estimated_time": "24-48 months",
+    "focus": [
+        "Abstract Algebra",
+        "Group Theory",
+        "Tensor Calculus"
+    ],
+    "cardDecks": [
+        "group_theory_and_symmetry",
+        "tensor_notation_and_applications",
+        "mathematical_models_in_physics"
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "id": "antidote_and_detox_methods",
+    "name": "Antidote & Detox Methods",
+    "description": "Training in counteracting poisons, venom, and synthetic biochem threats through antidotes, natural detox, and biochemical repair.",
+    "focus": [
+        "Neutralizing Poisons & Venoms",
+        "Toxin Binding & Elimination",
+        "Organ Regeneration & Cellular Repair"
+    ],
+    "cards": [
+        {
+            "id": "antidote_1",
+            "title": "Emergency Antidotes for Common Industrial Poisons",
+            "description": "Using pharmaceutical and holistic antidotes for known toxins used in industrial and biochem warfare.",
+            "bulletpoints": "Activated charcoal, NAC, sodium thiosulfate, chelation therapy",
+            "duration": "12",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "antidote_2",
+            "title": "Natural Detoxification Against Heavy Metals & Neurotoxins",
+            "description": "Using herbal and natural methods to expel heavy metals and neurological toxins from the body.",
+            "bulletpoints": "Zeolite, chlorella, spirulina, cilantro detox protocols",
+            "duration": "14",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "antidote_3",
+            "title": "Reversing DNA & Organ Damage from Mutagenic Agents",
+            "description": "Strategies for reversing the effects of genetic-modifying bioweapons and organ-damaging toxins.",
+            "bulletpoints": "Molecular hydrogen therapy, fasting-induced autophagy, mitochondrial repair compounds",
+            "duration": "14",
+            "difficulty": "Expert"
+        }
+    ]
+}

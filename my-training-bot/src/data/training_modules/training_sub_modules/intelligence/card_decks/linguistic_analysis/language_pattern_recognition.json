@@ -4,7 +4,9 @@
     "description": "Analyzing text and speech patterns to extract intelligence insights.",
     "focus": [
         "Natural Language Processing",
-        "Pattern Recognition"
+        "Pattern Recognition",
+        "Computational Linguistics",
+        "Speech Analysis"
     ],
     "cards": [
         {
@@ -12,9 +14,9 @@
             "title": "Syntax and Semantics in Intelligence Analysis",
             "description": "Understanding how structure and meaning shape communication in intelligence contexts.",
             "bulletpoints": [
-                "Differentiate between syntax and semantic structures",
-                "Analyze grammatical markers for implicit meaning",
-                "Apply NLP tools to detect variations in speech patterns"
+                "Differentiate between syntax (sentence structure) and semantics (word meaning)",
+                "Analyze grammatical markers that imply hidden or implicit meanings",
+                "Apply Natural Language Processing (NLP) tools to detect subtle variations in speech patterns"
             ],
             "duration": 6,
             "difficulty": "Intermediate"
@@ -24,11 +26,107 @@
             "title": "Topic Modeling and Key Phrase Extraction",
             "description": "Extracting core themes and identifying important keywords in text analysis.",
             "bulletpoints": [
-                "Use TF-IDF and LDA for automated topic modeling",
-                "Identify high-frequency words and contextual phrases",
-                "Analyze sentiment-weighted keywords for deeper insights"
+                "Use Term Frequency-Inverse Document Frequency (TF-IDF) and Latent Dirichlet Allocation (LDA) to categorize topics in large text datasets",
+                "Identify high-frequency words and key phrases that indicate central themes",
+                "Analyze sentiment-weighted keywords to uncover emotional tones in speech or text"
             ],
             "duration": 7,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "sentiment_analysis",
+            "title": "Sentiment Analysis for Threat Detection",
+            "description": "Understanding the emotional tone and intent behind words for intelligence gathering.",
+            "bulletpoints": [
+                "Define sentiment analysis and its role in intelligence and security",
+                "Use machine learning models to classify texts as positive, negative, or neutral",
+                "Apply lexicon-based and deep learning approaches to detect aggressive or deceptive language"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "named_entity_recognition",
+            "title": "Named Entity Recognition (NER) for Identifying Key Players",
+            "description": "Extracting significant names, locations, organizations, and other entities from texts.",
+            "bulletpoints": [
+                "Explain Named Entity Recognition (NER) and how it is used in intelligence operations",
+                "Use pre-trained NER models to identify people, places, and organizations",
+                "Recognize patterns in alias usage and anonymized references in covert communications"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "deception_detection",
+            "title": "Deception Detection in Language Patterns",
+            "description": "Identifying linguistic markers that indicate deception or misinformation.",
+            "bulletpoints": [
+                "Recognize deception indicators such as hedging, vague language, and excessive detail",
+                "Use linguistic analysis to detect inconsistencies in written and spoken statements",
+                "Apply behavioral and computational models to assess truthfulness in speech"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "speech_recognition",
+            "title": "Speech Recognition and Acoustic Analysis",
+            "description": "Using automated speech-to-text conversion and analyzing vocal patterns.",
+            "bulletpoints": [
+                "Understand how Automatic Speech Recognition (ASR) systems transcribe spoken language",
+                "Analyze voice stress, intonation, and hesitations for psychological profiling",
+                "Use acoustic fingerprinting to track individuals in recorded conversations"
+            ],
+            "duration": 8,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "code_switching",
+            "title": "Code-Switching and Linguistic Adaptation",
+            "description": "Detecting shifts in language use based on audience, context, or strategic intent.",
+            "bulletpoints": [
+                "Define code-switching and its role in multilingual communication",
+                "Analyze when and why speakers shift between different languages or dialects",
+                "Identify patterns of linguistic adaptation in intelligence contexts"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "stylometry",
+            "title": "Stylometry and Author Attribution",
+            "description": "Identifying unique linguistic signatures to determine the authorship of a text.",
+            "bulletpoints": [
+                "Explain how stylometry measures writing style based on word frequency, syntax, and phrasing",
+                "Apply computational models to match anonymous texts to known authors",
+                "Use forensic linguistics to uncover deception and authorship misattribution"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "discourse_analysis",
+            "title": "Discourse Analysis in Intelligence Gathering",
+            "description": "Examining how language is used in different contexts to reveal intent and influence.",
+            "bulletpoints": [
+                "Define discourse analysis and its application in intelligence research",
+                "Identify discourse markers that indicate persuasion, manipulation, or radicalization",
+                "Analyze online discussions, social media posts, and propaganda materials for intelligence insights"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "machine_translation_analysis",
+            "title": "Machine Translation and Cross-Language Intelligence",
+            "description": "Evaluating the reliability of machine-translated intelligence materials.",
+            "bulletpoints": [
+                "Understand the strengths and weaknesses of machine translation tools like Google Translate and DeepL",
+                "Identify mistranslations that alter meaning in intelligence reports",
+                "Use bilingual corpus analysis to verify accuracy in cross-language communications"
+            ],
+            "duration": 5,
             "difficulty": "Intermediate"
         }
     ]

@@ -1,0 +1,131 @@
+{
+    "id": "matrices_and_linear_algebra",
+    "name": "Matrices & Linear Algebra",
+    "description": "Understanding matrix operations and their applications in algebra and computational mathematics.",
+    "focus": ["Matrix Operations", "Linear Systems"],
+    "cards": [
+        {
+            "id": "matrix_operations",
+            "title": "Matrix Operations & Properties",
+            "description": "Mastering the fundamental operations with matrices and their properties.",
+            "bulletpoints": [
+                "Perform matrix addition: \\( A + B = [a_{ij}] + [b_{ij}] = [a_{ij} + b_{ij}] \\).",
+                "Perform scalar multiplication: \\( cA = c[a_{ij}] = [c a_{ij}] \\).",
+                "Multiply matrices using the row-column rule: \\[ C = AB \\quad \\text{where} \\quad C_{ij} = \\sum_{k} A_{ik} B_{kj} \\].",
+                "Understand the properties of identity matrices \\( I_n \\) and inverse matrices \\( A^{-1} \\) such that \\( A A^{-1} = I \\)."
+            ],
+            "duration": 9,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "determinants_and_inverses",
+            "title": "Determinants & Inverse Matrices",
+            "description": "Using determinants and inverses to solve matrix equations.",
+            "bulletpoints": [
+                "Calculate determinants for \\( 2 \\times 2 \\) matrices: \\[ \\det(A) = \\begin{vmatrix} a & b \\\\ c & d \\end{vmatrix} = ad - bc \\].",
+                "Calculate determinants for \\( 3 \\times 3 \\) matrices using cofactor expansion.",
+                "Find the inverse of a matrix using the formula: \\[ A^{-1} = \\frac{1}{\\det(A)} \\text{adj}(A) \\].",
+                "Use Cramer’s Rule to solve linear systems: \\( x_i = \\frac{\\det(A_i)}{\\det(A)} \\)."
+            ],
+            "duration": 10,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "eigenvalues_and_vectors",
+            "title": "Eigenvalues & Eigenvectors",
+            "description": "Exploring the role of eigenvalues and eigenvectors in linear transformations.",
+            "bulletpoints": [
+                "Compute eigenvalues by solving the characteristic equation: \\( \\det(A - \\lambda I) = 0 \\).",
+                "Find eigenvectors associated with each eigenvalue by solving \\( (A - \\lambda I)x = 0 \\).",
+                "Apply eigenvectors in physics, computer graphics, and data science (e.g., PCA, Markov Chains)."
+            ],
+            "duration": 12,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "matrix_decompositions",
+            "title": "Matrix Decompositions",
+            "description": "Understanding various matrix factorizations used in computational applications.",
+            "bulletpoints": [
+                "Perform LU decomposition: \\( A = LU \\), where \\( L \\) is a lower triangular matrix and \\( U \\) is an upper triangular matrix.",
+                "Use QR decomposition: \\( A = QR \\), where \\( Q \\) is an orthogonal matrix and \\( R \\) is an upper triangular matrix.",
+                "Understand Singular Value Decomposition (SVD): \\[ A = U \\Sigma V^T \\]."
+            ],
+            "duration": 10,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "vector_spaces",
+            "title": "Vector Spaces & Basis",
+            "description": "Exploring the structure of vector spaces and their bases.",
+            "bulletpoints": [
+                "Define a vector space over a field \\( \\mathbb{F} \\) with properties of closure under addition and scalar multiplication.",
+                "Understand the concept of a basis: A set of linearly independent vectors that span the space.",
+                "Compute the dimension of a vector space as the number of basis vectors."
+            ],
+            "duration": 8,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "linear_transformations",
+            "title": "Linear Transformations & Change of Basis",
+            "description": "Studying functions that preserve vector space operations.",
+            "bulletpoints": [
+                "Define a linear transformation: \\( T: V \\to W \\) where \\( T(av + bw) = aT(v) + bT(w) \\).",
+                "Represent a linear transformation as a matrix \\( [T] \\) relative to a basis.",
+                "Understand change of basis: \\[ [T]_{B'} = P^{-1} [T]_B P \\], where \\( P \\) is the transformation matrix."
+            ],
+            "duration": 10,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "norms_and_inner_products",
+            "title": "Norms & Inner Product Spaces",
+            "description": "Studying vector norms and inner products to define geometric properties.",
+            "bulletpoints": [
+                "Define a norm as a function \\( \\|v\\| \\) that measures vector magnitude.",
+                "Compute Euclidean norm (L2 norm): \\( \\|x\\|_2 = \\sqrt{x^T x} \\).",
+                "Understand inner products: \\[ \\langle x, y \\rangle = x^T y \\], which generalizes dot products.",
+                "Use Gram-Schmidt orthogonalization to construct an orthonormal basis."
+            ],
+            "duration": 9,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "orthogonality_and_projections",
+            "title": "Orthogonality & Projections",
+            "description": "Studying the role of orthogonal vectors and their applications.",
+            "bulletpoints": [
+                "Define orthogonality: Two vectors \\( x \\) and \\( y \\) are orthogonal if \\( \\langle x, y \\rangle = 0 \\).",
+                "Compute the projection of a vector onto a subspace: \\[ \\text{proj}_W(v) = P v \\] where \\( P \\) is the projection matrix.",
+                "Understand the least-squares approximation as a projection problem."
+            ],
+            "duration": 8,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "applications_in_graph_theory",
+            "title": "Graph Theory Applications",
+            "description": "Exploring how matrices are used to analyze graph structures.",
+            "bulletpoints": [
+                "Define the adjacency matrix \\( A \\) for a graph: \\( A_{ij} = 1 \\) if there is an edge from node \\( i \\) to node \\( j \\).",
+                "Understand the Laplacian matrix \\( L = D - A \\), where \\( D \\) is the degree matrix.",
+                "Use spectral graph theory: The eigenvalues of \\( L \\) provide insights into graph connectivity."
+            ],
+            "duration": 10,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "applications_in_machine_learning",
+            "title": "Machine Learning Applications",
+            "description": "Exploring how matrices and linear algebra power modern machine learning.",
+            "bulletpoints": [
+                "Use matrices for feature transformations: \\( X W + b \\) in neural networks.",
+                "Apply Principal Component Analysis (PCA) using eigenvalue decomposition.",
+                "Compute gradients efficiently using matrix calculus in backpropagation."
+            ],
+            "duration": 12,
+            "difficulty": "Expert"
+        }
+    ]
+}

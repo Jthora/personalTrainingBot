@@ -1,0 +1,131 @@
+{
+    "id": "high_voltage_field_effects",
+    "name": "High Voltage Field Effects",
+    "description": "Understanding how high-voltage electric fields influence materials, ionization, and propulsion.",
+    "focus": [
+        "Electrostatics",
+        "Field Manipulation"
+    ],
+    "cards": [
+        {
+            "id": "electrostatic_lift",
+            "title": "Electrostatic Lift & Ionic Wind Propulsion",
+            "description": "Exploring how high-voltage fields generate lift and airflow through ion movement.",
+            "bulletpoints": [
+                "Understand how electrostatic repulsion creates lift in lifters and ionocraft by utilizing Coulomb forces: \\[ F = \\frac{k Q_1 Q_2}{r^2} \\]",
+                "Analyze ion wind propulsion using drift velocity \\( v_d \\) and ion mobility \\( \\mu \\) in electric fields: \\[ v_d = \\mu E \\]",
+                "Study the influence of electrode configuration on thrust efficiency and optimize spacing for maximum ion acceleration."
+            ],
+            "duration": 10,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "dielectric_breakdown",
+            "title": "Dielectric Breakdown & Plasma Generation",
+            "description": "Studying how high-voltage fields ionize gases and create plasma discharges.",
+            "bulletpoints": [
+                "Analyze Paschen's Law, which predicts breakdown voltage \\( V \\) in gases: \\[ V = \\frac{B p d}{\\ln(A p d) - \\ln(\\ln(1 + 1/\\gamma))} \\]",
+                "Investigate dielectric materials that enhance energy storage and resist breakdown using permittivity \\( \\epsilon_r \\): \\[ C = \\frac{\\epsilon_r \\epsilon_0 A}{d} \\]",
+                "Learn how to safely generate and control plasma arcs in propulsion and electrostatic shielding applications."
+            ],
+            "duration": 12,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "electrohydrodynamics",
+            "title": "Electrohydrodynamics & Charge Flow Control",
+            "description": "Examining the motion of charged particles in high-voltage fields for propulsion and control.",
+            "bulletpoints": [
+                "Explore how charged particles interact with electric fields using the Lorentz force equation: \\[ \\mathbf{F} = q (\\mathbf{E} + \\mathbf{v} \\times \\mathbf{B}) \\]",
+                "Study practical applications like electrofluidic thrusters, space propulsion, and ionic propulsion systems.",
+                "Investigate charge separation effects leading to novel thrust mechanisms using fluid ionization models."
+            ],
+            "duration": 14,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "capacitive_energy_storage",
+            "title": "Capacitive Energy Storage in High-Voltage Systems",
+            "description": "Understanding how capacitors store and discharge high-voltage energy.",
+            "bulletpoints": [
+                "Analyze energy storage in capacitors with the equation: \\[ U = \\frac{1}{2} C V^2 \\]",
+                "Study dielectric breakdown limits in ultra-high voltage capacitors and energy density considerations.",
+                "Examine pulsed power applications where rapid energy discharge is needed."
+            ],
+            "duration": 11,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "electrokinetic_propulsion",
+            "title": "Electrokinetic Propulsion & Charge Acceleration",
+            "description": "Using high-voltage fields to accelerate ions and charged particles for propulsion.",
+            "bulletpoints": [
+                "Understand electrokinetic acceleration in electric fields: \\[ F = qE \\]",
+                "Analyze ion thruster performance using specific impulse \\( I_{sp} \\): \\[ I_{sp} = \\frac{F}{\\dot{m} g_0} \\]",
+                "Investigate electric field geometries that maximize thrust efficiency and minimize energy losses."
+            ],
+            "duration": 13,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "high_voltage_plasma_control",
+            "title": "High-Voltage Plasma Control & Magnetic Confinement",
+            "description": "Manipulating plasma dynamics using high-voltage electric and magnetic fields.",
+            "bulletpoints": [
+                "Analyze plasma containment using the equation for gyro-radius: \\[ r_g = \\frac{m v_\\perp}{q B} \\]",
+                "Study Langmuir probes for measuring plasma density and electron temperature.",
+                "Investigate the application of high-voltage fields for plasma stabilization in fusion research."
+            ],
+            "duration": 15,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "high_voltage_arc_discharge",
+            "title": "High-Voltage Arc Discharge & Lightning Simulation",
+            "description": "Examining how controlled arc discharges simulate lightning and plasma effects.",
+            "bulletpoints": [
+                "Model arc discharge current using Paschen's breakdown relation and Townsend coefficient.",
+                "Analyze the formation of leader channels in high-voltage discharge events.",
+                "Investigate the role of streamer propagation in high-energy electrical discharges."
+            ],
+            "duration": 14,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "corona_discharge",
+            "title": "Corona Discharge & High-Voltage Field Emissions",
+            "description": "Exploring how high-voltage gradients lead to ionization and charge leakage.",
+            "bulletpoints": [
+                "Understand the formation of corona discharge around conductors using \\( E = \\frac{V}{r \\ln(R/r)} \\).",
+                "Study methods to suppress corona losses in high-voltage transmission lines.",
+                "Investigate how corona discharge enhances air ionization for electrostatic applications."
+            ],
+            "duration": 12,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "electrostatic_levitation",
+            "title": "Electrostatic Levitation & Charge Suspension",
+            "description": "Using static charge to suspend objects against gravitational forces.",
+            "bulletpoints": [
+                "Analyze Coulomb force balance for levitation: \\[ mg = \\frac{k Q_1 Q_2}{r^2} \\]",
+                "Study the effects of charge distribution on electrostatic suspension systems.",
+                "Examine practical applications in high-voltage field manipulation experiments."
+            ],
+            "duration": 11,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "vacuum_arc_thrusters",
+            "title": "Vacuum Arc Thrusters & Electromagnetic Pulses",
+            "description": "Exploring plasma-based propulsion using vacuum arc discharges.",
+            "bulletpoints": [
+                "Understand how vacuum arc thrusters use cathodic arc spots for plasma acceleration.",
+                "Analyze impulse bit performance using plasma expansion models.",
+                "Investigate how magnetic nozzles shape and direct plasma flows."
+            ],
+            "duration": 15,
+            "difficulty": "Expert"
+        }
+    ]
+}

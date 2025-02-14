@@ -1,0 +1,17 @@
+{
+    "id": "neural_network_mathematics",
+    "name": "Neural Network Mathematics & AI Theory",
+    "description": "Advanced training in the mathematical foundations of neural networks, deep learning models, and AI decision-making processes.",
+    "difficulty": "Expert",
+    "estimated_time": "24-48 months",
+    "focus": [
+        "Matrix Calculations in AI",
+        "Gradient Descent & Optimization",
+        "Activation Functions & Backpropagation"
+    ],
+    "cardDecks": [
+        "fundamentals_of_neural_networks",
+        "deep_learning_architectures",
+        "ai_model_training_and_tuning"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "id": "biochem_survival_medicine",
+    "name": "BioChem Survival Medicine",
+    "description": "Training in emergency medical treatment, holistic healing, and unconventional yet effective countermeasures against BioChem threats.",
+    "difficulty": "Expert",
+    "estimated_time": "18-48 months",
+    "focus": [
+        "Emergency BioChem Treatments",
+        "Herbal & Holistic Medicine",
+        "Field Expedient Countermeasures"
+    ],
+    "cardDecks": [
+        "emergency_first_aid_for_biochem_exposure",
+        "holistic_and_herbal_remedies",
+        "survival_treatment_in_hostile_environments"
+    ]
+}

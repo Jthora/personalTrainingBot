@@ -1,0 +1,17 @@
+{
+    "id": "contagion_containment_strategies",
+    "name": "Contagion Containment Strategies",
+    "description": "Training in rapid response, quarantine protocols, and mitigation techniques to prevent the spread of bioweapons and naturally occurring pandemics.",
+    "difficulty": "Expert",
+    "estimated_time": "18-48 months",
+    "focus": [
+        "Quarantine Procedures",
+        "Rapid Response Containment",
+        "Pathogen Risk Mitigation"
+    ],
+    "cardDecks": [
+        "infection_control_tactics",
+        "quarantine_zone_management",
+        "emergency_containment_protocols"
+    ]
+}

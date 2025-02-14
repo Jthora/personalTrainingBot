@@ -1,0 +1,36 @@
+{
+    "id": "detecting_medical_disinformation",
+    "name": "Detecting Medical Disinformation",
+    "description": "Training in recognizing false and misleading medical information used as a tool for control, suppression, and deception.",
+    "focus": [
+        "Identifying False Medical Narratives",
+        "Media Manipulation in Healthcare",
+        "Tracking PsyOps Influence in Medicine"
+    ],
+    "cards": [
+        {
+            "id": "med_disinfo_1",
+            "title": "Spotting False Medical Narratives in Mainstream Media",
+            "description": "Analyzing corporate-controlled media tactics used to promote misleading medical information.",
+            "bulletpoints": "Scripted messaging, narrative reinforcement, suppression of alternative medicine",
+            "duration": "12",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "med_disinfo_2",
+            "title": "Understanding Pharma-Backed Disinformation Campaigns",
+            "description": "Unmasking the role of pharmaceutical conglomerates in controlling medical discourse.",
+            "bulletpoints": "Industry-funded studies, ghostwritten medical journals, suppression of generic treatments",
+            "duration": "14",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "med_disinfo_3",
+            "title": "Social Engineering Tactics in Medical Propaganda",
+            "description": "Examining how psychological warfare is used to manipulate medical choices on a global scale.",
+            "bulletpoints": "Fear-based compliance, problem-reaction-solution cycles, false scarcity tactics",
+            "duration": "12",
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "id": "electrogravitics_and_field_propulsion",
+    "name": "Electrogravitics & Field Propulsion",
+    "description": "Advanced training in electrogravitics, zero-point energy, and field-based propulsion technologies.",
+    "difficulty": "Expert",
+    "estimated_time": "36-60 months",
+    "focus": [
+        "Electromagnetic Field Dynamics",
+        "Gravity Control & Exotic Propulsion",
+        "Energy Extraction & Manipulation"
+    ],
+    "cardDecks": [
+        "high_voltage_field_effects",
+        "anti_gravity_and_lorentz_forces",
+        "zero_point_energy_and_vacuum_fluctuations"
+    ]
+}

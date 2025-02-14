@@ -1,0 +1,17 @@
+{
+    "id": "hyperdimensional_mathematics",
+    "name": "Hyperdimensional Mathematics & Vortex Physics",
+    "description": "Training in the mathematics of higher-dimensional spaces, energy vortices, and advanced topological structures.",
+    "difficulty": "Expert",
+    "estimated_time": "48-72 months",
+    "focus": [
+        "Higher-Dimensional Geometry",
+        "Vortex Mechanics & Torus Fields",
+        "Non-Euclidean & Hyperbolic Spaces"
+    ],
+    "cardDecks": [
+        "hyperdimensional_topologies",
+        "vortex_physics_and_energy_flow",
+        "non_euclidean_geometry_and_manifolds"
+    ]
+}

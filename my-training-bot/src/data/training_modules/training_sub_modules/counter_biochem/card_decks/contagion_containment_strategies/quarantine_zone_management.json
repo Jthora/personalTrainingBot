@@ -1,0 +1,36 @@
+{
+    "id": "quarantine_zone_management",
+    "name": "Quarantine Zone Management",
+    "description": "Training in establishing and enforcing effective quarantine zones to limit pathogen spread.",
+    "focus": [
+        "Quarantine Enforcement",
+        "Containment Zone Setup",
+        "Biohazard Area Security"
+    ],
+    "cards": [
+        {
+            "id": "quarantine_1",
+            "title": "Establishing a Secure Quarantine Zone",
+            "description": "Techniques for setting up controlled containment areas to restrict pathogen spread.",
+            "bulletpoints": "Zoning protocols, air filtration, entry/exit decontamination",
+            "duration": "12",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "quarantine_2",
+            "title": "Psychological and Social Management in Quarantine",
+            "description": "Handling panic, misinformation, and public compliance during quarantine operations.",
+            "bulletpoints": "Crisis communication, misinformation countermeasures, morale maintenance",
+            "duration": "10",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "quarantine_3",
+            "title": "Medical Triage & Resource Allocation in Quarantine Zones",
+            "description": "Effective triage and resource distribution strategies for high-risk containment areas.",
+            "bulletpoints": "Priority care levels, medical supply rationing, decision-making under crisis",
+            "duration": "12",
+            "difficulty": "Expert"
+        }
+    ]
+}

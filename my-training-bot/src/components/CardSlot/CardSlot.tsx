@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Card } from '../../types/Card';
 import styles from './CardSlot.module.css';
 import { useCardContext } from '../../context/CardContext';
+import 'katex/dist/katex.min.css';
+import katex from 'katex';
 
 interface CardSlotProps {
     card: Card | null;
@@ -42,6 +44,23 @@ const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
         return `${String(minutes).padStart(2, '0')}:${String(remainingSeconds).padStart(2, '0')}`;
     };
 
+    const formatBulletpoint = (text: string) => {
+        const inlineMathRegex = /\\\((.*?)\\\)/g;
+        const blockMathRegex = /\\\[(.*?)\\\]/g;
+
+        return text.split(blockMathRegex).map((part, index) => {
+            if (index % 2 === 1) {
+                return <span key={index} dangerouslySetInnerHTML={{ __html: katex.renderToString(part, { displayMode: true }) }} />;
+            }
+            return part.split(inlineMathRegex).map((subPart, subIndex) => {
+                if (subIndex % 2 === 1) {
+                    return <span key={`${index}-${subIndex}`} dangerouslySetInnerHTML={{ __html: katex.renderToString(subPart) }} />;
+                }
+                return subPart;
+            });
+        });
+    };
+
     if (!card) {
         console.log('Card is null in CardSlot');
         return <div className={styles.cardSlot}>No card available</div>;
@@ -62,7 +81,7 @@ const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
                     <p className={styles.cardDescription}>{card.description}</p>
                     <ul>
                         {card.bulletpoints.map((point, index) => (
-                            <li key={index}>{point}</li>
+                            <li key={index}>{formatBulletpoint(point)}</li>
                         ))}
                     </ul>
                 </div>
@@ -79,6 +98,9 @@ const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
                         Hold 
                         <input type="checkbox" checked={isHeld} onChange={handleHoldChange} />
                     </label>
+                    <div className={styles.controls}>
+                        <button className={`${styles.cardButton}`} onClick={onDealNextCard}>Next ⏭</button>
+                    </div>
                 </div>
                 <div className={styles.bottomLeft}>
                     <div className={styles.bubbleContainer1}>
@@ -87,9 +109,6 @@ const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
                     </div>
                 </div>
                 <div className={styles.bottomRight}>
-                    <div className={styles.controls}>
-                        <button className={`${styles.cardButton}`} onClick={onDealNextCard}>Next ⏭</button>
-                    </div>
                 </div>
             </div>
         </div>

@@ -1,0 +1,17 @@
+{
+    "id": "physics_equations_and_applications",
+    "name": "Physics Equations & Applications",
+    "description": "Training in interpreting and applying mathematical equations to describe physical phenomena.",
+    "difficulty": "Advanced",
+    "estimated_time": "18-36 months",
+    "focus": [
+        "Mechanics and Motion",
+        "Electromagnetism",
+        "Thermodynamics"
+    ],
+    "cardDecks": [
+        "newtonian_mechanics_equations",
+        "electromagnetic_field_equations",
+        "thermodynamics_and_statistical_mechanics"
+    ]
+}

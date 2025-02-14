@@ -1,0 +1,17 @@
+{
+    "id": "biochem_defense_protocols",
+    "name": "Biochem Defense Protocols",
+    "description": "Training in protective measures, decontamination procedures, and shielding techniques against biological and chemical threats.",
+    "difficulty": "Advanced",
+    "estimated_time": "12-36 months",
+    "focus": [
+        "Personal Protection",
+        "Decontamination Procedures",
+        "Tactical Shielding & Filters"
+    ],
+    "cardDecks": [
+        "hazmat_safety_training",
+        "airborne_pathogen_defense",
+        "chemical_shielding_tactics"
+    ]
+}

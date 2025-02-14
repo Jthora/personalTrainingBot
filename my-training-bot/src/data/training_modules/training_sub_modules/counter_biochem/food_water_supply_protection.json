@@ -1,0 +1,17 @@
+{
+    "id": "food_water_supply_protection",
+    "name": "Food & Water Supply Protection",
+    "description": "Training in detecting and preventing food and water supply tampering to mitigate slow poisoning, malnutrition, and sabotage efforts.",
+    "difficulty": "Advanced",
+    "estimated_time": "12-30 months",
+    "focus": [
+        "Food & Water Contamination Detection",
+        "Supply Chain Security",
+        "Tampering Countermeasures"
+    ],
+    "cardDecks": [
+        "detecting_tainted_food_sources",
+        "water_supply_purification_methods",
+        "supply_chain_protection_tactics"
+    ]
+}

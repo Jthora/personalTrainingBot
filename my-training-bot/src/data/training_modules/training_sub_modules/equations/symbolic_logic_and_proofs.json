@@ -1,0 +1,17 @@
+{
+    "id": "symbolic_logic_and_proofs",
+    "name": "Symbolic Logic & Proofs",
+    "description": "Training in understanding formal logic, constructing mathematical proofs, and applying logical reasoning.",
+    "difficulty": "Advanced",
+    "estimated_time": "18-36 months",
+    "focus": [
+        "Propositional Logic",
+        "Predicate Logic",
+        "Mathematical Proofs"
+    ],
+    "cardDecks": [
+        "truth_tables_and_logic_gates",
+        "formal_proof_methods",
+        "set_theory_and_quantifiers"
+    ]
+}

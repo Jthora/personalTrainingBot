@@ -1,0 +1,36 @@
+{
+    "id": "emergency_first_aid_for_biochem_exposure",
+    "name": "Emergency First Aid for BioChem Exposure",
+    "description": "Training in rapid response treatment for biological and chemical exposure in high-risk environments.",
+    "focus": [
+        "Immediate Treatment Protocols",
+        "Neutralizing BioChem Agents",
+        "Emergency Field Care"
+    ],
+    "cards": [
+        {
+            "id": "first_aid_1",
+            "title": "Neutralizing Chemical Burns & Skin Exposure",
+            "description": "Methods for treating chemical burns, skin contact poisoning, and dermal exposure to hazardous substances.",
+            "bulletpoints": "Irrigation techniques, pH neutralization, barrier application",
+            "duration": "12",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "first_aid_2",
+            "title": "Emergency Airway Management in BioChem Exposure",
+            "description": "Procedures for clearing airways and providing oxygen support after inhalation of toxic gases or airborne bioweapons.",
+            "bulletpoints": "Oxygen therapy, airway clearance, assisted ventilation",
+            "duration": "10",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "first_aid_3",
+            "title": "Antidote Administration & Rapid Detox",
+            "description": "Using emergency antidotes and detox agents to counteract poisons, venoms, and neurotoxins.",
+            "bulletpoints": "Epinephrine injections, activated charcoal, chelation therapy",
+            "duration": "12",
+            "difficulty": "Expert"
+        }
+    ]
+}

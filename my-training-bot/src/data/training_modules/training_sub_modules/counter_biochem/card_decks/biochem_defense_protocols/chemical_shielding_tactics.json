@@ -1,0 +1,36 @@
+{
+    "id": "chemical_shielding_tactics",
+    "name": "Chemical Shielding Tactics",
+    "description": "Defensive measures to protect against chemical exposure, toxic gas attacks, and corrosive agents.",
+    "focus": [
+        "Chemical Barrier Protection",
+        "Neutralization of Toxic Agents",
+        "Emergency Evacuation & Containment"
+    ],
+    "cards": [
+        {
+            "id": "chemical_1",
+            "title": "Chemical Barrier Protection Techniques",
+            "description": "Strategies for shielding against hazardous chemical exposure using specialized materials.",
+            "bulletpoints": "Activated carbon filters, chemical-resistant suits, barrier creams",
+            "duration": "10",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "chemical_2",
+            "title": "Neutralization of Toxic Chemical Agents",
+            "description": "Using counteragents and neutralizers to mitigate the effects of chemical exposure.",
+            "bulletpoints": "Oxidizing agents, pH neutralization, decontamination foams",
+            "duration": "12",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "chemical_3",
+            "title": "Emergency Evacuation & Containment Strategies",
+            "description": "Rapid response planning for chemical spills, gas leaks, and mass contamination events.",
+            "bulletpoints": "Containment zone setup, gas dispersal tactics, emergency egress planning",
+            "duration": "12",
+            "difficulty": "Advanced"
+        }
+    ]
+}

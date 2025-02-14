@@ -1,0 +1,36 @@
+{
+    "id": "infection_control_tactics",
+    "name": "Infection Control Tactics",
+    "description": "Mastering strategies to prevent and control the spread of infectious diseases and biological threats.",
+    "focus": [
+        "Pathogen Containment",
+        "Personal Protective Equipment (PPE) Use",
+        "Sterilization Techniques"
+    ],
+    "cards": [
+        {
+            "id": "infection_1",
+            "title": "Proper Use of Personal Protective Equipment (PPE)",
+            "description": "Ensuring effective protection against biological hazards through correct use of PPE.",
+            "bulletpoints": "Glove layering, N95 vs. P100 masks, full-body suit protocols",
+            "duration": "10",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "infection_2",
+            "title": "Sterilization & Disinfection Techniques",
+            "description": "Methods for eliminating pathogens from surfaces, equipment, and environments.",
+            "bulletpoints": "UV sterilization, chemical disinfectants, autoclave usage",
+            "duration": "12",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "infection_3",
+            "title": "Barrier and Isolation Measures",
+            "description": "Strategies for minimizing direct and indirect pathogen transmission.",
+            "bulletpoints": "Negative pressure rooms, contact isolation, airlock procedures",
+            "duration": "12",
+            "difficulty": "Expert"
+        }
+    ]
+}

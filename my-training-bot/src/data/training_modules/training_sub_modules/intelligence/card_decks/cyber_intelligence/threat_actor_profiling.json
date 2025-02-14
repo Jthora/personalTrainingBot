@@ -4,7 +4,10 @@
     "description": "Analyzing cybercriminal groups, APTs, and state-sponsored hacking operations.",
     "focus": [
         "Threat Actor Profiling",
-        "Cyber Espionage"
+        "Cyber Espionage",
+        "TTP (Tactics, Techniques, and Procedures) Analysis",
+        "Malware Attribution",
+        "Threat Intelligence Feeds"
     ],
     "cards": [
         {
@@ -12,9 +15,9 @@
             "title": "Tracking Advanced Persistent Threats (APTs)",
             "description": "Identifying and monitoring nation-state and corporate-sponsored hacking groups.",
             "bulletpoints": [
-                "Map APT tactics, techniques, and procedures (TTPs) using MITRE ATT&CK",
-                "Monitor geopolitical events for cyber warfare trends",
-                "Analyze malware strains associated with state actors"
+                "Use MITRE ATT&CK to map APT tactics, techniques, and procedures (TTPs)",
+                "Analyze samples from VirusTotal, Hybrid Analysis, and Any.Run for malware attribution",
+                "Monitor geopolitical events and threat intelligence reports from Recorded Future, CrowdStrike, and Mandiant"
             ],
             "duration": 6,
             "difficulty": "Advanced"
@@ -24,12 +27,108 @@
             "title": "Cybercriminal Network Analysis",
             "description": "Profiling cybercrime syndicates and underground hacking forums.",
             "bulletpoints": [
-                "Monitor dark web marketplaces for illicit activity",
-                "Analyze ransomware gangs and extortion tactics",
-                "Track stolen data circulation and financial laundering operations"
+                "Monitor dark web marketplaces with tools like DarkOwl, CipherTrace, and Tor search engines",
+                "Analyze ransomware-as-a-service (RaaS) operations using MalwareBazaar and Malpedia",
+                "Track cryptocurrency laundering via blockchain analysis tools like Chainalysis and Elliptic"
             ],
             "duration": 7,
             "difficulty": "Advanced"
+        },
+        {
+            "id": "c2_tracking",
+            "title": "Command & Control (C2) Infrastructure Tracking",
+            "description": "Identifying and disrupting malware command-and-control (C2) servers.",
+            "bulletpoints": [
+                "Use PassiveDNS services like RiskIQ and VirusTotal for domain tracking",
+                "Analyze C2 beaconing behavior with Suricata, Zeek (Bro), and Wireshark",
+                "Cross-reference IP addresses with Shodan, Censys, and GreyNoise"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "social_engineering_ops",
+            "title": "Social Engineering & Human Intelligence (HUMINT)",
+            "description": "Understanding how threat actors use deception and manipulation in cyber operations.",
+            "bulletpoints": [
+                "Analyze phishing campaigns using PhishTank and OpenPhish",
+                "Use OSINT (Open-Source Intelligence) tools like SpiderFoot and Maltego to investigate fake identities",
+                "Monitor underground forums and Telegram channels for recruitment tactics"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "malware_families",
+            "title": "Attributing Malware to Threat Actors",
+            "description": "Identifying malware families and their associated hacking groups.",
+            "bulletpoints": [
+                "Use YARA rules to detect known malware signatures",
+                "Analyze malware samples with IDA Pro, Ghidra, and Remnux",
+                "Map findings to publicly known threats in MITRE ATT&CK and MISP Threat Sharing Platform"
+            ],
+            "duration": 8,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "darkweb_monitoring",
+            "title": "Dark Web Threat Actor Monitoring",
+            "description": "Tracking cybercriminals and intelligence leaks on the dark web.",
+            "bulletpoints": [
+                "Use Tor and I2P networks to monitor cybercriminal activities",
+                "Analyze forum discussions and marketplace listings with DarkOwl and Flashpoint",
+                "Use breach monitoring tools like Have I Been Pwned (HIBP) to track leaked credentials"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "insider_threats",
+            "title": "Insider Threat Actor Profiling",
+            "description": "Identifying internal risks from employees and compromised insiders.",
+            "bulletpoints": [
+                "Use User and Entity Behavior Analytics (UEBA) with Splunk and Exabeam",
+                "Monitor abnormal file access and privilege escalation",
+                "Track corporate leaks on paste sites and anonymous platforms like Dread and 4chan"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "zero_day_exploit_analysis",
+            "title": "Zero-Day Exploit Attribution",
+            "description": "Tracking zero-day vulnerabilities and identifying actors exploiting them.",
+            "bulletpoints": [
+                "Monitor CVE (Common Vulnerabilities and Exposures) disclosures using Vulners and ExploitDB",
+                "Analyze zero-day exploit sales in underground markets",
+                "Use honeypots to detect exploitation attempts in real time"
+            ],
+            "duration": 8,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "social_media_profiling",
+            "title": "Threat Actor Profiling via Social Media",
+            "description": "Tracking and analyzing cyber threat actors on social media platforms.",
+            "bulletpoints": [
+                "Monitor APT-linked Twitter accounts using OSINT tools like Twint",
+                "Use Facebook and LinkedIn analysis to map threat actor affiliations",
+                "Analyze Discord, Telegram, and WhatsApp groups for recruitment and coordination activity"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "attribution_pitfalls",
+            "title": "Avoiding Attribution Pitfalls & False Flags",
+            "description": "Understanding the challenges of accurate threat actor attribution.",
+            "bulletpoints": [
+                "Recognize false flag operations designed to mislead investigators",
+                "Cross-reference attack methods, infrastructure, and TTPs for reliability",
+                "Use a combination of SIGINT, HUMINT, and OSINT for multi-source verification"
+            ],
+            "duration": 8,
+            "difficulty": "Expert"
         }
     ]
 }

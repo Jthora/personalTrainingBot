@@ -4,7 +4,10 @@
     "description": "Investigative techniques for analyzing digital artifacts and cybercrime evidence.",
     "focus": [
         "Digital Forensics",
-        "Cybercrime Investigation"
+        "Cybercrime Investigation",
+        "Malware Analysis",
+        "Incident Response",
+        "Evidence Collection"
     ],
     "cards": [
         {
@@ -12,9 +15,9 @@
             "title": "Memory Forensics & Live System Analysis",
             "description": "Extracting volatile data from compromised systems for forensic analysis.",
             "bulletpoints": [
-                "Use tools like Volatility and Rekall for RAM analysis",
-                "Identify running processes, network connections, and active malware",
-                "Detect and analyze rootkits, trojans, and fileless attacks"
+                "Use Volatility and Rekall to extract forensic artifacts from RAM",
+                "Identify running processes, open network connections, and active malware",
+                "Detect and analyze rootkits, trojans, and fileless malware using memory dumps"
             ],
             "duration": 6,
             "difficulty": "Advanced"
@@ -24,11 +27,155 @@
             "title": "Log Analysis & Event Correlation",
             "description": "Using system logs and event correlation to trace cyber incidents.",
             "bulletpoints": [
-                "Monitor SIEM platforms for anomaly detection",
-                "Correlate logs across endpoints, firewalls, and cloud platforms",
-                "Identify exfiltration and unauthorized access patterns"
+                "Monitor Security Information and Event Management (SIEM) platforms like Splunk, ELK Stack, and Graylog",
+                "Correlate logs from endpoints, firewalls, and cloud environments",
+                "Identify indicators of compromise (IoCs) such as unauthorized access and data exfiltration"
             ],
             "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "disk_forensics",
+            "title": "Disk Forensics & Data Recovery",
+            "description": "Recovering, analyzing, and validating data from storage devices.",
+            "bulletpoints": [
+                "Use Autopsy and The Sleuth Kit (TSK) for filesystem analysis",
+                "Recover deleted files and partitions using FTK Imager and TestDisk",
+                "Extract evidence from NTFS, FAT32, and exFAT filesystems"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "malware_forensics",
+            "title": "Malware Forensics & Reverse Engineering",
+            "description": "Investigating and dissecting malicious software for forensic analysis.",
+            "bulletpoints": [
+                "Use IDA Pro, Ghidra, and Radare2 for static binary analysis",
+                "Analyze malware behavior in a controlled environment using Cuckoo Sandbox",
+                "Extract Indicators of Compromise (IoCs) from infected systems using YARA rules"
+            ],
+            "duration": 8,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "network_forensics",
+            "title": "Network Traffic Analysis & Forensic Investigation",
+            "description": "Capturing and analyzing network traffic for evidence of cyber intrusions.",
+            "bulletpoints": [
+                "Use Wireshark and Zeek (Bro) to inspect packets and detect anomalies",
+                "Reconstruct network sessions and analyze suspicious traffic patterns",
+                "Identify unauthorized access and data exfiltration through Deep Packet Inspection (DPI)"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cloud_forensics",
+            "title": "Cloud Forensics & Virtual Environment Analysis",
+            "description": "Investigating cloud-based cybercrime incidents.",
+            "bulletpoints": [
+                "Analyze AWS CloudTrail, Azure Security Center, and Google Cloud Logging for forensic evidence",
+                "Identify misconfigured cloud storage buckets and leaked credentials",
+                "Use forensic snapshots to investigate compromised virtual machines"
+            ],
+            "duration": 6,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mobile_forensics",
+            "title": "Mobile Device Forensics",
+            "description": "Extracting forensic data from smartphones and tablets.",
+            "bulletpoints": [
+                "Use tools like Cellebrite UFED and Magnet AXIOM for data extraction",
+                "Recover deleted messages, call logs, and GPS history from Android and iOS devices",
+                "Analyze application artifacts from WhatsApp, Signal, and Telegram"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "usb_device_analysis",
+            "title": "USB Device & External Media Forensics",
+            "description": "Investigating forensic artifacts from removable storage devices.",
+            "bulletpoints": [
+                "Analyze USB device history using Windows registry keys",
+                "Recover deleted files from USB drives using Photorec and Foremost",
+                "Use MFT (Master File Table) analysis to track data transfers"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "stealth_malware",
+            "title": "Rootkit Detection & Stealth Malware Analysis",
+            "description": "Identifying advanced persistent threats (APTs) hiding in system processes.",
+            "bulletpoints": [
+                "Use GMER and RootkitRevealer to detect kernel-level rootkits",
+                "Analyze Windows API hooks and system call modifications",
+                "Dump and analyze hidden processes using Volatility plugins"
+            ],
+            "duration": 8,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "file_metadata",
+            "title": "File Metadata & Document Forensics",
+            "description": "Extracting hidden metadata from documents and images.",
+            "bulletpoints": [
+                "Use ExifTool to analyze metadata from images, PDFs, and office documents",
+                "Identify authorship, timestamps, and geolocation data",
+                "Detect digital forgeries and manipulated files"
+            ],
+            "duration": 5,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "email_forensics",
+            "title": "Email Header Analysis & Phishing Forensics",
+            "description": "Investigating malicious email campaigns and spear-phishing attacks.",
+            "bulletpoints": [
+                "Extract and analyze email headers using tools like MXToolbox and IPVoid",
+                "Trace email spoofing and DKIM/SPF misconfigurations",
+                "Identify phishing links and attachments using VirusTotal and Hybrid Analysis"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "tor_forensics",
+            "title": "Dark Web & Tor Network Forensics",
+            "description": "Investigating cybercriminal activity on the Tor network.",
+            "bulletpoints": [
+                "Use Tor network traffic analysis to identify illicit activities",
+                "Monitor cryptocurrency transactions linked to dark web markets",
+                "Extract intelligence from dark web forums using DarkOwl and Flashpoint"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "data_exfiltration",
+            "title": "Data Exfiltration Detection & Analysis",
+            "description": "Investigating unauthorized data transfers and leaks.",
+            "bulletpoints": [
+                "Monitor SIEM solutions for suspicious data transfers",
+                "Use NetFlow and Deep Packet Inspection (DPI) to detect covert channels",
+                "Analyze DNS tunneling, encrypted payloads, and steganographic techniques"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "forensic_timeline",
+            "title": "Forensic Timeline Reconstruction",
+            "description": "Reconstructing cyber incidents using timestamps and logs.",
+            "bulletpoints": [
+                "Use Plaso and log2timeline to generate forensic timelines",
+                "Correlate system events, network traffic, and file modifications",
+                "Analyze timestamp anomalies to detect anti-forensic techniques"
+            ],
+            "duration": 6,
             "difficulty": "Advanced"
         }
     ]

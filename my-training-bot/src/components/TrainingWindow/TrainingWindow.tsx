@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from './TrainingWindow.module.css';
+import CoachSelector from '../CoachSelector/CoachSelector';
 
 const TrainingWindow: React.FC = () => {
     return (
         <div className={styles.trainingWindow}>
-            {/* Add your training window content here */}
+            <CoachSelector />
         </div>
     );
 };

@@ -1,6 +1,3 @@
 .trainingWindow {
     flex: 2;
-    padding: var(--padding);
-    background-color: var(--secondary-bg-color);
-    color: var(--primary-text-color);
 }

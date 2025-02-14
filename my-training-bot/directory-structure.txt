@@ -389,8 +389,10 @@
 │   │   │   ├── WingCommanderLogo-288x162.gif
 │   │   │   └── icons
 │   │   │       ├── .DS_Store
-│   │   │       ├── tiger_fitness_god-icon-512x.png
-│   │   │       ├── tiger_fitness_god-icon.png
+│   │   │       ├── coaches
+│   │   │       │   ├── jono_thora-icon.png
+│   │   │       │   ├── tara_van_dekar-icon.png
+│   │   │       │   └── tiger_fitness_god-icon.png
 │   │   │       └── training_modules
 │   │   ├── react.svg
 │   │   └── sounds
@@ -414,6 +416,9 @@
 │   │   ├── CoachDialog
 │   │   │   ├── CoachDialog.module.css
 │   │   │   └── CoachDialog.tsx
+│   │   ├── CoachSelector
+│   │   │   ├── CoachSelector.module.css
+│   │   │   └── CoachSelector.tsx
 │   │   ├── DifficultySettings
 │   │   │   ├── DifficultySettings.module.css
 │   │   │   └── DifficultySettings.tsx
@@ -468,6 +473,9 @@
 │   │   ├── WorkoutScheduler
 │   │   │   ├── WorkoutScheduler.module.css
 │   │   │   └── WorkoutScheduler.tsx
+│   │   ├── WorkoutSelector
+│   │   │   ├── WorkoutSelector.module.css
+│   │   │   └── WorkoutSelector.tsx
 │   │   ├── WorkoutTimer
 │   │   │   ├── WorkoutTimer.module.css
 │   │   │   └── WorkoutTimer.tsx
@@ -1098,4 +1106,4 @@
 ├── tsconfig.node.json
 └── vite.config.ts
 
-182 directories, 917 files
+185 directories, 922 files

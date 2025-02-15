@@ -9,7 +9,7 @@
             "title": "Casimir Effect & Vacuum Energy Extraction",
             "description": "Understanding how vacuum fluctuations create measurable forces.",
             "bulletpoints": [
-                "Study the Casimir effect, where two uncharged, parallel conducting plates experience an attractive force due to vacuum fluctuations: \\[ F = \\frac{\\pi^2 \\hbar c}{240 a^4} A \\].",
+                "Study the Casimir effect, where two uncharged, parallel conducting plates experience an attractive force due to vacuum fluctuations: \\[ F = \\frac{\\pi^2 \\hbar c}{240 a^4} A \\]",
                 "Examine how nanoscale conductive plates create a pressure difference in quantum vacuum energy.",
                 "Investigate experimental setups designed to harness zero-point energy for potential applications."
             ],
@@ -22,7 +22,7 @@
             "description": "Examining theories for manipulating spacetime to enable faster-than-light travel.",
             "bulletpoints": [
                 "Study the Alcubierre metric: \\[ ds^2 = -c^2 dt^2 + (dx - v_s f(r_s) dt)^2 + dy^2 + dz^2 \\], where \\( f(r_s) \\) is the warp bubble function.",
-                "Explore the concept of negative energy density required to create a warp field: \\[ T_{\\mu\\nu} k^\\mu k^\\nu < 0 \\].",
+                "Explore the concept of negative energy density required to create a warp field: \\[ T_{\\mu\\nu} k^\\mu k^\\nu < 0 \\]",
                 "Analyze theoretical applications of metric engineering to create distortions in spacetime."
             ],
             "duration": 16,
@@ -33,7 +33,7 @@
             "title": "Quantum Field Manipulation & Exotic Propulsion",
             "description": "Exploring the interaction of quantum fields and exotic energy forms in advanced propulsion.",
             "bulletpoints": [
-                "Analyze the interaction of electromagnetic fields with quantum fluctuations using the Heisenberg energy-time relation: \\[ \\Delta E \\Delta t \\geq \\frac{\\hbar}{2} \\].",
+                "Analyze the interaction of electromagnetic fields with quantum fluctuations using the Heisenberg energy-time relation: \\[ \\Delta E \\Delta t \\geq \\frac{\\hbar}{2} \\]",
                 "Explore theoretical quantum thruster concepts leveraging the Unruh effect.",
                 "Investigate experimental tests of quantum vacuum propulsion and potential applications."
             ],
@@ -45,7 +45,7 @@
             "title": "Zero-Point Energy Fluctuations & Vacuum States",
             "description": "Understanding how quantum fields contribute to background energy in spacetime.",
             "bulletpoints": [
-                "Define zero-point energy as the lowest possible energy state of a quantum system: \\[ E_0 = \\frac{1}{2} \\hbar \\omega \\].",
+                "Define zero-point energy as the lowest possible energy state of a quantum system: \\[ E_0 = \\frac{1}{2} \\hbar \\omega \\]",
                 "Study the role of vacuum fluctuations in quantum electrodynamics (QED) and the Lamb shift.",
                 "Explore theoretical models of quantum energy extraction from vacuum states."
             ],
@@ -57,7 +57,7 @@
             "title": "Harnessing Negative Energy & Quantum Stress Tensors",
             "description": "Investigating the feasibility of negative energy states for propulsion and spacetime warping.",
             "bulletpoints": [
-                "Examine the quantum stress-energy tensor: \\[ T_{\\mu \\nu} = \\langle \\hat{T}_{\\mu \\nu} \\rangle - \\eta_{\\mu \\nu} \\rho_{vac} \\].",
+                "Examine the quantum stress-energy tensor: \\[ T_{\\mu \\nu} = \\langle \\hat{T}_{\\mu \\nu} \\rangle - \\eta_{\\mu \\nu} \\rho_{vac} \\]",
                 "Understand the role of exotic matter and its constraints in the Einstein Field Equations.",
                 "Explore potential experimental validations for negative energy density fields."
             ],
@@ -69,7 +69,7 @@
             "title": "Unruh Effect & Quantum Vacuum Radiation",
             "description": "Exploring how acceleration induces thermal radiation from the quantum vacuum.",
             "bulletpoints": [
-                "Study the Unruh temperature equation: \\[ T = \\frac{\\hbar a}{2\\pi k_B c} \\].",
+                "Study the Unruh temperature equation: \\[ T = \\frac{\\hbar a}{2\\pi k_B c} \\]",
                 "Analyze its implications for high-acceleration spacecraft propulsion concepts.",
                 "Investigate experimental possibilities of detecting Unruh radiation in laboratory settings."
             ],
@@ -81,7 +81,7 @@
             "title": "Schwinger Effect & Vacuum Pair Production",
             "description": "Understanding how strong electric fields can generate particle-antiparticle pairs from vacuum fluctuations.",
             "bulletpoints": [
-                "Study the Schwinger pair production equation: \\[ P \\approx e^{-\\frac{\\pi m^2 c^3}{\\hbar e E}} \\].",
+                "Study the Schwinger pair production equation: \\[ P \\approx e^{-\\frac{\\pi m^2 c^3}{\\hbar e E}} \\]",
                 "Examine experimental tests involving high-intensity laser fields.",
                 "Explore the implications of vacuum pair production for zero-point energy applications."
             ],
@@ -105,7 +105,7 @@
             "title": "Hawking Radiation & Black Hole Evaporation",
             "description": "Understanding how black holes lose mass through quantum vacuum interactions.",
             "bulletpoints": [
-                "Study Hawking's equation for black hole temperature: \\[ T_H = \\frac{\\hbar c^3}{8\\pi G M k_B} \\].",
+                "Study Hawking's equation for black hole temperature: \\[ T_H = \\frac{\\hbar c^3}{8\\pi G M k_B} \\]",
                 "Analyze its implications for energy extraction from extreme gravitational fields.",
                 "Explore potential astrophysical observations of Hawking radiation."
             ],
@@ -117,7 +117,7 @@
             "title": "Vacuum Permittivity & Quantum Energy Density",
             "description": "Exploring the relationship between vacuum properties and quantum energy fields.",
             "bulletpoints": [
-                "Study the vacuum energy density equation: \\[ \\rho_{vac} = \\frac{\\Lambda c^4}{8\\pi G} \\].",
+                "Study the vacuum energy density equation: \\[ \\rho_{vac} = \\frac{\\Lambda c^4}{8\\pi G} \\]",
                 "Analyze how modifications to vacuum permittivity could affect zero-point energy applications.",
                 "Investigate alternative theories of vacuum structure and their potential technological applications."
             ],

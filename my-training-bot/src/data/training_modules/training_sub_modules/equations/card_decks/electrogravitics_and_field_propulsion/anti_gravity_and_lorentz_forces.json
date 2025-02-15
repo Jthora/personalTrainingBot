@@ -64,7 +64,7 @@
             "title": "Einstein-Cartan Theory & Torsion Fields",
             "description": "Investigating extensions of general relativity incorporating torsion effects.",
             "bulletpoints": [
-                "Explore the modification of Einstein’s field equations to include spacetime torsion: \\[ R_{\\mu\\nu} - \\frac{1}{2} g_{\\mu\\nu} R + \\Lambda g_{\\mu\\nu} = \\frac{8 \\pi G}{c^4} T_{\\mu\\nu} \\].",
+                "Explore the modification of Einstein’s field equations to include spacetime torsion: \\[ R_{\\mu\\nu} - \\frac{1}{2} g_{\\mu\\nu} R + \\Lambda g_{\\mu\\nu} = \\frac{8 \\pi G}{c^4} T_{\\mu\\nu} \\]",
                 "Understand how spin-coupling modifies gravitational interactions and may lead to new propulsion mechanisms.",
                 "Analyze experimental proposals for detecting torsion fields in high-energy astrophysical phenomena."
             ],
@@ -88,7 +88,7 @@
             "title": "Exotic Matter & Stability in High-Energy Fields",
             "description": "Analyzing the conditions required for stable exotic matter configurations.",
             "bulletpoints": [
-                "Understand the energy conditions required for exotic mass states: \\[ T_{00} < 0 \\].",
+                "Understand the energy conditions required for exotic mass states: \\[ T_{00} < 0 \\]",
                 "Study solutions to Einstein’s equations that permit negative energy flux in a vacuum.",
                 "Investigate the connection between exotic matter stability and Alcubierre warp drive feasibility."
             ],
@@ -100,7 +100,7 @@
             "title": "Zero-Point Energy & Electromagnetic Vacuum Effects",
             "description": "Examining quantum vacuum fluctuations as a potential energy source.",
             "bulletpoints": [
-                "Analyze the quantum vacuum stress-energy tensor: \\[ \\langle T_{\\mu\\nu} \\rangle = \\frac{1}{2} \\sum_k \\hbar \\omega_k \\].",
+                "Analyze the quantum vacuum stress-energy tensor: \\[ \\langle T_{\\mu\\nu} \\rangle = \\frac{1}{2} \\sum_k \\hbar \\omega_k \\]",
                 "Study experimental attempts to measure Casimir force fluctuations and extract usable energy.",
                 "Explore theoretical models for zero-point energy propulsion."
             ],

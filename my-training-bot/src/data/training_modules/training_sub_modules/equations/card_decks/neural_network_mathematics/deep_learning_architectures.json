@@ -27,9 +27,9 @@
             "title": "Recurrent Neural Networks (RNNs) & Long Short-Term Memory (LSTM)",
             "description": "Exploring networks designed for sequential data processing.",
             "bulletpoints": [
-                "Understand how RNNs use a hidden state \\( h_t \\) to capture past information: \\[ h_t = \\phi(W h_{t-1} + U x_t + b) \\].",
-                "Learn about the vanishing gradient problem, where long sequences lead to diminishing weight updates: \\[ \\frac{\\partial L}{\\partial W} \\approx \\lambda^t \\frac{\\partial L}{\\partial h_t} \\] with \\( \\lambda \\ll 1 \\).",
-                "Study LSTM gating mechanisms, preventing vanishing gradients using forget, input, and output gates: \\[ f_t = \\sigma(W_f h_{t-1} + U_f x_t + b_f) \\].",
+                "Understand how RNNs use a hidden state \\( h_t \\) to capture past information: \\[ h_t = \\phi(W h_{t-1} + U x_t + b) \\]",
+                "Learn about the vanishing gradient problem, where long sequences lead to diminishing weight updates: \\[ \\frac{\\partial L}{\\partial W} \\approx \\lambda^t \\frac{\\partial L}{\\partial h_t} \\] with \\( \\lambda \\ll 1 \\)",
+                "Study LSTM gating mechanisms, preventing vanishing gradients using forget, input, and output gates: \\[ f_t = \\sigma(W_f h_{t-1} + U_f x_t + b_f) \\]",
                 "Apply RNNs and LSTMs in speech recognition, language modeling, and time-series forecasting."
             ],
             "duration": 12,
@@ -53,7 +53,7 @@
             "title": "Generative Adversarial Networks (GANs)",
             "description": "Exploring deep learning models that generate synthetic data.",
             "bulletpoints": [
-                "Define the GAN objective function, where a generator \\( G \\) and discriminator \\( D \\) play a minimax game: \\[ \\min_G \\max_D V(D, G) = \\mathbb{E}_{x \\sim p_{\\text{data}}} [\\log D(x)] + \\mathbb{E}_{z \\sim p_z} [\\log (1 - D(G(z)))] \\].",
+                "Define the GAN objective function, where a generator \\( G \\) and discriminator \\( D \\) play a minimax game: \\[ \\min_G \\max_D V(D, G) = \\mathbb{E}_{x \\sim p_{\\text{data}}} [\\log D(x)] + \\mathbb{E}_{z \\sim p_z} [\\log (1 - D(G(z)))] \\]",
                 "Study how latent space sampling generates realistic outputs.",
                 "Apply GANs to image synthesis, deepfake generation, and drug discovery."
             ],

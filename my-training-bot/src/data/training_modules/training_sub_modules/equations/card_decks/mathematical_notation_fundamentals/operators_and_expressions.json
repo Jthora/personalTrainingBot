@@ -12,9 +12,9 @@
             "title": "Order of Operations & PEMDAS",
             "description": "Learning the correct sequence of operations in mathematical expressions.",
             "bulletpoints": [
-                "Apply the order of operations: \\( P \rightarrow E \rightarrow MD \rightarrow AS \\) (Parentheses, Exponents, Multiplication/Division, Addition/Subtraction)",
-                "Evaluate expressions step-by-step following the priority rules: \\[ (3 + 5) \times 2 = 8 \times 2 = 16 \\]",
-                "Understand the role of parentheses in overriding default precedence: \\[ 3 + 5 \times 2 \neq (3 + 5) \times 2 \\]"
+                "Apply the order of operations: \\( P \\rightarrow E \\rightarrow MD \\rightarrow AS \\) (Parentheses, Exponents, Multiplication/Division, Addition/Subtraction)",
+                "Evaluate expressions step-by-step following the priority rules: \\[ (3 + 5) \\times 2 = 8 \\times 2 = 16 \\]",
+                "Understand the role of parentheses in overriding default precedence: \\[ 3 + 5 \\times 2 \\neq (3 + 5) \\times 2 \\]"
             ],
             "duration": 5,
             "difficulty": "Beginner"
@@ -24,8 +24,8 @@
             "title": "Exponents & Roots",
             "description": "Understanding the rules governing exponents and radicals.",
             "bulletpoints": [
-                "Learn exponent laws: \\( a^m \times a^n = a^{m+n} \\), \\( \frac{a^m}{a^n} = a^{m-n} \\), \\( (a^m)^n = a^{m \times n} \\)",
-                "Convert between exponent and radical notation: \\[ \\sqrt[3]{8} = 8^{\frac{1}{3}} = 2 \\]",
+                "Learn exponent laws: \\( a^m \\times a^n = a^{m+n} \\), \\( \\frac{a^m}{a^n} = a^{m-n} \\), \\( (a^m)^n = a^{m \\times n} \\)",
+                "Convert between exponent and radical notation: \\[ \\sqrt[3]{8} = 8^{\\frac{1}{3}} = 2 \\]",
                 "Simplify expressions with exponents and roots: \\[ (2^3)^2 = 2^6 = 64 \\]"
             ],
             "duration": 6,
@@ -48,8 +48,8 @@
             "title": "Absolute Value & Number Line",
             "description": "Understanding absolute value and its role in expressions.",
             "bulletpoints": [
-                "Interpret absolute value as the distance from zero: \\[ |x| = \begin{cases} x, & x \\geq 0 \\ -x, & x < 0 \\end{cases} \\]",
-                "Solve absolute value equations: \\[ |x - 3| = 7 \\Rightarrow x - 3 = 7 \text{ or } x - 3 = -7 \\]",
+                "Interpret absolute value as the distance from zero: \\[ |x| = \\begin{cases} x, & x \\geq 0 \\\\ -x, & x < 0 \\end{cases} \\]",
+                "Solve absolute value equations: \\[ |x - 3| = 7 \\Rightarrow x - 3 = 7 \\text{ or } x - 3 = -7 \\]",
                 "Graph absolute value functions: \\[ y = |x| \\] forms a V-shape on the coordinate plane"
             ],
             "duration": 5,
@@ -72,8 +72,8 @@
             "title": "Modulus Operator & Remainders",
             "description": "Using modulus to determine remainders in division.",
             "bulletpoints": [
-                "Define modulus operation: \\[ a \\mod b = r \text{ where } a = qb + r \text{ and } 0 \\leq r < b \\]",
-                "Example: \\[ 17 \\mod 5 = 2 \\] because \\( 17 = 5 \times 3 + 2 \\)",
+                "Define modulus operation: \\[ a \\mod b = r \\text{ where } a = qb + r \\text{ and } 0 \\leq r < b \\]",
+                "Example: \\[ 17 \\mod 5 = 2 \\] because \\( 17 = 5 \\times 3 + 2 \\)",
                 "Use modular arithmetic in number systems and cryptography"
             ],
             "duration": 6,
@@ -108,9 +108,9 @@
             "title": "Summation Notation & Series",
             "description": "Using sigma notation to represent sums.",
             "bulletpoints": [
-                "Use sigma notation to represent sums: \\[ \\sum_{k=1}^{n} k = \frac{n(n+1)}{2} \\]",
-                "Compute arithmetic series: \\[ S_n = \frac{n}{2} (a + l) \\]",
-                "Evaluate geometric series using the formula: \\[ S_n = \frac{a(1 - r^n)}{1 - r} \\]"
+                "Use sigma notation to represent sums: \\[ \\sum_{k=1}^{n} k = \\frac{n(n+1)}{2} \\]",
+                "Compute arithmetic series: \\[ S_n = \\frac{n}{2} (a + l) \\]",
+                "Evaluate geometric series using the formula: \\[ S_n = \\frac{a(1 - r^n)}{1 - r} \\]"
             ],
             "duration": 8,
             "difficulty": "Advanced"
@@ -120,8 +120,8 @@
             "title": "Matrix Operations & Determinants",
             "description": "Understanding fundamental matrix operations.",
             "bulletpoints": [
-                "Perform matrix multiplication: \\[ A \times B = C \text{ where } C_{ij} = \\sum_{k} A_{ik} B_{kj} \\]",
-                "Compute determinants for 2x2 matrices: \\[ \\det(A) = ad - bc \text{ for } A = \begin{bmatrix} a & b \\ c & d \\end{bmatrix} \\]",
+                "Perform matrix multiplication: \\[ A \\times B = C \\text{ where } C_{ij} = \\sum_{k} A_{ik} B_{kj} \\]",
+                "Compute determinants for 2x2 matrices: \\[ \\det(A) = ad - bc \\text{ for } A = \\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix} \\]",
                 "Apply inverse matrices to solve systems of equations"
             ],
             "duration": 9,

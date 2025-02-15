@@ -10,8 +10,12 @@
         "Activation Functions & Backpropagation"
     ],
     "cardDecks": [
+        "advanced_hadamard_equations",
+        "basic_hadamard_equations",
         "fundamentals_of_neural_networks",
         "deep_learning_architectures",
-        "ai_model_training_and_tuning"
+        "ai_model_training_and_tuning",
+        "neural_network_equations",
+        "neural_network_hadamard_equations"
     ]
 }

@@ -1,0 +1,133 @@
+{
+    "id": "neural_network_hadamard_equations",
+    "name": "Neural Network Equations Involving the Hadamard product",
+    "description": "Exploring the role of the Hadamard product (element-wise multiplication) in neural network computations.",
+    "focus": [
+        "Hadamard Product",
+        "Gradient-Based Learning",
+        "Recurrent Networks",
+        "Optimization Techniques"
+    ],
+    "cards": [
+        {
+            "id": "hadamard_product_basics",
+            "title": "Hadamard Product: Element-Wise Multiplication",
+            "description": "Understanding the fundamental mathematical operation that defines \\( \\odot \\)",
+            "bulletpoints": [
+                "The Hadamard product is defined as: \\[ \\mathbf{A} \\odot \\mathbf{B} = \\begin{bmatrix} a_1 b_1 \\\\ a_2 b_2 \\\\ \\vdots \\\\ a_n b_n \\end{bmatrix} \\]",
+                "Unlike matrix multiplication, this operation multiplies corresponding elements of two matrices of the same shape.",
+                "Hadamard products are frequently used in gradient updates, activation function derivatives, and recurrent neural networks."
+            ],
+            "duration": 8,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "backpropagation_delta_rule",
+            "title": "Backpropagation Delta Rule",
+            "description": "A core equation in training neural networks that uses \\( \\odot \\) to compute gradients efficiently.",
+            "bulletpoints": [
+                "The delta rule in backpropagation is given by: \\[ \\delta^L = \\nabla_a C \\odot \\sigma'(z^L) \\]",
+                "Here, \\( \\nabla_a C \\) represents the gradient of the cost function with respect to activations, and \\( \\sigma'(z^L) \\) is the derivative of the activation function.",
+                "This Hadamard product ensures that errors are scaled correctly per neuron, helping to adjust weights efficiently."
+            ],
+            "duration": 10,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "lstm_forget_gate",
+            "title": "LSTM Forget Gate Computation",
+            "description": "Long Short-Term Memory (LSTM) networks rely on \\( \\odot \\) to regulate information flow in memory cells.",
+            "bulletpoints": [
+                "The forget gate in LSTM is defined as: \\[ c_t = f_t \\odot c_{t-1} + i_t \\odot g_t \\]",
+                "Here, \\( f_t \\) determines how much past information is retained, while \\( i_t \\odot g_t \\) represents new memory input.",
+                "The Hadamard product enables element-wise gating, allowing each unit to selectively retain or forget information."
+            ],
+            "duration": 12,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "lstm_output_gate",
+            "title": "LSTM Output Gate Computation",
+            "description": "LSTM output gating determines which parts of the memory cell are used for the next hidden state.",
+            "bulletpoints": [
+                "The output gate is computed as: \\[ h_t = o_t \\odot \\tanh(c_t) \\]",
+                "Here, \\( o_t \\) is the output gate activation and \\( \\tanh(c_t) \\) represents the transformed memory cell state.",
+                "Hadamard product ensures that only relevant memory is passed to the next state, improving sequence prediction performance."
+            ],
+            "duration": 12,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "gated_recurrent_unit",
+            "title": "Gated Recurrent Unit (GRU) State Update",
+            "description": "GRUs use Hadamard products to efficiently manage memory updates.",
+            "bulletpoints": [
+                "The GRU hidden state update is given by: \\[ h_t = (1 - z_t) \\odot h_{t-1} + z_t \\odot \\tilde{h}_t \\]",
+                "Here, \\( z_t \\) is the update gate that determines how much past information is carried forward.",
+                "This equation ensures smooth transition between past and new information, improving time-series modeling."
+            ],
+            "duration": 12,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "elementwise_weight_decay",
+            "title": "Element-Wise Weight Decay in Optimization",
+            "description": "Hadamard product is used to apply weight decay regularization per element.",
+            "bulletpoints": [
+                "The weight decay update rule is: \\[ w_i' = w_i - \\eta \\left( \\frac{\\partial C}{\\partial w_i} \\odot \\lambda w_i \\right) \\]",
+                "Here, \\( \\lambda \\) represents the regularization coefficient that penalizes large weights.",
+                "Using element-wise multiplication prevents uniform shrinkage, allowing finer control over optimization."
+            ],
+            "duration": 10,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "batch_normalization",
+            "title": "Batch Normalization with Hadamard Scaling",
+            "description": "Batch normalization rescales and shifts activations using element-wise scaling.",
+            "bulletpoints": [
+                "The batch normalization transformation is: \\[ x' = \\gamma \\odot \\frac{x - \\mu}{\\sqrt{\\sigma^2 + \\epsilon}} + \\beta \\]",
+                "Here, \\( \\gamma \\) and \\( \\beta \\) are trainable parameters that allow rescaling and shifting.",
+                "Hadamard product ensures each activation is scaled independently, improving convergence in deep networks."
+            ],
+            "duration": 14,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "adam_optimizer",
+            "title": "Adam Optimizer: Adaptive Learning Rate Adjustment",
+            "description": "Adam optimizer uses element-wise scaling to adjust learning rates per parameter.",
+            "bulletpoints": [
+                "Adam's update rule includes: \\[ \\theta_t = \\theta_{t-1} - \\eta \\frac{\\hat{m_t}}{\\sqrt{\\hat{v_t}} + \\epsilon} \\odot g_t \\]",
+                "Here, \\( \\hat{m_t} \\) and \\( \\hat{v_t} \\) are momentum estimates for first and second moments of gradients.",
+                "Hadamard product ensures element-wise adaptation, allowing different parameters to update at different speeds."
+            ],
+            "duration": 14,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "soft_attention_mechanism",
+            "title": "Soft Attention Mechanism in Neural Networks",
+            "description": "Attention layers use Hadamard products to enhance important features in deep learning models.",
+            "bulletpoints": [
+                "The attention mechanism weights the importance of inputs: \\[ a_i = \\alpha_i \\odot x_i \\]",
+                "Here, \\( \\alpha_i \\) represents the learned attention weight for each input.",
+                "This operation allows the model to focus on relevant information dynamically, improving NLP and vision models."
+            ],
+            "duration": 16,
+            "difficulty": "Expert"
+        },
+        {
+            "id": "multi_head_attention",
+            "title": "Multi-Head Attention Mechanism",
+            "description": "Transformer models use Hadamard products to compute attention across multiple heads.",
+            "bulletpoints": [
+                "The multi-head attention update is given by: \\[ H = \\sum_k W_k \\odot A_k \\]",
+                "Here, \\( W_k \\) represents the weight matrix for head \\( k \\) and \\( A_k \\) is the attention score matrix.",
+                "Hadamard product ensures each attention head processes information independently, improving feature diversity."
+            ],
+            "duration": 18,
+            "difficulty": "Expert"
+        }
+    ]
+}

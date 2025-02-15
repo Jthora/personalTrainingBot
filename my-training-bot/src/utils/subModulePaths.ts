@@ -95,6 +95,7 @@ export const subModulePaths: { [key: string]: () => Promise<any> } = {
     martial_arts_xing_yi_quan: () => import("../data/training_modules/training_sub_modules/martial_arts/xing_yi_quan.json"),
     psiops_clairvoyance_and_telepathy: () => import("../data/training_modules/training_sub_modules/psiops/clairvoyance_and_telepathy.json"),
     psiops_energy_manipulation: () => import("../data/training_modules/training_sub_modules/psiops/energy_manipulation.json"),
+    psiops_psi_fields: () => import("../data/training_modules/training_sub_modules/psiops/psi_fields.json"),
     psiops_psionic_training: () => import("../data/training_modules/training_sub_modules/psiops/psionic_training.json"),
     psiops_psionic_weaponry: () => import("../data/training_modules/training_sub_modules/psiops/psionic_weaponry.json"),
     psiops_psychic_shielding: () => import("../data/training_modules/training_sub_modules/psiops/psychic_shielding.json"),

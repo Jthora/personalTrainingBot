@@ -14,9 +14,9 @@
             "title": "Lagrangian & Hamiltonian Mechanics",
             "description": "Understanding the foundations of analytical mechanics and action principles.",
             "bulletpoints": [
-                "The Lagrangian is defined as: \\[ L = T - V \\], where \\( T \\) is kinetic energy and \\( V \\) is potential energy.",
-                "Euler-Lagrange equation: \\[ \\frac{d}{dt} \\left( \\frac{\\partial L}{\\partial \\dot{q}} \\right) - \\frac{\\partial L}{\\partial q} = 0 \\].",
-                "Hamiltonian function: \\[ H = \\sum_{i} p_i \\dot{q}_i - L \\], defining phase space dynamics.",
+                "The Lagrangian is defined as: \\[ L = T - V \\], where \\( T \\) is kinetic energy and \\( V \\) is potential energy",
+                "Euler-Lagrange equation: \\[ \\frac{d}{dt} \\left( \\frac{\\partial L}{\\partial \\dot{q}} \\right) - \\frac{\\partial L}{\\partial q} = 0 \\]",
+                "Hamiltonian function: \\[ H = \\sum_{i} p_i \\dot{q}_i - L \\], defining phase space dynamics",
                 "Applications in classical mechanics, quantum mechanics, and field theory."
             ],
             "duration": 10,
@@ -27,10 +27,10 @@
             "title": "Wave Equations & Field Theories",
             "description": "Mathematical models describing wave propagation, electromagnetism, and quantum fields.",
             "bulletpoints": [
-                "The general wave equation: \\[ \\frac{\\partial^2 u}{\\partial t^2} = c^2 \\nabla^2 u \\].",
-                "Maxwell's equations in vacuum: \\[ \\nabla \\cdot \\mathbf{E} = \\frac{\\rho}{\\varepsilon_0}, \\quad \\nabla \\cdot \\mathbf{B} = 0 \\], \\[ \\nabla \\times \\mathbf{E} = -\\frac{\\partial \\mathbf{B}}{\\partial t}, \\quad \\nabla \\times \\mathbf{B} = \\mu_0 \\mathbf{J} + \\mu_0 \\varepsilon_0 \\frac{\\partial \\mathbf{E}}{\\partial t} \\].",
-                "Quantum wavefunctions: Schrödinger equation: \\[ i\\hbar \\frac{\\partial \\psi}{\\partial t} = \\hat{H} \\psi \\].",
-                "Relativistic wave equation: Klein-Gordon equation: \\[ \\left( \\frac{\\partial^2}{\\partial t^2} - c^2 \\nabla^2 + m^2 c^4 \\right) \\psi = 0 \\]."
+                "The general wave equation: \\[ \\frac{\\partial^2 u}{\\partial t^2} = c^2 \\nabla^2 u \\]",
+                "Maxwell's equations in vacuum: \\[ \\nabla \\cdot \\mathbf{E} = \\frac{\\rho}{\\varepsilon_0}, \\quad \\nabla \\cdot \\mathbf{B} = 0 \\], \\[ \\nabla \\times \\mathbf{E} = -\\frac{\\partial \\mathbf{B}}{\\partial t}, \\quad \\nabla \\times \\mathbf{B} = \\mu_0 \\mathbf{J} + \\mu_0 \\varepsilon_0 \\frac{\\partial \\mathbf{E}}{\\partial t} \\]",
+                "Quantum wavefunctions: Schrödinger equation: \\[ i\\hbar \\frac{\\partial \\psi}{\\partial t} = \\hat{H} \\psi \\]",
+                "Relativistic wave equation: Klein-Gordon equation: \\[ \\left( \\frac{\\partial^2}{\\partial t^2} - c^2 \\nabla^2 + m^2 c^4 \\right) \\psi = 0 \\]"
             ],
             "duration": 12,
             "difficulty": "Advanced"
@@ -40,8 +40,8 @@
             "title": "Chaos Theory & Nonlinear Dynamics",
             "description": "Investigating deterministic chaos, attractors, and complexity in physical systems.",
             "bulletpoints": [
-                "Sensitive dependence on initial conditions: Lyapunov exponent \\( \\lambda > 0 \\).",
-                "Logistic map: \\[ x_{n+1} = r x_n (1 - x_n) \\], showing chaotic behavior for certain \\( r \\).",
+                "Sensitive dependence on initial conditions: Lyapunov exponent \\( \\lambda > 0 \\)",
+                "Logistic map: \\[ x_{n+1} = r x_n (1 - x_n) \\], showing chaotic behavior for certain \\( r \\)",
                 "Lorenz system: \\[ \\dot{x} = \\sigma(y-x), \\quad \\dot{y} = x(\\rho - z) - y, \\quad \\dot{z} = xy - \\beta z \\], producing strange attractors.",
                 "Applications to fluid dynamics, astrophysics, and climate models."
             ],
@@ -53,10 +53,10 @@
             "title": "General & Special Relativity Equations",
             "description": "Mathematical models describing the curvature of spacetime and relativistic motion.",
             "bulletpoints": [
-                "Einstein's field equations: \\[ R_{\\mu\\nu} - \\frac{1}{2} R g_{\\mu\\nu} + \\Lambda g_{\\mu\\nu} = \\frac{8\\pi G}{c^4} T_{\\mu\\nu} \\].",
-                "Metric tensor in Schwarzschild geometry: \\[ ds^2 = -\\left(1 - \\frac{2GM}{c^2 r} \\right) dt^2 + \\left(1 - \\frac{2GM}{c^2 r} \\right)^{-1} dr^2 + r^2 d\\Omega^2 \\].",
-                "Lorentz transformation: \\[ x' = \\gamma (x - vt), \\quad t' = \\gamma \\left( t - \\frac{vx}{c^2} \\right) \\] where \\( \\gamma = \\frac{1}{\\sqrt{1 - v^2/c^2}} \\).",
-                "Time dilation: \\[ \\Delta t' = \\frac{\\Delta t}{\\sqrt{1 - v^2/c^2}} \\]."
+                "Einstein's field equations: \\[ R_{\\mu\\nu} - \\frac{1}{2} R g_{\\mu\\nu} + \\Lambda g_{\\mu\\nu} = \\frac{8\\pi G}{c^4} T_{\\mu\\nu} \\]",
+                "Metric tensor in Schwarzschild geometry: \\[ ds^2 = -\\left(1 - \\frac{2GM}{c^2 r} \\right) dt^2 + \\left(1 - \\frac{2GM}{c^2 r} \\right)^{-1} dr^2 + r^2 d\\Omega^2 \\]",
+                "Lorentz transformation: \\[ x' = \\gamma (x - vt), \\quad t' = \\gamma \\left( t - \\frac{vx}{c^2} \\right) \\] where \\( \\gamma = \\frac{1}{\\sqrt{1 - v^2/c^2}} \\]",
+                "Time dilation: \\[ \\Delta t' = \\frac{\\Delta t}{\\sqrt{1 - v^2/c^2}} \\]"
             ],
             "duration": 11,
             "difficulty": "Expert"
@@ -66,10 +66,10 @@
             "title": "Statistical Mechanics & Thermodynamic Notation",
             "description": "Exploring the mathematical models behind entropy, heat transfer, and statistical ensembles.",
             "bulletpoints": [
-                "Entropy: \\[ S = k_B \\ln \\Omega \\], where \\( k_B \\) is Boltzmann's constant.",
-                "Partition function: \\[ Z = \\sum_{i} e^{-E_i / k_B T} \\], essential in canonical ensembles.",
-                "Thermodynamic identities: \\[ dU = TdS - PdV \\], \\[ dF = -SdT - PdV \\].",
-                "Maxwell's relations in thermodynamics: \\[ \\left( \\frac{\\partial S}{\\partial V} \\right)_T = \\left( \\frac{\\partial P}{\\partial T} \\right)_V \\]."
+                "Entropy: \\[ S = k_B \\ln \\Omega \\], where \\( k_B \\) is Boltzmann's constant",
+                "Partition function: \\[ Z = \\sum_{i} e^{-E_i / k_B T} \\], essential in canonical ensembles",
+                "Thermodynamic identities: \\[ dU = TdS - PdV \\], \\[ dF = -SdT - PdV \\]",
+                "Maxwell's relations in thermodynamics: \\[ \\left( \\frac{\\partial S}{\\partial V} \\right)_T = \\left( \\frac{\\partial P}{\\partial T} \\right)_V \\]"
             ],
             "duration": 9,
             "difficulty": "Advanced"
@@ -79,8 +79,8 @@
             "title": "Quantum Field Theory & Gauge Invariance",
             "description": "Mathematical formalism underlying particle physics and gauge theories.",
             "bulletpoints": [
-                "Dirac equation for relativistic quantum mechanics: \\[ (i \\gamma^\\mu \\partial_\\mu - m) \\psi = 0 \\].",
-                "Gauge transformation in electromagnetism: \\[ A_\\mu \\to A_\\mu + \\partial_\\mu \\Lambda \\].",
+                "Dirac equation for relativistic quantum mechanics: \\[ (i \\gamma^\\mu \\partial_\\mu - m) \\psi = 0 \\]",
+                "Gauge transformation in electromagnetism: \\[ A_\\mu \\to A_\\mu + \\partial_\\mu \\Lambda \\]",
                 "Path integral formulation: \\[ Z = \\int \\mathcal{D}\\phi \\, e^{i S/\\hbar} \\], where S is the action.",
                 "Feynman diagrams describe quantum interactions using propagators and vertices."
             ],
@@ -92,10 +92,10 @@
             "title": "Fluid Dynamics & Navier-Stokes Equations",
             "description": "Mathematical modeling of fluid motion in various physical contexts.",
             "bulletpoints": [
-                "Continuity equation: \\[ \\frac{\\partial \\rho}{\\partial t} + \\nabla \\cdot (\\rho \\mathbf{v}) = 0 \\].",
-                "Navier-Stokes equation: \\[ \\rho \\left( \\frac{D \\mathbf{v}}{Dt} \\right) = - \\nabla P + \\mu \\nabla^2 \\mathbf{v} + \\rho \\mathbf{g} \\].",
-                "Euler's equation for inviscid flow: \\[ \\frac{D\\mathbf{v}}{Dt} = -\\frac{1}{\\rho} \\nabla P \\].",
-                "Bernoulli's theorem: \\[ P + \\frac{1}{2} \\rho v^2 + \\rho gh = \\text{constant} \\]."
+                "Continuity equation: \\[ \\frac{\\partial \\rho}{\\partial t} + \\nabla \\cdot (\\rho \\mathbf{v}) = 0 \\]",
+                "Navier-Stokes equation: \\[ \\rho \\left( \\frac{D \\mathbf{v}}{Dt} \\right) = - \\nabla P + \\mu \\nabla^2 \\mathbf{v} + \\rho \\mathbf{g} \\]",
+                "Euler's equation for inviscid flow: \\[ \\frac{D\\mathbf{v}}{Dt} = -\\frac{1}{\\rho} \\nabla P \\]",
+                "Bernoulli's theorem: \\[ P + \\frac{1}{2} \\rho v^2 + \\rho gh = \\text{constant} \\]"
             ],
             "duration": 10,
             "difficulty": "Advanced"

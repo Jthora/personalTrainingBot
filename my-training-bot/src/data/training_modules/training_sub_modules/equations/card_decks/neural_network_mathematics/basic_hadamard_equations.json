@@ -1,0 +1,134 @@
+{
+    "id": "basic_hadamard_equations",
+    "name": "Basic Hadamard Equations",
+    "description": "An introduction to the Hadamard product, common mathematical symbols, and fundamental concepts used in neural networks and optimization.",
+    "focus": [
+        "Hadamard Product \\( \\odot \\)",
+        "Matrix & Tensor Operations",
+        "Neural Network Symbols & Notation",
+        "Mathematical Terminology"
+    ],
+    "cards": [
+        {
+            "id": "what_is_hadamard",
+            "title": "What is the Hadamard Product?",
+            "description": "Understanding the meaning and purpose of element-wise multiplication in machine learning.",
+            "bulletpoints": [
+                "The Hadamard product is defined as: \\[ \\mathbf{A} \\odot \\mathbf{B} = \\begin{bmatrix} a_1 b_1 \\\\ a_2 b_2 \\\\ \\vdots \\\\ a_n b_n \\end{bmatrix} \\]",
+                "Unlike matrix multiplication, the Hadamard product **multiplies corresponding elements** of two matrices of the same shape.",
+                "This operation is used in **neural networks, optimization, attention mechanisms, and tensor-based learning.**"
+            ],
+            "duration": 6,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "symbol_odot",
+            "title": "The \\( \\odot \\) Symbol",
+            "description": "What the Hadamard operator represents in mathematical notation.",
+            "bulletpoints": [
+                "The symbol \\( \\odot \\) represents **element-wise multiplication** (also called the Hadamard product).",
+                "Mathematically, it differs from standard matrix multiplication \\( \\times \\), which involves dot products.",
+                "Used extensively in **neural networks, gradient updates, and feature-wise interactions in AI models.**"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "symbol_nabla",
+            "title": "The \\( \\nabla \\) Symbol (Gradient Operator)",
+            "description": "Understanding what the gradient operator means in optimization.",
+            "bulletpoints": [
+                "The symbol \\( \\nabla \\) (nabla) represents the **gradient** of a function.",
+                "It describes how changes in input variables affect an output function in neural networks.",
+                "Example: **Gradient of a loss function** in backpropagation: \\[ \\nabla_w C = \\frac{\\partial C}{\\partial w} \\]",
+                "Used in **gradient descent, backpropagation, and optimization algorithms.**"
+            ],
+            "duration": 6,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "symbol_sigma",
+            "title": "The \\( \\sigma \\) Symbol (Sigmoid Function)",
+            "description": "Understanding the role of the sigmoid function in neural networks.",
+            "bulletpoints": [
+                "The function \\( \\sigma(x) \\) represents the **sigmoid activation function**: \\[ \\sigma(x) = \\frac{1}{1 + e^{-x}} \\]",
+                "Maps any real number to a value between 0 and 1, making it useful for **binary classification.**",
+                "Used in **logistic regression, perceptrons, and probabilistic models.**"
+            ],
+            "duration": 6,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "symbol_mu_sigma",
+            "title": "Mean (\\( \\mu \\)) and Standard Deviation (\\( \\sigma \\))",
+            "description": "Understanding statistical notation in neural networks.",
+            "bulletpoints": [
+                "The mean (\\( \\mu \\)) represents the **average value** of a dataset.",
+                "The standard deviation (\\( \\sigma \\)) measures **how much values deviate from the mean.**",
+                "Used in **batch normalization, feature scaling, and probability distributions.**"
+            ],
+            "duration": 5,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "matrix_notation",
+            "title": "Understanding Matrix Notation",
+            "description": "Basic introduction to matrix representations in machine learning.",
+            "bulletpoints": [
+                "A matrix \\( \\mathbf{A} \\) is an array of numbers: \\[ \\mathbf{A} = \\begin{bmatrix} a_{11} & a_{12} \\\\ a_{21} & a_{22} \\end{bmatrix} \\]",
+                "Each element \\( a_{ij} \\) refers to row \\( i \\), column \\( j \\).",
+                "Matrices are used in **linear algebra, deep learning layers, and optimization.**"
+            ],
+            "duration": 6,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "tensor_basics",
+            "title": "What is a Tensor?",
+            "description": "Introduction to tensors and how they generalize matrices.",
+            "bulletpoints": [
+                "A tensor is a **generalization of scalars, vectors, and matrices** to higher dimensions.",
+                "Example: A 3D tensor representing an image has **height, width, and color channels.**",
+                "Used extensively in **deep learning frameworks such as TensorFlow and PyTorch.**"
+            ],
+            "duration": 7,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "gradient_descent",
+            "title": "What is Gradient Descent?",
+            "description": "How neural networks learn using iterative optimization.",
+            "bulletpoints": [
+                "Gradient descent minimizes a function by moving in the direction of steepest descent: \\[ w_i' = w_i - \\eta \\nabla_w C \\]",
+                "Here, \\( \\eta \\) is the learning rate, and \\( C \\) is the cost function.",
+                "Used in **backpropagation, optimization, and deep learning training.**"
+            ],
+            "duration": 8,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "softmax_function",
+            "title": "What is the Softmax Function?",
+            "description": "Understanding how softmax normalizes outputs for multi-class classification.",
+            "bulletpoints": [
+                "Softmax function converts scores into probabilities: \\[ P(y_i) = \\frac{e^{z_i}}{\\sum_{j} e^{z_j}} \\]",
+                "Ensures that the outputs sum to 1, making it useful in **classification models.**",
+                "Used in **deep learning models such as image recognition and NLP.**"
+            ],
+            "duration": 7,
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "batch_normalization",
+            "title": "What is Batch Normalization?",
+            "description": "Stabilizing neural network training using normalization.",
+            "bulletpoints": [
+                "Batch normalization transforms activations using: \\[ x' = \\gamma \\odot \\frac{x - \\mu}{\\sqrt{\\sigma^2 + \\epsilon}} + \\beta \\]",
+                "Ensures activations remain within a controlled range, preventing **gradient instability.**",
+                "Used in **deep learning architectures for faster and more stable training.**"
+            ],
+            "duration": 8,
+            "difficulty": "Beginner"
+        }
+    ]
+}

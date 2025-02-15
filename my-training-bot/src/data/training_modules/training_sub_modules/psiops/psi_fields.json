@@ -1,0 +1,21 @@
+{
+    "id": "psi_field_training",
+    "name": "Psi Field Training",
+    "description": "A comprehensive training module covering Psi Fields, energy dynamics, and theoretical equations.",
+    "difficulty": "Beginner to Expert",
+    "estimated_time": "6-36 months",
+    "focus": [
+        "Psi Energy Manipulation",
+        "Field Dynamics",
+        "Advanced Psi Equations",
+        "Consciousness & Psi Interactions"
+    ],
+    "cardDecks": [
+        "psi_field_fundamentals",
+        "psi_field_equations_basic",
+        "psi_field_equations_advanced",
+        "psi_energy_and_field_theoretical_concepts",
+        "psi_field_symbol_and_equation_breakdown",
+        "psi_field_interaction_models"
+    ]
+}

@@ -1,0 +1,133 @@
+{
+    "id": "neural_network_equations",
+    "name": "Neural Network Equations",
+    "description": "Exploring the fundamental equations that define neural networks and their learning processes.",
+    "focus": [
+        "Neural Activation Models",
+        "Learning Algorithms",
+        "Optimization Techniques",
+        "Memory Networks"
+    ],
+    "cards": [
+        {
+            "id": "mcculloch_pitts_model",
+            "title": "McCulloch-Pitts Neuron Model",
+            "description": "A simple mathematical model representing binary threshold-based neural activation.",
+            "bulletpoints": [
+                "The McCulloch-Pitts neuron defines activation as: \\[ y = \\begin{cases} 1, & \\text{if } \\sum_i w_i x_i + b > \\text{threshold} \\\\ 0, & \\text{otherwise} \\end{cases} \\]",
+                "This model is used to represent the simplest form of neural computation, where a neuron fires if the weighted sum of inputs exceeds a threshold.",
+                "This equation forms the basis of perceptron learning and is useful in binary classification tasks, such as logic gates, pattern recognition, and rule-based AI systems."
+            ],
+            "duration": 8,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "perceptron_learning",
+            "title": "Perceptron Learning Rule",
+            "description": "A fundamental algorithm for training single-layer perceptrons by adjusting weights based on error.",
+            "bulletpoints": [
+                "The weight update rule for a perceptron is given by: \\[ \\Delta w_i = \\eta (d - y) x_i \\]",
+                "Here, \\( \\eta \\) is the learning rate, \\( d \\) is the desired output, and \\( y \\) is the actual output.",
+                "This rule adjusts the weights when an error occurs, guiding the perceptron towards better classification in linearly separable problems, such as handwritten digit recognition and medical diagnosis models."
+            ],
+            "duration": 10,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "backpropagation_algorithm",
+            "title": "Backpropagation Algorithm",
+            "description": "A key optimization technique used to train multi-layer neural networks by minimizing error.",
+            "bulletpoints": [
+                "The backpropagation algorithm updates the weight gradients using: \\[ \\delta^L = \\nabla_a C \\odot \\sigma'(z^L) \\]",
+                "This equation calculates the error at layer \\( L \\), propagating it backward to adjust weights using gradient descent.",
+                "Backpropagation allows deep neural networks to learn complex patterns by minimizing the loss function in tasks like image recognition, speech processing, and financial forecasting."
+            ],
+            "duration": 12,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "hopfield_energy_function",
+            "title": "Hopfield Network Energy Function",
+            "description": "A mathematical function defining the stability of associative memory models.",
+            "bulletpoints": [
+                "The Hopfield network energy function is given by: \\[ E(\\mathbf{x}) = -\\frac{1}{2} \\mathbf{x}^T \\mathbf{W} \\mathbf{x} \\]",
+                "This equation describes how a Hopfield network converges to stable states, where \\( \\mathbf{W} \\) represents the weight matrix.",
+                "Hopfield networks are used in pattern retrieval, optimization problems, and associative memory models, such as error correction in noisy data."
+            ],
+            "duration": 12,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "sigmoid_activation",
+            "title": "Sigmoid Activation Function",
+            "description": "A nonlinear activation function that maps inputs to a bounded range for smooth gradient-based learning.",
+            "bulletpoints": [
+                "The sigmoid function is defined as: \\[ \\sigma(x) = \\frac{1}{1 + e^{-x}} \\]",
+                "This function outputs values between 0 and 1, making it useful for probabilistic interpretations in classification tasks.",
+                "Despite its usefulness, it suffers from vanishing gradient issues, limiting its effectiveness in deep networks compared to ReLU."
+            ],
+            "duration": 8,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "relu_activation",
+            "title": "Rectified Linear Unit (ReLU) Activation",
+            "description": "A popular activation function that helps deep neural networks overcome vanishing gradient problems.",
+            "bulletpoints": [
+                "The ReLU function is defined as: \\[ f(x) = \\max(0, x) \\]",
+                "Unlike sigmoid, ReLU is non-saturating, allowing faster training in deep learning models.",
+                "ReLU is widely used in convolutional neural networks (CNNs), deep reinforcement learning, and speech recognition tasks."
+            ],
+            "duration": 10,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "gradient_descent",
+            "title": "Gradient Descent Optimization",
+            "description": "An iterative optimization algorithm used to minimize the loss function in machine learning models.",
+            "bulletpoints": [
+                "The weight update rule in gradient descent is: \\[ w_i' = w_i - \\eta \\frac{\\partial C}{\\partial w_i} \\]",
+                "This equation ensures that the model learns by taking small steps in the direction that minimizes the loss function \\( C \\)",
+                "Gradient descent is the foundation of deep learning, logistic regression, and optimization problems in AI."
+            ],
+            "duration": 12,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "softmax_function",
+            "title": "Softmax Function",
+            "description": "A function used to normalize a vector into probability distributions for multi-class classification.",
+            "bulletpoints": [
+                "The softmax function is defined as: \\[ P(y_i) = \\frac{e^{z_i}}{\\sum_{j} e^{z_j}} \\]",
+                "This function ensures that outputs sum to 1, making it ideal for multi-class classification tasks.",
+                "Softmax is widely used in deep learning models for NLP, object detection, and reinforcement learning."
+            ],
+            "duration": 10,
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "batch_normalization",
+            "title": "Batch Normalization",
+            "description": "A technique that stabilizes and speeds up neural network training by normalizing activations.",
+            "bulletpoints": [
+                "Batch normalization is defined as: \\[ x' = \\frac{x - \\mu}{\\sqrt{\\sigma^2 + \\epsilon}} \\]",
+                "This equation ensures that activations have zero mean and unit variance, preventing internal covariate shift.",
+                "Batch normalization improves convergence rates, regularization, and generalization in deep networks."
+            ],
+            "duration": 14,
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "loss_function_cross_entropy",
+            "title": "Cross-Entropy Loss Function",
+            "description": "A loss function measuring the difference between predicted and actual probability distributions.",
+            "bulletpoints": [
+                "Cross-entropy loss is defined as: \\[ H(p, q) = - \\sum_{i} p_i \\log q_i \\]",
+                "This equation is commonly used in classification models, such as logistic regression and deep learning classifiers.",
+                "Cross-entropy loss is widely applied in image recognition, natural language processing, and probabilistic AI models."
+            ],
+            "duration": 12,
+            "difficulty": "Advanced"
+        }
+    ]
+}

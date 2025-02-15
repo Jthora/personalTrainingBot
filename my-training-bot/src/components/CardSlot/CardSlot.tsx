@@ -77,7 +77,7 @@ const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
         <div className={styles.cardSlot}>
             <div className={styles.cardDetails}>
                 <div className={styles.topLeft}>
-                    <h2>{card.title}</h2>
+                    <h2>{formatKatex(card.title)}</h2>
                     <p className={styles.cardDescription}>{formatKatex(card.description)}</p>
                     <ul>
                         {card.bulletpoints.map((point, index) => (

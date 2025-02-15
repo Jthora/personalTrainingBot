@@ -9,8 +9,8 @@
             "title": "Perceptron Model & Linear Separability",
             "description": "Understanding the basic unit of a neural network and its ability to classify data.",
             "bulletpoints": [
-                "Define the perceptron as a simple neuron model where the output is given by \\[ y = f(\\mathbf{w}^T \\mathbf{x} + b) \\].",
-                "Understand the concept of linear separability and how the decision boundary is defined by \\[ \\mathbf{w}^T \\mathbf{x} + b = 0 \\].",
+                "Define the perceptron as a simple neuron model where the output is given by \\[ y = f(\\mathbf{w}^T \\mathbf{x} + b) \\]",
+                "Understand the concept of linear separability and how the decision boundary is defined by \\[ \\mathbf{w}^T \\mathbf{x} + b = 0 \\]",
                 "Explore how perceptrons use the dot product calculation \\[ \\sum w_i x_i \\] to determine the class of an input."
             ],
             "duration": 8,
@@ -22,8 +22,8 @@
             "description": "Exploring how multiple layers in neural networks improve pattern recognition.",
             "bulletpoints": [
                 "Understand how adding hidden layers allows networks to model complex relationships beyond linear separability.",
-                "Study activation functions: \\[ \\text{Sigmoid: } \\sigma(x) = \\frac{1}{1 + e^{-x}} \\], \\[ \\text{ReLU: } f(x) = \\max(0, x) \\], \\[ \\text{Tanh: } \\tanh(x) = \\frac{e^x - e^{-x}}{e^x + e^{-x}} \\].",
-                "Explore forward propagation using matrix multiplications: \\[ \\mathbf{z} = \\mathbf{W} \\mathbf{x} + \\mathbf{b} \\]."
+                "Study activation functions: \\[ \\text{Sigmoid: } \\sigma(x) = \\frac{1}{1 + e^{-x}} \\], \\[ \\text{ReLU: } f(x) = \\max(0, x) \\], \\[ \\text{Tanh: } \\tanh(x) = \\frac{e^x - e^{-x}}{e^x + e^{-x}} \\]",
+                "Explore forward propagation using matrix multiplications: \\[ \\mathbf{z} = \\mathbf{W} \\mathbf{x} + \\mathbf{b} \\]"
             ],
             "duration": 10,
             "difficulty": "Advanced"
@@ -35,7 +35,7 @@
             "bulletpoints": [
                 "Learn the role of tensors in computational graphs for neural networks: \\[ T_{ijk} \\] representing 3D data structures.",
                 "Explore vectorized operations for efficient computation, such as \\[ \\mathbf{A} \\cdot \\mathbf{B} \\] for matrix multiplication.",
-                "Understand how matrix multiplication is used in neural network weight updates: \\[ \\Delta W = - \\eta \\frac{\\partial L}{\\partial W} \\]."
+                "Understand how matrix multiplication is used in neural network weight updates: \\[ \\Delta W = - \\eta \\frac{\\partial L}{\\partial W} \\]"
             ],
             "duration": 12,
             "difficulty": "Expert"
@@ -45,7 +45,7 @@
             "title": "Gradient Descent & Optimization",
             "description": "Exploring how neural networks update weights using optimization algorithms.",
             "bulletpoints": [
-                "Define the gradient descent update rule: \\[ W^{(t+1)} = W^{(t)} - \\eta \\nabla L(W) \\].",
+                "Define the gradient descent update rule: \\[ W^{(t+1)} = W^{(t)} - \\eta \\nabla L(W) \\]",
                 "Explore learning rate \\( \\eta \\) and its impact on convergence speed.",
                 "Understand how stochastic gradient descent (SGD) and Adam optimizer improve efficiency."
             ],
@@ -57,8 +57,8 @@
             "title": "Backpropagation Algorithm",
             "description": "Understanding how neural networks learn through backpropagation.",
             "bulletpoints": [
-                "Calculate error propagation using the chain rule: \\[ \\frac{\\partial L}{\\partial W} = \\frac{\\partial L}{\\partial a} \\cdot \\frac{\\partial a}{\\partial W} \\].",
-                "Update weights using gradients: \\[ W^{(t+1)} = W^{(t)} - \\eta \\frac{\\partial L}{\\partial W} \\].",
+                "Calculate error propagation using the chain rule: \\[ \\frac{\\partial L}{\\partial W} = \\frac{\\partial L}{\\partial a} \\cdot \\frac{\\partial a}{\\partial W} \\]",
+                "Update weights using gradients: \\[ W^{(t+1)} = W^{(t)} - \\eta \\frac{\\partial L}{\\partial W} \\]",
                 "Understand how backpropagation works layer by layer in deep networks."
             ],
             "duration": 14,
@@ -93,7 +93,7 @@
             "title": "Softmax Function for Probabilistic Output",
             "description": "Using the softmax function to convert network outputs into probability distributions.",
             "bulletpoints": [
-                "Define softmax: \\[ \\sigma(\\mathbf{z})_i = \\frac{e^{z_i}}{\\sum_{j} e^{z_j}} \\].",
+                "Define softmax: \\[ \\sigma(\\mathbf{z})_i = \\frac{e^{z_i}}{\\sum_{j} e^{z_j}} \\]",
                 "Understand its role in multi-class classification problems.",
                 "Analyze how softmax converts logits into probabilities for output interpretation."
             ],
@@ -105,7 +105,7 @@
             "title": "Batch Normalization in Neural Networks",
             "description": "Using batch normalization to stabilize and accelerate training.",
             "bulletpoints": [
-                "Normalize activations using batch mean and variance: \\[ \\hat{x}_i = \\frac{x_i - \\mu_B}{\\sigma_B} \\].",
+                "Normalize activations using batch mean and variance: \\[ \\hat{x}_i = \\frac{x_i - \\mu_B}{\\sigma_B} \\]",
                 "Improve convergence speed by reducing internal covariate shift.",
                 "Understand how normalization is applied across mini-batches."
             ],
@@ -118,7 +118,7 @@
             "description": "Preventing overfitting in deep networks using dropout techniques.",
             "bulletpoints": [
                 "Define dropout: Randomly setting activations to zero during training.",
-                "Mathematically expressed as: \\[ \\tilde{h}_i = h_i \\cdot r, \\quad r \\sim Bernoulli(p) \\].",
+                "Mathematically expressed as: \\[ \\tilde{h}_i = h_i \\cdot r, \\quad r \\sim Bernoulli(p) \\]",
                 "Analyze how dropout improves generalization in large models."
             ],
             "duration": 12,
@@ -129,8 +129,8 @@
             "title": "Weight Initialization Strategies",
             "description": "Understanding how proper weight initialization affects learning dynamics.",
             "bulletpoints": [
-                "Study Xavier/Glorot initialization: \\[ W \\sim \\mathcal{N}(0, \\frac{1}{n}) \\].",
-                "Explore He initialization for ReLU: \\[ W \\sim \\mathcal{N}(0, \\frac{2}{n}) \\].",
+                "Study Xavier/Glorot initialization: \\[ W \\sim \\mathcal{N}(0, \\frac{1}{n}) \\]",
+                "Explore He initialization for ReLU: \\[ W \\sim \\mathcal{N}(0, \\frac{2}{n}) \\]",
                 "Analyze the impact of poor initialization on gradient flow and training speed."
             ],
             "duration": 12,

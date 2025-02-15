@@ -26,7 +26,7 @@
             "title": "The \\( \\odot \\) Symbol",
             "description": "What the Hadamard operator represents in mathematical notation.",
             "bulletpoints": [
-                "The symbol \\( \\odot \\) represents element-wise multiplication (also called the Hadamard product).",
+                "The symbol \\( \\odot \\) represents element-wise multiplication (also called the Hadamard product)",
                 "Mathematically, it differs from standard matrix multiplication \\( \\times \\), which involves dot products.",
                 "Used extensively in neural networks, gradient updates, and feature-wise interactions in AI models."
             ],

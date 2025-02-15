@@ -25,8 +25,8 @@
             "title": "Heat Transfer & Thermal Conduction",
             "description": "Understanding how heat moves through conduction, convection, and radiation.",
             "bulletpoints": [
-                "Fourier’s Law describes heat conduction: \\[ q = -k \\nabla T \\]",
-                "Newton’s Law of Cooling models convective heat transfer: \\[ Q = hA(T_s - T_\\infty) \\]",
+                "Fourier's Law describes heat conduction: \\[ q = -k \\nabla T \\]",
+                "Newton's Law of Cooling models convective heat transfer: \\[ Q = hA(T_s - T_\\infty) \\]",
                 "Stefan-Boltzmann Law governs blackbody radiation: \\[ Q = \\sigma A T^4 \\]"
             ],
             "duration": 12,

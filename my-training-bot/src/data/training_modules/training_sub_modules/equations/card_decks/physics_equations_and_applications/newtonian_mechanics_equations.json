@@ -24,10 +24,10 @@
         },
         {
             "id": "newtons_laws",
-            "title": "Newton’s Laws of Motion",
+            "title": "Newton's Laws of Motion",
             "description": "Exploring the fundamental principles of force and motion.",
             "bulletpoints": [
-                "State Newton’s three laws: \\( \\sum \\mathbf{F} = m \\mathbf{a} \\), the principle of inertia, and action-reaction pairs.",
+                "State Newton's three laws: \\( \\sum \\mathbf{F} = m \\mathbf{a} \\), the principle of inertia, and action-reaction pairs.",
                 "Apply force equations: \\[ \\mathbf{F} = m \\mathbf{a} \\] to analyze dynamics in different scenarios.",
                 "Examine friction, tension, normal force, and net force problems in real-world applications."
             ],
@@ -88,7 +88,7 @@
             "description": "Understanding periodic motion in mass-spring and pendulum systems.",
             "bulletpoints": [
                 "Define the equation of motion for a mass-spring system: \\[ x(t) = A \\cos(\\omega t + \\phi) \\]",
-                "Use Hooke’s law: \\[ F = -kx \\] and angular frequency: \\[ \\omega = \\sqrt{\\frac{k}{m}} \\]",
+                "Use Hooke's law: \\[ F = -kx \\] and angular frequency: \\[ \\omega = \\sqrt{\\frac{k}{m}} \\]",
                 "Analyze the motion of a simple pendulum: \\[ \\omega = \\sqrt{\\frac{g}{L}} \\]"
             ],
             "duration": 12,
@@ -96,11 +96,11 @@
         },
         {
             "id": "gravitational_motion",
-            "title": "Newton’s Law of Universal Gravitation",
+            "title": "Newton's Law of Universal Gravitation",
             "description": "Studying the effects of gravity in celestial and planetary motion.",
             "bulletpoints": [
                 "Define the gravitational force equation: \\[ F = G \\frac{m_1 m_2}{r^2} \\]",
-                "Apply Kepler’s laws of planetary motion to orbital mechanics.",
+                "Apply Kepler's laws of planetary motion to orbital mechanics.",
                 "Analyze gravitational potential energy in planetary systems: \\[ U = -G \\frac{m_1 m_2}{r} \\]"
             ],
             "duration": 14,

@@ -44,7 +44,7 @@ const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
         return `${String(minutes).padStart(2, '0')}:${String(remainingSeconds).padStart(2, '0')}`;
     };
 
-    const formatBulletpoint = (text: string) => {
+    const formatKatex = (text: string) => {
         const inlineMathRegex = /\\\((.*?)\\\)/g;
         const blockMathRegex = /\\\[(.*?)\\\]/g;
 
@@ -78,10 +78,10 @@ const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
             <div className={styles.cardDetails}>
                 <div className={styles.topLeft}>
                     <h2>{card.title}</h2>
-                    <p className={styles.cardDescription}>{card.description}</p>
+                    <p className={styles.cardDescription}>{formatKatex(card.description)}</p>
                     <ul>
                         {card.bulletpoints.map((point, index) => (
-                            <li key={index}>{formatBulletpoint(point)}</li>
+                            <li key={index}>{formatKatex(point)}</li>
                         ))}
                     </ul>
                 </div>

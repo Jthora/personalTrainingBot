@@ -13,8 +13,8 @@
             "title": "Laws of Thermodynamics & Energy Conservation",
             "description": "Exploring the fundamental laws governing heat and energy transfer.",
             "bulletpoints": [
-                "The First Law of Thermodynamics states energy conservation: \\[ dU = dQ - dW \\].",
-                "The Second Law of Thermodynamics defines entropy increase: \\[ dS \\geq \\frac{dQ}{T} \\].",
+                "The First Law of Thermodynamics states energy conservation: \\[ dU = dQ - dW \\]",
+                "The Second Law of Thermodynamics defines entropy increase: \\[ dS \\geq \\frac{dQ}{T} \\]",
                 "The Third Law of Thermodynamics states \\( S \\to 0 \\) as \\( T \\to 0 \\) for perfect crystals."
             ],
             "duration": 10,
@@ -25,9 +25,9 @@
             "title": "Heat Transfer & Thermal Conduction",
             "description": "Understanding how heat moves through conduction, convection, and radiation.",
             "bulletpoints": [
-                "Fourier’s Law describes heat conduction: \\[ q = -k \\nabla T \\].",
-                "Newton’s Law of Cooling models convective heat transfer: \\[ Q = hA(T_s - T_\\infty) \\].",
-                "Stefan-Boltzmann Law governs blackbody radiation: \\[ Q = \\sigma A T^4 \\]."
+                "Fourier’s Law describes heat conduction: \\[ q = -k \\nabla T \\]",
+                "Newton’s Law of Cooling models convective heat transfer: \\[ Q = hA(T_s - T_\\infty) \\]",
+                "Stefan-Boltzmann Law governs blackbody radiation: \\[ Q = \\sigma A T^4 \\]"
             ],
             "duration": 12,
             "difficulty": "Expert"
@@ -37,9 +37,9 @@
             "title": "Statistical Mechanics & Entropy Calculations",
             "description": "Using probability and statistics to understand microscopic states of matter.",
             "bulletpoints": [
-                "Boltzmann entropy formula: \\[ S = k_B \\ln \\Omega \\].",
-                "Partition function \\( Z \\) determines thermodynamic properties: \\[ Z = \\sum_i e^{-\\beta E_i} \\].",
-                "Free energy relates to partition functions: \\[ F = -k_B T \\ln Z \\]."
+                "Boltzmann entropy formula: \\[ S = k_B \\ln \\Omega \\]",
+                "Partition function \\( Z \\) determines thermodynamic properties: \\[ Z = \\sum_i e^{-\\beta E_i} \\]",
+                "Free energy relates to partition functions: \\[ F = -k_B T \\ln Z \\]"
             ],
             "duration": 14,
             "difficulty": "Expert"
@@ -49,8 +49,8 @@
             "title": "Carnot Cycle & Heat Engine Efficiency",
             "description": "Analyzing the maximum efficiency of heat engines.",
             "bulletpoints": [
-                "Efficiency of a Carnot engine: \\[ \\eta = 1 - \\frac{T_C}{T_H} \\].",
-                "Heat exchanged in each step: \\[ Q_H = T_H \\Delta S, \\quad Q_C = T_C \\Delta S \\].",
+                "Efficiency of a Carnot engine: \\[ \\eta = 1 - \\frac{T_C}{T_H} \\]",
+                "Heat exchanged in each step: \\[ Q_H = T_H \\Delta S, \\quad Q_C = T_C \\Delta S \\]",
                 "No real engine can exceed Carnot efficiency due to the Second Law."
             ],
             "duration": 12,
@@ -61,9 +61,9 @@
             "title": "Gibbs Free Energy & Chemical Thermodynamics",
             "description": "Understanding free energy in chemical and phase equilibrium.",
             "bulletpoints": [
-                "Gibbs free energy: \\[ G = H - TS \\].",
-                "Phase equilibrium condition: \\[ dG = 0 \\] at constant \\( P, T \\).",
-                "Spontaneous reactions occur when \\( \\Delta G < 0 \\)."
+                "Gibbs free energy: \\[ G = H - TS \\]",
+                "Phase equilibrium condition: \\[ dG = 0 \\] at constant \\( P, T \\)",
+                "Spontaneous reactions occur when \\( \\Delta G < 0 \\)"
             ],
             "duration": 12,
             "difficulty": "Advanced"
@@ -73,8 +73,8 @@
             "title": "Phase Transitions & Critical Points",
             "description": "Studying changes between solid, liquid, and gas phases.",
             "bulletpoints": [
-                "Latent heat equation: \\[ Q = mL \\].",
-                "Clausius-Clapeyron equation for phase boundaries: \\[ \\frac{dP}{dT} = \\frac{L}{T \\Delta V} \\].",
+                "Latent heat equation: \\[ Q = mL \\]",
+                "Clausius-Clapeyron equation for phase boundaries: \\[ \\frac{dP}{dT} = \\frac{L}{T \\Delta V} \\]",
                 "Critical point: \\( (T_c, P_c) \\) where distinct phases disappear."
             ],
             "duration": 13,
@@ -85,9 +85,9 @@
             "title": "Entropy & Probability Distributions",
             "description": "Exploring how entropy is maximized in equilibrium systems.",
             "bulletpoints": [
-                "Microcanonical entropy: \\[ S = k_B \\ln \\Omega \\].",
-                "Maxwell-Boltzmann distribution: \\[ f(v) = \\left( \\frac{m}{2\\pi k_B T} \\right)^{3/2} e^{-\\frac{mv^2}{2k_B T}} \\].",
-                "Entropy in quantum systems follows the von Neumann equation: \\[ S = -k_B \\text{Tr}(\\rho \\ln \\rho) \\]."
+                "Microcanonical entropy: \\[ S = k_B \\ln \\Omega \\]",
+                "Maxwell-Boltzmann distribution: \\[ f(v) = \\left( \\frac{m}{2\\pi k_B T} \\right)^{3/2} e^{-\\frac{mv^2}{2k_B T}} \\]",
+                "Entropy in quantum systems follows the von Neumann equation: \\[ S = -k_B \\text{Tr}(\\rho \\ln \\rho) \\]"
             ],
             "duration": 14,
             "difficulty": "Expert"
@@ -97,8 +97,8 @@
             "title": "Thermodynamic Potentials & Equilibrium",
             "description": "Understanding Helmholtz and Gibbs free energy in thermodynamic equilibrium.",
             "bulletpoints": [
-                "Helmholtz free energy: \\[ F = U - TS \\].",
-                "Gibbs free energy for chemical reactions: \\[ G = H - TS \\].",
+                "Helmholtz free energy: \\[ F = U - TS \\]",
+                "Gibbs free energy for chemical reactions: \\[ G = H - TS \\]",
                 "Legendre transformations relate thermodynamic potentials."
             ],
             "duration": 14,
@@ -109,8 +109,8 @@
             "title": "Black Hole Thermodynamics & Hawking Radiation",
             "description": "Exploring the connection between thermodynamics and gravitational systems.",
             "bulletpoints": [
-                "Black hole entropy: \\[ S = \\frac{k_B A}{4 l_p^2} \\].",
-                "Hawking temperature: \\[ T_H = \\frac{\\hbar c^3}{8 \\pi k_B G M} \\].",
+                "Black hole entropy: \\[ S = \\frac{k_B A}{4 l_p^2} \\]",
+                "Hawking temperature: \\[ T_H = \\frac{\\hbar c^3}{8 \\pi k_B G M} \\]",
                 "Black holes obey the laws of thermodynamics in analogy with classical systems."
             ],
             "duration": 16,
@@ -121,8 +121,8 @@
             "title": "Quantum Statistical Mechanics & Bose-Einstein Condensation",
             "description": "Understanding quantum states in thermodynamics.",
             "bulletpoints": [
-                "Fermi-Dirac distribution: \\[ f(E) = \\frac{1}{e^{(E - \\mu)/k_B T} + 1} \\].",
-                "Bose-Einstein condensation occurs when \\( k_B T \\) is low enough: \\[ N_0 = N \\left( 1 - \\left( \\frac{T}{T_c} \\right)^{3/2} \\right) \\].",
+                "Fermi-Dirac distribution: \\[ f(E) = \\frac{1}{e^{(E - \\mu)/k_B T} + 1} \\]",
+                "Bose-Einstein condensation occurs when \\( k_B T \\) is low enough: \\[ N_0 = N \\left( 1 - \\left( \\frac{T}{T_c} \\right)^{3/2} \\right) \\]",
                 "Superfluidity and superconductivity emerge from quantum statistical effects."
             ],
             "duration": 16,
@@ -133,8 +133,8 @@
             "title": "Fluctuation Theorems & Irreversible Processes",
             "description": "Exploring non-equilibrium statistical mechanics and entropy fluctuations.",
             "bulletpoints": [
-                "Fluctuation theorem relates entropy production and probability distributions: \\[ \\frac{P(+\\sigma)}{P(-\\sigma)} = e^{\\sigma} \\].",
-                "Jarzynski equality links equilibrium free energy with non-equilibrium work: \\[ \\langle e^{-\\beta W} \\rangle = e^{-\\beta \\Delta F} \\].",
+                "Fluctuation theorem relates entropy production and probability distributions: \\[ \\frac{P(+\\sigma)}{P(-\\sigma)} = e^{\\sigma} \\]",
+                "Jarzynski equality links equilibrium free energy with non-equilibrium work: \\[ \\langle e^{-\\beta W} \\rangle = e^{-\\beta \\Delta F} \\]",
                 "Irreversible thermodynamics describes entropy production in open systems."
             ],
             "duration": 16,

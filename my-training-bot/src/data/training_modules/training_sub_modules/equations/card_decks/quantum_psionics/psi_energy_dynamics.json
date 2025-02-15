@@ -26,7 +26,7 @@
             "title": "Energy Focus & Psi Amplification Techniques",
             "description": "Techniques to enhance concentration, coherence, and directed energy flow.",
             "bulletpoints": [
-                "Learn breathwork and meditation techniques that enhance psi energy coherence by stabilizing the brain-heart resonance frequency: \\[ f_{r} = \\frac{1}{2 \\pi} \\sqrt{\\frac{k}{m}} \\].",
+                "Learn breathwork and meditation techniques that enhance psi energy coherence by stabilizing the brain-heart resonance frequency: \\[ f_{r} = \\frac{1}{2 \\pi} \\sqrt{\\frac{k}{m}} \\]",
                 "Develop methods to modulate biofield intensity and frequency through structured visualization, tuning to Schumann resonance frequencies (7.83 Hz, 14.1 Hz, etc.).",
                 "Study the impact of emotional states on psi energy output, using the equation: \\[ P_{\\psi} = \\alpha \\left( \\frac{d \\mathbf{E}_{\\psi}}{dt} \\right) \\], where \\( \\alpha \\) represents emotional intensity as an amplification coefficient."
             ],
@@ -38,9 +38,9 @@
             "title": "Psi Energy Interactions with Matter & Fields",
             "description": "Examining real-world effects of psionic influence on physical objects and environments.",
             "bulletpoints": [
-                "Explore how focused intent alters electrical and magnetic systems, following a modified Poynting vector equation: \\[ \\mathbf{S}_{\\psi} = \\mathbf{E}_{\\psi} \\times \\mathbf{H} \\].",
+                "Explore how focused intent alters electrical and magnetic systems, following a modified Poynting vector equation: \\[ \\mathbf{S}_{\\psi} = \\mathbf{E}_{\\psi} \\times \\mathbf{H} \\]",
                 "Study psi effects in experimental settings such as influencing random event generators (REGs) and altering wavefunction probabilities.",
-                "Understand field harmonization and energetic coherence in group settings, applying principles of constructive resonance: \\[ \\sum A_{\\psi} = A_{1} + A_{2} + A_{n} \\]."
+                "Understand field harmonization and energetic coherence in group settings, applying principles of constructive resonance: \\[ \\sum A_{\\psi} = A_{1} + A_{2} + A_{n} \\]"
             ],
             "duration": 14,
             "difficulty": "Expert"
@@ -62,9 +62,9 @@
             "title": "Psi Field Shielding & Defensive Applications",
             "description": "Exploring methods of psi energy shielding and field reinforcement.",
             "bulletpoints": [
-                "Develop psi-based shielding techniques by generating a self-sustaining standing wave: \\[ \\psi(x,t) = A \\cos(\\omega t - kx) \\].",
+                "Develop psi-based shielding techniques by generating a self-sustaining standing wave: \\[ \\psi(x,t) = A \\cos(\\omega t - kx) \\]",
                 "Investigate bioelectric feedback loops that enhance field density under external psi influences.",
-                "Apply constructive interference methods for field reinforcement: \\[ A_{total} = A_{\\psi,1} + A_{\\psi,2} \\]."
+                "Apply constructive interference methods for field reinforcement: \\[ A_{total} = A_{\\psi,1} + A_{\\psi,2} \\]"
             ],
             "duration": 14,
             "difficulty": "Expert"
@@ -74,7 +74,7 @@
             "title": "Psi Energy Extraction & Environmental Interaction",
             "description": "Studying how psi fields interact with natural energy sources.",
             "bulletpoints": [
-                "Extract ambient psi energy using techniques based on quantum vacuum fluctuations: \\[ \\langle T_{\\mu\\nu} \\rangle = \\frac{1}{2} \\sum_k \\hbar \\omega_k \\].",
+                "Extract ambient psi energy using techniques based on quantum vacuum fluctuations: \\[ \\langle T_{\\mu\\nu} \\rangle = \\frac{1}{2} \\sum_k \\hbar \\omega_k \\]",
                 "Analyze interaction with planetary geomagnetic fields, using energy transfer equations in conductive mediums.",
                 "Study the role of crystals and structured materials in amplifying and storing psi energy."
             ],
@@ -88,7 +88,7 @@
             "bulletpoints": [
                 "Study nonlocal psi field entanglement effects through modified Schrödinger wave equations.",
                 "Explore psi-based remote influence techniques, modeled using action-at-a-distance equations.",
-                "Investigate psi coherence across multiple energy sources: \\[ \\Delta P = \\int \\mathbf{E}_{\\psi} \\cdot d \\mathbf{A} \\]."
+                "Investigate psi coherence across multiple energy sources: \\[ \\Delta P = \\int \\mathbf{E}_{\\psi} \\cdot d \\mathbf{A} \\]"
             ],
             "duration": 16,
             "difficulty": "Expert"
@@ -98,7 +98,7 @@
             "title": "Psi Toroidal Fields & Consciousness Loops",
             "description": "Analyzing toroidal structures in bioelectric and psionic energy fields.",
             "bulletpoints": [
-                "Study the toroidal psi field model, described by: \\[ \\nabla \\times \\mathbf{A}_{\\psi} = \\mu_0 \\mathbf{J}_{\\psi} \\].",
+                "Study the toroidal psi field model, described by: \\[ \\nabla \\times \\mathbf{A}_{\\psi} = \\mu_0 \\mathbf{J}_{\\psi} \\]",
                 "Examine self-reinforcing psi vortices and their interaction with bioplasma fields.",
                 "Investigate coherence patterns between individual and collective toroidal psi fields."
             ],
@@ -110,7 +110,7 @@
             "title": "Zero-Point Psi Energy & Vacuum Potential",
             "description": "Exploring the connection between psi energy and quantum vacuum potential.",
             "bulletpoints": [
-                "Apply zero-point field equations to psi energy models: \\[ \\langle E \\rangle = \\frac{1}{2} \\hbar \\omega \\].",
+                "Apply zero-point field equations to psi energy models: \\[ \\langle E \\rangle = \\frac{1}{2} \\hbar \\omega \\]",
                 "Investigate psionic extraction of quantum fluctuations through bioelectric modulation.",
                 "Study the potential for psi energy to generate and stabilize localized spacetime distortions."
             ],

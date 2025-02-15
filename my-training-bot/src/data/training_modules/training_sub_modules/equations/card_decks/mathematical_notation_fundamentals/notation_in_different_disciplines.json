@@ -26,9 +26,9 @@
             "title": "Engineering & Physics Notation",
             "description": "Understanding specialized notation used in physics and engineering equations.",
             "bulletpoints": [
-                "Common physics symbols: \\[ F \\] (force), \\[ v \\] (velocity), \\[ a \\] (acceleration), \\[ E \\] (energy).",
+                "Common physics symbols: \\[ F \\] (force), \\[ v \\] (velocity), \\[ a \\] (acceleration), \\[ E \\] (energy)",
                 "SI unit notation: \\[ m \\] (meters), \\[ kg \\] (kilograms), \\[ s \\] (seconds).",
-                "Greek letters in science: \\[ \\lambda \\] (wavelength), \\[ \\sigma \\] (summation), \\[ \\mu \\] (micro)."
+                "Greek letters in science: \\[ \\lambda \\] (wavelength), \\[ \\sigma \\] (summation), \\[ \\mu \\] (micro)"
             ],
             "duration": 7,
             "difficulty": "Intermediate"
@@ -39,9 +39,9 @@
             "description": "Exploring symbols used in probability and statistical analysis.",
             "bulletpoints": [
                 "Probability of event \\( A \\): \\[ P(A) \\].",
-                "Mean (\\( \\mu \\)), variance (\\( \\sigma^2 \\)), and standard deviation (\\( \\sigma \\)).",
-                "Factorial notation: \\[ n! = n \\times (n-1) \\times \\dots \\times 1 \\].",
-                "Combinations and permutations: \\[ {}_nC_r = \\frac{n!}{r!(n-r)!} \\], \\[ {}_nP_r = \\frac{n!}{(n-r)!} \\]."
+                "Mean (\\( \\mu \\)), variance (\\( \\sigma^2 \\)), and standard deviation (\\( \\sigma \\))",
+                "Factorial notation: \\[ n! = n \\times (n-1) \\times \\dots \\times 1 \\]",
+                "Combinations and permutations: \\[ {}_nC_r = \\frac{n!}{r!(n-r)!} \\], \\[ {}_nP_r = \\frac{n!}{(n-r)!} \\]"
             ],
             "duration": 8,
             "difficulty": "Advanced"
@@ -51,9 +51,9 @@
             "title": "Calculus & Mathematical Analysis Notation",
             "description": "Understanding how differentiation and integration are represented mathematically.",
             "bulletpoints": [
-                "Derivative notation: \\[ f'(x) \\], \\[ \\frac{dy}{dx} \\], \\[ \\frac{\\partial f}{\\partial x} \\] (partial derivative).",
+                "Derivative notation: \\[ f'(x) \\], \\[ \\frac{dy}{dx} \\], \\[ \\frac{\\partial f}{\\partial x} \\] (partial derivative)",
                 "Integral notation: \\[ \\int f(x) \\,dx \\] for indefinite and \\[ \\int_{a}^{b} f(x) \\,dx \\] for definite integrals.",
-                "Limits notation: \\[ \\lim_{x \\to a} f(x) \\]."
+                "Limits notation: \\[ \\lim_{x \\to a} f(x) \\]"
             ],
             "duration": 8,
             "difficulty": "Advanced"
@@ -64,8 +64,8 @@
             "description": "Exploring vector and matrix notation used in computational mathematics and physics.",
             "bulletpoints": [
                 "Vector notation: \\[ \\mathbf{v} = (v_1, v_2, v_3) \\].",
-                "Matrix representation: \\[ A = \\begin{bmatrix} a_{11} & a_{12} \\\\ a_{21} & a_{22} \\end{bmatrix} \\].",
-                "Determinant: \\[ \\det(A) \\], inverse matrix: \\[ A^{-1} \\]."
+                "Matrix representation: \\[ A = \\begin{bmatrix} a_{11} & a_{12} \\\\ a_{21} & a_{22} \\end{bmatrix} \\]",
+                "Determinant: \\[ \\det(A) \\], inverse matrix: \\[ A^{-1} \\]"
             ],
             "duration": 7,
             "difficulty": "Intermediate"
@@ -75,9 +75,9 @@
             "title": "Set Theory & Logical Notation",
             "description": "Understanding the foundational notation of mathematical logic and set relations.",
             "bulletpoints": [
-                "Set membership: \\[ x \\in A \\] (x is an element of A).",
-                "Union and intersection: \\[ A \\cup B \\], \\[ A \\cap B \\].",
-                "Logical symbols: \\[ \\wedge \\] (AND), \\[ \\vee \\] (OR), \\[ \\neg \\] (NOT), \\[ \\forall \\] (for all), \\[ \\exists \\] (exists)."
+                "Set membership: \\[ x \\in A \\] (x is an element of A)",
+                "Union and intersection: \\[ A \\cup B \\], \\[ A \\cap B \\]",
+                "Logical symbols: \\[ \\wedge \\] (AND), \\[ \\vee \\] (OR), \\[ \\neg \\] (NOT), \\[ \\forall \\] (for all), \\[ \\exists \\] (exists)"
             ],
             "duration": 7,
             "difficulty": "Intermediate"
@@ -87,8 +87,8 @@
             "title": "Quantum Mechanics & Bra-Ket Notation",
             "description": "Exploring Dirac's notation for quantum states and operators.",
             "bulletpoints": [
-                "Quantum state notation: \\[ \\langle \\psi | \\] (bra), \\[ | \\psi \\rangle \\] (ket).",
-                "Operator action: \\[ \\hat{A} | \\psi \\rangle = \\lambda | \\psi \\rangle \\].",
+                "Quantum state notation: \\[ \\langle \\psi | \\] (bra), \\[ | \\psi \\rangle \\] (ket)",
+                "Operator action: \\[ \\hat{A} | \\psi \\rangle = \\lambda | \\psi \\rangle \\]",
                 "Probability amplitudes and eigenvalues in quantum mechanics."
             ],
             "duration": 8,
@@ -99,8 +99,8 @@
             "title": "Computer Science & Algorithm Notation",
             "description": "Studying notations used in computational complexity and algorithm design.",
             "bulletpoints": [
-                "Big-O notation for algorithm efficiency: \\[ O(n) \\], \\[ O(\\log n) \\], \\[ O(n^2) \\].",
-                "Logic gate notation: \\[ A \\wedge B \\] (AND), \\[ A \\vee B \\] (OR), \\[ \\neg A \\] (NOT).",
+                "Big-O notation for algorithm efficiency: \\[ O(n) \\], \\[ O(\\log n) \\], \\[ O(n^2) \\]",
+                "Logic gate notation: \\[ A \\wedge B \\] (AND), \\[ A \\vee B \\] (OR), \\[ \\neg A \\] (NOT)",
                 "Lambda calculus notation: \\[ \\lambda x.f(x) \\] for functional programming."
             ],
             "duration": 7,
@@ -112,8 +112,8 @@
             "description": "Understanding symbolic representations in circuit analysis and electromagnetism.",
             "bulletpoints": [
                 "Ohm's Law: \\[ V = IR \\] (voltage = current × resistance).",
-                "Circuit components: \\[ R \\] (resistor), \\[ C \\] (capacitor), \\[ L \\] (inductor).",
-                "Maxwell's equations: \\[ \\nabla \\times E = -\\frac{\\partial B}{\\partial t} \\]."
+                "Circuit components: \\[ R \\] (resistor), \\[ C \\] (capacitor), \\[ L \\] (inductor)",
+                "Maxwell's equations: \\[ \\nabla \\times E = -\\frac{\\partial B}{\\partial t} \\]"
             ],
             "duration": 8,
             "difficulty": "Advanced"

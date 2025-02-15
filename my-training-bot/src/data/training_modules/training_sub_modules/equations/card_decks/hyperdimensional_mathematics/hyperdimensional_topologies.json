@@ -12,7 +12,7 @@
             "title": "Understanding N-Dimensional Spaces",
             "description": "Introduction to spaces beyond three dimensions and their mathematical representation.",
             "bulletpoints": [
-                "Define an \\( N \\)-dimensional space as \\( \\mathbb{R}^N \\), where points are represented as \\( (x_1, x_2, ..., x_N) \\).",
+                "Define an \\( N \\)-dimensional space as \\( \\mathbb{R}^N \\), where points are represented as \\( (x_1, x_2, ..., x_N) \\)",
                 "Use visualization techniques such as projections and cross-sections to interpret higher dimensions.",
                 "Explore applications of higher-dimensional spaces in string theory and quantum mechanics."
             ],
@@ -36,7 +36,7 @@
             "title": "Projective Geometry & Compactified Spaces",
             "description": "Understanding how higher-dimensional spaces can be compactified into lower dimensions.",
             "bulletpoints": [
-                "Define projective space \\( \\mathbb{RP}^n \\) as the set of all lines through the origin in \\( \\mathbb{R}^{n+1} \\).",
+                "Define projective space \\( \\mathbb{RP}^n \\) as the set of all lines through the origin in \\( \\mathbb{R}^{n+1} \\)",
                 "Explore Calabi-Yau manifolds \\( \\mathcal{M} \\) as solutions to compactified string theory models.",
                 "Analyze the effects of compactification on physical laws and gauge symmetries in high-energy physics."
             ],
@@ -48,7 +48,7 @@
             "title": "Manifolds & Embedding Theorems",
             "description": "Studying how higher-dimensional manifolds can be embedded in larger spaces.",
             "bulletpoints": [
-                "Define an \\( n \\)-dimensional manifold as a space locally homeomorphic to \\( \\mathbb{R}^n \\).",
+                "Define an \\( n \\)-dimensional manifold as a space locally homeomorphic to \\( \\mathbb{R}^n \\)",
                 "Use the Whitney Embedding Theorem to determine minimal dimensions required for embedding.",
                 "Study applications in differential geometry, such as Ricci curvature in general relativity."
             ],
@@ -72,7 +72,7 @@
             "title": "Quaternionic & Octonionic Spaces",
             "description": "Studying higher-dimensional number systems and their geometrical applications.",
             "bulletpoints": [
-                "Define the quaternions \\( \\mathbb{H} \\) as an extension of complex numbers: \\[ i^2 = j^2 = k^2 = ijk = -1 \\].",
+                "Define the quaternions \\( \\mathbb{H} \\) as an extension of complex numbers: \\[ i^2 = j^2 = k^2 = ijk = -1 \\]",
                 "Explore the role of octonions \\( \\mathbb{O} \\) in exceptional Lie algebras.",
                 "Analyze their applications in string theory, supersymmetry, and quantum mechanics."
             ],
@@ -85,7 +85,7 @@
             "description": "Exploring how nontrivial topologies affect spacetime structure and physics.",
             "bulletpoints": [
                 "Study Einstein-Rosen bridges as potential solutions to the Einstein field equations.",
-                "Analyze the energy conditions required for traversable wormholes: \\[ T_{\\mu\\nu} u^\\mu u^\\nu < 0 \\].",
+                "Analyze the energy conditions required for traversable wormholes: \\[ T_{\\mu\\nu} u^\\mu u^\\nu < 0 \\]",
                 "Explore cosmic strings and domain walls as defects arising from symmetry breaking."
             ],
             "duration": 16,
@@ -96,7 +96,7 @@
             "title": "Hyperbolic Geometry & Negative Curvature Spaces",
             "description": "Understanding spaces with constant negative curvature and their applications.",
             "bulletpoints": [
-                "Define hyperbolic space \\( \\mathbb{H}^n \\) as a space satisfying \\( K < 0 \\).",
+                "Define hyperbolic space \\( \\mathbb{H}^n \\) as a space satisfying \\( K < 0 \\)",
                 "Explore the Poincaré disk model for visualizing hyperbolic geodesics.",
                 "Analyze applications in special relativity, black hole physics, and quantum gravity."
             ],
@@ -120,7 +120,7 @@
             "title": "Higher-Dimensional Knot Theory",
             "description": "Exploring the topology of knots and links in dimensions beyond three.",
             "bulletpoints": [
-                "Define a \\( k \\)-dimensional knot as an embedding of \\( S^k \\) in \\( \\mathbb{R}^{k+2} \\).",
+                "Define a \\( k \\)-dimensional knot as an embedding of \\( S^k \\) in \\( \\mathbb{R}^{k+2} \\)",
                 "Study the fundamental group \\( \\pi_1 \\) of knot complements to classify knot types.",
                 "Analyze applications in quantum field theory, where knots appear in Chern-Simons theory."
             ],
@@ -132,7 +132,7 @@
             "title": "Calabi-Yau Manifolds & String Compactification",
             "description": "Exploring the role of Calabi-Yau spaces in high-energy physics and string theory.",
             "bulletpoints": [
-                "Define Calabi-Yau spaces as Ricci-flat Kähler manifolds satisfying \\( R_{ij} = 0 \\).",
+                "Define Calabi-Yau spaces as Ricci-flat Kähler manifolds satisfying \\( R_{ij} = 0 \\)",
                 "Analyze their role in supersymmetric string theory and compactification.",
                 "Explore mirror symmetry, where different Calabi-Yau spaces yield equivalent physical theories."
             ],

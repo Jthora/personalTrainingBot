@@ -12,7 +12,7 @@
             "title": "Quantum Entanglement & Psi Synchronization",
             "description": "Understanding how consciousness may interact with entangled quantum states.",
             "bulletpoints": [
-                "Study Bell's theorem and its implications for nonlocality: \\[ S = |P(a, b) - P(a, b')| + |P(a', b) + P(a', b')| \\leq 2 \\].",
+                "Study Bell's theorem and its implications for nonlocality: \\[ S = |P(a, b) - P(a, b')| + |P(a', b) + P(a', b')| \\leq 2 \\]",
                 "Analyze correlations between human intention and quantum measurement outcomes.",
                 "Explore psi synchronization in entangled consciousness experiments."
             ],
@@ -25,7 +25,7 @@
             "description": "Modeling psi energy as a quantum wave function interacting with spacetime fields.",
             "bulletpoints": [
                 "Define a psi wave function \\( \\Psi(\\mathbf{r}, t) \\) with non-Hermitian evolution.",
-                "Explore consciousness as an information field interacting with quantum states: \\[ \\hat{H} \\Psi = i \\hbar \\frac{\\partial \\Psi}{\\partial t} \\].",
+                "Explore consciousness as an information field interacting with quantum states: \\[ \\hat{H} \\Psi = i \\hbar \\frac{\\partial \\Psi}{\\partial t} \\]",
                 "Examine psi resonance as a function of phase coherence and quantum uncertainty."
             ],
             "duration": 16,
@@ -36,7 +36,7 @@
             "title": "Telepathic Resonance & Signal Coherence",
             "description": "Investigating the mathematical framework for telepathic information transfer.",
             "bulletpoints": [
-                "Model telepathic coherence using phase-locked oscillators: \\[ \\theta_i = \\omega_i t + \\phi \\].",
+                "Model telepathic coherence using phase-locked oscillators: \\[ \\theta_i = \\omega_i t + \\phi \\]",
                 "Explore the quantum Zeno effect as a stabilizing mechanism for psi transmission.",
                 "Study EEG coherence patterns and nonlocal correlations in brainwave activity."
             ],
@@ -49,7 +49,7 @@
             "description": "Exploring how psi information may propagate beyond classical causality.",
             "bulletpoints": [
                 "Examine the Wheeler delayed-choice experiment for retrocausal psi influence.",
-                "Analyze quantum decoherence and its role in limiting nonlocal psi effects: \\[ \\rho(t) = \\sum_i p_i |\\psi_i\\rangle \\langle \\psi_i| \\].",
+                "Analyze quantum decoherence and its role in limiting nonlocal psi effects: \\[ \\rho(t) = \\sum_i p_i |\\psi_i\\rangle \\langle \\psi_i| \\]",
                 "Investigate consciousness-mediated collapse theories and their implications for psi experiments."
             ],
             "duration": 16,
@@ -60,7 +60,7 @@
             "title": "Psi-Quantum Coupling & Field Interactions",
             "description": "Mathematical modeling of psi influence on quantum states and macroscopic observables.",
             "bulletpoints": [
-                "Define psi field coupling using a modified Schrödinger equation: \\[ i\\hbar \\frac{\\partial \\Psi}{\\partial t} = (\\hat{H} + \\hat{H}_{\\psi}) \\Psi \\].",
+                "Define psi field coupling using a modified Schrödinger equation: \\[ i\\hbar \\frac{\\partial \\Psi}{\\partial t} = (\\hat{H} + \\hat{H}_{\\psi}) \\Psi \\]",
                 "Explore psi interactions with Casimir forces and zero-point fluctuations.",
                 "Investigate quantum tunneling probability modifications through psi intention."
             ],
@@ -72,7 +72,7 @@
             "title": "Holographic Consciousness & Psi Holograms",
             "description": "Investigating consciousness as a holographic projection in higher-dimensional spaces.",
             "bulletpoints": [
-                "Study the holographic principle and psi information encoding: \\[ S = \\frac{k_B A}{4 l_p^2} \\].",
+                "Study the holographic principle and psi information encoding: \\[ S = \\frac{k_B A}{4 l_p^2} \\]",
                 "Examine the role of Fourier transforms in psi data retrieval and memory storage.",
                 "Analyze the implications of consciousness as a nonlocal information-processing system."
             ],
@@ -84,7 +84,7 @@
             "title": "Coherence & Frequency Modulation in Psi Fields",
             "description": "Exploring how psi energy interacts with physical and nonlocal fields through resonance.",
             "bulletpoints": [
-                "Define psi coherence length using correlation functions: \\[ \\xi = \\int g(r) dr \\].",
+                "Define psi coherence length using correlation functions: \\[ \\xi = \\int g(r) dr \\]",
                 "Study resonance coupling between psi waves and electromagnetic fields.",
                 "Explore tunable frequencies in psi-based interaction models using standing wave solutions."
             ],
@@ -96,7 +96,7 @@
             "title": "Psi Metric Geometry & Non-Euclidean Psi Fields",
             "description": "Exploring psi interactions in non-Euclidean and higher-dimensional space models.",
             "bulletpoints": [
-                "Model psi fields using Riemannian geometry with a modified metric tensor \\( g_{\\mu\\nu} \\).",
+                "Model psi fields using Riemannian geometry with a modified metric tensor \\( g_{\\mu\\nu} \\)",
                 "Investigate psi interactions through geodesic deviation equations.",
                 "Explore psi-space curvatures and their impact on nonlocal energy dynamics."
             ],
@@ -108,7 +108,7 @@
             "title": "Psi Memory & Temporal Quantum Entanglement",
             "description": "Understanding how nonlocal consciousness stores and retrieves information across time.",
             "bulletpoints": [
-                "Analyze psi memory storage through entangled states: \\[ |\\Psi_{AB}\\rangle = \\alpha |00\\rangle + \\beta |11\\rangle \\].",
+                "Analyze psi memory storage through entangled states: \\[ |\\Psi_{AB}\\rangle = \\alpha |00\\rangle + \\beta |11\\rangle \\]",
                 "Investigate retrocausal information flow and delayed-choice experiments.",
                 "Explore quantum time loops and their role in precognition and retrocognition."
             ],
@@ -120,7 +120,7 @@
             "title": "Psi Solitons & Nonlinear Consciousness Waves",
             "description": "Investigating solitary wave solutions for psi energy propagation.",
             "bulletpoints": [
-                "Define soliton solutions using the nonlinear Schrödinger equation: \\[ i \\frac{\\partial \\psi}{\\partial t} + \\frac{1}{2} \\nabla^2 \\psi - |\\psi|^2 \\psi = 0 \\].",
+                "Define soliton solutions using the nonlinear Schrödinger equation: \\[ i \\frac{\\partial \\psi}{\\partial t} + \\frac{1}{2} \\nabla^2 \\psi - |\\psi|^2 \\psi = 0 \\]",
                 "Analyze the stability of psi wave packets under self-focusing effects.",
                 "Explore applications of psi solitons in energy transmission and telekinetic phenomena."
             ],
@@ -133,7 +133,7 @@
             "description": "Examining how nonlocal consciousness affects biological systems.",
             "bulletpoints": [
                 "Study experimental evidence for psi-based healing effects on cellular activity.",
-                "Analyze the role of quantum coherence in biofield interactions: \\[ \\rho_{bio} = \\sum c_i |\\psi_i\\rangle \\langle \\psi_i| \\].",
+                "Analyze the role of quantum coherence in biofield interactions: \\[ \\rho_{bio} = \\sum c_i |\\psi_i\\rangle \\langle \\psi_i| \\]",
                 "Investigate entanglement between psi energy and biological self-regulation processes."
             ],
             "duration": 14,

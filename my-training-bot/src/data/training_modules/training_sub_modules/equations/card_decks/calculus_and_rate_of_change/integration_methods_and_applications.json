@@ -9,7 +9,7 @@
             "title": "Fundamental Theorem of Calculus",
             "description": "Understanding the relationship between differentiation and integration.",
             "bulletpoints": [
-                "Define the Fundamental Theorem of Calculus (FTC): If \\( F(x) \\) is an antiderivative of \\( f(x) \\), then \\[ \\int_a^b f(x)dx = F(b) - F(a) \\].",
+                "Define the Fundamental Theorem of Calculus (FTC): If \\( F(x) \\) is an antiderivative of \\( f(x) \\), then \\[ \\int_a^b f(x)dx = F(b) - F(a) \\]",
                 "Interpret integration as an area accumulation process under a curve.",
                 "Use definite integrals to compute net changes in quantities."
             ],
@@ -21,9 +21,9 @@
             "title": "Basic Integration Techniques",
             "description": "Applying different methods to compute integrals efficiently.",
             "bulletpoints": [
-                "Use substitution \\((u\\)-substitution) to simplify integrals: \\[ \\int f(g(x)) g'(x) dx = \\int f(u) du \\].",
-                "Apply integration by parts: \\[ \\int u dv = uv - \\int v du \\].",
-                "Evaluate definite and indefinite integrals using basic rules such as \\( \\int x^n dx = \\frac{x^{n+1}}{n+1} + C \\), for \\( n \\neq -1 \\)."
+                "Use substitution \\((u\\)-substitution) to simplify integrals: \\[ \\int f(g(x)) g'(x) dx = \\int f(u) du \\]",
+                "Apply integration by parts: \\[ \\int u dv = uv - \\int v du \\]",
+                "Evaluate definite and indefinite integrals using basic rules such as \\( \\int x^n dx = \\frac{x^{n+1}}{n+1} + C \\), for \\( n \\neq -1 \\)"
             ],
             "duration": 10,
             "difficulty": "Advanced"
@@ -33,9 +33,9 @@
             "title": "Trigonometric Integration",
             "description": "Integrating functions involving trigonometric expressions.",
             "bulletpoints": [
-                "Use trigonometric identities to simplify integrals: \\[ \\sin^2 x = \\frac{1 - \\cos 2x}{2}, \\quad \\cos^2 x = \\frac{1 + \\cos 2x}{2} \\].",
+                "Use trigonometric identities to simplify integrals: \\[ \\sin^2 x = \\frac{1 - \\cos 2x}{2}, \\quad \\cos^2 x = \\frac{1 + \\cos 2x}{2} \\]",
                 "Apply the reduction formulas for powers of sine and cosine.",
-                "Evaluate integrals of secant and tangent: \\[ \\int \\sec x dx = \\ln |\\sec x + \\tan x| + C \\]."
+                "Evaluate integrals of secant and tangent: \\[ \\int \\sec x dx = \\ln |\\sec x + \\tan x| + C \\]"
             ],
             "duration": 10,
             "difficulty": "Advanced"
@@ -45,7 +45,7 @@
             "title": "Improper Integrals",
             "description": "Evaluating integrals with infinite limits or discontinuous integrands.",
             "bulletpoints": [
-                "Define improper integrals: \\[ \\int_a^{\\infty} f(x)dx = \\lim_{b \\to \\infty} \\int_a^b f(x)dx \\].",
+                "Define improper integrals: \\[ \\int_a^{\\infty} f(x)dx = \\lim_{b \\to \\infty} \\int_a^b f(x)dx \\]",
                 "Determine convergence or divergence using comparison tests.",
                 "Evaluate integrals with singularities by using limits."
             ],
@@ -57,9 +57,9 @@
             "title": "Real-World Applications of Integration",
             "description": "Using integrals to calculate areas, volumes, and accumulated change.",
             "bulletpoints": [
-                "Calculate areas under curves: \\[ A = \\int_a^b f(x)dx \\].",
-                "Find volumes of 3D solids using the disk method: \\[ V = \\pi \\int_a^b [f(x)]^2 dx \\].",
-                "Apply integration in physics to compute work: \\[ W = \\int_a^b F(x)dx \\]."
+                "Calculate areas under curves: \\[ A = \\int_a^b f(x)dx \\]",
+                "Find volumes of 3D solids using the disk method: \\[ V = \\pi \\int_a^b [f(x)]^2 dx \\]",
+                "Apply integration in physics to compute work: \\[ W = \\int_a^b F(x)dx \\]"
             ],
             "duration": 12,
             "difficulty": "Expert"
@@ -69,8 +69,8 @@
             "title": "Integration in Electromagnetic Fields",
             "description": "Applying integrals to solve Maxwell's equations and compute electromagnetic interactions.",
             "bulletpoints": [
-                "Use Gauss's Law to compute electric flux: \\[ \\oint_S \\mathbf{E} \\cdot d\\mathbf{A} = \\frac{Q}{\\epsilon_0} \\].",
-                "Evaluate magnetic flux integrals with Stokes' theorem: \\[ \\oint_C \\mathbf{B} \\cdot d\\mathbf{s} = \\mu_0 I_{enc} \\].",
+                "Use Gauss's Law to compute electric flux: \\[ \\oint_S \\mathbf{E} \\cdot d\\mathbf{A} = \\frac{Q}{\\epsilon_0} \\]",
+                "Evaluate magnetic flux integrals with Stokes' theorem: \\[ \\oint_C \\mathbf{B} \\cdot d\\mathbf{s} = \\mu_0 I_{enc} \\]",
                 "Apply integral calculus to solve electromagnetic wave equations."
             ],
             "duration": 14,
@@ -81,9 +81,9 @@
             "title": "Bioelectric Field Integration",
             "description": "Using integration to analyze electric fields in biological systems and neural networks.",
             "bulletpoints": [
-                "Calculate potential in neural membranes using Poisson's equation: \\[ \\nabla^2 \\Phi = -\\frac{\\rho}{\\epsilon} \\].",
+                "Calculate potential in neural membranes using Poisson's equation: \\[ \\nabla^2 \\Phi = -\\frac{\\rho}{\\epsilon} \\]",
                 "Use integral methods to determine charge distributions across bioelectric fields.",
-                "Model signal propagation in neurons using the cable equation: \\[ \\frac{\\partial V}{\\partial t} = D \\frac{\\partial^2 V}{\\partial x^2} - \\frac{V}{\\tau} \\]."
+                "Model signal propagation in neurons using the cable equation: \\[ \\frac{\\partial V}{\\partial t} = D \\frac{\\partial^2 V}{\\partial x^2} - \\frac{V}{\\tau} \\]"
             ],
             "duration": 14,
             "difficulty": "Expert"
@@ -93,8 +93,8 @@
             "title": "Quantum Psionic Wavefunctions & Probability Integrals",
             "description": "Using integration in quantum mechanics to analyze wavefunctions and probability distributions.",
             "bulletpoints": [
-                "Normalize wavefunctions using probability integrals: \\[ \\int_{-\\infty}^{\\infty} |\\psi(x)|^2 dx = 1 \\].",
-                "Compute expectation values in quantum systems: \\[ \\langle x \\rangle = \\int_{-\\infty}^{\\infty} x |\\psi(x)|^2 dx \\].",
+                "Normalize wavefunctions using probability integrals: \\[ \\int_{-\\infty}^{\\infty} |\\psi(x)|^2 dx = 1 \\]",
+                "Compute expectation values in quantum systems: \\[ \\langle x \\rangle = \\int_{-\\infty}^{\\infty} x |\\psi(x)|^2 dx \\]",
                 "Apply Fourier transform integrals to analyze psionic field frequencies."
             ],
             "duration": 16,
@@ -106,7 +106,7 @@
             "description": "Exploring the role of integration in energy distribution across bioelectric and psionic systems.",
             "bulletpoints": [
                 "Define psionic potential functions using integrals over energy fields.",
-                "Compute stored energy in a charged biofield using \\[ U = \\frac{1}{2} \\int_V \\mathbf{E} \\cdot \\mathbf{D} \\, dV \\].",
+                "Compute stored energy in a charged biofield using \\[ U = \\frac{1}{2} \\int_V \\mathbf{E} \\cdot \\mathbf{D} \\, dV \\]",
                 "Apply integration to psionic resonance phenomena in neural and electromagnetic systems."
             ],
             "duration": 16,

@@ -16,7 +16,7 @@
                 "Recognize and classify first-order ODEs, including separable, linear, and exact equations.",
                 "Solve separable equations using integration: \\[ \\int \\frac{dx}{x} = \\int dt \\Rightarrow x = Ce^t \\]",
                 "Use the integrating factor method for linear ODEs: \\[ y' + p(x)y = q(x) \\Rightarrow \\mu(x) y = \\int \\mu(x) q(x) dx \\]",
-                "Apply first-order ODEs to population growth \\( P' = rP \\) and radioactive decay \\( N' = -\\lambda N \\)."
+                "Apply first-order ODEs to population growth \\( P' = rP \\) and radioactive decay \\( N' = -\\lambda N \\)"
             ],
             "duration": 10,
             "difficulty": "Advanced"
@@ -28,7 +28,7 @@
             "bulletpoints": [
                 "Solve homogeneous second-order ODEs using the characteristic equation: \\[ ay'' + by' + cy = 0 \\Rightarrow r^2 + br + c = 0 \\]",
                 "Use undetermined coefficients for nonhomogeneous equations: \\[ y_p = A e^{rx} + B e^{-rx} \\]",
-                "Model harmonic motion and electrical circuits with equations like \\[ m y'' + c y' + k y = F(t) \\]."
+                "Model harmonic motion and electrical circuits with equations like \\[ m y'' + c y' + k y = F(t) \\]"
             ],
             "duration": 12,
             "difficulty": "Expert"
@@ -87,7 +87,7 @@
             "description": "Studying Bessel’s equation and its applications in physics.",
             "bulletpoints": [
                 "Solve Bessel’s differential equation: \\[ x^2 y'' + x y' + (x^2 - n^2)y = 0 \\]",
-                "Define Bessel functions of the first and second kind: \\( J_n(x) \\) and \\( Y_n(x) \\).",
+                "Define Bessel functions of the first and second kind: \\( J_n(x) \\) and \\( Y_n(x) \\)",
                 "Apply Bessel functions to wave equations, heat conduction, and vibration problems."
             ],
             "duration": 15,

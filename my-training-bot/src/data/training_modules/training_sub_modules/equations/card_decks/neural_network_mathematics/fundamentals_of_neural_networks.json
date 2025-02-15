@@ -69,8 +69,8 @@
             "title": "Loss Functions & Error Measurement",
             "description": "Exploring functions used to measure the performance of neural networks.",
             "bulletpoints": [
-                "Understand mean squared error (MSE): \\[ L = \\frac{1}{n} \\sum (y_i - \\hat{y}_i)^2 \\].",
-                "Explore cross-entropy loss for classification: \\[ L = - \\sum y_i \\log \\hat{y}_i \\].",
+                "Understand mean squared error (MSE): \\[ L = \\frac{1}{n} \\sum (y_i - \\hat{y}_i)^2 \\]",
+                "Explore cross-entropy loss for classification: \\[ L = - \\sum y_i \\log \\hat{y}_i \\]",
                 "Analyze how loss functions influence weight updates during training."
             ],
             "duration": 10,

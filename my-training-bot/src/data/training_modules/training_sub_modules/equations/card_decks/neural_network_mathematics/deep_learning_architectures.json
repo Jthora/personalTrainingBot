@@ -102,7 +102,7 @@
             "title": "Graph Neural Networks (GNNs) & Relational Learning",
             "description": "Exploring neural architectures that process structured data on graphs.",
             "bulletpoints": [
-                "Define graph convolution: \\[ h_i^{(k+1)} = \\sigma \\left( \\sum_{j \\in N(i)} \\frac{1}{|N(i)|} W h_j^{(k)} \\right) \\], where \\( N(i) \\) is the neighborhood of node \\( i \\).",
+                "Define graph convolution: \\[ h_i^{(k+1)} = \\sigma \\left( \\sum_{j \\in N(i)} \\frac{1}{|N(i)|} W h_j^{(k)} \\right) \\], where \\( N(i) \\) is the neighborhood of node \\( i \\)",
                 "Study applications in recommendation systems, social networks, and molecular chemistry.",
                 "Compare GNNs with traditional convolutional architectures."
             ],

@@ -76,7 +76,7 @@
             "description": "Basic introduction to matrix representations in machine learning.",
             "bulletpoints": [
                 "A matrix \\( \\mathbf{A} \\) is an array of numbers: \\[ \\mathbf{A} = \\begin{bmatrix} a_{11} & a_{12} \\\\ a_{21} & a_{22} \\end{bmatrix} \\]",
-                "Each element \\( a_{ij} \\) refers to row \\( i \\), column \\( j \\).",
+                "Each element \\( a_{ij} \\) refers to row \\( i \\), column \\( j \\)",
                 "Matrices are used in linear algebra, deep learning layers, and optimization."
             ],
             "duration": 6,

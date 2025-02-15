@@ -28,7 +28,7 @@
             "bulletpoints": [
                 "Understand how energy fields can alter local time perception, modeled as: \\[ \\Delta t' = \\Delta t e^{-\\alpha E} \\], where \\( E \\) is field energy and \\( \\alpha \\) is a tuning constant.",
                 "Study the impact of electromagnetic pulses on time synchronization through modified Maxwell equations.",
-                "Explore experimental models for time-loop stabilization and causality control using closed timelike curves (CTCs): \\[ g_{\\mu\\nu} x^\\mu x^\\nu < 0 \\]."
+                "Explore experimental models for time-loop stabilization and causality control using closed timelike curves (CTCs): \\[ g_{\\mu\\nu} x^\\mu x^\\nu < 0 \\]"
             ],
             "duration": 12,
             "difficulty": "Expert"
@@ -74,7 +74,7 @@
             "title": "Quantum Time Fluctuations & Temporal Uncertainty",
             "description": "Exploring quantum mechanics’ role in fluctuating time intervals and uncertainty effects.",
             "bulletpoints": [
-                "Define the quantum uncertainty relation for time-energy: \\[ \\Delta E \\Delta t \\geq \\frac{\\hbar}{2} \\].",
+                "Define the quantum uncertainty relation for time-energy: \\[ \\Delta E \\Delta t \\geq \\frac{\\hbar}{2} \\]",
                 "Examine the concept of virtual particles influencing micro-time fluctuations in vacuum states.",
                 "Explore experimental techniques for detecting quantum fluctuations in time intervals."
             ],
@@ -86,7 +86,7 @@
             "title": "Closed Timelike Curves & Temporal Paradoxes",
             "description": "Analyzing the mathematical models of time loops and causality violations.",
             "bulletpoints": [
-                "Understand the closed timelike curve (CTC) condition: \\[ g_{\\mu\\nu} x^\\mu x^\\nu < 0 \\].",
+                "Understand the closed timelike curve (CTC) condition: \\[ g_{\\mu\\nu} x^\\mu x^\\nu < 0 \\]",
                 "Analyze Gödel’s rotating universe as a solution permitting closed timelike loops.",
                 "Explore logical paradoxes such as the bootstrap paradox and grandfather paradox."
             ],
@@ -110,7 +110,7 @@
             "title": "Gravitational Wave Effects on Time Flow",
             "description": "Examining how space-time ripples influence time perception and synchronization.",
             "bulletpoints": [
-                "Understand how gravitational waves stretch and compress time using: \\[ h(t) = A \\cos(\\omega t + \\phi) \\].",
+                "Understand how gravitational waves stretch and compress time using: \\[ h(t) = A \\cos(\\omega t + \\phi) \\]",
                 "Analyze how LIGO detects tiny variations in spacetime curvature affecting time measurement.",
                 "Explore potential applications in temporal synchronization using gravitational wave detectors."
             ],

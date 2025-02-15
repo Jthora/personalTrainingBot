@@ -12,7 +12,7 @@
             "title": "Boolean Operators & Logical Connectives",
             "description": "Exploring the fundamental operators used in logic.",
             "bulletpoints": [
-                "Define Boolean operators: AND \\( (A \\land B) \\), OR \\( (A \\lor B) \\), NOT \\( (\\neg A) \\), XOR \\( (A \\oplus B) \\).",
+                "Define Boolean operators: AND \\( (A \\land B) \\), OR \\( (A \\lor B) \\), NOT \\( (\\neg A) \\), XOR \\( (A \\oplus B) \\)",
                 "Evaluate Boolean expressions using truth tables.",
                 "Apply logical operators in mathematical proofs and computational logic."
             ],
@@ -24,8 +24,8 @@
             "title": "Truth Tables & Logical Equivalence",
             "description": "Using truth tables to determine the validity of logical statements.",
             "bulletpoints": [
-                "Construct truth tables for compound statements such as \\[ (A \\lor B) \\land \\neg C \\].",
-                "Identify logical equivalences such as De Morgan’s Laws: \\[ \\neg(A \\land B) \\equiv \\neg A \\lor \\neg B \\].",
+                "Construct truth tables for compound statements such as \\[ (A \\lor B) \\land \\neg C \\]",
+                "Identify logical equivalences such as De Morgan’s Laws: \\[ \\neg(A \\land B) \\equiv \\neg A \\lor \\neg B \\]",
                 "Verify logical identities using truth tables."
             ],
             "duration": 10,
@@ -37,7 +37,7 @@
             "description": "Understanding how symbolic logic applies to digital circuits.",
             "bulletpoints": [
                 "Define logic gates: AND \\( (A \\land B) \\), OR \\( (A \\lor B) \\), NOT \\( (\\neg A) \\), NAND, NOR, XOR, and XNOR.",
-                "Analyze how logic gates perform binary computations: \\[ Y = (A \\land B) \\lor \\neg C \\].",
+                "Analyze how logic gates perform binary computations: \\[ Y = (A \\land B) \\lor \\neg C \\]",
                 "Explore real-world applications in processor design and hardware logic."
             ],
             "duration": 12,
@@ -48,7 +48,7 @@
             "title": "NAND & NOR: Universal Gates",
             "description": "Understanding how NAND and NOR gates alone can implement all Boolean functions.",
             "bulletpoints": [
-                "Define NAND gate as \\[ \\neg(A \\land B) \\] and NOR gate as \\[ \\neg(A \\lor B) \\].",
+                "Define NAND gate as \\[ \\neg(A \\land B) \\] and NOR gate as \\[ \\neg(A \\lor B) \\]",
                 "Show that all basic logic gates can be constructed using only NAND or NOR.",
                 "Design a universal logic system using only one type of gate."
             ],
@@ -72,7 +72,7 @@
             "title": "Boolean Algebra & Simplification Rules",
             "description": "Understanding Boolean algebra and its application in logic circuits.",
             "bulletpoints": [
-                "Apply Boolean algebra rules: \\[ A \\lor \\neg A = 1, \\quad A \\land \\neg A = 0 \\].",
+                "Apply Boolean algebra rules: \\[ A \\lor \\neg A = 1, \\quad A \\land \\neg A = 0 \\]",
                 "Use distributive, associative, and commutative properties for simplification.",
                 "Derive minimal logic expressions for optimized digital circuits."
             ],
@@ -84,7 +84,7 @@
             "title": "Binary Logic & Arithmetic Operations",
             "description": "Exploring how Boolean logic forms the basis of binary arithmetic.",
             "bulletpoints": [
-                "Define binary addition using XOR and AND: \\[ S = A \\oplus B, \\quad C = A \\land B \\].",
+                "Define binary addition using XOR and AND: \\[ S = A \\oplus B, \\quad C = A \\land B \\]",
                 "Understand half-adder and full-adder circuits.",
                 "Apply logic gates to build arithmetic logic units (ALUs) in CPUs."
             ],
@@ -145,7 +145,7 @@
             "description": "Exploring logic gates in the context of quantum computing.",
             "bulletpoints": [
                 "Define basic quantum gates: Hadamard (H), CNOT, and Toffoli.",
-                "Express quantum states using qubit superposition: \\[ |\\psi\\rangle = \\alpha |0\\rangle + \\beta |1\\rangle \\].",
+                "Express quantum states using qubit superposition: \\[ |\\psi\\rangle = \\alpha |0\\rangle + \\beta |1\\rangle \\]",
                 "Analyze how reversible logic enables quantum computation."
             ],
             "duration": 18,

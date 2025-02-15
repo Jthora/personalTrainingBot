@@ -9,9 +9,9 @@
             "title": "Schrödinger’s Equation & Quantum Superposition",
             "description": "Exploring how quantum states exist in probability distributions before observation.",
             "bulletpoints": [
-                "Learn the time-dependent Schrödinger equation: \\[ i\\hbar \\frac{\\partial}{\\partial t} \\psi(x,t) = \\hat{H} \\psi(x,t) \\].",
-                "Understand quantum superposition where a system exists in multiple states simultaneously: \\[ |\\psi\\rangle = \\sum c_n |n\\rangle \\].",
-                "Analyze the role of measurement in collapsing wave states into definite eigenvalues through the Born rule: \\[ P(a) = |\\langle a | \\psi \\rangle|^2 \\]."
+                "Learn the time-dependent Schrödinger equation: \\[ i\\hbar \\frac{\\partial}{\\partial t} \\psi(x,t) = \\hat{H} \\psi(x,t) \\]",
+                "Understand quantum superposition where a system exists in multiple states simultaneously: \\[ |\\psi\\rangle = \\sum c_n |n\\rangle \\]",
+                "Analyze the role of measurement in collapsing wave states into definite eigenvalues through the Born rule: \\[ P(a) = |\\langle a | \\psi \\rangle|^2 \\]"
             ],
             "duration": 10,
             "difficulty": "Advanced"
@@ -22,8 +22,8 @@
             "description": "Studying how different realities can emerge based on quantum probability shifts.",
             "bulletpoints": [
                 "Explore the probability density function \\( P(x,t) \\) where multiple outcomes coexist before observation.",
-                "Analyze the Many-Worlds Interpretation where wavefunction collapse leads to timeline bifurcation \\[ |\\psi\\rangle = \\frac{1}{\\sqrt{2}} (|A\\rangle + |B\\rangle) \\].",
-                "Examine the influence of observer intent on selective timeline manifestation through wavefunction decoherence \\[ \\rho = \\sum P_n |n\\rangle \\langle n| \\]."
+                "Analyze the Many-Worlds Interpretation where wavefunction collapse leads to timeline bifurcation \\[ |\\psi\\rangle = \\frac{1}{\\sqrt{2}} (|A\\rangle + |B\\rangle) \\]",
+                "Examine the influence of observer intent on selective timeline manifestation through wavefunction decoherence \\[ \\rho = \\sum P_n |n\\rangle \\langle n| \\]"
             ],
             "duration": 12,
             "difficulty": "Expert"
@@ -33,8 +33,8 @@
             "title": "Reality Collapse & Event Stabilization",
             "description": "Techniques for stabilizing probability shifts and ensuring consistent timeline convergence.",
             "bulletpoints": [
-                "Learn how quantum decoherence eliminates interference terms: \\[ \\rho(t) \\to \\sum P_n |n\\rangle \\langle n| \\].",
-                "Develop methods to maintain coherent reality streams through structured energy harmonics \\[ H = T + V \\].",
+                "Learn how quantum decoherence eliminates interference terms: \\[ \\rho(t) \\to \\sum P_n |n\\rangle \\langle n| \\]",
+                "Develop methods to maintain coherent reality streams through structured energy harmonics \\[ H = T + V \\]",
                 "Study how external influences cause probability wave collapse and timeline stabilization."
             ],
             "duration": 14,
@@ -47,7 +47,7 @@
             "bulletpoints": [
                 "Analyze the observer effect in the double-slit experiment where measuring collapses interference patterns.",
                 "Examine Wheeler’s delayed-choice experiment, showing retrocausal influences in quantum decision-making.",
-                "Explore models suggesting consciousness affects probability waveforms: \\[ \\langle \\psi | O | \\psi \\rangle \\]."
+                "Explore models suggesting consciousness affects probability waveforms: \\[ \\langle \\psi | O | \\psi \\rangle \\]"
             ],
             "duration": 12,
             "difficulty": "Expert"
@@ -57,7 +57,7 @@
             "title": "Quantum Entanglement & Nonlocal Reality Connections",
             "description": "Studying the influence of entanglement on reality formation and information transfer.",
             "bulletpoints": [
-                "Define entangled states where measurement on one affects the other instantly: \\[ |\\psi\\rangle = \\frac{1}{\\sqrt{2}} (|00\\rangle + |11\\rangle) \\].",
+                "Define entangled states where measurement on one affects the other instantly: \\[ |\\psi\\rangle = \\frac{1}{\\sqrt{2}} (|00\\rangle + |11\\rangle) \\]",
                 "Explore Bell’s theorem and its implications for nonlocal influence on timeline selection.",
                 "Examine quantum teleportation protocols that use entanglement for state transfer."
             ],
@@ -70,7 +70,7 @@
             "description": "Exploring how harmonic interactions reinforce quantum probability distributions.",
             "bulletpoints": [
                 "Use resonance tuning to amplify specific probability states in the wavefunction.",
-                "Examine the role of constructive and destructive interference in probability waveforms: \\[ \\psi_{total} = \\psi_1 + \\psi_2 \\].",
+                "Examine the role of constructive and destructive interference in probability waveforms: \\[ \\psi_{total} = \\psi_1 + \\psi_2 \\]",
                 "Develop methods for enhancing preferred reality manifestations through coherent energy fields."
             ],
             "duration": 14,
@@ -93,7 +93,7 @@
             "title": "Quantum Tunneling & Reality Shift Mechanics",
             "description": "Exploring how probability waves penetrate barriers and influence large-scale reality.",
             "bulletpoints": [
-                "Study quantum tunneling through potential barriers: \\[ T = e^{-2\\gamma d} \\] where \\( \\gamma = \\frac{\\sqrt{2m(V-E)}}{\\hbar} \\).",
+                "Study quantum tunneling through potential barriers: \\[ T = e^{-2\\gamma d} \\] where \\( \\gamma = \\frac{\\sqrt{2m(V-E)}}{\\hbar} \\)",
                 "Analyze how macroscopic tunneling effects might manifest in probability fields.",
                 "Develop models for intentional reality shifts using probability wave modulation."
             ],
@@ -117,7 +117,7 @@
             "title": "Zero-Point Fluctuations & Probability Warping",
             "description": "Investigating how vacuum fluctuations may influence quantum probability distributions.",
             "bulletpoints": [
-                "Analyze zero-point energy fluctuations contributing to quantum randomness \\[ \\Delta E \\Delta t \\geq \\hbar/2 \\].",
+                "Analyze zero-point energy fluctuations contributing to quantum randomness \\[ \\Delta E \\Delta t \\geq \\hbar/2 \\]",
                 "Examine possible techniques for influencing probability warping through external field modulation.",
                 "Study vacuum coherence effects and their potential role in altering wavefunction dynamics."
             ],

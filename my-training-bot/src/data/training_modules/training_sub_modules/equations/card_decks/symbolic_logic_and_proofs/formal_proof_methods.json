@@ -14,8 +14,8 @@
             "title": "Direct Proofs & Logical Deduction",
             "description": "Learning how to construct step-by-step logical arguments.",
             "bulletpoints": [
-                "A direct proof shows that \\( P \\Rightarrow Q \\) by assuming \\( P \\) and deriving \\( Q \\).",
-                "Example: Prove that if \\( n \\) is even, then \\( n^2 \\) is even: \\[ n = 2k \\Rightarrow n^2 = 4k^2 = 2(2k^2) \\].",
+                "A direct proof shows that \\( P \\Rightarrow Q \\) by assuming \\( P \\) and deriving \\( Q \\)",
+                "Example: Prove that if \\( n \\) is even, then \\( n^2 \\) is even: \\[ n = 2k \\Rightarrow n^2 = 4k^2 = 2(2k^2) \\]",
                 "Apply direct proofs in number theory, inequalities, and algebra."
             ],
             "duration": 8,
@@ -26,8 +26,8 @@
             "title": "Indirect Proofs: Contradiction & Contraposition",
             "description": "Using indirect reasoning to establish the truth of mathematical statements.",
             "bulletpoints": [
-                "Proof by contraposition: To prove \\( P \\Rightarrow Q \\), prove \\( \\neg Q \\Rightarrow \\neg P \\).",
-                "Proof by contradiction assumes \\( \\neg P \\) and derives a contradiction: \\[ P \\Rightarrow (Q \\land \\neg Q) \\Rightarrow \\text{False} \\].",
+                "Proof by contraposition: To prove \\( P \\Rightarrow Q \\), prove \\( \\neg Q \\Rightarrow \\neg P \\)",
+                "Proof by contradiction assumes \\( \\neg P \\) and derives a contradiction: \\[ P \\Rightarrow (Q \\land \\neg Q) \\Rightarrow \\text{False} \\]",
                 "Example: Prove \\( \\sqrt{2} \\) is irrational by contradiction."
             ],
             "duration": 10,
@@ -51,7 +51,7 @@
             "description": "Examining famous contradictions and logical paradoxes.",
             "bulletpoints": [
                 "Understand the principle of reductio ad absurdum, proving \\( P \\) by showing \\( \\neg P \\) leads to a contradiction.",
-                "Explore Russell’s paradox in naive set theory: \\[ R = \\{ x \\mid x \\notin x \\} \\Rightarrow R \\in R \\iff R \\notin R \\].",
+                "Explore Russell’s paradox in naive set theory: \\[ R = \\{ x \\mid x \\notin x \\} \\Rightarrow R \\in R \\iff R \\notin R \\]",
                 "Apply contradiction proofs to irrational numbers and prime theorems."
             ],
             "duration": 14,
@@ -62,7 +62,7 @@
             "title": "Proofs in Set Theory & Cardinality",
             "description": "Using logical methods to establish properties of sets and cardinality.",
             "bulletpoints": [
-                "Prove set identities using the subset method: \\[ A \\subseteq B \\text{ and } B \\subseteq A \\Rightarrow A = B \\].",
+                "Prove set identities using the subset method: \\[ A \\subseteq B \\text{ and } B \\subseteq A \\Rightarrow A = B \\]",
                 "Establish the uncountability of \\( \\mathbb{R} \\) using Cantor’s diagonal argument.",
                 "Apply proof techniques to power sets, unions, and intersections."
             ],

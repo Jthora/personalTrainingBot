@@ -75,7 +75,7 @@
             "bulletpoints": [
                 "Psi energy flux measures how psi energy passes through a region in space.",
                 "The integral form: \\[ \\Phi = \\int_S \\Psi \\vec{v} \\cdot d\\vec{S} \\] where:",
-                " - \\( \\Phi \\) is the psi energy flux through surface \\( S \\).",
+                " - \\( \\Phi \\) is the psi energy flux through surface \\( S \\)",
                 " - \\( \\Psi \\) is the psi energy density scalar field.",
                 " - \\( \\vec{v} \\) is the velocity vector of psi energy flow.",
                 " - \\( d\\vec{S} \\) is the differential surface area element."

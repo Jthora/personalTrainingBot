@@ -15,8 +15,8 @@
             "title": "Kinematic Equations & Motion Analysis",
             "description": "Understanding the equations governing motion in one and two dimensions.",
             "bulletpoints": [
-                "Define the kinematic equations for constant acceleration: \\[ v = v_0 + at \\], \\[ x = x_0 + v_0 t + \\frac{1}{2} a t^2 \\], \\[ v^2 = v_0^2 + 2a x \\].",
-                "Analyze projectile motion using horizontal and vertical components: \\[ x = v_0 \\cos(\\theta) t \\], \\[ y = v_0 \\sin(\\theta) t - \\frac{1}{2} g t^2 \\].",
+                "Define the kinematic equations for constant acceleration: \\[ v = v_0 + at \\], \\[ x = x_0 + v_0 t + \\frac{1}{2} a t^2 \\], \\[ v^2 = v_0^2 + 2a x \\]",
+                "Analyze projectile motion using horizontal and vertical components: \\[ x = v_0 \\cos(\\theta) t \\], \\[ y = v_0 \\sin(\\theta) t - \\frac{1}{2} g t^2 \\]",
                 "Interpret motion graphs for displacement, velocity, and acceleration."
             ],
             "duration": 8,

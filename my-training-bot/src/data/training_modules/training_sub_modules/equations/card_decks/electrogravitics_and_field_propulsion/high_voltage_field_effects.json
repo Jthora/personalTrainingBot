@@ -96,7 +96,7 @@
             "title": "Corona Discharge & High-Voltage Field Emissions",
             "description": "Exploring how high-voltage gradients lead to ionization and charge leakage.",
             "bulletpoints": [
-                "Understand the formation of corona discharge around conductors using \\( E = \\frac{V}{r \\ln(R/r)} \\).",
+                "Understand the formation of corona discharge around conductors using \\( E = \\frac{V}{r \\ln(R/r)} \\)",
                 "Study methods to suppress corona losses in high-voltage transmission lines.",
                 "Investigate how corona discharge enhances air ionization for electrostatic applications."
             ],

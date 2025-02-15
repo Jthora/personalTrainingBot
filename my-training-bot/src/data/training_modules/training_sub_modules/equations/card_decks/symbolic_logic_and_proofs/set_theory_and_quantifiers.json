@@ -9,9 +9,9 @@
             "title": "Set Operations & Venn Diagrams",
             "description": "Understanding fundamental set operations and their relationships.",
             "bulletpoints": [
-                "Learn union \\( A \\cup B = \\{ x \\mid x \\in A \\text{ or } x \\in B \\} \\), intersection \\( A \\cap B = \\{ x \\mid x \\in A \\text{ and } x \\in B \\} \\), and complement \\( A^c = \\{ x \\mid x \\notin A \\} \\).",
+                "Learn union \\( A \\cup B = \\{ x \\mid x \\in A \\text{ or } x \\in B \\} \\), intersection \\( A \\cap B = \\{ x \\mid x \\in A \\text{ and } x \\in B \\} \\), and complement \\( A^c = \\{ x \\mid x \\notin A \\} \\)",
                 "Visualize relationships using Venn diagrams to represent overlapping sets.",
-                "Apply De Morgan’s laws: \\[ (A \\cup B)^c = A^c \\cap B^c, \\quad (A \\cap B)^c = A^c \\cup B^c \\]."
+                "Apply De Morgan’s laws: \\[ (A \\cup B)^c = A^c \\cap B^c, \\quad (A \\cap B)^c = A^c \\cup B^c \\]"
             ],
             "duration": 8,
             "difficulty": "Intermediate"
@@ -21,9 +21,9 @@
             "title": "Predicate Logic & Logical Quantifiers",
             "description": "Exploring the role of quantifiers in mathematical statements.",
             "bulletpoints": [
-                "Understand the universal quantifier: \\[ \\forall x \\in S, P(x) \\] means \\( P(x) \\) is true for all elements \\( x \\) in \\( S \\).",
+                "Understand the universal quantifier: \\[ \\forall x \\in S, P(x) \\] means \\( P(x) \\) is true for all elements \\( x \\) in \\( S \\)",
                 "Understand the existential quantifier: \\[ \\exists x \\in S, P(x) \\] means there exists at least one \\( x \\) in \\( S \\) for which \\( P(x) \\) is true.",
-                "Learn how to negate quantified statements: \\[ \\neg (\\forall x, P(x)) = \\exists x, \\neg P(x) \\], \\[ \\neg (\\exists x, P(x)) = \\forall x, \\neg P(x) \\]."
+                "Learn how to negate quantified statements: \\[ \\neg (\\forall x, P(x)) = \\exists x, \\neg P(x) \\], \\[ \\neg (\\exists x, P(x)) = \\forall x, \\neg P(x) \\]"
             ],
             "duration": 10,
             "difficulty": "Advanced"
@@ -33,7 +33,7 @@
             "title": "Relations, Functions, and Cardinality",
             "description": "Understanding how sets interact through relations and mappings.",
             "bulletpoints": [
-                "Define a relation \\( R \\) on a set \\( A \\) as a subset of \\( A \\times A \\), meaning \\( R \\subseteq A \\times A \\).",
+                "Define a relation \\( R \\) on a set \\( A \\) as a subset of \\( A \\times A \\), meaning \\( R \\subseteq A \\times A \\)",
                 "Explore properties of relations: reflexive (\\( \\forall x, (x,x) \\in R \\)), symmetric (\\( xRy \\Rightarrow yRx \\)), transitive (\\( xRy \\text{ and } yRz \\Rightarrow xRz \\)).",
                 "Analyze function properties: injective (one-to-one, \\( f(a) = f(b) \\Rightarrow a = b \\)), surjective (onto, \\( \\forall y, \\exists x, f(x) = y \\)), bijective (both injective and surjective)."
             ],
@@ -45,8 +45,8 @@
             "title": "Power Sets & Cartesian Products",
             "description": "Understanding how to construct sets of sets and cross-product structures.",
             "bulletpoints": [
-                "Define the power set \\( \\mathcal{P}(A) \\) as the set of all subsets of \\( A \\), with cardinality \\( |\\mathcal{P}(A)| = 2^{|A|} \\).",
-                "Construct Cartesian products: \\[ A \\times B = \\{ (a, b) \\mid a \\in A, b \\in B \\} \\].",
+                "Define the power set \\( \\mathcal{P}(A) \\) as the set of all subsets of \\( A \\), with cardinality \\( |\\mathcal{P}(A)| = 2^{|A|} \\)",
+                "Construct Cartesian products: \\[ A \\times B = \\{ (a, b) \\mid a \\in A, b \\in B \\} \\]",
                 "Use power sets to analyze Boolean algebras and combinatorial structures."
             ],
             "duration": 10,
@@ -57,8 +57,8 @@
             "title": "Axioms of Set Theory & Zermelo-Fraenkel (ZF) System",
             "description": "Exploring formal axiomatic foundations of set theory.",
             "bulletpoints": [
-                "Study the axiom of extensionality: \\[ \\forall A, B, (\\forall x, x \\in A \\iff x \\in B) \\Rightarrow A = B \\].",
-                "Understand the axiom of infinity: \\[ \\exists S, (\\emptyset \\in S) \\land (\\forall x \\in S, x \\cup \\{x\\} \\in S) \\].",
+                "Study the axiom of extensionality: \\[ \\forall A, B, (\\forall x, x \\in A \\iff x \\in B) \\Rightarrow A = B \\]",
+                "Understand the axiom of infinity: \\[ \\exists S, (\\emptyset \\in S) \\land (\\forall x \\in S, x \\cup \\{x\\} \\in S) \\]",
                 "Explore the axiom of choice (AC) and its implications for proving cardinality results."
             ],
             "duration": 14,
@@ -81,8 +81,8 @@
             "title": "Boolean Algebra & Set Logic",
             "description": "Understanding the logical algebra of sets and its applications in computation.",
             "bulletpoints": [
-                "Define Boolean operations: \\[ A \\cap B, A \\cup B, A^c \\].",
-                "Use distributive laws: \\[ A \\cap (B \\cup C) = (A \\cap B) \\cup (A \\cap C) \\].",
+                "Define Boolean operations: \\[ A \\cap B, A \\cup B, A^c \\]",
+                "Use distributive laws: \\[ A \\cap (B \\cup C) = (A \\cap B) \\cup (A \\cap C) \\]",
                 "Analyze applications in circuit design and propositional logic."
             ],
             "duration": 12,
@@ -93,8 +93,8 @@
             "title": "Set Theory Paradoxes & Logical Limits",
             "description": "Exploring famous paradoxes that challenge set theory foundations.",
             "bulletpoints": [
-                "Study Russell’s paradox: \\[ R = \\{ x \\mid x \\notin x \\} \\Rightarrow R \\in R \\text{ or } R \\notin R \\].",
-                "Understand Cantor’s diagonal argument proving \\( |\\mathbb{R}| > |\\mathbb{N}| \\).",
+                "Study Russell’s paradox: \\[ R = \\{ x \\mid x \\notin x \\} \\Rightarrow R \\in R \\text{ or } R \\notin R \\]",
+                "Understand Cantor’s diagonal argument proving \\( |\\mathbb{R}| > |\\mathbb{N}| \\)",
                 "Explore Gödel’s incompleteness theorems and their impact on set logic."
             ],
             "duration": 16,
@@ -105,7 +105,7 @@
             "title": "Quantifier Expressions & Nested Statements",
             "description": "Mastering the use of multiple quantifiers in formal logic.",
             "bulletpoints": [
-                "Interpret nested quantifiers: \\[ \\forall x \\exists y, P(x, y) \\] vs. \\[ \\exists y \\forall x, P(x, y) \\].",
+                "Interpret nested quantifiers: \\[ \\forall x \\exists y, P(x, y) \\] vs. \\[ \\exists y \\forall x, P(x, y) \\]",
                 "Negate complex quantified statements using De Morgan’s rules.",
                 "Translate natural language statements into precise logical forms."
             ],

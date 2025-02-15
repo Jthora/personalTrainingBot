@@ -38,7 +38,7 @@
             "title": "Probability & Statistics Notation",
             "description": "Exploring symbols used in probability and statistical analysis.",
             "bulletpoints": [
-                "Probability of event \\( A \\): \\[ P(A) \\].",
+                "Probability of event \\( A \\): \\[ P(A) \\]",
                 "Mean (\\( \\mu \\)), variance (\\( \\sigma^2 \\)), and standard deviation (\\( \\sigma \\))",
                 "Factorial notation: \\[ n! = n \\times (n-1) \\times \\dots \\times 1 \\]",
                 "Combinations and permutations: \\[ {}_nC_r = \\frac{n!}{r!(n-r)!} \\], \\[ {}_nP_r = \\frac{n!}{(n-r)!} \\]"
@@ -63,7 +63,7 @@
             "title": "Linear Algebra & Matrix Notation",
             "description": "Exploring vector and matrix notation used in computational mathematics and physics.",
             "bulletpoints": [
-                "Vector notation: \\[ \\mathbf{v} = (v_1, v_2, v_3) \\].",
+                "Vector notation: \\[ \\mathbf{v} = (v_1, v_2, v_3) \\]",
                 "Matrix representation: \\[ A = \\begin{bmatrix} a_{11} & a_{12} \\\\ a_{21} & a_{22} \\end{bmatrix} \\]",
                 "Determinant: \\[ \\det(A) \\], inverse matrix: \\[ A^{-1} \\]"
             ],

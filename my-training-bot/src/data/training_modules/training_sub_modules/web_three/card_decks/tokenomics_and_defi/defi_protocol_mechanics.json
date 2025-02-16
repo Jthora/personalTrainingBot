@@ -1,0 +1,36 @@
+{
+    "id": "defi_protocol_mechanics",
+    "name": "DeFi Protocol Mechanics",
+    "description": "Examining the foundational mechanisms that power decentralized finance applications.",
+    "focus": [
+        "Lending & Borrowing",
+        "Automated Market Makers (AMMs)",
+        "Yield Aggregation"
+    ],
+    "cards": [
+        {
+            "id": "lending_borrowing",
+            "title": "Lending & Borrowing in DeFi",
+            "description": "Understanding decentralized lending platforms and borrowing strategies.",
+            "bulletpoints": "Collateralization, overcollateralized loans, liquidation risks",
+            "duration": "50",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "amms",
+            "title": "Automated Market Makers (AMMs)",
+            "description": "Exploring how AMMs enable decentralized trading without order books.",
+            "bulletpoints": "Liquidity pools, constant product formula, impermanent loss",
+            "duration": "55",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "yield_aggregation",
+            "title": "Yield Aggregation & Optimization",
+            "description": "Strategies for maximizing returns on decentralized finance investments.",
+            "bulletpoints": "Yield farming, staking rewards, auto-compounders, Yearn Finance",
+            "duration": "50",
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "id": "decentralized_applications",
+    "name": "Decentralized Applications",
+    "description": "Training in developing and integrating front-end and back-end components for dApps on Web3 infrastructure.",
+    "difficulty": "Intermediate to Advanced",
+    "estimated_time": "6-15 months",
+    "focus": [
+        "dApp Frontend & Backend",
+        "Smart Contract Integration",
+        "Decentralized Storage & Oracles"
+    ],
+    "cardDecks": [
+        "dapp_architecture",
+        "web_three_frontend_development",
+        "oracle_and_data_feeds"
+    ]
+}

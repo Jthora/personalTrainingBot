@@ -1,0 +1,36 @@
+{
+    "id": "common_smart_contract_vulnerabilities",
+    "name": "Common Smart Contract Vulnerabilities",
+    "description": "Understanding the most critical security risks in smart contract development.",
+    "focus": [
+        "Reentrancy Attacks",
+        "Integer Overflow & Underflow",
+        "Unauthorized Access & Logic Flaws"
+    ],
+    "cards": [
+        {
+            "id": "reentrancy_attack",
+            "title": "Reentrancy Attacks",
+            "description": "Exploiting contract execution order to drain funds from a contract.",
+            "bulletpoints": "Fallback functions, attack vectors, best practices for mitigation",
+            "duration": "45",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "integer_overflow",
+            "title": "Integer Overflow & Underflow",
+            "description": "Bypassing numerical limits to manipulate contract state.",
+            "bulletpoints": "SafeMath libraries, Solidity 0.8.x automatic checks, attack examples",
+            "duration": "40",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "logic_flaws",
+            "title": "Unauthorized Access & Logic Flaws",
+            "description": "Exploiting contract functions due to improper access control.",
+            "bulletpoints": "Role-based permissions, function visibility, privilege escalation",
+            "duration": "50",
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "id": "solidity_basics",
+    "name": "Solidity Basics",
+    "description": "Introduction to Solidity programming for writing smart contracts on Ethereum and EVM-compatible blockchains.",
+    "focus": [
+        "Solidity Syntax",
+        "Contract Structure",
+        "Function & Event Handling"
+    ],
+    "cards": [
+        {
+            "id": "solidity_intro",
+            "title": "Introduction to Solidity",
+            "description": "Understanding Solidity's role in blockchain development and its fundamental syntax.",
+            "bulletpoints": "Ethereum Virtual Machine (EVM), Solidity syntax, contract deployment",
+            "duration": "40",
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "solidity_data_types",
+            "title": "Solidity Data Types & Variables",
+            "description": "Exploring Solidity's primitive and complex data types.",
+            "bulletpoints": "uint, int, string, bytes, arrays, mappings, structs",
+            "duration": "45",
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "functions_and_modifiers",
+            "title": "Functions, Modifiers, and Events",
+            "description": "Learning how to define functions, use modifiers, and trigger events.",
+            "bulletpoints": "Function visibility, function modifiers, event logging",
+            "duration": "50",
+            "difficulty": "Intermediate"
+        }
+    ]
+}

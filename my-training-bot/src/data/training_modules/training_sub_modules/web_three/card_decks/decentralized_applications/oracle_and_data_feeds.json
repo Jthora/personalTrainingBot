@@ -1,0 +1,36 @@
+{
+    "id": "oracle_and_data_feeds",
+    "name": "Oracles and Data Feeds",
+    "description": "Understanding how oracles connect off-chain data to smart contracts.",
+    "focus": [
+        "Chainlink & Other Oracles",
+        "Off-Chain Data in Smart Contracts",
+        "API Integration"
+    ],
+    "cards": [
+        {
+            "id": "oracle_basics",
+            "title": "What Are Oracles?",
+            "description": "Exploring the role of oracles in blockchain applications.",
+            "bulletpoints": "Types of oracles, decentralized vs. centralized oracles, security considerations",
+            "duration": "35",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "chainlink_integration",
+            "title": "Integrating Chainlink Oracles",
+            "description": "Connecting smart contracts to real-world data through Chainlink.",
+            "bulletpoints": "Data feeds, price oracles, randomness functions (VRF)",
+            "duration": "45",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "custom_oracle",
+            "title": "Building a Custom Oracle",
+            "description": "Developing a custom oracle for secure off-chain data retrieval.",
+            "bulletpoints": "API integration, webhook triggers, decentralized verification",
+            "duration": "50",
+            "difficulty": "Advanced"
+        }
+    ]
+}

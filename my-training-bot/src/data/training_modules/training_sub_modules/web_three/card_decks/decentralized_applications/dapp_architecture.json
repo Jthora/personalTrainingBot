@@ -1,0 +1,36 @@
+{
+    "id": "dapp_architecture",
+    "name": "dApp Architecture",
+    "description": "Understanding the core components and structure of decentralized applications.",
+    "focus": [
+        "Decentralized Backend",
+        "Blockchain Integration",
+        "Smart Contract Logic"
+    ],
+    "cards": [
+        {
+            "id": "dapp_basics",
+            "title": "Introduction to dApps",
+            "description": "Understanding the fundamental differences between traditional apps and dApps.",
+            "bulletpoints": "Decentralization vs. centralization, advantages of dApps, common use cases",
+            "duration": "30",
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "backend_integration",
+            "title": "Decentralized Backend & Blockchain Integration",
+            "description": "How dApps interact with blockchain networks through smart contracts and node providers.",
+            "bulletpoints": "Ethereum, Polygon, BSC, RPC endpoints, node providers (Infura, Alchemy)",
+            "duration": "50",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "storage_solutions",
+            "title": "Decentralized Storage Solutions",
+            "description": "Leveraging decentralized file storage systems for dApp data persistence.",
+            "bulletpoints": "IPFS, Arweave, Filecoin, comparing centralized vs. decentralized storage",
+            "duration": "45",
+            "difficulty": "Intermediate"
+        }
+    ]
+}

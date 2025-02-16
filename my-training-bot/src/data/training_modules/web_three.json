@@ -1,0 +1,14 @@
+{
+    "id": "web_three",
+    "name": "Web3 Development & Strategy",
+    "color": "#1E90FF",
+    "description": "Comprehensive training in blockchain technology, decentralized applications, smart contracts, and cryptographic security.",
+    "submodules": [
+        "blockchain_fundamentals",
+        "smart_contract_development",
+        "decentralized_applications",
+        "web_three_security_and_auditing",
+        "tokenomics_and_defi",
+        "decentralized_identity_and_privacy"
+    ]
+}

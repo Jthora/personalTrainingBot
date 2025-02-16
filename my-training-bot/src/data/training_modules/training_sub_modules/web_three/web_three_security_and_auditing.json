@@ -1,0 +1,17 @@
+{
+    "id": "web_three_security_and_auditing",
+    "name": "Web3 Security & Auditing",
+    "description": "Training in identifying vulnerabilities, auditing smart contracts, and securing Web3 applications.",
+    "difficulty": "Advanced",
+    "estimated_time": "12-24 months",
+    "focus": [
+        "Smart Contract Exploits",
+        "Blockchain Security Audits",
+        "Decentralized Security Protocols"
+    ],
+    "cardDecks": [
+        "common_smart_contract_vulnerabilities",
+        "blockchain_pen_testing",
+        "web_three_security_frameworks"
+    ]
+}

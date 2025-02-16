@@ -71,6 +71,11 @@ export const cardDeckPaths: { [key: string]: () => Promise<any> } = {
     cybersecurity_digital_forensics_forensic_image_analysis: () => import("../data/training_modules/training_sub_modules/cybersecurity/card_decks/digital_forensics/forensic_image_analysis.json"),
     cybersecurity_digital_forensics_log_analysis_and_correlation: () => import("../data/training_modules/training_sub_modules/cybersecurity/card_decks/digital_forensics/log_analysis_and_correlation.json"),
     cybersecurity_digital_forensics_malware_reversing: () => import("../data/training_modules/training_sub_modules/cybersecurity/card_decks/digital_forensics/malware_reversing.json"),
+    cybersecurity_history_of_cybersecurity_early_network_security_policies: () => import("../data/training_modules/training_sub_modules/cybersecurity/card_decks/history_of_cybersecurity/early_network_security_policies.json"),
+    cybersecurity_history_of_cybersecurity_evolution_of_browser_security: () => import("../data/training_modules/training_sub_modules/cybersecurity/card_decks/history_of_cybersecurity/evolution_of_browser_security.json"),
+    cybersecurity_history_of_cybersecurity_future_trends_in_web_security: () => import("../data/training_modules/training_sub_modules/cybersecurity/card_decks/history_of_cybersecurity/future_trends_in_web_security.json"),
+    cybersecurity_history_of_cybersecurity_history_of_cors_and_same_origin_policy: () => import("../data/training_modules/training_sub_modules/cybersecurity/card_decks/history_of_cybersecurity/history_of_cors_and_same_origin_policy.json"),
+    cybersecurity_history_of_cybersecurity_major_cyber_attacks: () => import("../data/training_modules/training_sub_modules/cybersecurity/card_decks/history_of_cybersecurity/major_cyber_attacks.json"),
     cybersecurity_malware_analysis_binary_disassembly_methods: () => import("../data/training_modules/training_sub_modules/cybersecurity/card_decks/malware_analysis/binary_disassembly_methods.json"),
     cybersecurity_malware_analysis_malware_detection_and_removal: () => import("../data/training_modules/training_sub_modules/cybersecurity/card_decks/malware_analysis/malware_detection_and_removal.json"),
     cybersecurity_malware_analysis_sandbox_analysis: () => import("../data/training_modules/training_sub_modules/cybersecurity/card_decks/malware_analysis/sandbox_analysis.json"),
@@ -317,7 +322,25 @@ export const cardDeckPaths: { [key: string]: () => Promise<any> } = {
     war_strategy_psychological_operations_tactics_influence_campaigns: () => import("../data/training_modules/training_sub_modules/war_strategy/card_decks/psychological_operations_tactics/influence_campaigns.json"),
     war_strategy_special_operations_planning_covert_infiltration_methods: () => import("../data/training_modules/training_sub_modules/war_strategy/card_decks/special_operations_planning/covert_infiltration_methods.json"),
     war_strategy_special_operations_planning_extraction_and_escape_tactics: () => import("../data/training_modules/training_sub_modules/war_strategy/card_decks/special_operations_planning/extraction_and_escape_tactics.json"),
-    war_strategy_special_operations_planning_mission_planning_and_execution: () => import("../data/training_modules/training_sub_modules/war_strategy/card_decks/special_operations_planning/mission_planning_and_execution.json")
+    war_strategy_special_operations_planning_mission_planning_and_execution: () => import("../data/training_modules/training_sub_modules/war_strategy/card_decks/special_operations_planning/mission_planning_and_execution.json"),
+    web_three_blockchain_fundamentals_blockchain_architecture: () => import("../data/training_modules/training_sub_modules/web_three/card_decks/blockchain_fundamentals/blockchain_architecture.json"),
+    web_three_blockchain_fundamentals_consensus_algorithms: () => import("../data/training_modules/training_sub_modules/web_three/card_decks/blockchain_fundamentals/consensus_algorithms.json"),
+    web_three_blockchain_fundamentals_cryptographic_primitives: () => import("../data/training_modules/training_sub_modules/web_three/card_decks/blockchain_fundamentals/cryptographic_primitives.json"),
+    web_three_decentralized_applications_dapp_architecture: () => import("../data/training_modules/training_sub_modules/web_three/card_decks/decentralized_applications/dapp_architecture.json"),
+    web_three_decentralized_applications_oracle_and_data_feeds: () => import("../data/training_modules/training_sub_modules/web_three/card_decks/decentralized_applications/oracle_and_data_feeds.json"),
+    web_three_decentralized_applications_web_three_frontend_development: () => import("../data/training_modules/training_sub_modules/web_three/card_decks/decentralized_applications/web_three_frontend_development.json"),
+    web_three_decentralized_identity_and_privacy_confidential_transactions: () => import("../data/training_modules/training_sub_modules/web_three/card_decks/decentralized_identity_and_privacy/confidential_transactions.json"),
+    web_three_decentralized_identity_and_privacy_identity_on_blockchain: () => import("../data/training_modules/training_sub_modules/web_three/card_decks/decentralized_identity_and_privacy/identity_on_blockchain.json"),
+    web_three_decentralized_identity_and_privacy_zk_proofs_and_snarks: () => import("../data/training_modules/training_sub_modules/web_three/card_decks/decentralized_identity_and_privacy/zk_proofs_and_snarks.json"),
+    web_three_smart_contract_development_gas_efficiency_optimization: () => import("../data/training_modules/training_sub_modules/web_three/card_decks/smart_contract_development/gas_efficiency_optimization.json"),
+    web_three_smart_contract_development_smart_contract_audits: () => import("../data/training_modules/training_sub_modules/web_three/card_decks/smart_contract_development/smart_contract_audits.json"),
+    web_three_smart_contract_development_solidity_basics: () => import("../data/training_modules/training_sub_modules/web_three/card_decks/smart_contract_development/solidity_basics.json"),
+    web_three_tokenomics_and_defi_defi_protocol_mechanics: () => import("../data/training_modules/training_sub_modules/web_three/card_decks/tokenomics_and_defi/defi_protocol_mechanics.json"),
+    web_three_tokenomics_and_defi_governance_and_daos: () => import("../data/training_modules/training_sub_modules/web_three/card_decks/tokenomics_and_defi/governance_and_daos.json"),
+    web_three_tokenomics_and_defi_token_design_and_distribution: () => import("../data/training_modules/training_sub_modules/web_three/card_decks/tokenomics_and_defi/token_design_and_distribution.json"),
+    web_three_web_three_security_and_auditing_blockchain_pen_testing: () => import("../data/training_modules/training_sub_modules/web_three/card_decks/web_three_security_and_auditing/blockchain_pen_testing.json"),
+    web_three_web_three_security_and_auditing_common_smart_contract_vulnerabilities: () => import("../data/training_modules/training_sub_modules/web_three/card_decks/web_three_security_and_auditing/common_smart_contract_vulnerabilities.json"),
+    web_three_web_three_security_and_auditing_web_three_security_frameworks: () => import("../data/training_modules/training_sub_modules/web_three/card_decks/web_three_security_and_auditing/web_three_security_frameworks.json")
 };
 
 export const totalCardDecks = Object.keys(cardDeckPaths).length;

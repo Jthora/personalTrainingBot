@@ -1,0 +1,36 @@
+{
+    "id": "cryptographic_primitives",
+    "name": "Cryptographic Primitives",
+    "description": "Understanding the cryptographic foundations that secure blockchain networks.",
+    "focus": [
+        "Hash Functions",
+        "Public-Key Cryptography",
+        "Digital Signatures"
+    ],
+    "cards": [
+        {
+            "id": "hash_functions",
+            "title": "Hash Functions in Blockchain",
+            "description": "Exploring the role of cryptographic hashing in blockchain security.",
+            "bulletpoints": "SHA-256, collision resistance, Merkle trees",
+            "duration": "35",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "public_key_cryptography",
+            "title": "Public-Key Cryptography",
+            "description": "Understanding asymmetric cryptography and its role in blockchain.",
+            "bulletpoints": "Private keys, public keys, elliptic curve cryptography (ECC)",
+            "duration": "45",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "digital_signatures",
+            "title": "Digital Signatures & Authentication",
+            "description": "How digital signatures enable secure blockchain transactions.",
+            "bulletpoints": "ECDSA, transaction verification, message signing",
+            "duration": "40",
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "id": "smart_contract_audits",
+    "name": "Smart Contract Audits",
+    "description": "Security analysis and best practices for preventing vulnerabilities in smart contracts.",
+    "focus": [
+        "Reentrancy Attacks",
+        "Access Control",
+        "Secure Development Practices"
+    ],
+    "cards": [
+        {
+            "id": "reentrancy_attack",
+            "title": "Understanding Reentrancy Attacks",
+            "description": "Exploring the most notorious vulnerability in smart contracts and how to prevent it.",
+            "bulletpoints": "Reentrancy bug, withdrawal patterns, checks-effects-interactions pattern",
+            "duration": "50",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "access_control",
+            "title": "Access Control & Role Management",
+            "description": "Ensuring only authorized entities can execute sensitive contract functions.",
+            "bulletpoints": "Ownable contracts, multi-signature wallets, role-based access control",
+            "duration": "45",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "secure_smart_contracts",
+            "title": "Best Practices for Secure Smart Contracts",
+            "description": "Writing safe and efficient Solidity code to prevent security exploits.",
+            "bulletpoints": "Static analysis tools, security patterns, gas-efficient security measures",
+            "duration": "50",
+            "difficulty": "Advanced"
+        }
+    ]
+}

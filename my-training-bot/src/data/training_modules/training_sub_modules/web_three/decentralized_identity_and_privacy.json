@@ -1,0 +1,17 @@
+{
+    "id": "decentralized_identity_and_privacy",
+    "name": "Decentralized Identity & Privacy",
+    "description": "Exploring self-sovereign identity, zero-knowledge proofs, and privacy-enhancing blockchain solutions.",
+    "difficulty": "Advanced",
+    "estimated_time": "12-24 months",
+    "focus": [
+        "Self-Sovereign Identity (SSI)",
+        "Zero-Knowledge Proofs (ZKPs)",
+        "Privacy-Preserving Transactions"
+    ],
+    "cardDecks": [
+        "identity_on_blockchain",
+        "zk_proofs_and_snarks",
+        "confidential_transactions"
+    ]
+}

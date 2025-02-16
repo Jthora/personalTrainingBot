@@ -1,0 +1,36 @@
+{
+    "id": "zk_proofs_and_snarks",
+    "name": "Zero-Knowledge Proofs (ZKPs) & SNARKs",
+    "description": "Deep dive into ZK proofs, zk-SNARKs, and their application in privacy-preserving blockchain systems.",
+    "focus": [
+        "Zero-Knowledge Proofs",
+        "zk-SNARKs & zk-STARKs",
+        "Scalability & Privacy"
+    ],
+    "cards": [
+        {
+            "id": "zkp_basics",
+            "title": "What Are Zero-Knowledge Proofs?",
+            "description": "Understanding how one party can prove knowledge of a fact without revealing it.",
+            "bulletpoints": "Interactive vs. non-interactive ZKPs, privacy-enhancing applications, cryptographic principles",
+            "duration": "40",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "zk_snarks",
+            "title": "zk-SNARKs & zk-STARKs",
+            "description": "Exploring the different types of zero-knowledge proofs and their use cases.",
+            "bulletpoints": "Cryptographic setup, trusted vs. trustless computation, scaling solutions",
+            "duration": "50",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "zk_scalability",
+            "title": "Using ZKPs for Scalability & Privacy",
+            "description": "How ZKPs enhance privacy while optimizing transaction scalability.",
+            "bulletpoints": "ZK-Rollups, privacy-preserving smart contracts, L2 solutions",
+            "duration": "55",
+            "difficulty": "Expert"
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "id": "blockchain_architecture",
+    "name": "Blockchain Architecture",
+    "description": "Understanding the core structure and components of blockchain networks.",
+    "focus": [
+        "Distributed Ledger Technology",
+        "Block Structure",
+        "Decentralization"
+    ],
+    "cards": [
+        {
+            "id": "block_structure",
+            "title": "Block Structure & Data Storage",
+            "description": "Exploring how data is stored in blocks and linked in a blockchain.",
+            "bulletpoints": "Block headers, Merkle trees, transaction structures",
+            "duration": "30",
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "p2p_networks",
+            "title": "Peer-to-Peer Networks",
+            "description": "How blockchain nodes communicate and validate transactions.",
+            "bulletpoints": "Node roles, full nodes vs. light nodes, decentralized networks",
+            "duration": "40",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "immutability",
+            "title": "Immutability and Data Integrity",
+            "description": "Ensuring data cannot be altered or removed from the blockchain.",
+            "bulletpoints": "Cryptographic hashing, append-only structure, cryptographic proof",
+            "duration": "35",
+            "difficulty": "Intermediate"
+        }
+    ]
+}

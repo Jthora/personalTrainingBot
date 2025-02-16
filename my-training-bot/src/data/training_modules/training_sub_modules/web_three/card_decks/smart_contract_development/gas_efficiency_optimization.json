@@ -1,0 +1,36 @@
+{
+    "id": "gas_efficiency_optimization",
+    "name": "Gas Efficiency Optimization",
+    "description": "Techniques for reducing gas costs in smart contracts and improving execution efficiency.",
+    "focus": [
+        "Storage Optimization",
+        "Loop Efficiency",
+        "Transaction Cost Reduction"
+    ],
+    "cards": [
+        {
+            "id": "gas_basics",
+            "title": "Understanding Gas Costs",
+            "description": "Breaking down how Ethereum's gas system works and how it impacts smart contracts.",
+            "bulletpoints": "Gas fees, transaction costs, block limits, gas refunds",
+            "duration": "40",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "storage_optimization",
+            "title": "Storage Optimization Strategies",
+            "description": "Minimizing storage usage to reduce on-chain costs.",
+            "bulletpoints": "Storage vs. memory, packing variables, immutable variables",
+            "duration": "50",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "loop_efficiency",
+            "title": "Efficient Loops & Computation",
+            "description": "Optimizing loops and function calls to lower gas costs.",
+            "bulletpoints": "Minimizing loop iterations, gas-efficient function calls, avoiding redundant computations",
+            "duration": "45",
+            "difficulty": "Advanced"
+        }
+    ]
+}

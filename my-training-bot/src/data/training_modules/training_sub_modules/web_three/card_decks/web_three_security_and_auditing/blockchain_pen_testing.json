@@ -1,0 +1,36 @@
+{
+    "id": "blockchain_pen_testing",
+    "name": "Blockchain Penetration Testing",
+    "description": "Testing the security of blockchain networks and Web3 applications.",
+    "focus": [
+        "Attack Simulation",
+        "Smart Contract Exploits",
+        "Network Vulnerability Assessments"
+    ],
+    "cards": [
+        {
+            "id": "attack_simulation",
+            "title": "Smart Contract Attack Simulation",
+            "description": "Using attack frameworks to simulate real-world exploits.",
+            "bulletpoints": "Echidna, MythX, Slither, Hardhat tests",
+            "duration": "50",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "network_vulnerabilities",
+            "title": "Blockchain Network Vulnerability Assessments",
+            "description": "Analyzing consensus mechanisms and network security risks.",
+            "bulletpoints": "Sybil attacks, 51% attacks, DDoS threats on nodes",
+            "duration": "45",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "web3_testing",
+            "title": "Web3 dApp Security Testing",
+            "description": "Identifying vulnerabilities in Web3 frontends and smart contract interactions.",
+            "bulletpoints": "Metamask phishing, API abuse, RPC endpoint security",
+            "duration": "50",
+            "difficulty": "Advanced"
+        }
+    ]
+}

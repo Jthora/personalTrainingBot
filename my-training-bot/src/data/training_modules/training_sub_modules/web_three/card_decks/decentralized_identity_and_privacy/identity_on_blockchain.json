@@ -1,0 +1,36 @@
+{
+    "id": "identity_on_blockchain",
+    "name": "Identity on Blockchain",
+    "description": "Exploring the use of blockchain for self-sovereign identity and decentralized identity management.",
+    "focus": [
+        "Self-Sovereign Identity (SSI)",
+        "Decentralized Identifiers (DIDs)",
+        "Verifiable Credentials"
+    ],
+    "cards": [
+        {
+            "id": "ssi_basics",
+            "title": "Introduction to Self-Sovereign Identity (SSI)",
+            "description": "Understanding how blockchain enables individuals to control their own identity.",
+            "bulletpoints": "Principles of SSI, traditional identity vs. decentralized identity, real-world applications",
+            "duration": "30",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "dids_explained",
+            "title": "Decentralized Identifiers (DIDs)",
+            "description": "Exploring how DIDs provide a foundation for decentralized identity.",
+            "bulletpoints": "W3C DID standard, DID methods, interoperability challenges",
+            "duration": "45",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "verifiable_credentials",
+            "title": "Verifiable Credentials & Authentication",
+            "description": "Understanding how credentials can be issued, verified, and stored in a trustless system.",
+            "bulletpoints": "Credential issuance models, cryptographic verification, selective disclosure",
+            "duration": "50",
+            "difficulty": "Advanced"
+        }
+    ]
+}

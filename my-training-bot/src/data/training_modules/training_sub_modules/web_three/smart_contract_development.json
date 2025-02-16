@@ -1,0 +1,17 @@
+{
+    "id": "smart_contract_development",
+    "name": "Smart Contract Development",
+    "description": "Comprehensive training in writing, deploying, and optimizing smart contracts on blockchain networks.",
+    "difficulty": "Intermediate to Advanced",
+    "estimated_time": "9-18 months",
+    "focus": [
+        "Solidity & Vyper Programming",
+        "Smart Contract Security",
+        "Gas Optimization"
+    ],
+    "cardDecks": [
+        "solidity_basics",
+        "smart_contract_audits",
+        "gas_efficiency_optimization"
+    ]
+}

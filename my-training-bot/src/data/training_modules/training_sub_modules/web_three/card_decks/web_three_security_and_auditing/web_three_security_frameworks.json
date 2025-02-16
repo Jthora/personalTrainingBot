@@ -1,0 +1,36 @@
+{
+    "id": "web3_security_frameworks",
+    "name": "Web3 Security Frameworks",
+    "description": "Establishing best practices and security protocols for decentralized applications.",
+    "focus": [
+        "Secure Development Practices",
+        "Security Monitoring & Incident Response",
+        "Zero-Trust & Decentralized Security"
+    ],
+    "cards": [
+        {
+            "id": "secure_coding",
+            "title": "Secure Smart Contract Development",
+            "description": "Implementing best practices to reduce security risks in Solidity.",
+            "bulletpoints": "Code audits, linting, security-focused contract patterns",
+            "duration": "50",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "incident_response",
+            "title": "Web3 Security Incident Response",
+            "description": "Handling security breaches and contract vulnerabilities.",
+            "bulletpoints": "Bug bounty programs, on-chain monitoring, emergency pause mechanisms",
+            "duration": "45",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "decentralized_security",
+            "title": "Zero-Trust & Decentralized Security",
+            "description": "Implementing decentralized security principles in Web3 architecture.",
+            "bulletpoints": "Multisig wallets, hardware security modules, decentralized key management",
+            "duration": "50",
+            "difficulty": "Expert"
+        }
+    ]
+}

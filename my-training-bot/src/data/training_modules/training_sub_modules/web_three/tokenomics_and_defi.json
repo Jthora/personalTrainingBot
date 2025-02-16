@@ -1,0 +1,17 @@
+{
+    "id": "tokenomics_and_defi",
+    "name": "Tokenomics & DeFi",
+    "description": "Understanding the economics of tokenized ecosystems, decentralized finance mechanisms, and governance models.",
+    "difficulty": "Intermediate to Advanced",
+    "estimated_time": "9-18 months",
+    "focus": [
+        "Token Economy & Governance",
+        "DeFi Protocols",
+        "Yield Farming & Liquidity Pools"
+    ],
+    "cardDecks": [
+        "token_design_and_distribution",
+        "defi_protocol_mechanics",
+        "governance_and_daos"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "id": "blockchain_fundamentals",
+    "name": "Blockchain Fundamentals",
+    "description": "Foundational knowledge of blockchain technology, its architecture, and core principles.",
+    "difficulty": "Beginner to Intermediate",
+    "estimated_time": "6-12 months",
+    "focus": [
+        "Distributed Ledger Technology",
+        "Consensus Mechanisms",
+        "Cryptographic Hashing"
+    ],
+    "cardDecks": [
+        "blockchain_architecture",
+        "consensus_algorithms",
+        "cryptographic_primitives"
+    ]
+}

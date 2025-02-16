@@ -1,0 +1,36 @@
+{
+    "id": "governance_and_daos",
+    "name": "Governance & DAOs",
+    "description": "Deep dive into decentralized governance structures and the role of DAOs in blockchain networks.",
+    "focus": [
+        "DAO Governance Models",
+        "Voting Mechanisms",
+        "Protocol Treasury Management"
+    ],
+    "cards": [
+        {
+            "id": "dao_models",
+            "title": "DAO Governance Models",
+            "description": "Understanding different models of decentralized autonomous organizations.",
+            "bulletpoints": "On-chain vs. off-chain governance, treasury control, member incentives",
+            "duration": "45",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "voting_mechanisms",
+            "title": "Voting Mechanisms & Consensus",
+            "description": "Exploring different voting mechanisms in decentralized governance.",
+            "bulletpoints": "Token-based voting, quadratic voting, snapshot governance",
+            "duration": "50",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "protocol_treasury",
+            "title": "Protocol Treasury Management",
+            "description": "Managing decentralized treasuries and funding ecosystem development.",
+            "bulletpoints": "Treasury allocation, grants programs, inflation control",
+            "duration": "50",
+            "difficulty": "Advanced"
+        }
+    ]
+}

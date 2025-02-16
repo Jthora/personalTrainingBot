@@ -12,5 +12,6 @@ export const modulePaths: { [key: string]: () => Promise<any> } = {
     investigation: () => import("../data/training_modules/investigation.json"),
     martial_arts: () => import("../data/training_modules/martial_arts.json"),
     psiops: () => import("../data/training_modules/psiops.json"),
-    war_strategy: () => import("../data/training_modules/war_strategy.json")
+    war_strategy: () => import("../data/training_modules/war_strategy.json"),
+    web_three: () => import("../data/training_modules/web_three.json")
 };

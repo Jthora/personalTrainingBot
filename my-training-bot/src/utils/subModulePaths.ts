@@ -23,6 +23,7 @@ export const subModulePaths: { [key: string]: () => Promise<any> } = {
     counter_psyops_propaganda_countermeasures: () => import("../data/training_modules/training_sub_modules/counter_psyops/propaganda_countermeasures.json"),
     counter_psyops_psychological_warfare_defense: () => import("../data/training_modules/training_sub_modules/counter_psyops/psychological_warfare_defense.json"),
     cybersecurity_digital_forensics: () => import("../data/training_modules/training_sub_modules/cybersecurity/digital_forensics.json"),
+    cybersecurity_history_of_cybersecurity: () => import("../data/training_modules/training_sub_modules/cybersecurity/history_of_cybersecurity.json"),
     cybersecurity_malware_analysis: () => import("../data/training_modules/training_sub_modules/cybersecurity/malware_analysis.json"),
     cybersecurity_network_security: () => import("../data/training_modules/training_sub_modules/cybersecurity/network_security.json"),
     cybersecurity_penetration_testing: () => import("../data/training_modules/training_sub_modules/cybersecurity/penetration_testing.json"),
@@ -105,5 +106,11 @@ export const subModulePaths: { [key: string]: () => Promise<any> } = {
     war_strategy_geopolitical_analysis: () => import("../data/training_modules/training_sub_modules/war_strategy/geopolitical_analysis.json"),
     war_strategy_military_strategy: () => import("../data/training_modules/training_sub_modules/war_strategy/military_strategy.json"),
     war_strategy_psychological_operations_tactics: () => import("../data/training_modules/training_sub_modules/war_strategy/psychological_operations_tactics.json"),
-    war_strategy_special_operations_planning: () => import("../data/training_modules/training_sub_modules/war_strategy/special_operations_planning.json")
+    war_strategy_special_operations_planning: () => import("../data/training_modules/training_sub_modules/war_strategy/special_operations_planning.json"),
+    web_three_blockchain_fundamentals: () => import("../data/training_modules/training_sub_modules/web_three/blockchain_fundamentals.json"),
+    web_three_decentralized_applications: () => import("../data/training_modules/training_sub_modules/web_three/decentralized_applications.json"),
+    web_three_decentralized_identity_and_privacy: () => import("../data/training_modules/training_sub_modules/web_three/decentralized_identity_and_privacy.json"),
+    web_three_smart_contract_development: () => import("../data/training_modules/training_sub_modules/web_three/smart_contract_development.json"),
+    web_three_tokenomics_and_defi: () => import("../data/training_modules/training_sub_modules/web_three/tokenomics_and_defi.json"),
+    web_three_web_three_security_and_auditing: () => import("../data/training_modules/training_sub_modules/web_three/web_three_security_and_auditing.json")
 };

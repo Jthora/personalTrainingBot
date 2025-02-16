@@ -1,0 +1,36 @@
+{
+    "id": "consensus_algorithms",
+    "name": "Consensus Algorithms",
+    "description": "Exploring different mechanisms used to validate transactions and secure blockchain networks.",
+    "focus": [
+        "Proof of Work (PoW)",
+        "Proof of Stake (PoS)",
+        "Alternative Consensus Mechanisms"
+    ],
+    "cards": [
+        {
+            "id": "pow_mechanism",
+            "title": "Proof of Work (PoW)",
+            "description": "Understanding how mining secures blockchain networks.",
+            "bulletpoints": "Hash puzzles, mining difficulty, energy consumption",
+            "duration": "40",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "pos_mechanism",
+            "title": "Proof of Stake (PoS)",
+            "description": "Exploring how validators are chosen in PoS blockchains.",
+            "bulletpoints": "Staking, validator selection, energy efficiency",
+            "duration": "45",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "alternative_mechanisms",
+            "title": "Alternative Consensus Mechanisms",
+            "description": "Examining newer and hybrid consensus models.",
+            "bulletpoints": "Delegated Proof of Stake (DPoS), Proof of Authority (PoA), Byzantine Fault Tolerance (BFT)",
+            "duration": "50",
+            "difficulty": "Advanced"
+        }
+    ]
+}

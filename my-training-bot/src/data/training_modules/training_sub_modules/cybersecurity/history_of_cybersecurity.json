@@ -1,0 +1,21 @@
+{
+    "id": "history_of_cybersecurity",
+    "name": "History of Cybersecurity",
+    "description": "Tracing the evolution of cybersecurity from the early days of networking to modern web security policies, including CORS and Web3 security.",
+    "difficulty": "Intermediate to Advanced",
+    "estimated_time": "12-24 months",
+    "focus": [
+        "Network Security Evolution",
+        "Web Security Policies",
+        "Cyber Threat Evolution",
+        "Browser & Internet Security Policies",
+        "Decentralization & Web3 Security"
+    ],
+    "cardDecks": [
+        "early_network_security_policies",
+        "evolution_of_browser_security",
+        "major_cyber_attacks",
+        "history_of_cors_and_same_origin_policy",
+        "future_trends_in_web_security"
+    ]
+}

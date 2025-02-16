@@ -1,0 +1,136 @@
+{
+    "id": "evolution_of_browser_security",
+    "name": "Evolution of Browser Security",
+    "description": "A deep dive into the history of browser security measures, vulnerabilities, and countermeasures.",
+    "focus": [
+        "Same-Origin Policy (SOP)",
+        "Sandboxing and Process Isolation",
+        "Content Security Policy (CSP)",
+        "Cross-Site Scripting (XSS)",
+        "Cross-Site Request Forgery (CSRF)",
+        "WebAssembly (WASM) Security",
+        "Modern Web Exploit Mitigation"
+    ],
+    "cards": [
+        {
+            "id": "browser_1",
+            "title": "The Introduction of Same-Origin Policy (SOP) (1995)",
+            "description": "Same-Origin Policy (SOP) was first introduced in Netscape Navigator in 1995 to prevent JavaScript from accessing data across different domains, mitigating cross-site attacks.",
+            "bulletpoints": [
+                "Developed in response to growing concerns about JavaScript security.",
+                "Ensures that a web page can only access resources from the same domain.",
+                "Prevents unauthorized access to session cookies and user data."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "browser_2",
+            "title": "Rise of Cross-Site Scripting (XSS) and its Impact (2000s)",
+            "description": "XSS attacks became a major concern in the 2000s as attackers exploited browser vulnerabilities to inject malicious JavaScript into trusted web pages.",
+            "bulletpoints": [
+                "Allows attackers to steal cookies, session tokens, or redirect users to malicious sites.",
+                "Early web applications lacked input sanitization, making them vulnerable.",
+                "Browsers introduced client-side filtering and Content Security Policy (CSP) to mitigate XSS."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "browser_3",
+            "title": "The Evolution of Browser Sandboxing and Process Isolation (2008-2015)",
+            "description": "Google Chrome introduced a multi-process model between 2008 and 2015 to isolate different websites, preventing malicious web pages from accessing data from other tabs.",
+            "bulletpoints": [
+                "Chrome’s security model separates tabs into individual processes to limit cross-tab attacks.",
+                "Firefox and Edge later adopted similar sandboxing techniques.",
+                "Reduces the impact of browser vulnerabilities by containing exploits within a single process."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "browser_4",
+            "title": "Content Security Policy (CSP) Introduced as a Web Standard (2012)",
+            "description": "CSP was introduced in 2012 to mitigate Cross-Site Scripting (XSS) and data injection attacks by restricting which sources can load content on a webpage.",
+            "bulletpoints": [
+                "Prevents malicious scripts from executing by enforcing a strict set of rules.",
+                "Developers define allowed sources for JavaScript, images, and stylesheets.",
+                "Supported by all major browsers as a primary defense against XSS."
+            ],
+            "duration": "120",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "browser_5",
+            "title": "Cross-Origin Resource Sharing (CORS) Becomes a Standard (2010-2014)",
+            "description": "CORS was developed as a controlled alternative to SOP, allowing safe cross-origin API requests while preventing unauthorized access. This standard was established between 2010 and 2014.",
+            "bulletpoints": [
+                "Introduced to support AJAX and modern web applications.",
+                "Requires explicit server-side configuration with `Access-Control-Allow-Origin` headers.",
+                "Helps balance security with cross-domain API communication."
+            ],
+            "duration": "90",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "browser_6",
+            "title": "Browser Vendors Begin Blocking Mixed Content (2014-2016)",
+            "description": "To improve HTTPS security, browsers started blocking HTTP resources loaded on HTTPS sites between 2014 and 2016, preventing content injection attacks.",
+            "bulletpoints": [
+                "Ensures encryption is maintained throughout the browsing experience.",
+                "Firefox, Chrome, and Edge enforced stricter policies by default.",
+                "Encouraged widespread HTTPS adoption across the web."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "browser_7",
+            "title": "WebAssembly (WASM) Security Concerns and Solutions (2017-2023)",
+            "description": "WebAssembly (WASM) allows near-native performance for web applications, but introduces new security risks. These concerns and solutions have been addressed from 2017 to 2023.",
+            "bulletpoints": [
+                "WASM enables execution of compiled languages like Rust, C++, and Go in the browser.",
+                "Sandboxing prevents direct access to the underlying operating system.",
+                "Spectre attacks and JIT vulnerabilities raised security concerns."
+            ],
+            "duration": "120",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "browser_8",
+            "title": "Cross-Site Request Forgery (CSRF) Mitigation Becomes Standard (2018-2020)",
+            "description": "Browsers enforced stronger security policies to prevent CSRF attacks between 2018 and 2020, requiring developers to implement secure authentication tokens.",
+            "bulletpoints": [
+                "CSRF attacks trick users into submitting malicious requests from authenticated sessions.",
+                "SameSite cookies introduced to prevent unauthorized cross-site requests.",
+                "Web developers increasingly required to use CSRF tokens and OAuth verification."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "browser_9",
+            "title": "Google Chrome’s Site Isolation Expansion (2021-2022)",
+            "description": "Google enhanced its process isolation between 2021 and 2022 to limit cross-site vulnerabilities and prevent speculative execution attacks like Spectre.",
+            "bulletpoints": [
+                "Each website runs in a separate sandboxed process.",
+                "Protects sensitive data from being accessed by other open tabs.",
+                "Prevents memory-based attacks from leaking browser data."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "browser_10",
+            "title": "Cross-Origin-Opener-Policy (COOP) and Cross-Origin-Embedder-Policy (COEP) (2023-Present)",
+            "description": "New policies introduced in 2023 to improve security by restricting cross-origin interactions between embedded content and web pages.",
+            "bulletpoints": [
+                "COOP isolates documents to prevent side-channel attacks like Spectre.",
+                "COEP enforces same-origin requirements for embedded scripts and resources.",
+                "Required for using advanced features like SharedArrayBuffer."
+            ],
+            "duration": "120",
+            "difficulty": "Advanced"
+        }
+    ]
+}

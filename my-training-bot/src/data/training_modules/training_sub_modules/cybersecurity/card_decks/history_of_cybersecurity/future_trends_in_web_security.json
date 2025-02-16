@@ -1,0 +1,134 @@
+{
+    "id": "future_trends_in_web_security",
+    "name": "Future Trends in Web Security",
+    "description": "Analyzing upcoming security challenges and innovations shaping the future of web security.",
+    "focus": [
+        "Artificial Intelligence in Cybersecurity",
+        "Decentralized Identity and Zero Trust Models",
+        "Post-CORS API Standards",
+        "Quantum Computing Threats",
+        "Web3 Security and Privacy Enhancements"
+    ],
+    "cards": [
+        {
+            "id": "future_1",
+            "title": "AI-Driven Cybersecurity Threats",
+            "description": "Artificial Intelligence (AI) is being used in cybersecurity for both attack and defense, accelerating the complexity of cyber threats. This trend is expected to evolve significantly between 2025 and 2030.",
+            "bulletpoints": [
+                "AI-generated malware capable of adaptive evasion tactics.",
+                "Deepfake phishing: AI-generated fake videos or voice messages used for scams.",
+                "Automated threat detection using machine learning models."
+            ],
+            "duration": "120",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "future_2",
+            "title": "Decentralized Identity & Zero Trust Security",
+            "description": "Decentralized Identity (DID) and Zero Trust security models are emerging to replace traditional password-based authentication. These models are expected to gain traction from 2024 to 2027.",
+            "bulletpoints": [
+                "Self-sovereign identity (SSI) allows users to control their digital credentials without relying on centralized servers.",
+                "Blockchain technology enables trustless authentication without third-party intermediaries.",
+                "Zero Trust security assumes that no device or user is automatically trusted, requiring continuous verification."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "future_3",
+            "title": "The Evolution Beyond CORS: WTTP & Web3 APIs",
+            "description": "Exploring new Web3-compatible standards that remove the need for Cross-Origin Resource Sharing (CORS) policies. These standards are expected to be developed between 2026 and 2030.",
+            "bulletpoints": [
+                "WTTP (Web3 Transport Protocol) is a decentralized alternative to HTTP.",
+                "Web3 APIs designed to work with blockchain-based identity verification.",
+                "End-to-end encryption for web requests without centralized control."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "future_4",
+            "title": "Quantum Computing and Cryptographic Risks",
+            "description": "Quantum computers pose a serious threat to modern encryption techniques, requiring new quantum-resistant security protocols. This threat is anticipated to become more prominent from 2027 to 2035.",
+            "bulletpoints": [
+                "Shor's Algorithm enables quantum computers to break RSA and ECC encryption.",
+                "Post-Quantum Cryptography (PQC) is being developed to secure data against quantum attacks.",
+                "National Institute of Standards and Technology (NIST) is working on standardizing quantum-safe encryption."
+            ],
+            "duration": "120",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "future_5",
+            "title": "Privacy-Enhancing Technologies (PETs) in Web Security",
+            "description": "Emerging privacy-focused technologies will allow for secure and private web browsing without centralized tracking. These technologies are expected to be widely adopted between 2025 and 2028.",
+            "bulletpoints": [
+                "Homomorphic encryption enables computations on encrypted data without decryption.",
+                "Zero-Knowledge Proofs (ZKPs) allow authentication without revealing sensitive data.",
+                "Decentralized browsers like Brave and TOR-based systems ensure anonymity."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "future_6",
+            "title": "Cybersecurity Automation and AI-Powered SOCs",
+            "description": "Security Operations Centers (SOCs) are evolving with AI-driven automation, reducing human intervention in threat response. This evolution is expected to take place between 2024 and 2026.",
+            "bulletpoints": [
+                "AI-powered SOCs use machine learning to identify and mitigate threats in real-time.",
+                "Automated penetration testing replaces manual security audits.",
+                "Security Orchestration, Automation, and Response (SOAR) platforms streamline incident response."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "future_7",
+            "title": "Secure Multi-Party Computation (SMPC) for Encrypted Data Processing",
+            "description": "SMPC enables multiple parties to compute encrypted data together without exposing raw inputs, improving data security in finance and healthcare. This technology is expected to be widely used between 2025 and 2030.",
+            "bulletpoints": [
+                "Used in confidential financial transactions and medical research data.",
+                "Allows computation on encrypted datasets across different institutions.",
+                "SMPC will become a standard for privacy-first cloud services."
+            ],
+            "duration": "120",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "future_8",
+            "title": "Self-Defending Networks with AI and Blockchain",
+            "description": "Combining AI-driven threat detection with decentralized blockchain security, networks will be able to autonomously defend against cyber threats. This capability is expected to develop between 2027 and 2035.",
+            "bulletpoints": [
+                "Blockchain-based identity management prevents unauthorized access.",
+                "AI algorithms predict and neutralize cyber threats before execution.",
+                "Decentralized consensus models ensure tamper-proof security policies."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "future_9",
+            "title": "Federated Learning for Cybersecurity Training",
+            "description": "A new machine learning approach where AI models are trained on decentralized data without sharing sensitive information. This approach is expected to be adopted between 2025 and 2029.",
+            "bulletpoints": [
+                "Used to enhance spam filters, fraud detection, and network security.",
+                "Allows companies to collaborate on cybersecurity without exposing private data.",
+                "Reduces reliance on centralized AI models, improving security."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "future_10",
+            "title": "The Role of WebAssembly (WASM) in Secure Web Applications",
+            "description": "WebAssembly (WASM) is changing the way web applications execute code, enhancing both performance and security. This trend is expected to grow between 2024 and 2028.",
+            "bulletpoints": [
+                "WASM runs code in a secure sandboxed environment, preventing memory corruption.",
+                "Allows for high-performance cryptographic applications in the browser.",
+                "WebAssembly System Interface (WASI) provides a secure way for web apps to interact with operating systems."
+            ],
+            "duration": "90",
+            "difficulty": "Intermediate"
+        }
+    ]
+}

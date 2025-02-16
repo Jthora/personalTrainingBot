@@ -1,0 +1,170 @@
+{
+    "id": "major_cyber_attacks",
+    "name": "Major Cyber Attacks",
+    "description": "Exploring the most impactful cyber attacks in history, their techniques, and their consequences.",
+    "focus": [
+        "Cyber Warfare",
+        "Malware Epidemics",
+        "Nation-State Attacks",
+        "Financial and Corporate Breaches",
+        "Hacktivism and Social Engineering"
+    ],
+    "cards": [
+        {
+            "id": "attack_1",
+            "title": "The Morris Worm (1988)",
+            "description": "The first large-scale self-replicating computer worm, infecting 10% of ARPANET (Advanced Research Projects Agency Network), an early version of the internet.",
+            "bulletpoints": [
+                "Written by Robert Tappan Morris, a Cornell University student.",
+                "Exploit: Buffer overflow and weak password security.",
+                "First felony conviction under the U.S. Computer Fraud and Abuse Act."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "attack_2",
+            "title": "The Melissa Virus (1999)",
+            "description": "One of the first email-borne macro viruses, spreading through Microsoft Word documents and causing email servers to overload.",
+            "bulletpoints": [
+                "Created by David L. Smith, named after an exotic dancer.",
+                "Exploit: Microsoft Word macro vulnerabilities.",
+                "Infected over 100,000 computers, including U.S. government and corporate networks."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "attack_3",
+            "title": "ILOVEYOU Worm (2000)",
+            "description": "A destructive email virus that spread via an attachment titled 'ILOVEYOU.txt.vbs', tricking users into opening a Visual Basic script.",
+            "bulletpoints": [
+                "Created by Onel de Guzman in the Philippines.",
+                "Exploit: Social engineering and Windows scripting vulnerabilities.",
+                "Infected over 50 million computers and caused $15 billion in damages."
+            ],
+            "duration": "90",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "attack_4",
+            "title": "Stuxnet (2010)",
+            "description": "A sophisticated cyber-weapon, designed to sabotage Iran's nuclear centrifuges using a targeted malware attack on industrial control systems.",
+            "bulletpoints": [
+                "Jointly developed by the United States and Israel.",
+                "Exploit: Zero-day vulnerabilities in Microsoft Windows and Siemens SCADA (Supervisory Control and Data Acquisition) systems.",
+                "First publicly known instance of cyber warfare targeting physical infrastructure."
+            ],
+            "duration": "120",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "attack_5",
+            "title": "Sony PlayStation Network Breach (2011)",
+            "description": "A data breach in Sony's PlayStation Network (PSN) exposed the personal information of 77 million users.",
+            "bulletpoints": [
+                "Exploit: Unpatched web server vulnerabilities.",
+                "Hackers stole names, addresses, passwords, and credit card details.",
+                "Led to a 23-day shutdown of PlayStation Network services."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "attack_6",
+            "title": "The LinkedIn Data Breach (2012)",
+            "description": "A cyber attack exposed hashed passwords of 6.5 million LinkedIn users.",
+            "bulletpoints": [
+                "Exploit: Unsalted SHA-1 password hashing, making decryption easier.",
+                "Passwords were leaked on Russian hacker forums.",
+                "Later, in 2016, 167 million more accounts were found to be compromised."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "attack_7",
+            "title": "Yahoo Data Breach (2013-2014)",
+            "description": "The largest known data breach in history, affecting all 3 billion Yahoo accounts.",
+            "bulletpoints": [
+                "Exploit: Phishing and poor encryption security.",
+                "Personal data, including emails, passwords, and security questions, were compromised.",
+                "Resulted in Yahoo reducing its acquisition value in a Verizon buyout."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "attack_8",
+            "title": "Ukraine Power Grid Attack (2015-2016)",
+            "description": "The first known successful cyber attack to disable a power grid, causing massive blackouts in Ukraine.",
+            "bulletpoints": [
+                "Exploit: Spear-phishing emails and BlackEnergy malware.",
+                "Shutdown affected over 230,000 people.",
+                "Attributed to Russian state-sponsored hackers."
+            ],
+            "duration": "120",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "attack_9",
+            "title": "Equifax Data Breach (2017)",
+            "description": "A massive security breach at Equifax, exposing personal data of 147 million people, including Social Security numbers and credit histories.",
+            "bulletpoints": [
+                "Exploit: Unpatched Apache Struts vulnerability (CVE-2017-5638).",
+                "Hackers accessed sensitive financial data for over two months.",
+                "Equifax was fined $700 million in settlements."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "attack_10",
+            "title": "WannaCry Ransomware (2017)",
+            "description": "A global ransomware attack that infected over 230,000 computers across 150 countries, encrypting files and demanding Bitcoin payments.",
+            "bulletpoints": [
+                "Exploit: EternalBlue vulnerability in Microsoft Windows (leaked from NSA tools).",
+                "Hospitals, businesses, and government agencies were impacted.",
+                "A researcher, Marcus Hutchins, accidentally stopped the attack by registering a kill switch domain."
+            ],
+            "duration": "120",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "attack_11",
+            "title": "NotPetya Cyber Attack (2017)",
+            "description": "A destructive malware attack disguised as ransomware, causing an estimated $10 billion in damages worldwide.",
+            "bulletpoints": [
+                "Exploit: Windows SMBv1 vulnerability (same as WannaCry).",
+                "Originated in Ukraine but spread globally, hitting Maersk, FedEx, and other companies.",
+                "Believed to be Russian state-sponsored cyber warfare."
+            ],
+            "duration": "120",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "attack_12",
+            "title": "SolarWinds Supply Chain Attack (2020)",
+            "description": "A sophisticated supply chain attack that compromised U.S. government agencies and Fortune 500 companies.",
+            "bulletpoints": [
+                "Exploit: Malicious code inserted into SolarWinds Orion IT management software.",
+                "Used to infiltrate Microsoft, FireEye, and U.S. federal agencies.",
+                "Believed to be an advanced persistent threat (APT) linked to Russian intelligence."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "attack_13",
+            "title": "Colonial Pipeline Ransomware Attack (2021)",
+            "description": "A ransomware attack on the Colonial Pipeline disrupted the fuel supply in the United States.",
+            "bulletpoints": [
+                "Exploit: Password reuse and VPN vulnerabilities.",
+                "Attackers from DarkSide ransomware group demanded a Bitcoin ransom.",
+                "Led to fuel shortages and government intervention in cyber policy."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

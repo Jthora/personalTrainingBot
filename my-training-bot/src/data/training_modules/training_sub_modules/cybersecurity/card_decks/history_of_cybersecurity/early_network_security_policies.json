@@ -1,0 +1,135 @@
+{
+    "id": "early_network_security_policies",
+    "name": "Early Network Security Policies",
+    "description": "Understanding the foundational security policies that shaped modern network defenses.",
+    "focus": [
+        "ARPANET Security",
+        "Firewall Evolution",
+        "Encryption Standards",
+        "Intrusion Detection",
+        "Access Control Policies",
+        "Cybersecurity Regulations"
+    ],
+    "cards": [
+        {
+            "id": "network_1",
+            "title": "ARPANET and the Birth of Network Security (1969-1973)",
+            "description": "Early security challenges in ARPANET (Advanced Research Projects Agency Network), the first packet-switching network and predecessor to the modern internet.",
+            "bulletpoints": [
+                "ARPANET was launched by the U.S. Department of Defense in 1969.",
+                "The first documented hacking incident occurred in 1972 when an unauthorized user accessed the system.",
+                "Early networks had weak security, relying on simple passwords."
+            ],
+            "duration": "60",
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "network_2",
+            "title": "Introduction of Firewalls (1988-1993)",
+            "description": "Firewalls were developed as a security mechanism to filter traffic between trusted and untrusted networks.",
+            "bulletpoints": [
+                "First-generation firewalls used simple packet filtering to block or allow traffic based on IP addresses and port numbers.",
+                "Stateful firewalls, introduced in the early 1990s, tracked the state of active connections.",
+                "Network perimeter security became a fundamental aspect of cybersecurity."
+            ],
+            "duration": "90",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "network_3",
+            "title": "The Evolution of Encryption Standards (1976-2001)",
+            "description": "The development of modern encryption standards, including Data Encryption Standard (DES), Advanced Encryption Standard (AES), and Secure Sockets Layer (SSL).",
+            "bulletpoints": [
+                "DES was developed by IBM and adopted by the U.S. government in 1976.",
+                "AES replaced DES in 2001 due to increasing concerns over brute-force attacks.",
+                "SSL/TLS (Transport Layer Security) was introduced in 1995 to secure web communications."
+            ],
+            "duration": "120",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "network_4",
+            "title": "The Computer Fraud and Abuse Act (CFAA) (1986)",
+            "description": "The U.S. government introduced CFAA to criminalize unauthorized access to computer systems.",
+            "bulletpoints": [
+                "Passed in 1986 in response to early hacking incidents.",
+                "Made it illegal to access government and financial networks without authorization.",
+                "Expanded over the years to include cyber espionage and fraud."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "network_5",
+            "title": "Introduction of Intrusion Detection Systems (IDS) (1980s-1990s)",
+            "description": "Intrusion Detection Systems (IDS) were developed to monitor network traffic for suspicious activity.",
+            "bulletpoints": [
+                "First IDS concepts introduced in the 1980s.",
+                "Network-based IDS (NIDS) and Host-based IDS (HIDS) became common in the 1990s.",
+                "IDS evolved into modern Intrusion Prevention Systems (IPS)."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "network_6",
+            "title": "First Recorded Computer Worm: The Morris Worm (1988)",
+            "description": "The Morris Worm was the first self-replicating computer worm, causing 10% of internet-connected systems to fail.",
+            "bulletpoints": [
+                "Created by Robert Tappan Morris, a Cornell University student.",
+                "Exploited vulnerabilities in Unix systems.",
+                "Led to the creation of the Computer Emergency Response Team (CERT)."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "network_7",
+            "title": "First Implementation of Public Key Cryptography (1976)",
+            "description": "Public Key Cryptography (PKC) revolutionized secure communication by allowing encrypted messages to be exchanged without a pre-shared key.",
+            "bulletpoints": [
+                "Developed by Whitfield Diffie and Martin Hellman.",
+                "Enabled the use of asymmetric encryption, laying the foundation for modern digital security.",
+                "Later refined into RSA encryption by Ron Rivest, Adi Shamir, and Leonard Adleman in 1978."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "network_8",
+            "title": "Development of the First Anti-Virus Software (1987)",
+            "description": "As malware threats emerged, security researchers developed the first antivirus solutions.",
+            "bulletpoints": [
+                "First known antivirus tool: 'Vaccine' by Bernd Fix, developed in 1987.",
+                "McAfee and Norton launched commercial antivirus software in the late 1980s.",
+                "Signature-based detection became the standard for early antivirus programs."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "network_9",
+            "title": "Introduction of Secure Email Standards: PGP (1991)",
+            "description": "Pretty Good Privacy (PGP) was introduced as a method to encrypt and authenticate email communications.",
+            "bulletpoints": [
+                "Developed by Phil Zimmermann in 1991.",
+                "Used a combination of symmetric and asymmetric encryption.",
+                "Became the basis for modern email encryption standards."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "network_10",
+            "title": "The Rise of Network Access Control (NAC) Policies (1990s)",
+            "description": "Network Access Control (NAC) was introduced to ensure that only authenticated and authorized users could access networks.",
+            "bulletpoints": [
+                "Implemented in enterprise environments to enforce security policies.",
+                "Used authentication mechanisms like RADIUS (Remote Authentication Dial-In User Service) and TACACS+ (Terminal Access Controller Access-Control System).",
+                "Modern NAC solutions integrate with Zero Trust security models."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        }
+    ]
+}

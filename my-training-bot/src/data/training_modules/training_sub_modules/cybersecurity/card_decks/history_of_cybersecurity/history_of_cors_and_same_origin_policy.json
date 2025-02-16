@@ -1,0 +1,134 @@
+{
+    "id": "history_of_cors_and_same_origin_policy",
+    "name": "History of Cross-Origin Resource Sharing (CORS) and Same-Origin Policy (SOP)",
+    "description": "Understanding the origins of cross-origin security policies, the technical decisions that led to their adoption, and their impact on modern web applications.",
+    "focus": [
+        "Web Security Standards",
+        "Cross-Origin Access",
+        "AJAX and API Security",
+        "History of Cybersecurity Regulations",
+        "Web Development Security Evolution"
+    ],
+    "cards": [
+        {
+            "id": "cors_1",
+            "title": "The Birth of the Same-Origin Policy (SOP) in 1995",
+            "description": "The Same-Origin Policy (SOP) was first introduced by Netscape in 1995 as a security mechanism to prevent malicious websites from accessing data on different domains within the same browser session.",
+            "bulletpoints": [
+                "Netscape Navigator's introduction of JavaScript in 1995 led to security concerns.",
+                "Without SOP, any website could read data from any other website open in the browser.",
+                "SOP ensured that web pages could only access resources (such as cookies and DOM elements) from the same domain."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "cors_2",
+            "title": "JavaScript Becomes a Security Risk (1995-1999)",
+            "description": "Early JavaScript implementations lacked security controls, making web browsers vulnerable to cross-site scripting (XSS) and unauthorized data access.",
+            "bulletpoints": [
+                "JavaScript was initially designed for lightweight scripting but was soon used to manipulate the Document Object Model (DOM).",
+                "Attackers exploited JavaScript to read and modify content across different domains.",
+                "SOP became a critical security measure to mitigate these risks."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "cors_3",
+            "title": "Cross-Site Request Forgery (CSRF) Identified (2000)",
+            "description": "CSRF attacks trick a user's browser into making unauthorized requests on behalf of an attacker.",
+            "bulletpoints": [
+                "Attackers used hidden image requests or JavaScript scripts to submit forms without user consent.",
+                "Without SOP, attackers could manipulate authenticated sessions to perform actions on banking or email accounts.",
+                "Developers started requiring CSRF tokens as an early defense mechanism."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cors_4",
+            "title": "The Rise of Asynchronous JavaScript and XML (AJAX) (2005)",
+            "description": "AJAX allowed web applications to send and receive data asynchronously, but it also led to conflicts with the Same-Origin Policy.",
+            "bulletpoints": [
+                "AJAX enabled dynamic content loading without full page reloads.",
+                "Developers found SOP restrictive when trying to fetch data from external APIs.",
+                "JSONP (JSON with Padding) was introduced as a workaround for making cross-origin API calls."
+            ],
+            "duration": "90",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "cors_5",
+            "title": "How JSONP Attempted to Bypass SOP (2005-2010)",
+            "description": "JSONP (JSON with Padding) was a technique that used `<script>` tags to load JSON data from external sources, effectively bypassing SOP.",
+            "bulletpoints": [
+                "Browsers allowed `<script>` tags to load content from other origins, as scripts were not subject to SOP.",
+                "Developers wrapped JSON responses in JavaScript function calls, allowing cross-domain communication.",
+                "Security flaws: Attackers could inject malicious JavaScript into the responses."
+            ],
+            "duration": "90",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "cors_6",
+            "title": "CORS Proposed as a Solution (2009)",
+            "description": "The World Wide Web Consortium (W3C) introduced Cross-Origin Resource Sharing (CORS) as a structured way to allow safe cross-origin requests.",
+            "bulletpoints": [
+                "CORS allows web servers to specify which origins are permitted to access their resources.",
+                "Websites must include HTTP headers like `Access-Control-Allow-Origin` to enable CORS.",
+                "Unlike JSONP, CORS prevents script injection by restricting allowed request types."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cors_7",
+            "title": "Preflight Requests in CORS (2011)",
+            "description": "To prevent unauthorized cross-origin requests, browsers introduced 'preflight' requests that check permissions before sending sensitive data.",
+            "bulletpoints": [
+                "For methods like `POST`, `PUT`, or `DELETE`, the browser first sends an `OPTIONS` request.",
+                "The server must respond with the correct `Access-Control-Allow-Methods` and `Access-Control-Allow-Headers`.",
+                "This prevents unauthorized modifications to data by checking if the server explicitly allows it."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cors_8",
+            "title": "Security Concerns with CORS (2015-2020)",
+            "description": "While CORS provided more flexibility, security researchers identified several ways it could be misconfigured or exploited.",
+            "bulletpoints": [
+                "Web developers often misconfigured `Access-Control-Allow-Origin: *`, which allowed unrestricted cross-origin access.",
+                "Some APIs unintentionally exposed sensitive data by allowing any origin to request their resources.",
+                "Browser extensions and plugins became targets for CORS-based exploits."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cors_9",
+            "title": "Google Chrome Enforces CORS Restrictions (2020)",
+            "description": "Google Chrome introduced stricter security policies, enforcing CORS and restricting third-party access.",
+            "bulletpoints": [
+                "Chrome began blocking third-party cookies in cross-origin requests.",
+                "New security headers like `Cross-Origin-Opener-Policy` (COOP) and `Cross-Origin-Embedder-Policy` (COEP) were introduced.",
+                "Developers were required to explicitly define CORS rules in APIs to prevent leaks."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cors_10",
+            "title": "Future of CORS and Web3 Protocols (2025 and Beyond)",
+            "description": "As decentralized web technologies emerge, new protocols like Web3 Transport Protocol (WTTP) aim to replace CORS.",
+            "bulletpoints": [
+                "WTTP will allow decentralized apps (dApps) to communicate without traditional HTTP restrictions.",
+                "Security policies will shift towards blockchain-based authentication and access control.",
+                "Browsers may move away from traditional SOP/CORS models in favor of cryptographic trust mechanisms."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

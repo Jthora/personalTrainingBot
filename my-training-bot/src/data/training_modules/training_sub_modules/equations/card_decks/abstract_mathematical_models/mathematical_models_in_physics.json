@@ -55,7 +55,7 @@
             "bulletpoints": [
                 "Einstein's field equations: \\[ R_{\\mu\\nu} - \\frac{1}{2} R g_{\\mu\\nu} + \\Lambda g_{\\mu\\nu} = \\frac{8\\pi G}{c^4} T_{\\mu\\nu} \\]",
                 "Metric tensor in Schwarzschild geometry: \\[ ds^2 = -\\left(1 - \\frac{2GM}{c^2 r} \\right) dt^2 + \\left(1 - \\frac{2GM}{c^2 r} \\right)^{-1} dr^2 + r^2 d\\Omega^2 \\]",
-                "Lorentz transformation: \\[ x' = \\gamma (x - vt), \\quad t' = \\gamma \\left( t - \\frac{vx}{c^2} \\right) \\] where \\( \\gamma = \\frac{1}{\\sqrt{1 - v^2/c^2}} \\]",
+                "Lorentz transformation: \\[ x' = \\gamma (x - vt), \\quad t' = \\gamma \\left( t - \\frac{vx}{c^2} \\right) \\] where \\( \\gamma = \\frac{1}{\\sqrt{1 - v^2/c^2}} \\)",
                 "Time dilation: \\[ \\Delta t' = \\frac{\\Delta t}{\\sqrt{1 - v^2/c^2}} \\]"
             ],
             "duration": 11,

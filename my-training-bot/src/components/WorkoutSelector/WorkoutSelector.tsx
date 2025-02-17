@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react';
 import WorkoutCategoryCache from '../../cache/WorkoutCategoryCache';
 import { WorkoutCategory } from '../../types/WorkoutCategory';
 import styles from './WorkoutSelector.module.css';
+import useWorkoutSchedule from '../../hooks/useWorkoutSchedule';
 
 const WorkoutSelector: React.FC = () => {
     const [workoutCategories, setWorkoutCategories] = useState<WorkoutCategory[]>([]);
     const [visibleCategories, setVisibleCategories] = useState<Set<string>>(new Set());
     const [visibleSubCategories, setVisibleSubCategories] = useState<Set<string>>(new Set());
     const [visibleGroups, setVisibleGroups] = useState<Set<string>>(new Set());
+    const { createNewSchedule } = useWorkoutSchedule();
 
     useEffect(() => {
         const cache = WorkoutCategoryCache.getInstance();
@@ -67,9 +69,9 @@ const WorkoutSelector: React.FC = () => {
         setWorkoutCategories([...workoutCategories]); // Trigger re-render
     };
 
-    const createNewWorkoutSchedule = () => {
-        // Logic to create a new workout schedule
+    const createNewWorkoutSchedule = async () => {
         console.log('Creating a new workout schedule...');
+        await createNewSchedule();
     };
 
     const getStats = () => {

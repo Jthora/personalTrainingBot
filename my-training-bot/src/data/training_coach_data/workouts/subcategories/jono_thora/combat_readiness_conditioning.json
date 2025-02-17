@@ -1,0 +1,772 @@
+{
+    "name": "Combat Readiness Conditioning",
+    "description": "Combat-specific strength, endurance, and reflex training to improve striking power, resilience, and movement control.",
+    "workout_groups": [
+        {
+            "name": "Striking Power & Speed",
+            "description": "Developing maximum striking power, explosive force, and rapid attack speed.",
+            "workouts": [
+                {
+                    "name": "Heavy Bag 3-Minute Rounds",
+                    "duration": "4 rounds of 3 minutes",
+                    "intensity": "High",
+                    "description": "Strike the heavy bag with hands, elbows, knees, and kicks for full-body conditioning.",
+                    "difficulty_range": [7, 11]
+                },
+                {
+                    "name": "Explosive Elbow & Knee Combinations",
+                    "duration": "4 sets of 10 reps per side",
+                    "intensity": "High",
+                    "description": "Throw rapid elbow and knee combinations to develop fluid striking power.",
+                    "difficulty_range": [6, 10]
+                },
+                {
+                    "name": "Hook & Uppercut Power Shots",
+                    "duration": "3 sets of 12 reps per arm",
+                    "intensity": "Moderate",
+                    "description": "Practice explosive hook and uppercut punches to develop knockout power.",
+                    "difficulty_range": [5, 9]
+                },
+                {
+                    "name": "Fast Twitch Reaction Drills",
+                    "duration": "3 sets of 30-second speed punching sets",
+                    "intensity": "High",
+                    "description": "Throw rapid punches with maximum speed and minimal tension to improve reaction time.",
+                    "difficulty_range": [6, 10]
+                },
+                {
+                    "name": "Speed Kicking Rounds",
+                    "duration": "3 sets of 20 fast kicks per leg",
+                    "intensity": "Moderate",
+                    "description": "Perform rapid kicking combinations to enhance lower body speed and endurance.",
+                    "difficulty_range": [5, 9]
+                },
+                {
+                    "name": "Jab Speed & Accuracy Drill",
+                    "duration": "3 sets of 30 jabs",
+                    "intensity": "Moderate",
+                    "description": "Throw fast, controlled jabs to increase hand speed and target accuracy.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Slap & Tap Hand Speed Drill",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Low",
+                    "description": "Rapid open-hand slaps to train fast-twitch striking speed.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Drop Step Punching Drill",
+                    "duration": "3 sets of 20 reps",
+                    "intensity": "Moderate",
+                    "description": "Step forward explosively while throwing a fast punch to generate power.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Backfist Speed Drill",
+                    "duration": "3 sets of 20 reps per arm",
+                    "intensity": "Moderate",
+                    "description": "Rapid backfists to develop explosive reaction-based striking.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Body Shot Power Drill",
+                    "duration": "3 sets of 15 body shots per side",
+                    "intensity": "Moderate",
+                    "description": "Deliver forceful body punches to improve striking power in close quarters.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Heel Pivot Power Punches",
+                    "duration": "3 sets of 15 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Utilize a full-body pivot to generate more power behind punches.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Explosive Superman Punch",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Jump forward into a powerful superman punch to build explosive upper-body force.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Knee Raise to Jumping Knee Strike",
+                    "duration": "3 sets of 10 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Train the knee chambering technique before executing explosive knee strikes.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Wall Resistance Straight Punches",
+                    "duration": "3 sets of 20 reps per arm",
+                    "intensity": "Moderate",
+                    "description": "Push against a wall while throwing punches to increase arm explosiveness.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Kick-Recoil Speed Drill",
+                    "duration": "3 sets of 15 kicks per leg",
+                    "intensity": "Moderate",
+                    "description": "Focus on quick recovery between kicks to increase striking efficiency.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Fast Hand Combos (1-2-3-4)",
+                    "duration": "3 sets of 10 combos",
+                    "intensity": "Moderate",
+                    "description": "Train rapid 4-punch combinations with full extension and retraction.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Double Tap Jab & Cross",
+                    "duration": "3 sets of 20 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Throw quick successive strikes to develop attack speed and rhythm.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Defensive Strike Counter Drill",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Simulate counter-striking by slipping or dodging before executing an attack.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Explosive Spinning Backfist",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Develop rotational power with a fast-spinning backfist.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Snap Kick to Side Kick Drill",
+                    "duration": "3 sets of 10 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Flow from a quick snap kick into a powerful side kick for combination striking.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Push Kick to Hook Kick Combo",
+                    "duration": "3 sets of 10 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Combine a forceful push kick with a fast, whipping hook kick.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Shadowboxing Speed Rounds",
+                    "duration": "3 sets of 60 seconds",
+                    "intensity": "Moderate",
+                    "description": "Throw rapid, controlled strikes with maximum speed in the air.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Sledgehammer Ground Slams",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Moderate",
+                    "description": "Mimic a downward striking motion to build explosive forearm strength.",
+                    "difficulty_range": [5, 7]
+                }
+            ]
+        },
+        {
+            "name": "Martial Arts Strength",
+            "description": "Developing the core power, stability, and kicking strength necessary for effective combat techniques.",
+            "workouts": [
+                {
+                    "name": "Low Stance Kicks",
+                    "duration": "3 sets of 10 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Develop strong, balanced low kicks using Silat and Muay Thai techniques.",
+                    "difficulty_range": [5, 9]
+                },
+                {
+                    "name": "Static Horse Stance",
+                    "duration": "3 sets of 60-second holds",
+                    "intensity": "High",
+                    "description": "Hold a deep horse stance to develop endurance in the legs and core.",
+                    "difficulty_range": [7, 11]
+                },
+                {
+                    "name": "Single-Leg Balance Kicks",
+                    "duration": "3 sets of 15 kicks per leg",
+                    "intensity": "Moderate",
+                    "description": "Perform slow, controlled kicks while balancing to improve stability and precision.",
+                    "difficulty_range": [5, 9]
+                },
+                {
+                    "name": "Explosive Side Kicks",
+                    "duration": "3 sets of 8 reps per leg",
+                    "intensity": "High",
+                    "description": "Develop powerful side kicks with maximum speed and impact.",
+                    "difficulty_range": [6, 10]
+                },
+                {
+                    "name": "Chambered Knee Strikes",
+                    "duration": "3 sets of 10 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Hold and drive the knee forward for enhanced Muay Thai-style knee power.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Step-Up Knee Strikes",
+                    "duration": "3 sets of 12 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Step onto an elevated platform and drive the knee upward to build explosive leg power.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Horse Stance Punch Drills",
+                    "duration": "3 sets of 30 punches",
+                    "intensity": "Moderate",
+                    "description": "Hold a low horse stance while delivering rapid straight punches for stability and arm endurance.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Elevated Heel Raise Hold",
+                    "duration": "3 sets of 30-second holds",
+                    "intensity": "Moderate",
+                    "description": "Stand on your toes and maintain balance for ankle and lower leg strength.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Isometric Side Kick Hold",
+                    "duration": "3 sets of 15-second holds per leg",
+                    "intensity": "Moderate",
+                    "description": "Hold a fully extended side kick position to develop balance and leg strength.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Front Kick Chamber Holds",
+                    "duration": "3 sets of 20-second holds per leg",
+                    "intensity": "Moderate",
+                    "description": "Hold the knee at a chambered front kick position to build core and leg endurance.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Horse Stance Core Twists",
+                    "duration": "3 sets of 20 reps",
+                    "intensity": "Moderate",
+                    "description": "While holding a deep horse stance, twist the torso side to side for core activation.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Weighted Front Kicks",
+                    "duration": "3 sets of 12 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Attach ankle weights and perform front kicks to increase leg power.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Knee Drive to Roundhouse Kick",
+                    "duration": "3 sets of 10 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Train fluid striking transitions by combining knee strikes with roundhouse kicks.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Jumping Front Kicks",
+                    "duration": "3 sets of 8 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Develop explosive lower-body power by jumping into a front kick.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Side Lunge to Chambered Kick",
+                    "duration": "3 sets of 10 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Build stability by shifting weight through a side lunge before chambering a kick.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Hanging Leg Raise Kicks",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Moderate",
+                    "description": "Use a pull-up bar to develop kicking core strength by raising legs in a kicking motion.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Palm Strike Core Engagement",
+                    "duration": "3 sets of 20 reps per arm",
+                    "intensity": "Moderate",
+                    "description": "Deliver powerful palm strikes while engaging the core for stability.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Low Stance Lateral Steps",
+                    "duration": "3 sets of 20 steps per direction",
+                    "intensity": "Moderate",
+                    "description": "Move side to side in a deep stance to improve leg endurance and mobility.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Weighted Horse Stance Holds",
+                    "duration": "3 sets of 45-second holds",
+                    "intensity": "Moderate",
+                    "description": "Hold a horse stance while carrying hand weights to increase resistance.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Controlled Jumping Side Kicks",
+                    "duration": "3 sets of 8 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Train dynamic side kicks with controlled jumping for enhanced explosiveness.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Sliding Hook Kicks",
+                    "duration": "3 sets of 8 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Improve mobility by performing smooth, sliding hook kicks.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Low Kick Counter Training",
+                    "duration": "3 sets of 12 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Strengthen the lower body by absorbing impact and countering with a kick.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Wall-Supported Front Kicks",
+                    "duration": "3 sets of 10 reps per leg",
+                    "intensity": "Low",
+                    "description": "Use a wall for support and practice controlled front kicks to improve balance and precision.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Assisted Horse Stance Holds",
+                    "duration": "3 sets of 30-second holds",
+                    "intensity": "Low",
+                    "description": "Perform a horse stance with hands resting lightly on a surface for stability while focusing on proper form.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Seated Knee Raises",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Low",
+                    "description": "Sit on the floor or a chair and raise your knees towards your chest to strengthen the lower abs and hip flexors.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Slow Chambered Kicks",
+                    "duration": "3 sets of 8 reps per leg",
+                    "intensity": "Low",
+                    "description": "Hold the knee chambered for 3 seconds before executing a slow front, side, or roundhouse kick.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Toe Tap Balance Drill",
+                    "duration": "3 sets of 15 taps per leg",
+                    "intensity": "Low",
+                    "description": "Stand on one leg and lightly tap the toe of the other foot in front, to the side, and behind to improve foot control and balance.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Standing Knee Holds",
+                    "duration": "3 sets of 20-second holds per leg",
+                    "intensity": "Low",
+                    "description": "Lift one knee to waist height and hold, engaging core muscles for balance.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Step-Through Lunges",
+                    "duration": "3 sets of 10 reps per leg",
+                    "intensity": "Low",
+                    "description": "Perform lunges with a step-through motion to improve leg coordination and strength.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Basic Pivot & Turn Drill",
+                    "duration": "3 sets of 10 reps per side",
+                    "intensity": "Low",
+                    "description": "Practice controlled pivots to strengthen footwork and rotational movement for kicks.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Side Leg Raises",
+                    "duration": "3 sets of 12 reps per leg",
+                    "intensity": "Low",
+                    "description": "Raise your leg to the side with control to improve lateral leg strength for side kicks.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Heel Raise Balance Drill",
+                    "duration": "3 sets of 20-second holds",
+                    "intensity": "Low",
+                    "description": "Stand on the balls of your feet and hold for ankle and calf stability.",
+                    "difficulty_range": [3, 5]
+                }
+            ]
+        },
+        {
+            "name": "Impact Conditioning",
+            "description": "Toughening the body to withstand strikes and improve overall durability in combat.",
+            "workouts": [
+                {
+                    "name": "Light Shin Tapping",
+                    "duration": "3 sets of 15 taps per leg",
+                    "intensity": "Low",
+                    "description": "Use a softer surface or lightly tap shins together to begin conditioning for impact training.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Hand Toughening (Palm & Knuckles)",
+                    "duration": "3 sets of 10 reps per hand",
+                    "intensity": "Low",
+                    "description": "Lightly strike a padded or softer surface with open palm and knuckles to begin wrist and hand conditioning.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Soft Core Striking",
+                    "duration": "3 sets of 20-second controlled taps",
+                    "intensity": "Low",
+                    "description": "Tap the midsection lightly with an open hand or small object to develop awareness and tolerance to impact.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Basic Forearm Clashes",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Low",
+                    "description": "Gently clash forearms against a softer object to build wrist and bone resilience gradually.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Calf & Achilles Toughening",
+                    "duration": "3 sets of 10 reps per leg",
+                    "intensity": "Low",
+                    "description": "Light tapping and mild pressure on calves and Achilles to prepare for greater impact over time.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Light Knee Striking on Bag",
+                    "duration": "3 sets of 10 reps per leg",
+                    "intensity": "Low",
+                    "description": "Beginner knee strikes on a bag with minimal force to condition the patellar area safely.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Soft Impact Bodyweight Drops",
+                    "duration": "3 sets of 5 reps",
+                    "intensity": "Moderate",
+                    "description": "Gently drop into a low squat or controlled fall to prepare for hard landings.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Wrist & Knuckle Isometric Holds",
+                    "duration": "3 sets of 20-second holds",
+                    "intensity": "Low",
+                    "description": "Press knuckles or wrists into a padded surface to strengthen bones and connective tissue.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Basic Shin Rolling (Foam Roller or Light Object)",
+                    "duration": "3 sets of 30-second rolls per leg",
+                    "intensity": "Moderate",
+                    "description": "Use a foam roller or light object to gently roll the shins, starting shin conditioning.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Wall Knuckle Pushes",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Low",
+                    "description": "Press knuckles lightly against a wall and apply pressure to condition hands for striking.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Heel Tap Conditioning",
+                    "duration": "3 sets of 15 taps per foot",
+                    "intensity": "Low",
+                    "description": "Tap heels lightly against a surface to build tolerance for impact.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Light Body Slaps",
+                    "duration": "3 sets of 10 reps per area",
+                    "intensity": "Low",
+                    "description": "Perform light body slaps to begin toughening skin and muscle for combat readiness.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Controlled Shin-on-Bag Rolls",
+                    "duration": "3 sets of 10 slow rolls per leg",
+                    "intensity": "Moderate",
+                    "description": "Gently roll shins along the punching bag to gradually increase bone conditioning.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Partner Shoulder Clashes",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Light shoulder bumps with a partner to develop impact resistance.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Soft Back Fall Rolls",
+                    "duration": "3 sets of 5 reps",
+                    "intensity": "Moderate",
+                    "description": "Roll backward and absorb impact smoothly to prepare for hard falls.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Standing Shock Absorption Drills",
+                    "duration": "3 sets of 5 jumps",
+                    "intensity": "Moderate",
+                    "description": "Jump slightly and land with soft knees to develop impact tolerance.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Progressive Core Striking (Padded Object)",
+                    "duration": "3 sets of 10 taps",
+                    "intensity": "Moderate",
+                    "description": "Use a padded or soft surface to lightly strike the core and gradually build resistance.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Shin Conditioning with Light Object",
+                    "duration": "3 sets of 10 taps per shin",
+                    "intensity": "Moderate",
+                    "description": "Tap the shin gently with a softer object like a rubber mallet or padded stick to strengthen the bone gradually.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Breath Training for Impact",
+                    "duration": "3 sets of 10 deep breaths per session",
+                    "intensity": "Low",
+                    "description": "Practice breathing techniques to exhale upon impact and control pain tolerance.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Shin Toughening Drills",
+                    "duration": "3 sets of 10 bag strikes per leg",
+                    "intensity": "High",
+                    "description": "Condition the shins by striking the bag to develop resistance to impact.",
+                    "difficulty_range": [7, 11]
+                },
+                {
+                    "name": "Forearm & Wrist Strength",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Moderate",
+                    "description": "Develop forearm durability using staff training and wrist isometric holds.",
+                    "difficulty_range": [5, 9]
+                },
+                {
+                    "name": "Core Hardening",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Perform medicine ball slams onto the abs to condition the core for combat.",
+                    "difficulty_range": [6, 10]
+                },
+                {
+                    "name": "Controlled Impact Abs Training",
+                    "duration": "3 sets of 20-second controlled strikes",
+                    "intensity": "Moderate",
+                    "description": "Take controlled strikes to the midsection to develop resistance.",
+                    "difficulty_range": [5, 9]
+                },
+                {
+                    "name": "Forearm Clash Training",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Lightly clash forearms against a partner or training object to build blocking strength.",
+                    "difficulty_range": [6, 10]
+                }
+            ]
+        },
+        {
+            "name": "Reflex & Dodge Training",
+            "description": "Enhancing agility, reaction speed, and evasive movement for defensive combat maneuvers.",
+            "workouts": [
+                {
+                    "name": "Hand-Eye Coordination Drills",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "Moderate",
+                    "description": "Dodge and react to fast-moving hand attacks to train reflexes.",
+                    "difficulty_range": [5, 9]
+                },
+                {
+                    "name": "Rolling & Evading Practice",
+                    "duration": "3 sets of 10 rolls",
+                    "intensity": "High",
+                    "description": "Practice tactical recovery movements and rapid evasions.",
+                    "difficulty_range": [6, 10]
+                },
+                {
+                    "name": "Fast Twitch Dodging",
+                    "duration": "3 sets of 30-second drills",
+                    "intensity": "Moderate",
+                    "description": "Use quick head movements and footwork to avoid simulated attacks.",
+                    "difficulty_range": [5, 9]
+                },
+                {
+                    "name": "Parry & Counter Reflex Training",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "React to an incoming strike by parrying and countering instantly.",
+                    "difficulty_range": [6, 10]
+                },
+                {
+                    "name": "Slipping & Ducking",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Train defensive movements to avoid high and low attacks.",
+                    "difficulty_range": [5, 9]
+                },
+                {
+                    "name": "Basic Head Movement Drill",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "Low",
+                    "description": "Move head side-to-side and up-down to simulate avoiding slow incoming strikes.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Shadow Dodging",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "Low",
+                    "description": "Stand in front of a mirror or shadowbox and practice dodging imaginary strikes.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Slow Slipping Drill",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Low",
+                    "description": "Perform slow-motion slips to build muscle memory for dodging punches.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Wall Reflex Tap Drill",
+                    "duration": "3 sets of 15 taps",
+                    "intensity": "Low",
+                    "description": "Tap a marked spot on a wall as quickly as possible when prompted.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Side-Step Evasion",
+                    "duration": "3 sets of 15 reps",
+                    "intensity": "Low",
+                    "description": "Step quickly to the left or right to evade an incoming attack.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Basic Reaction Time Drill",
+                    "duration": "3 sets of 15 seconds",
+                    "intensity": "Low",
+                    "description": "React to a sound cue by moving in a predetermined direction.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Controlled Drop-Step Drill",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Low",
+                    "description": "Perform controlled drop steps to get used to quickly changing direction.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Ball Drop Reflex Drill",
+                    "duration": "3 sets of 10 catches",
+                    "intensity": "Moderate",
+                    "description": "Catch a ball dropped from shoulder height as fast as possible.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Dodging Rope Swing",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "Moderate",
+                    "description": "Tie a rope to a fixed point and duck or slip as it swings.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Basic Roll Recovery",
+                    "duration": "3 sets of 8 rolls",
+                    "intensity": "Moderate",
+                    "description": "Perform slow, controlled rolls to improve tactical recovery.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Reaction Step Drill",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Step quickly forward or back based on an external cue (clap, voice, light).",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Hand-Pat Dodging Drill",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "A partner taps toward your shoulder or head, and you dodge lightly.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Slow-Motion Weaving",
+                    "duration": "3 sets of 15 seconds",
+                    "intensity": "Moderate",
+                    "description": "Weave under an imaginary punch in slow motion to develop fluidity.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Light Foot Shuffle Drill",
+                    "duration": "3 sets of 15 seconds",
+                    "intensity": "Moderate",
+                    "description": "Shuffle forward and backward rapidly to build quick footwork.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Partner Dodge & Tag Drill",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Your partner tries to tap your shoulder while you dodge.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Fast Duck & Roll Drill",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "Moderate",
+                    "description": "Duck under an imaginary attack and immediately roll forward.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Random Direction Sprint Drill",
+                    "duration": "3 sets of 10 seconds",
+                    "intensity": "Moderate",
+                    "description": "Sprint in a random direction based on a partner's call.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Lateral Dodging Between Cones",
+                    "duration": "3 sets of 15 seconds",
+                    "intensity": "Moderate",
+                    "description": "Move quickly side-to-side between markers, simulating an evasive fight motion.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Controlled Backpedal Dodging",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Move backward quickly in response to an imaginary attack.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Reaction Clap Drill",
+                    "duration": "3 sets of 15 seconds",
+                    "intensity": "Moderate",
+                    "description": "React as quickly as possible by moving or dodging when a clap is heard.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Leg Feint Step-Back Drill",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Simulate a fake step before retreating or moving in a different direction.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Shoulder Shrug Evasion",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Raise shoulders and tuck chin to avoid incoming jabs and straight punches.",
+                    "difficulty_range": [5, 7]
+                }
+            ]
+        }
+    ]
+}

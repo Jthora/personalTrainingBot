@@ -1,0 +1,13 @@
+{
+    "name": "Jono Tho'ra",
+    "description": "Jono Tho'ra training module to catch up, show up and get to her.",
+    "subcategories": {
+        "agility_mobility_and_acrobatics": "agility_mobility_and_acrobatics.json",
+        "combat_readiness_conditioning": "combat_readiness_conditioning.json",
+        "raver_super_hero_dance_combat": "raver_super_hero_dance_combat.json",
+        "recovery_flexibility_and_injury_prevention": "recovery_flexibility_and_injury_prevention.json",
+        "strength_and_endurance": "strength_and_endurance.json",
+        "tactical_conditioning_and_situation_awareness": "tactical_conditioning_and_situation_awareness.json",
+        "warrior_core_and_mental_resilience": "warrior_core_and_mental_resilience.json"
+    }
+}

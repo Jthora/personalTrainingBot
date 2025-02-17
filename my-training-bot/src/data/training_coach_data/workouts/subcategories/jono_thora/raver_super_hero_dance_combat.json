@@ -1,0 +1,569 @@
+{
+    "name": "Raver Super Hero Dance Combat",
+    "description": "A fusion of dance-based movement and combat techniques, integrating rhythmic flow, evasive footwork, and momentum-based striking.",
+    "workout_groups": [
+        {
+            "name": "Rhythmic Combat Flow (Music-Based Footwork & Reactive Striking)",
+            "description": "Training combat footwork and striking mechanics in rhythm with breakbeats, basslines, and dynamic tempo shifts.",
+            "workouts": [
+                {
+                    "name": "Breakbeat Flow Drills",
+                    "duration": "3 sets of 60 seconds",
+                    "intensity": "Moderate",
+                    "description": "Move in sync with breakbeats, switching between defensive stances and counterstrikes.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Footwork Cycles (Jeet Kune Do, Wing Chun)",
+                    "duration": "3 sets of 40 seconds",
+                    "intensity": "Moderate",
+                    "description": "Use rapid stepping cycles from JKD and Wing Chun to evade and attack in rhythm.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Kick-Dodge-Roll Integration",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "Moderate",
+                    "description": "Choreographed sequences blending kicks, dodges, and rolls with continuous motion.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Capoeira Ginga into Tactical Kick Combos",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Blend Ginga footwork with kicks, transitioning fluidly between offense and defense.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Bounce-Step Striking Patterns",
+                    "duration": "3 sets of 60 seconds",
+                    "intensity": "Moderate",
+                    "description": "Using rhythm-based bounce steps, strike on the beat and pivot between angles.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Bassline Shuffle Footwork",
+                    "duration": "3 sets of 40 seconds",
+                    "intensity": "Moderate",
+                    "description": "Use fast footwork movements to stay light on your feet in sync with bass-heavy beats.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Beat Drop Counterattacks",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Time strikes with the beat drop, executing explosive counterstrikes with precision.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Fast-Twitch Rhythm Striking",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Execute rapid punching or kicking combinations in sync with double-time beats.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Echo-Step Side Switches",
+                    "duration": "3 sets of 15 reps",
+                    "intensity": "Moderate",
+                    "description": "Step laterally with rhythm-based timing to fake out opponents.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Cross-Rhythm Evasive Steps",
+                    "duration": "3 sets of 40 seconds",
+                    "intensity": "High",
+                    "description": "Mix quick backsteps with lateral movement to avoid attacks while maintaining rhythmic footwork.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "Trap Bassline Dodge-Counter Drill",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Use low-end heavy bass rhythms as timing cues to evade and counter with precision.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "Break-Step Knee Drive",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Use fast steps and rhythmic knee drives to maintain offensive flow.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Drop Tempo Power Strikes",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Time explosive kicks and strikes with low-tempo transitions in music.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Bounce-Rhythm Defense Drill",
+                    "duration": "3 sets of 45 seconds",
+                    "intensity": "High",
+                    "description": "Maintain rhythmic bouncing while reacting to incoming strikes with blocks and evasion.",
+                    "difficulty_range": [8, 11]
+                },
+                {
+                    "name": "Spiral Rhythm Dodge-Counter",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Spin or pivot into counters while following rhythmic cues in the music.",
+                    "difficulty_range": [8, 11]
+                },
+                {
+                    "name": "Step-Tap Rhythm Drill",
+                    "duration": "3 sets of 40 seconds",
+                    "intensity": "Low",
+                    "description": "Lightly step-tap in rhythm with a beat while maintaining balance and mobility.",
+                    "difficulty_range": [1, 3]
+                },
+                {
+                    "name": "Slow-Tempo Flow Striking",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Low",
+                    "description": "Perform relaxed but precise strikes while moving in time with a slower tempo beat.",
+                    "difficulty_range": [2, 4]
+                },
+                {
+                    "name": "Basic Shuffle Step Evade",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Use side-to-side shuffle steps to dodge incoming attacks while maintaining balance.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Break-Step Recovery Drill",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "Moderate",
+                    "description": "Step, drop low, and recover back into stance smoothly while staying in rhythm.",
+                    "difficulty_range": [3, 5]
+                }
+            ]
+        },
+        {
+            "name": "Circular Motion Attacks (Baguazhang, Capoeira, Taijutsu)",
+            "description": "Developing fluid, circular combat strikes that maximize speed and evasive power.",
+            "workouts": [
+                {
+                    "name": "Baguazhang Circle Walking Strikes",
+                    "duration": "3 sets of 40 seconds",
+                    "intensity": "Moderate",
+                    "description": "Move in circular footwork patterns while striking at optimal angles.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Capoeira Spinning Sweep Kicks",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "High",
+                    "description": "Execute spinning sweeps while staying in rhythm with movement.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Taijutsu Flow Reversals",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Use circular redirections and counter-strikes in fluid sequences.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Muay Thai Arc Step Elbows",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Step in a curved motion while throwing elbows from different angles.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "360-Degree Spinning Attacks",
+                    "duration": "3 sets of 6 reps per direction",
+                    "intensity": "High",
+                    "description": "Perform full spin attacks while staying balanced and fluid.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Basic Circle Walking Footwork",
+                    "duration": "3 sets of 40 seconds",
+                    "intensity": "Low",
+                    "description": "Practice slow, controlled circular footwork to build stability and movement flow.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Baguazhang Arm Rotation Drills",
+                    "duration": "3 sets of 10 reps per side",
+                    "intensity": "Low",
+                    "description": "Perform fluid arm rotations while maintaining circular stepping techniques.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Spinning Low Kicks (Capoeira Meia Lua de Compasso)",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Use spinning low kicks to sweep an opponent while keeping balanced.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Taijutsu Step & Redirect Drill",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Step in circular motions while redirecting an opponent’s energy.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Reverse Spinning Hook Kicks",
+                    "duration": "3 sets of 6 reps per leg",
+                    "intensity": "High",
+                    "description": "Spin into a hooking kick while maintaining control and balance.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Silat Off-Line Step & Cut",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Step offline and strike from an angle using circular entry attacks.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Capoeira Esquiva & Counter",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "Moderate",
+                    "description": "Dodge in a circular motion and counterattack with a spin kick or strike.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Rolling Deflection Blocks (Baguazhang Arm Spirals)",
+                    "duration": "3 sets of 10 reps per arm",
+                    "intensity": "Moderate",
+                    "description": "Use rolling arm motions to deflect incoming strikes smoothly.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Dynamic Spin & Reverse Kick",
+                    "duration": "3 sets of 6 reps per side",
+                    "intensity": "High",
+                    "description": "Execute a spinning feint before delivering a reverse kick.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Taijutsu Spiral Takedowns",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "High",
+                    "description": "Use spiraling movements to unbalance an opponent and control the takedown.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Baguazhang Double Palm Strike Rotation",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Strike using both palms while rotating around an opponent.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Advanced 540-Degree Spinning Kick",
+                    "duration": "3 sets of 4 reps per side",
+                    "intensity": "Elite",
+                    "description": "Jump into a fully committed spin, executing a 540-degree airborne kick.",
+                    "difficulty_range": [8, 11]
+                },
+                {
+                    "name": "Capoeira Aerial Spin & Counter",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "Elite",
+                    "description": "Perform a full aerial spin before landing into a defensive counterattack.",
+                    "difficulty_range": [8, 11]
+                },
+                {
+                    "name": "Advanced Baguazhang Spinning Deflections",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "Elite",
+                    "description": "Use continuous rotational movement to evade, deflect, and reposition.",
+                    "difficulty_range": [8, 12]
+                }
+            ]
+        },
+        {
+            "name": "Momentum-Based Combat Techniques (Redirecting Force)",
+            "description": "Developing combat movement based on momentum redirection, sweeps, and evasive positioning.",
+            "workouts": [
+                {
+                    "name": "Basic Weight Shift Redirects",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Low",
+                    "description": "Train controlled shifts in weight to prepare for advanced redirections.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Low Stance Step & Deflect",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Low",
+                    "description": "Practice stepping offline to deflect incoming force.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Circular Pivot Counters",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Use momentum-based pivots to evade and counter.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Silat Triangle Step Repositioning",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Reposition using triangle footwork and redirection.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Capoeira Spin Fake Outs",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Use deceptive spins to mislead your opponent before striking.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Baguazhang Palm Redirections",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Moderate",
+                    "description": "Redirect force using fluid palm techniques in circular movement.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Rolling Displacement Techniques",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Roll and reposition using controlled momentum shifts.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Silat Body Drop Counters",
+                    "duration": "3 sets of 6 reps per side",
+                    "intensity": "High",
+                    "description": "Drop weight at key moments to counter aggressive attacks.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Intercept & Redirect (Jeet Kune Do)",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Intercept an attack and immediately redirect it into a counter.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Muay Thai Directional Elbow Reversals",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Use redirection angles with elbows to neutralize incoming strikes.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Combat Feint & Sweep",
+                    "duration": "3 sets of 10 reps per side",
+                    "intensity": "High",
+                    "description": "Feign a strike to bait movement, then sweep with controlled momentum.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Capoeira Aerial Spin Redirect",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "Elite",
+                    "description": "Use an aerial spin to redirect force while counterattacking midair.",
+                    "difficulty_range": [8, 11]
+                },
+                {
+                    "name": "Baguazhang Continuous Flow Redirection",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Elite",
+                    "description": "Move in an unbroken circular motion to evade and counterattack.",
+                    "difficulty_range": [8, 11]
+                },
+                {
+                    "name": "Silat Advanced Spin Recovery & Takedown",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "Elite",
+                    "description": "Blend spins with takedowns to flow between offense and defense.",
+                    "difficulty_range": [8, 12]
+                },
+                {
+                    "name": "Silat Sweeps & Reversals",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Sweep opponents off balance while maintaining control of your positioning.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Combat Dance Transitions",
+                    "duration": "3 sets of 60 seconds",
+                    "intensity": "Moderate",
+                    "description": "Flow between evasion, counters, and repositioning in a musical rhythm.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Slip & Spin Counters (Jeet Kune Do, Wing Chun)",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Slip past attacks while spinning into an immediate counterstrike.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Aikido Redirections into Counter-Strikes",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Blend evasive redirections with rapid counterattacks.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Whip-Step Fake Outs",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Moderate",
+                    "description": "Fake an initial movement before using a sharp redirection.",
+                    "difficulty_range": [4, 7]
+                }
+            ]
+        },
+        {
+            "name": "Dance-to-Strike Transitions (Seamless Fight Sequences in Motion)",
+            "description": "Developing seamless integration of combat moves into a fluid, dance-like fighting style.",
+            "workouts": [
+                {
+                    "name": "Basic Rhythm Striking Steps",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Low",
+                    "description": "Practice simple strikes in sync with a steady rhythm.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Step-and-Strike Combos",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Low",
+                    "description": "Integrate basic stepping patterns with simple strikes.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Shuffle Step into Jab Cross",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "Low",
+                    "description": "Use lateral shuffle steps to maintain mobility while striking.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Low-to-High Evasion Transitions",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Drop low to evade and transition into a counterstrike.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Capoeira Ginga into Striking Combos",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Seamlessly transition between evasive movement and counterattacks.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Footwork Sync with Fast Punches",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Moderate",
+                    "description": "Practice rapid footwork while throwing fast-paced punches.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Capoeira Sweep into High Kick",
+                    "duration": "3 sets of 6 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Blend sweeps into airborne kicks for deceptive power.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Spinning Hook Kick Flow",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "High",
+                    "description": "Use continuous motion to deliver multiple spinning hook kicks.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Silat Rolling Takedown to Counter",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "High",
+                    "description": "Roll into an opponent’s legs to sweep them before countering.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Jump-Step Elbow Strike (Muay Thai)",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Leap forward with a skipping step to land a precise elbow strike.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Breakbeat Footwork with Striking Intervals",
+                    "duration": "3 sets of 45 seconds",
+                    "intensity": "High",
+                    "description": "Match striking sequences to shifting beats.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Cartwheel into Back Kick",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "Elite",
+                    "description": "Use a cartwheel motion to reposition before delivering a back kick.",
+                    "difficulty_range": [8, 11]
+                },
+                {
+                    "name": "Capoeira Aerial Flip into Strike",
+                    "duration": "3 sets of 5 reps",
+                    "intensity": "Elite",
+                    "description": "Flip over an opponent’s position before counterattacking mid-air.",
+                    "difficulty_range": [8, 12]
+                },
+                {
+                    "name": "Wushu Spinning Strike Sequences",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "Elite",
+                    "description": "Blend multiple spinning attacks into a continuous rhythm.",
+                    "difficulty_range": [8, 12]
+                },
+                {
+                    "name": "Aerial Butterfly Kick into Follow-Up",
+                    "duration": "3 sets of 5 reps",
+                    "intensity": "Extreme",
+                    "description": "Perform a full butterfly kick before landing a follow-up strike.",
+                    "difficulty_range": [9, 13]
+                },
+                {
+                    "name": "Breakbeat Strike Chains",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "Moderate",
+                    "description": "String together rapid attacks in sync with a breakbeat rhythm.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Capoeira Flip-to-Kick Transitions",
+                    "duration": "3 sets of 6 reps per side",
+                    "intensity": "High",
+                    "description": "Transition from an aerial flip directly into a striking kick.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Low-to-High Spin Attacks",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Start with low evasive spins and explode into high strikes.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Rolling Recovery to Counter Strike",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Recover from a fall or roll and immediately strike from an unexpected angle.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "B-boy Windmill to Strike Transitions",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "High",
+                    "description": "Using windmill motion to launch into rapid counterstrikes.",
+                    "difficulty_range": [6, 9]
+                }
+            ]
+        }
+    ]
+}

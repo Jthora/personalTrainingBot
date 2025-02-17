@@ -1,0 +1,848 @@
+{
+    "name": "Strength & Endurance Mastery",
+    "description": "Raw power & longevity for combat, developing elite-level endurance, explosiveness, and resilience.",
+    "workout_groups": [
+        {
+            "name": "Bodyweight Strength Progression",
+            "description": "Progressive bodyweight training to develop maximal strength, stability, and muscular endurance.",
+            "workouts": [
+                {
+                    "name": "Pushups++",
+                    "duration": "5 sets of 20 reps",
+                    "intensity": "Moderate",
+                    "description": "Advanced pushup variations designed for full-body engagement and endurance.",
+                    "difficulty_range": [3, 8]
+                },
+                {
+                    "name": "Diamond Pushups",
+                    "duration": "4 sets of 15 reps",
+                    "intensity": "Moderate",
+                    "description": "Targets the triceps and inner chest while improving arm stability.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Slow Negative Pushups",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Lower the body slowly for 5 seconds per rep to increase time under tension.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Pseudo Planche Pushups",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Pushups with hands placed further back to engage shoulders and core.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Clap Pushups",
+                    "duration": "4 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Explosive pushups designed to develop fast-twitch muscle fibers and upper body power.",
+                    "difficulty_range": [6, 10]
+                },
+                {
+                    "name": "Archer Pushups",
+                    "duration": "4 sets of 10 reps per arm",
+                    "intensity": "High",
+                    "description": "One-arm dominant pushups to build unilateral upper body strength and control.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Wall-Assisted Planche Holds",
+                    "duration": "3 sets of 10-15 sec holds",
+                    "intensity": "Moderate",
+                    "description": "Isometric planche training using a wall for support.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Squats++",
+                    "duration": "4 sets of 20 reps",
+                    "intensity": "Moderate",
+                    "description": "Advanced bodyweight squats with variations to target full leg endurance and strength.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Wall Sit Holds",
+                    "duration": "3 sets of 30-45 seconds",
+                    "intensity": "Moderate",
+                    "description": "Hold a squat position against the wall to build endurance and leg resilience.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Jump Squats",
+                    "duration": "4 sets of 15 reps",
+                    "intensity": "High",
+                    "description": "Explosive squat variations to develop lower body power for flips and high kicks.",
+                    "difficulty_range": [6, 10]
+                },
+                {
+                    "name": "Pistol Squats",
+                    "duration": "3 sets of 8 reps per leg",
+                    "intensity": "Elite",
+                    "description": "Single-leg squat focusing on balance, coordination, and unilateral leg strength.",
+                    "difficulty_range": [8, 12]
+                },
+                {
+                    "name": "Bulgarian Split Squats",
+                    "duration": "3 sets of 10 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "A unilateral leg exercise that strengthens stabilizers and enhances balance.",
+                    "difficulty_range": [5, 9]
+                },
+                {
+                    "name": "Horse Stance Squats",
+                    "duration": "3 sets of 60-second holds",
+                    "intensity": "High",
+                    "description": "Martial arts squat variation that builds endurance, stability, and leg strength.",
+                    "difficulty_range": [6, 10]
+                },
+                {
+                    "name": "Assisted Pistol Squats",
+                    "duration": "3 sets of 10 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Perform pistol squats with light support to develop single-leg strength.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Weighted Squats",
+                    "duration": "4 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Perform squats with kettlebell or hand weights to increase resistance and power.",
+                    "difficulty_range": [7, 11]
+                },
+                {
+                    "name": "Hollow Body Situps",
+                    "duration": "4 sets of 15 reps",
+                    "intensity": "Moderate",
+                    "description": "Core compression exercise essential for flips and explosive movements.",
+                    "difficulty_range": [5, 9]
+                },
+                {
+                    "name": "Hanging Leg Raises",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Using a pull-up bar to develop core strength essential for martial arts kicks.",
+                    "difficulty_range": [7, 11]
+                },
+                {
+                    "name": "Russian Twists",
+                    "duration": "3 sets of 15 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Rotational core exercise with hand weights to develop oblique strength for striking.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "V-Ups",
+                    "duration": "4 sets of 15 reps",
+                    "intensity": "High",
+                    "description": "Explosive ab workout that strengthens the entire core for high-energy movements.",
+                    "difficulty_range": [6, 10]
+                },
+                {
+                    "name": "Ab Roller Progressions",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Elite",
+                    "description": "Deep core engagement using the hand roller wheel for maximum abdominal strength.",
+                    "difficulty_range": [8, 12]
+                },
+                {
+                    "name": "Plank Walkouts",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "Moderate",
+                    "description": "Walk your hands forward from a plank position to develop core and shoulder endurance.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Superman Hold",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "Moderate",
+                    "description": "Isometric hold to build lower back and core endurance.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Lying Leg Flutter Kicks",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Alternating leg raises to develop lower core endurance.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Plank to Side Plank Transitions",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Dynamic core exercise that improves stability and strength for combat movements.",
+                    "difficulty_range": [5, 7]
+                }
+            ]
+        },
+        {
+            "name": "Explosive Power Development",
+            "description": "Building raw explosive power through high-speed, high-intensity plyometric and kinetic load training.",
+            "workouts": [
+                {
+                    "name": "Treadmill Sprint Drills (8.7 MPH)",
+                    "duration": "8 rounds of 20s sprint, 40s rest",
+                    "intensity": "High",
+                    "description": "Max-speed bursts to simulate combat sprinting and footwork agility.",
+                    "difficulty_range": [7, 11]
+                },
+                {
+                    "name": "Sprint to Plyometric Pushup Transitions",
+                    "duration": "4 sets of 6 reps",
+                    "intensity": "High",
+                    "description": "Sprint, drop into explosive pushups, and repeat to enhance reaction time.",
+                    "difficulty_range": [7, 11]
+                },
+                {
+                    "name": "Broad Jumps",
+                    "duration": "4 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Jumping for distance to improve lower body explosive power.",
+                    "difficulty_range": [7, 11]
+                },
+                {
+                    "name": "Depth Jumps",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Jumping off the climbing bar to build reactive explosiveness.",
+                    "difficulty_range": [7, 11]
+                },
+                {
+                    "name": "Weighted Jumps",
+                    "duration": "4 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Jumping with ankle weights to increase vertical power and leg speed.",
+                    "difficulty_range": [8, 12]
+                },
+                {
+                    "name": "Jump Rope Speed Drills",
+                    "duration": "3 sets of 45 seconds",
+                    "intensity": "Moderate",
+                    "description": "High-speed jump rope drills to develop coordination and foot speed.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Single-Leg Hops",
+                    "duration": "3 sets of 12 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Develops unilateral leg explosiveness and balance.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Explosive Knee Tucks",
+                    "duration": "4 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Jump and tuck knees toward the chest to enhance vertical jump power.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Lateral Bounds",
+                    "duration": "4 sets of 12 reps per side",
+                    "intensity": "High",
+                    "description": "Side-to-side explosive jumps to improve lateral power and agility.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Wall-Assisted Explosive Push-Offs",
+                    "duration": "4 sets of 8 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Push off a wall explosively with one arm to develop upper-body reactive strength.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Explosive Box Step-Ups",
+                    "duration": "3 sets of 10 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Step up explosively onto a high surface using one leg.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Drop Squats",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Quickly drop into a squat position to improve lower body reactivity.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Explosive Pushup Variations",
+                    "duration": "4 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Perform pushups with maximum speed to build explosive upper-body strength.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Lunge Jumps",
+                    "duration": "3 sets of 12 reps per leg",
+                    "intensity": "High",
+                    "description": "Jump explosively from a lunge position to switch legs mid-air.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Sprint & Deceleration Drills",
+                    "duration": "4 sets of 30 meters",
+                    "intensity": "High",
+                    "description": "Sprint to a stop as quickly as possible to train explosive starts and controlled stops.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Explosive Wall Kickoffs",
+                    "duration": "3 sets of 8 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Jump off the wall and land explosively to improve leg drive and reaction speed.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Superman Jumps",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Leap forward with arms extended to improve horizontal explosiveness.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "Explosive Tuck Planks",
+                    "duration": "4 sets of 12 reps",
+                    "intensity": "Moderate",
+                    "description": "Jump the knees toward the chest from a plank position for core explosiveness.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Reaction Time Sprint Drills",
+                    "duration": "3 sets of 5 reps",
+                    "intensity": "High",
+                    "description": "Sprint at full speed from an unpredictable start cue to train reaction explosiveness.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "Handstand Push-Offs",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "High",
+                    "description": "Push off explosively from a handstand position against a wall to build reactive upper body strength.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "Burpee Tuck Jumps",
+                    "duration": "4 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Combine burpees with an explosive tuck jump to build endurance and power.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Depth Drop Rebounds",
+                    "duration": "4 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Drop from a height and rebound into a jump to train rapid force absorption and explosive response.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Explosive Side Plank Switches",
+                    "duration": "3 sets of 10 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Switch between side planks explosively to train lateral core and shoulder stability.",
+                    "difficulty_range": [5, 7]
+                }
+            ]
+        },
+        {
+            "name": "Functional Strength Training",
+            "description": "Weighted movement training with available gear to build full-body strength, combat readiness, and explosive power.",
+            "workouts": [
+                {
+                    "name": "Kettlebell Swings",
+                    "duration": "4 sets of 15 reps",
+                    "intensity": "High",
+                    "description": "Use an explosive hip drive to swing the 20 lb kettlebell overhead, engaging the core, glutes, and shoulders.",
+                    "difficulty_range": [7, 11]
+                },
+                {
+                    "name": "Turkish Get-Ups",
+                    "duration": "3 sets of 6 reps per side",
+                    "intensity": "High",
+                    "description": "A complex movement that develops full-body coordination, balance, and strength under load.",
+                    "difficulty_range": [7, 12]
+                },
+                {
+                    "name": "Farmer's Walk",
+                    "duration": "3 sets of 30 meters",
+                    "intensity": "Moderate",
+                    "description": "Grip and core-strengthening exercise using hand weights, wrist weights, and ankle weights.",
+                    "difficulty_range": [6, 10]
+                },
+                {
+                    "name": "Punch Bag Loaded Strikes",
+                    "duration": "4 sets of 3-minute rounds",
+                    "intensity": "High",
+                    "description": "Strike the heavy bag while wearing ankle and wrist weights to condition explosive power and endurance.",
+                    "difficulty_range": [7, 11]
+                },
+                {
+                    "name": "Dynamic Weighted Step-Ups",
+                    "duration": "3 sets of 12 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Perform step-ups using the climbing bar or platform for height, increasing leg endurance and stability.",
+                    "difficulty_range": [6, 10]
+                },
+                {
+                    "name": "Overhead Kettlebell Walks",
+                    "duration": "3 sets of 20 meters",
+                    "intensity": "Moderate",
+                    "description": "Carry a kettlebell overhead while walking to improve core stability and shoulder endurance.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Reverse Lunges with Weights",
+                    "duration": "3 sets of 10 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Step back into a lunge while holding weights to strengthen quads, hamstrings, and core.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Suitcase Carries",
+                    "duration": "3 sets of 30 meters per side",
+                    "intensity": "Moderate",
+                    "description": "Carry a kettlebell or hand weight on one side to strengthen core stabilization.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Dead Hangs with Wrist Weights",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Hanging from a pull-up bar to develop grip strength and endurance.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Weighted Glute Bridges",
+                    "duration": "4 sets of 12 reps",
+                    "intensity": "Moderate",
+                    "description": "Hip thrusts with kettlebell or hand weights to develop explosive lower body power.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Push Press (With Kettlebell or Hand Weights)",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Press weights overhead using an explosive dip-drive from the legs.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Weighted Wall Sit",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Hold a squat position against a wall while holding weights for added resistance.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Single-Leg Deadlifts",
+                    "duration": "3 sets of 10 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Using kettlebell or hand weights, hinge at the hips and lower into a deadlift on one leg.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Weighted Box Squats",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Moderate",
+                    "description": "Squat onto a platform while holding a weight to focus on controlled movement and power.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Bear Crawl with Weighted Ankles",
+                    "duration": "3 sets of 10 meters",
+                    "intensity": "High",
+                    "description": "Crawl forward while wearing ankle weights to strengthen core, shoulders, and mobility.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "Weighted Sled Pull (Simulated with Resistance Bands)",
+                    "duration": "3 sets of 20 meters",
+                    "intensity": "High",
+                    "description": "Pull a resistance band behind you to simulate sled dragging for leg drive and core strength.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Goblet Squats with Kettlebell",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Moderate",
+                    "description": "Hold a kettlebell at chest level and squat to improve mobility and leg endurance.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Weighted Side Lunges",
+                    "duration": "3 sets of 10 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Step to the side into a deep lunge while holding weights to strengthen lateral movement.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Hanging Knee Raises with Ankle Weights",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Engage the core while raising knees toward the chest with added resistance.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "Weighted Bear Hug Walks",
+                    "duration": "3 sets of 30 meters",
+                    "intensity": "Moderate",
+                    "description": "Carry a kettlebell or heavy object hugged to the chest while walking for core and endurance.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Step-Through Lunges",
+                    "duration": "3 sets of 10 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Step into a forward lunge, then transition directly into a backward lunge while holding weights.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Hanging Shoulder Shrugs",
+                    "duration": "3 sets of 15 reps",
+                    "intensity": "Moderate",
+                    "description": "Hang from the pull-up bar and shrug shoulders upwards to strengthen traps and grip endurance.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Weighted Shoulder Rotations",
+                    "duration": "3 sets of 15 reps",
+                    "intensity": "Moderate",
+                    "description": "Hold a light weight and rotate shoulders to strengthen stabilizers.",
+                    "difficulty_range": [3, 5]
+                }
+            ]
+        },
+        {
+            "name": "Grip & Hanging Strength",
+            "description": "Advanced grip, forearm, and upper body strength training using the climbing bar and pull-up framework.",
+            "workouts": [
+                {
+                    "name": "Archer Pull-Ups",
+                    "duration": "4 sets of 8 reps per arm",
+                    "intensity": "High",
+                    "description": "Perform asymmetrical pull-ups to strengthen unilateral pulling power and grip endurance.",
+                    "difficulty_range": [7, 12]
+                },
+                {
+                    "name": "L-Sit Pull-Ups",
+                    "duration": "4 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Hold an L-Sit position while performing pull-ups to engage the core and develop functional upper body strength.",
+                    "difficulty_range": [8, 12]
+                },
+                {
+                    "name": "Muscle-Up Progression",
+                    "duration": "3 sets of 5 reps",
+                    "intensity": "Elite",
+                    "description": "Explosive pull-up training to transition over the pull-up bar, mimicking advanced climbing maneuvers.",
+                    "difficulty_range": [9, 13]
+                },
+                {
+                    "name": "Dead Hangs for Grip Endurance",
+                    "duration": "3 sets of 60-second holds",
+                    "intensity": "Moderate",
+                    "description": "Hanging from the pull-up bar to develop grip endurance and forearm strength.",
+                    "difficulty_range": [6, 10]
+                },
+                {
+                    "name": "Ledge Pullovers",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "High",
+                    "description": "Using the custom pull-up ridge, pull yourself up and over to simulate climbing over high obstacles.",
+                    "difficulty_range": [8, 12]
+                },
+                {
+                    "name": "Towel Pull-Ups",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "High",
+                    "description": "Grip a towel draped over a pull-up bar to increase grip endurance and forearm strength.",
+                    "difficulty_range": [7, 11]
+                },
+                {
+                    "name": "Hanging Knee Raises",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Moderate",
+                    "description": "Engage the core while maintaining a grip hold to develop midsection strength and grip endurance.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Monkey Bar Swings",
+                    "duration": "3 sets of 10 meters",
+                    "intensity": "Moderate",
+                    "description": "Swing from one bar to another to improve grip endurance and arm coordination.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "One-Arm Hangs",
+                    "duration": "3 sets of 20 seconds per arm",
+                    "intensity": "High",
+                    "description": "Hang from one arm to develop unilateral grip endurance and shoulder stability.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Fingertip Hangs",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "High",
+                    "description": "Hang from the bar using only fingertips to enhance grip strength and finger endurance.",
+                    "difficulty_range": [7, 11]
+                },
+                {
+                    "name": "Negative Pull-Ups",
+                    "duration": "3 sets of 5 reps",
+                    "intensity": "Moderate",
+                    "description": "Slowly lower from the top of a pull-up to build eccentric strength and grip control.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Rope Climb Progression",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "High",
+                    "description": "Use a hanging rope or towel to simulate climbing and develop upper body pulling power.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Hanging Shoulder Shrugs",
+                    "duration": "3 sets of 15 reps",
+                    "intensity": "Moderate",
+                    "description": "Engage the traps by shrugging the shoulders while hanging from a bar.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Dead Hang to Active Hang Transitions",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Alternate between a dead hang and an active hang to build shoulder and grip control.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Hanging Wrist Rotations",
+                    "duration": "3 sets of 12 reps per direction",
+                    "intensity": "Moderate",
+                    "description": "Rotate the wrists while hanging from a bar to develop rotational grip strength.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Ledge Hangs",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "High",
+                    "description": "Hang from a ledge with fingers to simulate climbing grip endurance.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Hanging Toe Touches",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "While hanging from a bar, raise toes to touch the bar for core and grip synergy.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Explosive Pull-Up Start",
+                    "duration": "3 sets of 5 reps",
+                    "intensity": "High",
+                    "description": "Start from a dead hang and explode into a pull-up without swinging.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Forearm Hanging Squeeze",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Hang from the bar while squeezing the forearm muscles for additional grip conditioning.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Towel Grip Dead Hangs",
+                    "duration": "3 sets of 40 seconds",
+                    "intensity": "High",
+                    "description": "Hang from a towel draped over the pull-up bar to increase grip difficulty.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Explosive Hanging Knee Raises",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Explosively raise knees toward the chest while hanging to develop explosive grip endurance.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Hanging Bicycle Kicks",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "Moderate",
+                    "description": "While hanging from a bar, pedal legs in the air to engage core and grip endurance.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Hanging Clapping Pull-Ups",
+                    "duration": "3 sets of 5 reps",
+                    "intensity": "Elite",
+                    "description": "Perform a pull-up and release hands mid-air to clap before catching the bar again.",
+                    "difficulty_range": [8, 12]
+                }
+            ]
+        },
+        {
+            "name": "Isometric & Stability Training",
+            "description": "Core-focused static holds and balance drills to improve resilience, control, and strength in combat scenarios.",
+            "workouts": [
+                {
+                    "name": "Wall Handstands",
+                    "duration": "3 sets of 30-second holds",
+                    "intensity": "High",
+                    "description": "Handstand training against a wall to develop shoulder endurance, wrist stability, and core strength.",
+                    "difficulty_range": [7, 11]
+                },
+                {
+                    "name": "Plank Variations",
+                    "duration": "4 sets of 45-second holds",
+                    "intensity": "Moderate",
+                    "description": "Front, side, and weighted plank variations to build full-body isometric endurance.",
+                    "difficulty_range": [6, 10]
+                },
+                {
+                    "name": "Horse Stance Holds",
+                    "duration": "3 sets of 60-second holds",
+                    "intensity": "High",
+                    "description": "Martial arts stance hold to strengthen the legs, core, and endurance for prolonged combat movement.",
+                    "difficulty_range": [7, 11]
+                },
+                {
+                    "name": "Balancing on Hand Contacts",
+                    "duration": "3 sets of 30-second holds per hand or foot",
+                    "intensity": "Moderate",
+                    "description": "Training balance and reflex stability using the hand contacts on the floor mat.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Wall Sit",
+                    "duration": "3 sets of 45-second holds",
+                    "intensity": "Moderate",
+                    "description": "Hold a squat position against a wall to build leg endurance and lower body stability.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Single-Leg Balance Hold",
+                    "duration": "3 sets of 30-second holds per leg",
+                    "intensity": "Moderate",
+                    "description": "Stand on one leg and maintain balance to improve stability and ankle strength.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Isometric Pushup Hold",
+                    "duration": "3 sets of 30-second holds",
+                    "intensity": "Moderate",
+                    "description": "Hold a pushup position at the midpoint to strengthen the arms, core, and chest.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Glute Bridge Hold",
+                    "duration": "3 sets of 30-second holds",
+                    "intensity": "Moderate",
+                    "description": "Hold a glute bridge position to improve core stability and hip activation.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Dead Hang Hold",
+                    "duration": "3 sets of 30-second holds",
+                    "intensity": "Moderate",
+                    "description": "Hang from a pull-up bar to improve grip endurance and shoulder stability.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Hollow Body Hold",
+                    "duration": "3 sets of 20-second holds",
+                    "intensity": "Moderate",
+                    "description": "Lie on your back with legs and arms lifted to engage the core and develop body control.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Squat Hold",
+                    "duration": "3 sets of 45-second holds",
+                    "intensity": "Moderate",
+                    "description": "Hold the bottom of a squat position to develop leg endurance and hip mobility.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Lunge Hold",
+                    "duration": "3 sets of 30-second holds per leg",
+                    "intensity": "Moderate",
+                    "description": "Hold a lunge position to develop single-leg strength and knee stability.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Side Plank Hold",
+                    "duration": "3 sets of 30-second holds per side",
+                    "intensity": "Moderate",
+                    "description": "Hold a side plank position to strengthen the obliques and lateral stability.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Superman Hold",
+                    "duration": "3 sets of 20-second holds",
+                    "intensity": "Moderate",
+                    "description": "Lie on your stomach and lift arms and legs off the ground to develop lower back strength.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Crouching Balance Hold",
+                    "duration": "3 sets of 30-second holds",
+                    "intensity": "Moderate",
+                    "description": "Balance in a low crouch position to improve mobility and core stability.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Isometric Shoulder Press Hold",
+                    "duration": "3 sets of 20-second holds",
+                    "intensity": "Moderate",
+                    "description": "Hold a light weight overhead to develop static shoulder endurance.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Wrist Flexion Hold",
+                    "duration": "3 sets of 20-second holds",
+                    "intensity": "Low",
+                    "description": "Hold a wrist flexion position against resistance to develop forearm endurance.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Elevated Calf Raise Hold",
+                    "duration": "3 sets of 20-second holds",
+                    "intensity": "Moderate",
+                    "description": "Hold a raised position on the toes to develop calf strength and ankle stability.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Bent-Arm Hang",
+                    "duration": "3 sets of 20-second holds",
+                    "intensity": "Moderate",
+                    "description": "Hold the top of a pull-up position to strengthen biceps and grip endurance.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Isometric Bicep Curl Hold",
+                    "duration": "3 sets of 20-second holds",
+                    "intensity": "Moderate",
+                    "description": "Hold a weight in a halfway bicep curl position to develop endurance and control.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Front Lever Tuck Hold",
+                    "duration": "3 sets of 10-second holds",
+                    "intensity": "High",
+                    "description": "Hold a tucked front lever position to build core and pulling strength.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Hanging L-Sit Hold",
+                    "duration": "3 sets of 15-second holds",
+                    "intensity": "High",
+                    "description": "Hang from a pull-up bar while holding legs in an L-position to develop core endurance.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Crow Pose Hold",
+                    "duration": "3 sets of 20-second holds",
+                    "intensity": "Moderate",
+                    "description": "Balance in a crow pose to improve arm strength and core stability.",
+                    "difficulty_range": [4, 6]
+                }
+            ]
+        }
+    ]
+}

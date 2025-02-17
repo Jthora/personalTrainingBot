@@ -1,0 +1,568 @@
+{
+    "name": "Tactical Conditioning & Situational Awareness",
+    "description": "Developing advanced combat movement, reaction speed, and adaptive awareness for real-world combat scenarios.",
+    "workout_groups": [
+        {
+            "name": "Combat Footwork & Positional Mastery (Angles, Control, Evasion)",
+            "description": "Training rapid footwork, strategic positioning, and controlled evasions to outmaneuver opponents.",
+            "workouts": [
+                {
+                    "name": "JKD Triangle Step Drill",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Move in a triangular pattern, switching between forward lunges and rapid directional pivots.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Muay Thai Cut-Step Angles",
+                    "duration": "3 sets of 20 reps",
+                    "intensity": "High",
+                    "description": "Use lateral cut-steps to reposition at 45-degree angles while keeping offensive striking options open.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Baguazhang Circle Walking Evasion",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "High",
+                    "description": "Walk in a circular pattern while maintaining fluid combat stance and evading imaginary strikes.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Silat Off-Line Movement Drill",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "Moderate",
+                    "description": "Move off-center from an imaginary attack and flow into counter-movement positioning.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Box Step Evasion (Beginner)",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "Low",
+                    "description": "Step in a four-point box pattern to build foundational movement control.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Taekwondo Hop-Step Repositioning",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Perform quick hop-steps to maintain optimal kicking range while staying evasive.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Silat Side-Slide Counter Drills",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Moderate",
+                    "description": "Slide off-line and immediately counterattack with a strike or takedown entry.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Wing Chun Pressure Step Control",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Advance while maintaining structure, closing the gap and cutting angles to trap the opponent.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Parkour Tactical Vault Positioning",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Vault obstacles fluidly while maintaining offensive and defensive readiness.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Filipino Kali Angle-Stepping Drill",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Step at a 45-degree angle, switching between attack and defense positioning seamlessly.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Multi-Directional Speed Shuffles",
+                    "duration": "3 sets of 15 seconds",
+                    "intensity": "High",
+                    "description": "Rapid side-to-side, backward, and forward movement drills to improve foot speed and reaction time.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "360-Degree Tactical Spin Positioning",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "Elite",
+                    "description": "Train spinning repositioning moves, exiting engagements safely while staying offensive.",
+                    "difficulty_range": [8, 11]
+                },
+                {
+                    "name": "Aikido Redirection Footwork",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Elite",
+                    "description": "Flow seamlessly between redirection angles to manipulate an opponent’s balance.",
+                    "difficulty_range": [8, 11]
+                },
+                {
+                    "name": "Basic Step & Slide Evasion",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "Low",
+                    "description": "Practice stepping forward, backward, and side-to-side with controlled evasion movement.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Basic Pivot & Turn Drills",
+                    "duration": "3 sets of 15 reps",
+                    "intensity": "Low",
+                    "description": "Pivot on the lead foot while turning your body to maintain balance and defensive positioning.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Step-Back Defensive Positioning",
+                    "duration": "3 sets of 15 reps",
+                    "intensity": "Low",
+                    "description": "Step backward and immediately transition into a stable stance for counterattacks.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Beginner Side Shuffle Evasion",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Low",
+                    "description": "Move side to side while maintaining defensive positioning to improve lateral evasion skills.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Slow Motion Direction Change",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Low",
+                    "description": "Practice shifting directions in slow motion to develop controlled footwork and awareness.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Low Stance Walking (Balance & Stability)",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "Low",
+                    "description": "Walk slowly in a low stance, maintaining balance and leg endurance.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Light Bounce Step Evasion",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Low",
+                    "description": "Light bouncing movements to improve agility while staying loose and ready to react.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Circular Step Drill (Beginner)",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "Low",
+                    "description": "Move in a circular motion around an imaginary opponent, adjusting foot placement.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Basic Triangle Step Drill",
+                    "duration": "3 sets of 15 reps",
+                    "intensity": "Moderate",
+                    "description": "Step in a triangular pattern to train movement control and quick positioning.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Beginner Lateral Hop Step",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Low",
+                    "description": "Hop lightly side to side, reinforcing lateral movement control.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Reactive Step Training (Partner Cue)",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Moderate",
+                    "description": "React to a partner’s random movements, stepping and adjusting your stance accordingly.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Small Obstacle Side-Stepping",
+                    "duration": "3 sets of 15 reps",
+                    "intensity": "Moderate",
+                    "description": "Step over small obstacles to improve foot placement precision and reaction speed.",
+                    "difficulty_range": [4, 6]
+                }
+            ]
+        },
+        {
+            "name": "Reaction Time & Reflex Sharpness (Instant Movement Adaptability)",
+            "description": "Developing split-second reaction speed and movement adaptability.",
+            "workouts": [
+                {
+                    "name": "Flash Reflex Dodge Drill",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "React instantly to random flash cues (light, sound, or hand movement) and evade in the opposite direction.",
+                    "difficulty_range": [6, 10]
+                },
+                {
+                    "name": "Shadow Counter Evasion",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Mimic a shadow opponent’s movement and execute counter-maneuvers at lightning speed.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Feint & Counter Challenge",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Fake an initial movement, instantly switch to a different counter-attack or evasion.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Speed Wall Tap Reflex Test",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Tap a designated spot on a wall as fast as possible in response to unpredictable cues.",
+                    "difficulty_range": [5, 8]
+                }
+            ]
+        },
+        {
+            "name": "Multi-Target Combat Adaptation (Handling Multiple Attackers)",
+            "description": "Training to handle engagements with multiple threats at once.",
+            "workouts": [
+                {
+                    "name": "Beginner Multi-Angle Awareness",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Low",
+                    "description": "Turn at different angles while keeping an imaginary opponent in view at all times.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Basic Target Tracking Drill",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "Low",
+                    "description": "Follow a partner’s hand movements with your eyes while maintaining a defensive stance.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Step-Back & Recenter Drill",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Low",
+                    "description": "Move backward to create space, then reposition to face an imaginary attacker.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Beginner 180-Degree Reaction Step",
+                    "duration": "3 sets of 15 reps",
+                    "intensity": "Low",
+                    "description": "Pivot and adjust stance quickly when given a cue (verbal or visual).",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Basic Multiple Threat Awareness",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "Moderate",
+                    "description": "Move between two imaginary opponents, practicing facing both without turning your back.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Dynamic Peripheral Vision Drill",
+                    "duration": "3 sets of 25 seconds",
+                    "intensity": "Moderate",
+                    "description": "Move laterally while tracking multiple targets in your field of vision.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Directional Attack Simulation",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Turn to face a target upon command and execute a block, strike, or evasion.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Live Partner Target Switching",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "High",
+                    "description": "Two partners call out your name or move unexpectedly; react accordingly.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Advanced Close-Range Multi-Opponent Positioning",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Quickly reposition between two or more simulated attackers using controlled footwork.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Unpredictable Target Adaptation",
+                    "duration": "3 sets of 15 seconds",
+                    "intensity": "High",
+                    "description": "React to sudden and random threat indicators while keeping mobility active.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Surrounded Defense Drill",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Elite",
+                    "description": "Move strategically to minimize exposure when surrounded by multiple threats.",
+                    "difficulty_range": [9, 11]
+                },
+                {
+                    "name": "Multi-Opponent Pressure Sparring",
+                    "duration": "3 rounds of 60 seconds",
+                    "intensity": "Elite",
+                    "description": "Defend and reposition constantly while facing two or more opponents in rapid sparring exchanges.",
+                    "difficulty_range": [10, 12]
+                },
+                {
+                    "name": "360-Degree Evasion Drill",
+                    "duration": "3 sets of 15 seconds",
+                    "intensity": "High",
+                    "description": "Rapidly switch defensive angles while tracking multiple targets in a full-circle engagement scenario.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Peripheral Awareness Footwork",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "Moderate",
+                    "description": "Focus on maintaining peripheral vision while executing unpredictable movement patterns.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Combat Entry & Exit Timing",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Practice closing the gap on an opponent and instantly repositioning before the next threat arrives.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Randomized Target Switching Drill",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "React to an unpredictable target callout and instantly shift attack or defense to a different position.",
+                    "difficulty_range": [7, 10]
+                }
+            ]
+        },
+        {
+            "name": "Improvised Combat Drills (Staffs, Prop Guns, Random Objects as Weapons)",
+            "description": "Building adaptability in combat using unconventional and makeshift weapons.",
+            "workouts": [
+                {
+                    "name": "Basic Improvised Weapon Handling",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "Low",
+                    "description": "Hold a random object (stick, bottle, book) and practice switching grip positions safely.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Chair Shield & Strike Drill",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "Low",
+                    "description": "Use a chair as a defensive tool and simulate counterstrikes from behind cover.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Everyday Object Palm Stick Defense",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Moderate",
+                    "description": "Use a small rigid object (pen, flashlight) as a palm stick for blocking and striking.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Belt Whip Distraction Strikes",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Use a belt, scarf, or flexible object to distract an opponent before following up with a counter.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Prop Gun Evasion & Disarm",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Deflect a simulated gunpoint threat and execute a disarming maneuver.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Table Edge Redirection Drill",
+                    "duration": "3 sets of 15 seconds",
+                    "intensity": "Moderate",
+                    "description": "Use a table or ledge as leverage for countering and breaking an opponent’s balance.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Improvised Staff Evasion Flow",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Use a broomstick, pipe, or training staff to deflect attacks while keeping mobility active.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Blunt Object Shock-Absorption Training",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "High",
+                    "description": "Condition the forearms and grip against controlled impacts from a padded object.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Adaptive Grip Switching Under Pressure",
+                    "duration": "3 sets of 12 seconds",
+                    "intensity": "High",
+                    "description": "Quickly transition grip positions on a makeshift weapon while reacting to an incoming threat.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Random Object Counterattacks",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Use a bottle, pan, or similar object to block and counter against simulated attacks.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Unorthodox Weapon Strikes (Umbrella, Cane, Bag)",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "Elite",
+                    "description": "Simulate practical combat strikes using everyday objects as unconventional weapons.",
+                    "difficulty_range": [8, 11]
+                },
+                {
+                    "name": "Extreme Multi-Weapon Transitioning",
+                    "duration": "3 rounds of 30 seconds",
+                    "intensity": "Elite",
+                    "description": "Switch between at least three different improvised weapons while maintaining striking efficiency.",
+                    "difficulty_range": [9, 12]
+                },
+                {
+                    "name": "Prop Gun Draw & Redirect",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Moderate",
+                    "description": "Practice unholstering a prop gun and transitioning into a defensive maneuver.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Staff Control & Flow",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Use a 5” or 4” staff to execute continuous offensive and defensive sequences.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Blunt Object Disarm Techniques",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "High",
+                    "description": "Use Silat or Wing Chun redirections to disarm and control an incoming attack using random objects.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Adaptive Combat Grip Switching",
+                    "duration": "3 sets of 15 seconds",
+                    "intensity": "Moderate",
+                    "description": "Switch between different grip styles when holding a random object for improvised striking.",
+                    "difficulty_range": [5, 8]
+                }
+            ]
+        },
+        {
+            "name": "Combat Spatial Intelligence (Maximizing Environment for Defense/Attack)",
+            "description": "Using awareness of surroundings for tactical advantages in combat.",
+            "workouts": [
+                {
+                    "name": "Tactical Cover-to-Cover Movement",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "High",
+                    "description": "Move between cover positions using agile footwork while staying unseen.",
+                    "difficulty_range": [6, 10]
+                },
+                {
+                    "name": "Ambush Spot Recognition",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Moderate",
+                    "description": "Quickly identify vulnerable areas where an ambush might be set up.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Obstacle Vault & Redirection",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Use ledges, bars, and walls to create evasive movement or counter positions.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Low-Visibility Combat Navigation",
+                    "duration": "3 sets of 15 seconds",
+                    "intensity": "High",
+                    "description": "Move and engage in a simulated environment with minimal visibility (low light, blindfolded, or strobing effects).",
+                    "difficulty_range": [7, 11]
+                },
+                {
+                    "name": "Basic Cover Awareness",
+                    "duration": "3 sets of 15 seconds",
+                    "intensity": "Low",
+                    "description": "Practice identifying the closest cover points in any given environment.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Evasive Wall Sidestep Drill",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Low",
+                    "description": "Step laterally along a wall while staying hidden from an imaginary attacker.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Environmental Awareness Walkthrough",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "Low",
+                    "description": "Scan a room while walking through it, memorizing entry/exit points and escape options.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Tactical Cover-to-Cover Movement",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "High",
+                    "description": "Move between cover positions using agile footwork while staying unseen.",
+                    "difficulty_range": [6, 10]
+                },
+                {
+                    "name": "Ambush Spot Recognition",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Moderate",
+                    "description": "Quickly identify vulnerable areas where an ambush might be set up.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Tight-Space Combat Maneuvering",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Practice evading attacks and repositioning while in confined spaces like hallways or doorframes.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Improvised High Ground Advantage",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Use chairs, stairs, or small ledges to create elevated positioning for an attack or escape.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Obstacle Vault & Redirection",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Use ledges, bars, and walls to create evasive movement or counter positions.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Low-Visibility Combat Navigation",
+                    "duration": "3 sets of 15 seconds",
+                    "intensity": "High",
+                    "description": "Move and engage in a simulated environment with minimal visibility (low light, blindfolded, or strobing effects).",
+                    "difficulty_range": [7, 11]
+                },
+                {
+                    "name": "Blindfolded Spatial Awareness Sparring",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Elite",
+                    "description": "Engage in light sparring while blindfolded, relying on spatial perception and touch sensitivity.",
+                    "difficulty_range": [8, 11]
+                },
+                {
+                    "name": "Dynamic Environmental Repositioning",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Elite",
+                    "description": "Rapidly transition from one environmental position to another (low, high, behind objects) in under 3 seconds.",
+                    "difficulty_range": [9, 12]
+                }
+            ]
+        }
+    ]
+}

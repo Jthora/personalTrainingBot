@@ -1,0 +1,673 @@
+{
+    "name": "Agility, Mobility & Acrobatics (Kicky Flips & Ninja Movement)",
+    "description": "Training explosive speed, aerial movement, acrobatics, and evasion techniques for elite combat mobility.",
+    "workout_groups": [
+        {
+            "name": "Sprint, Pivot, and Evade Combos",
+            "description": "Developing explosive footwork, rapid directional changes, and combat agility.",
+            "workouts": [
+                {
+                    "name": "Combat Directional Sprints",
+                    "duration": "4 sets of 15-second sprints",
+                    "intensity": "Moderate",
+                    "description": "Short bursts followed by a rapid pivot and dodge to simulate evading attacks.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Jeet Kune Do Footwork Drills",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "JKD’s explosive intercept-and-move technique for lightning-fast reaction dodging.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Shaolin Evasion Steps",
+                    "duration": "4 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Continuous step-and-slide movement to maintain speed while dodging incoming attacks.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Silat Combat Maneuver Sprints",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Sprint into a Silat off-line pivot stance, then redirect instantly.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Wushu Rapid Directional Vaults",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Sprinting into a rapid vault over an obstacle for high-speed transitions.",
+                    "difficulty_range": [6, 9]
+                }
+            ]
+        },
+        {
+            "name": "Speed Shuffle Drills",
+            "description": "Developing lateral speed, reaction time, and evasive agility.",
+            "workouts": [
+                {
+                    "name": "Lateral Shuffle to Drop-Step Evade",
+                    "duration": "4 sets of 20 seconds",
+                    "intensity": "Moderate",
+                    "description": "Move side-to-side rapidly, then drop low to evade an incoming strike.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Muay Thai Cut-Angle Step",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Simulates angle-cut movement used in combat footwork to outmaneuver an opponent.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Capoeira Side Shuffle Switch",
+                    "duration": "4 sets of 12 reps",
+                    "intensity": "Moderate",
+                    "description": "Integrates Capoeira’s Ginga movement into rapid evasions and offensive transitions.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Wushu Step Vault Transitions",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Combining foot vaulting over obstacles with lateral speed shifts.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Explosive Drop-Step Sprint",
+                    "duration": "4 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Drop low, sprint forward instantly, and pivot to evade an opponent’s reach.",
+                    "difficulty_range": [6, 9]
+                }
+            ]
+        },
+        {
+            "name": "Multi-Directional Sprinting & Evasion",
+            "description": "High-speed agility training that integrates rapid footwork changes.",
+            "workouts": [
+                {
+                    "name": "Zig-Zag Sprint and Cut",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "High",
+                    "description": "Sprint in a zig-zag pattern, cutting direction sharply at each turn.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Reaction-Based Sprint Starts",
+                    "duration": "4 sets of 5 reps",
+                    "intensity": "Moderate",
+                    "description": "Sprint only on an external cue, reacting to an unexpected signal.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Sprint, Drop Roll, and Recover",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Sprint forward, drop into a tactical roll, and recover instantly into a sprint.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Reverse Sprint & Pivot Attack",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Sprint backward while maintaining combat stance, then pivot and sprint forward to attack.",
+                    "difficulty_range": [6, 10]
+                }
+            ]
+        },
+        {
+            "name": "Agility & Quickness Ladder Drills",
+            "description": "Footwork precision training using agility ladder patterns to enhance movement speed.",
+            "workouts": [
+                {
+                    "name": "Ladder Quick Step Shuffle",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "Moderate",
+                    "description": "Rapidly shuffle in and out of the agility ladder with controlled movement.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Explosive Crossover Steps",
+                    "duration": "4 sets of 15 seconds",
+                    "intensity": "Moderate",
+                    "description": "High-speed crossover stepwork through the agility ladder.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Two-Step Ladder Sprint",
+                    "duration": "4 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Sprint forward while stepping precisely through each agility ladder box.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Lateral Ladder Hop & Pivot",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Lateral hopping through the ladder with a pivot at each transition point.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Double-Speed Agility Ladder Steps",
+                    "duration": "4 sets of 12 seconds",
+                    "intensity": "High",
+                    "description": "Step through the ladder at double speed while maintaining full control.",
+                    "difficulty_range": [6, 10]
+                }
+            ]
+        },
+        {
+            "name": "Jumping Power & Air Control",
+            "description": "Plyometric exercises, directional jumping, and wall runs for explosive movement and aerial precision.",
+            "workouts": [
+                {
+                    "name": "Wall Runs",
+                    "duration": "3 sets of 5 reps",
+                    "intensity": "High",
+                    "description": "Run up the wall using climbing bars or pull-up bars, aiming for a higher reach each time.",
+                    "difficulty_range": [6, 10]
+                },
+                {
+                    "name": "Directional Hurdle Jumps",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Jump over hurdles at different angles to develop directional agility.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Wushu Airborne Step Vaults",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "High",
+                    "description": "Vault over obstacles with step-and-kick techniques.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Taekwondo Push-Off Hurdle Kick",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Kick off an obstacle, launching into a high spinning kick.",
+                    "difficulty_range": [7, 11]
+                }
+            ]
+        },
+        {
+            "name": "Tumbling & Breakfall Mastery",
+            "description": "Developing controlled falls, rolls, and tactical recoveries to transition smoothly in combat.",
+            "workouts": [
+                {
+                    "name": "Basic Backward Roll",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "Low",
+                    "description": "Practice rolling backward while keeping the neck tucked and minimizing impact.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Basic Forward Roll",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "Low",
+                    "description": "Controlled rolling forward while staying compact and balanced.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Side Shoulder Roll",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "A tactical roll to distribute impact and recover smoothly.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Low Squat Fall Recovery",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "Low",
+                    "description": "Practicing controlled landings from a squat to prevent injury.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Backward Breakfall (Judo Style)",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "Low",
+                    "description": "Absorbing impact safely when falling backward by slapping the mat.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Side Breakfall (Judo / Silat)",
+                    "duration": "3 sets of 10 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Learning to fall to the side safely while reducing impact.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Rolling Breakfall (Aikido, Capoeira)",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "Moderate",
+                    "description": "A smooth rolling fall to distribute energy and continue movement.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Jump, Land, and Roll Drill",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "Moderate",
+                    "description": "Jumping forward and absorbing impact through a controlled roll.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Wushu Drop-Step Recovery",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "Moderate",
+                    "description": "A sudden drop into a controlled landing stance to avoid impact.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Breakfall Recovery (Silat, Capoeira)",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Practice falling and rolling smoothly to reduce impact damage.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Cartwheel & Handstand Variations",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Develop balance and controlled aerial transitions.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Wushu Side Flip Drill",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "High",
+                    "description": "Practice explosive sideways flips with controlled landings.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Silat Dive Roll Recovery",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Rolling over obstacles and transitioning into a defensive stance.",
+                    "difficulty_range": [6, 10]
+                }
+            ]
+        },
+        {
+            "name": "Kicky Flip Progression",
+            "description": "Building up aerial kicking techniques into fully combat-viable flipping attacks.",
+            "workouts": [
+                {
+                    "name": "Basic Step-Up Kick",
+                    "duration": "3 sets of 12 reps per leg",
+                    "intensity": "Low",
+                    "description": "Step up onto an elevated surface and extend a front kick to develop balance.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Silat Off-Line Pivot Kick",
+                    "duration": "3 sets of 8 reps per leg",
+                    "intensity": "Low",
+                    "description": "A controlled low spinning kick to train foot positioning before aerial kicks.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Taekwondo Jump Step Kick",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "A stepping jump into a chambered kick to train aerial motion.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Capoeira Ginga-to-Kick Transition",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Moderate",
+                    "description": "Rhythmic footwork transitioning into a side or roundhouse kick.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Muay Thai Jumping Knee to Kick Combo",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "Moderate",
+                    "description": "Jumping knee strike transitioning into a kick mid-air.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Jeet Kune Do Cross-Step Jump Kick",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "A cross-step followed by an explosive airborne kick.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Wing Chun Flash Kick",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "A short-range, fast airborne kick designed for rapid execution.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Baguazhang Spinning Sweep to Kick",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "Moderate",
+                    "description": "A fluid spinning sweep followed by a rising aerial kick.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Butterfly Kick (Wushu)",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "A sweeping aerial kick that generates horizontal rotation.",
+                    "difficulty_range": [6, 10]
+                },
+                {
+                    "name": "Tornado Kick (Taekwondo)",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "A spinning kick with powerful impact and speed.",
+                    "difficulty_range": [7, 11]
+                },
+                {
+                    "name": "Capoeira Meia Lua Flipping Techniques",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "Elite",
+                    "description": "Aerial kick combinations from Capoeira for high mobility combat.",
+                    "difficulty_range": [8, 12]
+                },
+                {
+                    "name": "Muay Thai Jumping Roundhouse",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Launching into an airborne roundhouse strike with precision.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Wushu Aerial Butterfly Twist",
+                    "duration": "3 sets of 5 reps",
+                    "intensity": "Elite",
+                    "description": "A high-speed aerial twist while delivering a spinning kick.",
+                    "difficulty_range": [9, 12]
+                },
+                {
+                    "name": "Capoeira Macaco Kick",
+                    "duration": "3 sets of 5 reps",
+                    "intensity": "Elite",
+                    "description": "A reverse handstand kick used for acrobatic combat movement.",
+                    "difficulty_range": [9, 12]
+                },
+                {
+                    "name": "Shaolin Tornado Flip Kick",
+                    "duration": "3 sets of 4 reps",
+                    "intensity": "Superhuman",
+                    "description": "A high-flying 540-degree rotational kick executed mid-air.",
+                    "difficulty_range": [10, 14]
+                },
+                {
+                    "name": "Wing Chun Rapid Flash Kick Series",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "Elite",
+                    "description": "A lightning-fast chain of airborne flash kicks.",
+                    "difficulty_range": [9, 13]
+                }
+            ]
+        },
+        {
+            "name": "Elite Combat Acrobatics",
+            "description": "Advanced movement and flipping techniques designed for combat applications.",
+            "workouts": [
+                {
+                    "name": "Wushu Tornado Flip",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "Elite",
+                    "description": "Aerial tornado rotation for high-speed kicking.",
+                    "difficulty_range": [8, 12]
+                },
+                {
+                    "name": "Capoeira Aerial Butterfly Transition",
+                    "duration": "3 sets of 5 reps",
+                    "intensity": "Elite",
+                    "description": "Blending aerial kicks into fluid transition movements.",
+                    "difficulty_range": [9, 13]
+                },
+                {
+                    "name": "360 Spin Kick with Flip Recovery",
+                    "duration": "3 sets of 5 reps",
+                    "intensity": "Elite",
+                    "description": "Executing a 360-degree aerial attack with a safe landing.",
+                    "difficulty_range": [9, 14]
+                },
+                {
+                    "name": "Wushu Kick-Over Handspring",
+                    "duration": "3 sets of 5 reps",
+                    "intensity": "Superhuman",
+                    "description": "Advanced combat tricking incorporating a full kick-over handspring.",
+                    "difficulty_range": [10, 15]
+                }
+            ]
+        },
+        {
+            "name": "Wall Runs & Vertical Power",
+            "description": "Building explosive vertical movement for climbing, vaulting, and aerial maneuvers.",
+            "workouts": [
+                {
+                    "name": "Basic Wall Kick-Off Step",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "Low",
+                    "description": "Lightly push off a wall and land safely, building foundational wall-run ability.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Silat One-Step Wall Climb",
+                    "duration": "3 sets of 5 reps",
+                    "intensity": "Moderate",
+                    "description": "A stepping kick-off to ascend walls with controlled foot placement.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Parkour Cat Grab Training",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "Moderate",
+                    "description": "Jump to grab a ledge and pull up, simulating real-world climbing scenarios.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Wall Runs",
+                    "duration": "3 sets of 5 reps",
+                    "intensity": "High",
+                    "description": "Run up the wall using climbing bars or pull-up bars, aiming for a higher reach each time.",
+                    "difficulty_range": [6, 10]
+                },
+                {
+                    "name": "Wushu Wall-to-Backflip Prep",
+                    "duration": "3 sets of 4 reps",
+                    "intensity": "High",
+                    "description": "Step up, launch backward, and land safely to build backflip control.",
+                    "difficulty_range": [6, 9]
+                }
+            ]
+        },
+        {
+            "name": "Directional Hurdle Jumps & Air Control",
+            "description": "Enhancing aerial movement through hurdle jumps and directional leap training.",
+            "workouts": [
+                {
+                    "name": "Low-to-High Box Jumps",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Low",
+                    "description": "Progressive jumping heights to improve explosive leg power.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Directional Hurdle Jumps",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Jump over hurdles at different angles to develop directional agility.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Taekwondo Push-Off Hurdle Kick",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Kick off an obstacle, launching into a high spinning kick.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Capoeira Aerial Side Hurdles",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "High",
+                    "description": "Perform a meia-lua-style vault over barriers, integrating flips.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Wushu Multi-Step Directional Air Control",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "High",
+                    "description": "Combining step, leap, and kick for precise mid-air movement.",
+                    "difficulty_range": [7, 9]
+                }
+            ]
+        },
+        {
+            "name": "Aerial Rotation & Flip Control",
+            "description": "Advanced airborne techniques to improve aerial orientation and flipping efficiency.",
+            "workouts": [
+                {
+                    "name": "Butterfly Kick (Wushu)",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Generate horizontal spinning motion for airborne control.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Tornado Kick (Taekwondo)",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "High",
+                    "description": "Develop rotational power for combat-ready aerial kicks.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Silat Aerial Knee Vault",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "High",
+                    "description": "Leap over obstacles while tucking the knee for combat efficiency.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Wushu Airborne Step Vaults",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "High",
+                    "description": "Vault over obstacles with step-and-kick techniques.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Capoeira Flipping Techniques",
+                    "duration": "3 sets of 5 reps",
+                    "intensity": "Elite",
+                    "description": "Advanced Capoeira flips integrating defensive and offensive movement.",
+                    "difficulty_range": [8, 12]
+                }
+            ]
+        },
+        {
+            "name": "Explosive Jump Training",
+            "description": "Plyometric jump workouts for increasing overall jump height and reactivity.",
+            "workouts": [
+                {
+                    "name": "Basic Box Jumps",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Low",
+                    "description": "Jump onto a stable surface, landing softly with knees slightly bent.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Standing Vertical Jumps",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Low",
+                    "description": "Jump straight up as high as possible, focusing on landing control.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Ankle Bounces",
+                    "duration": "3 sets of 15 reps",
+                    "intensity": "Low",
+                    "description": "Quick, light jumps using only the ankles to improve lower leg elasticity.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Tuck Jumps",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "Moderate",
+                    "description": "Jump and bring knees to chest for explosive power development.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Bounding Jumps",
+                    "duration": "3 sets of 6 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Leap forward from one leg to the other to develop single-leg power.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Standing Broad Jumps",
+                    "duration": "4 sets of 6 reps",
+                    "intensity": "Moderate",
+                    "description": "Jump forward for maximum distance to develop leg drive.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Depth Jumps",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "Moderate",
+                    "description": "Drop from a ledge and jump instantly to develop reactive power.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Explosive Step-Ups",
+                    "duration": "3 sets of 8 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Step onto an elevated surface with a jump for unilateral power.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Jumping Split Lunge",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Explosive split lunge jump to develop rapid leg power.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Triple-Hop Directional Jump",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Hop forward, laterally, and back for agility and foot control.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Wushu Tornado Jump",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Execute a 360-degree airborne spin, landing softly with balance.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Capoeira Kick-Off Jumps",
+                    "duration": "3 sets of 10 reps per leg",
+                    "intensity": "High",
+                    "description": "Push off the ground into a jump, simulating evasive Capoeira movement.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Muay Thai Switch-Knee Jumps",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "High",
+                    "description": "Jump explosively while switching knee strikes in mid-air.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Wall Run to Vertical Jump",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "High",
+                    "description": "Run up a wall and explode upward into a high vertical leap.",
+                    "difficulty_range": [7, 10]
+                }
+            ]
+        }
+    ]
+}

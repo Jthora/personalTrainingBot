@@ -1,0 +1,604 @@
+{
+    "name": "Recovery, Flexibility & Injury Prevention",
+    "description": "Enhancing mobility, preventing injuries, and promoting active recovery for optimal combat and movement performance.",
+    "workout_groups": [
+        {
+            "name": "Yoga-Based Mobility Flow",
+            "description": "Blending yoga poses and controlled breathing to enhance flexibility, stability, and joint resilience.",
+            "workouts": [
+                {
+                    "name": "Combat-Ready Sun Salutation",
+                    "duration": "3 sets of 5 reps",
+                    "intensity": "Low",
+                    "description": "A modified Sun Salutation sequence emphasizing core control, hip mobility, and breathing synchronization.",
+                    "difficulty_range": [3, 6]
+                },
+                {
+                    "name": "Dynamic Warrior Flow",
+                    "duration": "3 sets of 30 seconds per position",
+                    "intensity": "Moderate",
+                    "description": "Move between Warrior I, II, and III poses to develop balance and combat mobility.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Deep Lunge-to-Bridge Transitions",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "Moderate",
+                    "description": "Stretch the hip flexors, hamstrings, and spine by dynamically transitioning between a deep lunge and a bridge.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Pigeon Pose with Active Hip Rotation",
+                    "duration": "3 sets of 30 seconds per side",
+                    "intensity": "Moderate",
+                    "description": "Hold pigeon pose while actively rotating the hip to enhance mobility.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Seated Spinal Twists",
+                    "duration": "3 sets of 20 seconds per side",
+                    "intensity": "Low",
+                    "description": "Engage in deep spinal twisting to release tension and improve torso flexibility.",
+                    "difficulty_range": [3, 6]
+                },
+                {
+                    "name": "Low Stance Hip Openers",
+                    "duration": "3 sets of 15 seconds per side",
+                    "intensity": "Low",
+                    "description": "Hold a wide squat stance and gently shift weight side to side to open the hips.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Standing Balance Flow",
+                    "duration": "3 sets of 20 seconds per leg",
+                    "intensity": "Moderate",
+                    "description": "Transition between tree pose, warrior III, and standing knee lift to develop single-leg balance.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Hollow Body Core Stability Hold",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Hold a hollow body position while maintaining controlled breathing.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Wall-Assisted Handstand Hold",
+                    "duration": "3 sets of 15 seconds",
+                    "intensity": "High",
+                    "description": "Use a wall for support while holding a controlled handstand to develop wrist stability and spinal alignment.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Dragon Pose with Torso Twist",
+                    "duration": "3 sets of 30 seconds per side",
+                    "intensity": "Moderate",
+                    "description": "Hold a deep lunge while twisting towards the front leg, improving rotational flexibility.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Wrist & Forearm Strength Flow",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "Low",
+                    "description": "Perform a series of wrist stretches and weight-bearing movements to enhance wrist resilience.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Active Bridge & Shoulder Stretch",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Flow between a bridge position and an overhead reach to strengthen the posterior chain and enhance spinal flexibility.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Combat-Ready Deep Squat Hold",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Hold a deep squat position with an upright torso, engaging hip flexors and ankle mobility.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Explosive Frog Stand to Press Handstand",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "Elite",
+                    "description": "Transition from a deep frog stand into a controlled press handstand.",
+                    "difficulty_range": [8, 11]
+                },
+                {
+                    "name": "Rolling Shoulder Mobility Flow",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "Moderate",
+                    "description": "Perform controlled rolling shoulder stretches to increase range of motion.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Bridge Walkouts",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "High",
+                    "description": "Hold a bridge position while slowly walking hands and feet forward and backward.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "One-Legged Downward Dog to Kick-Up",
+                    "duration": "3 sets of 8 reps per leg",
+                    "intensity": "High",
+                    "description": "Flow from downward dog into an explosive leg kick, strengthening balance and flexibility.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Progressive Splits Training",
+                    "duration": "3 sets of 20 seconds per side",
+                    "intensity": "High",
+                    "description": "Gradually deepen into a split while maintaining active muscle engagement.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Back Bridge Kickovers",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "Elite",
+                    "description": "Kick over from a back bridge into a standing position for extreme spinal mobility.",
+                    "difficulty_range": [9, 11]
+                },
+                {
+                    "name": "Wall-Assisted Handstand Push-Ups",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "Elite",
+                    "description": "Perform controlled handstand push-ups against a wall to build upper body and shoulder endurance.",
+                    "difficulty_range": [9, 11]
+                }
+            ]
+        },
+        {
+            "name": "Combat Yoga Flow",
+            "description": "A tactical approach to yoga, blending mobility, balance, and warrior resilience with combat-ready applications.",
+            "workouts": [
+                {
+                    "name": "Tactical Sun Salutation",
+                    "duration": "3 sets of 5 reps",
+                    "intensity": "Low",
+                    "description": "A modified Sun Salutation designed for warriors—integrating explosive transitions, deep lunges, and core activation.",
+                    "difficulty_range": [3, 6]
+                },
+                {
+                    "name": "Warrior Transition Drills",
+                    "duration": "3 sets of 30 seconds per position",
+                    "intensity": "Moderate",
+                    "description": "Flow between Warrior I, II, and III while maintaining combat-ready stance alignment.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Lunge-to-Kick Flow",
+                    "duration": "3 sets of 10 reps per leg",
+                    "intensity": "Moderate",
+                    "description": "Move from a deep lunge to a controlled front kick, focusing on hip mobility and balance.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Combat Lotus Mobility Sequence",
+                    "duration": "3 sets of 15 seconds per movement",
+                    "intensity": "Low",
+                    "description": "Dynamic lotus flow designed for hip opening, flexibility, and transitioning into ground defense positions.",
+                    "difficulty_range": [3, 6]
+                },
+                {
+                    "name": "Tactical Cobra Flow",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "Moderate",
+                    "description": "Explosive cobra pose movements, engaging the lower back and core while preparing for striking posture.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Combat-Ready Deep Squat Transitions",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Hold a deep squat and transition between different foot stances for balance and leg endurance.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Bridge-to-Backbend Recovery",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Transition from a bridge to a full backbend, strengthening the spine and posterior chain.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Low Stance Side Flow",
+                    "duration": "3 sets of 20 seconds per side",
+                    "intensity": "Moderate",
+                    "description": "Flow between side lunges and deep squats, mimicking low combat footwork.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Explosive Plank-to-Arch Flow",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Move from a plank into an arch position dynamically, mimicking a breakfall-to-stand transition.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Dynamic Balance Warrior",
+                    "duration": "3 sets of 20 seconds per leg",
+                    "intensity": "High",
+                    "description": "Hold and transition between Warrior III, Tree Pose, and one-legged squat to enhance stability.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Arch-Hold Core Flow",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Flow from arch pose into a hollow-body hold, engaging deep core muscles for combat conditioning.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Dragon Pose Transitions",
+                    "duration": "3 sets of 30 seconds per side",
+                    "intensity": "High",
+                    "description": "A dynamic lunge sequence that stretches the hip flexors while improving balance and footwork mobility.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Handstand-to-Splits Flow",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "Elite",
+                    "description": "Kick up into a handstand, lower into splits, and transition seamlessly.",
+                    "difficulty_range": [8, 11]
+                },
+                {
+                    "name": "Rolling Shoulder Mobility Yoga",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "Moderate",
+                    "description": "Controlled rolling shoulder movements combined with deep lunges to improve rotational flexibility.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Combat Reverse Lunge Flow",
+                    "duration": "3 sets of 10 reps per leg",
+                    "intensity": "High",
+                    "description": "Step back into a lunge while maintaining guard positioning, then flow into a counter-kick stance.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Spinal Decompression & Recovery",
+                    "duration": "3 sets of 30 seconds per movement",
+                    "intensity": "Moderate",
+                    "description": "Series of spinal mobility stretches to enhance recovery and flexibility.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Silat Low Stance Recovery Flow",
+                    "duration": "3 sets of 15 seconds per movement",
+                    "intensity": "High",
+                    "description": "Flow between deep Silat crouching stances and rotational balance transitions.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Explosive Arm Balance Flow",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "Elite",
+                    "description": "Transition between crow pose, handstands, and press-ups for advanced upper body control.",
+                    "difficulty_range": [8, 11]
+                },
+                {
+                    "name": "Dynamic Arch & Hollow Flow",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Elite",
+                    "description": "Alternate between an arch hold and a hollow body position, engaging deep core and spinal flexibility.",
+                    "difficulty_range": [8, 11]
+                },
+                {
+                    "name": "Combat-Ready Mobility Recovery",
+                    "duration": "3 sets of 60 seconds",
+                    "intensity": "Moderate",
+                    "description": "Controlled breathing and slow-motion movements designed for active recovery while maintaining combat posture.",
+                    "difficulty_range": [5, 8]
+                }
+            ]
+        },
+        {
+            "name": "Dynamic Stretching & Warmups",
+            "description": "Pre-workout mobility drills designed to prime muscles and joints for high-performance movement.",
+            "workouts": [
+                {
+                    "name": "Leg Swings (Front to Back)",
+                    "duration": "3 sets of 20 reps per leg",
+                    "intensity": "Low",
+                    "description": "Dynamically open the hips by swinging the legs forward and backward.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Lateral Arm Circles",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Low",
+                    "description": "Engage the shoulders by rotating the arms in controlled circles.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Dynamic Hip Opener Lunges",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Step forward into a lunge, actively shifting the hips to improve mobility.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Thoracic Spine Rotations",
+                    "duration": "3 sets of 20 seconds per side",
+                    "intensity": "Low",
+                    "description": "Twist the upper back in a kneeling or standing position to improve rotational mobility.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Explosive Knee Drive Warmups",
+                    "duration": "3 sets of 10 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Perform rapid knee drives to activate hip flexors and fast-twitch muscle response.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Combat Stance Step-Throughs",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "Moderate",
+                    "description": "Step through different fighting stances dynamically, improving footwork fluidity.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Breakbeat Bounce Warmup",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Low",
+                    "description": "Bounce lightly on the balls of your feet in rhythm, mimicking evasive combat movement.",
+                    "difficulty_range": [3, 6]
+                },
+                {
+                    "name": "Low Stance Mobility Drill",
+                    "duration": "3 sets of 15 seconds per position",
+                    "intensity": "Moderate",
+                    "description": "Move fluidly between a deep squat, lateral stance, and horse stance to open the hips.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Rolling Shoulder Warmups",
+                    "duration": "3 sets of 10 reps per direction",
+                    "intensity": "Moderate",
+                    "description": "Roll shoulders forward and back, integrating core engagement for combat-ready movement.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Jeet Kune Do Explosive Lead Step",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Perform a fast lead step forward and back, activating fast-twitch footwork muscles.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Silat Low Step Transitions",
+                    "duration": "3 sets of 6 reps per side",
+                    "intensity": "High",
+                    "description": "Glide between low fighting stances, improving leg strength and mobility.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Explosive Lateral Step Jumps",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Jump laterally while keeping your combat guard up, training movement reactivity.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "360-Degree Rotation Drills",
+                    "duration": "3 sets of 10 seconds",
+                    "intensity": "High",
+                    "description": "Practice rapid body rotation movements, improving agility and balance in combat.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Capoeira Cartwheel Flow",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Flow between cartwheels and foot placements for agility and body control.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Explosive Depth Step Rebounds",
+                    "duration": "3 sets of 6 reps",
+                    "intensity": "Elite",
+                    "description": "Step off a low box or ledge and immediately spring into an evasive lateral jump.",
+                    "difficulty_range": [8, 11]
+                },
+                {
+                    "name": "Shaolin Dynamic Flexibility Flow",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "Elite",
+                    "description": "Move between Shaolin flexibility stances at high speed, improving reactive range.",
+                    "difficulty_range": [8, 11]
+                },
+                {
+                    "name": "Tactical Blindfolded Warmup",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Elite",
+                    "description": "Perform evasive footwork and shadow movements with a blindfold, heightening body awareness.",
+                    "difficulty_range": [8, 11]
+                },
+                {
+                    "name": "Muay Thai Knee Drive Recoil",
+                    "duration": "3 sets of 10 reps per side",
+                    "intensity": "High",
+                    "description": "Explosively drive a knee forward and recoil back into a defensive stance.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Baguazhang Circle Warmup",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Walk in a circular combat stance while maintaining a ready guard.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Explosive Sprint Activation",
+                    "duration": "3 sets of 5-second sprints",
+                    "intensity": "Elite",
+                    "description": "Perform short, explosive sprints to wake up fast-twitch muscle fibers before training.",
+                    "difficulty_range": [8, 11]
+                }
+            ]
+        },
+        {
+            "name": "Post-Workout Active Recovery",
+            "description": "Techniques for cooling down, reducing soreness, and accelerating muscle recovery.",
+            "workouts": [
+                {
+                    "name": "Breath-Controlled Deep Stretching",
+                    "duration": "3 sets of 30 seconds per stretch",
+                    "intensity": "Low",
+                    "description": "Slow, deep stretches combined with controlled breathing to enhance recovery.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Foam Rolling Leg Recovery",
+                    "duration": "3 sets of 30 seconds per muscle group",
+                    "intensity": "Low",
+                    "description": "Roll out quads, hamstrings, and calves to reduce tightness.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Gentle Spinal Decompression",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "Low",
+                    "description": "Hang from a bar or lay on the ground in a gentle arch to decompress the spine.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Controlled Joint Rotations",
+                    "duration": "3 sets of 20 seconds per joint",
+                    "intensity": "Low",
+                    "description": "Slowly rotate ankles, wrists, shoulders, and neck to improve joint recovery.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Progressive Relaxation Training",
+                    "duration": "3 sets of 60 seconds",
+                    "intensity": "Low",
+                    "description": "Systematically tense and release each muscle group to improve relaxation.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Combat Recovery Stretch Flow",
+                    "duration": "3 sets of 45 seconds per stretch",
+                    "intensity": "Moderate",
+                    "description": "Flow through deep stretches that target muscles stressed from combat-style training.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Lying Hip Opener & Back Release",
+                    "duration": "3 sets of 30 seconds per side",
+                    "intensity": "Low",
+                    "description": "A supine stretch combining hip mobility and spinal decompression.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Muay Thai Shin & Foot Recovery",
+                    "duration": "3 sets of 20 seconds per leg",
+                    "intensity": "Moderate",
+                    "description": "Gently massage and stretch the shins and feet to relieve impact stress.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Yoga-Based Breathing Reset",
+                    "duration": "3 sets of 60 seconds",
+                    "intensity": "Low",
+                    "description": "Inhale deeply through the nose, hold, and exhale slowly to calm the nervous system.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Active Recovery Rolling Drill",
+                    "duration": "3 sets of 10 slow rolls",
+                    "intensity": "Moderate",
+                    "description": "Perform soft rolls along the floor to ease tension in the spine and back muscles.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "PNF Stretching for Hamstrings",
+                    "duration": "3 sets of 15 seconds per leg",
+                    "intensity": "Moderate",
+                    "description": "Use Proprioceptive Neuromuscular Facilitation (PNF) techniques to stretch deeper.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Tai Chi Flow for Recovery",
+                    "duration": "3 sets of 60 seconds",
+                    "intensity": "Moderate",
+                    "description": "Perform slow, controlled Tai Chi movements to promote relaxation and flexibility.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Cold Exposure Breathwork (Wim Hof-Style)",
+                    "duration": "3 sets of 90 seconds",
+                    "intensity": "High",
+                    "description": "Controlled deep breathing paired with cold water immersion or ice packs to boost recovery.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Hanging Spinal Recovery",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "Moderate",
+                    "description": "Hang from a bar with relaxed shoulders to decompress the spine and improve grip recovery.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Combat Stance Mobility Drill",
+                    "duration": "3 sets of 20 seconds",
+                    "intensity": "Moderate",
+                    "description": "Slowly move through fighting stances to release tension in the legs and core post-training.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Self-Massage with Lacrosse Ball",
+                    "duration": "3 sets of 20 seconds per area",
+                    "intensity": "Moderate",
+                    "description": "Use a lacrosse ball to apply pressure to sore areas and release muscle knots.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Neck & Jaw Tension Release",
+                    "duration": "3 sets of 15 seconds",
+                    "intensity": "Low",
+                    "description": "Gentle self-massage and stretching to release tension in the neck and jaw from combat stress.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Silat Low Stance Mobility Recovery",
+                    "duration": "3 sets of 15 seconds per position",
+                    "intensity": "High",
+                    "description": "Transition through deep Silat stances slowly to stretch and relax leg muscles post-training.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Baguazhang Circular Walking Cooldown",
+                    "duration": "3 sets of 60 seconds",
+                    "intensity": "Moderate",
+                    "description": "Walk in controlled circular movements, focusing on deep breathing and balance.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Tactical Cold Water Hand Recovery",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Submerge hands in cold water to reduce inflammation and improve finger dexterity post-training.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Explosive Fighter Recovery Stretching",
+                    "duration": "3 sets of 30 seconds per muscle group",
+                    "intensity": "High",
+                    "description": "Stretch explosively trained muscle groups, focusing on hamstrings, shoulders, and back.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Mental Reset Visualization",
+                    "duration": "3 sets of 60 seconds",
+                    "intensity": "Moderate",
+                    "description": "Visualize a full recovery process while deep breathing to enhance post-training relaxation.",
+                    "difficulty_range": [4, 7]
+                }
+            ]
+        }
+    ]
+}

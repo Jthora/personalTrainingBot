@@ -7,5 +7,6 @@
     "endurance":"endurance.json",
     "mental":"mental.json",
     "mobility":"mobility.json",
-    "strength":"strength.json"
+    "strength":"strength.json",
+    "jono_thora":"jono_thora.json"
 }

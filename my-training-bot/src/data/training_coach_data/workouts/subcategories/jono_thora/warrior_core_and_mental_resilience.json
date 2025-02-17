@@ -1,0 +1,353 @@
+{
+    "name": "Warrior Core & Mental Resilience (Toughness & Focus)",
+    "description": "Training designed to forge mental toughness, unshakable focus, and combat stamina through extreme resilience-building techniques.",
+    "workout_groups": [
+        {
+            "name": "Meditation & Focus Training",
+            "description": "Developing combat-ready mental clarity, heightened awareness, and inner resilience through intense focus techniques.",
+            "workouts": [
+                {
+                    "name": "Stillness Drill (Eyes Closed, Body Awareness)",
+                    "duration": "3 sets of 60 seconds",
+                    "intensity": "Low",
+                    "description": "Stand or sit with eyes closed and focus on individual body parts, maintaining full-body awareness.",
+                    "difficulty_range": [1, 5]
+                },
+                {
+                    "name": "Deep Breath Counting Meditation",
+                    "duration": "3 sets of 30 breaths",
+                    "intensity": "Low",
+                    "description": "Breathe in and out slowly while mentally counting each breath, resetting if attention drifts.",
+                    "difficulty_range": [1, 5]
+                },
+                {
+                    "name": "Slow Blink Focus Drill",
+                    "duration": "3 sets of 60 seconds",
+                    "intensity": "Low",
+                    "description": "Focus on an object in front of you while slowly blinking, training perception and awareness.",
+                    "difficulty_range": [1, 5]
+                },
+                {
+                    "name": "Peripheral Awareness Expansion",
+                    "duration": "3 sets of 45 seconds",
+                    "intensity": "Low",
+                    "description": "Softly focus on a central point while expanding awareness to detect movement in peripheral vision.",
+                    "difficulty_range": [1, 5]
+                },
+                {
+                    "name": "Silent Countdown Mental Control",
+                    "duration": "3 sets of 45 seconds",
+                    "intensity": "Low",
+                    "description": "Mentally count down from 100 to 1 at a steady pace while maintaining calm breathing.",
+                    "difficulty_range": [1, 5]
+                },
+                {
+                    "name": "Sound Distancing Awareness",
+                    "duration": "3 sets of 2 minutes",
+                    "intensity": "Low",
+                    "description": "Sit in silence and mentally map out nearby and distant sounds without turning your head.",
+                    "difficulty_range": [1, 5]
+                },
+                {
+                    "name": "One-Legged Balance Focus",
+                    "duration": "3 sets of 30 seconds per leg",
+                    "intensity": "Low",
+                    "description": "Stand on one leg with eyes open or closed, focusing on breath control and balance awareness.",
+                    "difficulty_range": [1, 5]
+                },
+                {
+                    "name": "Breath Sync Coordination",
+                    "duration": "3 sets of 60 seconds",
+                    "intensity": "Low",
+                    "description": "Inhale deeply and time your exhale to match an external rhythm, like footsteps or a mental count.",
+                    "difficulty_range": [1, 5]
+                },
+                {
+                    "name": "Gaze Holding Challenge",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Low",
+                    "description": "Fixate on a specific point without blinking or shifting focus, improving concentration and discipline.",
+                    "difficulty_range": [1, 5]
+                },
+                {
+                    "name": "Intentional Muscle Relaxation",
+                    "duration": "3 sets of 2 minutes",
+                    "intensity": "Low",
+                    "description": "Consciously tense and release each muscle group while maintaining slow, controlled breathing.",
+                    "difficulty_range": [1, 5]
+                },
+                {
+                    "name": "Slow Motion Hand Movements",
+                    "duration": "3 sets of 60 seconds",
+                    "intensity": "Low",
+                    "description": "Move hands through the air as if moving through water, maintaining smooth control and awareness.",
+                    "difficulty_range": [1, 5]
+                },
+                {
+                    "name": "Step & Breathe Walking Meditation",
+                    "duration": "3 sets of 2 minutes",
+                    "intensity": "Low",
+                    "description": "Walk slowly, timing each step with deep, controlled breathing for a fully mindful movement experience.",
+                    "difficulty_range": [1, 5]
+                },
+                {
+                    "name": "Silent Vocalization Control",
+                    "duration": "3 sets of 60 seconds",
+                    "intensity": "Low",
+                    "description": "Mentally repeat a phrase or word without moving your lips or throat, strengthening inner focus.",
+                    "difficulty_range": [1, 5]
+                },
+                {
+                    "name": "Micro-Tension Release Training",
+                    "duration": "3 sets of 2 minutes",
+                    "intensity": "Low",
+                    "description": "Scan your body for unnecessary tension (jaw, hands, shoulders) and consciously relax each area.",
+                    "difficulty_range": [1, 5]
+                },
+                {
+                    "name": "Sensory Limitation Drill (Eyes Closed, Hands Behind Back)",
+                    "duration": "3 sets of 60 seconds",
+                    "intensity": "Low",
+                    "description": "Stand still with eyes closed and hands behind back, focusing only on balance and sound.",
+                    "difficulty_range": [1, 5]
+                },
+                {
+                    "name": "Combat Breathing Under Load",
+                    "duration": "3 sets of 90 seconds",
+                    "intensity": "Moderate",
+                    "description": "Hold a plank or horse stance while performing controlled combat breathing (inhale 4s, hold 4s, exhale 4s, hold 4s).",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Target Lock Meditation (Focus Expansion)",
+                    "duration": "3 sets of 60 seconds",
+                    "intensity": "Moderate",
+                    "description": "Fixate on a moving object (e.g., spinning stick, metronome, pendulum) while maintaining hyper-focus awareness of the periphery.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Silat Shadow Reflex Training",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "High",
+                    "description": "Meditate in a low horse stance while reacting to a partner or AI-generated light cues, shadow movements, or hand feints.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Sound Isolation & Disruption Control",
+                    "duration": "3 sets of 2 minutes",
+                    "intensity": "Moderate",
+                    "description": "Wear earplugs or noise-canceling headphones, then train reaction time & mental discipline with random bursts of loud, sudden noise (or silence).",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Visualization Under Physical Duress",
+                    "duration": "3 sets of 60 seconds",
+                    "intensity": "High",
+                    "description": "While holding push-up position, wall sit, or planks, visualize executing a perfect combat sequence or Kicky Flip attack with extreme detail.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Combat Visualization Under Adrenaline",
+                    "duration": "3 sets of 2 minutes",
+                    "intensity": "High",
+                    "description": "Perform rapid jumping jacks for 30s, then immediately sit and visualize an entire combat sequence in detail.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Deep Silence Sensory Training",
+                    "duration": "3 sets of 5 minutes",
+                    "intensity": "High",
+                    "description": "Sit completely still in silence, avoiding all reactions to sudden sounds, movements, or disruptions.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Hyper-Awareness Drill (Crowded Environment)",
+                    "duration": "3 sets of 3 minutes",
+                    "intensity": "High",
+                    "description": "Focus on a single object while remaining aware of every peripheral movement in a crowded space.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "Plank & Breath Control Under Fatigue",
+                    "duration": "3 sets of 90 seconds",
+                    "intensity": "High",
+                    "description": "Hold a plank while regulating breathing (inhale 4s, hold 4s, exhale 4s, hold 4s), resisting fatigue.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Blindfolded Reflex Response Drill",
+                    "duration": "3 sets of 45 seconds",
+                    "intensity": "High",
+                    "description": "Stand blindfolded while reacting to unexpected physical taps, sounds, or cues from a partner.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Peripheral Target Recognition",
+                    "duration": "3 sets of 90 seconds",
+                    "intensity": "High",
+                    "description": "Focus straight ahead while tracking the number of moving objects detected in peripheral vision.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "One-Legged Stance in Moving Airflow",
+                    "duration": "3 sets of 60 seconds per leg",
+                    "intensity": "High",
+                    "description": "Stand on one leg while resisting external forces (wind, fan, or partner pushing air at you).",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Slow-Motion Combat Striking with Focus",
+                    "duration": "3 sets of 60 seconds",
+                    "intensity": "High",
+                    "description": "Execute combat strikes at ultra-slow speed, maintaining full concentration on muscle activation.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Tactical Breath Holding Under Load",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Very High",
+                    "description": "Hold breath while carrying a weight (sandbag, kettlebell) to simulate breath control under pressure.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Sudden Light-Darkness Transition Focus",
+                    "duration": "3 sets of 90 seconds",
+                    "intensity": "Very High",
+                    "description": "Switch from darkness to bright light instantly and refocus within 3 seconds to avoid disorientation.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Moving Meditation with Combat Rhythm",
+                    "duration": "3 sets of 60 seconds",
+                    "intensity": "Very High",
+                    "description": "Shadowbox at half-speed while mentally controlling each motion in perfect rhythm with breathing.",
+                    "difficulty_range": [7, 9]
+                },
+                {
+                    "name": "Vibration Resistance Stance (Shaking Surface)",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Extreme",
+                    "description": "Hold a horse stance or plank while standing on a mildly shaking or vibrating surface (created with a partner tapping or shifting a platform).",
+                    "difficulty_range": [8, 11]
+                },
+                {
+                    "name": "Underwater Mental Focus Drill",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Extreme",
+                    "description": "Submerge in cold water and maintain absolute mental clarity, avoiding panic or reactive breathing.",
+                    "difficulty_range": [8, 11]
+                },
+                {
+                    "name": "Tactile Disruption Control",
+                    "duration": "3 sets of 45 seconds",
+                    "intensity": "Extreme",
+                    "description": "Sit still while a partner lightly taps different areas of your body unpredictably, maintaining absolute stillness and control.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Extreme Low-Light Focus Training",
+                    "duration": "3 sets of 90 seconds",
+                    "intensity": "Extreme",
+                    "description": "Train focus in a near-dark room with only subtle moving light sources, forcing the eyes to adjust quickly.",
+                    "difficulty_range": [9, 11]
+                },
+                {
+                    "name": "Rapid Switching Mental Endurance Test",
+                    "duration": "3 sets of 60 seconds",
+                    "intensity": "Extreme",
+                    "description": "Rapidly switch focus between multiple unpredictable movement sources while maintaining perfect tracking.",
+                    "difficulty_range": [9, 11]
+                },
+                {
+                    "name": "Hypoxia-Resilience Combat Breathwork",
+                    "duration": "3 sets of 90 seconds",
+                    "intensity": "Extreme",
+                    "description": "Breathe in cycles of increasing oxygen deprivation (inhale, exhale, hold breath longer each round) while maintaining absolute control.",
+                    "difficulty_range": [9, 11]
+                }
+            ]
+        },
+        {
+            "name": "Cold Water Training for Mental Toughness",
+            "description": "Training the nervous system’s resilience under extreme conditions.",
+            "workouts": [
+                {
+                    "name": "Cold Exposure Breath Control (Wim Hof Inspired)",
+                    "duration": "5 rounds of 30 breaths + 60-second breath hold",
+                    "intensity": "High",
+                    "description": "Immerse hands/feet in ice water while performing powerful oxygenation breathing to resist the cold.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Cold Water Combat Tension Drills",
+                    "duration": "3 sets of 60 seconds",
+                    "intensity": "High",
+                    "description": "Hold push-up or plank position in a cold shower while tightening specific muscle groups in sequential focus (core, arms, legs).",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Mist Training (Mental Disorientation Recovery)",
+                    "duration": "3 sets of 2 minutes",
+                    "intensity": "High",
+                    "description": "Train combat footwork drills under a cold mist or light rain spray to condition reaction speed in low-visibility, freezing conditions.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Shock & Recover Conditioning",
+                    "duration": "3 sets of 30-second immersions",
+                    "intensity": "High",
+                    "description": "Immerse hands, feet, or entire body in cold water, then execute explosive combat movements immediately upon exiting.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Sub-Zero Precision Training",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "Moderate",
+                    "description": "Perform fine motor skill drills (trigger pulls, knife handling, small object manipulation) with cold hands to train under numbed conditions.",
+                    "difficulty_range": [6, 9]
+                }
+            ]
+        },
+        {
+            "name": "High-Fatigue Workouts for Combat Stamina",
+            "description": "Training endurance, willpower, and sustained combat output under extreme exhaustion.",
+            "workouts": [
+                {
+                    "name": "Endurance Circuit: No Rest Allowed",
+                    "duration": "3 rounds of 5 exercises (45s work, 15s transition)",
+                    "intensity": "High",
+                    "description": "Rotate between push-ups, squats, sprints, heavy bag strikes, and burpees without stopping to push the body past fatigue thresholds.",
+                    "difficulty_range": [7, 11]
+                },
+                {
+                    "name": "Shadowboxing Under Fatigue",
+                    "duration": "3 sets of 2-minute rounds",
+                    "intensity": "High",
+                    "description": "After sprinting for 30 seconds, perform shadowboxing with full striking speed while maintaining fluid motion despite exhaustion.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Plank-to-Pushup Burnout",
+                    "duration": "3 sets of 45 seconds",
+                    "intensity": "High",
+                    "description": "Hold a plank for 30 seconds, then immediately transition into rapid push-ups until failure.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Horse Stance Burnout with Sandbag Hold",
+                    "duration": "3 sets of 45-second holds",
+                    "intensity": "High",
+                    "description": "Hold a deep horse stance while carrying a weighted object (or kettlebell) for max time endurance.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Hyperventilation Sprints",
+                    "duration": "3 sets of 30-second max effort sprints",
+                    "intensity": "High",
+                    "description": "Perform rapid hyperventilation breathing before a full-speed sprint to simulate oxygen deprivation training.",
+                    "difficulty_range": [7, 11]
+                }
+            ]
+        }
+    ]
+}

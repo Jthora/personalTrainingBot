@@ -121,6 +121,7 @@ class WorkoutCategoryCache {
         } else {
             this.selectedCategories.add(id);
         }
+        WorkoutScheduleStore.saveSelectedWorkoutCategories(this.convertSetToObject(this.selectedCategories));
     }
 
     public toggleSubCategorySelection(id: string): void {
@@ -129,6 +130,7 @@ class WorkoutCategoryCache {
         } else {
             this.selectedSubCategories.add(id);
         }
+        WorkoutScheduleStore.saveSelectedWorkoutSubCategories(this.convertSetToObject(this.selectedSubCategories));
     }
 
     public toggleWorkoutGroupSelection(id: string): void {
@@ -137,6 +139,7 @@ class WorkoutCategoryCache {
         } else {
             this.selectedWorkoutGroups.add(id);
         }
+        WorkoutScheduleStore.saveSelectedWorkoutGroups(this.convertSetToObject(this.selectedWorkoutGroups));
     }
 
     public toggleWorkoutSelection(id: string): void {
@@ -145,6 +148,7 @@ class WorkoutCategoryCache {
         } else {
             this.selectedWorkouts.add(id);
         }
+        WorkoutScheduleStore.saveSelectedWorkouts(this.convertSetToObject(this.selectedWorkouts));
     }
 
     public isCategorySelected(id: string): boolean {
@@ -197,15 +201,20 @@ class WorkoutCategoryCache {
         selectedGroups: SelectedWorkoutGroups,
         selectedWorkouts: SelectedWorkouts
     ): Workout[] {
+        console.log(`getAllWorkoutsFilteredBy: filtering`);
         const workouts: Workout[] = [];
         this.cache.forEach(category => {
-            if (selectedCategories[category.id]) {
+            if (selectedCategories[category.id]) { 
+                console.log('Selected category:', category.id);
                 category.subCategories.forEach(subCategory => {
                     if (selectedSubCategories[subCategory.id]) {
+                        console.log('Selected subCategory:', subCategory.id);
                         subCategory.workoutGroups.forEach(group => {
                             if (selectedGroups[group.id]) {
+                                console.log('Selected group:', group.id);
                                 group.workouts.forEach(workout => {
                                     if (selectedWorkouts[workout.id]) {
+                                        console.log('Selected workout:', workout.id);
                                         workouts.push(workout);
                                     }
                                 });
@@ -215,12 +224,25 @@ class WorkoutCategoryCache {
                 });
             }
         });
+        if (workouts.length === 0) {
+            console.warn(`getAllWorkoutsFilteredBy: no workouts selected?`);
+        } else {
+            console.log(`getAllWorkoutsFilteredBy: selected ${workouts.length} workouts`);
+        }
         return workouts;
     }
 
     private getRandomItems<T>(array: T[], count: number): T[] {
         const shuffled = array.sort(() => 0.5 - Math.random());
         return shuffled.slice(0, count);
+    }
+
+    private convertSetToObject(set: Set<string>): { [key: string]: boolean } {
+        const obj: { [key: string]: boolean } = {};
+        set.forEach(id => {
+            obj[id] = true;
+        });
+        return obj;
     }
 }
 

@@ -27,7 +27,9 @@ export const createWorkoutSchedule = async (): Promise<WorkoutSchedule> => {
         await new Promise(resolve => setTimeout(resolve, 100));
     }
 
-    const workouts: Workout[] = WorkoutCategoryCache.getInstance().getAllWorkoutsSelected();
+    const cache = WorkoutCategoryCache.getInstance();
+    const workouts = cache.getAllWorkoutsSelected();
+
     const difficultySettings = DifficultySettingsStore.getSettings();
     const difficultyLevel = DifficultySettingsStore.getWeightedRandomDifficulty(difficultySettings);
 
@@ -43,7 +45,7 @@ export const createWorkoutSchedule = async (): Promise<WorkoutSchedule> => {
     console.log('Filtered workouts based on difficulty level:', filteredWorkouts.length);
 
     if (filteredWorkouts.length === 0) {
-        console.warn('No workouts found within the specified difficulty level.');
+        console.warn(`No workouts found within the specified difficulty level [${difficultyLevel}].`);
         return new WorkoutSchedule(date, [], difficultySettings);
     }
 

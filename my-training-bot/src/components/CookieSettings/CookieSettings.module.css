@@ -1,0 +1,21 @@
+.cookieSettings {
+    padding: 0px;
+}
+
+.cookieSettings h2 {
+    margin-bottom: 10px;
+}
+
+.cookieSettings button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.cookieSettings button:hover {
+    background-color: #0056b3;
+}

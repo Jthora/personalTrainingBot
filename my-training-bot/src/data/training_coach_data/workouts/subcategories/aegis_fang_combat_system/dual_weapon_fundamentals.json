@@ -1,0 +1,135 @@
+{
+    "name": "Dual Weapon Fundamentals",
+    "description": "Mastering the synchronization of sword, knife, and wrist-blade combat through drills that refine control, transitions, and offensive-defensive synergy.",
+    "workout_groups": [
+        {
+            "name": "Weapon Familiarization & Basic Mechanics",
+            "description": "Developing control, accuracy, and foundational strikes for dual-wield combat.",
+            "workouts": [
+                {
+                    "name": "Dual-Wield Guard Positioning",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Hold and maintain different guard positions while switching between primary and secondary hand.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Basic Knife & Sword Flow Drill",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Low",
+                    "description": "Alternate between sword cuts and knife strikes in a controlled, slow flow sequence.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Introductory Hand-Switching Exercise",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Moderate",
+                    "description": "Switch dominant hands mid-strike to develop adaptability with both left and right hands.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Close-Quarters Wrist Blade Deployment",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Simulate surprise wrist-blade strikes from defensive stances.",
+                    "difficulty_range": [4, 6]
+                }
+            ]
+        },
+        {
+            "name": "Dual-Weapon Control & Hand Transitions",
+            "description": "Training to fluidly switch weapons mid-combat and maintain precise control under pressure.",
+            "workouts": [
+                {
+                    "name": "Rapid Hand-Switching Drill",
+                    "duration": "3 sets of 15 seconds",
+                    "intensity": "Moderate",
+                    "description": "Switch between sword and knife control without breaking flow.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Defensive to Offensive Transition Flow",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Train fluid movement between blocking with a buckler and striking with the opposite hand.",
+                    "difficulty_range": [6, 8]
+                },
+                {
+                    "name": "Blade Recovery After Striking",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Moderate",
+                    "description": "Reposition weapons quickly after strikes to prevent being off-balance.",
+                    "difficulty_range": [5, 7]
+                },
+                {
+                    "name": "Off-Hand Precision Cutting",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "High",
+                    "description": "Use the non-dominant hand for controlled, precise cutting movements.",
+                    "difficulty_range": [6, 9]
+                }
+            ]
+        },
+        {
+            "name": "Defensive-Redirective Counter Training",
+            "description": "Balancing shieldwork, parries, and weapon redirections for multi-weapon combat.",
+            "workouts": [
+                {
+                    "name": "Buckler Deflection into Counterstrike",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Use a buckler to deflect an incoming strike and follow up with a counter-cut.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Dual-Wield Parry & Counter Attack",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Use the knife to intercept attacks while countering with the sword.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Backstep Evade & Return Cut",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "Moderate",
+                    "description": "Step back to avoid an attack, then lunge forward with an immediate return cut.",
+                    "difficulty_range": [5, 8]
+                }
+            ]
+        },
+        {
+            "name": "Advanced Dual Weapon Combat Flow",
+            "description": "Complex sequences of multi-weapon engagements under pressure.",
+            "workouts": [
+                {
+                    "name": "Ambidextrous Blade Flow",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Execute continuous attack and defense sequences, switching hands fluidly.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Combat Position Shift Drill",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "High",
+                    "description": "Move dynamically between combat stances while maintaining offensive pressure.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Multi-Strike Attack Chains",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "Elite",
+                    "description": "Train rapid strike combinations using all weapons fluidly.",
+                    "difficulty_range": [9, 11]
+                },
+                {
+                    "name": "Real-Time Adaptive Sparring",
+                    "duration": "3 rounds of 60 seconds",
+                    "intensity": "Elite",
+                    "description": "React to random opponent movements and adjust weapon positioning accordingly.",
+                    "difficulty_range": [10, 11]
+                }
+            ]
+        }
+    ]
+}

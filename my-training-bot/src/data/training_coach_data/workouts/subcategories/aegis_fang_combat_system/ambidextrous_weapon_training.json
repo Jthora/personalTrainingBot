@@ -1,0 +1,108 @@
+{
+    "name": "Ambidextrous Weapon Training",
+    "description": "Developing dexterity and control in both hands for fluid weapon switching, dual-wield combat, and balanced combat proficiency.",
+    "workout_groups": [
+        {
+            "name": "Fundamental Ambidextrous Drills",
+            "description": "Building muscle memory and coordination to wield weapons in both hands equally.",
+            "workouts": [
+                {
+                    "name": "Basic Hand-Switching Drill",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Pass the weapon between hands while maintaining a balanced combat stance.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Mirror Striking Exercise",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Perform identical strikes with each hand to build even-handed coordination.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Cross-Handed Weapon Flow",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Switch from one hand to the other mid-strike while keeping fluid motion.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Off-Hand Precision Cuts",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Train fine motor control by executing precise cutting motions with the non-dominant hand.",
+                    "difficulty_range": [5, 8]
+                }
+            ]
+        },
+        {
+            "name": "Weapon Transition & Multi-Hand Adaptation",
+            "description": "Enhancing the ability to switch weapons and hands mid-combat.",
+            "workouts": [
+                {
+                    "name": "Knife-to-Sword Swap Drill",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Quickly transition between knife and sword, ensuring smooth weapon swaps.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Ambidextrous Reverse Grip Transition",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Switch between forward and reverse grips in both hands while maintaining combat flow.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Dual-Wield Attack Timing",
+                    "duration": "3 sets of 10 reps per side",
+                    "intensity": "High",
+                    "description": "Execute dual-hand coordinated strikes, alternating between primary and secondary hands.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Live Ambidextrous Combat Flow",
+                    "duration": "3 sets of 15 seconds",
+                    "intensity": "High",
+                    "description": "React to a sparring partner's movements while switching weapons between hands mid-engagement.",
+                    "difficulty_range": [7, 10]
+                }
+            ]
+        },
+        {
+            "name": "Advanced Bilateral Combat Mastery",
+            "description": "Mastering full combat proficiency with both hands for ultimate versatility in battle.",
+            "workouts": [
+                {
+                    "name": "Simultaneous Dual-Weapon Combat",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Train precise control of independent weapon actions in both hands.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Blindfolded Off-Hand Combat",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "High",
+                    "description": "Develop fine motor control by using the non-dominant hand with restricted vision.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Synchronized Dual-Wield Attack Chains",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Elite",
+                    "description": "Perform complex attack sequences using both weapons simultaneously.",
+                    "difficulty_range": [9, 11]
+                },
+                {
+                    "name": "Live Ambidextrous Sparring",
+                    "duration": "3 rounds of 90 seconds",
+                    "intensity": "Elite",
+                    "description": "Engage in a full-speed sparring session while being required to switch weapons and hands continuously.",
+                    "difficulty_range": [10, 11]
+                }
+            ]
+        }
+    ]
+}

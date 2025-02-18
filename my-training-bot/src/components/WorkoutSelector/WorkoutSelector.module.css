@@ -1,28 +1,32 @@
 .workoutSelector {
+    z-index: 10;
     padding: 20px;
     background-color: #333333;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 100%;
-    overflow: hidden;
     position: relative;
 }
 
 .category, .subCategory, .group, .workout {
     margin-bottom: 10px;
+    z-index: 10;
 }
 
 .category > input, .subCategory > input, .group > input, .workout > input {
     margin-right: 10px;
+    z-index: 10;
 }
 
 .subCategories, .groups, .workouts {
+    z-index: 10;
     margin-left: 20px;
     padding-left: 10px;
     border-left: 2px solid #ddd;
 }
 
 .dropdownButton {
+    z-index: 10;
     background-color: #007bff;
     color: white;
     border: none;
@@ -34,6 +38,7 @@
 }
 
 .dropdownButton:hover {
+    z-index: 10;
     background-color: #0056b3;
 }
 
@@ -63,11 +68,61 @@
     transform: scale(1.05); /* Add animation */
 }
 
+.unselectAllButton {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add animation */
+}
+
+.unselectAllButton:hover {
+    background-color: #c82333;
+    transform: scale(1.05); /* Add animation */
+}
+
 .stats {
+    z-index: 1;
     margin-top: 10px;
     color: white;
     text-align: right;
     background-color: rgba(0, 0, 0, 0.5); /* Add background */
     padding: 10px;
     border-radius: 4px;
+}
+
+.currentSchedule {
+    font-size: 0.6em;
+    z-index: 1;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Add background */
+    max-width: 250px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.scheduleList {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.scheduleList > li {
+    margin-bottom: 10px;
+}
+
+.scheduleList ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.workoutSelectorLeftSide {
+    z-index: 2;
+}
+
+.workoutSelectorRightSide {
+    z-index: 1;
 }

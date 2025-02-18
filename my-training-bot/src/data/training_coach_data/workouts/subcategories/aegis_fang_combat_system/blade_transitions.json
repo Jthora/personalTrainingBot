@@ -1,0 +1,108 @@
+{
+    "name": "Blade Transitions",
+    "description": "Developing seamless transitions between sword, knife, wrist blades, and bucklers for maximum combat efficiency and adaptability.",
+    "workout_groups": [
+        {
+            "name": "Fundamentals of Blade Switching",
+            "description": "Training to switch efficiently between primary and secondary weapons while maintaining combat control.",
+            "workouts": [
+                {
+                    "name": "Basic Weapon Hand Switching",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Practice switching between dominant and non-dominant hands while maintaining a combat-ready stance.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Knife to Sword Quick Draw",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Draw and transition from knife to sword, ensuring smooth motion and immediate combat readiness.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Defensive Buckler to Wrist Blade Deployment",
+                    "duration": "3 sets of 6 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Use the buckler to deflect an attack, then extend the wrist blade for a counter-strike.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Seamless Reverse Grip Transition",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Transition between standard and reverse grips on both knife and sword without losing flow.",
+                    "difficulty_range": [5, 8]
+                }
+            ]
+        },
+        {
+            "name": "Speed-Based Transition Drills",
+            "description": "Developing reaction speed and combat efficiency when switching between weapons in a fight.",
+            "workouts": [
+                {
+                    "name": "Sword to Knife Quick Transition Drill",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Drop the sword into the off-hand while drawing the knife in one motion to maintain combat engagement.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Wrist Blade Quick Deploy & Retract",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Extend and retract the wrist blade while maintaining balance and hand positioning for combat flow.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Buckler Drop to Dual Blade Offense",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "High",
+                    "description": "Drop the buckler and transition into dual-wielding for aggressive counterattacks.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Tactical Weapon Switching Under Pressure",
+                    "duration": "3 sets of 15 seconds",
+                    "intensity": "High",
+                    "description": "React to randomized cues, switching weapons based on situational needs.",
+                    "difficulty_range": [7, 10]
+                }
+            ]
+        },
+        {
+            "name": "Advanced Combat Flow with Blade Transitions",
+            "description": "Training to instinctively switch weapons mid-fight while maintaining control, spacing, and fluidity.",
+            "workouts": [
+                {
+                    "name": "Ambidextrous Blade Flow Drill",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Execute rapid transitions between primary and secondary hands for a non-stop combat sequence.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Blade Feint to Immediate Transition",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "High",
+                    "description": "Fake an initial attack with one weapon, then seamlessly switch to another mid-strike.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Combat Tempo Shifting with Blade Transitions",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Elite",
+                    "description": "Slow down and accelerate weapon transitions based on combat rhythm to control engagements.",
+                    "difficulty_range": [9, 11]
+                },
+                {
+                    "name": "Live Sparring with Weapon Switching",
+                    "duration": "3 rounds of 90 seconds",
+                    "intensity": "Elite",
+                    "description": "Engage in live combat while being required to switch between weapons based on adaptive situations.",
+                    "difficulty_range": [10, 11]
+                }
+            ]
+        }
+    ]
+}

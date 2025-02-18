@@ -1,0 +1,108 @@
+{
+    "name": "Flow Drills",
+    "description": "Developing continuous weapon movement, combat rhythm, and seamless transitions between attacks, defenses, and footwork.",
+    "workout_groups": [
+        {
+            "name": "Fundamentals of Combat Flow",
+            "description": "Training to execute seamless movements with weapons while maintaining control and precision.",
+            "workouts": [
+                {
+                    "name": "Basic Weapon Flow Sequence",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Perform a continuous loop of basic sword, knife, and buckler movements without pausing.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Mirror Hand Flow Drill",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Execute the same movements with both dominant and non-dominant hands to develop equal coordination.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Defensive Flow Drill",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Moderate",
+                    "description": "Move fluidly between blocks, parries, and defensive angles while keeping mobility.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Knife-to-Sword Transition Flow",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Switch between knife and sword mid-combat, ensuring smooth, non-stop movement.",
+                    "difficulty_range": [5, 8]
+                }
+            ]
+        },
+        {
+            "name": "Weapon Switching & Adaptive Movement",
+            "description": "Enhancing the ability to dynamically change weapons and adapt movement in a combat scenario.",
+            "workouts": [
+                {
+                    "name": "Circular Motion Flow Drill",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Move in circular footwork patterns while maintaining offensive strikes and defensive parries.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Blade-to-Buckler Transition Flow",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Switch between offensive sword movements and defensive buckler deflections in a continuous pattern.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Multi-Weapon Continuous Motion Drill",
+                    "duration": "3 sets of 10 reps per side",
+                    "intensity": "High",
+                    "description": "Execute transitions between all weapons (sword, knife, wrist blade, buckler) in one fluid sequence.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Adaptive Combat Flow Sparring",
+                    "duration": "3 sets of 15 seconds",
+                    "intensity": "High",
+                    "description": "React to random opponent attacks and maintain weapon flow without breaking rhythm.",
+                    "difficulty_range": [7, 10]
+                }
+            ]
+        },
+        {
+            "name": "Advanced Combat Flow Mastery",
+            "description": "Training for instinctive, high-speed, and unpredictable flow techniques in full-combat scenarios.",
+            "workouts": [
+                {
+                    "name": "Ambidextrous Combat Flow",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Switch hands and weapons mid-strike while maintaining full control.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Continuous Multi-Strike Chain",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "High",
+                    "description": "Perform a long chain of rapid attacks using both hands without stopping.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Unpredictable Tempo Combat Flow",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Elite",
+                    "description": "Vary attack speeds, switching between slow, deceptive movement and explosive bursts.",
+                    "difficulty_range": [9, 11]
+                },
+                {
+                    "name": "Live Combat Flow Sparring",
+                    "duration": "3 rounds of 90 seconds",
+                    "intensity": "Elite",
+                    "description": "Engage in high-speed sparring with no pre-set movements, focusing on instinctive combat flow.",
+                    "difficulty_range": [10, 11]
+                }
+            ]
+        }
+    ]
+}

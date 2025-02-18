@@ -1,4 +1,5 @@
 export const workoutCategoryPaths: { [key: string]: () => Promise<any> } = {
+    aegis_fang_combat_system: () => import("../data/training_coach_data/workouts/aegis_fang_combat_system.json"),
     agility: () => import("../data/training_coach_data/workouts/agility.json"),
     balance: () => import("../data/training_coach_data/workouts/balance.json"),
     cardio: () => import("../data/training_coach_data/workouts/cardio.json"),

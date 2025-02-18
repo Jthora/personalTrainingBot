@@ -1,0 +1,108 @@
+{
+    "name": "Pistol and Grenade Incorporation",
+    "description": "Training to seamlessly integrate firearms and explosives into melee combat, ensuring fluid weapon transitions and combat effectiveness.",
+    "workout_groups": [
+        {
+            "name": "Fundamentals of Pistol and Grenade Integration",
+            "description": "Developing foundational techniques for incorporating a pistol and grenades into close-quarters combat.",
+            "workouts": [
+                {
+                    "name": "Basic Draw and Fire Drill",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Quickly draw and fire a pistol at close-range targets while maintaining defensive awareness.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Off-Hand Pistol Draw and Transition",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Practice switching hands while firing a pistol to maintain flexibility in combat.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Tactical Grenade Placement",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Moderate",
+                    "description": "Simulate grenade throws, focusing on angle, distance, and cover utilization.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Sword-to-Pistol Transition Drill",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Move seamlessly between melee combat and pistol engagement.",
+                    "difficulty_range": [5, 8]
+                }
+            ]
+        },
+        {
+            "name": "Advanced Pistol and Grenade Tactics",
+            "description": "Enhancing the ability to integrate firearms and explosives fluidly in active combat scenarios.",
+            "workouts": [
+                {
+                    "name": "Multi-Target Pistol & Strike Combination",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Engage multiple targets with a pistol before transitioning into close-quarters melee combat.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Live-Fire Movement Simulation",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Move dynamically between cover while drawing and firing a pistol.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Grenade Suppression & Close Engagement",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Simulate using a grenade to force an opponent into an attackable position.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Weapon Switching Under Pressure",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "High",
+                    "description": "Train rapid transitions between pistol, melee weapon, and grenade usage in combat.",
+                    "difficulty_range": [7, 10]
+                }
+            ]
+        },
+        {
+            "name": "Elite Pistol and Grenade Combat Execution",
+            "description": "Mastering advanced situational combat techniques using firearms and explosives.",
+            "workouts": [
+                {
+                    "name": "Blind-Side Pistol & Grenade Maneuvers",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Train to attack from blind spots, using grenades to redirect an opponent’s focus.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Multi-Opponent Ranged & Melee Engagement",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "High",
+                    "description": "Engage one opponent at range while preparing for melee combat with another.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Explosive Entry & Pistol Domination",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Elite",
+                    "description": "Simulate breaching into a combat zone using grenades and rapid pistol engagement.",
+                    "difficulty_range": [9, 11]
+                },
+                {
+                    "name": "Live Combat Scenario with Weapon Transitions",
+                    "duration": "3 rounds of 90 seconds",
+                    "intensity": "Elite",
+                    "description": "Engage in high-speed combat with full weapon integration, transitioning dynamically between firearms, explosives, and melee.",
+                    "difficulty_range": [10, 11]
+                }
+            ]
+        }
+    ]
+}

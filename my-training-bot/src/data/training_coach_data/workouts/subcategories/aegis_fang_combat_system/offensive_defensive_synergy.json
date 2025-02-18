@@ -1,0 +1,108 @@
+{
+    "name": "Offensive-Defensive Synergy",
+    "description": "Training to seamlessly blend offensive strikes with defensive counters, using dual-weapon transitions, shields, and tactical redirections.",
+    "workout_groups": [
+        {
+            "name": "Fundamentals of Offensive-Defensive Balance",
+            "description": "Building the core principles of attacking and defending in the same motion.",
+            "workouts": [
+                {
+                    "name": "Basic Sword & Buckler Flow",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Strike with the sword while keeping the buckler in defensive readiness, alternating between attack and defense.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Knife Evasion & Counter Cut",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Practice knife-based evasion movements followed by immediate counter-slashes.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Basic Parry & Strike Drill",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Parry an incoming strike with the off-hand and respond with a quick counterattack.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Buckler Deflection into Wrist Blade Counter",
+                    "duration": "3 sets of 6 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Redirect an attack with the buckler, then extend the wrist blade for a close-range counter.",
+                    "difficulty_range": [5, 8]
+                }
+            ]
+        },
+        {
+            "name": "Reactive Defense to Offensive Flow",
+            "description": "Developing the ability to instinctively counter an opponent’s attack with immediate offensive response.",
+            "workouts": [
+                {
+                    "name": "Sword & Buckler Counter Timing",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Time your blocks with immediate slashes, training precision and speed.",
+                    "difficulty_range": [5, 8]
+                },
+                {
+                    "name": "Knife-Only Counter Flow",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Practice knife parrying, redirection, and immediate countering in a continuous motion.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Blade Control During Deflection",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Use minimal energy to deflect a weapon attack while keeping your own blade in a position to counter.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Defensive Buckler Feint into Attack",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Fake a defensive buckler movement to bait an attack, then immediately strike with the sword.",
+                    "difficulty_range": [7, 10]
+                }
+            ]
+        },
+        {
+            "name": "High-Speed Defensive Adaptation",
+            "description": "Training defensive responses under high-pressure situations where timing and reflexes are critical.",
+            "workouts": [
+                {
+                    "name": "Multi-Strike Parry & Attack Drill",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Defend against multiple strikes in succession while maintaining balance and counter opportunities.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Ambidextrous Block & Counter",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "High",
+                    "description": "Use both dominant and non-dominant hands to block and counter seamlessly.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Wrist Blade Retraction to Knife Follow-Up",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "Elite",
+                    "description": "Use a quick wrist blade strike, retract it, then immediately transition to knife combat.",
+                    "difficulty_range": [8, 11]
+                },
+                {
+                    "name": "Evade, Block, and Counter Sparring",
+                    "duration": "3 rounds of 90 seconds",
+                    "intensity": "Elite",
+                    "description": "Train in live defensive-offensive scenarios, where every move must flow into the next.",
+                    "difficulty_range": [9, 11]
+                }
+            ]
+        }
+    ]
+}

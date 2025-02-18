@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import WorkoutCategoryCache from '../../cache/WorkoutCategoryCache';
+import WorkoutScheduleStore from '../../store/WorkoutScheduleStore';
 import { WorkoutCategory } from '../../types/WorkoutCategory';
+import { WorkoutSet } from '../../types/WorkoutSchedule';
 import styles from './WorkoutSelector.module.css';
 import useWorkoutSchedule from '../../hooks/useWorkoutSchedule';
 
@@ -69,6 +71,15 @@ const WorkoutSelector: React.FC = () => {
         setWorkoutCategories([...workoutCategories]); // Trigger re-render
     };
 
+    const unselectAll = () => {
+        const cache = WorkoutCategoryCache.getInstance();
+        cache.selectedCategories.clear();
+        cache.selectedSubCategories.clear();
+        cache.selectedWorkoutGroups.clear();
+        cache.selectedWorkouts.clear();
+        setWorkoutCategories([...workoutCategories]); // Trigger re-render
+    };
+
     const createNewWorkoutSchedule = async () => {
         console.log('Creating a new workout schedule...');
         await createNewSchedule();
@@ -94,24 +105,16 @@ const WorkoutSelector: React.FC = () => {
             });
         });
 
-        cache.selectedSubCategories.forEach(subCategoryId => {
-            const subCategory = workoutCategories.flatMap(category => category.subCategories).find(sub => sub.id === subCategoryId);
-            if (subCategory) {
-                selectedSubCategoryCount++;
-            }
-        });
-
-        cache.selectedWorkoutGroups.forEach(groupId => {
-            const group = workoutCategories.flatMap(category => category.subCategories).flatMap(subCategory => subCategory.workoutGroups).find(group => group.id === groupId);
-            if (group) {
-                selectedGroupCount++;
-            }
-        });
-
-        cache.selectedWorkouts.forEach(workoutId => {
-            const workout = workoutCategories.flatMap(category => category.subCategories).flatMap(subCategory => subCategory.workoutGroups).flatMap(group => group.workouts).find(workout => workout.id === workoutId);
-            if (workout) {
-                selectedWorkoutCount++;
+        cache.selectedCategories.forEach(categoryId => {
+            const category = workoutCategories.find(cat => cat.id === categoryId);
+            if (category) {
+                selectedSubCategoryCount += category.subCategories.length;
+                category.subCategories.forEach(subCategory => {
+                    selectedGroupCount += subCategory.workoutGroups.length;
+                    subCategory.workoutGroups.forEach(group => {
+                        selectedWorkoutCount += group.workouts.length;
+                    });
+                });
             }
         });
 
@@ -120,90 +123,125 @@ const WorkoutSelector: React.FC = () => {
             subCategoryCount,
             groupCount,
             workoutCount,
+            selectedCategoryCount: cache.selectedCategories.size,
             selectedSubCategoryCount,
             selectedGroupCount,
             selectedWorkoutCount
         };
     };
 
+    const getCurrentSchedule = () => {
+        const schedule = WorkoutScheduleStore.getScheduleSync();
+        return schedule ? schedule.scheduleItems : [];
+    };
+
     const stats = getStats();
+    const currentSchedule = getCurrentSchedule();
 
     return (
-        <div className={styles.workoutSelector}>
-            <h1>Workout Selector</h1>
-            <div className={styles.workoutControls}>
-                <button onClick={createNewWorkoutSchedule} className={styles.createNewScheduleButton}>Generate Random Workout Schedule</button>
-                <button onClick={selectAll} className={styles.selectAllButton}>Select All Workouts</button>
-                <div className={styles.stats}>
-                <h2>Total In Database</h2>
-                    <p>Categories: {stats.categoryCount}</p>
-                    <p>SubCategories: {stats.subCategoryCount}</p>
-                    <p>Groups: {stats.groupCount}</p>
-                    <p>Workouts: {stats.workoutCount}</p>
+        <div>
+            <div className={styles.workoutSelector}>
+                <div className={styles.workoutSelectorLeftSide}>
+                    <h1>Workout Selector</h1>
+                    <h3>Workout Categories</h3>
+                    {workoutCategories.map(category => (
+                        <div key={category.id} className={styles.category}>
+                            <input
+                                type="checkbox"
+                                checked={WorkoutCategoryCache.getInstance().isCategorySelected(category.id)}
+                                onChange={() => toggleCategorySelection(category.id)}
+                            />
+                            <span>{category.name}</span>
+                            <button className={styles.dropdownButton} onClick={() => toggleVisibility(category.id, setVisibleCategories)}>
+                                {visibleCategories.has(category.id) ? '▬' : '▼'}
+                            </button>
+                            {visibleCategories.has(category.id) && (
+                                <div className={styles.subCategories}>
+                                    {category.subCategories.map(subCategory => (
+                                        <div key={subCategory.id} className={styles.subCategory}>
+                                            <input
+                                                type="checkbox"
+                                                checked={WorkoutCategoryCache.getInstance().isSubCategorySelected(subCategory.id)}
+                                                onChange={() => toggleSubCategorySelection(subCategory.id)}
+                                            />
+                                            <span>{subCategory.name}</span>
+                                            <button className={styles.dropdownButton} onClick={() => toggleVisibility(subCategory.id, setVisibleSubCategories)}>
+                                                {visibleSubCategories.has(subCategory.id) ? '▬' : '▼'}
+                                            </button>
+                                            {visibleSubCategories.has(subCategory.id) && (
+                                                <div className={styles.groups}>
+                                                    {subCategory.workoutGroups.map(group => (
+                                                        <div key={group.id} className={styles.group}>
+                                                            <input
+                                                                type="checkbox"
+                                                                checked={WorkoutCategoryCache.getInstance().isWorkoutGroupSelected(group.id)}
+                                                                onChange={() => toggleGroupSelection(group.id)}
+                                                            />
+                                                            <span>{group.name}</span>
+                                                            <button className={styles.dropdownButton} onClick={() => toggleVisibility(group.id, setVisibleGroups)}>
+                                                                {visibleGroups.has(group.id) ? '▬' : '▼'}
+                                                            </button>
+                                                            {visibleGroups.has(group.id) && (
+                                                                <div className={styles.workouts}>
+                                                                    {group.workouts.map(workout => (
+                                                                        <div key={workout.id} className={styles.workout}>
+                                                                            <input
+                                                                                type="checkbox"
+                                                                                checked={WorkoutCategoryCache.getInstance().isWorkoutSelected(workout.id)}
+                                                                                onChange={() => toggleWorkoutSelection(workout.id)}
+                                                                            />
+                                                                            <span>{workout.name}</span>
+                                                                        </div>
+                                                                    ))}
+                                                                </div>
+                                                            )}
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            )}
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+                    ))}
+                </div>
+                <div className={styles.workoutSelectorRightSide}>
+                    <div className={styles.workoutControls}>
+                        <button onClick={createNewWorkoutSchedule} className={styles.createNewScheduleButton}>Generate Random Workout Schedule</button>
+                        <button onClick={selectAll} className={styles.selectAllButton}>Select All</button>
+                        <button onClick={unselectAll} className={styles.unselectAllButton}>Unselect All</button>
+                        <div className={styles.stats}>
+                            <h2>Selected Workouts</h2>
+                            <p>Categories: {stats.selectedCategoryCount} / {stats.categoryCount}</p>
+                            <p>SubCategories: {stats.selectedSubCategoryCount} / {stats.subCategoryCount}</p>
+                            <p>Groups: {stats.selectedGroupCount} / {stats.groupCount}</p>
+                            <p>Workouts: {stats.selectedWorkoutCount} / {stats.workoutCount}</p>
+                        </div>
+                        <div className={styles.currentSchedule}>
+                            <h3>Current Workout Schedule</h3>
+                            <ul className={styles.scheduleList}>
+                                {currentSchedule.map((item, index) => (
+                                    <li key={index}>
+                                        {item instanceof WorkoutSet ? (
+                                            <div>
+                                                <span>Workout Set</span>
+                                                <ul>
+                                                    {item.workouts.map(([workout], idx) => (
+                                                        <li key={idx}>{workout.name}</li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        ) : (
+                                            <span>{item.name}</span>
+                                        )}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <h3>Workout Categories</h3>
-            {workoutCategories.map(category => (
-                <div key={category.id} className={styles.category}>
-                    <input
-                        type="checkbox"
-                        checked={WorkoutCategoryCache.getInstance().isCategorySelected(category.id)}
-                        onChange={() => toggleCategorySelection(category.id)}
-                    />
-                    <span>{category.name}</span>
-                    <button className={styles.dropdownButton} onClick={() => toggleVisibility(category.id, setVisibleCategories)}>
-                        {visibleCategories.has(category.id) ? '▬' : '▼'}
-                    </button>
-                    {visibleCategories.has(category.id) && (
-                        <div className={styles.subCategories}>
-                            {category.subCategories.map(subCategory => (
-                                <div key={subCategory.id} className={styles.subCategory}>
-                                    <input
-                                        type="checkbox"
-                                        checked={WorkoutCategoryCache.getInstance().isSubCategorySelected(subCategory.id)}
-                                        onChange={() => toggleSubCategorySelection(subCategory.id)}
-                                    />
-                                    <span>{subCategory.name}</span>
-                                    <button className={styles.dropdownButton} onClick={() => toggleVisibility(subCategory.id, setVisibleSubCategories)}>
-                                        {visibleSubCategories.has(subCategory.id) ? '▬' : '▼'}
-                                    </button>
-                                    {visibleSubCategories.has(subCategory.id) && (
-                                        <div className={styles.groups}>
-                                            {subCategory.workoutGroups.map(group => (
-                                                <div key={group.id} className={styles.group}>
-                                                    <input
-                                                        type="checkbox"
-                                                        checked={WorkoutCategoryCache.getInstance().isWorkoutGroupSelected(group.id)}
-                                                        onChange={() => toggleGroupSelection(group.id)}
-                                                    />
-                                                    <span>{group.name}</span>
-                                                    <button className={styles.dropdownButton} onClick={() => toggleVisibility(group.id, setVisibleGroups)}>
-                                                        {visibleGroups.has(group.id) ? '▬' : '▼'}
-                                                    </button>
-                                                    {visibleGroups.has(group.id) && (
-                                                        <div className={styles.workouts}>
-                                                            {group.workouts.map(workout => (
-                                                                <div key={workout.id} className={styles.workout}>
-                                                                    <input
-                                                                        type="checkbox"
-                                                                        checked={WorkoutCategoryCache.getInstance().isWorkoutSelected(workout.id)}
-                                                                        onChange={() => toggleWorkoutSelection(workout.id)}
-                                                                    />
-                                                                    <span>{workout.name}</span>
-                                                                </div>
-                                                            ))}
-                                                        </div>
-                                                    )}
-                                                </div>
-                                            ))}
-                                        </div>
-                                    )}
-                                </div>
-                            ))}
-                        </div>
-                    )}
-                </div>
-            ))}
         </div>
     );
 };

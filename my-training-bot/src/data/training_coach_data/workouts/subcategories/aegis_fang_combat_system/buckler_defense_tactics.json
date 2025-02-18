@@ -1,0 +1,108 @@
+{
+    "name": "Buckler Defense Tactics",
+    "description": "Training to master defensive techniques using twin bucklers, including redirections, counterattacks, and shield-integrated movement.",
+    "workout_groups": [
+        {
+            "name": "Fundamentals of Buckler Defense",
+            "description": "Developing core defensive skills using twin bucklers for blocking, deflecting, and tactical positioning.",
+            "workouts": [
+                {
+                    "name": "Basic Buckler Guard Positions",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Hold different buckler guard positions while maintaining balance and stance control.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Defensive Buckler Angling Drill",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Practice adjusting the buckler angle to deflect incoming strikes effectively.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Basic Shield Bashing Mechanics",
+                    "duration": "3 sets of 8 reps",
+                    "intensity": "Moderate",
+                    "description": "Use controlled forward movement to perform defensive shield bashes.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Buckler-to-Wrist Blade Transition",
+                    "duration": "3 sets of 6 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Deflect an attack with the buckler, then counter-strike using a wrist blade extension.",
+                    "difficulty_range": [5, 8]
+                }
+            ]
+        },
+        {
+            "name": "Defensive Redirection & Counter",
+            "description": "Developing techniques for smoothly redirecting attacks and countering with precision.",
+            "workouts": [
+                {
+                    "name": "Buckler Parry & Counter Cut",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Parry an attack using the buckler and immediately follow with a counter-cut.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Defensive Roll & Buckler Guard Reset",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Roll away from an attack and reposition into a solid defensive stance.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Multi-Angle Buckler Redirection Drill",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Redirect attacks from different angles while maintaining control of the engagement.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Buckler Drop to Dual Blade Counterattack",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "High",
+                    "description": "Drop a buckler mid-fight to transition into a more aggressive dual-blade offense.",
+                    "difficulty_range": [7, 10]
+                }
+            ]
+        },
+        {
+            "name": "Elite Defensive Buckler Combat",
+            "description": "Advanced drills to maximize defensive efficiency and integrate counterattacks at high speeds.",
+            "workouts": [
+                {
+                    "name": "Ambidextrous Buckler Deflection",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Use both hands interchangeably to deflect attacks and maintain defensive readiness.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Buckler Feint to Off-Hand Strike",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "High",
+                    "description": "Fake a block with the buckler, then immediately strike from the off-hand position.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Combat Shield Bashing Sequences",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Elite",
+                    "description": "Deliver controlled but forceful shield bashes to create openings for follow-up strikes.",
+                    "difficulty_range": [9, 11]
+                },
+                {
+                    "name": "Live Combat Buckler Defense Sparring",
+                    "duration": "3 rounds of 90 seconds",
+                    "intensity": "Elite",
+                    "description": "Engage in high-speed sparring while maintaining defensive positioning using twin bucklers.",
+                    "difficulty_range": [10, 11]
+                }
+            ]
+        }
+    ]
+}

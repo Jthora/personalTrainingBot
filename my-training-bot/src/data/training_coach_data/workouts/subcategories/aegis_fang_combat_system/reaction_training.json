@@ -1,0 +1,108 @@
+{
+    "name": "Reaction Training",
+    "description": "Training to enhance reflex speed, defensive reaction time, and combat decision-making in high-pressure scenarios.",
+    "workout_groups": [
+        {
+            "name": "Fundamentals of Reaction Timing",
+            "description": "Building core reactionary speed and instinctive defensive responses.",
+            "workouts": [
+                {
+                    "name": "Basic Reflex Response Drill",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Moderate",
+                    "description": "React to a visual or auditory cue by performing a quick defensive movement.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Hand Speed Reaction Drill",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Rapidly move hands in response to a random directional command.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Dodge & Return Drill",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Dodge an incoming simulated strike and return with an immediate counterattack.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Low-Light Reaction Training",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Perform reaction drills under dim or flashing lights to simulate real-world unpredictability.",
+                    "difficulty_range": [5, 8]
+                }
+            ]
+        },
+        {
+            "name": "Unpredictable Attack & Defense Scenarios",
+            "description": "Enhancing rapid adaptation to real-time combat threats.",
+            "workouts": [
+                {
+                    "name": "Randomized Strike Evasion Drill",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "React to randomly assigned attack patterns, dodging and countering accordingly.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Multi-Directional Dodge & Counter",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Evade strikes from various angles while returning rapid counterattacks.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Reaction Chain Training",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Perform a sequence of defensive and offensive actions triggered by random stimuli.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Sparring-Based Reflex Training",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "High",
+                    "description": "Engage in light sparring where the primary focus is on reaction speed.",
+                    "difficulty_range": [7, 10]
+                }
+            ]
+        },
+        {
+            "name": "Elite Combat Reaction Mastery",
+            "description": "Mastering instantaneous reactions and strategic adaptability in high-stress engagements.",
+            "workouts": [
+                {
+                    "name": "Ambidextrous Reaction Drill",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Switch between left and right-handed defensive and offensive reactions in response to unpredictable threats.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Blindfolded Reflex Training",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "High",
+                    "description": "Use auditory and tactile cues to react without visual input, increasing combat awareness.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Unpredictable Multi-Opponent Defense",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Elite",
+                    "description": "React and defend against simultaneous attacks from multiple angles.",
+                    "difficulty_range": [9, 11]
+                },
+                {
+                    "name": "Live Combat Reaction Sparring",
+                    "duration": "3 rounds of 90 seconds",
+                    "intensity": "Elite",
+                    "description": "Engage in high-speed sparring where reactions are tested under real-time conditions.",
+                    "difficulty_range": [10, 11]
+                }
+            ]
+        }
+    ]
+}

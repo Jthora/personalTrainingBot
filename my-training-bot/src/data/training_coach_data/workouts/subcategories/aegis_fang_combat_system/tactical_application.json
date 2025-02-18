@@ -1,0 +1,108 @@
+{
+    "name": "Tactical Application",
+    "description": "Training for real-world combat applications, ensuring adaptive decision-making and practical execution of combat techniques.",
+    "workout_groups": [
+        {
+            "name": "Fundamental Tactical Maneuvers",
+            "description": "Building a foundation of strategic movement, weapon control, and combat efficiency.",
+            "workouts": [
+                {
+                    "name": "Basic Combat Entry & Exit",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Practice entering combat range, executing a strike, and disengaging safely.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Angle Control & Positional Advantage",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Move at different angles while maintaining an offensive advantage.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Cover & Concealment Utilization",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Moderate",
+                    "description": "Practice moving between cover points while maintaining combat readiness.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Controlled Striking Under Pressure",
+                    "duration": "3 sets of 10 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Execute controlled strikes while maintaining defensive awareness.",
+                    "difficulty_range": [5, 8]
+                }
+            ]
+        },
+        {
+            "name": "Adaptive Combat Scenarios",
+            "description": "Training to react dynamically to evolving combat situations.",
+            "workouts": [
+                {
+                    "name": "Unpredictable Threat Response Drill",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "React to randomized combat scenarios with immediate decision-making.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Multi-Weapon Transition in Combat",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Switch between different weapons mid-combat to maintain advantage.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Reactive Tactical Sparring",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Engage in sparring with randomized attack and defense conditions.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Engagement & Disengagement Timing",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "High",
+                    "description": "Control combat tempo by choosing when to engage or retreat.",
+                    "difficulty_range": [7, 10]
+                }
+            ]
+        },
+        {
+            "name": "Elite Tactical Combat Execution",
+            "description": "Mastering high-level situational combat efficiency and decision-making.",
+            "workouts": [
+                {
+                    "name": "Combat Psychology & Deception Tactics",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Use mental conditioning and misdirection to gain an advantage in combat.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Multi-Opponent Tactical Strategy",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "High",
+                    "description": "Engage and control multiple opponents through movement and attack prioritization.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Combat in Restricted Environments",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Elite",
+                    "description": "Adapt techniques to fight effectively in confined spaces or uneven terrain.",
+                    "difficulty_range": [9, 11]
+                },
+                {
+                    "name": "Live Tactical Combat Engagement",
+                    "duration": "3 rounds of 90 seconds",
+                    "intensity": "Elite",
+                    "description": "Apply all tactical skills in a full-speed, high-pressure combat scenario.",
+                    "difficulty_range": [10, 11]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "name": "Aegis Fang Combat System",
+    "description": "A hybrid multi-weapon combat system combining sword, knife, twin bucklers, and retractable wrist blades for a seamless offensive-defensive flow.",
+    "subcategories": {
+        "dual_weapon_fundamentals": "dual_weapon_fundamentals.json",
+        "offensive_defensive_synergy": "offensive_defensive_synergy.json",
+        "blade_transitions": "blade_transitions.json",
+        "buckler_defense_tactics": "buckler_defense_tactics.json",
+        "ambidextrous_weapon_training": "ambidextrous_weapon_training.json",
+        "flow_drills": "flow_drills.json",
+        "combat_positioning": "combat_positioning.json",
+        "reaction_training": "reaction_training.json",
+        "tactical_application": "tactical_application.json",
+        "pistol_and_grenade_incorporation": "pistol_and_grenade_incorporation.json"
+    }
+}

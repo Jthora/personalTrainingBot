@@ -1,0 +1,108 @@
+{
+    "name": "Combat Positioning",
+    "description": "Training to control combat space, angles, and movement for superior offensive and defensive positioning.",
+    "workout_groups": [
+        {
+            "name": "Fundamentals of Combat Positioning",
+            "description": "Developing core movement patterns for maintaining advantageous positions in a fight.",
+            "workouts": [
+                {
+                    "name": "Basic Combat Stance Control",
+                    "duration": "3 sets of 30 seconds",
+                    "intensity": "Moderate",
+                    "description": "Maintain and adjust foundational stances while ensuring balance and mobility.",
+                    "difficulty_range": [3, 5]
+                },
+                {
+                    "name": "Lateral Step & Strike Drill",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Step sideways while striking, maintaining an optimal angle against the opponent.",
+                    "difficulty_range": [4, 6]
+                },
+                {
+                    "name": "Forward & Backward Engagement Drill",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "Moderate",
+                    "description": "Advance and retreat while keeping a stable combat stance and ready positioning.",
+                    "difficulty_range": [4, 7]
+                },
+                {
+                    "name": "Angle Step & Redirection",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "Moderate",
+                    "description": "Move at 45-degree angles to flank an opponent or escape an engagement.",
+                    "difficulty_range": [5, 8]
+                }
+            ]
+        },
+        {
+            "name": "Positioning for Defensive Control",
+            "description": "Enhancing movement to gain a tactical advantage while minimizing exposure to attacks.",
+            "workouts": [
+                {
+                    "name": "Cut-Step Evasion Drill",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Use quick cut-steps to reposition and avoid direct attacks while staying in range.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Bait & Counter Positioning",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Intentionally expose an opening to bait an attack, then reposition to counter.",
+                    "difficulty_range": [6, 9]
+                },
+                {
+                    "name": "Circling & Off-Line Maneuvering",
+                    "duration": "3 sets of 10 reps",
+                    "intensity": "High",
+                    "description": "Use circular movement to maintain control of the engagement, avoiding direct lines of attack.",
+                    "difficulty_range": [7, 10]
+                },
+                {
+                    "name": "Multiple Opponent Positioning Drill",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "High",
+                    "description": "Position yourself in a way that keeps multiple opponents lined up to reduce attack vectors.",
+                    "difficulty_range": [7, 10]
+                }
+            ]
+        },
+        {
+            "name": "Advanced Combat Positioning Tactics",
+            "description": "Mastering superior spatial control and strategic movement in high-pressure combat scenarios.",
+            "workouts": [
+                {
+                    "name": "Ambidextrous Position Switching",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "High",
+                    "description": "Switch dominant and non-dominant sides mid-combat while maintaining control of angles.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Unpredictable Footwork Drill",
+                    "duration": "3 sets of 8 reps per side",
+                    "intensity": "High",
+                    "description": "Vary movement patterns between fast and slow pacing to disrupt an opponent's rhythm.",
+                    "difficulty_range": [8, 10]
+                },
+                {
+                    "name": "Environmental Awareness Training",
+                    "duration": "3 sets of 12 reps",
+                    "intensity": "Elite",
+                    "description": "Use objects, obstacles, and surroundings to optimize positioning advantages.",
+                    "difficulty_range": [9, 11]
+                },
+                {
+                    "name": "Live Combat Positioning Sparring",
+                    "duration": "3 rounds of 90 seconds",
+                    "intensity": "Elite",
+                    "description": "Engage in sparring while focusing on controlling space and positioning over direct attacks.",
+                    "difficulty_range": [10, 11]
+                }
+            ]
+        }
+    ]
+}

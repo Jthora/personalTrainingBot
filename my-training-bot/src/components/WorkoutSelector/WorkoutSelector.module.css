@@ -84,14 +84,25 @@
     transform: scale(1.05); /* Add animation */
 }
 
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
 .stats {
     z-index: 1;
     margin-top: 10px;
     color: white;
-    text-align: right;
     background-color: rgba(0, 0, 0, 0.5); /* Add background */
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     border-radius: 4px;
+    position: absolute;
+    left: 300px;
+    top: -20px;
+    margin-left: 20px;
+    font-size: 0.75rem;
 }
 
 .currentSchedule {

@@ -142,7 +142,16 @@ const WorkoutSelector: React.FC = () => {
         <div>
             <div className={styles.workoutSelector}>
                 <div className={styles.workoutSelectorLeftSide}>
-                    <h1>Workout Selector</h1>
+                    <div className={styles.header}>
+                        <h1>Workout Selector</h1>
+                        <div className={styles.stats}>
+                            <h2>Active Workouts</h2>
+                            <p>Categories: {stats.selectedCategoryCount} / {stats.categoryCount}</p>
+                            <p>SubCategories: {stats.selectedSubCategoryCount} / {stats.subCategoryCount}</p>
+                            <p>Groups: {stats.selectedGroupCount} / {stats.groupCount}</p>
+                            <p>Workouts: {stats.selectedWorkoutCount} / {stats.workoutCount}</p>
+                        </div>
+                    </div>
                     <h3>Workout Categories</h3>
                     {workoutCategories.map(category => (
                         <div key={category.id} className={styles.category}>
@@ -211,13 +220,6 @@ const WorkoutSelector: React.FC = () => {
                         <button onClick={createNewWorkoutSchedule} className={styles.createNewScheduleButton}>Generate Random Workout Schedule</button>
                         <button onClick={selectAll} className={styles.selectAllButton}>Select All</button>
                         <button onClick={unselectAll} className={styles.unselectAllButton}>Unselect All</button>
-                        <div className={styles.stats}>
-                            <h2>Selected Workouts</h2>
-                            <p>Categories: {stats.selectedCategoryCount} / {stats.categoryCount}</p>
-                            <p>SubCategories: {stats.selectedSubCategoryCount} / {stats.subCategoryCount}</p>
-                            <p>Groups: {stats.selectedGroupCount} / {stats.groupCount}</p>
-                            <p>Workouts: {stats.selectedWorkoutCount} / {stats.workoutCount}</p>
-                        </div>
                         <div className={styles.currentSchedule}>
                             <h3>Current Workout Schedule</h3>
                             <ul className={styles.scheduleList}>

@@ -11,7 +11,6 @@ const WorkoutSelector: React.FC = () => {
     const [visibleCategories, setVisibleCategories] = useState<Set<string>>(new Set());
     const [visibleSubCategories, setVisibleSubCategories] = useState<Set<string>>(new Set());
     const [visibleGroups, setVisibleGroups] = useState<Set<string>>(new Set());
-    const { createNewSchedule } = useWorkoutSchedule();
 
     useEffect(() => {
         const cache = WorkoutCategoryCache.getInstance();
@@ -80,11 +79,6 @@ const WorkoutSelector: React.FC = () => {
         setWorkoutCategories([...workoutCategories]); // Trigger re-render
     };
 
-    const createNewWorkoutSchedule = async () => {
-        console.log('Creating a new workout schedule...');
-        await createNewSchedule();
-    };
-
     const getStats = () => {
         let subCategoryCount = 0;
         let groupCount = 0;
@@ -130,13 +124,7 @@ const WorkoutSelector: React.FC = () => {
         };
     };
 
-    const getCurrentSchedule = () => {
-        const schedule = WorkoutScheduleStore.getScheduleSync();
-        return schedule ? schedule.scheduleItems : [];
-    };
-
     const stats = getStats();
-    const currentSchedule = getCurrentSchedule();
 
     return (
         <div>
@@ -217,30 +205,8 @@ const WorkoutSelector: React.FC = () => {
                 </div>
                 <div className={styles.workoutSelectorRightSide}>
                     <div className={styles.workoutControls}>
-                        <button onClick={createNewWorkoutSchedule} className={styles.createNewScheduleButton}>Generate Random Workout Schedule</button>
                         <button onClick={selectAll} className={styles.selectAllButton}>Select All</button>
                         <button onClick={unselectAll} className={styles.unselectAllButton}>Unselect All</button>
-                        <div className={styles.currentSchedule}>
-                            <h3>Current Workout Schedule</h3>
-                            <ul className={styles.scheduleList}>
-                                {currentSchedule.map((item, index) => (
-                                    <li key={index}>
-                                        {item instanceof WorkoutSet ? (
-                                            <div>
-                                                <span>Workout Set</span>
-                                                <ul>
-                                                    {item.workouts.map(([workout], idx) => (
-                                                        <li key={idx}>{workout.name}</li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                        ) : (
-                                            <span>{item.name}</span>
-                                        )}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>

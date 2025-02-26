@@ -1,0 +1,16 @@
+.schedulesSidebar {
+    width: 100%;
+    background-color: #0e3a66;
+    padding: var(--padding);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.scrollableContent {
+    /* Add your styles here */
+}

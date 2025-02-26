@@ -1,0 +1,30 @@
+@import '../../styles/theme.css';
+
+.pageContainer {
+    padding: var(--padding);
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.contentContainer {
+    display: flex;
+    margin-top: var(--padding);
+    flex: 1;
+}
+
+.schedulesWindowContainer {
+    flex: 2;
+    padding: 0 var(--padding);
+}
+
+.schedulesSidebarContainer {
+    width: 25%;
+    padding-left: var(--padding);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

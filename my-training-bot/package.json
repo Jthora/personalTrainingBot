@@ -16,6 +16,8 @@
   },
   "dependencies": {
     "dayjs": "^1.11.13",
+    "dotenv": "^16.4.7",
+    "ethers": "^6.13.5",
     "fs": "^0.0.1-security",
     "howler": "^2.2.4",
     "katex": "^0.16.21",
@@ -24,6 +26,7 @@
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.1.5",
     "uuid": "^11.0.5",
+    "wttp-handler": "^2.0.33",
     "zustand": "^5.0.3"
   },
   "devDependencies": {

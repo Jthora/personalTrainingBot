@@ -14,11 +14,13 @@
     display: flex;
     margin-top: var(--padding);
     flex: 1;
+    overflow: hidden;
 }
 
 .schedulesWindowContainer {
     flex: 2;
     padding: 0 var(--padding);
+    overflow: hidden;
 }
 
 .schedulesSidebarContainer {
@@ -27,4 +29,5 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    overflow: hidden;
 }

@@ -98,3 +98,18 @@ export class WorkoutBlock {
         nextWorkoutSet.workouts.forEach(workout => workout[1] = false); // Reset completion state for the next workout set
     }
 }
+
+export class CustomWorkoutSchedule {
+    id: string;
+    name: string;
+    description: string;
+    workoutSchedule: WorkoutSchedule;
+
+    constructor(name: string, description: string, workoutSchedule: WorkoutSchedule) {
+        this.id = new Date().toISOString();
+        this.name = name;
+        this.description = description;
+        this.workoutSchedule = workoutSchedule;
+    }
+}
+

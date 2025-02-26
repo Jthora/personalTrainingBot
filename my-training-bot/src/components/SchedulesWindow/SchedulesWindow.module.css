@@ -1,3 +1,9 @@
 .schedulesWindow {
-    /* Add your styles here */
+    padding: 10px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.createNewScheduleButton {
+    margin-bottom: 10px;
 }

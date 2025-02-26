@@ -1,0 +1,116 @@
+.customScheduleCreatorView {
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background: transparent;
+    color: white;
+    height: 100%;
+    overflow: hidden;
+}
+
+.selector, .workoutList, .workoutBlockCreator, .schedulePreview, .existingSchedules {
+    margin-bottom: 10px;
+}
+
+.workoutList {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.workoutBlockCreator {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.schedulePreview {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    overflow-y: auto;
+    margin-bottom: 100px;
+}
+
+.schedulePreview ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.schedulePreview li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.schedulePreview li div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.schedulePreview li span {
+    font-weight: bold;
+}
+
+.schedulePreview li::before {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 5px;
+}
+
+.removeButton::before, .moveButton::before {
+    font-weight: 900;
+    margin-right: 5px;
+}
+
+.existingSchedules select {
+    width: 100%;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}
+
+.leftDivision, .rightDivision {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.topButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+button {
+    margin: 5px 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: not-allowed;
+}

@@ -24,8 +24,11 @@ const WorkoutScheduleStore = {
                                 return [reconstructedWorkout, completed];
                             });
                             return new WorkoutSet(workouts);
-                        } else {
+                        } else if (item.name && item.description && item.duration && item.intervalDetails) {
                             return new WorkoutBlock(item.name, item.description, item.duration, item.intervalDetails);
+                        } else {
+                            console.warn('Unknown item type in schedule:', item);
+                            return item;
                         }
                     }),
                     parsedSchedule.difficultySettings
@@ -71,8 +74,11 @@ const WorkoutScheduleStore = {
                                 return [reconstructedWorkout, completed];
                             });
                             return new WorkoutSet(workouts);
-                        } else {
+                        } else if (item.name && item.description && item.duration && item.intervalDetails) {
                             return new WorkoutBlock(item.name, item.description, item.duration, item.intervalDetails);
+                        } else {
+                            console.warn('Unknown item type in schedule:', item);
+                            return item;
                         }
                     }),
                     parsedSchedule.difficultySettings

@@ -10,6 +10,8 @@
     padding: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 1);
     z-index: 1000;
+    width: 80%;
+    max-width: 800px;
 }
 
 .popupContent {
@@ -21,6 +23,7 @@
 
 .divisionContainer {
     display: flex;
+    width: 100%;
     gap: 20px;
 }
 
@@ -30,20 +33,26 @@
     gap: 10px;
 }
 
-.selector {
-    margin-bottom: 10px;
+.leftDivision {
+    flex: 1;
+    align-items: end;
 }
 
-.workoutList {
-    margin-bottom: 10px;
+.rightDivision {
+    flex: 2;
     overflow-y: auto;
-    max-height: calc(36vh);
+    max-height: 300px;
 }
 
-.selectedWorkouts {
-    margin-bottom: 10px;
-    overflow-y: auto;
-    max-height: calc(36vh);
+.dayItem {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 10px;
 }
 
 button {
@@ -61,3 +70,9 @@ button:disabled {
     border: 1px solid rgba(255, 255, 255, 0.1);
     cursor: not-allowed;
 }
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+

@@ -12,7 +12,7 @@
 }
 
 .selector, .workoutList, .workoutBlockCreator, .schedulePreview, .existingSchedules {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .workoutList {
@@ -31,7 +31,6 @@
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 15px;
-    overflow-y: auto;
     margin-bottom: 100px;
 }
 
@@ -44,10 +43,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
-    padding: 10px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
+    font-size: 0.8rem;
 }
 
 .schedulePreview li div {
@@ -66,9 +69,34 @@
     margin-right: 10px;
 }
 
+.scheduleHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scheduleItems {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    max-height: calc(60vh);
+}
+
 .buttonGroup {
     display: flex;
-    gap: 5px;
+    align-self: flex-start;
+    gap: 0px;
+}
+
+.buttonGroup button {
+    margin: 0px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+    cursor: pointer;
 }
 
 .removeButton::before, .moveButton::before {
@@ -100,7 +128,7 @@
 }
 
 button {
-    margin: 5px 0;
+    margin: 0px;
     padding: 10px;
     background: rgba(255, 255, 255, 0.1);
     color: white;

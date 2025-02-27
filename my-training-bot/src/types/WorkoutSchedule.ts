@@ -1,5 +1,6 @@
 import { Workout } from './WorkoutCategory';
 import { DifficultySetting } from './DifficultySetting';
+import { v4 as uuidv4 } from 'uuid';
 
 export class WorkoutSchedule {
     date: string;
@@ -65,6 +66,56 @@ export class WorkoutSchedule {
             this.scheduleItems.shift();
         }
     }
+
+    static fromJSON(json: any): WorkoutSchedule {
+        return new WorkoutSchedule(
+            json.date,
+            json.scheduleItems.map((item: any) => {
+                if (item.workouts) {
+                    const workouts = item.workouts.map(([workout, completed]: [any, boolean]) => {
+                        const reconstructedWorkout = new Workout(
+                            workout.name,
+                            workout.description,
+                            workout.duration,
+                            workout.intensity,
+                            workout.difficulty_range
+                        );
+                        return [reconstructedWorkout, completed];
+                    });
+                    return new WorkoutSet(workouts);
+                } else if (item.name && item.description && item.duration && item.intervalDetails) {
+                    return new WorkoutBlock(item.name, item.description, item.duration, item.intervalDetails);
+                } else {
+                    console.warn('Unknown item type in schedule:', item);
+                    return item;
+                }
+            }),
+            json.difficultySettings
+        );
+    }
+
+    toJSON() {
+        return {
+            date: this.date,
+            scheduleItems: this.scheduleItems.map(item => {
+                if (item instanceof WorkoutSet) {
+                    return {
+                        workouts: item.workouts.map(([workout, completed]) => [workout, completed])
+                    };
+                } else if (item instanceof WorkoutBlock) {
+                    return {
+                        name: item.name,
+                        description: item.description,
+                        duration: item.duration,
+                        intervalDetails: item.intervalDetails
+                    };
+                } else {
+                    return item;
+                }
+            }),
+            difficultySettings: this.difficultySettings
+        };
+    }
 }
 
 export class WorkoutSet {
@@ -105,11 +156,53 @@ export class CustomWorkoutSchedule {
     description: string;
     workoutSchedule: WorkoutSchedule;
 
-    constructor(name: string, description: string, workoutSchedule: WorkoutSchedule) {
-        this.id = new Date().toISOString();
+    constructor(name: string, description: string, workoutSchedule: WorkoutSchedule, id?: string) {
+        this.id = id || uuidv4();
         this.name = name;
         this.description = description;
         this.workoutSchedule = workoutSchedule;
+    }
+
+    static fromJSON(json: any): CustomWorkoutSchedule {
+        return new CustomWorkoutSchedule(
+            json.name,
+            json.description,
+            WorkoutSchedule.fromJSON(json.workoutSchedule),
+            json.id
+        );
+    }
+
+    toJSON() {
+        return {
+            id: this.id,
+            name: this.name,
+            description: this.description,
+            workoutSchedule: this.workoutSchedule.toJSON()
+        };
+    }
+}
+
+export class ScheduleCalendar {
+    days: { day: number, scheduleId: string }[];
+    dayStartTime: string;
+    dayEndTime: string;
+    dayWakeUpTime: string;
+
+    constructor(days: { day: number, scheduleId: string }[], dayStartTime: string, dayEndTime: string, dayWakeUpTime: string) {
+        this.days = days;
+        this.dayStartTime = dayStartTime;
+        this.dayEndTime = dayEndTime;
+        this.dayWakeUpTime = dayWakeUpTime;
+    }
+}
+
+export class ScheduleCalendarTimer {
+    calendar: ScheduleCalendar;
+    currentDay: number;
+
+    constructor(calendar: ScheduleCalendar, currentDay: number) {
+        this.calendar = calendar;
+        this.currentDay = currentDay;
     }
 }
 

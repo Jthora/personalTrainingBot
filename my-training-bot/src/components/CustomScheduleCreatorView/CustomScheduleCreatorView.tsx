@@ -6,6 +6,7 @@ import CreateWorkoutSetPopup from '../CreateWorkoutSetPopup/CreateWorkoutSetPopu
 import CreateWorkoutBlockPopup from '../CreateWorkoutBlockPopup/CreateWorkoutBlockPopup';
 import CreateNewWorkoutSchedulePopup from '../CreateNewWorkoutSchedulePopup/CreateNewWorkoutSchedulePopup';
 import DeleteExistingWorkoutSchedulePopup from '../DeleteExistingWorkoutSchedulePopup/DeleteExistingWorkoutSchedulePopup';
+import ManageWorkoutScheduleCalendarPopup from '../ManageWorkoutScheduleCalendarPopup/ManageWorkoutScheduleCalendarPopup';
 import styles from './CustomScheduleCreatorView.module.css';
 
 const CustomScheduleCreatorView: React.FC<{ onScheduleUpdate: () => void }> = ({ onScheduleUpdate }) => {
@@ -16,6 +17,7 @@ const CustomScheduleCreatorView: React.FC<{ onScheduleUpdate: () => void }> = ({
     const [isWorkoutBlockPopupOpen, setIsWorkoutBlockPopupOpen] = useState(false);
     const [isCreateNewSchedulePopupOpen, setIsCreateNewSchedulePopupOpen] = useState(false);
     const [isDeleteSchedulePopupOpen, setIsDeleteSchedulePopupOpen] = useState(false);
+    const [isManageCalendarPopupOpen, setIsManageCalendarPopupOpen] = useState(false);
 
     useEffect(() => {
         setCustomSchedules(CustomWorkoutSchedulesStore.getCustomSchedules());
@@ -102,10 +104,7 @@ const CustomScheduleCreatorView: React.FC<{ onScheduleUpdate: () => void }> = ({
                     <button onClick={() => setIsCreateNewSchedulePopupOpen(true)}>Create New Workout Schedule</button>
                     <button onClick={() => setIsDeleteSchedulePopupOpen(true)} disabled={customSchedules.length === 0}>Delete Existing Workout Schedule</button>
                 </div>
-                <button onClick={() => setIsWorkoutSetPopupOpen(true)} disabled={!selectedCustomSchedule}>Add Workout Set</button>
-                <button onClick={() => setIsWorkoutBlockPopupOpen(true)} disabled={!selectedCustomSchedule}>Add Workout Block</button>
-            </div>
-            <div className={styles.rightDivision}>
+                <button onClick={() => setIsManageCalendarPopupOpen(true)}>Manage Workout Schedule Calendar</button>
                 <div className={styles.existingSchedules}>
                     <h3>Existing Custom Schedules</h3>
                     <select onChange={(e) => handleScheduleSelect(e.target.value)} value={selectedCustomSchedule?.id || ''}>
@@ -116,42 +115,51 @@ const CustomScheduleCreatorView: React.FC<{ onScheduleUpdate: () => void }> = ({
                     </select>
                 </div>
                 <button onClick={handleSetAsCurrentSchedule} disabled={!selectedCustomSchedule}>Set as Current Workout Schedule</button>
+            </div>
+            <div className={styles.rightDivision}>
                 <div className={styles.schedulePreview}>
-                    <h3>Schedule Editor</h3>
-                    <ul>
-                        {selectedSchedule.map((item, index) => (
-                            <li key={index}>
-                                {item instanceof WorkoutSet ? (
-                                    <div>
-                                        <span>Workout Set</span>
-                                        <ul>
-                                            {item.workouts.map(([workout], idx) => (
-                                                <li key={idx}>{workout.name}</li>
-                                            ))}
-                                        </ul>
+                    <div className={styles.scheduleHeader}>
+                        <h3>Schedule Editor</h3>
+                        <button onClick={() => setIsWorkoutSetPopupOpen(true)} disabled={!selectedCustomSchedule}>Add Workout Set</button>
+                        <button onClick={() => setIsWorkoutBlockPopupOpen(true)} disabled={!selectedCustomSchedule}>Add Workout Block</button>
+                    </div>
+                    <div className={styles.scheduleItems}>
+                        <ul>
+                            {selectedSchedule.map((item, index) => (
+                                <li key={index}>
+                                    {item instanceof WorkoutSet ? (
+                                        <div>
+                                            <span>Workout Set</span>
+                                            <ul>
+                                                {item.workouts.map(([workout], idx) => (
+                                                    <li key={idx}>{workout.name}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    ) : item instanceof WorkoutBlock ? (
+                                        <div>
+                                            <span>Workout Block</span>
+                                            <ul>
+                                                <li>{item.name}</li>
+                                                <li>{item.description}</li>
+                                                <li>{item.duration} minutes</li>
+                                            </ul>
+                                        </div>
+                                    ) : (
+                                        <div>
+                                            <span>Unknown Item</span>
+                                        </div>
+                                    )}
+                                    <div className={styles.buttonGroup}>
+                                        <button className={styles.moveButton} onClick={() => handleMoveItem(index, 'up')}>▲</button>
+                                        <button className={styles.moveButton} onClick={() => handleMoveItem(index, 'down')}>▼</button>
+                                        <button className={styles.removeButton} onClick={() => handleRemoveItem(index)}>❌</button>
                                     </div>
-                                ) : item instanceof WorkoutBlock ? (
-                                    <div>
-                                        <span>Workout Block</span>
-                                        <ul>
-                                            <li>{item.name}</li>
-                                            <li>{item.description}</li>
-                                            <li>{item.duration} minutes</li>
-                                        </ul>
-                                    </div>
-                                ) : (
-                                    <div>
-                                        <span>Unknown Item</span>
-                                    </div>
-                                )}
-                                <div className={styles.buttonGroup}>
-                                    <button className={styles.moveButton} onClick={() => handleMoveItem(index, 'up')}>▲</button>
-                                    <button className={styles.moveButton} onClick={() => handleMoveItem(index, 'down')}>▼</button>
-                                    <button className={styles.removeButton} onClick={() => handleRemoveItem(index)}>❌</button>
-                                </div>
-                            </li>
-                        ))}
-                    </ul>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    
                 </div>
             </div>
             {isWorkoutSetPopupOpen && (
@@ -177,6 +185,11 @@ const CustomScheduleCreatorView: React.FC<{ onScheduleUpdate: () => void }> = ({
                     schedules={customSchedules}
                     onClose={() => setIsDeleteSchedulePopupOpen(false)} 
                     onDelete={handleDeleteSchedule} 
+                />
+            )}
+            {isManageCalendarPopupOpen && (
+                <ManageWorkoutScheduleCalendarPopup 
+                    onClose={() => setIsManageCalendarPopupOpen(false)} 
                 />
             )}
         </div>

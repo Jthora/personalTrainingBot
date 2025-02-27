@@ -53,52 +53,58 @@ const CreateWorkoutSetPopup: React.FC<CreateWorkoutSetPopupProps> = ({ onClose, 
         <div className={styles.popup}>
             <div className={styles.popupContent}>
                 <h1>Create Workout Set</h1>
-                <div className={styles.selector}>
-                    <label>Category:</label>
-                    <select onChange={(e) => handleCategoryChange(e.target.value)} value={selectedCategory || ''}>
-                        <option value="" disabled>Select Category</option>
-                        {categories.map(category => (
-                            <option key={category.id} value={category.id}>{category.name}</option>
-                        ))}
-                    </select>
-                </div>
-                <div className={styles.selector}>
-                    <label>SubCategory:</label>
-                    <select onChange={(e) => handleSubCategoryChange(e.target.value)} value={selectedSubCategory || ''} disabled={!selectedCategory}>
-                        <option value="" disabled>Select SubCategory</option>
-                        {selectedCategory && cache.getWorkoutCategory(selectedCategory)?.subCategories.map(subCategory => (
-                            <option key={subCategory.id} value={subCategory.id}>{subCategory.name}</option>
-                        ))}
-                    </select>
-                </div>
-                <div className={styles.selector}>
-                    <label>Group:</label>
-                    <select onChange={(e) => handleGroupChange(e.target.value)} value={selectedGroup || ''} disabled={!selectedSubCategory}>
-                        <option value="" disabled>Select Group</option>
-                        {selectedCategory && selectedSubCategory && cache.getWorkoutCategory(selectedCategory)?.subCategories.find(sub => sub.id === selectedSubCategory)?.workoutGroups.map(group => (
-                            <option key={group.id} value={group.id}>{group.name}</option>
-                        ))}
-                    </select>
-                </div>
-                <div className={styles.workoutList}>
-                    <label>Workouts:</label>
-                    {selectedCategory && selectedSubCategory && selectedGroup && cache.getWorkoutCategory(selectedCategory)?.subCategories.find(sub => sub.id === selectedSubCategory)?.workoutGroups.find(group => group.id === selectedGroup)?.workouts.map(workout => (
-                        <div key={workout.id}>
-                            <input type="checkbox" checked={selectedWorkouts.includes(workout)} onChange={() => handleWorkoutToggle(workout)} />
-                            <span>{workout.name}</span>
+                <div className={styles.divisionContainer}>
+                    <div className={styles.leftDivision}>
+                        <div className={styles.selector}>
+                            <label>Category:</label>
+                            <select onChange={(e) => handleCategoryChange(e.target.value)} value={selectedCategory || ''}>
+                                <option value="" disabled>Select Category</option>
+                                {categories.map(category => (
+                                    <option key={category.id} value={category.id}>{category.name}</option>
+                                ))}
+                            </select>
                         </div>
-                    ))}
+                        <div className={styles.selector}>
+                            <label>SubCategory:</label>
+                            <select onChange={(e) => handleSubCategoryChange(e.target.value)} value={selectedSubCategory || ''} disabled={!selectedCategory}>
+                                <option value="" disabled>Select SubCategory</option>
+                                {selectedCategory && cache.getWorkoutCategory(selectedCategory)?.subCategories.map(subCategory => (
+                                    <option key={subCategory.id} value={subCategory.id}>{subCategory.name}</option>
+                                ))}
+                            </select>
+                        </div>
+                        <div className={styles.selector}>
+                            <label>Group:</label>
+                            <select onChange={(e) => handleGroupChange(e.target.value)} value={selectedGroup || ''} disabled={!selectedSubCategory}>
+                                <option value="" disabled>Select Group</option>
+                                {selectedCategory && selectedSubCategory && cache.getWorkoutCategory(selectedCategory)?.subCategories.find(sub => sub.id === selectedSubCategory)?.workoutGroups.map(group => (
+                                    <option key={group.id} value={group.id}>{group.name}</option>
+                                ))}
+                            </select>
+                        </div>
+                        <div className={styles.workoutList}>
+                            <label>Workouts:</label>
+                            {selectedCategory && selectedSubCategory && selectedGroup && cache.getWorkoutCategory(selectedCategory)?.subCategories.find(sub => sub.id === selectedSubCategory)?.workoutGroups.find(group => group.id === selectedGroup)?.workouts.map(workout => (
+                                <div key={workout.id}>
+                                    <input type="checkbox" checked={selectedWorkouts.includes(workout)} onChange={() => handleWorkoutToggle(workout)} />
+                                    <span>{workout.name}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                    <div className={styles.rightDivision}>
+                        <div className={styles.selectedWorkouts}>
+                            <h4>Selected Workouts:</h4>
+                            <ul>
+                                {selectedWorkouts.map((workout, index) => (
+                                    <li key={index}>{workout.name}</li>
+                                ))}
+                            </ul>
+                        </div>
+                        <button onClick={handleSave} disabled={selectedWorkouts.length === 0}>Save</button>
+                        <button onClick={onClose}>Cancel</button>
+                    </div>
                 </div>
-                <div className={styles.selectedWorkouts}>
-                    <h4>Selected Workouts:</h4>
-                    <ul>
-                        {selectedWorkouts.map((workout, index) => (
-                            <li key={index}>{workout.name}</li>
-                        ))}
-                    </ul>
-                </div>
-                <button onClick={handleSave} disabled={selectedWorkouts.length === 0}>Save</button>
-                <button onClick={onClose}>Cancel</button>
             </div>
         </div>
     );

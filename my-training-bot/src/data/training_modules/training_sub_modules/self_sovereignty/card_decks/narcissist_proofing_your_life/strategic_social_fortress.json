@@ -11,7 +11,11 @@
             "id": "social_fort_1",
             "title": "Setting Up Narcissist Barriers",
             "description": "Building invisible social and psychological boundaries that narcissists instinctively avoid.",
-            "bulletpoints": "Boundary Enforcement Systems, Personal Presence Calibration, Narcissist-Repellent Social Cues",
+            "bulletpoints": [
+                "Consistently enforce boundaries to filter out manipulative individuals.",
+                "Project emotional stability to deter exploiters seeking vulnerability.",
+                "Develop a calm, non-reactive demeanor to disinterest emotional predators."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "social_fort_2",
             "title": "Selecting High-Value Connections",
             "description": "Surrounding yourself with strong, self-aware individuals who amplify your emotional security.",
-            "bulletpoints": "Friendship Vetting Techniques, High-Trust Relationship Filtering, Cultivating a Strong Support Network",
+            "bulletpoints": [
+                "Prioritize relationships with people who respect autonomy and integrity.",
+                "Observe long-term behavior patterns to assess true character.",
+                "Value those who bring constructive energy instead of drama or chaos."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,7 +35,95 @@
             "id": "social_fort_3",
             "title": "Mastering Narcissist Repellent Communication",
             "description": "Speaking in a way that signals strength, clarity, and non-manipulability to deter narcissists.",
-            "bulletpoints": "High-Value Communication Style, Non-Emotional Responses, Tactical Social Calibration",
+            "bulletpoints": [
+                "Use concise, assertive speech patterns that eliminate emotional loopholes.",
+                "Avoid over-explaining yourself, as narcissists exploit excessive justification.",
+                "Maintain an air of confidence and unpredictability to make manipulation difficult."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "social_fort_4",
+            "title": "Creating an Infiltration-Proof Inner Circle",
+            "description": "Structuring your closest relationships to minimize external manipulation.",
+            "bulletpoints": [
+                "Establish clear loyalty tests to detect hidden narcissistic tendencies.",
+                "Encourage direct and honest communication within your social group.",
+                "Limit access to your private life to only those who prove consistent trustworthiness."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "social_fort_5",
+            "title": "Embodying an Untouchable Social Presence",
+            "description": "Cultivating a social reputation that discourages narcissistic engagement.",
+            "bulletpoints": [
+                "Develop a reputation for being unpredictable and intellectually sharp.",
+                "Maintain a strong, self-validated identity that narcissists cannot shake.",
+                "Avoid engaging in unnecessary social conflicts or power struggles."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "social_fort_6",
+            "title": "Psychological and Social Camouflage",
+            "description": "Blending into environments without revealing vulnerabilities to potential manipulators.",
+            "bulletpoints": [
+                "Adjust your presence to avoid drawing unnecessary attention from narcissists.",
+                "Use neutral, non-expressive responses to disengage unwanted psychological games.",
+                "Control the flow of personal information to prevent potential exploitation."
+            ],
+            "duration": "75",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "social_fort_7",
+            "title": "Understanding Social Power Dynamics",
+            "description": "Mastering the art of positioning yourself in relationships to avoid being a target.",
+            "bulletpoints": [
+                "Recognize when someone is testing your boundaries for future exploitation.",
+                "Ensure social interactions maintain a balanced power dynamic.",
+                "Withdraw from relationships that subtly demand submission or control."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "social_fort_8",
+            "title": "Weaponized Indifference Against Narcissists",
+            "description": "Developing the ability to remain emotionally unmoved by manipulation attempts.",
+            "bulletpoints": [
+                "Practice maintaining neutral emotional responses in high-pressure interactions.",
+                "Use silence strategically to avoid feeding a narcissist’s need for engagement.",
+                "Refuse to reward toxic behavior with emotional investment or validation."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "social_fort_9",
+            "title": "Fortifying Your Digital Presence",
+            "description": "Minimizing online vulnerabilities that narcissists can exploit for psychological leverage.",
+            "bulletpoints": [
+                "Control the amount of personal information shared across social media.",
+                "Use privacy settings and security measures to protect against digital stalking.",
+                "Maintain a professional and mysterious online presence to prevent infiltration."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "social_fort_10",
+            "title": "The Art of Strategic Disengagement",
+            "description": "Knowing when and how to exit social situations before manipulation takes root.",
+            "bulletpoints": [
+                "Recognize early signs of unhealthy interactions and disengage immediately.",
+                "Use redirection techniques to avoid conflict without confrontation.",
+                "Disappear from toxic environments in a way that minimizes retaliation."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
         }

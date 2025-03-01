@@ -11,7 +11,11 @@
             "id": "covert_influence_1",
             "title": "Mirroring and Neural Synchronization",
             "description": "Using subtle body language and speech mirroring to establish control over interactions.",
-            "bulletpoints": "Neural Matching, Covert Rapport Building, Subconscious Influence Techniques",
+            "bulletpoints": [
+                "Neural matching enhances trust and makes others feel naturally connected to you.",
+                "Covert rapport building establishes subconscious influence without direct persuasion.",
+                "Subconscious influence techniques shape the target’s perception through nonverbal synchronization."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -19,7 +23,11 @@
             "id": "covert_influence_2",
             "title": "Framing and Narrative Control",
             "description": "Reframing conversations and narratives to direct perception and social outcomes.",
-            "bulletpoints": "Storytelling as a Manipulation Tool, Control Over Interpretations, Redirecting Group Perception",
+            "bulletpoints": [
+                "Storytelling as a manipulation tool subtly guides others to accept pre-established conclusions.",
+                "Control over interpretations ensures that even neutral facts support your desired narrative.",
+                "Redirecting group perception shifts collective judgment through controlled context delivery."
+            ],
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -27,9 +35,97 @@
             "id": "covert_influence_3",
             "title": "Strategic Vulnerability Projection",
             "description": "Appearing weak to lower defenses while secretly positioning for a power play.",
-            "bulletpoints": "The Art of Underestimation, Psychological Misdirection, Reverse Gaslighting",
+            "bulletpoints": [
+                "The art of underestimation makes opponents reveal information they wouldn’t normally share.",
+                "Psychological misdirection draws focus away from your true strengths and capabilities.",
+                "Reverse gaslighting subtly makes others question their initial perceptions of you."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "covert_influence_4",
+            "title": "The Authority Illusion",
+            "description": "Projecting power and expertise to manipulate social hierarchies.",
+            "bulletpoints": [
+                "Speaking with unwavering confidence forces others to subconsciously assume credibility.",
+                "Controlling the environment, such as seating and positioning, asserts silent dominance.",
+                "Using authoritative language patterns influences people to obey without questioning motives."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "covert_influence_5",
+            "title": "Controlled Emotional Calibration",
+            "description": "Modulating emotional expressions to manipulate social interactions.",
+            "bulletpoints": [
+                "Amplifying or suppressing emotional displays alters group dynamics and power perception.",
+                "Tactical emotional withdrawal forces others to chase validation and compliance.",
+                "Controlled vulnerability elicits sympathy while keeping the upper hand in influence."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "covert_influence_6",
+            "title": "Pacing and Leading",
+            "description": "Matching the target’s mindset before subtly directing their thoughts and behaviors.",
+            "bulletpoints": [
+                "Pacing builds rapport by mirroring emotional and conversational states.",
+                "Gradual introduction of new ideas makes resistance to influence less noticeable.",
+                "Leading the interaction subtly steers the target toward your desired conclusion."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "covert_influence_7",
+            "title": "The Illusion of Choice",
+            "description": "Giving people the sense of autonomy while subtly guiding them toward a predetermined decision.",
+            "bulletpoints": [
+                "Presenting multiple options where all outcomes favor you makes the target feel in control.",
+                "Framing choices as mutually exclusive prevents them from questioning the underlying premise.",
+                "Allowing them to ‘decide’ while removing unwanted alternatives maintains hidden dominance."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "covert_influence_8",
+            "title": "Embedded Commands and Linguistic Influence",
+            "description": "Using subconscious language patterns to implant suggestions and shape decisions.",
+            "bulletpoints": [
+                "Softly embedding directives within casual conversation bypasses conscious resistance.",
+                "Strategic pauses and intonation shifts make key phrases stick in the target’s mind.",
+                "Using presuppositions forces acceptance of an idea by framing it as an assumed truth."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "covert_influence_9",
+            "title": "Social Engineering via Scarcity",
+            "description": "Creating artificial urgency or exclusivity to drive compliance.",
+            "bulletpoints": [
+                "People fear missing out on limited opportunities and become more suggestible under scarcity.",
+                "Restricting access to information or resources increases perceived value and desirability.",
+                "Artificial time constraints force hasty decision-making, reducing logical analysis."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "covert_influence_10",
+            "title": "The Psychological Time Warp",
+            "description": "Manipulating the perception of time to influence decision-making and control interactions.",
+            "bulletpoints": [
+                "Speeding up conversation flow forces snap decisions before full rational analysis.",
+                "Deliberately slowing speech and movement creates a hypnotic effect on the listener.",
+                "Using artificial deadlines creates pressure that compels people to accept proposed outcomes."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

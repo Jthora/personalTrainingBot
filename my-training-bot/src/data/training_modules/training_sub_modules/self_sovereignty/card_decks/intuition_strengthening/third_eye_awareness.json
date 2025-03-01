@@ -11,7 +11,11 @@
             "id": "third_eye_1",
             "title": "Activating the Intuitive Center",
             "description": "Techniques for awakening and training the third eye for enhanced intuition.",
-            "bulletpoints": "Pineal Gland Stimulation, Light and Sound Meditation, Sensory Expansion Drills",
+            "bulletpoints": [
+                "Pineal gland stimulation enhances inner vision and perceptual depth.",
+                "Light and sound meditation refines the ability to sense subtle energy shifts.",
+                "Sensory expansion drills increase awareness of non-physical stimuli."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "third_eye_2",
             "title": "Tuning Into Subtle Energy Fields",
             "description": "Developing sensitivity to energetic shifts, auras, and vibrational changes.",
-            "bulletpoints": "Aura Reading Exercises, Energetic Resonance Training, Frequency Awareness",
+            "bulletpoints": [
+                "Aura reading exercises enhance perception of energy fields.",
+                "Energetic resonance training strengthens the ability to detect vibrational imprints.",
+                "Frequency awareness refines sensitivity to environmental and personal energy shifts."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,7 +35,95 @@
             "id": "third_eye_3",
             "title": "Using Intuition for Decision Making",
             "description": "Learning how to interpret intuitive signals and integrate them into daily choices.",
-            "bulletpoints": "Yes/No Intuition Testing, Gut Instinct Calibration, Real-Time Intuitive Judgment",
+            "bulletpoints": [
+                "Yes/no intuition testing refines the accuracy of inner guidance.",
+                "Gut instinct calibration enhances rapid decision-making confidence.",
+                "Real-time intuitive judgment ensures alignment with personal truth."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "third_eye_4",
+            "title": "Deciphering Symbolic Visions",
+            "description": "Learning to interpret images, colors, and visions received during meditation and altered states.",
+            "bulletpoints": [
+                "Recognizing archetypal symbols deciphers subconscious messages.",
+                "Understanding color vibrations enhances intuitive visual interpretation.",
+                "Pattern matching within visions provides deeper personal insight."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "third_eye_5",
+            "title": "Harmonizing the Pineal and Pituitary Glands",
+            "description": "Balancing key glands responsible for intuitive perception and spiritual awareness.",
+            "bulletpoints": [
+                "Breathwork synchronization optimizes hormonal activation.",
+                "Mantra resonance amplifies neural connectivity between glands.",
+                "Nutritional optimization supports decalcification and functionality."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "third_eye_6",
+            "title": "Astral Perception Training",
+            "description": "Developing the ability to perceive beyond the physical realm through controlled techniques.",
+            "bulletpoints": [
+                "Phasing exercises enhance the ability to see beyond ordinary sight.",
+                "Hypnagogic visualization deepens entry into non-physical states.",
+                "Environmental energy scanning improves real-time detection skills."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "third_eye_7",
+            "title": "Detecting Psychic Signals",
+            "description": "Refining the ability to receive telepathic or energetic impressions from people and places.",
+            "bulletpoints": [
+                "Silent mind practice increases receptivity to incoming intuitive data.",
+                "Energetic boundary tuning enhances signal clarity and reduces interference.",
+                "Telepathic calibration strengthens non-verbal information retrieval."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "third_eye_8",
+            "title": "Remote Viewing Calibration",
+            "description": "Training to access visual information beyond physical proximity.",
+            "bulletpoints": [
+                "Focus-point anchoring enhances precision in long-distance sight.",
+                "Controlled visualization refines ability to extract detailed data.",
+                "Mind-mapping techniques improve recall of remote information."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "third_eye_9",
+            "title": "Recalibrating Perception Filters",
+            "description": "Adjusting awareness to remove distortions caused by bias, fear, and external influences.",
+            "bulletpoints": [
+                "Emotional detachment stabilizes perception accuracy.",
+                "Mental decluttering removes interference from conditioned thinking.",
+                "Neural rewiring refines the ability to perceive unfiltered reality."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "third_eye_10",
+            "title": "Integrating Third Eye Awareness into Daily Life",
+            "description": "Practical methods for maintaining heightened perception in everyday situations.",
+            "bulletpoints": [
+                "Mindful observation strengthens intuitive real-time analysis.",
+                "Energetic field tuning enhances perception of subtle environmental cues.",
+                "Conscious sensory filtering refines the ability to distinguish important signals."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
         }

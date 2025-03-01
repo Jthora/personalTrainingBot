@@ -11,7 +11,11 @@
             "id": "boundary_1",
             "title": "Strengthening the Auric Field",
             "description": "Exercises to reinforce the energetic shield surrounding your body.",
-            "bulletpoints": "Aura Expansion, Frequency Stabilization, Light Barrier Meditation",
+            "bulletpoints": [
+                "Expand and charge your aura using focused breathwork and visualization.",
+                "Calibrate your frequency to repel negative energy and maintain inner balance.",
+                "Use color-coded energy fields to amplify protection and project intent."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "boundary_2",
             "title": "Sealing Energy Leaks",
             "description": "Detecting and repairing vulnerabilities in your energy field to prevent depletion.",
-            "bulletpoints": "Energy Leak Identification, Repair Techniques, Self-Containment Training",
+            "bulletpoints": [
+                "Scan your energy body for weak points and repair them with intention-based focus.",
+                "Use grounding techniques to stabilize and reinforce your energetic structure.",
+                "Install energy 'checkpoints' in your aura to detect and neutralize intrusions."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,97 @@
             "id": "boundary_3",
             "title": "Shielding Against Intrusive Energies",
             "description": "Creating psychic walls that block external energy intrusions and unwanted influences.",
-            "bulletpoints": "Protective Visualization, Elemental Barrier Invocation, Etheric Reinforcement Methods",
+            "bulletpoints": [
+                "Visualize a reinforced shield composed of elements such as fire, light, or magnetic force.",
+                "Use mantra-based frequency shifts to deflect energetic infiltration attempts.",
+                "Practice etheric reinforcement drills to sustain a durable psychic defense."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "boundary_4",
+            "title": "Energy Signature Calibration",
+            "description": "Aligning your energy field with high-frequency resonance to make infiltration impossible.",
+            "bulletpoints": [
+                "Use intention-based energy tuning to amplify natural defenses.",
+                "Adjust your vibrational output to be imperceptible to hostile forces.",
+                "Encode personal energy with protective affirmations to reinforce stability."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "boundary_5",
+            "title": "Reflective Shielding Technique",
+            "description": "Creating a dynamic energy barrier that mirrors incoming attacks back to the sender.",
+            "bulletpoints": [
+                "Construct a reflective energy shell that neutralizes incoming negativity.",
+                "Program your aura to absorb and transmute harmful energy into neutral force.",
+                "Develop layered shielding techniques for adaptive energetic defense."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "boundary_6",
+            "title": "Stealth Field Cloaking",
+            "description": "Using energy manipulation to become undetectable in hostile environments.",
+            "bulletpoints": [
+                "Reduce energetic emissions to blend into the surrounding environment.",
+                "Create a veil of neutrality that prevents unwanted energetic recognition.",
+                "Master frequency dampening to avoid being tracked or targeted psychically."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "boundary_7",
+            "title": "Tuning Energy to Higher Frequencies",
+            "description": "Elevating your vibrational state to be impervious to lower-dimensional forces.",
+            "bulletpoints": [
+                "Engage in high-frequency energy work to repel dense, parasitic entities.",
+                "Use sound resonance to amplify protection and maintain energetic sovereignty.",
+                "Anchor your aura in higher-dimensional consciousness to create an unbreakable field."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "boundary_8",
+            "title": "Sigil and Symbolic Energy Shields",
+            "description": "Using sacred geometry and personal sigils to reinforce psychic defenses.",
+            "bulletpoints": [
+                "Program protective symbols into your energy field for automated defense.",
+                "Use ancient sigils and glyphs to encode layers of energetic shielding.",
+                "Draw protective wards in the air or physically manifest them in personal spaces."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "boundary_9",
+            "title": "Energetic Anchoring for Stability",
+            "description": "Locking in personal energy to prevent displacement or manipulation.",
+            "bulletpoints": [
+                "Anchor your energetic field into the Earth’s core for deep-rooted stability.",
+                "Use energetic 'lockpoints' in the body to maintain centered awareness.",
+                "Deploy multi-point anchoring techniques to sustain energetic autonomy."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "boundary_10",
+            "title": "Instant Energy Barrier Deployment",
+            "description": "Developing rapid-response shielding for unexpected energy attacks.",
+            "bulletpoints": [
+                "Trigger a pre-programmed energy wall in milliseconds during a crisis.",
+                "Develop muscle-memory reflexes for instantaneous aura reinforcement.",
+                "Use layered energetic bursts to repel unexpected psychic assaults."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

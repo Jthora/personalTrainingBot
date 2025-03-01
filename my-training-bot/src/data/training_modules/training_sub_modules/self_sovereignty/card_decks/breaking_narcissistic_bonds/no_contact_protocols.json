@@ -11,7 +11,11 @@
             "id": "no_contact_1",
             "title": "The No-Contact Rule",
             "description": "Understanding the necessity and mechanics of going no-contact with a narcissist.",
-            "bulletpoints": "Why No-Contact Works, Stages of Emotional Withdrawal, Dealing with Guilt and Doubt",
+            "bulletpoints": [
+                "Going no-contact is the most effective way to regain control over your emotional and psychological state.",
+                "Expect withdrawal symptoms, such as self-doubt, guilt, and the urge to reconnect, as part of the detox process.",
+                "Solidify your decision by documenting all past manipulations, reminding yourself why no-contact is essential."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "no_contact_2",
             "title": "Handling Flying Monkeys",
             "description": "Identifying and neutralizing enablers sent by the narcissist to break your defenses.",
-            "bulletpoints": "Psychological Warfare Tactics, Strategic Deflection, Gray Rock Method",
+            "bulletpoints": [
+                "Flying monkeys act as messengers, spreading the narcissist’s narrative and attempting to manipulate your emotions.",
+                "Use the Gray Rock Method to become emotionally unresponsive, providing no fuel for further manipulation.",
+                "If necessary, block, disengage, or respond with strategic deflection to minimize their influence."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,97 @@
             "id": "no_contact_3",
             "title": "Information Control & Digital Boundaries",
             "description": "Eliminating digital footprints and vulnerabilities narcissists exploit.",
-            "bulletpoints": "Social Media Lockdown, Digital Privacy Tactics, Strategic Communication Blackouts",
+            "bulletpoints": [
+                "Lock down social media accounts, remove mutual contacts, and set profiles to private or delete them entirely.",
+                "Change passwords, enable two-factor authentication, and use secure communication channels for critical interactions.",
+                "Avoid posting anything that reveals your emotional state, location, or future plans to prevent manipulation attempts."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "no_contact_4",
+            "title": "Psychological Detox from Narcissistic Influence",
+            "description": "Rewiring your thought patterns to break free from mental conditioning imposed by the narcissist.",
+            "bulletpoints": [
+                "Recognize that the narcissist’s voice in your head is not your own—begin replacing it with self-affirming statements.",
+                "Detox emotionally by cutting off sources of nostalgia, such as old messages, gifts, or shared music playlists.",
+                "Engage in reprogramming techniques like affirmations, meditation, and self-validation to rebuild confidence."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "no_contact_5",
+            "title": "Surviving Hoovering Attempts",
+            "description": "Resisting manipulative attempts to pull you back into the narcissist’s control.",
+            "bulletpoints": [
+                "Narcissists often return with fake apologies, promises of change, or guilt-inducing messages to re-hook you.",
+                "Recognize their tactics—love bombing, guilt trips, or feigned emergencies—and remain emotionally detached.",
+                "Prepare a response plan in advance, including automatic blocking or pre-scripted neutral replies if necessary."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "no_contact_6",
+            "title": "Mastering the Gray Rock Method",
+            "description": "Becoming uninteresting and emotionally unavailable to disarm narcissistic attacks.",
+            "bulletpoints": [
+                "Limit responses to short, neutral, and unemotional statements to avoid giving the narcissist any reaction.",
+                "Maintain a flat, detached demeanor, showing no excitement, frustration, or emotional engagement.",
+                "Use vague responses and minimal details when forced to interact in unavoidable situations."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "no_contact_7",
+            "title": "Legal Protection and Safety Planning",
+            "description": "Taking legal measures to protect yourself from harassment, stalking, or defamation.",
+            "bulletpoints": [
+                "Document every instance of harassment, threats, or boundary violations in case legal action is needed.",
+                "Consult legal professionals for options such as restraining orders or cease-and-desist letters.",
+                "Ensure your home, workplace, and daily routines are secure to minimize potential encounters or surveillance."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "no_contact_8",
+            "title": "Emotional Reinforcement and Resilience",
+            "description": "Building the inner strength to stay no-contact despite emotional triggers or loneliness.",
+            "bulletpoints": [
+                "Replace the loss of the narcissistic relationship with new sources of fulfillment, such as hobbies and supportive friendships.",
+                "Remind yourself that healing is not linear—there will be setbacks, but progress happens over time.",
+                "Develop a crisis plan with affirmations, distractions, and trusted contacts to turn to during moments of weakness."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "no_contact_9",
+            "title": "Detoxing from Trauma Bond Cravings",
+            "description": "Understanding and overcoming the addictive elements of toxic relationships.",
+            "bulletpoints": [
+                "Recognize that trauma bonds create a chemical addiction to the highs and lows of the relationship.",
+                "Replace the dopamine rush of the toxic dynamic with healthier rewards, such as exercise, music, or new experiences.",
+                "Reprogram your nervous system by practicing mindfulness and grounding techniques when withdrawal symptoms arise."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "no_contact_10",
+            "title": "Rebuilding Identity After Narcissistic Abuse",
+            "description": "Restoring self-worth and autonomy after breaking free from a manipulative relationship.",
+            "bulletpoints": [
+                "Rediscover who you are outside of the narcissist’s influence by exploring new interests and passions.",
+                "Affirm your sovereignty daily by reminding yourself that your value is not dependent on external validation.",
+                "Set long-term personal goals that reinforce your independence and self-trust."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

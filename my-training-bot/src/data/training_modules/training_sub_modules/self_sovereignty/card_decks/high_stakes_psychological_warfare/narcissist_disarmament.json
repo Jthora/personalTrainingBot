@@ -11,7 +11,11 @@
             "id": "narc_disarm_1",
             "title": "Identifying Weak Points in a Narcissist’s Armor",
             "description": "Understanding the vulnerabilities of narcissistic manipulators and how to leverage them.",
-            "bulletpoints": "Narcissistic Supply Starvation, Ego Vulnerabilities, Strategic Emotional Detachment",
+            "bulletpoints": [
+                "Narcissistic supply starvation deprives them of the attention they need to function.",
+                "Ego vulnerabilities expose their deep-seated insecurities, making them easy to destabilize.",
+                "Strategic emotional detachment prevents them from using your reactions against you."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -19,7 +23,11 @@
             "id": "narc_disarm_2",
             "title": "Reversing the Power Dynamic",
             "description": "Tactics to shift control away from a manipulator and regain strategic advantage.",
-            "bulletpoints": "Psychological Role Reversal, Disrupting Manipulation Scripts, Forced Narcissistic Exposure",
+            "bulletpoints": [
+                "Psychological role reversal forces them into a position where they must defend themselves.",
+                "Disrupting manipulation scripts stops their ability to cycle through rehearsed tactics.",
+                "Forced narcissistic exposure makes them reveal their true nature to others, weakening their hold."
+            ],
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -27,9 +35,97 @@
             "id": "narc_disarm_3",
             "title": "Weaponizing the Gray Rock Method",
             "description": "Advanced use of emotional disengagement to dismantle a narcissist’s influence.",
-            "bulletpoints": "Zero Emotional Response Training, Psychological Shutdown Techniques, Deprivation-Based Control",
+            "bulletpoints": [
+                "Zero emotional response training makes you unreadable, forcing them to lose interest.",
+                "Psychological shutdown techniques ensure that no reaction can be used as leverage.",
+                "Deprivation-based control removes their ability to extract energy, making them seek other targets."
+            ],
             "duration": "60",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "narc_disarm_4",
+            "title": "The Strategic Mirror",
+            "description": "Using their own tactics against them to cause internal destabilization.",
+            "bulletpoints": [
+                "Repeating their own words back to them forces self-awareness they usually avoid.",
+                "Exaggerating their behaviors subtly exposes their manipulative nature to others.",
+                "Mirroring their tone and phrasing creates a cognitive dissonance that weakens their control."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "narc_disarm_5",
+            "title": "Triggering Narcissistic Self-Destruction",
+            "description": "Pushing a narcissist into their own psychological traps without direct confrontation.",
+            "bulletpoints": [
+                "Planting contradictory expectations forces them into an impossible position.",
+                "Making them chase an illusion of control burns through their energy reserves.",
+                "Exposing inconsistencies in their stories destabilizes their carefully crafted persona."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "narc_disarm_6",
+            "title": "Stealth Exit Strategies",
+            "description": "Disengaging from a narcissist without escalating conflict or inviting retaliation.",
+            "bulletpoints": [
+                "Gradual withdrawal prevents them from recognizing and reacting to your departure.",
+                "Controlled ambiguity keeps them confused about your intentions, reducing aggression.",
+                "Strategic misinformation causes them to miscalculate and shift focus elsewhere."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "narc_disarm_7",
+            "title": "The Narcissistic Ego Trap",
+            "description": "Exploiting their own arrogance to guide them into self-sabotage.",
+            "bulletpoints": [
+                "Feeding their ego in controlled ways makes them overextend themselves.",
+                "Subtly directing their focus toward self-destructive goals ensures their downfall.",
+                "Letting them believe they are in control increases their blind spots to external threats."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "narc_disarm_8",
+            "title": "Disarming Narcissistic Rage",
+            "description": "Neutralizing explosive reactions without becoming a direct target.",
+            "bulletpoints": [
+                "Using calm, non-reactive speech lowers their emotional engagement.",
+                "Deflecting responsibility subtly shifts blame without triggering further aggression.",
+                "Keeping physical and emotional distance prevents direct harm while maintaining control."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "narc_disarm_9",
+            "title": "Psychological Redirection",
+            "description": "Steering a narcissist’s attention away from you while they remain unaware.",
+            "bulletpoints": [
+                "Using calculated distractions moves their focus toward something less harmful.",
+                "Engaging their competitive nature against another target reduces their obsession with you.",
+                "Providing subtle false leads ensures they remain occupied with their own illusions."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "narc_disarm_10",
+            "title": "Building a Narcissist-Proof Mindset",
+            "description": "Developing internal immunity to narcissistic tactics and manipulation.",
+            "bulletpoints": [
+                "Eliminating emotional dependency removes their primary control mechanism over you.",
+                "Practicing cognitive sovereignty ensures no external force can override your perception.",
+                "Recognizing self-worth independent of validation prevents them from influencing your emotions."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

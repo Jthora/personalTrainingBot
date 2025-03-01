@@ -11,7 +11,11 @@
             "id": "cleanse_1",
             "title": "The Salt and Smoke Purge",
             "description": "Using salt and sacred smoke to purify spaces, objects, and personal energy fields.",
-            "bulletpoints": "Salt Barrier Creation, Smudging Techniques, Air Elemental Purification",
+            "bulletpoints": [
+                "Create protective salt barriers to absorb and neutralize negative energy.",
+                "Use sacred herbs like sage, palo santo, or cedar to cleanse lingering attachments.",
+                "Combine smoke and salt purification for a full energetic reset."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "cleanse_2",
             "title": "Spiritual Bathing Rituals",
             "description": "Harnessing water and minerals to cleanse energetic toxins from the body.",
-            "bulletpoints": "Herbal Infusions, Moon and Sun Water Charging, Frequency-Based Water Cleansing",
+            "bulletpoints": [
+                "Infuse bathwater with healing herbs and essential oils for spiritual detoxification.",
+                "Charge water under the full moon or sunlight to amplify cleansing effects.",
+                "Incorporate sound frequencies or affirmations while bathing for deeper purification."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,97 @@
             "id": "cleanse_3",
             "title": "Full Moon and Solar Purification",
             "description": "Using lunar and solar energies to recharge and purify the energetic body.",
-            "bulletpoints": "Moonlight Absorption, Solar Vitalization, Chakra Rebalancing with Celestial Energies",
+            "bulletpoints": [
+                "Absorb moonlight to clear emotional blockages and intuitive distortions.",
+                "Use direct sunlight to recharge energy fields and burn away negativity.",
+                "Perform chakra alignment exercises while connecting to celestial forces."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "cleanse_4",
+            "title": "Sound Frequency Detox",
+            "description": "Using vibrational healing through sound to dissolve energetic blockages.",
+            "bulletpoints": [
+                "Listen to solfeggio frequencies or binaural beats to recalibrate energy fields.",
+                "Chant mantras or use singing bowls to break stagnant energetic patterns.",
+                "Incorporate tuning forks or chimes to restore harmonic resonance."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cleanse_5",
+            "title": "Fire Purification Ceremony",
+            "description": "Harnessing fire as a symbolic and energetic force of transformation and renewal.",
+            "bulletpoints": [
+                "Burn written intentions or objects tied to negative influences as a release ritual.",
+                "Use candle flames for focused energy clearing and meditation.",
+                "Visualize fire consuming residual emotional and psychic blockages."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cleanse_6",
+            "title": "Earth Grounding and Rebalancing",
+            "description": "Using earth’s stabilizing energy to drain away negativity and restore balance.",
+            "bulletpoints": [
+                "Walk barefoot on soil or grass to discharge excess energetic buildup.",
+                "Bury objects or personal items to reset their energetic imprints.",
+                "Use clay, mud, or earth-based minerals for deep grounding practices."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "cleanse_7",
+            "title": "Breathwork and Energy Circulation",
+            "description": "Using controlled breathing to cleanse and circulate life force energy.",
+            "bulletpoints": [
+                "Perform deep breathing exercises to clear stagnant energy from the body.",
+                "Use rapid breath techniques to purge emotional residues and increase vitality.",
+                "Visualize energy flow aligning with each inhale and exhale."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cleanse_8",
+            "title": "Mirror Reflection Purification",
+            "description": "Using mirrors to reflect away negative energy and psychic projections.",
+            "bulletpoints": [
+                "Stand before a mirror and visualize all negative energy bouncing away.",
+                "Place a charged mirror in a space to redirect intrusive forces.",
+                "Break or dispose of an old mirror to symbolize release of toxic influences."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cleanse_9",
+            "title": "Crystal Energy Clearing",
+            "description": "Utilizing crystals to absorb, transmute, and neutralize toxic energy.",
+            "bulletpoints": [
+                "Use black tourmaline or obsidian to pull out negative influences.",
+                "Charge quartz or selenite to amplify purification and renewal.",
+                "Place crystals under running water or sunlight to recharge and reset their energy."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cleanse_10",
+            "title": "Waterfall and Rain Cleansing",
+            "description": "Using natural water flow to wash away stagnant energy and psychic debris.",
+            "bulletpoints": [
+                "Stand under a waterfall or heavy rain to cleanse and refresh the aura.",
+                "Use a shower meditation imagining negativity being washed away.",
+                "Collect rainwater for ritual purification and spiritual renewal."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

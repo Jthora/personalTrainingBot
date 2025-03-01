@@ -11,7 +11,11 @@
             "id": "mental_autonomy_1",
             "title": "Thinking in Sovereign Terms",
             "description": "Developing independent thought patterns that are resistant to collective pressure.",
-            "bulletpoints": "Filtering External Narratives, Logical Independence Training, Strategic Contrarian Thinking",
+            "bulletpoints": [
+                "Analyze ideas through the lens of sovereignty, free from external influence.",
+                "Practice self-interrogation to identify subconscious programming and conditioning.",
+                "Cultivate strategic contrarian thinking to challenge default societal narratives."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "mental_autonomy_2",
             "title": "Resisting Social Programming",
             "description": "Identifying and rejecting thought patterns that originate from mass conditioning.",
-            "bulletpoints": "Recognizing Thought Contagion, Disengaging from Consensus Bias, Critical Thinking Drills",
+            "bulletpoints": [
+                "Recognize and break free from groupthink dynamics and ideological control structures.",
+                "Develop a personal filtration system to reject propaganda and coercive persuasion.",
+                "Engage in conscious dissent exercises to test your ability to resist peer pressure."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,157 @@
             "id": "mental_autonomy_3",
             "title": "Building an Unshakable Mental Framework",
             "description": "Creating a personal philosophy that acts as a shield against coercion and deception.",
-            "bulletpoints": "Developing Mental Code of Ethics, Philosophical Self-Anchor, Cognitive Fortification Techniques",
+            "bulletpoints": [
+                "Develop a core set of guiding principles that anchor your beliefs and decisions.",
+                "Train logical consistency to protect against manipulative contradictions and doublethink.",
+                "Reinforce self-trust by practicing critical analysis of new information sources."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "mental_autonomy_4",
+            "title": "Recognizing and Disrupting Thought Loops",
+            "description": "Breaking cycles of circular reasoning, self-doubt, and intrusive programmed thoughts.",
+            "bulletpoints": [
+                "Identify patterns of cognitive distortion that weaken independent thought.",
+                "Apply pattern disruption techniques to break harmful mental loops and reassert control.",
+                "Use reality-checking drills to verify logical consistency in your internal dialogue."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mental_autonomy_5",
+            "title": "Neutralizing Emotional Hijacking",
+            "description": "Resisting external attempts to manipulate emotions as a form of control.",
+            "bulletpoints": [
+                "Train yourself to spot emotionally charged language designed to trigger compliance.",
+                "Use emotional reframing to redirect manipulated feelings into rational thought processes.",
+                "Strengthen emotional neutrality to prevent knee-jerk reactions to psychological triggers."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mental_autonomy_6",
+            "title": "Cognitive Firewall Installation",
+            "description": "Developing mental security protocols to prevent infiltration by manipulative tactics.",
+            "bulletpoints": [
+                "Use mental compartmentalization to shield core beliefs from external influence.",
+                "Train situational awareness to detect and block manipulation attempts in real-time.",
+                "Apply disinformation resistance techniques to filter out deceptive narratives."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mental_autonomy_7",
+            "title": "Escaping Ideological Capture",
+            "description": "Freeing the mind from ideological possession and rigid belief systems.",
+            "bulletpoints": [
+                "Analyze beliefs objectively and separate personal identity from ideological attachment.",
+                "Practice intellectual flexibility by exploring opposing viewpoints without emotional bias.",
+                "Strengthen mental fluidity by engaging in paradox exercises and layered perspectives."
+            ],
+            "duration": "75",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mental_autonomy_8",
+            "title": "Surviving Psychological Warfare",
+            "description": "Advanced counter-operations for neutralizing mental and emotional attacks.",
+            "bulletpoints": [
+                "Master conversational aikido techniques to redirect psychological pressure.",
+                "Use intentional disinformation awareness drills to detect propaganda and social engineering.",
+                "Develop rapid-response countermeasures against coercive psychological attacks."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mental_autonomy_9",
+            "title": "The Art of Mental Detachment",
+            "description": "Practicing detachment from external validation and societal expectations.",
+            "bulletpoints": [
+                "Train emotional independence to reduce susceptibility to social approval seeking.",
+                "Use mindfulness techniques to observe thoughts without attachment or judgment.",
+                "Reinforce self-worth through intrinsic motivation rather than external comparison."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "mental_autonomy_10",
+            "title": "The Sovereign Mindset",
+            "description": "Cultivating a mindset of self-governance and personal sovereignty.",
+            "bulletpoints": [
+                "Embrace radical self-responsibility as the foundation of mental autonomy.",
+                "Develop a proactive approach to life that prioritizes personal agency and empowerment.",
+                "Foster a growth mindset that thrives on challenges and resists complacency."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mental_autonomy_11",
+            "title": "The Power of Mental Sovereignty",
+            "description": "Harnessing the full potential of a sovereign mindset to shape your reality.",
+            "bulletpoints": [
+                "Use mental sovereignty as a catalyst for personal transformation and self-actualization.",
+                "Integrate mental autonomy into all aspects of life for holistic empowerment.",
+                "Lead by example, inspiring others to reclaim their mental sovereignty."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mental_autonomy_12",
+            "title": "The Quantum Leap of Mental Autonomy",
+            "description": "Achieving a quantum leap in mental autonomy through advanced techniques.",
+            "bulletpoints": [
+                "Use quantum thinking to transcend linear thought patterns and embrace multidimensional perspectives.",
+                "Apply advanced mental sovereignty techniques to unlock untapped potential.",
+                "Embrace the unknown as a source of infinite possibilities and creative solutions."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mental_autonomy_13",
+            "title": "Quantum Thinking",
+            "description": "Use quantum thinking to transcend linear thought patterns and embrace multidimensional perspectives.",
+            "bulletpoints": [
+                "Embrace uncertainty as a catalyst for innovation and creativity.",
+                "Develop the ability to hold multiple perspectives simultaneously for holistic understanding.",
+                "Use quantum principles to break free from limiting beliefs and expand consciousness."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mental_autonomy_14",
+            "title": "Advanced Mental Sovereignty Techniques",
+            "description": "Apply advanced mental sovereignty techniques to unlock untapped potential.",
+            "bulletpoints": [
+                "Use advanced visualization techniques to manifest desired outcomes.",
+                "Develop the ability to influence reality through focused intention and mental clarity.",
+                "Integrate advanced mental sovereignty practices into daily life for continuous growth."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mental_autonomy_15",
+            "title": "Embracing the Unknown",
+            "description": "Embrace the unknown as a source of infinite possibilities and creative solutions.",
+            "bulletpoints": [
+                "Use uncertainty as a catalyst for innovation and problem-solving.",
+                "Develop the ability to navigate ambiguity with confidence and resilience.",
+                "Embrace the unknown as an opportunity for growth and self-discovery."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

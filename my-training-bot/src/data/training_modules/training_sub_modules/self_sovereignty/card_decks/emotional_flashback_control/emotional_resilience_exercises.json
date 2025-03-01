@@ -11,7 +11,11 @@
             "id": "emotional_resilience_1",
             "title": "The Power of Naming Emotions",
             "description": "Breaking emotional overwhelm by identifying and labeling feelings in the moment.",
-            "bulletpoints": "Emotion Naming, Thought-Emotion Separation, Emotional Categorization",
+            "bulletpoints": [
+                "When you name an emotion, you create psychological distance from it, reducing its intensity.",
+                "Labeling emotions allows you to separate your thoughts from feelings, making it easier to choose how to respond.",
+                "Regular practice of identifying emotions strengthens emotional intelligence and self-awareness."
+            ],
             "duration": "45",
             "difficulty": "Beginner"
         },
@@ -19,7 +23,11 @@
             "id": "emotional_resilience_2",
             "title": "Emotional Delay Tactics",
             "description": "Creating space between emotional triggers and reactions.",
-            "bulletpoints": "10-Second Pause, Mental Redirect, Conscious Emotional Delays",
+            "bulletpoints": [
+                "Pausing for ten seconds before responding to a triggering situation reduces emotional impulsivity.",
+                "Redirecting your focus to a neutral or calming thought helps override knee-jerk reactions.",
+                "Practicing delayed responses rewires the brain to prioritize rational thinking over emotional reactivity."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -27,7 +35,95 @@
             "id": "emotional_resilience_3",
             "title": "Emotional Reset Anchors",
             "description": "Developing personalized emotional reset techniques.",
-            "bulletpoints": "Personal Symbolism, Memory Anchors, Emotional Reinforcement Techniques",
+            "bulletpoints": [
+                "A personal symbol, such as a phrase, object, or gesture, can instantly trigger a sense of calm and control.",
+                "Memory anchors, like recalling a time you felt strong, can rapidly shift your emotional state.",
+                "Repeated use of emotional reset techniques builds automatic resilience in high-stress situations."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "emotional_resilience_4",
+            "title": "Grounding Through Sensory Engagement",
+            "description": "Using the five senses to stay present and regain control over emotions.",
+            "bulletpoints": [
+                "Focusing on physical sensations, like the feeling of your feet on the ground, anchors you in the present.",
+                "Engaging in sensory stimulation, such as touching textured objects or listening to calming sounds, interrupts emotional spirals.",
+                "Practicing sensory grounding regularly strengthens your ability to stay emotionally stable in stressful situations."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "emotional_resilience_5",
+            "title": "Breathwork for Emotional Mastery",
+            "description": "Harnessing controlled breathing techniques to regulate emotions.",
+            "bulletpoints": [
+                "Slow, deep breathing signals the nervous system to shift from stress mode to relaxation mode.",
+                "Box breathing—inhale for four seconds, hold for four, exhale for four—can quickly reset emotional equilibrium.",
+                "Practicing breathwork daily enhances emotional regulation and reduces stress-induced reactions."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "emotional_resilience_6",
+            "title": "Emotional Release Techniques",
+            "description": "Physically and mentally releasing stored emotional tension.",
+            "bulletpoints": [
+                "Shaking out stress through movement, like jumping or dancing, helps release stored emotional energy.",
+                "Journaling about emotions without censoring thoughts provides a mental and emotional detox.",
+                "Crying, laughing, or deep sighing can be powerful ways to discharge built-up emotional energy."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "emotional_resilience_7",
+            "title": "Cognitive Reframing for Emotional Strength",
+            "description": "Changing perspectives to reduce emotional suffering.",
+            "bulletpoints": [
+                "Reinterpreting setbacks as growth opportunities prevents negative emotions from taking control.",
+                "Shifting language from 'I failed' to 'I learned' reframes challenges as stepping stones to mastery.",
+                "Practicing reframing techniques trains the mind to approach stressors with resilience and optimism."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "emotional_resilience_8",
+            "title": "The Power of Emotional Detachment",
+            "description": "Learning to observe emotions without being consumed by them.",
+            "bulletpoints": [
+                "Visualizing emotions as passing clouds or waves helps create space between feelings and reactions.",
+                "Practicing mindfulness teaches you to experience emotions without immediate action or judgment.",
+                "Detachment does not mean suppression—it means recognizing emotions without letting them control you."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "emotional_resilience_9",
+            "title": "Building an Emotional Resilience Toolkit",
+            "description": "Creating a personalized set of techniques to navigate emotional challenges.",
+            "bulletpoints": [
+                "A toolkit may include breathwork, grounding exercises, journaling, or physical movement as resilience strategies.",
+                "Having multiple coping techniques ensures flexibility in responding to different emotional triggers.",
+                "Practicing each tool in low-stress situations builds automatic responses for high-stress moments."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "emotional_resilience_10",
+            "title": "Resilience Rituals for Daily Emotional Strength",
+            "description": "Establishing daily habits that reinforce emotional resilience.",
+            "bulletpoints": [
+                "Starting the day with gratitude and intention-setting cultivates emotional stability.",
+                "Engaging in self-care rituals, such as meditation or physical activity, fortifies emotional endurance.",
+                "Evening reflection on emotional wins and lessons helps reinforce resilience over time."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         }

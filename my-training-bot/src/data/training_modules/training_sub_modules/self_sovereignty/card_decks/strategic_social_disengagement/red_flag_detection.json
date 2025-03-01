@@ -11,7 +11,11 @@
             "id": "red_flag_1",
             "title": "Recognizing Social Manipulators",
             "description": "Spotting individuals who exhibit toxic, controlling, or deceptive behaviors.",
-            "bulletpoints": "Narcissistic Traits, Gaslighting Indicators, Love-Bombing and Trauma Bonding",
+            "bulletpoints": [
+                "Narcissistic traits that signal control-based relationships.",
+                "Gaslighting indicators used to distort your perception of reality.",
+                "Love-bombing and trauma bonding designed to create emotional dependency."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "red_flag_2",
             "title": "Assessing Group Power Dynamics",
             "description": "Understanding social hierarchies and how manipulation flows within them.",
-            "bulletpoints": "Spotting Enablers, Identifying False Authority Figures, Power Shift Indicators",
+            "bulletpoints": [
+                "Spotting enablers who reinforce toxic leadership.",
+                "Identifying false authority figures who control through intimidation.",
+                "Recognizing power shift indicators that signal impending social traps."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,8 +35,132 @@
             "id": "red_flag_3",
             "title": "Detecting Covert Psychological Warfare",
             "description": "Recognizing subtle techniques used to pressure, coerce, or manipulate in social settings.",
-            "bulletpoints": "Microaggressions, Social Isolation Tactics, Fear-Based Control Mechanisms",
+            "bulletpoints": [
+                "Microaggressions that slowly erode confidence and self-trust.",
+                "Social isolation tactics that cut off external support networks.",
+                "Fear-based control mechanisms designed to induce compliance."
+            ],
             "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "red_flag_4",
+            "title": "Spotting Conditional Kindness",
+            "description": "Identifying when favors, praise, or generosity are being used as manipulation tools.",
+            "bulletpoints": [
+                "Recognizing gifts as emotional debt traps.",
+                "Noticing approval that fluctuates based on control compliance.",
+                "Detecting guilt-laden generosity designed to extract future obligations."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "red_flag_5",
+            "title": "The Energy Drain Test",
+            "description": "Detecting individuals who leave you feeling exhausted, confused, or emotionally unstable.",
+            "bulletpoints": [
+                "Recognizing emotional vampires who drain mental resources.",
+                "Tracking mood changes before and after interactions.",
+                "Identifying subconscious stress responses to covert toxicity."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "red_flag_6",
+            "title": "The 'Too Good to Be True' Pattern",
+            "description": "Understanding how excessive charm, admiration, or opportunity is often a setup for control.",
+            "bulletpoints": [
+                "Recognizing future faking and false promises.",
+                "Detecting trust acceleration techniques designed to bypass critical thinking.",
+                "Spotting unrealistically perfect personas masking predatory intent."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "red_flag_7",
+            "title": "The 'Divide and Conquer' Strategy",
+            "description": "Identifying when a manipulator is intentionally turning people against each other.",
+            "bulletpoints": [
+                "Spotting triangulation where the manipulator plays multiple sides.",
+                "Recognizing information distortion that creates unnecessary conflict.",
+                "Tracking patterns of social positioning and divide-based control."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "red_flag_8",
+            "title": "The Emotional Mirror Trick",
+            "description": "Detecting when someone is mimicking your emotions to create artificial closeness.",
+            "bulletpoints": [
+                "Spotting excessive mirroring designed to lower defenses.",
+                "Noticing shifts where they reflect emotions but lack genuine depth.",
+                "Identifying rapport-building techniques used to fast-track trust."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "red_flag_9",
+            "title": "Forced Urgency and High-Pressure Tactics",
+            "description": "Recognizing when someone is creating artificial urgency to bypass rational thought.",
+            "bulletpoints": [
+                "Detecting time-sensitive manipulations used to eliminate choice.",
+                "Recognizing emotional overwhelm tactics designed to induce compliance.",
+                "Understanding how high-pressure environments trigger impulsive decisions."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "red_flag_10",
+            "title": "The Reputation Sabotage Trap",
+            "description": "Identifying when someone is secretly undermining you while pretending to be an ally.",
+            "bulletpoints": [
+                "Recognizing subtle character assassination attempts in casual conversation.",
+                "Noticing when compliments are backhanded or designed to seed doubt.",
+                "Tracking inconsistencies between public praise and private criticism."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "red_flag_11",
+            "title": "The ‘Shifting Goalposts’ Strategy",
+            "description": "Detecting when manipulators constantly change expectations to keep you off balance.",
+            "bulletpoints": [
+                "Recognizing when success criteria are altered to maintain control.",
+                "Spotting unrealistic demands that keep you chasing validation.",
+                "Understanding how moving targets create chronic self-doubt."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "red_flag_12",
+            "title": "Manipulation Through Victimhood",
+            "description": "Recognizing when someone weaponizes their suffering to extract control.",
+            "bulletpoints": [
+                "Detecting chronic victim narratives that deflect accountability.",
+                "Noticing when guilt is manufactured to manipulate responses.",
+                "Identifying exaggerated helplessness that demands emotional labor."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "red_flag_13",
+            "title": "The Coercive 'We' Language Trick",
+            "description": "Spotting when someone is falsely using collective identity to push their agenda.",
+            "bulletpoints": [
+                "Recognizing forced inclusion tactics designed to manufacture obligation.",
+                "Noticing when 'we' statements are used for subtle compliance pressure.",
+                "Understanding how false unity rhetoric overrides individual autonomy."
+            ],
+            "duration": "75",
             "difficulty": "Advanced"
         }
     ]

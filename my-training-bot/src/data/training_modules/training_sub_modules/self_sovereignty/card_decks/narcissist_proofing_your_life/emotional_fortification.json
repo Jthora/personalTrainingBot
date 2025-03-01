@@ -11,7 +11,11 @@
             "id": "emotional_fort_1",
             "title": "Building an Unshakable Emotional Core",
             "description": "Developing internal stability so that external manipulation does not trigger self-doubt.",
-            "bulletpoints": "Self-Affirmation Exercises, Emotional Boundary Setting, Reframing Techniques",
+            "bulletpoints": [
+                "Self-affirmation exercises create an unshakable inner foundation.",
+                "Emotional boundary setting protects against toxic influence.",
+                "Reframing techniques neutralize self-sabotaging thought patterns."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "emotional_fort_2",
             "title": "Neutralizing Manipulative Emotional Hooks",
             "description": "Breaking free from emotional blackmail, guilt-tripping, and fear-based control mechanisms.",
-            "bulletpoints": "Pattern Recognition, Emotional Regulation Drills, Psychological Shielding",
+            "bulletpoints": [
+                "Pattern recognition allows early detection of manipulation tactics.",
+                "Emotional regulation drills train resilience under psychological pressure.",
+                "Psychological shielding prevents external emotions from affecting personal stability."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,8 +35,96 @@
             "id": "emotional_fort_3",
             "title": "Erasing Narcissist Weak Spots",
             "description": "Identifying personal vulnerabilities that narcissists exploit and reinforcing them with protective strategies.",
-            "bulletpoints": "Closing Psychological Loopholes, Overcoming Childhood Conditioning, Developing Tactical Indifference",
+            "bulletpoints": [
+                "Closing psychological loopholes prevents exploitation of emotional triggers.",
+                "Overcoming childhood conditioning rewires destructive belief systems.",
+                "Developing tactical indifference makes manipulation attempts ineffective."
+            ],
             "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "emotional_fort_4",
+            "title": "Emotional Firewall Construction",
+            "description": "Building a psychological barrier that filters out toxic emotional influences.",
+            "bulletpoints": [
+                "Mental filtering blocks toxic emotions from taking root.",
+                "Emotional detachment training reduces attachment to manipulative people.",
+                "Vibrational awareness helps detect and deflect negative energy."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "emotional_fort_5",
+            "title": "Reprogramming Emotional Reflexes",
+            "description": "Training the subconscious mind to instinctively reject manipulative emotional cues.",
+            "bulletpoints": [
+                "Cognitive conditioning alters automatic emotional responses.",
+                "Behavioral rewiring replaces trauma-based reactions with conscious control.",
+                "Emotional reset drills strengthen control over triggers."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "emotional_fort_6",
+            "title": "Strategic Emotional Disengagement",
+            "description": "Developing the ability to stay emotionally detached in high-pressure situations.",
+            "bulletpoints": [
+                "Controlled indifference eliminates emotional vulnerabilities.",
+                "Crisis mindset training allows calm decision-making under stress.",
+                "Emotional exit strategies provide controlled disengagement from manipulation."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "emotional_fort_7",
+            "title": "The Narcissist’s Worst Nightmare",
+            "description": "Becoming completely non-reactive to emotional manipulation and invalidation attempts.",
+            "bulletpoints": [
+                "Emotional deflection strategies render gaslighting ineffective.",
+                "Internal validation exercises replace dependence on external approval.",
+                "Psychological self-reliance eliminates the need for validation from manipulators."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "emotional_fort_8",
+            "title": "Reinforcing Emotional Boundaries",
+            "description": "Creating and maintaining clear emotional limits to block out toxic interactions.",
+            "bulletpoints": [
+                "Boundary reinforcement drills solidify personal sovereignty.",
+                "Emotional cutoff techniques prevent repeated cycles of manipulation.",
+                "Verbal defense training sets clear and unshakable personal limits."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "emotional_fort_9",
+            "title": "Training the Mind for Psychological Battle",
+            "description": "Developing an advanced, tactical mindset to withstand prolonged psychological attacks.",
+            "bulletpoints": [
+                "Mental warfare drills train resilience against long-term manipulation.",
+                "Tactical emotional withdrawal weakens an aggressor’s psychological hold.",
+                "Counter-strategy mapping identifies and neutralizes emerging threats."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "emotional_fort_10",
+            "title": "Weaponizing Emotional Intelligence",
+            "description": "Using deep emotional awareness to detect and counter manipulative tactics.",
+            "bulletpoints": [
+                "Empathic pattern analysis reveals hidden manipulative intentions.",
+                "Controlled vulnerability projection misleads and neutralizes adversaries.",
+                "Strategic emotional positioning ensures psychological dominance in interactions."
+            ],
+            "duration": "75",
             "difficulty": "Advanced"
         }
     ]

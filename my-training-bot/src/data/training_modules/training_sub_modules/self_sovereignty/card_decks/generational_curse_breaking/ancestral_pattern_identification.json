@@ -11,7 +11,11 @@
             "id": "ancestral_1",
             "title": "Mapping Your Ancestral Influences",
             "description": "Tracing familial patterns to identify inherited psychological and energetic influences.",
-            "bulletpoints": "Family Behavioral Analysis, Trauma Lineage Tracking, Generational Energy Recognition",
+            "bulletpoints": [
+                "Create a detailed family behavioral analysis to uncover recurring emotional and relational patterns.",
+                "Trace trauma lineage tracking by identifying unresolved generational wounds that have been passed down.",
+                "Recognize generational energy imprints that influence your thought processes and emotional responses."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "ancestral_2",
             "title": "Uncovering Hidden Family Beliefs",
             "description": "Detecting and analyzing subconscious narratives passed down through generations.",
-            "bulletpoints": "Cultural Programming Awareness, Shadow Work on Inherited Beliefs, Family Narrative Decoding",
+            "bulletpoints": [
+                "Identify unspoken cultural programming that shapes behaviors and limits personal growth.",
+                "Use shadow work techniques to explore deep-seated inherited fears, expectations, and emotional triggers.",
+                "Decode family narratives by recognizing commonly repeated phrases, warnings, and belief systems."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,97 @@
             "id": "ancestral_3",
             "title": "Breaking the Cycle of Psychological Conditioning",
             "description": "Techniques for dismantling destructive family behaviors and installing new mental frameworks.",
-            "bulletpoints": "Cognitive Reframing, Internal Boundary Setting, Behavioral Disruption Strategies",
+            "bulletpoints": [
+                "Practice cognitive reframing to challenge inherited limiting beliefs and replace them with empowering ones.",
+                "Set internal boundaries to prevent unconscious compliance with generational emotional conditioning.",
+                "Use behavioral disruption strategies to replace inherited patterns with healthier alternatives."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "ancestral_4",
+            "title": "Identifying Generational Emotional Echoes",
+            "description": "Recognizing repeating emotional cycles that manifest in different family members.",
+            "bulletpoints": [
+                "Observe recurring themes of anxiety, avoidance, or control that pass through multiple generations.",
+                "Recognize when you are unconsciously reliving emotional experiences that belonged to your ancestors.",
+                "Develop techniques to emotionally disengage from inherited pain and establish personal autonomy."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "ancestral_5",
+            "title": "The Epigenetics of Trauma",
+            "description": "Exploring how trauma is encoded in DNA and passed down through generations.",
+            "bulletpoints": [
+                "Scientific studies suggest that severe trauma can alter gene expression and impact descendants.",
+                "Recognizing these epigenetic imprints helps separate personal struggles from inherited burdens.",
+                "By engaging in healing practices, it is possible to shift epigenetic expression and create a healthier legacy."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ancestral_6",
+            "title": "Recognizing Family Roles and Archetypes",
+            "description": "Understanding assigned family roles and their impact on self-identity.",
+            "bulletpoints": [
+                "Common roles include the scapegoat, the golden child, the lost child, and the enabler.",
+                "Breaking free from a toxic role requires conscious detachment and redefining self-worth.",
+                "Recognizing imposed roles in others allows for better navigation of family dynamics."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "ancestral_7",
+            "title": "Spiritual Contracts and Karmic Ties",
+            "description": "Exploring the concept of soul agreements and inherited spiritual debts.",
+            "bulletpoints": [
+                "Some belief systems suggest that we inherit spiritual contracts that require resolution in this lifetime.",
+                "Breaking karmic ties involves conscious healing, forgiveness, and intentional detachment from past obligations.",
+                "Understanding spiritual entanglements helps release ancestral burdens that no longer serve personal growth."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "ancestral_8",
+            "title": "Intergenerational Patterns of Control",
+            "description": "Identifying cycles of authoritarian control and emotional repression.",
+            "bulletpoints": [
+                "Many families enforce control through guilt, obligation, or fear to maintain tradition.",
+                "Recognizing these patterns allows for conscious resistance and the formation of independent values.",
+                "Challenging inherited control mechanisms fosters autonomy and true self-expression."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ancestral_9",
+            "title": "Healing the Family Lineage",
+            "description": "Techniques for consciously transforming inherited pain into strength.",
+            "bulletpoints": [
+                "Practicing ancestral healing rituals can help release the weight of past traumas.",
+                "Forgiveness and understanding provide a pathway to emotional liberation from inherited wounds.",
+                "Becoming the cycle-breaker in your lineage empowers future generations to live without inherited burdens."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "ancestral_10",
+            "title": "Cleansing Ancestral Energy Attachments",
+            "description": "Removing inherited energetic imprints that interfere with personal sovereignty.",
+            "bulletpoints": [
+                "Meditative visualization techniques can sever lingering energetic connections to past family trauma.",
+                "Symbolic rituals such as burning written intentions or energy cleansing ceremonies help clear ancestral attachments.",
+                "Releasing inherited energetic burdens allows for clarity, peace, and the establishment of self-defined identity."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

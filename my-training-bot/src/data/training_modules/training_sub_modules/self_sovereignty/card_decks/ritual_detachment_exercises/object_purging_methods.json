@@ -11,7 +11,11 @@
             "id": "purge_1",
             "title": "Identifying Energy-Binding Objects",
             "description": "Detecting physical items that hold negative energetic imprints from past relationships or events.",
-            "bulletpoints": "Energetic Residue Scanning, Object Sensory Testing, Memory Anchoring Recognition",
+            "bulletpoints": [
+                "Scan objects for emotional memories that trigger subconscious reactions.",
+                "Observe temperature shifts or sensations when touching potential energy-bound items.",
+                "Use pendulum dowsing or intuitive scanning to confirm energetic attachments."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "purge_2",
             "title": "The Fire and Water Ritual",
             "description": "Using fire and water as elemental forces to break energy bonds within physical objects.",
-            "bulletpoints": "Flame Purification, Water Submersion Cleansing, Elemental Energy Reprogramming",
+            "bulletpoints": [
+                "Burn objects in a controlled fire while mentally releasing their energetic influence.",
+                "Submerge small items in saltwater to dissolve negative imprints before disposal.",
+                "Use both fire and water in sequence for a complete energetic cleanse."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,97 @@
             "id": "purge_3",
             "title": "Burial and Earth Absorption",
             "description": "Returning objects to the earth to neutralize and absorb residual energetic imprints.",
-            "bulletpoints": "Sacred Ground Selection, Burial Ceremony, Earth Reclaiming Invocation",
+            "bulletpoints": [
+                "Bury items in a natural environment with an intention of final severance.",
+                "Use crystals or sacred herbs to amplify the earth’s absorption process.",
+                "Perform a symbolic act of walking away without looking back after burial."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "purge_4",
+            "title": "Air Dispersal and Wind Release",
+            "description": "Harnessing wind and air currents to disperse lingering energy from objects.",
+            "bulletpoints": [
+                "Scatter ashes or torn paper fragments into the wind as a final release act.",
+                "Hold an object up to the wind and visualize it being stripped of residual ties.",
+                "Use breathwork and intentional exhalation to finalize energetic detachment."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "purge_5",
+            "title": "Sound Frequency Cleansing",
+            "description": "Using sound vibrations to break energy links within physical possessions.",
+            "bulletpoints": [
+                "Expose items to high-frequency sounds like singing bowls or tuning forks.",
+                "Chant mantras or use vocal toning to neutralize embedded energies.",
+                "Strike the object lightly to detect vibrational resistance before disposal."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "purge_6",
+            "title": "Reprogramming Objects for Neutrality",
+            "description": "Transforming an item’s energetic signature rather than destroying it.",
+            "bulletpoints": [
+                "Hold the object and set a strong mental intention to rewrite its purpose.",
+                "Expose the object to sunlight or moonlight for natural energy realignment.",
+                "Place it near a high-vibration item like quartz or selenite for purification."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "purge_7",
+            "title": "Salt and Earth Smudging",
+            "description": "Using salt, herbs, or soil to absorb and cleanse lingering energetic imprints.",
+            "bulletpoints": [
+                "Bury the item in a bowl of salt for 24-48 hours before disposal.",
+                "Use a mixture of sage, cedar, and palo santo smoke to cleanse stubborn attachments.",
+                "Cover objects in natural earth or sand and leave overnight for grounding."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "purge_8",
+            "title": "Mirror Reflection Disconnection",
+            "description": "Using mirrors to sever energetic links between yourself and an object.",
+            "bulletpoints": [
+                "Place the object in front of a mirror and visualize its energy dissolving.",
+                "Use a hand mirror to symbolically reflect any lingering energy back to its source.",
+                "Shatter or safely dispose of the mirror to complete the severance ritual."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "purge_9",
+            "title": "Cord Severance with Physical Items",
+            "description": "Using cord-cutting methods to release emotional and psychic connections to objects.",
+            "bulletpoints": [
+                "Tie a string around the object and cut it as a symbolic act of detachment.",
+                "Write down your emotional ties to the object and physically rip the paper.",
+                "Perform a visualization where the object is wrapped in light before fading away."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "purge_10",
+            "title": "Sacred Disposal with Elemental Blessings",
+            "description": "Honoring the object’s purpose before final disposal to ensure complete closure.",
+            "bulletpoints": [
+                "Offer gratitude and speak words of final release before letting go.",
+                "Use natural elements like sun, moon, or storm energy to complete the transition.",
+                "Seal the process with a symbolic gesture, such as clapping or a deep breath."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

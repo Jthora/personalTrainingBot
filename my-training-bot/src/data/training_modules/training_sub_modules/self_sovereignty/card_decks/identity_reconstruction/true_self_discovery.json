@@ -11,7 +11,11 @@
             "id": "self_discovery_1",
             "title": "Unmasking the Conditioned Self",
             "description": "Identifying behaviors, beliefs, and thought patterns imposed by external influences.",
-            "bulletpoints": "Societal Programming Awareness, Parental Influence Assessment, Emotional Self-Audit",
+            "bulletpoints": [
+                "Societal programming awareness reveals how external forces shape identity.",
+                "Parental influence assessment clarifies which beliefs originate from upbringing.",
+                "Emotional self-audit differentiates authentic emotions from conditioned responses."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "self_discovery_2",
             "title": "Rediscovering Your Core Identity",
             "description": "Aligning with your innate personality, values, and unique strengths.",
-            "bulletpoints": "Core Value Identification, Strengths and Talents Exploration, Personal Authenticity Exercises",
+            "bulletpoints": [
+                "Core value identification solidifies internal decision-making principles.",
+                "Strengths and talents exploration reconnects you with natural gifts.",
+                "Personal authenticity exercises reinforce alignment with the true self."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,97 @@
             "id": "self_discovery_3",
             "title": "Building a New Internal Narrative",
             "description": "Creating a self-affirming personal identity framework based on your true self.",
-            "bulletpoints": "Positive Self-Definition, Identity Affirmation Rituals, Confidence Calibration",
+            "bulletpoints": [
+                "Positive self-definition ensures that your identity remains in your control.",
+                "Identity affirmation rituals reinforce the new, authentic self-image.",
+                "Confidence calibration fine-tunes emotional resilience and self-belief."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "self_discovery_4",
+            "title": "Tracing the Origins of Self-Perception",
+            "description": "Examining the experiences and influences that shaped your identity.",
+            "bulletpoints": [
+                "Identifying key life events uncovers moments of identity formation.",
+                "Analyzing past relationships reveals patterns of self-perception reinforcement.",
+                "Distinguishing personal truths from learned behaviors sharpens authenticity."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "self_discovery_5",
+            "title": "The Mirror Exercise",
+            "description": "Practicing self-awareness by observing and reflecting on personal behaviors.",
+            "bulletpoints": [
+                "Observing micro-expressions helps detect unconscious emotional responses.",
+                "Analyzing speech patterns reveals self-perception embedded in language.",
+                "Reflecting on past interactions uncovers recurring themes in self-identity."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "self_discovery_6",
+            "title": "Reconnecting with Inner Desires",
+            "description": "Exploring what truly brings fulfillment beyond external expectations.",
+            "bulletpoints": [
+                "Distinguishing between conditioned wants and authentic desires clarifies motivation.",
+                "Exploring childhood interests reveals suppressed aspects of self-expression.",
+                "Designing a passion-driven life creates alignment with core identity."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "self_discovery_7",
+            "title": "Embracing Your Unique Expression",
+            "description": "Developing confidence in expressing your true self in all situations.",
+            "bulletpoints": [
+                "Owning personal quirks removes the fear of judgment and rejection.",
+                "Practicing radical self-acceptance strengthens internal validation systems.",
+                "Aligning lifestyle choices with authenticity enhances long-term fulfillment."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "self_discovery_8",
+            "title": "Dismantling the False Self",
+            "description": "Eliminating survival-based personas that no longer serve your growth.",
+            "bulletpoints": [
+                "Identifying defensive identities reveals adaptations created for protection.",
+                "Releasing outdated masks frees energy for authentic self-expression.",
+                "Reinforcing self-trust ensures confidence in navigating life as your true self."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "self_discovery_9",
+            "title": "Creating a Personal Philosophy",
+            "description": "Defining a personal framework that aligns with your highest truth.",
+            "bulletpoints": [
+                "Synthesizing life experiences clarifies unique insights and perspectives.",
+                "Developing guiding principles solidifies decision-making based on authenticity.",
+                "Integrating wisdom into daily life ensures sustained personal alignment."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "self_discovery_10",
+            "title": "Integrating the True Self into Daily Life",
+            "description": "Applying authenticity in relationships, work, and personal development.",
+            "bulletpoints": [
+                "Setting lifestyle boundaries prevents compromise of core identity.",
+                "Creating daily rituals reinforces alignment with personal truth.",
+                "Navigating social interactions with authenticity fosters deeper connections."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

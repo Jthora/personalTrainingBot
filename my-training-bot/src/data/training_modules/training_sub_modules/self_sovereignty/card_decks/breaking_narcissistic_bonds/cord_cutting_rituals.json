@@ -11,7 +11,11 @@
             "id": "cord_cutting_1",
             "title": "Visualizing the Energetic Cords",
             "description": "Techniques to perceive and map out emotional and psychic connections.",
-            "bulletpoints": "Energetic Mapping, Aura Perception, Subconscious Bond Awareness",
+            "bulletpoints": [
+                "By entering a deep meditative state, visualize energetic cords extending from your body to others and identify which ones feel restrictive or heavy.",
+                "Use color recognition to interpret the nature of each connection—dark or frayed cords often indicate draining or toxic attachments.",
+                "Train your perception by practicing in different emotional states, as stronger emotional charges can make hidden connections more visible."
+            ],
             "duration": "45",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "cord_cutting_2",
             "title": "The Cord Severance Ritual",
             "description": "Performing a structured ritual to cut emotional and psychic ties.",
-            "bulletpoints": "Ritual Tools and Methods, Invocation and Release, Post-Severance Grounding",
+            "bulletpoints": [
+                "Select a sacred space, cleanse it with fire, water, or smoke, and establish an intention of release before beginning the severance process.",
+                "Using a visualization or physical tool (such as a ritual dagger, scissors, or candle flame), sever the energetic cords one by one while affirming the finality of the disconnection.",
+                "Seal the process with grounding techniques, such as deep breathing, salt baths, or working with protective symbols to reinforce the energy shift."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,85 @@
             "id": "cord_cutting_3",
             "title": "Shielding Against Reattachment",
             "description": "Reinforcing protective barriers to prevent reestablishment of toxic connections.",
-            "bulletpoints": "Energetic Shielding, Thought Form Management, Psychological Blockades",
+            "bulletpoints": [
+                "Strengthen your aura by visualizing a golden or violet protective field surrounding you, actively dissolving any attempted reattachments.",
+                "Use affirmations and mantras to reinforce self-sovereignty, ensuring your subconscious does not unconsciously invite past energy bonds.",
+                "Develop a daily energetic hygiene practice that includes cleansing rituals, breathwork, or visualization of energetic shields replenishing overnight."
+            ],
             "duration": "60",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "cord_cutting_4",
+            "title": "The Elemental Release Method",
+            "description": "Using the power of fire, water, earth, or air to transmute lingering attachments.",
+            "bulletpoints": [
+                "Write down the name of the person or situation you are detaching from and burn it in a fireproof dish, visualizing the energetic bond dissolving into ashes.",
+                "Immerse yourself in a body of water or take a ritual bath with salt, herbs, and essential oils, allowing the elements to cleanse residual ties.",
+                "Bury symbolic objects, such as a stone or paper with the individual's name, in the earth, entrusting the planet to neutralize and recycle the energy."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cord_cutting_5",
+            "title": "Mirror Reflection Technique",
+            "description": "Projecting energy back to its source to neutralize lingering energetic ties.",
+            "bulletpoints": [
+                "Visualize a mirror surrounding your energy field, ensuring that any external influence bounces back to its origin without penetrating your aura.",
+                "Engage in a practice where you mentally and emotionally reflect on the lessons learned, acknowledging the experience while refusing to absorb lingering energy.",
+                "Use an actual mirror in ritual work, speaking affirmations of release into it and wiping it clean as a symbolic act of purification and closure."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "cord_cutting_6",
+            "title": "Dream Cord Reprogramming",
+            "description": "Severing psychic attachments through dreamwork and subconscious reprogramming.",
+            "bulletpoints": [
+                "Before sleep, set the intention to enter a lucid or semi-lucid dream state where you will sever any unconscious emotional cords still lingering.",
+                "If a toxic presence appears in a dream, actively visualize cutting the cords or dissolving their influence using an internal energy burst.",
+                "Keep a dream journal to track patterns, ensuring that reattachment attempts are identified and addressed through conscious reinforcement techniques."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cord_cutting_7",
+            "title": "Voice and Sound Frequency Severance",
+            "description": "Utilizing vocal resonance and sound frequencies to dissolve stagnant energy bonds.",
+            "bulletpoints": [
+                "Use toning, chanting, or singing in specific frequencies (such as 528Hz or 741Hz) to break apart lingering energetic connections.",
+                "Recite powerful affirmations, mantras, or incantations aloud while visualizing the energetic cords fraying and detaching.",
+                "Experiment with drumming, bells, or singing bowls to disrupt stagnant energy fields and reinforce your sovereign energetic state."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cord_cutting_8",
+            "title": "The Solar Purge Ritual",
+            "description": "Harnessing the power of the sun to burn away residual energetic bonds.",
+            "bulletpoints": [
+                "At sunrise or noon, stand facing the sun and visualize its light burning away any attachments that no longer serve your highest good.",
+                "Breathe deeply and allow solar energy to fill your body, dissolving energetic weaknesses and reinforcing personal power.",
+                "Close with a grounding exercise, such as walking barefoot on earth or meditating under a tree, to restore balance and integrate the purge."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "cord_cutting_9",
+            "title": "Timeline Disconnection Meditation",
+            "description": "Rewriting energetic connections by severing bonds in past, present, and future timelines.",
+            "bulletpoints": [
+                "Enter a deep meditative state and visualize three timelines—past, present, and future—where attachments may still exist.",
+                "Systematically cut the energetic cords in each timeline, reaffirming your freedom from lingering karmic debts or emotional contracts.",
+                "Reinforce the exercise by writing down affirmations of self-sovereignty, destroying the paper afterward to symbolize detachment."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

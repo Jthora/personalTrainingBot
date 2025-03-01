@@ -11,7 +11,11 @@
             "id": "purpose_1",
             "title": "Finding the Message in the Pain",
             "description": "Extracting deep insights and wisdom from past struggles.",
-            "bulletpoints": "Decoding Life Lessons, Understanding Spiritual Growth, Recognizing Patterns of Evolution",
+            "bulletpoints": [
+                "Decoding life lessons hidden within adversity.",
+                "Recognizing personal evolution through hardship.",
+                "Using pain as a signal for growth and transformation."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "purpose_2",
             "title": "Using Trauma as Fuel for Mastery",
             "description": "Redirecting emotional energy into focused skill-building and personal transformation.",
-            "bulletpoints": "Emotional Focus Training, Creative and Physical Alchemy, Channeling Pain into Expertise",
+            "bulletpoints": [
+                "Training emotional focus for high-performance growth.",
+                "Converting inner turmoil into creative breakthroughs.",
+                "Building resilience through skill refinement and discipline."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,8 +35,132 @@
             "id": "purpose_3",
             "title": "Establishing a Legacy from Suffering",
             "description": "Turning personal hardships into a lasting impact or mission that benefits others.",
-            "bulletpoints": "Creating a Life Mission, Sharing Wisdom with Others, Structuring a Legacy Project",
+            "bulletpoints": [
+                "Designing a mission that reflects personal experiences.",
+                "Transforming suffering into a force for collective empowerment.",
+                "Creating systems that allow others to learn from your journey."
+            ],
             "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "purpose_4",
+            "title": "Alchemizing Emotional Pain into Creative Expression",
+            "description": "Transforming deep emotions into powerful creative works.",
+            "bulletpoints": [
+                "Using art, music, or writing as a transmutation tool.",
+                "Channeling emotions into storytelling and symbolic imagery.",
+                "Expressing hidden truths through an artistic medium."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "purpose_5",
+            "title": "Reframing Trauma as Training",
+            "description": "Viewing past challenges as a preparation phase for greater missions.",
+            "bulletpoints": [
+                "Understanding pain as a refinement process.",
+                "Extracting skills and strengths developed through struggle.",
+                "Rewriting past hardships as stepping stones to mastery."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "purpose_6",
+            "title": "Turning Betrayal into Unbreakable Mental Armor",
+            "description": "Using past betrayals as fuel for wisdom, strength, and resilience.",
+            "bulletpoints": [
+                "Extracting lessons from deception and broken trust.",
+                "Developing intuitive filters for future relationships.",
+                "Strengthening emotional independence and discernment."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "purpose_7",
+            "title": "Weaponizing the Lessons of Failure",
+            "description": "Using past failures as data points for future victory.",
+            "bulletpoints": [
+                "Analyzing past mistakes without emotional weight.",
+                "Identifying patterns and blind spots in decision-making.",
+                "Turning setbacks into a systematic approach for success."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "purpose_8",
+            "title": "Forging an Identity of Strength",
+            "description": "Rebuilding a personal identity centered on resilience and self-mastery.",
+            "bulletpoints": [
+                "Eliminating victimhood and embracing warrior mentality.",
+                "Integrating past experiences into an empowered self-image.",
+                "Constructing an internal philosophy that reinforces strength."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "purpose_9",
+            "title": "Turning Darkness into Leadership",
+            "description": "Using personal struggles to guide and empower others.",
+            "bulletpoints": [
+                "Developing mentorship strategies based on past lessons.",
+                "Empowering others through lived experience and wisdom.",
+                "Creating a leadership style rooted in authenticity."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "purpose_10",
+            "title": "Designing a Legacy of Impact",
+            "description": "Building a framework to ensure your struggles create lasting change.",
+            "bulletpoints": [
+                "Developing systems for sharing knowledge and wisdom.",
+                "Creating a long-term vision based on transformational experiences.",
+                "Aligning daily actions with a greater mission."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "purpose_11",
+            "title": "Transforming Pain into Empathy",
+            "description": "Using deep emotional experiences to connect with and heal others.",
+            "bulletpoints": [
+                "Developing emotional intelligence through suffering.",
+                "Creating compassion-based leadership techniques.",
+                "Leveraging personal pain to support others in healing."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "purpose_12",
+            "title": "Rewriting the Past to Create a New Future",
+            "description": "Altering the internal perception of past trauma to influence future outcomes.",
+            "bulletpoints": [
+                "Reshaping painful memories into sources of strength.",
+                "Using mental time travel to reconstruct past narratives.",
+                "Reinforcing a positive life trajectory through story manipulation."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "purpose_13",
+            "title": "Channeling Pain into a Physical Discipline",
+            "description": "Using movement, endurance, and strength training to process and transmute emotions.",
+            "bulletpoints": [
+                "Training the body as a vehicle for mental resilience.",
+                "Releasing emotional tension through movement and exertion.",
+                "Forging an unbreakable mind-body connection."
+            ],
+            "duration": "75",
             "difficulty": "Advanced"
         }
     ]

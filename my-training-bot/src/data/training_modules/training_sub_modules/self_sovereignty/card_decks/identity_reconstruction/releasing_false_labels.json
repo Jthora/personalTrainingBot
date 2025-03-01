@@ -11,7 +11,11 @@
             "id": "false_labels_1",
             "title": "Recognizing Imposed Labels",
             "description": "Identifying the false identities placed on you by others.",
-            "bulletpoints": "Family Role Assignments, Societal Expectations, Emotional Programming",
+            "bulletpoints": [
+                "Family role assignments create lifelong expectations that distort personal identity.",
+                "Societal expectations impose artificial constraints on behavior and self-worth.",
+                "Emotional programming embeds limiting beliefs through repetition and manipulation."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "false_labels_2",
             "title": "Disrupting the Internalized Narrative",
             "description": "Techniques to dismantle self-sabotaging thoughts and behaviors.",
-            "bulletpoints": "Cognitive Reframing, Emotional Validation Practices, Identity Deconstruction",
+            "bulletpoints": [
+                "Cognitive reframing challenges the assumptions that fuel self-limiting beliefs.",
+                "Emotional validation practices reinforce self-worth beyond external opinions.",
+                "Identity deconstruction reveals which aspects of the self were artificially imposed."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,97 @@
             "id": "false_labels_3",
             "title": "Symbolic Release and Reintegration",
             "description": "Rituals and practices for permanently discarding false identities and reclaiming personal sovereignty.",
-            "bulletpoints": "Symbolic Object Discarding, Affirmation Rewiring, Visualization of Identity Shift",
+            "bulletpoints": [
+                "Symbolic object discarding severs ties to external conditioning through physical action.",
+                "Affirmation rewiring replaces false identities with empowered self-beliefs.",
+                "Visualization of identity shift anchors the new self-image into subconscious patterns."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "false_labels_4",
+            "title": "Breaking the Guilt Attachment",
+            "description": "Detaching from feelings of obligation toward false identities.",
+            "bulletpoints": [
+                "Recognizing manufactured guilt highlights how emotional control is weaponized.",
+                "Emotional detachment techniques sever the connection between guilt and self-worth.",
+                "Building new self-permissions reclaims autonomy from past conditioning."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "false_labels_5",
+            "title": "Identifying the Voice of Conditioning",
+            "description": "Distinguishing between authentic thoughts and implanted beliefs.",
+            "bulletpoints": [
+                "Tracking thought origins helps determine whether an idea is truly your own.",
+                "Separating internal voice from external influence reduces subconscious control.",
+                "Replacing internalized criticism with self-directed support rewires emotional patterns."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "false_labels_6",
+            "title": "Cleansing Your Name and Identity",
+            "description": "Removing energetic and psychological attachments to past imposed identities.",
+            "bulletpoints": [
+                "Rewriting your name or self-definition signals a conscious shift in identity.",
+                "Energetic detachment exercises remove lingering emotional imprints of false labels.",
+                "Crafting a new identity manifesto cements a self-created narrative of sovereignty."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "false_labels_7",
+            "title": "Dismantling the Narcissistic Projection",
+            "description": "Neutralizing the distorted image imposed on you by narcissistic manipulators.",
+            "bulletpoints": [
+                "Identifying projection patterns reveals how others shape false perceptions of you.",
+                "Refusing to accept projected narratives dismantles their influence over self-perception.",
+                "Rebuilding self-image from internal validation neutralizes external distortion."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "false_labels_8",
+            "title": "The Mirror of True Identity",
+            "description": "Reflecting on authentic self-traits beyond imposed expectations.",
+            "bulletpoints": [
+                "Distinguishing between surface-level conditioning and core personality traits clarifies self-identity.",
+                "Recognizing your authentic desires strengthens independence from external influence.",
+                "Affirming unique qualities without comparison to imposed ideals reinforces self-trust."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "false_labels_9",
+            "title": "Overriding the ‘Not Good Enough’ Program",
+            "description": "Reprogramming deep-seated beliefs of unworthiness and self-doubt.",
+            "bulletpoints": [
+                "Tracing the origin of self-doubt uncovers the root cause of false self-perception.",
+                "Replacing negative reinforcement with positive affirmations creates a self-supportive loop.",
+                "Retraining emotional response to success removes unconscious resistance to self-growth."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "false_labels_10",
+            "title": "Integrating the Sovereign Self",
+            "description": "Establishing long-term mental, emotional, and spiritual independence.",
+            "bulletpoints": [
+                "Regular self-audit ensures external narratives do not override personal sovereignty.",
+                "Maintaining mental autonomy prevents unconscious regression into past conditioning.",
+                "Practicing daily sovereignty rituals reinforces long-term psychological freedom."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

@@ -11,7 +11,11 @@
             "id": "exit_1",
             "title": "The Fade-Out Method",
             "description": "Gradually disengaging from toxic people without confrontation or suspicion.",
-            "bulletpoints": "Reducing Availability, Shifting Social Circles, Controlled Disinterest Projection",
+            "bulletpoints": [
+                "Reducing availability without abrupt disappearance.",
+                "Shifting social circles to create natural distancing.",
+                "Projecting controlled disinterest to lower emotional stakes."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "exit_2",
             "title": "Silent Disappearance",
             "description": "Executing a clean and undetectable social withdrawal.",
-            "bulletpoints": "Digital and Social Media Detachment, Sudden Interest Shifts, Passive Contact Elimination",
+            "bulletpoints": [
+                "Eliminating digital and social media traces preemptively.",
+                "Developing sudden, uninteresting interests to redirect attention.",
+                "Gradually phasing out interactions until non-existence."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,133 @@
             "id": "exit_3",
             "title": "The Strategic Confrontation",
             "description": "When direct confrontation is necessary, using calculated tactics to escape with minimal damage.",
-            "bulletpoints": "Verbal Boundary Enforcement, Emotional Neutrality Tactics, Non-Reactive Conflict Diffusion",
+            "bulletpoints": [
+                "Enforcing verbal boundaries without emotional engagement.",
+                "Maintaining complete emotional neutrality under provocation.",
+                "Using non-reactive conflict diffusion techniques for clean exits."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "exit_4",
+            "title": "The ‘Too Busy’ Excuse",
+            "description": "Using productivity and obligations as a natural shield to avoid interactions.",
+            "bulletpoints": [
+                "Creating a false but believable schedule overload.",
+                "Deflecting invitations with vague but irrefutable excuses.",
+                "Minimizing availability while avoiding triggering suspicion."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "exit_5",
+            "title": "The Controlled Chaos Exit",
+            "description": "Using distraction tactics to exit unnoticed in high-risk situations.",
+            "bulletpoints": [
+                "Creating controlled diversions to shift attention away from yourself.",
+                "Using minor social disruptions as exit cover.",
+                "Leaving when the environment is most preoccupied."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "exit_6",
+            "title": "The ‘Ghosting with Echo’ Strategy",
+            "description": "Leaving behind controlled signals that simulate presence post-exit.",
+            "bulletpoints": [
+                "Maintaining minimal digital traces for a delayed ghosting effect.",
+                "Creating automated responses to appear semi-active.",
+                "Leaving predictable patterns behind to divert tracking attempts."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "exit_7",
+            "title": "The Social Chameleon Strategy",
+            "description": "Gradually shifting interests and personality traits to create natural dissonance.",
+            "bulletpoints": [
+                "Adopting new interests incompatible with the target group.",
+                "Becoming ‘boring’ to naturally push manipulators away.",
+                "Adjusting speech patterns and energy to create social friction."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "exit_8",
+            "title": "The Reverse Conditioning Method",
+            "description": "Making interactions so undesirable that toxic people cut ties with you.",
+            "bulletpoints": [
+                "Responding with strategic dullness and disengagement.",
+                "Using subtle boundary-pushing techniques to repel interest.",
+                "Becoming unpredictably difficult to manipulate."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "exit_9",
+            "title": "Using Third-Party Misdirection",
+            "description": "Indirectly shifting attention away from yourself by creating alternate focuses.",
+            "bulletpoints": [
+                "Redirecting social energy onto another focal point.",
+                "Subtly introducing alternative relationships to absorb attention.",
+                "Using controlled leaks of false narratives to cover withdrawal."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "exit_10",
+            "title": "The ‘No Closure’ Tactic",
+            "description": "Leaving unresolved ambiguity to prevent obsessive re-engagement.",
+            "bulletpoints": [
+                "Avoiding final conversations to prevent emotional hooks.",
+                "Leaving vague reasoning behind to create natural emotional fade.",
+                "Never providing an emotional foothold for potential return."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "exit_11",
+            "title": "The Soft Ghost Strategy",
+            "description": "Gradual reduction of response times to create a slow disengagement curve.",
+            "bulletpoints": [
+                "Increasing response delays in a subtle but deliberate way.",
+                "Using neutral, vague answers to de-escalate interaction depth.",
+                "Allowing social momentum to naturally die out over time."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "exit_12",
+            "title": "The Conflict-Free Exit Frame",
+            "description": "Setting up a departure narrative that avoids blame or retaliation.",
+            "bulletpoints": [
+                "Using non-personal excuses to remove emotional charge.",
+                "Framing exits as circumstantial rather than intentional distancing.",
+                "Keeping messaging neutral to avoid reactive aggression."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "exit_13",
+            "title": "The Memory Rewrite Tactic",
+            "description": "Creating an altered perception of past interactions to reshape how people remember you.",
+            "bulletpoints": [
+                "Introducing subtle but strategic inconsistencies in past narratives.",
+                "Using misdirection to shift social memory focus elsewhere.",
+                "Rewriting personal involvement history to reduce attachment residue."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

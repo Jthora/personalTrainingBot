@@ -11,7 +11,11 @@
             "id": "vocal_1",
             "title": "Deepening and Strengthening Vocal Tone",
             "description": "Exercises to lower pitch, expand resonance, and project with controlled force.",
-            "bulletpoints": "Diaphragmatic Breathing, Vocal Cord Strengthening, Resonance Amplification",
+            "bulletpoints": [
+                "Use diaphragmatic breathing to support deeper, stronger vocal projection.",
+                "Practice controlled humming to enhance vocal cord vibration and richness.",
+                "Resonate sound through the chest to create a commanding, grounded voice."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "vocal_2",
             "title": "Commanding Speech Cadence",
             "description": "Training in deliberate pacing, pause utilization, and tonal shifts for maximum influence.",
-            "bulletpoints": "Strategic Silence, Pausing for Effect, Rhythm Variation Techniques",
+            "bulletpoints": [
+                "Slow down speech slightly to command attention and emphasize authority.",
+                "Use deliberate pauses to add weight and meaning to key phrases.",
+                "Vary sentence rhythm to avoid predictability and maintain engagement."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,97 @@
             "id": "vocal_3",
             "title": "The Subconscious Impact of Word Emphasis",
             "description": "Techniques for controlling the emotional and cognitive effect of speech through emphasis and inflection.",
-            "bulletpoints": "Power Word Placement, Emotive Resonance, Tonal Layering",
+            "bulletpoints": [
+                "Emphasize key words using controlled volume shifts to anchor meaning.",
+                "Use downward inflections to assert dominance and avoid sounding uncertain.",
+                "Master tonal layering to evoke emotional responses from your audience."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "vocal_4",
+            "title": "Breath Control for Vocal Power",
+            "description": "Mastering breath techniques to sustain vocal strength and prevent voice fatigue.",
+            "bulletpoints": [
+                "Train controlled exhalations to maintain vocal consistency and projection.",
+                "Practice inhaling through the nose to sustain long, clear sentences.",
+                "Reduce tension in the throat by directing airflow from the diaphragm."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "vocal_5",
+            "title": "The Art of Tactical Silence",
+            "description": "Using well-timed silence to create tension, authority, and anticipation.",
+            "bulletpoints": [
+                "Pause before critical words to increase impact and create anticipation.",
+                "Use strategic silence to force engagement and control social dynamics.",
+                "Maintain composure in silence to project confidence and emotional strength."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "vocal_6",
+            "title": "Mastering the Power of the Whisper",
+            "description": "Using a controlled, low-volume voice to demand attention and create authority.",
+            "bulletpoints": [
+                "Drop vocal volume in key moments to force listeners to lean in.",
+                "Use whisper-toned commands to create intrigue and subconscious influence.",
+                "Vary between whispers and controlled volume shifts to establish dominance."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "vocal_7",
+            "title": "Tonal Layering for Influence",
+            "description": "Combining depth, pitch shifts, and emotional resonance for maximum persuasion.",
+            "bulletpoints": [
+                "Start with a deep baseline tone to create subconscious authority.",
+                "Introduce slight tonal variations to maintain engagement and fluidity.",
+                "Modulate pitch based on emotional intent to maximize persuasive impact."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "vocal_8",
+            "title": "Developing a Magnetic Voice",
+            "description": "Training exercises to make the voice irresistibly compelling and engaging.",
+            "bulletpoints": [
+                "Use controlled warmth in tone to increase likability and trust.",
+                "Avoid vocal fry and excessive monotone to maintain vocal magnetism.",
+                "Maintain fluidity in speech to create a hypnotic, persuasive rhythm."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "vocal_9",
+            "title": "The Power of One-Word Commands",
+            "description": "Mastering the use of single-word statements to exert influence and authority.",
+            "bulletpoints": [
+                "Use commanding one-word phrases to create compliance (e.g., 'Stop.' 'Enough.').",
+                "Reinforce short commands with downward vocal inflection to signal finality.",
+                "Maintain direct eye contact when issuing one-word statements for impact."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "vocal_10",
+            "title": "Cold Reading Through Vocal Cues",
+            "description": "Learning to assess emotional states and control conversations based on vocal feedback.",
+            "bulletpoints": [
+                "Train to detect micro-pauses and hesitation patterns in speech.",
+                "Analyze tonal shifts to read emotional states and hidden intent.",
+                "Mirror and redirect vocal energy to subtly control conversational flow."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

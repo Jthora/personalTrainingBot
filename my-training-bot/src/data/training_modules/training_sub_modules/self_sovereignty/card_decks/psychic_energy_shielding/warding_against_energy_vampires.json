@@ -11,7 +11,11 @@
             "id": "warding_1",
             "title": "Recognizing Energy Drainers",
             "description": "Understanding the behaviors and tactics of energy vampires in personal and social settings.",
-            "bulletpoints": "Identifying Subtle Energy Drain, Social Toxicity Recognition, Boundary Strengthening",
+            "bulletpoints": [
+                "Identify subtle signs of energy depletion and unnatural fatigue.",
+                "Analyze patterns of emotional and mental exhaustion linked to specific individuals.",
+                "Strengthen personal boundaries to minimize energy siphoning."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "warding_2",
             "title": "Cutting Psychic Cords",
             "description": "Severing unhealthy energy attachments to restore vitality and self-sovereignty.",
-            "bulletpoints": "Cord Identification Techniques, Visualization of Disconnection, Protective Rituals",
+            "bulletpoints": [
+                "Detect and map energetic cords linking you to external influences.",
+                "Use focused visualization and intent-based severance rituals.",
+                "Seal cut connections with protective energy to prevent reattachment."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,97 @@
             "id": "warding_3",
             "title": "Sustaining a High-Vibrational State",
             "description": "Maintaining strong energy levels to prevent vulnerability to psychic attacks.",
-            "bulletpoints": "Daily Energy Cleansing, Frequency Elevation Techniques, Psychic Detox Methods",
+            "bulletpoints": [
+                "Engage in daily energy cleansing techniques to remove psychic residue.",
+                "Use sound, breathwork, and frequency tuning to elevate personal vibration.",
+                "Apply grounding exercises to maintain balance and energetic stability."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "warding_4",
+            "title": "Energetic Shielding Against Psychic Drain",
+            "description": "Deploying protective barriers to block energy-siphoning attempts.",
+            "bulletpoints": [
+                "Create a reinforced energy shield that repels parasitic influences.",
+                "Use color-based visualization techniques to strengthen defense fields.",
+                "Calibrate shielding to dynamically adapt to different energy threats."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "warding_5",
+            "title": "Identifying Etheric Parasites",
+            "description": "Recognizing and neutralizing non-physical entities that feed on human energy.",
+            "bulletpoints": [
+                "Analyze changes in mood, mental clarity, and bodily sensations as warning signals.",
+                "Use scanning techniques to detect etheric attachments or distortions.",
+                "Apply countermeasures such as light-field purification and vibrational resets."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "warding_6",
+            "title": "Anchoring in Personal Power",
+            "description": "Strengthening self-awareness and confidence to become immune to manipulation.",
+            "bulletpoints": [
+                "Practice self-sovereignty affirmations to reinforce energetic independence.",
+                "Use controlled breathing and posture alignment to center personal power.",
+                "Employ mirror-reversal techniques to bounce external influence back to its source."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "warding_7",
+            "title": "Cleansing Toxic Emotional Residue",
+            "description": "Removing accumulated psychic and emotional debris left by energy vampires.",
+            "bulletpoints": [
+                "Use salt baths, sound frequencies, and auric brushing for energy detoxification.",
+                "Apply intention-based visualization to flush out stagnant emotional imprints.",
+                "Cycle high-frequency energy through the body to recalibrate the system."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "warding_8",
+            "title": "Disrupting Energy Feeding Loops",
+            "description": "Breaking cycles of energetic dependency created by manipulators.",
+            "bulletpoints": [
+                "Recognize conversational hooks and reactive triggers used for energy siphoning.",
+                "Use non-response and tactical disengagement to starve energy vampires.",
+                "Establish clear mental and emotional detachment from draining individuals."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "warding_9",
+            "title": "Sealing Energy Leaks",
+            "description": "Closing gaps in the auric field that allow energy drainers to infiltrate.",
+            "bulletpoints": [
+                "Scan for weaknesses in personal energy boundaries and repair them with visualization.",
+                "Use crystal reinforcement, breath control, and self-realignment techniques.",
+                "Set energetic intentions to maintain a sealed, high-integrity energy field."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "warding_10",
+            "title": "The Mirror Shield Technique",
+            "description": "Reflecting draining energy back to the sender with minimal personal impact.",
+            "bulletpoints": [
+                "Construct a reflective energetic surface around your body to neutralize incoming forces.",
+                "Use programmed intent to deflect and reverse energy-siphoning attempts.",
+                "Maintain emotional detachment to ensure the shield remains effective."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

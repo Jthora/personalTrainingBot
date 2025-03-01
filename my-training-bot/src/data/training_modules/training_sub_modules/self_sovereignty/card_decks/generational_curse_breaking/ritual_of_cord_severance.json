@@ -11,7 +11,11 @@
             "id": "cord_severance_1",
             "title": "Energetic Cord Mapping",
             "description": "Identifying the unseen emotional, psychological, and spiritual connections affecting your personal sovereignty.",
-            "bulletpoints": "Psychic Sensory Exercises, Emotional Attachment Recognition, Auric Energy Mapping",
+            "bulletpoints": [
+                "Psychic sensory exercises help tune into invisible energetic ties linked to past relationships.",
+                "Recognizing emotional attachment points prevents unconscious reinforcement of toxic connections.",
+                "Auric energy mapping allows for pinpointing areas in the body where unresolved energy is stored."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "cord_severance_2",
             "title": "The Severance Ritual",
             "description": "Executing a structured ritual to cut negative ancestral and generational ties.",
-            "bulletpoints": "Invocation and Intent Setting, Symbolic Release Methods, Post-Severance Protection Practices",
+            "bulletpoints": [
+                "Invocation and intent setting align your focus with the higher purpose of the severance process.",
+                "Symbolic release methods, such as burning written statements or cutting physical cords, reinforce detachment.",
+                "Post-severance protection practices establish energetic boundaries to prevent reinfection of toxic influences."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -27,7 +35,95 @@
             "id": "cord_severance_3",
             "title": "Protection Against Reattachment",
             "description": "Reinforcing personal energetic boundaries to prevent toxic familial influences from returning.",
-            "bulletpoints": "Shielding Techniques, Ancestral Energy Defense, Affirmation and Visualization Reinforcement",
+            "bulletpoints": [
+                "Shielding techniques such as light visualization and auric reinforcement block psychic intrusions.",
+                "Ancestral energy defense involves recognizing and neutralizing subtle attempts to re-establish unhealthy ties.",
+                "Affirmation and visualization reinforcement strengthen the mental and emotional resolve needed to stay detached."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cord_severance_4",
+            "title": "Recognizing Residual Attachments",
+            "description": "Identifying lingering emotional hooks that keep toxic connections active.",
+            "bulletpoints": [
+                "Sudden intrusive thoughts or emotional shifts often signal remaining energetic bonds.",
+                "Dreams featuring past abusers may indicate unresolved energetic entanglements.",
+                "Journaling and conscious self-inquiry can help reveal hidden ties needing further severance."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "cord_severance_5",
+            "title": "Symbolic Cord Cutting Tools",
+            "description": "Using physical and energetic tools to reinforce the severance of toxic ties.",
+            "bulletpoints": [
+                "Blades, candles, and sacred herbs serve as focal points for energetic disconnection.",
+                "Salt and water purification rituals can neutralize lingering emotional imprints.",
+                "Sacred sigils or protection symbols reinforce energetic sovereignty and closure."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cord_severance_6",
+            "title": "Shadow Work for Deep Severance",
+            "description": "Exploring hidden wounds and subconscious patterns linked to toxic attachments.",
+            "bulletpoints": [
+                "Shadow work exposes unconscious agreements that reinforce toxic ties.",
+                "Writing exercises can help confront and dismantle internalized false narratives.",
+                "Inner child healing addresses the root emotional wounds keeping the connection alive."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cord_severance_7",
+            "title": "The Ritual of Fire Release",
+            "description": "A fire-based ceremony to burn away energetic ties and emotional burdens.",
+            "bulletpoints": [
+                "Writing out old grievances and burning them in ritual fire releases emotional weight.",
+                "Visualizing the flames consuming old energetic cords reinforces psychological detachment.",
+                "Post-ritual reflection ensures that the space left behind is filled with renewed energy."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cord_severance_8",
+            "title": "The Mirror Reflection Exercise",
+            "description": "Using reflective visualization to reverse and neutralize past energetic entanglements.",
+            "bulletpoints": [
+                "Imagining a mirror between you and the toxic person blocks further energy exchange.",
+                "Sending their energy back through visualization prevents further manipulation.",
+                "Repeating affirmations such as 'I reclaim my energy' reinforces sovereignty."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "cord_severance_9",
+            "title": "Astral Cord Removal",
+            "description": "Severing psychic connections during deep meditation or dreamwork.",
+            "bulletpoints": [
+                "Entering a deep meditative state allows for scanning and cutting energetic cords.",
+                "Calling upon protective spiritual guides enhances the success of cord removal.",
+                "Post-removal shielding ensures that no new cords form unintentionally."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cord_severance_10",
+            "title": "The Sacred Renewal Ritual",
+            "description": "Replacing the energy lost in severance with empowered self-reclamation techniques.",
+            "bulletpoints": [
+                "Filling the energetic void with self-love and strength prevents post-severance emptiness.",
+                "Engaging in high-frequency activities such as music, movement, or nature strengthens personal sovereignty.",
+                "Creating new affirmations of independence ensures continued detachment from toxic past connections."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         }

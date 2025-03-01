@@ -11,7 +11,11 @@
             "id": "verbal_defense_1",
             "title": "The Gray Rock Method",
             "description": "Becoming emotionally unresponsive to gaslighters to remove their control mechanism.",
-            "bulletpoints": "Neutral Responses, Avoiding Emotional Hooks, Disengagement Techniques",
+            "bulletpoints": [
+                "Neutral responses prevent manipulators from feeding off your emotional reactions.",
+                "Avoiding emotional hooks by staying bland and uninteresting forces them to disengage.",
+                "Disengagement techniques include short, non-committal replies like ‘Okay’ or ‘I see.’"
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "verbal_defense_2",
             "title": "Reverse Gaslighting",
             "description": "Flipping the manipulation back onto the gaslighter to force them into logical inconsistencies.",
-            "bulletpoints": "Mirroring Their Words, Circular Logic Reversal, The ‘Wait, What?’ Technique",
+            "bulletpoints": [
+                "Mirroring their words back at them forces them to explain their own contradictions.",
+                "Circular logic reversal traps them in their own illogical reasoning, exposing their manipulation.",
+                "The ‘Wait, what?’ technique disrupts their flow and makes them second-guess their own statements."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,97 @@
             "id": "verbal_defense_3",
             "title": "Boundary Enforcement Through Speech",
             "description": "Setting firm verbal boundaries to shut down manipulative conversations immediately.",
-            "bulletpoints": "Direct Statements, No-Engagement Phrasing, Controlled Emotional Expression",
+            "bulletpoints": [
+                "Direct statements like ‘I will not discuss this further’ prevent further gaslighting attempts.",
+                "No-engagement phrasing such as ‘That’s your opinion’ stops them from dragging you into arguments.",
+                "Controlled emotional expression ensures they don’t use your feelings as ammunition against you."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "verbal_defense_4",
+            "title": "The Broken Record Technique",
+            "description": "Repeating a clear, firm statement to prevent gaslighters from derailing conversations.",
+            "bulletpoints": [
+                "Repeating your key point in the same tone defuses their attempts to distract or twist words.",
+                "Refusing to engage in their redirections forces them to either accept or give up.",
+                "This technique works best with phrases like ‘I already answered that’ or ‘I’m not discussing this.’"
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "verbal_defense_5",
+            "title": "Deconstructing Loaded Questions",
+            "description": "Recognizing and neutralizing manipulative questions before engaging.",
+            "bulletpoints": [
+                "Loaded questions assume guilt or wrongdoing—never answer them as framed.",
+                "Redirecting with ‘That’s an interesting assumption’ exposes the manipulation.",
+                "Asking them to clarify their intent forces them to reveal their real agenda."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "verbal_defense_6",
+            "title": "Shifting the Burden of Proof",
+            "description": "Reversing the manipulation by making gaslighters justify their claims.",
+            "bulletpoints": [
+                "When accused falsely, respond with ‘What evidence do you have of that?’",
+                "Making them explain their statements exposes their weak foundation.",
+                "Gaslighters rely on emotional persuasion—forcing logic disrupts their tactics."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "verbal_defense_7",
+            "title": "Strategic Use of Silence",
+            "description": "Using controlled silence as a power move to destabilize manipulators.",
+            "bulletpoints": [
+                "Silence creates discomfort, forcing them to over-explain or reveal inconsistencies.",
+                "Pausing before responding makes you appear more in control and unaffected.",
+                "Refusing to react emotionally denies them the satisfaction of control."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "verbal_defense_8",
+            "title": "Sarcasm and Deflection",
+            "description": "Using humor and dismissive tactics to disengage without escalation.",
+            "bulletpoints": [
+                "Sarcasm disrupts the manipulator’s control by making them look ridiculous.",
+                "Deflecting with humor removes emotional weight from their attacks.",
+                "‘Oh sure, because everything’s my fault’ disarms their blame-shifting strategy."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "verbal_defense_9",
+            "title": "Identifying and Countering Word Salad",
+            "description": "Recognizing when gaslighters use nonsense speech to confuse and control.",
+            "bulletpoints": [
+                "Word salad involves rapid topic-shifting to make you lose track of the conversation.",
+                "Calling it out with ‘That didn’t answer my question’ forces them to stay on-topic.",
+                "Refusing to chase their tangents keeps you in control of the conversation."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "verbal_defense_10",
+            "title": "Ending a Conversation with Authority",
+            "description": "Exiting manipulative conversations on your own terms.",
+            "bulletpoints": [
+                "Ending a conversation first denies them the last word and control over the dialogue.",
+                "Phrases like ‘This conversation is over’ or ‘I’m done discussing this’ close the door on further gaslighting.",
+                "Leaving the room or ending a call reinforces your autonomy and prevents further engagement."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

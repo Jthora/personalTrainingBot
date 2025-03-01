@@ -11,7 +11,11 @@
             "id": "red_flag_1",
             "title": "Recognizing Narcissistic Microbehaviors",
             "description": "Identifying the subtle behaviors that reveal narcissistic tendencies before full manipulation begins.",
-            "bulletpoints": "Inconsistencies in Words vs. Actions, Love-Bombing Tactics, Passive-Aggressive Control",
+            "bulletpoints": [
+                "Inconsistencies in words vs. actions create a pattern of deception.",
+                "Love-bombing tactics overwhelm with excessive admiration to build control.",
+                "Passive-aggressive control emerges through backhanded compliments and subtle digs."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "red_flag_2",
             "title": "Gaslighting and Deceptive Language",
             "description": "Learning to identify speech patterns and language tricks that narcissists use to distort reality.",
-            "bulletpoints": "Word Salad Conversations, Blame-Shifting Phrases, Contradictory Narratives",
+            "bulletpoints": [
+                "Word salad conversations confuse by overwhelming with nonsensical language.",
+                "Blame-shifting phrases redirect accountability onto the victim.",
+                "Contradictory narratives expose a pattern of deception and manipulation."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,97 @@
             "id": "red_flag_3",
             "title": "Hidden Power Plays and Social Positioning",
             "description": "Understanding how narcissists infiltrate social groups, workplaces, and relationships using covert influence.",
-            "bulletpoints": "Triangulation Tactics, False Humility, Social Peacocking",
+            "bulletpoints": [
+                "Triangulation tactics create unnecessary conflicts to divide and control.",
+                "False humility is used as a manipulation tool to lower defenses.",
+                "Social peacocking projects an exaggerated, curated image of success."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "red_flag_4",
+            "title": "The ‘Too Good to Be True’ Illusion",
+            "description": "Identifying early-stage manipulative charm designed to disarm and ensnare victims.",
+            "bulletpoints": [
+                "Rapid intimacy builds false emotional depth to create dependency.",
+                "Over-the-top compliments and exaggerated praise hide control intentions.",
+                "Unrealistic promises and grand future faking set up an eventual betrayal."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "red_flag_5",
+            "title": "Subtle Disrespect and Boundary Testing",
+            "description": "Recognizing early violations of personal space, limits, and emotional autonomy.",
+            "bulletpoints": [
+                "Playful insults and backhanded jokes normalize emotional abuse.",
+                "Boundary-pushing behavior gauges how much control can be exerted.",
+                "Ignoring ‘no’ or dismissing concerns signals a lack of respect for autonomy."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "red_flag_6",
+            "title": "Creating Chaos and Drama Cycles",
+            "description": "Understanding how manipulators manufacture emotional turmoil to gain leverage.",
+            "bulletpoints": [
+                "Manufactured crises keep attention focused on their needs and problems.",
+                "Emotional whiplash alternates between affection and cruelty to create instability.",
+                "Faked victimhood shifts blame and guilt onto others as a form of control."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "red_flag_7",
+            "title": "Excessive Secrecy and Hidden Agendas",
+            "description": "Spotting the signs of a manipulator’s double life and concealed motivations.",
+            "bulletpoints": [
+                "Vague answers and evasive speech hide deeper deception.",
+                "Frequent contradictions reveal an ever-changing, false narrative.",
+                "Compartmentalized relationships prevent outsiders from seeing the full truth."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "red_flag_8",
+            "title": "Weaponized Insecurity and Projection",
+            "description": "Recognizing when manipulators reflect their own flaws onto others.",
+            "bulletpoints": [
+                "Accusations of dishonesty often signal a liar projecting their own guilt.",
+                "Frequent comparisons diminish self-worth and increase dependency.",
+                "Shaming techniques weaken emotional resilience and enforce compliance."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "red_flag_9",
+            "title": "Financial and Resource Exploitation",
+            "description": "Identifying financial red flags that indicate a narcissist’s self-serving motives.",
+            "bulletpoints": [
+                "Early money discussions hint at financial dependency traps.",
+                "Refusing to reciprocate favors signals an entitlement mindset.",
+                "Sudden financial crises demand urgent assistance as a control tactic."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "red_flag_10",
+            "title": "Identifying Hidden Covert Narcissists",
+            "description": "Spotting the warning signs of manipulative individuals who operate in stealth mode.",
+            "bulletpoints": [
+                "Feigning victimhood diverts attention from their manipulative actions.",
+                "False humility is used to disguise a deeply rooted superiority complex.",
+                "Excessive self-sacrifice narratives generate unearned loyalty and obligation."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

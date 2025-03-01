@@ -11,7 +11,11 @@
             "id": "mirror_shield_1",
             "title": "Constructing a Reflective Energy Field",
             "description": "Training in the visualization and projection of mirrored energy shields.",
-            "bulletpoints": "Mirror Field Creation, Energy Projection Mastery, Reverse Flow Techniques",
+            "bulletpoints": [
+                "Visualize a mirror-like energy field that reflects incoming psychic force.",
+                "Align the shield’s frequency to deflect targeted energy rather than absorbing it.",
+                "Use reinforcement techniques to prevent external breaches and maintain stability."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "mirror_shield_2",
             "title": "Rebounding Psychic Attacks",
             "description": "Using reflection techniques to send negative energy back to its source.",
-            "bulletpoints": "Energy Reversal Practices, Psychic Mirror Alignment, Intent-Based Defense",
+            "bulletpoints": [
+                "Detect the direction of the energy attack before initiating a counter-reflection.",
+                "Project an energetic mirror to return the force to its origin without absorbing it.",
+                "Adjust shield intensity based on the attacker’s energy strength to maximize deflection."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,97 @@
             "id": "mirror_shield_3",
             "title": "Camouflaging Your Energetic Signature",
             "description": "Blending your energy to become undetectable to those attempting to psychically track or influence you.",
-            "bulletpoints": "Energy Concealment, Frequency Disguise, Subtle Field Modulation",
+            "bulletpoints": [
+                "Modify your aura’s frequency to blend into environmental energy fields.",
+                "Use energy diffusion techniques to scatter your vibrational signature across multiple points.",
+                "Deploy a frequency cloak that prevents psychic detection or remote viewing."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "mirror_shield_4",
+            "title": "Invisibility Shielding",
+            "description": "Creating an energy veil that makes you imperceptible to hostile forces.",
+            "bulletpoints": [
+                "Engage in vibrational modulation to drop below perception thresholds.",
+                "Use frequency blending to match surrounding energy, rendering yourself undetectable.",
+                "Integrate shifting techniques to remain dynamically invisible in energetic combat."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mirror_shield_5",
+            "title": "Energetic Deflection Bubbles",
+            "description": "Creating an automatic repulsion field that bounces negative forces away before they reach you.",
+            "bulletpoints": [
+                "Establish a resilient energy barrier that pushes back foreign influences.",
+                "Program the shield to repel specific energy signatures, preventing future infiltration.",
+                "Enhance the reflective layer with elemental forces such as fire or plasma-based energy fields."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mirror_shield_6",
+            "title": "Quantum Mirror Defense",
+            "description": "Using multi-dimensional shielding techniques to redirect attacks into different energetic planes.",
+            "bulletpoints": [
+                "Split incoming force into fragmented dimensions, dispersing its effectiveness.",
+                "Encode shields with non-linear feedback loops to scramble tracking attempts.",
+                "Use temporal displacement techniques to delay attacks before neutralizing them."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mirror_shield_7",
+            "title": "Refractive Energy Cloaking",
+            "description": "Using layered shielding to manipulate energy waves and bend perception.",
+            "bulletpoints": [
+                "Develop a prismatic field that refracts external energy away from your core essence.",
+                "Create multi-tiered defensive layers that redirect incoming forces before they impact.",
+                "Use light-bending visualization methods to distort hostile perception fields."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mirror_shield_8",
+            "title": "Psychic Decoy Projection",
+            "description": "Creating an illusionary energy signature to mislead attackers and manipulators.",
+            "bulletpoints": [
+                "Generate a false energy imprint to draw attention away from your actual presence.",
+                "Use oscillating energy pulses to shift between multiple signature points.",
+                "Deploy phantom constructs that mimic your energy field and lead enemies astray."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mirror_shield_9",
+            "title": "Absorption and Redirection Loop",
+            "description": "Transforming hostile energy into a neutral or beneficial state before sending it back.",
+            "bulletpoints": [
+                "Convert incoming attacks into kinetic energy and cycle it back as neutral force.",
+                "Use harmonic resonance to shift malicious energy into constructive frequency states.",
+                "Redirect absorbed energy into external etheric systems for passive shielding boosts."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mirror_shield_10",
+            "title": "The Ripple Effect Technique",
+            "description": "Creating an energetic shockwave that disperses negative energy outward in waves.",
+            "bulletpoints": [
+                "Generate a cascading ripple of high-frequency energy to dissolve external interference.",
+                "Use wave pattern amplification to extend shield coverage across wider areas.",
+                "Employ controlled oscillations to destabilize persistent energy attacks."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

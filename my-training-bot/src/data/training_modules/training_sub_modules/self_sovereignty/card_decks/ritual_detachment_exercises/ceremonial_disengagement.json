@@ -11,7 +11,11 @@
             "id": "ceremonial_1",
             "title": "The Severance Ritual",
             "description": "Performing a structured ritual to cut psychic and emotional ties to harmful relationships.",
-            "bulletpoints": "Cord Cutting Invocation, Energy Release Visualization, Grounding After Severance",
+            "bulletpoints": [
+                "Use symbolic objects to represent and sever the unwanted connection.",
+                "Perform energy release visualizations to dissolve lingering attachments.",
+                "Engage in grounding techniques to stabilize your energetic field post-severance."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -19,7 +23,11 @@
             "id": "ceremonial_2",
             "title": "The Mirror Reflection Technique",
             "description": "Using mirrored energy projection to neutralize emotional and psychic attachments.",
-            "bulletpoints": "Reflective Visualization, Emotional Transmutation, Psychic Shielding Integration",
+            "bulletpoints": [
+                "Visualize a reflective barrier bouncing negative energy away from your field.",
+                "Apply emotional transmutation to shift pain into neutrality or empowerment.",
+                "Integrate psychic shielding practices to prevent future energetic imprints."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,97 @@
             "id": "ceremonial_3",
             "title": "Rewriting the Soul Contract",
             "description": "Revoking subconscious agreements that keep toxic patterns in place.",
-            "bulletpoints": "Affirmation-Based Deprogramming, Soul Contract Nullification, Ritual of Rebirth",
+            "bulletpoints": [
+                "Identify personal narratives that bind you to unwanted emotional cycles.",
+                "Use affirmation-based deprogramming to overwrite limiting beliefs.",
+                "Perform a symbolic ritual of rebirth to solidify a new empowered path."
+            ],
             "duration": "90",
             "difficulty": "Expert"
+        },
+        {
+            "id": "ceremonial_4",
+            "title": "Fire Cleansing Ceremony",
+            "description": "Using fire as a symbolic and energetic purifier to dissolve emotional entanglements.",
+            "bulletpoints": [
+                "Write down toxic connections and burn them as a release ritual.",
+                "Visualize past emotional weight turning to ash and clearing from your field.",
+                "Reaffirm your sovereignty through fire-based intention setting."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ceremonial_5",
+            "title": "Water Purification Release",
+            "description": "Harnessing the transformative nature of water to dissolve psychic bonds.",
+            "bulletpoints": [
+                "Use salt baths or running water rituals to cleanse energetic imprints.",
+                "Set a mental intention to flush out lingering emotional toxins.",
+                "Pair with breathwork to synchronize physical and energetic purification."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "ceremonial_6",
+            "title": "Symbolic Object Burial",
+            "description": "Burying physical items linked to toxic connections to sever attachments.",
+            "bulletpoints": [
+                "Choose an object that holds the energy of the past relationship.",
+                "Perform a burial ceremony with an intention of closure and release.",
+                "Visualize the object absorbing and containing the last remnants of attachment."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "ceremonial_7",
+            "title": "Energetic Signature Reset",
+            "description": "Resetting and realigning your energetic identity to eliminate unwanted influences.",
+            "bulletpoints": [
+                "Perform energy sweeping techniques to clear residual connections.",
+                "Use breath control to regulate and stabilize personal vibrational output.",
+                "Anchor a new identity imprint that reflects your highest self."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ceremonial_8",
+            "title": "Releasing Through Sound Vibration",
+            "description": "Using vocalization, chanting, or frequency tuning to break energetic bonds.",
+            "bulletpoints": [
+                "Engage in chanting or toning to dissolve energetic stagnation.",
+                "Use sound frequencies like tuning forks or singing bowls to realign vibrations.",
+                "Project voice-based affirmations to reinforce the release process."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "ceremonial_9",
+            "title": "Shadow Work Severance",
+            "description": "Deep subconscious detachment by integrating and releasing past wounds.",
+            "bulletpoints": [
+                "Engage in mirror work to confront unresolved emotional wounds.",
+                "Use journal-based self-inquiry to identify lingering subconscious ties.",
+                "Perform a symbolic act of self-forgiveness and emotional liberation."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "ceremonial_10",
+            "title": "Sacred Space Sanctification",
+            "description": "Cleansing and reclaiming personal spaces to remove energetic remnants of past connections.",
+            "bulletpoints": [
+                "Use smoke clearing, sacred herbs, or incense to remove stagnant energy.",
+                "Set clear boundaries and intentions for maintaining a sovereign space.",
+                "Program objects and furniture with protective sigils or affirmations."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
         }
     ]
 }

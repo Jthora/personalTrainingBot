@@ -11,7 +11,11 @@
             "id": "transmutation_1",
             "title": "Energy Extraction from Emotional Pain",
             "description": "Techniques to channel emotional intensity into creative, intellectual, or physical expression.",
-            "bulletpoints": "Alchemizing Anger into Drive, Pain-to-Art Expression, Redirecting Emotional Charge",
+            "bulletpoints": [
+                "Alchemizing anger into relentless drive for success.",
+                "Transforming sadness into artistic or creative expression.",
+                "Redirecting emotional charge into high-focus tasks."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "transmutation_2",
             "title": "Shifting the Internal Emotional Frequency",
             "description": "Practices to elevate emotional states through self-directed internal energy work.",
-            "bulletpoints": "Frequency Matching, Emotional Energy Modulation, Subconscious Pattern Adjustment",
+            "bulletpoints": [
+                "Matching internal states to higher frequency emotions.",
+                "Adjusting subconscious emotional patterns for transformation.",
+                "Using breath and visualization to shift emotional charge."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,133 @@
             "id": "transmutation_3",
             "title": "Turning Suffering into Mental Fortitude",
             "description": "Using past pain as a foundation for psychological resilience and invulnerability.",
-            "bulletpoints": "Pain Tolerance Expansion, Suffering Reinterpretation, Psychological Reframing Drills",
+            "bulletpoints": [
+                "Expanding pain tolerance to become emotionally unbreakable.",
+                "Reinterpreting suffering as a catalyst for strength.",
+                "Training the mind to see challenges as growth opportunities."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "transmutation_4",
+            "title": "Converting Emotional Chaos into Laser Focus",
+            "description": "Using overwhelming emotions as fuel for productivity and mastery.",
+            "bulletpoints": [
+                "Redirecting emotional turbulence into a singular focus.",
+                "Structuring pain into disciplined habits and workflow.",
+                "Using emotional states as a motivator instead of a distraction."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "transmutation_5",
+            "title": "Anchoring Positivity into Past Trauma",
+            "description": "Reprogramming past experiences with empowering associations.",
+            "bulletpoints": [
+                "Overlaying painful memories with triumphant emotions.",
+                "Consciously rewriting emotional responses to past triggers.",
+                "Using gratitude as a tool to neutralize past suffering."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "transmutation_6",
+            "title": "The Ritual of Fire and Release",
+            "description": "A structured method to burn away emotional weight and replace it with clarity.",
+            "bulletpoints": [
+                "Writing down emotions and physically destroying them.",
+                "Symbolically releasing pain through a controlled ritual.",
+                "Creating a tangible break between old emotional states and new ones."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "transmutation_7",
+            "title": "The Art of Stoic Transmutation",
+            "description": "Adopting a stoic approach to control emotions and maintain dominance over them.",
+            "bulletpoints": [
+                "Practicing non-reaction to external emotional triggers.",
+                "Training the mind to see emotions as data, not directives.",
+                "Maintaining a strategic emotional mask in high-pressure situations."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "transmutation_8",
+            "title": "Manifesting Through Emotional Charge",
+            "description": "Using heightened emotional energy to accelerate goal achievement.",
+            "bulletpoints": [
+                "Infusing intentions with strong emotional visualization.",
+                "Translating high-energy states into action momentum.",
+                "Amplifying affirmations and manifestation practices through emotion."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "transmutation_9",
+            "title": "Breathwork for Emotional Alchemy",
+            "description": "Using controlled breathing to shift, release, and transform emotions.",
+            "bulletpoints": [
+                "Breathing techniques to neutralize emotional surges.",
+                "Using breath retention to circulate emotional energy.",
+                "Channeling breath into the body's energy system for transformation."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "transmutation_10",
+            "title": "Harnessing Rage Without Losing Control",
+            "description": "Using anger as a weaponized force for strategic and creative breakthroughs.",
+            "bulletpoints": [
+                "Funneling anger into highly productive bursts of work.",
+                "Learning how to control and direct aggression with precision.",
+                "Using frustration as a catalyst for innovation and mastery."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "transmutation_11",
+            "title": "The Subconscious Emotional Switch",
+            "description": "Training the subconscious to automatically redirect negative emotions into productive states.",
+            "bulletpoints": [
+                "Building neural pathways that reroute emotions into action.",
+                "Using self-hypnosis to install instant emotional transmutation.",
+                "Creating automatic thought loops that convert pain into power."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "transmutation_12",
+            "title": "Emotional Catharsis Through Movement",
+            "description": "Using kinetic expression to purge emotional weight and renew energy.",
+            "bulletpoints": [
+                "Dancing, shaking, and dynamic movements to release emotional buildup.",
+                "Engaging in high-intensity training to burn through negative emotions.",
+                "Using motion as a ritual to clear out emotional blockages."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "transmutation_13",
+            "title": "Symbolic Reinvention of the Emotional Self",
+            "description": "Crafting a new identity by shedding past emotional imprints.",
+            "bulletpoints": [
+                "Using visualization techniques to create a new emotional archetype.",
+                "Identifying and dissolving old emotional identities.",
+                "Rebuilding a self-concept from a position of strength and empowerment."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

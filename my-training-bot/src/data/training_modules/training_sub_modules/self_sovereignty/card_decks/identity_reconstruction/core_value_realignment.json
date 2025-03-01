@@ -11,7 +11,11 @@
             "id": "core_values_1",
             "title": "Defining Your Core Principles",
             "description": "Identifying the foundational values that define your authentic self.",
-            "bulletpoints": "Moral Compass Construction, Decision-Making Framework, Personal Ethos Development",
+            "bulletpoints": [
+                "Moral compass construction ensures that decisions align with deeply held truths.",
+                "Decision-making framework provides consistency and prevents external manipulation.",
+                "Personal ethos development strengthens self-trust and reinforces internal sovereignty."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "core_values_2",
             "title": "Aligning Actions with Core Identity",
             "description": "Ensuring thoughts, behaviors, and decisions reflect your true self.",
-            "bulletpoints": "Behavioral Alignment Strategies, Self-Accountability Systems, Integrity Reinforcement",
+            "bulletpoints": [
+                "Behavioral alignment strategies reinforce authenticity in social and personal interactions.",
+                "Self-accountability systems help track whether daily choices reflect your values.",
+                "Integrity reinforcement develops an unshakable character that remains resilient under pressure."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,97 @@
             "id": "core_values_3",
             "title": "Creating an Identity Manifesto",
             "description": "Writing a personal declaration of self-sovereignty and life direction.",
-            "bulletpoints": "Personal Mission Statement, Self-Affirmation Blueprint, Strategic Life Design",
+            "bulletpoints": [
+                "Personal mission statement clarifies long-term goals and core beliefs.",
+                "Self-affirmation blueprint ensures that internal narratives support confidence and resilience.",
+                "Strategic life design enables deliberate action toward a life built on personal values."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "core_values_4",
+            "title": "Dismantling False Narratives",
+            "description": "Breaking free from external conditioning that distorts personal identity.",
+            "bulletpoints": [
+                "Identifying imposed beliefs helps separate personal truths from societal programming.",
+                "Challenging limiting labels dissolves false identities installed by others.",
+                "Reconstructing self-perception fosters an empowered and autonomous mindset."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "core_values_5",
+            "title": "Developing Your Personal Code",
+            "description": "Establishing unbreakable internal rules that guide thought and action.",
+            "bulletpoints": [
+                "Crafting ethical guidelines ensures moral clarity and unwavering self-discipline.",
+                "Setting unshakable boundaries protects against emotional manipulation and coercion.",
+                "Embedding core values into habits reinforces personal sovereignty through daily practice."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "core_values_6",
+            "title": "Identifying Your Higher Purpose",
+            "description": "Clarifying your role in the world beyond societal expectations.",
+            "bulletpoints": [
+                "Distinguishing between false obligations and true callings ensures fulfillment.",
+                "Connecting to deeper motivations strengthens resilience against external pressure.",
+                "Defining a legacy vision provides long-term clarity and personal direction."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "core_values_7",
+            "title": "The Power of Self-Definition",
+            "description": "Taking full control over the way you define yourself.",
+            "bulletpoints": [
+                "Rejecting imposed labels liberates identity from social conditioning.",
+                "Crafting a self-empowered narrative reprograms personal belief systems.",
+                "Owning your uniqueness prevents external forces from dictating self-worth."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "core_values_8",
+            "title": "Resisting Social Conformity Pressure",
+            "description": "Building the mental strength to remain authentic in oppressive environments.",
+            "bulletpoints": [
+                "Recognizing manipulation tactics makes external influence easier to resist.",
+                "Developing unshakable self-trust removes dependency on external validation.",
+                "Practicing social non-compliance reinforces autonomy and independent thinking."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "core_values_9",
+            "title": "Embodying Your Identity in the Physical World",
+            "description": "Aligning speech, movement, and presence with core self-awareness.",
+            "bulletpoints": [
+                "Refining posture and body language ensures presence matches internal strength.",
+                "Speaking with intentionality reinforces personal sovereignty in conversations.",
+                "Projecting congruence signals authenticity and establishes authority in social dynamics."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "core_values_10",
+            "title": "Sustaining Long-Term Identity Evolution",
+            "description": "Ensuring continuous personal growth while staying aligned with core values.",
+            "bulletpoints": [
+                "Regular self-reflection prevents stagnation and ensures alignment with evolving beliefs.",
+                "Adapting without compromise maintains resilience against external pressures.",
+                "Maintaining mental sovereignty allows for expansion without losing personal integrity."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

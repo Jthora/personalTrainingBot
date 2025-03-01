@@ -11,7 +11,11 @@
             "id": "self_trust_1",
             "title": "Recognizing Gaslighting Patterns",
             "description": "Identifying the signs of gaslighting and differentiating them from normal disagreements.",
-            "bulletpoints": "Gaslighting Red Flags, Common Manipulation Tactics, Emotional Misdirection",
+            "bulletpoints": [
+                "Gaslighting often involves repeated denial of your reality, making you doubt your own memory and perception.",
+                "Common manipulation tactics include trivializing your feelings, contradicting facts, and shifting blame.",
+                "Emotional misdirection is used to make you feel guilty, irrational, or overreacting, reinforcing their control."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "self_trust_2",
             "title": "Reaffirming Your Reality",
             "description": "Strengthening belief in your own experiences despite external attempts to distort them.",
-            "bulletpoints": "Memory Validation Exercises, Reality Checklists, Evidence-Based Self-Trust",
+            "bulletpoints": [
+                "Keep a journal of key conversations and events to track inconsistencies and validate your own memories.",
+                "Use reality checklists that include factual evidence, emotional state tracking, and external confirmations.",
+                "Practice self-trust affirmations such as 'My experiences are valid' and 'I trust my perception of reality.'"
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,97 @@
             "id": "self_trust_3",
             "title": "Cognitive Anchoring Techniques",
             "description": "Using logic-based mental anchors to stay grounded in truth during gaslighting attacks.",
-            "bulletpoints": "Logical Affirmations, Rational Grounding, Sensory and Memory Anchors",
+            "bulletpoints": [
+                "Create logical affirmations based on undeniable truths, such as 'I remember what I saw, and my perception is reliable.'",
+                "Use rational grounding by mentally walking through objective evidence rather than reacting emotionally.",
+                "Sensory and memory anchors, such as specific smells, touch points, or sounds, help reinforce present-moment awareness."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "self_trust_4",
+            "title": "Building a Mental Firewall",
+            "description": "Developing an internal defense system against gaslighting and emotional manipulation.",
+            "bulletpoints": [
+                "Visualize a mental shield protecting your thoughts from external distortion and false narratives.",
+                "Train yourself to pause before responding, assessing whether the interaction feels manipulative or genuine.",
+                "Strengthen your inner dialogue with logic-based reminders that reinforce self-trust and independent thinking."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "self_trust_5",
+            "title": "Trusting Your First Instinct",
+            "description": "Learning to recognize and trust your initial gut reaction before overthinking takes over.",
+            "bulletpoints": [
+                "Your first instinct is often based on subconscious pattern recognition and accumulated experience.",
+                "Avoid letting external influence override your initial gut feeling by practicing rapid decision-making exercises.",
+                "Journaling about past situations where your instincts were right can reinforce your confidence in future judgments."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "self_trust_6",
+            "title": "Dismantling Self-Doubt Triggers",
+            "description": "Identifying the sources of self-doubt and systematically eliminating them.",
+            "bulletpoints": [
+                "Recognize patterns in your thoughts—are they based on evidence, or are they implanted by past manipulation?",
+                "Create a ‘doubt filter’ by cross-referencing negative thoughts with logical proof and external validation.",
+                "Detach from relationships or environments that continuously undermine your self-trust and reinforce insecurity."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "self_trust_7",
+            "title": "Memory Strengthening Drills",
+            "description": "Enhancing recall and resisting memory manipulation through cognitive training.",
+            "bulletpoints": [
+                "Practice daily recall exercises, such as writing down conversations or recounting details aloud.",
+                "Engage in memory-boosting activities like visualization, association techniques, and mental storytelling.",
+                "Reinforce your ability to trust your memory by comparing journal entries to real-life outcomes over time."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "self_trust_8",
+            "title": "Setting Mental Boundaries",
+            "description": "Establishing cognitive defenses against emotional influence and distortion.",
+            "bulletpoints": [
+                "Mentally label attempts at manipulation when they happen, reducing their impact on your perception.",
+                "Use internal responses like ‘This is their opinion, not my truth’ to prevent absorption of false narratives.",
+                "Practice mental detachment techniques such as visualization or shifting focus when gaslighting occurs."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "self_trust_9",
+            "title": "Logical Self-Interrogation",
+            "description": "Using strategic questioning to reinforce trust in your perceptions.",
+            "bulletpoints": [
+                "When self-doubt arises, ask yourself: 'What objective proof do I have that contradicts this doubt?'",
+                "Use the Socratic method by systematically questioning distortions to expose their irrationality.",
+                "Challenge statements from manipulators by requesting clear evidence, forcing them into logical inconsistencies."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "self_trust_10",
+            "title": "Defying Emotional Manipulation",
+            "description": "Resisting the emotional hooks used to undermine logical reasoning.",
+            "bulletpoints": [
+                "Recognize when guilt, fear, or shame is being weaponized to make you doubt yourself.",
+                "Separate facts from feelings—just because someone is upset does not mean you are wrong.",
+                "Maintain logical clarity by focusing on truth rather than reacting to the manipulator’s emotional performance."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

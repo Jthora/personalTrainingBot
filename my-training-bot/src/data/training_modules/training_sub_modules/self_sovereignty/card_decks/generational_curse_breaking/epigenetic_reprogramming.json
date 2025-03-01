@@ -11,7 +11,11 @@
             "id": "epigenetics_1",
             "title": "Identifying Biological and Psychological Inheritance",
             "description": "Recognizing the impact of ancestral trauma and genetic memory on personal behaviors and thought patterns.",
-            "bulletpoints": "Inherited Trauma Recognition, Behavioral Loop Analysis, Genetic Response Patterns",
+            "bulletpoints": [
+                "Inherited trauma can manifest as unconscious fears, anxieties, and self-limiting beliefs.",
+                "Behavioral loop analysis helps identify cycles of reactionary thinking passed down through generations.",
+                "Genetic response patterns influence resilience, stress reactions, and emotional processing abilities."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "epigenetics_2",
             "title": "Reprogramming Cellular Memory",
             "description": "Using affirmations, meditation, and visualization to alter inherited cellular-level responses to trauma.",
-            "bulletpoints": "Mind-Body Synchronization, Cellular Healing Techniques, Memory Reconditioning Exercises",
+            "bulletpoints": [
+                "Mind-body synchronization techniques help align emotional states with physical well-being.",
+                "Cellular healing techniques involve deep meditation and guided imagery to shift internal memory imprints.",
+                "Memory reconditioning exercises train the subconscious to replace inherited fears with empowering beliefs."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,97 @@
             "id": "epigenetics_3",
             "title": "Installing a New Generational Code",
             "description": "Establishing a fresh mental and energetic blueprint that transcends past familial limitations.",
-            "bulletpoints": "Intentional Thought Engineering, Ancestral Lineage Healing, Future Generational Programming",
+            "bulletpoints": [
+                "Intentional thought engineering involves conscious reinforcement of new identity frameworks.",
+                "Ancestral lineage healing releases outdated mental programs and resets inherited trauma cycles.",
+                "Future generational programming ensures that the changes made now positively impact descendants."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "epigenetics_4",
+            "title": "Rewriting the Subconscious Blueprint",
+            "description": "Techniques for altering deep-seated beliefs that influence genetic expression.",
+            "bulletpoints": [
+                "Subconscious beliefs dictate emotional patterns, stress responses, and inherited behaviors.",
+                "Guided self-hypnosis can be used to introduce empowering mental narratives at a deep level.",
+                "Consistently reinforcing new affirmations restructures subconscious programming over time."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "epigenetics_5",
+            "title": "Neuroplasticity and Generational Healing",
+            "description": "Harnessing the brain’s ability to rewire itself to break free from inherited trauma.",
+            "bulletpoints": [
+                "Neuroplasticity allows for intentional rewiring of thought and behavior patterns.",
+                "Practicing new emotional responses weakens the neural pathways tied to generational trauma.",
+                "Engaging in gratitude, mindfulness, and future visualization accelerates positive neural adaptation."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "epigenetics_6",
+            "title": "Energetic DNA Cleansing",
+            "description": "Techniques for clearing inherited energetic imprints that affect emotional and physical health.",
+            "bulletpoints": [
+                "Visualizing a golden light washing over DNA strands symbolically removes generational burdens.",
+                "Breathing exercises combined with intention-setting purify the body's energetic blueprint.",
+                "Sacred sound frequencies and vibration techniques can assist in harmonizing epigenetic imbalances."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "epigenetics_7",
+            "title": "Breaking the Fear-Based Genetic Code",
+            "description": "Overriding inherited fear responses to establish a foundation of resilience and self-trust.",
+            "bulletpoints": [
+                "Fear imprints from past generations can be unconsciously carried as survival mechanisms.",
+                "Identifying personal triggers helps distinguish between real danger and inherited anxieties.",
+                "Engaging in exposure therapy and safe confrontations reprograms fear-based reactions."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "epigenetics_8",
+            "title": "Developing a High-Vibration Mental State",
+            "description": "Shifting mental and emotional energy to a frequency that promotes positive genetic expression.",
+            "bulletpoints": [
+                "Thoughts and emotions influence genetic markers by either reinforcing or neutralizing stress responses.",
+                "Maintaining a high-vibration state through joy, gratitude, and purpose rewires inherited tendencies.",
+                "Engaging in music, art, and nature-based therapies strengthens positive epigenetic adaptation."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "epigenetics_9",
+            "title": "Quantum DNA Reprogramming",
+            "description": "Exploring the intersection of quantum biology and consciousness in altering genetic expression.",
+            "bulletpoints": [
+                "Quantum field theories suggest that focused intention can impact DNA structure and function.",
+                "Mindful awareness of thought patterns influences how genetic information is expressed.",
+                "Experimental techniques like scalar energy healing and vibrational medicine may support this process."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "epigenetics_10",
+            "title": "Creating an Epigenetic Legacy",
+            "description": "Ensuring future generations inherit a foundation of psychological, emotional, and energetic resilience.",
+            "bulletpoints": [
+                "Children and future descendants unconsciously absorb the mindset and behaviors of their ancestors.",
+                "By reprogramming personal patterns now, a healthier blueprint is set for generations to come.",
+                "Conscious parenting and mentorship strategies reinforce the longevity of these transformational shifts."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

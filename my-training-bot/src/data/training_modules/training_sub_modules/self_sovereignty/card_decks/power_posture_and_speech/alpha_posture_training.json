@@ -11,7 +11,11 @@
             "id": "posture_1",
             "title": "Commanding Presence Through Stance",
             "description": "Training in body alignment, foot positioning, and posture to radiate confidence.",
-            "bulletpoints": "Proper Spine Alignment, Power Stance Training, Energy Projection Through Posture",
+            "bulletpoints": [
+                "Maintain a straight yet relaxed spine to project confidence without tension.",
+                "Distribute weight evenly between both feet for grounded stability.",
+                "Keep your chest open and shoulders back to exude strength and control."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "posture_2",
             "title": "Micro-Expressions and Eye Contact",
             "description": "Controlling subtle facial cues and eye movements to establish dominance and trust.",
-            "bulletpoints": "Eye Contact Calibration, Emotionally Controlled Facial Responses, Strategic Blink Patterns",
+            "bulletpoints": [
+                "Hold steady eye contact without intimidation to project self-assurance.",
+                "Use subtle eyebrow movements to convey understanding and control conversations.",
+                "Train neutral facial expressions to prevent manipulators from reading emotional cues."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,97 @@
             "id": "posture_3",
             "title": "The Walk of Power",
             "description": "Mastering gait control and movement fluidity to exhibit strength and intentionality.",
-            "bulletpoints": "Rhythm and Flow, Shoulder Set Techniques, Speed and Directional Adjustments",
+            "bulletpoints": [
+                "Maintain a measured, deliberate pace to communicate purpose and authority.",
+                "Avoid erratic movements or fidgeting to reinforce self-mastery.",
+                "Use slight directional changes to subtly establish leadership in group settings."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "posture_4",
+            "title": "The Alpha Handshake",
+            "description": "Developing a strong but non-aggressive handshake that instantly commands respect.",
+            "bulletpoints": [
+                "Apply firm but controlled pressure to convey confidence without hostility.",
+                "Ensure palm alignment remains level to prevent subconscious dominance battles.",
+                "Make direct eye contact while shaking hands to reinforce authority."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "posture_5",
+            "title": "Spatial Awareness and Proximity Control",
+            "description": "Understanding and utilizing personal space to influence group dynamics.",
+            "bulletpoints": [
+                "Maintain a comfortable yet commanding distance in conversations to establish presence.",
+                "Step slightly closer when asserting dominance, but retreat when asserting control.",
+                "Use spatial positioning to dictate conversational flow and leadership status."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "posture_6",
+            "title": "Vocal Projection and Resonance",
+            "description": "Aligning posture with voice control to create a strong, commanding presence.",
+            "bulletpoints": [
+                "Use diaphragmatic breathing to enhance vocal depth and projection.",
+                "Maintain a controlled speaking pace to reinforce authority and confidence.",
+                "Modulate tone strategically to emphasize key points and maintain engagement."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "posture_7",
+            "title": "Gesture Mastery for Nonverbal Command",
+            "description": "Training in deliberate hand movements and gestures that reinforce confidence.",
+            "bulletpoints": [
+                "Use slow, intentional gestures to appear composed and authoritative.",
+                "Avoid excessive movements that indicate nervousness or uncertainty.",
+                "Mirror powerful gestures subtly to establish rapport and influence group energy."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "posture_8",
+            "title": "Seated Authority Positioning",
+            "description": "Sitting postures that maintain presence and command attention in conversations.",
+            "bulletpoints": [
+                "Keep feet planted firmly on the ground for stability and confidence.",
+                "Lean back slightly while maintaining an upright posture to exude calm dominance.",
+                "Use open body positioning to avoid appearing defensive or closed off."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "posture_9",
+            "title": "Energy Projection Through Posture",
+            "description": "Training to align inner confidence with external body language.",
+            "bulletpoints": [
+                "Visualize energy radiating outward to enhance personal presence.",
+                "Adjust posture based on situational demands to maintain control.",
+                "Synchronize breath with movement to create an effortless aura of confidence."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "posture_10",
+            "title": "Mastering the Entrance Effect",
+            "description": "Learning how to command attention and shift energy upon entering a room.",
+            "bulletpoints": [
+                "Pause briefly upon entry to let your presence be acknowledged naturally.",
+                "Scan the room with a controlled gaze to assert silent dominance.",
+                "Use measured strides and upright posture to project effortless authority."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

@@ -11,7 +11,11 @@
             "id": "pattern_decoding_1",
             "title": "Recognizing Symbolic Messages",
             "description": "Interpreting external and internal symbols as intuitive signals.",
-            "bulletpoints": "Dream Analysis, Synchronicity Awareness, Symbolic Associations",
+            "bulletpoints": [
+                "Dream analysis reveals subconscious insights and premonitions.",
+                "Synchronicity awareness helps detect repeating themes in life events.",
+                "Symbolic associations build a mental lexicon for decoding intuitive signs."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "pattern_decoding_2",
             "title": "Decoding Social and Psychological Patterns",
             "description": "Understanding human behavior and unconscious social dynamics through intuitive pattern recognition.",
-            "bulletpoints": "Microexpression Reading, Body Language Analysis, Subtext Awareness",
+            "bulletpoints": [
+                "Microexpression reading deciphers unspoken emotions and intentions.",
+                "Body language analysis reveals subconscious communication cues.",
+                "Subtext awareness uncovers hidden motives behind spoken words."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,97 @@
             "id": "pattern_decoding_3",
             "title": "Training Predictive Intuition",
             "description": "Using pattern analysis to forecast potential outcomes and avoid negative timelines.",
-            "bulletpoints": "Event Trajectory Mapping, Subconscious Cue Awareness, Probabilistic Thinking",
+            "bulletpoints": [
+                "Event trajectory mapping helps anticipate future developments.",
+                "Subconscious cue awareness detects unnoticed behavioral shifts.",
+                "Probabilistic thinking refines strategic decision-making under uncertainty."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "pattern_decoding_4",
+            "title": "Recognizing Emotional Loops",
+            "description": "Identifying repetitive emotional cycles that influence decision-making.",
+            "bulletpoints": [
+                "Tracing emotional triggers reveals recurring response patterns.",
+                "Recognizing past behavior loops prevents unconscious repetition.",
+                "Reprogramming automatic reactions enhances emotional intelligence."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "pattern_decoding_5",
+            "title": "Unveiling Hidden Agendas",
+            "description": "Detecting deception and manipulation through subtle behavioral clues.",
+            "bulletpoints": [
+                "Identifying language inconsistencies exposes masked intentions.",
+                "Observing microexpressions reveals subconscious emotional states.",
+                "Cross-referencing actions with words clarifies authenticity."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "pattern_decoding_6",
+            "title": "The Art of Cold Reading",
+            "description": "Extracting accurate insights about people and situations without prior information.",
+            "bulletpoints": [
+                "Noticing environmental details sharpens observational awareness.",
+                "Detecting personality traits through speech patterns enhances analysis.",
+                "Inferring unspoken thoughts strengthens interpersonal understanding."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "pattern_decoding_7",
+            "title": "Analyzing Cycles in History",
+            "description": "Understanding historical patterns to predict social and geopolitical trends.",
+            "bulletpoints": [
+                "Identifying repeating social structures enhances long-term foresight.",
+                "Tracking economic and political cycles clarifies future probabilities.",
+                "Comparing past and present events refines macro-level pattern recognition."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "pattern_decoding_8",
+            "title": "Detecting Financial Market Patterns",
+            "description": "Applying pattern recognition to cryptocurrency and stock market trends.",
+            "bulletpoints": [
+                "Recognizing candlestick formations aids in market timing strategies.",
+                "Identifying psychological investor behaviors reveals buy/sell trends.",
+                "Tracking algorithmic trading movements enhances predictive analysis."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "pattern_decoding_9",
+            "title": "Energetic Pattern Recognition",
+            "description": "Tuning into vibrational shifts to sense changes in environments and people.",
+            "bulletpoints": [
+                "Reading energetic imprints sharpens perception of unseen influences.",
+                "Tracking aura fluctuations reveals emotional and psychological states.",
+                "Detecting frequency shifts warns of potential threats or opportunities."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "pattern_decoding_10",
+            "title": "The Science of Coincidence",
+            "description": "Distinguishing between random events and meaningful synchronicities.",
+            "bulletpoints": [
+                "Calculating probability clarifies genuine patterns from chance events.",
+                "Recognizing confirmation bias prevents false pattern recognition.",
+                "Applying statistical intuition refines decision-making in uncertain situations."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

@@ -11,7 +11,11 @@
             "id": "info_control_1",
             "title": "Strategic Self-Disclosure",
             "description": "Controlling how much personal information is shared and who has access to it.",
-            "bulletpoints": "Layered Information Release, Need-to-Know Basis Mindset, Misdirection Techniques",
+            "bulletpoints": [
+                "Layering information release to maintain privacy control.",
+                "Developing a need-to-know basis mindset for all interactions.",
+                "Using misdirection techniques to deter probing inquiries."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "info_control_2",
             "title": "Psychological Misdirection",
             "description": "Using vague, incomplete, or misleading information to avoid entrapment.",
-            "bulletpoints": "Plausible Deniability, Deflection Statements, Controlled Narrative Projection",
+            "bulletpoints": [
+                "Mastering plausible deniability for safety in high-risk conversations.",
+                "Deploying deflection statements to avoid direct questioning.",
+                "Crafting controlled narratives to subtly manipulate perception."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,97 @@
             "id": "info_control_3",
             "title": "Shielding Vulnerabilities in Conversations",
             "description": "Avoiding emotional and psychological traps that expose weaknesses.",
-            "bulletpoints": "Conversational Pattern Recognition, Tactical Non-Responses, Redirecting Personal Inquiries",
+            "bulletpoints": [
+                "Recognizing conversational patterns designed to extract sensitive information.",
+                "Using tactical non-responses to shut down intrusive questions.",
+                "Redirecting personal inquiries to maintain control over discussions."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "info_control_4",
+            "title": "The Art of Selective Honesty",
+            "description": "Revealing only controlled truths while keeping critical information concealed.",
+            "bulletpoints": [
+                "Distinguishing between necessary and unnecessary honesty.",
+                "Practicing strategic omissions without triggering suspicion.",
+                "Framing statements in a way that maintains ambiguity."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "info_control_5",
+            "title": "Non-Linear Information Flow",
+            "description": "Disrupting predictable conversation patterns to prevent psychological tracking.",
+            "bulletpoints": [
+                "Switching topics abruptly to disrupt expectation-based questioning.",
+                "Using conversational loops to confuse and mislead information seekers.",
+                "Practicing verbal misdirection to alter the focus of dialogue."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "info_control_6",
+            "title": "Social Media and Digital Footprint Control",
+            "description": "Minimizing digital exposure to prevent data collection and profiling.",
+            "bulletpoints": [
+                "Scrubbing personal data from public sources to eliminate vulnerabilities.",
+                "Using alternative digital identities for increased privacy protection.",
+                "Deploying misinformation strategies to mislead online trackers."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "info_control_7",
+            "title": "Silent Influence and Controlled Presence",
+            "description": "Commanding attention without revealing personal details or intentions.",
+            "bulletpoints": [
+                "Mastering presence control to maintain an aura of mystery.",
+                "Avoiding unnecessary social validation to reduce personal visibility.",
+                "Using calculated speech patterns to increase perceived authority."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "info_control_8",
+            "title": "Embedded False Trails",
+            "description": "Intentionally planting misleading information to throw off potential adversaries.",
+            "bulletpoints": [
+                "Creating controlled distractions to mislead data collectors.",
+                "Maintaining multiple versions of narratives to ensure plausible deniability.",
+                "Using disinformation as a strategic defense mechanism."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "info_control_9",
+            "title": "Neutral Language Calibration",
+            "description": "Speaking in a way that minimizes risk and prevents emotional manipulation.",
+            "bulletpoints": [
+                "Using neutral tones to avoid emotional engagement in manipulation attempts.",
+                "Crafting speech patterns that provide no leverage for psychological attacks.",
+                "Reducing verbal commitments to prevent future exploitation."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "info_control_10",
+            "title": "Strategic Pauses and Conversational Control",
+            "description": "Using silence and controlled pauses to gain the upper hand in social interactions.",
+            "bulletpoints": [
+                "Deliberate pausing to create discomfort and control pacing.",
+                "Forcing others to reveal more by withholding reactive responses.",
+                "Using measured speech to make statements more authoritative and deliberate."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

@@ -11,7 +11,11 @@
             "id": "gaslighting_1",
             "title": "Detecting Manipulative Language",
             "description": "Recognizing key verbal patterns used in gaslighting to distort reality.",
-            "bulletpoints": "Wordplay Deconstruction, Reality Validation, Conversational Triggers",
+            "bulletpoints": [
+                "Wordplay deconstruction reveals hidden manipulation tactics.",
+                "Reality validation ensures mental clarity despite external distortions.",
+                "Conversational triggers help identify gaslighting attempts in real time."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "gaslighting_2",
             "title": "Reinforcing Cognitive Boundaries",
             "description": "Strengthening the ability to differentiate external distortion from internal truth.",
-            "bulletpoints": "Logical Anchors, Self-Interrogation Drills, Tactical Cognitive Reframing",
+            "bulletpoints": [
+                "Logical anchors provide mental stability against psychological manipulation.",
+                "Self-interrogation drills train the mind to resist gaslighting confusion.",
+                "Tactical cognitive reframing neutralizes distortions and reclaims mental space."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,97 @@
             "id": "gaslighting_3",
             "title": "Verbal Counter-Offense",
             "description": "Using controlled responses to disarm gaslighters and regain control of interactions.",
-            "bulletpoints": "Conversational Reversal, Strategic Silence, Psychological Disruptors",
+            "bulletpoints": [
+                "Conversational reversal flips manipulative statements back on the gaslighter.",
+                "Strategic silence forces the manipulator to expose their tactics.",
+                "Psychological disruptors break the gaslighting cycle and shift control."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "gaslighting_4",
+            "title": "The ‘Wait, What?’ Disruption",
+            "description": "A simple but powerful verbal tactic to expose gaslighting inconsistencies.",
+            "bulletpoints": [
+                "Forces the gaslighter to clarify their distorted statements.",
+                "Interrupts the manipulation cycle and makes them rethink their strategy.",
+                "Creates cognitive dissonance in the manipulator, weakening their control."
+            ],
+            "duration": "45",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "gaslighting_5",
+            "title": "Gray Rock as a Weapon",
+            "description": "Mastering advanced emotional disengagement to render gaslighting ineffective.",
+            "bulletpoints": [
+                "Neutral responses deny the manipulator emotional fuel.",
+                "Monotone delivery prevents psychological hooks from landing.",
+                "Energetic detachment ensures no emotional investment in their game."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "gaslighting_6",
+            "title": "The ‘Mirror’ Technique",
+            "description": "Reflecting manipulative tactics back onto the gaslighter to expose their games.",
+            "bulletpoints": [
+                "Repeating their statements forces them to hear their own contradictions.",
+                "Mirroring their tone and words subtly highlights their absurdity.",
+                "Forcing self-awareness creates discomfort and potential withdrawal."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "gaslighting_7",
+            "title": "Breaking the ‘You’re Too Sensitive’ Trap",
+            "description": "Shutting down one of the most common gaslighting tactics.",
+            "bulletpoints": [
+                "Flipping the accusation exposes their emotional deflection.",
+                "Refusing to engage in self-doubt neutralizes their control.",
+                "Forcing accountability turns their narrative against them."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "gaslighting_8",
+            "title": "Memory Anchoring for Reality Protection",
+            "description": "Using documented truth as a weapon against gaslighting.",
+            "bulletpoints": [
+                "Keeping a record prevents false memories from being implanted.",
+                "Referencing past events strengthens reality perception.",
+                "Gaslighters struggle when confronted with hard facts."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "gaslighting_9",
+            "title": "Strategic Evasion Tactics",
+            "description": "Dodging gaslighting traps without engaging in unnecessary battles.",
+            "bulletpoints": [
+                "Redirecting conversations prevents emotional entrapment.",
+                "Controlled disengagement leaves them without leverage.",
+                "Avoiding debate denies them the ability to manipulate your perception."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "gaslighting_10",
+            "title": "Installing Cognitive Immunity",
+            "description": "Developing an unshakable internal belief system resistant to gaslighting.",
+            "bulletpoints": [
+                "Preemptive self-validation reduces susceptibility to external distortions.",
+                "Cognitive self-anchoring strengthens mental autonomy.",
+                "Pattern recognition builds long-term resistance to manipulation."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

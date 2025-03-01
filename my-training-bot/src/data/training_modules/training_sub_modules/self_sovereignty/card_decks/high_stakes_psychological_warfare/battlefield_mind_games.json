@@ -11,7 +11,11 @@
             "id": "mind_games_1",
             "title": "Detecting and Countering Intimidation Tactics",
             "description": "Understanding and reversing psychological intimidation strategies.",
-            "bulletpoints": "Breaking Fear-Based Control, Recognizing Subconscious Threat Cues, Overriding Social Pressure",
+            "bulletpoints": [
+                "Breaking fear-based control requires recognizing when intimidation is meant to manipulate emotions.",
+                "Recognizing subconscious threat cues allows rapid assessment of deceptive power plays.",
+                "Overriding social pressure by asserting control through body language and verbal dominance neutralizes intimidation."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -19,7 +23,11 @@
             "id": "mind_games_2",
             "title": "Cold Reading and Information Extraction",
             "description": "Analyzing microexpressions, speech patterns, and subconscious signals to extract intel.",
-            "bulletpoints": "Microexpression Analysis, Situational Intelligence Gathering, Strategic Questioning",
+            "bulletpoints": [
+                "Microexpression analysis allows you to detect emotional states before they are verbally expressed.",
+                "Situational intelligence gathering involves observing details that reveal hidden motives or weaknesses.",
+                "Strategic questioning uses precision inquiries to lead the target into revealing crucial information."
+            ],
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -27,7 +35,95 @@
             "id": "mind_games_3",
             "title": "Disrupting Psychological Warfare Attacks",
             "description": "Techniques for neutralizing gaslighting, manipulation, and social engineering in real time.",
-            "bulletpoints": "Cognitive Pattern Breakers, Instant Role Reversals, Conversational Redirection",
+            "bulletpoints": [
+                "Cognitive pattern breakers instantly snap a manipulator out of their rehearsed tactics.",
+                "Instant role reversals shift the power dynamic, forcing aggressors into a defensive position.",
+                "Conversational redirection misdirects manipulators away from their intended psychological traps."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mind_games_4",
+            "title": "The Power of Non-Reaction",
+            "description": "Mastering emotional neutrality to deny manipulators their desired response.",
+            "bulletpoints": [
+                "Remaining completely neutral in high-pressure interactions forces manipulators to adjust their approach.",
+                "Controlled silence creates discomfort and shifts the psychological power dynamic in your favor.",
+                "Delayed responses break the manipulator's rhythm, weakening their ability to dictate the exchange."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "mind_games_5",
+            "title": "Weaponized Confusion",
+            "description": "Using unpredictability to derail manipulation attempts and gain the upper hand.",
+            "bulletpoints": [
+                "Asking irrelevant or bizarre questions disrupts the manipulator’s psychological framework.",
+                "Intentionally misinterpreting their words forces them to backtrack and weakens their influence.",
+                "Feigning ignorance while subtly guiding the conversation undermines their control without revealing your strategy."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mind_games_6",
+            "title": "Reverse Gaslighting",
+            "description": "Flipping gaslighting attempts back onto the manipulator to destabilize their control.",
+            "bulletpoints": [
+                "Repeating their statements with slight exaggeration makes them appear ridiculous and self-contradictory.",
+                "Feigning confusion forces them to waste energy explaining their tactics, weakening their hold.",
+                "Asking them to ‘prove it’ redirects the burden of logic back onto them, exposing their lack of substance."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mind_games_7",
+            "title": "The Trojan Horse Strategy",
+            "description": "Concealing intent while gaining trust to dismantle psychological attacks from within.",
+            "bulletpoints": [
+                "Acting agreeable while subtly leading the conversation places the manipulator in a controlled trap.",
+                "Giving them a false sense of victory causes them to lower their guard and reveal more.",
+                "Presenting selective vulnerability creates an illusion of weakness while reinforcing strategic positioning."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mind_games_8",
+            "title": "Rapid Reframing for Control",
+            "description": "Instantly shifting the narrative to regain dominance in a psychological battle.",
+            "bulletpoints": [
+                "Turning an attack into an opportunity allows you to reframe the interaction in your favor.",
+                "Using humor and sarcasm can redirect an insult into an empowering counter-statement.",
+                "Reframing accusations as compliments disarms aggressors and forces them to reassess their approach."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mind_games_9",
+            "title": "The Misdirection Gambit",
+            "description": "Using distraction and redirection to derail psychological threats.",
+            "bulletpoints": [
+                "Shifting focus onto unrelated topics confuses manipulators and forces them to recalibrate.",
+                "Placing emphasis on minor irrelevant details causes them to overanalyze and lose momentum.",
+                "Introducing an unexpected topic makes them second-guess their control over the conversation."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "mind_games_10",
+            "title": "The Unbreakable Mental Fortress",
+            "description": "Developing an indomitable mindset resistant to all forms of psychological manipulation.",
+            "bulletpoints": [
+                "Unshakable self-trust ensures no external narrative can override your internal reality.",
+                "Psychological inoculation through exposure to controlled manipulation scenarios builds immunity.",
+                "Mastering emotional discipline prevents others from using fear, guilt, or pressure against you."
+            ],
             "duration": "90",
             "difficulty": "Expert"
         }

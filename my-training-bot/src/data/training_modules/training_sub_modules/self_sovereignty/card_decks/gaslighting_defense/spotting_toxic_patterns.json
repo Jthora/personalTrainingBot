@@ -11,7 +11,11 @@
             "id": "toxic_patterns_1",
             "title": "Decoding Manipulative Language",
             "description": "Understanding how gaslighters use language to distort reality and control perception.",
-            "bulletpoints": "Twisted Wordplay, Reversal Tactics, Strategic Vagueness",
+            "bulletpoints": [
+                "Twisted wordplay reframes events to make the victim feel guilty or confused about their own experience.",
+                "Reversal tactics involve flipping blame onto the victim, making them the 'real problem' instead of the manipulator.",
+                "Strategic vagueness keeps conversations unclear, ensuring gaslighters never commit to facts that could be challenged."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "toxic_patterns_2",
             "title": "Pattern Recognition in Conversations",
             "description": "Detecting repeating cycles of manipulation and the triggers that activate them.",
-            "bulletpoints": "Circular Arguments, Forced Self-Doubt, The ‘You're Too Sensitive’ Trap",
+            "bulletpoints": [
+                "Circular arguments keep you stuck in a loop where no resolution is ever reached, only more confusion.",
+                "Forced self-doubt tactics subtly pressure you to question your own judgment and depend on their version of reality.",
+                "The ‘You're Too Sensitive’ trap invalidates your emotions, making it easier for the gaslighter to dismiss your concerns."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,8 +35,96 @@
             "id": "toxic_patterns_3",
             "title": "Testing for Psychological Manipulation",
             "description": "Using specific verbal and behavioral tests to confirm if someone is engaging in gaslighting.",
-            "bulletpoints": "The ‘Reality Test’ Method, Silent Resistance, Pattern Disruption Strategies",
+            "bulletpoints": [
+                "The ‘Reality Test’ method involves calmly asserting facts and observing if they react with defensiveness or deflection.",
+                "Silent resistance—remaining neutral and disengaged—forces manipulators to overextend themselves, revealing inconsistencies.",
+                "Pattern disruption strategies involve responding unpredictably to force them out of their usual control tactics."
+            ],
             "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "toxic_patterns_4",
+            "title": "The Projection Game",
+            "description": "Recognizing when manipulators project their flaws onto others.",
+            "bulletpoints": [
+                "Gaslighters often accuse you of the exact things they are doing to shift focus away from their own behavior.",
+                "Projection is used to make you feel guilty for actions you haven’t done, forcing you to defend yourself.",
+                "The key to countering projection is to calmly return the accusation with a reality check rather than emotional defense."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "toxic_patterns_5",
+            "title": "Love-Bombing and Devaluation",
+            "description": "Identifying the cycle of over-praising followed by tearing down to establish control.",
+            "bulletpoints": [
+                "Love-bombing floods you with excessive praise and validation to create dependency on the manipulator.",
+                "Once control is established, the devaluation phase begins, where you are criticized and made to feel inferior.",
+                "Recognizing these cycles early prevents emotional dependency and allows for strategic detachment."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "toxic_patterns_6",
+            "title": "Identifying Future-Faking",
+            "description": "Recognizing false promises designed to keep you emotionally invested.",
+            "bulletpoints": [
+                "Future-faking involves making big promises about change, commitment, or rewards that will never come.",
+                "Gaslighters use this tactic to prevent you from leaving or setting boundaries while keeping you hopeful.",
+                "The best way to counter future-faking is to track past behavior and trust patterns over promises."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "toxic_patterns_7",
+            "title": "Guilt-Tripping and Obligation Manipulation",
+            "description": "Understanding how guilt is weaponized to override personal boundaries.",
+            "bulletpoints": [
+                "Guilt-tripping exploits your empathy by making you feel selfish or ungrateful for asserting your needs.",
+                "Manipulators will frame their suffering as your responsibility, pressuring you into compliance.",
+                "Recognizing guilt as a control mechanism allows you to disengage and set firmer boundaries."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "toxic_patterns_8",
+            "title": "Recognizing Triangulation",
+            "description": "Understanding how manipulators use third parties to create division and control.",
+            "bulletpoints": [
+                "Triangulation involves bringing in another person’s opinion to manipulate or reinforce the gaslighter’s perspective.",
+                "This tactic creates a false sense of isolation, making the victim feel outnumbered and pressured into compliance.",
+                "The best response is to avoid engaging in three-way conflict and address issues directly, without intermediaries."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "toxic_patterns_9",
+            "title": "Recognizing Forced Isolation Tactics",
+            "description": "Understanding how manipulators try to control by cutting you off from outside perspectives.",
+            "bulletpoints": [
+                "Gaslighters often try to isolate you by convincing you that friends and family are against you.",
+                "They subtly discourage you from seeking outside opinions, making their reality seem like the only valid one.",
+                "Reaffirming relationships with trusted individuals helps counteract these isolation tactics."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "toxic_patterns_10",
+            "title": "Mastering Conversational Pattern Disruption",
+            "description": "Techniques to interrupt and break free from manipulative dialogue loops.",
+            "bulletpoints": [
+                "Refusing to engage in circular arguments forces the gaslighter to either escalate or abandon their tactic.",
+                "Answering ambiguous statements with direct, precise questions disrupts vague manipulations.",
+                "Using silence strategically makes manipulators uncomfortable, often leading them to reveal more than intended."
+            ],
+            "duration": "75",
             "difficulty": "Advanced"
         }
     ]

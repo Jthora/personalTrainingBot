@@ -11,7 +11,11 @@
             "id": "self_auth_1",
             "title": "Breaking Free from External Validation",
             "description": "Training the mind to disconnect from seeking approval or recognition from external sources.",
-            "bulletpoints": "Recognizing Validation Loops, Developing Internal Affirmation Systems, Conscious Approval Detox",
+            "bulletpoints": [
+                "Recognizing validation loops and their impact on autonomy.",
+                "Developing internal affirmation systems to replace external praise.",
+                "Practicing conscious approval detox through controlled disengagement."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "self_auth_2",
             "title": "The Power of Self-Permission",
             "description": "Learning how to internally validate choices and decisions without external reinforcement.",
-            "bulletpoints": "Establishing Inner Authority, Decision Ownership Techniques, Self-Permission Rituals",
+            "bulletpoints": [
+                "Establishing inner authority by setting personal standards.",
+                "Practicing decision ownership techniques for self-reliance.",
+                "Creating self-permission rituals to solidify internal validation."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,97 @@
             "id": "self_auth_3",
             "title": "Refusing to Seek Justification",
             "description": "Eliminating the need to explain, justify, or rationalize personal choices to others.",
-            "bulletpoints": "Boundary Enforcement Speech, Assertive Decision-Making, Psychological Disengagement from Justification",
+            "bulletpoints": [
+                "Using boundary enforcement speech to end unnecessary explanations.",
+                "Training assertive decision-making for confidence under pressure.",
+                "Disengaging psychologically from the need for external approval."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "self_auth_4",
+            "title": "Detaching from Social Comparison",
+            "description": "Breaking the habit of measuring self-worth against others' successes or failures.",
+            "bulletpoints": [
+                "Shifting focus to personal progress instead of external metrics.",
+                "Developing an identity independent of societal expectations.",
+                "Practicing conscious detachment from social competition triggers."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "self_auth_5",
+            "title": "Overriding the Fear of Disapproval",
+            "description": "Building resilience to negative feedback and disapproval from others.",
+            "bulletpoints": [
+                "Understanding the psychology behind approval-seeking behaviors.",
+                "Using exposure therapy techniques to neutralize rejection sensitivity.",
+                "Rewiring emotional responses to criticism and external judgment."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "self_auth_6",
+            "title": "Making Decisions Without Seeking Input",
+            "description": "Practicing autonomous decision-making without consulting others for validation.",
+            "bulletpoints": [
+                "Developing self-trust through independent micro-decisions.",
+                "Using risk-tolerance training to override hesitation.",
+                "Building conviction in personal choices through reflective analysis."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "self_auth_7",
+            "title": "Reclaiming Time from Approval-Seeking Activities",
+            "description": "Identifying and eliminating behaviors that waste time seeking validation.",
+            "bulletpoints": [
+                "Tracking approval-seeking habits and their time impact.",
+                "Replacing validation-seeking with self-reinforcement techniques.",
+                "Optimizing routines to prioritize self-sufficiency over external praise."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "self_auth_8",
+            "title": "Creating Personal Standards Instead of Social Norms",
+            "description": "Defining success, morality, and priorities based on internal values, not external expectations.",
+            "bulletpoints": [
+                "Developing a self-governing ethical code for autonomous living.",
+                "Disengaging from societal conditioning in decision-making.",
+                "Building confidence in unique perspectives and personal philosophy."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "self_auth_9",
+            "title": "Owning Your Choices Without Explanation",
+            "description": "Mastering the ability to make decisions without feeling the need to defend them.",
+            "bulletpoints": [
+                "Using minimalist communication to shut down probing questions.",
+                "Refining non-reactive responses to manipulative pressure.",
+                "Establishing a presence that radiates authority and certainty."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "self_auth_10",
+            "title": "Living as the Final Authority Over Your Life",
+            "description": "Integrating self-authorization into every area of life for ultimate autonomy.",
+            "bulletpoints": [
+                "Reinforcing sovereignty in financial, social, and personal realms.",
+                "Developing an unshakable internal reference point for decisions.",
+                "Maintaining psychological self-rule under any external pressure."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

@@ -11,7 +11,11 @@
             "id": "memory_repatterning_1",
             "title": "Reality Check Exercises",
             "description": "Training the mind to differentiate between past trauma and present safety.",
-            "bulletpoints": "Present vs. Past Awareness, Safe Space Visualization, Affirmation Training",
+            "bulletpoints": [
+                "When intrusive memories arise, pause and list three things that confirm you are in the present, not the past.",
+                "Use safe space visualization to reinforce emotional security and distance from past distress.",
+                "Practice daily affirmation training by reminding yourself, 'I am safe, I am here, and the past cannot harm me now.'"
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "memory_repatterning_2",
             "title": "Memory Rewriting Techniques",
             "description": "Altering emotional associations tied to traumatic memories.",
-            "bulletpoints": "Guided Imagery, Reverse Trauma Narratives, Emotional Charge Reduction",
+            "bulletpoints": [
+                "Reimagine the traumatic memory as if you had power over the situation, mentally shifting yourself into a position of control.",
+                "Use guided imagery to introduce new, positive elements into the memory, diluting its emotional weight.",
+                "Reduce the emotional charge by visualizing the memory in black-and-white or shrinking it to a small, distant image."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,97 @@
             "id": "memory_repatterning_3",
             "title": "Symbolic Replacement Therapy",
             "description": "Replacing painful memory symbols with empowering or neutral ones.",
-            "bulletpoints": "Mental Imagery Substitution, Ritualistic Memory Rewriting, Metaphor Reprocessing",
+            "bulletpoints": [
+                "Identify the core symbol in a painful memory and replace it with a more empowering or neutral image.",
+                "Engage in a personal ritual, such as burning an old representation of pain and replacing it with a new symbol of healing.",
+                "Use metaphor reprocessing by turning past experiences into a meaningful story where you emerge stronger."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "memory_repatterning_4",
+            "title": "Narrative Reframing",
+            "description": "Reconstructing personal stories to empower rather than disempower.",
+            "bulletpoints": [
+                "Write a new version of your story where you are the hero overcoming adversity, rather than the victim.",
+                "Shift the focus from what was done to you, to what strengths you developed because of your experiences.",
+                "Engage in self-dialogue, telling yourself that your past does not define your future unless you allow it."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "memory_repatterning_5",
+            "title": "Anchoring to Positive Memory Triggers",
+            "description": "Strengthening neural pathways tied to joy, safety, and empowerment.",
+            "bulletpoints": [
+                "Create a physical or visual anchor, such as an object or image, that represents a positive, empowering memory.",
+                "When facing distress, focus on the anchor and immerse yourself in the emotions of that positive memory.",
+                "Strengthen the anchor by pairing it with deep breathing and self-affirming thoughts to reinforce emotional stability."
+            ],
+            "duration": "60",
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "memory_repatterning_6",
+            "title": "Desensitization Through Repetition",
+            "description": "Gradually reducing the emotional intensity of painful memories.",
+            "bulletpoints": [
+                "Expose yourself to the memory in small, controlled doses while practicing deep relaxation techniques.",
+                "Repeat the memory while actively changing its details each time, slowly removing its emotional grip.",
+                "Over time, the repeated exposure dulls the brain’s automatic distress response, reducing fear and anxiety."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "memory_repatterning_7",
+            "title": "Transformational Visualization",
+            "description": "Using the power of mental imagery to reconstruct past experiences.",
+            "bulletpoints": [
+                "Visualize a scenario where you are protected, supported, and safe in moments where you once felt helpless.",
+                "Surround traumatic memories with light, dissolving fear and replacing it with a sense of security.",
+                "Imagine yourself stepping outside the memory and rewriting its outcome to reclaim power and confidence."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "memory_repatterning_8",
+            "title": "Subconscious Dialogue Reprogramming",
+            "description": "Replacing internalized negative narratives with empowering self-dialogue.",
+            "bulletpoints": [
+                "Listen to your self-talk and identify phrases or beliefs rooted in past trauma.",
+                "Replace limiting beliefs with affirmations such as 'I am worthy,' 'I am free,' and 'I control my own story.'",
+                "Reinforce these new beliefs through repetition, writing them down, and saying them out loud daily."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "memory_repatterning_9",
+            "title": "Sensory Memory Diffusion",
+            "description": "Detaching from traumatic memories through sensory control.",
+            "bulletpoints": [
+                "Alter the texture, sound, or colors in your memory to neutralize emotional intensity.",
+                "Imagine the event happening in slow motion or as if it were playing on a distant screen to create psychological distance.",
+                "Engage in deep breathing and grounding techniques to prevent reattachment to the distressing memory."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "memory_repatterning_10",
+            "title": "Time Perspective Recalibration",
+            "description": "Training the brain to perceive traumatic events as distant, rather than present.",
+            "bulletpoints": [
+                "Imagine placing the memory into a book and closing it, symbolizing its place in the past.",
+                "Visualize walking forward on a timeline, looking back at the memory as a small, distant event.",
+                "Recognize that time has passed, and with it, the ability for that moment to affect you in the present."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

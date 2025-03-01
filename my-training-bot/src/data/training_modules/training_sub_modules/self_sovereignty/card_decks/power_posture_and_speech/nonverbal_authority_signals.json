@@ -11,7 +11,11 @@
             "id": "nonverbal_1",
             "title": "The Power of Stillness",
             "description": "Mastering controlled stillness to create an aura of confidence and stability.",
-            "bulletpoints": "Reducing Unnecessary Movement, Deliberate Gestures, Tactical Pauses",
+            "bulletpoints": [
+                "Minimize fidgeting and excess movement to signal control and certainty.",
+                "Use deliberate pauses in speech and motion to amplify authority.",
+                "Slow and measured breathing reinforces a composed and dominant presence."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "nonverbal_2",
             "title": "The Art of Taking Up Space",
             "description": "Using strategic positioning and expansion to assert authority in any room.",
-            "bulletpoints": "Open vs. Closed Body Language, Spatial Control, Territory Ownership Signals",
+            "bulletpoints": [
+                "Spread shoulders and maintain an open stance to project dominance.",
+                "Avoid shrinking movements like crossed arms or hunching to retain power.",
+                "Control the physical space around you to dictate social dynamics."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,8 +35,96 @@
             "id": "nonverbal_3",
             "title": "Hand Gestures and Silent Commands",
             "description": "Using precise hand movements and gestures to reinforce communication and control interactions.",
-            "bulletpoints": "Minimalist Hand Gestures, Micro-Movements for Emphasis, Psychological Anchors in Gestures",
+            "bulletpoints": [
+                "Keep hand movements slow and intentional to command attention.",
+                "Avoid erratic or excessive gestures that signal nervousness or weakness.",
+                "Use subtle palm exposure to project honesty and authority."
+            ],
             "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "nonverbal_4",
+            "title": "Eye Contact Mastery",
+            "description": "Using eye contact to control conversations, establish dominance, and read intentions.",
+            "bulletpoints": [
+                "Hold steady eye contact without breaking to signal confidence.",
+                "Blink naturally but never excessively to avoid looking uncertain.",
+                "Use slow, deliberate glances to take control of social dynamics."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "nonverbal_5",
+            "title": "The Alpha Nod",
+            "description": "Using subtle nodding techniques to assert control in conversations and negotiations.",
+            "bulletpoints": [
+                "A slow, deliberate nod signals approval while maintaining authority.",
+                "A slight upward nod can establish dominance and deflect challenges.",
+                "Downward nods can reinforce serious, firm communication."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "nonverbal_6",
+            "title": "Voice Projection and Tonality",
+            "description": "Aligning nonverbal cues with vocal dominance to reinforce authority.",
+            "bulletpoints": [
+                "Use a deep, even tone to sound confident and in control.",
+                "Pause between sentences to command attention and create emphasis.",
+                "Lower your pitch slightly at the end of sentences to sound decisive."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "nonverbal_7",
+            "title": "Strategic Use of Silence",
+            "description": "Mastering silence as a psychological tool to increase influence and control.",
+            "bulletpoints": [
+                "Use pauses after statements to let words sink in and build tension.",
+                "Withhold immediate responses to control the pace of interactions.",
+                "Silence forces others to reveal more information while reinforcing your authority."
+            ],
+            "duration": "75",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "nonverbal_8",
+            "title": "Walking with Purpose",
+            "description": "Developing a deliberate and controlled walking style to exude confidence.",
+            "bulletpoints": [
+                "Take smooth, measured steps to project strength and direction.",
+                "Avoid rushing or erratic movements that signal anxiety.",
+                "Keep posture upright with a relaxed but firm gait to command respect."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "nonverbal_9",
+            "title": "Leaning as a Power Move",
+            "description": "Using subtle posture shifts to assert dominance and control interactions.",
+            "bulletpoints": [
+                "Leaning slightly forward signals assertiveness and engagement.",
+                "Leaning back in a chair with open body language exudes authority.",
+                "Use controlled shifts in weight to regulate dominance in conversations."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "nonverbal_10",
+            "title": "The Controlled Smirk",
+            "description": "Using micro-expressions strategically to convey dominance and confidence.",
+            "bulletpoints": [
+                "A slow, subtle smirk can disarm challengers and project control.",
+                "Avoid over-smiling to maintain an aura of mystery and authority.",
+                "A knowing half-smile can signal superiority without overt arrogance."
+            ],
+            "duration": "60",
             "difficulty": "Advanced"
         }
     ]

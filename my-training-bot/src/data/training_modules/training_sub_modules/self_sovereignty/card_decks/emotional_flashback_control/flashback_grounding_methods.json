@@ -11,7 +11,11 @@
             "id": "grounding_1",
             "title": "5-4-3-2-1 Method",
             "description": "Using the five senses to pull oneself back into the present moment.",
-            "bulletpoints": "Identifying 5 sights, 4 sounds, 3 touches, 2 smells, 1 taste",
+            "bulletpoints": [
+                "Identify five things you can see, four things you can hear, three things you can touch, two things you can smell, and one thing you can taste.",
+                "Slowly move through each sense, naming objects or sensations out loud to engage your brain in the present moment.",
+                "This technique helps override dissociation by directing focus to physical reality rather than intrusive memories."
+            ],
             "duration": "30",
             "difficulty": "Beginner"
         },
@@ -19,7 +23,11 @@
             "id": "grounding_2",
             "title": "Breath Control and Body Awareness",
             "description": "Using controlled breathing and physical movement to regain stability.",
-            "bulletpoints": "Box Breathing, Progressive Muscle Relaxation, Somatic Scanning",
+            "bulletpoints": [
+                "Engage in box breathing—inhale for four seconds, hold for four, exhale for four, and repeat to stabilize the nervous system.",
+                "Perform progressive muscle relaxation by tensing and releasing muscles from head to toe.",
+                "Use somatic scanning to focus on how each part of your body feels, bringing awareness back to the present."
+            ],
             "duration": "45",
             "difficulty": "Intermediate"
         },
@@ -27,8 +35,96 @@
             "id": "grounding_3",
             "title": "Physical Movement as a Reset",
             "description": "Using rapid physical motion to break the flashback state.",
-            "bulletpoints": "Jumping, Clapping, Spinning, Sudden Change of Posture",
+            "bulletpoints": [
+                "Jump up and down, shake your arms, or clap your hands to jolt your nervous system out of the past.",
+                "Spin in a circle or rapidly change your posture to disrupt the flashback pattern.",
+                "If movement feels overwhelming, start with slow, deliberate actions like rolling your shoulders or stretching."
+            ],
             "duration": "30",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "grounding_4",
+            "title": "Temperature Shift for Grounding",
+            "description": "Using hot or cold sensations to re-anchor into the present.",
+            "bulletpoints": [
+                "Hold an ice cube, run cold water over your wrists, or place a cold object against your skin to shock the nervous system out of dissociation.",
+                "Drink warm tea, wrap yourself in a weighted blanket, or take a warm shower to provide comforting sensory input.",
+                "Alternating between hot and cold sensations can help balance the nervous system and reduce emotional flooding."
+            ],
+            "duration": "30",
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "grounding_5",
+            "title": "Mantra Repetition and Self-Talk",
+            "description": "Using verbal affirmations to counteract flashback-induced fear.",
+            "bulletpoints": [
+                "Repeat grounding statements such as 'I am safe now,' 'This is not the past,' or 'I am in control of my mind and body.'",
+                "Engage in self-reassurance by speaking to yourself with the same kindness you would offer a close friend.",
+                "Using a strong, confident tone while repeating affirmations helps solidify the belief in your emotional safety."
+            ],
+            "duration": "30",
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "grounding_6",
+            "title": "Sensory Disruption with Objects",
+            "description": "Using tangible items to interrupt a flashback and reinforce present reality.",
+            "bulletpoints": [
+                "Carry a grounding object such as a smooth stone, a textured fabric, or a scented essential oil to engage the senses.",
+                "Touch something with an extreme texture—rough, soft, or cold—to snap your focus back to the present.",
+                "Use strong scents like peppermint, citrus, or eucalyptus to quickly override intrusive memories."
+            ],
+            "duration": "30",
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "grounding_7",
+            "title": "Visual Grounding with Safe Imagery",
+            "description": "Using calming visualizations to redirect mental focus away from a flashback.",
+            "bulletpoints": [
+                "Picture a place where you feel completely safe, like a quiet forest, a peaceful beach, or a cozy room.",
+                "Mentally engage with the scene by noting what you see, hear, and feel in this imaginary safe space.",
+                "Practicing this visualization daily strengthens your ability to shift focus away from distressing memories."
+            ],
+            "duration": "45",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "grounding_8",
+            "title": "Counting and Pattern Recognition",
+            "description": "Using structured mental exercises to redirect focus.",
+            "bulletpoints": [
+                "Count backward from 100 in increments of three to engage your logical mind and break an emotional loop.",
+                "Look for patterns in your environment, such as grouping objects by color, size, or shape, to shift attention.",
+                "Use mental arithmetic or recite a familiar sequence, like the alphabet backward, to reinforce present awareness."
+            ],
+            "duration": "45",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "grounding_9",
+            "title": "Music and Auditory Anchors",
+            "description": "Using sound-based methods to disrupt emotional flashbacks.",
+            "bulletpoints": [
+                "Listen to upbeat or calming music with a steady rhythm to anchor yourself in the present.",
+                "Play an audio recording of a safe voice, such as your own affirmations or a trusted person's reassuring words.",
+                "If possible, sing or hum a song that holds positive emotional associations to shift your mental state."
+            ],
+            "duration": "45",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "grounding_10",
+            "title": "Guided Tactile Focus",
+            "description": "Using intentional touch to regulate nervous system responses.",
+            "bulletpoints": [
+                "Press your feet firmly into the ground and feel the support beneath you to reinforce physical stability.",
+                "Place one hand over your heart and another on your stomach, focusing on the warmth and weight of your hands.",
+                "Apply gentle, rhythmic tapping on your arms or legs to self-soothe and interrupt the flashback response."
+            ],
+            "duration": "45",
             "difficulty": "Intermediate"
         }
     ]

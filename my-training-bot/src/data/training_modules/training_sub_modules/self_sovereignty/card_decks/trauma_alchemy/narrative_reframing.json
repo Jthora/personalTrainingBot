@@ -11,7 +11,11 @@
             "id": "narrative_1",
             "title": "Identifying the Existing Trauma Narrative",
             "description": "Bringing awareness to the unconscious stories being repeated about past pain.",
-            "bulletpoints": "Mapping Trauma Perception, Recognizing Limiting Storylines, Identifying Negative Loops",
+            "bulletpoints": [
+                "Mapping trauma perception to recognize hidden patterns.",
+                "Identifying negative loops that keep replaying in thought.",
+                "Acknowledging the internalized meaning assigned to past pain."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "narrative_2",
             "title": "Transforming the Victim Mindset",
             "description": "Recasting yourself as the hero rather than the victim in your life’s story.",
-            "bulletpoints": "Power Identity Shift, Heroic Perspective Installation, Ownership of Past Events",
+            "bulletpoints": [
+                "Shifting self-perception from powerless to powerful.",
+                "Extracting wisdom and personal strength from past struggles.",
+                "Owning the past as a source of growth rather than limitation."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,133 @@
             "id": "narrative_3",
             "title": "Mythologizing Your Life Journey",
             "description": "Rewriting personal experiences into a greater, empowering life narrative.",
-            "bulletpoints": "Archetype Integration, Symbolic Life Mapping, Self-Authoring Techniques",
+            "bulletpoints": [
+                "Framing experiences through heroic archetypes.",
+                "Using mythology to redefine struggles as rites of passage.",
+                "Crafting a personal legend that aligns with true purpose."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "narrative_4",
+            "title": "Extracting the Hidden Lesson",
+            "description": "Finding the valuable lessons in past suffering to shift perspective.",
+            "bulletpoints": [
+                "Reframing hardships as training for future challenges.",
+                "Identifying wisdom gained from past emotional struggles.",
+                "Viewing pain as an investment in future resilience."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "narrative_5",
+            "title": "Editing the Internal Script",
+            "description": "Reprogramming the subconscious story with new, empowering language.",
+            "bulletpoints": [
+                "Replacing limiting words with powerful self-affirmation.",
+                "Developing a new identity script that aligns with confidence.",
+                "Rewriting self-talk to reflect resilience and self-mastery."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "narrative_6",
+            "title": "Turning Pain into Fuel",
+            "description": "Harnessing emotional energy from past wounds to drive future success.",
+            "bulletpoints": [
+                "Using emotional charge as motivation for achievement.",
+                "Redirecting frustration into creative and intellectual breakthroughs.",
+                "Viewing past obstacles as preparation for mastery."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "narrative_7",
+            "title": "Ritual of Identity Reinvention",
+            "description": "Performing a symbolic act to mark the transformation of self-narrative.",
+            "bulletpoints": [
+                "Destroying old identity symbols to signify rebirth.",
+                "Crafting new physical tokens that reflect empowerment.",
+                "Designing a personal ritual to commit to self-transformation."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "narrative_8",
+            "title": "Overwriting Trauma Responses",
+            "description": "Using cognitive reprogramming techniques to change how past events are emotionally processed.",
+            "bulletpoints": [
+                "Replacing trauma triggers with neutral or positive associations.",
+                "Developing conscious response mechanisms for emotional rewiring.",
+                "Training the nervous system to detach from old pain cycles."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "narrative_9",
+            "title": "Aligning Personal History with Purpose",
+            "description": "Weaving past struggles into a mission-driven life path.",
+            "bulletpoints": [
+                "Finding the hidden mission within past suffering.",
+                "Integrating past pain into meaningful service or impact.",
+                "Viewing hardships as stepping stones toward life’s greater work."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "narrative_10",
+            "title": "Crafting the Future Self Narrative",
+            "description": "Writing a compelling story of who you are becoming.",
+            "bulletpoints": [
+                "Defining the ideal self and its characteristics.",
+                "Developing a narrative structure that guides future actions.",
+                "Using visualization to embody the future self in the present."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "narrative_11",
+            "title": "The Power of Repetition in Rewriting Reality",
+            "description": "Using consistent mental reinforcement to solidify a new personal history.",
+            "bulletpoints": [
+                "Practicing daily affirmations aligned with the rewritten identity.",
+                "Using repetition to replace old neural pathways with new ones.",
+                "Creating a written life manifesto for continual reinforcement."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "narrative_12",
+            "title": "Erasing Negative Imprints",
+            "description": "Removing subconscious programming that reinforces disempowering narratives.",
+            "bulletpoints": [
+                "Rewriting childhood narratives to remove internalized limitations.",
+                "Reprogramming the subconscious mind with new empowering truths.",
+                "Flipping negative memories into signs of resilience and strength."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "narrative_13",
+            "title": "Owning Your Life’s Story with Unapologetic Confidence",
+            "description": "Embracing and taking full ownership of personal history without shame.",
+            "bulletpoints": [
+                "Viewing every experience as an essential chapter in personal growth.",
+                "Refusing to let past mistakes define present identity.",
+                "Standing in full authority over personal history and transformation."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

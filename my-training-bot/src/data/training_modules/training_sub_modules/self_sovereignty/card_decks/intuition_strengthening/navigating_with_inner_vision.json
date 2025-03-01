@@ -11,7 +11,11 @@
             "id": "inner_vision_1",
             "title": "Trusting Your First Instinct",
             "description": "Exercises to train and validate initial gut reactions as accurate decision-making tools.",
-            "bulletpoints": "Rapid Decision Drills, Emotion vs. Intuition Distinction, Subconscious Affirmation Techniques",
+            "bulletpoints": [
+                "Rapid decision drills strengthen instinctive accuracy under pressure.",
+                "Emotion vs. intuition distinction clarifies the difference between reaction and deep knowing.",
+                "Subconscious affirmation techniques rewire internal trust in first impressions."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "inner_vision_2",
             "title": "Developing Intuitive Problem-Solving",
             "description": "Integrating logic and intuition to make faster, more accurate decisions.",
-            "bulletpoints": "Balancing Rational and Intuitive Thinking, Non-Linear Problem Solving, Deep Insight Training",
+            "bulletpoints": [
+                "Balancing rational and intuitive thinking creates a holistic decision-making approach.",
+                "Non-linear problem-solving enables breakthroughs in unexpected ways.",
+                "Deep insight training refines the ability to recognize hidden patterns and solutions."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,9 +35,97 @@
             "id": "inner_vision_3",
             "title": "Aligning with Higher Guidance",
             "description": "Learning to differentiate between higher wisdom and emotional interference.",
-            "bulletpoints": "Meditation for Divine Guidance, Identifying Authentic Intuitive Signals, Higher Self Communication",
+            "bulletpoints": [
+                "Meditation for divine guidance deepens access to intuitive downloads.",
+                "Identifying authentic intuitive signals prevents confusion from emotional noise.",
+                "Higher self communication strengthens inner clarity and direction."
+            ],
             "duration": "90",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "inner_vision_4",
+            "title": "Decoding Subtle Signals",
+            "description": "Recognizing and interpreting intuitive nudges, synchronicities, and unconscious cues.",
+            "bulletpoints": [
+                "Micro-sign recognition reveals hidden messages in everyday encounters.",
+                "Energetic shifts and gut feelings guide decisions with greater precision.",
+                "Symbol decoding enhances pattern recognition in dreams and reality."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "inner_vision_5",
+            "title": "The Art of Silent Knowing",
+            "description": "Cultivating a deep sense of awareness without external validation.",
+            "bulletpoints": [
+                "Tuning into inner silence enhances direct access to deep wisdom.",
+                "Bypassing mental chatter prevents doubt from clouding intuitive insight.",
+                "Practicing instant knowing builds confidence in decisions without external input."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "inner_vision_6",
+            "title": "Intuition as a Compass",
+            "description": "Using inner guidance to navigate relationships, career, and life choices.",
+            "bulletpoints": [
+                "Intuitive relationship mapping detects hidden dynamics and intentions.",
+                "Career alignment exercises clarify paths based on true calling.",
+                "Life path visualization strengthens long-term decision-making clarity."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "inner_vision_7",
+            "title": "Differentiating Fear from Intuition",
+            "description": "Recognizing when intuition is warning versus when fear is sabotaging.",
+            "bulletpoints": [
+                "Emotional vs. intuitive triggers clarify when instincts are accurate.",
+                "Pattern recognition helps distinguish past trauma reactions from real-time insight.",
+                "Grounding techniques reduce anxiety-driven misinterpretations."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "inner_vision_8",
+            "title": "Tuning into Frequency Shifts",
+            "description": "Detecting energy changes in environments, people, and decisions.",
+            "bulletpoints": [
+                "Reading vibrational shifts refines awareness of energetic influence.",
+                "Sensing environmental cues prevents stepping into dangerous situations.",
+                "Body scan exercises develop the ability to perceive real-time frequency fluctuations."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "inner_vision_9",
+            "title": "Training the Inner Eye",
+            "description": "Strengthening the third-eye perception for enhanced intuitive clarity.",
+            "bulletpoints": [
+                "Activating pineal gland exercises improve inner vision accuracy.",
+                "Practicing visualization techniques enhances recall and perception of symbols.",
+                "Daily intuition drills increase overall clarity in decision-making."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "inner_vision_10",
+            "title": "Mastering Spontaneous Insight",
+            "description": "Learning to trust real-time intuitive flashes and downloads.",
+            "bulletpoints": [
+                "Developing instant knowing ensures rapid and precise action in critical moments.",
+                "Strengthening neural pathways reinforces the ability to recall intuitive guidance.",
+                "Deepening synchronicity awareness enhances the ability to align with life flow."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

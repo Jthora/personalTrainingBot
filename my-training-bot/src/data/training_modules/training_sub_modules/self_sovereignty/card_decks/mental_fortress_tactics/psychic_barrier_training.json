@@ -11,7 +11,11 @@
             "id": "psychic_barrier_1",
             "title": "Constructing a Mental Shield",
             "description": "Creating a persistent, reinforced mental barrier to block external intrusions.",
-            "bulletpoints": "Mental Visualization, Thought Armor Techniques, Reinforcement Sequences",
+            "bulletpoints": [
+                "Mental visualization techniques strengthen psychic defense layers.",
+                "Thought armor techniques form a protective boundary against intrusion.",
+                "Reinforcement sequences solidify the barrier against energetic penetration."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "psychic_barrier_2",
             "title": "Neutralizing Thought Intrusion",
             "description": "Identifying and removing intrusive, implanted, or foreign thought patterns.",
-            "bulletpoints": "Recognizing External Influence, Deprogramming Mental Loops, Internal Cognitive Scrubbing",
+            "bulletpoints": [
+                "Recognizing external influence helps differentiate personal thoughts from foreign ones.",
+                "Deprogramming mental loops eliminates recurring invasive thoughts.",
+                "Internal cognitive scrubbing resets the mind to a neutral, protected state."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,8 +35,96 @@
             "id": "psychic_barrier_3",
             "title": "Defensive Energy Signatures",
             "description": "Emitting a protective psychic resonance to deter external manipulations.",
-            "bulletpoints": "Aura Reinforcement, Mental Frequency Control, Defensive Energy Projection",
+            "bulletpoints": [
+                "Aura reinforcement amplifies personal energy to create a shielding effect.",
+                "Mental frequency control stabilizes inner vibrations against external interference.",
+                "Defensive energy projection outwardly repels psychic and emotional invasions."
+            ],
             "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psychic_barrier_4",
+            "title": "The Mirror Shield Technique",
+            "description": "Projecting an energetic reflection that bounces external influences back to their source.",
+            "bulletpoints": [
+                "Reflective visualization creates an impenetrable mental mirror barrier.",
+                "Energetic feedback loops return projected negativity to its sender.",
+                "Disengagement protocols ensure the shield remains intact under stress."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psychic_barrier_5",
+            "title": "Sealing Psychic Leaks",
+            "description": "Identifying and closing energetic vulnerabilities that allow infiltration.",
+            "bulletpoints": [
+                "Aura scanning detects weaknesses and energetic openings.",
+                "Energetic mending repairs breaches in the psychic field.",
+                "Conscious emotional containment prevents accidental leaks of personal energy."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "psychic_barrier_6",
+            "title": "Silent Mind Fortress",
+            "description": "Constructing an impenetrable mental space that cannot be read or influenced.",
+            "bulletpoints": [
+                "Internal quieting removes vulnerabilities caused by overactive thought patterns.",
+                "Mental fortress visualization creates layers of psychic defense.",
+                "Neutral emotional frequency prevents resonance-based manipulation."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psychic_barrier_7",
+            "title": "Auric Camouflage",
+            "description": "Blending into energetic surroundings to avoid detection by psychic threats.",
+            "bulletpoints": [
+                "Resonance masking adjusts vibrational frequencies to mimic background energy.",
+                "Mental cloaking techniques prevent psychic tracking and remote viewing.",
+                "Intentional identity scrambling confuses energetic signatures left behind."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psychic_barrier_8",
+            "title": "Deflecting Psychic Attacks",
+            "description": "Intercepting and neutralizing hostile energetic influences before they take effect.",
+            "bulletpoints": [
+                "Energy absorption techniques redirect attacks into neutral energy.",
+                "Vibrational transmutation transforms harmful forces into beneficial energy.",
+                "Disruption fields scatter and dissolve directed psychic aggression."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psychic_barrier_9",
+            "title": "Energetic Firewall Programming",
+            "description": "Installing an automatic response system to block unwanted external influences.",
+            "bulletpoints": [
+                "Mental auto-defense scripts activate shields upon detection of intrusion.",
+                "Pre-set energetic protocols ensure immediate and consistent protection.",
+                "Adaptive barrier reinforcement evolves to counteract new threats."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psychic_barrier_10",
+            "title": "Sleep Defense and Dream Security",
+            "description": "Protecting the subconscious mind from external influence during sleep states.",
+            "bulletpoints": [
+                "Dream shielding prevents psychic invasion during vulnerable REM cycles.",
+                "Astral boundary setting establishes secure dream space control.",
+                "Lucid intervention training enables conscious defense within dream states."
+            ],
+            "duration": "75",
             "difficulty": "Advanced"
         }
     ]

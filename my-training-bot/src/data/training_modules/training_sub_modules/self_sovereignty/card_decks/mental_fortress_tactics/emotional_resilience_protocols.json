@@ -11,7 +11,11 @@
             "id": "emotional_resilience_1",
             "title": "Disrupting Emotional Hijacking",
             "description": "Techniques for breaking free from emotionally manipulative traps.",
-            "bulletpoints": "Pattern Interruption, Emotional Distance Exercises, Cognitive Overriding",
+            "bulletpoints": [
+                "Pattern interruption disrupts automatic emotional responses.",
+                "Emotional distance exercises create a mental buffer against manipulation.",
+                "Cognitive overriding replaces triggered reactions with strategic responses."
+            ],
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -19,7 +23,11 @@
             "id": "emotional_resilience_2",
             "title": "Anchoring in Emotional Neutrality",
             "description": "Stabilizing emotional responses to prevent external triggers from taking control.",
-            "bulletpoints": "Emotional Grounding, Controlled Detachment, Response Delay Training",
+            "bulletpoints": [
+                "Emotional grounding techniques help maintain inner stability.",
+                "Controlled detachment allows observation without absorption of negativity.",
+                "Response delay training prevents impulsive reactions to emotional triggers."
+            ],
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -27,8 +35,96 @@
             "id": "emotional_resilience_3",
             "title": "Unshakable Self-Identity",
             "description": "Strengthening core identity to ensure emotional resilience under extreme psychological pressure.",
-            "bulletpoints": "Sovereign Mindset Installation, Thought Shielding, Core Belief Hardening",
+            "bulletpoints": [
+                "Sovereign mindset installation reinforces internal authority and independence.",
+                "Thought shielding prevents unwanted influences from altering self-perception.",
+                "Core belief hardening stabilizes personal truth against external invalidation."
+            ],
             "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "emotional_resilience_4",
+            "title": "Emotional Firewall Installation",
+            "description": "Building mental and emotional barriers against manipulation and energy draining attacks.",
+            "bulletpoints": [
+                "Mental firewall scripting blocks intrusive emotional triggers.",
+                "Energetic shield visualization prevents empathic overload.",
+                "Cognitive compartmentalization isolates external negativity from core emotions."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "emotional_resilience_5",
+            "title": "Tactical Emotional Redirection",
+            "description": "Mastering the art of shifting emotional energy towards productive outcomes.",
+            "bulletpoints": [
+                "Redirecting anger into strategic motivation enhances resilience.",
+                "Reframing emotional pain into a learning experience strengthens adaptability.",
+                "Channeling fear into heightened awareness increases situational control."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "emotional_resilience_6",
+            "title": "The Art of Non-Reaction",
+            "description": "Mastering stillness and emotional non-responsiveness in hostile environments.",
+            "bulletpoints": [
+                "Practicing stonewall composure neutralizes emotional baiting.",
+                "Training passive observation prevents emotional entanglement.",
+                "Silent response mastery disarms psychological attacks."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "emotional_resilience_7",
+            "title": "Self-Soothing and Rapid Recovery",
+            "description": "Techniques for immediate emotional stabilization and nervous system reset.",
+            "bulletpoints": [
+                "Tactile grounding techniques rapidly calm stress responses.",
+                "Breathwork synchronization restores physiological balance.",
+                "Neurosensory redirection shifts focus away from distressing stimuli."
+            ],
+            "duration": "60",
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "emotional_resilience_8",
+            "title": "Adaptive Emotional Alchemy",
+            "description": "Transmuting negative emotions into higher-level personal empowerment.",
+            "bulletpoints": [
+                "Using frustration as fuel transforms challenges into growth opportunities.",
+                "Reframing despair into insight shifts perception from victimhood to wisdom.",
+                "Converting emotional wounds into resilience fosters inner strength."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "emotional_resilience_9",
+            "title": "Breaking Trauma-Triggered Loops",
+            "description": "Disrupting and reprogramming automatic responses tied to past emotional wounds.",
+            "bulletpoints": [
+                "Identifying trauma-linked patterns reveals subconscious programming.",
+                "Installing cognitive disruptors rewires automatic reactions.",
+                "Anchoring in present-moment reality prevents emotional relapses."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "emotional_resilience_10",
+            "title": "Fortifying Emotional Boundaries",
+            "description": "Setting and enforcing emotional limits to prevent energy depletion and manipulation.",
+            "bulletpoints": [
+                "Verbal boundary reinforcement protects against emotional intrusion.",
+                "Energetic shielding techniques prevent toxic absorption of external emotions.",
+                "Silent disengagement neutralizes emotional vampires and attention seekers."
+            ],
+            "duration": "75",
             "difficulty": "Advanced"
         }
     ]

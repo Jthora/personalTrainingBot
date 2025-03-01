@@ -1,0 +1,35 @@
+{
+    "id": "energetic_boundary_creation",
+    "name": "Energetic Boundary Creation",
+    "description": "Building strong personal energy barriers to maintain control over your psychic space.",
+    "focus": [
+        "Aura Fortification",
+        "Personal Energy Management"
+    ],
+    "cards": [
+        {
+            "id": "boundary_1",
+            "title": "Strengthening the Auric Field",
+            "description": "Exercises to reinforce the energetic shield surrounding your body.",
+            "bulletpoints": "Aura Expansion, Frequency Stabilization, Light Barrier Meditation",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "boundary_2",
+            "title": "Sealing Energy Leaks",
+            "description": "Detecting and repairing vulnerabilities in your energy field to prevent depletion.",
+            "bulletpoints": "Energy Leak Identification, Repair Techniques, Self-Containment Training",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "boundary_3",
+            "title": "Shielding Against Intrusive Energies",
+            "description": "Creating psychic walls that block external energy intrusions and unwanted influences.",
+            "bulletpoints": "Protective Visualization, Elemental Barrier Invocation, Etheric Reinforcement Methods",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": "red_flag_detection",
+    "name": "Red Flag Detection",
+    "description": "Identifying early warning signs of manipulative individuals and toxic social structures before they can entrap you.",
+    "focus": [
+        "Behavioral Pattern Recognition",
+        "Preemptive Toxicity Avoidance"
+    ],
+    "cards": [
+        {
+            "id": "red_flag_1",
+            "title": "Recognizing Social Manipulators",
+            "description": "Spotting individuals who exhibit toxic, controlling, or deceptive behaviors.",
+            "bulletpoints": "Narcissistic Traits, Gaslighting Indicators, Love-Bombing and Trauma Bonding",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "red_flag_2",
+            "title": "Assessing Group Power Dynamics",
+            "description": "Understanding social hierarchies and how manipulation flows within them.",
+            "bulletpoints": "Spotting Enablers, Identifying False Authority Figures, Power Shift Indicators",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "red_flag_3",
+            "title": "Detecting Covert Psychological Warfare",
+            "description": "Recognizing subtle techniques used to pressure, coerce, or manipulate in social settings.",
+            "bulletpoints": "Microaggressions, Social Isolation Tactics, Fear-Based Control Mechanisms",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

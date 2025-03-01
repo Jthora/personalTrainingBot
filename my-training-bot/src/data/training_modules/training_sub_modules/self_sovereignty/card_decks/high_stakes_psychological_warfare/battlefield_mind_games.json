@@ -1,0 +1,35 @@
+{
+    "id": "battlefield_mind_games",
+    "name": "Battlefield Mind Games",
+    "description": "High-level psychological combat techniques for countering deception, intimidation, and manipulation in real-time.",
+    "focus": [
+        "Psychological Warfare Tactics",
+        "Crisis-Level Mind Games"
+    ],
+    "cards": [
+        {
+            "id": "mind_games_1",
+            "title": "Detecting and Countering Intimidation Tactics",
+            "description": "Understanding and reversing psychological intimidation strategies.",
+            "bulletpoints": "Breaking Fear-Based Control, Recognizing Subconscious Threat Cues, Overriding Social Pressure",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mind_games_2",
+            "title": "Cold Reading and Information Extraction",
+            "description": "Analyzing microexpressions, speech patterns, and subconscious signals to extract intel.",
+            "bulletpoints": "Microexpression Analysis, Situational Intelligence Gathering, Strategic Questioning",
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mind_games_3",
+            "title": "Disrupting Psychological Warfare Attacks",
+            "description": "Techniques for neutralizing gaslighting, manipulation, and social engineering in real time.",
+            "bulletpoints": "Cognitive Pattern Breakers, Instant Role Reversals, Conversational Redirection",
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

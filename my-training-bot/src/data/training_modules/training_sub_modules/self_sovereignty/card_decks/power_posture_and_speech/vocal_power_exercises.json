@@ -1,0 +1,35 @@
+{
+    "id": "vocal_power_exercises",
+    "name": "Vocal Power Exercises",
+    "description": "Training the voice to convey authority, resonance, and persuasive influence in speech.",
+    "focus": [
+        "Vocal Depth Training",
+        "Persuasive Tonal Mastery"
+    ],
+    "cards": [
+        {
+            "id": "vocal_1",
+            "title": "Deepening and Strengthening Vocal Tone",
+            "description": "Exercises to lower pitch, expand resonance, and project with controlled force.",
+            "bulletpoints": "Diaphragmatic Breathing, Vocal Cord Strengthening, Resonance Amplification",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "vocal_2",
+            "title": "Commanding Speech Cadence",
+            "description": "Training in deliberate pacing, pause utilization, and tonal shifts for maximum influence.",
+            "bulletpoints": "Strategic Silence, Pausing for Effect, Rhythm Variation Techniques",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "vocal_3",
+            "title": "The Subconscious Impact of Word Emphasis",
+            "description": "Techniques for controlling the emotional and cognitive effect of speech through emphasis and inflection.",
+            "bulletpoints": "Power Word Placement, Emotive Resonance, Tonal Layering",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

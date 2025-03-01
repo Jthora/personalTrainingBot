@@ -1,0 +1,35 @@
+{
+    "id": "spiritual_cleansing_protocols",
+    "name": "Spiritual Cleansing Protocols",
+    "description": "Deep-cleansing techniques to detoxify the body, mind, and spirit from lingering energetic attachments.",
+    "focus": [
+        "Energetic Detox",
+        "Mental and Spiritual Purification"
+    ],
+    "cards": [
+        {
+            "id": "cleanse_1",
+            "title": "The Salt and Smoke Purge",
+            "description": "Using salt and sacred smoke to purify spaces, objects, and personal energy fields.",
+            "bulletpoints": "Salt Barrier Creation, Smudging Techniques, Air Elemental Purification",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "cleanse_2",
+            "title": "Spiritual Bathing Rituals",
+            "description": "Harnessing water and minerals to cleanse energetic toxins from the body.",
+            "bulletpoints": "Herbal Infusions, Moon and Sun Water Charging, Frequency-Based Water Cleansing",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cleanse_3",
+            "title": "Full Moon and Solar Purification",
+            "description": "Using lunar and solar energies to recharge and purify the energetic body.",
+            "bulletpoints": "Moonlight Absorption, Solar Vitalization, Chakra Rebalancing with Celestial Energies",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

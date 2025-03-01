@@ -1,0 +1,35 @@
+{
+    "id": "psychic_barrier_training",
+    "name": "Psychic Barrier Training",
+    "description": "Developing mental shielding techniques against thought intrusion, psychic attacks, and emotional infiltration.",
+    "focus": [
+        "Mind Shielding",
+        "Energetic Defense"
+    ],
+    "cards": [
+        {
+            "id": "psychic_barrier_1",
+            "title": "Constructing a Mental Shield",
+            "description": "Creating a persistent, reinforced mental barrier to block external intrusions.",
+            "bulletpoints": "Mental Visualization, Thought Armor Techniques, Reinforcement Sequences",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "psychic_barrier_2",
+            "title": "Neutralizing Thought Intrusion",
+            "description": "Identifying and removing intrusive, implanted, or foreign thought patterns.",
+            "bulletpoints": "Recognizing External Influence, Deprogramming Mental Loops, Internal Cognitive Scrubbing",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psychic_barrier_3",
+            "title": "Defensive Energy Signatures",
+            "description": "Emitting a protective psychic resonance to deter external manipulations.",
+            "bulletpoints": "Aura Reinforcement, Mental Frequency Control, Defensive Energy Projection",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "id": "mental_fortress_tactics",
+    "name": "Mental Fortress Tactics",
+    "description": "Building an unbreakable mindset resistant to psychological manipulation, intrusive thoughts, and emotional hijacking.",
+    "difficulty": "Advanced",
+    "estimated_time": "6-18 months",
+    "focus": [
+        "Cognitive Immunity to Gaslighting",
+        "Psychic Shielding Against Thought Intrusion",
+        "Emotional Reframing Techniques"
+    ],
+    "cardDecks": [
+        "gaslighting_countermeasures",
+        "psychic_barrier_training",
+        "emotional_resilience_protocols"
+    ]
+}

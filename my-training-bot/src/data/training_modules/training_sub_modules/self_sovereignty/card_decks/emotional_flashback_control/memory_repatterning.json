@@ -1,0 +1,35 @@
+{
+    "id": "memory_repatterning",
+    "name": "Memory Repatterning",
+    "description": "Techniques to disrupt negative thought loops and reframe past trauma memories.",
+    "focus": [
+        "Cognitive Reframing",
+        "Neural Pattern Interruption"
+    ],
+    "cards": [
+        {
+            "id": "memory_repatterning_1",
+            "title": "Reality Check Exercises",
+            "description": "Training the mind to differentiate between past trauma and present safety.",
+            "bulletpoints": "Present vs. Past Awareness, Safe Space Visualization, Affirmation Training",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "memory_repatterning_2",
+            "title": "Memory Rewriting Techniques",
+            "description": "Altering emotional associations tied to traumatic memories.",
+            "bulletpoints": "Guided Imagery, Reverse Trauma Narratives, Emotional Charge Reduction",
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "memory_repatterning_3",
+            "title": "Symbolic Replacement Therapy",
+            "description": "Replacing painful memory symbols with empowering or neutral ones.",
+            "bulletpoints": "Mental Imagery Substitution, Ritualistic Memory Rewriting, Metaphor Reprocessing",
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": "narrative_reframing",
+    "name": "Narrative Reframing",
+    "description": "Rewriting personal history by shifting the meaning of past trauma to serve a higher purpose.",
+    "focus": [
+        "Cognitive Reframing",
+        "Rewriting Personal History"
+    ],
+    "cards": [
+        {
+            "id": "narrative_1",
+            "title": "Identifying the Existing Trauma Narrative",
+            "description": "Bringing awareness to the unconscious stories being repeated about past pain.",
+            "bulletpoints": "Mapping Trauma Perception, Recognizing Limiting Storylines, Identifying Negative Loops",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "narrative_2",
+            "title": "Transforming the Victim Mindset",
+            "description": "Recasting yourself as the hero rather than the victim in your life’s story.",
+            "bulletpoints": "Power Identity Shift, Heroic Perspective Installation, Ownership of Past Events",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "narrative_3",
+            "title": "Mythologizing Your Life Journey",
+            "description": "Rewriting personal experiences into a greater, empowering life narrative.",
+            "bulletpoints": "Archetype Integration, Symbolic Life Mapping, Self-Authoring Techniques",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

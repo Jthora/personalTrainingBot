@@ -1,0 +1,35 @@
+{
+    "id": "rewriting_life_narratives",
+    "name": "Rewriting Life Narratives",
+    "description": "Reprogramming limiting beliefs and reconstructing a personal story centered on sovereignty and self-empowerment.",
+    "focus": [
+        "Identity Reinvention",
+        "Eliminating Learned Helplessness"
+    ],
+    "cards": [
+        {
+            "id": "narrative_1",
+            "title": "Deconstructing the False Self",
+            "description": "Identifying and dismantling the stories and labels imposed by external influences.",
+            "bulletpoints": "Recognizing Limiting Scripts, Cognitive Reframing, Separating Identity from Conditioning",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "narrative_2",
+            "title": "Crafting a New Personal Mythology",
+            "description": "Rewriting self-perception and personal history to align with sovereignty and empowerment.",
+            "bulletpoints": "Mythological Framing, Story Reinforcement Techniques, Psychological Archetype Adoption",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "narrative_3",
+            "title": "Anchoring the Sovereign Identity",
+            "description": "Establishing thought patterns and mental anchors that reinforce an unshakable self-concept.",
+            "bulletpoints": "Mantra-Based Reinforcement, Reality Validation Exercises, Behavioral Alignment",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

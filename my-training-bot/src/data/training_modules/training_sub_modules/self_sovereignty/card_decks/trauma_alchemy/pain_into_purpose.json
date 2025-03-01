@@ -1,0 +1,35 @@
+{
+    "id": "pain_into_purpose",
+    "name": "Pain into Purpose",
+    "description": "Channeling past hardships into a meaningful mission or life pursuit that fuels motivation and success.",
+    "focus": [
+        "Creating Meaning from Trauma",
+        "Aligning with a Greater Purpose"
+    ],
+    "cards": [
+        {
+            "id": "purpose_1",
+            "title": "Finding the Message in the Pain",
+            "description": "Extracting deep insights and wisdom from past struggles.",
+            "bulletpoints": "Decoding Life Lessons, Understanding Spiritual Growth, Recognizing Patterns of Evolution",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "purpose_2",
+            "title": "Using Trauma as Fuel for Mastery",
+            "description": "Redirecting emotional energy into focused skill-building and personal transformation.",
+            "bulletpoints": "Emotional Focus Training, Creative and Physical Alchemy, Channeling Pain into Expertise",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "purpose_3",
+            "title": "Establishing a Legacy from Suffering",
+            "description": "Turning personal hardships into a lasting impact or mission that benefits others.",
+            "bulletpoints": "Creating a Life Mission, Sharing Wisdom with Others, Structuring a Legacy Project",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": "ancestral_pattern_identification",
+    "name": "Ancestral Pattern Identification",
+    "description": "Recognizing inherited psychological, energetic, and behavioral patterns that contribute to generational cycles of trauma.",
+    "focus": [
+        "Family Conditioning Awareness",
+        "Generational Trauma Mapping"
+    ],
+    "cards": [
+        {
+            "id": "ancestral_1",
+            "title": "Mapping Your Ancestral Influences",
+            "description": "Tracing familial patterns to identify inherited psychological and energetic influences.",
+            "bulletpoints": "Family Behavioral Analysis, Trauma Lineage Tracking, Generational Energy Recognition",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "ancestral_2",
+            "title": "Uncovering Hidden Family Beliefs",
+            "description": "Detecting and analyzing subconscious narratives passed down through generations.",
+            "bulletpoints": "Cultural Programming Awareness, Shadow Work on Inherited Beliefs, Family Narrative Decoding",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ancestral_3",
+            "title": "Breaking the Cycle of Psychological Conditioning",
+            "description": "Techniques for dismantling destructive family behaviors and installing new mental frameworks.",
+            "bulletpoints": "Cognitive Reframing, Internal Boundary Setting, Behavioral Disruption Strategies",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

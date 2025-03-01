@@ -1,0 +1,35 @@
+{
+    "id": "nonverbal_authority_signals",
+    "name": "Nonverbal Authority Signals",
+    "description": "Leveraging nonverbal cues to command respect, deflect challenges, and project unshakable confidence.",
+    "focus": [
+        "Subconscious Dominance Cues",
+        "Silent Social Influence"
+    ],
+    "cards": [
+        {
+            "id": "nonverbal_1",
+            "title": "The Power of Stillness",
+            "description": "Mastering controlled stillness to create an aura of confidence and stability.",
+            "bulletpoints": "Reducing Unnecessary Movement, Deliberate Gestures, Tactical Pauses",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "nonverbal_2",
+            "title": "The Art of Taking Up Space",
+            "description": "Using strategic positioning and expansion to assert authority in any room.",
+            "bulletpoints": "Open vs. Closed Body Language, Spatial Control, Territory Ownership Signals",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "nonverbal_3",
+            "title": "Hand Gestures and Silent Commands",
+            "description": "Using precise hand movements and gestures to reinforce communication and control interactions.",
+            "bulletpoints": "Minimalist Hand Gestures, Micro-Movements for Emphasis, Psychological Anchors in Gestures",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

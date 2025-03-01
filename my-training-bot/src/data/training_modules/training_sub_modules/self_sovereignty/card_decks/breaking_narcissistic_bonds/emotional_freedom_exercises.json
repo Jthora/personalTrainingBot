@@ -1,0 +1,35 @@
+{
+    "id": "emotional_freedom_exercises",
+    "name": "Emotional Freedom Exercises",
+    "description": "Techniques for rewiring emotional responses and reinforcing personal sovereignty.",
+    "focus": [
+        "Emotional Reprogramming",
+        "Self-Healing"
+    ],
+    "cards": [
+        {
+            "id": "emotional_freedom_1",
+            "title": "Breaking Trauma Bonds",
+            "description": "Dismantling the psychological and biochemical dependencies formed through narcissistic abuse.",
+            "bulletpoints": "Understanding Trauma Bonding, Dopamine Detox, Cognitive Reframing",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "emotional_freedom_2",
+            "title": "Reclaiming the Emotional Self",
+            "description": "Exercises to reconnect with authentic emotions and develop emotional sovereignty.",
+            "bulletpoints": "Journaling for Emotional Clarity, Emotional Regulation Drills, Developing Emotional Independence",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "emotional_freedom_3",
+            "title": "Rewiring Thought Patterns",
+            "description": "Techniques to disrupt negative self-talk and reprogram limiting beliefs installed by narcissists.",
+            "bulletpoints": "Interrupting Self-Sabotage, Neural Reconditioning, Affirmation Rebuilding",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

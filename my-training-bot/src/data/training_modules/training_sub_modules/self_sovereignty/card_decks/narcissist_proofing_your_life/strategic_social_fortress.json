@@ -1,0 +1,35 @@
+{
+    "id": "strategic_social_fortress",
+    "name": "Strategic Social Fortress",
+    "description": "Creating a personal and social environment that naturally repels narcissists while attracting healthy relationships.",
+    "focus": [
+        "Social Environment Engineering",
+        "Manipulation-Proof Lifestyle Design"
+    ],
+    "cards": [
+        {
+            "id": "social_fort_1",
+            "title": "Setting Up Narcissist Barriers",
+            "description": "Building invisible social and psychological boundaries that narcissists instinctively avoid.",
+            "bulletpoints": "Boundary Enforcement Systems, Personal Presence Calibration, Narcissist-Repellent Social Cues",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "social_fort_2",
+            "title": "Selecting High-Value Connections",
+            "description": "Surrounding yourself with strong, self-aware individuals who amplify your emotional security.",
+            "bulletpoints": "Friendship Vetting Techniques, High-Trust Relationship Filtering, Cultivating a Strong Support Network",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "social_fort_3",
+            "title": "Mastering Narcissist Repellent Communication",
+            "description": "Speaking in a way that signals strength, clarity, and non-manipulability to deter narcissists.",
+            "bulletpoints": "High-Value Communication Style, Non-Emotional Responses, Tactical Social Calibration",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": "object_purging_methods",
+    "name": "Object Purging Methods",
+    "description": "Techniques for removing objects, artifacts, and personal items that energetically bind you to toxic people and past traumas.",
+    "focus": [
+        "Symbolic Object Removal",
+        "Energy Purification"
+    ],
+    "cards": [
+        {
+            "id": "purge_1",
+            "title": "Identifying Energy-Binding Objects",
+            "description": "Detecting physical items that hold negative energetic imprints from past relationships or events.",
+            "bulletpoints": "Energetic Residue Scanning, Object Sensory Testing, Memory Anchoring Recognition",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "purge_2",
+            "title": "The Fire and Water Ritual",
+            "description": "Using fire and water as elemental forces to break energy bonds within physical objects.",
+            "bulletpoints": "Flame Purification, Water Submersion Cleansing, Elemental Energy Reprogramming",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "purge_3",
+            "title": "Burial and Earth Absorption",
+            "description": "Returning objects to the earth to neutralize and absorb residual energetic imprints.",
+            "bulletpoints": "Sacred Ground Selection, Burial Ceremony, Earth Reclaiming Invocation",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

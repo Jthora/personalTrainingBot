@@ -1,0 +1,17 @@
+{
+    "id": "power_posture_and_speech",
+    "name": "Power Posture and Speech",
+    "description": "Training the body and voice to radiate authority, confidence, and psychological dominance in any interaction.",
+    "difficulty": "Intermediate",
+    "estimated_time": "3-9 months",
+    "focus": [
+        "Dominance and Presence",
+        "Commanding Vocal Tonality",
+        "Nonverbal Influence"
+    ],
+    "cardDecks": [
+        "alpha_posture_training",
+        "vocal_power_exercises",
+        "nonverbal_authority_signals"
+    ]
+}

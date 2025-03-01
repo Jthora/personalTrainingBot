@@ -1,0 +1,17 @@
+{
+    "id": "gaslighting_defense",
+    "name": "Gaslighting Defense",
+    "description": "Mastering techniques to detect and neutralize gaslighting attacks in real time.",
+    "difficulty": "Advanced",
+    "estimated_time": "6-12 months",
+    "focus": [
+        "Pattern Recognition",
+        "Cognitive Anchoring",
+        "Counter-Gaslighting Strategies"
+    ],
+    "cardDecks": [
+        "logical_self_trust",
+        "spotting_toxic_patterns",
+        "verbal_self_defense"
+    ]
+}

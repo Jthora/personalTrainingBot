@@ -1,0 +1,35 @@
+{
+    "id": "no_contact_protocols",
+    "name": "No Contact Protocols",
+    "description": "Establishing and maintaining complete disconnection from narcissistic individuals.",
+    "focus": [
+        "Boundary Enforcement",
+        "Psychological Detox"
+    ],
+    "cards": [
+        {
+            "id": "no_contact_1",
+            "title": "The No-Contact Rule",
+            "description": "Understanding the necessity and mechanics of going no-contact with a narcissist.",
+            "bulletpoints": "Why No-Contact Works, Stages of Emotional Withdrawal, Dealing with Guilt and Doubt",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "no_contact_2",
+            "title": "Handling Flying Monkeys",
+            "description": "Identifying and neutralizing enablers sent by the narcissist to break your defenses.",
+            "bulletpoints": "Psychological Warfare Tactics, Strategic Deflection, Gray Rock Method",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "no_contact_3",
+            "title": "Information Control & Digital Boundaries",
+            "description": "Eliminating digital footprints and vulnerabilities narcissists exploit.",
+            "bulletpoints": "Social Media Lockdown, Digital Privacy Tactics, Strategic Communication Blackouts",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

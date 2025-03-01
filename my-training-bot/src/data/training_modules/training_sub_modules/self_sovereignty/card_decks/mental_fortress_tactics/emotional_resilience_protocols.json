@@ -1,0 +1,35 @@
+{
+    "id": "emotional_resilience_protocols",
+    "name": "Emotional Resilience Protocols",
+    "description": "Training to maintain emotional stability and override external influence.",
+    "focus": [
+        "Emotional Detachment Training",
+        "Crisis Stability Techniques"
+    ],
+    "cards": [
+        {
+            "id": "emotional_resilience_1",
+            "title": "Disrupting Emotional Hijacking",
+            "description": "Techniques for breaking free from emotionally manipulative traps.",
+            "bulletpoints": "Pattern Interruption, Emotional Distance Exercises, Cognitive Overriding",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "emotional_resilience_2",
+            "title": "Anchoring in Emotional Neutrality",
+            "description": "Stabilizing emotional responses to prevent external triggers from taking control.",
+            "bulletpoints": "Emotional Grounding, Controlled Detachment, Response Delay Training",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "emotional_resilience_3",
+            "title": "Unshakable Self-Identity",
+            "description": "Strengthening core identity to ensure emotional resilience under extreme psychological pressure.",
+            "bulletpoints": "Sovereign Mindset Installation, Thought Shielding, Core Belief Hardening",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

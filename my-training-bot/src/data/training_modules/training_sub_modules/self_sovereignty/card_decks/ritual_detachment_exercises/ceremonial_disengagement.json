@@ -1,0 +1,35 @@
+{
+    "id": "ceremonial_disengagement",
+    "name": "Ceremonial Disengagement",
+    "description": "Ritualistic practices to sever emotional, spiritual, and mental bonds with toxic individuals and influences.",
+    "focus": [
+        "Energetic Cord Cutting",
+        "Spiritual Liberation"
+    ],
+    "cards": [
+        {
+            "id": "ceremonial_1",
+            "title": "The Severance Ritual",
+            "description": "Performing a structured ritual to cut psychic and emotional ties to harmful relationships.",
+            "bulletpoints": "Cord Cutting Invocation, Energy Release Visualization, Grounding After Severance",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ceremonial_2",
+            "title": "The Mirror Reflection Technique",
+            "description": "Using mirrored energy projection to neutralize emotional and psychic attachments.",
+            "bulletpoints": "Reflective Visualization, Emotional Transmutation, Psychic Shielding Integration",
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ceremonial_3",
+            "title": "Rewriting the Soul Contract",
+            "description": "Revoking subconscious agreements that keep toxic patterns in place.",
+            "bulletpoints": "Affirmation-Based Deprogramming, Soul Contract Nullification, Ritual of Rebirth",
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

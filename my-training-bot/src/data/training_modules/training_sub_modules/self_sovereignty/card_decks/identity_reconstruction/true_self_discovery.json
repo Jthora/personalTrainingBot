@@ -1,0 +1,35 @@
+{
+    "id": "true_self_discovery",
+    "name": "True Self Discovery",
+    "description": "Uncovering and embracing your authentic self beyond external programming and conditioning.",
+    "focus": [
+        "Personal Identity Mapping",
+        "Self-Authenticity Exploration"
+    ],
+    "cards": [
+        {
+            "id": "self_discovery_1",
+            "title": "Unmasking the Conditioned Self",
+            "description": "Identifying behaviors, beliefs, and thought patterns imposed by external influences.",
+            "bulletpoints": "Societal Programming Awareness, Parental Influence Assessment, Emotional Self-Audit",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "self_discovery_2",
+            "title": "Rediscovering Your Core Identity",
+            "description": "Aligning with your innate personality, values, and unique strengths.",
+            "bulletpoints": "Core Value Identification, Strengths and Talents Exploration, Personal Authenticity Exercises",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "self_discovery_3",
+            "title": "Building a New Internal Narrative",
+            "description": "Creating a self-affirming personal identity framework based on your true self.",
+            "bulletpoints": "Positive Self-Definition, Identity Affirmation Rituals, Confidence Calibration",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

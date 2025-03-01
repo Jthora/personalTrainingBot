@@ -1,0 +1,17 @@
+{
+    "id": "psychic_energy_shielding",
+    "name": "Psychic Energy Shielding",
+    "description": "Developing and maintaining energetic barriers to protect against manipulative influences, psychic attacks, and energy drain.",
+    "difficulty": "Advanced",
+    "estimated_time": "6-18 months",
+    "focus": [
+        "Aura Strengthening",
+        "Psychic Self-Defense",
+        "Energy Drain Prevention"
+    ],
+    "cardDecks": [
+        "energetic_boundary_creation",
+        "mirror_shielding_techniques",
+        "warding_against_energy_vampires"
+    ]
+}

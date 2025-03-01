@@ -1,0 +1,35 @@
+{
+    "id": "covert_influence_tactics",
+    "name": "Covert Influence Tactics",
+    "description": "Techniques for strategically influencing and controlling high-risk social environments.",
+    "focus": [
+        "Psychological Manipulation Resistance",
+        "Tactical Social Influence"
+    ],
+    "cards": [
+        {
+            "id": "covert_influence_1",
+            "title": "Mirroring and Neural Synchronization",
+            "description": "Using subtle body language and speech mirroring to establish control over interactions.",
+            "bulletpoints": "Neural Matching, Covert Rapport Building, Subconscious Influence Techniques",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "covert_influence_2",
+            "title": "Framing and Narrative Control",
+            "description": "Reframing conversations and narratives to direct perception and social outcomes.",
+            "bulletpoints": "Storytelling as a Manipulation Tool, Control Over Interpretations, Redirecting Group Perception",
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "covert_influence_3",
+            "title": "Strategic Vulnerability Projection",
+            "description": "Appearing weak to lower defenses while secretly positioning for a power play.",
+            "bulletpoints": "The Art of Underestimation, Psychological Misdirection, Reverse Gaslighting",
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

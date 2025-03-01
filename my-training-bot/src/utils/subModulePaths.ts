@@ -112,5 +112,20 @@ export const subModulePaths: { [key: string]: () => Promise<any> } = {
     web_three_decentralized_identity_and_privacy: () => import("../data/training_modules/training_sub_modules/web_three/decentralized_identity_and_privacy.json"),
     web_three_smart_contract_development: () => import("../data/training_modules/training_sub_modules/web_three/smart_contract_development.json"),
     web_three_tokenomics_and_defi: () => import("../data/training_modules/training_sub_modules/web_three/tokenomics_and_defi.json"),
-    web_three_web_three_security_and_auditing: () => import("../data/training_modules/training_sub_modules/web_three/web_three_security_and_auditing.json")
+    web_three_web_three_security_and_auditing: () => import("../data/training_modules/training_sub_modules/web_three/web_three_security_and_auditing.json"),
+    self_sovereignty_breaking_narcissistic_bonds: () => import("../data/training_modules/training_sub_modules/self_sovereignty/breaking_narcissistic_bonds.json"),
+    self_sovereignty_emotional_flashback_control: () => import("../data/training_modules/training_sub_modules/self_sovereignty/emotional_flashback_control.json"),
+    self_sovereignty_gaslighting_defense: () => import("../data/training_modules/training_sub_modules/self_sovereignty/gaslighting_defense.json"),
+    self_sovereignty_generational_curse_breaking: () => import("../data/training_modules/training_sub_modules/self_sovereignty/generational_curse_breaking.json"),
+    self_sovereignty_high_stakes_psychological_warfare: () => import("../data/training_modules/training_sub_modules/self_sovereignty/high_stakes_psychological_warfare.json"),
+    self_sovereignty_identity_reconstruction: () => import("../data/training_modules/training_sub_modules/self_sovereignty/identity_reconstruction.json"),
+    self_sovereignty_intuition_strengthening: () => import("../data/training_modules/training_sub_modules/self_sovereignty/intuition_strengthening.json"),
+    self_sovereignty_mental_fortress_tactics: () => import("../data/training_modules/training_sub_modules/self_sovereignty/mental_fortress_tactics.json"),
+    self_sovereignty_narcissist_proofing_your_life: () => import("../data/training_modules/training_sub_modules/self_sovereignty/narcissist_proofing_your_life.json"),
+    self_sovereignty_power_posture_and_speech: () => import("../data/training_modules/training_sub_modules/self_sovereignty/power_posture_and_speech.json"),
+    self_sovereignty_psychic_energy_shielding: () => import("../data/training_modules/training_sub_modules/self_sovereignty/psychic_energy_shielding.json"),
+    self_sovereignty_ritual_detachment_exercises: () => import("../data/training_modules/training_sub_modules/self_sovereignty/ritual_detachment_exercises.json"),
+    self_sovereignty_sovereign_mindset_programming: () => import("../data/training_modules/training_sub_modules/self_sovereignty/sovereign_mindset_programming.json"),
+    self_sovereignty_strategic_social_disengagement: () => import("../data/training_modules/training_sub_modules/self_sovereignty/strategic_social_disengagement.json"),
+    self_sovereignty_trauma_alchemy: () => import("../data/training_modules/training_sub_modules/self_sovereignty/trauma_alchemy.json")
 };

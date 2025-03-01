@@ -1,0 +1,17 @@
+{
+    "id": "emotional_flashback_control",
+    "name": "Emotional Flashback Control",
+    "description": "Techniques for managing and disrupting emotional flashbacks caused by past trauma.",
+    "difficulty": "Intermediate",
+    "estimated_time": "4-8 months",
+    "focus": [
+        "Grounding Techniques",
+        "Pattern Interruption",
+        "Emotional Reprogramming"
+    ],
+    "cardDecks": [
+        "flashback_grounding_methods",
+        "memory_repatterning",
+        "emotional_resilience_exercises"
+    ]
+}

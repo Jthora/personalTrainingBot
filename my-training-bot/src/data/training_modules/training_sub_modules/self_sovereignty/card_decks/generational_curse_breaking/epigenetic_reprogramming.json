@@ -1,0 +1,35 @@
+{
+    "id": "epigenetic_reprogramming",
+    "name": "Epigenetic Reprogramming",
+    "description": "Techniques for altering inherited psychological and biological predispositions through intentional mental and energetic reprogramming.",
+    "focus": [
+        "Neural Pathway Rewiring",
+        "Genetic-Level Mindset Transformation"
+    ],
+    "cards": [
+        {
+            "id": "epigenetics_1",
+            "title": "Identifying Biological and Psychological Inheritance",
+            "description": "Recognizing the impact of ancestral trauma and genetic memory on personal behaviors and thought patterns.",
+            "bulletpoints": "Inherited Trauma Recognition, Behavioral Loop Analysis, Genetic Response Patterns",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "epigenetics_2",
+            "title": "Reprogramming Cellular Memory",
+            "description": "Using affirmations, meditation, and visualization to alter inherited cellular-level responses to trauma.",
+            "bulletpoints": "Mind-Body Synchronization, Cellular Healing Techniques, Memory Reconditioning Exercises",
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "epigenetics_3",
+            "title": "Installing a New Generational Code",
+            "description": "Establishing a fresh mental and energetic blueprint that transcends past familial limitations.",
+            "bulletpoints": "Intentional Thought Engineering, Ancestral Lineage Healing, Future Generational Programming",
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": "narcissist_disarmament",
+    "name": "Narcissist Disarmament",
+    "description": "Strategies to neutralize, disarm, and outmaneuver narcissistic manipulators in high-risk interactions.",
+    "focus": [
+        "Defensive Tactics",
+        "Breaking Narcissistic Control"
+    ],
+    "cards": [
+        {
+            "id": "narc_disarm_1",
+            "title": "Identifying Weak Points in a Narcissist’s Armor",
+            "description": "Understanding the vulnerabilities of narcissistic manipulators and how to leverage them.",
+            "bulletpoints": "Narcissistic Supply Starvation, Ego Vulnerabilities, Strategic Emotional Detachment",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "narc_disarm_2",
+            "title": "Reversing the Power Dynamic",
+            "description": "Tactics to shift control away from a manipulator and regain strategic advantage.",
+            "bulletpoints": "Psychological Role Reversal, Disrupting Manipulation Scripts, Forced Narcissistic Exposure",
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "narc_disarm_3",
+            "title": "Weaponizing the Gray Rock Method",
+            "description": "Advanced use of emotional disengagement to dismantle a narcissist’s influence.",
+            "bulletpoints": "Zero Emotional Response Training, Psychological Shutdown Techniques, Deprivation-Based Control",
+            "duration": "60",
+            "difficulty": "Advanced"
+        }
+    ]
+}

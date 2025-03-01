@@ -1,0 +1,35 @@
+{
+    "id": "cord_cutting_rituals",
+    "name": "Cord Cutting Rituals",
+    "description": "Severing energetic and subconscious attachments to toxic individuals.",
+    "focus": [
+        "Energetic Detachment",
+        "Spiritual Reclamation"
+    ],
+    "cards": [
+        {
+            "id": "cord_cutting_1",
+            "title": "Visualizing the Energetic Cords",
+            "description": "Techniques to perceive and map out emotional and psychic connections.",
+            "bulletpoints": "Energetic Mapping, Aura Perception, Subconscious Bond Awareness",
+            "duration": "45",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "cord_cutting_2",
+            "title": "The Cord Severance Ritual",
+            "description": "Performing a structured ritual to cut emotional and psychic ties.",
+            "bulletpoints": "Ritual Tools and Methods, Invocation and Release, Post-Severance Grounding",
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cord_cutting_3",
+            "title": "Shielding Against Reattachment",
+            "description": "Reinforcing protective barriers to prevent reestablishment of toxic connections.",
+            "bulletpoints": "Energetic Shielding, Thought Form Management, Psychological Blockades",
+            "duration": "60",
+            "difficulty": "Advanced"
+        }
+    ]
+}

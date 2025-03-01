@@ -1,0 +1,35 @@
+{
+    "id": "navigating_with_inner_vision",
+    "name": "Navigating with Inner Vision",
+    "description": "Using intuitive perception to navigate personal decisions, relationships, and life path.",
+    "focus": [
+        "Self-Trust in Intuitive Perception",
+        "Inner Guidance Systems"
+    ],
+    "cards": [
+        {
+            "id": "inner_vision_1",
+            "title": "Trusting Your First Instinct",
+            "description": "Exercises to train and validate initial gut reactions as accurate decision-making tools.",
+            "bulletpoints": "Rapid Decision Drills, Emotion vs. Intuition Distinction, Subconscious Affirmation Techniques",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "inner_vision_2",
+            "title": "Developing Intuitive Problem-Solving",
+            "description": "Integrating logic and intuition to make faster, more accurate decisions.",
+            "bulletpoints": "Balancing Rational and Intuitive Thinking, Non-Linear Problem Solving, Deep Insight Training",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "inner_vision_3",
+            "title": "Aligning with Higher Guidance",
+            "description": "Learning to differentiate between higher wisdom and emotional interference.",
+            "bulletpoints": "Meditation for Divine Guidance, Identifying Authentic Intuitive Signals, Higher Self Communication",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

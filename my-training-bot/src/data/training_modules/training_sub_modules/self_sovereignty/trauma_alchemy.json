@@ -1,0 +1,17 @@
+{
+    "id": "trauma_alchemy",
+    "name": "Trauma Alchemy",
+    "description": "Transforming past pain into a source of power, resilience, and wisdom instead of allowing it to remain a weakness.",
+    "difficulty": "Advanced",
+    "estimated_time": "6-18 months",
+    "focus": [
+        "Extracting Strength from Pain",
+        "Reframing Trauma Narratives",
+        "Building Emotional Transmutation Skills"
+    ],
+    "cardDecks": [
+        "emotional_transmutation",
+        "narrative_reframing",
+        "pain_into_purpose"
+    ]
+}

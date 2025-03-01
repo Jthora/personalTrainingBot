@@ -1,0 +1,35 @@
+{
+    "id": "stealth_exit_strategies",
+    "name": "Stealth Exit Strategies",
+    "description": "Tactical methods for disengaging from toxic individuals and environments without triggering retaliation.",
+    "focus": [
+        "Non-Confrontational Social Withdrawal",
+        "Minimizing Conflict and Backlash"
+    ],
+    "cards": [
+        {
+            "id": "exit_1",
+            "title": "The Fade-Out Method",
+            "description": "Gradually disengaging from toxic people without confrontation or suspicion.",
+            "bulletpoints": "Reducing Availability, Shifting Social Circles, Controlled Disinterest Projection",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "exit_2",
+            "title": "Silent Disappearance",
+            "description": "Executing a clean and undetectable social withdrawal.",
+            "bulletpoints": "Digital and Social Media Detachment, Sudden Interest Shifts, Passive Contact Elimination",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "exit_3",
+            "title": "The Strategic Confrontation",
+            "description": "When direct confrontation is necessary, using calculated tactics to escape with minimal damage.",
+            "bulletpoints": "Verbal Boundary Enforcement, Emotional Neutrality Tactics, Non-Reactive Conflict Diffusion",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

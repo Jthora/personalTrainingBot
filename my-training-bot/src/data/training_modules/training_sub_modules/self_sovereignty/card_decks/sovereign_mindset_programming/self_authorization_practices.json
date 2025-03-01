@@ -1,0 +1,35 @@
+{
+    "id": "self_authorization_practices",
+    "name": "Self-Authorization Practices",
+    "description": "Eliminating dependence on external validation and cultivating absolute internal authority over decision-making and self-worth.",
+    "focus": [
+        "Independence from Approval",
+        "Self-Permission Mastery"
+    ],
+    "cards": [
+        {
+            "id": "self_auth_1",
+            "title": "Breaking Free from External Validation",
+            "description": "Training the mind to disconnect from seeking approval or recognition from external sources.",
+            "bulletpoints": "Recognizing Validation Loops, Developing Internal Affirmation Systems, Conscious Approval Detox",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "self_auth_2",
+            "title": "The Power of Self-Permission",
+            "description": "Learning how to internally validate choices and decisions without external reinforcement.",
+            "bulletpoints": "Establishing Inner Authority, Decision Ownership Techniques, Self-Permission Rituals",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "self_auth_3",
+            "title": "Refusing to Seek Justification",
+            "description": "Eliminating the need to explain, justify, or rationalize personal choices to others.",
+            "bulletpoints": "Boundary Enforcement Speech, Assertive Decision-Making, Psychological Disengagement from Justification",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

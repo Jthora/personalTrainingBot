@@ -1,0 +1,35 @@
+{
+    "id": "red_flag_detection",
+    "name": "Red Flag Detection",
+    "description": "Recognizing early warning signs of narcissists and manipulators before they infiltrate your life.",
+    "focus": [
+        "Behavioral Pattern Recognition",
+        "Early Warning Systems"
+    ],
+    "cards": [
+        {
+            "id": "red_flag_1",
+            "title": "Recognizing Narcissistic Microbehaviors",
+            "description": "Identifying the subtle behaviors that reveal narcissistic tendencies before full manipulation begins.",
+            "bulletpoints": "Inconsistencies in Words vs. Actions, Love-Bombing Tactics, Passive-Aggressive Control",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "red_flag_2",
+            "title": "Gaslighting and Deceptive Language",
+            "description": "Learning to identify speech patterns and language tricks that narcissists use to distort reality.",
+            "bulletpoints": "Word Salad Conversations, Blame-Shifting Phrases, Contradictory Narratives",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "red_flag_3",
+            "title": "Hidden Power Plays and Social Positioning",
+            "description": "Understanding how narcissists infiltrate social groups, workplaces, and relationships using covert influence.",
+            "bulletpoints": "Triangulation Tactics, False Humility, Social Peacocking",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

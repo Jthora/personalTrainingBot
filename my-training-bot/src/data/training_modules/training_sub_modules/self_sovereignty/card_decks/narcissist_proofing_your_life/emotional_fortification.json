@@ -1,0 +1,35 @@
+{
+    "id": "emotional_fortification",
+    "name": "Emotional Fortification",
+    "description": "Strengthening emotional resilience and creating internal defenses against psychological manipulation.",
+    "focus": [
+        "Emotional Self-Validation",
+        "Gaslighting Immunity"
+    ],
+    "cards": [
+        {
+            "id": "emotional_fort_1",
+            "title": "Building an Unshakable Emotional Core",
+            "description": "Developing internal stability so that external manipulation does not trigger self-doubt.",
+            "bulletpoints": "Self-Affirmation Exercises, Emotional Boundary Setting, Reframing Techniques",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "emotional_fort_2",
+            "title": "Neutralizing Manipulative Emotional Hooks",
+            "description": "Breaking free from emotional blackmail, guilt-tripping, and fear-based control mechanisms.",
+            "bulletpoints": "Pattern Recognition, Emotional Regulation Drills, Psychological Shielding",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "emotional_fort_3",
+            "title": "Erasing Narcissist Weak Spots",
+            "description": "Identifying personal vulnerabilities that narcissists exploit and reinforcing them with protective strategies.",
+            "bulletpoints": "Closing Psychological Loopholes, Overcoming Childhood Conditioning, Developing Tactical Indifference",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

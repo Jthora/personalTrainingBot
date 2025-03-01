@@ -1,0 +1,35 @@
+{
+    "id": "flashback_grounding_methods",
+    "name": "Flashback Grounding Methods",
+    "description": "Techniques to anchor oneself in the present moment and disrupt emotional flashbacks.",
+    "focus": [
+        "Immediate Stabilization",
+        "Sensory Anchoring"
+    ],
+    "cards": [
+        {
+            "id": "grounding_1",
+            "title": "5-4-3-2-1 Method",
+            "description": "Using the five senses to pull oneself back into the present moment.",
+            "bulletpoints": "Identifying 5 sights, 4 sounds, 3 touches, 2 smells, 1 taste",
+            "duration": "30",
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "grounding_2",
+            "title": "Breath Control and Body Awareness",
+            "description": "Using controlled breathing and physical movement to regain stability.",
+            "bulletpoints": "Box Breathing, Progressive Muscle Relaxation, Somatic Scanning",
+            "duration": "45",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "grounding_3",
+            "title": "Physical Movement as a Reset",
+            "description": "Using rapid physical motion to break the flashback state.",
+            "bulletpoints": "Jumping, Clapping, Spinning, Sudden Change of Posture",
+            "duration": "30",
+            "difficulty": "Intermediate"
+        }
+    ]
+}

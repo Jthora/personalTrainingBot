@@ -1,0 +1,35 @@
+{
+    "id": "mirror_shielding_techniques",
+    "name": "Mirror Shielding Techniques",
+    "description": "Deflecting and neutralizing negative energies, psychic attacks, and manipulative intent.",
+    "focus": [
+        "Reflective Defense",
+        "Energy Deflection"
+    ],
+    "cards": [
+        {
+            "id": "mirror_shield_1",
+            "title": "Constructing a Reflective Energy Field",
+            "description": "Training in the visualization and projection of mirrored energy shields.",
+            "bulletpoints": "Mirror Field Creation, Energy Projection Mastery, Reverse Flow Techniques",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "mirror_shield_2",
+            "title": "Rebounding Psychic Attacks",
+            "description": "Using reflection techniques to send negative energy back to its source.",
+            "bulletpoints": "Energy Reversal Practices, Psychic Mirror Alignment, Intent-Based Defense",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mirror_shield_3",
+            "title": "Camouflaging Your Energetic Signature",
+            "description": "Blending your energy to become undetectable to those attempting to psychically track or influence you.",
+            "bulletpoints": "Energy Concealment, Frequency Disguise, Subtle Field Modulation",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

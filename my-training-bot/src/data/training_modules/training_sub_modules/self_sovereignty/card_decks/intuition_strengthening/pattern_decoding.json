@@ -1,0 +1,35 @@
+{
+    "id": "pattern_decoding",
+    "name": "Pattern Decoding",
+    "description": "Training the mind to recognize, analyze, and interpret subconscious and environmental patterns.",
+    "focus": [
+        "Hidden Pattern Recognition",
+        "Predictive Intuition"
+    ],
+    "cards": [
+        {
+            "id": "pattern_decoding_1",
+            "title": "Recognizing Symbolic Messages",
+            "description": "Interpreting external and internal symbols as intuitive signals.",
+            "bulletpoints": "Dream Analysis, Synchronicity Awareness, Symbolic Associations",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "pattern_decoding_2",
+            "title": "Decoding Social and Psychological Patterns",
+            "description": "Understanding human behavior and unconscious social dynamics through intuitive pattern recognition.",
+            "bulletpoints": "Microexpression Reading, Body Language Analysis, Subtext Awareness",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "pattern_decoding_3",
+            "title": "Training Predictive Intuition",
+            "description": "Using pattern analysis to forecast potential outcomes and avoid negative timelines.",
+            "bulletpoints": "Event Trajectory Mapping, Subconscious Cue Awareness, Probabilistic Thinking",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

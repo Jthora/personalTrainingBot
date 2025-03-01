@@ -1,0 +1,35 @@
+{
+    "id": "controlled_information_sharing",
+    "name": "Controlled Information Sharing",
+    "description": "Techniques for managing personal disclosures and minimizing vulnerabilities in social interactions.",
+    "focus": [
+        "Social Engineering Resistance",
+        "Information Control in Personal and Professional Spaces"
+    ],
+    "cards": [
+        {
+            "id": "info_control_1",
+            "title": "Strategic Self-Disclosure",
+            "description": "Controlling how much personal information is shared and who has access to it.",
+            "bulletpoints": "Layered Information Release, Need-to-Know Basis Mindset, Misdirection Techniques",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "info_control_2",
+            "title": "Psychological Misdirection",
+            "description": "Using vague, incomplete, or misleading information to avoid entrapment.",
+            "bulletpoints": "Plausible Deniability, Deflection Statements, Controlled Narrative Projection",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "info_control_3",
+            "title": "Shielding Vulnerabilities in Conversations",
+            "description": "Avoiding emotional and psychological traps that expose weaknesses.",
+            "bulletpoints": "Conversational Pattern Recognition, Tactical Non-Responses, Redirecting Personal Inquiries",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

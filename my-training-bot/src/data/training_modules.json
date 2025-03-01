@@ -14,6 +14,7 @@
         { "id": "martial_arts", "name": "Martial Arts Training" },
         { "id": "psiops", "name": "PsiOps Training" },
         { "id": "war_strategy", "name": "War Strategy Training" },
-        { "id": "web_three", "name": "Web3 Training" }
+        { "id": "web_three", "name": "Web3 Training" },
+        { "id": "self_sovereignty", "name": "Self Sovereignty Training" }
     ]
 }

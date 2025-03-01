@@ -1,0 +1,35 @@
+{
+    "id": "emotional_transmutation",
+    "name": "Emotional Transmutation",
+    "description": "Converting raw emotional pain into a refined source of power, insight, and personal growth.",
+    "focus": [
+        "Harnessing Emotional Energy",
+        "Transforming Negative States"
+    ],
+    "cards": [
+        {
+            "id": "transmutation_1",
+            "title": "Energy Extraction from Emotional Pain",
+            "description": "Techniques to channel emotional intensity into creative, intellectual, or physical expression.",
+            "bulletpoints": "Alchemizing Anger into Drive, Pain-to-Art Expression, Redirecting Emotional Charge",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "transmutation_2",
+            "title": "Shifting the Internal Emotional Frequency",
+            "description": "Practices to elevate emotional states through self-directed internal energy work.",
+            "bulletpoints": "Frequency Matching, Emotional Energy Modulation, Subconscious Pattern Adjustment",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "transmutation_3",
+            "title": "Turning Suffering into Mental Fortitude",
+            "description": "Using past pain as a foundation for psychological resilience and invulnerability.",
+            "bulletpoints": "Pain Tolerance Expansion, Suffering Reinterpretation, Psychological Reframing Drills",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

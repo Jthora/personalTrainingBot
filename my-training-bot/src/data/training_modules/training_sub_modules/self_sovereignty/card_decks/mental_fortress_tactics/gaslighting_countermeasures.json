@@ -1,0 +1,35 @@
+{
+    "id": "gaslighting_countermeasures",
+    "name": "Gaslighting Countermeasures",
+    "description": "Techniques for detecting, neutralizing, and reversing gaslighting attempts.",
+    "focus": [
+        "Defensive Mental Framing",
+        "Cognitive Self-Validation"
+    ],
+    "cards": [
+        {
+            "id": "gaslighting_1",
+            "title": "Detecting Manipulative Language",
+            "description": "Recognizing key verbal patterns used in gaslighting to distort reality.",
+            "bulletpoints": "Wordplay Deconstruction, Reality Validation, Conversational Triggers",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "gaslighting_2",
+            "title": "Reinforcing Cognitive Boundaries",
+            "description": "Strengthening the ability to differentiate external distortion from internal truth.",
+            "bulletpoints": "Logical Anchors, Self-Interrogation Drills, Tactical Cognitive Reframing",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "gaslighting_3",
+            "title": "Verbal Counter-Offense",
+            "description": "Using controlled responses to disarm gaslighters and regain control of interactions.",
+            "bulletpoints": "Conversational Reversal, Strategic Silence, Psychological Disruptors",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": "third_eye_awareness",
+    "name": "Third Eye Awareness",
+    "description": "Enhancing the ability to sense unseen truths and perceive reality beyond the physical world.",
+    "focus": [
+        "Energetic Sensory Perception",
+        "Heightened Awareness"
+    ],
+    "cards": [
+        {
+            "id": "third_eye_1",
+            "title": "Activating the Intuitive Center",
+            "description": "Techniques for awakening and training the third eye for enhanced intuition.",
+            "bulletpoints": "Pineal Gland Stimulation, Light and Sound Meditation, Sensory Expansion Drills",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "third_eye_2",
+            "title": "Tuning Into Subtle Energy Fields",
+            "description": "Developing sensitivity to energetic shifts, auras, and vibrational changes.",
+            "bulletpoints": "Aura Reading Exercises, Energetic Resonance Training, Frequency Awareness",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "third_eye_3",
+            "title": "Using Intuition for Decision Making",
+            "description": "Learning how to interpret intuitive signals and integrate them into daily choices.",
+            "bulletpoints": "Yes/No Intuition Testing, Gut Instinct Calibration, Real-Time Intuitive Judgment",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

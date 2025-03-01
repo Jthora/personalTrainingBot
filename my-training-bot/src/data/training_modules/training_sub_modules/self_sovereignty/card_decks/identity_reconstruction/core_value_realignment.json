@@ -1,0 +1,35 @@
+{
+    "id": "core_value_realignment",
+    "name": "Core Value Realignment",
+    "description": "Reconstructing a personal identity anchored in authentic values, purpose, and self-sovereignty.",
+    "focus": [
+        "Personal Philosophy Building",
+        "Identity Solidification"
+    ],
+    "cards": [
+        {
+            "id": "core_values_1",
+            "title": "Defining Your Core Principles",
+            "description": "Identifying the foundational values that define your authentic self.",
+            "bulletpoints": "Moral Compass Construction, Decision-Making Framework, Personal Ethos Development",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "core_values_2",
+            "title": "Aligning Actions with Core Identity",
+            "description": "Ensuring thoughts, behaviors, and decisions reflect your true self.",
+            "bulletpoints": "Behavioral Alignment Strategies, Self-Accountability Systems, Integrity Reinforcement",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "core_values_3",
+            "title": "Creating an Identity Manifesto",
+            "description": "Writing a personal declaration of self-sovereignty and life direction.",
+            "bulletpoints": "Personal Mission Statement, Self-Affirmation Blueprint, Strategic Life Design",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

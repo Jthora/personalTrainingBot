@@ -1,0 +1,35 @@
+{
+    "id": "mental_autonomy_exercises",
+    "name": "Mental Autonomy Exercises",
+    "description": "Training techniques to strengthen psychological immunity against social engineering, groupthink, and covert manipulation.",
+    "focus": [
+        "Cognitive Independence",
+        "Immunity to Psychological Manipulation"
+    ],
+    "cards": [
+        {
+            "id": "mental_autonomy_1",
+            "title": "Thinking in Sovereign Terms",
+            "description": "Developing independent thought patterns that are resistant to collective pressure.",
+            "bulletpoints": "Filtering External Narratives, Logical Independence Training, Strategic Contrarian Thinking",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "mental_autonomy_2",
+            "title": "Resisting Social Programming",
+            "description": "Identifying and rejecting thought patterns that originate from mass conditioning.",
+            "bulletpoints": "Recognizing Thought Contagion, Disengaging from Consensus Bias, Critical Thinking Drills",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mental_autonomy_3",
+            "title": "Building an Unshakable Mental Framework",
+            "description": "Creating a personal philosophy that acts as a shield against coercion and deception.",
+            "bulletpoints": "Developing Mental Code of Ethics, Philosophical Self-Anchor, Cognitive Fortification Techniques",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

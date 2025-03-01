@@ -1,0 +1,17 @@
+{
+    "id": "strategic_social_disengagement",
+    "name": "Strategic Social Disengagement",
+    "description": "Mastering the ability to exit toxic environments, avoid manipulative entanglements, and maintain emotional independence.",
+    "difficulty": "Intermediate",
+    "estimated_time": "4-12 months",
+    "focus": [
+        "Recognizing Manipulative Social Structures",
+        "Controlled Withdrawal Tactics",
+        "Maintaining Psychological Autonomy"
+    ],
+    "cardDecks": [
+        "red_flag_detection",
+        "stealth_exit_strategies",
+        "controlled_information_sharing"
+    ]
+}

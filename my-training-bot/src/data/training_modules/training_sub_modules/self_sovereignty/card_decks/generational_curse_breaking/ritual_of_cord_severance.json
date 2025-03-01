@@ -1,0 +1,35 @@
+{
+    "id": "ritual_of_cord_severance",
+    "name": "Ritual of Cord Severance",
+    "description": "Practices and methods for energetically and spiritually cutting ties with toxic family programming.",
+    "focus": [
+        "Energetic Detachment",
+        "Spiritual Reclamation"
+    ],
+    "cards": [
+        {
+            "id": "cord_severance_1",
+            "title": "Energetic Cord Mapping",
+            "description": "Identifying the unseen emotional, psychological, and spiritual connections affecting your personal sovereignty.",
+            "bulletpoints": "Psychic Sensory Exercises, Emotional Attachment Recognition, Auric Energy Mapping",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "cord_severance_2",
+            "title": "The Severance Ritual",
+            "description": "Executing a structured ritual to cut negative ancestral and generational ties.",
+            "bulletpoints": "Invocation and Intent Setting, Symbolic Release Methods, Post-Severance Protection Practices",
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cord_severance_3",
+            "title": "Protection Against Reattachment",
+            "description": "Reinforcing personal energetic boundaries to prevent toxic familial influences from returning.",
+            "bulletpoints": "Shielding Techniques, Ancestral Energy Defense, Affirmation and Visualization Reinforcement",
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

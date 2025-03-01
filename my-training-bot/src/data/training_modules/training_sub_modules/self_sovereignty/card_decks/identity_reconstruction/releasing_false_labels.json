@@ -1,0 +1,35 @@
+{
+    "id": "releasing_false_labels",
+    "name": "Releasing False Labels",
+    "description": "Dismantling negative identities imposed by narcissistic figures and social conditioning.",
+    "focus": [
+        "Detaching from External Validation",
+        "Reframing Internalized Beliefs"
+    ],
+    "cards": [
+        {
+            "id": "false_labels_1",
+            "title": "Recognizing Imposed Labels",
+            "description": "Identifying the false identities placed on you by others.",
+            "bulletpoints": "Family Role Assignments, Societal Expectations, Emotional Programming",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "false_labels_2",
+            "title": "Disrupting the Internalized Narrative",
+            "description": "Techniques to dismantle self-sabotaging thoughts and behaviors.",
+            "bulletpoints": "Cognitive Reframing, Emotional Validation Practices, Identity Deconstruction",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "false_labels_3",
+            "title": "Symbolic Release and Reintegration",
+            "description": "Rituals and practices for permanently discarding false identities and reclaiming personal sovereignty.",
+            "bulletpoints": "Symbolic Object Discarding, Affirmation Rewiring, Visualization of Identity Shift",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

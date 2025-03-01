@@ -1,0 +1,35 @@
+{
+    "id": "warding_against_energy_vampires",
+    "name": "Warding Against Energy Vampires",
+    "description": "Identifying and counteracting individuals or entities that drain your energy.",
+    "focus": [
+        "Psychic Protection",
+        "Sustaining High Energy Levels"
+    ],
+    "cards": [
+        {
+            "id": "warding_1",
+            "title": "Recognizing Energy Drainers",
+            "description": "Understanding the behaviors and tactics of energy vampires in personal and social settings.",
+            "bulletpoints": "Identifying Subtle Energy Drain, Social Toxicity Recognition, Boundary Strengthening",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "warding_2",
+            "title": "Cutting Psychic Cords",
+            "description": "Severing unhealthy energy attachments to restore vitality and self-sovereignty.",
+            "bulletpoints": "Cord Identification Techniques, Visualization of Disconnection, Protective Rituals",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "warding_3",
+            "title": "Sustaining a High-Vibrational State",
+            "description": "Maintaining strong energy levels to prevent vulnerability to psychic attacks.",
+            "bulletpoints": "Daily Energy Cleansing, Frequency Elevation Techniques, Psychic Detox Methods",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

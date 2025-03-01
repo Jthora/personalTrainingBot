@@ -1,0 +1,35 @@
+{
+    "id": "verbal_self_defense",
+    "name": "Verbal Self-Defense",
+    "description": "Mastering communication techniques to neutralize gaslighting and regain conversational control.",
+    "focus": [
+        "Verbal Reversal Tactics",
+        "Defensive and Offensive Communication Strategies"
+    ],
+    "cards": [
+        {
+            "id": "verbal_defense_1",
+            "title": "The Gray Rock Method",
+            "description": "Becoming emotionally unresponsive to gaslighters to remove their control mechanism.",
+            "bulletpoints": "Neutral Responses, Avoiding Emotional Hooks, Disengagement Techniques",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "verbal_defense_2",
+            "title": "Reverse Gaslighting",
+            "description": "Flipping the manipulation back onto the gaslighter to force them into logical inconsistencies.",
+            "bulletpoints": "Mirroring Their Words, Circular Logic Reversal, The ‘Wait, What?’ Technique",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "verbal_defense_3",
+            "title": "Boundary Enforcement Through Speech",
+            "description": "Setting firm verbal boundaries to shut down manipulative conversations immediately.",
+            "bulletpoints": "Direct Statements, No-Engagement Phrasing, Controlled Emotional Expression",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

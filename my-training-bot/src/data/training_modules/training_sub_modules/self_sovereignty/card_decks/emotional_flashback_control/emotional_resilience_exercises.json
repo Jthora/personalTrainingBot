@@ -1,0 +1,35 @@
+{
+    "id": "emotional_resilience_exercises",
+    "name": "Emotional Resilience Exercises",
+    "description": "Building long-term resistance to emotional hijacking and strengthening self-regulation.",
+    "focus": [
+        "Emotional Reprogramming",
+        "Self-Regulation Mastery"
+    ],
+    "cards": [
+        {
+            "id": "emotional_resilience_1",
+            "title": "The Power of Naming Emotions",
+            "description": "Breaking emotional overwhelm by identifying and labeling feelings in the moment.",
+            "bulletpoints": "Emotion Naming, Thought-Emotion Separation, Emotional Categorization",
+            "duration": "45",
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "emotional_resilience_2",
+            "title": "Emotional Delay Tactics",
+            "description": "Creating space between emotional triggers and reactions.",
+            "bulletpoints": "10-Second Pause, Mental Redirect, Conscious Emotional Delays",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "emotional_resilience_3",
+            "title": "Emotional Reset Anchors",
+            "description": "Developing personalized emotional reset techniques.",
+            "bulletpoints": "Personal Symbolism, Memory Anchors, Emotional Reinforcement Techniques",
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

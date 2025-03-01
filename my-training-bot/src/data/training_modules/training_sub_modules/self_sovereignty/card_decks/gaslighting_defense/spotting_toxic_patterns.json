@@ -1,0 +1,35 @@
+{
+    "id": "spotting_toxic_patterns",
+    "name": "Spotting Toxic Patterns",
+    "description": "Developing awareness of manipulative conversational tactics and behavioral patterns used by gaslighters.",
+    "focus": [
+        "Recognizing Manipulative Speech",
+        "Identifying Psychological Traps"
+    ],
+    "cards": [
+        {
+            "id": "toxic_patterns_1",
+            "title": "Decoding Manipulative Language",
+            "description": "Understanding how gaslighters use language to distort reality and control perception.",
+            "bulletpoints": "Twisted Wordplay, Reversal Tactics, Strategic Vagueness",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "toxic_patterns_2",
+            "title": "Pattern Recognition in Conversations",
+            "description": "Detecting repeating cycles of manipulation and the triggers that activate them.",
+            "bulletpoints": "Circular Arguments, Forced Self-Doubt, The ‘You're Too Sensitive’ Trap",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "toxic_patterns_3",
+            "title": "Testing for Psychological Manipulation",
+            "description": "Using specific verbal and behavioral tests to confirm if someone is engaging in gaslighting.",
+            "bulletpoints": "The ‘Reality Test’ Method, Silent Resistance, Pattern Disruption Strategies",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

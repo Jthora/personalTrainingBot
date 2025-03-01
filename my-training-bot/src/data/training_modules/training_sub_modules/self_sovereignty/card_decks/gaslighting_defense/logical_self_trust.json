@@ -1,0 +1,35 @@
+{
+    "id": "logical_self_trust",
+    "name": "Logical Self-Trust",
+    "description": "Developing unwavering confidence in one's own perceptions, logic, and memory to counter gaslighting attempts.",
+    "focus": [
+        "Reinforcing Reality Perception",
+        "Mental Clarity Under Pressure"
+    ],
+    "cards": [
+        {
+            "id": "self_trust_1",
+            "title": "Recognizing Gaslighting Patterns",
+            "description": "Identifying the signs of gaslighting and differentiating them from normal disagreements.",
+            "bulletpoints": "Gaslighting Red Flags, Common Manipulation Tactics, Emotional Misdirection",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "self_trust_2",
+            "title": "Reaffirming Your Reality",
+            "description": "Strengthening belief in your own experiences despite external attempts to distort them.",
+            "bulletpoints": "Memory Validation Exercises, Reality Checklists, Evidence-Based Self-Trust",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "self_trust_3",
+            "title": "Cognitive Anchoring Techniques",
+            "description": "Using logic-based mental anchors to stay grounded in truth during gaslighting attacks.",
+            "bulletpoints": "Logical Affirmations, Rational Grounding, Sensory and Memory Anchors",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": "alpha_posture_training",
+    "name": "Alpha Posture Training",
+    "description": "Developing body language that conveys strength, confidence, and authority in all social interactions.",
+    "focus": [
+        "Postural Dominance",
+        "Kinetic Presence Control"
+    ],
+    "cards": [
+        {
+            "id": "posture_1",
+            "title": "Commanding Presence Through Stance",
+            "description": "Training in body alignment, foot positioning, and posture to radiate confidence.",
+            "bulletpoints": "Proper Spine Alignment, Power Stance Training, Energy Projection Through Posture",
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "posture_2",
+            "title": "Micro-Expressions and Eye Contact",
+            "description": "Controlling subtle facial cues and eye movements to establish dominance and trust.",
+            "bulletpoints": "Eye Contact Calibration, Emotionally Controlled Facial Responses, Strategic Blink Patterns",
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "posture_3",
+            "title": "The Walk of Power",
+            "description": "Mastering gait control and movement fluidity to exhibit strength and intentionality.",
+            "bulletpoints": "Rhythm and Flow, Shoulder Set Techniques, Speed and Directional Adjustments",
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,26 +1,131 @@
 {
     "id": "counter_propaganda_strategies",
-    "name": "Counter-Propaganda Strategies",
-    "description": "Tactics to counteract and neutralize psychological influence campaigns in media and warfare.",
+    "name": "Counter Propaganda Strategies",
+    "description": "Techniques to neutralize, dismantle, and counteract propaganda, disinformation, and psychological manipulation in mass communication.",
     "focus": [
-        "Counter-Influence Tactics",
-        "PsyOps Resistance"
+        "Disinformation Analysis",
+        "Narrative Countermeasures",
+        "Public Perception Management"
     ],
     "cards": [
         {
-            "id": "propaganda_1",
-            "title": "Disrupting Controlled Narratives",
-            "description": "Techniques for interrupting and dismantling coordinated disinformation campaigns.",
-            "bulletpoints": "Utilize strategic questioning, cognitive disruption techniques, and counter-framing methodologies",
-            "duration": "20",
+            "id": "counter_propaganda_1",
+            "title": "Identifying Propaganda Frameworks",
+            "description": "Analyzing the core structure and intent behind propaganda campaigns.",
+            "bulletpoints": [
+                "Map out the primary objectives behind specific propaganda efforts.",
+                "Identify key psychological hooks used to manipulate audience emotions.",
+                "Recognize common logical fallacies embedded in manipulated narratives."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "counter_propaganda_2",
+            "title": "Disrupting Propaganda Flow",
+            "description": "Tactically disrupting the distribution channels and effectiveness of misinformation.",
+            "bulletpoints": [
+                "Introduce conflicting narratives that challenge the reliability of propaganda sources.",
+                "Encourage open discourse and questioning within target audiences.",
+                "Use controlled information leaks to expose inconsistencies in manipulated narratives."
+            ],
+            "duration": "75",
             "difficulty": "Advanced"
         },
         {
-            "id": "propaganda_2",
-            "title": "Reverse Persuasion Tactics",
-            "description": "Turning persuasive psychological tactics against their originators.",
-            "bulletpoints": "Leverage counter-messaging, rhetorical judo, and mirroring deception strategies",
-            "duration": "25",
+            "id": "counter_propaganda_3",
+            "title": "Psychological Reframing Techniques",
+            "description": "Reframing misleading narratives to alter their psychological impact.",
+            "bulletpoints": [
+                "Reverse-engineer the emotional triggers used in propaganda messaging.",
+                "Use strategic language shifts to neutralize negative psychological conditioning.",
+                "Introduce alternative explanations that redirect focus away from manipulation points."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "counter_propaganda_4",
+            "title": "Counter-Narrative Deployment",
+            "description": "Developing and disseminating counter-narratives to weaken propaganda influence.",
+            "bulletpoints": [
+                "Construct fact-based counter-narratives that undermine core propaganda claims.",
+                "Utilize emotionally compelling storytelling to engage and convert audiences.",
+                "Deploy decentralized information networks to spread counter-messaging effectively."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "counter_propaganda_5",
+            "title": "Meme Warfare & Virality Engineering",
+            "description": "Leveraging meme culture and viral content to counteract disinformation.",
+            "bulletpoints": [
+                "Create emotionally charged meme campaigns to challenge propaganda themes.",
+                "Embed critical thinking cues within viral content to increase audience skepticism.",
+                "Utilize humor and satire to disarm aggressive propaganda messaging."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "counter_propaganda_6",
+            "title": "Propaganda Immunization Training",
+            "description": "Pre-conditioning target audiences to resist future propaganda attacks.",
+            "bulletpoints": [
+                "Expose individuals to controlled misinformation to develop resistance training.",
+                "Teach audiences how to cross-check sources and recognize manipulation techniques.",
+                "Reinforce cognitive independence by promoting decentralized critical analysis."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "counter_propaganda_7",
+            "title": "Leveraging Whistleblowers and Insider Leaks",
+            "description": "Using internal dissent and leaks to dismantle propaganda efforts from within.",
+            "bulletpoints": [
+                "Identify potential whistleblowers within organizations propagating false narratives.",
+                "Securely distribute leaked information through trusted channels.",
+                "Develop controlled narratives around leaks to maximize public impact."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "counter_propaganda_8",
+            "title": "Social Engineering Countermeasures",
+            "description": "Detecting and countering social engineering tactics used in propaganda campaigns.",
+            "bulletpoints": [
+                "Deconstruct emotionally manipulative rhetoric used to coerce public opinion.",
+                "Expose inconsistencies and contradictions in engineered mass narratives.",
+                "Deploy social feedback loops to break down false consensus illusions."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "counter_propaganda_9",
+            "title": "Media Manipulation Resistance",
+            "description": "Developing resistance against deepfake technology, biased journalism, and media framing tactics.",
+            "bulletpoints": [
+                "Train audiences to recognize visual and audio manipulation techniques.",
+                "Use AI-assisted analysis tools to verify media authenticity.",
+                "Counter media framing tactics by exposing omitted context and deceptive editing."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "counter_propaganda_10",
+            "title": "Decentralized Truth Distribution Networks",
+            "description": "Developing and utilizing decentralized networks to distribute uncensored information.",
+            "bulletpoints": [
+                "Establish resilient peer-to-peer information exchange platforms.",
+                "Utilize blockchain and cryptographic proof-of-truth mechanisms for data integrity.",
+                "Bypass centralized censorship controls through distributed content dissemination."
+            ],
+            "duration": "150",
             "difficulty": "Expert"
         }
     ]

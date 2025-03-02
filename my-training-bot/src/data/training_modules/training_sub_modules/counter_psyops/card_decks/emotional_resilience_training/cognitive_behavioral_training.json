@@ -1,27 +1,132 @@
 {
     "id": "cognitive_behavioral_training",
     "name": "Cognitive Behavioral Training",
-    "description": "Using cognitive restructuring and behavioral adaptation to resist psychological influence.",
+    "description": "Training to develop self-awareness, recognize cognitive distortions, and apply techniques for psychological resilience.",
     "focus": [
-        "Cognitive Reframing",
+        "Cognitive Restructuring",
+        "Emotional Regulation",
         "Behavioral Conditioning"
     ],
     "cards": [
         {
-            "id": "cbt_1",
-            "title": "Challenging Negative Thought Patterns",
-            "description": "Recognizing and restructuring negative self-talk and irrational beliefs.",
-            "bulletpoints": "Cognitive reframing, positive self-dialogue, logical evaluation of thoughts",
-            "duration": "15",
+            "id": "cognitive_behavioral_1",
+            "title": "Identifying Cognitive Distortions",
+            "description": "Recognizing and categorizing common distortions in thinking that lead to emotional distress.",
+            "bulletpoints": [
+                "Understanding common distortions: black-and-white thinking, catastrophizing, and overgeneralization.",
+                "Tracking personal cognitive distortions in daily thoughts.",
+                "Developing awareness of when distortions impact decision-making."
+            ],
+            "duration": "60",
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "cognitive_behavioral_2",
+            "title": "Thought Replacement Techniques",
+            "description": "Replacing negative and irrational thoughts with constructive and logical ones.",
+            "bulletpoints": [
+                "Practicing reframing techniques for negative experiences.",
+                "Challenging irrational beliefs through evidence-based questioning.",
+                "Using counter-scripting to create positive mental scripts."
+            ],
+            "duration": "75",
             "difficulty": "Intermediate"
         },
         {
-            "id": "cbt_2",
-            "title": "Anchoring and Mental Conditioning",
-            "description": "Using mental conditioning to reinforce resilience against psychological attacks.",
-            "bulletpoints": "Neural conditioning, memory anchors for stability, adaptive behavioral responses",
-            "duration": "20",
+            "id": "cognitive_behavioral_3",
+            "title": "Mindfulness-Based Cognitive Training",
+            "description": "Using mindfulness to observe thoughts and emotions without immediate reaction.",
+            "bulletpoints": [
+                "Practicing detachment from intrusive thoughts.",
+                "Developing present-moment awareness through mindfulness exercises.",
+                "Applying mindfulness-based stress reduction (MBSR) techniques."
+            ],
+            "duration": "90",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "cognitive_behavioral_4",
+            "title": "Behavioral Activation Strategies",
+            "description": "Using intentional behaviors to shift emotional states and counteract negative thought patterns.",
+            "bulletpoints": [
+                "Engaging in activities that challenge depressive or anxious cycles.",
+                "Setting incremental goals to build a positive behavioral routine.",
+                "Applying activation techniques to counter learned helplessness."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "cognitive_behavioral_5",
+            "title": "Cognitive Defusion Techniques",
+            "description": "Distancing oneself from distressing thoughts to reduce their emotional impact.",
+            "bulletpoints": [
+                "Practicing verbal defusion techniques to weaken negative self-talk.",
+                "Using visualization to create emotional separation from harmful thoughts.",
+                "Employing humor as a tool for reframing and neutralizing mental stress."
+            ],
+            "duration": "75",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "cognitive_behavioral_6",
+            "title": "Restructuring Negative Core Beliefs",
+            "description": "Identifying and modifying deeply ingrained negative beliefs about oneself and the world.",
+            "bulletpoints": [
+                "Tracing the origins of limiting core beliefs.",
+                "Applying logical analysis to challenge faulty belief systems.",
+                "Reinforcing healthier beliefs through evidence-based affirmations."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cognitive_behavioral_7",
+            "title": "Adaptive Exposure Therapy",
+            "description": "Gradual exposure to stressors to build resilience and desensitize emotional triggers.",
+            "bulletpoints": [
+                "Systematic desensitization for anxiety-related responses.",
+                "Creating controlled exposure scenarios for emotional adaptation.",
+                "Using graded exposure techniques to increase tolerance to psychological discomfort."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cognitive_behavioral_8",
+            "title": "Cognitive Flexibility Training",
+            "description": "Enhancing the ability to shift thinking patterns and adapt to new perspectives.",
+            "bulletpoints": [
+                "Practicing lateral thinking to generate alternative solutions.",
+                "Using paradoxical thinking to challenge rigid mental frameworks.",
+                "Applying multi-perspective analysis to counter cognitive rigidity."
+            ],
+            "duration": "75",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cognitive_behavioral_9",
+            "title": "Self-Talk and Mental Conditioning",
+            "description": "Developing a positive and constructive internal dialogue.",
+            "bulletpoints": [
+                "Using affirmation scripting to reinforce psychological strength.",
+                "Practicing metacognition to observe and regulate self-talk.",
+                "Replacing defeatist language with constructive internal messaging."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cognitive_behavioral_10",
+            "title": "Long-Term Cognitive Maintenance",
+            "description": "Implementing daily cognitive strategies for sustained emotional and mental resilience.",
+            "bulletpoints": [
+                "Building consistent habits for self-reflection and cognitive restructuring.",
+                "Tracking cognitive progress through journaling and self-assessment.",
+                "Engaging in lifelong learning to reinforce cognitive adaptability."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

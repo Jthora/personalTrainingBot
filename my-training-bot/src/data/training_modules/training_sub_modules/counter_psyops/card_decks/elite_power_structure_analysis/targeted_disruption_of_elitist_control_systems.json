@@ -1,0 +1,132 @@
+{
+    "id": "targeted_disruption_of_elitist_control_systems",
+    "name": "Targeted Disruption of Elitist Control Systems",
+    "description": "Training in advanced countermeasures to weaken and neutralize elitist control mechanisms, disrupt globalist power structures, and expose systemic manipulation.",
+    "focus": [
+        "Tactical Disruption",
+        "Decentralized Resistance",
+        "Asymmetrical Warfare"
+    ],
+    "cards": [
+        {
+            "id": "disruption_elite_1",
+            "title": "Mapping the Control Grid",
+            "description": "Identifying and analyzing the key components of elitist control networks.",
+            "bulletpoints": [
+                "Understanding how global control systems are structured.",
+                "Identifying key players, assets, and operational hubs.",
+                "Tracing funding and resource allocation within control structures."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "disruption_elite_2",
+            "title": "Weak Points in the Power Structure",
+            "description": "Analyzing vulnerabilities within elitist institutions and control systems.",
+            "bulletpoints": [
+                "Locating critical failure points in centralized systems.",
+                "Identifying internal conflicts and power struggles.",
+                "Leveraging external crises to destabilize control structures."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "disruption_elite_3",
+            "title": "Cyber Disruption and Digital Resistance",
+            "description": "Using digital countermeasures to disrupt surveillance, censorship, and propaganda networks.",
+            "bulletpoints": [
+                "Bypassing digital censorship and information suppression.",
+                "Utilizing encryption and decentralized communication networks.",
+                "Deploying counter-disinformation strategies against AI-controlled narratives."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "disruption_elite_4",
+            "title": "Economic Sabotage Tactics",
+            "description": "Understanding and disrupting financial systems used to maintain control.",
+            "bulletpoints": [
+                "Tracing money flows and laundering schemes.",
+                "Exposing financial fraud and elitist wealth hoarding.",
+                "Using decentralized finance (DeFi) and crypto resistance tactics."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "disruption_elite_5",
+            "title": "Disrupting Psychological Warfare",
+            "description": "Countering mass psychological conditioning and engineered social control.",
+            "bulletpoints": [
+                "Breaking mass hypnosis through counter-messaging.",
+                "Deprogramming the public from elitist propaganda.",
+                "Strategic memetic warfare for ideological resistance."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "disruption_elite_6",
+            "title": "Exposing Blackmail Networks",
+            "description": "Investigating and revealing elite-controlled blackmail operations.",
+            "bulletpoints": [
+                "Understanding how blackmail is used to control politicians, executives, and influencers.",
+                "Tracing Epstein-style networks and kompromat operations.",
+                "Leveraging whistleblower leaks and investigative reporting."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "disruption_elite_7",
+            "title": "Decentralized Governance & Parallel Systems",
+            "description": "Building independent networks and governance structures outside of elite control.",
+            "bulletpoints": [
+                "Establishing self-sufficient communities and economies.",
+                "Developing peer-to-peer trade and resource-sharing models.",
+                "Creating decentralized intelligence and security networks."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "disruption_elite_8",
+            "title": "Countering Predictive Programming & AI Social Engineering",
+            "description": "Neutralizing predictive modeling and social engineering tactics used to precondition the public.",
+            "bulletpoints": [
+                "Understanding the role of predictive analytics in mass control.",
+                "Disrupting AI-driven narratives and pre-emptive propaganda.",
+                "Leveraging AI-resistant tactics to maintain informational sovereignty."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "disruption_elite_9",
+            "title": "Strategic Whistleblowing & Exposure Campaigns",
+            "description": "Safely and effectively exposing elite corruption and criminal activities.",
+            "bulletpoints": [
+                "Protecting sources and securing leak channels.",
+                "Coordinating controlled leaks to maximize impact.",
+                "Leveraging media, grassroots movements, and decentralized platforms."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "disruption_elite_10",
+            "title": "Covert & Asymmetrical Disruption Strategies",
+            "description": "Executing targeted countermeasures against elitist control without direct confrontation.",
+            "bulletpoints": [
+                "Applying guerrilla information warfare tactics.",
+                "Disrupting elite logistics and operational efficiency.",
+                "Creating psychological uncertainty and instability in control networks."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

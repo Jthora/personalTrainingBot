@@ -1,0 +1,132 @@
+{
+    "id": "intelligence_gathering_on_covert_networks",
+    "name": "Intelligence Gathering on Covert Networks",
+    "description": "Training in methods of collecting intelligence on covert organizations, shadow groups, and classified networks.",
+    "focus": [
+        "Covert Surveillance",
+        "Deep Network Analysis",
+        "Operational Security"
+    ],
+    "cards": [
+        {
+            "id": "covert_intel_1",
+            "title": "Identifying Covert Networks",
+            "description": "Recognizing the signs and indicators of hidden organizations.",
+            "bulletpoints": [
+                "Analyzing patterns of secrecy and obfuscation.",
+                "Identifying key members and connections.",
+                "Recognizing common tactics used by covert groups."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "covert_intel_2",
+            "title": "Open Source Intelligence (OSINT) Techniques",
+            "description": "Leveraging publicly available data to uncover covert operations.",
+            "bulletpoints": [
+                "Utilizing advanced search methods for deep data extraction.",
+                "Cross-referencing leaks, archives, and open-source documents.",
+                "Building intelligence profiles from social media and digital footprints."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "covert_intel_3",
+            "title": "Dark Web Reconnaissance",
+            "description": "Navigating and extracting intelligence from hidden online forums and marketplaces.",
+            "bulletpoints": [
+                "Utilizing anonymization tools for secure exploration.",
+                "Analyzing threat actors and covert communication methods.",
+                "Monitoring illicit transactions and trafficking networks."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "covert_intel_4",
+            "title": "Human Intelligence (HUMINT) Operations",
+            "description": "Gathering intelligence through direct human interaction and infiltration.",
+            "bulletpoints": [
+                "Building sources and cultivating informants.",
+                "Detecting deception and reading microexpressions.",
+                "Understanding psychological pressure tactics in elicitation."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "covert_intel_5",
+            "title": "Electronic Surveillance and SIGINT",
+            "description": "Intercepting and analyzing electronic communications from covert networks.",
+            "bulletpoints": [
+                "Understanding encryption and decryption techniques.",
+                "Utilizing radio frequency monitoring and signal interception.",
+                "Tracking geolocation metadata from intercepted transmissions."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "covert_intel_6",
+            "title": "Deconstructing Front Organizations",
+            "description": "Tracing shell corporations, fake NGOs, and other covers used by covert groups.",
+            "bulletpoints": [
+                "Identifying financial transactions and laundering schemes.",
+                "Mapping corporate and governmental overlaps.",
+                "Analyzing front group activities in relation to elite control systems."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "covert_intel_7",
+            "title": "Counter-Surveillance and Tradecraft",
+            "description": "Avoiding detection while gathering intelligence in hostile environments.",
+            "bulletpoints": [
+                "Employing evasive maneuvers and deception tactics.",
+                "Detecting surveillance and neutralizing tracking attempts.",
+                "Establishing secure communication channels and dead drops."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "covert_intel_8",
+            "title": "Blackmail Files and Compromised Assets",
+            "description": "Uncovering and analyzing elite blackmail operations and intelligence leverage points.",
+            "bulletpoints": [
+                "Investigating blackmail networks and kompromat operations.",
+                "Understanding how elite power structures use coercion tactics.",
+                "Revealing vulnerabilities and leveraging counterintelligence strategies."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "covert_intel_9",
+            "title": "Safe Data Extraction & Secure Reporting",
+            "description": "Protecting intelligence and delivering it securely to trusted parties.",
+            "bulletpoints": [
+                "Utilizing encrypted storage and secure data transfer methods.",
+                "Establishing anonymous leak protocols and whistleblower channels.",
+                "Evading digital forensics and tracking mechanisms."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "covert_intel_10",
+            "title": "Constructing Intelligence Networks",
+            "description": "Building decentralized intelligence-sharing networks to counter elite operations.",
+            "bulletpoints": [
+                "Establishing underground information-sharing cells.",
+                "Using blockchain and decentralized platforms for data security.",
+                "Training operatives in intelligence gathering and secure communication."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

@@ -1,0 +1,132 @@
+{
+    "id": "manipulative_narrative_dissection",
+    "name": "Manipulative Narrative Dissection",
+    "description": "Training in deconstructing and analyzing manipulative narratives used in propaganda, media, and psychological operations.",
+    "focus": [
+        "Narrative Warfare",
+        "Propaganda Deconstruction",
+        "Psychological Influence Analysis"
+    ],
+    "cards": [
+        {
+            "id": "narrative_dissection_1",
+            "title": "Introduction to Narrative Manipulation",
+            "description": "Understanding how narratives are constructed to influence beliefs and behaviors.",
+            "bulletpoints": [
+                "Defining manipulative narratives and their function in psychological operations.",
+                "Examining real-world examples of narrative control in media and politics.",
+                "Identifying common psychological techniques used to frame reality."
+            ],
+            "duration": "60",
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "narrative_dissection_2",
+            "title": "The Anatomy of a Manipulative Narrative",
+            "description": "Breaking down the structural elements of persuasive and deceptive storytelling.",
+            "bulletpoints": [
+                "Identifying core components: hero, villain, victim, and savior archetypes.",
+                "Recognizing repetition and emotional appeal as persuasive tools.",
+                "Understanding how context manipulation alters perception."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "narrative_dissection_3",
+            "title": "Framing and Reframing Techniques",
+            "description": "Examining how narratives are framed to shape public opinion and decision-making.",
+            "bulletpoints": [
+                "Recognizing biased framing in news and social discourse.",
+                "Understanding how selective language manipulates perception.",
+                "Applying counter-framing techniques to neutralize narrative influence."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "narrative_dissection_4",
+            "title": "Cognitive Dissonance & Doublethink",
+            "description": "Understanding how conflicting narratives create psychological confusion.",
+            "bulletpoints": [
+                "Identifying cognitive dissonance in media and propaganda.",
+                "Recognizing ‘doublethink’ and self-contradictory messaging.",
+                "Developing strategies to dismantle manipulative contradictions."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "narrative_dissection_5",
+            "title": "False Dichotomies and Limited Choices",
+            "description": "Analyzing how narratives force artificial choices and suppress alternative perspectives.",
+            "bulletpoints": [
+                "Recognizing false binary choices in political and social discourse.",
+                "Understanding how forced narratives limit free thought.",
+                "Techniques for exposing and countering false dichotomies."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "narrative_dissection_6",
+            "title": "Emotional Manipulation in Narratives",
+            "description": "Examining how emotional triggers are used to bypass critical thinking.",
+            "bulletpoints": [
+                "Identifying fear-based conditioning in persuasive messaging.",
+                "Recognizing guilt, shame, and outrage tactics in propaganda.",
+                "Building emotional resilience against narrative coercion."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "narrative_dissection_7",
+            "title": "Manufactured Consensus & Groupthink",
+            "description": "Deconstructing how narratives create the illusion of popular support.",
+            "bulletpoints": [
+                "Recognizing the ‘bandwagon effect’ in social movements.",
+                "Understanding the role of media amplification in shaping consensus.",
+                "Counter-strategies for resisting groupthink influence."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "narrative_dissection_8",
+            "title": "Selective Omission & Controlled Opposition",
+            "description": "Unpacking how narratives suppress inconvenient facts and distort reality.",
+            "bulletpoints": [
+                "Identifying key omissions in news reporting and historical accounts.",
+                "Recognizing controlled opposition as a narrative containment strategy.",
+                "Developing counter-strategies to reveal hidden truths."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "narrative_dissection_9",
+            "title": "Reverse Narrative Engineering",
+            "description": "Reconstructing narratives to reveal hidden agendas and psychological intent.",
+            "bulletpoints": [
+                "Breaking narratives down into their fundamental components.",
+                "Tracing narrative origins and identifying vested interests.",
+                "Reversing engineered narratives to expose their manipulative core."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "narrative_dissection_10",
+            "title": "Counter-Narrative Strategies",
+            "description": "Developing tactics to neutralize and counteract manipulative narratives.",
+            "bulletpoints": [
+                "Building awareness campaigns that expose narrative control.",
+                "Using humor and satire as tools to dismantle manipulative messaging.",
+                "Strategically crafting alternative narratives to reframe perspectives."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        }
+    ]
+}

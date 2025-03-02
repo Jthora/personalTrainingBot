@@ -1,0 +1,131 @@
+{
+    "id": "counter_censorship_strategies",
+    "name": "Counter-Censorship Strategies",
+    "description": "Training in techniques to bypass digital censorship, evade algorithmic suppression, and maintain free speech in controlled information environments.",
+    "focus": [
+        "Bypassing Digital Censorship",
+        "Decentralized Information Distribution"
+    ],
+    "cards": [
+        {
+            "id": "counter_censorship_1",
+            "title": "Identifying Algorithmic Suppression",
+            "description": "Understanding how social media, search engines, and AI-driven platforms suppress content.",
+            "bulletpoints": [
+                "Recognizing shadowbanning, throttling, and search result demotion.",
+                "Analyzing engagement algorithms to detect manipulated reach.",
+                "Using monitoring tools to track content suppression patterns."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "counter_censorship_2",
+            "title": "Bypassing AI Content Moderation",
+            "description": "Techniques for evading automated censorship while maintaining message integrity.",
+            "bulletpoints": [
+                "Using linguistic obfuscation to avoid keyword-based suppression.",
+                "Leveraging decentralized platforms resistant to AI censorship.",
+                "Adapting content formatting to bypass automated filters."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "counter_censorship_3",
+            "title": "Decentralized Communication Networks",
+            "description": "Leveraging blockchain, peer-to-peer, and encrypted networks for censorship resistance.",
+            "bulletpoints": [
+                "Using decentralized platforms such as Nostr, IPFS, and Mastodon.",
+                "Establishing peer-to-peer encrypted message relays.",
+                "Deploying resilient data storage mechanisms on censorship-resistant networks."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "counter_censorship_4",
+            "title": "Evading Network-Level Content Blocks",
+            "description": "Techniques for bypassing ISP, government, or corporate-level censorship.",
+            "bulletpoints": [
+                "Utilizing VPNs, proxies, and Tor to circumvent firewalls.",
+                "Encrypting data streams to hide content from network surveillance.",
+                "Deploying mesh networks for off-grid communication."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "counter_censorship_5",
+            "title": "Metadata Obfuscation Techniques",
+            "description": "Protecting communication metadata from tracking and suppression.",
+            "bulletpoints": [
+                "Using encryption tools to hide message origins.",
+                "Employing steganography to conceal data within images or files.",
+                "Masking user identity with anonymous routing methods."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "counter_censorship_6",
+            "title": "Psychological Warfare Against Narrative Suppression",
+            "description": "Leveraging mass psychology to expose and counteract censorship efforts.",
+            "bulletpoints": [
+                "Exposing censorship patterns to erode public trust in information controllers.",
+                "Using satire and metaphor to evade direct suppression.",
+                "Mobilizing decentralized communities to resist narrative control."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "counter_censorship_7",
+            "title": "Reverse Engineering Censorship Algorithms",
+            "description": "Analyzing AI-driven suppression tools to predict and counteract restrictions.",
+            "bulletpoints": [
+                "Identifying machine learning patterns in content removal decisions.",
+                "Using AI-generated adversarial tactics to evade censorship filters.",
+                "Testing content variations to find weaknesses in suppression mechanisms."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "counter_censorship_8",
+            "title": "Crowdsourced Information Resilience",
+            "description": "Building distributed networks of trusted individuals to ensure data persistence.",
+            "bulletpoints": [
+                "Creating mirror sites and redundant backups for critical content.",
+                "Using crowdsourced verification to counteract disinformation suppression.",
+                "Developing offline distribution methods for information resilience."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "counter_censorship_9",
+            "title": "Legal Strategies Against Censorship",
+            "description": "Understanding how to legally challenge and navigate around censorship laws.",
+            "bulletpoints": [
+                "Invoking free speech protections to fight digital suppression.",
+                "Using international legal frameworks to bypass local censorship.",
+                "Documenting and reporting unlawful suppression to relevant authorities."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "counter_censorship_10",
+            "title": "Red Teaming Information Suppression",
+            "description": "Simulating censorship scenarios to develop proactive defense strategies.",
+            "bulletpoints": [
+                "Conducting red team exercises to predict suppression responses.",
+                "Testing various countermeasures to evaluate effectiveness.",
+                "Developing adaptive response tactics to changing censorship tactics."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

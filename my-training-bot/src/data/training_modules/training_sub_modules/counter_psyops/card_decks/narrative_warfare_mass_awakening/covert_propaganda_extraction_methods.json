@@ -1,0 +1,132 @@
+{
+    "id": "covert_propaganda_extraction_methods",
+    "name": "Covert Propaganda Extraction Methods",
+    "description": "Techniques for identifying, deconstructing, and neutralizing hidden propaganda within media, institutions, and societal narratives.",
+    "focus": [
+        "Deconstructing Psychological Manipulation",
+        "Identifying Embedded Propaganda",
+        "Neutralizing Mass Influence Tactics"
+    ],
+    "cards": [
+        {
+            "id": "covert_propaganda_1",
+            "title": "Identifying Psychological Anchors",
+            "description": "Locating core emotional triggers used in propaganda narratives.",
+            "bulletpoints": [
+                "Analyze recurring emotionally charged themes across media to identify conditioning attempts.",
+                "Break down fear-based messaging to expose manipulation tactics.",
+                "Recognize repetition patterns designed to reinforce subconscious belief structures."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "covert_propaganda_2",
+            "title": "Linguistic Decryption",
+            "description": "Breaking down manipulative language structures used to frame perception.",
+            "bulletpoints": [
+                "Identify loaded terminology designed to bias interpretation.",
+                "Deconstruct logical fallacies embedded in media and political discourse.",
+                "Contrast different sources on the same event to reveal engineered narratives."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "covert_propaganda_3",
+            "title": "Meme Warfare Deconstruction",
+            "description": "Analyzing and countering viral propaganda memes in social media ecosystems.",
+            "bulletpoints": [
+                "Track the origin of viral memes to uncover coordinated influence campaigns.",
+                "Reverse-engineer the emotional resonance embedded in popularized phrases.",
+                "Use counter-memes to neutralize or redirect narrative hijacking attempts."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "covert_propaganda_4",
+            "title": "Mass Hypnosis Interruption",
+            "description": "Disrupting large-scale hypnotic induction techniques embedded in mainstream media.",
+            "bulletpoints": [
+                "Expose rhythmic speech patterns and repetitive imagery designed to induce trance states.",
+                "Introduce logical contradictions to break hypnotic suggestions.",
+                "Educate the public on how neurolinguistic programming (NLP) is used in media control."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "covert_propaganda_5",
+            "title": "Psyops Narrative Pattern Recognition",
+            "description": "Identifying recurring narrative structures used in psychological operations.",
+            "bulletpoints": [
+                "Map out common crisis exploitation tactics to reveal their artificial orchestration.",
+                "Analyze past false flag operations to detect predictive programming.",
+                "Document similarities in manufactured outrage cycles to expose agenda-driven storytelling."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "covert_propaganda_6",
+            "title": "Breaking Trust Manipulation",
+            "description": "Countering authority-based persuasion tactics used to establish false credibility.",
+            "bulletpoints": [
+                "Expose conflicts of interest in ‘trusted’ institutions and fact-checking organizations.",
+                "Demonstrate how staged consensus is used to manufacture artificial credibility.",
+                "Reveal methods used to discredit dissenting voices through controlled opposition."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "covert_propaganda_7",
+            "title": "Emotional Hijacking Countermeasures",
+            "description": "Recognizing and neutralizing attempts to hijack emotional responses for psychological control.",
+            "bulletpoints": [
+                "Dissect how guilt, fear, and outrage are weaponized to bypass rational thinking.",
+                "Develop techniques to remain emotionally detached while analyzing propaganda.",
+                "Use emotional reframing to shift focus from reactionary to strategic responses."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "covert_propaganda_8",
+            "title": "Deepfake and Synthetic Media Analysis",
+            "description": "Detecting artificially generated content designed for narrative control.",
+            "bulletpoints": [
+                "Learn to identify common deepfake artifacts and inconsistencies in AI-generated media.",
+                "Use digital forensics tools to trace alterations in video and audio sources.",
+                "Develop skepticism protocols for verifying viral media before acceptance."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "covert_propaganda_9",
+            "title": "Psychological Reversal Techniques",
+            "description": "Reversing engineered beliefs by systematically dismantling implanted associations.",
+            "bulletpoints": [
+                "Deconstruct binary thought traps designed to limit perception.",
+                "Expose artificial villains and heroes used to polarize audiences.",
+                "Reframe narratives to emphasize personal autonomy over collective coercion."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "covert_propaganda_10",
+            "title": "Counter-Programming with Truth Narratives",
+            "description": "Constructing and deploying counter-narratives to neutralize embedded propaganda.",
+            "bulletpoints": [
+                "Use factual reconstructions to challenge official narratives without triggering cognitive dissonance.",
+                "Leverage storytelling and symbolism to make counter-narratives emotionally compelling.",
+                "Create decentralized truth networks to amplify counter-narratives outside mainstream control."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        }
+    ]
+}

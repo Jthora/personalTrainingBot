@@ -1,0 +1,132 @@
+{
+    "id": "source_reliability_assessment",
+    "name": "Source Reliability Assessment",
+    "description": "Training to evaluate the credibility, trustworthiness, and biases of information sources in intelligence and disinformation analysis.",
+    "focus": [
+        "Assessing Source Credibility",
+        "Detecting Bias & Manipulation",
+        "Verifying Authenticity of Information"
+    ],
+    "cards": [
+        {
+            "id": "source_reliability_1",
+            "title": "Understanding Source Classification",
+            "description": "Differentiating between primary, secondary, and tertiary sources to determine reliability.",
+            "bulletpoints": [
+                "Identifying firsthand accounts vs. secondhand retellings.",
+                "Assessing the credibility of institutional vs. independent sources.",
+                "Understanding how proximity to an event affects information accuracy."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "source_reliability_2",
+            "title": "Identifying Conflicts of Interest",
+            "description": "Determining whether a source has a vested interest in shaping a particular narrative.",
+            "bulletpoints": [
+                "Analyzing financial and political motivations behind sources.",
+                "Tracking sponsorships, funding sources, and institutional affiliations.",
+                "Recognizing astroturfing and manufactured grassroots movements."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "source_reliability_3",
+            "title": "Cross-Referencing & Corroboration",
+            "description": "Validating claims by comparing multiple independent sources.",
+            "bulletpoints": [
+                "Understanding how triangulation strengthens source reliability.",
+                "Detecting discrepancies between sources and identifying red flags.",
+                "Using OSINT (Open Source Intelligence) tools for real-time corroboration."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "source_reliability_4",
+            "title": "Evaluating Historical Accuracy",
+            "description": "Assessing a source’s track record for accuracy and credibility over time.",
+            "bulletpoints": [
+                "Tracking past misinformation and retractions from media outlets.",
+                "Identifying patterns of bias and recurring misleading narratives.",
+                "Assessing the impact of previous reporting on public perception."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "source_reliability_5",
+            "title": "Detecting Emotional & Psychological Manipulation",
+            "description": "Recognizing when a source is using emotional appeals to override critical thinking.",
+            "bulletpoints": [
+                "Identifying fear-mongering and emotionally charged language.",
+                "Recognizing guilt-tripping, outrage cycles, and virtue signaling.",
+                "Analyzing language framing and its effect on cognitive biases."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "source_reliability_6",
+            "title": "Analyzing Disinformation Patterns",
+            "description": "Detecting when a source is spreading deliberate falsehoods.",
+            "bulletpoints": [
+                "Recognizing hallmarks of government-backed or corporate disinformation.",
+                "Tracking the evolution of a false narrative through media cycles.",
+                "Differentiating between accidental misinformation and active PsyOps."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "source_reliability_7",
+            "title": "Verifying Multimedia Authenticity",
+            "description": "Using forensic analysis to confirm the authenticity of images, videos, and audio.",
+            "bulletpoints": [
+                "Applying metadata analysis to detect tampering and digital manipulation.",
+                "Utilizing AI-based deepfake detection techniques.",
+                "Cross-referencing visual elements against known databases for verification."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "source_reliability_8",
+            "title": "Assessing Alternative Media & Citizen Journalism",
+            "description": "Evaluating the strengths and weaknesses of non-mainstream media sources.",
+            "bulletpoints": [
+                "Identifying genuine grassroots investigative journalism.",
+                "Recognizing potential echo chambers and information silos.",
+                "Cross-referencing alternative sources with established intelligence frameworks."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "source_reliability_9",
+            "title": "Detecting Controlled Opposition",
+            "description": "Recognizing when a source is posing as independent while serving hidden interests.",
+            "bulletpoints": [
+                "Tracking intelligence and corporate ties behind so-called 'whistleblowers.'",
+                "Identifying patterns of misdirection and limited hangout strategies.",
+                "Analyzing how opposition narratives are used to neutralize genuine dissent."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "source_reliability_10",
+            "title": "Building a Reliable Intelligence Network",
+            "description": "Creating a system of trustworthy information sources for long-term intelligence work.",
+            "bulletpoints": [
+                "Developing a methodology for vetting and ranking sources.",
+                "Building decentralized research teams for multi-perspective verification.",
+                "Applying peer review and critical analysis techniques to strengthen assessments."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

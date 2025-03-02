@@ -1,27 +1,132 @@
 {
     "id": "fact_checking_methods",
     "name": "Fact-Checking Methods",
-    "description": "Techniques to systematically verify information and counter misinformation.",
+    "description": "Training in advanced methodologies for verifying information, detecting false claims, and countering disinformation.",
     "focus": [
         "Source Verification",
-        "Media Literacy"
+        "Cross-Referencing Claims",
+        "Identifying Logical Fallacies"
     ],
     "cards": [
         {
-            "id": "fact_check_1",
-            "title": "Source Validation",
-            "description": "Assessing the credibility and reliability of an information source.",
-            "bulletpoints": "Identify original sources, cross-check multiple reports, evaluate author credibility",
-            "duration": "15",
+            "id": "fact_checking_1",
+            "title": "Fundamentals of Fact-Checking",
+            "description": "Understanding the core principles and importance of fact-checking in countering disinformation.",
+            "bulletpoints": [
+                "Defining fact-checking and its role in information integrity.",
+                "Recognizing the necessity of independent verification.",
+                "Understanding biases in fact-checking organizations."
+            ],
+            "duration": "60",
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "fact_checking_2",
+            "title": "Source Credibility Assessment",
+            "description": "Evaluating the reliability of sources through credibility analysis techniques.",
+            "bulletpoints": [
+                "Identifying authoritative vs. dubious sources.",
+                "Checking for conflicts of interest in media organizations.",
+                "Examining the track record of a source for bias and reliability."
+            ],
+            "duration": "75",
             "difficulty": "Intermediate"
         },
         {
-            "id": "fact_check_2",
-            "title": "Reverse Image Search",
-            "description": "Using image verification tools to detect manipulated or misattributed media.",
-            "bulletpoints": "Use reverse search engines, analyze metadata, cross-reference similar content",
-            "duration": "10",
-            "difficulty": "Beginner"
+            "id": "fact_checking_3",
+            "title": "Cross-Referencing & Triangulation",
+            "description": "Using multiple independent sources to verify claims and detect inconsistencies.",
+            "bulletpoints": [
+                "Applying the rule of three: verifying facts across independent sources.",
+                "Spotting contradictions in reporting.",
+                "Identifying patterns of synchronized media narratives."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "fact_checking_4",
+            "title": "Detecting Logical Fallacies & Manipulation",
+            "description": "Identifying logical fallacies and deceptive rhetoric in media and political discourse.",
+            "bulletpoints": [
+                "Recognizing ad hominem, straw man, and false equivalency arguments.",
+                "Understanding how emotional appeals distort rational analysis.",
+                "Spotting red herrings and misdirection tactics."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "fact_checking_5",
+            "title": "Reverse Image & Video Verification",
+            "description": "Utilizing forensic tools to analyze images and videos for manipulation.",
+            "bulletpoints": [
+                "Using reverse image search to track the origin of photos.",
+                "Identifying deepfake videos and AI-generated content.",
+                "Examining metadata for tampering and inconsistencies."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "fact_checking_6",
+            "title": "Social Media Disinformation Patterns",
+            "description": "Analyzing how disinformation spreads on social media and fact-checking viral claims.",
+            "bulletpoints": [
+                "Tracking the amplification of falsehoods through bot networks.",
+                "Examining hashtag campaigns for artificial trends.",
+                "Identifying patterns of influence operations."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "fact_checking_7",
+            "title": "AI-Assisted Fact-Checking",
+            "description": "Leveraging AI tools to automate and enhance fact-checking processes.",
+            "bulletpoints": [
+                "Using AI-driven text analysis for detecting false narratives.",
+                "Deploying natural language processing to identify propaganda.",
+                "Recognizing limitations and biases in AI fact-checking algorithms."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "fact_checking_8",
+            "title": "Government & Institutional Fact-Checking",
+            "description": "Assessing the validity of government-issued statements and institutional claims.",
+            "bulletpoints": [
+                "Identifying political bias in official statements.",
+                "Examining discrepancies between official and independent reports.",
+                "Recognizing the use of selective statistics to mislead."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "fact_checking_9",
+            "title": "Forensic Linguistics in Fact-Checking",
+            "description": "Using linguistic analysis to detect inconsistencies and deception in statements.",
+            "bulletpoints": [
+                "Identifying linguistic markers of deception.",
+                "Recognizing strategic omissions and ambiguous phrasing.",
+                "Comparing speech patterns in authentic vs. fabricated statements."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "fact_checking_10",
+            "title": "Countering Misinformation Through Public Awareness",
+            "description": "Developing strategies to educate the public and enhance media literacy.",
+            "bulletpoints": [
+                "Creating educational content to debunk widespread myths.",
+                "Engaging in digital activism to challenge falsehoods.",
+                "Building decentralized truth-verification communities."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

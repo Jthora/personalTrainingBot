@@ -1,26 +1,131 @@
 {
     "id": "deprogramming_psyops_effects",
     "name": "Deprogramming PsyOps Effects",
-    "description": "Methods to reverse subconscious conditioning and cognitive programming imposed by PsyOps tactics.",
+    "description": "Training techniques to reverse psychological conditioning, remove embedded manipulations, and restore mental sovereignty after exposure to PsyOps.",
     "focus": [
-        "Subconscious Reprogramming",
-        "Mental Detoxification"
+        "Cognitive Deprogramming",
+        "Psychological Autonomy Recovery",
+        "Resilience Against Mind Manipulation"
     ],
     "cards": [
         {
-            "id": "deprogram_1",
-            "title": "Breaking Conditioned Responses",
-            "description": "Counteracting conditioned thought patterns and automatic compliance behaviors.",
-            "bulletpoints": "Use exposure reversal, neural repatterning, and cognitive autonomy reinforcement",
-            "duration": "20",
+            "id": "deprogram_psyops_1",
+            "title": "Identifying Psychological Conditioning",
+            "description": "Recognizing the psychological imprints left by manipulative programming.",
+            "bulletpoints": [
+                "Audit thought patterns and beliefs for external influence markers.",
+                "Use journaling to track cognitive shifts before and after exposure.",
+                "Compare narratives encountered in media with known disinformation tactics."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "deprogram_psyops_2",
+            "title": "Breaking Cognitive Loops",
+            "description": "Disrupting and dissolving repetitive negative thought cycles implanted through PsyOps.",
+            "bulletpoints": [
+                "Engage in pattern recognition exercises to detect and neutralize loops.",
+                "Use meditation and mindfulness to observe thoughts without attachment.",
+                "Implement intentional cognitive redirection when intrusive loops trigger."
+            ],
+            "duration": "75",
             "difficulty": "Advanced"
         },
         {
-            "id": "deprogram_2",
-            "title": "Neutralizing Emotional Anchors",
-            "description": "Eliminating emotional triggers and anchors placed by psychological manipulation tactics.",
-            "bulletpoints": "Implement emotional desensitization, anchor dissociation, and subconscious untethering techniques",
-            "duration": "25",
+            "id": "deprogram_psyops_3",
+            "title": "Reverse Engineering Mind Manipulation",
+            "description": "Dissecting PsyOps strategies used to manipulate perception and belief.",
+            "bulletpoints": [
+                "Analyze media messages for embedded persuasion tactics.",
+                "Disassemble propaganda techniques by breaking down their narrative structure.",
+                "Compare different information sources to triangulate truth."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "deprogram_psyops_4",
+            "title": "Emotional Decoupling",
+            "description": "Detaching emotions from implanted triggers designed to control reactions.",
+            "bulletpoints": [
+                "Use cognitive behavioral techniques to separate emotions from triggers.",
+                "Reframe trauma-induced responses through exposure therapy techniques.",
+                "Replace conditioned fear responses with neutral or positive associations."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "deprogram_psyops_5",
+            "title": "Disengaging from Controlled Narratives",
+            "description": "Severing psychological attachment to disinformation loops.",
+            "bulletpoints": [
+                "Assess the credibility of sources before engaging with new information.",
+                "Limit exposure to high-intensity propaganda outlets.",
+                "Rebuild personal beliefs based on verified independent research."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "deprogram_psyops_6",
+            "title": "Neuro-Linguistic Reprogramming",
+            "description": "Replacing harmful mental scripts with conscious self-directed thought patterns.",
+            "bulletpoints": [
+                "Use affirmations to override implanted negative beliefs.",
+                "Rewire cognitive pathways through deliberate positive reinforcement.",
+                "Engage in storytelling techniques to reclaim personal narrative control."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "deprogram_psyops_7",
+            "title": "Restoring Critical Thinking Abilities",
+            "description": "Recovering and strengthening independent reasoning skills after manipulation.",
+            "bulletpoints": [
+                "Engage in problem-solving exercises to rebuild logical processing.",
+                "Challenge beliefs regularly to refine analytical clarity.",
+                "Avoid emotional decision-making by using structured thought methodologies."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "deprogram_psyops_8",
+            "title": "Social Reintegration After Psychological Manipulation",
+            "description": "Rebuilding trust and navigating relationships after exposure to disinformation.",
+            "bulletpoints": [
+                "Engage in open discussions with others who have escaped PsyOps control.",
+                "Develop a strong support network of individuals who value independent thought.",
+                "Avoid ideological echo chambers that reinforce manipulation patterns."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "deprogram_psyops_9",
+            "title": "PsyOps Detox Protocols",
+            "description": "Removing subconscious residue left by prolonged exposure to psychological operations.",
+            "bulletpoints": [
+                "Take extended breaks from manipulated media sources.",
+                "Engage in creative or meditative activities to reset mental pathways.",
+                "Use sleep optimization techniques to clear subconscious programming."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "deprogram_psyops_10",
+            "title": "Building Long-Term Immunity to PsyOps",
+            "description": "Developing lasting psychological defenses against future influence operations.",
+            "bulletpoints": [
+                "Regularly update mental self-defense strategies against emerging PsyOps tactics.",
+                "Cultivate continuous self-awareness to detect early signs of manipulation.",
+                "Teach others deprogramming techniques to strengthen collective resistance."
+            ],
+            "duration": "150",
             "difficulty": "Expert"
         }
     ]

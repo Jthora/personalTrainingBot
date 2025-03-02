@@ -1,27 +1,132 @@
 {
     "id": "gaslighting_and_brainwashing_defense",
     "name": "Gaslighting and Brainwashing Defense",
-    "description": "Techniques to recognize and neutralize psychological gaslighting and mind control attempts.",
+    "description": "Training to recognize, counter, and neutralize gaslighting and brainwashing techniques used for psychological manipulation.",
     "focus": [
-        "Gaslighting Recognition",
-        "Cognitive Integrity Maintenance"
+        "Recognizing Gaslighting Patterns",
+        "Cognitive and Emotional Resilience",
+        "Psychological Autonomy Preservation"
     ],
     "cards": [
         {
-            "id": "gaslight_1",
-            "title": "Recognizing Gaslighting Techniques",
-            "description": "Identifying signs of gaslighting in conversations and relationships.",
-            "bulletpoints": "Notice denial of past statements, contradiction loops, and forced self-doubt",
-            "duration": "15",
+            "id": "gaslighting_defense_1",
+            "title": "Understanding Gaslighting",
+            "description": "Breaking down gaslighting tactics and their psychological effects.",
+            "bulletpoints": [
+                "Defining gaslighting and its historical use in psychological warfare.",
+                "Identifying the emotional and cognitive impact of prolonged gaslighting.",
+                "Recognizing key phrases and behaviors used in gaslighting attacks."
+            ],
+            "duration": "60",
             "difficulty": "Intermediate"
         },
         {
-            "id": "gaslight_2",
-            "title": "Breaking Brainwashing Cycles",
-            "description": "Methods to reverse psychological conditioning from manipulative influences.",
-            "bulletpoints": "Deconstruct false narratives, strengthen personal reality anchors, avoid isolation effects",
-            "duration": "20",
+            "id": "gaslighting_defense_2",
+            "title": "Tactics of the Gaslighter",
+            "description": "Recognizing common manipulative strategies used by gaslighters.",
+            "bulletpoints": [
+                "Projection: How gaslighters accuse their targets of their own actions.",
+                "Denial and trivialization: Minimizing valid concerns and experiences.",
+                "Rewriting reality: Manipulating past events to create self-doubt."
+            ],
+            "duration": "75",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "gaslighting_defense_3",
+            "title": "Defensive Cognitive Anchoring",
+            "description": "Strengthening mental defenses against reality distortion.",
+            "bulletpoints": [
+                "Establishing mental anchors to verify personal reality.",
+                "Utilizing external validation methods to reinforce truth perception.",
+                "Countering forced cognitive dissonance with logical restructuring."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "gaslighting_defense_4",
+            "title": "Emotional Manipulation Resistance",
+            "description": "Developing resilience against guilt-tripping and emotional coercion.",
+            "bulletpoints": [
+                "Recognizing when emotions are being weaponized against you.",
+                "Distinguishing between genuine emotions and implanted guilt/shame.",
+                "Tactical disengagement strategies to neutralize emotional hooks."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "gaslighting_defense_5",
+            "title": "Verbal Countermeasures Against Gaslighting",
+            "description": "Tactical responses to disrupt and neutralize gaslighting attempts.",
+            "bulletpoints": [
+                "Recognizing and refusing false narratives.",
+                "Using assertive questioning to expose manipulation.",
+                "Turning gaslighting back on the manipulator with controlled responses."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "gaslighting_defense_6",
+            "title": "Psychological Deprogramming",
+            "description": "Reversing the effects of prolonged exposure to gaslighting and brainwashing.",
+            "bulletpoints": [
+                "Cognitive recalibration techniques to undo psychological conditioning.",
+                "Memory reconstruction methods to separate fact from implanted distortions.",
+                "Self-validation exercises to restore autonomy and confidence."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "gaslighting_defense_7",
+            "title": "Brainwashing Techniques and Countermeasures",
+            "description": "Understanding the mechanisms behind brainwashing and how to resist them.",
+            "bulletpoints": [
+                "Recognizing forced thought loops and breaking out of them.",
+                "Understanding coercive persuasion and how it shapes beliefs.",
+                "Deploying cognitive dissonance disruption to weaken brainwashing effects."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "gaslighting_defense_8",
+            "title": "Recognizing NLP and Hypnotic Suggestion",
+            "description": "Identifying neuro-linguistic programming (NLP) and hypnotic control techniques.",
+            "bulletpoints": [
+                "Recognizing embedded commands in speech and media.",
+                "Understanding suggestibility and how it is exploited.",
+                "Countermeasures against hypnotic influence and trance induction."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "gaslighting_defense_9",
+            "title": "Media Manipulation and Psychological Operations",
+            "description": "How media is used to gaslight and shape public perception.",
+            "bulletpoints": [
+                "Recognizing mass gaslighting in news, entertainment, and propaganda.",
+                "Understanding the Overton Window and how narratives are shifted.",
+                "Strategies for critically analyzing media to detect manipulation."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "gaslighting_defense_10",
+            "title": "Building a Psychological Fortress",
+            "description": "Creating long-term defenses against gaslighting and brainwashing attempts.",
+            "bulletpoints": [
+                "Establishing an internal reality check system for personal sovereignty.",
+                "Developing strong mental patterns to resist cognitive rewiring.",
+                "Training in controlled skepticism to balance open-mindedness and defense."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
         }
     ]
 }

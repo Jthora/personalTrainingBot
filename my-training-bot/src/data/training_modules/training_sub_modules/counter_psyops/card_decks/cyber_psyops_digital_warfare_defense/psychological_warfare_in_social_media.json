@@ -1,0 +1,132 @@
+{
+    "id": "psychological_warfare_in_social_media",
+    "name": "Psychological Warfare in Social Media",
+    "description": "Training in countering, manipulating, and neutralizing psychological operations executed through social media platforms.",
+    "focus": [
+        "Social Media Influence Warfare",
+        "Mass Manipulation and Narrative Control",
+        "Psychological Countermeasures in Digital Spaces"
+    ],
+    "cards": [
+        {
+            "id": "social_psyops_1",
+            "title": "Identifying Social Media Psychological Operations",
+            "description": "Recognizing tactics used in large-scale digital influence campaigns.",
+            "bulletpoints": [
+                "Detecting the use of emotion-driven propaganda and fear tactics.",
+                "Analyzing content patterns to uncover coordinated manipulation.",
+                "Understanding how botnets and AI-driven accounts amplify narratives."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "social_psyops_2",
+            "title": "Algorithmic Manipulation and Censorship Warfare",
+            "description": "Understanding how algorithms shape digital narratives and influence behavior.",
+            "bulletpoints": [
+                "Decoding content suppression and algorithmic throttling strategies.",
+                "Tracking how recommendation engines amplify specific agendas.",
+                "Bypassing algorithmic control mechanisms using decentralized techniques."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "social_psyops_3",
+            "title": "Mass Persuasion Techniques in Social Media Warfare",
+            "description": "Leveraging psychological principles to manipulate or counteract narratives.",
+            "bulletpoints": [
+                "Applying cognitive bias exploitation for maximum audience impact.",
+                "Using anchoring, repetition, and social proof to control discourse.",
+                "Understanding meme warfare and its role in psychological influence."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "social_psyops_4",
+            "title": "Countering Disinformation Campaigns",
+            "description": "Developing techniques to detect, expose, and neutralize digital disinformation.",
+            "bulletpoints": [
+                "Tracing disinformation sources to uncover influence networks.",
+                "Disrupting narrative control through real-time fact-checking tactics.",
+                "Deploying counter-propaganda strategies to neutralize misinformation."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "social_psyops_5",
+            "title": "Weaponized Fear and Outrage in Social Media",
+            "description": "Recognizing and counteracting tactics that exploit fear, outrage, and division.",
+            "bulletpoints": [
+                "Identifying emotional triggers embedded in viral narratives.",
+                "Neutralizing fear-based messaging through psychological inoculation.",
+                "Deploying calming and rational counter-narratives to reduce polarization."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "social_psyops_6",
+            "title": "Coordinating Digital Counter-Offensives",
+            "description": "Executing real-time digital resistance operations against adversarial PsyOps.",
+            "bulletpoints": [
+                "Organizing decentralized teams for coordinated social media engagement.",
+                "Amplifying strategic narratives to shift public perception.",
+                "Utilizing swarm intelligence to counteract mass manipulation efforts."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "social_psyops_7",
+            "title": "Infiltrating and Disrupting Enemy Influence Networks",
+            "description": "Engaging in counter-infiltration tactics to neutralize hostile digital actors.",
+            "bulletpoints": [
+                "Creating controlled opposition accounts to manipulate discourse.",
+                "Leveraging sock puppet networks to influence adversarial communities.",
+                "Subverting enemy propaganda by injecting destabilizing counter-narratives."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "social_psyops_8",
+            "title": "Social Engineering Attacks in Psychological Warfare",
+            "description": "Defending against manipulative tactics used to alter perception and behavior.",
+            "bulletpoints": [
+                "Identifying and resisting manufactured social pressure tactics.",
+                "Recognizing real-time sentiment manipulation techniques.",
+                "Using strategic disengagement to avoid psychological capture."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "social_psyops_9",
+            "title": "Psychological Resilience Against Digital PsyOps",
+            "description": "Building mental immunity to manipulation and information warfare.",
+            "bulletpoints": [
+                "Developing pattern recognition to detect deceptive narratives.",
+                "Training cognitive autonomy to resist external influence.",
+                "Using behavioral reinforcement techniques to maintain resistance."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "social_psyops_10",
+            "title": "Building Decentralized Resistance Networks",
+            "description": "Establishing secure, independent digital communities to resist control mechanisms.",
+            "bulletpoints": [
+                "Using encrypted communication channels to bypass surveillance.",
+                "Leveraging decentralized platforms for narrative control and resistance.",
+                "Creating redundancy networks to maintain access to information during censorship."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

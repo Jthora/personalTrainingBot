@@ -1,26 +1,131 @@
 {
     "id": "narrative_deconstruction_methods",
     "name": "Narrative Deconstruction Methods",
-    "description": "Techniques for breaking down and exposing false or misleading narratives.",
+    "description": "Training in analyzing, breaking down, and neutralizing deceptive or manipulative narratives.",
     "focus": [
-        "Critical Thinking",
-        "Disinformation Dissection"
+        "Critical Thinking & Pattern Recognition",
+        "Psychological Framing & Persuasion Tactics",
+        "Dissecting Historical & Cultural Narrative Control"
     ],
     "cards": [
         {
-            "id": "narrative_1",
-            "title": "Tracing Narrative Origins",
-            "description": "Tracking where a story originates and how it spreads through media.",
-            "bulletpoints": "Analyze press releases, think tank affiliations, and coordinated talking points",
-            "duration": "20",
+            "id": "narrative_deconstruction_1",
+            "title": "Identifying Core Narrative Structures",
+            "description": "Recognizing the underlying architecture of mass media storytelling.",
+            "bulletpoints": [
+                "Break down narratives into their fundamental elements: protagonist, antagonist, conflict, resolution.",
+                "Recognize common storytelling tropes used to reinforce ideological conditioning.",
+                "Compare news stories, political speeches, and corporate messaging for structural similarities."
+            ],
+            "duration": "90",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "narrative_deconstruction_2",
+            "title": "Spotting Psychological Framing Techniques",
+            "description": "Analyzing how language and imagery shape perception.",
+            "bulletpoints": [
+                "Identify emotional trigger words designed to bypass logical analysis.",
+                "Recognize subtle linguistic shifts that alter the meaning of events.",
+                "Break down media headlines and political statements for bias and spin."
+            ],
+            "duration": "75",
             "difficulty": "Advanced"
         },
         {
-            "id": "narrative_2",
-            "title": "Spotting Logical Fallacies in Narratives",
-            "description": "Identifying manipulative logic and rhetorical tricks used in deceptive storytelling.",
-            "bulletpoints": "Break down strawman arguments, false equivalencies, and ad hominem attacks",
-            "duration": "25",
+            "id": "narrative_deconstruction_3",
+            "title": "False Dichotomy & Limited Choice Illusions",
+            "description": "Recognizing when narratives present controlled, pre-selected options.",
+            "bulletpoints": [
+                "Analyze public discourse for binary choices that exclude alternative viewpoints.",
+                "Expose false oppositions used to distract from the real issues.",
+                "Deconstruct election debates, policy decisions, and media controversies for hidden narratives."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "narrative_deconstruction_4",
+            "title": "The 'Big Lie' & Repetitive Reinforcement",
+            "description": "Examining how repeating falsehoods embeds them in public consciousness.",
+            "bulletpoints": [
+                "Track how key phrases and slogans are repeated across multiple platforms.",
+                "Investigate instances where unverified claims are presented as established fact.",
+                "Apply pattern recognition to detect mass opinion-shaping campaigns."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "narrative_deconstruction_5",
+            "title": "Selective Omission & Controlled Exposure",
+            "description": "Understanding how what is left out is just as important as what is presented.",
+            "bulletpoints": [
+                "Compare international news coverage of the same event for omitted details.",
+                "Investigate why certain facts are buried deep in reports while others are emphasized.",
+                "Analyze historical narratives for erased or rewritten elements."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "narrative_deconstruction_6",
+            "title": "The Role of Controlled Opposition",
+            "description": "Exposing narratives that appear rebellious but ultimately serve the status quo.",
+            "bulletpoints": [
+                "Analyze movements, organizations, and individuals positioned as 'opposition' for signs of control.",
+                "Investigate funding sources and affiliations behind mainstream dissent.",
+                "Identify narratives that appear revolutionary but reinforce existing power structures."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "narrative_deconstruction_7",
+            "title": "Deconstructing Manufactured Crises",
+            "description": "Analyzing the media response to major events to detect manipulation.",
+            "bulletpoints": [
+                "Examine how government and corporate interests benefit from crisis narratives.",
+                "Identify patterns in media coverage that suggest coordination and pre-planned messaging.",
+                "Track changes in laws, policies, and financial markets surrounding high-profile crises."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "narrative_deconstruction_8",
+            "title": "Deciphering Predictive Programming",
+            "description": "Identifying how future events are pre-conditioned into public consciousness.",
+            "bulletpoints": [
+                "Analyze movies, TV shows, and books for narratives that later unfold in real life.",
+                "Recognize symbolic foreshadowing and thematic repetition in media.",
+                "Trace connections between fictional depictions and real-world policy shifts."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "narrative_deconstruction_9",
+            "title": "Inoculation Against Propaganda",
+            "description": "Building resilience against long-term exposure to controlled narratives.",
+            "bulletpoints": [
+                "Develop a daily practice of cross-referencing information from diverse sources.",
+                "Use mindfulness techniques to remain aware of emotional manipulation in messaging.",
+                "Train in logical deconstruction to break down complex propaganda into simple components."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "narrative_deconstruction_10",
+            "title": "Constructing Counter-Narratives",
+            "description": "Strategically deploying truth-based narratives to disrupt control mechanisms.",
+            "bulletpoints": [
+                "Craft alternative narratives based on verifiable evidence and historical accuracy.",
+                "Use viral communication techniques to spread counter-narratives effectively.",
+                "Identify key pressure points in mass perception to introduce disruptive insights."
+            ],
+            "duration": "120",
             "difficulty": "Expert"
         }
     ]

@@ -1,0 +1,132 @@
+{
+    "id": "identifying_deep_state_psyops",
+    "name": "Identifying Deep State PsyOps",
+    "description": "Training in recognizing, analyzing, and neutralizing psychological operations orchestrated by deep state entities to control public perception and manipulate global narratives.",
+    "focus": [
+        "Recognizing PsyOps in Media & Politics",
+        "Covert Influence & Narrative Control",
+        "Countering Psychological Manipulation"
+    ],
+    "cards": [
+        {
+            "id": "deep_state_psyops_1",
+            "title": "Understanding Psychological Operations (PsyOps)",
+            "description": "Introduction to the fundamental principles of psychological operations.",
+            "bulletpoints": [
+                "Defining PsyOps and their role in statecraft and mass control.",
+                "Examining historical examples of military and intelligence PsyOps.",
+                "Understanding the psychological and sociological impact of PsyOps."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "deep_state_psyops_2",
+            "title": "Media Manipulation & Narrative Warfare",
+            "description": "Analyzing the use of mainstream and alternative media in PsyOps campaigns.",
+            "bulletpoints": [
+                "Identifying controlled opposition within media organizations.",
+                "Recognizing linguistic programming and subliminal messaging.",
+                "Dissecting coordinated propaganda and fake news dissemination."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "deep_state_psyops_3",
+            "title": "False Flags & Manufactured Crises",
+            "description": "Examining the structure and function of false flag operations in deep state PsyOps.",
+            "bulletpoints": [
+                "Identifying key markers of false flag attacks.",
+                "Analyzing historical case studies of false flag events.",
+                "Understanding the role of crisis actors and staged events."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "deep_state_psyops_4",
+            "title": "Social Engineering & Behavioral Conditioning",
+            "description": "How deep state entities use psychological conditioning to shape public behavior.",
+            "bulletpoints": [
+                "Recognizing predictive programming in entertainment and education.",
+                "Examining mass formation psychosis and engineered belief systems.",
+                "Analyzing how trauma-based programming influences societal reactions."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "deep_state_psyops_5",
+            "title": "Censorship & Algorithmic Thought Control",
+            "description": "Understanding AI-driven censorship and the role of big tech in psychological control.",
+            "bulletpoints": [
+                "Analyzing algorithmic manipulation of search results and social media.",
+                "Recognizing AI-generated misinformation and automated thought control.",
+                "Countering censorship through decentralized platforms and alternative networks."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "deep_state_psyops_6",
+            "title": "Controlled Opposition & Gatekeepers",
+            "description": "Identifying controlled opposition figures and their role in misleading movements.",
+            "bulletpoints": [
+                "Recognizing intelligence assets infiltrating grassroots organizations.",
+                "Understanding how gatekeepers prevent access to critical knowledge.",
+                "Dissecting movements engineered to misdirect public resistance."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "deep_state_psyops_7",
+            "title": "Psychological Warfare in Government & Law Enforcement",
+            "description": "How psychological operations influence government policy and policing.",
+            "bulletpoints": [
+                "Examining COINTELPRO tactics used to neutralize political dissidents.",
+                "Understanding mind control experiments within intelligence agencies.",
+                "Recognizing how psychological operations shape military and police behavior."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "deep_state_psyops_8",
+            "title": "PsyOps in the Financial Sector",
+            "description": "Identifying economic manipulation as a psychological control mechanism.",
+            "bulletpoints": [
+                "Analyzing financial crashes and debt cycles as engineered events.",
+                "Recognizing central banking policies designed for mass control.",
+                "Understanding the psychological impact of inflation and economic warfare."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "deep_state_psyops_9",
+            "title": "Spiritual Warfare & Occult Symbolism in PsyOps",
+            "description": "Deciphering the esoteric aspects of psychological warfare used by global elites.",
+            "bulletpoints": [
+                "Recognizing occult symbology embedded in mass media and events.",
+                "Understanding the psychological impact of fear-based religious control.",
+                "Identifying rituals disguised as mainstream political and cultural events."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "deep_state_psyops_10",
+            "title": "Counter-PsyOps & Resistance Strategies",
+            "description": "Developing methodologies to neutralize and counteract psychological warfare.",
+            "bulletpoints": [
+                "Building mental resilience against psychological manipulation.",
+                "Exposing and disrupting deep state influence networks.",
+                "Developing decentralized counter-PsyOps strategies for public awareness."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

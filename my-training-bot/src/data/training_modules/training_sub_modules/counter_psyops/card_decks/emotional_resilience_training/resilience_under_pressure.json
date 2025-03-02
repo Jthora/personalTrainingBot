@@ -1,26 +1,131 @@
 {
     "id": "resilience_under_pressure",
     "name": "Resilience Under Pressure",
-    "description": "Training in maintaining mental resilience in high-stress situations.",
+    "description": "Training to maintain mental stability, emotional control, and peak performance under stress and high-pressure situations.",
     "focus": [
-        "Stress Tolerance",
-        "Crisis Adaptation"
+        "Stress Resistance",
+        "Emotional Endurance",
+        "Performance Optimization"
     ],
     "cards": [
         {
             "id": "resilience_1",
-            "title": "Controlled Exposure to Stressors",
-            "description": "Practicing adaptive responses to controlled psychological stress.",
-            "bulletpoints": "Incremental exposure, breathing regulation, controlled emotional response training",
-            "duration": "15",
-            "difficulty": "Advanced"
+            "title": "Understanding Pressure and Stress Responses",
+            "description": "Recognizing how stress affects cognitive function, emotional regulation, and decision-making.",
+            "bulletpoints": [
+                "Differentiating between eustress (positive stress) and distress (negative stress).",
+                "Recognizing physiological and psychological signs of stress under pressure.",
+                "Developing situational awareness of stressors in high-intensity environments."
+            ],
+            "duration": "60",
+            "difficulty": "Beginner"
         },
         {
             "id": "resilience_2",
-            "title": "Mental Fortitude Development",
-            "description": "Building long-term mental endurance through discipline and adaptive mindset techniques.",
-            "bulletpoints": "Mindfulness resilience, long-term stress conditioning, high-pressure decision-making drills",
-            "duration": "20",
+            "title": "Controlled Breathing Techniques",
+            "description": "Using breathing exercises to regulate heart rate, oxygen intake, and mental clarity under stress.",
+            "bulletpoints": [
+                "Applying box breathing for immediate stress reduction.",
+                "Using diaphragmatic breathing to maintain emotional stability.",
+                "Practicing tactical breathing to enhance cognitive performance in high-pressure scenarios."
+            ],
+            "duration": "60",
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "resilience_3",
+            "title": "Cognitive Reframing in High-Stakes Situations",
+            "description": "Reframing challenges as opportunities to strengthen mental toughness.",
+            "bulletpoints": [
+                "Using positive reappraisal to shift perspective on stressful events.",
+                "Applying detachment techniques to prevent emotional overload.",
+                "Developing a growth mindset to turn pressure into an advantage."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "resilience_4",
+            "title": "Emotional Grounding and Stabilization",
+            "description": "Techniques for maintaining emotional control in chaotic or high-stress conditions.",
+            "bulletpoints": [
+                "Using physical anchoring techniques to remain present and stable.",
+                "Practicing emotional dissociation to neutralize overwhelming feelings.",
+                "Employing sensory grounding to reinforce situational awareness."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "resilience_5",
+            "title": "Adaptive Response to Crisis",
+            "description": "Developing the ability to think clearly and act decisively during crises.",
+            "bulletpoints": [
+                "Understanding the freeze, fight, or flight response and how to override panic.",
+                "Practicing scenario-based decision-making to build adaptive resilience.",
+                "Using rapid assessment techniques to prioritize actions under pressure."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "resilience_6",
+            "title": "Mental Endurance Training",
+            "description": "Building mental stamina to withstand prolonged periods of stress and uncertainty.",
+            "bulletpoints": [
+                "Implementing micro-recovery strategies for sustainable resilience.",
+                "Practicing mental visualization to reinforce confidence and stability.",
+                "Training in incremental stress exposure to condition psychological endurance."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "resilience_7",
+            "title": "Peak Performance Under Pressure",
+            "description": "Leveraging stress as a tool for enhanced focus, efficiency, and performance.",
+            "bulletpoints": [
+                "Understanding the Yerkes-Dodson Law for stress-performance optimization.",
+                "Applying flow-state triggers to achieve peak cognitive function.",
+                "Developing high-pressure routines to ensure automatic, efficient responses."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "resilience_8",
+            "title": "Tactical Disassociation for Crisis Management",
+            "description": "Mastering the ability to disconnect from immediate stress to maintain logical thinking.",
+            "bulletpoints": [
+                "Practicing compartmentalization to focus on mission-critical objectives.",
+                "Using controlled emotional suppression to prevent reactive behavior.",
+                "Engaging in selective awareness to filter out non-essential stressors."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "resilience_9",
+            "title": "Self-Assessment and Recovery Strategies",
+            "description": "Ensuring long-term resilience through self-evaluation and adaptive recovery techniques.",
+            "bulletpoints": [
+                "Conducting personal stress audits to identify resilience thresholds.",
+                "Using active debriefing techniques to process high-stress experiences.",
+                "Implementing structured recovery routines to maintain long-term endurance."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "resilience_10",
+            "title": "Sustained Psychological Fortitude",
+            "description": "Building unshakable mental toughness for lifelong resilience against adversity.",
+            "bulletpoints": [
+                "Reinforcing core psychological frameworks for sustained resistance.",
+                "Practicing antifragility: growing stronger from stress rather than breaking.",
+                "Developing unyielding inner discipline to remain unshaken under any conditions."
+            ],
+            "duration": "90",
             "difficulty": "Expert"
         }
     ]

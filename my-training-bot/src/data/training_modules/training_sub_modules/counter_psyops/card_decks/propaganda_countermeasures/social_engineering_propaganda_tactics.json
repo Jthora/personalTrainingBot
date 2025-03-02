@@ -1,0 +1,132 @@
+{
+    "id": "social_engineering_propaganda_tactics",
+    "name": "Social Engineering Propaganda Tactics",
+    "description": "Training in identifying, countering, and neutralizing propaganda tactics used to manipulate public perception through social engineering.",
+    "focus": [
+        "Psychological Manipulation Recognition",
+        "Deconstructing Social Influence Strategies",
+        "Defensive Countermeasures Against Social Engineering"
+    ],
+    "cards": [
+        {
+            "id": "social_engineering_1",
+            "title": "Understanding Social Engineering Propaganda",
+            "description": "Recognizing the psychological tactics used to manipulate beliefs and behavior.",
+            "bulletpoints": [
+                "Analyze historical and contemporary examples of social engineering in media.",
+                "Identify cognitive biases that are exploited in propaganda campaigns.",
+                "Break down how misinformation spreads through digital and social networks."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "social_engineering_2",
+            "title": "Identifying Controlled Information Flow",
+            "description": "Detecting how narratives are seeded and reinforced through selective exposure.",
+            "bulletpoints": [
+                "Map out key influencers and organizations responsible for narrative shaping.",
+                "Monitor how algorithms filter content to manipulate public perception.",
+                "Identify the difference between organic discourse and coordinated influence campaigns."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "social_engineering_3",
+            "title": "Manipulation Through Authority Figures",
+            "description": "Examining the use of perceived authority to establish and enforce false narratives.",
+            "bulletpoints": [
+                "Study the techniques of appeal to authority and credential manipulation.",
+                "Assess government and corporate-backed experts for bias and agenda alignment.",
+                "Develop independent verification methods to fact-check authoritative claims."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "social_engineering_4",
+            "title": "Gaslighting and Psychological Manipulation",
+            "description": "Recognizing and resisting psychological tactics designed to distort reality.",
+            "bulletpoints": [
+                "Identify patterns of gaslighting in media, politics, and social discourse.",
+                "Use logical deconstruction to expose contradictions in official narratives.",
+                "Develop personal mental resilience strategies against manipulative techniques."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "social_engineering_5",
+            "title": "Weaponizing Groupthink and Peer Pressure",
+            "description": "Understanding how collective influence is used to suppress critical thinking.",
+            "bulletpoints": [
+                "Analyze social reinforcement mechanisms that discourage dissent.",
+                "Recognize emotional appeals used to enforce conformity.",
+                "Develop response strategies to counteract forced consensus."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "social_engineering_6",
+            "title": "False Consensus and Manufactured Consent",
+            "description": "Deconstructing the illusion of public agreement created through mass influence.",
+            "bulletpoints": [
+                "Analyze polling, media coverage, and staged events to detect manufactured consensus.",
+                "Identify astroturfing campaigns that create artificial grassroots movements.",
+                "Use data analysis and public sentiment tracking to compare real vs. fabricated opinions."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "social_engineering_7",
+            "title": "Crisis and Fear-Based Manipulation",
+            "description": "Examining how fear is leveraged to control decision-making and policy shifts.",
+            "bulletpoints": [
+                "Study historical crisis events and how they were used to expand control.",
+                "Recognize patterns in emergency narratives that justify extreme measures.",
+                "Develop counter-messaging techniques to reduce public panic and restore rational discourse."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "social_engineering_8",
+            "title": "Predictive Programming and Mass Conditioning",
+            "description": "Unveiling how future events are pre-seeded into public consciousness.",
+            "bulletpoints": [
+                "Analyze film, literature, and media for patterns of predictive programming.",
+                "Track psychological priming techniques used to prepare the public for policy shifts.",
+                "Develop awareness exercises to recognize conditioning in real-time."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "social_engineering_9",
+            "title": "Infiltrating and Neutralizing Social Engineering Networks",
+            "description": "Exposing and dismantling covert operations that manipulate mass perception.",
+            "bulletpoints": [
+                "Identify front organizations and shell entities used for perception management.",
+                "Monitor digital influence campaigns and their funding sources.",
+                "Develop methods for counter-messaging and narrative disruption."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "social_engineering_10",
+            "title": "Building Psychological Immunity Against Propaganda",
+            "description": "Developing long-term resistance strategies to sustain independent thought.",
+            "bulletpoints": [
+                "Practice cognitive autonomy by questioning all sources, including trusted ones.",
+                "Engage in media detox periods to reset mental frameworks and reduce bias.",
+                "Establish decentralized, trusted information networks outside mainstream control."
+            ],
+            "duration": "150",
+            "difficulty": "Expert"
+        }
+    ]
+}

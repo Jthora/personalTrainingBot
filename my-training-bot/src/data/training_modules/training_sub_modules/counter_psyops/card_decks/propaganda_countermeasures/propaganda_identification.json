@@ -1,27 +1,132 @@
 {
     "id": "propaganda_identification",
     "name": "Propaganda Identification",
-    "description": "Techniques for detecting propaganda and misinformation campaigns used in media and politics.",
+    "description": "Training in recognizing the core techniques of propaganda, distinguishing manipulated narratives, and exposing deceptive influence campaigns.",
     "focus": [
-        "Mass Media Manipulation Detection",
-        "Psychological Persuasion Techniques"
+        "Pattern Recognition in Media Manipulation",
+        "Psychological Persuasion Awareness",
+        "Critical Analysis of Information Sources"
     ],
     "cards": [
         {
-            "id": "propaganda_1",
+            "id": "propaganda_id_1",
             "title": "Recognizing Propaganda Techniques",
-            "description": "Identifying the core strategies used in modern propaganda campaigns.",
-            "bulletpoints": "Analyze emotional appeals, false dilemmas, authority bias, and repetition conditioning",
-            "duration": "20",
+            "description": "Understanding the core strategies used to influence mass perception.",
+            "bulletpoints": [
+                "Identify common propaganda techniques such as bandwagoning, demonization, and false dilemmas.",
+                "Analyze historical and modern examples of propaganda to develop pattern recognition.",
+                "Use comparative analysis to distinguish genuine reporting from manipulative messaging."
+            ],
+            "duration": "60",
             "difficulty": "Intermediate"
         },
         {
-            "id": "propaganda_2",
-            "title": "Psychological Triggers in Propaganda",
-            "description": "Understanding how propaganda exploits cognitive biases to influence perception.",
-            "bulletpoints": "Identify confirmation bias exploitation, groupthink induction, and fear-based persuasion",
-            "duration": "25",
+            "id": "propaganda_id_2",
+            "title": "Emotional Manipulation in Messaging",
+            "description": "Detecting when emotions are being exploited for persuasive influence.",
+            "bulletpoints": [
+                "Analyze how fear, hope, and guilt are used to bypass critical thinking.",
+                "Recognize the use of outrage culture to manufacture division and control discourse.",
+                "Deconstruct media framing techniques that weaponize emotions against targeted groups."
+            ],
+            "duration": "75",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "propaganda_id_3",
+            "title": "Media Bias and Controlled Narratives",
+            "description": "Identifying when media outlets are compromised or agenda-driven.",
+            "bulletpoints": [
+                "Evaluate ownership structures of major media networks to uncover financial influences.",
+                "Compare multiple international sources to detect selective reporting biases.",
+                "Use reverse narrative tracing to analyze what information is omitted or censored."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "propaganda_id_4",
+            "title": "False Flags and Crisis Narratives",
+            "description": "Discerning staged events, psychological operations, and controlled narratives.",
+            "bulletpoints": [
+                "Identify hallmarks of synthetic events, including over-coordinated media responses.",
+                "Analyze shifts in public policy and funding following major crises to detect hidden agendas.",
+                "Use event timeline analysis to uncover inconsistencies and pre-scripted narratives."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "propaganda_id_5",
+            "title": "Psychological Warfare in Advertising",
+            "description": "Detecting and counteracting subliminal messaging embedded in media.",
+            "bulletpoints": [
+                "Break down neurolinguistic programming (NLP) used in advertising and media.",
+                "Recognize repetition loops that enforce programmed beliefs over time.",
+                "Expose product and service marketing designed to engineer mass psychological dependency."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "propaganda_id_6",
+            "title": "Predictive Programming and Cultural Seeding",
+            "description": "Analyzing how media conditions the public for future policy shifts and ideological changes.",
+            "bulletpoints": [
+                "Identify emerging themes in film, television, and entertainment media designed to normalize controversial ideas.",
+                "Analyze historical examples where predictive programming preceded major societal shifts.",
+                "Develop mental immunity against exposure to mass conditioning techniques."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "propaganda_id_7",
+            "title": "Social Proof and Manufactured Consensus",
+            "description": "Unveiling the illusion of majority opinion through artificial trends and bot-driven narratives.",
+            "bulletpoints": [
+                "Identify social media manipulation strategies such as astroturfing and bot amplification.",
+                "Analyze coordinated media pushes that create the false appearance of public consensus.",
+                "Use network analysis tools to detect inorganic activity and artificial engagement."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "propaganda_id_8",
+            "title": "Fact-Checking and Controlled Opposition",
+            "description": "Understanding how 'fact-checking' organizations are weaponized for narrative control.",
+            "bulletpoints": [
+                "Analyze funding sources behind major fact-checking institutions to detect conflicts of interest.",
+                "Evaluate how selective fact-checking is used to reinforce establishment narratives while discrediting dissent.",
+                "Develop independent verification techniques that bypass mainstream fact-checking gatekeepers."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "propaganda_id_9",
+            "title": "Data Manipulation and Statistical Deception",
+            "description": "Recognizing the strategic misuse of statistics to shape public opinion.",
+            "bulletpoints": [
+                "Identify misleading statistics, selective data representation, and confirmation bias in reports.",
+                "Analyze how poll results and survey framing are manipulated to steer public perception.",
+                "Expose logical fallacies in statistical narratives used in mainstream discourse."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "propaganda_id_10",
+            "title": "Developing a Propaganda Immunity Framework",
+            "description": "Building long-term resistance against psychological warfare and mass manipulation.",
+            "bulletpoints": [
+                "Train in real-time critical thinking techniques to counter fast-paced media influence.",
+                "Cultivate an information filtering system to detect and reject coercive messaging.",
+                "Develop a strategy for educating others on propaganda resistance without triggering cognitive dissonance."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
         }
     ]
 }

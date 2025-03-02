@@ -1,0 +1,132 @@
+{
+    "id": "perception_management_resistance",
+    "name": "Perception Management Resistance",
+    "description": "Training in resisting mass perception management tactics designed to shape public opinion and manipulate beliefs.",
+    "focus": [
+        "Identifying Cognitive Manipulation",
+        "Counteracting Social Engineering",
+        "Resisting Emotional and Psychological Influence"
+    ],
+    "cards": [
+        {
+            "id": "perception_resistance_1",
+            "title": "Recognizing Perception Manipulation",
+            "description": "Developing awareness of psychological tactics used to shape public perception.",
+            "bulletpoints": [
+                "Analyze patterns in mainstream narratives to detect manipulation techniques.",
+                "Compare information from alternative sources to identify contradictions.",
+                "Monitor language framing and emotional appeals used to control perception."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "perception_resistance_2",
+            "title": "Cognitive Immunity Development",
+            "description": "Strengthening mental resilience against mass influence campaigns.",
+            "bulletpoints": [
+                "Practice skepticism and critical thinking when consuming news and information.",
+                "Cultivate intellectual self-defense by questioning assumptions and sources.",
+                "Engage in dialectical reasoning to deconstruct manipulation attempts."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "perception_resistance_3",
+            "title": "Emotional Manipulation Countermeasures",
+            "description": "Building resistance against fear-based and emotionally charged narratives.",
+            "bulletpoints": [
+                "Recognize fear-mongering tactics used to influence decision-making.",
+                "Neutralize emotional triggers by practicing mindfulness and detachment.",
+                "Differentiate between emotional rhetoric and objective reality."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "perception_resistance_4",
+            "title": "Decoding Narrative Control Strategies",
+            "description": "Identifying how narratives are shaped and enforced in media and politics.",
+            "bulletpoints": [
+                "Map out key players in information control, including think tanks and media organizations.",
+                "Analyze historical case studies of narrative engineering in propaganda campaigns.",
+                "Use OSINT techniques to uncover connections between media messaging and policymaking."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "perception_resistance_5",
+            "title": "Social Engineering Resistance",
+            "description": "Understanding and counteracting manipulation through social structures.",
+            "bulletpoints": [
+                "Identify psychological triggers used in social engineering tactics.",
+                "Use pre-set decision-making frameworks to prevent manipulation under pressure.",
+                "Train in controlled exposure exercises to strengthen resistance to social influence."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "perception_resistance_6",
+            "title": "Identifying Controlled Opposition",
+            "description": "Recognizing false resistance movements designed to mislead and neutralize dissent.",
+            "bulletpoints": [
+                "Investigate leaders of movements for corporate or intelligence ties.",
+                "Analyze funding sources and institutional connections of activist groups.",
+                "Monitor shifts in messaging to detect controlled opposition infiltration."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "perception_resistance_7",
+            "title": "Disrupting Psychological Warfare Tactics",
+            "description": "Countering advanced psychological influence techniques used in mass perception control.",
+            "bulletpoints": [
+                "Study cognitive biases that are exploited for large-scale manipulation.",
+                "Develop counter-messaging strategies to neutralize weaponized narratives.",
+                "Use decentralized communication methods to bypass controlled information channels."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "perception_resistance_8",
+            "title": "Memory Reframing and Thought Liberation",
+            "description": "Breaking free from conditioned thought patterns imposed through perception management.",
+            "bulletpoints": [
+                "Use cognitive restructuring techniques to deprogram false narratives.",
+                "Practice memory auditing to identify implanted beliefs from long-term exposure.",
+                "Implement mental reframing to regain individual sovereignty over perception."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "perception_resistance_9",
+            "title": "Mental Firewalls Against Psychological Influence",
+            "description": "Installing personal defenses against perception-altering tactics.",
+            "bulletpoints": [
+                "Develop situational awareness to detect real-time psychological influence.",
+                "Create mental firewalls by setting intentional thought boundaries.",
+                "Train in exposure desensitization to nullify long-term propaganda effects."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "perception_resistance_10",
+            "title": "Counteracting Mass Indoctrination",
+            "description": "Strategies to reclaim independent thought in environments of heavy perception control.",
+            "bulletpoints": [
+                "Educate others on psychological manipulation tactics through deprogramming initiatives.",
+                "Establish alternative learning hubs for truth-based education and analysis.",
+                "Cultivate self-directed knowledge acquisition to bypass institutionalized indoctrination."
+            ],
+            "duration": "150",
+            "difficulty": "Expert"
+        }
+    ]
+}

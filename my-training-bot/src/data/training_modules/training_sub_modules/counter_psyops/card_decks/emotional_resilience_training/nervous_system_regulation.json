@@ -1,0 +1,132 @@
+{
+    "id": "nervous_system_regulation",
+    "name": "Nervous System Regulation",
+    "description": "Techniques for stabilizing the autonomic nervous system to enhance resilience against psychological and physiological stressors.",
+    "focus": [
+        "Autonomic Nervous System Mastery",
+        "Stress Response Control",
+        "Physiological Resilience"
+    ],
+    "cards": [
+        {
+            "id": "nervous_regulation_1",
+            "title": "Breath Control Mastery",
+            "description": "Using controlled breathing to regulate nervous system activity and enhance stress resilience.",
+            "bulletpoints": [
+                "Box breathing technique to stabilize autonomic function.",
+                "Diaphragmatic breathing to activate the parasympathetic system.",
+                "Coherent breathing for optimal heart rate variability."
+            ],
+            "duration": "60",
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "nervous_regulation_2",
+            "title": "Cold Exposure Training",
+            "description": "Utilizing cold exposure to strengthen the nervous system’s adaptability and increase stress tolerance.",
+            "bulletpoints": [
+                "Gradual cold showers to build resilience against shock responses.",
+                "Wim Hof Method for autonomic nervous system control.",
+                "Ice immersion exposure for rapid vagus nerve activation."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "nervous_regulation_3",
+            "title": "Heart Rate Variability Optimization",
+            "description": "Enhancing heart rate variability (HRV) to strengthen resilience against stress and emotional manipulation.",
+            "bulletpoints": [
+                "Biofeedback training to improve HRV coherence.",
+                "Resonance breathing for nervous system balance.",
+                "Using HRV tracking to monitor stress adaptation."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "nervous_regulation_4",
+            "title": "Vagus Nerve Activation",
+            "description": "Stimulating the vagus nerve to induce a state of relaxation and emotional regulation.",
+            "bulletpoints": [
+                "Humming and chanting to activate the vagus nerve.",
+                "Neck massage techniques for vagal stimulation.",
+                "Deep belly breathing for vagus nerve engagement."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "nervous_regulation_5",
+            "title": "Progressive Muscle Relaxation",
+            "description": "Releasing physical tension to calm the nervous system and improve stress resilience.",
+            "bulletpoints": [
+                "Systematic muscle tension and relaxation cycle.",
+                "Full-body relaxation sequencing for deep nervous system reset.",
+                "Incorporating PMR into daily decompression routines."
+            ],
+            "duration": "60",
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "nervous_regulation_6",
+            "title": "Neuroplasticity Training",
+            "description": "Rewiring neural pathways to enhance adaptability to stress and prevent burnout.",
+            "bulletpoints": [
+                "Cognitive reframing to alter automatic stress responses.",
+                "Practicing exposure therapy for increased stress endurance.",
+                "Repetition of controlled stress responses for enhanced plasticity."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "nervous_regulation_7",
+            "title": "Gaze and Ocular Reset Techniques",
+            "description": "Using eye movement techniques to reset the nervous system and disrupt stress cycles.",
+            "bulletpoints": [
+                "Soft focus gaze to shift out of sympathetic dominance.",
+                "Peripheral vision exercises to promote calm awareness.",
+                "Bilateral eye movements to disengage from heightened stress states."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "nervous_regulation_8",
+            "title": "Somatic Awareness Training",
+            "description": "Building body-mind awareness to maintain nervous system equilibrium under stress.",
+            "bulletpoints": [
+                "Scanning body sensations to detect and release tension.",
+                "Grounding exercises to stabilize the nervous system in high-stress environments.",
+                "Interoceptive awareness for identifying and managing stress signals."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "nervous_regulation_9",
+            "title": "Sensory Overload Resistance",
+            "description": "Developing the ability to maintain composure in chaotic environments and resist sensory overwhelm.",
+            "bulletpoints": [
+                "Exposure to controlled high-intensity stimuli to build resilience.",
+                "Practicing selective attention filtering to maintain cognitive control.",
+                "Using sound and light adaptation techniques to regulate stress input."
+            ],
+            "duration": "75",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "nervous_regulation_10",
+            "title": "Micro-Dosing Stress for Resilience",
+            "description": "Gradual exposure to controlled stressors to train the nervous system for high-pressure scenarios.",
+            "bulletpoints": [
+                "Using interval training to mimic stress-recovery cycles.",
+                "Practicing time-controlled cognitive stress exercises.",
+                "Applying strategic discomfort exposure to build resistance."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

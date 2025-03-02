@@ -1,0 +1,136 @@
+{
+    "id": "microexpression_interpretation",
+    "name": "Microexpression Interpretation",
+    "description": "Training in the detection and analysis of involuntary facial expressions to assess emotions, deception, and intent.",
+    "focus": [
+        "Facial Microexpressions",
+        "Emotional Intelligence",
+        "Lie Detection"
+    ],
+    "cards": [
+        {
+            "id": "microexpression_1",
+            "title": "Introduction to Microexpressions",
+            "description": "Understanding the basics of microexpressions and their role in human communication.",
+            "bulletpoints": [
+                "Defining microexpressions and their involuntary nature.",
+                "Understanding how emotions manifest in split-second facial cues.",
+                "Learning the difference between macroexpressions and microexpressions."
+            ],
+            "duration": "60",
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "microexpression_2",
+            "title": "Identifying Universal Emotions",
+            "description": "Recognizing the seven universal emotions and their facial indicators.",
+            "bulletpoints": [
+                "Happiness: Identifying genuine versus fake smiles.",
+                "Sadness: Detecting subtle drooping of facial features.",
+                "Anger: Recognizing narrowed eyes and tightened lips.",
+                "Surprise: Spotting raised eyebrows and widened eyes.",
+                "Fear: Observing tensed eyelids and open mouth.",
+                "Disgust: Noting wrinkled noses and raised upper lips.",
+                "Contempt: Recognizing asymmetric smirks."
+            ],
+            "duration": "90",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "microexpression_3",
+            "title": "Distinguishing Genuine and Fake Emotions",
+            "description": "Analyzing differences between authentic and fabricated emotional expressions.",
+            "bulletpoints": [
+                "Identifying Duchenne smiles and authentic happiness.",
+                "Detecting insincere sadness and crocodile tears.",
+                "Spotting masked anger through subtle muscular tension."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "microexpression_4",
+            "title": "Microexpression Recognition in Real-Time",
+            "description": "Developing the ability to detect microexpressions during conversations.",
+            "bulletpoints": [
+                "Training peripheral vision to catch rapid emotional shifts.",
+                "Practicing with video analysis and real-time observation.",
+                "Utilizing subconscious awareness to improve detection speed."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "microexpression_5",
+            "title": "Microexpressions and Lie Detection",
+            "description": "Using facial analysis to detect deception and hidden intent.",
+            "bulletpoints": [
+                "Recognizing hesitation or masking of true emotions.",
+                "Identifying conflicting facial expressions and verbal statements.",
+                "Understanding involuntary emotional leaks under stress."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "microexpression_6",
+            "title": "Baseline Emotional Calibration",
+            "description": "Establishing an emotional baseline for accurate deception detection.",
+            "bulletpoints": [
+                "Determining a person's natural resting expressions.",
+                "Comparing normal expressions with stressed or manipulated responses.",
+                "Using context to differentiate between genuine and deceptive signals."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "microexpression_7",
+            "title": "Contextual Analysis of Microexpressions",
+            "description": "Interpreting microexpressions in different social and cultural settings.",
+            "bulletpoints": [
+                "Recognizing cultural differences in emotional display.",
+                "Understanding how stress and social norms affect expressions.",
+                "Analyzing microexpressions in high-stakes environments."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "microexpression_8",
+            "title": "Microexpression Clusters and Patterns",
+            "description": "Learning to identify clusters of microexpressions to assess intent.",
+            "bulletpoints": [
+                "Observing multiple expressions in sequence for deeper insight.",
+                "Understanding microexpression layering in deception scenarios.",
+                "Cross-referencing facial expressions with verbal and body language cues."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "microexpression_9",
+            "title": "Developing a Psychological Advantage",
+            "description": "Using microexpression analysis to gain an edge in negotiations and interactions.",
+            "bulletpoints": [
+                "Adjusting communication style based on real-time facial cues.",
+                "Detecting resistance or compliance before words are spoken.",
+                "Influencing outcomes by mirroring and adapting to emotional states."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "microexpression_10",
+            "title": "Advanced Tactical Microexpression Analysis",
+            "description": "Applying microexpression analysis in intelligence, law enforcement, and counter-PsyOps.",
+            "bulletpoints": [
+                "Using microexpressions in interrogations and interviews.",
+                "Detecting emotional triggers in psychological warfare scenarios.",
+                "Integrating microexpression analysis with behavioral profiling."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        }
+    ]
+}

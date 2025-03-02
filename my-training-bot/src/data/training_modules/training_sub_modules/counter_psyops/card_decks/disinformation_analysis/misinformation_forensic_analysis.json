@@ -1,0 +1,132 @@
+{
+    "id": "misinformation_forensic_analysis",
+    "name": "Misinformation Forensic Analysis",
+    "description": "Training in forensic methodologies for detecting, analyzing, and deconstructing misinformation campaigns.",
+    "focus": [
+        "Disinformation Attribution",
+        "Metadata & Digital Forensics",
+        "Behavioral Analysis of Misinformation"
+    ],
+    "cards": [
+        {
+            "id": "misinfo_forensics_1",
+            "title": "Introduction to Misinformation Forensics",
+            "description": "Understanding the fundamentals of misinformation analysis and forensic methodologies.",
+            "bulletpoints": [
+                "Defining misinformation, disinformation, and malinformation.",
+                "Overview of digital forensic techniques for misinformation detection.",
+                "Legal and ethical considerations in forensic analysis."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "misinfo_forensics_2",
+            "title": "Identifying Misinformation Tactics",
+            "description": "Recognizing key disinformation tactics used in digital and traditional media.",
+            "bulletpoints": [
+                "Understanding gaslighting, fear-mongering, and narrative control.",
+                "Detecting framing techniques and loaded language.",
+                "Analyzing pattern recognition in misinformation narratives."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "misinfo_forensics_3",
+            "title": "Metadata Analysis & Digital Footprints",
+            "description": "Extracting and analyzing metadata to trace the origins of misinformation.",
+            "bulletpoints": [
+                "Understanding EXIF metadata in images and videos.",
+                "Using OSINT tools to analyze file signatures and timestamps.",
+                "Reverse-engineering manipulated content through forensic traceability."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "misinfo_forensics_4",
+            "title": "Deepfake & AI-Generated Media Detection",
+            "description": "Techniques for identifying deepfakes, AI-generated text, and synthetic media.",
+            "bulletpoints": [
+                "Recognizing inconsistencies in AI-generated video and audio.",
+                "Analyzing linguistic and grammatical patterns in synthetic text.",
+                "Using forensic software to verify media authenticity."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "misinfo_forensics_5",
+            "title": "Cross-Referencing Information Sources",
+            "description": "Validating claims by cross-referencing multiple sources for accuracy.",
+            "bulletpoints": [
+                "Using structured analysis to compare sources.",
+                "Detecting patterns of synchronized misinformation distribution.",
+                "Assessing institutional credibility and media bias."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "misinfo_forensics_6",
+            "title": "Bot & Sockpuppet Network Detection",
+            "description": "Tracking automated misinformation campaigns using AI-driven analysis.",
+            "bulletpoints": [
+                "Identifying behavioral anomalies in online discussions.",
+                "Analyzing engagement spikes and automated retweet patterns.",
+                "Mapping coordinated botnet misinformation campaigns."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "misinfo_forensics_7",
+            "title": "Attribution & Source Tracing",
+            "description": "Techniques for identifying the origins and sponsors of misinformation.",
+            "bulletpoints": [
+                "Using OSINT techniques to track disinformation sources.",
+                "Tracing funding and organizational affiliations of fake news outlets.",
+                "Analyzing propaganda dissemination networks."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "misinfo_forensics_8",
+            "title": "PsyOps & Psychological Warfare in Misinformation",
+            "description": "Analyzing the psychological impact of misinformation on targeted audiences.",
+            "bulletpoints": [
+                "Recognizing cognitive biases exploited by misinformation campaigns.",
+                "Understanding narrative control techniques in mass media.",
+                "Breaking down perception manipulation tactics."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "misinfo_forensics_9",
+            "title": "Case Study Analysis: Disinformation Campaigns",
+            "description": "Examining real-world misinformation campaigns and their forensic breakdown.",
+            "bulletpoints": [
+                "Analyzing historical disinformation operations.",
+                "Applying forensic techniques to contemporary case studies.",
+                "Developing counter-misinformation strategies based on case insights."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "misinfo_forensics_10",
+            "title": "Developing Counter-Disinformation Strategies",
+            "description": "Designing methods to neutralize and counteract misinformation campaigns.",
+            "bulletpoints": [
+                "Creating rapid response mechanisms for debunking false claims.",
+                "Leveraging strategic communication to mitigate misinformation effects.",
+                "Building AI-driven misinformation detection systems."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

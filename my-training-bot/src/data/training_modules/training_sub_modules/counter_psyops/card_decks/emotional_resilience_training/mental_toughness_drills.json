@@ -1,0 +1,132 @@
+{
+    "id": "mental_toughness_drills",
+    "name": "Mental Toughness Drills",
+    "description": "A structured series of exercises designed to enhance mental resilience, cognitive endurance, and emotional stability under pressure.",
+    "focus": [
+        "Cognitive Endurance",
+        "Psychological Fortitude",
+        "Stress Resistance"
+    ],
+    "cards": [
+        {
+            "id": "mental_toughness_1",
+            "title": "Endurance Focus Training",
+            "description": "Strengthening attention span and cognitive persistence under stress.",
+            "bulletpoints": [
+                "Timed focus exercises to build sustained mental engagement.",
+                "Cognitive shifting drills to prevent burnout and mental fatigue.",
+                "Meditative endurance techniques to increase stress resistance."
+            ],
+            "duration": "60",
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "mental_toughness_2",
+            "title": "Controlled Exposure to Discomfort",
+            "description": "Training the mind to remain composed in physically or mentally uncomfortable situations.",
+            "bulletpoints": [
+                "Cold exposure training for stress tolerance.",
+                "Breath control techniques to override discomfort responses.",
+                "Delayed gratification exercises to strengthen willpower."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "mental_toughness_3",
+            "title": "Cognitive Load Management",
+            "description": "Handling multiple complex mental tasks under pressure without loss of efficiency.",
+            "bulletpoints": [
+                "Dual-tasking drills to improve multi-threaded thinking.",
+                "Situational awareness training to manage incoming information streams.",
+                "Pre-emptive prioritization techniques for high-pressure scenarios."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mental_toughness_4",
+            "title": "Adaptive Resilience Drills",
+            "description": "Simulating unpredictable events to build flexibility in mental responses.",
+            "bulletpoints": [
+                "Scenario-based stress tests to reinforce adaptive thinking.",
+                "Unexpected task interruptions to train crisis management.",
+                "Rapid recalibration exercises to enhance mental agility."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mental_toughness_5",
+            "title": "Internal Dialogue Training",
+            "description": "Rewiring self-talk to enhance confidence, discipline, and self-command.",
+            "bulletpoints": [
+                "Identifying and removing negative self-talk patterns.",
+                "Using mantras and affirmations for mental reinforcement.",
+                "Cognitive reprogramming drills to sustain motivation."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "mental_toughness_6",
+            "title": "Panic Override Drills",
+            "description": "Training the nervous system to override panic responses and maintain control.",
+            "bulletpoints": [
+                "Progressive exposure to high-pressure environments.",
+                "Rhythmic breathing control to neutralize fear responses.",
+                "Cognitive distancing to maintain logical decision-making under duress."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mental_toughness_7",
+            "title": "Hyper-Focus Activation",
+            "description": "Developing the ability to enter a deep-focus state on command.",
+            "bulletpoints": [
+                "Visual anchor techniques to trigger concentration.",
+                "Distraction filtering methods to block external noise.",
+                "Peak performance routines for immediate focus activation."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mental_toughness_8",
+            "title": "Fatigue Resistance Training",
+            "description": "Building the ability to function effectively despite mental or physical exhaustion.",
+            "bulletpoints": [
+                "Endurance visualization techniques to override fatigue.",
+                "Task segmentation methods to maintain output over long periods.",
+                "Mental energy conservation strategies to prevent burnout."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mental_toughness_9",
+            "title": "Emotional Resilience Expansion",
+            "description": "Strengthening the ability to endure and recover from emotional stress.",
+            "bulletpoints": [
+                "Processing emotional strain through structured reflection.",
+                "Developing detachment techniques for long-term resilience.",
+                "Using humor and cognitive reappraisal to neutralize stress."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mental_toughness_10",
+            "title": "Unbreakable Mindset Conditioning",
+            "description": "Creating an unshakable mindset resistant to psychological attacks and manipulation.",
+            "bulletpoints": [
+                "Reinforcing core values and identity to resist external influence.",
+                "Mental inoculation against manipulation tactics.",
+                "Tactical stoicism and antifragility training for extreme resilience."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

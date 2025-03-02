@@ -1,0 +1,132 @@
+{
+    "id": "subversive_influence_detection",
+    "name": "Subversive Influence Detection",
+    "description": "Training to recognize and counteract covert influence operations that manipulate public perception, decision-making, and social structures.",
+    "focus": [
+        "Covert Influence Tactics",
+        "Mass Psychological Manipulation",
+        "Defensive Countermeasures"
+    ],
+    "cards": [
+        {
+            "id": "subversive_influence_1",
+            "title": "Introduction to Subversive Influence",
+            "description": "Understanding how hidden actors shape perceptions and narratives to control societal structures.",
+            "bulletpoints": [
+                "Defining subversive influence and its role in psychological warfare.",
+                "Recognizing the key players and institutions behind covert influence.",
+                "Understanding historical examples of subversive influence operations."
+            ],
+            "duration": "60",
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "subversive_influence_2",
+            "title": "Memetic Warfare & Ideological Subversion",
+            "description": "Analyzing how ideas and memes are weaponized to spread propaganda and shift societal norms.",
+            "bulletpoints": [
+                "Identifying weaponized narratives and manufactured ideological divides.",
+                "Understanding how internet memes, slogans, and symbols influence belief systems.",
+                "Learning counter-strategies to neutralize memetic manipulation."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "subversive_influence_3",
+            "title": "Influence Networks & Controlled Opposition",
+            "description": "Mapping how organizations and individuals are used as controlled opposition to mislead movements.",
+            "bulletpoints": [
+                "Identifying false leaders and infiltrated movements.",
+                "Recognizing controlled narratives that redirect dissent.",
+                "Distinguishing genuine grassroots activism from manufactured opposition."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "subversive_influence_4",
+            "title": "Psychological Warfare & Fear Manipulation",
+            "description": "Examining how fear is used as a tool for societal control and coercion.",
+            "bulletpoints": [
+                "Recognizing fear-based conditioning in media and politics.",
+                "Understanding how crisis events are leveraged for behavioral compliance.",
+                "Developing immunity to fear-based psychological operations."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "subversive_influence_5",
+            "title": "Social Engineering & Mass Influence",
+            "description": "Breaking down the tactics used to control populations through mass media and social structures.",
+            "bulletpoints": [
+                "Identifying predictive programming in entertainment and news.",
+                "Recognizing conditioning techniques in advertising and corporate culture.",
+                "Dissecting the role of social media algorithms in public perception management."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "subversive_influence_6",
+            "title": "The Role of Disinformation Agents",
+            "description": "Identifying operatives who spread falsehoods to distract, confuse, and divide.",
+            "bulletpoints": [
+                "Recognizing common tactics of professional disinformation agents.",
+                "Distinguishing between genuine whistleblowers and controlled opposition.",
+                "Understanding how disinformation shapes intelligence operations."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "subversive_influence_7",
+            "title": "Psychological Entrapment & Manipulation Loops",
+            "description": "Examining how false dichotomies and echo chambers create mental traps.",
+            "bulletpoints": [
+                "Understanding psychological entrapment mechanisms.",
+                "Recognizing ‘problem-reaction-solution’ cycles in media narratives.",
+                "Developing counter-strategies to break free from manipulation loops."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "subversive_influence_8",
+            "title": "Infiltration of Subcultures & Countercultures",
+            "description": "Examining how intelligence agencies and ideological actors infiltrate counterculture movements.",
+            "bulletpoints": [
+                "Identifying co-opted movements and controlled counter-narratives.",
+                "Understanding the role of agents provocateurs in radicalization.",
+                "Analyzing historical cases of subculture infiltration."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "subversive_influence_9",
+            "title": "Subversion of Language & Thought Control",
+            "description": "Exploring how linguistic manipulation is used to reframe reality and limit independent thought.",
+            "bulletpoints": [
+                "Recognizing politically charged language used to frame perceptions.",
+                "Understanding ‘thought-terminating clichés’ that shut down critical thinking.",
+                "Learning techniques to deconstruct and counter linguistic subversion."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "subversive_influence_10",
+            "title": "Countering Subversive Influence",
+            "description": "Developing advanced strategies to resist and neutralize covert psychological operations.",
+            "bulletpoints": [
+                "Building mental resilience against long-term exposure to subversion tactics.",
+                "Engaging in counter-narrative strategies to disrupt psychological influence.",
+                "Learning how to empower others to detect and resist subversive operations."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        }
+    ]
+}

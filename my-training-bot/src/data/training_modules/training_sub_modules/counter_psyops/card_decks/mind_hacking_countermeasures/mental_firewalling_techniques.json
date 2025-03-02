@@ -1,26 +1,131 @@
 {
     "id": "mental_firewalling_techniques",
     "name": "Mental Firewalling Techniques",
-    "description": "Cognitive defense strategies to block intrusive psychological manipulation.",
+    "description": "Developing a cognitive firewall to block psychological hacking, mind infiltration, and forced suggestion tactics.",
     "focus": [
         "Cognitive Firewalling",
-        "Mental Intrusion Defense"
+        "Psychological Immunity",
+        "Mental Containment Strategies"
     ],
     "cards": [
         {
-            "id": "firewall_1",
-            "title": "Building Mental Shields",
-            "description": "Techniques for constructing cognitive barriers against invasive psychological influence.",
-            "bulletpoints": "Visualization-based shielding, controlled thought redirection, subconscious gatekeeping",
-            "duration": "20",
+            "id": "mental_firewall_1",
+            "title": "Constructing a Cognitive Firewall",
+            "description": "Building an internal barrier against psychological intrusions and influence tactics.",
+            "bulletpoints": [
+                "Develop a personal cognitive security protocol to detect and neutralize invasive thoughts.",
+                "Use layered mental shielding techniques to block subliminal and overt psychological intrusions.",
+                "Regularly audit your mental processes for anomalies that suggest external influence."
+            ],
+            "duration": "90",
             "difficulty": "Advanced"
         },
         {
-            "id": "firewall_2",
-            "title": "Defensive Mental Looping",
-            "description": "Using repetitive cognitive structures to resist forced thought patterns.",
-            "bulletpoints": "Internal mantra reinforcement, cognitive pattern disruption, loop-based mental conditioning",
-            "duration": "15",
+            "id": "mental_firewall_2",
+            "title": "Thought Encryption Techniques",
+            "description": "Encoding thoughts to prevent external reading, manipulation, or extraction.",
+            "bulletpoints": [
+                "Utilize mental obfuscation by converting thoughts into symbolic or coded representations.",
+                "Employ dual-layered thought processes: surface-level distractions masking deeper, protected cognition.",
+                "Train in rapid internal reconfiguration of mental structures to prevent pattern recognition by adversaries."
+            ],
+            "duration": "75",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mental_firewall_3",
+            "title": "Mindspace Compartmentalization",
+            "description": "Dividing mental processes into secure partitions to limit external access.",
+            "bulletpoints": [
+                "Create designated ‘safe zones’ in the mind for classified or personal thoughts.",
+                "Use emotional detachment as a security measure to prevent manipulation through psychological pressure.",
+                "Program automatic thought redirection to shift focus away from sensitive cognitive areas during interrogation or influence attempts."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mental_firewall_4",
+            "title": "Countering Coercive Mental Infiltration",
+            "description": "Neutralizing external attempts to impose foreign thoughts, beliefs, or behaviors.",
+            "bulletpoints": [
+                "Develop high-alert detection for shifts in thought patterns that do not originate internally.",
+                "Use active resistance training, such as contradicting external suggestions with mental affirmations.",
+                "Deploy internal logic loops that force external intrusions into contradiction and collapse."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mental_firewall_5",
+            "title": "Neural Disruption Techniques",
+            "description": "Introducing controlled chaos into mental processes to resist structured infiltration.",
+            "bulletpoints": [
+                "Engage in pattern-breaking exercises to prevent thought predictability.",
+                "Use intentional cognitive dissonance as a countermeasure against imposed belief structures.",
+                "Train in rapid thought shifting to avoid fixation-based manipulation."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mental_firewall_6",
+            "title": "Psycho-Linguistic Resistance Training",
+            "description": "Defending against linguistic programming and verbal influence attempts.",
+            "bulletpoints": [
+                "Recognize and disrupt hypnotic linguistic patterns embedded in speech or writing.",
+                "Use contradiction-response training to weaken the impact of persuasive language structures.",
+                "Develop counter-language programming to neutralize suggestive verbal conditioning."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mental_firewall_7",
+            "title": "Disrupting Subconscious Influence",
+            "description": "Blocking subliminal messaging and subconscious implants before they take effect.",
+            "bulletpoints": [
+                "Develop mental alarm triggers that activate upon detecting subconscious intrusion.",
+                "Use ‘thought quarantine’ to isolate and examine unfamiliar thought patterns before engaging with them.",
+                "Employ ‘reverse entrainment’ techniques to neutralize external frequency-based influence."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mental_firewall_8",
+            "title": "Cognitive Root Access Control",
+            "description": "Controlling core cognitive processes to prevent unauthorized rewiring of the mind.",
+            "bulletpoints": [
+                "Strengthen metacognition to detect and prevent unauthorized changes to belief systems.",
+                "Use ‘internal debug mode’ by tracing the origin of every thought for authenticity verification.",
+                "Program core mental directives that override externally implanted suggestions."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mental_firewall_9",
+            "title": "Emergency Shutdown and Reset Protocols",
+            "description": "Developing emergency countermeasures against mental breach attempts.",
+            "bulletpoints": [
+                "Create a failsafe mental state that resets neural patterns upon detection of forced influence.",
+                "Use controlled cognitive blackouts to disrupt interrogation or forced programming attempts.",
+                "Employ ‘blank slate’ visualization to clear all non-authentic thought imprints."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mental_firewall_10",
+            "title": "Training Mental Cybernetic Reflexes",
+            "description": "Automating defensive mental responses against hacking attempts.",
+            "bulletpoints": [
+                "Develop automatic pattern-recognition reflexes for detecting manipulative influence.",
+                "Program mental auto-responses that instantly neutralize external persuasion attempts.",
+                "Use thought-feedback loops that reflect psychological attacks back to their source."
+            ],
+            "duration": "90",
             "difficulty": "Expert"
         }
     ]

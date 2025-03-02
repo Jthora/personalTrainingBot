@@ -1,0 +1,132 @@
+{
+    "id": "botnet_identification_and_psyops_disruption",
+    "name": "Botnet Identification & PsyOps Disruption",
+    "description": "Training in detecting, analyzing, and neutralizing botnets used in large-scale PsyOps campaigns and digital influence operations.",
+    "focus": [
+        "Botnet Identification & Tracking",
+        "Disrupting Automated PsyOps Campaigns",
+        "Defensive & Offensive Countermeasures"
+    ],
+    "cards": [
+        {
+            "id": "botnet_psyops_1",
+            "title": "Understanding Botnet Architecture",
+            "description": "An overview of how botnets are structured and deployed in digital PsyOps.",
+            "bulletpoints": [
+                "Identifying centralized vs. decentralized botnet command structures.",
+                "Analyzing bot behavior patterns across different platforms.",
+                "Recognizing the role of AI and automation in modern botnets."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "botnet_psyops_2",
+            "title": "Detecting Botnet Traffic & Network Signatures",
+            "description": "Using forensic analysis techniques to detect botnet activity.",
+            "bulletpoints": [
+                "Identifying anomalous traffic patterns in network data.",
+                "Using honeypots to lure and track botnet operations.",
+                "Analyzing metadata to distinguish human activity from bots."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "botnet_psyops_3",
+            "title": "AI-Powered Botnet Detection",
+            "description": "Leveraging machine learning to detect and neutralize bot-driven PsyOps campaigns.",
+            "bulletpoints": [
+                "Using AI models to analyze engagement anomalies and bot behaviors.",
+                "Developing adversarial machine learning techniques to mislead botnets.",
+                "Deploying automated botnet classifiers to map influence networks."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "botnet_psyops_4",
+            "title": "Covert Infiltration of Botnet Networks",
+            "description": "Gaining intelligence on adversarial botnets by infiltrating their command structures.",
+            "bulletpoints": [
+                "Deploying sock puppet accounts to interact with and analyze bot activity.",
+                "Tracking botnet command-and-control (C2) nodes for intelligence gathering.",
+                "Harvesting botnet communication logs for PsyOps disruption strategies."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "botnet_psyops_5",
+            "title": "Botnet Takedown Strategies",
+            "description": "Methods for dismantling and neutralizing malicious botnets.",
+            "bulletpoints": [
+                "Identifying vulnerabilities in botnet infrastructure for targeted takedown.",
+                "Using legal and cybersecurity countermeasures to disrupt operations.",
+                "Coordinating with ethical hacking groups to execute botnet neutralization."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "botnet_psyops_6",
+            "title": "Weaponized Bots & PsyOps Deployment",
+            "description": "Understanding how botnets are used in psychological operations and information warfare.",
+            "bulletpoints": [
+                "Analyzing bot-driven disinformation campaigns and influence operations.",
+                "Tracking bot-coordinated amplification of propaganda and fake news.",
+                "Exposing false narratives spread through automated engagement tactics."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "botnet_psyops_7",
+            "title": "Botnet Disinformation Mapping",
+            "description": "Tracing the origins and pathways of bot-driven disinformation.",
+            "bulletpoints": [
+                "Using OSINT techniques to map botnet influence campaigns.",
+                "Tracking how automated accounts amplify and distribute narratives.",
+                "Identifying state-sponsored vs. independent botnet operations."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "botnet_psyops_8",
+            "title": "Botnet Counter-PsyOps Strategies",
+            "description": "Using psychological warfare tactics to neutralize bot-driven influence campaigns.",
+            "bulletpoints": [
+                "Deploying counter-narratives to disrupt botnet echo chambers.",
+                "Using deception tactics to mislead bot AI algorithms.",
+                "Triggering botnets into self-destructive behavior through misdirection."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "botnet_psyops_9",
+            "title": "Defensive Strategies Against Automated PsyOps",
+            "description": "Protecting individuals and organizations from bot-driven psychological manipulation.",
+            "bulletpoints": [
+                "Developing digital hygiene practices to prevent bot infiltration.",
+                "Using algorithmic shields to filter out bot-driven influence campaigns.",
+                "Training users to recognize and disengage from artificial narratives."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "botnet_psyops_10",
+            "title": "Real-Time Threat Response & Disruption",
+            "description": "Deploying real-time countermeasures against active botnet PsyOps.",
+            "bulletpoints": [
+                "Using rapid response intelligence teams to disrupt bot campaigns.",
+                "Implementing automated counter-engagement tactics against adversarial bots.",
+                "Leveraging blockchain and cryptographic verification to ensure authenticity in communications."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

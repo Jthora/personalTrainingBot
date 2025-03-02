@@ -1,0 +1,132 @@
+{
+    "id": "psychotronic_defense_training",
+    "name": "Psychotronic Defense Training",
+    "description": "Training to recognize, counteract, and neutralize psychotronic weaponry and electromagnetic mind manipulation tactics.",
+    "focus": [
+        "Electromagnetic Shielding",
+        "Mind-Control Disruption",
+        "Energy Field Defense"
+    ],
+    "cards": [
+        {
+            "id": "psychotronic_defense_1",
+            "title": "Recognizing Psychotronic Attacks",
+            "description": "Identifying the presence and effects of psychotronic weaponry on cognitive and physiological states.",
+            "bulletpoints": [
+                "Monitor sudden changes in mood, thought patterns, and concentration ability.",
+                "Use EMF detectors to check for unnatural electromagnetic activity in your environment.",
+                "Cross-reference symptoms with documented psychotronic attack patterns."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "psychotronic_defense_2",
+            "title": "Disrupting Electromagnetic Mind Manipulation",
+            "description": "Techniques to weaken or nullify external electromagnetic influence over cognitive processes.",
+            "bulletpoints": [
+                "Use white noise generators or Schumann resonance frequencies to counteract artificial EMF signals.",
+                "Utilize binaural beats and sound frequency therapy to reinforce natural brainwave patterns.",
+                "Apply Faraday cage principles to block psychotronic signals from reaching your neural pathways."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psychotronic_defense_3",
+            "title": "Developing Mental Interference Resistance",
+            "description": "Strengthening cognitive fortitude to prevent external influence from disrupting mental autonomy.",
+            "bulletpoints": [
+                "Practice controlled thought isolation techniques to prevent externally implanted loops.",
+                "Use mental anchoring strategies such as repetitive affirmations to solidify personal identity.",
+                "Train in deep focus exercises to enhance resistance against subliminal disruptions."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psychotronic_defense_4",
+            "title": "Shielding Against Directed Energy Weapons",
+            "description": "Implementing physical and energetic defenses against directed psychotronic attacks.",
+            "bulletpoints": [
+                "Layer conductive and non-conductive materials in clothing or headgear to deflect EM pulses.",
+                "Use quantum resonance shielding or energetic visualization techniques to create protective fields.",
+                "Identify and neutralize attack vectors by triangulating sources of directed energy interference."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psychotronic_defense_5",
+            "title": "EM Field Disruption Techniques",
+            "description": "Methods to neutralize, reroute, or block harmful electromagnetic fields affecting cognitive function.",
+            "bulletpoints": [
+                "Create interference waves using Tesla coil principles to scramble directed signals.",
+                "Use copper, lead, and carbon-based materials to construct personal shielding devices.",
+                "Implement strategic placement of grounding mats and bioelectric harmonizers."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psychotronic_defense_6",
+            "title": "Neuro-Energetic Detoxification",
+            "description": "Cleansing the nervous system from residual effects of psychotronic exposure.",
+            "bulletpoints": [
+                "Use infrared saunas, salt baths, and grounding exercises to purge absorbed electromagnetic stress.",
+                "Practice deep-breathing and oxygenation techniques to restore natural brain function.",
+                "Consume detoxifying foods such as chlorella, spirulina, and activated charcoal."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psychotronic_defense_7",
+            "title": "Strengthening Bio-Energetic Fields",
+            "description": "Enhancing personal energy fields to resist psychotronic infiltration.",
+            "bulletpoints": [
+                "Use Tai Chi, Qi Gong, or Reiki techniques to reinforce your bio-energetic barrier.",
+                "Harmonize brainwave states using meditation to create coherence in mental defense.",
+                "Engage in physical movement routines that enhance neuro-electrical balance."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psychotronic_defense_8",
+            "title": "Remote Viewing and Counter-Surveillance",
+            "description": "Detecting remote monitoring and implementing countermeasures.",
+            "bulletpoints": [
+                "Develop spatial awareness techniques to detect non-physical intrusions.",
+                "Use mental cloaking and energetic camouflage to block remote observation.",
+                "Conduct controlled experiments to verify and refine detection sensitivity."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psychotronic_defense_9",
+            "title": "Combatting Synthetic Telepathy",
+            "description": "Defending against AI-driven or externally induced artificial telepathic transmissions.",
+            "bulletpoints": [
+                "Apply forced disassociation methods to break engagement with synthetic thought projections.",
+                "Train in vibrational frequency shifts to disrupt resonance with artificial signals.",
+                "Use linguistic scrambling techniques to distort reception of external mind-link attempts."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psychotronic_defense_10",
+            "title": "Multi-Layered Defense Strategies",
+            "description": "Combining multiple defensive approaches for maximum resilience.",
+            "bulletpoints": [
+                "Integrate physical, cognitive, and energetic shields for full-spectrum protection.",
+                "Regularly assess and upgrade defensive measures based on evolving psychotronic tactics.",
+                "Utilize cooperative shielding through group resonance synchronization for enhanced protection."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        }
+    ]
+}

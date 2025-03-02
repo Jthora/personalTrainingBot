@@ -1,0 +1,132 @@
+{
+    "id": "strategic_counter_narrative_design",
+    "name": "Strategic Counter-Narrative Design",
+    "description": "Mastering the art of constructing counter-narratives to disrupt psychological control systems and awaken mass awareness.",
+    "focus": [
+        "Psychological Narrative Disruption",
+        "Cultural Counter-Memetics",
+        "Crisis Response Messaging"
+    ],
+    "cards": [
+        {
+            "id": "counter_narrative_1",
+            "title": "Identifying Narrative Manipulation",
+            "description": "Recognizing patterns of manipulation in mainstream and alternative narratives.",
+            "bulletpoints": [
+                "Perform deep analysis on media narratives to detect recurring psychological priming techniques.",
+                "Reverse-engineer propaganda structures by tracing funding, influence networks, and source consistency.",
+                "Map out control mechanisms within historical narratives to identify distortions and omissions."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "counter_narrative_2",
+            "title": "Constructing Psychological Anchors",
+            "description": "Embedding psychological anchor points to reinforce counter-narratives effectively.",
+            "bulletpoints": [
+                "Use emotionally resonant storytelling techniques to solidify retention of key truths.",
+                "Develop short, repeatable phrases that act as mental triggers for counter-programming.",
+                "Craft historical analogies and symbolic references to evoke intuitive understanding."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "counter_narrative_3",
+            "title": "Weaponized Memetics & Viral Spread",
+            "description": "Engineering counter-narratives for rapid dissemination and deep cultural impact.",
+            "bulletpoints": [
+                "Identify meme-worthy elements within counter-narratives to enhance virality.",
+                "Deploy layered information packets combining humor, shock, and curiosity for engagement.",
+                "Leverage decentralized networks and alternative media channels to bypass censorship."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "counter_narrative_4",
+            "title": "Neutralizing Cognitive Dissonance",
+            "description": "Designing counter-narratives to bypass cognitive resistance barriers.",
+            "bulletpoints": [
+                "Use gradual escalation techniques to introduce conflicting information without immediate rejection.",
+                "Frame new perspectives within the listener's existing belief system to reduce psychological resistance.",
+                "Develop narrative bridges connecting familiar knowledge to disruptive truths."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "counter_narrative_5",
+            "title": "Crisis Narrative Engineering",
+            "description": "Controlling public perception and response in high-stakes information warfare scenarios.",
+            "bulletpoints": [
+                "Pre-emptively script counter-narratives to intercept crisis-induced disinformation.",
+                "Establish credibility through firsthand testimonies, leaked documents, and logical deconstruction.",
+                "Utilize controlled emotional framing to prevent fear-based compliance with false narratives."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "counter_narrative_6",
+            "title": "Counter-Persuasion Defense",
+            "description": "Protecting individuals and groups from hostile narrative engineering techniques.",
+            "bulletpoints": [
+                "Teach pattern recognition to identify coercion-based storytelling structures.",
+                "Develop rapid rebuttal techniques that expose manipulation in real-time conversations.",
+                "Empower communities with critical thinking tools to decentralize control over shared narratives."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "counter_narrative_7",
+            "title": "Exposing Psychological Hijacking",
+            "description": "Unmasking historical and contemporary mind-control operations hidden in mass narratives.",
+            "bulletpoints": [
+                "Trace psychological warfare tactics used in media, education, and political discourse.",
+                "Cross-reference cultural trends with classified or declassified psy-op methodologies.",
+                "Create ‘red pill’ information flows that guide individuals from programmed perspectives to objective reality."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "counter_narrative_8",
+            "title": "Constructing Future Narratives",
+            "description": "Shaping the direction of collective consciousness by crafting future-oriented narratives.",
+            "bulletpoints": [
+                "Use predictive storytelling to counteract pre-scripted societal control mechanisms.",
+                "Design self-sustaining movements based on decentralized truth-sharing networks.",
+                "Embed resilience frameworks into counter-narratives to safeguard against narrative co-option."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "counter_narrative_9",
+            "title": "Tactical Narrative Deployment",
+            "description": "Orchestrating large-scale psychological influence operations for mass awakening.",
+            "bulletpoints": [
+                "Sequence counter-narratives in strategic waves to maximize psychological impact.",
+                "Coordinate message amplification across various platforms and independent information nodes.",
+                "Use adaptive messaging strategies that evolve in real-time to counter enemy responses."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "counter_narrative_10",
+            "title": "Mastering the Narrative Battlefield",
+            "description": "Achieving full-spectrum dominance in narrative warfare through superior strategy and execution.",
+            "bulletpoints": [
+                "Develop a multi-layered psychological operations framework integrating various media formats.",
+                "Engineer narrative contingency plans to maintain strategic adaptability under disruption.",
+                "Utilize psychological warfare simulations to refine narrative delivery under adversarial conditions."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        }
+    ]
+}

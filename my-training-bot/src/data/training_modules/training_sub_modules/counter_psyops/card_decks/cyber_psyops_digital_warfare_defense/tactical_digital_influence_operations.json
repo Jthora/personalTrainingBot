@@ -1,0 +1,132 @@
+{
+    "id": "tactical_digital_influence_operations",
+    "name": "Tactical Digital Influence Operations",
+    "description": "Training in strategic influence techniques for shaping digital discourse, countering enemy narratives, and mobilizing psychological operations in cyberspace.",
+    "focus": [
+        "Strategic Online Narrative Control",
+        "Digital Psychological Influence",
+        "Information Warfare Tactics"
+    ],
+    "cards": [
+        {
+            "id": "digital_influence_1",
+            "title": "Constructing Viral Counter-Narratives",
+            "description": "Developing engaging, disruptive counter-narratives that undermine adversarial PsyOps.",
+            "bulletpoints": [
+                "Identifying weaknesses in enemy propaganda for targeted disruption.",
+                "Using memetics and cultural resonance to increase virality.",
+                "Leveraging linguistic psychology to implant resistant thought patterns."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "digital_influence_2",
+            "title": "Algorithmic Amplification & Digital Persuasion",
+            "description": "Leveraging platform algorithms to boost visibility and engagement of strategic narratives.",
+            "bulletpoints": [
+                "Reverse engineering social media algorithms to manipulate organic reach.",
+                "Strategic engagement tactics to create artificial consensus and trend dominance.",
+                "Using SEO, hashtags, and metadata injection for maximum exposure."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "digital_influence_3",
+            "title": "Countering Enemy Influence Networks",
+            "description": "Mapping and disrupting adversarial influence campaigns.",
+            "bulletpoints": [
+                "Identifying key nodes in disinformation networks for precision targeting.",
+                "Deploying redirection tactics to neutralize enemy engagement channels.",
+                "Covert infiltration of enemy-controlled digital spaces to influence discourse."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "digital_influence_4",
+            "title": "Memetic Warfare & Symbolic Communication",
+            "description": "Using cultural and psychological symbols to encode influential messaging.",
+            "bulletpoints": [
+                "Creating memetic payloads designed to trigger subconscious responses.",
+                "Weaponizing archetypal imagery to bypass cognitive resistance.",
+                "Leveraging semiotic infiltration to embed hidden counter-messaging."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "digital_influence_5",
+            "title": "Synthetic Engagement & Astroturfing Tactics",
+            "description": "Simulating grassroots movements to create the illusion of mass support.",
+            "bulletpoints": [
+                "Deploying controlled botnets and digital sock puppets for message reinforcement.",
+                "Tactical upvoting/downvoting campaigns to steer digital discussions.",
+                "Coordinating timed message drops to overwhelm adversarial responses."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "digital_influence_6",
+            "title": "Cognitive Warfare in Digital Spaces",
+            "description": "Exploiting cognitive biases to shape public perception and control discourse.",
+            "bulletpoints": [
+                "Utilizing framing effects to recontextualize reality in favor of operations.",
+                "Applying priming techniques to subtly shift audience perception over time.",
+                "Embedding psychological triggers into digital messaging for lasting influence."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "digital_influence_7",
+            "title": "Neutralizing Online Opposition",
+            "description": "Disrupting and dismantling digital opposition forces with precision tactics.",
+            "bulletpoints": [
+                "Deploying targeted narrative derailment strategies in adversarial groups.",
+                "Using misinformation honeytraps to expose and discredit enemy agents.",
+                "Psychologically overwhelming opposition through engagement saturation."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "digital_influence_8",
+            "title": "Stealth Influence & Controlled Opposition",
+            "description": "Establishing long-term influence by embedding operatives within digital communities.",
+            "bulletpoints": [
+                "Building controlled opposition to steer discourse in desired directions.",
+                "Using soft power tactics to gradually introduce disruptive counter-narratives.",
+                "Deploying sleeper accounts for long-term manipulation of digital ecosystems."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "digital_influence_9",
+            "title": "Emotional Contagion in Social Media Warfare",
+            "description": "Triggering emotional responses to reinforce psychological control over audiences.",
+            "bulletpoints": [
+                "Deploying fear-based narratives to override rational resistance.",
+                "Using manufactured outrage to polarize and fragment enemy alliances.",
+                "Applying hope-based messaging to consolidate loyalty and inspire action."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "digital_influence_10",
+            "title": "Psychological Resilience Against Digital PsyOps",
+            "description": "Defending against psychological manipulation and emotional exploitation online.",
+            "bulletpoints": [
+                "Recognizing and resisting influence tactics used against operatives.",
+                "Using digital detox methods to prevent psychological exhaustion.",
+                "Establishing mental conditioning exercises to reinforce cognitive autonomy."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

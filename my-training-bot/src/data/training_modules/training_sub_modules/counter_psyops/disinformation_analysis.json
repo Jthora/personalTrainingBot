@@ -12,6 +12,11 @@
     "cardDecks": [
         "fact_checking_methods",
         "cognitive_bias_training",
-        "false_flag_identification"
+        "false_flag_identification",
+        "source_reliability_assessment",
+        "narrative_pattern_analysis",
+        "synthetic_media_detection",
+        "influence_network_mapping",
+        "misinformation_forensic_analysis"
     ]
 }

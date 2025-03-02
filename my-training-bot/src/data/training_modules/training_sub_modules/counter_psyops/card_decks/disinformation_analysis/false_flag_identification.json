@@ -1,26 +1,131 @@
 {
     "id": "false_flag_identification",
     "name": "False Flag Identification",
-    "description": "Training in detecting staged events and manipulated narratives used for strategic deception.",
+    "description": "Training in recognizing, analyzing, and exposing false flag operations designed to manipulate public perception and justify strategic actions.",
     "focus": [
-        "Pattern Recognition",
-        "Strategic Deception Awareness"
+        "Tactical Deception Awareness",
+        "Pattern Recognition in Covert Operations",
+        "Disrupting Engineered Crisis Narratives"
     ],
     "cards": [
         {
             "id": "false_flag_1",
-            "title": "Historical False Flag Patterns",
-            "description": "Studying historical false flag events to recognize key indicators.",
-            "bulletpoints": "Government use of deception, common strategic justifications, media complicity",
-            "duration": "20",
-            "difficulty": "Advanced"
+            "title": "Understanding False Flag Operations",
+            "description": "A comprehensive breakdown of what false flag operations are and how they have been used historically.",
+            "bulletpoints": [
+                "Defining false flag events and their strategic applications.",
+                "Examining historical cases and their geopolitical consequences.",
+                "Recognizing the hallmarks of a staged or engineered crisis."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
         },
         {
             "id": "false_flag_2",
-            "title": "Analyzing Event Anomalies",
-            "description": "Techniques for identifying inconsistencies and suspicious narratives in major incidents.",
-            "bulletpoints": "Contradictory evidence, changes in official stories, suppression of alternative narratives",
-            "duration": "20",
+            "title": "Identifying False Flag Indicators",
+            "description": "Analyzing key traits that distinguish genuine crises from orchestrated events.",
+            "bulletpoints": [
+                "Detecting inconsistencies in mainstream media narratives.",
+                "Analyzing witness testimonies for planted misinformation.",
+                "Identifying anomalies in law enforcement and intelligence responses."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "false_flag_3",
+            "title": "The Role of Media in False Flags",
+            "description": "Understanding how mass media is weaponized to control public perception during false flag events.",
+            "bulletpoints": [
+                "Recognizing synchronized media messaging as a sign of narrative control.",
+                "Tracking how journalists and whistleblowers are silenced or discredited.",
+                "Analyzing crisis actors and fabricated eyewitness accounts."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "false_flag_4",
+            "title": "Covert Actors & Crisis Engineering",
+            "description": "Investigating who orchestrates false flag events and why.",
+            "bulletpoints": [
+                "Mapping out intelligence agencies, private contractors, and deep state involvement.",
+                "Tracking financial and political beneficiaries of engineered crises.",
+                "Uncovering psychological operations (PsyOps) disguised as real events."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "false_flag_5",
+            "title": "Analyzing Pre-Event Signals",
+            "description": "Detecting warning signs that suggest a false flag operation is being planned.",
+            "bulletpoints": [
+                "Identifying suspicious drills or exercises that coincide with real-world attacks.",
+                "Analyzing leaked intelligence reports and whistleblower warnings.",
+                "Tracking predictive programming in media before major events occur."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "false_flag_6",
+            "title": "Psychological Manipulation in False Flags",
+            "description": "Understanding the emotional engineering behind false flag operations.",
+            "bulletpoints": [
+                "Examining how fear-based narratives influence mass compliance.",
+                "Recognizing trauma-based programming and its long-term effects.",
+                "Deconstructing manufactured outrage campaigns used to justify policy shifts."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "false_flag_7",
+            "title": "Tracking the Aftermath of False Flags",
+            "description": "Analyzing long-term consequences and policy changes after a false flag event.",
+            "bulletpoints": [
+                "Monitoring legal and policy shifts enacted after engineered crises.",
+                "Identifying intelligence expansions and civil liberty restrictions.",
+                "Exposing false narratives that persist long after the event occurs."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "false_flag_8",
+            "title": "Exposing False Flags in Real Time",
+            "description": "Developing strategies to rapidly counteract false flag narratives before they solidify.",
+            "bulletpoints": [
+                "Leveraging OSINT (Open Source Intelligence) to debunk misinformation.",
+                "Organizing rapid response networks to disrupt staged narratives.",
+                "Coordinating with independent journalists and investigators to expose the truth."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "false_flag_9",
+            "title": "Countering Controlled Opposition",
+            "description": "Identifying and neutralizing controlled opposition figures who reinforce false flag narratives.",
+            "bulletpoints": [
+                "Recognizing infiltration tactics used to mislead truth-seeking communities.",
+                "Exposing intelligence assets posing as whistleblowers or activists.",
+                "Developing independent verification systems to prevent narrative hijacking."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "false_flag_10",
+            "title": "False Flag Resistance & Information Warfare",
+            "description": "Building long-term resistance strategies against engineered crises and narrative warfare.",
+            "bulletpoints": [
+                "Establishing decentralized intelligence networks for real-time information analysis.",
+                "Developing counter-PsyOps techniques to expose false flags as they unfold.",
+                "Using encryption and decentralized platforms to preserve truth-based narratives."
+            ],
+            "duration": "90",
             "difficulty": "Expert"
         }
     ]

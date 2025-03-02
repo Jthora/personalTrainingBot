@@ -1,0 +1,132 @@
+{
+    "id": "narrative_pattern_analysis",
+    "name": "Narrative Pattern Analysis",
+    "description": "Training to recognize, dissect, and counteract recurring patterns in manipulated narratives used in psychological operations and disinformation campaigns.",
+    "focus": [
+        "Pattern Recognition in Media Narratives",
+        "Linguistic & Framing Analysis",
+        "Disrupting Predictive Programming"
+    ],
+    "cards": [
+        {
+            "id": "narrative_pattern_1",
+            "title": "Understanding Narrative Structures",
+            "description": "Breaking down the fundamental elements of storytelling used to shape perception.",
+            "bulletpoints": [
+                "Identifying common archetypal structures in media narratives.",
+                "Recognizing the Hero-Villain dichotomy in disinformation campaigns.",
+                "Understanding the role of controlled opposition in narrative reinforcement."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "narrative_pattern_2",
+            "title": "Linguistic Framing & Word Manipulation",
+            "description": "Examining how specific words and phrases are used to frame reality and control public perception.",
+            "bulletpoints": [
+                "Detecting linguistic framing techniques in propaganda.",
+                "Analyzing the use of euphemisms and redefinition of terms.",
+                "Recognizing repetition as a tool for subconscious reinforcement."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "narrative_pattern_3",
+            "title": "Manufacturing Consent & Crisis Narratives",
+            "description": "Understanding how mass media is used to steer public opinion toward pre-planned conclusions.",
+            "bulletpoints": [
+                "Tracking the timeline of crisis events and their media coverage.",
+                "Identifying pre-scripted narratives before official investigations.",
+                "Recognizing coordinated talking points across multiple platforms."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "narrative_pattern_4",
+            "title": "Predictive Programming & Social Conditioning",
+            "description": "Decoding media content that subtly implants ideas before real-world events occur.",
+            "bulletpoints": [
+                "Analyzing entertainment media for predictive programming patterns.",
+                "Identifying how subconscious priming works in large-scale PsyOps.",
+                "Tracking agenda-driven messaging embedded in popular culture."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "narrative_pattern_5",
+            "title": "Identifying Crisis Actors & Staged Events",
+            "description": "Investigating the use of actors, fabricated events, and simulated tragedies to manipulate emotions.",
+            "bulletpoints": [
+                "Recognizing signs of staged press conferences and scripted interviews.",
+                "Analyzing inconsistencies in witness testimonies and crisis reporting.",
+                "Tracking recycled personas appearing in multiple crisis events."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "narrative_pattern_6",
+            "title": "Analyzing False Dichotomies & Polarization",
+            "description": "Dissecting narratives that force binary thinking and divide populations.",
+            "bulletpoints": [
+                "Recognizing false choices that limit independent critical thinking.",
+                "Understanding how polarization tactics strengthen mass compliance.",
+                "Identifying wedge issues used to manufacture division and hostility."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "narrative_pattern_7",
+            "title": "Disrupting Psychological Anchoring",
+            "description": "Counteracting the subconscious anchoring effect used to bias thought processes.",
+            "bulletpoints": [
+                "Recognizing how initial exposure to information shapes beliefs.",
+                "Detecting early-stage framing in breaking news and crisis coverage.",
+                "Utilizing counter-narratives to reframe perceptions."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "narrative_pattern_8",
+            "title": "Deconstructing Government & Corporate Messaging",
+            "description": "Investigating how official institutions control messaging to maintain narratives.",
+            "bulletpoints": [
+                "Identifying strategic ambiguity in official statements.",
+                "Tracking public relations firms involved in large-scale PsyOps.",
+                "Analyzing crisis communication templates used across different events."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "narrative_pattern_9",
+            "title": "Counter-Narrative Strategy & Disruption",
+            "description": "Developing methods to break down and expose weaponized narratives in real time.",
+            "bulletpoints": [
+                "Using logic traps to expose contradictions in manipulated narratives.",
+                "Coordinating decentralized counter-messaging strategies.",
+                "Leveraging memetics and viral content to disrupt PsyOp campaigns."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "narrative_pattern_10",
+            "title": "Open-Source Intelligence for Narrative Tracking",
+            "description": "Using OSINT techniques to detect and analyze emerging narrative patterns.",
+            "bulletpoints": [
+                "Tracking narrative shifts using sentiment analysis tools.",
+                "Using metadata and AI-driven analysis for media mapping.",
+                "Correlating intelligence reports with mass media coverage for discrepancies."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

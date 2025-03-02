@@ -1,0 +1,132 @@
+{
+    "id": "neurocognitive_intrusion_detection",
+    "name": "Neurocognitive Intrusion Detection",
+    "description": "Developing skills to detect, analyze, and counteract cognitive intrusions, thought implantation, and neuro-manipulation techniques.",
+    "focus": [
+        "Cognitive Threat Recognition",
+        "Intrusive Thought Neutralization",
+        "Neuro-Manipulation Countermeasures"
+    ],
+    "cards": [
+        {
+            "id": "neurocog_intrusion_1",
+            "title": "Identifying Cognitive Intrusions",
+            "description": "Recognizing external influences that manipulate thought processes.",
+            "bulletpoints": [
+                "Observe sudden, uncharacteristic thought patterns and evaluate their origins.",
+                "Compare current beliefs and emotions with previous baseline states to detect inconsistencies.",
+                "Log instances of intrusive thoughts, noting their triggers, frequency, and emotional impact."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "neurocog_intrusion_2",
+            "title": "Mental Latency Analysis",
+            "description": "Detecting thought lag or artificial delays in cognitive processing.",
+            "bulletpoints": [
+                "Test mental reaction speed with rapid decision-making drills under different conditions.",
+                "Identify moments of inexplicable hesitation or brain fog when making simple choices.",
+                "Use self-interrogation techniques to determine whether delays are externally induced."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "neurocog_intrusion_3",
+            "title": "Disrupting Implanted Thoughts",
+            "description": "Neutralizing artificially introduced thoughts and suggestions.",
+            "bulletpoints": [
+                "Use thought pattern auditing to separate organic ideas from external imprints.",
+                "Repeat alternative affirmations that overwrite intrusive suggestions.",
+                "Engage in deep self-reflection to determine whether a thought aligns with your core identity."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "neurocog_intrusion_4",
+            "title": "Sensory Inconsistency Detection",
+            "description": "Using multi-sensory verification to identify cognitive manipulation.",
+            "bulletpoints": [
+                "Compare perceived sensory data (sight, sound, touch) with logical expectations.",
+                "Cross-check emotional reactions with physical body signals to spot false triggers.",
+                "Use external tools (e.g., recording conversations) to verify inconsistencies in memory."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "neurocog_intrusion_5",
+            "title": "Recognizing Subliminal Influence",
+            "description": "Identifying covert messaging embedded in media and communication.",
+            "bulletpoints": [
+                "Analyze repetitive themes in media and conversation to detect programming attempts.",
+                "Slow down audio or video playback to uncover hidden linguistic cues.",
+                "Use subconscious keyword tracking to pinpoint subliminal implants in speech or text."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "neurocog_intrusion_6",
+            "title": "Defensive Cognitive Looping",
+            "description": "Creating thought barriers to prevent unauthorized mental redirection.",
+            "bulletpoints": [
+                "Establish personal mantras that reaffirm sovereignty over your mind.",
+                "Use deliberate, controlled internal dialogue to maintain cognitive autonomy.",
+                "Develop mental routines that counter attempts at externally induced loops."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "neurocog_intrusion_7",
+            "title": "Intrusion-Resistant Mental Architecture",
+            "description": "Building cognitive frameworks that resist external tampering.",
+            "bulletpoints": [
+                "Organize mental data hierarchically to prevent outside restructuring of beliefs.",
+                "Link thoughts to sensory experiences to anchor them in reality.",
+                "Strengthen personal convictions through deliberate reinforcement practices."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "neurocog_intrusion_8",
+            "title": "Counteracting Neuro-Linguistic Attacks",
+            "description": "Detecting and neutralizing language-based cognitive intrusions.",
+            "bulletpoints": [
+                "Break down manipulative speech patterns to disrupt their intended effect.",
+                "Avoid reacting emotionally to NLP-based triggers; respond with calculated logic.",
+                "Use linguistic mirroring to reflect manipulation attempts back to the sender."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "neurocog_intrusion_9",
+            "title": "Cognitive Overload Resistance",
+            "description": "Preventing mental overwhelm and forced thought redirection.",
+            "bulletpoints": [
+                "Prioritize information intake to avoid neural overload.",
+                "Take scheduled cognitive breaks to reset mental clarity.",
+                "Develop rapid filtering techniques to identify and discard unnecessary data."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "neurocog_intrusion_10",
+            "title": "Psychological Hardening Against Intrusions",
+            "description": "Training the mind to withstand advanced cognitive infiltration techniques.",
+            "bulletpoints": [
+                "Strengthen mental discipline through structured focus training exercises.",
+                "Practice dissociation from emotionally charged thought manipulations.",
+                "Reinforce identity resilience by establishing core self-affirmation strategies."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        }
+    ]
+}

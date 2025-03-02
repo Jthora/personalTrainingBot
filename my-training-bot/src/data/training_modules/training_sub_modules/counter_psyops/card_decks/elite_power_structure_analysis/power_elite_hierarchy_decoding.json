@@ -1,0 +1,132 @@
+{
+    "id": "power_elite_hierarchy_decoding",
+    "name": "Power Elite Hierarchy Decoding",
+    "description": "A structured analysis of elite power structures, their methods of control, and strategies to decode their influence on global affairs.",
+    "focus": [
+        "Understanding Power Structures",
+        "Decoding Hierarchical Control",
+        "Counteracting Elite Influence"
+    ],
+    "cards": [
+        {
+            "id": "elite_hierarchy_1",
+            "title": "Mapping the Power Pyramid",
+            "description": "Analyzing the hierarchical structure of global power and how it operates.",
+            "bulletpoints": [
+                "Identifying different tiers of control from corporate to intelligence agencies.",
+                "Understanding the flow of influence from top-down networks.",
+                "Recognizing public-facing vs. shadow elements within elite circles."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "elite_hierarchy_2",
+            "title": "Council-Based Governance and Secret Agendas",
+            "description": "Uncovering how elite councils, think tanks, and global organizations shape policy.",
+            "bulletpoints": [
+                "Analyzing the influence of groups like the Bilderberg Group, CFR, and WEF.",
+                "Understanding how secret meetings set global directives.",
+                "Decoding public narratives shaped by elite-controlled institutions."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "elite_hierarchy_3",
+            "title": "The Role of Intelligence Agencies in Global Control",
+            "description": "How intelligence agencies serve as enforcers for elite power structures.",
+            "bulletpoints": [
+                "Tracing historical intelligence operations and their hidden objectives.",
+                "Recognizing the fusion of intelligence agencies with corporate interests.",
+                "Identifying how counterintelligence tactics maintain elite secrecy."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "elite_hierarchy_4",
+            "title": "Financial Cartels & Banking Dynasties",
+            "description": "Analyzing how elite financial entities manipulate global economies.",
+            "bulletpoints": [
+                "Deciphering the role of central banking systems and their architects.",
+                "Understanding how monetary policies serve elite interests.",
+                "Tracing the history of financial control through banking dynasties."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "elite_hierarchy_5",
+            "title": "Bloodline Influence & Lineage-Based Control",
+            "description": "Examining hereditary power structures that span generations.",
+            "bulletpoints": [
+                "Identifying intergenerational control mechanisms.",
+                "Recognizing how bloodline families maintain elite status.",
+                "Tracing royal, corporate, and occult influences in elite lineage."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "elite_hierarchy_6",
+            "title": "Media Manipulation & Controlled Narratives",
+            "description": "Decoding elite influence in mainstream media and propaganda strategies.",
+            "bulletpoints": [
+                "Identifying controlled media outlets and their owners.",
+                "Recognizing how news cycles are designed to manipulate perception.",
+                "Understanding censorship, suppression tactics, and information warfare."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "elite_hierarchy_7",
+            "title": "Corporate Power Structures & Technocratic Influence",
+            "description": "Examining how elite corporations function as global power centers.",
+            "bulletpoints": [
+                "Mapping the role of multinational corporations in governance.",
+                "Recognizing technocratic agendas and data control strategies.",
+                "Understanding corporate lobbying and policy manipulation."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "elite_hierarchy_8",
+            "title": "Elite-Controlled Philanthropy & Social Engineering",
+            "description": "Unmasking how philanthropic organizations serve elite agendas.",
+            "bulletpoints": [
+                "Decoding the use of charity as a tool for soft power.",
+                "Identifying hidden political agendas behind social movements.",
+                "Tracing elite funding sources for ideological control."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "elite_hierarchy_9",
+            "title": "The Psychological Conditioning of the Masses",
+            "description": "Understanding how elites shape societal beliefs and behaviors.",
+            "bulletpoints": [
+                "Recognizing psychological warfare tactics used to pacify populations.",
+                "Tracing the history of behavioral conditioning through media and education.",
+                "Developing immunity to mass mind control techniques."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "elite_hierarchy_10",
+            "title": "Decentralizing Power & Building Autonomous Systems",
+            "description": "Strategies to counter elite influence by fostering decentralized alternatives.",
+            "bulletpoints": [
+                "Developing community-based self-sufficient systems.",
+                "Utilizing blockchain and decentralized finance for financial independence.",
+                "Creating parallel institutions to bypass elite-controlled structures."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

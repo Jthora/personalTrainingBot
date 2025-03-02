@@ -1,26 +1,131 @@
 {
     "id": "mental_resilience_drills",
     "name": "Mental Resilience Drills",
-    "description": "Techniques to build mental endurance and resistance against psychological stress and manipulation.",
+    "description": "Training exercises to strengthen mental endurance, enhance cognitive resistance, and counteract psychological manipulation.",
     "focus": [
-        "Mental Resilience",
+        "Cognitive Fortification",
+        "Stress Inoculation",
         "Emotional Regulation"
     ],
     "cards": [
         {
-            "id": "resilience_1",
+            "id": "mental_resilience_1",
             "title": "Cognitive Fortification Techniques",
-            "description": "Developing thought patterns that resist external influence and manipulation.",
-            "bulletpoints": "Practice mindfulness anchoring, self-reinforcement scripts, and thought re-centering methods",
-            "duration": "20",
+            "description": "Building a structured mental defense against psychological stressors and manipulation tactics.",
+            "bulletpoints": [
+                "Develop cognitive anchors by reinforcing core beliefs and logical reasoning frameworks.",
+                "Practice internal dialogue control to prevent external narratives from overriding personal truth.",
+                "Implement rapid cognitive re-centering techniques to counter emotional hijacking."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "mental_resilience_2",
+            "title": "Controlled Exposure to Psychological Stress",
+            "description": "Using stress inoculation to train mental endurance and improve emotional stability under pressure.",
+            "bulletpoints": [
+                "Engage in simulated high-stress debates to test emotional control and argument clarity.",
+                "Use timed cognitive problem-solving under duress to improve focus under psychological pressure.",
+                "Practice controlled exposure to opposing ideologies while maintaining critical thinking."
+            ],
+            "duration": "75",
             "difficulty": "Advanced"
         },
         {
-            "id": "resilience_2",
-            "title": "Exposure to Psychological Stressors",
-            "description": "Building mental toughness through controlled exposure to psychological stress.",
-            "bulletpoints": "Simulated gaslighting scenarios, controlled cognitive pressure exercises, emotional reframing drills",
-            "duration": "25",
+            "id": "mental_resilience_3",
+            "title": "Emotional Detachment Training",
+            "description": "Developing the ability to process information without emotional bias or influence.",
+            "bulletpoints": [
+                "Practice emotion-labeling exercises to separate logical analysis from instinctual reactions.",
+                "Engage in cognitive defusion drills to distance personal identity from manipulated narratives.",
+                "Use mindfulness-based de-escalation techniques to prevent emotional triggers from clouding judgment."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mental_resilience_4",
+            "title": "Mental Agility and Adaptive Thinking",
+            "description": "Strengthening the ability to rapidly shift mental perspectives and adjust to new information.",
+            "bulletpoints": [
+                "Engage in paradoxical reasoning exercises to train cognitive flexibility.",
+                "Practice rapid situational re-evaluation drills to counter misinformation strategies.",
+                "Use perspective-switching exercises to break cognitive fixation on deceptive narratives."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mental_resilience_5",
+            "title": "Cognitive Filtering and Selective Focus",
+            "description": "Learning to identify and dismiss irrelevant or harmful information to maintain mental clarity.",
+            "bulletpoints": [
+                "Train selective information processing to filter propaganda from objective data.",
+                "Use mental compartmentalization techniques to isolate external stressors from core cognition.",
+                "Develop cognitive filtration methods for distinguishing useful insights from psychological noise."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "mental_resilience_6",
+            "title": "Psychological Stress Compression",
+            "description": "Strengthening mental toughness by controlling reaction time to stress-inducing stimuli.",
+            "bulletpoints": [
+                "Practice deep cognitive pause drills before reacting to external emotional provocations.",
+                "Use tactical breathing and focused visualization to delay stress responses.",
+                "Develop systematic emotional buffering to prevent psychological overwhelm."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mental_resilience_7",
+            "title": "Internal Narrative Control",
+            "description": "Mastering the ability to regulate personal narratives against external ideological influence.",
+            "bulletpoints": [
+                "Identify and reinforce internal mantras that align with personal truth and integrity.",
+                "Use mental recalibration techniques to neutralize external narrative conditioning.",
+                "Implement self-directed subconscious programming for psychological self-sufficiency."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mental_resilience_8",
+            "title": "Overcoming Psychological Exhaustion",
+            "description": "Building endurance against mental fatigue caused by prolonged exposure to psychological warfare tactics.",
+            "bulletpoints": [
+                "Rotate through high-intensity and low-intensity cognitive exercises to prevent burnout.",
+                "Use strategic disengagement methods to prevent long-term ideological bombardment from overwhelming defenses.",
+                "Train rapid recovery techniques to regain cognitive sharpness after psychological depletion."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mental_resilience_9",
+            "title": "Countering Emotional Manipulation",
+            "description": "Developing an internal system to resist guilt-tripping, fear-based control, and coercion tactics.",
+            "bulletpoints": [
+                "Identify and label emotional blackmail tactics in real-time.",
+                "Develop psychological counterweight strategies to neutralize guilt-based coercion.",
+                "Use thought reprogramming drills to replace fear-based narratives with rational analysis."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mental_resilience_10",
+            "title": "Building an Impenetrable Mindset",
+            "description": "Developing a strategic, unshakable mental framework that cannot be easily compromised.",
+            "bulletpoints": [
+                "Construct a structured belief system resistant to external deconstruction.",
+                "Use pre-set psychological countermeasures against mind-control tactics.",
+                "Establish a long-term mental training regimen for ongoing cognitive reinforcement."
+            ],
+            "duration": "150",
             "difficulty": "Expert"
         }
     ]

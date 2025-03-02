@@ -1,0 +1,132 @@
+{
+    "id": "psy_resilience_circuit_training",
+    "name": "Psy Resilience Circuit Training",
+    "description": "A structured training regimen designed to fortify mental, emotional, and psychic resilience under stress and manipulation.",
+    "focus": [
+        "Mental Fortitude",
+        "Emotional Control",
+        "Resilience Under Psychological Pressure"
+    ],
+    "cards": [
+        {
+            "id": "psy_resilience_1",
+            "title": "Building Mental Endurance",
+            "description": "Developing the ability to maintain cognitive clarity under prolonged psychological stress.",
+            "bulletpoints": [
+                "Engage in sustained focus exercises, such as deep work or meditation marathons.",
+                "Simulate high-pressure decision-making scenarios to strengthen rapid adaptation skills.",
+                "Condition the mind through controlled stress exposure followed by relaxation training."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "psy_resilience_2",
+            "title": "Emotional Stability Reinforcement",
+            "description": "Strengthening control over emotional responses to maintain clarity and composure.",
+            "bulletpoints": [
+                "Practice ‘Emotional Buffering’ by delaying reactions to provocative stimuli.",
+                "Develop an internal ‘Anchor Phrase’ to stabilize emotions in real-time.",
+                "Use exposure therapy techniques to desensitize triggers and emotional hijacks."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psy_resilience_3",
+            "title": "Psychic Shock Absorption",
+            "description": "Training the mind to absorb and neutralize psychological attacks without destabilization.",
+            "bulletpoints": [
+                "Implement ‘Thought Diffusion’ techniques to prevent intrusive thoughts from taking hold.",
+                "Use rhythmic breathing to maintain inner balance under cognitive stress.",
+                "Develop rapid emotional transmutation methods to convert negative energy into neutral or positive states."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psy_resilience_4",
+            "title": "Controlled Cognitive Detachment",
+            "description": "Mastering the ability to detach from emotions and thoughts while retaining awareness.",
+            "bulletpoints": [
+                "Train in ‘Observer Mode’—mentally stepping outside of yourself during high-stress situations.",
+                "Use mental abstraction exercises to process events logically rather than emotionally.",
+                "Develop ‘Zero-Point Mentality’—a state of neutral readiness without attachment or bias."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psy_resilience_5",
+            "title": "Multi-Layered Resistance Conditioning",
+            "description": "Stacking layers of cognitive, emotional, and psychic defense mechanisms for high adaptability.",
+            "bulletpoints": [
+                "Use scenario-based training to test multiple layers of resilience at once.",
+                "Rotate between different cognitive defense strategies to prevent predictability in responses.",
+                "Develop a personalized resilience blueprint combining mental, emotional, and energetic techniques."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psy_resilience_6",
+            "title": "Mental Agility Training",
+            "description": "Enhancing the ability to quickly shift between different mental states without losing control.",
+            "bulletpoints": [
+                "Practice rapid cognitive switching through dynamic problem-solving drills.",
+                "Develop the ability to alternate between deep focus and broad awareness in real-time.",
+                "Use cognitive shock exercises to train immediate adaptation to unexpected events."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psy_resilience_7",
+            "title": "Cognitive Disruption Recovery",
+            "description": "Rebuilding mental stability after exposure to disorienting psychological tactics.",
+            "bulletpoints": [
+                "Train in ‘Mental Reset Drills’ to recover from cognitive dissonance and forced persuasion.",
+                "Use rapid grounding techniques to reestablish a centered state after manipulation attempts.",
+                "Develop a self-reinforcement mantra to counteract psychological disarray."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psy_resilience_8",
+            "title": "Induced Mental Hardening",
+            "description": "Using controlled adversity training to develop mental toughness and stress immunity.",
+            "bulletpoints": [
+                "Expose yourself to controlled intellectual and psychological adversities in training settings.",
+                "Use narrative inoculation—studying manipulation attempts in media and dissecting their tactics.",
+                "Engage in strategic fatigue exercises to test cognitive performance under exhaustion."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psy_resilience_9",
+            "title": "Psychic Equilibrium Mastery",
+            "description": "Achieving a balance between mental fortitude and emotional fluidity for peak resilience.",
+            "bulletpoints": [
+                "Master ‘Tactical Emotional Cycling’—controlled shifts between emotional states for adaptive advantage.",
+                "Develop an energy conservation framework for mental endurance during prolonged engagements.",
+                "Train in ‘Psychic Dynamic Response’—adjusting resilience techniques based on situational needs."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psy_resilience_10",
+            "title": "Total Psy Resilience Integration",
+            "description": "Synthesizing all resilience techniques into an adaptable, intuitive system.",
+            "bulletpoints": [
+                "Create a personalized Psy Resilience Circuit, selecting optimal strategies for your mental framework.",
+                "Train in ‘Simulated Chaos Environments’ to refine resilience under high-pressure conditions.",
+                "Develop a self-calibrating system that adjusts mental defenses automatically based on situational analysis."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        }
+    ]
+}

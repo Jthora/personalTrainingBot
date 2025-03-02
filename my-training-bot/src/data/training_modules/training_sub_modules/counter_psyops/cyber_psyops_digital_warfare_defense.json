@@ -1,0 +1,22 @@
+{
+    "id": "cyber_psyops_digital_warfare_defense",
+    "name": "Cyber-PsyOps & Digital Warfare Defense",
+    "description": "Training in defending against digital psychological operations, mass censorship, AI-driven disinformation, and cyber-weaponized manipulation.",
+    "difficulty": "Advanced",
+    "estimated_time": "12-36 months",
+    "focus": [
+        "AI & Algorithmic Psychological Manipulation",
+        "Digital Counter-Propaganda Operations",
+        "Defensive OSINT & Data Sovereignty"
+    ],
+    "cardDecks": [
+        "ai_powered_disinformation_detection",
+        "counter_censorship_strategies",
+        "tactical_digital_influence_operations",
+        "online_mass_awakening_tactics",
+        "cyber_warfare_and_digital_resilience_training",
+        "botnet_identification_and_psyops_disruption",
+        "psychological_warfare_in_social_media",
+        "darknet_osint_and_covert_intelligence_operations"
+    ]
+}

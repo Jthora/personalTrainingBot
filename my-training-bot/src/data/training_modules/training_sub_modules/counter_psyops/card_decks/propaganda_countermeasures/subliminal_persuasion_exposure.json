@@ -1,0 +1,132 @@
+{
+    "id": "subliminal_persuasion_exposure",
+    "name": "Subliminal Persuasion Exposure",
+    "description": "Training in identifying and countering subliminal messaging embedded in media, advertising, and public discourse.",
+    "focus": [
+        "Recognizing Hidden Influence Techniques",
+        "Subconscious Trigger Analysis",
+        "Resisting Subliminal Conditioning"
+    ],
+    "cards": [
+        {
+            "id": "subliminal_persuasion_1",
+            "title": "Decoding Embedded Messages",
+            "description": "Identifying hidden messages in visual, auditory, and textual media.",
+            "bulletpoints": [
+                "Analyze corporate logos and advertisements for embedded symbols and triggers.",
+                "Slow down or reverse media to detect hidden auditory or visual cues.",
+                "Compare branding campaigns across industries to identify recurring patterns."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "subliminal_persuasion_2",
+            "title": "Neuro-Linguistic Programming (NLP) in Media",
+            "description": "Recognizing how subtle language shifts manipulate perception.",
+            "bulletpoints": [
+                "Identify key linguistic cues that trigger automatic responses in the audience.",
+                "Break down political speeches and commercials for persuasive phrase patterns.",
+                "Monitor news cycles to detect coordinated NLP usage across multiple platforms."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "subliminal_persuasion_3",
+            "title": "Emotional Triggers & Symbolism",
+            "description": "Examining how emotions are used to bypass critical thinking.",
+            "bulletpoints": [
+                "Dissect emotional appeals in political and commercial campaigns.",
+                "Identify colors, music, and framing techniques designed to manipulate mood.",
+                "Train in emotional resilience techniques to prevent subconscious influence."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "subliminal_persuasion_4",
+            "title": "The Psychology of Repetition",
+            "description": "Understanding how repeated exposure conditions belief systems.",
+            "bulletpoints": [
+                "Track phrases, images, and themes that are repeatedly pushed in media cycles.",
+                "Contrast alternative news sources to identify common propaganda threads.",
+                "Use pattern recognition to expose manufactured consensus narratives."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "subliminal_persuasion_5",
+            "title": "Subliminal Messaging in Entertainment",
+            "description": "Analyzing how entertainment content shapes subconscious beliefs.",
+            "bulletpoints": [
+                "Examine recurring themes in movies, TV shows, and music videos.",
+                "Identify predictive programming in entertainment that preconditions public response.",
+                "Compare scripts, character archetypes, and subliminal messaging across genres."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "subliminal_persuasion_6",
+            "title": "Framing & Context Manipulation",
+            "description": "Deconstructing how framing alters perception of events and ideas.",
+            "bulletpoints": [
+                "Analyze how headlines and images are used to skew public interpretation.",
+                "Compare real-time event coverage across media networks for bias detection.",
+                "Practice reframing techniques to neutralize manipulative narratives."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "subliminal_persuasion_7",
+            "title": "Subliminal Fear & Anxiety Tactics",
+            "description": "Identifying psychological control through fear-based messaging.",
+            "bulletpoints": [
+                "Assess crisis coverage for exaggerated fear-mongering tactics.",
+                "Recognize how risk magnification is used to justify restrictive policies.",
+                "Develop immunity strategies to counteract fear-induced cognitive manipulation."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "subliminal_persuasion_8",
+            "title": "Breaking Subliminal Influence",
+            "description": "Developing conscious resistance against hidden persuasion.",
+            "bulletpoints": [
+                "Practice conscious media consumption with heightened awareness of messaging.",
+                "Use cognitive distancing techniques to avoid emotional hijacking.",
+                "Create and reinforce personal counter-narratives to replace conditioned responses."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "subliminal_persuasion_9",
+            "title": "Reality Testing & Mental Reprogramming",
+            "description": "Implementing techniques to reclaim cognitive autonomy.",
+            "bulletpoints": [
+                "Conduct media fasts to reset perception and analyze shifts in awareness.",
+                "Use critical questioning drills to dismantle implanted beliefs.",
+                "Engage in meditation and cognitive detox exercises to clear subliminal influence."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "subliminal_persuasion_10",
+            "title": "Counter-Persuasion Techniques",
+            "description": "Utilizing strategic communication to neutralize subliminal conditioning.",
+            "bulletpoints": [
+                "Train in counter-NLP techniques to reverse persuasion effects.",
+                "Use humor and satire to disrupt and expose manipulation tactics.",
+                "Develop narratives that inoculate against mass psychological influence."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        }
+    ]
+}

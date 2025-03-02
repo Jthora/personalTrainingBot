@@ -1,0 +1,132 @@
+{
+    "id": "cultural_psyops_awareness",
+    "name": "Cultural PsyOps Awareness",
+    "description": "Training in identifying and deconstructing cultural psychological operations (PsyOps) used to shape societal beliefs, values, and behaviors.",
+    "focus": [
+        "Cultural Engineering and Influence",
+        "Psychological Warfare in Social Movements",
+        "Counteracting Cultural Manipulation"
+    ],
+    "cards": [
+        {
+            "id": "cultural_psyops_1",
+            "title": "Recognizing Cultural Conditioning",
+            "description": "Understanding how cultural norms and values are programmed through social institutions.",
+            "bulletpoints": [
+                "Analyze historical shifts in cultural values and the mechanisms behind them.",
+                "Identify the role of media, education, and entertainment in shaping cultural narratives.",
+                "Deconstruct popular ideologies to uncover their origins and embedded psychological triggers."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "cultural_psyops_2",
+            "title": "Weaponization of Cultural Identity",
+            "description": "Examining how identity politics and cultural divisions are exploited to fragment societies.",
+            "bulletpoints": [
+                "Study divide-and-conquer tactics used in identity-based PsyOps.",
+                "Recognize how controlled opposition is manufactured within social movements.",
+                "Develop resistance strategies to maintain unity despite divisive narratives."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cultural_psyops_3",
+            "title": "Mass Media and Cultural Narratives",
+            "description": "Understanding how media narratives shape perceptions of reality and identity.",
+            "bulletpoints": [
+                "Track the consolidation of media ownership and its impact on narrative control.",
+                "Analyze trends in entertainment, music, and cinema for subliminal conditioning.",
+                "Expose how mass media rewrites history to serve propaganda objectives."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cultural_psyops_4",
+            "title": "PsyOps in Religion and Spirituality",
+            "description": "Investigating the use of religious and spiritual frameworks in psychological warfare.",
+            "bulletpoints": [
+                "Identify manipulation techniques within religious institutions and spiritual movements.",
+                "Distinguish between authentic spiritual growth and programmed belief systems.",
+                "Uncover historical religious PsyOps used to enforce social control."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cultural_psyops_5",
+            "title": "The Role of Education in Cultural Programming",
+            "description": "Assessing how formal education is used to enforce specific worldviews and behaviors.",
+            "bulletpoints": [
+                "Analyze curriculum structures for biases and agenda-driven knowledge selection.",
+                "Identify conditioning techniques used in early education to limit critical thinking.",
+                "Develop alternative educational models that encourage independent thought."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cultural_psyops_6",
+            "title": "Social Media and Psychological Warfare",
+            "description": "Examining how social media platforms reinforce ideological control.",
+            "bulletpoints": [
+                "Recognize social media algorithms designed to create ideological echo chambers.",
+                "Identify psychological tactics used in online influence operations.",
+                "Develop counter-strategies for digital sovereignty and information independence."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cultural_psyops_7",
+            "title": "Memetics and Viral Influence",
+            "description": "Exploring the impact of memes, slogans, and simplified messaging in mass persuasion.",
+            "bulletpoints": [
+                "Analyze the psychological effects of meme culture on belief systems.",
+                "Deconstruct the lifecycle of viral ideas and their intended influence.",
+                "Develop counter-memetics strategies to disrupt manipulative messaging."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cultural_psyops_8",
+            "title": "Subversion and Cultural Infiltration",
+            "description": "Unmasking infiltration tactics used to co-opt movements and cultural institutions.",
+            "bulletpoints": [
+                "Study historical cases of subversion within revolutionary and activist groups.",
+                "Track the funding sources behind cultural shifts and their geopolitical motives.",
+                "Develop counter-infiltration strategies to protect authentic grassroots movements."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cultural_psyops_9",
+            "title": "The Science of Public Opinion Shaping",
+            "description": "Understanding how behavioral psychology is used to engineer mass belief structures.",
+            "bulletpoints": [
+                "Analyze psychological studies used in mass influence operations.",
+                "Identify the use of repetition, emotional anchoring, and trauma-based conditioning.",
+                "Develop techniques for deprogramming and restoring critical thought processes."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cultural_psyops_10",
+            "title": "Cultural Sovereignty and Psychological Freedom",
+            "description": "Developing personal and collective strategies for maintaining cultural autonomy.",
+            "bulletpoints": [
+                "Create and promote decentralized cultural movements resistant to manipulation.",
+                "Encourage independent artistic expression that is free from corporate influence.",
+                "Develop psychological defense techniques to resist cultural programming."
+            ],
+            "duration": "150",
+            "difficulty": "Expert"
+        }
+    ]
+}

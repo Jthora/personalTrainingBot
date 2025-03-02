@@ -1,27 +1,132 @@
 {
     "id": "cognitive_bias_training",
     "name": "Cognitive Bias Training",
-    "description": "Identifying and mitigating the influence of cognitive biases on perception and decision-making.",
+    "description": "Training to recognize, counteract, and neutralize cognitive biases that influence perception and decision-making in information analysis.",
     "focus": [
-        "Bias Recognition",
-        "Logical Fallacies"
+        "Bias Recognition & Mitigation",
+        "Psychological Influence Awareness",
+        "Rational & Logical Thinking"
     ],
     "cards": [
         {
-            "id": "bias_1",
-            "title": "Confirmation Bias Awareness",
-            "description": "Understanding how personal biases influence interpretation of information.",
-            "bulletpoints": "Challenge assumptions, seek diverse perspectives, avoid echo chambers",
-            "duration": "15",
+            "id": "cognitive_bias_1",
+            "title": "Understanding Cognitive Biases",
+            "description": "An overview of how cognitive biases impact perception and decision-making.",
+            "bulletpoints": [
+                "Defining cognitive bias and its psychological origins.",
+                "Recognizing how biases shape personal and collective belief systems.",
+                "Identifying key biases that influence intelligence analysis and decision-making."
+            ],
+            "duration": "75",
             "difficulty": "Intermediate"
         },
         {
-            "id": "bias_2",
-            "title": "Debunking Logical Fallacies",
-            "description": "Recognizing and countering common logical fallacies in arguments.",
-            "bulletpoints": "Strawman arguments, false dichotomies, appeals to emotion vs. logic",
-            "duration": "10",
+            "id": "cognitive_bias_2",
+            "title": "Confirmation Bias & Echo Chambers",
+            "description": "Recognizing and neutralizing the tendency to seek out information that confirms existing beliefs.",
+            "bulletpoints": [
+                "Understanding how social media algorithms reinforce confirmation bias.",
+                "Developing strategies to challenge assumptions through diverse information sources.",
+                "Breaking out of echo chambers using critical questioning techniques."
+            ],
+            "duration": "90",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "cognitive_bias_3",
+            "title": "Anchoring Bias & Narrative Framing",
+            "description": "Identifying how initial information influences subsequent judgments and decisions.",
+            "bulletpoints": [
+                "Recognizing media framing tactics that manipulate public perception.",
+                "Using counter-framing strategies to neutralize manipulation.",
+                "Developing mental resilience against first-impression influence techniques."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cognitive_bias_4",
+            "title": "Availability Heuristic & Media Influence",
+            "description": "Understanding how easily recalled information skews risk perception and decision-making.",
+            "bulletpoints": [
+                "Identifying how media coverage distorts statistical reality.",
+                "Applying probability-based thinking to counter availability bias.",
+                "Using mental exercises to assess risk based on data rather than fear-based narratives."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cognitive_bias_5",
+            "title": "Groupthink & Mass Psychology",
+            "description": "Recognizing and resisting the pressure to conform to collective opinions.",
+            "bulletpoints": [
+                "Identifying symptoms of groupthink in political, social, and corporate environments.",
+                "Developing independent critical thinking to counter mass conformity.",
+                "Building resilience against social manipulation tactics."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cognitive_bias_6",
+            "title": "Authority Bias & Deference to Power",
+            "description": "Understanding how perceived authority can distort judgment and decision-making.",
+            "bulletpoints": [
+                "Recognizing how figures of authority exploit cognitive bias for control.",
+                "Differentiating between legitimate expertise and manufactured authority.",
+                "Training critical questioning techniques to challenge authoritative claims."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cognitive_bias_7",
+            "title": "The Illusory Truth Effect",
+            "description": "Analyzing how repeated exposure to false information increases belief in its validity.",
+            "bulletpoints": [
+                "Understanding how repetition embeds falsehoods into public consciousness.",
+                "Developing counter-strategies to disrupt false narrative reinforcement.",
+                "Utilizing counter-messaging tactics to deprogram misinformation."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cognitive_bias_8",
+            "title": "Survivorship Bias & Distorted Perspectives",
+            "description": "Recognizing how incomplete datasets lead to misinformed conclusions.",
+            "bulletpoints": [
+                "Understanding how historical narratives are selectively framed.",
+                "Detecting missing variables in case studies, research, and intelligence analysis.",
+                "Using complete datasets to challenge survivorship distortion in media narratives."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cognitive_bias_9",
+            "title": "Overconfidence Bias & The Illusion of Knowledge",
+            "description": "Understanding how excessive self-assurance can lead to flawed decision-making.",
+            "bulletpoints": [
+                "Recognizing how expertise can create blind spots in intelligence work.",
+                "Applying Socratic questioning to challenge overconfidence in conclusions.",
+                "Developing mental flexibility to adapt when presented with new evidence."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cognitive_bias_10",
+            "title": "Cognitive Bias Countermeasures & Rational Thinking Frameworks",
+            "description": "Building cognitive resilience against bias-induced manipulation and decision errors.",
+            "bulletpoints": [
+                "Applying structured analytical techniques to minimize bias in intelligence work.",
+                "Using Bayesian reasoning and probability assessments for decision-making.",
+                "Developing self-awareness techniques to maintain cognitive neutrality in analysis."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

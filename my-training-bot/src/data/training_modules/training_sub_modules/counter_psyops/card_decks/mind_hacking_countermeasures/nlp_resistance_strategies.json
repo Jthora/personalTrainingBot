@@ -1,26 +1,131 @@
 {
     "id": "nlp_resistance_strategies",
     "name": "NLP Resistance Strategies",
-    "description": "Defensive strategies against Neuro-Linguistic Programming (NLP) manipulation tactics.",
+    "description": "Training in techniques to counteract Neuro-Linguistic Programming (NLP) manipulations used for psychological influence and control.",
     "focus": [
-        "Neuro-Linguistic Programming Resistance",
-        "Linguistic Pattern Awareness"
+        "Linguistic Pattern Disruption",
+        "Cognitive Autonomy",
+        "Counter-Persuasion Tactics"
     ],
     "cards": [
         {
-            "id": "nlp_1",
-            "title": "Countering Conversational Traps",
-            "description": "Recognizing and deflecting hypnotic language and suggestive speech patterns.",
-            "bulletpoints": "Avoiding linguistic framing, detecting hypnotic cadence, questioning ambiguous presuppositions",
-            "duration": "20",
+            "id": "nlp_resistance_1",
+            "title": "Recognizing NLP Manipulation",
+            "description": "Developing awareness of common NLP techniques used in persuasion and control.",
+            "bulletpoints": [
+                "Study common NLP patterns, such as anchoring, pacing and leading, and embedded commands.",
+                "Identify linguistic presuppositions designed to frame reality in a specific way.",
+                "Observe the body language and tonal shifts that accompany manipulative verbal cues."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "nlp_resistance_2",
+            "title": "Interrupting Embedded Commands",
+            "description": "Disrupting covert commands hidden in everyday speech.",
+            "bulletpoints": [
+                "Pause before reacting to any directive that feels emotionally loaded or urgent.",
+                "Reframe the command in your own words, altering its meaning before internalizing it.",
+                "Mentally question the authority or intent behind a command before acting on it."
+            ],
+            "duration": "75",
             "difficulty": "Advanced"
         },
         {
-            "id": "nlp_2",
-            "title": "Breaking NLP Anchoring Techniques",
-            "description": "Disrupting NLP-based associations and conditioned responses.",
-            "bulletpoints": "Interfering with sensory linkage, reprogramming mental anchors, disrupting automatic compliance",
-            "duration": "15",
+            "id": "nlp_resistance_3",
+            "title": "Countering Linguistic Anchoring",
+            "description": "Neutralizing attempts to associate emotions or ideas with specific words or triggers.",
+            "bulletpoints": [
+                "Recognize emotionally charged keywords used repeatedly to create subconscious associations.",
+                "Break an anchor by mentally linking it to an unrelated or neutral experience.",
+                "Use pattern interruption techniques (changing the subject, asking unexpected questions) to disrupt the anchoring process."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "nlp_resistance_4",
+            "title": "Defensive Cognitive Reframing",
+            "description": "Reframing manipulative narratives into self-empowering perspectives.",
+            "bulletpoints": [
+                "Identify limiting beliefs or assumptions imposed by external narratives.",
+                "Mentally rewrite disempowering statements into ones that reinforce autonomy.",
+                "Use humor and satire to detach from emotional hooks embedded in persuasion tactics."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "nlp_resistance_5",
+            "title": "Breaking the Hypnotic Trance",
+            "description": "Detecting and disrupting hypnotic language structures designed to bypass critical thinking.",
+            "bulletpoints": [
+                "Recognize hypnotic speech patterns such as rhythmic pacing, repetition, and vague generalizations.",
+                "Disrupt the trance state by asking logical or analytical questions that require specific answers.",
+                "Ground yourself physically (touching an object, moving your body) to break the spell of verbal entrainment."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "nlp_resistance_6",
+            "title": "Neutralizing Conversational Pacing and Leading",
+            "description": "Resisting techniques that mirror your behavior to create compliance.",
+            "bulletpoints": [
+                "Observe when someone subtly mimics your gestures, breathing, or speech tempo to establish rapport.",
+                "Intentionally change your rhythm (speak faster, shift posture) to test whether pacing is occurring.",
+                "Avoid automatic agreement by pausing before responding to leading statements."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "nlp_resistance_7",
+            "title": "Defending Against Double-Bind Tactics",
+            "description": "Escaping manipulative questions that force false choices.",
+            "bulletpoints": [
+                "Identify when a choice is framed as an illusion of freedom (e.g., 'Do you want to do this now or later?').",
+                "Challenge the premise of the question instead of choosing between limited options.",
+                "Introduce a third alternative or redirect the conversation to regain control."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "nlp_resistance_8",
+            "title": "Mirroring and Reflective Questioning",
+            "description": "Using NLP techniques defensively to counteract manipulation.",
+            "bulletpoints": [
+                "Mirror manipulative language back at the speaker to expose their tactics.",
+                "Ask reflective questions (e.g., 'What makes you say that?') to force them to clarify their intent.",
+                "Use neutral phrasing to disengage emotionally from persuasive attempts."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "nlp_resistance_9",
+            "title": "Resisting Social Proof and Authority Bias",
+            "description": "Maintaining independent judgment despite pressure from group dynamics or authoritative figures.",
+            "bulletpoints": [
+                "Pause before accepting ideas based on popularity or expert endorsement alone.",
+                "Research claims independently instead of relying on presented credentials.",
+                "Recognize when urgency or exclusivity is used to push compliance."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "nlp_resistance_10",
+            "title": "Building Mental Immunity Against NLP Manipulation",
+            "description": "Developing long-term resilience to persuasion tactics.",
+            "bulletpoints": [
+                "Train logical reasoning skills to separate fact from emotional persuasion.",
+                "Practice critical questioning techniques to break down arguments and narratives.",
+                "Strengthen self-awareness to recognize when you're being led into compliance."
+            ],
+            "duration": "120",
             "difficulty": "Expert"
         }
     ]

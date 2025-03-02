@@ -1,0 +1,132 @@
+{
+    "id": "black_psyops_defense",
+    "name": "Black PsyOps Defense",
+    "description": "Advanced training to detect, resist, and neutralize black psychological operations, including coercive persuasion, deep manipulation, and reality distortion tactics.",
+    "focus": [
+        "Detection of Covert Influence",
+        "Psychological Defense Strategies",
+        "Counter-Subversion Techniques"
+    ],
+    "cards": [
+        {
+            "id": "black_psyops_defense_1",
+            "title": "Identifying Black PsyOps Tactics",
+            "description": "Recognizing the methods used in black psychological operations to manipulate targets.",
+            "bulletpoints": [
+                "Analyze patterns of deception, misdirection, and covert coercion.",
+                "Map the psychological warfare strategies used in historical and current events.",
+                "Develop a checklist of telltale signs of targeted perception warfare."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "black_psyops_defense_2",
+            "title": "Neutralizing False Narratives",
+            "description": "Dismantling propaganda and misinformation embedded in black psyops campaigns.",
+            "bulletpoints": [
+                "Trace the origins of psychological manipulation to expose the true source.",
+                "Use counter-framing techniques to recontextualize false narratives.",
+                "Apply reality-check protocols to validate or invalidate presented information."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "black_psyops_defense_3",
+            "title": "Mental Immunity Against Covert Influence",
+            "description": "Strengthening cognitive resilience to resist deep psychological programming.",
+            "bulletpoints": [
+                "Develop automatic skepticism filters to process incoming information.",
+                "Reinforce personal cognitive sovereignty through mental autonomy drills.",
+                "Use paradoxical thinking to neutralize implanted mental scripts."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "black_psyops_defense_4",
+            "title": "PsyOps Redirection Tactics",
+            "description": "Using strategic deflection methods to reroute and disarm psychological attacks.",
+            "bulletpoints": [
+                "Apply controlled ambiguity to prevent adversaries from obtaining psychological leverage.",
+                "Redirect hostile narratives toward self-defeating contradictions.",
+                "Use linguistic obfuscation and encoded messaging to counter subversive dialogue."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "black_psyops_defense_5",
+            "title": "Disrupting Psychological Manipulation Chains",
+            "description": "Breaking the sequence of psychological conditioning before it solidifies.",
+            "bulletpoints": [
+                "Identify and sever reinforcement loops that embed manipulation.",
+                "Apply memory compartmentalization to reduce long-term psychological imprinting.",
+                "Use conscious dissociation techniques to neutralize layered influence attempts."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "black_psyops_defense_6",
+            "title": "Countering Psychological Subversion",
+            "description": "Detecting and reversing efforts to undermine mental stability and decision-making.",
+            "bulletpoints": [
+                "Isolate infiltration points where subversive tactics are applied.",
+                "Use counter-perspective exposure to neutralize subliminal reprogramming.",
+                "Train in dynamic thought reconfiguration to maintain strategic adaptability."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "black_psyops_defense_7",
+            "title": "Psychic Shielding Against Deep Influence",
+            "description": "Deploying advanced mental defense mechanisms to protect against high-level psyops.",
+            "bulletpoints": [
+                "Practice energetic shielding to deter subliminal influence attempts.",
+                "Create mental encryption techniques to safeguard internal thoughts.",
+                "Develop multi-layered cognitive defenses against high-pressure manipulation."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "black_psyops_defense_8",
+            "title": "Weaponized Language Resistance",
+            "description": "Understanding and countering linguistic manipulation tactics used in black psyops.",
+            "bulletpoints": [
+                "Break down persuasive linguistic patterns designed for psychological control.",
+                "Develop counter-linguistics to diffuse coercive dialogue.",
+                "Apply silent resistance methods to undermine subliminal messaging effects."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "black_psyops_defense_9",
+            "title": "Defending Against Psychological Entrapment",
+            "description": "Avoiding and escaping mental traps designed to ensnare targets in false realities.",
+            "bulletpoints": [
+                "Use reverse engineering methods to unravel hidden psychological mechanisms.",
+                "Develop counter-entrainment strategies to break out of induced mental loops.",
+                "Establish emergency mental disengagement protocols for hostile scenarios."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "black_psyops_defense_10",
+            "title": "Mastering Tactical Counter-PsyOps",
+            "description": "Deploying offensive counter-psyops techniques to disrupt adversarial operations.",
+            "bulletpoints": [
+                "Design misinformation traps to expose hostile influence agents.",
+                "Use cognitive misdirection to overload and derail enemy psyops efforts.",
+                "Apply targeted counter-propaganda strategies to neutralize ongoing operations."
+            ],
+            "duration": "120",
+            "difficulty": "Master"
+        }
+    ]
+}

@@ -1,26 +1,131 @@
 {
     "id": "advanced_behavioral_analysis",
     "name": "Advanced Behavioral Analysis",
-    "description": "Training in identifying deception and manipulative behavior through nonverbal cues and psychological profiling.",
+    "description": "Developing skills in reading, interpreting, and analyzing human behavior to detect deception, intent, and manipulation.",
     "focus": [
+        "Behavioral Pattern Recognition",
         "Deception Detection",
-        "Behavioral Pattern Recognition"
+        "Psychological Profiling"
     ],
     "cards": [
         {
-            "id": "behavioral_1",
-            "title": "Microexpression Analysis",
-            "description": "Learning to read fleeting facial expressions that reveal concealed emotions.",
-            "bulletpoints": "Identify microexpressions, connect with emotional context, detect incongruencies",
-            "duration": "20",
+            "id": "behavioral_analysis_1",
+            "title": "Foundations of Behavioral Analysis",
+            "description": "Understanding the core principles behind behavioral observation and interpretation.",
+            "bulletpoints": [
+                "Identifying baseline behaviors in individuals to detect anomalies.",
+                "Differentiating between conscious and subconscious behavioral cues.",
+                "Using systematic observation methods to gather intelligence."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "behavioral_analysis_2",
+            "title": "Microexpressions and Emotional Leakage",
+            "description": "Recognizing involuntary facial expressions that reveal true emotions.",
+            "bulletpoints": [
+                "Understanding Ekman’s seven universal microexpressions.",
+                "Detecting hidden emotions through facial tension and micro-movements.",
+                "Practicing real-time microexpression reading to assess intent."
+            ],
+            "duration": "75",
             "difficulty": "Advanced"
         },
         {
-            "id": "behavioral_2",
-            "title": "Recognizing Manipulative Body Language",
-            "description": "Decoding nonverbal cues associated with deceptive intent.",
-            "bulletpoints": "Analyze shifts in posture, eye movements, hand positioning, and speech hesitation",
-            "duration": "15",
+            "id": "behavioral_analysis_3",
+            "title": "Body Language as a Lie Detector",
+            "description": "Decoding body posture, gestures, and movement for deception detection.",
+            "bulletpoints": [
+                "Identifying pacifying behaviors that indicate stress and dishonesty.",
+                "Analyzing limb positioning and physical distancing cues.",
+                "Distinguishing between open and closed body language for trust assessment."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "behavioral_analysis_4",
+            "title": "Verbal and Non-Verbal Synchronization",
+            "description": "Evaluating inconsistencies between spoken words and body language.",
+            "bulletpoints": [
+                "Spotting contradictions between speech and gestures.",
+                "Detecting incongruent tone shifts and pauses in speech.",
+                "Understanding stress-induced speech patterns in deception."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "behavioral_analysis_5",
+            "title": "Psychological Baseline and Deviation Analysis",
+            "description": "Establishing and using psychological baselines to identify manipulation.",
+            "bulletpoints": [
+                "Measuring normal behavioral patterns for individuals.",
+                "Tracking deviations under different stressors and stimuli.",
+                "Using baseline shifts to detect deception, coercion, or persuasion."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "behavioral_analysis_6",
+            "title": "Analyzing Power Dynamics in Conversations",
+            "description": "Identifying dominance and submission cues in interpersonal interactions.",
+            "bulletpoints": [
+                "Recognizing conversational control tactics used in manipulation.",
+                "Deciphering power imbalances through speech patterns and phrasing.",
+                "Countering verbal dominance strategies with strategic reframing."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "behavioral_analysis_7",
+            "title": "Cold Reading and Psychological Profiling",
+            "description": "Using cold reading techniques to extract intelligence from subtle cues.",
+            "bulletpoints": [
+                "Decoding personality traits through appearance, language, and behavior.",
+                "Understanding how biases and psychological archetypes influence decisions.",
+                "Applying rapid psychological assessments in tactical scenarios."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "behavioral_analysis_8",
+            "title": "Pattern Recognition and Predictive Modeling",
+            "description": "Using behavior pattern analysis to anticipate actions and intent.",
+            "bulletpoints": [
+                "Recognizing repeating behavioral loops and triggers.",
+                "Mapping long-term behavioral trends to predict outcomes.",
+                "Integrating behavioral analysis with AI and data analytics for enhanced profiling."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "behavioral_analysis_9",
+            "title": "Deception Detection in High-Stakes Environments",
+            "description": "Applying advanced behavioral analysis techniques in interrogations and negotiations.",
+            "bulletpoints": [
+                "Detecting high-stakes deception under pressure.",
+                "Using strategic questioning to expose inconsistencies.",
+                "Leveraging rapport-building to break down resistance and extract truth."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "behavioral_analysis_10",
+            "title": "Psychological Warfare and Influence Strategies",
+            "description": "Understanding how behavioral manipulation is used in PsyOps and countermeasures.",
+            "bulletpoints": [
+                "Identifying psychological warfare techniques in real-time interactions.",
+                "Deploying counter-strategies to disrupt manipulation efforts.",
+                "Using behavioral influence ethically to guide outcomes in high-risk situations."
+            ],
+            "duration": "120",
             "difficulty": "Expert"
         }
     ]

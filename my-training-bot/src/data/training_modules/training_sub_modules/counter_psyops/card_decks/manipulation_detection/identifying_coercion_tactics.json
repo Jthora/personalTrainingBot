@@ -1,27 +1,132 @@
 {
     "id": "identifying_coercion_tactics",
     "name": "Identifying Coercion Tactics",
-    "description": "Training to recognize and counteract coercion and social pressure tactics.",
+    "description": "Training to recognize and neutralize coercion tactics used in psychological warfare, interpersonal manipulation, and organizational control.",
     "focus": [
-        "Tactical Persuasion Recognition",
-        "Power Dynamics Awareness"
+        "Recognizing Subtle and Overt Coercion",
+        "Defensive Countermeasures",
+        "Deconstructing Psychological Manipulation"
     ],
     "cards": [
         {
-            "id": "coercion_1",
-            "title": "Spotting Manipulative Language",
-            "description": "Analyzing speech patterns that indicate psychological coercion.",
-            "bulletpoints": "Identify guilt-tripping, false urgency, and strategic vagueness in persuasion attempts",
-            "duration": "15",
+            "id": "coercion_tactics_1",
+            "title": "Understanding Psychological Coercion",
+            "description": "Examining the mechanisms behind coercion and its impact on cognitive autonomy.",
+            "bulletpoints": [
+                "Breaking down coercion into subtle vs. overt tactics.",
+                "Understanding the neurological impact of prolonged coercion.",
+                "Identifying signs of mental pressure and compliance conditioning."
+            ],
+            "duration": "60",
             "difficulty": "Intermediate"
         },
         {
-            "id": "coercion_2",
-            "title": "The Compliance Trap",
-            "description": "Understanding social compliance tactics and learning counter-strategies.",
-            "bulletpoints": "Recognize authority pressure, peer conformity tactics, and the reciprocity effect",
-            "duration": "20",
+            "id": "coercion_tactics_2",
+            "title": "The Fear-Compliance Mechanism",
+            "description": "Recognizing how fear is used to manipulate decision-making and enforce compliance.",
+            "bulletpoints": [
+                "Examining historical and modern fear-based control strategies.",
+                "Identifying triggers that induce compliance through fear.",
+                "Counteracting fear-driven decision-making with rational analysis."
+            ],
+            "duration": "75",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "coercion_tactics_3",
+            "title": "Authority and Social Proof Manipulation",
+            "description": "How people and organizations exploit authority and social influence to control perception and behavior.",
+            "bulletpoints": [
+                "Identifying false appeals to authority used in coercion.",
+                "Understanding mass psychology and social reinforcement techniques.",
+                "Strategies to resist pressure from social conformity tactics."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "coercion_tactics_4",
+            "title": "Guilt and Obligation as Control Tools",
+            "description": "Breaking down the role of guilt, obligation, and emotional leverage in manipulation.",
+            "bulletpoints": [
+                "Recognizing how guilt is implanted to enforce behavior.",
+                "Understanding cultural and familial obligation as coercive tools.",
+                "Defensive techniques to neutralize guilt-based persuasion."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "coercion_tactics_5",
+            "title": "Manipulation Through False Dichotomies",
+            "description": "How coercers create artificial choices to trap individuals into limited perspectives.",
+            "bulletpoints": [
+                "Recognizing false dichotomies in media, politics, and personal manipulation.",
+                "Understanding how controlled opposition is used to manage perception.",
+                "Developing cognitive flexibility to escape binary thinking traps."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "coercion_tactics_6",
+            "title": "Linguistic Coercion and Subtle Persuasion",
+            "description": "Unpacking how language patterns and word choice subtly influence perception and compliance.",
+            "bulletpoints": [
+                "Recognizing loaded language and embedded commands.",
+                "Identifying framing techniques that control discourse.",
+                "Counteracting linguistic manipulation through conscious speech analysis."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "coercion_tactics_7",
+            "title": "Gaslighting and Memory Distortion",
+            "description": "How reality is reshaped through psychological manipulation to erode confidence and independence.",
+            "bulletpoints": [
+                "Recognizing gaslighting in personal and professional interactions.",
+                "Understanding how memory distortion is used for control.",
+                "Defensive strategies to verify reality and maintain psychological sovereignty."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "coercion_tactics_8",
+            "title": "Financial and Economic Coercion",
+            "description": "The role of financial control in psychological subjugation and dependency.",
+            "bulletpoints": [
+                "Identifying economic dependency structures as a form of control.",
+                "Recognizing financial manipulation in contracts, debt, and employment.",
+                "Strategies to achieve financial independence and resist economic coercion."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "coercion_tactics_9",
+            "title": "Cognitive Load and Mental Fatigue Warfare",
+            "description": "How overwhelming cognitive resources is used to weaken resistance and increase suggestibility.",
+            "bulletpoints": [
+                "Understanding how constant information overload reduces critical thinking.",
+                "Identifying deliberate fatigue tactics used in interrogations and media control.",
+                "Developing resilience through structured cognitive detoxification."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "coercion_tactics_10",
+            "title": "Creating an Internal Firewall Against Coercion",
+            "description": "Developing a strong personal defense against coercion by reinforcing internal sovereignty.",
+            "bulletpoints": [
+                "Practicing internal dialogue awareness to resist coercion.",
+                "Building counter-strategies for common coercion techniques.",
+                "Training in real-world scenarios to enhance resistance against psychological pressure."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
         }
     ]
 }

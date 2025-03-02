@@ -1,0 +1,132 @@
+{
+    "id": "deconstructing_financial_warfare_strategies",
+    "name": "Deconstructing Financial Warfare Strategies",
+    "description": "Training in identifying, analyzing, and counteracting financial warfare tactics used by global power structures.",
+    "focus": [
+        "Economic Manipulation",
+        "Currency Control Mechanisms",
+        "Financial Resilience & Countermeasures"
+    ],
+    "cards": [
+        {
+            "id": "financial_warfare_1",
+            "title": "Understanding Economic Manipulation",
+            "description": "Recognizing patterns of financial warfare in national and global economies.",
+            "bulletpoints": [
+                "Identifying currency devaluation tactics.",
+                "Understanding controlled inflation and deflation cycles.",
+                "Recognizing trade wars and economic sanctions as tools of control."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "financial_warfare_2",
+            "title": "Central Banking & Debt Enslavement",
+            "description": "Analyzing how central banks manipulate economies through interest rates and fiat currency control.",
+            "bulletpoints": [
+                "Understanding how the Federal Reserve and IMF operate.",
+                "Tracing the impact of fractional reserve banking.",
+                "Recognizing how national debt is used to control governments."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "financial_warfare_3",
+            "title": "Stock Market Engineering",
+            "description": "Identifying artificial market manipulations by hedge funds and institutional investors.",
+            "bulletpoints": [
+                "Recognizing pump-and-dump schemes and naked short selling.",
+                "Tracing insider trading and regulatory capture.",
+                "Understanding the role of high-frequency trading (HFT) in market control."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "financial_warfare_4",
+            "title": "Cryptocurrency Disruption & Digital Finance",
+            "description": "Exploring how blockchain and decentralized finance (DeFi) challenge traditional banking systems.",
+            "bulletpoints": [
+                "Analyzing government efforts to regulate or suppress crypto adoption.",
+                "Understanding the risks of centralized digital currencies (CBDCs).",
+                "Leveraging privacy coins and decentralized exchanges for financial independence."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "financial_warfare_5",
+            "title": "Corporate Monopoly & Resource Hoarding",
+            "description": "Investigating how global corporations control markets and suppress competition.",
+            "bulletpoints": [
+                "Identifying monopolistic business practices.",
+                "Recognizing price-fixing, regulatory capture, and resource hoarding.",
+                "Understanding how corporations influence policy through lobbying."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "financial_warfare_6",
+            "title": "Elite Money Laundering & Shadow Banking",
+            "description": "Tracking hidden financial networks used by elites for tax evasion and covert funding.",
+            "bulletpoints": [
+                "Understanding offshore accounts and shell corporations.",
+                "Identifying money laundering tactics through legal entities.",
+                "Tracing illicit capital flows through shadow banking systems."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "financial_warfare_7",
+            "title": "Weaponized Inflation & Hyperinflation Scenarios",
+            "description": "Analyzing how economic collapses are engineered through monetary policy.",
+            "bulletpoints": [
+                "Recognizing the signs of hyperinflation before economic collapse.",
+                "Understanding how food, energy, and essential goods are used as economic weapons.",
+                "Developing resilience strategies for surviving financial destabilization."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "financial_warfare_8",
+            "title": "Economic Warfare Tactics & Countermeasures",
+            "description": "Developing strategies to protect assets and resist financial control.",
+            "bulletpoints": [
+                "Understanding asset diversification and alternative stores of value.",
+                "Leveraging barter economies and community trade networks.",
+                "Building financial independence through strategic investments."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "financial_warfare_9",
+            "title": "AI & Algorithmic Market Manipulation",
+            "description": "Investigating the role of AI in financial warfare and economic control.",
+            "bulletpoints": [
+                "Understanding how AI-driven trading algorithms manipulate markets.",
+                "Tracing predictive analytics used in economic forecasting.",
+                "Recognizing algorithmic suppression of certain market trends."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "financial_warfare_10",
+            "title": "Building Parallel Financial Systems",
+            "description": "Establishing alternative economic systems to resist centralized financial control.",
+            "bulletpoints": [
+                "Exploring local and decentralized currency models.",
+                "Developing self-sustaining trade networks and barter systems.",
+                "Utilizing precious metals, commodities, and digital assets as alternative stores of value."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

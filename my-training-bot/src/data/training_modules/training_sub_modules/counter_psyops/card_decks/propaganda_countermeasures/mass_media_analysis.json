@@ -1,27 +1,132 @@
 {
     "id": "mass_media_analysis",
     "name": "Mass Media Analysis",
-    "description": "Training in deconstructing media narratives and uncovering hidden biases.",
+    "description": "Training in dissecting media sources, identifying bias, and uncovering manipulative narratives.",
     "focus": [
-        "Media Framing Analysis",
-        "Information Warfare"
+        "Media Ownership & Influence",
+        "Bias Detection & Narrative Engineering",
+        "Disinformation Exposure & Verification Techniques"
     ],
     "cards": [
         {
-            "id": "media_1",
-            "title": "Dissecting Media Bias",
-            "description": "Identifying biased reporting and slanted narratives in mainstream media.",
-            "bulletpoints": "Assess language framing, source reliability, and omission of counterpoints",
-            "duration": "20",
+            "id": "mass_media_1",
+            "title": "Tracing Media Ownership & Influence",
+            "description": "Understanding how media conglomerates shape public perception.",
+            "bulletpoints": [
+                "Map out major media conglomerates and their ownership structures.",
+                "Analyze financial and political ties influencing editorial decisions.",
+                "Cross-check sources to detect corporate media alignment with state narratives."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mass_media_2",
+            "title": "Detecting Bias in News Reporting",
+            "description": "Identifying slanted reporting and engineered public perception.",
+            "bulletpoints": [
+                "Break down linguistic framing techniques that skew perception.",
+                "Compare coverage across politically opposed outlets for discrepancies.",
+                "Recognize omission of key details and one-sided reporting patterns."
+            ],
+            "duration": "75",
             "difficulty": "Intermediate"
         },
         {
-            "id": "media_2",
-            "title": "Recognizing Controlled Opposition",
-            "description": "Detecting when media personalities or sources are controlled dissent.",
-            "bulletpoints": "Analyze funding sources, agenda consistency, and narrative gatekeeping",
-            "duration": "25",
+            "id": "mass_media_3",
+            "title": "Fake News & Disinformation Spotting",
+            "description": "Distinguishing between real and fabricated narratives.",
+            "bulletpoints": [
+                "Cross-reference key claims with independent investigative sources.",
+                "Use metadata and image analysis tools to verify authenticity.",
+                "Identify the hallmarks of AI-generated or bot-amplified news."
+            ],
+            "duration": "90",
             "difficulty": "Advanced"
+        },
+        {
+            "id": "mass_media_4",
+            "title": "Media Manipulation Through Crisis Events",
+            "description": "Understanding how mass events are framed for agenda-setting.",
+            "bulletpoints": [
+                "Analyze crisis response timing and coordinated media messaging.",
+                "Identify government or corporate beneficiaries of crisis narratives.",
+                "Examine historical crisis media coverage for pattern recognition."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mass_media_5",
+            "title": "Statistical Manipulation in News Reporting",
+            "description": "Understanding how data is used to mislead or reinforce bias.",
+            "bulletpoints": [
+                "Break down misleading statistical graphics and partial data representation.",
+                "Expose polling biases and survey question manipulation techniques.",
+                "Analyze economic and crime statistics for selective reporting patterns."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mass_media_6",
+            "title": "Coordinated Narratives & Talking Points",
+            "description": "Recognizing synchronized information campaigns.",
+            "bulletpoints": [
+                "Compare language patterns across multiple media outlets to detect scripted content.",
+                "Use archive tools to identify coordinated phrase deployments over time.",
+                "Track government press releases and corporate PR sources influencing narratives."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mass_media_7",
+            "title": "Psychological Effects of Repeated Exposure",
+            "description": "Understanding how repetitive media narratives shape behavior.",
+            "bulletpoints": [
+                "Identify the mechanisms of cognitive reinforcement and desensitization.",
+                "Recognize overuse of fear-based reporting to condition public compliance.",
+                "Counteract repetitive programming through active cognitive rewiring exercises."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mass_media_8",
+            "title": "Social Media & Algorithmic Amplification",
+            "description": "Analyzing how online media is curated for influence.",
+            "bulletpoints": [
+                "Investigate algorithm bias in content recommendation systems.",
+                "Identify bot-driven engagement designed to fabricate trends.",
+                "Use shadowbanning and suppression pattern analysis to detect information control."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mass_media_9",
+            "title": "Propaganda in Entertainment Media",
+            "description": "Dissecting movies, music, and TV shows for subtle influence.",
+            "bulletpoints": [
+                "Analyze subliminal messaging in popular culture and entertainment.",
+                "Track predictive programming elements linked to real-world policy changes.",
+                "Distinguish organic storytelling from government-backed narrative seeding."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mass_media_10",
+            "title": "Developing Independent Verification Systems",
+            "description": "Creating personal and team-based analysis methodologies.",
+            "bulletpoints": [
+                "Assemble a multi-source cross-checking process for fact validation.",
+                "Utilize open-source intelligence (OSINT) tools to verify claims in real-time.",
+                "Develop a network of trusted researchers and analysts for information sharing."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
         }
     ]
 }

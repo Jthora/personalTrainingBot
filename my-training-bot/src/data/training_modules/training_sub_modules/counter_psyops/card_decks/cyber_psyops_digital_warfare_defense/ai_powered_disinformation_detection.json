@@ -1,0 +1,131 @@
+{
+    "id": "ai_powered_disinformation_detection",
+    "name": "AI-Powered Disinformation Detection",
+    "description": "Training to recognize and counteract AI-driven disinformation campaigns, bot networks, and synthetic media manipulation.",
+    "focus": [
+        "AI-Generated Disinformation Recognition",
+        "Bot Network and Algorithmic Influence Detection"
+    ],
+    "cards": [
+        {
+            "id": "ai_disinfo_1",
+            "title": "Identifying AI-Generated Fake News",
+            "description": "Techniques for detecting and verifying AI-created disinformation articles and posts.",
+            "bulletpoints": [
+                "Recognizing linguistic patterns and anomalies in AI-generated text.",
+                "Using metadata analysis to verify content authenticity.",
+                "Cross-referencing sources to identify synthetic narratives."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "ai_disinfo_2",
+            "title": "Detecting AI-Deepfake Videos & Audio",
+            "description": "Identifying manipulated or AI-generated media designed for deception.",
+            "bulletpoints": [
+                "Analyzing facial inconsistencies and unnatural movements in deepfakes.",
+                "Audio frequency analysis to detect AI-generated voices.",
+                "Reverse image searching and frame analysis for deepfake verification."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ai_disinfo_3",
+            "title": "Bot Network Detection & Analysis",
+            "description": "Recognizing bot-driven influence campaigns and algorithmic amplification techniques.",
+            "bulletpoints": [
+                "Identifying engagement spikes and artificial activity patterns.",
+                "Analyzing bot behavior through network mapping tools.",
+                "Tracing command-and-control structures behind coordinated disinformation."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ai_disinfo_4",
+            "title": "Algorithmic Manipulation & Search Engine Bias",
+            "description": "Understanding how AI-driven algorithms shape public perception and influence search results.",
+            "bulletpoints": [
+                "Detecting AI-curated echo chambers and digital information control.",
+                "Reverse-engineering content ranking biases in search engines and social media.",
+                "Bypassing algorithmic censorship with information diversification techniques."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ai_disinfo_5",
+            "title": "Synthetic Media Recognition",
+            "description": "Developing skills to identify AI-generated images, text, and multimedia.",
+            "bulletpoints": [
+                "Analyzing artifacts and imperfections in AI-generated images.",
+                "Using AI-detection tools to distinguish real vs. synthetic media.",
+                "Recognizing style transfer techniques used in AI image generation."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "ai_disinfo_6",
+            "title": "AI-Powered Influence Operations",
+            "description": "Understanding how AI-driven psychological operations manipulate public opinion.",
+            "bulletpoints": [
+                "Identifying sentiment manipulation using AI-generated narratives.",
+                "Analyzing AI-generated content farms and disinformation hubs.",
+                "Countering AI-generated social media influence campaigns."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "ai_disinfo_7",
+            "title": "Real-Time AI Threat Monitoring",
+            "description": "Deploying AI tools for real-time detection and response to disinformation threats.",
+            "bulletpoints": [
+                "Using machine learning models to track AI-generated disinformation.",
+                "Automating AI-based monitoring systems for rapid response.",
+                "Understanding ethical AI use for counter-disinformation efforts."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ai_disinfo_8",
+            "title": "Reverse Engineering AI-Driven Narratives",
+            "description": "Unpacking and countering AI-automated narrative shaping.",
+            "bulletpoints": [
+                "Tracing back AI-generated disinformation campaigns to their source.",
+                "Analyzing linguistic and thematic patterns of AI-driven narratives.",
+                "Deploying counter-narratives to neutralize AI-driven misinformation."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "ai_disinfo_9",
+            "title": "Digital Watermarking & Content Authenticity",
+            "description": "Leveraging blockchain and AI tools to verify content authenticity.",
+            "bulletpoints": [
+                "Using blockchain and cryptographic watermarking to verify media sources.",
+                "Recognizing deepfake-resistant authentication methods.",
+                "Tracking provenance of media to differentiate real from synthetic content."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ai_disinfo_10",
+            "title": "Defensive OSINT Against AI Disinformation",
+            "description": "Using Open Source Intelligence (OSINT) tools to verify and counter AI-generated misinformation.",
+            "bulletpoints": [
+                "Applying OSINT techniques to trace and debunk disinformation sources.",
+                "Utilizing metadata and geolocation analysis to validate media authenticity.",
+                "Identifying patterns in AI-generated narratives through OSINT methods."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

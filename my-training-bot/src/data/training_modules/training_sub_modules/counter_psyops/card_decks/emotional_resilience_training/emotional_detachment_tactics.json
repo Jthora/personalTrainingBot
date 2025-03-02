@@ -1,0 +1,132 @@
+{
+    "id": "emotional_detachment_tactics",
+    "name": "Emotional Detachment Tactics",
+    "description": "Techniques for maintaining emotional control and neutrality in high-pressure situations to resist psychological manipulation and emotional exploitation.",
+    "focus": [
+        "Emotional Regulation",
+        "Cognitive Disassociation",
+        "Strategic Emotional Control"
+    ],
+    "cards": [
+        {
+            "id": "emotional_detachment_1",
+            "title": "Tactical Emotional Disassociation",
+            "description": "Separating emotions from decision-making processes to maintain strategic clarity.",
+            "bulletpoints": [
+                "Practicing cognitive compartmentalization to isolate emotions from logic.",
+                "Implementing situational awareness drills to prevent emotional hijacking.",
+                "Using logical sequencing techniques to override emotional interference."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "emotional_detachment_2",
+            "title": "Mental Defragmentation",
+            "description": "Clearing emotional clutter to maintain sharp cognitive function.",
+            "bulletpoints": [
+                "Performing structured self-reflection to identify emotional weak points.",
+                "Using mindfulness techniques to prevent over-identification with emotions.",
+                "Developing detachment triggers to reset emotional balance in real-time."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "emotional_detachment_3",
+            "title": "Strategic Emotional Masking",
+            "description": "Controlling outward emotional expressions to prevent psychological profiling.",
+            "bulletpoints": [
+                "Practicing neutral facial expressions under various stress conditions.",
+                "Developing controlled emotional output for situational adaptability.",
+                "Using breathing techniques to suppress involuntary emotional signals."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "emotional_detachment_4",
+            "title": "Cognitive Buffering",
+            "description": "Building a mental barrier between emotions and external influence.",
+            "bulletpoints": [
+                "Utilizing emotional anchoring techniques to maintain composure.",
+                "Practicing mental distancing from emotionally charged conversations.",
+                "Creating a predefined response system for handling emotional triggers."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "emotional_detachment_5",
+            "title": "Zen-State Activation",
+            "description": "Entering a hyper-calm, detached state under extreme conditions.",
+            "bulletpoints": [
+                "Practicing deep meditation for instant emotional reset.",
+                "Training in state-shifting techniques to prevent emotional overwhelm.",
+                "Developing an auto-trigger mechanism for immediate detachment."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "emotional_detachment_6",
+            "title": "Neutral Perception Training",
+            "description": "Developing the ability to perceive emotionally charged events without reaction.",
+            "bulletpoints": [
+                "Practicing reframing techniques to neutralize emotional responses.",
+                "Training in detached observation to prevent personal emotional investment.",
+                "Using dissociative visualization to process events without internalization."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "emotional_detachment_7",
+            "title": "Emotional Payload Regulation",
+            "description": "Managing and reducing emotional load to increase psychological endurance.",
+            "bulletpoints": [
+                "Identifying and eliminating unnecessary emotional burdens.",
+                "Using controlled emotional release techniques to maintain internal stability.",
+                "Developing emotional offloading strategies to prevent cumulative stress."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "emotional_detachment_8",
+            "title": "Non-Reactive Engagement",
+            "description": "Maintaining composure and control in adversarial interactions.",
+            "bulletpoints": [
+                "Training in controlled speech patterns to prevent emotional escalation.",
+                "Practicing non-verbal neutrality to deflect emotional probing.",
+                "Using mental pattern interruption to disrupt emotional conditioning tactics."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "emotional_detachment_9",
+            "title": "Pain Tolerance and Emotional Buffering",
+            "description": "Expanding tolerance for physical and emotional discomfort to resist external pressure.",
+            "bulletpoints": [
+                "Practicing exposure training to build emotional endurance.",
+                "Developing a pain-compartmentalization mindset to mitigate impact.",
+                "Using detachment affirmations to separate experience from reaction."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "emotional_detachment_10",
+            "title": "Psychological Aikido",
+            "description": "Redirecting emotional aggression without internalization or reaction.",
+            "bulletpoints": [
+                "Practicing energy redirection techniques to diffuse confrontational emotions.",
+                "Using verbal deflection strategies to neutralize emotional attacks.",
+                "Applying internal transmutation to convert external negativity into neutral energy."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

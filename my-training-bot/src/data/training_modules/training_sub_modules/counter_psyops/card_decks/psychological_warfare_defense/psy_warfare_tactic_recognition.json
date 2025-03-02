@@ -1,0 +1,132 @@
+{
+    "id": "psy_warfare_tactic_recognition",
+    "name": "Psy Warfare Tactic Recognition",
+    "description": "Training in identifying, analyzing, and countering psychological warfare tactics used in mass influence campaigns and covert operations.",
+    "focus": [
+        "Tactical Awareness",
+        "Psychological Manipulation Recognition",
+        "Deconstruction of Influence Tactics"
+    ],
+    "cards": [
+        {
+            "id": "psy_warfare_1",
+            "title": "Recognizing Psychological Warfare in Media",
+            "description": "Analyzing media messages for manipulative tactics and disinformation strategies.",
+            "bulletpoints": [
+                "Identify patterns of repetition and reinforcement in news cycles.",
+                "Analyze framing techniques that manipulate audience perception.",
+                "Cross-reference sources to detect deliberate narrative shaping."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "psy_warfare_2",
+            "title": "Decoding Emotional Manipulation",
+            "description": "Understanding how emotional triggers are used to bypass critical thinking.",
+            "bulletpoints": [
+                "Spot fear-mongering language and crisis exploitation strategies.",
+                "Analyze guilt, shame, and virtue-signaling techniques in messaging.",
+                "Detect artificial urgency and manufactured outrage designed to influence behavior."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psy_warfare_3",
+            "title": "Identifying False Consensus & Social Proof Manipulation",
+            "description": "Examining engineered social pressure designed to control public perception.",
+            "bulletpoints": [
+                "Analyze bot networks and coordinated campaigns influencing trends.",
+                "Evaluate how manufactured polls and surveys create false public opinion.",
+                "Recognize manipulation tactics that use celebrity endorsements for credibility."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psy_warfare_4",
+            "title": "Detecting Controlled Opposition",
+            "description": "Understanding how infiltration and misdirection are used to neutralize threats.",
+            "bulletpoints": [
+                "Identify gatekeepers who appear to oppose a narrative but reinforce its core premises.",
+                "Evaluate organizations that claim to be independent but receive controlled funding.",
+                "Analyze inconsistencies and contradictions in public figures who claim to fight disinformation."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psy_warfare_5",
+            "title": "Psychological Operations in Warfare & Politics",
+            "description": "Recognizing tactics used by governments and intelligence agencies in influence operations.",
+            "bulletpoints": [
+                "Examine how governments employ propaganda to maintain control during crises.",
+                "Identify psychological operations designed to incite division or compliance.",
+                "Analyze historical case studies of PsyOps in military and political conflicts."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psy_warfare_6",
+            "title": "Cognitive Warfare & Thought Policing",
+            "description": "Identifying how narratives are controlled by restricting language and thought.",
+            "bulletpoints": [
+                "Detect linguistic reprogramming tactics such as redefining key terms.",
+                "Analyze censorship patterns and their correlation with political objectives.",
+                "Identify psychological framing techniques that limit discussion boundaries."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psy_warfare_7",
+            "title": "Disrupting Predictive Programming",
+            "description": "Recognizing how future narratives are seeded in media to shape expectations.",
+            "bulletpoints": [
+                "Analyze entertainment and media patterns that introduce pre-programmed expectations.",
+                "Identify symbols, motifs, and terminology used to condition public perception.",
+                "Counter predictive programming by deconstructing and exposing its intent."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psy_warfare_8",
+            "title": "Infiltration Tactics & Behavioral Engineering",
+            "description": "Understanding how infiltrators manipulate group behavior and steer movements.",
+            "bulletpoints": [
+                "Identify the psychological methods used to insert controlled influencers into movements.",
+                "Analyze disruption strategies used to weaken genuine grassroots resistance.",
+                "Counteract behavioral engineering by developing independent verification protocols."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psy_warfare_9",
+            "title": "Subliminal Influence & Suggestion Tactics",
+            "description": "Detecting subconscious programming techniques embedded in messaging.",
+            "bulletpoints": [
+                "Analyze subconscious anchoring methods used in media and advertising.",
+                "Identify patterns of symbolic reinforcement that shape perception over time.",
+                "Implement mental deprogramming techniques to neutralize subliminal suggestion."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psy_warfare_10",
+            "title": "Building Immunity Against Psychological Warfare",
+            "description": "Developing a long-term strategy for resisting manipulation.",
+            "bulletpoints": [
+                "Regularly update your knowledge of evolving psychological warfare tactics.",
+                "Cultivate a mindset of intellectual independence and analytical rigor.",
+                "Educate others on PsyOps recognition to strengthen collective resilience."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        }
+    ]
+}

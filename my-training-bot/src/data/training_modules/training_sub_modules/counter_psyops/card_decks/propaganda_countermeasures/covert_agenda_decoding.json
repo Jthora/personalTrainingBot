@@ -1,0 +1,132 @@
+{
+    "id": "covert_agenda_decoding",
+    "name": "Covert Agenda Decoding",
+    "description": "Training in uncovering hidden motives behind political, corporate, and social influence operations.",
+    "focus": [
+        "Analyzing Hidden Agendas",
+        "Decoding Symbolic and Strategic Messaging",
+        "Identifying Psychological and Strategic Manipulation"
+    ],
+    "cards": [
+        {
+            "id": "covert_agenda_1",
+            "title": "Identifying Hidden Objectives",
+            "description": "Learning to recognize the underlying goals of media narratives and policy shifts.",
+            "bulletpoints": [
+                "Compare public statements to historical actions to expose inconsistencies.",
+                "Trace funding sources behind organizations and initiatives.",
+                "Monitor patterns of global events and legislative trends to detect overarching strategies."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "covert_agenda_2",
+            "title": "Symbolism in Power Structures",
+            "description": "Deciphering hidden meanings in logos, architecture, and political symbolism.",
+            "bulletpoints": [
+                "Analyze corporate logos and government seals for esoteric and occult symbolism.",
+                "Decode common archetypal themes used in elite messaging and media.",
+                "Investigate ritualistic and symbolic practices in major institutions."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "covert_agenda_3",
+            "title": "Media Narratives vs. Reality",
+            "description": "Distinguishing between manufactured narratives and factual reporting.",
+            "bulletpoints": [
+                "Use linguistic analysis to detect bias in news coverage.",
+                "Cross-reference multiple independent sources to reconstruct factual events.",
+                "Identify deliberate omissions or misleading framing in media reports."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "covert_agenda_4",
+            "title": "The Psychology of Deception",
+            "description": "Recognizing cognitive dissonance and manipulation techniques used to control perception.",
+            "bulletpoints": [
+                "Study common psychological operations (PSYOPs) used in warfare and politics.",
+                "Detect gaslighting techniques used by political and media figures.",
+                "Develop mental resilience against false narratives and social engineering."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "covert_agenda_5",
+            "title": "Tracking Global Influence Networks",
+            "description": "Mapping interconnected organizations, think tanks, and corporate entities.",
+            "bulletpoints": [
+                "Research major global NGOs, policy groups, and their connections to governments.",
+                "Use open-source intelligence (OSINT) to map funding and influence flows.",
+                "Identify key players in geopolitical decision-making and their long-term strategies."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "covert_agenda_6",
+            "title": "Predictive Programming and Preconditioning",
+            "description": "Understanding how media conditions the public for future events.",
+            "bulletpoints": [
+                "Analyze recurring themes in entertainment that align with real-world policy shifts.",
+                "Identify crisis events that seem artificially foreshadowed in previous media.",
+                "Disrupt predictive programming by educating others on its mechanics."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "covert_agenda_7",
+            "title": "Economic Manipulation Tactics",
+            "description": "Decoding financial and corporate strategies used to consolidate power.",
+            "bulletpoints": [
+                "Monitor central bank policies and their effects on global markets.",
+                "Analyze economic crashes and bailouts to identify beneficiaries and hidden agendas.",
+                "Track multinational corporate mergers for monopolization tactics."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "covert_agenda_8",
+            "title": "The Role of Controlled Opposition",
+            "description": "Exposing how opposition movements can be infiltrated or controlled.",
+            "bulletpoints": [
+                "Analyze key figures in movements for affiliations and funding sources.",
+                "Identify counterintelligence methods used to steer or neutralize dissent.",
+                "Develop independent grassroots strategies resistant to co-opting."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "covert_agenda_9",
+            "title": "Disrupting Covert Agendas",
+            "description": "Counteracting hidden influence campaigns through exposure and strategic action.",
+            "bulletpoints": [
+                "Create intelligence reports outlining manipulative tactics for public awareness.",
+                "Use decentralized communication channels to bypass controlled narratives.",
+                "Develop strategic alliances to counteract large-scale influence operations."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "covert_agenda_10",
+            "title": "Advanced Pattern Recognition & Data Correlation",
+            "description": "Utilizing intelligence methodologies to uncover concealed agendas.",
+            "bulletpoints": [
+                "Use AI and big data analysis to track coordinated disinformation campaigns.",
+                "Correlate seemingly unrelated events to detect hidden strategic connections.",
+                "Develop advanced cognitive frameworks to anticipate and counter long-term agendas."
+            ],
+            "duration": "150",
+            "difficulty": "Expert"
+        }
+    ]
+}

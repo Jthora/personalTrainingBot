@@ -1,0 +1,132 @@
+{
+    "id": "counter_infiltration_and_information_warfare",
+    "name": "Counter-Infiltration & Information Warfare",
+    "description": "Training in detecting, exposing, and neutralizing infiltration tactics and information warfare strategies used by hostile entities.",
+    "focus": [
+        "Identifying Infiltrators",
+        "Disrupting Disinformation Networks",
+        "Defensive Counterintelligence"
+    ],
+    "cards": [
+        {
+            "id": "counter_infiltration_1",
+            "title": "Identifying Infiltration Tactics",
+            "description": "Understanding how infiltration occurs within organizations, movements, and online communities.",
+            "bulletpoints": [
+                "Recognizing behavioral patterns of infiltrators.",
+                "Analyzing disinformation seeding strategies.",
+                "Spotting coordinated subversion campaigns."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "counter_infiltration_2",
+            "title": "Covert Influence Detection",
+            "description": "Detecting and neutralizing covert influence operations designed to manipulate perception and control narratives.",
+            "bulletpoints": [
+                "Identifying social engineering and psyop techniques.",
+                "Tracing connections between operatives and handlers.",
+                "Understanding how controlled opposition is created and managed."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "counter_infiltration_3",
+            "title": "Counteracting Agent Provocateurs",
+            "description": "Dealing with disruptive elements who provoke division, violence, or misdirection.",
+            "bulletpoints": [
+                "Recognizing the tactics used by agent provocateurs.",
+                "Strategies to de-escalate and isolate disruptors.",
+                "Using psychological profiling to unmask operatives."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "counter_infiltration_4",
+            "title": "Defensive Counterintelligence",
+            "description": "Applying defensive CI measures to protect sensitive operations from infiltration.",
+            "bulletpoints": [
+                "Developing internal vetting and security protocols.",
+                "Compartmentalization strategies to limit exposure.",
+                "Behavioral analysis for detecting double agents."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "counter_infiltration_5",
+            "title": "Disinformation Network Disruption",
+            "description": "Neutralizing hostile information networks and influence campaigns.",
+            "bulletpoints": [
+                "Tracking disinformation sources and their funding.",
+                "Deploying counter-narrative strategies.",
+                "Engaging in digital counter-propaganda warfare."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "counter_infiltration_6",
+            "title": "Decentralized Resistance Tactics",
+            "description": "Developing decentralized and resilient communication networks.",
+            "bulletpoints": [
+                "Using cryptographic methods to protect sensitive information.",
+                "Leveraging decentralized web technologies for secure operations.",
+                "Implementing peer-to-peer intelligence-sharing methods."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "counter_infiltration_7",
+            "title": "Strategic Misdirection and Deception",
+            "description": "Using counter-deception techniques to mislead hostile infiltrators.",
+            "bulletpoints": [
+                "Deploying honeypots and bait operations.",
+                "Creating controlled leaks to identify internal threats.",
+                "Understanding counter-psyops strategies."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "counter_infiltration_8",
+            "title": "Psychological Warfare Resilience",
+            "description": "Strengthening mental resilience against manipulation and psyops.",
+            "bulletpoints": [
+                "Identifying common psychological warfare techniques.",
+                "Developing critical thinking skills to resist gaslighting.",
+                "Creating mental defense strategies against mass influence tactics."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "counter_infiltration_9",
+            "title": "Identifying Media PsyOps",
+            "description": "Recognizing and countering media-based psychological operations.",
+            "bulletpoints": [
+                "Spotting narrative control mechanisms in mainstream media.",
+                "Understanding how mass perception is shaped through propaganda.",
+                "Using OSINT to uncover media collusion with intelligence networks."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "counter_infiltration_10",
+            "title": "Advanced Situational Awareness for Information Warfare",
+            "description": "Developing real-time situational awareness to anticipate and counter infiltration and disinformation campaigns.",
+            "bulletpoints": [
+                "Analyzing geopolitical trends influencing information warfare.",
+                "Tracking real-time influence campaigns.",
+                "Developing rapid response strategies to mitigate disinformation attacks."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

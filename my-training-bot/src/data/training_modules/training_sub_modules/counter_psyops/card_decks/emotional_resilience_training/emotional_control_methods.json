@@ -1,27 +1,132 @@
 {
     "id": "emotional_control_methods",
     "name": "Emotional Control Methods",
-    "description": "Techniques for regulating emotions and maintaining psychological stability under stress.",
+    "description": "Techniques for regulating emotions, maintaining psychological stability, and resisting emotional manipulation.",
     "focus": [
         "Emotional Intelligence",
-        "Self-Regulation"
+        "Self-Regulation",
+        "Psychological Stability"
     ],
     "cards": [
         {
-            "id": "emotion_1",
-            "title": "Recognizing Emotional Triggers",
-            "description": "Identifying internal and external triggers that influence emotional responses.",
-            "bulletpoints": "Self-awareness drills, tracking emotional patterns, recognizing manipulation triggers",
-            "duration": "15",
+            "id": "emotional_control_1",
+            "title": "Recognizing Emotional Manipulation",
+            "description": "Identifying external attempts to manipulate emotions for control or influence.",
+            "bulletpoints": [
+                "Recognizing gaslighting, guilt-tripping, and fear-based persuasion.",
+                "Identifying emotional triggers and their sources.",
+                "Understanding the psychology behind emotional manipulation techniques."
+            ],
+            "duration": "60",
             "difficulty": "Beginner"
         },
         {
-            "id": "emotion_2",
-            "title": "Emotional Detachment Techniques",
-            "description": "Methods to detach from emotionally charged situations and maintain clarity.",
-            "bulletpoints": "Cognitive distancing, reframing emotional narratives, mindfulness under pressure",
-            "duration": "20",
+            "id": "emotional_control_2",
+            "title": "Breathing Techniques for Emotional Stability",
+            "description": "Using controlled breathing to maintain emotional and physiological balance.",
+            "bulletpoints": [
+                "Diaphragmatic breathing to calm the nervous system.",
+                "Box breathing for controlled emotional responses.",
+                "Breath-hold training for stress adaptation."
+            ],
+            "duration": "45",
+            "difficulty": "Beginner"
+        },
+        {
+            "id": "emotional_control_3",
+            "title": "Cognitive Reframing",
+            "description": "Reinterpreting negative thoughts and emotions to neutralize their impact.",
+            "bulletpoints": [
+                "Shifting perspective on stressors to lessen emotional reactivity.",
+                "Turning negative emotions into constructive mental frameworks.",
+                "Developing rational detachment from emotionally charged events."
+            ],
+            "duration": "60",
             "difficulty": "Intermediate"
+        },
+        {
+            "id": "emotional_control_4",
+            "title": "Developing an Emotional Firewall",
+            "description": "Creating mental barriers to protect against emotional attacks and stressors.",
+            "bulletpoints": [
+                "Visualization techniques for emotional shielding.",
+                "Mental detachment from external provocations.",
+                "Building internal resilience against negative emotional influences."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "emotional_control_5",
+            "title": "Anchoring Positive Emotional States",
+            "description": "Using psychological anchors to maintain control over emotions in high-stress situations.",
+            "bulletpoints": [
+                "Creating and reinforcing emotional anchors through association.",
+                "Using sensory triggers to recall calm and focus.",
+                "Programming responses to override emotional hijacking."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "emotional_control_6",
+            "title": "Cold Exposure and Emotional Regulation",
+            "description": "Using controlled cold exposure to build mental toughness and emotional stability.",
+            "bulletpoints": [
+                "Applying ice baths or cold showers to condition emotional resilience.",
+                "Training the mind to remain calm under physical discomfort.",
+                "Developing endurance against emotional and physiological stress."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "emotional_control_7",
+            "title": "Disengaging from Emotional Traps",
+            "description": "Tactically withdrawing from emotionally manipulative situations.",
+            "bulletpoints": [
+                "Recognizing when engagement is counterproductive.",
+                "Using strategic silence and minimal responses.",
+                "Applying the ‘gray rock’ technique to neutralize manipulators."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "emotional_control_8",
+            "title": "Adaptive Emotional Processing",
+            "description": "Transforming emotional energy into productive action.",
+            "bulletpoints": [
+                "Using anger and frustration as fuel for motivation.",
+                "Channeling anxiety into calculated risk assessment.",
+                "Harnessing emotions as tools for decision-making rather than obstacles."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "emotional_control_9",
+            "title": "Controlled Emotional Release",
+            "description": "Deliberately releasing pent-up emotions in a structured way to prevent breakdowns.",
+            "bulletpoints": [
+                "Using physical activity to process emotions healthily.",
+                "Scheduled reflection sessions for emotional clearance.",
+                "Expressing emotions through creative or verbal outlets strategically."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "emotional_control_10",
+            "title": "Long-Term Emotional Conditioning",
+            "description": "Building a mindset that is resistant to external emotional influence over time.",
+            "bulletpoints": [
+                "Daily practices to reinforce emotional stability.",
+                "Mental exercises for long-term resistance to psychological warfare.",
+                "Establishing a disciplined approach to emotional control."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
         }
     ]
 }

@@ -1,0 +1,132 @@
+{
+    "id": "hostile_persuasion_resistance",
+    "name": "Hostile Persuasion Resistance",
+    "description": "Training in resisting coercive persuasion, manipulation tactics, and psychological pressure designed to override free will.",
+    "focus": [
+        "Psychological Defense",
+        "Resisting Manipulation",
+        "Counter-Coercion Strategies"
+    ],
+    "cards": [
+        {
+            "id": "hostile_persuasion_1",
+            "title": "Identifying Coercion Tactics",
+            "description": "Recognizing methods used to pressure individuals into compliance.",
+            "bulletpoints": [
+                "Analyze pressure points used in high-stakes persuasion attempts.",
+                "Recognize false dilemmas designed to limit perception of choices.",
+                "Identify escalation tactics that create a sense of urgency and fear."
+            ],
+            "duration": "60",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "hostile_persuasion_2",
+            "title": "Countering Guilt and Shame Manipulation",
+            "description": "Neutralizing tactics that use guilt, shame, and social obligation to manipulate behavior.",
+            "bulletpoints": [
+                "Separate emotional triggers from logical decision-making.",
+                "Recognize virtue-signaling and weaponized morality used to control actions.",
+                "Deploy strategic disengagement to avoid emotional entrapment."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "hostile_persuasion_3",
+            "title": "Overcoming Psychological Pressure",
+            "description": "Building resilience against aggressive persuasion strategies.",
+            "bulletpoints": [
+                "Practice controlled breathing techniques to resist stress-induced compliance.",
+                "Use mental distancing methods to maintain an objective perspective.",
+                "Deploy mirroring and deflection to neutralize persuasion pressure."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "hostile_persuasion_4",
+            "title": "Recognizing and Resisting NLP Manipulation",
+            "description": "Understanding how Neuro-Linguistic Programming (NLP) is used in coercive persuasion.",
+            "bulletpoints": [
+                "Detect embedded commands hidden within normal speech patterns.",
+                "Interrupt rapport-building sequences used for subconscious influence.",
+                "Counteract hypnotic language patterns designed to lower defenses."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "hostile_persuasion_5",
+            "title": "Defending Against Gaslighting",
+            "description": "Neutralizing tactics designed to make you question reality.",
+            "bulletpoints": [
+                "Establish baseline reality-checking techniques to counter false narratives.",
+                "Reject forced reinterpretations of past events meant to distort truth.",
+                "Use written records and third-party validation to expose gaslighting."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "hostile_persuasion_6",
+            "title": "Dealing with Love-Bombing and Trust Manipulation",
+            "description": "Resisting excessive flattery, false affection, and manipulative trust-building.",
+            "bulletpoints": [
+                "Identify artificial bonding and over-exaggerated praise.",
+                "Test for inconsistency between words and long-term actions.",
+                "Set firm boundaries to prevent emotional dependency conditioning."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "hostile_persuasion_7",
+            "title": "Resisting Fear-Based Persuasion",
+            "description": "Avoiding manipulation tactics that exploit fear and anxiety.",
+            "bulletpoints": [
+                "Recognize crisis-exploitation rhetoric used to push compliance.",
+                "Identify false catastrophization techniques used in persuasive narratives.",
+                "Reframe perceived threats into manageable strategic challenges."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "hostile_persuasion_8",
+            "title": "Mental Armor: Strengthening Internal Convictions",
+            "description": "Developing an unshakable mindset resistant to persuasion.",
+            "bulletpoints": [
+                "Clarify personal principles and ensure they remain non-negotiable.",
+                "Strengthen cognitive autonomy through regular critical-thinking drills.",
+                "Use thought-loop interruption to prevent gradual erosion of beliefs."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "hostile_persuasion_9",
+            "title": "Recognizing and Resisting Social Engineering Attacks",
+            "description": "Detecting deception and manipulation in social interactions.",
+            "bulletpoints": [
+                "Identify pretexting tactics used to build false credibility.",
+                "Counter emotional exploitation used to extract information or compliance.",
+                "Train in micro-expression analysis to detect concealed intent."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "hostile_persuasion_10",
+            "title": "The Art of Non-Engagement",
+            "description": "Mastering disengagement techniques to neutralize coercion attempts.",
+            "bulletpoints": [
+                "Use controlled ambiguity to avoid direct persuasion battles.",
+                "Deploy strategic silence to create psychological space and regain control.",
+                "Redirect conversations to neutral topics to disrupt manipulation attempts."
+            ],
+            "duration": "120",
+            "difficulty": "Expert"
+        }
+    ]
+}

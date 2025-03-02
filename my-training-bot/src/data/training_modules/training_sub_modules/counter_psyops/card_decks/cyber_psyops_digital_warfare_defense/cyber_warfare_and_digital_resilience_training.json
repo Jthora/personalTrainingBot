@@ -1,0 +1,132 @@
+{
+    "id": "cyber_warfare_and_digital_resilience_training",
+    "name": "Cyber Warfare & Digital Resilience Training",
+    "description": "Training in offensive and defensive cyber warfare tactics, digital resilience, and strategic countermeasures against cyber threats.",
+    "focus": [
+        "Cyber Offensive & Defensive Strategies",
+        "Digital Resilience & Threat Mitigation",
+        "Hardened Digital Security Practices"
+    ],
+    "cards": [
+        {
+            "id": "cyber_warfare_1",
+            "title": "Understanding Cyber Warfare Strategies",
+            "description": "An overview of cyber warfare, its key players, and operational tactics.",
+            "bulletpoints": [
+                "Recognizing different types of cyber warfare (nation-state, corporate, ideological).",
+                "Identifying the key attack vectors used in modern cyber conflicts.",
+                "Understanding the interplay between digital warfare and psychological operations."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "cyber_warfare_2",
+            "title": "Digital Infrastructure Hardening",
+            "description": "Building strong cyber defenses to prevent infiltration and attacks.",
+            "bulletpoints": [
+                "Implementing zero-trust security architecture for maximum protection.",
+                "Utilizing multi-layered encryption techniques to protect sensitive data.",
+                "Hardening systems against remote exploits and intrusion attempts."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cyber_warfare_3",
+            "title": "Offensive Cyber Operations",
+            "description": "Understanding ethical hacking, penetration testing, and cyber counter-offensives.",
+            "bulletpoints": [
+                "Identifying and exploiting security vulnerabilities in adversary systems.",
+                "Deploying ethical hacking methodologies for intelligence gathering.",
+                "Developing cyber countermeasures to neutralize digital threats."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cyber_warfare_4",
+            "title": "AI-Driven Cyber Threats",
+            "description": "Detecting and countering AI-powered cyber attacks and autonomous hacking systems.",
+            "bulletpoints": [
+                "Recognizing AI-generated attack patterns and automated malware evolution.",
+                "Deploying AI-based cybersecurity defenses to counter algorithmic threats.",
+                "Developing adversarial machine learning techniques to disrupt hostile AI models."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cyber_warfare_5",
+            "title": "Digital Resilience Against Cyber Warfare",
+            "description": "Building personal and organizational resilience against digital attacks.",
+            "bulletpoints": [
+                "Developing contingency plans for cyber attacks and digital infrastructure failure.",
+                "Implementing redundancy and decentralization strategies for critical systems.",
+                "Training individuals and teams to maintain operational security under attack."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cyber_warfare_6",
+            "title": "Cyber Espionage & Digital Counterintelligence",
+            "description": "Understanding digital surveillance, cyber espionage, and counterintelligence methods.",
+            "bulletpoints": [
+                "Tracking and analyzing digital footprints to detect infiltration attempts.",
+                "Implementing counter-surveillance tactics to evade digital tracking.",
+                "Conducting cyber intelligence operations to gather adversarial data."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cyber_warfare_7",
+            "title": "Neutralizing Malicious Cyber Operations",
+            "description": "Disrupting and counteracting adversarial cyber warfare tactics.",
+            "bulletpoints": [
+                "Identifying malicious network activity and unauthorized access points.",
+                "Deploying cyber deception techniques to mislead enemy operatives.",
+                "Using digital takedown strategies to dismantle adversarial networks."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cyber_warfare_8",
+            "title": "Cybersecurity for Decentralized Networks",
+            "description": "Protecting blockchain, peer-to-peer, and decentralized systems from attacks.",
+            "bulletpoints": [
+                "Implementing security best practices for blockchain and smart contracts.",
+                "Understanding cryptographic attack vectors in decentralized finance (DeFi).",
+                "Hardening peer-to-peer networks against Sybil attacks and data poisoning."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cyber_warfare_9",
+            "title": "Psychological Manipulation in Cyber Warfare",
+            "description": "Recognizing and countering psychological operations integrated into cyber attacks.",
+            "bulletpoints": [
+                "Identifying digital disinformation campaigns aimed at destabilizing targets.",
+                "Neutralizing demoralization tactics used in cyber warfare engagements.",
+                "Deploying resilience-building strategies to withstand cyber-psychological assaults."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cyber_warfare_10",
+            "title": "Red Team vs. Blue Team Training for Cyber Warfare",
+            "description": "Simulating real-world cyber attack and defense scenarios through Red Team/Blue Team exercises.",
+            "bulletpoints": [
+                "Understanding Red Team tactics for offensive penetration testing and attack simulation.",
+                "Developing Blue Team strategies to defend networks and mitigate breaches.",
+                "Conducting live cyber war games to test resilience and response efficiency."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

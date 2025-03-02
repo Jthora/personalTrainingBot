@@ -14,5 +14,7 @@ export const modulePaths: { [key: string]: () => Promise<any> } = {
     psiops: () => import("../data/training_modules/psiops.json"),
     war_strategy: () => import("../data/training_modules/war_strategy.json"),
     web_three: () => import("../data/training_modules/web_three.json"),
-    self_sovereignty: () => import("../data/training_modules/self_sovereignty.json")
+    self_sovereignty: () => import("../data/training_modules/self_sovereignty.json"),
+    anti_psn: () => import("../data/training_modules/anti_psn.json"),
+    anti_tcs_idc_cbc: () => import("../data/training_modules/anti_tcs_idc_cbc.json")
 };

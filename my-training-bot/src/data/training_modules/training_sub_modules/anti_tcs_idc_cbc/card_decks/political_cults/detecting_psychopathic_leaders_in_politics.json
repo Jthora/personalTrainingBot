@@ -1,0 +1,48 @@
+{
+    "id": "detecting_psychopathic_leaders_in_politics",
+    "name": "Detecting Psychopathic Leaders in Politics",
+    "description": "A deep dive into the behavioral patterns of authoritarian and psychopathic political figures.",
+    "focus": [
+        "Identifying Political Psychopathy",
+        "Recognizing Power-Driven Manipulation",
+        "Disrupting Narcissistic Control Mechanisms"
+    ],
+    "cards": [
+        {
+            "id": "dplp_1",
+            "title": "Identifying Psychopathic Leadership Traits",
+            "description": "Recognizing the key psychological traits that indicate psychopathy in political figures.",
+            "bulletpoints": [
+                "Understanding the Machiavellian mindset in politics.",
+                "Spotting narcissistic and sadistic traits in leadership behaviors.",
+                "Analyzing speech patterns for deception and manipulation."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "dplp_2",
+            "title": "Analyzing the Cult of Personality",
+            "description": "Breaking down how political psychopaths build mass followings through charisma and manipulation.",
+            "bulletpoints": [
+                "Recognizing how leaders manufacture public trust through staged empathy.",
+                "Deconstructing mass psychology tactics used to create political fanaticism.",
+                "Identifying the use of symbolic gestures and coded messaging in speeches."
+            ],
+            "duration": "75",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "dplp_3",
+            "title": "Undermining Psychopathic Leadership Influence",
+            "description": "Strategies to expose and disrupt manipulative political figures without retaliation.",
+            "bulletpoints": [
+                "Using strategic leaks and controlled information releases.",
+                "Undermining their perceived omnipotence through public exposure.",
+                "Leveraging their own tactics against them to fracture their power base."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

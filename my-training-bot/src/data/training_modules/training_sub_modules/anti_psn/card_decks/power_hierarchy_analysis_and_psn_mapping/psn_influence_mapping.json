@@ -1,0 +1,48 @@
+{
+    "id": "psn_infuence_mapping",
+    "name": "PSN Influence Mapping",
+    "description": "Tracking and mapping the spread of influence within an organization or social structure to reveal PSN control.",
+    "focus": [
+        "Identifying Key PSN Nodes",
+        "Tracing Communication Networks",
+        "Mapping Hidden Alliances"
+    ],
+    "cards": [
+        {
+            "id": "psnim_1",
+            "title": "Identifying PSN Power Nodes",
+            "description": "Determining the central figures in a PSN-controlled hierarchy.",
+            "bulletpoints": [
+                "Look beyond public-facing leaders—true control is often behind the scenes.",
+                "PSNs rely on strategic placements of enablers to amplify influence.",
+                "Identifying financial backers and information gatekeepers is key."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psnim_2",
+            "title": "Tracing Information and Disinformation Networks",
+            "description": "How PSNs spread propaganda, misinformation, and control narratives.",
+            "bulletpoints": [
+                "PSNs control narratives by dominating key communication channels.",
+                "Disinformation campaigns often have telltale signs of message control.",
+                "Tracking repetitive messaging patterns exposes central influence points."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psnim_3",
+            "title": "Mapping Hidden Alliances and Backdoor Deals",
+            "description": "Identifying unofficial agreements and silent partnerships used to maintain power.",
+            "bulletpoints": [
+                "PSNs create overlapping business, social, and political alliances.",
+                "These groups function through silent partnerships and mutual protection pacts.",
+                "Tracing shared financial or strategic interests reveals hidden connections."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

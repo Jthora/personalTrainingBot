@@ -1,0 +1,48 @@
+{
+    "id": "psychological_warfare_resilience",
+    "name": "Psychological Warfare Resilience",
+    "description": "Training in resisting cognitive warfare tactics used in PsyOps and controlled media.",
+    "focus": [
+        "Cognitive Warfare Defense",
+        "Emotional Regulation Techniques",
+        "Recognizing PsyOps in Action"
+    ],
+    "cards": [
+        {
+            "id": "pwr_1",
+            "title": "Recognizing Cognitive Warfare Techniques",
+            "description": "Understanding how mass psychological influence is used to shape beliefs and behaviors.",
+            "bulletpoints": [
+                "Breaking down psychological operations (PsyOps) in mainstream discourse.",
+                "Identifying how authority figures use suggestibility to enforce narratives.",
+                "Recognizing the psychological markers of controlled opposition and false resistance."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "pwr_2",
+            "title": "Emotional Regulation Against Psychological Attacks",
+            "description": "Techniques to maintain mental clarity under intense psychological manipulation.",
+            "bulletpoints": [
+                "Applying detachment techniques to resist cognitive infiltration.",
+                "Using mindfulness and meta-awareness to observe psychological triggers.",
+                "Developing psychological countermeasures against mass panic scenarios."
+            ],
+            "duration": "75",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "pwr_3",
+            "title": "Defeating Psychological Warfare Strategies",
+            "description": "Proven methods for countering PsyOps and reclaiming narrative control.",
+            "bulletpoints": [
+                "Disrupting coordinated disinformation campaigns with real-time fact-checking.",
+                "Exposing inconsistencies in mass media reporting to collapse credibility.",
+                "Using strategic communication to reverse-engineer psychological manipulation."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "deep_network_analysis",
+    "name": "Deep Network Analysis",
+    "description": "Identifying and analyzing hidden PSN influence within organizations, institutions, and social networks.",
+    "focus": [
+        "Tracing Hidden Power Structures",
+        "Identifying PSN Agents",
+        "Detecting Long-Term Influence Operations"
+    ],
+    "cards": [
+        {
+            "id": "dna_1",
+            "title": "Mapping Hidden PSN Networks",
+            "description": "Identifying the relationships and connections that form covert PSN power structures.",
+            "bulletpoints": [
+                "PSNs often embed themselves in key organizational nodes where they can exert maximum influence.",
+                "Analyze social and professional connections to identify patterns of favoritism and selective promotion.",
+                "Track repeated collaborations between questionable individuals to identify network hubs."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "dna_2",
+            "title": "Spotting Behavioral Red Flags in Organizational Structures",
+            "description": "Recognizing early warning signs of PSN-controlled institutions and workplaces.",
+            "bulletpoints": [
+                "Unexplained firings or demotions of competent individuals indicate PSN cleansing operations.",
+                "Excessive secrecy, rigid hierarchy, and punishments for dissent suggest PSN-controlled environments.",
+                "Organizational gaslighting—where a false version of reality is enforced—can indicate deeper infiltration."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "dna_3",
+            "title": "Tracking and Exposing Long-Term PSN Influence Operations",
+            "description": "Analyzing historical patterns to detect and document PSN activities over time.",
+            "bulletpoints": [
+                "PSNs often maintain influence for decades through strategic placement of successors.",
+                "Examine financial and institutional records to uncover prolonged patterns of corruption.",
+                "Recognizing long-term disinformation campaigns helps trace their origins and disrupt their effects."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

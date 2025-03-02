@@ -1,0 +1,48 @@
+{
+    "id": "misdirection_and_counter_deception",
+    "name": "Misdirection and Counter-Deception",
+    "description": "Using advanced deception techniques to neutralize PSN control structures.",
+    "focus": [
+        "Psychological Distraction Tactics",
+        "Strategic Narrative Shifting",
+        "Exploiting Cognitive Blind Spots"
+    ],
+    "cards": [
+        {
+            "id": "mcd_1",
+            "title": "The Red Herring Gambit",
+            "description": "Leading a manipulator to focus on false leads while you dismantle their control elsewhere.",
+            "bulletpoints": [
+                "Introducing an irrelevant yet seemingly important topic diverts their focus.",
+                "Exaggerating minor details shifts their attention away from their main objective.",
+                "Using ambiguity prevents them from forming clear strategies against you."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mcd_2",
+            "title": "Weaponized Overconfidence",
+            "description": "Encouraging overestimation of their own control to make them vulnerable to exposure.",
+            "bulletpoints": [
+                "Subtly reinforcing their belief in their invulnerability leads to reckless actions.",
+                "Allowing them to believe they have ‘won’ sets them up for greater failures.",
+                "Exploiting their arrogance by feeding them misleading cues forces them into predictable behaviors."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mcd_3",
+            "title": "The Controlled Meltdown",
+            "description": "Applying carefully placed psychological pressure to force PSNs into public self-destruction.",
+            "bulletpoints": [
+                "Presenting subtle yet undeniable contradictions in their statements triggers cognitive stress.",
+                "Strategic silence and long pauses force them to overcompensate, revealing their weaknesses.",
+                "Encouraging emotional outbursts in controlled environments causes them to self-sabotage."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

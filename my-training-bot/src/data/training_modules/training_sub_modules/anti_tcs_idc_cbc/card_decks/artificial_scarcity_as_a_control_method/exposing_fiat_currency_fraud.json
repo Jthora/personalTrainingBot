@@ -1,0 +1,48 @@
+{
+    "id": "exposing_fiat_currency_fraud",
+    "name": "Exposing Fiat Currency Fraud",
+    "description": "Revealing how fiat money systems are engineered to create artificial scarcity, economic enslavement, and wealth consolidation.",
+    "focus": [
+        "Understanding Fiat Currency Manipulation",
+        "Debt-Based Economic Control",
+        "Inflation as a Wealth Transfer Mechanism"
+    ],
+    "cards": [
+        {
+            "id": "fcf_1",
+            "title": "The Fiat Currency Con Game",
+            "description": "Understanding the illusion of value in fiat money.",
+            "bulletpoints": [
+                "Fiat money has no intrinsic value—its worth is dictated by central authorities.",
+                "Governments and banks manipulate fiat supply to control economies.",
+                "Currency devaluation is an intentional method of wealth extraction."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "fcf_2",
+            "title": "Debt as a Weapon",
+            "description": "How debt-based financial systems create perpetual servitude.",
+            "bulletpoints": [
+                "Banking institutions thrive on interest-based slavery.",
+                "National debts are engineered to justify economic austerity and social control.",
+                "Student loans, mortgages, and credit traps keep individuals in a controlled cycle."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "fcf_3",
+            "title": "Inflation and the Great Wealth Transfer",
+            "description": "How inflation is used as an invisible tax to rob the public.",
+            "bulletpoints": [
+                "Inflation is engineered to reduce the purchasing power of the masses.",
+                "Elites use asset accumulation strategies to protect wealth while others suffer.",
+                "Understanding hyperinflation events exposes how economic control systems operate."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

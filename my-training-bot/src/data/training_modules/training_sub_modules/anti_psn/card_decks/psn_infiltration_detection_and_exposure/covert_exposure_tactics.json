@@ -1,0 +1,48 @@
+{
+    "id": "covert_exposure_tactics",
+    "name": "Covert Exposure Tactics",
+    "description": "Safely revealing the presence of PSNs without direct confrontation or retaliation.",
+    "focus": [
+        "Strategic Whistleblowing",
+        "Controlled Information Leaks",
+        "Psychological Disarmament"
+    ],
+    "cards": [
+        {
+            "id": "cet_1",
+            "title": "Strategic Whistleblowing Without Retaliation",
+            "description": "Exposing PSNs while minimizing personal risk and ensuring maximum impact.",
+            "bulletpoints": [
+                "Use encrypted communication channels and anonymous platforms to release intel.",
+                "Leverage collective testimonies to prevent retaliatory targeting of a single individual.",
+                "Distribute information strategically to maximize pressure from multiple angles."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cet_2",
+            "title": "Controlled Information Leaks to Destabilize PSNs",
+            "description": "Releasing damaging information in a way that maximizes internal fractures.",
+            "bulletpoints": [
+                "Leak small, verifiable pieces of truth to encourage others to investigate further.",
+                "Expose conflicting narratives within PSN ranks to create internal mistrust.",
+                "Encourage whistleblowing within PSN structures by sowing doubts about loyalty."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cet_3",
+            "title": "Using Psychological Disarmament to Weaken PSN Defenses",
+            "description": "Undermining PSN influence by neutralizing their psychological weapons.",
+            "bulletpoints": [
+                "Turn their own psychological tactics against them by mirroring and exaggerating their manipulations.",
+                "Expose inconsistencies in their messaging to create public doubt.",
+                "Leverage humor and satire to disempower their authority without direct confrontation."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

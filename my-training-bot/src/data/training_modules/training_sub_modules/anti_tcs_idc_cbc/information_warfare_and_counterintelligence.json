@@ -1,0 +1,17 @@
+{
+    "id": "information_warfare_and_counterintelligence",
+    "name": "Information Warfare and Counterintelligence",
+    "description": "Techniques for detecting and disrupting psychological operations, disinformation campaigns, and covert intelligence attacks from TCS-controlled media and institutions.",
+    "difficulty": "Expert",
+    "estimated_time": "8-16 weeks",
+    "focus": [
+        "Psychological Warfare Defense",
+        "Countering Digital Propaganda",
+        "Cyber and OSINT Intelligence Gathering"
+    ],
+    "cardDecks": [
+        "propaganda_deconstruction",
+        "countering_psyops_and_disinformation",
+        "covert_data_collection_and_analysis"
+    ]
+}

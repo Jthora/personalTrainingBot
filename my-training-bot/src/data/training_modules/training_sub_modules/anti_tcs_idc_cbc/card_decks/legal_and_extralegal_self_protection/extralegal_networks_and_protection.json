@@ -1,0 +1,48 @@
+{
+    "id": "extralegal_networks_and_protection",
+    "name": "Extralegal Networks and Protection",
+    "description": "Building and utilizing underground defense networks to maintain security, sovereignty, and resilience.",
+    "focus": [
+        "Anonymous Protection Networks",
+        "Underground Legal and Financial Systems",
+        "Self-Sustaining Security Operations"
+    ],
+    "cards": [
+        {
+            "id": "enp_1",
+            "title": "Creating Secure, Anonymous Protection Networks",
+            "description": "Building underground communication channels and security structures.",
+            "bulletpoints": [
+                "Using encrypted communication for secure collaboration.",
+                "Developing decentralized peer-to-peer support systems.",
+                "Creating fallback identity mechanisms for rapid escape and anonymity."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "enp_2",
+            "title": "Underground Legal and Financial Systems",
+            "description": "Navigating alternative economic and legal frameworks outside controlled institutions.",
+            "bulletpoints": [
+                "Using cryptocurrency and barter networks to operate outside centralized banking.",
+                "Leveraging private arbitration and mediation networks to resolve disputes.",
+                "Developing legal defense collectives to counter systemic oppression."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "enp_3",
+            "title": "Self-Sustaining Security Operations",
+            "description": "Implementing autonomous security and protection measures to resist infiltration.",
+            "bulletpoints": [
+                "Developing off-grid security protocols for physical and digital safety.",
+                "Establishing covert safehouses and escape routes.",
+                "Using intelligence-gathering techniques to preempt and neutralize threats."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

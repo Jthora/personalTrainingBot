@@ -1,0 +1,48 @@
+{
+    "id": "undermining_strategic_idc_assets",
+    "name": "Undermining Strategic IDC Assets",
+    "description": "Weakening the financial, technological, and logistical support structures that sustain IDC global dominance.",
+    "focus": [
+        "Financial Sabotage Strategies",
+        "Decentralized Disruption Tactics",
+        "Counteracting Supply Chain Control"
+    ],
+    "cards": [
+        {
+            "id": "usia_1",
+            "title": "Economic Warfare and Resource Control",
+            "description": "Targeting IDC-controlled financial markets and monopolies to break economic dependency.",
+            "bulletpoints": [
+                "Identifying and exposing economic manipulation strategies.",
+                "Encouraging alternative economic models and local currencies.",
+                "Undermining corporate monopolies through decentralized commerce."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "usia_2",
+            "title": "Sabotaging Supply Chain Control",
+            "description": "Disrupting key logistical operations used to maintain IDC influence over global trade and resources.",
+            "bulletpoints": [
+                "Tracking supply chain chokepoints controlled by IDC networks.",
+                "Exposing supply disruptions as manufactured crises.",
+                "Redirecting control of essential resources to local and decentralized systems."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "usia_3",
+            "title": "Counteracting Surveillance and Cyber Warfare",
+            "description": "Neutralizing IDC-controlled digital surveillance and cyber-control mechanisms.",
+            "bulletpoints": [
+                "Identifying backdoor exploits in elite-controlled tech infrastructure.",
+                "Using cyber defense strategies to protect against surveillance tracking.",
+                "Building decentralized and secure communication networks."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

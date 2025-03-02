@@ -1,0 +1,48 @@
+{
+    "id": "exposing_political_and_corporate_puppetry",
+    "name": "Exposing Political and Corporate Puppetry",
+    "description": "Unraveling how elected officials, CEOs, and policymakers serve as front figures for hidden elite power structures.",
+    "focus": [
+        "Manufactured Leadership Figures",
+        "Corporate Oligarchy and Lobbying",
+        "Think Tanks and Policy Steering"
+    ],
+    "cards": [
+        {
+            "id": "epcp_1",
+            "title": "Manufacturing Consent: Puppet Leaders and Fake Democracy",
+            "description": "Examining how political figures are carefully selected and controlled.",
+            "bulletpoints": [
+                "Understanding the role of controlled opposition in political landscapes.",
+                "Tracing campaign funding to elite families and corporate donors.",
+                "Recognizing political narratives that serve globalist agendas."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "epcp_2",
+            "title": "Corporate Oligarchy: The True Rulers of Government",
+            "description": "Analyzing how multinational corporations dictate government policies.",
+            "bulletpoints": [
+                "Investigating corporate lobbying and its effect on legislation.",
+                "Exposing the ‘revolving door’ between corporate executives and government officials.",
+                "Identifying industries that profit from endless war, disease, and crisis."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "epcp_3",
+            "title": "Think Tanks and Policy Steering Groups",
+            "description": "Examining the role of elite think tanks in shaping global governance.",
+            "bulletpoints": [
+                "Tracking policy recommendations from groups like CFR, Trilateral Commission, and Bilderberg.",
+                "Understanding how NGOs and philanthropic organizations act as soft power tools.",
+                "Mapping connections between intelligence agencies and private policy institutions."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

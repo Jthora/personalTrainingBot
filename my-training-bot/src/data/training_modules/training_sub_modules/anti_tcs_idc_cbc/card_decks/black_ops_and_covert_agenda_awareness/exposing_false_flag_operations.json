@@ -1,0 +1,48 @@
+{
+    "id": "exposing_false_flag_operations",
+    "name": "Exposing False Flag Operations",
+    "description": "Recognizing and analyzing staged events designed to manipulate public perception and justify elite agendas.",
+    "focus": [
+        "Psychological Warfare Through False Flags",
+        "Identifying State-Sponsored Deception",
+        "Propaganda and Media Control"
+    ],
+    "cards": [
+        {
+            "id": "ffo_1",
+            "title": "The Anatomy of a False Flag",
+            "description": "Understanding the key components and objectives behind staged events.",
+            "bulletpoints": [
+                "False flags use controlled narratives to justify war, surveillance, or social control.",
+                "Media coordination ensures mass psychological conditioning of the public.",
+                "Recognizing repeated patterns in historical and modern-day false flags."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ffo_2",
+            "title": "Identifying False Flag Markers",
+            "description": "Key indicators that expose a covertly orchestrated crisis.",
+            "bulletpoints": [
+                "Pre-event drills often coincide with real-world operations.",
+                "Crisis actors, scripted witnesses, and rapid media framing reveal intent.",
+                "Controlled opposition groups are deployed to neutralize dissenting voices."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "ffo_3",
+            "title": "Disrupting the False Flag Narrative",
+            "description": "Countermeasures to expose and neutralize false flag influence.",
+            "bulletpoints": [
+                "Using forensic journalism to analyze inconsistencies in official reports.",
+                "Distributing counter-narratives before psychological anchoring takes effect.",
+                "Tracking the financial and political beneficiaries of staged events."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

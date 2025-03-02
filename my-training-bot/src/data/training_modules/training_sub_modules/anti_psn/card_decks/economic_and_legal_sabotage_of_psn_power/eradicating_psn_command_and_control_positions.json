@@ -1,0 +1,48 @@
+{
+    "id": "eradicating_psn_command_and_control_positions",
+    "name": "Eradicating PSN Command and Control Positions",
+    "description": "Systematically dismantling the leadership and operational networks of PSNs by removing their key figures from power.",
+    "focus": [
+        "Targeting High-Level PSN Operatives",
+        "Disrupting Power Structures",
+        "Severing Internal Hierarchical Control"
+    ],
+    "cards": [
+        {
+            "id": "e_psn_1",
+            "title": "Mapping PSN Power Structures",
+            "description": "Identifying and exposing the hierarchy and command nodes within PSN-controlled organizations.",
+            "bulletpoints": [
+                "Using OSINT to track key decision-makers and their interconnections.",
+                "Identifying weak points in their hierarchical control systems.",
+                "Tracing financial and logistical dependencies to disrupt operations."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "e_psn_2",
+            "title": "Undermining PSN Leadership Legitimacy",
+            "description": "Utilizing legal, social, and financial strategies to remove credibility from PSN leaders.",
+            "bulletpoints": [
+                "Exposing criminal activity through legal and investigative frameworks.",
+                "Using media narratives to erode public trust in PSN authority figures.",
+                "Engineering leadership fractures through controlled disinformation."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "e_psn_3",
+            "title": "Strategic Isolation of PSN Commanders",
+            "description": "Preventing key PSN figures from coordinating their networks by isolating them socially and economically.",
+            "bulletpoints": [
+                "Cutting off digital and physical communication channels.",
+                "Denying PSN leaders access to their financial and operational assets.",
+                "Forcing leadership replacements that disrupt internal cohesion."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

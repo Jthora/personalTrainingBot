@@ -1,0 +1,48 @@
+{
+    "id": "psychological_conversion_strategies",
+    "name": "Psychological Conversion Strategies",
+    "description": "Techniques for shifting the mindset of individuals who have been conditioned by PSN doctrine.",
+    "focus": [
+        "Breaking Conditioning",
+        "Gradual Value Reorientation",
+        "Strategic Persuasion"
+    ],
+    "cards": [
+        {
+            "id": "pcs_1",
+            "title": "The Cracks in Their Armor",
+            "description": "Identifying internal contradictions that create doubt in their beliefs.",
+            "bulletpoints": [
+                "Most PSNs operate under rigid belief structures with hidden inconsistencies.",
+                "Leading them to question their own logic weakens their commitment.",
+                "Rather than attacking their ideology, subtly presenting contradictions forces them to reconcile reality."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "pcs_2",
+            "title": "Emotional Soft Points",
+            "description": "Exploiting personal relationships, nostalgia, and unresolved emotions to instill cognitive dissonance.",
+            "bulletpoints": [
+                "Even hardened PSNs have emotional triggers tied to their past.",
+                "Referencing lost friendships, past regrets, or pre-PSN values can create emotional leverage.",
+                "A softened emotional state makes them more susceptible to new perspectives."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "pcs_3",
+            "title": "The Controlled Epiphany",
+            "description": "Orchestrating situations where they believe they reached their own conclusions.",
+            "bulletpoints": [
+                "Directly confronting their beliefs triggers defensive mechanisms.",
+                "Instead, plant seeds of doubt and allow them to ‘discover’ the truth independently.",
+                "The illusion of self-discovery reinforces their commitment to change."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

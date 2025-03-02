@@ -1,0 +1,48 @@
+{
+    "id": "decentralized_trade_networks",
+    "name": "Decentralized Trade Networks",
+    "description": "Building alternative trade systems that bypass centralized financial control.",
+    "focus": [
+        "Developing Parallel Marketplaces",
+        "Peer-to-Peer Trade and Barter Systems",
+        "Resisting Economic Sanctions and Trade Embargoes"
+    ],
+    "cards": [
+        {
+            "id": "dtn_1",
+            "title": "Creating Independent Trade Systems",
+            "description": "Designing resilient trade networks outside of traditional banking and corporate monopolies.",
+            "bulletpoints": [
+                "Building decentralized marketplaces using blockchain and crypto.",
+                "Leveraging community trade hubs to bypass supply chain restrictions.",
+                "Implementing mutual aid economies to maintain stability in economic crises."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "dtn_2",
+            "title": "Bypassing Sanctions and Trade Barriers",
+            "description": "Circumventing economic warfare tactics designed to starve out resistance groups.",
+            "bulletpoints": [
+                "Identifying legal loopholes to maintain trade in restricted markets.",
+                "Utilizing barter, cryptocurrency, and underground networks to secure essential resources.",
+                "Building international alliances to bypass targeted economic isolation tactics."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "dtn_3",
+            "title": "Sustaining Economic Independence",
+            "description": "Ensuring long-term financial resilience through decentralized systems.",
+            "bulletpoints": [
+                "Developing local and regional production capabilities.",
+                "Using privacy-focused financial technologies to prevent asset seizure.",
+                "Teaching economic literacy to strengthen resistance networks."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

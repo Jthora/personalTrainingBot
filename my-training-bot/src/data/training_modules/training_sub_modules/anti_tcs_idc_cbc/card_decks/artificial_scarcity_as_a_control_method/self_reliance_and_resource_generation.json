@@ -1,0 +1,48 @@
+{
+    "id": "self_reliance_and_resource_generation",
+    "name": "Self-Reliance and Resource Generation",
+    "description": "Developing independent systems to remove reliance on artificial scarcity tactics and centralized control.",
+    "focus": [
+        "Building Independent Supply Chains",
+        "Off-Grid Living and Sustainable Solutions",
+        "Decentralized Trade and Barter Systems"
+    ],
+    "cards": [
+        {
+            "id": "srrg_1",
+            "title": "The Power of Self-Sufficiency",
+            "description": "Understanding how personal independence dismantles artificial scarcity systems.",
+            "bulletpoints": [
+                "Self-sufficient individuals cannot be coerced through scarcity.",
+                "Building decentralized trade systems creates parallel economies.",
+                "Off-grid energy solutions reduce reliance on monopolized utilities."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "srrg_2",
+            "title": "Creating Your Own Resource Streams",
+            "description": "Practical methods for generating food, energy, and trade goods.",
+            "bulletpoints": [
+                "Urban farming, hydroponics, and vertical agriculture increase local food access.",
+                "Micro-energy grids can sustain small communities without external reliance.",
+                "Craftsmanship and trade skills provide resilience in economic downturns."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "srrg_3",
+            "title": "Decentralized Trade and Barter Networks",
+            "description": "Building alternative economic systems outside of fiat control.",
+            "bulletpoints": [
+                "Cryptocurrency and digital barter systems enable decentralized trade.",
+                "Local exchange networks create resilience against market manipulation.",
+                "Alternative economies protect against artificial scarcity tactics."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

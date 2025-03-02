@@ -1,0 +1,48 @@
+{
+    "id": "high_stakes_psn_encounter_tactics",
+    "name": "High-Stakes PSN Encounter Tactics",
+    "description": "Specialized techniques for handling and neutralizing high-risk encounters with psychopaths, sociopaths, and narcissists.",
+    "focus": [
+        "Survival in High-Risk Interactions",
+        "Psycho-Social Countermeasures",
+        "Exploiting PSN Weaknesses"
+    ],
+    "cards": [
+        {
+            "id": "psn_tactics_1",
+            "title": "Identifying Immediate Threat Levels",
+            "description": "Quickly assessing the level of danger in an encounter with a PSN.",
+            "bulletpoints": [
+                "Eye movement analysis reveals intent and emotional concealment.",
+                "Forced stillness in conversation signals predatory focus.",
+                "The absence of emotional contagion suggests low empathy or manipulation."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psn_tactics_2",
+            "title": "Turning PSN Games Against Them",
+            "description": "Using their own manipulation tactics to disrupt their control.",
+            "bulletpoints": [
+                "Feigning compliance while setting up an escape weakens their position.",
+                "Overloading them with unpredictable responses forces cognitive strain.",
+                "Mirroring their tactics subtly forces them into an unfamiliar role."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psn_tactics_3",
+            "title": "High-Stakes Psychological Warfare",
+            "description": "Outmaneuvering PSNs in hostile or survival-critical scenarios.",
+            "bulletpoints": [
+                "Provoking controlled paranoia forces them to self-destruct.",
+                "Feeding them false intel creates misdirection for strategic advantage.",
+                "Forcing them into emotional outbursts exposes their true nature to observers."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

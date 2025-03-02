@@ -1,0 +1,48 @@
+{
+    "id": "exposing_high_profile_cult_members",
+    "name": "Exposing High-Profile Cult Members",
+    "description": "Revealing key figures within cult networks and their influence on global power structures.",
+    "focus": [
+        "Identifying Cult Leadership",
+        "Mapping Social and Political Ties",
+        "Public Awareness Campaigns"
+    ],
+    "cards": [
+        {
+            "id": "ehpcm_1",
+            "title": "Profiling Cult Leaders and Their Influence",
+            "description": "Compiling intelligence on key figures in cult hierarchies.",
+            "bulletpoints": [
+                "Analyzing behavioral patterns and psychological profiles.",
+                "Tracing their rise to power and connections to elite groups.",
+                "Identifying propaganda strategies used to build their authority."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ehpcm_2",
+            "title": "Network Analysis of Cult Power Structures",
+            "description": "Mapping out relationships between cult leaders, politicians, and financiers.",
+            "bulletpoints": [
+                "Using OSINT and HUMINT techniques to uncover hidden connections.",
+                "Visualizing power networks with link analysis tools.",
+                "Identifying handlers, enforcers, and public-facing operatives."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "ehpcm_3",
+            "title": "Public Exposure and Social Awareness Strategies",
+            "description": "Using media and grassroots movements to reveal cult influence.",
+            "bulletpoints": [
+                "Leveraging independent journalism to bypass mainstream censorship.",
+                "Coordinating whistleblower testimony and document leaks.",
+                "Creating viral awareness campaigns to disrupt public perception."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

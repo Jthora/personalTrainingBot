@@ -1,0 +1,17 @@
+{
+    "id": "power_hierarchy_analysis_and_psn_mapping",
+    "name": "Power Hierarchy Analysis and PSN Mapping",
+    "description": "Understanding how PSNs establish and maintain control within hierarchical systems, and mapping their influence for strategic countermeasures.",
+    "difficulty": "Advanced",
+    "estimated_time": "6-12 months",
+    "focus": [
+        "Hierarchical Power Structures",
+        "PSN Influence Mapping",
+        "Weak Point Identification"
+    ],
+    "cardDecks": [
+        "hierarchical_power_structure_analysis",
+        "psn_infuence_mapping",
+        "weak_point_identification"
+    ]
+}

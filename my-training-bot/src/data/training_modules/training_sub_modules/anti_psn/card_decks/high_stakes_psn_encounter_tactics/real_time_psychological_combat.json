@@ -1,0 +1,48 @@
+{
+    "id": "real_time_psychological_combat",
+    "name": "Real-Time Psychological Combat",
+    "description": "Live-action tactics to counteract PSN influence, neutralize threats, and turn the tide in high-stakes engagements.",
+    "focus": [
+        "Live Manipulation Countermeasures",
+        "Tactical Conversational Control",
+        "Instant Deception Detection"
+    ],
+    "cards": [
+        {
+            "id": "rtpc_1",
+            "title": "Mirroring for Control",
+            "description": "Using subconscious mirroring to gain psychological leverage in real-time.",
+            "bulletpoints": [
+                "Subtly reflecting posture and speech patterns to build false rapport.",
+                "Shifting tone to force the PSN into a reactionary state.",
+                "Using micro-expressions to subtly undermine their confidence."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "rtpc_2",
+            "title": "Dominance Frame Reinforcement",
+            "description": "Establishing an unshakable mental position that prevents PSNs from dictating the exchange.",
+            "bulletpoints": [
+                "Using low-reactivity to force the PSN into over-explaining.",
+                "Psychological ‘staring contests’ that break manipulative momentum.",
+                "Emphasizing control over pace, tone, and escalation in dialogue."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "rtpc_3",
+            "title": "Exploiting Cognitive Load",
+            "description": "Forcing mental overload to destabilize a manipulator in real time.",
+            "bulletpoints": [
+                "Asking rapid, complex questions to flood their processing power.",
+                "Injecting contradictory information to break logical consistency.",
+                "Layering responses to make them second-guess their own strategy."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "psychological_warfare_and_psn_social_exile",
+    "name": "Psychological Warfare and PSN Social Exile",
+    "description": "Dismantling the power of PSNs through targeted psychological operations and social exclusion tactics.",
+    "focus": [
+        "Forcing PSNs Into Isolation",
+        "Turning Their Tactics Against Them",
+        "Breaking Their Psychological Power"
+    ],
+    "cards": [
+        {
+            "id": "pwse_1",
+            "title": "Weaponizing Truth Against PSNs",
+            "description": "Using undeniable truth as a weapon to discredit and destabilize PSNs.",
+            "bulletpoints": [
+                "Exposing contradictions in their messaging to erode credibility.",
+                "Using verified evidence to shatter their false narratives.",
+                "Amplifying internal dissent within their ranks."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "pwse_2",
+            "title": "Socially Exiling PSN Leaders",
+            "description": "Creating social resistance strategies that cut off PSNs from influence.",
+            "bulletpoints": [
+                "Encouraging groups to refuse engagement with known PSNs.",
+                "Building social structures that reject manipulative individuals.",
+                "Denying PSNs the attention and reaction they need to thrive."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "pwse_3",
+            "title": "Reverse Psychological Targeting",
+            "description": "Redirecting PSN tactics back onto them for maximum disruption.",
+            "bulletpoints": [
+                "Mirroring their manipulation methods to destabilize their confidence.",
+                "Using selective misinformation to lead them into self-destruction.",
+                "Forcing PSNs to question their own internal cohesion."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "disrupting_mass_indoctrination",
+    "name": "Disrupting Mass Indoctrination",
+    "description": "Techniques to disrupt and prevent large-scale psychological manipulation tactics used by PSNs to control groups.",
+    "focus": [
+        "Identifying Manipulative Narratives",
+        "Breaking the Hypnotic Effect of Groupthink",
+        "Strategic Disruption of Psychological Traps"
+    ],
+    "cards": [
+        {
+            "id": "dmi_1",
+            "title": "Pattern Recognition in Mass Indoctrination",
+            "description": "Detecting early warning signs of large-scale psychological manipulation.",
+            "bulletpoints": [
+                "PSNs use repetitive emotional messaging to reinforce control.",
+                "Recognizing language patterns, emotional baiting, and cognitive dissonance triggers is key.",
+                "Disrupting predictability weakens the indoctrination process."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "dmi_2",
+            "title": "Breaking the Emotional Anchor Effect",
+            "description": "Preventing psychological dependency on manipulated emotional states.",
+            "bulletpoints": [
+                "PSNs use emotional highs and lows to control followers’ perceptions.",
+                "Exposing emotional manipulation tactics allows individuals to detach.",
+                "Reintroducing logical analysis into conversations disrupts emotional anchors."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "dmi_3",
+            "title": "Neutralizing Mass Hysteria",
+            "description": "Techniques to stop the rapid spread of emotional contagion in groups.",
+            "bulletpoints": [
+                "Inducing a pause between emotional reactions and actions disrupts hysteria.",
+                "Interrupting false urgency reduces group susceptibility to PSN manipulation.",
+                "Redirecting focus to neutral, grounding topics can reset rational thinking."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "counter_psyops_and_diversion_strategies",
+    "name": "Counter-PsyOps and Diversion Strategies",
+    "description": "Psychological warfare techniques designed to dismantle IDC propaganda and control mechanisms.",
+    "focus": [
+        "Psychological Warfare Countermeasures",
+        "Disrupting Indoctrination Strategies",
+        "Misdirection and Tactical Deception"
+    ],
+    "cards": [
+        {
+            "id": "cpsd_1",
+            "title": "Countering Propaganda and Indoctrination",
+            "description": "Strategies for reversing IDC brainwashing techniques on the masses.",
+            "bulletpoints": [
+                "Identifying key psychological hooks in propaganda messaging.",
+                "Deploying counter-messaging strategies for ideological deprogramming.",
+                "Using satire and inversion tactics to disrupt psychological conditioning."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cpsd_2",
+            "title": "Orchestrating Diversions to Disrupt Operations",
+            "description": "Techniques for misdirecting IDC forces and derailing planned operations.",
+            "bulletpoints": [
+                "Using controlled leaks to manipulate enemy focus.",
+                "Creating ‘false flag’ distractions to pull attention away from critical movements.",
+                "Deploying fake crises to overload enemy resources."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cpsd_3",
+            "title": "Psychological Reversal and PsyOps Sabotage",
+            "description": "Turning enemy psychological tactics against them for strategic advantage.",
+            "bulletpoints": [
+                "Using mirroring techniques to destabilize enemy psychological attacks.",
+                "Deploying inversion strategies to redirect their narratives onto themselves.",
+                "Leveraging ‘perception warfare’ to cause disarray within their ranks."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

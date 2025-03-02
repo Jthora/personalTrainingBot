@@ -1,0 +1,48 @@
+{
+    "id": "psychological_reversal_techniques",
+    "name": "Psychological Reversal Techniques",
+    "description": "Using the psychological tactics of PSNs against them to neutralize their influence.",
+    "focus": [
+        "Mirroring and Redirecting Manipulation",
+        "Counteracting Emotional Exploitation",
+        "Reversing Control Dynamics"
+    ],
+    "cards": [
+        {
+            "id": "prt_1",
+            "title": "Reversing Gaslighting",
+            "description": "Using their own tactics of reality distortion against them to expose their contradictions.",
+            "bulletpoints": [
+                "Repeating their words back to them in a more extreme form forces them to self-contradict.",
+                "Feigning confusion and making them over-explain their lies disrupts their psychological control.",
+                "Demanding evidence for every claim they make forces them into a logical dead-end."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "prt_2",
+            "title": "Echo Chamber Subversion",
+            "description": "Seeding dissonant thoughts into their own manipulative frameworks to destabilize their control.",
+            "bulletpoints": [
+                "Introducing harmless yet conflicting ideas into their echo chambers forces internal chaos.",
+                "Using subtle suggestions rather than direct confrontation prevents immediate detection.",
+                "Encouraging self-reflection in a way that makes them doubt their own tactics weakens their influence."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "prt_3",
+            "title": "The Self-Projection Trap",
+            "description": "Forcing PSNs to fall into their own psychological traps by leveraging their own tendencies.",
+            "bulletpoints": [
+                "Encouraging their overconfidence leads to self-sabotaging mistakes.",
+                "Acting as if you believe their lies can cause them to overcommit and expose themselves.",
+                "Appearing to agree while subtly steering them toward irrational conclusions accelerates their downfall."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

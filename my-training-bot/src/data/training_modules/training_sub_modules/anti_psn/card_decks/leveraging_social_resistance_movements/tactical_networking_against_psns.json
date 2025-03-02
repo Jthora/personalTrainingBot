@@ -1,0 +1,48 @@
+{
+    "id": "tactical_networking_against_psns",
+    "name": "Tactical Networking Against PSNs",
+    "description": "Creating secure and strategic alliances to counteract PSN infiltration at local and organizational levels.",
+    "focus": [
+        "Strategic Relationship Building",
+        "Detecting PSN Operatives in Networks",
+        "Forming Unbreakable Resistance Groups"
+    ],
+    "cards": [
+        {
+            "id": "tna_1",
+            "title": "Identifying and Vetting Safe Allies",
+            "description": "Ensuring that resistance efforts are not compromised by infiltrators.",
+            "bulletpoints": [
+                "Using trust-based verification systems before full inclusion in networks.",
+                "Setting up layered security measures to detect infiltrators.",
+                "Employing behavioral analysis to detect PSN operatives in disguise."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "tna_2",
+            "title": "Sealing Information Leaks in Resistance Groups",
+            "description": "Preventing PSNs from accessing and manipulating private networks.",
+            "bulletpoints": [
+                "Utilizing compartmentalization to limit knowledge exposure.",
+                "Implementing misinformation traps to identify internal threats.",
+                "Training members in OPSEC to maintain secure communications."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "tna_3",
+            "title": "Countering PSN Social Sabotage Strategies",
+            "description": "Identifying and neutralizing PSN efforts to divide and destabilize resistance movements.",
+            "bulletpoints": [
+                "Preemptively addressing false accusations and smear tactics.",
+                "Reframing divisive issues to prevent internal fractures.",
+                "Redirecting PSN-instigated conflicts toward constructive unity-building."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

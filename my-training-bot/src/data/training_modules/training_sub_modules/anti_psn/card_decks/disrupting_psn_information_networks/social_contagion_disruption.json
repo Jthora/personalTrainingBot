@@ -1,0 +1,48 @@
+{
+    "id": "social_contagion_disruption",
+    "name": "Social Contagion Disruption",
+    "description": "Neutralizing PSN-driven social influence campaigns and preventing their spread.",
+    "focus": [
+        "Disrupting Manipulative Trends",
+        "Countering Viral Disinformation",
+        "Blocking PSN Groupthink"
+    ],
+    "cards": [
+        {
+            "id": "scd_1",
+            "title": "Identifying Social Manipulation Campaigns",
+            "description": "Detecting and mapping PSN attempts to manufacture social movements.",
+            "bulletpoints": [
+                "Recognizing coordinated trends designed to push PSN narratives.",
+                "Analyzing engagement patterns for artificial amplification.",
+                "Tracing message origins to uncover manipulation hubs."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "scd_2",
+            "title": "Preemptively Undermining PSN Influence",
+            "description": "Using counter-narratives and proactive disruption techniques.",
+            "bulletpoints": [
+                "Introducing subtle skepticism to weaken mass influence.",
+                "Deploying alternative narratives before PSNs gain traction.",
+                "Using humor and satire to delegitimize manipulative messaging."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "scd_3",
+            "title": "Breaking PSN Social Conditioning",
+            "description": "Reducing the effectiveness of long-term PSN behavioral influence.",
+            "bulletpoints": [
+                "Educating the public on covert social engineering techniques.",
+                "Creating mental immunity against manipulative persuasion.",
+                "Counteracting cult-like social dynamics in targeted groups."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

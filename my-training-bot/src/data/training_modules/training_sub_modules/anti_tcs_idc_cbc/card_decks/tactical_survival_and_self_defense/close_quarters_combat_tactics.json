@@ -1,0 +1,48 @@
+{
+    "id": "close_quarters_combat_tactics",
+    "name": "Close Quarters Combat Tactics",
+    "description": "Mastering hand-to-hand combat techniques and close-range weapons for high-risk encounters.",
+    "focus": [
+        "Hand-to-Hand Combat Techniques",
+        "Weaponized Self-Defense",
+        "Disarming and Countering Threats"
+    ],
+    "cards": [
+        {
+            "id": "cqc_1",
+            "title": "Fundamentals of Close Quarters Combat",
+            "description": "Building a strong foundation in tactical hand-to-hand engagement.",
+            "bulletpoints": [
+                "Mastering basic strikes, blocks, and counterattacks.",
+                "Understanding body mechanics and movement efficiency.",
+                "Situational awareness and reaction speed training."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cqc_2",
+            "title": "Weaponized Self-Defense and Disarmament",
+            "description": "Neutralizing armed opponents in high-pressure situations.",
+            "bulletpoints": [
+                "Defensive techniques against knives, batons, and firearms.",
+                "Using improvised weapons for survival combat.",
+                "Tactical positioning and leverage control."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cqc_3",
+            "title": "Grappling and Submission Techniques",
+            "description": "Mastering takedowns and ground control to neutralize threats.",
+            "bulletpoints": [
+                "Applying joint locks and submission holds for incapacitation.",
+                "Understanding leverage and positioning for ground defense.",
+                "Escape tactics from chokeholds and grappling situations."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

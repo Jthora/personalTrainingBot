@@ -1,0 +1,48 @@
+{
+    "id": "countering_emotional_manipulation_in_groups",
+    "name": "Countering Emotional Manipulation in Groups",
+    "description": "Tactical strategies for disrupting emotional control mechanisms in social structures.",
+    "focus": [
+        "Neutralizing Emotional Triggers",
+        "Creating Resistance to Peer Pressure",
+        "Disrupting Manufactured Group Identity"
+    ],
+    "cards": [
+        {
+            "id": "cemg_1",
+            "title": "Emotional Calibration in High-Pressure Environments",
+            "description": "Maintaining emotional control when PSNs attempt to induce panic, rage, or guilt.",
+            "bulletpoints": [
+                "PSNs manufacture urgency and emotional overdrive to control decisions.",
+                "Training in controlled emotional responses creates resistance to manipulation.",
+                "Strategic non-reactivity disrupts the effectiveness of emotional baiting."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cemg_2",
+            "title": "Breaking the Peer Conformity Reflex",
+            "description": "Building resistance to social coercion in controlled group settings.",
+            "bulletpoints": [
+                "Group dynamics often override individual critical thinking.",
+                "Encouraging people to make small independent choices builds autonomy.",
+                "Publicly modeling independent thought creates a ripple effect of resistance."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cemg_3",
+            "title": "Dismantling False Group Identity",
+            "description": "Exposing how PSNs manipulate the human need for belonging.",
+            "bulletpoints": [
+                "PSNs create artificial in-group vs. out-group dynamics to enforce loyalty.",
+                "Showing how identities are externally imposed rather than freely chosen weakens attachment.",
+                "Reintroducing individual identity beyond the group reinforces independent decision-making."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

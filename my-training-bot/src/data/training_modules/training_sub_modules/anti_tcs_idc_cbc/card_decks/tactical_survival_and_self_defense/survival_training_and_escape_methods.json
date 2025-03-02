@@ -1,0 +1,48 @@
+{
+    "id": "survival_training_and_escape_methods",
+    "name": "Survival Training and Escape Methods",
+    "description": "Essential survival techniques for urban and rural environments, including evasion, shelter-building, and escape strategies.",
+    "focus": [
+        "Urban and Wilderness Survival Skills",
+        "Escape and Evasion Techniques",
+        "Improvised Shelter and Resource Gathering"
+    ],
+    "cards": [
+        {
+            "id": "ste_1",
+            "title": "Urban and Wilderness Survival Basics",
+            "description": "Developing skills to stay alive in both natural and urban environments.",
+            "bulletpoints": [
+                "Identifying and securing food, water, and shelter.",
+                "Navigating urban and wilderness terrain safely.",
+                "Using environmental resources for survival advantages."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ste_2",
+            "title": "Escape and Evasion Strategies",
+            "description": "Tactics for avoiding capture and escaping pursuit in hostile environments.",
+            "bulletpoints": [
+                "Concealment techniques for avoiding detection.",
+                "Breaking restraints and escaping from containment.",
+                "Surviving in extreme conditions with minimal resources."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "ste_3",
+            "title": "Improvised Shelter and Resource Gathering",
+            "description": "Creating safe havens and gathering necessary resources for long-term survival.",
+            "bulletpoints": [
+                "Building shelters in urban and wilderness settings.",
+                "Scavenging and purifying water sources.",
+                "Using stealth and camouflage to stay undetected."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

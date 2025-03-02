@@ -1,0 +1,48 @@
+{
+    "id": "cryptocurrency_and_gold_reserves",
+    "name": "Cryptocurrency and Gold Reserves",
+    "description": "Strategies for leveraging cryptocurrency, precious metals, and alternative assets to maintain financial independence.",
+    "focus": [
+        "Understanding Decentralized Currency",
+        "Gold and Silver as Wealth Protection",
+        "Avoiding Centralized Financial Manipulation"
+    ],
+    "cards": [
+        {
+            "id": "cgr_1",
+            "title": "The Power of Hard Assets",
+            "description": "Why gold, silver, and crypto are superior to fiat currencies.",
+            "bulletpoints": [
+                "Fiat currency is inherently inflationary and designed for wealth erosion.",
+                "Gold and silver have intrinsic value and cannot be printed into oblivion.",
+                "Cryptocurrency offers censorship-resistant wealth storage and transfer."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cgr_2",
+            "title": "Cryptocurrency Security and Storage",
+            "description": "Protecting digital assets from theft, hacking, and government overreach.",
+            "bulletpoints": [
+                "Understanding cold storage: hardware wallets and paper wallets.",
+                "Avoiding custodial exchanges that compromise asset ownership.",
+                "Using privacy-focused cryptocurrencies for untraceable transactions."
+            ],
+            "duration": "75",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cgr_3",
+            "title": "Gold and Silver Acquisition Strategies",
+            "description": "How to legally and discreetly accumulate and store precious metals.",
+            "bulletpoints": [
+                "Best sources for acquiring physical gold and silver.",
+                "Storage solutions: private vaults, buried reserves, and home safes.",
+                "How to use precious metals as collateral and transactional currency."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

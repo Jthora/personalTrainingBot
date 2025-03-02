@@ -1,0 +1,48 @@
+{
+    "id": "covert_investigation_and_whistleblowing",
+    "name": "Covert Investigation and Whistleblowing",
+    "description": "Developing intelligence-gathering strategies and secure reporting methods to expose trafficking networks.",
+    "focus": [
+        "Covert Intelligence Gathering",
+        "Safe Exposure of Trafficking Networks",
+        "Legal and Digital Protection for Whistleblowers"
+    ],
+    "cards": [
+        {
+            "id": "ciw_1",
+            "title": "Surveillance and Intelligence Gathering",
+            "description": "Covert techniques for gathering evidence on trafficking networks without detection.",
+            "bulletpoints": [
+                "Using open-source intelligence (OSINT) to track trafficking activity.",
+                "Understanding undercover methods to collect firsthand data.",
+                "Risk assessment and operational security in field investigations."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "ciw_2",
+            "title": "Whistleblowing and Safe Exposure",
+            "description": "How to report human trafficking networks while ensuring anonymity and security.",
+            "bulletpoints": [
+                "Choosing the right organizations and legal entities for whistleblowing.",
+                "Utilizing encryption and anonymity tools for digital reporting.",
+                "Legal protections and risks associated with exposing trafficking networks."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ciw_3",
+            "title": "Disrupting High-Level Trafficking Networks",
+            "description": "Strategic methods for dismantling elite-connected trafficking rings.",
+            "bulletpoints": [
+                "Understanding connections between human trafficking and organized crime.",
+                "Following the financial trail to expose high-level traffickers.",
+                "Coordinating with anti-trafficking task forces and independent operatives."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

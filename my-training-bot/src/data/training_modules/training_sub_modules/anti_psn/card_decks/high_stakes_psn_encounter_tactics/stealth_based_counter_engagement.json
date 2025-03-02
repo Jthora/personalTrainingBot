@@ -1,0 +1,48 @@
+{
+    "id": "stealth_based_counter_engagement",
+    "name": "Stealth-Based Counter-Engagement",
+    "description": "Silent and indirect methods for neutralizing PSN control in high-risk environments.",
+    "focus": [
+        "Covert Influence",
+        "Strategic Disengagement",
+        "Indirect Countermeasures"
+    ],
+    "cards": [
+        {
+            "id": "sbce_1",
+            "title": "Psychological Camouflage",
+            "description": "Appearing compliant while subtly resisting manipulation.",
+            "bulletpoints": [
+                "Using strategic agreement to lower their guard.",
+                "Acting less intelligent than you are to prevent escalation.",
+                "Feeding misinformation to disrupt their strategic calculations."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "sbce_2",
+            "title": "Controlled Emotional Shutdown",
+            "description": "Withdrawing emotional energy to make manipulation unprofitable.",
+            "bulletpoints": [
+                "Becoming unreadable by suppressing emotional reactions.",
+                "Adopting a neutral tone to make engagement tedious for them.",
+                "Using non-answers and vague responses to kill conversational momentum."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "sbce_3",
+            "title": "Tactical Disengagement",
+            "description": "Leaving the interaction without triggering retaliation or suspicion.",
+            "bulletpoints": [
+                "Shifting blame onto external factors to excuse disengagement.",
+                "Using passive compliance to exit without confrontation.",
+                "Planting distractions to create a natural escape window."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

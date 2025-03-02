@@ -1,0 +1,48 @@
+{
+    "id": "self_sufficient_income_streams",
+    "name": "Self-Sufficient Income Streams",
+    "description": "Developing financial autonomy by creating independent revenue sources outside centralized control.",
+    "focus": [
+        "Passive Income Systems",
+        "Entrepreneurial Wealth Generation",
+        "Barter and Off-Grid Value Exchange"
+    ],
+    "cards": [
+        {
+            "id": "ssis_1",
+            "title": "Building a Passive Income Strategy",
+            "description": "Diversifying income through automated and recurring revenue sources.",
+            "bulletpoints": [
+                "Real estate rental, digital content monetization, and online assets.",
+                "Creating cash flow without dependency on traditional employment.",
+                "Scaling financial independence through multiple revenue channels."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "ssis_2",
+            "title": "Decentralized Business Models",
+            "description": "Running businesses that are independent of banking and centralized platforms.",
+            "bulletpoints": [
+                "Accepting crypto and precious metals for transactions.",
+                "Leveraging privacy-focused e-commerce and marketplace platforms.",
+                "Structuring income streams to evade financial choke points."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ssis_3",
+            "title": "Barter and Off-Grid Value Exchange",
+            "description": "Developing trade networks that function independently of fiat currency.",
+            "bulletpoints": [
+                "The power of local trade circles and peer-to-peer barter systems.",
+                "Using labor, goods, and services as direct currency alternatives.",
+                "Creating a parallel economy resilient to economic warfare tactics."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "reverse_psychological_warfare_against_psns",
+    "name": "Reverse Psychological Warfare Against PSNs",
+    "description": "Using PSNs' own psychological manipulation tactics against them to fracture their influence and disrupt communication.",
+    "focus": [
+        "Turning Manipulation Against the Manipulators",
+        "Psychological Counter-Scripts",
+        "Weaponized Disinformation Reversal"
+    ],
+    "cards": [
+        {
+            "id": "rpwap_1",
+            "title": "Mirroring and Reframing",
+            "description": "Using the PSNs’ own rhetoric to force contradictions and confusion.",
+            "bulletpoints": [
+                "Repeating their statements with exaggerated logic to expose their contradictions.",
+                "Forcing them to explain their tactics weakens their psychological control.",
+                "Reframing their accusations as reflections of their own weaknesses."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "rpwap_2",
+            "title": "Emotional Misdirection",
+            "description": "Breaking their emotional triggers to render manipulation ineffective.",
+            "bulletpoints": [
+                "Denying them emotional reactions forces them to recalibrate.",
+                "Using controlled responses that disrupt their usual psychological patterns.",
+                "Presenting an unexpected emotional response to throw off their control mechanisms."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "rpwap_3",
+            "title": "Controlled Narrative Collapse",
+            "description": "Strategically unraveling their false narratives from the inside.",
+            "bulletpoints": [
+                "Introducing internal contradictions to fracture their group’s unity.",
+                "Creating alternative explanations that weaken their ideological grip.",
+                "Using their own psychological playbook against them to seed doubt."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

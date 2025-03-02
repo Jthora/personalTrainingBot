@@ -1,0 +1,48 @@
+{
+    "id": "destabilizing_manipulative_frameworks",
+    "name": "Destabilizing Manipulative Frameworks",
+    "description": "Breaking apart the foundational mechanisms that PSNs use to control others.",
+    "focus": [
+        "Disrupting Psychological Entrainment",
+        "Breaking Social Manipulation Cycles",
+        "Exposing Hidden Weaknesses in PSN Systems"
+    ],
+    "cards": [
+        {
+            "id": "dmf_1",
+            "title": "The Echo Chamber Collapse",
+            "description": "Breaking the internal consistency of their thought control frameworks.",
+            "bulletpoints": [
+                "Introducing logically incompatible statements into their rhetoric forces cognitive stress.",
+                "Asking simple but difficult questions exposes weak points in their ideology.",
+                "Using their own phrases in reversed contexts makes their followers question their logic."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "dmf_2",
+            "title": "Narrative Fracturing",
+            "description": "Exposing contradictions within their own messaging to weaken their influence.",
+            "bulletpoints": [
+                "Highlighting inconsistencies in their rules and behaviors forces credibility erosion.",
+                "Encouraging others to ‘clarify’ their statements forces them into self-contradiction.",
+                "Leaking partial but undeniable truths discredits their authority over time."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "dmf_3",
+            "title": "The Forced Reckoning",
+            "description": "Manipulating timing and external factors to force a PSN to reveal their true nature.",
+            "bulletpoints": [
+                "Orchestrating subtle yet cumulative pressure forces them into reactionary mistakes.",
+                "Presenting undeniable proof in a way that forces them into defensive explanations.",
+                "Letting them escalate their tactics while remaining neutral ensures they self-destruct."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

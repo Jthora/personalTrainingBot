@@ -1,0 +1,17 @@
+{
+    "id": "propaganda_and_psyops_defense",
+    "name": "Propaganda and PsyOps Defense",
+    "description": "Developing resistance against psychological operations (PsyOps) and controlled narratives used for mass manipulation.",
+    "difficulty": "Expert",
+    "estimated_time": "6-20 weeks",
+    "focus": [
+        "Mass Media Deconstruction",
+        "Cognitive Warfare Resistance",
+        "Disinformation Countermeasures"
+    ],
+    "cardDecks": [
+        "identifying_fear_based_propaganda",
+        "psychological_warfare_resilience",
+        "breaking_mass_hypnosis"
+    ]
+}

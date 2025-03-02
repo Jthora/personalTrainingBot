@@ -1,0 +1,48 @@
+{
+    "id": "rewiring_neurological_responses",
+    "name": "Rewiring Neurological Responses",
+    "description": "Retraining the brain to stop reacting to PSN conditioning and reinforcing self-directed thought patterns.",
+    "focus": [
+        "Neuroplasticity Training",
+        "Interrupting Emotional Conditioning",
+        "Reinforcing Self-Sovereignty"
+    ],
+    "cards": [
+        {
+            "id": "rnr_1",
+            "title": "Breaking Neurochemical Addiction to PSNs",
+            "description": "Disrupting the biochemical reinforcement cycle that keeps people attached to PSNs.",
+            "bulletpoints": [
+                "Understanding how dopamine and cortisol create emotional dependency on toxic individuals.",
+                "Using structured positive reinforcement to replace PSN-induced highs and lows.",
+                "Deploying thought interruption techniques to break automatic emotional responses."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "rnr_2",
+            "title": "The 'No Contact' Neurological Reset",
+            "description": "How severing all contact rewires the brain for independence.",
+            "bulletpoints": [
+                "Recognizing withdrawal symptoms and emotional cravings caused by trauma bonding.",
+                "Using cognitive priming to prevent relapse into old emotional patterns.",
+                "Building new habits to replace previous neural associations with the PSN."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "rnr_3",
+            "title": "Cognitive Anchoring for Mental Freedom",
+            "description": "Anchoring thoughts and emotions in self-reinforcing frameworks to prevent reattachment.",
+            "bulletpoints": [
+                "Developing mental scripts to counteract PSN-induced cognitive distortions.",
+                "Using sensory reinforcement (smells, visuals, music) to override old trauma cues.",
+                "Practicing memory reconsolidation to remove emotional charges from past experiences."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

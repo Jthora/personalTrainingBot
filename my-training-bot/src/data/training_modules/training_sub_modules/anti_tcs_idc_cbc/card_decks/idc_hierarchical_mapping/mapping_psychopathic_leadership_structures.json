@@ -1,0 +1,48 @@
+{
+    "id": "mapping_psychopathic_leadership_structures",
+    "name": "Mapping Psychopathic Leadership Structures",
+    "description": "Tracking the hierarchy of influential figures within the IDC and their operational methods.",
+    "focus": [
+        "Elite Power Families",
+        "Global Policy Manipulators",
+        "Underground Leadership Networks"
+    ],
+    "cards": [
+        {
+            "id": "mpls_1",
+            "title": "Elite Bloodline Dynasties and Their Influence",
+            "description": "Identifying generational control structures that dictate global events.",
+            "bulletpoints": [
+                "Tracing family bloodlines that maintain transgenerational dominance.",
+                "Identifying the connections between royal families, banking elites, and intelligence agencies.",
+                "Recognizing how these families cultivate and sustain intergenerational power."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mpls_2",
+            "title": "Corporate and Governmental Power Brokers",
+            "description": "Tracking how intelligence agencies and corporate moguls act as enforcers of the IDC’s agenda.",
+            "bulletpoints": [
+                "Recognizing the strategic use of multinational corporations as control mechanisms.",
+                "Investigating intelligence agency operations designed to serve elite interests.",
+                "Connecting government officials to hidden power factions and financial backers."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mpls_3",
+            "title": "The Shadow Hierarchy: Hidden Enforcers and Fixers",
+            "description": "Unmasking the operatives who execute black operations and enforce control behind the scenes.",
+            "bulletpoints": [
+                "Identifying the role of covert operatives, mercenary forces, and private military groups.",
+                "Exposing the use of organized crime syndicates as assets for elite power structures.",
+                "Analyzing high-profile assassinations and disappearances linked to power struggles."
+            ],
+            "duration": "75",
+            "difficulty": "Expert"
+        }
+    ]
+}

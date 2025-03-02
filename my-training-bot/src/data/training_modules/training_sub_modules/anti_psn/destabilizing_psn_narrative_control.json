@@ -1,0 +1,17 @@
+{
+    "id": "destabilizing_psn_narrative_control",
+    "name": "Destabilizing PSN Narrative Control",
+    "description": "Disrupting the false narratives and propaganda used by PSNs to manipulate individuals and societies.",
+    "difficulty": "Advanced",
+    "estimated_time": "6-12 months",
+    "focus": [
+        "Disrupting False Narratives",
+        "Exposing Manipulative Messaging",
+        "Strategic Truth Bombing"
+    ],
+    "cardDecks": [
+        "weaponizing_truth_against_psn_control",
+        "disrupting_psn_information_networks",
+        "social_contagion_disruption"
+    ]
+}

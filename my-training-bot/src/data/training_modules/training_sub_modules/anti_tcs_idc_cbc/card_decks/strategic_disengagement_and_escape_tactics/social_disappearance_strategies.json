@@ -1,0 +1,48 @@
+{
+    "id": "social_disappearance_strategies",
+    "name": "Social Disappearance Strategies",
+    "description": "Techniques for disappearing from controlled systems and maintaining a low profile while on the run.",
+    "focus": [
+        "Establishing New Identities",
+        "Blending into New Social Environments",
+        "Avoiding Recognition and Red Flags"
+    ],
+    "cards": [
+        {
+            "id": "sds_1",
+            "title": "Building an Alternative Identity",
+            "description": "How to create and maintain a new identity to evade detection.",
+            "bulletpoints": [
+                "Generating plausible backstories and credentials.",
+                "Adopting new behavior patterns to fit into different environments.",
+                "Using financial and social tools to reinforce identity credibility."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "sds_2",
+            "title": "Avoiding Recognition in Digital and Physical Spaces",
+            "description": "Staying off-grid and preventing identification in monitored environments.",
+            "bulletpoints": [
+                "Using clothing, posture, and movement to avoid biometric scans.",
+                "Minimizing digital footprints while maintaining functional connectivity.",
+                "Understanding and exploiting gaps in mass surveillance systems."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "sds_3",
+            "title": "Long-Term Disappearance Strategies",
+            "description": "How to sustain an undetectable presence over extended periods.",
+            "bulletpoints": [
+                "Adapting to different cultural and social settings unnoticed.",
+                "Establishing self-sufficient resource channels for survival.",
+                "Developing contingency plans for unexpected exposure."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "erasing_ritual_imprints",
+    "name": "Erasing Ritual Imprints",
+    "description": "Neutralizing the psychological, emotional, and energetic imprints left by ritual abuse and cult-based programming.",
+    "focus": [
+        "Undoing Ritual Psychological Programming",
+        "Disrupting Conditioned Trauma Responses",
+        "Purging Symbolic Triggers and Emotional Anchors"
+    ],
+    "cards": [
+        {
+            "id": "eri_1",
+            "title": "Understanding Ritual Programming Techniques",
+            "description": "Breaking down the structure of symbolic, psychological, and physical conditioning in ritualistic abuse.",
+            "bulletpoints": [
+                "Decoding the layered techniques used to install trauma responses.",
+                "Identifying how colors, sounds, and patterns reinforce subconscious conditioning.",
+                "Recognizing the strategic use of repetition in programming survivors."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "eri_2",
+            "title": "Disrupting Conditioned Emotional Responses",
+            "description": "Methods to break the automatic fear, obedience, and submission responses installed by ritual programming.",
+            "bulletpoints": [
+                "Overriding conditioned emotional reactions using sensory reprogramming.",
+                "Using controlled exposure therapy to neutralize specific triggers.",
+                "Applying real-time self-correction techniques when encountering programming cues."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "eri_3",
+            "title": "Reclaiming Energetic Autonomy",
+            "description": "Purging lingering symbolic imprints and reclaiming full control over one’s mind and spirit.",
+            "bulletpoints": [
+                "Using self-hypnosis and affirmations to erase subconscious imprints.",
+                "Practicing meditation and energy work to sever past ritualistic attachments.",
+                "Developing personal rituals for self-empowerment and healing."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

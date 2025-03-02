@@ -1,0 +1,48 @@
+{
+    "id": "controlled_withdrawal_tactics",
+    "name": "Controlled Withdrawal Tactics",
+    "description": "Strategies to disengage from manipulative environments without triggering retaliation or psychological backlash.",
+    "focus": [
+        "Psychological Exit Planning",
+        "Avoiding Guilt-Traps",
+        "Disengagement Without Retaliation"
+    ],
+    "cards": [
+        {
+            "id": "cwt_1",
+            "title": "The Fade-Out Method",
+            "description": "Gradually disengaging from toxic environments without direct confrontation.",
+            "bulletpoints": [
+                "PSNs thrive on direct challenges—fading out reduces their ability to retaliate.",
+                "Slowly decreasing response time and social availability conditions others to your absence.",
+                "Maintaining plausible excuses for reduced engagement avoids drawing attention."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "cwt_2",
+            "title": "Strategic Grey Rocking",
+            "description": "Becoming uninteresting and emotionally unavailable to manipulative individuals.",
+            "bulletpoints": [
+                "PSNs lose interest in targets who provide no emotional reactions.",
+                "Responding in neutral, factual tones removes their incentive to manipulate.",
+                "Consistently refusing to engage in drama or conflict helps break enmeshment."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cwt_3",
+            "title": "Exit Without Burn Bridges",
+            "description": "Leaving a manipulative group without creating unnecessary enemies.",
+            "bulletpoints": [
+                "Directly exposing PSNs can result in social retaliation—subtle exits are safer.",
+                "Framing your departure in neutral or unavoidable terms minimizes backlash.",
+                "Maintaining surface-level connections as a fallback ensures a safer transition."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

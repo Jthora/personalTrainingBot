@@ -1,0 +1,48 @@
+{
+    "id": "identifying_false_religious_authorities",
+    "name": "Identifying False Religious Authorities",
+    "description": "Unmasking religious leaders and institutions that exploit faith for control rather than spiritual enlightenment.",
+    "focus": [
+        "Corrupt Religious Hierarchies",
+        "Religious-Based Psychological Manipulation",
+        "Identifying False Prophets and Cult Leaders"
+    ],
+    "cards": [
+        {
+            "id": "fra_1",
+            "title": "Exposing Corrupt Religious Hierarchies",
+            "description": "Analyzing how religious institutions are structured to maintain control over followers.",
+            "bulletpoints": [
+                "Understanding hierarchical structures and their roles in obedience enforcement.",
+                "Recognizing financial exploitation within religious organizations.",
+                "How fear-based doctrines are used to prevent critical thinking and dissent."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "fra_2",
+            "title": "Identifying False Prophets and Manipulative Leaders",
+            "description": "Spotting self-appointed spiritual leaders who manipulate faith for personal gain.",
+            "bulletpoints": [
+                "Characteristics of false messiahs and self-proclaimed prophets.",
+                "How controlled opposition operates within religious groups.",
+                "The use of prophecy manipulation to maintain psychological dominance."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "fra_3",
+            "title": "Psychological Warfare within Religious Institutions",
+            "description": "Understanding how belief systems are weaponized for mind control.",
+            "bulletpoints": [
+                "How guilt and sin are used as tools of obedience.",
+                "Recognizing the signs of religious trauma and spiritual abuse.",
+                "The use of social exclusion and excommunication to enforce control."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

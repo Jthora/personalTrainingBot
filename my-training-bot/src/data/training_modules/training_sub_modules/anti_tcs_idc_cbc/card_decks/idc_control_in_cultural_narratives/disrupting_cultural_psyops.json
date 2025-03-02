@@ -1,0 +1,48 @@
+{
+    "id": "disrupting_cultural_psyops",
+    "name": "Disrupting Cultural PsyOps",
+    "description": "Neutralizing mass programming tactics used in global media, music, and art.",
+    "focus": [
+        "PsyOps in Music and Film",
+        "Narrative Warfare",
+        "Counter-Psychological Defense"
+    ],
+    "cards": [
+        {
+            "id": "dcp_1",
+            "title": "Deconstructing Manufactured Idols and Influencers",
+            "description": "Revealing how entertainment and social media figures are used as cultural control agents.",
+            "bulletpoints": [
+                "Identifying industry-backed influencers with hidden agendas.",
+                "Understanding how pop culture figures influence political and social beliefs.",
+                "Tracing the ties between media elites and intelligence agencies."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "dcp_2",
+            "title": "Cultural Warfare Through Music and Sound Frequencies",
+            "description": "Examining how music and sound frequencies manipulate emotions and consciousness.",
+            "bulletpoints": [
+                "Understanding frequency manipulation in pop music and entertainment.",
+                "Examining historical shifts in musical tuning standards and their effects.",
+                "Using sound as a counter-tool for cognitive and emotional resilience."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "dcp_3",
+            "title": "Counteracting Ideological Subversion in Art and Literature",
+            "description": "Exposing how books, films, and art are weaponized to reinforce control systems.",
+            "bulletpoints": [
+                "Recognizing ideological programming in best-selling books and media franchises.",
+                "Identifying state-funded cultural movements designed to reshape public thought.",
+                "Techniques to create counter-narratives and independent storytelling."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

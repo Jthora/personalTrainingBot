@@ -1,0 +1,17 @@
+{
+    "id": "mental_warfare_and_cognitive_shielding",
+    "name": "Mental Warfare and Cognitive Shielding",
+    "description": "Developing the ability to counteract cognitive manipulation, psychological traps, and high-level mental warfare tactics used by PSNs.",
+    "difficulty": "Expert",
+    "estimated_time": "9-18 months",
+    "focus": [
+        "Psychological Warfare Defense",
+        "Cognitive Fortification",
+        "Countering Thought Inception Tactics"
+    ],
+    "cardDecks": [
+        "psychological_warfare_defense",
+        "cognitive_fortification_techniques",
+        "countering_thought_inception"
+    ]
+}

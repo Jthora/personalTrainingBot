@@ -1,0 +1,17 @@
+{
+    "id": "undoing_psn_trauma_bonding",
+    "name": "Undoing PSN Trauma Bonding",
+    "description": "Techniques for breaking free from psychological dependencies and biochemical addictions caused by long-term exposure to Psychopaths, Sociopaths, and Narcissists.",
+    "difficulty": "Advanced",
+    "estimated_time": "6-12 months",
+    "focus": [
+        "Rewiring Neurological Responses",
+        "Detoxifying Emotional Attachments",
+        "Breaking the Reward-Punishment Cycle"
+    ],
+    "cardDecks": [
+        "rewiring_neurological_responses",
+        "detoxifying_emotional_attachments",
+        "breaking_the_reward_punishment_cycle"
+    ]
+}

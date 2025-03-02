@@ -1,0 +1,17 @@
+{
+    "id": "psychological_warfare_and_psn_social_exile",
+    "name": "Psychological Warfare and PSN Social Exile",
+    "description": "Strategically dismantling the psychological influence of PSNs and isolating them socially to weaken their control.",
+    "difficulty": "Expert",
+    "estimated_time": "9-18 months",
+    "focus": [
+        "Psychological Warfare Tactics",
+        "Social Isolation of PSNs",
+        "Manipulation Resistance Training"
+    ],
+    "cardDecks": [
+        "psychological_warfare_tactics",
+        "social_isolation_of_psns",
+        "manipulation_resistance_training"
+    ]
+}

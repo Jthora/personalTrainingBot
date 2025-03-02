@@ -1,0 +1,48 @@
+{
+    "id": "cognitive_anchoring",
+    "name": "Cognitive Anchoring",
+    "description": "Strengthening internal reference points to resist gaslighting distortions.",
+    "focus": [
+        "Memory Reinforcement",
+        "Reality Testing",
+        "Personal Truth Affirmation"
+    ],
+    "cards": [
+        {
+            "id": "ca_1",
+            "title": "Maintaining a Record of Reality",
+            "description": "Using journaling and external reference points to counteract gaslighting distortions.",
+            "bulletpoints": [
+                "Keeping a factual log to verify past conversations and events.",
+                "Using timestamps, voice recordings, and written records as cognitive safeguards.",
+                "Referring to trusted external sources to validate reality."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "ca_2",
+            "title": "Reality Testing Techniques",
+            "description": "Using logical and emotional techniques to verify your perception of events.",
+            "bulletpoints": [
+                "Comparing your experience with trusted third-party perspectives.",
+                "Breaking down arguments into objective facts vs. emotional distortions.",
+                "Using mental contrast exercises to detect manipulation."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ca_3",
+            "title": "Building an Emotional Firewall",
+            "description": "Training to prevent emotional hijacking by gaslighters.",
+            "bulletpoints": [
+                "Recognizing and rejecting guilt-based manipulation.",
+                "Using emotional detachment techniques to remain unaffected.",
+                "Reframing gaslighting attempts as proof of the manipulator’s weakness."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

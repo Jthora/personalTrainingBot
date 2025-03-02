@@ -1,0 +1,48 @@
+{
+    "id": "tracking_ritualistic_patterns_in_crime",
+    "name": "Tracking Ritualistic Patterns in Crime",
+    "description": "Analyzing crime scene patterns, symbols, and forensic evidence to uncover ritualistic sacrifice operations.",
+    "focus": [
+        "Crime Scene Analysis of Occult Practices",
+        "Pattern Recognition in Ritualistic Killings",
+        "Forensic and Symbolic Evidence Decoding"
+    ],
+    "cards": [
+        {
+            "id": "trpc_1",
+            "title": "Recognizing Occult Symbolism in Crime Scenes",
+            "description": "Identifying key symbols, markings, and positioning of bodies used in sacrificial rituals.",
+            "bulletpoints": [
+                "Analyzing ancient and modern occult symbols in crime scenes.",
+                "Understanding astrological and numerological alignments in elite sacrifices.",
+                "Cross-referencing forensic evidence with known occult practices."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "trpc_2",
+            "title": "Investigating Law Enforcement Cover-Ups",
+            "description": "Uncovering systemic protection of ritualistic crimes by compromised officials.",
+            "bulletpoints": [
+                "Tracking suppression of key evidence and witness testimony.",
+                "Analyzing patterns of case dismissals in high-profile cases.",
+                "Identifying legal loopholes used to shield perpetrators."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "trpc_3",
+            "title": "Mapping Geographic and Institutional Connections",
+            "description": "Tracing the connections between ritual sites, elite networks, and institutions.",
+            "bulletpoints": [
+                "Identifying historical sites linked to ritual sacrifices.",
+                "Analyzing institutions with high occult affiliations.",
+                "Tracking key figures involved in covering up ritual crimes."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

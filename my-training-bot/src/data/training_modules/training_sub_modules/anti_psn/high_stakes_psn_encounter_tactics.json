@@ -1,0 +1,17 @@
+{
+    "id": "high_stakes_psn_encounter_tactics",
+    "name": "High-Stakes PSN Encounter Tactics",
+    "description": "Advanced strategies for navigating high-risk encounters with Psychopaths, Sociopaths, and Narcissists in critical, dangerous, or power-dynamic-heavy situations.",
+    "difficulty": "Expert",
+    "estimated_time": "12-24 months",
+    "focus": [
+        "Real-Time Psychological Combat",
+        "Advanced Social Engineering Reversal",
+        "Stealth-Based Counter-Engagement"
+    ],
+    "cardDecks": [
+        "real_time_psychological_combat",
+        "advanced_social_engineering_reversal",
+        "stealth_based_counter_engagement"
+    ]
+}

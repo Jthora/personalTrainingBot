@@ -1,0 +1,48 @@
+{
+    "id": "emotional_resilience_exercises",
+    "name": "Emotional Resilience Exercises",
+    "description": "Practical exercises to build emotional resilience against manipulative psychological tactics.",
+    "focus": [
+        "Emotional Regulation Techniques",
+        "Mental Conditioning Against Manipulation",
+        "Long-Term Psychological Stability"
+    ],
+    "cards": [
+        {
+            "id": "ere_1",
+            "title": "Breaking Emotional Hooks",
+            "description": "Training your mind to resist emotional coercion and guilt manipulation.",
+            "bulletpoints": [
+                "Identifying common emotional hooks used by PSNs to create dependency.",
+                "Using cognitive distancing techniques to break emotional attachment.",
+                "Practicing emotional disengagement when faced with manipulative guilt-tripping."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ere_2",
+            "title": "Controlled Emotional Numbing",
+            "description": "Temporarily suppressing emotions to avoid being manipulated in high-stakes interactions.",
+            "bulletpoints": [
+                "Activating detachment mode to neutralize emotional influence.",
+                "Practicing stoicism as a defensive strategy against manipulation.",
+                "Building a switchable emotional buffer for resilience in long-term engagements."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "ere_3",
+            "title": "Mental Reframing for Emotional Control",
+            "description": "Using cognitive restructuring to reduce emotional impact.",
+            "bulletpoints": [
+                "Turning insults into neutral statements to prevent emotional reactions.",
+                "Redirecting guilt and shame-based manipulation back onto the aggressor.",
+                "Using thought-stopping techniques to prevent emotional spiraling."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

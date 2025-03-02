@@ -1,0 +1,48 @@
+{
+    "id": "securing_emotional_and_psychological_independence",
+    "name": "Securing Emotional and Psychological Independence",
+    "description": "Rebuilding a strong sense of self, identity, and autonomy after escaping a PSN relationship.",
+    "focus": [
+        "Detoxifying from Psychological Manipulation",
+        "Rebuilding Self-Worth and Confidence",
+        "Developing Long-Term Narcissist Resistance"
+    ],
+    "cards": [
+        {
+            "id": "sepi_1",
+            "title": "Rewiring Your Emotional Responses",
+            "description": "Deprogramming conditioned emotional reactions that were implanted by the PSN.",
+            "bulletpoints": [
+                "Using cognitive reframing to break trauma bonds.",
+                "Practicing emotional neutrality when reflecting on past experiences.",
+                "Engaging in mental rewiring exercises to reclaim autonomy over your emotions."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "sepi_2",
+            "title": "Rebuilding Self-Worth and Social Confidence",
+            "description": "Restoring a strong sense of self and developing healthy interpersonal trust.",
+            "bulletpoints": [
+                "Using progressive exposure to safe and supportive relationships.",
+                "Setting firm boundaries to reinforce emotional independence.",
+                "Practicing self-affirmation techniques to reestablish self-esteem."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "sepi_3",
+            "title": "Developing Long-Term Narcissist Resistance",
+            "description": "Ensuring lifelong immunity against future PSN manipulation.",
+            "bulletpoints": [
+                "Recognizing early warning signs before emotional attachment forms.",
+                "Building an internal ‘lie detector’ for manipulative tactics.",
+                "Cultivating relationships based on mutual respect and emotional security."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

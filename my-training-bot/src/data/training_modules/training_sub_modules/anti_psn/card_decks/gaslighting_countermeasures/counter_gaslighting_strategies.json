@@ -1,0 +1,48 @@
+{
+    "id": "counter_gaslighting_strategies",
+    "name": "Counter-Gaslighting Strategies",
+    "description": "Advanced techniques for turning gaslighting back onto the manipulator.",
+    "focus": [
+        "Verbal Counter-Tactics",
+        "Logical Disruption",
+        "Psychological Deflection"
+    ],
+    "cards": [
+        {
+            "id": "cgs_1",
+            "title": "Reverse Questioning",
+            "description": "Forcing gaslighters to expose their own contradictions.",
+            "bulletpoints": [
+                "Using precise questioning to make them defend their distortions.",
+                "Exposing logical fallacies to break their control.",
+                "Guiding conversations into self-revealing traps."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cgs_2",
+            "title": "Narrative Control Reversal",
+            "description": "Flipping the gaslighting attempt by shifting the narrative.",
+            "bulletpoints": [
+                "Reframing their manipulation as proof of their own insecurity.",
+                "Using humor and exaggeration to neutralize gaslighting attacks.",
+                "Acting confused on purpose to break their strategic rhythm."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cgs_3",
+            "title": "Strategic Disengagement",
+            "description": "Withdrawing from gaslighting scenarios before they escalate.",
+            "bulletpoints": [
+                "Recognizing when to disengage instead of fighting.",
+                "Using silence and non-reaction to frustrate manipulators.",
+                "Leaving conversations without justifying your departure."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

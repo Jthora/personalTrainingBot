@@ -1,0 +1,48 @@
+{
+    "id": "disrupting_psn_information_networks",
+    "name": "Disrupting PSN Information Networks",
+    "description": "Tactical interference in PSN-controlled media, propaganda systems, and disinformation campaigns.",
+    "focus": [
+        "Undermining PSN Narratives",
+        "Intercepting and Redirecting Their Messaging",
+        "Severing Their Control Over Public Perception"
+    ],
+    "cards": [
+        {
+            "id": "psn_info_disrupt_1",
+            "title": "Subverting Controlled Media Outlets",
+            "description": "Infiltrating and weakening PSN-aligned information channels.",
+            "bulletpoints": [
+                "Exploiting inconsistencies in their narratives to erode public trust.",
+                "Leveraging insider sources to release controlled leaks.",
+                "Creating viral counter-messaging that disrupts their perception control."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psn_info_disrupt_2",
+            "title": "Hijacking the PSN Information Pipeline",
+            "description": "Redirecting and corrupting their disinformation networks.",
+            "bulletpoints": [
+                "Inserting false narratives into their propaganda to cause misalignment.",
+                "Triggering internal conflicts by amplifying factional disagreements.",
+                "Disseminating alternative perspectives to weaken their ideological monopoly."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psn_info_disrupt_3",
+            "title": "Targeting Their Internal Communications",
+            "description": "Disrupting their ability to coordinate and execute strategies efficiently.",
+            "bulletpoints": [
+                "Flooding their communication channels with misinformation and noise.",
+                "Orchestrating internal trust breakdowns that lead to division.",
+                "Severing their key information links through targeted disconnections."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

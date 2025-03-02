@@ -1,0 +1,48 @@
+{
+    "id": "esoteric_and_occult_language_decoding",
+    "name": "Esoteric and Occult Language Decoding",
+    "description": "Unraveling the hidden meanings behind esoteric languages, numerology, sigil magic, and elite coding systems.",
+    "focus": [
+        "Sacred Language and Numerology",
+        "Sigil Magic in Modern Contexts",
+        "Elite Ciphers and Secret Codes"
+    ],
+    "cards": [
+        {
+            "id": "eold_1",
+            "title": "Numerology and Kabbalistic Encoding",
+            "description": "Understanding the numerical patterns used by IDC factions to structure reality manipulation.",
+            "bulletpoints": [
+                "Decoding gematria and the power of numbers in elite symbolism.",
+                "Understanding how date calculations influence mass rituals.",
+                "Analyzing elite numerology in financial markets, political events, and corporate branding."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "eold_2",
+            "title": "Sigils, Glyphs, and Logos",
+            "description": "Identifying the hidden use of sigil magic in corporate, governmental, and esoteric symbolism.",
+            "bulletpoints": [
+                "Breaking down how sigils act as subconscious command mechanisms.",
+                "Understanding the energetic imprinting of symbols on collective psychology.",
+                "Tracing sigil-based manipulation from ancient esoteric orders to modern-day brands."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "eold_3",
+            "title": "Elite Ciphers and Hidden Languages",
+            "description": "Deconstructing the secret coding systems used by IDC networks to communicate hidden messages.",
+            "bulletpoints": [
+                "Identifying patterns in Masonic, Jesuit, and occult documents.",
+                "Understanding linguistic manipulation through hidden acronyms and abbreviations.",
+                "Decrypting modern elite communication channels, including predictive programming in entertainment."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

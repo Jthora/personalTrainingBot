@@ -1,0 +1,48 @@
+{
+    "id": "understanding_coercion_tactics",
+    "name": "Understanding Coercion Tactics",
+    "description": "Breaking down the psychological, financial, and operational methods used to control individuals through blackmail and coercion.",
+    "focus": [
+        "Psychological Manipulation Through Blackmail",
+        "Entrapment and Kompromat Tactics",
+        "Threat-Based Compliance Strategies"
+    ],
+    "cards": [
+        {
+            "id": "uct_1",
+            "title": "The Psychology of Blackmail",
+            "description": "How fear, shame, and reputation management are weaponized.",
+            "bulletpoints": [
+                "Understanding how blackmailers exploit guilt and psychological pressure.",
+                "Identifying the key vulnerabilities targeted for coercion.",
+                "Recognizing staged moral dilemmas and forced compromises."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "uct_2",
+            "title": "Kompromat and Entrapment Tactics",
+            "description": "How intelligence agencies and criminal networks manufacture leverage.",
+            "bulletpoints": [
+                "Using honeypots and controlled environments to create compromising situations.",
+                "Recording illicit activity as leverage for long-term compliance.",
+                "Fabrication of evidence and deepfake technology as modern blackmail tools."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "uct_3",
+            "title": "The Extortion Pyramid",
+            "description": "Mapping the hierarchical structure of blackmail-based control.",
+            "bulletpoints": [
+                "How compromised individuals are forced to compromise others.",
+                "The cycle of fear-based obedience in power structures.",
+                "Identifying escalation tactics used when resistance is attempted."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

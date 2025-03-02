@@ -1,0 +1,17 @@
+{
+    "id": "behavioral_and_microexpression_analysis",
+    "name": "Behavioral and Microexpression Analysis",
+    "description": "Developing the ability to detect deception, manipulation, and predatory intent through behavioral and microexpression analysis.",
+    "difficulty": "Advanced",
+    "estimated_time": "6-12 months",
+    "focus": [
+        "Microexpression Recognition",
+        "Subconscious Behavioral Tells",
+        "Psychopath/Sociopath Deception Patterns"
+    ],
+    "cardDecks": [
+        "spotting_toxic_patterns",
+        "verbal_self_defense",
+        "high_stakes_psn_encounter_tactics"
+    ]
+}

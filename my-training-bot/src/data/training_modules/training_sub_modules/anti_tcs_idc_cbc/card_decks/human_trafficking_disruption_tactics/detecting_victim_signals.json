@@ -1,0 +1,48 @@
+{
+    "id": "detecting_victim_signals",
+    "name": "Detecting Victim Signals",
+    "description": "Recognizing the behavioral, verbal, and nonverbal cues that indicate human trafficking victims.",
+    "focus": [
+        "Recognizing Signs of Trafficking",
+        "Understanding Psychological Conditioning",
+        "Intervention and Reporting Methods"
+    ],
+    "cards": [
+        {
+            "id": "dvs_1",
+            "title": "Behavioral and Psychological Indicators",
+            "description": "Understanding the psychological impact of trafficking and the behavioral signals victims display.",
+            "bulletpoints": [
+                "Signs of coercion: scripted responses, extreme submissiveness, avoidance of eye contact.",
+                "Victims often show signs of PTSD, malnutrition, and physical injuries from abuse.",
+                "Understanding Stockholm Syndrome and how victims may defend their captors."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "dvs_2",
+            "title": "Physical and Environmental Clues",
+            "description": "Recognizing red flags in workplaces, transit hubs, and public spaces.",
+            "bulletpoints": [
+                "Identifying common locations where trafficking victims are kept or moved.",
+                "Understanding the role of fake job offers and fraudulent recruitment schemes.",
+                "Spotting signs of trafficking at hotels, massage parlors, nightclubs, and transit centers."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "dvs_3",
+            "title": "Reporting and Safe Extraction",
+            "description": "Proper channels for reporting and assisting trafficking victims without putting them at greater risk.",
+            "bulletpoints": [
+                "Understanding how to contact anti-trafficking organizations and law enforcement.",
+                "How to document and report trafficking suspicions without alerting traffickers.",
+                "When and how to intervene directly in a way that does not endanger the victim."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

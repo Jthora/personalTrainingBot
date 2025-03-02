@@ -1,0 +1,48 @@
+{
+    "id": "mental_fortress_tactics",
+    "name": "Mental Fortress Tactics",
+    "description": "Advanced cognitive training to create an unbreakable mental barrier against psychological attacks.",
+    "focus": [
+        "Cognitive Shielding Strategies",
+        "Mental Discipline Techniques",
+        "Subconscious Defense Mechanisms"
+    ],
+    "cards": [
+        {
+            "id": "mft_1",
+            "title": "Emotional Firewall Activation",
+            "description": "Installing subconscious mental barriers against external influence.",
+            "bulletpoints": [
+                "Developing automatic cognitive shields against toxic interactions.",
+                "Practicing instant detachment when psychological attacks are detected.",
+                "Creating internal scripts to override external emotional manipulation."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mft_2",
+            "title": "Cognitive Shock Absorption",
+            "description": "Training your mind to withstand and neutralize verbal and psychological attacks.",
+            "bulletpoints": [
+                "Practicing delayed responses to weaken manipulative aggression.",
+                "Neutralizing provocations through controlled silence and non-reactivity.",
+                "Redirecting cognitive dissonance effects back onto the manipulator."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mft_3",
+            "title": "Mental Pattern Breakers",
+            "description": "Short-circuiting psychological control mechanisms before they take hold.",
+            "bulletpoints": [
+                "Using humor and absurdity to deflate manipulative authority.",
+                "Injecting unpredictable responses to disrupt psychological conditioning attempts.",
+                "Practicing verbal judo techniques to disarm and deflect control attempts."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

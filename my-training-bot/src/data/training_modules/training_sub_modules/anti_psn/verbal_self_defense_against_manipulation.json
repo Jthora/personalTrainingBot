@@ -1,0 +1,17 @@
+{
+    "id": "verbal_self_defense_against_manipulation",
+    "name": "Verbal Self-Defense Against Manipulation",
+    "description": "Training in verbal countermeasures to neutralize manipulative language and regain control in conversations with Psychopaths, Sociopaths, and Narcissists.",
+    "difficulty": "Advanced",
+    "estimated_time": "6-12 months",
+    "focus": [
+        "Deflecting Manipulative Language",
+        "Maintaining Conversational Control",
+        "Neutralizing Emotional Triggers"
+    ],
+    "cardDecks": [
+        "deflecting_manipulative_language",
+        "manitaining_conversational_control",
+        "neutralizing_emotional_triggers"
+    ]
+}

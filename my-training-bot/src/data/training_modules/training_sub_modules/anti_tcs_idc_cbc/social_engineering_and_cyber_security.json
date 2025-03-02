@@ -1,0 +1,17 @@
+{
+    "id": "social_engineering_and_cyber_security",
+    "name": "Social Engineering and Cyber Security",
+    "description": "Training in countering cyber infiltration, digital surveillance, and psychological social engineering tactics.",
+    "difficulty": "Advanced",
+    "estimated_time": "6-14 weeks",
+    "focus": [
+        "Cyber Infiltration Resistance",
+        "AI and Predictive Programming Defense",
+        "Online Identity Protection"
+    ],
+    "cardDecks": [
+        "detecting_social_engineering_attacks",
+        "secure_communications_tactics",
+        "avoiding_ai_behavioral_profiling"
+    ]
+}

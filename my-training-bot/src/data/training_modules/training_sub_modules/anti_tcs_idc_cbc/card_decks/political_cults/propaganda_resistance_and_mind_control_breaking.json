@@ -1,0 +1,48 @@
+{
+    "id": "propaganda_resistance_and_mind_control_breaking",
+    "name": "Propaganda Resistance and Mind Control Breaking",
+    "description": "Techniques to recognize and dismantle propaganda narratives used by political cults to manipulate public opinion and behavior.",
+    "focus": [
+        "Recognizing Political Indoctrination",
+        "Breaking Groupthink Conditioning",
+        "Counteracting Mass Ideological Manipulation"
+    ],
+    "cards": [
+        {
+            "id": "prmc_1",
+            "title": "Dissecting Political Propaganda Techniques",
+            "description": "Understanding how mass media, education, and influencers enforce ideological control.",
+            "bulletpoints": [
+                "Identifying cognitive distortions used in political messaging.",
+                "Breaking down NLP (Neuro-Linguistic Programming) and subconscious triggers.",
+                "Recognizing emotionally charged narratives designed for mass manipulation."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "prmc_2",
+            "title": "Breaking Free from Ideological Groupthink",
+            "description": "Methods for resisting forced conformity and regaining independent thought.",
+            "bulletpoints": [
+                "Recognizing the signs of ideological purity testing.",
+                "Developing mental countermeasures against echo chambers and cult-like rhetoric.",
+                "Using strategic questioning to disrupt preconditioned responses."
+            ],
+            "duration": "75",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "prmc_3",
+            "title": "Counteracting Psychological Warfare in Politics",
+            "description": "Neutralizing fear-based control mechanisms used in political discourse.",
+            "bulletpoints": [
+                "Understanding fear appeal strategies in authoritarian messaging.",
+                "Using detachment techniques to resist emotional triggers.",
+                "Reframing political narratives to remove the illusion of urgency and control."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

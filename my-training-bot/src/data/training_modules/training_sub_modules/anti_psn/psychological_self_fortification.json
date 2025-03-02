@@ -1,0 +1,17 @@
+{
+    "id": "psychological_self_fortification",
+    "name": "Psychological Self-Fortification",
+    "description": "Strengthening the mind against psychological attacks, manipulation, and gaslighting tactics used by Psychopaths, Sociopaths, and Narcissists.",
+    "difficulty": "Expert",
+    "estimated_time": "9-18 months",
+    "focus": [
+        "Mental Immunity",
+        "Resisting Cognitive Manipulation",
+        "Strengthening Core Identity"
+    ],
+    "cardDecks": [
+        "mental_immunity_training",
+        "resisting_cognitive_manipulation",
+        "strengthening_core_identity"
+    ]
+}

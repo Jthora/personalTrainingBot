@@ -1,0 +1,48 @@
+{
+    "id": "mind_control_deprogramming",
+    "name": "Mind Control Deprogramming",
+    "description": "Techniques for identifying and reversing cultic and ritualistic programming to restore independent thought and sovereignty.",
+    "focus": [
+        "Recognizing Mind Control Techniques",
+        "Mental and Emotional Deprogramming",
+        "Restoring Autonomy"
+    ],
+    "cards": [
+        {
+            "id": "mcd_1",
+            "title": "Recognizing Cultic Programming",
+            "description": "Understanding how cultic systems use psychological conditioning to control thought patterns and behavior.",
+            "bulletpoints": [
+                "Identifying triggers and reinforcement cycles.",
+                "Understanding trauma-based indoctrination methods.",
+                "Analyzing real-world cultic control structures."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mcd_2",
+            "title": "Techniques for Mental Deprogramming",
+            "description": "Methods to break free from conditioned responses and cultic belief enforcement mechanisms.",
+            "bulletpoints": [
+                "Using cognitive reframing to shift mental paradigms.",
+                "Breaking trauma bonds and psychological dependency loops.",
+                "Implementing reality-checking protocols and self-validation techniques."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mcd_3",
+            "title": "Rebuilding Mental Autonomy",
+            "description": "Strategies for reclaiming personal agency and independent critical thinking.",
+            "bulletpoints": [
+                "Developing self-directed thought patterns.",
+                "Overcoming gaslighting and external thought control.",
+                "Using meditation and self-awareness exercises for clarity."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "covert_infiltration_tactics",
+    "name": "Covert Infiltration Tactics",
+    "description": "Techniques for silently penetrating IDC-controlled institutions while avoiding detection.",
+    "focus": [
+        "Stealth and Social Engineering",
+        "Deep Cover Operations",
+        "Information Extraction"
+    ],
+    "cards": [
+        {
+            "id": "cit_1",
+            "title": "Creating and Maintaining Cover Identities",
+            "description": "Developing and sustaining false personas to infiltrate high-risk environments.",
+            "bulletpoints": [
+                "Building credible background stories to avoid suspicion.",
+                "Behavioral mimicry techniques to blend into target environments.",
+                "Identifying and neutralizing inconsistencies in false identities."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cit_2",
+            "title": "Social Engineering for Deep Access",
+            "description": "Using psychological manipulation to gain trust and unlock restricted information.",
+            "bulletpoints": [
+                "Exploiting cognitive biases to bypass security barriers.",
+                "Leveraging human psychology for privilege escalation.",
+                "Understanding deception detection to avoid exposure."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cit_3",
+            "title": "Silent Surveillance and Intel Gathering",
+            "description": "Techniques for gathering and relaying intelligence without leaving a trace.",
+            "bulletpoints": [
+                "Utilizing micro-gestures and NLP (Neuro-Linguistic Programming) for passive data collection.",
+                "Setting up discreet monitoring systems within enemy strongholds.",
+                "Avoiding digital and physical footprint exposure in intelligence operations."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "spotting_toxic_patterns",
+    "name": "Spotting Toxic Patterns",
+    "description": "Identifying behavioral and psychological patterns that expose manipulation, deceit, and harmful intent.",
+    "focus": [
+        "Recognizing Manipulative Behavior",
+        "Detecting Deception",
+        "Pattern-Based Threat Assessment"
+    ],
+    "cards": [
+        {
+            "id": "toxic_patterns_1",
+            "title": "Early Warning Signs of Toxic Individuals",
+            "description": "Identifying the subtle indicators of toxic behavior before they escalate.",
+            "bulletpoints": [
+                "Inconsistencies in speech and actions reveal hidden agendas.",
+                "Over-exaggerated charm often masks deep-seated control tactics.",
+                "Unsolicited victim narratives serve as bait for emotional manipulation."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "toxic_patterns_2",
+            "title": "The Narcissistic Pattern Loop",
+            "description": "Understanding the repetitive behavioral cycles of narcissists and high-control personalities.",
+            "bulletpoints": [
+                "Love-bombing is the bait phase that establishes dependency.",
+                "Devaluation occurs once control is secured and emotional leverage is maximized.",
+                "Discard and hoovering are manipulative cycles used to maintain dominance."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "toxic_patterns_3",
+            "title": "Subconscious Body Language Tells",
+            "description": "Analyzing involuntary behaviors that betray deception or predatory intent.",
+            "bulletpoints": [
+                "Subtle lip compression signals internalized deception or withheld truth.",
+                "Unconscious mirroring attempts are often used to establish false rapport.",
+                "Overly controlled microexpressions indicate rehearsed deception strategies."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

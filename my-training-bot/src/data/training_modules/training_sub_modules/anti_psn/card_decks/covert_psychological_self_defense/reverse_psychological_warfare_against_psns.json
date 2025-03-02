@@ -1,0 +1,48 @@
+{
+    "id": "reverse_psychological_warfare_against_psns",
+    "name": "Reverse Psychological Warfare Against PSNs",
+    "description": "Advanced psychological manipulation techniques to flip the power dynamic and disrupt PSN influence.",
+    "focus": [
+        "Turning Their Tactics Against Them",
+        "Forcing PSNs into Defensive Psychological States",
+        "Mental Counteroffensive Strategies"
+    ],
+    "cards": [
+        {
+            "id": "psn_warfare_1",
+            "title": "Inducing Cognitive Dissonance",
+            "description": "Breaking PSN mental frameworks by injecting conflicting ideas.",
+            "bulletpoints": [
+                "Introducing contradictory narratives forces PSNs into psychological instability.",
+                "Exposing their own words against them disrupts their cognitive control over targets.",
+                "Layering opposing perspectives into discussions weakens their manipulative grip."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psn_warfare_2",
+            "title": "Forced Identity Reassessment",
+            "description": "Undermining PSN ego structures by attacking their self-constructed personas.",
+            "bulletpoints": [
+                "Challenging their projected superiority creates psychological cracks in their facade.",
+                "Exploiting their need for validation destabilizes their confidence in social dominance.",
+                "Reframing their narratives forces them to reassess their own manipulative strategies."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psn_warfare_3",
+            "title": "Confusion Loops and Logic Traps",
+            "description": "Forcing PSNs into mental loops that exhaust their control mechanisms.",
+            "bulletpoints": [
+                "Using paradoxical statements forces them to contradict themselves.",
+                "Baiting them into defending illogical premises drains their mental energy.",
+                "Setting up logic traps exposes their inability to maintain a consistent narrative."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

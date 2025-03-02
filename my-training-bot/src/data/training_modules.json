@@ -15,6 +15,8 @@
         { "id": "psiops", "name": "PsiOps Training" },
         { "id": "war_strategy", "name": "War Strategy Training" },
         { "id": "web_three", "name": "Web3 Training" },
-        { "id": "self_sovereignty", "name": "Self Sovereignty Training" }
+        { "id": "self_sovereignty", "name": "Self Sovereignty Training" },
+        { "id": "anti_psn", "name": "Anti PSN Training" },
+        { "id": "anti_tcs_idc_cbc", "name": "Anti TCS/IDC/CBC Training" }
     ]
 }

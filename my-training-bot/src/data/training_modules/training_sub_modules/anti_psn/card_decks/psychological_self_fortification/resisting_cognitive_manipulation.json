@@ -1,0 +1,48 @@
+{
+    "id": "resisting_cognitive_manipulation",
+    "name": "Resisting Cognitive Manipulation",
+    "description": "Building the ability to detect and neutralize thought manipulation before it takes hold.",
+    "focus": [
+        "Cognitive Hijack Defense",
+        "Deconstructing Manipulative Narratives",
+        "Psychological Self-Regulation"
+    ],
+    "cards": [
+        {
+            "id": "rcm_1",
+            "title": "Neutralizing Cognitive Hijacking",
+            "description": "Preventing PSNs from inserting false narratives into your thought process.",
+            "bulletpoints": [
+                "Interrupting repetitive messaging patterns prevents subconscious persuasion.",
+                "Analyzing the logical structure of arguments helps detect deceptive rhetoric.",
+                "Practicing self-questioning prevents unconscious acceptance of implanted thoughts."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "rcm_2",
+            "title": "Deconstructing Manipulative Narratives",
+            "description": "Dismantling propaganda, gaslighting, and coercive persuasion techniques.",
+            "bulletpoints": [
+                "Identifying linguistic distortions reveals the hidden intent behind manipulative messaging.",
+                "Breaking down arguments into fundamental claims helps expose contradictions.",
+                "Recognizing emotional appeals as tools of control allows for logical counteraction."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "rcm_3",
+            "title": "Psychological Self-Regulation Under Pressure",
+            "description": "Maintaining clear thinking and composure in high-stakes psychological battles.",
+            "bulletpoints": [
+                "Slowing down responses prevents PSNs from dictating the pace of the exchange.",
+                "Using mental anchoring techniques preserves logical thought patterns under stress.",
+                "Recognizing physiological stress signals allows for preemptive emotional control."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

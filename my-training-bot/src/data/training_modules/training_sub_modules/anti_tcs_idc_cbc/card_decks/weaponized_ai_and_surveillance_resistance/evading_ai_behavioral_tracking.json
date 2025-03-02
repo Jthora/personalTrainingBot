@@ -1,0 +1,48 @@
+{
+    "id": "evading_ai_behavioral_tracking",
+    "name": "Evading AI Behavioral Tracking",
+    "description": "Techniques for disrupting AI-driven behavioral analysis and predictive tracking systems.",
+    "focus": [
+        "AI-Based Behavioral Profiling",
+        "Pattern Disruption Methods",
+        "Avoiding Predictive AI Surveillance"
+    ],
+    "cards": [
+        {
+            "id": "abt_1",
+            "title": "Understanding AI Predictive Behavior Analysis",
+            "description": "How AI monitors, predicts, and manipulates human behavior through data tracking.",
+            "bulletpoints": [
+                "How AI builds behavioral profiles based on online and offline activity.",
+                "Identifying key data points used in predictive tracking.",
+                "How AI-assisted psychological warfare influences decision-making."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "abt_2",
+            "title": "Disrupting AI Pattern Recognition",
+            "description": "Techniques to confuse AI tracking systems and prevent accurate profiling.",
+            "bulletpoints": [
+                "Using randomness and unpredictability in online and offline behaviors.",
+                "Disrupting machine learning datasets through false data injection.",
+                "Leveraging behavioral noise to break AI surveillance models."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "abt_3",
+            "title": "Masking Digital and Physical Presence",
+            "description": "Techniques for minimizing AI's ability to track, predict, and manipulate individuals.",
+            "bulletpoints": [
+                "Using VPNs, proxies, and decentralized communication to hide online activities.",
+                "Strategies for maintaining anonymity in high-surveillance zones.",
+                "How to use deception tactics to create misleading data trails."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

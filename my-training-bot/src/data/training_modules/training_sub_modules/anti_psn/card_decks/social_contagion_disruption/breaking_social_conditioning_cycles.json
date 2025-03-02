@@ -1,0 +1,48 @@
+{
+    "id": "breaking_social_conditioning_cycles",
+    "name": "Breaking Social Conditioning Cycles",
+    "description": "Reversing the deep-rooted psychological conditioning that PSNs use to entrench their influence.",
+    "focus": [
+        "Identifying Conditioned Reflexes",
+        "Reprogramming Cognitive Patterns",
+        "Creating Psychological Escape Routes"
+    ],
+    "cards": [
+        {
+            "id": "bscc_1",
+            "title": "Conditioned Compliance vs. True Agreement",
+            "description": "Distinguishing between forced social conformity and genuine belief.",
+            "bulletpoints": [
+                "Many people comply with PSNs out of habit rather than conviction.",
+                "Asking thought-provoking questions disrupts automatic agreement.",
+                "Revealing social pressure tactics helps individuals reclaim independent thought."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "bscc_2",
+            "title": "Cognitive Reframing for Deprogramming",
+            "description": "Shifting perspectives to break destructive mental loops.",
+            "bulletpoints": [
+                "PSNs create rigid black-and-white thinking patterns to limit alternative views.",
+                "Encouraging nuance and flexibility weakens conditioning.",
+                "Reintroducing multiple perspectives disrupts psychological entrenchment."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "bscc_3",
+            "title": "Triggering the Self-Preservation Instinct",
+            "description": "Helping individuals recognize when PSNs are exploiting them.",
+            "bulletpoints": [
+                "Conditioned individuals often ignore their own suffering to serve the PSN agenda.",
+                "Presenting logical risks associated with continued loyalty encourages re-evaluation.",
+                "Highlighting personal losses due to PSN involvement strengthens the exit impulse."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

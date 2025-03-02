@@ -1,0 +1,17 @@
+{
+    "id": "psn_infiltration_detection_and_exposure",
+    "name": "PSN Infiltration Detection and Exposure",
+    "description": "Identifying hidden Psychopaths, Sociopaths, and Narcissists embedded within organizations, institutions, and personal networks, and exposing them safely and effectively.",
+    "difficulty": "Expert",
+    "estimated_time": "9-18 months",
+    "focus": [
+        "Deep Network Analysis",
+        "Covert Exposure Tactics",
+        "Strategic Social Engineering"
+    ],
+    "cardDecks": [
+        "deep_network_analysis",
+        "covert_exposure_tactics",
+        "strategic_social_engineering"
+    ]
+}

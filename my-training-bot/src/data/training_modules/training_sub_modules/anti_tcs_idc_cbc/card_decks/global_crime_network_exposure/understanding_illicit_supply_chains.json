@@ -1,0 +1,48 @@
+{
+    "id": "understanding_illicit_supply_chains",
+    "name": "Understanding Illicit Supply Chains",
+    "description": "Investigating how global crime networks control logistics, distribution, and market penetration.",
+    "focus": [
+        "Drug and Arms Trafficking Routes",
+        "Human Trafficking and Smuggling Networks",
+        "Supply Chain Disruptions and Weak Points"
+    ],
+    "cards": [
+        {
+            "id": "uisc_1",
+            "title": "Drug and Arms Trafficking Networks",
+            "description": "Mapping the routes and logistics of global illicit trade.",
+            "bulletpoints": [
+                "Understanding how drugs and weapons move across international borders.",
+                "Key trafficking hubs and transit points worldwide.",
+                "How cartels exploit legal and illegal transport networks."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "uisc_2",
+            "title": "Human Trafficking and Smuggling Operations",
+            "description": "Exposing the global infrastructure behind human trafficking rings.",
+            "bulletpoints": [
+                "Identifying major trafficking hotspots and victim profiles.",
+                "How criminal syndicates control victims through coercion and financial debt.",
+                "Tracking recruitment methods and digital exploitation tactics."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "uisc_3",
+            "title": "Disrupting Illicit Supply Chains",
+            "description": "Tactics for disrupting and weakening organized crime networks.",
+            "bulletpoints": [
+                "Identifying weak points in cartel logistics and distribution networks.",
+                "Coordinating multi-agency investigations for supply chain disruption.",
+                "Leveraging economic and geopolitical factors to cut off syndicate funding."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

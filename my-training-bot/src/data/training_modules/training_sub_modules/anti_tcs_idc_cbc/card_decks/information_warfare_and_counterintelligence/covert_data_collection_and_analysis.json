@@ -1,0 +1,48 @@
+{
+    "id": "covert_data_collection_and_analysis",
+    "name": "Covert Data Collection and Analysis",
+    "description": "Techniques for gathering, analyzing, and verifying intelligence data while remaining undetected.",
+    "focus": [
+        "OSINT Data Gathering",
+        "Covert Intelligence Analysis",
+        "Tracking Disinformation Sources"
+    ],
+    "cards": [
+        {
+            "id": "cdca_1",
+            "title": "OSINT Techniques for Uncovering Hidden Information",
+            "description": "Using open-source intelligence (OSINT) to track down concealed narratives and suppressed facts.",
+            "bulletpoints": [
+                "Leveraging public databases, leaked documents, and investigative tools.",
+                "Utilizing metadata analysis to verify the origins of information.",
+                "Tracking down deleted and censored content through archival methods."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cdca_2",
+            "title": "Covert Intelligence Gathering and Secure Communication",
+            "description": "Maintaining operational security while collecting sensitive intelligence.",
+            "bulletpoints": [
+                "Using encrypted communication methods to prevent detection.",
+                "Avoiding digital footprints that could lead to exposure.",
+                "Analyzing behavioral patterns of surveillance networks."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cdca_3",
+            "title": "Tracking and Verifying Disinformation Sources",
+            "description": "Tracing the origins of disinformation campaigns and exposing their funding sources.",
+            "bulletpoints": [
+                "Mapping out coordinated bot networks used to spread propaganda.",
+                "Identifying financial and institutional backers of controlled narratives.",
+                "Using forensic linguistic analysis to detect fabricated content."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

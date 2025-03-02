@@ -1,0 +1,48 @@
+{
+    "id": "psychological_warfare_defense",
+    "name": "Psychological Warfare Defense",
+    "description": "Mastering defensive strategies to neutralize high-level psychological attacks by PSNs.",
+    "focus": [
+        "Detecting Psychological Attacks",
+        "Neutralizing Emotional Manipulation",
+        "Building Mental Resilience"
+    ],
+    "cards": [
+        {
+            "id": "pwd_1",
+            "title": "Detecting Psychological Attacks in Real Time",
+            "description": "Recognizing subtle and overt forms of psychological warfare before they take effect.",
+            "bulletpoints": [
+                "Identifying micro-manipulations embedded in conversation.",
+                "Recognizing the signs of coercive persuasion tactics.",
+                "Developing instant response protocols to disrupt psychological attacks."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "pwd_2",
+            "title": "Emotional Resilience as a Shield",
+            "description": "Using emotional control to resist PSN manipulation strategies.",
+            "bulletpoints": [
+                "Training in emotional neutrality to prevent reaction-based control.",
+                "Utilizing deep breathing and anchoring techniques to maintain composure.",
+                "Developing an internal reference point to prevent external narrative hijacking."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "pwd_3",
+            "title": "Reversing the Psychological Attack",
+            "description": "Turning the manipulator’s psychological tactics against them.",
+            "bulletpoints": [
+                "Using Socratic questioning to dismantle deceptive narratives.",
+                "Deploying controlled misinterpretation to disrupt the attacker’s control.",
+                "Implementing logical traps that force manipulators into self-defeat."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

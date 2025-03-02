@@ -1,0 +1,17 @@
+{
+    "id": "dark_economics",
+    "name": "Dark Economics",
+    "description": "Uncovering the financial backbone of the TCS/IDC/CBC, including black markets, money laundering, and elite financial control mechanisms.",
+    "difficulty": "Advanced",
+    "estimated_time": "12-24 weeks",
+    "focus": [
+        "Black Market and Shadow Banking",
+        "Elite Financial Manipulation",
+        "Economic Warfare Tactics"
+    ],
+    "cardDecks": [
+        "unmasking_tax_haven_operations",
+        "tracking_elite_money_laundering",
+        "counter_economic_warfare_methods"
+    ]
+}

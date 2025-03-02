@@ -1,0 +1,17 @@
+{
+    "id": "disrupting_psn_communication_networks",
+    "name": "Disrupting PSN Communication Networks",
+    "description": "Severing the internal and external communication links that allow PSNs to maintain operational control.",
+    "difficulty": "Advanced",
+    "estimated_time": "6-12 months",
+    "focus": [
+        "Blocking PSN Coordination",
+        "Communication Interference Strategies",
+        "Exposing Hidden Channels"
+    ],
+    "cardDecks": [
+        "reverse_psychological_warfare_against_psns",
+        "disrupting_psn_information_networks",
+        "covertly_overthrowing_psn_controlled_systems"
+    ]
+}

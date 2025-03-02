@@ -1,0 +1,48 @@
+{
+    "id": "cognitive_fortification_techniques",
+    "name": "Cognitive Fortification Techniques",
+    "description": "Developing advanced cognitive resilience to prevent PSNs from infiltrating thought processes.",
+    "focus": [
+        "Strengthening Mental Defenses",
+        "Disrupting Thought Intrusion",
+        "Fortifying Rational Autonomy"
+    ],
+    "cards": [
+        {
+            "id": "cft_1",
+            "title": "Building an Impenetrable Cognitive Firewall",
+            "description": "Blocking manipulative influence before it enters the subconscious.",
+            "bulletpoints": [
+                "Identifying linguistic cues that indicate manipulation attempts.",
+                "Using critical thinking patterns to prevent narrative implantation.",
+                "Practicing meta-cognition to recognize external influence."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cft_2",
+            "title": "Reinforcing Logical Independence",
+            "description": "Training the mind to prioritize logic over emotional coercion.",
+            "bulletpoints": [
+                "Identifying emotional hijacking and separating logic from impulse.",
+                "Strengthening reality-testing skills to detect falsified perceptions.",
+                "Developing mental algorithms for filtering information integrity."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cft_3",
+            "title": "Mental Discipline and Cognitive Autonomy",
+            "description": "Eliminating vulnerabilities that allow PSNs to control thought patterns.",
+            "bulletpoints": [
+                "Creating mental compartmentalization techniques to prevent forced thought shifts.",
+                "Practicing controlled exposure to manipulation tactics to build immunity.",
+                "Developing higher-order reasoning to dismantle deceptive framing."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

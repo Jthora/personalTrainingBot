@@ -1,0 +1,48 @@
+{
+    "id": "disrupting_psn_information_networks",
+    "name": "Disrupting PSN Information Networks",
+    "description": "Neutralizing PSNs’ ability to spread information and coordinate operations.",
+    "focus": [
+        "Sabotaging PSN Communication",
+        "Exposing Hidden Channels",
+        "Creating Information Chaos"
+    ],
+    "cards": [
+        {
+            "id": "dpin_1",
+            "title": "Identifying Hidden Communication Channels",
+            "description": "Mapping the covert networks PSNs use to spread disinformation.",
+            "bulletpoints": [
+                "Tracking patterns in online forums and encrypted chat groups.",
+                "Analyzing keywords and behavioral shifts to identify covert communication.",
+                "Using OSINT techniques to uncover hidden networks."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "dpin_2",
+            "title": "Severing Internal Coordination",
+            "description": "Cutting off PSNs’ ability to organize and execute their strategies.",
+            "bulletpoints": [
+                "Injecting misinformation to disrupt their operational plans.",
+                "Causing internal conflicts by exploiting hierarchical weaknesses.",
+                "Redirecting their focus to non-critical issues to waste resources."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "dpin_3",
+            "title": "Destabilizing Their Influence Networks",
+            "description": "Breaking the mechanisms that allow PSNs to manipulate others.",
+            "bulletpoints": [
+                "Targeting key influencers to weaken their recruitment pipelines.",
+                "Using rapid-response counter-messaging to intercept disinformation.",
+                "Creating psychological pressure points that force PSNs to overreact."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

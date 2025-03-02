@@ -1,0 +1,48 @@
+{
+    "id": "identifying_compromised_governments",
+    "name": "Identifying Compromised Governments",
+    "description": "Analyzing how global governments are infiltrated and controlled by transnational criminal syndicates and elite power structures.",
+    "focus": [
+        "Political Corruption Indicators",
+        "Intelligence Agency Influence",
+        "State-Controlled Psychological Operations"
+    ],
+    "cards": [
+        {
+            "id": "icg_1",
+            "title": "Detecting Political Corruption Networks",
+            "description": "Recognizing the key indicators of compromised leadership and political fraud.",
+            "bulletpoints": [
+                "Investigating undisclosed financial ties and bribery in government.",
+                "Analyzing policies that favor corporate elites over national sovereignty.",
+                "Identifying government officials with ties to intelligence and black ops agencies."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "icg_2",
+            "title": "How Intelligence Agencies Control Governments",
+            "description": "Unveiling the shadow role of intelligence agencies in controlling global policies.",
+            "bulletpoints": [
+                "Understanding how intelligence agencies influence elections and legislative processes.",
+                "Recognizing false flag operations used to justify war and power expansion.",
+                "Tracking the relationship between deep-state actors and corporate-military alliances."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "icg_3",
+            "title": "State-Controlled Media and Mass Manipulation",
+            "description": "Exposing how state-run media and propaganda shape public opinion.",
+            "bulletpoints": [
+                "Identifying state narratives that align with corporate and elite agendas.",
+                "Breaking down techniques of perception management and psychological warfare.",
+                "Tracing ownership of media outlets to elite families and intelligence groups."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

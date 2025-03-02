@@ -1,0 +1,48 @@
+{
+    "id": "detecting_synthetic_crises",
+    "name": "Detecting Synthetic Crises",
+    "description": "Analyzing how orchestrated disasters and artificial instability are used as psychological control mechanisms.",
+    "focus": [
+        "Engineered Economic and Social Crises",
+        "Mass Trauma as a Means of Political Control",
+        "Media-Driven Crisis Manipulation"
+    ],
+    "cards": [
+        {
+            "id": "dsc_1",
+            "title": "Identifying Manufactured Crises",
+            "description": "Recognizing fabricated disasters and their role in mass conditioning.",
+            "bulletpoints": [
+                "Analyzing historical patterns of false-flag operations.",
+                "Recognizing predictive programming in media narratives.",
+                "Identifying artificially induced financial, social, and geopolitical collapses."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "dsc_2",
+            "title": "Disrupting Crisis-Based Fear Tactics",
+            "description": "Neutralizing fear-mongering designed to induce compliance.",
+            "bulletpoints": [
+                "Recognizing how fear-based messaging is used to control behavior.",
+                "Distinguishing between genuine crises and synthetic emergencies.",
+                "Psychological immunity training to resist crisis-induced panic."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "dsc_3",
+            "title": "Exposing Crisis Perpetrators",
+            "description": "Tracing the origins of engineered instability to dismantle their control structures.",
+            "bulletpoints": [
+                "Mapping networks responsible for orchestrating social suffering.",
+                "Tracking financial and political benefactors of crisis events.",
+                "Leveraging crisis exposure to disrupt mass manipulation tactics."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

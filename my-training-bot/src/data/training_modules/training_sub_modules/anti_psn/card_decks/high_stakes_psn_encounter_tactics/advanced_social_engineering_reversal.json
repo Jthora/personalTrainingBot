@@ -1,0 +1,48 @@
+{
+    "id": "advanced_social_engineering_reversal",
+    "name": "Advanced Social Engineering Reversal",
+    "description": "Tactics to subvert and counter PSN attempts at deception, coercion, or manipulation in social settings.",
+    "focus": [
+        "Reverse Manipulation",
+        "Defensive Social Engineering",
+        "Breaking Covert Influence Attempts"
+    ],
+    "cards": [
+        {
+            "id": "aser_1",
+            "title": "Reframing the Hook",
+            "description": "Turning their manipulation strategy into a self-sabotaging trap.",
+            "bulletpoints": [
+                "Redirecting leading questions back to force self-incrimination.",
+                "Reversing attempted emotional appeals into logical voids.",
+                "Using confusion loops to disorient and disengage their tactics."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "aser_2",
+            "title": "Flipping Social Proof Pressure",
+            "description": "Using the group dynamic against the manipulator in real time.",
+            "bulletpoints": [
+                "Amplifying group awareness of PSN tactics without directly accusing.",
+                "Reframing their control attempts as ‘overreactions’ or ‘odd behavior’.",
+                "Leveraging humor to subtly dismantle their credibility."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "aser_3",
+            "title": "Linguistic Ambiguity Attacks",
+            "description": "Using vague and ambiguous language to undermine manipulative precision.",
+            "bulletpoints": [
+                "Responding with layered meanings to force them into guesswork.",
+                "Asking clarifying questions to break conversational momentum.",
+                "Deliberately misinterpreting their words to dissolve persuasive impact."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

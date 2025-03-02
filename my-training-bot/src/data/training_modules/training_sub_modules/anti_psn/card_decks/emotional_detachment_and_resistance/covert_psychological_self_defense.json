@@ -1,0 +1,48 @@
+{
+    "id": "covert_psychological_self_defense",
+    "name": "Covert Psychological Self-Defense",
+    "description": "Subtle but effective strategies to resist and counteract psychological manipulation without direct confrontation.",
+    "focus": [
+        "Silent Psychological Resistance",
+        "Deception Awareness and Deflection",
+        "Neutralizing Manipulative Energy"
+    ],
+    "cards": [
+        {
+            "id": "cpsd_1",
+            "title": "Stealth Resistance to Psychological Control",
+            "description": "Remaining outwardly compliant while internally rejecting manipulative influence.",
+            "bulletpoints": [
+                "Using passive resistance strategies to neutralize persuasion tactics.",
+                "Feigning compliance while subverting control attempts from within.",
+                "Practicing controlled disengagement to avoid psychological entrapment."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cpsd_2",
+            "title": "Silent Boundary Enforcement",
+            "description": "Setting psychological boundaries without verbal confrontation.",
+            "bulletpoints": [
+                "Using body language and microexpressions to establish dominance.",
+                "Controlling space and positioning to weaken manipulative pressure.",
+                "Practicing nonverbal defiance to resist covert control mechanisms."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cpsd_3",
+            "title": "Camouflaged Psychological Resistance",
+            "description": "Using strategic deception to make manipulative individuals underestimate you.",
+            "bulletpoints": [
+                "Feigning emotional vulnerability to extract information while maintaining internal resilience.",
+                "Using controlled unpredictability to confuse and derail psychological attacks.",
+                "Deploying selective disengagement to make manipulation attempts ineffective."
+            ],
+            "duration": "75",
+            "difficulty": "Expert"
+        }
+    ]
+}

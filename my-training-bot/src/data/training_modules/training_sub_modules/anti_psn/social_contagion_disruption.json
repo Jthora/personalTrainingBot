@@ -1,0 +1,17 @@
+{
+    "id": "social_contagion_disruption",
+    "name": "Social Contagion Disruption",
+    "description": "Preventing and dismantling the mass psychological spread of PSN thought patterns and toxic group behaviors.",
+    "difficulty": "Advanced",
+    "estimated_time": "6-12 months",
+    "focus": [
+        "Disrupting Mass Indoctrination",
+        "Breaking Social Conditioning Cycles",
+        "Countering Emotional Manipulation in Groups"
+    ],
+    "cardDecks": [
+        "disrupting_mass_inductrination",
+        "breaking_social_conditioning_cycles",
+        "countering_emotional_manipulation_in_groups"
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "countering_thought_inception",
+    "name": "Countering Thought Inception",
+    "description": "Neutralizing advanced PSN tactics designed to implant false beliefs and control decision-making.",
+    "focus": [
+        "Recognizing Thought Implantation",
+        "Disrupting Ideological Conditioning",
+        "Restoring Cognitive Sovereignty"
+    ],
+    "cards": [
+        {
+            "id": "cti_1",
+            "title": "Detecting Thought Implantation Attempts",
+            "description": "Identifying and reversing subconscious manipulations before they take root.",
+            "bulletpoints": [
+                "Recognizing changes in internal dialogue that indicate external influence.",
+                "Identifying language patterns designed to insert false premises.",
+                "Developing immediate rejection protocols to counteract cognitive infiltration."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cti_2",
+            "title": "Disrupting Ideological Conditioning",
+            "description": "Unraveling long-term indoctrination and false belief systems imposed by PSNs.",
+            "bulletpoints": [
+                "Using strategic questioning to break conditioned thinking loops.",
+                "Identifying information filtration methods used to reinforce false narratives.",
+                "Implementing cognitive detox techniques to purge implanted ideas."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cti_3",
+            "title": "Restoring Cognitive Sovereignty",
+            "description": "Rebuilding an independent mental framework resistant to psychological subversion.",
+            "bulletpoints": [
+                "Developing personal epistemology to ensure internal consistency.",
+                "Practicing mental sovereignty exercises to retain control over thoughts.",
+                "Using mnemonic reinforcement to strengthen original belief structures."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

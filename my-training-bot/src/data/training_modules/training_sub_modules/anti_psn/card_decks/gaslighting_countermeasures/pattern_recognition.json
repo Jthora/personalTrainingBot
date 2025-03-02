@@ -1,0 +1,48 @@
+{
+    "id": "pattern_recognition",
+    "name": "Pattern Recognition",
+    "description": "Training to recognize recurring gaslighting tactics and identify early warning signs.",
+    "focus": [
+        "Identifying Gaslighting Patterns",
+        "Spotting Deceptive Language",
+        "Breaking Manipulative Loops"
+    ],
+    "cards": [
+        {
+            "id": "pr_1",
+            "title": "Recognizing Gaslighting Phrases",
+            "description": "Common phrases used by gaslighters and how to counter them.",
+            "bulletpoints": [
+                "Identifying dismissive statements meant to create self-doubt.",
+                "Recognizing deliberate contradictions used to keep you unbalanced.",
+                "Detecting deflection tactics designed to shift blame."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "pr_2",
+            "title": "Tracking Emotional Manipulation Loops",
+            "description": "Mapping out gaslighting cycles to predict and neutralize future attacks.",
+            "bulletpoints": [
+                "Recognizing the emotional rollercoaster strategy of alternating praise and criticism.",
+                "Understanding how gaslighters exploit inconsistencies in your memory.",
+                "Documenting manipulation attempts to expose behavioral patterns."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "pr_3",
+            "title": "Identifying Weaponized Confusion",
+            "description": "Learning to recognize when a conversation is being deliberately distorted.",
+            "bulletpoints": [
+                "Spotting when conversations are being reframed to change reality.",
+                "Recognizing circular logic traps meant to exhaust and disorient.",
+                "Countering the ‘changing the subject’ technique with strategic refocusing."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

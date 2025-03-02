@@ -1,0 +1,48 @@
+{
+    "id": "detecting_social_engineering_attacks",
+    "name": "Detecting Social Engineering Attacks",
+    "description": "Recognizing and neutralizing social engineering tactics used for psychological manipulation and cyber infiltration.",
+    "focus": [
+        "Identifying Manipulation Techniques",
+        "Defensive Countermeasures",
+        "Social Engineering Attack Vectors"
+    ],
+    "cards": [
+        {
+            "id": "dsea_1",
+            "title": "Recognizing Common Social Engineering Techniques",
+            "description": "Understanding the most frequently used methods to manipulate targets into revealing sensitive information.",
+            "bulletpoints": [
+                "Identifying phishing, pretexting, and baiting strategies.",
+                "Understanding human psychology in cyber attacks.",
+                "Analyzing real-world social engineering case studies."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "dsea_2",
+            "title": "Counteracting Psychological Manipulation",
+            "description": "Developing mental resilience against deception, coercion, and fear-based tactics.",
+            "bulletpoints": [
+                "Training in cognitive bias recognition.",
+                "Enhancing situational awareness and skepticism.",
+                "Implementing verification protocols for communication."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "dsea_3",
+            "title": "Exposing Social Engineering Networks",
+            "description": "Tracking and identifying large-scale social engineering operations and their operators.",
+            "bulletpoints": [
+                "Mapping out deceptive digital influence campaigns.",
+                "Investigating cyber-crime syndicates leveraging social engineering.",
+                "Detecting AI-driven manipulation patterns in online spaces."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

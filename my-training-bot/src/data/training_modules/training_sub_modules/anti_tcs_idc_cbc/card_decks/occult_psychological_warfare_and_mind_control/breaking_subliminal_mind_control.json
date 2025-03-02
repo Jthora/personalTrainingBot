@@ -1,0 +1,48 @@
+{
+    "id": "breaking_subliminal_mind_control",
+    "name": "Breaking Subliminal Mind Control",
+    "description": "Techniques for detecting and neutralizing subliminal messages, symbolic encoding, and subconscious manipulation tactics.",
+    "focus": [
+        "Identifying Subliminal Programming",
+        "Disrupting Covert Mental Influence",
+        "Counteracting Unconscious Conditioning"
+    ],
+    "cards": [
+        {
+            "id": "bsmc_1",
+            "title": "Decoding Subliminal Messaging in Media",
+            "description": "Recognizing how subconscious triggers are embedded in advertising, music, and film.",
+            "bulletpoints": [
+                "Understanding neuro-linguistic programming (NLP) used in mainstream media.",
+                "Detecting visual and auditory subliminal cues designed for behavioral control.",
+                "Training perception to consciously recognize otherwise unnoticed influences."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "bsmc_2",
+            "title": "Reverse Engineering Mind Control Triggers",
+            "description": "Dismantling the psychological anchors used to create automatic responses.",
+            "bulletpoints": [
+                "Identifying and deprogramming behavioral triggers installed through repetition.",
+                "Using conscious thought disruption techniques to neutralize hidden suggestions.",
+                "Reprogramming personal thought patterns for cognitive autonomy."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "bsmc_3",
+            "title": "Building Immunity Against Subliminal Influence",
+            "description": "Strengthening the mind’s defenses against external programming.",
+            "bulletpoints": [
+                "Practicing mental alertness drills to prevent subconscious conditioning.",
+                "Developing ‘pattern recognition’ techniques to detect external influence.",
+                "Implementing reality checks and critical thinking methods to resist manipulation."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

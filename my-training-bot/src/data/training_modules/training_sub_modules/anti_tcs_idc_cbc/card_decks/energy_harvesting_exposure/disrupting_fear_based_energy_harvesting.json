@@ -1,0 +1,48 @@
+{
+    "id": "disrupting_fear_based_energy_harvesting",
+    "name": "Disrupting Fear-Based Energy Harvesting",
+    "description": "Neutralizing tactics that exploit fear and suffering as a source of energy extraction.",
+    "focus": [
+        "Recognizing Fear-Based Energy Loops",
+        "Breaking the Psychological Fear Matrix",
+        "Reclaiming Emotional Autonomy"
+    ],
+    "cards": [
+        {
+            "id": "dfbeh_1",
+            "title": "Identifying Fear-Inducing Triggers",
+            "description": "Recognizing engineered fear responses designed to keep populations in a low vibrational state.",
+            "bulletpoints": [
+                "Understanding media-driven fear programming and psychological operations.",
+                "Identifying anxiety-inducing symbols and subliminal triggers in daily life.",
+                "Decoding the use of traumatic world events as collective energy siphons."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "dfbeh_2",
+            "title": "Psychological Armor Against Fear Manipulation",
+            "description": "Techniques to nullify emotional hijacking and break free from imposed fear states.",
+            "bulletpoints": [
+                "Developing mental resilience to reject imposed fear-based narratives.",
+                "Utilizing controlled breathing and visualization to override panic triggers.",
+                "Reframing fear-driven messaging into empowerment-based perspectives."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "dfbeh_3",
+            "title": "Dismantling Fear-Based Social Constructs",
+            "description": "Challenging societal structures that reinforce fear and control.",
+            "bulletpoints": [
+                "Analyzing historical and modern fear-based control mechanisms.",
+                "Exposing how mass fear creates compliance and submission.",
+                "Rebuilding personal sovereignty through cognitive rewiring."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

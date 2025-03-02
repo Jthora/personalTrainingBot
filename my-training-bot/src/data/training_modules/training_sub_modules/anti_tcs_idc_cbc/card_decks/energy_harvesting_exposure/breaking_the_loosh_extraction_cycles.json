@@ -1,0 +1,48 @@
+{
+    "id": "breaking_the_loosh_extraction_cycles",
+    "name": "Breaking the Loosh Extraction Cycles",
+    "description": "Exposing and neutralizing systems designed to extract psychic and emotional energy from individuals and groups.",
+    "focus": [
+        "Understanding Loosh Harvesting Mechanisms",
+        "Breaking the Cycle of Emotional Drain",
+        "Energy Sovereignty and Protection"
+    ],
+    "cards": [
+        {
+            "id": "blec_1",
+            "title": "Unveiling Loosh Collection Mechanisms",
+            "description": "Revealing the invisible systems that siphon human emotional and psychic energy.",
+            "bulletpoints": [
+                "Mapping out locations and events used for mass energy harvesting.",
+                "Recognizing emotional manipulation tactics that induce loosh production.",
+                "Tracking elite rituals and corporate structures linked to energy siphoning."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "blec_2",
+            "title": "Breaking Free from Loosh Farming Systems",
+            "description": "Techniques for cutting off energy supply chains used by the IDC.",
+            "bulletpoints": [
+                "Strengthening personal energy fields to prevent unauthorized siphoning.",
+                "Practicing emotional transmutation to redirect loosh-based triggers.",
+                "Detaching from external validation cycles that reinforce energy extraction."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "blec_3",
+            "title": "Reclaiming Your Personal Energy",
+            "description": "Establishing energetic autonomy and severing ties to loosh-extracting systems.",
+            "bulletpoints": [
+                "Developing daily practices to reinforce self-sustained energetic integrity.",
+                "Using ritual deprogramming to break psychic contracts enabling energy theft.",
+                "Harnessing self-awareness to reclaim personal emotional and psychic power."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

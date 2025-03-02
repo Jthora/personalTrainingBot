@@ -1,0 +1,17 @@
+{
+    "id": "recruiting_psn_defectors",
+    "name": "Recruiting PSN Defectors",
+    "description": "Turning key figures who were once PSN-aligned into allies against the larger system.",
+    "difficulty": "Expert",
+    "estimated_time": "9-18 months",
+    "focus": [
+        "Psychological Conversion Strategies",
+        "Identifying Redeemable Individuals",
+        "Leveraging Internal Sabotage"
+    ],
+    "cardDecks": [
+        "psychological_conversion_strategies",
+        "identifying_redeemable_individuals",
+        "leveraging_internal_sabotage"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "id": "human_trafficking_disruption_tactics",
+    "name": "Human Trafficking Disruption Tactics",
+    "description": "A tactical approach to exposing and dismantling human trafficking networks operating under the control of TCS and IDC.",
+    "difficulty": "Advanced",
+    "estimated_time": "6-16 weeks",
+    "focus": [
+        "Identifying Human Trafficking Patterns",
+        "Rescue and Disruption Strategies",
+        "Tracking and Exposing Elite Networks"
+    ],
+    "cardDecks": [
+        "detecting_victim_signals",
+        "analyzing_trafficker_patterns",
+        "covert_investigation_and_whistleblowing"
+    ]
+}

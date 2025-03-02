@@ -1,0 +1,48 @@
+{
+    "id": "narcissist_proofing_your_life",
+    "name": "Narcissist Proofing Your Life",
+    "description": "Developing a personal and professional life structure that is impenetrable to Psychopaths, Sociopaths, and Narcissists.",
+    "focus": [
+        "Boundary Enforcement",
+        "Social Vetting Systems",
+        "Psychological Immunity"
+    ],
+    "cards": [
+        {
+            "id": "npyl_1",
+            "title": "Building Unbreakable Boundaries",
+            "description": "Establishing and reinforcing personal boundaries that narcissists cannot manipulate.",
+            "bulletpoints": [
+                "Identifying and fortifying weak spots in your personal boundaries.",
+                "Using verbal and non-verbal cues to enforce clear psychological distance.",
+                "Deploying zero-tolerance policies for emotional manipulation and gaslighting."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "npyl_2",
+            "title": "Social Circle and Relationship Vetting",
+            "description": "Implementing a filtering process to prevent toxic individuals from entering your life.",
+            "bulletpoints": [
+                "Recognizing red flags early before emotional investment occurs.",
+                "Developing a step-by-step trust test for new relationships.",
+                "Utilizing controlled disclosures to gauge emotional safety."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "npyl_3",
+            "title": "The Psychological Firewall",
+            "description": "Training your mind to instinctively detect and reject narcissistic manipulation.",
+            "bulletpoints": [
+                "Installing subconscious pattern recognition for PSN behaviors.",
+                "Building emotional resilience to resist love-bombing and false validation.",
+                "Mastering mental disengagement from narcissistic projections and distortions."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

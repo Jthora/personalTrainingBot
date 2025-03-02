@@ -1,0 +1,48 @@
+{
+    "id": "exposing_cult_financial_backers",
+    "name": "Exposing Cult Financial Backers",
+    "description": "Tracing the financial networks that sustain the International Death Cult’s influence.",
+    "focus": [
+        "Elite Financial Control Systems",
+        "Dark Money Laundering Networks",
+        "Funding Streams for Psychological and Covert Warfare"
+    ],
+    "cards": [
+        {
+            "id": "ecfb_1",
+            "title": "Black Budget and Covert Funding Operations",
+            "description": "Revealing how clandestine funds finance intelligence and black operations.",
+            "bulletpoints": [
+                "Uncovering the role of classified military budgets in funding control systems.",
+                "Exposing the use of shell corporations and offshore accounts.",
+                "Tracking how black money is funneled into secret projects and cult-controlled initiatives."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "ecfb_2",
+            "title": "Banking Cartels and Centralized Financial Domination",
+            "description": "Analyzing how international banking institutions enable global elite control.",
+            "bulletpoints": [
+                "Tracing the lineage of private central banking institutions.",
+                "Understanding how debt slavery and economic manipulation maintain control.",
+                "Investigating financial collapses and engineered crises as power consolidation tools."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "ecfb_3",
+            "title": "Corporate and NGO Financial Conduits",
+            "description": "Examining how ‘philanthropic’ organizations serve as front groups for elite operations.",
+            "bulletpoints": [
+                "Identifying the role of NGOs in money laundering and regime change operations.",
+                "Investigating the funding of media, academic institutions, and political movements.",
+                "Tracking billionaire-funded influence networks that steer global agendas."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

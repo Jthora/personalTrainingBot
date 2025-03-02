@@ -1,0 +1,48 @@
+{
+    "id": "leveraging_social_resistance_movements",
+    "name": "Leveraging Social Resistance Movements",
+    "description": "Empowering grassroots movements to resist and replace PSN-controlled institutions.",
+    "focus": [
+        "Mobilizing Collective Action",
+        "Building Decentralized Power Structures",
+        "Disrupting Systemic Corruption"
+    ],
+    "cards": [
+        {
+            "id": "psn_resistance_1",
+            "title": "Covertly Organizing Counter-Movements",
+            "description": "Seeding and guiding social movements without exposing leadership roles.",
+            "bulletpoints": [
+                "Establishing decentralized leadership models to prevent infiltration.",
+                "Creating overlapping networks of resistance cells that operate independently.",
+                "Using encrypted communications to coordinate actions securely."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psn_resistance_2",
+            "title": "Economic Warfare Through Boycotts and Parallel Systems",
+            "description": "Undermining PSN economic control by shifting financial power.",
+            "bulletpoints": [
+                "Encouraging mass financial withdrawals from PSN-controlled banks.",
+                "Building alternative economic systems that bypass traditional institutions.",
+                "Disrupting PSN revenue streams by organizing coordinated boycotts."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psn_resistance_3",
+            "title": "Replacing PSN-Controlled Governance Structures",
+            "description": "Constructing new, independent systems of governance to supersede PSN rule.",
+            "bulletpoints": [
+                "Forming independent councils and legal structures outside their jurisdiction.",
+                "Building self-sufficient communities that reject centralized authority.",
+                "Developing digital governance models that resist external control."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

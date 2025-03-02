@@ -1,0 +1,48 @@
+{
+    "id": "spiritual_self_defense_and_energy_protection",
+    "name": "Spiritual Self-Defense and Energy Protection",
+    "description": "Training in shielding techniques and energetic sovereignty to defend against psychic, ritualistic, and esoteric attacks.",
+    "focus": [
+        "Energy Shielding and Spiritual Protection",
+        "Disrupting Ritualistic Psychic Influence",
+        "Maintaining Energetic Sovereignty"
+    ],
+    "cards": [
+        {
+            "id": "ssdep_1",
+            "title": "Understanding Spiritual Attacks and Energetic Warfare",
+            "description": "Recognizing when energy manipulation tactics are being used to control or weaken individuals.",
+            "bulletpoints": [
+                "Identifying ritual-based energetic programming.",
+                "Understanding psychic energy extraction tactics.",
+                "Analyzing historical esoteric control systems."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ssdep_2",
+            "title": "Techniques for Spiritual Shielding",
+            "description": "Methods for creating, maintaining, and reinforcing spiritual protection barriers.",
+            "bulletpoints": [
+                "Developing personal energy fields and aura cleansing.",
+                "Using sigils, symbols, and intent-based protections.",
+                "Neutralizing directed spiritual or energetic attacks."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "ssdep_3",
+            "title": "Reclaiming Energetic Sovereignty",
+            "description": "Methods for reinforcing inner strength, sovereignty, and breaking energetic chains of manipulation.",
+            "bulletpoints": [
+                "Severing ritual-based energetic bindings and oaths.",
+                "Reclaiming lost personal energy and restoring balance.",
+                "Strengthening internal willpower against esoteric coercion."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

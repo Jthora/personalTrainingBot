@@ -1,0 +1,48 @@
+{
+    "id": "power_and_control_mechanisms",
+    "name": "Power and Control Mechanisms",
+    "description": "Analyzing how these personalities establish, maintain, and defend their control structures.",
+    "focus": [
+        "Organizational Control",
+        "Power Dynamics",
+        "Defensive Countermeasures"
+    ],
+    "cards": [
+        {
+            "id": "pcm_1",
+            "title": "Psychopaths in Positions of Power",
+            "description": "Understanding how psychopaths infiltrate and maintain authority in organizations.",
+            "bulletpoints": [
+                "Psychopaths often hold high-ranking positions in corporations, politics, and law enforcement.",
+                "They create networks of loyal subordinates who follow them without question.",
+                "Eliminating their influence requires exposing their unethical or illegal behaviors to their superiors."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "pcm_2",
+            "title": "Sociopaths and Street-Level Control",
+            "description": "How sociopaths dominate environments through intimidation and violence.",
+            "bulletpoints": [
+                "Sociopaths maintain power through physical intimidation and erratic aggression.",
+                "They lack long-term vision but use extreme loyalty to maintain their position.",
+                "Disrupting their control involves isolating them from their support structure."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "pcm_3",
+            "title": "Narcissists in Social Leadership",
+            "description": "How narcissists manipulate and leverage social dynamics for influence.",
+            "bulletpoints": [
+                "Narcissists use charm and persuasion to rise in social hierarchies.",
+                "They create smear campaigns to eliminate rivals and maintain dominance.",
+                "Undermining their power requires exposing their contradictions and ego-driven failures."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

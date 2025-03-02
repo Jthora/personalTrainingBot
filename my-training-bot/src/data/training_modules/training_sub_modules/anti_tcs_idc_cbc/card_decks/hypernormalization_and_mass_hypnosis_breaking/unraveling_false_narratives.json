@@ -1,0 +1,48 @@
+{
+    "id": "unraveling_false_narratives",
+    "name": "Unraveling False Narratives",
+    "description": "Identifying, analyzing, and deconstructing the false narratives used to control mass perception.",
+    "focus": [
+        "Media Manipulation Tactics",
+        "Dissecting Official Narratives",
+        "Cognitive Dissonance Resolution"
+    ],
+    "cards": [
+        {
+            "id": "ufn_1",
+            "title": "Recognizing State-Sanctioned Misinformation",
+            "description": "Understanding how governments, institutions, and corporations manufacture consent.",
+            "bulletpoints": [
+                "Analyzing mainstream media scripts and repetition cycles.",
+                "Identifying psychological priming and cognitive framing techniques.",
+                "Tracing the financial and ideological backers of major media outlets."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ufn_2",
+            "title": "Exposing Historical Fabrications",
+            "description": "Challenging false history and exposing revisionist narratives.",
+            "bulletpoints": [
+                "Investigating manipulated historical accounts that serve elite agendas.",
+                "Tracing the suppression of alternative historical perspectives.",
+                "Understanding how mass amnesia is engineered through controlled education."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "ufn_3",
+            "title": "Countering False Flags and Psychological Operations",
+            "description": "Deconstructing crisis events designed to manipulate the public.",
+            "bulletpoints": [
+                "Identifying common markers of staged or exaggerated crisis events.",
+                "Understanding how trauma-based programming is used to create obedience.",
+                "Techniques for maintaining critical thinking in high-emotion scenarios."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

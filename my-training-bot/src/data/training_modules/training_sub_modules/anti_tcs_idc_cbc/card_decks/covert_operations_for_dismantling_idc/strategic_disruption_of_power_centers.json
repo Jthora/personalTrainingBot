@@ -1,0 +1,48 @@
+{
+    "id": "strategic_disruption_of_power_centers",
+    "name": "Strategic Disruption of Power Centers",
+    "description": "High-level methodologies for sabotaging IDC command structures and dismantling their operations.",
+    "focus": [
+        "Identifying and Exploiting Weaknesses",
+        "Disrupting Hierarchical Control",
+        "Strategic Undermining of Key Figures"
+    ],
+    "cards": [
+        {
+            "id": "sdpc_1",
+            "title": "Identifying Structural Weaknesses in IDC Networks",
+            "description": "Analyzing and exploiting hidden fractures within IDC-controlled institutions.",
+            "bulletpoints": [
+                "Mapping out internal power struggles and conflicts.",
+                "Leveraging factional divisions to create controlled chaos.",
+                "Targeting communication weak points to disrupt coordination."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "sdpc_2",
+            "title": "Sabotaging Hierarchical Command Chains",
+            "description": "Techniques for systematically eroding an IDC organization’s chain of command.",
+            "bulletpoints": [
+                "Manipulating internal politics to create dissent.",
+                "Disrupting leadership trust through fabricated intelligence leaks.",
+                "Orchestrating ‘controlled collapses’ of leadership structures."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "sdpc_3",
+            "title": "Neutralizing Key Operatives Without Direct Confrontation",
+            "description": "Methods to remove or neutralize high-value targets without risk of exposure.",
+            "bulletpoints": [
+                "Using counter-intelligence to expose their vulnerabilities.",
+                "Deploying reputational attacks to erode public and internal trust.",
+                "Strategic misdirection to push adversaries into self-destruction."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

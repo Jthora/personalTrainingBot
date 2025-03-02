@@ -1,0 +1,48 @@
+{
+    "id": "breaking_the_reward_punishment_cycle",
+    "name": "Breaking the Reward-Punishment Cycle",
+    "description": "Disrupting the psychological conditioning that keeps people trapped in abusive emotional loops.",
+    "focus": [
+        "Undoing Psychological Conditioning",
+        "Rejecting Manipulative Reinforcement Loops",
+        "Rebuilding Emotional Self-Regulation"
+    ],
+    "cards": [
+        {
+            "id": "brpc_1",
+            "title": "Understanding the PSN Reinforcement System",
+            "description": "Breaking down the methods PSNs use to condition their victims.",
+            "bulletpoints": [
+                "Identifying the cycle of love-bombing, devaluation, and discarding.",
+                "Recognizing when positive reinforcement is being used as a control mechanism.",
+                "Developing conscious resistance to intermittent validation tactics."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "brpc_2",
+            "title": "Disrupting the Emotional Reward System",
+            "description": "Replacing PSN-induced emotional highs and lows with balanced self-regulation.",
+            "bulletpoints": [
+                "Using self-generated validation to reduce dependency on external emotional rewards.",
+                "Practicing emotional neutrality to prevent manipulation from guilt or flattery.",
+                "Rewiring dopamine responses to activate through self-driven activities rather than PSN interactions."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "brpc_3",
+            "title": "Rejecting Trauma-Based Conditioning",
+            "description": "Neutralizing the subconscious programming that PSNs instill through repetition and fear.",
+            "bulletpoints": [
+                "Interrupting trauma loops through conscious redirection techniques.",
+                "Using meditation and breathing exercises to counteract emotional triggers.",
+                "Developing an autonomous mental framework that prevents external influence."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

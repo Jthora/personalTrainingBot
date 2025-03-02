@@ -1,0 +1,48 @@
+{
+    "id": "counter_extortion_and_leverage_defense",
+    "name": "Counter-Extortion and Leverage Defense",
+    "description": "Developing personal and organizational immunity to blackmail-based control.",
+    "focus": [
+        "Building Resilience Against Psychological Attacks",
+        "Neutralizing Leverage Through Exposure",
+        "Creating Counter-Networks for Defense"
+    ],
+    "cards": [
+        {
+            "id": "celd_1",
+            "title": "Neutralizing Leverage Through Preemptive Exposure",
+            "description": "Destroying the power of blackmail before it can be weaponized.",
+            "bulletpoints": [
+                "Using controlled disclosure to eliminate blackmail potential.",
+                "Flipping public perception by reframing the narrative.",
+                "Creating evidence trails that counteract false kompromat."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "celd_2",
+            "title": "Psychological Resilience Against Coercion",
+            "description": "Training in mental fortitude to resist psychological warfare tactics.",
+            "bulletpoints": [
+                "Building a mindset immune to shame-based control mechanisms.",
+                "Practicing strategic non-reactivity in high-pressure situations.",
+                "Utilizing counter-interrogation tactics to avoid verbal entrapment."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "celd_3",
+            "title": "Forming Counter-Networks for Protection",
+            "description": "Creating alliances that counteract elite blackmail structures.",
+            "bulletpoints": [
+                "Building decentralized communities resistant to infiltration.",
+                "Developing independent economic systems to bypass financial control.",
+                "Establishing trust networks that minimize individual vulnerabilities."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

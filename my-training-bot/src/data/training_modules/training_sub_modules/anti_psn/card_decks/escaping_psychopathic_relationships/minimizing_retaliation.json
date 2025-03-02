@@ -1,0 +1,48 @@
+{
+    "id": "minimizing_retaliation",
+    "name": "Minimizing Retaliation",
+    "description": "Strategies for preventing and mitigating retaliation attempts from a PSN after leaving.",
+    "focus": [
+        "Avoiding Psychological and Physical Retaliation",
+        "Legal and Social Protection Measures",
+        "Building Defensive Layers"
+    ],
+    "cards": [
+        {
+            "id": "mr_1",
+            "title": "Digital and Legal Disentanglement",
+            "description": "Cutting all digital, legal, and financial ties to prevent leverage.",
+            "bulletpoints": [
+                "Changing all passwords, security questions, and digital footprints before leaving.",
+                "Securing restraining orders and legal protection where necessary.",
+                "Using anonymous digital tools to avoid cyberstalking and tracking."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mr_2",
+            "title": "Countering Smear Campaigns",
+            "description": "Neutralizing defamation attempts and false narratives post-exit.",
+            "bulletpoints": [
+                "Preemptively informing key allies about possible false accusations.",
+                "Gathering evidence before leaving to counter potential legal attacks.",
+                "Using controlled silence to prevent giving them more ammunition."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mr_3",
+            "title": "Physical and Emotional Safety Measures",
+            "description": "Ensuring security against physical, social, and emotional retaliation.",
+            "bulletpoints": [
+                "Avoiding predictable routines that can be tracked.",
+                "Building strong support networks to prevent emotional reattachment.",
+                "Creating a rapid response plan for unexpected confrontations."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

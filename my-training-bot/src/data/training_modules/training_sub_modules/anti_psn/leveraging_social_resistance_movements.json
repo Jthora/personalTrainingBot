@@ -1,0 +1,17 @@
+{
+    "id": "leveraging_social_resistance_movements",
+    "name": "Leveraging Social Resistance Movements",
+    "description": "Uniting and empowering grassroots resistance movements to combat PSN infiltration.",
+    "difficulty": "Advanced",
+    "estimated_time": "6-12 months",
+    "focus": [
+        "Activating Collective Resistance",
+        "Tactical Networking Against PSNs",
+        "Community-Based Psychological Defense"
+    ],
+    "cardDecks": [
+        "activating_collective_resistance",
+        "tactical_networking_against_psns",
+        "community_based_psychological_defense"
+    ]
+}

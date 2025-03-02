@@ -1,0 +1,48 @@
+{
+    "id": "unmasking_tax_haven_operations",
+    "name": "Unmasking Tax Haven Operations",
+    "description": "Revealing the hidden financial ecosystems that allow elite groups to evade taxation and launder illicit wealth.",
+    "focus": [
+        "Identifying Offshore Banking Hubs",
+        "Analyzing Shell Companies",
+        "Tracking Tax Evasion Networks"
+    ],
+    "cards": [
+        {
+            "id": "uth_1",
+            "title": "How Tax Havens Enable Financial Secrecy",
+            "description": "Examining the legal and extralegal mechanisms that protect illicit wealth.",
+            "bulletpoints": [
+                "Understanding the role of jurisdictions like the Cayman Islands, Luxembourg, and the British Virgin Islands.",
+                "Identifying regulatory loopholes that allow asset shielding.",
+                "Mapping the relationship between elite banking and offshore entities."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "uth_2",
+            "title": "Shell Companies and Proxy Ownership",
+            "description": "Deciphering the use of legal entities to obscure ownership and facilitate corruption.",
+            "bulletpoints": [
+                "Tracking beneficial ownership structures in offshore accounts.",
+                "Understanding the interplay between front companies and illicit finance.",
+                "Analyzing case studies of corporate shell games."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "uth_3",
+            "title": "Investigating Financial Leaks and Whistleblower Data",
+            "description": "Using leaked data to expose hidden tax havens and elite money movements.",
+            "bulletpoints": [
+                "Examining the Panama Papers, Paradise Papers, and other major leaks.",
+                "Utilizing OSINT tools to track financial anomalies.",
+                "Coordinating investigative strategies to disrupt illicit financial networks."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

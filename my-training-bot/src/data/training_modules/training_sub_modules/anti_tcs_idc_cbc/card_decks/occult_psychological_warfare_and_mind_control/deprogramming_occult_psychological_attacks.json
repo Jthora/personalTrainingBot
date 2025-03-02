@@ -1,0 +1,48 @@
+{
+    "id": "deprogramming_occult_psychological_attacks",
+    "name": "Deprogramming Occult Psychological Attacks",
+    "description": "Strategies to detect, resist, and reverse engineered occult-based psychological assaults.",
+    "focus": [
+        "Occult Psychological Warfare",
+        "Trauma-Based Manipulation",
+        "Mental Fortification Techniques"
+    ],
+    "cards": [
+        {
+            "id": "dopa_1",
+            "title": "Recognizing Occult Psychological Warfare Tactics",
+            "description": "Understanding how esoteric knowledge is weaponized for psychological control.",
+            "bulletpoints": [
+                "Analyzing symbolic encoding in controlled narratives.",
+                "Detecting trauma reinforcement techniques used in mind control programming.",
+                "Identifying fear-based manipulation tactics designed to create obedience."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "dopa_2",
+            "title": "Neutralizing Trauma-Based Mind Control",
+            "description": "Breaking the cycle of trauma reinforcement and cognitive dissonance.",
+            "bulletpoints": [
+                "Reversing the psychological effects of engineered trauma responses.",
+                "Using emotional detachment techniques to remove the impact of psychological conditioning.",
+                "Applying self-hypnosis and guided mental exercises to reclaim autonomy."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "dopa_3",
+            "title": "Psychic Armor and Mental Shielding",
+            "description": "Building internal defenses against psychological and energetic attacks.",
+            "bulletpoints": [
+                "Developing cognitive shielding against external influence.",
+                "Using visualization and reinforcement techniques to fortify mental barriers.",
+                "Employing energetic grounding practices to maintain mental stability."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

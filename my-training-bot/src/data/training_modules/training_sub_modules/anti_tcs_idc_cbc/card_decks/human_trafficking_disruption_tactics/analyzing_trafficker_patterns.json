@@ -1,0 +1,48 @@
+{
+    "id": "analyzing_trafficker_patterns",
+    "name": "Analyzing Trafficker Patterns",
+    "description": "Identifying key behaviors, operational methods, and communication tactics used by human traffickers.",
+    "focus": [
+        "Recruitment and Grooming Tactics",
+        "Operational Logistics of Trafficking Rings",
+        "Trafficker Digital Footprints and Networks"
+    ],
+    "cards": [
+        {
+            "id": "atp_1",
+            "title": "Recruitment and Grooming Strategies",
+            "description": "Understanding how traffickers lure and manipulate their victims.",
+            "bulletpoints": [
+                "Common recruitment methods: online grooming, fake job offers, and coercion.",
+                "Identifying traffickers' use of psychological dependency and false promises.",
+                "The role of family members, trusted friends, and 'Romeo Pimps' in recruitment."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "atp_2",
+            "title": "Operational Logistics of Trafficking Rings",
+            "description": "Mapping out the movement of victims and traffickers across regions.",
+            "bulletpoints": [
+                "Understanding transit routes: airports, highways, border crossings, and seaports.",
+                "Identifying high-risk locations used as trafficking hubs or holding areas.",
+                "Recognizing the use of fraudulent documentation, fake passports, and visas."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "atp_3",
+            "title": "Tracking Digital Footprints",
+            "description": "How traffickers use technology and online platforms to conduct their operations.",
+            "bulletpoints": [
+                "Dark web forums, encrypted messaging apps, and coded language in public social media posts.",
+                "Identifying classified ads and job postings used as fronts for trafficking.",
+                "Recognizing cryptocurrency transactions and financial laundering techniques tied to trafficking."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "weaponizing_truth_against_psn_control",
+    "name": "Weaponizing Truth Against PSN Control",
+    "description": "Using strategic truth deployment to disrupt manipulative narratives and expose PSN deception.",
+    "focus": [
+        "Truth as a Psychological Weapon",
+        "Countering Disinformation",
+        "Strategic Exposure Techniques"
+    ],
+    "cards": [
+        {
+            "id": "wtapc_1",
+            "title": "Precision Truth Bombing",
+            "description": "Releasing undeniable truths at key moments to undermine PSN control.",
+            "bulletpoints": [
+                "Identifying psychological choke points where truth inflicts maximum damage.",
+                "Using evidence stacking to build irrefutable counter-narratives.",
+                "Timing truth drops for maximum psychological impact."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "wtapc_2",
+            "title": "The Mirror Effect",
+            "description": "Forcing PSNs to confront their own contradictions and lies.",
+            "bulletpoints": [
+                "Using their own words and actions against them to reveal hypocrisy.",
+                "Creating scenarios that expose their manipulative tactics in real time.",
+                "Weaponizing public perception to dismantle their credibility."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "wtapc_3",
+            "title": "Narrative Redirection Warfare",
+            "description": "Redirecting false PSN narratives toward self-destruction.",
+            "bulletpoints": [
+                "Exploiting weaknesses in their messaging to fracture their influence.",
+                "Introducing counter-narratives that force cognitive dissonance.",
+                "Leading their followers to question their legitimacy through Socratic dialogue."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

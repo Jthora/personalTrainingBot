@@ -1,0 +1,48 @@
+{
+    "id": "identifying_redeemable_individuals",
+    "name": "Identifying Redeemable Individuals",
+    "description": "How to determine which PSN operatives can be turned and which ones are irredeemable threats.",
+    "focus": [
+        "Assessing Psychological Flexibility",
+        "Analyzing Loyalty Structures",
+        "Spotting Disillusionment"
+    ],
+    "cards": [
+        {
+            "id": "iri_1",
+            "title": "The Fence-Sitters",
+            "description": "Detecting those who are ideologically aligned but lack deep commitment.",
+            "bulletpoints": [
+                "Many PSN recruits adopt beliefs as a survival mechanism rather than true conviction.",
+                "Observing inconsistent behavior reveals potential doubts in their commitment.",
+                "Those who hesitate when executing PSN doctrine are prime candidates for conversion."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "iri_2",
+            "title": "The Disillusioned",
+            "description": "Finding operatives who have already experienced betrayal within the PSN system.",
+            "bulletpoints": [
+                "PSNs use loyalty until it is no longer convenient—many members become disposable assets.",
+                "Identifying those who have been discarded or mistreated creates opportunities for defection.",
+                "Exposing hidden betrayals within the organization fuels discontent."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "iri_3",
+            "title": "The Loyal but Discontent",
+            "description": "Recognizing those who outwardly support the PSN structure but harbor internal grievances.",
+            "bulletpoints": [
+                "High-ranking PSNs often grow frustrated with internal politics and power struggles.",
+                "Providing an alternative that offers them more personal agency increases defection likelihood.",
+                "Appealing to their self-interest can override ideological loyalty."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

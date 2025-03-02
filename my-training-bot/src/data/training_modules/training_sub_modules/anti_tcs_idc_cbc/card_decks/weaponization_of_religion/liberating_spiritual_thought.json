@@ -1,0 +1,48 @@
+{
+    "id": "liberating_spiritual_thought",
+    "name": "Liberating Spiritual Thought",
+    "description": "Breaking free from religious indoctrination and reclaiming personal spiritual sovereignty.",
+    "focus": [
+        "Reconstructing Authentic Spirituality",
+        "Deprogramming Religious Fear Tactics",
+        "Restoring Individual Spiritual Sovereignty"
+    ],
+    "cards": [
+        {
+            "id": "lst_1",
+            "title": "Deprogramming Religious Fear Tactics",
+            "description": "Understanding how fear-based religious narratives shape behavior and how to break free from them.",
+            "bulletpoints": [
+                "Recognizing trauma-based indoctrination techniques.",
+                "How hell, sin, and divine punishment are used to control belief systems.",
+                "Methods for neutralizing fear-based conditioning."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "lst_2",
+            "title": "Reconstructing Authentic Spirituality",
+            "description": "Rebuilding a spiritual framework that is independent of institutional control.",
+            "bulletpoints": [
+                "Separating authentic spiritual experiences from indoctrinated beliefs.",
+                "Exploring direct communion with the divine without intermediaries.",
+                "How to cultivate self-derived spiritual wisdom."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "lst_3",
+            "title": "Restoring Individual Spiritual Sovereignty",
+            "description": "Empowering individuals to reclaim their personal spiritual path.",
+            "bulletpoints": [
+                "Understanding how to build a personal, independent connection with the divine.",
+                "Developing critical thinking in spiritual matters.",
+                "Removing the dependency on external religious authority figures."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

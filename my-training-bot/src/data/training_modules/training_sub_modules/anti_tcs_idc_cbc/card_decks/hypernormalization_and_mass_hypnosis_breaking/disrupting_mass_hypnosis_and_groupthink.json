@@ -1,0 +1,48 @@
+{
+    "id": "disrupting_mass_hypnosis_and_groupthink",
+    "name": "Disrupting Mass Hypnosis and Groupthink",
+    "description": "Neutralizing large-scale psychological manipulation and restoring free thought.",
+    "focus": [
+        "Breaking Collective Thought Control",
+        "Overcoming Hypnotic Influence",
+        "Challenging Groupthink and Echo Chambers"
+    ],
+    "cards": [
+        {
+            "id": "dmhg_1",
+            "title": "Recognizing Mass Hypnosis Techniques",
+            "description": "Identifying linguistic and symbolic hypnotic triggers in propaganda.",
+            "bulletpoints": [
+                "Breaking down the repetition patterns used in mind control.",
+                "Understanding NLP (Neuro-Linguistic Programming) in mass messaging.",
+                "Recognizing hypnotic anchoring techniques in news, speeches, and films."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "dmhg_2",
+            "title": "Escaping the Echo Chamber Effect",
+            "description": "Avoiding psychological reinforcement loops that trap people in false paradigms.",
+            "bulletpoints": [
+                "How social media algorithms reinforce ideological cages.",
+                "Disrupting digital echo chambers without triggering mass rejection.",
+                "Techniques for balanced information consumption."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "dmhg_3",
+            "title": "Counteracting Hypnotic Messaging",
+            "description": "Developing techniques to neutralize and reverse hypnotic influence.",
+            "bulletpoints": [
+                "Creating cognitive immunity against subliminal messaging.",
+                "Breaking the cycle of emotional manipulation in mass communication.",
+                "Using counter-messaging to disrupt propaganda at scale."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

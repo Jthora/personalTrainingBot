@@ -1,0 +1,48 @@
+{
+    "id": "countering_mass_psychic_energy_extraction",
+    "name": "Countering Mass Psychic Energy Extraction",
+    "description": "Neutralizing large-scale energy extraction operations and defending against mass psychological control techniques.",
+    "focus": [
+        "Mass Consciousness Manipulation",
+        "Energetic Grid and Frequency Attacks",
+        "Collective Protection and Reprogramming"
+    ],
+    "cards": [
+        {
+            "id": "cmpee_1",
+            "title": "Recognizing Mass Energy Draining Events",
+            "description": "Detecting large-scale rituals and global energy harvesting operations.",
+            "bulletpoints": [
+                "Tracking how fear-based media cycles extract psychic energy.",
+                "Identifying global event patterns linked to collective loosh harvesting.",
+                "Detecting controlled energy vortexes used for mass extraction."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cmpee_2",
+            "title": "Counteracting Mass Psychic Warfare",
+            "description": "Defending against intentional energetic manipulation of the global consciousness.",
+            "bulletpoints": [
+                "Using group meditative shielding to neutralize external psychic attacks.",
+                "Developing advanced psionic defense techniques to protect against mind influence.",
+                "Leveraging sound frequencies, symbols, and coded language for protection."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cmpee_3",
+            "title": "Rewriting the Collective Frequency Field",
+            "description": "Reclaiming mass consciousness by shifting global vibrational patterns.",
+            "bulletpoints": [
+                "Generating mass counter-narratives that disrupt fear-based programming.",
+                "Harnessing high-frequency media, music, and symbols for collective healing.",
+                "Orchestrating synchronized resistance movements through frequency warfare."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

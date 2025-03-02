@@ -1,0 +1,48 @@
+{
+    "id": "hierarchical_power_structure_analysis",
+    "name": "Hierarchical Power Structure Analysis",
+    "description": "Understanding the mechanisms of hierarchical control and how PSNs embed themselves within power structures.",
+    "focus": [
+        "Decoding Organizational Power",
+        "Identifying Key Control Nodes",
+        "Recognizing Hidden Power Brokers"
+    ],
+    "cards": [
+        {
+            "id": "hpsa_1",
+            "title": "Decoding Power Dynamics",
+            "description": "Recognizing overt and covert power structures within organizations.",
+            "bulletpoints": [
+                "Formal hierarchies differ from shadow power structures where true control resides.",
+                "Narcissistic leaders often manipulate rules to maintain dominance.",
+                "Understanding chain-of-command manipulation helps predict PSN tactics."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "hpsa_2",
+            "title": "Spotting Manipulative Leadership Strategies",
+            "description": "How PSNs maintain control over groups using social engineering.",
+            "bulletpoints": [
+                "They install loyal subordinates who act as enforcers and gatekeepers.",
+                "They use plausible deniability to shield themselves from accountability.",
+                "Cult-like loyalty structures keep subordinates from questioning their authority."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "hpsa_3",
+            "title": "Controlled Opposition and Double Agents",
+            "description": "Identifying infiltrators placed to neutralize threats within resistance movements.",
+            "bulletpoints": [
+                "PSNs plant controlled opposition to monitor and mislead dissidents.",
+                "Watch for individuals who discourage action while pretending to support change.",
+                "Double agents often shift narratives to favor power retention strategies."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

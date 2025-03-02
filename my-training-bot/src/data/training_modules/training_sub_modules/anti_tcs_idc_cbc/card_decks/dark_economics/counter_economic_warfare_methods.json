@@ -1,0 +1,48 @@
+{
+    "id": "counter_economic_warfare_methods",
+    "name": "Counter Economic Warfare Methods",
+    "description": "Strategies to identify, counteract, and disrupt economic manipulation tactics used by elite global entities.",
+    "focus": [
+        "Sanctions and Financial Weaponization",
+        "Stock Market Manipulation",
+        "Crypto and Decentralized Finance Warfare"
+    ],
+    "cards": [
+        {
+            "id": "cewm_1",
+            "title": "Identifying Economic Sanctions as Warfare Tools",
+            "description": "How financial sanctions and trade restrictions are used as geopolitical weapons.",
+            "bulletpoints": [
+                "Examining historical cases where sanctions were used to destabilize nations.",
+                "Understanding how financial restrictions create economic bottlenecks.",
+                "Tracking the economic consequences of targeted financial isolation."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cewm_2",
+            "title": "Stock Market and Currency Manipulation",
+            "description": "Understanding how financial institutions and hedge funds manipulate markets.",
+            "bulletpoints": [
+                "Exposing high-frequency trading (HFT) and algorithmic manipulation.",
+                "Analyzing historical cases of market crashes engineered by financial elites.",
+                "Identifying economic hitmen tactics used to destabilize economies."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cewm_3",
+            "title": "Crypto Warfare and Decentralized Financial Tactics",
+            "description": "Understanding how blockchain technology is both a threat and a tool against economic manipulation.",
+            "bulletpoints": [
+                "Examining the role of central bank digital currencies (CBDCs) in financial control.",
+                "Tracking the use of cryptocurrencies in money laundering and financial resistance.",
+                "Developing decentralized economic structures to counteract elite financial dominance."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

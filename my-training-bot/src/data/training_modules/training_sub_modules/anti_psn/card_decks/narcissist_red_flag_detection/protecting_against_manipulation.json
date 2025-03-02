@@ -1,0 +1,48 @@
+{
+    "id": "protecting_against_manipulation",
+    "name": "Protecting Against Manipulation",
+    "description": "Developing effective defenses against narcissistic tactics before they take root.",
+    "focus": [
+        "Setting Boundaries",
+        "Avoiding Emotional Traps",
+        "Psychological Self-Defense"
+    ],
+    "cards": [
+        {
+            "id": "pam_1",
+            "title": "Establishing Strong Personal Boundaries",
+            "description": "Preventing narcissists from exploiting kindness and empathy.",
+            "bulletpoints": [
+                "Clearly define personal boundaries and enforce them consistently.",
+                "Avoid justifying or over-explaining boundaries to manipulators.",
+                "Recognize when someone is testing your limits for future exploitation."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "pam_2",
+            "title": "Resisting Emotional Baiting",
+            "description": "Neutralizing tactics designed to provoke emotional reactions.",
+            "bulletpoints": [
+                "Narcissists use baiting to extract emotional responses for control.",
+                "Practice non-reactivity and disengagement in high-stress interactions.",
+                "Redirect conversations and avoid feeding into manipulative cycles."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "pam_3",
+            "title": "Psychological Self-Defense Mechanisms",
+            "description": "Strengthening mental resilience to prevent narcissistic influence.",
+            "bulletpoints": [
+                "Maintain strong self-awareness to detect subtle manipulation.",
+                "Use cognitive distancing to avoid internalizing false narratives.",
+                "Reinforce self-trust and avoid seeking validation from manipulators."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

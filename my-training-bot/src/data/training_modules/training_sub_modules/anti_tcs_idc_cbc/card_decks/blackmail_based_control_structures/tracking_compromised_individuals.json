@@ -1,0 +1,48 @@
+{
+    "id": "tracking_compromised_individuals",
+    "name": "Tracking Compromised Individuals",
+    "description": "Identifying key figures under blackmail-based control and analyzing their behavioral patterns.",
+    "focus": [
+        "Recognizing Signs of Coercion",
+        "Mapping Influence Networks",
+        "Predicting Compliance and Resignations"
+    ],
+    "cards": [
+        {
+            "id": "tci_1",
+            "title": "Behavioral Red Flags of Coercion",
+            "description": "Signs that an individual is operating under external control.",
+            "bulletpoints": [
+                "Sudden shifts in policy or behavior that contradict previous stances.",
+                "Uncharacteristic compliance with elite agendas despite public opposition.",
+                "Increased secrecy, unusual alliances, and avoidance of direct questioning."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "tci_2",
+            "title": "Network Mapping of Blackmail Rings",
+            "description": "How to track and expose groups connected through shared compromise.",
+            "bulletpoints": [
+                "Using financial records and unusual wealth shifts to trace corruption.",
+                "Identifying gatekeepers and handlers controlling compromised assets.",
+                "Analyzing leaked data and whistleblower testimony to establish links."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "tci_3",
+            "title": "Predicting Resignations and Power Shifts",
+            "description": "How internal pressure leads to unexpected exits and betrayals.",
+            "bulletpoints": [
+                "Recognizing forced resignations due to leverage expiration or exposure.",
+                "Tracking sudden media narratives as preemptive damage control.",
+                "Identifying scapegoat strategies to divert attention from larger networks."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

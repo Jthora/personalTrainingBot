@@ -1,0 +1,48 @@
+{
+    "id": "exposure_based_counter_tactics",
+    "name": "Exposure-Based Counter-Tactics",
+    "description": "Using calculated exposure strategies to neutralize PSNs without direct confrontation.",
+    "focus": [
+        "Strategic Exposure Planning",
+        "Controlling Information Release",
+        "Forcing Accountability"
+    ],
+    "cards": [
+        {
+            "id": "ebct_1",
+            "title": "Controlled Information Leaks",
+            "description": "Using selective truth release to disrupt PSN control structures.",
+            "bulletpoints": [
+                "Timing information releases to maximize impact.",
+                "Using indirect channels to spread exposure without direct conflict.",
+                "Allowing PSNs to incriminate themselves through controlled information drops."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "ebct_2",
+            "title": "Turning Public Opinion Against PSNs",
+            "description": "Shifting social perception by revealing uncomfortable truths.",
+            "bulletpoints": [
+                "Using undeniable evidence to change public perception of manipulators.",
+                "Leveraging strategic storytelling to expose patterns of abuse.",
+                "Creating psychological distance between PSNs and their supporters."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ebct_3",
+            "title": "The Power of Witness Testimony",
+            "description": "Using multiple sources of testimony to create overwhelming credibility.",
+            "bulletpoints": [
+                "Coordinating with other affected individuals to build a case.",
+                "Using collective testimony to counter individual gaslighting.",
+                "Structuring exposure campaigns to emphasize credibility and reliability."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

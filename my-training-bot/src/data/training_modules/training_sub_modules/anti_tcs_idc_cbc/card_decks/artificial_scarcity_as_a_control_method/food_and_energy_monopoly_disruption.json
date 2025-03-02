@@ -1,0 +1,48 @@
+{
+    "id": "food_and_energy_monopoly_disruption",
+    "name": "Food and Energy Monopoly Disruption",
+    "description": "Understanding how control over food and energy supplies is weaponized to engineer artificial scarcity, and how to counter it.",
+    "focus": [
+        "Monopolization of Essential Resources",
+        "Synthetic Shortages and Crisis Manufacturing",
+        "Alternative Infrastructure Development"
+    ],
+    "cards": [
+        {
+            "id": "femd_1",
+            "title": "The Food Supply Chain Manipulation",
+            "description": "How corporations and governments engineer food shortages.",
+            "bulletpoints": [
+                "Artificial scarcity is created through food destruction and price manipulation.",
+                "Seed patents and GMO control give corporations power over food production.",
+                "Mass food recalls and regulatory barriers prevent local food independence."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "femd_2",
+            "title": "Energy Grid Warfare",
+            "description": "How energy supply chains are used for economic and political control.",
+            "bulletpoints": [
+                "The fossil fuel industry maintains an illusion of scarcity for profit.",
+                "Renewable energy advancements are suppressed to maintain dependence.",
+                "Energy crises are often manufactured to justify price hikes and rationing."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "femd_3",
+            "title": "Breaking Free from Food and Energy Tyranny",
+            "description": "Strategies for achieving food and energy independence.",
+            "bulletpoints": [
+                "Decentralized food networks can eliminate dependency on monopolies.",
+                "Localized renewable energy systems reduce reliance on corporate grids.",
+                "Aquaponics, permaculture, and off-grid living provide long-term resilience."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

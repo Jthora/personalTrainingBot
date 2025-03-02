@@ -1,0 +1,48 @@
+{
+    "id": "psychological_dependency_in_movement_followers",
+    "name": "Psychological Dependency in Movement Followers",
+    "description": "Understanding how false messianic movements create emotional and mental dependency in their followers.",
+    "focus": [
+        "Dependency Programming in Religious Movements",
+        "False Salvation and Spiritual Entrapment",
+        "Creating Psychological Entrapment Systems"
+    ],
+    "cards": [
+        {
+            "id": "pdmf_1",
+            "title": "Creating Emotional Dependency Through Fear and Hope",
+            "description": "Understanding the dual forces of fear-based control and promised salvation.",
+            "bulletpoints": [
+                "How doomsday prophecies create long-term psychological reliance.",
+                "The role of emotional highs and lows in controlling group behavior.",
+                "False empowerment tactics used to reinforce leader worship."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "pdmf_2",
+            "title": "The Messiah Complex and False Gurus",
+            "description": "Decoding the psychological traits of leaders who claim divine or supernatural authority.",
+            "bulletpoints": [
+                "Recognizing the manipulation of archetypal savior narratives.",
+                "Understanding how charisma and psychological projection create blind devotion.",
+                "The cycle of betrayal and redemption used to retain followers."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "pdmf_3",
+            "title": "Breaking Psychological Bonds with False Movements",
+            "description": "Techniques for helping individuals exit belief-based control structures.",
+            "bulletpoints": [
+                "Deconstructing identity attachment to cult narratives.",
+                "Cognitive reframing to neutralize guilt-based control methods.",
+                "Rebuilding self-reliance outside of hierarchical ideological structures."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "economic_and_legal_sabotage_of_psn_power",
+    "name": "Economic and Legal Sabotage of PSN Power",
+    "description": "Disrupting the financial and legal footholds that PSNs use to maintain control over victims and systems.",
+    "focus": [
+        "Weakening Narcissistic Economic Influence",
+        "Legal Countermeasures",
+        "Financial and Social Exit Strategies"
+    ],
+    "cards": [
+        {
+            "id": "elspsn_1",
+            "title": "Cutting Narcissistic Economic Leverage",
+            "description": "Severing financial dependencies and securing personal sovereignty.",
+            "bulletpoints": [
+                "Identifying financial control tactics used by PSNs.",
+                "Creating independent revenue streams to remove leverage.",
+                "Strategically withdrawing assets before disengagement."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "elspsn_2",
+            "title": "Weaponizing Legal Protections",
+            "description": "Using legal systems to shield yourself and dismantle PSN control.",
+            "bulletpoints": [
+                "Deploying restraining orders and legal distancing mechanisms.",
+                "Utilizing defamation laws to neutralize smear campaigns.",
+                "Leveraging whistleblower protection to expose high-level PSNs."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "elspsn_3",
+            "title": "Destroying Their Social Credibility",
+            "description": "Dismantling PSN reputations through strategic social exposure.",
+            "bulletpoints": [
+                "Feeding controlled leaks to targeted social circles.",
+                "Amplifying inconsistencies in their projected persona.",
+                "Orchestrating situations that force self-exposure."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "identifying_and_disrupting_ritual_mind_warfare",
+    "name": "Identifying and Disrupting Ritual Mind Warfare",
+    "description": "Investigating and dismantling the hidden use of ritual psychology in global control mechanisms.",
+    "focus": [
+        "Ritual Symbolism in Social Engineering",
+        "Mass Psychological Rituals",
+        "Counter-Ritual Disruption Strategies"
+    ],
+    "cards": [
+        {
+            "id": "idrmw_1",
+            "title": "Deciphering Ritual Symbolism in Society",
+            "description": "Recognizing the occult influence in political, corporate, and media rituals.",
+            "bulletpoints": [
+                "Identifying hidden ritualistic patterns in mainstream events.",
+                "Understanding the role of numerology and esoteric symbolism in control structures.",
+                "Exposing large-scale ritual programming events used for mass hypnosis."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "idrmw_2",
+            "title": "Disrupting Psychological Rituals in Real Time",
+            "description": "Counteracting the effects of orchestrated mass psychological rituals.",
+            "bulletpoints": [
+                "Using counter-narratives to break the cycle of mass programming.",
+                "Exposing and publicly challenging fabricated ritualistic psychological constructs.",
+                "Neutralizing groupthink through logic-based intervention strategies."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "idrmw_3",
+            "title": "Tactical Disruption of Occult Psychological Operations",
+            "description": "Actively dismantling the use of ritual mind control in covert social manipulation.",
+            "bulletpoints": [
+                "Intercepting and exposing secretive initiatory psychological methods.",
+                "Understanding psychological anchoring techniques used to reinforce rituals.",
+                "Using subversive counter-ritual methodologies to reverse-engineer mass hypnosis."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "historical_analysis_of_ruling_bloodlines",
+    "name": "Historical Analysis of Ruling Bloodlines",
+    "description": "Tracing the origins and lineage of global ruling families to understand their power structure.",
+    "focus": [
+        "Mapping Elite Bloodlines",
+        "Royal and Aristocratic Control Systems",
+        "Hidden Lineages in Politics and Finance"
+    ],
+    "cards": [
+        {
+            "id": "harb_1",
+            "title": "The Old World Aristocracy",
+            "description": "Examining the European royal families and their historical grip on global governance.",
+            "bulletpoints": [
+                "Interconnections between royal families and modern power players.",
+                "How aristocratic families maintain influence through strategic marriages.",
+                "The role of secret societies in preserving elite bloodline control."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "harb_2",
+            "title": "Banking Dynasties and Corporate Monarchs",
+            "description": "Investigating financial empires built by elite bloodlines.",
+            "bulletpoints": [
+                "The Rothschilds, Rockefellers, and other financial aristocracies.",
+                "The hidden hand of corporate elite families in global markets.",
+                "How banking dynasties manipulate economic crises for control."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "harb_3",
+            "title": "Hidden Bloodlines in Politics and Media",
+            "description": "Uncovering how ruling families place their members in key societal positions.",
+            "bulletpoints": [
+                "The genealogical connections between presidents, prime ministers, and royalty.",
+                "How media moguls with elite blood ties shape global narratives.",
+                "Tracking elite descendants within intelligence agencies and military leadership."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

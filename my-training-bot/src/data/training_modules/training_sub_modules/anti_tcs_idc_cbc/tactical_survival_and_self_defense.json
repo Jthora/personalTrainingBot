@@ -1,0 +1,17 @@
+{
+    "id": "tactical_survival_and_self_defense",
+    "name": "Tactical Survival and Self-Defense",
+    "description": "Training in survival skills, self-defense, and combat strategies necessary for high-risk situations involving the TCS/IDC/CBC.",
+    "difficulty": "Expert",
+    "estimated_time": "12-30 weeks",
+    "focus": [
+        "Urban and Rural Survival Tactics",
+        "Physical and Psychological Combat",
+        "Evasion and Counter-Attack Strategies"
+    ],
+    "cardDecks": [
+        "close_quarters_combat_tactics",
+        "survival_training_and_escape_methods",
+        "covert_security_and_defensive_measures"
+    ]
+}

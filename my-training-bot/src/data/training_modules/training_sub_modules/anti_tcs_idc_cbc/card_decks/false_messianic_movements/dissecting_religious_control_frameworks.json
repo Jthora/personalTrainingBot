@@ -1,0 +1,48 @@
+{
+    "id": "dissecting_religious_control_frameworks",
+    "name": "Dissecting Religious Control Frameworks",
+    "description": "Breaking down the hierarchical structures and psychological manipulation tactics used to establish religious and ideological control.",
+    "focus": [
+        "The Psychology of Religious Indoctrination",
+        "Structural Power Hierarchies in Cults",
+        "Mind-Control Techniques Used in Religious Movements"
+    ],
+    "cards": [
+        {
+            "id": "drcf_1",
+            "title": "Understanding Manufactured Belief Systems",
+            "description": "Recognizing the elements of artificial religious narratives used for mass control.",
+            "bulletpoints": [
+                "Identifying mass appeal strategies used to recruit and retain followers.",
+                "Recognizing apocalyptic and salvation-based fear tactics.",
+                "Decoding the use of authority figures to enforce doctrine."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "drcf_2",
+            "title": "Hierarchical Structure of Control Movements",
+            "description": "Analyzing the chain of command in religious and ideological control networks.",
+            "bulletpoints": [
+                "Understanding the use of elite inner circles to maintain power.",
+                "Examining control mechanisms such as confession rituals and information restriction.",
+                "Unveiling the psychological conditioning of followers through obedience training."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "drcf_3",
+            "title": "Religious Indoctrination and Psychological Warfare",
+            "description": "Unveiling the mental programming methods used to create blind loyalty.",
+            "bulletpoints": [
+                "Analyzing guilt and shame as tools for behavioral compliance.",
+                "Identifying isolation tactics to cut off external influence.",
+                "Breaking down how repetition and chant-based affirmations reinforce belief structures."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

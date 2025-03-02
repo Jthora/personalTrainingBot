@@ -1,0 +1,17 @@
+{
+    "id": "cult_network_analysis",
+    "name": "Cult Network Analysis",
+    "description": "Mapping out the connections between ideological cults, intelligence agencies, and elite control structures.",
+    "difficulty": "Expert",
+    "estimated_time": "16-36 weeks",
+    "focus": [
+        "Identifying Cult Patterns",
+        "Tracking Cult Leadership Hierarchies",
+        "Disrupting Cult Recruitment Networks"
+    ],
+    "cardDecks": [
+        "psychological_deprogramming_methods",
+        "tracking_cult_financing_and_funding",
+        "exposing_high_profile_cult_members"
+    ]
+}

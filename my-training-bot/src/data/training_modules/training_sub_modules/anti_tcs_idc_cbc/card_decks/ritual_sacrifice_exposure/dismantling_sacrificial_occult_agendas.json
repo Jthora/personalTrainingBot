@@ -1,0 +1,48 @@
+{
+    "id": "dismantling_sacrificial_occult_agendas",
+    "name": "Dismantling Sacrificial Occult Agendas",
+    "description": "Strategies for disrupting elite sacrificial operations and exposing their hidden objectives.",
+    "focus": [
+        "Neutralizing Ritualistic Sacrifice Networks",
+        "Exposing Occult Bloodline Agendas",
+        "Undermining Mass Fear-Based Energy Harvesting"
+    ],
+    "cards": [
+        {
+            "id": "dsoa_1",
+            "title": "Revealing the Occult Elite Bloodline Structure",
+            "description": "Identifying the ruling families and secret orders orchestrating sacrificial rituals.",
+            "bulletpoints": [
+                "Tracing historical bloodline connections to modern ritual networks.",
+                "Understanding power hierarchies in occult-driven leadership circles.",
+                "Analyzing elite institutions where ritual sacrifice operations are concealed."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "dsoa_2",
+            "title": "Undermining Public Ritualistic Fear Harvesting",
+            "description": "Exposing and dismantling mass-scale ritual fear conditioning.",
+            "bulletpoints": [
+                "Analyzing public mass rituals disguised as mainstream events.",
+                "Disrupting psychological manipulation through mass media rituals.",
+                "Neutralizing occult-based mass trauma programming methods."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "dsoa_3",
+            "title": "Infiltrating and Disrupting Ritual Networks",
+            "description": "Strategies for covertly dismantling sacrificial networks from within.",
+            "bulletpoints": [
+                "Identifying and exposing key operatives within elite circles.",
+                "Using psychological warfare to destabilize internal occult power structures.",
+                "Implementing whistleblower operations to trigger internal collapses."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

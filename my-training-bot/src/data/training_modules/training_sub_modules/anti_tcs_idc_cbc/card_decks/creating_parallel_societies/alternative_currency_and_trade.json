@@ -1,0 +1,48 @@
+{
+    "id": "alternative_currency_and_trade",
+    "name": "Alternative Currency and Trade",
+    "description": "Developing financial independence through decentralized trade and alternative economic systems.",
+    "focus": [
+        "Decentralized Currencies",
+        "Barter and Trade Networks",
+        "Wealth Protection Strategies"
+    ],
+    "cards": [
+        {
+            "id": "act_1",
+            "title": "Creating and Managing a Parallel Economy",
+            "description": "Designing a financial ecosystem independent of centralized banking.",
+            "bulletpoints": [
+                "Understanding decentralized finance (DeFi) and its role in alternative economies.",
+                "Establishing local trade networks that operate outside fiat currency control.",
+                "Developing barter and mutual credit systems for resilient commerce."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "act_2",
+            "title": "Cryptocurrency and Privacy-Focused Transactions",
+            "description": "Leveraging digital assets for secure and anonymous financial interactions.",
+            "bulletpoints": [
+                "Identifying privacy coins and peer-to-peer transaction methods.",
+                "Avoiding surveillance mechanisms in the digital financial landscape.",
+                "Setting up secure wallets and decentralized exchanges for financial sovereignty."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "act_3",
+            "title": "Wealth Protection and Counter-Economic Strategies",
+            "description": "Techniques to shield assets from global financial manipulation.",
+            "bulletpoints": [
+                "Diversifying assets into commodities, real estate, and decentralized holdings.",
+                "Using tax-resistant structures to protect wealth from excessive government control.",
+                "Building underground trade routes for crisis-proof economic stability."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

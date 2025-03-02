@@ -1,0 +1,17 @@
+{
+    "id": "narcissist_red_flag_detection",
+    "name": "Narcissist Red Flag Detection",
+    "description": "Training to identify early warning signs of narcissists before they gain influence over your personal or professional life.",
+    "difficulty": "Intermediate",
+    "estimated_time": "6-12 months",
+    "focus": [
+        "Early Behavioral Recognition",
+        "Identifying Covert Narcissism",
+        "Protecting Against Manipulation"
+    ],
+    "cardDecks": [
+        "early_behavioral_recognition",
+        "identifying_covert_narcissism",
+        "protecting_against_manipulation"
+    ]
+}

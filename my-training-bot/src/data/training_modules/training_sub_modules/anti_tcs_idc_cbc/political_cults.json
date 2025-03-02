@@ -1,0 +1,17 @@
+{
+    "id": "political_cults",
+    "name": "Political Cults",
+    "description": "Breaking down how authoritarian political factions function as cults, using psychological conditioning, groupthink, and hierarchical control structures.",
+    "difficulty": "Advanced",
+    "estimated_time": "10-20 weeks",
+    "focus": [
+        "Mass Conditioning through Ideology",
+        "Hierarchical Control Mechanisms",
+        "Breaking Free from Political Indoctrination"
+    ],
+    "cardDecks": [
+        "propaganda_resistance_and_mind_control_breaking",
+        "detecting_psychopathic_leaders_in_politics",
+        "neutralizing_extremist_political_cults"
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "covertly_overthrowing_psn_controlled_systems",
+    "name": "Covertly Overthrowing PSN-Controlled Systems",
+    "description": "A tactical approach to dismantling systems under PSN control through stealth, infiltration, and strategic subversion.",
+    "focus": [
+        "Destabilizing PSN-Controlled Infrastructure",
+        "Infiltrating and Corrupting Their Systems",
+        "Forcing Structural Collapse Without Direct Conflict"
+    ],
+    "cards": [
+        {
+            "id": "psn_overthrow_1",
+            "title": "Strategic Infiltration and Subversion",
+            "description": "Embedding operatives within PSN-controlled systems to neutralize threats from within.",
+            "bulletpoints": [
+                "Gaining insider status allows for the quiet dismantling of their operational structures.",
+                "Using sleeper agents to gradually shift policies disrupts long-term objectives.",
+                "Planting ideological subversion in their ranks weakens systemic loyalty."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psn_overthrow_2",
+            "title": "Economic and Bureaucratic Sabotage",
+            "description": "Using financial and administrative warfare to dismantle PSN-controlled institutions.",
+            "bulletpoints": [
+                "Deliberately exposing financial irregularities triggers external scrutiny.",
+                "Blocking legal loopholes removes their ability to operate under the radar.",
+                "Destroying their funding mechanisms causes structural collapse."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psn_overthrow_3",
+            "title": "Hijacking Their Narrative Control",
+            "description": "Using media, social networks, and alternative platforms to discredit PSN propaganda.",
+            "bulletpoints": [
+                "Amplifying counter-narratives drowns out their psychological influence.",
+                "Using humor and ridicule weakens their perceived authority.",
+                "Revealing classified PSN operations forces them into damage control."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

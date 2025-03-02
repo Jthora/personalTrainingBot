@@ -1,0 +1,48 @@
+{
+    "id": "analyzing_power_structures_and_hidden_agendas",
+    "name": "Analyzing Power Structures and Hidden Agendas",
+    "description": "Deconstructing the networks of power that orchestrate world events behind the scenes.",
+    "focus": [
+        "Geopolitical Steering Groups",
+        "Globalist Control Mechanisms",
+        "Hidden Agendas in Governance"
+    ],
+    "cards": [
+        {
+            "id": "apsa_1",
+            "title": "Decoding the Structure of Global Governance",
+            "description": "Unveiling how the world is truly run through interlocking institutions.",
+            "bulletpoints": [
+                "Identifying the hierarchy of power from regional leaders to global elites.",
+                "Tracing the financial networks that sustain international governance bodies.",
+                "Understanding the coordination between supranational organizations and sovereign states."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "apsa_2",
+            "title": "Globalist Control Mechanisms: The End of National Sovereignty",
+            "description": "Examining the systematic erosion of nation-state autonomy.",
+            "bulletpoints": [
+                "Tracking the rise of international governing bodies with unchecked power.",
+                "Identifying how trade agreements and climate policies are used for control.",
+                "Understanding the role of digital surveillance in shaping totalitarian regimes."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "apsa_3",
+            "title": "Hidden Agendas Behind Global Crisis Events",
+            "description": "Recognizing patterns in global crises engineered for elite benefit.",
+            "bulletpoints": [
+                "Investigating pandemics, economic collapses, and manufactured conflicts.",
+                "Tracing the flow of emergency response funding and disaster capitalism.",
+                "Identifying predictive programming and foreshadowing in media and politics."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

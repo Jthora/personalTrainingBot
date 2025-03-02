@@ -1,0 +1,48 @@
+{
+    "id": "community_based_psychological_defense",
+    "name": "Community-Based Psychological Defense",
+    "description": "Strengthening collective mental resilience to prevent PSN manipulation within communities.",
+    "focus": [
+        "Resisting Mass Psychological Manipulation",
+        "Empowering Communities with Psychological Defense",
+        "Fostering Long-Term Mental Immunity"
+    ],
+    "cards": [
+        {
+            "id": "cbpd_1",
+            "title": "Building a Psychological Immunity Culture",
+            "description": "Developing long-term resistance against PSN psychological warfare.",
+            "bulletpoints": [
+                "Training community members to detect and resist emotional manipulation.",
+                "Creating shared knowledge bases of PSN tactics for collective awareness.",
+                "Promoting critical thinking as a cultural norm to prevent social engineering."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cbpd_2",
+            "title": "Deploying Mass Psychological Resilience Training",
+            "description": "Fortifying entire communities against PSN propaganda and coercion.",
+            "bulletpoints": [
+                "Conducting workshops on counter-manipulation tactics.",
+                "Integrating psychological defense principles into local education systems.",
+                "Using community role models to reinforce resilience strategies."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cbpd_3",
+            "title": "Preemptively Undermining PSN Influence Structures",
+            "description": "Eliminating vulnerabilities before they can be exploited by PSNs.",
+            "bulletpoints": [
+                "Identifying and neutralizing ideological weak points in the community.",
+                "Reinforcing social bonds to prevent infiltration-based control tactics.",
+                "Establishing alternative information channels resistant to PSN misinformation."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "avoiding_ai_behavioral_profiling",
+    "name": "Avoiding AI Behavioral Profiling",
+    "description": "Countermeasures against AI-driven behavioral tracking, predictive profiling, and digital influence operations.",
+    "focus": [
+        "Disrupting AI Behavioral Analysis",
+        "Mitigating Data Collection Risks",
+        "Breaking Predictive Programming Patterns"
+    ],
+    "cards": [
+        {
+            "id": "aabp_1",
+            "title": "Understanding AI Surveillance and Behavioral Tracking",
+            "description": "Analyzing how AI algorithms track, predict, and manipulate human behavior online.",
+            "bulletpoints": [
+                "Examining AI-driven sentiment analysis and profiling.",
+                "Identifying AI-powered influence operations.",
+                "Understanding social credit systems and behavioral ranking models."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "aabp_2",
+            "title": "Disrupting Data Harvesting and AI Profiling",
+            "description": "Techniques for obfuscating digital behavior and disrupting AI-driven tracking models.",
+            "bulletpoints": [
+                "Implementing browser fingerprinting countermeasures.",
+                "Using AI noise generation tools to pollute data profiles.",
+                "Employing behavioral obfuscation techniques in online interactions."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "aabp_3",
+            "title": "Evading Predictive Programming and Algorithmic Manipulation",
+            "description": "Escaping the psychological influence of AI-driven content curation and mass behavior programming.",
+            "bulletpoints": [
+                "Detecting and neutralizing algorithmic nudging.",
+                "Avoiding mass social conditioning through AI feeds.",
+                "Using counter-engagement strategies to break predictive modeling."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

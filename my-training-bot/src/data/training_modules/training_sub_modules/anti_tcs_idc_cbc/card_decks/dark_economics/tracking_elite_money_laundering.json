@@ -1,0 +1,48 @@
+{
+    "id": "tracking_elite_money_laundering",
+    "name": "Tracking Elite Money Laundering",
+    "description": "Following the flow of dark money through banks, hedge funds, and corporate networks.",
+    "focus": [
+        "Laundering Techniques",
+        "Criminal Banking Networks",
+        "Tracing Asset Movements"
+    ],
+    "cards": [
+        {
+            "id": "telm_1",
+            "title": "Understanding Money Laundering Cycles",
+            "description": "Breaking down the three stages of money laundering: placement, layering, and integration.",
+            "bulletpoints": [
+                "Examining how illicit funds enter legitimate financial systems.",
+                "Understanding how layering obscures financial trails.",
+                "Identifying patterns of integration into legal economies."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "telm_2",
+            "title": "Banking Institutions and Criminal Syndicates",
+            "description": "Uncovering the role of major financial institutions in enabling illicit transactions.",
+            "bulletpoints": [
+                "Tracing how major banks facilitate organized crime finance.",
+                "Analyzing regulatory failures in anti-money laundering (AML) enforcement.",
+                "Exposing historical cases where banks were fined for laundering illicit funds."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "telm_3",
+            "title": "Following the Money Trail",
+            "description": "Utilizing forensic accounting and digital tracking to expose hidden financial channels.",
+            "bulletpoints": [
+                "Using blockchain analysis to track illicit cryptocurrency transactions.",
+                "Identifying patterns in high-value real estate purchases.",
+                "Tracing the use of artwork, luxury goods, and philanthropy in money laundering."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

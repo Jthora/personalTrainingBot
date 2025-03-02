@@ -1,0 +1,48 @@
+{
+    "id": "rewriting_hijacked_narratives",
+    "name": "Rewriting Hijacked Narratives",
+    "description": "Developing new, independent storytelling frameworks to counteract IDC cultural influence.",
+    "focus": [
+        "Narrative Reconstruction",
+        "Decentralized Cultural Influence",
+        "Independent Storytelling Movements"
+    ],
+    "cards": [
+        {
+            "id": "rhn_1",
+            "title": "Reclaiming Historical Truth Through Media",
+            "description": "Uncovering erased or altered history and restoring factual knowledge.",
+            "bulletpoints": [
+                "Researching and documenting suppressed historical events.",
+                "Identifying revisionist history and its geopolitical implications.",
+                "Creating independent media projects to restore historical accuracy."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "rhn_2",
+            "title": "Independent Content Creation as a Cultural Weapon",
+            "description": "Using storytelling, film, and media to create empowering and truthful narratives.",
+            "bulletpoints": [
+                "Strategies for producing decentralized content without institutional backing.",
+                "Counteracting cultural infiltration with grassroots media movements.",
+                "Building psychological resilience through truthful storytelling."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "rhn_3",
+            "title": "Decentralized Education and Knowledge Liberation",
+            "description": "Creating self-sufficient learning systems outside mainstream indoctrination.",
+            "bulletpoints": [
+                "Building alternative education models that promote independent thought.",
+                "Restructuring curriculum to eliminate ideological bias.",
+                "Decentralizing learning through open-source knowledge networks."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "tracking_occult_power_centers",
+    "name": "Tracking Occult Power Centers",
+    "description": "Identifying and analyzing key locations, institutions, and individuals tied to the International Death Cult's control networks.",
+    "focus": [
+        "Geopolitical Occult Hubs",
+        "Historical Centers of Esoteric Power",
+        "Modern Infrastructure for Elite Control"
+    ],
+    "cards": [
+        {
+            "id": "topc_1",
+            "title": "Identifying Key Geographic Power Centers",
+            "description": "Mapping cities, landmarks, and institutions central to the IDC’s influence.",
+            "bulletpoints": [
+                "Recognizing the significance of ley lines and geomantic positioning in power structures.",
+                "Tracing historical occult activity and its connection to modern elite gatherings.",
+                "Identifying private and classified compounds used by ruling factions."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "topc_2",
+            "title": "Secretive Organizations and Ritual Sites",
+            "description": "Exposing the hidden locations where elite occult groups operate.",
+            "bulletpoints": [
+                "Cataloging known and suspected ritual sites tied to elite organizations.",
+                "Analyzing major global events and their ritualistic significance.",
+                "Connecting occult symbolism to corporate and governmental institutions."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "topc_3",
+            "title": "The Role of Think Tanks and Policy Groups",
+            "description": "Understanding how elite think tanks steer policy through hidden influence.",
+            "bulletpoints": [
+                "Investigating the role of groups like the CFR, Bilderberg, and Davos.",
+                "Tracking funding sources and how policy decisions align with IDC objectives.",
+                "Recognizing how seemingly benevolent institutions serve hidden agendas."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

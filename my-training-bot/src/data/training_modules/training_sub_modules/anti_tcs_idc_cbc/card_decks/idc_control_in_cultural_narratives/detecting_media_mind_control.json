@@ -1,0 +1,48 @@
+{
+    "id": "detecting_media_mind_control",
+    "name": "Detecting Media Mind Control",
+    "description": "Uncovering the psychological manipulation tactics embedded in news, entertainment, and digital media.",
+    "focus": [
+        "Subliminal Messaging in Media",
+        "Propaganda Techniques",
+        "Psychological Conditioning via Entertainment"
+    ],
+    "cards": [
+        {
+            "id": "dmmc_1",
+            "title": "Understanding Psychological Priming in News",
+            "description": "Breaking down how language, repetition, and selective framing shape public perception.",
+            "bulletpoints": [
+                "Analyzing how fear-driven narratives create compliance and submission.",
+                "Identifying patterns of agenda-driven news coverage.",
+                "Tracing corporate and governmental influence over media conglomerates."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "dmmc_2",
+            "title": "Symbolism and Predictive Programming in Entertainment",
+            "description": "Recognizing how future events are preconditioned through pop culture.",
+            "bulletpoints": [
+                "Decoding occult and esoteric symbolism in films, music, and advertising.",
+                "Understanding the role of controlled entertainment figures in social engineering.",
+                "Identifying how predictive programming is used to normalize extreme events."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "dmmc_3",
+            "title": "The Weaponization of Social Media Algorithms",
+            "description": "Exposing how AI and engagement-driven content reinforce ideological control.",
+            "bulletpoints": [
+                "Recognizing shadow banning, algorithmic bias, and echo chambers.",
+                "Tracing how narratives are artificially boosted or suppressed.",
+                "Techniques to break free from social media conditioning."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

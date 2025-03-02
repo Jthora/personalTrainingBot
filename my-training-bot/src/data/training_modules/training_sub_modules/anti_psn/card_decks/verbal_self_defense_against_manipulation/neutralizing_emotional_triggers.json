@@ -1,0 +1,48 @@
+{
+    "id": "neutralizing_emotional_triggers",
+    "name": "Neutralizing Emotional Triggers",
+    "description": "Eliminating vulnerability to emotional provocation and remaining composed under pressure.",
+    "focus": [
+        "Emotional Deactivation Techniques",
+        "Resisting Psychological Entrapment",
+        "Mastering Composed Responses"
+    ],
+    "cards": [
+        {
+            "id": "net_1",
+            "title": "The Art of Emotional Detachment",
+            "description": "Training to remain emotionally unaffected by manipulative tactics.",
+            "bulletpoints": [
+                "Developing mental compartmentalization techniques to prevent emotional hijacking.",
+                "Using cognitive distance to observe interactions objectively.",
+                "Recognizing and neutralizing subconscious emotional anchors tied to manipulation."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "net_2",
+            "title": "Neutralizing Guilt-Tripping and Shame Tactics",
+            "description": "Preventing manipulators from leveraging guilt or shame against you.",
+            "bulletpoints": [
+                "Recognizing when guilt-tripping is being used as a psychological weapon.",
+                "Using logical breakdowns to dismantle baseless accusations.",
+                "Rejecting shame-based conditioning through self-validation techniques."
+            ],
+            "duration": "75",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "net_3",
+            "title": "Countering Emotional Blackmail",
+            "description": "Resisting coercion tactics designed to provoke compliance.",
+            "bulletpoints": [
+                "Recognizing threats disguised as concern, care, or necessity.",
+                "Refusing to engage with 'If you don’t do X, then Y will happen' ultimatums.",
+                "Using calculated indifference to neutralize emotional leverage attempts."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

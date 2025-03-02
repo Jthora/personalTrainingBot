@@ -1,0 +1,48 @@
+{
+    "id": "covertly_overthrowing_psn_controlled_systems",
+    "name": "Covertly Overthrowing PSN-Controlled Systems",
+    "description": "Silently dismantling PSN-run institutions and power structures from within.",
+    "focus": [
+        "Silent Institutional Disruption",
+        "Systemic Subversion Strategies",
+        "Constructing New Governance Models"
+    ],
+    "cards": [
+        {
+            "id": "copsn_1",
+            "title": "Undermining PSN Leadership",
+            "description": "Weakening PSN leadership through controlled instability.",
+            "bulletpoints": [
+                "Identifying weak points in their command structure.",
+                "Exploiting internal rivalries to create power struggles.",
+                "Using infiltration tactics to subtly redirect their operations toward failure."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "copsn_2",
+            "title": "Replacing PSN-Controlled Narratives",
+            "description": "Building alternative information systems to replace PSN influence.",
+            "bulletpoints": [
+                "Developing independent media to counter their propaganda.",
+                "Using grassroots education to inoculate communities against PSN rhetoric.",
+                "Leveraging decentralized networks to prevent narrative monopolization."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "copsn_3",
+            "title": "Constructing Resilient Social Structures",
+            "description": "Creating self-sustaining, PSN-resistant governance models.",
+            "bulletpoints": [
+                "Developing decentralized systems that are immune to PSN control.",
+                "Building alliances that reinforce independent thought and resistance.",
+                "Leveraging technology to prevent mass influence and psychological subjugation."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

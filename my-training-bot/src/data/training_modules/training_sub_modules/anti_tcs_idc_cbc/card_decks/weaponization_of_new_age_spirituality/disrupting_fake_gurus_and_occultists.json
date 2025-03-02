@@ -1,0 +1,48 @@
+{
+    "id": "disrupting_fake_gurus_and_occultists",
+    "name": "Disrupting Fake Gurus and Occultists",
+    "description": "Exposing fraudulent spiritual leaders, deceptive occult networks, and cult-like manipulation tactics.",
+    "focus": [
+        "Spotting Manipulative Gurus",
+        "Exposing False Channeling and Mediumship",
+        "Dismantling Occult Disinformation"
+    ],
+    "cards": [
+        {
+            "id": "guru_1",
+            "title": "Spotting Manipulative Gurus and Spiritual Leaders",
+            "description": "How to identify spiritual leaders who are part of the control system.",
+            "bulletpoints": [
+                "Analyzing speech patterns and persuasion tactics.",
+                "The role of ‘love-bombing’ in cult recruitment.",
+                "How false humility is used as a deceptive tactic."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "guru_2",
+            "title": "Exposing False Channeling and Mediumship",
+            "description": "Understanding how channeled messages are often hijacked to mislead seekers.",
+            "bulletpoints": [
+                "How negative entities masquerade as benevolent beings.",
+                "Recognizing contradictions in spiritual messages.",
+                "How vague prophecies and unverifiable claims create dependency."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "guru_3",
+            "title": "Dismantling Occult Disinformation and New Age Deception",
+            "description": "How occult knowledge is distorted and used for psychological control.",
+            "bulletpoints": [
+                "Exposing false secret societies masquerading as esoteric wisdom keepers.",
+                "How elite groups infiltrate spiritual movements to mislead seekers.",
+                "Spotting patterns of deception in astrology, numerology, and divination."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

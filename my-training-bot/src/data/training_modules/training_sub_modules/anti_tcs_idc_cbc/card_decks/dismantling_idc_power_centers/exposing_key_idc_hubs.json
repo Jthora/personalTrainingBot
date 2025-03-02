@@ -1,0 +1,48 @@
+{
+    "id": "exposing_key_idc_hubs",
+    "name": "Exposing Key IDC Hubs",
+    "description": "Mapping the core operational hubs that sustain IDC influence, including financial, governmental, and intelligence strongholds.",
+    "focus": [
+        "Mapping IDC Operational Centers",
+        "Identifying Key Figures and Institutions",
+        "Tracking Global Influence Networks"
+    ],
+    "cards": [
+        {
+            "id": "ekih_1",
+            "title": "Locating Financial Nerve Centers",
+            "description": "Identifying the banking and investment networks that fuel IDC operations worldwide.",
+            "bulletpoints": [
+                "Tracing elite banking institutions with ties to IDC money laundering.",
+                "Uncovering shell corporations and financial black holes.",
+                "Mapping high-level banking executives with ties to global control structures."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "ekih_2",
+            "title": "Government and Intelligence Agency Infiltration",
+            "description": "Exposing the key government and intelligence agencies used as tools for IDC agendas.",
+            "bulletpoints": [
+                "Identifying compromised officials and intelligence assets.",
+                "Tracking policy influence and law manipulation for elite control.",
+                "Analyzing geopolitical strategies tied to IDC power structures."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "ekih_3",
+            "title": "Tracking Media and Social Engineering Centers",
+            "description": "Mapping out the corporate media strongholds used for propaganda and social control.",
+            "bulletpoints": [
+                "Identifying elite-controlled media conglomerates and ownership structures.",
+                "Decoding psychological manipulation tactics in mass media.",
+                "Tracking media disinformation campaigns designed to protect IDC power centers."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

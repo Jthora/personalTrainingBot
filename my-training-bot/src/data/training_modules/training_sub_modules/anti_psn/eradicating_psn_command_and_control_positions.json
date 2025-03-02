@@ -1,0 +1,17 @@
+{
+    "id": "eradicating_psn_command_and_control_positions",
+    "name": "Eradicating PSN Command and Control Positions",
+    "description": "Systematically removing PSNs from key positions of authority, influence, and decision-making.",
+    "difficulty": "Expert",
+    "estimated_time": "12-24 months",
+    "focus": [
+        "Targeting Corrupt Leadership",
+        "Forcing Accountability and Exposure",
+        "Eliminating Power Structures"
+    ],
+    "cardDecks": [
+        "targeting_corrupt_leadership",
+        "forcing_accountability_and_exposure",
+        "eliminating_power_structures"
+    ]
+}

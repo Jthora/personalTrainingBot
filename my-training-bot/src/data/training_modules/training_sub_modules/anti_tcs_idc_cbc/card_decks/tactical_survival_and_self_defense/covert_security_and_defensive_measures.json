@@ -1,0 +1,48 @@
+{
+    "id": "covert_security_and_defensive_measures",
+    "name": "Covert Security and Defensive Measures",
+    "description": "Defensive strategies for personal security, asset protection, and counter-surveillance operations.",
+    "focus": [
+        "Tactical Situational Awareness",
+        "Security Protocols and Defensive Maneuvers",
+        "Counter-Surveillance and Infiltration Prevention"
+    ],
+    "cards": [
+        {
+            "id": "csd_1",
+            "title": "Developing Tactical Situational Awareness",
+            "description": "Recognizing and responding to threats before they escalate.",
+            "bulletpoints": [
+                "Detecting anomalies in social and environmental settings.",
+                "Analyzing behavioral cues to predict hostile intentions.",
+                "Preemptive threat assessment and rapid response training."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "csd_2",
+            "title": "Security Protocols and Defensive Maneuvers",
+            "description": "Establishing proactive measures to mitigate threats.",
+            "bulletpoints": [
+                "Implementing perimeter defense and access control.",
+                "Developing rapid deployment strategies for high-risk situations.",
+                "Understanding legal and tactical implications of self-defense."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "csd_3",
+            "title": "Counter-Surveillance and Infiltration Prevention",
+            "description": "Identifying and neutralizing surveillance and tracking attempts.",
+            "bulletpoints": [
+                "Detecting and evading digital and physical surveillance.",
+                "Securing communications and data from cyber intrusions.",
+                "Employing misinformation and misdirection techniques."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

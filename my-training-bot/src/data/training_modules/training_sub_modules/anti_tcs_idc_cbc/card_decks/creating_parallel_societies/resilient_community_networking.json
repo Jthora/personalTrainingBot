@@ -1,0 +1,48 @@
+{
+    "id": "resilient_community_networking",
+    "name": "Resilient Community Networking",
+    "description": "Building decentralized communities with strong support structures that withstand external control mechanisms.",
+    "focus": [
+        "Decentralized Trust Networks",
+        "Alternative Social Structures",
+        "Sustainable Community Growth"
+    ],
+    "cards": [
+        {
+            "id": "rcn_1",
+            "title": "Establishing Secure and Autonomous Communities",
+            "description": "Structuring independent societies that resist external control.",
+            "bulletpoints": [
+                "Creating self-governing models that rely on decentralized decision-making.",
+                "Identifying land and location strategies for sustainable parallel societies.",
+                "Establishing secure internal communications and encrypted data-sharing."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "rcn_2",
+            "title": "Defensive Social Engineering for Community Protection",
+            "description": "Preventing infiltration and manipulation within alternative societies.",
+            "bulletpoints": [
+                "Implementing community vetting processes to prevent subversion.",
+                "Using social dynamics and group psychology for cohesion and resilience.",
+                "Creating counter-disinformation mechanisms to protect group integrity."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "rcn_3",
+            "title": "Decentralized Governance and Conflict Resolution",
+            "description": "Developing self-regulating systems to manage disputes and maintain order.",
+            "bulletpoints": [
+                "Implementing reputation-based governance to prevent authoritarian control.",
+                "Using blockchain and smart contracts for automated legal structures.",
+                "Creating non-hierarchical power structures for true autonomy."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

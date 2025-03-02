@@ -1,0 +1,48 @@
+{
+    "id": "early_behavioral_recognition",
+    "name": "Early Behavioral Recognition",
+    "description": "Identifying the subtle and overt warning signs of narcissistic individuals before they gain influence.",
+    "focus": [
+        "Spotting Red Flags",
+        "Recognizing Patterns",
+        "Avoiding Narcissistic Traps"
+    ],
+    "cards": [
+        {
+            "id": "ebr_1",
+            "title": "Recognizing Superficial Charm",
+            "description": "Understanding how narcissists use charisma to disarm and manipulate.",
+            "bulletpoints": [
+                "Narcissists often appear overly confident and charismatic early on.",
+                "They use excessive flattery and mirroring to establish trust quickly.",
+                "Sudden shifts in attitude can reveal an underlying manipulative intent."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "ebr_2",
+            "title": "Identifying Entitlement and Grandiosity",
+            "description": "Detecting when someone exhibits excessive self-importance.",
+            "bulletpoints": [
+                "Watch for individuals who demand special treatment without merit.",
+                "Grandiose self-narratives often mask insecurity and manipulation tactics.",
+                "They devalue others to sustain their illusion of superiority."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "ebr_3",
+            "title": "Manipulative Storytelling",
+            "description": "How narcissists craft narratives to control perception.",
+            "bulletpoints": [
+                "They retell stories in ways that make them seem flawless or victimized.",
+                "Inconsistencies in their stories often emerge over time.",
+                "Exaggeration and selective omission are key signs of manipulation."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

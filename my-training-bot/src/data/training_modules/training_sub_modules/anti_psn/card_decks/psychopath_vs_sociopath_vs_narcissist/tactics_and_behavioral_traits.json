@@ -1,0 +1,48 @@
+{
+    "id": "tactics_and_behavioral_traits",
+    "name": "Tactics and Behavioral Traits",
+    "description": "Recognizing the unique psychological and behavioral patterns of each type.",
+    "focus": [
+        "Manipulation Tactics",
+        "Deception and Control Mechanisms",
+        "Psychological Warfare Strategies"
+    ],
+    "cards": [
+        {
+            "id": "tbt_1",
+            "title": "Psychopathic Control Tactics",
+            "description": "How psychopaths use logic and detachment to dominate their targets.",
+            "bulletpoints": [
+                "Psychopaths engineer social environments where they maintain absolute control.",
+                "They target high-value assets and relationships for long-term strategic manipulation.",
+                "Their ability to mask emotions makes them nearly undetectable in professional settings."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "tbt_2",
+            "title": "Sociopathic Outbursts and Unpredictability",
+            "description": "Understanding how sociopaths use intimidation and aggression as weapons.",
+            "bulletpoints": [
+                "Sociopaths rely on fear and immediate dominance to maintain control.",
+                "They use reckless, violent behavior as a psychological deterrent.",
+                "Their inability to control impulses makes them susceptible to exposure through self-destruction."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "tbt_3",
+            "title": "The Narcissist’s Social Warfare",
+            "description": "How narcissists manipulate groups and social environments for control.",
+            "bulletpoints": [
+                "Narcissists rely on triangulation—pitting people against each other to maintain dominance.",
+                "They play the victim to gain sympathy and social reinforcement.",
+                "Exposing their contradictions in front of an audience is an effective way to neutralize their power."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

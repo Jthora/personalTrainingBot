@@ -1,0 +1,48 @@
+{
+    "id": "destabilizing_psn_narrative_control",
+    "name": "Destabilizing PSN Narrative Control",
+    "description": "Systematically breaking the false narratives that PSNs use to control individuals and institutions.",
+    "focus": [
+        "Disrupting False Narratives",
+        "Exposing Manipulative Messaging",
+        "Strategic Truth Bombing"
+    ],
+    "cards": [
+        {
+            "id": "dnc_1",
+            "title": "Disrupting PSN Propaganda Networks",
+            "description": "Breaking the structured flow of PSN disinformation.",
+            "bulletpoints": [
+                "Targeting key amplifiers of false narratives.",
+                "Redirecting attention away from manipulative storylines.",
+                "Weakening their influence over traditional and digital media."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "dnc_2",
+            "title": "Strategic Truth Bombing",
+            "description": "Deploying calculated truth revelations to counteract PSN lies.",
+            "bulletpoints": [
+                "Using undeniable facts to create cracks in their narrative.",
+                "Choosing the right moment for maximum psychological impact.",
+                "Leveraging whistleblowers and insiders to reinforce credibility."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "dnc_3",
+            "title": "Counteracting Media Manipulation Tactics",
+            "description": "Preventing PSNs from using media to manufacture false consensus.",
+            "bulletpoints": [
+                "Identifying and exposing media assets controlled by PSNs.",
+                "Countering perception management tactics before they gain traction.",
+                "Redirecting mass narratives towards authentic, truth-based perspectives."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

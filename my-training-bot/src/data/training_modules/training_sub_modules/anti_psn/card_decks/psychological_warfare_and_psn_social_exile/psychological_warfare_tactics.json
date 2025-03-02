@@ -1,0 +1,48 @@
+{
+    "id": "psychological_warfare_tactics",
+    "name": "Psychological Warfare Tactics",
+    "description": "Strategic methods for dismantling the psychological influence of PSNs.",
+    "focus": [
+        "Cognitive Disruption",
+        "Reversing Manipulation",
+        "Strategic Deconstruction of PSN Control"
+    ],
+    "cards": [
+        {
+            "id": "pwt_1",
+            "title": "Undermining the PSN’s Psychological Grip",
+            "description": "Disrupting their influence over individuals and groups.",
+            "bulletpoints": [
+                "Using contradictory information to weaken their credibility among followers.",
+                "Encouraging independent critical thinking in their social circles to dissolve blind obedience.",
+                "Subtly reinforcing alternative viewpoints that destabilize their control."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "pwt_2",
+            "title": "Weaponizing Truth Against PSNs",
+            "description": "Turning their own narratives against them using factual exposure.",
+            "bulletpoints": [
+                "Identifying their core manipulative lies and methodically exposing them.",
+                "Using Socratic questioning to lead them into self-contradictions.",
+                "Ensuring public exposure of their behavior in a way that prevents them from regaining control."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "pwt_3",
+            "title": "Destabilizing the PSN’s Psychological Operations",
+            "description": "Using tactical psychological counters to break their influence.",
+            "bulletpoints": [
+                "Mirroring their manipulation back at them while remaining ethically sound.",
+                "Deploying social pressure reversal to shift their perceived power dynamic.",
+                "Encouraging cognitive dissonance among their followers to erode their authority."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "diplomatic_immunity_tactics",
+    "name": "Diplomatic Immunity Tactics",
+    "description": "Leveraging international legal protections and diplomatic mechanisms to neutralize coercion and persecution.",
+    "focus": [
+        "International Legal Safeguards",
+        "Navigating Diplomatic Status",
+        "Legal Loopholes in Extradition and Prosecution"
+    ],
+    "cards": [
+        {
+            "id": "dit_1",
+            "title": "Leveraging International Legal Protections",
+            "description": "Understanding how international treaties and agreements can be used as shields.",
+            "bulletpoints": [
+                "Using refugee and asylum laws to evade politically motivated charges.",
+                "Understanding how dual citizenship can provide escape routes in legal crises.",
+                "Identifying loopholes in international law that prevent extradition."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "dit_2",
+            "title": "Navigating Diplomatic Status and Sovereign Entities",
+            "description": "Exploring methods of obtaining or leveraging diplomatic immunity.",
+            "bulletpoints": [
+                "Understanding how diplomatic credentials are obtained and recognized.",
+                "Leveraging sovereign citizen movements and indigenous rights for protection.",
+                "Using diplomatic status to shield against unlawful arrest and detention."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "dit_3",
+            "title": "Bypassing Legal Persecution Through Sovereign Systems",
+            "description": "Utilizing non-mainstream legal structures to maintain autonomy and security.",
+            "bulletpoints": [
+                "Creating autonomous legal jurisdictions through private associations.",
+                "Leveraging diplomatic negotiation tactics to evade targeted persecution.",
+                "Building alternative dispute resolution systems outside state-controlled courts."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

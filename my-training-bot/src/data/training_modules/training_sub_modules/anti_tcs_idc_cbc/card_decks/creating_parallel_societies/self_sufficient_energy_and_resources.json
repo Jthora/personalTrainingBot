@@ -1,0 +1,48 @@
+{
+    "id": "self_sufficient_energy_and_resources",
+    "name": "Self-Sufficient Energy and Resources",
+    "description": "Creating independent infrastructure for water, food, and energy to sustain parallel societies.",
+    "focus": [
+        "Off-Grid Power Systems",
+        "Water Independence",
+        "Regenerative Agriculture"
+    ],
+    "cards": [
+        {
+            "id": "sser_1",
+            "title": "Energy Independence Through Decentralized Power",
+            "description": "Developing sustainable and resilient power solutions.",
+            "bulletpoints": [
+                "Implementing microgrid technologies and decentralized power generation.",
+                "Utilizing solar, wind, hydro, and other off-grid energy sources.",
+                "Creating energy storage systems for long-term sustainability."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "sser_2",
+            "title": "Water Security and Independent Supply Chains",
+            "description": "Ensuring access to clean and self-sustaining water resources.",
+            "bulletpoints": [
+                "Developing rainwater harvesting and purification systems.",
+                "Utilizing atmospheric water generators for off-grid water security.",
+                "Setting up decentralized water filtration for long-term sustainability."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "sser_3",
+            "title": "Regenerative Agriculture and Food Sovereignty",
+            "description": "Establishing food independence through sustainable farming techniques.",
+            "bulletpoints": [
+                "Implementing permaculture and closed-loop farming methods.",
+                "Using aquaponics and vertical farming for maximum food production efficiency.",
+                "Creating community food reserves for long-term self-reliance."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

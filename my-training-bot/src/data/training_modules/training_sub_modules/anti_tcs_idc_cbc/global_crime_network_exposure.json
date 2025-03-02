@@ -1,0 +1,17 @@
+{
+    "id": "global_crime_network_exposure",
+    "name": "Global Crime Network Exposure",
+    "description": "Training to identify, track, and analyze transnational crime syndicates and their global networks.",
+    "difficulty": "Advanced",
+    "estimated_time": "4-12 weeks",
+    "focus": [
+        "Crime Syndicate Structures",
+        "Global Black Market Operations",
+        "Financial Trail Tracking"
+    ],
+    "cardDecks": [
+        "mapping_transnational_cartels",
+        "identifying_money_laundering_channels",
+        "understanding_illicit_supply_chains"
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "breaking_the_elite_mind_control_system",
+    "name": "Breaking the Elite Mind Control System",
+    "description": "Understanding and countering the psychological and metaphysical manipulation used by elite families to control populations.",
+    "focus": [
+        "Psychological Warfare of the Elite",
+        "Mass Media as a Control Mechanism",
+        "Breaking Free from Elite Programming"
+    ],
+    "cards": [
+        {
+            "id": "bemcs_1",
+            "title": "Psychological Warfare of the Elite",
+            "description": "Analyzing how ruling families engineer perception and behavior through mass-scale psychological operations.",
+            "bulletpoints": [
+                "How fear-based control narratives maintain elite dominance.",
+                "The role of trauma-based programming in breaking resistance.",
+                "Understanding predictive programming and mass-conditioning tactics."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "bemcs_2",
+            "title": "Mass Media as a Control Mechanism",
+            "description": "Dissecting the elite-controlled media networks and their psychological influence.",
+            "bulletpoints": [
+                "The consolidation of media under elite family ownership.",
+                "Subliminal messaging and neurolinguistic programming in entertainment.",
+                "How news cycles are manipulated to distract and mislead the public."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "bemcs_3",
+            "title": "Breaking Free from Elite Programming",
+            "description": "Strategies for deprogramming from elite-controlled narratives and reclaiming mental sovereignty.",
+            "bulletpoints": [
+                "Developing critical thinking skills to dismantle elite deception.",
+                "Rewiring belief systems away from elite-induced limitations.",
+                "How personal sovereignty neutralizes elite psychological control."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

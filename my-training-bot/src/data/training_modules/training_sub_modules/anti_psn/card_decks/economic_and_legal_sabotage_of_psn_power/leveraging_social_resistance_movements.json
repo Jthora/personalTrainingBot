@@ -1,0 +1,48 @@
+{
+    "id": "leveraging_social_resistance_movements",
+    "name": "Leveraging Social Resistance Movements",
+    "description": "Harnessing grassroots movements and social activism to undermine PSN influence and disrupt their power.",
+    "focus": [
+        "Empowering Communities Against PSNs",
+        "Creating Mass Awareness",
+        "Organizing Decentralized Resistance"
+    ],
+    "cards": [
+        {
+            "id": "l_srm_1",
+            "title": "Building Public Awareness of PSN Manipulation",
+            "description": "Educating communities about the tactics PSNs use to maintain control.",
+            "bulletpoints": [
+                "Launching information campaigns to expose PSN strategies.",
+                "Creating decentralized knowledge networks for public awareness.",
+                "Empowering individuals with counter-PSN knowledge."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "l_srm_2",
+            "title": "Creating Community Defense Frameworks",
+            "description": "Organizing self-sufficient social structures that resist PSN infiltration.",
+            "bulletpoints": [
+                "Developing mutual aid networks for economic independence.",
+                "Training communities in defensive psychological tactics.",
+                "Promoting decentralized leadership models resistant to PSN corruption."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "l_srm_3",
+            "title": "Decentralized Economic Resistance",
+            "description": "Using alternative economic models to bypass PSN-controlled systems.",
+            "bulletpoints": [
+                "Encouraging cryptocurrency adoption to avoid financial surveillance.",
+                "Supporting local economies to reduce dependence on PSN financial networks.",
+                "Leveraging barter, trade, and alternative commerce systems."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

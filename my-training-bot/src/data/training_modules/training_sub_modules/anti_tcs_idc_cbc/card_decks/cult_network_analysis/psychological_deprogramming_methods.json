@@ -1,0 +1,48 @@
+{
+    "id": "psychological_deprogramming_methods",
+    "name": "Psychological Deprogramming Methods",
+    "description": "Techniques to counteract ideological conditioning and restore independent thought.",
+    "focus": [
+        "Reversing Mind Control Techniques",
+        "Cognitive Liberation Strategies",
+        "Psychological Exit Counseling"
+    ],
+    "cards": [
+        {
+            "id": "pdm_1",
+            "title": "Identifying Thought Reform Mechanisms",
+            "description": "Understanding how cults manipulate perception and cognition.",
+            "bulletpoints": [
+                "Breaking down neuro-linguistic programming (NLP) tactics used for indoctrination.",
+                "Recognizing loaded language and thought-stopping techniques.",
+                "Differentiating between influence, persuasion, and coercive control."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "pdm_2",
+            "title": "Building Cognitive Resilience Against Cult Influence",
+            "description": "Strengthening mental defenses to prevent re-indoctrination.",
+            "bulletpoints": [
+                "Developing critical thinking filters against cult rhetoric.",
+                "Using logic and self-inquiry to dismantle false narratives.",
+                "Enhancing emotional stability to resist psychological coercion."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "pdm_3",
+            "title": "Intervention and Exit Strategies",
+            "description": "Safely guiding individuals out of cult environments.",
+            "bulletpoints": [
+                "Engaging in dialogue without triggering defensive reactions.",
+                "Using Socratic questioning to create cognitive dissonance.",
+                "Providing post-cult rehabilitation for long-term recovery."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

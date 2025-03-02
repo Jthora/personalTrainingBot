@@ -1,0 +1,48 @@
+{
+    "id": "verbal_self_defense",
+    "name": "Verbal Self-Defense",
+    "description": "Mastering the art of linguistic self-defense to neutralize manipulation, gaslighting, and coercive control.",
+    "focus": [
+        "Countering Manipulation",
+        "Conversational Power Dynamics",
+        "Defensive and Offensive Verbal Tactics"
+    ],
+    "cards": [
+        {
+            "id": "verbal_defense_1",
+            "title": "Breaking Conversational Control",
+            "description": "Tactics to dismantle control-driven dialogue and regain dominance.",
+            "bulletpoints": [
+                "Interrupting pattern-based speech derails a manipulator’s script.",
+                "Answering a question with a question forces the aggressor into a defensive posture.",
+                "Pausing before responding disarms attempts to force reactive compliance."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "verbal_defense_2",
+            "title": "Reversing Verbal Traps",
+            "description": "Techniques for countering verbal setups and logical distortions.",
+            "bulletpoints": [
+                "Turning loaded questions back on the asker prevents forced confessions.",
+                "Recognizing false dichotomies avoids being cornered into binary choices.",
+                "Calling out contradictions in real-time disrupts manipulation attempts."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "verbal_defense_3",
+            "title": "The Art of Non-Response",
+            "description": "Using silence, deflection, and calculated ambiguity to avoid being trapped.",
+            "bulletpoints": [
+                "Refusing to engage on a manipulator’s terms denies them control.",
+                "Strategic silence creates discomfort that forces them to reveal more.",
+                "Offering vague responses protects against psychological profiling."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

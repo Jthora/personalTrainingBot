@@ -1,0 +1,48 @@
+{
+    "id": "resistance_network_formation",
+    "name": "Resistance Network Formation",
+    "description": "Establishing decentralized resistance networks to counter IDC influence and maintain sovereignty.",
+    "focus": [
+        "Forming Secure Communication Channels",
+        "Building Decentralized Support Systems",
+        "Counteracting IDC Surveillance"
+    ],
+    "cards": [
+        {
+            "id": "rnf_1",
+            "title": "Forming Secure Communication Channels",
+            "description": "Developing private, encrypted, and decentralized means of information exchange.",
+            "bulletpoints": [
+                "Understanding OPSEC and INFOSEC for secure communications.",
+                "Leveraging decentralized platforms and blockchain for censorship resistance.",
+                "Using offline methods such as dead drops and couriers for high-security ops."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "rnf_2",
+            "title": "Building Decentralized Support Systems",
+            "description": "Creating local and global self-sufficient resistance communities.",
+            "bulletpoints": [
+                "Establishing parallel economies outside IDC control.",
+                "Developing community-based intelligence networks.",
+                "Coordinating autonomous action through decentralized consensus models."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "rnf_3",
+            "title": "Counteracting IDC Surveillance",
+            "description": "Mitigating exposure to elite-controlled surveillance systems.",
+            "bulletpoints": [
+                "Techniques for digital anonymity and obfuscation.",
+                "Avoiding biometric tracking and AI-driven profiling.",
+                "Using misinformation tactics to disrupt data collection operations."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

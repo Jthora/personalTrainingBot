@@ -1,0 +1,48 @@
+{
+    "id": "disrupting_psn_information_networks",
+    "name": "Disrupting PSN Information Networks",
+    "description": "Strategies to dismantle and corrupt the PSN-controlled flow of information.",
+    "focus": [
+        "Sabotaging PSN Propaganda Systems",
+        "Severing Their Influence Over Target Populations",
+        "Creating Confusion in Their Ranks"
+    ],
+    "cards": [
+        {
+            "id": "psn_info_1",
+            "title": "Exposing Contradictions in PSN Narratives",
+            "description": "Identifying weak points in their propaganda and making them public.",
+            "bulletpoints": [
+                "Tracking inconsistencies in their public statements erodes their credibility.",
+                "Highlighting hypocrisies forces them to expend energy defending themselves.",
+                "Amplifying leaked internal disagreements fractures their information control."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psn_info_2",
+            "title": "Disrupting Psychological Conditioning",
+            "description": "Interrupting PSN indoctrination by injecting counter-conditioning stimuli.",
+            "bulletpoints": [
+                "Embedding unexpected counter-messaging in their networks weakens their hold.",
+                "Using humor and satire disarms their seriousness and lowers their authority.",
+                "Promoting independent thinking disrupts their ability to control through fear."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psn_info_3",
+            "title": "Hijacking Their Communication Platforms",
+            "description": "Using their own channels to subtly undermine their messaging.",
+            "bulletpoints": [
+                "Mimicking their language patterns while altering intent disrupts follower cohesion.",
+                "Embedding double-meanings into their slogans introduces cognitive resistance.",
+                "Forcing them to overcorrect their messaging exposes internal divisions."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

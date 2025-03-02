@@ -1,0 +1,48 @@
+{
+    "id": "strategic_social_disengagement",
+    "name": "Strategic Social Disengagement",
+    "description": "Exiting toxic social networks and environments without triggering retaliation.",
+    "focus": [
+        "Stealth Exits",
+        "Minimizing Conflict",
+        "Controlled Disengagement"
+    ],
+    "cards": [
+        {
+            "id": "ssd_1",
+            "title": "The Silent Phase-Out",
+            "description": "Gradually disengaging from toxic individuals without confrontation.",
+            "bulletpoints": [
+                "Reducing availability and social presence over time.",
+                "Introducing plausible distractions to explain withdrawal.",
+                "Softening exit visibility by diversifying social circles."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ssd_2",
+            "title": "Covert Disengagement Tactics",
+            "description": "Methods to extract yourself from toxic entanglements without raising alarms.",
+            "bulletpoints": [
+                "Using misinformation as a smokescreen to cover your exit.",
+                "Seeding alternative narratives to prevent emotional pursuit.",
+                "Avoiding reactionary triggers that PSNs use to regain control."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "ssd_3",
+            "title": "Conflict-Free Breakaways",
+            "description": "Dissolving relationships with minimal backlash or social drama.",
+            "bulletpoints": [
+                "Mastering neutrality to deny emotional hooks for re-engagement.",
+                "Pre-emptively addressing expected manipulative responses.",
+                "Creating irreversible conditions that prevent rekindling."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

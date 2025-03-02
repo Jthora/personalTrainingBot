@@ -1,0 +1,48 @@
+{
+    "id": "linguistic_mind_control_patterns",
+    "name": "Linguistic Mind Control Patterns",
+    "description": "Deciphering the use of neuro-linguistic programming (NLP), doublespeak, and subliminal language patterns in IDC propaganda.",
+    "focus": [
+        "Neuro-Linguistic Programming (NLP)",
+        "Subliminal Conditioning via Language",
+        "Deconstructing Propaganda Messaging"
+    ],
+    "cards": [
+        {
+            "id": "lmcp_1",
+            "title": "The Power of Words: Programming the Mind",
+            "description": "Exploring how language is used as a tool for psychological conditioning and mass control.",
+            "bulletpoints": [
+                "Identifying NLP techniques used in political speeches and advertising.",
+                "Understanding how trigger words and phrases shape emotional responses.",
+                "Deciphering linguistic framing to detect hidden persuasive intent."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "lmcp_2",
+            "title": "Doublespeak and Orwellian Language",
+            "description": "Recognizing deceptive language patterns designed to obscure truth and manipulate perception.",
+            "bulletpoints": [
+                "Understanding how inversion and euphemisms are used to disguise reality.",
+                "Identifying psychological deflection tactics in elite-controlled media.",
+                "Analyzing historical examples of Orwellian language in state propaganda."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "lmcp_3",
+            "title": "Subliminal Messaging and Frequency Encoding",
+            "description": "Unveiling the use of subliminal linguistic techniques and vibrational entrainment in media and political discourse.",
+            "bulletpoints": [
+                "Deciphering subtext and hidden phonetic cues in elite-controlled narratives.",
+                "Understanding the link between word frequency patterns and brainwave entrainment.",
+                "Developing countermeasures to resist linguistic programming."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

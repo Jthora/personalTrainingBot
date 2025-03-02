@@ -1,0 +1,17 @@
+{
+    "id": "disrupting_psn_information_networks",
+    "name": "Disrupting PSN Information Networks",
+    "description": "Targeting and dismantling the intelligence-sharing systems that allow PSNs to coordinate control and influence.",
+    "difficulty": "Advanced",
+    "estimated_time": "6-12 months",
+    "focus": [
+        "Disrupting Covert PSN Communications",
+        "Breaking Manipulative Media Cycles",
+        "Countering Disinformation Campaigns"
+    ],
+    "cardDecks": [
+        "social_contagion_disruption",
+        "psychological_warfare_and_psn_social_exile",
+        "destabilizing_psn_narrative_control"
+    ]
+}

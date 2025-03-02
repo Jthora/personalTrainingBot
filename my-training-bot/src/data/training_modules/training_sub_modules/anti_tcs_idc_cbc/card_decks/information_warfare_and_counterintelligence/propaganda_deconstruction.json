@@ -1,0 +1,48 @@
+{
+    "id": "propaganda_deconstruction",
+    "name": "Propaganda Deconstruction",
+    "description": "Analyzing and dismantling psychological manipulation techniques embedded in media, politics, and education.",
+    "focus": [
+        "Recognizing Psychological Manipulation",
+        "Deconstructing Media Narratives",
+        "Identifying Subliminal Messaging"
+    ],
+    "cards": [
+        {
+            "id": "pd_1",
+            "title": "Detecting Manipulative Framing in News and Media",
+            "description": "Understanding how narratives are shaped to control public perception.",
+            "bulletpoints": [
+                "Identifying selective framing and omission of facts in mainstream media.",
+                "Analyzing the role of emotional triggers in propaganda.",
+                "Tracking linguistic patterns designed to induce compliance or fear."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "pd_2",
+            "title": "The Science of Subliminal Messaging and Symbolism",
+            "description": "Exposing the use of subliminal techniques to influence unconscious thought.",
+            "bulletpoints": [
+                "Recognizing hidden symbols in corporate logos, advertisements, and films.",
+                "Understanding the role of neuro-linguistic programming (NLP) in conditioning.",
+                "Deconstructing repeated motifs in entertainment media that reinforce compliance."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "pd_3",
+            "title": "Reverse Engineering Social Engineering Tactics",
+            "description": "Breaking down the step-by-step process of large-scale social manipulation.",
+            "bulletpoints": [
+                "Mapping out how fear-based narratives are weaponized.",
+                "Recognizing artificial crisis events designed to manufacture consent.",
+                "Tracing financial and institutional backing behind disinformation campaigns."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

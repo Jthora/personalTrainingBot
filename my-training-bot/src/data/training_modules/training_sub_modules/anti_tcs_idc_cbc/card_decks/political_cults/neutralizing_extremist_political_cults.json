@@ -1,0 +1,48 @@
+{
+    "id": "neutralizing_extremist_political_cults",
+    "name": "Neutralizing Extremist Political Cults",
+    "description": "Dismantling radicalized political movements through infiltration, exposure, and psychological resistance techniques.",
+    "focus": [
+        "Understanding Extremist Group Psychology",
+        "Infiltration and Disruption Strategies",
+        "Deprogramming Radicalized Individuals"
+    ],
+    "cards": [
+        {
+            "id": "nepc_1",
+            "title": "Breaking the Extremist Indoctrination Process",
+            "description": "Understanding how extremist political cults recruit, radicalize, and control members.",
+            "bulletpoints": [
+                "Recognizing key recruitment tactics and psychological pressure points.",
+                "Understanding the emotional and ideological bait used to radicalize individuals.",
+                "Mapping out how extremist movements enforce loyalty and obedience."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "nepc_2",
+            "title": "Infiltrating and Exposing Political Cults",
+            "description": "Covert strategies for gaining insider knowledge and disrupting operations.",
+            "bulletpoints": [
+                "Using social engineering techniques to blend into radicalized groups.",
+                "Identifying and extracting key defectors to weaken the movement.",
+                "Strategically leaking information to create internal divisions."
+            ],
+            "duration": "75",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "nepc_3",
+            "title": "Deprogramming Radicalized Individuals",
+            "description": "Methods for reversing ideological brainwashing in political extremists.",
+            "bulletpoints": [
+                "Using logical deconstruction to challenge extremist beliefs.",
+                "Exposing internal contradictions to create cognitive dissonance.",
+                "Providing alternative pathways for disillusioned members to exit safely."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

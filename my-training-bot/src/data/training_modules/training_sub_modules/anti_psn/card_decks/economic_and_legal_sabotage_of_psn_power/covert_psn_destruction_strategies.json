@@ -1,0 +1,48 @@
+{
+    "id": "covert_psn_destruction_strategies",
+    "name": "Covert PSN Destruction Strategies",
+    "description": "Applying stealth-based methods to dismantle PSN influence without direct confrontation.",
+    "focus": [
+        "Stealth-Based Takedown Strategies",
+        "Targeted Psychological Disruption",
+        "Systematic Dismantling of PSN Networks"
+    ],
+    "cards": [
+        {
+            "id": "c_psn_1",
+            "title": "Financial Disruptions to PSN Operations",
+            "description": "Cutting off the financial pipelines that keep PSNs operational.",
+            "bulletpoints": [
+                "Identifying hidden financial assets and offshore accounts.",
+                "Using economic pressure to force compliance or collapse.",
+                "Leveraging regulatory loopholes to create legal roadblocks."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "c_psn_2",
+            "title": "Legal Entrapment and Exposure Tactics",
+            "description": "Using the law against PSNs to remove them from positions of influence.",
+            "bulletpoints": [
+                "Exposing illegal financial transactions and regulatory violations.",
+                "Documenting criminal activity for legal intervention.",
+                "Creating whistleblower protections to encourage internal betrayals."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "c_psn_3",
+            "title": "Destabilizing PSN Internal Cohesion",
+            "description": "Using controlled disruptions to weaken PSN alliances and coordination.",
+            "bulletpoints": [
+                "Sowing mistrust within PSN networks.",
+                "Orchestrating controlled disinformation to break internal trust.",
+                "Encouraging infighting between different PSN factions."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "defensive_psionics_and_energy_shielding",
+    "name": "Defensive Psionics and Energy Shielding",
+    "description": "Advanced techniques for energy-based defense against psionic and occult attacks.",
+    "focus": [
+        "Energetic Shielding",
+        "Defensive Psionics",
+        "Energy Manipulation Countermeasures"
+    ],
+    "cards": [
+        {
+            "id": "dpe_1",
+            "title": "Constructing Energy Shields",
+            "description": "Developing a strong energetic barrier to block external influence.",
+            "bulletpoints": [
+                "Methods for visualizing and maintaining energy fields.",
+                "Techniques for reinforcing shields against psionic attacks.",
+                "How to use frequency tuning to disrupt harmful energy waves."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "dpe_2",
+            "title": "Counteracting Directed Energy Attacks",
+            "description": "Defending against weaponized energy manipulation.",
+            "bulletpoints": [
+                "Recognizing the symptoms of directed energy attacks.",
+                "Techniques for grounding and neutralizing negative energy fields.",
+                "Using harmonic resonance to disrupt external frequency interference."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "dpe_3",
+            "title": "Offensive Disruption of Occult Warfare Tactics",
+            "description": "Flipping occult and psionic attacks back onto their originators.",
+            "bulletpoints": [
+                "Using resonance reversal techniques to reflect psychic aggression.",
+                "Neutralizing curses, hexes, and energy siphoning tactics.",
+                "Developing active psionic countermeasures against manipulation attempts."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

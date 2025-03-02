@@ -1,0 +1,48 @@
+{
+    "id": "recognizing_manipulative_social_structures",
+    "name": "Recognizing Manipulative Social Structures",
+    "description": "Identifying the red flags of toxic social environments and power imbalances before they become dangerous.",
+    "focus": [
+        "Spotting Social Control Mechanisms",
+        "Detecting Emotional Enmeshment",
+        "Evaluating Group Power Dynamics"
+    ],
+    "cards": [
+        {
+            "id": "rms_1",
+            "title": "The Illusion of Consensus",
+            "description": "Understanding how manipulators manufacture agreement to reinforce control.",
+            "bulletpoints": [
+                "PSNs manipulate group dynamics to create the illusion of universal agreement.",
+                "Challenging false consensus by privately surveying individual beliefs disrupts control.",
+                "Recognizing when silence is compliance rather than genuine agreement is crucial."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "rms_2",
+            "title": "The Emotional Leash",
+            "description": "Detecting and breaking emotional dependencies created by toxic groups or individuals.",
+            "bulletpoints": [
+                "PSNs create emotional highs and lows to maintain psychological control.",
+                "Recognizing when your emotional state is dictated by an external source is key.",
+                "Breaking free involves rebuilding self-validation mechanisms independent of the group."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "rms_3",
+            "title": "Social Pyramid Schemes of Control",
+            "description": "Understanding how manipulative social hierarchies keep members trapped.",
+            "bulletpoints": [
+                "PSNs construct multi-tiered influence structures to isolate members from reality.",
+                "Identifying 'gatekeepers' who reinforce dependency can provide an exit strategy.",
+                "Disrupting the hierarchy often starts with removing oneself from key influence loops."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

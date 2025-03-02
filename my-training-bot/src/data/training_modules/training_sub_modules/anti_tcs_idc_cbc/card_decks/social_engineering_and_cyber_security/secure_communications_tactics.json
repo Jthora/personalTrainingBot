@@ -1,0 +1,48 @@
+{
+    "id": "secure_communications_tactics",
+    "name": "Secure Communications Tactics",
+    "description": "Defensive strategies to protect digital and real-world communications from interception, surveillance, and compromise.",
+    "focus": [
+        "Encryption and Secure Messaging",
+        "Privacy-Focused Online Communication",
+        "Operational Security (OpSec)"
+    ],
+    "cards": [
+        {
+            "id": "sct_1",
+            "title": "Understanding Encryption and Secure Messaging",
+            "description": "Deploying end-to-end encryption and anonymous communication methods.",
+            "bulletpoints": [
+                "Using Signal, PGP, and other encryption tools effectively.",
+                "Understanding metadata leaks and mitigation tactics.",
+                "Preventing man-in-the-middle (MITM) attacks."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "sct_2",
+            "title": "Defending Against Communication Surveillance",
+            "description": "Identifying and mitigating threats from wiretapping, digital eavesdropping, and AI-assisted surveillance.",
+            "bulletpoints": [
+                "Avoiding honey traps and social engineering setups.",
+                "Implementing voice distortion and obfuscation techniques.",
+                "Understanding SIGINT and how to counteract tracking."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "sct_3",
+            "title": "Operational Security (OpSec) for Secure Messaging",
+            "description": "Building effective OpSec habits for secure, anonymous communication.",
+            "bulletpoints": [
+                "Creating burner identities and compartmentalizing online presence.",
+                "Understanding the risks of digital footprints and metadata.",
+                "Implementing multi-layered security for sensitive operations."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

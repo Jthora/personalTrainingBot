@@ -1,0 +1,48 @@
+{
+    "id": "social_isolation_of_psns",
+    "name": "Social Isolation of PSNs",
+    "description": "Tactically reducing the social power of PSNs by dismantling their support networks.",
+    "focus": [
+        "Severing Influence Chains",
+        "Exposing Their Tactics",
+        "Neutralizing PSN Strongholds"
+    ],
+    "cards": [
+        {
+            "id": "siop_1",
+            "title": "Severing Influence Chains",
+            "description": "Breaking their network of enablers and manipulators.",
+            "bulletpoints": [
+                "Identifying key figures in their social hierarchy and neutralizing their influence.",
+                "Isolating them by encouraging their close associates to distance themselves.",
+                "Using controlled information leaks to expose their private manipulative strategies."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "siop_2",
+            "title": "Exposing PSNs to Their Social Circles",
+            "description": "Ensuring their true nature is revealed to those around them.",
+            "bulletpoints": [
+                "Using their own words and actions to create undeniable proof of their manipulation.",
+                "Encouraging independent validation of their behavior through open discussion.",
+                "Setting up scenarios that force them to reveal their true nature publicly."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "siop_3",
+            "title": "Neutralizing PSN Strongholds",
+            "description": "Targeting their most secure areas of control.",
+            "bulletpoints": [
+                "Disrupting their leadership positions by exposing their unethical actions.",
+                "Creating social resistance within groups they dominate.",
+                "Implementing strategies that force them to relocate or disengage from a position of power."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

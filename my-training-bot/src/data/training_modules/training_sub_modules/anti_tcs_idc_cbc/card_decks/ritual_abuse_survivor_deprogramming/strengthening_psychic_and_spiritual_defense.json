@@ -1,0 +1,48 @@
+{
+    "id": "strengthening_psychic_and_spiritual_defense",
+    "name": "Strengthening Psychic and Spiritual Defense",
+    "description": "Developing mental and energetic resilience to prevent reconditioning and external manipulation.",
+    "focus": [
+        "Energetic Protection Techniques",
+        "Countering Spiritual and Psychic Attacks",
+        "Mental and Emotional Fortification"
+    ],
+    "cards": [
+        {
+            "id": "spsd_1",
+            "title": "Recognizing and Deflecting Psychic Attacks",
+            "description": "Understanding how ritualistic groups use remote influence, energetic attacks, and mental coercion.",
+            "bulletpoints": [
+                "Detecting the subtle signs of energetic and psychic interference.",
+                "Applying shielding techniques to block external manipulation.",
+                "Understanding astral influence and how to counteract unwanted connections."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "spsd_2",
+            "title": "Fortifying the Mind Against Reprogramming",
+            "description": "Strategies for creating a mental firewall against attempts to reinstall trauma-based control.",
+            "bulletpoints": [
+                "Developing a psychological counter-conditioning protocol.",
+                "Applying mental discipline techniques to reject intrusive thoughts.",
+                "Using breathwork and focus training to strengthen cognitive clarity."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "spsd_3",
+            "title": "Energetic Detox and Soul Reclamation",
+            "description": "Using spiritual and energetic healing techniques to sever connections to past abuse and reclaim full sovereignty.",
+            "bulletpoints": [
+                "Using sound frequencies and vibration therapy for energy clearing.",
+                "Reclaiming spiritual identity through guided visualization and meditation.",
+                "Performing self-directed rituals to sever past energetic attachments."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

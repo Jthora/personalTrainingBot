@@ -1,0 +1,48 @@
+{
+    "id": "hidden_symbols_in_media_and_governance",
+    "name": "Hidden Symbols in Media and Governance",
+    "description": "Analyzing the use of death cult symbology in mass media, corporate logos, government institutions, and elite organizations.",
+    "focus": [
+        "Occult Symbolism in Media",
+        "Corporate and Government Symbology",
+        "Elite Power Structure Branding"
+    ],
+    "cards": [
+        {
+            "id": "hsmg_1",
+            "title": "The Language of Symbols",
+            "description": "Understanding how symbols are used to manipulate subconscious behavior and create ideological conditioning.",
+            "bulletpoints": [
+                "Identifying common occult symbols used in mainstream media.",
+                "Understanding the historical roots and evolution of elite symbology.",
+                "Analyzing how repeated exposure to symbols reinforces programming."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "hsmg_2",
+            "title": "Decoding Corporate and Government Emblems",
+            "description": "Examining the hidden messages embedded in government seals, corporate logos, and institutional branding.",
+            "bulletpoints": [
+                "Identifying Masonic, Illuminati, and occultic imagery in global governance.",
+                "Deciphering the use of numerology and sacred geometry in elite symbolism.",
+                "Understanding how colors and archetypal imagery influence mass perception."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "hsmg_3",
+            "title": "Symbolic Rituals in Mass Media Events",
+            "description": "Analyzing the occult nature of large-scale televised events and how they shape public consciousness.",
+            "bulletpoints": [
+                "Examining Super Bowl Halftime Shows, Olympic Ceremonies, and political inaugurations for ritualistic elements.",
+                "Understanding how psychological priming is embedded into mass media productions.",
+                "Tracking real-world consequences of symbolic mass rituals on public behavior."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

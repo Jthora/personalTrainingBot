@@ -1,0 +1,48 @@
+{
+    "id": "social_contagion_disruption",
+    "name": "Social Contagion Disruption",
+    "description": "Breaking the psychological and social infection spread by PSN-controlled narratives.",
+    "focus": [
+        "Mass Narrative Correction",
+        "Psychological Immunization",
+        "Reversing Social Engineering"
+    ],
+    "cards": [
+        {
+            "id": "scd_1",
+            "title": "Inoculating the Masses",
+            "description": "Creating psychological immunity against PSN influence.",
+            "bulletpoints": [
+                "Teaching pattern recognition to help people detect manipulative messaging.",
+                "Using humor and satire to make PSN narratives look absurd.",
+                "Building resilience training to prevent emotional exploitation."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "scd_2",
+            "title": "Reversing the Herd Effect",
+            "description": "Turning the power of social contagion against PSN influence.",
+            "bulletpoints": [
+                "Creating viral truth-based counter-narratives that spread organically.",
+                "Using ethical social engineering to redirect mass psychology toward reality.",
+                "Exploiting PSN overconfidence to trigger their own self-destruction."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "scd_3",
+            "title": "Hijacking Their Propaganda Systems",
+            "description": "Redirecting their psychological warfare tactics against themselves.",
+            "bulletpoints": [
+                "Using their own persuasion techniques to lead people out of their influence.",
+                "Strategically placing disruptive truths where their followers will find them.",
+                "Forcing narrative conflicts within their ranks through well-placed interventions."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

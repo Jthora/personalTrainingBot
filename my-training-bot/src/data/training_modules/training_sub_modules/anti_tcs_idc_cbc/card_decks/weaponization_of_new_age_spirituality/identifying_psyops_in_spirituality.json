@@ -1,0 +1,48 @@
+{
+    "id": "identifying_psyops_in_spirituality",
+    "name": "Identifying PsyOps in Spirituality",
+    "description": "Recognizing psychological operations (PsyOps) used to manipulate spiritual seekers and pacify resistance.",
+    "focus": [
+        "Spiritual PsyOps Detection",
+        "Controlled Opposition Tactics",
+        "False Enlightenment Narratives"
+    ],
+    "cards": [
+        {
+            "id": "psy_1",
+            "title": "Understanding Controlled Opposition in Spirituality",
+            "description": "Exposing how New Age movements are infiltrated to neutralize resistance.",
+            "bulletpoints": [
+                "Recognizing influencers who promote inaction over empowerment.",
+                "Understanding false unity and pacification narratives.",
+                "How pseudo-spiritual ideologies are used to discourage direct action."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psy_2",
+            "title": "Recognizing False Ascension Traps",
+            "description": "Analyzing how fake enlightenment systems are designed to disempower seekers.",
+            "bulletpoints": [
+                "The dangers of hyper-passivity and escapism.",
+                "How spiritual hierarchies mimic cultic power structures.",
+                "Identifying disinformation about ascension and DNA activation."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psy_3",
+            "title": "Decoding Distorted Energy Practices",
+            "description": "Understanding how spiritual teachings are manipulated to weaken individuals.",
+            "bulletpoints": [
+                "How certain meditation techniques induce submission instead of empowerment.",
+                "Examining energy practices that create dependency on external ‘masters’.",
+                "Spotting synthetic frequency manipulations disguised as healing modalities."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "economic_false_flag_identification",
+    "name": "Economic False Flag Identification",
+    "description": "Detecting and exposing fabricated financial crises used to justify elite power grabs.",
+    "focus": [
+        "Recognizing Engineered Economic Collapses",
+        "Decoding Media and Government Narratives",
+        "Tracking Elite-Driven Market Manipulations"
+    ],
+    "cards": [
+        {
+            "id": "effi_1",
+            "title": "Identifying Engineered Market Crashes",
+            "description": "Recognizing the warning signs of deliberate financial collapses.",
+            "bulletpoints": [
+                "Tracking coordinated media narratives leading up to economic events.",
+                "Analyzing stock market anomalies and synchronized financial movements.",
+                "Identifying controlled demolitions of economies used for financial resets."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "effi_2",
+            "title": "Deconstructing Media Narratives",
+            "description": "Exposing propaganda designed to justify economic sabotage tactics.",
+            "bulletpoints": [
+                "Breaking down language patterns in economic fear-mongering.",
+                "Identifying controlled experts used to shape public perception.",
+                "Tracking elite-controlled think tanks that influence policy decisions."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "effi_3",
+            "title": "Tracking Elite Financial Moves",
+            "description": "Monitoring how financial elites position themselves ahead of crises.",
+            "bulletpoints": [
+                "Following insider trading patterns leading up to economic downturns.",
+                "Mapping hedge fund strategies that profit from controlled collapses.",
+                "Tracking central bank and corporate moves that preempt policy shifts."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

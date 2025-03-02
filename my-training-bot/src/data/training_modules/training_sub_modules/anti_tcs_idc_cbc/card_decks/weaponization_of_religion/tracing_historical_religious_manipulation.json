@@ -1,0 +1,48 @@
+{
+    "id": "tracing_historical_religious_manipulation",
+    "name": "Tracing Historical Religious Manipulation",
+    "description": "Analyzing how religious doctrines have been altered over time to serve political and control agendas.",
+    "focus": [
+        "Religious Censorship and Reinterpretation",
+        "State-Controlled Theology",
+        "Historical Psyops in Religious Narratives"
+    ],
+    "cards": [
+        {
+            "id": "hrm_1",
+            "title": "Religious Censorship and Doctrinal Rewriting",
+            "description": "Uncovering how sacred texts have been altered to suit ruling powers.",
+            "bulletpoints": [
+                "Tracking modifications in religious texts across different eras.",
+                "How key teachings have been removed or rewritten.",
+                "Who controls the distribution and interpretation of religious knowledge."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "hrm_2",
+            "title": "State-Controlled Theology",
+            "description": "Examining how governments and elite factions have used religion for mass control.",
+            "bulletpoints": [
+                "How religious institutions have been integrated into state power.",
+                "The role of theocracy in enforcing ideological control.",
+                "Religious leaders acting as agents of state policy rather than spiritual guides."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "hrm_3",
+            "title": "Historical Psyops in Religious Narratives",
+            "description": "Analyzing how religious myths and stories have been weaponized to influence culture and behavior.",
+            "bulletpoints": [
+                "Examining the psychological effects of fear-based theology.",
+                "How messianic figures have been used to control populations.",
+                "Tracking the patterns of religious-based propaganda throughout history."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

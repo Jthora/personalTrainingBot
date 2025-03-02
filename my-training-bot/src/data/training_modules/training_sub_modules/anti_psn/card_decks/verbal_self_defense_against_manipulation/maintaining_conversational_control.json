@@ -1,0 +1,48 @@
+{
+    "id": "maintaining_conversational_control",
+    "name": "Maintaining Conversational Control",
+    "description": "Strategies for dictating the flow of conversation and preventing psychological entrapment.",
+    "focus": [
+        "Conversational Anchoring",
+        "Dominance Through Narrative Control",
+        "Verbal Redirection Techniques"
+    ],
+    "cards": [
+        {
+            "id": "mcc_1",
+            "title": "Establishing Conversational Boundaries",
+            "description": "Defining and enforcing strict verbal boundaries to prevent manipulation.",
+            "bulletpoints": [
+                "Using direct statements to shut down intrusive or manipulative questions.",
+                "Deploying conversational resets to reclaim control over a derailed discussion.",
+                "Practicing assertive speech patterns to signal unwavering confidence."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mcc_2",
+            "title": "The Power of Conversational Redirection",
+            "description": "Using controlled topic shifts to neutralize manipulative attempts.",
+            "bulletpoints": [
+                "Diverting attention away from manipulative subjects without appearing evasive.",
+                "Employing pattern disruption techniques to break conversational loops.",
+                "Redirecting discussions into neutral or self-serving topics."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "mcc_3",
+            "title": "Shutting Down Gaslighting in Real Time",
+            "description": "Recognizing and countering gaslighting tactics with precision.",
+            "bulletpoints": [
+                "Calling out inconsistencies in real-time to disrupt the gaslighter's control.",
+                "Refusing to engage in reality distortion tactics through fact-based assertions.",
+                "Turning gaslighting attempts into an opportunity to expose the manipulator."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

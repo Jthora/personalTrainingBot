@@ -1,0 +1,48 @@
+{
+    "id": "breaking_digital_and_physical_tracking",
+    "name": "Breaking Digital and Physical Tracking",
+    "description": "Methods to evade digital surveillance and physical pursuit in high-threat environments.",
+    "focus": [
+        "Counter-Surveillance Techniques",
+        "Disrupting Digital Tracking Systems",
+        "Avoiding Physical Pursuit and Detection"
+    ],
+    "cards": [
+        {
+            "id": "bdpt_1",
+            "title": "Neutralizing Digital Surveillance",
+            "description": "Defeating AI-powered tracking and biometric identification systems.",
+            "bulletpoints": [
+                "Disabling or spoofing facial recognition technology.",
+                "Blocking GPS and mobile signal tracking methods.",
+                "Utilizing anti-surveillance encryption techniques."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "bdpt_2",
+            "title": "Disrupting Physical Pursuit and Tracking",
+            "description": "Tactics for evading live pursuit and removing tracking devices.",
+            "bulletpoints": [
+                "Detecting and disabling RFID and GPS implants.",
+                "Using environmental factors to erase movement traces.",
+                "Deploying counter-tracking maneuvers to mislead pursuers."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "bdpt_3",
+            "title": "Defeating Predictive Tracking AI",
+            "description": "Outmaneuvering advanced behavioral tracking systems.",
+            "bulletpoints": [
+                "Altering travel patterns to prevent predictive modeling.",
+                "Using decoy digital footprints to misdirect analysts.",
+                "Understanding AI-driven behavioral tracking weaknesses."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "decentralized_autonomous_societies",
+    "name": "Decentralized Autonomous Societies",
+    "description": "Establishing self-sufficient communities that function outside IDC control structures.",
+    "focus": [
+        "Alternative Governance Models",
+        "Sovereign Resource Management",
+        "Resilient Off-Grid Infrastructures"
+    ],
+    "cards": [
+        {
+            "id": "das_1",
+            "title": "Alternative Governance Models",
+            "description": "Exploring self-governance frameworks independent of elite control.",
+            "bulletpoints": [
+                "Decentralized Autonomous Organizations (DAOs) and their applications.",
+                "Sociocratic and anarcho-syndicalist structures for collective decision-making.",
+                "Legal strategies for establishing independent jurisdictions."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "das_2",
+            "title": "Sovereign Resource Management",
+            "description": "Developing self-sustaining resource networks immune to IDC manipulation.",
+            "bulletpoints": [
+                "Food security through decentralized agricultural initiatives.",
+                "Establishing independent energy grids using alternative power sources.",
+                "Asset protection strategies against elite-driven economic warfare."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "das_3",
+            "title": "Resilient Off-Grid Infrastructures",
+            "description": "Building sustainable systems for long-term survival outside centralized control.",
+            "bulletpoints": [
+                "Establishing self-reliant water filtration and purification systems.",
+                "Developing mobile and off-grid technological solutions.",
+                "Creating community resilience plans for crisis scenarios."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

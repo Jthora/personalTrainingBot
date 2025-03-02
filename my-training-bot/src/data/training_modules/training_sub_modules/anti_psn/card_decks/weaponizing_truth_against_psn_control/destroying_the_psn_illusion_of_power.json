@@ -1,0 +1,48 @@
+{
+    "id": "destroying_the_psn_illusion_of_power",
+    "name": "Destroying the PSN Illusion of Power",
+    "description": "Exposing the fragility of PSN control structures and undermining their psychological strongholds.",
+    "focus": [
+        "Breaking Psychological Influence",
+        "Undermining Fear-Based Control",
+        "Dismantling Social Power Structures"
+    ],
+    "cards": [
+        {
+            "id": "dip_1",
+            "title": "Breaking the Illusion of Omnipotence",
+            "description": "Revealing the vulnerabilities of PSNs to dismantle their false image of control.",
+            "bulletpoints": [
+                "Exposing their reliance on perception rather than real power.",
+                "Revealing the cracks in their social and professional networks.",
+                "Highlighting past failures that disrupt the illusion of dominance."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "dip_2",
+            "title": "Destroying Fear-Based Control Mechanisms",
+            "description": "Stripping PSNs of their ability to control through fear.",
+            "bulletpoints": [
+                "Neutralizing intimidation tactics with unwavering confidence.",
+                "Exposing the psychological tricks used to instill fear in targets.",
+                "Breaking the cycle of learned helplessness in those under their control."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "dip_3",
+            "title": "Collapsing Their Social Influence",
+            "description": "Removing PSNs from their positions of power by undermining their social standing.",
+            "bulletpoints": [
+                "Using factual evidence to erode trust in their leadership.",
+                "Isolating them from key support networks through strategic exposure.",
+                "Redirecting social alliances to weaken their control structure."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

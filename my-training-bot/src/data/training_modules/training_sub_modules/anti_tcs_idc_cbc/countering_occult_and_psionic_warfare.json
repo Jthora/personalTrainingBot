@@ -1,0 +1,17 @@
+{
+    "id": "countering_occult_and_psionic_warfare",
+    "name": "Countering Occult and Psionic Warfare",
+    "description": "Training to detect, neutralize, and resist occult-based psychological manipulation and psionic warfare techniques.",
+    "difficulty": "Expert",
+    "estimated_time": "8-20 weeks",
+    "focus": [
+        "Occult Psychological Manipulation",
+        "Mind-Control Defense",
+        "Psychic Warfare Countermeasures"
+    ],
+    "cardDecks": [
+        "deciphering_occult_symbolism",
+        "mental_barrier_fortification",
+        "defensive_psionics_and_energy_shielding"
+    ]
+}

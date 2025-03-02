@@ -1,0 +1,48 @@
+{
+    "id": "breaking_cultic_psychological_manipulation",
+    "name": "Breaking Cultic Psychological Manipulation",
+    "description": "Techniques for identifying and countering the psychological tactics used by cults to control individuals and groups.",
+    "focus": [
+        "Identifying Psychological Manipulation",
+        "Escaping Groupthink and Thought Reform",
+        "Building Psychological Resilience"
+    ],
+    "cards": [
+        {
+            "id": "bcpm_1",
+            "title": "Recognizing Psychological Control Mechanisms",
+            "description": "Analyzing the psychological tactics cults use to break down resistance and enforce obedience.",
+            "bulletpoints": [
+                "Understanding love-bombing, fear-mongering, and isolation tactics.",
+                "Recognizing cognitive dissonance reinforcement.",
+                "Identifying thought-stopping techniques in cultic environments."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "bcpm_2",
+            "title": "Escaping Groupthink and Thought Reform",
+            "description": "Methods for detaching from collective programming and regaining independent critical thinking.",
+            "bulletpoints": [
+                "Challenging enforced narratives and ideological purity tests.",
+                "Using logical fallacy detection to dismantle faulty reasoning.",
+                "Developing an evidence-based approach to decision-making."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "bcpm_3",
+            "title": "Building Psychological Resilience",
+            "description": "Techniques to fortify the mind against future attempts at psychological coercion and influence.",
+            "bulletpoints": [
+                "Developing emotional detachment from manipulative influences.",
+                "Practicing reality-testing to strengthen mental defenses.",
+                "Utilizing social support systems and mentorship for reinforcement."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

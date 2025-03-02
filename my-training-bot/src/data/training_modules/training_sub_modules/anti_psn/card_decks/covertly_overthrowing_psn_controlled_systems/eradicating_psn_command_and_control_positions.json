@@ -1,0 +1,48 @@
+{
+    "id": "eradicating_psn_command_and_control_positions",
+    "name": "Eradicating PSN Command and Control Positions",
+    "description": "Tactical methods to remove PSNs from key leadership, governance, and operational roles.",
+    "focus": [
+        "Targeting High-Value PSN Leadership",
+        "Undermining Their Authority Structures",
+        "Disrupting Their Internal Communications"
+    ],
+    "cards": [
+        {
+            "id": "psn_control_1",
+            "title": "Identifying Critical PSN Power Nodes",
+            "description": "Mapping out the hierarchy of PSN influence in corporate, governmental, and societal structures.",
+            "bulletpoints": [
+                "Tracking connections between PSN-controlled executives, officials, and enforcers.",
+                "Identifying covert alliances and funding sources keeping them in power.",
+                "Pinpointing weak links in their power chain that can be leveraged for collapse."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psn_control_2",
+            "title": "Creating Leadership Vacuums",
+            "description": "Strategically destabilizing PSN leadership structures without direct confrontation.",
+            "bulletpoints": [
+                "Using insider leaks to expose corruption and force resignations.",
+                "Triggering public distrust through subtle narrative manipulation.",
+                "Orchestrating systemic audits and legal battles to remove key figures."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psn_control_3",
+            "title": "Psy-Ops and Psychological Dismantling",
+            "description": "Forcing PSN leaders into mental and emotional instability to weaken their control.",
+            "bulletpoints": [
+                "Amplifying their paranoia by creating false signals of betrayal within their own ranks.",
+                "Feeding them disinformation that forces reckless decision-making.",
+                "Breaking their confidence by orchestrating controlled failures in their initiatives."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

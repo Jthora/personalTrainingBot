@@ -1,0 +1,48 @@
+{
+    "id": "tactics_for_disrupting_false_messiahs",
+    "name": "Tactics for Disrupting False Messiahs",
+    "description": "Strategic methods to expose, counteract, and neutralize messianic cult leaders and their movements.",
+    "focus": [
+        "Neutralizing Messianic Propaganda",
+        "Exposing Charismatic Control Mechanisms",
+        "Psychological Warfare Against Cult Leadership"
+    ],
+    "cards": [
+        {
+            "id": "tdfm_1",
+            "title": "Exposing Manufactured Messianic Figures",
+            "description": "Unveiling the constructed personas of charismatic cult leaders.",
+            "bulletpoints": [
+                "Tracking financial and corporate backers behind religious movements.",
+                "Decoding the myth-making process behind false messiahs.",
+                "Highlighting contradictions and past failures in their narratives."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "tdfm_2",
+            "title": "Psychological Warfare Against Cult Leaders",
+            "description": "Tactical approaches to destabilizing the credibility of messianic figures.",
+            "bulletpoints": [
+                "Using satire and humor to disrupt their perceived divine authority.",
+                "Unraveling logical inconsistencies in their teachings and prophecies.",
+                "Leveraging their own psychological tactics against them to break trust within their followers."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "tdfm_3",
+            "title": "Breaking Mass Hypnosis and Cult Influence",
+            "description": "Techniques for disrupting the large-scale psychological grip of false messianic movements.",
+            "bulletpoints": [
+                "Orchestrating information leaks to expose internal corruption.",
+                "Redirecting mass narratives to disillusion the follower base.",
+                "Deploying counter-movements that offer alternative ideological exit paths."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

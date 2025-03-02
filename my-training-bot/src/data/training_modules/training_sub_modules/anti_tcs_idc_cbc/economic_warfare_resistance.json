@@ -1,0 +1,17 @@
+{
+    "id": "economic_warfare_resistance",
+    "name": "Economic Warfare Resistance",
+    "description": "Training in resisting economic sabotage tactics used by the Cabal of Banking Cartels (CBC) to maintain financial control.",
+    "difficulty": "Expert",
+    "estimated_time": "6-18 weeks",
+    "focus": [
+        "Financial Psychological Warfare",
+        "Supply Chain and Resource Manipulation",
+        "Inflation and Currency Devaluation Tactics"
+    ],
+    "cardDecks": [
+        "inflation_detection_and_response",
+        "decentralized_trade_networks",
+        "economic_false_flag_identification"
+    ]
+}

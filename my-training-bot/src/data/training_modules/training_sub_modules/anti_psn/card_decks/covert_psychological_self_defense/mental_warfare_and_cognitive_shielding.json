@@ -1,0 +1,48 @@
+{
+    "id": "mental_warfare_and_cognitive_shielding",
+    "name": "Mental Warfare and Cognitive Shielding",
+    "description": "Advanced mental protection techniques against PSN manipulation, gaslighting, and subliminal control.",
+    "focus": [
+        "Building Unbreakable Cognitive Defenses",
+        "Neutralizing Psychological Influence",
+        "Weaponizing Mental Resilience"
+    ],
+    "cards": [
+        {
+            "id": "psn_shielding_1",
+            "title": "Cognitive Armor Construction",
+            "description": "Developing an internal thought structure immune to external influence.",
+            "bulletpoints": [
+                "Establishing a core belief system that cannot be overridden by external narratives.",
+                "Using mental compartmentalization techniques prevents infiltration into decision-making.",
+                "Embedding trigger-response conditioning allows for instant rejection of manipulative messaging."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psn_shielding_2",
+            "title": "Disrupting Emotional Manipulation",
+            "description": "Creating emotional dissonance in response to psychological attacks.",
+            "bulletpoints": [
+                "Refusing to engage emotionally renders PSNs incapable of leveraging guilt or fear.",
+                "Rewiring personal associations with emotional triggers disrupts their ability to exploit weaknesses.",
+                "Deploying emotional redirection techniques converts negative states into positive focus."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psn_shielding_3",
+            "title": "Inducing Psychological Shockwaves",
+            "description": "Creating controlled mental disruptions to push back against PSN psychological influence.",
+            "bulletpoints": [
+                "Using verbal pattern interrupts forces PSNs into momentary cognitive resets.",
+                "Deploying confidence-based power assertions overrides their gaslighting tactics.",
+                "Leveraging non-linear conversational redirection neutralizes manipulative engagement."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

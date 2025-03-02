@@ -1,0 +1,17 @@
+{
+    "id": "dismantling_idc_power_centers",
+    "name": "Dismantling IDC Power Centers",
+    "description": "Systematic deconstruction of the major power hubs that sustain the International Death Cult’s global influence.",
+    "difficulty": "Expert",
+    "estimated_time": "24-52 weeks",
+    "focus": [
+        "Identifying Key Operational Centers",
+        "Targeting Financial and Infrastructure Weaknesses",
+        "Coordinated Disruption of Control Grids"
+    ],
+    "cardDecks": [
+        "exposing_key_idc_hubs",
+        "undermining_strategic_idc_assets",
+        "creating_global_resistance_movements"
+    ]
+}

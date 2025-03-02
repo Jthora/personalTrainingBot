@@ -1,0 +1,48 @@
+{
+    "id": "disrupting_psn_information_networks",
+    "name": "Disrupting PSN Information Networks",
+    "description": "Undermining the communication structures PSNs use to spread disinformation and maintain control.",
+    "focus": [
+        "Information Warfare Strategies",
+        "Sabotaging Disinformation Channels",
+        "Counter-Narrative Engineering"
+    ],
+    "cards": [
+        {
+            "id": "dpin_1",
+            "title": "Decoding Their Playbook",
+            "description": "Understanding how PSNs build and maintain their information networks.",
+            "bulletpoints": [
+                "Mapping the structure of their media, social, and interpersonal networks.",
+                "Identifying key influencers and disruptors within their communication web.",
+                "Tracing the flow of misinformation to disrupt its distribution."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "dpin_2",
+            "title": "Disinformation Sabotage Tactics",
+            "description": "Destroying the credibility of PSN disinformation through targeted interventions.",
+            "bulletpoints": [
+                "Injecting disruptive counter-factuals that create internal conflict.",
+                "Leveraging whistleblowers and insiders to break their illusion of authority.",
+                "Using layered disinformation reversal strategies to collapse their narrative."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "dpin_3",
+            "title": "Breaking Their Echo Chambers",
+            "description": "Weakening the closed-loop reinforcement PSNs rely on to manipulate followers.",
+            "bulletpoints": [
+                "Flooding their spaces with alternative perspectives that challenge their messaging.",
+                "Using ethical infiltration to guide their members toward independent thought.",
+                "Leveraging cognitive fatigue to overload their system with contradictions."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

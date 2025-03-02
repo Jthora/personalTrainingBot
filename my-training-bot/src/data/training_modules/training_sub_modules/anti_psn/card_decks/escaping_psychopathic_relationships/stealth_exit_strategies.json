@@ -1,0 +1,48 @@
+{
+    "id": "stealth_exit_strategies",
+    "name": "Stealth Exit Strategies",
+    "description": "Planning a calculated and covert exit from a psychopathic relationship to ensure safety and minimize fallout.",
+    "focus": [
+        "Disengagement Without Detection",
+        "Creating Alternative Support Systems",
+        "Minimizing Psychological Blowback"
+    ],
+    "cards": [
+        {
+            "id": "ses_1",
+            "title": "Recognizing the Ideal Exit Window",
+            "description": "Identifying the safest moment to leave without escalating risk.",
+            "bulletpoints": [
+                "Analyzing behavioral cycles to predict when they are most distracted.",
+                "Using planned misdirection to ensure they do not suspect the exit.",
+                "Leaving when they are at their weakest psychological state (not during rage cycles)."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ses_2",
+            "title": "Silent Resource Preparation",
+            "description": "Securing finances, documentation, and logistics without alerting the PSN.",
+            "bulletpoints": [
+                "Using covert digital storage for important documents and emergency contacts.",
+                "Gradually shifting financial independence to prevent sudden suspicion.",
+                "Arranging safe locations and emergency contacts in advance."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "ses_3",
+            "title": "Psychological Disengagement Tactics",
+            "description": "Gradually reducing their psychological grip before making your move.",
+            "bulletpoints": [
+                "Practicing emotional neutrality to avoid triggering suspicion.",
+                "Feeding them controlled false narratives to mask your true intentions.",
+                "Training yourself to resist guilt traps and manipulation before the exit."
+            ],
+            "duration": "75",
+            "difficulty": "Expert"
+        }
+    ]
+}

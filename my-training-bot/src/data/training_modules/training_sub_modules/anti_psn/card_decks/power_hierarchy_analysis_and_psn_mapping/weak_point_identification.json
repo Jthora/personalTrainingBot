@@ -1,0 +1,48 @@
+{
+    "id": "weak_point_identification",
+    "name": "Weak Point Identification",
+    "description": "Finding vulnerabilities in PSN-controlled hierarchies to disrupt and dismantle their power.",
+    "focus": [
+        "Identifying Systemic Weaknesses",
+        "Leveraging Structural Instability",
+        "Exploiting Overextensions in Control"
+    ],
+    "cards": [
+        {
+            "id": "wpi_1",
+            "title": "Recognizing Structural Weaknesses",
+            "description": "Finding the cracks in PSN power structures.",
+            "bulletpoints": [
+                "Every hierarchy has weak points—overreliance on key individuals is common.",
+                "Conflicting interests among PSN members create exploitable fractures.",
+                "Financial mismanagement and ethical violations are prime targets."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "wpi_2",
+            "title": "Leveraging PSN Overextensions",
+            "description": "How to use a PSN’s own expansion against them.",
+            "bulletpoints": [
+                "PSNs often grow too large and inefficient, creating exploitable weaknesses.",
+                "Power consolidation can lead to alienation of internal factions.",
+                "Overreach leads to increased scrutiny and exposure—use it to disrupt control."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "wpi_3",
+            "title": "Exposing Inconsistencies and Ethical Breaches",
+            "description": "Using PSNs' own contradictions to dismantle their influence.",
+            "bulletpoints": [
+                "Documented inconsistencies reveal hypocrisy and damage credibility.",
+                "Exposing unethical behavior can turn public sentiment against them.",
+                "Strategic whistleblowing disrupts power structures and weakens control."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

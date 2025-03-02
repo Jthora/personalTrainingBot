@@ -1,0 +1,48 @@
+{
+    "id": "mapping_transnational_cartels",
+    "name": "Mapping Transnational Cartels",
+    "description": "Analyzing the operational structures and geographic reach of major global crime syndicates.",
+    "focus": [
+        "Understanding Cartel Hierarchies",
+        "Tracking Key Syndicate Figures",
+        "Mapping Geographic Operations"
+    ],
+    "cards": [
+        {
+            "id": "mtc_1",
+            "title": "Cartel Organizational Structures",
+            "description": "Understanding the hierarchy and operational framework of major crime syndicates.",
+            "bulletpoints": [
+                "Crime syndicates often function with military-like hierarchy and discipline.",
+                "Different cartels specialize in various criminal enterprises (drugs, human trafficking, arms dealing).",
+                "Identifying power players, enforcers, and financial operators within a cartel network."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mtc_2",
+            "title": "Tracking Cartel Expansion Strategies",
+            "description": "How global crime networks extend their influence across borders.",
+            "bulletpoints": [
+                "Understanding cartel alliances and proxy groups in different regions.",
+                "Examining how illicit economies integrate into local political and business structures.",
+                "Identifying recruitment and radicalization techniques used by crime syndicates."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mtc_3",
+            "title": "Cartel Communication and Encryption Networks",
+            "description": "Analyzing how transnational syndicates maintain secrecy and coordination.",
+            "bulletpoints": [
+                "Cartels rely on encrypted messaging platforms, burner phones, and dark web forums.",
+                "Understanding coded language and symbols used in cartel communications.",
+                "Tracking digital footprints without exposing investigative sources."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

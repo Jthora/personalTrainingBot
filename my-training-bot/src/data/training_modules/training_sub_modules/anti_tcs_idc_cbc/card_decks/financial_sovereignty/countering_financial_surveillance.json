@@ -1,0 +1,48 @@
+{
+    "id": "countering_financial_surveillance",
+    "name": "Countering Financial Surveillance",
+    "description": "Techniques for evading mass financial monitoring, tracking, and centralized banking control.",
+    "focus": [
+        "Avoiding Financial Data Collection",
+        "Privacy-Enhanced Transactions",
+        "Escaping Government and Corporate Financial Tracking"
+    ],
+    "cards": [
+        {
+            "id": "cfs_1",
+            "title": "Understanding Financial Surveillance Systems",
+            "description": "How governments and corporations track financial transactions.",
+            "bulletpoints": [
+                "The role of banks, credit agencies, and intelligence networks in financial monitoring.",
+                "How digital transactions create permanent traceable records.",
+                "Why cash transactions are increasingly restricted in financial warfare strategies."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cfs_2",
+            "title": "Privacy-Optimized Banking and Transactions",
+            "description": "Methods to secure financial activity against monitoring.",
+            "bulletpoints": [
+                "Using decentralized, privacy-oriented cryptocurrencies.",
+                "Mixing and obfuscation techniques to hide financial trails.",
+                "Offshore banking and alternative asset protection strategies."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cfs_3",
+            "title": "Escaping Financial Censorship and Asset Seizures",
+            "description": "Ensuring financial freedom against state or institutional control mechanisms.",
+            "bulletpoints": [
+                "Diversifying asset storage to avoid a single point of failure.",
+                "Legal loopholes to protect assets from government seizure.",
+                "Creating emergency financial escape plans in case of economic crackdown."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

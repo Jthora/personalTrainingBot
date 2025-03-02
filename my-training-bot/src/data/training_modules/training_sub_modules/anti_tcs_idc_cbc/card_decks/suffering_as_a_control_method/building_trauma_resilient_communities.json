@@ -1,0 +1,48 @@
+{
+    "id": "building_trauma_resilient_communities",
+    "name": "Building Trauma-Resilient Communities",
+    "description": "Strategies for fostering collective strength and resilience in communities targeted by psychological and economic warfare.",
+    "focus": [
+        "Mental and Emotional Resilience Strategies",
+        "Community-Based Trauma Recovery",
+        "Psychological Immunity Against Systemic Oppression"
+    ],
+    "cards": [
+        {
+            "id": "btrc_1",
+            "title": "Strengthening Mental and Emotional Resilience",
+            "description": "Building individual resistance against suffering-based programming.",
+            "bulletpoints": [
+                "Developing psychological immunity to mass trauma conditioning.",
+                "Reinforcing inner stability through cognitive reprogramming.",
+                "Creating personal frameworks for overcoming imposed suffering."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "btrc_2",
+            "title": "Fostering Community-Based Recovery Systems",
+            "description": "Establishing networks of mutual support for trauma survivors.",
+            "bulletpoints": [
+                "Developing group healing strategies outside controlled institutions.",
+                "Creating decentralized psychological and emotional support frameworks.",
+                "Empowering communities through knowledge-sharing and collective resilience."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "btrc_3",
+            "title": "Defending Against Systemic Psychological Oppression",
+            "description": "Long-term strategies to ensure lasting resistance to mass suffering tactics.",
+            "bulletpoints": [
+                "Embedding resilience into cultural and educational systems.",
+                "Creating self-sustaining community defense mechanisms.",
+                "Counteracting long-term psychological damage caused by imposed suffering."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

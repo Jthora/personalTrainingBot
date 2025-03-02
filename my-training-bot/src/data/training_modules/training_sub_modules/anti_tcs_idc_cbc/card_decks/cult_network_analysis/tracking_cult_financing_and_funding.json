@@ -1,0 +1,48 @@
+{
+    "id": "tracking_cult_financing_and_funding",
+    "name": "Tracking Cult Financing and Funding",
+    "description": "Exposing the financial channels and revenue streams that sustain cult operations.",
+    "focus": [
+        "Illicit Financial Networks",
+        "Charitable Front Organizations",
+        "Government and Corporate Backing"
+    ],
+    "cards": [
+        {
+            "id": "tcf_1",
+            "title": "Following the Money Trail",
+            "description": "Tracing financial transactions to reveal cult funding sources.",
+            "bulletpoints": [
+                "Identifying offshore accounts and shell corporations.",
+                "Deciphering tax-exempt status manipulation.",
+                "Tracking donations and financial flows between entities."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "tcf_2",
+            "title": "Disrupting Cult Revenue Streams",
+            "description": "Strategies for cutting off financial lifelines to dismantle cult operations.",
+            "bulletpoints": [
+                "Exposing fraudulent non-profits and laundering schemes.",
+                "Pressuring financial institutions to investigate suspicious transactions.",
+                "Using intelligence leaks to create public scrutiny on funding sources."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "tcf_3",
+            "title": "Government and Corporate Ties to Cult Networks",
+            "description": "Unveiling how elite interests secretly back cult organizations.",
+            "bulletpoints": [
+                "Identifying intelligence agency connections to cult leadership.",
+                "Revealing the corporate interests that benefit from cult activity.",
+                "Analyzing historical cases of state-sponsored cult operations."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

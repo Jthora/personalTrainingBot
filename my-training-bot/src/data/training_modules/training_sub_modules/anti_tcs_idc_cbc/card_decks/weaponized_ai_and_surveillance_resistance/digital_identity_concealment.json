@@ -1,0 +1,48 @@
+{
+    "id": "digital_identity_concealment",
+    "name": "Digital Identity Concealment",
+    "description": "Methods to prevent AI and surveillance systems from compiling accurate digital identities.",
+    "focus": [
+        "Anonymity and Privacy Strategies",
+        "Avoiding Biometric and Metadata Tracking",
+        "Preventing AI-Based Identity Correlation"
+    ],
+    "cards": [
+        {
+            "id": "dic_1",
+            "title": "Breaking AI Metadata Correlation",
+            "description": "How AI connects digital footprints across multiple platforms and how to break these links.",
+            "bulletpoints": [
+                "Understanding metadata tracking in online communications.",
+                "Using compartmentalization techniques to prevent identity correlation.",
+                "How to maintain operational security (OPSEC) across different accounts."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "dic_2",
+            "title": "Avoiding Biometric and Facial Recognition Tracking",
+            "description": "Techniques to bypass AI-powered biometric identification systems.",
+            "bulletpoints": [
+                "How facial recognition databases operate and how to evade them.",
+                "Using adversarial techniques to fool AI-based facial and voice recognition.",
+                "How AI extracts behavioral biometrics from typing, speech, and movement."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "dic_3",
+            "title": "Decentralized Identity and Off-Grid Digital Presence",
+            "description": "Building digital identities that exist outside centralized AI tracking systems.",
+            "bulletpoints": [
+                "Leveraging decentralized web technologies for anonymous activity.",
+                "Using offline encryption tools to protect private communications.",
+                "How to create digital identities that are resistant to AI profiling."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

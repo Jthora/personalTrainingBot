@@ -1,0 +1,48 @@
+{
+    "id": "truth_as_a_disruptive_weapon",
+    "name": "Truth as a Disruptive Weapon",
+    "description": "Using irrefutable facts, logic, and consistency to break through PSN deception and manipulation.",
+    "focus": [
+        "Unmasking False Narratives",
+        "Using Evidence to Destroy Lies",
+        "Breaking Psychological Conditioning"
+    ],
+    "cards": [
+        {
+            "id": "tdw_1",
+            "title": "Detecting and Unmasking Deception",
+            "description": "Recognizing deception patterns and exposing hidden inconsistencies.",
+            "bulletpoints": [
+                "Identifying contradictions in speech and behavior that indicate deception.",
+                "Using precise questioning to expose logical inconsistencies.",
+                "Recognizing when emotional manipulation is being used to distort reality."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "tdw_2",
+            "title": "The Power of Documented Truth",
+            "description": "Using written, recorded, and verifiable evidence to shut down manipulative narratives.",
+            "bulletpoints": [
+                "Keeping records of past statements to reveal contradictions.",
+                "Utilizing audio, video, and text documentation to create an undeniable trail of truth.",
+                "Leveraging third-party confirmation to strengthen credibility."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "tdw_3",
+            "title": "Pattern Recognition in Manipulation",
+            "description": "Recognizing repeated patterns in PSN behavior and using them against them.",
+            "bulletpoints": [
+                "Analyzing historical patterns of manipulation to predict future tactics.",
+                "Documenting behavioral loops that reveal PSN operating structures.",
+                "Using data-driven truth as a means to counter long-term deception."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "mental_immunity_training",
+    "name": "Mental Immunity Training",
+    "description": "Developing mental resilience to withstand psychological attacks and emotional manipulation.",
+    "focus": [
+        "Cognitive Armor Building",
+        "Emotional Resilience",
+        "Self-Validation"
+    ],
+    "cards": [
+        {
+            "id": "mit_1",
+            "title": "Developing Cognitive Armor",
+            "description": "Creating mental defenses against psychological attacks.",
+            "bulletpoints": [
+                "Regularly exposing yourself to controlled stress builds resilience against real-world manipulation.",
+                "Rehearsing mental counter-scripts helps prevent emotional hijacking by PSNs.",
+                "Practicing skepticism allows you to detect and reject manipulative narratives before they take hold."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mit_2",
+            "title": "Emotional Resilience Against Manipulation",
+            "description": "Training your emotions to remain unaffected by PSN tactics.",
+            "bulletpoints": [
+                "Recognizing and detaching from emotional baiting prevents PSNs from exploiting reactions.",
+                "Reframing negative experiences into learning opportunities enhances long-term resistance.",
+                "Practicing mindfulness reduces impulsive reactions to manipulative psychological triggers."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mit_3",
+            "title": "The Power of Self-Validation",
+            "description": "Becoming psychologically self-sufficient to eliminate dependence on external validation.",
+            "bulletpoints": [
+                "Cultivating self-trust ensures external opinions do not dictate your self-worth.",
+                "Developing a personal code of ethics creates an unshakable internal compass.",
+                "Mastering the ability to self-assess negates the influence of PSN gaslighting tactics."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "leveraging_internal_sabotage",
+    "name": "Leveraging Internal Sabotage",
+    "description": "Using defectors to weaken the PSN structure from within before extraction.",
+    "focus": [
+        "Covert Sabotage Tactics",
+        "Strategic Disinformation",
+        "Undermining PSN Leadership"
+    ],
+    "cards": [
+        {
+            "id": "lis_1",
+            "title": "Planting False Narratives",
+            "description": "Using defectors to spread misinformation and create internal fractures.",
+            "bulletpoints": [
+                "PSN networks rely on trust; false narratives erode their cohesion.",
+                "Encouraging defectors to plant doubt about leadership decisions creates instability.",
+                "The goal is to make the PSN implode before direct intervention is required."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "lis_2",
+            "title": "Weaponizing Paranoia",
+            "description": "Using a defector’s inside knowledge to increase distrust among PSN members.",
+            "bulletpoints": [
+                "Encourage defectors to expose minor internal betrayals that fuel larger paranoia.",
+                "When PSN members believe there are traitors among them, infighting increases.",
+                "A fractured PSN is easier to dismantle than a unified one."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "lis_3",
+            "title": "Strategic Extraction Timing",
+            "description": "Knowing when and how to remove a defector without raising suspicion.",
+            "bulletpoints": [
+                "A sudden defection raises alarms, but a slow withdrawal reduces backlash.",
+                "Allow defectors to phase out by creating plausible reasons for their departure.",
+                "Simultaneously executing multiple defections further disorients the PSN."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

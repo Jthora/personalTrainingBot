@@ -1,0 +1,48 @@
+{
+    "id": "detoxifying_emotional_attachments",
+    "name": "Detoxifying Emotional Attachments",
+    "description": "Purging toxic emotional bonds and replacing them with self-sustaining emotional resilience.",
+    "focus": [
+        "Emotional Cleansing Techniques",
+        "Detachment from Manipulative Bonds",
+        "Strengthening Personal Identity"
+    ],
+    "cards": [
+        {
+            "id": "dea_1",
+            "title": "Identifying Emotional Hooks",
+            "description": "Recognizing the emotional triggers that keep you psychologically entangled with a PSN.",
+            "bulletpoints": [
+                "Analyzing patterns of guilt, obligation, and manufactured dependency.",
+                "Detecting and dismantling implanted fear narratives that prevent separation.",
+                "Recognizing where emotional loyalty has been weaponized against you."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "dea_2",
+            "title": "Emotional Decontamination Rituals",
+            "description": "Methods for emotionally purging PSN influence from the subconscious.",
+            "bulletpoints": [
+                "Using guided visualization to detach lingering emotional residues.",
+                "Practicing emotional transmutation techniques to convert past pain into personal strength.",
+                "Employing structured grieving to process loss without reattachment."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "dea_3",
+            "title": "Rebuilding Self-Identity After Emotional Hijacking",
+            "description": "Restoring your authentic self after prolonged exposure to a PSN.",
+            "bulletpoints": [
+                "Reconstructing a personal narrative independent of PSN influence.",
+                "Strengthening self-concept through affirmations and self-directed beliefs.",
+                "Practicing ego reinforcement exercises to eliminate past self-doubt."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "inflation_detection_and_response",
+    "name": "Inflation Detection and Response",
+    "description": "Identifying and mitigating the impact of artificial inflation tactics used to destabilize economies.",
+    "focus": [
+        "Recognizing Hyperinflation Triggers",
+        "Protecting Wealth Against Currency Devaluation",
+        "Counteracting Economic Destabilization"
+    ],
+    "cards": [
+        {
+            "id": "idr_1",
+            "title": "Spotting Inflation Manipulation Tactics",
+            "description": "Recognizing how banking cartels and central banks create artificial inflation to extract wealth.",
+            "bulletpoints": [
+                "Understanding the psychological effects of inflation on mass behavior.",
+                "Identifying key policy changes that trigger economic instability.",
+                "Tracking central bank interest rate manipulations and fiat currency overprinting."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "idr_2",
+            "title": "Wealth Preservation in Inflationary Periods",
+            "description": "Tactics for maintaining financial stability during currency devaluation.",
+            "bulletpoints": [
+                "Utilizing hard assets and alternative stores of value (gold, silver, cryptocurrency, etc.).",
+                "Diversifying wealth storage across decentralized and resilient financial systems.",
+                "Identifying inflation-resistant investment opportunities."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "idr_3",
+            "title": "Community-Based Economic Stability",
+            "description": "Leveraging local networks to bypass inflation-driven economic control.",
+            "bulletpoints": [
+                "Creating decentralized economic exchange models.",
+                "Developing barter and trade systems to resist fiat currency collapse.",
+                "Strengthening local food and energy security to reduce reliance on controlled supply chains."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

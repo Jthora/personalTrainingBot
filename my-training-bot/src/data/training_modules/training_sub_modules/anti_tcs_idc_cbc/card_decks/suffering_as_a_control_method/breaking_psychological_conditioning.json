@@ -1,0 +1,48 @@
+{
+    "id": "breaking_psychological_conditioning",
+    "name": "Breaking Psychological Conditioning",
+    "description": "Techniques to recognize, resist, and dismantle psychological conditioning imposed through trauma and suffering.",
+    "focus": [
+        "Deconstructing Trauma-Based Programming",
+        "Recognizing Patterns of Psychological Manipulation",
+        "Neutralizing Indoctrination Through Suffering"
+    ],
+    "cards": [
+        {
+            "id": "bpc_1",
+            "title": "Recognizing Trauma-Based Control Systems",
+            "description": "Identifying how trauma is deliberately used to create compliance.",
+            "bulletpoints": [
+                "Understanding the link between trauma and obedience.",
+                "Recognizing cyclical suffering as a form of social programming.",
+                "Identifying signs of psychological indoctrination through pain."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "bpc_2",
+            "title": "Counteracting Trauma-Induced Compliance",
+            "description": "Methods to prevent psychological surrender under coercive suffering.",
+            "bulletpoints": [
+                "Rebuilding mental autonomy after exposure to trauma-based control.",
+                "Strengthening personal resilience against emotional manipulation.",
+                "Recognizing and neutralizing social engineering through suffering."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "bpc_3",
+            "title": "Disrupting Psychological Warfare Techniques",
+            "description": "Strategies to dismantle the effectiveness of psychological trauma as a control tactic.",
+            "bulletpoints": [
+                "Deprogramming trauma responses that reinforce submission.",
+                "Using logic and emotional stability to neutralize psychological attacks.",
+                "Rewiring mental frameworks to prevent exploitation through suffering."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

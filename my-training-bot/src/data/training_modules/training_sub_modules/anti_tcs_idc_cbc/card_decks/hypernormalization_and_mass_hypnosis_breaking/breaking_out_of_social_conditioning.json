@@ -1,0 +1,48 @@
+{
+    "id": "breaking_out_of_social_conditioning",
+    "name": "Breaking Out of Social Conditioning",
+    "description": "Overcoming programmed belief systems and reclaiming cognitive autonomy.",
+    "focus": [
+        "Challenging Deeply Ingrained Beliefs",
+        "Recognizing Social Engineering",
+        "Reprogramming the Subconscious"
+    ],
+    "cards": [
+        {
+            "id": "bosc_1",
+            "title": "Deprogramming Systemic Indoctrination",
+            "description": "Identifying and neutralizing lifelong programming from education, media, and culture.",
+            "bulletpoints": [
+                "Understanding how education systems enforce conformity and obedience.",
+                "Recognizing the use of shame and social pressure to enforce false paradigms.",
+                "Techniques for questioning long-held beliefs without cognitive distress."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "bosc_2",
+            "title": "Mental Rewiring and Reality Testing",
+            "description": "Developing methods to verify reality independently from societal programming.",
+            "bulletpoints": [
+                "Techniques for stripping away subconscious social conditioning.",
+                "Recognizing when emotions have been artificially induced through programming.",
+                "Creating independent knowledge verification protocols."
+            ],
+            "duration": "75",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "bosc_3",
+            "title": "The Social Engineering Blueprint",
+            "description": "Understanding the methods used to shape mass belief systems.",
+            "bulletpoints": [
+                "Breaking down the think-tank structure behind global social engineering.",
+                "Recognizing predictive programming in entertainment media.",
+                "Understanding the role of controlled opposition in false awakening movements."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

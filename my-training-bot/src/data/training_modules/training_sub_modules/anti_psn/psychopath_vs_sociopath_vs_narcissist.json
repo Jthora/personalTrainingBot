@@ -1,0 +1,17 @@
+{
+    "id": "psychopath_vs_sociopath_vs_narcissist",
+    "name": "Psychopath vs. Sociopath vs. Narcissist",
+    "description": "Understanding the key differences between Psychopaths, Sociopaths, and Narcissists, and how they operate in various environments.",
+    "difficulty": "Intermediate",
+    "estimated_time": "4-6 months",
+    "focus": [
+        "Personality Type Differentiation",
+        "Tactics and Behavioral Traits",
+        "Power and Control Mechanisms"
+    ],
+    "cardDecks": [
+        "personality_type_differentiation",
+        "tactics_and_behavioral_traits",
+        "power_and_control_mechanisms"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "id": "turning_psn_tactics_against_them",
+    "name": "Turning PSN Tactics Against Them",
+    "description": "Adapting and redirecting the psychological and manipulation tactics used by PSNs to disrupt their own control systems.",
+    "difficulty": "Expert",
+    "estimated_time": "9-18 months",
+    "focus": [
+        "Psychological Reversal Techniques",
+        "Misdirection and Counter-Deception",
+        "Destabilizing Manipulative Frameworks"
+    ],
+    "cardDecks": [
+        "psychological_reversal_techniques",
+        "misdirection_and_counter_deception",
+        "destabilizing_manipulative_frameworks"
+    ]
+}

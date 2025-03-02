@@ -1,0 +1,48 @@
+{
+    "id": "strengthening_core_identity",
+    "name": "Strengthening Core Identity",
+    "description": "Building an unshakable sense of self to resist external influence and identity erosion.",
+    "focus": [
+        "Self-Concept Solidification",
+        "Boundary Enforcement",
+        "Identity Resilience"
+    ],
+    "cards": [
+        {
+            "id": "sci_1",
+            "title": "Reinforcing Self-Concept Against PSN Attacks",
+            "description": "Strengthening your identity to remain unaffected by PSN-induced self-doubt.",
+            "bulletpoints": [
+                "Documenting your core values ensures they are not overwritten by external pressure.",
+                "Maintaining independent thought prevents forced assimilation into PSN-driven narratives.",
+                "Revisiting personal achievements counters any manufactured inferiority complexes imposed by PSNs."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "sci_2",
+            "title": "Boundary Enforcement and Psychological Sovereignty",
+            "description": "Establishing and maintaining personal boundaries against psychological invasions.",
+            "bulletpoints": [
+                "Setting clear behavioral expectations forces manipulators to reveal themselves.",
+                "Enforcing disengagement when boundaries are violated denies PSNs control over your space.",
+                "Rejecting forced emotional labor prevents PSNs from draining your mental energy."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "sci_3",
+            "title": "Identity Resilience Against Social Engineering",
+            "description": "Maintaining authenticity despite attempts to reshape your beliefs and behaviors.",
+            "bulletpoints": [
+                "Maintaining long-term awareness of manipulation tactics prevents gradual erosion of identity.",
+                "Fostering independent critical thinking blocks indoctrination attempts.",
+                "Avoiding the need for external validation ensures control over personal decision-making."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

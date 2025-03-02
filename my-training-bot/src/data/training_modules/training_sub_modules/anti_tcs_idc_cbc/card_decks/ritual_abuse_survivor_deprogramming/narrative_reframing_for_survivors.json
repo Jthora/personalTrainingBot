@@ -1,0 +1,48 @@
+{
+    "id": "narrative_reframing_for_survivors",
+    "name": "Narrative Reframing for Survivors",
+    "description": "Empowering survivors to rewrite their personal narratives by breaking free from the implanted beliefs and distortions imposed through ritual abuse.",
+    "focus": [
+        "Reclaiming Personal Identity",
+        "Deconstructing Trauma-Based False Beliefs",
+        "Cognitive Reframing and Reality Reconstruction"
+    ],
+    "cards": [
+        {
+            "id": "nrs_1",
+            "title": "Recognizing Implanted False Narratives",
+            "description": "Identifying the subconscious belief systems forced onto survivors through repeated psychological reinforcement.",
+            "bulletpoints": [
+                "Distinguishing between authentic self-perception and trauma-imposed identities.",
+                "Identifying keywords, phrases, and triggers used in mental conditioning.",
+                "Detecting and dismantling self-sabotaging thought patterns installed through manipulation."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "nrs_2",
+            "title": "Rewriting Internalized Conditioning",
+            "description": "Using cognitive restructuring techniques to replace trauma-based programming with self-directed beliefs.",
+            "bulletpoints": [
+                "Utilizing journaling exercises to reconstruct personal truth.",
+                "Applying symbolic language to overwrite destructive subconscious imprints.",
+                "Developing new self-definitions that reject past imposed roles."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "nrs_3",
+            "title": "Creating a Future Unshackled by the Past",
+            "description": "Techniques for moving forward without the weight of ritualistic programming dictating behavior.",
+            "bulletpoints": [
+                "Visualizing a self-defined future untainted by past manipulation.",
+                "Using emotional reprogramming to detach from past trauma cycles.",
+                "Building resilience against potential triggers and residual mental conditioning."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

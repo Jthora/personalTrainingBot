@@ -1,0 +1,48 @@
+{
+    "id": "reclaiming_authentic_spiritual_power",
+    "name": "Reclaiming Authentic Spiritual Power",
+    "description": "Methods to reconnect with true spiritual sovereignty beyond controlled spiritual systems.",
+    "focus": [
+        "Restoring Inner Spiritual Authority",
+        "Energetic and Psychic Sovereignty",
+        "Detoxing from False Spiritual Constructs"
+    ],
+    "cards": [
+        {
+            "id": "auth_1",
+            "title": "Restoring Inner Spiritual Authority",
+            "description": "Breaking free from external dependency and reclaiming self-mastery.",
+            "bulletpoints": [
+                "Shifting from belief to direct experience.",
+                "Understanding personal energetic resonance and intuition.",
+                "Breaking the savior complex and external authority fixation."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "auth_2",
+            "title": "Energetic and Psychic Sovereignty",
+            "description": "Rebuilding energetic strength and defending against external manipulation.",
+            "bulletpoints": [
+                "Developing mental and psychic shielding techniques.",
+                "Strengthening auric fields to resist subtle energetic coercion.",
+                "Practices for enhancing self-reliant spiritual awareness."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "auth_3",
+            "title": "Detoxing from False Spiritual Constructs",
+            "description": "Purging subconscious programming from infiltrated belief systems.",
+            "bulletpoints": [
+                "Recognizing and releasing subconscious limiting beliefs.",
+                "Rebuilding spiritual pathways through direct, unmediated experience.",
+                "Integrating higher wisdom without external dependencies."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

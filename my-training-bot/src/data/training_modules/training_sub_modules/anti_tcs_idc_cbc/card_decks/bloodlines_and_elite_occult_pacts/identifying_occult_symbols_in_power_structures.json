@@ -1,0 +1,48 @@
+{
+    "id": "identifying_occult_symbols_in_power_structures",
+    "name": "Identifying Occult Symbols in Power Structures",
+    "description": "Recognizing the esoteric symbols, sigils, and coded language used by elite families to signify their dominance and influence.",
+    "focus": [
+        "Symbolism in Elite Networks",
+        "Esoteric Language of Power",
+        "Hidden Rituals in Plain Sight"
+    ],
+    "cards": [
+        {
+            "id": "ios_1",
+            "title": "Decoding Elite Symbolism",
+            "description": "Understanding the hidden meanings behind the symbols used by elite groups.",
+            "bulletpoints": [
+                "Common symbols used in government, banking, and corporate logos.",
+                "How numerology and sacred geometry influence elite decision-making.",
+                "Tracing occult iconography in architecture and public monuments."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ios_2",
+            "title": "Esoteric Language and Hand Signs",
+            "description": "Breaking down the nonverbal communication methods used by elite factions.",
+            "bulletpoints": [
+                "Understanding Masonic handshakes and gestures.",
+                "The role of Latin, Greek, and ancient languages in coded elite messages.",
+                "Identifying power signaling in public speeches and media broadcasts."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "ios_3",
+            "title": "Hidden Rituals in Elite Institutions",
+            "description": "Analyzing the secretive ceremonies and rites performed by ruling bloodlines.",
+            "bulletpoints": [
+                "Occult initiations within political, corporate, and entertainment circles.",
+                "Historical blood sacrifices and their modern equivalents.",
+                "How secret societies use ritual to bind members into loyalty."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

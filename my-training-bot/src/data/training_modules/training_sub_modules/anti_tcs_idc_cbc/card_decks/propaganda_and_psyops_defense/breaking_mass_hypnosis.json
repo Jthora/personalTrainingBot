@@ -1,0 +1,48 @@
+{
+    "id": "breaking_mass_hypnosis",
+    "name": "Breaking Mass Hypnosis",
+    "description": "Techniques to deconstruct the psychological and hypnotic mechanisms that create mass compliance.",
+    "focus": [
+        "Hypnotic Language and Suggestion",
+        "Deprogramming Conditioned Responses",
+        "Breaking the Mass Delusion Cycle"
+    ],
+    "cards": [
+        {
+            "id": "bmh_1",
+            "title": "Understanding the Mechanics of Mass Hypnosis",
+            "description": "Breaking down how hypnotic suggestion is embedded into public messaging.",
+            "bulletpoints": [
+                "Recognizing trance induction techniques in speeches and media.",
+                "Understanding how repetition reinforces hypnotic control.",
+                "Analyzing how social proof reinforces false consensus."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "bmh_2",
+            "title": "Deprogramming Hypnotic Conditioning",
+            "description": "Practical methods for breaking free from mass hypnosis effects.",
+            "bulletpoints": [
+                "Using pattern interruption techniques to disrupt trance states.",
+                "Recognizing and reversing linguistic programming cues.",
+                "Applying self-inquiry to dismantle conditioned responses."
+            ],
+            "duration": "75",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "bmh_3",
+            "title": "Countering Mass Compliance Strategies",
+            "description": "Techniques to disrupt large-scale psychological conditioning.",
+            "bulletpoints": [
+                "Using logic-based counter-narratives to break hypnotic suggestion.",
+                "Exposing the artificial nature of manufactured consensus.",
+                "Creating alternative networks of information dissemination."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

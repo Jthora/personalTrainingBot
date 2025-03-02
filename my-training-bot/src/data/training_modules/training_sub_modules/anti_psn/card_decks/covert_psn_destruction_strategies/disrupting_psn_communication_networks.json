@@ -1,0 +1,48 @@
+{
+    "id": "disrupting_psn_communication_networks",
+    "name": "Disrupting PSN Communication Networks",
+    "description": "Tactical methods to dismantle PSN-controlled communication systems and disorient their information flow.",
+    "focus": [
+        "Intercepting and Manipulating PSN Messaging",
+        "Severing Psychological Links Between PSNs",
+        "Sabotaging Digital and Physical Communication Networks"
+    ],
+    "cards": [
+        {
+            "id": "psn_comm_1",
+            "title": "Creating Controlled Misinformation",
+            "description": "Planting deliberate false narratives to fragment PSN coordination.",
+            "bulletpoints": [
+                "Fabricating plausible yet misleading intel forces PSNs into defensive positioning.",
+                "Seeding contradictions within their networks fosters internal distrust.",
+                "Using time-delayed misinformation causes progressive network instability."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psn_comm_2",
+            "title": "Jamming Psychological Signals",
+            "description": "Disrupting PSN linguistic patterns and subliminal influence methods.",
+            "bulletpoints": [
+                "Breaking their hypnotic speech rhythms weakens mass psychological control.",
+                "Flooding their space with conflicting narratives overloads their propaganda systems.",
+                "Using absurdity or unpredictability causes cognitive dissonance in their followers."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "psn_comm_3",
+            "title": "Severing Key Network Links",
+            "description": "Targeting linchpin communicators within the PSN hierarchy.",
+            "bulletpoints": [
+                "Neutralizing primary information brokers collapses command cohesion.",
+                "Triggering infighting by exposing manipulation tactics disrupts unity.",
+                "Compromising their trusted intermediaries isolates key operatives."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

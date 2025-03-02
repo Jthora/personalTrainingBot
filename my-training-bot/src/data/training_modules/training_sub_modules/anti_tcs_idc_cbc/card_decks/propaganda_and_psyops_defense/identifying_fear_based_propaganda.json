@@ -1,0 +1,48 @@
+{
+    "id": "identifying_fear_based_propaganda",
+    "name": "Identifying Fear-Based Propaganda",
+    "description": "Techniques to recognize and dismantle fear-based psychological manipulation used in mass media and political narratives.",
+    "focus": [
+        "Recognizing Fear-Based Messaging",
+        "Psychological Trigger Analysis",
+        "Deconstructing Crisis Narratives"
+    ],
+    "cards": [
+        {
+            "id": "ifbp_1",
+            "title": "Understanding Fear Conditioning in Propaganda",
+            "description": "Breaking down how fear is systematically weaponized in media and politics.",
+            "bulletpoints": [
+                "Analyzing the psychology behind fear-based compliance.",
+                "Recognizing patterns of emotional manipulation in crisis events.",
+                "Decoding predictive programming and subliminal suggestion."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ifbp_2",
+            "title": "Detecting Manipulative Language and Imagery",
+            "description": "Learning how specific words, visuals, and symbols trigger fear responses.",
+            "bulletpoints": [
+                "Identifying linguistic framing techniques that reinforce mass panic.",
+                "Breaking down imagery and video sequences designed for emotional hijacking.",
+                "Recognizing the use of authority figures to reinforce false security narratives."
+            ],
+            "duration": "75",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "ifbp_3",
+            "title": "Countering Fear-Based Messaging",
+            "description": "Methods for psychologically neutralizing fear-based propaganda.",
+            "bulletpoints": [
+                "Developing cognitive resistance techniques to bypass fear responses.",
+                "Applying strategic skepticism to crisis reporting and emergency declarations.",
+                "Using logical reframing to dismantle fear narratives and regain control."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

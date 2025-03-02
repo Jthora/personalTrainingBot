@@ -1,0 +1,48 @@
+{
+    "id": "black_budget_projects_exposure",
+    "name": "Black Budget Projects Exposure",
+    "description": "Investigating classified projects funded through untraceable financial mechanisms.",
+    "focus": [
+        "Secret Military and Technological Development",
+        "Illegal Global Operations",
+        "Covert Financial Structures"
+    ],
+    "cards": [
+        {
+            "id": "bbp_1",
+            "title": "The Black Budget System",
+            "description": "How trillions of dollars disappear into classified projects.",
+            "bulletpoints": [
+                "Black budgets fund deep-state operations without congressional oversight.",
+                "Missing defense funds and unaccounted expenditures signal hidden agendas.",
+                "Advanced technological projects are concealed behind layers of secrecy."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "bbp_2",
+            "title": "Underground Bases and Off-World Operations",
+            "description": "Exploring the extent of classified military projects beyond public knowledge.",
+            "bulletpoints": [
+                "Secret underground facilities operate outside standard governance.",
+                "Breakaway civilizations may be developing off-world infrastructure.",
+                "Classified aerospace technology surpasses public sector advancements."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "bbp_3",
+            "title": "Tracking Illicit Financial Pipelines",
+            "description": "Following the money to uncover the operational reach of black budget programs.",
+            "bulletpoints": [
+                "The Federal Reserve and international banking cartels facilitate off-record spending.",
+                "Shell companies and offshore accounts obscure funding sources.",
+                "Drug trade, arms deals, and human trafficking finance deep-state operations."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

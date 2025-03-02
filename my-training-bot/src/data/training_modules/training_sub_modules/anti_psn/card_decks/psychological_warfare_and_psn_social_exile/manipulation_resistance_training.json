@@ -1,0 +1,48 @@
+{
+    "id": "manipulation_resistance_training",
+    "name": "Manipulation Resistance Training",
+    "description": "Developing a resistance to psychological manipulation, ensuring PSNs cannot reassert control.",
+    "focus": [
+        "Immunity to Gaslighting",
+        "Cognitive Reframing",
+        "Advanced Boundary Defense"
+    ],
+    "cards": [
+        {
+            "id": "mrt_1",
+            "title": "Immunity to Gaslighting",
+            "description": "Building an internal framework that prevents gaslighting from taking hold.",
+            "bulletpoints": [
+                "Using reality-checking techniques to prevent the distortion of your perception.",
+                "Creating external verification systems to ensure objective truth is maintained.",
+                "Countering their manipulation by shifting the burden of proof onto them."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mrt_2",
+            "title": "Cognitive Reframing for Manipulation Resistance",
+            "description": "Altering how you process PSN attacks to render them ineffective.",
+            "bulletpoints": [
+                "Recognizing manipulation as a game to detach emotionally from it.",
+                "Reframing insults and attacks as reflections of their own insecurity.",
+                "Using mental distancing techniques to prevent emotional hijacking."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mrt_3",
+            "title": "Advanced Boundary Defense",
+            "description": "Ensuring PSNs cannot breach your personal or professional space.",
+            "bulletpoints": [
+                "Establishing zero-tolerance policies for toxic behaviors.",
+                "Using strategic disengagement to prevent PSNs from exploiting conflicts.",
+                "Leveraging social and legal measures to keep them at a distance."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

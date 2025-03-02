@@ -1,0 +1,48 @@
+{
+    "id": "identifying_covert_narcissism",
+    "name": "Identifying Covert Narcissism",
+    "description": "Recognizing the more subtle and passive-aggressive traits of covert narcissists.",
+    "focus": [
+        "Passive-Aggressive Manipulation",
+        "Hidden Insecurity and Control",
+        "Emotional Drain Avoidance"
+    ],
+    "cards": [
+        {
+            "id": "icn_1",
+            "title": "Recognizing Victimhood as a Manipulation Tool",
+            "description": "Understanding how covert narcissists weaponize victim status.",
+            "bulletpoints": [
+                "They often exaggerate hardships to justify entitled behavior.",
+                "Subtle guilt-tripping and emotional manipulation are common tactics.",
+                "Watch for patterns of blaming others while avoiding accountability."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "icn_2",
+            "title": "Detecting Passive-Aggressive Sabotage",
+            "description": "Identifying subtle attacks and psychological undermining.",
+            "bulletpoints": [
+                "Covert narcissists use sarcasm, backhanded compliments, and silent treatment.",
+                "They often create confusion by presenting mixed signals and emotional inconsistency.",
+                "Watch for patterns of subtle undermining and indirect criticism."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "icn_3",
+            "title": "The Energy Drain Trap",
+            "description": "How covert narcissists drain emotional and mental energy over time.",
+            "bulletpoints": [
+                "They create drama and emotional dependency to stay in control.",
+                "Conversations feel exhausting rather than uplifting.",
+                "They subtly erode confidence through constant micro-manipulations."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        }
+    ]
+}

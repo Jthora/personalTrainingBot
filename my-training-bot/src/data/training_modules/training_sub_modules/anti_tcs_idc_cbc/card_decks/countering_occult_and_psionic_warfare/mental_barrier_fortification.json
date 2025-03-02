@@ -1,0 +1,48 @@
+{
+    "id": "mental_barrier_fortification",
+    "name": "Mental Barrier Fortification",
+    "description": "Training to build an impenetrable mental fortress against psychic and psychological intrusions.",
+    "focus": [
+        "Mental Defense Strategies",
+        "Resisting Thought Infiltration",
+        "Psychic Intrusion Countermeasures"
+    ],
+    "cards": [
+        {
+            "id": "mbf_1",
+            "title": "Building an Unbreakable Mind",
+            "description": "Developing a disciplined mind that cannot be manipulated or hijacked.",
+            "bulletpoints": [
+                "Techniques for reinforcing mental boundaries against manipulation.",
+                "Developing thought autonomy and independent critical reasoning.",
+                "Understanding how belief structures are used for control and how to dismantle them."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mbf_2",
+            "title": "Psychic Shielding Against Intrusions",
+            "description": "Defending against external psionic attacks and energetic manipulations.",
+            "bulletpoints": [
+                "How to recognize and resist external thought imposition.",
+                "Using visualization and intent-based techniques to block psychic infiltration.",
+                "Understanding the role of frequency control in mental defense."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mbf_3",
+            "title": "Neutralizing Mind-Control Programs",
+            "description": "Deconstructing and reversing psychic and psychological programming.",
+            "bulletpoints": [
+                "Recognizing hypnotic triggers and programming scripts.",
+                "Techniques for self-deprogramming from implanted beliefs.",
+                "Using counter-conditioning methods to dismantle embedded suggestions."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

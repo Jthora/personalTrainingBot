@@ -1,0 +1,48 @@
+{
+    "id": "eradicating_psn_command_and_control_positions",
+    "name": "Eradicating PSN Command and Control Positions",
+    "description": "Strategic techniques to dismantle PSN leadership structures without direct confrontation.",
+    "focus": [
+        "Weakening PSN Power Centers",
+        "Collapsing Leadership Hierarchies",
+        "Covert Removal of High-Value Targets"
+    ],
+    "cards": [
+        {
+            "id": "psn_control_1",
+            "title": "Psychological Erosion of Leadership",
+            "description": "Undermining PSN authority figures through calculated psychological warfare.",
+            "bulletpoints": [
+                "Exposing inconsistencies in their narratives erodes their influence.",
+                "Amplifying their weaknesses to followers causes internal defection.",
+                "Forcing them into paranoia through controlled leaks weakens their strategic effectiveness."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psn_control_2",
+            "title": "Depleting PSN Resource Pipelines",
+            "description": "Cutting off economic, logistical, and social resources to starve PSN leadership.",
+            "bulletpoints": [
+                "Targeting financial dependencies forces them into unsustainable operations.",
+                "Blocking their ability to recruit new enforcers weakens their enforcement capacity.",
+                "Isolating key figures from trusted networks increases their vulnerability."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "psn_control_3",
+            "title": "Turning PSNs Against Each Other",
+            "description": "Using deception and manipulation to create leadership fractures.",
+            "bulletpoints": [
+                "Exploiting egotistical tendencies induces power struggles within their ranks.",
+                "Pitting them against external threats forces them to expend resources unnecessarily.",
+                "Leaking false accusations among leadership fuels internal betrayal and collapse."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

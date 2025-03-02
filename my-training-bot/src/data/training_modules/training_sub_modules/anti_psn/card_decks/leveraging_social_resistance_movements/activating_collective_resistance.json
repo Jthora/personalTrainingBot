@@ -1,0 +1,48 @@
+{
+    "id": "activating_collective_resistance",
+    "name": "Activating Collective Resistance",
+    "description": "Mobilizing communities and grassroots movements to counter PSN infiltration and control.",
+    "focus": [
+        "Organizing Local Resistance",
+        "Developing Collective Defense Strategies",
+        "Disrupting PSN Social Dominance"
+    ],
+    "cards": [
+        {
+            "id": "acr_1",
+            "title": "Building a Decentralized Resistance Network",
+            "description": "Creating a structure that is resistant to PSN infiltration and disruption.",
+            "bulletpoints": [
+                "Avoiding centralized leadership to prevent targeted takeovers.",
+                "Implementing communication security measures to limit PSN interference.",
+                "Training members to recognize and resist psychological manipulation."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "acr_2",
+            "title": "Strength in Numbers: Organizing Psychological Defense Units",
+            "description": "Structuring small, adaptable groups that reinforce each other’s defenses against PSN tactics.",
+            "bulletpoints": [
+                "Assigning specific roles to maximize operational efficiency and trust.",
+                "Utilizing rapid response strategies to counter PSN disinformation.",
+                "Encouraging mental resilience training to fortify group members."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "acr_3",
+            "title": "Turning the Crowd Against PSNs",
+            "description": "Redirecting group influence to neutralize PSN social control.",
+            "bulletpoints": [
+                "Using social proof to discredit PSN narratives.",
+                "Implementing collective call-out tactics without direct confrontation.",
+                "Leveraging community-driven decision-making to prevent PSN influence."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "id": "strategic_disengagement_and_escape_tactics",
+    "name": "Strategic Disengagement and Escape Tactics",
+    "description": "Training in avoiding detection, escaping hostile environments, and minimizing risk in high-threat situations.",
+    "difficulty": "Advanced",
+    "estimated_time": "6-16 weeks",
+    "focus": [
+        "Urban and Rural Evasion Tactics",
+        "Psychological Disengagement Strategies",
+        "Safe House and Identity Protection"
+    ],
+    "cardDecks": [
+        "covert_escape_routes",
+        "breaking_digital_and_physical_tracking",
+        "social_disappearance_strategies"
+    ]
+}

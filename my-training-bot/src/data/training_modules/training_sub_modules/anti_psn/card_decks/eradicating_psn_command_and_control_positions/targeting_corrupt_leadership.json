@@ -1,0 +1,48 @@
+{
+    "id": "targeting_corrupt_leadership",
+    "name": "Targeting Corrupt Leadership",
+    "description": "Identifying and systematically neutralizing the influence of PSNs in leadership roles.",
+    "focus": [
+        "Identifying Hidden PSN Operatives",
+        "Subverting Corrupt Leadership",
+        "Tactical Displacement Strategies"
+    ],
+    "cards": [
+        {
+            "id": "tcl_1",
+            "title": "Detecting Hidden PSN Leadership",
+            "description": "Analyzing behavioral patterns to expose covertly embedded PSNs in leadership positions.",
+            "bulletpoints": [
+                "Identifying speech patterns, microexpressions, and behavioral inconsistencies.",
+                "Tracking influence networks to reveal connections between PSN operatives.",
+                "Analyzing decision-making anomalies that indicate manipulation or corruption."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "tcl_2",
+            "title": "Forcing Leadership Instability",
+            "description": "Using pressure points to weaken and destabilize corrupt PSN leaders.",
+            "bulletpoints": [
+                "Exploiting leadership weaknesses through strategic exposure.",
+                "Creating internal conflicts within their network to force disunity.",
+                "Amplifying public scrutiny and investigative interest to remove their authority."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "tcl_3",
+            "title": "Tactical Leadership Replacement",
+            "description": "Strategically positioning non-PSN individuals into leadership roles.",
+            "bulletpoints": [
+                "Identifying and supporting ethical leadership alternatives.",
+                "Undermining PSN control by promoting decentralized decision-making models.",
+                "Implementing stealth infiltration techniques to take over key positions."
+            ],
+            "duration": "75",
+            "difficulty": "Expert"
+        }
+    ]
+}

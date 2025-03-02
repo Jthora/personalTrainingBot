@@ -1,0 +1,48 @@
+{
+    "id": "survivor_testimonies_and_decryption",
+    "name": "Survivor Testimonies and Decryption",
+    "description": "Analyzing witness accounts, deprogramming survivors, and verifying information from ritual abuse survivors.",
+    "focus": [
+        "Survivor Accounts and Pattern Recognition",
+        "Deprogramming Ritual Abuse Victims",
+        "Decrypting Hidden Messages in Testimonies"
+    ],
+    "cards": [
+        {
+            "id": "std_1",
+            "title": "Interpreting Ritual Abuse Survivor Testimonies",
+            "description": "Deciphering coded language and traumatic memory distortions in victim accounts.",
+            "bulletpoints": [
+                "Identifying key linguistic patterns that indicate ritual abuse.",
+                "Decoding hidden messages in fragmented survivor narratives.",
+                "Cross-referencing testimonies to identify recurring themes."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "std_2",
+            "title": "Breaking Dissociative Programming in Witnesses",
+            "description": "Techniques to assist survivors in recalling suppressed memories and breaking trauma-based mental control.",
+            "bulletpoints": [
+                "Understanding MK-Ultra style conditioning in ritual abuse survivors.",
+                "Using trauma-informed methods to unlock suppressed testimonies.",
+                "Verifying recollections using cross-analysis techniques."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "std_3",
+            "title": "Identifying False Testimonies and PsyOps Manipulation",
+            "description": "Distinguishing authentic survivor testimonies from controlled opposition and misinformation.",
+            "bulletpoints": [
+                "Analyzing behavioral indicators of deception vs. trauma truth.",
+                "Tracking false narrative insertions designed to discredit real survivors.",
+                "Investigating controlled leaks used to manipulate public perception."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

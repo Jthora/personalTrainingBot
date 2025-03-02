@@ -1,0 +1,48 @@
+{
+    "id": "eliminating_power_structures",
+    "name": "Eliminating Power Structures",
+    "description": "Dismantling the institutional and systemic frameworks that sustain PSN authority.",
+    "focus": [
+        "Undermining Corrupt Hierarchies",
+        "Subverting Controlled Systems",
+        "Creating Alternative Structures"
+    ],
+    "cards": [
+        {
+            "id": "eps_1",
+            "title": "Undermining Corrupt Hierarchies",
+            "description": "Weakening structural control mechanisms that allow PSNs to maintain power.",
+            "bulletpoints": [
+                "Identifying key vulnerabilities in corrupt institutions.",
+                "Disrupting command chains by eliminating strategic enablers.",
+                "Using controlled systemic chaos to force regime collapse."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "eps_2",
+            "title": "Subverting Controlled Systems",
+            "description": "Using decentralized strategies to bypass PSN-controlled systems.",
+            "bulletpoints": [
+                "Creating independent economic and social infrastructures.",
+                "Redirecting resources away from PSN-controlled networks.",
+                "Utilizing covert influence strategies to reroute decision-making authority."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "eps_3",
+            "title": "Constructing Alternative Leadership Models",
+            "description": "Building sustainable leadership structures free from PSN influence.",
+            "bulletpoints": [
+                "Developing leaderless governance models resistant to manipulation.",
+                "Creating decentralized information-sharing networks.",
+                "Fostering community-based accountability systems to prevent PSN infiltration."
+            ],
+            "duration": "75",
+            "difficulty": "Expert"
+        }
+    ]
+}

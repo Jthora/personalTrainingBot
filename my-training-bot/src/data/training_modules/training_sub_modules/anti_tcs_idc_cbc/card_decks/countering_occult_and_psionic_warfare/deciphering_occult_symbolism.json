@@ -1,0 +1,48 @@
+{
+    "id": "deciphering_occult_symbolism",
+    "name": "Deciphering Occult Symbolism",
+    "description": "Unveiling hidden meanings behind occult symbols, sigils, and rituals used for psychological manipulation.",
+    "focus": [
+        "Symbolic Language of the Occult",
+        "Hidden Meanings in Rituals",
+        "Deconstructing Psychological Influence"
+    ],
+    "cards": [
+        {
+            "id": "dos_1",
+            "title": "Recognizing Occult Symbols in Everyday Life",
+            "description": "Learning to spot and understand how hidden symbols shape subconscious narratives.",
+            "bulletpoints": [
+                "Identifying key symbols used in corporate logos, media, and architecture.",
+                "Understanding how symbolism influences subconscious behavior.",
+                "Decoding occult sigils used in psychological programming."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "dos_2",
+            "title": "Breaking the Influence of Ritualistic Symbolism",
+            "description": "Neutralizing the subconscious effects of symbolic programming.",
+            "bulletpoints": [
+                "Methods for deconditioning the mind from occult psychological triggers.",
+                "Understanding how mass rituals create collective energy manipulation.",
+                "Techniques for shielding oneself from subliminal symbolic attacks."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "dos_3",
+            "title": "Reclaiming Symbolism for Empowerment",
+            "description": "Using knowledge of symbolism to break free from occult influence and reclaim mental sovereignty.",
+            "bulletpoints": [
+                "How to rewrite personal symbolic associations to reclaim inner power.",
+                "Developing counter-symbolism to neutralize malevolent influence.",
+                "Using sacred geometry and archetypes for personal and strategic empowerment."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

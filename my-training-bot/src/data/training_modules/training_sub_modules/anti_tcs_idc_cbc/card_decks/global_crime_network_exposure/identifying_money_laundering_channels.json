@@ -1,0 +1,48 @@
+{
+    "id": "identifying_money_laundering_channels",
+    "name": "Identifying Money Laundering Channels",
+    "description": "Techniques for tracking illicit financial movements and identifying black-market funding sources.",
+    "focus": [
+        "Following Illicit Financial Flows",
+        "Offshore Banking and Shell Companies",
+        "Laundering Methods Used by Cartels"
+    ],
+    "cards": [
+        {
+            "id": "imlc_1",
+            "title": "Understanding Money Laundering Techniques",
+            "description": "How transnational crime syndicates clean their money.",
+            "bulletpoints": [
+                "Layering, structuring, and integration are key stages in laundering money.",
+                "Common laundering fronts: real estate, casinos, luxury goods, and cryptocurrency.",
+                "Detecting unusual financial patterns that indicate illicit activity."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "imlc_2",
+            "title": "Offshore Banking and Tax Havens",
+            "description": "How criminals exploit offshore accounts and shell corporations.",
+            "bulletpoints": [
+                "Understanding the role of tax havens in hiding illicit wealth.",
+                "Shell companies and their use in obfuscating financial trails.",
+                "Tracking financial transactions between known criminal-linked accounts."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "imlc_3",
+            "title": "Cryptocurrency in Illicit Finance",
+            "description": "Analyzing how digital assets are used for money laundering.",
+            "bulletpoints": [
+                "Tracing blockchain transactions to uncover criminal crypto flows.",
+                "Mixing services, tumblers, and privacy coins used for obfuscation.",
+                "Government responses and countermeasures against crypto-based laundering."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "creating_global_resistance_movements",
+    "name": "Creating Global Resistance Movements",
+    "description": "Establishing a decentralized, coordinated resistance against IDC control through strategic alliances and movement-building.",
+    "focus": [
+        "Network Building and Mobilization",
+        "Decentralized Leadership Strategies",
+        "Organizing Targeted Disruptions"
+    ],
+    "cards": [
+        {
+            "id": "cgrm_1",
+            "title": "Building Decentralized Resistance Cells",
+            "description": "Creating independent, adaptable resistance groups that operate outside IDC control mechanisms.",
+            "bulletpoints": [
+                "Utilizing decentralized organization models to avoid infiltration.",
+                "Maintaining anonymity and operational security in resistance activities.",
+                "Leveraging encrypted communication and covert networking strategies."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cgrm_2",
+            "title": "Strategic Alliances and Counter-Propaganda",
+            "description": "Forming alliances across ideological lines to counter IDC influence and misinformation.",
+            "bulletpoints": [
+                "Identifying key allies in media, finance, and independent governance.",
+                "Developing counter-propaganda campaigns to expose IDC narratives.",
+                "Using psychological warfare tactics against elite-controlled institutions."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cgrm_3",
+            "title": "Mass Awakening and Civil Disobedience",
+            "description": "Encouraging large-scale resistance and direct action movements against IDC policies and control structures.",
+            "bulletpoints": [
+                "Leveraging civil disobedience to challenge IDC-enforced laws.",
+                "Creating grassroots awareness campaigns to undermine elite narratives.",
+                "Mobilizing global boycotts and financial withdrawal strategies."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

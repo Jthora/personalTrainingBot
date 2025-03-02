@@ -1,0 +1,48 @@
+{
+    "id": "analyzing_shadow_government_tactics",
+    "name": "Analyzing Shadow Government Tactics",
+    "description": "Understanding how covert deep-state networks operate beyond democratic oversight.",
+    "focus": [
+        "Power Consolidation Methods",
+        "Classified Operations and Cover-Ups",
+        "Controlled Political Manipulation"
+    ],
+    "cards": [
+        {
+            "id": "sgt_1",
+            "title": "The Deep State Power Pyramid",
+            "description": "Mapping out the hierarchy and operations of hidden power structures.",
+            "bulletpoints": [
+                "Understanding the intelligence-military-industrial complex and its connections.",
+                "Corporate and banking elites dictate policy through unelected influence.",
+                "Compartmentalization ensures plausible deniability for operatives at all levels."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "sgt_2",
+            "title": "Disrupting Controlled Political Puppetry",
+            "description": "How elections and governance are manipulated to maintain deep-state control.",
+            "bulletpoints": [
+                "Both mainstream political parties are often controlled by the same hidden forces.",
+                "Election rigging, media bias, and narrative control dictate political outcomes.",
+                "Exposing handlers and shadow advisors reveals the real power players."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "sgt_3",
+            "title": "Counteracting Shadow Government Strategies",
+            "description": "Methods to neutralize covert agendas and reclaim public sovereignty.",
+            "bulletpoints": [
+                "Building decentralized communities to bypass centralized power structures.",
+                "Using OSINT (Open Source Intelligence) to expose classified deception.",
+                "Counter-narrative networks can disrupt their ability to maintain secrecy."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

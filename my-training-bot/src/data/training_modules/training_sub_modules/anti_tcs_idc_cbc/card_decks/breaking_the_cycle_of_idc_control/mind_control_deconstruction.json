@@ -1,0 +1,48 @@
+{
+    "id": "mind_control_deconstruction",
+    "name": "Mind Control Deconstruction",
+    "description": "Dismantling intergenerational psychological programming used by the IDC to control populations.",
+    "focus": [
+        "Identifying Psychological Indoctrination",
+        "Undoing Generational Programming",
+        "Cognitive Liberation Strategies"
+    ],
+    "cards": [
+        {
+            "id": "mcd_1",
+            "title": "Identifying Psychological Indoctrination",
+            "description": "Recognizing the layers of mind control used to shape perceptions and beliefs.",
+            "bulletpoints": [
+                "How early childhood conditioning cements ideological control.",
+                "Recognizing social engineering in education, media, and religion.",
+                "Decoding narrative manipulation in politics and mainstream discourse."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mcd_2",
+            "title": "Undoing Generational Programming",
+            "description": "Techniques to break free from inherited belief systems and control mechanisms.",
+            "bulletpoints": [
+                "Recognizing familial reinforcement of IDC narratives.",
+                "Using critical thought exercises to expose programmed illusions.",
+                "Building an independent worldview resistant to legacy control structures."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mcd_3",
+            "title": "Cognitive Liberation Strategies",
+            "description": "Tactical approaches to achieving mental sovereignty and independent thought.",
+            "bulletpoints": [
+                "Developing cognitive immunity against propaganda and mass influence.",
+                "Mental exercises to deprogram false narratives and reclaim autonomy.",
+                "Leveraging neuroscience to rewire thought patterns towards critical analysis."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

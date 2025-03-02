@@ -1,0 +1,48 @@
+{
+    "id": "countering_psyops_and_disinformation",
+    "name": "Countering PsyOps and Disinformation",
+    "description": "Methods to neutralize psychological operations, false narratives, and engineered mass deception.",
+    "focus": [
+        "Identifying False Narratives",
+        "Psychological Countermeasures",
+        "Weaponized Misinformation Resistance"
+    ],
+    "cards": [
+        {
+            "id": "cpd_1",
+            "title": "Identifying False Narratives and Deceptive Messaging",
+            "description": "Dissecting official narratives to expose contradictions and fabricated realities.",
+            "bulletpoints": [
+                "Recognizing patterns in false flag events and staged crises.",
+                "Analyzing media synchronization tactics used to push disinformation.",
+                "Identifying ‘controlled opposition’ figures steering discourse."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cpd_2",
+            "title": "Psychological Defense Against Mass Conditioning",
+            "description": "Building immunity against mind control tactics and psychological coercion.",
+            "bulletpoints": [
+                "Developing cognitive resilience to resist emotional manipulation.",
+                "Using logical frameworks to dismantle propaganda constructs.",
+                "Recognizing and neutralizing manipulative gaslighting attempts."
+            ],
+            "duration": "90",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cpd_3",
+            "title": "Weaponized Misinformation and Controlled Dissent",
+            "description": "Understanding how opposition is manufactured and dissent is co-opted.",
+            "bulletpoints": [
+                "Tracking how intelligence agencies fund and steer social movements.",
+                "Analyzing the role of infiltrators in public discourse.",
+                "Exposing online censorship and algorithmic control over free speech."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

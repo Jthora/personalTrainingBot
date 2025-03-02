@@ -1,0 +1,48 @@
+{
+    "id": "covert_escape_routes",
+    "name": "Covert Escape Routes",
+    "description": "Planning, executing, and utilizing discreet pathways to exit dangerous environments undetected.",
+    "focus": [
+        "Urban and Rural Evasion Tactics",
+        "Navigating Secure Exfiltration Routes",
+        "Avoiding Surveillance During Escape"
+    ],
+    "cards": [
+        {
+            "id": "cer_1",
+            "title": "Identifying and Mapping Escape Routes",
+            "description": "Developing a preemptive strategy for emergency evacuations.",
+            "bulletpoints": [
+                "Mapping urban and rural exfiltration paths.",
+                "Using natural terrain for concealment and misdirection.",
+                "Leveraging underground and unmonitored routes for movement."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "cer_2",
+            "title": "Avoiding Surveillance and Checkpoints",
+            "description": "Techniques for evading security measures during escape operations.",
+            "bulletpoints": [
+                "Detecting and circumventing CCTV and security patrols.",
+                "Using timing and disguise to blend into controlled zones.",
+                "Exploiting gaps in digital and physical monitoring systems."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "cer_3",
+            "title": "Executing Emergency Evacuations",
+            "description": "How to quickly and safely exit a compromised area.",
+            "bulletpoints": [
+                "Coordinating silent extraction procedures.",
+                "Using misdirection tactics to confuse pursuers.",
+                "Establishing fallback locations for rapid relocation."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

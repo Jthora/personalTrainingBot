@@ -1,0 +1,48 @@
+{
+    "id": "forcing_accountability_and_exposure",
+    "name": "Forcing Accountability and Exposure",
+    "description": "Revealing PSN corruption and holding them publicly accountable.",
+    "focus": [
+        "Public Exposure Tactics",
+        "Legal and Investigative Pressure",
+        "Mass Awareness Strategies"
+    ],
+    "cards": [
+        {
+            "id": "fae_1",
+            "title": "Strategic Document Leaks",
+            "description": "Leveraging internal information leaks to dismantle PSN credibility.",
+            "bulletpoints": [
+                "Gathering verifiable evidence before initiating exposure.",
+                "Releasing damning information in controlled phases for maximum impact.",
+                "Using legal loopholes to ensure whistleblower protection and safety."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "fae_2",
+            "title": "Legal Action and Investigative Traps",
+            "description": "Triggering legal mechanisms to entangle PSNs in accountability measures.",
+            "bulletpoints": [
+                "Utilizing forensic accounting to uncover financial fraud and corruption.",
+                "Coordinating with investigators to expose organized criminal connections.",
+                "Creating situations where PSNs incriminate themselves publicly."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "fae_3",
+            "title": "Controlled Media Exposure",
+            "description": "Using media and public perception as a tool for dismantling PSN control.",
+            "bulletpoints": [
+                "Employing investigative journalism to reveal hidden truths.",
+                "Launching public campaigns to shift narratives away from PSN propaganda.",
+                "Utilizing decentralized platforms to bypass censorship attempts."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        }
+    ]
+}

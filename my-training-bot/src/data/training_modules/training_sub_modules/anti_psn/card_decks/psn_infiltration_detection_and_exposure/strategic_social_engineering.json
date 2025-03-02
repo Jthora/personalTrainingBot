@@ -1,0 +1,48 @@
+{
+    "id": "strategic_social_engineering",
+    "name": "Strategic Social Engineering",
+    "description": "Using advanced social engineering tactics to counteract and expose PSNs.",
+    "focus": [
+        "Social Manipulation Reversal",
+        "Disrupting PSN Psychological Frameworks",
+        "Influence Sabotage"
+    ],
+    "cards": [
+        {
+            "id": "sse_1",
+            "title": "Reversing Social Manipulation",
+            "description": "Turning PSN influence strategies against them to erode their control.",
+            "bulletpoints": [
+                "Use deceptive compliance—act agreeable while subtly undermining their agenda.",
+                "Encourage their overconfidence by feeding them misleading affirmations.",
+                "Trap them in self-contradictions by subtly altering their previous statements."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "sse_2",
+            "title": "Disrupting PSN Psychological Frameworks",
+            "description": "Targeting the mental foundations PSNs rely on to maintain control.",
+            "bulletpoints": [
+                "PSNs require constant validation—starving them of attention weakens their influence.",
+                "Present logical paradoxes to disrupt their narrative control over subordinates.",
+                "Encourage division among PSN members by subtly implying betrayals within their ranks."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "sse_3",
+            "title": "Sabotaging PSN Influence Networks",
+            "description": "Disrupting the social networks that allow PSNs to maintain dominance.",
+            "bulletpoints": [
+                "Isolate key enablers by encouraging doubt in their authority figures.",
+                "Create controlled conflicts that expose PSNs' hypocrisy to their followers.",
+                "Foster alternative leadership structures that reduce PSN dependency."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

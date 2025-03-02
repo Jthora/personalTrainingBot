@@ -1,0 +1,17 @@
+{
+    "id": "covert_operations_for_dismantling_idc",
+    "name": "Covert Operations for Dismantling IDCs",
+    "description": "Advanced infiltration and disruption tactics for breaking down IDC-controlled institutions from within.",
+    "difficulty": "Expert",
+    "estimated_time": "24-48 weeks",
+    "focus": [
+        "Infiltration of Power Structures",
+        "Sabotaging Cult Operations",
+        "Counter-Intelligence Warfare"
+    ],
+    "cardDecks": [
+        "covert_infiltration_tactics",
+        "strategic_disruption_of_power_centers",
+        "counter_psyops_and_diversion_strategies"
+    ]
+}

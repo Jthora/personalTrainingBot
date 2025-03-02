@@ -1,0 +1,48 @@
+{
+    "id": "maintaining_psychological_autonomy",
+    "name": "Maintaining Psychological Autonomy",
+    "description": "Developing mental resilience and independence to avoid future manipulation.",
+    "focus": [
+        "Building Internal Validation",
+        "Emotional Self-Regulation",
+        "Establishing Personal Boundaries"
+    ],
+    "cards": [
+        {
+            "id": "mpa_1",
+            "title": "Building a Self-Sustaining Identity",
+            "description": "Ensuring that your sense of self is not dependent on external validation.",
+            "bulletpoints": [
+                "PSNs manipulate individuals by making their self-worth dependent on approval.",
+                "Developing independent self-evaluation prevents emotional hijacking.",
+                "Practicing daily self-affirmations reinforces internal stability."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "mpa_2",
+            "title": "Training the Emotional Firewall",
+            "description": "Developing resilience against guilt, fear, and obligation tactics.",
+            "bulletpoints": [
+                "PSNs use emotional vulnerabilities as leverage to maintain control.",
+                "Recognizing when emotions are externally induced allows for better control.",
+                "Practicing emotional detachment during manipulative attempts strengthens immunity."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "mpa_3",
+            "title": "Reinforcing Boundaries Under Pressure",
+            "description": "Maintaining firm personal boundaries even in high-pressure situations.",
+            "bulletpoints": [
+                "PSNs test boundaries through repeated encroachment.",
+                "Consistency in boundary reinforcement conditions others to respect them.",
+                "Using non-negotiable statements rather than explanations prevents manipulation."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

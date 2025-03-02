@@ -1,0 +1,48 @@
+{
+    "id": "cyber_surveillance_resistance",
+    "name": "Cyber Surveillance Resistance",
+    "description": "Defensive strategies against AI-driven surveillance programs and mass monitoring systems.",
+    "focus": [
+        "Avoiding Government and Corporate Tracking",
+        "Defensive Cybersecurity Measures",
+        "Countering AI-Based Surveillance"
+    ],
+    "cards": [
+        {
+            "id": "csr_1",
+            "title": "Defensive Cybersecurity Against AI Surveillance",
+            "description": "Practical cybersecurity measures to counter AI-based tracking systems.",
+            "bulletpoints": [
+                "Best practices for encrypting communications and securing devices.",
+                "Using open-source, privacy-focused operating systems and applications.",
+                "How to detect and remove AI surveillance software from personal devices."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "csr_2",
+            "title": "Avoiding Mass Data Collection Networks",
+            "description": "How AI aggregates personal data across multiple platforms and how to disrupt it.",
+            "bulletpoints": [
+                "How social media and online platforms collect and analyze user data.",
+                "Using burner accounts, temporary email addresses, and anonymous browsing.",
+                "Understanding the limits and risks of data removal services."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        },
+        {
+            "id": "csr_3",
+            "title": "Defeating AI-Powered Psychological Manipulation",
+            "description": "Resisting AI-driven psychological profiling and social engineering tactics.",
+            "bulletpoints": [
+                "How AI curates personalized disinformation campaigns.",
+                "Recognizing and neutralizing algorithmic influence over thoughts and emotions.",
+                "Disrupting targeted advertising and behavioral modification programs."
+            ],
+            "duration": "90",
+            "difficulty": "Expert"
+        }
+    ]
+}

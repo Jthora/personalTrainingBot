@@ -1,0 +1,17 @@
+{
+    "id": "weaponized_ai_and_surveillance_resistance",
+    "name": "Weaponized AI and Surveillance Resistance",
+    "description": "Strategies for evading AI-powered surveillance, predictive tracking, and machine learning-based psychological warfare.",
+    "difficulty": "Expert",
+    "estimated_time": "6-18 weeks",
+    "focus": [
+        "AI Predictive Behavior Analysis",
+        "Avoiding Digital Profiling",
+        "Disrupting Mass Surveillance"
+    ],
+    "cardDecks": [
+        "evading_ai_behavioral_tracking",
+        "digital_identity_concealment",
+        "cyber_surveillance_resistance"
+    ]
+}

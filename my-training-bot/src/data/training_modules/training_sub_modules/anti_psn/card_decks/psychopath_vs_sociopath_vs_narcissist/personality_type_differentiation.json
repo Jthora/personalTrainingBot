@@ -1,0 +1,48 @@
+{
+    "id": "personality_type_differentiation",
+    "name": "Personality Type Differentiation",
+    "description": "A deep dive into the distinct characteristics of Psychopaths, Sociopaths, and Narcissists.",
+    "focus": [
+        "Understanding Core Differences",
+        "Recognizing Unique Traits",
+        "Psychological Profiling"
+    ],
+    "cards": [
+        {
+            "id": "ptd_1",
+            "title": "The Psychopath: Cold, Calculated, and Controlled",
+            "description": "Understanding the psychopathic mind and its lack of empathy.",
+            "bulletpoints": [
+                "Psychopaths are highly manipulative but operate with long-term strategic planning.",
+                "They have a shallow emotional range but can feign emotions to manipulate others.",
+                "Their lack of guilt and remorse makes them highly dangerous in leadership roles."
+            ],
+            "duration": "75",
+            "difficulty": "Advanced"
+        },
+        {
+            "id": "ptd_2",
+            "title": "The Sociopath: Impulsive, Erratic, and Aggressive",
+            "description": "Analyzing the unpredictable and volatile nature of sociopaths.",
+            "bulletpoints": [
+                "Sociopaths are prone to outbursts and emotional instability, making them easy to provoke.",
+                "They lack long-term planning, often resorting to reactive and impulsive tactics.",
+                "Unlike psychopaths, sociopaths struggle to maintain deep cover for extended periods."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        },
+        {
+            "id": "ptd_3",
+            "title": "The Narcissist: Image-Obsessed and Manipulative",
+            "description": "Breaking down the core behaviors of narcissistic individuals.",
+            "bulletpoints": [
+                "Narcissists rely on admiration and validation, making them vulnerable to public exposure.",
+                "They use gaslighting and emotional manipulation to maintain control over their victims.",
+                "Unlike psychopaths and sociopaths, narcissists can be deeply insecure and fragile when exposed."
+            ],
+            "duration": "75",
+            "difficulty": "Intermediate"
+        }
+    ]
+}

@@ -1,399 +1,33 @@
 .
-├── .DS_Store
-├── .gitignore
-├── .vercel
-│   ├── README.txt
-│   └── project.json
-├── README.md
 ├── directory-structure.txt
-├── dist
-│   ├── assets
-│   │   ├── Aldrich-Regular-BJ2Af9cL.ttf
-│   │   ├── WingCommanderLogo-288x162-Dr7UFZxN.gif
-│   │   ├── acrobatics_and_flips-gVZHwan7.js
-│   │   ├── advanced_behavioral_analysis-CQB3Gh3L.js
-│   │   ├── advanced_flourishes-DuQxaeGm.js
-│   │   ├── aerial_movements-xz3Sran2.js
-│   │   ├── agencies-BrNn5WMB.js
-│   │   ├── animal_forms-BgLCUR8g.js
-│   │   ├── animal_styles-ssI0HdNT.js
-│   │   ├── anti_psychic_countermeasures-YxB-Ad5n.js
-│   │   ├── arm_synchronization-CixYBQxB.js
-│   │   ├── asymmetric_warfare-BmlCEv5C.js
-│   │   ├── athletic_performance-CkDgJbMi.js
-│   │   ├── aura_sensing_and_control-CRoRfHGd.js
-│   │   ├── baguazhang-CjwhaWi7.js
-│   │   ├── balance_and_stability-Csusf_KV.js
-│   │   ├── basic_toprock_moves-N31gVAoJ.js
-│   │   ├── bass_drop_isolations-BxynYBO_.js
-│   │   ├── baton_defensive_moves-CpRSfU88.js
-│   │   ├── behavioral_profiling-DiUWY4Sp.js
-│   │   ├── behavioral_profiling_methods-BP_ZBJ7j.js
-│   │   ├── binary_disassembly_methods-Aes-Xvrx.js
-│   │   ├── bladed_weapon_techniques-BJSmuuik.js
-│   │   ├── body_bounce_rhythm-n8Bae2hC.js
-│   │   ├── bodyweight_leg_workouts-Qyv0H2cJ.js
-│   │   ├── border_control_tactics-CLdB0x_z.js
-│   │   ├── bosu_ball_exercises-BhaaiCti.js
-│   │   ├── box_tutting_patterns-dqF_BFaW.js
-│   │   ├── breakdance-IsjaSraP.js
-│   │   ├── breaking_techniques-DviNoYCH.js
-│   │   ├── breathwork_and_meditation-CGOt4cyQ.js
-│   │   ├── butterfly_moves-BIBvXjG6.js
-│   │   ├── calisthenics-y8RNABfg.js
-│   │   ├── camouflage_and_blending-DUDucyOc.js
-│   │   ├── capoeira-DV1sijvT.js
-│   │   ├── cardiovascular_endurance-CL-vlipp.js
-│   │   ├── cause_of_death_forensics-ufRPGR72.js
-│   │   ├── centerline_striking-CG2wkkzU.js
-│   │   ├── chi_sao_sensitivity-CUyALMUS.js
-│   │   ├── cia_training-a0vd-Bt9.js
-│   │   ├── circle_walking-Bl8dM2To.js
-│   │   ├── circuit_training-CBapPzfk.js
-│   │   ├── clairvoyance_and_telepathy-LTJ4YtXg.js
-│   │   ├── clairvoyant_perception-D-pCH0FY.js
-│   │   ├── clandestine_surveillance-DUqfD2Cg.js
-│   │   ├── clinch_and_control-Dc0IV4-Q.js
-│   │   ├── close_quarters_combat-BD24kP7o.js
-│   │   ├── close_range_shooting-CY4TxyKM.js
-│   │   ├── coercion_methods-Cnoc8ORA.js
-│   │   ├── cognitive_behavioral_training-E3vI2QJn.js
-│   │   ├── cognitive_bias_training-6VF316Zt.js
-│   │   ├── combat-Z-Lw82EN.js
-│   │   ├── combat_scenario_simulation-DKFYX7YU.js
-│   │   ├── combined_arms_operations-hTOLTceM.js
-│   │   ├── complete-BBmFiQXS.mp3
-│   │   ├── compound_lifts-WBCLAU-u.js
-│   │   ├── computer_forensic_methods-Cem7mNGO.js
-│   │   ├── contact_staff_flow-BYPGlw_d.js
-│   │   ├── controlled_viewing_methods-DuUKgPxh.js
-│   │   ├── core_strengthening-CKn5g2oX.js
-│   │   ├── corporate_security_training-CJbJvlU8.js
-│   │   ├── costume_and_makeup-BuxX5DXc.js
-│   │   ├── counter_propaganda_strategies-CTR3V_9X.js
-│   │   ├── counter_psyops-BFkwTgBr.js
-│   │   ├── counter_psyops_strategies-C6HihajW.js
-│   │   ├── counter_terrorism_operations-CilSzIba.js
-│   │   ├── counterintelligence-Ba47WEhi.js
-│   │   ├── counterintelligence_tactics-CWHvI2cQ.js
-│   │   ├── cover_usage_tactics-B68iFYoD.js
-│   │   ├── covert_infiltration_methods-eDGCMZ5N.js
-│   │   ├── covert_operations-DiXXR-z2.js
-│   │   ├── covert_psychological_warfare-DMZD7JIr.js
-│   │   ├── covert_sabotage-8gk7EkgJ.js
-│   │   ├── crime_scene_processing-DniMGVo-.js
-│   │   ├── criminal_behavior_analysis-6V5XidZr.js
-│   │   ├── criminal_network_tracking-D8yYFE6z.js
-│   │   ├── criminal_profiling-DslfuCc9.js
-│   │   ├── criminal_profiling_methods-BRo6uHP-.js
-│   │   ├── cross_border_smuggling_cases-DL7yXSAJ.js
-│   │   ├── cutting_shapes-CXx76_kj.js
-│   │   ├── cyber_fraud_detection-DK4Hu_jQ.js
-│   │   ├── cyber_fraud_detection-DsUV2Fn2.js
-│   │   ├── cyber_intelligence-BWgz6xmt.js
-│   │   ├── cyber_intelligence_operations-Cs3snieA.js
-│   │   ├── cyber_threat_detection-B7B7iKuy.js
-│   │   ├── cyber_warfare_strategy-ZE1vvJ1Q.js
-│   │   ├── cybercrime_analysis-Zabmu_GZ.js
-│   │   ├── cybersecurity-m3kLvScI.js
-│   │   ├── cycling_endurance-BUAe__U5.js
-│   │   ├── dance-CM_x_URm.js
-│   │   ├── dark_web_investigations-DwnlWqNp.js
-│   │   ├── dark_web_monitoring-EV-iMHBV.js
-│   │   ├── data_collection_methods-BrLSnRDw.js
-│   │   ├── dead_drop_methods-ByDZwiM8.js
-│   │   ├── deception_detection_techniques-C0JO2XKX.js
-│   │   ├── defensive_network_security-CKxCBWcV.js
-│   │   ├── deprogramming_psyops_effects-Bn3pD_OT.js
-│   │   ├── digital_forensic_methods-khxsvrsr.js
-│   │   ├── digital_forensics-DDA-ys9K.js
-│   │   ├── digital_forensics-Dp6vqyP2.js
-│   │   ├── disguise_and_identity-BMT2OWFK.js
-│   │   ├── disinformation_analysis-CQZ51pB2.js
-│   │   ├── disinformation_strategies-B45I5oH_.js
-│   │   ├── dna_and_fingerprint_analysis-BUN-xVat.js
-│   │   ├── double_agent_management-BBb2Bdnh.js
-│   │   ├── dubstep_glitch-Sd5LJb3s.js
-│   │   ├── dynamic_balance_training-DfgTieD6.js
-│   │   ├── dynamic_core_workouts-C0_RNZMG.js
-│   │   ├── dynamic_forms-B3akZDlM.js
-│   │   ├── dynamic_warmups-CZMmpNYc.js
-│   │   ├── economic_sanctions_tactics-D8_MNdRB.js
-│   │   ├── elbow_and_knee_strikes-mYWIIB8k.js
-│   │   ├── emergency_evasion_maneuvers-Dw8eUuw2.js
-│   │   ├── emergency_response_drills-Cly252bM.js
-│   │   ├── emotional_control_methods-BRcvEjVV.js
-│   │   ├── emotional_exploitation-CdCIl60X.js
-│   │   ├── emotional_resilience_training-Dqd2vMS7.js
-│   │   ├── encryption_and_decryption-ByPDyjtI.js
-│   │   ├── energy_barriers-vP4AxDWp.js
-│   │   ├── energy_channeling-DQ5VVotM.js
-│   │   ├── energy_manipulation-DLj2eQyW.js
-│   │   ├── energy_weapons_training-WffGWNIX.js
-│   │   ├── escape_and_evasion-C2Wsni3a.js
-│   │   ├── espionage-BbyWmI7x.js
-│   │   ├── evasive_movement-D74VopkM.js
-│   │   ├── explosive_kicking-B9LTQ9vQ.js
-│   │   ├── explosive_power-C85ZxMsi.js
-│   │   ├── extraction_and_escape_tactics-z_YGebIt.js
-│   │   ├── fact_checking_methods-BtlR9uOr.js
-│   │   ├── false_flag_identification-Y1ur4H2X.js
-│   │   ├── fan_dancing-BTJ9vCef.js
-│   │   ├── fbi_training-g78_wuZP.js
-│   │   ├── financial_crimes-BlMYop31.js
-│   │   ├── financial_fraud_detection-DsLPbVLy.js
-│   │   ├── financial_statement_analysis-CC4VR5ec.js
-│   │   ├── finger_isolations-CBYWRJt8.js
-│   │   ├── fire_and_maneuver-D69QoDTD.js
-│   │   ├── firearms_training-CjY1G3N6.js
-│   │   ├── firewall_configuration-B7jVde0O.js
-│   │   ├── fitness-1P-MU2mP.js
-│   │   ├── five_element_strikes-Cc0D-fw5.js
-│   │   ├── flexibility_and_mobility-CdvuusJP.js
-│   │   ├── flow_transitions-DVZgsc_M.js
-│   │   ├── foam_rolling_and_massage-CCuKY8Ue.js
-│   │   ├── footwork_and_speed-CZUSW0cc.js
-│   │   ├── footwork_patterns-B7sRWrKQ.js
-│   │   ├── force_maneuvering-DrXIVnkc.js
-│   │   ├── forensic_analysis-o13D5dcr.js
-│   │   ├── forensic_image_analysis-z_YGebIt.js
-│   │   ├── forensic_investigation-Ctp18eVt.js
-│   │   ├── forensic_lab_procedures-Bdi5I_o5.js
-│   │   ├── fraud_detection_techniques-CbXHAc37.js
-│   │   ├── freestyle_rave-BKd04dS1.js
-│   │   ├── freeze_techniques-o3N7J5ZO.js
-│   │   ├── functional_fitness-B6CG7EuE.js
-│   │   ├── future_trend_analysis-C3O07ilj.js
-│   │   ├── gaslighting_and_brainwashing_defense-DIYZez2z.js
-│   │   ├── geopolitical_analysis-BtL51M9B.js
-│   │   ├── geopolitical_simulations-DFBDekMZ.js
-│   │   ├── ginga_and_fluidity-DBKShgnc.js
-│   │   ├── global_conflict_trends-DVw_s5Ny.js
-│   │   ├── gloving_tutting-DXlri-uG.js
-│   │   ├── ground_fighting-Dn4UpcWL.js
-│   │   ├── hand_glides-LSaFg6Qf.js
-│   │   ├── hapkido-C7QyEtQ5.js
-│   │   ├── heel_toe_variations-CYfiO358.js
-│   │   ├── high_intensity_interval_training-DmVfEemi.js
-│   │   ├── high_stress_drills-BHzItUNG.js
-│   │   ├── homeland_security-B4z60qmA.js
-│   │   ├── homicide_case_studies-Dls2lqKb.js
-│   │   ├── homicide_investigation-oO-eVA38.js
-│   │   ├── hostile_escape_tactics-DISfn6sS.js
-│   │   ├── identifying_coercion_tactics-CFfesXkJ.js
-│   │   ├── identity_forging-Ba9bWZFM.js
-│   │   ├── incident_response_intelligence-C4rlSFea.js
-│   │   ├── index-CQcmxQ1p.css
-│   │   ├── index-LMWLqldO.js
-│   │   ├── industrial_dance-ZB87DP2X.js
-│   │   ├── influence_campaigns-zONQGkhE.js
-│   │   ├── insurgency_tactics-DZW_Hbxh.js
-│   │   ├── intelligence-bJLuh_im.js
-│   │   ├── intelligence_analysis-BvNLNoy1.js
-│   │   ├── intercepting_fist-CwsCuYhZ.js
-│   │   ├── internal_energy-BxqEEQSA.js
-│   │   ├── international_law_basics-SvjvsXef.js
-│   │   ├── interpol_training-D-lQnIcO.js
-│   │   ├── interval_running-Pbfl0Yq5.js
-│   │   ├── intrusion_detection_methods-BhjEkp-1.js
-│   │   ├── investigation-iuP1uxDX.js
-│   │   ├── iron_body_training-J7gAyeh_.js
-│   │   ├── isolation_exercises-DyArQPOI.js
-│   │   ├── jeet_kune_do-BgmaRx89.js
-│   │   ├── joint_locks-CjoTv62D.js
-│   │   ├── jumpstyle_hardstyle-CIAJdl79.js
-│   │   ├── kettlebell_workouts-B9BS8Wwv.js
-│   │   ├── kicking_sequences-D-SQaf6T.js
-│   │   ├── kicks_and_sweeps-DMPkSSwa.js
-│   │   ├── knife_fighting_tactics-RGCgTFky.js
-│   │   ├── ladder_drills-BGvVj5Ad.js
-│   │   ├── language_pattern_recognition-CHgU5jp2.js
-│   │   ├── linguistic_analysis-etxm61hV.js
-│   │   ├── liquid_dance-Dj0_f3kU.js
-│   │   ├── live_fire_simulations-IxdXnJYx.js
-│   │   ├── log_analysis_and_correlation-Dyb81aHC.js
-│   │   ├── long_fist_and_southern_fist-gLsTThBh.js
-│   │   ├── low_stance_combat-B4vXNYL2.js
-│   │   ├── malware_analysis-CKK53mxX.js
-│   │   ├── malware_analysis-ChuAx_Vg.js
-│   │   ├── malware_detection_and_removal-BvU29dRt.js
-│   │   ├── malware_reversing-C2kaJjQo.js
-│   │   ├── manipulation_detection-DLdwPzfq.js
-│   │   ├── martial_arts-CInVkN0Z.js
-│   │   ├── mass_media_analysis-P4UYFLh4.js
-│   │   ├── melee_weapons_training-hzPeIMHK.js
-│   │   ├── mental_energy_control-CKKFHmT3.js
-│   │   ├── mental_firewalling_techniques-Bifce52U.js
-│   │   ├── mental_fortress_building-BT0Q4Rkr.js
-│   │   ├── mental_resilience_drills-B2ahsFbu.js
-│   │   ├── military_strategy-jYUOVjdp.js
-│   │   ├── mind_body_fitness-7ruH-81F.js
-│   │   ├── mind_hacking_countermeasures-CLU1oKQO.js
-│   │   ├── mind_to_mind_communication-CLtKwSfH.js
-│   │   ├── mission_based_training-BivTMvk9.js
-│   │   ├── mission_planning_and_execution-COiijBGu.js
-│   │   ├── mobile_device_exploitation-AijkCyiz.js
-│   │   ├── mobility_routines-Cle2h_WT.js
-│   │   ├── money_laundering_patterns-uWuq09_2.js
-│   │   ├── muay_thai-BFq3rmJp.js
-│   │   ├── narrative_deconstruction_methods-C5yvRnax.js
-│   │   ├── network_monitoring_tools-B77VuvGN.js
-│   │   ├── network_packet_analysis-CGY9zPhB.js
-│   │   ├── network_penetration_tests-DK5PHUZ4.js
-│   │   ├── network_security-DDbgp5nN.js
-│   │   ├── nlp_resistance_strategies-BzauE7dW.js
-│   │   ├── offender_typologies-Bqukk6XC.js
-│   │   ├── offensive_cyber_tactics-BWTFDpNF.js
-│   │   ├── olympic_lifting_basics-DUgLuBWw.js
-│   │   ├── open_source_intelligence-CK-C_zJJ.js
-│   │   ├── osint_for_cyber_threats-BEGNbP1n.js
-│   │   ├── osint_tools_and_methods-Cq1mh542.js
-│   │   ├── palm_strikes-B-As7-VH.js
-│   │   ├── penetration_testing-DuUBJ0Gn.js
-│   │   ├── persuasion_and_influence-DV7Lj1Ss.js
-│   │   ├── phishing_attack_simulation-DziP79Nl.js
-│   │   ├── physical_security_exploitation-CN13XttE.js
-│   │   ├── pistol_shooting_drills-C8aCjbeb.js
-│   │   ├── planks_and_static_holds-DxEEwbBx.js
-│   │   ├── plyometric_workouts-CiZAAg0e.js
-│   │   ├── poi_spinning-Cyyt4cMd.js
-│   │   ├── political_warfare_analysis-DDGQj-dq.js
-│   │   ├── power_kicks-5joG_ao-.js
-│   │   ├── precision_fan_techniques-CuqF5qVh.js
-│   │   ├── predictive_analysis-EFkXlTXK.js
-│   │   ├── pressure_points-8K2AAZ-g.js
-│   │   ├── propaganda_countermeasures-DYs-IdZB.js
-│   │   ├── propaganda_identification-LkRHyjtg.js
-│   │   ├── prophetic_dreams-C_l71u9T.js
-│   │   ├── protective_service_tactics-B7ZfPrmM.js
-│   │   ├── psi_blade_techniques-D7UKg9-g.js
-│   │   ├── psi_exercises-GjoaBQNq.js
-│   │   ├── psionic_deflection-CJ_O6i6f.js
-│   │   ├── psionic_meditation-rRBEOo0O.js
-│   │   ├── psionic_training-QyQ4rZvM.js
-│   │   ├── psionic_weaponry-ID-98ekW.js
-│   │   ├── psiops-DGDJirco.js
-│   │   ├── psychic_perception-L6GGJAEQ.js
-│   │   ├── psychic_shielding-DVOvzA-K.js
-│   │   ├── psychological_manipulation-DpztqqQl.js
-│   │   ├── psychological_operations-_hQOft7a.js
-│   │   ├── psychological_operations_tactics-C3M1DiQw.js
-│   │   ├── psychological_warfare_defense-CExZUJX8.js
-│   │   ├── public_records_analysis-BhzqAyQI.js
-│   │   ├── pullup_and_dip_training-CQGAmI1M.js
-│   │   ├── push_hands-C9mpGO6u.js
-│   │   ├── pushup_variations-B82d_ivf.js
-│   │   ├── rapid_striking-DfePJATT.js
-│   │   ├── reaction_time_drills-RotRBmD6.js
-│   │   ├── recovery_and_injury_prevention-l6Yp9kLE.js
-│   │   ├── rehabilitative_exercises-DQniIbBZ.js
-│   │   ├── remote_viewing-B08GKqn7.js
-│   │   ├── resilience_under_pressure-D84VJfUf.js
-│   │   ├── resistance_band_exercises-Cdf1rIWh.js
-│   │   ├── rifle_tactics-C5osA9Y9.js
-│   │   ├── risk_prediction_models-B0_P-QZo.js
-│   │   ├── rotational_core_exercises-CP_dbDsq.js
-│   │   ├── sandbag_training-BRf4jlGg.js
-│   │   ├── sandbox_analysis-DicZ8rbh.js
-│   │   ├── secret_service-C2BbM8fy.js
-│   │   ├── secure_messaging-CHGZg9LR.js
-│   │   ├── self_myofascial_release-CT-ye_um.js
-│   │   ├── sentiment_analysis_methods-DKH7WPEs.js
-│   │   ├── shadowing_techniques-BjBZTTLz.js
-│   │   ├── shaolin_kung_fu-sQBFOZX3.js
-│   │   ├── signal_interception-Mfdu4b3q.js
-│   │   ├── silat-BaOA0DZW.js
-│   │   ├── silent_movement_training-BBU0tWR9.js
-│   │   ├── single_leg_stability_drills-KVvkzyUJ.js
-│   │   ├── skip-rD65AU5b.wav
-│   │   ├── slow_form_training-D4lmw-H9.js
-│   │   ├── slow_motion_effects-BKjoOmPC.js
-│   │   ├── social_deception-eGfIYnpW.js
-│   │   ├── social_engineering_defense-Bsy1hkRj.js
-│   │   ├── social_manipulation_tactics-DpaAaoxE.js
-│   │   ├── social_media_monitoring-XvgrRK0Z.js
-│   │   ├── special_operations_planning-CqvR79bZ.js
-│   │   ├── speed_and_agility-l2EMJMgY.js
-│   │   ├── speed_endurance_training-Cyyoi8cN.js
-│   │   ├── speed_training-U6ocja6I.js
-│   │   ├── spinning_and_aerial_kicks-kM4ni4lY.js
-│   │   ├── spins_and_transitions-oDLiDPJc.js
-│   │   ├── sprint_intervals-Bzc0I5PY.js
-│   │   ├── sprint_training-CwmNMzAg.js
-│   │   ├── spy_identification-CyBjzNf6.js
-│   │   ├── spy_tradecraft-BKYmLHzm.js
-│   │   ├── staff_and_weaponry-BPlSPVy9.js
-│   │   ├── stamina_drills-D9e9Toof.js
-│   │   ├── static_stretching-Bun1MZsT.js
-│   │   ├── steady_state_cardio-Czi0cQxh.js
-│   │   ├── stealth_and_escape_tactics-DceedXyU.js
-│   │   ├── strategic_forecasting-_ki-4RqS.js
-│   │   ├── strength_periodization-CsT8OOGr.js
-│   │   ├── strength_training-i89TYX40.js
-│   │   ├── striking_and_counterattacks-BDbd4p88.js
-│   │   ├── subliminal_manipulation_detection-PsAALsOh.js
-│   │   ├── supply_chain_tactics-DPCVhRlS.js
-│   │   ├── suspect_interview_methods-QDnYIaSW.js
-│   │   ├── tabata_protocol-Ba4ZLLet.js
-│   │   ├── tactical_movement-F1UtUQpk.js
-│   │   ├── taekwondo-DZvcvq9j.js
-│   │   ├── tai_chi-CLKmvfMh.js
-│   │   ├── tai_chi_sequences-DtofxjPb.js
-│   │   ├── target_acquisition-C3jfiAmb.js
-│   │   ├── telekinetic_strikes-NBglh54C.js
-│   │   ├── terrorist_threat_analysis-BRlxK21M.js
-│   │   ├── threat_actor_profiling-BYoVd0uj.js
-│   │   ├── threat_assessment-Blrd-A0o.js
-│   │   ├── threat_assessment_models-DziZeIMH.js
-│   │   ├── threat_behavior_assessment-DhyYCVIZ.js
-│   │   ├── threat_intelligence-D3NVBt2e.js
-│   │   ├── throws_and_takedowns-Bu7FSyM0.js
-│   │   ├── tiger_fitness_god-icon-512x-Dyqy8vof.png
-│   │   ├── timeout-BMk_9bRO.wav
-│   │   ├── tradecraft-XajcM2LO.js
-│   │   ├── trapping_hands-BGOtPyt_.js
-│   │   ├── undercover_roles-CBzIjrB-.js
-│   │   ├── undercover_surveillance--urvY1ez.js
-│   │   ├── urban_combat_movement-CbLrweA2.js
-│   │   ├── urban_warfare_strategies-19E0KC1z.js
-│   │   ├── vehicle_tailing-IkOvc2Nf.js
-│   │   ├── veil_twirls-3QSnGHP5.js
-│   │   ├── war_strategy-DZspVMlU.js
-│   │   ├── wave_techniques-Cdsmts_X.js
-│   │   ├── weapon_disarm_tactics-5gvAbUJn.js
-│   │   ├── weapon_retention_drills-LBZLEy9e.js
-│   │   ├── weave_patterns-BGwdxEpi.js
-│   │   ├── web_application_hacking-bzQI4V8N.js
-│   │   ├── wing_chun-CRlSvwmQ.js
-│   │   ├── wooden_dummy_drills-CUJcY_TU.js
-│   │   ├── wushu-BnBMAd28.js
-│   │   ├── xing_yi_quan-COgPlnVf.js
-│   │   └── yoga_flows-B9VS6knB.js
-│   ├── favicon.ico
-│   ├── favicon.png
-│   └── index.html
+├── docs
+│   ├── components.md
+│   ├── data-structures.md
+│   ├── development.md
+│   └── README.md
+├── .env
 ├── eslint.config.js
+├── .gitignore
 ├── index.html
-├── package-lock.json
 ├── package.json
+├── package-lock.json
 ├── public
 │   ├── favicon.ico
 │   └── favicon.png
+├── README.md
 ├── src
 │   ├── App.tsx
 │   ├── assets
 │   │   ├── fonts
 │   │   │   └── Aldrich-Regular.ttf
 │   │   ├── images
-│   │   │   ├── .DS_Store
-│   │   │   ├── WingCommanderLogo-288x162.gif
-│   │   │   └── icons
-│   │   │       ├── .DS_Store
-│   │   │       ├── coaches
-│   │   │       │   ├── jono_thora-icon.png
-│   │   │       │   ├── tara_van_dekar-icon.png
-│   │   │       │   └── tiger_fitness_god-icon.png
-│   │   │       └── training_modules
+│   │   │   ├── icons
+│   │   │   │   └── coaches
+│   │   │   │       ├── agent_simon-icon.png
+│   │   │   │       ├── jono_thora-icon.png
+│   │   │   │       ├── tara_van_dekar-icon.png
+│   │   │   │       └── tiger_fitness_god-icon.png
+│   │   │   └── WingCommanderLogo-288x162.gif
 │   │   ├── react.svg
 │   │   └── sounds
 │   │       ├── complete.mp3
@@ -419,6 +53,24 @@
 │   │   ├── CoachSelector
 │   │   │   ├── CoachSelector.module.css
 │   │   │   └── CoachSelector.tsx
+│   │   ├── CookieSettings
+│   │   │   ├── CookieSettings.module.css
+│   │   │   └── CookieSettings.tsx
+│   │   ├── CreateNewWorkoutSchedulePopup
+│   │   │   ├── CreateNewWorkoutSchedulePopup.module.css
+│   │   │   └── CreateNewWorkoutSchedulePopup.tsx
+│   │   ├── CreateWorkoutBlockPopup
+│   │   │   ├── CreateWorkoutBlockPopup.module.css
+│   │   │   └── CreateWorkoutBlockPopup.tsx
+│   │   ├── CreateWorkoutSetPopup
+│   │   │   ├── CreateWorkoutSetPopup.module.css
+│   │   │   └── CreateWorkoutSetPopup.tsx
+│   │   ├── CustomScheduleCreatorView
+│   │   │   ├── CustomScheduleCreatorView.module.css
+│   │   │   └── CustomScheduleCreatorView.tsx
+│   │   ├── DeleteExistingWorkoutSchedulePopup
+│   │   │   ├── DeleteExistingWorkoutSchedulePopup.module.css
+│   │   │   └── DeleteExistingWorkoutSchedulePopup.tsx
 │   │   ├── DifficultySettings
 │   │   │   ├── DifficultySettings.module.css
 │   │   │   └── DifficultySettings.tsx
@@ -428,9 +80,18 @@
 │   │   ├── LoadingMessage
 │   │   │   ├── LoadingMessage.module.css
 │   │   │   └── LoadingMessage.tsx
+│   │   ├── ManageWorkoutScheduleCalendarPopup
+│   │   │   ├── ManageWorkoutScheduleCalendarPopup.module.css
+│   │   │   └── ManageWorkoutScheduleCalendarPopup.tsx
 │   │   ├── Schedule
 │   │   │   ├── Schedule.module.css
 │   │   │   └── Schedule.tsx
+│   │   ├── SchedulesSidebar
+│   │   │   ├── SchedulesSidebar.module.css
+│   │   │   └── SchedulesSidebar.tsx
+│   │   ├── SchedulesWindow
+│   │   │   ├── SchedulesWindow.module.css
+│   │   │   └── SchedulesWindow.tsx
 │   │   ├── SettingsPanel
 │   │   │   ├── SettingsPanel.module.css
 │   │   │   └── SettingsPanel.tsx
@@ -476,37 +137,49 @@
 │   │   ├── WorkoutSelector
 │   │   │   ├── WorkoutSelector.module.css
 │   │   │   └── WorkoutSelector.tsx
-│   │   ├── WorkoutTimer
-│   │   │   ├── WorkoutTimer.module.css
-│   │   │   └── WorkoutTimer.tsx
 │   │   ├── WorkoutsSidebar
 │   │   │   ├── WorkoutsSidebar.module.css
 │   │   │   └── WorkoutsSidebar.tsx
-│   │   └── WorkoutsWindow
-│   │       ├── WorkoutsWindow.module.css
-│   │       └── WorkoutsWindow.tsx
+│   │   ├── WorkoutsWindow
+│   │   │   ├── WorkoutsWindow.module.css
+│   │   │   └── WorkoutsWindow.tsx
+│   │   └── WorkoutTimer
+│   │       ├── WorkoutTimer.module.css
+│   │       └── WorkoutTimer.tsx
 │   ├── context
 │   │   ├── CardContext.tsx
 │   │   ├── SettingsContext.tsx
 │   │   └── WorkoutScheduleContext.tsx
 │   ├── data
-│   │   ├── .DS_Store
 │   │   ├── training_coach_data
 │   │   │   ├── coach_speech.json
 │   │   │   ├── difficulty_levels.json
 │   │   │   ├── ranks.json
 │   │   │   ├── training_challenges.json
 │   │   │   ├── workouts
+│   │   │   │   ├── aegis_fang_combat_system.json
 │   │   │   │   ├── agility.json
 │   │   │   │   ├── balance.json
 │   │   │   │   ├── cardio.json
 │   │   │   │   ├── combat.json
 │   │   │   │   ├── coordination.json
 │   │   │   │   ├── endurance.json
+│   │   │   │   ├── jono_thora.json
 │   │   │   │   ├── mental.json
 │   │   │   │   ├── mobility.json
 │   │   │   │   ├── strength.json
 │   │   │   │   ├── subcategories
+│   │   │   │   │   ├── aegis_fang_combat_system
+│   │   │   │   │   │   ├── ambidextrous_weapon_training.json
+│   │   │   │   │   │   ├── blade_transitions.json
+│   │   │   │   │   │   ├── buckler_defense_tactics.json
+│   │   │   │   │   │   ├── combat_positioning.json
+│   │   │   │   │   │   ├── dual_weapon_fundamentals.json
+│   │   │   │   │   │   ├── flow_drills.json
+│   │   │   │   │   │   ├── offensive_defensive_synergy.json
+│   │   │   │   │   │   ├── pistol_and_grenade_incorporation.json
+│   │   │   │   │   │   ├── reaction_training.json
+│   │   │   │   │   │   └── tactical_application.json
 │   │   │   │   │   ├── agility
 │   │   │   │   │   │   ├── change_of_direction.json
 │   │   │   │   │   │   ├── footwork.json
@@ -539,6 +212,14 @@
 │   │   │   │   │   │   ├── cardiovascular.json
 │   │   │   │   │   │   ├── mental.json
 │   │   │   │   │   │   └── muscular.json
+│   │   │   │   │   ├── jono_thora
+│   │   │   │   │   │   ├── agility_mobility_and_acrobatics.json
+│   │   │   │   │   │   ├── combat_readiness_conditioning.json
+│   │   │   │   │   │   ├── raver_super_hero_dance_combat.json
+│   │   │   │   │   │   ├── recovery_flexibility_and_injury_prevention.json
+│   │   │   │   │   │   ├── strength_and_endurance.json
+│   │   │   │   │   │   ├── tactical_conditioning_and_situation_awareness.json
+│   │   │   │   │   │   └── warrior_core_and_mental_resilience.json
 │   │   │   │   │   ├── mental
 │   │   │   │   │   │   ├── breathing.json
 │   │   │   │   │   │   ├── focus.json
@@ -569,16 +250,21 @@
 │   │   │   └── workouts.json
 │   │   ├── training_modules
 │   │   │   ├── agencies.json
+│   │   │   ├── anti_psn.json
+│   │   │   ├── anti_tcs_idc_cbc.json
 │   │   │   ├── combat.json
+│   │   │   ├── counter_biochem.json
 │   │   │   ├── counter_psyops.json
 │   │   │   ├── cybersecurity.json
 │   │   │   ├── dance.json
+│   │   │   ├── equations.json
 │   │   │   ├── espionage.json
 │   │   │   ├── fitness.json
 │   │   │   ├── intelligence.json
 │   │   │   ├── investigation.json
 │   │   │   ├── martial_arts.json
 │   │   │   ├── psiops.json
+│   │   │   ├── self_sovereignty.json
 │   │   │   ├── training_sub_modules
 │   │   │   │   ├── agencies
 │   │   │   │   │   ├── card_decks
@@ -607,6 +293,346 @@
 │   │   │   │   │   ├── homeland_security.json
 │   │   │   │   │   ├── interpol_training.json
 │   │   │   │   │   └── secret_service.json
+│   │   │   │   ├── anti_psn
+│   │   │   │   │   ├── behavioral_and_microexpression_analysis.json
+│   │   │   │   │   ├── card_decks
+│   │   │   │   │   │   ├── behavioral_and_microexpression_analysis
+│   │   │   │   │   │   │   ├── high_stakes_psn_encounter_tactics.json
+│   │   │   │   │   │   │   ├── spotting_toxic_patterns.json
+│   │   │   │   │   │   │   └── verbal_self_defense.json
+│   │   │   │   │   │   ├── covertly_overthrowing_psn_controlled_systems
+│   │   │   │   │   │   │   ├── disrupting_psn_information_networks.json
+│   │   │   │   │   │   │   ├── eradicating_psn_command_and_control_positions.json
+│   │   │   │   │   │   │   └── leveraging_social_resistance_movements.json
+│   │   │   │   │   │   ├── covert_psn_destruction_strategies
+│   │   │   │   │   │   │   ├── covertly_overthrowing_psn_controlled_systems.json
+│   │   │   │   │   │   │   ├── disrupting_psn_communication_networks.json
+│   │   │   │   │   │   │   └── eradicating_psn_command_and_control_positions.json
+│   │   │   │   │   │   ├── covert_psychological_self_defense
+│   │   │   │   │   │   │   ├── disrupting_psn_information_networks.json
+│   │   │   │   │   │   │   ├── mental_warfare_and_cognitive_shielding.json
+│   │   │   │   │   │   │   └── reverse_psychological_warfare_against_psns.json
+│   │   │   │   │   │   ├── creating_a_narcissist_free_life
+│   │   │   │   │   │   │   ├── economic_and_legal_sabotage_of_psn_power.json
+│   │   │   │   │   │   │   ├── narcissist_proofing_your_life.json
+│   │   │   │   │   │   │   └── strategic_social_disengagement.json
+│   │   │   │   │   │   ├── destabilizing_psn_narrative_control
+│   │   │   │   │   │   │   ├── disrupting_psn_information_networks.json
+│   │   │   │   │   │   │   ├── social_contagion_disruption.json
+│   │   │   │   │   │   │   └── weaponizing_truth_against_psn_control.json
+│   │   │   │   │   │   ├── disrupting_psn_communication_networks
+│   │   │   │   │   │   │   ├── covertly_overthrowing_psn_controlled_systems.json
+│   │   │   │   │   │   │   ├── disrupting_psn_information_networks.json
+│   │   │   │   │   │   │   └── reverse_psychological_warfare_against_psns.json
+│   │   │   │   │   │   ├── disrupting_psn_information_networks
+│   │   │   │   │   │   │   ├── destabilizing_psn_narrative_control.json
+│   │   │   │   │   │   │   ├── psychological_warfare_and_psn_social_exile.json
+│   │   │   │   │   │   │   └── social_contagion_disruption.json
+│   │   │   │   │   │   ├── economic_and_legal_sabotage_of_psn_power
+│   │   │   │   │   │   │   ├── covert_psn_destruction_strategies.json
+│   │   │   │   │   │   │   ├── eradicating_psn_command_and_control_positions.json
+│   │   │   │   │   │   │   └── leveraging_social_resistance_movements.json
+│   │   │   │   │   │   ├── eliminating_vulnerability_to_psn_tactics
+│   │   │   │   │   │   │   ├── gaslighting_countermeasures.json
+│   │   │   │   │   │   │   ├── psychological_self_fortification.json
+│   │   │   │   │   │   │   └── spotting_toxic_patterns.json
+│   │   │   │   │   │   ├── emotional_detachment_and_resistance
+│   │   │   │   │   │   │   ├── covert_psychological_self_defense.json
+│   │   │   │   │   │   │   ├── emotional_resilience_exercises.json
+│   │   │   │   │   │   │   └── mental_fortress_tactics.json
+│   │   │   │   │   │   ├── eradicating_psn_command_and_control_positions
+│   │   │   │   │   │   │   ├── eliminating_power_structures.json
+│   │   │   │   │   │   │   ├── forcing_accountability_and_exposure.json
+│   │   │   │   │   │   │   └── targeting_corrupt_leadership.json
+│   │   │   │   │   │   ├── escaping_psychopathic_relationships
+│   │   │   │   │   │   │   ├── minimizing_retaliation.json
+│   │   │   │   │   │   │   ├── securing_emotional_and_psychological_independence.json
+│   │   │   │   │   │   │   └── stealth_exit_strategies.json
+│   │   │   │   │   │   ├── gaslighting_countermeasures
+│   │   │   │   │   │   │   ├── cognitive_anchoring.json
+│   │   │   │   │   │   │   ├── counter_gaslighting_strategies.json
+│   │   │   │   │   │   │   └── pattern_recognition.json
+│   │   │   │   │   │   ├── high_stakes_psn_encounter_tactics
+│   │   │   │   │   │   │   ├── advanced_social_engineering_reversal.json
+│   │   │   │   │   │   │   ├── real_time_psychological_combat.json
+│   │   │   │   │   │   │   └── stealth_based_counter_engagement.json
+│   │   │   │   │   │   ├── leveraging_social_resistance_movements
+│   │   │   │   │   │   │   ├── activating_collective_resistance.json
+│   │   │   │   │   │   │   ├── community_based_psychological_defense.json
+│   │   │   │   │   │   │   └── tactical_networking_against_psns.json
+│   │   │   │   │   │   ├── mental_warfare_and_cognitive_shielding
+│   │   │   │   │   │   │   ├── cognitive_fortification_techniques.json
+│   │   │   │   │   │   │   ├── countering_thought_inception.json
+│   │   │   │   │   │   │   └── psychological_warfare_defense.json
+│   │   │   │   │   │   ├── narcissist_red_flag_detection
+│   │   │   │   │   │   │   ├── early_behavioral_recognition.json
+│   │   │   │   │   │   │   ├── identifying_covert_narcissism.json
+│   │   │   │   │   │   │   └── protecting_against_manipulation.json
+│   │   │   │   │   │   ├── power_hierarchy_analysis_and_psn_mapping
+│   │   │   │   │   │   │   ├── hierarchical_power_structure_analysis.json
+│   │   │   │   │   │   │   ├── psn_influence_mapping.json
+│   │   │   │   │   │   │   └── weak_point_identification.json
+│   │   │   │   │   │   ├── psn_infiltration_detection_and_exposure
+│   │   │   │   │   │   │   ├── covert_exposure_tactics.json
+│   │   │   │   │   │   │   ├── deep_network_analysis.json
+│   │   │   │   │   │   │   └── strategic_social_engineering.json
+│   │   │   │   │   │   ├── psychological_self_fortification
+│   │   │   │   │   │   │   ├── mental_immunity_training.json
+│   │   │   │   │   │   │   ├── resisting_cognitive_manipulation.json
+│   │   │   │   │   │   │   └── strengthening_core_identity.json
+│   │   │   │   │   │   ├── psychological_warfare_and_psn_social_exile
+│   │   │   │   │   │   │   ├── manipulation_resistance_training.json
+│   │   │   │   │   │   │   ├── psychological_warfare_tactics.json
+│   │   │   │   │   │   │   └── social_isolation_of_psns.json
+│   │   │   │   │   │   ├── psychopath_vs_sociopath_vs_narcissist
+│   │   │   │   │   │   │   ├── personality_type_differentiation.json
+│   │   │   │   │   │   │   ├── power_and_control_mechanisms.json
+│   │   │   │   │   │   │   └── tactics_and_behavioral_traits.json
+│   │   │   │   │   │   ├── recruiting_psn_defectors
+│   │   │   │   │   │   │   ├── identifying_redeemable_individuals.json
+│   │   │   │   │   │   │   ├── leveraging_internal_sabotage.json
+│   │   │   │   │   │   │   └── psychological_conversion_strategies.json
+│   │   │   │   │   │   ├── social_contagion_disruption
+│   │   │   │   │   │   │   ├── breaking_social_conditioning_cycles.json
+│   │   │   │   │   │   │   ├── countering_emotional_manipulation_in_groups.json
+│   │   │   │   │   │   │   └── disrupting_mass_indoctrination.json
+│   │   │   │   │   │   ├── strategic_social_disengagement
+│   │   │   │   │   │   │   ├── controlled_withdrawal_tactics.json
+│   │   │   │   │   │   │   ├── maintaining_psychological_autonomy.json
+│   │   │   │   │   │   │   └── recognizing_manipulative_social_structures.json
+│   │   │   │   │   │   ├── turning_psn_tactics_against_them
+│   │   │   │   │   │   │   ├── destabilizing_manipulative_frameworks.json
+│   │   │   │   │   │   │   ├── misdirection_and_counter_deception.json
+│   │   │   │   │   │   │   └── psychological_reversal_techniques.json
+│   │   │   │   │   │   ├── undoing_psn_trauma_bonding
+│   │   │   │   │   │   │   ├── breaking_the_reward_punishment_cycle.json
+│   │   │   │   │   │   │   ├── detoxifying_emotional_attachments.json
+│   │   │   │   │   │   │   └── rewiring_neurological_responses.json
+│   │   │   │   │   │   ├── verbal_self_defense_against_manipulation
+│   │   │   │   │   │   │   ├── deflecting_manipulative_language.json
+│   │   │   │   │   │   │   ├── maintaining_conversational_control.json
+│   │   │   │   │   │   │   └── neutralizing_emotional_triggers.json
+│   │   │   │   │   │   └── weaponizing_truth_against_psn_control
+│   │   │   │   │   │       ├── destroying_the_psn_illusion_of_power.json
+│   │   │   │   │   │       ├── exposure_based_counter_tactics.json
+│   │   │   │   │   │       └── truth_as_a_disruptive_weapon.json
+│   │   │   │   │   ├── covertly_overthrowing_psn_controlled_systems.json
+│   │   │   │   │   ├── covert_psn_destruction_strategies.json
+│   │   │   │   │   ├── covert_psychological_self_defense.json
+│   │   │   │   │   ├── creating_a_narcissist_free_life_structure.json
+│   │   │   │   │   ├── destabilizing_psn_narrative_control.json
+│   │   │   │   │   ├── disrupting_psn_communication_networks.json
+│   │   │   │   │   ├── disrupting_psn_information_networks.json
+│   │   │   │   │   ├── economic_and_legal_sabotage_of_psn_power.json
+│   │   │   │   │   ├── eliminating_vulnerability_to_psn_tactics.json
+│   │   │   │   │   ├── emotional_detachment_and_resistance.json
+│   │   │   │   │   ├── eradicating_psn_command_and_control_positions.json
+│   │   │   │   │   ├── escaping_psychopathic_relationships.json
+│   │   │   │   │   ├── gaslighting_countermeasures.json
+│   │   │   │   │   ├── high_stakes_psn_encounter_tactics.json
+│   │   │   │   │   ├── leveraging_social_resistance_movements.json
+│   │   │   │   │   ├── mental_warfare_and_cognitive_shielding.json
+│   │   │   │   │   ├── narcissist_red_flag_detection.json
+│   │   │   │   │   ├── power_hierarchy_analysis_and_psn_mapping.json
+│   │   │   │   │   ├── psn_infiltration_detection_and_exposure.json
+│   │   │   │   │   ├── psychological_self_fortification.json
+│   │   │   │   │   ├── psychological_warfare_and_psn_social_exile.json
+│   │   │   │   │   ├── psychopath_vs_sociopath_vs_narcissist.json
+│   │   │   │   │   ├── recruiting_psn_defectors.json
+│   │   │   │   │   ├── reverse_psychological_warfare_against_psns.json
+│   │   │   │   │   ├── social_contagion_disruption.json
+│   │   │   │   │   ├── strategic_social_disengagement.json
+│   │   │   │   │   ├── turning_psn_tactics_against_them.json
+│   │   │   │   │   ├── undoing_psn_trauma_bonding.json
+│   │   │   │   │   ├── verbal_self_defense_against_manipulation.json
+│   │   │   │   │   └── weaponizing_truth_against_psn_control.json
+│   │   │   │   ├── anti_tcs_idc_cbc
+│   │   │   │   │   ├── artificial_scarcity_as_a_control_method.json
+│   │   │   │   │   ├── blackmail_based_control_structures.json
+│   │   │   │   │   ├── black_ops_and_covert_agenda_awareness.json
+│   │   │   │   │   ├── bloodlines_and_elite_occult_pacts.json
+│   │   │   │   │   ├── breaking_the_cycle_of_idc_control.json
+│   │   │   │   │   ├── card_decks
+│   │   │   │   │   │   ├── artificial_scarcity_as_a_control_method
+│   │   │   │   │   │   │   ├── exposing_fiat_currency_fraud.json
+│   │   │   │   │   │   │   ├── food_and_energy_monopoly_disruption.json
+│   │   │   │   │   │   │   └── self_reliance_and_resource_generation.json
+│   │   │   │   │   │   ├── blackmail_based_control_structures
+│   │   │   │   │   │   │   ├── counter_extortion_and_leverage_defense.json
+│   │   │   │   │   │   │   ├── tracking_compromised_individuals.json
+│   │   │   │   │   │   │   └── understanding_coercion_tactics.json
+│   │   │   │   │   │   ├── black_ops_and_covert_agenda_awareness
+│   │   │   │   │   │   │   ├── analyzing_shadow_government_tactics.json
+│   │   │   │   │   │   │   ├── black_budget_projects_exposure.json
+│   │   │   │   │   │   │   └── exposing_false_flag_operations.json
+│   │   │   │   │   │   ├── bloodlines_and_elite_occult_pacts
+│   │   │   │   │   │   │   ├── breaking_the_elite_mind_control_system.json
+│   │   │   │   │   │   │   ├── historical_analysis_of_ruling_bloodlines.json
+│   │   │   │   │   │   │   └── identifying_occult_symbols_in_power_structures.json
+│   │   │   │   │   │   ├── breaking_the_cycle_of_idc_control
+│   │   │   │   │   │   │   ├── decentralized_autonomous_societies.json
+│   │   │   │   │   │   │   ├── mind_control_deconstruction.json
+│   │   │   │   │   │   │   └── resistance_network_formation.json
+│   │   │   │   │   │   ├── countering_occult_and_psionic_warfare
+│   │   │   │   │   │   │   ├── deciphering_occult_symbolism.json
+│   │   │   │   │   │   │   ├── defensive_psionics_and_energy_shielding.json
+│   │   │   │   │   │   │   └── mental_barrier_fortification.json
+│   │   │   │   │   │   ├── covert_operations_for_dismantling_idc
+│   │   │   │   │   │   │   ├── counter_psyops_and_diversion_strategies.json
+│   │   │   │   │   │   │   ├── covert_infiltration_tactics.json
+│   │   │   │   │   │   │   └── strategic_disruption_of_power_centers.json
+│   │   │   │   │   │   ├── creating_parallel_societies
+│   │   │   │   │   │   │   ├── alternative_currency_and_trade.json
+│   │   │   │   │   │   │   ├── resilient_community_networking.json
+│   │   │   │   │   │   │   └── self_sufficient_energy_and_resources.json
+│   │   │   │   │   │   ├── cult_network_analysis
+│   │   │   │   │   │   │   ├── exposing_high_profile_cult_members.json
+│   │   │   │   │   │   │   ├── psychological_deprogramming_methods.json
+│   │   │   │   │   │   │   └── tracking_cult_financing_and_funding.json
+│   │   │   │   │   │   ├── dark_economics
+│   │   │   │   │   │   │   ├── counter_economic_warfare_methods.json
+│   │   │   │   │   │   │   ├── tracking_elite_money_laundering.json
+│   │   │   │   │   │   │   └── unmasking_tax_haven_operations.json
+│   │   │   │   │   │   ├── death_cult_symbolism_and_language_decoding
+│   │   │   │   │   │   │   ├── esoteric_and_occult_language_decoding.json
+│   │   │   │   │   │   │   ├── hidden_symbols_in_media_and_governance.json
+│   │   │   │   │   │   │   └── linguistic_mind_control_patterns.json
+│   │   │   │   │   │   ├── dismantling_idc_power_centers
+│   │   │   │   │   │   │   ├── creating_global_resistance_movements.json
+│   │   │   │   │   │   │   ├── exposing_key_idc_hubs.json
+│   │   │   │   │   │   │   └── undermining_strategic_idc_assets.json
+│   │   │   │   │   │   ├── economic_warfare_resistance
+│   │   │   │   │   │   │   ├── decentralized_trade_networks.json
+│   │   │   │   │   │   │   ├── economic_false_flag_identification.json
+│   │   │   │   │   │   │   └── inflation_detection_and_response.json
+│   │   │   │   │   │   ├── energy_harvesting_exposure
+│   │   │   │   │   │   │   ├── breaking_the_loosh_extraction_cycles.json
+│   │   │   │   │   │   │   ├── countering_mass_psychic_energy_extraction.json
+│   │   │   │   │   │   │   └── disrupting_fear_based_energy_harvesting.json
+│   │   │   │   │   │   ├── false_messianic_movements
+│   │   │   │   │   │   │   ├── dissecting_religious_control_frameworks.json
+│   │   │   │   │   │   │   ├── psychological_dependency_in_movement_followers.json
+│   │   │   │   │   │   │   └── tactics_for_disrupting_false_messiahs.json
+│   │   │   │   │   │   ├── financial_sovereignty
+│   │   │   │   │   │   │   ├── countering_financial_surveillance.json
+│   │   │   │   │   │   │   ├── cryptocurrency_and_gold_reserves.json
+│   │   │   │   │   │   │   └── self_sufficient_income_streams.json
+│   │   │   │   │   │   ├── global_crime_network_exposure
+│   │   │   │   │   │   │   ├── identifying_money_laundering_channels.json
+│   │   │   │   │   │   │   ├── mapping_transnational_cartels.json
+│   │   │   │   │   │   │   └── understanding_illicit_supply_chains.json
+│   │   │   │   │   │   ├── human_trafficking_disruption_tactics
+│   │   │   │   │   │   │   ├── analyzing_trafficker_patterns.json
+│   │   │   │   │   │   │   ├── covert_investigation_and_whistleblowing.json
+│   │   │   │   │   │   │   └── detecting_victim_signals.json
+│   │   │   │   │   │   ├── hypernormalization_and_mass_hypnosis_breaking
+│   │   │   │   │   │   │   ├── breaking_out_of_social_conditioning.json
+│   │   │   │   │   │   │   ├── disrupting_mass_hypnosis_and_groupthink.json
+│   │   │   │   │   │   │   └── unraveling_false_narratives.json
+│   │   │   │   │   │   ├── idc_control_in_cultural_narratives
+│   │   │   │   │   │   │   ├── detecting_media_mind_control.json
+│   │   │   │   │   │   │   ├── disrupting_cultural_psyops.json
+│   │   │   │   │   │   │   └── rewriting_hijacked_narratives.json
+│   │   │   │   │   │   ├── idc_hierarchical_mapping
+│   │   │   │   │   │   │   ├── exposing_cult_financial_backers.json
+│   │   │   │   │   │   │   ├── mapping_psychopathic_leadership_structures.json
+│   │   │   │   │   │   │   └── tracking_occult_power_centers.json
+│   │   │   │   │   │   ├── infiltration_of_governments_and_institutions
+│   │   │   │   │   │   │   ├── analyzing_power_structures_and_hidden_agendas.json
+│   │   │   │   │   │   │   ├── exposing_political_and_corporate_puppetry.json
+│   │   │   │   │   │   │   └── identifying_compromised_governments.json
+│   │   │   │   │   │   ├── information_warfare_and_counterintelligence
+│   │   │   │   │   │   │   ├── countering_psyops_and_disinformation.json
+│   │   │   │   │   │   │   ├── covert_data_collection_and_analysis.json
+│   │   │   │   │   │   │   └── propaganda_deconstruction.json
+│   │   │   │   │   │   ├── legal_and_extralegal_self_protection
+│   │   │   │   │   │   │   ├── diplomatic_immunity_tactics.json
+│   │   │   │   │   │   │   ├── extralegal_networks_and_protection.json
+│   │   │   │   │   │   │   └── understanding_legal_loopholes.json
+│   │   │   │   │   │   ├── occult_psychological_warfare_and_mind_control
+│   │   │   │   │   │   │   ├── breaking_subliminal_mind_control.json
+│   │   │   │   │   │   │   ├── deprogramming_occult_psychological_attacks.json
+│   │   │   │   │   │   │   └── identifying_and_disrupting_ritual_mind_warfare.json
+│   │   │   │   │   │   ├── political_cults
+│   │   │   │   │   │   │   ├── detecting_psychopathic_leaders_in_politics.json
+│   │   │   │   │   │   │   ├── neutralizing_extremist_political_cults.json
+│   │   │   │   │   │   │   └── propaganda_resistance_and_mind_control_breaking.json
+│   │   │   │   │   │   ├── propaganda_and_psyops_defense
+│   │   │   │   │   │   │   ├── breaking_mass_hypnosis.json
+│   │   │   │   │   │   │   ├── identifying_fear_based_propaganda.json
+│   │   │   │   │   │   │   └── psychological_warfare_resilience.json
+│   │   │   │   │   │   ├── ritual_abuse_survivor_deprogramming
+│   │   │   │   │   │   │   ├── erasing_ritual_imprints.json
+│   │   │   │   │   │   │   ├── narrative_reframing_for_survivors.json
+│   │   │   │   │   │   │   └── strengthening_psychic_and_spiritual_defense.json
+│   │   │   │   │   │   ├── ritual_sacrifice_exposure
+│   │   │   │   │   │   │   ├── dismantling_sacrificial_occult_agendas.json
+│   │   │   │   │   │   │   ├── survivor_testimonies_and_decryption.json
+│   │   │   │   │   │   │   └── tracking_ritualistic_patterns_in_crime.json
+│   │   │   │   │   │   ├── social_engineering_and_cyber_security
+│   │   │   │   │   │   │   ├── avoiding_ai_behavioral_profiling.json
+│   │   │   │   │   │   │   ├── detecting_social_engineering_attacks.json
+│   │   │   │   │   │   │   └── secure_communications_tactics.json
+│   │   │   │   │   │   ├── spiritual_fortification_against_cult_control
+│   │   │   │   │   │   │   ├── breaking_cultic_psychological_manipulation.json
+│   │   │   │   │   │   │   ├── mind_control_deprogramming.json
+│   │   │   │   │   │   │   └── spiritual_self_defense_and_energy_protection.json
+│   │   │   │   │   │   ├── strategic_disengagement_and_escape_tactics
+│   │   │   │   │   │   │   ├── breaking_digital_and_physical_tracking.json
+│   │   │   │   │   │   │   ├── covert_escape_routes.json
+│   │   │   │   │   │   │   └── social_disappearance_strategies.json
+│   │   │   │   │   │   ├── suffering_as_a_control_method
+│   │   │   │   │   │   │   ├── breaking_psychological_conditioning.json
+│   │   │   │   │   │   │   ├── building_trauma_resilient_communities.json
+│   │   │   │   │   │   │   └── detecting_synthetic_crises.json
+│   │   │   │   │   │   ├── tactical_survival_and_self_defense
+│   │   │   │   │   │   │   ├── close_quarters_combat_tactics.json
+│   │   │   │   │   │   │   ├── covert_security_and_defensive_measures.json
+│   │   │   │   │   │   │   └── survival_training_and_escape_methods.json
+│   │   │   │   │   │   ├── weaponization_of_new_age_spirituality
+│   │   │   │   │   │   │   ├── disrupting_fake_gurus_and_occultists.json
+│   │   │   │   │   │   │   ├── identifying_psyops_in_spirituality.json
+│   │   │   │   │   │   │   └── reclaiming_authentic_spiritual_power.json
+│   │   │   │   │   │   ├── weaponization_of_religion
+│   │   │   │   │   │   │   ├── identifying_false_religious_authorities.json
+│   │   │   │   │   │   │   ├── liberating_spiritual_thought.json
+│   │   │   │   │   │   │   └── tracing_historical_religious_manipulation.json
+│   │   │   │   │   │   └── weaponized_ai_and_surveillance_resistance
+│   │   │   │   │   │       ├── cyber_surveillance_resistance.json
+│   │   │   │   │   │       ├── digital_identity_concealment.json
+│   │   │   │   │   │       └── evading_ai_behavioral_tracking.json
+│   │   │   │   │   ├── countering_occult_and_psionic_warfare.json
+│   │   │   │   │   ├── covert_operations_for_dismantling_idc.json
+│   │   │   │   │   ├── creating_parallel_societies.json
+│   │   │   │   │   ├── cult_network_analysis.json
+│   │   │   │   │   ├── dark_economics.json
+│   │   │   │   │   ├── death_cult_symbolism_and_language_decoding.json
+│   │   │   │   │   ├── dismantling_idc_power_centers.json
+│   │   │   │   │   ├── economic_warfare_resistance.json
+│   │   │   │   │   ├── energy_harvesting_exposure.json
+│   │   │   │   │   ├── false_messianic_movements.json
+│   │   │   │   │   ├── financial_sovereignty.json
+│   │   │   │   │   ├── global_crime_network_exposure.json
+│   │   │   │   │   ├── human_trafficking_disruption_tactics.json
+│   │   │   │   │   ├── hypernormalization_and_mass_hypnosis_breaking.json
+│   │   │   │   │   ├── idc_control_in_cultural_narratives.json
+│   │   │   │   │   ├── idc_hierarchical_mapping.json
+│   │   │   │   │   ├── infiltration_of_governments_and_institutions.json
+│   │   │   │   │   ├── information_warfare_and_counterintelligence.json
+│   │   │   │   │   ├── legal_and_extralegal_self_protection.json
+│   │   │   │   │   ├── occult_psychological_warfare_and_mind_control.json
+│   │   │   │   │   ├── political_cults.json
+│   │   │   │   │   ├── propaganda_and_psyops_defense.json
+│   │   │   │   │   ├── ritual_abuse_survivor_deprogramming.json
+│   │   │   │   │   ├── ritual_sacrifice_exposure.json
+│   │   │   │   │   ├── social_engineering_and_cyber_security.json
+│   │   │   │   │   ├── spiritual_fortification_against_cult_control.json
+│   │   │   │   │   ├── strategic_disengagement_and_escape_tactics.json
+│   │   │   │   │   ├── suffering_as_a_control_method.json
+│   │   │   │   │   ├── tactical_survival_and_self_defense.json
+│   │   │   │   │   ├── weaponization_of_new_age_spirituality.json
+│   │   │   │   │   ├── weaponization_of_religion.json
+│   │   │   │   │   └── weaponized_ai_and_surveillance_resistance.json
 │   │   │   │   ├── combat
 │   │   │   │   │   ├── card_decks
 │   │   │   │   │   │   ├── close_quarters_combat
@@ -639,36 +665,128 @@
 │   │   │   │   │   ├── melee_weapons_training.json
 │   │   │   │   │   ├── stealth_and_escape_tactics.json
 │   │   │   │   │   └── tactical_movement.json
+│   │   │   │   ├── counter_biochem
+│   │   │   │   │   ├── biochem_defense_protocols.json
+│   │   │   │   │   ├── biochem_survival_medicine.json
+│   │   │   │   │   ├── card_decks
+│   │   │   │   │   │   ├── biochem_defense_protocols
+│   │   │   │   │   │   │   ├── airborne_pathogen_defense.json
+│   │   │   │   │   │   │   ├── chemical_shielding_tactics.json
+│   │   │   │   │   │   │   └── hazmat_safety_training.json
+│   │   │   │   │   │   ├── biochem_survival_medicine
+│   │   │   │   │   │   │   ├── emergency_first_aid_for_biochem_exposure.json
+│   │   │   │   │   │   │   ├── holistic_and_herbal_remedies.json
+│   │   │   │   │   │   │   └── survival_treatment_in_hostile_environments.json
+│   │   │   │   │   │   ├── contagion_containment_strategies
+│   │   │   │   │   │   │   ├── emergency_containment_protocols.json
+│   │   │   │   │   │   │   ├── infection_control_tactics.json
+│   │   │   │   │   │   │   └── quarantine_zone_management.json
+│   │   │   │   │   │   ├── food_water_supply_protection
+│   │   │   │   │   │   │   ├── detecting_tainted_food_sources.json
+│   │   │   │   │   │   │   ├── supply_chain_protection_tactics.json
+│   │   │   │   │   │   │   └── water_supply_purification_methods.json
+│   │   │   │   │   │   ├── medical_psyops_resistance
+│   │   │   │   │   │   │   ├── combatting_psyops_in_healthcare.json
+│   │   │   │   │   │   │   ├── detecting_medical_disinformation.json
+│   │   │   │   │   │   │   └── verifying_legitimate_treatments.json
+│   │   │   │   │   │   └── toxin_neutralization_tactics
+│   │   │   │   │   │       ├── antidote_and_detox_methods.json
+│   │   │   │   │   │       ├── biochem_emergency_treatment.json
+│   │   │   │   │   │       └── toxin_detection_and_testing.json
+│   │   │   │   │   ├── contagion_containment_strategies.json
+│   │   │   │   │   ├── food_water_supply_protection.json
+│   │   │   │   │   ├── medical_psyops_resistance.json
+│   │   │   │   │   └── toxin_neutralization_tactics.json
 │   │   │   │   ├── counter_psyops
 │   │   │   │   │   ├── card_decks
+│   │   │   │   │   │   ├── cyber_psyops_digital_warfare_defense
+│   │   │   │   │   │   │   ├── ai_powered_disinformation_detection.json
+│   │   │   │   │   │   │   ├── botnet_identification_and_psyops_disruption.json
+│   │   │   │   │   │   │   ├── counter_censorship_strategies.json
+│   │   │   │   │   │   │   ├── cyber_warfare_and_digital_resilience_training.json
+│   │   │   │   │   │   │   ├── darknet_osint_and_covert_intelligence_operations.json
+│   │   │   │   │   │   │   ├── online_mass_awakening_tactics.json
+│   │   │   │   │   │   │   ├── psychological_warfare_in_social_media.json
+│   │   │   │   │   │   │   └── tactical_digital_influence_operations.json
 │   │   │   │   │   │   ├── disinformation_analysis
 │   │   │   │   │   │   │   ├── cognitive_bias_training.json
 │   │   │   │   │   │   │   ├── fact_checking_methods.json
-│   │   │   │   │   │   │   └── false_flag_identification.json
+│   │   │   │   │   │   │   ├── false_flag_identification.json
+│   │   │   │   │   │   │   ├── influence_network_mapping.json
+│   │   │   │   │   │   │   ├── misinformation_forensic_analysis.json
+│   │   │   │   │   │   │   ├── narrative_pattern_analysis.json
+│   │   │   │   │   │   │   ├── source_reliability_assessment.json
+│   │   │   │   │   │   │   └── synthetic_media_detection.json
+│   │   │   │   │   │   ├── elite_power_structure_analysis
+│   │   │   │   │   │   │   ├── counter_infiltration_and_information_warfare.json
+│   │   │   │   │   │   │   ├── deconstructing_financial_warfare_strategies.json
+│   │   │   │   │   │   │   ├── exposing_shadow_governments_and_secret_societies.json
+│   │   │   │   │   │   │   ├── identifying_deep_state_psyops.json
+│   │   │   │   │   │   │   ├── intelligence_gathering_on_covert_networks.json
+│   │   │   │   │   │   │   ├── power_elite_hierarchy_decoding.json
+│   │   │   │   │   │   │   ├── targeted_disruption_of_elitist_control_systems.json
+│   │   │   │   │   │   │   └── understanding_globalist_psychological_conditioning.json
 │   │   │   │   │   │   ├── emotional_resilience_training
+│   │   │   │   │   │   │   ├── adaptive_psychological_shielding.json
 │   │   │   │   │   │   │   ├── cognitive_behavioral_training.json
 │   │   │   │   │   │   │   ├── emotional_control_methods.json
+│   │   │   │   │   │   │   ├── emotional_detachment_tactics.json
+│   │   │   │   │   │   │   ├── long_term_psychological_fortitude.json
+│   │   │   │   │   │   │   ├── mental_toughness_drills.json
+│   │   │   │   │   │   │   ├── nervous_system_regulation.json
 │   │   │   │   │   │   │   └── resilience_under_pressure.json
 │   │   │   │   │   │   ├── manipulation_detection
 │   │   │   │   │   │   │   ├── advanced_behavioral_analysis.json
 │   │   │   │   │   │   │   ├── gaslighting_and_brainwashing_defense.json
-│   │   │   │   │   │   │   └── identifying_coercion_tactics.json
+│   │   │   │   │   │   │   ├── identifying_coercion_tactics.json
+│   │   │   │   │   │   │   ├── linguistic_manipulation_patterns.json
+│   │   │   │   │   │   │   ├── manipulative_narrative_dissection.json
+│   │   │   │   │   │   │   ├── microexpression_interpretation.json
+│   │   │   │   │   │   │   ├── power_dynamics_and_psychological_exploitation.json
+│   │   │   │   │   │   │   └── subversive_influence_detection.json
 │   │   │   │   │   │   ├── mind_hacking_countermeasures
+│   │   │   │   │   │   │   ├── cognitive_autonomy_reinforcement.json
+│   │   │   │   │   │   │   ├── hypnotic_suggestion_countermeasures.json
 │   │   │   │   │   │   │   ├── mental_firewalling_techniques.json
+│   │   │   │   │   │   │   ├── neurocognitive_intrusion_detection.json
 │   │   │   │   │   │   │   ├── nlp_resistance_strategies.json
+│   │   │   │   │   │   │   ├── psychotronic_defense_training.json
+│   │   │   │   │   │   │   ├── psy_resilience_circuit_training.json
 │   │   │   │   │   │   │   └── subliminal_manipulation_detection.json
+│   │   │   │   │   │   ├── narrative_warfare_mass_awakening
+│   │   │   │   │   │   │   ├── covert_propaganda_extraction_methods.json
+│   │   │   │   │   │   │   ├── emotional_persuasion_influence_ops.json
+│   │   │   │   │   │   │   ├── hyper_reality_disruption_techniques.json
+│   │   │   │   │   │   │   ├── mass_awakening_strategies.json
+│   │   │   │   │   │   │   ├── overcoming_cognitive_dissonance_resistance.json
+│   │   │   │   │   │   │   ├── psychological_breakthrough_tactics.json
+│   │   │   │   │   │   │   ├── strategic_counter_narrative_design.json
+│   │   │   │   │   │   │   └── symbolism_and_archetype_manipulation.json
 │   │   │   │   │   │   ├── propaganda_countermeasures
+│   │   │   │   │   │   │   ├── covert_agenda_decoding.json
+│   │   │   │   │   │   │   ├── cultural_psyops_awareness.json
 │   │   │   │   │   │   │   ├── mass_media_analysis.json
 │   │   │   │   │   │   │   ├── narrative_deconstruction_methods.json
-│   │   │   │   │   │   │   └── propaganda_identification.json
+│   │   │   │   │   │   │   ├── perception_management_resistance.json
+│   │   │   │   │   │   │   ├── propaganda_identification.json
+│   │   │   │   │   │   │   ├── social_engineering_propaganda_tactics.json
+│   │   │   │   │   │   │   └── subliminal_persuasion_exposure.json
 │   │   │   │   │   │   └── psychological_warfare_defense
+│   │   │   │   │   │       ├── black_psyops_defense.json
 │   │   │   │   │   │       ├── counter_propaganda_strategies.json
 │   │   │   │   │   │       ├── deprogramming_psyops_effects.json
-│   │   │   │   │   │       └── mental_resilience_drills.json
+│   │   │   │   │   │       ├── hostile_persuasion_resistance.json
+│   │   │   │   │   │       ├── mental_resilience_drills.json
+│   │   │   │   │   │       ├── psychological_infiltration_countermeasures.json
+│   │   │   │   │   │       ├── psy_warfare_tactic_recognition.json
+│   │   │   │   │   │       └── subconscious_fortification_methods.json
+│   │   │   │   │   ├── cyber_psyops_digital_warfare_defense.json
 │   │   │   │   │   ├── disinformation_analysis.json
+│   │   │   │   │   ├── elite_power_structure_analysis.json
 │   │   │   │   │   ├── emotional_resilience_training.json
 │   │   │   │   │   ├── manipulation_detection.json
 │   │   │   │   │   ├── mind_hacking_countermeasures.json
+│   │   │   │   │   ├── narrative_warfare_mass_awakening.json
 │   │   │   │   │   ├── propaganda_countermeasures.json
 │   │   │   │   │   └── psychological_warfare_defense.json
 │   │   │   │   ├── cybersecurity
@@ -677,6 +795,12 @@
 │   │   │   │   │   │   │   ├── forensic_image_analysis.json
 │   │   │   │   │   │   │   ├── log_analysis_and_correlation.json
 │   │   │   │   │   │   │   └── malware_reversing.json
+│   │   │   │   │   │   ├── history_of_cybersecurity
+│   │   │   │   │   │   │   ├── early_network_security_policies.json
+│   │   │   │   │   │   │   ├── evolution_of_browser_security.json
+│   │   │   │   │   │   │   ├── future_trends_in_web_security.json
+│   │   │   │   │   │   │   ├── history_of_cors_and_same_origin_policy.json
+│   │   │   │   │   │   │   └── major_cyber_attacks.json
 │   │   │   │   │   │   ├── malware_analysis
 │   │   │   │   │   │   │   ├── binary_disassembly_methods.json
 │   │   │   │   │   │   │   ├── malware_detection_and_removal.json
@@ -698,6 +822,7 @@
 │   │   │   │   │   │       ├── incident_response_intelligence.json
 │   │   │   │   │   │       └── osint_for_cyber_threats.json
 │   │   │   │   │   ├── digital_forensics.json
+│   │   │   │   │   ├── history_of_cybersecurity.json
 │   │   │   │   │   ├── malware_analysis.json
 │   │   │   │   │   ├── network_security.json
 │   │   │   │   │   ├── penetration_testing.json
@@ -749,6 +874,73 @@
 │   │   │   │   │   ├── jumpstyle_hardstyle.json
 │   │   │   │   │   ├── liquid_dance.json
 │   │   │   │   │   └── poi_spinning.json
+│   │   │   │   ├── equations
+│   │   │   │   │   ├── abstract_mathematical_models.json
+│   │   │   │   │   ├── algebraic_structure_analysis.json
+│   │   │   │   │   ├── bioelectric_psionic_tech.json
+│   │   │   │   │   ├── calculus_and_rate_of_change.json
+│   │   │   │   │   ├── card_decks
+│   │   │   │   │   │   ├── abstract_mathematical_models
+│   │   │   │   │   │   │   ├── group_theory_and_symmetry.json
+│   │   │   │   │   │   │   ├── mathematical_models_in_physics.json
+│   │   │   │   │   │   │   └── tensor_notation_and_applications.json
+│   │   │   │   │   │   ├── algebraic_structure_analysis
+│   │   │   │   │   │   │   ├── matrices_and_linear_algebra.json
+│   │   │   │   │   │   │   ├── polynomials_and_factorization.json
+│   │   │   │   │   │   │   └── solving_equations_and_expressions.json
+│   │   │   │   │   │   ├── bioelectric_psionic_tech
+│   │   │   │   │   │   │   ├── electromagnetic_brainwave_interaction.json
+│   │   │   │   │   │   │   ├── human_biofield_and_energy_systems.json
+│   │   │   │   │   │   │   ├── psionic_neural_network_equations.json
+│   │   │   │   │   │   │   └── psionic_technology_and_consciousness_interfaces.json
+│   │   │   │   │   │   ├── calculus_and_rate_of_change
+│   │   │   │   │   │   │   ├── differential_equations_and_series.json
+│   │   │   │   │   │   │   ├── fundamentals_of_derivatives.json
+│   │   │   │   │   │   │   └── integration_methods_and_applications.json
+│   │   │   │   │   │   ├── electrogravitics_and_field_propulsion
+│   │   │   │   │   │   │   ├── anti_gravity_and_lorentz_forces.json
+│   │   │   │   │   │   │   ├── high_voltage_field_effects.json
+│   │   │   │   │   │   │   └── zero_point_energy_and_vacuum_fluctuations.json
+│   │   │   │   │   │   ├── hyperdimensional_mathematics
+│   │   │   │   │   │   │   ├── hyperdimensional_topologies.json
+│   │   │   │   │   │   │   ├── non_euclidean_geometry_and_manifolds.json
+│   │   │   │   │   │   │   └── vortex_physics_and_energy_flow.json
+│   │   │   │   │   │   ├── mathematical_notation_fundamentals
+│   │   │   │   │   │   │   ├── basic_mathematical_symbols.json
+│   │   │   │   │   │   │   ├── notation_in_different_disciplines.json
+│   │   │   │   │   │   │   └── operators_and_expressions.json
+│   │   │   │   │   │   ├── neural_network_mathematics
+│   │   │   │   │   │   │   ├── advanced_hadamard_equations.json
+│   │   │   │   │   │   │   ├── ai_model_training_and_tuning.json
+│   │   │   │   │   │   │   ├── basic_hadamard_equations.json
+│   │   │   │   │   │   │   ├── deep_learning_architectures.json
+│   │   │   │   │   │   │   ├── fundamentals_of_neural_networks.json
+│   │   │   │   │   │   │   ├── neural_network_equations.json
+│   │   │   │   │   │   │   └── neural_network_hadamard_equations.json
+│   │   │   │   │   │   ├── physics_equations_and_applications
+│   │   │   │   │   │   │   ├── electromagnetic_field_equations.json
+│   │   │   │   │   │   │   ├── newtonian_mechanics_equations.json
+│   │   │   │   │   │   │   └── thermodynamics_and_statistical_mechanics.json
+│   │   │   │   │   │   ├── quantum_psionics
+│   │   │   │   │   │   │   ├── nonlocal_consciousness_effects.json
+│   │   │   │   │   │   │   ├── psi_energy_dynamics.json
+│   │   │   │   │   │   │   └── psionic_resonance_and_entanglement.json
+│   │   │   │   │   │   ├── symbolic_logic_and_proofs
+│   │   │   │   │   │   │   ├── formal_proof_methods.json
+│   │   │   │   │   │   │   ├── set_theory_and_quantifiers.json
+│   │   │   │   │   │   │   └── truth_tables_and_logic_gates.json
+│   │   │   │   │   │   └── temporal_mechanics
+│   │   │   │   │   │       ├── reality_modulation_and_psychotronic_fields.json
+│   │   │   │   │   │       ├── time_field_dynamics_and_alteration.json
+│   │   │   │   │   │       └── wave_function_collapse_and_timeline_selection.json
+│   │   │   │   │   ├── electrogravitics_and_field_propulsion.json
+│   │   │   │   │   ├── hyperdimensional_mathematics.json
+│   │   │   │   │   ├── mathematical_notation_fundamentals.json
+│   │   │   │   │   ├── neural_network_mathematics.json
+│   │   │   │   │   ├── physics_equations_and_applications.json
+│   │   │   │   │   ├── quantum_psionics.json
+│   │   │   │   │   ├── symbolic_logic_and_proofs.json
+│   │   │   │   │   └── temporal_mechanics.json
 │   │   │   │   ├── espionage
 │   │   │   │   │   ├── card_decks
 │   │   │   │   │   │   ├── clandestine_surveillance
@@ -869,6 +1061,7 @@
 │   │   │   │   │   │   └── strategic_forecasting
 │   │   │   │   │   │       ├── future_trend_analysis.json
 │   │   │   │   │   │       ├── geopolitical_simulations.json
+│   │   │   │   │   │       ├── risk_prediction_fundamentals.json
 │   │   │   │   │   │       └── risk_prediction_models.json
 │   │   │   │   │   ├── cyber_intelligence.json
 │   │   │   │   │   ├── intelligence_analysis.json
@@ -979,6 +1172,13 @@
 │   │   │   │   │   │   │   ├── aura_sensing_and_control.json
 │   │   │   │   │   │   │   ├── energy_channeling.json
 │   │   │   │   │   │   │   └── psionic_deflection.json
+│   │   │   │   │   │   ├── psi_fields
+│   │   │   │   │   │   │   ├── psi_energy_and_field_theoretical_concepts.json
+│   │   │   │   │   │   │   ├── psi_field_equations_advanced.json
+│   │   │   │   │   │   │   ├── psi_field_equations_basic.json
+│   │   │   │   │   │   │   ├── psi_field_fundamentals.json
+│   │   │   │   │   │   │   ├── psi_field_interaction_models.json
+│   │   │   │   │   │   │   └── psi_field_symbol_and_equation_breakdown.json
 │   │   │   │   │   │   ├── psionic_training
 │   │   │   │   │   │   │   ├── mental_energy_control.json
 │   │   │   │   │   │   │   ├── psi_exercises.json
@@ -997,56 +1197,167 @@
 │   │   │   │   │   │       └── target_acquisition.json
 │   │   │   │   │   ├── clairvoyance_and_telepathy.json
 │   │   │   │   │   ├── energy_manipulation.json
+│   │   │   │   │   ├── psi_fields.json
 │   │   │   │   │   ├── psionic_training.json
 │   │   │   │   │   ├── psionic_weaponry.json
 │   │   │   │   │   ├── psychic_shielding.json
 │   │   │   │   │   └── remote_viewing.json
-│   │   │   │   └── war_strategy
-│   │   │   │       ├── asymmetric_warfare.json
+│   │   │   │   ├── self_sovereignty
+│   │   │   │   │   ├── breaking_narcissistic_bonds.json
+│   │   │   │   │   ├── card_decks
+│   │   │   │   │   │   ├── breaking_narcissistic_bonds
+│   │   │   │   │   │   │   ├── cord_cutting_rituals.json
+│   │   │   │   │   │   │   ├── emotional_freedom_exercises.json
+│   │   │   │   │   │   │   └── no_contact_protocols.json
+│   │   │   │   │   │   ├── emotional_flashback_control
+│   │   │   │   │   │   │   ├── emotional_resilience_exercises.json
+│   │   │   │   │   │   │   ├── flashback_grounding_methods.json
+│   │   │   │   │   │   │   └── memory_repatterning.json
+│   │   │   │   │   │   ├── gaslighting_defense
+│   │   │   │   │   │   │   ├── logical_self_trust.json
+│   │   │   │   │   │   │   ├── spotting_toxic_patterns.json
+│   │   │   │   │   │   │   └── verbal_self_defense.json
+│   │   │   │   │   │   ├── generational_curse_breaking
+│   │   │   │   │   │   │   ├── ancestral_pattern_identification.json
+│   │   │   │   │   │   │   ├── epigenetic_reprogramming.json
+│   │   │   │   │   │   │   └── ritual_of_cord_severance.json
+│   │   │   │   │   │   ├── high_stakes_psychological_warfare
+│   │   │   │   │   │   │   ├── battlefield_mind_games.json
+│   │   │   │   │   │   │   ├── covert_influence_tactics.json
+│   │   │   │   │   │   │   └── narcissist_disarmament.json
+│   │   │   │   │   │   ├── identity_reconstruction
+│   │   │   │   │   │   │   ├── core_value_realignment.json
+│   │   │   │   │   │   │   ├── releasing_false_labels.json
+│   │   │   │   │   │   │   └── true_self_discovery.json
+│   │   │   │   │   │   ├── intuition_strengthening
+│   │   │   │   │   │   │   ├── navigating_with_inner_vision.json
+│   │   │   │   │   │   │   ├── pattern_decoding.json
+│   │   │   │   │   │   │   └── third_eye_awareness.json
+│   │   │   │   │   │   ├── mental_fortress_tactics
+│   │   │   │   │   │   │   ├── emotional_resilience_protocols.json
+│   │   │   │   │   │   │   ├── gaslighting_countermeasures.json
+│   │   │   │   │   │   │   └── psychic_barrier_training.json
+│   │   │   │   │   │   ├── narcissist_proofing_your_life
+│   │   │   │   │   │   │   ├── emotional_fortification.json
+│   │   │   │   │   │   │   ├── red_flag_detection.json
+│   │   │   │   │   │   │   └── strategic_social_fortress.json
+│   │   │   │   │   │   ├── power_posture_and_speech
+│   │   │   │   │   │   │   ├── alpha_posture_training.json
+│   │   │   │   │   │   │   ├── nonverbal_authority_signals.json
+│   │   │   │   │   │   │   └── vocal_power_exercises.json
+│   │   │   │   │   │   ├── psychic_energy_shielding
+│   │   │   │   │   │   │   ├── energetic_boundary_creation.json
+│   │   │   │   │   │   │   ├── mirror_shielding_techniques.json
+│   │   │   │   │   │   │   └── warding_against_energy_vampires.json
+│   │   │   │   │   │   ├── ritual_detachment_exercises
+│   │   │   │   │   │   │   ├── ceremonial_disengagement.json
+│   │   │   │   │   │   │   ├── object_purging_methods.json
+│   │   │   │   │   │   │   └── spiritual_cleansing_protocols.json
+│   │   │   │   │   │   ├── sovereign_mindset_programming
+│   │   │   │   │   │   │   ├── mental_autonomy_exercises.json
+│   │   │   │   │   │   │   ├── rewriting_life_narratives.json
+│   │   │   │   │   │   │   └── self_authorization_practices.json
+│   │   │   │   │   │   ├── strategic_social_disengagement
+│   │   │   │   │   │   │   ├── controlled_information_sharing.json
+│   │   │   │   │   │   │   ├── red_flag_detection.json
+│   │   │   │   │   │   │   └── stealth_exit_strategies.json
+│   │   │   │   │   │   └── trauma_alchemy
+│   │   │   │   │   │       ├── emotional_transmutation.json
+│   │   │   │   │   │       ├── narrative_reframing.json
+│   │   │   │   │   │       └── pain_into_purpose.json
+│   │   │   │   │   ├── emotional_flashback_control.json
+│   │   │   │   │   ├── gaslighting_defense.json
+│   │   │   │   │   ├── generational_curse_breaking.json
+│   │   │   │   │   ├── high_stakes_psychological_warfare.json
+│   │   │   │   │   ├── identity_reconstruction.json
+│   │   │   │   │   ├── intuition_strengthening.json
+│   │   │   │   │   ├── mental_fortress_tactics.json
+│   │   │   │   │   ├── narcissist_proofing_your_life.json
+│   │   │   │   │   ├── power_posture_and_speech.json
+│   │   │   │   │   ├── psychic_energy_shielding.json
+│   │   │   │   │   ├── ritual_detachment_exercises.json
+│   │   │   │   │   ├── sovereign_mindset_programming.json
+│   │   │   │   │   ├── strategic_social_disengagement.json
+│   │   │   │   │   └── trauma_alchemy.json
+│   │   │   │   ├── war_strategy
+│   │   │   │   │   ├── asymmetric_warfare.json
+│   │   │   │   │   ├── card_decks
+│   │   │   │   │   │   ├── asymmetric_warfare
+│   │   │   │   │   │   │   ├── counter_terrorism_operations.json
+│   │   │   │   │   │   │   ├── insurgency_tactics.json
+│   │   │   │   │   │   │   └── urban_warfare_strategies.json
+│   │   │   │   │   │   ├── cyber_warfare_strategy
+│   │   │   │   │   │   │   ├── cyber_intelligence_operations.json
+│   │   │   │   │   │   │   ├── defensive_network_security.json
+│   │   │   │   │   │   │   └── offensive_cyber_tactics.json
+│   │   │   │   │   │   ├── geopolitical_analysis
+│   │   │   │   │   │   │   ├── economic_sanctions_tactics.json
+│   │   │   │   │   │   │   ├── global_conflict_trends.json
+│   │   │   │   │   │   │   └── political_warfare_analysis.json
+│   │   │   │   │   │   ├── military_strategy
+│   │   │   │   │   │   │   ├── combined_arms_operations.json
+│   │   │   │   │   │   │   ├── force_maneuvering.json
+│   │   │   │   │   │   │   └── supply_chain_tactics.json
+│   │   │   │   │   │   ├── psychological_operations_tactics
+│   │   │   │   │   │   │   ├── counter_psyops_strategies.json
+│   │   │   │   │   │   │   ├── covert_psychological_warfare.json
+│   │   │   │   │   │   │   └── influence_campaigns.json
+│   │   │   │   │   │   └── special_operations_planning
+│   │   │   │   │   │       ├── covert_infiltration_methods.json
+│   │   │   │   │   │       ├── extraction_and_escape_tactics.json
+│   │   │   │   │   │       └── mission_planning_and_execution.json
+│   │   │   │   │   ├── cyber_warfare_strategy.json
+│   │   │   │   │   ├── geopolitical_analysis.json
+│   │   │   │   │   ├── military_strategy.json
+│   │   │   │   │   ├── psychological_operations_tactics.json
+│   │   │   │   │   └── special_operations_planning.json
+│   │   │   │   └── web_three
+│   │   │   │       ├── blockchain_fundamentals.json
 │   │   │   │       ├── card_decks
-│   │   │   │       │   ├── asymmetric_warfare
-│   │   │   │       │   │   ├── counter_terrorism_operations.json
-│   │   │   │       │   │   ├── insurgency_tactics.json
-│   │   │   │       │   │   └── urban_warfare_strategies.json
-│   │   │   │       │   ├── cyber_warfare_strategy
-│   │   │   │       │   │   ├── cyber_intelligence_operations.json
-│   │   │   │       │   │   ├── defensive_network_security.json
-│   │   │   │       │   │   └── offensive_cyber_tactics.json
-│   │   │   │       │   ├── geopolitical_analysis
-│   │   │   │       │   │   ├── economic_sanctions_tactics.json
-│   │   │   │       │   │   ├── global_conflict_trends.json
-│   │   │   │       │   │   └── political_warfare_analysis.json
-│   │   │   │       │   ├── military_strategy
-│   │   │   │       │   │   ├── combined_arms_operations.json
-│   │   │   │       │   │   ├── force_maneuvering.json
-│   │   │   │       │   │   └── supply_chain_tactics.json
-│   │   │   │       │   ├── psychological_operations_tactics
-│   │   │   │       │   │   ├── counter_psyops_strategies.json
-│   │   │   │       │   │   ├── covert_psychological_warfare.json
-│   │   │   │       │   │   └── influence_campaigns.json
-│   │   │   │       │   └── special_operations_planning
-│   │   │   │       │       ├── covert_infiltration_methods.json
-│   │   │   │       │       ├── extraction_and_escape_tactics.json
-│   │   │   │       │       └── mission_planning_and_execution.json
-│   │   │   │       ├── cyber_warfare_strategy.json
-│   │   │   │       ├── geopolitical_analysis.json
-│   │   │   │       ├── military_strategy.json
-│   │   │   │       ├── psychological_operations_tactics.json
-│   │   │   │       └── special_operations_planning.json
-│   │   │   └── war_strategy.json
+│   │   │   │       │   ├── blockchain_fundamentals
+│   │   │   │       │   │   ├── blockchain_architecture.json
+│   │   │   │       │   │   ├── consensus_algorithms.json
+│   │   │   │       │   │   └── cryptographic_primitives.json
+│   │   │   │       │   ├── decentralized_applications
+│   │   │   │       │   │   ├── dapp_architecture.json
+│   │   │   │       │   │   ├── oracle_and_data_feeds.json
+│   │   │   │       │   │   └── web_three_frontend_development.json
+│   │   │   │       │   ├── decentralized_identity_and_privacy
+│   │   │   │       │   │   ├── confidential_transactions.json
+│   │   │   │       │   │   ├── identity_on_blockchain.json
+│   │   │   │       │   │   └── zk_proofs_and_snarks.json
+│   │   │   │       │   ├── smart_contract_development
+│   │   │   │       │   │   ├── gas_efficiency_optimization.json
+│   │   │   │       │   │   ├── smart_contract_audits.json
+│   │   │   │       │   │   └── solidity_basics.json
+│   │   │   │       │   ├── tokenomics_and_defi
+│   │   │   │       │   │   ├── defi_protocol_mechanics.json
+│   │   │   │       │   │   ├── governance_and_daos.json
+│   │   │   │       │   │   └── token_design_and_distribution.json
+│   │   │   │       │   └── web_three_security_and_auditing
+│   │   │   │       │       ├── blockchain_pen_testing.json
+│   │   │   │       │       ├── common_smart_contract_vulnerabilities.json
+│   │   │   │       │       └── web_three_security_frameworks.json
+│   │   │   │       ├── decentralized_applications.json
+│   │   │   │       ├── decentralized_identity_and_privacy.json
+│   │   │   │       ├── smart_contract_development.json
+│   │   │   │       ├── tokenomics_and_defi.json
+│   │   │   │       └── web_three_security_and_auditing.json
+│   │   │   ├── war_strategy.json
+│   │   │   └── web_three.json
 │   │   └── training_modules.json
 │   ├── hooks
 │   │   ├── useTimer.ts
 │   │   ├── useTraining.ts
 │   │   └── useWorkoutSchedule.ts
 │   ├── main.tsx
-│   ├── models
-│   │   ├── Schedule.ts
-│   │   └── TrainingSequence.ts
 │   ├── pages
 │   │   ├── HomePage
 │   │   │   ├── HomePage.module.css
 │   │   │   └── HomePage.tsx
+│   │   ├── SchedulesPage
+│   │   │   ├── SchedulesPage.module.css
+│   │   │   └── SchedulesPage.tsx
 │   │   ├── SettingsPage
 │   │   │   ├── SettingsPage.module.css
 │   │   │   └── SettingsPage.tsx
@@ -1058,43 +1369,52 @@
 │   │       └── WorkoutsPage.tsx
 │   ├── routes
 │   │   └── Routes.tsx
-│   ├── services
 │   ├── store
+│   │   ├── CustomWorkoutSchedulesStore.ts
 │   │   ├── DifficultySettingsStore.ts
+│   │   ├── ScheduleCalendarTimerStore.ts
 │   │   └── WorkoutScheduleStore.ts
 │   ├── styles
 │   │   └── theme.css
 │   ├── types
-│   │   ├── Card.ts
+│   │   ├── api
 │   │   ├── CardDeck.ts
+│   │   ├── Card.ts
 │   │   ├── CoachData.ts
+│   │   ├── components
 │   │   ├── DifficultyLevelData.ts
 │   │   ├── DifficultySetting.ts
-│   │   ├── TrainingModule.ts
+│   │   ├── index.ts
+│   │   ├── schedule.ts
+│   │   ├── settings.ts
+│   │   ├── stores
 │   │   ├── TrainingModuleReference.ts
+│   │   ├── TrainingModule.ts
 │   │   ├── TrainingSubModule.ts
+│   │   ├── training.ts
 │   │   ├── WorkoutCategory.ts
 │   │   ├── WorkoutDifficultyLevel.ts
 │   │   ├── WorkoutRank.ts
 │   │   ├── WorkoutSchedule.ts
-│   │   └── WorkoutsData.ts
+│   │   ├── WorkoutsData.ts
+│   │   └── workout.ts
 │   ├── utils
 │   │   ├── AudioPlayer.ts
 │   │   ├── CardDataLoader.ts
 │   │   ├── CardDealer.ts
-│   │   ├── CoachDataLoader.ts
-│   │   ├── InitialDataLoader.ts
-│   │   ├── WorkoutDataLoader.ts
-│   │   ├── WorkoutScheduleCreator.ts
 │   │   ├── cardDeckPaths.ts
+│   │   ├── CoachDataLoader.ts
 │   │   ├── generateCardDeckPaths.tsx
 │   │   ├── generateModulePaths.tsx
 │   │   ├── generateSubModulePaths.tsx
 │   │   ├── generateWorkoutCategoryPaths.tsx
 │   │   ├── generateWorkoutSubCategoryPaths.tsx
+│   │   ├── InitialDataLoader.ts
 │   │   ├── modulePaths.ts
 │   │   ├── subModulePaths.ts
 │   │   ├── workoutCategoryPaths.ts
+│   │   ├── WorkoutDataLoader.ts
+│   │   ├── WorkoutScheduleCreator.ts
 │   │   └── workoutSubCategoryPaths.ts
 │   └── vite-env.d.ts
 ├── templates
@@ -1106,4 +1426,4 @@
 ├── tsconfig.node.json
 └── vite.config.ts
 
-185 directories, 922 files
+318 directories, 1109 files

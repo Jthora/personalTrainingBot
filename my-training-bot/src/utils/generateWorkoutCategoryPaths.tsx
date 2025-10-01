@@ -14,12 +14,13 @@ const getFiles = (source: string, extension: string) => {
 const generateWorkoutCategoryPaths = async () => {
     try {
         const files = getFiles(workoutCategoriesPath, '.json');
-        const workoutCategoryPaths = files.map(file => {
+        const workoutCategoryEntries = files.map(file => {
             const id = path.basename(file, '.json');
-            return `    ${id}: () => import("../data/training_coach_data/workouts/${file}")`;
-        }).join(',\n');
+            return `    ${id}: createJsonLoader<WorkoutCategoryFile>(() => import("../data/training_coach_data/workouts/${file}"))`;
+        });
 
-        const fileContent = `export const workoutCategoryPaths: { [key: string]: () => Promise<any> } = {\n${workoutCategoryPaths}\n};\n\nexport const totalWorkoutCategories = Object.keys(workoutCategoryPaths).length;\n`;
+        const totalWorkoutCategories = workoutCategoryEntries.length;
+        const fileContent = `import type { WorkoutCategoryFile } from "../types/TrainingDataFiles";\nimport { createJsonLoader } from "./jsonLoader";\n\nexport const workoutCategoryPaths = {\n${workoutCategoryEntries.join(',\n')}\n} satisfies Record<string, () => Promise<WorkoutCategoryFile>>;\n\nexport const totalWorkoutCategories = ${totalWorkoutCategories};\n`;
 
         fs.writeFileSync(outputPath, fileContent, 'utf-8');
         console.log('Successfully generated workout category paths.');

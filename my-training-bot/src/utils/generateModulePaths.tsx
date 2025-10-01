@@ -13,11 +13,11 @@ const generateModulePaths = async () => {
             throw new Error("Invalid data format: 'modules' field is missing.");
         }
 
-        const modulePaths = trainingModules.modules.map((module: { id: string }) => {
-            return `    ${module.id}: () => import("../data/training_modules/${module.id}.json")`;
+        const moduleEntries = trainingModules.modules.map((module: { id: string }) => {
+            return `    ${module.id}: createJsonLoader<TrainingModuleFile>(() => import("../data/training_modules/${module.id}.json"))`;
         }).join(',\n');
 
-        const fileContent = `export const modulePaths: { [key: string]: () => Promise<any> } = {\n${modulePaths}\n};\n`;
+        const fileContent = `import type { TrainingModuleFile } from "../types/TrainingDataFiles";\nimport { createJsonLoader } from "./jsonLoader";\n\nexport const modulePaths = {\n${moduleEntries}\n} satisfies Record<string, () => Promise<TrainingModuleFile>>;\n`;
 
         fs.writeFileSync(outputPath, fileContent, 'utf-8');
         console.log('Successfully generated module paths.');

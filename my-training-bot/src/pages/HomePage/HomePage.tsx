@@ -1,30 +1,15 @@
 import styles from './HomePage.module.css';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Header from '../../components/Header/Header';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import CardTable from '../../components/CardTable/CardTable';
 import { CardProvider } from '../../context/CardContext';
 import { WorkoutScheduleProvider } from '../../context/WorkoutScheduleContext';
-import TrainingModuleCache from '../../cache/TrainingModuleCache';
+import { useSearchParams } from 'react-router-dom';
 
 const HomePage: React.FC = () => {
-    const [isLoading, setIsLoading] = useState(true);
-
-    useEffect(() => {
-        const loadCache = async () => {
-            const cache = TrainingModuleCache.getInstance();
-            if (!cache.isLoaded()) {
-                await cache.loadData([]); // Ensure the cache is loaded
-            }
-            setIsLoading(false);
-        };
-
-        loadCache();
-    }, []);
-
-    if (isLoading) {
-        return <div>HomePage Loading...</div>;
-    }
+    const [searchParams] = useSearchParams();
+    const cardSlug = searchParams.get('cardSlug') ?? undefined;
 
     return (
         <div className={styles.pageContainer}>
@@ -33,7 +18,7 @@ const HomePage: React.FC = () => {
                 <WorkoutScheduleProvider>
                     <Sidebar />
                 </WorkoutScheduleProvider>
-                <CardProvider>
+                <CardProvider initialSlug={cardSlug}>
                     <CardTable />
                 </CardProvider>
             </div>

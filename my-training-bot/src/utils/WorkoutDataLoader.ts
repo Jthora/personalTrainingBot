@@ -2,6 +2,103 @@ import { WorkoutCategory, WorkoutSubCategory, WorkoutGroup, Workout } from "../t
 import { workoutCategoryPaths } from "./workoutCategoryPaths";
 import { workoutSubCategoryPaths } from "./workoutSubCategoryPaths";
 
+type DifficultyRangeJSON = [number, number];
+
+interface WorkoutJSON {
+    name: string;
+    description: string;
+    duration: string;
+    intensity: string;
+    difficulty_range: DifficultyRangeJSON;
+}
+
+interface WorkoutGroupJSON {
+    name: string;
+    description: string;
+    workouts: WorkoutJSON[];
+}
+
+interface WorkoutSubCategoryJSON {
+    name: string;
+    description: string;
+    workout_groups: WorkoutGroupJSON[];
+}
+
+interface WorkoutCategoryJSON {
+    name: string;
+    description: string;
+    subcategories: Record<string, string>;
+}
+
+const resolveJsonModule = (module: unknown): unknown => {
+    if (module && typeof module === "object" && "default" in module) {
+        return (module as { default: unknown }).default;
+    }
+
+    return module;
+};
+
+const isDifficultyRangeJSON = (value: unknown): value is DifficultyRangeJSON =>
+    Array.isArray(value)
+    && value.length === 2
+    && value.every(entry => typeof entry === "number");
+
+const isWorkoutJSON = (value: unknown): value is WorkoutJSON => {
+    if (!value || typeof value !== "object") {
+        return false;
+    }
+
+    const candidate = value as Partial<WorkoutJSON>;
+    return typeof candidate.name === "string"
+        && typeof candidate.description === "string"
+        && typeof candidate.duration === "string"
+        && typeof candidate.intensity === "string"
+        && isDifficultyRangeJSON(candidate.difficulty_range);
+};
+
+const isWorkoutGroupJSON = (value: unknown): value is WorkoutGroupJSON => {
+    if (!value || typeof value !== "object") {
+        return false;
+    }
+
+    const candidate = value as Partial<WorkoutGroupJSON>;
+    return typeof candidate.name === "string"
+        && typeof candidate.description === "string"
+        && Array.isArray(candidate.workouts)
+        && candidate.workouts.every(isWorkoutJSON);
+};
+
+const isWorkoutSubCategoryJSON = (value: unknown): value is WorkoutSubCategoryJSON => {
+    if (!value || typeof value !== "object") {
+        return false;
+    }
+
+    const candidate = value as Partial<WorkoutSubCategoryJSON>;
+    return typeof candidate.name === "string"
+        && typeof candidate.description === "string"
+        && Array.isArray(candidate.workout_groups)
+        && candidate.workout_groups.every(isWorkoutGroupJSON);
+};
+
+const isRecordOfStrings = (value: unknown): value is Record<string, string> => {
+    if (!value || typeof value !== "object" || Array.isArray(value)) {
+        return false;
+    }
+
+    return Object.values(value as Record<string, unknown>).every(entry => typeof entry === "string");
+};
+
+const isWorkoutCategoryJSON = (value: unknown): value is WorkoutCategoryJSON => {
+    if (!value || typeof value !== "object") {
+        return false;
+    }
+
+    const candidate = value as Partial<WorkoutCategoryJSON>;
+    return typeof candidate.name === "string"
+        && typeof candidate.description === "string"
+        && isRecordOfStrings(candidate.subcategories);
+};
+
 class WorkoutDataLoader {
     async loadAllData(onProgress: () => void): Promise<WorkoutCategory[]> {
         try {
@@ -23,25 +120,41 @@ class WorkoutDataLoader {
         console.log(`WorkoutDataLoader: Total categories to load: ${Object.keys(workoutCategoryPaths).length}`);
         for (const categoryId in workoutCategoryPaths) {
             try {
-                const categoryData = await workoutCategoryPaths[categoryId]();
-                if (typeof categoryData.subcategories !== 'object' || Array.isArray(categoryData.subcategories)) {
-                    throw new Error(`WorkoutDataLoader: Invalid subcategories format for category ${categoryId}`);
+                const categoryLoader = workoutCategoryPaths[categoryId];
+                const categoryModule = await categoryLoader();
+                const categoryCandidate = resolveJsonModule(categoryModule);
+
+                if (!isWorkoutCategoryJSON(categoryCandidate)) {
+                    throw new Error(`WorkoutDataLoader: Invalid category data format for ${categoryId}`);
                 }
-                //console.log(`WorkoutDataLoader: Loading subcategories for category ${categoryId}`);
+
+                const categoryData = categoryCandidate;
+
                 const subCategories: WorkoutSubCategory[] = await Promise.all(
-                    Object.keys(categoryData.subcategories).map(async (subCategoryId: string) => {
+                    Object.keys(categoryData.subcategories).map(async subCategoryId => {
+                        const subCategoryKey = `${categoryId}_${subCategoryId}`;
+                        const subCategoryLoader = workoutSubCategoryPaths[subCategoryKey];
+                        if (!subCategoryLoader) {
+                            throw new Error(`WorkoutDataLoader: Missing loader for subcategory ${subCategoryKey}`);
+                        }
+
                         try {
-                            //console.log(`WorkoutDataLoader: Loading data for subcategory ${subCategoryId} in category ${categoryId}`);
-                            const subCategoryData = await workoutSubCategoryPaths[`${categoryId}_${subCategoryId}`]();
-                            //console.log(`WorkoutDataLoader: Loaded subcategory ${subCategoryId} for category ${categoryId}`);
+                            const subCategoryModule = await subCategoryLoader();
+                            const subCategoryCandidate = resolveJsonModule(subCategoryModule);
+
+                            if (!isWorkoutSubCategoryJSON(subCategoryCandidate)) {
+                                throw new Error(`WorkoutDataLoader: Invalid subcategory data format for ${subCategoryKey}`);
+                            }
+
+                            const subCategoryData = subCategoryCandidate;
                             totalSubCategories++;
-                            const workoutGroups: WorkoutGroup[] = subCategoryData.workout_groups.map((group: any) => {
-                                const workouts: Workout[] = group.workouts.map((workout: any) => new Workout(
-                                    workout.name,
-                                    workout.description,
-                                    workout.duration,
-                                    workout.intensity,
-                                    workout.difficulty_range
+                            const workoutGroups: WorkoutGroup[] = subCategoryData.workout_groups.map(group => {
+                                const workouts = group.workouts.map(workoutJSON => new Workout(
+                                    workoutJSON.name,
+                                    workoutJSON.description,
+                                    workoutJSON.duration,
+                                    workoutJSON.intensity,
+                                    workoutJSON.difficulty_range
                                 ));
                                 totalWorkouts += workouts.length;
                                 return new WorkoutGroup(group.name, group.description, workouts);
@@ -49,7 +162,7 @@ class WorkoutDataLoader {
                             totalWorkoutGroups += workoutGroups.length;
                             const workoutSubCategory = new WorkoutSubCategory(subCategoryId, subCategoryData.name, subCategoryData.description, workoutGroups);
 
-                            onProgress(); // Update progress
+                            onProgress();
 
                             return workoutSubCategory;
                         } catch (error) {

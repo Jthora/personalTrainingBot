@@ -1,66 +1,135 @@
-import React, { createContext, useState, useContext, useEffect, ReactNode } from 'react';
+import React, { useState, useEffect, ReactNode, useCallback, useRef } from 'react';
 import CardDealer from '../utils/CardDealer';
 import { Card } from '../types/Card';
 import TrainingModuleCache from '../cache/TrainingModuleCache';
-
-interface CardContextProps {
-    cards: (Card | null)[];
-    dealNextCard: (index: number) => void;
-    getCardDetails: (card: Card) => { trainingModule: string; subTrainingModule: string; cardDeck: string; color: string };
-}
+import { CardContext } from './CardContextState';
 
 interface CardProviderProps {
     children: ReactNode;
+    initialSlug?: string;
 }
 
-const CardContext = createContext<CardContextProps | undefined>(undefined);
-
-export const CardProvider: React.FC<CardProviderProps> = ({ children }) => {
-    const cardDealer = new CardDealer();
+export const CardProvider: React.FC<CardProviderProps> = ({ children, initialSlug }) => {
+    const cardDealerRef = useRef(new CardDealer());
     const [cards, setCards] = useState<(Card | null)[]>([null, null, null]);
     const [isLoading, setIsLoading] = useState(true);
+    const [highlightedCardId, _setHighlightedCardId] = useState<string | null>(null);
+    const highlightedCardIdRef = useRef<string | null>(null);
 
-    const dealNextCard = (index: number) => {
-        const newCard = cardDealer.getRandomCard();
+    const updateHighlight = useCallback((cardId: string | null) => {
+        highlightedCardIdRef.current = cardId;
+        _setHighlightedCardId(cardId);
+    }, []);
+
+    const clearHighlightedCard = useCallback(() => {
+        updateHighlight(null);
+    }, [updateHighlight]);
+
+    const dealNextCard = useCallback((index: number) => {
+        const newCard = cardDealerRef.current.getRandomCard();
         console.log(`Dealing new card at index ${index}:`, newCard);
         if (newCard) {
-            setCards(prevCards => {
+            setCards((prevCards: (Card | null)[]) => {
                 const updatedCards = [...prevCards];
+                const previousCard = updatedCards[index];
                 updatedCards[index] = newCard;
+                if (previousCard?.id && previousCard.id === highlightedCardIdRef.current) {
+                    updateHighlight(null);
+                }
                 console.log(`Updated cards:`, updatedCards);
                 return updatedCards;
             });
         } else {
             console.log(`No card available to deal at index ${index}`);
         }
+    }, [updateHighlight]);
+
+    const getCardMeta = (card: Card) => {
+        const cache = TrainingModuleCache.getInstance();
+        return cache.getCardMeta(card.id);
     };
 
     const getCardDetails = (card: Card) => {
         const cache = TrainingModuleCache.getInstance();
-        for (const module of cache.cache.values()) {
-            for (const subModule of module.submodules) {
-                for (const deck of subModule.cardDecks) {
-                    if (deck.cards.some(c => c.id === card.id)) {
-                        return {
-                            trainingModule: module.name,
-                            subTrainingModule: subModule.name,
-                            cardDeck: deck.name,
-                            color: module.color
-                        };
-                    }
+        const meta = cache.getCardMeta(card.id);
+
+        if (!meta) {
+            return { trainingModule: '', subTrainingModule: '', cardDeck: '', color: '' };
+        }
+
+        return {
+            trainingModule: meta.moduleName,
+            subTrainingModule: meta.subModuleName,
+            cardDeck: meta.cardDeckName,
+            color: meta.moduleColor,
+        };
+    };
+
+    const focusCardBySlug = useCallback((slug: string) => {
+        const cache = TrainingModuleCache.getInstance();
+        if (!cache.isLoaded()) {
+            console.warn('TrainingModuleCache not yet loaded when attempting to focus card slug.');
+            return false;
+        }
+
+        const cardId = cache.getCardIdBySlug(slug);
+        if (!cardId) {
+            console.warn(`No cardId resolved for slug: ${slug}`);
+            return false;
+        }
+
+        const card = cache.getCardById(cardId);
+        if (!card) {
+            console.warn(`No card found for slug: ${slug}`);
+            return false;
+        }
+
+        setCards((prevCards: (Card | null)[]) => {
+            const totalSlots = prevCards.length;
+            const nextCards = [...prevCards];
+            const existingIndex = nextCards.findIndex(existing => existing?.id === card.id);
+
+            let targetCard: Card | null = card;
+            if (existingIndex >= 0) {
+                const [existingCard] = nextCards.splice(existingIndex, 1);
+                targetCard = existingCard ?? card;
+            }
+
+            nextCards.unshift(targetCard);
+
+            if (nextCards.length > totalSlots) {
+                nextCards.length = totalSlots;
+            } else {
+                while (nextCards.length < totalSlots) {
+                    nextCards.push(cardDealerRef.current.getRandomCard());
                 }
             }
-        }
-        return { trainingModule: '', subTrainingModule: '', cardDeck: '', color: '' };
-    };
+
+            for (let i = 0; i < nextCards.length; i += 1) {
+                if (!nextCards[i]) {
+                    nextCards[i] = cardDealerRef.current.getRandomCard();
+                }
+            }
+
+            return nextCards;
+        });
+
+        updateHighlight(cardId);
+        return true;
+    }, [updateHighlight]);
 
     useEffect(() => {
         const loadCache = async () => {
             const cache = TrainingModuleCache.getInstance();
             if (!cache.isLoaded()) {
-                await cache.loadData([]);
+                console.error('TrainingModuleCache not loaded before CardProvider mount.');
+                return;
             }
-            const initialCards = [cardDealer.getRandomCard(), cardDealer.getRandomCard(), cardDealer.getRandomCard()];
+            const initialCards = [
+                cardDealerRef.current.getRandomCard(),
+                cardDealerRef.current.getRandomCard(),
+                cardDealerRef.current.getRandomCard(),
+            ];
             console.log('Initial cards:', initialCards);
             setCards(initialCards);
             setIsLoading(false);
@@ -69,21 +138,40 @@ export const CardProvider: React.FC<CardProviderProps> = ({ children }) => {
         loadCache();
     }, []);
 
+    const initialSlugAppliedRef = useRef(false);
+
+    useEffect(() => {
+        if (!initialSlug || initialSlugAppliedRef.current || isLoading) {
+            return;
+        }
+
+        focusCardBySlug(initialSlug);
+        initialSlugAppliedRef.current = true;
+    }, [initialSlug, isLoading, focusCardBySlug]);
+
     if (isLoading) {
         return <div>Loading cards...</div>;
     }
 
+    const getCardSlug = (card: Card) => {
+        const cache = TrainingModuleCache.getInstance();
+        return cache.getSlugForCard(card.id);
+    };
+
     return (
-        <CardContext.Provider value={{ cards, dealNextCard, getCardDetails }}>
+        <CardContext.Provider
+            value={{
+                cards,
+                dealNextCard,
+                getCardDetails,
+                getCardSlug,
+                getCardMeta,
+                highlightedCardId,
+                focusCardBySlug,
+                clearHighlightedCard,
+            }}
+        >
             {children}
         </CardContext.Provider>
     );
-};
-
-export const useCardContext = () => {
-    const context = useContext(CardContext);
-    if (!context) {
-        throw new Error('useCardContext must be used within a CardProvider');
-    }
-    return context;
 };

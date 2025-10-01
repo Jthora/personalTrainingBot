@@ -6,12 +6,17 @@ import TrainingCoachCache from '../../cache/TrainingCoachCache';
 import styles from './Header.module.css';
 import logo from '../../assets/images/WingCommanderLogo-288x162.gif';
 
+interface UserProfile {
+    nickname?: string;
+    avatar?: string;
+}
+
 const Header: React.FC = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const [isWeb3Connected, setIsWeb3Connected] = useState(false);
     const [walletAddress, setWalletAddress] = useState<string>('');
-    const [userProfile, setUserProfile] = useState<any>(null);
+    const [userProfile, setUserProfile] = useState<UserProfile | null>(null);
     const [showUserMenu, setShowUserMenu] = useState(false);
     const [isDarkMode, setIsDarkMode] = useState(true);
     const [selectedCoach, setSelectedCoach] = useState<string>('tiger_fitness_god');

@@ -45,8 +45,8 @@ const WorkoutList: React.FC = () => {
             {schedule.scheduleItems.map((item, index) => {
                 if (item instanceof WorkoutSet) {
                     return item.workouts
-                        .filter(([_, completed]) => !completed)
-                        .map(([workout, _], workoutIndex) => (
+                        .filter(([, completed]) => !completed)
+                        .map(([workout], workoutIndex) => (
                             <WorkoutCard key={`${index}-${workoutIndex}`} item={workout} onClick={() => {
                                 console.log('WorkoutList Card Clicked:', workout.id);
                             }} />

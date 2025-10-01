@@ -1,0 +1,48 @@
+.pageContainer {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background: radial-gradient(circle at top, rgba(0, 31, 63, 0.85), #001026 60%);
+    color: #f4f8ff;
+}
+
+.cardWrapper {
+    width: min(1200px, 100%);
+}
+
+.actions {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.primaryAction {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.9rem 1.6rem;
+    border-radius: 999px;
+    background: rgba(139, 197, 255, 0.2);
+    color: #f4f8ff;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid rgba(139, 197, 255, 0.45);
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.primaryAction:hover {
+    background: rgba(139, 197, 255, 0.35);
+    transform: translateY(-1px);
+}
+
+.message {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.backLink {
+    margin-top: 1rem;
+}

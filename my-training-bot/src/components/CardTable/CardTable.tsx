@@ -1,6 +1,6 @@
 import React from 'react';
 import CardSlot from '../CardSlot/CardSlot';
-import { useCardContext } from '../../context/CardContext';
+import { useCardContext } from '../../hooks/useCardContext';
 import styles from './CardTable.module.css';
 
 const CardTable: React.FC = () => {

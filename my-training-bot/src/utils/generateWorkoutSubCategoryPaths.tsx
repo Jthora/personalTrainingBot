@@ -21,7 +21,7 @@ const getFiles = (source: string, extension: string) => {
 const generateWorkoutSubCategoryPaths = async () => {
     try {
         const directories = getDirectories(workoutSubCategoriesPath);
-        const paths = directories.flatMap(directory => {
+        const entries = directories.flatMap(directory => {
             const subDirPath = path.join(workoutSubCategoriesPath, directory);
             const files = getFiles(subDirPath, '.json');
             return files.map(file => {
@@ -31,11 +31,12 @@ const generateWorkoutSubCategoryPaths = async () => {
                 if (fileContent.trim() === '') {
                     console.warn(`Warning: Empty JSON file detected at ${filePath}`);
                 }
-                return `    ${id}: () => import("${filePath}")`;
+                return `    ${id}: createJsonLoader<WorkoutSubCategoryFile>(() => import("${filePath}"))`;
             });
-        }).join(',\n');
+        });
 
-        const fileContent = `export const workoutSubCategoryPaths: { [key: string]: () => Promise<any> } = {\n${paths}\n};\n\nexport const totalWorkoutSubCategories = Object.keys(workoutSubCategoryPaths).length;\n`;
+        const totalWorkoutSubCategories = entries.length;
+        const fileContent = `import type { WorkoutSubCategoryFile } from "../types/TrainingDataFiles";\nimport { createJsonLoader } from "./jsonLoader";\n\nexport const workoutSubCategoryPaths = {\n${entries.join(',\n')}\n} satisfies Record<string, () => Promise<WorkoutSubCategoryFile>>;\n\nexport const totalWorkoutSubCategories = ${totalWorkoutSubCategories};\n`;
 
         fs.writeFileSync(outputPath, fileContent, 'utf-8');
         console.log('Successfully generated workout subcategory paths.');

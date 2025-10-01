@@ -5,6 +5,7 @@ import WorkoutsPage from '../pages/WorkoutsPage/WorkoutsPage';
 import SettingsPage from '../pages/SettingsPage/SettingsPage';
 import TrainingPage from '../pages/TrainingPage/TrainingPage';
 import SchedulesPage from '../pages/SchedulesPage/SchedulesPage'; // Import the new page
+import CardSharePage from '../pages/CardSharePage/CardSharePage';
 
 const AppRoutes: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const AppRoutes: React.FC = () => {
       <Route path="/workouts" element={<WorkoutsPage />} />
       <Route path="/training" element={<TrainingPage />} />
       <Route path="/settings" element={<SettingsPage />} />
+      <Route path="/c/:slug" element={<CardSharePage />} />
     </Routes>
   );
 };

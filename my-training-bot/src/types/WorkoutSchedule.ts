@@ -1,5 +1,62 @@
 import { Workout } from './WorkoutCategory';
-import { DifficultySetting } from './DifficultySetting';
+import { DifficultySetting, DifficultySettingJSON } from './DifficultySetting';
+
+export interface WorkoutSerialized {
+    name: string;
+    description: string;
+    duration: string;
+    intensity: string;
+    difficulty_range: [number, number];
+}
+
+export type WorkoutCompletionTupleJSON = [WorkoutSerialized, boolean];
+
+export interface WorkoutSetJSON {
+    workouts: WorkoutCompletionTupleJSON[];
+}
+
+export interface WorkoutBlockJSON {
+    name: string;
+    description: string;
+    duration: number;
+    intervalDetails: string;
+}
+
+export type WorkoutScheduleItemJSON = WorkoutSetJSON | WorkoutBlockJSON;
+
+export interface WorkoutScheduleJSON {
+    date: string;
+    scheduleItems: WorkoutScheduleItemJSON[];
+    difficultySettings: DifficultySettingJSON;
+}
+
+export interface CustomWorkoutScheduleJSON {
+    id?: string;
+    name: string;
+    description: string;
+    workoutSchedule: WorkoutScheduleJSON;
+}
+
+const isWorkoutSetJSON = (item: WorkoutScheduleItemJSON): item is WorkoutSetJSON => 'workouts' in item;
+
+const hydrateWorkout = ([workout, completed]: WorkoutCompletionTupleJSON): [Workout, boolean] => {
+    const reconstructedWorkout = new Workout(
+        workout.name,
+        workout.description,
+        workout.duration,
+        workout.intensity,
+        workout.difficulty_range
+    );
+    return [reconstructedWorkout, completed];
+};
+
+const serializeWorkout = (workout: Workout): WorkoutSerialized => ({
+    name: workout.name,
+    description: workout.description,
+    duration: workout.duration,
+    intensity: workout.intensity,
+    difficulty_range: workout.difficulty_range,
+});
 import { v4 as uuidv4 } from 'uuid';
 
 export class WorkoutSchedule {
@@ -67,54 +124,38 @@ export class WorkoutSchedule {
         }
     }
 
-    static fromJSON(json: any): WorkoutSchedule {
-        return new WorkoutSchedule(
-            json.date,
-            json.scheduleItems.map((item: any) => {
-                if (item.workouts) {
-                    const workouts = item.workouts.map(([workout, completed]: [any, boolean]) => {
-                        const reconstructedWorkout = new Workout(
-                            workout.name,
-                            workout.description,
-                            workout.duration,
-                            workout.intensity,
-                            workout.difficulty_range
-                        );
-                        return [reconstructedWorkout, completed];
-                    });
-                    return new WorkoutSet(workouts);
-                } else if (item.name && item.description && item.duration && item.intervalDetails) {
-                    return new WorkoutBlock(item.name, item.description, item.duration, item.intervalDetails);
-                } else {
-                    console.warn('Unknown item type in schedule:', item);
-                    return item;
-                }
-            }),
-            json.difficultySettings
-        );
+    static fromJSON(json: WorkoutScheduleJSON): WorkoutSchedule {
+        const scheduleItems = json.scheduleItems.map(item => {
+            if (isWorkoutSetJSON(item)) {
+                return new WorkoutSet(item.workouts.map(hydrateWorkout));
+            }
+            return new WorkoutBlock(item.name, item.description, item.duration, item.intervalDetails);
+        });
+
+        return new WorkoutSchedule(json.date, scheduleItems, DifficultySetting.fromJSON(json.difficultySettings));
     }
 
     toJSON() {
+        const scheduleItems: WorkoutScheduleItemJSON[] = this.scheduleItems.map(item => {
+            if (item instanceof WorkoutSet) {
+                return {
+                    workouts: item.workouts.map(([workout, completed]) => [serializeWorkout(workout), completed]),
+                };
+            }
+
+            return {
+                name: item.name,
+                description: item.description,
+                duration: item.duration,
+                intervalDetails: item.intervalDetails,
+            };
+        });
+
         return {
             date: this.date,
-            scheduleItems: this.scheduleItems.map(item => {
-                if (item instanceof WorkoutSet) {
-                    return {
-                        workouts: item.workouts.map(([workout, completed]) => [workout, completed])
-                    };
-                } else if (item instanceof WorkoutBlock) {
-                    return {
-                        name: item.name,
-                        description: item.description,
-                        duration: item.duration,
-                        intervalDetails: item.intervalDetails
-                    };
-                } else {
-                    return item;
-                }
-            }),
-            difficultySettings: this.difficultySettings
-        };
+            scheduleItems,
+            difficultySettings: this.difficultySettings.toJSON(),
+        } satisfies WorkoutScheduleJSON;
     }
 }
 
@@ -126,7 +167,7 @@ export class WorkoutSet {
     }
 
     get allWorkoutsCompleted(): boolean {
-        return this.workouts.every(([_, completed]) => completed);
+        return this.workouts.every(([, completed]) => completed);
     }
 }
 
@@ -163,7 +204,7 @@ export class CustomWorkoutSchedule {
         this.workoutSchedule = workoutSchedule;
     }
 
-    static fromJSON(json: any): CustomWorkoutSchedule {
+    static fromJSON(json: CustomWorkoutScheduleJSON): CustomWorkoutSchedule {
         return new CustomWorkoutSchedule(
             json.name,
             json.description,
@@ -177,8 +218,8 @@ export class CustomWorkoutSchedule {
             id: this.id,
             name: this.name,
             description: this.description,
-            workoutSchedule: this.workoutSchedule.toJSON()
-        };
+            workoutSchedule: this.workoutSchedule.toJSON(),
+        } satisfies CustomWorkoutScheduleJSON;
     }
 }
 

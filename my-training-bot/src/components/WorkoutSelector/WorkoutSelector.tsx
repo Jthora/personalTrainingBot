@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import WorkoutCategoryCache from '../../cache/WorkoutCategoryCache';
-import WorkoutScheduleStore from '../../store/WorkoutScheduleStore';
 import { WorkoutCategory } from '../../types/WorkoutCategory';
-import { WorkoutSet } from '../../types/WorkoutSchedule';
 import styles from './WorkoutSelector.module.css';
-import useWorkoutSchedule from '../../hooks/useWorkoutSchedule';
 
 const WorkoutSelector: React.FC = () => {
     const [workoutCategories, setWorkoutCategories] = useState<WorkoutCategory[]>([]);

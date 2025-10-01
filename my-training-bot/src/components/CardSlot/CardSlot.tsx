@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { Card } from '../../types/Card';
 import styles from './CardSlot.module.css';
-import { useCardContext } from '../../context/CardContext';
+import { useCardContext } from '../../hooks/useCardContext';
 import 'katex/dist/katex.min.css';
 import katex from 'katex';
+import ShareCardModal from '../ShareCard/ShareCardModal';
+
+const TIME_INTERVALS = [1, 2, 3, 5, 8, 13, 21];
 
 interface CardSlotProps {
     card: Card | null;
@@ -11,18 +14,21 @@ interface CardSlotProps {
 }
 
 const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
-    const { getCardDetails } = useCardContext();
-    const timeIntervals = [1, 2, 3, 5, 8, 13, 21];
-    const getRandomTimeInterval = () => timeIntervals[Math.floor(Math.random() * timeIntervals.length)] * 60; // convert minutes to seconds
+    const { getCardDetails, getCardSlug, getCardMeta, highlightedCardId } = useCardContext();
+    const getRandomTimeInterval = useCallback(
+        () => TIME_INTERVALS[Math.floor(Math.random() * TIME_INTERVALS.length)] * 60,
+        []
+    );
 
     const [timeLeft, setTimeLeft] = useState(getRandomTimeInterval());
     const [isHeld, setIsHeld] = useState(false);
+    const [isShareOpen, setIsShareOpen] = useState(false);
 
     useEffect(() => {
         if (isHeld || !card) return;
 
         const timer = setInterval(() => {
-            setTimeLeft(prev => {
+            setTimeLeft((prev: number) => {
                 if (prev <= 1) {
                     onDealNextCard();
                     return getRandomTimeInterval(); // reset timer for the next card
@@ -32,7 +38,7 @@ const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
         }, 1000);
 
         return () => clearInterval(timer);
-    }, [isHeld, card, onDealNextCard]);
+    }, [isHeld, card, onDealNextCard, getRandomTimeInterval]);
 
     const handleHoldChange = () => {
         setIsHeld(!isHeld);
@@ -72,9 +78,19 @@ const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
     }
 
     const { trainingModule, subTrainingModule, cardDeck, color } = getCardDetails(card);
+    const slug = getCardSlug(card);
+    const meta = getCardMeta(card);
+
+    const shortUrl = slug
+        ? (typeof window !== 'undefined' && window.location
+            ? `${window.location.origin}/c/${slug}`
+            : `/c/${slug}`)
+        : undefined;
+
+    const isHighlighted = highlightedCardId === card.id;
 
     return (
-        <div className={styles.cardSlot}>
+        <div className={`${styles.cardSlot} ${isHighlighted ? styles.highlighted : ''}`}>
             <div className={styles.cardDetails}>
                 <div className={styles.topLeft}>
                     <h2>{formatKatex(card.title)}</h2>
@@ -100,6 +116,13 @@ const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
                             Hold 
                             <input type="checkbox" checked={isHeld} onChange={handleHoldChange} />
                         </label>
+                        <button
+                            className={styles.shareButton}
+                            onClick={() => setIsShareOpen(true)}
+                            disabled={!slug || !meta}
+                        >
+                            Share ↗
+                        </button>
                         <button className={`${styles.cardButton}`} onClick={onDealNextCard}>Next ⏭</button>
                     </div>
                 </div>
@@ -113,6 +136,15 @@ const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
                     <span>{formatTime(timeLeft)} ⏳</span>
                 </div>
             </div>
+            {isShareOpen && meta && slug && (
+                <ShareCardModal
+                    card={card}
+                    meta={meta}
+                    slug={slug}
+                    shortUrl={shortUrl!}
+                    onClose={() => setIsShareOpen(false)}
+                />
+            )}
         </div>
     );
 };

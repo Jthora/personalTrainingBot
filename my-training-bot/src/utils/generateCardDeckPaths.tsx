@@ -56,7 +56,7 @@ const getCardDeckPaths = (module: TrainingModule) => {
 
         return getFiles(cardDecksPath, '.json').map(cardDeck => {
             const cardDeckId = path.basename(cardDeck, '.json');
-            return `    ${module.id}_${subModule}_${cardDeckId}: () => import("../data/training_modules/training_sub_modules/${module.id}/card_decks/${subModule}/${cardDeck}")`;
+            return `    ${module.id}_${subModule}_${cardDeckId}: createJsonLoader<CardDeckFile>(() => import("../data/training_modules/training_sub_modules/${module.id}/card_decks/${subModule}/${cardDeck}"))`;
         });
     });
 };
@@ -69,8 +69,10 @@ const generateCardDeckPaths = async () => {
             throw new Error("Invalid data format: 'modules' field is missing.");
         }
 
-        const cardDeckPaths = trainingModules.modules.flatMap(getCardDeckPaths).join(',\n');
-        const fileContent = `export const cardDeckPaths: { [key: string]: () => Promise<any> } = {\n${cardDeckPaths}\n};\n\nexport const totalCardDecks = Object.keys(cardDeckPaths).length;\n`;
+    const cardDeckEntries = trainingModules.modules.flatMap(getCardDeckPaths);
+    const totalCardDecks = cardDeckEntries.length;
+    const joinedEntries = cardDeckEntries.join(',\n');
+    const fileContent = `import type { CardDeckFile } from "../types/TrainingDataFiles";\nimport { createJsonLoader } from "./jsonLoader";\n\nexport const cardDeckPaths = {\n${joinedEntries}\n} satisfies Record<string, () => Promise<CardDeckFile>>;\n\nexport const totalCardDecks = ${totalCardDecks};\n`;
 
         fs.writeFileSync(outputPath, fileContent, 'utf-8');
         console.log('Successfully generated card deck paths.');

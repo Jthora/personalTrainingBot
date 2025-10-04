@@ -49,51 +49,46 @@
     border: none;
     background: rgba(255, 255, 255, 0.05);
     color: rgba(255, 255, 255, 0.8);
-    .body {
-        display: grid;
-        grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-        padding: 2rem 2.25rem 2.25rem;
-        gap: 2rem;
-        overflow-y: auto;
-        align-items: stretch;
-        flex: 1;
-        min-height: 0;
-    }
+    padding: 0.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .closeButton:hover {
     background: rgba(255, 255, 255, 0.14);
     color: #ffffff;
 }
-        height: 100%;
-        min-height: 0;
 
 .body {
     display: grid;
-        flex: 1;
-        min-height: 0;
-        height: 100%;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    padding: 2rem 2.25rem 2.25rem;
     gap: 2rem;
     overflow-y: auto;
+    align-items: stretch;
+    flex: 1;
+    min-height: 0;
 }
 
 .previewColumn {
     display: flex;
     flex-direction: column;
-        overflow: auto;
     gap: 1rem;
+    overflow: auto;
 }
 
 .previewFrame {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-    border-radius: 24px;
-    border: 1px solid rgba(120, 190, 255, 0.08);
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    border-radius: 24px;
+    border: 1px solid rgba(120, 190, 255, 0.08);
 }
 
 .previewCanvas {

@@ -19,7 +19,7 @@ const SchedulesPage: React.FC = () => {
                     <SchedulesWindow onScheduleUpdate={handleScheduleUpdate} />
                 </div>
                 <div className={styles.schedulesSidebarContainer}>
-                    <SchedulesSidebar key={scheduleUpdated} scheduleUpdated={scheduleUpdated} />
+                    <SchedulesSidebar key={scheduleUpdated ? 'updated' : 'stale'} scheduleUpdated={scheduleUpdated} />
                 </div>
             </div>
         </div>

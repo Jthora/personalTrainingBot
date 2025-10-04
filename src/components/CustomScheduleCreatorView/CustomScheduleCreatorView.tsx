@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { WorkoutSet, WorkoutBlock, CustomWorkoutSchedule, WorkoutSchedule } from '../../types/WorkoutSchedule';
+import { DifficultySetting } from '../../types/DifficultySetting';
 import CustomWorkoutSchedulesStore from '../../store/CustomWorkoutSchedulesStore';
 import WorkoutScheduleStore from '../../store/WorkoutScheduleStore';
 import CreateWorkoutSetPopup from '../CreateWorkoutSetPopup/CreateWorkoutSetPopup';
@@ -76,7 +77,12 @@ const CustomScheduleCreatorView: React.FC<{ onScheduleUpdate: () => void }> = ({
     };
 
     const handleCreateNewSchedule = (name: string, description: string) => {
-        const newSchedule = new CustomWorkoutSchedule(name, description, new WorkoutSchedule(new Date().toISOString().split('T')[0], [], {}));
+        const defaultDifficulty = new DifficultySetting(0, [0, 0]);
+        const newSchedule = new CustomWorkoutSchedule(
+            name,
+            description,
+            new WorkoutSchedule(new Date().toISOString().split('T')[0], [], defaultDifficulty)
+        );
         CustomWorkoutSchedulesStore.saveCustomSchedule(newSchedule);
         setCustomSchedules([...customSchedules, newSchedule]);
         setSelectedCustomSchedule(newSchedule);

@@ -118,9 +118,13 @@ class WorkoutDataLoader {
         let totalWorkoutGroups = 0;
         let totalWorkouts = 0;
         console.log(`WorkoutDataLoader: Total categories to load: ${Object.keys(workoutCategoryPaths).length}`);
-        for (const categoryId in workoutCategoryPaths) {
+        const categoryEntries = Object.entries(workoutCategoryPaths) as Array<[
+            keyof typeof workoutCategoryPaths,
+            (typeof workoutCategoryPaths)[keyof typeof workoutCategoryPaths]
+        ]>;
+
+        for (const [categoryId, categoryLoader] of categoryEntries) {
             try {
-                const categoryLoader = workoutCategoryPaths[categoryId];
                 const categoryModule = await categoryLoader();
                 const categoryCandidate = resolveJsonModule(categoryModule);
 
@@ -130,9 +134,11 @@ class WorkoutDataLoader {
 
                 const categoryData = categoryCandidate;
 
+                const subCategoryIds = Object.keys(categoryData.subcategories);
+
                 const subCategories: WorkoutSubCategory[] = await Promise.all(
-                    Object.keys(categoryData.subcategories).map(async subCategoryId => {
-                        const subCategoryKey = `${categoryId}_${subCategoryId}`;
+                    subCategoryIds.map(async subCategoryId => {
+                        const subCategoryKey = `${categoryId}_${subCategoryId}` as keyof typeof workoutSubCategoryPaths;
                         const subCategoryLoader = workoutSubCategoryPaths[subCategoryKey];
                         if (!subCategoryLoader) {
                             throw new Error(`WorkoutDataLoader: Missing loader for subcategory ${subCategoryKey}`);

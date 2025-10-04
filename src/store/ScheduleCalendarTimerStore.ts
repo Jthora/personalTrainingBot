@@ -27,6 +27,14 @@ const ScheduleCalendarTimerStore = {
         } catch (error) {
             console.error('Failed to save schedule calendar timer:', error);
         }
+    },
+    clearScheduleCalendarTimer() {
+        try {
+            localStorage.removeItem('scheduleCalendarTimer');
+            console.log('Cleared schedule calendar timer from localStorage.');
+        } catch (error) {
+            console.error('Failed to clear schedule calendar timer:', error);
+        }
     }
 };
 

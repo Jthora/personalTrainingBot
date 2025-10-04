@@ -1,6 +1,7 @@
 import React, { createContext, useState, useEffect, useCallback } from 'react';
 import { createWorkoutSchedule } from '../utils/WorkoutScheduleCreator';
 import { WorkoutSchedule } from '../types/WorkoutSchedule';
+import { DifficultySetting } from '../types/DifficultySetting';
 import WorkoutScheduleStore from '../store/WorkoutScheduleStore';
 
 interface WorkoutScheduleContextProps {
@@ -22,8 +23,8 @@ interface WorkoutScheduleProviderProps {
 
 export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = ({ children }) => {
     const [schedule, setSchedule] = useState<WorkoutSchedule>(() => {
-        const savedSchedule = WorkoutScheduleStore.getScheduleSync(); // Use a synchronous method
-        return savedSchedule || new WorkoutSchedule('', [], { level: 0, range: [0, 0] });
+    const savedSchedule = WorkoutScheduleStore.getScheduleSync(); // Use a synchronous method
+    return savedSchedule || new WorkoutSchedule('', [], new DifficultySetting(0, [0, 0]));
     });
     const [isLoading, setIsLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);

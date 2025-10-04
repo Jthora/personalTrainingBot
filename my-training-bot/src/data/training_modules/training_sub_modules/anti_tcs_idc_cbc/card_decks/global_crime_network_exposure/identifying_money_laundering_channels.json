@@ -17,6 +17,7 @@
                 "Common laundering fronts: real estate, casinos, luxury goods, and cryptocurrency.",
                 "Detecting unusual financial patterns that indicate illicit activity."
             ],
+            "summaryText": "Outline laundering stages, spotlight common fronts, and hunt anomalous financial patterns.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -29,6 +30,7 @@
                 "Shell companies and their use in obfuscating financial trails.",
                 "Tracking financial transactions between known criminal-linked accounts."
             ],
+            "summaryText": "Explain tax haven shielding, map shell company layers, and trace cross-account transfers.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -41,6 +43,7 @@
                 "Mixing services, tumblers, and privacy coins used for obfuscation.",
                 "Government responses and countermeasures against crypto-based laundering."
             ],
+            "summaryText": "Track blockchain trails, decode mixer/privacy tactics, and note emerging countermeasures.",
             "duration": "90",
             "difficulty": "Expert"
         }

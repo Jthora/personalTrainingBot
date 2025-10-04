@@ -18,7 +18,8 @@
                 "Understanding how proximity to an event affects information accuracy."
             ],
             "duration": "75",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Classify sources by distance to events, compare institutional weight, and rate freshness of access."
         },
         {
             "id": "source_reliability_2",
@@ -30,7 +31,8 @@
                 "Recognizing astroturfing and manufactured grassroots movements."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Follow money and alliances, surface hidden sponsors, and expose faux grassroots fronts."
         },
         {
             "id": "source_reliability_3",
@@ -42,7 +44,8 @@
                 "Using OSINT (Open Source Intelligence) tools for real-time corroboration."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Triangulate claims across independents, log contradictions, and lean on OSINT dashboards for quick checks."
         },
         {
             "id": "source_reliability_4",
@@ -54,7 +57,8 @@
                 "Assessing the impact of previous reporting on public perception."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Pull archival scorecards, flag habitual bias, and weigh historical impact before trusting again."
         },
         {
             "id": "source_reliability_5",
@@ -66,7 +70,8 @@
                 "Analyzing language framing and its effect on cognitive biases."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Isolate emotional trigger words, chart manipulation cycles, and decode framing that hijacks bias."
         },
         {
             "id": "source_reliability_6",
@@ -78,7 +83,8 @@
                 "Differentiating between accidental misinformation and active PsyOps."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Compare messaging fingerprints, timeline falsehood propagation, and separate sloppy reporting from operations."
         },
         {
             "id": "source_reliability_7",
@@ -90,7 +96,8 @@
                 "Cross-referencing visual elements against known databases for verification."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Inspect metadata trails, run deepfake scans, and verify visuals against trusted registries."
         },
         {
             "id": "source_reliability_8",
@@ -102,7 +109,8 @@
                 "Cross-referencing alternative sources with established intelligence frameworks."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Vet citizen reporters, flag silo feedback loops, and benchmark findings with vetted frameworks."
         },
         {
             "id": "source_reliability_9",
@@ -114,7 +122,8 @@
                 "Analyzing how opposition narratives are used to neutralize genuine dissent."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Probe for covert handlers, document partial-truth misdirection, and assess how faux dissent dampens resistance."
         },
         {
             "id": "source_reliability_10",
@@ -126,7 +135,8 @@
                 "Applying peer review and critical analysis techniques to strengthen assessments."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Draft scoring rubrics, coordinate cross-check teams, and enforce peer review loops for durable intel."
         }
     ]
 }

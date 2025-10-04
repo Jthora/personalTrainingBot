@@ -18,7 +18,8 @@
                 "Cross-reference symptoms with documented psychotronic attack patterns."
             ],
             "duration": "60",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Track abrupt cognitive shifts, scan for EM anomalies, and compare against known attack signatures."
         },
         {
             "id": "psychotronic_defense_2",
@@ -30,7 +31,8 @@
                 "Apply Faraday cage principles to block psychotronic signals from reaching your neural pathways."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Jam hostile EM with resonance, stabilize brainwaves acoustically, and cage out incoming signals."
         },
         {
             "id": "psychotronic_defense_3",
@@ -42,7 +44,8 @@
                 "Train in deep focus exercises to enhance resistance against subliminal disruptions."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Isolate thought channels, anchor identity, and sharpen focus to repel interference."
         },
         {
             "id": "psychotronic_defense_4",
@@ -54,7 +57,8 @@
                 "Identify and neutralize attack vectors by triangulating sources of directed energy interference."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Stack material shields, project energetic barriers, and pinpoint directed energy sources."
         },
         {
             "id": "psychotronic_defense_5",
@@ -66,7 +70,8 @@
                 "Implement strategic placement of grounding mats and bioelectric harmonizers."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Scramble hostile fields, build conductive shields, and ground spaces with harmonizers."
         },
         {
             "id": "psychotronic_defense_6",
@@ -78,7 +83,8 @@
                 "Consume detoxifying foods such as chlorella, spirulina, and activated charcoal."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Purge EM residue with heat, salt, and grounding; oxygenate deeply; and nourish with detox agents."
         },
         {
             "id": "psychotronic_defense_7",
@@ -90,7 +96,8 @@
                 "Engage in physical movement routines that enhance neuro-electrical balance."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Fortify biofield with energy arts, synchronize brainwaves, and move to balance neuro-electric flow."
         },
         {
             "id": "psychotronic_defense_8",
@@ -102,7 +109,8 @@
                 "Conduct controlled experiments to verify and refine detection sensitivity."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Heighten spatial sensing, cloak energetically, and test detection through controlled trials."
         },
         {
             "id": "psychotronic_defense_9",
@@ -114,7 +122,8 @@
                 "Use linguistic scrambling techniques to distort reception of external mind-link attempts."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Sever synthetic links via disassociation, shift internal frequencies, and scramble linguistic channels."
         },
         {
             "id": "psychotronic_defense_10",
@@ -126,7 +135,8 @@
                 "Utilize cooperative shielding through group resonance synchronization for enhanced protection."
             ],
             "duration": "120",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Layer physical-cognitive-energetic shields, iterate defenses, and synchronize group resonance."
         }
     ]
 }

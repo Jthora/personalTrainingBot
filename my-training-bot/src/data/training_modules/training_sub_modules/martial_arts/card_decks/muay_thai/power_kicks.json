@@ -13,6 +13,7 @@
                 "Strike with the shin rather than the foot",
                 "Follow through to maintain balance"
             ],
+            "summaryText": "Whip the roundhouse by pivoting hard, driving the shin, and letting momentum carry through.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -25,6 +26,7 @@
                 "Use the hips to generate force",
                 "Quickly reset stance to avoid counters"
             ],
+            "summaryText": "Chop the low kick into the thigh with hip drive, then snap back before they counter.",
             "duration": 6,
             "difficulty": "Advanced"
         }

@@ -13,6 +13,7 @@
                 "Pivot on the lead foot to generate power",
                 "Aim for the temple, jaw, or ribs"
             ],
+            "summaryText": "Slice the horizontal elbow with a pivoted hip to carve through head or body guards.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -25,6 +26,7 @@
                 "Keep the foot flexed to avoid injury",
                 "Use the clinch for better control and positioning"
             ],
+            "summaryText": "Drive a clinched straight knee by thrusting hips forward and keeping the foot tight.",
             "duration": 6,
             "difficulty": "Advanced"
         }

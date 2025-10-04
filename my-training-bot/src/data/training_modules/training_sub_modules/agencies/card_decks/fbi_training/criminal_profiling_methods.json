@@ -17,7 +17,8 @@
                 "Analyze crime scene characteristics"
             ],
             "duration": 6,
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Profile offenders accurately by mapping signature behaviors, separating organized from disorganized patterns, and decoding crime scene indicators to forecast their next move."
         },
         {
             "id": "threat_assessment",
@@ -29,7 +30,8 @@
                 "Identify pre-incident indicators of violence"
             ],
             "duration": 7,
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Deliver precise threat assessments by dissecting psychological markers, running structured risk models, and flagging pre-incident signals before violence escalates."
         }
     ]
 }

@@ -17,6 +17,7 @@
                 "Setting up layered security measures to detect infiltrators.",
                 "Employing behavioral analysis to detect PSN operatives in disguise."
             ],
+            "summaryText": "Gatekeep new allies with multi-step vetting, layer surveillance to spot infiltrators early, and continuously scan behaviors for the tells that give PSNs away.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -29,6 +30,7 @@
                 "Implementing misinformation traps to identify internal threats.",
                 "Training members in OPSEC to maintain secure communications."
             ],
+            "summaryText": "Segment intel so no one person knows everything, lay false breadcrumbs to flush moles, and drill OPSEC habits until secure communication is second nature.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -41,6 +43,7 @@
                 "Reframing divisive issues to prevent internal fractures.",
                 "Redirecting PSN-instigated conflicts toward constructive unity-building."
             ],
+            "summaryText": "Call out smear attempts before they stick, reframe polarizing issues into shared goals, and flip PSN-triggered conflicts into opportunities for tighter unity.",
             "duration": "90",
             "difficulty": "Expert"
         }

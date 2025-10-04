@@ -13,6 +13,7 @@
             "title": "Lending & Borrowing in DeFi",
             "description": "Understanding decentralized lending platforms and borrowing strategies.",
             "bulletpoints": "Collateralization, overcollateralized loans, liquidation risks",
+            "summaryText": "Break down collateral ratios, explain why loans stay overcollateralized, and walk through liquidation triggers on major lending protocols.",
             "duration": "50",
             "difficulty": "Intermediate"
         },
@@ -21,6 +22,7 @@
             "title": "Automated Market Makers (AMMs)",
             "description": "Exploring how AMMs enable decentralized trading without order books.",
             "bulletpoints": "Liquidity pools, constant product formula, impermanent loss",
+            "summaryText": "Describe how liquidity pools quote prices via the constant product curve and evaluate impermanent loss trade-offs for LPs.",
             "duration": "55",
             "difficulty": "Advanced"
         },
@@ -29,6 +31,7 @@
             "title": "Yield Aggregation & Optimization",
             "description": "Strategies for maximizing returns on decentralized finance investments.",
             "bulletpoints": "Yield farming, staking rewards, auto-compounders, Yearn Finance",
+            "summaryText": "Summarize how farmers chase rewards, how auto-compounders rotate strategies, and what Yearn-style vaults automate for users.",
             "duration": "50",
             "difficulty": "Advanced"
         }

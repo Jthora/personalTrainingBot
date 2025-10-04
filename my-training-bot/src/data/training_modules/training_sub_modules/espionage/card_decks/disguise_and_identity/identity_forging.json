@@ -16,6 +16,7 @@
                 "Modify biometric data without raising suspicion",
                 "Maintain consistency across multiple identity records"
             ],
+            "summaryText": "Replicate document defenses, tweak biometrics covertly, and sync every record so forged IDs pass scrutiny.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -28,6 +29,7 @@
                 "Practice linguistic and cultural assimilation techniques",
                 "Ensure digital footprint consistency with assumed identities"
             ],
+            "summaryText": "Engineer mission-fit histories, master cultural fluency, and curate matching digital footprints to keep legends intact.",
             "duration": 7,
             "difficulty": "Advanced"
         }

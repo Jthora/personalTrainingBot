@@ -13,6 +13,7 @@
                 "Understand quantum superposition where a system exists in multiple states simultaneously: \\[ |\\psi\\rangle = \\sum c_n |n\\rangle \\]",
                 "Analyze the role of measurement in collapsing wave states into definite eigenvalues through the Born rule: \\[ P(a) = |\\langle a | \\psi \\rangle|^2 \\]"
             ],
+                "summaryText": "Apply Schrödinger dynamics, superposition, and the Born rule to describe pre-measurement quantum behavior.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -25,6 +26,7 @@
                 "Analyze the Many-Worlds Interpretation where wavefunction collapse leads to timeline bifurcation \\[ |\\psi\\rangle = \\frac{1}{\\sqrt{2}} (|A\\rangle + |B\\rangle) \\]",
                 "Examine the influence of observer intent on selective timeline manifestation through wavefunction decoherence \\[ \\rho = \\sum P_n |n\\rangle \\langle n| \\]"
             ],
+                "summaryText": "Discuss timeline splitting via Many-Worlds, probability densities, and observer-driven selection effects.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -37,6 +39,7 @@
                 "Develop methods to maintain coherent reality streams through structured energy harmonics \\[ H = T + V \\]",
                 "Study how external influences cause probability wave collapse and timeline stabilization."
             ],
+                "summaryText": "Use decoherence theory and energetic structuring to stabilize preferred timeline outcomes.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -49,6 +52,7 @@
                 "Examine Wheeler’s delayed-choice experiment, showing retrocausal influences in quantum decision-making.",
                 "Explore models suggesting consciousness affects probability waveforms: \\[ \\langle \\psi | O | \\psi \\rangle \\]"
             ],
+                "summaryText": "Evaluate experiments showing measurement—and possibly consciousness—reshaping quantum outcomes.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -61,6 +65,7 @@
                 "Explore Bell’s theorem and its implications for nonlocal influence on timeline selection.",
                 "Examine quantum teleportation protocols that use entanglement for state transfer."
             ],
+                "summaryText": "Highlight entanglement’s nonlocal correlations, Bell tests, and teleportation mechanisms for timeline links.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -73,6 +78,7 @@
                 "Examine the role of constructive and destructive interference in probability waveforms: \\[ \\psi_{total} = \\psi_1 + \\psi_2 \\]",
                 "Develop methods for enhancing preferred reality manifestations through coherent energy fields."
             ],
+                "summaryText": "Leverage resonance and interference to amplify desired quantum probabilities.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -85,6 +91,7 @@
                 "Analyze time-reversed Schrödinger wave equations allowing backward causality.",
                 "Explore experiments on delayed-choice quantum erasure that support retrocausal effects."
             ],
+                "summaryText": "Investigate retrocausal models and experiments hinting at future-to-present probability influence.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -97,6 +104,7 @@
                 "Analyze how macroscopic tunneling effects might manifest in probability fields.",
                 "Develop models for intentional reality shifts using probability wave modulation."
             ],
+                "summaryText": "Apply tunneling equations to explore barrier penetration and engineered reality shifts.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -109,6 +117,7 @@
                 "Analyze the implications of wavefunction splitting \\[ |\\psi\\rangle = |A\\rangle + |B\\rangle \\] on subjective reality.",
                 "Examine observer-based models suggesting consciousness collapses specific branches."
             ],
+                "summaryText": "Consider how consciousness might navigate Many-Worlds branches and subjective realities.",
             "duration": 18,
             "difficulty": "Expert"
         },
@@ -121,6 +130,7 @@
                 "Examine possible techniques for influencing probability warping through external field modulation.",
                 "Study vacuum coherence effects and their potential role in altering wavefunction dynamics."
             ],
+                "summaryText": "Explore zero-point fluctuations and field modulation as levers for reshaping probability landscapes.",
             "duration": 18,
             "difficulty": "Expert"
         }

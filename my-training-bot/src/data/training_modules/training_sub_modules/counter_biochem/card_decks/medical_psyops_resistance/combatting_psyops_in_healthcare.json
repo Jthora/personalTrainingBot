@@ -14,7 +14,8 @@
             "description": "Identifying how the perception of scientific agreement is artificially engineered.",
             "bulletpoints": "Controlled expert panels, selective peer review, silencing of dissenting voices",
             "duration": "14",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Interrogate claimed consensus, trace who curates panels, and surface silenced voices so manufactured agreement collapses."
         },
         {
             "id": "med_psyops_2",
@@ -22,7 +23,8 @@
             "description": "Understanding how fear and social pressure are used to enforce medical compliance.",
             "bulletpoints": "Mandates vs. informed consent, social ostracization, crisis exploitation",
             "duration": "12",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Map fear narratives, mandate pressure, and social shaming so you can defend informed consent."
         },
         {
             "id": "med_psyops_3",
@@ -30,7 +32,8 @@
             "description": "Revealing how global institutions are weaponized to maintain medical control structures.",
             "bulletpoints": "NGOs & foundations as soft power tools, regulatory capture, historical case studies",
             "duration": "14",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Trace funding loops, document capture, and expose repeated abuses to rebuild trust on verified ground."
         }
     ]
 }

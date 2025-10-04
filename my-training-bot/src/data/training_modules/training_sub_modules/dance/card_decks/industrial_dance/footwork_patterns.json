@@ -13,6 +13,7 @@
                 "Land on the beat for maximum impact",
                 "Use controlled energy to avoid excessive strain"
             ],
+            "summaryText": "Drive grounded stomps into the beat while staying cushioned and precise.",
             "duration": 5,
             "difficulty": "Beginner"
         },
@@ -25,6 +26,7 @@
                 "Time each movement precisely with the music",
                 "Experiment with different tempos to build endurance"
             ],
+            "summaryText": "Cross-step your stomps to swing side-to-side without losing power.",
             "duration": 6,
             "difficulty": "Intermediate"
         }

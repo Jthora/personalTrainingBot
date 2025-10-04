@@ -13,6 +13,7 @@
                 "Understand the concept of linear separability and how the decision boundary is defined by \\[ \\mathbf{w}^T \\mathbf{x} + b = 0 \\]",
                 "Explore how perceptrons use the dot product calculation \\[ \\sum w_i x_i \\] to determine the class of an input."
             ],
+            "summaryText": "Use perceptrons to classify linearly separable data via weighted dot products and thresholds.",
             "duration": 8,
             "difficulty": "Intermediate"
         },
@@ -25,6 +26,7 @@
                 "Study activation functions: \\[ \\text{Sigmoid: } \\sigma(x) = \\frac{1}{1 + e^{-x}} \\], \\[ \\text{ReLU: } f(x) = \\max(0, x) \\], \\[ \\text{Tanh: } \\tanh(x) = \\frac{e^x - e^{-x}}{e^x + e^{-x}} \\]",
                 "Explore forward propagation using matrix multiplications: \\[ \\mathbf{z} = \\mathbf{W} \\mathbf{x} + \\mathbf{b} \\]"
             ],
+            "summaryText": "Stack hidden layers with nonlinear activations to capture complex patterns beyond linear separability.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -37,6 +39,7 @@
                 "Explore vectorized operations for efficient computation, such as \\[ \\mathbf{A} \\cdot \\mathbf{B} \\] for matrix multiplication.",
                 "Understand how matrix multiplication is used in neural network weight updates: \\[ \\Delta W = - \\eta \\frac{\\partial L}{\\partial W} \\]"
             ],
+            "summaryText": "Represent data and parameters as tensors to exploit vectorized neural computations.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -49,6 +52,7 @@
                 "Explore learning rate \\( \\eta \\) and its impact on convergence speed.",
                 "Understand how stochastic gradient descent (SGD) and Adam optimizer improve efficiency."
             ],
+            "summaryText": "Iteratively adjust weights with gradient descent variants tuned by the learning rate.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -61,6 +65,7 @@
                 "Update weights using gradients: \\[ W^{(t+1)} = W^{(t)} - \\eta \\frac{\\partial L}{\\partial W} \\]",
                 "Understand how backpropagation works layer by layer in deep networks."
             ],
+            "summaryText": "Backpropagate errors with the chain rule to refine weights across layers.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -73,6 +78,7 @@
                 "Explore cross-entropy loss for classification: \\[ L = - \\sum y_i \\log \\hat{y}_i \\]",
                 "Analyze how loss functions influence weight updates during training."
             ],
+            "summaryText": "Choose losses like MSE or cross-entropy to quantify prediction errors for training.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -85,6 +91,7 @@
                 "Explore ReLU (Rectified Linear Unit): \\[ f(x) = \\max(0, x) \\] and its benefits in deep learning.",
                 "Understand the importance of non-linearity in neural networks."
             ],
+            "summaryText": "Select activation functions to inject nonlinearity and control gradient behavior.",
             "duration": 10,
             "difficulty": "Intermediate"
         },
@@ -97,6 +104,7 @@
                 "Understand its role in multi-class classification problems.",
                 "Analyze how softmax converts logits into probabilities for output interpretation."
             ],
+            "summaryText": "Normalize logits with softmax so outputs form interpretable class probabilities.",
             "duration": 12,
             "difficulty": "Advanced"
         },
@@ -109,6 +117,7 @@
                 "Improve convergence speed by reducing internal covariate shift.",
                 "Understand how normalization is applied across mini-batches."
             ],
+            "summaryText": "Standardize mini-batch activations to stabilize and accelerate training.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -121,6 +130,7 @@
                 "Mathematically expressed as: \\[ \\tilde{h}_i = h_i \\cdot r, \\quad r \\sim Bernoulli(p) \\]",
                 "Analyze how dropout improves generalization in large models."
             ],
+            "summaryText": "Randomly drop activations during training to reduce overfitting.",
             "duration": 12,
             "difficulty": "Advanced"
         },
@@ -133,6 +143,7 @@
                 "Explore He initialization for ReLU: \\[ W \\sim \\mathcal{N}(0, \\frac{2}{n}) \\]",
                 "Analyze the impact of poor initialization on gradient flow and training speed."
             ],
+            "summaryText": "Start training with Xavier or He weight scales to maintain healthy gradients.",
             "duration": 12,
             "difficulty": "Advanced"
         }

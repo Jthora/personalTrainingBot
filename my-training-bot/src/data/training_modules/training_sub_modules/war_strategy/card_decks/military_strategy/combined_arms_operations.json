@@ -12,6 +12,7 @@
             "title": "Coordinating Air and Ground Forces",
             "description": "Using air superiority to support ground combat operations.",
             "bulletpoints": "Close air support, joint strike coordination, aerial reconnaissance",
+            "summaryText": "Blend close air support, synchronized strikes, and live ISR feeds so ground units punch through defenses under a protective air umbrella.",
             "duration": "55",
             "difficulty": "Advanced"
         },
@@ -20,6 +21,7 @@
             "title": "Naval and Amphibious Operations",
             "description": "Integrating naval forces in land-based combat.",
             "bulletpoints": "Amphibious landings, fleet support, carrier strike group tactics",
+            "summaryText": "Stage amphibious assaults with carrier-backed fires and fleet logistics to secure beachheads and sustain land advances from the sea.",
             "duration": "60",
             "difficulty": "Advanced"
         }

@@ -19,6 +19,7 @@
                 "Track hashtags and geotagged posts for live event monitoring",
                 "Identify influencers and key opinion leaders in information networks"
             ],
+            "summaryText": "Monitor hashtags and geotags to surface live events and the influencers amplifying them.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -31,6 +32,7 @@
                 "Analyze profile behavior and post timing for bot detection",
                 "Use reverse image searches to trace profile pictures and avatars"
             ],
+            "summaryText": "Correlate handles, posting rhythms, and imagery to unmask fake or linked personas.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -43,6 +45,7 @@
                 "Analyze geotagged tweets and Instagram posts for real-time location tracking",
                 "Cross-reference location data with Google Earth and OpenStreetMap"
             ],
+            "summaryText": "Extract geo metadata to follow movements and confirm locations in near real time.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -55,6 +58,7 @@
                 "Analyze inconsistencies in facial movements, lighting, and reflections",
                 "Compare suspected deepfake videos to original source footage"
             ],
+            "summaryText": "Pair detection tools with visual forensics to validate or debunk deepfake media.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -67,6 +71,7 @@
                 "Monitor extremist groups and underground marketplaces",
                 "Identify admin locations and network structures in encrypted groups"
             ],
+            "summaryText": "Mine Telegram analytics to map group hierarchies, admins, and illicit chatter.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -79,6 +84,7 @@
                 "Use link shortening analytics to track hidden URL shares",
                 "Monitor Discord and private Facebook groups for threat intelligence"
             ],
+            "summaryText": "Leverage metadata and link intel to watch conversations spilling across dark social channels.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -91,6 +97,7 @@
                 "Monitor deleted tweets and sentiment changes over time",
                 "Analyze Twitter spaces and voice chat logs for intelligence gathering"
             ],
+            "summaryText": "Scrape Twitter without the API to capture real-time and deleted activity trends.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -103,6 +110,7 @@
                 "Simulate natural activity to avoid platform bans",
                 "Use disposable email and phone numbers to create persistent personas"
             ],
+            "summaryText": "Craft resilient sockpuppets with obfuscated credentials and believable engagement patterns.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -115,6 +123,7 @@
                 "Track subreddit activity related to underground markets and extremist groups",
                 "Analyze deleted comments and user post histories"
             ],
+            "summaryText": "Tap Pushshift and subreddit histories to map communities and recover deleted intel.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -127,6 +136,7 @@
                 "Track user engagement and comment sentiment for trend analysis",
                 "Reverse-search YouTube thumbnails for origin tracking"
             ],
+            "summaryText": "Interrogate YouTube metadata and engagement to trace narratives and content sources.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -139,6 +149,7 @@
                 "Detect propaganda campaigns and disinformation trends",
                 "Track spikes in emotional engagement to predict social unrest"
             ],
+            "summaryText": "Apply NLP to social feeds to flag propaganda surges and unrest precursors.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -151,6 +162,7 @@
                 "Use TikTok’s API and OSINT tools to monitor influencer activity",
                 "Analyze comments and hashtags for political or social sentiment shifts"
             ],
+            "summaryText": "Monitor TikTok metrics and hashtags to catch fast-moving narratives and actors.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -163,6 +175,7 @@
                 "Use group metadata and admin tracking for lead generation",
                 "Identify coordinated misinformation campaigns and threat actors"
             ],
+            "summaryText": "Study private Facebook group dynamics to surface coordinated campaigns and leads.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -175,6 +188,7 @@
                 "Analyze dark web marketplaces and social networks",
                 "Cross-reference darknet user activity with surface web accounts"
             ],
+            "summaryText": "Track dark web social hubs and correlate handles back to surface identities.",
             "duration": 8,
             "difficulty": "Expert"
         }

@@ -13,7 +13,8 @@
             "description": "Shooting drill designed to maximize accuracy and cover usage under time constraints.",
             "bulletpoints": "Engage multiple targets, seek cover effectively, fire under pressure",
             "duration": "10",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Run precision live fire by weaving between cover, clearing targets against the clock, and keeping rounds on point under duress."
         },
         {
             "id": "live_fire_2",
@@ -21,7 +22,8 @@
             "description": "Engaging threats in close quarters while maintaining a low profile.",
             "bulletpoints": "Control angles of approach, maintain sight alignment, avoid crossfire",
             "duration": "15",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Clear rooms dynamically by slicing angles, staying low-profile, and coordinating fire to eliminate threats without crossfire."
         }
     ]
 }

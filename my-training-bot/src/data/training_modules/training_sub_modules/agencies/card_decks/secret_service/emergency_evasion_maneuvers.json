@@ -17,7 +17,8 @@
                 "React dynamically to hostile vehicle threats"
             ],
             "duration": 6,
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Rip through high-speed escape drills by chaining J-turns, exploiting cover, and adapting instantly to hostile vehicles to pull principals out of danger."
         },
         {
             "id": "defensive_countermeasures",
@@ -29,7 +30,8 @@
                 "Deploy tactical response measures to neutralize immediate threats"
             ],
             "duration": 7,
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Survive close-quarter ambushes by locking down barricades, slipping attackers with agile footwork, and delivering decisive countermeasures before they regain initiative."
         }
     ]
 }

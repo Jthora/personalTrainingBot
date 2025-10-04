@@ -14,7 +14,8 @@
             "description": "Recognizing hidden toxins in food, cosmetics, pharmaceuticals, and household items.",
             "bulletpoints": "Heavy metals, endocrine disruptors, neurotoxic additives",
             "duration": "12",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Scan labels, test batches for heavy metals and endocrine disruptors, and avoid neurotoxic additives hidden in consumer goods."
         },
         {
             "id": "toxin_detect_2",
@@ -22,7 +23,8 @@
             "description": "Techniques for detecting chemical and biological contaminants in drinking water and air.",
             "bulletpoints": "pH imbalance, volatile organic compounds, aerosolized neurotoxins",
             "duration": "14",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Test pH, measure VOCs, and detect aerosolized neurotoxins to confirm water and air safety before consumption or prolonged exposure."
         },
         {
             "id": "toxin_detect_3",
@@ -30,7 +32,8 @@
             "description": "Recognizing subtle poisoning attempts through gradual exposure methods.",
             "bulletpoints": "Fatigue patterns, cognitive decline, immune suppression effects",
             "duration": "12",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Monitor fatigue trends, cognitive dips, and immune suppression markers to catch covert poisoning before irreversible damage occurs."
         }
     ]
 }

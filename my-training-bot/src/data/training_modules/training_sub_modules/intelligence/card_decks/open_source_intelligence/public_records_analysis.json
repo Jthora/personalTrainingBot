@@ -19,6 +19,7 @@
                 "Analyze financial reports and SEC filings for hidden risks",
                 "Track shell companies and money laundering operations"
             ],
+            "summaryText": "Mine corporate registries and filings to reveal hidden relationships and risk signals.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -31,6 +32,7 @@
                 "Search court records, patent filings, and land registry databases",
                 "Leverage electoral rolls and leaked government databases for investigations"
             ],
+            "summaryText": "Leverage FOIA and public legal datasets to extract authoritative investigative leads.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -43,6 +45,7 @@
                 "Track offshore real estate holdings and money laundering properties",
                 "Analyze mortgage records for financial vulnerabilities"
             ],
+            "summaryText": "Cross-check property records to expose ownership trails and financial vulnerabilities.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -55,6 +58,7 @@
                 "Analyze export control lists and trade restrictions",
                 "Track individuals flagged by financial crime watchlists"
             ],
+            "summaryText": "Compare subjects against global sanctions and watchlists to flag restricted actors.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -67,6 +71,7 @@
                 "Identify corporate ownership and innovation trends",
                 "Analyze patent litigation history to assess legal risk"
             ],
+            "summaryText": "Mine IP databases to map ownership trends and litigation exposure.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -79,6 +84,7 @@
                 "Use PACER and state judiciary portals for criminal cases",
                 "Analyze legal filings, verdicts, and sentencing history"
             ],
+            "summaryText": "Pull court dockets to assemble criminal histories and ongoing case details.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -91,6 +97,7 @@
                 "Track corporate disclosures and risk reports",
                 "Monitor companies flagged for compliance violations"
             ],
+            "summaryText": "Review regulatory filings to surface compliance gaps and disclosed risks.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -103,6 +110,7 @@
                 "Analyze public utility and property records to confirm residency",
                 "Cross-check alias usage, known associates, and past addresses"
             ],
+            "summaryText": "Corroborate identities by triangulating public records, utilities, and alias trails.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -115,6 +123,7 @@
                 "Analyze leaked email addresses, passwords, and database dumps",
                 "Investigate leaked financial, legal, and government databases"
             ],
+            "summaryText": "Probe breach dumps to uncover exposed credentials and sensitive records.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -127,6 +136,7 @@
                 "Analyze loan and collateral details for financial vulnerability",
                 "Track mergers, acquisitions, and business debt structuring"
             ],
+            "summaryText": "Analyze UCC filings to trace secured assets, liens, and leveraged relationships.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -139,6 +149,7 @@
                 "Investigate foreclosure databases for financial distress signals",
                 "Track bankruptcy records and creditor claims for individuals and corporations"
             ],
+            "summaryText": "Monitor lien and foreclosure records to flag looming financial distress.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -151,6 +162,7 @@
                 "Analyze tax haven jurisdictions and financial secrecy laws",
                 "Investigate beneficial ownership and proxy directors"
             ],
+            "summaryText": "Investigate offshore leaks to expose shell structures and beneficial owners.",
             "duration": 8,
             "difficulty": "Advanced"
         },
@@ -163,6 +175,7 @@
                 "Analyze defense, infrastructure, and tech procurement records",
                 "Track vendor relationships and political donations tied to contracts"
             ],
+            "summaryText": "Inspect procurement data to map government spending and vendor influence networks.",
             "duration": 6,
             "difficulty": "Intermediate"
         }

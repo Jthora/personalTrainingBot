@@ -12,6 +12,7 @@
             "title": "Integrating Threat Intelligence in Incident Response",
             "description": "Applying cyber threat intelligence to detect and respond to incidents.",
             "bulletpoints": "SIEM Correlation, Threat Hunting, Incident Prioritization",
+            "summaryText": "Fuse intel feeds into response playbooks so hunts go from guesswork to guided.",
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -20,6 +21,7 @@
             "title": "Attribution Analysis in Cyber Attacks",
             "description": "Tracking threat actors and linking cyber incidents to known adversaries.",
             "bulletpoints": "MITRE ATT&CK Mapping, Threat Actor Profiles, IOC Correlation",
+            "summaryText": "Trace attack fingerprints back to adversaries to sharpen containment and comms.",
             "duration": "90",
             "difficulty": "Advanced"
         }

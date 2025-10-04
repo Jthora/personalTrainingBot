@@ -17,6 +17,7 @@
                 "Navigating urban and wilderness terrain safely.",
                 "Using environmental resources for survival advantages."
             ],
+            "summaryText": "Covers dual-environment survival planning, acquisition of essentials, and leveraging terrain assets.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Breaking restraints and escaping from containment.",
                 "Surviving in extreme conditions with minimal resources."
             ],
+            "summaryText": "Provides evasion drills, restraint breaks, and austere survival tactics to beat pursuit.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Scavenging and purifying water sources.",
                 "Using stealth and camouflage to stay undetected."
             ],
+            "summaryText": "Guides stealth shelter builds, clandestine resource harvests, and low-signature living.",
             "duration": "90",
             "difficulty": "Expert"
         }

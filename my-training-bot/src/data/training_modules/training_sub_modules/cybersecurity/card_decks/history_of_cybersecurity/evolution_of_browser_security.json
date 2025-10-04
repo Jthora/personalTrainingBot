@@ -21,6 +21,7 @@
                 "Ensures that a web page can only access resources from the same domain.",
                 "Prevents unauthorized access to session cookies and user data."
             ],
+            "summaryText": "Revisit SOP’s Netscape debut locking scripts to their own domain and shielding user data.",
             "duration": "75",
             "difficulty": "Intermediate"
         },
@@ -33,6 +34,7 @@
                 "Early web applications lacked input sanitization, making them vulnerable.",
                 "Browsers introduced client-side filtering and Content Security Policy (CSP) to mitigate XSS."
             ],
+            "summaryText": "See how rampant XSS forced browsers toward CSP and stronger client filtering.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -45,6 +47,7 @@
                 "Firefox and Edge later adopted similar sandboxing techniques.",
                 "Reduces the impact of browser vulnerabilities by containing exploits within a single process."
             ],
+            "summaryText": "Trace Chrome’s sandbox lead and how isolation boxed exploits into single-tab prisons.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -57,6 +60,7 @@
                 "Developers define allowed sources for JavaScript, images, and stylesheets.",
                 "Supported by all major browsers as a primary defense against XSS."
             ],
+            "summaryText": "Break down CSP’s allowlists that muzzle rogue scripts and harden page content.",
             "duration": "120",
             "difficulty": "Advanced"
         },
@@ -69,6 +73,7 @@
                 "Requires explicit server-side configuration with `Access-Control-Allow-Origin` headers.",
                 "Helps balance security with cross-domain API communication."
             ],
+            "summaryText": "Learn how CORS relaxed SOP just enough—with headers—to power cross-domain APIs safely.",
             "duration": "90",
             "difficulty": "Intermediate"
         },
@@ -81,6 +86,7 @@
                 "Firefox, Chrome, and Edge enforced stricter policies by default.",
                 "Encouraged widespread HTTPS adoption across the web."
             ],
+            "summaryText": "Chart the mixed-content crackdown that forced full-stack HTTPS adoption.",
             "duration": "75",
             "difficulty": "Intermediate"
         },
@@ -93,6 +99,7 @@
                 "Sandboxing prevents direct access to the underlying operating system.",
                 "Spectre attacks and JIT vulnerabilities raised security concerns."
             ],
+            "summaryText": "Balance WASM’s superpowers with the sandboxing and Spectre worries it unleashed.",
             "duration": "120",
             "difficulty": "Advanced"
         },
@@ -105,6 +112,7 @@
                 "SameSite cookies introduced to prevent unauthorized cross-site requests.",
                 "Web developers increasingly required to use CSRF tokens and OAuth verification."
             ],
+            "summaryText": "Explore how SameSite cookies and tokens became default CSRF armor.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -117,6 +125,7 @@
                 "Protects sensitive data from being accessed by other open tabs.",
                 "Prevents memory-based attacks from leaking browser data."
             ],
+            "summaryText": "See Chrome double-down on site isolation to block Spectre-style cross-tab leaks.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -129,6 +138,7 @@
                 "COEP enforces same-origin requirements for embedded scripts and resources.",
                 "Required for using advanced features like SharedArrayBuffer."
             ],
+            "summaryText": "Unpack COOP/COEP’s stricter origin rules powering safer advanced web capabilities.",
             "duration": "120",
             "difficulty": "Advanced"
         }

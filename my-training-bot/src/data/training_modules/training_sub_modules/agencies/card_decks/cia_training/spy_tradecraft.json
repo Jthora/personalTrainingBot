@@ -17,7 +17,8 @@
                 "Practice consistent mannerisms"
             ],
             "duration": 6,
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Build a resilient cover identity by scripting deep backstories, memorizing forged credentials, and rehearsing consistent mannerisms so every interaction reinforces your legend under hostile scrutiny and withstands background probing."
         },
         {
             "id": "dead_drops",
@@ -29,7 +30,8 @@
                 "Ensure minimal exposure to counterintelligence"
             ],
             "duration": 5,
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Master dead drop exchanges by choosing inconspicuous locations, pairing them with one-time retrieval codes, and choreographing low-visibility arrival windows so intelligence moves without exposing assets."
         }
     ]
 }

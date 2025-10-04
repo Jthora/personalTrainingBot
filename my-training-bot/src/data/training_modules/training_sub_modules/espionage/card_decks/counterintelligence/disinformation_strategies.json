@@ -16,6 +16,7 @@
                 "Identify target audiences for selective disinformation",
                 "Coordinate with intelligence assets to amplify false leads"
             ],
+            "summaryText": "Seed falsified intel through tailored media channels and asset coordination to steer adversary views.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Employ cutouts and misattribution techniques",
                 "Use proxies to plant evidence and alter investigative trails"
             ],
+            "summaryText": "Design misattributed operations with proxies and cutouts to obscure true sponsorship.",
             "duration": 7,
             "difficulty": "Advanced"
         }

@@ -20,6 +20,7 @@
                 "The first documented hacking incident occurred in 1972 when an unauthorized user accessed the system.",
                 "Early networks had weak security, relying on simple passwords."
             ],
+            "summaryText": "Trace ARPANET’s origin, note the first breach, and see how flimsy early password security really was.",
             "duration": "60",
             "difficulty": "Beginner"
         },
@@ -32,6 +33,7 @@
                 "Stateful firewalls, introduced in the early 1990s, tracked the state of active connections.",
                 "Network perimeter security became a fundamental aspect of cybersecurity."
             ],
+            "summaryText": "Walk the firewall timeline from basic filters to stateful guardians anchoring the network edge.",
             "duration": "90",
             "difficulty": "Intermediate"
         },
@@ -44,6 +46,7 @@
                 "AES replaced DES in 2001 due to increasing concerns over brute-force attacks.",
                 "SSL/TLS (Transport Layer Security) was introduced in 1995 to secure web communications."
             ],
+            "summaryText": "Follow crypto’s evolution from DES to AES and the SSL/TLS layer that locked down the web.",
             "duration": "120",
             "difficulty": "Advanced"
         },
@@ -56,6 +59,7 @@
                 "Made it illegal to access government and financial networks without authorization.",
                 "Expanded over the years to include cyber espionage and fraud."
             ],
+            "summaryText": "See how CFAA criminalized unauthorized access and kept stretching to chase new cyber crimes.",
             "duration": "75",
             "difficulty": "Intermediate"
         },
@@ -68,6 +72,7 @@
                 "Network-based IDS (NIDS) and Host-based IDS (HIDS) became common in the 1990s.",
                 "IDS evolved into modern Intrusion Prevention Systems (IPS)."
             ],
+            "summaryText": "Track IDS from early detection concepts to the IPS shields guarding today’s networks.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -80,6 +85,7 @@
                 "Exploited vulnerabilities in Unix systems.",
                 "Led to the creation of the Computer Emergency Response Team (CERT)."
             ],
+            "summaryText": "Remember the Morris Worm crash, the Unix holes it hit, and the birth of CERT in response.",
             "duration": "75",
             "difficulty": "Intermediate"
         },
@@ -92,6 +98,7 @@
                 "Enabled the use of asymmetric encryption, laying the foundation for modern digital security.",
                 "Later refined into RSA encryption by Ron Rivest, Adi Shamir, and Leonard Adleman in 1978."
             ],
+            "summaryText": "Meet Diffie-Hellman and the RSA leap that made secure key exchange practical.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -104,6 +111,7 @@
                 "McAfee and Norton launched commercial antivirus software in the late 1980s.",
                 "Signature-based detection became the standard for early antivirus programs."
             ],
+            "summaryText": "Track antivirus origins from Vaccine to early McAfee/Norton and the signature era.",
             "duration": "75",
             "difficulty": "Intermediate"
         },
@@ -116,6 +124,7 @@
                 "Used a combination of symmetric and asymmetric encryption.",
                 "Became the basis for modern email encryption standards."
             ],
+            "summaryText": "See how PGP fused crypto schemes to bring true privacy to email.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -128,6 +137,7 @@
                 "Used authentication mechanisms like RADIUS (Remote Authentication Dial-In User Service) and TACACS+ (Terminal Access Controller Access-Control System).",
                 "Modern NAC solutions integrate with Zero Trust security models."
             ],
+            "summaryText": "Review NAC’s rise from RADIUS checks to today’s Zero Trust enforcement engines.",
             "duration": "75",
             "difficulty": "Intermediate"
         }

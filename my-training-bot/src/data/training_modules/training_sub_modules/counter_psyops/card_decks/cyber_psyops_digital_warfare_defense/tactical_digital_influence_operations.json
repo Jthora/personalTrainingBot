@@ -18,7 +18,8 @@
                 "Leveraging linguistic psychology to implant resistant thought patterns."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Exploit propaganda gaps, package resonant memes, and lace language with stickiness so counters go viral."
         },
         {
             "id": "digital_influence_2",
@@ -30,7 +31,8 @@
                 "Using SEO, hashtags, and metadata injection for maximum exposure."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Game platform algorithms, spark consensus waves, and weaponize metadata to dominate feeds."
         },
         {
             "id": "digital_influence_3",
@@ -42,7 +44,8 @@
                 "Covert infiltration of enemy-controlled digital spaces to influence discourse."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Map disinfo hubs, reroute engagement, and infiltrate hostile spaces to bend their discourse."
         },
         {
             "id": "digital_influence_4",
@@ -54,7 +57,8 @@
                 "Leveraging semiotic infiltration to embed hidden counter-messaging."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Craft symbolic payloads, deploy archetypes, and hide counter-messages in culture cues."
         },
         {
             "id": "digital_influence_5",
@@ -66,7 +70,8 @@
                 "Coordinating timed message drops to overwhelm adversarial responses."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Spin up faux grassroots swarms, steer ratings, and time message blitzes to swamp opposition."
         },
         {
             "id": "digital_influence_6",
@@ -78,7 +83,8 @@
                 "Embedding psychological triggers into digital messaging for lasting influence."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Reframe context, prime audiences, and embed psychological triggers to shift perception subtly."
         },
         {
             "id": "digital_influence_7",
@@ -90,7 +96,8 @@
                 "Psychologically overwhelming opposition through engagement saturation."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Derail enemy threads, bait agents into traps, and overwhelm them with saturation tactics."
         },
         {
             "id": "digital_influence_8",
@@ -102,7 +109,8 @@
                 "Deploying sleeper accounts for long-term manipulation of digital ecosystems."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Plant controlled voices, drip disruptive ideas, and wake sleeper accounts for long-game influence."
         },
         {
             "id": "digital_influence_9",
@@ -114,7 +122,8 @@
                 "Applying hope-based messaging to consolidate loyalty and inspire action."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Trigger fear, outrage, or hope on cue to fragment foes and galvanize allies."
         },
         {
             "id": "digital_influence_10",
@@ -126,7 +135,8 @@
                 "Establishing mental conditioning exercises to reinforce cognitive autonomy."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Train to spot manipulation, schedule detox, and reinforce autonomy so operators stay clear-headed."
         }
     ]
 }

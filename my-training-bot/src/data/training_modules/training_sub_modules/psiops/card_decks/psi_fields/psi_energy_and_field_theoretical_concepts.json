@@ -18,6 +18,7 @@
                 "Represents psi energy density, similar to temperature or pressure fields.",
                 "Used in theoretical models for understanding how psi energy distributes across space."
             ],
+            "summaryText": "Think of the psi scalar field as a single-value density map covering every point in spacetime.",
             "duration": 10,
             "difficulty": "Beginner"
         },
@@ -30,6 +31,7 @@
                 "Describes how psi energy moves through space under various influences.",
                 "Used in psi current flow, energy redirection, and dynamic field models."
             ],
+            "summaryText": "Picture psi vectors as arrows showing both the strength and direction of energetic flow.",
             "duration": 12,
             "difficulty": "Intermediate"
         },
@@ -42,6 +44,7 @@
                 "The Psi Stress-Energy Tensor \\( T_{\\mu \\nu}^\\Psi \\) describes how psi energy interacts with spacetime.",
                 "Used in higher-order psi energy equations, space-time distortions, and non-local interactions."
             ],
+            "summaryText": "Use the psi tensor field to capture multidirectional stresses and nonlocal interactions at once.",
             "duration": 14,
             "difficulty": "Advanced"
         },
@@ -54,6 +57,7 @@
                 "Modifications for psi fields introduce \\( g_{\\mu \\nu}^\\Psi = g_{\\mu \\nu} + \\Psi \\delta_{\\mu \\nu} \\)",
                 "Used in alternative gravity theories, consciousness-based relativity, and psi propulsion models."
             ],
+            "summaryText": "Blend psi adjustments into the metric tensor to see how consciousness bends curvature.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -66,6 +70,7 @@
                 "Represents the local concentration of psi energy at any given point.",
                 "Key factor in energy transfer, resonance mechanics, and psi energy containment fields."
             ],
+            "summaryText": "Read psi energy density as the local concentration snapshot driving every transfer and resonance.",
             "duration": 10,
             "difficulty": "Beginner"
         },
@@ -78,6 +83,7 @@
                 "Determines how energy moves across space, similar to electromagnetic flux.",
                 "Used in psi shielding, energy transfer modeling, and psionic barriers."
             ],
+            "summaryText": "Use the psi flux integral to gauge how much energy is streaming through a surface.",
             "duration": 12,
             "difficulty": "Intermediate"
         },
@@ -90,6 +96,7 @@
                 "Used to model energy buildup in psi accumulators and field generators.",
                 "Explains energy interactions in focused psi techniques."
             ],
+            "summaryText": "Track psi potential to know how much stored energy is ready to discharge or be shaped.",
             "duration": 12,
             "difficulty": "Intermediate"
         },
@@ -102,6 +109,7 @@
                 "Explains psi energy transmission over distances.",
                 "Used in psi resonance training and telepathic models."
             ],
+            "summaryText": "Lean on the wave equation to forecast how psi signals travel and attenuate over distance.",
             "duration": 14,
             "difficulty": "Advanced"
         },
@@ -114,6 +122,7 @@
                 "Constructive interference \\( \\Psi_{total} = \\Psi_1 + \\Psi_2 \\) amplifies psi energy.",
                 "Destructive interference \\( \\Psi_{total} = \\Psi_1 - \\Psi_2 \\) reduces psi energy."
             ],
+            "summaryText": "Combine psi waves knowingly to amplify allies or cancel hostile fields.",
             "duration": 14,
             "difficulty": "Advanced"
         },
@@ -126,6 +135,7 @@
                 "Higher harmonic states \\( \\Psi_n = \\Psi_0 e^{i n \\theta} \\) can enhance psi abilities.",
                 "Used in meditative states, psi amplification techniques, and energy synchronization."
             ],
+            "summaryText": "Match psi frequencies and their harmonics to stack resonance and amplify ability.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -138,6 +148,7 @@
                 "Intentional focus modifies the psi energy density field: \\[ \\Psi(x, t) = \\Psi_0 e^{-\\alpha I(t)} \\]",
                 "Used in focused intent training, psi communication, and remote influence techniques."
             ],
+            "summaryText": "Remember that focused intent bends the psi field, turning thought into directed force.",
             "duration": 18,
             "difficulty": "Expert"
         }

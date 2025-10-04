@@ -18,6 +18,7 @@
                 "Approximate Equality: \\( \\approx \\)",
                 "Inequality: \\( \\neq, \\geq, \\leq \\)"
             ],
+            "summaryText": "Recall core arithmetic operators, grouping marks, and equality/inequality signs.",
             "duration": 5,
             "difficulty": "Beginner"
         },
@@ -33,6 +34,7 @@
                 "Summation: \\( \\sum_{i=1}^{n} a_i \\)",
                 "Product Notation: \\( \\prod_{i=1}^{n} a_i \\)"
             ],
+            "summaryText": "Survey algebraic variable symbols, powers, roots, factorials, and sigma/pi notation.",
             "duration": 6,
             "difficulty": "Beginner"
         },
@@ -49,6 +51,7 @@
                 "Universal Quantifier: \\( \\forall \\)",
                 "Existential Quantifier: \\( \\exists \\)"
             ],
+            "summaryText": "Identify logic connectives, set relations, and quantifiers for formal proofs.",
             "duration": 7,
             "difficulty": "Intermediate"
         },
@@ -65,6 +68,7 @@
                 "Proportional To: \\( \\propto \\)",
                 "Identically Equal: \\( \\equiv \\)"
             ],
+            "summaryText": "Differentiate comparative symbols for inequalities, proportionality, and identities.",
             "duration": 5,
             "difficulty": "Beginner"
         },
@@ -80,6 +84,7 @@
                 "Limit: \\( \\lim_{x \\to a} f(x) \\)",
                 "Summation: \\( \\sum_{n=1}^{\\infty} a_n \\)"
             ],
+            "summaryText": "Review calculus notation for derivatives, integrals, limits, and infinite sums.",
             "duration": 8,
             "difficulty": "Advanced"
         },
@@ -95,6 +100,7 @@
                 "Dot Product: \\( \\mathbf{a} \\cdot \\mathbf{b} \\)",
                 "Cross Product: \\( \\mathbf{a} \\times \\mathbf{b} \\)"
             ],
+            "summaryText": "Outline key linear algebra symbols for matrices, transforms, and vector products.",
             "duration": 7,
             "difficulty": "Intermediate"
         },
@@ -107,6 +113,7 @@
                 "Complex Number: \\( a + bi \\)",
                 "Complex Conjugate: \\( \\overline{z} \\)"
             ],
+            "summaryText": "Summarize complex units, standard form, and conjugation notation.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -123,6 +130,7 @@
                 "Factorial: \\( n! \\)",
                 "Binomial Coefficient: \\( \\binom{n}{r} \\)"
             ],
+            "summaryText": "Highlight probability notation for events, moments, dispersion, and combinatorics.",
             "duration": 7,
             "difficulty": "Intermediate"
         },
@@ -139,6 +147,7 @@
                 "Degrees: \\( ^\\circ \\)",
                 "Pi: \\( \\pi \\)"
             ],
+            "summaryText": "Catalog trigonometric, inverse, hyperbolic, and angle measurement symbols.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -153,6 +162,7 @@
                 "Hamiltonian: \\( \\hat{H} \\)",
                 "Schrödinger's Equation: \\[ i \\hbar \\frac{\\partial}{\\partial t} \\Psi = \\hat{H} \\Psi \\]"
             ],
+            "summaryText": "Introduce quantum state notation, constants, and the Schrödinger equation form.",
             "duration": 9,
             "difficulty": "Expert"
         }

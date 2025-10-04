@@ -16,6 +16,7 @@
                 "Analyze modus operandi and signature behaviors",
                 "Compare historical serial cases to active investigations"
             ],
+            "summaryText": "Synthesize serial killer patterns to forecast moves and tighten suspect pools.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Reconstruct timelines and suspect profiles using modern OSINT tools",
                 "Identify common factors leading to case resolution after extended periods"
             ],
+            "summaryText": "Reopen cold cases with fresh forensics and OSINT to surface breakthrough leads.",
             "duration": 7,
             "difficulty": "Advanced"
         }

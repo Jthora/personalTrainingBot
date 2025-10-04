@@ -13,6 +13,7 @@
                 "Keep your core engaged for balance",
                 "Maintain a steady pace with the beat"
             ],
+            "summaryText": "Alternate kicks over driving beats while core control keeps you upright.",
             "duration": 5,
             "difficulty": "Beginner"
         },
@@ -25,6 +26,7 @@
                 "Land softly and immediately transition into the next kick",
                 "Use ankle and knee control to avoid impact stress"
             ],
+            "summaryText": "Cross legs mid-air and rebound gently to chain the next kick.",
             "duration": 6,
             "difficulty": "Intermediate"
         }

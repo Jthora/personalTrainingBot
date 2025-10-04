@@ -17,6 +17,7 @@
                 "Cognitive shifting drills to prevent burnout and mental fatigue.",
                 "Meditative endurance techniques to increase stress resistance."
             ],
+            "summaryText": "Run timed focus sets, pivot tasks before burnout, and use meditative stamina to keep attention locked under stress.",
             "duration": "60",
             "difficulty": "Beginner"
         },
@@ -29,6 +30,7 @@
                 "Breath control techniques to override discomfort responses.",
                 "Delayed gratification exercises to strengthen willpower."
             ],
+            "summaryText": "Lean into discomfort with cold drills, override reflexes through breath, and delay rewards to harden willpower.",
             "duration": "75",
             "difficulty": "Intermediate"
         },
@@ -41,6 +43,7 @@
                 "Situational awareness training to manage incoming information streams.",
                 "Pre-emptive prioritization techniques for high-pressure scenarios."
             ],
+            "summaryText": "Train dual-task reps, guard situational awareness, and pre-prioritize so pressured juggling stays crisp.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -53,6 +56,7 @@
                 "Unexpected task interruptions to train crisis management.",
                 "Rapid recalibration exercises to enhance mental agility."
             ],
+            "summaryText": "Stage surprise scenarios, embrace interruptions, and recalibrate fast to stay agile when plans implode.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -65,6 +69,7 @@
                 "Using mantras and affirmations for mental reinforcement.",
                 "Cognitive reprogramming drills to sustain motivation."
             ],
+            "summaryText": "Audit inner chatter, install affirming scripts, and reprogram narratives that reinforce disciplined drive.",
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -77,6 +82,7 @@
                 "Rhythmic breathing control to neutralize fear responses.",
                 "Cognitive distancing to maintain logical decision-making under duress."
             ],
+            "summaryText": "Grade up exposure, pair rhythmic breathing, and mentally step back so panic never seizes the controls.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -89,6 +95,7 @@
                 "Distraction filtering methods to block external noise.",
                 "Peak performance routines for immediate focus activation."
             ],
+            "summaryText": "Deploy visual anchors, filter noise, and trigger your performance ritual to snap into deep focus on demand.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -101,6 +108,7 @@
                 "Task segmentation methods to maintain output over long periods.",
                 "Mental energy conservation strategies to prevent burnout."
             ],
+            "summaryText": "Visualize endurance wins, segment tasks into steady bursts, and ration mental energy so output holds under exhaustion.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -113,6 +121,7 @@
                 "Developing detachment techniques for long-term resilience.",
                 "Using humor and cognitive reappraisal to neutralize stress."
             ],
+            "summaryText": "Reflect through structured processing, detach without numbing, and wield humor plus reappraisal to rebound fast.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -125,6 +134,7 @@
                 "Mental inoculation against manipulation tactics.",
                 "Tactical stoicism and antifragility training for extreme resilience."
             ],
+            "summaryText": "Reinforce identity pillars, inoculate against manipulation, and drill stoic antifragility to stay unbreakable.",
             "duration": "90",
             "difficulty": "Expert"
         }

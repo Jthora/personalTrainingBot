@@ -17,7 +17,8 @@
                 "Blend into urban and rural environments"
             ],
             "duration": 7,
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Conduct discreet shadowing operations by varying distance and pace, rotating observers to break patterns, and blending into urban or rural backdrops so targets never sense persistent surveillance during extended operations."
         },
         {
             "id": "electronic_monitoring",
@@ -29,7 +30,8 @@
                 "Use encrypted channels for secure data transmission"
             ],
             "duration": 6,
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Execute covert electronic surveillance by planting low-profile sensors, mapping movement patterns in real time, and relaying encrypted intelligence to command so remote monitoring stays invisible."
         }
     ]
 }

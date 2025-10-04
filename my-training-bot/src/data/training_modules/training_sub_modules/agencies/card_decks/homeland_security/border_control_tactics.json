@@ -17,7 +17,8 @@
                 "Work with international agencies to disrupt trafficking networks"
             ],
             "duration": 6,
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Disrupt human trafficking at the border by spotting coercion cues, validating identities through biometric systems, and syncing with international partners to dismantle the network."
         },
         {
             "id": "drug_smuggling_prevention",
@@ -29,7 +30,8 @@
                 "Implement predictive analytics for trafficking patterns"
             ],
             "duration": 7,
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Interdict drug smuggling by recognizing concealment tricks, pairing canine sweeps with chemical sensors, and using predictive analytics to preempt trafficking routes."
         }
     ]
 }

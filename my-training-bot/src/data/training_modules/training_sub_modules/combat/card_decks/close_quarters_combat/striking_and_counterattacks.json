@@ -13,7 +13,8 @@
             "description": "Fundamental striking combination used to create openings and disrupt opponents.",
             "bulletpoints": "Proper stance, speed, targeting vital points, follow-up strikes",
             "duration": "5",
-            "difficulty": "Beginner"
+            "difficulty": "Beginner",
+            "summaryText": "Snap rapid jab-cross pairs that stay on-line, set up follow-up shots, and keep opponents reactive instead of dictating the exchange."
         },
         {
             "id": "strike_2",
@@ -21,7 +22,8 @@
             "description": "Short-range powerful attacks used in clinch fighting.",
             "bulletpoints": "Angle control, rapid execution, generating force from core",
             "duration": "5",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Own the clinch by carving sharp elbows, driving knees from the core, and managing angles so every close-range strike lands with fight-ending force."
         }
     ]
 }

@@ -13,7 +13,8 @@
             "description": "Utilizing terrain and foliage to blend into outdoor environments.",
             "bulletpoints": "Using shadows, breaking up silhouette, adjusting to lighting conditions",
             "duration": "15",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Ghost into natural terrain by breaking your outline with foliage, mirroring ambient colors, and riding shadow lanes so observers never get a clean read on your shape."
         },
         {
             "id": "camouflage_2",
@@ -21,7 +22,8 @@
             "description": "Altering appearance and behavior to blend into social environments.",
             "bulletpoints": "Changing gait, speech modulation, dressing for context",
             "duration": "15",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Slip into cover identities by matching wardrobe, cadence, and micro-behaviors, then ride crowd flow so even gatekeepers accept you as part of the background."
         }
     ]
 }

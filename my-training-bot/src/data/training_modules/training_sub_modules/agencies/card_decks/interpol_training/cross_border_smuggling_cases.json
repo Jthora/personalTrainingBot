@@ -17,7 +17,8 @@
                 "Analyze smuggling patterns based on historical data"
             ],
             "duration": 6,
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Seize contraband by pairing advanced scanning tech with meticulous manual searches and mining past cases for emerging concealment patterns."
         },
         {
             "id": "covert_border_surveillance",
@@ -29,7 +30,8 @@
                 "Implement tracking methods for smuggling convoys"
             ],
             "duration": 7,
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Thwart cross-border smuggling by deploying real-time surveillance, fusing partner intel, and tracking convoy movements before they vanish."
         }
     ]
 }

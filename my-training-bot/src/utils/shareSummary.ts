@@ -124,7 +124,9 @@ export const generateShareSummary = ({ card, meta, shortUrl, maxLength = DEFAULT
     const urlPartLength = shortUrl ? shortUrl.length + 2 : 0; // blank line (\n\n) before URL
 
     const allowedSummaryLength = Math.max(0, maxLength - hashtagsPartLength - urlPartLength);
-    const summary = composeContent(card, allowedSummaryLength);
+    const rawSummaryText = typeof card.summaryText === "string" ? sanitizeText(card.summaryText) : "";
+    const summarySource = rawSummaryText.length ? rawSummaryText : composeContent(card, allowedSummaryLength);
+    const summary = truncate(summarySource, allowedSummaryLength);
 
     let fullText = summary;
 

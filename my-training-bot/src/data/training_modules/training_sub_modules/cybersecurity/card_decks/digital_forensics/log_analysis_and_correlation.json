@@ -12,6 +12,7 @@
             "title": "Parsing System and Network Logs",
             "description": "Using forensic techniques to analyze log files for security incidents.",
             "bulletpoints": "Syslog analysis, SIEM tools, log parsing techniques",
+            "summaryText": "Normalize the logs, slice them with your tools, and surface the breach breadcrumb trail.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -20,6 +21,7 @@
             "title": "Threat Correlation and Incident Response",
             "description": "Connecting multiple log sources to identify and mitigate security threats.",
             "bulletpoints": "Cross-log correlation, anomaly detection, attack pattern recognition",
+            "summaryText": "Fuse every data stream, flag the anomalies, and move fast to shut down the kill chain.",
             "duration": "90",
             "difficulty": "Advanced"
         }

@@ -14,7 +14,8 @@
             "description": "Techniques for conducting unbiased investigations into treatment options.",
             "bulletpoints": "Analyzing study methodologies, funding source tracking, cross-referencing global research",
             "duration": "12",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Dissect study design, follow funding trails, and compare international data so your conclusions rest on primary evidence."
         },
         {
             "id": "treatment_2",
@@ -22,7 +23,8 @@
             "description": "Investigating natural remedies and suppressed medical solutions.",
             "bulletpoints": "Herbal antivirals, non-toxic cancer treatments, historical suppression of cures",
             "duration": "14",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Catalog alternative protocols, weigh toxicity claims, and verify documented suppression before adopting any remedy."
         },
         {
             "id": "treatment_3",
@@ -30,7 +32,8 @@
             "description": "Distinguishing between genuine healthcare and industry-driven harm.",
             "bulletpoints": "Long-term side effect monitoring, depopulation agendas, unethical human trials",
             "duration": "14",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Track safety signals over time, document unethical practices, and surface patterns that separate malpractice from evidence-based care."
         }
     ]
 }

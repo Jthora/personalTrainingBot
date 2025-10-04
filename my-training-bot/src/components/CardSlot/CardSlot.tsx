@@ -25,7 +25,7 @@ const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
     const [isShareOpen, setIsShareOpen] = useState(false);
 
     useEffect(() => {
-        if (isHeld || !card) return;
+        if (isHeld || isShareOpen || !card) return;
 
         const timer = setInterval(() => {
             setTimeLeft((prev: number) => {
@@ -38,7 +38,7 @@ const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
         }, 1000);
 
         return () => clearInterval(timer);
-    }, [isHeld, card, onDealNextCard, getRandomTimeInterval]);
+    }, [isHeld, isShareOpen, card, onDealNextCard, getRandomTimeInterval]);
 
     const handleHoldChange = () => {
         setIsHeld(!isHeld);

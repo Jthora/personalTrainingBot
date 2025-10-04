@@ -16,6 +16,7 @@
                 "Work for 45 seconds per exercise, rest for 15 seconds",
                 "Repeat for 3-4 rounds depending on fitness level"
             ],
+            "summaryText": "Cycle bodyweight moves fast with tight rests to torch strength and cardio together.",
             "duration": 7,
             "difficulty": "Intermediate"
         },
@@ -28,6 +29,7 @@
                 "Use 30-second work intervals with 15 seconds of rest",
                 "Maintain proper form and controlled breathing"
             ],
+            "summaryText": "Blend kettlebell hits in short bursts while form stays sharp under fatigue.",
             "duration": 8,
             "difficulty": "Advanced"
         }

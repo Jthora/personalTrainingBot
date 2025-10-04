@@ -17,6 +17,7 @@
                 "Missing defense funds and unaccounted expenditures signal hidden agendas.",
                 "Advanced technological projects are concealed behind layers of secrecy."
             ],
+            "summaryText": "Track the missing trillions, unoversighted budgets, and secret tech fueling black projects.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Breakaway civilizations may be developing off-world infrastructure.",
                 "Classified aerospace technology surpasses public sector advancements."
             ],
+            "summaryText": "Investigate hidden bases, potential breakaway infrastructure, and leaps in classified aerospace.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Shell companies and offshore accounts obscure funding sources.",
                 "Drug trade, arms deals, and human trafficking finance deep-state operations."
             ],
+            "summaryText": "Follow illicit pipelines through banks, shell fronts, and criminal trades that bankroll black ops.",
             "duration": "90",
             "difficulty": "Expert"
         }

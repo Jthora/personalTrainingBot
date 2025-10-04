@@ -19,6 +19,7 @@
                 "Identify running processes, open network connections, and active malware",
                 "Detect and analyze rootkits, trojans, and fileless malware using memory dumps"
             ],
+            "summaryText": "Pull volatile RAM with Volatility, inspect live artifacts, and surface stealth malware hiding in memory.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -31,6 +32,7 @@
                 "Correlate logs from endpoints, firewalls, and cloud environments",
                 "Identify indicators of compromise (IoCs) such as unauthorized access and data exfiltration"
             ],
+            "summaryText": "Mine SIEM feeds, fuse cross-platform logs, and elevate IoCs that trace the intrusion chain.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -43,6 +45,7 @@
                 "Recover deleted files and partitions using FTK Imager and TestDisk",
                 "Extract evidence from NTFS, FAT32, and exFAT filesystems"
             ],
+            "summaryText": "Leverage TSK suites to carve disks, resurrect deleted data, and document filesystem evidence.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -55,6 +58,7 @@
                 "Analyze malware behavior in a controlled environment using Cuckoo Sandbox",
                 "Extract Indicators of Compromise (IoCs) from infected systems using YARA rules"
             ],
+            "summaryText": "Disassemble binaries, sandbox behavior, and harvest IoCs to map malicious playbooks.",
             "duration": 8,
             "difficulty": "Expert"
         },
@@ -67,6 +71,7 @@
                 "Reconstruct network sessions and analyze suspicious traffic patterns",
                 "Identify unauthorized access and data exfiltration through Deep Packet Inspection (DPI)"
             ],
+            "summaryText": "Capture packets, rebuild sessions, and flag anomalous flows that betray intrusions.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -79,6 +84,7 @@
                 "Identify misconfigured cloud storage buckets and leaked credentials",
                 "Use forensic snapshots to investigate compromised virtual machines"
             ],
+            "summaryText": "Review cloud audit trails, fix misconfigs, and interrogate snapshots to trace cloud breaches.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -91,6 +97,7 @@
                 "Recover deleted messages, call logs, and GPS history from Android and iOS devices",
                 "Analyze application artifacts from WhatsApp, Signal, and Telegram"
             ],
+            "summaryText": "Extract handset data, resurrect deleted trails, and parse app artifacts across mobile ecosystems.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -103,6 +110,7 @@
                 "Recover deleted files from USB drives using Photorec and Foremost",
                 "Use MFT (Master File Table) analysis to track data transfers"
             ],
+            "summaryText": "Audit registry traces, recover wiped media, and study MFT to map removable storage use.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -115,6 +123,7 @@
                 "Analyze Windows API hooks and system call modifications",
                 "Dump and analyze hidden processes using Volatility plugins"
             ],
+            "summaryText": "Sweep for rootkits, inspect hook chains, and dump hidden tasks to expose stealth threats.",
             "duration": 8,
             "difficulty": "Expert"
         },
@@ -127,6 +136,7 @@
                 "Identify authorship, timestamps, and geolocation data",
                 "Detect digital forgeries and manipulated files"
             ],
+            "summaryText": "Pull hidden metadata to surface creators, timelines, and tampering telltales.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -139,6 +149,7 @@
                 "Trace email spoofing and DKIM/SPF misconfigurations",
                 "Identify phishing links and attachments using VirusTotal and Hybrid Analysis"
             ],
+            "summaryText": "Interrogate headers, validate authentication, and vet payloads to unravel phishing ops.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -151,6 +162,7 @@
                 "Monitor cryptocurrency transactions linked to dark web markets",
                 "Extract intelligence from dark web forums using DarkOwl and Flashpoint"
             ],
+            "summaryText": "Profile Tor traffic, trail crypto payments, and mine dark web intel platforms for leads.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -163,6 +175,7 @@
                 "Use NetFlow and Deep Packet Inspection (DPI) to detect covert channels",
                 "Analyze DNS tunneling, encrypted payloads, and steganographic techniques"
             ],
+            "summaryText": "Spot exfil via SIEM, validate with flow/DPI, and expose covert channel tricks.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -175,6 +188,7 @@
                 "Correlate system events, network traffic, and file modifications",
                 "Analyze timestamp anomalies to detect anti-forensic techniques"
             ],
+            "summaryText": "Build unified timelines, correlate multi-source events, and flag timestamp tampering.",
             "duration": 6,
             "difficulty": "Advanced"
         }

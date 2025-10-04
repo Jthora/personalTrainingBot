@@ -13,6 +13,7 @@
             "title": "DAO Governance Models",
             "description": "Understanding different models of decentralized autonomous organizations.",
             "bulletpoints": "On-chain vs. off-chain governance, treasury control, member incentives",
+            "summaryText": "Contrast on-chain and off-chain coordination, outline how treasuries are safeguarded, and note incentive designs that keep contributors engaged.",
             "duration": "45",
             "difficulty": "Intermediate"
         },
@@ -21,6 +22,7 @@
             "title": "Voting Mechanisms & Consensus",
             "description": "Exploring different voting mechanisms in decentralized governance.",
             "bulletpoints": "Token-based voting, quadratic voting, snapshot governance",
+            "summaryText": "Review token-weighted voting pitfalls, show how quadratic voting balances whales, and mention Snapshot for gasless signaling.",
             "duration": "50",
             "difficulty": "Advanced"
         },
@@ -29,6 +31,7 @@
             "title": "Protocol Treasury Management",
             "description": "Managing decentralized treasuries and funding ecosystem development.",
             "bulletpoints": "Treasury allocation, grants programs, inflation control",
+            "summaryText": "Detail treasury allocation frameworks, grant review loops, and monetary levers that keep inflation aligned with growth.",
             "duration": "50",
             "difficulty": "Advanced"
         }

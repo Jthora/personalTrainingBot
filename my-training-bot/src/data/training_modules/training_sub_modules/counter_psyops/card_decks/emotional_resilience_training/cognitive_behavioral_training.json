@@ -18,7 +18,8 @@
                 "Developing awareness of when distortions impact decision-making."
             ],
             "duration": "60",
-            "difficulty": "Beginner"
+            "difficulty": "Beginner",
+            "summaryText": "Name classic distortions, log them daily, and notice when they hijack decisions."
         },
         {
             "id": "cognitive_behavioral_2",
@@ -30,7 +31,8 @@
                 "Using counter-scripting to create positive mental scripts."
             ],
             "duration": "75",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Reframe negatives, interrogate irrational beliefs, and script constructive replacements."
         },
         {
             "id": "cognitive_behavioral_3",
@@ -42,7 +44,8 @@
                 "Applying mindfulness-based stress reduction (MBSR) techniques."
             ],
             "duration": "90",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Observe intrusive thoughts without grabbing them, anchor in the moment, and run MBSR drills."
         },
         {
             "id": "cognitive_behavioral_4",
@@ -54,7 +57,8 @@
                 "Applying activation techniques to counter learned helplessness."
             ],
             "duration": "75",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Schedule mood-lifting actions, ladder goals upward, and activate against helplessness."
         },
         {
             "id": "cognitive_behavioral_5",
@@ -66,7 +70,8 @@
                 "Employing humor as a tool for reframing and neutralizing mental stress."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Defuse harsh self-talk aloud, visualize distance from it, and weaponize humor to disarm stress."
         },
         {
             "id": "cognitive_behavioral_6",
@@ -78,7 +83,8 @@
                 "Reinforcing healthier beliefs through evidence-based affirmations."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Track core belief roots, dismantle them logically, and reinforce upgrades with evidence."
         },
         {
             "id": "cognitive_behavioral_7",
@@ -90,7 +96,8 @@
                 "Using graded exposure techniques to increase tolerance to psychological discomfort."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Desensitize systematically, script safe exposure reps, and climb the discomfort ladder."
         },
         {
             "id": "cognitive_behavioral_8",
@@ -102,7 +109,8 @@
                 "Applying multi-perspective analysis to counter cognitive rigidity."
             ],
             "duration": "75",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Exercise lateral problem solving, play with paradox, and audit situations from many angles."
         },
         {
             "id": "cognitive_behavioral_9",
@@ -114,7 +122,8 @@
                 "Replacing defeatist language with constructive internal messaging."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Script strength-based affirmations, monitor self-talk in real time, and swap defeatism for builders."
         },
         {
             "id": "cognitive_behavioral_10",
@@ -126,7 +135,8 @@
                 "Engaging in lifelong learning to reinforce cognitive adaptability."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Lock in reflection habits, journal wins and gaps, and keep learning to stay cognitively agile."
         }
     ]
 }

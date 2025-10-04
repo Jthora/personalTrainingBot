@@ -18,6 +18,7 @@
                 "Unlike matrix multiplication, the Hadamard product multiplies corresponding elements of two matrices of the same shape.",
                 "This operation is used in neural networks, optimization, attention mechanisms, and tensor-based learning."
             ],
+            "summaryText": "Multiply matrices elementwise with Hadamard products to capture feature-wise interactions.",
             "duration": 6,
             "difficulty": "Beginner"
         },
@@ -30,6 +31,7 @@
                 "Mathematically, it differs from standard matrix multiplication \\( \\times \\), which involves dot products.",
                 "Used extensively in neural networks, gradient updates, and feature-wise interactions in AI models."
             ],
+            "summaryText": "Recognize \\odot as the notation for elementwise multiplication distinct from matrix products.",
             "duration": 5,
             "difficulty": "Beginner"
         },
@@ -43,6 +45,7 @@
                 "Example: Gradient of a loss function in backpropagation: \\[ \\nabla_w C = \\frac{\\partial C}{\\partial w} \\]",
                 "Used in gradient descent, backpropagation, and optimization algorithms."
             ],
+            "summaryText": "Use \\nabla to denote gradients that guide parameter updates in optimization.",
             "duration": 6,
             "difficulty": "Beginner"
         },
@@ -55,6 +58,7 @@
                 "Maps any real number to a value between 0 and 1, making it useful for binary classification.",
                 "Used in logistic regression, perceptrons, and probabilistic models."
             ],
+            "summaryText": "Apply the sigmoid \\sigma(x) to squash outputs into probabilistic scores.",
             "duration": 6,
             "difficulty": "Beginner"
         },
@@ -67,6 +71,7 @@
                 "The standard deviation (\\( \\sigma \\)) measures how much values deviate from the mean.",
                 "Used in batch normalization, feature scaling, and probability distributions."
             ],
+            "summaryText": "Interpret \\mu as average and \\sigma as spread for normalized features.",
             "duration": 5,
             "difficulty": "Beginner"
         },
@@ -79,6 +84,7 @@
                 "Each element \\( a_{ij} \\) refers to row \\( i \\), column \\( j \\)",
                 "Matrices are used in linear algebra, deep learning layers, and optimization."
             ],
+            "summaryText": "Read matrices as indexed grids that feed linear algebra operations in ML.",
             "duration": 6,
             "difficulty": "Beginner"
         },
@@ -91,6 +97,7 @@
                 "Example: A 3D tensor representing an image has height, width, and color channels.",
                 "Used extensively in deep learning frameworks such as TensorFlow and PyTorch."
             ],
+            "summaryText": "View tensors as multi-dimensional arrays extending matrices for deep learning data.",
             "duration": 7,
             "difficulty": "Beginner"
         },
@@ -103,6 +110,7 @@
                 "Here, \\( \\eta \\) is the learning rate, and \\( C \\) is the cost function.",
                 "Used in backpropagation, optimization, and deep learning training."
             ],
+            "summaryText": "Iteratively adjust weights opposite the gradient to reduce loss.",
             "duration": 8,
             "difficulty": "Beginner"
         },
@@ -115,6 +123,7 @@
                 "Ensures that the outputs sum to 1, making it useful in classification models.",
                 "Used in deep learning models such as image recognition and NLP."
             ],
+            "summaryText": "Use softmax to turn logits into a normalized probability distribution.",
             "duration": 7,
             "difficulty": "Beginner"
         },
@@ -127,6 +136,7 @@
                 "Ensures activations remain within a controlled range, preventing gradient instability.",
                 "Used in deep learning architectures for faster and more stable training."
             ],
+            "summaryText": "Normalize batch statistics with learnable scale and shift to steady training.",
             "duration": 8,
             "difficulty": "Beginner"
         }

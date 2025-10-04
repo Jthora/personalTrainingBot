@@ -17,6 +17,7 @@
                 "Answering a question with a question forces the aggressor into a defensive posture.",
                 "Pausing before responding disarms attempts to force reactive compliance."
             ],
+            "summaryText": "Disrupt their script with interruptions, counter-questions, and deliberate pauses.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Recognizing false dichotomies avoids being cornered into binary choices.",
                 "Calling out contradictions in real-time disrupts manipulation attempts."
             ],
+            "summaryText": "Spot the trap, reframe the question, and expose contradictions on the spot.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Strategic silence creates discomfort that forces them to reveal more.",
                 "Offering vague responses protects against psychological profiling."
             ],
+            "summaryText": "Stay vague or silent so the manipulator wastes energy while you stay unhooked.",
             "duration": "90",
             "difficulty": "Expert"
         }

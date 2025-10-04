@@ -18,7 +18,8 @@
                 "Recognizing trade wars and economic sanctions as tools of control."
             ],
             "duration": "75",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Spot engineered currency swings, decode artificial boom-bust cycles, and log coercive trade weapons."
         },
         {
             "id": "financial_warfare_2",
@@ -30,7 +31,8 @@
                 "Recognizing how national debt is used to control governments."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Diagram central bank levers, chart debt expansion mechanics, and connect sovereign bondage to policy capture."
         },
         {
             "id": "financial_warfare_3",
@@ -42,7 +44,8 @@
                 "Understanding the role of high-frequency trading (HFT) in market control."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Track engineered price spikes, expose insider corridors, and explain HFT distortions."
         },
         {
             "id": "financial_warfare_4",
@@ -54,7 +57,8 @@
                 "Leveraging privacy coins and decentralized exchanges for financial independence."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Contrast state crackdowns with decentralized resilience, assess CBDC control risks, and champion privacy-first rails."
         },
         {
             "id": "financial_warfare_5",
@@ -66,7 +70,8 @@
                 "Understanding how corporations influence policy through lobbying."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Document monopoly tactics, surface scarcity engineering, and tie lobbying spends to captured rules."
         },
         {
             "id": "financial_warfare_6",
@@ -78,7 +83,8 @@
                 "Tracing illicit capital flows through shadow banking systems."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Map offshore webs, decode laundering playbooks, and follow capital through opaque shadow networks."
         },
         {
             "id": "financial_warfare_7",
@@ -90,7 +96,8 @@
                 "Developing resilience strategies for surviving financial destabilization."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Flag runaway inflation signals, show how essentials get weaponized, and script household resilience moves."
         },
         {
             "id": "financial_warfare_8",
@@ -102,7 +109,8 @@
                 "Building financial independence through strategic investments."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Design diversified hedges, activate community exchange circuits, and plan independence-focused portfolios."
         },
         {
             "id": "financial_warfare_9",
@@ -114,7 +122,8 @@
                 "Recognizing algorithmic suppression of certain market trends."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Audit AI trading levers, evaluate predictive data feeds, and uncover algorithmic throttling of movements."
         },
         {
             "id": "financial_warfare_10",
@@ -126,7 +135,8 @@
                 "Utilizing precious metals, commodities, and digital assets as alternative stores of value."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Prototype community currencies, grow reciprocal trade webs, and anchor wealth in hard or digital assets."
         }
     ]
 }

@@ -14,7 +14,8 @@
             "description": "Ensuring effective protection against biological hazards through correct use of PPE.",
             "bulletpoints": "Glove layering, N95 vs. P100 masks, full-body suit protocols",
             "duration": "10",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Layer gloves, seal suits, and match respirators to the threat so no pathogen slips past your PPE."
         },
         {
             "id": "infection_2",
@@ -22,7 +23,8 @@
             "description": "Methods for eliminating pathogens from surfaces, equipment, and environments.",
             "bulletpoints": "UV sterilization, chemical disinfectants, autoclave usage",
             "duration": "12",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Cycle UV, chemical, and thermal sterilization so every surface and tool stays pathogen-free."
         },
         {
             "id": "infection_3",
@@ -30,7 +32,8 @@
             "description": "Strategies for minimizing direct and indirect pathogen transmission.",
             "bulletpoints": "Negative pressure rooms, contact isolation, airlock procedures",
             "duration": "12",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Lock down zones with negative pressure, contact barriers, and tight airlock discipline to shut down transmission routes."
         }
     ]
 }

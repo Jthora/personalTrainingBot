@@ -13,6 +13,7 @@
                 "Examine how nanoscale conductive plates create a pressure difference in quantum vacuum energy.",
                 "Investigate experimental setups designed to harness zero-point energy for potential applications."
             ],
+            "summaryText": "Review Casimir plate forces and experimental approaches to tap vacuum energy differentials.",
             "duration": 12,
             "difficulty": "Advanced"
         },
@@ -25,6 +26,7 @@
                 "Explore the concept of negative energy density required to create a warp field: \\[ T_{\\mu\\nu} k^\\mu k^\\nu < 0 \\]",
                 "Analyze theoretical applications of metric engineering to create distortions in spacetime."
             ],
+            "summaryText": "Survey warp-field metrics, negative energy requirements, and spacetime engineering theories.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -37,6 +39,7 @@
                 "Explore theoretical quantum thruster concepts leveraging the Unruh effect.",
                 "Investigate experimental tests of quantum vacuum propulsion and potential applications."
             ],
+            "summaryText": "Examine quantum fluctuation constraints and exotic propulsion schemes exploiting field interactions.",
             "duration": 18,
             "difficulty": "Expert"
         },
@@ -49,6 +52,7 @@
                 "Study the role of vacuum fluctuations in quantum electrodynamics (QED) and the Lamb shift.",
                 "Explore theoretical models of quantum energy extraction from vacuum states."
             ],
+            "summaryText": "Understand zero-point fluctuation physics, QED manifestations, and extraction concepts.",
             "duration": 14,
             "difficulty": "Advanced"
         },
@@ -61,6 +65,7 @@
                 "Understand the role of exotic matter and its constraints in the Einstein Field Equations.",
                 "Explore potential experimental validations for negative energy density fields."
             ],
+            "summaryText": "Consider quantum stress tensors, exotic matter constraints, and negative energy prospects.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -73,6 +78,7 @@
                 "Analyze its implications for high-acceleration spacecraft propulsion concepts.",
                 "Investigate experimental possibilities of detecting Unruh radiation in laboratory settings."
             ],
+            "summaryText": "Relate accelerated observers to Unruh radiation signatures and propulsion relevance.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -85,6 +91,7 @@
                 "Examine experimental tests involving high-intensity laser fields.",
                 "Explore the implications of vacuum pair production for zero-point energy applications."
             ],
+            "summaryText": "Analyze strong-field pair production thresholds and their zero-point energy implications.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -97,6 +104,7 @@
                 "Explore the implications of virtual particle creation and annihilation in strong fields.",
                 "Investigate experimental detection methods such as high-energy scattering experiments."
             ],
+            "summaryText": "Review Dirac sea intuition, virtual particle dynamics, and observation strategies.",
             "duration": 14,
             "difficulty": "Advanced"
         },
@@ -109,6 +117,7 @@
                 "Analyze its implications for energy extraction from extreme gravitational fields.",
                 "Explore potential astrophysical observations of Hawking radiation."
             ],
+            "summaryText": "Connect Hawking radiation thermodynamics to potential energy harvesting scenarios.",
             "duration": 18,
             "difficulty": "Expert"
         },
@@ -121,6 +130,7 @@
                 "Analyze how modifications to vacuum permittivity could affect zero-point energy applications.",
                 "Investigate alternative theories of vacuum structure and their potential technological applications."
             ],
+            "summaryText": "Explore vacuum energy density models, permittivity shifts, and speculative technologies.",
             "duration": 16,
             "difficulty": "Expert"
         }

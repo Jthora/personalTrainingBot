@@ -12,6 +12,7 @@
             "title": "Sensory Expansion Drills",
             "description": "Practices to heighten psionic sensory awareness.",
             "bulletpoints": "Aura Reading, Empathic Sensory Expansion, Object Energy Scanning",
+            "summaryText": "Sweep attention across people and objects to feel subtle shifts and broaden your intuitive range.",
             "duration": "45",
             "difficulty": "Intermediate"
         },
@@ -20,6 +21,7 @@
             "title": "Telekinetic Sensory Link",
             "description": "Exercises to establish a psionic link with physical objects.",
             "bulletpoints": "Micro-Movements, Object Resonance, Psionic Sensory Feedback",
+            "summaryText": "Tether awareness to an object until you sense its micro-responses and nudge them into motion.",
             "duration": "60",
             "difficulty": "Advanced"
         }

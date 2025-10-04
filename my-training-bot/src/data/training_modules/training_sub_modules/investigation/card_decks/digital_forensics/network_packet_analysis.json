@@ -16,6 +16,7 @@
                 "Identify malicious payloads in network traffic",
                 "Analyze protocol anomalies and encrypted communications"
             ],
+            "summaryText": "Capture packets with Wireshark and tcpdump to spot malicious payloads and anomalies.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Analyze DNS tunneling and covert communication channels",
                 "Correlate network logs with endpoint forensic data"
             ],
+            "summaryText": "Deploy IDS tooling and threat hunting to expose covert channels and tie to host evidence.",
             "duration": 7,
             "difficulty": "Advanced"
         }

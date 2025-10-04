@@ -18,6 +18,7 @@
                 "Analyze the Navier-Stokes equations in vortex flow: \\[ \\rho \\left( \\frac{\\partial \\mathbf{v}}{\\partial t} + (\\mathbf{v} \\cdot \\nabla) \\mathbf{v} \\right) = - \\nabla p + \\mu \\nabla^2 \\mathbf{v} \\]",
                 "Explore real-world vortex applications in aerodynamics, astrophysics, and plasma physics."
             ],
+            "summaryText": "Cover circulation, Navier-Stokes behavior, and applied vortex phenomena.",
             "duration": 12,
             "difficulty": "Advanced"
         },
@@ -30,6 +31,7 @@
                 "Study energy flow through toroidal electromagnetic fields using Maxwell's equations: \\[ \\nabla \\times \\mathbf{E} = - \\frac{\\partial \\mathbf{B}}{\\partial t} \\]",
                 "Analyze toroidal plasma formations in fusion physics and consciousness models."
             ],
+            "summaryText": "Describe toroidal coordinates, Maxwell-driven flows, and torus plasma formations.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -42,6 +44,7 @@
                 "Analyze the effect of rotating electromagnetic fields on spacetime curvature using frame-dragging equations.",
                 "Investigate experimental models for vortex-based propulsion and gravity control."
             ],
+            "summaryText": "Link rotational vortices to gravity models, frame-dragging, and propulsion experiments.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -54,6 +57,7 @@
                 "Study the connection between heart-brain coherence and toroidal field structures.",
                 "Investigate experimental methods for detecting biovortex resonance frequencies."
             ],
+            "summaryText": "Examine bioelectric toroids, coherence patterns, and biovortex detection methods.",
             "duration": 13,
             "difficulty": "Advanced"
         },
@@ -66,6 +70,7 @@
                 "Understand the Poynting vector for rotating energy flow: \\[ \\mathbf{S} = \\mathbf{E} \\times \\mathbf{H} \\]",
                 "Analyze magnetic vortex formations in superconducting materials."
             ],
+            "summaryText": "Investigate electromagnetic OAM, Poynting flow spirals, and superconducting vortices.",
             "duration": 15,
             "difficulty": "Expert"
         },
@@ -78,6 +83,7 @@
                 "Analyze how vortex lattices form in rotating superfluid helium.",
                 "Investigate quantum vortex interactions and their applications in energy transport."
             ],
+            "summaryText": "Review quantized superfluid circulation, lattice formation, and quantum vortex transport.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -90,6 +96,7 @@
                 "Analyze the magnetic pressure balance in plasma fields: \\[ p + \\frac{B^2}{2\\mu_0} = \\text{constant} \\]",
                 "Investigate toroidal energy confinement and its potential applications in free-energy devices."
             ],
+            "summaryText": "Assess tokamak toroidal confinement, pressure balance, and speculative energy uses.",
             "duration": 17,
             "difficulty": "Expert"
         },
@@ -102,6 +109,7 @@
                 "Investigate energy amplification in vortex structures using constructive interference principles.",
                 "Study the role of vortex solitons in maintaining self-sustaining energy flow."
             ],
+            "summaryText": "Study vortex-wave resonances, amplification mechanisms, and soliton-supported flow.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -114,6 +122,7 @@
                 "Analyze the effects of rotating mass-energy distributions on gravitational field structures.",
                 "Investigate experimental techniques to detect torsion field interactions."
             ],
+            "summaryText": "Consider torsion-augmented gravity, rotating mass effects, and detection strategies.",
             "duration": 18,
             "difficulty": "Expert"
         },
@@ -126,6 +135,7 @@
                 "Investigate vortex motion in Casimir effect configurations.",
                 "Explore how zero-point energy can be manipulated using toroidal resonance structures."
             ],
+            "summaryText": "Explore vacuum fluctuation coupling, Casimir vortices, and toroidal ZPE schemes.",
             "duration": 20,
             "difficulty": "Expert"
         }

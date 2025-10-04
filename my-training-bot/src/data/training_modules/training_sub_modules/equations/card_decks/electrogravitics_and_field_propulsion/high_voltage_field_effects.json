@@ -16,6 +16,7 @@
                 "Analyze ion wind propulsion using drift velocity \\( v_d \\) and ion mobility \\( \\mu \\) in electric fields: \\[ v_d = \\mu E \\]",
                 "Study the influence of electrode configuration on thrust efficiency and optimize spacing for maximum ion acceleration."
             ],
+            "summaryText": "Review electrostatic lifter thrust, ion drift, and electrode geometries for ionic propulsion.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Investigate dielectric materials that enhance energy storage and resist breakdown using permittivity \\( \\epsilon_r \\): \\[ C = \\frac{\\epsilon_r \\epsilon_0 A}{d} \\]",
                 "Learn how to safely generate and control plasma arcs in propulsion and electrostatic shielding applications."
             ],
+            "summaryText": "Study Paschen breakdown behavior, dielectric limits, and controlled plasma discharge techniques.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -40,6 +42,7 @@
                 "Study practical applications like electrofluidic thrusters, space propulsion, and ionic propulsion systems.",
                 "Investigate charge separation effects leading to novel thrust mechanisms using fluid ionization models."
             ],
+            "summaryText": "Investigate electrohydrodynamic charge transport and propulsion applications driven by Lorentz forces.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -52,6 +55,7 @@
                 "Study dielectric breakdown limits in ultra-high voltage capacitors and energy density considerations.",
                 "Examine pulsed power applications where rapid energy discharge is needed."
             ],
+            "summaryText": "Examine high-voltage capacitor energy density, breakdown limits, and pulsed discharge use cases.",
             "duration": 11,
             "difficulty": "Advanced"
         },
@@ -64,6 +68,7 @@
                 "Analyze ion thruster performance using specific impulse \\( I_{sp} \\): \\[ I_{sp} = \\frac{F}{\\dot{m} g_0} \\]",
                 "Investigate electric field geometries that maximize thrust efficiency and minimize energy losses."
             ],
+            "summaryText": "Assess electrokinetic thrust equations, specific impulse metrics, and efficient field layouts.",
             "duration": 13,
             "difficulty": "Expert"
         },
@@ -76,6 +81,7 @@
                 "Study Langmuir probes for measuring plasma density and electron temperature.",
                 "Investigate the application of high-voltage fields for plasma stabilization in fusion research."
             ],
+            "summaryText": "Explore plasma confinement physics, diagnostics, and high-voltage stabilization strategies.",
             "duration": 15,
             "difficulty": "Expert"
         },
@@ -88,6 +94,7 @@
                 "Analyze the formation of leader channels in high-voltage discharge events.",
                 "Investigate the role of streamer propagation in high-energy electrical discharges."
             ],
+            "summaryText": "Model high-voltage arc initiation, leader development, and streamer-driven discharge dynamics.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -100,6 +107,7 @@
                 "Study methods to suppress corona losses in high-voltage transmission lines.",
                 "Investigate how corona discharge enhances air ionization for electrostatic applications."
             ],
+            "summaryText": "Review corona onset fields, mitigation methods, and ionization benefits in electrostatics.",
             "duration": 12,
             "difficulty": "Advanced"
         },
@@ -112,6 +120,7 @@
                 "Study the effects of charge distribution on electrostatic suspension systems.",
                 "Examine practical applications in high-voltage field manipulation experiments."
             ],
+            "summaryText": "Evaluate electrostatic levitation force balances and charge distribution control.",
             "duration": 11,
             "difficulty": "Advanced"
         },
@@ -124,6 +133,7 @@
                 "Analyze impulse bit performance using plasma expansion models.",
                 "Investigate how magnetic nozzles shape and direct plasma flows."
             ],
+            "summaryText": "Analyze vacuum arc thruster plasma generation, impulse metrics, and magnetic nozzle shaping.",
             "duration": 15,
             "difficulty": "Expert"
         }

@@ -18,7 +18,8 @@
                 "Identifying credible sources and filtering misinformation in the Darknet."
             ],
             "duration": "75",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Distinguish web layers, route through anonymizers, and vet sources so darknet intel starts from solid footing."
         },
         {
             "id": "darknet_osint_2",
@@ -30,7 +31,8 @@
                 "Detecting and avoiding honeypots, surveillance nodes, and compromised networks."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Run compartmentalized rigs, chain privacy tools, and dodge traps so your footprint stays ghosted."
         },
         {
             "id": "darknet_osint_3",
@@ -42,7 +44,8 @@
                 "Employing AI-driven data mining for darknet intelligence correlation."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Scrape hidden hubs, trace crypto flows, and fuse datasets with AI to surface actionable darknet signals."
         },
         {
             "id": "darknet_osint_4",
@@ -54,7 +57,8 @@
                 "Employing linguistic and behavioral adaptation techniques to blend into Darknet communities."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Craft believable personas, segregate burners, and mirror community slang to blend during long ops."
         },
         {
             "id": "darknet_osint_5",
@@ -66,7 +70,8 @@
                 "Using infiltration techniques to gather insider intelligence on criminal groups."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Track market patterns, map actor links, and infiltrate cells to harvest inside intelligence."
         },
         {
             "id": "darknet_osint_6",
@@ -78,7 +83,8 @@
                 "Understanding metadata tracking and countermeasures for message security."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Encrypt end-to-end, adopt future-proof ciphers, and strip metadata so comms stay sealed."
         },
         {
             "id": "darknet_osint_7",
@@ -90,7 +96,8 @@
                 "Utilizing cyber-forensic tracking to expose and dismantle illicit networks."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Seed disruptive narratives, inject doubt, and forensicly unmask nodes to destabilize hostile networks."
         },
         {
             "id": "darknet_osint_8",
@@ -102,7 +109,8 @@
                 "Using AI-driven analytics to predict enemy tactics and response mechanisms."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Red-team defenses, evade tracking, and crunch AI forecasts to anticipate enemy maneuvers."
         },
         {
             "id": "darknet_osint_9",
@@ -114,7 +122,8 @@
                 "Correlating multiple data leaks to map criminal networks and intelligence assets."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Mine leaks, dissect payloads, and correlate dumps to chart adversary infrastructure."
         },
         {
             "id": "darknet_osint_10",
@@ -126,7 +135,8 @@
                 "Orchestrating psychological influence campaigns to manipulate cybercriminal groups."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Plant faction-splitting narratives, loop disinformation, and steer psychology to bend darknet groups."
         }
     ]
 }

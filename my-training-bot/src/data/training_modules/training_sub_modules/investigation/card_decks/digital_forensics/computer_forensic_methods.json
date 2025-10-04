@@ -16,6 +16,7 @@
                 "Ensure write-blocking to maintain evidence integrity",
                 "Verify hash values to confirm forensic accuracy"
             ],
+            "summaryText": "Image storage with write-blocking and hashes to preserve pristine evidence copies.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Analyze file timestamps and access logs for forensic reconstruction",
                 "Identify hidden partitions and encrypted file containers"
             ],
+            "summaryText": "Combine carving and metadata analysis to resurrect deleted artifacts and context.",
             "duration": 7,
             "difficulty": "Advanced"
         }

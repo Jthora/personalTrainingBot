@@ -18,7 +18,8 @@
                 "Identifying key biases that influence intelligence analysis and decision-making."
             ],
             "duration": "75",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Define core biases, trace their origins, and list the ones that most skew high-stakes analysis."
         },
         {
             "id": "cognitive_bias_2",
@@ -30,7 +31,8 @@
                 "Breaking out of echo chambers using critical questioning techniques."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Expose algorithmic echo chambers, seek dissenting sources, and question assumptions until the loop breaks."
         },
         {
             "id": "cognitive_bias_3",
@@ -42,7 +44,8 @@
                 "Developing mental resilience against first-impression influence techniques."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Spot anchoring cues, reframe narratives, and train yourself to withhold judgment past the first impression."
         },
         {
             "id": "cognitive_bias_4",
@@ -54,7 +57,8 @@
                 "Using mental exercises to assess risk based on data rather than fear-based narratives."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Compare headlines to hard data, run probability checks, and practice risk assessments grounded in stats."
         },
         {
             "id": "cognitive_bias_5",
@@ -66,7 +70,8 @@
                 "Building resilience against social manipulation tactics."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Diagnose groupthink signals, assert independent analysis, and build cultures that welcome dissent."
         },
         {
             "id": "cognitive_bias_6",
@@ -78,7 +83,8 @@
                 "Training critical questioning techniques to challenge authoritative claims."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Scrutinize authority claims, separate expertise from theater, and question power with disciplined rigor."
         },
         {
             "id": "cognitive_bias_7",
@@ -90,7 +96,8 @@
                 "Utilizing counter-messaging tactics to deprogram misinformation."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Track repetition campaigns, interrupt them with factual counters, and reset audiences before lies embed."
         },
         {
             "id": "cognitive_bias_8",
@@ -102,7 +109,8 @@
                 "Using complete datasets to challenge survivorship distortion in media narratives."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Hunt for missing data, surface silent failures, and re-evaluate narratives using complete evidence."
         },
         {
             "id": "cognitive_bias_9",
@@ -114,7 +122,8 @@
                 "Developing mental flexibility to adapt when presented with new evidence."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Check your own certainty, probe conclusions with Socratic tests, and pivot fast when new facts land."
         },
         {
             "id": "cognitive_bias_10",
@@ -126,7 +135,8 @@
                 "Developing self-awareness techniques to maintain cognitive neutrality in analysis."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Apply structured analysis, lean on Bayesian updates, and keep self-awareness high to stay bias-resistant."
         }
     ]
 }

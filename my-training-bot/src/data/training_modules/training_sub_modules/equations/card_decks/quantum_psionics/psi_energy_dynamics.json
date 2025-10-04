@@ -18,6 +18,7 @@
                 "Explore techniques for sensing, directing, and amplifying psi energy through feedback loops: \\[ \\Delta \\mathbf{P} = \\sigma \\mathbf{E}_{\\psi} \\], where \\( \\sigma \\) is psionic conductivity.",
                 "Analyze interactions between psionic fields and electromagnetic phenomena, applying Maxwell-like equations for psi-induced EM modulation."
             ],
+            "summaryText": "Describe psi fields as bioelectromagnetic extensions whose potentials couple with EM systems via feedback modulation.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -30,6 +31,7 @@
                 "Develop methods to modulate biofield intensity and frequency through structured visualization, tuning to Schumann resonance frequencies (7.83 Hz, 14.1 Hz, etc.).",
                 "Study the impact of emotional states on psi energy output, using the equation: \\[ P_{\\psi} = \\alpha \\left( \\frac{d \\mathbf{E}_{\\psi}}{dt} \\right) \\], where \\( \\alpha \\) represents emotional intensity as an amplification coefficient."
             ],
+            "summaryText": "Use breathwork, resonant visualization, and emotional tuning to amplify coherent psi output.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -42,6 +44,7 @@
                 "Study psi effects in experimental settings such as influencing random event generators (REGs) and altering wavefunction probabilities.",
                 "Understand field harmonization and energetic coherence in group settings, applying principles of constructive resonance: \\[ \\sum A_{\\psi} = A_{1} + A_{2} + A_{n} \\]"
             ],
+            "summaryText": "Examine intent-driven Poynting flux shifts, REG anomalies, and group resonance cohesion as psi interaction evidence.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -54,6 +57,7 @@
                 "Analyze coherence effects in heart-brain synchronization, utilizing biofeedback measurements.",
                 "Apply Fourier Transform analysis to study psi wave harmonics in consciousness states."
             ],
+            "summaryText": "Correlate psi biofield resonance with heart-brain coherence metrics and harmonic spectral analysis.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -66,6 +70,7 @@
                 "Investigate bioelectric feedback loops that enhance field density under external psi influences.",
                 "Apply constructive interference methods for field reinforcement: \\[ A_{total} = A_{\\psi,1} + A_{\\psi,2} \\]"
             ],
+            "summaryText": "Build psi shields through standing-wave formation, feedback-densified fields, and constructive interference.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -78,6 +83,7 @@
                 "Analyze interaction with planetary geomagnetic fields, using energy transfer equations in conductive mediums.",
                 "Study the role of crystals and structured materials in amplifying and storing psi energy."
             ],
+            "summaryText": "Harvest environmental psi by tapping vacuum fluctuations, geomagnetic coupling, and crystal amplifiers.",
             "duration": 15,
             "difficulty": "Expert"
         },
@@ -90,6 +96,7 @@
                 "Explore psi-based remote influence techniques, modeled using action-at-a-distance equations.",
                 "Investigate psi coherence across multiple energy sources: \\[ \\Delta P = \\int \\mathbf{E}_{\\psi} \\cdot d \\mathbf{A} \\]"
             ],
+            "summaryText": "Model long-range psi transfer via entangled wave equations, remote action, and flux integrals.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -102,6 +109,7 @@
                 "Examine self-reinforcing psi vortices and their interaction with bioplasma fields.",
                 "Investigate coherence patterns between individual and collective toroidal psi fields."
             ],
+            "summaryText": "Analyze toroidal psi currents, vortex reinforcement, and coherence across individual and group loops.",
             "duration": 18,
             "difficulty": "Expert"
         },
@@ -114,6 +122,7 @@
                 "Investigate psionic extraction of quantum fluctuations through bioelectric modulation.",
                 "Study the potential for psi energy to generate and stabilize localized spacetime distortions."
             ],
+            "summaryText": "Link psi practices to zero-point energy harvesting, bioelectric modulation, and small-scale spacetime shaping.",
             "duration": 20,
             "difficulty": "Expert"
         }

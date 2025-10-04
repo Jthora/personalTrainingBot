@@ -13,7 +13,8 @@
             "description": "Minimizing exposure while peeking around corners in urban combat.",
             "bulletpoints": "Use slow, controlled movements, minimize silhouette exposure, employ angle advantage",
             "duration": "15",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Slice the pie on every corner, inching your muzzle and eye line through angles while keeping your body shielded behind walls and doorframes."
         },
         {
             "id": "urban_move_2",
@@ -21,7 +22,8 @@
             "description": "Clearing stairwells and hallways while maintaining a tactical advantage.",
             "bulletpoints": "Maintain fireteam spacing, control vertical movement, identify ambush points",
             "duration": "20",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Stack your team with tight sectors, lead with guns on threat lanes, and manage vertical slices so stairwells and hallways never become fatal funnels."
         }
     ]
 }

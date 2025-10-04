@@ -13,7 +13,8 @@
             "description": "Understanding the proper grip techniques and stances for effective knife combat.",
             "bulletpoints": "Reverse grip vs. forward grip, defensive stance, mobility and footwork",
             "duration": "10",
-            "difficulty": "Beginner"
+            "difficulty": "Beginner",
+            "summaryText": "Index the blade with either forward or reverse grip, lock your wrist, sink your weight, and glide through footwork triangles so you can launch or defend without telegraphing."
         },
         {
             "id": "knife_2",
@@ -21,7 +22,8 @@
             "description": "Techniques to deflect an incoming knife attack and counter with precision.",
             "bulletpoints": "Parrying techniques, control and counter, quick response drills",
             "duration": "15",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Crash the attacking arm with pick, sweep, or wedge parries, seize control at the wrist, and feed precise counter cuts before the opponent can reset their line."
         }
     ]
 }

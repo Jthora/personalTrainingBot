@@ -13,6 +13,7 @@
                 "Focus on feeling the opponent’s energy rather than brute force",
                 "Use circular hand movements to deflect incoming strikes"
             ],
+            "summaryText": "Roll a single arm to read pressure changes and redirect strikes without muscling through.",
             "duration": 5,
             "difficulty": "Beginner"
         },
@@ -25,6 +26,7 @@
                 "Use light, controlled pressure to manipulate the opponent",
                 "Flow between offense and defense seamlessly"
             ],
+            "summaryText": "Let both arms cycle with soft pressure so counterattacks fire the moment a line opens.",
             "duration": 6,
             "difficulty": "Intermediate"
         }

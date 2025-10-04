@@ -13,6 +13,7 @@
                 "Maintain a slight bend in the knees for better control",
                 "Exaggerate movement for stronger impact"
             ],
+            "summaryText": "Blast the chest hit right on the drop for a crisp dubstep accent.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -25,6 +26,7 @@
                 "Lock joints momentarily for an instant freeze effect",
                 "Focus on exaggerated stops to enhance illusion"
             ],
+            "summaryText": "Snap into robotic locks so every glitch reads like a strobe cut.",
             "duration": 6,
             "difficulty": "Advanced"
         }

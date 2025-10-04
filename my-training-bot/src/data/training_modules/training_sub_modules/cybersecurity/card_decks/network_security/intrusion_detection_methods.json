@@ -12,6 +12,7 @@
             "title": "Signature-Based vs. Anomaly-Based Detection",
             "description": "Understanding the differences between IDS detection methods.",
             "bulletpoints": "SNORT, Suricata, Behavioral Analysis, False Positives",
+            "summaryText": "Compare signature engines with anomaly models so you balance fidelity and noise.",
             "duration": "90",
             "difficulty": "Intermediate"
         },
@@ -20,6 +21,7 @@
             "title": "Deploying an IDS/IPS",
             "description": "Setting up an Intrusion Detection and Prevention System for active monitoring.",
             "bulletpoints": "Host-Based vs. Network-Based IDS, Log Correlation, SIEM Integration",
+            "summaryText": "Architect IDS/IPS coverage across hosts and networks, wiring logs into your SIEM for action.",
             "duration": "120",
             "difficulty": "Intermediate"
         }

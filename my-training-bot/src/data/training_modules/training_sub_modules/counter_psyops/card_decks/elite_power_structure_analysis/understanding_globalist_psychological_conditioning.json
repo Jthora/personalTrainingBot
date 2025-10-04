@@ -18,7 +18,8 @@
                 "Recognizing the difference between persuasion and coercion."
             ],
             "duration": "75",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Outline conditioning origins, show societal embedding, and separate influence from coercion."
         },
         {
             "id": "globalist_psyops_2",
@@ -30,7 +31,8 @@
                 "Understanding the role of controlled opposition in media narratives."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Spot repeating propaganda tropes, highlight subconscious nudges, and note scripted opposition voices."
         },
         {
             "id": "globalist_psyops_3",
@@ -42,7 +44,8 @@
                 "Identifying psychological triggers used in political and corporate messaging."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Connect classical/operant tactics to modern systems, log reinforcement loops, and catalog messaging triggers."
         },
         {
             "id": "globalist_psyops_4",
@@ -54,7 +57,8 @@
                 "Developing strategies to resist fear-based psychological attacks."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Explain fear-control feedback, list staged panic cues, and craft resilience tactics."
         },
         {
             "id": "globalist_psyops_5",
@@ -66,7 +70,8 @@
                 "Recognizing the role of standardized testing in behavioral programming."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Audit classroom narratives, expose anti-critical structures, and critique testing as compliance training."
         },
         {
             "id": "globalist_psyops_6",
@@ -78,7 +83,8 @@
                 "Recognizing the role of manufactured outrage in distraction tactics."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Show how identity hooks weaponize tribes, diagram engineered splits, and track outrage cycles."
         },
         {
             "id": "globalist_psyops_7",
@@ -90,7 +96,8 @@
                 "Developing psychological resilience against mass programming."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Teach spotting dissonance, prescribe mindfulness tools, and build durable mental autonomy."
         },
         {
             "id": "globalist_psyops_8",
@@ -102,7 +109,8 @@
                 "Analyzing the role of censorship and controlled information flows."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Expose algorithmic pre-conditioning, outline credit-score coercion, and map digital chokepoints."
         },
         {
             "id": "globalist_psyops_9",
@@ -114,7 +122,8 @@
                 "Training in cognitive autonomy and intellectual self-defense."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Draft liberating storylines, shift to independent comms, and drill intellectual self-guarding."
         },
         {
             "id": "globalist_psyops_10",
@@ -126,7 +135,8 @@
                 "Training others in psychological self-defense and mass awakening strategies."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Assemble truth networks, share vetted intel safely, and mentor others in cognitive liberation."
         }
     ]
 }

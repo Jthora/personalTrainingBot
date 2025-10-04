@@ -17,6 +17,7 @@
                 "Leveraging decentralized platforms and blockchain for censorship resistance.",
                 "Using offline methods such as dead drops and couriers for high-security ops."
             ],
+            "summaryText": "Master OPSEC, use decentralized channels, and fall back to offline relays when heat is high.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Developing community-based intelligence networks.",
                 "Coordinating autonomous action through decentralized consensus models."
             ],
+            "summaryText": "Build parallel economies, share intel locally, and coordinate via decentralized consensus.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Avoiding biometric tracking and AI-driven profiling.",
                 "Using misinformation tactics to disrupt data collection operations."
             ],
+            "summaryText": "Stay anonymous, dodge biometric profiling, and seed misinfo to jam their surveillance net.",
             "duration": "90",
             "difficulty": "Expert"
         }

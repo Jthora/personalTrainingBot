@@ -12,6 +12,7 @@
             "title": "Open Source Intelligence (OSINT) Gathering",
             "description": "Using publicly available sources for cyber intelligence collection.",
             "bulletpoints": "Social media monitoring, domain research, metadata analysis",
+            "summaryText": "Covers social harvests, infrastructure lookups, and metadata pivots for actionable OSINT.",
             "duration": "30",
             "difficulty": "Intermediate"
         },
@@ -20,6 +21,7 @@
             "title": "Dark Web Monitoring and Analysis",
             "description": "Tracking underground cyber threats and illicit activities.",
             "bulletpoints": "TOR network reconnaissance, marketplace intelligence, malware tracking",
+            "summaryText": "Details TOR recon, market surveillance, and malware tracing to surface hidden threats.",
             "duration": "50",
             "difficulty": "Advanced"
         }

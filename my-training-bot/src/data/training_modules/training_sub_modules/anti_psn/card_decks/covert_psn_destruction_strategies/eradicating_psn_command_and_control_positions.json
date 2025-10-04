@@ -17,6 +17,7 @@
                 "Amplifying their weaknesses to followers causes internal defection.",
                 "Forcing them into paranoia through controlled leaks weakens their strategic effectiveness."
             ],
+            "summaryText": "Spotlight their lies and weaknesses until followers peel away and paranoia blooms.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -29,6 +30,7 @@
                 "Blocking their ability to recruit new enforcers weakens their enforcement capacity.",
                 "Isolating key figures from trusted networks increases their vulnerability."
             ],
+            "summaryText": "Choke their money, manpower, and support channels so leadership withers in isolation.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Pitting them against external threats forces them to expend resources unnecessarily.",
                 "Leaking false accusations among leadership fuels internal betrayal and collapse."
             ],
+            "summaryText": "Stage betrayals and false threats until their chiefs devour each other.",
             "duration": "75",
             "difficulty": "Advanced"
         }

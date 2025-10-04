@@ -19,6 +19,7 @@
                 "Investigate links between dielectric breakdown and mass modulation effects using ion wind suppression techniques.",
                 "Explore potential applications in electrogravitic propulsion and inertial modification."
             ],
+                "summaryText": "Evaluate dielectric lifter experiments and equations behind proposed electrogravitic lift.",
             "duration": 12,
             "difficulty": "Advanced"
         },
@@ -31,6 +32,7 @@
                 "Explore Hall-effect thrusters, which operate via electron drift currents in an applied magnetic field.",
                 "Investigate applications of magnetoplasmadynamic (MPD) thrusters using high-current discharges in plasma flow."
             ],
+                "summaryText": "Leverage Lorentz-force physics underpinning Hall and MPD electromagnetic thrusters.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -44,6 +46,7 @@
                 "Investigate experimental detection methods such as Gravity Probe B and ring laser gyroscopes.",
                 "Explore potential applications in gravitomagnetic propulsion systems."
             ],
+                "summaryText": "Examine frame-dragging theory, detection, and its implications for gravitomagnetic drives.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -56,6 +59,7 @@
                 "Investigate the role of negative energy densities in exotic spacetime configurations.",
                 "Analyze potential uses of Casimir vacuum fluctuations in generating negative mass-energy fields."
             ],
+                "summaryText": "Survey warp metrics requiring negative energy and potential Casimir-based sourcing.",
             "duration": 18,
             "difficulty": "Expert"
         },
@@ -68,6 +72,7 @@
                 "Understand how spin-coupling modifies gravitational interactions and may lead to new propulsion mechanisms.",
                 "Analyze experimental proposals for detecting torsion fields in high-energy astrophysical phenomena."
             ],
+                "summaryText": "Consider torsion-based gravity extensions and their propulsion-oriented spin effects.",
             "duration": 17,
             "difficulty": "Expert"
         },
@@ -80,6 +85,7 @@
                 "Apply Maxwell’s equations to plasma environments in gravitational fields.",
                 "Analyze possible experimental methods for producing localized curvature distortions using high-energy plasma discharges."
             ],
+                "summaryText": "Assess how energetic plasmas might couple to gravity and induce curvature perturbations.",
             "duration": 15,
             "difficulty": "Advanced"
         },
@@ -92,6 +98,7 @@
                 "Study solutions to Einstein’s equations that permit negative energy flux in a vacuum.",
                 "Investigate the connection between exotic matter stability and Alcubierre warp drive feasibility."
             ],
+                "summaryText": "Review negative energy conditions governing exotic matter stability for warp concepts.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -104,6 +111,7 @@
                 "Study experimental attempts to measure Casimir force fluctuations and extract usable energy.",
                 "Explore theoretical models for zero-point energy propulsion."
             ],
+                "summaryText": "Evaluate zero-point energy theories, Casimir experiments, and propulsion proposals.",
             "duration": 13,
             "difficulty": "Expert"
         },
@@ -116,6 +124,7 @@
                 "Analyze possible field configurations that could influence local gravitational gradients.",
                 "Examine experiments utilizing high-voltage capacitors to generate anomalous lift effects."
             ],
+                "summaryText": "Explore electrostatic field arrangements purported to tweak gravitational behavior.",
             "duration": 12,
             "difficulty": "Advanced"
         }

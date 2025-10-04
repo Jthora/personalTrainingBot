@@ -18,7 +18,8 @@
                 "Recognizing public-facing vs. shadow elements within elite circles."
             ],
             "duration": "75",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Sketch the power pyramid, trace influence chains, and contrast visible actors with hidden stewards."
         },
         {
             "id": "elite_hierarchy_2",
@@ -30,7 +31,8 @@
                 "Decoding public narratives shaped by elite-controlled institutions."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Catalog council memberships, infer agenda-setting summits, and align messaging to their talking points."
         },
         {
             "id": "elite_hierarchy_3",
@@ -42,7 +44,8 @@
                 "Identifying how counterintelligence tactics maintain elite secrecy."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Review signature ops, show agency-corporate alliances, and explain secrecy enforcement mechanisms."
         },
         {
             "id": "elite_hierarchy_4",
@@ -54,7 +57,8 @@
                 "Tracing the history of financial control through banking dynasties."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Map central bank levers, connect policy tools to elite gains, and timeline dynasty stewardship."
         },
         {
             "id": "elite_hierarchy_5",
@@ -66,7 +70,8 @@
                 "Tracing royal, corporate, and occult influences in elite lineage."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Document succession frameworks, catalog sustaining assets, and note symbolic lineage binders."
         },
         {
             "id": "elite_hierarchy_6",
@@ -78,7 +83,8 @@
                 "Understanding censorship, suppression tactics, and information warfare."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "List media empires, decode narrative choreography, and catalog suppression tactics."
         },
         {
             "id": "elite_hierarchy_7",
@@ -90,7 +96,8 @@
                 "Understanding corporate lobbying and policy manipulation."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Chart corporate-state overlaps, explain data-driven control, and evidence policy capture via lobbying."
         },
         {
             "id": "elite_hierarchy_8",
@@ -102,7 +109,8 @@
                 "Tracing elite funding sources for ideological control."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Unpack philanthropic fronts, link grants to agenda shaping, and follow money steering activism."
         },
         {
             "id": "elite_hierarchy_9",
@@ -114,7 +122,8 @@
                 "Developing immunity to mass mind control techniques."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "List pacification tactics, track conditioning timelines, and outline personal deprogramming drills."
         },
         {
             "id": "elite_hierarchy_10",
@@ -126,7 +135,8 @@
                 "Creating parallel institutions to bypass elite-controlled structures."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Design local autonomy plans, adopt decentralized financial rails, and launch alternative governance hubs."
         }
     ]
 }

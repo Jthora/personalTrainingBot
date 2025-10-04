@@ -13,6 +13,7 @@
             "title": "Introduction to dApps",
             "description": "Understanding the fundamental differences between traditional apps and dApps.",
             "bulletpoints": "Decentralization vs. centralization, advantages of dApps, common use cases",
+            "summaryText": "Compare centralized apps with dApps so you can explain why decentralization, token incentives, and censorship resistance matter.",
             "duration": "30",
             "difficulty": "Beginner"
         },
@@ -21,6 +22,7 @@
             "title": "Decentralized Backend & Blockchain Integration",
             "description": "How dApps interact with blockchain networks through smart contracts and node providers.",
             "bulletpoints": "Ethereum, Polygon, BSC, RPC endpoints, node providers (Infura, Alchemy)",
+            "summaryText": "Sketch the path from smart contract ABI to RPC calls and managed node providers so frontends can hit multiple chains reliably.",
             "duration": "50",
             "difficulty": "Intermediate"
         },
@@ -29,6 +31,7 @@
             "title": "Decentralized Storage Solutions",
             "description": "Leveraging decentralized file storage systems for dApp data persistence.",
             "bulletpoints": "IPFS, Arweave, Filecoin, comparing centralized vs. decentralized storage",
+            "summaryText": "Evaluate IPFS, Arweave, and Filecoin trade-offs to choose decentralized storage that fits your dApp's permanence and cost needs.",
             "duration": "45",
             "difficulty": "Intermediate"
         }

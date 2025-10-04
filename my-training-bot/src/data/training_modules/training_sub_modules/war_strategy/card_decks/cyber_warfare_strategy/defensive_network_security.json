@@ -12,6 +12,7 @@
             "title": "Threat Detection and Response",
             "description": "Identifying and mitigating cyber threats in real-time.",
             "bulletpoints": "Intrusion detection, SIEM analysis, forensic investigation",
+            "summaryText": "Run layered monitoring that correlates IDS alerts with SIEM dashboards, triages anomalies in minutes, and launches forensic capture to understand and contain attackers before they pivot.",
             "duration": "40",
             "difficulty": "Advanced"
         },
@@ -20,6 +21,7 @@
             "title": "Incident Response Planning",
             "description": "Developing rapid response strategies for cyber incidents.",
             "bulletpoints": "Containment strategies, threat intelligence sharing, rapid remediation",
+            "summaryText": "Keep an updated incident playbook that locks down compromised assets, routes intel to partners, and coordinates remediation waves so services restore quickly with lessons fed into the next cycle.",
             "duration": "45",
             "difficulty": "Advanced"
         }

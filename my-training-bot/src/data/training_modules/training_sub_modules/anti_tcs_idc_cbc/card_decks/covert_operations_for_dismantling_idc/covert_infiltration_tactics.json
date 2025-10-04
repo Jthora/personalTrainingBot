@@ -17,6 +17,7 @@
                 "Behavioral mimicry techniques to blend into target environments.",
                 "Identifying and neutralizing inconsistencies in false identities."
             ],
+            "summaryText": "Craft airtight cover stories, mirror target behavior, and close any identity inconsistencies.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Leveraging human psychology for privilege escalation.",
                 "Understanding deception detection to avoid exposure."
             ],
+            "summaryText": "Exploit cognitive biases, engineer trust for deeper access, and read tells to stay undetected.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Setting up discreet monitoring systems within enemy strongholds.",
                 "Avoiding digital and physical footprint exposure in intelligence operations."
             ],
+            "summaryText": "Harvest intel through subtle cues, covert sensors, and disciplined zero-footprint tradecraft.",
             "duration": "90",
             "difficulty": "Expert"
         }

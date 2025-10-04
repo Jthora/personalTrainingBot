@@ -17,6 +17,7 @@
                 "Recognize common storytelling tropes used to reinforce ideological conditioning.",
                 "Compare news stories, political speeches, and corporate messaging for structural similarities."
             ],
+            "summaryText": "Break narratives into core parts, spot recycled tropes, and compare structures across sources.",
             "duration": "90",
             "difficulty": "Intermediate"
         },
@@ -29,6 +30,7 @@
                 "Recognize subtle linguistic shifts that alter the meaning of events.",
                 "Break down media headlines and political statements for bias and spin."
             ],
+            "summaryText": "Hear the trigger words, notice slanted phrasing, and unpack headlines for spin.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -41,6 +43,7 @@
                 "Expose false oppositions used to distract from the real issues.",
                 "Deconstruct election debates, policy decisions, and media controversies for hidden narratives."
             ],
+            "summaryText": "Check for binary traps, surface excluded options, and audit debates for hidden framing.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -53,6 +56,7 @@
                 "Investigate instances where unverified claims are presented as established fact.",
                 "Apply pattern recognition to detect mass opinion-shaping campaigns."
             ],
+            "summaryText": "Track slogan repetition, call out evidence-free claims, and map broad persuasion pushes.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -65,6 +69,7 @@
                 "Investigate why certain facts are buried deep in reports while others are emphasized.",
                 "Analyze historical narratives for erased or rewritten elements."
             ],
+            "summaryText": "Compare global coverage, ask why facts are buried, and cross-check history for edits.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -77,6 +82,7 @@
                 "Investigate funding sources and affiliations behind mainstream dissent.",
                 "Identify narratives that appear revolutionary but reinforce existing power structures."
             ],
+            "summaryText": "Vet opposition heroes, trace their backing, and expose faux-rebel storylines.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -89,6 +95,7 @@
                 "Identify patterns in media coverage that suggest coordination and pre-planned messaging.",
                 "Track changes in laws, policies, and financial markets surrounding high-profile crises."
             ],
+            "summaryText": "Follow who profits from crises, note coordinated coverage, and link events to policy shifts.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -101,6 +108,7 @@
                 "Recognize symbolic foreshadowing and thematic repetition in media.",
                 "Trace connections between fictional depictions and real-world policy shifts."
             ],
+            "summaryText": "Scan fiction for foreshadowing, decode symbols, and align them with later policy moves.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -113,6 +121,7 @@
                 "Use mindfulness techniques to remain aware of emotional manipulation in messaging.",
                 "Train in logical deconstruction to break down complex propaganda into simple components."
             ],
+            "summaryText": "Cross-check daily, stay mindful of emotional hooks, and practice breaking propaganda into facts.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -125,6 +134,7 @@
                 "Use viral communication techniques to spread counter-narratives effectively.",
                 "Identify key pressure points in mass perception to introduce disruptive insights."
             ],
+            "summaryText": "Build evidence-based counter stories, package them for virality, and target perception pressure points.",
             "duration": "120",
             "difficulty": "Expert"
         }

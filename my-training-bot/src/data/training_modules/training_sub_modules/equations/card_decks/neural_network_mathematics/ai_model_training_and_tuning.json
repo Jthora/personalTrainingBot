@@ -17,6 +17,7 @@
                 "Understand the backpropagation process using the chain rule: \\[ \\frac{\\partial J}{\\partial w} = \\frac{\\partial J}{\\partial a} \\frac{\\partial a}{\\partial z} \\frac{\\partial z}{\\partial w} \\]",
                 "Explore variations such as Stochastic Gradient Descent (SGD) and Adam optimizer: \\[ m_t = \\beta_1 m_{t-1} + (1 - \\beta_1) g_t \\]"
             ],
+            "summaryText": "Iteratively update weights via gradient descent and backprop variants to minimize loss.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Use dropout layers to prevent co-adaptation of neurons: \\[ h^l = f(W^l h^{l-1} + b^l) \\] with random dropout of neurons.",
                 "Perform cross-validation to evaluate model performance on unseen data."
             ],
+            "summaryText": "Blend L1/L2 penalties, dropout, and cross-validation to keep models from overfitting.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Use grid search and random search for hyperparameter selection.",
                 "Explore Bayesian Optimization to model the performance function using Gaussian Processes."
             ],
+            "summaryText": "Search learning rates and other hyperparameters with grid, random, and Bayesian methods to find stable models.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -53,6 +56,7 @@
                 "Learn scale and shift parameters \\( \\gamma, \\beta \\) to maintain model expressivity: \\[ y^{(i)} = \\gamma \\hat{x}^{(i)} + \\beta \\]",
                 "Use batch normalization to accelerate convergence and reduce dependence on initialization."
             ],
+            "summaryText": "Normalize mini-batch activations with learnable scale and shift to stabilize and speed training.",
             "duration": 13,
             "difficulty": "Advanced"
         },
@@ -65,6 +69,7 @@
                 "Use cross-entropy loss for classification problems: \\[ J(\\theta) = - \\sum y_i \\log(\\hat{y}_i) \\]",
                 "Optimize model robustness using hinge loss in support vector machines: \\[ J(\\theta) = \\sum \\max(0, 1 - y_i w^T x_i) \\]"
             ],
+            "summaryText": "Pick loss functions like MSE, cross-entropy, or hinge to align optimization with the task.",
             "duration": 12,
             "difficulty": "Advanced"
         },
@@ -77,6 +82,7 @@
                 "Implement cyclical learning rates to escape local minima.",
                 "Explore optimizers like RMSProp and Adam, which adapt learning rates for each parameter."
             ],
+            "summaryText": "Schedule or adapt learning rates with decay, cycles, or RMSProp/Adam to improve convergence.",
             "duration": 13,
             "difficulty": "Advanced"
         },
@@ -89,6 +95,7 @@
                 "Apply He initialization for ReLU activations: \\[ W \\sim \\mathcal{N}(0, \\frac{2}{n_{in}}) \\]",
                 "Analyze the effects of poor initialization on training stability and convergence."
             ],
+            "summaryText": "Initialize weights with Xavier or He schemes to avoid vanishing or exploding gradients.",
             "duration": 11,
             "difficulty": "Advanced"
         },
@@ -101,6 +108,7 @@
                 "Use feature extraction from convolutional networks for image recognition tasks.",
                 "Transfer knowledge from large datasets to smaller, domain-specific datasets."
             ],
+            "summaryText": "Reuse pretrained representations and fine-tune higher layers to accelerate learning on new domains.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -113,6 +121,7 @@
                 "Use quantization to reduce model precision, improving inference speed.",
                 "Optimize memory and computation requirements for edge AI deployments."
             ],
+            "summaryText": "Prune low-importance weights and quantize parameters to compress models with minimal accuracy loss.",
             "duration": 12,
             "difficulty": "Advanced"
         },
@@ -125,6 +134,7 @@
                 "Train networks to recognize and resist perturbations in input data.",
                 "Develop robust models that generalize well under adversarial conditions."
             ],
+            "summaryText": "Train on FGSM-style perturbations so models withstand adversarial noise and stay robust.",
             "duration": 15,
             "difficulty": "Expert"
         }

@@ -17,6 +17,7 @@
                 "Understanding undercover methods to collect firsthand data.",
                 "Risk assessment and operational security in field investigations."
             ],
+            "summaryText": "Blend OSINT sweeps with undercover intel while hardening op-sec in the field.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -29,6 +30,7 @@
                 "Utilizing encryption and anonymity tools for digital reporting.",
                 "Legal protections and risks associated with exposing trafficking networks."
             ],
+            "summaryText": "Select vetted reporting channels, encrypt everything, and weigh legal shields versus exposure risk.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -41,6 +43,7 @@
                 "Following the financial trail to expose high-level traffickers.",
                 "Coordinating with anti-trafficking task forces and independent operatives."
             ],
+            "summaryText": "Map organized crime ties, chase money trails, and sync strikes with allied task forces.",
             "duration": "90",
             "difficulty": "Expert"
         }

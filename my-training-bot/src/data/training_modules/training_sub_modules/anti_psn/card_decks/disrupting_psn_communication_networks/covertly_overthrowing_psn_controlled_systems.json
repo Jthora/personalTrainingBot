@@ -17,6 +17,7 @@
                 "Exploiting internal rivalries to create power struggles.",
                 "Using infiltration tactics to subtly redirect their operations toward failure."
             ],
+            "summaryText": "Map the command chain for vulnerabilities, stoke existing rivalries into open conflict, then use insiders or influence to steer operations toward costly mistakes that erode their authority.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -29,6 +30,7 @@
                 "Using grassroots education to inoculate communities against PSN rhetoric.",
                 "Leveraging decentralized networks to prevent narrative monopolization."
             ],
+            "summaryText": "Stand up independent channels that contradict their propaganda, educate communities to recognize and reject their tactics, and build decentralized info networks that can't be captured or controlled by any single entity.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Building alliances that reinforce independent thought and resistance.",
                 "Leveraging technology to prevent mass influence and psychological subjugation."
             ],
+            "summaryText": "Engineer governance models that distribute power so no single actor can dominate, cultivate alliances grounded in critical thinking and autonomy, and deploy tech that shields against mass manipulation and surveillance.",
             "duration": "90",
             "difficulty": "Expert"
         }

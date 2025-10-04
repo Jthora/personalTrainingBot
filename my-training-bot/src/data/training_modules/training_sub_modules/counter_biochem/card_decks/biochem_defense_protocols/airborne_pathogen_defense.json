@@ -14,7 +14,8 @@
             "description": "Understanding and using proper respirators and filtration systems to prevent inhalation exposure.",
             "bulletpoints": "N95 vs. P100, full-face respirators, SCBA systems",
             "duration": "8",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Match respirators to threat levels, test seals, and rotate filters so you never breathe unfiltered aerosols in contaminated zones."
         },
         {
             "id": "pathogen_2",
@@ -22,7 +23,8 @@
             "description": "Utilizing air purification and containment methods to prevent pathogen spread.",
             "bulletpoints": "HEPA filtration, UV light sterilization, airlock procedures",
             "duration": "10",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Layer HEPA stacks, UV kill zones, and tight airlock discipline to choke airborne pathogens before they migrate between spaces."
         },
         {
             "id": "pathogen_3",
@@ -30,7 +32,8 @@
             "description": "Techniques for identifying airborne biological threats in real time.",
             "bulletpoints": "Portable air samplers, biotoxin detection strips, environmental monitoring",
             "duration": "12",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Deploy samplers, strips, and real-time monitors to flag pathogen spikes fast enough to trigger containment protocols."
         }
     ]
 }

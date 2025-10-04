@@ -18,7 +18,8 @@
                 "Legal and ethical considerations in forensic analysis."
             ],
             "duration": "60",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Frame threat types, outline the forensic toolkit, and stress ethical guardrails before investigations."
         },
         {
             "id": "misinfo_forensics_2",
@@ -30,7 +31,8 @@
                 "Analyzing pattern recognition in misinformation narratives."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Spot manipulative storytelling, dissect language cues, and catalog repeated narrative patterns."
         },
         {
             "id": "misinfo_forensics_3",
@@ -42,7 +44,8 @@
                 "Reverse-engineering manipulated content through forensic traceability."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Pull EXIF data, corroborate timestamps with OSINT, and rebuild edit trails to expose tampering."
         },
         {
             "id": "misinfo_forensics_4",
@@ -54,7 +57,8 @@
                 "Using forensic software to verify media authenticity."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Scan media for deepfake artifacts, probe text cadence for synthetic tells, and confirm anomalies with forensic suites."
         },
         {
             "id": "misinfo_forensics_5",
@@ -66,7 +70,8 @@
                 "Assessing institutional credibility and media bias."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Triangulate claims across outlets, log coordinated release timing, and grade source bias."
         },
         {
             "id": "misinfo_forensics_6",
@@ -78,7 +83,8 @@
                 "Mapping coordinated botnet misinformation campaigns."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Flag robotic posting rhythms, track inorganic virality, and chart linked bot clusters."
         },
         {
             "id": "misinfo_forensics_7",
@@ -90,7 +96,8 @@
                 "Analyzing propaganda dissemination networks."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Layer OSINT breadcrumbs, follow money trails, and map sponsor-driven distribution trees."
         },
         {
             "id": "misinfo_forensics_8",
@@ -102,7 +109,8 @@
                 "Breaking down perception manipulation tactics."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Pair exploited biases to messaging hooks, decode framing moves, and catalog emotional manipulation levers."
         },
         {
             "id": "misinfo_forensics_9",
@@ -114,7 +122,8 @@
                 "Developing counter-misinformation strategies based on case insights."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Review landmark campaigns, rehearse forensic playbooks on new cases, and harvest defensive lessons learned."
         },
         {
             "id": "misinfo_forensics_10",
@@ -126,7 +135,8 @@
                 "Building AI-driven misinformation detection systems."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Design fast rebuttal pipelines, craft resilient counter-messaging, and prototype detection automations."
         }
     ]
 }

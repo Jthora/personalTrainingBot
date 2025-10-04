@@ -16,6 +16,7 @@
                 "Use framing (shaping how information is presented) and priming (subconscious influence) to steer perception and decision-making",
                 "Leverage psychological motivators like fear, obligation, and guilt to increase compliance and reduce resistance"
             ],
+            "summaryText": "Blend social engineering, framing, and emotional levers to press targets into desired choices.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Exploit cognitive biases, including confirmation bias (favoring information that aligns with existing beliefs) and bandwagon effect (influencing behavior through social proof), to manipulate adversarial groups",
                 "Deploy misinformation (false or misleading information) and disinformation (deliberately deceptive content) to undermine opponents and control narratives"
             ],
+            "summaryText": "Layer propaganda loops, leverage bias shortcuts, and seed disinformation to fracture enemy narratives.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -40,6 +42,7 @@
                 "Use media manipulation tactics such as selective reporting, false attribution, and staged events to control information flow",
                 "Apply subliminal messaging (hidden persuasive cues) and neuro-linguistic programming (NLP) (language-based influence) to shape perception at a subconscious level"
             ],
+            "summaryText": "Craft emotionally charged narratives, steer media optics, and slip in subliminal cues to steer perception.",
             "duration": 7,
             "difficulty": "Expert"
         },
@@ -52,6 +55,7 @@
                 "Use moral disengagement techniques (justifying unethical actions) to radicalize individuals and encourage ideological commitment",
                 "Implement identity reinforcement strategies, such as in-group favoritism and out-group demonization, to strengthen group cohesion and create division"
             ],
+            "summaryText": "Exploit groupthink, moral disengagement, and identity reinforcement to mobilize crowds around your agenda.",
             "duration": 8,
             "difficulty": "Advanced"
         },
@@ -64,6 +68,7 @@
                 "Use emotional exhaustion tactics such as relentless fear, uncertainty, and doubt (FUD) campaigns to wear down adversarial resolve",
                 "Exploit information overload (flooding adversaries with conflicting data) to induce confusion and paralysis in decision-making"
             ],
+            "summaryText": "Combine active measures, sustained FUD, and data deluges to break adversary focus and cohesion.",
             "duration": 9,
             "difficulty": "Expert"
         }

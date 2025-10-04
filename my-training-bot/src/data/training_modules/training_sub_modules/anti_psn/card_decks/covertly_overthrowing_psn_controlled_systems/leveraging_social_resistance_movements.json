@@ -17,6 +17,7 @@
                 "Creating overlapping networks of resistance cells that operate independently.",
                 "Using encrypted communications to coordinate actions securely."
             ],
+            "summaryText": "Seed leaderless cells, layer redundant networks, and coordinate only through hardened channels.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -29,6 +30,7 @@
                 "Building alternative economic systems that bypass traditional institutions.",
                 "Disrupting PSN revenue streams by organizing coordinated boycotts."
             ],
+            "summaryText": "Drain their banks, spin up parallel economies, and starve every PSN revenue tap.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -41,6 +43,7 @@
                 "Building self-sufficient communities that reject centralized authority.",
                 "Developing digital governance models that resist external control."
             ],
+            "summaryText": "Stand up autonomous councils, resilient communities, and tamper-proof digital governance.",
             "duration": "90",
             "difficulty": "Expert"
         }

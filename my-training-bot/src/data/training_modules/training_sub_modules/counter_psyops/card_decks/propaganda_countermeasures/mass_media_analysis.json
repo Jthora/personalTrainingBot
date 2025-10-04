@@ -17,6 +17,7 @@
                 "Analyze financial and political ties influencing editorial decisions.",
                 "Cross-check sources to detect corporate media alignment with state narratives."
             ],
+            "summaryText": "Chart conglomerate ownership, follow money-pressure, and cross-check for state-media sync.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Compare coverage across politically opposed outlets for discrepancies.",
                 "Recognize omission of key details and one-sided reporting patterns."
             ],
+            "summaryText": "Dissect framing language, juxtapose rival outlets, and flag omission-heavy pieces.",
             "duration": "75",
             "difficulty": "Intermediate"
         },
@@ -41,6 +43,7 @@
                 "Use metadata and image analysis tools to verify authenticity.",
                 "Identify the hallmarks of AI-generated or bot-amplified news."
             ],
+            "summaryText": "Verify claims with independent digs, probe metadata, and spot synthetic or bot-boosted items.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -53,6 +56,7 @@
                 "Identify government or corporate beneficiaries of crisis narratives.",
                 "Examine historical crisis media coverage for pattern recognition."
             ],
+            "summaryText": "Time crisis messaging, note who profits, and compare with past agenda-driving events.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -65,6 +69,7 @@
                 "Expose polling biases and survey question manipulation techniques.",
                 "Analyze economic and crime statistics for selective reporting patterns."
             ],
+            "summaryText": "Decode skewed charts, audit polls for bias, and review stats for cherry-picking.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -77,6 +82,7 @@
                 "Use archive tools to identify coordinated phrase deployments over time.",
                 "Track government press releases and corporate PR sources influencing narratives."
             ],
+            "summaryText": "Scan outlets for copy-paste scripts, mine archives for phrasing waves, and tie messaging to PR feeds.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -89,6 +95,7 @@
                 "Recognize overuse of fear-based reporting to condition public compliance.",
                 "Counteract repetitive programming through active cognitive rewiring exercises."
             ],
+            "summaryText": "Understand repetition effects, call out fear cycles, and retrain thinking to break loops.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -101,6 +108,7 @@
                 "Identify bot-driven engagement designed to fabricate trends.",
                 "Use shadowbanning and suppression pattern analysis to detect information control."
             ],
+            "summaryText": "Audit algorithm bias, expose bot-swell trends, and watch for suppression fingerprints.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -113,6 +121,7 @@
                 "Track predictive programming elements linked to real-world policy changes.",
                 "Distinguish organic storytelling from government-backed narrative seeding."
             ],
+            "summaryText": "Spot subliminal cues, match scripts to policy shifts, and separate natural art from seeded propaganda.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -125,6 +134,7 @@
                 "Utilize open-source intelligence (OSINT) tools to verify claims in real-time.",
                 "Develop a network of trusted researchers and analysts for information sharing."
             ],
+            "summaryText": "Build rigorous cross-check workflows, leverage OSINT live, and collaborate with trusted analysts.",
             "duration": "120",
             "difficulty": "Expert"
         }

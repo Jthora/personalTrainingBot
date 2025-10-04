@@ -14,7 +14,8 @@
             "description": "Emergency procedures for handling sudden pathogen outbreaks or bioweapon releases.",
             "bulletpoints": "First responder coordination, decontamination drills, isolation protocols",
             "duration": "12",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Spool emergency teams, lock down perimeters, and launch decon drills so outbreaks get boxed in before they spread."
         },
         {
             "id": "containment_2",
@@ -22,7 +23,8 @@
             "description": "Setting up field containment zones and temporary biohazard response stations.",
             "bulletpoints": "Mobile quarantine tents, rapid diagnostic stations, emergency airlocks",
             "duration": "10",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Roll out mobile tents, diagnostics, and airlocks to stand up containment hubs wherever the hot zone pops."
         },
         {
             "id": "containment_3",
@@ -30,7 +32,8 @@
             "description": "Identifying and neutralizing different delivery methods used in bioterrorism.",
             "bulletpoints": "Aerosolized dispersal, water supply contamination, foodborne pathogen mitigation",
             "duration": "12",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Trace aerosol, water, or food vectors fast and deploy neutralizers so the delivery chain collapses."
         }
     ]
 }

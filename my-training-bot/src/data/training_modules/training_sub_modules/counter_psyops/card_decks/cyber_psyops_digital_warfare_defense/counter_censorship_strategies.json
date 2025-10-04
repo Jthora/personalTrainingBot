@@ -17,7 +17,8 @@
                 "Using monitoring tools to track content suppression patterns."
             ],
             "duration": "60",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Spot shadowbans, study engagement throttling, and log suppression patterns so algorithmic silencing becomes visible."
         },
         {
             "id": "counter_censorship_2",
@@ -29,7 +30,8 @@
                 "Adapting content formatting to bypass automated filters."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Layer obfuscated phrasing, shift to resilient platforms, and tweak formatting so AI filters fail while your message stays clear."
         },
         {
             "id": "counter_censorship_3",
@@ -41,7 +43,8 @@
                 "Deploying resilient data storage mechanisms on censorship-resistant networks."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Anchor comms on decentralized rails, encrypt peer relays, and store data redundantly so censors lose leverage."
         },
         {
             "id": "counter_censorship_4",
@@ -53,7 +56,8 @@
                 "Deploying mesh networks for off-grid communication."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Rotate VPNs, encrypt traffic, and spin up mesh fallbacks to keep channels open through network-level blocks."
         },
         {
             "id": "counter_censorship_5",
@@ -65,7 +69,8 @@
                 "Masking user identity with anonymous routing methods."
             ],
             "duration": "60",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Mask metadata with encryption, hide payloads via steganography, and anonymize routes to frustrate trackers."
         },
         {
             "id": "counter_censorship_6",
@@ -77,7 +82,8 @@
                 "Mobilizing decentralized communities to resist narrative control."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Expose suppression publicly, use humor as camouflage, and rally communities so narrative control backfires."
         },
         {
             "id": "counter_censorship_7",
@@ -89,7 +95,8 @@
                 "Testing content variations to find weaknesses in suppression mechanisms."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Reverse engineer removal patterns, craft adversarial tweaks, and iterate tests until filters relent."
         },
         {
             "id": "counter_censorship_8",
@@ -101,7 +108,8 @@
                 "Developing offline distribution methods for information resilience."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Mirror critical assets, verify via crowds, and prepare offline drops so information survives suppression."
         },
         {
             "id": "counter_censorship_9",
@@ -113,7 +121,8 @@
                 "Documenting and reporting unlawful suppression to relevant authorities."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Invoke speech protections, leverage cross-border statutes, and escalate evidence to challenge unlawful censorship."
         },
         {
             "id": "counter_censorship_10",
@@ -125,7 +134,8 @@
                 "Developing adaptive response tactics to changing censorship tactics."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Run red-team drills, stress-test countermeasures, and adapt playbooks so suppression scenarios are met preemptively."
         }
     ]
 }

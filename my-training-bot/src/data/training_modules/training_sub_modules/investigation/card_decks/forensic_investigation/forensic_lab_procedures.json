@@ -16,6 +16,7 @@
                 "Analyze glass and paint fragments for source determination",
                 "Test for gunshot residue on suspects and clothing"
             ],
+            "summaryText": "Inspect trace evidence microscopically to tie fibers, residue, and fragments to sources.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Analyze blood alcohol levels and poisoning indicators",
                 "Correlate toxicology findings with cause of death analysis"
             ],
+            "summaryText": "Run GC/LC-MS panels to link toxicology results with cause-of-death narratives.",
             "duration": 7,
             "difficulty": "Advanced"
         }

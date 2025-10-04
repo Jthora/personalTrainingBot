@@ -18,6 +18,7 @@
                 "Utilize metadata analysis on leaked documents for deeper insights",
                 "Leverage public records, domain lookups, and WHOIS searches for entity tracking"
             ],
+            "summaryText": "Exploit power searches, social feeds, metadata, and registries while vetting every open source lead.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -32,6 +33,7 @@
                 "Apply tradecraft techniques to protect identities and maintain secrecy",
                 "Establish rapport and gain access to insider information"
             ],
+            "summaryText": "Cultivate assets, draw intel with subtle psychology, and guard both sides with tight tradecraft.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -46,6 +48,7 @@
                 "Decrypt and analyze encrypted communications",
                 "Employ data packet analysis techniques for cyber threat intelligence"
             ],
+            "summaryText": "Capture global signals, decode covert chatter, and dissect packets for hidden ops.",
             "duration": 8,
             "difficulty": "Expert"
         },
@@ -60,6 +63,7 @@
                 "Employ AI-assisted image recognition for anomaly detection",
                 "Use thermal and infrared imaging for nighttime and obscured environments"
             ],
+            "summaryText": "Fuse satellite views, metadata, and AI vision to map shifts and hidden assets.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -74,6 +78,7 @@
                 "Detect and analyze environmental changes for WMD detection",
                 "Leverage hyperspectral imaging for material composition analysis"
             ],
+            "summaryText": "Measure signatures across spectra to expose covert comms, WMD cues, and hidden facilities.",
             "duration": 9,
             "difficulty": "Expert"
         },
@@ -88,6 +93,7 @@
                 "Track cryptocurrency transactions for illicit financial activities",
                 "Leverage botnet monitoring to identify coordinated cyberattacks"
             ],
+            "summaryText": "Harvest intel from dark nets, bait adversaries, and link malware and finances to operators.",
             "duration": 8,
             "difficulty": "Advanced"
         },
@@ -102,6 +108,7 @@
                 "Detect military movements through geospatial pattern analysis",
                 "Employ crowdsource mapping techniques for real-time situational awareness"
             ],
+            "summaryText": "Blend GPS crumbs, 3D terrain, and social overlays to pinpoint movements in real time.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -116,6 +123,7 @@
                 "Use AI-driven financial forensics for fraud detection",
                 "Identify economic indicators for intelligence on national stability"
             ],
+            "summaryText": "Trace dirty money across banks, shells, and crypto while reading macroeconomic signals.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -130,6 +138,7 @@
                 "Use geotagged posts to track movements and events",
                 "Detect coordinated disinformation campaigns"
             ],
+            "summaryText": "Mine social streams for sentiment, radicalization paths, influencers, and staged campaigns.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -144,6 +153,7 @@
                 "Identify emerging health crises through patient data trends",
                 "Assess national healthcare infrastructure for strategic planning"
             ],
+            "summaryText": "Watch bio data, supply chains, and research cues to forecast health security shocks.",
             "duration": 8,
             "difficulty": "Expert"
         }

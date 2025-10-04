@@ -13,6 +13,7 @@
                 "Lean forward and balance using your head",
                 "Keep legs tucked for better control"
             ],
+            "summaryText": "Lock into the baby freeze by bracing elbow, head, and tucked legs together.",
             "duration": 5,
             "difficulty": "Beginner"
         },
@@ -25,6 +26,7 @@
                 "Engage core muscles to hold position",
                 "Use opposite leg to balance and create a dynamic shape"
             ],
+            "summaryText": "Drive core tension while balancing on one shoulder for a sharp power freeze.",
             "duration": 7,
             "difficulty": "Advanced"
         }

@@ -18,7 +18,8 @@
                 "Understanding the interplay between digital warfare and psychological operations."
             ],
             "duration": "75",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Map actor motives, catalog attack vectors, and study psyops interplay to frame the cyber battlefield."
         },
         {
             "id": "cyber_warfare_2",
@@ -30,7 +31,8 @@
                 "Hardening systems against remote exploits and intrusion attempts."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Enforce zero trust, layer encryption, and harden endpoints so intrusion attempts stall out."
         },
         {
             "id": "cyber_warfare_3",
@@ -42,7 +44,8 @@
                 "Developing cyber countermeasures to neutralize digital threats."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Probe adversary systems ethically, gather intel, and prep counterstrikes that neutralize threats."
         },
         {
             "id": "cyber_warfare_4",
@@ -54,7 +57,8 @@
                 "Developing adversarial machine learning techniques to disrupt hostile AI models."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Detect AI-driven patterns, deploy defensive models, and weaponize adversarial ML to blunt hostile automation."
         },
         {
             "id": "cyber_warfare_5",
@@ -66,7 +70,8 @@
                 "Training individuals and teams to maintain operational security under attack."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Draft contingencies, build redundancy, and drill teams so operations endure sustained assaults."
         },
         {
             "id": "cyber_warfare_6",
@@ -78,7 +83,8 @@
                 "Conducting cyber intelligence operations to gather adversarial data."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Trace footprints, foil surveillance, and run counterintel ops that expose infiltrators."
         },
         {
             "id": "cyber_warfare_7",
@@ -90,7 +96,8 @@
                 "Using digital takedown strategies to dismantle adversarial networks."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Spot hostile activity, deploy deception, and execute takedowns to collapse enemy operations."
         },
         {
             "id": "cyber_warfare_8",
@@ -102,7 +109,8 @@
                 "Hardening peer-to-peer networks against Sybil attacks and data poisoning."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Secure smart contracts, guard against crypto attacks, and shield peer networks from Sybil and poisoning attempts."
         },
         {
             "id": "cyber_warfare_9",
@@ -114,7 +122,8 @@
                 "Deploying resilience-building strategies to withstand cyber-psychological assaults."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Expose destabilizing narratives, counter demoralization, and reinforce psychological resilience online."
         },
         {
             "id": "cyber_warfare_10",
@@ -126,7 +135,8 @@
                 "Conducting live cyber war games to test resilience and response efficiency."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Run full-spectrum war games where Red probes and Blue defends so teams sharpen real-world readiness."
         }
     ]
 }

@@ -18,6 +18,7 @@
                 "Analyze the gravitational time dilation effect from general relativity: \\[ \\Delta t' = \\Delta t \\sqrt{1 - \\frac{2GM}{rc^2}} \\], where \\( M \\) is mass and \\( r \\) is radial distance.",
                 "Explore experimental evidence of time dilation using atomic clocks on satellites and high-speed jets."
             ],
+            "summaryText": "Apply special and general relativity equations to quantify observed time dilation in gravity wells and high speeds.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -30,6 +31,7 @@
                 "Study the impact of electromagnetic pulses on time synchronization through modified Maxwell equations.",
                 "Explore experimental models for time-loop stabilization and causality control using closed timelike curves (CTCs): \\[ g_{\\mu\\nu} x^\\mu x^\\nu < 0 \\]"
             ],
+            "summaryText": "Model engineered fields that skew local time rates, synchronization, and potential CTC stabilization.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -42,6 +44,7 @@
                 "Study how harmonic waveforms modulate time distortion: \\[ T' = T_0 e^{i \\omega t} \\], linking time perception with vibrational states.",
                 "Analyze practical applications of time-frequency modulation in altering consciousness states and human perception of time."
             ],
+            "summaryText": "Tune resonant frequencies to reshape temporal coherence and subjective time experience.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -54,6 +57,7 @@
                 "Explore potential violations of causality from tachyonic signals using Feynman-Stueckelberg interpretation.",
                 "Analyze experimental searches for superluminal particles and their implications on time travel."
             ],
+            "summaryText": "Examine tachyon models for superluminal influence and the causality puzzles they raise.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -66,6 +70,7 @@
                 "Explore the Boltzmann entropy equation and how increasing entropy drives the arrow of time.",
                 "Investigate potential mechanisms for entropy reversal in closed systems using quantum coherence states."
             ],
+            "summaryText": "Relate entropy growth to temporal direction while assessing speculative reversal mechanisms.",
             "duration": 14,
             "difficulty": "Advanced"
         },
@@ -78,6 +83,7 @@
                 "Examine the concept of virtual particles influencing micro-time fluctuations in vacuum states.",
                 "Explore experimental techniques for detecting quantum fluctuations in time intervals."
             ],
+            "summaryText": "Discuss time–energy uncertainty and efforts to observe vacuum-induced temporal jitter.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -90,6 +96,7 @@
                 "Analyze Gödel’s rotating universe as a solution permitting closed timelike loops.",
                 "Explore logical paradoxes such as the bootstrap paradox and grandfather paradox."
             ],
+            "summaryText": "Evaluate CTC solutions and the paradoxes they introduce for temporal causality.",
             "duration": 18,
             "difficulty": "Expert"
         },
@@ -102,6 +109,7 @@
                 "Explore experimental realizations of discrete time crystals (DTCs) in Bose-Einstein condensates.",
                 "Investigate possible applications of time crystals for stable oscillatory time loops."
             ],
+            "summaryText": "Study matter phases that oscillate in time and consider their use in persistent temporal patterns.",
             "duration": 18,
             "difficulty": "Expert"
         },
@@ -114,6 +122,7 @@
                 "Analyze how LIGO detects tiny variations in spacetime curvature affecting time measurement.",
                 "Explore potential applications in temporal synchronization using gravitational wave detectors."
             ],
+            "summaryText": "Assess how gravitational waves modulate clock rates and enable precision synchronization research.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -126,6 +135,7 @@
                 "Analyze potential artificial time-field stabilization methods using resonance feedback control.",
                 "Investigate practical applications for real-time manipulation of micro-time distortions."
             ],
+            "summaryText": "Engineer electromagnetic and feedback-based techniques to stabilize localized time-field manipulations.",
             "duration": 20,
             "difficulty": "Expert"
         }

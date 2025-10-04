@@ -16,6 +16,7 @@
                 "Adjust pace to match the target’s movements",
                 "Employ counter-surveillance tactics to detect suspicion"
             ],
+            "summaryText": "Track alone by blending with surroundings, matching pace, and spotting counter-surveillance cues.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Communicate non-verbally to coordinate movements",
                 "Use relay points and choke points for optimal coverage"
             ],
+            "summaryText": "Coordinate rotating handlers with silent signals and planned relay positions for seamless coverage.",
             "duration": 7,
             "difficulty": "Advanced"
         }

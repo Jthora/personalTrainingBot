@@ -18,7 +18,8 @@
                 "Understanding the role of controlled opposition in narrative reinforcement."
             ],
             "duration": "75",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Map story archetypes, surface hero-villain casting, and flag planted opposition within scripts."
         },
         {
             "id": "narrative_pattern_2",
@@ -30,7 +31,8 @@
                 "Recognizing repetition as a tool for subconscious reinforcement."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Dissect loaded language, log euphemistic rebranding, and monitor mantra-like repetition cycles."
         },
         {
             "id": "narrative_pattern_3",
@@ -42,7 +44,8 @@
                 "Recognizing coordinated talking points across multiple platforms."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Align event timelines with coverage, tag canned talking points, and expose synchronized messaging blasts."
         },
         {
             "id": "narrative_pattern_4",
@@ -54,7 +57,8 @@
                 "Tracking agenda-driven messaging embedded in popular culture."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Scan fiction for future scripts, chart priming cues, and archive agenda-laden cultural drops."
         },
         {
             "id": "narrative_pattern_5",
@@ -66,7 +70,8 @@
                 "Tracking recycled personas appearing in multiple crisis events."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Audit crisis theater tells, cross-check testimony for contradictions, and catalog recurring actor profiles."
         },
         {
             "id": "narrative_pattern_6",
@@ -78,7 +83,8 @@
                 "Identifying wedge issues used to manufacture division and hostility."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Spot binary traps, explain compliance engineering, and list wedge issues fueling fracture."
         },
         {
             "id": "narrative_pattern_7",
@@ -90,7 +96,8 @@
                 "Utilizing counter-narratives to reframe perceptions."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Catch first-hit anchors, log initial framing devices, and deploy rebuttals that reset the baseline."
         },
         {
             "id": "narrative_pattern_8",
@@ -102,7 +109,8 @@
                 "Analyzing crisis communication templates used across different events."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Decode vague official wording, trace comms contractors, and compare templated response playbooks."
         },
         {
             "id": "narrative_pattern_9",
@@ -114,7 +122,8 @@
                 "Leveraging memetics and viral content to disrupt PsyOp campaigns."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Engineer contradiction reveals, mobilize swarm rebuttals, and weaponize viral satire to derail scripts."
         },
         {
             "id": "narrative_pattern_10",
@@ -126,7 +135,8 @@
                 "Correlating intelligence reports with mass media coverage for discrepancies."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Monitor sentiment curves, fuse metadata-driven maps, and contrast intel briefs with public storylines."
         }
     ]
 }

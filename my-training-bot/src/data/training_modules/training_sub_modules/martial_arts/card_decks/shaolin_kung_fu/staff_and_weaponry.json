@@ -13,6 +13,7 @@
                 "Practice switching hand positions smoothly",
                 "Use wrist movement to generate momentum"
             ],
+            "summaryText": "Spin the staff with relaxed control, quick hand switches, and wrist-driven momentum.",
             "duration": 5,
             "difficulty": "Beginner"
         },
@@ -25,6 +26,7 @@
                 "Maintain a fluid transition between strikes",
                 "Use body rotation to generate additional power"
             ],
+            "summaryText": "Let the broadsword edge flow through sweeping cuts powered by whole-body rotation.",
             "duration": 6,
             "difficulty": "Intermediate"
         }

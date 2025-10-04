@@ -16,6 +16,7 @@
                 "Align the shield’s frequency to deflect targeted energy rather than absorbing it.",
                 "Use reinforcement techniques to prevent external breaches and maintain stability."
             ],
+            "summaryText": "Visualize the mirrored shell, tune its frequency to deflect, and reinforce it until it never cracks.",
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -28,6 +29,7 @@
                 "Project an energetic mirror to return the force to its origin without absorbing it.",
                 "Adjust shield intensity based on the attacker’s energy strength to maximize deflection."
             ],
+            "summaryText": "Track where the hit is coming from, raise the mirror, and send the force back untouched.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -40,6 +42,7 @@
                 "Use energy diffusion techniques to scatter your vibrational signature across multiple points.",
                 "Deploy a frequency cloak that prevents psychic detection or remote viewing."
             ],
+            "summaryText": "Blend your aura into the surroundings, diffuse your signature, and cloak frequency to evade trackers.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -52,6 +55,7 @@
                 "Use frequency blending to match surrounding energy, rendering yourself undetectable.",
                 "Integrate shifting techniques to remain dynamically invisible in energetic combat."
             ],
+            "summaryText": "Modulate vibration, match the environment, and keep shifting so hostile senses slide past you.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -64,6 +68,7 @@
                 "Program the shield to repel specific energy signatures, preventing future infiltration.",
                 "Enhance the reflective layer with elemental forces such as fire or plasma-based energy fields."
             ],
+            "summaryText": "Form a repulsion bubble, program it against specific signatures, and fuel it with elemental force.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -76,6 +81,7 @@
                 "Encode shields with non-linear feedback loops to scramble tracking attempts.",
                 "Use temporal displacement techniques to delay attacks before neutralizing them."
             ],
+            "summaryText": "Fracture the attack across dimensions, scramble the feedback, and delay it out of usefulness.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -88,6 +94,7 @@
                 "Create multi-tiered defensive layers that redirect incoming forces before they impact.",
                 "Use light-bending visualization methods to distort hostile perception fields."
             ],
+            "summaryText": "Stack prismatic layers that bend and redirect hostile waves before they ever reach you.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -100,6 +107,7 @@
                 "Use oscillating energy pulses to shift between multiple signature points.",
                 "Deploy phantom constructs that mimic your energy field and lead enemies astray."
             ],
+            "summaryText": "Spin up decoy signatures and phantom constructs so attackers chase ghosts instead of you.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -112,6 +120,7 @@
                 "Use harmonic resonance to shift malicious energy into constructive frequency states.",
                 "Redirect absorbed energy into external etheric systems for passive shielding boosts."
             ],
+            "summaryText": "Absorb the hit, transmute it through resonance, and send it back as neutral or helpful force.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -124,6 +133,7 @@
                 "Use wave pattern amplification to extend shield coverage across wider areas.",
                 "Employ controlled oscillations to destabilize persistent energy attacks."
             ],
+            "summaryText": "Launch high-frequency ripples that dissolve interference and push waves of protection outward.",
             "duration": "90",
             "difficulty": "Expert"
         }

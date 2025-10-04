@@ -17,6 +17,7 @@
                 "Using compartmentalization techniques to prevent identity correlation.",
                 "How to maintain operational security (OPSEC) across different accounts."
             ],
+            "summaryText": "Describes metadata awareness, compartmentalized personas, and cross-account OPSEC to sever AI linking.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Using adversarial techniques to fool AI-based facial and voice recognition.",
                 "How AI extracts behavioral biometrics from typing, speech, and movement."
             ],
+            "summaryText": "Covers evasion of facial/voice nets, adversarial obfuscation, and masking behavioral biometrics.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Using offline encryption tools to protect private communications.",
                 "How to create digital identities that are resistant to AI profiling."
             ],
+            "summaryText": "Focuses on decentralized tooling, offline encryption, and crafting AI-resistant persona frameworks.",
             "duration": "90",
             "difficulty": "Expert"
         }

@@ -25,18 +25,34 @@ class CardDataLoader {
     async loadTrainingModules(onProgress: () => void): Promise<TrainingModule[]> {
         const trainingModules: TrainingModule[] = [];
 
-        for (const moduleId in modulePaths) {
+        const moduleKeys = Object.keys(modulePaths) as Array<keyof typeof modulePaths>;
+
+        for (const moduleKey of moduleKeys) {
+            const moduleLoader = modulePaths[moduleKey];
+            const moduleId = moduleKey as string;
             try {
-                const moduleData = await modulePaths[moduleId]();
+                const moduleData = await moduleLoader();
                 const subModules: TrainingSubModule[] = await Promise.all(
                     moduleData.submodules.map(async (subModuleId: string) => {
                         try {
-                            const subModuleData = await subModulePaths[`${moduleId}_${subModuleId}`]();
+                            const subModuleKey = `${moduleId}_${subModuleId}` as keyof typeof subModulePaths;
+                            const subModuleLoader = subModulePaths[subModuleKey];
+                            if (!subModuleLoader) {
+                                console.warn(`No subModule loader found for ${moduleId}_${subModuleId}`);
+                                return this.createFallbackSubModule(subModuleId);
+                            }
+                            const subModuleData = await subModuleLoader();
 
                             const cardDecks: CardDeck[] = await Promise.all(
                                 subModuleData.cardDecks.map(async (deckId: string) => {
                                     try {
-                                        const deckData = await cardDeckPaths[`${moduleId}_${subModuleId}_${deckId}`]();
+                                        const deckKey = `${moduleId}_${subModuleId}_${deckId}` as keyof typeof cardDeckPaths;
+                                        const deckLoader = cardDeckPaths[deckKey];
+                                        if (!deckLoader) {
+                                            console.warn(`No card deck loader found for ${moduleId}_${subModuleId}_${deckId}`);
+                                            return this.createFallbackCardDeck(deckId);
+                                        }
+                                        const deckData = await deckLoader();
                                         onProgress(); // Update progress
                                         return {
                                             id: deckData.id,
@@ -49,13 +65,17 @@ class CardDataLoader {
                                                     : typeof card.bulletpoints === 'string'
                                                     ? (card.bulletpoints as string).split(',').map((point: string) => point.trim())
                                                     : [];
+                                                const summaryText = typeof card.summaryText === 'string'
+                                                    ? card.summaryText
+                                                    : '';
                                                 return {
                                                     id: card.id,
                                                     title: card.title,
                                                     description: card.description,
                                                     bulletpoints: bulletpoints,
                                                     duration: card.duration,
-                                                    difficulty: card.difficulty
+                                                    difficulty: card.difficulty,
+                                                    summaryText
                                                 };
                                             })
                                         };

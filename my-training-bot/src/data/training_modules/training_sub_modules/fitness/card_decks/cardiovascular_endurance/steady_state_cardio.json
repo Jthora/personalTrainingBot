@@ -16,6 +16,7 @@
                 "Monitor heart rate zones to optimize fat burning and endurance",
                 "Increase mileage gradually to avoid overtraining and injuries"
             ],
+            "summaryText": "Log steady miles at a controlled pace to grow aerobic depth safely.",
             "duration": 30,
             "difficulty": "Intermediate"
         },
@@ -28,6 +29,7 @@
                 "Maintain a steady heart rate within the aerobic training zone",
                 "Gradually increase session duration to build long-term stamina"
             ],
+            "summaryText": "Rotate low-impact cardio to protect joints while endurance climbs.",
             "duration": 40,
             "difficulty": "Beginner"
         }

@@ -13,6 +13,7 @@
             "title": "What Are Zero-Knowledge Proofs?",
             "description": "Understanding how one party can prove knowledge of a fact without revealing it.",
             "bulletpoints": "Interactive vs. non-interactive ZKPs, privacy-enhancing applications, cryptographic principles",
+            "summaryText": "Explain how zero-knowledge protocols let provers convince verifiers without exposing the underlying secret.",
             "duration": "40",
             "difficulty": "Intermediate"
         },
@@ -21,6 +22,7 @@
             "title": "zk-SNARKs & zk-STARKs",
             "description": "Exploring the different types of zero-knowledge proofs and their use cases.",
             "bulletpoints": "Cryptographic setup, trusted vs. trustless computation, scaling solutions",
+            "summaryText": "Compare zk-SNARK trusted setups with STARK transparency to pick the right proof system for your project.",
             "duration": "50",
             "difficulty": "Advanced"
         },
@@ -29,6 +31,7 @@
             "title": "Using ZKPs for Scalability & Privacy",
             "description": "How ZKPs enhance privacy while optimizing transaction scalability.",
             "bulletpoints": "ZK-Rollups, privacy-preserving smart contracts, L2 solutions",
+            "summaryText": "See how ZK-rollups and private smart contracts use proofs to compress transactions and hide sensitive data on L2.",
             "duration": "55",
             "difficulty": "Expert"
         }

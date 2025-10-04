@@ -16,6 +16,7 @@
                 "Analyze pronoun use, distancing language, and passive voice",
                 "Apply forensic statement analysis for investigative interviews"
             ],
+            "summaryText": "Probe linguistic tells and statement structure to score truthfulness in interviews.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Analyze speech hesitation, filler words, and pitch modulation",
                 "Use AI-driven voice profiling to assess truthfulness"
             ],
+            "summaryText": "Track vocal tension, cadence shifts, and AI stress scores to flag deceptive speech.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -40,6 +42,7 @@
                 "Analyze body posture, hand movements, and eye contact shifts",
                 "Assess inconsistencies between verbal and nonverbal communication"
             ],
+            "summaryText": "Read microexpressions and gesture drift to catch when body language betrays the script.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -52,6 +55,7 @@
                 "Detect subtle shifts in speech rate, tone, or physical movement",
                 "Assess deviations from baseline under stress or scrutiny"
             ],
+            "summaryText": "Lock in a subject baseline so stress-driven shifts stand out during probing questions.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -64,6 +68,7 @@
                 "Analyze sentence structure and word choice for inconsistencies",
                 "Apply stylometric analysis to compare writing patterns"
             ],
+            "summaryText": "Inspect wording, structure, and stylometry to expose deceptive written narratives.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -76,6 +81,7 @@
                 "Analyze pupil dilation and blink rates during questioning",
                 "Use polygraph data in conjunction with linguistic and behavioral analysis"
             ],
+            "summaryText": "Fuse polygraph metrics with linguistic and behavioral cues for multilayer deception calls.",
             "duration": 8,
             "difficulty": "Expert"
         }

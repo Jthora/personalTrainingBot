@@ -17,6 +17,7 @@
                 "Analyze geopolitical shifts for intelligence implications",
                 "Correlate historical intelligence data with real-time events"
             ],
+            "summaryText": "Fuse stats, ML, and geopolitical context to forecast threats from historical-to-live data.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -30,6 +31,7 @@
                 "Develop contingency plans based on intelligence assessments",
                 "Assess cascading consequences of geopolitical disruptions"
             ],
+            "summaryText": "Run wargames, stage scenario spreads, and script contingencies for each strategic fork.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -43,6 +45,7 @@
                 "Employ cognitive bias assessments to refine intelligence forecasts",
                 "Map predictive threat escalation based on historical behaviors"
             ],
+            "summaryText": "Blend behavior models, sentiment signals, and bias checks to project adversary moves.",
             "duration": 8,
             "difficulty": "Expert"
         },
@@ -56,6 +59,7 @@
                 "Train AI systems to detect weak signals of future events",
                 "Enhance decision-making with AI-generated risk assessments"
             ],
+            "summaryText": "Train AI models on complex intel to surface faint signals and sharpen risk calls.",
             "duration": 9,
             "difficulty": "Expert"
         },
@@ -69,6 +73,7 @@
                 "Correlate migration patterns with security vulnerabilities",
                 "Analyze terrain and infrastructure for strategic forecasting"
             ],
+            "summaryText": "Map spatial trends, sensor cues, and movement patterns to forecast where flashpoints ignite.",
             "duration": 7,
             "difficulty": "Advanced"
         }

@@ -17,6 +17,7 @@
                 "Identifying the key vulnerabilities targeted for coercion.",
                 "Recognizing staged moral dilemmas and forced compromises."
             ],
+            "summaryText": "See how blackmail rides guilt, spot your vulnerabilities, and catch staged compromises early.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Recording illicit activity as leverage for long-term compliance.",
                 "Fabrication of evidence and deepfake technology as modern blackmail tools."
             ],
+            "summaryText": "Understand honeypots, recorded leverage, and fabricated proof as the scaffolding of coercion.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "The cycle of fear-based obedience in power structures.",
                 "Identifying escalation tactics used when resistance is attempted."
             ],
+            "summaryText": "Map the extortion pyramid—compromised actors spreading compromise and escalating when defied.",
             "duration": "90",
             "difficulty": "Expert"
         }

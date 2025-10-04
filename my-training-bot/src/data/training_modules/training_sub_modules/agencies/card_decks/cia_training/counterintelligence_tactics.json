@@ -17,7 +17,8 @@
                 "Implement controlled misinformation"
             ],
             "duration": 6,
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Expose double agents by flagging behavioral inconsistencies, cross-validating mission intel across trusted sources, and deploying controlled misinformation to confirm loyalties before threats escalate."
         },
         {
             "id": "disinformation_campaigns",
@@ -29,7 +30,8 @@
                 "Employ psychological tactics to destabilize targets"
             ],
             "duration": 7,
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Run disciplined disinformation operations by seeding false intelligence through hardened channels, steering media narratives with precision, and layering psychological pressure so adversaries chase fabricated threats."
         }
     ]
 }

@@ -17,6 +17,7 @@
                 "Building decentralized trade systems creates parallel economies.",
                 "Off-grid energy solutions reduce reliance on monopolized utilities."
             ],
+            "summaryText": "Stay self-sufficient, build parallel trade circuits, and power yourself off-grid to dodge coercion.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Micro-energy grids can sustain small communities without external reliance.",
                 "Craftsmanship and trade skills provide resilience in economic downturns."
             ],
+            "summaryText": "Grow food locally, launch micro-grids, and hone trade skills to generate your own resources.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Local exchange networks create resilience against market manipulation.",
                 "Alternative economies protect against artificial scarcity tactics."
             ],
+            "summaryText": "Use crypto, local exchanges, and alternative economies to route around fiat scarcity games.",
             "duration": "90",
             "difficulty": "Expert"
         }

@@ -16,6 +16,7 @@
                 "Distinguish between genuine, exaggerated, and suppressed emotional expressions through psycholinguistic analysis",
                 "Utilize Natural Language Processing (NLP) models to classify emotions into categories such as anger, joy, sadness, and fear"
             ],
+            "summaryText": "Blend psycholinguistic cues with NLP models to pinpoint the emotions driving a message.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -28,6 +29,7 @@
                 "Monitor mass communication channels for coordinated disinformation campaigns and narrative shifts",
                 "Correlate sentiment fluctuations with geopolitical, economic, and social events to predict potential unrest"
             ],
+            "summaryText": "Track social sentiment waves to spot coordinated narratives and forecast flashpoints.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -40,6 +42,7 @@
                 "Detect linguistic cues that indicate sarcasm, irony, or hidden sentiment",
                 "Evaluate opinion strength by analyzing intensifiers, negations, and rhetorical structures"
             ],
+            "summaryText": "Mine polarity signals, sarcasm cues, and intensity markers to read opinion direction accurately.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -52,6 +55,7 @@
                 "Use linguistic markers to assess cognitive distortions in speech and writing",
                 "Employ stylometry to detect authorship similarities in online radicalization networks"
             ],
+            "summaryText": "Profile lexical patterns for stress, deception, or radical signals to prioritize threat reviews.",
             "duration": 8,
             "difficulty": "Advanced"
         },
@@ -64,6 +68,7 @@
                 "Account for cultural and demographic variations in emotional expression",
                 "Identify shifts in sentiment based on historical and regional linguistic norms"
             ],
+            "summaryText": "Layer cultural and semantic context onto sentiment scores to avoid misreads.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -76,6 +81,7 @@
                 "Analyze tonal shifts, voice modulation, and nonverbal cues to improve accuracy",
                 "Use deep learning techniques to fuse multimodal data for real-time emotion detection"
             ],
+            "summaryText": "Fuse text, audio, and visual signals with deep models for high-fidelity emotion reads.",
             "duration": 9,
             "difficulty": "Expert"
         }

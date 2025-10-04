@@ -17,6 +17,7 @@
                 "Identifying traffickers' use of psychological dependency and false promises.",
                 "The role of family members, trusted friends, and 'Romeo Pimps' in recruitment."
             ],
+            "summaryText": "Spot grooming fronts, flag dependency manipulation, and watch insider accomplices fueling recruitment.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Identifying high-risk locations used as trafficking hubs or holding areas.",
                 "Recognizing the use of fraudulent documentation, fake passports, and visas."
             ],
+            "summaryText": "Map transit corridors, catalog hub safehouses, and detect forged travel documents.",
             "duration": "75",
             "difficulty": "Intermediate"
         },
@@ -41,6 +43,7 @@
                 "Identifying classified ads and job postings used as fronts for trafficking.",
                 "Recognizing cryptocurrency transactions and financial laundering techniques tied to trafficking."
             ],
+            "summaryText": "Monitor dark-web comms, unmask front ads, and trace crypto flows tied to trafficking ops.",
             "duration": "90",
             "difficulty": "Expert"
         }

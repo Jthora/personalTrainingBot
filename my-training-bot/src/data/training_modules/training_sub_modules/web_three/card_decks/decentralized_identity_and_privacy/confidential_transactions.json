@@ -13,6 +13,7 @@
             "title": "Ring Signatures & Monero",
             "description": "Understanding how ring signatures provide transaction privacy.",
             "bulletpoints": "How ring signatures work, decoy inputs, Monero's privacy features",
+            "summaryText": "Trace Monero's ring signatures to see how decoy inputs blur spenders while keeping the ledger balanced.",
             "duration": "40",
             "difficulty": "Advanced"
         },
@@ -21,6 +22,7 @@
             "title": "MimbleWimble Protocol",
             "description": "Exploring how MimbleWimble enhances privacy and scalability.",
             "bulletpoints": "Cut-through transactions, compact blockchain history, Grin & Beam implementations",
+            "summaryText": "Review MimbleWimble's cut-through trick that compresses history and hides amounts without sacrificing validation.",
             "duration": "45",
             "difficulty": "Advanced"
         },
@@ -29,6 +31,7 @@
             "title": "Stealth Addresses & Confidential Payments",
             "description": "How stealth addresses improve privacy in blockchain transactions.",
             "bulletpoints": "How stealth addresses work, privacy advantages, real-world use cases",
+            "summaryText": "Learn how stealth address schemes mint one-time destinations so observers can't link payments back to the receiver.",
             "duration": "50",
             "difficulty": "Expert"
         }

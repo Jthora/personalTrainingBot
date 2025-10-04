@@ -17,6 +17,7 @@
                 "Leveraging factional divisions to create controlled chaos.",
                 "Targeting communication weak points to disrupt coordination."
             ],
+            "summaryText": "Map faction fractures, exploit divisions, and sever comms to destabilize IDC networks.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Disrupting leadership trust through fabricated intelligence leaks.",
                 "Orchestrating ‘controlled collapses’ of leadership structures."
             ],
+            "summaryText": "Stir internal politics, leak crafted intel, and engineer controlled collapses in chains of command.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Deploying reputational attacks to erode public and internal trust.",
                 "Strategic misdirection to push adversaries into self-destruction."
             ],
+            "summaryText": "Expose weaknesses, erode reputations, and misdirect key operatives into self-neutralization.",
             "duration": "90",
             "difficulty": "Expert"
         }

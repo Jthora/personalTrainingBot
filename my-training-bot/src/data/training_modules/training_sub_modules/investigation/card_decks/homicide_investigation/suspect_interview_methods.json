@@ -16,6 +16,7 @@
                 "Analyze suspect body language and microexpressions",
                 "Differentiate between truthful responses and deceptive tactics"
             ],
+            "summaryText": "Guide structured interrogations that read cues and pressure out truthful accounts.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Minimize leading questions to maintain accuracy",
                 "Adapt interview strategies based on suspect or witness psychology"
             ],
+            "summaryText": "Use cognitive prompts and neutral phrasing to unlock detailed, reliable memories.",
             "duration": 7,
             "difficulty": "Advanced"
         }

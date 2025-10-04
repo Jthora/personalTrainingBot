@@ -16,6 +16,7 @@
                 "Analyze post-crime behavior and forensic evidence",
                 "Profile offenders based on control vs. impulsiveness"
             ],
+            "summaryText": "Contrast organized versus disorganized patterns to narrow behavioral signatures.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Identify risk levels for recidivism",
                 "Differentiate between psychopathy and sociopathy in offenders"
             ],
+            "summaryText": "Gauge psychopathic traits to estimate recidivism risk and tailor intervention.",
             "duration": 7,
             "difficulty": "Advanced"
         }

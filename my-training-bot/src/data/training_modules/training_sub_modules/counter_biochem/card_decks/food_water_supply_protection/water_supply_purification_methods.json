@@ -14,7 +14,8 @@
             "description": "Methods to detect heavy metals, pesticides, and industrial pollutants in water.",
             "bulletpoints": "pH testing, heavy metal detection, pesticide residue analysis",
             "duration": "12",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Run pH and heavy metal panels plus pesticide assays so you know exactly what contaminants you’re fighting."
         },
         {
             "id": "water_2",
@@ -22,7 +23,8 @@
             "description": "Practical methods to purify water in survival situations or after suspected contamination.",
             "bulletpoints": "Boiling, chemical treatment, solar disinfection, filtration",
             "duration": "10",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Cycle boiling, chemical drops, solar UV, and filtration to strip out pathogens and toxins fast."
         },
         {
             "id": "water_3",
@@ -30,7 +32,8 @@
             "description": "Protecting against infections caused by contaminated water sources.",
             "bulletpoints": "Cholera, Giardia, Cryptosporidium prevention strategies",
             "duration": "12",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Fortify hygiene, vaccinate when possible, and deploy rehydration and antibiotics to stay ahead of waterborne outbreaks."
         }
     ]
 }

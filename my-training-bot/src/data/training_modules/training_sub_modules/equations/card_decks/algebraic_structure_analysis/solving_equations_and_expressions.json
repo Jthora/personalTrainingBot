@@ -16,6 +16,7 @@
                 "Solve for \\( x \\) by isolating the variable: \\[ x = \\frac{-b}{a} \\]",
                 "Balance equations by applying the same operation to both sides"
             ],
+            "summaryText": "Isolate variables with inverse operations to solve any single-variable linear equation.",
             "duration": 7,
             "difficulty": "Beginner"
         },
@@ -28,6 +29,7 @@
                 "Use the quadratic formula: \\[ x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\]",
                 "Factor quadratics when possible: \\[ x^2 - 5x + 6 = (x - 2)(x - 3) = 0 \\]"
             ],
+            "summaryText": "Apply the quadratic formula and factoring patterns to find both roots of second-degree equations.",
             "duration": 8,
             "difficulty": "Intermediate"
         },
@@ -40,6 +42,7 @@
                 "Use synthetic division to test rational roots",
                 "Factor polynomials when possible, then apply the zero product property"
             ],
+            "summaryText": "Combine rational root tests with factoring to break higher-degree polynomials into solvable pieces.",
             "duration": 9,
             "difficulty": "Advanced"
         },
@@ -52,6 +55,7 @@
                 "Convert between exponential and logarithmic form: \\[ x = \\log_b(y) \\Leftrightarrow b^x = y \\]",
                 "Use logarithmic properties: \\[ \\log(a^b) = b \\log a \\]"
             ],
+            "summaryText": "Linearize exponential and logarithmic equations with base conversions and log identities.",
             "duration": 9,
             "difficulty": "Advanced"
         },
@@ -64,6 +68,7 @@
                 "Clear denominators by multiplying by the least common denominator (LCD)",
                 "Check for extraneous solutions by verifying restrictions on \\( x \\)"
             ],
+            "summaryText": "Clear denominators carefully and verify domain restrictions when solving rational equations.",
             "duration": 8,
             "difficulty": "Intermediate"
         },
@@ -76,6 +81,7 @@
                 "Solve by splitting into two cases: \\[ x - a = b \\text{ or } x - a = -b \\]",
                 "Graph absolute value functions to visualize their solutions"
             ],
+            "summaryText": "Split absolute value equations into paired linear cases and confirm with V-shaped graphs.",
             "duration": 7,
             "difficulty": "Intermediate"
         },
@@ -88,6 +94,7 @@
                 "Solve using substitution: \\[ x + y = 5, \\quad 2x - y = 3 \\]",
                 "Use elimination to eliminate a variable by adding or subtracting equations"
             ],
+            "summaryText": "Use substitution or elimination to find intersection points of multi-variable systems.",
             "duration": 9,
             "difficulty": "Intermediate"
         },
@@ -100,6 +107,7 @@
                 "Solve like an equation, but reverse the inequality when multiplying/dividing by a negative number",
                 "Graph solutions on a number line, using open/closed circles for strict/non-strict inequalities"
             ],
+            "summaryText": "Solve inequalities with sign-aware steps and graph the resulting intervals or rays.",
             "duration": 7,
             "difficulty": "Beginner"
         },
@@ -112,6 +120,7 @@
                 "Use trigonometric identities to simplify equations",
                 "Consider periodic solutions: \\[ \\theta = \\frac{\\pi}{6} + 2\\pi k \\text{ for integer } k \\]"
             ],
+            "summaryText": "Solve trig equations with identities and capture all periodic solution families.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -124,6 +133,7 @@
                 "Solve quadratic equations with negative discriminants: \\[ x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\]",
                 "Express complex solutions in the form \\( a + bi \\)"
             ],
+            "summaryText": "Handle negative discriminants by expressing solutions in standard complex-number form.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -136,6 +146,7 @@
                 "Find solutions using the inverse matrix: \\[ X = A^{-1} B \\]",
                 "Use row reduction (Gaussian elimination) to simplify systems"
             ],
+            "summaryText": "Translate systems into AX=B and solve via inverses or Gaussian elimination.",
             "duration": 10,
             "difficulty": "Expert"
         },
@@ -148,6 +159,7 @@
                 "Solve arithmetic series equations: \\[ S_n = \\frac{n}{2} (a + l) \\]",
                 "Evaluate geometric series using: \\[ S_n = \\frac{a(1 - r^n)}{1 - r} \\]"
             ],
+            "summaryText": "Work with sigma notation using arithmetic and geometric series summation formulas.",
             "duration": 9,
             "difficulty": "Advanced"
         }

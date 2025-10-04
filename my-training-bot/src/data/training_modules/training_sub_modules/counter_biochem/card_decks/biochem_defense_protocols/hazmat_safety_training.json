@@ -14,7 +14,8 @@
             "description": "Training in the correct donning, doffing, and maintenance of protective gear in hazardous environments.",
             "bulletpoints": "Hazmat suit layers, glove sealing, respirator fitting",
             "duration": "10",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Drill clean donning and doffing sequences, seal gloves and respirators, and inspect gear so breaches never happen inside the hot zone."
         },
         {
             "id": "hazmat_2",
@@ -22,7 +23,8 @@
             "description": "Step-by-step procedures to remove and neutralize biohazards from personnel and equipment.",
             "bulletpoints": "Chemical neutralization, UV sterilization, containment zone decon",
             "duration": "12",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Move through decon corridors with neutralizers, UV, and rinse cycles so contaminants are stripped before anyone re-enters cold zones."
         },
         {
             "id": "hazmat_3",
@@ -30,7 +32,8 @@
             "description": "Rapid response strategies for treating exposure to biological and chemical agents.",
             "bulletpoints": "Neutralization agents, emergency isolation, first aid for chemical burns",
             "duration": "10",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Deploy neutralizers, isolate casualties, and stabilize injuries on the spot to stop BioChem exposures from escalating."
         }
     ]
 }

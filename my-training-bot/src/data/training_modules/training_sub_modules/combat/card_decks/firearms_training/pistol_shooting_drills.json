@@ -13,7 +13,8 @@
             "description": "Developing quick draw and precision shooting under time constraints.",
             "bulletpoints": "Grip stability, sight alignment, trigger control, rapid target acquisition",
             "duration": "10",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Win the draw by crushing grip, snapping sights on target, and pressing smooth shots before the timer buzzes."
         },
         {
             "id": "pistol_2",
@@ -21,7 +22,8 @@
             "description": "Engaging threats with precision shots to neutralize quickly.",
             "bulletpoints": "Two shots to the torso, follow-up shot to the head, adjusting for target movement",
             "duration": "10",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Run failure-to-stop strings by double-tapping center mass, delivering a surgical head shot, and adjusting for target shifts mid-sequence."
         }
     ]
 }

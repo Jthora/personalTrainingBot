@@ -17,6 +17,7 @@
                 "Recognize false dilemmas designed to limit perception of choices.",
                 "Identify escalation tactics that create a sense of urgency and fear."
             ],
+            "summaryText": "Spot the coercion tells, dismantle false choices, and call out manufactured urgency.",
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -29,6 +30,7 @@
                 "Recognize virtue-signaling and weaponized morality used to control actions.",
                 "Deploy strategic disengagement to avoid emotional entrapment."
             ],
+            "summaryText": "Separate feelings from facts, expose moral bait, and step out before you're hooked.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -41,6 +43,7 @@
                 "Use mental distancing methods to maintain an objective perspective.",
                 "Deploy mirroring and deflection to neutralize persuasion pressure."
             ],
+            "summaryText": "Steady the breath, zoom out mentally, and mirror back pressure until it collapses.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -53,6 +56,7 @@
                 "Interrupt rapport-building sequences used for subconscious influence.",
                 "Counteract hypnotic language patterns designed to lower defenses."
             ],
+            "summaryText": "Catch the embedded commands, break the rapport spell, and block trance-language loops.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -65,6 +69,7 @@
                 "Reject forced reinterpretations of past events meant to distort truth.",
                 "Use written records and third-party validation to expose gaslighting."
             ],
+            "summaryText": "Anchor to documented reality, refuse rewrites, and pull receipts to end the gaslight.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -77,6 +82,7 @@
                 "Test for inconsistency between words and long-term actions.",
                 "Set firm boundaries to prevent emotional dependency conditioning."
             ],
+            "summaryText": "Call out love-bomb theatrics, test promises against behavior, and lock in boundaries.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -89,6 +95,7 @@
                 "Identify false catastrophization techniques used in persuasive narratives.",
                 "Reframe perceived threats into manageable strategic challenges."
             ],
+            "summaryText": "Decode fear scripts, downgrade the doom talk, and reframe threats into plans.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -101,6 +108,7 @@
                 "Strengthen cognitive autonomy through regular critical-thinking drills.",
                 "Use thought-loop interruption to prevent gradual erosion of beliefs."
             ],
+            "summaryText": "Lock in your core code, drill autonomy daily, and break loops before they dig in.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -113,6 +121,7 @@
                 "Counter emotional exploitation used to extract information or compliance.",
                 "Train in micro-expression analysis to detect concealed intent."
             ],
+            "summaryText": "Read the pretext, block emotional hooks, and scan faces for the tells they hide.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -125,6 +134,7 @@
                 "Deploy strategic silence to create psychological space and regain control.",
                 "Redirect conversations to neutral topics to disrupt manipulation attempts."
             ],
+            "summaryText": "Fade out of the trap with ambiguity, let silence reset the field, and pivot the dialogue.",
             "duration": "120",
             "difficulty": "Expert"
         }

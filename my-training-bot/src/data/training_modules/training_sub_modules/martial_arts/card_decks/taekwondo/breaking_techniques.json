@@ -13,6 +13,7 @@
                 "Use a snapping motion for maximum power",
                 "Follow through the target rather than stopping at impact"
             ],
+            "summaryText": "Snap the palm through the board with the heel of the hand and a full follow-through.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -25,6 +26,7 @@
                 "Strike with the heel for maximum force",
                 "Engage the core to control balance and stability"
             ],
+            "summaryText": "Lift the axe kick tall, hammer the heel straight down, and brace with the core for the break.",
             "duration": 6,
             "difficulty": "Advanced"
         }

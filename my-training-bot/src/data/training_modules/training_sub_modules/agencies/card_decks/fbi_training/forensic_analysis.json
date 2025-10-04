@@ -17,7 +17,8 @@
                 "Analyze trace DNA for forensic leads"
             ],
             "duration": 6,
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Secure convictions by harvesting pristine DNA, matching fingerprints through AFIS, and exploiting trace biological evidence to tighten suspect attribution."
         },
         {
             "id": "ballistics_forensics",
@@ -29,7 +30,8 @@
                 "Utilize gunshot residue (GSR) testing"
             ],
             "duration": 7,
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Reconstruct shootings by comparing bullet striations, linking residues to specific firearms, and validating trajectories with comprehensive ballistics forensics."
         }
     ]
 }

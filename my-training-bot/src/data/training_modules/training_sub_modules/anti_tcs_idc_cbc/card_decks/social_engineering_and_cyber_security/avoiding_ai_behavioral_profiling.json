@@ -17,6 +17,7 @@
                 "Identifying AI-powered influence operations.",
                 "Understanding social credit systems and behavioral ranking models."
             ],
+            "summaryText": "Explains how AI sentiment scoring, influence ops, and behavioral ranking frameworks surveil and steer users.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -29,6 +30,7 @@
                 "Using AI noise generation tools to pollute data profiles.",
                 "Employing behavioral obfuscation techniques in online interactions."
             ],
+            "summaryText": "Details fingerprint defenses, noise injection, and obfuscation habits that degrade AI profiling accuracy.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -41,6 +43,7 @@
                 "Avoiding mass social conditioning through AI feeds.",
                 "Using counter-engagement strategies to break predictive modeling."
             ],
+            "summaryText": "Shows how to spot AI nudges, sidestep conditioned feeds, and feed disruptive signals back into predictive models.",
             "duration": "90",
             "difficulty": "Expert"
         }

@@ -12,6 +12,7 @@
             "title": "Creating an Energy Shield",
             "description": "Forming an energetic barrier to block and absorb incoming forces.",
             "bulletpoints": "Shield Formation, Layered Protection, Psionic Field Reinforcement",
+            "summaryText": "Cast a layered shield that cushions impact and drinks in stray force.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -20,6 +21,7 @@
             "title": "Deflecting and Redirecting Attacks",
             "description": "Using psionic control to neutralize and reflect negative forces.",
             "bulletpoints": "Redirection Techniques, Energy Absorption, Reverse Flow Manipulation",
+            "summaryText": "Catch hostile energy, roll it off your field, and send it back cleanly.",
             "duration": "90",
             "difficulty": "Advanced"
         }

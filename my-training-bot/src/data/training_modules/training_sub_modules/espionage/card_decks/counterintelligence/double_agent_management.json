@@ -16,6 +16,7 @@
                 "Analyze inconsistencies in mission reports",
                 "Monitor for unauthorized contacts with hostile intelligence agencies"
             ],
+            "summaryText": "Run controlled exposures, report audits, and contact monitoring to validate double-agent loyalty before deeper deployment.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Maintain plausible deniability for exposed operations",
                 "Use fabricated scenarios to divert adversarial resources"
             ],
+            "summaryText": "Stage selective leaks with cover stories and fabricated scenarios so adversaries chase false priorities while you trace the leak path.",
             "duration": 7,
             "difficulty": "Advanced"
         }

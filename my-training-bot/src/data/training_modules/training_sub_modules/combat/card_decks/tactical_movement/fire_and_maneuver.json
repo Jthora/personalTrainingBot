@@ -13,7 +13,8 @@
             "description": "Alternating cover fire while moving towards an objective.",
             "bulletpoints": "Move in pairs, suppress enemy positions, use cover effectively",
             "duration": "15",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Cycle overwatch teams so one element pins targets while the other bounds forward, communicating every move to keep momentum without bleeding exposure."
         },
         {
             "id": "maneuver_2",
@@ -21,7 +22,8 @@
             "description": "Executing a flanking maneuver to neutralize threats from an advantageous position.",
             "bulletpoints": "Identify enemy weak points, coordinate flanking approach, maintain team communication",
             "duration": "20",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Map enemy arcs, fix them with frontal pressure, then sweep a flanking element through dead space to collapse their position from an unexpected angle."
         }
     ]
 }

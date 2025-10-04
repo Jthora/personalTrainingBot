@@ -13,6 +13,7 @@
             "title": "Secure Smart Contract Development",
             "description": "Implementing best practices to reduce security risks in Solidity.",
             "bulletpoints": "Code audits, linting, security-focused contract patterns",
+            "summaryText": "Reinforce disciplined code reviews, automated linting, and battle-tested security patterns to harden Solidity deliverables.",
             "duration": "50",
             "difficulty": "Advanced"
         },
@@ -21,6 +22,7 @@
             "title": "Web3 Security Incident Response",
             "description": "Handling security breaches and contract vulnerabilities.",
             "bulletpoints": "Bug bounty programs, on-chain monitoring, emergency pause mechanisms",
+            "summaryText": "Outline playbooks that combine bug bounties, real-time monitoring, and pause switches to contain on-chain incidents.",
             "duration": "45",
             "difficulty": "Advanced"
         },
@@ -29,6 +31,7 @@
             "title": "Zero-Trust & Decentralized Security",
             "description": "Implementing decentralized security principles in Web3 architecture.",
             "bulletpoints": "Multisig wallets, hardware security modules, decentralized key management",
+            "summaryText": "Connect zero-trust philosophy with multisig custody, HSM usage, and resilient decentralized key management flows.",
             "duration": "50",
             "difficulty": "Expert"
         }

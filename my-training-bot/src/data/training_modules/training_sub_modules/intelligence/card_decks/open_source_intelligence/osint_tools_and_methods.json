@@ -19,6 +19,7 @@
                 "Set up proxies and user-agent rotation to avoid detection",
                 "Extract structured data from forums, news, and public websites"
             ],
+            "summaryText": "Automate web scraping with rotating fingerprints to harvest structured intel safely.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -31,6 +32,7 @@
                 "Analyze timestamps, geolocation, and authorship data",
                 "Identify digital forgeries and document tampering"
             ],
+            "summaryText": "Mine file metadata to expose origins, edits, and tampering indicators.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -43,6 +45,7 @@
                 "Identify hidden metadata that reveals source information",
                 "Cross-reference metadata with OSINT databases"
             ],
+            "summaryText": "Use ExifTool to surface hidden image details and tie files back to real-world sources.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -55,6 +58,7 @@
                 "Reveal author, editing history, and network paths",
                 "Use FOCA for reconnaissance on leaked or public corporate documents"
             ],
+            "summaryText": "Leverage FOCA to audit document metadata and map exposed corporate footprints.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -67,6 +71,7 @@
                 "Automate text manipulation, decryption, and hashing",
                 "Analyze network traffic, steganography, and forensic artifacts"
             ],
+            "summaryText": "Run CyberChef recipes to decode, transform, and interrogate suspicious data blobs.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -79,6 +84,7 @@
                 "Identify open ports, webcams, and industrial control systems",
                 "Monitor for leaked credentials and misconfigured databases"
             ],
+            "summaryText": "Query Shodan to spotlight exposed services, credentials, and risky infrastructure.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -91,6 +97,7 @@
                 "Use transforms to enrich OSINT data from public and private sources",
                 "Analyze relationships between individuals, networks, and entities"
             ],
+            "summaryText": "Build Maltego graphs to visualize entities and enrich links across intel datasets.",
             "duration": 8,
             "difficulty": "Advanced"
         },
@@ -103,6 +110,7 @@
                 "Use site: and filetype: operators for targeted searches",
                 "Identify sensitive information leaks in public websites"
             ],
+            "summaryText": "Apply Google dorks to surface exposed files and overlooked public assets.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -115,6 +123,7 @@
                 "Analyze historical WHOIS records for infrastructure tracking",
                 "Cross-reference domain data with OSINT threat databases"
             ],
+            "summaryText": "Mine WHOIS records to trace domain ownership shifts and supporting infrastructure.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -127,6 +136,7 @@
                 "Identify content changes over time for forensic analysis",
                 "Use archived pages to investigate cyber threats and misinformation"
             ],
+            "summaryText": "Review Wayback snapshots to recover deleted content and track site evolution.",
             "duration": 5,
             "difficulty": "Beginner"
         },
@@ -139,6 +149,7 @@
                 "Analyze tweet sentiment and network connections",
                 "Extract deleted tweets and investigate digital footprints"
             ],
+            "summaryText": "Use Twint to harvest Twitter data, sentiment trails, and deleted footprints without the API.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -151,6 +162,7 @@
                 "Use pre-built collections of tools for SOCMINT, GEOINT, and more",
                 "Understand the role of automation in streamlining OSINT workflows"
             ],
+            "summaryText": "Navigate OSINT Framework to select niche tools and automate investigation flows.",
             "duration": 4,
             "difficulty": "Beginner"
         },
@@ -163,6 +175,7 @@
                 "Identify duplicate images and track their origins",
                 "Find manipulated images, deepfakes, and fraudulent profiles"
             ],
+            "summaryText": "Run reverse image checks to trace origins and expose manipulated visuals.",
             "duration": 5,
             "difficulty": "Beginner"
         },
@@ -175,6 +188,7 @@
                 "Identify buildings, terrain, and movement patterns",
                 "Cross-reference geolocation data with other OSINT sources"
             ],
+            "summaryText": "Combine OpenStreetMap and imagery to confirm locations and movement patterns.",
             "duration": 6,
             "difficulty": "Intermediate"
         }

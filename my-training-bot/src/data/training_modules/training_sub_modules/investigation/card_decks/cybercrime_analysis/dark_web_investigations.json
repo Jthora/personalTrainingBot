@@ -16,6 +16,7 @@
                 "Use blockchain analysis to track cryptocurrency transactions",
                 "Deploy darknet crawlers to index and map hidden services"
             ],
+            "summaryText": "Track TOR markets with OSINT, crawlers, and crypto traces to map illicit activity.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Extract intelligence from forum conversations and vendor reviews",
                 "Trace illegal digital goods, cyberweapons, and stolen data"
             ],
+            "summaryText": "Run covert personas through forums to collect intel and trace illicit digital goods.",
             "duration": 7,
             "difficulty": "Advanced"
         }

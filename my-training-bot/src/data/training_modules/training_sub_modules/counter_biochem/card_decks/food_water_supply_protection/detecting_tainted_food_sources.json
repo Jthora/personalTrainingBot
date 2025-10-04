@@ -14,7 +14,8 @@
             "description": "Recognizing signs of microbial growth, chemical alterations, and toxin presence in food.",
             "bulletpoints": "Visual cues, chemical testing, microbial culture methods",
             "duration": "10",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Scan food for off colors, odors, or textures, back it up with quick chemical strips, and culture suspicious samples before they hit plates."
         },
         {
             "id": "food_2",
@@ -22,7 +23,8 @@
             "description": "Testing and identifying bacterial, viral, and fungal contaminants in food sources.",
             "bulletpoints": "Listeria, Salmonella, E. coli, mycotoxins detection methods",
             "duration": "12",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Deploy rapid assays for Listeria, Salmonella, E. coli, and mold toxins so outbreaks get crushed before distribution."
         },
         {
             "id": "food_3",
@@ -30,7 +32,8 @@
             "description": "Recognizing symptoms and patterns of slow-acting poisons in food over time.",
             "bulletpoints": "Heavy metal testing, synthetic toxin markers, long-term exposure symptoms",
             "duration": "12",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Track heavy metals and synthetic toxins in tissues and watch for creeping symptoms to expose slow-burn poisoning."
         }
     ]
 }

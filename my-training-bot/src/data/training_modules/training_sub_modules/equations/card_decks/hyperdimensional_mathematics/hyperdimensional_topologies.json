@@ -16,6 +16,7 @@
                 "Use visualization techniques such as projections and cross-sections to interpret higher dimensions.",
                 "Explore applications of higher-dimensional spaces in string theory and quantum mechanics."
             ],
+            "summaryText": "Introduce R^N spaces, visualization tools, and physics motivations for higher dimensions.",
             "duration": 12,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Compute the Euler characteristic \\( \\chi \\) using the formula: \\[ \\chi = V - E + F \\] for polyhedral objects.",
                 "Analyze Betti numbers \\( b_n \\) to determine the number of \\( n \\)-dimensional holes in a space."
             ],
+            "summaryText": "Review homotopy, Euler characteristic, and Betti numbers as higher-dimensional invariants.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -40,6 +42,7 @@
                 "Explore Calabi-Yau manifolds \\( \\mathcal{M} \\) as solutions to compactified string theory models.",
                 "Analyze the effects of compactification on physical laws and gauge symmetries in high-energy physics."
             ],
+            "summaryText": "Connect projective spaces and Calabi-Yau compactifications to dimensional reduction physics.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -52,6 +55,7 @@
                 "Use the Whitney Embedding Theorem to determine minimal dimensions required for embedding.",
                 "Study applications in differential geometry, such as Ricci curvature in general relativity."
             ],
+            "summaryText": "Outline manifold definitions, embedding guarantees, and curvature-driven applications.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -64,6 +68,7 @@
                 "Analyze principal bundles used in gauge theories and their connection to electrodynamics.",
                 "Explore applications in quantum field theory, where gauge connections describe fundamental forces."
             ],
+            "summaryText": "Study fiber bundle structure, gauge-theory principal bundles, and QFT connections.",
             "duration": 15,
             "difficulty": "Expert"
         },
@@ -76,6 +81,7 @@
                 "Explore the role of octonions \\( \\mathbb{O} \\) in exceptional Lie algebras.",
                 "Analyze their applications in string theory, supersymmetry, and quantum mechanics."
             ],
+            "summaryText": "Survey quaternion and octonion algebra and their links to exceptional symmetry physics.",
             "duration": 15,
             "difficulty": "Expert"
         },
@@ -88,6 +94,7 @@
                 "Analyze the energy conditions required for traversable wormholes: \\[ T_{\\mu\\nu} u^\\mu u^\\nu < 0 \\]",
                 "Explore cosmic strings and domain walls as defects arising from symmetry breaking."
             ],
+            "summaryText": "Investigate wormhole geometries, exotic energy conditions, and cosmological defects.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -100,6 +107,7 @@
                 "Explore the Poincaré disk model for visualizing hyperbolic geodesics.",
                 "Analyze applications in special relativity, black hole physics, and quantum gravity."
             ],
+            "summaryText": "Examine negative curvature spaces, visualization models, and relativity applications.",
             "duration": 14,
             "difficulty": "Advanced"
         },
@@ -112,6 +120,7 @@
                 "Study their role in loop quantum gravity as discrete units of space.",
                 "Analyze how spin foams extend this idea into higher dimensions to describe spacetime evolution."
             ],
+            "summaryText": "Describe spin-network graphs, loop quantum gravity discretization, and spin foam dynamics.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -124,6 +133,7 @@
                 "Study the fundamental group \\( \\pi_1 \\) of knot complements to classify knot types.",
                 "Analyze applications in quantum field theory, where knots appear in Chern-Simons theory."
             ],
+            "summaryText": "Explore higher-dimensional knot embeddings, invariants, and quantum field ties.",
             "duration": 15,
             "difficulty": "Expert"
         },
@@ -136,6 +146,7 @@
                 "Analyze their role in supersymmetric string theory and compactification.",
                 "Explore mirror symmetry, where different Calabi-Yau spaces yield equivalent physical theories."
             ],
+            "summaryText": "Summarize Calabi-Yau geometry, string compactification roles, and mirror symmetry insights.",
             "duration": 18,
             "difficulty": "Expert"
         }

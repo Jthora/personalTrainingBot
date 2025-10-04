@@ -18,7 +18,8 @@
                 "Regularly audit your mental processes for anomalies that suggest external influence."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Codify detection protocols, layer shields, and audit for foreign thought anomalies."
         },
         {
             "id": "mental_firewall_2",
@@ -30,7 +31,8 @@
                 "Train in rapid internal reconfiguration of mental structures to prevent pattern recognition by adversaries."
             ],
             "duration": "75",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Encode thoughts as symbols, mask cores with decoy layers, and reconfigure patterns on demand."
         },
         {
             "id": "mental_firewall_3",
@@ -42,7 +44,8 @@
                 "Program automatic thought redirection to shift focus away from sensitive cognitive areas during interrogation or influence attempts."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Partition safe zones, detach emotion, and auto-redirect probes away from sensitive stores."
         },
         {
             "id": "mental_firewall_4",
@@ -54,7 +57,8 @@
                 "Deploy internal logic loops that force external intrusions into contradiction and collapse."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Detect alien pattern shifts, affirm resistance, and trap intrusions in self-contradicting loops."
         },
         {
             "id": "mental_firewall_5",
@@ -66,7 +70,8 @@
                 "Train in rapid thought shifting to avoid fixation-based manipulation."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Break predictability, wield controlled dissonance, and pivot focus to dodge fixation."
         },
         {
             "id": "mental_firewall_6",
@@ -78,7 +83,8 @@
                 "Develop counter-language programming to neutralize suggestive verbal conditioning."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Spot hypnotic phrasing, counter with contradiction drills, and install neutralizing language scripts."
         },
         {
             "id": "mental_firewall_7",
@@ -90,7 +96,8 @@
                 "Employ ‘reverse entrainment’ techniques to neutralize external frequency-based influence."
             ],
             "duration": "120",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Trigger alarms on subliminals, quarantine suspect thoughts, and reverse-entrain hostile frequencies."
         },
         {
             "id": "mental_firewall_8",
@@ -102,7 +109,8 @@
                 "Program core mental directives that override externally implanted suggestions."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Elevate metacognitive audits, trace thought origins, and anchor override directives at core."
         },
         {
             "id": "mental_firewall_9",
@@ -114,7 +122,8 @@
                 "Employ ‘blank slate’ visualization to clear all non-authentic thought imprints."
             ],
             "duration": "120",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Prime failsafe resets, deploy controlled blackouts, and blank-slate wipe unauthorized imprints."
         },
         {
             "id": "mental_firewall_10",
@@ -126,7 +135,8 @@
                 "Use thought-feedback loops that reflect psychological attacks back to their source."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Train instant anomaly recognition, auto-neutralize persuasions, and reflect attacks via feedback loops."
         }
     ]
 }

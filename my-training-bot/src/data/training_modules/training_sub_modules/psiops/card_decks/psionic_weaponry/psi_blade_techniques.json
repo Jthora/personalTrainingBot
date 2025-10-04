@@ -12,6 +12,7 @@
             "title": "Forming a Psi Blade",
             "description": "Methods for stabilizing and projecting an energy blade.",
             "bulletpoints": "Focus Refinement, Energy Hardening, Blade Extension",
+            "summaryText": "Compress psi into an edge, then lock its shape with unwavering mental tension.",
             "duration": "45",
             "difficulty": "Advanced"
         },
@@ -20,6 +21,7 @@
             "title": "Combat Techniques with Psi Blades",
             "description": "Using psi blades for offensive and defensive combat applications.",
             "bulletpoints": "Parrying, Striking Precision, Energy Amplification",
+            "summaryText": "Blend footwork and blade focus so each swing redirects and amplifies the energetic edge.",
             "duration": "60",
             "difficulty": "Expert"
         }

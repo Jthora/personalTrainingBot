@@ -16,6 +16,7 @@
                 "Analyze organ damage, wound patterns, and trauma indicators",
                 "Document findings for use in legal proceedings"
             ],
+            "summaryText": "Conduct full autopsies to map trauma, document evidence, and nail down cause of death.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Analyze blood and tissue samples for chemical traces",
                 "Correlate toxicology findings with cause and manner of death"
             ],
+            "summaryText": "Run toxicology on fluids and tissues to tie chemical agents to the fatal outcome.",
             "duration": 7,
             "difficulty": "Advanced"
         }

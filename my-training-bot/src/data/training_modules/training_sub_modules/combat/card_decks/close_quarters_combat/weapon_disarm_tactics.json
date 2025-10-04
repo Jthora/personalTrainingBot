@@ -13,7 +13,8 @@
             "description": "Essential movements for disarming an attacker with a bladed weapon.",
             "bulletpoints": "Redirecting blade trajectory, control grips, counterattacks",
             "duration": "10",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Strip knives safely by redirecting the blade, locking dominant grips, and counterattacking before the assailant regains the weapon."
         },
         {
             "id": "disarm_2",
@@ -21,7 +22,8 @@
             "description": "Neutralizing a firearm threat within arm’s reach.",
             "bulletpoints": "Redirecting barrel, rapid control, disabling opponent",
             "duration": "10",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Disarm handguns at close range by snapping the barrel offline, seizing control in one beat, and disabling the shooter before they recover."
         }
     ]
 }

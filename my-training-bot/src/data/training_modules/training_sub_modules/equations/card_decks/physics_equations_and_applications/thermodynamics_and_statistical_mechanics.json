@@ -17,6 +17,7 @@
                 "The Second Law of Thermodynamics defines entropy increase: \\[ dS \\geq \\frac{dQ}{T} \\]",
                 "The Third Law of Thermodynamics states \\( S \\to 0 \\) as \\( T \\to 0 \\) for perfect crystals."
             ],
+            "summaryText": "Connects energy conservation, entropy growth, and absolute-zero limits across the thermodynamic laws.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Newton's Law of Cooling models convective heat transfer: \\[ Q = hA(T_s - T_\\infty) \\]",
                 "Stefan-Boltzmann Law governs blackbody radiation: \\[ Q = \\sigma A T^4 \\]"
             ],
+            "summaryText": "Compare conduction, convection, and radiation equations to quantify heat transfer rates.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Partition function \\( Z \\) determines thermodynamic properties: \\[ Z = \\sum_i e^{-\\beta E_i} \\]",
                 "Free energy relates to partition functions: \\[ F = -k_B T \\ln Z \\]"
             ],
+            "summaryText": "Use Boltzmann relations and partition functions to derive macroscopic thermodynamics from microstates.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -53,6 +56,7 @@
                 "Heat exchanged in each step: \\[ Q_H = T_H \\Delta S, \\quad Q_C = T_C \\Delta S \\]",
                 "No real engine can exceed Carnot efficiency due to the Second Law."
             ],
+            "summaryText": "Evaluate ideal engine limits and reversible heat exchanges defined by the Carnot cycle.",
             "duration": 12,
             "difficulty": "Advanced"
         },
@@ -65,6 +69,7 @@
                 "Phase equilibrium condition: \\[ dG = 0 \\] at constant \\( P, T \\)",
                 "Spontaneous reactions occur when \\( \\Delta G < 0 \\)"
             ],
+            "summaryText": "Assess spontaneity and phase balance by tracking Gibbs free energy changes.",
             "duration": 12,
             "difficulty": "Advanced"
         },
@@ -77,6 +82,7 @@
                 "Clausius-Clapeyron equation for phase boundaries: \\[ \\frac{dP}{dT} = \\frac{L}{T \\Delta V} \\]",
                 "Critical point: \\( (T_c, P_c) \\) where distinct phases disappear."
             ],
+            "summaryText": "Quantify latent heat, phase boundary slopes, and critical behavior during phase changes.",
             "duration": 13,
             "difficulty": "Expert"
         },
@@ -89,6 +95,7 @@
                 "Maxwell-Boltzmann distribution: \\[ f(v) = \\left( \\frac{m}{2\\pi k_B T} \\right)^{3/2} e^{-\\frac{mv^2}{2k_B T}} \\]",
                 "Entropy in quantum systems follows the von Neumann equation: \\[ S = -k_B \\text{Tr}(\\rho \\ln \\rho) \\]"
             ],
+            "summaryText": "Maximize classical and quantum entropy distributions to describe equilibrium probabilities.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -101,6 +108,7 @@
                 "Gibbs free energy for chemical reactions: \\[ G = H - TS \\]",
                 "Legendre transformations relate thermodynamic potentials."
             ],
+            "summaryText": "Apply Helmholtz and Gibbs potentials with Legendre transforms to determine equilibrium criteria.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -113,6 +121,7 @@
                 "Hawking temperature: \\[ T_H = \\frac{\\hbar c^3}{8 \\pi k_B G M} \\]",
                 "Black holes obey the laws of thermodynamics in analogy with classical systems."
             ],
+            "summaryText": "Relate black hole entropy, temperature, and radiation to thermodynamic analogies.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -125,6 +134,7 @@
                 "Bose-Einstein condensation occurs when \\( k_B T \\) is low enough: \\[ N_0 = N \\left( 1 - \\left( \\frac{T}{T_c} \\right)^{3/2} \\right) \\]",
                 "Superfluidity and superconductivity emerge from quantum statistical effects."
             ],
+            "summaryText": "Explain quantum distributions, condensation thresholds, and emergent superfluid behavior.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -137,6 +147,7 @@
                 "Jarzynski equality links equilibrium free energy with non-equilibrium work: \\[ \\langle e^{-\\beta W} \\rangle = e^{-\\beta \\Delta F} \\]",
                 "Irreversible thermodynamics describes entropy production in open systems."
             ],
+            "summaryText": "Use fluctuation relations and Jarzynski equality to connect nonequilibrium work with entropy production.",
             "duration": 16,
             "difficulty": "Expert"
         }

@@ -12,6 +12,7 @@
             "title": "Advanced Exploitation Techniques",
             "description": "Utilizing zero-day vulnerabilities and advanced hacking methods.",
             "bulletpoints": "Exploit chaining, privilege escalation, persistence mechanisms",
+            "summaryText": "Chain fresh exploits to punch through modern defenses, escalate privileges immediately, and seed durable persistence so follow-on operators inherit full control.",
             "duration": "45",
             "difficulty": "Expert"
         },
@@ -20,6 +21,7 @@
             "title": "Command and Control (C2) Frameworks",
             "description": "Using advanced C2 infrastructures for stealthy remote access.",
             "bulletpoints": "Develop C2 infrastructure, evade detection, maintain persistence",
+            "summaryText": "Stand up resilient C2 channels with rotating infrastructure, shift traffic patterns to dodge detection, and quietly maintain access for long-haul operations.",
             "duration": "50",
             "difficulty": "Expert"
         }

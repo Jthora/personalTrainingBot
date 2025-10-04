@@ -18,7 +18,8 @@
                 "Spotting coordinated subversion campaigns."
             ],
             "duration": "75",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Catalog telltale infiltrator behaviors, trace seed narratives, and flag synchronized disruption plays."
         },
         {
             "id": "counter_infiltration_2",
@@ -30,7 +31,8 @@
                 "Understanding how controlled opposition is created and managed."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Map covert influence tactics, connect operators to controllers, and expose manufactured opposition."
         },
         {
             "id": "counter_infiltration_3",
@@ -42,7 +44,8 @@
                 "Using psychological profiling to unmask operatives."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Spot provocation cues, cordon off instigators, and leverage profiling to reveal plants."
         },
         {
             "id": "counter_infiltration_4",
@@ -54,7 +57,8 @@
                 "Behavioral analysis for detecting double agents."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Build rigorous vetting pipelines, compartmentalize sensitive work, and monitor signals of betrayal."
         },
         {
             "id": "counter_infiltration_5",
@@ -66,7 +70,8 @@
                 "Engaging in digital counter-propaganda warfare."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Follow funding trails, launch precision counter-narratives, and contest hostile propaganda online."
         },
         {
             "id": "counter_infiltration_6",
@@ -78,7 +83,8 @@
                 "Implementing peer-to-peer intelligence-sharing methods."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Encrypt critical comms, shift activity onto resilient decentral tech, and enable secure peer intel loops."
         },
         {
             "id": "counter_infiltration_7",
@@ -90,7 +96,8 @@
                 "Understanding counter-psyops strategies."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Set traps that expose operatives, seed telltale leaks, and choreograph counter-psyops feints."
         },
         {
             "id": "counter_infiltration_8",
@@ -102,7 +109,8 @@
                 "Creating mental defense strategies against mass influence tactics."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "List frequent psywar plays, train analytical habits, and script resilience rituals against manipulation."
         },
         {
             "id": "counter_infiltration_9",
@@ -114,7 +122,8 @@
                 "Using OSINT to uncover media collusion with intelligence networks."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Dissect broadcast framing, map propaganda feedback loops, and prove collusion with open-source digs."
         },
         {
             "id": "counter_infiltration_10",
@@ -126,7 +135,8 @@
                 "Developing rapid response strategies to mitigate disinformation attacks."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Monitor geopolitical drivers, watch dashboards for active ops, and script rapid counter-response protocols."
         }
     ]
 }

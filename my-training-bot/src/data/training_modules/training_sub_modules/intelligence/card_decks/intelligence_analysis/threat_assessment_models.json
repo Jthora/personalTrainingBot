@@ -16,6 +16,7 @@
                 "Analyze communications and financial transactions to identify covert networks",
                 "Assess degrees of separation to detect central figures and hidden influencers within a threat network"
             ],
+            "summaryText": "Map relational data to surface covert networks and spotlight pivotal actors for disruption.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Assess psychological and ideological motivations behind potential threat actors",
                 "Use historical case studies to refine predictive threat models and escalation pathways"
             ],
+            "summaryText": "Profile behavioral indicators and motivations to forecast which actors are most likely to escalate.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -40,6 +42,7 @@
                 "Assess potential entry points that adversaries could use to launch an attack",
                 "Develop mitigation strategies to reduce the likelihood of exploitation"
             ],
+            "summaryText": "Survey physical, cyber, and human gaps to flag exploitable entry points and prioritize hardening.",
             "duration": 7,
             "difficulty": "Intermediate"
         },
@@ -52,6 +55,7 @@
                 "Use the MITRE ATT&CK framework to classify adversary tactics and techniques",
                 "Develop response plans based on known adversarial capabilities and motivations"
             ],
+            "summaryText": "Classify adversary playbooks with ATT&CK to anticipate tactics and tailor proactive responses.",
             "duration": 8,
             "difficulty": "Advanced"
         },
@@ -64,6 +68,7 @@
                 "Use intelligence-driven risk scoring models to refine security policies",
                 "Integrate real-time threat intelligence feeds into proactive decision-making"
             ],
+            "summaryText": "Rank threats by impact and fuse live intel feeds to drive adaptive, evidence-based policies.",
             "duration": 6,
             "difficulty": "Intermediate"
         }

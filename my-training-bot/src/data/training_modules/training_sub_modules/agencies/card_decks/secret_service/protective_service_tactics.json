@@ -17,7 +17,8 @@
                 "Coordinate security teams for seamless operations"
             ],
             "duration": 6,
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Lock in advance security plans by vetting sites, plotting redundant escape routes, and synchronizing protection teams before the principal arrives."
         },
         {
             "id": "protective_formation_drills",
@@ -29,7 +30,8 @@
                 "Manage crowd control and civilian safety under pressure"
             ],
             "duration": 7,
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Shield principals in motion by refining diamond and wedge formations, reacting fluidly to threats, and steering crowds without breaking protective coverage."
         }
     ]
 }

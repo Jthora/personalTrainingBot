@@ -16,6 +16,7 @@
                 "Vary routes and speeds to match traffic flow",
                 "Anticipate sudden turns and stops to maintain coverage"
             ],
+            "summaryText": "Maintain discreet spacing, mirror traffic patterns, and anticipate maneuvers to stay on target.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Coordinate with aerial and ground support",
                 "Deploy decoy vehicles to mislead the target"
             ],
+            "summaryText": "Execute multi-vehicle handoffs with layered support and decoys to defeat countersurveillance.",
             "duration": 7,
             "difficulty": "Advanced"
         }

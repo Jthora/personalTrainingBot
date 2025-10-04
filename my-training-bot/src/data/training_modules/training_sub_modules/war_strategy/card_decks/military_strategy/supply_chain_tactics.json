@@ -12,6 +12,7 @@
             "title": "Supply Line Defense and Disruption",
             "description": "Strategies for securing and disrupting enemy supply chains.",
             "bulletpoints": "Logistical hubs, interdiction operations, convoy protection",
+            "summaryText": "Fortify your own hubs while planning interdiction raids and convoy escorts that choke enemy supplies without starving friendly forces.",
             "duration": "45",
             "difficulty": "Advanced"
         },
@@ -20,6 +21,7 @@
             "title": "Sustaining Operations in Warzones",
             "description": "Ensuring continuous resupply during prolonged engagements.",
             "bulletpoints": "Strategic stockpiling, resupply missions, wartime rationing",
+            "summaryText": "Balance stockpiles, rotating resupply missions, and ration policies so frontline units stay equipped through drawn-out campaigns.",
             "duration": "50",
             "difficulty": "Advanced"
         }

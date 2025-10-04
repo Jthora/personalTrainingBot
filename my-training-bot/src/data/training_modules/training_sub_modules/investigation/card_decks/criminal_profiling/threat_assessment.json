@@ -16,6 +16,7 @@
                 "Evaluate escalation indicators and stressors",
                 "Employ forensic psychology tools for predicting violent tendencies"
             ],
+            "summaryText": "Blend matrices and behavioral cues to grade violence risk and intervene early.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Analyze buffer zones and offender hunting patterns",
                 "Use GIS tools to narrow down suspect residency areas"
             ],
+            "summaryText": "Leverage geographic profiling to trace offender movement and pinpoint likely bases.",
             "duration": 7,
             "difficulty": "Advanced"
         }

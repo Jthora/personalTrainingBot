@@ -17,6 +17,7 @@
                 "Understanding how layering obscures financial trails.",
                 "Identifying patterns of integration into legal economies."
             ],
+            "summaryText": "Dissect placement, layering, and integration phases to flag laundering signatures.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Analyzing regulatory failures in anti-money laundering (AML) enforcement.",
                 "Exposing historical cases where banks were fined for laundering illicit funds."
             ],
+            "summaryText": "Expose complicit banks, scrutinize AML breakdowns, and leverage precedent-setting enforcement cases.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Identifying patterns in high-value real estate purchases.",
                 "Tracing the use of artwork, luxury goods, and philanthropy in money laundering."
             ],
+            "summaryText": "Deploy blockchain forensics, spot asset acquisition patterns, and trace luxury conduits for dark money.",
             "duration": "90",
             "difficulty": "Expert"
         }

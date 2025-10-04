@@ -18,6 +18,7 @@
                 "Convert between standard form and scientific notation using exponent rules.",
                 "Common applications in physics, astronomy, and engineering for handling extreme values."
             ],
+            "summaryText": "Apply scientific notation conversions for extreme magnitudes across sciences.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -30,6 +31,7 @@
                 "SI unit notation: \\[ m \\] (meters), \\[ kg \\] (kilograms), \\[ s \\] (seconds).",
                 "Greek letters in science: \\[ \\lambda \\] (wavelength), \\[ \\sigma \\] (summation), \\[ \\mu \\] (micro)"
             ],
+            "summaryText": "Recognize core physics symbols, SI units, and Greek letter conventions in engineering.",
             "duration": 7,
             "difficulty": "Intermediate"
         },
@@ -43,6 +45,7 @@
                 "Factorial notation: \\[ n! = n \\times (n-1) \\times \\dots \\times 1 \\]",
                 "Combinations and permutations: \\[ {}_nC_r = \\frac{n!}{r!(n-r)!} \\], \\[ {}_nP_r = \\frac{n!}{(n-r)!} \\]"
             ],
+            "summaryText": "Summarize statistical probability notation, factorials, and combinatorics formulas.",
             "duration": 8,
             "difficulty": "Advanced"
         },
@@ -55,6 +58,7 @@
                 "Integral notation: \\[ \\int f(x) \\,dx \\] for indefinite and \\[ \\int_{a}^{b} f(x) \\,dx \\] for definite integrals.",
                 "Limits notation: \\[ \\lim_{x \\to a} f(x) \\]"
             ],
+            "summaryText": "Review calculus derivative, integral, and limit notation for analysis work.",
             "duration": 8,
             "difficulty": "Advanced"
         },
@@ -67,6 +71,7 @@
                 "Matrix representation: \\[ A = \\begin{bmatrix} a_{11} & a_{12} \\\\ a_{21} & a_{22} \\end{bmatrix} \\]",
                 "Determinant: \\[ \\det(A) \\], inverse matrix: \\[ A^{-1} \\]"
             ],
+            "summaryText": "Use vector, matrix, determinant, and inverse notation common to linear algebra.",
             "duration": 7,
             "difficulty": "Intermediate"
         },
@@ -79,6 +84,7 @@
                 "Union and intersection: \\[ A \\cup B \\], \\[ A \\cap B \\]",
                 "Logical symbols: \\[ \\wedge \\] (AND), \\[ \\vee \\] (OR), \\[ \\neg \\] (NOT), \\[ \\forall \\] (for all), \\[ \\exists \\] (exists)"
             ],
+            "summaryText": "Interpret set relations and logical operators foundational to discrete math.",
             "duration": 7,
             "difficulty": "Intermediate"
         },
@@ -91,6 +97,7 @@
                 "Operator action: \\[ \\hat{A} | \\psi \\rangle = \\lambda | \\psi \\rangle \\]",
                 "Probability amplitudes and eigenvalues in quantum mechanics."
             ],
+            "summaryText": "Explain bra-ket states, operator eigenvalue equations, and amplitudes in QM.",
             "duration": 8,
             "difficulty": "Advanced"
         },
@@ -103,6 +110,7 @@
                 "Logic gate notation: \\[ A \\wedge B \\] (AND), \\[ A \\vee B \\] (OR), \\[ \\neg A \\] (NOT)",
                 "Lambda calculus notation: \\[ \\lambda x.f(x) \\] for functional programming."
             ],
+            "summaryText": "Outline algorithm complexity, logic gates, and lambda calculus representations.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -115,6 +123,7 @@
                 "Circuit components: \\[ R \\] (resistor), \\[ C \\] (capacitor), \\[ L \\] (inductor)",
                 "Maxwell's equations: \\[ \\nabla \\times E = -\\frac{\\partial B}{\\partial t} \\]"
             ],
+            "summaryText": "Recall circuit notation, Ohm's law, and Maxwell curl form for electromagnetics.",
             "duration": 8,
             "difficulty": "Advanced"
         }

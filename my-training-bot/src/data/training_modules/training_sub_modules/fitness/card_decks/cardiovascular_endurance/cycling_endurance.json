@@ -16,6 +16,7 @@
                 "Use a heart rate monitor to stay in the endurance training zone",
                 "Increase distance progressively to enhance stamina"
             ],
+            "summaryText": "Plan steady-state rides with cadence discipline, heart-rate targets, and gradual mileage bumps to grow aerobic base.",
             "duration": 60,
             "difficulty": "Intermediate"
         },
@@ -28,6 +29,7 @@
                 "Increase resistance or pedal speed for greater intensity",
                 "Focus on controlled breathing to sustain effort levels"
             ],
+            "summaryText": "Alternate explosive sprints with measured recoveries, tweaking resistance and breath control to push power gains.",
             "duration": 45,
             "difficulty": "Advanced"
         }

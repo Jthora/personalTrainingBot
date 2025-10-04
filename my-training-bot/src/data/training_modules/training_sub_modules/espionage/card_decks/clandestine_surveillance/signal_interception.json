@@ -16,6 +16,7 @@
                 "Analyze metadata for geolocation tracking",
                 "Decrypt encrypted communications using AI models"
             ],
+            "summaryText": "Intercept mobile traffic via IMSI tools, metadata analysis, and targeted decryption workflows.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Employ passive and active wiretaps for different use cases",
                 "Manage encryption protocols to bypass security layers"
             ],
+            "summaryText": "Select suitable wiretap hardware, deployment mode, and crypto handling for seamless monitoring.",
             "duration": 7,
             "difficulty": "Advanced"
         }

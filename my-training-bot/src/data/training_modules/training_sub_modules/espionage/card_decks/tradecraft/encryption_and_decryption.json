@@ -16,6 +16,7 @@
                 "Use frequency analysis to break substitution ciphers",
                 "Apply modern decryption techniques with computational tools"
             ],
+            "summaryText": "Catalog classic-to-modern ciphers, exploit frequency patterns, and wield compute to tear through codes.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Detect and decode hidden messages within digital content",
                 "Implement steganographic payloads with advanced cryptography"
             ],
+            "summaryText": "Hide intel inside media streams, sniff out embedded payloads, and pair concealment with strong crypto.",
             "duration": 7,
             "difficulty": "Advanced"
         }

@@ -14,7 +14,8 @@
             "description": "Using pharmaceutical and holistic antidotes for known toxins used in industrial and biochem warfare.",
             "bulletpoints": "Activated charcoal, NAC, sodium thiosulfate, chelation therapy",
             "duration": "12",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Deploy charcoal, NAC, thiosulfate, and chelators immediately to bind and expel industrial toxins before systemic damage spreads."
         },
         {
             "id": "antidote_2",
@@ -22,7 +23,8 @@
             "description": "Using herbal and natural methods to expel heavy metals and neurological toxins from the body.",
             "bulletpoints": "Zeolite, chlorella, spirulina, cilantro detox protocols",
             "duration": "14",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Cycle zeolite, chlorella, spirulina, and cilantro to chelate heavy metals and clear neurotoxins naturally over sustained detox phases."
         },
         {
             "id": "antidote_3",
@@ -30,7 +32,8 @@
             "description": "Strategies for reversing the effects of genetic-modifying bioweapons and organ-damaging toxins.",
             "bulletpoints": "Molecular hydrogen therapy, fasting-induced autophagy, mitochondrial repair compounds",
             "duration": "14",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Use molecular hydrogen, fasting autophagy, and mitochondrial compounds to trigger cellular repair and reverse mutagenic damage."
         }
     ]
 }

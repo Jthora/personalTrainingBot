@@ -1,118 +1,54 @@
-import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
+import { ChangeEvent, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { Card } from '../../types/Card';
 import { CardMeta } from '../../cache/TrainingModuleCache';
-import ShareCard from './ShareCard';
-import styles from './ShareCardModal.module.css';
+import ShareCard, { ShareCardDisplayOptions } from './ShareCard';
 import { generateShareSummary } from '../../utils/shareSummary';
+import styles from './ShareCardModal.module.css';
 import { toBlob, toCanvas, toPng } from 'html-to-image';
 
-const SHARE_CARD_BASE_WIDTH = 960;
-const SHARE_CARD_BASE_HEIGHT = 540;
+const CARD_WIDTH = 1200;
+const CARD_HEIGHT = 675;
 
-interface ShareCardModalProps {
+const DEFAULT_OPTIONS: ShareCardDisplayOptions = {
+    showModulePill: true,
+    showBreadcrumbs: true,
+    showDescription: true,
+    showBulletPoints: true,
+    showBadges: true,
+    showLink: true,
+};
+
+type ShareCardModalProps = {
     card: Card;
     meta: CardMeta;
     slug: string;
     shortUrl: string;
     onClose: () => void;
-}
+};
 
-const ShareCardModal: React.FC<ShareCardModalProps> = ({ card, meta, slug, shortUrl, onClose }) => {
-    const cardRef = useRef<HTMLDivElement>(null);
-    const previewWrapperRef = useRef<HTMLDivElement>(null);
+const ShareCardModal = ({ card, meta, slug, shortUrl, onClose }: ShareCardModalProps) => {
+    const previewFrameRef = useRef<HTMLDivElement | null>(null);
     const statusTimeoutRef = useRef<number | null>(null);
-    const [statusMessage, setStatusMessage] = useState<string | null>(null);
+    const exportCardRef = useRef<HTMLDivElement | null>(null);
+
+    const [displayOptions, setDisplayOptions] = useState<ShareCardDisplayOptions>(DEFAULT_OPTIONS);
+    const [footerLabel, setFooterLabel] = useState('Open in app');
+    const [scale, setScale] = useState(1);
+    const [cardHeight, setCardHeight] = useState(CARD_HEIGHT);
     const [isExporting, setIsExporting] = useState(false);
-    const [previewScale, setPreviewScale] = useState(1);
-
-    const updatePreviewScale = useCallback(() => {
-        const wrapper = previewWrapperRef.current;
-        const container = cardRef.current;
-
-        if (!wrapper || !container) {
-            return;
-        }
-
-        const baseWidth = SHARE_CARD_BASE_WIDTH;
-        const baseHeight = SHARE_CARD_BASE_HEIGHT;
-
-        const viewportLimit = typeof window !== 'undefined' ? window.innerHeight * 0.7 : baseHeight;
-
-        const availableWidth = wrapper.clientWidth || baseWidth;
-        const wrapperHeight = wrapper.clientHeight || baseHeight;
-        const maxHeight = Math.min(wrapperHeight, viewportLimit || baseHeight);
-
-        if (!availableWidth || !maxHeight) {
-            setPreviewScale(1);
-            return;
-        }
-
-        const widthScale = availableWidth / baseWidth;
-        const heightScale = maxHeight / baseHeight;
-        const nextScale = Math.min(widthScale, heightScale, 1);
-
-        setPreviewScale(prev => Math.abs(prev - nextScale) > 0.01 ? nextScale : prev);
-    }, []);
-
-    useLayoutEffect(() => {
-        updatePreviewScale();
-
-        if (typeof ResizeObserver === 'undefined') {
-            return;
-        }
-
-        const wrapper = previewWrapperRef.current;
-        const container = cardRef.current;
-
-        if (!wrapper || !container) {
-            return;
-        }
-
-        const observer = new ResizeObserver(() => {
-            updatePreviewScale();
-        });
-
-        observer.observe(wrapper);
-        observer.observe(container);
-
-        const handleResize = () => updatePreviewScale();
-        if (typeof window !== 'undefined') {
-            window.addEventListener('resize', handleResize);
-        }
-
-        return () => {
-            observer.disconnect();
-            if (typeof window !== 'undefined') {
-                window.removeEventListener('resize', handleResize);
-            }
-        };
-    }, [updatePreviewScale]);
-
-    useEffect(() => {
-        if (!cardRef.current) {
-            return;
-        }
-
-        cardRef.current.style.setProperty('--share-card-scale', previewScale.toString());
-    }, [previewScale]);
+    const [status, setStatus] = useState<string | null>(null);
 
     const summary = useMemo(() => generateShareSummary({ card, meta, shortUrl }), [card, meta, shortUrl]);
-    const previewContainerStyle = useMemo<React.CSSProperties>(() => ({
-        width: `${SHARE_CARD_BASE_WIDTH * previewScale}px`,
-        height: `${SHARE_CARD_BASE_HEIGHT * previewScale}px`,
-        '--share-card-base-width': `${SHARE_CARD_BASE_WIDTH}px`,
-        '--share-card-base-height': `${SHARE_CARD_BASE_HEIGHT}px`,
-    }), [previewScale]);
 
     const showStatus = useCallback((message: string) => {
-        setStatusMessage(message);
+        setStatus(message);
         if (statusTimeoutRef.current) {
             window.clearTimeout(statusTimeoutRef.current);
         }
         statusTimeoutRef.current = window.setTimeout(() => {
-            setStatusMessage(null);
+            setStatus(null);
             statusTimeoutRef.current = null;
-        }, 2500);
+        }, 2600);
     }, []);
 
     useEffect(() => () => {
@@ -122,9 +58,50 @@ const ShareCardModal: React.FC<ShareCardModalProps> = ({ card, meta, slug, short
         }
     }, []);
 
-    const ensureClipboardAvailable = useCallback(() => {
-        if (typeof navigator === 'undefined' || !('clipboard' in navigator) || typeof navigator.clipboard?.writeText !== 'function') {
-            showStatus('Clipboard not available in this browser');
+    const updateScale = useCallback(() => {
+        const frame = previewFrameRef.current;
+        if (!frame) {
+            return;
+        }
+        const maxWidth = frame.clientWidth || CARD_WIDTH;
+        if (!maxWidth) {
+            setScale(1);
+            return;
+        }
+        const nextScale = Math.min(1, maxWidth / CARD_WIDTH);
+        setScale(prev => (Math.abs(prev - nextScale) > 0.01 ? nextScale : prev));
+    }, []);
+
+    useLayoutEffect(() => {
+        updateScale();
+    }, [updateScale]);
+
+    useEffect(() => {
+        if (!previewFrameRef.current || typeof ResizeObserver === 'undefined') {
+            return;
+        }
+        const observer = new ResizeObserver(() => updateScale());
+        observer.observe(previewFrameRef.current);
+        return () => observer.disconnect();
+    }, [updateScale]);
+
+    useEffect(() => {
+        const onResize = () => updateScale();
+        window.addEventListener('resize', onResize);
+        return () => window.removeEventListener('resize', onResize);
+    }, [updateScale]);
+
+    useEffect(() => {
+        updateScale();
+    }, [cardHeight, updateScale]);
+
+    const handleCardHeightChange = useCallback((height: number) => {
+        setCardHeight(prev => (Math.abs(prev - height) > 0.5 ? height : prev));
+    }, []);
+
+    const ensureClipboardText = useCallback(() => {
+        if (typeof navigator === 'undefined' || !navigator.clipboard || typeof navigator.clipboard.writeText !== 'function') {
+            showStatus('Clipboard not available');
             return false;
         }
         return true;
@@ -133,7 +110,7 @@ const ShareCardModal: React.FC<ShareCardModalProps> = ({ card, meta, slug, short
     const prepareForCapture = useCallback(async () => {
         if (typeof document !== 'undefined' && 'fonts' in document) {
             try {
-                await document.fonts.ready;
+                await (document as Document & { fonts: FontFaceSet }).fonts.ready;
             } catch (error) {
                 console.warn('Unable to confirm font readiness', error);
             }
@@ -142,72 +119,54 @@ const ShareCardModal: React.FC<ShareCardModalProps> = ({ card, meta, slug, short
         await new Promise<void>(resolve => {
             const raf = typeof requestAnimationFrame === 'function'
                 ? requestAnimationFrame
-                : (cb: FrameRequestCallback) => globalThis.setTimeout(() => cb(Date.now()), 16);
-
-            raf(() => {
-                raf(() => resolve());
-            });
+                : (cb: FrameRequestCallback) => window.setTimeout(() => cb(Date.now()), 16);
+            raf(() => raf(() => resolve()));
         });
     }, []);
 
-    const runWithFullScale = useCallback(async <T,>(task: (node: HTMLElement) => Promise<T>): Promise<T> => {
-        const node = cardRef.current;
-
+    const runExportTask = useCallback(async <T,>(task: (node: HTMLElement) => Promise<T>): Promise<T> => {
+        const node = exportCardRef.current;
         if (!node) {
-            throw new Error('Preview not ready yet');
+            throw new Error('Export surface not ready');
         }
 
-        const previousScale = node.style.getPropertyValue('--share-card-scale') || previewScale.toString();
-        const previousWidth = node.style.width;
-        const previousHeight = node.style.height;
+        await prepareForCapture();
 
-        node.style.setProperty('--share-card-scale', '1');
-        node.style.width = `${SHARE_CARD_BASE_WIDTH}px`;
-        node.style.height = `${SHARE_CARD_BASE_HEIGHT}px`;
-
-        try {
-            await prepareForCapture();
-            return await task(node);
-        } finally {
-            node.style.setProperty('--share-card-scale', previousScale);
-            node.style.width = previousWidth || `${SHARE_CARD_BASE_WIDTH * previewScale}px`;
-            node.style.height = previousHeight || `${SHARE_CARD_BASE_HEIGHT * previewScale}px`;
-            updatePreviewScale();
-        }
-    }, [prepareForCapture, previewScale, updatePreviewScale]);
+        return task(node);
+    }, [prepareForCapture]);
 
     const handleCopySummary = useCallback(async () => {
-        if (!ensureClipboardAvailable()) {
+        if (!ensureClipboardText()) {
             return;
         }
         try {
             await navigator.clipboard.writeText(summary.text);
-            showStatus('Post text copied to clipboard');
+            showStatus('Post text copied');
         } catch (error) {
             console.error('Failed to copy summary', error);
             showStatus('Unable to copy post text');
         }
-    }, [ensureClipboardAvailable, summary.text, showStatus]);
+    }, [ensureClipboardText, summary.text, showStatus]);
 
     const handleCopyLink = useCallback(async () => {
-        if (!ensureClipboardAvailable()) {
+        if (!ensureClipboardText()) {
             return;
         }
         try {
             await navigator.clipboard.writeText(shortUrl);
-            showStatus('Link copied to clipboard');
+            showStatus('Link copied');
         } catch (error) {
             console.error('Failed to copy link', error);
             showStatus('Unable to copy link');
         }
-    }, [ensureClipboardAvailable, shortUrl, showStatus]);
+    }, [ensureClipboardText, shortUrl, showStatus]);
+
+    const handleOpenComposer = useCallback(() => {
+        const intentUrl = `https://x.com/intent/tweet?text=${encodeURIComponent(summary.text)}`;
+        window.open(intentUrl, '_blank');
+    }, [summary.text]);
 
     const handleCopyImage = useCallback(async () => {
-        if (!cardRef.current) {
-            showStatus('Preview not ready yet');
-            return;
-        }
-
         if (typeof navigator === 'undefined' || !('clipboard' in navigator) || typeof navigator.clipboard?.write !== 'function' || typeof ClipboardItem === 'undefined') {
             showStatus('Image clipboard not supported');
             return;
@@ -215,13 +174,11 @@ const ShareCardModal: React.FC<ShareCardModalProps> = ({ card, meta, slug, short
 
         try {
             setIsExporting(true);
-            const blob = await runWithFullScale(node =>
-                toBlob(node, {
-                    pixelRatio: 2,
-                    cacheBust: true,
-                    backgroundColor: '#001f3f',
-                })
-            );
+            const blob = await runExportTask((node: HTMLElement) => toBlob(node, {
+                cacheBust: true,
+                pixelRatio: 2,
+                backgroundColor: '#040c1e',
+            }));
 
             if (!blob) {
                 showStatus('Unable to generate image');
@@ -232,131 +189,245 @@ const ShareCardModal: React.FC<ShareCardModalProps> = ({ card, meta, slug, short
             await navigator.clipboard.write([item]);
             showStatus('PNG copied to clipboard');
         } catch (error) {
-            console.error('Failed to copy image', error);
+            console.error('Failed to copy PNG', error);
             showStatus('Unable to copy PNG');
         } finally {
             setIsExporting(false);
         }
-    }, [runWithFullScale, showStatus]);
+    }, [runExportTask, showStatus]);
 
     const handleDownloadPng = useCallback(async () => {
-        if (!cardRef.current) {
-            showStatus('Preview not ready yet');
-            return;
-        }
-
         try {
             setIsExporting(true);
-            const dataUrl = await runWithFullScale(node => toPng(node, {
-                pixelRatio: 2,
+            const dataUrl = await runExportTask((node: HTMLElement) => toPng(node, {
                 cacheBust: true,
-                backgroundColor: '#001f3f',
+                pixelRatio: 2,
+                backgroundColor: '#040c1e',
             }));
 
             const link = document.createElement('a');
             link.href = dataUrl;
             link.download = `${slug}.png`;
+            link.rel = 'noopener';
+            link.target = '_blank';
+            document.body.appendChild(link);
             link.click();
+            document.body.removeChild(link);
             showStatus('PNG downloaded');
         } catch (error) {
-            console.error('Failed to generate image', error);
-            showStatus('Unable to generate PNG');
+            console.error('Failed to download PNG', error);
+            showStatus('Unable to download PNG');
         } finally {
             setIsExporting(false);
         }
-    }, [runWithFullScale, showStatus, slug]);
+    }, [runExportTask, showStatus, slug]);
 
     const handleDownloadWebp = useCallback(async () => {
-        if (!cardRef.current) {
-            showStatus('Preview not ready yet');
-            return;
-        }
-
         try {
             setIsExporting(true);
-            const canvas = await runWithFullScale(node => toCanvas(node, {
-                pixelRatio: 2,
+            const canvas = await runExportTask((node: HTMLElement) => toCanvas(node, {
                 cacheBust: true,
-                backgroundColor: '#001f3f',
+                pixelRatio: 2,
+                backgroundColor: '#040c1e',
             }));
 
             const dataUrl = canvas.toDataURL('image/webp', 0.92);
             if (!dataUrl.startsWith('data:image/webp')) {
-                showStatus('WebP not supported in this browser');
+                showStatus('WebP not supported');
                 return;
             }
 
             const link = document.createElement('a');
             link.href = dataUrl;
             link.download = `${slug}.webp`;
+            link.rel = 'noopener';
+            link.target = '_blank';
+            document.body.appendChild(link);
             link.click();
+            document.body.removeChild(link);
             showStatus('WebP downloaded');
         } catch (error) {
-            console.error('Failed to generate WebP image', error);
-            showStatus('Unable to generate WebP');
+            console.error('Failed to download WebP', error);
+            showStatus('Unable to download WebP');
         } finally {
             setIsExporting(false);
         }
-    }, [runWithFullScale, showStatus, slug]);
+    }, [runExportTask, showStatus, slug]);
 
-    const handleOpenComposer = useCallback(() => {
-        const intentUrl = `https://x.com/intent/tweet?text=${encodeURIComponent(summary.text)}`;
-        window.open(intentUrl, '_blank');
-    }, [summary.text]);
+    const handleDisplayOptionChange = useCallback((option: keyof ShareCardDisplayOptions) => (event: ChangeEvent<HTMLInputElement>) => {
+        const { checked } = event.target;
+        setDisplayOptions(prev => ({
+            ...prev,
+            [option]: checked,
+        }));
+    }, []);
+
+    const handleFooterLabelChange = useCallback((event: ChangeEvent<HTMLInputElement>) => {
+        setFooterLabel(event.target.value);
+    }, []);
 
     useEffect(() => {
-        const handleEscape = (event: KeyboardEvent) => {
+        const handleKeyDown = (event: KeyboardEvent) => {
             if (event.key === 'Escape') {
                 onClose();
             }
         };
-
-        window.addEventListener('keydown', handleEscape);
-        return () => window.removeEventListener('keydown', handleEscape);
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
     }, [onClose]);
 
     return (
-        <div className={styles.overlay}>
-            <div className={styles.modal} role="dialog" aria-modal="true">
-                <div className={styles.header}>
-                    <h2>Share on X</h2>
-                    <button className={styles.closeButton} onClick={onClose} aria-label="Close share dialog">×</button>
-                </div>
-                <div className={styles.body}>
-                    <div className={styles.previewWrapper} ref={previewWrapperRef}>
-                        <div ref={cardRef} style={previewContainerStyle}>
-                            <ShareCard card={card} meta={meta} slug={slug} shortUrl={shortUrl} footerLabel="Open in app" />
+        <>
+            <div className={styles.overlay}>
+                <div className={styles.modal} role="dialog" aria-modal="true">
+                    <header className={styles.header}>
+                        <div>
+                            <h2>Create share card</h2>
+                            <p className={styles.subtitle}>Preview, copy post text, and export high-res PNG assets.</p>
                         </div>
-                    </div>
-                    <div className={styles.contentColumn}>
-                        <div className={styles.summarySection}>
-                            <label htmlFor="share-summary">Post text ({summary.text.length}/280)</label>
-                            <textarea
-                                id="share-summary"
-                                className={styles.summaryTextarea}
-                                value={summary.text}
-                                readOnly
-                            />
-                        </div>
-                        <div className={styles.actions}>
-                            <button onClick={handleCopySummary}>Copy post text</button>
-                            <button onClick={handleCopyLink}>Copy link</button>
-                            <button onClick={handleOpenComposer}>Open X composer</button>
-                            <button onClick={handleCopyImage} disabled={isExporting}>
-                                {isExporting ? 'Generating…' : 'Copy PNG'}
-                            </button>
-                            <button onClick={handleDownloadPng} disabled={isExporting}>
-                                {isExporting ? 'Generating…' : 'Download PNG'}
-                            </button>
-                            <button onClick={handleDownloadWebp} disabled={isExporting}>
-                                {isExporting ? 'Generating…' : 'Download WebP'}
-                            </button>
-                        </div>
-                        {statusMessage && <div className={styles.status}>{statusMessage}</div>}
+                        <button type="button" className={styles.closeButton} onClick={onClose} aria-label="Close share dialog">×</button>
+                    </header>
+                    <div className={styles.body}>
+                        <section className={styles.previewColumn}>
+                            <div className={styles.previewFrame} ref={previewFrameRef}>
+                                <div
+                                    className={styles.previewCanvas}
+                                    style={{ height: '100%', minHeight: `${Math.max(cardHeight * scale, 1)}px` }}
+                                >
+                                    <ShareCard
+                                        card={card}
+                                        meta={meta}
+                                        slug={slug}
+                                        shortUrl={shortUrl}
+                                        footerLabel={footerLabel}
+                                        displayOptions={displayOptions}
+                                        scale={scale}
+                                        height={cardHeight}
+                                    />
+                                </div>
+                            </div>
+                        </section>
+                        <section className={styles.controlsColumn}>
+                            <div className={styles.section}>
+                                <div className={styles.sectionHeading}>
+                                    <h3>Share copy</h3>
+                                    <span>{summary.text.length}/280</span>
+                                </div>
+                                <textarea
+                                    className={styles.summaryTextarea}
+                                    value={summary.text}
+                                    readOnly
+                                    rows={6}
+                                />
+                                <div className={styles.buttonRow}>
+                                    <button type="button" onClick={handleCopySummary}>Copy post text</button>
+                                    <button type="button" onClick={handleCopyLink}>Copy link</button>
+                                    <button type="button" onClick={handleOpenComposer}>Open X composer</button>
+                                </div>
+                            </div>
+                            <div className={styles.section}>
+                                <div className={styles.sectionHeading}>
+                                    <h3>Appearance</h3>
+                                    <span>Toggle elements on the card</span>
+                                </div>
+                                <div className={styles.toggleGrid}>
+                                    <label className={styles.toggle}>
+                                        <input
+                                            type="checkbox"
+                                            checked={displayOptions.showModulePill}
+                                            onChange={handleDisplayOptionChange('showModulePill')}
+                                        />
+                                        <span>Module badge</span>
+                                    </label>
+                                    <label className={styles.toggle}>
+                                        <input
+                                            type="checkbox"
+                                            checked={displayOptions.showBreadcrumbs}
+                                            onChange={handleDisplayOptionChange('showBreadcrumbs')}
+                                        />
+                                        <span>Module trail</span>
+                                    </label>
+                                    <label className={styles.toggle}>
+                                        <input
+                                            type="checkbox"
+                                            checked={displayOptions.showDescription}
+                                            onChange={handleDisplayOptionChange('showDescription')}
+                                        />
+                                        <span>Description</span>
+                                    </label>
+                                    <label className={styles.toggle}>
+                                        <input
+                                            type="checkbox"
+                                            checked={displayOptions.showBulletPoints}
+                                            onChange={handleDisplayOptionChange('showBulletPoints')}
+                                        />
+                                        <span>Bullet list</span>
+                                    </label>
+                                    <label className={styles.toggle}>
+                                        <input
+                                            type="checkbox"
+                                            checked={displayOptions.showBadges}
+                                            onChange={handleDisplayOptionChange('showBadges')}
+                                        />
+                                        <span>Stat badges</span>
+                                    </label>
+                                    <label className={styles.toggle}>
+                                        <input
+                                            type="checkbox"
+                                            checked={displayOptions.showLink}
+                                            onChange={handleDisplayOptionChange('showLink')}
+                                        />
+                                        <span>Deep link</span>
+                                    </label>
+                                </div>
+                                <label className={styles.textField}>
+                                    <span>Link label</span>
+                                    <input
+                                        type="text"
+                                        value={footerLabel}
+                                        onChange={handleFooterLabelChange}
+                                        placeholder="Open in app"
+                                        disabled={!displayOptions.showLink}
+                                    />
+                                </label>
+                            </div>
+                            <div className={styles.section}>
+                                <div className={styles.sectionHeading}>
+                                    <h3>Export</h3>
+                                    <span>High-res PNG/WebP assets</span>
+                                </div>
+                                <div className={styles.buttonColumn}>
+                                    <button type="button" onClick={handleCopyImage} disabled={isExporting}>
+                                        {isExporting ? 'Preparing…' : 'Copy PNG to clipboard'}
+                                    </button>
+                                    <button type="button" onClick={handleDownloadPng} disabled={isExporting}>
+                                        {isExporting ? 'Preparing…' : 'Download PNG'}
+                                    </button>
+                                    <button type="button" onClick={handleDownloadWebp} disabled={isExporting}>
+                                        {isExporting ? 'Preparing…' : 'Download WebP'}
+                                    </button>
+                                </div>
+                            </div>
+                            {status && <div className={styles.status}>{status}</div>}
+                        </section>
                     </div>
                 </div>
             </div>
-        </div>
+            <div className={styles.exportSurface} aria-hidden>
+                <ShareCard
+                    ref={exportCardRef}
+                    card={card}
+                    meta={meta}
+                    slug={slug}
+                    shortUrl={shortUrl}
+                    footerLabel={footerLabel}
+                    displayOptions={displayOptions}
+                    scale={1}
+                    height={cardHeight}
+                    onHeightChange={handleCardHeightChange}
+                />
+            </div>
+        </>
     );
 };
 

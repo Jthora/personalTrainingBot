@@ -12,6 +12,7 @@
             "title": "Training Employees on Security Awareness",
             "description": "Ensuring all employees are trained in security best practices.",
             "bulletpoints": "Security Workshops, Threat Recognition, Access Control Policies",
+            "summaryText": "Run awareness drills so everyone spots threats and respects access rules.",
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -20,6 +21,7 @@
             "title": "Mitigating Insider Threats",
             "description": "Identifying and neutralizing insider threats before they cause damage.",
             "bulletpoints": "Employee Monitoring, Threat Reporting, Behavioral Red Flags",
+            "summaryText": "Watch for behavioral tells, empower reporting, and shut insider risks down early.",
             "duration": "90",
             "difficulty": "Intermediate"
         }

@@ -18,6 +18,7 @@
                 "Introduce vector representations for psi energy flux: \\( \\vec{J}_\\Psi = \\Psi \\vec{v} \\)",
                 "Explore the tensor formulation \\( T_{\\mu \\nu}^\\Psi \\) for psi energy and its interaction with spacetime."
             ],
+            "summaryText": "Unify scalar, vector, and tensor views to fully describe psi field structure.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -31,6 +32,7 @@
                 "The curl (\\( \\nabla \\times \\)) describes rotational psi energy flow: \\[ \\nabla \\times \\Psi \\vec{B} \\]",
                 "The Laplacian (\\( \\nabla^2 \\)) governs psi diffusion: \\[ \\nabla^2 \\Psi = \\frac{\\partial^2 \\Psi}{\\partial x^2} + \\frac{\\partial^2 \\Psi}{\\partial y^2} + \\frac{\\partial^2 \\Psi}{\\partial z^2} \\]"
             ],
+            "summaryText": "Apply grad, div, curl, and Laplacian to map how psi flows, spirals, and diffuses.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -43,6 +45,7 @@
                 "Understand its role in field equations, similar to mass-energy density in physics.",
                 "Derive its spatial and temporal variations using partial derivatives: \\[ \\frac{\\partial \\Psi}{\\partial t} + \\nabla \\cdot (\\Psi \\vec{v}) = 0 \\]"
             ],
+            "summaryText": "Treat the psi density equation like continuity—track how energy accumulates or leaves.",
             "duration": 12,
             "difficulty": "Advanced"
         },
@@ -55,6 +58,7 @@
                 "Understand the balance of psi energy flux across a system.",
                 "Analyze its application in psi energy conservation models."
             ],
+            "summaryText": "Use the divergence relation to balance every psi inflow, outflow, and sourced force.",
             "duration": 14,
             "difficulty": "Advanced"
         },
@@ -67,6 +71,7 @@
                 "Defines how psi energy interacts with gravitational and field dynamics.",
                 "Used in modifications of general relativity with psi-based influences."
             ],
+            "summaryText": "Decompose the psi stress tensor to see how energy stresses spacetime in every direction.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -79,6 +84,7 @@
                 "Examines harmonic solutions for psi potential fields.",
                 "Used in psi shielding and containment field theories."
             ],
+            "summaryText": "Solve the psi Laplace equation to design calm, steady containment fields.",
             "duration": 14,
             "difficulty": "Advanced"
         },
@@ -91,6 +97,7 @@
                 "Examines psi energy decay, amplification, and resonance effects.",
                 "Application in psi communication and psi field reinforcement techniques."
             ],
+            "summaryText": "Track the time derivative to monitor decay, growth, and resonance in psi fields.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -103,6 +110,7 @@
                 "Defines how psi fields interact with gravitational curvature.",
                 "Used in alternative models of gravity and psi-based propulsion theories."
             ],
+            "summaryText": "Adjust the metric with psi terms to explore consciousness-driven relativity.",
             "duration": 18,
             "difficulty": "Expert"
         },
@@ -115,6 +123,7 @@
                 "Examines resonance and interference patterns.",
                 "Application in psi transmission and long-range psi effects."
             ],
+            "summaryText": "Lean on the wave equation to predict psi propagation, resonance, and long-range reach.",
             "duration": 18,
             "difficulty": "Expert"
         }

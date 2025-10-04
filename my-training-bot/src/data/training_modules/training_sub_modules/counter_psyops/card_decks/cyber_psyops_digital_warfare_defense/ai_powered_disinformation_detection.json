@@ -17,7 +17,8 @@
                 "Cross-referencing sources to identify synthetic narratives."
             ],
             "duration": "60",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Flag robotic phrasing, audit metadata, and corroborate sources so synthetic articles collapse under verification."
         },
         {
             "id": "ai_disinfo_2",
@@ -29,7 +30,8 @@
                 "Reverse image searching and frame analysis for deepfake verification."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Scrutinize frames, spectra, and provenance so deepfake visuals and audio reveal their synthetic seams."
         },
         {
             "id": "ai_disinfo_3",
@@ -41,7 +43,8 @@
                 "Tracing command-and-control structures behind coordinated disinformation."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Track unnatural engagement surges, map bot constellations, and expose controllers steering coordinated pushes."
         },
         {
             "id": "ai_disinfo_4",
@@ -53,7 +56,8 @@
                 "Bypassing algorithmic censorship with information diversification techniques."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Probe ranking bias, document echo chambers, and diversify feeds to break AI-managed perception funnels."
         },
         {
             "id": "ai_disinfo_5",
@@ -65,7 +69,8 @@
                 "Recognizing style transfer techniques used in AI image generation."
             ],
             "duration": "60",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Inspect artifact clues, run detector scans, and note style-transfer tells to separate synthetic media from authentic."
         },
         {
             "id": "ai_disinfo_6",
@@ -77,7 +82,8 @@
                 "Countering AI-generated social media influence campaigns."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Trace coordinated sentiment swings, map content farms, and deploy counters that blunt AI-run influence ops."
         },
         {
             "id": "ai_disinfo_7",
@@ -89,7 +95,8 @@
                 "Understanding ethical AI use for counter-disinformation efforts."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Stand up ML monitors, automate alerts, and enforce ethical guardrails while neutralizing live AI threats."
         },
         {
             "id": "ai_disinfo_8",
@@ -101,7 +108,8 @@
                 "Deploying counter-narratives to neutralize AI-driven misinformation."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Deconstruct origin chains, chart recurring motifs, and craft counterstories that collapse automated narratives."
         },
         {
             "id": "ai_disinfo_9",
@@ -113,7 +121,8 @@
                 "Tracking provenance of media to differentiate real from synthetic content."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Apply cryptographic marks, validate provenance chains, and rely on resilient auth methods to trust media."
         },
         {
             "id": "ai_disinfo_10",
@@ -125,7 +134,8 @@
                 "Identifying patterns in AI-generated narratives through OSINT methods."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Deploy OSINT traces, scrub metadata, and map narrative patterns so AI fabrications fail authenticity checks."
         }
     ]
 }

@@ -18,7 +18,8 @@
                 "Understanding biases in fact-checking organizations."
             ],
             "duration": "60",
-            "difficulty": "Beginner"
+            "difficulty": "Beginner",
+            "summaryText": "Define fact-checking, insist on independent verification, and note watchdog biases before trusting a verdict."
         },
         {
             "id": "fact_checking_2",
@@ -30,7 +31,8 @@
                 "Examining the track record of a source for bias and reliability."
             ],
             "duration": "75",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Rate sources by authority, surface conflicts of interest, and review track records to score credibility."
         },
         {
             "id": "fact_checking_3",
@@ -42,7 +44,8 @@
                 "Identifying patterns of synchronized media narratives."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Cross-check claims across independent outlets, flag contradictions, and watch for synced narratives."
         },
         {
             "id": "fact_checking_4",
@@ -54,7 +57,8 @@
                 "Spotting red herrings and misdirection tactics."
             ],
             "duration": "75",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Spot fallacies, dissect emotional framing, and call out misdirection before it anchors belief."
         },
         {
             "id": "fact_checking_5",
@@ -66,7 +70,8 @@
                 "Examining metadata for tampering and inconsistencies."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Run reverse searches, inspect deepfake tells, and audit metadata to vet media artifacts."
         },
         {
             "id": "fact_checking_6",
@@ -78,7 +83,8 @@
                 "Identifying patterns of influence operations."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Trace bot amplification, analyze hashtags for artificial spikes, and map coordinated influence plays."
         },
         {
             "id": "fact_checking_7",
@@ -90,7 +96,8 @@
                 "Recognizing limitations and biases in AI fact-checking algorithms."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Leverage AI analysis, detect propaganda cues, and note model blind spots so automation stays reliable."
         },
         {
             "id": "fact_checking_8",
@@ -102,7 +109,8 @@
                 "Recognizing the use of selective statistics to mislead."
             ],
             "duration": "75",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Compare official lines with independents, hunt selective stats, and highlight institutional bias."
         },
         {
             "id": "fact_checking_9",
@@ -114,7 +122,8 @@
                 "Comparing speech patterns in authentic vs. fabricated statements."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Analyze wording for deception markers, catch omissions, and contrast speech patterns to test authenticity."
         },
         {
             "id": "fact_checking_10",
@@ -126,7 +135,8 @@
                 "Building decentralized truth-verification communities."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Build myth-busting content, mobilize digital activism, and empower communities to verify truth collectively."
         }
     ]
 }

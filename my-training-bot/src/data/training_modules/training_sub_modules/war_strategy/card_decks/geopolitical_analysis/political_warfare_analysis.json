@@ -12,6 +12,7 @@
             "title": "Election Interference Tactics",
             "description": "Analyzing state-sponsored influence campaigns on global elections.",
             "bulletpoints": "Misinformation campaigns, social media manipulation, hacking voter infrastructure",
+            "summaryText": "Deconstruct election meddling playbooks that blend misinformation blitzes, social bots, and targeted intrusions against voter systems to harden democratic defenses.",
             "duration": "50",
             "difficulty": "Advanced"
         },
@@ -20,6 +21,7 @@
             "title": "Psychological Warfare in Politics",
             "description": "How political entities use psychological manipulation to control narratives.",
             "bulletpoints": "Propaganda frameworks, mass perception control, media warfare",
+            "summaryText": "Trace how narrative architects weaponize propaganda frameworks and media ecosystems to steer public sentiment and neutralize opposition.",
             "duration": "45",
             "difficulty": "Advanced"
         }

@@ -18,6 +18,7 @@
                 "Analyze strategic movements of state and non-state actors in global conflicts",
                 "Apply game theory to predict adversarial decision-making and escalation patterns"
             ],
+            "summaryText": "Run AI-aided wargames to anticipate conflict pathways and escalation decisions.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -30,6 +31,7 @@
                 "Analyze the impact of trade policies, international sanctions, and global supply chain disruptions",
                 "Identify emerging market opportunities and economic vulnerabilities for strategic positioning"
             ],
+            "summaryText": "Simulate macro shocks and policy shifts to gauge global market trajectories.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -42,6 +44,7 @@
                 "Model supply chain disruptions caused by energy crises or trade restrictions",
                 "Assess the geopolitical influence of energy superpowers like Russia, Saudi Arabia, and the United States"
             ],
+            "summaryText": "Model critical resource chokepoints to foresee energy-triggered conflicts.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -54,6 +57,7 @@
                 "Use attack tree analysis to simulate adversary cyber strategies",
                 "Assess cyber warfare as a tool for asymmetric conflict and hybrid warfare scenarios"
             ],
+            "summaryText": "Map adversary cyber playbooks to evaluate systemic risk and defensive gaps.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -66,6 +70,7 @@
                 "Analyze how rising sea levels and extreme weather affect national security",
                 "Assess geopolitical tensions over water access and arable land scarcity"
             ],
+            "summaryText": "Project climate shocks to anticipate migration waves and resource tensions.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -78,6 +83,7 @@
                 "Model the spread of disinformation campaigns and social media manipulation",
                 "Analyze how AI-driven PsyOps impact election security and civil unrest"
             ],
+            "summaryText": "Assess AI-powered disinformation campaigns to forecast perception battles.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -90,6 +96,7 @@
                 "Analyze the role of second-strike capability in nuclear deterrence",
                 "Model crisis scenarios involving nuclear proliferation and diplomatic resolutions"
             ],
+            "summaryText": "Explore deterrence scenarios to map escalation ladders and stability thresholds.",
             "duration": 8,
             "difficulty": "Advanced"
         },
@@ -102,6 +109,7 @@
                 "Simulate the effects of trade wars, sanctions, and industrial espionage",
                 "Assess the strategic importance of rare-earth elements and semiconductor manufacturing"
             ],
+            "summaryText": "Stress-test global supply chains to pinpoint strategic vulnerabilities and leverage points.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -114,6 +122,7 @@
                 "Analyze the role of bioterrorism in modern warfare scenarios",
                 "Model government response strategies, including quarantine enforcement and vaccine diplomacy"
             ],
+            "summaryText": "Simulate pandemics and biothreats to refine response and resilience strategies.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -126,6 +135,7 @@
                 "Assess military posturing, economic policies, and soft power strategies",
                 "Simulate scenarios where regional conflicts escalate into global crises"
             ],
+            "summaryText": "Model great-power rivalries to anticipate shifts in global hegemony and crisis escalation.",
             "duration": 7,
             "difficulty": "Advanced"
         }

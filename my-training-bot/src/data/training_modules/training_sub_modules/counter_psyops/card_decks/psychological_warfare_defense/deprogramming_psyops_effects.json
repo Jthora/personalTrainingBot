@@ -17,6 +17,7 @@
                 "Use journaling to track cognitive shifts before and after exposure.",
                 "Compare narratives encountered in media with known disinformation tactics."
             ],
+            "summaryText": "Audit beliefs, document shifts, and cross-check narratives to expose conditioning.",
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -29,6 +30,7 @@
                 "Use meditation and mindfulness to observe thoughts without attachment.",
                 "Implement intentional cognitive redirection when intrusive loops trigger."
             ],
+            "summaryText": "Spot implanted loops, stay mindful, and pivot attention the moment they fire.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -41,6 +43,7 @@
                 "Disassemble propaganda techniques by breaking down their narrative structure.",
                 "Compare different information sources to triangulate truth."
             ],
+            "summaryText": "Reverse engineer the playbook, dismantle the story spine, and triangulate reality.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -53,6 +56,7 @@
                 "Reframe trauma-induced responses through exposure therapy techniques.",
                 "Replace conditioned fear responses with neutral or positive associations."
             ],
+            "summaryText": "Detach triggers, reframe the charge, and overwrite fear with grounded responses.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -65,6 +69,7 @@
                 "Limit exposure to high-intensity propaganda outlets.",
                 "Rebuild personal beliefs based on verified independent research."
             ],
+            "summaryText": "Vet every source, starve the propaganda feed, and rebuild beliefs from verified ground truth.",
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -77,6 +82,7 @@
                 "Rewire cognitive pathways through deliberate positive reinforcement.",
                 "Engage in storytelling techniques to reclaim personal narrative control."
             ],
+            "summaryText": "Overwrite toxic scripts with affirmations, reinforcement, and reclaimed storytelling.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -89,6 +95,7 @@
                 "Challenge beliefs regularly to refine analytical clarity.",
                 "Avoid emotional decision-making by using structured thought methodologies."
             ],
+            "summaryText": "Work the logic muscles, stress-test beliefs, and route decisions through structured thinking.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -101,6 +108,7 @@
                 "Develop a strong support network of individuals who value independent thought.",
                 "Avoid ideological echo chambers that reinforce manipulation patterns."
             ],
+            "summaryText": "Rebuild trust with critical allies, fortify support circles, and steer clear of echo chambers.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -113,6 +121,7 @@
                 "Engage in creative or meditative activities to reset mental pathways.",
                 "Use sleep optimization techniques to clear subconscious programming."
             ],
+            "summaryText": "Unplug, reset mindspace through creativity, and let deep rest flush the residue.",
             "duration": "120",
             "difficulty": "Expert"
         },
@@ -125,6 +134,7 @@
                 "Cultivate continuous self-awareness to detect early signs of manipulation.",
                 "Teach others deprogramming techniques to strengthen collective resistance."
             ],
+            "summaryText": "Keep defenses current, stay hyper-aware, and share the toolkit to harden the network.",
             "duration": "150",
             "difficulty": "Expert"
         }

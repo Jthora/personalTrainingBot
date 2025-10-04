@@ -14,6 +14,7 @@
                 "Multiply matrices using the row-column rule: \\[ C = AB \\quad \\text{where} \\quad C_{ij} = \\sum_{k} A_{ik} B_{kj} \\]",
                 "Understand the properties of identity matrices \\( I_n \\) and inverse matrices \\( A^{-1} \\) such that \\( A A^{-1} = I \\)"
             ],
+            "summaryText": "Combine addition, scalar scaling, products, and inverses to manipulate matrices reliably.",
             "duration": 9,
             "difficulty": "Intermediate"
         },
@@ -27,6 +28,7 @@
                 "Find the inverse of a matrix using the formula: \\[ A^{-1} = \\frac{1}{\\det(A)} \\text{adj}(A) \\]",
                 "Use Cramer’s Rule to solve linear systems: \\( x_i = \\frac{\\det(A_i)}{\\det(A)} \\]"
             ],
+            "summaryText": "Deploy determinants, adjugates, and Cramer’s rule to invert matrices and solve systems.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -39,6 +41,7 @@
                 "Find eigenvectors associated with each eigenvalue by solving \\( (A - \\lambda I)x = 0 \\)",
                 "Apply eigenvectors in physics, computer graphics, and data science (e.g., PCA, Markov Chains)"
             ],
+            "summaryText": "Solve characteristic equations and eigenvectors to interpret transformation modes across domains.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -51,6 +54,7 @@
                 "Use QR decomposition: \\( A = QR \\), where \\( Q \\) is an orthogonal matrix and \\( R \\) is an upper triangular matrix",
                 "Understand Singular Value Decomposition (SVD): \\[ A = U \\Sigma V^T \\]"
             ],
+            "summaryText": "Factor matrices with LU, QR, and SVD to streamline numerical solutions and analysis.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -63,6 +67,7 @@
                 "Understand the concept of a basis: A set of linearly independent vectors that span the space",
                 "Compute the dimension of a vector space as the number of basis vectors"
             ],
+            "summaryText": "Frame spaces via their bases and dimensions to organize linear relationships.",
             "duration": 8,
             "difficulty": "Intermediate"
         },
@@ -75,6 +80,7 @@
                 "Represent a linear transformation as a matrix \\( [T] \\) relative to a basis",
                 "Understand change of basis: \\[ [T]_{B'} = P^{-1} [T]_B P \\], where \\( P \\) is the transformation matrix"
             ],
+            "summaryText": "Represent linear maps with matrices and convert between bases using similarity transforms.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -88,6 +94,7 @@
                 "Understand inner products: \\[ \\langle x, y \\rangle = x^T y \\], which generalizes dot products",
                 "Use Gram-Schmidt orthogonalization to construct an orthonormal basis"
             ],
+            "summaryText": "Use norms, inner products, and Gram-Schmidt to give vector spaces geometric structure.",
             "duration": 9,
             "difficulty": "Advanced"
         },
@@ -100,6 +107,7 @@
                 "Compute the projection of a vector onto a subspace: \\[ \\text{proj}_W(v) = P v \\] where \\( P \\) is the projection matrix",
                 "Understand the least-squares approximation as a projection problem"
             ],
+            "summaryText": "Leverage orthogonality and projections to solve least-squares and subspace approximation tasks.",
             "duration": 8,
             "difficulty": "Advanced"
         },
@@ -112,6 +120,7 @@
                 "Understand the Laplacian matrix \\( L = D - A \\), where \\( D \\) is the degree matrix",
                 "Use spectral graph theory: The eigenvalues of \\( L \\) provide insights into graph connectivity"
             ],
+            "summaryText": "Analyze graphs via adjacency and Laplacian matrices to extract spectral connectivity insights.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -124,6 +133,7 @@
                 "Apply Principal Component Analysis (PCA) using eigenvalue decomposition",
                 "Compute gradients efficiently using matrix calculus in backpropagation"
             ],
+            "summaryText": "Power machine learning pipelines with matrix transforms, PCA, and gradient backpropagation.",
             "duration": 12,
             "difficulty": "Expert"
         }

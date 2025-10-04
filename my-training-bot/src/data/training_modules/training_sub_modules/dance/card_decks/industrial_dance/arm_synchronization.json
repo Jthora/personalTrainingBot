@@ -13,6 +13,7 @@
                 "Use shoulder and elbow control for precision",
                 "Match each strike to the beat for better sync"
             ],
+            "summaryText": "Hit robotic arm strikes that freeze perfectly on every beat.",
             "duration": 5,
             "difficulty": "Beginner"
         },
@@ -25,6 +26,7 @@
                 "Keep motions robotic with clear stopping points",
                 "Engage core for stability and balance"
             ],
+            "summaryText": "Drive both arms in lockstep with crisp stops for industrial precision.",
             "duration": 6,
             "difficulty": "Intermediate"
         }

@@ -17,6 +17,7 @@
                 "Techniques for reinforcing shields against psionic attacks.",
                 "How to use frequency tuning to disrupt harmful energy waves."
             ],
+            "summaryText": "Visualize and fortify your shields, tuning frequencies to repel psionic influence.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Techniques for grounding and neutralizing negative energy fields.",
                 "Using harmonic resonance to disrupt external frequency interference."
             ],
+            "summaryText": "Spot directed energy tells, ground the field, and disrupt interference with resonance.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Neutralizing curses, hexes, and energy siphoning tactics.",
                 "Developing active psionic countermeasures against manipulation attempts."
             ],
+            "summaryText": "Reflect psychic aggression, neutralize curses, and deploy active psionic countermeasures.",
             "duration": "90",
             "difficulty": "Expert"
         }

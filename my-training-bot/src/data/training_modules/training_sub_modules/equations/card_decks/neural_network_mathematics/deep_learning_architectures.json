@@ -19,6 +19,7 @@
                 "Understand max pooling: \\[ P(i, j) = \\max_{(m, n) \\in R(i, j)} f(m, n) \\], reducing spatial dimensions while preserving key features.",
                 "Explore real-world applications such as object detection, facial recognition, and medical imaging."
             ],
+            "summaryText": "Use convolutions and pooling in CNNs to extract hierarchical image features.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -32,6 +33,7 @@
                 "Study LSTM gating mechanisms, preventing vanishing gradients using forget, input, and output gates: \\[ f_t = \\sigma(W_f h_{t-1} + U_f x_t + b_f) \\]",
                 "Apply RNNs and LSTMs in speech recognition, language modeling, and time-series forecasting."
             ],
+            "summaryText": "Capture sequence dependencies with gated RNNs that mitigate vanishing gradients.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -45,6 +47,7 @@
                 "Analyze the computational efficiency of transformer models: \\( O(n^2) \\) for self-attention vs. \\( O(n) \\) for recurrent architectures.",
                 "Compare BERT (Bidirectional Encoding Representations from Transformers) with GPT (Generative Pretrained Transformer) for natural language processing (NLP)."
             ],
+            "summaryText": "Leverage transformer attention to model long-range context without recurrence.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -57,6 +60,7 @@
                 "Study how latent space sampling generates realistic outputs.",
                 "Apply GANs to image synthesis, deepfake generation, and drug discovery."
             ],
+            "summaryText": "Train generators and discriminators adversarially to synthesize realistic data.",
             "duration": 13,
             "difficulty": "Expert"
         },
@@ -70,6 +74,7 @@
                 "Investigate how neuromorphic hardware (IBM TrueNorth, Intel Loihi) mimics biological networks.",
                 "Explore applications in low-power AI systems and brain-computer interfaces."
             ],
+            "summaryText": "Model spiking dynamics for energy-efficient neuromorphic computation.",
             "duration": 15,
             "difficulty": "Expert"
         },
@@ -82,6 +87,7 @@
                 "Study how capsule networks maintain spatial hierarchies using dynamic routing between layers.",
                 "Apply CapsNets in pose detection, 3D object recognition, and medical imaging."
             ],
+            "summaryText": "Preserve part-whole relationships with capsule routing and vector outputs.",
             "duration": 14,
             "difficulty": "Advanced"
         },
@@ -94,6 +100,7 @@
                 "Analyze applications in denoising, feature learning, and anomaly detection.",
                 "Explore variational autoencoders (VAEs) for latent space disentanglement."
             ],
+            "summaryText": "Compress and reconstruct data with autoencoders for representation learning.",
             "duration": 12,
             "difficulty": "Advanced"
         },
@@ -106,6 +113,7 @@
                 "Study applications in recommendation systems, social networks, and molecular chemistry.",
                 "Compare GNNs with traditional convolutional architectures."
             ],
+            "summaryText": "Apply graph convolutions to propagate information across connected nodes.",
             "duration": 13,
             "difficulty": "Expert"
         }

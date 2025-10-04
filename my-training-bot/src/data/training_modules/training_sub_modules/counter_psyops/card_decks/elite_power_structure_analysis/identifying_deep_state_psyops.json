@@ -18,7 +18,8 @@
                 "Understanding the psychological and sociological impact of PsyOps."
             ],
             "duration": "60",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Lay out PsyOps fundamentals, cite classic operations, and summarize their mass-behavior effects."
         },
         {
             "id": "deep_state_psyops_2",
@@ -30,7 +31,8 @@
                 "Dissecting coordinated propaganda and fake news dissemination."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Audit media pipelines for planted voices, decode manipulative language, and track synchronized narrative pushes."
         },
         {
             "id": "deep_state_psyops_3",
@@ -42,7 +44,8 @@
                 "Understanding the role of crisis actors and staged events."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "List false-flag signatures, compare landmark incidents, and document staged elements."
         },
         {
             "id": "deep_state_psyops_4",
@@ -54,7 +57,8 @@
                 "Analyzing how trauma-based programming influences societal reactions."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Spot priming content, explain orchestrated mass beliefs, and tie trauma triggers to crowd compliance."
         },
         {
             "id": "deep_state_psyops_5",
@@ -66,7 +70,8 @@
                 "Countering censorship through decentralized platforms and alternative networks."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Expose platform filtering tactics, flag synthetic info loops, and propose censorship-resistant channels."
         },
         {
             "id": "deep_state_psyops_6",
@@ -78,7 +83,8 @@
                 "Dissecting movements engineered to misdirect public resistance."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Profile controlled figureheads, spot narrative bottlenecks, and map misdirection campaigns."
         },
         {
             "id": "deep_state_psyops_7",
@@ -90,7 +96,8 @@
                 "Recognizing how psychological operations shape military and police behavior."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Review state psywar playbooks, summarize MK-style programs, and connect conditioning to enforcement policies."
         },
         {
             "id": "deep_state_psyops_8",
@@ -102,7 +109,8 @@
                 "Understanding the psychological impact of inflation and economic warfare."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Frame economic shocks as psywar, link monetary tools to compliance, and describe fear effects of scarcity."
         },
         {
             "id": "deep_state_psyops_9",
@@ -114,7 +122,8 @@
                 "Identifying rituals disguised as mainstream political and cultural events."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Decode ritual imagery, tie spiritual fear tactics to obedience, and expose ceremonial psyops."
         },
         {
             "id": "deep_state_psyops_10",
@@ -126,7 +135,8 @@
                 "Developing decentralized counter-PsyOps strategies for public awareness."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Coach cognitive defenses, plan takedowns of influence webs, and script grassroots counter-psyops."
         }
     ]
 }

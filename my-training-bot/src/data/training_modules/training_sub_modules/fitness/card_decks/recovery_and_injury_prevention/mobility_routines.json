@@ -16,6 +16,7 @@
                 "Focus on slow, deliberate motion to prevent injury",
                 "Perform daily to maintain flexibility and joint health"
             ],
+            "summaryText": "Cycle each joint through gentle circles daily to nourish range of motion without strain.",
             "duration": 5,
             "difficulty": "Beginner"
         },
@@ -28,6 +29,7 @@
                 "Engage the core for controlled movement",
                 "Hold for 15-30 seconds and switch sides"
             ],
+            "summaryText": "Use controlled spinal twists to refresh torso rotation while bracing the core for support.",
             "duration": 5,
             "difficulty": "Beginner"
         }

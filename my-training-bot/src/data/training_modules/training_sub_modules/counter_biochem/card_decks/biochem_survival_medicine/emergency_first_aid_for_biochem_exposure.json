@@ -14,7 +14,8 @@
             "description": "Methods for treating chemical burns, skin contact poisoning, and dermal exposure to hazardous substances.",
             "bulletpoints": "Irrigation techniques, pH neutralization, barrier application",
             "duration": "12",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Flush and strip contaminants fast, neutralize pH swings, and reseal skin so chemical burns stop progressing."
         },
         {
             "id": "first_aid_2",
@@ -22,7 +23,8 @@
             "description": "Procedures for clearing airways and providing oxygen support after inhalation of toxic gases or airborne bioweapons.",
             "bulletpoints": "Oxygen therapy, airway clearance, assisted ventilation",
             "duration": "10",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Clear airways, flood lungs with clean oxygen, and assist ventilation before toxins shut down respiration."
         },
         {
             "id": "first_aid_3",
@@ -30,7 +32,8 @@
             "description": "Using emergency antidotes and detox agents to counteract poisons, venoms, and neurotoxins.",
             "bulletpoints": "Epinephrine injections, activated charcoal, chelation therapy",
             "duration": "12",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Deploy the right antidote or detox protocol on contact so toxins are bound, neutralized, or flushed before systemic damage."
         }
     ]
 }

@@ -13,6 +13,7 @@
                 "Understand how electric field strength \\( E \\) is defined by: \\[ E = \\frac{F}{q} = \\frac{k_e Q}{r^2} \\]",
                 "Analyze electric potential energy: \\[ U = k_e \\frac{q_1 q_2}{r} \\]"
             ],
+            "summaryText": "Compute electrostatic forces, fields, and potential energy via Coulomb's inverse-square law.",
             "duration": 8,
             "difficulty": "Intermediate"
         },
@@ -25,6 +26,7 @@
                 "Use the right-hand rule to determine the force direction in magnetic fields.",
                 "Explore applications in electric motors and generators where \\( \\mathbf{F} = I \\mathbf{L} \\times \\mathbf{B} \\)"
             ],
+            "summaryText": "Combine electric and magnetic influences to predict motion of charges through Lorentz force.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -37,6 +39,7 @@
                 "Apply symmetry arguments to find electric fields in charge distributions.",
                 "Analyze applications in capacitors and electric shielding."
             ],
+            "summaryText": "Relate enclosed charge to electric flux with Gauss's law for symmetric field solutions.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -49,6 +52,7 @@
                 "Understand Lenz's Law, which states that the induced current opposes the change in flux.",
                 "Analyze applications in transformers and electromagnetic wave generation."
             ],
+            "summaryText": "Recognize that changing magnetic flux induces opposing emf per Faraday-Lenz law.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -61,6 +65,7 @@
                 "Extend it to include Maxwell's displacement current term: \\[ \\oint \\mathbf{B} \\cdot d\\mathbf{s} = \\mu_0 \\left( I_{enc} + \\epsilon_0 \\frac{d\\Phi_E}{dt} \\right) \\]",
                 "Analyze how this equation unifies electricity and magnetism into a single framework."
             ],
+            "summaryText": "Show how currents and time-varying electric fields circulate magnetic flux via Ampère-Maxwell law.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -73,6 +78,7 @@
                 "Analyze how Maxwell's equations predict the existence of electromagnetic waves.",
                 "Derive the wave equation \\( \\nabla^2 \\mathbf{E} - \\mu_0 \\epsilon_0 \\frac{\\partial^2 \\mathbf{E}}{\\partial t^2} = 0 \\)"
             ],
+            "summaryText": "Use the four Maxwell equations to couple electric and magnetic fields and predict light waves.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -85,6 +91,7 @@
                 "Understand how energy flux is directed perpendicular to \\( \\mathbf{E} \\) and \\( \\mathbf{B} \\)",
                 "Analyze applications in waveguides, antennas, and radiative energy transfer."
             ],
+            "summaryText": "Track electromagnetic energy transport direction and intensity with the Poynting vector.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -97,6 +104,7 @@
                 "Understand how solutions take the form \\[ \\mathbf{E}(x,t) = E_0 e^{i(kx - \\omega t)} \\]",
                 "Analyze polarization, reflection, and transmission of electromagnetic waves."
             ],
+            "summaryText": "Solve Maxwell-derived wave equations to study EM propagation and polarization effects.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -109,6 +117,7 @@
                 "Analyze the motion of charged particles in magnetized plasmas via the Lorentz force.",
                 "Explore applications in controlled nuclear fusion and space plasma physics."
             ],
+            "summaryText": "Model plasma continuity and Lorentz dynamics governing fusion and space plasmas.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -121,6 +130,7 @@
                 "Understand gauge transformations and their role in simplifying equations.",
                 "Explore applications in quantum electrodynamics (QED) and superconductivity."
             ],
+            "summaryText": "Employ scalar and vector potentials with gauge freedom for elegant electrodynamics analysis.",
             "duration": 16,
             "difficulty": "Expert"
         }

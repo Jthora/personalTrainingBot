@@ -17,6 +17,7 @@
                 "Understanding body mechanics and movement efficiency.",
                 "Situational awareness and reaction speed training."
             ],
+            "summaryText": "Instills core striking chains, efficient movement, and rapid threat recognition for tight spaces.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Using improvised weapons for survival combat.",
                 "Tactical positioning and leverage control."
             ],
+            "summaryText": "Covers armed defense responses, improvised weapon use, and leverage tactics to seize control.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Understanding leverage and positioning for ground defense.",
                 "Escape tactics from chokeholds and grappling situations."
             ],
+            "summaryText": "Teaches submissions, leverage management, and escape drills to finish or break free on the ground.",
             "duration": "90",
             "difficulty": "Expert"
         }

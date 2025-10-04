@@ -17,6 +17,7 @@
                 "Identify cognitive biases that are exploited in propaganda campaigns.",
                 "Break down how misinformation spreads through digital and social networks."
             ],
+            "summaryText": "Review social engineering case studies, map exploited biases, and chart misinformation spread paths.",
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -29,6 +30,7 @@
                 "Monitor how algorithms filter content to manipulate public perception.",
                 "Identify the difference between organic discourse and coordinated influence campaigns."
             ],
+            "summaryText": "List key narrative shapers, watch algorithm filters, and separate organic talk from coordinated pushes.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -41,6 +43,7 @@
                 "Assess government and corporate-backed experts for bias and agenda alignment.",
                 "Develop independent verification methods to fact-check authoritative claims."
             ],
+            "summaryText": "Spot appeals to authority, vet expert backers, and validate claims with your own checks.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -53,6 +56,7 @@
                 "Use logical deconstruction to expose contradictions in official narratives.",
                 "Develop personal mental resilience strategies against manipulative techniques."
             ],
+            "summaryText": "Identify gaslighting patterns, dismantle contradictions, and fortify your mindset.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -65,6 +69,7 @@
                 "Recognize emotional appeals used to enforce conformity.",
                 "Develop response strategies to counteract forced consensus."
             ],
+            "summaryText": "Examine groupthink reinforcers, spot emotional conformity levers, and rehearse dissent responses.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -77,6 +82,7 @@
                 "Identify astroturfing campaigns that create artificial grassroots movements.",
                 "Use data analysis and public sentiment tracking to compare real vs. fabricated opinions."
             ],
+            "summaryText": "Audit polls and events for manufactured consent, expose astroturf, and measure real sentiment.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -89,6 +95,7 @@
                 "Recognize patterns in emergency narratives that justify extreme measures.",
                 "Develop counter-messaging techniques to reduce public panic and restore rational discourse."
             ],
+            "summaryText": "Study crisis precedents, flag emergency playbooks, and craft calm counter-narratives.",
             "duration": "120",
             "difficulty": "Expert"
         },
@@ -101,6 +108,7 @@
                 "Track psychological priming techniques used to prepare the public for policy shifts.",
                 "Develop awareness exercises to recognize conditioning in real-time."
             ],
+            "summaryText": "Scan media for priming themes, link them to upcoming shifts, and practice spotting conditioning live.",
             "duration": "120",
             "difficulty": "Expert"
         },
@@ -113,6 +121,7 @@
                 "Monitor digital influence campaigns and their funding sources.",
                 "Develop methods for counter-messaging and narrative disruption."
             ],
+            "summaryText": "Identify front groups, trace digital influence money, and deploy disruption tactics.",
             "duration": "120",
             "difficulty": "Expert"
         },
@@ -125,6 +134,7 @@
                 "Engage in media detox periods to reset mental frameworks and reduce bias.",
                 "Establish decentralized, trusted information networks outside mainstream control."
             ],
+            "summaryText": "Question every source, schedule detox resets, and build decentralized intel circles.",
             "duration": "150",
             "difficulty": "Expert"
         }

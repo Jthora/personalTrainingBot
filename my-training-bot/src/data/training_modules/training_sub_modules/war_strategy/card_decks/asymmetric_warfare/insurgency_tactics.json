@@ -12,6 +12,7 @@
             "title": "Hit-and-Run Attacks",
             "description": "Executing rapid ambushes and withdrawing before retaliation.",
             "bulletpoints": "Use speed, small unit coordination, and mobile concealment",
+            "summaryText": "Highlights fast ambush cycles, tight squad sync, and concealment to strike then vanish.",
             "duration": "25",
             "difficulty": "Advanced"
         },
@@ -20,6 +21,7 @@
             "title": "Sabotage and Supply Chain Disruption",
             "description": "Targeting logistical vulnerabilities to weaken enemy forces.",
             "bulletpoints": "Disrupt supply lines, destroy key infrastructure, and utilize deception",
+            "summaryText": "Covers cutting logistics, wrecking infrastructure, and using deception to erode capability.",
             "duration": "35",
             "difficulty": "Expert"
         }

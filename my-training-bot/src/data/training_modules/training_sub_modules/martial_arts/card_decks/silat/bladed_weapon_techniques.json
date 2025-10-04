@@ -13,6 +13,7 @@
                 "Use quick, slicing motions to target limbs",
                 "Keep the blade close to the body for control"
             ],
+            "summaryText": "Ride the reverse grip tight to your frame and carve quick limb-level slashes.",
             "duration": 5,
             "difficulty": "Advanced"
         },
@@ -25,6 +26,7 @@
                 "Step off the centerline to avoid counterattacks",
                 "Follow up with a precise thrust to a vital area"
             ],
+            "summaryText": "Slip the attack with a tight parry, sidestep, and drive a pinpoint follow-up stab.",
             "duration": 6,
             "difficulty": "Advanced"
         }

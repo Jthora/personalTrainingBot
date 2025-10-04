@@ -17,6 +17,7 @@
                 "Compare information from alternative sources to identify contradictions.",
                 "Monitor language framing and emotional appeals used to control perception."
             ],
+            "summaryText": "Notice narrative patterns, cross-check with independents, and watch framing for emotional hooks.",
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -29,6 +30,7 @@
                 "Cultivate intellectual self-defense by questioning assumptions and sources.",
                 "Engage in dialectical reasoning to deconstruct manipulation attempts."
             ],
+            "summaryText": "Hold skepticism on standby, interrogate assumptions, and practice dialectics to defuse manipulation.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -41,6 +43,7 @@
                 "Neutralize emotional triggers by practicing mindfulness and detachment.",
                 "Differentiate between emotional rhetoric and objective reality."
             ],
+            "summaryText": "Spot fear plays, steady yourself with mindfulness, and separate rhetoric from fact.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -53,6 +56,7 @@
                 "Analyze historical case studies of narrative engineering in propaganda campaigns.",
                 "Use OSINT techniques to uncover connections between media messaging and policymaking."
             ],
+            "summaryText": "Map info power brokers, review propaganda history, and link messaging to policy via OSINT.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -65,6 +69,7 @@
                 "Use pre-set decision-making frameworks to prevent manipulation under pressure.",
                 "Train in controlled exposure exercises to strengthen resistance to social influence."
             ],
+            "summaryText": "Identify social engineering triggers, lean on preplanned decisions, and rehearse pressure scenarios.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -77,6 +82,7 @@
                 "Analyze funding sources and institutional connections of activist groups.",
                 "Monitor shifts in messaging to detect controlled opposition infiltration."
             ],
+            "summaryText": "Investigate movement leaders, follow the funding, and watch messaging pivots for control signs.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -89,6 +95,7 @@
                 "Develop counter-messaging strategies to neutralize weaponized narratives.",
                 "Use decentralized communication methods to bypass controlled information channels."
             ],
+            "summaryText": "Study exploited biases, craft counter-messages, and route through decentralized comms.",
             "duration": "120",
             "difficulty": "Expert"
         },
@@ -101,6 +108,7 @@
                 "Practice memory auditing to identify implanted beliefs from long-term exposure.",
                 "Implement mental reframing to regain individual sovereignty over perception."
             ],
+            "summaryText": "Restructure thoughts, audit memories for implants, and reframe to reclaim perception.",
             "duration": "120",
             "difficulty": "Expert"
         },
@@ -113,6 +121,7 @@
                 "Create mental firewalls by setting intentional thought boundaries.",
                 "Train in exposure desensitization to nullify long-term propaganda effects."
             ],
+            "summaryText": "Stay alert to live influence, set mental guardrails, and desensitize propaganda triggers.",
             "duration": "120",
             "difficulty": "Expert"
         },
@@ -125,6 +134,7 @@
                 "Establish alternative learning hubs for truth-based education and analysis.",
                 "Cultivate self-directed knowledge acquisition to bypass institutionalized indoctrination."
             ],
+            "summaryText": "Teach deprogramming, build independent learning spaces, and pursue self-led knowledge paths.",
             "duration": "150",
             "difficulty": "Expert"
         }

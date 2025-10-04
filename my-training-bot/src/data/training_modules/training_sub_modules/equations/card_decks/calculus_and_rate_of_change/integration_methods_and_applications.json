@@ -13,6 +13,7 @@
                 "Interpret integration as an area accumulation process under a curve.",
                 "Use definite integrals to compute net changes in quantities."
             ],
+            "summaryText": "Relate antiderivatives to accumulated change via the Fundamental Theorem of Calculus.",
             "duration": 8,
             "difficulty": "Intermediate"
         },
@@ -25,6 +26,7 @@
                 "Apply integration by parts: \\[ \\int u dv = uv - \\int v du \\]",
                 "Evaluate definite and indefinite integrals using basic rules such as \\( \\int x^n dx = \\frac{x^{n+1}}{n+1} + C \\), for \\( n \\neq -1 \\)"
             ],
+            "summaryText": "Choose substitution or integration by parts to efficiently evaluate antiderivatives.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -37,6 +39,7 @@
                 "Apply the reduction formulas for powers of sine and cosine.",
                 "Evaluate integrals of secant and tangent: \\[ \\int \\sec x dx = \\ln |\\sec x + \\tan x| + C \\]"
             ],
+            "summaryText": "Simplify trig integrals with identities, reduction formulas, and special antiderivatives.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -49,6 +52,7 @@
                 "Determine convergence or divergence using comparison tests.",
                 "Evaluate integrals with singularities by using limits."
             ],
+            "summaryText": "Evaluate improper integrals by taking limits and testing convergence.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -61,6 +65,7 @@
                 "Find volumes of 3D solids using the disk method: \\[ V = \\pi \\int_a^b [f(x)]^2 dx \\]",
                 "Apply integration in physics to compute work: \\[ W = \\int_a^b F(x)dx \\]"
             ],
+            "summaryText": "Apply integrals to obtain areas, volumes, and accumulated physical quantities.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -73,6 +78,7 @@
                 "Evaluate magnetic flux integrals with Stokes' theorem: \\[ \\oint_C \\mathbf{B} \\cdot d\\mathbf{s} = \\mu_0 I_{enc} \\]",
                 "Apply integral calculus to solve electromagnetic wave equations."
             ],
+            "summaryText": "Utilize surface and line integrals to analyze electromagnetic flux and waves.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -85,6 +91,7 @@
                 "Use integral methods to determine charge distributions across bioelectric fields.",
                 "Model signal propagation in neurons using the cable equation: \\[ \\frac{\\partial V}{\\partial t} = D \\frac{\\partial^2 V}{\\partial x^2} - \\frac{V}{\\tau} \\]"
             ],
+            "summaryText": "Integrate field equations to study bioelectric potentials and neural signal flow.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -97,6 +104,7 @@
                 "Compute expectation values in quantum systems: \\[ \\langle x \\rangle = \\int_{-\\infty}^{\\infty} x |\\psi(x)|^2 dx \\]",
                 "Apply Fourier transform integrals to analyze psionic field frequencies."
             ],
+            "summaryText": "Use integrals to normalize wavefunctions and extract quantum expectation values.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -109,6 +117,7 @@
                 "Compute stored energy in a charged biofield using \\[ U = \\frac{1}{2} \\int_V \\mathbf{E} \\cdot \\mathbf{D} \\, dV \\]",
                 "Apply integration to psionic resonance phenomena in neural and electromagnetic systems."
             ],
+            "summaryText": "Integrate energy densities to quantify stored psionic and bioelectric power.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -121,6 +130,7 @@
                 "Study nonlinear Schrodinger equations for psi-wave collapse and energy accumulation.",
                 "Apply iterative integral methods to analyze psionic feedback loops in electromagnetic networks."
             ],
+            "summaryText": "Apply integral methods to nonlinear field interactions and psionic feedback loops.",
             "duration": 18,
             "difficulty": "Expert"
         }

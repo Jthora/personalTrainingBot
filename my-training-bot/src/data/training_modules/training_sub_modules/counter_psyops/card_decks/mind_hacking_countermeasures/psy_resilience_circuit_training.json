@@ -18,7 +18,8 @@
                 "Condition the mind through controlled stress exposure followed by relaxation training."
             ],
             "duration": "60",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Stack long-focus drills, rehearse pressure decisions, and pair stress exposure with recovery."
         },
         {
             "id": "psy_resilience_2",
@@ -30,7 +31,8 @@
                 "Use exposure therapy techniques to desensitize triggers and emotional hijacks."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Buffer reactions, lean on anchor phrases, and desensitize triggers through controlled exposure."
         },
         {
             "id": "psy_resilience_3",
@@ -42,7 +44,8 @@
                 "Develop rapid emotional transmutation methods to convert negative energy into neutral or positive states."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Diffuse intrusions, regulate with rhythmic breath, and transmute stress into neutral charge."
         },
         {
             "id": "psy_resilience_4",
@@ -54,7 +57,8 @@
                 "Develop ‘Zero-Point Mentality’—a state of neutral readiness without attachment or bias."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Enter observer mode, abstract events logically, and hold zero-point neutral readiness."
         },
         {
             "id": "psy_resilience_5",
@@ -66,7 +70,8 @@
                 "Develop a personalized resilience blueprint combining mental, emotional, and energetic techniques."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Drill stacked scenarios, rotate defense modes, and map a custom multi-layer blueprint."
         },
         {
             "id": "psy_resilience_6",
@@ -78,7 +83,8 @@
                 "Use cognitive shock exercises to train immediate adaptation to unexpected events."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Run mental agility circuits: switch tasks fast, toggle focus widths, and absorb shocks."
         },
         {
             "id": "psy_resilience_7",
@@ -90,7 +96,8 @@
                 "Develop a self-reinforcement mantra to counteract psychological disarray."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Execute reset drills, ground quickly, and reinforce stability with targeted mantras."
         },
         {
             "id": "psy_resilience_8",
@@ -102,7 +109,8 @@
                 "Engage in strategic fatigue exercises to test cognitive performance under exhaustion."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Stress-train under safe adversity, inoculate via tactic analysis, and push performance under fatigue."
         },
         {
             "id": "psy_resilience_9",
@@ -114,7 +122,8 @@
                 "Train in ‘Psychic Dynamic Response’—adjusting resilience techniques based on situational needs."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Cycle emotions tactically, manage energy reserves, and adapt resilience tactics on the fly."
         },
         {
             "id": "psy_resilience_10",
@@ -126,7 +135,8 @@
                 "Develop a self-calibrating system that adjusts mental defenses automatically based on situational analysis."
             ],
             "duration": "120",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Assemble your resilience circuit, rehearse in chaos sims, and auto-calibrate defenses as conditions shift."
         }
     ]
 }

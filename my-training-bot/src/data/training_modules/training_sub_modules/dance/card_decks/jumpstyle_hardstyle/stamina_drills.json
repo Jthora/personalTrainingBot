@@ -13,6 +13,7 @@
                 "Focus on controlled breathing to avoid fatigue",
                 "Use arm movements to maintain overall balance"
             ],
+            "summaryText": "Ramp tempo carefully while breath and arms steady the engine.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -25,6 +26,7 @@
                 "Maintain form even as fatigue sets in",
                 "Increase complexity by adding knee lifts or spins"
             ],
+            "summaryText": "Cycle nonstop kicks with clean form to build jumpstyle endurance.",
             "duration": 7,
             "difficulty": "Advanced"
         }

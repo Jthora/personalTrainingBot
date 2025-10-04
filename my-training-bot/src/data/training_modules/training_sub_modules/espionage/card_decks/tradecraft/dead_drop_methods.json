@@ -16,6 +16,7 @@
                 "Deploy synchronized gestures and inconspicuous signals",
                 "Plan timed encounters to avoid unwanted attention"
             ],
+            "summaryText": "Exploit crowd flow with prearranged cues and tight timing so live drops vanish in plain sight.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -28,6 +29,7 @@
                 "Identify high-traffic but low-security dead drop locations",
                 "Develop retrieval and monitoring strategies to avoid detection"
             ],
+            "summaryText": "Cache materials in disguised containers at busy-yet-unwatched spots and schedule stealthy retrieval sweeps.",
             "duration": 7,
             "difficulty": "Advanced"
         }

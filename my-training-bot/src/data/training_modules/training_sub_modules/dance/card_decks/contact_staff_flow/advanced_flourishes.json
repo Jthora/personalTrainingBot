@@ -13,6 +13,7 @@
                 "Tuck your chin slightly to allow the wrap",
                 "Catch the staff smoothly without disrupting its motion"
             ],
+            "summaryText": "Glide the staff around your neck and reclaim it without breaking flow.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -25,6 +26,7 @@
                 "Keep your eyes on the staff at all times",
                 "Time your catch to continue the movement fluidly"
             ],
+            "summaryText": "Launch the staff skyward and snag it clean to keep the combo alive.",
             "duration": 7,
             "difficulty": "Advanced"
         }

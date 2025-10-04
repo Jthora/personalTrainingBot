@@ -17,7 +17,8 @@
                 "Coordinate with financial intelligence units (FIUs)"
             ],
             "duration": 6,
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Trace global laundering webs by triaging STRs, piercing shell-company veils, and syncing with FIUs to choke off illicit cash flows."
         },
         {
             "id": "cartel_investigations",
@@ -29,7 +30,8 @@
                 "Analyze trafficking routes and logistics networks"
             ],
             "duration": 7,
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Crack transnational cartels by embedding undercover assets, surveilling encrypted comms, and mapping trafficking logistics to collapse their networks."
         }
     ]
 }

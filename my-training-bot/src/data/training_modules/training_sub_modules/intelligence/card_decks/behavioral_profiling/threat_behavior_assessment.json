@@ -16,6 +16,7 @@
                 "Detect radicalization and extremist ideologies through speech patterns",
                 "Assess last-minute changes in financial transactions and communications"
             ],
+            "summaryText": "Track routine changes, extremist rhetoric, and late-stage financial signals to flag imminent violence.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Monitor public spaces for indicators of potential attacks",
                 "Coordinate predictive threat modeling with intelligence agencies"
             ],
+            "summaryText": "Blend insider monitoring, public surveillance, and modeling partnerships to blunt civil-space threats.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -40,6 +42,7 @@
                 "Recognize paranoia, grandiosity, and fixation on violent ideologies",
                 "Analyze behavioral patterns related to narcissistic and antisocial disorders"
             ],
+            "summaryText": "Spot festering grievances, distorted beliefs, and disorder cues to spotlight rising risks.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -52,6 +55,7 @@
                 "Identify coded language, dog whistles, and extremist recruitment tactics",
                 "Analyze digital footprints to track behavioral escalation"
             ],
+            "summaryText": "Scrape feeds for hate rhetoric, decode dog whistles, and timeline digital traces for escalation.",
             "duration": 8,
             "difficulty": "Advanced"
         },
@@ -64,6 +68,7 @@
                 "Identify how extremist groups manipulate emotions for recruitment",
                 "Use predictive modeling to assess the likelihood of coordinated attacks"
             ],
+            "summaryText": "Evaluate mob psychology, emotional manipulation, and models to foresee group-based attacks.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -76,6 +81,7 @@
                 "Understand the psychological differences between organized groups and individual threats",
                 "Recognize social isolation, grievance accumulation, and radicalization pathways"
             ],
+            "summaryText": "Isolate lone-wolf signatures, contrast them with cell dynamics, and trace grievance-to-attack journeys.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -88,6 +94,7 @@
                 "Analyze facial microexpressions and body language for deception and intent",
                 "Recognize linguistic patterns that signal ideological extremism or violent planning"
             ],
+            "summaryText": "Parse threat language and microexpressions for leaks that betray violent intent.",
             "duration": 8,
             "difficulty": "Expert"
         },
@@ -100,6 +107,7 @@
                 "Utilize behavioral drift analysis to detect increasing risk factors",
                 "Differentiate between fantasy-driven threats and operationally capable individuals"
             ],
+            "summaryText": "Chart precursors, measure behavioral drift, and separate fantasists from operational actors.",
             "duration": 9,
             "difficulty": "Expert"
         }

@@ -17,6 +17,7 @@
                 "Using open-source, privacy-focused operating systems and applications.",
                 "How to detect and remove AI surveillance software from personal devices."
             ],
+            "summaryText": "Covers hardened comms, privacy OS stacks, and sweeps to purge AI surveillance implants.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Using burner accounts, temporary email addresses, and anonymous browsing.",
                 "Understanding the limits and risks of data removal services."
             ],
+            "summaryText": "Explains data aggregation pipelines, throwaway identity tactics, and realistic data removal limits.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Recognizing and neutralizing algorithmic influence over thoughts and emotions.",
                 "Disrupting targeted advertising and behavioral modification programs."
             ],
+            "summaryText": "Shows how to spot AI-profiling psyops, counter algorithmic nudges, and jam targeted influence loops.",
             "duration": "90",
             "difficulty": "Expert"
         }

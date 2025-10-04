@@ -17,6 +17,7 @@
                 "Acting less intelligent than you are to prevent escalation.",
                 "Feeding misinformation to disrupt their strategic calculations."
             ],
+            "summaryText": "Nod along to lull them, play underestimated so they relax, and drip bogus intel that sends their plans in the wrong direction.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -29,6 +30,7 @@
                 "Adopting a neutral tone to make engagement tedious for them.",
                 "Using non-answers and vague responses to kill conversational momentum."
             ],
+            "summaryText": "Switch off your tells, speak in flat neutrals until they get bored, and give non-answers so the conversation dies on its own.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -41,6 +43,7 @@
                 "Using passive compliance to exit without confrontation.",
                 "Planting distractions to create a natural escape window."
             ],
+            "summaryText": "Blame the clock, a call, or a prior obligation, agree just enough to bow out gracefully, and line up diversions so your exit looks perfectly natural.",
             "duration": "75",
             "difficulty": "Advanced"
         }

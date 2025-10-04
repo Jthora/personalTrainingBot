@@ -19,6 +19,7 @@
                 "Analyze projectile motion using horizontal and vertical components: \\[ x = v_0 \\cos(\\theta) t \\], \\[ y = v_0 \\sin(\\theta) t - \\frac{1}{2} g t^2 \\]",
                 "Interpret motion graphs for displacement, velocity, and acceleration."
             ],
+            "summaryText": "Apply constant-acceleration and projectile formulas to describe translational motion.",
             "duration": 8,
             "difficulty": "Intermediate"
         },
@@ -31,6 +32,7 @@
                 "Apply force equations: \\[ \\mathbf{F} = m \\mathbf{a} \\] to analyze dynamics in different scenarios.",
                 "Examine friction, tension, normal force, and net force problems in real-world applications."
             ],
+            "summaryText": "Use Newton's three laws to link net forces with resulting accelerations and reactions.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -43,6 +45,7 @@
                 "Define gravitational potential energy: \\[ U = mgh \\] and elastic potential energy: \\[ U = \\frac{1}{2} k x^2 \\]",
                 "Apply conservation of energy: \\[ KE_i + PE_i = KE_f + PE_f \\]"
             ],
+            "summaryText": "Relate work to kinetic and potential energy changes through conservation principles.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -55,6 +58,7 @@
                 "Apply the impulse-momentum theorem: \\[ \\Delta \\mathbf{p} = \\mathbf{F} \\Delta t \\]",
                 "Use the conservation of momentum for collisions: \\[ m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2' \\]"
             ],
+            "summaryText": "Analyze collisions via momentum, impulse, and conservation laws.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -67,6 +71,7 @@
                 "Relate linear and angular motion: \\[ v = r \\omega \\], \\[ a = r \\alpha \\]",
                 "Define torque: \\[ \\tau = r F \\sin(\\theta) \\] and rotational equilibrium."
             ],
+            "summaryText": "Connect angular displacement, velocity, and torque to rotational motion.",
             "duration": 12,
             "difficulty": "Advanced"
         },
@@ -79,6 +84,7 @@
                 "Calculate rotational kinetic energy: \\[ KE_{rot} = \\frac{1}{2} I \\omega^2 \\]",
                 "Apply conservation of angular momentum in systems with no external torque."
             ],
+            "summaryText": "Conserve angular momentum and compute rotational kinetic energy when torques vanish.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -91,6 +97,7 @@
                 "Use Hooke's law: \\[ F = -kx \\] and angular frequency: \\[ \\omega = \\sqrt{\\frac{k}{m}} \\]",
                 "Analyze the motion of a simple pendulum: \\[ \\omega = \\sqrt{\\frac{g}{L}} \\]"
             ],
+            "summaryText": "Model oscillators with SHM equations, Hooke's law, and characteristic frequencies.",
             "duration": 12,
             "difficulty": "Advanced"
         },
@@ -103,6 +110,7 @@
                 "Apply Kepler's laws of planetary motion to orbital mechanics.",
                 "Analyze gravitational potential energy in planetary systems: \\[ U = -G \\frac{m_1 m_2}{r} \\]"
             ],
+            "summaryText": "Describe gravitational attraction and orbital behavior using Newton's law and Kepler insights.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -115,6 +123,7 @@
                 "Study resonance effects in driven harmonic oscillators: \\[ x(t) = A_0 e^{-\\beta t} \\cos(\\omega t) \\]",
                 "Apply these principles to mechanical, electrical, and biological systems."
             ],
+            "summaryText": "Examine damping and driving forces to understand resonance and oscillator decay.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -127,6 +136,7 @@
                 "Analyze equilibrium conditions: \\[ \\sum F = 0, \\quad \\sum \\tau = 0 \\]",
                 "Apply these concepts to balancing problems and stability analysis."
             ],
+            "summaryText": "Locate an object's center of mass and enforce force/torque balance for equilibrium.",
             "duration": 12,
             "difficulty": "Advanced"
         }

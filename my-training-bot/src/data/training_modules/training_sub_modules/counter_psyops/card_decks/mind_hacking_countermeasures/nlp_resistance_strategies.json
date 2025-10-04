@@ -18,7 +18,8 @@
                 "Observe the body language and tonal shifts that accompany manipulative verbal cues."
             ],
             "duration": "60",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Spot anchoring, presuppositions, and tonal tells that flag NLP manipulation."
         },
         {
             "id": "nlp_resistance_2",
@@ -30,7 +31,8 @@
                 "Mentally question the authority or intent behind a command before acting on it."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Defuse embedded commands by pausing, rewriting intent, and challenging authority."
         },
         {
             "id": "nlp_resistance_3",
@@ -42,7 +44,8 @@
                 "Use pattern interruption techniques (changing the subject, asking unexpected questions) to disrupt the anchoring process."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Catch charged anchors, relink them to neutral cues, and break scripts with interruptions."
         },
         {
             "id": "nlp_resistance_4",
@@ -54,7 +57,8 @@
                 "Use humor and satire to detach from emotional hooks embedded in persuasion tactics."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Expose imposed limits, rewrite scripts to autonomy, and deflate hooks with humor."
         },
         {
             "id": "nlp_resistance_5",
@@ -66,7 +70,8 @@
                 "Ground yourself physically (touching an object, moving your body) to break the spell of verbal entrainment."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Detect trance pacing, inject analytical questions, and ground physically to snap out."
         },
         {
             "id": "nlp_resistance_6",
@@ -78,7 +83,8 @@
                 "Avoid automatic agreement by pausing before responding to leading statements."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Spot mimicry, scramble tempo deliberately, and pause before following leads."
         },
         {
             "id": "nlp_resistance_7",
@@ -90,7 +96,8 @@
                 "Introduce a third alternative or redirect the conversation to regain control."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Spot false-choice setups, reject the frame, and supply your own alternative path."
         },
         {
             "id": "nlp_resistance_8",
@@ -102,7 +109,8 @@
                 "Use neutral phrasing to disengage emotionally from persuasive attempts."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Reflect language, probe motives with questions, and stay neutral to blunt persuasion."
         },
         {
             "id": "nlp_resistance_9",
@@ -114,7 +122,8 @@
                 "Recognize when urgency or exclusivity is used to push compliance."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Resist social proof by pausing, fact-checking, and calling out urgency plays."
         },
         {
             "id": "nlp_resistance_10",
@@ -126,7 +135,8 @@
                 "Strengthen self-awareness to recognize when you're being led into compliance."
             ],
             "duration": "120",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Sharpen logic, interrogate narratives, and stay self-aware to block NLP compliance."
         }
     ]
 }

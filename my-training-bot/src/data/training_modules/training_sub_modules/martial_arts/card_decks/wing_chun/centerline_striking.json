@@ -13,6 +13,7 @@
                 "Use wrist relaxation to increase speed",
                 "Maintain forward pressure without overextending"
             ],
+            "summaryText": "Fire chain punches straight down the line with relaxed wrists and relentless drive.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -25,6 +26,7 @@
                 "Strike with the base of the palm for added stability",
                 "Engage the hips to generate extra power"
             ],
+            "summaryText": "Shoot the vertical palm with the heel of the hand while the hips add compact power.",
             "duration": 6,
             "difficulty": "Advanced"
         }

@@ -19,6 +19,7 @@
                 "Deepfake phishing: AI-generated fake videos or voice messages used for scams.",
                 "Automated threat detection using machine learning models."
             ],
+            "summaryText": "Watch AI arm both sides—crafting adaptive malware while supercharging detection engines.",
             "duration": "120",
             "difficulty": "Advanced"
         },
@@ -31,6 +32,7 @@
                 "Blockchain technology enables trustless authentication without third-party intermediaries.",
                 "Zero Trust security assumes that no device or user is automatically trusted, requiring continuous verification."
             ],
+            "summaryText": "Shift to SSI and Zero Trust where blockchain-backed credentials face nonstop verification.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -43,6 +45,7 @@
                 "Web3 APIs designed to work with blockchain-based identity verification.",
                 "End-to-end encryption for web requests without centralized control."
             ],
+            "summaryText": "Peek at WTTP and Web3 APIs rewriting cross-origin rules with decentralized trust.",
             "duration": "75",
             "difficulty": "Intermediate"
         },
@@ -55,6 +58,7 @@
                 "Post-Quantum Cryptography (PQC) is being developed to secure data against quantum attacks.",
                 "National Institute of Standards and Technology (NIST) is working on standardizing quantum-safe encryption."
             ],
+            "summaryText": "Plan for quantum’s arrival by tracking Shor, PQC candidates, and NIST’s standards race.",
             "duration": "120",
             "difficulty": "Advanced"
         },
@@ -67,6 +71,7 @@
                 "Zero-Knowledge Proofs (ZKPs) allow authentication without revealing sensitive data.",
                 "Decentralized browsers like Brave and TOR-based systems ensure anonymity."
             ],
+            "summaryText": "Explore PETs like homomorphic crypto, ZK proofs, and privacy-first browsers gaining steam.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -79,6 +84,7 @@
                 "Automated penetration testing replaces manual security audits.",
                 "Security Orchestration, Automation, and Response (SOAR) platforms streamline incident response."
             ],
+            "summaryText": "See SOCs evolve into AI-driven machines automating tests, detection, and response playbooks.",
             "duration": "75",
             "difficulty": "Intermediate"
         },
@@ -91,6 +97,7 @@
                 "Allows computation on encrypted datasets across different institutions.",
                 "SMPC will become a standard for privacy-first cloud services."
             ],
+            "summaryText": "Understand how SMPC lets rivals crunch shared secrets without ever exposing them.",
             "duration": "120",
             "difficulty": "Advanced"
         },
@@ -103,6 +110,7 @@
                 "AI algorithms predict and neutralize cyber threats before execution.",
                 "Decentralized consensus models ensure tamper-proof security policies."
             ],
+            "summaryText": "Blend AI prediction with blockchain consensus to forge autonomous, self-defending nets.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -115,6 +123,7 @@
                 "Allows companies to collaborate on cybersecurity without exposing private data.",
                 "Reduces reliance on centralized AI models, improving security."
             ],
+            "summaryText": "Leverage federated learning to share defenses while keeping raw data siloed.",
             "duration": "75",
             "difficulty": "Intermediate"
         },
@@ -127,6 +136,7 @@
                 "Allows for high-performance cryptographic applications in the browser.",
                 "WebAssembly System Interface (WASI) provides a secure way for web apps to interact with operating systems."
             ],
+            "summaryText": "Harness WASM’s sandboxed power to bring fast, secure native workloads to the web.",
             "duration": "90",
             "difficulty": "Intermediate"
         }

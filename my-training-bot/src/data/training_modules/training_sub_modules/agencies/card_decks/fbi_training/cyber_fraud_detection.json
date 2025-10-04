@@ -17,7 +17,8 @@
                 "Use AI-based fraud detection tools"
             ],
             "duration": 6,
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Uncover digital payment fraud by spotting anomalous transaction patterns, tracing crypto laundering paths, and deploying AI defenses before accounts are drained."
         },
         {
             "id": "dark_web_financial_crime",
@@ -29,7 +30,8 @@
                 "Understand money laundering techniques in cybercrime"
             ],
             "duration": 7,
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Pursue dark web fraud rings by correlating blockchain trails, fusing OSINT leads, and decoding laundering techniques that hide illicit profits online."
         }
     ]
 }

@@ -17,6 +17,7 @@
                 "Diaphragmatic breathing to activate the parasympathetic system.",
                 "Coherent breathing for optimal heart rate variability."
             ],
+            "summaryText": "Cycle box, diaphragm, and coherent breaths so autonomic swings flatten and resilience rises.",
             "duration": "60",
             "difficulty": "Beginner"
         },
@@ -29,6 +30,7 @@
                 "Wim Hof Method for autonomic nervous system control.",
                 "Ice immersion exposure for rapid vagus nerve activation."
             ],
+            "summaryText": "Ramp cold exposure, pair it with focused breathing, and tap vagal activation to sharpen stress tolerance.",
             "duration": "75",
             "difficulty": "Intermediate"
         },
@@ -41,6 +43,7 @@
                 "Resonance breathing for nervous system balance.",
                 "Using HRV tracking to monitor stress adaptation."
             ],
+            "summaryText": "Use biofeedback, resonance breathing, and steady tracking so HRV coherence signals adaptive balance.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -53,6 +56,7 @@
                 "Neck massage techniques for vagal stimulation.",
                 "Deep belly breathing for vagus nerve engagement."
             ],
+            "summaryText": "Hum, massage, and breathe deep to spark vagal tone and drop into calm regulation on cue.",
             "duration": "75",
             "difficulty": "Intermediate"
         },
@@ -65,6 +69,7 @@
                 "Full-body relaxation sequencing for deep nervous system reset.",
                 "Incorporating PMR into daily decompression routines."
             ],
+            "summaryText": "Cycle tension-release through the body, sequence full relax resets, and weave PMR into daily wind-downs.",
             "duration": "60",
             "difficulty": "Beginner"
         },
@@ -77,6 +82,7 @@
                 "Practicing exposure therapy for increased stress endurance.",
                 "Repetition of controlled stress responses for enhanced plasticity."
             ],
+            "summaryText": "Reframe defaults, rehearse controlled exposures, and repeat calm responses until new wiring sticks.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -89,6 +95,7 @@
                 "Peripheral vision exercises to promote calm awareness.",
                 "Bilateral eye movements to disengage from heightened stress states."
             ],
+            "summaryText": "Soften focus, expand peripheral vision, and sweep bilateral eye paths to interrupt sympathetic loops.",
             "duration": "75",
             "difficulty": "Intermediate"
         },
@@ -101,6 +108,7 @@
                 "Grounding exercises to stabilize the nervous system in high-stress environments.",
                 "Interoceptive awareness for identifying and managing stress signals."
             ],
+            "summaryText": "Scan sensations, ground through the body, and read interoceptive cues so tension clears early.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -113,6 +121,7 @@
                 "Practicing selective attention filtering to maintain cognitive control.",
                 "Using sound and light adaptation techniques to regulate stress input."
             ],
+            "summaryText": "Train with controlled chaos, filter inputs deliberately, and adapt to sensory spikes without losing composure.",
             "duration": "75",
             "difficulty": "Expert"
         },
@@ -125,6 +134,7 @@
                 "Practicing time-controlled cognitive stress exercises.",
                 "Applying strategic discomfort exposure to build resistance."
             ],
+            "summaryText": "Pulse interval stress, run timed cognitive challenges, and dose discomfort strategically to build durable resilience.",
             "duration": "90",
             "difficulty": "Expert"
         }

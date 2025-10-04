@@ -17,6 +17,7 @@
                 "Identifying land and location strategies for sustainable parallel societies.",
                 "Establishing secure internal communications and encrypted data-sharing."
             ],
+            "summaryText": "Design decentralized settlements with strategic locations and encrypted community communications.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Using social dynamics and group psychology for cohesion and resilience.",
                 "Creating counter-disinformation mechanisms to protect group integrity."
             ],
+            "summaryText": "Vet members thoroughly, reinforce cohesion psychology, and neutralize disinformation threats.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Using blockchain and smart contracts for automated legal structures.",
                 "Creating non-hierarchical power structures for true autonomy."
             ],
+            "summaryText": "Run reputation-driven governance, codify rules with smart contracts, and sustain non-hierarchical autonomy.",
             "duration": "90",
             "difficulty": "Expert"
         }

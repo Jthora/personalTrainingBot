@@ -18,7 +18,8 @@
                 "Recognizing the hallmarks of a staged or engineered crisis."
             ],
             "duration": "75",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Define engineered crises, review historical playbooks, and list the tells that signal staged operations."
         },
         {
             "id": "false_flag_2",
@@ -30,7 +31,8 @@
                 "Identifying anomalies in law enforcement and intelligence responses."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Flag narrative inconsistencies, vet witnesses for planting, and note anomalous official responses."
         },
         {
             "id": "false_flag_3",
@@ -42,7 +44,8 @@
                 "Analyzing crisis actors and fabricated eyewitness accounts."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Watch for synchronized coverage, trace silencing campaigns, and scrutinize staged eyewitness stories."
         },
         {
             "id": "false_flag_4",
@@ -54,7 +57,8 @@
                 "Uncovering psychological operations (PsyOps) disguised as real events."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Map orchestrators, follow money and policy gains, and expose PsyOps masked as organic events."
         },
         {
             "id": "false_flag_5",
@@ -66,7 +70,8 @@
                 "Tracking predictive programming in media before major events occur."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Monitor drills, parse leaks, and spot predictive programming that foreshadows the script."
         },
         {
             "id": "false_flag_6",
@@ -78,7 +83,8 @@
                 "Deconstructing manufactured outrage campaigns used to justify policy shifts."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Dissect fear narratives, recognize trauma conditioning, and reveal the outrage engines driving consent."
         },
         {
             "id": "false_flag_7",
@@ -90,7 +96,8 @@
                 "Exposing false narratives that persist long after the event occurs."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Track policy rollouts, document liberty erosion, and archive narratives that persist post-crisis."
         },
         {
             "id": "false_flag_8",
@@ -102,7 +109,8 @@
                 "Coordinating with independent journalists and investigators to expose the truth."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Deploy OSINT fast, rally response teams, and partner with independents to break the script in real time."
         },
         {
             "id": "false_flag_9",
@@ -114,7 +122,8 @@
                 "Developing independent verification systems to prevent narrative hijacking."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Spot infiltrators, expose fake whistleblowers, and build vetting loops that keep movements clean."
         },
         {
             "id": "false_flag_10",
@@ -126,7 +135,8 @@
                 "Using encryption and decentralized platforms to preserve truth-based narratives."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Build decentralized intel cells, run counter-PsyOps, and secure truth channels against future fabrications."
         }
     ]
 }

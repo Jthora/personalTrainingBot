@@ -12,6 +12,7 @@
             "title": "Recognizing Phishing Attempts",
             "description": "How to identify phishing emails, messages, and phone scams.",
             "bulletpoints": "Email Headers, Suspicious Links, Urgency Cues, Spoofed Domains",
+            "summaryText": "Spot the tells—shady headers, fake urgency, and spoofed domains—before clicking.",
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -20,6 +21,7 @@
             "title": "Simulating and Testing Phishing Attacks",
             "description": "Conducting controlled phishing attack simulations to train employees.",
             "bulletpoints": "Phishing Kits, Red Team Exercises, Threat Awareness Training",
+            "summaryText": "Run safe phishing drills with red teams so staff learn from realistic bait.",
             "duration": "90",
             "difficulty": "Intermediate"
         }

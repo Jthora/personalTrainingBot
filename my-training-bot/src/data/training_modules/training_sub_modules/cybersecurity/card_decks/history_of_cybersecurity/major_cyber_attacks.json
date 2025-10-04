@@ -19,6 +19,7 @@
                 "Exploit: Buffer overflow and weak password security.",
                 "First felony conviction under the U.S. Computer Fraud and Abuse Act."
             ],
+            "summaryText": "Recall the Morris Worm’s runaway spread and the landmark CFAA conviction that followed.",
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -31,6 +32,7 @@
                 "Exploit: Microsoft Word macro vulnerabilities.",
                 "Infected over 100,000 computers, including U.S. government and corporate networks."
             ],
+            "summaryText": "See how Melissa’s weaponized macros choked email servers worldwide.",
             "duration": "75",
             "difficulty": "Intermediate"
         },
@@ -43,6 +45,7 @@
                 "Exploit: Social engineering and Windows scripting vulnerabilities.",
                 "Infected over 50 million computers and caused $15 billion in damages."
             ],
+            "summaryText": "Remember ILOVEYOU’s social engineering bomb and the billions it burned.",
             "duration": "90",
             "difficulty": "Intermediate"
         },
@@ -55,6 +58,7 @@
                 "Exploit: Zero-day vulnerabilities in Microsoft Windows and Siemens SCADA (Supervisory Control and Data Acquisition) systems.",
                 "First publicly known instance of cyber warfare targeting physical infrastructure."
             ],
+            "summaryText": "Study Stuxnet’s multi-zero-day kit crippling Iran’s centrifuges in the first kinetic cyber strike.",
             "duration": "120",
             "difficulty": "Advanced"
         },
@@ -67,6 +71,7 @@
                 "Hackers stole names, addresses, passwords, and credit card details.",
                 "Led to a 23-day shutdown of PlayStation Network services."
             ],
+            "summaryText": "Review the PSN breach that exposed 77 million gamers and forced a weeks-long shutdown.",
             "duration": "75",
             "difficulty": "Intermediate"
         },
@@ -79,6 +84,7 @@
                 "Passwords were leaked on Russian hacker forums.",
                 "Later, in 2016, 167 million more accounts were found to be compromised."
             ],
+            "summaryText": "See LinkedIn’s weak hashing leak snowball into a 167-million-account exposure.",
             "duration": "75",
             "difficulty": "Intermediate"
         },
@@ -91,6 +97,7 @@
                 "Personal data, including emails, passwords, and security questions, were compromised.",
                 "Resulted in Yahoo reducing its acquisition value in a Verizon buyout."
             ],
+            "summaryText": "Recall Yahoo’s 3-billion-account breach and the valuation hit it triggered.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -103,6 +110,7 @@
                 "Shutdown affected over 230,000 people.",
                 "Attributed to Russian state-sponsored hackers."
             ],
+            "summaryText": "Analyze how BlackEnergy dropped Ukraine’s grid and signaled modern cyber warfare.",
             "duration": "120",
             "difficulty": "Advanced"
         },
@@ -115,6 +123,7 @@
                 "Hackers accessed sensitive financial data for over two months.",
                 "Equifax was fined $700 million in settlements."
             ],
+            "summaryText": "Trace Equifax’s missed patch to the 147-million-person data disaster.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -127,6 +136,7 @@
                 "Hospitals, businesses, and government agencies were impacted.",
                 "A researcher, Marcus Hutchins, accidentally stopped the attack by registering a kill switch domain."
             ],
+            "summaryText": "Follow WannaCry’s EternalBlue rampage and the lucky kill-switch save.",
             "duration": "120",
             "difficulty": "Advanced"
         },
@@ -139,6 +149,7 @@
                 "Originated in Ukraine but spread globally, hitting Maersk, FedEx, and other companies.",
                 "Believed to be Russian state-sponsored cyber warfare."
             ],
+            "summaryText": "Compare NotPetya’s faux ransomware guise with the destructive wave it unleashed worldwide.",
             "duration": "120",
             "difficulty": "Advanced"
         },
@@ -151,6 +162,7 @@
                 "Used to infiltrate Microsoft, FireEye, and U.S. federal agencies.",
                 "Believed to be an advanced persistent threat (APT) linked to Russian intelligence."
             ],
+            "summaryText": "Dissect SolarWinds’ supply-chain compromise and the APT access it granted.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -163,6 +175,7 @@
                 "Attackers from DarkSide ransomware group demanded a Bitcoin ransom.",
                 "Led to fuel shortages and government intervention in cyber policy."
             ],
+            "summaryText": "Review Colonial Pipeline’s ransomware hit, fuel disruptions, and policy wake-up call.",
             "duration": "90",
             "difficulty": "Advanced"
         }

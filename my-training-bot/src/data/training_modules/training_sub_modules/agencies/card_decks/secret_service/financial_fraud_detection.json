@@ -17,7 +17,8 @@
                 "Track illegal printing operations and distribution networks"
             ],
             "duration": 6,
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Stop counterfeit cash by scrutinizing security features, wielding UV and microprint tools, and mapping illicit printing pipelines before money hits circulation."
         },
         {
             "id": "forensic_accounting_investigations",
@@ -29,7 +30,8 @@
                 "Work with international agencies on cross-border fraud cases"
             ],
             "duration": 7,
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Expose hidden fraud by dissecting financial statements, unraveling shell-company ledgers, and partnering with global teams to follow dirty money."
         }
     ]
 }

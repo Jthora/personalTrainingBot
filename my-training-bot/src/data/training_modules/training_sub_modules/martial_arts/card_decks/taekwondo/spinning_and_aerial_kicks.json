@@ -13,6 +13,7 @@
                 "Use the rear leg to execute a full spin",
                 "Strike with the instep or shin for impact"
             ],
+            "summaryText": "Whip through the tornado kick with a driving step, full spin, and sharp instep impact.",
             "duration": 5,
             "difficulty": "Advanced"
         },
@@ -25,6 +26,7 @@
                 "Kick straight back with a fully extended leg",
                 "Land smoothly to maintain control"
             ],
+            "summaryText": "Launch the jumping back kick by hopping back, firing the heel straight out, and sticking the landing.",
             "duration": 6,
             "difficulty": "Advanced"
         }

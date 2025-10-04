@@ -17,7 +17,8 @@
                 "Monitor changes in behavioral and financial activities"
             ],
             "duration": 6,
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Spot early radicalization by scanning social feeds for extremist cues, mapping recruitment pipelines, and tracking behavioral or financial shifts before threats coagulate."
         },
         {
             "id": "explosive_device_recognition",
@@ -29,7 +30,8 @@
                 "Understand bomb-making techniques used by terrorist cells"
             ],
             "duration": 7,
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Detect improvised explosives by flagging precursor chemical buys, dissecting historical attack playbooks, and decoding assembly techniques favored by terrorist cells."
         }
     ]
 }

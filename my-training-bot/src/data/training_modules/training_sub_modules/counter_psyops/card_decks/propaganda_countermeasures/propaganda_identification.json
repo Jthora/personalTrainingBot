@@ -17,6 +17,7 @@
                 "Analyze historical and modern examples of propaganda to develop pattern recognition.",
                 "Use comparative analysis to distinguish genuine reporting from manipulative messaging."
             ],
+            "summaryText": "List classic propaganda plays, study past campaigns, and compare coverage to spot manipulation.",
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -29,6 +30,7 @@
                 "Recognize the use of outrage culture to manufacture division and control discourse.",
                 "Deconstruct media framing techniques that weaponize emotions against targeted groups."
             ],
+            "summaryText": "Watch for fear, hope, guilt levers, call out outrage manufacturing, and unpack emotional framing.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -41,6 +43,7 @@
                 "Compare multiple international sources to detect selective reporting biases.",
                 "Use reverse narrative tracing to analyze what information is omitted or censored."
             ],
+            "summaryText": "Check ownership ties, contrast global outlets, and backtrack narratives to see what’s missing.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -53,6 +56,7 @@
                 "Analyze shifts in public policy and funding following major crises to detect hidden agendas.",
                 "Use event timeline analysis to uncover inconsistencies and pre-scripted narratives."
             ],
+            "summaryText": "Spot over-coordinated crisis coverage, follow post-event policy shifts, and timeline-check for scripts.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -65,6 +69,7 @@
                 "Recognize repetition loops that enforce programmed beliefs over time.",
                 "Expose product and service marketing designed to engineer mass psychological dependency."
             ],
+            "summaryText": "Break down NLP in ads, catch repetition loops, and highlight dependency-building campaigns.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -77,6 +82,7 @@
                 "Analyze historical examples where predictive programming preceded major societal shifts.",
                 "Develop mental immunity against exposure to mass conditioning techniques."
             ],
+            "summaryText": "Catalog normalizing themes, link them to later shifts, and practice immunity against conditioning.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -89,6 +95,7 @@
                 "Analyze coordinated media pushes that create the false appearance of public consensus.",
                 "Use network analysis tools to detect inorganic activity and artificial engagement."
             ],
+            "summaryText": "Flag astroturf patterns, chart consensus pushes, and run network checks for fake engagement.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -101,6 +108,7 @@
                 "Evaluate how selective fact-checking is used to reinforce establishment narratives while discrediting dissent.",
                 "Develop independent verification techniques that bypass mainstream fact-checking gatekeepers."
             ],
+            "summaryText": "Audit fact-checker funding, note selective enforcement, and build your own verification workflow.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -113,6 +121,7 @@
                 "Analyze how poll results and survey framing are manipulated to steer public perception.",
                 "Expose logical fallacies in statistical narratives used in mainstream discourse."
             ],
+            "summaryText": "Spot cherry-picked stats, dissect poll framing, and challenge fallacious number stories.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -125,6 +134,7 @@
                 "Cultivate an information filtering system to detect and reject coercive messaging.",
                 "Develop a strategy for educating others on propaganda resistance without triggering cognitive dissonance."
             ],
+            "summaryText": "Sharpen real-time critical thinking, filter inputs deliberately, and teach resistance with minimal dissonance.",
             "duration": "120",
             "difficulty": "Expert"
         }

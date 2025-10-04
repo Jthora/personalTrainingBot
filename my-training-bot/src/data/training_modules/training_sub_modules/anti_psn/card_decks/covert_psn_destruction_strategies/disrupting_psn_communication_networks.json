@@ -17,6 +17,7 @@
                 "Seeding contradictions within their networks fosters internal distrust.",
                 "Using time-delayed misinformation causes progressive network instability."
             ],
+            "summaryText": "Feed believable lies on a timer so their network cannibalizes itself in confusion.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -29,6 +30,7 @@
                 "Flooding their space with conflicting narratives overloads their propaganda systems.",
                 "Using absurdity or unpredictability causes cognitive dissonance in their followers."
             ],
+            "summaryText": "Scramble their messaging cadence with noise and satire until followers tune out.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -41,6 +43,7 @@
                 "Triggering infighting by exposing manipulation tactics disrupts unity.",
                 "Compromising their trusted intermediaries isolates key operatives."
             ],
+            "summaryText": "Knock out their central messengers to shatter cohesion and spark infighting.",
             "duration": "90",
             "difficulty": "Expert"
         }

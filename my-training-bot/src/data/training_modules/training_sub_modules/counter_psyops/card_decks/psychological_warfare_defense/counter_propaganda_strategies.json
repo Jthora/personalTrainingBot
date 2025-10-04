@@ -17,6 +17,7 @@
                 "Identify key psychological hooks used to manipulate audience emotions.",
                 "Recognize common logical fallacies embedded in manipulated narratives."
             ],
+            "summaryText": "Map the agenda, flag emotional hooks, and call out fallacies running the script.",
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -29,6 +30,7 @@
                 "Encourage open discourse and questioning within target audiences.",
                 "Use controlled information leaks to expose inconsistencies in manipulated narratives."
             ],
+            "summaryText": "Inject conflicting storylines, spark questioning, and leak proof to fracture trust.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -41,6 +43,7 @@
                 "Use strategic language shifts to neutralize negative psychological conditioning.",
                 "Introduce alternative explanations that redirect focus away from manipulation points."
             ],
+            "summaryText": "Reverse engineer triggers, swap in liberating language, and offer grounded alternatives.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -53,6 +56,7 @@
                 "Utilize emotionally compelling storytelling to engage and convert audiences.",
                 "Deploy decentralized information networks to spread counter-messaging effectively."
             ],
+            "summaryText": "Build evidence-rich counters, wrap them in gripping stories, and broadcast through resilient nodes.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -65,6 +69,7 @@
                 "Embed critical thinking cues within viral content to increase audience skepticism.",
                 "Utilize humor and satire to disarm aggressive propaganda messaging."
             ],
+            "summaryText": "Craft sharp memes, hide skepticism cues inside virality, and deflate propaganda with satire.",
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -77,6 +82,7 @@
                 "Teach audiences how to cross-check sources and recognize manipulation techniques.",
                 "Reinforce cognitive independence by promoting decentralized critical analysis."
             ],
+            "summaryText": "Run controlled exposure drills, coach source vetting, and celebrate independent analysis.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -89,6 +95,7 @@
                 "Securely distribute leaked information through trusted channels.",
                 "Develop controlled narratives around leaks to maximize public impact."
             ],
+            "summaryText": "Spot insider allies, move leaks securely, and frame disclosures for maximum punch.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -101,6 +108,7 @@
                 "Expose inconsistencies and contradictions in engineered mass narratives.",
                 "Deploy social feedback loops to break down false consensus illusions."
             ],
+            "summaryText": "Deconstruct coercive rhetoric, spotlight contradictions, and use feedback loops to shatter consensus.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -113,6 +121,7 @@
                 "Use AI-assisted analysis tools to verify media authenticity.",
                 "Counter media framing tactics by exposing omitted context and deceptive editing."
             ],
+            "summaryText": "Train audiences to spot fakes, validate with AI, and restore the context editors clipped out.",
             "duration": "120",
             "difficulty": "Expert"
         },
@@ -125,6 +134,7 @@
                 "Utilize blockchain and cryptographic proof-of-truth mechanisms for data integrity.",
                 "Bypass centralized censorship controls through distributed content dissemination."
             ],
+            "summaryText": "Stand up peer networks, stamp truth cryptographically, and route around centralized censors.",
             "duration": "150",
             "difficulty": "Expert"
         }

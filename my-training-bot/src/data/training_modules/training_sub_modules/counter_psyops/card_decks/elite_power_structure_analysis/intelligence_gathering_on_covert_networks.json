@@ -18,7 +18,8 @@
                 "Recognizing common tactics used by covert groups."
             ],
             "duration": "75",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Survey secrecy signals, map core actors, and note standard covert playbooks."
         },
         {
             "id": "covert_intel_2",
@@ -30,7 +31,8 @@
                 "Building intelligence profiles from social media and digital footprints."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Stack search operators, correlate open leaks, and compile dossiers from digital traces."
         },
         {
             "id": "covert_intel_3",
@@ -42,7 +44,8 @@
                 "Monitoring illicit transactions and trafficking networks."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Mask your footprint, profile hidden interlocutors, and watch dark-market flows."
         },
         {
             "id": "covert_intel_4",
@@ -54,7 +57,8 @@
                 "Understanding psychological pressure tactics in elicitation."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Recruit trusted assets, read subtle tells, and steer conversations to extract intel."
         },
         {
             "id": "covert_intel_5",
@@ -66,7 +70,8 @@
                 "Tracking geolocation metadata from intercepted transmissions."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Break comms protections, capture signals, and geolocate emitters."
         },
         {
             "id": "covert_intel_6",
@@ -78,7 +83,8 @@
                 "Analyzing front group activities in relation to elite control systems."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Trace shell money paths, overlay corporate ties, and expose cover operations."
         },
         {
             "id": "covert_intel_7",
@@ -90,7 +96,8 @@
                 "Establishing secure communication channels and dead drops."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Practice clean tails, spot watchers fast, and maintain hardened drop comms."
         },
         {
             "id": "covert_intel_8",
@@ -102,7 +109,8 @@
                 "Revealing vulnerabilities and leveraging counterintelligence strategies."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Map leverage files, explain coercive hierarchies, and outline exploit-neutralizing responses."
         },
         {
             "id": "covert_intel_9",
@@ -114,7 +122,8 @@
                 "Evading digital forensics and tracking mechanisms."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Lock down captured intel, hand it off covertly, and scrub traces post-drop."
         },
         {
             "id": "covert_intel_10",
@@ -126,7 +135,8 @@
                 "Training operatives in intelligence gathering and secure communication."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Seed resilient intel cells, secure channels with decentralized tech, and upskill field collectors."
         }
     ]
 }

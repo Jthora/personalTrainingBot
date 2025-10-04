@@ -16,6 +16,7 @@
                 "Target key structural weaknesses in industrial facilities",
                 "Deploy timed sabotage for optimal operational impact"
             ],
+            "summaryText": "Quietly cripple critical systems via EMP strikes, structural weak points, and precisely timed disruptions.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Implement slow-acting fuel contamination for long-term disruption",
                 "Use remote-triggered tampering for high-profile missions"
             ],
+            "summaryText": "Deny mobility by sabotaging electronics, seeding delayed fuel failures, and remote-triggering tampering when impact peaks.",
             "duration": 7,
             "difficulty": "Advanced"
         }

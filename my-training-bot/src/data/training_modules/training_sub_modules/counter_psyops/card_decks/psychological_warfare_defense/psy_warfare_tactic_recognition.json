@@ -17,6 +17,7 @@
                 "Analyze framing techniques that manipulate audience perception.",
                 "Cross-reference sources to detect deliberate narrative shaping."
             ],
+            "summaryText": "Track repetition, decode framing, and cross-check stories to spot the psy play.",
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -29,6 +30,7 @@
                 "Analyze guilt, shame, and virtue-signaling techniques in messaging.",
                 "Detect artificial urgency and manufactured outrage designed to influence behavior."
             ],
+            "summaryText": "Flag fear hooks, moral traps, and outrage theater before they hijack thinking.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -41,6 +43,7 @@
                 "Evaluate how manufactured polls and surveys create false public opinion.",
                 "Recognize manipulation tactics that use celebrity endorsements for credibility."
             ],
+            "summaryText": "Audit the bots, debunk cooked polls, and strip glamor off fake consensus.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -53,6 +56,7 @@
                 "Evaluate organizations that claim to be independent but receive controlled funding.",
                 "Analyze inconsistencies and contradictions in public figures who claim to fight disinformation."
             ],
+            "summaryText": "Spot faux opposition, follow the funding, and expose scripted contradictions.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -65,6 +69,7 @@
                 "Identify psychological operations designed to incite division or compliance.",
                 "Analyze historical case studies of PsyOps in military and political conflicts."
             ],
+            "summaryText": "Study state playbooks, surface divide-and-control ops, and mine history for tells.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -77,6 +82,7 @@
                 "Analyze censorship patterns and their correlation with political objectives.",
                 "Identify psychological framing techniques that limit discussion boundaries."
             ],
+            "summaryText": "Catch the language rewrites, chart censorship waves, and push past boxed discourse.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -89,6 +95,7 @@
                 "Identify symbols, motifs, and terminology used to condition public perception.",
                 "Counter predictive programming by deconstructing and exposing its intent."
             ],
+            "summaryText": "Decode seeded narratives, catalog the symbols, and break the spell before it lands.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -101,6 +108,7 @@
                 "Analyze disruption strategies used to weaken genuine grassroots resistance.",
                 "Counteract behavioral engineering by developing independent verification protocols."
             ],
+            "summaryText": "Trace infiltrators, map disruption plays, and force-check every directive.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -113,6 +121,7 @@
                 "Identify patterns of symbolic reinforcement that shape perception over time.",
                 "Implement mental deprogramming techniques to neutralize subliminal suggestion."
             ],
+            "summaryText": "Watch for subconscious anchors, log recurring symbols, and flush them with deliberate deprogramming.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -125,6 +134,7 @@
                 "Cultivate a mindset of intellectual independence and analytical rigor.",
                 "Educate others on PsyOps recognition to strengthen collective resilience."
             ],
+            "summaryText": "Stay ahead of evolving tactics, guard your autonomy, and train others to spot the games.",
             "duration": "120",
             "difficulty": "Expert"
         }

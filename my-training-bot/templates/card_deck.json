@@ -13,7 +13,8 @@
         "description": "{{card_description_1}}",
         "bulletpoints": "{{card_bulletpoints_1}}",
         "duration": "{{duration_in_minutes}}",
-        "difficulty": "{{card_difficulty}}"
+        "difficulty": "{{card_difficulty}}",
+        "summaryText": "{{card_summary_text_1}}"
         },
         {
         "id": "{{card_id_2}}",
@@ -21,7 +22,8 @@
         "description": "{{card_description_2}}",
         "bulletpoints": "{{card_bulletpoints_2}}",
         "duration": "{{duration_in_minutes}}",
-        "difficulty": "{{card_difficulty}}"
+        "difficulty": "{{card_difficulty}}",
+        "summaryText": "{{card_summary_text_2}}"
         }
     ]
 }

@@ -13,7 +13,8 @@
             "description": "Training to respond to sudden threats while deprived of vision.",
             "bulletpoints": "Rely on auditory and tactile cues, execute immediate defensive action, maintain situational awareness",
             "duration": "10",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Sharpen blindfolded reactions by reading sound and touch, breaking the threat instantly, and anchoring situational awareness without sight."
         },
         {
             "id": "stress_drill_2",
@@ -21,7 +22,8 @@
             "description": "Reacting to an armed opponent while engaging in controlled evasion.",
             "bulletpoints": "Identify escape routes, control attacker’s firearm, neutralize immediate threat",
             "duration": "10",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Defeat gunpoint ambushes by seizing the weapon line, carving a safe exit path, and neutralizing the shooter while rounds fly."
         }
     ]
 }

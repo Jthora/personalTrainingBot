@@ -12,6 +12,7 @@
             "title": "Breath Control for Psionic Awareness",
             "description": "Breathing techniques to enhance focus and psionic perception.",
             "bulletpoints": "Deep Breathing Cycles, Energy Alignment, Mind-Body Synchronization",
+            "summaryText": "Use slow, rhythmic breaths to quiet noise and feel energy flows sharpen with each inhale.",
             "duration": "30",
             "difficulty": "Beginner"
         },
@@ -20,6 +21,7 @@
             "title": "Third Eye Activation",
             "description": "Guided meditation for opening and strengthening the third eye.",
             "bulletpoints": "Visualization Training, Sensory Expansion, Chakra Focus",
+            "summaryText": "Anchor attention between the brows and visualize light there until intuitive impressions brighten.",
             "duration": "45",
             "difficulty": "Intermediate"
         }

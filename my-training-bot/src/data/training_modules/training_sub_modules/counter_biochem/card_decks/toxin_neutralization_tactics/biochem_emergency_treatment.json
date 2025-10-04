@@ -14,7 +14,8 @@
             "description": "Emergency response techniques for rapid decontamination and counteraction of biochem threats.",
             "bulletpoints": "Skin decontamination, gas mask usage, rapid chelation protocols",
             "duration": "14",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Strip contaminated gear, decontaminate skin, don gas mask, and administer rapid chelation to halt biochem agent absorption."
         },
         {
             "id": "biochem_treat_2",
@@ -22,7 +23,8 @@
             "description": "Immediate countermeasures for ingesting contaminated food and water in survival scenarios.",
             "bulletpoints": "Emergency purging, gastrointestinal binding agents, rapid hydration techniques",
             "duration": "12",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Induce purging, administer binding agents to trap toxins in the gut, and rehydrate aggressively to prevent systemic poisoning."
         },
         {
             "id": "biochem_treat_3",
@@ -30,7 +32,8 @@
             "description": "Techniques for mitigating damage from slow-acting bio-accumulative toxins.",
             "bulletpoints": "Hormonal repair, immune system restoration, cellular regeneration protocols",
             "duration": "14",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Rebalance hormones, restore immune function, and activate cellular regeneration to counter chronic bio-accumulative toxin damage."
         }
     ]
 }

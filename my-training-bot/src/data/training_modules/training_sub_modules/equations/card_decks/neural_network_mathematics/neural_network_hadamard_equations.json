@@ -18,6 +18,7 @@
                 "Unlike matrix multiplication, this operation multiplies corresponding elements of two matrices of the same shape.",
                 "Hadamard products are frequently used in gradient updates, activation function derivatives, and recurrent neural networks."
             ],
+            "summaryText": "Use Hadamard products for elementwise interactions across matching tensors.",
             "duration": 8,
             "difficulty": "Intermediate"
         },
@@ -30,6 +31,7 @@
                 "Here, \\( \\nabla_a C \\) represents the gradient of the cost function with respect to activations, and \\( \\sigma'(z^L) \\) is the derivative of the activation function.",
                 "This Hadamard product ensures that errors are scaled correctly per neuron, helping to adjust weights efficiently."
             ],
+            "summaryText": "Scale layer errors elementwise in backprop to tailor weight updates per neuron.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -42,6 +44,7 @@
                 "Here, \\( f_t \\) determines how much past information is retained, while \\( i_t \\odot g_t \\) represents new memory input.",
                 "The Hadamard product enables element-wise gating, allowing each unit to selectively retain or forget information."
             ],
+            "summaryText": "Gate LSTM cell state elementwise to mix retained memory with new input.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -54,6 +57,7 @@
                 "Here, \\( o_t \\) is the output gate activation and \\( \\tanh(c_t) \\) represents the transformed memory cell state.",
                 "Hadamard product ensures that only relevant memory is passed to the next state, improving sequence prediction performance."
             ],
+            "summaryText": "Filter LSTM outputs by multiplying gate activations with the cell signal.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -66,6 +70,7 @@
                 "Here, \\( z_t \\) is the update gate that determines how much past information is carried forward.",
                 "This equation ensures smooth transition between past and new information, improving time-series modeling."
             ],
+            "summaryText": "Blend previous and candidate GRU states via gate-controlled Hadamard mixes.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -78,6 +83,7 @@
                 "Here, \\( \\lambda \\) represents the regularization coefficient that penalizes large weights.",
                 "Using element-wise multiplication prevents uniform shrinkage, allowing finer control over optimization."
             ],
+            "summaryText": "Apply elementwise weight decay to shrink parameters in proportion to their size.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -90,6 +96,7 @@
                 "Here, \\( \\gamma \\) and \\( \\beta \\) are trainable parameters that allow rescaling and shifting.",
                 "Hadamard product ensures each activation is scaled independently, improving convergence in deep networks."
             ],
+            "summaryText": "Rescale normalized activations per feature with Hadamard gating.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -102,6 +109,7 @@
                 "Here, \\( \\hat{m_t} \\) and \\( \\hat{v_t} \\) are momentum estimates for first and second moments of gradients.",
                 "Hadamard product ensures element-wise adaptation, allowing different parameters to update at different speeds."
             ],
+            "summaryText": "Let Adam scale gradients per parameter using moment ratios and Hadamard products.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -114,6 +122,7 @@
                 "Here, \\( \\alpha_i \\) represents the learned attention weight for each input.",
                 "This operation allows the model to focus on relevant information dynamically, improving NLP and vision models."
             ],
+            "summaryText": "Focus representations by multiplying inputs with learned attention weights.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -126,6 +135,7 @@
                 "Here, \\( W_k \\) represents the weight matrix for head \\( k \\) and \\( A_k \\) is the attention score matrix.",
                 "Hadamard product ensures each attention head processes information independently, improving feature diversity."
             ],
+            "summaryText": "Combine multi-head attention outputs through head-specific Hadamard weighting.",
             "duration": 18,
             "difficulty": "Expert"
         }

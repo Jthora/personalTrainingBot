@@ -16,6 +16,7 @@
                 "Generate and distribute one-time pad keys securely",
                 "Apply OTP encryption and decryption techniques manually"
             ],
+            "summaryText": "Pair perfectly random pads with disciplined key handling to keep messages mathematically unbreakable.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -28,6 +29,7 @@
                 "Deploy encrypted messaging platforms (Signal, Tails OS, ProtonMail)",
                 "Implement compartmentalization techniques to protect identity"
             ],
+            "summaryText": "Cycle hardened burner hardware, encrypted apps, and strict compartmentalization to dodge surveillance.",
             "duration": 7,
             "difficulty": "Advanced"
         }

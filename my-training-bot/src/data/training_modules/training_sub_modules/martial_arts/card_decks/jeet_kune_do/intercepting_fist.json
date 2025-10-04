@@ -13,6 +13,7 @@
                 "Strike from the centerline for maximum efficiency",
                 "Use explosive speed and minimal telegraphing"
             ],
+            "summaryText": "Snap the straight lead from centerline with zero telegraph to meet the attack mid-launch.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -25,6 +26,7 @@
                 "Use the least amount of force necessary for interruption",
                 "Follow up immediately with an offensive combination"
             ],
+            "summaryText": "Intercept with a stop-hit the instant they move, then flow into your finishing combo.",
             "duration": 6,
             "difficulty": "Advanced"
         }

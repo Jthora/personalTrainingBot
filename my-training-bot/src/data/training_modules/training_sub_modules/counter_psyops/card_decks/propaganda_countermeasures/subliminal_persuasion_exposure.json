@@ -17,6 +17,7 @@
                 "Slow down or reverse media to detect hidden auditory or visual cues.",
                 "Compare branding campaigns across industries to identify recurring patterns."
             ],
+            "summaryText": "Inspect logos for hidden symbols, scrub media for backmasked cues, and compare campaigns for repeats.",
             "duration": "75",
             "difficulty": "Intermediate"
         },
@@ -29,6 +30,7 @@
                 "Break down political speeches and commercials for persuasive phrase patterns.",
                 "Monitor news cycles to detect coordinated NLP usage across multiple platforms."
             ],
+            "summaryText": "Spot NLP trigger phrases, dissect speeches for patterned wording, and watch cycles for synchronized usage.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -41,6 +43,7 @@
                 "Identify colors, music, and framing techniques designed to manipulate mood.",
                 "Train in emotional resilience techniques to prevent subconscious influence."
             ],
+            "summaryText": "Analyze emotional hooks, note sensory cues, and rehearse resilience to block subconscious sway.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -53,6 +56,7 @@
                 "Contrast alternative news sources to identify common propaganda threads.",
                 "Use pattern recognition to expose manufactured consensus narratives."
             ],
+            "summaryText": "Log repeated slogans, compare alternative coverage, and surface manufactured consensus loops.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -65,6 +69,7 @@
                 "Identify predictive programming in entertainment that preconditions public response.",
                 "Compare scripts, character archetypes, and subliminal messaging across genres."
             ],
+            "summaryText": "Survey entertainment themes, flag predictive cues, and contrast archetypes across genres.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -77,6 +82,7 @@
                 "Compare real-time event coverage across media networks for bias detection.",
                 "Practice reframing techniques to neutralize manipulative narratives."
             ],
+            "summaryText": "Study headline-image framing, cross-check live coverage, and practice reframing manipulative stories.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -89,6 +95,7 @@
                 "Recognize how risk magnification is used to justify restrictive policies.",
                 "Develop immunity strategies to counteract fear-induced cognitive manipulation."
             ],
+            "summaryText": "Audit fear-laden coverage, note risk inflation, and drill immunity against anxiety scripts.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -101,6 +108,7 @@
                 "Use cognitive distancing techniques to avoid emotional hijacking.",
                 "Create and reinforce personal counter-narratives to replace conditioned responses."
             ],
+            "summaryText": "Consume media consciously, distance from emotional spikes, and author empowering counter-narratives.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -113,6 +121,7 @@
                 "Use critical questioning drills to dismantle implanted beliefs.",
                 "Engage in meditation and cognitive detox exercises to clear subliminal influence."
             ],
+            "summaryText": "Pause exposure, interrogate inherited beliefs, and detox with meditation to reset perception.",
             "duration": "120",
             "difficulty": "Expert"
         },
@@ -125,6 +134,7 @@
                 "Use humor and satire to disrupt and expose manipulation tactics.",
                 "Develop narratives that inoculate against mass psychological influence."
             ],
+            "summaryText": "Deploy counter-NLP, defang scripts with humor, and craft inoculating narratives.",
             "duration": "120",
             "difficulty": "Expert"
         }

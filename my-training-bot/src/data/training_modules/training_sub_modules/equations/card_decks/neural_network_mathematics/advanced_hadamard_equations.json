@@ -18,6 +18,7 @@
                 "Used in deep learning models that process high-dimensional data, such as vision and NLP transformers.",
                 "Efficiently computes feature-wise interactions in multi-dimensional arrays, tensor decompositions, and deep kernel learning."
             ],
+            "summaryText": "Extend elementwise Hadamard products to tensors for high-dimensional feature interactions.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -30,6 +31,7 @@
                 "Hadamard product ensures each activation is normalized independently, stabilizing training.",
                 "Applied in sequence models (RNNs, Transformers) to improve generalization across diverse input distributions."
             ],
+            "summaryText": "Use Hadamard scaling in layer normalization to stabilize activations across sequences.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -42,6 +44,7 @@
                 "This ensures stable weight updates in gradient-based optimization methods.",
                 "Used in Bayesian deep learning, meta-learning, and second-order optimization."
             ],
+            "summaryText": "Approximate Fisher information via Hadamard gradient products for steadier learning.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -54,6 +57,7 @@
                 "Ensures that only the most relevant feature dimensions contribute to attention scores.",
                 "Used in Transformer architectures such as BERT, GPT, and ViTs (Vision Transformers)."
             ],
+            "summaryText": "Filter attention outputs elementwise so Transformers emphasize salient value dimensions.",
             "duration": 18,
             "difficulty": "Expert"
         },
@@ -66,6 +70,7 @@
                 "Encourages group-wise weight elimination, improving model interpretability.",
                 "Applied in compressed deep learning models for hardware-efficient AI inference."
             ],
+            "summaryText": "Apply masked Hadamard L1 penalties to drive structured sparsity in weights.",
             "duration": 20,
             "difficulty": "Expert"
         },
@@ -78,6 +83,7 @@
                 "Used for quantum entanglement-based learning models and variational quantum circuits.",
                 "Applications include quantum generative adversarial networks (QGANs) and hybrid quantum-classical learning frameworks."
             ],
+            "summaryText": "Incorporate Hadamard mixing within quantum neural states for hybrid learning.",
             "duration": 22,
             "difficulty": "Expert"
         },
@@ -90,6 +96,7 @@
                 "Commonly used in recommender systems and low-rank approximations.",
                 "Improves computational efficiency in latent feature extraction and collaborative filtering models."
             ],
+            "summaryText": "Model latent structure by decomposing matrices into Hadamard-multiplied factors.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -102,6 +109,7 @@
                 "Provides enhanced non-linearity in high-dimensional data spaces, improving feature extraction.",
                 "Used in kernel-based deep learning models and dynamic non-linear activation architectures."
             ],
+            "summaryText": "Craft activations with Hadamard-weighted inputs to enrich nonlinear modeling.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -114,6 +122,7 @@
                 "Ensures fine-grained control over weight pruning and dropout mechanisms.",
                 "Applied in sparse deep learning models for embedded AI systems."
             ],
+                "summaryText": "Scale weight penalties with adaptive masks to steer sparsity and pruning.",
             "duration": 18,
             "difficulty": "Expert"
         },
@@ -126,6 +135,7 @@
                 "Used in multi-modal AI applications, including vision-language models and sensor fusion.",
                 "Improves cross-domain representation learning in hybrid neural architectures."
             ],
+                "summaryText": "Fuse multi-view representations via elementwise interactions to align modalities.",
             "duration": 20,
             "difficulty": "Expert"
         }

@@ -17,6 +17,7 @@
                 "Utilizing metadata analysis to verify the origins of information.",
                 "Tracking down deleted and censored content through archival methods."
             ],
+            "summaryText": "Scrape public troves, validate origins with metadata, and resurrect deleted intel from archives.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -29,6 +30,7 @@
                 "Avoiding digital footprints that could lead to exposure.",
                 "Analyzing behavioral patterns of surveillance networks."
             ],
+            "summaryText": "Encrypt every channel, minimize trace signatures, and profile surveillance behavior.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Identifying financial and institutional backers of controlled narratives.",
                 "Using forensic linguistic analysis to detect fabricated content."
             ],
+            "summaryText": "Chart bot swarms, expose narrative funders, and run linguistic forensics on fakes.",
             "duration": "75",
             "difficulty": "Advanced"
         }

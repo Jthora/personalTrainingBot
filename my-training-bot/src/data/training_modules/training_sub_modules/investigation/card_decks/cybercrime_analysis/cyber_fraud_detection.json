@@ -16,6 +16,7 @@
                 "Use OSINT tools to trace fraudulent accounts and transactions",
                 "Deploy behavioral biometrics to detect unauthorized access"
             ],
+            "summaryText": "Trace phishing vectors and biometrics trails to expose digital identity theft rings.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Investigate money laundering techniques in cryptocurrency transactions",
                 "Analyze credit card fraud and digital payment fraud trends"
             ],
+            "summaryText": "Leverage AI and crypto forensics to flag anomalous payment and laundering activity.",
             "duration": 7,
             "difficulty": "Advanced"
         }

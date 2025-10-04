@@ -16,6 +16,7 @@
                 "Use machine learning models for predictive intelligence by identifying hidden patterns in large datasets",
                 "Monitor shifts in economic, political, and social patterns to anticipate disruptive global events"
             ],
+            "summaryText": "Blend time-series and machine-learning signals to project impending strategic shifts.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Forecast industry disruptions caused by automation, digital transformation, and decentralized technologies",
                 "Identify early indicators of paradigm-shifting innovations such as neural interfaces and nanotechnology"
             ],
+            "summaryText": "Track breakthrough technologies to anticipate where disruption will reshape advantage.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -40,6 +42,7 @@
                 "Use scenario modeling to evaluate the impact of economic sanctions, resource scarcity, and diplomatic shifts",
                 "Track emerging political ideologies, populist movements, and election outcomes to anticipate global instability"
             ],
+            "summaryText": "Model diplomatic, economic, and military signals to forecast geopolitical flashpoints.",
             "duration": 8,
             "difficulty": "Expert"
         },
@@ -52,6 +55,7 @@
                 "Use social media and behavioral data to detect early signs of large-scale cultural transformations",
                 "Track the rise of decentralized movements, alternative governance models, and changing labor market dynamics"
             ],
+            "summaryText": "Read social and behavioral data to catch cultural shifts before they mainstream.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -64,6 +68,7 @@
                 "Track water, food, and energy scarcity as potential drivers of geopolitical conflicts",
                 "Use environmental modeling and satellite imagery to predict resource-driven migration patterns"
             ],
+            "summaryText": "Translate climate trends and resource data into early warnings for scarcity-driven crises.",
             "duration": 8,
             "difficulty": "Expert"
         },
@@ -76,6 +81,7 @@
                 "Analyze market cycles and financial models to identify early warning signs of recessions and financial crises",
                 "Track the adoption of decentralized finance, cryptocurrency markets, and alternative economic structures"
             ],
+            "summaryText": "Synthesize macro signals and emerging finance trends to spot looming market disruptions.",
             "duration": 7,
             "difficulty": "Advanced"
         }

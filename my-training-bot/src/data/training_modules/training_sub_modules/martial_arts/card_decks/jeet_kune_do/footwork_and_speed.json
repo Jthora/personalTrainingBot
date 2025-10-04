@@ -13,6 +13,7 @@
                 "Use small, rapid steps rather than large leaps",
                 "Maintain constant motion to avoid becoming a static target"
             ],
+            "summaryText": "Bounce through pendulum steps on the balls of your feet to dash in or out without stalling.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -25,6 +26,7 @@
                 "Keep hands up while moving to maintain defense",
                 "Use foot pivots to quickly change direction"
             ],
+            "summaryText": "Cut angles with lateral steps, guarded hands, and sharp pivots to open counter lanes.",
             "duration": 6,
             "difficulty": "Advanced"
         }

@@ -57,4 +57,17 @@ describe('generateShareSummary', () => {
         expect(summary.summary.length).toBeLessThanOrEqual(140);
         expect(summary.text.length).toBeLessThanOrEqual(140);
     });
+
+    it('prefers custom summary text when provided', () => {
+        const cardWithSummary: Card = {
+            ...baseCard,
+            summaryText: 'Line one summary.  \nTrim spaces and ensure length fits within the limit even when hashtags are present.',
+        };
+
+        const summary = generateShareSummary({ card: cardWithSummary, meta: baseMeta, maxLength: 160 });
+
+    expect(summary.summary.startsWith('Line one summary. Trim spaces')).toBe(true);
+        expect(summary.summary.length).toBeLessThanOrEqual(160);
+        expect(summary.text.length).toBeLessThanOrEqual(160);
+    });
 });

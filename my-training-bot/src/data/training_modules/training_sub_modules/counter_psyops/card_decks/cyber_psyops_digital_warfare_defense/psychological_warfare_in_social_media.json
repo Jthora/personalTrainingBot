@@ -18,7 +18,8 @@
                 "Understanding how botnets and AI-driven accounts amplify narratives."
             ],
             "duration": "75",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Spot engineered emotion spikes, trace coordinated patterns, and flag bot amplification before narratives stick."
         },
         {
             "id": "social_psyops_2",
@@ -30,7 +31,8 @@
                 "Bypassing algorithmic control mechanisms using decentralized techniques."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Decode throttling tactics, monitor agenda boosts, and route around censors with decentralized channels."
         },
         {
             "id": "social_psyops_3",
@@ -42,7 +44,8 @@
                 "Understanding meme warfare and its role in psychological influence."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Exploit biases, anchor key messages, and wield memes to steer or counter mass persuasion."
         },
         {
             "id": "social_psyops_4",
@@ -54,7 +57,8 @@
                 "Deploying counter-propaganda strategies to neutralize misinformation."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Trace origin nodes, surface truth fast, and counter with narratives that collapse disinfo runs."
         },
         {
             "id": "social_psyops_5",
@@ -66,7 +70,8 @@
                 "Deploying calming and rational counter-narratives to reduce polarization."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Identify emotional triggers, inoculate audiences, and respond with calm framing to dissolve outrage ops."
         },
         {
             "id": "social_psyops_6",
@@ -78,7 +83,8 @@
                 "Utilizing swarm intelligence to counteract mass manipulation efforts."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Mobilize decentralized teams, amplify aligned messages, and swarm adversaries to reclaim narrative ground."
         },
         {
             "id": "social_psyops_7",
@@ -90,7 +96,8 @@
                 "Subverting enemy propaganda by injecting destabilizing counter-narratives."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Deploy controlled voices, run sock puppets, and insert destabilizing counters to fracture hostile networks."
         },
         {
             "id": "social_psyops_8",
@@ -102,7 +109,8 @@
                 "Using strategic disengagement to avoid psychological capture."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Call out social pressure plays, monitor sentiment manipulation, and disengage tactically to stay sovereign."
         },
         {
             "id": "social_psyops_9",
@@ -114,7 +122,8 @@
                 "Using behavioral reinforcement techniques to maintain resistance."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Train pattern awareness, reinforce cognitive autonomy, and build habits that resist digital psyops."
         },
         {
             "id": "social_psyops_10",
@@ -126,7 +135,8 @@
                 "Creating redundancy networks to maintain access to information during censorship."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Secure communications, leverage decentralized hubs, and maintain redundancy so resistance survives censorship."
         }
     ]
 }

@@ -16,6 +16,7 @@
                 "Engage glutes and quads to support the position",
                 "Gradually increase duration to build endurance"
             ],
+            "summaryText": "Lock into a strong plank line, squeezing glutes and quads to hold steady.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -28,6 +29,7 @@
                 "Engage the obliques to prevent sagging",
                 "Progress by adding leg lifts or arm reaches"
             ],
+            "summaryText": "Stack into a solid side plank and ignite obliques without dropping hips.",
             "duration": 5,
             "difficulty": "Intermediate"
         }

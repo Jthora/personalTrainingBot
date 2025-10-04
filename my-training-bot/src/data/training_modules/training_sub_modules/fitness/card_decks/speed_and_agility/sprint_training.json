@@ -16,6 +16,7 @@
                 "Drive the knees and pump arms aggressively",
                 "Use short, powerful strides for maximum speed"
             ],
+            "summaryText": "Explode out of a low stance with piston arms and short strides to own the first 20 meters.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -28,6 +29,7 @@
                 "Maintain relaxed shoulders and efficient arm mechanics",
                 "Keep ground contact time minimal for maximum efficiency"
             ],
+            "summaryText": "Float into top speed with a smooth build then stay relaxed and quick for pure max velocity.",
             "duration": 8,
             "difficulty": "Advanced"
         }

@@ -13,7 +13,8 @@
             "description": "Developing grip endurance and hand control to prevent weapon loss.",
             "bulletpoints": "Strength drills, grip adjustment techniques, counter-disarm maneuvers",
             "duration": "10",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Build crushing grip endurance, cycle choke, hammer, and saber grip adjustments, and snap into counters the second someone clamps your weapon hand."
         },
         {
             "id": "retention_2",
@@ -21,7 +22,8 @@
             "description": "Defending against disarmament attempts in grappling range.",
             "bulletpoints": "Body positioning, leverage advantage, reactive counters",
             "duration": "15",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Lock the weapon to your centerline, crash hips into the attacker, cycle leverage breaks, and chain reactive strikes to punish every disarm attempt in the clinch."
         }
     ]
 }

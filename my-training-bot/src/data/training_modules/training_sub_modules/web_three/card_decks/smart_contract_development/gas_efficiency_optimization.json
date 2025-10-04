@@ -13,6 +13,7 @@
             "title": "Understanding Gas Costs",
             "description": "Breaking down how Ethereum's gas system works and how it impacts smart contracts.",
             "bulletpoints": "Gas fees, transaction costs, block limits, gas refunds",
+            "summaryText": "Explain how gas fees are calculated, why block gas limits matter for deployments, and ways to reclaim gas refunds when possible.",
             "duration": "40",
             "difficulty": "Intermediate"
         },
@@ -21,6 +22,7 @@
             "title": "Storage Optimization Strategies",
             "description": "Minimizing storage usage to reduce on-chain costs.",
             "bulletpoints": "Storage vs. memory, packing variables, immutable variables",
+            "summaryText": "Compare storage and memory costs, illustrate struct packing patterns, and highlight when immutables lock values cheaply.",
             "duration": "50",
             "difficulty": "Advanced"
         },
@@ -29,6 +31,7 @@
             "title": "Efficient Loops & Computation",
             "description": "Optimizing loops and function calls to lower gas costs.",
             "bulletpoints": "Minimizing loop iterations, gas-efficient function calls, avoiding redundant computations",
+            "summaryText": "Show techniques to cap loop work, structure functions for cheaper calls, and prune duplicate computations to trim gas.",
             "duration": "45",
             "difficulty": "Advanced"
         }

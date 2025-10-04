@@ -16,6 +16,7 @@
                 "Use proper PPE and contamination control procedures",
                 "Document scene layout, environmental factors, and evidence placement"
             ],
+            "summaryText": "Lock down the scene and document conditions to preserve uncontaminated evidence.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Tag evidence using barcode systems and logs",
                 "Take high-quality photos and sketches of all critical elements"
             ],
+            "summaryText": "Label and log evidence meticulously so chain-of-custody stands up in court.",
             "duration": 7,
             "difficulty": "Advanced"
         }

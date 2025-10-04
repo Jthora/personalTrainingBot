@@ -13,6 +13,7 @@
                 "Strike with the base of the palm for maximum force",
                 "Use a snapping motion to increase speed and impact"
             ],
+            "summaryText": "Drive a straight, snapping palm with an aligned wrist to pierce the guard.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -25,6 +26,7 @@
                 "Maintain a relaxed yet firm hand position",
                 "Follow through with body movement for added power"
             ],
+            "summaryText": "Spiral the palm through openings, letting relaxed rotation and body follow-through add power.",
             "duration": 6,
             "difficulty": "Advanced"
         }

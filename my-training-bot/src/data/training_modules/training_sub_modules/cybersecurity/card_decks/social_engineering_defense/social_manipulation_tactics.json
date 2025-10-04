@@ -12,6 +12,7 @@
             "title": "Common Manipulation Techniques",
             "description": "Tactics used by attackers to gain access through deception.",
             "bulletpoints": "Pretexting, Authority Exploitation, Fear Induction, Reciprocity",
+            "summaryText": "Recognize the psychological plays—authority, fear, favors—that social engineers lean on.",
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -20,6 +21,7 @@
             "title": "Counteracting Social Engineering",
             "description": "Defensive measures to prevent social engineering exploitation.",
             "bulletpoints": "Verification Protocols, Psychological Awareness Training, Identity Verification",
+            "summaryText": "Build defense through strict verification and awareness so manipulation fizzles.",
             "duration": "90",
             "difficulty": "Intermediate"
         }

@@ -13,6 +13,7 @@
                 "Incorporate low stances for balance and fluidity",
                 "Ensure quick recovery for the next movement"
             ],
+            "summaryText": "Whip the long fist combo from deep stances so each reach snaps back ready for the next line.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -25,6 +26,7 @@
                 "Keep a low, stable stance for balance",
                 "Focus on decisive execution with each movement"
             ],
+            "summaryText": "Sink the stance, drive from the hips, and drop the southern fist with decisive weight.",
             "duration": 6,
             "difficulty": "Advanced"
         }

@@ -12,6 +12,7 @@
             "title": "Understanding the OWASP Top 10",
             "description": "A deep dive into the most critical security risks affecting web applications.",
             "bulletpoints": "SQL Injection, XSS, CSRF, Broken Authentication",
+            "summaryText": "Memorize the OWASP Top 10 so you can spot every classic web flaw on sight.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -20,6 +21,7 @@
             "title": "Exploiting Web Vulnerabilities",
             "description": "Hands-on exploitation techniques using Burp Suite, Metasploit, and other tools.",
             "bulletpoints": "Session Hijacking, IDOR, API Exploits",
+            "summaryText": "Weaponize Burp and Metasploit to hijack sessions, pivot through IDOR, and bend APIs.",
             "duration": "120",
             "difficulty": "Advanced"
         }

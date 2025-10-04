@@ -13,7 +13,8 @@
             "description": "Fast engagement of targets using instinctive aiming techniques.",
             "bulletpoints": "Index shooting mechanics, target tracking, movement integration",
             "duration": "10",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Deliver reflexive hits by indexing the pistol, tracking threats in motion, and firing before they touch the trigger."
         },
         {
             "id": "close_range_2",
@@ -21,7 +22,8 @@
             "description": "Clearing confined spaces using efficient shooting and movement techniques.",
             "bulletpoints": "Pie slicing tactics, target priority assessment, low-light adaptability",
             "duration": "15",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Clear tight rooms by slicing corners, sorting targets instantly, and adapting to low-light before the fight catches up."
         }
     ]
 }

@@ -17,7 +17,8 @@
                 "Develop rapid deployment response plans"
             ],
             "duration": 6,
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Command mass-casualty incidents by standing up triage lines fast, syncing medical and law enforcement assets, and executing prebuilt deployment plans under pressure."
         },
         {
             "id": "active_shooter_response",
@@ -29,7 +30,8 @@
                 "Coordinate tactical entry and hostage rescue operations"
             ],
             "duration": 7,
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Neutralize active shooters by applying ALERRT tactics, locking down containment zones, and orchestrating coordinated entries that prioritize civilian extraction."
         }
     ]
 }

@@ -12,6 +12,7 @@
             "title": "Directing Energy Through the Body",
             "description": "Practices for channeling energy along meridians and pathways.",
             "bulletpoints": "Qi Flow Awareness, Hand-to-Hand Energy Transfer, Breath-Driven Energy Circulation",
+            "summaryText": "Guide qi along the meridians with breath and hands until flow feels seamless.",
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -20,6 +21,7 @@
             "title": "Amplifying and Releasing Psionic Energy",
             "description": "Techniques to store, build, and discharge energy effectively.",
             "bulletpoints": "Energy Accumulation, Projection Training, Discharge Control",
+            "summaryText": "Stack energy, surge it forward, and release with precise control.",
             "duration": "90",
             "difficulty": "Advanced"
         }

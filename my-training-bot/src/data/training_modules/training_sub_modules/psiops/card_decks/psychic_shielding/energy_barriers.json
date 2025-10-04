@@ -12,6 +12,7 @@
             "title": "Forming an Energy Barrier",
             "description": "Techniques for creating a protective psionic field around oneself.",
             "bulletpoints": "Energy Flow Control, Field Expansion, Shield Density",
+            "summaryText": "Sweep psi around your body and compress it into a shell that feels thick and responsive.",
             "duration": "50",
             "difficulty": "Intermediate"
         },
@@ -20,6 +21,7 @@
             "title": "Advanced Shielding Applications",
             "description": "Multi-layered shielding techniques to block stronger attacks.",
             "bulletpoints": "Frequency Modulation, Absorption Shielding, Multi-Layer Protection",
+            "summaryText": "Stack shields at different frequencies so incoming force disperses before it reaches you.",
             "duration": "75",
             "difficulty": "Advanced"
         }

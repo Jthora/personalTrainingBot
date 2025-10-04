@@ -20,6 +20,7 @@
                 " - \\( \\vec{E} \\) and \\( \\vec{B} \\) are the electric and magnetic field vectors adjusted for psi interactions.",
                 " - \\( \\vec{F} \\) represents additional forces, including consciousness-driven influences."
             ],
+            "summaryText": "Balance every term in the flux equation to see how psi energy sweeps through space.",
             "duration": 8,
             "difficulty": "Intermediate"
         },
@@ -35,6 +36,7 @@
                 " - \\( g_{\\mu \\nu} \\) is the metric tensor of spacetime.",
                 " - \\( \\frac{\\partial x^\\alpha}{\\partial x^\\mu} \\) and \\( \\frac{\\partial x^\\beta}{\\partial x^\\nu} \\) are derivatives representing field distortions."
             ],
+            "summaryText": "Interpret the psi stress-energy tensor to understand how intent stresses spacetime.",
             "duration": 10,
             "difficulty": "Intermediate"
         },
@@ -50,6 +52,7 @@
                 " - \\( \\frac{\\partial \\Psi}{\\partial t} \\) describes the time evolution of psi energy density.",
                 " - \\( \\nabla^2 \\Psi \\) represents the Laplacian of psi energy density, showing how it disperses."
             ],
+            "summaryText": "Track how psi fields trade energy with EM forces via divergence and time-change terms.",
             "duration": 10,
             "difficulty": "Intermediate"
         },
@@ -65,6 +68,7 @@
                 " - \\( t \\) represents time.",
                 "Similar to fields in electromagnetism, psi energy density varies over space and time."
             ],
+            "summaryText": "Use the psi density field as your map of where energy pools and thins over spacetime.",
             "duration": 8,
             "difficulty": "Beginner"
         },
@@ -80,6 +84,7 @@
                 " - \\( \\vec{v} \\) is the velocity vector of psi energy flow.",
                 " - \\( d\\vec{S} \\) is the differential surface area element."
             ],
+            "summaryText": "Integrate psi flux over a surface to total up the energy streaming through.",
             "duration": 10,
             "difficulty": "Intermediate"
         },
@@ -94,6 +99,7 @@
                 " - \\( \\nabla \\cdot (\\Psi \\vec{v}) \\) represents the divergence of psi energy flux.",
                 " - \\( \\vec{J} \\) is a source or sink term for psi energy, representing external influences."
             ],
+            "summaryText": "Apply the conservation law to account for every psi source, sink, and flow.",
             "duration": 12,
             "difficulty": "Advanced"
         },
@@ -107,6 +113,7 @@
                 " - \\( \\nabla^2 \\Psi \\) is the Laplacian operator applied to psi energy density.",
                 " - This equation describes psi energy equilibrium conditions."
             ],
+            "summaryText": "Solve the Laplace form to model calm, source-free psi environments.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -121,6 +128,7 @@
                 " - \\( \\Psi \\) is the psi energy density scalar field.",
                 " - \\( dV \\) is a differential volume element."
             ],
+            "summaryText": "Integrate psi density over volume to estimate stored potential energy.",
             "duration": 10,
             "difficulty": "Advanced"
         }

@@ -13,7 +13,8 @@
             "description": "Identifying multiple escape routes in urban environments before engaging in an operation.",
             "bulletpoints": "Mapping safe zones, exploiting blind spots, blending with crowds",
             "duration": "15",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Pre-load secondary and tertiary exit paths, mark safe houses, and pattern crowd flows so you can vanish through blind spots the moment pressure hits."
         },
         {
             "id": "escape_2",
@@ -21,7 +22,8 @@
             "description": "Techniques to escape from handcuffs, zip ties, and rope bindings.",
             "bulletpoints": "Shim techniques, breaking zip ties, exploiting binding weaknesses",
             "duration": "20",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Drill covert shimming, friction burns, and leverage bursts so you can slip cuffs, pop ties, or unravel knots before captors realize their control collapsed."
         }
     ]
 }

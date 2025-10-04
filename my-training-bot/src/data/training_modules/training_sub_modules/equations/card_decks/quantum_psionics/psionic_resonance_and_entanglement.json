@@ -13,6 +13,7 @@
                 "Develop techniques to align personal energy fields with target frequencies via bioelectric coherence \\[ \\nabla \\cdot \\mathbf{E} = \\frac{\\rho}{\\epsilon_0} \\]",
                 "Explore the role of harmonic structures in consciousness interactions using Fourier transforms \\[ f(x) = \\int_{-\\infty}^{\\infty} \\tilde{f}(k) e^{ikx} dk \\]"
             ],
+            "summaryText": "Match personal and target frequencies to amplify psi resonance using wave interference and harmonic alignment.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -25,6 +26,7 @@
                 "Analyze quantum wavefunction collapse and its role in observer-dependent psi effects \\[ \\psi(x,t) = \\sum c_n e^{-iE_n t/\\hbar} \\phi_n(x) \\]",
                 "Explore theoretical models where entangled states \\( |\\psi\\rangle = \\frac{1}{\\sqrt{2}} (|01\\rangle + |10\\rangle) \\) provide a framework for nonlocal consciousness."
             ],
+            "summaryText": "Use Bell violations, collapse dynamics, and entangled state models to frame nonlocal psi connections.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -37,6 +39,7 @@
                 "Analyze experimental data on psi effects using statistical deviation metrics \\[ \\chi^2 = \\sum \\frac{(O_i - E_i)^2}{E_i} \\]",
                 "Develop protocols for refining psi signal transmission using entangled state evolution \\[ U(t) = e^{-iHt/\\hbar} \\]"
             ],
+            "summaryText": "Design rigorous remote-influence experiments, quantify deviations, and iterate entangled signalling protocols.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -49,6 +52,7 @@
                 "Explore psi-mediated alterations in double-slit interference experiments \\[ I(x) = I_0 \\cos^2(kx) \\]",
                 "Develop observational techniques to detect psi-affected perturbations in entangled systems."
             ],
+            "summaryText": "Probe consciousness-driven collapse through double-slit modulation and entangled system monitoring.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -61,6 +65,7 @@
                 "Analyze biological field resonance effects and their impact on psi signal strength \\[ \\omega = \\frac{2\\pi}{T} \\]",
                 "Investigate experimental setups for measuring energy field coherence using quantum optics principles."
             ],
+            "summaryText": "Measure psi strength through phase coherence metrics, biofield resonance, and quantum-optics instrumentation.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -73,6 +78,7 @@
                 "Develop psi feedback training protocols to enhance efficiency in directed energy transmission.",
                 "Investigate entanglement-based psi models that allow faster-than-light (FTL) energy interactions."
             ],
+            "summaryText": "Model psi transfer with tunneling analogies, iterative feedback training, and speculative entangled channels.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -85,6 +91,7 @@
                 "Develop methods for synchronizing biofield emissions with external resonance patterns.",
                 "Analyze EEG-measured neural coherence and its correlation with enhanced psi abilities."
             ],
+            "summaryText": "Enhance psi potential by entraining brainwaves, synchronizing biofields, and tracking EEG coherence gains.",
             "duration": 14,
             "difficulty": "Advanced"
         },
@@ -97,6 +104,7 @@
                 "Analyze psi signal propagation through Fourier holography equations \\[ \\psi(x) = \\int e^{ikx} \\tilde{\\psi}(k) dk \\]",
                 "Investigate psi-based information retrieval mechanisms from higher-dimensional field structures."
             ],
+            "summaryText": "Apply holographic field models and Fourier propagation to explain nonlocal psi information access.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -109,6 +117,7 @@
                 "Investigate how harmonizing with Earth's resonance affects psi sensitivity and coherence.",
                 "Develop psi training protocols that leverage natural electromagnetic field interactions."
             ],
+            "summaryText": "Leverage Earth's Schumann resonances to tune psi sensitivity and structure training routines.",
             "duration": 16,
             "difficulty": "Expert"
         }

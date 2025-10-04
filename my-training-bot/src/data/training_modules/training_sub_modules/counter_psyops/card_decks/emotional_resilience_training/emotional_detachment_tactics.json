@@ -18,7 +18,8 @@
                 "Using logical sequencing techniques to override emotional interference."
             ],
             "duration": "60",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Compartmentalize feelings, stay situationally aware, and run logic sequences to keep emotions out."
         },
         {
             "id": "emotional_detachment_2",
@@ -30,7 +31,8 @@
                 "Developing detachment triggers to reset emotional balance in real-time."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Audit weak points, stay mindful from overidentifying, and fire detachment triggers on demand."
         },
         {
             "id": "emotional_detachment_3",
@@ -42,7 +44,8 @@
                 "Using breathing techniques to suppress involuntary emotional signals."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Mask tells with neutral faces, meter output deliberately, and breathe to mute micro-signals."
         },
         {
             "id": "emotional_detachment_4",
@@ -54,7 +57,8 @@
                 "Creating a predefined response system for handling emotional triggers."
             ],
             "duration": "75",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Anchor composure, distance mentally from charged dialogue, and follow scripted trigger responses."
         },
         {
             "id": "emotional_detachment_5",
@@ -66,7 +70,8 @@
                 "Developing an auto-trigger mechanism for immediate detachment."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Meditate into resets, shift states before overwhelm, and wire auto-detachment triggers."
         },
         {
             "id": "emotional_detachment_6",
@@ -78,7 +83,8 @@
                 "Using dissociative visualization to process events without internalization."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Reframe inputs to neutral, observe like an outsider, and visualize events without absorbing them."
         },
         {
             "id": "emotional_detachment_7",
@@ -90,7 +96,8 @@
                 "Developing emotional offloading strategies to prevent cumulative stress."
             ],
             "duration": "60",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Cull excess emotional load, release intentionally, and offload before stress compounds."
         },
         {
             "id": "emotional_detachment_8",
@@ -102,7 +109,8 @@
                 "Using mental pattern interruption to disrupt emotional conditioning tactics."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Keep speech measured, hold neutral body language, and interrupt emotional scripts mentally."
         },
         {
             "id": "emotional_detachment_9",
@@ -114,7 +122,8 @@
                 "Using detachment affirmations to separate experience from reaction."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Expose yourself gradually, compartmentalize pain, and repeat detachment affirmations."
         },
         {
             "id": "emotional_detachment_10",
@@ -126,7 +135,8 @@
                 "Applying internal transmutation to convert external negativity into neutral energy."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Redirect hostile energy, deflect attacks verbally, and transmute negativity into neutrality."
         }
     ]
 }

@@ -17,6 +17,7 @@
                 "Using natural terrain for concealment and misdirection.",
                 "Leveraging underground and unmonitored routes for movement."
             ],
+            "summaryText": "Builds layered escape plans using mapped corridors, terrain masking, and hidden channels.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Using timing and disguise to blend into controlled zones.",
                 "Exploiting gaps in digital and physical monitoring systems."
             ],
+            "summaryText": "Shows how to read surveillance patterns, time movement, and slip through monitoring blind spots.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Using misdirection tactics to confuse pursuers.",
                 "Establishing fallback locations for rapid relocation."
             ],
+            "summaryText": "Focuses on quiet evacuation drills, decoy tactics, and staging fallback safehouses.",
             "duration": "90",
             "difficulty": "Expert"
         }

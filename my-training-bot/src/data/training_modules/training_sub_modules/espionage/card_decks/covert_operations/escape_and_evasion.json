@@ -16,6 +16,7 @@
                 "Navigate urban landscapes while minimizing exposure",
                 "Employ decoy tactics to mislead pursuers"
             ],
+            "summaryText": "Cycle disguises, route through low-visibility corridors, and drop decoys to vanish inside dense urban crowds.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Source food and water while maintaining a low profile",
                 "Employ natural cover and terrain navigation strategies"
             ],
+            "summaryText": "Mask tracks, forage quietly, and ride terrain cover to slip trackers while staying supplied off-grid.",
             "duration": 7,
             "difficulty": "Advanced"
         }

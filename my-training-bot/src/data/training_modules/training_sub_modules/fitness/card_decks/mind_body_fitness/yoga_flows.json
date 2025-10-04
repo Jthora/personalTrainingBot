@@ -16,6 +16,7 @@
                 "Synchronize breath with each movement",
                 "Complete 5-10 rounds to energize the body"
             ],
+            "summaryText": "Link breath to each pose in repeated sun salutations to warm the body and steady the mind.",
             "duration": 8,
             "difficulty": "Beginner"
         },
@@ -28,6 +29,7 @@
                 "Engage the core for better posture and control",
                 "Hold each position for a few breaths to deepen flexibility"
             ],
+            "summaryText": "Transition through the warrior poses while rooting the legs and engaging core to build powerful balance.",
             "duration": 10,
             "difficulty": "Intermediate"
         }

@@ -19,7 +19,8 @@
                 "Honey as an antiseptic and wound barrier to prevent infection."
             ],
             "duration": "14",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Improvise detox tools from charcoal, vinegar mixes, plantain, and honey so poisons and wounds are stabilized even off-grid."
         },
         {
             "id": "survival_treatment_2",
@@ -32,7 +33,8 @@
                 "Saltwater (saline) irrigation for cleaning wounds and preventing bacterial growth."
             ],
             "duration": "12",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Hold infection at bay with natural dressings, clay draws, emergency cautery, and saline flushes when sterile kits are gone."
         },
         {
             "id": "survival_treatment_3",
@@ -45,7 +47,8 @@
                 "Vitamin C megadosing to neutralize free radicals caused by radiation exposure."
             ],
             "duration": "14",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Stack KI, binding clays, algae, and C megadoses to block uptake, chelate metals, and rebuild cells after radiation hits."
         },
         {
             "id": "survival_treatment_4",
@@ -58,7 +61,8 @@
                 "Breathing techniques for minimizing lung exposure in high-risk environments."
             ],
             "duration": "12",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Rig improvised masks, damp filters, and sealed rooms so your lungs stay clear even when air turns hostile."
         },
         {
             "id": "survival_treatment_5",
@@ -71,7 +75,8 @@
                 "Iodine and chlorine dioxide tablets to purify water in emergency situations."
             ],
             "duration": "12",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Cycle boiling, charcoal, solar distillation, and chemical tabs so every sip stays safe from BioChem contamination."
         },
         {
             "id": "survival_treatment_6",
@@ -84,7 +89,8 @@
                 "Natural air filtration using plants that absorb toxins and release oxygen."
             ],
             "duration": "14",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Stand up quarantine bubbles, run UV sterilization, and improvise PPE so outbreaks die before they spread."
         },
         {
             "id": "survival_treatment_7",
@@ -97,7 +103,8 @@
                 "Elderberry and echinacea to strengthen the immune system against viral threats."
             ],
             "duration": "12",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Deploy potent botanicals to fight infection, cut inflammation, and keep detox pathways clearing BioChem insults."
         },
         {
             "id": "survival_treatment_8",
@@ -110,7 +117,8 @@
                 "Breathing exercises to maintain oxygen flow and counteract paralysis effects."
             ],
             "duration": "14",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Rotate atropine, alkalizers, magnesium support, and controlled breathing to blunt nerve agent effects until evac."
         },
         {
             "id": "survival_treatment_9",
@@ -123,7 +131,8 @@
                 "Rinsing eyes with saline or clean water for exposure to chemical irritants."
             ],
             "duration": "12",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Strip contaminated layers, scrub with absorptive media, and rinse skin or eyes fast to halt secondary exposure."
         }
     ]
 }

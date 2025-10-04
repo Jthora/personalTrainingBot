@@ -13,7 +13,8 @@
             "description": "Methods for escaping from an opponent’s dominant mount position.",
             "bulletpoints": "Bridge and roll, shrimp escape, frame and guard recovery",
             "duration": "10",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Escape oppressive mount control by chaining explosive bridges, shrimping to recover frames, and resetting guard before strikes or submissions land."
         },
         {
             "id": "grappling_2",
@@ -21,7 +22,8 @@
             "description": "Applying a high-percentage submission hold to neutralize opponents.",
             "bulletpoints": "Grip placement, securing hooks, pressure application",
             "duration": "10",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Finish fights cleanly by locking hooks, setting airtight grips, and ramping controlled pressure until the rear naked choke forces a tap or sleep."
         }
     ]
 }

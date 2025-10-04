@@ -13,6 +13,7 @@
             "title": "Block Structure & Data Storage",
             "description": "Exploring how data is stored in blocks and linked in a blockchain.",
             "bulletpoints": "Block headers, Merkle trees, transaction structures",
+            "summaryText": "Break down a block into header, body, and Merkle tree so you know exactly how transactions link and stay tamper-evident.",
             "duration": "30",
             "difficulty": "Beginner"
         },
@@ -21,6 +22,7 @@
             "title": "Peer-to-Peer Networks",
             "description": "How blockchain nodes communicate and validate transactions.",
             "bulletpoints": "Node roles, full nodes vs. light nodes, decentralized networks",
+            "summaryText": "Map node types and gossip protocols to see how decentralized peers relay blocks and reach agreement without central servers.",
             "duration": "40",
             "difficulty": "Intermediate"
         },
@@ -29,6 +31,7 @@
             "title": "Immutability and Data Integrity",
             "description": "Ensuring data cannot be altered or removed from the blockchain.",
             "bulletpoints": "Cryptographic hashing, append-only structure, cryptographic proof",
+            "summaryText": "Follow the hash links and append-only design that make tampering obvious and keep blockchain records provably intact.",
             "duration": "35",
             "difficulty": "Intermediate"
         }

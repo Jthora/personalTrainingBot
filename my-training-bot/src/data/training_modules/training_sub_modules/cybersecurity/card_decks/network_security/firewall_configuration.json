@@ -12,6 +12,7 @@
             "title": "Firewall Fundamentals",
             "description": "Understanding how firewalls work and their role in network security.",
             "bulletpoints": "Stateful vs. Stateless Firewalls, Packet Filtering, Rule-Based Access Control",
+            "summaryText": "Grasp core firewall concepts, from packet filtering basics to crafting rule sets that hold the perimeter.",
             "duration": "90",
             "difficulty": "Intermediate"
         },
@@ -20,6 +21,7 @@
             "title": "Configuring a Next-Gen Firewall",
             "description": "Implementing policies and rules for a next-generation firewall (NGFW).",
             "bulletpoints": "Deep Packet Inspection, Application Layer Filtering, Intrusion Prevention System (IPS) Integration",
+            "summaryText": "Layer NGFW policies with DPI, app-aware rules, and IPS hooks to clamp down on modern threats.",
             "duration": "120",
             "difficulty": "Intermediate"
         }

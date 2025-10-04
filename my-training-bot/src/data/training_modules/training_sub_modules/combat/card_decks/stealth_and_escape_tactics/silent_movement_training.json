@@ -13,7 +13,8 @@
             "description": "Methods for reducing footstep noise across different surfaces.",
             "bulletpoints": "Heel-to-toe rolling, crouched movement, surface adaptation",
             "duration": "10",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Feather your steps by rolling heel-to-toe, compressing knees, and reading surface feedback so each stride melts into ambient noise."
         },
         {
             "id": "silent_move_2",
@@ -21,7 +22,8 @@
             "description": "Using controlled breathing to maintain calmness and reduce sound production.",
             "bulletpoints": "Slow diaphragmatic breathing, controlled exhalation, masking breath with environmental noise",
             "duration": "10",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Sync low diaphragmatic breaths with ambient noise cycles, exhale through micro-openings, and keep your nervous system quiet so nothing betrays your position."
         }
     ]
 }

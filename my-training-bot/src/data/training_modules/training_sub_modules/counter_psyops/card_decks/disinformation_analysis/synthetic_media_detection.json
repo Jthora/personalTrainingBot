@@ -18,7 +18,8 @@
                 "Ethical concerns and regulatory responses to synthetic content."
             ],
             "duration": "60",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Survey synthetic formats, connect their PsyOps pedigree, and weigh governance debates."
         },
         {
             "id": "synthetic_media_2",
@@ -30,7 +31,8 @@
                 "Using AI-driven tools to verify deepfake content."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Scrutinize facial glitches, compare physical lighting cues, and confirm with detector suites."
         },
         {
             "id": "synthetic_media_3",
@@ -42,7 +44,8 @@
                 "Verifying authenticity using known voice fingerprinting methods."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Listen for cadence slips, inspect spectra for cloning artifacts, and match against trusted voice prints."
         },
         {
             "id": "synthetic_media_4",
@@ -54,7 +57,8 @@
                 "Using AI detection tools to identify machine-generated narratives."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Spot robotic phrasing, validate claims externally, and run text through AI-origin detectors."
         },
         {
             "id": "synthetic_media_5",
@@ -66,7 +70,8 @@
                 "Using OSINT tools to map synthetic media distribution networks."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Trace coordinated amplification, chart synthetic narrative spikes, and map share paths with OSINT."
         },
         {
             "id": "synthetic_media_6",
@@ -78,7 +83,8 @@
                 "Recognizing industry-standard digital watermarks for content verification."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Inspect metadata for edits, validate media integrity, and hunt for authentic watermarks."
         },
         {
             "id": "synthetic_media_7",
@@ -90,7 +96,8 @@
                 "Developing resilience against hyper-realistic disinformation tactics."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Decode emotional hooks, tie them to bias triggers, and script mental countermeasures."
         },
         {
             "id": "synthetic_media_8",
@@ -102,7 +109,8 @@
                 "Leveraging decentralized AI-detection networks for verification."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Stand up rapid debunk flows, craft truth-forward narratives, and tap distributed detection allies."
         },
         {
             "id": "synthetic_media_9",
@@ -114,7 +122,8 @@
                 "Developing intervention strategies for social media misinformation."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Profile AI bot swarms, monitor viral synthetic memes, and deploy platform-level mitigation plans."
         },
         {
             "id": "synthetic_media_10",
@@ -126,7 +135,8 @@
                 "Understanding geopolitical implications of AI warfare in PsyOps."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Forecast emerging spoof tech, review detection R&D, and weigh strategic ramifications of AI psywar."
         }
     ]
 }

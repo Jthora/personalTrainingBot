@@ -16,6 +16,7 @@
                 "Focus on smooth transitions between steps",
                 "Keep upper body stable and minimize head movement"
             ],
+            "summaryText": "Race nimble steps through the ladder while staying light and controlled for fast feet.",
             "duration": 5,
             "difficulty": "Beginner"
         },
@@ -28,6 +29,7 @@
                 "Keep knees slightly bent for better stability",
                 "Engage core muscles to maintain control and speed"
             ],
+            "summaryText": "Drive sharp side steps through the ladder, knees bent and core tight to sharpen lateral burst.",
             "duration": 6,
             "difficulty": "Intermediate"
         }

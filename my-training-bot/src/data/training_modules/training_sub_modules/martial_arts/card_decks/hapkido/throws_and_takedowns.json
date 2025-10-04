@@ -13,6 +13,7 @@
                 "Rotate the hips to generate momentum",
                 "Control the fall to prevent injury"
             ],
+            "summaryText": "Close the distance, whip the hips, and steer the landing for a clean hip throw.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -25,6 +26,7 @@
                 "Sweep the leg in a controlled manner",
                 "Follow up with a pin or submission"
             ],
+            "summaryText": "Sink low, carve the leg out smoothly, and flow straight into control after the sweep.",
             "duration": 6,
             "difficulty": "Advanced"
         }

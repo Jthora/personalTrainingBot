@@ -17,6 +17,7 @@
                 "Exaggerating minor details shifts their attention away from their main objective.",
                 "Using ambiguity prevents them from forming clear strategies against you."
             ],
+            "summaryText": "Throw out a fake important topic to pull their focus away, blow up minor details to shift their attention from the real target, and keep things vague so they can't build a solid strategy against you.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -26,9 +27,10 @@
             "description": "Encouraging overestimation of their own control to make them vulnerable to exposure.",
             "bulletpoints": [
                 "Subtly reinforcing their belief in their invulnerability leads to reckless actions.",
-                "Allowing them to believe they have ‘won’ sets them up for greater failures.",
+                "Allowing them to believe they have 'won' sets them up for greater failures.",
                 "Exploiting their arrogance by feeding them misleading cues forces them into predictable behaviors."
             ],
+            "summaryText": "Gently pump up their belief that they're untouchable so they get sloppy, let them think they won to set up a bigger fall later, and exploit their arrogance by feeding false signals that lock them into predictable moves.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Strategic silence and long pauses force them to overcompensate, revealing their weaknesses.",
                 "Encouraging emotional outbursts in controlled environments causes them to self-sabotage."
             ],
+            "summaryText": "Point out subtle contradictions in what they say to trigger mental stress, use strategic silence and pauses to make them overreact and show weakness, and push them toward emotional outbursts in controlled settings so they self-destruct.",
             "duration": "90",
             "difficulty": "Expert"
         }

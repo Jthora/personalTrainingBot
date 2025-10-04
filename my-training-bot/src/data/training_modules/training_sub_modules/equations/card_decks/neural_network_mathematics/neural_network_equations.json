@@ -18,6 +18,7 @@
                 "This model is used to represent the simplest form of neural computation, where a neuron fires if the weighted sum of inputs exceeds a threshold.",
                 "This equation forms the basis of perceptron learning and is useful in binary classification tasks, such as logic gates, pattern recognition, and rule-based AI systems."
             ],
+            "summaryText": "Model binary neurons firing when weighted inputs pass a threshold in McCulloch-Pitts form.",
             "duration": 8,
             "difficulty": "Intermediate"
         },
@@ -30,6 +31,7 @@
                 "Here, \\( \\eta \\) is the learning rate, \\( d \\) is the desired output, and \\( y \\) is the actual output.",
                 "This rule adjusts the weights when an error occurs, guiding the perceptron towards better classification in linearly separable problems, such as handwritten digit recognition and medical diagnosis models."
             ],
+            "summaryText": "Update perceptron weights by scaling input error with the learning rate.",
             "duration": 10,
             "difficulty": "Intermediate"
         },
@@ -42,6 +44,7 @@
                 "This equation calculates the error at layer \\( L \\), propagating it backward to adjust weights using gradient descent.",
                 "Backpropagation allows deep neural networks to learn complex patterns by minimizing the loss function in tasks like image recognition, speech processing, and financial forecasting."
             ],
+            "summaryText": "Propagate output errors backward via \\delta^L to update multilayer network weights.",
             "duration": 12,
             "difficulty": "Advanced"
         },
@@ -54,6 +57,7 @@
                 "This equation describes how a Hopfield network converges to stable states, where \\( \\mathbf{W} \\) represents the weight matrix.",
                 "Hopfield networks are used in pattern retrieval, optimization problems, and associative memory models, such as error correction in noisy data."
             ],
+            "summaryText": "Use the Hopfield energy landscape to understand convergence toward stored memories.",
             "duration": 12,
             "difficulty": "Advanced"
         },
@@ -66,6 +70,7 @@
                 "This function outputs values between 0 and 1, making it useful for probabilistic interpretations in classification tasks.",
                 "Despite its usefulness, it suffers from vanishing gradient issues, limiting its effectiveness in deep networks compared to ReLU."
             ],
+            "summaryText": "Apply sigmoid to map inputs into smooth 0-1 probabilities despite gradient limits.",
             "duration": 8,
             "difficulty": "Intermediate"
         },
@@ -78,6 +83,7 @@
                 "Unlike sigmoid, ReLU is non-saturating, allowing faster training in deep learning models.",
                 "ReLU is widely used in convolutional neural networks (CNNs), deep reinforcement learning, and speech recognition tasks."
             ],
+            "summaryText": "Use ReLU to pass positive activations while zeroing negatives for efficient deep training.",
             "duration": 10,
             "difficulty": "Intermediate"
         },
@@ -90,6 +96,7 @@
                 "This equation ensures that the model learns by taking small steps in the direction that minimizes the loss function \\( C \\)",
                 "Gradient descent is the foundation of deep learning, logistic regression, and optimization problems in AI."
             ],
+            "summaryText": "Step weights down the gradient to iteratively minimize the cost function.",
             "duration": 12,
             "difficulty": "Advanced"
         },
@@ -102,6 +109,7 @@
                 "This function ensures that outputs sum to 1, making it ideal for multi-class classification tasks.",
                 "Softmax is widely used in deep learning models for NLP, object detection, and reinforcement learning."
             ],
+            "summaryText": "Normalize logits with softmax so outputs form a categorical probability vector.",
             "duration": 10,
             "difficulty": "Intermediate"
         },
@@ -114,6 +122,7 @@
                 "This equation ensures that activations have zero mean and unit variance, preventing internal covariate shift.",
                 "Batch normalization improves convergence rates, regularization, and generalization in deep networks."
             ],
+            "summaryText": "Normalize batch activations to stabilize training and improve generalization.",
             "duration": 14,
             "difficulty": "Advanced"
         },
@@ -126,6 +135,7 @@
                 "This equation is commonly used in classification models, such as logistic regression and deep learning classifiers.",
                 "Cross-entropy loss is widely applied in image recognition, natural language processing, and probabilistic AI models."
             ],
+            "summaryText": "Measure classification error by penalizing divergence between true and predicted distributions.",
             "duration": 12,
             "difficulty": "Advanced"
         }

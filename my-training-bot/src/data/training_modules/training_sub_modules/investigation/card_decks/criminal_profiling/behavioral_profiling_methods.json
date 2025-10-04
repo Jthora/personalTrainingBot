@@ -16,6 +16,7 @@
                 "Identify triggers and escalation markers",
                 "Use psychological models to predict future actions"
             ],
+            "summaryText": "Study recurring behaviors and triggers to forecast an offender’s next moves.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Assess inconsistencies in suspect statements",
                 "Apply forensic interview techniques to detect dishonesty"
             ],
+            "summaryText": "Blend verbal cues and microexpressions to spot deception during interviews.",
             "duration": 7,
             "difficulty": "Advanced"
         }

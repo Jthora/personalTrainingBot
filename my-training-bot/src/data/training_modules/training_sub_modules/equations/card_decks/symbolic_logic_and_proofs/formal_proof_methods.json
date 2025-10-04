@@ -18,6 +18,7 @@
                 "Example: Prove that if \\( n \\) is even, then \\( n^2 \\) is even: \\[ n = 2k \\Rightarrow n^2 = 4k^2 = 2(2k^2) \\]",
                 "Apply direct proofs in number theory, inequalities, and algebra."
             ],
+            "summaryText": "Assume the hypothesis and derive the conclusion through linear logical steps across algebraic domains.",
             "duration": 8,
             "difficulty": "Intermediate"
         },
@@ -30,6 +31,7 @@
                 "Proof by contradiction assumes \\( \\neg P \\) and derives a contradiction: \\[ P \\Rightarrow (Q \\land \\neg Q) \\Rightarrow \\text{False} \\]",
                 "Example: Prove \\( \\sqrt{2} \\) is irrational by contradiction."
             ],
+            "summaryText": "Establish results via contraposition or by negating the claim and deriving an impossibility.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -42,6 +44,7 @@
                 "Example: Prove \\( 1 + 2 + ... + n = \\frac{n(n+1)}{2} \\) using induction.",
                 "Strong induction applies when the inductive step depends on multiple prior cases."
             ],
+            "summaryText": "Verify the base case and push statements forward with standard or strong inductive steps.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -54,6 +57,7 @@
                 "Explore Russell’s paradox in naive set theory: \\[ R = \\{ x \\mid x \\notin x \\} \\Rightarrow R \\in R \\iff R \\notin R \\]",
                 "Apply contradiction proofs to irrational numbers and prime theorems."
             ],
+            "summaryText": "Assume the negation to expose contradictions, illuminating paradoxes and classical impossibility proofs.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -66,6 +70,7 @@
                 "Establish the uncountability of \\( \\mathbb{R} \\) using Cantor’s diagonal argument.",
                 "Apply proof techniques to power sets, unions, and intersections."
             ],
+            "summaryText": "Leverage subset arguments and diagonalization to prove core set-theoretic identities and sizes.",
             "duration": 14,
             "difficulty": "Advanced"
         },
@@ -78,6 +83,7 @@
                 "Use epsilon-delta arguments to prove function continuity and differentiability.",
                 "Apply these methods to sequences, functions, and real analysis."
             ],
+            "summaryText": "Deploy epsilon–delta bounds to rigorously confirm limits, continuity, and analytic properties.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -90,6 +96,7 @@
                 "Prove modular arithmetic properties: \\[ a \\equiv b \\pmod{m} \\Rightarrow a^k \\equiv b^k \\pmod{m}. \\]",
                 "Use Diophantine equation proofs in integer solutions."
             ],
+            "summaryText": "Apply contradiction, modular arithmetic, and Diophantine techniques to classic number theory statements.",
             "duration": 15,
             "difficulty": "Advanced"
         },
@@ -102,6 +109,7 @@
                 "Apply contradiction to show that a graph with odd-degree vertices has an Eulerian path.",
                 "Use planarity proofs and coloring theorems."
             ],
+            "summaryText": "Combine induction, contradiction, and structural reasoning to prove graph properties and traversals.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -114,6 +122,7 @@
                 "Use Lagrange’s theorem: \\[ |H| \\text{ divides } |G| \\text{ for any finite group } G. \\]",
                 "Apply homomorphism and isomorphism theorems."
             ],
+            "summaryText": "Invoke group order arguments and structure theorems to demonstrate fundamental algebraic facts.",
             "duration": 17,
             "difficulty": "Expert"
         },
@@ -126,6 +135,7 @@
                 "Use Hilbert’s formalism to derive theorems in logic.",
                 "Understand Gödel’s incompleteness theorem: \\[ \\text{Any consistent formal system } S \\text{ contains true statements that cannot be proven.} \\]"
             ],
+            "summaryText": "Employ axiomatic systems like Peano, Hilbert, and Gödel to ground formal logical reasoning.",
             "duration": 18,
             "difficulty": "Expert"
         }

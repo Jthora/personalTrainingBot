@@ -17,6 +17,7 @@
                 "Model risk in finance, engineering, cybersecurity, and logistics",
                 "Simulate a wide range of scenarios to test decision-making under uncertainty"
             ],
+            "summaryText": "Run Monte Carlo simulations to quantify outcome probabilities across uncertain scenarios.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -29,6 +30,7 @@
                 "Improve decision-making in security, finance, and artificial intelligence",
                 "Analyze risk scenarios where complete data is unavailable"
             ],
+            "summaryText": "Build Bayesian networks to infer risk relationships even when data is sparse.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -41,6 +43,7 @@
                 "Use machine learning to identify deviations from normal behavior",
                 "Analyze financial transactions and network traffic for risk management"
             ],
+            "summaryText": "Deploy anomaly detection to surface outliers that signal fraud or intrusions early.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -53,6 +56,7 @@
                 "Apply strategic decision-making to cybersecurity and military tactics",
                 "Understand how rational actors make choices under risk and uncertainty"
             ],
+            "summaryText": "Use game-theory models to anticipate strategic moves in risk-laden contests.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -65,6 +69,7 @@
                 "Use in economics, security planning, and negotiation strategies",
                 "Predict outcomes in adversarial situations, such as cyberwarfare or financial markets"
             ],
+            "summaryText": "Identify Nash equilibria to locate stable strategies where no actor gains by shifting.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -77,6 +82,7 @@
                 "Use artificial intelligence to model real-world decision-making",
                 "Analyze emergent behaviors in large-scale risk scenarios"
             ],
+            "summaryText": "Simulate autonomous agents to observe emergent risk patterns in complex systems.",
             "duration": 8,
             "difficulty": "Advanced"
         },
@@ -89,6 +95,7 @@
                 "Develop resilience strategies to minimize catastrophic impacts",
                 "Analyze historical Black Swan events for better preparedness"
             ],
+            "summaryText": "Plan resilience around rare, high-impact shocks that defy conventional prediction.",
             "duration": 7,
             "difficulty": "Expert"
         },
@@ -101,6 +108,7 @@
                 "Apply in artificial intelligence, control systems, and risk assessments",
                 "Improve decision models when exact probabilities are unknown"
             ],
+            "summaryText": "Apply fuzzy logic to reason through ambiguous inputs where crisp probabilities fail.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -113,6 +121,7 @@
                 "Process structured and unstructured data to detect security threats",
                 "Improve business intelligence and real-time risk assessment"
             ],
+            "summaryText": "Leverage big data analytics to uncover patterns and power predictive risk models.",
             "duration": 7,
             "difficulty": "Advanced"
         }

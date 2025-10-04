@@ -12,6 +12,7 @@
             "title": "Identifying Psychic Threats",
             "description": "Training in recognizing and neutralizing external psychic influences.",
             "bulletpoints": "Threat Detection, Energy Disruption, Mind Signature Analysis",
+            "summaryText": "Scan for foreign intent patterns and cut their link before they anchor in your field.",
             "duration": "55",
             "difficulty": "Advanced"
         },
@@ -20,6 +21,7 @@
             "title": "Defensive Combat Against Psychic Manipulation",
             "description": "Using counter-strategies to resist and repel mental manipulation.",
             "bulletpoints": "Psychic Reflection, Energy Mirror Techniques, Thought Recalibration",
+            "summaryText": "Bounce hostile commands back through mirrors of will and reset your mental baseline immediately.",
             "duration": "70",
             "difficulty": "Expert"
         }

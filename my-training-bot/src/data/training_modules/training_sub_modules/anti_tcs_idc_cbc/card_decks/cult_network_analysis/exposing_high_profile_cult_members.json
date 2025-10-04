@@ -17,6 +17,7 @@
                 "Tracing their rise to power and connections to elite groups.",
                 "Identifying propaganda strategies used to build their authority."
             ],
+            "summaryText": "Profile cult leaders’ psychology, trace elite alliances, and decode their authority-building propaganda.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Visualizing power networks with link analysis tools.",
                 "Identifying handlers, enforcers, and public-facing operatives."
             ],
+            "summaryText": "Fuse OSINT and HUMINT, map the network, and surface concealed handlers and operatives.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Coordinating whistleblower testimony and document leaks.",
                 "Creating viral awareness campaigns to disrupt public perception."
             ],
+            "summaryText": "Mobilize indie media, amplify whistleblowers, and launch viral campaigns to expose cult influence.",
             "duration": "90",
             "difficulty": "Expert"
         }

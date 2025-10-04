@@ -1,166 +1,226 @@
 :root {
-    --share-card-base-width: 960px;
-    --share-card-base-height: 540px;
+    --share-card-width: 1200px;
+    --share-card-height: 675px;
     --share-card-scale: 1;
-    --share-card-padding: clamp(24px, calc(var(--share-card-base-width) * 0.03125), 48px);
-    --share-card-gap: clamp(16px, calc(var(--share-card-base-width) * 0.018), 28px);
+    --share-card-padding: calc(var(--share-card-scale) * clamp(48px, calc(var(--share-card-width) * 0.05), 72px));
+    --share-card-primary: var(--share-card-accent, #6ddcff);
+    --share-card-surface: rgba(6, 16, 40, 0.92);
 }
 
-.shareCard {
-    width: var(--share-card-base-width);
-    max-width: 100%;
-    height: var(--share-card-base-height);
-    padding: var(--share-card-padding);
-    border-radius: 32px;
-    background: radial-gradient(circle at top left, rgba(0, 31, 63, 0.85), rgba(0, 12, 26, 0.95));
-    color: #f4faff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0 40px 90px rgba(0, 0, 0, 0.55);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+.card {
     position: relative;
-    overflow: hidden;
+    width: calc(var(--share-card-width) * var(--share-card-scale));
+    min-height: calc(var(--share-card-height) * var(--share-card-scale));
+    padding: var(--share-card-padding);
     box-sizing: border-box;
-    transform-origin: top left;
-    transform: scale(var(--share-card-scale));
+    border-radius: calc(var(--share-card-scale) * 40px);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: calc(var(--share-card-scale) * 32px);
+    background: radial-gradient(circle at top left, rgba(20, 38, 78, 0.95), rgba(4, 12, 30, 0.98));
+    color: #f7fbff;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    box-shadow: 0 calc(var(--share-card-scale) * 48px) calc(var(--share-card-scale) * 120px) rgba(0, 0, 0, 0.55);
 }
 
-.shareCard::after {
-    content: "";
+.backdrop {
     position: absolute;
     inset: 0;
+    background:
+        radial-gradient(circle at 18% 12%, rgba(255, 255, 255, 0.08), transparent 60%),
+        radial-gradient(circle at 75% 85%, rgba(109, 220, 255, 0.18), transparent 55%),
+        linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent 40%);
+    mix-blend-mode: screen;
     pointer-events: none;
-    background: radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.08), transparent 45%);
 }
 
-.topRow {
+.topBar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: clamp(12px, calc(var(--share-card-base-width) * 0.015), 20px);
+    justify-content: space-between;
+    gap: calc(var(--share-card-scale) * 20px);
     position: relative;
     z-index: 1;
 }
 
-.modulePill {
-    padding: clamp(6px, calc(var(--share-card-base-width) * 0.0075), 12px) clamp(14px, calc(var(--share-card-base-width) * 0.013), 20px);
+.moduleBadge {
+    padding: calc(var(--share-card-scale) * 10px) calc(var(--share-card-scale) * 22px);
     border-radius: 999px;
-    font-weight: 600;
-    font-size: clamp(12px, calc(var(--share-card-base-width) * 0.012), 15px);
-    color: #001026;
-    background: var(--module-accent);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.65));
+    color: #07102a;
+    font-weight: 700;
+    font-size: calc(var(--share-card-scale) * 20px);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    box-shadow: 0 calc(var(--share-card-scale) * 12px) calc(var(--share-card-scale) * 24px) rgba(255, 255, 255, 0.25);
 }
 
 .breadcrumbs {
-    font-size: clamp(12px, calc(var(--share-card-base-width) * 0.011), 15px);
+    display: inline-flex;
+    align-items: center;
+    gap: calc(var(--share-card-scale) * 12px);
     color: rgba(255, 255, 255, 0.75);
-    letter-spacing: 0.08em;
+    letter-spacing: 0.12em;
+    font-size: calc(var(--share-card-scale) * 16px);
     text-transform: uppercase;
 }
 
-.body {
-    flex: 1;
-    display: grid;
-    grid-template-rows: auto auto 1fr;
-    gap: var(--share-card-gap);
-    margin-top: clamp(18px, calc(var(--share-card-base-height) * 0.035), 28px);
-    overflow: hidden;
+.separator {
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.mainContent {
     position: relative;
     z-index: 1;
+    display: grid;
+    gap: calc(var(--share-card-scale) * 28px);
 }
 
 .title {
     margin: 0;
-    font-size: clamp(30px, calc(var(--share-card-base-width) * 0.038), 54px);
-    line-height: 1.1;
-    color: #ffffff;
+    font-size: calc(var(--share-card-scale) * clamp(54px, calc(var(--share-card-width) * 0.08), 72px));
+    line-height: 1.05;
+    letter-spacing: -0.01em;
 }
 
 .description {
     margin: 0;
-    font-size: clamp(15px, calc(var(--share-card-base-width) * 0.02), 20px);
-    line-height: 1.5;
-    color: rgba(255, 255, 255, 0.85);
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    line-clamp: 3;
-    overflow: hidden;
+    font-size: calc(var(--share-card-scale) * clamp(24px, calc(var(--share-card-width) * 0.025), 30px));
+    line-height: 1.4;
+    color: rgba(237, 246, 255, 0.82);
 }
 
-.bullets {
+.bulletList {
     margin: 0;
-    padding-left: clamp(16px, calc(var(--share-card-base-width) * 0.022), 24px);
+    padding: 0;
+    list-style: none;
     display: grid;
-    gap: clamp(10px, calc(var(--share-card-base-width) * 0.014), 18px);
-    font-size: clamp(14px, calc(var(--share-card-base-width) * 0.017), 18px);
-    color: rgba(255, 255, 255, 0.9);
+    gap: calc(var(--share-card-scale) * 18px);
 }
 
-.bullets li {
-    line-height: 1.45;
+.bulletList li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: calc(var(--share-card-scale) * 16px);
+    align-items: start;
 }
 
-.bottomRow {
+.bulletGlyph {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(var(--share-card-scale) * 20px);
+    translate: 0 calc(var(--share-card-scale) * 4px);
+    color: rgba(255, 255, 255, 0.55);
+    font-size: calc(var(--share-card-scale) * 26px);
+}
+
+.bulletContent {
+    display: grid;
+    gap: calc(var(--share-card-scale) * 6px);
+    font-size: calc(var(--share-card-scale) * clamp(22px, calc(var(--share-card-width) * 0.021), 26px));
+    line-height: 1.35;
+    color: rgba(246, 250, 255, 0.9);
+    word-break: break-word;
+}
+
+.footerRow {
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
-    gap: clamp(12px, calc(var(--share-card-base-width) * 0.02), 28px);
-    margin-top: clamp(24px, calc(var(--share-card-base-height) * 0.052), 36px);
+    justify-content: space-between;
+    gap: calc(var(--share-card-scale) * 24px);
     position: relative;
     z-index: 1;
 }
 
-.badges {
+.statChips {
     display: flex;
-    gap: clamp(8px, calc(var(--share-card-base-width) * 0.012), 18px);
     flex-wrap: wrap;
+    gap: calc(var(--share-card-scale) * 16px);
 }
 
-.badge {
-    padding: clamp(6px, calc(var(--share-card-base-width) * 0.008), 10px) clamp(12px, calc(var(--share-card-base-width) * 0.015), 18px);
-    border-radius: 12px;
+.statChip {
+    display: grid;
+    gap: calc(var(--share-card-scale) * 4px);
+    padding: calc(var(--share-card-scale) * 14px) calc(var(--share-card-scale) * 20px);
+    border-radius: calc(var(--share-card-scale) * 18px);
     background: rgba(255, 255, 255, 0.08);
-    color: rgba(255, 255, 255, 0.85);
-    font-size: clamp(12px, calc(var(--share-card-base-width) * 0.015), 16px);
+    backdrop-filter: blur(calc(var(--share-card-scale) * 2px));
+    min-width: calc(var(--share-card-scale) * 140px);
 }
 
-.linkArea {
+.statLabel {
+    font-size: calc(var(--share-card-scale) * 16px);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.statValue {
+    font-size: calc(var(--share-card-scale) * 26px);
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.linkBlock {
+    display: grid;
+    gap: calc(var(--share-card-scale) * 8px);
     text-align: right;
-    display: flex;
-    flex-direction: column;
-    gap: clamp(6px, calc(var(--share-card-base-width) * 0.0085), 14px);
 }
 
 .linkLabel {
-    font-size: clamp(11px, calc(var(--share-card-base-width) * 0.0115), 14px);
+    font-size: calc(var(--share-card-scale) * 16px);
     text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0.16em;
+    color: rgba(255, 255, 255, 0.55);
 }
 
 .linkValue {
-    font-family: 'Aldrich', sans-serif;
-    font-size: clamp(14px, calc(var(--share-card-base-width) * 0.016), 18px);
-    color: rgba(255, 255, 255, 0.85);
+    font-family: 'Aldrich', 'Roboto Mono', monospace;
+    font-size: calc(var(--share-card-scale) * 28px);
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.95);
 }
 
-@media (max-width: 900px) {
-    .shareCard {
-        width: clamp(260px, 80vw, var(--share-card-max-width, 600px));
-        max-width: var(--share-card-max-width, 600px);
-        aspect-ratio: auto;
-        padding: clamp(24px, calc(var(--share-card-base-width) * 0.036), 40px);
+.katexInline {
+    display: inline-block;
+}
+
+.katexBlock {
+    display: block;
+    margin: calc(var(--share-card-scale) * 8px) 0;
+}
+
+.katexInline :global(.katex),
+.katexBlock :global(.katex) {
+    color: inherit;
+    font-size: inherit;
+}
+
+.katexBlock :global(.katex-display) {
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        --share-card-scale: 0.75;
+    }
+}
+
+@media (max-width: 640px) {
+    .card {
+        --share-card-scale: 0.6;
+        border-radius: calc(var(--share-card-scale) * 36px);
     }
 
-    .bottomRow {
+    .footerRow {
         flex-direction: column;
         align-items: flex-start;
-        gap: clamp(18px, calc(var(--share-card-base-width) * 0.028), 32px);
+        text-align: left;
     }
 
-    .linkArea {
+    .linkBlock {
         text-align: left;
     }
 }

@@ -16,6 +16,7 @@
                 "Prioritize good form over rapid progress",
                 "Adjust workload based on fatigue levels"
             ],
+            "summaryText": "Add small weight jumps each session while guarding form to stack dependable strength gains.",
             "duration": 7,
             "difficulty": "Intermediate"
         },
@@ -28,6 +29,7 @@
                 "Maintain training frequency with reduced intensity",
                 "Allow muscles and joints to recover before resuming intensity"
             ],
+            "summaryText": "Schedule light deload weeks so fatigue drops and you rebound ready for the next heavy block.",
             "duration": 6,
             "difficulty": "Intermediate"
         }

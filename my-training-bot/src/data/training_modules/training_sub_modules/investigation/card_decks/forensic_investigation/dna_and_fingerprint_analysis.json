@@ -16,6 +16,7 @@
                 "Apply PCR and STR analysis for DNA matching",
                 "Interpret CODIS database results to identify suspects"
             ],
+            "summaryText": "Collect pristine samples and run STR profiling to match DNA via CODIS.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Compare fingerprint ridge patterns using AFIS databases",
                 "Differentiate between class, loop, arch, and whorl fingerprint types"
             ],
+            "summaryText": "Develop latent prints and compare ridge patterns in AFIS to confirm identities.",
             "duration": 7,
             "difficulty": "Advanced"
         }

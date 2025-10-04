@@ -12,6 +12,7 @@
             "title": "Gathering Threat Intelligence from Public Sources",
             "description": "Using OSINT techniques to track and analyze cyber threats.",
             "bulletpoints": "WHOIS Lookup, DNS Enumeration, Social Media Threat Monitoring",
+            "summaryText": "Mine public footprints to spot brewing cyber hits before they land.",
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -20,6 +21,7 @@
             "title": "Analyzing and Correlating OSINT Data",
             "description": "Building threat intelligence reports from collected OSINT data.",
             "bulletpoints": "Data Cross-Referencing, Threat Correlation, Attribution Analysis",
+            "summaryText": "Fuse open data streams into coherent threat stories teams can act on.",
             "duration": "90",
             "difficulty": "Intermediate"
         }

@@ -16,6 +16,7 @@
                 "Identify shell companies and fraudulent bookkeeping practices",
                 "Use forensic tools to cross-reference financial transactions"
             ],
+            "summaryText": "Scrutinize ledgers and shells to flag abnormalities in corporate financials.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Analyze false deductions and fraudulent tax returns",
                 "Collaborate with international agencies for financial compliance"
             ],
+            "summaryText": "Trace offshore flows and bogus filings to dismantle tax evasion schemes.",
             "duration": 7,
             "difficulty": "Advanced"
         }

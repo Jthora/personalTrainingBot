@@ -18,6 +18,7 @@
                 "Explore traditional energy concepts such as chi (氣), prana (प्राण), and vital force, mapping their properties to bioelectric activity.",
                 "Understand the impact of bioelectricity on cellular membrane potentials: \\[ V_m = \\frac{RT}{zF} \\ln \\frac{[\\text{ion}]_\\text{outside}}{[\\text{ion}]_\\text{inside}} \\] (Nernst equation)"
             ],
+            "summaryText": "Relate global biofield concepts to measurable bioelectric currents and membrane potentials.",
             "duration": 8,
             "difficulty": "Intermediate"
         },
@@ -30,6 +31,7 @@
                 "Use grounding and earthing to stabilize excess charge by facilitating electron flow: \\[ I = \\frac{V}{R} \\] (Ohm's Law applied to biological conductivity)",
                 "Apply focused intention and mental coherence to direct bioelectric currents using bioelectromagnetic induction principles: \\[ \\nabla \\times \\mathbf{E} = - \\frac{\\partial \\mathbf{B}}{\\partial t} \\] (Faraday's Law of Induction)"
             ],
+            "summaryText": "Modulate bioelectric output with breath, grounding, and intention-driven induction.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -42,6 +44,7 @@
                 "Practice hands-on and non-contact energy manipulation techniques via modulation of standing bioelectric fields.",
                 "Explore bioelectric resonance coupling and how fields interact in healing and combat applications: \\[ P = \\mathbf{E} \\cdot \\mathbf{J} \\] (power transfer in biological electromagnetic interactions)"
             ],
+            "summaryText": "Sense and redirect energy flows using skin potential readings and resonance coupling.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -54,6 +57,7 @@
                 "Explore how neuronal action potentials generate electric fields, influencing the bioelectromagnetic field.",
                 "Analyze the effects of Schumann resonance frequencies (7.83 Hz, 14.3 Hz, etc.) on human bioelectric synchronization."
             ],
+            "summaryText": "Apply electromagnetic laws to explain neural fields and earth-resonant biofield entrainment.",
             "duration": 11,
             "difficulty": "Expert"
         },
@@ -66,6 +70,7 @@
                 "Explore harmonic relationships between chakra frequencies and electromagnetic wave interactions.",
                 "Apply Fourier transforms to analyze bioelectric coherence in energy centers."
             ],
+            "summaryText": "Model chakra activity as resonant biofield spectra using harmonic and Fourier analysis.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -78,6 +83,7 @@
                 "Enhance field stability using feedback loops: \\[ E = \\frac{1}{2}CV^2 \\] (electrostatic energy storage in the body)",
                 "Apply constructive interference principles: \\[ A_{\\text{total}} = A_1 + A_2 \\] to amplify bioenergy signals."
             ],
+            "summaryText": "Build and amplify psionic fields via meditative coherence, energy storage, and constructive interference.",
             "duration": 13,
             "difficulty": "Expert"
         },
@@ -90,6 +96,7 @@
                 "Analyze DC potentials in regenerating organisms such as salamanders.",
                 "Explore applications of pulsed electromagnetic field (PEMF) therapy in human bioelectric enhancement."
             ],
+            "summaryText": "Harness bioelectric gradients and PEMF cues to stimulate regeneration and healing.",
             "duration": 11,
             "difficulty": "Advanced"
         },
@@ -102,6 +109,7 @@
                 "Investigate how external electromagnetic fields modulate neurological states: \\[ V = L \\frac{dI}{dt} \\] (neuronal induction effects)",
                 "Explore resonant entrainment between heart, brain, and biofield coherence."
             ],
+            "summaryText": "Tune nervous system resonance with EEG bands, external fields, and heart-brain entrainment.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -114,6 +122,7 @@
                 "Explore bioelectric phase-locking mechanisms in long-term energy constructs.",
                 "Develop techniques to sustain energy fields over time using cyclic reinforcement."
             ],
+            "summaryText": "Store and sustain psi constructs through capacitive models, phase locking, and periodic reinforcement.",
             "duration": 14,
             "difficulty": "Expert"
         }

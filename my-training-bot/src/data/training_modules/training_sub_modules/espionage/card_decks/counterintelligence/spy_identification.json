@@ -16,6 +16,7 @@
                 "Identify signs of nervousness or over-prepared responses",
                 "Use deception detection techniques in interviews"
             ],
+            "summaryText": "Probe for cover-story gaps, stress cues, and deception markers to flag operatives hiding espionage roles.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Identify anomalies in encrypted communication methods",
                 "Use metadata analysis to track message transmission points"
             ],
+            "summaryText": "Scrutinize coded phrasing, encryption oddities, and metadata trails to expose clandestine communication chains.",
             "duration": 7,
             "difficulty": "Advanced"
         }

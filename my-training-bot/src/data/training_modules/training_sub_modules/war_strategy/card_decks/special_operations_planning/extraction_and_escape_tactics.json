@@ -12,6 +12,7 @@
             "title": "Evading Pursuers and Escape Routes",
             "description": "Utilizing terrain and cover to evade detection and reach extraction points.",
             "bulletpoints": "Escape route planning, terrain utilization, counter-tracking techniques",
+            "summaryText": "Scout redundant escape lanes, use terrain masking, and deploy counter-tracking tricks to shake pursuit and hit the pickup zone clean.",
             "duration": "70",
             "difficulty": "Advanced"
         },
@@ -20,6 +21,7 @@
             "title": "Tactical Extraction of High-Value Targets",
             "description": "Planning and executing rescue operations under high-risk conditions.",
             "bulletpoints": "Fast extraction planning, defensive positioning, securing personnel",
+            "summaryText": "Coordinate rapid extraction teams that secure the package, hold defensive arcs, and exfil under layered contingency plans.",
             "duration": "85",
             "difficulty": "Advanced"
         }

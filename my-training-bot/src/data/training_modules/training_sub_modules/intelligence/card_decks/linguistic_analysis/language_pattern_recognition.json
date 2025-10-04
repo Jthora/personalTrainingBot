@@ -18,6 +18,7 @@
                 "Analyze grammatical markers that imply hidden or implicit meanings",
                 "Apply Natural Language Processing (NLP) tools to detect subtle variations in speech patterns"
             ],
+            "summaryText": "Parse structure and meaning cues so hidden intent pops in intelligence transcripts.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -30,6 +31,7 @@
                 "Identify high-frequency words and key phrases that indicate central themes",
                 "Analyze sentiment-weighted keywords to uncover emotional tones in speech or text"
             ],
+            "summaryText": "Deploy TF-IDF, LDA, and keyword weighting to uncover dominant themes and tonal signals at scale.",
             "duration": 7,
             "difficulty": "Intermediate"
         },
@@ -42,6 +44,7 @@
                 "Use machine learning models to classify texts as positive, negative, or neutral",
                 "Apply lexicon-based and deep learning approaches to detect aggressive or deceptive language"
             ],
+            "summaryText": "Run sentiment models to spot hostile shifts or deceptive tone before threats escalate.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -54,6 +57,7 @@
                 "Use pre-trained NER models to identify people, places, and organizations",
                 "Recognize patterns in alias usage and anonymized references in covert communications"
             ],
+            "summaryText": "Leverage NER to pull key actors, locations, and aliases from covert communications fast.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -66,6 +70,7 @@
                 "Use linguistic analysis to detect inconsistencies in written and spoken statements",
                 "Apply behavioral and computational models to assess truthfulness in speech"
             ],
+            "summaryText": "Flag hedges and inconsistencies while scoring statements with computational deception models.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -78,6 +83,7 @@
                 "Analyze voice stress, intonation, and hesitations for psychological profiling",
                 "Use acoustic fingerprinting to track individuals in recorded conversations"
             ],
+            "summaryText": "Pair ASR transcripts with acoustic profiling to identify speakers and stress cues on the fly.",
             "duration": 8,
             "difficulty": "Advanced"
         },
@@ -90,6 +96,7 @@
                 "Analyze when and why speakers shift between different languages or dialects",
                 "Identify patterns of linguistic adaptation in intelligence contexts"
             ],
+            "summaryText": "Track code-switching moments to infer audience targeting and strategic messaging shifts.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -102,6 +109,7 @@
                 "Apply computational models to match anonymous texts to known authors",
                 "Use forensic linguistics to uncover deception and authorship misattribution"
             ],
+            "summaryText": "Compare stylistic fingerprints to tie anonymous documents back to likely authors.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -114,6 +122,7 @@
                 "Identify discourse markers that indicate persuasion, manipulation, or radicalization",
                 "Analyze online discussions, social media posts, and propaganda materials for intelligence insights"
             ],
+            "summaryText": "Dissect discourse markers to expose influence campaigns and radicalization vectors.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -126,6 +135,7 @@
                 "Identify mistranslations that alter meaning in intelligence reports",
                 "Use bilingual corpus analysis to verify accuracy in cross-language communications"
             ],
+            "summaryText": "Audit machine translations against bilingual corpora to prevent meaning drift in intel flows.",
             "duration": 5,
             "difficulty": "Intermediate"
         }

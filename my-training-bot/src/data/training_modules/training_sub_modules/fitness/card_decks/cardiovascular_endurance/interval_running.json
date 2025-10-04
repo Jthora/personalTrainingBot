@@ -16,6 +16,7 @@
                 "Improve aerobic and anaerobic conditioning through pace variations",
                 "Use landmarks or time-based intervals to structure workouts"
             ],
+            "summaryText": "Blend easy jogs with bursts so stamina and speed climb together.",
             "duration": 20,
             "difficulty": "Intermediate"
         },
@@ -28,6 +29,7 @@
                 "Recover by walking or jogging downhill",
                 "Engage glutes and hamstrings for explosive power"
             ],
+            "summaryText": "Charge up hills hard, float down to recover, and build explosive cardio power.",
             "duration": 15,
             "difficulty": "Advanced"
         }

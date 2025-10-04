@@ -13,6 +13,7 @@
                 "Snap the foot forward for a sharp impact",
                 "Retract quickly to maintain balance"
             ],
+            "summaryText": "Pop the front snap kick by chambering tight, snapping out, and recoiling instantly.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -25,6 +26,7 @@
                 "Keep the leg extended throughout the motion",
                 "Follow through for maximum force"
             ],
+            "summaryText": "Whip the roundhouse with a hard pivot and full follow-through to blast the target.",
             "duration": 6,
             "difficulty": "Advanced"
         }

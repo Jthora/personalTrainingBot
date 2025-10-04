@@ -19,6 +19,7 @@
                 "Without SOP, any website could read data from any other website open in the browser.",
                 "SOP ensured that web pages could only access resources (such as cookies and DOM elements) from the same domain."
             ],
+            "summaryText": "Revisit how Netscape’s SOP locked pages to their own domain to stop data free-for-alls.",
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -31,6 +32,7 @@
                 "Attackers exploited JavaScript to read and modify content across different domains.",
                 "SOP became a critical security measure to mitigate these risks."
             ],
+            "summaryText": "See early JavaScript turn risky and why SOP became the browser’s safety net.",
             "duration": "75",
             "difficulty": "Intermediate"
         },
@@ -43,6 +45,7 @@
                 "Without SOP, attackers could manipulate authenticated sessions to perform actions on banking or email accounts.",
                 "Developers started requiring CSRF tokens as an early defense mechanism."
             ],
+            "summaryText": "Track CSRF’s discovery and the rise of tokens to guard authenticated actions.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -55,6 +58,7 @@
                 "Developers found SOP restrictive when trying to fetch data from external APIs.",
                 "JSONP (JSON with Padding) was introduced as a workaround for making cross-origin API calls."
             ],
+            "summaryText": "Watch AJAX collide with SOP and push devs toward risky JSONP workarounds.",
             "duration": "90",
             "difficulty": "Intermediate"
         },
@@ -67,6 +71,7 @@
                 "Developers wrapped JSON responses in JavaScript function calls, allowing cross-domain communication.",
                 "Security flaws: Attackers could inject malicious JavaScript into the responses."
             ],
+            "summaryText": "See how JSONP sidestepped SOP—and opened the door to injected scripts.",
             "duration": "90",
             "difficulty": "Intermediate"
         },
@@ -79,6 +84,7 @@
                 "Websites must include HTTP headers like `Access-Control-Allow-Origin` to enable CORS.",
                 "Unlike JSONP, CORS prevents script injection by restricting allowed request types."
             ],
+            "summaryText": "Learn how W3C’s CORS spec replaced JSONP hacks with header-driven trust rules.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -91,6 +97,7 @@
                 "The server must respond with the correct `Access-Control-Allow-Methods` and `Access-Control-Allow-Headers`.",
                 "This prevents unauthorized modifications to data by checking if the server explicitly allows it."
             ],
+            "summaryText": "Understand preflights: the OPTIONS handshake that vets sensitive cross-origin calls.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -103,6 +110,7 @@
                 "Some APIs unintentionally exposed sensitive data by allowing any origin to request their resources.",
                 "Browser extensions and plugins became targets for CORS-based exploits."
             ],
+            "summaryText": "Spot common CORS misconfig traps that hand data to every origin in sight.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -115,6 +123,7 @@
                 "New security headers like `Cross-Origin-Opener-Policy` (COOP) and `Cross-Origin-Embedder-Policy` (COEP) were introduced.",
                 "Developers were required to explicitly define CORS rules in APIs to prevent leaks."
             ],
+            "summaryText": "Review Chrome’s 2020 crackdown—blocking third-party cookies and enforcing COOP/COEP.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -127,6 +136,7 @@
                 "Security policies will shift towards blockchain-based authentication and access control.",
                 "Browsers may move away from traditional SOP/CORS models in favor of cryptographic trust mechanisms."
             ],
+            "summaryText": "Look ahead to Web3 protocols replacing CORS with cryptographic trust rails.",
             "duration": "90",
             "difficulty": "Advanced"
         }

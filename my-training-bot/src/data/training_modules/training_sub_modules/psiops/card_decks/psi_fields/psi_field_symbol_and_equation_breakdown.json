@@ -18,6 +18,7 @@
                 "Analogous to physical field quantities like temperature or charge density.",
                 "Used in equations modeling energy flow, field interactions, and psi field dynamics."
             ],
+            "summaryText": "Read \\Psi as your scalar map of how much psi energy sits at each spacetime point.",
             "duration": 10,
             "difficulty": "Beginner"
         },
@@ -30,6 +31,7 @@
                 "Shows how psi energy varies in different directions.",
                 "Used in energy flow models, psi potential fields, and directional psi field forces."
             ],
+            "summaryText": "Use the gradient to point toward where psi density rises fastest and how steeply.",
             "duration": 12,
             "difficulty": "Intermediate"
         },
@@ -42,6 +44,7 @@
                 "Used in diffusion models, psi wave equations, and equilibrium conditions.",
                 "Defines how psi energy distributes across a given space."
             ],
+            "summaryText": "Interpret the Laplacian as a diffusion gauge showing psi pooling or draining locally.",
             "duration": 14,
             "difficulty": "Advanced"
         },
@@ -54,6 +57,7 @@
                 "Key in dynamic psi field equations and time evolution models.",
                 "Used in psi energy conservation laws and field oscillations."
             ],
+            "summaryText": "Capture how quickly psi density rises or falls as moments pass with the time derivative.",
             "duration": 12,
             "difficulty": "Intermediate"
         },
@@ -66,6 +70,7 @@
                 "Used in psi energy flux equations: \\[ \\Phi = \\int_S \\Psi \\vec{v} \\cdot d\\vec{S} \\]",
                 "Important for psi energy transport models and fluid-like psi behavior."
             ],
+            "summaryText": "Treat \\vec{v} as the flow arrow showing how fast psi currents sweep through space.",
             "duration": 14,
             "difficulty": "Advanced"
         },
@@ -78,6 +83,7 @@
                 "Modified form of classical electromagnetism to include psi effects.",
                 "Appears in psi interaction equations with electromagnetic fields."
             ],
+            "summaryText": "Use \\vec{E} to encode how electric forces bias psi field orientation and strength.",
             "duration": 14,
             "difficulty": "Advanced"
         },
@@ -90,6 +96,7 @@
                 "Appears in equations governing psi-magnetic interactions and resonance.",
                 "Used in psi energy stabilization models and field harmonics."
             ],
+            "summaryText": "Recall \\vec{B} captures magnetic couplings that twist or stabilize psi dynamics.",
             "duration": 14,
             "difficulty": "Advanced"
         },
@@ -102,6 +109,7 @@
                 "Appears in field interaction equations: \\[ \\nabla \\cdot (\\Psi \\vec{E}) - \\nabla \\cdot (\\Psi \\vec{B}) = -\\frac{\\partial \\Psi}{\\partial t} + \\nabla^2 \\Psi \\]",
                 "Used in modeling psi manipulation, external psi fields, and applied forces."
             ],
+            "summaryText": "Think of \\vec{F} as any applied push tugging psi flux beyond its natural flow.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -114,6 +122,7 @@
                 "Modified to account for psi fields: \\[ g_{μν}^\\Psi = g_{μν} + \\Psi \\delta_{μν} \\]",
                 "Key in general relativity adaptations for psi energy theory."
             ],
+            "summaryText": "Use the metric tensor to show how psi reshapes the very geometry measurements ride on.",
             "duration": 18,
             "difficulty": "Expert"
         },
@@ -126,6 +135,7 @@
                 "Equation: \\[ T_{μν}^Ψ = \\Psi \\left( g_{μν} + \\frac{\\partial x^α}{\\partial x^μ} \\frac{\\partial x^β}{\\partial x^ν} \\right) \\]",
                 "Used in psi cosmology, energy-mass interactions, and high-energy psi dynamics."
             ],
+            "summaryText": "Read T_{μν}^Ψ as the bookkeeping tensor for how psi energy loads spacetime with stress and flow.",
             "duration": 20,
             "difficulty": "Expert"
         }

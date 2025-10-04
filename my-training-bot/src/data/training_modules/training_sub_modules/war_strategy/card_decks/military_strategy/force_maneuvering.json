@@ -12,6 +12,7 @@
             "title": "Flanking and Encirclement Tactics",
             "description": "Using positioning to neutralize enemy forces through flanking and encirclement.",
             "bulletpoints": "Pincer movements, hammer-and-anvil tactics, blitzkrieg strategies",
+            "summaryText": "Design fast-moving pincer packages that hit from multiple axes, collapse enemy lines, and close the encirclement before relief forces arrive.",
             "duration": "60",
             "difficulty": "Advanced"
         },
@@ -20,6 +21,7 @@
             "title": "Rapid Deployment and Mobility",
             "description": "Utilizing speed and terrain for effective force deployment.",
             "bulletpoints": "Airborne insertions, mechanized warfare, strategic positioning",
+            "summaryText": "Combine airborne drops, mechanized thrusts, and terrain-aware staging to reposition forces faster than adversaries can react.",
             "duration": "50",
             "difficulty": "Advanced"
         }

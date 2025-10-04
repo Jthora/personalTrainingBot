@@ -13,6 +13,7 @@
                 "Keep weight evenly distributed for fast transitions",
                 "Use hand strikes while rising for added power"
             ],
+            "summaryText": "Sink into the squat to slip high shots, then spring up with strikes on the rebound.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -25,6 +26,7 @@
                 "Engage hips to generate more power",
                 "Follow up immediately to prevent recovery"
             ],
+            "summaryText": "Glide a low sweep with hip drive to rip their base and surge into the next attack.",
             "duration": 6,
             "difficulty": "Advanced"
         }

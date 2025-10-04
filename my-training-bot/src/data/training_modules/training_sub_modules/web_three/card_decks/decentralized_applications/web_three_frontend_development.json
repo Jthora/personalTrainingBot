@@ -13,6 +13,7 @@
             "title": "Web3.js & Ethers.js",
             "description": "Understanding how to interact with blockchain networks from the frontend.",
             "bulletpoints": "Connecting to Ethereum, sending transactions, querying smart contracts",
+            "summaryText": "Wire up ethers.js or web3.js to connect wallets, read contract state, and push transactions from the browser.",
             "duration": "40",
             "difficulty": "Intermediate"
         },
@@ -21,6 +22,7 @@
             "title": "Wallet Integration",
             "description": "Connecting users' crypto wallets to dApps for authentication and transactions.",
             "bulletpoints": "MetaMask, WalletConnect, Coinbase Wallet SDK",
+            "summaryText": "Implement wallet connect flows with MetaMask, WalletConnect, or Coinbase SDK so users can auth and sign safely.",
             "duration": "45",
             "difficulty": "Intermediate"
         },
@@ -29,6 +31,7 @@
             "title": "UI/UX Considerations for dApps",
             "description": "Best practices for designing user-friendly and secure decentralized applications.",
             "bulletpoints": "Gas fee estimation, transaction confirmations, multi-chain support",
+            "summaryText": "Design UX that surfaces gas costs, confirms transactions, and guides users across chains without confusion.",
             "duration": "50",
             "difficulty": "Advanced"
         }

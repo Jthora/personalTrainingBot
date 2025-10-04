@@ -13,6 +13,7 @@
             "title": "Introduction to Self-Sovereign Identity (SSI)",
             "description": "Understanding how blockchain enables individuals to control their own identity.",
             "bulletpoints": "Principles of SSI, traditional identity vs. decentralized identity, real-world applications",
+            "summaryText": "Contrast centralized identity silos with SSI so you can describe how users own credentials and share them selectively.",
             "duration": "30",
             "difficulty": "Intermediate"
         },
@@ -21,6 +22,7 @@
             "title": "Decentralized Identifiers (DIDs)",
             "description": "Exploring how DIDs provide a foundation for decentralized identity.",
             "bulletpoints": "W3C DID standard, DID methods, interoperability challenges",
+            "summaryText": "Dig into the W3C DID spec and method registries to understand how portable, resolvable identifiers power SSI.",
             "duration": "45",
             "difficulty": "Advanced"
         },
@@ -29,6 +31,7 @@
             "title": "Verifiable Credentials & Authentication",
             "description": "Understanding how credentials can be issued, verified, and stored in a trustless system.",
             "bulletpoints": "Credential issuance models, cryptographic verification, selective disclosure",
+            "summaryText": "Track how issuers sign verifiable credentials and how holders reveal just enough data for cryptographic verification.",
             "duration": "50",
             "difficulty": "Advanced"
         }

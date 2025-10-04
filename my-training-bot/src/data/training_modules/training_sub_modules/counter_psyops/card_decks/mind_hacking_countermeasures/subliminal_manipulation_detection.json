@@ -18,7 +18,8 @@
                 "Break down advertising and political messaging to identify recurring themes of suggestion."
             ],
             "duration": "60",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Dissect media for offbeat cues, scrub frames for flashes, and chart recurring suggestion themes."
         },
         {
             "id": "subliminal_detection_2",
@@ -30,7 +31,8 @@
                 "Train in frequency discrimination to recognize unnatural distortions or coded vocal inflections."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Scan audio for hidden loops, inspect spectrograms for embeds, and hone ears for odd frequencies."
         },
         {
             "id": "subliminal_detection_3",
@@ -42,7 +44,8 @@
                 "Train in rapid peripheral vision analysis to detect briefly flashed visual stimuli."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Decode color-symbol plays, compare imagery for hidden edits, and catch flash cues with peripheral scans."
         },
         {
             "id": "subliminal_detection_4",
@@ -54,7 +57,8 @@
                 "Disrupt association patterns by consciously altering emotional responses to commonly used anchors."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Spot repetitive trigger anchors, reprogram conditioned responses, and remap emotions on command."
         },
         {
             "id": "subliminal_detection_5",
@@ -66,7 +70,8 @@
                 "Assess sensory control methods in retail and public spaces, such as scent conditioning and lighting variations."
             ],
             "duration": "60",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Map spatial ad flows, trace hidden geometry, and audit sensory conditioning in environments."
         },
         {
             "id": "subliminal_detection_6",
@@ -78,7 +83,8 @@
                 "Employ selective desensitization to weaken the effect of repeated subliminal reinforcement."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Question gut spikes, slow thoughts with mindfulness, and desensitize to repeated cues."
         },
         {
             "id": "subliminal_detection_7",
@@ -90,7 +96,8 @@
                 "Perform memory regression techniques to identify the source of externally planted ideas."
             ],
             "duration": "120",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Meditate to surface implants, overwrite them with counter-conditioning, and trace origins via regression."
         },
         {
             "id": "subliminal_detection_8",
@@ -102,7 +109,8 @@
                 "Use critical thinking drills to counteract emotional linguistic triggers before they take root."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Spot compliance scripts, derail rhythmic delivery, and counter triggers with critical drills."
         },
         {
             "id": "subliminal_detection_9",
@@ -114,7 +122,8 @@
                 "Use visualized mental shielding techniques to create an automatic barrier against subliminal input."
             ],
             "duration": "120",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Teach the mind to flag foreign thoughts, verify instincts logically, and shield with visualization."
         },
         {
             "id": "subliminal_detection_10",
@@ -126,7 +135,8 @@
                 "Design mental ‘triggers’ that activate resistance protocols upon detecting manipulation attempts."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Author your own subliminals, neutralize fear triggers, and prime resistance cues for instant activation."
         }
     ]
 }

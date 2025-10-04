@@ -16,6 +16,7 @@
                 "Use selective reinforcement to condition responses",
                 "Employ time pressure to force rapid decision-making"
             ],
+            "summaryText": "Spike uncertainty, reward compliance, and compress decision windows to steer targets into obedience.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Introduce false evidence to create internal doubt",
                 "Employ strategic pauses and silence to induce discomfort"
             ],
+            "summaryText": "Layer guilt cues, staged evidence, and silence to unravel resistance and draw out admissions.",
             "duration": 7,
             "difficulty": "Advanced"
         }

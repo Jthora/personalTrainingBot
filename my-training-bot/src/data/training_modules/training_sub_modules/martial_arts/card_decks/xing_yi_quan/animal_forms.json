@@ -13,6 +13,7 @@
                 "Use both hands in simultaneous claw-like strikes",
                 "Generate explosive force from the hips"
             ],
+            "summaryText": "Prowl low, rip forward with paired claws, and let the hips drive the tiger’s surge.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -25,6 +26,7 @@
                 "Keep a light and agile stance",
                 "Strike with focused fingertips targeting pressure points"
             ],
+            "summaryText": "Glide with wide wings, stay springy, and spear pressure points with eagle talons.",
             "duration": 6,
             "difficulty": "Advanced"
         }

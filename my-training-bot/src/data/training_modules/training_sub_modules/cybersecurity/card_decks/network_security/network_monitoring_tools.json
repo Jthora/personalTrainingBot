@@ -12,6 +12,7 @@
             "title": "Introduction to Network Monitoring",
             "description": "Overview of network monitoring concepts, tools, and techniques.",
             "bulletpoints": "SNMP, NetFlow, Packet Capture, SIEM solutions",
+            "summaryText": "Survey the monitoring landscape from SNMP polls to SIEM-driven visibility.",
             "duration": "90",
             "difficulty": "Intermediate"
         },
@@ -20,6 +21,7 @@
             "title": "Using Wireshark for Packet Analysis",
             "description": "Understanding how to capture and analyze network traffic using Wireshark.",
             "bulletpoints": "Packet filtering, protocol dissection, suspicious activity detection",
+            "summaryText": "Dive into packets with Wireshark, filter the noise, and surface suspicious flows fast.",
             "duration": "120",
             "difficulty": "Intermediate"
         }

@@ -17,6 +17,7 @@
                 "Different cartels specialize in various criminal enterprises (drugs, human trafficking, arms dealing).",
                 "Identifying power players, enforcers, and financial operators within a cartel network."
             ],
+            "summaryText": "Chart militarized hierarchies, catalog crime specializations, and tag key operators inside the network.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -29,6 +30,7 @@
                 "Examining how illicit economies integrate into local political and business structures.",
                 "Identifying recruitment and radicalization techniques used by crime syndicates."
             ],
+            "summaryText": "Analyze cross-border alliances, trace local political infiltration, and profile recruitment pipelines.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -41,6 +43,7 @@
                 "Understanding coded language and symbols used in cartel communications.",
                 "Tracking digital footprints without exposing investigative sources."
             ],
+            "summaryText": "Document encrypted comm stacks, decode symbolic lexicons, and shadow footprints discreetly.",
             "duration": "90",
             "difficulty": "Expert"
         }

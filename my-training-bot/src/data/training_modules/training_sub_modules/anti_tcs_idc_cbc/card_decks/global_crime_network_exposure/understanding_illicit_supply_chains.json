@@ -17,6 +17,7 @@
                 "Key trafficking hubs and transit points worldwide.",
                 "How cartels exploit legal and illegal transport networks."
             ],
+            "summaryText": "Map cross-border drug and arms routes, flag global hubs, and note transport network exploits.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -29,6 +30,7 @@
                 "How criminal syndicates control victims through coercion and financial debt.",
                 "Tracking recruitment methods and digital exploitation tactics."
             ],
+            "summaryText": "Profile hotspots, document coercion mechanisms, and trace recruitment plus digital exploitation patterns.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -41,6 +43,7 @@
                 "Coordinating multi-agency investigations for supply chain disruption.",
                 "Leveraging economic and geopolitical factors to cut off syndicate funding."
             ],
+            "summaryText": "Target logistics weak links, orchestrate multi-agency hits, and apply economic pressure to starve funding.",
             "duration": "90",
             "difficulty": "Expert"
         }

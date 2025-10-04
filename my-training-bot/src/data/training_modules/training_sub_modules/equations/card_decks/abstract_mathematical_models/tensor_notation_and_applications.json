@@ -13,6 +13,7 @@
                 "Use Einstein summation convention: \\( a^i b_i = \\sum_{i} a^i b_i \\)",
                 "Explore tensor ranks: scalars (rank-0, \\( A \\)), vectors (rank-1, \\( A^i \\)), matrices (rank-2, \\( A^{ij} \\))"
             ],
+                "summaryText": "Grasp tensor ranks and Einstein notation to treat tensors as coordinate-transforming arrays.",
             "duration": 7,
             "difficulty": "Intermediate"
         },
@@ -25,6 +26,7 @@
                 "Use the Kronecker delta \\( \\delta^i_j \\) as the identity tensor: \\( A^i_j \\delta^j_k = A^i_k \\)",
                 "Understand outer products: \\( C^{ij} = A^i B^j \\) expands a vector space."
             ],
+                "summaryText": "Practice contraction, identity tensors, and outer products to manipulate tensor components.",
             "duration": 8,
             "difficulty": "Intermediate"
         },
@@ -37,6 +39,7 @@
                 "Study Minkowski spacetime metric for relativity: \\[ g_{\\mu \\nu} = \\begin{bmatrix} -1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 1 & 0 \\\\ 0 & 0 & 0 & 1 \\end{bmatrix} \\]",
                 "Understand Christoffel symbols: \\( \\Gamma^i_{jk} = \\frac{1}{2} g^{im} ( \\partial_j g_{mk} + \\partial_k g_{mj} - \\partial_m g_{jk} ) \\)"
             ],
+                "summaryText": "Use metric tensors and Christoffel symbols to encode distances and curvature in spacetime.",
             "duration": 10,
             "difficulty": "Expert"
         },
@@ -49,6 +52,7 @@
                 "Study the Ricci tensor: \\( R_{ij} = R^m_{imj} \\) as a trace of the Riemann tensor",
                 "Understand Einstein's field equation: \\[ R_{\\mu \\nu} - \\frac{1}{2} g_{\\mu \\nu} R + \\Lambda g_{\\mu \\nu} = \\frac{8 \\pi G}{c^4} T_{\\mu \\nu} \\]"
             ],
+                "summaryText": "Connect curvature via Riemann and Ricci tensors to Einstein's field equations.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -61,6 +65,7 @@
                 "Use conservation laws: \\( \\nabla_\\mu T^{\\mu \\nu} = 0 \\) ensures energy-momentum conservation.",
                 "Apply stress-energy tensors in fluid dynamics: \\( T^{\\mu \\nu} = (\\rho + p) u^\\mu u^\\nu + p g^{\\mu \\nu} \\)"
             ],
+                "summaryText": "Model energy, momentum, and stress flows with conserved stress-energy tensors.",
             "duration": 9,
             "difficulty": "Advanced"
         },
@@ -73,6 +78,7 @@
                 "Understand raising/lowering indices using the metric tensor: \\( A^i = g^{ij} A_j \\)",
                 "Apply in physics: Maxwell's equations in tensor form \\( \\partial^\\mu F_{\\mu \\nu} = j_\\nu \\)"
             ],
+                "summaryText": "Streamline tensor algebra by summing repeated indices and shifting components with the metric.",
             "duration": 8,
             "difficulty": "Advanced"
         },
@@ -85,6 +91,7 @@
                 "Use parallel transport: A vector remains unchanged along a curve if \\( \\nabla_k A^i = 0 \\)",
                 "Apply in general relativity: geodesic equation \\( \\frac{d^2 x^i}{d \\tau^2} + \\Gamma^i_{jk} \\frac{dx^j}{d \\tau} \\frac{dx^k}{d \\tau} = 0 \\)"
             ],
+                "summaryText": "Use covariant derivatives and geodesics to transport tensors consistently in curved space.",
             "duration": 10,
             "difficulty": "Expert"
         },
@@ -97,6 +104,7 @@
                 "Write Maxwell's equations in tensor form: \\( \\partial^\\mu F_{\\mu \\nu} = j_\\nu \\), \\( \\partial_{[\\alpha} F_{\\beta \\gamma]} = 0 \\)",
                 "Understand electromagnetic wave solutions using the d'Alembertian operator: \\( \\Box A^\\mu = 0 \\)"
             ],
+                "summaryText": "Express Maxwell's laws with the electromagnetic tensor and d'Alembertian wave solutions.",
             "duration": 12,
             "difficulty": "Expert"
         }

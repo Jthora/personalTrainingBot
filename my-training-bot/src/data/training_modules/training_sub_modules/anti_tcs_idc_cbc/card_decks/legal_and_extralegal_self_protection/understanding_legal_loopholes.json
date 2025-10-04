@@ -17,6 +17,7 @@
                 "Identifying jurisdictional conflicts that can be used to stall legal actions.",
                 "Understanding how ‘letter of the law’ and ‘spirit of the law’ diverge in courtrooms."
             ],
+            "summaryText": "Shows how obscure statutes, jurisdictional clashes, and letter-versus-spirit gaps can be wielded to stall hostile proceedings.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Using constitutional rights and legal protections to avoid forced compliance.",
                 "Knowing when and how to refuse consent without escalating legal risks."
             ],
+            "summaryText": "Covers spotting entrapment setups, invoking rights, and declining consent in ways that minimize escalation.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Using corporate structures and offshore accounts for anonymity and liability reduction.",
                 "Understanding how contractual agreements can be leveraged to control legal disputes."
             ],
+            "summaryText": "Details layering trusts, corporate veils, and tailored contracts to keep assets insulated from predatory claims.",
             "duration": "90",
             "difficulty": "Expert"
         }

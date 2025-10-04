@@ -12,6 +12,7 @@
             "title": "Tracking and Surveillance of Threats",
             "description": "Monitoring enemy movements and gathering actionable intelligence.",
             "bulletpoints": "Utilize electronic surveillance, infiltrate hostile networks, and predict attacks",
+            "summaryText": "Focuses on surveillance nets, network penetration, and predictive intel to preempt strikes.",
             "duration": "40",
             "difficulty": "Advanced"
         },
@@ -20,6 +21,7 @@
             "title": "Tactical Intervention and Rapid Response",
             "description": "Executing precision operations to eliminate high-value threats.",
             "bulletpoints": "Use breaching tactics, strategic containment, and rapid engagement protocols",
+            "summaryText": "Covers entry tactics, containment strategies, and speed-of-force maneuvers against priority targets.",
             "duration": "45",
             "difficulty": "Expert"
         }

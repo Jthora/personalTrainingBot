@@ -17,6 +17,7 @@
                 "Utilizing solar, wind, hydro, and other off-grid energy sources.",
                 "Creating energy storage systems for long-term sustainability."
             ],
+            "summaryText": "Stand up decentralized microgrids, blend renewable sources, and fortify storage capacity.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Utilizing atmospheric water generators for off-grid water security.",
                 "Setting up decentralized water filtration for long-term sustainability."
             ],
+            "summaryText": "Harvest rain, capture atmosphere, and purify locally to secure independent water chains.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Using aquaponics and vertical farming for maximum food production efficiency.",
                 "Creating community food reserves for long-term self-reliance."
             ],
+            "summaryText": "Apply regenerative farming, leverage aquaponics, and stock communal reserves for food sovereignty.",
             "duration": "90",
             "difficulty": "Expert"
         }

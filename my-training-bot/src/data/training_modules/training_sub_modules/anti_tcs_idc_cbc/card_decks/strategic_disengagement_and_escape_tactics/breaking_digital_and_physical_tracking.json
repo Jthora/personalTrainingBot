@@ -17,6 +17,7 @@
                 "Blocking GPS and mobile signal tracking methods.",
                 "Utilizing anti-surveillance encryption techniques."
             ],
+            "summaryText": "Outlines biometric spoofing, signal denial, and hardened comms to blind digital surveillance nets.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Using environmental factors to erase movement traces.",
                 "Deploying counter-tracking maneuvers to mislead pursuers."
             ],
+            "summaryText": "Details implant sweeps, trace scrubbing, and deception routes to shake live trackers.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Using decoy digital footprints to misdirect analysts.",
                 "Understanding AI-driven behavioral tracking weaknesses."
             ],
+            "summaryText": "Teaches pattern disruption, decoy trails, and exploiting predictive AI blind spots to stay hidden.",
             "duration": "90",
             "difficulty": "Expert"
         }

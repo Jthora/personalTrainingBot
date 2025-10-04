@@ -13,6 +13,7 @@
             "title": "Smart Contract Attack Simulation",
             "description": "Using attack frameworks to simulate real-world exploits.",
             "bulletpoints": "Echidna, MythX, Slither, Hardhat tests",
+            "summaryText": "Demonstrate how Echidna, MythX, and Slither surface exploit paths and how Hardhat test harnesses reproduce them safely.",
             "duration": "50",
             "difficulty": "Advanced"
         },
@@ -21,6 +22,7 @@
             "title": "Blockchain Network Vulnerability Assessments",
             "description": "Analyzing consensus mechanisms and network security risks.",
             "bulletpoints": "Sybil attacks, 51% attacks, DDoS threats on nodes",
+            "summaryText": "Explain how Sybil and 51% attacks emerge from weak consensus assumptions and outline node-hardening steps against DDoS.",
             "duration": "45",
             "difficulty": "Advanced"
         },
@@ -29,6 +31,7 @@
             "title": "Web3 dApp Security Testing",
             "description": "Identifying vulnerabilities in Web3 frontends and smart contract interactions.",
             "bulletpoints": "Metamask phishing, API abuse, RPC endpoint security",
+            "summaryText": "Highlight phishing entry points in wallet flows, probe API and RPC misuse, and align fixes with least-privilege design.",
             "duration": "50",
             "difficulty": "Advanced"
         }

@@ -19,6 +19,7 @@
                 "Analyze samples from VirusTotal, Hybrid Analysis, and Any.Run for malware attribution",
                 "Monitor geopolitical events and threat intelligence reports from Recorded Future, CrowdStrike, and Mandiant"
             ],
+            "summaryText": "Align APT operations to ATT&CK, analyze shared malware samples, and layer geopolitical intel for context.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -31,6 +32,7 @@
                 "Analyze ransomware-as-a-service (RaaS) operations using MalwareBazaar and Malpedia",
                 "Track cryptocurrency laundering via blockchain analysis tools like Chainalysis and Elliptic"
             ],
+            "summaryText": "Watch criminal bazaars, dissect RaaS supply chains, and trace laundering flows on-chain.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -43,6 +45,7 @@
                 "Analyze C2 beaconing behavior with Suricata, Zeek (Bro), and Wireshark",
                 "Cross-reference IP addresses with Shodan, Censys, and GreyNoise"
             ],
+            "summaryText": "Follow domains via PassiveDNS, dissect beacon traffic, and enrich infrastructure intel across scanners.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -55,6 +58,7 @@
                 "Use OSINT (Open-Source Intelligence) tools like SpiderFoot and Maltego to investigate fake identities",
                 "Monitor underground forums and Telegram channels for recruitment tactics"
             ],
+            "summaryText": "Correlate phishing sets, unravel fabricated personas, and eavesdrop on recruitment hubs.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -67,6 +71,7 @@
                 "Analyze malware samples with IDA Pro, Ghidra, and Remnux",
                 "Map findings to publicly known threats in MITRE ATT&CK and MISP Threat Sharing Platform"
             ],
+            "summaryText": "Match malware with YARA, reverse engineer payloads, and tie artifacts back to documented actors.",
             "duration": 8,
             "difficulty": "Expert"
         },
@@ -79,6 +84,7 @@
                 "Analyze forum discussions and marketplace listings with DarkOwl and Flashpoint",
                 "Use breach monitoring tools like Have I Been Pwned (HIBP) to track leaked credentials"
             ],
+            "summaryText": "Patrol anonymized networks, mine marketplace chatter, and watch breach dumps for actor signals.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -91,6 +97,7 @@
                 "Monitor abnormal file access and privilege escalation",
                 "Track corporate leaks on paste sites and anonymous platforms like Dread and 4chan"
             ],
+            "summaryText": "Leverage UEBA, flag privilege misuse, and monitor leak sites to surface insider threats.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -103,6 +110,7 @@
                 "Analyze zero-day exploit sales in underground markets",
                 "Use honeypots to detect exploitation attempts in real time"
             ],
+            "summaryText": "Track zero-day chatter, watch exploit auctions, and bait attackers with honeypots for attribution.",
             "duration": 8,
             "difficulty": "Expert"
         },
@@ -115,6 +123,7 @@
                 "Use Facebook and LinkedIn analysis to map threat actor affiliations",
                 "Analyze Discord, Telegram, and WhatsApp groups for recruitment and coordination activity"
             ],
+            "summaryText": "Scrape social feeds, map professional links, and watch chat platforms to profile actor networks.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -127,6 +136,7 @@
                 "Cross-reference attack methods, infrastructure, and TTPs for reliability",
                 "Use a combination of SIGINT, HUMINT, and OSINT for multi-source verification"
             ],
+            "summaryText": "Guard against false flags by triangulating TTPs and validating with multi-intelligence sources.",
             "duration": 8,
             "difficulty": "Expert"
         }

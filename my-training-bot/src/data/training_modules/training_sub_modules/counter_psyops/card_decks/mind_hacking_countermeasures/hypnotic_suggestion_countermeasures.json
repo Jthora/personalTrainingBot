@@ -18,7 +18,8 @@
                 "Identify environmental triggers like rhythmic sounds, pulsing lights, and relaxation techniques designed to lower defenses."
             ],
             "duration": "60",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Monitor shifts in clarity, parse embedded commands, and spot environmental trance cues."
         },
         {
             "id": "hypnotic_defense_2",
@@ -30,7 +31,8 @@
                 "Develop a habit of questioning the intent behind messages received, especially those inducing urgency or compliance."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Anchor resistance against triggers, jam influence with internal dialogue, and interrogate urgent messaging."
         },
         {
             "id": "hypnotic_defense_3",
@@ -42,7 +44,8 @@
                 "Trigger an internal logical thought process (e.g., solve a math problem) to engage critical thinking."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Use movement to reassert awareness, deploy mantra disruptors, and ignite analytical loops."
         },
         {
             "id": "hypnotic_defense_4",
@@ -54,7 +57,8 @@
                 "Interrupt the hypnotic rhythm by introducing unexpected questions or changing the topic abruptly."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Decode covert language patterns, slow and reframe dialogue, and break pacing with sharp interruptions."
         },
         {
             "id": "hypnotic_defense_5",
@@ -66,7 +70,8 @@
                 "Practice rapid self-awareness drills to reinforce conscious decision-making in high-pressure situations."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Preload refusal scripts, visualize fortified mind barriers, and drill rapid awareness checks."
         },
         {
             "id": "hypnotic_defense_6",
@@ -78,7 +83,8 @@
                 "Reframe anchors by associating them with unrelated neutral or positive meanings."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Flag emotional anchoring attempts, neutralize spikes with calm routines, and remap triggers to safe meanings."
         },
         {
             "id": "hypnotic_defense_7",
@@ -90,7 +96,8 @@
                 "Keep a dream journal to track and identify patterns of external influence during sleep states."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Shield sleep with protective audio, seed nightly resistance affirmations, and log dreams for tampering."
         },
         {
             "id": "hypnotic_defense_8",
@@ -102,7 +109,8 @@
                 "Neutralize suggestion triggers by mentally dissociating from the attached emotional response."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Audit sudden impulses, overwrite commands with self-hypnosis, and sever triggers from emotions."
         },
         {
             "id": "hypnotic_defense_9",
@@ -114,7 +122,8 @@
                 "Engage in group discussion and debate to deconstruct and challenge manipulated narratives."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Dissect mass messaging for emotional steering, hold independent framing, and deconstruct narratives collaboratively."
         },
         {
             "id": "hypnotic_defense_10",
@@ -126,7 +135,8 @@
                 "Engage in defensive scenario training where hypnotic influence is tested and countered in real-time."
             ],
             "duration": "120",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Cycle deprogramming drills, blend critical-skeptical-mindful scans, and rehearse live defense scenarios."
         }
     ]
 }

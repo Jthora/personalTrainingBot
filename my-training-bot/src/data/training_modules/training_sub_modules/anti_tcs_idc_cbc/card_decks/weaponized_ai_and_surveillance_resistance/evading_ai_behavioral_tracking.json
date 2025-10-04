@@ -17,6 +17,7 @@
                 "Identifying key data points used in predictive tracking.",
                 "How AI-assisted psychological warfare influences decision-making."
             ],
+            "summaryText": "Explains AI profiling inputs, critical data reveals, and psyops loops used to steer choices.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Disrupting machine learning datasets through false data injection.",
                 "Leveraging behavioral noise to break AI surveillance models."
             ],
+            "summaryText": "Details randomness tactics, data poisoning, and noise generation to derail pattern recognition.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Strategies for maintaining anonymity in high-surveillance zones.",
                 "How to use deception tactics to create misleading data trails."
             ],
+            "summaryText": "Covers network masking, on-the-ground anonymity, and decoy trail construction against predictive AI.",
             "duration": "90",
             "difficulty": "Expert"
         }

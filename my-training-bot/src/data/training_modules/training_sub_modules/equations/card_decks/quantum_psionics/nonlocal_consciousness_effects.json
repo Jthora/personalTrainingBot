@@ -16,6 +16,7 @@
                 "Analyze correlations between human intention and quantum measurement outcomes.",
                 "Explore psi synchronization in entangled consciousness experiments."
             ],
+            "summaryText": "Link Bell-inequality violations with studies testing intention-driven correlations in entangled systems.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -28,6 +29,7 @@
                 "Explore consciousness as an information field interacting with quantum states: \\[ \\hat{H} \\Psi = i \\hbar \\frac{\\partial \\Psi}{\\partial t} \\]",
                 "Examine psi resonance as a function of phase coherence and quantum uncertainty."
             ],
+            "summaryText": "Model psi dynamics with non-Hermitian wave functions whose phase coherence modulates consciousness-field effects.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -40,6 +42,7 @@
                 "Explore the quantum Zeno effect as a stabilizing mechanism for psi transmission.",
                 "Study EEG coherence patterns and nonlocal correlations in brainwave activity."
             ],
+            "summaryText": "Frame telepathic transfer as phase-locked oscillator coherence reinforced by quantum Zeno stabilization and EEG evidence.",
             "duration": 14,
             "difficulty": "Advanced"
         },
@@ -52,6 +55,7 @@
                 "Analyze quantum decoherence and its role in limiting nonlocal psi effects: \\[ \\rho(t) = \\sum_i p_i |\\psi_i\\rangle \\langle \\psi_i| \\]",
                 "Investigate consciousness-mediated collapse theories and their implications for psi experiments."
             ],
+            "summaryText": "Consider delayed-choice tests, decoherence limits, and collapse models when evaluating nonlocal psi signaling claims.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -64,6 +68,7 @@
                 "Explore psi interactions with Casimir forces and zero-point fluctuations.",
                 "Investigate quantum tunneling probability modifications through psi intention."
             ],
+            "summaryText": "Extend the Schrödinger equation with psi coupling terms to study zero-point, Casimir, and tunneling modulation.",
             "duration": 15,
             "difficulty": "Expert"
         },
@@ -76,6 +81,7 @@
                 "Examine the role of Fourier transforms in psi data retrieval and memory storage.",
                 "Analyze the implications of consciousness as a nonlocal information-processing system."
             ],
+            "summaryText": "Interpret consciousness as holographically encoded information retrievable via Fourier-structured psi projections.",
             "duration": 15,
             "difficulty": "Advanced"
         },
@@ -88,6 +94,7 @@
                 "Study resonance coupling between psi waves and electromagnetic fields.",
                 "Explore tunable frequencies in psi-based interaction models using standing wave solutions."
             ],
+            "summaryText": "Quantify psi coherence lengths and resonance tuning with standing-wave couplings to electromagnetic fields.",
             "duration": 14,
             "difficulty": "Advanced"
         },
@@ -100,6 +107,7 @@
                 "Investigate psi interactions through geodesic deviation equations.",
                 "Explore psi-space curvatures and their impact on nonlocal energy dynamics."
             ],
+            "summaryText": "Apply non-Euclidean metrics and geodesic deviations to map how psi energies traverse curved information spaces.",
             "duration": 15,
             "difficulty": "Expert"
         },
@@ -112,6 +120,7 @@
                 "Investigate retrocausal information flow and delayed-choice experiments.",
                 "Explore quantum time loops and their role in precognition and retrocognition."
             ],
+            "summaryText": "Use entangled states and retrocausal loop models to explain how psi memory spans past and future moments.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -124,6 +133,7 @@
                 "Analyze the stability of psi wave packets under self-focusing effects.",
                 "Explore applications of psi solitons in energy transmission and telekinetic phenomena."
             ],
+            "summaryText": "Treat psi solitons as nonlinear Schrödinger wave packets that sustain focused consciousness-driven effects.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -136,6 +146,7 @@
                 "Analyze the role of quantum coherence in biofield interactions: \\[ \\rho_{bio} = \\sum c_i |\\psi_i\\rangle \\langle \\psi_i| \\]",
                 "Investigate entanglement between psi energy and biological self-regulation processes."
             ],
+            "summaryText": "Relate reported nonlocal healing to biofield coherence and entanglement-driven regulation mechanisms.",
             "duration": 14,
             "difficulty": "Advanced"
         }

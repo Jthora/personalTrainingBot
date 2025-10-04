@@ -18,7 +18,8 @@
                 "Tracing funding and resource allocation within control structures."
             ],
             "duration": "75",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Diagram control architecture, list principal assets, and follow the money sustaining them."
         },
         {
             "id": "disruption_elite_2",
@@ -30,7 +31,8 @@
                 "Leveraging external crises to destabilize control structures."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Spot fragile nodes, exploit factional rifts, and time disruptions with external shocks."
         },
         {
             "id": "disruption_elite_3",
@@ -42,7 +44,8 @@
                 "Deploying counter-disinformation strategies against AI-controlled narratives."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Route around filters, harden comms with crypto, and push truth campaigns against algorithmic spin."
         },
         {
             "id": "disruption_elite_4",
@@ -54,7 +57,8 @@
                 "Using decentralized finance (DeFi) and crypto resistance tactics."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Track dirty capital, surface hidden hoards, and pivot to DeFi shields."
         },
         {
             "id": "disruption_elite_5",
@@ -66,7 +70,8 @@
                 "Strategic memetic warfare for ideological resistance."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Craft liberating narratives, teach deprogramming habits, and launch resistant meme ops."
         },
         {
             "id": "disruption_elite_6",
@@ -78,7 +83,8 @@
                 "Leveraging whistleblower leaks and investigative reporting."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Show coercion pipelines, map kompromat webs, and plan evidence drops safely."
         },
         {
             "id": "disruption_elite_7",
@@ -90,7 +96,8 @@
                 "Creating decentralized intelligence and security networks."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Build resilient enclaves, wire barter ecosystems, and coordinate grassroots intel defenses."
         },
         {
             "id": "disruption_elite_8",
@@ -102,7 +109,8 @@
                 "Leveraging AI-resistant tactics to maintain informational sovereignty."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Expose predictive engines, scramble scripted futures, and use analog tactics immune to modeling."
         },
         {
             "id": "disruption_elite_9",
@@ -114,7 +122,8 @@
                 "Leveraging media, grassroots movements, and decentralized platforms."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Shield informants, choreograph revelation waves, and amplify through aligned networks."
         },
         {
             "id": "disruption_elite_10",
@@ -126,7 +135,8 @@
                 "Creating psychological uncertainty and instability in control networks."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Run nimble info raids, hit supply nerves, and keep power brokers second-guessing."
         }
     ]
 }

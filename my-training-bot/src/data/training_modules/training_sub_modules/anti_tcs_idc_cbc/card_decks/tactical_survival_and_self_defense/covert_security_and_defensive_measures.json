@@ -17,6 +17,7 @@
                 "Analyzing behavioral cues to predict hostile intentions.",
                 "Preemptive threat assessment and rapid response training."
             ],
+            "summaryText": "Builds instinctive anomaly spotting, behavioral reads, and preemptive responses to head off danger.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Developing rapid deployment strategies for high-risk situations.",
                 "Understanding legal and tactical implications of self-defense."
             ],
+            "summaryText": "Covers layered security plans, fast defensive mobilization, and lawful engagement boundaries.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Securing communications and data from cyber intrusions.",
                 "Employing misinformation and misdirection techniques."
             ],
+            "summaryText": "Details counter-surveillance sweeps, hardened comms, and misdirection tactics to block infiltrators.",
             "duration": "90",
             "difficulty": "Expert"
         }

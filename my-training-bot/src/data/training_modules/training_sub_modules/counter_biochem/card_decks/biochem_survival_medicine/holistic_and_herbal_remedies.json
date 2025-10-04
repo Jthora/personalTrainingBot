@@ -14,7 +14,8 @@
             "description": "Using medicinal plants and natural compounds to neutralize toxins and support recovery.",
             "bulletpoints": "Activated charcoal, milk thistle, turmeric for liver detox",
             "duration": "12",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Pair detox herbs with chelation protocols so the body can flush residual toxins without overloading the liver."
         },
         {
             "id": "herbal_2",
@@ -22,7 +23,8 @@
             "description": "Natural methods to accelerate healing, reduce inflammation, and repair damaged tissues.",
             "bulletpoints": "Collagen regeneration, essential oils, cellular rejuvenation",
             "duration": "14",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Stack regenerative nutrients and anti-inflammatory botanicals to rebuild tissue and calm trauma responses."
         },
         {
             "id": "herbal_3",
@@ -30,7 +32,8 @@
             "description": "Strengthening the body’s natural defenses against biological threats and environmental toxins.",
             "bulletpoints": "Adaptogens, immune boosters, nutritional therapy",
             "duration": "10",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Cycle adaptogens, micronutrients, and hydration so immunity stays primed when BioChem stress hits."
         }
     ]
 }

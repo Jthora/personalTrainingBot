@@ -13,6 +13,7 @@
                 "Visualize relationships using Venn diagrams to represent overlapping sets.",
                 "Apply De Morgan’s laws: \\[ (A \\cup B)^c = A^c \\cap B^c, \\quad (A \\cap B)^c = A^c \\cup B^c \\]"
             ],
+                "summaryText": "Use unions, intersections, complements, and De Morgan identities to reason about overlapping sets.",
             "duration": 8,
             "difficulty": "Intermediate"
         },
@@ -25,6 +26,7 @@
                 "Understand the existential quantifier: \\[ \\exists x \\in S, P(x) \\] means there exists at least one \\( x \\) in \\( S \\) for which \\( P(x) \\) is true.",
                 "Learn how to negate quantified statements: \\[ \\neg (\\forall x, P(x)) = \\exists x, \\neg P(x) \\], \\[ \\neg (\\exists x, P(x)) = \\forall x, \\neg P(x) \\]"
             ],
+                "summaryText": "Differentiate universal and existential claims and negate them correctly in predicate logic.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -37,6 +39,7 @@
                 "Explore properties of relations: reflexive (\\( \\forall x, (x,x) \\in R \\)), symmetric (\\( xRy \\Rightarrow yRx \\)), transitive (\\( xRy \\text{ and } yRz \\Rightarrow xRz \\)).",
                 "Analyze function properties: injective (one-to-one, \\( f(a) = f(b) \\Rightarrow a = b \\)), surjective (onto, \\( \\forall y, \\exists x, f(x) = y \\)), bijective (both injective and surjective)."
             ],
+                "summaryText": "Classify relations and functions by their structural properties and mapping behaviors.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -49,6 +52,7 @@
                 "Construct Cartesian products: \\[ A \\times B = \\{ (a, b) \\mid a \\in A, b \\in B \\} \\]",
                 "Use power sets to analyze Boolean algebras and combinatorial structures."
             ],
+                "summaryText": "Build power sets and Cartesian products to explore derived structures and counting results.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -61,6 +65,7 @@
                 "Understand the axiom of infinity: \\[ \\exists S, (\\emptyset \\in S) \\land (\\forall x \\in S, x \\cup \\{x\\} \\in S) \\]",
                 "Explore the axiom of choice (AC) and its implications for proving cardinality results."
             ],
+                "summaryText": "Review core ZF axioms—including choice—to ground rigorous set constructions.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -73,6 +78,7 @@
                 "Study infinite cardinal numbers: \\( \\aleph_0 \\) (countable infinity), \\( 2^{\\aleph_0} \\) (continuum cardinality).",
                 "Understand ordinal numbers \\( \\omega \\), \\( \\omega+1 \\), and transfinite induction."
             ],
+                "summaryText": "Contrast infinite cardinals and ordinals while applying transfinite induction principles.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -85,6 +91,7 @@
                 "Use distributive laws: \\[ A \\cap (B \\cup C) = (A \\cap B) \\cup (A \\cap C) \\]",
                 "Analyze applications in circuit design and propositional logic."
             ],
+                "summaryText": "Manipulate Boolean operations to reason about logical circuits and algebraic identities.",
             "duration": 12,
             "difficulty": "Advanced"
         },
@@ -97,6 +104,7 @@
                 "Understand Cantor’s diagonal argument proving \\( |\\mathbb{R}| > |\\mathbb{N}| \\)",
                 "Explore Gödel’s incompleteness theorems and their impact on set logic."
             ],
+                "summaryText": "Examine foundational paradoxes and diagonal arguments that reveal limits of naive set theory.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -109,6 +117,7 @@
                 "Negate complex quantified statements using De Morgan’s rules.",
                 "Translate natural language statements into precise logical forms."
             ],
+                "summaryText": "Parse and manipulate nested quantifiers to express and negate precise logical statements.",
             "duration": 12,
             "difficulty": "Advanced"
         },
@@ -121,6 +130,7 @@
                 "Study partition relations and their role in large cardinal theory.",
                 "Apply combinatorial set techniques to probability and decision theory."
             ],
+                "summaryText": "Apply combinatorial principles like Ramsey theory and partitions within advanced set contexts.",
             "duration": 16,
             "difficulty": "Expert"
         }

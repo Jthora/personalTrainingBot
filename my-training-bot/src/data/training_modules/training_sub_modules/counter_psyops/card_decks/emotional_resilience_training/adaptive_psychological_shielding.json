@@ -18,7 +18,8 @@
                 "Practicing cognitive distancing to prevent emotional exploitation."
             ],
             "duration": "60",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Spot manipulative tactics, watch for invasive patterns, and distance emotions from planted hooks."
         },
         {
             "id": "psych_shield_2",
@@ -30,7 +31,8 @@
                 "Controlled desensitization to reduce external emotional impact."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Drill detachment, compartmentalize under fire, and desensitize against emotional hijacks."
         },
         {
             "id": "psych_shield_3",
@@ -42,7 +44,8 @@
                 "Distraction resilience exercises to maintain sharp focus."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Tighten selective focus, visualize noise filters, and build distraction immunity."
         },
         {
             "id": "psych_shield_4",
@@ -54,7 +57,8 @@
                 "Mental unconditioning practices for deprogramming embedded directives."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Flag subconscious triggers, reframe covert cues, and uncondition embedded directives."
         },
         {
             "id": "psych_shield_5",
@@ -66,7 +70,8 @@
                 "Situational awareness training for rapid adaptive analysis."
             ],
             "duration": "60",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Run flexibility drills, shift viewpoints on demand, and scan scenarios for adaptive responses."
         },
         {
             "id": "psych_shield_6",
@@ -78,7 +83,8 @@
                 "Conscious mental rerouting to confuse external influence attempts."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Partition sensitive thoughts, encode internal dialogue, and reroute cognition to mislead probes."
         },
         {
             "id": "psych_shield_7",
@@ -90,7 +96,8 @@
                 "Disengagement techniques to cut off emotional energy drains."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Audit incoming emotions, lock onto stability anchors, and sever draining links fast."
         },
         {
             "id": "psych_shield_8",
@@ -102,7 +109,8 @@
                 "Adaptive response planning to maintain control in high-pressure situations."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Condition with stress micro-doses, rehearse rapid decisions, and script adaptive response trees."
         },
         {
             "id": "psych_shield_9",
@@ -114,7 +122,8 @@
                 "Strategic rewording to reshape narratives in real time."
             ],
             "duration": "75",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Mirror tactics back, provoke unscripted replies, and rephrase narratives to flip control."
         },
         {
             "id": "psych_shield_10",
@@ -126,7 +135,8 @@
                 "Cognitive masking to present false mental signatures when under observation."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Diffuse targeting energy, scramble thoughts deliberately, and mask with decoy mind signatures."
         }
     ]
 }

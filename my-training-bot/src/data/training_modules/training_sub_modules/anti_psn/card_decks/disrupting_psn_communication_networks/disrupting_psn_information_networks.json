@@ -17,6 +17,7 @@
                 "Analyzing keywords and behavioral shifts to identify covert communication.",
                 "Using OSINT techniques to uncover hidden networks."
             ],
+            "summaryText": "Monitor forum and encrypted channel activity for repeating signatures, decode linguistic and behavioral tells that reveal covert coordination, and deploy OSINT tracing to surface the hidden pipelines they rely on.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Causing internal conflicts by exploiting hierarchical weaknesses.",
                 "Redirecting their focus to non-critical issues to waste resources."
             ],
+            "summaryText": "Seed believable false intel that scrambles their plans, weaponize hierarchy fractures so lieutenants turn on each other, and spin up distractions that make them burn cycles on meaningless fights.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Using rapid-response counter-messaging to intercept disinformation.",
                 "Creating psychological pressure points that force PSNs to overreact."
             ],
+            "summaryText": "Knock out their amplifiers to choke recruitment, answer propaganda instantly with sharper counter-narratives, and create stressors that bait PSNs into explosive missteps that expose their tactics.",
             "duration": "90",
             "difficulty": "Expert"
         }

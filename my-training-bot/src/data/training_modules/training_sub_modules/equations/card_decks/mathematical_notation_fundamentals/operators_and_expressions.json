@@ -16,6 +16,7 @@
                 "Evaluate expressions step-by-step following the priority rules: \\[ (3 + 5) \\times 2 = 8 \\times 2 = 16 \\]",
                 "Understand the role of parentheses in overriding default precedence: \\[ 3 + 5 \\times 2 \\neq (3 + 5) \\times 2 \\]"
             ],
+                "summaryText": "Practice PEMDAS sequencing, stepwise evaluation, and parentheses overrides.",
             "duration": 5,
             "difficulty": "Beginner"
         },
@@ -28,6 +29,7 @@
                 "Convert between exponent and radical notation: \\[ \\sqrt[3]{8} = 8^{\\frac{1}{3}} = 2 \\]",
                 "Simplify expressions with exponents and roots: \\[ (2^3)^2 = 2^6 = 64 \\]"
             ],
+                "summaryText": "Reinforce exponent laws, radical conversions, and simplification patterns.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -40,6 +42,7 @@
                 "Factorize expressions by finding common factors: \\[ x^2 - 5x = x(x - 5) \\]",
                 "Combine like terms to simplify: \\[ 3x + 5x - 2x = 6x \\]"
             ],
+                "summaryText": "Apply distribution, factoring, and like-term combination to streamline algebra.",
             "duration": 7,
             "difficulty": "Intermediate"
         },
@@ -52,6 +55,7 @@
                 "Solve absolute value equations: \\[ |x - 3| = 7 \\Rightarrow x - 3 = 7 \\text{ or } x - 3 = -7 \\]",
                 "Graph absolute value functions: \\[ y = |x| \\] forms a V-shape on the coordinate plane"
             ],
+                "summaryText": "Interpret absolute value geometry, solve equations, and sketch V-shaped graphs.",
             "duration": 5,
             "difficulty": "Beginner"
         },
@@ -64,6 +68,7 @@
                 "Use logarithmic identities: \\[ \\log_b(xy) = \\log_b x + \\log_b y \\]",
                 "Convert between logarithmic and exponential form: \\[ 10^2 = 100 \\Leftrightarrow \\log_{10}(100) = 2 \\]"
             ],
+                "summaryText": "Relate logs to exponents, leverage identities, and shift between forms.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -76,6 +81,7 @@
                 "Example: \\[ 17 \\mod 5 = 2 \\] because \\( 17 = 5 \\times 3 + 2 \\)",
                 "Use modular arithmetic in number systems and cryptography"
             ],
+                "summaryText": "Understand mod remainders, compute examples, and note cryptographic uses.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -88,6 +94,7 @@
                 "Flip the inequality sign when multiplying or dividing by a negative number: \\[ -3x > 9 \\Rightarrow x < -3 \\]",
                 "Graph compound inequalities on a number line"
             ],
+                "summaryText": "Solve inequalities, adjust for negatives, and graph solution intervals.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -100,6 +107,7 @@
                 "Perform operations with complex numbers: \\[ (3 + 2i) + (1 - 4i) = 4 - 2i \\]",
                 "Represent complex numbers on the complex plane"
             ],
+                "summaryText": "Review complex unit properties, arithmetic, and polar visualization.",
             "duration": 8,
             "difficulty": "Advanced"
         },
@@ -112,6 +120,7 @@
                 "Compute arithmetic series: \\[ S_n = \\frac{n}{2} (a + l) \\]",
                 "Evaluate geometric series using the formula: \\[ S_n = \\frac{a(1 - r^n)}{1 - r} \\]"
             ],
+                "summaryText": "Interpret sigma notation and evaluate arithmetic and geometric series.",
             "duration": 8,
             "difficulty": "Advanced"
         },
@@ -124,6 +133,7 @@
                 "Compute determinants for 2x2 matrices: \\[ \\det(A) = ad - bc \\text{ for } A = \\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix} \\]",
                 "Apply inverse matrices to solve systems of equations"
             ],
+                "summaryText": "Practice matrix multiplication, determinant formulas, and inverse-based solving.",
             "duration": 9,
             "difficulty": "Advanced"
         }

@@ -13,6 +13,7 @@
             "title": "What Are Oracles?",
             "description": "Exploring the role of oracles in blockchain applications.",
             "bulletpoints": "Types of oracles, decentralized vs. centralized oracles, security considerations",
+            "summaryText": "Survey oracle models so you can weigh centralized speed against decentralized security for your dApp.",
             "duration": "35",
             "difficulty": "Intermediate"
         },
@@ -21,6 +22,7 @@
             "title": "Integrating Chainlink Oracles",
             "description": "Connecting smart contracts to real-world data through Chainlink.",
             "bulletpoints": "Data feeds, price oracles, randomness functions (VRF)",
+            "summaryText": "Wire up Chainlink data feeds and VRF calls to stream reliable prices and randomness into your contracts.",
             "duration": "45",
             "difficulty": "Advanced"
         },
@@ -29,6 +31,7 @@
             "title": "Building a Custom Oracle",
             "description": "Developing a custom oracle for secure off-chain data retrieval.",
             "bulletpoints": "API integration, webhook triggers, decentralized verification",
+            "summaryText": "Design a custom oracle pipeline that fetches APIs, signs responses, and resists manipulation before posting on-chain.",
             "duration": "50",
             "difficulty": "Advanced"
         }

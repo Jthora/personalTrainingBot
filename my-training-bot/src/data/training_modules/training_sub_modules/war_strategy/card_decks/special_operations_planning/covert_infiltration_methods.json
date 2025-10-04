@@ -12,6 +12,7 @@
             "title": "Silent Entry Techniques",
             "description": "Approaching and breaching enemy territory without detection.",
             "bulletpoints": "Noise discipline, shadow positioning, silent movement drills",
+            "summaryText": "Practice noise-free movement, shadow hugging, and low-signature breaching so teams slip inside targets unnoticed.",
             "duration": "60",
             "difficulty": "Advanced"
         },
@@ -20,6 +21,7 @@
             "title": "Advanced Camouflage and Disguise",
             "description": "Utilizing environment and disguise to remain undetected in hostile zones.",
             "bulletpoints": "Urban camouflage, identity forging, environmental adaptation",
+            "summaryText": "Layer disguises with environmental cues and forged identities to blend into any terrain or population for extended cover.",
             "duration": "75",
             "difficulty": "Advanced"
         }

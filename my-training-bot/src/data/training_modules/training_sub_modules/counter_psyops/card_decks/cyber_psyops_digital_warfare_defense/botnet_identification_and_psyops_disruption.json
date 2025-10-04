@@ -18,7 +18,8 @@
                 "Recognizing the role of AI and automation in modern botnets."
             ],
             "duration": "75",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Contrast centralized and decentralized control, watch behavior shifts per platform, and track automation cues to blueprint the botnet."
         },
         {
             "id": "botnet_psyops_2",
@@ -30,7 +31,8 @@
                 "Analyzing metadata to distinguish human activity from bots."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Flag anomalous traffic, bait operators with honeypots, and parse metadata so bot signatures surface from network noise."
         },
         {
             "id": "botnet_psyops_3",
@@ -42,7 +44,8 @@
                 "Deploying automated botnet classifiers to map influence networks."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Train models on engagement anomalies, craft adversarial traps, and deploy classifiers that chart bot-led influence webs."
         },
         {
             "id": "botnet_psyops_4",
@@ -54,7 +57,8 @@
                 "Harvesting botnet communication logs for PsyOps disruption strategies."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Run sock puppets, trace C2 nodes, and harvest comms so infiltration yields actionable disruption intel."
         },
         {
             "id": "botnet_psyops_5",
@@ -66,7 +70,8 @@
                 "Coordinating with ethical hacking groups to execute botnet neutralization."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Probe infrastructure weak points, align legal and cyber strikes, and coordinate white-hat allies to dismantle hostile botnets."
         },
         {
             "id": "botnet_psyops_6",
@@ -78,7 +83,8 @@
                 "Exposing false narratives spread through automated engagement tactics."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Audit disinformation pushes, track amplification waves, and expose automated narratives powering PsyOps."
         },
         {
             "id": "botnet_psyops_7",
@@ -90,7 +96,8 @@
                 "Identifying state-sponsored vs. independent botnet operations."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Leverage OSINT to chart narrative pathways, follow amplification loops, and attribute campaigns to their sponsors."
         },
         {
             "id": "botnet_psyops_8",
@@ -102,7 +109,8 @@
                 "Triggering botnets into self-destructive behavior through misdirection."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Seed counter-stories, feed deceptive signals, and push bots into self-defeating loops to fracture their PsyOps."
         },
         {
             "id": "botnet_psyops_9",
@@ -114,7 +122,8 @@
                 "Training users to recognize and disengage from artificial narratives."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Instill digital hygiene, deploy algorithmic shields, and coach teams to spot automated narratives before they stick."
         },
         {
             "id": "botnet_psyops_10",
@@ -126,7 +135,8 @@
                 "Leveraging blockchain and cryptographic verification to ensure authenticity in communications."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Stand up rapid-response intel, automate counter-engagement, and verify channels cryptographically to preserve trusted comms."
         }
     ]
 }

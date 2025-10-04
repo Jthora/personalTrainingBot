@@ -13,6 +13,7 @@
                 "Maintain close contact to limit opponent's movement",
                 "Apply gradual pressure to avoid injury"
             ],
+            "summaryText": "Roll into the wrist with tight contact and steady pressure to seize control safely.",
             "duration": 5,
             "difficulty": "Beginner"
         },
@@ -25,6 +26,7 @@
                 "Control the opponent’s wrist to limit escape",
                 "Use leverage rather than brute force"
             ],
+            "summaryText": "Angle off, capture the wrist, and lever the elbow straight for a clean hyperextension.",
             "duration": 6,
             "difficulty": "Intermediate"
         }

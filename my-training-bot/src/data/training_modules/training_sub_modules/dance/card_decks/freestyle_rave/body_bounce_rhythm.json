@@ -13,6 +13,7 @@
                 "Bounce in time with the beat",
                 "Use slight weight shifts for variations"
             ],
+            "summaryText": "Ride the beat with springy knees and gentle shifts to stay locked in.",
             "duration": 5,
             "difficulty": "Beginner"
         },
@@ -25,6 +26,7 @@
                 "Integrate small hops for variation",
                 "Experiment with side-to-side weight shifts"
             ],
+            "summaryText": "Layer hops and accents on the bounce to dial up freestyle energy.",
             "duration": 6,
             "difficulty": "Intermediate"
         }

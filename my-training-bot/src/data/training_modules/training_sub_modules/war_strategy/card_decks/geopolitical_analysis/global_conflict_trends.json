@@ -12,6 +12,7 @@
             "title": "Major Wars and Conflicts",
             "description": "Studying key military conflicts and their strategic lessons.",
             "bulletpoints": "WWII, Cold War proxy wars, modern hybrid warfare case studies",
+            "summaryText": "Compare WWII coalitions, Cold War proxy showdowns, and hybrid campaigns to spot recurring escalation patterns and modernize force planning.",
             "duration": "60",
             "difficulty": "Advanced"
         },
@@ -20,6 +21,7 @@
             "title": "Current Geopolitical Tensions",
             "description": "Tracking ongoing global disputes and potential hotspots.",
             "bulletpoints": "South China Sea, Ukraine conflict, Middle Eastern tensions",
+            "summaryText": "Monitor flashpoints like the South China Sea, Ukraine, and Middle East to forecast trigger events and shape diplomatic or military posture in advance.",
             "duration": "50",
             "difficulty": "Intermediate"
         }

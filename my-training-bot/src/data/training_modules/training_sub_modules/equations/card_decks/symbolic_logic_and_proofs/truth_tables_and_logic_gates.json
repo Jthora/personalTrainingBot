@@ -16,6 +16,7 @@
                 "Evaluate Boolean expressions using truth tables.",
                 "Apply logical operators in mathematical proofs and computational logic."
             ],
+            "summaryText": "Master the core Boolean connectives and evaluate their combinations with truth tables.",
             "duration": 8,
             "difficulty": "Intermediate"
         },
@@ -28,6 +29,7 @@
                 "Identify logical equivalences such as De Morgan’s Laws: \\[ \\neg(A \\land B) \\equiv \\neg A \\lor \\neg B \\]",
                 "Verify logical identities using truth tables."
             ],
+            "summaryText": "Build comprehensive truth tables to test equivalences and validate logical identities.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -40,6 +42,7 @@
                 "Analyze how logic gates perform binary computations: \\[ Y = (A \\land B) \\lor \\neg C \\]",
                 "Explore real-world applications in processor design and hardware logic."
             ],
+            "summaryText": "Relate symbolic logic to digital hardware by mapping expressions onto standard gate circuits.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -52,6 +55,7 @@
                 "Show that all basic logic gates can be constructed using only NAND or NOR.",
                 "Design a universal logic system using only one type of gate."
             ],
+            "summaryText": "Demonstrate NAND and NOR as universal primitives capable of building any Boolean function.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -64,6 +68,7 @@
                 "Apply grouping techniques to minimize logic expressions.",
                 "Convert complex Boolean expressions into simplified forms for circuit optimization."
             ],
+            "summaryText": "Use Karnaugh maps to group minterms and derive minimal Boolean implementations.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -76,6 +81,7 @@
                 "Use distributive, associative, and commutative properties for simplification.",
                 "Derive minimal logic expressions for optimized digital circuits."
             ],
+            "summaryText": "Simplify logic with Boolean identities to reduce gate counts and circuit complexity.",
             "duration": 14,
             "difficulty": "Advanced"
         },
@@ -88,6 +94,7 @@
                 "Understand half-adder and full-adder circuits.",
                 "Apply logic gates to build arithmetic logic units (ALUs) in CPUs."
             ],
+            "summaryText": "Combine logic gates into adders and ALU blocks that power binary arithmetic.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -100,6 +107,7 @@
                 "Explore flip-flops (SR, D, JK, T) and their functions.",
                 "Design state machines for digital control systems."
             ],
+            "summaryText": "Introduce memory via flip-flops and state machines to realize sequential digital behavior.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -112,6 +120,7 @@
                 "Analyze timing diagrams and critical path delay.",
                 "Design circuits to minimize delay and increase processing speed."
             ],
+            "summaryText": "Account for propagation delays and optimize timing paths in logic designs.",
             "duration": 14,
             "difficulty": "Advanced"
         },
@@ -124,6 +133,7 @@
                 "Use hardware description languages (HDLs) to configure logic gates.",
                 "Explore real-time logic programming for adaptive computing."
             ],
+            "summaryText": "Implement adaptable circuits with HDLs targeting FPGA and programmable logic fabrics.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -136,6 +146,7 @@
                 "Use truth tables to verify the correctness of circuit designs.",
                 "Design combinational circuits by mapping inputs to outputs logically."
             ],
+            "summaryText": "Employ truth tables as blueprints to design and validate combinational logic networks.",
             "duration": 12,
             "difficulty": "Advanced"
         },
@@ -148,6 +159,7 @@
                 "Express quantum states using qubit superposition: \\[ |\\psi\\rangle = \\alpha |0\\rangle + \\beta |1\\rangle \\]",
                 "Analyze how reversible logic enables quantum computation."
             ],
+            "summaryText": "Explore reversible quantum gates that manipulate superposed qubits for computation.",
             "duration": 18,
             "difficulty": "Expert"
         }

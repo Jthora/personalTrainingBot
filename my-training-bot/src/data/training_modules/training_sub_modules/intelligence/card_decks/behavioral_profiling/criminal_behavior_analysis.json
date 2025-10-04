@@ -19,6 +19,7 @@
                 "Use Statement Analysis to identify linguistic inconsistencies in suspect testimonies",
                 "Apply cognitive load techniques (e.g., unexpected questions) to expose lies"
             ],
+            "summaryText": "Pair microexpression reads with statement scrutiny and surprise probes to fracture criminal deceptions.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -31,6 +32,7 @@
                 "Differentiate between organized (methodical, planned) and disorganized (impulsive, erratic) criminal behavior",
                 "Use behavioral pattern recognition to predict escalation in criminal activity"
             ],
+            "summaryText": "Map why repeat offenders act, classify organized versus chaotic signatures, and watch for escalation cues.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -43,6 +45,7 @@
                 "Understand intrinsic vs. extrinsic motivators (psychological vs. situational drivers)",
                 "Use the Crime Classification Manual (CCM) to categorize offender typologies"
             ],
+            "summaryText": "Blend RAT, motive sources, and CCM typologies to see what fuels a crime and where it fits.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -55,6 +58,7 @@
                 "Differentiate between primary psychopathy (cold, calculating) and secondary sociopathy (impulsive, reactive)",
                 "Analyze case studies of infamous psychopaths and sociopaths in criminal history"
             ],
+            "summaryText": "Score offenders with the PCL-R, separate calculated psychopaths from reactive sociopaths, and anchor insights in casework.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -67,6 +71,7 @@
                 "Understand target selection strategies (opportunistic vs. premeditated victimization)",
                 "Use crime mapping to identify high-risk areas and serial offender hunting grounds"
             ],
+            "summaryText": "Track VOO patterns, decode how targets are chosen, and map hotspots to anticipate the next strike.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -79,6 +84,7 @@
                 "Evaluate Behavioral Threat Assessment (BTA) indicators for workplace and public safety threats",
                 "Analyze pre-attack behaviors in individuals likely to commit violent acts"
             ],
+            "summaryText": "Run SPJ tools, flag BTA indicators, and compare pre-attack scripts to forecast dangerous moves.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -91,6 +97,7 @@
                 "Use the Stalking Risk Profile (SRP) tool to evaluate threat levels",
                 "Analyze patterns of obsessive behaviors leading to escalation"
             ],
+            "summaryText": "Classify stalker style, score risk with SRP, and trace obsession arcs to spot escalation windows.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -103,6 +110,7 @@
                 "Analyze Dark Web behaviors to track cybercriminal activity",
                 "Use digital footprint tracking to uncover anonymous online offenders"
             ],
+            "summaryText": "Sort cyber offenders, mine dark web patterns, and stitch digital breadcrumbs back to real operators.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -115,6 +123,7 @@
                 "Identify hierarchical vs. decentralized gang structures",
                 "Study money laundering methods used by transnational crime syndicates"
             ],
+            "summaryText": "Model syndicates with SNA, contrast chain-of-command styles, and trace laundering pipelines to disrupt networks.",
             "duration": 8,
             "difficulty": "Expert"
         },
@@ -127,6 +136,7 @@
                 "Study power-seeking behaviors in white-collar criminals and cult leaders",
                 "Use forensic psychology to assess manipulation tactics in offenders"
             ],
+            "summaryText": "Pinpoint narcissist subtype, map power grabs, and document manipulative playbooks via forensic interviews.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -139,6 +149,7 @@
                 "Recognize coercion tactics used in police interrogations",
                 "Analyze wrongful conviction cases where psychological pressure led to false admissions"
             ],
+            "summaryText": "Dissect coercive interrogation tactics, flag risky practices, and learn from wrongful conviction case studies.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -151,6 +162,7 @@
                 "Analyze online propaganda and recruitment methods used by extremist groups",
                 "Use Countering Violent Extremism (CVE) methodologies to identify early warning signs"
             ],
+            "summaryText": "Blend social identity theory, propaganda analysis, and CVE frameworks to intercept violent radicalization paths.",
             "duration": 8,
             "difficulty": "Expert"
         }

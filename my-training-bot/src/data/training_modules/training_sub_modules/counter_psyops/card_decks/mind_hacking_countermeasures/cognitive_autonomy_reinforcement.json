@@ -18,7 +18,8 @@
                 "Cultivate intellectual humility—remain open to new information but resistant to forced persuasion."
             ],
             "duration": "60",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Run daily belief audits, rehearse pressure tests, and balance humility with firm autonomy."
         },
         {
             "id": "cognitive_autonomy_2",
@@ -30,7 +31,8 @@
                 "Engage in regular ‘Mental Reboot’ exercises to reset cognitive biases."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Scan for foreign implants, shatter loops with paradox drills, and periodically reboot assumptions."
         },
         {
             "id": "cognitive_autonomy_3",
@@ -42,7 +44,8 @@
                 "Practice detaching from emotionally charged ideas to analyze thoughts objectively."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Log decision patterns, redirect hijacked thoughts, and detach emotion before analysis."
         },
         {
             "id": "cognitive_autonomy_4",
@@ -54,7 +57,8 @@
                 "Engage in structured debates where authority figures' reasoning is critically examined."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Interrogate authority claims, voice defended positions, and spar against prestige logic."
         },
         {
             "id": "cognitive_autonomy_5",
@@ -66,7 +70,8 @@
                 "Employ ‘Cognitive Safe Mode’—a trained state of detached observation to avoid reactionary responses."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Flag coercive setups, interrupt scripts mid-run, and drop into safe-mode observing."
         },
         {
             "id": "cognitive_autonomy_6",
@@ -78,7 +83,8 @@
                 "Implement ‘Silent Resistance’—remaining neutral and observant while resisting external pressure."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Anchor to core values, rehearse contrarian analyses, and resist quietly without signaling."
         },
         {
             "id": "cognitive_autonomy_7",
@@ -90,7 +96,8 @@
                 "Develop cognitive ‘Buffer Zones’—mental partitions preventing ideological penetration."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Probe messenger motives, observe rivals safely, and maintain buffer partitions."
         },
         {
             "id": "cognitive_autonomy_8",
@@ -102,7 +109,8 @@
                 "Train adaptive skepticism—balancing open-mindedness with critical scrutiny."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Detect framing floods, deploy instant affirmations, and keep skepticism agile."
         },
         {
             "id": "cognitive_autonomy_9",
@@ -114,7 +122,8 @@
                 "Use narrative rewriting techniques to overwrite external programming attempts."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Forge anti-manipulation mantras, ritualize self-led reinforcement, and rewrite imposed scripts."
         },
         {
             "id": "cognitive_autonomy_10",
@@ -126,7 +135,8 @@
                 "Engage in advanced strategic thinking exercises to anticipate and neutralize future manipulation attempts."
             ],
             "duration": "120",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Schedule vulnerability audits, reforging sessions, and future-proof strategic drills."
         }
     ]
 }

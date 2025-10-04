@@ -16,6 +16,7 @@
                 "Analyze financial and security risks using Monte Carlo methods",
                 "Simulate multiple scenarios to identify best-case and worst-case outcomes"
             ],
+            "summaryText": "Simulate stochastic scenarios to map probability distributions and risk extremes.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Analyze cascading failures in financial, energy, and cyber systems",
                 "Develop countermeasures for mitigating high-impact global risks"
             ],
+            "summaryText": "Model interconnected systems to anticipate cascades and craft mitigation paths.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -40,6 +42,7 @@
                 "Use anomaly detection to identify unusual patterns in data",
                 "Apply deep learning techniques to enhance risk forecasting accuracy"
             ],
+            "summaryText": "Train ML models and anomaly detectors to surface emerging risks ahead of impact.",
             "duration": 8,
             "difficulty": "Expert"
         },
@@ -52,6 +55,7 @@
                 "Use zero-sum and non-zero-sum game strategies for risk mitigation",
                 "Analyze competitive and cooperative strategies in security scenarios"
             ],
+            "summaryText": "Leverage game-theory frameworks to forecast adversary moves and optimal responses.",
             "duration": 7,
             "difficulty": "Advanced"
         },
@@ -64,6 +68,7 @@
                 "Analyze large-scale simulations for disaster response and financial crises",
                 "Use adaptive learning agents to refine predictive accuracy over time"
             ],
+            "summaryText": "Simulate adaptive agents to explore complex risk behaviors at scale.",
             "duration": 8,
             "difficulty": "Advanced"
         },
@@ -76,6 +81,7 @@
                 "Integrate geospatial intelligence for disaster prediction",
                 "Develop automated alerts and risk mitigation protocols"
             ],
+            "summaryText": "Build real-time monitoring pipelines that trigger automated mitigation alerts.",
             "duration": 7,
             "difficulty": "Intermediate"
         },
@@ -88,6 +94,7 @@
                 "Develop resilience strategies to mitigate unexpected catastrophes",
                 "Analyze historical case studies of extreme risk occurrences"
             ],
+            "summaryText": "Study extreme past shocks to harden systems against low-probability catastrophes.",
             "duration": 8,
             "difficulty": "Expert"
         },
@@ -100,6 +107,7 @@
                 "Use fuzzy inference systems for probabilistic decision-making",
                 "Improve risk management in sectors with incomplete or evolving data"
             ],
+            "summaryText": "Apply fuzzy logic scoring to judge ambiguous risks with incomplete data.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -112,6 +120,7 @@
                 "Use cloud-based analytics for large-scale trend identification",
                 "Leverage cross-domain intelligence for comprehensive risk assessment"
             ],
+            "summaryText": "Harness big data analytics to reveal cross-domain risk trends and signals.",
             "duration": 7,
             "difficulty": "Advanced"
         }

@@ -12,6 +12,7 @@
             "title": "Manifesting Energy Weapons",
             "description": "Methods to shape energy into structured weaponry for combat use.",
             "bulletpoints": "Energy Flow Control, Construct Stability, Weapon Refinement",
+            "summaryText": "Condense psi flow into a defined blade or shield and keep it firm with steady visualization.",
             "duration": "50",
             "difficulty": "Advanced"
         },
@@ -20,6 +21,7 @@
             "title": "Tactical Applications of Energy Weapons",
             "description": "Strategies for utilizing energy weapons in dynamic combat scenarios.",
             "bulletpoints": "Defensive Maneuvers, Long-Range Attacks, Psionic Countermeasures",
+            "summaryText": "Match the construct to the moment—shift between defense, range, and counters on instinct.",
             "duration": "75",
             "difficulty": "Expert"
         }

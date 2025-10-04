@@ -16,6 +16,7 @@
                 "Use AI and machine learning models for fraud detection",
                 "Investigate cloned and stolen credit card fraud cases"
             ],
+            "summaryText": "Model transaction patterns to spotlight unauthorized card use fast.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -28,6 +29,7 @@
                 "Trace fraudulent accounts used for identity theft",
                 "Investigate cybercriminal networks behind phishing schemes"
             ],
+            "summaryText": "Track phishing infrastructure to dismantle social engineering campaigns.",
             "duration": 7,
             "difficulty": "Advanced"
         }

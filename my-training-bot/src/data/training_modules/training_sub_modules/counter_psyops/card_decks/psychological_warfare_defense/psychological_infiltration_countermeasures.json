@@ -17,6 +17,7 @@
                 "Assess linguistic patterns for manipulation techniques and implanted narratives.",
                 "Cross-examine sources of information to verify authenticity and intent."
             ],
+            "summaryText": "Watch the behavior shifts, parse the language, and vet every feed for hidden intent.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Map social engineering tactics to identify points of manipulation.",
                 "Use controlled skepticism to filter out disinformation."
             ],
+            "summaryText": "Break down the covert plays, map the social attack surface, and keep skepticism dialed in.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Use multi-perspective analysis to counteract biased or agenda-driven narratives.",
                 "Develop secure mental compartments to protect key knowledge and beliefs."
             ],
+            "summaryText": "Limit sketchy inputs, triangulate perspectives, and vault your crucial intel.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -53,6 +56,7 @@
                 "Analyze historical infiltration patterns to predict future subversion attempts.",
                 "Use counterintelligence questioning techniques to expose hidden agendas."
             ],
+            "summaryText": "Profile the infiltrator archetype, study past plays, and interrogate until the mask slips.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -65,6 +69,7 @@
                 "Develop automated skepticism triggers for detecting mental influence attempts.",
                 "Deploy controlled thought compartmentalization to prevent information leakage."
             ],
+            "summaryText": "Layer your reasoning, trip alarms on suspect inputs, and partition thoughts on lockdown.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -77,6 +82,7 @@
                 "Expose infiltration tactics within a group through strategic questioning.",
                 "Use counter-framing methods to disarm weaponized narratives."
             ],
+            "summaryText": "Disarm triggers, surface the tactic in daylight, and reframe the story on your terms.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -89,6 +95,7 @@
                 "Deploy false information pathways to mislead and expose adversarial intentions.",
                 "Use psychological camouflage techniques to remain undetected in hostile environments."
             ],
+            "summaryText": "Spin decoys, seed trap intel, and cloak your presence while they chase ghosts.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -101,6 +108,7 @@
                 "Use deep self-reflection to maintain alignment with core beliefs and values.",
                 "Implement cognitive detox routines to remove externally implanted thought patterns."
             ],
+            "summaryText": "Audit your mind on schedule, realign with your core, and flush out subtle implants.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -113,6 +121,7 @@
                 "Use adversarial exhaustion tactics to wear down psychological infiltrators.",
                 "Deploy reverse-psychology techniques to manipulate infiltrators into revealing themselves."
             ],
+            "summaryText": "Feed them curated noise, tire them out, and flip the script until they expose themselves.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -125,6 +134,7 @@
                 "Develop multi-layered counter-intelligence strategies to shield groups from subversion.",
                 "Use strategic psychological counterattacks to force infiltrators into defensive positions."
             ],
+            "summaryText": "Monitor proactively, stack counterintelligence layers, and push infiltrators onto their heels.",
             "duration": "120",
             "difficulty": "Master"
         }

@@ -13,6 +13,7 @@
             "title": "Hash Functions in Blockchain",
             "description": "Exploring the role of cryptographic hashing in blockchain security.",
             "bulletpoints": "SHA-256, collision resistance, Merkle trees",
+            "summaryText": "See how SHA-256 and Merkle trees lock transactions into fingerprints that flag tampering instantly.",
             "duration": "35",
             "difficulty": "Intermediate"
         },
@@ -21,6 +22,7 @@
             "title": "Public-Key Cryptography",
             "description": "Understanding asymmetric cryptography and its role in blockchain.",
             "bulletpoints": "Private keys, public keys, elliptic curve cryptography (ECC)",
+            "summaryText": "Follow private/public key pairs and ECC math to understand how wallets prove ownership without revealing secrets.",
             "duration": "45",
             "difficulty": "Advanced"
         },
@@ -29,6 +31,7 @@
             "title": "Digital Signatures & Authentication",
             "description": "How digital signatures enable secure blockchain transactions.",
             "bulletpoints": "ECDSA, transaction verification, message signing",
+            "summaryText": "Trace how ECDSA signatures bind transactions to keys so nodes can verify authenticity before adding blocks.",
             "duration": "40",
             "difficulty": "Advanced"
         }

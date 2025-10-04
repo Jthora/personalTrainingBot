@@ -13,6 +13,7 @@
                 "Explore the Poincaré disk model, where geodesics appear as circular arcs that meet the boundary at right angles.",
                 "Analyze applications in relativity, where spacetime curvature can be described by hyperbolic metrics."
             ],
+            "summaryText": "Contrast hyperbolic triangles, disk-model geodesics, and relativistic curvature uses.",
             "duration": 12,
             "difficulty": "Advanced"
         },
@@ -25,6 +26,7 @@
                 "Explore geodesics defined by the Christoffel symbols: \\[ \\frac{d^2 x^\\mu}{ds^2} + \\Gamma^\\mu_{\\nu\\lambda} \\frac{dx^\\nu}{ds} \\frac{dx^\\lambda}{ds} = 0 \\]",
                 "Analyze gravitational lensing and cosmic topology using the Einstein field equations: \\[ R_{\\mu\\nu} - \\frac{1}{2} R g_{\\mu\\nu} = \\frac{8\\pi G}{c^4} T_{\\mu\\nu} \\]"
             ],
+            "summaryText": "Summarize Riemannian metrics, geodesic equations, and GR curvature phenomena.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -37,6 +39,7 @@
                 "Explore exotic smooth structures such as the \\( 7 \\)-dimensional Milnor spheres.",
                 "Analyze extra dimensions in string theory, described by compactified Calabi-Yau manifolds."
             ],
+            "summaryText": "Investigate fiber bundles, exotic smooth manifolds, and string-theory compactifications.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -49,6 +52,7 @@
                 "Explore time dilation and event horizons in curved Lorentzian manifolds.",
                 "Analyze how black hole horizons and causal structures are encoded in Penrose diagrams."
             ],
+            "summaryText": "Review Lorentzian metrics, relativistic effects, and causal diagrams in spacetime.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -61,6 +65,7 @@
                 "Explore how the exterior derivative \\( d \\) generalizes the gradient, curl, and divergence.",
                 "Apply Cartan’s formalism to general relativity, encoding curvature in the curvature 2-form."
             ],
+            "summaryText": "Explain differential forms, exterior calculus, and Cartan GR curvature framing.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -73,6 +78,7 @@
                 "Explore how spin and torsion interact in quantum gravity.",
                 "Analyze solutions to Einstein-Cartan equations for rotating black holes."
             ],
+            "summaryText": "Consider torsion-inclusive gravity, spin coupling, and Einstein-Cartan solutions.",
             "duration": 18,
             "difficulty": "Expert"
         },
@@ -85,6 +91,7 @@
                 "Understand Hamiltonian mechanics via Poisson brackets: \\[ \\{f, g\\} = \\sum \\frac{\\partial f}{\\partial q^i} \\frac{\\partial g}{\\partial p_i} - \\frac{\\partial f}{\\partial p_i} \\frac{\\partial g}{\\partial q^i} \\]",
                 "Analyze applications in quantum mechanics, where observables form a non-commutative algebra."
             ],
+            "summaryText": "Cover symplectic manifolds, Hamiltonian brackets, and quantum mechanical extensions.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -97,6 +104,7 @@
                 "Analyze homogeneous spaces \\( G/H \\), where \\( G \\) is a Lie group and \\( H \\) is a stabilizer subgroup.",
                 "Explore applications in string theory and supergravity, where extra dimensions are modeled by homogeneous spaces."
             ],
+            "summaryText": "Summarize Erlangen program symmetry viewpoint and homogeneous space constructions.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -109,6 +117,7 @@
                 "Analyze spectral triples \\( (A, H, D) \\), where \\( A \\) is an algebra of functions, \\( H \\) a Hilbert space, and \\( D \\) a Dirac operator.",
                 "Explore applications to quantum gravity and string theory."
             ],
+            "summaryText": "Investigate non-commuting coordinates, spectral triples, and quantum geometry uses.",
             "duration": 18,
             "difficulty": "Expert"
         },
@@ -121,6 +130,7 @@
                 "Analyze how edge states in topological insulators are protected by topology.",
                 "Explore applications of topological materials in quantum computing."
             ],
+            "summaryText": "Discuss topological phases, protected edge modes, and quantum tech applications.",
             "duration": 16,
             "difficulty": "Expert"
         }

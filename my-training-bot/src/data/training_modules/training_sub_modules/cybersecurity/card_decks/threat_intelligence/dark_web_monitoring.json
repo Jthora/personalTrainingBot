@@ -12,6 +12,7 @@
             "title": "Monitoring Dark Web Marketplaces",
             "description": "Techniques to track cybercriminal transactions and data leaks.",
             "bulletpoints": "Tor Networks, Darknet Forums, Cryptocurrency Tracing",
+            "summaryText": "Keep tabs on hidden marketplaces so stolen data and actors surface fast.",
             "duration": "60",
             "difficulty": "Advanced"
         },
@@ -20,6 +21,7 @@
             "title": "Identifying Leaked Credentials and Stolen Data",
             "description": "Detecting compromised accounts and sensitive data in dark web dumps.",
             "bulletpoints": "Data Breach Monitoring, Threat Intelligence APIs, Credential Stuffing Prevention",
+            "summaryText": "Sweep breach dumps to spot leaked credentials before attackers reuse them.",
             "duration": "90",
             "difficulty": "Advanced"
         }

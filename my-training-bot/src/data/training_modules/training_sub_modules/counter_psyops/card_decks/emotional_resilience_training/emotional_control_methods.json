@@ -18,7 +18,8 @@
                 "Understanding the psychology behind emotional manipulation techniques."
             ],
             "duration": "60",
-            "difficulty": "Beginner"
+            "difficulty": "Beginner",
+            "summaryText": "Spot gaslighting and fear plays, map your triggers, and grasp the manipulation psychology."
         },
         {
             "id": "emotional_control_2",
@@ -30,7 +31,8 @@
                 "Breath-hold training for stress adaptation."
             ],
             "duration": "45",
-            "difficulty": "Beginner"
+            "difficulty": "Beginner",
+            "summaryText": "Use diaphragmatic, box, and hold drills to steady nerves and adapt under stress."
         },
         {
             "id": "emotional_control_3",
@@ -42,7 +44,8 @@
                 "Developing rational detachment from emotionally charged events."
             ],
             "duration": "60",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Reframe stressors, recycle negatives into fuel, and detach rationally from hot moments."
         },
         {
             "id": "emotional_control_4",
@@ -54,7 +57,8 @@
                 "Building internal resilience against negative emotional influences."
             ],
             "duration": "75",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Visualize shields, detach from provocations, and fortify inner resilience."
         },
         {
             "id": "emotional_control_5",
@@ -66,7 +70,8 @@
                 "Programming responses to override emotional hijacking."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Forge anchors, link them to sensory cues, and pre-program overrides for hijacks."
         },
         {
             "id": "emotional_control_6",
@@ -78,7 +83,8 @@
                 "Developing endurance against emotional and physiological stress."
             ],
             "duration": "60",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Use cold exposure to train calm, ride discomfort smoothly, and expand stress endurance."
         },
         {
             "id": "emotional_control_7",
@@ -90,7 +96,8 @@
                 "Applying the ‘gray rock’ technique to neutralize manipulators."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Sense emotional traps, respond minimally, and deploy gray-rock disengagement."
         },
         {
             "id": "emotional_control_8",
@@ -102,7 +109,8 @@
                 "Harnessing emotions as tools for decision-making rather than obstacles."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Transmute anger into drive, aim anxiety at risk analysis, and wield emotions as tools."
         },
         {
             "id": "emotional_control_9",
@@ -114,7 +122,8 @@
                 "Expressing emotions through creative or verbal outlets strategically."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Purge through movement, calendar reflection slots, and express feelings with intent."
         },
         {
             "id": "emotional_control_10",
@@ -126,7 +135,8 @@
                 "Establishing a disciplined approach to emotional control."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Institutionalize daily stability drills, run anti-psywar reps, and keep emotional discipline sharp."
         }
     ]
 }

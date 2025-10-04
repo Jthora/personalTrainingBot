@@ -12,6 +12,7 @@
             "title": "Network Scanning and Reconnaissance",
             "description": "Identifying open ports, services, and vulnerabilities using network scanning techniques.",
             "bulletpoints": "Nmap, Shodan, Enumeration, Active/Passive Recon",
+            "summaryText": "Sweep the network with recon tooling to map ports, services, and soft spots.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -20,6 +21,7 @@
             "title": "Exploiting and Gaining Access",
             "description": "Using Metasploit, exploitation scripts, and privilege escalation techniques.",
             "bulletpoints": "Brute-Force Attacks, Credential Stuffing, Remote Code Execution",
+            "summaryText": "Chain exploits, crack creds, and escalate privileges until full control is yours.",
             "duration": "120",
             "difficulty": "Advanced"
         }

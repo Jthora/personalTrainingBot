@@ -13,6 +13,7 @@
             "title": "Reentrancy Attacks",
             "description": "Exploiting contract execution order to drain funds from a contract.",
             "bulletpoints": "Fallback functions, attack vectors, best practices for mitigation",
+            "summaryText": "Trace a classic reentrancy exploit step-by-step, emphasize vulnerable fallback patterns, and reiterate mitigation using CEI and reentrancy guards.",
             "duration": "45",
             "difficulty": "Advanced"
         },
@@ -21,6 +22,7 @@
             "title": "Integer Overflow & Underflow",
             "description": "Bypassing numerical limits to manipulate contract state.",
             "bulletpoints": "SafeMath libraries, Solidity 0.8.x automatic checks, attack examples",
+            "summaryText": "Show how unchecked math corrupts balances, note Solidity 0.8.x's built-in checks, and reference SafeMath for legacy codebases.",
             "duration": "40",
             "difficulty": "Intermediate"
         },
@@ -29,6 +31,7 @@
             "title": "Unauthorized Access & Logic Flaws",
             "description": "Exploiting contract functions due to improper access control.",
             "bulletpoints": "Role-based permissions, function visibility, privilege escalation",
+            "summaryText": "Identify common access lapses, walk through privilege escalation case studies, and reinforce visibility plus role-management best practices.",
             "duration": "50",
             "difficulty": "Advanced"
         }

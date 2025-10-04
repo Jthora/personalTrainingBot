@@ -17,6 +17,7 @@
                 "Understanding metadata leaks and mitigation tactics.",
                 "Preventing man-in-the-middle (MITM) attacks."
             ],
+            "summaryText": "Covers practical encryption use, metadata hygiene, and MITM defenses for hardened messaging.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -29,6 +30,7 @@
                 "Implementing voice distortion and obfuscation techniques.",
                 "Understanding SIGINT and how to counteract tracking."
             ],
+            "summaryText": "Explains dodging surveillance lures, masking communications, and countering SIGINT collection.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -41,6 +43,7 @@
                 "Understanding the risks of digital footprints and metadata.",
                 "Implementing multi-layered security for sensitive operations."
             ],
+            "summaryText": "Highlights disciplined burner use, footprint minimization, and layered OpSec for sensitive exchanges.",
             "duration": "90",
             "difficulty": "Expert"
         }

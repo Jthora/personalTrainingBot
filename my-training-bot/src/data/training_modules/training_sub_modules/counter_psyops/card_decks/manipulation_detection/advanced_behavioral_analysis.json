@@ -17,6 +17,7 @@
                 "Differentiating between conscious and subconscious behavioral cues.",
                 "Using systematic observation methods to gather intelligence."
             ],
+            "summaryText": "Lock in baselines, separate conscious tells from leaks, and observe methodically so anomalies light up fast.",
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -29,6 +30,7 @@
                 "Detecting hidden emotions through facial tension and micro-movements.",
                 "Practicing real-time microexpression reading to assess intent."
             ],
+            "summaryText": "Train on microexpression sets, watch for fleeting tension, and read flashes to catch hidden intent.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -41,6 +43,7 @@
                 "Analyzing limb positioning and physical distancing cues.",
                 "Distinguishing between open and closed body language for trust assessment."
             ],
+            "summaryText": "Track pacifiers, map limb and distance shifts, and read openness levels to flag dishonest signals.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -53,6 +56,7 @@
                 "Detecting incongruent tone shifts and pauses in speech.",
                 "Understanding stress-induced speech patterns in deception."
             ],
+            "summaryText": "Cross-check words with gestures, tune into tone slips, and log stress speech patterns to expose lies.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -65,6 +69,7 @@
                 "Tracking deviations under different stressors and stimuli.",
                 "Using baseline shifts to detect deception, coercion, or persuasion."
             ],
+            "summaryText": "Chart each subject’s normal, note deviation under stress, and treat baseline shifts as manipulation alarms.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -77,6 +82,7 @@
                 "Deciphering power imbalances through speech patterns and phrasing.",
                 "Countering verbal dominance strategies with strategic reframing."
             ],
+            "summaryText": "Listen for control tactics, decode power-heavy phrasing, and reframe responses to neutralize dominance plays.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -89,6 +95,7 @@
                 "Understanding how biases and psychological archetypes influence decisions.",
                 "Applying rapid psychological assessments in tactical scenarios."
             ],
+            "summaryText": "Layer appearance, language, and behavior cues to profile fast, respecting biases while steering assessments.",
             "duration": "120",
             "difficulty": "Expert"
         },
@@ -101,6 +108,7 @@
                 "Mapping long-term behavioral trends to predict outcomes.",
                 "Integrating behavioral analysis with AI and data analytics for enhanced profiling."
             ],
+            "summaryText": "Spot recurring loops, map long arcs, and plug patterns into analytics so next moves become predictable.",
             "duration": "120",
             "difficulty": "Expert"
         },
@@ -113,6 +121,7 @@
                 "Using strategic questioning to expose inconsistencies.",
                 "Leveraging rapport-building to break down resistance and extract truth."
             ],
+            "summaryText": "In high stakes, watch pressure tells, question strategically, and use rapport to crack deception walls.",
             "duration": "120",
             "difficulty": "Expert"
         },
@@ -125,6 +134,7 @@
                 "Deploying counter-strategies to disrupt manipulation efforts.",
                 "Using behavioral influence ethically to guide outcomes in high-risk situations."
             ],
+            "summaryText": "Spot psywar tactics live, launch counter-influence, and guide outcomes ethically while denying manipulation.",
             "duration": "120",
             "difficulty": "Expert"
         }

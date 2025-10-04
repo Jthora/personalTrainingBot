@@ -17,6 +17,7 @@
                 "Tracking influence networks to reveal connections between PSN operatives.",
                 "Analyzing decision-making anomalies that indicate manipulation or corruption."
             ],
+            "summaryText": "Read the micro-behaviors that give them away, map every hidden alliance, and flag decision patterns that scream manipulation so their cover stories collapse.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -29,6 +30,7 @@
                 "Creating internal conflicts within their network to force disunity.",
                 "Amplifying public scrutiny and investigative interest to remove their authority."
             ],
+            "summaryText": "Hit their weak points with well-timed revelations, set their allies against them, and crank up public oversight until their authority evaporates.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -41,6 +43,7 @@
                 "Undermining PSN control by promoting decentralized decision-making models.",
                 "Implementing stealth infiltration techniques to take over key positions."
             ],
+            "summaryText": "Spot credible replacements, shift power toward collaborative decision models, and quietly position trusted allies into the seats PSNs once owned.",
             "duration": "75",
             "difficulty": "Expert"
         }

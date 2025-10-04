@@ -18,6 +18,7 @@
                 "Understand how crystal matrices and geometric structures focus energy flow, modeled as torus-field amplification: \\[ \\nabla \\times \\mathbf{E}_{\\psi} = \\mu_0 \\mathbf{J}_{\\psi} \\]",
                 "Experiment with wearable psionic tech such as orgone accumulators, radionics machines, and resonance amplifiers to augment sensory perception."
             ],
+            "summaryText": "Use resonant devices and field geometries to amplify and direct psionic output.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -30,6 +31,7 @@
                 "Explore prototype brain-computer interfaces (BCIs) designed to enhance cognition, extrasensory perception (ESP), and telepathic signaling.",
                 "Analyze ethical considerations of human-machine integration for psionic applications, focusing on privacy risks, unintended energy interference, and neural hacking concerns."
             ],
+            "summaryText": "Examine neural-link implants that boost psi ability while weighing entrainment effects and ethics.",
             "duration": 12,
             "difficulty": "Expert"
         },
@@ -42,6 +44,7 @@
                 "Explore how AI-assisted meditation and biofeedback enhance brainwave synchronization and psionic energy focusing, modeled as: \\[ S_{\\psi} = \\mathbf{E}_{\\psi} \\times \\mathbf{B}_{\\text{AI}} \\], where \\( \\mathbf{B}_{\\text{AI}} \\) is the AI-guided field reinforcement vector.",
                 "Develop protocols for merging psionic intent with AI-guided energy amplification, leveraging deep learning models for psionic state prediction and psi-induced resonance matching."
             ],
+            "summaryText": "Pair AI feedback with psi intent to synchronize fields and predict energetic states.",
             "duration": 14,
             "difficulty": "Expert"
         },
@@ -54,6 +57,7 @@
                 "Study neuromorphic hardware such as quantum-enhanced BCIs (brain-computer interfaces) that interface with psionic waves through electro-biomagnetic coupling.",
                 "Analyze how psi networks can be constructed using decentralized consciousness-linked AI agents, leveraging quantum entanglement for non-local psi communications."
             ],
+            "summaryText": "Integrate neuromorphic hardware and entangled agents to maintain synchronized psi networks.",
             "duration": 16,
             "difficulty": "Expert"
         },
@@ -66,6 +70,7 @@
                 "Define holographic resonance imaging (HRI) using psi-activated sensors to detect consciousness fluctuations: \\[ I_{\\psi} = \\sum A_i e^{i \\theta_i} \\], where \\( \\theta_i \\) is the phase shift per psi interaction event.",
                 "Develop real-time applications for psi-enhanced imaging systems, allowing users to detect energy signatures and altered states of consciousness."
             ],
+            "summaryText": "Apply holographic sensing to visualize consciousness patterns and energetic signatures.",
             "duration": 18,
             "difficulty": "Expert"
         },
@@ -78,6 +83,7 @@
                 "Analyze experimental setups for quantum-psi entanglement, testing real-time consciousness-linked quantum phenomena.",
                 "Develop techniques for psi-based quantum communication, enabling instantaneous transmission of psionic data across non-local networks."
             ],
+            "summaryText": "Investigate quantum coherence schemes to entangle psi fields for nonlocal communication.",
             "duration": 20,
             "difficulty": "Expert"
         }

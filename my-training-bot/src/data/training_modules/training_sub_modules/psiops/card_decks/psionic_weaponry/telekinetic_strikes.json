@@ -12,6 +12,7 @@
             "title": "Generating a Telekinetic Strike",
             "description": "Techniques to direct psionic force in a concentrated impact.",
             "bulletpoints": "Force Channeling, Shockwave Techniques, Target Focus",
+            "summaryText": "Compress intent into a single vector and release it as a psionic punch that hits without touch.",
             "duration": "45",
             "difficulty": "Intermediate"
         },
@@ -20,6 +21,7 @@
             "title": "Advanced Telekinetic Combat",
             "description": "Refining strikes for increased force and strategic application.",
             "bulletpoints": "Multi-Strike Projection, Energy Wave Expansion, Target Disruption",
+            "summaryText": "Chain successive force waves and vary angles to overwhelm defenses at range.",
             "duration": "60",
             "difficulty": "Advanced"
         }

@@ -19,6 +19,7 @@
                 "Hamiltonian function: \\[ H = \\sum_{i} p_i \\dot{q}_i - L \\], defining phase space dynamics",
                 "Applications in classical mechanics, quantum mechanics, and field theory."
             ],
+            "summaryText": "Formulate dynamics with Lagrangians and Hamiltonians, applying Euler-Lagrange and phase-space tools across physics.",
             "duration": 10,
             "difficulty": "Expert"
         },
@@ -32,6 +33,7 @@
                 "Quantum wavefunctions: Schrödinger equation: \\[ i\\hbar \\frac{\\partial \\psi}{\\partial t} = \\hat{H} \\psi \\]",
                 "Relativistic wave equation: Klein-Gordon equation: \\[ \\left( \\frac{\\partial^2}{\\partial t^2} - c^2 \\nabla^2 + m^2 c^4 \\right) \\psi = 0 \\]"
             ],
+            "summaryText": "Deploy classical, electromagnetic, and quantum wave equations to model how fields propagate and interact.",
             "duration": 12,
             "difficulty": "Advanced"
         },
@@ -45,6 +47,7 @@
                 "Lorenz system: \\[ \\dot{x} = \\sigma(y-x), \\quad \\dot{y} = x(\\rho - z) - y, \\quad \\dot{z} = xy - \\beta z \\], producing strange attractors.",
                 "Applications to fluid dynamics, astrophysics, and climate models."
             ],
+            "summaryText": "Study Lyapunov growth, logistic maps, and Lorenz attractors to understand chaotic physical systems.",
             "duration": 9,
             "difficulty": "Expert"
         },
@@ -58,6 +61,7 @@
                 "Lorentz transformation: \\[ x' = \\gamma (x - vt), \\quad t' = \\gamma \\left( t - \\frac{vx}{c^2} \\right) \\] where \\( \\gamma = \\frac{1}{\\sqrt{1 - v^2/c^2}} \\)",
                 "Time dilation: \\[ \\Delta t' = \\frac{\\Delta t}{\\sqrt{1 - v^2/c^2}} \\]"
             ],
+            "summaryText": "Apply Einstein field equations, metrics, and Lorentz transforms to quantify curvature and relativistic effects.",
             "duration": 11,
             "difficulty": "Expert"
         },
@@ -71,6 +75,7 @@
                 "Thermodynamic identities: \\[ dU = TdS - PdV \\], \\[ dF = -SdT - PdV \\]",
                 "Maxwell's relations in thermodynamics: \\[ \\left( \\frac{\\partial S}{\\partial V} \\right)_T = \\left( \\frac{\\partial P}{\\partial T} \\right)_V \\]"
             ],
+            "summaryText": "Use entropy, partition functions, and thermodynamic identities to derive ensemble-level predictions.",
             "duration": 9,
             "difficulty": "Advanced"
         },
@@ -84,6 +89,7 @@
                 "Path integral formulation: \\[ Z = \\int \\mathcal{D}\\phi \\, e^{i S/\\hbar} \\], where S is the action.",
                 "Feynman diagrams describe quantum interactions using propagators and vertices."
             ],
+            "summaryText": "Frame quantum fields via Dirac equations, gauge symmetry, path integrals, and Feynman diagrams.",
             "duration": 13,
             "difficulty": "Expert"
         },
@@ -97,6 +103,7 @@
                 "Euler's equation for inviscid flow: \\[ \\frac{D\\mathbf{v}}{Dt} = -\\frac{1}{\\rho} \\nabla P \\]",
                 "Bernoulli's theorem: \\[ P + \\frac{1}{2} \\rho v^2 + \\rho gh = \\text{constant} \\]"
             ],
+            "summaryText": "Model fluids with continuity, Navier-Stokes, Euler, and Bernoulli relations to capture flow behavior.",
             "duration": 10,
             "difficulty": "Advanced"
         }

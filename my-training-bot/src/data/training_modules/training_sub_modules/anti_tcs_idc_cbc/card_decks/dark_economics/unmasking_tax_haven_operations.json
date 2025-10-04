@@ -17,6 +17,7 @@
                 "Identifying regulatory loopholes that allow asset shielding.",
                 "Mapping the relationship between elite banking and offshore entities."
             ],
+            "summaryText": "Study secrecy jurisdictions, expose shielding loopholes, and map elite ties to offshore hubs.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Understanding the interplay between front companies and illicit finance.",
                 "Analyzing case studies of corporate shell games."
             ],
+            "summaryText": "Trace beneficial ownership webs, link proxy fronts to illicit finance, and mine shell-game precedents.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Utilizing OSINT tools to track financial anomalies.",
                 "Coordinating investigative strategies to disrupt illicit financial networks."
             ],
+            "summaryText": "Leverage global leaks, apply OSINT analytics, and coordinate probes to disrupt haven networks.",
             "duration": "90",
             "difficulty": "Expert"
         }

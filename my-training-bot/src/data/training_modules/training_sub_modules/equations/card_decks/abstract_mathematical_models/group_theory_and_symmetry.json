@@ -16,6 +16,7 @@
                 "A group is abelian if \\( a \\cdot b = b \\cdot a \\) for all \\( a, b \\in G \\), otherwise it is non-abelian",
                 "Examples include \\( (\\mathbb{Z}, +) \\), the symmetric group \\( S_n \\), and the general linear group \\( GL(n, \\mathbb{R}) \\)"
             ],
+            "summaryText": "Check closure, associativity, identity, and inverses to classify groups and spot abelian behavior.",
             "duration": 8,
             "difficulty": "Intermediate"
         },
@@ -28,6 +29,7 @@
                 "The order of an element \\( g \\) in \\( G \\) is the smallest positive integer \\( k \\) such that \\( g^k = e \\)",
                 "Examples include \\( \\mathbb{Z}_n = \\{ 0, 1, \\dots, n-1 \\} \\) under addition modulo \\( n \\)"
             ],
+            "summaryText": "Follow powers of a generator to describe cyclic groups, element orders, and modules like \\mathbb{Z}_n.",
             "duration": 7,
             "difficulty": "Intermediate"
         },
@@ -40,6 +42,7 @@
                 "Every permutation can be written as a product of disjoint cycles",
                 "The alternating group \\( A_n \\) consists of all even permutations, forming a normal subgroup of \\( S_n \\)"
             ],
+            "summaryText": "Factor permutations into cycles within \\mathrm{S}_n and use \\mathrm{A}_n to reason about even symmetries.",
             "duration": 8,
             "difficulty": "Advanced"
         },
@@ -52,6 +55,7 @@
                 "Elements satisfy \\( r^n = e \\) and \\( s^2 = e \\) with the relation \\( s r s = r^{-1} \\)",
                 "Used in chemistry, crystallography, and robotics for symmetry analysis"
             ],
+            "summaryText": "Model polygon symmetries with dihedral relations, mixing rotations and reflections across disciplines.",
             "duration": 9,
             "difficulty": "Advanced"
         },
@@ -64,6 +68,7 @@
                 "Examples include the special orthogonal group \\( SO(n) \\) and the unitary group \\( U(n) \\)",
                 "Lie groups describe fundamental symmetries in quantum mechanics and general relativity"
             ],
+            "summaryText": "Treat Lie groups as smooth manifolds whose operations encode continuous symmetries in physics.",
             "duration": 10,
             "difficulty": "Expert"
         },
@@ -76,6 +81,7 @@
                 "The quotient group \\( G/N \\) consists of left cosets of \\( N \\), forming a new group",
                 "Examples include \\( \\mathbb{Z}/n\\mathbb{Z} \\), fundamental in modular arithmetic and homomorphisms"
             ],
+            "summaryText": "Identify normal subgroups to build quotient groups and dissect structure via cosets.",
             "duration": 9,
             "difficulty": "Advanced"
         },
@@ -88,6 +94,7 @@
                 "An isomorphism is a bijective homomorphism, meaning \\( G \\cong H \\) if there exists such a mapping",
                 "The kernel \\( \\ker(\\phi) \\) and image \\( \\text{Im}(\\phi) \\) provide insight into group structure"
             ],
+            "summaryText": "Use homomorphisms to compare groups, reading structure from kernels, images, and isomorphisms.",
             "duration": 8,
             "difficulty": "Advanced"
         },
@@ -100,6 +107,7 @@
                 "The character of a representation is the trace function \\( \\chi(g) = \\text{tr}(\\rho(g)) \\)",
                 "Applications include quantum mechanics, crystallography, and coding theory"
             ],
+            "summaryText": "Translate group elements into matrices, study characters, and apply representations to physical symmetries.",
             "duration": 10,
             "difficulty": "Expert"
         },
@@ -112,6 +120,7 @@
                 "Finite fields \\( GF(p^n) \\) form the basis of elliptic curve cryptography",
                 "RSA encryption and Diffie-Hellman key exchange rely on cyclic groups of prime order"
             ],
+            "summaryText": "Anchor modern cryptography in finite groups and fields that power RSA and elliptic curves.",
             "duration": 9,
             "difficulty": "Advanced"
         },
@@ -124,6 +133,7 @@
                 "A \\( p \\)-subgroup of \\( G \\) is a maximal subgroup whose order is a power of prime \\( p \\)",
                 "Applications include classification of simple groups and combinatorial symmetry problems"
             ],
+            "summaryText": "Leverage Sylow theorems to guarantee, count, and classify prime-power subgroups in finite groups.",
             "duration": 10,
             "difficulty": "Expert"
         }

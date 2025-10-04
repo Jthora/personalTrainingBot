@@ -13,6 +13,7 @@
             "title": "Understanding Reentrancy Attacks",
             "description": "Exploring the most notorious vulnerability in smart contracts and how to prevent it.",
             "bulletpoints": "Reentrancy bug, withdrawal patterns, checks-effects-interactions pattern",
+            "summaryText": "Describe the reentrancy exploit sequence, illustrate unsafe withdrawal logic, and restate the checks-effects-interactions safeguard.",
             "duration": "50",
             "difficulty": "Advanced"
         },
@@ -21,6 +22,7 @@
             "title": "Access Control & Role Management",
             "description": "Ensuring only authorized entities can execute sensitive contract functions.",
             "bulletpoints": "Ownable contracts, multi-signature wallets, role-based access control",
+            "summaryText": "Map how Ownable patterns, multisig approvals, and role-based checks gate privileged contract operations.",
             "duration": "45",
             "difficulty": "Intermediate"
         },
@@ -29,6 +31,7 @@
             "title": "Best Practices for Secure Smart Contracts",
             "description": "Writing safe and efficient Solidity code to prevent security exploits.",
             "bulletpoints": "Static analysis tools, security patterns, gas-efficient security measures",
+            "summaryText": "Highlight key auditing tools, repeat reusable security patterns, and balance safety tweaks with gas-aware tradeoffs.",
             "duration": "50",
             "difficulty": "Advanced"
         }

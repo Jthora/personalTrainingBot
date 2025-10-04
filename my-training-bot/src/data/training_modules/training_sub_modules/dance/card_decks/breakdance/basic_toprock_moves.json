@@ -13,6 +13,7 @@
                 "Keep arms relaxed and engaged",
                 "Move to the beat to create flow"
             ],
+            "summaryText": "Lock in groove with steady side steps and relaxed arms riding the beat.",
             "duration": 5,
             "difficulty": "Beginner"
         },
@@ -25,6 +26,7 @@
                 "Use your arms to guide the motion",
                 "Stay light on your feet for quick transitions"
             ],
+            "summaryText": "Cross through the beat with nimble foot switches anchored by active arms.",
             "duration": 6,
             "difficulty": "Intermediate"
         }

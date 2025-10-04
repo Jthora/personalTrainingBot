@@ -19,6 +19,7 @@
                 "Factor sum and difference of cubes: \\[ a^3 - b^3 = (a - b)(a^2 + ab + b^2) \\], \\[ a^3 + b^3 = (a + b)(a^2 - ab + b^2) \\]",
                 "Use grouping methods for higher-degree polynomials, such as factoring four-term polynomials."
             ],
+            "summaryText": "Apply GCF, special products, and grouping patterns to break polynomials into simpler factors.",
             "duration": 8,
             "difficulty": "Intermediate"
         },
@@ -33,6 +34,7 @@
                 "Use the remainder theorem: If \\( f(c) = 0 \\), then \\( x - c \\) is a factor of \\( f(x) \\]",
                 "Apply the factor theorem to identify divisors: If \\( f(x) \\) has a factor \\( (x - c) \\), then \\( f(c) = 0 \\]"
             ],
+            "summaryText": "Use long and synthetic division with remainder and factor theorems to spot polynomial roots fast.",
             "duration": 9,
             "difficulty": "Advanced"
         },
@@ -49,6 +51,7 @@
                 "  - If \\( n \\) is odd and \\( a_n > 0 \\), the function rises to the right and falls to the left.",
                 "  - If \\( n \\) is odd and \\( a_n < 0 \\), the function falls to the right and rises to the left."
             ],
+            "summaryText": "Combine factoring, rational root tests, and end behavior to sketch polynomial graphs and zeros.",
             "duration": 10,
             "difficulty": "Advanced"
         },
@@ -61,6 +64,7 @@
                 "Recognize perfect square trinomials: \\[ a^2 + 2ab + b^2 = (a + b)^2 \\]",
                 "Solve quadratic equations using factoring: \\[ x^2 - 5x + 6 = 0 \\Rightarrow (x - 2)(x - 3) = 0 \\Rightarrow x = 2, 3 \\]"
             ],
+            "summaryText": "Break quadratics into binomial factors to solve equations and spot perfect-square patterns.",
             "duration": 7,
             "difficulty": "Intermediate"
         },
@@ -73,6 +77,7 @@
                 "Example: \\( x^2 + 1 \\) is irreducible over \\( \\mathbb{R} \\) but factorable over \\( \\mathbb{C} \\): \\[ x^2 + 1 = (x - i)(x + i) \\]",
                 "Identify prime polynomials which cannot be factored further in a given field."
             ],
+            "summaryText": "Recognize when polynomials stay prime within real or complex fields and why that matters.",
             "duration": 8,
             "difficulty": "Advanced"
         },
@@ -87,6 +92,7 @@
                 "Recognize the difference of squares: \\[ a^2 - b^2 = (a - b)(a + b) \\]",
                 "Recognize the trinomial square patterns: \\[ a^2 + 2ab + b^2 = (a + b)^2 \\]"
             ],
+            "summaryText": "Spot classic polynomial identities to accelerate factoring and simplification.",
             "duration": 7,
             "difficulty": "Intermediate"
         },
@@ -101,6 +107,7 @@
                 "  \\[ (x + 2)^3 = x^3 + 3x^2(2) + 3x(4) + 8 = x^3 + 6x^2 + 12x + 8 \\]",
                 "Each coefficient is given by the binomial coefficient: \\[ \\binom{n}{k} = \\frac{n!}{k!(n-k)!} \\]"
             ],
+            "summaryText": "Expand powers with binomial coefficients to compute polynomial terms efficiently.",
             "duration": 9,
             "difficulty": "Advanced"
         }

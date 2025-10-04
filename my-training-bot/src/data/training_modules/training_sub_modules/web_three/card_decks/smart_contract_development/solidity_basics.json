@@ -13,6 +13,7 @@
             "title": "Introduction to Solidity",
             "description": "Understanding Solidity's role in blockchain development and its fundamental syntax.",
             "bulletpoints": "Ethereum Virtual Machine (EVM), Solidity syntax, contract deployment",
+            "summaryText": "Introduce how Solidity targets the EVM, review core syntax conventions, and outline the deployment flow for a basic contract.",
             "duration": "40",
             "difficulty": "Beginner"
         },
@@ -21,6 +22,7 @@
             "title": "Solidity Data Types & Variables",
             "description": "Exploring Solidity's primitive and complex data types.",
             "bulletpoints": "uint, int, string, bytes, arrays, mappings, structs",
+            "summaryText": "List key primitive and reference types, explain when to use arrays versus mappings, and show how structs bundle related fields.",
             "duration": "45",
             "difficulty": "Beginner"
         },
@@ -29,6 +31,7 @@
             "title": "Functions, Modifiers, and Events",
             "description": "Learning how to define functions, use modifiers, and trigger events.",
             "bulletpoints": "Function visibility, function modifiers, event logging",
+            "summaryText": "Clarify visibility keywords, demonstrate modifiers enforcing rules, and connect event emissions to off-chain listeners.",
             "duration": "50",
             "difficulty": "Intermediate"
         }

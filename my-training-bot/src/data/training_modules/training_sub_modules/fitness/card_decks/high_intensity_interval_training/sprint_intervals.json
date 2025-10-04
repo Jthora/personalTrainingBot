@@ -16,6 +16,7 @@
                 "Recover with slow jogging or walking for 60 seconds",
                 "Maintain a tall posture and strong arm drive"
             ],
+            "summaryText": "Blast 30-second sprints then jog it off to sharpen anaerobic punch.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Walk or jog back down as recovery",
                 "Focus on short, powerful strides"
             ],
+            "summaryText": "Charge up hills with compact strides, reset on the descent, and repeat.",
             "duration": 6,
             "difficulty": "Advanced"
         }

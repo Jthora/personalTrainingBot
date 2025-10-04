@@ -12,6 +12,7 @@
             "title": "Developing Mission Blueprints",
             "description": "Creating a structured plan for executing covert and high-risk operations.",
             "bulletpoints": "Objective assessment, risk mitigation, contingency planning",
+            "summaryText": "Draft mission blueprints that clarify objectives, map risks, and bake in layered contingencies before teams step off.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -20,6 +21,7 @@
             "title": "Team Coordination and Execution",
             "description": "Executing missions with precise team-based coordination and dynamic adaptability.",
             "bulletpoints": "Command hierarchy, rapid decision-making, mission flow adjustments",
+            "summaryText": "Rehearse command hierarchies and rapid comms so operators adapt on the fly while keeping mission flow tight.",
             "duration": "75",
             "difficulty": "Advanced"
         }

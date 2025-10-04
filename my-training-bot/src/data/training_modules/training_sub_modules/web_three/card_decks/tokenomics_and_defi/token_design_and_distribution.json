@@ -13,6 +13,7 @@
             "title": "Token Standards & Types",
             "description": "Understanding different token standards and their applications.",
             "bulletpoints": "ERC-20, ERC-721, ERC-1155, fungible vs. non-fungible tokens",
+            "summaryText": "Compare ERC-20, ERC-721, and ERC-1155 capabilities while clarifying when fungible versus non-fungible tokens best serve a product vision.",
             "duration": "40",
             "difficulty": "Beginner"
         },
@@ -21,6 +22,7 @@
             "title": "Token Utility & Governance",
             "description": "Exploring how tokens function within ecosystems and enable governance.",
             "bulletpoints": "Utility tokens, governance voting, staking incentives, security tokens",
+            "summaryText": "Explain how utility tokens power participation, how staking and voting reinforce governance, and when regulatory constraints push designs toward security tokens.",
             "duration": "50",
             "difficulty": "Intermediate"
         },
@@ -29,6 +31,7 @@
             "title": "Token Distribution Models",
             "description": "Analyzing methods for fair and strategic token distribution.",
             "bulletpoints": "Airdrops, ICOs, IDOs, liquidity mining, vesting schedules",
+            "summaryText": "Outline pros and cons of airdrops, sales, and liquidity mining while stressing vesting schedules that guard against dumping.",
             "duration": "45",
             "difficulty": "Advanced"
         }

@@ -17,6 +17,7 @@
                 "Deciphering tax-exempt status manipulation.",
                 "Tracking donations and financial flows between entities."
             ],
+            "summaryText": "Trace offshore shells, tax abuses, and cross-entity flows to reveal cult funding.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Pressuring financial institutions to investigate suspicious transactions.",
                 "Using intelligence leaks to create public scrutiny on funding sources."
             ],
+            "summaryText": "Expose fraudulent fronts, compel institutional action, and weaponize leaks to choke revenue.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Revealing the corporate interests that benefit from cult activity.",
                 "Analyzing historical cases of state-sponsored cult operations."
             ],
+            "summaryText": "Unmask intelligence backing, corporate beneficiaries, and state-sponsored cult precedents.",
             "duration": "90",
             "difficulty": "Expert"
         }

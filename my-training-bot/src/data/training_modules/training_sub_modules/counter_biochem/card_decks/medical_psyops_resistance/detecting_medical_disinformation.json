@@ -14,7 +14,8 @@
             "description": "Analyzing corporate-controlled media tactics used to promote misleading medical information.",
             "bulletpoints": "Scripted messaging, narrative reinforcement, suppression of alternative medicine",
             "duration": "12",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Audit headlines, script leaks, and missing voices so coordinated false narratives stand out."
         },
         {
             "id": "med_disinfo_2",
@@ -22,7 +23,8 @@
             "description": "Unmasking the role of pharmaceutical conglomerates in controlling medical discourse.",
             "bulletpoints": "Industry-funded studies, ghostwritten medical journals, suppression of generic treatments",
             "duration": "14",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Trace funding trails, ghostwriting fingerprints, and generic suppression to expose pharma-led spin."
         },
         {
             "id": "med_disinfo_3",
@@ -30,7 +32,8 @@
             "description": "Examining how psychological warfare is used to manipulate medical choices on a global scale.",
             "bulletpoints": "Fear-based compliance, problem-reaction-solution cycles, false scarcity tactics",
             "duration": "12",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Map fear triggers, staged crises, and scarcity plays so you can dismantle social engineering in medicine."
         }
     ]
 }

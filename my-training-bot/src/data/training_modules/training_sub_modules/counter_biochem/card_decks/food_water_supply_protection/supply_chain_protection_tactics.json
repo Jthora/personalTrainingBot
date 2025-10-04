@@ -14,7 +14,8 @@
             "description": "Detecting disruptions and intentional contamination in food and water distribution systems.",
             "bulletpoints": "Inspection checkpoints, tracking supply anomalies, packaging integrity checks",
             "duration": "12",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Instrument every node with inspections and anomaly tracking so tampering gets caught before cargo moves."
         },
         {
             "id": "supply_2",
@@ -22,7 +23,8 @@
             "description": "Developing safeguards to prevent malicious alterations in critical supply networks.",
             "bulletpoints": "Supply chain fortification, storage security, protective barriers",
             "duration": "10",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Harden warehouses, lock storage, and build barriers so saboteurs never reach core reserves."
         },
         {
             "id": "supply_3",
@@ -30,7 +32,8 @@
             "description": "Using both visible and hidden security measures to protect against large-scale contamination attempts.",
             "bulletpoints": "Surveillance methods, tamper-proof seals, strategic stockpiling",
             "duration": "12",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Blend obvious security with covert surveillance and tamper seals to deter attacks and catch the ones that try."
         }
     ]
 }

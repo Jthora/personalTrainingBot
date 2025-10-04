@@ -17,7 +17,8 @@
                 "Coordinate investigations across multiple jurisdictions"
             ],
             "duration": 6,
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Enforce cross-border cases by interpreting cornerstone treaties, leveraging UN mechanisms, and aligning multinational investigators under shared mandates."
         },
         {
             "id": "extradition_laws",
@@ -29,7 +30,8 @@
                 "Identify cases where diplomatic immunity applies"
             ],
             "duration": 7,
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Execute airtight extraditions by mastering treaty frameworks, countering defense obstacles, and flagging immunity claims before they derail custody transfers."
         }
     ]
 }

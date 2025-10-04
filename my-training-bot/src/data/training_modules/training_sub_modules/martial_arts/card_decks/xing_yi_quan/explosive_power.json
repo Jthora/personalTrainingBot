@@ -13,6 +13,7 @@
                 "Generate power from the ground up",
                 "Snap movements quickly to create an explosive effect"
             ],
+            "summaryText": "Soften first, then drive fa jin from the floor and crack it out in a single beat.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -25,6 +26,7 @@
                 "Release power through a snapping motion",
                 "Maintain fluidity between transitions"
             ],
+            "summaryText": "Spiral the torso to store energy, then uncoil in one smooth snap without stiffness.",
             "duration": 6,
             "difficulty": "Advanced"
         }

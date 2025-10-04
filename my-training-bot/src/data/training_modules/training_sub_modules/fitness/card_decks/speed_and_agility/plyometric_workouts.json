@@ -16,6 +16,7 @@
                 "Engage core and arms to propel upward",
                 "Land softly with knees slightly bent to absorb impact"
             ],
+            "summaryText": "Load and explode onto the box, swinging arms and landing softly to build springy leg power.",
             "duration": 6,
             "difficulty": "Intermediate"
         },
@@ -28,6 +29,7 @@
                 "Minimize ground contact time for better power transfer",
                 "Engage calves, quads, and glutes for maximum lift"
             ],
+            "summaryText": "Drop, absorb, then rebound instantly skyward to sharpen reactive, explosive takeoff strength.",
             "duration": 7,
             "difficulty": "Advanced"
         }

@@ -13,7 +13,8 @@
             "description": "Using the baton to block and deflect incoming attacks.",
             "bulletpoints": "Angle-based blocking, impact absorption, redirection tactics",
             "duration": "10",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Snap into a defensive guard, angle the baton to catch strikes, shed energy through your forearms, and roll into counter lanes while keeping range discipline."
         },
         {
             "id": "baton_2",
@@ -21,7 +22,8 @@
             "description": "Using the baton for joint locks and control holds.",
             "bulletpoints": "Targeting pressure points, leverage-based control, submission techniques",
             "duration": "15",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Bite onto elbows or wrists with the baton, pivot leverage through nearby joints, and funnel opponents into escorts or takedowns while compressing nerve clusters to break resistance."
         }
     ]
 }

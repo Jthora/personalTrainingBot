@@ -16,6 +16,7 @@
                 "Thought armor techniques form a protective boundary against intrusion.",
                 "Reinforcement sequences solidify the barrier against energetic penetration."
             ],
+            "summaryText": "Visualize durable thought armor, layer the shield, and reinforce it until outside influence can’t pierce through.",
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -28,6 +29,7 @@
                 "Deprogramming mental loops eliminates recurring invasive thoughts.",
                 "Internal cognitive scrubbing resets the mind to a neutral, protected state."
             ],
+            "summaryText": "Spot the foreign thoughts, scrub out implanted loops, and reset your mind back to neutral control.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -40,6 +42,7 @@
                 "Mental frequency control stabilizes inner vibrations against external interference.",
                 "Defensive energy projection outwardly repels psychic and emotional invasions."
             ],
+            "summaryText": "Amplify your aura, lock in a steady frequency, and project defensive resonance so intrusions bounce off.",
             "duration": "90",
             "difficulty": "Advanced"
         },
@@ -52,6 +55,7 @@
                 "Energetic feedback loops return projected negativity to its sender.",
                 "Disengagement protocols ensure the shield remains intact under stress."
             ],
+            "summaryText": "Raise a mirror shield, let negativity ricochet back, and stay disengaged so the reflection never cracks.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -64,6 +68,7 @@
                 "Energetic mending repairs breaches in the psychic field.",
                 "Conscious emotional containment prevents accidental leaks of personal energy."
             ],
+            "summaryText": "Scan for leaks, mend every breach, and contain your emotions to keep the field sealed tight.",
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -76,6 +81,7 @@
                 "Mental fortress visualization creates layers of psychic defense.",
                 "Neutral emotional frequency prevents resonance-based manipulation."
             ],
+            "summaryText": "Silence the inner chatter, build a layered fortress, and hold neutral emotion so nothing can read you.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -88,6 +94,7 @@
                 "Mental cloaking techniques prevent psychic tracking and remote viewing.",
                 "Intentional identity scrambling confuses energetic signatures left behind."
             ],
+            "summaryText": "Mask your resonance, cloak your mind, and scramble your energetic signature to slip off psychic radar.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -100,6 +107,7 @@
                 "Vibrational transmutation transforms harmful forces into beneficial energy.",
                 "Disruption fields scatter and dissolve directed psychic aggression."
             ],
+            "summaryText": "Absorb the hit, transmute the force, and scatter the rest so hostile energy never lands.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -112,6 +120,7 @@
                 "Pre-set energetic protocols ensure immediate and consistent protection.",
                 "Adaptive barrier reinforcement evolves to counteract new threats."
             ],
+            "summaryText": "Program auto-defenses, preload protective protocols, and keep the barrier evolving with every new threat.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -124,6 +133,7 @@
                 "Astral boundary setting establishes secure dream space control.",
                 "Lucid intervention training enables conscious defense within dream states."
             ],
+            "summaryText": "Shield your dreamscape, set firm astral boundaries, and train lucid defense so sleep stays secure.",
             "duration": "75",
             "difficulty": "Advanced"
         }

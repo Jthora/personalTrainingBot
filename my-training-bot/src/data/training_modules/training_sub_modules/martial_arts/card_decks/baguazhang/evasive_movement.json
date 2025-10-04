@@ -13,6 +13,7 @@
                 "Use the motion to transition into a counterattack",
                 "Keep the movement smooth and fluid"
             ],
+            "summaryText": "Roll the shoulder away to slip the strike and coil for an immediate counter.",
             "duration": 5,
             "difficulty": "Intermediate"
         },
@@ -25,6 +26,7 @@
                 "Use body rotation to follow up with a strike",
                 "Stay light on the feet for quick re-engagement"
             ],
+            "summaryText": "Blend a lateral step with a torso sway to stay in range for rapid counters.",
             "duration": 6,
             "difficulty": "Advanced"
         }

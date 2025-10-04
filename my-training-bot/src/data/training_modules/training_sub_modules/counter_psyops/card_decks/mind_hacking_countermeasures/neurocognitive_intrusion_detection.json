@@ -18,7 +18,8 @@
                 "Log instances of intrusive thoughts, noting their triggers, frequency, and emotional impact."
             ],
             "duration": "60",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Flag abrupt foreign thoughts, baseline-check shifts, and log triggers with emotional impact."
         },
         {
             "id": "neurocog_intrusion_2",
@@ -30,7 +31,8 @@
                 "Use self-interrogation techniques to determine whether delays are externally induced."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Benchmark reaction latency, note unexplained hesitation, and probe delays for external causes."
         },
         {
             "id": "neurocog_intrusion_3",
@@ -42,7 +44,8 @@
                 "Engage in deep self-reflection to determine whether a thought aligns with your core identity."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Audit thought provenance, overwrite intrusions with affirmations, and verify alignment with core self."
         },
         {
             "id": "neurocog_intrusion_4",
@@ -54,7 +57,8 @@
                 "Use external tools (e.g., recording conversations) to verify inconsistencies in memory."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Cross-verify senses, reconcile emotion with somatic cues, and validate memories via external records."
         },
         {
             "id": "neurocog_intrusion_5",
@@ -66,7 +70,8 @@
                 "Use subconscious keyword tracking to pinpoint subliminal implants in speech or text."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Scan for recurring messaging, dissect slowed media for embeds, and track subliminal keywords."
         },
         {
             "id": "neurocog_intrusion_6",
@@ -78,7 +83,8 @@
                 "Develop mental routines that counter attempts at externally induced loops."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Reinforce sovereignty mantras, steer internal dialogue, and rehearse counter-loops."
         },
         {
             "id": "neurocog_intrusion_7",
@@ -90,7 +96,8 @@
                 "Strengthen personal convictions through deliberate reinforcement practices."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Structure beliefs securely, anchor concepts to sensory proof, and reinforce convictions deliberately."
         },
         {
             "id": "neurocog_intrusion_8",
@@ -102,7 +109,8 @@
                 "Use linguistic mirroring to reflect manipulation attempts back to the sender."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Deconstruct NLP attacks, respond with calm logic, and mirror tactics back to their source."
         },
         {
             "id": "neurocog_intrusion_9",
@@ -114,7 +122,8 @@
                 "Develop rapid filtering techniques to identify and discard unnecessary data."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Throttle inputs, schedule clarity resets, and filter noise before it overwhelms focus."
         },
         {
             "id": "neurocog_intrusion_10",
@@ -126,7 +135,8 @@
                 "Reinforce identity resilience by establishing core self-affirmation strategies."
             ],
             "duration": "120",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Forge disciplined focus, detach from emotional bait, and fortify identity with core affirmations."
         }
     ]
 }

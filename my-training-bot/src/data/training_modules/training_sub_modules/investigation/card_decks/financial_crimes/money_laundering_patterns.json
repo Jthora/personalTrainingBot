@@ -16,6 +16,7 @@
                 "Identify multiple accounts linked to the same entity",
                 "Analyze transaction frequency and timing for laundering indicators"
             ],
+            "summaryText": "Spot structuring through sub-threshold deposits and coordinated account activity.",
             "duration": 6,
             "difficulty": "Advanced"
         },
@@ -28,6 +29,7 @@
                 "Analyze blockchain transactions for laundering patterns",
                 "Use forensic tools to trace funds across multiple exchanges"
             ],
+            "summaryText": "Follow crypto wallet flows across chains to expose laundering routes.",
             "duration": 7,
             "difficulty": "Advanced"
         }

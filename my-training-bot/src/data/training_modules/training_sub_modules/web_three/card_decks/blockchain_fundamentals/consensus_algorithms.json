@@ -13,6 +13,7 @@
             "title": "Proof of Work (PoW)",
             "description": "Understanding how mining secures blockchain networks.",
             "bulletpoints": "Hash puzzles, mining difficulty, energy consumption",
+            "summaryText": "Trace how miners race through hash puzzles, adjust difficulty, and burn energy to anchor a PoW chain's security.",
             "duration": "40",
             "difficulty": "Intermediate"
         },
@@ -21,6 +22,7 @@
             "title": "Proof of Stake (PoS)",
             "description": "Exploring how validators are chosen in PoS blockchains.",
             "bulletpoints": "Staking, validator selection, energy efficiency",
+            "summaryText": "Follow the staking flow from locked tokens to validator rotation so you see why PoS cuts energy use while keeping consensus.",
             "duration": "45",
             "difficulty": "Intermediate"
         },
@@ -29,6 +31,7 @@
             "title": "Alternative Consensus Mechanisms",
             "description": "Examining newer and hybrid consensus models.",
             "bulletpoints": "Delegated Proof of Stake (DPoS), Proof of Authority (PoA), Byzantine Fault Tolerance (BFT)",
+            "summaryText": "Compare DPoS, PoA, and BFT hybrids to learn when faster, committee-driven consensus beats classic mining.",
             "duration": "50",
             "difficulty": "Advanced"
         }

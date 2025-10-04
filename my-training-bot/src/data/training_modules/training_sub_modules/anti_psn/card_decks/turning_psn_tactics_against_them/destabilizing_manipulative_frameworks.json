@@ -17,6 +17,7 @@
                 "Asking simple but difficult questions exposes weak points in their ideology.",
                 "Using their own phrases in reversed contexts makes their followers question their logic."
             ],
+            "summaryText": "Slip contradictory logic into their talking points to create mental friction, ask basic but tough questions that expose cracks in their ideology, and flip their own phrases back at them to make followers doubt the logic.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -26,9 +27,10 @@
             "description": "Exposing contradictions within their own messaging to weaken their influence.",
             "bulletpoints": [
                 "Highlighting inconsistencies in their rules and behaviors forces credibility erosion.",
-                "Encouraging others to ‘clarify’ their statements forces them into self-contradiction.",
+                "Encouraging others to 'clarify' their statements forces them into self-contradiction.",
                 "Leaking partial but undeniable truths discredits their authority over time."
             ],
+            "summaryText": "Shine a light on mismatches between their rules and actions to erode credibility, ask others to 'clarify' what they said to trap them in self-contradiction, and leak undeniable partial truths that slowly discredit their authority.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Presenting undeniable proof in a way that forces them into defensive explanations.",
                 "Letting them escalate their tactics while remaining neutral ensures they self-destruct."
             ],
+            "summaryText": "Build subtle pressure over time to force them into reactive mistakes, present hard proof in ways that force defensive explanations, and stay neutral while they escalate so they self-destruct on their own.",
             "duration": "90",
             "difficulty": "Expert"
         }

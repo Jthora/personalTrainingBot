@@ -18,7 +18,8 @@
                 "Differentiating organic vs. artificial influence campaigns."
             ],
             "duration": "60",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Define influence webs, list psyops actors, and separate organic buzz from engineered pushes."
         },
         {
             "id": "influence_network_2",
@@ -30,7 +31,8 @@
                 "Mapping direct and indirect connections within influence networks."
             ],
             "duration": "90",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Profile opinion leaders, note gatekeepers, and chart how power flows through the network."
         },
         {
             "id": "influence_network_3",
@@ -42,7 +44,8 @@
                 "Using OSINT tools to trace the spread of narratives."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Trace narrative origins, log amplification paths, and use OSINT to follow signal spread."
         },
         {
             "id": "influence_network_4",
@@ -54,7 +57,8 @@
                 "Using behavioral analysis to detect scripted narratives."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Expose scripted dissent, audit funding trails, and flag behavior that betrays hidden agendas."
         },
         {
             "id": "influence_network_5",
@@ -66,7 +70,8 @@
                 "Distinguishing AI-generated vs. human-authored content."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Spot bot spikes, map coordinated clusters, and distinguish AI chatter from human voices."
         },
         {
             "id": "influence_network_6",
@@ -78,7 +83,8 @@
                 "Using ethical hacking and OSINT techniques to dismantle influence operations."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Launch counter-stories, unmask propagators, and wield ethical OSINT to break networks apart."
         },
         {
             "id": "influence_network_7",
@@ -90,7 +96,8 @@
                 "Understanding covert state-sponsored disinformation strategies."
             ],
             "duration": "75",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Decode corporate-state alliances, follow funding pipelines, and log covert propaganda tactics."
         },
         {
             "id": "influence_network_8",
@@ -102,7 +109,8 @@
                 "Identifying social engineering tactics in influence campaigns."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Identify emotional levers, analyze framing language, and catch social engineering in motion."
         },
         {
             "id": "influence_network_9",
@@ -114,7 +122,8 @@
                 "Employing visualization tools to track influence campaigns."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Combine search hacks, map social graphs, and visualize influence footprints across platforms."
         },
         {
             "id": "influence_network_10",
@@ -126,7 +135,8 @@
                 "Developing countermeasures for next-generation narrative warfare."
             ],
             "duration": "90",
-            "difficulty": "Expert"
+            "difficulty": "Expert",
+            "summaryText": "Project AI-enhanced psyops, anticipate new tactics, and design defenses for tomorrow’s influence wars."
         }
     ]
 }

@@ -14,7 +14,8 @@
             "description": "Strategies for shielding against hazardous chemical exposure using specialized materials.",
             "bulletpoints": "Activated carbon filters, chemical-resistant suits, barrier creams",
             "duration": "10",
-            "difficulty": "Intermediate"
+            "difficulty": "Intermediate",
+            "summaryText": "Layer carbon filtration, sealed suits, and barrier creams so corrosive agents never reach your skin or airway."
         },
         {
             "id": "chemical_2",
@@ -22,7 +23,8 @@
             "description": "Using counteragents and neutralizers to mitigate the effects of chemical exposure.",
             "bulletpoints": "Oxidizing agents, pH neutralization, decontamination foams",
             "duration": "12",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Deploy oxidizers, pH buffers, and decon foams in the right order so toxins break down before they harm personnel."
         },
         {
             "id": "chemical_3",
@@ -30,7 +32,8 @@
             "description": "Rapid response planning for chemical spills, gas leaks, and mass contamination events.",
             "bulletpoints": "Containment zone setup, gas dispersal tactics, emergency egress planning",
             "duration": "12",
-            "difficulty": "Advanced"
+            "difficulty": "Advanced",
+            "summaryText": "Stand up containment perimeters, vent or scrub the air, and execute rehearsed evac routes to keep hot zones from cascading."
         }
     ]
 }

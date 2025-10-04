@@ -17,6 +17,7 @@
                 "Understanding human psychology in cyber attacks.",
                 "Analyzing real-world social engineering case studies."
             ],
+            "summaryText": "Surveys phishing, pretexting, and baiting plays while tying them to psychological levers exposed in case studies.",
             "duration": "75",
             "difficulty": "Advanced"
         },
@@ -29,6 +30,7 @@
                 "Enhancing situational awareness and skepticism.",
                 "Implementing verification protocols for communication."
             ],
+            "summaryText": "Focuses on spotting biases, staying hyper-aware, and verifying channels to blunt manipulative outreach.",
             "duration": "90",
             "difficulty": "Expert"
         },
@@ -41,6 +43,7 @@
                 "Investigating cyber-crime syndicates leveraging social engineering.",
                 "Detecting AI-driven manipulation patterns in online spaces."
             ],
+            "summaryText": "Explains how to chart influence webs, trace syndicate operators, and surface AI-boosted manipulation signatures.",
             "duration": "90",
             "difficulty": "Expert"
         }

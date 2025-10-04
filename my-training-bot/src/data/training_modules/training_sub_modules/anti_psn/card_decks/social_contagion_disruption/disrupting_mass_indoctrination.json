@@ -1,46 +1,49 @@
 {
     "id": "disrupting_mass_indoctrination",
     "name": "Disrupting Mass Indoctrination",
-    "description": "Techniques to disrupt and prevent large-scale psychological manipulation tactics used by PSNs to control groups.",
+    "description": "Tactics to undermine and dismantle PSN-led mass manipulation efforts.",
     "focus": [
-        "Identifying Manipulative Narratives",
-        "Breaking the Hypnotic Effect of Groupthink",
-        "Strategic Disruption of Psychological Traps"
+        "Recognize emotional programming",
+        "Disrupt propaganda cycles",
+        "Encourage critical thinking"
     ],
     "cards": [
         {
             "id": "dmi_1",
             "title": "Pattern Recognition in Mass Indoctrination",
-            "description": "Detecting early warning signs of large-scale psychological manipulation.",
+            "description": "Identify repetitive emotional messaging to weaken PSN programming.",
             "bulletpoints": [
                 "PSNs use repetitive emotional messaging to reinforce control.",
                 "Recognizing language patterns, emotional baiting, and cognitive dissonance triggers is key.",
                 "Disrupting predictability weakens the indoctrination process."
             ],
+            "summaryText": "Catch the repeated emotional hooks they use to cement control, learn to spot linguistic patterns and dissonance triggers, and break the predictable rhythm to weaken indoctrination.",
             "duration": "75",
             "difficulty": "Advanced"
         },
         {
             "id": "dmi_2",
             "title": "Breaking the Emotional Anchor Effect",
-            "description": "Preventing psychological dependency on manipulated emotional states.",
+            "description": "Detach individuals from PSN-induced emotional control mechanisms.",
             "bulletpoints": [
-                "PSNs use emotional highs and lows to control followers’ perceptions.",
+                "PSNs use emotional highs and lows to control followers' perceptions.",
                 "Exposing emotional manipulation tactics allows individuals to detach.",
                 "Reintroducing logical analysis into conversations disrupts emotional anchors."
             ],
+            "summaryText": "See how they ride emotional roller coasters to steer perception, expose the manipulation so people can detach, and inject logic back into talks to break emotional anchors.",
             "duration": "90",
             "difficulty": "Expert"
         },
         {
             "id": "dmi_3",
             "title": "Neutralizing Mass Hysteria",
-            "description": "Techniques to stop the rapid spread of emotional contagion in groups.",
+            "description": "Counter panic-inducing PSN tactics through strategic calm and logic.",
             "bulletpoints": [
                 "Inducing a pause between emotional reactions and actions disrupts hysteria.",
                 "Interrupting false urgency reduces group susceptibility to PSN manipulation.",
                 "Redirecting focus to neutral, grounding topics can reset rational thinking."
             ],
+            "summaryText": "Insert pauses between feeling and action to stop hysteria, interrupt fake urgency to lower group susceptibility, and shift focus to grounding topics that reboot rational thought.",
             "duration": "90",
             "difficulty": "Expert"
         }

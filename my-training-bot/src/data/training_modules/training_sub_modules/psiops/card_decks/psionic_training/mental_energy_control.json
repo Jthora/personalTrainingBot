@@ -12,6 +12,7 @@
             "title": "Energy Accumulation Techniques",
             "description": "Methods for gathering and concentrating personal energy reserves.",
             "bulletpoints": "Energy Pooling, Qi Expansion, Focused Absorption",
+            "summaryText": "Build a reservoir by steadily drawing in ambient force and locking it within a calm focus point.",
             "duration": "60",
             "difficulty": "Intermediate"
         },
@@ -20,6 +21,7 @@
             "title": "Directed Energy Projection",
             "description": "Focusing and releasing energy through thought and intention.",
             "bulletpoints": "Energy Stream Projection, Thought-Form Directing, Intent-Focused Release",
+            "summaryText": "Shape the stored charge into a coherent stream and let intention steer its path outward.",
             "duration": "75",
             "difficulty": "Advanced"
         }

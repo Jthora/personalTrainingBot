@@ -1,0 +1,17 @@
+{
+    "id": "space_operations",
+    "name": "Space Operations",
+    "description": "AFDP 3-14 aligned mastery of orbital mechanics, payload employment, and SDA tasking for Delta crews.",
+    "difficulty": "Advanced",
+    "estimated_time": "10-14 weeks",
+    "focus": [
+        "Orbital Mechanics",
+        "Satellite Employment",
+        "Space Domain Awareness"
+    ],
+    "cardDecks": [
+        "orbital_mechanics",
+        "satellite_systems",
+        "space_domain_awareness"
+    ]
+}

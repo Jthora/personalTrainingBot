@@ -1,0 +1,15 @@
+{
+    "id": "orbital_tactics_command",
+    "name": "Orbital Tactics Command",
+    "description": "Mission-planning doctrine for multi-vector strikes, debris-field maneuvering, and synchronized drop-pod deployment across contested orbits.",
+    "difficulty": "Advanced",
+    "estimated_time": "10-14 weeks",
+    "focus": [
+        "Orbital Warfare",
+        "Battlefield Navigation",
+        "Command Architecture"
+    ],
+    "cardDecks": [
+        "orbital_strike_packages"
+    ]
+}

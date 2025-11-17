@@ -1,0 +1,168 @@
+{
+    "id": "intel_fusion_cell_ops",
+    "name": "Intel Fusion Cell Ops",
+    "description": "Battle rhythms, analytic standards, and dissemination drills for squadron and Delta fusion cells supporting JADC2.",
+    "focus": [
+        "Cross-INT Fusion",
+        "JADC2",
+        "Targeting Support"
+    ],
+    "cards": [
+        {
+            "id": "intel_fusion_cell_ops_01",
+            "title": "Fusion Battle Rhythm Design",
+            "description": "Lay out a 24-hour timeline that syncs collection, PED, targeting boards, and commander updates into a repeatable fusion cadence. Ref: AFDP 2-0.",
+            "bulletpoints": [
+                "List decision windows",
+                "Align ISR feeds + PED",
+                "Publish handoffs"
+            ],
+            "duration": 12,
+            "difficulty": "Advanced",
+            "summaryText": "A disciplined fusion battle rhythm keeps every intel node pointed at the same decision."
+        },
+        {
+            "id": "intel_fusion_cell_ops_02",
+            "title": "All-Source Worksheet Build",
+            "description": "Construct a standard all-source worksheet capturing SIGINT, GEOINT, OSINT, and cyber indicators tied to each threat object. Ref: AFI 14-133.",
+            "bulletpoints": [
+                "Define essential fields",
+                "Map INT ownership",
+                "Embed confidence scale"
+            ],
+            "duration": 10,
+            "difficulty": "Advanced",
+            "summaryText": "Worksheets are the fusion cell's single source of truth—build them right."
+        },
+        {
+            "id": "intel_fusion_cell_ops_03",
+            "title": "Data Conditioning Drill",
+            "description": "Rehearse extracting, cleaning, and normalizing sensor outputs (TLEs, RF hits, telemetry) so analytics scripts ingest without delay. Ref: JADC2 Data Reference Architecture.",
+            "bulletpoints": [
+                "Standardize formats",
+                "Record QC checks",
+                "Automate ingest"
+            ],
+            "duration": 14,
+            "difficulty": "Advanced",
+            "summaryText": "Dirty data kills fusion timelines—condition it before the fight."
+        },
+        {
+            "id": "intel_fusion_cell_ops_04",
+            "title": "Multi-INT Correlation Board",
+            "description": "Lead a board that walks commanders through each INT and the fused narrative with confidence statements and COAs. Ref: AFMAN 14-202.",
+            "bulletpoints": [
+                "Sequence INT updates",
+                "Highlight conflicts",
+                "State fused COA"
+            ],
+            "duration": 13,
+            "difficulty": "Advanced",
+            "summaryText": "Correlation boards translate raw INTs into commander-ready narratives."
+        },
+        {
+            "id": "intel_fusion_cell_ops_05",
+            "title": "JIPTL Support Reps",
+            "description": "Practice stuffing intel justifications, desired effects, and weaponeering notes into the Joint Integrated Prioritized Target List package. Ref: AFI 13-1AOCV3.",
+            "bulletpoints": [
+                "Tie intel to target",
+                "Document CDE",
+                "Log recommended effect"
+            ],
+            "duration": 15,
+            "difficulty": "Advanced",
+            "summaryText": "Targeting boards move faster when intel inputs are precise and defensible."
+        },
+        {
+            "id": "intel_fusion_cell_ops_06",
+            "title": "JADC2 API Familiarization",
+            "description": "Hands-on reps with ABMS/JADC2 data APIs to understand schema, authentication, and latency impacts. Ref: ABMS Dev Sec Ops Guide.",
+            "bulletpoints": [
+                "Query live endpoint",
+                "Measure latency",
+                "Document failover"
+            ],
+            "duration": 11,
+            "difficulty": "Advanced",
+            "summaryText": "Fusion cells should treat APIs like any other sensor—they need constant verification."
+        },
+        {
+            "id": "intel_fusion_cell_ops_07",
+            "title": "Analytic Tradecraft Review",
+            "description": "Apply ICD 203 analytic tradecraft standards to recent products, capturing sourced statements, assumptions, and alternatives.",
+            "bulletpoints": [
+                "Audit sourcing",
+                "List key assumptions",
+                "Document alternative hypotheses"
+            ],
+            "duration": 9,
+            "difficulty": "Advanced",
+            "summaryText": "Tradecraft discipline keeps fusion products credible under scrutiny."
+        },
+        {
+            "id": "intel_fusion_cell_ops_08",
+            "title": "Indications & Warnings Matrix",
+            "description": "Populate an I&W matrix that links indicators, thresholds, and associated collection plans for space threats. Ref: AFMAN 14-304.",
+            "bulletpoints": [
+                "Select indicators",
+                "Assign thresholds",
+                "Pre-brief actions"
+            ],
+            "duration": 10,
+            "difficulty": "Advanced",
+            "summaryText": "Warning intel should specify action the moment an indicator trips."
+        },
+        {
+            "id": "intel_fusion_cell_ops_09",
+            "title": "Coalition Releasability Drill",
+            "description": "Walk through derivative classification and foreign disclosure steps before providing fused products to CSpO partners. Ref: DoDM 5200.01.",
+            "bulletpoints": [
+                "Tag portions",
+                "Consult disclosure officer",
+                "Record release approval"
+            ],
+            "duration": 8,
+            "difficulty": "Advanced",
+            "summaryText": "Fast releasability decisions keep coalition partners in the fight."
+        },
+        {
+            "id": "intel_fusion_cell_ops_10",
+            "title": "Fusion Cell Contingency SOP",
+            "description": "Draft step-by-step SOPs for loss of power, comms, or toolsets so fusion continues under degraded ops. Ref: AFMAN 10-100.",
+            "bulletpoints": [
+                "Identify single points",
+                "Pre-stage backups",
+                "Assign manual roles"
+            ],
+            "duration": 12,
+            "difficulty": "Advanced",
+            "summaryText": "Contingency SOPs turn chaos into a checklist when systems fail."
+        },
+        {
+            "id": "intel_fusion_cell_ops_11",
+            "title": "Hotwash Capture",
+            "description": "After each major event, collect metrics, friction points, and opportunities to update TTPs. Ref: AFI 90-1601.",
+            "bulletpoints": [
+                "Gather metrics",
+                "Assign action officers",
+                "Publish TTP updates"
+            ],
+            "duration": 9,
+            "difficulty": "Advanced",
+            "summaryText": "Every fusion event should produce lessons learned within 24 hours."
+        },
+        {
+            "id": "intel_fusion_cell_ops_12",
+            "title": "Intel-to-Sto Handoff",
+            "description": "Package fused assessments into the Space Tasking Order with clear tasks, risk, and follow-up collections. Ref: AFDP 3-14.",
+            "bulletpoints": [
+                "State supported effect",
+                "List required tasks",
+                "Assign re-attack criteria"
+            ],
+            "duration": 11,
+            "difficulty": "Advanced",
+            "summaryText": "Fusion work only matters when it drives the next STO tasking."
+        }
+    ]
+}

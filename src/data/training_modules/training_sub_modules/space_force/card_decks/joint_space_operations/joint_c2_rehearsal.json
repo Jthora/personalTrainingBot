@@ -1,0 +1,90 @@
+{
+    "id": "joint_c2_rehearsal",
+    "name": "Joint C2 Rehearsal Blocks",
+    "description": "ATO/ACO walk-throughs that keep Guardians synced with air, cyber, and maritime battle rhythms before execution.",
+    "focus": [
+        "Joint Planning",
+        "ATO/ACO Integration",
+        "Mission Rehearsal"
+    ],
+    "cards": [
+        {
+            "id": "joint_c2_rehearsal_01",
+            "title": "ATO Thread Mapping",
+            "description": "Trace every space effect supporting the current Air Tasking Order and capture timing dependencies with air assets.",
+            "bulletpoints": [
+                "Identify space support requests by line",
+                "Mark latest acceptable delivery times",
+                "Record owning unit for each effect"
+            ],
+            "duration": 16,
+            "difficulty": "Advanced",
+            "summaryText": "ATO threads stay executable only when space injects are mapped and owned."
+        },
+        {
+            "id": "joint_c2_rehearsal_02",
+            "title": "ACO Link Validation",
+            "description": "Confirm airspace control order corridors align with current SATCOM pointing and JTIDS link roles.",
+            "bulletpoints": [
+                "Crosswalk ACO geometry with link budgets",
+                "Assign coalition tracks to Guardians",
+                "Document conflicts for CSpOC arbitration"
+            ],
+            "duration": 14,
+            "difficulty": "Standard",
+            "summaryText": "Airspace plans fail fast if link assignments lag; double-check them daily."
+        },
+        {
+            "id": "joint_c2_rehearsal_03",
+            "title": "Battle Rhythm Synchronization",
+            "description": "Align JFACC, JFMCC, and SPOC battle rhythms so the JSpOC floor never misses a decision brief.",
+            "bulletpoints": [
+                "Capture decision boards with times",
+                "List required USSF feeds",
+                "Publish Guardian attendance matrix"
+            ],
+            "duration": 12,
+            "difficulty": "Standard",
+            "summaryText": "Joint integration is mostly schedule discipline—treat it like any other comms plan."
+        },
+        {
+            "id": "joint_c2_rehearsal_04",
+            "title": "Fires Cell Fusion Rehearsal",
+            "description": "Practice injecting SDA updates and orbital windows into the joint fires battle drill under five minutes.",
+            "bulletpoints": [
+                "Pull latest SDA custody list",
+                "Translate to targetable windows",
+                "Deliver updates in the fires format"
+            ],
+            "duration": 18,
+            "difficulty": "Advanced",
+            "summaryText": "Space effects help the fires cell only if they arrive in time and in language the cell trusts."
+        },
+        {
+            "id": "joint_c2_rehearsal_05",
+            "title": "Coalition Release Checklist",
+            "description": "Rehearse rapid releasability decisions for sharing ISR and SDA feeds with allied nodes.",
+            "bulletpoints": [
+                "Pre-approve releasable products",
+                "List caveats by partner",
+                "Practice redact-and-send workflow"
+            ],
+            "duration": 13,
+            "difficulty": "Advanced",
+            "summaryText": "Coalitions stay lethal when releasability is rehearsed, not improvised."
+        },
+        {
+            "id": "joint_c2_rehearsal_06",
+            "title": "Joint After-Action Capture",
+            "description": "Immediately log Guardian-specific lessons during joint rehearsals and publish them to the AOC knowledge base.",
+            "bulletpoints": [
+                "Assign recorder for each event",
+                "Document friction points within 30 min",
+                "Push updates to SPOC portal"
+            ],
+            "duration": 10,
+            "difficulty": "Standard",
+            "summaryText": "Joint partners reuse Guardian lessons only if you capture them while the drill is fresh."
+        }
+    ]
+}

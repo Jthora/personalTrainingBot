@@ -1,0 +1,168 @@
+{
+    "id": "emotional_intelligence",
+    "name": "Emotional Intelligence",
+    "description": "Guardian Ideal-aligned EQ drills for flight commanders and crew leads.",
+    "focus": [
+        "Self-Awareness",
+        "Team Climate",
+        "Communication"
+    ],
+    "cards": [
+        {
+            "id": "emotional_intelligence_01",
+            "title": "Guardian Ideal Values Check-In",
+            "description": "Lead a weekly huddle where each teammate shares how they lived Character, Connection, Commitment, and Courage. Ref: Guardian Ideal (2021).",
+            "bulletpoints": [
+                "Model vulnerability first",
+                "Celebrate specific behaviors",
+                "Capture growth commitments"
+            ],
+            "duration": 10,
+            "difficulty": "Intermediate",
+            "summaryText": "Values stick when leaders ask about them out loud."
+        },
+        {
+            "id": "emotional_intelligence_02",
+            "title": "Emotion Labeling Rehearsal",
+            "description": "Practice describing emotions with precision before tough conversations so intent stays clear. Ref: OTS Leadership Curriculum.",
+            "bulletpoints": [
+                "Use feelings not judgments",
+                "Tie emotion to impact",
+                "Plan empathy statements"
+            ],
+            "duration": 8,
+            "difficulty": "Intermediate",
+            "summaryText": "Clear labels reduce defensiveness in feedback moments."
+        },
+        {
+            "id": "emotional_intelligence_03",
+            "title": "Crucial Conversation Prep",
+            "description": "Use the USAF Crucial Conversations model (start with heart, master my stories, state path) before counseling sessions. Ref: OTS Leadership Guide.",
+            "bulletpoints": [
+                "Clarify desired outcome",
+                "Separate facts vs stories",
+                "Plan mutual purpose"
+            ],
+            "duration": 12,
+            "difficulty": "Intermediate",
+            "summaryText": "Deliberate prep keeps hard talks productive instead of explosive."
+        },
+        {
+            "id": "emotional_intelligence_04",
+            "title": "360° Listening Drill",
+            "description": "Host five-minute listening rotations, paraphrasing teammate inputs without rebuttal to strengthen trust. Ref: Guardian Resilience Program.",
+            "bulletpoints": [
+                "Set timer & rotate",
+                "Paraphrase before speaking",
+                "Capture action items"
+            ],
+            "duration": 9,
+            "difficulty": "Intermediate",
+            "summaryText": "Listening muscles need reps just like technical skills."
+        },
+        {
+            "id": "emotional_intelligence_05",
+            "title": "Stress Signal Inventory",
+            "description": "List personal stress tells (tone, posture, habits) and share with your deputy so they can help you course-correct. Ref: Guardian Ideal Appendix A.",
+            "bulletpoints": [
+                "Identify physical cues",
+                "Assign relief actions",
+                "Invite feedback"
+            ],
+            "duration": 7,
+            "difficulty": "Intermediate",
+            "summaryText": "Leaders who name their stress cues catch them sooner."
+        },
+        {
+            "id": "emotional_intelligence_06",
+            "title": "Assume Positive Intent Drill",
+            "description": "Before replying to an email/text, rewrite the sender's message assuming positive intent to reduce reactive tone. Ref: Guardian Leadership Playbook.",
+            "bulletpoints": [
+                "Pause before typing",
+                "Rewrite intent",
+                "Respond with curiosity"
+            ],
+            "duration": 6,
+            "difficulty": "Intermediate",
+            "summaryText": "Guardians move faster when miscommunications stay small."
+        },
+        {
+            "id": "emotional_intelligence_07",
+            "title": "Recognition Cadence Plan",
+            "description": "Schedule consistent micro-recognition (handwritten notes, shoutouts) tied to Guardian Ideal behaviors. Ref: USAF Profession of Arms Center guidance.",
+            "bulletpoints": [
+                "Pick cadence (daily/weekly)",
+                "Tie praise to value",
+                "Vary delivery methods"
+            ],
+            "duration": 8,
+            "difficulty": "Intermediate",
+            "summaryText": "Recognition feeds morale when it is specific and steady."
+        },
+        {
+            "id": "emotional_intelligence_08",
+            "title": "Conflict Temperature Gauge",
+            "description": "Teach teams to rate disagreement heat (green/yellow/red) so they know when to pause. Ref: Guardian Resilience Training.",
+            "bulletpoints": [
+                "Define color criteria",
+                "Build pause protocol",
+                "Debrief after reset"
+            ],
+            "duration": 10,
+            "difficulty": "Intermediate",
+            "summaryText": "Shared language keeps debates from devolving into fights."
+        },
+        {
+            "id": "emotional_intelligence_09",
+            "title": "Empathy Mapping",
+            "description": "Use the empathy map (says, thinks, does, feels) before mission changes that affect crews. Ref: Guardian Ideal toolkit.",
+            "bulletpoints": [
+                "Capture each quadrant",
+                "Plan tailored messaging",
+                "Address real fears"
+            ],
+            "duration": 11,
+            "difficulty": "Intermediate",
+            "summaryText": "Empathy is a planning tool, not a buzzword."
+        },
+        {
+            "id": "emotional_intelligence_10",
+            "title": "Psychological Safety Retro",
+            "description": "Run retros using OTS's four-question template: what worked, what lacked clarity, what risks felt safe, what to improve. Ref: OTS Instruction 36-2011.",
+            "bulletpoints": [
+                "Ask all four questions",
+                "Listen without rebuttal",
+                "Publish commitments"
+            ],
+            "duration": 12,
+            "difficulty": "Intermediate",
+            "summaryText": "Psych safety requires deliberate rituals, not slogans."
+        },
+        {
+            "id": "emotional_intelligence_11",
+            "title": "Mentorship Map",
+            "description": "Chart who mentors you and whom you mentor, ensuring diversity of perspective per Guardian Ideal guidance. Ref: Guardian Ideal.",
+            "bulletpoints": [
+                "List mentors by skill",
+                "Identify mentee needs",
+                "Schedule check-ins"
+            ],
+            "duration": 9,
+            "difficulty": "Intermediate",
+            "summaryText": "Healthy mentorship ecosystems prevent leader burnout."
+        },
+        {
+            "id": "emotional_intelligence_12",
+            "title": "Resilience Resource Drill",
+            "description": "Practice introducing chaplain, mental health, True North, and Military & Family Life resources so stigma stays low. Ref: Guardian Resilience Framework.",
+            "bulletpoints": [
+                "Know contact info",
+                "Share personal story",
+                "Normalize proactive use"
+            ],
+            "duration": 7,
+            "difficulty": "Intermediate",
+            "summaryText": "Leaders who share resources early make it easier for Guardians to seek help."
+        }
+    ]
+}

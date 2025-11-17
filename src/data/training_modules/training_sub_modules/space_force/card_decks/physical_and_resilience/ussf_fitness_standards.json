@@ -1,0 +1,168 @@
+{
+    "id": "ussf_fitness_standards",
+    "name": "USSF Fitness Standards",
+    "description": "Guardian-specific conditioning aligned with DAFI 36-2905 and the USSF Fitness Programming Guide.",
+    "focus": [
+        "Aerobic Standards",
+        "Strength",
+        "Body Composition"
+    ],
+    "cards": [
+        {
+            "id": "ussf_fitness_standards_01",
+            "title": "1.5-Mile Run Tier Plan",
+            "description": "Map pacing splits for Guardian Tiers I-III (≤9:12, ≤10:20, ≤11:30) using DAFI 36-2905 tables; log training runs weekly. Ref: DAFI 36-2905.",
+            "bulletpoints": [
+                "Set target pace per tier",
+                "Schedule interval work",
+                "Record progress"
+            ],
+            "duration": 15,
+            "difficulty": "Standard",
+            "summaryText": "Know your pacing plan before test day shows up."
+        },
+        {
+            "id": "ussf_fitness_standards_02",
+            "title": "Push-Up Form Audit",
+            "description": "Film push-up technique vs. USSF standard (elbows lockout, 90° bend) and correct reps to meet Tier I count (≥57). Ref: USSF Fitness Guide 2024.",
+            "bulletpoints": [
+                "Record from side view",
+                "Count only valid reps",
+                "Program corrective drills"
+            ],
+            "duration": 10,
+            "difficulty": "Standard",
+            "summaryText": "Perfect reps beat extra sloppy ones every time."
+        },
+        {
+            "id": "ussf_fitness_standards_03",
+            "title": "Plank Progression",
+            "description": "Plan weekly plank holds building to Tier I requirement (≥3:35) with anti-extension accessories. Ref: DAFI 36-2905.",
+            "bulletpoints": [
+                "Baseline max hold",
+                "Add RKC/side planks",
+                "Track weekly gains"
+            ],
+            "duration": 9,
+            "difficulty": "Standard",
+            "summaryText": "Consistency beats heroics when building core endurance."
+        },
+        {
+            "id": "ussf_fitness_standards_04",
+            "title": "VO2 Max Zone-2 Block",
+            "description": "Schedule 2× weekly 45-minute Zone-2 sessions (65-75% HRmax) to lift VO2 for aerobic events. Ref: USSF Fitness Programming Guide.",
+            "bulletpoints": [
+                "Calculate HR zones",
+                "Pick low-impact modality",
+                "Log HR + RPE"
+            ],
+            "duration": 20,
+            "difficulty": "Standard",
+            "summaryText": "Zone-2 is the aerobic cheat code for Guardians."
+        },
+        {
+            "id": "ussf_fitness_standards_05",
+            "title": "Sprint Interval Booster",
+            "description": "Incorporate 6×400m intervals at goal pace with 90-second rest to sharpen run speed. Ref: USSF Fitness Programming Guide.",
+            "bulletpoints": [
+                "Warm up thoroughly",
+                "Hold race pace",
+                "Cool down + stretch"
+            ],
+            "duration": 18,
+            "difficulty": "Standard",
+            "summaryText": "Intervals teach your body what test pace feels like."
+        },
+        {
+            "id": "ussf_fitness_standards_06",
+            "title": "Strength Circuit Template",
+            "description": "Program push, pull, hinge, squat, and core moves hitting Tier I strength guardrails 2× weekly. Ref: Guardian Fitness Playbook.",
+            "bulletpoints": [
+                "Use compound lifts",
+                "Balance volume",
+                "Track loads"
+            ],
+            "duration": 16,
+            "difficulty": "Standard",
+            "summaryText": "Balanced strength keeps Guardians resilient under console hours."
+        },
+        {
+            "id": "ussf_fitness_standards_07",
+            "title": "Body Composition Log",
+            "description": "Track waist-to-height ratio aiming ≤0.50 per USSF health standard using monthly measurements. Ref: DAFI 36-2905.",
+            "bulletpoints": [
+                "Measure waist at navel",
+                "Calculate ratio",
+                "Adjust nutrition plan"
+            ],
+            "duration": 7,
+            "difficulty": "Standard",
+            "summaryText": "Small nutrition tweaks sustain compliance year-round."
+        },
+        {
+            "id": "ussf_fitness_standards_08",
+            "title": "Mobility Prep Flow",
+            "description": "Use the USSF dynamic mobility series pre-testing (leg swings, inchworms, thoracic rotations) to reduce injury risk. Ref: USSF Fitness Guide.",
+            "bulletpoints": [
+                "Perform sequence daily",
+                "Focus on hips/spine",
+                "Pair with light cardio"
+            ],
+            "duration": 8,
+            "difficulty": "Standard",
+            "summaryText": "Mobile joints fuel faster times and cleaner reps."
+        },
+        {
+            "id": "ussf_fitness_standards_09",
+            "title": "Recovery Protocol",
+            "description": "Plan weekly recovery inputs (sleep ≥7 hrs, hydration 0.7 oz/lb, periodic deload) per Guardian Resilience guidance. Ref: Guardian Resilience Framework.",
+            "bulletpoints": [
+                "Set sleep targets",
+                "Hydrate deliberately",
+                "Schedule deload weeks"
+            ],
+            "duration": 10,
+            "difficulty": "Standard",
+            "summaryText": "Recovery is a standard, not an indulgence."
+        },
+        {
+            "id": "ussf_fitness_standards_10",
+            "title": "Nutritional Periodization",
+            "description": "Align macro intake with training blocks (build, peak, taper) using USAF Registered Dietitian templates. Ref: DAF Nutrition Guide.",
+            "bulletpoints": [
+                "Plan macros per block",
+                "Monitor energy levels",
+                "Adjust weekly"
+            ],
+            "duration": 14,
+            "difficulty": "Standard",
+            "summaryText": "Fuel shifts should match training focus for predictable results."
+        },
+        {
+            "id": "ussf_fitness_standards_11",
+            "title": "Heat/Altitude Acclimation",
+            "description": "Apply gradual exposure protocols before tests at Peterson, Buckley, or overseas locations. Ref: DAFI 48-101.",
+            "bulletpoints": [
+                "Increase load 10%/day",
+                "Monitor HR + hydration",
+                "Log symptoms"
+            ],
+            "duration": 13,
+            "difficulty": "Standard",
+            "summaryText": "Environmental prep prevents surprise DNFs."
+        },
+        {
+            "id": "ussf_fitness_standards_12",
+            "title": "Diagnostic Mock Test",
+            "description": "Conduct a full diagnostic every 45 days, capturing event order, rest intervals, and scoring per DAFI 36-2905. Ref: DAFI 36-2905.",
+            "bulletpoints": [
+                "Simulate official order",
+                "Use certified timers",
+                "Record official sheets"
+            ],
+            "duration": 18,
+            "difficulty": "Standard",
+            "summaryText": "Diagnostics turn test day into a formality."
+        }
+    ]
+}

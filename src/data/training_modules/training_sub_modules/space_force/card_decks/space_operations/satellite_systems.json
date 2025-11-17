@@ -1,0 +1,168 @@
+{
+    "id": "satellite_systems",
+    "name": "Satellite Systems",
+    "description": "Bus, payload, and TT&C refreshers tied to current Delta sustainment orders.",
+    "focus": [
+        "Bus Engineering",
+        "Payload Employment",
+        "TT&C"
+    ],
+    "cards": [
+        {
+            "id": "satellite_systems_01",
+            "title": "Bus vs Payload Power Budget",
+            "description": "Reconcile battery depth-of-discharge ceilings with payload duty cycles so commanding honors EPS red lines documented in AFSPCMAN 91-710. Ref: AFDP 3-14.",
+            "bulletpoints": [
+                "Map payload peak draw",
+                "Check DOD% during eclipse",
+                "Approve cutback table"
+            ],
+            "duration": 14,
+            "difficulty": "Advanced",
+            "summaryText": "Guardians keep payload plans inside the published power profile every time."
+        },
+        {
+            "id": "satellite_systems_02",
+            "title": "ADCS Momentum Dump Matrix",
+            "description": "Validate attitude control momentum wheels against sensor tasking, identifying when thruster unloads must be scheduled with SDA coordination. Ref: AFDP 3-14.",
+            "bulletpoints": [
+                "Trend wheel momentum",
+                "Protect star tracker FOV",
+                "Pre-coordinate unload burns"
+            ],
+            "duration": 13,
+            "difficulty": "Advanced",
+            "summaryText": "Prevent surprise unloads by trending ADCS momentum daily."
+        },
+        {
+            "id": "satellite_systems_03",
+            "title": "Thermal Balance Audit",
+            "description": "Cross-check hot and cold case configuration limits before commanding payload heaters or solar array slews during eclipse season. Ref: AFI 91-217.",
+            "bulletpoints": [
+                "Review thermal node limits",
+                "Confirm heater deadbands",
+                "Coordinate with payload ops"
+            ],
+            "duration": 12,
+            "difficulty": "Advanced",
+            "summaryText": "No thermal surprises when the eclipse season hits if you rehearse the limits now."
+        },
+        {
+            "id": "satellite_systems_04",
+            "title": "Protected SATCOM Crosslinks",
+            "description": "Practice configuring crosslink schedules, crypto loads, and beam shaping for AEHF or WGS payloads per CJCSI 6250.01. Ref: SDP 3-0.",
+            "bulletpoints": [
+                "Load updated TRANSEC keys",
+                "Assign crosslink slots",
+                "Document beam priority"
+            ],
+            "duration": 16,
+            "difficulty": "Advanced",
+            "summaryText": "Crosslink settings stay aligned with DISA tasking when Guardians rehearse the workflow."
+        },
+        {
+            "id": "satellite_systems_05",
+            "title": "GPS Block III Modernization",
+            "description": "Track L1C/L2C payload availability, M-code power settings, and NAVSTAR control segments so users get accurate NAVWAR reporting. Ref: AFCSM 11-2GPS.",
+            "bulletpoints": [
+                "Map signal set per SV",
+                "Review URE scores",
+                "Coordinate with 2 SOPS"
+            ],
+            "duration": 15,
+            "difficulty": "Advanced",
+            "summaryText": "Keep GPS modernization notes sharp to defend NAVWAR readiness reports."
+        },
+        {
+            "id": "satellite_systems_06",
+            "title": "TT&C Link Margin Walk",
+            "description": "Calculate uplink/downlink Eb/N0, antenna pointing loss, and weather fade margins before scheduling commanding passes. Ref: AFDP 3-14.",
+            "bulletpoints": [
+                "Baseline antenna gain",
+                "Apply rain fade curves",
+                "Record final link margin"
+            ],
+            "duration": 11,
+            "difficulty": "Advanced",
+            "summaryText": "Validate TT&C links numerically so command windows aren't gambles."
+        },
+        {
+            "id": "satellite_systems_07",
+            "title": "On-Orbit Cyber Hardening",
+            "description": "Review secure command authentication, crypto period changes, and FIPS 140-3 module status before each crew turnover. Ref: DoDI 8530.01.",
+            "bulletpoints": [
+                "Verify dual-factor commanding",
+                "Rotate crypto per FRAGO",
+                "Inspect audit logs"
+            ],
+            "duration": 15,
+            "difficulty": "Advanced",
+            "summaryText": "Treat satellites like weapon systems by enforcing cyber hygiene every shift."
+        },
+        {
+            "id": "satellite_systems_08",
+            "title": "Contingency Safe Modes",
+            "description": "Rehearse transition steps for safe-hold, including sun-pointing attitudes, transmitter inhibits, and telemetry subset availability. Ref: AFDP 3-14.",
+            "bulletpoints": [
+                "Identify safe-hold triggers",
+                "Know telemetry subset",
+                "Pre-plan recovery steps"
+            ],
+            "duration": 12,
+            "difficulty": "Advanced",
+            "summaryText": "When busses tumble, only rehearsed crews recover them fast."
+        },
+        {
+            "id": "satellite_systems_09",
+            "title": "Payload Calibration Cadence",
+            "description": "Plan calibration events, ground truth comparisons, and data quality flags so ISR customers trust your product lines. Ref: AFDP 2-0.",
+            "bulletpoints": [
+                "Schedule star or moon cals",
+                "Capture ground truth sets",
+                "Publish quality KPIs"
+            ],
+            "duration": 14,
+            "difficulty": "Advanced",
+            "summaryText": "Cal plans keep payload credibility high with every intel customer."
+        },
+        {
+            "id": "satellite_systems_10",
+            "title": "Redundant Chain Switchover",
+            "description": "Step through command sequences for switching to redundant TT&C or payload chains, logging verification telemetry. Ref: AFSPCI 10-1204.",
+            "bulletpoints": [
+                "Verify cross-strap health",
+                "Execute swap in sandbox",
+                "Capture signature telemetry"
+            ],
+            "duration": 13,
+            "difficulty": "Advanced",
+            "summaryText": "Practice redundant chain swaps before the anomaly makes it mandatory."
+        },
+        {
+            "id": "satellite_systems_11",
+            "title": "Degradation Reporting Battle Drill",
+            "description": "Align anomaly logs, mission impact assessments, and MAJCOM reporting templates so leadership decisions stay fast. Ref: AFMAN 91-223.",
+            "bulletpoints": [
+                "Log subsystem symptoms",
+                "Tie to supported mission",
+                "Notify CSpOC per SOP"
+            ],
+            "duration": 10,
+            "difficulty": "Advanced",
+            "summaryText": "Anomalies only stay small when reporting muscle memory is strong."
+        },
+        {
+            "id": "satellite_systems_12",
+            "title": "Configuration Control Review",
+            "description": "Walk through every active command plan, pending script, and inhibit tag before releasing the weekly ops summary. Ref: AFI 63-125.",
+            "bulletpoints": [
+                "Compare plan vs. executed",
+                "Verify inhibit trackers",
+                "Gain chief engineer approval"
+            ],
+            "duration": 9,
+            "difficulty": "Advanced",
+            "summaryText": "Clear configs mean fewer unforced errors on console."
+        }
+    ]
+}

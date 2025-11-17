@@ -118,6 +118,17 @@ export const CardProvider: React.FC<CardProviderProps> = ({ children, initialSlu
         return true;
     }, [updateHighlight]);
 
+    const dealInitialCards = useCallback(() => {
+        const initialCards = [
+            cardDealerRef.current.getRandomCard(),
+            cardDealerRef.current.getRandomCard(),
+            cardDealerRef.current.getRandomCard(),
+        ];
+        console.log('Initial cards:', initialCards);
+        setCards(initialCards);
+        updateHighlight(null);
+    }, [updateHighlight]);
+
     useEffect(() => {
         const loadCache = async () => {
             const cache = TrainingModuleCache.getInstance();
@@ -125,18 +136,23 @@ export const CardProvider: React.FC<CardProviderProps> = ({ children, initialSlu
                 console.error('TrainingModuleCache not loaded before CardProvider mount.');
                 return;
             }
-            const initialCards = [
-                cardDealerRef.current.getRandomCard(),
-                cardDealerRef.current.getRandomCard(),
-                cardDealerRef.current.getRandomCard(),
-            ];
-            console.log('Initial cards:', initialCards);
-            setCards(initialCards);
+            dealInitialCards();
             setIsLoading(false);
         };
 
         loadCache();
-    }, []);
+    }, [dealInitialCards]);
+
+    useEffect(() => {
+        const cache = TrainingModuleCache.getInstance();
+        const unsubscribe = cache.subscribeToSelectionChanges(() => {
+            dealInitialCards();
+        });
+
+        return () => {
+            unsubscribe();
+        };
+    }, [dealInitialCards]);
 
     const initialSlugAppliedRef = useRef(false);
 

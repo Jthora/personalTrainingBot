@@ -1,3 +1,9 @@
 .trainingWindow {
     flex: 2;
+    background: var(--surface-card);
+    color: var(--text-primary);
+    border: 1px solid var(--coach-border);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
 }

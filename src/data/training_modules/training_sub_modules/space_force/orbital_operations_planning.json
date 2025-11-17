@@ -1,0 +1,15 @@
+{
+    "id": "orbital_operations_planning",
+    "name": "Orbital Operations Planning",
+    "description": "Mission design fundamentals for real-world USSF guardians: orbital mechanics, conjunction assessment, and rapid response planning for contested space.",
+    "difficulty": "Advanced",
+    "estimated_time": "10-14 weeks",
+    "focus": [
+        "Space Domain Awareness",
+        "Orbital Mechanics",
+        "Threat Response"
+    ],
+    "cardDecks": [
+        "rapid_orbit_planning"
+    ]
+}

@@ -1,0 +1,22 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Star Commander Raynor">
+  <defs>
+    <linearGradient id="raynor-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5A7FFF" />
+      <stop offset="50%" stop-color="#6CE0FF" />
+      <stop offset="100%" stop-color="#D1F4FF" />
+    </linearGradient>
+    <linearGradient id="raynor-core" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00FF9F" />
+      <stop offset="100%" stop-color="#0080FF" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="16" fill="#050816" />
+  <g transform="translate(64 64)">
+    <circle r="28" fill="url(#raynor-core)" opacity="0.85" />
+    <path d="M0-52 L10-10 L52 0 L10 10 L0 52 L-10 10 L-52 0 L-10-10 Z" fill="url(#raynor-gradient)" />
+    <circle r="8" fill="#0AF5FF" />
+  </g>
+  <text x="64" y="118" text-anchor="middle" fill="#8CF2FF" font-family="'Orbitron', 'Segoe UI', sans-serif" font-size="14" letter-spacing="1.2" opacity="0.9">
+    RAYNOR
+  </text>
+</svg>

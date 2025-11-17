@@ -2,10 +2,26 @@
 
 .cardTable {
     flex: 1;
-    display: 'flex';
-    flex-direction: 'column';
-    padding-right: 20px;
-    margin: 10px;
-    background-color: #001f3f;
-    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 26px 20px 20px;
+    margin: 0;
+    background: var(--surface-muted);
+    color: var(--text-primary);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    position: relative;
+}
+
+.cardTable::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--coach-accent), transparent);
+    opacity: 0.5;
+    pointer-events: none;
 }

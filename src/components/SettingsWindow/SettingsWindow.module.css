@@ -1,9 +1,12 @@
 .settingsWindow {
     width: 100%;
-    background-color: var(--primary-bg-color);
-    padding: var(--padding);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: var(--surface-card);
+    color: var(--text-primary);
+    padding: 16px;
+    border: 1px solid var(--coach-border);
+    border-radius: 8px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    gap: 12px;
 }

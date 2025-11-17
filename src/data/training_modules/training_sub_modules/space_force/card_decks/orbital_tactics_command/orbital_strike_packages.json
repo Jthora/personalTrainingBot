@@ -1,0 +1,90 @@
+{
+    "id": "orbital_strike_packages",
+    "name": "Orbital Strike Package Tactics",
+    "description": "Tactical planning reps for orchestrating multi-vector strikes, debris-field maneuvers, and synchronized effects in contested orbits.",
+    "focus": [
+        "Multi-Vector Tactics",
+        "Debris Maneuvering",
+        "Command Synchronization"
+    ],
+    "cards": [
+        {
+            "id": "orbital_strike_packages_01",
+            "title": "Multi-Axis Timing Stack",
+            "description": "Sequence three maneuver elements to hit a target window within ±30 seconds despite comms latency.",
+            "bulletpoints": [
+                "Assign primary, secondary, tertiary roles",
+                "Account for propagation delays",
+                "Publish shared countdown markers"
+            ],
+            "duration": 15,
+            "difficulty": "Challenge",
+            "summaryText": "Multi-axis strikes fail when timing discipline slips."
+        },
+        {
+            "id": "orbital_strike_packages_02",
+            "title": "Debris Corridor Weaving",
+            "description": "Plan a strike path through a congested debris field using only blue-force propulsion margins.",
+            "bulletpoints": [
+                "Plot keep-out volumes",
+                "Simulate plan with Monte Carlo",
+                "Allocate DV for last-second dodges"
+            ],
+            "duration": 16,
+            "difficulty": "Advanced",
+            "summaryText": "Tacticians rehearse debris weaving before combat forces them to."
+        },
+        {
+            "id": "orbital_strike_packages_03",
+            "title": "Counter-Adversary Jamming",
+            "description": "Build a strike comms plan that survives worst-case jamming by layering optical, RF, and store-and-forward relays.",
+            "bulletpoints": [
+                "Identify vulnerable links",
+                "Design cross-domain backup",
+                "Set triggers for switching paths"
+            ],
+            "duration": 14,
+            "difficulty": "Advanced",
+            "summaryText": "No comms plan survives first contact unless you build backups into the package."
+        },
+        {
+            "id": "orbital_strike_packages_04",
+            "title": "ROE Crosswalk",
+            "description": "Rehearse how rules of engagement apply when maneuvers transit commercial slots or allied constellations.",
+            "bulletpoints": [
+                "List legal constraints per orbit",
+                "Coordinate with commercial liaison",
+                "Update commander's critical information requirements"
+            ],
+            "duration": 12,
+            "difficulty": "Standard",
+            "summaryText": "ROE literacy prevents tactical pauses once the package is airborne."
+        },
+        {
+            "id": "orbital_strike_packages_05",
+            "title": "Abort Tree Drill",
+            "description": "Construct an explicit abort tree covering comms loss, propulsion faults, and adversary counter-maneuvers.",
+            "bulletpoints": [
+                "Define criteria for each abort branch",
+                "Assign authority to call aborts",
+                "Brief recovery timelines"
+            ],
+            "duration": 13,
+            "difficulty": "Advanced",
+            "summaryText": "Abort trees are tactical confidence—everyone knows the exits."
+        },
+        {
+            "id": "orbital_strike_packages_06",
+            "title": "Synchronized Fires Inject",
+            "description": "Integrate cyber or terrestrial fires enablers into the orbital strike package and rehearse the message flow.",
+            "bulletpoints": [
+                "Identify prerequisite space effects",
+                "Align fire support timelines",
+                "Publish joint confirmation calls"
+            ],
+            "duration": 18,
+            "difficulty": "Challenge",
+            "summaryText": "Orbital tacticians must speak the fires cell language for real integration."
+        }
+    ]
+}

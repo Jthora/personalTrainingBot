@@ -1,30 +1,29 @@
+@import '../../styles/theme.css';
+
 .workoutCard {
-    border: 2px solid #007BFF;
-    border-radius: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 8px;
-    padding-bottom: 4px;
-    margin: 6px 0;
-    background-color: #f1f1f1;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-    white-space: normal; /* Ensure text wraps */
-    word-wrap: break-word; /* Break long words */
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+    padding: 12px 14px;
+    background: var(--surface-card);
+    cursor: pointer;
+    transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
 .workoutCard:hover {
-    transform: scale(1.02);
+    border-color: var(--coach-accent);
+    transform: translateY(-2px);
 }
 
 .workoutCard h3 {
-    margin: 0 0 8px;
-    font-size: 1.4em;
-    color: #007BFF;
+    margin: 0 0 6px;
+    font-size: 1rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-primary);
 }
 
 .workoutCard p {
-    margin: 4px 0;
-    font-size: 0.9em; /* Make paragraph text smaller */
-    color: #333;
+    margin: 2px 0;
+    font-size: 0.85rem;
+    color: var(--text-muted);
 }

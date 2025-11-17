@@ -1,0 +1,90 @@
+{
+    "id": "rapid_orbit_planning",
+    "name": "Rapid Orbit Planning Cell",
+    "description": "Mission design sprints that force planners to produce executable orbits when threat timelines collapse.",
+    "focus": [
+        "Mission Design",
+        "Conjunction Response",
+        "Delta-V Budgeting"
+    ],
+    "cards": [
+        {
+            "id": "rapid_orbit_planning_01",
+            "title": "Ten-Minute Conjunction Plan",
+            "description": "Draft a maneuver response for a high-priority conjunction using only the last two TLE updates.",
+            "bulletpoints": [
+                "Estimate miss distance growth",
+                "Select burn vector that preserves mission",
+                "Record DV in allocation ledger"
+            ],
+            "duration": 15,
+            "difficulty": "Challenge",
+            "summaryText": "Rapid conjunction planning is an every-shift rep, not a once-a-quarter wargame."
+        },
+        {
+            "id": "rapid_orbit_planning_02",
+            "title": "Payload Priority Trade",
+            "description": "Run a trade study when DV is constrained: which payload gets maneuver authority and why?",
+            "bulletpoints": [
+                "Rank payload contribution to SPINS",
+                "Quantify DV per option",
+                "Publish commander recommendation"
+            ],
+            "duration": 14,
+            "difficulty": "Advanced",
+            "summaryText": "Guardians need muscle memory for payload triage before the CGO asks."
+        },
+        {
+            "id": "rapid_orbit_planning_03",
+            "title": "Rapid Thermal Check",
+            "description": "Confirm thermal limits will hold during improvised slews or prolonged eclipses driven by emergency maneuvers.",
+            "bulletpoints": [
+                "Pull current beta angle",
+                "Check radiator duty cycle",
+                "Coordinate with thermal engineer"
+            ],
+            "duration": 11,
+            "difficulty": "Standard",
+            "summaryText": "Orbital plans die when thermal limits are afterthoughts."
+        },
+        {
+            "id": "rapid_orbit_planning_04",
+            "title": "SDA Timeline Compression",
+            "description": "Compress the SDA update timeline by 30% using automation and pre-approved report snippets.",
+            "bulletpoints": [
+                "Pre-stage command templates",
+                "Automate sensor cueing",
+                "Escalate only delta changes"
+            ],
+            "duration": 13,
+            "difficulty": "Advanced",
+            "summaryText": "Fast SDA loops make rapid orbit planning credible."
+        },
+        {
+            "id": "rapid_orbit_planning_05",
+            "title": "EVA Coordination Inject",
+            "description": "When EVA is scheduled, rehearse how rapid orbit changes impact crew safety zones and timeline.",
+            "bulletpoints": [
+                "Coordinate with EVA director",
+                "Update safe corridor maps",
+                "Brief crew on abort triggers"
+            ],
+            "duration": 12,
+            "difficulty": "Standard",
+            "summaryText": "Orbit planners must remember the humans bolted to the payload."
+        },
+        {
+            "id": "rapid_orbit_planning_06",
+            "title": "Contested Spectrum Overlay",
+            "description": "Overlay planned burns with adversary spectrum usage to avoid coupling maneuvers with jamming spikes.",
+            "bulletpoints": [
+                "Ingest intel on hostile emitters",
+                "Shift burn timing if required",
+                "File note with MST commander"
+            ],
+            "duration": 10,
+            "difficulty": "Advanced",
+            "summaryText": "Spectrum context keeps emergency burns from triggering more chaos."
+        }
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "id": "contingency_anomaly_response",
+    "name": "Contingency Anomaly Response",
+    "description": "Mission assurance checklists for leading crews through cascading anomalies, degraded comms, and prolonged isolation.",
+    "focus": [
+        "Anomaly Triage",
+        "Mission Assurance",
+        "Crew Communications"
+    ],
+    "cards": [
+        {
+            "id": "contingency_anomaly_response_01",
+            "title": "Fault Isolation Sprint",
+            "description": "Run a ten-minute drill to isolate primary vs. secondary fault indications using cross-sensor validation.",
+            "bulletpoints": [
+                "List affected subsystems",
+                "Check redundant sensor truth",
+                "Publish isolation hypothesis"
+            ],
+            "duration": 12,
+            "difficulty": "Advanced",
+            "summaryText": "Fast fault isolation keeps the crew ahead of cascading alarms."
+        },
+        {
+            "id": "contingency_anomaly_response_02",
+            "title": "Command Authority Tag-Up",
+            "description": "Confirm who holds tactical command when primary controllers drop offline.",
+            "bulletpoints": [
+                "Review command succession",
+                "Distribute alternate crypto",
+                "Notify higher headquarters"
+            ],
+            "duration": 9,
+            "difficulty": "Standard",
+            "summaryText": "Authority ambiguity is a bigger risk than the anomaly itself."
+        },
+        {
+            "id": "contingency_anomaly_response_03",
+            "title": "Anomaly Battle Drill",
+            "description": "Execute the standardized anomaly checklist start-to-finish with timers to ensure muscle memory holds.",
+            "bulletpoints": [
+                "Start clock on initial alert",
+                "Log comms to engineering",
+                "Close out with lessons learned"
+            ],
+            "duration": 15,
+            "difficulty": "Advanced",
+            "summaryText": "Battle drills only work when performed under a clock."
+        },
+        {
+            "id": "contingency_anomaly_response_04",
+            "title": "Isolation Communications Plan",
+            "description": "Draft a micro-brief the crew can transmit blindly when contact with higher is intermittent.",
+            "bulletpoints": [
+                "Include status, needs, next action",
+                "Cap message at 30 seconds",
+                "Practice on backup radios"
+            ],
+            "duration": 8,
+            "difficulty": "Standard",
+            "summaryText": "Isolation briefs keep trust intact even with patchy comms."
+        },
+        {
+            "id": "contingency_anomaly_response_05",
+            "title": "Logistics Sustainment Check",
+            "description": "Inventory consumables and reforecast endurance every 24 hours during long contingencies.",
+            "bulletpoints": [
+                "Update water/oxygen/fuel levels",
+                "Flag reorder thresholds",
+                "Share status with morale officer"
+            ],
+            "duration": 11,
+            "difficulty": "Standard",
+            "summaryText": "Contingency calm relies on a transparent sustainment picture."
+        },
+        {
+            "id": "contingency_anomaly_response_06",
+            "title": "Reconstitution Handoff",
+            "description": "Write the reconstitution handoff package while the anomaly is still ongoing so relief crews can take over instantly.",
+            "bulletpoints": [
+                "Capture current system status",
+                "List incomplete actions",
+                "Attach sensor data snapshots"
+            ],
+            "duration": 13,
+            "difficulty": "Advanced",
+            "summaryText": "Great commanders write the next crew's playbook before they arrive."
+        }
+    ]
+}

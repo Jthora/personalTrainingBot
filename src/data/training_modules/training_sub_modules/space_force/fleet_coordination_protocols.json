@@ -1,0 +1,15 @@
+{
+    "id": "fleet_coordination_protocols",
+    "name": "Fleet Coordination Protocols",
+    "description": "Synchronization drills for comms discipline, formation integrity, and adaptive routing when dozens of hulls share the same battlespace.",
+    "difficulty": "Advanced",
+    "estimated_time": "6-9 weeks",
+    "focus": [
+        "Command & Control",
+        "Comms Discipline",
+        "Formation Control"
+    ],
+    "cardDecks": [
+        "formation_link_management"
+    ]
+}

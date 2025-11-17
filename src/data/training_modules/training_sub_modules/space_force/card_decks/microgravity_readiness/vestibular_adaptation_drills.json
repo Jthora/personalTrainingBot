@@ -1,0 +1,90 @@
+{
+    "id": "vestibular_adaptation_drills",
+    "name": "Vestibular Adaptation Drills",
+    "description": "Microgravity conditioning routines blending vestibular resets, suit ops, and cognitive steadiness for long-duration crews.",
+    "focus": [
+        "Vestibular Conditioning",
+        "Zero-G Mobility",
+        "Suit Procedures"
+    ],
+    "cards": [
+        {
+            "id": "vestibular_adaptation_drills_01",
+            "title": "Omni-Axis Spin Ups",
+            "description": "Run multi-axis chair sequences with eyes-open and eyes-closed reps to recalibrate otolith response before EVA blocks.",
+            "bulletpoints": [
+                "Increase RPM every 30 seconds",
+                "Alternate visual fixation points",
+                "Log nausea/imbalance recovery time"
+            ],
+            "duration": 12,
+            "difficulty": "Challenge",
+            "summaryText": "Fast vestibular recovery keeps Guardians useful after every tumble." 
+        },
+        {
+            "id": "vestibular_adaptation_drills_02",
+            "title": "Suit Don/Doff Timed Drill",
+            "description": "Execute full restraint suit don/doff cycles while floating to reinforce muscle memory when gravity cues vanish.",
+            "bulletpoints": [
+                "Target sub-6 minute don time",
+                "Use buddy system for cable checks",
+                "Record pinch/discomfort points"
+            ],
+            "duration": 14,
+            "difficulty": "Advanced",
+            "summaryText": "Suit drills in microgravity stop EVA timelines from drifting." 
+        },
+        {
+            "id": "vestibular_adaptation_drills_03",
+            "title": "Glove Dexterity Circuit",
+            "description": "Practice fine-motor tasks in pressurized gloves while body stabilized only with thigh straps.",
+            "bulletpoints": [
+                "Complete wiring mock-up",
+                "Swap miniature fasteners",
+                "Log hand fatigue cues"
+            ],
+            "duration": 11,
+            "difficulty": "Standard",
+            "summaryText": "Guardians maintain dexterity once gloves become the new baseline." 
+        },
+        {
+            "id": "vestibular_adaptation_drills_04",
+            "title": "Cognitive Drift Check",
+            "description": "Run dual-task mental math and spatial recall tests immediately after spin training to monitor cognitive drift.",
+            "bulletpoints": [
+                "Record baseline vs post-spin scores",
+                "Flag any drop >10%",
+                "Report to flight surgeon"
+            ],
+            "duration": 10,
+            "difficulty": "Standard",
+            "summaryText": "Space sickness also hits cognition—track it like any other vital." 
+        },
+        {
+            "id": "vestibular_adaptation_drills_05",
+            "title": "Translation Pathways",
+            "description": "Navigate three-dimensional handrail courses blindfolded using only tactile cues and tether feedback.",
+            "bulletpoints": [
+                "Switch between push and pull segments",
+                "Practice egress under simulated smoke",
+                "Time each path for improvement"
+            ],
+            "duration": 13,
+            "difficulty": "Advanced",
+            "summaryText": "Spatial awareness grows when you practice moving without vision cues." 
+        },
+        {
+            "id": "vestibular_adaptation_drills_06",
+            "title": "Respiratory Control Sets",
+            "description": "Alternate paced breathing and isometric brace drills to stabilize heart rate before high-workload EVA tasks.",
+            "bulletpoints": [
+                "Inhale for 4, exhale for 6",
+                "Layer diaphragmatic tension holds",
+                "Track HRV deltas"
+            ],
+            "duration": 9,
+            "difficulty": "Standard",
+            "summaryText": "Controlled breathing keeps vertigo from spiraling into panic." 
+        }
+    ]
+}

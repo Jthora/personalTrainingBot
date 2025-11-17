@@ -1,0 +1,90 @@
+{
+    "id": "siege_resilience_leadership",
+    "name": "Siege Resilience Leadership",
+    "description": "Psychological endurance reps for commanders shepherding crews through weeks of degraded sensors and radiation alerts.",
+    "focus": [
+        "Psychological Endurance",
+        "Systems Recovery",
+        "Morale Leadership"
+    ],
+    "cards": [
+        {
+            "id": "siege_resilience_leadership_01",
+            "title": "Radiation Calm Brief",
+            "description": "Deliver a five-minute morale brief that balances honest radiation sensor data with actionable mitigation steps.",
+            "bulletpoints": [
+                "Translate rads/hour into human impact",
+                "Highlight shielding measures",
+                "Assign crew roles for monitoring"
+            ],
+            "duration": 10,
+            "difficulty": "Standard",
+            "summaryText": "Leaders own the tone when the dosimeter alarms go off."
+        },
+        {
+            "id": "siege_resilience_leadership_02",
+            "title": "System Triage Board",
+            "description": "Prioritize subsystem recovery actions using a simple red/amber/green board everyone can see.",
+            "bulletpoints": [
+                "List degraded subsystems",
+                "Assign ownership and ETA",
+                "Publish updates hourly"
+            ],
+            "duration": 12,
+            "difficulty": "Standard",
+            "summaryText": "Visible triage boards steady crews because they can see the plan."
+        },
+        {
+            "id": "siege_resilience_leadership_03",
+            "title": "Sleep Discipline Coach",
+            "description": "Rebuild a circadian-friendly duty roster after two weeks of constant alerts.",
+            "bulletpoints": [
+                "Cap shifts at 10 hours",
+                "Schedule protected quiet periods",
+                "Track cumulative sleep debt"
+            ],
+            "duration": 14,
+            "difficulty": "Advanced",
+            "summaryText": "Morale dies when sleep debt isn't actively managed under siege."
+        },
+        {
+            "id": "siege_resilience_leadership_04",
+            "title": "Degraded Comms Storytelling",
+            "description": "Craft a short SITREP narrative crews can repeat verbatim when sensors are blind and rumors spike.",
+            "bulletpoints": [
+                "State facts, gaps, and next checks",
+                "Assign spokespersons",
+                "Reissue script each shift"
+            ],
+            "duration": 9,
+            "difficulty": "Standard",
+            "summaryText": "Rumor control is a leadership rep when telemetry dries up."
+        },
+        {
+            "id": "siege_resilience_leadership_05",
+            "title": "Contingency Mentor Circles",
+            "description": "Facilitate 15-minute peer circles to surface stress indicators and quick wins.",
+            "bulletpoints": [
+                "Use open-ended prompts",
+                "Capture action items on whiteboard",
+                "Escalate critical issues to medics"
+            ],
+            "duration": 15,
+            "difficulty": "Standard",
+            "summaryText": "Micro-retros keep morale from collapsing between ops briefs."
+        },
+        {
+            "id": "siege_resilience_leadership_06",
+            "title": "After-Action Emotional Sweep",
+            "description": "Immediately after a high-stress event, lead a structured emotional sweep to normalize responses and reset focus.",
+            "bulletpoints": [
+                "Acknowledge event facts",
+                "Invite crew reactions",
+                "Restate mission purpose"
+            ],
+            "duration": 8,
+            "difficulty": "Standard",
+            "summaryText": "Commanders must clear emotional residue before the next contact report."
+        }
+    ]
+}

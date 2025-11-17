@@ -1,18 +1,46 @@
+@import '../../styles/theme.css';
+
 .workoutList {
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
+    gap: 12px;
+    padding: 18px 18px 18px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    background: var(--surface-muted);
+    min-height: 200px;
 }
 
-.loading {
-    text-align: center;
-    font-size: 1.2em;
-    color: #666;
+.listHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.8rem;
+    color: var(--text-muted);
 }
 
-.noWorkouts {
+.listMeta {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.cardStack {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.loading,
+.noWorkouts,
+.unknownItem {
     text-align: center;
-    font-size: 1.2em;
-    color: #666;
+    font-size: 0.85rem;
+    letter-spacing: 0.18em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    padding: 12px;
+    border: 1px dashed rgba(255, 255, 255, 0.12);
 }

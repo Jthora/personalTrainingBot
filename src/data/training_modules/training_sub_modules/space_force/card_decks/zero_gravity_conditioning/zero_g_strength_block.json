@@ -1,0 +1,90 @@
+{
+    "id": "zero_g_strength_block",
+    "name": "Zero-G Strength Block",
+    "description": "Core, grip, and proprioception sessions tailored for crews living without a deck under their feet.",
+    "focus": [
+        "Core Stabilization",
+        "Zero-G Mobility",
+        "Proprioception"
+    ],
+    "cards": [
+        {
+            "id": "zero_g_strength_block_01",
+            "title": "Elastic Core Triads",
+            "description": "Perform plank, anti-rotation, and leg-raise holds using resistance loops anchored to the module walls.",
+            "bulletpoints": [
+                "Hold each position 45 seconds",
+                "Alternate breathing tempos",
+                "Log perceived exertion"
+            ],
+            "duration": 12,
+            "difficulty": "Standard",
+            "summaryText": "Cores keep posture honest when gravity is gone."
+        },
+        {
+            "id": "zero_g_strength_block_02",
+            "title": "Grip Endurance Ladder",
+            "description": "Cycle through increasing-duration grip squeezes while translating across handrails.",
+            "bulletpoints": [
+                "Use hand dynamometer for baseline",
+                "Add finger extensor bands",
+                "Cooldown with forearm massage"
+            ],
+            "duration": 10,
+            "difficulty": "Standard",
+            "summaryText": "Grip endurance is the first thing to fade without gravity."
+        },
+        {
+            "id": "zero_g_strength_block_03",
+            "title": "Lower-Body Tether Presses",
+            "description": "Anchor boots to resistance platform and execute controlled squats and lunges to maintain bone loading.",
+            "bulletpoints": [
+                "Target 3 sets of 12 reps",
+                "Keep spine neutral",
+                "Log joint discomfort"
+            ],
+            "duration": 14,
+            "difficulty": "Advanced",
+            "summaryText": "Lower-body loading preserves bone density through long deployments."
+        },
+        {
+            "id": "zero_g_strength_block_04",
+            "title": "Spatial Orientation Maze",
+            "description": "Navigate a 3D maze of labeled targets while rotating your body frame 90° each segment.",
+            "bulletpoints": [
+                "Time each lap",
+                "Call out orientation cues",
+                "Switch leading hand every lap"
+            ],
+            "duration": 11,
+            "difficulty": "Standard",
+            "summaryText": "Mobility plus cognition equals low-error movement in zero-G."
+        },
+        {
+            "id": "zero_g_strength_block_05",
+            "title": "Breathing Under Load",
+            "description": "Pair resistance work with paced breathing to maintain oxygen efficiency.",
+            "bulletpoints": [
+                "Use 4-2-4-2 breathing cadence",
+                "Monitor pulse ox",
+                "Log dizziness events"
+            ],
+            "duration": 9,
+            "difficulty": "Standard",
+            "summaryText": "Breath discipline keeps strength work sustainable in microgravity."
+        },
+        {
+            "id": "zero_g_strength_block_06",
+            "title": "Neuromuscular Reaction Drills",
+            "description": "Catch and redirect velcro cubes launched from random vectors to train reaction speed.",
+            "bulletpoints": [
+                "Vary cube mass",
+                "Track catch success rate",
+                "Progress to dual-cube drills"
+            ],
+            "duration": 8,
+            "difficulty": "Standard",
+            "summaryText": "Reaction drills keep hands fast when floating chaos hits."
+        }
+    ]
+}

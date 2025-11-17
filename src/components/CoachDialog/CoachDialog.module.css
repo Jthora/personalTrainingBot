@@ -1,103 +1,135 @@
+@import '../../styles/theme.css';
+
 .coachDialog {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 10px;
+    gap: 16px;
+    padding: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    background: var(--surface-card);
+    position: relative;
+}
+
+.coachDialog::after {
+    content: '';
+    position: absolute;
+    inset: 10px;
+    border: 1px dashed rgba(255, 255, 255, 0.05);
+    pointer-events: none;
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 16px;
+    padding: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    background: var(--surface-muted);
 }
 
 .icon {
-    width: 128px;
-    height: 128px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    background: var(--surface-card);
 }
 
 .textContainer {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
-    flex-grow: 1;
-}
-
-.coach {
-    line-height: -1em;
-    margin-top: 4px;
-    margin-bottom: -8px;
-}
-
-.title {
-    line-height: 1em;
-    margin-bottom: 0px;
+    gap: 6px;
 }
 
 .titleContainer {
-    line-height: .2em;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.coach {
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--coach-accent);
+}
+
+.title {
+    margin: 0;
+    font-size: 1.2rem;
+    letter-spacing: 0.08em;
 }
 
 .quote {
-    margin-top: 10px;
-    font-size: 1.2em;
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-muted);
     font-style: italic;
-    color: #ffaa00;
-    text-align: left;
-    white-space: normal; /* Ensure text wraps */
-    word-wrap: break-word; /* Break long words */
 }
 
 .workoutDetails {
     width: 100%;
-    margin-top: 20px;
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    background: var(--surface-muted);
 }
 
 .noWorkout {
     text-align: center;
-    font-size: 1.2em;
-    color: #666;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
 }
 
 .createNewScheduleButton {
     font-family: 'Aldrich', sans-serif;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 0.85rem;
+    color: var(--text-primary);
+    background: transparent;
+    border: 1px solid var(--coach-accent);
+    border-radius: 3px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    transition: background 0.2s ease, color 0.2s ease;
 }
 
 .createNewScheduleButton:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
-}
-
-.createNewScheduleButton:active {
-    background-color: #004085;
-    transform: translateY(0);
+    background: rgba(90, 127, 255, 0.12);
+    color: var(--coach-accent);
 }
 
 .timer {
-    width: 100%;
-    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 12px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
 }
 
 .buttons {
     display: flex;
-    gap: 10px;
+    gap: 8px;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 1em;
+.buttons button {
+    padding: 8px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: transparent;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
     cursor: pointer;
+    border-radius: 3px;
+}
+
+.buttons button:hover {
+    border-color: var(--coach-accent);
 }

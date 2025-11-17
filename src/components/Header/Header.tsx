@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { SettingsStore } from '../../store/SettingsStore';
 import { Web3AuthService } from '../../services/Web3AuthService';
-import TrainingCoachCache from '../../cache/TrainingCoachCache';
 import styles from './Header.module.css';
 import logo from '../../assets/images/WingCommanderLogo-288x162.gif';
+import { useCoachSelection } from '../../hooks/useCoachSelection';
+import { getCoachPalette } from '../../data/coachThemes';
 
 interface UserProfile {
     nickname?: string;
@@ -19,8 +20,8 @@ const Header: React.FC = () => {
     const [userProfile, setUserProfile] = useState<UserProfile | null>(null);
     const [showUserMenu, setShowUserMenu] = useState(false);
     const [isDarkMode, setIsDarkMode] = useState(true);
-    const [selectedCoach, setSelectedCoach] = useState<string>('tiger_fitness_god');
-    const [coachColor, setCoachColor] = useState<string>('#FF9900');
+    const { coachId } = useCoachSelection();
+    const [coachColor, setCoachColor] = useState<string>(getCoachPalette(coachId).accent);
 
     useEffect(() => {
         const initializeUser = async () => {
@@ -98,19 +99,13 @@ const Header: React.FC = () => {
             setIsDarkMode(savedTheme === 'dark');
             document.documentElement.setAttribute('data-theme', savedTheme);
         }
-        
-        // Load selected coach from localStorage
-        const storedCoach = localStorage.getItem('selectedCoach');
-        if (storedCoach) {
-            setSelectedCoach(storedCoach);
-        }
     }, []);
 
     // Update coach color when selected coach changes
     useEffect(() => {
-        const coachData = TrainingCoachCache.getInstance().getCoachData(selectedCoach);
-        setCoachColor(coachData.color || '#FF9900');
-    }, [selectedCoach]);
+        const palette = getCoachPalette(coachId);
+        setCoachColor(palette.accent);
+    }, [coachId]);
 
     return (
         <header className={styles.header}>

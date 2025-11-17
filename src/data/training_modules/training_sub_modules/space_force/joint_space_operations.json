@@ -1,0 +1,15 @@
+{
+    "id": "joint_space_operations",
+    "name": "Joint Space Operations",
+    "description": "Command-and-control integration with Air Force, Space Operations Command, and allied partners covering network-centric comms, link management, and mission rehearsal.",
+    "difficulty": "Advanced",
+    "estimated_time": "6-9 weeks",
+    "focus": [
+        "Joint C2",
+        "Mission Planning",
+        "Cross-Unit Integration"
+    ],
+    "cardDecks": [
+        "joint_c2_rehearsal"
+    ]
+}

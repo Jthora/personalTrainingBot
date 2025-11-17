@@ -1,0 +1,168 @@
+{
+    "id": "space_domain_awareness",
+    "name": "Space Domain Awareness",
+    "description": "SDA battle drills tying sensors, data fusion, and commander updates together.",
+    "focus": [
+        "Conjunction Assessment",
+        "Custody",
+        "Sensor Tasking"
+    ],
+    "cards": [
+        {
+            "id": "space_domain_awareness_01",
+            "title": "CSpOC Conjunction Workflow",
+            "description": "Rehearse the 72/48/24-hour conjunction warning process, including CDM parsing, risk assessment, and commander recommendation templates. Ref: AFDP 3-14.",
+            "bulletpoints": [
+                "Decode miss distance components",
+                "Map Pc thresholds",
+                "Deliver 3 options + timeline"
+            ],
+            "duration": 16,
+            "difficulty": "Advanced",
+            "summaryText": "Own the conjunction workflow so commanders get timely maneuver calls."
+        },
+        {
+            "id": "space_domain_awareness_02",
+            "title": "Sensor Tasking Matrix",
+            "description": "Build prioritized sensor tasking for GSSAP, SBSS, GEODSS, and allied telescopes, balancing custody gaps with weather and maintenance windows. Ref: AFI 14-133.",
+            "bulletpoints": [
+                "List gaps by orbital regime",
+                "Assign best sensor per pass",
+                "Publish handover notes"
+            ],
+            "duration": 14,
+            "difficulty": "Advanced",
+            "summaryText": "Task SDA sensors like a maestro so no object falls out of custody."
+        },
+        {
+            "id": "space_domain_awareness_03",
+            "title": "Custody Confidence Metrics",
+            "description": "Calculate Track ID quality, covariance growth, and observation age to justify custody status in the Space Order of Battle. Ref: AFDP 3-14.",
+            "bulletpoints": [
+                "Trend covariance ellipsoids",
+                "Capture observation recency",
+                "Flag degraded custody"
+            ],
+            "duration": 11,
+            "difficulty": "Advanced",
+            "summaryText": "Quantify SDA custody instead of relying on gut feel."
+        },
+        {
+            "id": "space_domain_awareness_04",
+            "title": "Threat Characterization Drill",
+            "description": "Fuse signatures, maneuver history, and intel cues to categorize potential adversary RPO behavior within the Joint Space Tasking Order. Ref: AFDP 3-14.",
+            "bulletpoints": [
+                "Compare ΔV history",
+                "Assess payload signature",
+                "Recommend threat tier"
+            ],
+            "duration": 18,
+            "difficulty": "Challenge",
+            "summaryText": "Translate SDA tracks into threat calls the JSpOC can act on."
+        },
+        {
+            "id": "space_domain_awareness_05",
+            "title": "Catalog Maintenance Battle Drill",
+            "description": "Execute add/change/delete actions with 18 SDS ensuring orbital elements and owner data stay authoritative. Ref: AFMAN 14-117.",
+            "bulletpoints": [
+                "Submit precise reason codes",
+                "Sync with allied catalogs",
+                "Audit after-action report"
+            ],
+            "duration": 10,
+            "difficulty": "Advanced",
+            "summaryText": "A pristine catalog underpins every SDA decision."
+        },
+        {
+            "id": "space_domain_awareness_06",
+            "title": "Blue Force Tracking Updates",
+            "description": "Verify friendly object ephemerides, statuses, and asset tags before each Space Tasking Order release. Ref: AFDP 3-14.",
+            "bulletpoints": [
+                "Scrub friendly custody stats",
+                "Resolve mismatched tags",
+                "Push updates to STO"
+            ],
+            "duration": 9,
+            "difficulty": "Advanced",
+            "summaryText": "Keep blue force space tracks clean so targeting stays deconflicted."
+        },
+        {
+            "id": "space_domain_awareness_07",
+            "title": "Battle Management Cell Sync",
+            "description": "Practice condensing SDA picture for the Space Battle Management Cell, highlighting threats, mitigation options, and risk to mission. Ref: SDP 3-0.",
+            "bulletpoints": [
+                "Summarize top threats",
+                "Match mitigation COAs",
+                "State residual risk"
+            ],
+            "duration": 12,
+            "difficulty": "Advanced",
+            "summaryText": "Deliver crisp SDA updates that commanders can trust in the fight."
+        },
+        {
+            "id": "space_domain_awareness_08",
+            "title": "Coalition Data Exchange",
+            "description": "Review SSA sharing agreements, releasability markings, and allied sensor data pipelines before joint events. Ref: Combined Space Ops Vision 2031.",
+            "bulletpoints": [
+                "Tag releasable objects",
+                "Sync classification guides",
+                "Log data transfer latency"
+            ],
+            "duration": 13,
+            "difficulty": "Advanced",
+            "summaryText": "Protect sources while still delivering SDA clarity to partners."
+        },
+        {
+            "id": "space_domain_awareness_09",
+            "title": "Space Event Debrief Template",
+            "description": "Build after-action packages that capture timeline, sensor data, COAs, and lessons learned after any significant SDA event. Ref: AFI 90-1601.",
+            "bulletpoints": [
+                "Record event timeline",
+                "Archive supporting data",
+                "List TTP refinements"
+            ],
+            "duration": 11,
+            "difficulty": "Advanced",
+            "summaryText": "Debriefs turn single events into better future SDA decisions."
+        },
+        {
+            "id": "space_domain_awareness_10",
+            "title": "Spectrum Interference Correlation",
+            "description": "Correlate RF interference reports with orbital tracks, payload pointing, and threat libraries to confirm attribution. Ref: AFDP 3-14.",
+            "bulletpoints": [
+                "Overlay spectrum + tracks",
+                "Validate time coincidence",
+                "Advise counter-action"
+            ],
+            "duration": 15,
+            "difficulty": "Advanced",
+            "summaryText": "Link jamming complaints to real objects inside minutes."
+        },
+        {
+            "id": "space_domain_awareness_11",
+            "title": "Sensor Calibration Log",
+            "description": "Track calibration status for radar and optical sensors, ensuring measurement biases are removed from the catalog. Ref: AFMAN 14-117.",
+            "bulletpoints": [
+                "Update bias table",
+                "Log calibration intervals",
+                "Share with 18 SDS"
+            ],
+            "duration": 8,
+            "difficulty": "Advanced",
+            "summaryText": "Calibration drift quietly wrecks custody—stay ahead of it."
+        },
+        {
+            "id": "space_domain_awareness_12",
+            "title": "Orbital Debris Reporting",
+            "description": "Practice completing USSPACECOM debris notifications, including size estimate, delta-V, and risk statements. Ref: Space Track Catalog CONOPS.",
+            "bulletpoints": [
+                "Capture breakup indicators",
+                "Compute debris clouds",
+                "Distribute formal notice"
+            ],
+            "duration": 10,
+            "difficulty": "Advanced",
+            "summaryText": "Rapid debris reporting keeps allies informed and assets safe."
+        }
+    ]
+}

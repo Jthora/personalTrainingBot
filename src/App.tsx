@@ -4,6 +4,7 @@ import AppRoutes from './routes/Routes';
 import InitialDataLoader from './utils/InitialDataLoader';
 import LoadingMessage from './components/LoadingMessage/LoadingMessage'; // Import the new component
 import { WorkoutScheduleProvider } from './context/WorkoutScheduleContext';
+import { CoachSelectionProvider } from './context/CoachSelectionContext';
 
 const App: React.FC = () => {
   const [isDataLoaded, setIsDataLoaded] = useState(false);
@@ -31,9 +32,11 @@ const App: React.FC = () => {
 
   return (
     <WorkoutScheduleProvider>
-      <Router>
-        <AppRoutes />
-      </Router>
+      <CoachSelectionProvider>
+        <Router>
+          <AppRoutes />
+        </Router>
+      </CoachSelectionProvider>
     </WorkoutScheduleProvider>
   );
 }

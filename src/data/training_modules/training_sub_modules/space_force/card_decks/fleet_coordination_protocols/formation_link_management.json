@@ -1,0 +1,90 @@
+{
+    "id": "formation_link_management",
+    "name": "Formation Link Management Drills",
+    "description": "C2 walkthroughs that keep constellation formations coherent when dozens of hulls share contested spectrum.",
+    "focus": [
+        "Formation Communications",
+        "Spectrum Discipline",
+        "Adaptive Routing"
+    ],
+    "cards": [
+        {
+            "id": "formation_link_management_01",
+            "title": "Spectrum Allocation Rehearsal",
+            "description": "Re-plan primary, alternate, contingency, and emergency (PACE) link allocations for a 30-ship formation when coalition partners join mid-mission.",
+            "bulletpoints": [
+                "Validate guard channel monitoring",
+                "Assign coalition crypto rotation windows",
+                "Update spectrum manager with new load"
+            ],
+            "duration": 14,
+            "difficulty": "Advanced",
+            "summaryText": "PACE refreshes keep formations from stepping on each other's beams when the stack grows fast."
+        },
+        {
+            "id": "formation_link_management_02",
+            "title": "Link Budget Hot-Wash",
+            "description": "Audit RF link budgets after solar weather advisories to confirm each hull still carries 3 dB margin at the edge of formation geometry.",
+            "bulletpoints": [
+                "Pull latest solar flux reports",
+                "Recompute Eb/No for long-hop relays",
+                "Issue reroute order if margins collapse"
+            ],
+            "duration": 16,
+            "difficulty": "Advanced",
+            "summaryText": "Small link budget drifts compound across a fleet; catch them before guidance complains."
+        },
+        {
+            "id": "formation_link_management_03",
+            "title": "Mission Thread Chokepoint Drill",
+            "description": "Walk the entire mission thread to expose single points of failure in relay sequencing and design alternate hops in under 15 minutes.",
+            "bulletpoints": [
+                "Trace data path from sensor to shooter",
+                "Flag nodes without hot spares",
+                "Document swap orders in C2 log"
+            ],
+            "duration": 18,
+            "difficulty": "Advanced",
+            "summaryText": "Fleet commanders rehearse thread resiliency so an isolated jammer never bricks targeting."
+        },
+        {
+            "id": "formation_link_management_04",
+            "title": "Cross-Delta ROE Sync",
+            "description": "Align comms rules of engagement and reporting priorities when multiple Deltas cohabit the same battlespace.",
+            "bulletpoints": [
+                "Publish time hacks for SITREP windows",
+                "Clarify who controls shared relays",
+                "Confirm escalation triggers"
+            ],
+            "duration": 12,
+            "difficulty": "Standard",
+            "summaryText": "Shared formations collapse when ROE differs by Delta; sync it daily."
+        },
+        {
+            "id": "formation_link_management_05",
+            "title": "Dynamic Routing Sandbox",
+            "description": "Use the formation simulator to reroute high-priority traffic through three alternate paths within five minutes of a link loss.",
+            "bulletpoints": [
+                "Trigger automated route proposals",
+                "Validate latency budgets",
+                "Push new tables to watch floor"
+            ],
+            "duration": 15,
+            "difficulty": "Advanced",
+            "summaryText": "Commanders that practice dynamic routing never wait on software to save their SATCOM mesh."
+        },
+        {
+            "id": "formation_link_management_06",
+            "title": "Collision/Comms Deconfliction",
+            "description": "Overlay ephemeris and link schedules to ensure proximity operations never violate pointing constraints or fratricide envelopes.",
+            "bulletpoints": [
+                "Cross-check maneuver plans with COMSEC windows",
+                "Identify simultaneous dwell conflicts",
+                "Coordinate with safety officer for waivers"
+            ],
+            "duration": 17,
+            "difficulty": "Challenge",
+            "summaryText": "Formation safety is half orbital math, half comms choreography—treat both as one."
+        }
+    ]
+}

@@ -1,28 +1,70 @@
 @import '../../styles/theme.css';
 
 .pageContainer {
-    padding: var(--padding);
+    --header-height: 60px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    padding: calc(var(--padding) + var(--header-height)) var(--padding) var(--padding);
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
-}
-
-.nav {
-    padding: var(--padding);
-    background-color: var(--secondary-bg-color);
-    color: var(--primary-text-color);
-}
-
-.cardSelectorContainer {
-    flex: 1;
-    margin-top: var(--padding);
+    box-sizing: border-box;
 }
 
 .contentContainer {
     display: flex;
-    margin-top: var(--padding);
+    flex: 1;
+    gap: var(--padding);
+    min-height: 0;
+}
+
+.cardSelectorContainer,
+.trainingWindowContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.cardSelectorContainer {
+    flex: 1;
+    overflow: auto;
 }
 
 .trainingWindowContainer {
     flex: 2;
-    margin-top: var(--padding);
+    overflow: auto;
+}
+
+@media (max-width: 1024px) {
+    .pageContainer {
+        --header-height: 56px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pageContainer {
+        --header-height: 52px;
+        flex-direction: column;
+    }
+    .contentContainer {
+        flex-direction: column;
+    }
+    .cardSelectorContainer,
+    .trainingWindowContainer {
+        flex: unset;
+        max-height: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .pageContainer {
+        --header-height: 48px;
+    }
+}
+
+@media (max-width: 360px) {
+    .pageContainer {
+        --header-height: 44px;
+    }
 }

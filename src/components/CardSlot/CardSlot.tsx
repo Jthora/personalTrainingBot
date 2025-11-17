@@ -40,8 +40,8 @@ const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
         return () => clearInterval(timer);
     }, [isHeld, isShareOpen, card, onDealNextCard, getRandomTimeInterval]);
 
-    const handleHoldChange = () => {
-        setIsHeld(!isHeld);
+    const handleHoldChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setIsHeld(event.target.checked);
     };
 
     const formatTime = (seconds: number) => {
@@ -50,21 +50,36 @@ const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
         return `${String(minutes).padStart(2, '0')}:${String(remainingSeconds).padStart(2, '0')}`;
     };
 
-    const formatKatex = (text: string) => {
+    const formatKatex = (text: string): React.ReactNode => {
         const inlineMathRegex = /\\\((.*?)\\\)/g;
         const blockMathRegex = /\\\[(.*?)\\\]/g;
+        const fragments: React.ReactNode[] = [];
 
-        return text.split(blockMathRegex).map((part, index) => {
+        text.split(blockMathRegex).forEach((part, index) => {
             if (index % 2 === 1) {
-                return <span key={index} dangerouslySetInnerHTML={{ __html: katex.renderToString(part, { displayMode: true }) }} />;
+                fragments.push(
+                    <span
+                        key={`block-${index}`}
+                        dangerouslySetInnerHTML={{ __html: katex.renderToString(part, { displayMode: true }) }}
+                    />
+                );
+            } else {
+                part.split(inlineMathRegex).forEach((subPart, subIndex) => {
+                    if (subIndex % 2 === 1) {
+                        fragments.push(
+                            <span
+                                key={`inline-${index}-${subIndex}`}
+                                dangerouslySetInnerHTML={{ __html: katex.renderToString(subPart) }}
+                            />
+                        );
+                    } else if (subPart) {
+                        fragments.push(subPart);
+                    }
+                });
             }
-            return part.split(inlineMathRegex).map((subPart, subIndex) => {
-                if (subIndex % 2 === 1) {
-                    return <span key={`${index}-${subIndex}`} dangerouslySetInnerHTML={{ __html: katex.renderToString(subPart) }} />;
-                }
-                return subPart;
-            });
         });
+
+        return fragments;
     };
 
     if (!card) {
@@ -88,54 +103,81 @@ const CardSlot: React.FC<CardSlotProps> = ({ card, onDealNextCard }) => {
         : undefined;
 
     const isHighlighted = highlightedCardId === card.id;
+    const cardLabel = cardDeck ?? 'Training Card';
 
     return (
         <div className={`${styles.cardSlot} ${isHighlighted ? styles.highlighted : ''}`}>
-            <div className={styles.cardDetails}>
-                <div className={styles.topLeft}>
-                    <h2>{formatKatex(card.title)}</h2>
-                    <p className={styles.cardDescription}>{formatKatex(card.description)}</p>
-                    <ul>
+            <div className={styles.cardHeader}>
+                <div className={styles.headerLeft}>
+                    <span className={styles.cardLabel}>{cardLabel}</span>
+                    <h2 className={styles.cardTitle}>{formatKatex(card.title)}</h2>
+                </div>
+                <div className={styles.timerBadge} aria-label={`Time remaining ${formatTime(timeLeft)}`}>
+                    <span className={styles.timerValue}>{formatTime(timeLeft)}</span>
+                    <span className={styles.timerLabel}>Remaining</span>
+                </div>
+            </div>
+
+            <div className={styles.cardMeta}>
+                <div className={styles.tagGroup}>
+                    {trainingModule && (
+                        <span className={styles.metaTag} style={{ borderColor: color }}>
+                            {trainingModule}
+                        </span>
+                    )}
+                    {subTrainingModule && (
+                        <span className={styles.metaTag} style={{ borderColor: color }}>
+                            {subTrainingModule}
+                        </span>
+                    )}
+                    {cardDeck && (
+                        <span className={styles.metaTag} style={{ borderColor: color }}>
+                            {cardDeck}
+                        </span>
+                    )}
+                </div>
+                <div className={styles.statsGroup}>
+                    <div className={styles.stat}>
+                        <span className={styles.statLabel}>Duration</span>
+                        <span className={styles.statValue}>{card.duration}m</span>
+                    </div>
+                    <div className={styles.stat}>
+                        <span className={styles.statLabel}>Difficulty</span>
+                        <span className={styles.statValue}>{card.difficulty}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div className={styles.cardContent}>
+                <p className={styles.cardDescription}>{formatKatex(card.description)}</p>
+                {card.bulletpoints.length > 0 && (
+                    <ul className={styles.cardList}>
                         {card.bulletpoints.map((point, index) => (
                             <li key={index}>{formatKatex(point)}</li>
                         ))}
                     </ul>
-                </div>
-                <div className={styles.topRight}>
-                    <div>
-                        <div className={styles.bubbleContainer2}>
-                            <span className={`${styles.bubble} ${styles.bubble1}`} style={{ backgroundColor: color }}>{trainingModule}</span>
-                        </div>
-                        <div className={styles.stats}>
-                            <p>{card.duration} minutes ⏱️</p>
-                            <p>{card.difficulty} 🎚️</p>
-                        </div>
-                    </div>
-                    <div className={styles.controls}>
-                        <label>
-                            Hold 
-                            <input type="checkbox" checked={isHeld} onChange={handleHoldChange} />
-                        </label>
-                        <button
-                            className={styles.shareButton}
-                            onClick={() => setIsShareOpen(true)}
-                            disabled={!slug || !meta}
-                        >
-                            Share ↗
-                        </button>
-                        <button className={`${styles.cardButton}`} onClick={onDealNextCard}>Next ⏭</button>
-                    </div>
-                </div>
-                <div className={styles.bottomLeft}>
-                    <div className={styles.bubbleContainer1}>
-                        <span className={`${styles.bubble} ${styles.bubble2}`} style={{ backgroundColor: color }}>{subTrainingModule}</span>
-                        <span className={`${styles.bubble} ${styles.bubble2}`} style={{ backgroundColor: color }}>{cardDeck}</span>
-                    </div>
-                </div>
-                <div className={styles.bottomRight}>
-                    <span>{formatTime(timeLeft)} ⏳</span>
+                )}
+            </div>
+
+            <div className={styles.cardToolbar}>
+                <label className={styles.holdToggle}>
+                    <input type="checkbox" checked={isHeld} onChange={handleHoldChange} />
+                    <span>Hold</span>
+                </label>
+                <div className={styles.toolbarButtons}>
+                    <button
+                        className={styles.secondaryButton}
+                        onClick={() => setIsShareOpen(true)}
+                        disabled={!slug || !meta}
+                    >
+                        Share
+                    </button>
+                    <button className={styles.primaryButton} onClick={onDealNextCard}>
+                        Next
+                    </button>
                 </div>
             </div>
+
             {isShareOpen && meta && slug && (
                 <ShareCardModal
                     card={card}

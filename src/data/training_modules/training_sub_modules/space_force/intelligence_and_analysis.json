@@ -1,0 +1,17 @@
+{
+    "id": "intelligence_and_analysis",
+    "name": "Intelligence & Analysis",
+    "description": "AFDP 2-0 and AFDP 3-14 grounded space ISR fusion, JADC2 integration, and coalition intel-sharing drills for Delta S2/G2 leads.",
+    "difficulty": "Advanced",
+    "estimated_time": "8-10 weeks",
+    "focus": [
+        "Space ISR",
+        "Intelligence Preparation of the Operational Environment",
+        "Joint Multi-Domain Ops"
+    ],
+    "cardDecks": [
+        "space_isr",
+        "joint_multi_domain_ops",
+        "intel_fusion_cell_ops"
+    ]
+}

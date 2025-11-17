@@ -1,0 +1,15 @@
+{
+    "id": "zero_gravity_conditioning",
+    "name": "Zero-Gravity Conditioning",
+    "description": "Core stabilization, vestibular resilience, and microgravity joint-loading drills that keep operators lethal when the deck disappears.",
+    "difficulty": "Intermediate",
+    "estimated_time": "8-10 weeks",
+    "focus": [
+        "Zero-G Mobility",
+        "Spatial Awareness",
+        "Core Stabilization"
+    ],
+    "cardDecks": [
+        "zero_g_strength_block"
+    ]
+}

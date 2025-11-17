@@ -1,0 +1,15 @@
+{
+    "id": "space_contingency_resilience",
+    "name": "Space Contingency Resilience",
+    "description": "Mission assurance drills for anomaly response, radiation weather events, and sustaining morale/communications during prolonged space contingencies.",
+    "difficulty": "Challenge",
+    "estimated_time": "12-16 weeks",
+    "focus": [
+        "Anomaly Response",
+        "Mission Assurance",
+        "Crew Resilience"
+    ],
+    "cardDecks": [
+        "contingency_anomaly_response"
+    ]
+}

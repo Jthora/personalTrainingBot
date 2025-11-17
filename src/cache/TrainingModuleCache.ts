@@ -22,6 +22,7 @@ export class TrainingModuleCache {
     public cardIndex: Map<string, CardMeta>;
     public cardIdToSlug: Map<string, string>;
     public slugToCardId: Map<string, string>;
+    private selectionListeners: Set<() => void>;
 
     private constructor() {
         this.cache = new Map();
@@ -32,6 +33,7 @@ export class TrainingModuleCache {
         this.cardIndex = new Map();
         this.cardIdToSlug = new Map();
         this.slugToCardId = new Map();
+        this.selectionListeners = new Set();
     }
 
     public static getInstance(): TrainingModuleCache {
@@ -46,16 +48,10 @@ export class TrainingModuleCache {
 
         trainingModules.forEach(module => {
             this.cache.set(module.id, module);
-            this.selectedModules.add(module.id);
 
             module.submodules.forEach(subModule => {
-                this.selectedSubModules.add(subModule.id);
-
                 subModule.cardDecks.forEach(deck => {
-                    this.selectedCardDecks.add(deck.id);
-
                     deck.cards.forEach(card => {
-                        this.selectedCards.add(card.id);
                         const meta: CardMeta = {
                             moduleId: module.id,
                             moduleName: module.name,
@@ -93,6 +89,8 @@ export class TrainingModuleCache {
             });
         });
 
+        this.selectModules();
+
         console.log(`TrainingModuleCache Loaded ${this.cache.size} training modules.`);
         console.log(`TrainingModuleCache Loaded ${this.selectedSubModules.size} training submodules.`);
         console.log(`TrainingModuleCache Loaded ${this.selectedCardDecks.size} card decks.`);
@@ -113,6 +111,7 @@ export class TrainingModuleCache {
         } else {
             this.selectedModules.add(id);
         }
+        this.notifySelectionListeners();
     }
 
     public toggleSubModuleSelection(id: string): void {
@@ -121,6 +120,7 @@ export class TrainingModuleCache {
         } else {
             this.selectedSubModules.add(id);
         }
+        this.notifySelectionListeners();
     }
 
     public toggleCardDeckSelection(id: string): void {
@@ -129,6 +129,7 @@ export class TrainingModuleCache {
         } else {
             this.selectedCardDecks.add(id);
         }
+        this.notifySelectionListeners();
     }
 
     public toggleCardSelection(id: string): void {
@@ -137,6 +138,7 @@ export class TrainingModuleCache {
         } else {
             this.selectedCards.add(id);
         }
+        this.notifySelectionListeners();
     }
 
     public isModuleSelected(id: string): boolean {
@@ -164,6 +166,43 @@ export class TrainingModuleCache {
         this.cardIndex.clear();
         this.cardIdToSlug.clear();
         this.slugToCardId.clear();
+    }
+
+    public selectModules(moduleIds?: string[]): void {
+        const idsToSelect = moduleIds && moduleIds.length > 0 ? new Set(moduleIds) : null;
+
+        this.selectedModules.clear();
+        this.selectedSubModules.clear();
+        this.selectedCardDecks.clear();
+        this.selectedCards.clear();
+
+        this.cache.forEach(module => {
+            if (!idsToSelect || idsToSelect.has(module.id)) {
+                this.selectedModules.add(module.id);
+                module.submodules.forEach(subModule => {
+                    this.selectedSubModules.add(subModule.id);
+                    subModule.cardDecks.forEach(deck => {
+                        this.selectedCardDecks.add(deck.id);
+                        deck.cards.forEach(card => {
+                            this.selectedCards.add(card.id);
+                        });
+                    });
+                });
+            }
+        });
+
+        this.notifySelectionListeners();
+    }
+
+    public subscribeToSelectionChanges(listener: () => void): () => void {
+        this.selectionListeners.add(listener);
+        return () => {
+            this.selectionListeners.delete(listener);
+        };
+    }
+
+    private notifySelectionListeners(): void {
+        this.selectionListeners.forEach(listener => listener());
     }
 
     public getCardMeta(cardId: string): CardMeta | undefined {

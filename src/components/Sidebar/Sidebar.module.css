@@ -1,4 +1,25 @@
+@import '../../styles/theme.css';
+
 .sidebar {
-    width: 35%; /* Set a fixed width relative to the HomePage */
-    background-color: #003366; /* Set a darker shade of blue */
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 18px 18px 18px 26px;
+    height: 100%;
+    background: var(--surface-card);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    position: relative;
+}
+
+.sidebar::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    bottom: 12px;
+    left: 0;
+    width: 3px;
+    background: linear-gradient(180deg, transparent, var(--coach-accent), transparent);
+    opacity: 0.7;
+    pointer-events: none;
 }

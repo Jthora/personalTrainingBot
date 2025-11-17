@@ -1,0 +1,168 @@
+{
+    "id": "orbital_mechanics",
+    "name": "Orbital Mechanics",
+    "description": "Core orbital design drills Guardians revisit before clearing any maneuver plan.",
+    "focus": [
+        "Keplerian Analysis",
+        "Transfer Design",
+        "Mission Geometry"
+    ],
+    "cards": [
+        {
+            "id": "orbital_mechanics_01",
+            "title": "Kepler Laws Mission Checks",
+            "description": "Re-derive how Kepler's three laws bound period, velocity envelopes, and swept area before every mission design review to keep truth data within AFSCN tolerances. Ref: AFDP 3-14.",
+            "bulletpoints": [
+                "Confirm T^2 ∝ a^3 for each semimajor axis",
+                "Track equal-areas timing to predict burn arcs",
+                "Bind eccentricity-driven perigee risk"
+            ],
+            "duration": 18,
+            "difficulty": "Advanced",
+            "summaryText": "Refresh Kepler fundamentals so maneuver math stays honest before it hits the ATO queue."
+        },
+        {
+            "id": "orbital_mechanics_02",
+            "title": "TLE to State Vector Drill",
+            "description": "Practice parsing both TLE lines into ECI state vectors, validating BSTAR drag terms and epoch staleness before uplinking new ephemerides. Ref: AFTTP 3-1.Space.",
+            "bulletpoints": [
+                "Decode mean motion and inclination",
+                "Propagate to scenario epoch with SGP4",
+                "Flag TLEs older than 24 hours"
+            ],
+            "duration": 16,
+            "difficulty": "Advanced",
+            "summaryText": "Turn raw TLEs into actionable state vectors without waiting on another analyst shift."
+        },
+        {
+            "id": "orbital_mechanics_03",
+            "title": "Hohmann Window Timing",
+            "description": "Compute optimal phase angles, DV splits, and burn sequencing for standard LEO-GEO transfers while tracking plane-change penalties. Ref: AFDP 3-14.",
+            "bulletpoints": [
+                "Solve for transfer semi-major axis",
+                "Allocate DV between perigee/apogee burns",
+                "Record total DV in mission ledger"
+            ],
+            "duration": 20,
+            "difficulty": "Advanced",
+            "summaryText": "Guardians rehearse Hohmann math so transfer briefs withstand delta-V scrutiny."
+        },
+        {
+            "id": "orbital_mechanics_04",
+            "title": "Bi-Elliptic Trade Study",
+            "description": "Compare bi-elliptic and classic Hohmann maneuvers for large apogee changes, capturing DV, timeline creep, and thermal dwell impacts. Ref: SDP 3-0.",
+            "bulletpoints": [
+                "Plot DV vs. apogee multiplier",
+                "Assess eclipse exposure at coast",
+                "Brief commander on fuel savings"
+            ],
+            "duration": 22,
+            "difficulty": "Advanced",
+            "summaryText": "Know when a bi-elliptic arc actually buys DV margin for the Delta."
+        },
+        {
+            "id": "orbital_mechanics_05",
+            "title": "RAAN Drift Management",
+            "description": "Model J2-driven RAAN drift rates versus mission revisit needs so you can schedule burns that stay synced with CSpOC-maintained reference planes. Ref: AFDP 3-14.",
+            "bulletpoints": [
+                "Compute drift using J2 term",
+                "Cross-check revisit timelines",
+                "Schedule burns inside duty cycle"
+            ],
+            "duration": 15,
+            "difficulty": "Advanced",
+            "summaryText": "Stay ahead of RAAN drift so your plane doesn't drift out of the supported SPINS."
+        },
+        {
+            "id": "orbital_mechanics_06",
+            "title": "GEO Station-Keeping Budget",
+            "description": "Break out annual north-south, east-west, and momentum unload allocations per SITREP to defend fuel planning across the sustainment horizon. Ref: AFDP 3-14.",
+            "bulletpoints": [
+                "List DV allocations by axis",
+                "Tie burns to eclipse season",
+                "Update prop remaining chart"
+            ],
+            "duration": 17,
+            "difficulty": "Advanced",
+            "summaryText": "Sustain GEO slots by proving every meter-per-second in the burn plan."
+        },
+        {
+            "id": "orbital_mechanics_07",
+            "title": "Molniya Orbit Design",
+            "description": "Size Molniya inclination, argument of perigee, and dwell times to guarantee northern hemisphere coverage while respecting radiation limits. Ref: AFDP 3-14.",
+            "bulletpoints": [
+                "Lock inclination near 63.4°",
+                "Set ω to anchor apogee dwell",
+                "Verify dwell ≥ 8 hours"
+            ],
+            "duration": 19,
+            "difficulty": "Advanced",
+            "summaryText": "Shape Molniya profiles so polar customers keep persistent look angles."
+        },
+        {
+            "id": "orbital_mechanics_08",
+            "title": "Rendezvous Phasing Math",
+            "description": "Use Clohessy–Wiltshire equations to time phasing loops, closing rates, and keep-out spheres before any proximity operation brief. Ref: AFTTP 3-1.Space.",
+            "bulletpoints": [
+                "Convert range to in-plane phase",
+                "Set closure under 0.1 m/s",
+                "Respect 1 km keep-out shell"
+            ],
+            "duration": 21,
+            "difficulty": "Challenge",
+            "summaryText": "Master CW math so your RPO plan hits the stack ready for approval."
+        },
+        {
+            "id": "orbital_mechanics_09",
+            "title": "Launch Window Geometry",
+            "description": "Calculate daily launch windows by aligning Earth rotation, target RAAN, and phasing constraints to avoid wasted countdown cycles. Ref: AFDP 3-14.",
+            "bulletpoints": [
+                "Project target ground track",
+                "Solve sidereal offset",
+                "Publish window with pad chief"
+            ],
+            "duration": 14,
+            "difficulty": "Advanced",
+            "summaryText": "Tune launch windows so range, weather, and orbital planes all sync up."
+        },
+        {
+            "id": "orbital_mechanics_10",
+            "title": "Differential Drag Steering",
+            "description": "Plan attitude profiles that modulate drag area for passive phasing or separation, coordinating with thermal and power teams. Ref: SDP 3-0.",
+            "bulletpoints": [
+                "Estimate Cd*A impacts",
+                "Protect battery sun angles",
+                "Coord with SDA cell"
+            ],
+            "duration": 12,
+            "difficulty": "Advanced",
+            "summaryText": "Use drag like a control surface without violating subsystem red lines."
+        },
+        {
+            "id": "orbital_mechanics_11",
+            "title": "End-of-Life Disposal",
+            "description": "Validate graveyard boosts or controlled re-entry plans to comply with national debris standards before decommissioning. Ref: Space Policy Directive-3.",
+            "bulletpoints": [
+                "Confirm 300 km graveyard raise",
+                "Check 25-year rule",
+                "Capture delta-V & prop left"
+            ],
+            "duration": 13,
+            "difficulty": "Advanced",
+            "summaryText": "Close out missions with debris-compliant maneuvers Guardians can defend."
+        },
+        {
+            "id": "orbital_mechanics_12",
+            "title": "Conjunction Avoidance Math",
+            "description": "Rehearse probability of collision (Pc) calculations, miss distance projections, and burn box construction before each daily CSpOC sync. Ref: SPD-3.",
+            "bulletpoints": [
+                "Translate CDMs quickly",
+                "Set gimbaled burn boxes",
+                "Document Pc thresholds"
+            ],
+            "duration": 18,
+            "difficulty": "Challenge",
+            "summaryText": "Turn CDMs into maneuver decisions without delaying the supported commander."
+        }
+    ]
+}

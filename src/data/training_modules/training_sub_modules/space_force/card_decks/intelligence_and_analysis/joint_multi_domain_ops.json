@@ -1,0 +1,168 @@
+{
+    "id": "joint_multi_domain_ops",
+    "name": "Joint Multi-Domain Ops",
+    "description": "Preparing space intel teams to plug into JADC2 and coalition targeting.",
+    "focus": [
+        "JADC2",
+        "Targeting",
+        "Coalition Sharing"
+    ],
+    "cards": [
+        {
+            "id": "joint_multi_domain_ops_01",
+            "title": "JADC2 Data Thread Mapping",
+            "description": "Trace how a space sensor cue flows into ABMS, CJADC2, and fires cells so latency and format issues are known. Ref: CJCS JADC2 Strategy 2022.",
+            "bulletpoints": [
+                "Map each node",
+                "Measure latency",
+                "Identify format gaps"
+            ],
+            "duration": 14,
+            "difficulty": "Advanced",
+            "summaryText": "If you can't map the data thread, you can't fix it."
+        },
+        {
+            "id": "joint_multi_domain_ops_02",
+            "title": "Joint Targeting Input",
+            "description": "Translate space effects into JAAT (Joint Air Attack Team) target folders with desired effect, time-on-target, and risk. Ref: JP 3-60.",
+            "bulletpoints": [
+                "Describe desired effect",
+                "Note timing constraints",
+                "State risk & mitigation"
+            ],
+            "duration": 13,
+            "difficulty": "Advanced",
+            "summaryText": "Make space effects readable to every targeting board."
+        },
+        {
+            "id": "joint_multi_domain_ops_03",
+            "title": "Space Support Requests",
+            "description": "Rehearse how air/land components submit and track SSRs, ensuring fulfillment or reattack recommendations. Ref: AFDP 3-14.",
+            "bulletpoints": [
+                "Review SSR form",
+                "Assign fulfillment timeline",
+                "Provide feedback loop"
+            ],
+            "duration": 11,
+            "difficulty": "Advanced",
+            "summaryText": "SSR discipline keeps expectations aligned across the joint team."
+        },
+        {
+            "id": "joint_multi_domain_ops_04",
+            "title": "Joint Space Tasking Order Read-In",
+            "description": "Break down JSTO sections, coordination measures, and net synchronization before daily JTCB. Ref: AFDP 3-14.",
+            "bulletpoints": [
+                "Summarize STO tasks",
+                "Highlight constraints",
+                "Connect to other domains"
+            ],
+            "duration": 10,
+            "difficulty": "Advanced",
+            "summaryText": "Space pros must fluently brief JSTO relevance to non-space leaders."
+        },
+        {
+            "id": "joint_multi_domain_ops_05",
+            "title": "Coalition Release Matrix",
+            "description": "Review releasability rules for partners (Five Eyes, NATO) and tag products accordingly. Ref: AFTTP 3-1.Space.",
+            "bulletpoints": [
+                "Identify partner caveats",
+                "Tag each product",
+                "Record release authority"
+            ],
+            "duration": 9,
+            "difficulty": "Advanced",
+            "summaryText": "Share boldly, but always inside classification guardrails."
+        },
+        {
+            "id": "joint_multi_domain_ops_06",
+            "title": "Multi-Domain Effects Matrix",
+            "description": "Link space actions to cyber, air, land, and maritime effects for the commander’s decision matrix. Ref: JP 3-0.",
+            "bulletpoints": [
+                "List space options",
+                "Map supported domains",
+                "State dependencies"
+            ],
+            "duration": 12,
+            "difficulty": "Advanced",
+            "summaryText": "Show commanders how a space move ripples across the fight."
+        },
+        {
+            "id": "joint_multi_domain_ops_07",
+            "title": "Cross-Component Intelligence Cueing",
+            "description": "Plan how intel from other domains triggers SDA collection and vice versa. Ref: AFDP 2-0.",
+            "bulletpoints": [
+                "Define cue thresholds",
+                "Identify liaison points",
+                "Document response times"
+            ],
+            "duration": 10,
+            "difficulty": "Advanced",
+            "summaryText": "Cueing should feel automatic between components."
+        },
+        {
+            "id": "joint_multi_domain_ops_08",
+            "title": "Joint COP Update",
+            "description": "Practice updating the Joint Common Operating Picture with space tracks, effects, and constraints in plain language. Ref: JP 3-0.",
+            "bulletpoints": [
+                "Use approved symbology",
+                "Highlight impacts",
+                "Update in near-real time"
+            ],
+            "duration": 8,
+            "difficulty": "Advanced",
+            "summaryText": "If the COP is wrong, the fight is wrong—feed it reliable space data."
+        },
+        {
+            "id": "joint_multi_domain_ops_09",
+            "title": "Operational Assessment Cues",
+            "description": "Define Measures of Performance/Effectiveness for space contributions to joint objectives. Ref: CJCSI 3162.02D.",
+            "bulletpoints": [
+                "Tie MOPs to tasks",
+                "Tie MOEs to objectives",
+                "Collect supporting data"
+            ],
+            "duration": 11,
+            "difficulty": "Advanced",
+            "summaryText": "Space Guardians must prove effects with measurable data."
+        },
+        {
+            "id": "joint_multi_domain_ops_10",
+            "title": "Battle Damage Assessment Template",
+            "description": "Provide BDA for space-enabled effects with accuracy, timeliness, and follow-on recommendations. Ref: JP 3-60.",
+            "bulletpoints": [
+                "Assess physical/system effects",
+                "Note functional changes",
+                "Recommend follow-up"
+            ],
+            "duration": 9,
+            "difficulty": "Advanced",
+            "summaryText": "BDA closes the loop; space intel must deliver it like any other domain."
+        },
+        {
+            "id": "joint_multi_domain_ops_11",
+            "title": "Dynamic Targeting Inject",
+            "description": "Walk through F2T2EA (find, fix, track, target, engage, assess) with a space-enabled target. Ref: JP 3-60.",
+            "bulletpoints": [
+                "Assign roles per phase",
+                "Monitor kill chain status",
+                "Capture assessment data"
+            ],
+            "duration": 15,
+            "difficulty": "Challenge",
+            "summaryText": "Space elements must be fluent in dynamic targeting lexicon."
+        },
+        {
+            "id": "joint_multi_domain_ops_12",
+            "title": "Joint Planning Group Integration",
+            "description": "Prepare inputs for the JPG: assumptions, facts, limitations, and space unique considerations. Ref: JP 5-0.",
+            "bulletpoints": [
+                "List critical assumptions",
+                "State space constraints",
+                "Offer supporting forces"
+            ],
+            "duration": 13,
+            "difficulty": "Advanced",
+            "summaryText": "Be the Guardian who speaks joint planning fluently."
+        }
+    ]
+}

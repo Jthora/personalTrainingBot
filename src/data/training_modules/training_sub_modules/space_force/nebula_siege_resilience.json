@@ -1,0 +1,15 @@
+{
+    "id": "nebula_siege_resilience",
+    "name": "Nebula Siege Resilience",
+    "description": "Psychophysiological hardening for long-haul sieges: radiation discipline, systems triage, and morale leadership when sensors go blind.",
+    "difficulty": "Challenge",
+    "estimated_time": "12-16 weeks",
+    "focus": [
+        "Psychological Endurance",
+        "Systems Recovery",
+        "Morale Leadership"
+    ],
+    "cardDecks": [
+        "siege_resilience_leadership"
+    ]
+}

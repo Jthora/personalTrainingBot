@@ -1,0 +1,168 @@
+{
+    "id": "network_security",
+    "name": "Network Security",
+    "description": "Mission Defense Team hardening reps for space weapon system networks.",
+    "focus": [
+        "RMF Controls",
+        "STIG Enforcement",
+        "Mission Defense"
+    ],
+    "cards": [
+        {
+            "id": "network_security_01",
+            "title": "RMF Control Burn-Down",
+            "description": "Prioritize POA&M items by mapping each open control to mission impact, weapon system baseline, and AFI 17-101 suspense. Ref: DoDI 8510.01.",
+            "bulletpoints": [
+                "Rank controls by CAT",
+                "Tie fixes to mission threads",
+                "Brief authorizing official"
+            ],
+            "duration": 12,
+            "difficulty": "Advanced",
+            "summaryText": "RMF is a combat support task when it drives mission availability."
+        },
+        {
+            "id": "network_security_02",
+            "title": "STIG Automation Rehearsal",
+            "description": "Run security content automation protocol (SCAP) scans, interpret deltas, and document compensating controls for space ground segments. Ref: AFMAN 17-1301.",
+            "bulletpoints": [
+                "Execute latest SCAP content",
+                "Review deltas vs. baseline",
+                "Log mitigations in POA&M"
+            ],
+            "duration": 10,
+            "difficulty": "Advanced",
+            "summaryText": "STIGs only matter if Guardians can execute and explain them fast."
+        },
+        {
+            "id": "network_security_03",
+            "title": "Boundary Protection Stack",
+            "description": "Validate firewall ACLs, IPS signatures, and cross-domain guard rules against the current Space Tasking Order. Ref: AFI 17-206.",
+            "bulletpoints": [
+                "Review ACL change log",
+                "Confirm IPS signature set",
+                "Test guard releasability"
+            ],
+            "duration": 13,
+            "difficulty": "Advanced",
+            "summaryText": "A layered boundary is the first MDT talking point every shift."
+        },
+        {
+            "id": "network_security_04",
+            "title": "Mission Thread Mapping",
+            "description": "Trace critical cyber terrain from antenna to data endpoint so defenders know exactly where to instrument sensors. Ref: SDP 3-0.",
+            "bulletpoints": [
+                "Diagram mission services",
+                "Highlight choke points",
+                "Align sensors to terrain"
+            ],
+            "duration": 15,
+            "difficulty": "Advanced",
+            "summaryText": "If you can't draw the mission thread, you can't defend it."
+        },
+        {
+            "id": "network_security_05",
+            "title": "Privileged Access Review",
+            "description": "Audit admin accounts, MFA logs, and service credentials per AFMAN 17-1302-O to prevent lateral movement. Ref: AFI 17-701.",
+            "bulletpoints": [
+                "List admin users & roles",
+                "Verify MFA artifacts",
+                "Rotate shared creds"
+            ],
+            "duration": 9,
+            "difficulty": "Advanced",
+            "summaryText": "Privileged access sprawl kills Zero-Trust efforts—keep it tight."
+        },
+        {
+            "id": "network_security_06",
+            "title": "Patch Management Warboard",
+            "description": "Compare vendor bulletins, IAVMs, and waiver statuses to plan patch installs without breaking mission availability. Ref: CJCSM 6510.01B.",
+            "bulletpoints": [
+                "Rank patches by severity",
+                "Identify maintenance windows",
+                "Capture regression tests"
+            ],
+            "duration": 14,
+            "difficulty": "Advanced",
+            "summaryText": "Patch timelines must match launch manifests and contact windows."
+        },
+        {
+            "id": "network_security_07",
+            "title": "Logging & SIEM Health Check",
+            "description": "Confirm syslog coverage, time sync, and correlation rules so hunt teams have clean data. Ref: DoDI 8500.01.",
+            "bulletpoints": [
+                "Verify NTP sources",
+                "Test log forwarding",
+                "Review correlation gaps"
+            ],
+            "duration": 11,
+            "difficulty": "Advanced",
+            "summaryText": "Bad logs equal blind MDTs—keep the data trustworthy."
+        },
+        {
+            "id": "network_security_08",
+            "title": "Supply Chain Assurance",
+            "description": "Inspect HBSS/ESS baselines, firmware provenance, and SBOM records per DoDI 5200.44 to mitigate tampered hardware. Ref: AFDP 3-14.",
+            "bulletpoints": [
+                "Review SBOM updates",
+                "Check signed firmware",
+                "Document vendor attestations"
+            ],
+            "duration": 13,
+            "difficulty": "Advanced",
+            "summaryText": "Space systems ride unique supply chains; verify every component."
+        },
+        {
+            "id": "network_security_09",
+            "title": "SCIF Cross-Domain Safeguards",
+            "description": "Validate Cross Domain Solution guard queues, releasability rules, and auditing for ISR data flows. Ref: CNSSI 1253.",
+            "bulletpoints": [
+                "Test guard transfer",
+                "Review release justifications",
+                "Archive guard audit logs"
+            ],
+            "duration": 12,
+            "difficulty": "Advanced",
+            "summaryText": "Cross-domain errors can halt joint ops—treat them like mission critical gear."
+        },
+        {
+            "id": "network_security_10",
+            "title": "OT Segmentation Drill",
+            "description": "Ensure antenna pedestals, UPS, and HVAC controls stay segmented with correctly configured ACLs and monitoring. Ref: DoDI 8500.01.",
+            "bulletpoints": [
+                "Label OT VLANs",
+                "Check ACL enforcement",
+                "Alert on lateral moves"
+            ],
+            "duration": 10,
+            "difficulty": "Advanced",
+            "summaryText": "Operational tech is mission equipment; defend it like avionics."
+        },
+        {
+            "id": "network_security_11",
+            "title": "Encryption Posture Review",
+            "description": "Verify TLS versions, IPsec tunnels, and crypto device key loads align with CNSSP-15 guidance. Ref: AFI 17-130.",
+            "bulletpoints": [
+                "Check cipher suites",
+                "Validate key rotation",
+                "Document tunneling paths"
+            ],
+            "duration": 8,
+            "difficulty": "Advanced",
+            "summaryText": "Crypto currency isn't financial—it's mission assurance."
+        },
+        {
+            "id": "network_security_12",
+            "title": "Configuration Baseline Audit",
+            "description": "Compare current configs to the secure baseline repository, documenting deviations with mission risk rationale. Ref: AFMAN 63-119.",
+            "bulletpoints": [
+                "Export running configs",
+                "Diff vs. gold image",
+                "Log authorized deviations"
+            ],
+            "duration": 11,
+            "difficulty": "Advanced",
+            "summaryText": "Config drift equals vulnerability debt—pay it down daily."
+        }
+    ]
+}

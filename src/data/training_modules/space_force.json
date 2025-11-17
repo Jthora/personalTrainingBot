@@ -1,0 +1,21 @@
+{
+    "id": "space_force",
+    "name": "Space Force Command",
+    "color": "#5A7FFF",
+    "description": "USSF-ready progression aligned with AFDP 3-14, SDP 3-0, and the Guardian Ideal across space operations, cyber defense, intelligence fusion, leadership, and resilience pillars.",
+    "submodules": [
+        "space_operations",
+        "cyber_defense",
+        "intelligence_and_analysis",
+        "leadership_and_professionalism",
+        "physical_and_resilience",
+        "fleet_coordination_protocols",
+        "joint_space_operations",
+        "microgravity_readiness",
+        "nebula_siege_resilience",
+        "orbital_operations_planning",
+        "orbital_tactics_command",
+        "space_contingency_resilience",
+        "zero_gravity_conditioning"
+    ]
+}

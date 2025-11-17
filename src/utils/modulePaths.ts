@@ -19,5 +19,6 @@ export const modulePaths = {
     web_three: createJsonLoader<TrainingModuleFile>(() => import("../data/training_modules/web_three.json")),
     self_sovereignty: createJsonLoader<TrainingModuleFile>(() => import("../data/training_modules/self_sovereignty.json")),
     anti_psn: createJsonLoader<TrainingModuleFile>(() => import("../data/training_modules/anti_psn.json")),
-    anti_tcs_idc_cbc: createJsonLoader<TrainingModuleFile>(() => import("../data/training_modules/anti_tcs_idc_cbc.json"))
+    anti_tcs_idc_cbc: createJsonLoader<TrainingModuleFile>(() => import("../data/training_modules/anti_tcs_idc_cbc.json")),
+    space_force: createJsonLoader<TrainingModuleFile>(() => import("../data/training_modules/space_force.json"))
 } satisfies Record<string, () => Promise<TrainingModuleFile>>;

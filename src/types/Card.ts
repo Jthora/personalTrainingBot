@@ -6,4 +6,5 @@ export type Card = {
     duration: number; // in minutes
     difficulty: "Beginner" | "Light" | "Standard" | "Intermediate" | "Advanced" | "Heavy" | "Challenge" | "Unknown";
     summaryText?: string; // 140-280 character shareable summary
+    classification?: string; // e.g., FOUO, UNCLASS
 };

@@ -39,29 +39,46 @@ const WorkoutList: React.FC = () => {
     }
 
     console.log('Rendering workout list...');
+    const upcomingItems = schedule.scheduleItems.flatMap((item, index) => {
+        if (item instanceof WorkoutSet) {
+            return item.workouts
+                .filter(([, completed]) => !completed)
+                .map(([workout], workoutIndex) => (
+                    <WorkoutCard
+                        key={`${index}-${workoutIndex}`}
+                        item={workout}
+                        onClick={() => console.log('WorkoutList Card Clicked:', workout.id)}
+                    />
+                ));
+        }
+
+        if (item instanceof WorkoutBlock) {
+            return [
+                <WorkoutCard
+                    key={`block-${index}`}
+                    item={item}
+                    onClick={() => console.log('WorkoutList Card Clicked:', index)}
+                />
+            ];
+        }
+
+        console.error('Unknown item type in schedule:', item);
+        return [
+            <div key={`unknown-${index}`} className={styles.unknownItem}>Unknown Item</div>
+        ];
+    });
+
     return (
         <div className={styles.workoutList}>
-            Up Next:
-            {schedule.scheduleItems.map((item, index) => {
-                if (item instanceof WorkoutSet) {
-                    return item.workouts
-                        .filter(([, completed]) => !completed)
-                        .map(([workout], workoutIndex) => (
-                            <WorkoutCard key={`${index}-${workoutIndex}`} item={workout} onClick={() => {
-                                console.log('WorkoutList Card Clicked:', workout.id);
-                            }} />
-                        ));
-                } else if (item instanceof WorkoutBlock) {
-                    return (
-                        <WorkoutCard key={index} item={item} onClick={() => {
-                            console.log('WorkoutList Card Clicked:', index);
-                        }} />
-                    );
-                } else {
-                    console.error('Unknown item type in schedule:', item);
-                    return <div key={index} className={styles.unknownItem}>Unknown Item</div>;
-                }
-            })}
+            <div className={styles.listHeader}>
+                <span>Up Next</span>
+                <span className={styles.listMeta}>{schedule.date}</span>
+            </div>
+            <div className={styles.cardStack}>
+                {upcomingItems.length > 0 ? upcomingItems : (
+                    <div className={styles.noWorkouts}>Workout schedule is empty</div>
+                )}
+            </div>
         </div>
     );
 };

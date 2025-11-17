@@ -1,8 +1,8 @@
 # Card Catalog
 
-Generated on 2025-10-02
+Generated on 2025-11-15
 
-Total decks cataloged: 642
+Total decks cataloged: 663
 
 ## Module: Agencies (`agencies`)
 
@@ -1676,3 +1676,91 @@ Total decks cataloged: 642
 | `blockchain_pen_testing` | Blockchain Penetration Testing | 3 | `src/data/training_modules/training_sub_modules/web_three/card_decks/web_three_security_and_auditing/blockchain_pen_testing.json` |
 | `common_smart_contract_vulnerabilities` | Common Smart Contract Vulnerabilities | 3 | `src/data/training_modules/training_sub_modules/web_three/card_decks/web_three_security_and_auditing/common_smart_contract_vulnerabilities.json` |
 | `web3_security_frameworks` | Web3 Security Frameworks | 3 | `src/data/training_modules/training_sub_modules/web_three/card_decks/web_three_security_and_auditing/web_three_security_frameworks.json` |
+
+## Module: Space Force Command (`space_force`)
+
+### Submodule: Space Operations (`space_operations`)
+
+| Deck ID | Deck Name | Card Count | File |
+| --- | --- | --- | --- |
+| `orbital_mechanics` | Orbital Mechanics | 12 | `src/data/training_modules/training_sub_modules/space_force/card_decks/space_operations/orbital_mechanics.json` |
+| `satellite_systems` | Satellite Systems | 12 | `src/data/training_modules/training_sub_modules/space_force/card_decks/space_operations/satellite_systems.json` |
+| `space_domain_awareness` | Space Domain Awareness | 12 | `src/data/training_modules/training_sub_modules/space_force/card_decks/space_operations/space_domain_awareness.json` |
+
+### Submodule: Cyber Defense (`cyber_defense`)
+
+| Deck ID | Deck Name | Card Count | File |
+| --- | --- | --- | --- |
+| `network_security` | Network Security | 12 | `src/data/training_modules/training_sub_modules/space_force/card_decks/cyber_defense/network_security.json` |
+| `cyber_threat_response` | Cyber Threat Response | 12 | `src/data/training_modules/training_sub_modules/space_force/card_decks/cyber_defense/cyber_threat_response.json` |
+| `zero_trust` | Zero-Trust Integration | 12 | `src/data/training_modules/training_sub_modules/space_force/card_decks/cyber_defense/zero_trust.json` |
+
+### Submodule: Intelligence & Analysis (`intelligence_and_analysis`)
+
+| Deck ID | Deck Name | Card Count | File |
+| --- | --- | --- | --- |
+| `space_isr` | Space ISR | 12 | `src/data/training_modules/training_sub_modules/space_force/card_decks/intelligence_and_analysis/space_isr.json` |
+| `joint_multi_domain_ops` | Joint Multi-Domain Ops | 12 | `src/data/training_modules/training_sub_modules/space_force/card_decks/intelligence_and_analysis/joint_multi_domain_ops.json` |
+| `intel_fusion_cell_ops` | Intel Fusion Cell Ops | 12 | `src/data/training_modules/training_sub_modules/space_force/card_decks/intelligence_and_analysis/intel_fusion_cell_ops.json` |
+
+### Submodule: Leadership & Professionalism (`leadership_and_professionalism`)
+
+| Deck ID | Deck Name | Card Count | File |
+| --- | --- | --- | --- |
+| `emotional_intelligence` | Emotional Intelligence | 12 | `src/data/training_modules/training_sub_modules/space_force/card_decks/leadership_and_professionalism/emotional_intelligence.json` |
+| `ethical_decision_making` | Ethical Decision-Making | 12 | `src/data/training_modules/training_sub_modules/space_force/card_decks/leadership_and_professionalism/ethical_decision_making.json` |
+
+### Submodule: Physical & Resilience (`physical_and_resilience`)
+
+| Deck ID | Deck Name | Card Count | File |
+| --- | --- | --- | --- |
+| `ussf_fitness_standards` | USSF Fitness Standards | 12 | `src/data/training_modules/training_sub_modules/space_force/card_decks/physical_and_resilience/ussf_fitness_standards.json` |
+| `mental_toughness` | Mental Toughness | 12 | `src/data/training_modules/training_sub_modules/space_force/card_decks/physical_and_resilience/mental_toughness.json` |
+
+### Submodule: Fleet Coordination Protocols (`fleet_coordination_protocols`)
+
+| Deck ID | Deck Name | Card Count | File |
+| --- | --- | --- | --- |
+| `formation_link_management` | Formation Link Management Drills | 6 | `src/data/training_modules/training_sub_modules/space_force/card_decks/fleet_coordination_protocols/formation_link_management.json` |
+
+### Submodule: Joint Space Operations (`joint_space_operations`)
+
+| Deck ID | Deck Name | Card Count | File |
+| --- | --- | --- | --- |
+| `joint_c2_rehearsal` | Joint C2 Rehearsal Blocks | 6 | `src/data/training_modules/training_sub_modules/space_force/card_decks/joint_space_operations/joint_c2_rehearsal.json` |
+
+### Submodule: Microgravity Readiness (`microgravity_readiness`)
+
+| Deck ID | Deck Name | Card Count | File |
+| --- | --- | --- | --- |
+| `vestibular_adaptation_drills` | Vestibular Adaptation Drills | 6 | `src/data/training_modules/training_sub_modules/space_force/card_decks/microgravity_readiness/vestibular_adaptation_drills.json` |
+
+### Submodule: Nebula Siege Resilience (`nebula_siege_resilience`)
+
+| Deck ID | Deck Name | Card Count | File |
+| --- | --- | --- | --- |
+| `siege_resilience_leadership` | Siege Resilience Leadership | 6 | `src/data/training_modules/training_sub_modules/space_force/card_decks/nebula_siege_resilience/siege_resilience_leadership.json` |
+
+### Submodule: Orbital Operations Planning (`orbital_operations_planning`)
+
+| Deck ID | Deck Name | Card Count | File |
+| --- | --- | --- | --- |
+| `rapid_orbit_planning` | Rapid Orbit Planning Cell | 6 | `src/data/training_modules/training_sub_modules/space_force/card_decks/orbital_operations_planning/rapid_orbit_planning.json` |
+
+### Submodule: Orbital Tactics Command (`orbital_tactics_command`)
+
+| Deck ID | Deck Name | Card Count | File |
+| --- | --- | --- | --- |
+| `orbital_strike_packages` | Orbital Strike Package Tactics | 6 | `src/data/training_modules/training_sub_modules/space_force/card_decks/orbital_tactics_command/orbital_strike_packages.json` |
+
+### Submodule: Space Contingency Resilience (`space_contingency_resilience`)
+
+| Deck ID | Deck Name | Card Count | File |
+| --- | --- | --- | --- |
+| `contingency_anomaly_response` | Contingency Anomaly Response | 6 | `src/data/training_modules/training_sub_modules/space_force/card_decks/space_contingency_resilience/contingency_anomaly_response.json` |
+
+### Submodule: Zero-Gravity Conditioning (`zero_gravity_conditioning`)
+
+| Deck ID | Deck Name | Card Count | File |
+| --- | --- | --- | --- |
+| `zero_g_strength_block` | Zero-G Strength Block | 6 | `src/data/training_modules/training_sub_modules/space_force/card_decks/zero_gravity_conditioning/zero_g_strength_block.json` |

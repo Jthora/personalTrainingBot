@@ -1,217 +1,138 @@
 @import '../../styles/theme.css';
 
 .header {
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
-    justify-content: space-between;
-    color: #ffffff;
-    height: 60px;
-    border-bottom: 2px solid #333;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    overflow: hidden;
-}
-
-.header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.02), transparent);
-    pointer-events: none;
-}
-
-/* Left Section */
-.leftSection {
     display: flex;
     align-items: center;
-    flex: 0 0 auto;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 18px;
+    background: var(--surface-card);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 18px;
+    right: 18px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--coach-accent), transparent);
+    opacity: 0.35;
+}
+
+.leftSection {
+    display: flex;
+    align-items: stretch;
+    gap: 12px;
+    height: 100%;
 }
 
 .logoContainer {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     padding: 0;
+    margin: 0;
+    height: 100%;
 }
 
 .logo {
-    height: 60px;
+    height: 100%;
     width: auto;
+    filter: saturate(0.6);
     mix-blend-mode: screen;
-    filter: brightness(1.0) contrast(1.0);
-    transition: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    object-fit: cover;
 }
 
-/* Center Section */
 .centerSection {
+    flex: 1;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    flex: 1;
-    padding-left: 16px;
+    padding-left: 12px;
 }
 
 .headerTitle {
-    font-size: 1.75em;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 1.75rem;
     padding: 0;
     margin: 0;
     line-height: 1;
     font-weight: 700;
-    color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    letter-spacing: 1px;
+    color: var(--text-primary);
+    letter-spacing: 0.08em;
     text-transform: uppercase;
 }
 
-/* Right Section */
 .rightSection {
     display: flex;
     align-items: center;
-    gap: 16px;
-    flex: 0 0 auto;
+    gap: 12px;
 }
 
-/* Navigation */
 .nav {
     display: flex;
-    align-items: center;
-    gap: 2px;
+    gap: 6px;
 }
 
 .navButton {
     background: transparent;
-    color: #ffffff;
-    border: 2px solid var(--coach-color, #333);
-    padding: 10px 16px;
-    cursor: pointer;
-    font-size: 0.85em;
-    font-family: Aldrich, sans-serif;
-    font-weight: 600;
+    color: var(--text-primary);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 3px;
+    padding: 8px 12px;
+    font-size: 0.75rem;
+    font-family: 'Aldrich', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    transition: all 0.2s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.navButton::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-    transition: left 0.3s ease;
+    letter-spacing: 0.12em;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background 0.2s ease;
 }
 
 .navButton:hover {
-    background: var(--coach-color, rgba(255, 255, 255, 0.1));
-    border-color: var(--coach-color, #555);
-    transform: translateY(-1px);
-    color: #ffffff;
-}
-
-.navButton:hover::before {
-    left: 100%;
+    border-color: var(--coach-accent);
+    background: rgba(90, 127, 255, 0.08);
 }
 
 .active {
-    background: var(--coach-color, #ff0000);
-    color: #ffffff;
-    border-color: var(--coach-color, #cc0000);
-    font-weight: 700;
-    box-shadow: 0 0 10px var(--coach-color, rgba(255, 0, 0, 0.5));
+    border-color: var(--coach-accent);
+    background: rgba(90, 127, 255, 0.15);
 }
 
-.active:hover {
-    background: var(--coach-color, #cc0000);
-    box-shadow: 0 0 15px var(--coach-color, rgba(255, 0, 0, 0.7));
-}
-
-/* Login Section */
 .loginSection {
-    position: relative;
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.themeToggleButton {
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
-    border: 2px solid var(--coach-color, #333);
-    cursor: pointer;
-    font-size: 1.2em;
-    transition: all 0.2s ease;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.themeToggleButton:hover {
-    background: var(--coach-color, rgba(255, 255, 255, 0.2));
-    border-color: var(--coach-color, #555);
-    transform: translateY(-1px);
-    color: #ffffff;
-}
-
+.themeToggleButton,
 .loginButton {
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(135deg, var(--coach-color, #ff0000) 0%, var(--coach-color, #cc0000) 100%);
-    color: #ffffff;
-    border: 2px solid var(--coach-color, #aa0000);
-    cursor: pointer;
-    font-size: 1.2em;
-    transition: all 0.2s ease;
-    position: relative;
-    overflow: hidden;
+    width: 36px;
+    height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: var(--surface-muted);
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: border-color 0.2s ease, background 0.2s ease;
 }
 
-.loginButton::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.3s ease;
-}
-
+.themeToggleButton:hover,
 .loginButton:hover {
-    background: linear-gradient(135deg, var(--coach-color, #cc0000) 0%, var(--coach-color, #aa0000) 100%);
-    border-color: var(--coach-color, #880000);
-    transform: translateY(-1px);
-    box-shadow: 0 2px 8px var(--coach-color, rgba(255, 0, 0, 0.4));
+    border-color: var(--coach-accent);
+    background: rgba(90, 127, 255, 0.1);
 }
 
-.loginButton:hover::before {
-    left: 100%;
-}
-
-.loginButton:active {
-    transform: translateY(0);
-    box-shadow: 0 1px 4px rgba(255, 0, 0, 0.6);
-}
-
-/* User Profile Styles */
 .userProfile {
     position: relative;
 }
@@ -219,87 +140,69 @@
 .userButton {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 8px 16px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 2px solid var(--coach-color, #333);
-    color: #ffffff;
+    gap: 10px;
+    padding: 6px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 3px;
+    background: transparent;
+    color: var(--text-primary);
     cursor: pointer;
-    transition: all 0.2s ease;
-    font-family: Aldrich, sans-serif;
-    font-size: 0.85em;
-    font-weight: 600;
     text-transform: uppercase;
+    letter-spacing: 0.08em;
 }
 
 .userButton:hover {
-    background: var(--coach-color, rgba(255, 255, 255, 0.15));
-    border-color: var(--coach-color, #555);
-    transform: translateY(-1px);
-    color: #ffffff;
+    border-color: var(--coach-accent);
 }
 
 .userInfo {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 2px;
+    line-height: 1.1;
 }
 
 .userName {
-    font-weight: 700;
-    font-size: 0.9em;
-    letter-spacing: 0.3px;
-}
-
-.connectionStatus {
-    font-size: 0.7em;
-    color: #00ff00;
-    font-weight: 600;
-    text-transform: uppercase;
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
 }
 
 .userAvatar {
-    font-size: 1.2em;
-    width: 32px;
-    height: 32px;
-    border: 2px solid #333;
+    width: 28px;
+    height: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.1);
+    font-size: 0.85rem;
+}
+
+.connectionStatus {
+    font-size: 0.65rem;
+    color: var(--coach-accent);
+    letter-spacing: 0.1em;
 }
 
 .userMenu {
     position: absolute;
-    top: 100%;
-    left: 0;
+    top: calc(100% + 8px);
     right: 0;
-    margin-top: 8px;
-    background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
-    border: 2px solid #333;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
-    z-index: 1000;
-    overflow: hidden;
+    min-width: 200px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: var(--surface-card);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
 }
 
 .menuItem {
-    padding: 12px 16px;
-    color: #ffffff;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    font-family: Aldrich, sans-serif;
-    font-size: 0.85em;
-    font-weight: 600;
+    padding: 10px 14px;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
-    letter-spacing: 0.3px;
-    border-bottom: 1px solid #333;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .menuItem:hover {
-    background: rgba(255, 0, 0, 0.2);
-    border-color: #ff0000;
-    padding-left: 20px;
+    background: rgba(90, 127, 255, 0.12);
 }
 
 .menuItem:last-child {
@@ -307,318 +210,83 @@
 }
 
 .menuSeparator {
-    height: 2px;
-    background: #333;
-    margin: 4px 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.12);
 }
 
-/* Add body padding utility for pages */
 .headerSpacer {
     height: 60px;
-    flex-shrink: 0;
 }
 
-/* Light Theme Support */
 [data-theme="light"] .header {
-    background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 50%, #f0f0f0 100%);
-    color: #000000;
-    border-bottom: 2px solid #ccc;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    background: #f7f7f7;
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+    color: #0d0d0d;
 }
 
-[data-theme="light"] .headerTitle {
-    color: #000000;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
-}
-
-[data-theme="light"] .logo {
-    mix-blend-mode: multiply;
-    filter: invert(1) brightness(1.0) contrast(1.0);
-}
-
-[data-theme="light"] .navButton {
-    color: #000000;
-    border-color: var(--coach-color, #ccc);
-}
-
-[data-theme="light"] .navButton:hover {
-    background: var(--coach-color, rgba(0, 0, 0, 0.1));
-    border-color: var(--coach-color, #999);
-    color: #ffffff;
-}
-
-[data-theme="light"] .active {
-    background: var(--coach-color, #ff0000);
-    color: #ffffff;
-    border-color: var(--coach-color, #cc0000);
-}
-
-[data-theme="light"] .themeToggleButton {
-    background: rgba(0, 0, 0, 0.1);
-    color: #000000;
-    border-color: var(--coach-color, #ccc);
-}
-
-[data-theme="light"] .themeToggleButton:hover {
-    background: var(--coach-color, rgba(0, 0, 0, 0.2));
-    border-color: var(--coach-color, #999);
-    color: #ffffff;
-}
-
+[data-theme="light"] .navButton,
+[data-theme="light"] .themeToggleButton,
+[data-theme="light"] .loginButton,
 [data-theme="light"] .userButton {
-    background: rgba(0, 0, 0, 0.1);
-    color: #000000;
-    border-color: var(--coach-color, #ccc);
+    color: #0d0d0d;
+    border-color: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.02);
 }
 
+[data-theme="light"] .navButton:hover,
+[data-theme="light"] .themeToggleButton:hover,
+[data-theme="light"] .loginButton:hover,
 [data-theme="light"] .userButton:hover {
-    background: var(--coach-color, rgba(0, 0, 0, 0.15));
-    border-color: var(--coach-color, #999);
-    color: #ffffff;
+    border-color: var(--coach-accent);
+    background: rgba(90, 127, 255, 0.12);
 }
 
-[data-theme="light"] .userMenu {
-    background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
-    border-color: #ccc;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-
-[data-theme="light"] .menuItem {
-    color: #000000;
-    border-bottom: 1px solid #ccc;
-}
-
-[data-theme="light"] .menuItem:hover {
-    background: rgba(255, 0, 0, 0.1);
-    border-color: #ff0000;
-}
-
-/* Responsive Design */
 @media (max-width: 1024px) {
     .header {
-        padding: 0 16px;
         height: 56px;
+        padding: 0 14px;
     }
-    
+
     .headerSpacer {
         height: 56px;
     }
-    
+
     .headerTitle {
-        font-size: 1.5em;
-    }
-    
-    .logo {
-        height: 56px;
-    }
-    
-    .rightSection {
-        gap: 12px;
-    }
-    
-    .nav {
-        gap: 1px;
-    }
-    
-    .navButton {
-        padding: 8px 12px;
-        font-size: 0.8em;
-    }
-    
-    .loginButton,
-    .themeToggleButton {
-        width: 36px;
-        height: 36px;
-        font-size: 1.1em;
-    }
-    
-    .loginSection {
-        gap: 6px;
+        letter-spacing: 0.25em;
     }
 }
 
 @media (max-width: 768px) {
     .header {
-        padding: 0 12px;
         height: 52px;
+        padding: 0 12px;
     }
-    
+
     .headerSpacer {
         height: 52px;
     }
-    
-    .headerTitle {
-        font-size: 1.3em;
-        letter-spacing: 0.5px;
-    }
-    
-    .logo {
-        height: 52px;
-    }
-    
-    .rightSection {
-        gap: 8px;
-    }
-    
+
     .nav {
-        gap: 1px;
-    }
-    
-    .navButton {
-        padding: 6px 10px;
-        font-size: 0.75em;
-    }
-    
-    .loginButton,
-    .themeToggleButton {
-        width: 32px;
-        height: 32px;
-        font-size: 1em;
-    }
-    
-    .loginSection {
-        gap: 4px;
-    }
-    
-    .userButton {
-        padding: 6px 12px;
-        font-size: 0.75em;
-    }
-    
-    .userAvatar {
-        width: 28px;
-        height: 28px;
-        font-size: 1em;
-    }
-    
-    .userName {
-        font-size: 0.8em;
-    }
-    
-    .connectionStatus {
-        font-size: 0.6em;
+        display: none;
     }
 }
 
 @media (max-width: 480px) {
     .header {
-        padding: 0 8px;
         height: 48px;
+        padding: 0 10px;
     }
-    
-    .headerSpacer {
-        height: 48px;
-    }
-    
-    .headerTitle {
-        font-size: 1.1em;
-        letter-spacing: 0.3px;
-    }
-    
-    .logo {
-        height: 48px;
-    }
-    
-    .rightSection {
-        gap: 6px;
-    }
-    
-    .navButton {
-        padding: 5px 8px;
-        font-size: 0.7em;
-    }
-    
-    .loginButton,
-    .themeToggleButton {
-        width: 28px;
-        height: 28px;
-        font-size: 0.9em;
-    }
-    
-    .loginSection {
-        gap: 3px;
-    }
-    
-    .userButton {
-        padding: 5px 10px;
-        font-size: 0.7em;
-    }
-    
-    .userAvatar {
-        width: 24px;
-        height: 24px;
-        font-size: 0.9em;
-    }
-    
-    .userName {
-        font-size: 0.75em;
-    }
-    
-    .connectionStatus {
-        font-size: 0.55em;
-    }
-    
-    .menuItem {
-        padding: 10px 12px;
-        font-size: 0.75em;
-    }
-}
 
-@media (max-width: 360px) {
-    .header {
-        padding: 0 6px;
-        height: 44px;
-    }
-    
     .headerSpacer {
-        height: 44px;
+        height: 48px;
     }
-    
+
     .headerTitle {
-        font-size: 1em;
-        letter-spacing: 0.2px;
+        font-size: 0.95rem;
+        letter-spacing: 0.18em;
     }
-    
-    .logo {
-        height: 44px;
-    }
-    
-    .rightSection {
-        gap: 4px;
-    }
-    
-    .navButton {
-        padding: 4px 6px;
-        font-size: 0.65em;
-    }
-    
-    .loginButton,
-    .themeToggleButton {
-        width: 24px;
-        height: 24px;
-        font-size: 0.8em;
-    }
-    
-    .loginSection {
-        gap: 2px;
-    }
-    
-    .userButton {
-        padding: 4px 8px;
-        font-size: 0.65em;
-    }
-    
-    .userAvatar {
-        width: 20px;
-        height: 20px;
-        font-size: 0.8em;
-    }
-    
-    .userName {
-        font-size: 0.7em;
-    }
-    
-    .connectionStatus {
+
+    .userButton span {
         display: none;
     }
 }

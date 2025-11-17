@@ -65,6 +65,13 @@ import './ComponentName.css';
 - Maintain consistent spacing and typography
 - Use CSS custom properties for themes
 
+#### Coach-Aware Theming
+- Every coach defines a palette in `src/data/coachThemes.ts` (accent, glow, surfaces, text).
+- `CoachSelectionContext` automatically applies these colors to global CSS variables (`--coach-accent`, `--surface-card`, etc.).
+- In CSS modules, prefer the semantic tokens (for example `background: var(--surface-card);` and `border-color: var(--coach-border);`).
+- For JavaScript-driven visuals, use the `useCoachTheme` hook to read the current `CoachPalette` directly without querying the DOM.
+- When adding a new coach or component, extend the palette map instead of hard-coding colors so the entire UI swaps hues consistently.
+
 ### Testing Guidelines
 
 #### Unit Tests

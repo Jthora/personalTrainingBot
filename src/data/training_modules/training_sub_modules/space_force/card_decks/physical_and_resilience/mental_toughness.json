@@ -1,0 +1,168 @@
+{
+    "id": "mental_toughness",
+    "name": "Mental Toughness",
+    "description": "Guardian Resilience and IDEAL-aligned cognitive drills.",
+    "focus": [
+        "Cognitive Resilience",
+        "Stress Inoculation",
+        "Mindfulness"
+    ],
+    "cards": [
+        {
+            "id": "mental_toughness_01",
+            "title": "Guardian Breathing Ladder",
+            "description": "Practice 4-4-4-4 box breathing, 4-7-8 downshift, and tactical breathing before and after high stakes sims. Ref: Guardian Resilience Training.",
+            "bulletpoints": [
+                "Cycle 5 rounds",
+                "Note HR drop",
+                "Pair with grounding"
+            ],
+            "duration": 6,
+            "difficulty": "Standard",
+            "summaryText": "Breathing ladders reset your nervous system in under a minute."
+        },
+        {
+            "id": "mental_toughness_02",
+            "title": "Cognitive Reframing Drill",
+            "description": "Use the ABC (Activating event, Belief, Consequence) worksheet from the Guardian Resilience Framework to reframe stress stories. Ref: Guardian Resilience Framework.",
+            "bulletpoints": [
+                "Write the event",
+                "List automatic belief",
+                "Design balanced thought"
+            ],
+            "duration": 9,
+            "difficulty": "Standard",
+            "summaryText": "Reframing keeps setbacks from spiraling into catastrophes."
+        },
+        {
+            "id": "mental_toughness_03",
+            "title": "Imagery Rehearsal",
+            "description": "Spend 10 minutes visualizing flawless crew execution using all five senses before check-rides. Ref: USAF MRT curriculum.",
+            "bulletpoints": [
+                "Script best-case",
+                "Engage senses",
+                "Repeat daily"
+            ],
+            "duration": 10,
+            "difficulty": "Standard",
+            "summaryText": "Imagery primes the brain to treat success as familiar."
+        },
+        {
+            "id": "mental_toughness_04",
+            "title": "Stress Inoculation Sets",
+            "description": "Pair moderate physical exertion with technical tasks to simulate ops stress (per Guardian Resilience Field Guide).",
+            "bulletpoints": [
+                "Do 2-min cardio burst",
+                "Execute console checklist",
+                "Debrief errors"
+            ],
+            "duration": 14,
+            "difficulty": "Standard",
+            "summaryText": "Train the brain to think clearly while the body is stressed."
+        },
+        {
+            "id": "mental_toughness_05",
+            "title": "Battle Buddy Check",
+            "description": "Adopt the Guardian Wingman script (ASK, CARE, ESCORT) monthly to normalize mental health conversations. Ref: Guardian Resilience Program.",
+            "bulletpoints": [
+                "Set recurring reminders",
+                "Use ASK-CARE-ESCORT",
+                "Document referrals"
+            ],
+            "duration": 8,
+            "difficulty": "Standard",
+            "summaryText": "Wingman checks create early off-ramps from crisis."
+        },
+        {
+            "id": "mental_toughness_06",
+            "title": "Micro-Recovery Toolkit",
+            "description": "Build a list of five-minute resets (walk, journal, breathwork) and post near consoles per Guardian Ideal guidance.",
+            "bulletpoints": [
+                "Crowdsource ideas",
+                "Post near duty desk",
+                "Model usage"
+            ],
+            "duration": 7,
+            "difficulty": "Standard",
+            "summaryText": "Micro-resets prevent macro burnouts."
+        },
+        {
+            "id": "mental_toughness_07",
+            "title": "Values-to-Action Alignment",
+            "description": "Review personal core values and list two weekly actions demonstrating alignment, as directed in the Guardian Ideal workbook.",
+            "bulletpoints": [
+                "List top values",
+                "Plan tangible acts",
+                "Reflect on outcomes"
+            ],
+            "duration": 11,
+            "difficulty": "Standard",
+            "summaryText": "Purpose fuels resilience when behaviors align with beliefs."
+        },
+        {
+            "id": "mental_toughness_08",
+            "title": "Sleep Shield Protocol",
+            "description": "Execute the USAF Sleep Optimization checklist (caffeine cutoff, blue light reduction, pre-bed routine) nightly. Ref: USAF Sleep Guide.",
+            "bulletpoints": [
+                "Set caffeine curfew",
+                "Dim screens",
+                "Create wind-down ritual"
+            ],
+            "duration": 9,
+            "difficulty": "Standard",
+            "summaryText": "Sleep discipline is mental armor for Guardians."
+        },
+        {
+            "id": "mental_toughness_09",
+            "title": "Mindfulness Minute",
+            "description": "Integrate one-minute grounding breaks (5-4-3-2-1 senses) at top of every hour on console. Ref: Guardian Resilience Program.",
+            "bulletpoints": [
+                "Set hourly timer",
+                "Cycle senses",
+                "Return to task"
+            ],
+            "duration": 6,
+            "difficulty": "Standard",
+            "summaryText": "Short mindfulness bursts maintain focus during 12-hour watches."
+        },
+        {
+            "id": "mental_toughness_10",
+            "title": "After-Action Emotional Sweep",
+            "description": "Add an emotion check to every AAR (what did you feel, what do you need) to process stress in real time. Ref: Guardian Resilience Framework.",
+            "bulletpoints": [
+                "Prompt each member",
+                "Normalize honesty",
+                "Identify resources"
+            ],
+            "duration": 8,
+            "difficulty": "Standard",
+            "summaryText": "Feelings aired quickly rarely become morale problems."
+        },
+        {
+            "id": "mental_toughness_11",
+            "title": "Peak/Recover Calendar",
+            "description": "Plot mission surge windows against personal life events to pre-plan support, using the Guardian Resilience Planner.",
+            "bulletpoints": [
+                "Mark peak ops",
+                "Schedule family touchpoints",
+                "Arrange backup support"
+            ],
+            "duration": 12,
+            "difficulty": "Standard",
+            "summaryText": "Proactive calendars reduce stress collisions at home and work."
+        },
+        {
+            "id": "mental_toughness_12",
+            "title": "Gratitude Transmission",
+            "description": "Send a weekly gratitude note or voice memo to a teammate, reinforcing optimism bias rewiring. Ref: Guardian Ideal.",
+            "bulletpoints": [
+                "Pick recipient",
+                "State specific impact",
+                "Share publicly when appropriate"
+            ],
+            "duration": 5,
+            "difficulty": "Standard",
+            "summaryText": "Gratitude protects morale and strengthens teams."
+        }
+    ]
+}

@@ -59,6 +59,8 @@ class CardDataLoader {
                                             name: deckData.name,
                                             description: deckData.description,
                                             focus: deckData.focus,
+                                            badge: deckData.badge,
+                                            difficultyTags: deckData.difficultyTags,
                                             cards: deckData.cards.map((card: Card) => {
                                                 const bulletpoints = Array.isArray(card.bulletpoints)
                                                     ? card.bulletpoints
@@ -75,7 +77,8 @@ class CardDataLoader {
                                                     bulletpoints: bulletpoints,
                                                     duration: card.duration,
                                                     difficulty: card.difficulty,
-                                                    summaryText
+                                                    summaryText,
+                                                    classification: card.classification
                                                 };
                                             })
                                         };

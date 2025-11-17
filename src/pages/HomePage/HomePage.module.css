@@ -1,35 +1,62 @@
+@import '../../styles/theme.css';
+
 .pageContainer {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    padding-top: 60px; /* Match header height */
+    background: var(--surface-base);
+    position: relative;
+    padding-top: 60px;
+    color: var(--text-primary);
+}
+
+.pageContainer::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 120px 120px;
+    pointer-events: none;
+    z-index: 0;
 }
 
 .content {
-    display: flex;
+    position: relative;
+    z-index: 1;
     flex: 1;
-    flex-direction: row;
-    height: calc(100vh - 60px); /* Subtract header height */
+    display: grid;
+    grid-template-columns: minmax(320px, 26%) 1fr;
+    gap: 18px;
+    padding: 20px 24px 24px;
 }
 
 .sidebar {
-    width: 25%;
+    height: calc(100vh - 92px);
 }
 
 .mainContent {
-    flex: 1;
-    padding: 16px;
+    height: calc(100vh - 92px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    background: var(--surface-card);
+    display: flex;
+    flex-direction: column;
 }
 
-/* Responsive adjustments for header height */
 @media (max-width: 1024px) {
     .pageContainer {
         padding-top: 56px;
     }
-    
+
     .content {
-        height: calc(100vh - 56px);
+        grid-template-columns: minmax(280px, 32%) 1fr;
+    }
+
+    .sidebar,
+    .mainContent {
+        height: calc(100vh - 88px);
     }
 }
 
@@ -37,9 +64,14 @@
     .pageContainer {
         padding-top: 52px;
     }
-    
+
     .content {
-        height: calc(100vh - 52px);
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar,
+    .mainContent {
+        height: auto;
     }
 }
 
@@ -47,18 +79,15 @@
     .pageContainer {
         padding-top: 48px;
     }
-    
+
     .content {
-        height: calc(100vh - 48px);
+        padding: 16px;
+        gap: 12px;
     }
 }
 
 @media (max-width: 360px) {
     .pageContainer {
         padding-top: 44px;
-    }
-    
-    .content {
-        height: calc(100vh - 44px);
     }
 }

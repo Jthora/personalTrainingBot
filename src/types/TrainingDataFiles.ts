@@ -23,6 +23,8 @@ export interface CardDeckFile {
     name: string;
     description: string;
     focus: string[];
+    badge?: string;
+    difficultyTags?: string[];
     cards: Card[];
 }
 

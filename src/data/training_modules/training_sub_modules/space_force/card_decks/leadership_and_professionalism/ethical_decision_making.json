@@ -1,0 +1,168 @@
+{
+    "id": "ethical_decision_making",
+    "name": "Ethical Decision-Making",
+    "description": "Just Culture, LOAC, and professional conduct drills for Guardian leaders.",
+    "focus": [
+        "Just Culture",
+        "Professional Standards",
+        "Risk Ethics"
+    ],
+    "cards": [
+        {
+            "id": "ethical_decision_making_01",
+            "title": "Just Culture Triage",
+            "description": "Apply the USAF Just Culture decision tree (human error, at-risk, reckless) to a recent console error. Ref: AFI 90-301.",
+            "bulletpoints": [
+                "Collect facts only",
+                "Classify behavior type",
+                "Select accountability action"
+            ],
+            "duration": 11,
+            "difficulty": "Intermediate",
+            "summaryText": "Just Culture keeps learning high and fear low when used weekly."
+        },
+        {
+            "id": "ethical_decision_making_02",
+            "title": "LOAC in Space Vignette",
+            "description": "War-game a scenario applying Law of Armed Conflict principles (military necessity, proportionality, distinction) to a space control COA. Ref: DoDD 2311.01E.",
+            "bulletpoints": [
+                "Identify LOAC principle",
+                "Stress-test collateral risk",
+                "Record legal counsel input"
+            ],
+            "duration": 15,
+            "difficulty": "Intermediate",
+            "summaryText": "Space operations still follow LOAC—practice the translation."
+        },
+        {
+            "id": "ethical_decision_making_03",
+            "title": "Ethical Risk Matrix",
+            "description": "Overlay mission risk and ethical risk on a 2x2 matrix before approving expedited actions. Ref: AFDP 1-1 Risk Management.",
+            "bulletpoints": [
+                "Rate mission impact",
+                "Rate ethical exposure",
+                "Select mitigations"
+            ],
+            "duration": 10,
+            "difficulty": "Intermediate",
+            "summaryText": "Seeing ethical risk visually prevents rash approvals."
+        },
+        {
+            "id": "ethical_decision_making_04",
+            "title": "Whistleblower Path Review",
+            "description": "Brief your team on protected communication channels and reprisal protections outlined in DoDI 7050.01. Ref: DoDI 7050.01.",
+            "bulletpoints": [
+                "List reporting avenues",
+                "State reprisal penalties",
+                "Encourage early reporting"
+            ],
+            "duration": 8,
+            "difficulty": "Intermediate",
+            "summaryText": "Guardians speak up faster when they know they're protected."
+        },
+        {
+            "id": "ethical_decision_making_05",
+            "title": "Information Classification Drill",
+            "description": "Have crews classify sample mission data using classification guides to avoid over/under-marking. Ref: DoDM 5200.01 Vol 2.",
+            "bulletpoints": [
+                "Read guide excerpt",
+                "Apply markings",
+                "Discuss rationale"
+            ],
+            "duration": 9,
+            "difficulty": "Intermediate",
+            "summaryText": "Accurate markings protect sources without slowing the fight."
+        },
+        {
+            "id": "ethical_decision_making_06",
+            "title": "Professional Boundaries Scenario",
+            "description": "Role-play handling fraternization or misuse of government resources using AFI 1-1 standards. Ref: AFI 1-1.",
+            "bulletpoints": [
+                "State standard",
+                "Outline corrective steps",
+                "Document follow-up"
+            ],
+            "duration": 10,
+            "difficulty": "Intermediate",
+            "summaryText": "Leaders must intervene early and consistently on conduct issues."
+        },
+        {
+            "id": "ethical_decision_making_07",
+            "title": "Moral Courage Reflection",
+            "description": "Write about a time you delayed voicing concern and plan how you'd respond aligned with the Guardian Creed. Ref: Guardian Ideal.",
+            "bulletpoints": [
+                "Describe situation",
+                "Identify barrier",
+                "Commit to next step"
+            ],
+            "duration": 12,
+            "difficulty": "Intermediate",
+            "summaryText": "Reflection builds the courage to speak up next time."
+        },
+        {
+            "id": "ethical_decision_making_08",
+            "title": "Ethics Advisory Council",
+            "description": "Stand up a quarterly mini-council with legal, chaplain, and senior enlisted advisors to review upcoming dilemmas. Ref: Commander’s Inspection Program.",
+            "bulletpoints": [
+                "Invite multidisciplinary team",
+                "Share dilemmas early",
+                "Capture guidance"
+            ],
+            "duration": 14,
+            "difficulty": "Intermediate",
+            "summaryText": "Diverse perspectives sharpen ethical calls before they hit crisis mode."
+        },
+        {
+            "id": "ethical_decision_making_09",
+            "title": "Command Climate Pulse",
+            "description": "Use DEOCS micro-surveys to check respect, inclusion, and workload fairness metrics quarterly. Ref: DoDI 6400.11.",
+            "bulletpoints": [
+                "Select DEOCS pulse",
+                "Share results transparently",
+                "Act on top findings"
+            ],
+            "duration": 9,
+            "difficulty": "Intermediate",
+            "summaryText": "Ethical climates are measured, not assumed."
+        },
+        {
+            "id": "ethical_decision_making_10",
+            "title": "Integrity First Story Bank",
+            "description": "Collect real stories from your unit that illustrate Integrity First and share them during hail & farewell events. Ref: AF Core Values Handbook.",
+            "bulletpoints": [
+                "Interview teammates",
+                "Gain release approval",
+                "Share during formations"
+            ],
+            "duration": 7,
+            "difficulty": "Intermediate",
+            "summaryText": "Stories make ethics tangible for new Guardians."
+        },
+        {
+            "id": "ethical_decision_making_11",
+            "title": "Ethical Decision Log",
+            "description": "Maintain a log of high-stakes decisions noting context, stakeholders, and principles applied. Ref: AFDP 1-1.",
+            "bulletpoints": [
+                "Capture date/context",
+                "List consulted advisors",
+                "Record outcome"
+            ],
+            "duration": 8,
+            "difficulty": "Intermediate",
+            "summaryText": "Logs aid transparency and accelerate learning for successors."
+        },
+        {
+            "id": "ethical_decision_making_12",
+            "title": "Ethics Scenario Sandbox",
+            "description": "Use tabletop scenarios blending operational urgency with ethical tension; grade using AFI 1-1 checklists. Ref: OTS Capstone.",
+            "bulletpoints": [
+                "Script scenario",
+                "Facilitate discussion",
+                "Summarize lessons"
+            ],
+            "duration": 13,
+            "difficulty": "Intermediate",
+            "summaryText": "Tabletops inoculate leaders before the real dilemma arrives."
+        }
+    ]
+}

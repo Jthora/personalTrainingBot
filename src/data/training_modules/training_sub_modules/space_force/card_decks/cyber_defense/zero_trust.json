@@ -1,0 +1,168 @@
+{
+    "id": "zero_trust",
+    "name": "Zero-Trust Integration",
+    "description": "Applying the DoD Zero Trust Strategy to space mission systems.",
+    "focus": [
+        "Identity",
+        "Micro-Segmentation",
+        "Continuous Monitoring"
+    ],
+    "cards": [
+        {
+            "id": "zero_trust_01",
+            "title": "Seven Pillar Assessment",
+            "description": "Score each Zero Trust pillar (user, device, network, app, data, visibility, automation) for your weapon system and brief deficits. Ref: DoD ZT Strategy 2022.",
+            "bulletpoints": [
+                "Rate maturity 1-5",
+                "Tie gap to mission",
+                "Assign owner"
+            ],
+            "duration": 12,
+            "difficulty": "Advanced",
+            "summaryText": "Know exactly where your Zero Trust program is fragile before audits do."
+        },
+        {
+            "id": "zero_trust_02",
+            "title": "Identity Assurance Drill",
+            "description": "Test CAC plus derived credential issuance, step-up auth, and role-based claims for ops consoles. Ref: DoDI 8520.02.",
+            "bulletpoints": [
+                "Verify RBAC claims",
+                "Exercise step-up auth",
+                "Log ID assurance gaps"
+            ],
+            "duration": 9,
+            "difficulty": "Advanced",
+            "summaryText": "Identity is the new perimeter—treat it that way daily."
+        },
+        {
+            "id": "zero_trust_03",
+            "title": "Device Posture Enforcement",
+            "description": "Validate endpoint management baselines (HAFNIUM, CrowdStrike) before granting access via policy engines. Ref: DoDI 8500.01.",
+            "bulletpoints": [
+                "Check compliance posture",
+                "Enforce deny-by-default",
+                "Report non-compliant nodes"
+            ],
+            "duration": 11,
+            "difficulty": "Advanced",
+            "summaryText": "If the device fails posture checks, it never touches the mission net."
+        },
+        {
+            "id": "zero_trust_04",
+            "title": "Micro-Segment Design",
+            "description": "Lay out policy decision/enforcement points that isolate payload control planes from support services. Ref: DoD ZT Reference Architecture.",
+            "bulletpoints": [
+                "Tag flows by mission",
+                "Deploy PDP/PEP pairs",
+                "Simulate east-west blocks"
+            ],
+            "duration": 15,
+            "difficulty": "Advanced",
+            "summaryText": "Micro-segmentation keeps attackers from pivoting to the payload."
+        },
+        {
+            "id": "zero_trust_05",
+            "title": "Policy Automation Scripts",
+            "description": "Build IaC playbooks that push Zero Trust policies consistently across environments. Ref: AF DevSecOps Reference Design.",
+            "bulletpoints": [
+                "Parameterize policies",
+                "Test in staging",
+                "Version-control scripts"
+            ],
+            "duration": 13,
+            "difficulty": "Advanced",
+            "summaryText": "Infrastructure as code keeps Zero Trust configs honest."
+        },
+        {
+            "id": "zero_trust_06",
+            "title": "Data Tagging & ABAC",
+            "description": "Apply attribute-based access control tags (mission, coalition, classification) to telemetry feeds. Ref: CNSSI 1253.",
+            "bulletpoints": [
+                "Define tag schema",
+                "Apply to data lake",
+                "Test enforcement"
+            ],
+            "duration": 12,
+            "difficulty": "Advanced",
+            "summaryText": "Data tagging ensures only the right Guardians see sensitive telemetry."
+        },
+        {
+            "id": "zero_trust_07",
+            "title": "Continuous Diagnostics Loop",
+            "description": "Instrument telemetry for user behavior analytics, UEBA thresholds, and SOAR triggers. Ref: DHS CDM Program Guidance.",
+            "bulletpoints": [
+                "Stream telemetry",
+                "Train UEBA baselines",
+                "Tie alerts to SOAR"
+            ],
+            "duration": 14,
+            "difficulty": "Advanced",
+            "summaryText": "Continuous diagnostics close the loop between sensing and acting."
+        },
+        {
+            "id": "zero_trust_08",
+            "title": "Mission App Refactoring",
+            "description": "Assess legacy mission apps for modern auth, APIs, and logging to determine Zero Trust readiness. Ref: Platform One Playbook.",
+            "bulletpoints": [
+                "Inventory dependencies",
+                "Add OIDC integration",
+                "Enable structured logging"
+            ],
+            "duration": 16,
+            "difficulty": "Advanced",
+            "summaryText": "Modernize apps so they can live inside a policy-driven fabric."
+        },
+        {
+            "id": "zero_trust_09",
+            "title": "Mission Risk Scoring",
+            "description": "Quantify Zero Trust control health vs. mission impact using simple scoring models presented to commanders. Ref: AFDP 1-1 Risk Management.",
+            "bulletpoints": [
+                "Assign weights by mission",
+                "Score each control",
+                "Brief risk in COP"
+            ],
+            "duration": 10,
+            "difficulty": "Advanced",
+            "summaryText": "Commanders fund what they understand—make Zero Trust risk real."
+        },
+        {
+            "id": "zero_trust_10",
+            "title": "Coalition Access Guardrails",
+            "description": "Design per-partner policies, tagging, and monitoring so coalition Guardians get only the data they need. Ref: Combined Space Ops Vision.",
+            "bulletpoints": [
+                "Define partner attributes",
+                "Apply least privilege",
+                "Monitor sharing events"
+            ],
+            "duration": 11,
+            "difficulty": "Advanced",
+            "summaryText": "Enable coalitions without creating backdoors in the network."
+        },
+        {
+            "id": "zero_trust_11",
+            "title": "Legacy System Compensations",
+            "description": "Document compensating controls when heritage systems can't meet Zero Trust requirements yet. Ref: DoDI 8510.01.",
+            "bulletpoints": [
+                "List unsupported features",
+                "Add monitoring overlays",
+                "Plan modernization path"
+            ],
+            "duration": 9,
+            "difficulty": "Advanced",
+            "summaryText": "Zero Trust is a journey—capture reality without excusing risk."
+        },
+        {
+            "id": "zero_trust_12",
+            "title": "Continuous Authorization Brief",
+            "description": "Build concise briefings showing metrics, automation coverage, and remediation velocity for cATO sponsors. Ref: DoD CIO cATO Memo 2022.",
+            "bulletpoints": [
+                "Highlight key metrics",
+                "Show automation wins",
+                "State next sprint goals"
+            ],
+            "duration": 8,
+            "difficulty": "Advanced",
+            "summaryText": "cATO confidence comes from transparent Zero Trust telemetry."
+        }
+    ]
+}

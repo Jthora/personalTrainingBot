@@ -1,0 +1,168 @@
+{
+    "id": "space_isr",
+    "name": "Space ISR",
+    "description": "Collection, processing, and PED drills for space intelligence flights.",
+    "focus": [
+        "Collection Management",
+        "PED",
+        "Threat Reporting"
+    ],
+    "cards": [
+        {
+            "id": "space_isr_01",
+            "title": "Collection Requirement Trace",
+            "description": "Translate Priority Intelligence Requirements into specific sensor taskings, including justification and expected phenomenology. Ref: AFDP 2-0.",
+            "bulletpoints": [
+                "Restate PIR in plain terms",
+                "Match to sensor capability",
+                "Submit RFI with timeline"
+            ],
+            "duration": 11,
+            "difficulty": "Advanced",
+            "summaryText": "Great ISR flights tie PIRs to actual sensor runs Guardians can deliver."
+        },
+        {
+            "id": "space_isr_02",
+            "title": "PED Battle Rhythm",
+            "description": "Design Processing, Exploitation, and Dissemination flows with staffing, timelines, and cross-cues across INTs. Ref: AFDP 2-0.",
+            "bulletpoints": [
+                "Chart PED pipeline",
+                "Assign analyst roles",
+                "Define dissemination format"
+            ],
+            "duration": 12,
+            "difficulty": "Advanced",
+            "summaryText": "PED discipline keeps commanders supplied with timely intel."
+        },
+        {
+            "id": "space_isr_03",
+            "title": "Orbit Activity Baseline",
+            "description": "Characterize normal adversary satellite patterns (mean motion, maneuvers, emissions) to detect anomalies quickly. Ref: AFDP 3-14.",
+            "bulletpoints": [
+                "Summarize daily pattern",
+                "Flag historical maneuvers",
+                "Document signature sets"
+            ],
+            "duration": 14,
+            "difficulty": "Advanced",
+            "summaryText": "Baselines let you see the threat when it deviates by centimeters."
+        },
+        {
+            "id": "space_isr_04",
+            "title": "SIGINT-TLE Correlation",
+            "description": "Fuse SIGINT intercept windows with TLE-driven pointing to attribute emitters. Ref: AFDP 2-0.",
+            "bulletpoints": [
+                "Align intercept time/space",
+                "Map to potential objects",
+                "Assign confidence rating"
+            ],
+            "duration": 13,
+            "difficulty": "Advanced",
+            "summaryText": "Cross-domain fusion is the hallmark of modern ISR."
+        },
+        {
+            "id": "space_isr_05",
+            "title": "Intelligence Preparation for the Space Environment",
+            "description": "Execute the IPSE model: define the OE, describe effects, evaluate threats, determine threat COAs. Ref: AFDP 2-0 annex.",
+            "bulletpoints": [
+                "Outline space OE",
+                "Assess environment impacts",
+                "List adversary COAs"
+            ],
+            "duration": 15,
+            "difficulty": "Advanced",
+            "summaryText": "Treat space like any battlefield by preparing it intel-style."
+        },
+        {
+            "id": "space_isr_06",
+            "title": "ISR Synchronization Matrix",
+            "description": "Create a time-phased matrix aligning collection, PED, and supported commander decisions. Ref: AFI 14-153.",
+            "bulletpoints": [
+                "List decision points",
+                "Align sensors & PED",
+                "Share with STO cell"
+            ],
+            "duration": 10,
+            "difficulty": "Advanced",
+            "summaryText": "Synchronization keeps every ISR element rowing together."
+        },
+        {
+            "id": "space_isr_07",
+            "title": "Allied ISR Integration",
+            "description": "Map releasability, classification, and coalition PED nodes to include partner data. Ref: Combined Space Ops Vision.",
+            "bulletpoints": [
+                "Tag releasable products",
+                "Identify partner PED nodes",
+                "Establish feedback loops"
+            ],
+            "duration": 9,
+            "difficulty": "Advanced",
+            "summaryText": "Coalition ISR is a force multiplier when planned deliberately."
+        },
+        {
+            "id": "space_isr_08",
+            "title": "Space Threat Library Update",
+            "description": "Refresh threat models with new telemetry, cyber indicators, and imagery cues each quarter. Ref: AFDP 2-0.",
+            "bulletpoints": [
+                "Add latest intel takes",
+                "Retire obsolete data",
+                "Publish change log"
+            ],
+            "duration": 11,
+            "difficulty": "Advanced",
+            "summaryText": "A stale threat library is worse than none—keep it alive."
+        },
+        {
+            "id": "space_isr_09",
+            "title": "Warning Intelligence Drill",
+            "description": "Practice building warning intelligence reports with indicators, thresholds, and recommended responses. Ref: AFMAN 14-304.",
+            "bulletpoints": [
+                "Define indicator",
+                "Set trigger value",
+                "State commander action"
+            ],
+            "duration": 10,
+            "difficulty": "Advanced",
+            "summaryText": "Warning intel should tell commanders what to do, not just what happened."
+        },
+        {
+            "id": "space_isr_10",
+            "title": "Collection Deck Quality Check",
+            "description": "Audit the production plan for duplicates, stale requirements, and sensor overload. Ref: AFDP 2-0.",
+            "bulletpoints": [
+                "Purge filled requirements",
+                "Balance sensor load",
+                "Validate priority order"
+            ],
+            "duration": 8,
+            "difficulty": "Advanced",
+            "summaryText": "Keep the collection deck lean so sensors chase what matters most."
+        },
+        {
+            "id": "space_isr_11",
+            "title": "Target System Analysis",
+            "description": "Break down adversary space systems (ground, link, space) to inform targeting nominations. Ref: AFMAN 14-202.",
+            "bulletpoints": [
+                "Identify nodes",
+                "Assess vulnerabilities",
+                "Tie to desired effects"
+            ],
+            "duration": 14,
+            "difficulty": "Advanced",
+            "summaryText": "Targeting starts with rigorous system analysis across every layer."
+        },
+        {
+            "id": "space_isr_12",
+            "title": "ISR to STO Handover",
+            "description": "Package ISR findings for the Space Tasking Order with clear confidence levels and recommended taskings. Ref: AFDP 3-14.",
+            "bulletpoints": [
+                "Summarize finding",
+                "State confidence",
+                "Recommend STO action"
+            ],
+            "duration": 9,
+            "difficulty": "Advanced",
+            "summaryText": "Intel only wins when it drives tasking—make the link explicit."
+        }
+    ]
+}

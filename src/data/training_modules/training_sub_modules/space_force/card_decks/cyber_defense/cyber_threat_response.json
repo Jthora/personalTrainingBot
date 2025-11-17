@@ -1,0 +1,168 @@
+{
+    "id": "cyber_threat_response",
+    "name": "Cyber Threat Response",
+    "description": "Mission Defense Team battle drills for live incidents.",
+    "focus": [
+        "Incident Response",
+        "Kill Chain",
+        "Forensics"
+    ],
+    "cards": [
+        {
+            "id": "cyber_threat_response_01",
+            "title": "MDT Battle Drill 0",
+            "description": "Practice the initial triage call: confirm indicators, halt spread, and notify C3 with mission impact statements per USSF MDT CONOPS. Ref: SDP 3-0.",
+            "bulletpoints": [
+                "Capture who/what/when",
+                "Stabilize critical services",
+                "Notify battle staff"
+            ],
+            "duration": 9,
+            "difficulty": "Advanced",
+            "summaryText": "The first five minutes set tempo—train until the script is reflex."
+        },
+        {
+            "id": "cyber_threat_response_02",
+            "title": "Kill Chain Mapping",
+            "description": "Rapidly map observed indicators onto the Lockheed Martin kill chain to focus countermeasures. Ref: AFI 17-102.",
+            "bulletpoints": [
+                "Identify current phase",
+                "Select counter actions",
+                "Log supporting evidence"
+            ],
+            "duration": 11,
+            "difficulty": "Advanced",
+            "summaryText": "Translate messy logs into a clear adversary kill chain within minutes."
+        },
+        {
+            "id": "cyber_threat_response_03",
+            "title": "Forensic Imaging SOP",
+            "description": "Rehearse cold imaging of mission servers with write blockers, hashing, and chain-of-custody docs per AFMAN 71-102. Ref: AFI 71-101 V1.",
+            "bulletpoints": [
+                "Capture forensic image",
+                "Generate SHA-256 hash",
+                "Document custody"
+            ],
+            "duration": 14,
+            "difficulty": "Advanced",
+            "summaryText": "Evidence only holds up if Guardians preserve it perfectly."
+        },
+        {
+            "id": "cyber_threat_response_04",
+            "title": "Containment Decision Tree",
+            "description": "Walk through isolation options (interface shutdown, ACL, hypervisor snapshot) while weighing mission downtime. Ref: USCYBERCOM JFHQ-DODIN TTPs.",
+            "bulletpoints": [
+                "Define containment tiers",
+                "Estimate mission impact",
+                "Gain commander approval"
+            ],
+            "duration": 12,
+            "difficulty": "Advanced",
+            "summaryText": "Contain smart—protect the mission even while fighting malware."
+        },
+        {
+            "id": "cyber_threat_response_05",
+            "title": "Hunt Hypothesis Lab",
+            "description": "Formulate and test hypotheses using threat intel, MITRE ATT&CK, and local telemetry to find footholds. Ref: AFMAN 17-1203.",
+            "bulletpoints": [
+                "State adversary goal",
+                "List telemetry sources",
+                "Document results"
+            ],
+            "duration": 15,
+            "difficulty": "Advanced",
+            "summaryText": "Winning hunts start with disciplined hypotheses and end with evidence."
+        },
+        {
+            "id": "cyber_threat_response_06",
+            "title": "Incident Communications",
+            "description": "Draft SITREP inputs that address what happened, risk to mission, and required support in Guardian Downlink formats. Ref: AFMAN 10-417.",
+            "bulletpoints": [
+                "Summarize facts",
+                "Describe mission impact",
+                "List support needed"
+            ],
+            "duration": 8,
+            "difficulty": "Advanced",
+            "summaryText": "Incident comms build trust—make them crisp and doctrinal."
+        },
+        {
+            "id": "cyber_threat_response_07",
+            "title": "Eradication & Recovery Runbook",
+            "description": "Sequence eradication steps, validation tests, and phased restoration for mission systems. Ref: NIST SP 800-61r2.",
+            "bulletpoints": [
+                "List eradication tasks",
+                "Define validation checks",
+                "Plan phased restore"
+            ],
+            "duration": 13,
+            "difficulty": "Advanced",
+            "summaryText": "When recovery is scripted, commanders say yes faster."
+        },
+        {
+            "id": "cyber_threat_response_08",
+            "title": "Threat Intel Fusion",
+            "description": "Fuse DIA, NSA, and commercial intel extracts with local indicators to update adversary TTP profiles. Ref: AFDP 2-0.",
+            "bulletpoints": [
+                "Correlate intel reports",
+                "Update adversary profile",
+                "Share with JADC2 nodes"
+            ],
+            "duration": 12,
+            "difficulty": "Advanced",
+            "summaryText": "Great responders know their adversary's next move before it lands."
+        },
+        {
+            "id": "cyber_threat_response_09",
+            "title": "ICS Incident Timeline",
+            "description": "Build a precise OT incident timeline by combining historian logs, PLC captures, and facility data. Ref: NIST SP 800-82.",
+            "bulletpoints": [
+                "Collect OT-specific logs",
+                "Note physical impacts",
+                "Sync time sources"
+            ],
+            "duration": 14,
+            "difficulty": "Advanced",
+            "summaryText": "Space ground segments include OT—treat it as part of the battle space."
+        },
+        {
+            "id": "cyber_threat_response_10",
+            "title": "After-Action & Lessons",
+            "description": "Conduct hotwash using AFMAN 90-1601 templates to lock in lessons, assign owners, and update TTPs. Ref: AFDP 3-0.",
+            "bulletpoints": [
+                "Capture root cause",
+                "Assign improvement tasks",
+                "Update playbooks"
+            ],
+            "duration": 9,
+            "difficulty": "Advanced",
+            "summaryText": "Every incident should make the next response faster."
+        },
+        {
+            "id": "cyber_threat_response_11",
+            "title": "Evidence Retention Policy",
+            "description": "Review classification guides, retention timelines, and legal holds so data is preserved correctly. Ref: AFMAN 51-203.",
+            "bulletpoints": [
+                "Check retention clocks",
+                "Classify evidence",
+                "Coordinate with JA"
+            ],
+            "duration": 7,
+            "difficulty": "Advanced",
+            "summaryText": "Evidence mishandled equals cases lost—guard it."
+        },
+        {
+            "id": "cyber_threat_response_12",
+            "title": "JADC2 Reporting Inject",
+            "description": "Practice packaging cyber incident effects for JADC2 nodes so air, land, and maritime partners understand the impact. Ref: ABMS Playbook.",
+            "bulletpoints": [
+                "Translate to joint effects",
+                "Provide recommended COAs",
+                "Note dependencies"
+            ],
+            "duration": 10,
+            "difficulty": "Advanced",
+            "summaryText": "Cyber ops must plug cleanly into the joint kill chain—train it now."
+        }
+    ]
+}

@@ -17,6 +17,7 @@
         { "id": "web_three", "name": "Web3 Training" },
         { "id": "self_sovereignty", "name": "Self Sovereignty Training" },
         { "id": "anti_psn", "name": "Anti PSN Training" },
-        { "id": "anti_tcs_idc_cbc", "name": "Anti TCS/IDC/CBC Training" }
+        { "id": "anti_tcs_idc_cbc", "name": "Anti TCS/IDC/CBC Training" },
+        { "id": "space_force", "name": "Space Force Command" }
     ]
 }

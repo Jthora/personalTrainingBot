@@ -1,0 +1,17 @@
+{
+    "id": "cyber_defense",
+    "name": "Cyber Defense",
+    "description": "SDP 3-0 cyber protection teaming focused on MDT network hardening, incident response, and Zero-Trust enforcement for space mission systems.",
+    "difficulty": "Advanced",
+    "estimated_time": "8-12 weeks",
+    "focus": [
+        "Mission Defense Teams",
+        "NIST 800-171",
+        "Zero Trust Architecture"
+    ],
+    "cardDecks": [
+        "network_security",
+        "cyber_threat_response",
+        "zero_trust"
+    ]
+}

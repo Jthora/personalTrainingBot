@@ -15,12 +15,16 @@ const HomePage: React.FC = () => {
         <div className={styles.pageContainer}>
             <Header />
             <div className={styles.content}>
-                <WorkoutScheduleProvider>
-                    <Sidebar />
-                </WorkoutScheduleProvider>
-                <CardProvider initialSlug={cardSlug}>
-                    <CardTable />
-                </CardProvider>
+                <div className={styles.sidebar}>
+                    <WorkoutScheduleProvider>
+                        <Sidebar />
+                    </WorkoutScheduleProvider>
+                </div>
+                <div className={styles.mainContent}>
+                    <CardProvider initialSlug={cardSlug}>
+                        <CardTable />
+                    </CardProvider>
+                </div>
             </div>
         </div>
     );

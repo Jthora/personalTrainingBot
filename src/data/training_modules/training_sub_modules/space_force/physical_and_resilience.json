@@ -1,0 +1,16 @@
+{
+    "id": "physical_and_resilience",
+    "name": "Physical & Resilience",
+    "description": "USSF Physical Training Guide plus Guardian Resilience Framework combining aerobic standards with cognitive resilience drills for operational crews.",
+    "difficulty": "Standard",
+    "estimated_time": "6-8 weeks",
+    "focus": [
+        "USSF Fitness Standards",
+        "Resilience",
+        "Mental Toughness"
+    ],
+    "cardDecks": [
+        "ussf_fitness_standards",
+        "mental_toughness"
+    ]
+}

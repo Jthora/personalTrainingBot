@@ -1,0 +1,16 @@
+{
+    "id": "leadership_and_professionalism",
+    "name": "Leadership & Professionalism",
+    "description": "Guardian Ideal and OTS curriculum focused on emotional intelligence, ethical command climate, and Just Culture decision framing for flight commanders.",
+    "difficulty": "Intermediate",
+    "estimated_time": "6-8 weeks",
+    "focus": [
+        "Guardian Ideal",
+        "Emotional Intelligence",
+        "Ethical Command"
+    ],
+    "cardDecks": [
+        "emotional_intelligence",
+        "ethical_decision_making"
+    ]
+}

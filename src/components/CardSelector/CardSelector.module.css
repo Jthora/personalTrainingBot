@@ -1,10 +1,11 @@
 .cardSelector {
     padding: 20px;
-    background-color: #333333;
+    background-color: var(--surface-card);
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
     height: 100%;
     overflow: hidden;
+    border: 1px solid var(--coach-border);
 }
 
 .module, .subModule, .cardDeck, .card {
@@ -18,12 +19,12 @@
 .subModules, .cardDecks, .cards {
     margin-left: 20px;
     padding-left: 10px;
-    border-left: 2px solid #ddd;
+    border-left: 2px solid var(--coach-border);
 }
 
 .dropdownButton {
-    background-color: #007bff;
-    color: white;
+    background-color: var(--coach-accent);
+    color: var(--text-primary);
     border: none;
     padding: 2px 4px;
     cursor: pointer;
@@ -32,5 +33,87 @@
 }
 
 .dropdownButton:hover {
-    background-color: #0056b3;
+    background-color: var(--coach-accent-strong);
+}
+
+.coachPresetSummary {
+    background: var(--surface-muted);
+    border: 1px solid var(--coach-border);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.presetHeader {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.presetStatus {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.presetActiveIndicator {
+    font-size: 0.9rem;
+    color: var(--secondary-text-color);
+    margin: 4px 0 12px;
+}
+
+.moduleSummaryRow {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+    align-items: flex-start;
+}
+
+.moduleSummaryLabel {
+    width: 120px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.moduleSummaryList {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.moduleChip {
+    background: var(--surface-card);
+    border: 1px solid var(--coach-border);
+    padding: 4px 8px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    color: var(--text-primary);
+    box-shadow: inset 0 0 12px var(--coach-accent-soft);
+}
+
+.presetActions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 220px;
+}
+
+.presetActions button {
+    background: var(--coach-accent);
+    border: 1px solid var(--coach-border);
+    border-radius: 6px;
+    padding: 8px 12px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s ease;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.presetActions button:hover {
+    background: var(--coach-accent-strong);
 }

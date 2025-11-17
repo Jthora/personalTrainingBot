@@ -1,0 +1,15 @@
+{
+    "id": "microgravity_readiness",
+    "name": "Microgravity Readiness",
+    "description": "Physiological conditioning, vestibular adaptation, and restraint/suit procedures that keep USSF crews effective during extended microgravity operations.",
+    "difficulty": "Intermediate",
+    "estimated_time": "8-10 weeks",
+    "focus": [
+        "Human Performance",
+        "Microgravity Conditioning",
+        "Suit Operations"
+    ],
+    "cardDecks": [
+        "vestibular_adaptation_drills"
+    ]
+}

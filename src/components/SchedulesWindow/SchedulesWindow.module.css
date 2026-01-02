@@ -30,3 +30,12 @@
     background: var(--coach-accent);
     color: var(--text-on-accent);
 }
+
+.errorBanner {
+    padding: 10px 12px;
+    border-radius: 4px;
+    background: rgba(255, 87, 87, 0.12);
+    color: #ff8787;
+    border: 1px solid rgba(255, 87, 87, 0.4);
+    font-weight: 600;
+}

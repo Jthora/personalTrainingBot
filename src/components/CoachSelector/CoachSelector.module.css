@@ -59,8 +59,10 @@
 
 .coachIcon {
     width: 52px;
-    height: 52px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     margin-left: 12px;
+    display: block;
 }
 
 .coachDetails {
@@ -82,8 +84,11 @@
 
 .coachLargeIcon {
     width: 150px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.08);
+    display: block;
 }
 
 .coachAdditionalDetails {

@@ -112,7 +112,14 @@ const Header: React.FC = () => {
             {/* Left Side - Logo */}
             <div className={styles.leftSection}>
                 <div className={styles.logoContainer}>
-                    <img src={logo} alt="Wing Commander Logo" className={styles.logo} />
+                    <a
+                        href="https://archangel.agency/hub"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visit the Archangel Agency hub"
+                    >
+                        <img src={logo} alt="Wing Commander Logo" className={styles.logo} />
+                    </a>
                 </div>
             </div>
 

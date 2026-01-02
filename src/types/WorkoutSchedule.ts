@@ -85,7 +85,12 @@ export class WorkoutSchedule {
                 if (!currentItem.workouts[i][1]) {
                     console.log(`WorkoutSchedule: Completing workout at index ${i}:`, currentItem.workouts[i][0]);
                     currentItem.workouts[i][1] = true;
-                    this.scheduleItems[0] = new WorkoutSet(currentItem.workouts);
+                    if (currentItem.allWorkoutsCompleted) {
+                        console.log('WorkoutSchedule: All workouts in the set are completed. Removing completed WorkoutSet');
+                        this.scheduleItems.shift();
+                    } else {
+                        this.scheduleItems[0] = new WorkoutSet(currentItem.workouts);
+                    }
                     return;
                 }
             }
@@ -112,7 +117,12 @@ export class WorkoutSchedule {
                 if (!currentItem.workouts[i][1]) {
                     console.log(`WorkoutSchedule: Skipping workout at index ${i}:`, currentItem.workouts[i][0]);
                     currentItem.workouts[i][1] = true;
-                    this.scheduleItems[0] = new WorkoutSet(currentItem.workouts);
+                    if (currentItem.allWorkoutsCompleted) {
+                        console.log('WorkoutSchedule: All workouts in the set are completed. Removing completed WorkoutSet');
+                        this.scheduleItems.shift();
+                    } else {
+                        this.scheduleItems[0] = new WorkoutSet(currentItem.workouts);
+                    }
                     return;
                 }
             }

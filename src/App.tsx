@@ -5,6 +5,7 @@ import InitialDataLoader from './utils/InitialDataLoader';
 import LoadingMessage from './components/LoadingMessage/LoadingMessage'; // Import the new component
 import { WorkoutScheduleProvider } from './context/WorkoutScheduleContext';
 import { CoachSelectionProvider } from './context/CoachSelectionContext';
+import { warmCaches } from './utils/cacheWarmHints';
 
 const App: React.FC = () => {
   const [isDataLoaded, setIsDataLoaded] = useState(false);
@@ -29,6 +30,10 @@ const App: React.FC = () => {
   if (!isDataLoaded) {
     return <LoadingMessage progress={loadingProgress} />; // Use the new component with progress
   }
+
+  useEffect(() => {
+    warmCaches();
+  }, []);
 
   return (
     <WorkoutScheduleProvider>

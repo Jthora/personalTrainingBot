@@ -1,12 +1,23 @@
-import { DifficultySetting, DifficultyLevel, DifficultyRange } from '../types/DifficultySetting';
+import { DifficultySetting, DifficultyLevel, DifficultyRange, DifficultySettingJSON } from '../types/DifficultySetting';
 
 const DifficultySettingsStore = {
     getSettings(): DifficultySetting {
         const settings = localStorage.getItem('difficultySettings');
-        return settings ? JSON.parse(settings) : { level: 7, range: [1, 10] };
+        if (!settings) {
+            return new DifficultySetting(7, [1, 10]);
+        }
+
+        try {
+            const parsed = JSON.parse(settings) as DifficultySettingJSON;
+            return DifficultySetting.fromJSON(parsed);
+        } catch (error) {
+            console.warn('DifficultySettingsStore: Failed to parse stored difficulty settings. Using defaults.', error);
+            return new DifficultySetting(7, [1, 10]);
+        }
     },
-    saveSettings(setting: DifficultySetting) {
-        localStorage.setItem('difficultySettings', JSON.stringify(setting));
+    saveSettings(setting: DifficultySetting | DifficultySettingJSON) {
+        const payload = setting instanceof DifficultySetting ? setting.toJSON() : setting;
+        localStorage.setItem('difficultySettings', JSON.stringify(payload));
     },
     clearSettings() {
         localStorage.removeItem('difficultySettings');

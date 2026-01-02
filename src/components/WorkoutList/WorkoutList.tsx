@@ -5,14 +5,7 @@ import useWorkoutSchedule from '../../hooks/useWorkoutSchedule';
 import { WorkoutSet, WorkoutBlock } from '../../types/WorkoutSchedule';
 
 const WorkoutList: React.FC = () => {
-    const { schedule, loadSchedule, isLoading, scheduleVersion } = useWorkoutSchedule();
-
-    useEffect(() => {
-        console.log('WorkoutList: Loading schedule...');
-        loadSchedule().catch(error => {
-            console.error('Failed to load schedule:', error);
-        }); // Load the workout schedule on component mount
-    }, [loadSchedule]);
+    const { schedule, isLoading, scheduleVersion } = useWorkoutSchedule();
 
     useEffect(() => {
         // Log schedule changes for debugging

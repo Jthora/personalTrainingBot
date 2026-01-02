@@ -1,19 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import WorkoutScheduleStore from '../../store/WorkoutScheduleStore';
+import React from 'react';
 import { WorkoutSet, WorkoutBlock } from '../../types/WorkoutSchedule';
 import styles from './SchedulesSidebar.module.css';
+import useWorkoutSchedule from '../../hooks/useWorkoutSchedule';
 
-const SchedulesSidebar: React.FC<{ scheduleUpdated: boolean }> = ({ scheduleUpdated }) => {
-    const [currentSchedule, setCurrentSchedule] = useState<(WorkoutSet | WorkoutBlock)[]>([]);
-
-    const getCurrentSchedule = () => {
-        const schedule = WorkoutScheduleStore.getScheduleSync();
-        return schedule ? schedule.scheduleItems : [];
-    };
-
-    useEffect(() => {
-        setCurrentSchedule(getCurrentSchedule());
-    }, [scheduleUpdated]);
+const SchedulesSidebar: React.FC = () => {
+    const { schedule } = useWorkoutSchedule();
+    const currentSchedule = schedule.scheduleItems as (WorkoutSet | WorkoutBlock)[];
 
     return (
         <div className={styles.schedulesSidebar}>

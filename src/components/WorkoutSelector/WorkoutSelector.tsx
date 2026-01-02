@@ -52,28 +52,14 @@ const WorkoutSelector: React.FC = () => {
 
     const selectAll = () => {
         const cache = WorkoutCategoryCache.getInstance();
-        workoutCategories.forEach(category => {
-            cache.selectedCategories.add(category.id);
-            category.subCategories.forEach(subCategory => {
-                cache.selectedSubCategories.add(subCategory.id);
-                subCategory.workoutGroups.forEach(group => {
-                    cache.selectedWorkoutGroups.add(group.id);
-                    group.workouts.forEach(workout => {
-                        cache.selectedWorkouts.add(workout.id);
-                    });
-                });
-            });
-        });
-        setWorkoutCategories([...workoutCategories]); // Trigger re-render
+        cache.selectAll();
+        setWorkoutCategories([...cache.getWorkoutCategories()]); // Trigger re-render
     };
 
     const unselectAll = () => {
         const cache = WorkoutCategoryCache.getInstance();
-        cache.selectedCategories.clear();
-        cache.selectedSubCategories.clear();
-        cache.selectedWorkoutGroups.clear();
-        cache.selectedWorkouts.clear();
-        setWorkoutCategories([...workoutCategories]); // Trigger re-render
+        cache.unselectAll();
+        setWorkoutCategories([...cache.getWorkoutCategories()]); // Trigger re-render
     };
 
     const getStats = () => {

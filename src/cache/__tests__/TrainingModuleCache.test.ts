@@ -54,11 +54,39 @@ const sampleModules: TrainingModule[] = [
     },
 ];
 
+const modulesWithAdditionalCard: TrainingModule[] = [
+    {
+        ...sampleModules[0],
+        submodules: [
+            {
+                ...sampleModules[0].submodules[0],
+                cardDecks: [
+                    {
+                        ...sampleModules[0].submodules[0].cardDecks[0],
+                        cards: [
+                            ...sampleModules[0].submodules[0].cardDecks[0].cards,
+                            {
+                                id: 'card-three',
+                                title: 'Cognitive Cooldown',
+                                description: 'A gentle wrap-up routine.',
+                                bulletpoints: ['Reflect on progress', 'Log one insight'],
+                                duration: 10,
+                                difficulty: 'Light',
+                            },
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
+];
+
 describe('TrainingModuleCache', () => {
     const cache = TrainingModuleCache.getInstance();
 
     beforeEach(() => {
         cache.clearCache();
+        localStorage.clear();
     });
 
     it('indexes card metadata and supports slug round-trips', async () => {
@@ -86,5 +114,27 @@ describe('TrainingModuleCache', () => {
         await cache.loadData(sampleModules);
         const reloadedSlug = cache.getSlugForCard('card-two');
         expect(reloadedSlug).toBe(initialSlug);
+    });
+
+    it('hydrates persisted selections when the training data signature matches', async () => {
+        await cache.loadData(sampleModules);
+
+        cache.toggleCardSelection('card-two');
+        expect(cache.isCardSelected('card-two')).toBe(false);
+
+        await cache.loadData(sampleModules);
+
+        expect(cache.isCardSelected('card-two')).toBe(false);
+    });
+
+    it('resets stored selections when the training data signature changes', async () => {
+        await cache.loadData(sampleModules);
+        cache.toggleCardSelection('card-two');
+        expect(cache.isCardSelected('card-two')).toBe(false);
+
+        await cache.loadData(modulesWithAdditionalCard);
+
+        expect(cache.isCardSelected('card-two')).toBe(true);
+        expect(cache.isCardSelected('card-three')).toBe(true);
     });
 });

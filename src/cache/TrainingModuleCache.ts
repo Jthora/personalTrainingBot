@@ -1,6 +1,7 @@
 import { TrainingModule } from "../types/TrainingModule";
 import { Card } from "../types/Card";
 import { generateCardSlug } from "../utils/slug";
+import TrainingModuleSelectionStore, { SelectionRecord } from "../store/TrainingModuleSelectionStore";
 
 export interface CardMeta {
     moduleId: string;
@@ -46,6 +47,10 @@ export class TrainingModuleCache {
     public async loadData(trainingModules: TrainingModule[]): Promise<void> {
         this.clearCache();
 
+        const shouldHydrateSelections = TrainingModuleSelectionStore.syncDataSignature(
+            this.computeDataSignature(trainingModules)
+        );
+
         trainingModules.forEach(module => {
             this.cache.set(module.id, module);
 
@@ -89,7 +94,15 @@ export class TrainingModuleCache {
             });
         });
 
-        this.selectModules();
+        this.selectModules(undefined, { suppressNotification: true, skipPersistence: true });
+
+        if (shouldHydrateSelections) {
+            this.hydrateSelectionsFromStore();
+        } else {
+            this.persistSelectionState();
+        }
+
+        this.notifySelectionListeners();
 
         console.log(`TrainingModuleCache Loaded ${this.cache.size} training modules.`);
         console.log(`TrainingModuleCache Loaded ${this.selectedSubModules.size} training submodules.`);
@@ -111,6 +124,7 @@ export class TrainingModuleCache {
         } else {
             this.selectedModules.add(id);
         }
+        this.persistSelectionState();
         this.notifySelectionListeners();
     }
 
@@ -120,6 +134,7 @@ export class TrainingModuleCache {
         } else {
             this.selectedSubModules.add(id);
         }
+        this.persistSelectionState();
         this.notifySelectionListeners();
     }
 
@@ -129,6 +144,7 @@ export class TrainingModuleCache {
         } else {
             this.selectedCardDecks.add(id);
         }
+        this.persistSelectionState();
         this.notifySelectionListeners();
     }
 
@@ -138,6 +154,7 @@ export class TrainingModuleCache {
         } else {
             this.selectedCards.add(id);
         }
+        this.persistSelectionState();
         this.notifySelectionListeners();
     }
 
@@ -168,7 +185,104 @@ export class TrainingModuleCache {
         this.slugToCardId.clear();
     }
 
-    public selectModules(moduleIds?: string[]): void {
+    private persistSelectionState(): void {
+        TrainingModuleSelectionStore.saveSelectedModules(this.convertSetToSelectionRecord(this.selectedModules));
+        TrainingModuleSelectionStore.saveSelectedSubModules(this.convertSetToSelectionRecord(this.selectedSubModules));
+        TrainingModuleSelectionStore.saveSelectedCardDecks(this.convertSetToSelectionRecord(this.selectedCardDecks));
+        TrainingModuleSelectionStore.saveSelectedCards(this.convertSetToSelectionRecord(this.selectedCards));
+    }
+
+    private hydrateSelectionsFromStore(): void {
+        const persistedModules = TrainingModuleSelectionStore.getSelectedModules();
+        const persistedSubModules = TrainingModuleSelectionStore.getSelectedSubModules();
+        const persistedCardDecks = TrainingModuleSelectionStore.getSelectedCardDecks();
+        const persistedCards = TrainingModuleSelectionStore.getSelectedCards();
+
+        if (!persistedModules && !persistedSubModules && !persistedCardDecks && !persistedCards) {
+            this.persistSelectionState();
+            return;
+        }
+
+        const allModuleIds = new Set(this.selectedModules);
+        const allSubModuleIds = new Set(this.selectedSubModules);
+        const allCardDeckIds = new Set(this.selectedCardDecks);
+        const allCardIds = new Set(this.selectedCards);
+
+        this.selectedModules.clear();
+        this.selectedSubModules.clear();
+        this.selectedCardDecks.clear();
+        this.selectedCards.clear();
+
+        this.applySelectionRecord(persistedModules, allModuleIds, this.selectedModules, 'module');
+        this.applySelectionRecord(persistedSubModules, allSubModuleIds, this.selectedSubModules, 'submodule');
+        this.applySelectionRecord(persistedCardDecks, allCardDeckIds, this.selectedCardDecks, 'card deck');
+        this.applySelectionRecord(persistedCards, allCardIds, this.selectedCards, 'card');
+
+        this.persistSelectionState();
+    }
+
+    private applySelectionRecord(
+        record: SelectionRecord | undefined,
+        validIds: Set<string>,
+        target: Set<string>,
+        label: string
+    ) {
+        if (!record) {
+            return;
+        }
+
+        Object.entries(record).forEach(([id, isSelected]) => {
+            if (!isSelected) {
+                return;
+            }
+
+            if (validIds.has(id)) {
+                target.add(id);
+            } else {
+                console.warn(`TrainingModuleCache: Stored ${label} id "${id}" no longer exists. Ignoring.`);
+            }
+        });
+    }
+
+    private convertSetToSelectionRecord(set: Set<string>): SelectionRecord {
+        const record: SelectionRecord = {};
+        set.forEach(id => {
+            record[id] = true;
+        });
+        return record;
+    }
+
+    private computeDataSignature(trainingModules: TrainingModule[]): string {
+        const moduleParts = trainingModules
+            .map(module => {
+                const subModuleParts = module.submodules
+                    .map(subModule => {
+                        const deckParts = subModule.cardDecks
+                            .map(deck => {
+                                const cardParts = deck.cards
+                                    .map(card => card.id)
+                                    .sort()
+                                    .join(',');
+                                return `${deck.id}:${cardParts}`;
+                            })
+                            .sort()
+                            .join('|');
+                        return `${subModule.id}:${deckParts}`;
+                    })
+                    .sort()
+                    .join('#');
+                return `${module.id}:${subModuleParts}`;
+            })
+            .sort()
+            .join('~');
+
+        return moduleParts;
+    }
+
+    public selectModules(
+        moduleIds?: string[],
+        options?: { suppressNotification?: boolean; skipPersistence?: boolean }
+    ): void {
         const idsToSelect = moduleIds && moduleIds.length > 0 ? new Set(moduleIds) : null;
 
         this.selectedModules.clear();
@@ -191,7 +305,13 @@ export class TrainingModuleCache {
             }
         });
 
-        this.notifySelectionListeners();
+        if (!options?.skipPersistence) {
+            this.persistSelectionState();
+        }
+
+        if (!options?.suppressNotification) {
+            this.notifySelectionListeners();
+        }
     }
 
     public subscribeToSelectionChanges(listener: () => void): () => void {

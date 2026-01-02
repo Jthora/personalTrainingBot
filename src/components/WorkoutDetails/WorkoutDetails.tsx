@@ -10,17 +10,10 @@ interface WorkoutDetailsProps {
 }
 
 const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ item }) => {
-    const { schedule, isLoading, loadSchedule, completeCurrentWorkout, skipCurrentWorkout, createNewSchedule, scheduleVersion } = useWorkoutSchedule();
+    const { schedule, isLoading, completeCurrentWorkout, skipCurrentWorkout, createNewSchedule, scheduleVersion } = useWorkoutSchedule();
     const timerRef = useRef<{ resetTimer: () => void }>(null);
     const [currentScheduleIndex, setCurrentScheduleIndex] = useState(0);
     const [currentWorkoutIndex, setCurrentWorkoutIndex] = useState(0);
-
-    useEffect(() => {
-        console.log('WorkoutDetails: Loading schedule...');
-        loadSchedule().catch(error => {
-            console.error('Failed to load schedule:', error);
-        }); // Load the workout schedule on component mount
-    }, [loadSchedule]);
 
     useEffect(() => {
         if (item) {
@@ -88,6 +81,7 @@ const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ item }) => {
             setCurrentScheduleIndex(prevIndex => prevIndex + 1);
             setCurrentWorkoutIndex(0);
         }
+        timerRef.current?.resetTimer();
     };
 
     if (item instanceof WorkoutSet) {

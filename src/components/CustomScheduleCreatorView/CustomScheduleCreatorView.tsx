@@ -2,23 +2,27 @@ import React, { useState, useEffect } from 'react';
 import { WorkoutSet, WorkoutBlock, CustomWorkoutSchedule, WorkoutSchedule } from '../../types/WorkoutSchedule';
 import { DifficultySetting } from '../../types/DifficultySetting';
 import CustomWorkoutSchedulesStore from '../../store/CustomWorkoutSchedulesStore';
-import WorkoutScheduleStore from '../../store/WorkoutScheduleStore';
 import CreateWorkoutSetPopup from '../CreateWorkoutSetPopup/CreateWorkoutSetPopup';
 import CreateWorkoutBlockPopup from '../CreateWorkoutBlockPopup/CreateWorkoutBlockPopup';
 import CreateNewWorkoutSchedulePopup from '../CreateNewWorkoutSchedulePopup/CreateNewWorkoutSchedulePopup';
 import DeleteExistingWorkoutSchedulePopup from '../DeleteExistingWorkoutSchedulePopup/DeleteExistingWorkoutSchedulePopup';
 import ManageWorkoutScheduleCalendarPopup from '../ManageWorkoutScheduleCalendarPopup/ManageWorkoutScheduleCalendarPopup';
 import styles from './CustomScheduleCreatorView.module.css';
+import useWorkoutSchedule from '../../hooks/useWorkoutSchedule';
+import { isFeatureEnabled } from '../../config/featureFlags';
 
-const CustomScheduleCreatorView: React.FC<{ onScheduleUpdate: () => void }> = ({ onScheduleUpdate }) => {
+const CustomScheduleCreatorView: React.FC = () => {
+    const { setCurrentSchedule } = useWorkoutSchedule();
     const [customSchedules, setCustomSchedules] = useState<CustomWorkoutSchedule[]>([]);
     const [selectedCustomSchedule, setSelectedCustomSchedule] = useState<CustomWorkoutSchedule | null>(null);
     const [selectedSchedule, setSelectedSchedule] = useState<(WorkoutSet | WorkoutBlock)[]>([]);
+    const [validationMessage, setValidationMessage] = useState<string | null>(null);
     const [isWorkoutSetPopupOpen, setIsWorkoutSetPopupOpen] = useState(false);
     const [isWorkoutBlockPopupOpen, setIsWorkoutBlockPopupOpen] = useState(false);
     const [isCreateNewSchedulePopupOpen, setIsCreateNewSchedulePopupOpen] = useState(false);
     const [isDeleteSchedulePopupOpen, setIsDeleteSchedulePopupOpen] = useState(false);
     const [isManageCalendarPopupOpen, setIsManageCalendarPopupOpen] = useState(false);
+    const calendarSurfaceEnabled = isFeatureEnabled('calendarSurface');
 
     useEffect(() => {
         setCustomSchedules(CustomWorkoutSchedulesStore.getCustomSchedules());
@@ -67,12 +71,17 @@ const CustomScheduleCreatorView: React.FC<{ onScheduleUpdate: () => void }> = ({
         const customSchedule = customSchedules.find(s => s.id === scheduleId) || null;
         setSelectedCustomSchedule(customSchedule);
         setSelectedSchedule(customSchedule ? customSchedule.workoutSchedule.scheduleItems : []);
+        setValidationMessage(null);
     };
 
     const handleSetAsCurrentSchedule = () => {
         if (selectedCustomSchedule) {
-            WorkoutScheduleStore.saveSchedule(selectedCustomSchedule.workoutSchedule);
-            onScheduleUpdate();
+            if (!selectedCustomSchedule.workoutSchedule.scheduleItems || selectedCustomSchedule.workoutSchedule.scheduleItems.length === 0) {
+                setValidationMessage('Add at least one workout set or block before setting this schedule as current.');
+                return;
+            }
+            setValidationMessage(null);
+            setCurrentSchedule(selectedCustomSchedule.workoutSchedule);
         }
     };
 
@@ -110,7 +119,9 @@ const CustomScheduleCreatorView: React.FC<{ onScheduleUpdate: () => void }> = ({
                     <button onClick={() => setIsCreateNewSchedulePopupOpen(true)}>Create New Workout Schedule</button>
                     <button onClick={() => setIsDeleteSchedulePopupOpen(true)} disabled={customSchedules.length === 0}>Delete Existing Workout Schedule</button>
                 </div>
-                <button onClick={() => setIsManageCalendarPopupOpen(true)}>Manage Workout Schedule Calendar</button>
+                {calendarSurfaceEnabled && (
+                    <button onClick={() => setIsManageCalendarPopupOpen(true)}>Manage Workout Schedule Calendar</button>
+                )}
                 <div className={styles.existingSchedules}>
                     <h3>Existing Custom Schedules</h3>
                     <select onChange={(e) => handleScheduleSelect(e.target.value)} value={selectedCustomSchedule?.id || ''}>
@@ -121,6 +132,7 @@ const CustomScheduleCreatorView: React.FC<{ onScheduleUpdate: () => void }> = ({
                     </select>
                 </div>
                 <button onClick={handleSetAsCurrentSchedule} disabled={!selectedCustomSchedule}>Set as Current Workout Schedule</button>
+                {validationMessage && <div className={styles.validationMessage}>{validationMessage}</div>}
             </div>
             <div className={styles.rightDivision}>
                 <div className={styles.schedulePreview}>
@@ -131,10 +143,15 @@ const CustomScheduleCreatorView: React.FC<{ onScheduleUpdate: () => void }> = ({
                     </div>
                     <div className={styles.scheduleItems}>
                         <ul>
-                            {selectedSchedule.map((item, index) => (
+                            {selectedSchedule.map((item, index) => {
+                                const isFirst = index === 0;
+                                const isLast = index === selectedSchedule.length - 1;
+                                const moveDisabled = !selectedCustomSchedule || selectedSchedule.length <= 1;
+                                return (
                                 <li key={index}>
                                     {item instanceof WorkoutSet ? (
-                                        <div>
+                                        <div className={styles.itemHeader}>
+                                            <span className={styles.itemIndex}>{index + 1}</span>
                                             <span>Workout Set</span>
                                             <ul>
                                                 {item.workouts.map(([workout], idx) => (
@@ -143,7 +160,8 @@ const CustomScheduleCreatorView: React.FC<{ onScheduleUpdate: () => void }> = ({
                                             </ul>
                                         </div>
                                     ) : item instanceof WorkoutBlock ? (
-                                        <div>
+                                        <div className={styles.itemHeader}>
+                                            <span className={styles.itemIndex}>{index + 1}</span>
                                             <span>Workout Block</span>
                                             <ul>
                                                 <li>{item.name}</li>
@@ -152,17 +170,27 @@ const CustomScheduleCreatorView: React.FC<{ onScheduleUpdate: () => void }> = ({
                                             </ul>
                                         </div>
                                     ) : (
-                                        <div>
+                                        <div className={styles.itemHeader}>
+                                            <span className={styles.itemIndex}>{index + 1}</span>
                                             <span>Unknown Item</span>
                                         </div>
                                     )}
                                     <div className={styles.buttonGroup}>
-                                        <button className={styles.moveButton} onClick={() => handleMoveItem(index, 'up')}>▲</button>
-                                        <button className={styles.moveButton} onClick={() => handleMoveItem(index, 'down')}>▼</button>
+                                        <button
+                                            className={styles.moveButton}
+                                            onClick={() => handleMoveItem(index, 'up')}
+                                            disabled={moveDisabled || isFirst}
+                                        >▲</button>
+                                        <button
+                                            className={styles.moveButton}
+                                            onClick={() => handleMoveItem(index, 'down')}
+                                            disabled={moveDisabled || isLast}
+                                        >▼</button>
                                         <button className={styles.removeButton} onClick={() => handleRemoveItem(index)}>❌</button>
                                     </div>
                                 </li>
-                            ))}
+                                );
+                            })}
                         </ul>
                     </div>
                     
@@ -193,7 +221,7 @@ const CustomScheduleCreatorView: React.FC<{ onScheduleUpdate: () => void }> = ({
                     onDelete={handleDeleteSchedule} 
                 />
             )}
-            {isManageCalendarPopupOpen && (
+            {calendarSurfaceEnabled && isManageCalendarPopupOpen && (
                 <ManageWorkoutScheduleCalendarPopup 
                     onClose={() => setIsManageCalendarPopupOpen(false)} 
                 />

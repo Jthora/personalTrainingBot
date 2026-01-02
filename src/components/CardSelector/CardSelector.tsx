@@ -19,12 +19,18 @@ const CardSelector: React.FC = () => {
 
     useEffect(() => {
         const cache = TrainingModuleCache.getInstance();
-        if (cache.isLoaded()) {
+
+        const syncTrainingModules = () => {
             setTrainingModules(Array.from(cache.cache.values()));
+        };
+
+        if (cache.isLoaded()) {
+            syncTrainingModules();
         }
 
         const unsubscribe = cache.subscribeToSelectionChanges(() => {
             setSelectionVersion(prev => prev + 1);
+            syncTrainingModules();
         });
 
         return () => {

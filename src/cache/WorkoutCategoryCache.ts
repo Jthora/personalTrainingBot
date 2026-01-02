@@ -53,6 +53,16 @@ class WorkoutCategoryCache {
                 console.log(`WorkoutCategoryCache: Cached ${this.selectedSubCategories.size} workout subcategories.`);
                 console.log(`WorkoutCategoryCache: Cached ${this.selectedWorkoutGroups.size} workout groups.`);
                 console.log(`WorkoutCategoryCache: Cached ${this.selectedWorkouts.size} workouts.`);
+
+                const signature = this.computeTaxonomySignature(workoutCategories);
+                const shouldHydrate = WorkoutScheduleStore.syncTaxonomySignature(signature);
+
+                if (shouldHydrate) {
+                    this.hydrateSelectionsFromStore();
+                } else {
+                    this.persistSelectionState();
+                }
+
                 this.loading = false;
                 resolve();
             }, 1000); // Simulate a delay
@@ -151,6 +161,30 @@ class WorkoutCategoryCache {
         WorkoutScheduleStore.saveSelectedWorkouts(this.convertSetToObject(this.selectedWorkouts));
     }
 
+    public selectAll(): void {
+        this.cache.forEach(category => {
+            this.selectedCategories.add(category.id);
+            category.subCategories.forEach(subCategory => {
+                this.selectedSubCategories.add(subCategory.id);
+                subCategory.workoutGroups.forEach(group => {
+                    this.selectedWorkoutGroups.add(group.id);
+                    group.workouts.forEach(workout => {
+                        this.selectedWorkouts.add(workout.id);
+                    });
+                });
+            });
+        });
+        this.persistSelectionState();
+    }
+
+    public unselectAll(): void {
+        this.selectedCategories.clear();
+        this.selectedSubCategories.clear();
+        this.selectedWorkoutGroups.clear();
+        this.selectedWorkouts.clear();
+        this.persistSelectionState();
+    }
+
     public isCategorySelected(id: string): boolean {
         return this.selectedCategories.has(id);
     }
@@ -173,6 +207,33 @@ class WorkoutCategoryCache {
         this.selectedSubCategories.clear();
         this.selectedWorkoutGroups.clear();
         this.selectedWorkouts.clear();
+    }
+
+    private computeTaxonomySignature(workoutCategories: WorkoutCategory[]): string {
+        const parts = workoutCategories
+            .map(category => {
+                const subParts = category.subCategories
+                    .map(sub => {
+                        const groupParts = sub.workoutGroups
+                            .map(group => {
+                                const workoutParts = group.workouts
+                                    .map(workout => workout.id)
+                                    .sort()
+                                    .join(',');
+                                return `${group.id}:${workoutParts}`;
+                            })
+                            .sort()
+                            .join('|');
+                        return `${sub.id}:${groupParts}`;
+                    })
+                    .sort()
+                    .join('#');
+                return `${category.id}:${subParts}`;
+            })
+            .sort()
+            .join('~');
+
+        return parts;
     }
 
     public getWorkoutsByDifficultyRange(minLevel: number, maxLevel: number, count: number): Workout[] {
@@ -237,12 +298,62 @@ class WorkoutCategoryCache {
         return shuffled.slice(0, count);
     }
 
+    private persistSelectionState(): void {
+        WorkoutScheduleStore.saveSelectedWorkoutCategories(this.convertSetToObject(this.selectedCategories));
+        WorkoutScheduleStore.saveSelectedWorkoutSubCategories(this.convertSetToObject(this.selectedSubCategories));
+        WorkoutScheduleStore.saveSelectedWorkoutGroups(this.convertSetToObject(this.selectedWorkoutGroups));
+        WorkoutScheduleStore.saveSelectedWorkouts(this.convertSetToObject(this.selectedWorkouts));
+    }
+
     private convertSetToObject(set: Set<string>): { [key: string]: boolean } {
         const obj: { [key: string]: boolean } = {};
         set.forEach(id => {
             obj[id] = true;
         });
         return obj;
+    }
+
+    private hydrateSelectionsFromStore(): void {
+        const allCategoryIds = new Set(this.selectedCategories);
+        const allSubCategoryIds = new Set(this.selectedSubCategories);
+        const allGroupIds = new Set(this.selectedWorkoutGroups);
+        const allWorkoutIds = new Set(this.selectedWorkouts);
+
+        const persistedCategories = WorkoutScheduleStore.getSelectedWorkoutCategoriesSync();
+        const persistedSubCategories = WorkoutScheduleStore.getSelectedWorkoutSubCategoriesSync();
+        const persistedGroups = WorkoutScheduleStore.getSelectedWorkoutGroupsSync();
+        const persistedWorkouts = WorkoutScheduleStore.getSelectedWorkoutsSync();
+
+        this.selectedCategories.clear();
+        this.selectedSubCategories.clear();
+        this.selectedWorkoutGroups.clear();
+        this.selectedWorkouts.clear();
+
+        this.applySelectionMap(persistedCategories, allCategoryIds, this.selectedCategories, 'category');
+        this.applySelectionMap(persistedSubCategories, allSubCategoryIds, this.selectedSubCategories, 'subcategory');
+        this.applySelectionMap(persistedGroups, allGroupIds, this.selectedWorkoutGroups, 'group');
+        this.applySelectionMap(persistedWorkouts, allWorkoutIds, this.selectedWorkouts, 'workout');
+
+        this.persistSelectionState();
+    }
+
+    private applySelectionMap(
+        persisted: Record<string, boolean>,
+        validIds: Set<string>,
+        target: Set<string>,
+        label: 'category' | 'subcategory' | 'group' | 'workout'
+    ): void {
+        Object.entries(persisted).forEach(([id, isSelected]) => {
+            if (!isSelected) {
+                return;
+            }
+
+            if (validIds.has(id)) {
+                target.add(id);
+            } else {
+                console.warn(`WorkoutCategoryCache: Stored ${label} id "${id}" no longer exists. Ignoring.`);
+            }
+        });
     }
 }
 

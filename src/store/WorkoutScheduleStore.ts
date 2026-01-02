@@ -1,13 +1,20 @@
-import { DifficultySetting } from '../types/DifficultySetting';
-import { WorkoutSchedule, WorkoutSet, WorkoutScheduleJSON } from '../types/WorkoutSchedule';
+import { WorkoutSchedule, WorkoutSet, WorkoutScheduleJSON, WorkoutBlock } from '../types/WorkoutSchedule';
 import WorkoutCategoryCache from '../cache/WorkoutCategoryCache';
 import { SelectedWorkoutCategories, SelectedWorkoutGroups, SelectedWorkoutSubCategories, SelectedWorkouts } from '../types/WorkoutCategory';
+import { createWorkoutSchedule } from '../utils/WorkoutScheduleCreator';
+import DifficultySettingsStore from './DifficultySettingsStore';
 
-const WORKOUT_SCHEDULE_KEY = 'workoutSchedule';
-const SELECTED_CATEGORIES_KEY = 'selectedWorkoutCategories';
-const SELECTED_SUBCATEGORIES_KEY = 'selectedWorkoutSubCategories';
-const SELECTED_GROUPS_KEY = 'selectedWorkoutGroups';
-const SELECTED_WORKOUTS_KEY = 'selectedWorkouts';
+const STORAGE_VERSION = 'v2';
+const STORAGE_PREFIX = `workout:${STORAGE_VERSION}:`;
+
+const withVersionedKey = (base: string) => `${STORAGE_PREFIX}${base}`;
+
+const WORKOUT_SCHEDULE_KEY = withVersionedKey('schedule');
+const SELECTED_CATEGORIES_KEY = withVersionedKey('selectedWorkoutCategories');
+const SELECTED_SUBCATEGORIES_KEY = withVersionedKey('selectedWorkoutSubCategories');
+const SELECTED_GROUPS_KEY = withVersionedKey('selectedWorkoutGroups');
+const SELECTED_WORKOUTS_KEY = withVersionedKey('selectedWorkouts');
+const TAXONOMY_SIGNATURE_KEY = withVersionedKey('taxonomySignature');
 
 const isBooleanRecord = (value: unknown): value is Record<string, boolean> => {
     if (!value || typeof value !== 'object') {
@@ -118,13 +125,8 @@ const WorkoutScheduleStore = {
 
             console.log('WorkoutScheduleStore: getScheduleSync: Retrieved workout schedule from localStorage.');
             const workoutSchedule = parseScheduleFromStorage(schedule);
-            if (!workoutSchedule) {
-                console.warn('WorkoutScheduleStore: Stored schedule invalid.');
-                return null;
-            }
-
-            if (workoutSchedule.scheduleItems.length === 0) {
-                console.warn('WorkoutScheduleStore: No workouts in the schedule. Creating a new schedule.');
+            if (!workoutSchedule || workoutSchedule.scheduleItems.length === 0) {
+                console.warn('WorkoutScheduleStore: Stored schedule invalid or empty.');
                 const newSchedule = this.createNewScheduleSync();
                 this.saveSchedule(newSchedule);
                 return newSchedule;
@@ -190,44 +192,46 @@ const WorkoutScheduleStore = {
         }
     },
     async createNewSchedule(): Promise<WorkoutSchedule> {
-        const selectedCategories = await this.getSelectedWorkoutCategories();
-        const selectedGroups = await this.getSelectedWorkoutGroups();
-        const selectedSubCategories = await this.getSelectedWorkoutSubCategories();
-        const selectedWorkouts = await this.getSelectedWorkouts();
-        
-        const allWorkouts = WorkoutCategoryCache.getInstance().getAllWorkoutsFilteredBy(
-            selectedCategories, selectedGroups, selectedSubCategories, selectedWorkouts
-        );
-        const randomWorkouts = allWorkouts.sort(() => 0.5 - Math.random()).slice(0, 10);
-
-        const workoutSets: WorkoutSet[] = [];
-        for (let i = 0; i < randomWorkouts.length; i++) {
-            const workout = randomWorkouts[i];
-            const workoutSet = new WorkoutSet([[workout, false]]);
-            workoutSets.push(workoutSet);
-        }
-
-        return new WorkoutSchedule(new Date().toISOString(), workoutSets, new DifficultySetting(1, [1, 10]));
+        // Use unified difficulty-aware generator
+        return createWorkoutSchedule();
     },
     createNewScheduleSync(): WorkoutSchedule {
+        // Best-effort synchronous path to mirror the unified generator shape
         const selectedCategories = this.getSelectedWorkoutCategoriesSync();
         const selectedGroups = this.getSelectedWorkoutGroupsSync();
         const selectedSubCategories = this.getSelectedWorkoutSubCategoriesSync();
         const selectedWorkouts = this.getSelectedWorkoutsSync();
-        
-        const allWorkouts = WorkoutCategoryCache.getInstance().getAllWorkoutsFilteredBy(
-            selectedCategories, selectedGroups, selectedSubCategories, selectedWorkouts
-        );
-        const randomWorkouts = allWorkouts.sort(() => 0.5 - Math.random()).slice(0, 10);
+
+        const cache = WorkoutCategoryCache.getInstance();
+        const workouts = cache.getAllWorkoutsFilteredBy(selectedCategories, selectedSubCategories, selectedGroups, selectedWorkouts);
+        const difficultySettings = DifficultySettingsStore.getSettings();
+
+        // Fallback difficulty level sampling (synchronous)
+        const difficultyLevel = DifficultySettingsStore.getWeightedRandomDifficulty(difficultySettings);
+        const filtered = workouts.filter(workout => workout.difficulty_range[0] <= difficultyLevel && workout.difficulty_range[1] >= difficultyLevel);
+        const picked = filtered.length > 0 ? filtered : workouts;
+
+        const shuffled = [...picked].sort(() => 0.5 - Math.random());
+        const selectedWorkoutsForSchedule = shuffled.slice(0, Math.min(10, shuffled.length));
 
         const workoutSets: WorkoutSet[] = [];
-        for (let i = 0; i < randomWorkouts.length; i++) {
-            const workout = randomWorkouts[i];
-            const workoutSet = new WorkoutSet([[workout, false]]);
-            workoutSets.push(workoutSet);
+        const workoutBlocks: WorkoutBlock[] = [];
+        for (let i = 0; i < selectedWorkoutsForSchedule.length; i += 3) {
+            const slice = selectedWorkoutsForSchedule.slice(i, i + 3);
+            workoutSets.push(new WorkoutSet(slice.map(w => [w, false])));
+            const duration = Math.floor(Math.random() * (45 - 30 + 1)) + 30;
+            workoutBlocks.push(new WorkoutBlock(`Block ${(i / 3) + 1}`, 'Do something productive!', duration, 'Take a break and do something productive between workout sets.'));
         }
 
-        return new WorkoutSchedule(new Date().toISOString(), workoutSets, new DifficultySetting(1, [1, 10]));
+        const scheduleItems: (WorkoutSet | WorkoutBlock)[] = [];
+        workoutSets.forEach((set, idx) => {
+            scheduleItems.push(set);
+            if (workoutBlocks[idx]) {
+                scheduleItems.push(workoutBlocks[idx]);
+            }
+        });
+
+        return new WorkoutSchedule(new Date().toISOString(), scheduleItems, difficultySettings);
     },
     getSelectedWorkoutCategoriesSync(): SelectedWorkoutCategories {
         try {
@@ -423,6 +427,41 @@ const WorkoutScheduleStore = {
         } catch (error) {
             console.error('Failed to clear selected workouts:', error);
         }
+    },
+    getTaxonomySignature(): string | null {
+        try {
+            return localStorage.getItem(TAXONOMY_SIGNATURE_KEY);
+        } catch (error) {
+            console.error('Failed to get taxonomy signature:', error);
+            return null;
+        }
+    },
+    saveTaxonomySignature(signature: string) {
+        try {
+            localStorage.setItem(TAXONOMY_SIGNATURE_KEY, signature);
+        } catch (error) {
+            console.error('Failed to save taxonomy signature:', error);
+        }
+    },
+    syncTaxonomySignature(signature: string): boolean {
+        const existing = this.getTaxonomySignature();
+
+        if (!existing) {
+            this.saveTaxonomySignature(signature);
+            return true;
+        }
+
+        if (existing === signature) {
+            return true;
+        }
+
+        console.warn('WorkoutScheduleStore: Taxonomy signature mismatch. Clearing stored selections.');
+        this.clearSelectedWorkoutCategories();
+        this.clearSelectedWorkoutGroups();
+        this.clearSelectedWorkoutSubCategories();
+        this.clearSelectedWorkouts();
+        this.saveTaxonomySignature(signature);
+        return false;
     }
 };
 

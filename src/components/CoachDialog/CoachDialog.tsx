@@ -1,16 +1,27 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import styles from './CoachDialog.module.css';
 import TrainingCoachCache from '../../cache/TrainingCoachCache';
 import WorkoutDetails from '../WorkoutDetails/WorkoutDetails';
 import useWorkoutSchedule from '../../hooks/useWorkoutSchedule';
 import { useCoachSelection } from '../../hooks/useCoachSelection';
 import { coaches, defaultCoachId } from '../../data/coaches';
+import { WorkoutBlock, WorkoutSet } from '../../types/WorkoutSchedule';
 
 const CoachDialog: React.FC = () => {
     const [quote, setQuote] = useState('');
     const { coachId: selectedCoach } = useCoachSelection();
     const { schedule, isLoading, createNewSchedule } = useWorkoutSchedule();
-    const currentItem = schedule?.scheduleItems[0];
+
+    const currentItem = useMemo(() => {
+        if (!schedule) return null;
+        return schedule.scheduleItems.find(item => {
+            if (item instanceof WorkoutBlock) return true;
+            if (item instanceof WorkoutSet) {
+                return item.workouts.some(([, completed]) => !completed);
+            }
+            return false;
+        }) ?? null;
+    }, [schedule]);
 
     useEffect(() => {
         const loadMotivationalQuote = async () => {
@@ -40,7 +51,11 @@ const CoachDialog: React.FC = () => {
     return (
         <div className={styles.coachDialog}>
             <div className={styles.header}>
-                {coachIcon && <img src={coachIcon} alt="Coach Icon" className={styles.icon} width="128" height="128" />}
+                {coachIcon && (
+                    <div className={styles.iconFrame}>
+                        <img src={coachIcon} alt="Coach Icon" className={styles.icon} />
+                    </div>
+                )}
                 <div className={styles.textContainer}>
                     <div className={styles.titleContainer}>
                         <h3 className={styles.coach}>Coach:</h3>

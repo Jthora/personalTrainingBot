@@ -2,7 +2,7 @@ import tigerIcon from '../assets/images/icons/coaches/tiger_fitness_god-icon.png
 import jonoIcon from '../assets/images/icons/coaches/jono_thora-icon.png';
 import taraIcon from '../assets/images/icons/coaches/tara_van_dekar-icon.png';
 import simonIcon from '../assets/images/icons/coaches/agent_simon-icon.png';
-import raynorIcon from '../assets/images/icons/coaches/star_commander_raynor-icon.svg';
+import raynorIcon from '../assets/images/icons/coaches/StarcomCommander_01.png';
 
 export type Coach = {
     id: string;

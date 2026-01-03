@@ -1,0 +1,130 @@
+.filtersCard {
+  background: #0f172a;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  padding: 16px;
+  color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fieldLabel {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #1f2937;
+  background: #111827;
+  color: #e5e7eb;
+}
+
+.chipRow {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.zeroState {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  color: #d0d5dd;
+}
+.zeroStateCard {
+  background: #0f172a;
+  border: 1px solid #1f2a44;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.zeroStateActions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.zeroStateActions button {
+  background: #1f2937;
+  border: 1px solid #2f3b52;
+  color: #e5e7eb;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.zeroStateActions button:hover {
+  background: #111827;
+}
+.countHint {
+  margin-top: 8px;
+  color: #9ca3af;
+  font-size: 0.85rem;
+}
+
+.chip,
+.chipActive {
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #334155;
+  background: #0b1222;
+  color: #cbd5e1;
+  cursor: pointer;
+}
+
+.chipActive {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+  color: #f8fafc;
+}
+
+.checkboxGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 8px;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+}
+
+.clearButton {
+  background: transparent;
+  border: none;
+  color: #93c5fd;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.sliderRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  align-items: center;
+}
+
+.sliderLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #e5e7eb;
+}
+
+.sliderValue {
+  font-weight: 600;
+  color: #f8fafc;
+}

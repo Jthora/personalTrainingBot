@@ -10,7 +10,7 @@ interface WorkoutDetailsProps {
 }
 
 const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ item }) => {
-    const { schedule, isLoading, completeCurrentWorkout, skipCurrentWorkout, createNewSchedule, scheduleVersion } = useWorkoutSchedule();
+    const { schedule, isLoading, completeCurrentWorkout, skipCurrentWorkout, timeoutCurrentWorkout, createNewSchedule, scheduleVersion } = useWorkoutSchedule();
     const timerRef = useRef<{ resetTimer: () => void }>(null);
     const [currentScheduleIndex, setCurrentScheduleIndex] = useState(0);
     const [currentWorkoutIndex, setCurrentWorkoutIndex] = useState(0);
@@ -74,7 +74,7 @@ const WorkoutDetails: React.FC<WorkoutDetailsProps> = ({ item }) => {
     const handleTimeoutWorkout = async () => {
         console.log('Workout timed out:', item);
         playTimeoutSound();
-        skipCurrentWorkout();
+        timeoutCurrentWorkout();
         if (item instanceof WorkoutSet && currentWorkoutIndex < item.workouts.length - 1) {
             setCurrentWorkoutIndex(prevIndex => prevIndex + 1);
         } else {

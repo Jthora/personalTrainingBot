@@ -6,6 +6,8 @@ import LoadingMessage from './components/LoadingMessage/LoadingMessage'; // Impo
 import { WorkoutScheduleProvider } from './context/WorkoutScheduleContext';
 import { CoachSelectionProvider } from './context/CoachSelectionContext';
 import { warmCaches } from './utils/cacheWarmHints';
+import RecapModal from './components/RecapModal/RecapModal';
+import RecapToast from './components/RecapToast/RecapToast';
 
 const App: React.FC = () => {
   const [isDataLoaded, setIsDataLoaded] = useState(false);
@@ -27,19 +29,22 @@ const App: React.FC = () => {
     }
   }, [initializationPromise]);
 
+  useEffect(() => {
+    if (!isDataLoaded) return;
+    warmCaches();
+  }, [isDataLoaded]);
+
   if (!isDataLoaded) {
     return <LoadingMessage progress={loadingProgress} />; // Use the new component with progress
   }
-
-  useEffect(() => {
-    warmCaches();
-  }, []);
 
   return (
     <WorkoutScheduleProvider>
       <CoachSelectionProvider>
         <Router>
           <AppRoutes />
+          <RecapToast />
+          <RecapModal />
         </Router>
       </CoachSelectionProvider>
     </WorkoutScheduleProvider>

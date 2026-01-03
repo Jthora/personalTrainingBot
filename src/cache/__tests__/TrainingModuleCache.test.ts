@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, it } from 'vitest';
+import { beforeEach, describe, expect, it, vi } from 'vitest';
 import TrainingModuleCache from '../TrainingModuleCache';
 import type { TrainingModule } from '../../types/TrainingModule';
 
@@ -136,5 +136,31 @@ describe('TrainingModuleCache', () => {
 
         expect(cache.isCardSelected('card-two')).toBe(true);
         expect(cache.isCardSelected('card-three')).toBe(true);
+    });
+
+    it('continues with select-all defaults when selection storage read fails', async () => {
+        const getItemSpy = vi.spyOn(localStorage, 'getItem').mockImplementation(() => {
+            throw new Error('storage read blocked');
+        });
+
+        await cache.loadData(sampleModules);
+
+        expect(cache.isCardSelected('card-one')).toBe(true);
+
+        getItemSpy.mockRestore();
+    });
+
+    it('ignores invalid persisted selection data and preserves selections', async () => {
+        await cache.loadData(sampleModules);
+
+        localStorage.setItem('trainingSelection:v2:modules', '{ not-json');
+        localStorage.setItem('trainingSelection:v2:subModules', '{"bad":"data"}');
+        localStorage.setItem('trainingSelection:v2:cardDecks', '{"deck-morning":"yes"}');
+        localStorage.setItem('trainingSelection:v2:cards', '{"card-one":"maybe"}');
+
+        await cache.loadData(sampleModules);
+
+        expect(cache.isCardSelected('card-one')).toBe(true);
+        expect(cache.isCardDeckSelected('deck-morning')).toBe(true);
     });
 });

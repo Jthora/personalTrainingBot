@@ -1,0 +1,176 @@
+# Gamified Progress Upgrade — Progress Tracker
+
+Use this hierarchical checklist to track delivery. Mark checkboxes as you progress; numbering follows `stage.phase.step.task[.sub-task]`.
+
+## Stage 1: Foundations
+- [x] 1.1 Phase: Core Telemetry & Surfacing
+  - [x] 1.1.1 Step: Progress store
+    - [x] 1.1.1.1 Sub-step: Implement `UserProgressStore` (localStorage, versioned)
+      - [x] 1.1.1.1.1 Task: Define schemas (streak, XP, level, badges, goals, challenges)
+        - [x] 1.1.1.1.1.1 Sub-task: Add derived view-model fields (level progress, goal %)
+        - [x] 1.1.1.1.1.2 Sub-task: Add quietMode/flags handling
+        - [x] 1.1.1.1.1.3 Sub-task: Add badge/challenge catalogs loading (static config) with safe defaults
+      - [x] 1.1.1.1.2 Task: Persistence/migration path
+        - [x] 1.1.1.1.2.1 Sub-task: Safe parse defaults and versioning
+        - [x] 1.1.1.1.2.2 Sub-task: Fallback to in-memory when storage unavailable; hide reward UI
+        - [x] 1.1.1.1.2.3 Sub-task: Kill-switch behavior (disable progress surfaces gracefully)
+  - [x] 1.1.2 Step: Event wiring
+    - [x] 1.1.2.1 Sub-step: Hook `useWorkoutSchedule` complete/skip/timeout/schedule-set
+      - [x] 1.1.2.1.1 Task: Emit debounced/idempotent events
+      - [x] 1.1.2.1.2 Task: Update progress store on events (complete/skip/timeout)
+      - [x] 1.1.2.1.3 Task: Add streak/XP rules (complete vs skip/timeout) and unit tests
+  - [x] 1.1.3 Step: Alignment checks triggers
+    - [x] 1.1.3.1 Task: Add alignment checks trigger (debounced) on difficulty change
+    - [x] 1.1.3.2 Task: Add alignment checks trigger on selection change
+  - [x] 1.1.4 Step: Minimal UI surfacing
+    - [x] 1.1.4.1 Sub-step: Header chips
+      - [x] 1.1.4.1.1 Task: Schedule chip, difficulty pill, streak/level chips, alignment badge
+        - [x] 1.1.4.1.1.1 Sub-task: Keep header minimal; move secondary controls to drawer/more
+      - [x] 1.1.4.1.2 Task: Add selection summary chip
+      - [x] 1.1.4.1.3 Task: Add streak/goal/XP mini-widgets (StatsPanel embed)
+    - [x] 1.1.4.2 Sub-step: Home left rail
+      - [x] 1.1.4.2.1 Task: Actionable workout cards (start/resume)
+      - [x] 1.1.4.2.2 Task: Streak/XP/goal widgets (one daily, one weekly)
+        - [x] 1.1.4.2.2.1 Sub-task: Badge strip (optional in Phase 1; hide behind flag)
+    - [x] 1.1.4.3 Sub-step: Recap toast
+      - [x] 1.1.4.3.1 Task: Trigger on schedule completion (basic delta display)
+      - [x] 1.1.4.3.2 Task: Respect quiet mode (no prompt/sound) and flags
+      - [x] 1.1.4.3.3 Task: Show XP/streak delta chip with dismiss and “view recap” CTA
+      - [x] 1.1.4.3.4 Task: Instrument impressions/clicks/dismissals (quiet mode excluded)
+      - [x] 1.1.4.3.5 Task: Add QA cases (empty schedule, back-to-back completions, offline)
+  - [x] 1.1.5 Step: Guardrails
+    - [x] 1.1.5.1 Sub-step: Memoize/debounce selection summary and alignment checks
+    - [x] 1.1.5.2 Sub-step: Graceful fallback when storage unavailable
+    - [x] 1.1.5.3 Sub-step: Prompt rate limits (max one mid-session)
+    - [x] 1.1.5.4 Task: Track debounce hit/miss metrics and surface in logs
+    - [x] 1.1.5.5 Task: Safe reset path when cache/store drift is detected
+    - [x] 1.1.5.6 Task: Document/verify kill-switch flags for all surfacing layers
+
+- [x] 1.2 Phase: Test Passes & Coverage
+  - [x] 1.2.1 Step: Progress telemetry coverage
+    - [x] 1.2.1.1 Task: Add unit tests for progress store/events (streak freeze, XP accrual, goal minutes; timeout path)
+    - [x] 1.2.1.2 Task: Add unit tests for alignment checks (pass vs warn)
+    - [x] 1.2.1.3 Task: Run and review vitest coverage report (vitest + @vitest/coverage-v8)
+
+## Stage 2: Guidance & Generation
+- [x] 2.1 Phase: Guidance & Generation
+  - [x] 2.1.1 Step: Presets/filters/search
+    - [x] 2.1.1.1 Task: Basic presets (Quick 20, Upper/Lower, Cardio) and filters
+    - [x] 2.1.1.2 Task: Selection summary live updates with debounce
+  - [x] 2.1.1.3 Task: Filter facets (difficulty, duration, equipment, theme)
+      - [x] 2.1.1.3.1 Sub-task: Difficulty slider with guardrails (min/max + snapping)
+      - [x] 2.1.1.3.2 Sub-task: Duration quick toggles (10/20/30+)
+      - [x] 2.1.1.3.3 Sub-task: Equipment chips (bodyweight, dumbbells, bands)
+      - [x] 2.1.1.3.4 Sub-task: Theme tags (mobility/strength/cardio/hiit)
+    - [x] 2.1.1.4 Task: Search improvements
+      - [x] 2.1.1.4.1 Sub-task: Fuzzy match against name/description/keywords
+      - [x] 2.1.1.4.2 Sub-task: Highlight matches in list rows and details
+      - [x] 2.1.1.4.3 Sub-task: Debounce and cancel in-flight queries
+  - [x] 2.1.1.5 Task: Empty/zero-state UX with quick actions (clear filters/apply preset)
+    - [x] 2.1.1.6 Task: Persist filters/search in selection store (cross-session)
+    - [x] 2.1.1.7 Task: Tests for preset/filter/search interplay and selection counts
+  - [x] 2.1.1.8 Task: Accessibility: focus order, ARIA labels, screen-reader copy for filters
+  - [x] 2.1.2 Step: Today’s plan banner
+    - [x] 2.1.2.1 Task: Show focus, est. time, rationale
+    - [x] 2.1.2.2 Task: Hook to difficulty and selected focus
+  - [x] 2.1.3 Step: Preview drawer
+    - [x] 2.1.3.1 Task: Reorder/remove; replace with similar; cancel/close path
+    - [x] 2.1.3.2 Task: Show alignment icons; ensure accessibility/keyboard support
+    - [x] 2.1.3.3 Task: Inline difficulty adjustments per item
+    - [x] 2.1.3.4 Task: Bulk replace with similar by category/difficulty
+    - [x] 2.1.3.5 Task: Keyboard + screen reader support (focus trap, reorder handles)
+  - [x] 2.1.3.6 Task: Performance for long lists (virtualization or windowing)
+    - [x] 2.1.3.7 Task: Telemetry for impressions, reorders, swaps, closes
+    - [x] 2.1.3.8 Task: Tests for reorder/remove/replace flows and a11y smoke
+  - [x] 2.1.4 Step: Alignment warnings
+    - [x] 2.1.4.1 Task: Badge/flag with swap/adjust options (debounced)
+    - [x] 2.1.4.2 Task: Don’t spam; show once per material change
+    - [x] 2.1.4.3 Task: Auto-suggest fixes (lower difficulty, add mobility, spread muscle groups)
+    - [x] 2.1.4.4 Task: Quiet-mode compliance and rate limit per session
+    - [x] 2.1.4.5 Task: A11y announcements for warnings and suggested fixes
+    - [x] 2.1.4.6 Task: Telemetry for surfaced/resolved/ignored warnings
+    - [x] 2.1.4.7 Task: Document thresholds and tuning levers
+  - [x] 2.1.5 Step: Recap modal (light)
+    - [x] 2.1.5.1 Task: XP/streak/badges/goals/challenges snapshot; one primary CTA
+    - [x] 2.1.5.2 Task: Share text (flag-controlled)
+    - [x] 2.1.5.3 Task: Truncate badges (+N) and keep recap concise
+    - [x] 2.1.5.4 Task: Include selection/preset used and focus rationale
+    - [x] 2.1.5.5 Task: Animations flag + gentle motion defaults
+    - [x] 2.1.5.6 Task: A11y: focus trap, escape/enter, screen-reader flow
+    - [x] 2.1.5.7 Task: Telemetry for impressions/cta/share interactions
+    - [x] 2.1.5.8 Task: Offline/quiet-mode safe fallbacks
+
+## Stage 3: Motivation Depth
+- [x] 3.1 Phase: Badges/Challenges/Recap depth
+  - [x] 3.1.1 Step: Badges
+    - [x] 3.1.1.1 Task: Lean catalog (8–12), truncated strip with +N
+    - [x] 3.1.1.2 Task: Tiered badges where applicable; rarity for visuals only
+    - [x] 3.1.1.3 Task: Badge artwork and color tokens
+    - [x] 3.1.1.4 Task: Unlock rules and persistence (per-user cadence)
+    - [x] 3.1.1.5 Task: Tests for unlocking, truncation, and flag gating
+  - [x] 3.1.2 Step: Challenges
+    - [x] 3.1.2.1 Task: One daily + one weekly; claim flow; XP once
+    - [x] 3.1.2.2 Task: Rotation logic (daily/weekly), expiry/cleanup
+    - [x] 3.1.2.3 Task: Reminders/notifications (flagged) with quiet-mode compliance
+    - [x] 3.1.2.4 Task: Metrics for accept/complete/expire
+  - [x] 3.1.3 Step: Recap depth
+    - [x] 3.1.3.1 Task: Celebrate badge unlocks (flagged); challenge progress; suggested next steps
+    - [x] 3.1.3.2 Task: Quiet mode compliance; optional animations flag
+    - [x] 3.1.3.3 Task: Alternate copy for low-activity vs streaking users
+    - [x] 3.1.3.4 Task: Tests for copy selection, gating, and truncation
+  - [x] 3.1.4 Step: Share helper
+    - [x] 3.1.4.1 Task: Clipboard copy; under flag
+    - [x] 3.1.4.2 Task: Keep under 200 chars; PII-free
+    - [x] 3.1.4.3 Task: Templates for achievements vs daily recap
+    - [x] 3.1.4.4 Task: Tests for copy length and PII redaction
+
+## Stage 4: Polish & Controls
+- [x] 4.1 Phase: Settings & Polish
+  - [x] 4.1.1 Step: Toggles
+    - [x] 4.1.1.1 Task: Quiet mode (suppress prompts/animations)
+    - [x] 4.1.1.2 Task: Sounds/prompt frequency/challenge opt-in/animations flags
+    - [x] 4.1.1.3 Task: Central flags store + persistence + defaults
+    - [x] 4.1.1.4 Task: Tests for flag precedence and rollout gating
+  - [x] 4.1.2 Step: Responsive & UX polish
+    - [x] 4.1.2.1 Task: Header minimalism on small screens; drawer usability
+    - [x] 4.1.2.2 Task: Sidebar card count limits; badge strip overflow handling
+    - [x] 4.1.2.3 Task: Keyboard support for all drawers/sidebars
+    - [x] 4.1.2.4 Task: Skeleton/loading states for slow fetches
+  - [x] 4.1.3 Step: Copy/variety
+    - [x] 4.1.3.1 Task: Prompt variation pools; rate limits enforced
+    - [x] 4.1.3.2 Task: A/B-ready copy groups with metrics hooks
+      - Notes: Variant selection & rate limits covered by `src/utils/copy/__tests__/recapVariants.test.ts` (served/impression/interactions)
+  - [x] 4.1.4 Step: Flags/rollout
+    - [x] 4.1.4.1 Task: Safe defaults; kill switches; staged enablement
+    - [x] 4.1.4.2 Task: Documentation update for flags/toggles
+    - [x] 4.1.4.3 Task: Env-based gating (dev/stage/prod) and QA checklist
+      - Notes: Env-aware defaults + global kill switch in `src/config/featureFlags.ts`; tests in `src/config/__tests__/featureFlags.test.ts`. Stages: dev/stage enable calendarSurface, prod defaults off; global kill switch overrides all. QA: verify overrides via `VITE_FEATURE_FLAGS` and localStorage reset path.
+
+## Stage 5: QA & Rollout
+- [ ] 5.1 Phase: QA & Rollout
+  - [ ] 5.1.1 Step: QA execution
+    - [ ] 5.1.1.1 Task: Run test matrix (streak rollover, XP rules, alignment warnings, quiet mode)
+    - [ ] 5.1.1.2 Task: Manual scenarios (empty selection, skips/timeouts, small screens)
+    - [ ] 5.1.1.3 Task: Performance checks (large selection tree, memo effectiveness)
+    - [ ] 5.1.1.4 Task: Accessibility sweep (screen readers, keyboard traps, contrast)
+    - [ ] 5.1.1.5 Task: Localization-ready copy scan (length/ellipsis)
+      - Notes: Include verification of global kill switch gating recap/toast surfaces, quiet-mode suppression for recap flows, and storage-failure fallback for recap copy variants.
+  - [ ] 5.1.2 Step: Performance/resilience
+    - [ ] 5.1.2.1 Task: Large selection responsiveness; storage-failure fallback
+    - [ ] 5.1.2.2 Task: Throttle alignment and search when browser is under load
+    - [ ] 5.1.2.3 Task: Error boundary coverage and offline fallbacks
+  - [ ] 5.1.3 Step: Rollout
+    - [ ] 5.1.3.1 Task: Enable chips/widgets first; then recap; then challenges/badges
+    - [ ] 5.1.3.2 Task: Monitor engagement; keep kill switch ready
+    - [ ] 5.1.3.3 Task: Verify flags off remove UI cleanly (no gaps)
+    - [ ] 5.1.3.4 Task: Dashboards for XP, streaks, engagement on new surfaces
+
+## Stage 6: Post-Launch Tuning
+- [ ] 6.1 Phase: Iterate based on signals
+  - [ ] 6.1.1 Step: Tune XP curves and streak rules if needed
+  - [ ] 6.1.2 Step: Add/remove badges or challenges to balance cadence
+  - [ ] 6.1.3 Step: Adjust prompts frequency/wording based on feedback
+  - [ ] 6.1.4 Step: Revisit goals/challenge difficulty based on completion rates
+  - [ ] 6.1.5 Step: Assess quiet mode/notifications uptake and adjust defaults
+  - [ ] 6.1.6 Step: Refresh copy and variation pools quarterly
+  - [ ] 6.1.7 Step: Run periodic a11y and performance audits post-launch

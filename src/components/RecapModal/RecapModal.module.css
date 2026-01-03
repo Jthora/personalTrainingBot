@@ -1,0 +1,268 @@
+.backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(7, 11, 19, 0.7);
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 40;
+}
+
+.motion {
+    animation: fadeInBackdrop 180ms ease-out;
+}
+
+.modalMotion {
+    animation: slideUpModal 200ms ease-out;
+}
+
+@keyframes fadeInBackdrop {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUpModal {
+    from { opacity: 0; transform: translateY(8px) scale(0.98); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .motion,
+    .modalMotion {
+        animation: none;
+    }
+}
+
+.modal {
+    background: #0d1525;
+    border: 1px solid #1f2937;
+    border-radius: 14px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+    width: 420px;
+    max-width: 90vw;
+    padding: 20px;
+    color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.header {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #9ca3af;
+    font-size: 0.95rem;
+}
+
+.highlightCard {
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.16), rgba(16, 185, 129, 0.14));
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.headline {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.subhead {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+}
+
+.closeButton {
+    background: transparent;
+    border: 1px solid #334155;
+    color: #e5e7eb;
+    border-radius: 8px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.card {
+    background: #0a101b;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.cardTitle {
+    color: #9ca3af;
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+}
+
+.metric {
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+
+.progressBar {
+    position: relative;
+    height: 8px;
+    background: #111827;
+    border-radius: 999px;
+    overflow: hidden;
+    margin-top: 6px;
+}
+
+.progressFill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.badges {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    color: #fcd34d;
+}
+
+.badgeOverflow {
+    color: #93c5fd;
+    background: rgba(37, 99, 235, 0.12);
+    border: 1px solid rgba(37, 99, 235, 0.4);
+    border-radius: 6px;
+    padding: 2px 6px;
+}
+
+.metricSmall {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.callouts {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.calloutLine {
+    font-size: 0.95rem;
+    color: #e5e7eb;
+}
+
+.celebration {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.3);
+}
+
+.badgeCelebration {
+    color: #fcd34d;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.meta {
+    color: #9ca3af;
+    font-size: 0.9rem;
+}
+
+.nextSteps {
+    color: #e5e7eb;
+    margin: 0;
+    padding-left: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 0.95rem;
+}
+
+.rationale {
+    color: #9ca3af;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 4px 0 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.shareSection {
+    background: #0a101b;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.shareText {
+    background: #0d1525;
+    border: 1px dashed #334155;
+    border-radius: 8px;
+    padding: 10px;
+    color: #e5e7eb;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.shareActions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.shareStatus {
+    color: #a3e635;
+    font-size: 0.85rem;
+}
+
+.offlineNote {
+    color: #9ca3af;
+    font-size: 0.9rem;
+    padding: 6px 8px;
+    border: 1px dashed #334155;
+    border-radius: 8px;
+}
+
+.cta {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    border: 1px solid #1d4ed8;
+    color: #e5e7eb;
+    border-radius: 10px;
+    padding: 10px 14px;
+    cursor: pointer;
+}
+
+.secondary {
+    background: transparent;
+    border: 1px solid #334155;
+    color: #e5e7eb;
+    border-radius: 10px;
+    padding: 10px 14px;
+    cursor: pointer;
+}

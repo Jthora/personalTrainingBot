@@ -1,6 +1,10 @@
+import { getAppEnv, AppEnv } from './env';
+
 export type FeatureFlagKey = 'generatorSwap' | 'calendarSurface' | 'migrationBridge';
 
-export type FeatureFlagConfig = Record<FeatureFlagKey, boolean>;
+type GlobalFlagKey = 'globalKillSwitch';
+
+export type FeatureFlagConfig = Record<FeatureFlagKey, boolean> & Record<GlobalFlagKey, boolean>;
 
 const LOCAL_STORAGE_KEY = 'featureFlagOverrides';
 
@@ -8,6 +12,28 @@ const DEFAULT_FLAGS: FeatureFlagConfig = {
     generatorSwap: true,
     calendarSurface: false,
     migrationBridge: false,
+    globalKillSwitch: false,
+};
+
+const ENV_DEFAULT_FLAGS: Record<AppEnv, Partial<FeatureFlagConfig>> = {
+    development: {
+        generatorSwap: true,
+        calendarSurface: true,
+        migrationBridge: true,
+        globalKillSwitch: false,
+    },
+    staging: {
+        generatorSwap: true,
+        calendarSurface: true,
+        migrationBridge: false,
+        globalKillSwitch: false,
+    },
+    production: {
+        generatorSwap: true,
+        calendarSurface: false,
+        migrationBridge: false,
+        globalKillSwitch: false,
+    },
 };
 
 const parseOverrides = (): Partial<FeatureFlagConfig> => {
@@ -35,15 +61,15 @@ const parseOverrides = (): Partial<FeatureFlagConfig> => {
 
 const envOverrides = (): Partial<FeatureFlagConfig> => {
     // Supports a JSON string in VITE_FEATURE_FLAGS, e.g. '{"calendarSurface":true}'
-    const envValue = (import.meta as any).env?.VITE_FEATURE_FLAGS as string | undefined;
+    const envValue = ((import.meta as any).env?.VITE_FEATURE_FLAGS as string | undefined) || process.env.VITE_FEATURE_FLAGS;
     if (!envValue) {
         return {};
     }
     try {
         const parsed = JSON.parse(envValue) as Record<string, unknown>;
         return Object.entries(parsed).reduce<Partial<FeatureFlagConfig>>((acc, [key, value]) => {
-            if (isFeatureFlagKey(key) && typeof value === 'boolean') {
-                acc[key] = value;
+            if ((isFeatureFlagKey(key) || isGlobalFlagKey(key)) && typeof value === 'boolean') {
+                acc[key as FeatureFlagKey | GlobalFlagKey] = value;
             }
             return acc;
         }, {});
@@ -53,11 +79,17 @@ const envOverrides = (): Partial<FeatureFlagConfig> => {
     }
 };
 
-let resolvedFlags: FeatureFlagConfig = {
-    ...DEFAULT_FLAGS,
-    ...envOverrides(),
-    ...parseOverrides(),
+const computeResolvedFlags = (): FeatureFlagConfig => {
+    const env = getAppEnv();
+    return {
+        ...DEFAULT_FLAGS,
+        ...(ENV_DEFAULT_FLAGS[env] ?? {}),
+        ...envOverrides(),
+        ...parseOverrides(),
+    };
 };
+
+let resolvedFlags: FeatureFlagConfig = computeResolvedFlags();
 
 const persistOverrides = (flags: FeatureFlagConfig) => {
     if (typeof window === 'undefined') {
@@ -66,7 +98,12 @@ const persistOverrides = (flags: FeatureFlagConfig) => {
     window.localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(flags));
 };
 
-export const isFeatureEnabled = (flag: FeatureFlagKey): boolean => resolvedFlags[flag];
+export const isFeatureEnabled = (flag: FeatureFlagKey): boolean => {
+    if (resolvedFlags.globalKillSwitch) {
+        return false;
+    }
+    return resolvedFlags[flag];
+};
 
 export const getFeatureFlags = (): FeatureFlagConfig => ({ ...resolvedFlags });
 
@@ -76,14 +113,24 @@ export const setFeatureFlagOverride = (flag: FeatureFlagKey, value: boolean): Fe
     return getFeatureFlags();
 };
 
+export const setGlobalKillSwitch = (enabled: boolean): FeatureFlagConfig => {
+    resolvedFlags = { ...resolvedFlags, globalKillSwitch: enabled };
+    persistOverrides(resolvedFlags);
+    return getFeatureFlags();
+};
+
 export const resetFeatureFlagOverrides = (): FeatureFlagConfig => {
-    resolvedFlags = { ...DEFAULT_FLAGS, ...envOverrides() };
+    resolvedFlags = computeResolvedFlags();
     if (typeof window !== 'undefined') {
         window.localStorage.removeItem(LOCAL_STORAGE_KEY);
     }
     return getFeatureFlags();
 };
 
-const isFeatureFlagKey = (key: string): key is FeatureFlagKey => {
+function isFeatureFlagKey(key: string): key is FeatureFlagKey {
     return ['generatorSwap', 'calendarSurface', 'migrationBridge'].includes(key);
-};
+}
+
+function isGlobalFlagKey(key: string): key is GlobalFlagKey {
+    return key === 'globalKillSwitch';
+}

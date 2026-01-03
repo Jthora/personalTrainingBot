@@ -1,0 +1,44 @@
+.strip {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px 10px;
+    background: var(--panel-bg, #0c1020);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.badge {
+    background: linear-gradient(135deg, #4ade80, #16a34a);
+    color: #06280c;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.more {
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 5px 9px;
+    border-radius: 999px;
+    font-size: 12px;
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+}

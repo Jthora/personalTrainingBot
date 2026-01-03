@@ -3,6 +3,8 @@ import WorkoutCategoryCache from '../cache/WorkoutCategoryCache';
 import { SelectedWorkoutCategories, SelectedWorkoutGroups, SelectedWorkoutSubCategories, SelectedWorkouts } from '../types/WorkoutCategory';
 import { createWorkoutSchedule } from '../utils/WorkoutScheduleCreator';
 import DifficultySettingsStore from './DifficultySettingsStore';
+import { logAlignmentForSchedule } from '../utils/alignmentCheck';
+import { recordMetric } from '../utils/metrics';
 
 const STORAGE_VERSION = 'v2';
 const STORAGE_PREFIX = `workout:${STORAGE_VERSION}:`;
@@ -15,6 +17,34 @@ const SELECTED_SUBCATEGORIES_KEY = withVersionedKey('selectedWorkoutSubCategorie
 const SELECTED_GROUPS_KEY = withVersionedKey('selectedWorkoutGroups');
 const SELECTED_WORKOUTS_KEY = withVersionedKey('selectedWorkouts');
 const TAXONOMY_SIGNATURE_KEY = withVersionedKey('taxonomySignature');
+const LAST_PRESET_KEY = withVersionedKey('lastPreset');
+const STORAGE_KEYS = [
+    WORKOUT_SCHEDULE_KEY,
+    SELECTED_CATEGORIES_KEY,
+    SELECTED_SUBCATEGORIES_KEY,
+    SELECTED_GROUPS_KEY,
+    SELECTED_WORKOUTS_KEY,
+    TAXONOMY_SIGNATURE_KEY,
+    LAST_PRESET_KEY,
+];
+
+type SelectionListener = () => void;
+const selectionListeners = new Set<SelectionListener>();
+
+const notifySelectionChange = () => {
+    selectionListeners.forEach(listener => {
+        try {
+            listener();
+        } catch (error) {
+            console.warn('WorkoutScheduleStore: selection listener failed', error);
+        }
+    });
+};
+
+const addSelectionListener = (listener: SelectionListener) => {
+    selectionListeners.add(listener);
+    return () => selectionListeners.delete(listener);
+};
 
 const isBooleanRecord = (value: unknown): value is Record<string, boolean> => {
     if (!value || typeof value !== 'object') {
@@ -90,6 +120,15 @@ const getDefaultSelectedWorkouts = (): SelectedWorkouts => {
 };
 
 const WorkoutScheduleStore = {
+    resetAll(reason: string) {
+        console.warn('WorkoutScheduleStore: resetting persisted state due to drift', reason);
+        try {
+            STORAGE_KEYS.forEach(key => localStorage.removeItem(key));
+            recordMetric('store_reset_drift', { reason });
+        } catch (error) {
+            console.error('WorkoutScheduleStore: failed to reset persisted state', error);
+        }
+    },
     async getSchedule(): Promise<WorkoutSchedule | null> {
         try {
             const schedule = localStorage.getItem(WORKOUT_SCHEDULE_KEY);
@@ -101,6 +140,7 @@ const WorkoutScheduleStore = {
                 }
 
                 console.warn('WorkoutScheduleStore: Stored schedule invalid or empty. Creating a new schedule.');
+                this.resetAll('invalid_schedule');
             } else {
                 console.warn('getSchedule: No workout schedule found in localStorage. Creating a new schedule.');
             }
@@ -127,6 +167,7 @@ const WorkoutScheduleStore = {
             const workoutSchedule = parseScheduleFromStorage(schedule);
             if (!workoutSchedule || workoutSchedule.scheduleItems.length === 0) {
                 console.warn('WorkoutScheduleStore: Stored schedule invalid or empty.');
+                this.resetAll('invalid_schedule_sync');
                 const newSchedule = this.createNewScheduleSync();
                 this.saveSchedule(newSchedule);
                 return newSchedule;
@@ -144,6 +185,21 @@ const WorkoutScheduleStore = {
             console.log('Saved workout schedule to localStorage.');
         } catch (error) {
             console.error('Failed to save workout schedule:', error);
+        }
+    },
+    saveLastPreset(preset: string) {
+        try {
+            localStorage.setItem(LAST_PRESET_KEY, preset);
+        } catch (error) {
+            console.error('Failed to save last preset:', error);
+        }
+    },
+    getLastPreset(): string | null {
+        try {
+            return localStorage.getItem(LAST_PRESET_KEY);
+        } catch (error) {
+            console.error('Failed to get last preset:', error);
+            return null;
         }
     },
     clearSchedule() {
@@ -179,6 +235,9 @@ const WorkoutScheduleStore = {
         try {
             localStorage.setItem(SELECTED_CATEGORIES_KEY, JSON.stringify(categories));
             console.log('Saved selected workout categories to localStorage.');
+            const schedule = this.getScheduleSync();
+            if (schedule) logAlignmentForSchedule(schedule);
+            notifySelectionChange();
         } catch (error) {
             console.error('Failed to save selected workout categories:', error);
         }
@@ -187,6 +246,7 @@ const WorkoutScheduleStore = {
         try {
             localStorage.removeItem(SELECTED_CATEGORIES_KEY);
             console.log('Cleared selected workout categories from localStorage.');
+            notifySelectionChange();
         } catch (error) {
             console.error('Failed to clear selected workout categories:', error);
         }
@@ -384,6 +444,9 @@ const WorkoutScheduleStore = {
         try {
             localStorage.setItem(SELECTED_GROUPS_KEY, JSON.stringify(groups));
             console.log('Saved selected workout groups to localStorage.');
+            const schedule = this.getScheduleSync();
+            if (schedule) logAlignmentForSchedule(schedule);
+            notifySelectionChange();
         } catch (error) {
             console.error('Failed to save selected workout groups:', error);
         }
@@ -392,6 +455,9 @@ const WorkoutScheduleStore = {
         try {
             localStorage.setItem(SELECTED_SUBCATEGORIES_KEY, JSON.stringify(subCategories));
             console.log('Saved selected workout subcategories to localStorage.');
+            const schedule = this.getScheduleSync();
+            if (schedule) logAlignmentForSchedule(schedule);
+            notifySelectionChange();
         } catch (error) {
             console.error('Failed to save selected workout subcategories:', error);
         }
@@ -400,6 +466,9 @@ const WorkoutScheduleStore = {
         try {
             localStorage.setItem(SELECTED_WORKOUTS_KEY, JSON.stringify(workouts));
             console.log('Saved selected workouts to localStorage.');
+            const schedule = this.getScheduleSync();
+            if (schedule) logAlignmentForSchedule(schedule);
+            notifySelectionChange();
         } catch (error) {
             console.error('Failed to save selected workouts:', error);
         }
@@ -408,6 +477,7 @@ const WorkoutScheduleStore = {
         try {
             localStorage.removeItem(SELECTED_GROUPS_KEY);
             console.log('Cleared selected workout groups from localStorage.');
+            notifySelectionChange();
         } catch (error) {
             console.error('Failed to clear selected workout groups:', error);
         }
@@ -416,6 +486,7 @@ const WorkoutScheduleStore = {
         try {
             localStorage.removeItem(SELECTED_SUBCATEGORIES_KEY);
             console.log('Cleared selected workout subcategories from localStorage.');
+            notifySelectionChange();
         } catch (error) {
             console.error('Failed to clear selected workout subcategories:', error);
         }
@@ -424,6 +495,7 @@ const WorkoutScheduleStore = {
         try {
             localStorage.removeItem(SELECTED_WORKOUTS_KEY);
             console.log('Cleared selected workouts from localStorage.');
+            notifySelectionChange();
         } catch (error) {
             console.error('Failed to clear selected workouts:', error);
         }
@@ -462,6 +534,17 @@ const WorkoutScheduleStore = {
         this.clearSelectedWorkouts();
         this.saveTaxonomySignature(signature);
         return false;
+    },
+    getSelectionCounts() {
+        const categories = this.getSelectedWorkoutCategoriesSync();
+        const workouts = this.getSelectedWorkoutsSync();
+        return {
+            categories: Object.values(categories).filter(Boolean).length,
+            workouts: Object.values(workouts).filter(Boolean).length,
+        };
+    },
+    subscribeToSelectionChanges(listener: SelectionListener) {
+        return addSelectionListener(listener);
     }
 };
 

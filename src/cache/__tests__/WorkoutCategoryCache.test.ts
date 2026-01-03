@@ -69,6 +69,38 @@ const categoriesWithNewWorkout: WorkoutCategory[] = [
     },
 ];
 
+const categoriesNoMatch: WorkoutCategory[] = [
+    {
+        id: 'cat-mobility',
+        name: 'Mobility',
+        description: 'Stretching',
+        subCategories: [
+            {
+                id: 'sub-stretch',
+                name: 'Stretch',
+                description: 'Stretching',
+                workoutGroups: [
+                    {
+                        id: 'group-stretch-basic',
+                        name: 'Basic Stretch',
+                        description: 'Basic',
+                        workouts: [
+                            {
+                                id: 'workout-stretch',
+                                name: 'Stretch Routine',
+                                description: 'Long stretch',
+                                duration: '45 min',
+                                intensity: 'Light',
+                                difficulty_range: [1, 3],
+                            },
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
+];
+
 const cache = WorkoutCategoryCache.getInstance();
 
 const loadCategories = async (categories: WorkoutCategory[]) => {
@@ -107,5 +139,51 @@ describe('WorkoutCategoryCache', () => {
 
         expect(cache.isCategorySelected('cat-strength')).toBe(true);
         expect(cache.isWorkoutSelected('workout-flyes')).toBe(true);
+    });
+
+    it('applies quick20 preset to short workouts', async () => {
+        await loadCategories(sampleCategories);
+
+        cache.applyPreset('quick20');
+
+        expect(cache.isWorkoutSelected('workout-pushup')).toBe(true);
+        expect(cache.isWorkoutSelected('workout-dips')).toBe(true);
+        expect(cache.isCategorySelected('cat-strength')).toBe(true);
+    });
+
+    it('falls back to select all when preset has no matches', async () => {
+        await loadCategories(categoriesNoMatch);
+
+        cache.applyPreset('cardio');
+
+        expect(cache.isWorkoutSelected('workout-stretch')).toBe(true);
+        expect(cache.isCategorySelected('cat-mobility')).toBe(true);
+    });
+
+    it('recovers from invalid persisted selections by selecting all', async () => {
+        await loadCategories(sampleCategories);
+
+        localStorage.setItem('workout:v2:selectedWorkoutCategories', '{"cat-strength":"yes"}');
+        localStorage.setItem('workout:v2:selectedWorkoutSubCategories', '{ not-json');
+        localStorage.setItem('workout:v2:selectedWorkoutGroups', '{"group-push":null}');
+        localStorage.setItem('workout:v2:selectedWorkouts', '{"workout-pushup":"false"}');
+
+        await loadCategories(sampleCategories);
+
+        expect(cache.isCategorySelected('cat-strength')).toBe(true);
+        expect(cache.isWorkoutSelected('workout-pushup')).toBe(true);
+    });
+
+    it('keeps in-memory selections even if persistence throws', async () => {
+        const setItemSpy = vi.spyOn(localStorage, 'setItem').mockImplementation(() => {
+            throw new Error('quota');
+        });
+
+        await loadCategories(sampleCategories);
+
+        expect(cache.isWorkoutSelected('workout-pushup')).toBe(true);
+        expect(cache.isCategorySelected('cat-strength')).toBe(true);
+
+        setItemSpy.mockRestore();
     });
 });

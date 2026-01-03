@@ -2,11 +2,12 @@
 
 .pageContainer {
     padding: 16px 24px;
+    padding-top: calc(60px + 16px);
     background-color: var(--surface-base);
     color: var(--text-primary);
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
 }
 

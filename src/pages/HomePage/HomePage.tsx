@@ -6,6 +6,7 @@ import CardTable from '../../components/CardTable/CardTable';
 import { CardProvider } from '../../context/CardContext';
 import { WorkoutScheduleProvider } from '../../context/WorkoutScheduleContext';
 import { useSearchParams } from 'react-router-dom';
+import TodaysPlanBanner from '../../components/TodaysPlanBanner/TodaysPlanBanner';
 
 const HomePage: React.FC = () => {
     const [searchParams] = useSearchParams();
@@ -21,6 +22,7 @@ const HomePage: React.FC = () => {
                     </WorkoutScheduleProvider>
                 </div>
                 <div className={styles.mainContent}>
+                    <TodaysPlanBanner />
                     <CardProvider initialSlug={cardSlug}>
                         <CardTable />
                     </CardProvider>

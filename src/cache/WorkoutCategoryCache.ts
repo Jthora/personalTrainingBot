@@ -1,5 +1,8 @@
 import { Workout, WorkoutCategory, SelectedWorkoutCategories, SelectedWorkoutGroups, SelectedWorkoutSubCategories, SelectedWorkouts } from "../types/WorkoutCategory";
 import WorkoutScheduleStore from "../store/WorkoutScheduleStore";
+import WorkoutFilterStore from "../store/WorkoutFilterStore";
+import { applyWorkoutFilters } from "../utils/workoutFilters";
+import { WorkoutPreset, buildPresetSelections } from "../utils/workoutPresets";
 
 class WorkoutCategoryCache {
     private static instance: WorkoutCategoryCache;
@@ -102,11 +105,15 @@ class WorkoutCategoryCache {
         const selectedWorkoutSubCategories = WorkoutScheduleStore.getSelectedWorkoutSubCategoriesSync();
         const selectedWorkoutGroups = WorkoutScheduleStore.getSelectedWorkoutGroupsSync();
         const selectedWorkouts = WorkoutScheduleStore.getSelectedWorkoutsSync();
+        const filters = WorkoutFilterStore.getFiltersSync();
         console.log('Selected categories:', selectedWorkoutCategories);
         console.log('Selected subcategories:', selectedWorkoutSubCategories);
         console.log('Selected groups:', selectedWorkoutGroups);
         console.log('Selected workouts:', selectedWorkouts);
-        return this.getAllWorkoutsFilteredBy(selectedWorkoutCategories, selectedWorkoutSubCategories, selectedWorkoutGroups, selectedWorkouts);
+        const selected = this.getAllWorkoutsFilteredBy(selectedWorkoutCategories, selectedWorkoutSubCategories, selectedWorkoutGroups, selectedWorkouts);
+        const filtered = applyWorkoutFilters(selected, filters);
+        console.log(`WorkoutCategoryCache: applied filters ${JSON.stringify(filters)} -> ${filtered.length}/${selected.length} workouts`);
+        return filtered;
     }
 
     public getAllWorkouts(): Workout[] {
@@ -159,6 +166,24 @@ class WorkoutCategoryCache {
             this.selectedWorkouts.add(id);
         }
         WorkoutScheduleStore.saveSelectedWorkouts(this.convertSetToObject(this.selectedWorkouts));
+    }
+
+    public applyPreset(preset: WorkoutPreset): void {
+        const categories = Array.from(this.cache.values());
+        const { categoryIds, subCategoryIds, groupIds, workoutIds } = buildPresetSelections(categories, preset);
+
+        if (workoutIds.size === 0) {
+            console.warn(`WorkoutCategoryCache: preset ${preset} matched no workouts; falling back to select all.`);
+            this.selectAll();
+            return;
+        }
+
+        this.selectedCategories = categoryIds;
+        this.selectedSubCategories = subCategoryIds;
+        this.selectedWorkoutGroups = groupIds;
+        this.selectedWorkouts = workoutIds;
+        this.persistSelectionState();
+        WorkoutScheduleStore.saveLastPreset(preset);
     }
 
     public selectAll(): void {

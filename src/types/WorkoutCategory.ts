@@ -47,6 +47,10 @@ export class Workout {
     duration: string;
     intensity: string;
     difficulty_range: [number, number];
+    equipment?: string[];
+    themes?: string[];
+    keywords?: string[];
+    durationMinutes?: number;
 
     constructor(name: string, description: string, duration: string, intensity: string, difficulty_range: [number, number]) {
         this.id = name.toLowerCase().replace(/\s+/g, '_');
@@ -55,6 +59,9 @@ export class Workout {
         this.duration = duration;
         this.intensity = intensity;
         this.difficulty_range = difficulty_range;
+        this.equipment = [];
+        this.themes = [];
+        this.keywords = [];
     }
 }
 

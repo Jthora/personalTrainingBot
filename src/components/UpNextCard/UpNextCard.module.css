@@ -1,0 +1,51 @@
+@import '../../styles/theme.css';
+
+.card {
+    background: var(--surface-card);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.label {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 0.04em;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.meta {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.primary {
+    flex: 1;
+    background: linear-gradient(90deg, #60a5fa, #a78bfa);
+    border: none;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.ghost {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--text-primary);
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}

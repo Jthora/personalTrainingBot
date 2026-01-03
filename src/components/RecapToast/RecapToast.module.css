@@ -1,0 +1,98 @@
+@import '../../styles/theme.css';
+
+.toast {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    background: var(--surface-card);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 14px 16px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+    z-index: 1100;
+    animation: fadeIn 180ms ease-out;
+    min-width: 280px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.titleRow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.title {
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.chips {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.chip {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: var(--text-primary);
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.cta {
+    background: var(--accent-primary);
+    color: #0b0b0f;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.cta:hover {
+    filter: brightness(1.05);
+}
+
+.secondary {
+    background: transparent;
+    color: var(--text-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.secondary:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.close {
+    margin-left: auto;
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 4px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+}

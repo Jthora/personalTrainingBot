@@ -2,9 +2,11 @@
 
 .pageContainer {
     padding: var(--padding);
+    padding-top: calc(var(--padding) + 60px);
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
     overflow: hidden;
+    min-height: 100vh;
 }
 
 .nav {

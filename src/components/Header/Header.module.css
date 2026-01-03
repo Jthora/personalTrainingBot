@@ -72,10 +72,58 @@
     text-transform: uppercase;
 }
 
+.chipsRow {
+    display: flex;
+    gap: 8px;
+    margin-top: 4px;
+    flex-wrap: wrap;
+}
+
+.chip {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 4px 8px;
+    font-size: 0.7rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    line-height: 1;
+}
+
+.streak[data-state='active'] {
+    color: #4ade80;
+    border-color: #4ade80;
+}
+
+.streak[data-state='frozen'] {
+    color: #fbbf24;
+    border-color: #fbbf24;
+}
+
+.streak[data-state='broken'] {
+    color: #f87171;
+    border-color: #f87171;
+}
+
+.alignment[data-state='pass'] {
+    color: #38bdf8;
+    border-color: #38bdf8;
+}
+
+.alignment[data-state='warn'] {
+    color: #f97316;
+    border-color: #f97316;
+}
+
 .rightSection {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
+}
+
+.statsWrapper {
+    min-width: 320px;
 }
 
 .nav {
@@ -111,6 +159,25 @@
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+.moreButton {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--text-primary);
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.moreButton:hover {
+    border-color: var(--coach-accent);
+    background: rgba(90, 127, 255, 0.12);
 }
 
 .themeToggleButton,
@@ -231,6 +298,95 @@
     color: #0d0d0d;
     border-color: rgba(0, 0, 0, 0.2);
     background: rgba(0, 0, 0, 0.02);
+}
+
+.drawerOverlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1200;
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+    pointer-events: none;
+}
+
+.drawerBackdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    pointer-events: auto;
+}
+
+.drawer {
+    position: relative;
+    width: min(420px, 90vw);
+    height: 100%;
+    background: var(--surface-card);
+    border-left: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: -12px 0 24px rgba(0, 0, 0, 0.35);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    pointer-events: auto;
+}
+
+.drawerHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.drawerTitle {
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.drawerClose {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    color: var(--text-primary);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.drawerChips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.drawerStats {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.drawerNav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.drawerNav .navButton {
+    width: 100%;
+    justify-content: center;
+}
+
+.drawerFooter {
+    margin-top: auto;
+}
+
+.drawerControls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 [data-theme="light"] .navButton:hover,

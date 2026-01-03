@@ -6,14 +6,24 @@ import { WorkoutBlock } from '../../types/WorkoutSchedule';
 interface WorkoutCardProps {
     item: Workout | WorkoutBlock;
     onClick: () => void;
+    highlight?: string;
 }
 
-const WorkoutCard: React.FC<WorkoutCardProps> = ({ item, onClick }) => {
+const highlightText = (text: string, query?: string) => {
+    if (!query || !query.trim()) return text;
+    const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(`(${escaped})`, 'gi');
+    return text.split(regex).map((part, index) =>
+        regex.test(part) ? <mark key={index}>{part}</mark> : <React.Fragment key={index}>{part}</React.Fragment>
+    );
+};
+
+const WorkoutCard: React.FC<WorkoutCardProps> = ({ item, onClick, highlight }) => {
     if (item instanceof WorkoutBlock) {
         return (
             <div className={styles.workoutCard} onClick={onClick}>
-                <h3>{item.name}</h3>
-                <p>{item.description}</p>
+                <h3>{highlightText(item.name, highlight)}</h3>
+                <p>{highlightText(item.description, highlight)}</p>
                 <p>Duration: {item.duration} minutes</p>
                 <p>{item.intervalDetails}</p>
             </div>
@@ -21,8 +31,8 @@ const WorkoutCard: React.FC<WorkoutCardProps> = ({ item, onClick }) => {
     } else if (item instanceof Workout) {
         return (
             <div className={styles.workoutCard} onClick={onClick}>
-                <h3>{item.name}</h3>
-                <p>{item.description}</p>
+                <h3>{highlightText(item.name, highlight)}</h3>
+                <p>{highlightText(item.description, highlight)}</p>
                 <p>Duration: {item.duration}</p>
                 <p>Intensity: {item.intensity}</p>
                 <p>Difficulty Range: {item.difficulty_range[0]} - {item.difficulty_range[1]}</p>

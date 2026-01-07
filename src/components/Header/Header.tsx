@@ -123,11 +123,13 @@ const Header: React.FC = () => {
     };
 
     const toggleTheme = () => {
-        setIsDarkMode(!isDarkMode);
+        // Compute next theme from current state to avoid stale state issues
+        const nextIsDark = !isDarkMode;
+        setIsDarkMode(nextIsDark);
         // Apply theme to document root
-        document.documentElement.setAttribute('data-theme', isDarkMode ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', nextIsDark ? 'dark' : 'light');
         // Store theme preference
-        localStorage.setItem('theme', isDarkMode ? 'light' : 'dark');
+        localStorage.setItem('theme', nextIsDark ? 'dark' : 'light');
     };
 
     // Initialize theme on component mount
@@ -267,6 +269,12 @@ const Header: React.FC = () => {
 
             {/* Right Side - Navigation and Login */}
             <div className={styles.rightSection}>
+                {/* Inline nav + controls for wider screens — hidden by CSS on small viewports */}
+                {renderNav()}
+                {renderThemeToggle()}
+                {renderLogin()}
+
+                {/* Drawer trigger for small screens and alternate access */}
                 <button className={styles.moreButton} onClick={() => setDrawerOpen(true)} aria-label="Open menu" style={{ '--coach-color': coachColor } as React.CSSProperties}>
                     ⋯
                 </button>

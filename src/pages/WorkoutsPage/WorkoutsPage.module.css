@@ -1,31 +1,94 @@
 @import '../../styles/theme.css';
 
 .pageContainer {
-    padding: var(--padding);
-    padding-top: calc(var(--padding) + 60px);
-    background-color: var(--primary-bg-color);
-    color: var(--primary-text-color);
-    overflow: hidden;
-    min-height: 100vh;
-}
-
-.nav {
-    padding: var(--padding);
-    background-color: var(--secondary-bg-color);
-    color: var(--primary-text-color);
-}
-
-.contentContainer {
     display: flex;
-    margin-top: var(--padding);
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    background: var(--surface-base);
+    position: relative;
+    padding-top: var(--header-height, 60px);
+    color: var(--text-primary);
 }
 
-.workoutsSidebarContainer {
-    width: 25%;
-    padding-left: var(--padding);
+.pageContainer::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 120px 120px;
+    pointer-events: none;
+    z-index: 0;
 }
 
-.workoutsWindowContainer {
-    flex: 2;
-    margin-top: var(--padding);
+.content {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    display: grid;
+    grid-template-columns: minmax(280px, 30%) 1fr;
+    gap: 18px;
+    padding: 20px 24px 24px;
+    outline: none;
+}
+
+.content:focus-visible {
+    outline: 2px solid var(--coach-accent);
+    outline-offset: 4px;
+}
+
+.sidebar {
+    height: calc(100vh - 92px);
+    overflow: auto;
+}
+
+.mainPane {
+    height: calc(100vh - 92px);
+    overflow: auto;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    background: var(--surface-card);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+@media (max-width: 1200px) {
+    .content {
+        grid-template-columns: minmax(260px, 34%) 1fr;
+    }
+
+    .sidebar,
+    .mainPane {
+        height: calc(100vh - 88px);
+    }
+}
+
+@media (max-width: 960px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar,
+    .mainPane {
+        height: auto;
+        overflow: visible;
+    }
+}
+
+@media (max-width: 720px) {
+    .content {
+        padding: 16px;
+        gap: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 14px;
+        gap: 12px;
+    }
 }

@@ -1,0 +1,202 @@
+# Workouts Page Redesign — Progress Tracker
+
+> Stages → Phases → Steps → Tasks (seeded numbering for easy referencing)
+
+- [ ] **Stage 1. Discovery & Alignment**
+  - [ ] Phase 1.1 Requirements & Goals
+    - [ ] Step 1.1.1 Confirm objectives and success metrics
+      - [ ] Sub-step 1.1.1.1 Gather baseline metrics (task time, error rate)
+      - [ ] Sub-step 1.1.1.2 Draft target KPIs with Product/Design/Eng
+      - [ ] Sub-step 1.1.1.3 Review with stakeholders and sign off
+      - [ ] Task 1.1.1.a Align on UX/perf/a11y targets
+      - [ ] Task 1.1.1.b Document measurable KPIs in `overview.md`
+    - [ ] Step 1.1.2 Finalize scope, non-goals, constraints
+      - [ ] Sub-step 1.1.2.1 List in-scope features/flows
+      - [ ] Sub-step 1.1.2.2 List explicit non-goals
+      - [ ] Sub-step 1.1.2.3 Capture constraints/dependencies
+      - [ ] Task 1.1.2.a Lock in scope/non-goals in `requirements.md`
+      - [ ] Task 1.1.2.b Capture constraints/dependencies in `overview.md`
+  - [ ] Phase 1.2 Research & Audit
+    - [x] Step 1.2.1 Current state audit (UX/visual/accessibility/perf)
+      - [x] Sub-step 1.2.1.1 Capture screen recordings/screenshots
+      - [x] Sub-step 1.2.1.2 Run quick perf/A11y checks (axe/lighthouse sample)
+      - [x] Sub-step 1.2.1.3 Summarize top issues by severity
+      - [x] Task 1.2.1.a Baseline walkthrough and screenshots
+      - [x] Task 1.2.1.b Record issues/gaps in `risks-and-open-questions.md`
+    - [x] Step 1.2.2 Comparative review with adjacent pages
+      - [x] Sub-step 1.2.2.1 Note layout/theming patterns to mirror
+      - [x] Sub-step 1.2.2.2 Identify discrepancies and rationale
+      - [x] Sub-step 1.2.2.3 Decide reuse vs new for shared components
+      - [x] Task 1.2.2.a Identify alignment opportunities with Home/Training/Schedules
+      - [x] Task 1.2.2.b Note reuse candidates in `component-inventory.md`
+
+- [ ] **Stage 2. Design & Architecture**
+  - [ ] Phase 2.1 IA & Layout
+    - [ ] Step 2.1.1 Wireframes per breakpoint
+      - [ ] Sub-step 2.1.1.1 Draft desktop layout
+      - [ ] Sub-step 2.1.1.2 Draft tablet layout
+      - [ ] Sub-step 2.1.1.3 Draft mobile layout
+      - [ ] Sub-step 2.1.1.4 Iterate based on feedback
+      - [ ] Task 2.1.1.a Draft low-fi (desktop/tablet/mobile)
+      - [ ] Task 2.1.1.b Review and sign off with design
+    - [ ] Step 2.1.2 Interaction patterns
+      - [ ] Sub-step 2.1.2.1 Define keyboard behaviors
+      - [ ] Sub-step 2.1.2.2 Define mouse/touch behaviors
+      - [ ] Sub-step 2.1.2.3 Define detail/filters open/close rules
+      - [ ] Task 2.1.2.a Define keyboard/mouse/touch behaviors in `interaction-patterns.md`
+      - [ ] Task 2.1.2.b Align detail/filters behaviors across breakpoints
+  - [ ] Phase 2.2 Theming & Visuals
+    - [ ] Step 2.2.1 Token application
+      - [ ] Sub-step 2.2.1.1 Identify surfaces/text/accent usages per component
+      - [ ] Sub-step 2.2.1.2 Map states (hover/focus/active/selected) to tokens
+      - [ ] Sub-step 2.2.1.3 Contrast check all states
+      - [ ] Task 2.2.1.a Map components to coach theme tokens
+      - [ ] Task 2.2.1.b Validate contrast and state colors
+    - [ ] Step 2.2.2 Component visual specs
+      - [ ] Sub-step 2.2.2.1 Produce spec for list rows/cards
+      - [ ] Sub-step 2.2.2.2 Produce spec for filters/sidebar
+      - [ ] Sub-step 2.2.2.3 Produce spec for detail pane/sheet
+      - [ ] Sub-step 2.2.2.4 Produce spec for action bars/buttons
+      - [ ] Task 2.2.2.a Finalize visuals for list, filters, detail, actions
+      - [ ] Task 2.2.2.b Capture specs in `theming-and-visuals.md`
+  - [ ] Phase 2.3 Content & States
+    - [ ] Step 2.3.1 Copy and microcopy
+      - [ ] Sub-step 2.3.1.1 Draft CTA labels
+      - [ ] Sub-step 2.3.1.2 Draft empty/loading/error copy
+      - [ ] Sub-step 2.3.1.3 Review for tone/localization
+      - [ ] Task 2.3.1.a Draft CTAs, empty/error/loading copy in `content-strategy.md`
+      - [ ] Task 2.3.1.b Localize-ready string list
+    - [ ] Step 2.3.2 State patterns
+      - [ ] Sub-step 2.3.2.1 Define visuals for empty/loading/error/success
+      - [ ] Sub-step 2.3.2.2 Ensure accessibility (live regions, focus)
+      - [ ] Task 2.3.2.a Standardize empty/loading/error/success visuals
+      - [ ] Task 2.3.2.b Document in `content-strategy.md` and `interaction-patterns.md`
+
+- [ ] **Stage 3. Implementation**
+  - [ ] Phase 3.1 Shell & Layout
+    - [x] Step 3.1.1 Page shell refactor
+      - [x] Sub-step 3.1.1.1 Implement layout containers and grid
+      - [x] Sub-step 3.1.1.2 Add responsive breakpoints/states
+      - [x] Sub-step 3.1.1.3 Align spacing with header/safe areas
+      - [x] Task 3.1.1.a Implement responsive layout per `ia-and-layout.md`
+      - [x] Task 3.1.1.b Wire header spacing/safe areas
+    - [x] Step 3.1.2 Sidebar modernisation
+      - [x] Sub-step 3.1.2.1 Build filter group component
+      - [x] Sub-step 3.1.2.2 Add applied filter chips/summary
+      - [x] Sub-step 3.1.2.3 Implement mobile sheet/drawer behavior
+      - [x] Task 3.1.2.a Build filter groups, applied chips, collapsible sections
+      - [x] Task 3.1.2.b Add mobile filter sheet/drawer
+  - [ ] Phase 3.2 Main Content & Detail
+    - [x] Step 3.2.1 List/cards overhaul
+      - [x] Sub-step 3.2.1.1 Build base row/card layout
+      - [x] Sub-step 3.2.1.2 Add hover/focus/selected states
+      - [x] Sub-step 3.2.1.3 Add skeleton and empty/error variants
+      - [x] Task 3.2.1.a Implement accessible list rows/cards with states
+      - [x] Task 3.2.1.b Add loading skeletons and empty/error handling
+    - [ ] Step 3.2.2 Detail/preview
+      - [x] Sub-step 3.2.2.1 Implement sectioned detail view
+      - [x] Sub-step 3.2.2.2 Wire close/escape and focus return
+      - [x] Sub-step 3.2.2.3 Add scheduling actions/conflict UI
+  - [x] Task 3.2.2.a Build detail pane/sheet with sections
+      - [x] Task 3.2.2.b Add add-to-schedule actions and conflict handling
+  - [ ] Phase 3.3 State/Data Wiring
+    - [ ] Step 3.3.1 Data fetching and caching
+      - [x] Sub-step 3.3.1.1 Implement fetch hooks/services
+      - [x] Sub-step 3.3.1.2 Add cache/TTL and refresh triggers
+      - [x] Sub-step 3.3.1.3 Handle loading/error states with retries
+  - [x] Task 3.3.1.a Connect to workout data sources; handle loading/error
+  - [x] Task 3.3.1.b Apply memoized derived state for filters/sort/search
+    - [ ] Step 3.3.2 Scheduling actions
+      - [x] Sub-step 3.3.2.1 Wire add endpoint
+      - [x] Sub-step 3.3.2.2 Add optimistic update + rollback
+      - [x] Sub-step 3.3.2.3 Conflict detection and user messaging
+  - [x] Task 3.3.2.a Wire add/edit/remove with optimistic handling
+      - [x] Task 3.3.2.b Handle conflicts and retries per `state-and-data-flows.md`
+  - [ ] Phase 3.4 Telemetry & Flags
+    - [ ] Step 3.4.1 Telemetry events
+      - [ ] Sub-step 3.4.1.1 Define event payloads/names
+      - [ ] Sub-step 3.4.1.2 Instrument in UI flows
+      - [ ] Sub-step 3.4.1.3 Validate in lower env dashboards
+      - [ ] Task 3.4.1.a Implement events per `performance-and-telemetry.md`
+      - [ ] Task 3.4.1.b Validate events in lower env
+    - [ ] Step 3.4.2 Feature flag rollout
+      - [ ] Sub-step 3.4.2.1 Implement flag gating in code
+      - [ ] Sub-step 3.4.2.2 Configure rollout parameters
+      - [ ] Sub-step 3.4.2.3 Test legacy/new path switching
+      - [ ] Task 3.4.2.a Gate new UI; support legacy fallback
+      - [ ] Task 3.4.2.b Prep rollout configuration
+
+- [ ] **Stage 4. Quality & Compliance**
+  - [ ] Phase 4.1 Testing
+    - [ ] Step 4.1.1 Unit/component
+      - [ ] Sub-step 4.1.1.1 Identify test matrix per component/state
+      - [ ] Sub-step 4.1.1.2 Implement RTL tests
+      - [ ] Sub-step 4.1.1.3 Add stories/visual snaps
+      - [ ] Task 4.1.1.a Cover core states for new components
+      - [ ] Task 4.1.1.b Add stories/visual snaps for key states
+    - [ ] Step 4.1.2 Integration/E2E
+      - [ ] Sub-step 4.1.2.1 Define critical scenarios
+      - [ ] Sub-step 4.1.2.2 Implement E2E scripts (desktop/mobile)
+      - [ ] Sub-step 4.1.2.3 Add deep-link and retry flows
+      - [ ] Task 4.1.2.a Flows: filter → select → detail → schedule
+      - [ ] Task 4.1.2.b Mobile sheet flows; deep-link flows
+  - [ ] Phase 4.2 Accessibility
+    - [ ] Step 4.2.1 Automated + manual checks
+      - [ ] Sub-step 4.2.1.1 Run axe/lint and fix issues
+      - [ ] Sub-step 4.2.1.2 Keyboard traversal scripts
+      - [ ] Sub-step 4.2.1.3 SR spot checks (NVDA/VoiceOver)
+      - [ ] Task 4.2.1.a Axe/linters clean; keyboard traversal verified
+      - [ ] Task 4.2.1.b Screen reader spot checks (NVDA/VoiceOver)
+  - [ ] Phase 4.3 Performance
+    - [ ] Step 4.3.1 Budget validation
+      - [ ] Sub-step 4.3.1.1 Collect perf traces (throttled)
+      - [ ] Sub-step 4.3.1.2 Compare to budgets and log deltas
+      - [ ] Sub-step 4.3.1.3 Optimize hotspots; remeasure
+      - [ ] Task 4.3.1.a Measure LCP/interaction; list/filters latency
+      - [ ] Task 4.3.1.b Optimize hotspots if over budget
+
+- [ ] **Stage 5. Launch & Rollout**
+  - [ ] Phase 5.1 Beta/Internal
+    - [ ] Step 5.1.1 Internal enablement
+      - [ ] Sub-step 5.1.1.1 Enable flag for internal cohort
+      - [ ] Sub-step 5.1.1.2 Collect feedback/bugs
+      - [ ] Sub-step 5.1.1.3 Prioritize and fix critical issues
+      - [ ] Task 5.1.1.a Enable flag for internal; collect feedback
+      - [ ] Task 5.1.1.b Fix critical bugs before wider rollout
+  - [ ] Phase 5.2 Gradual Rollout
+    - [ ] Step 5.2.1 % rollout
+      - [ ] Sub-step 5.2.1.1 Configure percentage rollout
+      - [ ] Sub-step 5.2.1.2 Monitor dashboards (errors/perf/engagement)
+      - [ ] Sub-step 5.2.1.3 Adjust/pause if thresholds breached
+      - [ ] Task 5.2.1.a Monitor errors, perf, engagement
+      - [ ] Task 5.2.1.b Adjust/tune; pause if thresholds breached
+  - [ ] Phase 5.3 General Availability
+    - [ ] Step 5.3.1 Full release
+      - [ ] Sub-step 5.3.1.1 Remove legacy flag paths
+      - [ ] Sub-step 5.3.1.2 Final docs/support updates
+      - [ ] Sub-step 5.3.1.3 Post GA monitoring window
+      - [ ] Task 5.3.1.a Remove/retire legacy flag paths
+      - [ ] Task 5.3.1.b Announce/update docs/support
+
+- [ ] **Stage 6. Post-Launch & Cleanup**
+  - [ ] Phase 6.1 Verification & Telemetry
+    - [ ] Step 6.1.1 Post-launch checks
+      - [ ] Sub-step 6.1.1.1 Review KPIs vs targets
+      - [ ] Sub-step 6.1.1.2 Check errors/perf/uptime
+      - [ ] Sub-step 6.1.1.3 Validate telemetry completeness
+      - [ ] Task 6.1.1.a Verify KPIs, error budgets, and a11y remain green
+      - [ ] Task 6.1.1.b Confirm telemetry completeness
+  - [ ] Phase 6.2 Code & Docs Cleanup
+    - [ ] Step 6.2.1 Remove dead code
+      - [ ] Sub-step 6.2.1.1 Identify dead components/styles
+      - [ ] Sub-step 6.2.1.2 Remove and validate build/tests
+      - [ ] Sub-step 6.2.1.3 Update docs/readme/changelog
+      - [ ] Task 6.2.1.a Delete legacy components/styles
+      - [ ] Task 6.2.1.b Update docs/readme/changelog
+  - [ ] Phase 6.3 Retro
+    - [ ] Step 6.3.1 Lessons learned
+      - [ ] Sub-step 6.3.1.1 Collect team feedback
+      - [ ] Sub-step 6.3.1.2 Summarize wins/gaps
+      - [ ] Sub-step 6.3.1.3 Backlog follow-ups; close risks/questions
+      - [ ] Task 6.3.1.a Capture wins/gaps; backlog next improvements
+      - [ ] Task 6.3.1.b Close out remaining risks/open questions

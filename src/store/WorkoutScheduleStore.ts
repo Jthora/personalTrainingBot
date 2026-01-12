@@ -1,6 +1,6 @@
 import { WorkoutSchedule, WorkoutSet, WorkoutScheduleJSON, WorkoutBlock } from '../types/WorkoutSchedule';
 import WorkoutCategoryCache from '../cache/WorkoutCategoryCache';
-import { SelectedWorkoutCategories, SelectedWorkoutGroups, SelectedWorkoutSubCategories, SelectedWorkouts } from '../types/WorkoutCategory';
+import { SelectedWorkoutCategories, SelectedWorkoutGroups, SelectedWorkoutSubCategories, SelectedWorkouts, Workout } from '../types/WorkoutCategory';
 import { createWorkoutSchedule } from '../utils/WorkoutScheduleCreator';
 import DifficultySettingsStore from './DifficultySettingsStore';
 import { logAlignmentForSchedule } from '../utils/alignmentCheck';
@@ -185,6 +185,118 @@ const WorkoutScheduleStore = {
             console.log('Saved workout schedule to localStorage.');
         } catch (error) {
             console.error('Failed to save workout schedule:', error);
+        }
+    },
+    addWorkoutToSchedule(workout: Workout, options?: { force?: boolean }): { status: 'added' | 'conflict' | 'error'; reason?: string; schedule?: WorkoutSchedule } {
+        try {
+            const existing = this.getScheduleSync();
+
+            if (existing) {
+                const conflict = existing.scheduleItems.some(item => item instanceof WorkoutSet && item.workouts.some(([w]) => w.id === workout.id));
+                if (conflict && !options?.force) {
+                    return { status: 'conflict', reason: 'Already on current schedule', schedule: existing };
+                }
+
+                const updated = new WorkoutSchedule(
+                    existing.date,
+                    [...existing.scheduleItems, new WorkoutSet([[workout, false]])],
+                    existing.difficultySettings
+                );
+                this.saveSchedule(updated);
+                logAlignmentForSchedule(updated);
+                notifySelectionChange();
+                return { status: 'added', schedule: updated };
+            }
+
+            const fallback = new WorkoutSchedule(
+                new Date().toISOString().slice(0, 10),
+                [new WorkoutSet([[workout, false]])],
+                DifficultySettingsStore.getSettings()
+            );
+            this.saveSchedule(fallback);
+            logAlignmentForSchedule(fallback);
+            notifySelectionChange();
+            return { status: 'added', schedule: fallback };
+        } catch (error) {
+            console.error('WorkoutScheduleStore: addWorkoutToSchedule failed', error);
+            return { status: 'error', reason: error instanceof Error ? error.message : 'unknown' };
+        }
+    },
+
+    updateWorkoutInSchedule(workout: Workout): { status: 'updated' | 'not_found' | 'error'; reason?: string; schedule?: WorkoutSchedule } {
+        try {
+            const existing = this.getScheduleSync();
+            if (!existing) {
+                return { status: 'not_found', reason: 'No schedule available' };
+            }
+
+            let updated = false;
+            const nextItems = existing.scheduleItems.map(item => {
+                if (item instanceof WorkoutSet) {
+                    const nextWorkouts = item.workouts.map(([w, completed]) => {
+                        if (w.id === workout.id) {
+                            updated = true;
+                            return [workout, completed] as [Workout, boolean];
+                        }
+                        return [w, completed] as [Workout, boolean];
+                    });
+                    return new WorkoutSet(nextWorkouts);
+                }
+                return item;
+            });
+
+            if (!updated) {
+                return { status: 'not_found', reason: 'Workout not in schedule' };
+            }
+
+            const nextSchedule = new WorkoutSchedule(existing.date, nextItems, existing.difficultySettings);
+            this.saveSchedule(nextSchedule);
+            logAlignmentForSchedule(nextSchedule);
+            notifySelectionChange();
+            return { status: 'updated', schedule: nextSchedule };
+        } catch (error) {
+            console.error('WorkoutScheduleStore: updateWorkoutInSchedule failed', error);
+            return { status: 'error', reason: error instanceof Error ? error.message : 'unknown' };
+        }
+    },
+
+    removeWorkoutFromSchedule(workoutId: string): { status: 'removed' | 'not_found' | 'error'; reason?: string; schedule?: WorkoutSchedule } {
+        try {
+            const existing = this.getScheduleSync();
+            if (!existing) {
+                return { status: 'not_found', reason: 'No schedule available' };
+            }
+
+            let removed = false;
+            const nextItems = existing.scheduleItems.reduce<(WorkoutSet | WorkoutBlock)[]>((acc, item) => {
+                if (item instanceof WorkoutSet) {
+                    const filtered = item.workouts.filter(([w]) => w.id !== workoutId);
+                    if (filtered.length !== item.workouts.length) {
+                        removed = true;
+                    }
+
+                    if (filtered.length > 0) {
+                        acc.push(new WorkoutSet(filtered));
+                    }
+                    return acc;
+                }
+
+                acc.push(item);
+                return acc;
+            }, []);
+
+            if (!removed) {
+                return { status: 'not_found', reason: 'Workout not in schedule' };
+            }
+
+            const nextSchedule = new WorkoutSchedule(existing.date, nextItems, existing.difficultySettings);
+            this.saveSchedule(nextSchedule);
+            logAlignmentForSchedule(nextSchedule);
+            notifySelectionChange();
+            return { status: 'removed', schedule: nextSchedule };
+        } catch (error) {
+            console.error('WorkoutScheduleStore: removeWorkoutFromSchedule failed', error);
+            return { status: 'error', reason: error instanceof Error ? error.message : 'unknown' };
         }
     },
     saveLastPreset(preset: string) {

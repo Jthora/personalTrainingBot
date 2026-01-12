@@ -8,14 +8,14 @@ const WorkoutsPage: React.FC = () => {
     return (
         <div className={styles.pageContainer}>
             <Header />
-            <div className={styles.contentContainer}>
-                <div className={styles.workoutsWindowContainer}>
+            <main className={styles.content} tabIndex={-1} aria-label="Workouts page">
+                <section className={styles.mainPane} aria-label="Workout selection and preview">
                     <WorkoutWindow />
-                </div>
-                <div className={styles.workoutsSidebarContainer}>
+                </section>
+                <aside className={styles.sidebar} aria-label="Workout filters and difficulty">
                     <WorkoutSidebar />
-                </div>
-            </div>
+                </aside>
+            </main>
         </div>
     );
 };

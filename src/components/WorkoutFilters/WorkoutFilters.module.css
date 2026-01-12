@@ -1,12 +1,14 @@
+
 .filtersCard {
-  background: #0f172a;
-  border: 1px solid #1f2937;
+  background: var(--surface-muted);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
-  padding: 16px;
-  color: #e5e7eb;
+  padding: 14px;
+  color: var(--text-primary);
   display: flex;
   flex-direction: column;
   gap: 12px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.18);
 }
 
 .headerRow {
@@ -15,19 +17,27 @@
   justify-content: space-between;
 }
 
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
 .fieldLabel {
   font-size: 0.9rem;
-  font-weight: 600;
-  color: #cbd5e1;
+  font-weight: 650;
+  color: var(--text-primary);
 }
 
 .searchInput {
   width: 100%;
   padding: 8px 10px;
   border-radius: 8px;
-  border: 1px solid #1f2937;
-  background: #111827;
-  color: #e5e7eb;
+  border: 1px solid var(--coach-border);
+  background: var(--surface-base);
+  color: var(--text-primary);
 }
 
 .chipRow {
@@ -76,16 +86,22 @@
 .chipActive {
   padding: 6px 10px;
   border-radius: 999px;
-  border: 1px solid #334155;
-  background: #0b1222;
-  color: #cbd5e1;
+  border: 1px solid var(--coach-border);
+  background: var(--surface-base);
+  color: var(--text-primary);
   cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+}
+
+.chip:hover,
+.chipActive:hover {
+  border-color: var(--coach-accent);
 }
 
 .chipActive {
-  background: #1d4ed8;
-  border-color: #1d4ed8;
-  color: #f8fafc;
+  background: var(--coach-accent-soft);
+  border-color: var(--coach-accent);
+  color: var(--text-primary);
 }
 
 .checkboxGrid {
@@ -99,15 +115,23 @@
   align-items: center;
   gap: 6px;
   font-size: 0.9rem;
-  color: #e5e7eb;
+  color: var(--text-primary);
 }
 
 .clearButton {
   background: transparent;
-  border: none;
-  color: #93c5fd;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--text-primary);
   cursor: pointer;
   font-weight: 600;
+  border-radius: 8px;
+  padding: 6px 10px;
+  transition: border-color 0.15s ease, transform 0.1s ease;
+}
+
+.clearButton:hover {
+  border-color: var(--coach-accent);
+  transform: translateY(-1px);
 }
 
 .sliderRow {
@@ -121,10 +145,25 @@
   display: flex;
   flex-direction: column;
   gap: 6px;
-  color: #e5e7eb;
+  color: var(--text-primary);
 }
 
 .sliderValue {
-  font-weight: 600;
-  color: #f8fafc;
+  font-weight: 650;
+  color: var(--text-primary);
+}
+
+.appliedBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.appliedChip {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--surface-base);
+  border: 1px dashed var(--coach-border);
+  color: var(--text-muted);
+  font-size: 0.85rem;
 }

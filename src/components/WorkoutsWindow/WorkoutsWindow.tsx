@@ -1,9 +1,9 @@
 import React, { useCallback, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './WorkoutsWindow.module.css';
-import WorkoutSelector from '../WorkoutSelector/WorkoutSelector';
 import PreviewDrawer from '../PreviewDrawer/PreviewDrawer';
 import AlignmentWarning from './AlignmentWarning';
+import WorkoutResultsPanel from '../WorkoutResultsPanel/WorkoutResultsPanel';
 
 const WorkoutsWindow: React.FC = () => {
     const [drawerOpen, setDrawerOpen] = useState(false);
@@ -16,11 +16,16 @@ const WorkoutsWindow: React.FC = () => {
         <div className={styles.workoutsWindow}>
             <div className={styles.controlsRow}>
                 <AlignmentWarning onOpenPreview={openPreview} onAdjustDifficulty={goToDifficultySettings} />
-                <button className={styles.previewToggle} onClick={openPreview}>
+                <button
+                    type="button"
+                    className={styles.previewToggle}
+                    onClick={openPreview}
+                    aria-label="Open preview drawer"
+                >
                     Preview drawer
                 </button>
             </div>
-            <WorkoutSelector />
+            <WorkoutResultsPanel onOpenPreview={openPreview} />
             <PreviewDrawer isOpen={drawerOpen} onClose={() => setDrawerOpen(false)} />
         </div>
     );

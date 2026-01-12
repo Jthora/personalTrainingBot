@@ -22,6 +22,17 @@ const WorkoutFilters: React.FC = () => {
     const [searchDraft, setSearchDraft] = useState<string>(filters.search);
     const [filteredCount, setFilteredCount] = useState<number | null>(null);
 
+    const appliedFilters = (() => {
+        const chips: string[] = [];
+        if (filters.search.trim()) chips.push(`Search: “${filters.search.trim()}”`);
+        if (filters.duration !== 'any') chips.push(`Duration: ${filters.duration === '30_plus' ? '30+ min' : filters.duration + ' min'}`);
+        if (filters.equipment.length) chips.push(`Equipment: ${filters.equipment.join(', ')}`);
+        if (filters.themes.length) chips.push(`Themes: ${filters.themes.join(', ')}`);
+        if (filters.difficultyMin !== 1 || filters.difficultyMax !== 10)
+            chips.push(`Difficulty: ${filters.difficultyMin}–${filters.difficultyMax}`);
+        return chips;
+    })();
+
     useEffect(() => {
         const unsubscribe = WorkoutFilterStore.addListener((next) => {
             setFilters(next);
@@ -57,11 +68,28 @@ const WorkoutFilters: React.FC = () => {
     return (
         <div className={styles.filtersCard}>
             <div className={styles.headerRow}>
-                <h3>Filters</h3>
-                <button type="button" className={styles.clearButton} onClick={() => updateFilters({ search: '', duration: 'any', equipment: [], themes: [], difficultyMin: 1, difficultyMax: 10 })}>
+                <div>
+                    <p className={styles.eyebrow}>Refine</p>
+                    <h3>Filters</h3>
+                </div>
+                <button
+                    type="button"
+                    className={styles.clearButton}
+                    onClick={() => updateFilters({ search: '', duration: 'any', equipment: [], themes: [], difficultyMin: 1, difficultyMax: 10 })}
+                >
                     Clear
                 </button>
             </div>
+
+            {appliedFilters.length > 0 && (
+                <div className={styles.appliedBar} aria-label="Applied filters">
+                    {appliedFilters.map(label => (
+                        <span key={label} className={styles.appliedChip}>
+                            {label}
+                        </span>
+                    ))}
+                </div>
+            )}
 
             <label className={styles.fieldLabel} htmlFor="workout-search">Search</label>
             <input

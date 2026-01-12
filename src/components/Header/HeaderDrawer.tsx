@@ -20,14 +20,13 @@ interface HeaderDrawerProps {
     coachColor: string;
     summary: Summary;
     renderLogin: () => React.ReactNode;
-    renderThemeToggle: () => React.ReactNode;
     activePath: string;
     navigateTo: (path: string) => void;
 }
 
 const focusableSelector = 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
 
-const HeaderDrawer: React.FC<HeaderDrawerProps> = ({ open, onClose, coachColor, summary, renderLogin, renderThemeToggle, activePath, navigateTo }) => {
+const HeaderDrawer: React.FC<HeaderDrawerProps> = ({ open, onClose, coachColor, summary, renderLogin, activePath, navigateTo }) => {
     const drawerRef = useRef<HTMLDivElement | null>(null);
     const previouslyFocusedRef = useRef<HTMLElement | null>(null);
     const titleId = useId();
@@ -135,7 +134,6 @@ const HeaderDrawer: React.FC<HeaderDrawerProps> = ({ open, onClose, coachColor, 
                     </div>
                     <div className={styles.drawerFooter}>
                         <div className={styles.drawerControls}>
-                            {renderThemeToggle()}
                             {renderLogin()}
                         </div>
                     </div>

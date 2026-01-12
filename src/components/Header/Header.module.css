@@ -201,7 +201,6 @@
     background: rgba(90, 127, 255, 0.12);
 }
 
-.themeToggleButton,
 .loginButton {
     width: 36px;
     height: 36px;
@@ -215,7 +214,6 @@
     transition: border-color 0.2s ease, background 0.2s ease;
 }
 
-.themeToggleButton:hover,
 .loginButton:hover {
     border-color: var(--coach-accent);
     background: rgba(90, 127, 255, 0.1);
@@ -304,21 +302,6 @@
 
 .headerSpacer {
     height: 60px;
-}
-
-[data-theme="light"] .header {
-    background: #f7f7f7;
-    border-bottom-color: rgba(0, 0, 0, 0.1);
-    color: #0d0d0d;
-}
-
-[data-theme="light"] .navButton,
-[data-theme="light"] .themeToggleButton,
-[data-theme="light"] .loginButton,
-[data-theme="light"] .userButton {
-    color: #0d0d0d;
-    border-color: rgba(0, 0, 0, 0.2);
-    background: rgba(0, 0, 0, 0.02);
 }
 
 .drawerOverlay {
@@ -424,14 +407,6 @@
     display: flex;
     gap: 10px;
     align-items: center;
-}
-
-[data-theme="light"] .navButton:hover,
-[data-theme="light"] .themeToggleButton:hover,
-[data-theme="light"] .loginButton:hover,
-[data-theme="light"] .userButton:hover {
-    border-color: var(--coach-accent);
-    background: rgba(90, 127, 255, 0.12);
 }
 
 @media (max-width: 1024px) {

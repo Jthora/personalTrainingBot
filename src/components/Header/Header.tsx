@@ -25,7 +25,6 @@ const Header: React.FC = () => {
     const [walletAddress, setWalletAddress] = useState<string>('');
     const [userProfile, setUserProfile] = useState<UserProfile | null>(null);
     const [showUserMenu, setShowUserMenu] = useState(false);
-    const [isDarkMode, setIsDarkMode] = useState(true);
     const { coachId } = useCoachSelection();
     const [coachColor, setCoachColor] = useState<string>(getCoachPalette(coachId).accent);
     const [summary, setSummary] = useState({
@@ -119,25 +118,6 @@ const Header: React.FC = () => {
         return `${address.slice(0, 6)}...${address.slice(-4)}`;
     };
 
-    const toggleTheme = () => {
-        // Compute next theme from current state to avoid stale state issues
-        const nextIsDark = !isDarkMode;
-        setIsDarkMode(nextIsDark);
-        // Apply theme to document root
-        document.documentElement.setAttribute('data-theme', nextIsDark ? 'dark' : 'light');
-        // Store theme preference
-        localStorage.setItem('theme', nextIsDark ? 'dark' : 'light');
-    };
-
-    // Initialize theme on component mount
-    useEffect(() => {
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-            setIsDarkMode(savedTheme === 'dark');
-            document.documentElement.setAttribute('data-theme', savedTheme);
-        }
-    }, []);
-
     // Update coach color when selected coach changes
     useEffect(() => {
         const palette = getCoachPalette(coachId);
@@ -151,17 +131,6 @@ const Header: React.FC = () => {
             onNavigate={navigateTo}
             orientation={orientation}
         />
-    );
-
-    const renderThemeToggle = () => (
-        <button
-            className={styles.themeToggleButton}
-            onClick={toggleTheme}
-            title={isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-            style={{ '--coach-color': coachColor } as React.CSSProperties}
-        >
-            {isDarkMode ? '☀️' : '🌙'}
-        </button>
     );
 
     const renderLogin = () => (
@@ -245,7 +214,6 @@ const Header: React.FC = () => {
             <div className={styles.rightSection}>
                 {/* Inline nav + controls (kept visible for all breakpoints) */}
                 {renderNav()}
-                {renderThemeToggle()}
                 {renderLogin()}
             </div>
         </header>

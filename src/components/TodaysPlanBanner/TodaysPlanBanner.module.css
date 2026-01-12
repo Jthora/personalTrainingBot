@@ -111,45 +111,6 @@
     100% { background-position: -200% 0; }
 }
 
-[data-theme='light'] .banner {
-    border-color: #e5e7eb;
-    background: linear-gradient(90deg, rgba(79, 70, 229, 0.12), rgba(14, 165, 233, 0.12));
-    color: #0f172a;
-}
-
-[data-theme='light'] .heading {
-    color: #475569;
-}
-
-[data-theme='light'] .meta,
-[data-theme='light'] .title {
-    color: #0f172a;
-}
-
-[data-theme='light'] .rationale,
-[data-theme='light'] .loading,
-[data-theme='light'] .empty {
-    color: #475569;
-}
-
-[data-theme='light'] .ghost {
-    border-color: #cbd5e1;
-    color: #0f172a;
-}
-
-[data-theme='light'] .primary {
-    box-shadow: none;
-}
-
-[data-theme='dark'] .banner {
-    border-color: rgba(255, 255, 255, 0.12);
-    background: linear-gradient(90deg, rgba(79, 70, 229, 0.18), rgba(14, 165, 233, 0.12));
-}
-
-[data-theme='dark'] .ghost {
-    border-color: rgba(255, 255, 255, 0.18);
-}
-
 @media (max-width: 1024px) {
     .banner {
         flex-direction: column;

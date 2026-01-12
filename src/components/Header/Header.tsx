@@ -9,7 +9,6 @@ import { getCoachPalette } from '../../data/coachThemes';
 import UserProgressStore from '../../store/UserProgressStore';
 import WorkoutScheduleStore from '../../store/WorkoutScheduleStore';
 import { checkScheduleAlignment } from '../../utils/alignmentCheck';
-import HeaderDrawer from './HeaderDrawer';
 import HeaderNav from './HeaderNav';
 import { headerNavItems } from './navConfig';
 import useSelectionSummary from '../../hooks/useSelectionSummary';
@@ -29,7 +28,6 @@ const Header: React.FC = () => {
     const [isDarkMode, setIsDarkMode] = useState(true);
     const { coachId } = useCoachSelection();
     const [coachColor, setCoachColor] = useState<string>(getCoachPalette(coachId).accent);
-    const [drawerOpen, setDrawerOpen] = useState(false);
     const [summary, setSummary] = useState({
         remaining: 0,
         difficulty: 0,
@@ -86,7 +84,6 @@ const Header: React.FC = () => {
     const navigateTo = (path: string) => {
         navigate(path);
         setShowUserMenu(false);
-        setDrawerOpen(false);
     };
 
     const handleWeb3Login = async () => {
@@ -140,29 +137,6 @@ const Header: React.FC = () => {
             document.documentElement.setAttribute('data-theme', savedTheme);
         }
     }, []);
-
-    // Safety nets to prevent a stuck drawer overlay
-    useEffect(() => {
-        if (!drawerOpen) return;
-        const close = () => setDrawerOpen(false);
-
-        const timeoutId = window.setTimeout(close, 12000); // auto-close after inactivity
-        const handleScroll = () => close();
-
-        window.addEventListener('scroll', handleScroll, { passive: true });
-        return () => {
-            window.clearTimeout(timeoutId);
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, [drawerOpen]);
-
-    // Close drawer when the route changes to avoid lingering overlays across pages
-    useEffect(() => {
-        if (drawerOpen) {
-            setDrawerOpen(false);
-        }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [location.pathname]);
 
     // Update coach color when selected coach changes
     useEffect(() => {
@@ -269,27 +243,11 @@ const Header: React.FC = () => {
 
             {/* Right Side - Navigation and Login */}
             <div className={styles.rightSection}>
-                {/* Inline nav + controls for wider screens — hidden by CSS on small viewports */}
+                {/* Inline nav + controls (kept visible for all breakpoints) */}
                 {renderNav()}
                 {renderThemeToggle()}
                 {renderLogin()}
-
-                {/* Drawer trigger for small screens and alternate access */}
-                <button className={styles.moreButton} onClick={() => setDrawerOpen(true)} aria-label="Open menu" style={{ '--coach-color': coachColor } as React.CSSProperties}>
-                    ⋯
-                </button>
             </div>
-
-            <HeaderDrawer
-                open={drawerOpen}
-                onClose={() => setDrawerOpen(false)}
-                coachColor={coachColor}
-                summary={summary}
-                renderLogin={renderLogin}
-                renderThemeToggle={renderThemeToggle}
-                activePath={location.pathname}
-                navigateTo={navigateTo}
-            />
         </header>
     );
 };

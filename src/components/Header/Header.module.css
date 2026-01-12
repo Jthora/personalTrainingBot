@@ -136,6 +136,8 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .statsWrapper {
@@ -145,6 +147,9 @@
 .nav {
     display: flex;
     gap: 6px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 100%;
 }
 
 .navButton {
@@ -452,10 +457,6 @@
 
     .headerSpacer {
         height: 52px;
-    }
-
-    .nav {
-        display: none;
     }
 }
 

@@ -10,6 +10,8 @@ import UserProgressStore from '../../store/UserProgressStore';
 import WorkoutScheduleStore from '../../store/WorkoutScheduleStore';
 import { checkScheduleAlignment } from '../../utils/alignmentCheck';
 import HeaderDrawer from './HeaderDrawer';
+import HeaderNav from './HeaderNav';
+import { headerNavItems } from './navConfig';
 import useSelectionSummary from '../../hooks/useSelectionSummary';
 
 interface UserProfile {
@@ -87,8 +89,6 @@ const Header: React.FC = () => {
         setDrawerOpen(false);
     };
 
-    const isActive = (path: string) => location.pathname === path;
-
     const handleWeb3Login = async () => {
         try {
             const settingsStore = SettingsStore.getInstance();
@@ -141,43 +141,42 @@ const Header: React.FC = () => {
         }
     }, []);
 
+    // Safety nets to prevent a stuck drawer overlay
+    useEffect(() => {
+        if (!drawerOpen) return;
+        const close = () => setDrawerOpen(false);
+
+        const timeoutId = window.setTimeout(close, 12000); // auto-close after inactivity
+        const handleScroll = () => close();
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        return () => {
+            window.clearTimeout(timeoutId);
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [drawerOpen]);
+
+    // Close drawer when the route changes to avoid lingering overlays across pages
+    useEffect(() => {
+        if (drawerOpen) {
+            setDrawerOpen(false);
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [location.pathname]);
+
     // Update coach color when selected coach changes
     useEffect(() => {
         const palette = getCoachPalette(coachId);
         setCoachColor(palette.accent);
     }, [coachId]);
 
-    const renderNav = () => (
-        <nav className={styles.nav}>
-            <button
-                onClick={() => navigateTo('/')}
-                className={`${styles.navButton} ${isActive('/') ? styles.active : ''}`}
-                style={{ '--coach-color': coachColor } as React.CSSProperties}
-            >
-                Home
-            </button>
-            <button
-                onClick={() => navigateTo('/schedules')}
-                className={`${styles.navButton} ${isActive('/schedules') ? styles.active : ''}`}
-                style={{ '--coach-color': coachColor } as React.CSSProperties}
-            >
-                Schedules
-            </button>
-            <button
-                onClick={() => navigateTo('/workouts')}
-                className={`${styles.navButton} ${isActive('/workouts') ? styles.active : ''}`}
-                style={{ '--coach-color': coachColor } as React.CSSProperties}
-            >
-                Workouts
-            </button>
-            <button
-                onClick={() => navigateTo('/training')}
-                className={`${styles.navButton} ${isActive('/training') ? styles.active : ''}`}
-                style={{ '--coach-color': coachColor } as React.CSSProperties}
-            >
-                Training
-            </button>
-        </nav>
+    const renderNav = (orientation: 'inline' | 'stacked' = 'inline') => (
+        <HeaderNav
+            items={headerNavItems}
+            activePath={location.pathname}
+            onNavigate={navigateTo}
+            orientation={orientation}
+        />
     );
 
     const renderThemeToggle = () => (
@@ -285,9 +284,10 @@ const Header: React.FC = () => {
                 onClose={() => setDrawerOpen(false)}
                 coachColor={coachColor}
                 summary={summary}
-                renderNav={renderNav}
                 renderLogin={renderLogin}
                 renderThemeToggle={renderThemeToggle}
+                activePath={location.pathname}
+                navigateTo={navigateTo}
             />
         </header>
     );

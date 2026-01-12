@@ -40,6 +40,17 @@ const ShareCardModal = ({ card, meta, slug, shortUrl, onClose }: ShareCardModalP
 
     const summary = useMemo(() => generateShareSummary({ card, meta, shortUrl }), [card, meta, shortUrl]);
 
+    useEffect(() => {
+        if (process.env.NODE_ENV !== 'production') {
+            console.debug('[overlay] share-card-modal mounted');
+        }
+        return () => {
+            if (process.env.NODE_ENV !== 'production') {
+                console.debug('[overlay] share-card-modal unmounted');
+            }
+        };
+    }, []);
+
     const showStatus = useCallback((message: string) => {
         setStatus(message);
         if (statusTimeoutRef.current) {
@@ -278,8 +289,16 @@ const ShareCardModal = ({ card, meta, slug, shortUrl, onClose }: ShareCardModalP
 
     return (
         <>
-            <div className={styles.overlay}>
-                <div className={styles.modal} role="dialog" aria-modal="true">
+            <div
+                className={styles.overlay}
+                data-overlay="share-card-modal"
+                onClick={(event) => {
+                    if (event.target === event.currentTarget) {
+                        onClose();
+                    }
+                }}
+            >
+                <div className={styles.modal} role="dialog" aria-modal="true" onClick={(event) => event.stopPropagation()}>
                     <header className={styles.header}>
                         <div>
                             <h2>Create share card</h2>

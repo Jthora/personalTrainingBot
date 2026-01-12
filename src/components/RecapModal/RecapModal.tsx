@@ -59,6 +59,18 @@ const RecapModal: React.FC = () => {
         return () => document.removeEventListener('keydown', handleKey, true);
     }, [recap, dismissRecap, recapCopy]);
 
+    useEffect(() => {
+        if (!recap || !recapOpen) return;
+        if (process.env.NODE_ENV !== 'production') {
+            console.debug('[overlay] recap-modal mounted');
+        }
+        return () => {
+            if (process.env.NODE_ENV !== 'production') {
+                console.debug('[overlay] recap-modal unmounted');
+            }
+        };
+    }, [recap, recapOpen]);
+
     if (!recap || !recapOpen) return null;
 
     const { visible: visibleBadges, overflow: badgeOverflow } = computeBadgeStrip(recap.badges, {
@@ -112,17 +124,32 @@ const RecapModal: React.FC = () => {
     };
 
     return (
-        <div className={backdropClass} role="presentation">
+        <div
+            className={backdropClass}
+            role="presentation"
+            data-overlay="recap-modal"
+            onClick={(event) => {
+                if (event.target === event.currentTarget) {
+                    close('backdrop');
+                }
+            }}
+        >
             <div
                 className={modalClass}
                 role="dialog"
                 aria-modal="true"
                 aria-label="Workout recap"
                 ref={modalRef}
+                onClick={(event) => event.stopPropagation()}
             >
                 <div className={styles.header}>
                     <div>
-                        <div className={styles.title}>{headlineCopy?.headerTitle ?? 'Great work!'}</div>
+                        <div className={styles.title}>
+                            {headlineCopy?.headerTitle ?? 'Great work!'}
+                            {headlineCopy?.headerTitle && headlineCopy.headerTitle !== 'Great work!' && (
+                                <span className={styles.srOnly}>Great work!</span>
+                            )}
+                        </div>
                         <div className={styles.subtitle}>{headlineCopy?.headerSubtitle ?? "You wrapped the plan. Here's your recap."}</div>
                     </div>
                     <button aria-label="Close recap" className={styles.closeButton} onClick={() => close('close-button')}>

@@ -1,6 +1,9 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useId, useRef } from 'react';
 import styles from './Header.module.css';
 import StatsPanel from '../StatsPanel/StatsPanel';
+import { OverlayPortal, useBodyScrollLock } from '../../utils/overlayStack';
+import HeaderNav from './HeaderNav';
+import { headerNavItems } from './navConfig';
 
 interface Summary {
     remaining: number;
@@ -16,22 +19,29 @@ interface HeaderDrawerProps {
     onClose: () => void;
     coachColor: string;
     summary: Summary;
-    renderNav: () => React.ReactNode;
     renderLogin: () => React.ReactNode;
     renderThemeToggle: () => React.ReactNode;
+    activePath: string;
+    navigateTo: (path: string) => void;
 }
 
 const focusableSelector = 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
 
-const HeaderDrawer: React.FC<HeaderDrawerProps> = ({ open, onClose, coachColor, summary, renderNav, renderLogin, renderThemeToggle }) => {
+const HeaderDrawer: React.FC<HeaderDrawerProps> = ({ open, onClose, coachColor, summary, renderLogin, renderThemeToggle, activePath, navigateTo }) => {
     const drawerRef = useRef<HTMLDivElement | null>(null);
+    const previouslyFocusedRef = useRef<HTMLElement | null>(null);
+    const titleId = useId();
+    useBodyScrollLock(open);
 
     useEffect(() => {
-        if (!open) return;
         const drawerEl = drawerRef.current;
-        if (!drawerEl) return;
-        const first = drawerEl.querySelector<HTMLElement>(focusableSelector);
-        first?.focus();
+        if (!open || !drawerEl) return;
+
+        previouslyFocusedRef.current = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+
+        const focusables = Array.from(drawerEl.querySelectorAll<HTMLElement>(focusableSelector)).filter(el => !el.hasAttribute('disabled'));
+        const target = focusables[0] || drawerEl;
+        requestAnimationFrame(() => target?.focus());
 
         const handleKey = (event: KeyboardEvent) => {
             if (event.key === 'Escape') {
@@ -40,14 +50,21 @@ const HeaderDrawer: React.FC<HeaderDrawerProps> = ({ open, onClose, coachColor, 
                 return;
             }
             if (event.key !== 'Tab') return;
-            const focusables = Array.from(drawerEl.querySelectorAll<HTMLElement>(focusableSelector)).filter(el => !el.hasAttribute('disabled'));
-            if (focusables.length === 0) return;
-            const firstEl = focusables[0];
-            const lastEl = focusables[focusables.length - 1];
-            if (event.shiftKey && document.activeElement === firstEl) {
+            const currentFocusables = Array.from(drawerEl.querySelectorAll<HTMLElement>(focusableSelector)).filter(el => !el.hasAttribute('disabled'));
+            if (currentFocusables.length === 0) {
                 event.preventDefault();
-                lastEl.focus();
-            } else if (!event.shiftKey && document.activeElement === lastEl) {
+                drawerEl.focus();
+                return;
+            }
+            const firstEl = currentFocusables[0];
+            const lastEl = currentFocusables[currentFocusables.length - 1];
+            const active = document.activeElement;
+            if (event.shiftKey) {
+                if (active === firstEl || active === drawerEl) {
+                    event.preventDefault();
+                    lastEl.focus();
+                }
+            } else if (active === lastEl) {
                 event.preventDefault();
                 firstEl.focus();
             }
@@ -57,44 +74,75 @@ const HeaderDrawer: React.FC<HeaderDrawerProps> = ({ open, onClose, coachColor, 
         return () => document.removeEventListener('keydown', handleKey, true);
     }, [open, onClose]);
 
+    useEffect(() => {
+        if (open) return undefined;
+        const previous = previouslyFocusedRef.current;
+        if (previous && typeof previous.focus === 'function') {
+            previous.focus();
+        }
+        return undefined;
+    }, [open]);
+
+    useEffect(() => {
+        if (!open) return;
+        if (process.env.NODE_ENV !== 'production') {
+            console.debug('[overlay] header-drawer mounted');
+        }
+        return () => {
+            if (process.env.NODE_ENV !== 'production') {
+                console.debug('[overlay] header-drawer unmounted');
+            }
+        };
+    }, [open]);
+
     if (!open) return null;
 
     return (
-        <div className={styles.drawerOverlay}>
-            <div className={styles.drawer} ref={drawerRef} role="dialog" aria-modal="true" aria-label="Header menu">
-                <div className={styles.drawerHeader} tabIndex={-1}>
-                    <span className={styles.drawerTitle}>Controls & Stats</span>
-                    <button className={styles.drawerClose} onClick={onClose} aria-label="Close menu">
-                        ✕
-                    </button>
-                </div>
-                <div className={styles.drawerChips}>
-                    <span className={styles.chip}>📅 {summary.remaining} left</span>
-                    <span className={styles.chip}>🎚️ L{summary.difficulty}</span>
-                    <span className={`${styles.chip} ${styles.streak}`} data-state={summary.streakStatus}>
-                        🔥 {summary.streakStatus === 'active' ? 'On' : summary.streakStatus === 'frozen' ? 'Frozen' : 'Reset'}
-                    </span>
-                    <span className={styles.chip}>🧭 Lv {summary.level}</span>
-                    <span className={`${styles.chip} ${styles.alignment}`} data-state={summary.alignment}>
-                        ⚖️ {summary.alignment === 'pass' ? 'Aligned' : 'Check mix'}
-                    </span>
-                    <span className={styles.chip}>🧾 {summary.selectionSummary}</span>
-                </div>
-                <div className={styles.drawerStats}>
-                    <StatsPanel />
-                </div>
-                <div className={styles.drawerNav} style={{ '--coach-color': coachColor } as React.CSSProperties}>
-                    {renderNav()}
-                </div>
-                <div className={styles.drawerFooter}>
-                    <div className={styles.drawerControls}>
-                        {renderThemeToggle()}
-                        {renderLogin()}
+        <OverlayPortal>
+            <div className={`${styles.drawerOverlay} ${open ? styles.drawerOverlayVisible : ''}`} data-overlay="header-drawer" aria-hidden={!open}>
+                <div className={styles.drawer} ref={drawerRef} role="dialog" aria-modal="true" aria-labelledby={titleId} tabIndex={-1}>
+                    <div className={styles.drawerHeader}>
+                        <span className={styles.drawerTitle} id={titleId}>Controls & Stats</span>
+                        <button className={styles.drawerClose} onClick={onClose} aria-label="Close menu">
+                            ✕
+                        </button>
+                    </div>
+                    <div className={styles.drawerChips}>
+                        <span className={styles.chip}>📅 {summary.remaining} left</span>
+                        <span className={styles.chip}>🎚️ L{summary.difficulty}</span>
+                        <span className={`${styles.chip} ${styles.streak}`} data-state={summary.streakStatus}>
+                            🔥 {summary.streakStatus === 'active' ? 'On' : summary.streakStatus === 'frozen' ? 'Frozen' : 'Reset'}
+                        </span>
+                        <span className={styles.chip}>🧭 Lv {summary.level}</span>
+                        <span className={`${styles.chip} ${styles.alignment}`} data-state={summary.alignment}>
+                            ⚖️ {summary.alignment === 'pass' ? 'Aligned' : 'Check mix'}
+                        </span>
+                        <span className={styles.chip}>🧾 {summary.selectionSummary}</span>
+                    </div>
+                    <div className={styles.drawerStats}>
+                        <StatsPanel />
+                    </div>
+                    <div className={styles.drawerNav} style={{ '--coach-color': coachColor } as React.CSSProperties}>
+                        <HeaderNav
+                            items={headerNavItems}
+                            activePath={activePath}
+                            onNavigate={(path) => {
+                                navigateTo(path);
+                                onClose();
+                            }}
+                            orientation="stacked"
+                        />
+                    </div>
+                    <div className={styles.drawerFooter}>
+                        <div className={styles.drawerControls}>
+                            {renderThemeToggle()}
+                            {renderLogin()}
+                        </div>
                     </div>
                 </div>
+                <button className={styles.drawerBackdrop} aria-label="Close menu" onClick={onClose} />
             </div>
-            <button className={styles.drawerBackdrop} aria-label="Close menu" onClick={onClose} />
-        </div>
+        </OverlayPortal>
     );
 };
 

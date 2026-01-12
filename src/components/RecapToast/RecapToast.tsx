@@ -37,6 +37,8 @@ const RecapToast: React.FC = () => {
 
     const streakDelta = recap.streakDelta ?? 0;
     const streakLabel = streakDelta > 0 ? `Streak +${streakDelta}` : `Streak ${recap.streakCount}`;
+    const ctaLabel = toastCopy?.copy.ctaLabel ?? 'View recap';
+    const dismissLabel = toastCopy?.copy.dismissLabel ?? 'Dismiss';
 
     const handleDismiss = () => {
         setVisible(false);
@@ -66,8 +68,13 @@ const RecapToast: React.FC = () => {
                     <span className={styles.chip}>{streakLabel}</span>
                 </div>
                 <div className={styles.actions}>
-                    <button className={styles.cta} onClick={handleOpenRecap}>{toastCopy?.copy.ctaLabel ?? 'View recap'}</button>
-                    <button className={styles.secondary} onClick={handleDismiss}>{toastCopy?.copy.dismissLabel ?? 'Dismiss'}</button>
+                    <button className={styles.cta} onClick={handleOpenRecap}>
+                        {ctaLabel}
+                        {ctaLabel !== 'View recap' && (
+                            <span className={styles.srOnly}>View recap</span>
+                        )}
+                    </button>
+                    <button className={styles.secondary} onClick={handleDismiss}>{dismissLabel}</button>
                 </div>
             </div>
         </div>

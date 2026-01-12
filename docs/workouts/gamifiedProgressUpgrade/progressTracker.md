@@ -123,7 +123,7 @@ Use this hierarchical checklist to track delivery. Mark checkboxes as you progre
     - [x] 3.1.4.2 Task: Keep under 200 chars; PII-free
     - [x] 3.1.4.3 Task: Templates for achievements vs daily recap
     - [x] 3.1.4.4 Task: Tests for copy length and PII redaction
-
+plas
 ## Stage 4: Polish & Controls
 - [x] 4.1 Phase: Settings & Polish
   - [x] 4.1.1 Step: Toggles

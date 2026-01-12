@@ -82,6 +82,18 @@
     border-color: rgba(255, 255, 255, 0.2);
 }
 
+.srOnly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 .close {
     margin-left: auto;
     background: transparent;

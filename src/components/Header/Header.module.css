@@ -308,6 +308,13 @@
     justify-content: flex-end;
     align-items: stretch;
     pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.drawerOverlayVisible {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .drawerBackdrop {
@@ -316,6 +323,7 @@
     background: rgba(0, 0, 0, 0.4);
     border: none;
     pointer-events: auto;
+    transition: background 0.2s ease;
 }
 
 .drawer {
@@ -330,6 +338,14 @@
     flex-direction: column;
     gap: 12px;
     pointer-events: auto;
+    transform: translateX(24px);
+    opacity: 0;
+    transition: transform 0.22s ease, opacity 0.22s ease;
+}
+
+.drawerOverlayVisible .drawer {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .drawerHeader {

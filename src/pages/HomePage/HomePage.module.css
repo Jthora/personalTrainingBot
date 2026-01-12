@@ -7,7 +7,7 @@
     width: 100%;
     background: var(--surface-base);
     position: relative;
-    padding-top: 60px;
+    padding-top: var(--header-height, 60px);
     color: var(--text-primary);
 }
 
@@ -27,17 +27,25 @@
     z-index: 1;
     flex: 1;
     display: grid;
-    grid-template-columns: minmax(320px, 26%) 1fr;
+    grid-template-columns: minmax(260px, 26%) 1fr;
     gap: 18px;
     padding: 20px 24px 24px;
+    outline: none;
+}
+
+.content:focus-visible {
+    outline: 2px solid var(--coach-accent);
+    outline-offset: 4px;
 }
 
 .sidebar {
     height: calc(100vh - 92px);
+    overflow: auto;
 }
 
 .mainContent {
     height: calc(100vh - 92px);
+    overflow: auto;
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 6px;
     background: var(--surface-card);
@@ -53,7 +61,7 @@
     }
 
     .content {
-        grid-template-columns: minmax(280px, 32%) 1fr;
+        grid-template-columns: minmax(240px, 32%) 1fr;
     }
 
     .sidebar,
@@ -74,6 +82,7 @@
     .sidebar,
     .mainContent {
         height: auto;
+        overflow: visible;
     }
 }
 

@@ -154,15 +154,17 @@ export const CardProvider: React.FC<CardProviderProps> = ({ children, initialSlu
         };
     }, [dealInitialCards]);
 
-    const initialSlugAppliedRef = useRef(false);
+    const initialSlugAppliedRef = useRef<string | null>(null);
 
     useEffect(() => {
-        if (!initialSlug || initialSlugAppliedRef.current || isLoading) {
+        if (!initialSlug || isLoading) {
             return;
         }
 
-        focusCardBySlug(initialSlug);
-        initialSlugAppliedRef.current = true;
+        if (initialSlugAppliedRef.current !== initialSlug) {
+            focusCardBySlug(initialSlug);
+            initialSlugAppliedRef.current = initialSlug;
+        }
     }, [initialSlug, isLoading, focusCardBySlug]);
 
     if (isLoading) {

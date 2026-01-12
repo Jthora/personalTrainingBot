@@ -13,7 +13,20 @@ const TodaysPlanBanner: React.FC = () => {
     if (isLoading) {
         return (
             <div className={styles.banner}>
-                <div className={styles.loading}>Loading today&apos;s plan…</div>
+                <div className={styles.content}>
+                    <div className={styles.heading}>Today&apos;s plan</div>
+                    <div className={styles.skeletonLine} style={{ width: '60%' }} />
+                    <div className={styles.meta}>
+                        <span className={styles.skeletonPill} />
+                        <span className={styles.skeletonPill} />
+                        <span className={styles.skeletonPill} />
+                    </div>
+                    <div className={styles.skeletonLine} style={{ width: '80%' }} />
+                </div>
+                <div className={styles.actions}>
+                    <div className={styles.skeletonButton} />
+                    <div className={styles.skeletonButton} />
+                </div>
             </div>
         );
     }
@@ -47,8 +60,8 @@ const TodaysPlanBanner: React.FC = () => {
                 <div className={styles.rationale}>{summary.rationale}</div>
             </div>
             <div className={styles.actions}>
-                <button className={styles.primary} onClick={() => navigate('/training')}>Open training</button>
-                <button className={styles.ghost} onClick={createNewSchedule}>Regenerate</button>
+                <button className={styles.primary} onClick={() => navigate('/training')}>Start training</button>
+                <button className={styles.ghost} onClick={createNewSchedule}>Regenerate plan</button>
             </div>
         </div>
     );

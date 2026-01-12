@@ -240,6 +240,7 @@ const Header: React.FC = () => {
 
     return (
         <header className={styles.header}>
+            <a href="#main-content" className={styles.skipLink}>Skip to main content</a>
             {/* Left Side - Logo */}
             <div className={styles.leftSection}>
                 <div className={styles.logoContainer}>

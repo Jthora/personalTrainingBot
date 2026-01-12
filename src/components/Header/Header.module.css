@@ -9,11 +9,27 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 60px;
+    height: var(--header-height, 60px);
     padding: 0 18px;
     background: var(--surface-card);
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+.skipLink {
+    position: absolute;
+    left: -999px;
+    top: 8px;
+    background: var(--surface-card);
+    color: var(--text-primary);
+    padding: 10px 14px;
+    z-index: 1500;
+    border: 1px solid var(--coach-accent);
+    border-radius: 6px;
+}
+
+.skipLink:focus {
+    left: 12px;
 }
 
 .header::after {

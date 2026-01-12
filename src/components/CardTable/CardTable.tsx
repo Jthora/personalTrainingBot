@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import CardSlot from '../CardSlot/CardSlot';
 import { useCardContext } from '../../hooks/useCardContext';
 import styles from './CardTable.module.css';
@@ -6,11 +6,20 @@ import styles from './CardTable.module.css';
 const CardTable: React.FC = () => {
     const { cards, dealNextCard } = useCardContext();
 
+    const allEmpty = useMemo(() => cards.every(card => !card), [cards]);
+
     return (
         <div className={styles.cardTable}>
-            {cards.map((card, index) => (
-                <CardSlot key={index} card={card} onDealNextCard={() => dealNextCard(index)} />
-            ))}
+            {allEmpty ? (
+                <div className={styles.emptyState}>
+                    <div className={styles.emptyTitle}>No cards available yet</div>
+                    <div className={styles.emptyBody}>Refresh your selection or generate a plan to start dealing cards.</div>
+                </div>
+            ) : (
+                cards.map((card, index) => (
+                    <CardSlot key={card?.id ?? index} card={card} onDealNextCard={() => dealNextCard(index)} />
+                ))
+            )}
         </div>
     );
 };

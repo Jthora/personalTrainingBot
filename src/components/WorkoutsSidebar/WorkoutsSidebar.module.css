@@ -62,9 +62,9 @@
     overflow-y: auto;
     width: 100%;
     padding-right: 6px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .cardSection {
@@ -73,6 +73,12 @@
     padding: 12px;
     background: var(--surface-muted);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+}
+
+@media (max-width: 1200px) {
+    .scrollableContent {
+        grid-template-columns: 1fr;
+    }
 }
 
 .scrollableContent h2 {

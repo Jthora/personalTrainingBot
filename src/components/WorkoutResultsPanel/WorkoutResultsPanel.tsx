@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from './WorkoutResultsPanel.module.css';
 import WorkoutCategoryCache from '../../cache/WorkoutCategoryCache';
 import WorkoutFilterStore, { DurationBucket, WorkoutFilters } from '../../store/WorkoutFilterStore';
@@ -7,9 +8,13 @@ import { Workout } from '../../types/WorkoutCategory';
 import { parseDurationMinutes } from '../../utils/workoutFilters';
 import useWorkoutResultsData from '../../hooks/useWorkoutResultsData';
 import WorkoutSchedulingService from '../../services/WorkoutSchedulingService';
+import AlignmentWarning from '../WorkoutsWindow/AlignmentWarning';
+import { ListEmptyState, ListSkeleton } from '../ListStates/ListState';
 
 interface WorkoutResultsPanelProps {
     onOpenPreview?: () => void;
+    onOpenFilters?: (target?: 'filters' | 'difficulty') => void;
+    filtersOpen?: boolean;
 }
 
 const highlightText = (text: string, query?: string) => {
@@ -50,11 +55,13 @@ const buildAppliedLabels = (filters: WorkoutFilters): string[] => {
     return labels;
 };
 
-const WorkoutResultsPanel: React.FC<WorkoutResultsPanelProps> = ({ onOpenPreview }) => {
+const WorkoutResultsPanel: React.FC<WorkoutResultsPanelProps> = ({ onOpenPreview, onOpenFilters, filtersOpen }) => {
+    const navigate = useNavigate();
     const [filters, setFilters] = useState<WorkoutFilters>(WorkoutFilterStore.getFiltersSync());
     const { workouts, loading, error, lastUpdated, isStale, refresh } = useWorkoutResultsData(filters);
     const [selectedId, setSelectedId] = useState<string | null>(null);
     const [isDetailOpen, setIsDetailOpen] = useState(true);
+    const [isMobile, setIsMobile] = useState(false);
     const [selectionCounts, setSelectionCounts] = useState(() => WorkoutScheduleStore.getSelectionCounts());
     const [selectedWorkouts, setSelectedWorkouts] = useState<Record<string, boolean>>(() => WorkoutScheduleStore.getSelectedWorkoutsSync());
     const [liveMessage, setLiveMessage] = useState('');
@@ -98,6 +105,29 @@ const WorkoutResultsPanel: React.FC<WorkoutResultsPanelProps> = ({ onOpenPreview
         setIsDetailOpen(true);
     }, [workouts]);
 
+    useEffect(() => {
+        if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') {
+            setIsMobile(false);
+            return undefined;
+        }
+
+        const media = window.matchMedia('(max-width: 960px)');
+        const update = () => setIsMobile(media.matches);
+        update();
+
+        media.addEventListener('change', update);
+        return () => media.removeEventListener('change', update);
+    }, []);
+
+    useEffect(() => {
+        if (!isMobile || !isDetailOpen) return undefined;
+        const prev = document.body.style.overflow;
+        document.body.style.overflow = 'hidden';
+        return () => {
+            document.body.style.overflow = prev;
+        };
+    }, [isMobile, isDetailOpen]);
+
     const appliedLabels = useMemo(() => buildAppliedLabels(filters), [filters]);
     const selectedWorkout = useMemo(() => workouts.find(w => w.id === selectedId) ?? null, [workouts, selectedId]);
     const isSelectedInSchedule = useMemo(() => selectedWorkout ? Boolean(selectedWorkouts[selectedWorkout.id]) : false, [selectedWorkout, selectedWorkouts]);
@@ -119,12 +149,36 @@ const WorkoutResultsPanel: React.FC<WorkoutResultsPanelProps> = ({ onOpenPreview
         syncSelectionSnapshot();
     }, [syncSelectionSnapshot]);
 
+    const handleOpenFilters = useCallback((target: 'filters' | 'difficulty' = 'filters') => {
+        const regionId = target === 'difficulty' ? 'difficulty-controls' : 'workout-filters-region';
+        const region = document.getElementById(regionId) || document.getElementById('workout-filters-region');
+        if (region) {
+            region.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            if (typeof region.focus === 'function') {
+                region.focus();
+            }
+        }
+    }, []);
+
+    const handleClearFilters = useCallback(() => {
+        WorkoutFilterStore.clearFilters();
+    }, []);
+
+    const goToSchedules = useCallback(() => navigate('/schedules'), [navigate]);
+    const openDifficultyControls = useCallback(() => {
+        if (onOpenFilters) {
+            onOpenFilters('difficulty');
+        } else {
+            handleOpenFilters('difficulty');
+        }
+    }, [handleOpenFilters, onOpenFilters]);
+
     const handleAddToSchedule = async (options?: { force?: boolean }) => {
         if (!selectedWorkout || isSubmitting) return;
 
         const previousSelection = WorkoutScheduleStore.getSelectedWorkoutsSync();
         const previousSchedule = WorkoutScheduleStore.getScheduleSync();
-        const result = WorkoutScheduleStore.addWorkoutToSchedule(selectedWorkout, { force: options?.force });
+    const result = WorkoutScheduleStore.addWorkoutToSchedule(selectedWorkout, { force: options?.force });
 
         if (result.status === 'conflict') {
             setActionState('conflict');
@@ -259,10 +313,6 @@ const WorkoutResultsPanel: React.FC<WorkoutResultsPanelProps> = ({ onOpenPreview
         }
     };
 
-    const handleClearFilters = () => {
-        WorkoutFilterStore.clearFilters();
-    };
-
     const handleQuickPreset = () => {
         const cache = WorkoutCategoryCache.getInstance();
         cache.applyPreset('quick20');
@@ -316,37 +366,41 @@ const WorkoutResultsPanel: React.FC<WorkoutResultsPanelProps> = ({ onOpenPreview
 
     const renderList = () => {
         if (loading && !workouts.length) {
-            return (
-                <div className={styles.skeletonList} aria-label="Loading workouts">
-                    {[0, 1, 2].map(idx => <div key={idx} className={styles.skeletonRow} />)}
-                </div>
-            );
+            return <ListSkeleton label="Loading workouts" rows={3} />;
         }
 
         if (error && !workouts.length) {
             return (
-                <div className={styles.errorState} role="alert" aria-live="assertive">
-                    <p className={styles.errorTitle}>We couldn&apos;t load workouts.</p>
-                    <p className={styles.errorDetail}>{error}</p>
-                    <div className={styles.emptyActions}>
-                        <button type="button" onClick={() => refresh()}>Retry</button>
-                        <button type="button" onClick={handleClearFilters}>Clear filters</button>
-                        {onOpenPreview && <button type="button" onClick={onOpenPreview}>Open preview</button>}
-                    </div>
-                </div>
+                <ListEmptyState
+                    tone="error"
+                    icon="⚠️"
+                    title="We couldn&apos;t load workouts."
+                    body={error}
+                    actions={(
+                        <>
+                            <button type="button" className={styles.primaryButton} onClick={() => refresh()}>Retry</button>
+                            <button type="button" className={styles.secondaryButton} onClick={handleClearFilters}>Clear filters</button>
+                            {onOpenPreview && <button type="button" className={styles.secondaryButton} onClick={onOpenPreview}>Open preview</button>}
+                        </>
+                    )}
+                />
             );
         }
 
         if (!workouts.length) {
             return (
-                <div className={styles.emptyState} role="status" aria-live="polite">
-                    <p>No workouts match the current filters.</p>
-                    <div className={styles.emptyActions}>
-                        <button type="button" onClick={handleClearFilters}>Clear filters</button>
-                        <button type="button" onClick={handleQuickPreset}>Try Quick 20</button>
-                        {onOpenPreview && <button type="button" onClick={onOpenPreview}>Open preview</button>}
-                    </div>
-                </div>
+                <ListEmptyState
+                    icon="🔍"
+                    title="No workouts match the current filters."
+                    body="Try clearing filters, adjusting difficulty, or using a preset."
+                    actions={(
+                        <>
+                            <button type="button" className={styles.primaryButton} onClick={handleClearFilters}>Clear filters</button>
+                            <button type="button" className={styles.secondaryButton} onClick={handleQuickPreset}>Try Quick 20</button>
+                            {onOpenPreview && <button type="button" className={styles.secondaryButton} onClick={onOpenPreview}>Open preview</button>}
+                        </>
+                    )}
+                />
             );
         }
 
@@ -354,6 +408,7 @@ const WorkoutResultsPanel: React.FC<WorkoutResultsPanelProps> = ({ onOpenPreview
             <ul className={styles.list} role="listbox" aria-label="Available workouts">
                 {workouts.map((workout, index) => {
                     const selected = workout.id === selectedId;
+                    const scheduled = Boolean(selectedWorkouts[workout.id]);
                     return (
                         <li key={workout.id} className={styles.listItem}>
                             <button
@@ -370,24 +425,28 @@ const WorkoutResultsPanel: React.FC<WorkoutResultsPanelProps> = ({ onOpenPreview
                                         {highlightText(workout.name, filters.search)}
                                     </div>
                                     <span className={styles.duration}>{formatDuration(workout)}</span>
+                                        <div className={styles.metaRow}>
+                                            {scheduled && <span className={styles.statusChip}>Scheduled</span>}
+                                            <span className={styles.duration}>{formatDuration(workout)}</span>
+                                        </div>
                                 </div>
-                                <p className={styles.description}>{highlightText(workout.description, filters.search)}</p>
-                                <div className={styles.metaRow}>
-                                    <span className={styles.metaBadge} aria-label={`Intensity ${workout.intensity}`}>{workout.intensity}</span>
-                                    <span className={styles.metaBadge} aria-label={`Difficulty range ${formatDifficulty(workout)}`}>
-                                        Difficulty {formatDifficulty(workout)}
-                                    </span>
-                                    {workout.equipment?.length ? (
-                                        <span className={styles.metaBadge} aria-label={`Equipment ${workout.equipment.join(', ')}`}>
-                                            Equipment: {workout.equipment.join(', ')}
+                                    <p className={styles.description}>{highlightText(workout.description, filters.search)}</p>
+                                    <div className={styles.metaRow}>
+                                        <span className={styles.metaBadge} aria-label={`Intensity ${workout.intensity}`}>{workout.intensity}</span>
+                                        <span className={styles.metaBadge} aria-label={`Difficulty range ${formatDifficulty(workout)}`}>
+                                            Difficulty {formatDifficulty(workout)}
                                         </span>
-                                    ) : null}
-                                    {workout.themes?.length ? (
-                                        <span className={styles.metaBadge} aria-label={`Themes ${workout.themes.join(', ')}`}>
-                                            {workout.themes.join(' • ')}
-                                        </span>
-                                    ) : null}
-                                </div>
+                                        {workout.equipment?.length ? (
+                                            <span className={styles.metaBadge} aria-label={`Equipment ${workout.equipment.join(', ')}`}>
+                                                Equipment: {workout.equipment.join(', ')}
+                                            </span>
+                                        ) : null}
+                                        {workout.themes?.length ? (
+                                            <span className={styles.metaBadge} aria-label={`Themes ${workout.themes.join(', ')}`}>
+                                                {workout.themes.join(' • ')}
+                                            </span>
+                                        ) : null}
+                                    </div>
                             </button>
                         </li>
                     );
@@ -396,19 +455,171 @@ const WorkoutResultsPanel: React.FC<WorkoutResultsPanelProps> = ({ onOpenPreview
         );
     };
 
+    const renderStatusBanner = () => {
+        if (actionState === 'conflict') {
+            return (
+                <div className={`${styles.stateCard} ${styles.conflictCard}`} role="alert">
+                    <div className={styles.stateIcon} aria-hidden>⚠️</div>
+                    <div className={styles.stateContent}>
+                        <p className={styles.stateTitle}>Scheduling conflict</p>
+                        <p className={styles.stateBody}>{actionMessage}</p>
+                        <div className={styles.stateActions}>
+                            <button type="button" className={styles.primaryButton} onClick={() => handleAddToSchedule({ force: true })} disabled={isSubmitting}>Add anyway</button>
+                            <button type="button" className={styles.ghostButton} onClick={handleRemoveFromSchedule} disabled={isSubmitting}>Remove from schedule</button>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        if (actionState === 'error') {
+            return (
+                <div className={`${styles.stateCard} ${styles.errorBanner}`} role="alert">
+                    <div className={styles.stateIcon} aria-hidden>⚠️</div>
+                    <div className={styles.stateContent}>
+                        <p className={styles.stateTitle}>Action needed</p>
+                        <p className={styles.stateBody}>{actionMessage}</p>
+                        <div className={styles.stateActions}>
+                            <button type="button" className={styles.primaryButton} onClick={() => refresh()}>Refresh</button>
+                            <button type="button" className={styles.secondaryButton} onClick={handleClearFilters}>Clear filters</button>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        if (actionState === 'success') {
+            return (
+                <div className={styles.statusBanner} role="status">
+                    {actionMessage}
+                </div>
+            );
+        }
+
+        if (error && workouts.length > 0) {
+            return (
+                <div className={`${styles.stateCard} ${styles.errorBanner}`} role="alert">
+                    <div className={styles.stateIcon} aria-hidden>⚠️</div>
+                    <div className={styles.stateContent}>
+                        <p className={styles.stateTitle}>We couldn&apos;t refresh workouts.</p>
+                        <p className={styles.stateBody}>{error}</p>
+                        <div className={styles.stateActions}>
+                            <button type="button" className={styles.primaryButton} onClick={() => refresh()}>Retry</button>
+                            <button type="button" className={styles.secondaryButton} onClick={handleClearFilters}>Clear filters</button>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        return null;
+    };
+
+    const detailCard = selectedWorkout ? (
+        isDetailOpen ? (
+            <>
+                <div className={styles.detailHeader}>
+                    <div>
+                        <p className={styles.eyebrow}>Details</p>
+                        <h3 ref={detailHeadingRef} tabIndex={-1} className={styles.detailTitle}>{selectedWorkout.name}</h3>
+                        <p className={styles.detailSubtitle}>{selectedWorkout.description}</p>
+                        {isSelectedInSchedule && (
+                            <span className={styles.metaBadge} aria-label="Already on your schedule">Scheduled</span>
+                        )}
+                    </div>
+                    <button type="button" className={styles.iconButton} aria-label="Close details" onClick={handleCloseDetail}>✕</button>
+                </div>
+
+                <div className={styles.detailGrid}>
+                    <div>
+                        <p className={styles.label}>Duration</p>
+                        <p className={styles.value}>{formatDuration(selectedWorkout)}</p>
+                    </div>
+                    <div>
+                        <p className={styles.label}>Intensity</p>
+                        <p className={styles.value}>{selectedWorkout.intensity}</p>
+                    </div>
+                    <div>
+                        <p className={styles.label}>Difficulty</p>
+                        <p className={styles.value}>{formatDifficulty(selectedWorkout)}</p>
+                    </div>
+                </div>
+
+                {selectedWorkout.equipment?.length ? (
+                    <div className={styles.detailSection}>
+                        <p className={styles.label}>Equipment</p>
+                        <div className={styles.chipRow}>
+                            {selectedWorkout.equipment.map(eq => <span key={eq} className={styles.pill}>{eq}</span>)}
+                        </div>
+                    </div>
+                ) : null}
+
+                {selectedWorkout.themes?.length ? (
+                    <div className={styles.detailSection}>
+                        <p className={styles.label}>Themes</p>
+                        <div className={styles.chipRow}>
+                            {selectedWorkout.themes.map(theme => <span key={theme} className={styles.pillMuted}>{theme}</span>)}
+                        </div>
+                    </div>
+                ) : null}
+
+                <div className={styles.detailActions}>
+                    {!isSelectedInSchedule && (
+                        <button type="button" className={styles.primaryButton} onClick={() => handleAddToSchedule()} disabled={isSubmitting}>Add to schedule</button>
+                    )}
+                    {isSelectedInSchedule && (
+                        <>
+                            <button type="button" className={styles.primaryButton} onClick={handleUpdateScheduleEntry} disabled={isSubmitting}>Update entry</button>
+                            <button type="button" className={styles.secondaryButton} onClick={handleRemoveFromSchedule} disabled={isSubmitting}>Remove</button>
+                            <button type="button" className={styles.ghostButton} onClick={goToSchedules}>Open schedule</button>
+                        </>
+                    )}
+                    {onOpenPreview && <button type="button" className={styles.secondaryButton} onClick={onOpenPreview}>Open preview</button>}
+                </div>
+            </>
+        ) : (
+            <div className={styles.detailPlaceholder}>
+                <p className={styles.label}>Details hidden</p>
+                <p className={styles.detailSubtitle}>Press reopen to continue where you left off.</p>
+                <div className={styles.detailActions}>
+                    <button type="button" className={styles.primaryButton} onClick={() => setIsDetailOpen(true)}>Reopen details</button>
+                    <button type="button" className={styles.secondaryButton} onClick={() => handleSelect(selectedWorkout.id, lastSelectedIndexRef.current ?? 0)}>Refocus selection</button>
+                </div>
+            </div>
+        )
+    ) : (
+        <div className={styles.emptyDetail}>Select a workout to see details</div>
+    );
+
     return (
         <div className={styles.resultsShell}>
             <div className={styles.toolbar}>
-                <div>
-                    <p className={styles.eyebrow}>Workouts</p>
-                    <h3 className={styles.heading}>Browse & select</h3>
-                    <div className={styles.countRow} aria-live="polite">
-                        <span className={styles.countBadge}>{workouts.length}</span>
-                        <span className={styles.countText}>matching workouts</span>
-                        <span className={styles.countSubtext}>
-                            {selectionCounts.workouts} selected • {selectionCounts.categories} categories
-                        </span>
+                <div className={styles.toolbarLeft}>
+                    <div>
+                        <p className={styles.eyebrow}>Workouts</p>
+                        <h3 className={styles.heading}>Browse & select</h3>
+                        <div className={styles.countRow} aria-live="polite">
+                            <span className={styles.countBadge}>{workouts.length}</span>
+                            <span className={styles.countText}>matching workouts</span>
+                            <span className={styles.countSubtext}>
+                                {selectionCounts.workouts} selected • {selectionCounts.categories} categories
+                            </span>
+                        </div>
+                        <div className={styles.mobileFiltersPillRow}>
+                            <button
+                                type="button"
+                                className={styles.mobileFiltersPill}
+                                onClick={() => (onOpenFilters ? onOpenFilters('filters') : handleOpenFilters('filters'))}
+                                aria-pressed={Boolean(filtersOpen)}
+                                aria-label="Open filters and difficulty"
+                            >
+                                Filters & difficulty
+                            </button>
+                        </div>
                     </div>
+                    {onOpenPreview && (
+                        <AlignmentWarning onOpenPreview={onOpenPreview} onAdjustDifficulty={openDifficultyControls} />
+                    )}
                 </div>
                 <div className={styles.toolbarActions}>
                     <div className={styles.refreshMeta} aria-live="polite">
@@ -420,31 +631,41 @@ const WorkoutResultsPanel: React.FC<WorkoutResultsPanelProps> = ({ onOpenPreview
                     <button type="button" onClick={() => refresh()} className={styles.secondaryButton} disabled={loading}>
                         {loading ? 'Refreshing…' : 'Refresh'}
                     </button>
-                    <button type="button" onClick={handleClearFilters} className={styles.secondaryButton}>Clear filters</button>
+                    <button
+                        type="button"
+                        onClick={() => (onOpenFilters ? onOpenFilters('difficulty') : handleOpenFilters('difficulty'))}
+                        className={styles.secondaryButton}
+                        aria-pressed={Boolean(filtersOpen)}
+                    >
+                        Difficulty
+                    </button>
+                    <button
+                        type="button"
+                        onClick={() => (onOpenFilters ? onOpenFilters('filters') : handleOpenFilters('filters'))}
+                        className={`${styles.secondaryButton} ${styles.desktopFiltersButton}`}
+                        aria-pressed={Boolean(filtersOpen)}
+                    >
+                        Filters
+                    </button>
                     {onOpenPreview && (
-                        <button type="button" onClick={onOpenPreview} className={styles.primaryButton}>Open preview</button>
+                        <button type="button" onClick={onOpenPreview} className={styles.secondaryButton}>Preview</button>
                     )}
+                    <button type="button" onClick={goToSchedules} className={styles.primaryButton}>View schedule</button>
                 </div>
             </div>
 
-            {error && workouts.length > 0 && (
-                <div className={styles.errorBanner} role="alert">
-                    <div>
-                        <p className={styles.errorTitle}>We couldn&apos;t refresh workouts.</p>
-                        <p className={styles.errorDetail}>{error}</p>
+            {appliedLabels.length > 0 && (
+                <div className={styles.appliedBar} aria-label="Applied filters">
+                    <div className={styles.appliedChips}>
+                        {appliedLabels.map(label => <span key={label} className={styles.appliedChip}>{label}</span>)}
                     </div>
-                    <div className={styles.conflictActions}>
-                        <button type="button" className={styles.primaryButton} onClick={() => refresh()}>Retry</button>
-                        <button type="button" className={styles.secondaryButton} onClick={handleClearFilters}>Clear filters</button>
-                    </div>
+                    <button type="button" className={styles.clearButton} onClick={handleClearFilters}>
+                        Clear all
+                    </button>
                 </div>
             )}
 
-            {appliedLabels.length > 0 && (
-                <div className={styles.appliedBar} aria-label="Applied filters">
-                    {appliedLabels.map(label => <span key={label} className={styles.appliedChip}>{label}</span>)}
-                </div>
-            )}
+            {renderStatusBanner()}
 
             <div className={styles.resultsGrid}>
                 <div className={styles.listPanel}>
@@ -455,89 +676,33 @@ const WorkoutResultsPanel: React.FC<WorkoutResultsPanelProps> = ({ onOpenPreview
                     {renderList()}
                 </div>
 
-                <div className={styles.detailPanel} aria-live="polite" aria-label="Workout details">
-                    {selectedWorkout ? (
-                        isDetailOpen ? (
-                            <>
-                                <div className={styles.detailHeader}>
-                                    <div>
-                                        <p className={styles.eyebrow}>Details</p>
-                                        <h3 ref={detailHeadingRef} tabIndex={-1} className={styles.detailTitle}>{selectedWorkout.name}</h3>
-                                        <p className={styles.detailSubtitle}>{selectedWorkout.description}</p>
-                                        {isSelectedInSchedule && (
-                                            <span className={styles.metaBadge} aria-label="Already on your schedule">Scheduled</span>
-                                        )}
-                                    </div>
-                                    <button type="button" className={styles.iconButton} aria-label="Close details" onClick={handleCloseDetail}>✕</button>
-                                </div>
-
-                                {actionState !== 'idle' && (
-                                    <div className={actionState === 'conflict' ? styles.conflictBanner : styles.statusBanner} role="alert">
-                                        <span>{actionMessage}</span>
-                                        {actionState === 'conflict' && (
-                                            <div className={styles.conflictActions}>
-                                                <button type="button" className={styles.primaryButton} onClick={() => handleAddToSchedule({ force: true })} disabled={isSubmitting}>Add anyway</button>
-                                                <button type="button" className={styles.ghostButton} onClick={handleRemoveFromSchedule} disabled={isSubmitting}>Remove from schedule</button>
-                                            </div>
-                                        )}
-                                    </div>
-                                )}
-
-                                <div className={styles.detailGrid}>
-                                    <div>
-                                        <p className={styles.label}>Duration</p>
-                                        <p className={styles.value}>{formatDuration(selectedWorkout)}</p>
-                                    </div>
-                                    <div>
-                                        <p className={styles.label}>Intensity</p>
-                                        <p className={styles.value}>{selectedWorkout.intensity}</p>
-                                    </div>
-                                    <div>
-                                        <p className={styles.label}>Difficulty</p>
-                                        <p className={styles.value}>{formatDifficulty(selectedWorkout)}</p>
-                                    </div>
-                                </div>
-
-                                {selectedWorkout.equipment?.length ? (
-                                    <div className={styles.detailSection}>
-                                        <p className={styles.label}>Equipment</p>
-                                        <div className={styles.chipRow}>
-                                            {selectedWorkout.equipment.map(eq => <span key={eq} className={styles.pill}>{eq}</span>)}
-                                        </div>
-                                    </div>
-                                ) : null}
-
-                                {selectedWorkout.themes?.length ? (
-                                    <div className={styles.detailSection}>
-                                        <p className={styles.label}>Themes</p>
-                                        <div className={styles.chipRow}>
-                                            {selectedWorkout.themes.map(theme => <span key={theme} className={styles.pillMuted}>{theme}</span>)}
-                                        </div>
-                                    </div>
-                                ) : null}
-
-                                <div className={styles.detailActions}>
-                                    <button type="button" className={styles.primaryButton} onClick={() => handleAddToSchedule()} disabled={isSubmitting}>Add to schedule</button>
-                                    <button type="button" className={styles.secondaryButton} onClick={handleUpdateScheduleEntry} disabled={isSubmitting}>Update entry</button>
-                                    <button type="button" className={styles.secondaryButton} onClick={handleRemoveFromSchedule} disabled={isSubmitting}>Remove</button>
-                                    {onOpenPreview && <button type="button" className={styles.secondaryButton} onClick={onOpenPreview}>Open preview</button>}
-                                </div>
-                            </>
-                        ) : (
-                            <div className={styles.detailPlaceholder}>
-                                <p className={styles.label}>Details hidden</p>
-                                <p className={styles.detailSubtitle}>Press reopen to continue where you left off.</p>
-                                <div className={styles.detailActions}>
-                                    <button type="button" className={styles.primaryButton} onClick={() => setIsDetailOpen(true)}>Reopen details</button>
-                                    <button type="button" className={styles.secondaryButton} onClick={() => handleSelect(selectedWorkout.id, lastSelectedIndexRef.current ?? 0)}>Refocus selection</button>
-                                </div>
-                            </div>
-                        )
+                <div
+                    className={isMobile ? styles.detailPanelMobile : styles.detailPanel}
+                    aria-live="polite"
+                    aria-label="Workout details"
+                >
+                    {isMobile ? (
+                        <div className={styles.mobileDetailPlaceholder}>Select a workout to open details.</div>
                     ) : (
-                        <div className={styles.emptyDetail}>Select a workout to see details</div>
+                        detailCard
                     )}
                 </div>
             </div>
+
+            {isMobile && isDetailOpen && (
+                <>
+                    <div className={styles.detailSheetBackdrop} onClick={handleCloseDetail} role="presentation" />
+                    <div
+                        className={`${styles.detailPanel} ${styles.detailPanelSheet}`}
+                        aria-live="polite"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-label="Workout details"
+                    >
+                        {detailCard}
+                    </div>
+                </>
+            )}
 
             <div className={styles.srOnly} aria-live="polite">{liveMessage}</div>
         </div>

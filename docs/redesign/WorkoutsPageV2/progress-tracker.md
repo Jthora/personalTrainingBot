@@ -1,0 +1,130 @@
+# Workouts Page Overhaul (V2) — Progress Tracker
+
+> Stages → Phases → Steps → Tasks → Sub-tasks (seeded numbering for easy referencing)
+
+- [ ] **Stage 0. Alignment & Scope**
+  - [ ] Phase 0.1 Alignment
+    - [ ] Step 0.1.1 Review V2 plan with Design/Eng/QA
+      - [ ] Task 0.1.1.a Sign off IA/layout decisions (toolbar, sheet, badges)
+        - [ ] Sub-task: Walk through `ia-and-layout-v2.md` with Design
+        - [ ] Sub-task: Capture approvals/notes in meeting doc
+      - [ ] Task 0.1.1.b Confirm cross-page alignment choices with Schedules
+        - [ ] Sub-task: Compare Schedules chips/banners with proposed patterns
+        - [ ] Sub-task: Record agreed shared tokens/components
+    - [ ] Step 0.1.2 Lock scope/non-goals
+      - [ ] Task 0.1.2.a Validate goals/scope/non-goals in `goals-and-scope.md`
+        - [ ] Sub-task: Review objectives with PM
+        - [ ] Sub-task: Mark out-of-scope items explicitly
+      - [ ] Task 0.1.2.b Document owners/dates in `workback-plan.md`
+        - [ ] Sub-task: Assign Design/Eng/QA per phase
+        - [ ] Sub-task: Add milestone dates and checkpoints
+
+- [ ] **Stage 1. Structure & Layout**
+  - [ ] Phase 1.1 Toolbar & Status
+    - [ ] Step 1.1.1 Build consolidated toolbar (desktop)
+      - [x] Task 1.1.1.a Refresh/stale + counts + selection status
+        - [x] Sub-task: Define data props and loading/disabled states
+        - [x] Sub-task: Wire to existing data hooks/stores
+      - [x] Task 1.1.1.b Plan health (alignment warning) + preview trigger
+        - [x] Sub-task: Merge triggers into a single toolbar segment
+        - [x] Sub-task: Remove duplicate body buttons
+      - [x] Task 1.1.1.c Filters/difficulty toggle (sheet on mobile)
+        - [x] Sub-task: Add toolbar button with aria-pressed state
+        - [x] Sub-task: Connect to sheet open/close controller
+      - [x] Task 1.1.1.d Link to Schedules
+        - [x] Sub-task: Add CTA to open Schedules page
+        - [ ] Sub-task: Ensure focus/URL handling on return
+    - [ ] Step 1.1.2 Global chips/status slot
+      - [x] Task 1.1.2.a Applied chips bar under toolbar
+        - [x] Sub-task: Move chips out of filters card
+        - [x] Sub-task: Add clear-all inline action
+      - [x] Task 1.1.2.b Single status/alert region under chips
+        - [x] Sub-task: Consolidate conflict/error/stale banners
+        - [x] Sub-task: aria-live and role=alert wiring
+
+- [ ] **Stage 2. Components & Content**
+  - [ ] Phase 2.1 WorkoutResultsPanel
+    - [ ] Step 2.1.1 List improvements
+      - [x] Task 2.1.1.a Add Scheduled/Today chips to rows
+        - [x] Sub-task: Define status derivation rules
+        - [x] Sub-task: Style chips consistent with Schedules
+      - [x] Task 2.1.1.b Align metadata order and spacing
+        - [x] Sub-task: Set consistent order (title, desc, badges, status)
+        - [x] Sub-task: Normalize spacing for wrap/flex
+    - [ ] Step 2.1.2 Detail pane
+      - [x] Task 2.1.2.a Single status area; remove in-body banners
+        - [x] Sub-task: Place status slot under detail header
+        - [x] Sub-task: Update tests for new location
+      - [x] Task 2.1.2.b Action gating (Add vs Update/Remove) + Preview secondary
+        - [x] Sub-task: Hide Update/Remove when not scheduled
+        - [x] Sub-task: Keep buttons disabled while submitting
+    - [ ] Step 2.1.3 States
+      - [x] Task 2.1.3.a Harmonize empty/error/conflict with Schedules patterns
+        - [x] Sub-task: Reuse iconography/typography from Schedules
+        - [x] Sub-task: Align button styles/placements
+  - [ ] Phase 2.2 Filters/Presets/Difficulty
+    - [ ] Step 2.2.1 Filters card
+      - [x] Task 2.2.1.a Move applied chips to global bar; clean duplicates
+        - [x] Sub-task: Remove chips from filter card
+        - [x] Sub-task: Ensure zero-state uses new chip bar
+      - [x] Task 2.2.1.b Regroup controls + helper text consistency
+        - [x] Sub-task: Add helper copy for Equipment/Themes multi-select
+        - [x] Sub-task: Unify label sizes and spacing
+    - [ ] Step 2.2.2 Presets
+      - [x] Task 2.2.2.a Place near search; remove zero-state duplicate
+        - [x] Sub-task: Add preset pills under search
+        - [x] Sub-task: Remove Quick 20 from zero-state actions
+    - [ ] Step 2.2.3 Difficulty
+      - [x] Task 2.2.3.a Single control surface (toolbar popover + sheet); remove redundant CTAs
+        - [x] Sub-task: Expose control in sheet for mobile
+        - [x] Sub-task: Remove extra buttons (AlignmentWarning duplicate)
+
+- [ ] **Stage 3. Responsive & Mobile**
+  - [ ] Phase 3.1 Filter/Difficulty Sheet
+    - [x] Task 3.1.1 Build mobile sheet (focus trap, restore)
+      - [x] Sub-task: Implement focus trap and escape handling
+      - [x] Sub-task: Restore focus to toolbar toggle on close
+    - [x] Task 3.1.2 Hide sidebar <960px; add toolbar entry pill
+      - [x] Sub-task: Update breakpoints and conditional rendering
+      - [x] Sub-task: Ensure scroll locking when sheet open
+  - [ ] Phase 3.2 Detail on Mobile
+    - [x] Task 3.2.1 Decide slide-over vs inline accordion; implement
+      - [x] Sub-task: Prototype chosen pattern
+      - [x] Sub-task: Verify selection/focus return behavior
+
+- [ ] **Stage 4. Cross-Page Alignment**
+  - [ ] Phase 4.1 Schedules parity
+    - [ ] Task 4.1.1 Align chips/banners/gutters with Schedules
+      - [x] Sub-task: Match token values (radii, borders, spacing)
+      - [x] Sub-task: Reuse empty/skeleton components where possible
+    - [ ] Task 4.1.2 Cross-links (View schedule / Add workouts)
+      - [x] Sub-task: Add toolbar link from Workouts to Schedules
+      - [x] Sub-task: Add deep-link from Schedules to Workouts with filters
+
+- [ ] **Stage 5. QA & Rollout**
+  - [ ] Phase 5.1 Testing
+    - [ ] Task 5.1.1 Extend tests for badges/gating/status slot/sheet
+      - [ ] Sub-task: Update RTL coverage for toolbar/status slots
+      - [ ] Sub-task: Add mobile sheet interaction tests
+    - [ ] Task 5.1.2 A11y sweep (axe, keyboard, SR spot checks)
+      - [ ] Sub-task: Axe run on toolbar, sheet, list/detail
+      - [ ] Sub-task: Keyboard/focus scripts + SR smoke
+  - [ ] Phase 5.2 Rollout
+    - [ ] Task 5.2.1 Regression on optimistic add/edit/remove
+      - [ ] Sub-task: Re-run vitest suite
+      - [ ] Sub-task: Manual conflict/rollback smoke
+    - [ ] Task 5.2.2 Release notes + tag for fallback
+      - [ ] Sub-task: Draft release notes with screenshots
+      - [ ] Sub-task: Create git tag for rollback point
+
+- [ ] **Stage 6. Risks & Decisions**
+  - [ ] Phase 6.1 Close open questions
+    - [x] Task 6.1.1 Detail mobile form factor decision
+      - [x] Sub-task: Document rationale in `risks-and-open-questions.md`
+      - [x] Sub-task: Capture decision date/owner
+    - [ ] Task 6.1.2 Multi-select/batch add decision
+      - [ ] Sub-task: Evaluate impact on toolbar actions
+      - [ ] Sub-task: Log decision and deferments
+    - [ ] Task 6.1.3 Filter persistence (URL/local) decision
+      - [ ] Sub-task: Spike on URL param hydration risk
+      - [ ] Sub-task: Record final approach in docs

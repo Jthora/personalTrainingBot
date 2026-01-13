@@ -1,4 +1,5 @@
 import { fireEvent, render, screen, waitFor, within } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import WorkoutResultsPanel from '../WorkoutResultsPanel';
 import type { Workout } from '../../../types/WorkoutCategory';
@@ -97,6 +98,36 @@ vi.mock('../../../services/WorkoutSchedulingService', () => ({
 }));
 
 describe('WorkoutResultsPanel', () => {
+    const renderPanel = () => render(
+        <MemoryRouter>
+            <WorkoutResultsPanel />
+        </MemoryRouter>
+    );
+
+        const setupMatchMedia = (matches: boolean) => {
+            const listeners = new Set<(event: MediaQueryListEvent) => void>();
+            const mql: MediaQueryList = {
+                matches,
+                media: '(max-width: 960px)',
+                onchange: null,
+                addListener: (listener: (event: MediaQueryListEvent) => void) => listeners.add(listener),
+                removeListener: (listener: (event: MediaQueryListEvent) => void) => listeners.delete(listener),
+                addEventListener: (_type: string, listener: (event: MediaQueryListEvent) => void) => listeners.add(listener),
+                removeEventListener: (_type: string, listener: (event: MediaQueryListEvent) => void) => listeners.delete(listener),
+                dispatchEvent: () => true,
+            } as MediaQueryList;
+
+            vi.spyOn(window, 'matchMedia').mockImplementation(() => mql);
+
+            const update = (nextMatch: boolean) => {
+                (mql as any).matches = nextMatch;
+                const event = { matches: nextMatch } as MediaQueryListEvent;
+                listeners.forEach(listener => listener(event));
+            };
+
+            return { update, restore: () => (window.matchMedia as any).mockRestore?.() };
+        };
+
     beforeEach(() => {
         workouts = [...baseWorkouts];
         selectedWorkoutsState = {};
@@ -118,7 +149,7 @@ describe('WorkoutResultsPanel', () => {
     });
 
     it('renders workouts and shows detail for the first item', () => {
-        render(<WorkoutResultsPanel />);
+        renderPanel();
 
         const detail = screen.getByLabelText(/Workout details/i);
         expect(within(detail).getByText(/Push Ups/i)).toBeTruthy();
@@ -127,7 +158,7 @@ describe('WorkoutResultsPanel', () => {
     });
 
     it('lets users select a different workout', () => {
-        render(<WorkoutResultsPanel />);
+        renderPanel();
 
         fireEvent.click(screen.getByRole('option', { name: /Mountain Climbers/i }));
         const detail = screen.getByLabelText(/Workout details/i);
@@ -137,13 +168,13 @@ describe('WorkoutResultsPanel', () => {
 
     it('shows empty state when no workouts are available', () => {
         workouts = [];
-        render(<WorkoutResultsPanel />);
+        renderPanel();
 
         expect(screen.getByText(/No workouts match the current filters/i)).toBeTruthy();
     });
 
     it('closes detail with Escape and returns focus to the selected list item', async () => {
-        render(<WorkoutResultsPanel />);
+        renderPanel();
 
         const mountain = screen.getByRole('option', { name: /Mountain Climbers/i });
         fireEvent.click(mountain);
@@ -157,11 +188,10 @@ describe('WorkoutResultsPanel', () => {
     });
 
     it('shows conflict messaging when workout is already selected and allows override', async () => {
-        selectedWorkoutsState = { pushups: true };
         addWorkoutToSchedule
             .mockReturnValueOnce({ status: 'conflict', reason: 'Already scheduled', schedule: scheduleState })
             .mockReturnValue({ status: 'added', schedule: scheduleState });
-        render(<WorkoutResultsPanel />);
+        renderPanel();
 
         fireEvent.click(screen.getByRole('button', { name: /Add to schedule/i }));
 
@@ -180,7 +210,7 @@ describe('WorkoutResultsPanel', () => {
         updateWorkoutInSchedule.mockReturnValue({ status: 'updated', schedule: scheduleState });
         confirmEdit.mockRejectedValueOnce(new Error('network'));
 
-        render(<WorkoutResultsPanel />);
+    renderPanel();
 
         fireEvent.click(screen.getByRole('button', { name: /Update entry/i }));
 
@@ -204,7 +234,7 @@ describe('WorkoutResultsPanel', () => {
         removeWorkoutFromSchedule.mockReturnValue({ status: 'removed', schedule: scheduleState });
         confirmRemove.mockRejectedValueOnce(new Error('timeout'));
 
-        render(<WorkoutResultsPanel />);
+    renderPanel();
 
         fireEvent.click(screen.getByRole('button', { name: /^Remove$/i }));
 
@@ -218,5 +248,22 @@ describe('WorkoutResultsPanel', () => {
         });
 
         expect(await screen.findByText(/Changes were undone/i)).toBeTruthy();
+    });
+
+    it('renders the mobile detail sheet with accessible dialog semantics', async () => {
+        const { restore } = setupMatchMedia(true);
+        renderPanel();
+
+        const dialog = await screen.findByRole('dialog', { name: /Workout details/i });
+    expect(dialog.getAttribute('aria-modal')).toBe('true');
+
+        const closeButton = within(dialog).getByRole('button', { name: /Close details/i });
+        fireEvent.click(closeButton);
+
+        await waitFor(() => {
+            expect(screen.queryByRole('dialog', { name: /Workout details/i })).toBeNull();
+        });
+
+        restore();
     });
 });

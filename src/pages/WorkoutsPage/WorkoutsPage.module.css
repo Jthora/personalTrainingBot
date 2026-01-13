@@ -77,6 +77,10 @@
         height: auto;
         overflow: visible;
     }
+
+    .sidebar {
+        display: none;
+    }
 }
 
 @media (max-width: 720px) {

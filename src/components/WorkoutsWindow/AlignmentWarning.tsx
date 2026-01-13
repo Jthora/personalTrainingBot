@@ -164,10 +164,10 @@ const AlignmentWarning: React.FC<AlignmentWarningProps> = ({ onOpenPreview, onAd
                 <button
                     className={`${styles.button} ${styles.secondary}`}
                     onClick={onAdjustDifficulty}
-                    aria-label="Lower difficulty settings"
+                    aria-label="Adjust difficulty settings"
                     disabled={!onAdjustDifficulty}
                 >
-                    Lower difficulty
+                    Adjust difficulty
                 </button>
                 <button
                     className={`${styles.button} ${styles.ghost}`}

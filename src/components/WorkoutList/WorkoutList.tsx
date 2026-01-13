@@ -4,6 +4,7 @@ import styles from './WorkoutList.module.css';
 import useWorkoutSchedule from '../../hooks/useWorkoutSchedule';
 import { WorkoutSet, WorkoutBlock } from '../../types/WorkoutSchedule';
 import WorkoutFilterStore from '../../store/WorkoutFilterStore';
+import { ListEmptyState, ListSkeleton } from '../ListStates/ListState';
 
 const WorkoutList: React.FC = () => {
     const { schedule, isLoading, scheduleVersion } = useWorkoutSchedule();
@@ -15,26 +16,28 @@ const WorkoutList: React.FC = () => {
 
     if (isLoading) {
         console.log('Schedule is loading...');
-        return (
-            <div className={styles.loadingSkeleton} aria-label="Loading workout list">
-                <div className={styles.skeletonBar} />
-                <div className={styles.skeletonCard} />
-                <div className={styles.skeletonCard} />
-            </div>
-        );
+        return <ListSkeleton label="Loading workout list" rows={2} />;
     }
 
     if (!schedule) {
         console.warn('WorkoutList: The schedule is missing.');
-        return <div className={styles.noWorkouts}>No workout schedule</div>;
+        return (
+            <ListEmptyState
+                icon="📅"
+                title="No workout schedule"
+                body="Create or generate a schedule to see upcoming workouts."
+            />
+        );
     }
 
     if (schedule.scheduleItems.length === 0) {
         console.log('WorkoutList: No workouts available in the schedule.');
         return (
-            <div>
-                <div className={styles.noWorkouts}>Workout schedule is empty</div>
-            </div>
+            <ListEmptyState
+                icon="🗒️"
+                title="Workout schedule is empty"
+                body="Add a workout set or block to start building your plan."
+            />
         );
     }
 
@@ -67,7 +70,13 @@ const WorkoutList: React.FC = () => {
 
         console.error('Unknown item type in schedule:', item);
         return [
-            <div key={`unknown-${index}`} className={styles.unknownItem}>Unknown Item</div>
+            <ListEmptyState
+                key={`unknown-${index}`}
+                tone="error"
+                icon="⚠️"
+                title="Unknown schedule item"
+                body="We couldn&apos;t render this item. Try refreshing or recreating the schedule."
+            />
         ];
     });
 

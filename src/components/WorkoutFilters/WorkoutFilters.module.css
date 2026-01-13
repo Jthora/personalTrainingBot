@@ -7,7 +7,7 @@
   color: var(--text-primary);
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.18);
 }
 
@@ -25,10 +25,24 @@
   color: var(--text-muted);
 }
 
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.fieldLabelRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
 .fieldLabel {
-  font-size: 0.9rem;
-  font-weight: 650;
+  font-size: 0.92rem;
+  font-weight: 700;
   color: var(--text-primary);
+  letter-spacing: 0.01em;
 }
 
 .searchInput {
@@ -44,6 +58,65 @@
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
+}
+
+.presetSection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.presetHeader {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.presetRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.presetPill {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--coach-border);
+  background: var(--surface-base);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: border-color 0.15s ease, transform 0.1s ease, box-shadow 0.12s ease;
+  min-width: 120px;
+}
+
+.presetPill:hover {
+  border-color: var(--coach-accent);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.presetLabel {
+  font-weight: 700;
+}
+
+.presetHelper {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.helperText {
+  margin: 0;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+
+.fieldGroup .helperText {
+  margin: 0;
 }
 .zeroState {
   margin-top: 16px;
@@ -107,7 +180,7 @@
 .checkboxGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 8px;
+  gap: 10px 12px;
 }
 
 .checkboxLabel {
@@ -137,7 +210,7 @@
 .sliderRow {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 12px;
+  gap: 14px;
   align-items: center;
 }
 

@@ -36,47 +36,6 @@
     padding-right: 4px;
 }
 
-.loading,
-.noWorkouts,
-.unknownItem {
-    text-align: center;
-    font-size: 0.85rem;
-    letter-spacing: 0.18em;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    padding: 12px;
-    border: 1px dashed rgba(255, 255, 255, 0.12);
-}
-
-.loadingSkeleton {
-    padding: 12px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.skeletonBar {
-    height: 14px;
-    width: 140px;
-    background: linear-gradient(90deg, #111827 0%, #1f2937 50%, #111827 100%);
-    background-size: 200% 100%;
-    border-radius: 8px;
-    animation: shimmer 1.4s infinite;
-}
-
-.skeletonCard {
-    height: 72px;
-    border-radius: 10px;
-    background: linear-gradient(90deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
-    background-size: 200% 100%;
-    animation: shimmer 1.4s infinite;
-}
-
-@keyframes shimmer {
-    0% { background-position: 200% 0; }
-    100% { background-position: -200% 0; }
-}
-
 .overflow {
     color: #93c5fd;
     font-size: 0.9rem;

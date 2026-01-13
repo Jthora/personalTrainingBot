@@ -69,8 +69,8 @@ describe('AlignmentWarning', () => {
 
         expect(getByRole('alert')).toBeTruthy();
         expect(getByText(/2 of 5 sets exceed/i)).toBeTruthy();
-        expect(getByRole('button', { name: /swap sets/i })).toBeTruthy();
-        expect(getByRole('button', { name: /lower difficulty settings/i })).toBeTruthy();
+    expect(getByRole('button', { name: /swap sets/i })).toBeTruthy();
+    expect(getByRole('button', { name: /adjust difficulty settings/i })).toBeTruthy();
         expect(recordMetric).toHaveBeenCalledWith('alignment_warning_surface', expect.objectContaining({ outOfRange: 2, total: 5 }));
     });
 

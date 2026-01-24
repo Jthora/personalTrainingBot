@@ -1,8 +1,9 @@
-import React, { ReactNode, useEffect, useState } from 'react';
+import React, { ReactNode, useEffect, useRef, useState } from 'react';
 import { defaultCoachId } from '../data/coaches';
 import { applyCoachPaletteToRoot } from '../data/coachThemes';
 import { syncCoachModuleSelection } from '../utils/coachModulePreferences';
 import { CoachSelectionContext } from './CoachSelectionContextState';
+import { mark } from '../utils/perf';
 
 interface CoachSelectionProviderProps {
     children: ReactNode;
@@ -10,6 +11,7 @@ interface CoachSelectionProviderProps {
 
 export const CoachSelectionProvider: React.FC<CoachSelectionProviderProps> = ({ children }) => {
     const [coachId, setCoachIdState] = useState<string>(defaultCoachId);
+    const coachReadyMarkedRef = useRef(false);
 
     useEffect(() => {
         if (typeof window === 'undefined') {
@@ -20,6 +22,10 @@ export const CoachSelectionProvider: React.FC<CoachSelectionProviderProps> = ({ 
             setCoachIdState(storedCoach);
         } else {
             window.localStorage.setItem('selectedCoach', defaultCoachId);
+        }
+        if (!coachReadyMarkedRef.current) {
+            mark('load:coach_ready');
+            coachReadyMarkedRef.current = true;
         }
     }, []);
 

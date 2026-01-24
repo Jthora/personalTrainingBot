@@ -1,0 +1,14 @@
+[
+  {
+    "type": "resource-summary",
+    "name": "resource-summary",
+    "value": {
+      "totalRequests": 0,
+      "totalTransfer": 0,
+      "totalEncoded": 0,
+      "totalDecoded": 0,
+      "totalDuration": 0,
+      "byInitiator": {}
+    }
+  }
+]

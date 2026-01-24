@@ -3,6 +3,7 @@ import CardDealer from '../utils/CardDealer';
 import { Card } from '../types/Card';
 import TrainingModuleCache from '../cache/TrainingModuleCache';
 import { CardContext } from './CardContextState';
+import { mark } from '../utils/perf';
 
 interface CardProviderProps {
     children: ReactNode;
@@ -15,6 +16,7 @@ export const CardProvider: React.FC<CardProviderProps> = ({ children, initialSlu
     const [isLoading, setIsLoading] = useState(true);
     const [highlightedCardId, _setHighlightedCardId] = useState<string | null>(null);
     const highlightedCardIdRef = useRef<string | null>(null);
+    const cardsReadyMarkedRef = useRef(false);
 
     const updateHighlight = useCallback((cardId: string | null) => {
         highlightedCardIdRef.current = cardId;
@@ -138,6 +140,10 @@ export const CardProvider: React.FC<CardProviderProps> = ({ children, initialSlu
             }
             dealInitialCards();
             setIsLoading(false);
+            if (!cardsReadyMarkedRef.current) {
+                mark('load:cards_ready');
+                cardsReadyMarkedRef.current = true;
+            }
         };
 
         loadCache();

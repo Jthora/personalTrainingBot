@@ -25,13 +25,15 @@ describe('featureFlags', () => {
         expect(mod.isFeatureEnabled('calendarSurface')).toBe(false);
         expect(mod.isFeatureEnabled('migrationBridge')).toBe(false);
         expect(mod.isFeatureEnabled('generatorSwap')).toBe(true);
+        expect(mod.isFeatureEnabled('performanceInstrumentation')).toBe(false);
     });
 
     it('honors VITE_FEATURE_FLAGS overrides', async () => {
-        mockEnv('staging', JSON.stringify({ calendarSurface: false, migrationBridge: true }));
+        mockEnv('staging', JSON.stringify({ calendarSurface: false, migrationBridge: true, performanceInstrumentation: false }));
         const mod = await loadModule();
         expect(mod.isFeatureEnabled('calendarSurface')).toBe(false);
         expect(mod.isFeatureEnabled('migrationBridge')).toBe(true);
+        expect(mod.isFeatureEnabled('performanceInstrumentation')).toBe(false);
     });
 
     it('applies global kill switch across features', async () => {
@@ -53,5 +55,6 @@ describe('featureFlags', () => {
         mockEnv('production');
         mod = await loadModule();
         expect(mod.isFeatureEnabled('calendarSurface')).toBe(false);
+        expect(mod.isFeatureEnabled('performanceInstrumentation')).toBe(false);
     });
 });

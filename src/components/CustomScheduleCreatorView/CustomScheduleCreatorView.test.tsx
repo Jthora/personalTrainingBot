@@ -28,6 +28,7 @@ const renderWithContext = (setCurrentSchedule = vi.fn()) => {
             isLoading: false,
             error: null,
             scheduleVersion: 1,
+            scheduleStatus: { source: 'network', stale: false, status: 'ready', lastUpdated: Date.now() },
         }}>
             <CustomScheduleCreatorView />
         </WorkoutScheduleContext.Provider>

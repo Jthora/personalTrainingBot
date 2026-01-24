@@ -3,9 +3,10 @@ import styles from './LoadingMessage.module.css'; // Import the CSS module
 
 interface LoadingMessageProps {
   progress: number; // Add progress prop
+  warnings?: string[];
 }
 
-const LoadingMessage: React.FC<LoadingMessageProps> = ({ progress }) => {
+const LoadingMessage: React.FC<LoadingMessageProps> = ({ progress, warnings = [] }) => {
   const [dots, setDots] = useState('');
 
   useEffect(() => {
@@ -33,6 +34,16 @@ const LoadingMessage: React.FC<LoadingMessageProps> = ({ progress }) => {
       <div className={styles['loading-bar-bottom']}>
         <div className={styles['loading-bar-animation']}></div>
       </div>
+      {!!warnings.length && (
+        <div className={styles['warning-box']} role="status" aria-live="polite">
+          <div className={styles['warning-title']}>Some data fell back</div>
+          <ul className={styles['warning-list']}>
+            {warnings.map((warning) => (
+              <li key={warning}>{warning}</li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 };

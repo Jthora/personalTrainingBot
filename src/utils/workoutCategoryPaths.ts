@@ -1,19 +1,28 @@
 import type { WorkoutCategoryFile } from "../types/TrainingDataFiles";
-import { createJsonLoader } from "./jsonLoader";
 
-export const workoutCategoryPaths = {
-    aegis_fang_combat_system: createJsonLoader<WorkoutCategoryFile>(() => import("../data/training_coach_data/workouts/aegis_fang_combat_system.json")),
-    agility: createJsonLoader<WorkoutCategoryFile>(() => import("../data/training_coach_data/workouts/agility.json")),
-    balance: createJsonLoader<WorkoutCategoryFile>(() => import("../data/training_coach_data/workouts/balance.json")),
-    cardio: createJsonLoader<WorkoutCategoryFile>(() => import("../data/training_coach_data/workouts/cardio.json")),
-    combat: createJsonLoader<WorkoutCategoryFile>(() => import("../data/training_coach_data/workouts/combat.json")),
-    coordination: createJsonLoader<WorkoutCategoryFile>(() => import("../data/training_coach_data/workouts/coordination.json")),
-    endurance: createJsonLoader<WorkoutCategoryFile>(() => import("../data/training_coach_data/workouts/endurance.json")),
-    jono_thora: createJsonLoader<WorkoutCategoryFile>(() => import("../data/training_coach_data/workouts/jono_thora.json")),
-    mental: createJsonLoader<WorkoutCategoryFile>(() => import("../data/training_coach_data/workouts/mental.json")),
-    mobility: createJsonLoader<WorkoutCategoryFile>(() => import("../data/training_coach_data/workouts/mobility.json")),
-    strength: createJsonLoader<WorkoutCategoryFile>(() => import("../data/training_coach_data/workouts/strength.json")),
-    superhero: createJsonLoader<WorkoutCategoryFile>(() => import("../data/training_coach_data/workouts/superhero.json"))
-} satisfies Record<string, () => Promise<WorkoutCategoryFile>>;
+const rawWorkoutCategories = import.meta.glob("../data/training_coach_data/workouts/*.json", { eager: true });
 
-export const totalWorkoutCategories = 12;
+const normalize = (value: unknown): WorkoutCategoryFile => {
+    const maybeModule = value as { default?: unknown };
+    if (maybeModule && typeof maybeModule === "object" && "default" in maybeModule) {
+        return maybeModule.default as WorkoutCategoryFile;
+    }
+    return value as WorkoutCategoryFile;
+};
+
+const workoutCategoryData = Object.fromEntries(
+    Object.entries(rawWorkoutCategories).map(([fullPath, mod]) => {
+        const match = fullPath.match(/workouts\/([^/]+)\.json$/);
+        const id = match ? match[1] : undefined;
+        if (!id) {
+            throw new Error("Failed to derive workout category id from " + fullPath);
+        }
+        return [id, normalize(mod)];
+    })
+) as Record<string, WorkoutCategoryFile>;
+
+export const workoutCategoryPaths = Object.fromEntries(
+    Object.entries(workoutCategoryData).map(([id, value]) => [id, async () => value])
+) satisfies Record<string, () => Promise<WorkoutCategoryFile>>;
+
+export const totalWorkoutCategories = Object.keys(workoutCategoryData).length;

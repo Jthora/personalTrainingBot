@@ -78,6 +78,29 @@
   transition: width 0.5s ease;
 }
 
+.warning-box {
+  margin-top: 18px;
+  padding: 12px;
+  width: 80%;
+  background: rgba(255, 184, 76, 0.12);
+  border: 1px solid rgba(255, 184, 76, 0.6);
+  border-radius: 8px;
+  color: #ffe1b3;
+  text-align: left;
+}
+
+.warning-title {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.warning-list {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
 @keyframes loading {
   0% {
     transform: translateX(-100%);

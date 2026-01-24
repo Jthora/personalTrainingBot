@@ -128,6 +128,39 @@ pm2 start ecosystem.config.js
 - Assets are automatically optimized
 - Gzip compression is applied
 
+### Caching headers & verification
+- Static headers file: `public/_headers` ships cache policies for HTML (no-cache), hashed assets (1 year, immutable), training manifest (5 minutes), training shards/JSON (1 day with stale-while-revalidate).
+- When deploying to Netlify/Vercel/static hosts that honor `_headers`, ensure the file is copied to the root of the published site (Vite already copies `public/*`).
+- Verify headers after deploy:
+
+```bash
+# Manifest should be short-lived
+curl -I https://<your-domain>/training_modules_manifest.json | grep -i cache-control
+
+# Shards should be cached but revalidated daily
+curl -I https://<your-domain>/training_modules_shards/fitness.json | grep -i cache-control
+
+# Hashed assets should be immutable
+curl -I https://<your-domain>/assets/index-*.js | grep -i cache-control
+```
+
+### Optional service worker (opt-in)
+- Registration is gated by `localStorage.setItem('sw:enable', 'true')` (defaults off). Clear the flag and call `unregisterServiceWorkers()` to disable.
+- Worker lives at `/sw.js`; scope is site root. It caches the manifest + training shards with cache-first + background refresh.
+- To force the active worker to take over, the page sends `SKIP_WAITING` during updatefound; you can also manually postMessage the same.
+- QA steps:
+	1) In a non-dev build, open devtools console, run `localStorage.setItem('sw:enable','true'); location.reload();`
+	2) Verify registration in Application → Service Workers.
+	3) Trigger shard loads (navigate to training view), then go offline and confirm cached shard responses serve.
+	4) Clear flag and run `unregisterServiceWorkers()` to disable.
+	5) Optional automated check (requires running preview/prod host):
+
+```bash
+# In one terminal (if testing locally): npm run preview -- --host --port 4173
+# In another terminal:
+npm run check:sw-offline -- --base=http://localhost:4173 --shard=/training_modules_shards/fitness.json
+```
+
 ### Runtime Optimization
 - Implement service worker for caching
 - Use CDN for static assets

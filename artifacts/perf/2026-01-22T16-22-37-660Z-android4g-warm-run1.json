@@ -1,0 +1,17 @@
+[
+  {
+    "type": "mark",
+    "name": "load:boot_start",
+    "startTime": 3113.9000000953674
+  },
+  {
+    "type": "mark",
+    "name": "load:shell_painted",
+    "startTime": 3203.800000190735
+  },
+  {
+    "type": "timing",
+    "name": "load:boot_to_shell",
+    "value": 89.90000009536743
+  }
+]

@@ -1,6 +1,6 @@
 import { getAppEnv, AppEnv } from './env';
 
-export type FeatureFlagKey = 'generatorSwap' | 'calendarSurface' | 'migrationBridge';
+export type FeatureFlagKey = 'generatorSwap' | 'calendarSurface' | 'migrationBridge' | 'performanceInstrumentation' | 'loadingCacheV2';
 
 type GlobalFlagKey = 'globalKillSwitch';
 
@@ -12,6 +12,8 @@ const DEFAULT_FLAGS: FeatureFlagConfig = {
     generatorSwap: true,
     calendarSurface: false,
     migrationBridge: false,
+    performanceInstrumentation: false,
+    loadingCacheV2: false,
     globalKillSwitch: false,
 };
 
@@ -20,18 +22,24 @@ const ENV_DEFAULT_FLAGS: Record<AppEnv, Partial<FeatureFlagConfig>> = {
         generatorSwap: true,
         calendarSurface: true,
         migrationBridge: true,
+        performanceInstrumentation: true,
+        loadingCacheV2: true,
         globalKillSwitch: false,
     },
     staging: {
         generatorSwap: true,
         calendarSurface: true,
         migrationBridge: false,
+        performanceInstrumentation: true,
+        loadingCacheV2: false,
         globalKillSwitch: false,
     },
     production: {
         generatorSwap: true,
         calendarSurface: false,
         migrationBridge: false,
+        performanceInstrumentation: false,
+        loadingCacheV2: false,
         globalKillSwitch: false,
     },
 };
@@ -128,7 +136,7 @@ export const resetFeatureFlagOverrides = (): FeatureFlagConfig => {
 };
 
 function isFeatureFlagKey(key: string): key is FeatureFlagKey {
-    return ['generatorSwap', 'calendarSurface', 'migrationBridge'].includes(key);
+    return ['generatorSwap', 'calendarSurface', 'migrationBridge', 'performanceInstrumentation', 'loadingCacheV2'].includes(key);
 }
 
 function isGlobalFlagKey(key: string): key is GlobalFlagKey {

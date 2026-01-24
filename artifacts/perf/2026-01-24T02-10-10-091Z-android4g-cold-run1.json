@@ -1,0 +1,33 @@
+[
+  {
+    "type": "mark",
+    "name": "load:boot_start",
+    "startTime": 2292
+  },
+  {
+    "type": "mark",
+    "name": "load:shell_painted",
+    "startTime": 2393.0999999046326
+  },
+  {
+    "type": "timing",
+    "name": "load:boot_to_shell",
+    "value": 101.09999990463257
+  },
+  {
+    "type": "resource-summary",
+    "name": "resource-summary",
+    "value": {
+      "totalRequests": 353,
+      "totalTransfer": 411345,
+      "totalEncoded": 95022,
+      "totalDecoded": 95022,
+      "totalDuration": 69516.77500037476,
+      "byInitiator": {
+        "other": 3,
+        "parser": 19,
+        "script": 331
+      }
+    }
+  }
+]

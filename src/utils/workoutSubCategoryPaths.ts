@@ -1,72 +1,28 @@
 import type { WorkoutSubCategoryFile } from "../types/TrainingDataFiles";
-import { createJsonLoader } from "./jsonLoader";
 
-export const workoutSubCategoryPaths = {
-    aegis_fang_combat_system_ambidextrous_weapon_training: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/aegis_fang_combat_system/ambidextrous_weapon_training.json")),
-    aegis_fang_combat_system_blade_transitions: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/aegis_fang_combat_system/blade_transitions.json")),
-    aegis_fang_combat_system_buckler_defense_tactics: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/aegis_fang_combat_system/buckler_defense_tactics.json")),
-    aegis_fang_combat_system_combat_positioning: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/aegis_fang_combat_system/combat_positioning.json")),
-    aegis_fang_combat_system_dual_weapon_fundamentals: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/aegis_fang_combat_system/dual_weapon_fundamentals.json")),
-    aegis_fang_combat_system_flow_drills: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/aegis_fang_combat_system/flow_drills.json")),
-    aegis_fang_combat_system_offensive_defensive_synergy: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/aegis_fang_combat_system/offensive_defensive_synergy.json")),
-    aegis_fang_combat_system_pistol_and_grenade_incorporation: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/aegis_fang_combat_system/pistol_and_grenade_incorporation.json")),
-    aegis_fang_combat_system_reaction_training: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/aegis_fang_combat_system/reaction_training.json")),
-    aegis_fang_combat_system_tactical_application: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/aegis_fang_combat_system/tactical_application.json")),
-    agility_change_of_direction: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/agility/change_of_direction.json")),
-    agility_footwork: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/agility/footwork.json")),
-    agility_jo_staff_agility: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/agility/jo_staff_agility.json")),
-    agility_jumping: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/agility/jumping.json")),
-    agility_quickness: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/agility/quickness.json")),
-    agility_reaction: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/agility/reaction.json")),
-    agility_weapon_handling: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/agility/weapon_handling.json")),
-    balance_core_control: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/balance/core_control.json")),
-    balance_dynamic_balance: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/balance/dynamic_balance.json")),
-    balance_single_leg: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/balance/single_leg.json")),
-    balance_stability: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/balance/stability.json")),
-    cardio_breathing: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/cardio/breathing.json")),
-    cardio_endurance: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/cardio/endurance.json")),
-    cardio_speed: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/cardio/speed.json")),
-    combat_grappling: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/combat/grappling.json")),
-    combat_gun_draw: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/combat/gun_draw.json")),
-    combat_jo_staff_fighting: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/combat/jo_staff_fighting.json")),
-    combat_striking: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/combat/striking.json")),
-    coordination_balance: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/coordination/balance.json")),
-    coordination_foot_eye: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/coordination/foot_eye.json")),
-    coordination_hand_eye: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/coordination/hand_eye.json")),
-    coordination_jo_staff_spins: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/coordination/jo_staff_spins.json")),
-    coordination_reaction_time: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/coordination/reaction_time.json")),
-    endurance_cardiovascular: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/endurance/cardiovascular.json")),
-    endurance_mental: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/endurance/mental.json")),
-    endurance_muscular: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/endurance/muscular.json")),
-    jono_thora_agility_mobility_and_acrobatics: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/jono_thora/agility_mobility_and_acrobatics.json")),
-    jono_thora_combat_readiness_conditioning: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/jono_thora/combat_readiness_conditioning.json")),
-    jono_thora_raver_super_hero_dance_combat: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/jono_thora/raver_super_hero_dance_combat.json")),
-    jono_thora_recovery_flexibility_and_injury_prevention: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/jono_thora/recovery_flexibility_and_injury_prevention.json")),
-    jono_thora_strength_and_endurance: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/jono_thora/strength_and_endurance.json")),
-    jono_thora_tactical_conditioning_and_situation_awareness: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/jono_thora/tactical_conditioning_and_situation_awareness.json")),
-    jono_thora_warrior_core_and_mental_resilience: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/jono_thora/warrior_core_and_mental_resilience.json")),
-    mental_breathing: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/mental/breathing.json")),
-    mental_focus: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/mental/focus.json")),
-    mental_meditation: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/mental/meditation.json")),
-    mental_mindset: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/mental/mindset.json")),
-    mental_visualization: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/mental/visualization.json")),
-    mobility_dynamic_stretching: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/mobility/dynamic_stretching.json")),
-    mobility_foam_rolling: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/mobility/foam_rolling.json")),
-    mobility_joint_mobility: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/mobility/joint_mobility.json")),
-    mobility_static_stretching: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/mobility/static_stretching.json")),
-    strength_bodybuilding: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/strength/bodybuilding.json")),
-    strength_core: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/strength/core.json")),
-    strength_flexibility: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/strength/flexibility.json")),
-    strength_grip: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/strength/grip.json")),
-    strength_lower_body: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/strength/lower_body.json")),
-    strength_powerlifting: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/strength/powerlifting.json")),
-    strength_upper_body: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/strength/upper_body.json")),
-    superhero_agility_and_reflex: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/superhero/agility_and_reflex.json")),
-    superhero_combat_and_survival: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/superhero/combat_and_survival.json")),
-    superhero_endurance_and_survival: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/superhero/endurance_and_survival.json")),
-    superhero_psionic_and_sensory: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/superhero/psionic_and_sensory.json")),
-    superhero_strength_and_power: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/superhero/strength_and_power.json")),
-    superhero_super_and_hyper: createJsonLoader<WorkoutSubCategoryFile>(() => import("../data/training_coach_data/workouts/subcategories/superhero/super_and_hyper.json"))
-} satisfies Record<string, () => Promise<WorkoutSubCategoryFile>>;
+const rawWorkoutSubCategories = import.meta.glob("../data/training_coach_data/workouts/subcategories/**/*.json", { eager: true });
 
-export const totalWorkoutSubCategories = 65;
+const normalize = (value: unknown): WorkoutSubCategoryFile => {
+    const maybeModule = value as { default?: unknown };
+    if (maybeModule && typeof maybeModule === "object" && "default" in maybeModule) {
+        return maybeModule.default as WorkoutSubCategoryFile;
+    }
+    return value as WorkoutSubCategoryFile;
+};
+
+const workoutSubCategoryData = Object.fromEntries(
+    Object.entries(rawWorkoutSubCategories).map(([fullPath, mod]) => {
+        const match = fullPath.match(/subcategories\/([^/]+)\/([^/]+)\.json$/);
+        const id = match ? match[1] + "_" + match[2] : undefined;
+        if (!id) {
+            throw new Error("Failed to derive workout subcategory id from " + fullPath);
+        }
+        return [id, normalize(mod)];
+    })
+) as Record<string, WorkoutSubCategoryFile>;
+
+export const workoutSubCategoryPaths = Object.fromEntries(
+    Object.entries(workoutSubCategoryData).map(([id, value]) => [id, async () => value])
+) satisfies Record<string, () => Promise<WorkoutSubCategoryFile>>;
+
+export const totalWorkoutSubCategories = Object.keys(workoutSubCategoryData).length;

@@ -2,6 +2,10 @@ import CoachDataLoader from '../utils/CoachDataLoader';
 import { WorkoutRank } from "../types/WorkoutRank";
 import { WorkoutDifficultyLevel } from "../types/WorkoutDifficultyLevel";
 import { CoachData } from "../types/CoachData";
+import { isFeatureEnabled } from '../config/featureFlags';
+import { withCache, APP_VERSION } from '../utils/cache/indexedDbCache';
+import { TTL_MS } from '../utils/cache/constants';
+import type { CoachDataBundle } from '../utils/CoachDataLoader';
 
 class TrainingCoachCache {
     private static instance: TrainingCoachCache;
@@ -23,31 +27,42 @@ class TrainingCoachCache {
     }
 
     public async loadData(): Promise<void> {
-        await Promise.all([
-            this.loadRanks(),
-            this.loadDifficultyLevels(),
-            this.loadCoachData()
-        ]);
+        if (isFeatureEnabled('loadingCacheV2')) {
+            const appVersion = ((import.meta as any).env?.VITE_APP_VERSION as string | undefined) ?? APP_VERSION;
+            const bundleResult = await withCache<CoachDataBundle>(
+                'coachCatalog',
+                'all',
+                TTL_MS.coachCatalog,
+                `coachCatalog-${appVersion}`,
+                async () => this.dataLoader.loadAllData(),
+                { logger: (msg, meta) => console.info(`coachCache: ${msg}`, meta) }
+            );
+            this.applyBundle(bundleResult.data);
+            return;
+        }
+
+        const bundle = await this.dataLoader.loadAllData();
+        this.applyBundle(bundle);
     }
 
     public async loadRanks(): Promise<void> {
         if (this.ranks.length === 0) {
-            await this.dataLoader.loadRanks();
-            this.ranks = this.dataLoader.getRanks();
+            const ranks = await this.dataLoader.loadRanks();
+            this.ranks = ranks.length ? ranks : this.dataLoader.getRanks();
         }
     }
 
     public async loadDifficultyLevels(): Promise<void> {
         if (this.difficultyLevels.length === 0) {
-            await this.dataLoader.loadDifficultyLevels();
-            this.difficultyLevels = this.dataLoader.getDifficultyLevels();
+            const difficultyLevels = await this.dataLoader.loadDifficultyLevels();
+            this.difficultyLevels = difficultyLevels.length ? difficultyLevels : this.dataLoader.getDifficultyLevels();
         }
     }
 
     public async loadCoachData(): Promise<void> {
         if (Object.keys(this.coachData).length === 0) {
-            await this.dataLoader.loadCoachSpeech();
-            this.coachData = this.dataLoader.getCoachData();
+            const data = await this.dataLoader.loadCoachSpeech();
+            this.coachData = Object.keys(data).length ? data : this.dataLoader.getCoachData();
         }
     }
 
@@ -77,6 +92,12 @@ class TrainingCoachCache {
 
     public getDifficultyLevels(): WorkoutDifficultyLevel[] {
         return this.difficultyLevels;
+    }
+
+    private applyBundle(bundle: CoachDataBundle): void {
+        this.coachData = bundle.coachData ?? this.coachData;
+        this.ranks = bundle.ranks ?? this.ranks;
+        this.difficultyLevels = bundle.difficultyLevels ?? this.difficultyLevels;
     }
 }
 

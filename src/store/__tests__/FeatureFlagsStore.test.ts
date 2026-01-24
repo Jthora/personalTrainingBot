@@ -7,6 +7,8 @@ const mockConfigFlags = {
     generatorSwap: true,
     calendarSurface: false,
     migrationBridge: false,
+    performanceInstrumentation: true,
+    loadingCacheV2: false,
     globalKillSwitch: false,
 };
 

@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import AppRoutes from './routes/Routes';
 import InitialDataLoader from './utils/InitialDataLoader';
@@ -9,8 +9,6 @@ import { warmCaches } from './utils/cacheWarmHints';
 import RecapModal from './components/RecapModal/RecapModal';
 import RecapToast from './components/RecapToast/RecapToast';
 import { mark, measure } from './utils/perf';
-import PartialFailureNotice from './components/PartialFailureNotice/PartialFailureNotice';
-import SchedulerOverlay from './components/SchedulerOverlay/SchedulerOverlay';
 import { schedulePostPaintTasks } from './utils/phaseTasks';
 import CacheIndicator from './components/CacheIndicator/CacheIndicator';
 import { registerScheduleRefreshInterval, registerScheduleRefreshOnFocus } from './utils/ScheduleLoader';
@@ -21,15 +19,11 @@ const App: React.FC = () => {
   const [isDataLoaded, setIsDataLoaded] = useState(false);
   const [loadingProgress, setLoadingProgress] = useState(0); // Add loading progress state
   const [initializationPromise, setInitializationPromise] = useState<Promise<void> | null>(null);
-  const [partialFailures, setPartialFailures] = useState<string[]>([]);
+  // Partial failures are logged to the console only; no UI surfacing.
   const shellMarkedRef = useRef(false);
   const criticalMarkedRef = useRef(false);
   const enrichmentMarkedRef = useRef(false);
   const idleMarkedRef = useRef(false);
-
-  const recordPartialFailure = useCallback((message: string) => {
-    setPartialFailures((prev) => (prev.includes(message) ? prev : [...prev, message]));
-  }, []);
 
   useEffect(() => {
     if (!initializationPromise) {
@@ -37,7 +31,7 @@ const App: React.FC = () => {
         console.log('App: Initializing data...');
         await InitialDataLoader.initialize(
           (progress) => setLoadingProgress(progress),
-          recordPartialFailure
+          (message) => console.warn(message)
         ); // Pass progress + partial failure callbacks
         setIsDataLoaded(true);
       };
@@ -111,20 +105,18 @@ const App: React.FC = () => {
   }, [isDataLoaded]);
 
   if (!isDataLoaded) {
-    return <LoadingMessage progress={loadingProgress} warnings={partialFailures} />; // Use the new component with progress
+    return <LoadingMessage progress={loadingProgress} />; // Use the new component with progress
   }
 
   return (
     <WorkoutScheduleProvider>
       <CoachSelectionProvider>
         <Router>
-          <PartialFailureNotice messages={partialFailures} onDismiss={() => setPartialFailures([])} />
           <CacheIndicator />
           <ScheduleNavigationRefresh />
           <AppRoutes />
           <RecapToast />
           <RecapModal />
-          <SchedulerOverlay />
         </Router>
       </CoachSelectionProvider>
     </WorkoutScheduleProvider>

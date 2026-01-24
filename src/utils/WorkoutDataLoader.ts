@@ -1,6 +1,9 @@
 import { WorkoutCategory, WorkoutSubCategory, WorkoutGroup, Workout } from "../types/WorkoutCategory";
 import { workoutCategoryPaths } from "./workoutCategoryPaths";
 import { workoutSubCategoryPaths } from "./workoutSubCategoryPaths";
+import { isFeatureEnabled } from "../config/featureFlags";
+import { withCache } from "./cache/indexedDbCache";
+import { TTL_MS, APP_VERSION } from "./cache/constants";
 
 type DifficultyRangeJSON = [number, number];
 
@@ -100,10 +103,10 @@ const isWorkoutCategoryJSON = (value: unknown): value is WorkoutCategoryJSON => 
 };
 
 class WorkoutDataLoader {
-    async loadAllData(onProgress: () => void): Promise<WorkoutCategory[]> {
+    async loadAllData(onProgress: () => void, onPartialFailure?: (message: string) => void): Promise<WorkoutCategory[]> {
         try {
             console.log("WorkoutDataLoader: Starting to load all workout data...");
-            const workoutCategories = await this.loadWorkoutCategories(onProgress);
+            const workoutCategories = await this.loadWorkoutCategories(onProgress, onPartialFailure);
             console.log(`WorkoutDataLoader: Fetched ${workoutCategories.length} workout categories.`);
             return workoutCategories;
         } catch (error) {
@@ -112,18 +115,17 @@ class WorkoutDataLoader {
         }
     }
 
-    async loadWorkoutCategories(onProgress: () => void): Promise<WorkoutCategory[]> {
+    async loadWorkoutCategories(onProgress: () => void, onPartialFailure?: (message: string) => void): Promise<WorkoutCategory[]> {
+        const loadCategories = async () => {
         const workoutCategories: WorkoutCategory[] = [];
         let totalSubCategories = 0;
         let totalWorkoutGroups = 0;
         let totalWorkouts = 0;
         console.log(`WorkoutDataLoader: Total categories to load: ${Object.keys(workoutCategoryPaths).length}`);
-        const categoryEntries = Object.entries(workoutCategoryPaths) as Array<[
-            keyof typeof workoutCategoryPaths,
-            (typeof workoutCategoryPaths)[keyof typeof workoutCategoryPaths]
-        ]>;
+        const categoryEntries = Object.entries(workoutCategoryPaths);
 
-        for (const [categoryId, categoryLoader] of categoryEntries) {
+        for (const [categoryKey, categoryLoader] of categoryEntries) {
+            const categoryId = String(categoryKey);
             try {
                 const categoryModule = await categoryLoader();
                 const categoryCandidate = resolveJsonModule(categoryModule);
@@ -173,6 +175,7 @@ class WorkoutDataLoader {
                             return workoutSubCategory;
                         } catch (error) {
                             console.error(`WorkoutDataLoader: Failed to load subcategory ${subCategoryId}:`, error);
+                            onPartialFailure?.(`Workout subcategory ${subCategoryId} failed to load; showing fallback.`);
                             return this.createFallbackSubCategory(subCategoryId);
                         }
                     })
@@ -182,6 +185,7 @@ class WorkoutDataLoader {
                 console.log(`WorkoutDataLoader: Loaded category ${categoryData.name} with ${subCategories.length} subcategories.`);
             } catch (error) {
                 console.error(`WorkoutDataLoader: Failed to load workout category ${categoryId}:`, error);
+                onPartialFailure?.(`Workout category ${categoryId} failed to load; showing fallback.`);
                 workoutCategories.push(this.createFallbackCategory(categoryId));
             }
         }
@@ -190,6 +194,22 @@ class WorkoutDataLoader {
         console.log(`WorkoutDataLoader: Total workout groups: ${totalWorkoutGroups}.`);
         console.log(`WorkoutDataLoader: Total workouts: ${totalWorkouts}.`);
         return workoutCategories;
+        };
+
+        if (isFeatureEnabled('loadingCacheV2')) {
+            const appVersion = ((import.meta as any).env?.VITE_APP_VERSION as string | undefined) ?? APP_VERSION;
+            const cached = await withCache<WorkoutCategory[]>(
+                'workoutCategories',
+                'all',
+                TTL_MS.workoutCategories,
+                `workoutCategories-${appVersion}`,
+                loadCategories,
+                { logger: (msg, meta) => console.info(`workoutCategoriesCache: ${msg}`, meta) }
+            );
+            return cached.data;
+        }
+
+        return loadCategories();
     }
 
     private createFallbackCategory(categoryId: string): WorkoutCategory {

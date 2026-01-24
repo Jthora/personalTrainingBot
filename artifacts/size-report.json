@@ -1,0 +1,158 @@
+{
+  "generatedAt": "2026-01-24T05:55:23.997Z",
+  "distDir": "/home/jono/workspace/github/personalTrainingBot/dist",
+  "top": [
+    {
+      "file": "assets/training_modules_combined-D50bsszE.json",
+      "size": 2705327,
+      "gzip": 586105,
+      "ext": "json"
+    },
+    {
+      "file": "assets/StarcomCommander_01-BDIkUNA3.png",
+      "size": 1457307,
+      "gzip": 1457626,
+      "ext": "png"
+    },
+    {
+      "file": "assets/skip-rD65AU5b.wav",
+      "size": 705644,
+      "gzip": 579884,
+      "ext": "wav"
+    },
+    {
+      "file": "assets/workouts-BD2pCIgO.js",
+      "size": 446292,
+      "gzip": 90245,
+      "ext": "js"
+    },
+    {
+      "file": "assets/tara_van_dekar-icon-BVTbs1XF.png",
+      "size": 374654,
+      "gzip": 374755,
+      "ext": "png"
+    },
+    {
+      "file": "assets/tiger_fitness_god-icon-Dyqy8vof.png",
+      "size": 357287,
+      "gzip": 357415,
+      "ext": "png"
+    },
+    {
+      "file": "assets/timeout-BMk_9bRO.wav",
+      "size": 306690,
+      "gzip": 262772,
+      "ext": "wav"
+    },
+    {
+      "file": "assets/WingCommanderLogo-288x162-Dr7UFZxN.gif",
+      "size": 305498,
+      "gzip": 252286,
+      "ext": "gif"
+    },
+    {
+      "file": "assets/agent_simon-icon-DmzTpUHe.png",
+      "size": 301434,
+      "gzip": 301547,
+      "ext": "png"
+    },
+    {
+      "file": "assets/jono_thora-icon-KYnITYU5.png",
+      "size": 292703,
+      "gzip": 292811,
+      "ext": "png"
+    },
+    {
+      "file": "assets/vendor-BD9_hsaz.js",
+      "size": 291073,
+      "gzip": 87737,
+      "ext": "js"
+    },
+    {
+      "file": "assets/react-vendor-B_E8VtXA.js",
+      "size": 217739,
+      "gzip": 69984,
+      "ext": "js"
+    },
+    {
+      "file": "assets/index-D2J8sKXi.js",
+      "size": 196051,
+      "gzip": 36863,
+      "ext": "js"
+    },
+    {
+      "file": "assets/coaches-C_gpzubW.js",
+      "size": 81922,
+      "gzip": 23438,
+      "ext": "js"
+    },
+    {
+      "file": "assets/KaTeX_AMS-Regular-DRggAlZN.ttf",
+      "size": 63632,
+      "gzip": 34709,
+      "ext": "ttf"
+    }
+  ],
+  "totals": {
+    "ttf": {
+      "size": 566988,
+      "gzip": 335632,
+      "count": 21
+    },
+    "woff2": {
+      "size": 256168,
+      "gzip": 256635,
+      "count": 19
+    },
+    "woff": {
+      "size": 303116,
+      "gzip": 302788,
+      "count": 20
+    },
+    "png": {
+      "size": 2789611,
+      "gzip": 2787748,
+      "count": 6
+    },
+    "gif": {
+      "size": 305498,
+      "gzip": 252286,
+      "count": 1
+    },
+    "js": {
+      "size": 1343871,
+      "gzip": 344883,
+      "count": 25
+    },
+    "css": {
+      "size": 121880,
+      "gzip": 28132,
+      "count": 6
+    },
+    "mp3": {
+      "size": 60320,
+      "gzip": 59679,
+      "count": 1
+    },
+    "wav": {
+      "size": 1012334,
+      "gzip": 842656,
+      "count": 2
+    },
+    "json": {
+      "size": 2705327,
+      "gzip": 586105,
+      "count": 1
+    },
+    "ico": {
+      "size": 5694,
+      "gzip": 1391,
+      "count": 1
+    },
+    "html": {
+      "size": 2932,
+      "gzip": 758,
+      "count": 1
+    }
+  }
+}

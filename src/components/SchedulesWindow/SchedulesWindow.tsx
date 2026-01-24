@@ -5,8 +5,11 @@ import CustomScheduleCreatorView from '../CustomScheduleCreatorView/CustomSchedu
 import styles from './SchedulesWindow.module.css';
 
 const SchedulesWindow: React.FC = () => {
-    const { createNewSchedule, error } = useWorkoutSchedule();
+    const { createNewSchedule, error, scheduleStatus, loadSchedule, isLoading } = useWorkoutSchedule();
     const navigate = useNavigate();
+
+    const showStale = scheduleStatus.stale || scheduleStatus.source === 'fallback';
+    const statusMessage = scheduleStatus.message;
 
     const createNewWorkoutSchedule = async () => {
         console.log('Creating a new workout schedule...');
@@ -24,7 +27,21 @@ const SchedulesWindow: React.FC = () => {
                 </button>
                 <button onClick={createNewWorkoutSchedule} className={styles.createNewScheduleButton}>Generate Random Workout Schedule</button>
             </div>
-            {error && <div className={styles.errorBanner}>{error}</div>}
+            <div className={styles.statusRow}>
+                {showStale && <span className={styles.statusPill}>Stale</span>}
+                {scheduleStatus.status === 'optimistic' && (
+                    <span className={styles.statusSubtle} role="status">{statusMessage ?? 'Saving changes…'}</span>
+                )}
+            </div>
+
+            {(error || scheduleStatus.status === 'error') && (
+                <div className={styles.errorBanner} role="status">
+                    <div>{error ?? statusMessage ?? 'Unable to refresh schedule.'}</div>
+                    <button onClick={loadSchedule} disabled={isLoading} className={styles.retryButton}>
+                        Retry
+                    </button>
+                </div>
+            )}
             <CustomScheduleCreatorView />
         </div>
     );

@@ -5,6 +5,7 @@ import { createWorkoutSchedule } from '../utils/WorkoutScheduleCreator';
 import DifficultySettingsStore from './DifficultySettingsStore';
 import { logAlignmentForSchedule } from '../utils/alignmentCheck';
 import { recordMetric } from '../utils/metrics';
+import { emitCacheMetric } from '../utils/cacheMetrics';
 
 const STORAGE_VERSION = 'v2';
 const STORAGE_PREFIX = `workout:${STORAGE_VERSION}:`;
@@ -125,6 +126,7 @@ const WorkoutScheduleStore = {
         try {
             STORAGE_KEYS.forEach(key => localStorage.removeItem(key));
             recordMetric('store_reset_drift', { reason });
+            emitCacheMetric({ dataset: 'workout_schedule', status: 'clear', source: 'localStorage', reason });
         } catch (error) {
             console.error('WorkoutScheduleStore: failed to reset persisted state', error);
         }
@@ -133,6 +135,7 @@ const WorkoutScheduleStore = {
         try {
             const schedule = localStorage.getItem(WORKOUT_SCHEDULE_KEY);
             if (schedule) {
+                emitCacheMetric({ dataset: 'workout_schedule', status: 'hit', source: 'localStorage' });
                 console.log('WorkoutScheduleStore: getSchedule: Retrieved workout schedule from localStorage.');
                 const workoutSchedule = parseScheduleFromStorage(schedule);
                 if (workoutSchedule && workoutSchedule.scheduleItems.length > 0) {
@@ -140,9 +143,11 @@ const WorkoutScheduleStore = {
                 }
 
                 console.warn('WorkoutScheduleStore: Stored schedule invalid or empty. Creating a new schedule.');
+                emitCacheMetric({ dataset: 'workout_schedule', status: 'invalid', source: 'localStorage', reason: 'invalid_schedule' });
                 this.resetAll('invalid_schedule');
             } else {
                 console.warn('getSchedule: No workout schedule found in localStorage. Creating a new schedule.');
+                emitCacheMetric({ dataset: 'workout_schedule', status: 'miss', source: 'localStorage' });
             }
 
             const defaultSchedule = await this.createNewSchedule();
@@ -160,13 +165,16 @@ const WorkoutScheduleStore = {
             const schedule = localStorage.getItem(WORKOUT_SCHEDULE_KEY);
             if (!schedule) {
                 console.warn('getScheduleSync: No workout schedule found in localStorage.');
+                emitCacheMetric({ dataset: 'workout_schedule', status: 'miss', source: 'localStorage' });
                 return null;
             }
 
             console.log('WorkoutScheduleStore: getScheduleSync: Retrieved workout schedule from localStorage.');
+            emitCacheMetric({ dataset: 'workout_schedule', status: 'hit', source: 'localStorage' });
             const workoutSchedule = parseScheduleFromStorage(schedule);
             if (!workoutSchedule || workoutSchedule.scheduleItems.length === 0) {
                 console.warn('WorkoutScheduleStore: Stored schedule invalid or empty.');
+                emitCacheMetric({ dataset: 'workout_schedule', status: 'invalid', source: 'localStorage', reason: 'invalid_schedule_sync' });
                 this.resetAll('invalid_schedule_sync');
                 const newSchedule = this.createNewScheduleSync();
                 this.saveSchedule(newSchedule);
@@ -183,6 +191,7 @@ const WorkoutScheduleStore = {
         try {
             localStorage.setItem(WORKOUT_SCHEDULE_KEY, JSON.stringify(schedule.toJSON()));
             console.log('Saved workout schedule to localStorage.');
+            emitCacheMetric({ dataset: 'workout_schedule', status: 'write', source: 'localStorage' });
         } catch (error) {
             console.error('Failed to save workout schedule:', error);
         }

@@ -6,12 +6,15 @@ import WorkoutCategoryCache from '../cache/WorkoutCategoryCache'; // Import Work
 import TrainingModuleCache from '../cache/TrainingModuleCache';
 import TrainingCoachCache from '../cache/TrainingCoachCache';
 import WorkoutScheduleStore from '../store/WorkoutScheduleStore'; // Import WorkoutScheduleStore
-import { createWorkoutSchedule } from '../utils/WorkoutScheduleCreator'; // Import createWorkoutSchedule
+import { loadScheduleStub } from './ScheduleLoader';
 
 class InitialDataLoader {
     private static initializationPromise: Promise<void> | null = null;
 
-    static async initialize(onProgress: (progress: number) => void) {
+    static async initialize(
+        onProgress: (progress: number) => void,
+        onPartialFailure?: (message: string) => void
+    ) {
         if (this.initializationPromise) {
             console.warn("InitialDataLoader: Initialization already in progress.");
             return this.initializationPromise;
@@ -27,15 +30,32 @@ class InitialDataLoader {
                 const updateProgress = (totalSteps: number) => {
                     currentStep += 1;
                     onProgress((currentStep / totalSteps) * 100);
-                    //console.log(`Progress: (${currentStep}/${totalSteps})`);
                 };
 
                 const totalSteps = totalCardDecks + Object.keys(totalWorkoutSubCategories).length;
                 console.log(`InitialDataLoader: Total CardDecks and WorkoutSubCategories: ${totalSteps}`);
-                await this.loadCoachData();
-                await this.loadTrainingModules(cardDataLoader, updateProgress, totalSteps);
-                await this.loadWorkoutCategories(workoutDataLoader, updateProgress, totalSteps);
-                await this.loadWorkoutSchedule(); // Load workout schedule
+
+                const coachPromise = this.loadCoachData();
+                const trainingPromise = this.loadTrainingModules(cardDataLoader, updateProgress, totalSteps, onPartialFailure);
+                const workoutCategoriesPromise = this.loadWorkoutCategories(workoutDataLoader, updateProgress, totalSteps, onPartialFailure);
+                const schedulePromise = workoutCategoriesPromise.then(() => this.loadWorkoutSchedule());
+
+                const taskEntries = [
+                    ["coach", coachPromise],
+                    ["training", trainingPromise],
+                    ["workoutCategories", workoutCategoriesPromise],
+                    ["schedule", schedulePromise],
+                ] as const;
+
+                const results = await Promise.allSettled(taskEntries.map(async ([_, promise]) => promise));
+
+                results.forEach((result, index) => {
+                    const [label] = taskEntries[index];
+                    if (result.status === "rejected") {
+                        console.error(`InitialDataLoader: ${label} task failed`, result.reason);
+                        onPartialFailure?.(`${label} task failed; see console for details.`);
+                    }
+                });
 
                 console.log("InitialDataLoader: Successfully loaded and cached all data.");
             } catch (error) {
@@ -55,25 +75,35 @@ class InitialDataLoader {
         await TrainingCoachCache.getInstance().loadData();
     }
 
-    private static async loadTrainingModules(dataLoader: CardDataLoader, updateProgress: (totalSteps: number) => void, totalSteps: number) {
+    private static async loadTrainingModules(
+        dataLoader: CardDataLoader,
+        updateProgress: (totalSteps: number) => void,
+        totalSteps: number,
+        onPartialFailure?: (message: string) => void
+    ) {
         console.log("InitialDataLoader: Loading training modules...");
-        const trainingModules = await dataLoader.loadAllData(() => updateProgress(totalSteps));
+        const trainingModules = await dataLoader.loadAllData(() => updateProgress(totalSteps), onPartialFailure);
         console.log(`InitialDataLoader: Loaded ${trainingModules.length} training modules.`);
         await TrainingModuleCache.getInstance().loadData(trainingModules); // Load data into cache
     }
 
-    private static async loadWorkoutCategories(dataLoader: WorkoutDataLoader, updateProgress: (totalSteps: number) => void, totalSteps: number) {
+    private static async loadWorkoutCategories(
+        dataLoader: WorkoutDataLoader,
+        updateProgress: (totalSteps: number) => void,
+        totalSteps: number,
+        onPartialFailure?: (message: string) => void
+    ) {
         console.log("InitialDataLoader: Loading workout categories...");
-        const workoutCategories = await dataLoader.loadAllData(() => updateProgress(totalSteps));
+        const workoutCategories = await dataLoader.loadAllData(() => updateProgress(totalSteps), onPartialFailure);
         console.log(`InitialDataLoader: Loaded ${workoutCategories.length} workout categories.`);
         await WorkoutCategoryCache.getInstance().loadData(workoutCategories); // Load data into cache
     }
 
     private static async loadWorkoutSchedule() {
         console.log("InitialDataLoader: Loading workout schedule...");
-        const schedule = await createWorkoutSchedule();
+        const { schedule, source, stale } = await loadScheduleStub();
         WorkoutScheduleStore.saveSchedule(schedule);
-        console.log("InitialDataLoader: Loaded and saved workout schedule.");
+        console.log(`InitialDataLoader: Loaded and saved workout schedule from ${source}${stale ? ' (stale)' : ''}.`);
     }
 }
 

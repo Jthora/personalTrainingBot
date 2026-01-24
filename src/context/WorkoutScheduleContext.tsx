@@ -11,6 +11,8 @@ import UserProgressStore from '../store/UserProgressStore';
 import { RecapSummary } from '../types/RecapSummary';
 import { summarizeSchedule } from '../utils/scheduleSummary';
 import { buildRecapShareText } from '../utils/recapShareText';
+import { mark } from '../utils/perf';
+import { loadScheduleStub } from '../utils/ScheduleLoader';
 
 interface WorkoutScheduleContextProps {
     schedule: WorkoutSchedule;
@@ -29,6 +31,7 @@ interface WorkoutScheduleContextProps {
     isLoading: boolean;
     error: string | null;
     scheduleVersion: number;
+    scheduleStatus: ScheduleStatus;
 }
 
 const WorkoutScheduleContext = createContext<WorkoutScheduleContextProps | undefined>(undefined);
@@ -36,6 +39,14 @@ const WorkoutScheduleContext = createContext<WorkoutScheduleContextProps | undef
 interface WorkoutScheduleProviderProps {
     children: React.ReactNode;
 }
+
+type ScheduleStatus = {
+    source: 'cache' | 'network' | 'stale-cache' | 'fallback' | 'store';
+    stale: boolean;
+    status: 'idle' | 'loading' | 'ready' | 'stale' | 'error' | 'optimistic';
+    lastUpdated?: number;
+    message?: string;
+};
 
 export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = ({ children }) => {
     const [schedule, setSchedule] = useState<WorkoutSchedule>(() => {
@@ -49,6 +60,9 @@ export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = (
     const [recapOpen, setRecapOpen] = useState(false);
     const [recapToastVisible, setRecapToastVisible] = useState(false);
     const [promptShown, setPromptShown] = useState(false);
+    const scheduleReadyMarkedRef = useRef(false);
+    const scheduleRef = useRef<WorkoutSchedule | null>(schedule);
+    const [scheduleStatus, setScheduleStatus] = useState<ScheduleStatus>({ source: 'network', stale: false, status: 'loading' });
 
     const incrementScheduleVersion = useCallback(() => {
         setScheduleVersion(prevVersion => prevVersion + 1);
@@ -66,43 +80,85 @@ export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = (
         return null;
     };
 
+    useEffect(() => {
+        scheduleRef.current = schedule;
+    }, [schedule]);
+
     const loadSchedule = useCallback(async () => {
         setIsLoading(true);
         setError(null);
         const start = nowMs();
         console.log('WorkoutScheduleProvider: Loading schedule...');
+        setScheduleStatus(prev => ({ ...prev, status: 'loading', stale: false, message: undefined }));
+
         try {
-            let source: 'store' | 'generated' = 'store';
-            let newSchedule = await WorkoutScheduleStore.getSchedule();
-            if (!newSchedule || newSchedule.scheduleItems.length === 0) {
-                console.warn('WorkoutScheduleProvider: No workouts in the schedule. Creating a new schedule.');
-                source = 'generated';
-                newSchedule = await createWorkoutSchedule();
-                if (!invalidReason(newSchedule)) {
-                    WorkoutScheduleStore.saveSchedule(newSchedule);
+            let source: ScheduleStatus['source'] = 'cache';
+            let stale = false;
+            let loaded: WorkoutSchedule | null = null;
+
+            // First try stored schedule (respects test mocks and avoids unnecessary network)
+            try {
+                loaded = await WorkoutScheduleStore.getSchedule();
+                if (loaded) {
+                    source = 'store';
                 }
+            } catch (storeErr) {
+                console.warn('WorkoutScheduleProvider: store load failed, aborting load', storeErr);
+                throw storeErr;
             }
-            setSchedule(newSchedule);
-            const reason = invalidReason(newSchedule);
+
+            if (!loaded) {
+                const result = await loadScheduleStub();
+                loaded = result.schedule;
+                source = result.source;
+                stale = Boolean(result.stale);
+            }
+
+            const reason = invalidReason(loaded);
+            setSchedule(loaded ?? new WorkoutSchedule('', [], new DifficultySetting(0, [0, 0])));
+
             if (reason) {
                 setError('No workouts available or difficulty is zero. Adjust selections or regenerate.');
                 recordMetric('schedule_empty_generated', { reason, source, durationMs: nowMs() - start });
-            } else {
+            } else if (loaded) {
                 recordMetric('schedule_load_success', {
                     source,
                     durationMs: nowMs() - start,
-                    items: newSchedule?.scheduleItems.length ?? 0,
-                    difficultyLevel: newSchedule?.difficultySettings.level,
+                    items: loaded.scheduleItems.length,
+                    difficultyLevel: loaded.difficultySettings.level,
                 });
             }
+
+            setScheduleStatus({
+                source,
+                stale,
+                status: stale ? 'stale' : 'ready',
+                lastUpdated: Date.now(),
+                message: stale ? 'Showing cached schedule while refreshing…' : undefined,
+            });
             incrementScheduleVersion();
         } catch (error) {
             console.error('WorkoutScheduleProvider: Failed to load schedule:', error);
+            const fallback = WorkoutScheduleStore.getScheduleSync();
+            if (fallback) {
+                setSchedule(fallback);
+            }
             setError('Failed to load schedule');
             recordMetric('schedule_load_failure', { message: error instanceof Error ? error.message : 'unknown' });
+            setScheduleStatus({
+                source: fallback ? 'fallback' : 'network',
+                stale: true,
+                status: 'error',
+                lastUpdated: Date.now(),
+                message: 'Unable to refresh. Retry to sync latest schedule.',
+            });
         } finally {
             setIsLoading(false);
             console.log('WorkoutScheduleProvider: Finished loading schedule.');
+            if (!scheduleReadyMarkedRef.current) {
+                mark('load:schedule_ready');
+                scheduleReadyMarkedRef.current = true;
+            }
         }
     }, [incrementScheduleVersion]);
 
@@ -111,28 +167,50 @@ export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = (
         setError(null);
         const start = nowMs();
         console.log('WorkoutScheduleProvider: Creating new schedule...');
+        const previous = scheduleRef.current;
         try {
             const newSchedule = await createWorkoutSchedule();
             const reason = invalidReason(newSchedule);
+            setSchedule(newSchedule);
+            scheduleRef.current = newSchedule;
             if (!reason) {
-                WorkoutScheduleStore.saveSchedule(newSchedule);
-                ProgressEventRecorder.recordScheduleSet(newSchedule);
-                recordMetric('schedule_generation_success', {
-                    items: newSchedule.scheduleItems.length,
-                    durationMs: nowMs() - start,
-                    difficultyLevel: newSchedule.difficultySettings.level,
-                });
+                try {
+                    WorkoutScheduleStore.saveSchedule(newSchedule);
+                    ProgressEventRecorder.recordScheduleSet(newSchedule);
+                    recordMetric('schedule_generation_success', {
+                        items: newSchedule.scheduleItems.length,
+                        durationMs: nowMs() - start,
+                        difficultyLevel: newSchedule.difficultySettings.level,
+                    });
+                    setScheduleStatus({ source: 'network', stale: false, status: 'ready', lastUpdated: Date.now(), message: 'Schedule ready' });
+                } catch (persistError) {
+                    console.warn('WorkoutScheduleProvider: failed to persist new schedule, reverting', persistError);
+                    if (previous) {
+                        setSchedule(previous);
+                        scheduleRef.current = previous;
+                        WorkoutScheduleStore.saveSchedule(previous);
+                    }
+                    setError('Failed to save new schedule; reverted to previous.');
+                    setScheduleStatus({ source: 'fallback', stale: true, status: 'error', lastUpdated: Date.now(), message: 'Reverted after failed save' });
+                    return;
+                }
             } else {
                 setError('No workouts available or difficulty is zero. Adjust selections or regenerate.');
                 recordMetric('schedule_generation_failure', { reason, durationMs: nowMs() - start });
                 recordMetric('schedule_empty_generated', { reason, source: 'generated' });
+                setScheduleStatus({ source: 'cache', stale: true, status: 'stale', lastUpdated: Date.now(), message: 'Schedule may be incomplete' });
             }
-            setSchedule(newSchedule);
             incrementScheduleVersion();
         } catch (error) {
             console.error('WorkoutScheduleProvider: Failed to create new schedule:', error);
             setError('Failed to create new schedule');
             recordMetric('schedule_generation_failure', { message: error instanceof Error ? error.message : 'unknown' });
+            if (previous) {
+                setSchedule(previous);
+                scheduleRef.current = previous;
+                WorkoutScheduleStore.saveSchedule(previous);
+            }
+            setScheduleStatus({ source: 'fallback', stale: true, status: 'error', lastUpdated: Date.now(), message: 'Reverted after failed sync' });
         } finally {
             setIsLoading(false);
             console.log('WorkoutScheduleProvider: Finished creating new schedule.');
@@ -144,6 +222,7 @@ export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = (
         WorkoutScheduleStore.saveSchedule(newSchedule);
         ProgressEventRecorder.recordScheduleSet(newSchedule);
         incrementScheduleVersion();
+        setScheduleStatus({ source: 'cache', stale: false, status: 'ready', lastUpdated: Date.now(), message: 'Set manually' });
     }, [incrementScheduleVersion]);
 
     const completeCurrentWorkout = useCallback(() => {
@@ -346,6 +425,7 @@ export const WorkoutScheduleProvider: React.FC<WorkoutScheduleProviderProps> = (
                 isLoading,
                 error,
                 scheduleVersion,
+                scheduleStatus,
             }}
         >
             {children}

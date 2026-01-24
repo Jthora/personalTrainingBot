@@ -63,4 +63,48 @@
     color: #ff8787;
     border: 1px solid rgba(255, 87, 87, 0.4);
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.statusRow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 18px;
+}
+
+.statusPill {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    background: rgba(255, 193, 7, 0.12);
+    color: #ffc107;
+    border: 1px solid rgba(255, 193, 7, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.statusSubtle {
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+.retryButton {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid var(--coach-accent);
+    background: transparent;
+    color: var(--coach-accent);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.retryButton:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
 }

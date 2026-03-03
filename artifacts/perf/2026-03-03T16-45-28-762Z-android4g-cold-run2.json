@@ -1,0 +1,17 @@
+[
+  {
+    "type": "resource-summary",
+    "name": "resource-summary",
+    "value": {
+      "totalRequests": 5,
+      "totalTransfer": 183947,
+      "totalEncoded": 183947,
+      "totalDecoded": 183947,
+      "totalDuration": 0.8120000129565597,
+      "byInitiator": {
+        "other": 2,
+        "parser": 3
+      }
+    }
+  }
+]

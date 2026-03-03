@@ -140,6 +140,24 @@
     justify-content: flex-end;
 }
 
+.settingsLink {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    background: var(--surface-muted);
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.settingsLink:hover {
+    border-color: var(--coach-accent);
+    background: rgba(90, 127, 255, 0.1);
+}
+
 .statsWrapper {
     min-width: 320px;
 }

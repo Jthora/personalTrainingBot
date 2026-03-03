@@ -1,0 +1,65 @@
+@import '../../../styles/theme.css';
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.title {
+    margin: 0;
+    font-size: 18px;
+}
+
+.body {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+.tableWrapper {
+    background: var(--surface-card);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 12px;
+    overflow: visible;
+}
+
+.alert {
+    margin-bottom: 8px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgba(255, 99, 132, 0.12);
+    color: var(--text-primary);
+}
+
+.skeleton {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 8px 4px;
+}
+
+.skeletonLine,
+.skeletonLineShort {
+    height: 14px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.08));
+    background-size: 200% 100%;
+    animation: shimmer 1.2s ease-in-out infinite;
+}
+
+.skeletonLineShort {
+    width: 60%;
+}
+
+@keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}

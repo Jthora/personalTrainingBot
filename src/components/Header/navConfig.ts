@@ -5,7 +5,7 @@ export type HeaderNavItem = {
 };
 
 export const headerNavItems: HeaderNavItem[] = [
-    { path: '/', label: 'Home', icon: '🏠' },
+    { path: '/home/plan', label: 'Home', icon: '🏠' },
     { path: '/schedules', label: 'Schedules', icon: '🗓️' },
     { path: '/workouts', label: 'Workouts', icon: '💪' },
     { path: '/training', label: 'Training', icon: '🎯' },

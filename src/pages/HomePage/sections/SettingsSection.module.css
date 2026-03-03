@@ -1,0 +1,44 @@
+@import '../../../styles/theme.css';
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.title {
+    margin: 0;
+    font-size: 18px;
+}
+
+.body {
+    margin: 0;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.card {
+    background: var(--surface-card);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.link {
+    color: var(--coach-accent);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.link:hover {
+    text-decoration: underline;
+}

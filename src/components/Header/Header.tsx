@@ -1,11 +1,7 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { SettingsStore } from '../../store/SettingsStore';
-import { Web3AuthService } from '../../services/Web3AuthService';
 import styles from './Header.module.css';
 import logo from '../../assets/images/WingCommanderLogo-288x162.gif';
-import { useCoachSelection } from '../../hooks/useCoachSelection';
-import { getCoachPalette } from '../../data/coachThemes';
 import UserProgressStore from '../../store/UserProgressStore';
 import WorkoutScheduleStore from '../../store/WorkoutScheduleStore';
 import { checkScheduleAlignment } from '../../utils/alignmentCheck';
@@ -13,20 +9,9 @@ import HeaderNav from './HeaderNav';
 import { headerNavItems } from './navConfig';
 import useSelectionSummary from '../../hooks/useSelectionSummary';
 
-interface UserProfile {
-    nickname?: string;
-    avatar?: string;
-}
-
 const Header: React.FC = () => {
     const navigate = useNavigate();
     const location = useLocation();
-    const [isWeb3Connected, setIsWeb3Connected] = useState(false);
-    const [walletAddress, setWalletAddress] = useState<string>('');
-    const [userProfile, setUserProfile] = useState<UserProfile | null>(null);
-    const [showUserMenu, setShowUserMenu] = useState(false);
-    const { coachId } = useCoachSelection();
-    const [coachColor, setCoachColor] = useState<string>(getCoachPalette(coachId).accent);
     const [summary, setSummary] = useState({
         remaining: 0,
         difficulty: 0,
@@ -59,70 +44,9 @@ const Header: React.FC = () => {
         });
     }, [alignment, schedule?.scheduleItems.length, schedule?.difficultySettings.level, selectionSummary]);
 
-    useEffect(() => {
-        const initializeUser = async () => {
-            const settingsStore = SettingsStore.getInstance();
-            await settingsStore.initialize();
-            
-            const web3Service = Web3AuthService.getInstance();
-            const address = await web3Service.getWalletAddress();
-            
-            if (address) {
-                setIsWeb3Connected(true);
-                setWalletAddress(address);
-                
-                // Get user profile
-                const preferences = settingsStore.getUserPreferences();
-                setUserProfile(preferences.profile);
-            }
-        };
-
-        initializeUser();
-    }, []);
-
     const navigateTo = (path: string) => {
         navigate(path);
-        setShowUserMenu(false);
     };
-
-    const handleWeb3Login = async () => {
-        try {
-            const settingsStore = SettingsStore.getInstance();
-            const address = await settingsStore.connectWeb3();
-            
-            if (address) {
-                setIsWeb3Connected(true);
-                setWalletAddress(address);
-                const preferences = settingsStore.getUserPreferences();
-                setUserProfile(preferences.profile);
-            }
-        } catch (error) {
-            console.error('Failed to connect Web3:', error);
-        }
-    };
-
-    const handleWeb3Logout = async () => {
-        try {
-            const settingsStore = SettingsStore.getInstance();
-            await settingsStore.disconnectWeb3();
-            setIsWeb3Connected(false);
-            setWalletAddress('');
-            setUserProfile(null);
-            setShowUserMenu(false);
-        } catch (error) {
-            console.error('Failed to disconnect Web3:', error);
-        }
-    };
-
-    const truncateAddress = (address: string) => {
-        return `${address.slice(0, 6)}...${address.slice(-4)}`;
-    };
-
-    // Update coach color when selected coach changes
-    useEffect(() => {
-        const palette = getCoachPalette(coachId);
-        setCoachColor(palette.accent);
-    }, [coachId]);
 
     const renderNav = (orientation: 'inline' | 'stacked' = 'inline') => (
         <HeaderNav
@@ -131,54 +55,6 @@ const Header: React.FC = () => {
             onNavigate={navigateTo}
             orientation={orientation}
         />
-    );
-
-    const renderLogin = () => (
-        <div className={styles.loginSection}>
-            {isWeb3Connected ? (
-                <div className={styles.userProfile}>
-                    <button
-                        className={styles.userButton}
-                        onClick={() => setShowUserMenu(!showUserMenu)}
-                        style={{ '--coach-color': coachColor } as React.CSSProperties}
-                    >
-                        <div className={styles.userInfo}>
-                            <span className={styles.userName}>
-                                {userProfile?.nickname || truncateAddress(walletAddress)}
-                            </span>
-                            <span className={styles.connectionStatus}>🟢 Connected</span>
-                        </div>
-                        <span className={styles.userAvatar}>
-                            {userProfile?.avatar || '👤'}
-                        </span>
-                    </button>
-
-                    {showUserMenu && (
-                        <div className={styles.userMenu}>
-                            <div className={styles.menuItem}>
-                                📊 Progress
-                            </div>
-                            <div className={styles.menuItem}>
-                                🏆 Achievements
-                            </div>
-                            <div className={styles.menuSeparator}></div>
-                            <div className={styles.menuItem} onClick={handleWeb3Logout}>
-                                � Disconnect
-                            </div>
-                        </div>
-                    )}
-                </div>
-            ) : (
-                <button
-                    className={styles.loginButton}
-                    onClick={handleWeb3Login}
-                    title="Connect Web3 Wallet"
-                    style={{ '--coach-color': coachColor } as React.CSSProperties}
-                >
-                    🔗
-                </button>
-            )}
-        </div>
     );
 
     return (
@@ -214,7 +90,7 @@ const Header: React.FC = () => {
             <div className={styles.rightSection}>
                 {/* Inline nav + controls (kept visible for all breakpoints) */}
                 {renderNav()}
-                {renderLogin()}
+                <a className={styles.settingsLink} href="/home/settings" aria-label="Open settings">⚙️</a>
             </div>
         </header>
     );

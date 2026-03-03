@@ -37,20 +37,24 @@ export class SettingsStore {
         this.initialized = true;
 
         this.loadPreferences();
-    await this.web3AuthService.getWalletAddress();
+        await this.web3AuthService.getWalletAddress();
     }
 
     getUserPreferences(): UserPreferences {
         return this.preferences;
     }
 
+    async getWalletAddress(): Promise<string | null> {
+        return this.web3AuthService.getWalletAddress();
+    }
+
     async connectWeb3(): Promise<string | null> {
-    const address = await this.web3AuthService.connect();
-    return address;
+        const address = await this.web3AuthService.connect();
+        return address;
     }
 
     async disconnectWeb3(): Promise<void> {
-    await this.web3AuthService.disconnect();
+        await this.web3AuthService.disconnect();
     }
 
     updateProfile(profile: UserProfile): void {

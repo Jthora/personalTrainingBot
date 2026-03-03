@@ -1,7 +1,13 @@
 {
-  "generatedAt": "2026-03-03T15:54:45.153Z",
+  "generatedAt": "2026-01-24T05:55:23.997Z",
   "distDir": "/home/jono/workspace/github/personalTrainingBot/dist",
   "top": [
+    {
+      "file": "assets/training_modules_combined-D50bsszE.json",
+      "size": 2705327,
+      "gzip": 586105,
+      "ext": "json"
+    },
     {
       "file": "assets/StarcomCommander_01-BDIkUNA3.png",
       "size": 1457307,
@@ -15,16 +21,10 @@
       "ext": "wav"
     },
     {
-      "file": "assets/workouts-D-nllgnt.js",
+      "file": "assets/workouts-BD2pCIgO.js",
       "size": 446292,
-      "gzip": 90121,
+      "gzip": 90245,
       "ext": "js"
-    },
-    {
-      "file": "training_modules_shards/counter_psyops.json",
-      "size": 441515,
-      "gzip": 108569,
-      "ext": "json"
     },
     {
       "file": "assets/tara_van_dekar-icon-BVTbs1XF.png",
@@ -45,12 +45,6 @@
       "ext": "wav"
     },
     {
-      "file": "training_modules_shards/self_sovereignty.json",
-      "size": 306075,
-      "gzip": 83078,
-      "ext": "json"
-    },
-    {
       "file": "assets/WingCommanderLogo-288x162-Dr7UFZxN.gif",
       "size": 305498,
       "gzip": 252286,
@@ -69,36 +63,37 @@
       "ext": "png"
     },
     {
-      "file": "assets/vendor-C8UM2I62.js",
+      "file": "assets/vendor-BD9_hsaz.js",
       "size": 291073,
-      "gzip": 87735,
+      "gzip": 87737,
       "ext": "js"
     },
     {
-      "file": "training_modules_shards/equations.json",
-      "size": 279844,
-      "gzip": 74710,
-      "ext": "json"
-    },
-    {
-      "file": "training_modules_shards/anti_tcs_idc_cbc.json",
-      "size": 249852,
-      "gzip": 63521,
-      "ext": "json"
-    },
-    {
-      "file": "assets/index-BLqyC9vw.js",
-      "size": 221803,
-      "gzip": 41946,
+      "file": "assets/react-vendor-B_E8VtXA.js",
+      "size": 217739,
+      "gzip": 69984,
       "ext": "js"
+    },
+    {
+      "file": "assets/index-D2J8sKXi.js",
+      "size": 196051,
+      "gzip": 36863,
+      "ext": "js"
+    },
+    {
+      "file": "assets/coaches-C_gpzubW.js",
+      "size": 81922,
+      "gzip": 23438,
+      "ext": "js"
+    },
+    {
+      "file": "assets/KaTeX_AMS-Regular-DRggAlZN.ttf",
+      "size": 63632,
+      "gzip": 34709,
+      "ext": "ttf"
     }
   ],
   "totals": {
-    "unknown": {
-      "size": 438,
-      "gzip": 205,
-      "count": 1
-    },
     "ttf": {
       "size": 566988,
       "gzip": 335632,
@@ -124,15 +119,15 @@
       "gzip": 252286,
       "count": 1
     },
-    "css": {
-      "size": 124589,
-      "gzip": 28343,
-      "count": 6
-    },
     "js": {
-      "size": 1365258,
-      "gzip": 348574,
-      "count": 26
+      "size": 1343871,
+      "gzip": 344883,
+      "count": 25
+    },
+    "css": {
+      "size": 121880,
+      "gzip": 28132,
+      "count": 6
     },
     "mp3": {
       "size": 60320,
@@ -144,6 +139,11 @@
       "gzip": 842656,
       "count": 2
     },
+    "json": {
+      "size": 2705327,
+      "gzip": 586105,
+      "count": 1
+    },
     "ico": {
       "size": 5694,
       "gzip": 1391,
@@ -151,13 +151,8 @@
     },
     "html": {
       "size": 2932,
-      "gzip": 755,
+      "gzip": 758,
       "count": 1
-    },
-    "json": {
-      "size": 2140023,
-      "gzip": 569612,
-      "count": 20
     }
   }
 }

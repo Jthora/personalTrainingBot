@@ -1,0 +1,144 @@
+# Home Refactor Progress Tracker
+
+- [ ] 1. Stage: Information Architecture & Scope
+  - [ ] 1.1 Phase: Align Goals and Boundaries
+    - [ ] 1.1.1 Step: Confirm scope/non-goals
+      - [ ] 1.1.1.1 Task: Review scope.md with stakeholders
+        - [ ] 1.1.1.1.a Sub-task: Circulate scope.md for comments
+        - [ ] 1.1.1.1.b Sub-task: Capture decisions and deltas in scope.md
+      - [x] 1.1.1.2 Task: Lock success criteria for usefulness (practical intern focus)
+        - [x] 1.1.1.2.a Sub-task: Draft measurable “usefulness” signals
+        - [ ] 1.1.1.2.b Sub-task: Get signoff on signals from product/design
+    - [x] 1.1.2 Step: Decide tab vs route nuances
+      - [x] 1.1.2.1 Task: Resolve tabs vs nested focus mode URL (open-questions.md)
+        - [x] 1.1.2.1.a Sub-task: Compare /home/plan?mode=focus vs /home/plan/focus
+        - [x] 1.1.2.1.b Sub-task: Document chosen pattern in ia-plan.md
+      - [x] 1.1.2.2 Task: Decide Plan vs Training embed/split
+        - [x] 1.1.2.2.a Sub-task: Prototype embedded focus toggle on Plan
+        - [x] 1.1.2.2.b Sub-task: Record pros/cons and decision in open-questions.md
+  - [ ] 1.2 Phase: Ownership Mapping
+    - [ ] 1.2.1 Step: Finalize component-to-page mapping
+      - [ ] 1.2.1.1 Task: Validate page-ownership.md against current components
+        - [ ] 1.2.1.1.a Sub-task: Cross-check Plan/Coach/Progress components
+        - [ ] 1.2.1.1.b Sub-task: Note mismatches and update ownership map
+      - [ ] 1.2.1.2 Task: Identify any stragglers (e.g., alignment chip placement)
+        - [ ] 1.2.1.2.a Sub-task: List components without assigned page
+        - [ ] 1.2.1.2.b Sub-task: Assign owners or mark for deprecation
+
+- [ ] 2. Stage: Routing & Navigation
+  - [ ] 2.1 Phase: Tab Shell Implementation
+    - [x] 2.1.1 Step: Build /home/:section routed tabs
+      - [x] 2.1.1.1 Task: Implement tab bar component with aria roles
+        - [x] 2.1.1.1.a Sub-task: Add tablist/tab semantics and keyboard handling
+        - [x] 2.1.1.1.b Sub-task: Style desktop and mobile scroll states
+      - [x] 2.1.1.2 Task: Add /home -> /home/plan redirect
+        - [x] 2.1.1.2.a Sub-task: Implement redirect in Routes
+        - [x] 2.1.1.2.b Sub-task: Verify history/back behavior
+    - [x] 2.1.2 Step: Wire focus mode (if chosen)
+      - [x] 2.1.2.1 Task: Add mode query/route handling
+        - [x] 2.1.2.1.a Sub-task: Parse mode param and toggle focus view
+        - [x] 2.1.2.1.b Sub-task: Fallback to overview when param absent
+      - [x] 2.1.2.2 Task: Persist last mode selection
+        - [x] 2.1.2.2.a Sub-task: Save selection to storage
+        - [x] 2.1.2.2.b Sub-task: Restore selection on load without flicker
+    - [x] 2.2 Phase: Deep-Link Handling
+    - [x] 2.2.1 Step: cardSlug integration
+      - [x] 2.2.1.1 Task: Redirect /c/:slug to /home/cards?cardSlug=...
+        - [x] 2.2.1.1.a Sub-task: Add route handler for slug redirect
+        - [x] 2.2.1.1.b Sub-task: Preserve original slug in query for analytics
+        - [x] 2.2.1.2 Task: Graceful error state for unknown slug
+          - [x] 2.2.1.2.a Sub-task: Show inline alert with retry guidance
+          - [x] 2.2.1.2.b Sub-task: Provide navigation back to Cards without slug
+
+- [ ] 3. Stage: Page Builds
+  - [ ] 3.1 Phase: Plan Page
+    - [x] 3.1.1 Step: Move Plan widgets
+      - [x] 3.1.1.1 Task: Place Today’s Plan banner in Plan
+        - [x] 3.1.1.1.a Sub-task: Move component out of legacy home
+        - [x] 3.1.1.1.b Sub-task: Adjust padding for new layout
+      - [x] 3.1.1.2 Task: Place Up Next + short list; remove duplicates elsewhere
+        - [x] 3.1.1.2.a Sub-task: Remove Up Next duplication from sidebar
+        - [x] 3.1.1.2.b Sub-task: Limit upcoming list length in Plan
+      - [x] 3.1.1.3 Task: Wire primary CTA to /training
+        - [x] 3.1.1.3.a Sub-task: Route Start/Resume button to /training
+        - [x] 3.1.1.3.b Sub-task: Ensure CTA hidden/disabled when schedule absent
+  - [ ] 3.2 Phase: Cards Page
+    - [x] 3.2.1 Step: Scope CardProvider to Cards
+      - [x] 3.2.1.1 Task: Mount CardProvider under Cards route
+        - [x] 3.2.1.1.a Sub-task: Move provider wrapping into Cards page
+        - [x] 3.2.1.1.b Sub-task: Verify card dealing still works after move
+      - [x] 3.2.1.2 Task: Ensure skeleton while cache loads
+        - [x] 3.2.1.2.a Sub-task: Add loading state gate in Cards
+        - [x] 3.2.1.2.b Sub-task: Confirm cache warm triggers state flip
+  - [ ] 3.3 Phase: Progress Page
+    - [x] 3.3.1 Step: Move ProgressWidget/BadgeStrip
+      - [x] 3.3.1.1 Task: Add progress tiles layout
+        - [x] 3.3.1.1.a Sub-task: Design tile grid for desktop/mobile
+        - [x] 3.3.1.1.b Sub-task: Hook tiles to progress store values
+  - [ ] 3.4 Phase: Coach Page
+    - [x] 3.4.1 Step: Move CoachDialog/alignment
+      - [x] 3.4.1.1 Task: Add coach palette preview and tips
+        - [x] 3.4.1.1.a Sub-task: Render palette swatches for selected coach
+        - [x] 3.4.1.1.b Sub-task: Add rotating tips/quotes feed
+  - [ ] 3.5 Phase: Settings/Profile
+    - [x] 3.5.1 Step: Relocate Web3/profile
+      - [x] 3.5.1.1 Task: Move connect/disconnect UI into Settings tab
+        - [x] 3.5.1.1.a Sub-task: Remove Web3 controls from header
+        - [x] 3.5.1.1.b Sub-task: Add status display inside Settings page
+
+- [ ] 4. Stage: UX Simplification
+  - [ ] 4.1 Phase: CTA Cleanup
+    - [x] 4.1.1 Step: Enforce single primary CTA per page
+      - [x] 4.1.1.1 Task: Remove duplicated Start/Next/Mark Done outside Plan/Training
+        - [x] 4.1.1.1.a Sub-task: Audit components for CTA duplication
+        - [x] 4.1.1.1.b Sub-task: Delete or hide redundant buttons
+  - [ ] 4.2 Phase: Layout/Scroll Hygiene
+    - [ ] 4.2.1 Step: Ensure single scroll per page
+      - [ ] 4.2.1.1 Task: Remove dual-scroll main/sidebar pattern
+        - [x] 4.2.1.1.a Sub-task: Set single-scroll container per section
+        - [ ] 4.2.1.1.b Sub-task: Test mobile/desktop scroll behaviour
+
+- [ ] 5. Stage: A11y & Responsiveness
+  - [ ] 5.1 Phase: Accessibility
+    - [x] 5.1.1 Step: Tab semantics
+      - [x] 5.1.1.1 Task: role="tablist"/"tab", aria-selected, keyboard nav
+        - [x] 5.1.1.1.a Sub-task: Implement arrow key navigation
+        - [x] 5.1.1.1.b Sub-task: Add focus styles for tabs
+    - [ ] 5.1.2 Step: Skip links/main focus
+      - [ ] 5.1.2.1 Task: Validate per-section main landmarks
+        - [ ] 5.1.2.1.a Sub-task: Ensure unique main IDs per section
+        - [ ] 5.1.2.1.b Sub-task: Verify skip link targets each section main
+  - [ ] 5.2 Phase: Responsive
+    - [x] 5.2.1 Step: Mobile tab bar
+      - [x] 5.2.1.1 Task: Scrollable or dropdown tab bar on narrow widths
+        - [x] 5.2.1.1.a Sub-task: Implement horizontal scroll with overflow hint
+        - [x] 5.2.1.1.b Sub-task: Add dropdown fallback option
+
+- [ ] 6. Stage: Perf, Metrics, Reliability
+  - [ ] 6.1 Phase: Perf Guardrails
+    - [x] 6.1.1 Step: Measure bundle/LCP deltas
+      - [x] 6.1.1.1 Task: Compare pre/post tab shell bundles
+        - [x] 6.1.1.1.a Sub-task: Capture bundle size before changes
+        - [x] 6.1.1.1.b Sub-task: Capture bundle size after tab shell
+  - [ ] 6.2 Phase: Telemetry
+    - [x] 6.2.1 Step: Add key events
+      - [x] 6.2.1.1 Task: Log tab switches, Start/Resume, slug focus outcomes
+        - [x] 6.2.1.1.a Sub-task: Add telemetry hooks for tab navigation
+        - [x] 6.2.1.1.b Sub-task: Emit slug focus success/failure events
+        - [x] 6.2.1.1.c Sub-task: Emit Start/Resume training events from Plan
+
+- [ ] 7. Stage: QA & Rollout
+  - [ ] 7.1 Phase: Verification
+    - [ ] 7.1.1 Step: Deep-link checks
+      - [ ] 7.1.1.1 Task: Validate /c/:slug redirects and focus
+        - [ ] 7.1.1.1.a Sub-task: Test valid slugs deep-linking to Cards
+        - [ ] 7.1.1.1.b Sub-task: Test invalid slugs show graceful alert
+    - [ ] 7.1.2 Step: Mobile/A11y pass
+      - [ ] 7.1.2.1 Task: Keyboard, screen reader, focus outlines
+        - [ ] 7.1.2.1.a Sub-task: Run keyboard-only navigation audit
+        - [ ] 7.1.2.1.b Sub-task: Spot-check SR output on tabs and CTAs
+  - [ ] 7.2 Phase: Launch
+    - [ ] 7.2.1 Step: Cutover from legacy home
+      - [ ] 7.2.1.1 Task: Remove legacy layout or gate behind flag
+        - [ ] 7.2.1.1.a Sub-task: Add feature flag or env toggle
+        - [ ] 7.2.1.1.b Sub-task: Delete legacy layout once stable

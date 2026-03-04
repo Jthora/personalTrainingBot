@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Training Bot</title>
+  <meta http-equiv="refresh" content="0;url=/" />
+  <script>
+    // SPA fallback: load index.html while preserving the requested path so the router can handle it.
+    (async () => {
+      try {
+        const res = await fetch('/index.html');
+        const html = await res.text();
+        document.open();
+        document.write(html);
+        document.close();
+        // Keep the original path so the client router can render the correct route.
+        history.replaceState(null, '', window.location.pathname + window.location.search + window.location.hash);
+      } catch (err) {
+        console.error('SPA fallback failed', err);
+      }
+    })();
+  </script>
+</head>
+<body></body>
+</html>

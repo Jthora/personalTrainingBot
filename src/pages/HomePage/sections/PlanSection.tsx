@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 import TodaysPlanBanner from '../../../components/TodaysPlanBanner/TodaysPlanBanner';
 import UpNextCard from '../../../components/UpNextCard/UpNextCard';
 import WorkoutList from '../../../components/WorkoutList/WorkoutList';
@@ -9,7 +9,6 @@ import { logEvent } from '../../../utils/telemetry';
 const PLAN_MODE_KEY = 'planMode';
 
 const PlanSection: React.FC = () => {
-    const navigate = useNavigate();
     const [params, setParams] = useSearchParams();
     const mode = params.get('mode') ?? 'overview';
 

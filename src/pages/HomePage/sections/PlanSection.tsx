@@ -17,6 +17,7 @@ const PlanSection: React.FC = () => {
         if (params.get('mode')) return;
         const saved = localStorage.getItem(PLAN_MODE_KEY);
         if (saved === 'focus') {
+            // Persist focus preference, but do not auto-navigate; keep users on Home unless they explicitly choose focus.
             setParams((prev) => {
                 const next = new URLSearchParams(prev);
                 next.set('mode', 'focus');
@@ -28,11 +29,10 @@ const PlanSection: React.FC = () => {
     useEffect(() => {
         if (mode === 'focus') {
             localStorage.setItem(PLAN_MODE_KEY, 'focus');
-            navigate('/training');
-        } else {
-            localStorage.setItem(PLAN_MODE_KEY, 'overview');
+            return;
         }
-    }, [mode, navigate]);
+        localStorage.setItem(PLAN_MODE_KEY, 'overview');
+    }, [mode]);
 
     const setMode = (nextMode: 'overview' | 'focus') => {
         logEvent({ type: 'home_tab_switch', tab: nextMode === 'focus' ? '/home/plan?mode=focus' : '/home/plan' });

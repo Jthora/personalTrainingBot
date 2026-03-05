@@ -9,6 +9,10 @@ import ProgressSection from '../pages/HomePage/sections/ProgressSection';
 import CoachSection from '../pages/HomePage/sections/CoachSection';
 import SettingsSection from '../pages/HomePage/sections/SettingsSection';
 import MissionShell from '../pages/MissionFlow/MissionShell';
+import BriefSurface from '../pages/MissionFlow/BriefSurface';
+import TriageSurface from '../pages/MissionFlow/TriageSurface';
+import CaseSurface from '../pages/MissionFlow/CaseSurface';
+import SignalSurface from '../pages/MissionFlow/SignalSurface';
 import ChecklistSurface from '../pages/MissionFlow/ChecklistSurface';
 import DebriefSurface from '../pages/MissionFlow/DebriefSurface';
 import MissionEntryRedirect from '../pages/MissionFlow/MissionEntryRedirect';
@@ -55,10 +59,10 @@ const AppRoutes: React.FC = () => {
           index
           element={missionDefaultRoutes ? <MissionEntryRedirect /> : <Navigate to="/home/plan" replace />}
         />
-        <Route path="brief" element={missionSurface('/mission/brief', <PlanSection />)} />
-        <Route path="triage" element={missionSurface('/mission/triage', <CardsSection />)} />
-        <Route path="case" element={missionSurface('/mission/case', <ProgressSection />)} />
-        <Route path="signal" element={missionSurface('/mission/signal', <CoachSection />)} />
+        <Route path="brief" element={missionSurface('/mission/brief', <BriefSurface />)} />
+        <Route path="triage" element={missionSurface('/mission/triage', <TriageSurface />)} />
+        <Route path="case" element={missionSurface('/mission/case', <CaseSurface />)} />
+        <Route path="signal" element={missionSurface('/mission/signal', <SignalSurface />)} />
         <Route path="checklist" element={missionSurface('/mission/checklist', <ChecklistSurface />)} />
         <Route path="debrief" element={missionSurface('/mission/debrief', <DebriefSurface />)} />
       </Route>

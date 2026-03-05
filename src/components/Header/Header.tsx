@@ -90,7 +90,7 @@ const Header: React.FC = () => {
             <div className={styles.rightSection}>
                 {/* Inline nav + controls (kept visible for all breakpoints) */}
                 {renderNav()}
-                <a className={styles.settingsLink} href="/home/settings" aria-label="Open settings">⚙️</a>
+                <a className={styles.settingsLink} href="/mission/debrief" aria-label="Open settings">⚙️</a>
             </div>
         </header>
     );

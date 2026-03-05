@@ -5,8 +5,10 @@ export type HeaderNavItem = {
 };
 
 export const headerNavItems: HeaderNavItem[] = [
-    { path: '/home/plan', label: 'Home', icon: '🏠' },
-    { path: '/schedules', label: 'Schedules', icon: '🗓️' },
-    { path: '/workouts', label: 'Workouts', icon: '💪' },
-    { path: '/training', label: 'Training', icon: '🎯' },
+    { path: '/mission/brief', label: 'Brief', icon: '🏠' },
+    { path: '/mission/triage', label: 'Triage', icon: '🧭' },
+    { path: '/mission/case', label: 'Case', icon: '🗂️' },
+    { path: '/mission/signal', label: 'Signal', icon: '📡' },
+    { path: '/mission/checklist', label: 'Checklist', icon: '✅' },
+    { path: '/mission/debrief', label: 'Debrief', icon: '📝' },
 ];

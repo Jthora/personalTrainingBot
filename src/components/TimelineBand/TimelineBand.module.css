@@ -1,0 +1,70 @@
+@import '../../styles/theme.css';
+
+.panel {
+  display: grid;
+  gap: 10px;
+}
+
+.title {
+  margin: 0;
+  font-size: var(--mission-type-h3);
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 7px;
+}
+
+.item {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 8px;
+  background: var(--surface-card);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 8px;
+  align-items: center;
+}
+
+.marker {
+  font-size: 16px;
+}
+
+.content {
+  display: grid;
+  gap: 2px;
+}
+
+.itemTitle {
+  margin: 0;
+  font-size: var(--mission-type-body);
+}
+
+.itemMeta {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: var(--mission-type-caption);
+}
+
+.jump {
+  color: var(--text-primary);
+  font-size: var(--mission-type-caption);
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 6px;
+  padding: 4px 8px;
+}
+
+.jump:hover {
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.empty {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: var(--mission-type-caption);
+}

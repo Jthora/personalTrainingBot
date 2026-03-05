@@ -23,7 +23,7 @@ const Web3Panel: React.FC = () => {
                 }
             } catch (e) {
                 console.error('Web3Panel init failed', e);
-                setError('Unable to load wallet status');
+                    setError('Unable to load connection status');
             } finally {
                 setLoading(false);
             }
@@ -44,7 +44,7 @@ const Web3Panel: React.FC = () => {
             }
         } catch (e) {
             console.error('Web3 connect failed', e);
-            setError('Connect failed. Try again.');
+                setError('Connection failed. Try again.');
         }
     };
 
@@ -66,9 +66,9 @@ const Web3Panel: React.FC = () => {
 
     return (
         <div className={styles.panel}>
-            <div className={styles.header}>Web3 Wallet</div>
+                <div className={styles.header}>Connection</div>
             {loading ? (
-                <div className={styles.row}>Loading wallet status…</div>
+                    <div className={styles.row}>Loading connection status…</div>
             ) : (
                 <>
                     {error && <div className={styles.error} role="alert">{error}</div>}
@@ -80,7 +80,7 @@ const Web3Panel: React.FC = () => {
                     </div>
                     {isConnected && (
                         <div className={styles.meta}>
-                            <div><strong>Wallet:</strong> {truncate(walletAddress)}</div>
+                                <div><strong>Account:</strong> {truncate(walletAddress)}</div>
                             {nickname && <div><strong>Nickname:</strong> {nickname}</div>}
                         </div>
                     )}
@@ -91,7 +91,7 @@ const Web3Panel: React.FC = () => {
                             </button>
                         ) : (
                             <button type="button" onClick={handleConnect} className={styles.buttonPrimary}>
-                                Connect wallet
+                                    Connect account
                             </button>
                         )}
                     </div>

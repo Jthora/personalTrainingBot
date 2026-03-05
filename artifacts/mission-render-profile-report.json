@@ -1,0 +1,66 @@
+{
+  "generatedAt": "2026-03-05T12:41:50.416Z",
+  "base": "http://127.0.0.1:4176",
+  "summary": [
+    {
+      "id": "mission:triage:board",
+      "renderCount": 5,
+      "avgActualDurationMs": 15.64,
+      "maxActualDurationMs": 34.7,
+      "totalActualDurationMs": 78.2,
+      "totalBaseDurationMs": 78.2,
+      "lastPhase": "update"
+    },
+    {
+      "id": "mission:case:artifact-list",
+      "renderCount": 11,
+      "avgActualDurationMs": 1.282,
+      "maxActualDurationMs": 8.5,
+      "totalActualDurationMs": 14.1,
+      "totalBaseDurationMs": 14.1,
+      "lastPhase": "update"
+    },
+    {
+      "id": "mission:triage:detail-table",
+      "renderCount": 1,
+      "avgActualDurationMs": 2.4,
+      "maxActualDurationMs": 2.4,
+      "totalActualDurationMs": 2.4,
+      "totalBaseDurationMs": 2.4,
+      "lastPhase": "mount"
+    }
+  ],
+  "raw": {
+    "mission:triage:board": {
+      "id": "mission:triage:board",
+      "renderCount": 5,
+      "totalActualDuration": 78.19999998807907,
+      "totalBaseDuration": 78.19999998807907,
+      "maxActualDuration": 34.69999998807907,
+      "lastPhase": "update",
+      "lastActualDuration": 34.69999998807907,
+      "lastBaseDuration": 34.69999998807907
+    },
+    "mission:triage:detail-table": {
+      "id": "mission:triage:detail-table",
+      "renderCount": 1,
+      "totalActualDuration": 2.399999976158142,
+      "totalBaseDuration": 2.399999976158142,
+      "maxActualDuration": 2.399999976158142,
+      "lastPhase": "mount",
+      "lastActualDuration": 2.399999976158142,
+      "lastBaseDuration": 2.399999976158142
+    },
+    "mission:case:artifact-list": {
+      "id": "mission:case:artifact-list",
+      "renderCount": 11,
+      "totalActualDuration": 14.099999904632568,
+      "totalBaseDuration": 14.099999904632568,
+      "maxActualDuration": 8.5,
+      "lastPhase": "update",
+      "lastActualDuration": 0.5,
+      "lastBaseDuration": 0.5
+    }
+  },
+  "warnings": []
+}

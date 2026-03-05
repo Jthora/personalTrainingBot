@@ -11,7 +11,6 @@ const DifficultySettings: React.FC = () => {
     const [selectedDescription, setSelectedDescription] = useState<string>('');
     const [selectedMilitarySoldier, setSelectedMilitarySoldier] = useState<string[]>([]);
     const [selectedAthleteArchetype, setSelectedAthleteArchetype] = useState<string[]>([]);
-    const [selectedPFT, setSelectedPFT] = useState<DifficultyLevelData['pft'] | null>(null);
     const [selectedRequirements, setSelectedRequirements] = useState<DifficultyLevelData['requirements'] | null>(null);
     const [range, setRange] = useState<DifficultyRange>([0, 0]);
 
@@ -31,7 +30,6 @@ const DifficultySettings: React.FC = () => {
                     setSelectedDescription(selectedLevel?.description || '');
                     setSelectedMilitarySoldier(selectedLevel?.military_soldier || []);
                     setSelectedAthleteArchetype(selectedLevel?.athlete_archetype || []);
-                    setSelectedPFT(selectedLevel?.pft || null);
                     setSelectedRequirements(selectedLevel?.requirements || null);
                     setRange(settings.range || [selectedLevel?.level || 0, selectedLevel?.level || 0]);
                 } else if (levels.length > 0) {
@@ -41,7 +39,6 @@ const DifficultySettings: React.FC = () => {
                         setSelectedDescription(defaultLevel.description);
                         setSelectedMilitarySoldier(defaultLevel.military_soldier);
                         setSelectedAthleteArchetype(defaultLevel.athlete_archetype);
-                        setSelectedPFT(defaultLevel.pft);
                         setSelectedRequirements(defaultLevel.requirements);
                         setRange([defaultLevel.level, defaultLevel.level]);
                     }
@@ -64,7 +61,6 @@ const DifficultySettings: React.FC = () => {
             setSelectedDescription(selectedLevel.description || '');
             setSelectedMilitarySoldier(selectedLevel.military_soldier || []);
             setSelectedAthleteArchetype(selectedLevel.athlete_archetype || []);
-            setSelectedPFT(selectedLevel.pft || null);
             setSelectedRequirements(selectedLevel.requirements || null);
             setRange(newRange);
             DifficultySettingsStore.saveSettings(new DifficultySetting(newDifficulty, newRange));
@@ -136,19 +132,6 @@ const DifficultySettings: React.FC = () => {
                         ))}
                     </ul>
                 </div>
-                {selectedPFT && (
-                    <div className={styles.pft}>
-                        <strong>Physical Fitness Test [PFT]:</strong>
-                        <ul className={styles.description}>
-                            <li>Pushups: {selectedPFT.pushups}</li>
-                            <li>Situps: {selectedPFT.situps}</li>
-                            <li>Run: {selectedPFT.run}</li>
-                            <li>Pullups: {selectedPFT.pullups}</li>
-                            <li>Plank: {selectedPFT.plank}</li>
-                            <li>Squats: {selectedPFT.squats}</li>
-                        </ul>
-                    </div>
-                )}
                 {selectedRequirements && (
                     <div className={styles.requirements}>
                         <strong>Training Examples:</strong>

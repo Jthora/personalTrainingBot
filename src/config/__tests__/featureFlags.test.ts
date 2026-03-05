@@ -26,14 +26,41 @@ describe('featureFlags', () => {
         expect(mod.isFeatureEnabled('migrationBridge')).toBe(false);
         expect(mod.isFeatureEnabled('generatorSwap')).toBe(true);
         expect(mod.isFeatureEnabled('performanceInstrumentation')).toBe(false);
+        expect(mod.isFeatureEnabled('canonicalReadPath')).toBe(false);
+        expect(mod.isFeatureEnabled('missionDefaultRoutes')).toBe(false);
+        expect(mod.isFeatureEnabled('missionSurfaceBrief')).toBe(false);
+    });
+
+    it('uses mission-first defaults when in staging', async () => {
+        mockEnv('staging');
+        const mod = await loadModule();
+        expect(mod.isFeatureEnabled('missionDefaultRoutes')).toBe(true);
+        expect(mod.isFeatureEnabled('missionSurfaceBrief')).toBe(true);
+        expect(mod.isFeatureEnabled('missionSurfaceTriage')).toBe(true);
+        expect(mod.isFeatureEnabled('missionSurfaceCase')).toBe(true);
+        expect(mod.isFeatureEnabled('missionSurfaceSignal')).toBe(true);
+        expect(mod.isFeatureEnabled('missionSurfaceChecklist')).toBe(true);
+        expect(mod.isFeatureEnabled('missionSurfaceDebrief')).toBe(true);
     });
 
     it('honors VITE_FEATURE_FLAGS overrides', async () => {
-        mockEnv('staging', JSON.stringify({ calendarSurface: false, migrationBridge: true, performanceInstrumentation: false }));
+        mockEnv('staging', JSON.stringify({
+            calendarSurface: false,
+            migrationBridge: true,
+            performanceInstrumentation: false,
+            canonicalReadPath: true,
+            missionDefaultRoutes: true,
+            missionSurfaceBrief: true,
+            missionSurfaceTriage: true,
+        }));
         const mod = await loadModule();
         expect(mod.isFeatureEnabled('calendarSurface')).toBe(false);
         expect(mod.isFeatureEnabled('migrationBridge')).toBe(true);
         expect(mod.isFeatureEnabled('performanceInstrumentation')).toBe(false);
+        expect(mod.isFeatureEnabled('canonicalReadPath')).toBe(true);
+        expect(mod.isFeatureEnabled('missionDefaultRoutes')).toBe(true);
+        expect(mod.isFeatureEnabled('missionSurfaceBrief')).toBe(true);
+        expect(mod.isFeatureEnabled('missionSurfaceTriage')).toBe(true);
     });
 
     it('applies global kill switch across features', async () => {

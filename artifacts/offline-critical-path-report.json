@@ -1,0 +1,78 @@
+{
+  "ts": "2026-03-05T12:41:24.497Z",
+  "base": "http://127.0.0.1:4176",
+  "mode": "offline-critical-path",
+  "checkpoints": [
+    {
+      "route": "/mission/brief?op=op-operation-alpha&case=case-alpha-relay-corridor&signal=signal-alpha-beacon-surge",
+      "status": "pass",
+      "httpStatus": 200,
+      "location": "/mission/brief?op=op-operation-alpha&case=case-alpha-relay-corridor&signal=signal-alpha-beacon-surge",
+      "hasRoot": true,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "offlineReported": false
+    },
+    {
+      "route": "/mission/triage?op=op-operation-alpha&case=case-alpha-relay-corridor&signal=signal-alpha-beacon-surge",
+      "status": "pass",
+      "httpStatus": 200,
+      "location": "/mission/triage?op=op-operation-alpha&case=case-alpha-relay-corridor&signal=signal-alpha-beacon-surge",
+      "hasRoot": true,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "offlineReported": false
+    },
+    {
+      "route": "/mission/case?op=op-operation-alpha&case=case-alpha-relay-corridor&signal=signal-alpha-beacon-surge",
+      "status": "pass",
+      "httpStatus": 200,
+      "location": "/mission/case?op=op-operation-alpha&case=case-alpha-relay-corridor&signal=signal-alpha-beacon-surge",
+      "hasRoot": true,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "offlineReported": false
+    },
+    {
+      "route": "/mission/signal?op=op-operation-alpha&case=case-alpha-relay-corridor&signal=signal-alpha-beacon-surge",
+      "status": "pass",
+      "httpStatus": 200,
+      "location": "/mission/signal?op=op-operation-alpha&case=case-alpha-relay-corridor&signal=signal-alpha-beacon-surge",
+      "hasRoot": true,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "offlineReported": false
+    },
+    {
+      "route": "/mission/checklist?op=op-operation-alpha&case=case-alpha-relay-corridor&signal=signal-alpha-beacon-surge",
+      "status": "pass",
+      "httpStatus": 200,
+      "location": "/mission/checklist?op=op-operation-alpha&case=case-alpha-relay-corridor&signal=signal-alpha-beacon-surge",
+      "hasRoot": true,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "offlineReported": false
+    },
+    {
+      "route": "/mission/debrief?op=op-operation-alpha&case=case-alpha-relay-corridor&signal=signal-alpha-beacon-surge",
+      "status": "pass",
+      "httpStatus": 200,
+      "location": "/mission/debrief?op=op-operation-alpha&case=case-alpha-relay-corridor&signal=signal-alpha-beacon-surge",
+      "hasRoot": true,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "offlineReported": false
+    },
+    {
+      "route": "/training/run",
+      "status": "pass",
+      "httpStatus": 200,
+      "location": "/training/run",
+      "hasRoot": true,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "offlineReported": false
+    }
+  ],
+  "failed": false
+}

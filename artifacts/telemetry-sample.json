@@ -1,0 +1,67 @@
+[
+  {
+    "category": "offline",
+    "action": "offline_enter",
+    "ts": "2026-03-04T12:00:00.000Z",
+    "route": "/home",
+    "offline": true,
+    "source": "system",
+    "net": "4g"
+  },
+  {
+    "category": "ia",
+    "action": "tab_view",
+    "ts": "2026-03-04T12:01:00.000Z",
+    "route": "/home/cards",
+    "offline": false,
+    "data": { "tab": "/home/cards", "source": "tab" }
+  },
+  {
+    "category": "readiness",
+    "action": "score_render",
+    "ts": "2026-03-04T12:01:05.000Z",
+    "route": "/home/plan",
+    "offline": false,
+    "data": { "kitId": "kit-alpha", "score": 72, "confidence": "medium" }
+  },
+  {
+    "category": "drills",
+    "action": "drill_start",
+    "ts": "2026-03-04T12:02:00.000Z",
+    "route": "/training",
+    "offline": false,
+    "data": { "drillId": "drill-1", "title": "Starter Drill" }
+  },
+  {
+    "category": "drills",
+    "action": "step_complete",
+    "ts": "2026-03-04T12:02:30.000Z",
+    "route": "/training",
+    "offline": false,
+    "data": { "drillId": "drill-1", "stepId": "drill-1-prep", "done": true }
+  },
+  {
+    "category": "signals",
+    "action": "signal_create",
+    "ts": "2026-03-04T12:03:00.000Z",
+    "route": "/home/coach",
+    "offline": false,
+    "data": { "id": "sig-123", "role": "ops" }
+  },
+  {
+    "category": "aar",
+    "action": "aar_save",
+    "ts": "2026-03-04T12:04:00.000Z",
+    "route": "/home/coach",
+    "offline": false,
+    "data": { "id": "aar-1", "role": "ops", "title": "Starter AAR" }
+  },
+  {
+    "category": "settings",
+    "action": "preload_trigger",
+    "ts": "2026-03-04T12:05:00.000Z",
+    "route": "/home/settings",
+    "offline": false,
+    "data": { "phase": "start" }
+  }
+]

@@ -2,14 +2,14 @@ import React from 'react';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 import styles from './HomeShell.module.css';
-import { logEvent } from '../../utils/telemetry';
+import { trackEvent } from '../../utils/telemetry';
 
 const tabs = [
-    { path: '/home/plan', label: 'Plan' },
-    { path: '/home/cards', label: 'Cards' },
-    { path: '/home/progress', label: 'Progress' },
-    { path: '/home/coach', label: 'Coach' },
-    { path: '/home/settings', label: 'Settings' },
+    { path: '/home/plan', label: 'Mission Kit', sectionId: 'section-mission-kit' },
+    { path: '/home/cards', label: 'Drills/Intel', sectionId: 'section-cards' },
+    { path: '/home/progress', label: 'Readiness', sectionId: 'section-progress' },
+    { path: '/home/coach', label: 'Signals/Ops Brief', sectionId: 'section-coach' },
+    { path: '/home/settings', label: 'Ops/Settings', sectionId: 'section-settings' },
 ];
 
 const HomeShell: React.FC = () => {
@@ -26,7 +26,7 @@ const HomeShell: React.FC = () => {
         const delta = event.key === 'ArrowRight' ? 1 : -1;
         const nextIndex = (currentIndex + delta + tabs.length) % tabs.length;
         const nextPath = tabs[nextIndex].path;
-        logEvent({ type: 'home_tab_switch', tab: nextPath });
+        trackEvent({ category: 'ia', action: 'tab_view', route: nextPath, data: { tab: nextPath, source: 'keyboard' } });
         navigate(nextPath);
     };
 
@@ -41,7 +41,7 @@ const HomeShell: React.FC = () => {
                         className={styles.tabSelect}
                         value={activePath}
                         onChange={(e) => {
-                            logEvent({ type: 'home_tab_switch', tab: e.target.value });
+                            trackEvent({ category: 'ia', action: 'tab_view', route: e.target.value, data: { tab: e.target.value, source: 'select' } });
                             navigate(e.target.value);
                         }}
                     >
@@ -63,9 +63,14 @@ const HomeShell: React.FC = () => {
                                 key={tab.path}
                                 role="tab"
                                 aria-selected={isActive}
-                                aria-controls={`section-${tab.label.toLowerCase()}`}
+                                aria-controls={tab.sectionId}
                                 className={`${styles.tab} ${isActive ? styles.tabActive : ''}`}
-                                onClick={() => navigate(tab.path)}
+                                onClick={() => {
+                                    if (!isActive) {
+                                        trackEvent({ category: 'ia', action: 'tab_view', route: tab.path, data: { tab: tab.path, source: 'tab' } });
+                                    }
+                                    navigate(tab.path);
+                                }}
                                 type="button"
                             >
                                 {tab.label}

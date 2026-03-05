@@ -14,11 +14,14 @@ import CacheIndicator from './components/CacheIndicator/CacheIndicator';
 import { registerScheduleRefreshInterval, registerScheduleRefreshOnFocus } from './utils/ScheduleLoader';
 import { logRuntimePayloadSample } from './utils/payloadLogging';
 import ScheduleNavigationRefresh from './components/ScheduleNavigationRefresh/ScheduleNavigationRefresh';
+import NetworkStatusIndicator from './components/NetworkStatusIndicator/NetworkStatusIndicator';
+import { useSettings } from './context/SettingsContext';
 
 const App: React.FC = () => {
   const [isDataLoaded, setIsDataLoaded] = useState(false);
   const [loadingProgress, setLoadingProgress] = useState(0); // Add loading progress state
   const [initializationPromise, setInitializationPromise] = useState<Promise<void> | null>(null);
+  const { lowDataMode } = useSettings();
   // Partial failures are logged to the console only; no UI surfacing.
   const shellMarkedRef = useRef(false);
   const criticalMarkedRef = useRef(false);
@@ -71,7 +74,7 @@ const App: React.FC = () => {
   }, [isDataLoaded]);
 
   useEffect(() => {
-    if (!isDataLoaded) return;
+    if (!isDataLoaded || lowDataMode) return;
     const cancelWarm = warmCaches(() => {
       if (!enrichmentMarkedRef.current) {
         mark('load:enrichment_done');
@@ -86,7 +89,7 @@ const App: React.FC = () => {
     });
 
     return () => cancelWarm?.();
-  }, [isDataLoaded]);
+  }, [isDataLoaded, lowDataMode]);
 
   useEffect(() => {
     if (!isDataLoaded) return;
@@ -113,6 +116,7 @@ const App: React.FC = () => {
       <CoachSelectionProvider>
         <Router>
           <CacheIndicator />
+          <NetworkStatusIndicator />
           <ScheduleNavigationRefresh />
           <AppRoutes />
           <RecapToast />

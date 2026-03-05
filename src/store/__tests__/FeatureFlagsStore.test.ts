@@ -9,7 +9,15 @@ const mockConfigFlags = {
     migrationBridge: false,
     performanceInstrumentation: true,
     loadingCacheV2: false,
+    canonicalReadPath: false,
     globalKillSwitch: false,
+    missionDefaultRoutes: false,
+    missionSurfaceBrief: false,
+    missionSurfaceTriage: false,
+    missionSurfaceCase: false,
+    missionSurfaceSignal: false,
+    missionSurfaceChecklist: false,
+    missionSurfaceDebrief: false,
 };
 
 vi.mock('../../config/featureFlags', () => ({

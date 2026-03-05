@@ -1,6 +1,19 @@
 import { getAppEnv, AppEnv } from './env';
 
-export type FeatureFlagKey = 'generatorSwap' | 'calendarSurface' | 'migrationBridge' | 'performanceInstrumentation' | 'loadingCacheV2';
+export type FeatureFlagKey =
+    | 'generatorSwap'
+    | 'calendarSurface'
+    | 'migrationBridge'
+    | 'performanceInstrumentation'
+    | 'loadingCacheV2'
+    | 'canonicalReadPath'
+    | 'missionDefaultRoutes'
+    | 'missionSurfaceBrief'
+    | 'missionSurfaceTriage'
+    | 'missionSurfaceCase'
+    | 'missionSurfaceSignal'
+    | 'missionSurfaceChecklist'
+    | 'missionSurfaceDebrief';
 
 type GlobalFlagKey = 'globalKillSwitch';
 
@@ -14,6 +27,14 @@ const DEFAULT_FLAGS: FeatureFlagConfig = {
     migrationBridge: false,
     performanceInstrumentation: false,
     loadingCacheV2: false,
+    canonicalReadPath: false,
+    missionDefaultRoutes: false,
+    missionSurfaceBrief: false,
+    missionSurfaceTriage: false,
+    missionSurfaceCase: false,
+    missionSurfaceSignal: false,
+    missionSurfaceChecklist: false,
+    missionSurfaceDebrief: false,
     globalKillSwitch: false,
 };
 
@@ -24,6 +45,14 @@ const ENV_DEFAULT_FLAGS: Record<AppEnv, Partial<FeatureFlagConfig>> = {
         migrationBridge: true,
         performanceInstrumentation: true,
         loadingCacheV2: true,
+        canonicalReadPath: false,
+        missionDefaultRoutes: true,
+        missionSurfaceBrief: true,
+        missionSurfaceTriage: true,
+        missionSurfaceCase: true,
+        missionSurfaceSignal: true,
+        missionSurfaceChecklist: true,
+        missionSurfaceDebrief: true,
         globalKillSwitch: false,
     },
     staging: {
@@ -32,6 +61,14 @@ const ENV_DEFAULT_FLAGS: Record<AppEnv, Partial<FeatureFlagConfig>> = {
         migrationBridge: false,
         performanceInstrumentation: true,
         loadingCacheV2: false,
+        canonicalReadPath: false,
+        missionDefaultRoutes: true,
+        missionSurfaceBrief: true,
+        missionSurfaceTriage: true,
+        missionSurfaceCase: true,
+        missionSurfaceSignal: true,
+        missionSurfaceChecklist: true,
+        missionSurfaceDebrief: true,
         globalKillSwitch: false,
     },
     production: {
@@ -40,6 +77,14 @@ const ENV_DEFAULT_FLAGS: Record<AppEnv, Partial<FeatureFlagConfig>> = {
         migrationBridge: false,
         performanceInstrumentation: false,
         loadingCacheV2: false,
+        canonicalReadPath: false,
+        missionDefaultRoutes: false,
+        missionSurfaceBrief: false,
+        missionSurfaceTriage: false,
+        missionSurfaceCase: false,
+        missionSurfaceSignal: false,
+        missionSurfaceChecklist: false,
+        missionSurfaceDebrief: false,
         globalKillSwitch: false,
     },
 };
@@ -136,7 +181,21 @@ export const resetFeatureFlagOverrides = (): FeatureFlagConfig => {
 };
 
 function isFeatureFlagKey(key: string): key is FeatureFlagKey {
-    return ['generatorSwap', 'calendarSurface', 'migrationBridge', 'performanceInstrumentation', 'loadingCacheV2'].includes(key);
+    return [
+        'generatorSwap',
+        'calendarSurface',
+        'migrationBridge',
+        'performanceInstrumentation',
+        'loadingCacheV2',
+        'canonicalReadPath',
+        'missionDefaultRoutes',
+        'missionSurfaceBrief',
+        'missionSurfaceTriage',
+        'missionSurfaceCase',
+        'missionSurfaceSignal',
+        'missionSurfaceChecklist',
+        'missionSurfaceDebrief',
+    ].includes(key);
 }
 
 function isGlobalFlagKey(key: string): key is GlobalFlagKey {

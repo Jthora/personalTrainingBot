@@ -3,7 +3,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import styles from './TodaysPlanBanner.module.css';
 import useWorkoutSchedule from '../../hooks/useWorkoutSchedule';
 import { summarizeSchedule } from '../../utils/scheduleSummary';
-import { logEvent } from '../../utils/telemetry';
+import { trackEvent } from '../../utils/telemetry';
 import { mark, measure } from '../../utils/perf';
 
 const TodaysPlanBanner: React.FC = () => {
@@ -29,12 +29,12 @@ const TodaysPlanBanner: React.FC = () => {
         if (clickMark) {
             measure('home:plan:start_click_since_boot', 'load:boot_start', clickMark);
         }
-        logEvent({ type: 'plan_start_training', mode });
+        trackEvent({ category: 'drills', action: 'drill_start', data: { mode, source: 'plan_banner' } });
         navigate('/training');
     };
 
     const handleRegenerate = () => {
-        logEvent({ type: 'plan_regenerate' });
+        trackEvent({ category: 'readiness', action: 'next_action_click', data: { actionId: 'plan_regenerate', source: 'plan_banner' } });
         createNewSchedule();
     };
 

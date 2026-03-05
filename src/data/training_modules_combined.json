@@ -874,7 +874,7 @@
     "cybersecurity_history_of_cybersecurity": {
       "id": "history_of_cybersecurity",
       "name": "History of Cybersecurity",
-      "description": "Tracing the evolution of cybersecurity from the early days of networking to modern web security policies, including CORS and Web3 security.",
+      "description": "Tracing the evolution of cybersecurity from the early days of networking to modern web security policies, including CORS and decentralized security concerns.",
       "difficulty": "Intermediate to Advanced",
       "estimated_time": "12-24 months",
       "focus": [
@@ -882,7 +882,7 @@
         "Web Security Policies",
         "Cyber Threat Evolution",
         "Browser & Internet Security Policies",
-        "Decentralization & Web3 Security"
+        "Decentralization & Distributed Security"
       ],
       "cardDecks": [
         "early_network_security_policies",
@@ -1501,7 +1501,7 @@
     "fitness_calisthenics": {
       "id": "calisthenics",
       "name": "Calisthenics",
-      "description": "Bodyweight exercises designed to build strength, endurance, and functional fitness.",
+      "description": "Bodyweight exercises designed to build strength, endurance, and functional readiness.",
       "difficulty": "Intermediate",
       "estimated_time": "6-24 months",
       "focus": [
@@ -1568,7 +1568,7 @@
     },
     "fitness_functional_fitness": {
       "id": "functional_fitness",
-      "name": "Functional Fitness",
+      "name": "Functional Conditioning",
       "description": "Training for real-world strength, coordination, and movement efficiency.",
       "difficulty": "Intermediate",
       "estimated_time": "6-18 months",
@@ -1602,7 +1602,7 @@
     },
     "fitness_mind_body_fitness": {
       "id": "mind_body_fitness",
-      "name": "Mind-Body Fitness",
+      "name": "Mind-Body Regulation",
       "description": "Enhancing mental resilience and body awareness through controlled movement and breathwork.",
       "difficulty": "Beginner",
       "estimated_time": "3-12 months",
@@ -2322,7 +2322,7 @@
     "web_three_decentralized_applications": {
       "id": "decentralized_applications",
       "name": "Decentralized Applications",
-      "description": "Training in developing and integrating front-end and back-end components for dApps on Web3 infrastructure.",
+      "description": "Training in developing and integrating front-end and back-end components for dApps on decentralized infrastructure.",
       "difficulty": "Intermediate to Advanced",
       "estimated_time": "6-15 months",
       "focus": [
@@ -2389,8 +2389,8 @@
     },
     "web_three_web_three_security_and_auditing": {
       "id": "web_three_security_and_auditing",
-      "name": "Web3 Security & Auditing",
-      "description": "Training in identifying vulnerabilities, auditing smart contracts, and securing Web3 applications.",
+      "name": "Decentralized Security & Auditing",
+      "description": "Training in identifying vulnerabilities, auditing smart contracts, and securing decentralized applications.",
       "difficulty": "Advanced",
       "estimated_time": "12-24 months",
       "focus": [
@@ -25400,7 +25400,7 @@
           "bulletpoints": [
             "Perform squats, push-ups, lunges, and mountain climbers",
             "Work for 45 seconds per exercise, rest for 15 seconds",
-            "Repeat for 3-4 rounds depending on fitness level"
+            "Repeat for 3-4 rounds depending on conditioning level"
           ],
           "summaryText": "Cycle bodyweight moves fast with tight rests to torch strength and cardio together.",
           "duration": 7,
@@ -25446,7 +25446,7 @@
         {
           "id": "hill_repeats",
           "title": "Hill Repeats for Power and Endurance",
-          "description": "Using an incline to enhance strength and cardiovascular fitness.",
+          "description": "Using an incline to enhance strength and cardiovascular capacity.",
           "bulletpoints": [
             "Sprint uphill at maximum effort",
             "Walk or jog back down as recovery",
@@ -32617,20 +32617,20 @@
     },
     "web_three_decentralized_applications_web_three_frontend_development": {
       "id": "web3_frontend_development",
-      "name": "Web3 Frontend Development",
+      "name": "Decentralized Frontend Development",
       "description": "Building responsive and interactive decentralized application front-ends.",
       "focus": [
-        "Web3.js & Ethers.js",
+        "Wallet RPC (ethers.js)",
         "Connecting Wallets",
         "User Experience in dApps"
       ],
       "cards": [
         {
           "id": "web3_js_basics",
-          "title": "Web3.js & Ethers.js",
+          "title": "Wallet RPC Foundations",
           "description": "Understanding how to interact with blockchain networks from the frontend.",
           "bulletpoints": "Connecting to Ethereum, sending transactions, querying smart contracts",
-          "summaryText": "Wire up ethers.js or web3.js to connect wallets, read contract state, and push transactions from the browser.",
+          "summaryText": "Wire up ethers.js or similar wallet RPC libraries to connect wallets, read contract state, and push transactions from the browser.",
           "duration": "40",
           "difficulty": "Intermediate"
         },
@@ -33008,7 +33008,7 @@
     "web_three_web_three_security_and_auditing_blockchain_pen_testing": {
       "id": "blockchain_pen_testing",
       "name": "Blockchain Penetration Testing",
-      "description": "Testing the security of blockchain networks and Web3 applications.",
+      "description": "Testing the security of blockchain networks and decentralized applications.",
       "focus": [
         "Attack Simulation",
         "Smart Contract Exploits",
@@ -33035,8 +33035,8 @@
         },
         {
           "id": "web3_testing",
-          "title": "Web3 dApp Security Testing",
-          "description": "Identifying vulnerabilities in Web3 frontends and smart contract interactions.",
+          "title": "Decentralized dApp Security Testing",
+          "description": "Identifying vulnerabilities in decentralized frontends and smart contract interactions.",
           "bulletpoints": "Metamask phishing, API abuse, RPC endpoint security",
           "summaryText": "Highlight phishing entry points in wallet flows, probe API and RPC misuse, and align fixes with least-privilege design.",
           "duration": "50",
@@ -33085,7 +33085,7 @@
     },
     "web_three_web_three_security_and_auditing_web_three_security_frameworks": {
       "id": "web3_security_frameworks",
-      "name": "Web3 Security Frameworks",
+      "name": "Decentralized Security Frameworks",
       "description": "Establishing best practices and security protocols for decentralized applications.",
       "focus": [
         "Secure Development Practices",
@@ -33104,7 +33104,7 @@
         },
         {
           "id": "incident_response",
-          "title": "Web3 Security Incident Response",
+          "title": "Decentralized Security Incident Response",
           "description": "Handling security breaches and contract vulnerabilities.",
           "bulletpoints": "Bug bounty programs, on-chain monitoring, emergency pause mechanisms",
           "summaryText": "Outline playbooks that combine bug bounties, real-time monitoring, and pause switches to contain on-chain incidents.",
@@ -33114,7 +33114,7 @@
         {
           "id": "decentralized_security",
           "title": "Zero-Trust & Decentralized Security",
-          "description": "Implementing decentralized security principles in Web3 architecture.",
+          "description": "Implementing decentralized security principles in distributed-ledger architecture.",
           "bulletpoints": "Multisig wallets, hardware security modules, decentralized key management",
           "summaryText": "Connect zero-trust philosophy with multisig custody, HSM usage, and resilient decentralized key management flows.",
           "duration": "50",

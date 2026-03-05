@@ -2,8 +2,10 @@ import React, { useMemo } from 'react';
 import CardSlot from '../CardSlot/CardSlot';
 import { useCardContext } from '../../hooks/useCardContext';
 import styles from './CardTable.module.css';
+import { useMissionRenderProbe } from '../../utils/missionRenderProfile';
 
 const CardTable: React.FC = () => {
+    useMissionRenderProbe('mission:triage:detail-table');
     const { cards, dealNextCard } = useCardContext();
 
     const allEmpty = useMemo(() => cards.every(card => !card), [cards]);

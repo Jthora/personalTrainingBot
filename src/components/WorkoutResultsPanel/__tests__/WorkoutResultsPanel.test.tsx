@@ -151,7 +151,7 @@ describe('WorkoutResultsPanel', () => {
     it('renders workouts and shows detail for the first item', () => {
         renderPanel();
 
-        const detail = screen.getByLabelText(/Workout details/i);
+        const detail = screen.getByLabelText(/Drill details/i);
         expect(within(detail).getByText(/Push Ups/i)).toBeTruthy();
         expect(within(detail).getByText(/Classic push up movement/i)).toBeTruthy();
         expect(within(detail).getByText(/Details/i)).toBeTruthy();
@@ -161,7 +161,7 @@ describe('WorkoutResultsPanel', () => {
         renderPanel();
 
         fireEvent.click(screen.getByRole('option', { name: /Mountain Climbers/i }));
-        const detail = screen.getByLabelText(/Workout details/i);
+        const detail = screen.getByLabelText(/Drill details/i);
         expect(within(detail).getByText(/Mountain Climbers/i)).toBeTruthy();
         expect(within(detail).getByText(/Cardio friendly movement/i)).toBeTruthy();
     });
@@ -170,7 +170,7 @@ describe('WorkoutResultsPanel', () => {
         workouts = [];
         renderPanel();
 
-        expect(screen.getByText(/No workouts match the current filters/i)).toBeTruthy();
+        expect(screen.getByText(/No drills match the current filters/i)).toBeTruthy();
     });
 
     it('closes detail with Escape and returns focus to the selected list item', async () => {
@@ -193,7 +193,7 @@ describe('WorkoutResultsPanel', () => {
             .mockReturnValue({ status: 'added', schedule: scheduleState });
         renderPanel();
 
-        fireEvent.click(screen.getByRole('button', { name: /Add to schedule/i }));
+        fireEvent.click(screen.getByRole('button', { name: /Add to mission plan/i }));
 
         expect(await screen.findByText(/Already scheduled/i)).toBeTruthy();
         expect(saveSelectedWorkouts).not.toHaveBeenCalled();
@@ -254,14 +254,14 @@ describe('WorkoutResultsPanel', () => {
         const { restore } = setupMatchMedia(true);
         renderPanel();
 
-        const dialog = await screen.findByRole('dialog', { name: /Workout details/i });
+        const dialog = await screen.findByRole('dialog', { name: /Drill details/i });
     expect(dialog.getAttribute('aria-modal')).toBe('true');
 
         const closeButton = within(dialog).getByRole('button', { name: /Close details/i });
         fireEvent.click(closeButton);
 
         await waitFor(() => {
-            expect(screen.queryByRole('dialog', { name: /Workout details/i })).toBeNull();
+            expect(screen.queryByRole('dialog', { name: /Drill details/i })).toBeNull();
         });
 
         restore();

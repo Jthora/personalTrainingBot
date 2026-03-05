@@ -1,6 +1,6 @@
 {
     "id": "web3_security_frameworks",
-    "name": "Web3 Security Frameworks",
+    "name": "Decentralized Security Frameworks",
     "description": "Establishing best practices and security protocols for decentralized applications.",
     "focus": [
         "Secure Development Practices",
@@ -19,7 +19,7 @@
         },
         {
             "id": "incident_response",
-            "title": "Web3 Security Incident Response",
+            "title": "Decentralized Security Incident Response",
             "description": "Handling security breaches and contract vulnerabilities.",
             "bulletpoints": "Bug bounty programs, on-chain monitoring, emergency pause mechanisms",
             "summaryText": "Outline playbooks that combine bug bounties, real-time monitoring, and pause switches to contain on-chain incidents.",
@@ -29,7 +29,7 @@
         {
             "id": "decentralized_security",
             "title": "Zero-Trust & Decentralized Security",
-            "description": "Implementing decentralized security principles in Web3 architecture.",
+            "description": "Implementing decentralized security principles in distributed-ledger architecture.",
             "bulletpoints": "Multisig wallets, hardware security modules, decentralized key management",
             "summaryText": "Connect zero-trust philosophy with multisig custody, HSM usage, and resilient decentralized key management flows.",
             "duration": "50",

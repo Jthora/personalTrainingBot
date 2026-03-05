@@ -1,0 +1,76 @@
+{
+  "ts": "2026-03-05T12:42:16.319Z",
+  "base": "http://127.0.0.1:4176",
+  "telemetryOut": "artifacts/telemetry-headless.json",
+  "telemetryReport": "artifacts/telemetry-validate-report.json",
+  "telemetryDriftReport": "artifacts/telemetry-schema-drift-report.json",
+  "telemetryAuditReport": "artifacts/telemetry-audit-report.md",
+  "results": [
+    {
+      "name": "Deep links (online)",
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 19677
+    },
+    {
+      "name": "Deep links (offline cached)",
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 23965
+    },
+    {
+      "name": "Offline critical path",
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 12808
+    },
+    {
+      "name": "Offline recovery checks",
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 4866
+    },
+    {
+      "name": "Mission route payload report",
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 14012
+    },
+    {
+      "name": "Mission route payload budgets",
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 616
+    },
+    {
+      "name": "Mission render profile",
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 6971
+    },
+    {
+      "name": "Telemetry trigger",
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 23467
+    },
+    {
+      "name": "Telemetry validation",
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 621
+    },
+    {
+      "name": "Telemetry schema drift",
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 618
+    },
+    {
+      "name": "Telemetry audit report",
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 610
+    }
+  ]
+}

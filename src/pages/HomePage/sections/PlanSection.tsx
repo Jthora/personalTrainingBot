@@ -4,7 +4,11 @@ import TodaysPlanBanner from '../../../components/TodaysPlanBanner/TodaysPlanBan
 import UpNextCard from '../../../components/UpNextCard/UpNextCard';
 import WorkoutList from '../../../components/WorkoutList/WorkoutList';
 import styles from './PlanSection.module.css';
-import { logEvent } from '../../../utils/telemetry';
+import { trackEvent } from '../../../utils/telemetry';
+import ReadinessPanel from '../../../components/Readiness/ReadinessPanel';
+import MissionKitPanel from '../../../components/MissionKit/MissionKitPanel';
+import { getMissionSurfaceState } from '../../../store/missionFlow/routeState';
+import MissionRouteState from '../../../components/MissionRouteState/MissionRouteState';
 
 const PLAN_MODE_KEY = 'planMode';
 
@@ -34,7 +38,7 @@ const PlanSection: React.FC = () => {
     }, [mode]);
 
     const setMode = (nextMode: 'overview' | 'focus') => {
-        logEvent({ type: 'home_tab_switch', tab: nextMode === 'focus' ? '/home/plan?mode=focus' : '/home/plan' });
+        trackEvent({ category: 'ia', action: 'tab_view', route: nextMode === 'focus' ? '/mission/brief?mode=focus' : '/mission/brief', data: { tab: '/mission/brief', mode: nextMode, source: 'mode-switch' } });
         setParams((prev) => {
             const next = new URLSearchParams(prev);
             next.set('mode', nextMode);
@@ -42,18 +46,28 @@ const PlanSection: React.FC = () => {
         }, { replace: true });
     };
 
+    const routeState = getMissionSurfaceState('brief');
+    if (routeState.kind !== 'ready') {
+        return (
+            <section id="section-mission-kit" aria-label="Mission kit" className={styles.section}>
+                <MissionRouteState state={routeState} />
+            </section>
+        );
+    }
+
     return (
-        <section id="section-plan" aria-label="Plan" className={styles.section}>
+        <section id="section-mission-kit" aria-label="Mission kit" className={styles.section}>
+            <ReadinessPanel />
             <div className={styles.modeBar}>
-                <span className={styles.modeLabel}>Mode</span>
-                <div className={styles.modeButtons} role="group" aria-label="Plan mode">
+                <span className={styles.modeLabel}>Execution mode</span>
+                <div className={styles.modeButtons} role="group" aria-label="Mission flow mode">
                     <button
                         type="button"
                         className={`${styles.modeButton} ${mode === 'overview' ? styles.modeButtonActive : ''}`}
                         onClick={() => setMode('overview')}
                         aria-pressed={mode === 'overview'}
                     >
-                        Overview
+                        Briefing
                     </button>
                     <button
                         type="button"
@@ -61,10 +75,10 @@ const PlanSection: React.FC = () => {
                         onClick={() => setMode('focus')}
                         aria-pressed={mode === 'focus'}
                     >
-                        Focus mode
+                        Execute
                     </button>
                 </div>
-                <p className={styles.modeHelp}>Focus mode jumps into Training; Overview keeps you in planning.</p>
+                <p className={styles.modeHelp}>Briefing keeps you planning in the hub; Execute jumps straight into drills.</p>
             </div>
             <div className={styles.grid}>
                 <div className={styles.main}>
@@ -75,10 +89,7 @@ const PlanSection: React.FC = () => {
                     </div>
                 </div>
                 <div className={styles.side}>
-                    <div className={styles.infoCard}>
-                        <h2 className={styles.title}>Stay aligned</h2>
-                        <p className={styles.body}>Plan is your single source of truth. Start or resume training here and regenerate the plan when focus shifts.</p>
-                    </div>
+                    <MissionKitPanel />
                 </div>
             </div>
         </section>

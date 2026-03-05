@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-03-05T11:20:56.352Z",
+  "eventSchemas": {
+    "aar:aar_export": [
+      "id",
+      "role",
+      "title"
+    ],
+    "aar:aar_save": [
+      "id",
+      "role",
+      "title"
+    ],
+    "offline:offline_exit": [],
+    "readiness:score_render": [
+      "confidence",
+      "kitId",
+      "milestoneProgressPct",
+      "milestoneTier",
+      "progressionDelta",
+      "progressionTrend",
+      "score"
+    ],
+    "settings:preload_trigger": [
+      "phase"
+    ],
+    "signals:signal_create": [
+      "id",
+      "offline",
+      "role"
+    ],
+    "signals:signal_resolve": [
+      "id",
+      "offline",
+      "status"
+    ]
+  }
+}

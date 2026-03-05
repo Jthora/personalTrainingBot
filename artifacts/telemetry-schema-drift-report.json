@@ -1,0 +1,11 @@
+{
+  "baselinePath": "artifacts/telemetry-schema-baseline.json",
+  "eventsPath": "artifacts/telemetry-headless.json",
+  "mode": "compare",
+  "driftDetected": false,
+  "drift": {
+    "missingEventKeys": [],
+    "newEventKeys": [],
+    "changedDataKeys": []
+  }
+}

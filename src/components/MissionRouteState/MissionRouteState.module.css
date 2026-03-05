@@ -1,0 +1,76 @@
+.card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  background: var(--surface-card);
+  padding: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.card[data-tone='loading'] {
+  background: var(--mission-state-loading-bg);
+  border-color: var(--mission-state-loading-border);
+}
+
+.card[data-tone='empty'] {
+  background: var(--mission-state-empty-bg);
+  border-color: var(--mission-state-empty-border);
+}
+
+.card[data-tone='error'] {
+  background: var(--mission-state-error-bg);
+  border-color: var(--mission-state-error-border);
+}
+
+.title {
+  margin: 0;
+  font-size: var(--mission-type-h3);
+}
+
+.body {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: var(--mission-type-body);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.primary {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--coach-accent);
+  color: #0a0f1a;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.skeleton {
+  display: grid;
+  gap: 8px;
+}
+
+.skeletonLine,
+.skeletonLineShort {
+  height: 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.06));
+  background-size: 180% 100%;
+  animation: pulse 1.2s linear infinite;
+}
+
+.skeletonLineShort {
+  width: 60%;
+}
+
+@keyframes pulse {
+  from {
+    background-position: 180% 0;
+  }
+  to {
+    background-position: -180% 0;
+  }
+}

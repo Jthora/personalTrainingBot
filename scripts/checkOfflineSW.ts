@@ -22,10 +22,8 @@ const shardPath = args.get('shard') ?? '/training_modules_shards/fitness.json';
   let failed = false;
 
   try {
-    // Go online and enable flag
+    // Go online to allow SW registration
     await page.goto(base, { waitUntil: 'networkidle2' });
-    await page.evaluate(() => localStorage.setItem('sw:enable', 'true'));
-    await page.reload({ waitUntil: 'networkidle2' });
 
     // Wait for SW ready
     await page.waitForFunction(() => navigator.serviceWorker?.ready, { timeout: 8000 });

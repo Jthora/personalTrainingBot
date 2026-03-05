@@ -1,0 +1,446 @@
+# Progress Tracker (Solo Overhaul)
+
+- [ ] Program Reset: Execution-grade transmutation track
+  - [x] Step R.1: Treat prior stages as baseline hardening, not full persona refactor completion
+  - [x] Step R.2: Execute Stage 6+ as primary path to app-wide mission-console reconstruction
+
+## Priority Queue (Order of Operations)
+
+- P0 (Start now): Stage 6 → Step 5.1 (domain contracts + invariants)
+  - Why first: All route, UI, and telemetry work depends on stable canonical entities.
+  - Exit criteria: Tasks 5.1.1–5.1.3 complete with validation fixtures.
+
+- P1 (Immediately after P0): Stage 6 → Step 5.2 (legacy adapters)
+  - Why second: Enables migration without breaking current content sources.
+  - Exit criteria: Tasks 5.2.1–5.2.3 complete; drift report script passes.
+
+- P2 (Then): Stage 6 → Step 5.3 (canonical read path + flag)
+  - Why third: Needed before route reconstruction can safely consume new model.
+  - Exit criteria: Tasks 5.3.1–5.3.3 complete; deep-link matrix green in both modes.
+
+- P3: Stage 7 → Step 6.1 (navigation + route tree refactor)
+  - Why fourth: Route shells should be rebuilt only after canonical read path is usable.
+  - Exit criteria: Tasks 6.1.1–6.1.3 complete with legacy redirects in place.
+
+- P4: Stage 7 → Step 6.2 then 6.3 (state continuity, then loading/empty/error redesign)
+  - Why fifth: Continuity must be solved before polishing route states.
+  - Exit criteria: Tasks 6.2.1–6.2.3 complete before 6.3.1–6.3.3.
+
+- P5: Stage 8 → Step 7.1 then 7.2 then 7.3 (tokens → components → interactions)
+  - Why sixth: Interaction model should be built on finalized tokens/components.
+  - Exit criteria: Theming tokens applied before core components and keyboard model.
+
+- P6: Stage 9 → Step 8.1 then 8.2 then 8.3 (copy → exemplar ops → progression)
+  - Why seventh: Content language foundation precedes scenario authoring and scoring.
+  - Exit criteria: Copy sweep done before Operation Alpha/Bravo/Charlie production.
+
+- P7: Stage 10 → Step 9.1 then 9.2 then 9.3 (telemetry → offline/deeplink → perf)
+  - Why eighth: Observability must exist before confidence and optimization passes.
+  - Exit criteria: Telemetry contracts validated prior to full offline/perf hardening.
+
+- P8 (Final): Stage 11 → Step 10.1 then 10.2 then 10.3 (cutover → retire legacy → stabilize)
+  - Why last: Cutover only after all functional and reliability gates are green.
+  - Exit criteria: Mission-default enabled, rollback validated, stabilization protocol active.
+
+## Current Focus Lock
+
+- Active lane: P6 only (Stage 9, Step 8.1)
+- Do not start P6+ until P5 exit criteria are met.
+
+- [ ] Stage 1: Baseline and Guards
+  - [ ] Phase 0: Rewrites + SW Skeleton
+    - [ ] Step 0.1: Automated deep-link checks
+      - [x] Task 0.1.1: Build headless deep-link script (home, mission-kit, drills, training/execute, c/:slug, share/:slug)
+        - [x] Subtask 0.1.1.1: Prep routes/fixtures for script
+        - [x] Subtask 0.1.1.2: Add assertions for load/redirect states
+        - [x] Subtask 0.1.1.3: Emit structured errors on failure
+      - [ ] Task 0.1.2: Pipe results into telemetry-and-qa/test-matrix-deeplinks-offline (automation log)
+        - [x] Subtask 0.1.2.1: Log pass/fail per route from script output (matrix stub added; pending next run)
+        - [ ] Subtask 0.1.2.2: Note follow-ups in doc
+    - [x] Step 0.2: Add SW skeleton and offline indicator
+      - [x] Task 0.2.1: Implement SW install/activate with no-op precache
+        - [x] Subtask 0.2.1.1: Add SW registration in app shell
+        - [x] Subtask 0.2.1.2: Implement install/activate handlers
+        - [x] Subtask 0.2.1.3: Validate SW lifecycle via automated checks
+      - [x] Task 0.2.2: Add offline indicator UI toggle
+        - [x] Subtask 0.2.2.1: Add network listener hook
+        - [x] Subtask 0.2.2.2: Render indicator in header/Home
+      - [x] Task 0.2.3: Scripted verification of offline indicator
+        - [x] Subtask 0.2.3.1: Simulate network drop in test script and assert UI state
+
+- [ ] Stage 2: IA/Copy + Readiness Slice
+  - [ ] Phase 1: IA/Copy + Readiness
+    - [ ] Step 1.1: Rename IA to mission language
+      - [x] Task 1.1.1: Update nav labels and headers
+        - [x] Subtask 1.1.1.1: Update tab labels
+        - [x] Subtask 1.1.1.2: Update page headers/CTAs
+      - [ ] Task 1.1.2: Remove fitness/Web3 phrasing
+        - [ ] Subtask 1.1.2.1: Sweep copy for fitness/Web3 terms
+    - [ ] Step 1.2: Add readiness score + next actions on Home
+      - [x] Task 1.2.1: Implement local readiness model
+        - [x] Subtask 1.2.1.1: Define formula and inputs
+        - [x] Subtask 1.2.1.2: Code computation and decay
+        - [x] Subtask 1.2.1.3: Add unit tests (local)
+        - [x] Subtask 1.2.1.4: Seed with sample data
+      - [x] Task 1.2.2: Render score and two actions on Home
+        - [x] Subtask 1.2.2.1: Add UI component for score
+        - [x] Subtask 1.2.2.2: Add “next two actions” list
+        - [x] Subtask 1.2.2.3: Wire telemetry hooks
+    - [ ] Step 1.3: Minimal mission kit/drill content pack
+      - [x] Task 1.3.1: Create starter kits/drills JSON
+        - [x] Subtask 1.3.1.1: Draft mission kit schema instance
+        - [x] Subtask 1.3.1.2: Draft drills with steps
+        - [x] Subtask 1.3.1.3: Validate JSON against schema
+        - [x] Task 1.3.2: Wire to UI
+          - [x] Subtask 1.3.2.1: Load sample pack via store
+          - [x] Subtask 1.3.2.2: Render kits/drills lists
+          - [x] Subtask 1.3.2.3: Add visibility toggle (dev config)
+      - [x] Step 1.4: Privacy note and Web3 removal
+        - [x] Task 1.4.1: Hide/remove Web3 panel
+          - [x] Subtask 1.4.1.1: Remove UI entry points
+        - [x] Task 1.4.2: Add privacy note in Ops/Settings
+          - [x] Subtask 1.4.2.1: Draft privacy note copy
+          - [x] Subtask 1.4.2.2: Insert into Ops/Settings view
+
+- [ ] Stage 2a: Persona-first Ops UX (legacy bridge; superseded by Stage 6-11 depth track)
+    - [ ] Phase 1a: Ops IA + Components + Exemplar
+      - [ ] Step 1a.1: Reframe IA to operations flow
+        - [ ] Task 1a.1.1: Map mission flow (Brief → Triage Board → Case Detail → Signal Drill-Down → Action Checklist → Debrief)
+          - [ ] Subtask 1a.1.1.1: Draft route-to-route state transition diagram for the six-step mission flow
+          - [ ] Subtask 1a.1.1.2: Validate flow against existing deep-link constraints and update notes
+        - [ ] Task 1a.1.2: Update navigation labels/sections to match flow
+          - [ ] Subtask 1a.1.2.1: Inventory current nav labels and map to mission-first terminology
+          - [ ] Subtask 1a.1.2.2: Apply nav/content label updates and verify route discoverability
+        - [ ] Task 1a.1.3: Add empty/error states that teach investigative habits
+          - [ ] Subtask 1a.1.3.1: Define empty-state guidance patterns for each mission step
+          - [ ] Subtask 1a.1.3.2: Define error recovery copy with next-best investigative actions
+      - [ ] Step 1a.2: Define ops-grade UI system
+        - [ ] Task 1a.2.1: Palette/typography/iconography for Psi Operative (distinct from default stack)
+          - [ ] Subtask 1a.2.1.1: Propose semantic token set for threat/severity/readiness states
+          - [ ] Subtask 1a.2.1.2: Document typography and icon usage rules for mission surfaces
+        - [ ] Task 1a.2.2: Component spec: mission header, status chips/badges, triage board columns, evidence list, signal/lead cards, alert stack, timeline/map slot
+          - [ ] Subtask 1a.2.2.1: Define props/state contracts for each ops component primitive
+          - [ ] Subtask 1a.2.2.2: Capture component composition patterns per mission route
+        - [ ] Task 1a.2.3: Interaction patterns: split-pane layouts, quick actions, keyboard affordances
+          - [ ] Subtask 1a.2.3.1: Define split-pane layout breakpoints and panel priority behavior
+          - [ ] Subtask 1a.2.3.2: Define keyboard interaction map for triage and analysis actions
+      - [ ] Step 1a.3: Data/content reshape
+        - [ ] Task 1a.3.1: Define domain entities (operation, case, lead, signal, artifact, intel packet, after-action outcome)
+          - [ ] Subtask 1a.3.1.1: Draft entity schemas with required/optional fields and relationships
+          - [ ] Subtask 1a.3.1.2: Review entity lifecycle states for mission progression compatibility
+        - [ ] Task 1a.3.2: Convert one exemplar pack to new schema and wire to UI
+          - [ ] Subtask 1a.3.2.1: Select exemplar legacy pack and map fields into new schema
+          - [ ] Subtask 1a.3.2.2: Bind exemplar data to mission route views and verify rendering
+        - [ ] Task 1a.3.3: Add ROE/safety copy and guidance per exemplar
+          - [ ] Subtask 1a.3.3.1: Draft ROE and safety disclaimers for each exemplar mission step
+          - [ ] Subtask 1a.3.3.2: Insert guidance copy into UI states and review for clarity
+      - [ ] Step 1a.4: Debrief + guidance layer
+        - [ ] Task 1a.4.1: After-action template integrated into the exemplar flow
+          - [ ] Subtask 1a.4.1.1: Define structured debrief template fields and scoring prompts
+          - [ ] Subtask 1a.4.1.2: Wire template into mission completion route with persistence
+        - [ ] Task 1a.4.2: Inline SOP/checklist in Action Checklist step
+          - [ ] Subtask 1a.4.2.1: Draft SOP checklist items for pre-action and post-action checks
+          - [ ] Subtask 1a.4.2.2: Embed checklist UI into Action Checklist route state
+        - [ ] Task 1a.4.3: Telemetry hooks for mission flow milestones (local)
+          - [ ] Subtask 1a.4.3.1: Define milestone events and required payload fields
+          - [ ] Subtask 1a.4.3.2: Add local sink assertions for milestone event emission
+
+- [ ] Stage 3: Offline/Low-data + Drill Flow
+  - [ ] Phase 2: Offline + Low-data
+    - [ ] Step 2.1: Precache and runtime caching
+      - [x] Task 2.1.1: Define precache list (shell + starter pack)
+        - [x] Subtask 2.1.1.1: List assets and JSON to cache
+        - [x] Subtask 2.1.1.2: Size-check against budget
+      - [x] Task 2.1.2: Implement runtime caching for drills/assets
+        - [x] Subtask 2.1.2.1: Add SW routes for drills JSON
+        - [x] Subtask 2.1.2.2: Add caching strategy for media
+        - [x] Subtask 2.1.2.3: Handle versioning/cleanup
+        - [x] Subtask 2.1.2.4: Test cache hit/miss paths
+    - [x] Step 2.2: Preload/sync and low-data toggle
+      - [x] Task 2.2.1: Add preload/sync action
+        - [x] Subtask 2.2.1.1: Trigger fetch + cache warmup
+        - [x] Subtask 2.2.1.2: Show progress/state in UI
+      - [x] Task 2.2.2: Add low-data toggle and enforce budgets
+        - [x] Subtask 2.2.2.1: Add toggle in Ops/Settings
+        - [x] Subtask 2.2.2.2: Enforce low-data asset selection
+        - [x] Subtask 2.2.2.3: Verify reduced requests
+    - [x] Step 2.3: Drill run offline continuity
+      - [x] Task 2.3.1: Ensure drill run works offline after sync
+        - [x] Subtask 2.3.1.1: Test cached drill steps
+        - [x] Subtask 2.3.1.2: Handle re-entry mid-drill
+        - [x] Subtask 2.3.1.3: Queue telemetry while offline
+      - [x] Task 2.3.2: Add offline fallbacks for missing assets
+        - [x] Subtask 2.3.2.1: Text-first fallback when media absent
+        - [x] Subtask 2.3.2.2: User messaging for missing cache
+    - [ ] Step 2.4: Automated offline deep-link matrix
+      - [x] Task 2.4.1: Run headless offline matrix after sync
+        - [x] Subtask 2.4.1.1: Prepare cached state in setup script
+        - [x] Subtask 2.4.1.2: Execute offline cases per route
+        - [x] Subtask 2.4.1.3: Emit structured error logs on failure
+        - [x] Task 2.4.2: Log results in test-matrix doc
+          - [x] Subtask 2.4.2.1: Update pass/fail table from script output
+
+- [ ] Stage 4: Signals/AAR Stub
+  - [ ] Phase 3: Signals + AAR (local-only)
+    - [x] Step 3.1: Signals list with ack/resolve
+      - [x] Task 3.1.1: Implement local Signals list
+        - [x] Subtask 3.1.1.1: Data model and local storage
+        - [x] Subtask 3.1.1.2: List UI and filters
+        - [x] Subtask 3.1.1.3: Basic telemetry hooks
+      - [x] Task 3.1.2: Support ack/resolve and offline queue messaging
+        - [x] Subtask 3.1.2.1: Ack/resolve state transitions
+        - [x] Subtask 3.1.2.2: Offline queue notice copy
+        - [x] Subtask 3.1.2.3: Local persistence for queued actions
+    - [x] Step 3.2: AAR template and export
+      - [x] Task 3.2.1: Add AAR create/save locally
+        - [x] Subtask 3.2.1.1: Form fields and validation
+        - [x] Subtask 3.2.1.2: Local save with versioning
+        - [x] Subtask 3.2.1.3: Autosave and restore
+      - [x] Task 3.2.2: Support export/share (text/JSON)
+        - [x] Subtask 3.2.2.1: Generate text/JSON export
+        - [x] Subtask 3.2.2.2: Provide download/share action
+    - [x] Step 3.3: Role tags (lightweight)
+      - [x] Task 3.3.1: Add role labels to Signals/AAR entries
+        - [x] Subtask 3.3.1.1: Define role labels and colors
+      - [x] Task 3.3.2: Document assumptions/risks
+        - [x] Subtask 3.3.2.1: Note lack of enforced ACL
+
+- [ ] Stage 5: Telemetry/Automation and Rollout
+  - [ ] Cross-cutting: Telemetry, tests, delivery
+    - [ ] Step 4.1: Event taxonomy + logging
+      - [x] Task 4.1.1: Implement event emitters (console/local sink)
+        - [x] Subtask 4.1.1.1: Add emitter utility
+        - [x] Subtask 4.1.1.2: Wire to key flows (IA, readiness, offline, drills)
+        - [x] Subtask 4.1.1.3: Add log sampling/guards
+      - [x] Task 4.1.2: Automated validation of key events
+        - [x] Subtask 4.1.2.1: Write script to trigger flows headlessly
+        - [x] Subtask 4.1.2.2: Assert payload shapes and required fields (validation script emits JSON report)
+        - [x] Subtask 4.1.2.3: Capture findings in telemetry doc
+    - [x] Step 4.2: Automated test suites
+      - [x] Task 4.2.1: Finalize deep-link/offline test cases
+        - [x] Subtask 4.2.1.1: Enumerate cases and expected results
+        - [x] Subtask 4.2.1.2: Mark cadence for headless runs (per phase)
+      - [x] Task 4.2.2: Run headless smoke per phase and record results
+        - [x] Subtask 4.2.2.1: Execute smoke suite after each phase
+        - [x] Subtask 4.2.2.2: Log outcomes and defects automatically
+    - [x] Step 4.3: Deploy/rollback steps
+      - [x] Task 4.3.1: Document deploy/rollback steps
+        - [x] Subtask 4.3.1.1: Write deploy steps and defaults
+        - [x] Subtask 4.3.1.2: Note dependencies between features
+      - [x] Task 4.3.2: Scripted rollback verification
+        - [x] Subtask 4.3.2.1: Run sanity suite after rollback
+        - [x] Subtask 4.3.2.2: Document rollback timing and impacts
+    - [ ] Step 4.4: Monolith reductions
+      - [x] Task 4.4.1: Split WorkoutResultsPanel into subcomponents/helpers
+        - [x] Subtask 4.4.1.1: Extract result summary/presentation logic into focused components
+        - [x] Subtask 4.4.1.2: Move shared formatting/helpers into utility modules
+      - [x] Task 4.4.2: Split WorkoutScheduleStore into modular slices
+        - [x] Subtask 4.4.2.1: Separate schedule state domains into independent store slices
+        - [x] Subtask 4.4.2.2: Update selectors/actions to consume slice boundaries
+      - [x] Task 4.4.3: Split cardDeckPaths into shard modules + regenerate via script
+        - [x] Subtask 4.4.3.1: Partition path definitions into shard files by content domain
+        - [x] Subtask 4.4.3.2: Regenerate aggregate paths and verify output parity
+      - [x] Task 4.4.4: Split remaining >500 line files (none pending; next candidates <500 lines)
+        - [x] Subtask 4.4.4.1: Audit TypeScript source for files exceeding 500 lines
+        - [x] Subtask 4.4.4.2: Record next split candidates for proactive maintenance
+
+- [x] Stage 6: App-wide Domain Transmutation
+  - [x] Phase 5: Canonical domain model + migration adapters
+    - [x] Step 5.1: Define domain contracts and invariants
+      - [x] Task 5.1.1: Add schema/types for operation, case, lead, signal, artifact, intel packet, debrief outcome
+        - [x] Subtask 5.1.1.1: Create TypeScript interfaces/types for all canonical entities
+        - [x] Subtask 5.1.1.2: Add schema-level required field checks and example fixtures
+      - [x] Task 5.1.2: Define entity identity/versioning strategy and lifecycle states
+        - [x] Subtask 5.1.2.1: Define ID strategy and version metadata rules per entity
+        - [x] Subtask 5.1.2.2: Define lifecycle transition matrix with invalid transition guards
+      - [x] Task 5.1.3: Add validation utilities and fixture coverage for edge states
+        - [x] Subtask 5.1.3.1: Implement validation utility functions for schema and state invariants
+        - [x] Subtask 5.1.3.2: Add fixtures for edge states (partial data, invalid states, stale versions)
+    - [x] Step 5.2: Add legacy-to-new adapters
+      - [x] Task 5.2.1: Map legacy modules/submodules/decks/cards to canonical entities
+        - [x] Subtask 5.2.1.1: Author field mapping table from legacy structures to canonical model
+        - [x] Subtask 5.2.1.2: Identify unmapped legacy fields and decide keep/drop policy
+      - [x] Task 5.2.2: Build adapter layer with deterministic transformation outputs
+        - [x] Subtask 5.2.2.1: Implement transformation functions for each legacy content layer
+        - [x] Subtask 5.2.2.2: Add deterministic output tests using snapshot or strict equality checks
+      - [x] Task 5.2.3: Add migration drift report script (missing fields, invalid transitions)
+        - [x] Subtask 5.2.3.1: Build script to report schema gaps and transition violations
+        - [x] Subtask 5.2.3.2: Emit machine-readable report for CI/local review
+    - [x] Step 5.3: Adopt canonical read path
+      - [x] Task 5.3.1: Route current content loaders through adapter-backed canonical selectors
+        - [x] Subtask 5.3.1.1: Add canonical selectors for mission routes and shared widgets
+        - [x] Subtask 5.3.1.2: Switch loader usage to canonical selectors behind a compatibility shim
+      - [x] Task 5.3.2: Add feature flag to switch canonical path on/off
+        - [x] Subtask 5.3.2.1: Add runtime flag and default behavior for canonical read path
+        - [x] Subtask 5.3.2.2: Document toggle procedure for testing and rollback
+      - [x] Task 5.3.3: Validate no deep-link regressions under both paths
+        - [x] Subtask 5.3.3.1: Run deep-link matrix with canonical path enabled
+        - [x] Subtask 5.3.3.2: Run deep-link matrix with canonical path disabled and compare results
+
+- [x] Stage 7: Route and Flow Reconstruction
+  - [x] Phase 6: Mission-first UX architecture
+    - [x] Step 6.1: Navigation and route tree refactor
+      - [x] Task 6.1.1: Replace workout-centric IA with mission flow hierarchy
+        - [x] Subtask 6.1.1.1: Define mission route hierarchy and nav grouping
+        - [x] Subtask 6.1.1.2: Update route metadata, labels, and ordering to match mission flow
+      - [x] Task 6.1.2: Implement top-level routes for Brief, Triage, Case, Signal, Checklist, Debrief
+        - [x] Subtask 6.1.2.1: Add route definitions and shell pages for all six mission surfaces
+        - [x] Subtask 6.1.2.2: Connect shells to canonical data selectors with loading/error boundaries
+      - [x] Task 6.1.3: Add fallback/redirect behavior from legacy routes
+        - [x] Subtask 6.1.3.1: Define legacy-to-mission redirect map for deprecated paths
+        - [x] Subtask 6.1.3.2: Implement fallback handlers and verify deep-link compatibility
+    - [x] Step 6.2: Cross-route state continuity
+      - [x] Task 6.2.1: Persist active operation/case/signal context across route transitions
+        - [x] Subtask 6.2.1.1: Define shared context store for active mission entities
+        - [x] Subtask 6.2.1.2: Wire route transitions to preserve and restore active context
+      - [x] Task 6.2.2: Implement resume-on-reentry behavior for interrupted missions
+        - [x] Subtask 6.2.2.1: Persist checkpoint state on mission interruption events
+        - [x] Subtask 6.2.2.2: Restore checkpoint and guide user back to correct step on reentry
+      - [x] Task 6.2.3: Add deterministic URL state for shareable deep links
+        - [x] Subtask 6.2.3.1: Define URL param contract for operation/case/signal context
+        - [x] Subtask 6.2.3.2: Add encode/decode guards for invalid or stale URL state
+    - [x] Step 6.3: Error/empty/loading behavior redesign
+      - [x] Task 6.3.1: Mission-aware empty states (next action clarity)
+        - [x] Subtask 6.3.1.1: Define empty-state templates per mission route
+        - [x] Subtask 6.3.1.2: Add next-action CTAs to move user to valid mission step
+      - [x] Task 6.3.2: Failure states with investigation-safe recovery options
+        - [x] Subtask 6.3.2.1: Define recovery actions for network/data/render failures
+        - [x] Subtask 6.3.2.2: Implement failure-state components with actionable guidance
+      - [x] Task 6.3.3: Loading skeletons tuned for split-pane mission surfaces
+        - [x] Subtask 6.3.3.1: Design split-pane skeleton layouts for each core route
+        - [x] Subtask 6.3.3.2: Implement skeleton states and validate perceived-load behavior
+
+- [ ] Stage 8: Ops Design System + Interaction Model
+  - [ ] Phase 7: UI primitives and layout contracts
+    - [x] Step 7.1: Mission theming tokens
+      - [x] Task 7.1.1: Define semantic color tokens for severity/trust/state transitions
+        - [x] Subtask 7.1.1.1: Create severity/trust/state semantic token catalog
+        - [x] Subtask 7.1.1.2: Map tokens to component states and document usage constraints
+      - [x] Task 7.1.2: Define typography scale and hierarchy for ops console readability
+        - [x] Subtask 7.1.2.1: Define heading/body/mono text scales for dense mission layouts
+        - [x] Subtask 7.1.2.2: Apply and verify readability across major mission screens
+      - [x] Task 7.1.3: Define iconography mapping for signal, lead, artifact, threat classes
+        - [x] Subtask 7.1.3.1: Build icon mapping table by entity and severity class
+        - [x] Subtask 7.1.3.2: Validate icon semantics in triage and case detail views
+    - [x] Step 7.2: Core mission components
+      - [x] Task 7.2.1: Mission header (status, objective, timebox, readiness)
+        - [x] Subtask 7.2.1.1: Implement mission header layout and state variants
+        - [x] Subtask 7.2.1.2: Bind header to live operation context and readiness source
+      - [x] Task 7.2.2: Triage board components (columns, card density modes, priority badges)
+        - [x] Subtask 7.2.2.1: Implement column/card primitives with severity and status badges
+        - [x] Subtask 7.2.2.2: Add density/view mode toggles and persistence behavior
+      - [x] Task 7.2.3: Evidence/artifact list + detail viewer component pair
+        - [x] Subtask 7.2.3.1: Build artifact list with sorting/filter affordances
+        - [x] Subtask 7.2.3.2: Build detail viewer with metadata and action surface
+      - [x] Task 7.2.4: Alert stream and timeline band components
+        - [x] Subtask 7.2.4.1: Implement alert stream with severity/time grouping
+        - [x] Subtask 7.2.4.2: Implement timeline band with event markers and jump links
+    - [x] Step 7.3: Interaction system
+      - [x] Task 7.3.1: Keyboard-first triage actions (ack, escalate, defer, resolve)
+        - [x] Subtask 7.3.1.1: Define keyboard shortcut map for triage state transitions
+        - [x] Subtask 7.3.1.2: Implement shortcut handlers with focus-safe execution
+      - [x] Task 7.3.2: Multi-pane focus management and accessibility labels
+        - [x] Subtask 7.3.2.1: Implement focus trap/restore behavior across split panes
+        - [x] Subtask 7.3.2.2: Add accessible labels/roles for mission-critical controls
+      - [x] Task 7.3.3: Fast action palette for mission-critical shortcuts
+        - [x] Subtask 7.3.3.1: Implement command palette trigger and searchable actions
+        - [x] Subtask 7.3.3.2: Integrate mission context actions into palette results
+
+- [ ] Stage 9: Content and Scenario Production
+  - [ ] Phase 8: Mission content overhaul
+    - [ ] Step 8.1: Copy rewrite and lexicon enforcement
+      - [x] Task 8.1.1: Replace remaining fitness/Web3 terminology in all visible strings
+        - [x] Subtask 8.1.1.1: Run targeted copy sweep across UI strings and data content names
+        - [x] Subtask 8.1.1.2: Review and approve replacements against mission lexicon rules
+      - [x] Task 8.1.2: Add mission lexicon lint checklist for future copy edits
+        - [x] Subtask 8.1.2.1: Define forbidden/required terminology checklist
+        - [x] Subtask 8.1.2.2: Add checklist to contribution docs and review workflow
+      - [x] Task 8.1.3: Apply SOP/ROE tone across system messaging
+        - [x] Subtask 8.1.3.1: Draft SOP/ROE style guide for alerts, prompts, and guidance
+        - [x] Subtask 8.1.3.2: Rewrite key system messages and validate tone consistency
+    - [x] Step 8.2: Exemplar operations
+      - [x] Task 8.2.1: Build Operation Alpha (introductory triage + debrief)
+        - [x] Subtask 8.2.1.1: Author Operation Alpha narrative, entities, and step sequence
+        - [x] Subtask 8.2.1.2: Validate end-to-end run through all mission routes
+      - [x] Task 8.2.2: Build Operation Bravo (signal-heavy analysis workflow)
+        - [x] Subtask 8.2.2.1: Author Operation Bravo signal set and analysis branches
+        - [x] Subtask 8.2.2.2: Validate signal drill-down and decision outcomes
+      - [x] Task 8.2.3: Build Operation Charlie (artifact-chain decision workflow)
+        - [x] Subtask 8.2.3.1: Author Operation Charlie artifact chain and dependencies
+        - [x] Subtask 8.2.3.2: Validate artifact navigation and decision traceability
+    - [x] Step 8.3: Training progression model
+      - [x] Task 8.3.1: Define competency dimensions and scoring rubric
+        - [x] Subtask 8.3.1.1: Define competency categories and weighted scoring rules
+        - [x] Subtask 8.3.1.2: Map mission actions to competency score inputs
+      - [x] Task 8.3.2: Tie debrief outcomes to readiness and progression
+        - [x] Subtask 8.3.2.1: Define debrief-to-readiness update formula and constraints
+        - [x] Subtask 8.3.2.2: Implement progression updates from debrief completion events
+      - [x] Task 8.3.3: Add mission completion milestones and unlock criteria
+        - [x] Subtask 8.3.3.1: Define milestone tiers and unlock prerequisites
+        - [x] Subtask 8.3.3.2: Surface milestone progress in mission and home views
+
+- [x] Stage 10: Reliability, Telemetry, and QA Hardening
+  - [x] Phase 9: End-to-end confidence gates
+    - [x] Step 9.1: Telemetry taxonomy expansion
+      - [x] Task 9.1.1: Define event contracts for every mission step transition
+        - [x] Subtask 9.1.1.1: Create event contract table for all mission route transitions
+        - [x] Subtask 9.1.1.2: Add required/optional payload field definitions per event
+      - [x] Task 9.1.2: Add payload validation tests and schema drift checks
+        - [x] Subtask 9.1.2.1: Implement automated payload schema validation tests
+        - [x] Subtask 9.1.2.2: Add schema drift detector to compare emitted payloads over time
+      - [x] Task 9.1.3: Generate human-readable telemetry audit reports per run
+        - [x] Subtask 9.1.3.1: Add report formatter for telemetry validation output
+        - [x] Subtask 9.1.3.2: Publish per-run summary artifacts for manual review
+    - [x] Step 9.2: Offline and deep-link coverage expansion
+      - [x] Task 9.2.1: Extend deep-link matrix to all mission routes and states
+        - [x] Subtask 9.2.1.1: Add mission route permutations to deep-link matrix spec
+        - [x] Subtask 9.2.1.2: Implement matrix automation updates for new state parameters
+      - [x] Task 9.2.2: Validate offline continuity for synced mission critical path
+        - [x] Subtask 9.2.2.1: Define offline critical path checkpoints across mission flow
+        - [x] Subtask 9.2.2.2: Execute offline runbook and capture pass/fail evidence
+      - [x] Task 9.2.3: Add cache corruption and stale-data recovery tests
+        - [x] Subtask 9.2.3.1: Simulate cache corruption scenarios and expected recovery behavior
+        - [x] Subtask 9.2.3.2: Add stale-data invalidation tests for mission content updates
+    - [x] Step 9.3: Performance and bundle control
+      - [x] Task 9.3.1: Establish per-route payload budgets for mission surfaces
+        - [x] Subtask 9.3.1.1: Measure current payload sizes per mission route
+        - [x] Subtask 9.3.1.2: Define and document budget thresholds by route tier
+      - [x] Task 9.3.2: Add CI guard script for budget regressions
+        - [x] Subtask 9.3.2.1: Implement script to compare build artifacts against route budgets
+        - [x] Subtask 9.3.2.2: Wire budget guard into CI and local validation commands
+      - [x] Task 9.3.3: Tune rendering hotspots in triage/case/detail surfaces
+        - [x] Subtask 9.3.3.1: Profile render cycles for triage/case/detail components
+        - [x] Subtask 9.3.3.2: Implement targeted memoization and state partitioning fixes
+
+- [x] Stage 11: Cutover, Deprecation, and Rollback Safety
+  - [x] Phase 10: Controlled migration to mission-default app
+    - [x] Step 10.1: Progressive cutover
+      - [x] Task 10.1.1: Add feature-flag strategy for route-level rollout
+        - [x] Subtask 10.1.1.1: Define flag matrix by route/surface and environment
+        - [x] Subtask 10.1.1.2: Implement runtime gating and fallback behavior per flag
+      - [x] Task 10.1.2: Run mixed-mode validation (legacy + mission routes)
+        - [x] Subtask 10.1.2.1: Create mixed-mode test scenarios across shared user journeys
+        - [x] Subtask 10.1.2.2: Execute validation and record incompatibility defects
+      - [x] Task 10.1.3: Enable mission-default in staging profile
+        - [x] Subtask 10.1.3.1: Update staging defaults to mission-first route set
+        - [x] Subtask 10.1.3.2: Run staging smoke and rollback drill before sign-off
+    - [x] Step 10.2: Legacy path retirement
+      - [x] Task 10.2.1: Redirect or remove obsolete workout-centric routes
+        - [x] Subtask 10.2.1.1: Identify obsolete routes and assign redirect targets
+        - [x] Subtask 10.2.1.2: Implement redirects/removals and validate deep-link behavior
+      - [x] Task 10.2.2: Remove dead data structures and unused services
+        - [x] Subtask 10.2.2.1: Inventory dead schemas/services after mission-default cutover
+        - [x] Subtask 10.2.2.2: Remove unused code paths and verify build/test stability
+      - [x] Task 10.2.3: Finalize migration notes and compatibility constraints
+        - [x] Subtask 10.2.3.1: Document final migration decisions and deprecated features
+        - [x] Subtask 10.2.3.2: Publish compatibility constraints for long-term maintenance
+    - [x] Step 10.3: Rollback and stabilization
+      - [x] Task 10.3.1: Validate one-command rollback for mission-default flag
+        - [x] Subtask 10.3.1.1: Implement rollback command/script and verify execution path
+        - [x] Subtask 10.3.1.2: Validate data/state integrity after rollback
+      - [x] Task 10.3.2: Run post-rollback smoke and telemetry sanity checks
+        - [x] Subtask 10.3.2.1: Execute smoke suite immediately after rollback
+        - [x] Subtask 10.3.2.2: Confirm telemetry events continue to validate post-rollback
+      - [x] Task 10.3.3: Define stabilization window and defect triage protocol
+        - [x] Subtask 10.3.3.1: Define stabilization duration and quality thresholds
+        - [x] Subtask 10.3.3.2: Define defect triage cadence and severity routing rules

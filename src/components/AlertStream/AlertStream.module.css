@@ -1,0 +1,72 @@
+@import '../../styles/theme.css';
+
+.panel {
+  display: grid;
+  gap: 10px;
+}
+
+.title {
+  margin: 0;
+  font-size: var(--mission-type-h3);
+}
+
+.group {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 8px;
+  background: var(--surface-muted);
+  display: grid;
+  gap: 8px;
+}
+
+.groupHeader {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--mission-type-caption);
+  font-weight: 700;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 7px;
+}
+
+.item {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 7px;
+  background: var(--surface-card);
+  display: grid;
+  gap: 4px;
+}
+
+.itemTitle {
+  margin: 0;
+  font-size: var(--mission-type-body);
+}
+
+.itemBody {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: var(--mission-type-caption);
+}
+
+.itemMeta {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 11px;
+}
+
+.status {
+  margin-left: 4px;
+}
+
+.empty {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: var(--mission-type-caption);
+}

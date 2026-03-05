@@ -1,0 +1,55 @@
+import type { CardDeckPathMap } from "./common";
+import { createShardLoaders } from "./common";
+
+const selfSovereigntyDecks = createShardLoaders(
+    "self_sovereignty",
+    [
+        "self_sovereignty_breaking_narcissistic_bonds_cord_cutting_rituals",
+        "self_sovereignty_breaking_narcissistic_bonds_emotional_freedom_exercises",
+        "self_sovereignty_breaking_narcissistic_bonds_no_contact_protocols",
+        "self_sovereignty_emotional_flashback_control_emotional_resilience_exercises",
+        "self_sovereignty_emotional_flashback_control_flashback_grounding_methods",
+        "self_sovereignty_emotional_flashback_control_memory_repatterning",
+        "self_sovereignty_gaslighting_defense_logical_self_trust",
+        "self_sovereignty_gaslighting_defense_spotting_toxic_patterns",
+        "self_sovereignty_gaslighting_defense_verbal_self_defense",
+        "self_sovereignty_generational_curse_breaking_ancestral_pattern_identification",
+        "self_sovereignty_generational_curse_breaking_epigenetic_reprogramming",
+        "self_sovereignty_generational_curse_breaking_ritual_of_cord_severance",
+        "self_sovereignty_high_stakes_psychological_warfare_battlefield_mind_games",
+        "self_sovereignty_high_stakes_psychological_warfare_covert_influence_tactics",
+        "self_sovereignty_high_stakes_psychological_warfare_narcissist_disarmament",
+        "self_sovereignty_identity_reconstruction_core_value_realignment",
+        "self_sovereignty_identity_reconstruction_releasing_false_labels",
+        "self_sovereignty_identity_reconstruction_true_self_discovery",
+        "self_sovereignty_intuition_strengthening_navigating_with_inner_vision",
+        "self_sovereignty_intuition_strengthening_pattern_decoding",
+        "self_sovereignty_intuition_strengthening_third_eye_awareness",
+        "self_sovereignty_mental_fortress_tactics_emotional_resilience_protocols",
+        "self_sovereignty_mental_fortress_tactics_gaslighting_countermeasures",
+        "self_sovereignty_mental_fortress_tactics_psychic_barrier_training",
+        "self_sovereignty_narcissist_proofing_your_life_emotional_fortification",
+        "self_sovereignty_narcissist_proofing_your_life_red_flag_detection",
+        "self_sovereignty_narcissist_proofing_your_life_strategic_social_fortress",
+        "self_sovereignty_power_posture_and_speech_alpha_posture_training",
+        "self_sovereignty_power_posture_and_speech_nonverbal_authority_signals",
+        "self_sovereignty_power_posture_and_speech_vocal_power_exercises",
+        "self_sovereignty_psychic_energy_shielding_energetic_boundary_creation",
+        "self_sovereignty_psychic_energy_shielding_mirror_shielding_techniques",
+        "self_sovereignty_psychic_energy_shielding_warding_against_energy_vampires",
+        "self_sovereignty_ritual_detachment_exercises_ceremonial_disengagement",
+        "self_sovereignty_ritual_detachment_exercises_object_purging_methods",
+        "self_sovereignty_ritual_detachment_exercises_spiritual_cleansing_protocols",
+        "self_sovereignty_sovereign_mindset_programming_mental_autonomy_exercises",
+        "self_sovereignty_sovereign_mindset_programming_rewriting_life_narratives",
+        "self_sovereignty_sovereign_mindset_programming_self_authorization_practices",
+        "self_sovereignty_strategic_social_disengagement_controlled_information_sharing",
+        "self_sovereignty_strategic_social_disengagement_red_flag_detection",
+        "self_sovereignty_strategic_social_disengagement_stealth_exit_strategies",
+        "self_sovereignty_trauma_alchemy_emotional_transmutation",
+        "self_sovereignty_trauma_alchemy_narrative_reframing",
+        "self_sovereignty_trauma_alchemy_pain_into_purpose"
+    ] as const
+);
+
+export default selfSovereigntyDecks as CardDeckPathMap;

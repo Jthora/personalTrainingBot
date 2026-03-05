@@ -1,25 +1,6 @@
-const FLAG_KEY = 'sw:enable';
-
-const isEnabled = () => {
-  if (typeof window === 'undefined') return false;
-  return window.localStorage.getItem(FLAG_KEY) === 'true';
-};
-
-const setFlag = (value: boolean) => {
-  try {
-    window.localStorage.setItem(FLAG_KEY, value ? 'true' : 'false');
-  } catch {
-    /* ignore */
-  }
-};
-
-export const enableServiceWorker = () => setFlag(true);
-export const disableServiceWorker = () => setFlag(false);
-
-export async function registerServiceWorkerIfEnabled() {
+export async function registerServiceWorker() {
   if (import.meta.env.DEV) return;
   if (typeof navigator === 'undefined' || !('serviceWorker' in navigator)) return;
-  if (!isEnabled()) return;
 
   try {
     const reg = await navigator.serviceWorker.register('/sw.js');

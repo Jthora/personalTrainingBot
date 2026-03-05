@@ -1,7 +1,7 @@
 {
     "id": "blockchain_pen_testing",
     "name": "Blockchain Penetration Testing",
-    "description": "Testing the security of blockchain networks and Web3 applications.",
+    "description": "Testing the security of blockchain networks and decentralized applications.",
     "focus": [
         "Attack Simulation",
         "Smart Contract Exploits",
@@ -28,8 +28,8 @@
         },
         {
             "id": "web3_testing",
-            "title": "Web3 dApp Security Testing",
-            "description": "Identifying vulnerabilities in Web3 frontends and smart contract interactions.",
+            "title": "Decentralized dApp Security Testing",
+            "description": "Identifying vulnerabilities in decentralized frontends and smart contract interactions.",
             "bulletpoints": "Metamask phishing, API abuse, RPC endpoint security",
             "summaryText": "Highlight phishing entry points in wallet flows, probe API and RPC misuse, and align fixes with least-privilege design.",
             "duration": "50",

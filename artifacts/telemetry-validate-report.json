@@ -1,0 +1,34 @@
+{
+  "total": 11,
+  "summary": [
+    {
+      "key": "offline:offline_exit",
+      "count": 4
+    },
+    {
+      "key": "readiness:score_render",
+      "count": 2
+    },
+    {
+      "key": "signals:signal_create",
+      "count": 1
+    },
+    {
+      "key": "signals:signal_resolve",
+      "count": 1
+    },
+    {
+      "key": "aar:aar_save",
+      "count": 1
+    },
+    {
+      "key": "aar:aar_export",
+      "count": 1
+    },
+    {
+      "key": "settings:preload_trigger",
+      "count": 1
+    }
+  ],
+  "issues": []
+}

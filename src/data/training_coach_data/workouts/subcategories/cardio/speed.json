@@ -455,6 +455,7 @@
                     "duration": "30 seconds",
                     "intensity": "High",
                     "speed": 3,
+                    "description": "Set treadmill to speed 3.0 and sprint for 30 seconds; focus on quick turnover.",
                     "difficulty_range": [0, 1]
                 },
                 {
@@ -462,6 +463,7 @@
                     "duration": "1 minute",
                     "intensity": "High",
                     "speed": 3.5,
+                    "description": "Run at speed 3.5 for one minute; maintain posture and steady breathing.",
                     "difficulty_range": [0, 2]
                 },
                 {
@@ -469,6 +471,7 @@
                     "duration": "3 minutes",
                     "intensity": "High",
                     "speed": 4,
+                    "description": "Sprint for three minutes at speed 4.0; use light incline if available.",
                     "difficulty_range": [0, 3]
                 },
                 {
@@ -476,6 +479,7 @@
                     "duration": "5 minutes",
                     "intensity": "High",
                     "speed": 5,
+                    "description": "Hold speed 5.0 for five minutes; focus on even pacing and mid-foot strike.",
                     "difficulty_range": [1, 3]
                 },
                 {
@@ -483,6 +487,7 @@
                     "duration": "6 minutes",
                     "intensity": "High",
                     "speed": 5.2,
+                    "description": "Sustain speed 5.2 for six minutes; relax shoulders and drive knees.",
                     "difficulty_range": [1, 3]
                 },
                 {
@@ -490,6 +495,7 @@
                     "duration": "8 minutes",
                     "intensity": "High",
                     "speed": 5.5,
+                    "description": "Hold speed 5.5 for eight minutes; keep cadence consistent.",
                     "difficulty_range": [1, 3]
                 },
                 {
@@ -497,6 +503,7 @@
                     "duration": "10 minutes",
                     "intensity": "High",
                     "speed": 5.8,
+                    "description": "Run at speed 5.8 for ten minutes; control breathing every few strides.",
                     "difficulty_range": [2, 4]
                 },
                 {
@@ -504,6 +511,7 @@
                     "duration": "11 minutes",
                     "intensity": "High",
                     "speed": 6.0,
+                    "description": "Maintain speed 6.0 for eleven minutes; keep stride light.",
                     "difficulty_range": [2, 4]
                 },
                 {
@@ -511,6 +519,7 @@
                     "duration": "13 minutes",
                     "intensity": "High",
                     "speed": 6.2,
+                    "description": "Hold speed 6.2 for thirteen minutes; check arm swing stays compact.",
                     "difficulty_range": [3, 4]
                 },
                 {
@@ -518,6 +527,7 @@
                     "duration": "15 minutes",
                     "intensity": "High",
                     "speed": 6.5,
+                    "description": "Run at speed 6.5 for fifteen minutes; steady breath every three steps.",
                     "difficulty_range": [3, 5]
                 },
                 {
@@ -525,6 +535,7 @@
                     "duration": "16 minutes",
                     "intensity": "High",
                     "speed": 6.9,
+                    "description": "Maintain speed 6.9 for sixteen minutes; relax grip on handrails.",
                     "difficulty_range": [3, 6]
                 },
                 {
@@ -532,6 +543,7 @@
                     "duration": "18 minutes",
                     "intensity": "High",
                     "speed": 7.3,
+                    "description": "Stay at speed 7.3 for eighteen minutes; keep hips level.",
                     "difficulty_range": [4, 6]
                 },
                 {
@@ -539,6 +551,7 @@
                     "duration": "20 minutes",
                     "intensity": "High",
                     "speed": 7.6,
+                    "description": "Run twenty minutes at speed 7.6; focus on steady cadence.",
                     "difficulty_range": [4, 7]
                 },
                 {
@@ -546,6 +559,7 @@
                     "duration": "21 minutes",
                     "intensity": "High",
                     "speed": 7.9,
+                    "description": "Hold speed 7.9 for twenty-one minutes; monitor breathing rhythm.",
                     "difficulty_range": [5, 7]
                 },
                 {
@@ -553,6 +567,7 @@
                     "duration": "22 minutes",
                     "intensity": "High",
                     "speed": 8.2,
+                    "description": "Run at speed 8.2 for twenty-two minutes; maintain tall posture.",
                     "difficulty_range": [5, 8]
                 },
                 {
@@ -560,6 +575,7 @@
                     "duration": "23 minutes",
                     "intensity": "High",
                     "speed": 8.0,
+                    "description": "Keep speed 8.0 for twenty-three minutes; focus on smooth stride.",
                     "difficulty_range": [6, 9]
                 },
                 {
@@ -567,6 +583,7 @@
                     "duration": "25 minutes",
                     "intensity": "High",
                     "speed": 8.1,
+                    "description": "Maintain speed 8.1 for twenty-five minutes; settle into relaxed rhythm.",
                     "difficulty_range": [7, 9]
                 },
                 {
@@ -574,6 +591,7 @@
                     "duration": "26 minutes",
                     "intensity": "High",
                     "speed": 8.3,
+                    "description": "Run twenty-six minutes at speed 8.3; keep strides short and quick.",
                     "difficulty_range": [7, 10]
                 },
                 {
@@ -581,6 +599,7 @@
                     "duration": "28 minutes",
                     "intensity": "High",
                     "speed": 8.5,
+                    "description": "Stay at speed 8.5 for twenty-eight minutes; check breathing every minute.",
                     "difficulty_range": [8, 10]
                 },
                 {
@@ -588,6 +607,7 @@
                     "duration": "30 minutes",
                     "intensity": "High",
                     "speed": 8.7,
+                    "description": "Hold speed 8.7 for thirty minutes; stay relaxed through shoulders.",
                     "difficulty_range": [8, 11]
                 }
             ]

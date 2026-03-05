@@ -1,0 +1,780 @@
+{
+  "generatedAt": "2026-03-05T12:41:43.386Z",
+  "base": "http://127.0.0.1:4176",
+  "routes": [
+    {
+      "route": "/mission/brief",
+      "tier": "tier_1_core",
+      "transferBytes": 3886888,
+      "maxTransferBytes": 8396800,
+      "pass": true,
+      "assets": [
+        {
+          "url": "http://127.0.0.1:4176/assets/index-D-7tzUwo.js",
+          "path": "/assets/index-D-7tzUwo.js",
+          "resourceType": "script",
+          "transferSize": 623668
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/counter_psyops.json",
+          "path": "/training_modules_shards/counter_psyops.json",
+          "resourceType": "fetch",
+          "transferSize": 441515
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/self_sovereignty.json",
+          "path": "/training_modules_shards/self_sovereignty.json",
+          "resourceType": "fetch",
+          "transferSize": 306075
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/WingCommanderLogo-288x162-Dr7UFZxN.gif",
+          "path": "/assets/WingCommanderLogo-288x162-Dr7UFZxN.gif",
+          "resourceType": "image",
+          "transferSize": 305498
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/vendor-DQgFcZXp.js",
+          "path": "/assets/vendor-DQgFcZXp.js",
+          "resourceType": "script",
+          "transferSize": 290128
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/equations.json",
+          "path": "/training_modules_shards/equations.json",
+          "resourceType": "fetch",
+          "transferSize": 279844
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/anti_tcs_idc_cbc.json",
+          "path": "/training_modules_shards/anti_tcs_idc_cbc.json",
+          "resourceType": "fetch",
+          "transferSize": 249852
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/react-vendor-Bmv8S_O3.js",
+          "path": "/assets/react-vendor-Bmv8S_O3.js",
+          "resourceType": "script",
+          "transferSize": 218492
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/anti_psn.json",
+          "path": "/training_modules_shards/anti_psn.json",
+          "resourceType": "fetch",
+          "transferSize": 217627
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/intelligence.json",
+          "path": "/training_modules_shards/intelligence.json",
+          "resourceType": "fetch",
+          "transferSize": 109291
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/space_force.json",
+          "path": "/training_modules_shards/space_force.json",
+          "resourceType": "fetch",
+          "transferSize": 98956
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/psiops.json",
+          "path": "/training_modules_shards/psiops.json",
+          "resourceType": "fetch",
+          "transferSize": 59599
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/cybersecurity.json",
+          "path": "/training_modules_shards/cybersecurity.json",
+          "resourceType": "fetch",
+          "transferSize": 57556
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/Aldrich-Regular-BJ2Af9cL.ttf",
+          "path": "/assets/Aldrich-Regular-BJ2Af9cL.ttf",
+          "resourceType": "font",
+          "transferSize": 53324
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/index-0ziqKgZ6.css",
+          "path": "/assets/index-0ziqKgZ6.css",
+          "resourceType": "stylesheet",
+          "transferSize": 50623
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/fitness.json",
+          "path": "/training_modules_shards/fitness.json",
+          "resourceType": "fetch",
+          "transferSize": 49118
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/martial_arts.json",
+          "path": "/training_modules_shards/martial_arts.json",
+          "resourceType": "fetch",
+          "transferSize": 45215
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/scheduler-B_9kHmRz.js",
+          "path": "/assets/scheduler-B_9kHmRz.js",
+          "resourceType": "script",
+          "transferSize": 39584
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/counter_biochem.json",
+          "path": "/training_modules_shards/counter_biochem.json",
+          "resourceType": "fetch",
+          "transferSize": 39337
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/web_three.json",
+          "path": "/training_modules_shards/web_three.json",
+          "resourceType": "fetch",
+          "transferSize": 31491
+        }
+      ]
+    },
+    {
+      "route": "/mission/triage",
+      "tier": "tier_1_core",
+      "transferBytes": 3886888,
+      "maxTransferBytes": 8396800,
+      "pass": true,
+      "assets": [
+        {
+          "url": "http://127.0.0.1:4176/assets/index-D-7tzUwo.js",
+          "path": "/assets/index-D-7tzUwo.js",
+          "resourceType": "script",
+          "transferSize": 623668
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/counter_psyops.json",
+          "path": "/training_modules_shards/counter_psyops.json",
+          "resourceType": "fetch",
+          "transferSize": 441515
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/self_sovereignty.json",
+          "path": "/training_modules_shards/self_sovereignty.json",
+          "resourceType": "fetch",
+          "transferSize": 306075
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/WingCommanderLogo-288x162-Dr7UFZxN.gif",
+          "path": "/assets/WingCommanderLogo-288x162-Dr7UFZxN.gif",
+          "resourceType": "image",
+          "transferSize": 305498
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/vendor-DQgFcZXp.js",
+          "path": "/assets/vendor-DQgFcZXp.js",
+          "resourceType": "script",
+          "transferSize": 290128
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/equations.json",
+          "path": "/training_modules_shards/equations.json",
+          "resourceType": "fetch",
+          "transferSize": 279844
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/anti_tcs_idc_cbc.json",
+          "path": "/training_modules_shards/anti_tcs_idc_cbc.json",
+          "resourceType": "fetch",
+          "transferSize": 249852
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/react-vendor-Bmv8S_O3.js",
+          "path": "/assets/react-vendor-Bmv8S_O3.js",
+          "resourceType": "script",
+          "transferSize": 218492
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/anti_psn.json",
+          "path": "/training_modules_shards/anti_psn.json",
+          "resourceType": "fetch",
+          "transferSize": 217627
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/intelligence.json",
+          "path": "/training_modules_shards/intelligence.json",
+          "resourceType": "fetch",
+          "transferSize": 109291
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/space_force.json",
+          "path": "/training_modules_shards/space_force.json",
+          "resourceType": "fetch",
+          "transferSize": 98956
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/psiops.json",
+          "path": "/training_modules_shards/psiops.json",
+          "resourceType": "fetch",
+          "transferSize": 59599
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/cybersecurity.json",
+          "path": "/training_modules_shards/cybersecurity.json",
+          "resourceType": "fetch",
+          "transferSize": 57556
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/Aldrich-Regular-BJ2Af9cL.ttf",
+          "path": "/assets/Aldrich-Regular-BJ2Af9cL.ttf",
+          "resourceType": "font",
+          "transferSize": 53324
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/index-0ziqKgZ6.css",
+          "path": "/assets/index-0ziqKgZ6.css",
+          "resourceType": "stylesheet",
+          "transferSize": 50623
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/fitness.json",
+          "path": "/training_modules_shards/fitness.json",
+          "resourceType": "fetch",
+          "transferSize": 49118
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/martial_arts.json",
+          "path": "/training_modules_shards/martial_arts.json",
+          "resourceType": "fetch",
+          "transferSize": 45215
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/scheduler-B_9kHmRz.js",
+          "path": "/assets/scheduler-B_9kHmRz.js",
+          "resourceType": "script",
+          "transferSize": 39584
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/counter_biochem.json",
+          "path": "/training_modules_shards/counter_biochem.json",
+          "resourceType": "fetch",
+          "transferSize": 39337
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/web_three.json",
+          "path": "/training_modules_shards/web_three.json",
+          "resourceType": "fetch",
+          "transferSize": 31491
+        }
+      ]
+    },
+    {
+      "route": "/mission/checklist",
+      "tier": "tier_1_core",
+      "transferBytes": 3886888,
+      "maxTransferBytes": 8396800,
+      "pass": true,
+      "assets": [
+        {
+          "url": "http://127.0.0.1:4176/assets/index-D-7tzUwo.js",
+          "path": "/assets/index-D-7tzUwo.js",
+          "resourceType": "script",
+          "transferSize": 623668
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/counter_psyops.json",
+          "path": "/training_modules_shards/counter_psyops.json",
+          "resourceType": "fetch",
+          "transferSize": 441515
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/self_sovereignty.json",
+          "path": "/training_modules_shards/self_sovereignty.json",
+          "resourceType": "fetch",
+          "transferSize": 306075
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/WingCommanderLogo-288x162-Dr7UFZxN.gif",
+          "path": "/assets/WingCommanderLogo-288x162-Dr7UFZxN.gif",
+          "resourceType": "image",
+          "transferSize": 305498
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/vendor-DQgFcZXp.js",
+          "path": "/assets/vendor-DQgFcZXp.js",
+          "resourceType": "script",
+          "transferSize": 290128
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/equations.json",
+          "path": "/training_modules_shards/equations.json",
+          "resourceType": "fetch",
+          "transferSize": 279844
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/anti_tcs_idc_cbc.json",
+          "path": "/training_modules_shards/anti_tcs_idc_cbc.json",
+          "resourceType": "fetch",
+          "transferSize": 249852
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/react-vendor-Bmv8S_O3.js",
+          "path": "/assets/react-vendor-Bmv8S_O3.js",
+          "resourceType": "script",
+          "transferSize": 218492
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/anti_psn.json",
+          "path": "/training_modules_shards/anti_psn.json",
+          "resourceType": "fetch",
+          "transferSize": 217627
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/intelligence.json",
+          "path": "/training_modules_shards/intelligence.json",
+          "resourceType": "fetch",
+          "transferSize": 109291
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/space_force.json",
+          "path": "/training_modules_shards/space_force.json",
+          "resourceType": "fetch",
+          "transferSize": 98956
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/psiops.json",
+          "path": "/training_modules_shards/psiops.json",
+          "resourceType": "fetch",
+          "transferSize": 59599
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/cybersecurity.json",
+          "path": "/training_modules_shards/cybersecurity.json",
+          "resourceType": "fetch",
+          "transferSize": 57556
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/Aldrich-Regular-BJ2Af9cL.ttf",
+          "path": "/assets/Aldrich-Regular-BJ2Af9cL.ttf",
+          "resourceType": "font",
+          "transferSize": 53324
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/index-0ziqKgZ6.css",
+          "path": "/assets/index-0ziqKgZ6.css",
+          "resourceType": "stylesheet",
+          "transferSize": 50623
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/fitness.json",
+          "path": "/training_modules_shards/fitness.json",
+          "resourceType": "fetch",
+          "transferSize": 49118
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/martial_arts.json",
+          "path": "/training_modules_shards/martial_arts.json",
+          "resourceType": "fetch",
+          "transferSize": 45215
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/scheduler-B_9kHmRz.js",
+          "path": "/assets/scheduler-B_9kHmRz.js",
+          "resourceType": "script",
+          "transferSize": 39584
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/counter_biochem.json",
+          "path": "/training_modules_shards/counter_biochem.json",
+          "resourceType": "fetch",
+          "transferSize": 39337
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/web_three.json",
+          "path": "/training_modules_shards/web_three.json",
+          "resourceType": "fetch",
+          "transferSize": 31491
+        }
+      ]
+    },
+    {
+      "route": "/mission/case",
+      "tier": "tier_2_analysis",
+      "transferBytes": 3886888,
+      "maxTransferBytes": 8448000,
+      "pass": true,
+      "assets": [
+        {
+          "url": "http://127.0.0.1:4176/assets/index-D-7tzUwo.js",
+          "path": "/assets/index-D-7tzUwo.js",
+          "resourceType": "script",
+          "transferSize": 623668
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/counter_psyops.json",
+          "path": "/training_modules_shards/counter_psyops.json",
+          "resourceType": "fetch",
+          "transferSize": 441515
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/self_sovereignty.json",
+          "path": "/training_modules_shards/self_sovereignty.json",
+          "resourceType": "fetch",
+          "transferSize": 306075
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/WingCommanderLogo-288x162-Dr7UFZxN.gif",
+          "path": "/assets/WingCommanderLogo-288x162-Dr7UFZxN.gif",
+          "resourceType": "image",
+          "transferSize": 305498
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/vendor-DQgFcZXp.js",
+          "path": "/assets/vendor-DQgFcZXp.js",
+          "resourceType": "script",
+          "transferSize": 290128
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/equations.json",
+          "path": "/training_modules_shards/equations.json",
+          "resourceType": "fetch",
+          "transferSize": 279844
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/anti_tcs_idc_cbc.json",
+          "path": "/training_modules_shards/anti_tcs_idc_cbc.json",
+          "resourceType": "fetch",
+          "transferSize": 249852
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/react-vendor-Bmv8S_O3.js",
+          "path": "/assets/react-vendor-Bmv8S_O3.js",
+          "resourceType": "script",
+          "transferSize": 218492
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/anti_psn.json",
+          "path": "/training_modules_shards/anti_psn.json",
+          "resourceType": "fetch",
+          "transferSize": 217627
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/intelligence.json",
+          "path": "/training_modules_shards/intelligence.json",
+          "resourceType": "fetch",
+          "transferSize": 109291
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/space_force.json",
+          "path": "/training_modules_shards/space_force.json",
+          "resourceType": "fetch",
+          "transferSize": 98956
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/psiops.json",
+          "path": "/training_modules_shards/psiops.json",
+          "resourceType": "fetch",
+          "transferSize": 59599
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/cybersecurity.json",
+          "path": "/training_modules_shards/cybersecurity.json",
+          "resourceType": "fetch",
+          "transferSize": 57556
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/Aldrich-Regular-BJ2Af9cL.ttf",
+          "path": "/assets/Aldrich-Regular-BJ2Af9cL.ttf",
+          "resourceType": "font",
+          "transferSize": 53324
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/index-0ziqKgZ6.css",
+          "path": "/assets/index-0ziqKgZ6.css",
+          "resourceType": "stylesheet",
+          "transferSize": 50623
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/fitness.json",
+          "path": "/training_modules_shards/fitness.json",
+          "resourceType": "fetch",
+          "transferSize": 49118
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/martial_arts.json",
+          "path": "/training_modules_shards/martial_arts.json",
+          "resourceType": "fetch",
+          "transferSize": 45215
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/scheduler-B_9kHmRz.js",
+          "path": "/assets/scheduler-B_9kHmRz.js",
+          "resourceType": "script",
+          "transferSize": 39584
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/counter_biochem.json",
+          "path": "/training_modules_shards/counter_biochem.json",
+          "resourceType": "fetch",
+          "transferSize": 39337
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/web_three.json",
+          "path": "/training_modules_shards/web_three.json",
+          "resourceType": "fetch",
+          "transferSize": 31491
+        }
+      ]
+    },
+    {
+      "route": "/mission/signal",
+      "tier": "tier_2_analysis",
+      "transferBytes": 3886888,
+      "maxTransferBytes": 8448000,
+      "pass": true,
+      "assets": [
+        {
+          "url": "http://127.0.0.1:4176/assets/index-D-7tzUwo.js",
+          "path": "/assets/index-D-7tzUwo.js",
+          "resourceType": "script",
+          "transferSize": 623668
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/counter_psyops.json",
+          "path": "/training_modules_shards/counter_psyops.json",
+          "resourceType": "fetch",
+          "transferSize": 441515
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/self_sovereignty.json",
+          "path": "/training_modules_shards/self_sovereignty.json",
+          "resourceType": "fetch",
+          "transferSize": 306075
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/WingCommanderLogo-288x162-Dr7UFZxN.gif",
+          "path": "/assets/WingCommanderLogo-288x162-Dr7UFZxN.gif",
+          "resourceType": "image",
+          "transferSize": 305498
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/vendor-DQgFcZXp.js",
+          "path": "/assets/vendor-DQgFcZXp.js",
+          "resourceType": "script",
+          "transferSize": 290128
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/equations.json",
+          "path": "/training_modules_shards/equations.json",
+          "resourceType": "fetch",
+          "transferSize": 279844
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/anti_tcs_idc_cbc.json",
+          "path": "/training_modules_shards/anti_tcs_idc_cbc.json",
+          "resourceType": "fetch",
+          "transferSize": 249852
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/react-vendor-Bmv8S_O3.js",
+          "path": "/assets/react-vendor-Bmv8S_O3.js",
+          "resourceType": "script",
+          "transferSize": 218492
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/anti_psn.json",
+          "path": "/training_modules_shards/anti_psn.json",
+          "resourceType": "fetch",
+          "transferSize": 217627
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/intelligence.json",
+          "path": "/training_modules_shards/intelligence.json",
+          "resourceType": "fetch",
+          "transferSize": 109291
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/space_force.json",
+          "path": "/training_modules_shards/space_force.json",
+          "resourceType": "fetch",
+          "transferSize": 98956
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/psiops.json",
+          "path": "/training_modules_shards/psiops.json",
+          "resourceType": "fetch",
+          "transferSize": 59599
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/cybersecurity.json",
+          "path": "/training_modules_shards/cybersecurity.json",
+          "resourceType": "fetch",
+          "transferSize": 57556
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/Aldrich-Regular-BJ2Af9cL.ttf",
+          "path": "/assets/Aldrich-Regular-BJ2Af9cL.ttf",
+          "resourceType": "font",
+          "transferSize": 53324
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/index-0ziqKgZ6.css",
+          "path": "/assets/index-0ziqKgZ6.css",
+          "resourceType": "stylesheet",
+          "transferSize": 50623
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/fitness.json",
+          "path": "/training_modules_shards/fitness.json",
+          "resourceType": "fetch",
+          "transferSize": 49118
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/martial_arts.json",
+          "path": "/training_modules_shards/martial_arts.json",
+          "resourceType": "fetch",
+          "transferSize": 45215
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/scheduler-B_9kHmRz.js",
+          "path": "/assets/scheduler-B_9kHmRz.js",
+          "resourceType": "script",
+          "transferSize": 39584
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/counter_biochem.json",
+          "path": "/training_modules_shards/counter_biochem.json",
+          "resourceType": "fetch",
+          "transferSize": 39337
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/web_three.json",
+          "path": "/training_modules_shards/web_three.json",
+          "resourceType": "fetch",
+          "transferSize": 31491
+        }
+      ]
+    },
+    {
+      "route": "/mission/debrief",
+      "tier": "tier_3_support",
+      "transferBytes": 3886888,
+      "maxTransferBytes": 8499200,
+      "pass": true,
+      "assets": [
+        {
+          "url": "http://127.0.0.1:4176/assets/index-D-7tzUwo.js",
+          "path": "/assets/index-D-7tzUwo.js",
+          "resourceType": "script",
+          "transferSize": 623668
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/counter_psyops.json",
+          "path": "/training_modules_shards/counter_psyops.json",
+          "resourceType": "fetch",
+          "transferSize": 441515
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/self_sovereignty.json",
+          "path": "/training_modules_shards/self_sovereignty.json",
+          "resourceType": "fetch",
+          "transferSize": 306075
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/WingCommanderLogo-288x162-Dr7UFZxN.gif",
+          "path": "/assets/WingCommanderLogo-288x162-Dr7UFZxN.gif",
+          "resourceType": "image",
+          "transferSize": 305498
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/vendor-DQgFcZXp.js",
+          "path": "/assets/vendor-DQgFcZXp.js",
+          "resourceType": "script",
+          "transferSize": 290128
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/equations.json",
+          "path": "/training_modules_shards/equations.json",
+          "resourceType": "fetch",
+          "transferSize": 279844
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/anti_tcs_idc_cbc.json",
+          "path": "/training_modules_shards/anti_tcs_idc_cbc.json",
+          "resourceType": "fetch",
+          "transferSize": 249852
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/react-vendor-Bmv8S_O3.js",
+          "path": "/assets/react-vendor-Bmv8S_O3.js",
+          "resourceType": "script",
+          "transferSize": 218492
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/anti_psn.json",
+          "path": "/training_modules_shards/anti_psn.json",
+          "resourceType": "fetch",
+          "transferSize": 217627
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/intelligence.json",
+          "path": "/training_modules_shards/intelligence.json",
+          "resourceType": "fetch",
+          "transferSize": 109291
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/space_force.json",
+          "path": "/training_modules_shards/space_force.json",
+          "resourceType": "fetch",
+          "transferSize": 98956
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/psiops.json",
+          "path": "/training_modules_shards/psiops.json",
+          "resourceType": "fetch",
+          "transferSize": 59599
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/cybersecurity.json",
+          "path": "/training_modules_shards/cybersecurity.json",
+          "resourceType": "fetch",
+          "transferSize": 57556
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/Aldrich-Regular-BJ2Af9cL.ttf",
+          "path": "/assets/Aldrich-Regular-BJ2Af9cL.ttf",
+          "resourceType": "font",
+          "transferSize": 53324
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/index-0ziqKgZ6.css",
+          "path": "/assets/index-0ziqKgZ6.css",
+          "resourceType": "stylesheet",
+          "transferSize": 50623
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/fitness.json",
+          "path": "/training_modules_shards/fitness.json",
+          "resourceType": "fetch",
+          "transferSize": 49118
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/martial_arts.json",
+          "path": "/training_modules_shards/martial_arts.json",
+          "resourceType": "fetch",
+          "transferSize": 45215
+        },
+        {
+          "url": "http://127.0.0.1:4176/assets/scheduler-B_9kHmRz.js",
+          "path": "/assets/scheduler-B_9kHmRz.js",
+          "resourceType": "script",
+          "transferSize": 39584
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/counter_biochem.json",
+          "path": "/training_modules_shards/counter_biochem.json",
+          "resourceType": "fetch",
+          "transferSize": 39337
+        },
+        {
+          "url": "http://127.0.0.1:4176/training_modules_shards/web_three.json",
+          "path": "/training_modules_shards/web_three.json",
+          "resourceType": "fetch",
+          "transferSize": 31491
+        }
+      ]
+    }
+  ]
+}

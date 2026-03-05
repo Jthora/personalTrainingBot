@@ -144,22 +144,15 @@ curl -I https://<your-domain>/training_modules_shards/fitness.json | grep -i cac
 curl -I https://<your-domain>/assets/index-*.js | grep -i cache-control
 ```
 
-### Optional service worker (opt-in)
-- Registration is gated by `localStorage.setItem('sw:enable', 'true')` (defaults off). Clear the flag and call `unregisterServiceWorkers()` to disable.
-- Worker lives at `/sw.js`; scope is site root. It caches the manifest + training shards with cache-first + background refresh.
-- To force the active worker to take over, the page sends `SKIP_WAITING` during updatefound; you can also manually postMessage the same.
-- QA steps:
-	1) In a non-dev build, open devtools console, run `localStorage.setItem('sw:enable','true'); location.reload();`
-	2) Verify registration in Application → Service Workers.
-	3) Trigger shard loads (navigate to training view), then go offline and confirm cached shard responses serve.
-	4) Clear flag and run `unregisterServiceWorkers()` to disable.
-	5) Optional automated check (requires running preview/prod host):
-
-```bash
-# In one terminal (if testing locally): npm run preview -- --host --port 4173
-# In another terminal:
-npm run check:sw-offline -- --base=http://localhost:4173 --shard=/training_modules_shards/fitness.json
-```
+### Service worker + offline checks
+- Service worker at `/sw.js` registers automatically in production builds; scope is the site root. It caches the manifest + training shards cache-first with background refresh.
+- Updates call `SKIP_WAITING` so the new worker takes control without a manual page reload.
+- QA steps (requires preview/prod host):
+	1) `npm run preview -- --host --port 4173` (or use your deployed host).
+	2) Open the app, trigger training shard loads (navigate to Training), then go offline and confirm cached shards serve.
+	3) Automated checks:
+		- `npm run check:sw-offline -- --base=http://localhost:4173 --shard=/training_modules_shards/fitness.json`
+		- `npm run check:offline-indicator -- --base=http://localhost:4173` (verifies the on-screen online/offline indicator flips when connectivity is cut)
 
 ### Runtime Optimization
 - Implement service worker for caching

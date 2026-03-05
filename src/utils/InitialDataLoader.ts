@@ -7,6 +7,7 @@ import TrainingModuleCache from '../cache/TrainingModuleCache';
 import TrainingCoachCache from '../cache/TrainingCoachCache';
 import WorkoutScheduleStore from '../store/WorkoutScheduleStore'; // Import WorkoutScheduleStore
 import { loadScheduleStub } from './ScheduleLoader';
+import MissionEntityStore from '../domain/mission/MissionEntityStore';
 
 class InitialDataLoader {
     private static initializationPromise: Promise<void> | null = null;
@@ -85,6 +86,7 @@ class InitialDataLoader {
         const trainingModules = await dataLoader.loadAllData(() => updateProgress(totalSteps), onPartialFailure);
         console.log(`InitialDataLoader: Loaded ${trainingModules.length} training modules.`);
         await TrainingModuleCache.getInstance().loadData(trainingModules); // Load data into cache
+        MissionEntityStore.getInstance().hydrateFromTrainingModules(trainingModules);
     }
 
     private static async loadWorkoutCategories(

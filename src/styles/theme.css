@@ -19,6 +19,37 @@
 
     --text-primary: #E3ECFF;
     --text-muted: rgba(227, 236, 255, 0.75);
+    --text-secondary: rgba(227, 236, 255, 0.68);
+
+    --mission-severity-low-bg: rgba(59, 130, 246, 0.14);
+    --mission-severity-low-border: rgba(59, 130, 246, 0.35);
+    --mission-severity-low-text: #93c5fd;
+    --mission-severity-medium-bg: rgba(250, 204, 21, 0.14);
+    --mission-severity-medium-border: rgba(250, 204, 21, 0.35);
+    --mission-severity-medium-text: #fde68a;
+    --mission-severity-high-bg: rgba(249, 115, 22, 0.14);
+    --mission-severity-high-border: rgba(249, 115, 22, 0.35);
+    --mission-severity-high-text: #fdba74;
+    --mission-severity-critical-bg: rgba(239, 68, 68, 0.16);
+    --mission-severity-critical-border: rgba(239, 68, 68, 0.4);
+    --mission-severity-critical-text: #fca5a5;
+
+    --mission-trust-unverified: #94a3b8;
+    --mission-trust-verified: #34d399;
+
+    --mission-state-loading-bg: rgba(59, 130, 246, 0.1);
+    --mission-state-loading-border: rgba(59, 130, 246, 0.28);
+    --mission-state-empty-bg: rgba(250, 204, 21, 0.08);
+    --mission-state-empty-border: rgba(250, 204, 21, 0.24);
+    --mission-state-error-bg: rgba(239, 68, 68, 0.12);
+    --mission-state-error-border: rgba(239, 68, 68, 0.3);
+    --mission-state-ready-bg: var(--surface-card);
+
+    --mission-type-h1: 28px;
+    --mission-type-h2: 22px;
+    --mission-type-h3: 18px;
+    --mission-type-body: 14px;
+    --mission-type-caption: 12px;
 
     --primary-bg-color: var(--surface-base);
     --secondary-bg-color: var(--surface-elevated);

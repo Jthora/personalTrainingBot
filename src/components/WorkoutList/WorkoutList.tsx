@@ -16,7 +16,7 @@ const WorkoutList: React.FC = () => {
 
     if (isLoading) {
         console.log('Schedule is loading...');
-        return <ListSkeleton label="Loading workout list" rows={2} />;
+        return <ListSkeleton label="Loading drill list" rows={2} />;
     }
 
     if (!schedule) {
@@ -24,8 +24,8 @@ const WorkoutList: React.FC = () => {
         return (
             <ListEmptyState
                 icon="📅"
-                title="No workout schedule"
-                body="Create or generate a schedule to see upcoming workouts."
+                title="No mission plan"
+                body="Create or generate a mission plan to see upcoming drills."
             />
         );
     }
@@ -35,8 +35,8 @@ const WorkoutList: React.FC = () => {
         return (
             <ListEmptyState
                 icon="🗒️"
-                title="Workout schedule is empty"
-                body="Add a workout set or block to start building your plan."
+                title="Mission plan is empty"
+                body="Add a drill set or block to start building your plan."
             />
         );
     }
@@ -74,8 +74,8 @@ const WorkoutList: React.FC = () => {
                 key={`unknown-${index}`}
                 tone="error"
                 icon="⚠️"
-                title="Unknown schedule item"
-                body="We couldn&apos;t render this item. Try refreshing or recreating the schedule."
+                title="Unknown mission plan item"
+                body="We couldn&apos;t render this item. Try refreshing or recreating the mission plan."
             />
         ];
     });
@@ -91,9 +91,9 @@ const WorkoutList: React.FC = () => {
             </div>
             <div className={styles.cardStack}>
                 {limitedItems.length > 0 ? limitedItems : (
-                    <div className={styles.noWorkouts}>Workout schedule is empty</div>
+                    <div className={styles.noWorkouts}>Mission plan is empty</div>
                 )}
-                {overflow > 0 && <div className={styles.overflow}>+{overflow} more scheduled</div>}
+                {overflow > 0 && <div className={styles.overflow}>+{overflow} more in mission plan</div>}
             </div>
         </div>
     );

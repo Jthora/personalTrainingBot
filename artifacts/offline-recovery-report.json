@@ -1,0 +1,436 @@
+{
+  "ts": "2026-03-05T12:41:29.367Z",
+  "base": "http://127.0.0.1:4176",
+  "checks": [
+    {
+      "name": "warm_cache_online",
+      "status": "pass",
+      "details": {
+        "warmManifest": {
+          "ok": true,
+          "status": 200,
+          "json": {
+            "generatedAt": "2026-03-05T12:31:14.923Z",
+            "version": "0.0.0",
+            "modules": [
+              {
+                "id": "agencies",
+                "shard": "/training_modules_shards/agencies.json",
+                "hash": "3daeef4a0eb5bddb81262087ef5091ff07447bd8949c34f9522ee7e6c22fae38",
+                "size": 23230,
+                "version": "0.0.0",
+                "subModuleCount": 5,
+                "cardDeckCount": 15
+              },
+              {
+                "id": "combat",
+                "shard": "/training_modules_shards/combat.json",
+                "hash": "8c79fc6a6f5a97b3c52215bab1dda5d2094491601d6506ba4632df1207b9149b",
+                "size": 23094,
+                "version": "0.0.0",
+                "subModuleCount": 6,
+                "cardDeckCount": 18
+              },
+              {
+                "id": "counter_biochem",
+                "shard": "/training_modules_shards/counter_biochem.json",
+                "hash": "7837dbe9e9f5ccb6ffd6c6348f35f40e3f761c1cb75ee494e8c64fca78178283",
+                "size": 39337,
+                "version": "0.0.0",
+                "subModuleCount": 6,
+                "cardDeckCount": 18
+              },
+              {
+                "id": "counter_psyops",
+                "shard": "/training_modules_shards/counter_psyops.json",
+                "hash": "841769e25ede410d7dd1976d04ecf65add4d386dc62c6cbdc75efd3f47462480",
+                "size": 441515,
+                "version": "0.0.0",
+                "subModuleCount": 9,
+                "cardDeckCount": 72
+              },
+              {
+                "id": "cybersecurity",
+                "shard": "/training_modules_shards/cybersecurity.json",
+                "hash": "3ce497b45d5218aff1c6d9f705ad56859effba53961b41a97a2b2913456dc4dd",
+                "size": 57556,
+                "version": "0.0.0",
+                "subModuleCount": 7,
+                "cardDeckCount": 23
+              },
+              {
+                "id": "dance",
+                "shard": "/training_modules_shards/dance.json",
+                "hash": "95ffe62797e28f6ab3ed35762dffbbc060c7c22203e54c312108c06519e3bdca",
+                "size": 28077,
+                "version": "0.0.0",
+                "subModuleCount": 11,
+                "cardDeckCount": 22
+              },
+              {
+                "id": "equations",
+                "shard": "/training_modules_shards/equations.json",
+                "hash": "3b1a6e0650d882da2ab624ae5a1e7972bf2cb1061fa4b76c7389c77ef1968d69",
+                "size": 279844,
+                "version": "0.0.0",
+                "subModuleCount": 12,
+                "cardDeckCount": 41
+              },
+              {
+                "id": "espionage",
+                "shard": "/training_modules_shards/espionage.json",
+                "hash": "b49c1c2da2504d2493bafbe300b009f4b0293232f32e07d6dc3a1cab74da1742",
+                "size": 26045,
+                "version": "0.0.0",
+                "subModuleCount": 6,
+                "cardDeckCount": 18
+              },
+              {
+                "id": "fitness",
+                "shard": "/training_modules_shards/fitness.json",
+                "hash": "45d7cd21483b2062438ad3aa3518a0fc627ec3bf3d6fcf121fce97743cdf0c48",
+                "size": 49118,
+                "version": "0.0.0",
+                "subModuleCount": 12,
+                "cardDeckCount": 36
+              },
+              {
+                "id": "intelligence",
+                "shard": "/training_modules_shards/intelligence.json",
+                "hash": "f1219359b43faf5cf9221d43943b5a17b78e744de34b2fb59d522496caaec581",
+                "size": 109291,
+                "version": "0.0.0",
+                "subModuleCount": 6,
+                "cardDeckCount": 19
+              },
+              {
+                "id": "investigation",
+                "shard": "/training_modules_shards/investigation.json",
+                "hash": "877e73b3e85c13e7b195113ca19cf6d370c60b6892d0bdff060db7c1b8af51d6",
+                "size": 25665,
+                "version": "0.0.0",
+                "subModuleCount": 6,
+                "cardDeckCount": 18
+              },
+              {
+                "id": "martial_arts",
+                "shard": "/training_modules_shards/martial_arts.json",
+                "hash": "3492353c183735280f22c883561e461d6dacfb3a1b5e1fb5206aecd29decfb57",
+                "size": 45215,
+                "version": "0.0.0",
+                "subModuleCount": 12,
+                "cardDeckCount": 36
+              },
+              {
+                "id": "psiops",
+                "shard": "/training_modules_shards/psiops.json",
+                "hash": "3b140cd21cef2a45904b585cbd5f216b0a87b55dc32330c0d856e3adbb575bcc",
+                "size": 59599,
+                "version": "0.0.0",
+                "subModuleCount": 7,
+                "cardDeckCount": 24
+              },
+              {
+                "id": "war_strategy",
+                "shard": "/training_modules_shards/war_strategy.json",
+                "hash": "84a5ed81f0b3100db92c29d65d76e2c469738f44944a167dad659c33f3fba1ce",
+                "size": 23154,
+                "version": "0.0.0",
+                "subModuleCount": 6,
+                "cardDeckCount": 18
+              },
+              {
+                "id": "web_three",
+                "shard": "/training_modules_shards/web_three.json",
+                "hash": "dfd421ae1bdd3c00b5e8780b546a05ee647d9311c95aa4b31bfbe51ecbb0dafa",
+                "size": 31491,
+                "version": "0.0.0",
+                "subModuleCount": 6,
+                "cardDeckCount": 18
+              },
+              {
+                "id": "self_sovereignty",
+                "shard": "/training_modules_shards/self_sovereignty.json",
+                "hash": "d72b6ddf09a9dd2b4548a01d2c5cd1547cb52cdaaed47758eef61d9f2ed1db1d",
+                "size": 306075,
+                "version": "0.0.0",
+                "subModuleCount": 15,
+                "cardDeckCount": 45
+              },
+              {
+                "id": "anti_psn",
+                "shard": "/training_modules_shards/anti_psn.json",
+                "hash": "65d5f1b6bc50c0bde3979bebfb0106336551c5d5bd41eaa6a228629700dc4c01",
+                "size": 217627,
+                "version": "0.0.0",
+                "subModuleCount": 31,
+                "cardDeckCount": 90
+              },
+              {
+                "id": "anti_tcs_idc_cbc",
+                "shard": "/training_modules_shards/anti_tcs_idc_cbc.json",
+                "hash": "50f423116c1955996d8c06caa996585dd7c506a101f4b462e4d07277184404ae",
+                "size": 249852,
+                "version": "0.0.0",
+                "subModuleCount": 37,
+                "cardDeckCount": 111
+              },
+              {
+                "id": "space_force",
+                "shard": "/training_modules_shards/space_force.json",
+                "hash": "dc6f631333bbccbfb1650ee30c62556e8c7fcefae12d5bc88ebcdd00f7e01bb3",
+                "size": 98956,
+                "version": "0.0.0",
+                "subModuleCount": 13,
+                "cardDeckCount": 21
+              }
+            ]
+          }
+        },
+        "warmShard": {
+          "ok": true,
+          "status": 200
+        }
+      }
+    },
+    {
+      "name": "simulate_cache_corruption_replace_shard",
+      "status": "pass"
+    },
+    {
+      "name": "offline_fetch_fails_after_corruption",
+      "status": "pass",
+      "details": {
+        "corruptedOffline": {
+          "ok": false,
+          "status": 503
+        }
+      }
+    },
+    {
+      "name": "online_recovery_reloads_shard",
+      "status": "pass",
+      "details": {
+        "recoveredOnline": {
+          "ok": true,
+          "status": 200
+        }
+      }
+    },
+    {
+      "name": "offline_fetch_succeeds_after_recovery",
+      "status": "pass",
+      "details": {
+        "recoveredOffline": {
+          "ok": true,
+          "status": 200
+        }
+      }
+    },
+    {
+      "name": "simulate_stale_manifest_cache",
+      "status": "pass",
+      "details": {
+        "staleRead": {
+          "ok": true,
+          "status": 200,
+          "json": {
+            "generatedAt": "stale",
+            "version": "stale",
+            "modules": []
+          }
+        },
+        "staleModules": 0
+      }
+    },
+    {
+      "name": "stale_manifest_invalidated_by_reload",
+      "status": "pass",
+      "details": {
+        "refreshedManifest": {
+          "ok": true,
+          "status": 200,
+          "json": {
+            "generatedAt": "2026-03-05T12:31:14.923Z",
+            "version": "0.0.0",
+            "modules": [
+              {
+                "id": "agencies",
+                "shard": "/training_modules_shards/agencies.json",
+                "hash": "3daeef4a0eb5bddb81262087ef5091ff07447bd8949c34f9522ee7e6c22fae38",
+                "size": 23230,
+                "version": "0.0.0",
+                "subModuleCount": 5,
+                "cardDeckCount": 15
+              },
+              {
+                "id": "combat",
+                "shard": "/training_modules_shards/combat.json",
+                "hash": "8c79fc6a6f5a97b3c52215bab1dda5d2094491601d6506ba4632df1207b9149b",
+                "size": 23094,
+                "version": "0.0.0",
+                "subModuleCount": 6,
+                "cardDeckCount": 18
+              },
+              {
+                "id": "counter_biochem",
+                "shard": "/training_modules_shards/counter_biochem.json",
+                "hash": "7837dbe9e9f5ccb6ffd6c6348f35f40e3f761c1cb75ee494e8c64fca78178283",
+                "size": 39337,
+                "version": "0.0.0",
+                "subModuleCount": 6,
+                "cardDeckCount": 18
+              },
+              {
+                "id": "counter_psyops",
+                "shard": "/training_modules_shards/counter_psyops.json",
+                "hash": "841769e25ede410d7dd1976d04ecf65add4d386dc62c6cbdc75efd3f47462480",
+                "size": 441515,
+                "version": "0.0.0",
+                "subModuleCount": 9,
+                "cardDeckCount": 72
+              },
+              {
+                "id": "cybersecurity",
+                "shard": "/training_modules_shards/cybersecurity.json",
+                "hash": "3ce497b45d5218aff1c6d9f705ad56859effba53961b41a97a2b2913456dc4dd",
+                "size": 57556,
+                "version": "0.0.0",
+                "subModuleCount": 7,
+                "cardDeckCount": 23
+              },
+              {
+                "id": "dance",
+                "shard": "/training_modules_shards/dance.json",
+                "hash": "95ffe62797e28f6ab3ed35762dffbbc060c7c22203e54c312108c06519e3bdca",
+                "size": 28077,
+                "version": "0.0.0",
+                "subModuleCount": 11,
+                "cardDeckCount": 22
+              },
+              {
+                "id": "equations",
+                "shard": "/training_modules_shards/equations.json",
+                "hash": "3b1a6e0650d882da2ab624ae5a1e7972bf2cb1061fa4b76c7389c77ef1968d69",
+                "size": 279844,
+                "version": "0.0.0",
+                "subModuleCount": 12,
+                "cardDeckCount": 41
+              },
+              {
+                "id": "espionage",
+                "shard": "/training_modules_shards/espionage.json",
+                "hash": "b49c1c2da2504d2493bafbe300b009f4b0293232f32e07d6dc3a1cab74da1742",
+                "size": 26045,
+                "version": "0.0.0",
+                "subModuleCount": 6,
+                "cardDeckCount": 18
+              },
+              {
+                "id": "fitness",
+                "shard": "/training_modules_shards/fitness.json",
+                "hash": "45d7cd21483b2062438ad3aa3518a0fc627ec3bf3d6fcf121fce97743cdf0c48",
+                "size": 49118,
+                "version": "0.0.0",
+                "subModuleCount": 12,
+                "cardDeckCount": 36
+              },
+              {
+                "id": "intelligence",
+                "shard": "/training_modules_shards/intelligence.json",
+                "hash": "f1219359b43faf5cf9221d43943b5a17b78e744de34b2fb59d522496caaec581",
+                "size": 109291,
+                "version": "0.0.0",
+                "subModuleCount": 6,
+                "cardDeckCount": 19
+              },
+              {
+                "id": "investigation",
+                "shard": "/training_modules_shards/investigation.json",
+                "hash": "877e73b3e85c13e7b195113ca19cf6d370c60b6892d0bdff060db7c1b8af51d6",
+                "size": 25665,
+                "version": "0.0.0",
+                "subModuleCount": 6,
+                "cardDeckCount": 18
+              },
+              {
+                "id": "martial_arts",
+                "shard": "/training_modules_shards/martial_arts.json",
+                "hash": "3492353c183735280f22c883561e461d6dacfb3a1b5e1fb5206aecd29decfb57",
+                "size": 45215,
+                "version": "0.0.0",
+                "subModuleCount": 12,
+                "cardDeckCount": 36
+              },
+              {
+                "id": "psiops",
+                "shard": "/training_modules_shards/psiops.json",
+                "hash": "3b140cd21cef2a45904b585cbd5f216b0a87b55dc32330c0d856e3adbb575bcc",
+                "size": 59599,
+                "version": "0.0.0",
+                "subModuleCount": 7,
+                "cardDeckCount": 24
+              },
+              {
+                "id": "war_strategy",
+                "shard": "/training_modules_shards/war_strategy.json",
+                "hash": "84a5ed81f0b3100db92c29d65d76e2c469738f44944a167dad659c33f3fba1ce",
+                "size": 23154,
+                "version": "0.0.0",
+                "subModuleCount": 6,
+                "cardDeckCount": 18
+              },
+              {
+                "id": "web_three",
+                "shard": "/training_modules_shards/web_three.json",
+                "hash": "dfd421ae1bdd3c00b5e8780b546a05ee647d9311c95aa4b31bfbe51ecbb0dafa",
+                "size": 31491,
+                "version": "0.0.0",
+                "subModuleCount": 6,
+                "cardDeckCount": 18
+              },
+              {
+                "id": "self_sovereignty",
+                "shard": "/training_modules_shards/self_sovereignty.json",
+                "hash": "d72b6ddf09a9dd2b4548a01d2c5cd1547cb52cdaaed47758eef61d9f2ed1db1d",
+                "size": 306075,
+                "version": "0.0.0",
+                "subModuleCount": 15,
+                "cardDeckCount": 45
+              },
+              {
+                "id": "anti_psn",
+                "shard": "/training_modules_shards/anti_psn.json",
+                "hash": "65d5f1b6bc50c0bde3979bebfb0106336551c5d5bd41eaa6a228629700dc4c01",
+                "size": 217627,
+                "version": "0.0.0",
+                "subModuleCount": 31,
+                "cardDeckCount": 90
+              },
+              {
+                "id": "anti_tcs_idc_cbc",
+                "shard": "/training_modules_shards/anti_tcs_idc_cbc.json",
+                "hash": "50f423116c1955996d8c06caa996585dd7c506a101f4b462e4d07277184404ae",
+                "size": 249852,
+                "version": "0.0.0",
+                "subModuleCount": 37,
+                "cardDeckCount": 111
+              },
+              {
+                "id": "space_force",
+                "shard": "/training_modules_shards/space_force.json",
+                "hash": "dc6f631333bbccbfb1650ee30c62556e8c7fcefae12d5bc88ebcdd00f7e01bb3",
+                "size": 98956,
+                "version": "0.0.0",
+                "subModuleCount": 13,
+                "cardDeckCount": 21
+              }
+            ]
+          }
+        },
+        "refreshedModules": 19
+      }
+    }
+  ],
+  "failed": false
+}

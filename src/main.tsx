@@ -5,12 +5,16 @@ import './styles/theme.css'; // Import the global theme
 import { mark } from './utils/perf';
 import { registerCacheDebug } from './utils/cache/debugCache';
 import { scheduleManifestPrefetch } from './utils/prefetchHints';
-import { registerServiceWorkerIfEnabled } from './utils/serviceWorker';
+import { registerServiceWorker } from './utils/serviceWorker';
+import { SettingsProvider, readLowDataPreference } from './context/SettingsContext';
 
 mark('load:boot_start');
 
-scheduleManifestPrefetch();
-registerServiceWorkerIfEnabled();
+const lowDataPersisted = readLowDataPreference();
+if (!lowDataPersisted) {
+  scheduleManifestPrefetch();
+}
+registerServiceWorker();
 
 if (import.meta.env.DEV) {
   registerCacheDebug();
@@ -18,6 +22,8 @@ if (import.meta.env.DEV) {
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <SettingsProvider>
+      <App />
+    </SettingsProvider>
   </StrictMode>,
 )

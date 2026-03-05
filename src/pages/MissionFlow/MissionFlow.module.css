@@ -1,0 +1,107 @@
+@import '../../styles/theme.css';
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--surface-base);
+  color: var(--text-primary);
+}
+
+.shell {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: calc(var(--header-height, 60px) + 16px) 20px 24px;
+}
+
+.tabBar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  background: var(--surface-card);
+}
+
+.tabSelectRow {
+  display: none;
+  align-items: center;
+  gap: 8px;
+}
+
+.tabSelectLabel {
+  font-weight: 600;
+  font-size: var(--mission-type-body);
+}
+
+.tabSelect {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: var(--surface-card);
+  color: var(--text-primary);
+}
+
+.tab {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--text-primary);
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  font-size: var(--mission-type-caption);
+}
+
+.tabActive {
+  border-color: var(--coach-accent);
+  background: rgba(90, 127, 255, 0.12);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-height: 70vh;
+  overflow: visible;
+}
+
+.surface {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  background: var(--mission-state-ready-bg);
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.title {
+  margin: 0;
+  font-size: var(--mission-type-h2);
+  color: var(--mission-trust-verified);
+}
+
+.body {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: var(--mission-type-body);
+}
+
+@media (max-width: 768px) {
+  .shell {
+    padding: calc(var(--header-height, 60px) + 12px) 14px 20px;
+  }
+
+  .tabSelectRow {
+    display: flex;
+  }
+
+  .tabBar {
+    display: none;
+  }
+}

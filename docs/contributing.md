@@ -240,6 +240,20 @@ describe('CardDealer', () => {
 - Update installation instructions
 - Keep feature lists current
 
+## Mission Copy Review (Overhaul)
+
+When a PR changes user-visible copy, complete the mission lexicon checklist before requesting review.
+
+- Checklist source: `docs/major-overhaul/ia-and-copy/mission-lexicon-checklist.md`
+- Scope: headings, buttons, helper text, status/empty/error copy, and ARIA labels
+- Requirement: no residual fitness/Web3 phrasing in active mission routes unless explicitly documented as a compatibility exception
+
+### Copy Review Workflow
+1. Validate changed copy against required/forbidden terminology in the checklist.
+2. Confirm ARIA labels and visible labels use the same mission vocabulary.
+3. Document any unavoidable legacy-visible terms and add a follow-up item to `docs/major-overhaul/progress-tracker.md`.
+4. Include a short “Mission Copy Check” note in the PR description with checklist completion status.
+
 ## Release Process
 
 ### Versioning

@@ -10,3 +10,77 @@
     flex-direction: column;
     gap: 12px;
 }
+
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    padding: 12px 14px;
+    background: linear-gradient(135deg, rgba(0, 64, 64, 0.06), rgba(0, 32, 64, 0.04));
+    display: grid;
+    gap: 6px;
+}
+
+.title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.subtitle {
+    margin: 0 0 4px 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.body {
+    margin: 0;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.switchLabel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.switchText {
+    color: var(--text-primary);
+}
+
+.button {
+    background: var(--coach-accent);
+    color: #0a0f1a;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 16px;
+    font-weight: 700;
+    cursor: pointer;
+    min-width: 120px;
+}
+
+.button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.status {
+    margin: 6px 0 0 0;
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+.error {
+    margin: 4px 0 0 0;
+    color: #f87171;
+    font-size: 13px;
+}

@@ -3,14 +3,14 @@ import styles from './UpNextCard.module.css';
 import useWorkoutSchedule from '../../hooks/useWorkoutSchedule';
 import { WorkoutBlock, WorkoutSet } from '../../types/WorkoutSchedule';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { logEvent } from '../../utils/telemetry';
+import { trackEvent } from '../../utils/telemetry';
 import { mark, measure } from '../../utils/perf';
 
 const describeItem = (item: WorkoutSet | WorkoutBlock | undefined) => {
-    if (!item) return 'No workouts queued';
+    if (!item) return 'No drills queued';
     if (item instanceof WorkoutSet) {
         const pending = item.workouts.find(([, done]) => !done);
-        return pending ? pending[0].name : 'Workout set';
+        return pending ? pending[0].name : 'Drill set';
     }
     return `${item.name} (${item.duration} min)`;
 };
@@ -28,7 +28,7 @@ const UpNextCard: React.FC = () => {
         if (clickMark) {
             measure('home:plan:start_click_since_boot', 'load:boot_start', clickMark);
         }
-        logEvent({ type: 'plan_start_training', mode });
+        trackEvent({ category: 'drills', action: 'drill_start', data: { mode, source: 'up_next', remaining } });
         navigate('/training');
     };
 
@@ -39,7 +39,7 @@ const UpNextCard: React.FC = () => {
             <div className={styles.meta}>{remaining} item(s) left</div>
             <div className={styles.actions}>
                 <button className={styles.primary} onClick={handleStart}>Start/Resume</button>
-                <button className={styles.ghost} onClick={completeCurrentWorkout}>Mark Done</button>
+                <button className={styles.ghost} onClick={completeCurrentWorkout}>Mark complete</button>
             </div>
         </div>
     );

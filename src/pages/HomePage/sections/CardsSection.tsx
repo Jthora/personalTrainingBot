@@ -4,8 +4,12 @@ import CardTable from '../../../components/CardTable/CardTable';
 import { CardProvider } from '../../../context/CardContext';
 import TrainingModuleCache from '../../../cache/TrainingModuleCache';
 import styles from './CardsSection.module.css';
-import { logEvent } from '../../../utils/telemetry';
+import { trackEvent } from '../../../utils/telemetry';
 import { mark, measure } from '../../../utils/perf';
+import { getMissionSurfaceState } from '../../../store/missionFlow/routeState';
+import MissionRouteState from '../../../components/MissionRouteState/MissionRouteState';
+import { missionEntityIcons } from '../../../utils/mission/iconography';
+import TriageBoard from '../../../components/TriageBoard/TriageBoard';
 
 const CardsSection: React.FC = () => {
     const [params] = useSearchParams();
@@ -33,10 +37,10 @@ const CardsSection: React.FC = () => {
         }
         const cardId = cache.getCardIdBySlug(cardSlug);
         if (!cardId) {
-            logEvent({ type: 'card_slug_focus', slug: cardSlug, status: 'not-found' });
+            trackEvent({ category: 'ia', action: 'deep_link_load', route: '/mission/triage', data: { slug: cardSlug, status: 'not-found' }, source: 'ui' });
             setSlugError('Card link not found. You can still browse cards.');
         } else {
-            logEvent({ type: 'card_slug_focus', slug: cardSlug, status: 'success' });
+            trackEvent({ category: 'ia', action: 'deep_link_load', route: '/mission/triage', data: { slug: cardSlug, status: 'success' }, source: 'ui' });
             setSlugError(null);
         }
     }, [cache, cardSlug, ready]);
@@ -50,15 +54,25 @@ const CardsSection: React.FC = () => {
         perfMarkedRef.current = true;
     }, [ready]);
 
+    const routeState = getMissionSurfaceState('triage');
+    if (routeState.kind !== 'ready') {
+        return (
+            <section id="section-cards" aria-label="Drills and Intel" className={styles.section}>
+                <MissionRouteState state={routeState} />
+            </section>
+        );
+    }
+
     return (
-        <section id="section-cards" aria-label="Cards" className={styles.section}>
+        <section id="section-cards" aria-label="Drills and Intel" className={styles.section}>
             <div className={styles.header}>
-                <h2 className={styles.title}>Cards</h2>
-                <p className={styles.body}>Deal, hold, and share cards. Slug links focus the first slot automatically.</p>
+                <h2 className={styles.title}>{missionEntityIcons.lead} Drills / Intel</h2>
+                <p className={styles.body}>Browse drills and intel cards. Deep links focus the specified card when available.</p>
             </div>
+            <TriageBoard />
             {slugError && (
                 <div className={styles.alert} role="alert">
-                    {slugError} <a href="/home/cards">Back to cards</a>
+                    {slugError} <a href="/mission/triage">Back to cards</a>
                 </div>
             )}
             {ready ? (

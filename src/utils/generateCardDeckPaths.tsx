@@ -1,8 +1,10 @@
-import fs from 'fs';
-import path from 'path';
+import fs from "fs";
+import path from "path";
 
-const trainingModulesPath = path.resolve('src/data/training_modules.json');
-const outputPath = path.resolve('src/utils/cardDeckPaths.ts');
+const trainingModulesPath = path.resolve("src/data/training_modules.json");
+const outputDir = path.resolve("src/utils/cardDeckPaths");
+const legacyOutputPath = path.resolve("src/utils/cardDeckPaths.ts");
+
 interface TrainingModule {
     id: string;
 }
@@ -13,48 +15,91 @@ interface TrainingModulesData {
 
 const readJSONFile = (filePath: string) => {
     try {
-        const data = fs.readFileSync(filePath, 'utf-8');
+        const data = fs.readFileSync(filePath, "utf-8");
         return JSON.parse(data);
     } catch (error) {
         if (error instanceof Error) {
             throw new Error(`Failed to read or parse JSON file at ${filePath}: ${error.message}`);
-        } else {
-            throw new Error(`Failed to read or parse JSON file at ${filePath}: Unknown error`);
         }
+        throw new Error(`Failed to read or parse JSON file at ${filePath}: Unknown error`);
     }
 };
 
-const generateCardDeckPaths = async () => {
-    try {
-        const trainingModules: TrainingModulesData = readJSONFile(trainingModulesPath);
+const toCamel = (value: string) => value.replace(/_([a-z])/g, (_, c) => c.toUpperCase());
 
-        if (!trainingModules.modules) {
-            throw new Error("Invalid data format: 'modules' field is missing.");
-        }
-        const cardDeckEntries: string[] = [];
+const writeShardFile = (shardId: string, deckIds: string[]) => {
+    const shardName = toCamel(shardId);
+    const filePath = path.join(outputDir, `${shardName}.ts`);
+    const fileContent = `import type { CardDeckPathMap } from "./common";\nimport { createShardLoaders } from "./common";\n\nconst ${shardName}Decks = createShardLoaders(\n    "${shardId}",\n    [\n${deckIds.map((id) => `        "${id}"`).join(",\n")}\n    ] as const\n);\n\nexport default ${shardName}Decks as CardDeckPathMap;\n`;
+    fs.writeFileSync(filePath, fileContent, "utf-8");
+    return { shardName, filePath };
+};
 
-        trainingModules.modules.forEach(({ id }) => {
-            const cardDeckBase = path.resolve(`src/data/training_modules/training_sub_modules/${id}/card_decks`);
-            if (!fs.existsSync(cardDeckBase)) return;
+const writeIndexFile = (imports: { shardName: string; shardId: string }[], total: number) => {
+    const indexPath = path.join(outputDir, "index.ts");
+    const importLines = imports
+        .map(({ shardName }) => `import ${shardName}Decks from "./${shardName}";`)
+        .join("\n");
+    const spreadLines = imports.map(({ shardName }) => `    ...${shardName}Decks`).join(",\n");
 
-            const subModuleDirs = fs.readdirSync(cardDeckBase).filter(entry => fs.statSync(path.join(cardDeckBase, entry)).isDirectory());
-            subModuleDirs.forEach(subModule => {
-                const deckDir = path.join(cardDeckBase, subModule);
-                const deckFiles = fs.readdirSync(deckDir).filter(file => file.endsWith('.json'));
-                deckFiles.forEach(file => {
-                    const deckId = path.basename(file, '.json');
-                    cardDeckEntries.push(`    ${id}_${subModule}_${deckId}: async () => (await loadShard("${id}")).cardDecks["${id}_${subModule}_${deckId}"]`);
-                });
+    const indexContent = `import type { CardDeckPathMap } from "./common";\n${importLines}\n\nexport const cardDeckPaths: CardDeckPathMap = {\n${spreadLines}\n};\n\nexport const totalCardDecks = ${total};\n`;
+    fs.writeFileSync(indexPath, indexContent, "utf-8");
+};
+
+const generateCardDeckPaths = () => {
+    const trainingModules: TrainingModulesData = readJSONFile(trainingModulesPath);
+    if (!trainingModules.modules) {
+        throw new Error("Invalid data format: 'modules' field is missing.");
+    }
+
+    if (!fs.existsSync(outputDir)) {
+        fs.mkdirSync(outputDir, { recursive: true });
+    }
+
+    const shardDecks: Record<string, string[]> = {};
+
+    trainingModules.modules.forEach(({ id }) => {
+        const cardDeckBase = path.resolve(`src/data/training_modules/training_sub_modules/${id}/card_decks`);
+        if (!fs.existsSync(cardDeckBase)) return;
+
+        const subModuleDirs = fs
+            .readdirSync(cardDeckBase)
+            .filter((entry) => fs.statSync(path.join(cardDeckBase, entry)).isDirectory());
+
+        subModuleDirs.forEach((subModule) => {
+            const deckDir = path.join(cardDeckBase, subModule);
+            const deckFiles = fs.readdirSync(deckDir).filter((file) => file.endsWith(".json"));
+            deckFiles.forEach((file) => {
+                const deckId = path.basename(file, ".json");
+                const fullId = `${id}_${subModule}_${deckId}`;
+                shardDecks[id] = shardDecks[id] ?? [];
+                shardDecks[id].push(fullId);
             });
         });
+    });
 
-    const fileContent = `import type { CardDeckFile, TrainingModuleFile, TrainingSubModuleFile } from "../types/TrainingDataFiles";\n\nconst manifestUrl = "/training_modules_manifest.json";\n\ntype ManifestEntry = { id: string; shard: string; hash?: string; size?: number; version?: string };\ntype Manifest = { generatedAt?: string; version?: string; modules: ManifestEntry[] };\ntype Shard = { module: TrainingModuleFile; subModules: Record<string, TrainingSubModuleFile>; cardDecks: Record<string, CardDeckFile> };\n\nlet manifestPromise: Promise<Manifest> | null = null;\nconst loadManifest = async (): Promise<Manifest> => {\n    if (!manifestPromise) {\n        manifestPromise = fetch(manifestUrl).then(async (res) => {\n            if (!res.ok) throw new Error(\`Failed to load manifest: \${res.status}\`);\n            return res.json();\n        });\n    }\n    return manifestPromise;\n};\n\nconst versionedCacheKey = (entry: ManifestEntry) => \`\${entry.id}@\${entry.hash ?? entry.version ?? entry.size ?? "v0"}\`;\nconst shardCache = new Map<string, Promise<Shard>>();\nconst loadShard = async (id: string): Promise<Shard> => {\n    const manifest = await loadManifest();\n    const entry = manifest.modules.find((m) => m.id === id);\n    if (!entry) throw new Error('Shard not found for module ' + id);\n    const cacheKey = versionedCacheKey(entry);\n    if (!shardCache.has(cacheKey)) {\n        shardCache.set(cacheKey, fetch(entry.shard).then(async (res) => {\n            if (!res.ok) throw new Error('Failed to load shard ' + id + ': ' + res.status);\n            return res.json();\n        }));\n    }\n    return shardCache.get(cacheKey)!;\n};\n\nexport const cardDeckPaths = {\n${cardDeckEntries.join(',\n')}\n} satisfies Record<string, () => Promise<CardDeckFile>>;\n\nexport const totalCardDecks = ${cardDeckEntries.length};\n`;
+    const imports: { shardName: string; shardId: string }[] = [];
+    let total = 0;
 
-        fs.writeFileSync(outputPath, fileContent, 'utf-8');
-        console.log('Successfully generated card deck paths.');
-    } catch (error) {
-        console.error('Failed to generate card deck paths:', error);
+    Object.entries(shardDecks).forEach(([shardId, deckIds]) => {
+        const sortedDeckIds = deckIds.sort();
+        const shardName = toCamel(shardId);
+        writeShardFile(shardId, sortedDeckIds);
+        imports.push({ shardName, shardId });
+        total += sortedDeckIds.length;
+    });
+
+    writeIndexFile(imports, total);
+
+    if (fs.existsSync(legacyOutputPath)) {
+        fs.rmSync(legacyOutputPath);
     }
+
+    console.log("Successfully generated card deck paths.");
 };
 
-generateCardDeckPaths();
+try {
+    generateCardDeckPaths();
+} catch (error) {
+    console.error("Failed to generate card deck paths:", error);
+}

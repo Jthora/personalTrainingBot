@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-04T14:17:35.046Z",
+  "generatedAt": "2026-03-05T12:31:14.923Z",
   "version": "0.0.0",
   "modules": [
     {
@@ -41,8 +41,8 @@
     {
       "id": "cybersecurity",
       "shard": "/training_modules_shards/cybersecurity.json",
-      "hash": "ff9c0e80e8efbccfef1f9568fc9ab7b9420ddfdd92944bf298b471cfdb8a31a9",
-      "size": 57531,
+      "hash": "3ce497b45d5218aff1c6d9f705ad56859effba53961b41a97a2b2913456dc4dd",
+      "size": 57556,
       "version": "0.0.0",
       "subModuleCount": 7,
       "cardDeckCount": 23
@@ -77,8 +77,8 @@
     {
       "id": "fitness",
       "shard": "/training_modules_shards/fitness.json",
-      "hash": "384292da4e4f1f612d6436a2d08a3da89fc7bab066ca70111d04d181492170bb",
-      "size": 49102,
+      "hash": "45d7cd21483b2062438ad3aa3518a0fc627ec3bf3d6fcf121fce97743cdf0c48",
+      "size": 49118,
       "version": "0.0.0",
       "subModuleCount": 12,
       "cardDeckCount": 36
@@ -131,8 +131,8 @@
     {
       "id": "web_three",
       "shard": "/training_modules_shards/web_three.json",
-      "hash": "f73bff2cf4dd11ecf137c038540e2ad81219c6de528f82299acd90cf934bed21",
-      "size": 31369,
+      "hash": "dfd421ae1bdd3c00b5e8780b546a05ee647d9311c95aa4b31bfbe51ecbb0dafa",
+      "size": 31491,
       "version": "0.0.0",
       "subModuleCount": 6,
       "cardDeckCount": 18

@@ -1,0 +1,87 @@
+@import '../../styles/theme.css';
+
+.card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  background: var(--surface-card);
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.card[data-kind='loading'] {
+  border-color: var(--mission-state-loading-border);
+  background: var(--mission-state-loading-bg);
+}
+
+.card[data-kind='empty'] {
+  border-color: var(--mission-state-empty-border);
+  background: var(--mission-state-empty-bg);
+}
+
+.card[data-kind='error'] {
+  border-color: var(--mission-state-error-border);
+  background: var(--mission-state-error-bg);
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: var(--mission-type-caption);
+  color: var(--text-secondary);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 2px 0 0;
+  font-size: var(--mission-type-h2);
+}
+
+.status {
+  border: 1px solid var(--mission-severity-medium-border);
+  background: var(--mission-severity-medium-bg);
+  color: var(--mission-severity-medium-text);
+  border-radius: 999px;
+  padding: 4px 8px;
+  font-size: var(--mission-type-caption);
+  font-weight: 700;
+}
+
+.status[data-status='ACTIVE'],
+.status[data-status='TRIAGE'] {
+  border-color: var(--mission-severity-high-border);
+  background: var(--mission-severity-high-bg);
+  color: var(--mission-severity-high-text);
+}
+
+.status[data-status='COMPLETED'] {
+  border-color: var(--mission-trust-verified);
+  background: color-mix(in srgb, var(--mission-trust-verified) 20%, transparent);
+  color: var(--mission-trust-verified);
+}
+
+.objective {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: var(--mission-type-body);
+}
+
+.metricRow {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.metric {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-size: var(--mission-type-caption);
+}

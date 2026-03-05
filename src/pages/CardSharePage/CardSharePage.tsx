@@ -88,7 +88,7 @@ const CardSharePage: React.FC = () => {
                 <ShareCard card={card} meta={meta} slug={state.slug} shortUrl={shortUrl!} footerLabel="Open in app" />
                 {state.slug && (
                     <div className={styles.actions}>
-                        <Link className={styles.primaryAction} to={`/home/cards?cardSlug=${state.slug}`}>
+                        <Link className={styles.primaryAction} to={`/mission/triage?cardSlug=${state.slug}`}>
                             Open interactive view
                         </Link>
                     </div>

@@ -1,0 +1,83 @@
+@import '../../styles/theme.css';
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: grid;
+  place-items: center;
+  z-index: 1200;
+}
+
+.panel {
+  width: min(720px, 92vw);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 12px;
+  background: var(--surface-card);
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.header {
+  display: flex;
+  gap: 8px;
+}
+
+.input {
+  flex: 1;
+  background: var(--surface-muted);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: var(--text-primary);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: var(--mission-type-body);
+}
+
+.closeButton {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: var(--text-secondary);
+  border-radius: 8px;
+  padding: 7px 10px;
+  font-size: var(--mission-type-caption);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 7px;
+  max-height: 360px;
+  overflow: auto;
+}
+
+.item {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+}
+
+.itemButton {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: var(--text-primary);
+  text-align: left;
+  padding: 9px;
+  font-size: var(--mission-type-body);
+  cursor: pointer;
+}
+
+.itemButton:hover,
+.itemButton:focus-visible {
+  background: color-mix(in srgb, var(--coach-accent) 16%, transparent);
+  outline: none;
+}
+
+.empty {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: var(--mission-type-caption);
+  padding: 8px;
+}

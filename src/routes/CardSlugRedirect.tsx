@@ -7,10 +7,10 @@ const CardSlugRedirect: React.FC = () => {
     const source = params.get('source') ?? 'c';
 
     if (!slug) {
-        return <Navigate to="/home/cards" replace />;
+        return <Navigate to="/mission/triage" replace />;
     }
 
-    const target = `/home/cards?cardSlug=${encodeURIComponent(slug)}&source=${encodeURIComponent(source)}`;
+    const target = `/mission/triage?cardSlug=${encodeURIComponent(slug)}&source=${encodeURIComponent(source)}`;
     return <Navigate to={target} replace />;
 };
 

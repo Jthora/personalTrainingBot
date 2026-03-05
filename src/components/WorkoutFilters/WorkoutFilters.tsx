@@ -83,9 +83,9 @@ const WorkoutFilters: React.FC = () => {
                     type="text"
                     value={searchDraft}
                     onChange={(e) => setSearchDraft(e.target.value)}
-                    placeholder="Search workouts..."
+                    placeholder="Search drills..."
                     className={styles.searchInput}
-                    aria-label="Search workouts"
+                    aria-label="Search drills"
                 />
             </div>
 
@@ -214,13 +214,13 @@ const WorkoutFilters: React.FC = () => {
             <div className={styles.zeroState} aria-live="polite">
                 {filteredCount === 0 ? (
                     <div className={styles.zeroStateCard}>
-                        <div>No workouts match the current filters.</div>
+                        <div>No drills match the current filters.</div>
                         <div className={styles.zeroStateActions}>
                             <button type="button" onClick={() => updateFilters({ search: '', duration: 'any', equipment: [], themes: [], difficultyMin: 1, difficultyMax: 10 })}>Clear filters</button>
                         </div>
                     </div>
                 ) : filteredCount !== null ? (
-                    <div className={styles.countHint}>{filteredCount} workouts match filters</div>
+                    <div className={styles.countHint}>{filteredCount} drills match filters</div>
                 ) : null}
             </div>
         </div>

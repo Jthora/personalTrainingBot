@@ -1,0 +1,709 @@
+{
+  "generatedAt": "2026-03-05T08:45:07.616Z",
+  "sourcePath": "/home/jono/workspace/github/personalTrainingBot/src/data/training_modules_combined.json",
+  "outputPath": "/home/jono/workspace/github/personalTrainingBot/artifacts/mission-migration-drift.json",
+  "valid": false,
+  "legacyStats": {
+    "modules": 19,
+    "submodules": 201,
+    "decks": 612,
+    "cards": 3076
+  },
+  "canonicalStats": {
+    "operations": 19,
+    "cases": 201,
+    "leads": 606,
+    "signals": 612,
+    "artifacts": 3076,
+    "intelPackets": 201,
+    "debriefOutcomes": 19
+  },
+  "mappingCount": 11,
+  "issues": [
+    {
+      "level": "error",
+      "path": "deck:disrupting_psn_information_networks",
+      "message": "Duplicate deck id found."
+    },
+    {
+      "level": "error",
+      "path": "deck:eradicating_psn_command_and_control_positions",
+      "message": "Duplicate deck id found."
+    },
+    {
+      "level": "error",
+      "path": "card:psn_control_1",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:psn_control_2",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:psn_control_3",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "deck:disrupting_psn_information_networks",
+      "message": "Duplicate deck id found."
+    },
+    {
+      "level": "error",
+      "path": "deck:covertly_overthrowing_psn_controlled_systems",
+      "message": "Duplicate deck id found."
+    },
+    {
+      "level": "error",
+      "path": "deck:disrupting_psn_information_networks",
+      "message": "Duplicate deck id found."
+    },
+    {
+      "level": "error",
+      "path": "card:dpin_1",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:dpin_2",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:dpin_3",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "deck:reverse_psychological_warfare_against_psns",
+      "message": "Duplicate deck id found."
+    },
+    {
+      "level": "error",
+      "path": "deck:social_contagion_disruption",
+      "message": "Duplicate deck id found."
+    },
+    {
+      "level": "error",
+      "path": "card:scd_1",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:scd_2",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:scd_3",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "deck:eradicating_psn_command_and_control_positions",
+      "message": "Duplicate deck id found."
+    },
+    {
+      "level": "error",
+      "path": "deck:leveraging_social_resistance_movements",
+      "message": "Duplicate deck id found."
+    },
+    {
+      "level": "error",
+      "path": "deck:spotting_toxic_patterns",
+      "message": "Duplicate deck id found."
+    },
+    {
+      "level": "error",
+      "path": "card:mcd_1",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:mcd_2",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:mcd_3",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:cpsd_1",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:cpsd_2",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:cpsd_3",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:mcd_1",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:mcd_2",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:mcd_3",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:mass_awakening_1",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:mass_awakening_10",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:mass_awakening_2",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:mass_awakening_3",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:mass_awakening_4",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:mass_awakening_5",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:mass_awakening_6",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:mass_awakening_7",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:mass_awakening_8",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:mass_awakening_9",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:social_engineering_1",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:social_engineering_2",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:einstein_cartan_theory",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:hyperbolic_geometry",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:complex_numbers",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:complex_numbers",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:inequalities",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:matrix_operations",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:batch_normalization",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:gradient_descent",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:matrix_notation",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:tensor_basics",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:batch_normalization",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:gradient_descent",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:loss_functions",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:softmax_function",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:batch_normalization",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:gradient_descent",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:softmax_function",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:batch_normalization",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:biofield_modulation",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:psi_energy_transfer",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:boolean_algebra",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:legend_building",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:threat_assessment",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:sentiment_analysis",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:agent_based_modeling",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:monte_carlo_simulation",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "deck:cyber_fraud_detection",
+      "message": "Duplicate deck id found."
+    },
+    {
+      "level": "error",
+      "path": "card:ransomware_analysis",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "submodule:digital_forensics",
+      "message": "Duplicate submodule id found."
+    },
+    {
+      "level": "error",
+      "path": "card:roundhouse_kick",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:qigong_breathing",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:chain_punching",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "deck:emotional_resilience_exercises",
+      "message": "Duplicate deck id found."
+    },
+    {
+      "level": "error",
+      "path": "deck:emotional_resilience_exercises",
+      "message": "Duplicate deck id found."
+    },
+    {
+      "level": "error",
+      "path": "card:emotional_resilience_1",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:emotional_resilience_10",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:emotional_resilience_2",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:emotional_resilience_3",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:emotional_resilience_4",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:emotional_resilience_5",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:emotional_resilience_6",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:emotional_resilience_7",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:emotional_resilience_8",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:emotional_resilience_9",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "deck:spotting_toxic_patterns",
+      "message": "Duplicate deck id found."
+    },
+    {
+      "level": "error",
+      "path": "card:toxic_patterns_1",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:toxic_patterns_2",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:toxic_patterns_3",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "deck:verbal_self_defense",
+      "message": "Duplicate deck id found."
+    },
+    {
+      "level": "error",
+      "path": "card:verbal_defense_1",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:verbal_defense_2",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:verbal_defense_3",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:emotional_resilience_1",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:emotional_resilience_10",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:emotional_resilience_2",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:emotional_resilience_3",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:emotional_resilience_4",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:emotional_resilience_5",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:emotional_resilience_6",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:emotional_resilience_7",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:emotional_resilience_8",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:emotional_resilience_9",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "deck:gaslighting_countermeasures",
+      "message": "Duplicate deck id found."
+    },
+    {
+      "level": "error",
+      "path": "submodule:strategic_social_disengagement",
+      "message": "Duplicate submodule id found."
+    },
+    {
+      "level": "error",
+      "path": "deck:red_flag_detection",
+      "message": "Duplicate deck id found."
+    },
+    {
+      "level": "error",
+      "path": "card:red_flag_1",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:red_flag_10",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:red_flag_2",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:red_flag_3",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:red_flag_4",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:red_flag_5",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:red_flag_6",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:red_flag_7",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:red_flag_8",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:red_flag_9",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "deck:stealth_exit_strategies",
+      "message": "Duplicate deck id found."
+    },
+    {
+      "level": "error",
+      "path": "card:narrative_1",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:narrative_10",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:narrative_2",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:narrative_3",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:narrative_4",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:narrative_5",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:narrative_6",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:narrative_7",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:narrative_8",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:narrative_9",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:mental_toughness_10",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:maneuver_1",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:maneuver_2",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:supply_1",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:supply_2",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "deck:extraction_and_escape_tactics",
+      "message": "Duplicate deck id found."
+    },
+    {
+      "level": "error",
+      "path": "card:extraction_1",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:extraction_2",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:mission_1",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:mission_2",
+      "message": "Duplicate card id found."
+    },
+    {
+      "level": "error",
+      "path": "card:reentrancy_attack",
+      "message": "Duplicate card id found."
+    }
+  ]
+}

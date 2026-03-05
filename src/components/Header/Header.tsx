@@ -6,7 +6,7 @@ import UserProgressStore from '../../store/UserProgressStore';
 import WorkoutScheduleStore from '../../store/WorkoutScheduleStore';
 import { checkScheduleAlignment } from '../../utils/alignmentCheck';
 import HeaderNav from './HeaderNav';
-import { headerNavItems } from './navConfig';
+import { resolveHeaderNavItems } from './navConfig';
 import useSelectionSummary from '../../hooks/useSelectionSummary';
 
 const Header: React.FC = () => {
@@ -29,6 +29,7 @@ const Header: React.FC = () => {
     }, [schedule?.scheduleItems.length, schedule?.difficultySettings.level]);
 
     const selectionSummary = useSelectionSummary();
+    const resolvedNavItems = useMemo(() => resolveHeaderNavItems(), [location.pathname]);
 
     useEffect(() => {
         const progressVm = UserProgressStore.getViewModel();
@@ -50,7 +51,7 @@ const Header: React.FC = () => {
 
     const renderNav = (orientation: 'inline' | 'stacked' = 'inline') => (
         <HeaderNav
-            items={headerNavItems}
+            items={resolvedNavItems}
             activePath={location.pathname}
             onNavigate={navigateTo}
             orientation={orientation}

@@ -1,16 +1,16 @@
 import React from 'react';
 import styles from './Header.module.css';
-import { HeaderNavItem } from './navConfig';
+import { HeaderResolvedNavItem } from './navConfig';
 
 interface HeaderNavProps {
-    items: HeaderNavItem[];
+    items: HeaderResolvedNavItem[];
     activePath: string;
     onNavigate: (path: string) => void;
     orientation?: 'inline' | 'stacked';
 }
 
 const HeaderNav: React.FC<HeaderNavProps> = ({ items, activePath, onNavigate, orientation = 'inline' }) => {
-    const isActive = (path: string) => activePath === path;
+    const isActive = (item: HeaderResolvedNavItem) => item.activePaths.includes(activePath);
     const navClass = orientation === 'inline' ? styles.nav : styles.drawerNav;
 
     return (
@@ -18,9 +18,9 @@ const HeaderNav: React.FC<HeaderNavProps> = ({ items, activePath, onNavigate, or
             {items.map((item) => (
                 <button
                     key={item.path}
-                    onClick={() => onNavigate(item.path)}
-                    className={`${styles.navButton} ${isActive(item.path) ? styles.active : ''}`}
-                    aria-current={isActive(item.path) ? 'page' : undefined}
+                    onClick={() => onNavigate(item.navigatePath)}
+                    className={`${styles.navButton} ${isActive(item) ? styles.active : ''}`}
+                    aria-current={isActive(item) ? 'page' : undefined}
                     type="button"
                 >
                     {item.icon && <span aria-hidden>{item.icon}</span>} {item.label}

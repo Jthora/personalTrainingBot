@@ -3,7 +3,7 @@ import styles from './Header.module.css';
 import StatsPanel from '../StatsPanel/StatsPanel';
 import { OverlayPortal, useBodyScrollLock } from '../../utils/overlayStack';
 import HeaderNav from './HeaderNav';
-import { headerNavItems } from './navConfig';
+import { resolveHeaderNavItems } from './navConfig';
 
 interface Summary {
     remaining: number;
@@ -30,6 +30,7 @@ const HeaderDrawer: React.FC<HeaderDrawerProps> = ({ open, onClose, coachColor, 
     const drawerRef = useRef<HTMLDivElement | null>(null);
     const previouslyFocusedRef = useRef<HTMLElement | null>(null);
     const titleId = useId();
+    const resolvedNavItems = React.useMemo(() => resolveHeaderNavItems(), []);
     useBodyScrollLock(open);
 
     useEffect(() => {
@@ -123,7 +124,7 @@ const HeaderDrawer: React.FC<HeaderDrawerProps> = ({ open, onClose, coachColor, 
                     </div>
                     <div className={styles.drawerNav} style={{ '--coach-color': coachColor } as React.CSSProperties}>
                         <HeaderNav
-                            items={headerNavItems}
+                            items={resolvedNavItems}
                             activePath={activePath}
                             onNavigate={(path) => {
                                 navigateTo(path);

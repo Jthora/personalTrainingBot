@@ -1,5 +1,8 @@
 import TrainingModuleCache from '../cache/TrainingModuleCache';
 import { getCoachDefaultModules } from '../data/handlerModuleMapping';
+import { isFeatureEnabled } from '../config/featureFlags';
+import OperativeProfileStore from '../store/OperativeProfileStore';
+import { resolveModulesForArchetype } from './archetypeModuleResolver';
 
 const OVERRIDES_STORAGE_KEY = 'coachModuleOverrides';
 
@@ -60,7 +63,19 @@ export const clearHandlerOverrideModules = (coachId: string) => {
 };
 
 export const getModulesForHandler = (coachId: string): string[] | undefined => {
-    return getHandlerOverrideModules(coachId) ?? getCoachDefaultModules(coachId);
+    // Priority: user overrides > archetype modules > handler defaults
+    const overrides = getHandlerOverrideModules(coachId);
+    if (overrides) return overrides;
+
+    if (isFeatureEnabled('archetypeSystem')) {
+        const profile = OperativeProfileStore.get();
+        if (profile?.archetypeId) {
+            const archetypeModules = resolveModulesForArchetype(profile.archetypeId);
+            if (archetypeModules && archetypeModules.length > 0) return archetypeModules;
+        }
+    }
+
+    return getCoachDefaultModules(coachId);
 };
 
 export const hasHandlerOverride = (coachId: string): boolean => {

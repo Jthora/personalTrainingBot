@@ -9,6 +9,8 @@ import { missionEntityIcons } from '../../utils/mission/iconography';
 import MissionHeader from '../../components/MissionHeader/MissionHeader';
 import MissionActionPalette from '../../components/MissionActionPalette/MissionActionPalette';
 import MissionIntakePanel from '../../components/MissionIntakePanel/MissionIntakePanel';
+import ArchetypePicker from '../../components/ArchetypePicker/ArchetypePicker';
+import HandlerPicker from '../../components/HandlerPicker/HandlerPicker';
 import type { MissionPaletteAction } from '../../components/MissionActionPalette/model';
 import { readMissionFlowContext } from '../../store/missionFlow/continuity';
 import {
@@ -16,6 +18,10 @@ import {
   missionRoutePaths,
   type MissionRoutePath,
 } from '../../utils/missionTelemetryContracts';
+import { isFeatureEnabled } from '../../config/featureFlags';
+import OperativeProfileStore from '../../store/OperativeProfileStore';
+import type { ArchetypeDefinition } from '../../data/archetypes';
+import { getArchetypeHints } from '../../utils/archetypeHints';
 
 const tabs = [
   { path: '/mission/brief', label: 'Brief', icon: missionEntityIcons.operation },
@@ -78,6 +84,15 @@ const MissionShell: React.FC = () => {
   const stepStartedAtRef = useRef<number>(Date.now());
   const paletteOpenedAtRef = useRef<number | null>(null);
   const paletteSelectedRef = useRef<boolean>(false);
+
+  // ── Stage 22: Archetype/Handler intake gates ────────────────────────
+  const archetypeEnabled = isFeatureEnabled('archetypeSystem');
+  const existingProfile = OperativeProfileStore.get();
+  const [showArchetypePicker, setShowArchetypePicker] = useState(
+      archetypeEnabled && !existingProfile,
+  );
+  const [showHandlerPicker, setShowHandlerPicker] = useState(false);
+  const [pendingArchetype, setPendingArchetype] = useState<ArchetypeDefinition | null>(null);
 
   const activePath = tabs.find((tab) => location.pathname.startsWith(tab.path))?.path ?? '/mission/brief';
   const currentStepIndex = tabs.findIndex((tab) => tab.path === activePath);
@@ -314,7 +329,8 @@ const MissionShell: React.FC = () => {
   // Guidance overlay shows first; intake shows only after overlay is dismissed.
   // While either onboarding surface is active, hide all shell chrome (MissionHeader,
   // stepTools, assistantCard, Outlet) so the onboarding surface fills the viewport.
-  const isOnboarding = showGuidanceOverlay || showIntake;
+  // Stage 22: Archetype and handler pickers gate between guidance overlay and intake.
+  const isOnboarding = showGuidanceOverlay || showArchetypePicker || showHandlerPicker || showIntake;
 
   return (
     <div className={styles.pageContainer}>
@@ -340,13 +356,60 @@ const MissionShell: React.FC = () => {
         )}
 
         {/* Phase 1.2: Intake only shows after guidance overlay is dismissed */}
-        {!showGuidanceOverlay && showIntake && (
+        {!showGuidanceOverlay && !showArchetypePicker && !showHandlerPicker && showIntake && (
           <MissionIntakePanel
             onStartBriefing={() => {
               dismissIntake();
               navigateWithContext('/mission/brief');
             }}
             onDismiss={dismissIntake}
+          />
+        )}
+
+        {/* Stage 22: Archetype picker — shows after guidance overlay dismissed, before handler */}
+        {!showGuidanceOverlay && showArchetypePicker && (
+          <ArchetypePicker
+            onSelect={(archetype) => {
+              setPendingArchetype(archetype);
+              setShowArchetypePicker(false);
+              setShowHandlerPicker(true);
+            }}
+            onSkip={() => {
+              setShowArchetypePicker(false);
+              // Skip both pickers, proceed to intake/brief
+            }}
+          />
+        )}
+
+        {/* Stage 22: Handler picker — shows after archetype confirmed */}
+        {!showGuidanceOverlay && !showArchetypePicker && showHandlerPicker && pendingArchetype && (
+          <HandlerPicker
+            recommendedHandlerId={pendingArchetype.recommendedHandler}
+            onSelect={(handler) => {
+              OperativeProfileStore.set({
+                archetypeId: pendingArchetype.id,
+                handlerId: handler.id,
+                callsign: '',
+                enrolledAt: new Date().toISOString(),
+              });
+              setShowHandlerPicker(false);
+              // Intake panel shows next (or dismiss it automatically)
+              trackEvent({
+                category: 'ia',
+                action: 'tab_view',
+                route: '/mission/brief',
+                data: {
+                  kind: 'archetype_intake_complete',
+                  archetypeId: pendingArchetype.id,
+                  handlerId: handler.id,
+                },
+                source: 'ui',
+              });
+            }}
+            onBack={() => {
+              setShowHandlerPicker(false);
+              setShowArchetypePicker(true);
+            }}
           />
         )}
 
@@ -436,8 +499,30 @@ const MissionShell: React.FC = () => {
 
           {guidanceMode === 'assist' ? (
             <>
-              <p className={styles.assistantHint}><strong>Context hint:</strong> {currentHints.contextHint}</p>
-              <p className={styles.assistantHint}><strong>Next action:</strong> {currentHints.nextActionHint}</p>
+              <p className={styles.assistantHint}><strong>Context hint:</strong> {
+                (() => {
+                  if (archetypeEnabled) {
+                    const profile = OperativeProfileStore.get();
+                    if (profile?.archetypeId) {
+                      const archetypeHint = getArchetypeHints(profile.archetypeId, activePath);
+                      if (archetypeHint) return archetypeHint.contextHint;
+                    }
+                  }
+                  return currentHints.contextHint;
+                })()
+              }</p>
+              <p className={styles.assistantHint}><strong>Next action:</strong> {
+                (() => {
+                  if (archetypeEnabled) {
+                    const profile = OperativeProfileStore.get();
+                    if (profile?.archetypeId) {
+                      const archetypeHint = getArchetypeHints(profile.archetypeId, activePath);
+                      if (archetypeHint) return archetypeHint.nextActionHint;
+                    }
+                  }
+                  return currentHints.nextActionHint;
+                })()
+              }</p>
               {!isMobile && <p className={styles.assistantHint}><strong>Keyboard:</strong> Use ⌘/Ctrl + K for fast actions, Esc to close overlays.</p>}
             </>
           ) : (

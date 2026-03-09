@@ -80,7 +80,10 @@ const successMultiplier = (drill: Drill): number => {
   return clamp(0.7 + successRate, 0.5, 1.6);
 };
 
-export const deriveCompetencySnapshot = (kit: MissionKit): CompetencySnapshot => {
+export const deriveCompetencySnapshot = (
+  kit: MissionKit,
+  overrideWeights?: Record<CompetencyDimension, number>,
+): CompetencySnapshot => {
   const scores = baselineDimensionScores();
 
   kit.drills.forEach((drill) => {
@@ -89,8 +92,9 @@ export const deriveCompetencySnapshot = (kit: MissionKit): CompetencySnapshot =>
     actions.forEach((actionId) => applyImpact(scores, actionId, multiplier));
   });
 
-  const weightedScore = (Object.keys(competencyWeights) as CompetencyDimension[])
-    .reduce((sum, dimension) => sum + scores[dimension] * competencyWeights[dimension], 0);
+  const activeWeights = overrideWeights ?? competencyWeights;
+  const weightedScore = (Object.keys(activeWeights) as CompetencyDimension[])
+    .reduce((sum, dimension) => sum + scores[dimension] * activeWeights[dimension], 0);
 
   return {
     weightedScore: Math.round(clamp(weightedScore, 0, 100)),

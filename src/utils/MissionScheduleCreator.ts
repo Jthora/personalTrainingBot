@@ -3,10 +3,69 @@ import { Drill } from '../types/DrillCategory';
 import { MissionSchedule, MissionSet, MissionBlock } from '../types/MissionSchedule';
 import DifficultySettingsStore from '../store/DifficultySettingsStore';
 import { isFeatureEnabled } from '../config/featureFlags';
+import OperativeProfileStore from '../store/OperativeProfileStore';
+import { findArchetype } from '../data/archetypes';
 
 const getRandomItems = <T>(array: T[], count: number): T[] => {
     const shuffled = [...array].sort(() => 0.5 - Math.random());
     return shuffled.slice(0, count);
+};
+
+/**
+ * Stage 22: Weighted random selection that favors drills from the active archetype's
+ * core modules (weight 3×) and secondary modules (weight 2×) over unrelated drills (1×).
+ */
+const getArchetypeWeightedItems = (drills: Drill[], count: number): Drill[] => {
+    if (!isFeatureEnabled('archetypeSystem')) return getRandomItems(drills, count);
+
+    const profile = OperativeProfileStore.get();
+    if (!profile?.archetypeId) return getRandomItems(drills, count);
+
+    const archetype = findArchetype(profile.archetypeId);
+    if (!archetype) return getRandomItems(drills, count);
+
+    const coreSet = new Set(archetype.coreModules);
+    const secondarySet = new Set(archetype.secondaryModules);
+
+    // Build drill → moduleId map from the cache hierarchy
+    const drillModuleMap = new Map<string, string>();
+    const cache = DrillCategoryCache.getInstance();
+    cache.cache.forEach((category, categoryId) => {
+        category.subCategories.forEach((sub) => {
+            sub.drillGroups.forEach((group) => {
+                group.drills.forEach((drill) => {
+                    drillModuleMap.set(drill.id, categoryId);
+                });
+            });
+        });
+    });
+
+    // Build weighted pool: each entry's weight determines how many tickets it gets
+    const weighted: Array<{ drill: Drill; weight: number }> = drills.map((drill) => {
+        const moduleId = drillModuleMap.get(drill.id) ?? '';
+        if (coreSet.has(moduleId)) return { drill, weight: 3 };
+        if (secondarySet.has(moduleId)) return { drill, weight: 2 };
+        return { drill, weight: 1 };
+    });
+
+    // Weighted shuffle: for each slot, pick without replacement weighted by ticket count
+    const result: Drill[] = [];
+    const remaining = [...weighted];
+    const target = Math.min(count, drills.length);
+
+    while (result.length < target && remaining.length > 0) {
+        const totalWeight = remaining.reduce((sum, w) => sum + w.weight, 0);
+        let roll = Math.random() * totalWeight;
+        let picked = remaining.length - 1;
+        for (let i = 0; i < remaining.length; i++) {
+            roll -= remaining[i].weight;
+            if (roll <= 0) { picked = i; break; }
+        }
+        result.push(remaining[picked].drill);
+        remaining.splice(picked, 1);
+    }
+
+    return result;
 };
 
 const createDefaultMissionBlock = (index: number): MissionBlock => {
@@ -50,7 +109,7 @@ const createModernMissionSchedule = async (): Promise<MissionSchedule> => {
         return new MissionSchedule(date, [], difficultySettings);
     }
 
-    const selectedDrills = getRandomItems(filteredWorkouts, Math.min(workoutCount, filteredWorkouts.length));
+    const selectedDrills = getArchetypeWeightedItems(filteredWorkouts, Math.min(workoutCount, filteredWorkouts.length));
     console.log('Selected drills:', selectedDrills.length);
 
     const missionSets: MissionSet[] = [];

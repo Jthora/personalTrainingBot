@@ -5,6 +5,9 @@ import { deriveCompetencySnapshot, type CompetencySnapshot } from './competencyM
 import { applyDebriefProgression, type DebriefProgression } from './progressionModel';
 import type { MissionDebriefOutcome } from '../../domain/mission/types';
 import { computeMissionMilestoneProgress, type MissionMilestoneProgress } from './milestones';
+import { isFeatureEnabled } from '../../config/featureFlags';
+import OperativeProfileStore from '../../store/OperativeProfileStore';
+import { findArchetype } from '../../data/archetypes';
 
 export type ReadinessResult = {
   score: number;
@@ -73,8 +76,17 @@ export function computeReadiness(kit: MissionKit = sampleMissionKit, options: Re
     validatedKits.add(kit.id);
   }
 
+  // Stage 22: resolve active archetype for competency weight and milestone overrides
+  const activeArchetype = isFeatureEnabled('archetypeSystem')
+    ? (() => {
+        const profile = OperativeProfileStore.get();
+        return profile?.archetypeId ? findArchetype(profile.archetypeId) : undefined;
+      })()
+    : undefined;
+  const archetypeWeights = activeArchetype?.competencyWeights;
+
   if (!kit.drills.length) {
-    const competency = deriveCompetencySnapshot(kit);
+    const competency = deriveCompetencySnapshot(kit, archetypeWeights);
     const emptyProgression = applyDebriefProgression(0, options.debriefOutcomes ?? []);
     return {
       score: emptyProgression.score,
@@ -87,13 +99,14 @@ export function computeReadiness(kit: MissionKit = sampleMissionKit, options: Re
         emptyProgression.score,
         competency,
         emptyProgression.progression,
+        activeArchetype,
       ),
     };
   }
 
   const drillScores = kit.drills.map((d) => computeDrillScore(d));
   const avg = drillScores.reduce((a, b) => a + b, 0) / drillScores.length;
-  const competency = deriveCompetencySnapshot(kit);
+  const competency = deriveCompetencySnapshot(kit, archetypeWeights);
   const variance = drillScores.reduce((a, b) => a + Math.pow(b - avg, 2), 0) / drillScores.length;
   const stdev = Math.sqrt(variance);
 
@@ -106,6 +119,7 @@ export function computeReadiness(kit: MissionKit = sampleMissionKit, options: Re
     progressionApplied.score,
     competency,
     progressionApplied.progression,
+    activeArchetype,
   );
 
   return {

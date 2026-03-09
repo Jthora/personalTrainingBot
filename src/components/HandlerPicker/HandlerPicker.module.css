@@ -1,0 +1,190 @@
+@import '../../styles/theme.css';
+
+.panel {
+  display: grid;
+  gap: 14px;
+  padding: 14px;
+  min-height: calc(100vh - var(--header-height, 60px) - 56px);
+  align-content: start;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: var(--mission-type-caption, 11px);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+}
+
+.title {
+  margin: 0;
+  font-size: var(--mission-type-h2, 20px);
+  color: var(--mission-trust-verified);
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: var(--mission-type-body, 14px);
+  line-height: 1.45;
+}
+
+/* ── Handler cards ─────────────────────────────────────── */
+
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+}
+
+.card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 10px;
+  background: var(--surface-card);
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s, transform 0.1s;
+  -webkit-tap-highlight-color: transparent;
+  align-items: start;
+}
+
+.card:hover,
+.card:focus-visible {
+  border-color: var(--handler-accent);
+  box-shadow: 0 0 0 2px var(--handler-accent-soft, rgba(90, 127, 255, 0.2));
+  outline: none;
+}
+
+.card:active {
+  transform: scale(0.98);
+}
+
+.cardSelected {
+  border-color: var(--handler-accent);
+  box-shadow: 0 0 0 2px var(--handler-accent-soft, rgba(90, 127, 255, 0.2)),
+    0 4px 16px rgba(90, 127, 255, 0.18);
+}
+
+.handlerIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+}
+
+.cardBody {
+  display: grid;
+  gap: 4px;
+}
+
+.cardName {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.recommendedBadge {
+  font-size: 10px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: rgba(52, 211, 153, 0.18);
+  color: var(--mission-trust-verified, #34d399);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.cardPersonality {
+  margin: 0;
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.cardDesc {
+  margin: 0;
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.checkMark {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--handler-accent);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* ── Actions ───────────────────────────────────────────── */
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.primary,
+.secondary {
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.primary {
+  border: 1px solid var(--handler-accent);
+  background: rgba(90, 127, 255, 0.16);
+  color: var(--text-primary);
+}
+
+.primary:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.primary:not(:disabled):active {
+  transform: scale(0.97);
+  opacity: 0.85;
+}
+
+.secondary {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: transparent;
+  color: var(--text-secondary);
+}
+
+.secondary:active {
+  transform: scale(0.97);
+  opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+  .primary,
+  .secondary {
+    min-height: 44px;
+    padding: 12px 16px;
+    flex: 1 1 0;
+  }
+}

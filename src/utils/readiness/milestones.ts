@@ -1,5 +1,6 @@
 import type { DebriefProgression } from './progressionModel';
 import type { CompetencySnapshot } from './competencyModel';
+import type { ArchetypeDefinition } from '../../data/archetypes';
 
 export type MissionMilestoneTierId = 'tier_1' | 'tier_2' | 'tier_3' | 'tier_4';
 
@@ -67,6 +68,7 @@ const resolveNextUnlockHint = (
   nextTier: MissionMilestoneTier | null,
   competency: CompetencySnapshot,
   progression: DebriefProgression,
+  archetype?: ArchetypeDefinition,
 ): string => {
   if (!nextTier) {
     return 'Top milestone unlocked. Maintain mission consistency and debrief quality.';
@@ -76,12 +78,29 @@ const resolveNextUnlockHint = (
     return `Increase readiness to ${nextTier.minScore} to unlock ${nextTier.label}.`;
   }
 
-  if (nextTier.id === 'tier_3' && competency.dimensionScores.signal_analysis < 65) {
-    return 'Increase signal analysis competency to 65 by resolving more high-value signals.';
-  }
+  // Stage 22: archetype-specific gate checks override the hardcoded dimension thresholds
+  if (archetype) {
+    if (nextTier.id === 'tier_3') {
+      const { dimension, threshold } = archetype.tier3Gate;
+      if (competency.dimensionScores[dimension] < threshold) {
+        return `Increase ${dimension.replace(/_/g, ' ')} competency to ${threshold} to unlock ${nextTier.label}.`;
+      }
+    }
+    if (nextTier.id === 'tier_4') {
+      const { dimension, threshold } = archetype.tier4Gate;
+      if (competency.dimensionScores[dimension] < threshold) {
+        return `Increase ${dimension.replace(/_/g, ' ')} competency to ${threshold} to unlock ${nextTier.label}.`;
+      }
+    }
+  } else {
+    // Legacy hardcoded gates
+    if (nextTier.id === 'tier_3' && competency.dimensionScores.signal_analysis < 65) {
+      return 'Increase signal analysis competency to 65 by resolving more high-value signals.';
+    }
 
-  if (nextTier.id === 'tier_4' && competency.dimensionScores.artifact_traceability < 70) {
-    return 'Increase artifact traceability competency to 70 by completing artifact-chain drills.';
+    if (nextTier.id === 'tier_4' && competency.dimensionScores.artifact_traceability < 70) {
+      return 'Increase artifact traceability competency to 70 by completing artifact-chain drills.';
+    }
   }
 
   if (progression.trend !== 'improving' && nextTier.id === 'tier_4') {
@@ -95,11 +114,29 @@ export const computeMissionMilestoneProgress = (
   score: number,
   competency: CompetencySnapshot,
   progression: DebriefProgression,
+  archetype?: ArchetypeDefinition,
 ): MissionMilestoneProgress => {
-  const tier = resolveTier(score);
-  const tierIndex = missionMilestoneTiers.findIndex((entry) => entry.id === tier.id);
-  const nextTier = tierIndex >= 0 && tierIndex < missionMilestoneTiers.length - 1
-    ? missionMilestoneTiers[tierIndex + 1]
+  // Stage 22: overlay archetype milestone labels onto the base tiers
+  const tiers = archetype
+    ? missionMilestoneTiers.map((t, i) => ({
+        ...t,
+        label: archetype.milestoneLabels[i] ?? t.label,
+      }))
+    : missionMilestoneTiers;
+
+  const resolveTierLocal = (s: number): MissionMilestoneTier => {
+    for (let index = tiers.length - 1; index >= 0; index -= 1) {
+      if (s >= tiers[index].minScore) {
+        return tiers[index];
+      }
+    }
+    return tiers[0];
+  };
+
+  const tier = resolveTierLocal(score);
+  const tierIndex = tiers.findIndex((entry) => entry.id === tier.id);
+  const nextTier = tierIndex >= 0 && tierIndex < tiers.length - 1
+    ? tiers[tierIndex + 1]
     : null;
 
   return {
@@ -107,6 +144,6 @@ export const computeMissionMilestoneProgress = (
     progressPct: resolveProgressPct(score, tier, nextTier),
     unlocked: true,
     nextTier,
-    nextUnlockHint: resolveNextUnlockHint(score, nextTier, competency, progression),
+    nextUnlockHint: resolveNextUnlockHint(score, nextTier, competency, progression, archetype),
   };
 };

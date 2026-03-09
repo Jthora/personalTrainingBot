@@ -777,3 +777,195 @@
   - [x] Task 21.F.3: 229/229 unit tests passing (55 test files)
 
 - **Known remaining (lower-priority internal):** ~190 "workout" naming references across 28 files — DrillCategoryCache methods (`getAllWorkoutsSelected`, `getAllWorkouts`), storage keys with `workout:` prefix (intentional for backward compat), drillFilters/drillPresets local vars, InitialDataLoader/DrillDataLoader vars, `totalWorkoutSubCategories` export, legacy badge IDs (`minutes_60`, `minutes_300`). Fitness shard content in `public/training_modules_shards/fitness.json` needs dedicated content authoring.
+
+---
+
+## Stage 22 — Role/Archetype System (PLANNED)
+
+**Goal:** Give the app an identity model so it knows *who the user wants to become* and can shape every downstream system accordingly — module selection, drill scheduling, milestone labels, competency emphasis, handler recommendation, and SOP guidance.
+
+**User story driving this stage:**
+> *"I signed up to become a Rescue Ranger type of Psi Operative Super Hero Cyber Investigator. The app should ask me what I want to be, then train me specifically for that."*
+
+### Design Decisions
+
+**D1: Archetype, not class.** An archetype is a training focus that maps to a curated subset of the 19 training modules. It's not a hard lock — all content remains accessible, but the schedule creator, readiness model, and milestones prioritize the archetype's modules. Users can change archetypes later.
+
+**D2: Archetype → modules, not archetype → handler.** Handlers and archetypes are orthogonal. Any handler can train any archetype. The handler controls the *personality/theme*; the archetype controls the *curriculum*. The intake will recommend a handler based on archetype (because handlers specialize in certain modules), but the user can override.
+
+**D3: Store archetype in a new `OperativeProfileStore`.** Not UserProgressStore (which is XP/streaks/badges). The profile is identity, not progression. Persisted to `localStorage('operative:profile:v1')`. Shape: `{ archetypeId, handlerId, callsign?, enrolledAt }`.
+
+**D4: Archetype flavors milestones, not replaces them.** The 4-tier structure (Trainee → Operator → Specialist → Mission Lead) stays, but the labels become archetype-flavored: e.g., "Tier III · Rescue Specialist" instead of "Tier III · Specialist". Prerequisites also shift: a Rescue Ranger's Tier III might require counter_biochem competency ≥ 65 instead of signal_analysis.
+
+**D5: Competency dimensions become archetype-weighted, not archetype-replaced.** The 4 existing dimensions stay. Each archetype defines custom weights. A Rescue Ranger emphasizes `triage_execution` (0.40) and `decision_quality` (0.30) over `signal_analysis` (0.15) and `artifact_traceability` (0.15).
+
+**D6: Intake becomes a 3-step sequenced flow.** Currently: Guidance Overlay → Intake Panel → Brief. New: Guidance Overlay → Archetype Picker → Handler Picker (with recommendation) → Brief. The old intake panel's informational content merges into the Archetype Picker preamble. All 3 steps persist to localStorage independently, so partial completion survives reload.
+
+**D7: Feature-flagged.** `archetypeSystem` flag in featureFlags.ts. When off, the app behaves exactly as today (silent handler default, generic milestones, unweighted competencies).
+
+### Archetype Catalog
+
+Based on the existing 19 training modules (14 with content, 5 large shards: counter_psyops, self_sovereignty, equations, anti_psn, anti_tcs_idc_cbc):
+
+| Archetype ID | Display Name | Icon | Core Modules (primary 4) | Secondary Modules (2-3) | Handler Rec |
+|---|---|---|---|---|---|
+| `rescue_ranger` | Rescue Ranger | 🛡️ | combat, counter_biochem, fitness, investigation | intelligence, psiops | Tiger War God |
+| `cyber_sentinel` | Cyber Sentinel | 🔒 | cybersecurity, intelligence, espionage, investigation | agencies, counter_psyops | Agent Simon |
+| `psi_operative` | Psi Operative | 🔮 | psiops, counter_psyops, self_sovereignty, martial_arts | dance, equations | Tara Van Dekar |
+| `shadow_agent` | Shadow Agent | 🕵️ | espionage, intelligence, agencies, war_strategy | cybersecurity, counter_psyops | Agent Simon |
+| `cosmic_engineer` | Cosmic Engineer | ⚡ | cybersecurity, equations, web_three, space_force | dance, psiops | Jono Tho'ra |
+| `tactical_guardian` | Tactical Guardian | ⚔️ | combat, martial_arts, war_strategy, fitness | espionage, counter_biochem | Tiger War God |
+| `star_commander` | Star Commander | 🌟 | space_force, war_strategy, intelligence, fitness | cybersecurity, agencies | Star Cmdr Raynor |
+| `field_scholar` | Field Scholar | 📖 | self_sovereignty, counter_psyops, anti_psn, anti_tcs_idc_cbc | intelligence, investigation | Tara Van Dekar |
+
+Each archetype also defines:
+- `description`: 2-sentence summary for the picker card
+- `milestone_labels`: archetype-flavored tier names (4 strings)
+- `competency_weights`: custom `Record<CompetencyDimension, number>` (sums to 1.0)
+- `tier3_competency_gate`: which dimension + threshold replaces the default signal_analysis ≥ 65
+- `tier4_competency_gate`: which dimension + threshold replaces the default artifact_traceability ≥ 70
+
+### Data Model
+
+```typescript
+// src/data/archetypes.ts
+export interface ArchetypeDefinition {
+  id: string;
+  name: string;
+  icon: string;
+  description: string;
+  coreModules: string[];        // primary 4 module IDs
+  secondaryModules: string[];   // 2-3 supplementary module IDs
+  recommendedHandler: string;   // handler ID
+  milestoneLabels: [string, string, string, string]; // tier 1-4
+  competencyWeights: Record<CompetencyDimension, number>;
+  tier3Gate: { dimension: CompetencyDimension; threshold: number };
+  tier4Gate: { dimension: CompetencyDimension; threshold: number };
+}
+
+// src/store/OperativeProfileStore.ts
+export interface OperativeProfile {
+  archetypeId: string;
+  handlerId: string;
+  callsign: string;        // user-entered or auto-generated
+  enrolledAt: string;       // ISO date
+}
+// localStorage key: 'operative:profile:v1'
+```
+
+### Phase Breakdown
+
+- [ ] **Phase 22.A: Archetype Data Layer**
+  - [ ] Task 22.A.1: Create `src/data/archetypes.ts` — `ArchetypeDefinition` interface + 8-archetype catalog + `getArchetypeCatalog()` / `findArchetype(id)` accessors
+  - [ ] Task 22.A.2: Create `src/store/OperativeProfileStore.ts` — `OperativeProfile` type, `get()` / `set()` / `reset()` / `subscribe()` with localStorage persistence (`operative:profile:v1`), `safeParse` with migration guard
+  - [ ] Task 22.A.3: Add `archetypeSystem` feature flag to `featureFlags.ts` (default `false` prod, `true` dev)
+  - [ ] Task 22.A.4: Unit tests for OperativeProfileStore (persist/read/reset/subscribe/migration)
+
+- [ ] **Phase 22.B: Archetype Picker Component**
+  - [ ] Task 22.B.1: Create `src/components/ArchetypePicker/ArchetypePicker.tsx` — grid of archetype cards with icon, name, description, core-module tags; selecting one highlights it; "Confirm" button saves to OperativeProfileStore
+  - [ ] Task 22.B.2: Create `ArchetypePicker.module.css` — mobile-first card grid (single-column at ≤480px, 2-col at ≤768px, 3-col desktop), min-height 44px buttons, dark console aesthetic
+  - [ ] Task 22.B.3: Cards show core modules as tag pills; selected card gets border highlight + checkmark
+
+- [ ] **Phase 22.C: Handler Picker Component**
+  - [ ] Task 22.C.1: Create `src/components/HandlerPicker/HandlerPicker.tsx` — shows 5 handler cards with icon, name, personality summary; selected archetype's `recommendedHandler` gets a "Recommended" badge; selecting saves to OperativeProfileStore.handlerId
+  - [ ] Task 22.C.2: Create `HandlerPicker.module.css` — same responsive grid pattern as ArchetypePicker
+  - [ ] Task 22.C.3: Wire handler selection to `HandlerSelectionContext.setCoachId()` — changing handler here does what the app could never do before
+
+- [ ] **Phase 22.D: Intake Flow Rewire**
+  - [ ] Task 22.D.1: Update `MissionShell.tsx` gate sequence — new flow: Guidance Overlay → Archetype Picker → Handler Picker → Brief. Each step persists independently (`mission:archetype-pick:v1`, reuse `mission:intake:v1` key for handler pick since the old intake panel is being replaced)
+  - [ ] Task 22.D.2: Merge old MissionIntakePanel informational copy into ArchetypePicker preamble text (program description, "Who this is for", session outcome)
+  - [ ] Task 22.D.3: If archetype already selected on return visit, skip picker — go straight to Brief. If no archetype, show picker.
+  - [ ] Task 22.D.4: Add "Change Archetype" button to MissionHeader or action palette — re-triggers archetype picker for users who want to switch
+
+- [ ] **Phase 22.E: Module Selection Wiring**
+  - [ ] Task 22.E.1: Create `src/utils/archetypeModuleResolver.ts` — `resolveModulesForArchetype(archetypeId): string[]` returns `[...coreModules, ...secondaryModules]` from archetype definition
+  - [ ] Task 22.E.2: Update `syncHandlerModuleSelection` in HandlerSelectionContext — when `archetypeSystem` flag is on, module list comes from archetype (via OperativeProfileStore) instead of handler mapping. Handler mapping becomes the fallback when no archetype is set.
+  - [ ] Task 22.E.3: On archetype change, call `TrainingModuleCache.selectModules()` with new archetype module set + regenerate schedule
+
+- [ ] **Phase 22.F: Milestone & Competency Flavoring**
+  - [ ] Task 22.F.1: Update `milestones.ts` — `computeMissionMilestoneProgress` accepts optional `ArchetypeDefinition`; when present, uses archetype's `milestoneLabels` and archetype-specific tier3/tier4 gate checks instead of hardcoded signal_analysis/artifact_traceability thresholds
+  - [ ] Task 22.F.2: Update `competencyModel.ts` — `deriveCompetencySnapshot` accepts optional `competencyWeights` override from archetype definition; when present, uses those weights instead of the global default
+  - [ ] Task 22.F.3: Update `ReadinessPanel.tsx` — reads archetype from OperativeProfileStore, passes definition through to milestone/competency computations
+  - [ ] Task 22.F.4: Update `MissionHeader.tsx` — show archetype icon + name in header alongside operation status
+
+- [ ] **Phase 22.G: Schedule Creator Archetype Awareness**
+  - [ ] Task 22.G.1: Update `MissionScheduleCreator.createModernMissionSchedule` — when archetype is set, weight drill selection toward archetype's core modules (2:1 ratio core:secondary) instead of pure random sampling
+  - [ ] Task 22.G.2: Update `scheduleState.createNewScheduleSync` — same archetype-weighted logic (or consolidate the two code paths into a shared function)
+  - [ ] Task 22.G.3: Archetype-specific rest-block copy — MissionBlock text references the archetype ("Consolidate rescue intel" vs generic "Review intel")
+
+- [ ] **Phase 22.H: SOP & Assistant Hints**
+  - [ ] Task 22.H.1: Update `MissionShell` assistantHints — when archetype is set, SOP prompts reference the archetype focus ("As a Rescue Ranger, prioritize civilian safety signals in triage" vs generic)
+  - [ ] Task 22.H.2: Create `src/data/archetypeHints.ts` — per-archetype, per-step hint overrides (sopPrompt, contextHint, nextAction)
+
+- [ ] **Phase 22.I: Tests & Validation**
+  - [ ] Task 22.I.1: Unit tests for archetype catalog (all 8 archetypes validate: modules exist in manifest, weights sum to 1.0, handler exists, 4 milestone labels)
+  - [ ] Task 22.I.2: Unit tests for archetypeModuleResolver
+  - [ ] Task 22.I.3: Unit tests for milestone flavoring with archetype override
+  - [ ] Task 22.I.4: Unit tests for competency weights override
+  - [ ] Task 22.I.5: Integration: archetype selection → module selection → schedule creation produces drills from correct module pool
+  - [ ] Task 22.I.6: TypeScript 0 errors
+  - [ ] Task 22.I.7: Vite build clean
+  - [ ] Task 22.I.8: All existing tests still pass + new tests green
+
+### Injection Points Summary
+
+| Existing File | What Changes | Risk |
+|---|---|---|
+| `featureFlags.ts` | +1 flag | None |
+| `HandlerSelectionContext.tsx` | Module source switches from handler→archetype when flag on | Medium — primary data flow change |
+| `MissionShell.tsx` | Gate sequence adds 2 new steps | Medium — intake flow restructure |
+| `MissionIntakePanel.tsx` | Content merges into ArchetypePicker; component may become unused | Low |
+| `milestones.ts` | Accepts optional archetype for label/gate overrides | Low — additive param |
+| `competencyModel.ts` | Accepts optional weights override | Low — additive param |
+| `ReadinessPanel.tsx` | Reads archetype, passes to computations | Low |
+| `MissionHeader.tsx` | Shows archetype badge | Low |
+| `MissionScheduleCreator.ts` | Weighted drill selection by archetype modules | Medium — core schedule logic |
+| `scheduleState.ts` | Same weighted selection (or consolidate) | Medium — duplicate path |
+| `MissionShell` assistantHints | Archetype-specific overrides | Low |
+
+### Files Created (New)
+
+| File | Purpose |
+|---|---|
+| `src/data/archetypes.ts` | 8-archetype catalog with module mappings, weights, milestone labels |
+| `src/store/OperativeProfileStore.ts` | Identity persistence (archetype + handler + callsign) |
+| `src/components/ArchetypePicker/ArchetypePicker.tsx` | Selection UI — mobile-first card grid |
+| `src/components/ArchetypePicker/ArchetypePicker.module.css` | Responsive styling |
+| `src/components/HandlerPicker/HandlerPicker.tsx` | Handler selection UI with archetype-based recommendation |
+| `src/components/HandlerPicker/HandlerPicker.module.css` | Responsive styling |
+| `src/utils/archetypeModuleResolver.ts` | Archetype → module list resolution |
+| `src/data/archetypeHints.ts` | Per-archetype per-step SOP/context/next-action hints |
+| Tests (4-6 files) | Store, catalog, resolver, milestone, competency, integration |
+
+### Implementation Order & Dependencies
+
+```
+22.A (data layer) ──→ 22.B (archetype picker) ──→ 22.D (intake rewire)
+       │                                                    │
+       │                                                    ▼
+       ├──→ 22.E (module wiring) ──→ 22.G (schedule creator)
+       │
+       ├──→ 22.F (milestone/competency flavoring)
+       │
+       └──→ 22.C (handler picker) ──→ 22.D (intake rewire)
+                                            │
+                                            ▼
+                                      22.H (SOP hints)
+                                            │
+                                            ▼
+                                      22.I (validation)
+```
+
+Phases A, B, C can be built independently then wired together in D. Phases E, F, G can proceed in parallel after A. Phase H depends on the archetype definition from A. Phase I is last.
+
+### Exit Criteria
+
+- [ ] New user sees: Guidance Overlay → Archetype Picker (8 cards) → Handler Picker (5 cards, 1 recommended) → Brief
+- [ ] Returning user with archetype set skips pickers, lands on Brief with archetype badge in header
+- [ ] Schedule drills bias 2:1 toward archetype's core modules
+- [ ] Milestone tier labels reflect archetype (e.g., "Tier III · Rescue Specialist")
+- [ ] Competency weights shift per archetype
+- [ ] Tier 3/4 unlock gates use archetype-specific dimension thresholds
+- [ ] SOP hints reference archetype focus
+- [ ] Feature flag off → zero behavioral change from Stage 21
+- [ ] All existing tests pass + new test coverage for archetype catalog, store, resolver, milestones, competency, integration

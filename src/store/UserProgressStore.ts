@@ -5,7 +5,7 @@ import { applyChallengeProgress, claimChallengeReward, rotateChallengesIfNeeded,
 import { recordMetric } from '../utils/metrics';
 import { ChallengeInstance } from '../types/Challenge';
 
-export type GoalUnit = 'minutes' | 'items';
+export type GoalUnit = 'ops' | 'items';
 
 export interface GoalProgress {
     target: number;
@@ -27,7 +27,7 @@ export interface UserProgress {
     streakFrozen?: boolean;
     xp: number;
     level: number;
-    totalWorkoutsCompleted: number;
+    totalDrillsCompleted: number;
     badges: string[];
     badgeUnlocks: BadgeUnlock[];
     dailyGoal: GoalProgress;
@@ -85,11 +85,11 @@ const createDefaultProgress = (): UserProgress => ({
     streakFrozen: false,
     xp: 0,
     level: 1,
-    totalWorkoutsCompleted: 0,
+    totalDrillsCompleted: 0,
     badges: [],
     badgeUnlocks: [],
-    dailyGoal: { target: 20, unit: 'minutes', progress: 0, updatedAt: today() },
-    weeklyGoal: { target: 90, unit: 'minutes', progress: 0, updatedAt: today(), weekStart: startOfWeek(), weekEnd: endOfWeek() },
+    dailyGoal: { target: 5, unit: 'ops', progress: 0, updatedAt: today() },
+    weeklyGoal: { target: 20, unit: 'ops', progress: 0, updatedAt: today(), weekStart: startOfWeek(), weekEnd: endOfWeek() },
     challenges: [],
     lastRecap: null,
     quietMode: false,
@@ -115,7 +115,7 @@ const safeParse = (raw: string | null): UserProgress => {
             ...parsed,
             flags: { ...defaults.flags, ...parsed.flags },
             streakFrozen: parsed.streakFrozen ?? false,
-            totalWorkoutsCompleted: parsed.totalWorkoutsCompleted ?? defaults.totalWorkoutsCompleted,
+            totalDrillsCompleted: (parsed as any).totalWorkoutsCompleted ?? parsed.totalDrillsCompleted ?? defaults.totalDrillsCompleted,
             dailyGoal: { ...defaults.dailyGoal, ...parsed.dailyGoal },
             weeklyGoal: { ...defaults.weeklyGoal, ...parsed.weeklyGoal },
             challenges: Array.isArray(parsed.challenges) ? parsed.challenges : [],
@@ -190,11 +190,11 @@ const applyBadgeUnlocks = (progress: UserProgress, context: BadgeRuleContext = {
         { id: 'streak_3', predicate: p => p.streakCount >= 3 },
         { id: 'streak_7', predicate: p => p.streakCount >= 7 },
         { id: 'streak_30', predicate: p => p.streakCount >= 30 },
-        { id: 'minutes_60', predicate: p => p.dailyGoal.unit === 'minutes' && p.dailyGoal.progress >= 60 },
-        { id: 'minutes_300', predicate: p => p.weeklyGoal.unit === 'minutes' && p.weeklyGoal.progress >= 300 },
-        { id: 'completion_10', predicate: p => p.totalWorkoutsCompleted >= 10 },
-        { id: 'completion_50', predicate: p => p.totalWorkoutsCompleted >= 50 },
-        { id: 'completion_100', predicate: p => p.totalWorkoutsCompleted >= 100 },
+        { id: 'minutes_60', predicate: p => p.dailyGoal.unit === 'ops' && p.dailyGoal.progress >= 10 },
+        { id: 'minutes_300', predicate: p => p.weeklyGoal.unit === 'ops' && p.weeklyGoal.progress >= 40 },
+        { id: 'completion_10', predicate: p => p.totalDrillsCompleted >= 10 },
+        { id: 'completion_50', predicate: p => p.totalDrillsCompleted >= 50 },
+        { id: 'completion_100', predicate: p => p.totalDrillsCompleted >= 100 },
         { id: 'difficulty_advance', predicate: (_p, ctx) => (ctx.difficultyLevel ?? 0) >= 3 },
         { id: 'share_card', predicate: () => false }, // unlocked via explicit call to unlockBadge
     ];
@@ -251,7 +251,7 @@ const UserProgressStore = {
         this.save({ ...current, xp: newXp, level });
     },
 
-    recordActivity({ xp = 0, badges = [] as string[], goalDeltaMinutes = 0, completedWorkouts = 0, difficultyLevel }: { xp?: number; badges?: string[]; goalDeltaMinutes?: number; completedWorkouts?: number; difficultyLevel?: number; }) {
+    recordActivity({ xp = 0, badges = [] as string[], goalDeltaMinutes = 0, completedDrills = 0, difficultyLevel }: { xp?: number; badges?: string[]; goalDeltaMinutes?: number; completedDrills?: number; difficultyLevel?: number; }) {
         const current = this.get();
         const todayDate = today();
         let streak = current.streakCount;
@@ -278,19 +278,19 @@ const UserProgressStore = {
             weeklyGoal.weekEnd = endOfWeek();
             weeklyGoal.updatedAt = todayDate;
         }
-        if (goalDeltaMinutes > 0) {
-            if (dailyGoal.unit === 'minutes') dailyGoal.progress += goalDeltaMinutes;
-            if (weeklyGoal.unit === 'minutes') weeklyGoal.progress += goalDeltaMinutes;
+        if (completedDrills > 0) {
+            if (dailyGoal.unit === 'ops') dailyGoal.progress += completedDrills;
+            if (weeklyGoal.unit === 'ops') weeklyGoal.progress += completedDrills;
         }
 
         const mergedBadges = [...current.badges, ...badges];
-        const totalWorkoutsCompleted = Math.max(0, current.totalWorkoutsCompleted + Math.max(0, completedWorkouts));
+        const totalDrillsCompleted = Math.max(0, current.totalDrillsCompleted + Math.max(0, completedDrills));
 
         // Challenge rotation + progress
         const { challenges: rotatedChallenges, expiredIds } = rotateChallengesIfNeeded(current.challenges, todayDate, getChallengeCatalog());
         const challengesProgressed = applyChallengeProgress(rotatedChallenges, {
             minutesDelta: goalDeltaMinutes,
-            workoutsDelta: completedWorkouts,
+            missionsDelta: completedDrills,
             asOfDate: todayDate,
         });
 
@@ -311,7 +311,7 @@ const UserProgressStore = {
             dailyGoal,
             weeklyGoal,
             badges: mergedBadges,
-            totalWorkoutsCompleted,
+            totalDrillsCompleted,
             badgeUnlocks: current.badgeUnlocks,
             challenges: challengesProgressed,
         }, { difficultyLevel });

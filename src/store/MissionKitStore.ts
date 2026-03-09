@@ -1,6 +1,9 @@
-import { sampleMissionKit, type MissionKit } from '../data/missionKits/sampleMissionKit';
+import { sampleMissionKit, type MissionKit, type Drill } from '../data/missionKits/sampleMissionKit';
 
 const VISIBILITY_KEY = 'missionKit:visible';
+const DRILL_STATS_KEY = 'ptb:drill-stats';
+
+type DrillStats = Record<string, { lastCompleted: string; successRate: number; completionCount: number }>;
 
 const missionKits: MissionKit[] = [sampleMissionKit];
 
@@ -25,12 +28,45 @@ const writeVisibility = (visible: boolean) => {
   }
 };
 
+const readDrillStats = (): DrillStats => {
+  try {
+    const raw = localStorage.getItem(DRILL_STATS_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+};
+
+const writeDrillStats = (stats: DrillStats) => {
+  try {
+    localStorage.setItem(DRILL_STATS_KEY, JSON.stringify(stats));
+  } catch (err) {
+    // eslint-disable-next-line no-console
+    console.warn('[MissionKitStore] unable to persist drill stats', err);
+  }
+};
+
+/** Merge persisted drill stats into the kit's baseline drills at read time. */
+const applyDrillStats = (drill: Drill, stats: DrillStats): Drill => {
+  const saved = stats[drill.id];
+  if (!saved) return drill;
+  return {
+    ...drill,
+    lastCompleted: saved.lastCompleted,
+    successRate: saved.successRate,
+  };
+};
+
 export const MissionKitStore = {
   getKits(): MissionKit[] {
-    return missionKits;
+    const stats = readDrillStats();
+    return missionKits.map(kit => ({
+      ...kit,
+      drills: kit.drills.map(d => applyDrillStats(d, stats)),
+    }));
   },
   getPrimaryKit(): MissionKit | undefined {
-    return missionKits[0];
+    return this.getKits()[0];
   },
   isVisible(): boolean {
     if (typeof window === 'undefined') return true;
@@ -45,5 +81,21 @@ export const MissionKitStore = {
   toggleVisible(): boolean {
     const next = !this.isVisible();
     return this.setVisible(next);
+  },
+
+  /** Record a drill completion — updates lastCompleted and running successRate. */
+  recordDrillCompletion(drillId: string, success: boolean) {
+    const stats = readDrillStats();
+    const existing = stats[drillId];
+    const prevCount = existing?.completionCount ?? 0;
+    const prevRate = existing?.successRate ?? 0.5;
+    const newCount = prevCount + 1;
+    const newRate = (prevRate * prevCount + (success ? 1 : 0)) / newCount;
+    stats[drillId] = {
+      lastCompleted: new Date().toISOString(),
+      successRate: Math.round(newRate * 100) / 100,
+      completionCount: newCount,
+    };
+    writeDrillStats(stats);
   },
 };

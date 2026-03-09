@@ -17,7 +17,7 @@ interface Summary {
 interface HeaderDrawerProps {
     open: boolean;
     onClose: () => void;
-    coachColor: string;
+    handlerColor: string;
     summary: Summary;
     renderLogin: () => React.ReactNode;
     activePath: string;
@@ -26,7 +26,7 @@ interface HeaderDrawerProps {
 
 const focusableSelector = 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
 
-const HeaderDrawer: React.FC<HeaderDrawerProps> = ({ open, onClose, coachColor, summary, renderLogin, activePath, navigateTo }) => {
+const HeaderDrawer: React.FC<HeaderDrawerProps> = ({ open, onClose, handlerColor, summary, renderLogin, activePath, navigateTo }) => {
     const drawerRef = useRef<HTMLDivElement | null>(null);
     const previouslyFocusedRef = useRef<HTMLElement | null>(null);
     const titleId = useId();
@@ -122,7 +122,7 @@ const HeaderDrawer: React.FC<HeaderDrawerProps> = ({ open, onClose, coachColor, 
                     <div className={styles.drawerStats}>
                         <StatsPanel />
                     </div>
-                    <div className={styles.drawerNav} style={{ '--coach-color': coachColor } as React.CSSProperties}>
+                    <div className={styles.drawerNav} style={{ '--handler-color': handlerColor } as React.CSSProperties}>
                         <HeaderNav
                             items={resolvedNavItems}
                             activePath={activePath}

@@ -1,13 +1,17 @@
 {
-  "total": 11,
+  "total": 9,
   "summary": [
     {
       "key": "offline:offline_exit",
-      "count": 4
+      "count": 3
+    },
+    {
+      "key": "ia:tab_view",
+      "count": 3
     },
     {
       "key": "readiness:score_render",
-      "count": 2
+      "count": 1
     },
     {
       "key": "signals:signal_create",
@@ -16,19 +20,38 @@
     {
       "key": "signals:signal_resolve",
       "count": 1
-    },
-    {
-      "key": "aar:aar_save",
-      "count": 1
-    },
-    {
-      "key": "aar:aar_export",
-      "count": 1
-    },
-    {
-      "key": "settings:preload_trigger",
-      "count": 1
     }
   ],
-  "issues": []
+  "issues": [
+    {
+      "index": 2,
+      "problems": [
+        "Missing required field data.tab",
+        "Missing required mission transition field data.fromTab",
+        "Missing required mission transition field data.toTab",
+        "Missing required mission transition field data.transitionType",
+        "Missing required mission transition field data.source"
+      ]
+    },
+    {
+      "index": 4,
+      "problems": [
+        "Missing required field data.tab",
+        "Missing required mission transition field data.fromTab",
+        "Missing required mission transition field data.toTab",
+        "Missing required mission transition field data.transitionType",
+        "Missing required mission transition field data.source"
+      ]
+    },
+    {
+      "index": 8,
+      "problems": [
+        "Missing required field data.tab",
+        "Missing required mission transition field data.fromTab",
+        "Missing required mission transition field data.toTab",
+        "Missing required mission transition field data.transitionType",
+        "Missing required mission transition field data.source"
+      ]
+    }
+  ]
 }

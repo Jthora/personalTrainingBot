@@ -20,10 +20,10 @@ const recap: RecapSummary = {
     badges: ['Consistency'],
 };
 
-const useWorkoutSchedule = vi.fn();
-vi.mock('../../../hooks/useWorkoutSchedule', () => ({
+const useMissionSchedule = vi.fn();
+vi.mock('../../../hooks/useMissionSchedule', () => ({
     __esModule: true,
-    default: () => useWorkoutSchedule(),
+    default: () => useMissionSchedule(),
 }));
 
 vi.mock('../../../utils/metrics', () => ({
@@ -33,9 +33,9 @@ vi.mock('../../../utils/metrics', () => ({
 describe('RecapToast', () => {
     beforeEach(() => {
         vi.useFakeTimers();
-        useWorkoutSchedule.mockReset();
+        useMissionSchedule.mockReset();
         vi.mocked(metrics.recordMetric).mockReset();
-        useWorkoutSchedule.mockReturnValue({ recap, recapToastVisible: true, openRecap: vi.fn(), dismissRecapToast: vi.fn() });
+        useMissionSchedule.mockReturnValue({ recap, recapToastVisible: true, openRecap: vi.fn(), dismissRecapToast: vi.fn() });
     });
 
     it('shows XP and streak chips', () => {
@@ -46,7 +46,7 @@ describe('RecapToast', () => {
 
     it('fires CTA metric and opens recap', () => {
         const openRecap = vi.fn();
-        useWorkoutSchedule.mockReturnValue({ recap, recapToastVisible: true, openRecap, dismissRecapToast: vi.fn() });
+        useMissionSchedule.mockReturnValue({ recap, recapToastVisible: true, openRecap, dismissRecapToast: vi.fn() });
         const { getByText } = render(<RecapToast />);
         act(() => {
             getByText('View recap').click();
@@ -57,7 +57,7 @@ describe('RecapToast', () => {
 
     it('auto dismisses after timeout', () => {
         const dismissRecapToast = vi.fn();
-        useWorkoutSchedule.mockReturnValue({ recap, recapToastVisible: true, openRecap: vi.fn(), dismissRecapToast });
+        useMissionSchedule.mockReturnValue({ recap, recapToastVisible: true, openRecap: vi.fn(), dismissRecapToast });
         render(<RecapToast />);
         act(() => {
             vi.runAllTimers();
@@ -67,7 +67,7 @@ describe('RecapToast', () => {
 
     it('dismisses when close is clicked', () => {
         const dismissRecapToast = vi.fn();
-        useWorkoutSchedule.mockReturnValue({ recap, recapToastVisible: true, openRecap: vi.fn(), dismissRecapToast });
+        useMissionSchedule.mockReturnValue({ recap, recapToastVisible: true, openRecap: vi.fn(), dismissRecapToast });
         const { getByLabelText } = render(<RecapToast />);
         act(() => {
             getByLabelText('Dismiss recap toast').click();

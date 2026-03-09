@@ -38,6 +38,8 @@ const routes = [
 const normalize = (url: string) => url.replace(/\/$/, '');
 const baseUrl = normalize(base);
 
+const legacyTaxonomyLabels = ['Mission Kit', 'Drills/Intel', 'Signals/Ops Brief', 'Ops/Settings'];
+
 (async () => {
   const browser = await puppeteer.launch({ headless: true });
   const page = await browser.newPage();
@@ -84,10 +86,45 @@ const baseUrl = normalize(base);
         const hasRoot = await page.evaluate(() => Boolean(document.getElementById('root')));
         const offlineReported = await page.evaluate(() => navigator.onLine === false);
         const locationPath = await page.evaluate(() => window.location.pathname + window.location.search);
+        if (route.startsWith('/mission/')) {
+          await page.waitForFunction(
+            () => {
+              const text = document.body?.innerText ?? '';
+              return text.includes('Current Step:') && text.includes('Next Step:');
+            },
+            { timeout: 8000 },
+          ).catch(() => null);
+        }
+
+        const navCoherence = await page.evaluate(
+          ({ legacyLabels }) => {
+            const text = document.body?.innerText ?? '';
+            const hasCurrentStep = text.includes('Current Step:');
+            const hasNextStep = text.includes('Next Step:');
+            const foundLegacyLabels = legacyLabels.filter((label) => text.includes(label));
+            return {
+              hasCurrentStep,
+              hasNextStep,
+              foundLegacyLabels,
+            };
+          },
+          { legacyLabels: legacyTaxonomyLabels },
+        );
 
         if (!hasRoot || consoleErrors.length || pageErrors.length) {
           failed = true;
           console.error('FAIL offline', route, { status, location: locationPath, consoleErrors, pageErrors, offline: offlineReported, hasRoot });
+        } else if (
+          route.startsWith('/mission/')
+          && (!navCoherence.hasCurrentStep || !navCoherence.hasNextStep || navCoherence.foundLegacyLabels.length)
+        ) {
+          failed = true;
+          console.error('FAIL offline nav coherence', route, {
+            status,
+            location: locationPath,
+            offline: offlineReported,
+            ...navCoherence,
+          });
         } else {
           if (!offlineReported) {
             console.warn(`WARN offline flag reported online for ${route}`);

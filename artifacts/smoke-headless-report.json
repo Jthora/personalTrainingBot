@@ -1,7 +1,8 @@
 {
-  "ts": "2026-03-05T12:42:16.319Z",
-  "base": "http://127.0.0.1:4176",
+  "ts": "2026-03-06T23:32:06.949Z",
+  "base": "http://localhost:4175",
   "telemetryOut": "artifacts/telemetry-headless.json",
+  "scenarioReport": "artifacts/psi-operative-scenario-report.json",
   "telemetryReport": "artifacts/telemetry-validate-report.json",
   "telemetryDriftReport": "artifacts/telemetry-schema-drift-report.json",
   "telemetryAuditReport": "artifacts/telemetry-audit-report.md",
@@ -10,67 +11,73 @@
       "name": "Deep links (online)",
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 19677
+      "durationMs": 24474
     },
     {
       "name": "Deep links (offline cached)",
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 23965
+      "durationMs": 34679
     },
     {
       "name": "Offline critical path",
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 12808
+      "durationMs": 11716
     },
     {
       "name": "Offline recovery checks",
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 4866
+      "durationMs": 4124
     },
     {
       "name": "Mission route payload report",
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 14012
+      "durationMs": 14453
     },
     {
       "name": "Mission route payload budgets",
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 616
+      "durationMs": 637
     },
     {
       "name": "Mission render profile",
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 6971
+      "durationMs": 7719
+    },
+    {
+      "name": "Psi Operative end-to-end scenario",
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 4868
     },
     {
       "name": "Telemetry trigger",
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 23467
+      "durationMs": 68832
     },
     {
       "name": "Telemetry validation",
-      "status": "pass",
-      "exitCode": 0,
-      "durationMs": 621
+      "status": "fail",
+      "exitCode": 1,
+      "durationMs": 692
     },
     {
       "name": "Telemetry schema drift",
-      "status": "pass",
-      "exitCode": 0,
-      "durationMs": 618
+      "status": "fail",
+      "exitCode": 1,
+      "durationMs": 699
     },
     {
       "name": "Telemetry audit report",
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 610
+      "durationMs": 682
     }
   ]
 }

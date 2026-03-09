@@ -9,6 +9,8 @@ export type TriageCard = {
   lane: 'Case' | 'Signal';
   severity: MissionSeverity;
   status: string;
+  /** Original domain-level status used for lifecycle validation. */
+  domainStatus: string;
 };
 
 export type TriageColumn = {
@@ -26,6 +28,7 @@ const toCaseCard = (value: MissionCase): TriageCard => ({
   lane: 'Case',
   severity: value.severity,
   status: value.status.replace(/_/g, ' ').toUpperCase(),
+  domainStatus: value.status,
 });
 
 const toSignalCard = (value: MissionSignal): TriageCard => ({
@@ -35,6 +38,7 @@ const toSignalCard = (value: MissionSignal): TriageCard => ({
   lane: 'Signal',
   severity: value.severity,
   status: value.status.replace(/_/g, ' ').toUpperCase(),
+  domainStatus: value.status,
 });
 
 export const severityRank: Record<MissionSeverity, number> = {
@@ -69,7 +73,18 @@ const actionStatusLabel: Record<TriageAction, string> = {
   resolve: 'RESOLVED',
 };
 
-export const applyTriageAction = (card: TriageCard, action: TriageAction): TriageCard => {
+/**
+ * Apply a triage action to a card.
+ * When `nextDomainStatus` is provided (from lifecycle validation),
+ * the card's domainStatus is updated to match.
+ */
+export const applyTriageAction = (
+  card: TriageCard,
+  action: TriageAction,
+  nextDomainStatus?: string,
+): TriageCard => {
+  const baseDomain = nextDomainStatus ?? card.domainStatus;
+
   if (action === 'escalate') {
     const currentIndex = severityOrder.indexOf(card.severity);
     const nextSeverity = severityOrder[Math.min(currentIndex + 1, severityOrder.length - 1)] ?? card.severity;
@@ -77,12 +92,14 @@ export const applyTriageAction = (card: TriageCard, action: TriageAction): Triag
       ...card,
       severity: nextSeverity,
       status: actionStatusLabel.escalate,
+      domainStatus: baseDomain,
     };
   }
 
   return {
     ...card,
     status: actionStatusLabel[action],
+    domainStatus: baseDomain,
   };
 };
 

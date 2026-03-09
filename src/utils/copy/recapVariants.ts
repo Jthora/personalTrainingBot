@@ -271,9 +271,9 @@ const modalVariants: CopyVariant<RecapModalCopy>[] = [
         group: 'coaching',
         build: (ctx) => {
             const minutes = numberOrZero(ctx.minutes);
-            const goalNudge = minutes < 20 ? 'Add a 10-min finisher to close the gap.' : 'Log a stretch or cooldown to bank recovery.';
+            const goalNudge = minutes < 20 ? 'Add a 10-min finisher to close the gap.' : 'Log a debrief or wind-down to bank recovery.';
             return {
-                headerTitle: 'Coach recap',
+                headerTitle: 'Handler debrief',
                 headerSubtitle: 'Quick pointers to stay on track.',
                 headline: minutes >= 30 ? 'Training block logged' : 'Micro session saved',
                 subhead: goalNudge,

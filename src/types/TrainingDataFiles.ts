@@ -28,13 +28,13 @@ export interface CardDeckFile {
     cards: Card[];
 }
 
-export interface WorkoutCategoryFile {
+export interface DrillCategoryFile {
     name: string;
     description: string;
     subcategories: Record<string, string>;
 }
 
-export interface WorkoutEntryFile {
+export interface DrillEntryFile {
     name: string;
     duration: string;
     intensity: string;
@@ -42,14 +42,14 @@ export interface WorkoutEntryFile {
     difficulty_range: [number, number];
 }
 
-export interface WorkoutGroupFile {
+export interface DrillGroupFile {
     name: string;
     description: string;
-    workouts: WorkoutEntryFile[];
+    drills: DrillEntryFile[];
 }
 
-export interface WorkoutSubCategoryFile {
+export interface DrillSubCategoryFile {
     name: string;
     description: string;
-    workout_groups: WorkoutGroupFile[];
+    workout_groups: DrillGroupFile[];
 }

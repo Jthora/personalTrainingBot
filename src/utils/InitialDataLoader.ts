@@ -1,11 +1,11 @@
 import CardDataLoader from './CardDataLoader';
-import WorkoutDataLoader from './WorkoutDataLoader';
+import DrillDataLoader from './DrillDataLoader';
 import { totalCardDecks } from './cardDeckPaths'; // Import total card decks
-import { totalWorkoutSubCategories } from './workoutSubCategoryPaths'; // Import total workout subcategories
-import WorkoutCategoryCache from '../cache/WorkoutCategoryCache'; // Import WorkoutCategoryCache
+import { totalWorkoutSubCategories } from './drillSubCategoryPaths'; // Import total drill subcategories
+import DrillCategoryCache from '../cache/DrillCategoryCache'; // Import DrillCategoryCache
 import TrainingModuleCache from '../cache/TrainingModuleCache';
-import TrainingCoachCache from '../cache/TrainingCoachCache';
-import WorkoutScheduleStore from '../store/WorkoutScheduleStore'; // Import WorkoutScheduleStore
+import TrainingHandlerCache from '../cache/TrainingHandlerCache';
+import MissionScheduleStore from '../store/MissionScheduleStore'; // Import MissionScheduleStore
 import { loadScheduleStub } from './ScheduleLoader';
 import MissionEntityStore from '../domain/mission/MissionEntityStore';
 
@@ -25,7 +25,7 @@ class InitialDataLoader {
             try {
                 console.log("InitialDataLoader: Starting to load all data...");
                 const cardDataLoader = new CardDataLoader();
-                const workoutDataLoader = new WorkoutDataLoader();
+                const workoutDataLoader = new DrillDataLoader();
                 let currentStep = 0;
 
                 const updateProgress = (totalSteps: number) => {
@@ -36,13 +36,13 @@ class InitialDataLoader {
                 const totalSteps = totalCardDecks + Object.keys(totalWorkoutSubCategories).length;
                 console.log(`InitialDataLoader: Total CardDecks and WorkoutSubCategories: ${totalSteps}`);
 
-                const coachPromise = this.loadCoachData();
+                const coachPromise = this.loadHandlerData();
                 const trainingPromise = this.loadTrainingModules(cardDataLoader, updateProgress, totalSteps, onPartialFailure);
                 const workoutCategoriesPromise = this.loadWorkoutCategories(workoutDataLoader, updateProgress, totalSteps, onPartialFailure);
-                const schedulePromise = workoutCategoriesPromise.then(() => this.loadWorkoutSchedule());
+                const schedulePromise = workoutCategoriesPromise.then(() => this.loadMissionSchedule());
 
                 const taskEntries = [
-                    ["coach", coachPromise],
+                    ["handler", coachPromise],
                     ["training", trainingPromise],
                     ["workoutCategories", workoutCategoriesPromise],
                     ["schedule", schedulePromise],
@@ -71,9 +71,9 @@ class InitialDataLoader {
         return this.initializationPromise;
     }
 
-    private static async loadCoachData() {
-        console.log("InitialDataLoader: Loading coach data...");
-        await TrainingCoachCache.getInstance().loadData();
+    private static async loadHandlerData() {
+        console.log("InitialDataLoader: Loading handler data...");
+        await TrainingHandlerCache.getInstance().loadData();
     }
 
     private static async loadTrainingModules(
@@ -90,22 +90,22 @@ class InitialDataLoader {
     }
 
     private static async loadWorkoutCategories(
-        dataLoader: WorkoutDataLoader,
+        dataLoader: DrillDataLoader,
         updateProgress: (totalSteps: number) => void,
         totalSteps: number,
         onPartialFailure?: (message: string) => void
     ) {
-        console.log("InitialDataLoader: Loading workout categories...");
+        console.log("InitialDataLoader: Loading drill categories...");
         const workoutCategories = await dataLoader.loadAllData(() => updateProgress(totalSteps), onPartialFailure);
-        console.log(`InitialDataLoader: Loaded ${workoutCategories.length} workout categories.`);
-        await WorkoutCategoryCache.getInstance().loadData(workoutCategories); // Load data into cache
+        console.log(`InitialDataLoader: Loaded ${workoutCategories.length} drill categories.`);
+        await DrillCategoryCache.getInstance().loadData(workoutCategories); // Load data into cache
     }
 
-    private static async loadWorkoutSchedule() {
-        console.log("InitialDataLoader: Loading workout schedule...");
+    private static async loadMissionSchedule() {
+        console.log("InitialDataLoader: Loading drill schedule...");
         const { schedule, source, stale } = await loadScheduleStub();
-        WorkoutScheduleStore.saveSchedule(schedule);
-        console.log(`InitialDataLoader: Loaded and saved workout schedule from ${source}${stale ? ' (stale)' : ''}.`);
+        MissionScheduleStore.saveSchedule(schedule);
+        console.log(`InitialDataLoader: Loaded and saved drill schedule from ${source}${stale ? ' (stale)' : ''}.`);
     }
 }
 

@@ -1,24 +1,24 @@
-import { WorkoutBlock, WorkoutSet } from '../types/WorkoutSchedule';
-import { Workout } from '../types/WorkoutCategory';
+import { MissionBlock, MissionSet } from '../types/MissionSchedule';
+import { Drill } from '../types/DrillCategory';
 
-export type ScheduleItem = WorkoutSet | WorkoutBlock;
+export type ScheduleItem = MissionSet | MissionBlock;
 
-const cloneWorkout = (workout: Workout): Workout => {
-    const copy = new Workout(workout.name, workout.description, workout.duration, workout.intensity, workout.difficulty_range);
-    copy.id = workout.id;
-    copy.equipment = [...(workout.equipment ?? [])];
-    copy.themes = [...(workout.themes ?? [])];
-    copy.keywords = [...(workout.keywords ?? [])];
-    copy.durationMinutes = workout.durationMinutes;
+const cloneDrill = (drill: Drill): Drill => {
+    const copy = new Drill(drill.name, drill.description, drill.duration, drill.intensity, drill.difficulty_range);
+    copy.id = drill.id;
+    copy.equipment = [...(drill.equipment ?? [])];
+    copy.themes = [...(drill.themes ?? [])];
+    copy.keywords = [...(drill.keywords ?? [])];
+    copy.durationMinutes = drill.durationMinutes;
     return copy;
 };
 
 export const cloneScheduleItems = (items: ScheduleItem[]): ScheduleItem[] => {
     return items.map(item => {
-        if (item instanceof WorkoutSet) {
-            return new WorkoutSet(item.workouts.map(([workout, completed]) => [cloneWorkout(workout), completed]));
+        if (item instanceof MissionSet) {
+            return new MissionSet(item.drills.map(([drill, completed]) => [cloneDrill(drill), completed]));
         }
-        return new WorkoutBlock(item.name, item.description, item.duration, item.intervalDetails);
+        return new MissionBlock(item.name, item.description, item.duration, item.intervalDetails);
     });
 };
 
@@ -38,9 +38,9 @@ export const removeScheduleItem = (items: ScheduleItem[], index: number): Schedu
 };
 
 export const describeScheduleItem = (item: ScheduleItem): string => {
-    if (item instanceof WorkoutSet) {
-        const names = item.workouts.map(([workout]) => workout.name).slice(0, 3).join(', ');
-        const suffix = item.workouts.length > 3 ? '…' : '';
+    if (item instanceof MissionSet) {
+        const names = item.drills.map(([drill]) => drill.name).slice(0, 3).join(', ');
+        const suffix = item.drills.length > 3 ? '…' : '';
         return `Set • ${names}${suffix}`;
     }
     return `Block • ${item.name}`;
@@ -49,25 +49,25 @@ export const describeScheduleItem = (item: ScheduleItem): string => {
 export type AlignmentStatus = 'aligned' | 'warn' | 'neutral';
 
 export const getAlignmentStatus = (item: ScheduleItem, difficultyLevel: number): AlignmentStatus => {
-    if (item instanceof WorkoutBlock) return 'neutral';
-    const outOfRange = item.workouts.some(([workout]) => difficultyLevel < workout.difficulty_range[0] || difficultyLevel > workout.difficulty_range[1]);
+    if (item instanceof MissionBlock) return 'neutral';
+    const outOfRange = item.drills.some(([drill]) => difficultyLevel < drill.difficulty_range[0] || difficultyLevel > drill.difficulty_range[1]);
     return outOfRange ? 'warn' : 'aligned';
 };
 
-export const adjustSetDifficulty = (item: WorkoutSet, targetLevel: number): WorkoutSet => {
+export const adjustSetDifficulty = (item: MissionSet, targetLevel: number): MissionSet => {
     const clamped = Math.max(1, Math.min(10, targetLevel));
     const range: [number, number] = [Math.max(1, clamped - 1), Math.min(10, clamped + 1)];
-    const updated = item.workouts.map(([workout, completed]) => {
-        const copy = cloneWorkout(workout);
+    const updated = item.drills.map(([drill, completed]) => {
+        const copy = cloneDrill(drill);
         copy.difficulty_range = range;
-        return [copy, completed] as [Workout, boolean];
+        return [copy, completed] as [Drill, boolean];
     });
-    return new WorkoutSet(updated);
+    return new MissionSet(updated);
 };
 
 const midpoint = (range: [number, number]) => (range[0] + range[1]) / 2;
 
-const similarityScore = (candidate: Workout, seed: Workout, targetLevel: number): number => {
+const similarityScore = (candidate: Drill, seed: Drill, targetLevel: number): number => {
     const diffScore = Math.abs(midpoint(candidate.difficulty_range) - targetLevel);
     const seedThemes = new Set(seed.themes ?? []);
     const candidateThemes = new Set(candidate.themes ?? []);
@@ -84,17 +84,17 @@ const similarityScore = (candidate: Workout, seed: Workout, targetLevel: number)
     return diffScore + themeScore + equipPenalty;
 };
 
-export const replaceSetWithSimilar = (item: WorkoutSet, pool: Workout[], targetLevel: number): WorkoutSet => {
+export const replaceSetWithSimilar = (item: MissionSet, pool: Drill[], targetLevel: number): MissionSet => {
     if (!pool.length) return item;
-    const seed = item.workouts[0]?.[0] ?? pool[0];
+    const seed = item.drills[0]?.[0] ?? pool[0];
     const sorted = pool
         .filter(w => w.id !== seed.id)
         .sort((a, b) => similarityScore(a, seed, targetLevel) - similarityScore(b, seed, targetLevel));
-    const needed = item.workouts.length;
+    const needed = item.drills.length;
     const picks = sorted.slice(0, Math.max(needed, 1));
     if (picks.length < needed) {
         picks.push(seed);
     }
-    const replacements = picks.slice(0, needed).map(w => [cloneWorkout(w), false] as [Workout, boolean]);
-    return new WorkoutSet(replacements);
+    const replacements = picks.slice(0, needed).map(w => [cloneDrill(w), false] as [Drill, boolean]);
+    return new MissionSet(replacements);
 };

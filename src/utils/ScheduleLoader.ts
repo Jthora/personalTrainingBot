@@ -1,16 +1,16 @@
 import { withCache, APP_VERSION } from './cache/indexedDbCache';
 import { TTL_MS } from './cache/constants';
 import { isFeatureEnabled } from '../config/featureFlags';
-import WorkoutScheduleStore from '../store/WorkoutScheduleStore';
-import { WorkoutSchedule } from '../types/WorkoutSchedule';
-import { createWorkoutSchedule } from './WorkoutScheduleCreator';
+import MissionScheduleStore from '../store/MissionScheduleStore';
+import { MissionSchedule } from '../types/MissionSchedule';
+import { createMissionSchedule } from './MissionScheduleCreator';
 
 export type ScheduleEventName = 'schedule:stub-ready' | 'schedule:details-ready' | 'schedule:refresh-failed';
 
 const scheduleEventTarget = typeof window !== 'undefined' ? new EventTarget() : null;
 
 interface ScheduleStubPayload {
-    schedule: ReturnType<WorkoutSchedule['toJSON']>;
+    schedule: ReturnType<MissionSchedule['toJSON']>;
     lastUpdated: number;
     source: 'cache' | 'network' | 'stale-cache';
     stale?: boolean;
@@ -37,8 +37,8 @@ export const onScheduleEvent = (name: ScheduleEventName, listener: (detail: unkn
 };
 
 const loadSchedule = async (): Promise<ScheduleStubPayload> => {
-    const schedule = await createWorkoutSchedule();
-    WorkoutScheduleStore.saveSchedule(schedule);
+    const schedule = await createMissionSchedule();
+    MissionScheduleStore.saveSchedule(schedule);
     return {
         schedule: schedule.toJSON(),
         lastUpdated: Date.now(),
@@ -46,7 +46,7 @@ const loadSchedule = async (): Promise<ScheduleStubPayload> => {
     };
 };
 
-export async function loadScheduleStub(): Promise<{ schedule: WorkoutSchedule; source: ScheduleStubPayload['source']; stale?: boolean }> {
+export async function loadScheduleStub(): Promise<{ schedule: MissionSchedule; source: ScheduleStubPayload['source']; stale?: boolean }> {
     const signature = `scheduleStub-${APP_VERSION}`;
     const useCache = isFeatureEnabled('loadingCacheV2');
     try {
@@ -61,8 +61,8 @@ export async function loadScheduleStub(): Promise<{ schedule: WorkoutSchedule; s
               )
             : { data: await loadSchedule(), source: 'network' as const, stale: false };
 
-        const schedule = WorkoutSchedule.fromJSON(result.data.schedule);
-        WorkoutScheduleStore.saveSchedule(schedule);
+        const schedule = MissionSchedule.fromJSON(result.data.schedule);
+        MissionScheduleStore.saveSchedule(schedule);
 
         emitScheduleEvent('schedule:stub-ready', { source: result.source, stale: result.stale });
         lastRefresh = Date.now();
@@ -79,7 +79,7 @@ export async function loadScheduleStub(): Promise<{ schedule: WorkoutSchedule; s
 export const awaitScheduleStub = (): Promise<ScheduleStubPayload> =>
     new Promise((resolve) => {
         if (!scheduleEventTarget) {
-            resolve({ schedule: WorkoutScheduleStore.getScheduleSync()?.toJSON() ?? { date: '', scheduleItems: [], difficultySettings: {} as any }, lastUpdated: Date.now(), source: 'network' });
+            resolve({ schedule: MissionScheduleStore.getScheduleSync()?.toJSON() ?? { date: '', scheduleItems: [], difficultySettings: {} as any }, lastUpdated: Date.now(), source: 'network' });
             return;
         }
         const off = onScheduleEvent('schedule:stub-ready', (detail) => {
@@ -137,8 +137,8 @@ const DETAILS_RANGE_DEFAULT = 'current+next-week';
 
 const loadScheduleDetails = async (range: string): Promise<ScheduleDetailsPayload> => {
     // Placeholder: reuse generated schedule as details for now.
-    const schedule = await createWorkoutSchedule();
-    WorkoutScheduleStore.saveSchedule(schedule);
+    const schedule = await createMissionSchedule();
+    MissionScheduleStore.saveSchedule(schedule);
     return {
         schedule: schedule.toJSON(),
         lastUpdated: Date.now(),
@@ -147,7 +147,7 @@ const loadScheduleDetails = async (range: string): Promise<ScheduleDetailsPayloa
     };
 };
 
-export async function loadScheduleDetailsRange(range: string = DETAILS_RANGE_DEFAULT): Promise<{ schedule: WorkoutSchedule; source: ScheduleDetailsPayload['source']; stale?: boolean; range: string }> {
+export async function loadScheduleDetailsRange(range: string = DETAILS_RANGE_DEFAULT): Promise<{ schedule: MissionSchedule; source: ScheduleDetailsPayload['source']; stale?: boolean; range: string }> {
     const signature = `scheduleDetails-${range}-${APP_VERSION}`;
     const useCache = isFeatureEnabled('loadingCacheV2');
     try {
@@ -162,8 +162,8 @@ export async function loadScheduleDetailsRange(range: string = DETAILS_RANGE_DEF
               )
             : { data: await loadScheduleDetails(range), source: 'network' as const, stale: false };
 
-        const schedule = WorkoutSchedule.fromJSON(result.data.schedule);
-        WorkoutScheduleStore.saveSchedule(schedule);
+        const schedule = MissionSchedule.fromJSON(result.data.schedule);
+        MissionScheduleStore.saveSchedule(schedule);
         emitScheduleEvent('schedule:details-ready', { source: result.source, stale: result.stale, range });
 
         return { schedule, source: result.source, stale: result.stale, range };
@@ -181,7 +181,7 @@ export const awaitScheduleDetails = (range: string = DETAILS_RANGE_DEFAULT): Pro
     new Promise((resolve) => {
         if (!scheduleEventTarget) {
             resolve({
-                schedule: WorkoutScheduleStore.getScheduleSync()?.toJSON() ?? { date: '', scheduleItems: [], difficultySettings: {} as any },
+                schedule: MissionScheduleStore.getScheduleSync()?.toJSON() ?? { date: '', scheduleItems: [], difficultySettings: {} as any },
                 lastUpdated: Date.now(),
                 source: 'network',
                 range,

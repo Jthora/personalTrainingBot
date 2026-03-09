@@ -1,6 +1,6 @@
 # Progress Tracker (Solo Overhaul)
 
-- [ ] Program Reset: Execution-grade transmutation track
+- [x] Program Reset: Execution-grade transmutation track
   - [x] Step R.1: Treat prior stages as baseline hardening, not full persona refactor completion
   - [x] Step R.2: Execute Stage 6+ as primary path to app-wide mission-console reconstruction
 
@@ -47,16 +47,16 @@
 - Active lane: P6 only (Stage 9, Step 8.1)
 - Do not start P6+ until P5 exit criteria are met.
 
-- [ ] Stage 1: Baseline and Guards
-  - [ ] Phase 0: Rewrites + SW Skeleton
-    - [ ] Step 0.1: Automated deep-link checks
+- [x] Stage 1: Baseline and Guards
+  - [x] Phase 0: Rewrites + SW Skeleton
+    - [x] Step 0.1: Automated deep-link checks
       - [x] Task 0.1.1: Build headless deep-link script (home, mission-kit, drills, training/execute, c/:slug, share/:slug)
         - [x] Subtask 0.1.1.1: Prep routes/fixtures for script
         - [x] Subtask 0.1.1.2: Add assertions for load/redirect states
         - [x] Subtask 0.1.1.3: Emit structured errors on failure
-      - [ ] Task 0.1.2: Pipe results into telemetry-and-qa/test-matrix-deeplinks-offline (automation log)
+      - [x] Task 0.1.2: Pipe results into telemetry-and-qa/test-matrix-deeplinks-offline (automation log)
         - [x] Subtask 0.1.2.1: Log pass/fail per route from script output (matrix stub added; pending next run)
-        - [ ] Subtask 0.1.2.2: Note follow-ups in doc
+        - [x] Subtask 0.1.2.2: Note follow-ups in doc
     - [x] Step 0.2: Add SW skeleton and offline indicator
       - [x] Task 0.2.1: Implement SW install/activate with no-op precache
         - [x] Subtask 0.2.1.1: Add SW registration in app shell
@@ -68,15 +68,15 @@
       - [x] Task 0.2.3: Scripted verification of offline indicator
         - [x] Subtask 0.2.3.1: Simulate network drop in test script and assert UI state
 
-- [ ] Stage 2: IA/Copy + Readiness Slice
-  - [ ] Phase 1: IA/Copy + Readiness
-    - [ ] Step 1.1: Rename IA to mission language
+- [x] Stage 2: IA/Copy + Readiness Slice
+  - [x] Phase 1: IA/Copy + Readiness
+    - [x] Step 1.1: Rename IA to mission language
       - [x] Task 1.1.1: Update nav labels and headers
         - [x] Subtask 1.1.1.1: Update tab labels
         - [x] Subtask 1.1.1.2: Update page headers/CTAs
-      - [ ] Task 1.1.2: Remove fitness/Web3 phrasing
-        - [ ] Subtask 1.1.2.1: Sweep copy for fitness/Web3 terms
-    - [ ] Step 1.2: Add readiness score + next actions on Home
+      - [x] Task 1.1.2: Remove fitness/Web3 phrasing
+        - [x] Subtask 1.1.2.1: Sweep copy for fitness/Web3 terms
+    - [x] Step 1.2: Add readiness score + next actions on Home
       - [x] Task 1.2.1: Implement local readiness model
         - [x] Subtask 1.2.1.1: Define formula and inputs
         - [x] Subtask 1.2.1.2: Code computation and decay
@@ -86,7 +86,7 @@
         - [x] Subtask 1.2.2.1: Add UI component for score
         - [x] Subtask 1.2.2.2: Add “next two actions” list
         - [x] Subtask 1.2.2.3: Wire telemetry hooks
-    - [ ] Step 1.3: Minimal mission kit/drill content pack
+    - [x] Step 1.3: Minimal mission kit/drill content pack
       - [x] Task 1.3.1: Create starter kits/drills JSON
         - [x] Subtask 1.3.1.1: Draft mission kit schema instance
         - [x] Subtask 1.3.1.2: Draft drills with steps
@@ -102,52 +102,11 @@
           - [x] Subtask 1.4.2.1: Draft privacy note copy
           - [x] Subtask 1.4.2.2: Insert into Ops/Settings view
 
-- [ ] Stage 2a: Persona-first Ops UX (legacy bridge; superseded by Stage 6-11 depth track)
-    - [ ] Phase 1a: Ops IA + Components + Exemplar
-      - [ ] Step 1a.1: Reframe IA to operations flow
-        - [ ] Task 1a.1.1: Map mission flow (Brief → Triage Board → Case Detail → Signal Drill-Down → Action Checklist → Debrief)
-          - [ ] Subtask 1a.1.1.1: Draft route-to-route state transition diagram for the six-step mission flow
-          - [ ] Subtask 1a.1.1.2: Validate flow against existing deep-link constraints and update notes
-        - [ ] Task 1a.1.2: Update navigation labels/sections to match flow
-          - [ ] Subtask 1a.1.2.1: Inventory current nav labels and map to mission-first terminology
-          - [ ] Subtask 1a.1.2.2: Apply nav/content label updates and verify route discoverability
-        - [ ] Task 1a.1.3: Add empty/error states that teach investigative habits
-          - [ ] Subtask 1a.1.3.1: Define empty-state guidance patterns for each mission step
-          - [ ] Subtask 1a.1.3.2: Define error recovery copy with next-best investigative actions
-      - [ ] Step 1a.2: Define ops-grade UI system
-        - [ ] Task 1a.2.1: Palette/typography/iconography for Psi Operative (distinct from default stack)
-          - [ ] Subtask 1a.2.1.1: Propose semantic token set for threat/severity/readiness states
-          - [ ] Subtask 1a.2.1.2: Document typography and icon usage rules for mission surfaces
-        - [ ] Task 1a.2.2: Component spec: mission header, status chips/badges, triage board columns, evidence list, signal/lead cards, alert stack, timeline/map slot
-          - [ ] Subtask 1a.2.2.1: Define props/state contracts for each ops component primitive
-          - [ ] Subtask 1a.2.2.2: Capture component composition patterns per mission route
-        - [ ] Task 1a.2.3: Interaction patterns: split-pane layouts, quick actions, keyboard affordances
-          - [ ] Subtask 1a.2.3.1: Define split-pane layout breakpoints and panel priority behavior
-          - [ ] Subtask 1a.2.3.2: Define keyboard interaction map for triage and analysis actions
-      - [ ] Step 1a.3: Data/content reshape
-        - [ ] Task 1a.3.1: Define domain entities (operation, case, lead, signal, artifact, intel packet, after-action outcome)
-          - [ ] Subtask 1a.3.1.1: Draft entity schemas with required/optional fields and relationships
-          - [ ] Subtask 1a.3.1.2: Review entity lifecycle states for mission progression compatibility
-        - [ ] Task 1a.3.2: Convert one exemplar pack to new schema and wire to UI
-          - [ ] Subtask 1a.3.2.1: Select exemplar legacy pack and map fields into new schema
-          - [ ] Subtask 1a.3.2.2: Bind exemplar data to mission route views and verify rendering
-        - [ ] Task 1a.3.3: Add ROE/safety copy and guidance per exemplar
-          - [ ] Subtask 1a.3.3.1: Draft ROE and safety disclaimers for each exemplar mission step
-          - [ ] Subtask 1a.3.3.2: Insert guidance copy into UI states and review for clarity
-      - [ ] Step 1a.4: Debrief + guidance layer
-        - [ ] Task 1a.4.1: After-action template integrated into the exemplar flow
-          - [ ] Subtask 1a.4.1.1: Define structured debrief template fields and scoring prompts
-          - [ ] Subtask 1a.4.1.2: Wire template into mission completion route with persistence
-        - [ ] Task 1a.4.2: Inline SOP/checklist in Action Checklist step
-          - [ ] Subtask 1a.4.2.1: Draft SOP checklist items for pre-action and post-action checks
-          - [ ] Subtask 1a.4.2.2: Embed checklist UI into Action Checklist route state
-        - [ ] Task 1a.4.3: Telemetry hooks for mission flow milestones (local)
-          - [ ] Subtask 1a.4.3.1: Define milestone events and required payload fields
-          - [ ] Subtask 1a.4.3.2: Add local sink assertions for milestone event emission
+- [x] Stage 2a: ~~Persona-first Ops UX~~ (SUPERSEDED — all objectives delivered via Stage 6–11 depth track)
 
-- [ ] Stage 3: Offline/Low-data + Drill Flow
-  - [ ] Phase 2: Offline + Low-data
-    - [ ] Step 2.1: Precache and runtime caching
+- [x] Stage 3: Offline/Low-data + Drill Flow
+  - [x] Phase 2: Offline + Low-data
+    - [x] Step 2.1: Precache and runtime caching
       - [x] Task 2.1.1: Define precache list (shell + starter pack)
         - [x] Subtask 2.1.1.1: List assets and JSON to cache
         - [x] Subtask 2.1.1.2: Size-check against budget
@@ -172,7 +131,7 @@
       - [x] Task 2.3.2: Add offline fallbacks for missing assets
         - [x] Subtask 2.3.2.1: Text-first fallback when media absent
         - [x] Subtask 2.3.2.2: User messaging for missing cache
-    - [ ] Step 2.4: Automated offline deep-link matrix
+    - [x] Step 2.4: Automated offline deep-link matrix
       - [x] Task 2.4.1: Run headless offline matrix after sync
         - [x] Subtask 2.4.1.1: Prepare cached state in setup script
         - [x] Subtask 2.4.1.2: Execute offline cases per route
@@ -180,8 +139,8 @@
         - [x] Task 2.4.2: Log results in test-matrix doc
           - [x] Subtask 2.4.2.1: Update pass/fail table from script output
 
-- [ ] Stage 4: Signals/AAR Stub
-  - [ ] Phase 3: Signals + AAR (local-only)
+- [x] Stage 4: Signals/AAR Stub
+  - [x] Phase 3: Signals + AAR (local-only)
     - [x] Step 3.1: Signals list with ack/resolve
       - [x] Task 3.1.1: Implement local Signals list
         - [x] Subtask 3.1.1.1: Data model and local storage
@@ -205,9 +164,9 @@
       - [x] Task 3.3.2: Document assumptions/risks
         - [x] Subtask 3.3.2.1: Note lack of enforced ACL
 
-- [ ] Stage 5: Telemetry/Automation and Rollout
-  - [ ] Cross-cutting: Telemetry, tests, delivery
-    - [ ] Step 4.1: Event taxonomy + logging
+- [x] Stage 5: Telemetry/Automation and Rollout
+  - [x] Cross-cutting: Telemetry, tests, delivery
+    - [x] Step 4.1: Event taxonomy + logging
       - [x] Task 4.1.1: Implement event emitters (console/local sink)
         - [x] Subtask 4.1.1.1: Add emitter utility
         - [x] Subtask 4.1.1.2: Wire to key flows (IA, readiness, offline, drills)
@@ -223,6 +182,9 @@
       - [x] Task 4.2.2: Run headless smoke per phase and record results
         - [x] Subtask 4.2.2.1: Execute smoke suite after each phase
         - [x] Subtask 4.2.2.2: Log outcomes and defects automatically
+      - [x] Task 4.2.3: Add full mission UI scenario simulation
+        - [x] Subtask 4.2.3.1: Simulate operator journey (Brief → Debrief) with realistic UI interactions
+        - [x] Subtask 4.2.3.2: Emit machine-readable scenario report artifact for release evidence
     - [x] Step 4.3: Deploy/rollback steps
       - [x] Task 4.3.1: Document deploy/rollback steps
         - [x] Subtask 4.3.1.1: Write deploy steps and defaults
@@ -230,7 +192,7 @@
       - [x] Task 4.3.2: Scripted rollback verification
         - [x] Subtask 4.3.2.1: Run sanity suite after rollback
         - [x] Subtask 4.3.2.2: Document rollback timing and impacts
-    - [ ] Step 4.4: Monolith reductions
+    - [x] Step 4.4: Monolith reductions
       - [x] Task 4.4.1: Split WorkoutResultsPanel into subcomponents/helpers
         - [x] Subtask 4.4.1.1: Extract result summary/presentation logic into focused components
         - [x] Subtask 4.4.1.2: Move shared formatting/helpers into utility modules
@@ -310,8 +272,8 @@
         - [x] Subtask 6.3.3.1: Design split-pane skeleton layouts for each core route
         - [x] Subtask 6.3.3.2: Implement skeleton states and validate perceived-load behavior
 
-- [ ] Stage 8: Ops Design System + Interaction Model
-  - [ ] Phase 7: UI primitives and layout contracts
+- [x] Stage 8: Ops Design System + Interaction Model
+  - [x] Phase 7: UI primitives and layout contracts
     - [x] Step 7.1: Mission theming tokens
       - [x] Task 7.1.1: Define semantic color tokens for severity/trust/state transitions
         - [x] Subtask 7.1.1.1: Create severity/trust/state semantic token catalog
@@ -346,9 +308,9 @@
         - [x] Subtask 7.3.3.1: Implement command palette trigger and searchable actions
         - [x] Subtask 7.3.3.2: Integrate mission context actions into palette results
 
-- [ ] Stage 9: Content and Scenario Production
-  - [ ] Phase 8: Mission content overhaul
-    - [ ] Step 8.1: Copy rewrite and lexicon enforcement
+- [x] Stage 9: Content and Scenario Production
+  - [x] Phase 8: Mission content overhaul
+    - [x] Step 8.1: Copy rewrite and lexicon enforcement
       - [x] Task 8.1.1: Replace remaining fitness/Web3 terminology in all visible strings
         - [x] Subtask 8.1.1.1: Run targeted copy sweep across UI strings and data content names
         - [x] Subtask 8.1.1.2: Review and approve replacements against mission lexicon rules
@@ -444,3 +406,374 @@
       - [x] Task 10.3.3: Define stabilization window and defect triage protocol
         - [x] Subtask 10.3.3.1: Define stabilization duration and quality thresholds
         - [x] Subtask 10.3.3.2: Define defect triage cadence and severity routing rules
+
+- [x] Stage 12: Mobile-First UX Overhaul
+  - [x] Phase 11: First-load mobile experience
+    - [x] Step 11.1: Header nav collapse + drawer
+      - [x] Task 11.1.1: Wire existing HeaderDrawer into Header.tsx with hamburger trigger
+      - [x] Task 11.1.2: Hide inline nav, chips, settings at ≤768px; show hamburger
+      - [x] Task 11.1.3: Add .desktopOnly / .hamburger CSS classes with breakpoint gating
+    - [x] Step 11.2: Sequenced onboarding flow
+      - [x] Task 11.2.1: Gate intake panel render behind guidance overlay dismissal
+      - [x] Task 11.2.2: Hide all shell chrome (MissionHeader, stepTools, assistantCard, Outlet) during onboarding
+      - [x] Task 11.2.3: Add min-height + align-content centering to intake + guidance overlay
+    - [x] Step 11.3: Header height variable sync
+      - [x] Task 11.3.1: Override --header-height on .header at each breakpoint (56/52/48px)
+      - [x] Task 11.3.2: Add safe-area-inset-top padding to header and shell
+      - [x] Task 11.3.3: Add viewport-fit=cover to index.html meta viewport
+    - [x] Step 11.4: Interaction and information density
+      - [x] Task 11.4.1: Add min-height: 44px to all buttons at ≤768px (stepButton, CTA, intake actions)
+      - [x] Task 11.4.2: Create useIsMobile hook (matchMedia-based, 768px threshold)
+      - [x] Task 11.4.3: Hide keyboard shortcut references (⌘K) on mobile in overlay, assistant card, button labels
+      - [x] Task 11.4.4: Remove keyboard hints from assistant card on mobile
+    - [x] Step 11.5: Branding, typography, safety
+      - [x] Task 11.5.1: Rebrand LoadingMessage title, spinner color, title font size to clamp()
+      - [x] Task 11.5.2: Update index.html title to Archangel Knights Training Console
+      - [x] Task 11.5.3: Convert --mission-type-* to clamp() responsive scale
+      - [x] Task 11.5.4: Add scroll-padding-top to html
+    - [x] Step 11.6: Polish and finishing
+      - [x] Task 11.6.1: Add :active press states (scale 0.97 + opacity 0.85) to all buttons
+      - [x] Task 11.6.2: Move NetworkStatusIndicator from top-right to bottom-left
+      - [x] Task 11.6.3: Add overflow: hidden to header
+    - [x] Step 11.7: Validation
+      - [x] Task 11.7.1: E2E scenario passes at 390×844 (mobile) — 27/27 checkpoints
+      - [x] Task 11.7.2: E2E scenario passes at 1440×900 (desktop) — 27/27 checkpoints
+      - [x] Task 11.7.3: TypeScript + Vite build clean at each phase gate
+
+- [x] Stage 13: Stability & Resilience
+  - [x] Phase 12: Error boundaries + code splitting
+    - [x] Step 12.1: Root ErrorBoundary component
+      - [x] Task 12.1.1: Create ErrorBoundary class component with root/route level prop
+      - [x] Task 12.1.2: Add themed fallback UI with retry/reload actions
+      - [x] Task 12.1.3: Add CSS module matching mission console aesthetic
+    - [x] Step 12.2: Wire into app root
+      - [x] Task 12.2.1: Wrap App in ErrorBoundary level="root" in main.tsx
+    - [x] Step 12.3: Route-level error boundaries + lazy loading
+      - [x] Task 12.3.1: Convert 6 mission surfaces to React.lazy imports
+      - [x] Task 12.3.2: Convert CardSharePage to React.lazy import
+      - [x] Task 12.3.3: Create SurfaceLoader Suspense fallback component
+      - [x] Task 12.3.4: Create Surface wrapper (ErrorBoundary route + Suspense + SurfaceLoader)
+      - [x] Task 12.3.5: Wrap all lazy routes in Surface component
+    - [x] Step 12.4: Validation
+      - [x] Task 12.4.1: TypeScript clean compile
+      - [x] Task 12.4.2: Vite build produces per-surface chunks (7 new JS chunks)
+      - [x] Task 12.4.3: Main index chunk reduced 652 KB → 603 KB (−49 KB, −7.5%)
+      - [x] Task 12.4.4: 232/232 unit tests passing
+      - [x] Task 12.4.5: E2E 27/27 mobile + 27/27 desktop
+
+---
+
+## Stage 14 — PWA & Accessibility
+
+- [x] Phase 14.A: PWA Manifest & Icons
+  - [x] Task 14.A.1: Create manifest.webmanifest (name, short_name, theme_color #5A7FFF, background_color #040709, display standalone)
+  - [x] Task 14.A.2: Create SVG icon (icon.svg) — shield+wings+star AK motif
+  - [x] Task 14.A.3: Create maskable SVG icon (icon-maskable.svg) — safe-zone content
+  - [x] Task 14.A.4: Add `<link rel="manifest">` and `<meta name="theme-color">` to index.html
+
+- [x] Phase 14.B: Critical ARIA Fixes
+  - [x] Task 14.B.1: WorkoutCard — add role="button", tabIndex={0}, onKeyDown (Enter/Space) to both clickable divs
+  - [x] Task 14.B.2: CustomScheduleCreatorView — add aria-label to ▲ ("Move item up"), ▼ ("Move item down"), ❌ ("Remove item") buttons
+
+- [x] Phase 14.C: Moderate ARIA Fixes
+  - [x] Task 14.C.1: SchedulesPage — content wrapper `<div>` → `<main id="main-content">`
+  - [x] Task 14.C.2: SettingsPage — content wrapper `<div>` → `<main id="main-content">`
+  - [x] Task 14.C.3: TrainingPage — content wrapper `<div>` → `<main id="main-content">`
+  - [x] Task 14.C.4: DrillRunPage — add `id="main-content"` to existing `<main>`
+  - [x] Task 14.C.5: ShareCardModal — add `aria-labelledby="share-card-dialog-title"` to dialog div + id to h2
+  - [x] Task 14.C.6: AlertStream — add `aria-live="polite"` to panel section
+  - [x] Task 14.C.7: SchedulesWindow — error banner `role="status"` → `role="alert"`
+
+- [x] Phase 14.D: Minor Fixes
+  - [x] Task 14.D.1: CoachDialog — generic alt="Coach Icon" → dynamic `${coachName} avatar`
+
+- [x] Phase 14.E: Test Updates & Validation
+  - [x] Task 14.E.1: Update CustomScheduleCreatorView test to use aria-label queries instead of emoji text
+  - [x] Task 14.E.2: TypeScript clean compile
+  - [x] Task 14.E.3: Vite build clean
+  - [x] Task 14.E.4: 232/232 unit tests passing
+  - [x] Task 14.E.5: E2E 27/27 mobile + 27/27 desktop
+
+---
+
+## Stage 15 — Internal Naming Transmutation
+
+- [x] Phase 15.A: Audit & Planning
+  - [x] Task 15.A.1: Comprehensive naming audit (naming-audit.md — 552 lines)
+  - [x] Task 15.A.2: Identify ~92 source files, ~22 directories, ~180 symbol patterns
+
+- [x] Phase 15.B: Symbol Renames (sed patterns)
+  - [x] Task 15.B.1: Create 180+ sed pattern file with correct ordering (specific → general)
+  - [x] Task 15.B.2: Apply sed across all .ts/.tsx/.css files in src/
+  - [x] Task 15.B.3: Workout → Drill (domain model classes, types, interfaces)
+  - [x] Task 15.B.4: WorkoutSchedule → MissionSchedule (schedule family)
+  - [x] Task 15.B.5: WorkoutBlock → MissionBlock, WorkoutSet → MissionSet
+  - [x] Task 15.B.6: Coach → Handler (components, types, data, utils)
+  - [x] Task 15.B.7: --coach-* → --handler-* (CSS custom properties across ~30 files)
+  - [x] Task 15.B.8: All selection/schedule/default/filter functions renamed
+
+- [x] Phase 15.C: File & Directory Renames
+  - [x] Task 15.C.1: 17 component directories renamed
+  - [x] Task 15.C.2: Type files (6): DrillCategory, DrillDifficultyLevel, DrillRank, MissionSchedule, DrillsData, HandlerData
+  - [x] Task 15.C.3: Store files (5) + missionSchedule/ directory
+  - [x] Task 15.C.4: Hook files (4): useHandlerSelection, useHandlerTheme, useDrillResultsData, useMissionSchedule
+  - [x] Task 15.C.5: Context files (4) + test
+  - [x] Task 15.C.6: Services & Cache (4) + test
+  - [x] Task 15.C.7: Utils (12) + tests
+  - [x] Task 15.C.8: Data TS files (3): handlers.ts, handlerThemes.ts, handlerModuleMapping.ts
+  - [x] Task 15.C.9: Data JSON: training_coach_data → training_handler_data, workouts/ → drills/
+  - [x] Task 15.C.10: Asset directory: icons/coaches → icons/handlers
+  - [x] Task 15.C.11: Pages: WorkoutsPage → DrillsPage, CoachSection → HandlerSection
+
+- [x] Phase 15.D: Backward Compatibility
+  - [x] Task 15.D.1: Restore localStorage key string values (workout:v2: prefix preserved)
+  - [x] Task 15.D.2: Fix test hardcoded localStorage keys
+
+- [x] Phase 15.E: Validation
+  - [x] Task 15.E.1: TypeScript 0 errors (clean on first compile)
+  - [x] Task 15.E.2: Vite build clean
+  - [x] Task 15.E.3: 232/232 unit tests passing
+  - [x] Task 15.E.4: E2E 27/27 mobile + 27/27 desktop
+  - [x] Task 15.E.5: Zero leftover Workout/Coach references (only preserved localStorage prefix)
+  - [x] Task 15.E.6: Zero double-rename artifacts
+
+---
+
+## Stage 16 — Dead Code & Coverage
+
+**Goal:** Remove all unreachable code left over from the pre-mission architecture.
+
+### Summary
+
+| Category | Dirs/Files | Lines Removed |
+|----------|------------|---------------|
+| Dead page directories | 6 dirs (24 files) | ~1,353 |
+| Dead component directories | 34 dirs (82 files) | ~7,118 |
+| Dead standalone files | 7 files | ~551 |
+| Orphaned test files | 3 files | ~120 |
+| Dead utility file (rollout.ts) | 1 file | ~45 |
+| Unused npm packages | 7 packages | — |
+| **Total** | **117 files** | **~9,187 lines** |
+
+- [x] Phase 16.A: Audit
+  - [x] Task 16.A.1: Comprehensive dead code inventory via Routes.tsx reachability analysis
+  - [x] Task 16.A.2: Dependency tree cascade — traced 3 waves of transitively dead components
+  - [x] Task 16.A.3: Verified DifficultySettingsStore.ts is LIVE (used by scheduleState.ts → MissionScheduleStore chain)
+
+- [x] Phase 16.B: Dead Page Removal
+  - [x] Task 16.B.1: Removed 6 dead page directories: HomePage, DrillRunPage, DrillsPage, SchedulesPage, SettingsPage, TrainingPage
+  - [x] Task 16.B.2: Verified only MissionFlow/ and CardSharePage/ remain in src/pages/
+
+- [x] Phase 16.C: Dead Component Removal
+  - [x] Task 16.C.1: Removed 7 directly unreferenced component dirs (MissionScheduler, PartialFailureNotice, SchedulerOverlay, SettingsPanel, TrainingDfficulty, TrainingSequence, DrillSelector)
+  - [x] Task 16.C.2: Removed 27 transitively dead component dirs across 3 cascade waves
+  - [x] Task 16.C.3: Zero broken imports after removal
+
+- [x] Phase 16.D: Dead Standalone Files & Dependencies
+  - [x] Task 16.D.1: Removed 7 dead standalone files (telemetryDrift, telemetryValidation, CardContext, CardContextState, useCardContext + their tests)
+  - [x] Task 16.D.2: Removed rollout.ts (all exports unreferenced)
+  - [x] Task 16.D.3: Removed 2 orphaned test files (telemetryAuditReport.test.ts, fetchWithRetry.test.ts)
+  - [x] Task 16.D.4: Fixed badgeCatalog.test.ts — removed imports of deleted badgeVisualTokens/badgeArtworkTokens
+  - [x] Task 16.D.5: Uninstalled 7 dead npm packages: ethers, howler, wttp-handler, zustand, dotenv, fs, path (−18 transitive dependencies)
+
+- [x] Phase 16.E: Validation
+  - [x] Task 16.E.1: TypeScript 0 errors
+  - [x] Task 16.E.2: Vite build clean
+  - [x] Task 16.E.3: 201/201 unit tests passing (53 test files), down from 232 due to deleted dead-code tests
+  - [x] Task 16.E.4: Zero broken imports or dangling references
+
+---
+
+## Stage 17 — Close the XP Loop & Cleanup
+
+**Goal:** Wire the disconnected feedback loops so that user actions on mission surfaces actually produce XP, progression, and readiness changes. Rebrand badge/challenge systems to mission theme. Delete remaining orphaned components and dead data.
+
+### Summary
+
+| Category | What Changed |
+|----------|-------------|
+| DrillRunner → XP loop | Completing a drill now fires `completeCurrentWorkout()` → XP + streak + badges |
+| DrillRunStore → MissionKitStore | Drill completions persist `lastCompleted` + running `successRate` to localStorage |
+| AARStore → Readiness | AAR entries are mapped to `MissionDebriefOutcome` and fed into the readiness model |
+| ReadinessPanel | Now uses live kit (with real drill stats) + AAR outcomes instead of hardcoded data |
+| Checklist surface | Added "Mark current item complete" button wired to `completeCurrentWorkout()` |
+| Badge rebranding | 10 badges renamed from fitness-era to mission-themed (e.g., "Weekly Warrior" → "Persistent Operative") |
+| Challenge rebranding | 4 challenges renamed from generic to mission-themed (e.g., "Daily 20" → "Daily Recon") |
+| Challenge rotation fix | `rotateChallengesIfNeeded` now cycles through all catalog entries instead of always picking the first |
+| ChallengePanel | New component — shows active challenges with progress bars + claim button for completed challenges |
+| Orphaned component deletion | 10 dead component dirs deleted: Schedule, TimerControls, SchedulesSidebar, TodaysPlanBanner, ProgressWidget, UpNextCard, CardSelector, Settings, SettingsWindow + ShareCardModal |
+| Dead store deletion | ScheduleCalendarTimerStore.ts (zero UI consumers) |
+| Dead data deletion | training_modules_combined.json (52,872 lines, 2.6MB, zero runtime consumers) |
+
+- [x] Phase 17.A: Close the XP Loop
+  - [x] Task 17.A.1: DrillRunner now imports `useMissionSchedule` and calls `completeCurrentWorkout()` when all steps are checked
+  - [x] Task 17.A.2: DrillRunner also calls `MissionKitStore.recordDrillCompletion()` to persist lastCompleted and successRate
+  - [x] Task 17.A.3: MissionKitStore upgraded with `recordDrillCompletion()` method — persists drill stats to localStorage, merges at read time
+  - [x] Task 17.A.4: DrillRunner uses drill's own step sequence when available instead of always generating default 3-step fallback
+
+- [x] Phase 17.B: Wire AAR → Readiness
+  - [x] Task 17.B.1: Created `src/utils/readiness/aarBridge.ts` — maps AAREntry to MissionDebriefOutcome with inferred rating and readinessDelta
+  - [x] Task 17.B.2: ReadinessPanel now reads AAR entries via `AARStore.list()` and merges them with exemplar debriefOutcomes
+  - [x] Task 17.B.3: ReadinessPanel now uses `MissionKitStore.getPrimaryKit()` (with persisted drill stats) instead of hardcoded sampleMissionKit
+
+- [x] Phase 17.C: Checklist Completion
+  - [x] Task 17.C.1: ChecklistSurface now shows remaining item count and "Mark current item complete" button
+  - [x] Task 17.C.2: Button wired to `completeCurrentWorkout()` from `useMissionSchedule()` context
+
+- [x] Phase 17.D: Badge & Challenge Rebranding
+  - [x] Task 17.D.1: 10 badges rebranded — "Weekly Warrior" → "Persistent Operative", "Iron Discipline" → "Iron Protocol", "One Hour Club" → "Deep Cover", "Five Hour Flight" → "Extended Op", "Starter Pack" → "Field Initiate", "Seasoned Pilot" → "Signal Analyst", "Ace Operator" → "Ace Operative", "Push the Limit" → "Clearance Escalation"
+  - [x] Task 17.D.2: 4 challenges rebranded — "Daily 20" → "Daily Recon", "Double Up" → "Double Deployment", "Weekly 90" → "Weekly Surveillance", "Five Flights" → "Five-Op Sprint"
+  - [x] Task 17.D.3: Challenge rotation fixed — `upsertForTimeframe()` now cycles through all catalog entries per timeframe instead of always picking the first
+  - [x] Task 17.D.4: New ChallengePanel component with progress bars and claim button — renders on Debrief surface
+
+- [x] Phase 17.E: Orphan Cleanup
+  - [x] Task 17.E.1: Deleted 10 orphaned component directories (20 files): Schedule, TimerControls, SchedulesSidebar, TodaysPlanBanner, ProgressWidget, UpNextCard, CardSelector, Settings/Web3Panel, SettingsWindow, ShareCardModal
+  - [x] Task 17.E.2: Deleted ScheduleCalendarTimerStore.ts (zero UI consumers)
+  - [x] Task 17.E.3: Deleted training_modules_combined.json (52,872 lines, 2.6MB, zero runtime consumers)
+
+- [x] Phase 17.F: Validation
+  - [x] Task 17.F.1: TypeScript 0 errors
+  - [x] Task 17.F.2: Vite build clean
+  - [x] Task 17.F.3: 201/201 unit tests passing (53 test files)
+  - [x] Task 17.F.4: 28 component directories remaining (down from 38 pre-cleanup)
+
+## Stage 18 — Persist Mission Actions & Wire Lifecycle
+
+| Artifact | Description |
+|---|---|
+| TriageActionStore | New localStorage-backed store — persists triage A/E/D/R decisions with severity, status, and domainStatus |
+| ArtifactActionStore | New localStorage-backed store — persists artifact review/promote flags |
+| TriageBoard wiring | Replaced ephemeral `useState` overrides with `TriageActionStore.subscribe()` — actions survive navigation |
+| ArtifactList wiring | Replaced ephemeral `reviewedIds`/`promotedIds` with `ArtifactActionStore` integration |
+| triageLifecycleBridge | New domain utility — maps triage UI actions (ack/escalate/defer/resolve) to validated Case/Signal lifecycle transitions |
+| TriageCard.domainStatus | Added `domainStatus` field to preserve original entity status for lifecycle validation |
+| Lifecycle-gated actions | TriageBoard refuses invalid transitions (e.g., ack from engaged, resolve from new) and shows ⛔ feedback |
+
+- [x] Phase 18.A: Persist Triage Actions
+  - [x] Task 18.A.1: Created `src/store/TriageActionStore.ts` — record/subscribe/getAll/byAction/count/clear/clearAll
+  - [x] Task 18.A.2: TriageBoard hydrates from store on mount, subscribes to updates, records actions via `TriageActionStore.record()`
+
+- [x] Phase 18.B: Persist Artifact Actions
+  - [x] Task 18.B.1: Created `src/store/ArtifactActionStore.ts` — markReviewed/markPromoted/toggleReviewed/togglePromoted/subscribe
+  - [x] Task 18.B.2: ArtifactList hydrates from store on mount, uses `ArtifactActionStore.markReviewed()` and `markPromoted()`
+
+- [x] Phase 18.C: Wire Lifecycle Transitions
+  - [x] Task 18.C.1: Created `src/domain/mission/triageLifecycleBridge.ts` — `resolveTriageTransition(lane, domainStatus, action)` returns validated nextStatus
+  - [x] Task 18.C.2: Added `domainStatus` to `TriageCard` type, populated by `toCaseCard`/`toSignalCard`, stored + hydrated via `TriageActionStore`
+  - [x] Task 18.C.3: Updated `applyTriageAction()` to accept optional `nextDomainStatus` and propagate it
+  - [x] Task 18.C.4: TriageBoard keyboard handler now validates via bridge before recording — shows blocked-transition feedback
+
+- [x] Phase 18.D: Tests & Validation
+  - [x] Task 18.D.1: Created `triageLifecycleBridge.test.ts` — 16 tests covering Case/Signal valid transitions, rejections, and unknown lanes
+  - [x] Task 18.D.2: Updated `model.test.ts` fixture — added `domainStatus` to `baseCard`
+  - [x] Task 18.D.3: TypeScript 0 errors
+  - [x] Task 18.D.4: Vite build clean
+  - [x] Task 18.D.5: 217/217 unit tests passing (54 test files)
+
+## Stage 19 — Writable MissionEntityStore & Reactive Surfaces
+
+| Artifact | Description |
+|---|---|
+| MissionEntityStore mutations | Added `updateCaseStatus()`, `updateSignalStatus()`, `ingestSignal()`, `promoteArtifact()` — all lifecycle-validated |
+| Subscribe/notify pattern | Entity store now supports `subscribe(listener)` with version counter; consumers re-render on mutations |
+| useMissionEntityCollection hook | New React hook using `useSyncExternalStore` — reactive subscription to entity store |
+| Entity shallow-clone on hydration | `mergeById` now shallow-clones each entity to prevent mutation of exemplar source objects |
+| TriageBoard → entity mutations | Triage keyboard actions now propagate validated status transitions to canonical Case/Signal entities |
+| ArtifactList → entity mutations | Artifact promote action now calls `promoteArtifact()` to tag description + link to intel packet |
+| SignalsStore → entity graph | User-created signals are ingested into canonical collection; ack/resolve flow back as entity status updates |
+| 6 reactive consumers | AlertStream, TimelineBand, DebriefClosureSummary, MissionHeader, ReadinessPanel, TriageBoard all switched to `useMissionEntityCollection` hook |
+
+- [x] Phase 19.A: Entity Store Mutations
+  - [x] Task 19.A.1: Added `subscribe(listener)` pattern with `StoreListener` type and `notify()` on every state change
+  - [x] Task 19.A.2: Added `getVersion()` — monotonically increasing counter for snapshot identity
+  - [x] Task 19.A.3: Added `updateCaseStatus(caseId, nextStatus, severity?)` — validates via `canTransition()` before applying
+  - [x] Task 19.A.4: Added `updateSignalStatus(signalId, nextStatus, severity?)` — validates via `canTransition()` before applying
+  - [x] Task 19.A.5: Added `ingestSignal(signal)` — adds new MissionSignal to canonical collection (rejects duplicates)
+  - [x] Task 19.A.6: Added `promoteArtifact(artifactId)` — tags description with `[PROMOTED]` prefix + links to first intel packet
+  - [x] Task 19.A.7: Fixed `mergeById` to shallow-clone entities, preventing mutation bleed into exemplar source objects
+
+- [x] Phase 19.B: React Subscription Hook
+  - [x] Task 19.B.1: Created `useMissionEntityCollection` hook using `useSyncExternalStore` for tear-free reactive reads
+
+- [x] Phase 19.C: Wire Action Stores → Entity Mutations
+  - [x] Task 19.C.1: TriageBoard keyboard handler now calls `entityStore.updateCaseStatus()` / `updateSignalStatus()` after lifecycle validation
+  - [x] Task 19.C.2: ArtifactList promote handler now calls `entityStore.promoteArtifact()` to propagate to canonical collection
+  - [x] Task 19.C.3: SignalsStore `add()` now calls `entityStore.ingestSignal()` — user-created signals appear in AlertStream/Triage
+  - [x] Task 19.C.4: SignalsStore `acknowledge()`/`resolve()` now calls `entityStore.updateSignalStatus()` — status changes flow back
+
+- [x] Phase 19.D: Reactive Surface Consumers
+  - [x] Task 19.D.1: AlertStream switched to `useMissionEntityCollection()` — re-renders when signals are added/mutated
+  - [x] Task 19.D.2: TimelineBand, DebriefClosureSummary, MissionHeader, ReadinessPanel all switched to reactive hook
+  - [x] Task 19.D.3: TriageBoard switched to reactive hook — re-derives columns when entity statuses change
+  - [x] Task 19.D.4: ArtifactList made reactive — `resolveCaseArtifacts()` now takes collection param, re-derives on mutation
+
+- [x] Phase 19.E: Tests & Validation
+  - [x] Task 19.E.1: 11 new mutation tests — valid/invalid transitions, severity update, signal ingestion, duplicate rejection, artifact promotion, subscribe notification, version increment, null-collection guard
+  - [x] Task 19.E.2: TypeScript 0 errors
+  - [x] Task 19.E.3: Vite build clean
+  - [x] Task 19.E.4: 228/228 unit tests passing (54 test files)
+
+---
+
+## Stage 20 — Mission Cycle Summary + Wire Readiness Actions + Bug Fixes
+
+- [x] Phase 20.A: MissionCycleSummary Component
+  - [x] Task 20.A.1: Created `MissionCycleSummary` component — reads from TriageActionStore, ArtifactActionStore, and SignalsStore to show triage/artifact/signal counts
+  - [x] Task 20.A.2: Added MissionCycleSummary to DebriefSurface — appears between MissionStepHandoff and DebriefClosureSummary
+  - [x] Task 20.A.3: Created CSS module matching existing design system (surface-card, metric grid, section labels)
+  - [x] Task 20.A.4: Added `collectCycleSummary()` unit test with mocked stores
+
+- [x] Phase 20.B: Wire ReadinessPanel Next-Actions to Navigation
+  - [x] Task 20.B.1: Extended `ReadinessResult.nextActions` type to include `route: string` field
+  - [x] Task 20.B.2: Updated `pickNextActions()` to return `{ id, title, route: '/mission/checklist' }`
+  - [x] Task 20.B.3: Wired ReadinessPanel `handleActionClick` with `useNavigate()` — buttons now navigate to the target surface while preserving telemetry
+
+- [x] Phase 20.C: Bug Fixes
+  - [x] Task 20.C.1: Fixed `getRandomItems` in MissionScheduleCreator — `[...array].sort()` instead of in-place `array.sort()` to prevent source mutation
+  - [x] Task 20.C.2: Fixed same `getRandomItems` mutation bug in DrillCategoryCache
+  - [x] Task 20.C.3: Removed artificial 1-second `setTimeout` delay from DrillCategoryCache.loadData — method is now synchronous
+  - [x] Task 20.C.4: Retained legacy generator as migration safety net (migrationBridge flag `true` in one environment)
+
+- [x] Phase 20.D: Validation
+  - [x] Task 20.D.1: TypeScript 0 errors
+  - [x] Task 20.D.2: Vite build clean
+  - [x] Task 20.D.3: 229/229 unit tests passing (55 test files)
+
+## Stage 21: Rename Fitness Remnants & Wire Loose Ends
+
+- [x] Phase 21.A: Rebrand User-Facing Copy
+  - [x] Task 21.A.1: RecapModal — "Great work!" → "Mission Complete", "You wrapped the plan" → "After-action summary ready for review", "Minutes logged" → "Op time", "Back to planner" → "Return to Brief"
+  - [x] Task 21.A.2: MissionBlock placeholder text — "Do something productive!" → "Review intel and prepare for the next phase.", "Take a break…" → "Consolidate findings, update case notes, and verify continuity before proceeding." (MissionScheduleCreator + scheduleState)
+
+- [x] Phase 21.B: Ops-Based Goal System
+  - [x] Task 21.B.1: GoalUnit changed from `'minutes' | 'items'` to `'ops' | 'items'`
+  - [x] Task 21.B.2: `totalWorkoutsCompleted` → `totalDrillsCompleted` with backward-compat safeParse migration
+  - [x] Task 21.B.3: Default goals updated — daily 20min → 5ops, weekly 90min → 20ops
+  - [x] Task 21.B.4: Badge predicates updated to ops-based thresholds (minutes_60 → ops≥10, minutes_300 → ops≥40)
+  - [x] Task 21.B.5: Goal unit checks changed from `'minutes'` to `'ops'` throughout recordActivity
+
+- [x] Phase 21.C: API & Method Renames
+  - [x] Task 21.C.1: MissionScheduleContext — `completeCurrentWorkout` → `completeCurrentDrill`, `skipCurrentWorkout` → `skipCurrentDrill`, `timeoutCurrentWorkout` → `timeoutCurrentDrill`
+  - [x] Task 21.C.2: Metric events — `workout_completed` → `drill_completed`, `workout_skipped` → `drill_skipped`
+  - [x] Task 21.C.3: UserProgressEvents — `completedWorkouts` → `completedDrills`, `firstIncompleteWorkout` → `firstIncompleteDrill`
+  - [x] Task 21.C.4: alignmentCheck — `AlignmentResult.totalWorkouts` → `totalDrills`
+  - [x] Task 21.C.5: schedulePreview — `cloneWorkout` → `cloneDrill` (3 call sites)
+
+- [x] Phase 21.D: ChecklistSurface Double-Completion Guard
+  - [x] Task 21.D.1: Added DrillRunStore import and `drillRunActive` flag
+  - [x] Task 21.D.2: Manual "Mark current item complete" button disabled when DrillRunner has active run; text changes to "Drill in progress — auto-completes"
+
+- [x] Phase 21.E: Test Updates
+  - [x] Task 21.E.1: MissionScheduleContext.test — renamed all workout→drill method calls and metric expectations
+  - [x] Task 21.E.2: UserProgressStore.badges.test — `completedWorkouts` → `completedDrills`, ops-based badge thresholds
+  - [x] Task 21.E.3: UserProgressStore.challenges.test — `completedWorkouts` → `completedDrills`
+  - [x] Task 21.E.4: UserProgressStore.test — pass `completedDrills` for ops-based goal assertions
+  - [x] Task 21.E.5: UserProgressEvents.test — ops-based daily goal assertion
+  - [x] Task 21.E.6: RecapModal.test — updated copy assertions ("Mission Complete", "Return to Brief")
+
+- [x] Phase 21.F: Validation
+  - [x] Task 21.F.1: TypeScript 0 errors
+  - [x] Task 21.F.2: Vite build clean
+  - [x] Task 21.F.3: 229/229 unit tests passing (55 test files)
+
+- **Known remaining (lower-priority internal):** ~190 "workout" naming references across 28 files — DrillCategoryCache methods (`getAllWorkoutsSelected`, `getAllWorkouts`), storage keys with `workout:` prefix (intentional for backward compat), drillFilters/drillPresets local vars, InitialDataLoader/DrillDataLoader vars, `totalWorkoutSubCategories` export, legacy badge IDs (`minutes_60`, `minutes_300`). Fitness shard content in `public/training_modules_shards/fitness.json` needs dedicated content authoring.

@@ -1,4 +1,4 @@
-import { WorkoutBlock, WorkoutSchedule, WorkoutSet } from '../types/WorkoutSchedule';
+import { MissionBlock, MissionSchedule, MissionSet } from '../types/MissionSchedule';
 
 const WORKOUT_FALLBACK_MINUTES = 10;
 const BLOCK_FALLBACK_MINUTES = 8;
@@ -18,22 +18,22 @@ const extractMinutes = (input: string | number | undefined, fallback: number) =>
     return parsed;
 };
 
-const itemRemainingMinutes = (item: WorkoutSet | WorkoutBlock): number => {
-    if (item instanceof WorkoutSet) {
-        return item.workouts.reduce((total, [workout, completed]) => {
+const itemRemainingMinutes = (item: MissionSet | MissionBlock): number => {
+    if (item instanceof MissionSet) {
+        return item.drills.reduce((total, [drill, completed]) => {
             if (completed) return total;
-            return total + extractMinutes(workout.duration, WORKOUT_FALLBACK_MINUTES);
+            return total + extractMinutes(drill.duration, WORKOUT_FALLBACK_MINUTES);
         }, 0);
     }
 
     return extractMinutes(item.duration, BLOCK_FALLBACK_MINUTES);
 };
 
-const describeNext = (item: WorkoutSet | WorkoutBlock | undefined) => {
-    if (!item) return 'No workouts queued';
-    if (item instanceof WorkoutSet) {
-        const pending = item.workouts.find(([, completed]) => !completed)?.[0];
-        return pending ? pending.name : 'Workout set';
+const describeNext = (item: MissionSet | MissionBlock | undefined) => {
+    if (!item) return 'No drills queued';
+    if (item instanceof MissionSet) {
+        const pending = item.drills.find(([, completed]) => !completed)?.[0];
+        return pending ? pending.name : 'Drill set';
     }
     return item.name;
 };
@@ -53,7 +53,7 @@ export interface ScheduleSummary {
     rationale: string;
 }
 
-export const summarizeSchedule = (schedule?: WorkoutSchedule | null): ScheduleSummary | null => {
+export const summarizeSchedule = (schedule?: MissionSchedule | null): ScheduleSummary | null => {
     if (!schedule || !schedule.scheduleItems || schedule.scheduleItems.length === 0) return null;
 
     const remainingCount = schedule.scheduleItems.length;

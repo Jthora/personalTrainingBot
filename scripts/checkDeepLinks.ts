@@ -37,6 +37,8 @@ const routes = [
 const normalize = (url: string) => url.replace(/\/$/, '');
 const baseUrl = normalize(base);
 
+const legacyTaxonomyLabels = ['Mission Kit', 'Drills/Intel', 'Signals/Ops Brief', 'Ops/Settings'];
+
 (async () => {
   const browser = await puppeteer.launch({ headless: true });
   const page = await browser.newPage();
@@ -62,6 +64,30 @@ const baseUrl = normalize(base);
 
       await page.waitForSelector('#root', { timeout: 8000 });
       const locationPath = await page.evaluate(() => window.location.pathname + window.location.search);
+      if (route.startsWith('/mission/')) {
+        await page.waitForFunction(
+          () => {
+            const text = document.body?.innerText ?? '';
+            return text.includes('Current Step:') && text.includes('Next Step:');
+          },
+          { timeout: 8000 },
+        ).catch(() => null);
+      }
+
+      const navCoherence = await page.evaluate(
+        ({ legacyLabels }) => {
+          const text = document.body?.innerText ?? '';
+          const hasCurrentStep = text.includes('Current Step:');
+          const hasNextStep = text.includes('Next Step:');
+          const foundLegacyLabels = legacyLabels.filter((label) => text.includes(label));
+          return {
+            hasCurrentStep,
+            hasNextStep,
+            foundLegacyLabels,
+          };
+        },
+        { legacyLabels: legacyTaxonomyLabels },
+      );
 
       if (!okStatus) {
         failed = true;
@@ -69,6 +95,15 @@ const baseUrl = normalize(base);
       } else if (consoleErrors.length || pageErrors.length) {
         failed = true;
         console.error(`FAIL ${route}: console/page errors`, { consoleErrors, pageErrors, location: locationPath });
+      } else if (
+        route.startsWith('/mission/')
+        && (!navCoherence.hasCurrentStep || !navCoherence.hasNextStep || navCoherence.foundLegacyLabels.length)
+      ) {
+        failed = true;
+        console.error(`FAIL ${route}: nav coherence regression`, {
+          location: locationPath,
+          ...navCoherence,
+        });
       } else {
         console.log(`PASS ${route} -> ${locationPath} (status ${status})`);
       }

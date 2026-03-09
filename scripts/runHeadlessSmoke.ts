@@ -54,6 +54,7 @@ async function main() {
   const telemetryDriftReport = process.env.TELEMETRY_DRIFT_REPORT ?? 'artifacts/telemetry-schema-drift-report.json';
   const telemetryAuditReport = process.env.TELEMETRY_AUDIT_OUT ?? 'artifacts/telemetry-audit-report.md';
   const smokeReport = process.env.SMOKE_REPORT ?? 'artifacts/smoke-headless-report.json';
+  const scenarioReport = process.env.SCENARIO_REPORT ?? 'artifacts/psi-operative-scenario-report.json';
 
   const steps: Step[] = [
     { name: 'Deep links (online)', cmd: ['npx', 'tsx', 'scripts/checkDeepLinks.ts', `--base=${base}`] },
@@ -68,6 +69,10 @@ async function main() {
     {
       name: 'Mission render profile',
       cmd: ['npx', 'tsx', 'scripts/profileMissionRenderCycles.ts', `--base=${base}`, '--output=artifacts/mission-render-profile-report.json'],
+    },
+    {
+      name: 'Psi Operative end-to-end scenario',
+      cmd: ['npx', 'tsx', 'scripts/runPsiOperativeScenario.ts', `--base=${base}`, `--report=${scenarioReport}`],
     },
     { name: 'Telemetry trigger', cmd: ['npx', 'tsx', 'scripts/triggerTelemetryFlows.ts'], env: { BASE_URL: base, TELEMETRY_OUT: telemetryOut } },
     { name: 'Telemetry validation', cmd: ['npx', 'tsx', 'scripts/validateTelemetryEvents.ts', telemetryOut, telemetryReport] },
@@ -98,6 +103,7 @@ async function main() {
     ts: new Date().toISOString(),
     base,
     telemetryOut,
+    scenarioReport,
     telemetryReport,
     telemetryDriftReport,
     telemetryAuditReport,
@@ -128,6 +134,7 @@ async function main() {
     ts: new Date().toISOString(),
     base,
     telemetryOut,
+    scenarioReport,
     telemetryReport,
     telemetryDriftReport,
     telemetryAuditReport,

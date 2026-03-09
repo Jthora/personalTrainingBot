@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import MissionEntityStore from '../../domain/mission/MissionEntityStore';
+import { useMissionEntityCollection } from '../../hooks/useMissionEntityCollection';
 import { readMissionFlowContext } from '../../store/missionFlow/continuity';
 import type { ArtifactType, MissionArtifact } from '../../domain/mission/types';
 import styles from './ArtifactList.module.css';
@@ -11,6 +12,7 @@ import {
   type ArtifactSortMode,
 } from './model';
 import { useMissionRenderProbe } from '../../utils/missionRenderProfile';
+import { ArtifactActionStore, type ArtifactActionRecord } from '../../store/ArtifactActionStore';
 
 const typeOptions: Array<{ value: ArtifactType | 'all'; label: string }> = [
   { value: 'all', label: 'All types' },
@@ -27,8 +29,7 @@ const sortOptions: Array<{ value: ArtifactSortMode; label: string }> = [
   { value: 'title', label: 'Title (A-Z)' },
 ];
 
-const resolveCaseArtifacts = (): MissionArtifact[] => {
-  const collection = MissionEntityStore.getInstance().getCanonicalCollection();
+const resolveCaseArtifacts = (collection: import('../../domain/mission/types').MissionEntityCollection | null): MissionArtifact[] => {
   if (!collection) return [];
 
   const context = readMissionFlowContext();
@@ -40,16 +41,22 @@ const resolveCaseArtifacts = (): MissionArtifact[] => {
 
 const ArtifactList: React.FC = () => {
   useMissionRenderProbe('mission:case:artifact-list');
+  const collection = useMissionEntityCollection();
   const [query, setQuery] = useState(defaultArtifactFilters.query);
   const [type, setType] = useState<ArtifactType | 'all'>(defaultArtifactFilters.type);
   const [sort, setSort] = useState<ArtifactSortMode>(defaultArtifactFilters.sort);
   const [selectedArtifactId, setSelectedArtifactId] = useState<string | null>(null);
-  const [reviewedIds, setReviewedIds] = useState<Record<string, boolean>>({});
-  const [promotedIds, setPromotedIds] = useState<Record<string, boolean>>({});
+  const [artifactActions, setArtifactActions] = useState<Record<string, ArtifactActionRecord>>(() => ArtifactActionStore.getAll());
   const itemButtonRefs = useRef<Record<string, HTMLButtonElement | null>>({});
   const [lastFocusedListId, setLastFocusedListId] = useState<string | null>(null);
 
-  const artifacts = useMemo(() => resolveCaseArtifacts(), []);
+  // Subscribe to ArtifactActionStore for persistence across navigation
+  useEffect(() => {
+    const unsubscribe = ArtifactActionStore.subscribe(setArtifactActions);
+    return () => { unsubscribe(); };
+  }, []);
+
+  const artifacts = useMemo(() => resolveCaseArtifacts(collection), [collection]);
   const filtered = useMemo(() => filterAndSortArtifacts(artifacts, { query, type, sort }), [artifacts, query, type, sort]);
   const filteredById = useMemo(
     () => new Map(filtered.map((item) => [item.id, item] as const)),
@@ -72,10 +79,10 @@ const ArtifactList: React.FC = () => {
 
   const actionLabels = useMemo(
     () => buildArtifactActionLabels(
-      Boolean(selectedArtifact && reviewedIds[selectedArtifact.id]),
-      Boolean(selectedArtifact && promotedIds[selectedArtifact.id]),
+      Boolean(selectedArtifact && artifactActions[selectedArtifact.id]?.reviewed),
+      Boolean(selectedArtifact && artifactActions[selectedArtifact.id]?.promoted),
     ),
-    [promotedIds, reviewedIds, selectedArtifact],
+    [artifactActions, selectedArtifact],
   );
 
   const selectedDetailFields = useMemo(
@@ -130,12 +137,14 @@ const ArtifactList: React.FC = () => {
 
   const handleMarkReviewed = useCallback(() => {
     if (!selectedArtifact) return;
-    setReviewedIds((prev) => ({ ...prev, [selectedArtifact.id]: true }));
+    ArtifactActionStore.markReviewed(selectedArtifact.id);
   }, [selectedArtifact]);
 
   const handlePromoteArtifact = useCallback(() => {
     if (!selectedArtifact) return;
-    setPromotedIds((prev) => ({ ...prev, [selectedArtifact.id]: true }));
+    ArtifactActionStore.markPromoted(selectedArtifact.id);
+    // Propagate promotion to canonical entity collection
+    MissionEntityStore.getInstance().promoteArtifact(selectedArtifact.id);
   }, [selectedArtifact]);
 
   return (
@@ -226,7 +235,7 @@ const ArtifactList: React.FC = () => {
                 <button
                   type="button"
                   className={styles.actionButton}
-                  data-active={Boolean(reviewedIds[selectedArtifact.id])}
+                  data-active={Boolean(artifactActions[selectedArtifact.id]?.reviewed)}
                   onClick={handleMarkReviewed}
                   aria-label={`Mark ${selectedArtifact.title} reviewed`}
                 >
@@ -235,7 +244,7 @@ const ArtifactList: React.FC = () => {
                 <button
                   type="button"
                   className={styles.actionButton}
-                  data-active={Boolean(promotedIds[selectedArtifact.id])}
+                  data-active={Boolean(artifactActions[selectedArtifact.id]?.promoted)}
                   onClick={handlePromoteArtifact}
                   aria-label={`Promote ${selectedArtifact.title} to intel`}
                 >

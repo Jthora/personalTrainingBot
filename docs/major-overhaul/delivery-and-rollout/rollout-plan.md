@@ -21,23 +21,23 @@
 | Environment | missionDefaultRoutes | missionSurfaceBrief | missionSurfaceTriage | missionSurfaceCase | missionSurfaceSignal | missionSurfaceChecklist | missionSurfaceDebrief |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | development | true | true | true | true | true | true | true |
-| staging | false | false | false | false | false | false | false |
-| production | false | false | false | false | false | false | false |
+| staging | true | true | true | true | true | true | true |
+| production | true | true | true | true | true | true | true |
 
-### Route gating and fallbacks
-| Mission route | Flag gate | Legacy fallback |
-| --- | --- | --- |
-| `/mission/brief` | `missionSurfaceBrief` | `/home/plan` |
-| `/mission/triage` | `missionSurfaceTriage` | `/home/cards` |
-| `/mission/case` | `missionSurfaceCase` | `/home/progress` |
-| `/mission/signal` | `missionSurfaceSignal` | `/home/coach` |
-| `/mission/checklist` | `missionSurfaceChecklist` | `/home/cards` |
-| `/mission/debrief` | `missionSurfaceDebrief` | `/home/settings` |
+### Compatibility redirects
+| Transitional route | Redirect target |
+| --- | --- |
+| `/home` | `/mission/brief` |
+| `/home/plan` | `/mission/brief` |
+| `/home/cards` | `/mission/triage` |
+| `/home/progress` | `/mission/case` |
+| `/home/coach` | `/mission/signal` |
+| `/home/settings` | `/mission/debrief` |
 
 ### Runtime behavior
-- Root route (`/`) resolves to `/mission/brief` when `missionDefaultRoutes=true`; otherwise `/home/plan`.
-- Mission routes require both `missionDefaultRoutes=true` and a route-specific surface flag.
-- If a mission route is disabled, runtime redirects to the mapped `/home/*` fallback path.
+- Root route (`/`) resolves to `/mission/brief`.
+- Mission routes are the only user-facing route family.
+- `/home/*` routes are compatibility redirects for deep-link continuity and rollback-safe bookmarks.
 - Retired aliases (`/training`, `/training/run`, `/workouts`, `/schedules`, `/settings`) now map directly to mission routes as permanent compatibility redirects.
 
 ## Rollback

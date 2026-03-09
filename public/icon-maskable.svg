@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Maskable safe zone: 80% centered = 51.2 to 460.8 -->
+  <rect width="512" height="512" fill="#040709"/>
+  <!-- Shield body (scaled to safe zone) -->
+  <path d="M256 96 L380 150 L380 260 Q380 355 256 410 Q132 355 132 260 L132 150 Z"
+        fill="none" stroke="#5A7FFF" stroke-width="10"/>
+  <!-- Inner shield glow -->
+  <path d="M256 115 L365 163 L365 258 Q365 342 256 392 Q147 342 147 258 L147 163 Z"
+        fill="#0a1628" opacity="0.7"/>
+  <!-- Wing left -->
+  <path d="M256 210 Q195 160 140 195 Q165 230 205 238 Q170 212 195 195 Q220 220 245 228 Z"
+        fill="#5A7FFF" opacity="0.8"/>
+  <!-- Wing right -->
+  <path d="M256 210 Q317 160 372 195 Q347 230 307 238 Q342 212 317 195 Q292 220 267 228 Z"
+        fill="#5A7FFF" opacity="0.8"/>
+  <!-- Central star -->
+  <polygon points="256,175 266,215 310,215 274,240 286,280 256,255 226,280 238,240 202,215 246,215"
+           fill="#5A7FFF"/>
+  <!-- AK text -->
+  <text x="256" y="350" font-family="sans-serif" font-weight="bold" font-size="52"
+        fill="#5A7FFF" text-anchor="middle" dominant-baseline="middle">AK</text>
+</svg>

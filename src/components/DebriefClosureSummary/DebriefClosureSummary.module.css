@@ -1,0 +1,76 @@
+@import '../../styles/theme.css';
+
+.card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  background: var(--surface-card);
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.title {
+  margin: 0;
+  font-size: var(--mission-type-h3, 1.05rem);
+  color: var(--text-primary);
+}
+
+.metrics {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+}
+
+.metric {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  background: var(--surface-muted);
+  padding: 8px;
+  display: grid;
+  gap: 4px;
+}
+
+.metricLabel {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: var(--mission-type-caption);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.metricValue {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: var(--mission-type-h2);
+}
+
+.metricValue[data-state='up'] {
+  color: var(--mission-trust-verified);
+}
+
+.metricValue[data-state='down'] {
+  color: var(--mission-threat-critical);
+}
+
+.feedback,
+.recommendation {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  background: var(--surface-muted);
+  padding: 10px;
+  display: grid;
+  gap: 6px;
+}
+
+.feedbackLine {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: var(--mission-type-body);
+}
+
+.recommendationTitle {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: var(--mission-type-body);
+  font-weight: 700;
+}

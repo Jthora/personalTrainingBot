@@ -3,8 +3,8 @@ import { useNetworkStatus } from '../../hooks/useNetworkStatus';
 
 const baseStyles: React.CSSProperties = {
   position: 'fixed',
-  top: '12px',
-  right: '12px',
+  bottom: '12px',
+  left: '12px',
   padding: '8px 12px',
   borderRadius: '999px',
   fontSize: '12px',

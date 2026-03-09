@@ -3,8 +3,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import AppRoutes from './routes/Routes';
 import InitialDataLoader from './utils/InitialDataLoader';
 import LoadingMessage from './components/LoadingMessage/LoadingMessage'; // Import the new component
-import { WorkoutScheduleProvider } from './context/WorkoutScheduleContext';
-import { CoachSelectionProvider } from './context/CoachSelectionContext';
+import { MissionScheduleProvider } from './context/MissionScheduleContext';
+import { HandlerSelectionProvider } from './context/HandlerSelectionContext';
 import { warmCaches } from './utils/cacheWarmHints';
 import RecapModal from './components/RecapModal/RecapModal';
 import RecapToast from './components/RecapToast/RecapToast';
@@ -112,8 +112,8 @@ const App: React.FC = () => {
   }
 
   return (
-    <WorkoutScheduleProvider>
-      <CoachSelectionProvider>
+    <MissionScheduleProvider>
+      <HandlerSelectionProvider>
         <Router>
           <CacheIndicator />
           <NetworkStatusIndicator />
@@ -122,8 +122,8 @@ const App: React.FC = () => {
           <RecapToast />
           <RecapModal />
         </Router>
-      </CoachSelectionProvider>
-    </WorkoutScheduleProvider>
+      </HandlerSelectionProvider>
+    </MissionScheduleProvider>
   );
 }
 

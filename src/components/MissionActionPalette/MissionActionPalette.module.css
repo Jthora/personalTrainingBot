@@ -71,7 +71,7 @@
 
 .itemButton:hover,
 .itemButton:focus-visible {
-  background: color-mix(in srgb, var(--coach-accent) 16%, transparent);
+  background: color-mix(in srgb, var(--handler-accent) 16%, transparent);
   outline: none;
 }
 

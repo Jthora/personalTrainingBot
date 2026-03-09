@@ -9,7 +9,7 @@ import { computeMissionMilestoneProgress, type MissionMilestoneProgress } from '
 export type ReadinessResult = {
   score: number;
   confidence: 'low' | 'medium' | 'high';
-  nextActions: Array<{ id: string; title: string }>;
+  nextActions: Array<{ id: string; title: string; route: string }>;
   kit: MissionKit;
   competency: CompetencySnapshot;
   progression: DebriefProgression;
@@ -56,7 +56,11 @@ const pickNextActions = (drills: Drill[], count: number) => {
     return aDate!.valueOf() - bDate!.valueOf(); // oldest first
   });
 
-  return sorted.slice(0, count).map((drill) => ({ id: drill.id, title: drill.title }));
+  return sorted.slice(0, count).map((drill) => ({
+    id: drill.id,
+    title: drill.title,
+    route: '/mission/checklist',
+  }));
 };
 
 export function computeReadiness(kit: MissionKit = sampleMissionKit, options: ReadinessOptions = {}): ReadinessResult {

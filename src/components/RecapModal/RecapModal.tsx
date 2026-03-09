@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import useWorkoutSchedule from '../../hooks/useWorkoutSchedule';
+import useMissionSchedule from '../../hooks/useMissionSchedule';
 import { recordMetric } from '../../utils/metrics';
 import styles from './RecapModal.module.css';
 import { computeBadgeStrip } from '../../utils/badgeStrip';
@@ -11,7 +11,7 @@ const focusableSelector = 'button, [href], input, select, textarea, [tabindex]:n
 const clampPercent = (value: number) => Math.max(0, Math.min(100, value));
 
 const RecapModal: React.FC = () => {
-    const { recap, recapOpen, dismissRecap } = useWorkoutSchedule();
+    const { recap, recapOpen, dismissRecap } = useMissionSchedule();
     const modalRef = useRef<HTMLDivElement | null>(null);
     const [shareStatus, setShareStatus] = useState<string | null>(null);
     const recapCopy = recap ? selectRecapModalCopy(recap) : null;
@@ -138,19 +138,19 @@ const RecapModal: React.FC = () => {
                 className={modalClass}
                 role="dialog"
                 aria-modal="true"
-                aria-label="Workout recap"
+                aria-label="Drill recap"
                 ref={modalRef}
                 onClick={(event) => event.stopPropagation()}
             >
                 <div className={styles.header}>
                     <div>
                         <div className={styles.title}>
-                            {headlineCopy?.headerTitle ?? 'Great work!'}
-                            {headlineCopy?.headerTitle && headlineCopy.headerTitle !== 'Great work!' && (
-                                <span className={styles.srOnly}>Great work!</span>
+                            {headlineCopy?.headerTitle ?? 'Mission Complete'}
+                            {headlineCopy?.headerTitle && headlineCopy.headerTitle !== 'Mission Complete' && (
+                                <span className={styles.srOnly}>Mission Complete</span>
                             )}
                         </div>
-                        <div className={styles.subtitle}>{headlineCopy?.headerSubtitle ?? "You wrapped the plan. Here's your recap."}</div>
+                        <div className={styles.subtitle}>{headlineCopy?.headerSubtitle ?? 'After-action summary ready for review.'}</div>
                     </div>
                     <button aria-label="Close recap" className={styles.closeButton} onClick={() => close('close-button')}>
                         ×
@@ -168,7 +168,7 @@ const RecapModal: React.FC = () => {
                         <div className={styles.metric}>+{recap.xp} XP</div>
                     </div>
                     <div className={styles.card}>
-                        <div className={styles.cardTitle}>Minutes logged</div>
+                        <div className={styles.cardTitle}>Op time</div>
                         <div className={styles.metric}>{recap.minutes} min</div>
                     </div>
                     <div className={styles.card}>
@@ -263,7 +263,7 @@ const RecapModal: React.FC = () => {
 
                 <div className={styles.footer}>
                     <button className={styles.secondary} onClick={() => close('dismiss')}>Dismiss</button>
-                    <button className={styles.cta} onClick={cta}>Back to planner</button>
+                    <button className={styles.cta} onClick={cta}>Return to Brief</button>
                 </div>
             </div>
         </div>

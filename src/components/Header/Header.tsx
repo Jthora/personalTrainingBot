@@ -3,15 +3,17 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import styles from './Header.module.css';
 import logo from '../../assets/images/WingCommanderLogo-288x162.gif';
 import UserProgressStore from '../../store/UserProgressStore';
-import WorkoutScheduleStore from '../../store/WorkoutScheduleStore';
+import MissionScheduleStore from '../../store/MissionScheduleStore';
 import { checkScheduleAlignment } from '../../utils/alignmentCheck';
 import HeaderNav from './HeaderNav';
+import HeaderDrawer from './HeaderDrawer';
 import { resolveHeaderNavItems } from './navConfig';
 import useSelectionSummary from '../../hooks/useSelectionSummary';
 
 const Header: React.FC = () => {
     const navigate = useNavigate();
     const location = useLocation();
+    const [drawerOpen, setDrawerOpen] = useState(false);
     const [summary, setSummary] = useState({
         remaining: 0,
         difficulty: 0,
@@ -21,7 +23,7 @@ const Header: React.FC = () => {
         selectionSummary: '',
     });
 
-    const schedule = useMemo(() => WorkoutScheduleStore.getScheduleSync(), [location.pathname]);
+    const schedule = useMemo(() => MissionScheduleStore.getScheduleSync(), [location.pathname]);
 
     const alignment = useMemo(() => {
         if (!schedule) return 'pass' as const;
@@ -77,11 +79,28 @@ const Header: React.FC = () => {
 
             {/* Center - Title (hugging the logo) */}
             <div className={styles.centerSection}>
-                <h1 className={styles.headerTitle}>Personal Training Bot</h1>
+                <h1 className={styles.headerTitle}>Archangel Knights Training Console</h1>
                 <div className={styles.chipsRow}>
-                    <span className={styles.chip}>📅 {summary.remaining} left</span>
-                    <span className={styles.chip}>🎚️ L{summary.difficulty}</span>
-                    <span className={`${styles.chip} ${styles.alignment}`} data-state={summary.alignment}>
+                    <span
+                        className={styles.chip}
+                        title="Drills left in your current mission cycle"
+                        aria-label={`${summary.remaining} drills left in your current mission cycle`}
+                    >
+                        📅 {summary.remaining} left
+                    </span>
+                    <span
+                        className={styles.chip}
+                        title="Current training intensity level"
+                        aria-label={`Training intensity level ${summary.difficulty}`}
+                    >
+                        🎚️ L{summary.difficulty}
+                    </span>
+                    <span
+                        className={`${styles.chip} ${styles.alignment}`}
+                        data-state={summary.alignment}
+                        title="Whether your current drill mix is aligned with mission targets"
+                        aria-label={`Drill mix ${summary.alignment === 'pass' ? 'aligned with' : 'requires checking against'} mission targets`}
+                    >
                         ⚖️ {summary.alignment === 'pass' ? 'Aligned' : 'Check mix'}
                     </span>
                 </div>
@@ -89,10 +108,31 @@ const Header: React.FC = () => {
 
             {/* Right Side - Navigation and Login */}
             <div className={styles.rightSection}>
-                {/* Inline nav + controls (kept visible for all breakpoints) */}
-                {renderNav()}
-                <a className={styles.settingsLink} href="/mission/debrief" aria-label="Open settings">⚙️</a>
+                {/* Inline nav + controls (desktop only) */}
+                <div className={styles.desktopOnly}>
+                    {renderNav()}
+                    <a className={styles.settingsLink} href="/mission/debrief" aria-label="Open settings">⚙️</a>
+                </div>
+                {/* Hamburger trigger (mobile only) */}
+                <button
+                    type="button"
+                    className={styles.hamburger}
+                    onClick={() => setDrawerOpen(true)}
+                    aria-label="Open menu"
+                >
+                    ☰
+                </button>
             </div>
+
+            <HeaderDrawer
+                open={drawerOpen}
+                onClose={() => setDrawerOpen(false)}
+                handlerColor="var(--handler-accent)"
+                summary={summary}
+                renderLogin={() => null}
+                activePath={location.pathname}
+                navigateTo={navigateTo}
+            />
         </header>
     );
 };

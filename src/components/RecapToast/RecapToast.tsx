@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import styles from './RecapToast.module.css';
-import useWorkoutSchedule from '../../hooks/useWorkoutSchedule';
+import useMissionSchedule from '../../hooks/useMissionSchedule';
 import { recordMetric } from '../../utils/metrics';
 import { logCopyImpression, logCopyInteraction, selectRecapToastCopy } from '../../utils/copy/recapVariants';
 
 const RecapToast: React.FC = () => {
-    const { recap, recapToastVisible, openRecap, dismissRecapToast } = useWorkoutSchedule();
+    const { recap, recapToastVisible, openRecap, dismissRecapToast } = useMissionSchedule();
     const toastCopy = recap ? selectRecapToastCopy(recap) : null;
     const [visible, setVisible] = useState(false);
     const [impressionLogged, setImpressionLogged] = useState(false);

@@ -26,7 +26,7 @@ describe('UserProgressStore challenges', () => {
 
     it('rotates in daily and weekly challenges and tracks progress/completion', () => {
         vi.setSystemTime(new Date('2024-03-01T08:00:00Z'));
-        UserProgressStore.recordActivity({ goalDeltaMinutes: 100, completedWorkouts: 5 });
+        UserProgressStore.recordActivity({ goalDeltaMinutes: 100, completedDrills: 5 });
 
         const progress = UserProgressStore.get();
         expect(progress.challenges.length).toBe(2);

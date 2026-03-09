@@ -18,8 +18,8 @@ export const schedulePostPaintTasks = () => {
         allowOn2g: false,
         run: () => {
             const loaders = [
-                // Coach workout catalog (small JSON)
-                () => import('../data/training_coach_data/workouts.json'),
+                // Handler drill catalog (small JSON)
+                () => import('../data/training_handler_data/drills.json'),
                 // High-likelihood training modules
                 ...hotModuleKeys.map((key) => modulePaths[key]),
             ];

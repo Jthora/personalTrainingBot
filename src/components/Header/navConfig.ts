@@ -1,8 +1,4 @@
-import {
-    isMissionRouteEnabled,
-    toHomeFallbackPath,
-    type MissionRoutePath,
-} from '../../routes/missionCutover';
+import { type MissionRoutePath } from '../../routes/missionCutover';
 
 export type HeaderNavItem = {
     path: MissionRoutePath;
@@ -26,11 +22,10 @@ export const headerNavItems: HeaderNavItem[] = [
 
 export const resolveHeaderNavItems = (): HeaderResolvedNavItem[] => (
     headerNavItems.map((item) => {
-        const navigatePath = isMissionRouteEnabled(item.path) ? item.path : toHomeFallbackPath(item.path);
         return {
             ...item,
-            navigatePath,
-            activePaths: Array.from(new Set([item.path, navigatePath])),
+            navigatePath: item.path,
+            activePaths: [item.path],
         };
     })
 );

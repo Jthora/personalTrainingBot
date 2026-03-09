@@ -7,6 +7,7 @@ import { registerCacheDebug } from './utils/cache/debugCache';
 import { scheduleManifestPrefetch } from './utils/prefetchHints';
 import { registerServiceWorker } from './utils/serviceWorker';
 import { SettingsProvider, readLowDataPreference } from './context/SettingsContext';
+import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
 
 mark('load:boot_start');
 
@@ -22,8 +23,10 @@ if (import.meta.env.DEV) {
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <SettingsProvider>
-      <App />
-    </SettingsProvider>
+    <ErrorBoundary level="root">
+      <SettingsProvider>
+        <App />
+      </SettingsProvider>
+    </ErrorBoundary>
   </StrictMode>,
 )

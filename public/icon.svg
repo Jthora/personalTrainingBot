@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="64" fill="#040709"/>
+  <!-- Shield body -->
+  <path d="M256 56 L420 130 L420 270 Q420 390 256 460 Q92 390 92 270 L92 130 Z"
+        fill="none" stroke="#5A7FFF" stroke-width="12"/>
+  <!-- Inner shield glow -->
+  <path d="M256 80 L400 145 L400 268 Q400 375 256 440 Q112 375 112 268 L112 145 Z"
+        fill="#0a1628" opacity="0.7"/>
+  <!-- Wing left -->
+  <path d="M256 200 Q180 140 110 180 Q140 220 190 230 Q150 200 180 180 Q210 210 240 220 Z"
+        fill="#5A7FFF" opacity="0.8"/>
+  <!-- Wing right -->
+  <path d="M256 200 Q332 140 402 180 Q372 220 322 230 Q362 200 332 180 Q302 210 272 220 Z"
+        fill="#5A7FFF" opacity="0.8"/>
+  <!-- Central star -->
+  <polygon points="256,160 268,210 320,210 278,240 292,290 256,260 220,290 234,240 192,210 244,210"
+           fill="#5A7FFF"/>
+  <!-- AK text -->
+  <text x="256" y="380" font-family="sans-serif" font-weight="bold" font-size="64"
+        fill="#5A7FFF" text-anchor="middle" dominant-baseline="middle">AK</text>
+</svg>

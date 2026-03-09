@@ -1,80 +1,67 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
-import CardSharePage from '../pages/CardSharePage/CardSharePage';
 import CardSlugRedirect from './CardSlugRedirect';
-import HomeShell from '../pages/HomePage/HomeShell';
-import PlanSection from '../pages/HomePage/sections/PlanSection';
-import CardsSection from '../pages/HomePage/sections/CardsSection';
-import ProgressSection from '../pages/HomePage/sections/ProgressSection';
-import CoachSection from '../pages/HomePage/sections/CoachSection';
-import SettingsSection from '../pages/HomePage/sections/SettingsSection';
 import MissionShell from '../pages/MissionFlow/MissionShell';
-import BriefSurface from '../pages/MissionFlow/BriefSurface';
-import TriageSurface from '../pages/MissionFlow/TriageSurface';
-import CaseSurface from '../pages/MissionFlow/CaseSurface';
-import SignalSurface from '../pages/MissionFlow/SignalSurface';
-import ChecklistSurface from '../pages/MissionFlow/ChecklistSurface';
-import DebriefSurface from '../pages/MissionFlow/DebriefSurface';
 import MissionEntryRedirect from '../pages/MissionFlow/MissionEntryRedirect';
-import { isFeatureEnabled } from '../config/featureFlags';
+import ErrorBoundary from '../components/ErrorBoundary/ErrorBoundary';
+import SurfaceLoader from '../components/SurfaceLoader/SurfaceLoader';
 import {
   getDefaultRootPath,
-  isMissionRouteEnabled,
   resolveLegacyAliasPath,
-  toHomeFallbackPath,
-  type MissionRoutePath,
 } from './missionCutover';
 
+/* ── Lazy-loaded mission surfaces ── */
+const BriefSurface = lazy(() => import('../pages/MissionFlow/BriefSurface'));
+const TriageSurface = lazy(() => import('../pages/MissionFlow/TriageSurface'));
+const CaseSurface = lazy(() => import('../pages/MissionFlow/CaseSurface'));
+const SignalSurface = lazy(() => import('../pages/MissionFlow/SignalSurface'));
+const ChecklistSurface = lazy(() => import('../pages/MissionFlow/ChecklistSurface'));
+const DebriefSurface = lazy(() => import('../pages/MissionFlow/DebriefSurface'));
+
+/* ── Lazy-loaded auxiliary pages ── */
+const CardSharePage = lazy(() => import('../pages/CardSharePage/CardSharePage'));
+
+/** Wrap a lazy surface in Suspense + route-level error boundary */
+const Surface: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+  <ErrorBoundary level="route">
+    <Suspense fallback={<SurfaceLoader />}>
+      {children}
+    </Suspense>
+  </ErrorBoundary>
+);
+
 const AppRoutes: React.FC = () => {
-  const missionDefaultRoutes = isFeatureEnabled('missionDefaultRoutes');
   const defaultRoot = getDefaultRootPath();
-
-  const missionSurface = (route: MissionRoutePath, element: React.ReactNode) => {
-    if (isMissionRouteEnabled(route)) {
-      return element;
-    }
-
-    return <Navigate to={toHomeFallbackPath(route)} replace />;
-  };
-
-  const missionShellElement = missionDefaultRoutes
-    ? <MissionShell />
-    : <Navigate to="/home/plan" replace />;
 
   return (
     <Routes>
       <Route path="/" element={<Navigate to={defaultRoot} replace />} />
 
-      <Route path="/home" element={<HomeShell />}>
-        <Route index element={<Navigate to="/home/plan" replace />} />
-        <Route path="plan" element={<PlanSection />} />
-        <Route path="cards" element={<CardsSection />} />
-        <Route path="progress" element={<ProgressSection />} />
-        <Route path="coach" element={<CoachSection />} />
-        <Route path="settings" element={<SettingsSection />} />
-      </Route>
+      <Route path="/home" element={<Navigate to="/mission/brief" replace />} />
+      <Route path="/home/plan" element={<Navigate to="/mission/brief" replace />} />
+      <Route path="/home/cards" element={<Navigate to="/mission/triage" replace />} />
+      <Route path="/home/progress" element={<Navigate to="/mission/case" replace />} />
+      <Route path="/home/handler" element={<Navigate to="/mission/signal" replace />} />
+      <Route path="/home/settings" element={<Navigate to="/mission/debrief" replace />} />
 
-      <Route path="/mission" element={missionShellElement}>
-        <Route
-          index
-          element={missionDefaultRoutes ? <MissionEntryRedirect /> : <Navigate to="/home/plan" replace />}
-        />
-        <Route path="brief" element={missionSurface('/mission/brief', <BriefSurface />)} />
-        <Route path="triage" element={missionSurface('/mission/triage', <TriageSurface />)} />
-        <Route path="case" element={missionSurface('/mission/case', <CaseSurface />)} />
-        <Route path="signal" element={missionSurface('/mission/signal', <SignalSurface />)} />
-        <Route path="checklist" element={missionSurface('/mission/checklist', <ChecklistSurface />)} />
-        <Route path="debrief" element={missionSurface('/mission/debrief', <DebriefSurface />)} />
+      <Route path="/mission" element={<MissionShell />}>
+        <Route index element={<MissionEntryRedirect />} />
+        <Route path="brief" element={<Surface><BriefSurface /></Surface>} />
+        <Route path="triage" element={<Surface><TriageSurface /></Surface>} />
+        <Route path="case" element={<Surface><CaseSurface /></Surface>} />
+        <Route path="signal" element={<Surface><SignalSurface /></Surface>} />
+        <Route path="checklist" element={<Surface><ChecklistSurface /></Surface>} />
+        <Route path="debrief" element={<Surface><DebriefSurface /></Surface>} />
       </Route>
 
       <Route path="/schedules" element={<Navigate to={resolveLegacyAliasPath('/schedules')} replace />} />
-      <Route path="/workouts" element={<Navigate to={resolveLegacyAliasPath('/workouts')} replace />} />
+      <Route path="/drills" element={<Navigate to={resolveLegacyAliasPath('/drills')} replace />} />
       <Route path="/training" element={<Navigate to={resolveLegacyAliasPath('/training')} replace />} />
       <Route path="/training/run" element={<Navigate to={resolveLegacyAliasPath('/training/run')} replace />} />
       <Route path="/settings" element={<Navigate to={resolveLegacyAliasPath('/settings')} replace />} />
 
       <Route path="/c/:slug" element={<CardSlugRedirect />} />
-      <Route path="/share/:slug" element={<CardSharePage />} />
+      <Route path="/share/:slug" element={<Surface><CardSharePage /></Surface>} />
       <Route path="*" element={<Navigate to={defaultRoot} replace />} />
     </Routes>
   );

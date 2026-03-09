@@ -8,6 +8,7 @@
 - Data migration: legacy workout data handling (hide or map to mission kits? document decision).
 - Legacy schema/service inventory for retirement tracked in `legacy-retirement-inventory.md`.
 - Final migration decisions + long-term constraints tracked in `final-migration-notes.md`.
+- Canonical mission-first IA and redirect ownership tracked in `canonical-route-contract.md`.
 
 ## Rollout Plan (solo)
 - Staging deploy with automated deep-link/offline/readiness checks.

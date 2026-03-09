@@ -1,15 +1,15 @@
 import UserProgressStore from './UserProgressStore';
-import { WorkoutBlock, WorkoutSchedule, WorkoutSet } from '../types/WorkoutSchedule';
+import { MissionBlock, MissionSchedule, MissionSet } from '../types/MissionSchedule';
 import { recordMetric } from '../utils/metrics';
 
 const XP_REWARDS = {
-    workout: 35,
+    drill: 35,
     block: 20,
     scheduleCompleteBonus: 50,
 };
 
 const MINUTES_FALLBACK = {
-    workout: 10,
+    drill: 10,
     block: 8,
 };
 
@@ -28,14 +28,14 @@ const estimateMinutes = (input: string | number | undefined, fallback: number) =
     return parsed;
 };
 
-const firstIncompleteWorkout = (set: WorkoutSet) => set.workouts.find(([, completed]) => !completed)?.[0];
+const firstIncompleteDrill = (set: MissionSet) => set.drills.find(([, completed]) => !completed)?.[0];
 
-const completionReward = (item: WorkoutSet | WorkoutBlock) => {
-    if (item instanceof WorkoutSet) {
-        const workout = firstIncompleteWorkout(item);
+const completionReward = (item: MissionSet | MissionBlock) => {
+    if (item instanceof MissionSet) {
+        const drill = firstIncompleteDrill(item);
         return {
-            xp: XP_REWARDS.workout,
-            minutes: estimateMinutes(workout?.duration, MINUTES_FALLBACK.workout),
+            xp: XP_REWARDS.drill,
+            minutes: estimateMinutes(drill?.duration, MINUTES_FALLBACK.drill),
         };
     }
 
@@ -64,7 +64,7 @@ const emitOnce = (event: string, key: string, payload: Record<string, unknown>, 
 };
 
 export const ProgressEventRecorder = {
-    recordCompletion({ item, scheduleAfter }: { item: WorkoutSet | WorkoutBlock; scheduleAfter: WorkoutSchedule; }) {
+    recordCompletion({ item, scheduleAfter }: { item: MissionSet | MissionBlock; scheduleAfter: MissionSchedule; }) {
         const { xp, minutes } = completionReward(item);
         const scheduleEmpty = scheduleAfter.scheduleItems.length === 0;
         const scheduleBonus = scheduleEmpty ? XP_REWARDS.scheduleCompleteBonus : 0;
@@ -72,7 +72,7 @@ export const ProgressEventRecorder = {
         UserProgressStore.recordActivity({
             xp: totalXp,
             goalDeltaMinutes: minutes,
-            completedWorkouts: 1,
+            completedDrills: 1,
             difficultyLevel: scheduleAfter.difficultySettings.level,
         });
         const payload = { xp: totalXp, minutes, scheduleEmpty, remaining: scheduleAfter.scheduleItems.length, date: scheduleAfter.date };
@@ -85,7 +85,7 @@ export const ProgressEventRecorder = {
         emitOnce(`non_completion_${reason}`, `non_completion_${reason}`, { reason }, () => recordMetric('progress_event_non_completion', { reason }));
     },
 
-    recordScheduleSet(schedule: WorkoutSchedule) {
+    recordScheduleSet(schedule: MissionSchedule) {
         const payload = { items: schedule.scheduleItems.length, difficultyLevel: schedule.difficultySettings.level, date: schedule.date };
         emitOnce('schedule_set', 'schedule_set', payload, () => recordMetric('progress_event_schedule_set', payload));
     },

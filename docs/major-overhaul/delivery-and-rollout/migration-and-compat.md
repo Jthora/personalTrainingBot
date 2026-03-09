@@ -1,22 +1,23 @@
 # Migration and Compatibility
 
 ## Routing
-- Map legacy Plan/Cards/Training to Mission Kit/Drills/Execute; maintain rewrites.
+- Canonical IA is mission-first: `/mission/brief`, `/mission/triage`, `/mission/case`, `/mission/signal`, `/mission/checklist`, `/mission/debrief`.
+- Legacy and transitional route families are compatibility redirects only.
 
-### Mission route fallback compatibility map
-| Mission route | Disabled-state fallback |
+### Home-route compatibility redirect map
+| Transitional route | Mission canonical target |
 | --- | --- |
-| `/mission/brief` | `/home/plan` |
-| `/mission/triage` | `/home/cards` |
-| `/mission/case` | `/home/progress` |
-| `/mission/signal` | `/home/coach` |
-| `/mission/checklist` | `/home/cards` |
-| `/mission/debrief` | `/home/settings` |
+| `/home` | `/mission/brief` |
+| `/home/plan` | `/mission/brief` |
+| `/home/cards` | `/mission/triage` |
+| `/home/progress` | `/mission/case` |
+| `/home/coach` | `/mission/signal` |
+| `/home/settings` | `/mission/debrief` |
 
-### Cutover compatibility rules
-- `missionDefaultRoutes=false` keeps `/home/*` as canonical routes and treats `/mission/*` as opt-in surfaces.
-- `missionDefaultRoutes=true` enables mission-first routing, but each mission surface can be rolled out independently.
-- Disabled mission surfaces always redirect to `/home/*` equivalents to preserve deep-link continuity during staged rollout.
+### Compatibility rules
+- Mission routes are always canonical and user-facing.
+- `/home/*` and obsolete workout-centric aliases remain available only as compatibility redirects.
+- Product UI must not present `/home/*` IA labels as primary navigation.
 
 ### Legacy route retirement (Stage 11 / Task 10.2.1)
 Obsolete workout-centric aliases are now permanently mapped to mission routes to remove legacy IA dependencies:

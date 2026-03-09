@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import MissionEntityStore from '../../domain/mission/MissionEntityStore';
-import type { MissionSeverity } from '../../domain/mission/types';
+import type { CaseStatus, MissionSeverity, SignalStatus } from '../../domain/mission/types';
 import styles from './TriageBoard.module.css';
 import {
   readTriagePreferences,
@@ -16,7 +16,10 @@ import {
   type TriageCard,
   type TriageColumn,
 } from './model';
+import { useMissionEntityCollection } from '../../hooks/useMissionEntityCollection';
 import { useMissionRenderProbe } from '../../utils/missionRenderProfile';
+import { TriageActionStore, type TriageActionRecord } from '../../store/TriageActionStore';
+import { resolveTriageTransition } from '../../domain/mission/triageLifecycleBridge';
 
 const severityClass: Record<MissionSeverity, string> = {
   low: styles.severityLow,
@@ -64,11 +67,11 @@ TriageCardItem.displayName = 'TriageCardItem';
 
 const TriageBoard: React.FC = () => {
   useMissionRenderProbe('mission:triage:board');
-  const collection = MissionEntityStore.getInstance().getCanonicalCollection();
+  const collection = useMissionEntityCollection();
   const columns = useMemo(() => buildColumns(collection), [collection]);
   const [viewMode, setViewMode] = useState<TriageViewMode>(() => readTriagePreferences().view);
   const [densityMode, setDensityMode] = useState<TriageDensityMode>(() => readTriagePreferences().density);
-  const [overrides, setOverrides] = useState<Record<string, Pick<TriageCard, 'severity' | 'status'>>>({});
+  const [storedActions, setStoredActions] = useState<Record<string, TriageActionRecord>>(() => TriageActionStore.getAll());
   const [selectedCardId, setSelectedCardId] = useState<string | null>(null);
   const [actionMessage, setActionMessage] = useState<string>('Keyboard shortcuts: A=Ack, E=Escalate, D=Defer, R=Resolve');
 
@@ -76,19 +79,27 @@ const TriageBoard: React.FC = () => {
     writeTriagePreferences({ view: viewMode, density: densityMode });
   }, [viewMode, densityMode]);
 
+  // Subscribe to TriageActionStore for persistence across navigation
+  useEffect(() => {
+    const unsubscribe = TriageActionStore.subscribe(setStoredActions);
+    return () => { unsubscribe(); };
+  }, []);
+
   const hydratedColumns: TriageColumn[] = useMemo(
     () => columns.map((column) => ({
       ...column,
       cards: column.cards.map((card) => {
-        const override = overrides[card.id];
-        if (!override) return card;
+        const stored = storedActions[card.id];
+        if (!stored) return card;
         return {
           ...card,
-          ...override,
+          severity: stored.severity,
+          status: stored.status,
+          domainStatus: stored.domainStatus ?? card.domainStatus,
         };
       }),
     })),
-    [columns, overrides],
+    [columns, storedActions],
   );
 
   const allCards = useMemo(() => hydratedColumns.flatMap((column) => column.cards), [hydratedColumns]);
@@ -132,14 +143,23 @@ const TriageBoard: React.FC = () => {
     if (!selectedCard) return;
     event.preventDefault();
 
-    const next = applyTriageAction(selectedCard, action);
-    setOverrides((previous) => ({
-      ...previous,
-      [selectedCard.id]: {
-        severity: next.severity,
-        status: next.status,
-      },
-    }));
+    // Validate against domain lifecycle state machine
+    const transition = resolveTriageTransition(selectedCard.lane, selectedCard.domainStatus, action);
+    if (!transition.valid) {
+      setActionMessage(`⛔ ${selectedCard.title}: ${transition.reason}`);
+      return;
+    }
+
+    const next = applyTriageAction(selectedCard, action, transition.nextStatus);
+    TriageActionStore.record(selectedCard.id, action, next.severity, next.status, next.domainStatus);
+
+    // Propagate lifecycle transition to the canonical entity collection
+    const entityStore = MissionEntityStore.getInstance();
+    if (selectedCard.lane === 'Case') {
+      entityStore.updateCaseStatus(selectedCard.id, transition.nextStatus as CaseStatus, next.severity);
+    } else if (selectedCard.lane === 'Signal') {
+      entityStore.updateSignalStatus(selectedCard.id, transition.nextStatus as SignalStatus, next.severity);
+    }
 
     setActionMessage(`${selectedCard.title}: ${next.status} · ${next.severity.toUpperCase()}`);
   }, [cardsById, selectedCardId]);

@@ -1,5 +1,7 @@
 import { sampleSignals, type SignalEntry, type SignalRole, type SignalStatus } from '../data/signals/sampleSignals';
 import { trackEvent } from '../utils/telemetry';
+import MissionEntityStore from '../domain/mission/MissionEntityStore';
+import type { MissionSignal, SignalStatus as DomainSignalStatus } from '../domain/mission/types';
 
 const SIGNALS_KEY = 'ptb:signals';
 const SIGNAL_QUEUE_KEY = 'ptb:signals-queue';
@@ -69,6 +71,29 @@ const getSignals = (): SignalEntry[] => {
   return [...data].sort((a, b) => b.updatedAt - a.updatedAt);
 };
 
+/** Map SignalsStore status to domain signal status. */
+const toDomainStatus = (status: SignalStatus): DomainSignalStatus => {
+  if (status === 'open') return 'new';
+  if (status === 'ack') return 'acknowledged';
+  return 'resolved';
+};
+
+/** Convert a user-created SignalEntry into a MissionSignal for the entity graph. */
+const toMissionSignal = (entry: SignalEntry): MissionSignal => ({
+  kind: 'signal',
+  id: entry.id,
+  version: 'v1',
+  createdAt: new Date(entry.createdAt).toISOString(),
+  updatedAt: new Date(entry.updatedAt).toISOString(),
+  operationId: '',
+  title: entry.title,
+  detail: entry.detail,
+  status: toDomainStatus(entry.status),
+  severity: 'medium',
+  source: 'operator',
+  observedAt: new Date(entry.createdAt).toISOString(),
+});
+
 const updateStatus = (id: string, status: SignalStatus) => {
   const signals = getSignals();
   const online = typeof navigator !== 'undefined' ? navigator.onLine : true;
@@ -77,6 +102,9 @@ const updateStatus = (id: string, status: SignalStatus) => {
   enqueue({ id, action: status === 'ack' ? 'ack' : 'resolve', timestamp: Date.now(), offline: !online });
   trackEvent({ category: 'signals', action: status === 'ack' ? 'signal_ack' : 'signal_resolve', data: { id, status, offline: !online }, source: 'ui' });
   flushQueue();
+
+  // Propagate status change to canonical entity collection
+  MissionEntityStore.getInstance().updateSignalStatus(id, toDomainStatus(status));
 };
 
 export const SignalsStore = {
@@ -111,6 +139,9 @@ export const SignalsStore = {
     enqueue({ id, action: 'add', payload: entry, timestamp: now, offline: !online });
     trackEvent({ category: 'signals', action: 'signal_create', data: { id, role, offline: !online }, source: 'ui' });
     flushQueue();
+
+    // Ingest into canonical entity collection so AlertStream / Triage see it
+    MissionEntityStore.getInstance().ingestSignal(toMissionSignal(entry));
   },
 
   acknowledge(id: string) {

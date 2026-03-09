@@ -1,8 +1,8 @@
 {
     "id": "fitness_training",
-    "name": "Fitness Training",
+    "name": "Field Conditioning",
     "color": "#32CD32",
-    "description": "A comprehensive training program designed to enhance physical performance, endurance, and overall health.",
+    "description": "A comprehensive conditioning program designed to enhance physical performance, endurance, and operational readiness.",
     "submodules": [
         "strength_training",
         "cardiovascular_endurance",

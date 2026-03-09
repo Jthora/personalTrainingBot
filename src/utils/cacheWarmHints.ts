@@ -1,4 +1,4 @@
-import WorkoutCategoryCache from '../cache/WorkoutCategoryCache';
+import DrillCategoryCache from '../cache/DrillCategoryCache';
 import TrainingModuleCache from '../cache/TrainingModuleCache';
 import { taskScheduler } from './taskScheduler';
 
@@ -11,9 +11,9 @@ export const warmCaches = (onComplete?: () => void) => {
         run: (signal) => {
             if (signal.aborted) return;
             try {
-                const categoryCache = WorkoutCategoryCache.getInstance();
+                const categoryCache = DrillCategoryCache.getInstance();
                 if (categoryCache.cache.size === 0) {
-                    console.info('CacheWarmHints: WorkoutCategoryCache empty; warm will no-op until load completes.');
+                    console.info('CacheWarmHints: DrillCategoryCache empty; warm will no-op until load completes.');
                 } else {
                     categoryCache.getAllWorkouts();
                 }

@@ -1,0 +1,125 @@
+{
+  "ts": "2026-03-09T14:51:27.615Z",
+  "baseUrl": "http://localhost:4175",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "durationMs": 3804,
+  "failed": false,
+  "checkpoints": [
+    {
+      "name": "Intake panel visible",
+      "status": "pass"
+    },
+    {
+      "name": "Start briefing clicked",
+      "status": "pass"
+    },
+    {
+      "name": "Brief step cue rendered",
+      "status": "pass"
+    },
+    {
+      "name": "Guidance card rendered",
+      "status": "pass"
+    },
+    {
+      "name": "Brief marked complete",
+      "status": "pass"
+    },
+    {
+      "name": "Advanced to triage",
+      "status": "pass"
+    },
+    {
+      "name": "At triage route",
+      "status": "pass",
+      "detail": "/mission/triage"
+    },
+    {
+      "name": "Triage handoff visible",
+      "status": "pass"
+    },
+    {
+      "name": "Triage marked complete",
+      "status": "pass"
+    },
+    {
+      "name": "Advanced to case",
+      "status": "pass"
+    },
+    {
+      "name": "At case route",
+      "status": "pass",
+      "detail": "/mission/case"
+    },
+    {
+      "name": "Case handoff visible",
+      "status": "pass"
+    },
+    {
+      "name": "Case marked complete",
+      "status": "pass"
+    },
+    {
+      "name": "Advanced to signal",
+      "status": "pass"
+    },
+    {
+      "name": "At signal route",
+      "status": "pass",
+      "detail": "/mission/signal"
+    },
+    {
+      "name": "Signal form filled",
+      "status": "pass"
+    },
+    {
+      "name": "Signal added",
+      "status": "pass"
+    },
+    {
+      "name": "Signal marked complete",
+      "status": "pass"
+    },
+    {
+      "name": "Advanced to checklist",
+      "status": "pass"
+    },
+    {
+      "name": "At checklist route",
+      "status": "pass",
+      "detail": "/mission/checklist"
+    },
+    {
+      "name": "Checklist title visible",
+      "status": "pass"
+    },
+    {
+      "name": "Checklist marked complete",
+      "status": "pass"
+    },
+    {
+      "name": "Advanced to debrief",
+      "status": "pass"
+    },
+    {
+      "name": "At debrief route",
+      "status": "pass",
+      "detail": "/mission/debrief"
+    },
+    {
+      "name": "Debrief closure summary visible",
+      "status": "pass"
+    },
+    {
+      "name": "AAR save locally clicked",
+      "status": "pass"
+    },
+    {
+      "name": "AAR export clicked",
+      "status": "pass"
+    }
+  ]
+}

@@ -3,10 +3,10 @@ import React from 'react';
 import { render, act } from '@testing-library/react';
 import { recordMetric } from '../../utils/metrics';
 import { useSelectionSummary } from '../useSelectionSummary';
-import WorkoutScheduleStore from '../../store/WorkoutScheduleStore';
+import MissionScheduleStore from '../../store/MissionScheduleStore';
 
-vi.mock('../../store/WorkoutScheduleStore', () => {
-    const getSelectionCounts = vi.fn(() => ({ categories: 1, workouts: 2 }));
+vi.mock('../../store/MissionScheduleStore', () => {
+    const getSelectionCounts = vi.fn(() => ({ categories: 1, drills: 2 }));
     let listener: (() => void) | null = null;
     const subscribeToSelectionChanges = vi.fn((cb: () => void) => {
         listener = cb;
@@ -28,7 +28,7 @@ vi.mock('../../utils/metrics', () => ({
 }));
 
 // Access trigger helper from mock
-const getTrigger = () => (WorkoutScheduleStore as any).__trigger as () => void;
+const getTrigger = () => (MissionScheduleStore as any).__trigger as () => void;
 
 describe('useSelectionSummary', () => {
     beforeEach(() => {

@@ -1,5 +1,3 @@
-import { isFeatureEnabled, type FeatureFlagKey } from '../config/featureFlags';
-
 export const missionRoutePaths = [
   '/mission/brief',
   '/mission/triage',
@@ -13,7 +11,7 @@ export type MissionRoutePath = (typeof missionRoutePaths)[number];
 
 export const legacyAliasPaths = [
   '/schedules',
-  '/workouts',
+  '/drills',
   '/training',
   '/training/run',
   '/settings',
@@ -21,44 +19,32 @@ export const legacyAliasPaths = [
 
 export type LegacyAliasPath = (typeof legacyAliasPaths)[number];
 
-const missionSurfaceFlags: Record<MissionRoutePath, FeatureFlagKey> = {
-  '/mission/brief': 'missionSurfaceBrief',
-  '/mission/triage': 'missionSurfaceTriage',
-  '/mission/case': 'missionSurfaceCase',
-  '/mission/signal': 'missionSurfaceSignal',
-  '/mission/checklist': 'missionSurfaceChecklist',
-  '/mission/debrief': 'missionSurfaceDebrief',
-};
-
 const missionHomeFallbacks: Record<MissionRoutePath, string> = {
   '/mission/brief': '/home/plan',
   '/mission/triage': '/home/cards',
   '/mission/case': '/home/progress',
-  '/mission/signal': '/home/coach',
+  '/mission/signal': '/home/handler',
   '/mission/checklist': '/home/cards',
   '/mission/debrief': '/home/settings',
 };
 
 const legacyAliasMap: Record<LegacyAliasPath, string> = {
   '/schedules': '/mission/brief',
-  '/workouts': '/mission/triage',
+  '/drills': '/mission/triage',
   '/training': '/mission/checklist',
   '/training/run': '/mission/checklist',
   '/settings': '/mission/debrief',
 };
 
 export const getDefaultRootPath = (
-  readFlag: (flag: FeatureFlagKey) => boolean = isFeatureEnabled,
-): string => (readFlag('missionDefaultRoutes') ? '/mission/brief' : '/home/plan');
+): string => '/mission/brief';
 
 export const resolveLegacyAliasPath = (route: LegacyAliasPath): string => legacyAliasMap[route];
 
 export const toHomeFallbackPath = (route: MissionRoutePath): string => missionHomeFallbacks[route];
 
 export const isMissionRouteEnabled = (
-  route: MissionRoutePath,
-  readFlag: (flag: FeatureFlagKey) => boolean = isFeatureEnabled,
+  _route: MissionRoutePath,
 ): boolean => {
-  if (!readFlag('missionDefaultRoutes')) return false;
-  return readFlag(missionSurfaceFlags[route]);
+  return true;
 };

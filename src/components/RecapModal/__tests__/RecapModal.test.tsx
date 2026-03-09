@@ -17,10 +17,10 @@ const recap: RecapSummary = {
     badges: ['Consistency', 'Mobility'],
 };
 
-const useWorkoutSchedule = vi.fn();
-vi.mock('../../../hooks/useWorkoutSchedule', () => ({
+const useMissionSchedule = vi.fn();
+vi.mock('../../../hooks/useMissionSchedule', () => ({
     __esModule: true,
-    default: () => useWorkoutSchedule(),
+    default: () => useMissionSchedule(),
 }));
 
 vi.mock('../../../utils/metrics', () => ({
@@ -29,23 +29,23 @@ vi.mock('../../../utils/metrics', () => ({
 
 describe('RecapModal', () => {
     beforeEach(() => {
-        useWorkoutSchedule.mockReset();
-        useWorkoutSchedule.mockReturnValue({ recap, recapOpen: true, dismissRecap: vi.fn() });
+        useMissionSchedule.mockReset();
+        useMissionSchedule.mockReturnValue({ recap, recapOpen: true, dismissRecap: vi.fn() });
     });
 
     it('renders recap summary and CTA', () => {
         const { getByText, getByLabelText } = render(<RecapModal />);
-        expect(getByText(/Great work/i)).toBeTruthy();
+        expect(getByText(/Mission Complete/i)).toBeTruthy();
         expect(getByText('+85 XP')).toBeTruthy();
-        expect(getByText('Back to planner')).toBeTruthy();
+        expect(getByText('Return to Brief')).toBeTruthy();
         expect(getByLabelText('Close recap')).toBeTruthy();
     });
 
     it('invokes dismiss on CTA', () => {
         const dismissRecap = vi.fn();
-        useWorkoutSchedule.mockReturnValue({ recap, recapOpen: true, dismissRecap });
+        useMissionSchedule.mockReturnValue({ recap, recapOpen: true, dismissRecap });
         const { getByText } = render(<RecapModal />);
-        fireEvent.click(getByText('Back to planner'));
+        fireEvent.click(getByText('Return to Brief'));
         expect(dismissRecap).toHaveBeenCalled();
     });
 
@@ -54,7 +54,7 @@ describe('RecapModal', () => {
         const recapWithShare: RecapSummary = { ...recap, shareAvailable: true, shareText: 'Wrapped today: +85 XP' };
         const writeText = vi.fn().mockResolvedValue(undefined);
         Object.assign(navigator, { clipboard: { writeText } });
-    useWorkoutSchedule.mockReturnValue({ recap: recapWithShare, recapOpen: true, dismissRecap });
+    useMissionSchedule.mockReturnValue({ recap: recapWithShare, recapOpen: true, dismissRecap });
         const { getByText, getByLabelText } = render(<RecapModal />);
         expect(getByLabelText('Shareable recap text').textContent).toContain('Wrapped today: +85 XP');
         await act(async () => {
@@ -66,7 +66,7 @@ describe('RecapModal', () => {
 
     it('suppresses share when offline', () => {
         const recapOffline: RecapSummary = { ...recap, shareAvailable: false, isOffline: true };
-        useWorkoutSchedule.mockReturnValue({ recap: recapOffline, recapOpen: true, dismissRecap: vi.fn() });
+        useMissionSchedule.mockReturnValue({ recap: recapOffline, recapOpen: true, dismissRecap: vi.fn() });
         const { queryByText, getByText } = render(<RecapModal />);
         expect(queryByText('Copy recap')).toBeNull();
         expect(getByText(/Offline mode — sharing is disabled/)).toBeTruthy();

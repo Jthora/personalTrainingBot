@@ -1,7 +1,5 @@
 import { describe, it, expect } from 'vitest';
 import { getBadgeCatalog, findBadge } from '../badgeCatalog';
-import { getBadgeVisualTokens } from '../badgeVisualTokens';
-import { getBadgeArtworkTokens } from '../badgeArtworkTokens';
 
 describe('badgeCatalog', () => {
     it('exposes a lean catalog of 8-12 badges with unique ids', () => {
@@ -58,24 +56,6 @@ describe('badgeCatalog', () => {
                 const maxTier = maxTiers[0];
                 expect(maxTier).toBe(sorted[sorted.length - 1]);
             }
-        });
-    });
-
-    it('maps every badge to a visual token and artwork token', () => {
-        const catalog = getBadgeCatalog();
-        const visualTokens = getBadgeVisualTokens();
-        const artworkTokens = getBadgeArtworkTokens();
-
-        catalog.forEach(badge => {
-            const colorKey = (badge.colorTokenId ?? badge.rarity) as keyof typeof visualTokens;
-            expect(visualTokens[colorKey]).toBeDefined();
-            expect(visualTokens[colorKey].background).toBeTruthy();
-            expect(visualTokens[colorKey].border).toBeTruthy();
-            expect(visualTokens[colorKey].glow).toBeTruthy();
-
-            const artworkKey = (badge.artworkTokenId ?? 'default') as keyof typeof artworkTokens;
-            expect(artworkTokens[artworkKey]).toBeDefined();
-            expect(artworkTokens[artworkKey].sprite).toBeTruthy();
         });
     });
 });

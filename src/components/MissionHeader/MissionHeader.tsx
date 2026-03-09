@@ -1,12 +1,12 @@
 import React, { useMemo } from 'react';
-import MissionEntityStore from '../../domain/mission/MissionEntityStore';
+import { useMissionEntityCollection } from '../../hooks/useMissionEntityCollection';
 import { readMissionFlowContext } from '../../store/missionFlow/continuity';
 import { computeReadiness } from '../../utils/readiness/model';
 import styles from './MissionHeader.module.css';
 import { getMissionHeaderModel } from './model';
 
 const MissionHeader: React.FC = () => {
-  const collection = MissionEntityStore.getInstance().getCanonicalCollection();
+  const collection = useMissionEntityCollection();
 
   const model = useMemo(() => {
     const fallbackReadinessModel = computeReadiness(undefined, { debriefOutcomes: collection?.debriefOutcomes ?? [] });

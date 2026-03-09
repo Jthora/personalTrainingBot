@@ -19,7 +19,7 @@ describe('featureFlags', () => {
         sessionStorage.clear();
     });
 
-    it('uses production-safe defaults when in production', async () => {
+    it('uses production mission-first defaults when in production', async () => {
         mockEnv('production');
         const mod = await loadModule();
         expect(mod.isFeatureEnabled('calendarSurface')).toBe(false);
@@ -27,8 +27,8 @@ describe('featureFlags', () => {
         expect(mod.isFeatureEnabled('generatorSwap')).toBe(true);
         expect(mod.isFeatureEnabled('performanceInstrumentation')).toBe(false);
         expect(mod.isFeatureEnabled('canonicalReadPath')).toBe(false);
-        expect(mod.isFeatureEnabled('missionDefaultRoutes')).toBe(false);
-        expect(mod.isFeatureEnabled('missionSurfaceBrief')).toBe(false);
+        expect(mod.isFeatureEnabled('missionDefaultRoutes')).toBe(true);
+        expect(mod.isFeatureEnabled('missionSurfaceBrief')).toBe(true);
     });
 
     it('uses mission-first defaults when in staging', async () => {

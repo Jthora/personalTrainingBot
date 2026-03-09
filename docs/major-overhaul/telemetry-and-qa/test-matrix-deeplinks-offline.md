@@ -57,6 +57,12 @@ Latest run: Mar 5, 2026 using `npm run smoke:headless` against http://localhost:
 
 Next action: rerun smoke on preview/prod host after selector relax for readiness/drill buttons; archive artifact trio per host.
 
+## Follow-Ups (noted per Task 0.1.2.2)
+- Relax readiness/drill button selectors in smoke scripts to reduce skips.
+- Add mobile-viewport (390×844) deep-link pass to `smoke:headless` — currently runs desktop-only.
+- Re-archive artifact trio after next full smoke run.
+- Consider gating deploy on `smoke:headless` pass + `psi-operative-scenario` pass.
+
 ## Offline Mission Critical Path Runbook (2026-03-05)
 - Command: `npm run check:offline-critical-path -- --base=http://localhost:4173`
 - Artifact: [artifacts/offline-critical-path-report.json](artifacts/offline-critical-path-report.json)

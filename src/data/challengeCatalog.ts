@@ -6,45 +6,45 @@ export interface ChallengeDefinition {
     description: string;
     timeframe: ChallengeTimeframe;
     target: number;
-    unit: 'minutes' | 'workouts';
+    unit: 'minutes' | 'missions';
     rewardXp: number;
 }
 
 const CHALLENGE_CATALOG: ChallengeDefinition[] = [
     {
         id: 'daily_minutes_20',
-        title: 'Daily 20',
-        description: 'Log at least 20 minutes today',
+        title: 'Daily Recon',
+        description: 'Log at least 20 minutes of operations today',
         timeframe: 'daily',
         target: 20,
         unit: 'minutes',
         rewardXp: 50,
     },
     {
-        id: 'daily_two_workouts',
-        title: 'Double Up',
-        description: 'Complete 2 workouts today',
+        id: 'daily_two_missions',
+        title: 'Double Deployment',
+        description: 'Complete 2 mission drills today',
         timeframe: 'daily',
         target: 2,
-        unit: 'workouts',
+        unit: 'missions',
         rewardXp: 60,
     },
     {
         id: 'weekly_minutes_90',
-        title: 'Weekly 90',
-        description: 'Accumulate 90 minutes this week',
+        title: 'Weekly Surveillance',
+        description: 'Accumulate 90 minutes of operations this week',
         timeframe: 'weekly',
         target: 90,
         unit: 'minutes',
         rewardXp: 120,
     },
     {
-        id: 'weekly_five_workouts',
-        title: 'Five Flights',
-        description: 'Complete 5 workouts this week',
+        id: 'weekly_five_missions',
+        title: 'Five-Op Sprint',
+        description: 'Complete 5 mission drills this week',
         timeframe: 'weekly',
         target: 5,
-        unit: 'workouts',
+        unit: 'missions',
         rewardXp: 140,
     },
 ];

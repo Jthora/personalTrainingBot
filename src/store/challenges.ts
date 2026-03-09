@@ -49,10 +49,14 @@ export const rotateChallengesIfNeeded = (
         }
         const expired = existing.filter(c => c.timeframe === timeframe).map(c => c.id);
         expiredIds.push(...expired);
-        const definition = catalog.find(c => c.timeframe === timeframe);
-        if (definition) {
-            results.push(spawnChallengeInstance(definition, todayIso));
-        }
+
+        // Rotate through catalog entries for this timeframe instead of always picking the first
+        const candidates = catalog.filter(c => c.timeframe === timeframe);
+        if (candidates.length === 0) return;
+        const lastExpired = expired[expired.length - 1] ?? '';
+        const lastIdx = candidates.findIndex(c => c.id === lastExpired);
+        const nextIdx = (lastIdx + 1) % candidates.length;
+        results.push(spawnChallengeInstance(candidates[nextIdx], todayIso));
     };
 
     upsertForTimeframe('daily');
@@ -63,13 +67,13 @@ export const rotateChallengesIfNeeded = (
 
 export const applyChallengeProgress = (
     challenges: ChallengeInstance[],
-    { minutesDelta = 0, workoutsDelta = 0, asOfDate }: { minutesDelta?: number; workoutsDelta?: number; asOfDate: string },
+    { minutesDelta = 0, missionsDelta = 0, asOfDate }: { minutesDelta?: number; missionsDelta?: number; asOfDate: string },
 ): ChallengeInstance[] => {
     const now = dayjs(asOfDate);
     return challenges.map(challenge => {
         const withinWindow = !now.isBefore(dayjs(challenge.startsAt)) && !now.isAfter(dayjs(challenge.endsAt));
         if (!withinWindow) return challenge;
-        const delta = challenge.unit === 'minutes' ? minutesDelta : workoutsDelta;
+        const delta = challenge.unit === 'minutes' ? minutesDelta : missionsDelta;
         if (!delta || delta <= 0) return challenge;
         const progress = challenge.progress + delta;
         const completed = progress >= challenge.target;

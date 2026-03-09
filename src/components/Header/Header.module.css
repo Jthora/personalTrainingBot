@@ -11,9 +11,11 @@
     justify-content: space-between;
     height: var(--header-height, 60px);
     padding: 0 18px;
+    padding-top: env(safe-area-inset-top, 0px);
     background: var(--surface-card);
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
 }
 
 .skipLink {
@@ -24,7 +26,7 @@
     color: var(--text-primary);
     padding: 10px 14px;
     z-index: 1500;
-    border: 1px solid var(--coach-accent);
+    border: 1px solid var(--handler-accent);
     border-radius: 6px;
 }
 
@@ -39,7 +41,7 @@
     left: 18px;
     right: 18px;
     height: 2px;
-    background: linear-gradient(90deg, transparent, var(--coach-accent), transparent);
+    background: linear-gradient(90deg, transparent, var(--handler-accent), transparent);
     opacity: 0.35;
 }
 
@@ -140,6 +142,35 @@
     justify-content: flex-end;
 }
 
+.desktopOnly {
+    display: flex;
+}
+
+.hamburger {
+    display: none;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--text-primary);
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.hamburger:hover {
+    border-color: var(--handler-accent);
+    background: rgba(90, 127, 255, 0.12);
+}
+
+.hamburger:active {
+    transform: scale(0.95);
+    opacity: 0.85;
+}
+
 .settingsLink {
     display: inline-flex;
     align-items: center;
@@ -154,7 +185,7 @@
 }
 
 .settingsLink:hover {
-    border-color: var(--coach-accent);
+    border-color: var(--handler-accent);
     background: rgba(90, 127, 255, 0.1);
 }
 
@@ -185,12 +216,17 @@
 }
 
 .navButton:hover {
-    border-color: var(--coach-accent);
+    border-color: var(--handler-accent);
     background: rgba(90, 127, 255, 0.08);
 }
 
+.navButton:active {
+    transform: scale(0.97);
+    opacity: 0.85;
+}
+
 .active {
-    border-color: var(--coach-accent);
+    border-color: var(--handler-accent);
     background: rgba(90, 127, 255, 0.15);
 }
 
@@ -215,7 +251,7 @@
 }
 
 .moreButton:hover {
-    border-color: var(--coach-accent);
+    border-color: var(--handler-accent);
     background: rgba(90, 127, 255, 0.12);
 }
 
@@ -233,7 +269,7 @@
 }
 
 .loginButton:hover {
-    border-color: var(--coach-accent);
+    border-color: var(--handler-accent);
     background: rgba(90, 127, 255, 0.1);
 }
 
@@ -256,7 +292,7 @@
 }
 
 .userButton:hover {
-    border-color: var(--coach-accent);
+    border-color: var(--handler-accent);
 }
 
 .userInfo {
@@ -282,7 +318,7 @@
 
 .connectionStatus {
     font-size: 0.65rem;
-    color: var(--coach-accent);
+    color: var(--handler-accent);
     letter-spacing: 0.1em;
 }
 
@@ -429,6 +465,7 @@
 
 @media (max-width: 1024px) {
     .header {
+        --header-height: 56px;
         height: 56px;
         padding: 0 14px;
     }
@@ -444,6 +481,7 @@
 
 @media (max-width: 768px) {
     .header {
+        --header-height: 52px;
         height: 52px;
         padding: 0 12px;
     }
@@ -451,10 +489,28 @@
     .headerSpacer {
         height: 52px;
     }
+
+    .desktopOnly {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline-flex;
+    }
+
+    .chipsRow {
+        display: none;
+    }
+
+    .headerTitle {
+        font-size: 0.85rem;
+        letter-spacing: 0.06em;
+    }
 }
 
 @media (max-width: 480px) {
     .header {
+        --header-height: 48px;
         height: 48px;
         padding: 0 10px;
     }
@@ -464,8 +520,8 @@
     }
 
     .headerTitle {
-        font-size: 0.95rem;
-        letter-spacing: 0.18em;
+        font-size: 0.78rem;
+        letter-spacing: 0.04em;
     }
 
     .userButton span {

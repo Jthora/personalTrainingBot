@@ -2,10 +2,16 @@
   "baselinePath": "artifacts/telemetry-schema-baseline.json",
   "eventsPath": "artifacts/telemetry-headless.json",
   "mode": "compare",
-  "driftDetected": false,
+  "driftDetected": true,
   "drift": {
-    "missingEventKeys": [],
-    "newEventKeys": [],
+    "missingEventKeys": [
+      "aar:aar_export",
+      "aar:aar_save",
+      "settings:preload_trigger"
+    ],
+    "newEventKeys": [
+      "ia:tab_view"
+    ],
     "changedDataKeys": []
   }
 }

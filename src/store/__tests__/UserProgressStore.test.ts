@@ -17,14 +17,14 @@ describe('UserProgressStore', () => {
         const before = UserProgressStore.get();
         expect(before.xp).toBe(0);
 
-        UserProgressStore.recordActivity({ xp: 50, goalDeltaMinutes: 20 });
+        UserProgressStore.recordActivity({ xp: 50, goalDeltaMinutes: 20, completedDrills: 1 });
 
         const after = UserProgressStore.get();
         expect(after.xp).toBe(50);
         expect(after.level).toBeGreaterThanOrEqual(1);
         expect(after.streakCount).toBeGreaterThan(0);
-        expect(after.dailyGoal.progress).toBeGreaterThanOrEqual(20);
-        expect(after.weeklyGoal.progress).toBeGreaterThanOrEqual(20);
+        expect(after.dailyGoal.progress).toBeGreaterThanOrEqual(1);
+        expect(after.weeklyGoal.progress).toBeGreaterThanOrEqual(1);
     });
 
     it('freezes streak on skip/timeout events', () => {

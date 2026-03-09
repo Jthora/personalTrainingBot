@@ -22,6 +22,8 @@ The development server runs on Vite with hot module replacement. Environment-spe
 
 - Production build: `npm run build`
 - Unit tests: `npm run test`
+- Headless regression suite: `npm run smoke:headless`
+- End-to-end operator scenario simulation: `BASE_URL=http://localhost:4173 npm run test:psi-scenario`
 
 Both commands should pass before cutting a release.
 

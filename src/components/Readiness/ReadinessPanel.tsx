@@ -1,12 +1,23 @@
 import React, { useEffect, useMemo } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from './ReadinessPanel.module.css';
 import { computeReadiness } from '../../utils/readiness/model';
 import { trackEvent } from '../../utils/telemetry';
-import MissionEntityStore from '../../domain/mission/MissionEntityStore';
+import { useMissionEntityCollection } from '../../hooks/useMissionEntityCollection';
+import { MissionKitStore } from '../../store/MissionKitStore';
+import { AARStore } from '../../store/AARStore';
+import { mapAllAARsToDebriefOutcomes } from '../../utils/readiness/aarBridge';
 
 const ReadinessPanel: React.FC = () => {
-  const debriefOutcomes = MissionEntityStore.getInstance().getCanonicalCollection()?.debriefOutcomes ?? [];
-  const readiness = useMemo(() => computeReadiness(undefined, { debriefOutcomes }), [debriefOutcomes]);
+  const navigate = useNavigate();
+  const collection = useMissionEntityCollection();
+  const exemplarOutcomes = collection?.debriefOutcomes ?? [];
+  const aarOutcomes = useMemo(() => mapAllAARsToDebriefOutcomes(AARStore.list()), []);
+  const debriefOutcomes = useMemo(() => [...exemplarOutcomes, ...aarOutcomes], [exemplarOutcomes, aarOutcomes]);
+
+  // Use live kit with persisted drill stats instead of hardcoded defaults
+  const primaryKit = useMemo(() => MissionKitStore.getPrimaryKit(), []);
+  const readiness = useMemo(() => computeReadiness(primaryKit, { debriefOutcomes }), [primaryKit, debriefOutcomes]);
 
   useEffect(() => {
     trackEvent({
@@ -33,7 +44,7 @@ const ReadinessPanel: React.FC = () => {
     readiness.milestone.progressPct,
   ]);
 
-  const handleActionClick = (actionId: string, title: string, index: number) => {
+  const handleActionClick = (actionId: string, title: string, index: number, route: string) => {
     trackEvent({
       category: 'readiness',
       action: 'next_action_click',
@@ -47,6 +58,7 @@ const ReadinessPanel: React.FC = () => {
       },
       source: 'ui',
     });
+    navigate(route);
   };
 
   return (
@@ -67,7 +79,7 @@ const ReadinessPanel: React.FC = () => {
             key={action.id}
             type="button"
             className={styles.action}
-            onClick={() => handleActionClick(action.id, action.title, idx)}
+            onClick={() => handleActionClick(action.id, action.title, idx, action.route)}
             aria-label={`Run ${action.title}`}
           >
             <span className={styles.badge}>Next {idx + 1}</span>

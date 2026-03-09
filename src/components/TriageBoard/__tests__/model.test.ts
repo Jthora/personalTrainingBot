@@ -8,6 +8,7 @@ const baseCard: TriageCard = {
   lane: 'Case',
   severity: 'medium',
   status: 'NEW',
+  domainStatus: 'new',
 };
 
 describe('triage board interaction model', () => {

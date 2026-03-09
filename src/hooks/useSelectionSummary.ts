@@ -1,14 +1,14 @@
 import { useEffect, useMemo, useState } from 'react';
-import WorkoutScheduleStore from '../store/WorkoutScheduleStore';
+import MissionScheduleStore from '../store/MissionScheduleStore';
 import { recordMetric } from '../utils/metrics';
 
 const DEFAULT_SUMMARY = '0 cat · 0 wkts';
 const DEBOUNCE_MS = 200;
 
-const formatSummary = (categories: number, workouts: number) => `${categories} cat · ${workouts} wkts`;
+const formatSummary = (categories: number, drills: number) => `${categories} cat · ${drills} wkts`;
 
 export const useSelectionSummary = () => {
-    const [counts, setCounts] = useState(() => WorkoutScheduleStore.getSelectionCounts());
+    const [counts, setCounts] = useState(() => MissionScheduleStore.getSelectionCounts());
 
     useEffect(() => {
         let timer: number | undefined;
@@ -18,12 +18,12 @@ export const useSelectionSummary = () => {
             if (timer) window.clearTimeout(timer);
             recordMetric(hit ? 'selection_summary_debounce_hit' : 'selection_summary_debounce_miss');
             timer = window.setTimeout(() => {
-                setCounts(WorkoutScheduleStore.getSelectionCounts());
+                setCounts(MissionScheduleStore.getSelectionCounts());
                 console.debug('useSelectionSummary: updated counts after debounce');
             }, DEBOUNCE_MS);
         };
 
-        const unsubscribe = WorkoutScheduleStore.subscribeToSelectionChanges(handleChange);
+        const unsubscribe = MissionScheduleStore.subscribeToSelectionChanges(handleChange);
         return () => {
             if (timer) window.clearTimeout(timer);
             unsubscribe();
@@ -32,7 +32,7 @@ export const useSelectionSummary = () => {
 
     const summary = useMemo(() => {
         if (!counts) return DEFAULT_SUMMARY;
-        return formatSummary(counts.categories, counts.workouts);
+        return formatSummary(counts.categories, counts.drills);
     }, [counts]);
 
     return summary;

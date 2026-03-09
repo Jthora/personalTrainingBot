@@ -18,7 +18,7 @@ const LoadingMessage: React.FC<LoadingMessageProps> = ({ progress }) => {
 
   return (
     <div className={styles['loading-container']}>
-      <h1 className={styles['title']}>Personal Training Bot</h1> {/* Add this line */}
+      <h1 className={styles['title']}>Archangel Knights Training Console</h1>
       <div className={styles.spinner}></div>
       <div className={styles['loading-text-container']}>
         <div className={styles['loading-text']}>App Loading<span className={styles['loading-dots']}>{dots}</span></div>

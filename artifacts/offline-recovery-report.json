@@ -1,6 +1,6 @@
 {
-  "ts": "2026-03-05T12:41:29.367Z",
-  "base": "http://127.0.0.1:4176",
+  "ts": "2026-03-06T23:30:28.326Z",
+  "base": "http://localhost:4175",
   "checks": [
     {
       "name": "warm_cache_online",
@@ -10,7 +10,7 @@
           "ok": true,
           "status": 200,
           "json": {
-            "generatedAt": "2026-03-05T12:31:14.923Z",
+            "generatedAt": "2026-03-05T20:50:02.794Z",
             "version": "0.0.0",
             "modules": [
               {
@@ -251,7 +251,7 @@
           "ok": true,
           "status": 200,
           "json": {
-            "generatedAt": "2026-03-05T12:31:14.923Z",
+            "generatedAt": "2026-03-05T20:50:02.794Z",
             "version": "0.0.0",
             "modules": [
               {

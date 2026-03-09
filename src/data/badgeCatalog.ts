@@ -15,16 +15,16 @@ export interface BadgeDefinition {
 }
 
 const BADGE_CATALOG: BadgeDefinition[] = [
-    { id: 'streak_3', name: 'Warm Streak', description: 'Complete 3 days in a row', rarity: 'common', icon: '🔥', tierGroup: 'streak', tier: 1, maxTier: 3, artworkTokenId: 'streak' },
-    { id: 'streak_7', name: 'Weekly Warrior', description: 'Complete 7 days in a row', rarity: 'rare', icon: '🛡️', tierGroup: 'streak', tier: 2, maxTier: 3, artworkTokenId: 'streak' },
-    { id: 'streak_30', name: 'Iron Discipline', description: 'Complete 30 days in a row', rarity: 'epic', icon: '🏆', tierGroup: 'streak', tier: 3, maxTier: 3, artworkTokenId: 'streak' },
-    { id: 'minutes_60', name: 'One Hour Club', description: 'Log 60 minutes in a day', rarity: 'common', icon: '⏱️', artworkTokenId: 'time' },
-    { id: 'minutes_300', name: 'Five Hour Flight', description: 'Log 300 minutes in a week', rarity: 'rare', icon: '✈️', artworkTokenId: 'time' },
-    { id: 'completion_10', name: 'Starter Pack', description: 'Complete 10 workouts', rarity: 'common', icon: '✅', tierGroup: 'completions', tier: 1, maxTier: 3, artworkTokenId: 'completion' },
-    { id: 'completion_50', name: 'Seasoned Pilot', description: 'Complete 50 workouts', rarity: 'rare', icon: '🧭', tierGroup: 'completions', tier: 2, maxTier: 3, artworkTokenId: 'completion' },
-    { id: 'completion_100', name: 'Ace Operator', description: 'Complete 100 workouts', rarity: 'epic', icon: '🎖️', tierGroup: 'completions', tier: 3, maxTier: 3, artworkTokenId: 'completion' },
-    { id: 'difficulty_advance', name: 'Push the Limit', description: 'Finish a workout on advanced difficulty', rarity: 'rare', icon: '⚡', artworkTokenId: 'difficulty' },
-    { id: 'share_card', name: 'Signal Beacon', description: 'Share a training card', rarity: 'common', icon: '📡', artworkTokenId: 'share' },
+    { id: 'streak_3', name: 'Warm Streak', description: 'Complete 3 consecutive mission days', rarity: 'common', icon: '🔥', tierGroup: 'streak', tier: 1, maxTier: 3, artworkTokenId: 'streak' },
+    { id: 'streak_7', name: 'Persistent Operative', description: 'Complete 7 consecutive mission days', rarity: 'rare', icon: '🛡️', tierGroup: 'streak', tier: 2, maxTier: 3, artworkTokenId: 'streak' },
+    { id: 'streak_30', name: 'Iron Protocol', description: 'Complete 30 consecutive mission days', rarity: 'epic', icon: '🏆', tierGroup: 'streak', tier: 3, maxTier: 3, artworkTokenId: 'streak' },
+    { id: 'minutes_60', name: 'Deep Cover', description: 'Log 60 minutes of operations in a single day', rarity: 'common', icon: '⏱️', artworkTokenId: 'time' },
+    { id: 'minutes_300', name: 'Extended Op', description: 'Log 300 minutes of operations in a single week', rarity: 'rare', icon: '✈️', artworkTokenId: 'time' },
+    { id: 'completion_10', name: 'Field Initiate', description: 'Complete 10 mission drills', rarity: 'common', icon: '✅', tierGroup: 'completions', tier: 1, maxTier: 3, artworkTokenId: 'completion' },
+    { id: 'completion_50', name: 'Signal Analyst', description: 'Complete 50 mission drills', rarity: 'rare', icon: '🧭', tierGroup: 'completions', tier: 2, maxTier: 3, artworkTokenId: 'completion' },
+    { id: 'completion_100', name: 'Ace Operative', description: 'Complete 100 mission drills', rarity: 'epic', icon: '🎖️', tierGroup: 'completions', tier: 3, maxTier: 3, artworkTokenId: 'completion' },
+    { id: 'difficulty_advance', name: 'Clearance Escalation', description: 'Finish a drill on advanced difficulty', rarity: 'rare', icon: '⚡', artworkTokenId: 'difficulty' },
+    { id: 'share_card', name: 'Signal Beacon', description: 'Share a training intel card', rarity: 'common', icon: '📡', artworkTokenId: 'share' },
 ];
 
 export const getBadgeCatalog = (): BadgeDefinition[] => {

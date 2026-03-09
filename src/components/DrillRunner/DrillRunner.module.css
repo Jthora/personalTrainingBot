@@ -69,7 +69,7 @@
 }
 
 .button {
-  background: var(--coach-accent);
+  background: var(--handler-accent);
   color: #0a0f1a;
   border: none;
   border-radius: 10px;

@@ -1,7 +1,8 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import styles from './DrillRunner.module.css';
 import { DrillRunStore, DrillRunState } from '../../store/DrillRunStore';
 import { MissionKitStore } from '../../store/MissionKitStore';
+import useMissionSchedule from '../../hooks/useMissionSchedule';
 
 const defaultSteps = (drillId: string, drillTitle: string) => {
   return [
@@ -13,6 +14,8 @@ const defaultSteps = (drillId: string, drillTitle: string) => {
 
 const DrillRunner: React.FC = () => {
   const [state, setState] = useState<DrillRunState | null>(() => DrillRunStore.get());
+  const [completionRecorded, setCompletionRecorded] = useState(false);
+  const { completeCurrentDrill } = useMissionSchedule();
 
   useEffect(() => {
     const unsubscribe = DrillRunStore.subscribe(setState);
@@ -20,6 +23,13 @@ const DrillRunner: React.FC = () => {
       unsubscribe();
     };
   }, []);
+
+  // Reset completion flag when a new drill starts
+  useEffect(() => {
+    if (state && !state.completed) {
+      setCompletionRecorded(false);
+    }
+  }, [state?.drillId, state?.completed]);
 
   const activeDrill = useMemo(() => {
     if (!state) return null;
@@ -34,15 +44,31 @@ const DrillRunner: React.FC = () => {
     const kit = MissionKitStore.getPrimaryKit();
     const drill = kit?.drills[0];
     if (!drill) return;
-    DrillRunStore.start(drill.id, drill.title, defaultSteps(drill.id, drill.title));
+    DrillRunStore.start(drill.id, drill.title, drill.steps?.length ? drill.steps : defaultSteps(drill.id, drill.title));
   };
+
+  const handleComplete = useCallback(() => {
+    if (!state || completionRecorded) return;
+    // Record drill stats (success = all steps checked)
+    MissionKitStore.recordDrillCompletion(state.drillId, true);
+    // Fire the XP/progression loop
+    completeCurrentDrill();
+    setCompletionRecorded(true);
+  }, [state, completionRecorded, completeCurrentDrill]);
+
+  // Auto-fire completion when all steps are checked
+  useEffect(() => {
+    if (state?.completed && !completionRecorded) {
+      handleComplete();
+    }
+  }, [state?.completed, completionRecorded, handleComplete]);
 
   if (!state) {
     return (
       <div className={styles.empty}>
         <p className={styles.title}>No active drill</p>
-        <p className={styles.body}>Start a starter drill to stage offline steps and preserve continuity.</p>
-        <button className={styles.button} onClick={startFromKit}>Start starter drill</button>
+        <p className={styles.body}>Start a drill from the mission kit to stage offline steps and preserve continuity.</p>
+        <button className={styles.button} onClick={startFromKit}>Start drill</button>
       </div>
     );
   }
@@ -77,7 +103,11 @@ const DrillRunner: React.FC = () => {
         ))}
       </ul>
 
-      {state.completed ? <div className={styles.success}>Drill complete · offline record queued</div> : null}
+      {state.completed && completionRecorded ? (
+        <div className={styles.success}>Drill complete · XP awarded · record queued</div>
+      ) : state.completed ? (
+        <div className={styles.success}>Drill complete · recording…</div>
+      ) : null}
     </div>
   );
 };

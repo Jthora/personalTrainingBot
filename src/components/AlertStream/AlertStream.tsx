@@ -1,15 +1,15 @@
 import React, { useMemo } from 'react';
-import MissionEntityStore from '../../domain/mission/MissionEntityStore';
+import { useMissionEntityCollection } from '../../hooks/useMissionEntityCollection';
 import styles from './AlertStream.module.css';
 import { buildAlertGroups } from './model';
 import { missionSeverityIcons } from '../../utils/mission/iconography';
 
 const AlertStream: React.FC = () => {
-  const collection = MissionEntityStore.getInstance().getCanonicalCollection();
+  const collection = useMissionEntityCollection();
   const groups = useMemo(() => buildAlertGroups(collection?.signals ?? []), [collection]);
 
   return (
-    <section className={styles.panel} aria-label="Alert stream">
+    <section className={styles.panel} aria-label="Alert stream" aria-live="polite">
       <h3 className={styles.title}>Alert Stream</h3>
 
       {groups.length === 0 ? (

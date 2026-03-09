@@ -34,8 +34,8 @@
 }
 
 .toggleActive {
-  border-color: var(--coach-accent);
-  background: var(--coach-accent-soft);
+  border-color: var(--handler-accent);
+  background: var(--handler-accent-soft);
 }
 
 .grid {
@@ -76,8 +76,8 @@
 }
 
 .card[data-selected='true'] {
-  border-color: var(--coach-accent);
-  background: color-mix(in srgb, var(--coach-accent) 16%, var(--surface-muted));
+  border-color: var(--handler-accent);
+  background: color-mix(in srgb, var(--handler-accent) 16%, var(--surface-muted));
 }
 
 .cardButton {
@@ -93,7 +93,7 @@
 }
 
 .cardButton:focus-visible {
-  outline: 2px solid var(--coach-accent);
+  outline: 2px solid var(--handler-accent);
   outline-offset: 2px;
   border-radius: 6px;
 }

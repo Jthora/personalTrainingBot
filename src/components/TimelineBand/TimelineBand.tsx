@@ -1,12 +1,12 @@
 import React, { useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import MissionEntityStore from '../../domain/mission/MissionEntityStore';
+import { useMissionEntityCollection } from '../../hooks/useMissionEntityCollection';
 import { buildMissionUrlState, readMissionFlowContext } from '../../store/missionFlow/continuity';
 import { buildTimelineEvents } from './model';
 import styles from './TimelineBand.module.css';
 
 const TimelineBand: React.FC = () => {
-  const collection = MissionEntityStore.getInstance().getCanonicalCollection();
+  const collection = useMissionEntityCollection();
   const context = readMissionFlowContext();
 
   const events = useMemo(() => buildTimelineEvents(collection, context), [collection, context?.updatedAt]);

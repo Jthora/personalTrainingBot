@@ -1,39 +1,39 @@
 import { describe, expect, it } from 'vitest';
-import { Workout } from '../../types/WorkoutCategory';
-import { WorkoutBlock, WorkoutSet } from '../../types/WorkoutSchedule';
+import { Drill } from '../../types/DrillCategory';
+import { MissionBlock, MissionSet } from '../../types/MissionSchedule';
 import { cloneScheduleItems, moveScheduleItem, removeScheduleItem, describeScheduleItem, getAlignmentStatus, adjustSetDifficulty, replaceSetWithSimilar } from '../schedulePreview';
 
 describe('schedulePreview helpers', () => {
-    const workoutA = new Workout('A', 'desc', '10', 'med', [1, 3]);
-    const workoutB = new Workout('B', 'desc', '10', 'med', [1, 3]);
-    const workoutC = new Workout('C', 'desc', '15', 'high', [4, 6]);
+    const workoutA = new Drill('A', 'desc', '10', 'med', [1, 3]);
+    const workoutB = new Drill('B', 'desc', '10', 'med', [1, 3]);
+    const workoutC = new Drill('C', 'desc', '15', 'high', [4, 6]);
 
     const baseItems = [
-        new WorkoutSet([[workoutA, false], [workoutB, false]]),
-        new WorkoutBlock('Block', 'intervals', 12, 'details'),
-        new WorkoutSet([[workoutC, false]])
+        new MissionSet([[workoutA, false], [workoutB, false]]),
+        new MissionBlock('Block', 'intervals', 12, 'details'),
+        new MissionSet([[workoutC, false]])
     ];
 
     it('clones without mutating original items', () => {
         const clone = cloneScheduleItems(baseItems);
         expect(clone).not.toBe(baseItems);
-        expect(clone[0]).toBeInstanceOf(WorkoutSet);
-        expect((clone[0] as WorkoutSet).workouts).not.toBe((baseItems[0] as WorkoutSet).workouts);
-        expect((clone[0] as WorkoutSet).workouts[0][0]).not.toBe(workoutA);
+        expect(clone[0]).toBeInstanceOf(MissionSet);
+        expect((clone[0] as MissionSet).drills).not.toBe((baseItems[0] as MissionSet).drills);
+        expect((clone[0] as MissionSet).drills[0][0]).not.toBe(workoutA);
     });
 
     it('moves items between indices', () => {
         const moved = moveScheduleItem(baseItems, 0, 2);
-        expect(moved[2]).toBeInstanceOf(WorkoutSet);
-        expect((moved[2] as WorkoutSet).workouts[0][0].name).toBe('A');
+        expect(moved[2]).toBeInstanceOf(MissionSet);
+        expect((moved[2] as MissionSet).drills[0][0].name).toBe('A');
         expect(moved.length).toBe(3);
     });
 
     it('removes an item by index', () => {
         const trimmed = removeScheduleItem(baseItems, 1);
         expect(trimmed.length).toBe(2);
-        expect(trimmed[0]).toBeInstanceOf(WorkoutSet);
-        expect(trimmed[1]).toBeInstanceOf(WorkoutSet);
+        expect(trimmed[0]).toBeInstanceOf(MissionSet);
+        expect(trimmed[1]).toBeInstanceOf(MissionSet);
     });
 
     it('describes items for UI labels', () => {
@@ -48,16 +48,16 @@ describe('schedulePreview helpers', () => {
     });
 
     it('adjusts set difficulty with clamping', () => {
-        const adjusted = adjustSetDifficulty(baseItems[0] as WorkoutSet, 9);
-        const range = (adjusted as WorkoutSet).workouts[0][0].difficulty_range;
+        const adjusted = adjustSetDifficulty(baseItems[0] as MissionSet, 9);
+        const range = (adjusted as MissionSet).drills[0][0].difficulty_range;
         expect(range[0]).toBe(8);
         expect(range[1]).toBe(10);
     });
 
-    it('replaces a set with similar workouts', () => {
+    it('replaces a set with similar drills', () => {
         const pool = [workoutA, workoutB, workoutC];
-        const replaced = replaceSetWithSimilar(baseItems[0] as WorkoutSet, pool, 3);
-        expect(replaced.workouts.length).toBe(2);
-        expect(replaced.workouts[0][0].name).not.toBe('A');
+        const replaced = replaceSetWithSimilar(baseItems[0] as MissionSet, pool, 3);
+        expect(replaced.drills.length).toBe(2);
+        expect(replaced.drills[0][0].name).not.toBe('A');
     });
 });

@@ -39,22 +39,22 @@ describe('UserProgressStore badge unlocking', () => {
     });
 
     it('unlocks completion badges as totals accumulate', () => {
-        UserProgressStore.recordActivity({ completedWorkouts: 10 });
+        UserProgressStore.recordActivity({ completedDrills: 10 });
         expect(getBadges()).toContain('completion_10');
 
-        UserProgressStore.recordActivity({ completedWorkouts: 40 });
+        UserProgressStore.recordActivity({ completedDrills: 40 });
         expect(getBadges()).toContain('completion_50');
 
-        UserProgressStore.recordActivity({ completedWorkouts: 50 });
+        UserProgressStore.recordActivity({ completedDrills: 50 });
         expect(getBadges()).toContain('completion_100');
     });
 
-    it('unlocks minute-based badges from daily/weekly progress', () => {
+    it('unlocks ops-based badges from daily/weekly progress', () => {
         vi.setSystemTime(new Date('2024-02-01'));
-        UserProgressStore.recordActivity({ goalDeltaMinutes: 60 });
+        UserProgressStore.recordActivity({ completedDrills: 10 });
         expect(getBadges()).toContain('minutes_60');
 
-        UserProgressStore.recordActivity({ goalDeltaMinutes: 250 });
+        UserProgressStore.recordActivity({ completedDrills: 30 });
         expect(getBadges()).toContain('minutes_300');
     });
 
@@ -64,8 +64,8 @@ describe('UserProgressStore badge unlocking', () => {
     });
 
     it('does not duplicate badge unlocks and records unlock history', () => {
-        UserProgressStore.recordActivity({ completedWorkouts: 10 });
-        UserProgressStore.recordActivity({ completedWorkouts: 5 });
+        UserProgressStore.recordActivity({ completedDrills: 10 });
+        UserProgressStore.recordActivity({ completedDrills: 5 });
         const progress = UserProgressStore.get();
         const uniqueBadges = new Set(progress.badges);
         expect(uniqueBadges.size).toBe(progress.badges.length);

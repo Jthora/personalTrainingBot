@@ -4,17 +4,19 @@
 
 ### Routing and IA
 - Mission IA is the long-term canonical model.
+- Mission IA is now the runtime canonical model.
+- Root route resolves to `/mission/brief` across environments.
 - Workout-centric aliases are permanently retired as compatibility redirects:
   - `/schedules` -> `/mission/brief`
   - `/workouts` -> `/mission/triage`
   - `/training` -> `/mission/checklist`
   - `/training/run` -> `/mission/checklist`
   - `/settings` -> `/mission/debrief`
-- `/home/*` routes are retained only for fallback/rollback continuity and staged recovery operations.
+- `/home/*` routes are retained as compatibility redirects only and are not product-facing navigation.
 
 ### Legacy surface behavior
-- Mission route enablement remains flag-gated by `missionDefaultRoutes` and per-surface flags.
-- If a mission surface is disabled, navigation falls back to mapped `/home/*` continuity routes.
+- Mission surfaces are always enabled.
+- `/home/*` route family redirects into mission routes to preserve old links without dual IA exposure.
 
 ### Data bridge
 - Legacy training-module content remains bridged via `mapTrainingModulesToMissionEntities` in canonical hydration.

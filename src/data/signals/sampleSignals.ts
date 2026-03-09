@@ -35,8 +35,8 @@ export const sampleSignals: SignalEntry[] = [
   },
   {
     id: 'sig-training-1',
-    title: 'Training: cooldown copy update',
-    detail: 'Cardio cooldown copy needs voice/tone pass; assign to owner.',
+    title: 'Training: wind-down copy update',
+    detail: 'Post-mission recovery copy needs voice/tone pass; assign to owner.',
     role: 'training',
     status: 'resolved',
     createdAt: now - 1000 * 60 * 60 * 24,

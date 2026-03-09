@@ -1,0 +1,31 @@
+{
+  "name": "Archangel Knights Training Console",
+  "short_name": "AK Console",
+  "description": "Psi Operative mission briefing, triage, and training console for Archangel Knights Advanced Internship Program",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#5A7FFF",
+  "background_color": "#040709",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["education", "productivity"]
+}

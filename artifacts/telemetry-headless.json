@@ -3,34 +3,7 @@
     "category": "offline",
     "action": "offline_exit",
     "source": "system",
-    "ts": "2026-03-05T12:41:53.480Z",
-    "route": "/mission/brief",
-    "offline": false,
-    "net": "4g"
-  },
-  {
-    "category": "readiness",
-    "action": "score_render",
-    "data": {
-      "kitId": "operation-exemplar-kit",
-      "score": 77,
-      "confidence": "medium",
-      "progressionDelta": 15,
-      "progressionTrend": "improving",
-      "milestoneTier": "tier_3",
-      "milestoneProgressPct": 47
-    },
-    "source": "ui",
-    "ts": "2026-03-05T12:41:53.482Z",
-    "route": "/mission/brief",
-    "offline": false,
-    "net": "4g"
-  },
-  {
-    "category": "offline",
-    "action": "offline_exit",
-    "source": "system",
-    "ts": "2026-03-05T12:41:56.212Z",
+    "ts": "2026-03-06T23:31:01.356Z",
     "route": "/home/plan",
     "offline": false,
     "net": "4g"
@@ -48,8 +21,21 @@
       "milestoneProgressPct": 47
     },
     "source": "ui",
-    "ts": "2026-03-05T12:41:56.213Z",
-    "route": "/home/plan",
+    "ts": "2026-03-06T23:31:01.373Z",
+    "route": "/mission/brief",
+    "offline": false,
+    "net": "4g"
+  },
+  {
+    "category": "ia",
+    "action": "tab_view",
+    "route": "/mission/brief",
+    "data": {
+      "kind": "step_view_start",
+      "step": "/mission/brief"
+    },
+    "source": "ui",
+    "ts": "2026-03-06T23:31:01.374Z",
     "offline": false,
     "net": "4g"
   },
@@ -57,8 +43,21 @@
     "category": "offline",
     "action": "offline_exit",
     "source": "system",
-    "ts": "2026-03-05T12:42:12.574Z",
+    "ts": "2026-03-06T23:31:17.801Z",
     "route": "/mission/signal",
+    "offline": false,
+    "net": "4g"
+  },
+  {
+    "category": "ia",
+    "action": "tab_view",
+    "route": "/mission/signal",
+    "data": {
+      "kind": "step_view_start",
+      "step": "/mission/signal"
+    },
+    "source": "ui",
+    "ts": "2026-03-06T23:31:17.803Z",
     "offline": false,
     "net": "4g"
   },
@@ -66,12 +65,12 @@
     "category": "signals",
     "action": "signal_create",
     "data": {
-      "id": "sig-1772714532783",
+      "id": "sig-1772839878001",
       "role": "ops",
       "offline": false
     },
     "source": "ui",
-    "ts": "2026-03-05T12:42:12.783Z",
+    "ts": "2026-03-06T23:31:18.002Z",
     "route": "/mission/signal",
     "offline": false,
     "net": "4g"
@@ -80,40 +79,12 @@
     "category": "signals",
     "action": "signal_resolve",
     "data": {
-      "id": "sig-1772714532783",
+      "id": "sig-1772839878001",
       "status": "resolved",
       "offline": false
     },
     "source": "ui",
-    "ts": "2026-03-05T12:42:12.862Z",
-    "route": "/mission/signal",
-    "offline": false,
-    "net": "4g"
-  },
-  {
-    "category": "aar",
-    "action": "aar_save",
-    "data": {
-      "id": "aar-starter",
-      "role": "ops",
-      "title": "Starter AAR"
-    },
-    "source": "ui",
-    "ts": "2026-03-05T12:42:12.945Z",
-    "route": "/mission/signal",
-    "offline": false,
-    "net": "4g"
-  },
-  {
-    "category": "aar",
-    "action": "aar_export",
-    "data": {
-      "id": "aar-starter",
-      "role": "ops",
-      "title": "Starter AAR"
-    },
-    "source": "ui",
-    "ts": "2026-03-05T12:42:13.026Z",
+    "ts": "2026-03-06T23:31:18.112Z",
     "route": "/mission/signal",
     "offline": false,
     "net": "4g"
@@ -122,20 +93,21 @@
     "category": "offline",
     "action": "offline_exit",
     "source": "system",
-    "ts": "2026-03-05T12:42:14.273Z",
+    "ts": "2026-03-06T23:31:49.390Z",
     "route": "/home/settings",
     "offline": false,
     "net": "4g"
   },
   {
-    "category": "settings",
-    "action": "preload_trigger",
+    "category": "ia",
+    "action": "tab_view",
+    "route": "/mission/debrief",
     "data": {
-      "phase": "start"
+      "kind": "step_view_start",
+      "step": "/mission/debrief"
     },
     "source": "ui",
-    "ts": "2026-03-05T12:42:14.378Z",
-    "route": "/home/settings",
+    "ts": "2026-03-06T23:31:49.410Z",
     "offline": false,
     "net": "4g"
   }

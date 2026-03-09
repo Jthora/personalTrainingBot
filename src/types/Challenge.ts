@@ -10,7 +10,7 @@ export interface ChallengeInstance {
     endsAt: string;
     progress: number;
     target: number;
-    unit: 'minutes' | 'workouts';
+    unit: 'minutes' | 'missions';
     completed: boolean;
     claimed: boolean;
     hidden?: boolean;

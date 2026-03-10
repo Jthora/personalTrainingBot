@@ -11,6 +11,8 @@ import OperativeIdentityCard from '../../components/OperativeIdentityCard/Operat
 import CompetencyChart from '../../components/CompetencyChart/CompetencyChart';
 import BadgeGallery from '../../components/BadgeGallery/BadgeGallery';
 import ChallengeBoard from '../../components/ChallengeBoard/ChallengeBoard';
+import ProfileEditor from '../../components/ProfileEditor/ProfileEditor';
+import { isFeatureEnabled } from '../../config/featureFlags';
 
 const StatsSurface: React.FC = () => {
   const collection = useMissionEntityCollection();
@@ -93,6 +95,9 @@ const StatsSurface: React.FC = () => {
 
       {/* Identity card */}
       <OperativeIdentityCard />
+
+      {/* Profile editor */}
+      {isFeatureEnabled('profileEditor') && <ProfileEditor />}
 
       {/* Competency breakdown */}
       <CompetencyChart snapshot={readiness.competency} />

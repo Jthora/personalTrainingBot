@@ -88,7 +88,7 @@ vi.mock('../../../store/UserProgressStore', () => {
 });
 
 vi.mock('../../../store/OperativeProfileStore', () => ({
-  default: { get: () => null },
+  default: { get: () => null, subscribe: () => () => {}, getVersion: () => 0, patch: () => {} },
 }));
 
 vi.mock('../../../data/archetypes', () => ({
@@ -97,6 +97,10 @@ vi.mock('../../../data/archetypes', () => ({
 
 vi.mock('../../../data/handlers', () => ({
   handlers: [],
+}));
+
+vi.mock('../../../config/featureFlags', () => ({
+  isFeatureEnabled: (flag: string) => flag !== 'profileEditor',
 }));
 
 vi.mock('../../../data/badgeCatalog', () => ({

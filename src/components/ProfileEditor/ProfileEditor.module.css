@@ -1,0 +1,93 @@
+@import '../../styles/theme.css';
+
+.panel {
+  display: grid;
+  gap: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  background: var(--surface-card);
+  padding: 14px;
+}
+
+.heading {
+  margin: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--handler-accent);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--handler-accent);
+  outline-offset: 2px;
+}
+
+.btnIcon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* Picker overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  background: var(--surface-base);
+  overflow-y: auto;
+  padding: 16px;
+  animation: slideUp 0.2s ease-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(24px); opacity: 0.8; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.overlayHeader {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 0 12px;
+}
+
+.closeBtn {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.closeBtn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}

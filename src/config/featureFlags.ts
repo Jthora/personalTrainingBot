@@ -14,7 +14,8 @@ export type FeatureFlagKey =
     | 'missionSurfaceSignal'
     | 'missionSurfaceChecklist'
     | 'missionSurfaceDebrief'
-    | 'archetypeSystem';
+    | 'archetypeSystem'
+    | 'statsSurface';
 
 type GlobalFlagKey = 'globalKillSwitch';
 
@@ -37,6 +38,7 @@ const DEFAULT_FLAGS: FeatureFlagConfig = {
     missionSurfaceChecklist: true,
     missionSurfaceDebrief: true,
     archetypeSystem: false,
+    statsSurface: false,
     globalKillSwitch: false,
 };
 
@@ -56,6 +58,7 @@ const ENV_DEFAULT_FLAGS: Record<AppEnv, Partial<FeatureFlagConfig>> = {
         missionSurfaceChecklist: true,
         missionSurfaceDebrief: true,
         archetypeSystem: true,
+        statsSurface: true,
         globalKillSwitch: false,
     },
     staging: {
@@ -73,6 +76,7 @@ const ENV_DEFAULT_FLAGS: Record<AppEnv, Partial<FeatureFlagConfig>> = {
         missionSurfaceChecklist: true,
         missionSurfaceDebrief: true,
         archetypeSystem: true,
+        statsSurface: true,
         globalKillSwitch: false,
     },
     production: {
@@ -90,6 +94,7 @@ const ENV_DEFAULT_FLAGS: Record<AppEnv, Partial<FeatureFlagConfig>> = {
         missionSurfaceChecklist: true,
         missionSurfaceDebrief: true,
         archetypeSystem: false,
+        statsSurface: false,
         globalKillSwitch: false,
     },
 };
@@ -200,6 +205,8 @@ function isFeatureFlagKey(key: string): key is FeatureFlagKey {
         'missionSurfaceSignal',
         'missionSurfaceChecklist',
         'missionSurfaceDebrief',
+        'archetypeSystem',
+        'statsSurface',
     ].includes(key);
 }
 

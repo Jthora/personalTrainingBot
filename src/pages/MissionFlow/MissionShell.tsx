@@ -23,18 +23,22 @@ import OperativeProfileStore from '../../store/OperativeProfileStore';
 import type { ArchetypeDefinition } from '../../data/archetypes';
 import { getArchetypeHints } from '../../utils/archetypeHints';
 
-const tabs = [
+const coreTabs: Array<{ path: MissionRoutePath; label: string; icon: string }> = [
   { path: '/mission/brief', label: 'Brief', icon: missionEntityIcons.operation },
   { path: '/mission/triage', label: 'Triage', icon: missionEntityIcons.lead },
   { path: '/mission/case', label: 'Case', icon: missionEntityIcons.case },
   { path: '/mission/signal', label: 'Signal', icon: missionEntityIcons.signal },
   { path: '/mission/checklist', label: 'Checklist', icon: missionEntityIcons.artifact },
   { path: '/mission/debrief', label: 'Debrief', icon: missionEntityIcons.debrief },
- ] satisfies Array<{ path: MissionRoutePath; label: string; icon: string }>;
+];
+
+const statsTab: { path: MissionRoutePath; label: string; icon: string } = {
+  path: '/mission/stats', label: 'Stats', icon: '📊',
+};
 
 type GuidanceMode = 'assist' | 'ops';
 
-const assistantHints: Record<MissionRoutePath, { sopPrompt: string; contextHint: string; nextActionHint: string }> = {
+const assistantHints: Partial<Record<MissionRoutePath, { sopPrompt: string; contextHint: string; nextActionHint: string }>> = {
   '/mission/brief': {
     sopPrompt: 'SOP: Confirm objective, constraints, and escalation threshold before moving to Triage.',
     contextHint: 'Use Mission Header and Readiness to anchor priorities before acting.',
@@ -65,6 +69,11 @@ const assistantHints: Record<MissionRoutePath, { sopPrompt: string; contextHint:
     contextHint: 'Ensure unresolved risks are clearly listed for next mission brief.',
     nextActionHint: 'When AAR is complete, start the next mission brief.',
   },
+  '/mission/stats': {
+    sopPrompt: 'SOP: Review operative metrics, competency trends, and progress toward next milestone.',
+    contextHint: 'Use the dashboard to identify weak competency dimensions and prioritize drills.',
+    nextActionHint: 'After reviewing stats, return to Brief to start your next mission cycle.',
+  },
 };
 
 const MissionShell: React.FC = () => {
@@ -87,6 +96,7 @@ const MissionShell: React.FC = () => {
 
   // ── Stage 22: Archetype/Handler intake gates ────────────────────────
   const archetypeEnabled = isFeatureEnabled('archetypeSystem');
+  const statsSurfaceEnabled = isFeatureEnabled('statsSurface');
   const existingProfile = OperativeProfileStore.get();
   const [showArchetypePicker, setShowArchetypePicker] = useState(
       archetypeEnabled && !existingProfile,
@@ -94,11 +104,16 @@ const MissionShell: React.FC = () => {
   const [showHandlerPicker, setShowHandlerPicker] = useState(false);
   const [pendingArchetype, setPendingArchetype] = useState<ArchetypeDefinition | null>(null);
 
+  const tabs = useMemo(
+    () => statsSurfaceEnabled ? [...coreTabs, statsTab] : coreTabs,
+    [statsSurfaceEnabled],
+  );
+
   const activePath = tabs.find((tab) => location.pathname.startsWith(tab.path))?.path ?? '/mission/brief';
   const currentStepIndex = tabs.findIndex((tab) => tab.path === activePath);
   const currentStep = currentStepIndex >= 0 ? tabs[currentStepIndex] : tabs[0];
   const nextStep = currentStepIndex >= 0 && currentStepIndex < tabs.length - 1 ? tabs[currentStepIndex + 1] : null;
-  const currentHints = assistantHints[activePath];
+  const currentHints = assistantHints[activePath] ?? assistantHints['/mission/brief']!;
 
   const missionContext = readMissionFlowContext();
 

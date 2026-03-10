@@ -1,0 +1,118 @@
+@import '../../styles/theme.css';
+
+.card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  background: var(--surface-card);
+  padding: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.empty {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.archetypeIcon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.names {
+  display: grid;
+  gap: 2px;
+}
+
+.callsign {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: var(--text-primary);
+}
+
+.archetype {
+  margin: 0;
+  font-size: 13px;
+  color: var(--handler-accent, #5a7fff);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.description {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.handlerRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.handlerIcon {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.handlerMeta {
+  display: grid;
+  gap: 1px;
+}
+
+.handlerLabel {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+}
+
+.handlerName {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.modules {
+  display: grid;
+  gap: 6px;
+}
+
+.modulesLabel {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+}
+
+.modulesTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.tag {
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(90, 127, 255, 0.12);
+  color: var(--handler-accent, #5a7fff);
+  border: 1px solid rgba(90, 127, 255, 0.2);
+  font-weight: 600;
+  text-transform: capitalize;
+}

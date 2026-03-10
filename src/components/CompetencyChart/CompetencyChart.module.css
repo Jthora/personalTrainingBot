@@ -1,0 +1,92 @@
+@import '../../styles/theme.css';
+
+.chart {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  background: var(--surface-card);
+  padding: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.heading {
+  margin: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+}
+
+.weighted {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.weighted strong {
+  color: var(--text-primary);
+  font-size: 16px;
+}
+
+.bars {
+  display: grid;
+  gap: 8px;
+}
+
+.barRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 36px;
+  align-items: center;
+  gap: 8px;
+}
+
+.barLabel {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.barIcon {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.track {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: var(--handler-accent, #5a7fff);
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+.scoreValue {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: right;
+}
+
+@media (max-width: 480px) {
+  .barRow {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .track {
+    width: 100%;
+  }
+
+  .scoreValue {
+    text-align: left;
+    font-size: 11px;
+  }
+}

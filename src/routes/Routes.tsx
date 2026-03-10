@@ -17,6 +17,7 @@ const CaseSurface = lazy(() => import('../pages/MissionFlow/CaseSurface'));
 const SignalSurface = lazy(() => import('../pages/MissionFlow/SignalSurface'));
 const ChecklistSurface = lazy(() => import('../pages/MissionFlow/ChecklistSurface'));
 const DebriefSurface = lazy(() => import('../pages/MissionFlow/DebriefSurface'));
+const StatsSurface = lazy(() => import('../pages/MissionFlow/StatsSurface'));
 
 /* ── Lazy-loaded auxiliary pages ── */
 const CardSharePage = lazy(() => import('../pages/CardSharePage/CardSharePage'));
@@ -52,6 +53,7 @@ const AppRoutes: React.FC = () => {
         <Route path="signal" element={<Surface><SignalSurface /></Surface>} />
         <Route path="checklist" element={<Surface><ChecklistSurface /></Surface>} />
         <Route path="debrief" element={<Surface><DebriefSurface /></Surface>} />
+        <Route path="stats" element={<Surface><StatsSurface /></Surface>} />
       </Route>
 
       <Route path="/schedules" element={<Navigate to={resolveLegacyAliasPath('/schedules')} replace />} />

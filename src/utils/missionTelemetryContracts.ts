@@ -5,6 +5,7 @@ export const missionRoutePaths = [
   '/mission/signal',
   '/mission/checklist',
   '/mission/debrief',
+  '/mission/stats',
 ] as const;
 
 export type MissionRoutePath = (typeof missionRoutePaths)[number];

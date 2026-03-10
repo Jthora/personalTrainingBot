@@ -1,0 +1,121 @@
+@import '../../styles/theme.css';
+
+.board {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  background: var(--surface-card);
+  padding: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.heading {
+  margin: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+}
+
+.empty {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.list {
+  display: grid;
+  gap: 8px;
+}
+
+.challengeCard {
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.02);
+  display: grid;
+  gap: 6px;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.timeframe {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  padding: 2px 6px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
+
+.description {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.progressBar {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--handler-accent, #5a7fff);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.progressFillComplete {
+  composes: progressFill;
+  background: #22c55e;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.xpReward {
+  font-weight: 600;
+  color: var(--handler-accent, #5a7fff);
+}
+
+.claimButton {
+  background: #22c55e;
+  color: #0a0f1a;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+  justify-self: start;
+}
+
+.claimButton:hover {
+  opacity: 0.9;
+}
+
+.claimed {
+  color: #22c55e;
+  font-weight: 700;
+  font-size: 12px;
+}

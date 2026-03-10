@@ -37,6 +37,10 @@ const statsTab: { path: MissionRoutePath; label: string; icon: string } = {
   path: '/mission/stats', label: 'Stats', icon: '📊',
 };
 
+const planTab: { path: MissionRoutePath; label: string; icon: string } = {
+  path: '/mission/plan', label: 'Plan', icon: '📅',
+};
+
 type GuidanceMode = 'assist' | 'ops';
 
 const assistantHints: Partial<Record<MissionRoutePath, { sopPrompt: string; contextHint: string; nextActionHint: string }>> = {
@@ -75,6 +79,11 @@ const assistantHints: Partial<Record<MissionRoutePath, { sopPrompt: string; cont
     contextHint: 'Use the dashboard to identify weak competency dimensions and prioritize drills.',
     nextActionHint: 'After reviewing stats, return to Brief to start your next mission cycle.',
   },
+  '/mission/plan': {
+    sopPrompt: 'SOP: Review weekly training plan, adjust schedule, and confirm upcoming drills.',
+    contextHint: 'Use the plan view to see your week at a glance and ensure balanced training load.',
+    nextActionHint: 'When your plan is set, head to Checklist to execute today\'s drills.',
+  },
 };
 
 const MissionShell: React.FC = () => {
@@ -98,6 +107,7 @@ const MissionShell: React.FC = () => {
   // ── Stage 22: Archetype/Handler intake gates ────────────────────────
   const archetypeEnabled = isFeatureEnabled('archetypeSystem');
   const statsSurfaceEnabled = isFeatureEnabled('statsSurface');
+  const planSurfaceEnabled = isFeatureEnabled('planSurface');
   const existingProfile = OperativeProfileStore.get();
   const [showArchetypePicker, setShowArchetypePicker] = useState(
       archetypeEnabled && !existingProfile,
@@ -106,8 +116,14 @@ const MissionShell: React.FC = () => {
   const [pendingArchetype, setPendingArchetype] = useState<ArchetypeDefinition | null>(null);
 
   const tabs = useMemo(
-    () => statsSurfaceEnabled ? [...coreTabs, statsTab] : coreTabs,
-    [statsSurfaceEnabled],
+    () => {
+      const extra = [
+        ...(statsSurfaceEnabled ? [statsTab] : []),
+        ...(planSurfaceEnabled ? [planTab] : []),
+      ];
+      return [...coreTabs, ...extra];
+    },
+    [statsSurfaceEnabled, planSurfaceEnabled],
   );
 
   const activePath = tabs.find((tab) => location.pathname.startsWith(tab.path))?.path ?? '/mission/brief';

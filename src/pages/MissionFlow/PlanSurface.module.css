@@ -1,0 +1,217 @@
+.planGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.dayCard {
+  background: var(--surface-secondary, #1e1e2e);
+  border: 1px solid var(--border-muted, #333);
+  border-radius: 0.5rem;
+  padding: 0.75rem 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
+  min-height: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.dayCard:hover {
+  border-color: var(--accent-primary, #5b9bd5);
+}
+
+.dayCardActive {
+  border-color: var(--accent-primary, #5b9bd5);
+  background: var(--surface-accent, #1a2a3e);
+}
+
+.dayCardToday {
+  box-shadow: 0 0 0 2px var(--accent-primary, #5b9bd5);
+}
+
+.dayLabel {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-muted, #aaa);
+  letter-spacing: 0.05em;
+}
+
+.dayDate {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-primary, #eee);
+}
+
+.dayDrillCount {
+  font-size: 0.7rem;
+  color: var(--text-secondary, #bbb);
+  margin-top: auto;
+}
+
+/* ── Detail panel ── */
+
+.detailPanel {
+  background: var(--surface-secondary, #1e1e2e);
+  border: 1px solid var(--border-muted, #333);
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.detailHeading {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary, #eee);
+  margin: 0 0 0.75rem;
+}
+
+.drillList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.drillItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  background: var(--surface-primary, #16161e);
+  border: 1px solid var(--border-subtle, #2a2a3a);
+}
+
+.drillIcon {
+  font-size: 1.1rem;
+}
+
+.drillInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.drillName {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary, #eee);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.drillMeta {
+  font-size: 0.7rem;
+  color: var(--text-muted, #aaa);
+}
+
+.drillDone {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.restBlock {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.75rem;
+  color: var(--text-muted, #aaa);
+  font-style: italic;
+}
+
+.emptyDay {
+  color: var(--text-muted, #aaa);
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+/* ── Weekly summary ── */
+
+.weeklySummary {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
+.summaryChip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--surface-secondary, #1e1e2e);
+  border: 1px solid var(--border-muted, #333);
+  border-radius: 0.5rem;
+  min-width: 5rem;
+}
+
+.summaryLabel {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted, #aaa);
+}
+
+.summaryValue {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary, #eee);
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.actionBtn {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--accent-primary, #5b9bd5);
+  border-radius: 0.375rem;
+  background: transparent;
+  color: var(--accent-primary, #5b9bd5);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.actionBtn:hover {
+  background: var(--surface-accent, #1a2a3e);
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 768px) {
+  .planGrid {
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.25rem;
+  }
+
+  .dayCard {
+    padding: 0.5rem 0.25rem;
+    min-height: 3.5rem;
+  }
+
+  .dayLabel {
+    font-size: 0.6rem;
+  }
+
+  .dayDate {
+    font-size: 0.75rem;
+  }
+
+  .weeklySummary {
+    gap: 0.5rem;
+  }
+}

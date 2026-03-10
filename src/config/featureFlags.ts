@@ -16,7 +16,8 @@ export type FeatureFlagKey =
     | 'missionSurfaceDebrief'
     | 'archetypeSystem'
     | 'statsSurface'
-    | 'profileEditor';
+    | 'profileEditor'
+    | 'drillRunnerUpgrade';
 
 type GlobalFlagKey = 'globalKillSwitch';
 
@@ -41,6 +42,7 @@ const DEFAULT_FLAGS: FeatureFlagConfig = {
     archetypeSystem: false,
     statsSurface: false,
     profileEditor: false,
+    drillRunnerUpgrade: false,
     globalKillSwitch: false,
 };
 
@@ -62,6 +64,7 @@ const ENV_DEFAULT_FLAGS: Record<AppEnv, Partial<FeatureFlagConfig>> = {
         archetypeSystem: true,
         statsSurface: true,
         profileEditor: true,
+        drillRunnerUpgrade: true,
         globalKillSwitch: false,
     },
     staging: {
@@ -81,6 +84,7 @@ const ENV_DEFAULT_FLAGS: Record<AppEnv, Partial<FeatureFlagConfig>> = {
         archetypeSystem: true,
         statsSurface: true,
         profileEditor: true,
+        drillRunnerUpgrade: true,
         globalKillSwitch: false,
     },
     production: {
@@ -100,6 +104,7 @@ const ENV_DEFAULT_FLAGS: Record<AppEnv, Partial<FeatureFlagConfig>> = {
         archetypeSystem: false,
         statsSurface: false,
         profileEditor: false,
+        drillRunnerUpgrade: false,
         globalKillSwitch: false,
     },
 };
@@ -213,6 +218,7 @@ function isFeatureFlagKey(key: string): key is FeatureFlagKey {
         'archetypeSystem',
         'statsSurface',
         'profileEditor',
+        'drillRunnerUpgrade',
     ].includes(key);
 }
 

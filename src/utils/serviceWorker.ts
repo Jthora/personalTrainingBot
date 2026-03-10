@@ -10,10 +10,22 @@ export async function registerServiceWorker() {
       if (!installing) return;
       installing.addEventListener('statechange', () => {
         if (installing.state === 'installed' && navigator.serviceWorker.controller) {
-          // Ask the new worker to activate ASAP
-          installing.postMessage({ type: 'SKIP_WAITING' });
+          // A new SW is waiting. Let useServiceWorkerUpdate detect it
+          // via the 'controllerchange' event or reg.waiting check.
+          // Don't auto-skip — let the user choose when to reload.
+          console.info('[SW] New service worker installed and waiting.');
         }
       });
+    });
+
+    // Listen for controller change to reload cleanly
+    let refreshing = false;
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (refreshing) return;
+      refreshing = true;
+      // The UpdateNotification component will prompt the user to reload.
+      // If this fires after user clicks "Reload", the page will already
+      // be reloading. This handler is a safety net.
     });
   } catch (err) {
     console.warn('Service worker registration failed', err);

@@ -15,6 +15,8 @@ import { registerScheduleRefreshInterval, registerScheduleRefreshOnFocus } from 
 import { logRuntimePayloadSample } from './utils/payloadLogging';
 import ScheduleNavigationRefresh from './components/ScheduleNavigationRefresh/ScheduleNavigationRefresh';
 import NetworkStatusIndicator from './components/NetworkStatusIndicator/NetworkStatusIndicator';
+import InstallBanner from './components/InstallBanner/InstallBanner';
+import UpdateNotification from './components/UpdateNotification/UpdateNotification';
 import { useSettings } from './context/SettingsContext';
 
 const App: React.FC = () => {
@@ -117,6 +119,8 @@ const App: React.FC = () => {
         <Router>
           <CacheIndicator />
           <NetworkStatusIndicator />
+          <InstallBanner />
+          <UpdateNotification />
           <ScheduleNavigationRefresh />
           <AppRoutes />
           <RecapToast />

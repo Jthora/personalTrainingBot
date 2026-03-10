@@ -19,7 +19,8 @@ export type FeatureFlagKey =
     | 'profileEditor'
     | 'drillRunnerUpgrade'
     | 'celebrations'
-    | 'planSurface';
+    | 'planSurface'
+    | 'p2pIdentity';
 
 type GlobalFlagKey = 'globalKillSwitch';
 
@@ -47,6 +48,7 @@ const DEFAULT_FLAGS: FeatureFlagConfig = {
     drillRunnerUpgrade: false,
     celebrations: false,
     planSurface: false,
+    p2pIdentity: false,
     globalKillSwitch: false,
 };
 
@@ -71,6 +73,7 @@ const ENV_DEFAULT_FLAGS: Record<AppEnv, Partial<FeatureFlagConfig>> = {
         drillRunnerUpgrade: true,
         celebrations: true,
         planSurface: true,
+        p2pIdentity: true,
         globalKillSwitch: false,
     },
     staging: {
@@ -93,6 +96,7 @@ const ENV_DEFAULT_FLAGS: Record<AppEnv, Partial<FeatureFlagConfig>> = {
         drillRunnerUpgrade: true,
         celebrations: true,
         planSurface: true,
+        p2pIdentity: true,
         globalKillSwitch: false,
     },
     production: {
@@ -115,6 +119,7 @@ const ENV_DEFAULT_FLAGS: Record<AppEnv, Partial<FeatureFlagConfig>> = {
         drillRunnerUpgrade: false,
         celebrations: false,
         planSurface: false,
+        p2pIdentity: false,
         globalKillSwitch: false,
     },
 };
@@ -231,6 +236,7 @@ function isFeatureFlagKey(key: string): key is FeatureFlagKey {
         'drillRunnerUpgrade',
         'celebrations',
         'planSurface',
+        'p2pIdentity',
     ].includes(key);
 }
 

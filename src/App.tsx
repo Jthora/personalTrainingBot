@@ -18,6 +18,9 @@ import NetworkStatusIndicator from './components/NetworkStatusIndicator/NetworkS
 import InstallBanner from './components/InstallBanner/InstallBanner';
 import UpdateNotification from './components/UpdateNotification/UpdateNotification';
 import { useSettings } from './context/SettingsContext';
+import { isFeatureEnabled } from './config/featureFlags';
+import { startGunProfileBridge, stopGunProfileBridge } from './services/gunProfileBridge';
+import { GunIdentityService } from './services/gunIdentity';
 
 const App: React.FC = () => {
   const [isDataLoaded, setIsDataLoaded] = useState(false);
@@ -96,6 +99,11 @@ const App: React.FC = () => {
   useEffect(() => {
     if (!isDataLoaded) return;
 
+    // Initialize Gun.js P2P identity bridge when flag is on
+    if (isFeatureEnabled('p2pIdentity')) {
+      startGunProfileBridge();
+      GunIdentityService.login(); // auto-login if stored identity exists
+    }
 
     schedulePostPaintTasks();
 
@@ -106,6 +114,7 @@ const App: React.FC = () => {
     return () => {
       unregisterFocus?.();
       unregisterInterval?.();
+      stopGunProfileBridge();
     };
   }, [isDataLoaded]);
 

@@ -5,9 +5,21 @@ export const missionRoutePaths = [
   '/mission/signal',
   '/mission/checklist',
   '/mission/debrief',
+  '/mission/stats',
+  '/mission/plan',
 ] as const;
 
 export type MissionRoutePath = (typeof missionRoutePaths)[number];
+
+/** The 6 core routes that form the canonical mission flow cycle. */
+export const coreMissionRoutePaths = [
+  '/mission/brief',
+  '/mission/triage',
+  '/mission/case',
+  '/mission/signal',
+  '/mission/checklist',
+  '/mission/debrief',
+] as const satisfies readonly MissionRoutePath[];
 
 export const legacyAliasPaths = [
   '/schedules',
@@ -19,7 +31,7 @@ export const legacyAliasPaths = [
 
 export type LegacyAliasPath = (typeof legacyAliasPaths)[number];
 
-const missionHomeFallbacks: Record<MissionRoutePath, string> = {
+const missionHomeFallbacks: Partial<Record<MissionRoutePath, string>> = {
   '/mission/brief': '/home/plan',
   '/mission/triage': '/home/cards',
   '/mission/case': '/home/progress',
@@ -41,7 +53,7 @@ export const getDefaultRootPath = (
 
 export const resolveLegacyAliasPath = (route: LegacyAliasPath): string => legacyAliasMap[route];
 
-export const toHomeFallbackPath = (route: MissionRoutePath): string => missionHomeFallbacks[route];
+export const toHomeFallbackPath = (route: MissionRoutePath): string | undefined => missionHomeFallbacks[route];
 
 export const isMissionRouteEnabled = (
   _route: MissionRoutePath,

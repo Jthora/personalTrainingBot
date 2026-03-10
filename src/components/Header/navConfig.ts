@@ -1,4 +1,5 @@
 import { type MissionRoutePath } from '../../routes/missionCutover';
+import { isFeatureEnabled } from '../../config/featureFlags';
 
 export type HeaderNavItem = {
     path: MissionRoutePath;
@@ -11,7 +12,7 @@ export type HeaderResolvedNavItem = HeaderNavItem & {
     activePaths: string[];
 };
 
-export const headerNavItems: HeaderNavItem[] = [
+const coreNavItems: HeaderNavItem[] = [
     { path: '/mission/brief', label: 'Brief', icon: '🏠' },
     { path: '/mission/triage', label: 'Triage', icon: '🧭' },
     { path: '/mission/case', label: 'Case', icon: '🗂️' },
@@ -20,12 +21,20 @@ export const headerNavItems: HeaderNavItem[] = [
     { path: '/mission/debrief', label: 'Debrief', icon: '📝' },
 ];
 
-export const resolveHeaderNavItems = (): HeaderResolvedNavItem[] => (
-    headerNavItems.map((item) => {
-        return {
-            ...item,
-            navigatePath: item.path,
-            activePaths: [item.path],
-        };
-    })
-);
+const statsNavItem: HeaderNavItem = { path: '/mission/stats', label: 'Stats', icon: '📊' };
+const planNavItem: HeaderNavItem = { path: '/mission/plan', label: 'Plan', icon: '📅' };
+
+export const headerNavItems: HeaderNavItem[] = coreNavItems;
+
+export const resolveHeaderNavItems = (): HeaderResolvedNavItem[] => {
+    const items = [
+        ...coreNavItems,
+        ...(isFeatureEnabled('statsSurface') ? [statsNavItem] : []),
+        ...(isFeatureEnabled('planSurface') ? [planNavItem] : []),
+    ];
+    return items.map((item) => ({
+        ...item,
+        navigatePath: item.path,
+        activePaths: [item.path],
+    }));
+};

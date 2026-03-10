@@ -22,6 +22,7 @@ import { isFeatureEnabled } from '../../config/featureFlags';
 import OperativeProfileStore from '../../store/OperativeProfileStore';
 import type { ArchetypeDefinition } from '../../data/archetypes';
 import { getArchetypeHints } from '../../utils/archetypeHints';
+import CelebrationLayer from '../../components/CelebrationLayer/CelebrationLayer';
 
 const coreTabs: Array<{ path: MissionRoutePath; label: string; icon: string }> = [
   { path: '/mission/brief', label: 'Brief', icon: missionEntityIcons.operation },
@@ -350,6 +351,7 @@ const MissionShell: React.FC = () => {
   return (
     <div className={styles.pageContainer}>
       <Header />
+      {isFeatureEnabled('celebrations') && <CelebrationLayer />}
       <div className={styles.shell}>
         {showGuidanceOverlay && (
           <section className={styles.guidanceOverlay} role="dialog" aria-label="Guided training quick start">

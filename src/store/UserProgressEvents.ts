@@ -1,6 +1,7 @@
 import UserProgressStore from './UserProgressStore';
 import { MissionBlock, MissionSchedule, MissionSet } from '../types/MissionSchedule';
 import { recordMetric } from '../utils/metrics';
+import { detectCelebrations, emitCelebration } from './celebrationEvents';
 
 const XP_REWARDS = {
     drill: 35,
@@ -69,12 +70,22 @@ export const ProgressEventRecorder = {
         const scheduleEmpty = scheduleAfter.scheduleItems.length === 0;
         const scheduleBonus = scheduleEmpty ? XP_REWARDS.scheduleCompleteBonus : 0;
         const totalXp = xp + scheduleBonus;
+        // Snapshot before
+        const before = UserProgressStore.get();
         UserProgressStore.recordActivity({
             xp: totalXp,
             goalDeltaMinutes: minutes,
             completedDrills: 1,
             difficultyLevel: scheduleAfter.difficultySettings.level,
         });
+        // Snapshot after and emit celebrations
+        const after = UserProgressStore.get();
+        const events = detectCelebrations(
+            { xp: before.xp, level: before.level, badges: before.badges },
+            { xp: after.xp, level: after.level, badges: after.badges },
+        );
+        events.forEach(emitCelebration);
+
         const payload = { xp: totalXp, minutes, scheduleEmpty, remaining: scheduleAfter.scheduleItems.length, date: scheduleAfter.date };
         emitOnce('completion', 'completion', payload, () => recordMetric('progress_event_completion', payload));
         return { xp: totalXp, minutes, scheduleEmpty };

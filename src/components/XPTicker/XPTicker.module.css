@@ -1,0 +1,27 @@
+@import '../../styles/theme.css';
+
+.ticker {
+  position: fixed;
+  top: 70px;
+  right: 16px;
+  z-index: 930;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(250, 204, 21, 0.35);
+  background: rgba(250, 204, 21, 0.1);
+  backdrop-filter: blur(8px);
+  font-weight: 700;
+  font-size: 14px;
+  color: #fde68a;
+  animation: pop 0.4s ease-out;
+  pointer-events: none;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.6) translateY(8px); opacity: 0; }
+  60% { transform: scale(1.1) translateY(-2px); }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
+}

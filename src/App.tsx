@@ -20,6 +20,7 @@ import UpdateNotification from './components/UpdateNotification/UpdateNotificati
 import { useSettings } from './context/SettingsContext';
 import { isFeatureEnabled } from './config/featureFlags';
 import { startGunProfileBridge, stopGunProfileBridge } from './services/gunProfileBridge';
+import { startStoreSyncs, stopStoreSyncs } from './services/gunStoreSyncs';
 import { GunIdentityService } from './services/gunIdentity';
 
 const App: React.FC = () => {
@@ -102,6 +103,7 @@ const App: React.FC = () => {
     // Initialize Gun.js P2P identity bridge when flag is on
     if (isFeatureEnabled('p2pIdentity')) {
       startGunProfileBridge();
+      startStoreSyncs();
       GunIdentityService.login(); // auto-login if stored identity exists
     }
 
@@ -115,6 +117,7 @@ const App: React.FC = () => {
       unregisterFocus?.();
       unregisterInterval?.();
       stopGunProfileBridge();
+      stopStoreSyncs();
     };
   }, [isDataLoaded]);
 

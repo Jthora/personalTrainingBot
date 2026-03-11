@@ -87,6 +87,7 @@ export function useGunIdentity(): GunIdentityState & GunIdentityActions {
       await GunIdentityService.importIdentity(exported, passphrase);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Import failed');
+      throw err;
     } finally {
       setLoading(false);
     }

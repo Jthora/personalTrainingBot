@@ -58,4 +58,34 @@ describe('AARStore', () => {
     expect(cb).toHaveBeenCalled();
     unsub();
   });
+
+  it('replaceAll writes all entries atomically with a single notification', () => {
+    const cb = vi.fn();
+    const unsub = AARStore.subscribe(cb);
+    cb.mockClear();
+
+    const now = Date.now();
+    const entries = [
+      { id: 'r1', title: 'Alpha', context: '', actions: '', outcomes: '', lessons: '', followups: '', owner: '', role: 'ops' as const, createdAt: now, updatedAt: now + 2 },
+      { id: 'r2', title: 'Beta',  context: '', actions: '', outcomes: '', lessons: '', followups: '', owner: '', role: 'ops' as const, createdAt: now, updatedAt: now + 1 },
+      { id: 'r3', title: 'Gamma', context: '', actions: '', outcomes: '', lessons: '', followups: '', owner: '', role: 'ops' as const, createdAt: now, updatedAt: now },
+    ];
+
+    AARStore.replaceAll(entries);
+
+    // Exactly one notification
+    expect(cb).toHaveBeenCalledTimes(1);
+
+    // All entries stored
+    const stored = AARStore.list();
+    expect(stored.map((e) => e.id)).toContain('r1');
+    expect(stored.map((e) => e.id)).toContain('r2');
+    expect(stored.map((e) => e.id)).toContain('r3');
+
+    // Sorted newest-first by updatedAt
+    expect(stored[0].id).toBe('r1');
+    expect(stored[1].id).toBe('r2');
+
+    unsub();
+  });
 });

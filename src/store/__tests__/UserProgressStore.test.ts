@@ -39,4 +39,18 @@ describe('UserProgressStore', () => {
         const view = UserProgressStore.getViewModel();
         expect(view.streakStatus).toBe('active');
     });
+
+    it('subscribe fires callback on save', () => {
+        const cb = vi.fn();
+        const unsub = UserProgressStore.subscribe(cb);
+        expect(cb).not.toHaveBeenCalled();
+
+        UserProgressStore.recordActivity({ xp: 10, goalDeltaMinutes: 5 });
+        expect(cb.mock.calls.length).toBeGreaterThan(0);
+
+        const callsBefore = cb.mock.calls.length;
+        unsub();
+        UserProgressStore.recordActivity({ xp: 5, goalDeltaMinutes: 2 });
+        expect(cb.mock.calls.length).toBe(callsBefore);
+    });
 });

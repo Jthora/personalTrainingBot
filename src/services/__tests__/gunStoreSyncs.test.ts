@@ -18,6 +18,7 @@ vi.mock('../../store/UserProgressStore', () => ({
       challenges: [], lastRecap: null, flags: {},
     })),
     save: vi.fn(),
+    subscribe: vi.fn(() => () => {}),
   },
 }));
 
@@ -32,11 +33,14 @@ vi.mock('../../store/AARStore', () => ({
   AARStore: {
     list: vi.fn(() => []),
     save: vi.fn(),
+    replaceAll: vi.fn(),
   },
 }));
 
 import { startStoreSyncs, stopStoreSyncs } from '../gunStoreSyncs';
 import { createGunSyncAdapter } from '../gunSyncAdapter';
+import { AARStore } from '../../store/AARStore';
+import UserProgressStore from '../../store/UserProgressStore';
 
 beforeEach(() => {
   stopStoreSyncs();
@@ -63,6 +67,12 @@ describe('gunStoreSyncs', () => {
   it('stopStoreSyncs does not throw', () => {
     startStoreSyncs();
     expect(() => stopStoreSyncs()).not.toThrow();
+  });
+
+  it('startStoreSyncs is idempotent — calling twice only registers 3 adapters, not 6', () => {
+    startStoreSyncs();
+    startStoreSyncs(); // second call should be a no-op
+    expect(createGunSyncAdapter).toHaveBeenCalledTimes(3);
   });
 
   it('startStoreSyncs is idempotent after stop', () => {
@@ -104,6 +114,29 @@ describe('gunStoreSyncs', () => {
     expect(result).not.toBeNull();
     expect(result!.xp).toBe(500);
     expect(result!.badges).toEqual(['streak_3']);
+  });
+
+  it('aar setLocal uses replaceAll for atomic single-notification write', () => {
+    startStoreSyncs();
+    const calls = (createGunSyncAdapter as ReturnType<typeof vi.fn>).mock.calls;
+    const aarConfig = calls[2][0];
+
+    const mockReplaceAll = vi.mocked(AARStore.replaceAll);
+    const mockSave = vi.mocked(AARStore.save);
+    mockReplaceAll.mockClear();
+    mockSave.mockClear();
+    const now = Date.now();
+    const remoteEntry = { id: 'remote-1', updatedAt: now + 1000, title: 'Remote', context: '', actions: '', outcomes: '', lessons: '', followups: '', owner: '', role: 'ops' as const, createdAt: now };
+
+    aarConfig.setLocal({ entries: [remoteEntry], updatedAt: now + 1000 });
+
+    expect(mockReplaceAll).toHaveBeenCalledTimes(1);
+    expect(mockSave).not.toHaveBeenCalled();
+  });
+
+  it('progress adapter subscribes via UserProgressStore.subscribe', () => {
+    startStoreSyncs();
+    expect(vi.mocked(UserProgressStore.subscribe)).toHaveBeenCalledTimes(1);
   });
 
   it('aar adapter merges entries by updatedAt', () => {

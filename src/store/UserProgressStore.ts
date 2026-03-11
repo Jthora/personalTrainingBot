@@ -62,6 +62,8 @@ const XP_PER_LEVEL = 500;
 
 let inMemoryProgress: UserProgress | null = null;
 
+const progressListeners = new Set<() => void>();
+
 const storageAvailable = () => {
     try {
         const key = '__userProgress:probe__';
@@ -238,6 +240,12 @@ const UserProgressStore = {
             console.warn('UserProgressStore: failed to save; continuing without persistence', error);
             inMemoryProgress = progress;
         }
+        progressListeners.forEach((fn) => fn());
+    },
+
+    subscribe(cb: () => void): () => void {
+        progressListeners.add(cb);
+        return () => { progressListeners.delete(cb); };
     },
 
     reset() {

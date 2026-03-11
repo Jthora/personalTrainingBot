@@ -124,12 +124,15 @@ const aarFromGun = (data: Record<string, any>): AARSyncEnvelope | null => {
 // ─── Factory ────────────────────────────────────────────────────
 
 let handles: GunSyncHandle[] = [];
+let running = false;
 
 /**
  * Start syncing all three stores to the Gun user graph.
  * Call once when p2pIdentity feature is enabled and user is authenticated.
  */
 export const startStoreSyncs = (): void => {
+  if (running) return;
+  running = true;
   // UserProgress sync
   handles.push(createGunSyncAdapter<UserProgress>({
     namespace: 'progress',
@@ -185,8 +188,8 @@ export const startStoreSyncs = (): void => {
         }
       });
 
-      // Write merged entries (using save for each to trigger listeners)
-      merged.forEach((entry) => AARStore.save(entry));
+      // Write merged entries atomically: single write, single notification, preserved order
+      AARStore.replaceAll(merged);
     },
     toGunData: aarToGun,
     fromGunData: aarFromGun,
@@ -194,10 +197,10 @@ export const startStoreSyncs = (): void => {
   }));
 
   // Subscribe to local store changes and push on mutation
-  // UserProgress — listen via polling since it has no subscribe
-  const progressPollId = setInterval(() => {
+  // UserProgress — subscribe to changes for immediate push on save
+  const unsubProgress = UserProgressStore.subscribe(() => {
     handles[0]?.pushNow();
-  }, 5000);
+  });
 
   // DrillRun — subscribe to changes
   const unsubDrill = DrillRunStore.subscribe(() => {
@@ -211,7 +214,7 @@ export const startStoreSyncs = (): void => {
 
   // Store cleanup references
   const cleanupPolls = () => {
-    clearInterval(progressPollId);
+    unsubProgress();
     clearInterval(aarPollId);
     unsubDrill();
   };
@@ -232,4 +235,5 @@ export const startStoreSyncs = (): void => {
 export const stopStoreSyncs = (): void => {
   handles.forEach((h) => h.stop());
   handles = [];
+  running = false;
 };

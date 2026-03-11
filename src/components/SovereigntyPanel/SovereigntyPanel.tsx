@@ -106,6 +106,7 @@ const SovereigntyPanel: React.FC = () => {
   const [importText, setImportText] = useState('');
   const [importPassphrase, setImportPassphrase] = useState('');
   const [importWorking, setImportWorking] = useState(false);
+  const [importError, setImportError] = useState<string | null>(null);
 
   // ── Handlers ──────────────────────────────────────────────────
 
@@ -134,11 +135,14 @@ const SovereigntyPanel: React.FC = () => {
   const handleImport = useCallback(async () => {
     if (!importText.trim()) return;
     setImportWorking(true);
+    setImportError(null);
     try {
       await importIdentity(importText.trim(), importPassphrase || undefined);
       setOverlayMode(null);
       setImportText('');
       setImportPassphrase('');
+    } catch (err) {
+      setImportError(err instanceof Error ? err.message : 'Import failed');
     } finally {
       setImportWorking(false);
     }
@@ -160,6 +164,7 @@ const SovereigntyPanel: React.FC = () => {
     setExportError(null);
     setImportText('');
     setImportPassphrase('');
+    setImportError(null);
   }, []);
 
   // ── Render ────────────────────────────────────────────────────
@@ -421,9 +426,9 @@ const SovereigntyPanel: React.FC = () => {
             data-testid="sovereignty-import-passphrase"
           />
 
-          {error && (
-            <p className={styles.errorText} role="alert">
-              {error}
+          {importError && (
+            <p className={styles.errorText} role="alert" data-testid="sovereignty-import-error">
+              {importError}
             </p>
           )}
 

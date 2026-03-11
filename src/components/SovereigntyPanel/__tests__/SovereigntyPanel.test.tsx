@@ -264,6 +264,26 @@ describe('SovereigntyPanel', () => {
       );
     });
 
+    it('keeps import overlay open and shows error when importIdentity rejects', async () => {
+      mockImportIdentity.mockRejectedValueOnce(new Error('Bad passphrase'));
+      const { act } = await import('@testing-library/react');
+
+      render(<SovereigntyPanel />);
+      fireEvent.click(screen.getByTestId('sovereignty-import-trigger-btn'));
+      fireEvent.change(screen.getByTestId('sovereignty-import-text'), {
+        target: { value: '{"keypair":{"pub":"x"}}' },
+      });
+
+      await act(async () => {
+        fireEvent.click(screen.getByTestId('sovereignty-confirm-import-btn'));
+      });
+
+      // Overlay must remain open
+      expect(screen.getByTestId('sovereignty-import-overlay')).toBeTruthy();
+      // Error message must appear
+      expect(screen.getByTestId('sovereignty-import-error').textContent).toBe('Bad passphrase');
+    });
+
     it('passes passphrase to importIdentity when provided', async () => {
       render(<SovereigntyPanel />);
       fireEvent.click(screen.getByTestId('sovereignty-import-trigger-btn'));

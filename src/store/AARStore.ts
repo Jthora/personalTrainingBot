@@ -111,6 +111,10 @@ export const AARStore = {
     trackEvent({ category: 'aar', action: 'aar_save', data: { id: entry.id, role: entry.role, title: entry.title }, source: 'ui' });
   },
 
+  replaceAll(entries: AAREntry[]): void {
+    setEntries([...entries].sort((a, b) => b.updatedAt - a.updatedAt));
+  },
+
   exportEntry(id: string): string | null {
     const entry = ensureEntries().find((e) => e.id === id);
     if (!entry) return null;

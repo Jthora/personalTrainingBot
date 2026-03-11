@@ -86,6 +86,25 @@ describe('useGunIdentity', () => {
     expect(result.current.error).toBe('SEA not available');
   });
 
+  it('importIdentity rethrows after setting error state', async () => {
+    mockImportIdentity.mockRejectedValue(new Error('Bad passphrase'));
+    const { result } = renderHook(() => useGunIdentity());
+
+    let caughtError: unknown;
+    await act(async () => {
+      try {
+        await result.current.importIdentity('{"keypair":{}}', 'wrong');
+      } catch (e) {
+        caughtError = e;
+      }
+    });
+
+    expect(caughtError).toBeInstanceOf(Error);
+    expect((caughtError as Error).message).toBe('Bad passphrase');
+    expect(result.current.error).toBe('Bad passphrase');
+    expect(result.current.loading).toBe(false);
+  });
+
   it('publicKey is null when no identity', () => {
     const { result } = renderHook(() => useGunIdentity());
     expect(result.current.publicKey).toBeNull();

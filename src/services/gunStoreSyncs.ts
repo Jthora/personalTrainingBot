@@ -137,7 +137,12 @@ export const startStoreSyncs = (): void => {
     setLocal: (data) => UserProgressStore.save(data),
     toGunData: progressToGun,
     fromGunData: progressFromGun,
-    getVersion: (p) => p.xp + p.totalDrillsCompleted + p.streakCount,
+    // Use xp * 10000 + drills * 100 — both only increase, giving a
+    // monotonically non-decreasing version that won't roll back on
+    // streak resets. Streak count is intentionally excluded because it
+    // can decrease, which would cause the pull guard to reject valid
+    // remote updates.
+    getVersion: (p) => p.xp * 10000 + p.totalDrillsCompleted * 100,
   }));
 
   // DrillRun sync (push-only: active drill state is ephemeral,

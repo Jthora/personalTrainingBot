@@ -1,11 +1,11 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { render, screen, fireEvent, act } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import DrillRunner from '../DrillRunner';
 
 /* ── Mocks ── */
 const { mockDrillRunStore } = vi.hoisted(() => ({
   mockDrillRunStore: {
-    get: vi.fn(() => null),
+    get: vi.fn(() => null) as any,
     subscribe: vi.fn((cb: (s: null) => void) => {
       cb(null as any);
       return vi.fn();

@@ -1,5 +1,6 @@
 import type { CardDeckFile } from "../../types/TrainingDataFiles";
-export { loadShard } from '../shardLoader';
+import { loadShard } from '../shardLoader';
+export { loadShard };
 
 export type CardDeckPathLoader = () => Promise<CardDeckFile>;
 export type CardDeckPathMap = Record<string, CardDeckPathLoader>;

@@ -44,7 +44,8 @@ const MOCK_MANIFEST = {
 // ─── Tests ────────────────────────────────────────────────────────────────────
 
 describe('shardLoader', () => {
-  let fetchSpy: ReturnType<typeof vi.spyOn>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  let fetchSpy: any;
 
   beforeEach(() => {
     _resetShardLoader();

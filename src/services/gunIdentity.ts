@@ -111,7 +111,7 @@ export const GunIdentityService = {
     notify(identity);
 
     trackEvent({
-      category: 'ia',
+      category: 'p2p',
       action: 'gun_identity_create',
       data: { pub: keypair.pub },
       source: 'system',
@@ -132,7 +132,7 @@ export const GunIdentityService = {
     notify(identity);
 
     trackEvent({
-      category: 'ia',
+      category: 'p2p',
       action: 'gun_identity_login',
       data: { pub: identity.keypair.pub },
       source: 'system',
@@ -199,7 +199,7 @@ export const GunIdentityService = {
     notify(identity);
 
     trackEvent({
-      category: 'ia',
+      category: 'p2p',
       action: 'gun_identity_import',
       data: { pub: identity.keypair.pub },
       source: 'ui',
@@ -225,7 +225,7 @@ export const GunIdentityService = {
 
     if (identity) {
       trackEvent({
-        category: 'ia',
+        category: 'p2p',
         action: 'gun_identity_logout',
         data: { pub: identity.keypair.pub },
         source: 'ui',

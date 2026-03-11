@@ -48,15 +48,6 @@ export const missionMilestoneTiers: MissionMilestoneTier[] = [
 
 const clamp = (value: number, min: number, max: number) => Math.min(max, Math.max(min, value));
 
-const resolveTier = (score: number): MissionMilestoneTier => {
-  for (let index = missionMilestoneTiers.length - 1; index >= 0; index -= 1) {
-    if (score >= missionMilestoneTiers[index].minScore) {
-      return missionMilestoneTiers[index];
-    }
-  }
-  return missionMilestoneTiers[0];
-};
-
 const resolveProgressPct = (score: number, tier: MissionMilestoneTier, nextTier: MissionMilestoneTier | null): number => {
   if (!nextTier) return 100;
   const span = Math.max(1, nextTier.minScore - tier.minScore);

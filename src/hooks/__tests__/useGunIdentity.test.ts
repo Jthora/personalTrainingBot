@@ -7,7 +7,7 @@ const mockLogout = vi.hoisted(() => vi.fn());
 const mockUpdateAlias = vi.hoisted(() => vi.fn());
 const mockExportIdentity = vi.hoisted(() => vi.fn());
 const mockImportIdentity = vi.hoisted(() => vi.fn());
-const mockGet = vi.hoisted(() => vi.fn(() => null));
+const mockGet = vi.hoisted(() => vi.fn(() => null) as any);
 const mockSubscribe = vi.hoisted(() => vi.fn());
 
 vi.mock('../../services/gunIdentity', () => {

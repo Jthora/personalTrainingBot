@@ -26,6 +26,7 @@ const inferReadinessDelta = (entry: AAREntry): number => {
 
 export const mapAARToDebriefOutcome = (entry: AAREntry): MissionDebriefOutcome => ({
   id: `aar-${entry.id}`,
+  version: 'v1' as const,
   kind: 'debrief_outcome',
   operationId: 'aar-derived',
   summary: entry.title,

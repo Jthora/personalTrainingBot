@@ -1,6 +1,5 @@
 import { describe, expect, it } from 'vitest';
 import { getArchetypeCatalog, findArchetype } from '../archetypes';
-import type { ArchetypeDefinition } from '../archetypes';
 
 /** All module IDs present in training_modules_manifest.json */
 const VALID_MODULE_IDS = new Set([

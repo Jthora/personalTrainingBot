@@ -1,7 +1,7 @@
-import { describe, it, expect, vi, afterEach, beforeEach } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { renderHook, act } from '@testing-library/react';
 import { useCelebrations } from '../useCelebrations';
-import { emitCelebration, CelebrationEvent } from '../../store/celebrationEvents';
+import { emitCelebration } from '../../store/celebrationEvents';
 
 describe('useCelebrations', () => {
   it('starts with null current and 0 pending', () => {
@@ -48,8 +48,7 @@ describe('useCelebrations', () => {
   });
 
   it('unsubscribes on unmount', () => {
-    const { result, unmount } = renderHook(() => useCelebrations());
-
+    const { unmount } = renderHook(() => useCelebrations());
     unmount();
 
     // emitting after unmount should not cause errors

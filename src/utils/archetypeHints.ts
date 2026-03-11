@@ -4,7 +4,6 @@
  * caller can fall back to default hints.
  */
 
-import type { ArchetypeDefinition } from '../data/archetypes';
 
 export type ArchetypeHintSet = {
     contextHint: string;

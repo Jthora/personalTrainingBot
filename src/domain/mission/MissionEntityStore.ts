@@ -3,7 +3,6 @@ import { isFeatureEnabled } from '../../config/featureFlags';
 import { mapTrainingModulesToMissionEntities } from './adapters/legacyTrainingModules';
 import type {
     CaseStatus,
-    MissionArtifact,
     MissionEntityCollection,
     MissionSeverity,
     MissionSignal,

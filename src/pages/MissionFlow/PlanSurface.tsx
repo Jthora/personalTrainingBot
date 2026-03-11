@@ -105,7 +105,6 @@ const PlanSurface: React.FC = () => {
   const customSchedules = useMemo(() => CustomMissionSchedulesStore.getCustomSchedules(), []);
 
   // Progress summary
-  const progress = UserProgressStore.get();
   const vm = UserProgressStore.getViewModel();
 
   // Weekly drill count

@@ -74,7 +74,7 @@ const listenForRemoteProfile = (): Unsubscribe => {
           callsign: data.callsign ?? local.callsign,
         });
         trackEvent({
-          category: 'ia',
+          category: 'p2p',
           action: 'gun_profile_remote_update',
           data: { pub: GunIdentityService.getPublicKey() },
           source: 'system',

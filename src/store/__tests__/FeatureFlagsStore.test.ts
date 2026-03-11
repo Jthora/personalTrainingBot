@@ -18,6 +18,14 @@ const mockConfigFlags = {
     missionSurfaceSignal: false,
     missionSurfaceChecklist: false,
     missionSurfaceDebrief: false,
+    archetypeSystem: false,
+    statsSurface: false,
+    profileEditor: false,
+    drillRunnerUpgrade: false,
+    celebrations: false,
+    planSurface: false,
+    p2pIdentity: false,
+    ipfsContent: false,
 };
 
 vi.mock('../../config/featureFlags', () => ({

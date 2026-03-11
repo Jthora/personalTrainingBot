@@ -46,11 +46,11 @@ export const fetchFromIpfs = async (
 
   try {
     const response = await gatewayAttempt;
-    trackEvent('ipfs_fetch_success', { cid: cid.slice(0, 12) });
+    trackEvent({ category: 'p2p', action: 'ipfs_fetch_success', data: { cid: cid.slice(0, 12) } });
     return response;
   } catch (err) {
     console.warn('[IPFS] All gateways failed, falling back to HTTP', err);
-    trackEvent('ipfs_fetch_fallback', { cid: cid.slice(0, 12) });
+    trackEvent({ category: 'p2p', action: 'ipfs_fetch_fallback', data: { cid: cid.slice(0, 12) } });
     return fetchWithValidation(fallbackUrl, 'http-fallback');
   }
 };

@@ -1,6 +1,15 @@
 import { TelemetryEvent as SchemaTelemetryEvent } from './telemetrySchema';
 
 export type IaAction = 'tab_view' | 'deep_link_load' | 'nav_error';
+export type P2PAction =
+  | 'gun_identity_create'
+  | 'gun_identity_login'
+  | 'gun_identity_import'
+  | 'gun_identity_logout'
+  | 'gun_profile_remote_update'
+  | `gun_sync_pull_${string}`
+  | 'ipfs_fetch_success'
+  | 'ipfs_fetch_fallback';
 export type ReadinessAction = 'score_render' | 'score_source' | 'next_action_click';
 export type OfflineAction =
   | 'offline_enter'
@@ -17,6 +26,7 @@ export type SettingsAction = 'toggle_low_data' | 'toggle_mute' | 'preload_trigge
 
 export type AppTelemetryEvent =
   | { category: 'ia'; action: IaAction; route?: string; label?: string; value?: string | number; data?: Record<string, unknown>; source?: 'ui' | 'system' | 'sw'; ts?: string }
+  | { category: 'p2p'; action: P2PAction; route?: string; label?: string; value?: string | number; data?: Record<string, unknown>; source?: 'ui' | 'system'; ts?: string }
   | { category: 'readiness'; action: ReadinessAction; route?: string; label?: string; value?: string | number; data?: Record<string, unknown>; source?: 'ui' | 'system'; ts?: string }
   | { category: 'offline'; action: OfflineAction; route?: string; label?: string; value?: string | number; data?: Record<string, unknown>; source?: 'ui' | 'system' | 'sw'; ts?: string }
   | { category: 'drills'; action: DrillsAction; route?: string; label?: string; value?: string | number; data?: Record<string, unknown>; source?: 'ui' | 'system'; ts?: string }

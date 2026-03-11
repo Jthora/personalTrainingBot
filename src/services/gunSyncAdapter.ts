@@ -129,7 +129,7 @@ export const createGunSyncAdapter = <T>(config: GunSyncAdapterConfig<T>): GunSyn
           markSynced(namespace);
 
           trackEvent({
-            category: 'ia',
+            category: 'p2p',
             action: `gun_sync_pull_${namespace}`,
             data: { remoteVersion, localVersion },
             source: 'system',

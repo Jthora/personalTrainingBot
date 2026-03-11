@@ -40,8 +40,9 @@ export type MetricEvent =
     | 'challenge_claimed'
     | 'copy_variant_served'
     | 'copy_variant_impression'
-    | 'copy_variant_interaction';
-
+  | 'copy_variant_interaction'
+  | 'drill_completed'
+  | 'drill_skipped';
 interface MetricPayload {
     name: MetricEvent;
     data?: Record<string, unknown>;

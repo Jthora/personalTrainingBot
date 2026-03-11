@@ -119,7 +119,7 @@ describe('SovereigntyPanel', () => {
     });
 
     it('falls back to "Operative" when no callsign in profile', () => {
-      mockProfileStore.get.mockReturnValueOnce(null);
+      mockProfileStore.get.mockReturnValueOnce({ callsign: '', archetypeId: 'guardian', handlerId: 'h1', enrolledAt: '' });
       render(<SovereigntyPanel />);
       fireEvent.click(screen.getByTestId('sovereignty-generate-keypair-btn'));
       expect(mockCreate).toHaveBeenCalledWith('Operative');

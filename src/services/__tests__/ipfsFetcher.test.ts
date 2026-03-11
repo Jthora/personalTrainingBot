@@ -29,7 +29,8 @@ const makeErrorResponse = (status: number) =>
 // ─── Tests ───────────────────────────────────────────────────────────────────
 
 describe('ipfsFetcher', () => {
-  let fetchSpy: ReturnType<typeof vi.spyOn>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  let fetchSpy: any;
 
   beforeEach(() => {
     fetchSpy = vi.spyOn(globalThis, 'fetch');
@@ -59,7 +60,7 @@ describe('ipfsFetcher', () => {
   describe('raceGateways', () => {
     it('resolves with the first successful gateway', async () => {
       // First gateway succeeds, others may hang
-      fetchSpy.mockImplementation((url) => {
+      fetchSpy.mockImplementation((url: string | URL) => {
         if ((url as string).includes(IPFS_GATEWAYS[0])) {
           return Promise.resolve(makeOkResponse('data'));
         }
@@ -91,7 +92,7 @@ describe('ipfsFetcher', () => {
 
     it('tries IPFS gateways when flag is on', async () => {
       mockIsFeatureEnabled.mockReturnValue(true);
-      fetchSpy.mockImplementation((url) => {
+      fetchSpy.mockImplementation((url: string | URL) => {
         if ((url as string).includes(IPFS_GATEWAYS[0])) {
           return Promise.resolve(makeOkResponse('ipfs-data'));
         }
@@ -100,12 +101,14 @@ describe('ipfsFetcher', () => {
 
       const res = await fetchFromIpfs('QmTestCID', 'https://example.com/shard.json');
       expect(res.ok).toBe(true);
-      expect(mockTrackEvent).toHaveBeenCalledWith('ipfs_fetch_success', expect.any(Object));
+      expect(mockTrackEvent).toHaveBeenCalledWith(
+        expect.objectContaining({ category: 'p2p', action: 'ipfs_fetch_success' }),
+      );
     });
 
     it('falls back to HTTP when all IPFS gateways fail', async () => {
       mockIsFeatureEnabled.mockReturnValue(true);
-      fetchSpy.mockImplementation((url) => {
+      fetchSpy.mockImplementation((url: string | URL) => {
         const urlStr = url as string;
         if (urlStr.includes('example.com')) {
           return Promise.resolve(makeOkResponse('fallback'));
@@ -116,7 +119,9 @@ describe('ipfsFetcher', () => {
 
       const res = await fetchFromIpfs('QmBadCID', 'https://example.com/shard.json');
       expect(res.ok).toBe(true);
-      expect(mockTrackEvent).toHaveBeenCalledWith('ipfs_fetch_fallback', expect.any(Object));
+      expect(mockTrackEvent).toHaveBeenCalledWith(
+        expect.objectContaining({ category: 'p2p', action: 'ipfs_fetch_fallback' }),
+      );
     });
   });
 });

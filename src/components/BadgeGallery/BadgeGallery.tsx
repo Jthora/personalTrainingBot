@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import styles from './BadgeGallery.module.css';
 import UserProgressStore from '../../store/UserProgressStore';
-import { getBadgeCatalog, type BadgeDefinition } from '../../data/badgeCatalog';
+import { getBadgeCatalog } from '../../data/badgeCatalog';
 
 export interface BadgeGalleryProps {
   /** Earned badge IDs. Falls back to UserProgressStore. */

@@ -25,6 +25,13 @@ const QRCodeScanner: React.FC<QRCodeScannerProps> = ({ onScan, onError }) => {
   const streamRef = useRef<MediaStream | null>(null);
   const doneRef   = useRef(false);
 
+  // Stable refs so the RAF loop always calls the latest callbacks
+  // without needing to restart the camera stream.
+  const onScanRef  = useRef(onScan);
+  const onErrorRef = useRef(onError);
+  onScanRef.current  = onScan;
+  onErrorRef.current = onError;
+
   const [cameraError, setCameraError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -63,7 +70,7 @@ const QRCodeScanner: React.FC<QRCodeScannerProps> = ({ onScan, onError }) => {
       if (code) {
         doneRef.current = true;
         stop();
-        onScan(code.data);
+        onScanRef.current(code.data);
         return;
       }
 
@@ -87,7 +94,7 @@ const QRCodeScanner: React.FC<QRCodeScannerProps> = ({ onScan, onError }) => {
             ? (err.name === 'NotAllowedError' ? 'Camera access denied' : err.message)
             : 'Camera unavailable';
         setCameraError(msg);
-        onError?.(msg);
+        onErrorRef.current?.(msg);
       });
 
     return stop;

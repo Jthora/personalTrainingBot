@@ -6,6 +6,8 @@ export type P2PAction =
   | 'gun_identity_login'
   | 'gun_identity_import'
   | 'gun_identity_logout'
+  | 'gun_qr_export_generate'
+  | 'gun_qr_scan_import'
   | 'gun_profile_remote_update'
   | `gun_sync_pull_${string}`
   | 'ipfs_fetch_success'

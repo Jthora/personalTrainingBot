@@ -23,6 +23,7 @@ export default defineConfig({
         manualChunks(id) {
           if (id.includes('node_modules')) {
             if (id.includes('react')) return 'react-vendor'
+            if (/qrcode|jsqr/.test(id)) return 'qr-vendor'
             return 'vendor'
           }
 

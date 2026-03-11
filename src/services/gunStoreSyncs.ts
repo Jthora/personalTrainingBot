@@ -237,3 +237,13 @@ export const stopStoreSyncs = (): void => {
   handles = [];
   running = false;
 };
+
+/**
+ * Restart store syncs — e.g. after a keypair import changes the Gun user.
+ * Tears down existing adapters and spins up fresh ones pointing at the
+ * newly-authenticated user graph.
+ */
+export const restartStoreSyncs = (): void => {
+  stopStoreSyncs();
+  startStoreSyncs();
+};

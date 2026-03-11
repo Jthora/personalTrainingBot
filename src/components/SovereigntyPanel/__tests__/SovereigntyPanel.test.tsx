@@ -83,6 +83,16 @@ vi.mock('../../QRCodeScanner/QRCodeScanner', () => ({
   },
 }));
 
+const mockRestartStoreSyncs = vi.hoisted(() => vi.fn());
+vi.mock('../../../services/gunStoreSyncs', () => ({
+  restartStoreSyncs: mockRestartStoreSyncs,
+}));
+
+const mockTrackEvent = vi.hoisted(() => vi.fn());
+vi.mock('../../../utils/telemetry', () => ({
+  trackEvent: mockTrackEvent,
+}));
+
 // ─── Fixtures ─────────────────────────────────────────────────────────────────
 
 const MOCK_IDENTITY: GunIdentity = {
@@ -401,7 +411,9 @@ describe('SovereigntyPanel', () => {
         fireEvent.click(screen.getByTestId('sovereignty-generate-qr-btn'));
       });
 
-      expect(screen.getByTestId('qr-code-display-mock')).toBeTruthy();
+      await waitFor(() => {
+        expect(screen.getByTestId('qr-code-display-mock')).toBeTruthy();
+      });
       expect(screen.getByTestId('qr-code-display-mock').getAttribute('data-value')).toBe('{"keypair":{"pub":"abc"}}');
     });
 
@@ -415,7 +427,9 @@ describe('SovereigntyPanel', () => {
         fireEvent.click(screen.getByTestId('sovereignty-generate-qr-btn'));
       });
 
-      expect(screen.getByTestId('qr-code-display-mock')).toBeTruthy();
+      await waitFor(() => {
+        expect(screen.getByTestId('qr-code-display-mock')).toBeTruthy();
+      });
       fireEvent.click(screen.getByTestId('sovereignty-regenerate-qr-btn'));
       expect(screen.queryByTestId('qr-code-display-mock')).toBeNull();
       expect(screen.getByTestId('sovereignty-generate-qr-btn')).toBeTruthy();
@@ -466,35 +480,54 @@ describe('SovereigntyPanel', () => {
       expect(screen.getByTestId('sovereignty-import-text')).toBeTruthy();
     });
 
-    it('switching to scan tab shows the QRCodeScanner', () => {
+    it('switching to scan tab shows the QRCodeScanner and passphrase input', async () => {
       render(<SovereigntyPanel />);
       fireEvent.click(screen.getByTestId('sovereignty-import-trigger-btn'));
       fireEvent.click(screen.getByTestId('sovereignty-import-tab-scan'));
-      expect(screen.getByTestId('qr-code-scanner-mock')).toBeTruthy();
+      await waitFor(() => {
+        expect(screen.getByTestId('qr-code-scanner-mock')).toBeTruthy();
+      });
+      expect(screen.getByTestId('sovereignty-scan-passphrase')).toBeTruthy();
       expect(screen.queryByTestId('sovereignty-import-text')).toBeNull();
     });
 
-    it('successful QR scan calls importIdentity and closes overlay', async () => {
+    it('successful QR scan of plain envelope calls importIdentity and closes overlay', async () => {
       mockImportIdentity.mockResolvedValueOnce(undefined);
       render(<SovereigntyPanel />);
       fireEvent.click(screen.getByTestId('sovereignty-import-trigger-btn'));
       fireEvent.click(screen.getByTestId('sovereignty-import-tab-scan'));
+      await waitFor(() => expect(capturedScanProps.onScan).not.toBeNull());
 
+      const envelope = '{"encrypted":false,"data":{"keypair":{"pub":"abc"},"alias":"Ops","createdAt":""}}';
       await act(async () => {
-        capturedScanProps.onScan?.('{"keypair":{"pub":"abc"},"alias":"Ops","createdAt":""}');
+        capturedScanProps.onScan?.(envelope);
       });
 
-      expect(mockImportIdentity).toHaveBeenCalledWith(
-        '{"keypair":{"pub":"abc"},"alias":"Ops","createdAt":""}',
-        undefined,
-      );
+      expect(mockImportIdentity).toHaveBeenCalledWith(envelope, undefined);
+      expect(mockRestartStoreSyncs).toHaveBeenCalledTimes(1);
       expect(screen.queryByTestId('sovereignty-import-overlay')).toBeNull();
+    });
+
+    it('successful QR scan of encrypted envelope calls importIdentity', async () => {
+      mockImportIdentity.mockResolvedValueOnce(undefined);
+      render(<SovereigntyPanel />);
+      fireEvent.click(screen.getByTestId('sovereignty-import-trigger-btn'));
+      fireEvent.click(screen.getByTestId('sovereignty-import-tab-scan'));
+      await waitFor(() => expect(capturedScanProps.onScan).not.toBeNull());
+
+      const envelope = '{"encrypted":true,"data":"SEA{...}"}';
+      await act(async () => {
+        capturedScanProps.onScan?.(envelope);
+      });
+
+      expect(mockImportIdentity).toHaveBeenCalledWith(envelope, undefined);
     });
 
     it('QR scan with invalid JSON shows error and keeps overlay open', async () => {
       render(<SovereigntyPanel />);
       fireEvent.click(screen.getByTestId('sovereignty-import-trigger-btn'));
       fireEvent.click(screen.getByTestId('sovereignty-import-tab-scan'));
+      await waitFor(() => expect(capturedScanProps.onScan).not.toBeNull());
 
       await act(async () => {
         capturedScanProps.onScan?.('not-valid-json');
@@ -502,22 +535,23 @@ describe('SovereigntyPanel', () => {
 
       expect(screen.getByTestId('sovereignty-import-overlay')).toBeTruthy();
       expect(screen.getByTestId('sovereignty-import-error').textContent).toBe(
-        'QR code not recognized as a keypair',
+        'QR code not recognized as a keypair export',
       );
       expect(mockImportIdentity).not.toHaveBeenCalled();
     });
 
-    it('QR scan of valid JSON missing keypair.pub shows error', async () => {
+    it('QR scan of valid JSON without envelope structure shows error', async () => {
       render(<SovereigntyPanel />);
       fireEvent.click(screen.getByTestId('sovereignty-import-trigger-btn'));
       fireEvent.click(screen.getByTestId('sovereignty-import-tab-scan'));
+      await waitFor(() => expect(capturedScanProps.onScan).not.toBeNull());
 
       await act(async () => {
         capturedScanProps.onScan?.('{"alias":"Ghost"}');
       });
 
       expect(screen.getByTestId('sovereignty-import-error').textContent).toBe(
-        'QR code not recognized as a keypair',
+        'QR code not recognized as a keypair export',
       );
     });
 
@@ -526,15 +560,17 @@ describe('SovereigntyPanel', () => {
       render(<SovereigntyPanel />);
       fireEvent.click(screen.getByTestId('sovereignty-import-trigger-btn'));
       fireEvent.click(screen.getByTestId('sovereignty-import-tab-scan'));
+      await waitFor(() => expect(capturedScanProps.onScan).not.toBeNull());
 
+      const envelope = '{"encrypted":false,"data":{"keypair":{"pub":"abc"}}}';
       await act(async () => {
-        capturedScanProps.onScan?.('{"keypair":{"pub":"abc"}}');
+        capturedScanProps.onScan?.(envelope);
       });
 
       // Overlay stays open, paste tab shown with JSON pre-filled
       expect(screen.getByTestId('sovereignty-import-overlay')).toBeTruthy();
       expect(screen.getByTestId('sovereignty-import-tab-paste').getAttribute('aria-selected')).toBe('true');
-      expect((screen.getByTestId('sovereignty-import-text') as HTMLTextAreaElement).value).toBe('{"keypair":{"pub":"abc"}}');
+      expect((screen.getByTestId('sovereignty-import-text') as HTMLTextAreaElement).value).toBe(envelope);
       expect(screen.getByTestId('sovereignty-import-error').textContent).toBe('Wrong passphrase');
     });
 
@@ -542,6 +578,7 @@ describe('SovereigntyPanel', () => {
       render(<SovereigntyPanel />);
       fireEvent.click(screen.getByTestId('sovereignty-import-trigger-btn'));
       fireEvent.click(screen.getByTestId('sovereignty-import-tab-scan'));
+      await waitFor(() => expect(capturedScanProps.onError).toBeDefined());
 
       await act(async () => {
         capturedScanProps.onError?.('Camera access denied');
@@ -550,6 +587,143 @@ describe('SovereigntyPanel', () => {
       await waitFor(() => {
         expect(screen.getByTestId('sovereignty-import-error').textContent).toBe('Camera access denied');
       });
+    });
+
+    it('scan tab passphrase is passed to importIdentity on QR scan', async () => {
+      mockImportIdentity.mockResolvedValueOnce(undefined);
+      render(<SovereigntyPanel />);
+      fireEvent.click(screen.getByTestId('sovereignty-import-trigger-btn'));
+      fireEvent.click(screen.getByTestId('sovereignty-import-tab-scan'));
+      await waitFor(() => expect(capturedScanProps.onScan).not.toBeNull());
+
+      fireEvent.change(screen.getByTestId('sovereignty-scan-passphrase'), {
+        target: { value: 'my-secret' },
+      });
+
+      const envelope = '{"encrypted":true,"data":"SEA{cipher}"}';
+      await act(async () => {
+        // Re-capture after state update
+        capturedScanProps.onScan?.(envelope);
+      });
+
+      expect(mockImportIdentity).toHaveBeenCalledWith(envelope, 'my-secret');
+    });
+  });
+
+  describe('QR size preflight', () => {
+    beforeEach(() => {
+      mockIdentityState.identity = MOCK_IDENTITY;
+      mockIdentityState.publicKey = MOCK_IDENTITY.keypair.pub;
+    });
+
+    it('shows error when exported JSON exceeds QR byte limit', async () => {
+      // Generate a string larger than 1273 bytes
+      const oversized = JSON.stringify({ encrypted: true, data: 'x'.repeat(1400) });
+      mockExportIdentity.mockResolvedValueOnce(oversized);
+      render(<SovereigntyPanel />);
+      fireEvent.click(screen.getByTestId('sovereignty-export-btn'));
+      fireEvent.click(screen.getByTestId('sovereignty-export-tab-qr'));
+
+      await act(async () => {
+        fireEvent.click(screen.getByTestId('sovereignty-generate-qr-btn'));
+      });
+
+      // QR code display should NOT be shown
+      expect(screen.queryByTestId('qr-code-display-mock')).toBeNull();
+      // Error text should mention the byte limit
+      expect(screen.getByRole('alert').textContent).toMatch(/exceeds QR capacity/);
+    });
+
+    it('generates QR code when exported JSON is within limit', async () => {
+      const small = JSON.stringify({ encrypted: false, data: { keypair: { pub: 'abc' } } });
+      mockExportIdentity.mockResolvedValueOnce(small);
+      render(<SovereigntyPanel />);
+      fireEvent.click(screen.getByTestId('sovereignty-export-btn'));
+      fireEvent.click(screen.getByTestId('sovereignty-export-tab-qr'));
+
+      await act(async () => {
+        fireEvent.click(screen.getByTestId('sovereignty-generate-qr-btn'));
+      });
+
+      await waitFor(() => {
+        expect(screen.getByTestId('qr-code-display-mock')).toBeTruthy();
+      });
+    });
+  });
+
+  describe('sync restart after import', () => {
+    beforeEach(() => {
+      mockIdentityState.identity = MOCK_IDENTITY;
+      mockIdentityState.publicKey = MOCK_IDENTITY.keypair.pub;
+    });
+
+    it('restarts store syncs after successful paste import', async () => {
+      mockImportIdentity.mockResolvedValueOnce(undefined);
+      render(<SovereigntyPanel />);
+      fireEvent.click(screen.getByTestId('sovereignty-import-trigger-btn'));
+      fireEvent.change(screen.getByTestId('sovereignty-import-text'), {
+        target: { value: '{"encrypted":false,"data":{"keypair":{"pub":"x"}}}' },
+      });
+
+      await act(async () => {
+        fireEvent.click(screen.getByTestId('sovereignty-confirm-import-btn'));
+      });
+
+      expect(mockRestartStoreSyncs).toHaveBeenCalledTimes(1);
+    });
+
+    it('does not restart syncs when paste import fails', async () => {
+      mockImportIdentity.mockRejectedValueOnce(new Error('fail'));
+      render(<SovereigntyPanel />);
+      fireEvent.click(screen.getByTestId('sovereignty-import-trigger-btn'));
+      fireEvent.change(screen.getByTestId('sovereignty-import-text'), {
+        target: { value: '{"keypair":{"pub":"x"}}' },
+      });
+
+      await act(async () => {
+        fireEvent.click(screen.getByTestId('sovereignty-confirm-import-btn'));
+      });
+
+      expect(mockRestartStoreSyncs).not.toHaveBeenCalled();
+    });
+  });
+
+  describe('telemetry', () => {
+    beforeEach(() => {
+      mockIdentityState.identity = MOCK_IDENTITY;
+      mockIdentityState.publicKey = MOCK_IDENTITY.keypair.pub;
+    });
+
+    it('fires gun_qr_export_generate on successful QR generation', async () => {
+      const small = JSON.stringify({ encrypted: false, data: { keypair: { pub: 'abc' } } });
+      mockExportIdentity.mockResolvedValueOnce(small);
+      render(<SovereigntyPanel />);
+      fireEvent.click(screen.getByTestId('sovereignty-export-btn'));
+      fireEvent.click(screen.getByTestId('sovereignty-export-tab-qr'));
+
+      await act(async () => {
+        fireEvent.click(screen.getByTestId('sovereignty-generate-qr-btn'));
+      });
+
+      expect(mockTrackEvent).toHaveBeenCalledWith(
+        expect.objectContaining({ category: 'p2p', action: 'gun_qr_export_generate' }),
+      );
+    });
+
+    it('fires gun_qr_scan_import on successful QR scan import', async () => {
+      mockImportIdentity.mockResolvedValueOnce(undefined);
+      render(<SovereigntyPanel />);
+      fireEvent.click(screen.getByTestId('sovereignty-import-trigger-btn'));
+      fireEvent.click(screen.getByTestId('sovereignty-import-tab-scan'));
+      await waitFor(() => expect(capturedScanProps.onScan).not.toBeNull());
+
+      await act(async () => {
+        capturedScanProps.onScan?.('{"encrypted":false,"data":{"keypair":{"pub":"abc"}}}');
+      });
+
+      expect(mockTrackEvent).toHaveBeenCalledWith(
+        expect.objectContaining({ category: 'p2p', action: 'gun_qr_scan_import' }),
+      );
     });
   });
 });

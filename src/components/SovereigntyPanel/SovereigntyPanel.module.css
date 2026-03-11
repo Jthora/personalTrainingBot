@@ -394,3 +394,57 @@
 .closeBtn:hover {
   background: rgba(255, 255, 255, 0.08);
 }
+
+/* ── Tab switcher ───────────────────────────────────────────────────────────── */
+.tabRow {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 4px;
+}
+
+.tab {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px 14px;
+  border-radius: 7px 7px 0 0;
+  border: 1px solid transparent;
+  border-bottom: none;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: color 0.15s, background 0.15s;
+}
+
+.tab:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.tabActive {
+  composes: tab;
+  background: rgba(90, 127, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: var(--handler-glow);
+}
+
+/* ── QR display wrapper ─────────────────────────────────────────────────────── */
+.qrWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 8px 0;
+}
+
+/* ── Scan block ─────────────────────────────────────────────────────────────── */
+.scanBlock {
+  display: grid;
+  gap: 10px;
+}
+
+.scanStatus {
+  margin: 0;
+  font-size: 12px;
+  color: var(--text-secondary);
+  text-align: center;
+}
+

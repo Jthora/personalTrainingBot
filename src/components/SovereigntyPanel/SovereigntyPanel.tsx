@@ -23,6 +23,8 @@ import { useGunIdentity } from '../../hooks/useGunIdentity';
 import { useSyncStatus } from '../../hooks/useSyncStatus';
 import OperativeProfileStore from '../../store/OperativeProfileStore';
 import type { SyncStatus } from '../../services/syncStatusStore';
+import QRCodeDisplay from '../QRCodeDisplay/QRCodeDisplay';
+import QRCodeScanner from '../QRCodeScanner/QRCodeScanner';
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 
@@ -101,12 +103,16 @@ const SovereigntyPanel: React.FC = () => {
   const [exportPassphrase, setExportPassphrase] = useState('');
   const [exportError, setExportError] = useState<string | null>(null);
   const [exportWorking, setExportWorking] = useState(false);
+  const [exportTab, setExportTab] = useState<'download' | 'qr'>('download');
+  const [qrJson, setQrJson] = useState<string | null>(null);
+  const [qrWorking, setQrWorking] = useState(false);
 
   // Import overlay state
   const [importText, setImportText] = useState('');
   const [importPassphrase, setImportPassphrase] = useState('');
   const [importWorking, setImportWorking] = useState(false);
   const [importError, setImportError] = useState<string | null>(null);
+  const [importTab, setImportTab] = useState<'paste' | 'scan'>('paste');
 
   // ── Handlers ──────────────────────────────────────────────────
 
@@ -148,6 +154,47 @@ const SovereigntyPanel: React.FC = () => {
     }
   }, [importIdentity, importText, importPassphrase]);
 
+  const handleGenerateQr = useCallback(async () => {
+    setExportError(null);
+    setQrWorking(true);
+    try {
+      const json = await exportIdentity(exportPassphrase || undefined);
+      setQrJson(json);
+    } catch (err) {
+      setExportError(err instanceof Error ? err.message : 'Export failed');
+    } finally {
+      setQrWorking(false);
+    }
+  }, [exportIdentity, exportPassphrase]);
+
+  const handleQrScan = useCallback(async (decoded: string) => {
+    setImportError(null);
+    try {
+      const parsed = JSON.parse(decoded);
+      if (!parsed?.keypair?.pub) {
+        setImportError('QR code not recognized as a keypair');
+        return;
+      }
+    } catch {
+      setImportError('QR code not recognized as a keypair');
+      return;
+    }
+    setImportWorking(true);
+    try {
+      await importIdentity(decoded, importPassphrase || undefined);
+      setOverlayMode(null);
+      setImportText('');
+      setImportPassphrase('');
+    } catch (err) {
+      setImportError(err instanceof Error ? err.message : 'Import failed');
+      // Switch back to paste tab so user can see/edit the JSON
+      setImportTab('paste');
+      setImportText(decoded);
+    } finally {
+      setImportWorking(false);
+    }
+  }, [importIdentity, importPassphrase]);
+
   const handleRemove = useCallback(() => {
     if (window.confirm(
       'Remove operative keypair from this device?\n\n' +
@@ -162,9 +209,12 @@ const SovereigntyPanel: React.FC = () => {
     setOverlayMode(null);
     setExportPassphrase('');
     setExportError(null);
+    setExportTab('download');
+    setQrJson(null);
     setImportText('');
     setImportPassphrase('');
     setImportError(null);
+    setImportTab('paste');
   }, []);
 
   // ── Render ────────────────────────────────────────────────────
@@ -328,45 +378,139 @@ const SovereigntyPanel: React.FC = () => {
             </button>
           </div>
 
-          <p className={styles.overlayDesc}>
-            Your keypair will be exported as a JSON file. Store it somewhere safe —
-            this is how you restore your identity on another device.
-          </p>
-          <p className={styles.overlayDesc}>
-            An optional passphrase encrypts the private key inside the export.
-            Leave blank to export in plaintext (only do this on trusted hardware).
-          </p>
-
-          <label className={styles.fieldLabel} htmlFor="export-passphrase">
-            Passphrase (optional)
-          </label>
-          <input
-            id="export-passphrase"
-            type="password"
-            className={styles.textInput}
-            placeholder="Leave blank for unencrypted export"
-            value={exportPassphrase}
-            onChange={(e) => setExportPassphrase(e.target.value)}
-            data-testid="sovereignty-passphrase-input"
-          />
-
-          {exportError && (
-            <p className={styles.errorText} role="alert">
-              {exportError}
-            </p>
-          )}
-
-          <div className={styles.overlayActions}>
+          {/* Tab row */}
+          <div className={styles.tabRow} role="tablist">
             <button
               type="button"
-              className={styles.primaryBtn}
-              onClick={handleExport}
-              disabled={exportWorking}
-              data-testid="sovereignty-download-btn"
+              role="tab"
+              aria-selected={exportTab === 'download'}
+              className={exportTab === 'download' ? styles.tabActive : styles.tab}
+              onClick={() => setExportTab('download')}
+              data-testid="sovereignty-export-tab-download"
             >
-              {exportWorking ? 'Exporting…' : '↓ Download keypair.json'}
+              ↓ Download
+            </button>
+            <button
+              type="button"
+              role="tab"
+              aria-selected={exportTab === 'qr'}
+              className={exportTab === 'qr' ? styles.tabActive : styles.tab}
+              onClick={() => { setExportTab('qr'); setQrJson(null); }}
+              data-testid="sovereignty-export-tab-qr"
+            >
+              ⬡ QR Code
             </button>
           </div>
+
+          {/* Download tab */}
+          {exportTab === 'download' && (
+            <>
+              <p className={styles.overlayDesc}>
+                Your keypair will be exported as a JSON file. Store it somewhere safe —
+                this is how you restore your identity on another device.
+              </p>
+              <p className={styles.overlayDesc}>
+                An optional passphrase encrypts the private key inside the export.
+                Leave blank to export in plaintext (only do this on trusted hardware).
+              </p>
+
+              <label className={styles.fieldLabel} htmlFor="export-passphrase">
+                Passphrase (optional)
+              </label>
+              <input
+                id="export-passphrase"
+                type="password"
+                className={styles.textInput}
+                placeholder="Leave blank for unencrypted export"
+                value={exportPassphrase}
+                onChange={(e) => setExportPassphrase(e.target.value)}
+                data-testid="sovereignty-passphrase-input"
+              />
+
+              {exportError && (
+                <p className={styles.errorText} role="alert">
+                  {exportError}
+                </p>
+              )}
+
+              <div className={styles.overlayActions}>
+                <button
+                  type="button"
+                  className={styles.primaryBtn}
+                  onClick={handleExport}
+                  disabled={exportWorking}
+                  data-testid="sovereignty-download-btn"
+                >
+                  {exportWorking ? 'Exporting…' : '↓ Download keypair.json'}
+                </button>
+              </div>
+            </>
+          )}
+
+          {/* QR Code tab */}
+          {exportTab === 'qr' && (
+            <>
+              <p className={styles.overlayDesc}>
+                Display this QR code and scan it with your other device to transfer your keypair.
+              </p>
+
+              <label className={styles.fieldLabel} htmlFor="export-passphrase-qr">
+                Passphrase (optional)
+              </label>
+              <input
+                id="export-passphrase-qr"
+                type="password"
+                className={styles.textInput}
+                placeholder="Leave blank for unencrypted QR"
+                value={exportPassphrase}
+                onChange={(e) => { setExportPassphrase(e.target.value); setQrJson(null); }}
+                data-testid="sovereignty-passphrase-input-qr"
+              />
+
+              {exportError && (
+                <p className={styles.errorText} role="alert">
+                  {exportError}
+                </p>
+              )}
+
+              {!qrJson ? (
+                <div className={styles.overlayActions}>
+                  <button
+                    type="button"
+                    className={styles.primaryBtn}
+                    onClick={handleGenerateQr}
+                    disabled={qrWorking}
+                    data-testid="sovereignty-generate-qr-btn"
+                  >
+                    {qrWorking ? 'Generating…' : '⬡ Generate QR Code'}
+                  </button>
+                </div>
+              ) : (
+                <>
+                  <p className={styles.warningText}>
+                    ⚠ Your private key is visible. Cover this screen when not scanning.
+                  </p>
+                  <div className={styles.qrWrapper}>
+                    <QRCodeDisplay
+                      value={qrJson}
+                      size={240}
+                      label="Operative keypair QR code"
+                    />
+                  </div>
+                  <div className={styles.overlayActions}>
+                    <button
+                      type="button"
+                      className={styles.btn}
+                      onClick={() => setQrJson(null)}
+                      data-testid="sovereignty-regenerate-qr-btn"
+                    >
+                      ↺ Regenerate
+                    </button>
+                  </div>
+                </>
+              )}
+            </>
+          )}
         </div>
       )}
 
@@ -390,9 +534,6 @@ const SovereigntyPanel: React.FC = () => {
             </button>
           </div>
 
-          <p className={styles.overlayDesc}>
-            Paste the contents of your exported keypair JSON file below.
-          </p>
           {identity && (
             <p className={styles.warningText}>
               ⚠ This will replace your current identity on this device.
@@ -400,31 +541,29 @@ const SovereigntyPanel: React.FC = () => {
             </p>
           )}
 
-          <label className={styles.fieldLabel} htmlFor="import-text">
-            Keypair JSON
-          </label>
-          <textarea
-            id="import-text"
-            className={styles.textarea}
-            placeholder='{"keypair":{"pub":"..."},"alias":"..."}'
-            rows={6}
-            value={importText}
-            onChange={(e) => setImportText(e.target.value)}
-            data-testid="sovereignty-import-text"
-          />
-
-          <label className={styles.fieldLabel} htmlFor="import-passphrase">
-            Passphrase (if encrypted)
-          </label>
-          <input
-            id="import-passphrase"
-            type="password"
-            className={styles.textInput}
-            placeholder="Leave blank if export was unencrypted"
-            value={importPassphrase}
-            onChange={(e) => setImportPassphrase(e.target.value)}
-            data-testid="sovereignty-import-passphrase"
-          />
+          {/* Tab row */}
+          <div className={styles.tabRow} role="tablist">
+            <button
+              type="button"
+              role="tab"
+              aria-selected={importTab === 'paste'}
+              className={importTab === 'paste' ? styles.tabActive : styles.tab}
+              onClick={() => setImportTab('paste')}
+              data-testid="sovereignty-import-tab-paste"
+            >
+              ✎ Paste JSON
+            </button>
+            <button
+              type="button"
+              role="tab"
+              aria-selected={importTab === 'scan'}
+              className={importTab === 'scan' ? styles.tabActive : styles.tab}
+              onClick={() => setImportTab('scan')}
+              data-testid="sovereignty-import-tab-scan"
+            >
+              ◎ Scan QR
+            </button>
+          </div>
 
           {importError && (
             <p className={styles.errorText} role="alert" data-testid="sovereignty-import-error">
@@ -432,17 +571,70 @@ const SovereigntyPanel: React.FC = () => {
             </p>
           )}
 
-          <div className={styles.overlayActions}>
-            <button
-              type="button"
-              className={styles.primaryBtn}
-              onClick={handleImport}
-              disabled={importWorking || !importText.trim()}
-              data-testid="sovereignty-confirm-import-btn"
-            >
-              {importWorking ? 'Importing…' : '⬡ Import Identity'}
-            </button>
-          </div>
+          {/* Paste tab */}
+          {importTab === 'paste' && (
+            <>
+              <p className={styles.overlayDesc}>
+                Paste the contents of your exported keypair JSON file below.
+              </p>
+
+              <label className={styles.fieldLabel} htmlFor="import-text">
+                Keypair JSON
+              </label>
+              <textarea
+                id="import-text"
+                className={styles.textarea}
+                placeholder='{"keypair":{"pub":"..."},"alias":"..."}'
+                rows={6}
+                value={importText}
+                onChange={(e) => setImportText(e.target.value)}
+                data-testid="sovereignty-import-text"
+              />
+
+              <label className={styles.fieldLabel} htmlFor="import-passphrase">
+                Passphrase (if encrypted)
+              </label>
+              <input
+                id="import-passphrase"
+                type="password"
+                className={styles.textInput}
+                placeholder="Leave blank if export was unencrypted"
+                value={importPassphrase}
+                onChange={(e) => setImportPassphrase(e.target.value)}
+                data-testid="sovereignty-import-passphrase"
+              />
+
+              <div className={styles.overlayActions}>
+                <button
+                  type="button"
+                  className={styles.primaryBtn}
+                  onClick={handleImport}
+                  disabled={importWorking || !importText.trim()}
+                  data-testid="sovereignty-confirm-import-btn"
+                >
+                  {importWorking ? 'Importing…' : '⬡ Import Identity'}
+                </button>
+              </div>
+            </>
+          )}
+
+          {/* Scan QR tab */}
+          {importTab === 'scan' && (
+            <div className={styles.scanBlock}>
+              <p className={styles.overlayDesc}>
+                Point your camera at a keypair QR code generated by another device.
+              </p>
+              <QRCodeScanner
+                onScan={handleQrScan}
+                onError={(msg) => setImportError(msg)}
+              />
+              {importWorking && (
+                <p className={styles.scanStatus} data-testid="sovereignty-scan-working">
+                  Importing…
+                </p>
+              )}
+            </div>
+          )}
         </div>
       )}
     </>

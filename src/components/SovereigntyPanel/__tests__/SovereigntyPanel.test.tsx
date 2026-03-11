@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen, fireEvent, act, waitFor } from '@testing-library/react';
 import SovereigntyPanel from '../SovereigntyPanel';
 import type { GunIdentity } from '../../../services/gunIdentity';
 import type { SyncEntry } from '../../../services/syncStatusStore';
@@ -59,6 +59,28 @@ const { mockProfileStore } = vi.hoisted(() => ({
 
 vi.mock('../../../store/OperativeProfileStore', () => ({
   default: mockProfileStore,
+}));
+
+// QRCodeDisplay stub — renders a predictable div showing the encoded value
+vi.mock('../../QRCodeDisplay/QRCodeDisplay', () => ({
+  default: ({ value }: { value: string }) => (
+    <div data-testid="qr-code-display-mock" data-value={value} />
+  ),
+}));
+
+// QRCodeScanner stub — exposes the onScan + onError callbacks via data attrs
+// so tests can fire them directly
+const capturedScanProps = vi.hoisted(() => ({
+  onScan: null as ((v: string) => void) | null,
+  onError: undefined as ((msg: string) => void) | null | undefined,
+}));
+
+vi.mock('../../QRCodeScanner/QRCodeScanner', () => ({
+  default: ({ onScan, onError }: { onScan: (v: string) => void; onError?: (msg: string) => void }) => {
+    capturedScanProps.onScan = onScan;
+    capturedScanProps.onError = onError;
+    return <div data-testid="qr-code-scanner-mock" />;
+  },
 }));
 
 // ─── Fixtures ─────────────────────────────────────────────────────────────────
@@ -337,6 +359,197 @@ describe('SovereigntyPanel', () => {
       render(<SovereigntyPanel />);
       const aarPill = screen.getByTestId('sovereignty-sync-aar');
       expect(aarPill.getAttribute('data-status')).toBe('error');
+    });
+  });
+
+  describe('export QR tab', () => {
+    beforeEach(() => {
+      mockIdentityState.identity = MOCK_IDENTITY;
+      mockIdentityState.publicKey = MOCK_IDENTITY.keypair.pub;
+    });
+
+    it('shows Download and QR Code tabs in the export overlay', () => {
+      render(<SovereigntyPanel />);
+      fireEvent.click(screen.getByTestId('sovereignty-export-btn'));
+      expect(screen.getByTestId('sovereignty-export-tab-download')).toBeTruthy();
+      expect(screen.getByTestId('sovereignty-export-tab-qr')).toBeTruthy();
+    });
+
+    it('download tab is selected by default and shows download button', () => {
+      render(<SovereigntyPanel />);
+      fireEvent.click(screen.getByTestId('sovereignty-export-btn'));
+      const tab = screen.getByTestId('sovereignty-export-tab-download');
+      expect(tab.getAttribute('aria-selected')).toBe('true');
+      expect(screen.getByTestId('sovereignty-download-btn')).toBeTruthy();
+    });
+
+    it('switching to QR tab shows the generate QR button', () => {
+      render(<SovereigntyPanel />);
+      fireEvent.click(screen.getByTestId('sovereignty-export-btn'));
+      fireEvent.click(screen.getByTestId('sovereignty-export-tab-qr'));
+      expect(screen.getByTestId('sovereignty-generate-qr-btn')).toBeTruthy();
+      expect(screen.queryByTestId('sovereignty-download-btn')).toBeNull();
+    });
+
+    it('clicking generate QR calls exportIdentity and shows QRCodeDisplay', async () => {
+      mockExportIdentity.mockResolvedValueOnce('{"keypair":{"pub":"abc"}}');
+      render(<SovereigntyPanel />);
+      fireEvent.click(screen.getByTestId('sovereignty-export-btn'));
+      fireEvent.click(screen.getByTestId('sovereignty-export-tab-qr'));
+
+      await act(async () => {
+        fireEvent.click(screen.getByTestId('sovereignty-generate-qr-btn'));
+      });
+
+      expect(screen.getByTestId('qr-code-display-mock')).toBeTruthy();
+      expect(screen.getByTestId('qr-code-display-mock').getAttribute('data-value')).toBe('{"keypair":{"pub":"abc"}}');
+    });
+
+    it('regenerate button clears the QR and shows generate button again', async () => {
+      mockExportIdentity.mockResolvedValueOnce('{"keypair":{"pub":"abc"}}');
+      render(<SovereigntyPanel />);
+      fireEvent.click(screen.getByTestId('sovereignty-export-btn'));
+      fireEvent.click(screen.getByTestId('sovereignty-export-tab-qr'));
+
+      await act(async () => {
+        fireEvent.click(screen.getByTestId('sovereignty-generate-qr-btn'));
+      });
+
+      expect(screen.getByTestId('qr-code-display-mock')).toBeTruthy();
+      fireEvent.click(screen.getByTestId('sovereignty-regenerate-qr-btn'));
+      expect(screen.queryByTestId('qr-code-display-mock')).toBeNull();
+      expect(screen.getByTestId('sovereignty-generate-qr-btn')).toBeTruthy();
+    });
+
+    it('shows error when exportIdentity rejects in QR tab', async () => {
+      mockExportIdentity.mockRejectedValueOnce(new Error('SEA error'));
+      render(<SovereigntyPanel />);
+      fireEvent.click(screen.getByTestId('sovereignty-export-btn'));
+      fireEvent.click(screen.getByTestId('sovereignty-export-tab-qr'));
+
+      await act(async () => {
+        fireEvent.click(screen.getByTestId('sovereignty-generate-qr-btn'));
+      });
+
+      expect(screen.queryByTestId('qr-code-display-mock')).toBeNull();
+    });
+
+    it('closing and reopening export overlay resets to download tab', async () => {
+      render(<SovereigntyPanel />);
+      fireEvent.click(screen.getByTestId('sovereignty-export-btn'));
+      fireEvent.click(screen.getByTestId('sovereignty-export-tab-qr'));
+      fireEvent.click(screen.getByTestId('sovereignty-overlay-close'));
+      fireEvent.click(screen.getByTestId('sovereignty-export-btn'));
+      expect(screen.getByTestId('sovereignty-export-tab-download').getAttribute('aria-selected')).toBe('true');
+    });
+  });
+
+  describe('import scan tab', () => {
+    beforeEach(() => {
+      mockIdentityState.identity = MOCK_IDENTITY;
+      mockIdentityState.publicKey = MOCK_IDENTITY.keypair.pub;
+      capturedScanProps.onScan = null;
+      capturedScanProps.onError = undefined;
+    });
+
+    it('shows Paste JSON and Scan QR tabs in the import overlay', () => {
+      render(<SovereigntyPanel />);
+      fireEvent.click(screen.getByTestId('sovereignty-import-trigger-btn'));
+      expect(screen.getByTestId('sovereignty-import-tab-paste')).toBeTruthy();
+      expect(screen.getByTestId('sovereignty-import-tab-scan')).toBeTruthy();
+    });
+
+    it('paste tab is selected by default and shows the textarea', () => {
+      render(<SovereigntyPanel />);
+      fireEvent.click(screen.getByTestId('sovereignty-import-trigger-btn'));
+      expect(screen.getByTestId('sovereignty-import-tab-paste').getAttribute('aria-selected')).toBe('true');
+      expect(screen.getByTestId('sovereignty-import-text')).toBeTruthy();
+    });
+
+    it('switching to scan tab shows the QRCodeScanner', () => {
+      render(<SovereigntyPanel />);
+      fireEvent.click(screen.getByTestId('sovereignty-import-trigger-btn'));
+      fireEvent.click(screen.getByTestId('sovereignty-import-tab-scan'));
+      expect(screen.getByTestId('qr-code-scanner-mock')).toBeTruthy();
+      expect(screen.queryByTestId('sovereignty-import-text')).toBeNull();
+    });
+
+    it('successful QR scan calls importIdentity and closes overlay', async () => {
+      mockImportIdentity.mockResolvedValueOnce(undefined);
+      render(<SovereigntyPanel />);
+      fireEvent.click(screen.getByTestId('sovereignty-import-trigger-btn'));
+      fireEvent.click(screen.getByTestId('sovereignty-import-tab-scan'));
+
+      await act(async () => {
+        capturedScanProps.onScan?.('{"keypair":{"pub":"abc"},"alias":"Ops","createdAt":""}');
+      });
+
+      expect(mockImportIdentity).toHaveBeenCalledWith(
+        '{"keypair":{"pub":"abc"},"alias":"Ops","createdAt":""}',
+        undefined,
+      );
+      expect(screen.queryByTestId('sovereignty-import-overlay')).toBeNull();
+    });
+
+    it('QR scan with invalid JSON shows error and keeps overlay open', async () => {
+      render(<SovereigntyPanel />);
+      fireEvent.click(screen.getByTestId('sovereignty-import-trigger-btn'));
+      fireEvent.click(screen.getByTestId('sovereignty-import-tab-scan'));
+
+      await act(async () => {
+        capturedScanProps.onScan?.('not-valid-json');
+      });
+
+      expect(screen.getByTestId('sovereignty-import-overlay')).toBeTruthy();
+      expect(screen.getByTestId('sovereignty-import-error').textContent).toBe(
+        'QR code not recognized as a keypair',
+      );
+      expect(mockImportIdentity).not.toHaveBeenCalled();
+    });
+
+    it('QR scan of valid JSON missing keypair.pub shows error', async () => {
+      render(<SovereigntyPanel />);
+      fireEvent.click(screen.getByTestId('sovereignty-import-trigger-btn'));
+      fireEvent.click(screen.getByTestId('sovereignty-import-tab-scan'));
+
+      await act(async () => {
+        capturedScanProps.onScan?.('{"alias":"Ghost"}');
+      });
+
+      expect(screen.getByTestId('sovereignty-import-error').textContent).toBe(
+        'QR code not recognized as a keypair',
+      );
+    });
+
+    it('QR scan success followed by failed import switches to paste tab with JSON', async () => {
+      mockImportIdentity.mockRejectedValueOnce(new Error('Wrong passphrase'));
+      render(<SovereigntyPanel />);
+      fireEvent.click(screen.getByTestId('sovereignty-import-trigger-btn'));
+      fireEvent.click(screen.getByTestId('sovereignty-import-tab-scan'));
+
+      await act(async () => {
+        capturedScanProps.onScan?.('{"keypair":{"pub":"abc"}}');
+      });
+
+      // Overlay stays open, paste tab shown with JSON pre-filled
+      expect(screen.getByTestId('sovereignty-import-overlay')).toBeTruthy();
+      expect(screen.getByTestId('sovereignty-import-tab-paste').getAttribute('aria-selected')).toBe('true');
+      expect((screen.getByTestId('sovereignty-import-text') as HTMLTextAreaElement).value).toBe('{"keypair":{"pub":"abc"}}');
+      expect(screen.getByTestId('sovereignty-import-error').textContent).toBe('Wrong passphrase');
+    });
+
+    it('QRCodeScanner onError propagates to importError', async () => {
+      render(<SovereigntyPanel />);
+      fireEvent.click(screen.getByTestId('sovereignty-import-trigger-btn'));
+      fireEvent.click(screen.getByTestId('sovereignty-import-tab-scan'));
+
+      await act(async () => {
+        capturedScanProps.onError?.('Camera access denied');
+      });
+
+      await waitFor(() => {
+        expect(screen.getByTestId('sovereignty-import-error').textContent).toBe('Camera access denied');
+      });
     });
   });
 });

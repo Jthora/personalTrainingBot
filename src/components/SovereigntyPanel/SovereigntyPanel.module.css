@@ -1,0 +1,396 @@
+@import '../../styles/theme.css';
+
+/* ── Outer panel — matches ProfileEditor visual language ────────────────────── */
+.panel {
+  display: grid;
+  gap: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  background: var(--surface-card);
+  padding: 16px;
+}
+
+.heading {
+  margin: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+/* ── Uninitialized state ────────────────────────────────────────────────────── */
+.uninitializedBlock {
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+  border: 1px solid rgba(90, 127, 255, 0.25);
+  border-radius: 10px;
+  background: rgba(90, 127, 255, 0.06);
+}
+
+.uninitializedTitle {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.uninitializedDesc {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* ── Initialized state ──────────────────────────────────────────────────────── */
+.identityBlock {
+  display: grid;
+  gap: 12px;
+}
+
+.identityMeta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px;
+}
+
+.identityMeta > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.metaLabel {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-secondary);
+}
+
+.metaValue {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.metaFingerprint {
+  font-size: 11px;
+  font-weight: 600;
+  font-family: 'Courier New', monospace;
+  color: var(--handler-glow);
+  letter-spacing: 0.03em;
+  word-break: break-all;
+}
+
+.identityActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+/* ── Buttons ────────────────────────────────────────────────────────────────── */
+.primaryBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--handler-border);
+  background: var(--handler-accent-soft);
+  color: var(--handler-glow);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, opacity 0.15s;
+  letter-spacing: 0.02em;
+}
+
+.primaryBtn:hover:not(:disabled) {
+  background: rgba(90, 127, 255, 0.18);
+  border-color: var(--handler-accent);
+}
+
+.primaryBtn:focus-visible {
+  outline: 2px solid var(--handler-accent);
+  outline-offset: 2px;
+}
+
+.primaryBtn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px 12px;
+  border-radius: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--handler-accent);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--handler-accent);
+  outline-offset: 2px;
+}
+
+.removeBtn {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  background: rgba(239, 68, 68, 0.06);
+  color: rgba(239, 68, 68, 0.8);
+  cursor: pointer;
+  margin-left: auto;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.removeBtn:hover {
+  background: rgba(239, 68, 68, 0.12);
+  border-color: rgba(239, 68, 68, 0.5);
+  color: #fca5a5;
+}
+
+.removeBtn:focus-visible {
+  outline: 2px solid rgba(239, 68, 68, 0.6);
+  outline-offset: 2px;
+}
+
+/* ── Error text ─────────────────────────────────────────────────────────────── */
+.errorText {
+  margin: 0;
+  font-size: 12px;
+  color: #fca5a5;
+}
+
+/* ── Data custody (sync status) ─────────────────────────────────────────────── */
+.custodyBlock {
+  display: grid;
+  gap: 8px;
+  padding-top: 4px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.custodyLabel {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.custodyDesc {
+  margin: 0;
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.syncPills {
+  display: grid;
+  gap: 6px;
+}
+
+.syncPill {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.025);
+  transition: border-color 0.2s, background 0.2s;
+}
+
+/* Status-specific pill variants */
+.syncPill[data-status='syncing'] {
+  border-color: rgba(90, 127, 255, 0.3);
+  background: rgba(90, 127, 255, 0.06);
+}
+
+.syncPill[data-status='synced'] {
+  border-color: rgba(52, 211, 153, 0.3);
+  background: rgba(52, 211, 153, 0.05);
+}
+
+.syncPill[data-status='error'] {
+  border-color: rgba(239, 68, 68, 0.3);
+  background: rgba(239, 68, 68, 0.05);
+}
+
+.syncPillName {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.syncPillStatus {
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.syncPill[data-status='syncing'] .syncPillStatus {
+  color: #93c5fd;
+  animation: pulse 1.4s ease-in-out infinite;
+}
+
+.syncPill[data-status='synced'] .syncPillStatus {
+  color: #6ee7b7;
+}
+
+.syncPill[data-status='error'] .syncPillStatus {
+  color: #fca5a5;
+}
+
+.syncPillError {
+  grid-column: 1 / -1;
+  font-size: 10px;
+  color: rgba(252, 165, 165, 0.7);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.5; }
+}
+
+/* ── Overlay — same pattern as ProfileEditor ────────────────────────────────── */
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  background: var(--surface-base);
+  overflow-y: auto;
+  padding: 20px 16px;
+  animation: slideUp 0.2s ease-out;
+  display: grid;
+  gap: 14px;
+  align-content: start;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(24px); opacity: 0.8; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+.overlayHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.overlayTitle {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.overlayDesc {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.warningText {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(250, 204, 21, 0.3);
+  background: rgba(250, 204, 21, 0.08);
+  color: #fde68a;
+}
+
+.fieldLabel {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-secondary);
+  font-weight: 600;
+  margin-bottom: -8px;
+}
+
+.textInput {
+  font-size: 13px;
+  padding: 9px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-primary);
+  outline: none;
+  transition: border-color 0.15s;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.textInput:focus {
+  border-color: var(--handler-accent);
+}
+
+.textarea {
+  font-size: 12px;
+  font-family: 'Courier New', monospace;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--handler-glow);
+  outline: none;
+  resize: vertical;
+  width: 100%;
+  box-sizing: border-box;
+  line-height: 1.5;
+  transition: border-color 0.15s;
+}
+
+.textarea:focus {
+  border-color: var(--handler-accent);
+}
+
+.overlayActions {
+  padding-top: 4px;
+}
+
+.closeBtn {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.closeBtn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}

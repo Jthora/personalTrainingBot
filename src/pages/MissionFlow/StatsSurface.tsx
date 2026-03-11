@@ -12,6 +12,7 @@ import CompetencyChart from '../../components/CompetencyChart/CompetencyChart';
 import BadgeGallery from '../../components/BadgeGallery/BadgeGallery';
 import ChallengeBoard from '../../components/ChallengeBoard/ChallengeBoard';
 import ProfileEditor from '../../components/ProfileEditor/ProfileEditor';
+import SovereigntyPanel from '../../components/SovereigntyPanel/SovereigntyPanel';
 import { isFeatureEnabled } from '../../config/featureFlags';
 
 const StatsSurface: React.FC = () => {
@@ -98,6 +99,9 @@ const StatsSurface: React.FC = () => {
 
       {/* Profile editor */}
       {isFeatureEnabled('profileEditor') && <ProfileEditor />}
+
+      {/* Sovereignty panel — data custody + keypair management */}
+      {isFeatureEnabled('p2pIdentity') && <SovereigntyPanel />}
 
       {/* Competency breakdown */}
       <CompetencyChart snapshot={readiness.competency} />

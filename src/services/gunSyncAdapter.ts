@@ -17,6 +17,11 @@
 import { getGun } from './gunDb';
 import { GunIdentityService } from './gunIdentity';
 import { trackEvent } from '../utils/telemetry';
+import {
+  markSyncing,
+  markSynced,
+  markError,
+} from './syncStatusStore';
 
 export type SyncDirection = 'push' | 'pull' | 'both';
 
@@ -82,11 +87,14 @@ export const createGunSyncAdapter = <T>(config: GunSyncAdapterConfig<T>): GunSyn
     if (!node) return;
 
     try {
+      markSyncing(namespace);
       const gunData = toGunData(local);
       node.put(gunData);
       lastPushedVersion = version;
+      markSynced(namespace);
     } catch (err) {
       console.warn(`[GunSync:${namespace}] push failed`, err);
+      markError(namespace, err instanceof Error ? err.message : 'Push failed');
     }
   };
 
@@ -103,27 +111,33 @@ export const createGunSyncAdapter = <T>(config: GunSyncAdapterConfig<T>): GunSyn
     node.on((data: any) => {
       if (!active || !data) return;
 
-      const remote = fromGunData(data);
-      if (!remote) return;
+      try {
+        const remote = fromGunData(data);
+        if (!remote) return;
 
-      const remoteVersion = getVersion(remote);
-      if (remoteVersion <= lastPulledVersion) return; // already seen
-      if (remoteVersion === lastPushedVersion) return; // echo of our own push
+        const remoteVersion = getVersion(remote);
+        if (remoteVersion <= lastPulledVersion) return; // already seen
+        if (remoteVersion === lastPushedVersion) return; // echo of our own push
 
-      const local = getLocal();
-      const localVersion = local ? getVersion(local) : 0;
+        const local = getLocal();
+        const localVersion = local ? getVersion(local) : 0;
 
-      // Only apply remote if it's newer than local
-      if (remoteVersion > localVersion) {
-        setLocal(remote);
-        lastPulledVersion = remoteVersion;
+        // Only apply remote if it's newer than local
+        if (remoteVersion > localVersion) {
+          setLocal(remote);
+          lastPulledVersion = remoteVersion;
+          markSynced(namespace);
 
-        trackEvent({
-          category: 'ia',
-          action: `gun_sync_pull_${namespace}`,
-          data: { remoteVersion, localVersion },
-          source: 'system',
-        });
+          trackEvent({
+            category: 'ia',
+            action: `gun_sync_pull_${namespace}`,
+            data: { remoteVersion, localVersion },
+            source: 'system',
+          });
+        }
+      } catch (err) {
+        console.warn(`[GunSync:${namespace}] pull handler error`, err);
+        markError(namespace, err instanceof Error ? err.message : 'Pull failed');
       }
     });
   };

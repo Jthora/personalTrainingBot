@@ -1,7 +1,7 @@
 {
     "name": "Combat Positioning",
     "description": "Training to control combat space, angles, and movement for superior offensive and defensive positioning.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Fundamentals of Combat Positioning",
             "description": "Developing core movement patterns for maintaining advantageous positions in a fight.",

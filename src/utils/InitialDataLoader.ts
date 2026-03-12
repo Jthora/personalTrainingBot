@@ -1,7 +1,7 @@
 import CardDataLoader from './CardDataLoader';
 import DrillDataLoader from './DrillDataLoader';
 import { totalCardDecks } from './cardDeckPaths'; // Import total card decks
-import { totalWorkoutSubCategories } from './drillSubCategoryPaths'; // Import total drill subcategories
+import { totalDrillSubCategories } from './drillSubCategoryPaths'; // Import total drill subcategories
 import DrillCategoryCache from '../cache/DrillCategoryCache'; // Import DrillCategoryCache
 import TrainingModuleCache from '../cache/TrainingModuleCache';
 import TrainingHandlerCache from '../cache/TrainingHandlerCache';
@@ -25,7 +25,7 @@ class InitialDataLoader {
             try {
                 console.log("InitialDataLoader: Starting to load all data...");
                 const cardDataLoader = new CardDataLoader();
-                const workoutDataLoader = new DrillDataLoader();
+                const drillDataLoader = new DrillDataLoader();
                 let currentStep = 0;
 
                 const updateProgress = (totalSteps: number) => {
@@ -33,18 +33,18 @@ class InitialDataLoader {
                     onProgress((currentStep / totalSteps) * 100);
                 };
 
-                const totalSteps = totalCardDecks + Object.keys(totalWorkoutSubCategories).length;
-                console.log(`InitialDataLoader: Total CardDecks and WorkoutSubCategories: ${totalSteps}`);
+                const totalSteps = totalCardDecks + Object.keys(totalDrillSubCategories).length;
+                console.log(`InitialDataLoader: Total CardDecks and DrillSubCategories: ${totalSteps}`);
 
-                const coachPromise = this.loadHandlerData();
+                const handlerPromise = this.loadHandlerData();
                 const trainingPromise = this.loadTrainingModules(cardDataLoader, updateProgress, totalSteps, onPartialFailure);
-                const workoutCategoriesPromise = this.loadWorkoutCategories(workoutDataLoader, updateProgress, totalSteps, onPartialFailure);
-                const schedulePromise = workoutCategoriesPromise.then(() => this.loadMissionSchedule());
+                const drillCategoriesPromise = this.loadDrillCategories(drillDataLoader, updateProgress, totalSteps, onPartialFailure);
+                const schedulePromise = drillCategoriesPromise.then(() => this.loadMissionSchedule());
 
                 const taskEntries = [
-                    ["handler", coachPromise],
+                    ["handler", handlerPromise],
                     ["training", trainingPromise],
-                    ["workoutCategories", workoutCategoriesPromise],
+                    ["drillCategories", drillCategoriesPromise],
                     ["schedule", schedulePromise],
                 ] as const;
 
@@ -89,16 +89,16 @@ class InitialDataLoader {
         MissionEntityStore.getInstance().hydrateFromTrainingModules(trainingModules);
     }
 
-    private static async loadWorkoutCategories(
+    private static async loadDrillCategories(
         dataLoader: DrillDataLoader,
         updateProgress: (totalSteps: number) => void,
         totalSteps: number,
         onPartialFailure?: (message: string) => void
     ) {
         console.log("InitialDataLoader: Loading drill categories...");
-        const workoutCategories = await dataLoader.loadAllData(() => updateProgress(totalSteps), onPartialFailure);
-        console.log(`InitialDataLoader: Loaded ${workoutCategories.length} drill categories.`);
-        await DrillCategoryCache.getInstance().loadData(workoutCategories); // Load data into cache
+        const drillCategories = await dataLoader.loadAllData(() => updateProgress(totalSteps), onPartialFailure);
+        console.log(`InitialDataLoader: Loaded ${drillCategories.length} drill categories.`);
+        await DrillCategoryCache.getInstance().loadData(drillCategories); // Load data into cache
     }
 
     private static async loadMissionSchedule() {

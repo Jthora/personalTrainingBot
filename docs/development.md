@@ -1,168 +1,282 @@
 # Development Guide
 
+## Prerequisites
+
+- Node.js 18+
+- npm package manager
+
 ## Development Setup
 
 ### Environment Variables
-Create a `.env` file in the root directory:
+Create a `.env` file in the project root:
 ```env
-VITE_API_BASE_URL=http://localhost:3000
-VITE_APP_NAME=Personal Training Bot
-VITE_APP_VERSION=1.0.0
+VITE_APP_ENV=development
 ```
 
-### Project Structure Conventions
+Feature flags can be overridden via environment:
+```env
+VITE_FEATURE_FLAGS='{"archetypeSystem":true,"drillRunnerUpgrade":true}'
+```
 
-#### Component Organization
-- Each component should have its own directory
-- Include TypeScript interfaces in the same file
-- Use descriptive naming conventions
-- Group related components together
+### Install and Run
+```bash
+npm install
+npm run dev
+```
 
-#### File Naming
-- Components: `PascalCase.tsx`
-- Hooks: `use[Name].ts`
+The development server runs on Vite with hot module replacement. The `dev` script automatically generates module paths, submodule paths, card deck paths, and workout category paths before starting the server.
+
+## Project Conventions
+
+### Component Organization
+Each component has its own directory under `src/components/`:
+```
+components/
+  DrillRunner/
+    DrillRunner.tsx
+    DrillRunner.module.css
+  BadgeGallery/
+    BadgeGallery.tsx
+    BadgeGallery.module.css
+```
+
+### File Naming
+- Components: `PascalCase.tsx` in PascalCase directories
+- Hooks: `use[Name].ts` (e.g., `useTimer.ts`, `useReadiness.ts`)
+- Stores: `[Name]Store.ts` (e.g., `UserProgressStore.ts`, `DrillRunStore.ts`)
 - Utilities: `camelCase.ts`
 - Types: `PascalCase.ts`
-- Styles: `kebab-case.css`
+- Styles: `ComponentName.module.css`
 
-#### Import Organization
+### Import Organization
 ```typescript
 // External libraries
-import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 // Internal components
-import Button from '../Button/Button';
-import Modal from '../Modal/Modal';
+import DrillRunner from '../DrillRunner/DrillRunner';
 
 // Types
-import { TrainingModule } from '../../types/TrainingModule';
+import { MissionSchedule } from '../../types/MissionSchedule';
+
+// Stores and services
+import { DrillHistoryStore } from '../../store/DrillHistoryStore';
 
 // Utilities
-import { formatDate } from '../../utils/dateUtils';
+import { mark, measure } from '../../utils/perf';
 
 // Styles
-import './ComponentName.css';
+import styles from './ComponentName.module.css';
 ```
 
-### Code Quality Standards
+## State Management
 
-#### TypeScript
-- Use strict TypeScript configuration
-- Define interfaces for all props and state
-- Avoid `any` type usage
-- Use proper generic types
+### Store Pattern
+All stores follow the same hand-rolled pattern — no external state libraries:
 
-#### React Best Practices
-- Use functional components with hooks
-- Implement proper error boundaries
-- Use React.memo for performance optimization
-- Follow React accessibility guidelines
+```typescript
+// Typical store structure
+const STORAGE_KEY = 'ptb:store-name';
+type Listener = () => void;
+const listeners = new Set<Listener>();
 
-#### CSS Organization
-- Use CSS modules or styled-components
-- Follow BEM naming convention
-- Maintain consistent spacing and typography
-- Use CSS custom properties for themes
+function subscribe(listener: Listener) {
+  listeners.add(listener);
+  return () => listeners.delete(listener);
+}
 
-#### Coach-Aware Theming
-- Every coach defines a palette in `src/data/coachThemes.ts` (accent, glow, surfaces, text).
-- `CoachSelectionContext` automatically applies these colors to global CSS variables (`--coach-accent`, `--surface-card`, etc.).
-- In CSS modules, prefer the semantic tokens (for example `background: var(--surface-card);` and `border-color: var(--coach-border);`).
-- For JavaScript-driven visuals, use the `useCoachTheme` hook to read the current `CoachPalette` directly without querying the DOM.
-- When adding a new coach or component, extend the palette map instead of hard-coding colors so the entire UI swaps hues consistently.
+function notify() {
+  listeners.forEach(fn => fn());
+}
 
-### Testing Guidelines
-
-#### Unit Tests
-- Test individual components and functions
-- Use React Testing Library for component tests
-- Maintain high test coverage
-- Test edge cases and error scenarios
-
-#### Integration Tests
-- Test component interactions
-- Verify API integrations
-- Test user workflows
-- Validate data flow
-
-### Performance Optimization
-
-#### Code Splitting
-- Use React.lazy for route-based splitting
-- Implement dynamic imports for large components
-- Optimize bundle size with tree shaking
-
-#### State Management
-- Use Zustand for global state
-- Implement proper state normalization
-- Avoid unnecessary re-renders
-- Use selectors for computed values
-
-### Build and Deployment
-
-#### Build Process
-```bash
-# Development build
-npm run dev
-
-# Production build
-npm run build
-
-# Preview production build
-npm run preview
+function persist(state: State) {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  } catch { /* in-memory fallback */ }
+}
 ```
 
-#### Pre-commit Hooks
-- ESLint for code quality
-- Prettier for code formatting
-- TypeScript type checking
-- Unit test execution
+### Key localStorage Keys
+| Key | Store | Purpose |
+|---|---|---|
+| `userProgress:v1` | UserProgressStore | XP, level, streaks, badges, challenges |
+| `operative:profile:v1` | OperativeProfileStore | Archetype, handler, callsign |
+| `ptb:drill-run` | DrillRunStore | Active drill state |
+| `ptb:drill-history:v1` | DrillHistoryStore | Completed drill log (max 100) |
+| `ptb:aar-entries` | AARStore | After-Action Review entries |
+| `ptb:signals` | SignalsStore | Operational signals |
+| `ptb:gun-identity` | GunIdentityService | SEA keypair |
+| `difficultySettings` | DifficultySettingsStore | Difficulty level (1-10) |
 
-### Debugging
+### React Context
+Context providers wrap components that need shared non-persisted state:
+- `MissionScheduleContext` — Schedule state and drill scheduling
+- `HandlerSelectionContext` — Handler selection and theme application
+- `SettingsContext` — App settings including low-data mode
 
-#### Development Tools
-- React Developer Tools
-- Redux DevTools (for Zustand)
-- Vite DevTools
-- TypeScript Language Server
+## Styling
 
-#### Common Issues
-- Module path resolution
-- TypeScript compilation errors
-- CSS import issues
-- Build optimization problems
+### CSS Custom Properties
+The theme is defined in `src/styles/theme.css` with a comprehensive token system:
+- Surface colors (`--surface-base`, `--surface-card`, `--surface-elevated`)
+- Text colors (`--text-primary`, `--text-muted`, `--text-accent`)
+- Mission severity levels, trust levels, state indicators
+- Typography scale using `clamp()` for responsive sizing
 
-### Contributing Workflow
+### CSS Modules
+Components use CSS Modules for scoped styling:
+```css
+/* DrillRunner.module.css */
+.container {
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+}
 
-1. Create feature branch from `main`
-2. Implement changes with tests
-3. Run code quality checks
-4. Submit pull request
-5. Code review process
-6. Merge to main branch
+.title {
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+}
+```
 
-## Development Scripts
+### Handler Theming
+Handler selection dynamically updates CSS custom properties (`--coach-accent`, `--surface-card`, etc.) so the entire UI adapts to the selected handler's color palette.
 
+## Routing
+
+### Mission Flow
+The primary route structure is a nested mission shell:
+```
+/mission           → MissionShell (tabs + onboarding gate)
+  /mission/brief   → BriefSurface
+  /mission/triage  → TriageSurface
+  /mission/case    → CaseSurface
+  /mission/signal  → SignalSurface
+  /mission/checklist → ChecklistSurface
+  /mission/debrief → DebriefSurface
+  /mission/stats   → StatsSurface (feature-flagged)
+  /mission/plan    → PlanSurface (feature-flagged)
+```
+
+Legacy routes (`/home/*`, `/schedules`, `/drills`, `/training`, `/settings`) redirect to their mission surface equivalents.
+
+### Lazy Loading
+All mission surfaces are lazy-loaded with `React.lazy()` and wrapped in `<Suspense>` with a `SurfaceLoader` fallback.
+
+## Feature Flags
+
+22 feature flags in `src/config/featureFlags.ts` control progressive rollout:
+
+```typescript
+import { isFeatureEnabled } from './config/featureFlags';
+
+if (isFeatureEnabled('drillRunnerUpgrade')) {
+  // Enhanced drill runner with timer, history, rest intervals
+}
+```
+
+Flags can be overridden via:
+- Environment variables (`VITE_FEATURE_FLAGS`)
+- localStorage (`ptb:feature-flag-overrides`)
+- Per-environment defaults (dev/staging/production)
+
+## Testing
+
+### Running Tests
 ```bash
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Run linting
-npm run lint
-
-# Run tests
+# All unit tests
 npm run test
 
-# Generate module paths
-npm run generate-module-paths
+# Watch mode
+npx vitest --watch
 
-# Generate submodule paths
-npm run generate-submodule-paths
+# Coverage report
+npx vitest --coverage
 
-# Generate card deck paths
-npm run generate-carddeck-paths
+# Headless smoke test
+npm run smoke:headless
+
+# Operative scenario simulation
+BASE_URL=http://localhost:4173 npm run test:psi-scenario
 ```
+
+### Test Structure
+Tests live alongside their source in `__tests__/` directories:
+```
+store/
+  __tests__/
+    UserProgressStore.test.ts
+    DrillHistoryStore.test.ts
+components/
+  __tests__/
+    DrillRunner.test.tsx
+    ChallengeBoard.test.tsx
+```
+
+### Writing Tests
+- Use Vitest with React Testing Library for component tests
+- Use `jsdom` environment (configured in `vitest.config.ts`)
+- Mock localStorage for store tests
+- Mock Gun.js for identity/sync tests
+
+## Build Process
+
+### Production Build
+```bash
+npm run build
+```
+
+The build process:
+1. Generates combined training data
+2. Generates module, submodule, card deck, and workout category path mappings
+3. TypeScript compilation
+4. Vite bundling with SWC
+
+### Analysis
+```bash
+# Bundle visualization
+npm run analyze
+
+# Payload size report
+npm run report:sizes
+
+# Mission route payload report
+npm run report:mission-route-payloads
+```
+
+## Quality Gates
+
+```bash
+# Lint
+npm run lint
+
+# Type checking
+npx tsc --noEmit
+
+# Payload budget verification
+npm run check:payload-budgets
+
+# Service worker offline validation
+npm run check:sw-offline
+
+# Deep link validation
+npm run check:deeplinks
+```
+
+## Debugging
+
+### Browser Developer Tools
+- **React DevTools** — Component tree, state inspection
+- **Application tab** — localStorage contents, service worker status, cache storage
+- **Network tab** — Asset loading, training data requests
+
+### Cache Debug Mode
+In development, `registerCacheDebug()` exposes cache inspection utilities on the global scope for debugging data loading issues.
+
+### Performance Marks
+The app records Performance API marks at key lifecycle points:
+- `load:boot_start` — Application entry
+- `load:shell_painted` — First meaningful paint
+- `load:critical_ready` — Data loaded, interactive
+- `load:enrichment_done` — Background caches warmed
+- `load:idle_warm_done` — All warming complete

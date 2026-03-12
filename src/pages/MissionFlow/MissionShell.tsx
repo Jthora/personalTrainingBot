@@ -18,7 +18,6 @@ import {
   missionRoutePaths,
   type MissionRoutePath,
 } from '../../utils/missionTelemetryContracts';
-import { isFeatureEnabled } from '../../config/featureFlags';
 import OperativeProfileStore from '../../store/OperativeProfileStore';
 import type { ArchetypeDefinition } from '../../data/archetypes';
 import { getArchetypeHints } from '../../utils/archetypeHints';
@@ -105,9 +104,9 @@ const MissionShell: React.FC = () => {
   const paletteSelectedRef = useRef<boolean>(false);
 
   // ── Stage 22: Archetype/Handler intake gates ────────────────────────
-  const archetypeEnabled = isFeatureEnabled('archetypeSystem');
-  const statsSurfaceEnabled = isFeatureEnabled('statsSurface');
-  const planSurfaceEnabled = isFeatureEnabled('planSurface');
+  const archetypeEnabled = true;
+  const statsSurfaceEnabled = true;
+  const planSurfaceEnabled = true;
   const existingProfile = OperativeProfileStore.get();
   const [showArchetypePicker, setShowArchetypePicker] = useState(
       archetypeEnabled && !existingProfile,
@@ -367,7 +366,7 @@ const MissionShell: React.FC = () => {
   return (
     <div className={styles.pageContainer}>
       <Header />
-      {isFeatureEnabled('celebrations') && <CelebrationLayer />}
+      <CelebrationLayer />
       <div className={styles.shell}>
         {showGuidanceOverlay && (
           <section className={styles.guidanceOverlay} role="dialog" aria-label="Guided training quick start">

@@ -19,69 +19,53 @@ describe('featureFlags', () => {
         sessionStorage.clear();
     });
 
-    it('uses production mission-first defaults when in production', async () => {
+    it('uses production defaults when in production', async () => {
         mockEnv('production');
         const mod = await loadModule();
-        expect(mod.isFeatureEnabled('calendarSurface')).toBe(false);
-        expect(mod.isFeatureEnabled('migrationBridge')).toBe(false);
-        expect(mod.isFeatureEnabled('generatorSwap')).toBe(true);
         expect(mod.isFeatureEnabled('performanceInstrumentation')).toBe(false);
-        expect(mod.isFeatureEnabled('canonicalReadPath')).toBe(false);
-        expect(mod.isFeatureEnabled('missionDefaultRoutes')).toBe(true);
-        expect(mod.isFeatureEnabled('missionSurfaceBrief')).toBe(true);
+        expect(mod.isFeatureEnabled('loadingCacheV2')).toBe(false);
+        expect(mod.isFeatureEnabled('p2pIdentity')).toBe(false);
+        expect(mod.isFeatureEnabled('ipfsContent')).toBe(false);
     });
 
-    it('uses mission-first defaults when in staging', async () => {
+    it('uses development defaults when in staging', async () => {
         mockEnv('staging');
         const mod = await loadModule();
-        expect(mod.isFeatureEnabled('missionDefaultRoutes')).toBe(true);
-        expect(mod.isFeatureEnabled('missionSurfaceBrief')).toBe(true);
-        expect(mod.isFeatureEnabled('missionSurfaceTriage')).toBe(true);
-        expect(mod.isFeatureEnabled('missionSurfaceCase')).toBe(true);
-        expect(mod.isFeatureEnabled('missionSurfaceSignal')).toBe(true);
-        expect(mod.isFeatureEnabled('missionSurfaceChecklist')).toBe(true);
-        expect(mod.isFeatureEnabled('missionSurfaceDebrief')).toBe(true);
+        expect(mod.isFeatureEnabled('performanceInstrumentation')).toBe(true);
+        expect(mod.isFeatureEnabled('loadingCacheV2')).toBe(true);
+        expect(mod.isFeatureEnabled('p2pIdentity')).toBe(true);
+        expect(mod.isFeatureEnabled('ipfsContent')).toBe(false);
     });
 
     it('honors VITE_FEATURE_FLAGS overrides', async () => {
         mockEnv('staging', JSON.stringify({
-            calendarSurface: false,
-            migrationBridge: true,
             performanceInstrumentation: false,
-            canonicalReadPath: true,
-            missionDefaultRoutes: true,
-            missionSurfaceBrief: true,
-            missionSurfaceTriage: true,
+            p2pIdentity: false,
         }));
         const mod = await loadModule();
-        expect(mod.isFeatureEnabled('calendarSurface')).toBe(false);
-        expect(mod.isFeatureEnabled('migrationBridge')).toBe(true);
         expect(mod.isFeatureEnabled('performanceInstrumentation')).toBe(false);
-        expect(mod.isFeatureEnabled('canonicalReadPath')).toBe(true);
-        expect(mod.isFeatureEnabled('missionDefaultRoutes')).toBe(true);
-        expect(mod.isFeatureEnabled('missionSurfaceBrief')).toBe(true);
-        expect(mod.isFeatureEnabled('missionSurfaceTriage')).toBe(true);
+        expect(mod.isFeatureEnabled('p2pIdentity')).toBe(false);
     });
 
     it('applies global kill switch across features', async () => {
         mockEnv('development');
         const mod = await loadModule();
         mod.setGlobalKillSwitch(true);
-        expect(mod.isFeatureEnabled('generatorSwap')).toBe(false);
-        expect(mod.isFeatureEnabled('calendarSurface')).toBe(false);
+        expect(mod.isFeatureEnabled('performanceInstrumentation')).toBe(false);
+        expect(mod.isFeatureEnabled('p2pIdentity')).toBe(false);
     });
 
     it('reset clears overrides and recomputes env defaults', async () => {
         mockEnv('production');
         let mod = await loadModule();
-        mod.setFeatureFlagOverride('calendarSurface', true);
-        expect(mod.isFeatureEnabled('calendarSurface')).toBe(true);
+        mod.setFeatureFlagOverride('p2pIdentity', true);
+        expect(mod.isFeatureEnabled('p2pIdentity')).toBe(true);
         mod.resetFeatureFlagOverrides();
         // re-import to ensure recompute stays stable with env
         vi.resetModules();
         mockEnv('production');
         mod = await loadModule();
-        expect(mod.isFeatureEnabled('calendarSurface')).toBe(false);
+        expect(mod.isFeatureEnabled('p2pIdentity')).toBe(false);
         expect(mod.isFeatureEnabled('performanceInstrumentation')).toBe(false);
     });
 });

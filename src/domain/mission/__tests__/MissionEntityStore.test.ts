@@ -60,18 +60,8 @@ describe('MissionEntityStore', () => {
         expect(collection?.artifacts.some((artifact) => artifact.id === 'artifact-charlie-origin-report')).toBe(true);
     });
 
-    it('switches read path based on canonicalReadPath feature flag', async () => {
-        const mod = await import('../../../config/featureFlags');
-        const setOverrideSpy = vi.spyOn(mod, 'setFeatureFlagOverride');
-
-        mod.setFeatureFlagOverride('canonicalReadPath', false);
+    it('returns legacy read path', () => {
         expect(MissionEntityStore.getInstance().getReadPath()).toBe('legacy');
-
-        mod.setFeatureFlagOverride('canonicalReadPath', true);
-        expect(MissionEntityStore.getInstance().getReadPath()).toBe('canonical');
-
-        setOverrideSpy.mockRestore();
-        mod.resetFeatureFlagOverrides();
     });
 
     describe('mutations', () => {

@@ -1,4 +1,5 @@
 import { trackEvent } from '../utils/telemetry';
+import { createStore } from './createStore';
 
 type AARRole = 'ops' | 'intel' | 'medical' | 'training';
 
@@ -17,36 +18,9 @@ export type AAREntry = {
   updatedAt: number;
 };
 
-const AAR_KEY = 'ptb:aar-entries';
-
-type Listener = (entries: AAREntry[]) => void;
-const listeners = new Set<Listener>();
-
-const readJSON = <T>(key: string): T | null => {
-  if (typeof window === 'undefined') return null;
-  try {
-    const raw = window.localStorage.getItem(key);
-    return raw ? (JSON.parse(raw) as T) : null;
-  } catch (err) {
-    console.warn('[AARStore] read failed', key, err);
-    return null;
-  }
-};
-
-const writeJSON = (key: string, value: unknown) => {
-  if (typeof window === 'undefined') return;
-  try {
-    window.localStorage.setItem(key, JSON.stringify(value));
-  } catch (err) {
-    console.warn('[AARStore] write failed', key, err);
-  }
-};
-
-const ensureEntries = (): AAREntry[] => {
-  const existing = readJSON<AAREntry[]>(AAR_KEY);
-  if (existing && existing.length > 0) return existing;
+const starterEntry = (): AAREntry => {
   const now = Date.now();
-  const starter: AAREntry = {
+  return {
     id: 'aar-starter',
     title: 'Starter AAR',
     context: 'Dry-run of drill runner and offline sync.',
@@ -59,28 +33,24 @@ const ensureEntries = (): AAREntry[] => {
     createdAt: now,
     updatedAt: now,
   };
-  writeJSON(AAR_KEY, [starter]);
-  return [starter];
 };
 
-const setEntries = (entries: AAREntry[]) => {
-  writeJSON(AAR_KEY, entries);
-  listeners.forEach((cb) => cb(entries));
-};
+const store = createStore<AAREntry[]>({
+  key: 'ptb:aar-entries',
+  defaultValue: [starterEntry()],
+  validate: (raw) => {
+    if (!Array.isArray(raw)) return null;
+    return raw.length > 0 ? (raw as AAREntry[]) : null; // null → seed with starter
+  },
+});
 
 const nextId = () => `aar-${crypto.randomUUID ? crypto.randomUUID() : Date.now()}`;
 
 export const AARStore = {
-  subscribe(listener: Listener) {
-    listeners.add(listener);
-    listener(ensureEntries());
-    return () => {
-      listeners.delete(listener);
-    };
-  },
+  subscribe: store.subscribe.bind(store),
 
   list(): AAREntry[] {
-    return ensureEntries().sort((a, b) => b.updatedAt - a.updatedAt);
+    return store.get().sort((a, b) => b.updatedAt - a.updatedAt);
   },
 
   create(): AAREntry {
@@ -98,25 +68,22 @@ export const AARStore = {
       createdAt: now,
       updatedAt: now,
     };
-    const entries = [entry, ...ensureEntries()];
-    setEntries(entries);
+    store.update((entries) => [entry, ...entries]);
     trackEvent({ category: 'aar', action: 'aar_create', data: { id: entry.id, role: entry.role, title: entry.title }, source: 'ui' });
     return entry;
   },
 
   save(entry: AAREntry) {
-    const entries = ensureEntries();
-    const next = [entry, ...entries.filter((e) => e.id !== entry.id)];
-    setEntries(next);
+    store.update((entries) => [entry, ...entries.filter((e) => e.id !== entry.id)]);
     trackEvent({ category: 'aar', action: 'aar_save', data: { id: entry.id, role: entry.role, title: entry.title }, source: 'ui' });
   },
 
   replaceAll(entries: AAREntry[]): void {
-    setEntries([...entries].sort((a, b) => b.updatedAt - a.updatedAt));
+    store.set([...entries].sort((a, b) => b.updatedAt - a.updatedAt));
   },
 
   exportEntry(id: string): string | null {
-    const entry = ensureEntries().find((e) => e.id === id);
+    const entry = store.get().find((e) => e.id === id);
     if (!entry) return null;
     trackEvent({ category: 'aar', action: 'aar_export', data: { id: entry.id, role: entry.role, title: entry.title }, source: 'ui' });
     return JSON.stringify(entry, null, 2);

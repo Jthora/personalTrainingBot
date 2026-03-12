@@ -20,7 +20,7 @@ const routes = [
   '/home/plan',
   '/home/cards',
   '/home/progress',
-  '/home/coach',
+  '/home/handler',
   '/home/settings',
   '/mission/brief?op=op-operation-alpha&case=case-alpha-relay-corridor&signal=signal-alpha-beacon-surge',
   '/mission/triage?op=op-operation-alpha&case=case-alpha-relay-corridor&signal=signal-alpha-beacon-surge',

@@ -39,18 +39,18 @@ export interface CustomMissionScheduleJSON {
 
 const isMissionSetJSON = (item: MissionScheduleItemJSON): item is MissionSetJSON => 'drills' in item;
 
-const hydrateWorkout = ([drill, completed]: DrillCompletionTupleJSON): [Drill, boolean] => {
-    const reconstructedWorkout = new Drill(
+const hydrateDrill = ([drill, completed]: DrillCompletionTupleJSON): [Drill, boolean] => {
+    const reconstructedDrill = new Drill(
         drill.name,
         drill.description,
         drill.duration,
         drill.intensity,
         drill.difficulty_range
     );
-    return [reconstructedWorkout, completed];
+    return [reconstructedDrill, completed];
 };
 
-const serializeWorkout = (drill: Drill): DrillSerialized => ({
+const serializeDrill = (drill: Drill): DrillSerialized => ({
     name: drill.name,
     description: drill.description,
     duration: drill.duration,
@@ -85,7 +85,7 @@ export class MissionSchedule {
                 if (!currentItem.drills[i][1]) {
                     console.log(`MissionSchedule: Completing drill at index ${i}:`, currentItem.drills[i][0]);
                     currentItem.drills[i][1] = true;
-                    if (currentItem.allWorkoutsCompleted) {
+                    if (currentItem.allDrillsCompleted) {
                         console.log('MissionSchedule: All drills in the set are completed. Removing completed MissionSet');
                         this.scheduleItems.shift();
                     } else {
@@ -117,7 +117,7 @@ export class MissionSchedule {
                 if (!currentItem.drills[i][1]) {
                     console.log(`MissionSchedule: Skipping drill at index ${i}:`, currentItem.drills[i][0]);
                     currentItem.drills[i][1] = true;
-                    if (currentItem.allWorkoutsCompleted) {
+                    if (currentItem.allDrillsCompleted) {
                         console.log('MissionSchedule: All drills in the set are completed. Removing completed MissionSet');
                         this.scheduleItems.shift();
                     } else {
@@ -137,7 +137,7 @@ export class MissionSchedule {
     static fromJSON(json: MissionScheduleJSON): MissionSchedule {
         const scheduleItems = json.scheduleItems.map(item => {
             if (isMissionSetJSON(item)) {
-                return new MissionSet(item.drills.map(hydrateWorkout));
+                return new MissionSet(item.drills.map(hydrateDrill));
             }
             return new MissionBlock(item.name, item.description, item.duration, item.intervalDetails);
         });
@@ -149,7 +149,7 @@ export class MissionSchedule {
         const scheduleItems: MissionScheduleItemJSON[] = this.scheduleItems.map(item => {
             if (item instanceof MissionSet) {
                 return {
-                    drills: item.drills.map(([drill, completed]) => [serializeWorkout(drill), completed]),
+                    drills: item.drills.map(([drill, completed]) => [serializeDrill(drill), completed]),
                 };
             }
 
@@ -176,7 +176,7 @@ export class MissionSet {
         this.drills = drills;
     }
 
-    get allWorkoutsCompleted(): boolean {
+    get allDrillsCompleted(): boolean {
         return this.drills.every(([, completed]) => completed);
     }
 }

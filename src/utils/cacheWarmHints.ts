@@ -15,7 +15,7 @@ export const warmCaches = (onComplete?: () => void) => {
                 if (categoryCache.cache.size === 0) {
                     console.info('CacheWarmHints: DrillCategoryCache empty; warm will no-op until load completes.');
                 } else {
-                    categoryCache.getAllWorkouts();
+                    categoryCache.getAllDrills();
                 }
 
                 if (signal.aborted) return;

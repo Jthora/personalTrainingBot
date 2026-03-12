@@ -23,7 +23,7 @@ export const useSelectionSummary = () => {
             }, DEBOUNCE_MS);
         };
 
-        const unsubscribe = MissionScheduleStore.subscribeToSelectionChanges(handleChange);
+        const unsubscribe = MissionScheduleStore.subscribeToScheduleStoreChanges(handleChange);
         return () => {
             if (timer) window.clearTimeout(timer);
             unsubscribe();

@@ -1,7 +1,7 @@
 {
     "name": "Dual Weapon Fundamentals",
     "description": "Mastering the synchronization of sword, knife, and wrist-blade combat through drills that refine control, transitions, and offensive-defensive synergy.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Weapon Familiarization & Basic Mechanics",
             "description": "Developing control, accuracy, and foundational strikes for dual-wield combat.",

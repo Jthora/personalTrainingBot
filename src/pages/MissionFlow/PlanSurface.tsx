@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import styles from './MissionFlow.module.css';
 import planStyles from './PlanSurface.module.css';
-import MissionScheduleStore from '../../store/MissionScheduleStore';
+import useMissionSchedule from '../../hooks/useMissionSchedule';
 import CustomMissionSchedulesStore from '../../store/CustomMissionSchedulesStore';
 import UserProgressStore from '../../store/UserProgressStore';
 import { MissionSet, MissionBlock } from '../../types/MissionSchedule';
@@ -51,8 +51,7 @@ interface PlanRest {
 type PlanItem = { type: 'drill'; drill: PlanDrill } | { type: 'rest'; rest: PlanRest };
 
 /** Extract displayable items from the schedule for a given day key. */
-const extractItemsForDay = (dayKey: string): PlanItem[] => {
-  const schedule = MissionScheduleStore.getScheduleSync();
+const extractItemsForDay = (dayKey: string, schedule: { date: string; scheduleItems: ReadonlyArray<unknown> } | null): PlanItem[] => {
   if (!schedule) return [];
 
   // The schedule is date-stamped; if today's schedule matches dayKey, use it
@@ -83,6 +82,7 @@ const extractItemsForDay = (dayKey: string): PlanItem[] => {
 };
 
 const PlanSurface: React.FC = () => {
+  const { schedule, createNewSchedule } = useMissionSchedule();
   const today = useMemo(() => new Date(), []);
   const todayKey = formatDateKey(today);
   const weekDates = useMemo(() => getWeekDates(today), [today]);
@@ -93,10 +93,10 @@ const PlanSurface: React.FC = () => {
     const map = new Map<string, PlanItem[]>();
     for (const d of weekDates) {
       const key = formatDateKey(d);
-      map.set(key, extractItemsForDay(key));
+      map.set(key, extractItemsForDay(key, schedule));
     }
     return map;
-  }, [weekDates]);
+  }, [weekDates, schedule]);
 
   const selectedItems = dayItemsMap.get(selectedDay) ?? [];
   const selectedDate = weekDates.find((d) => formatDateKey(d) === selectedDay) ?? today;
@@ -125,9 +125,7 @@ const PlanSurface: React.FC = () => {
   }, [dayItemsMap]);
 
   const handleRegenerate = () => {
-    MissionScheduleStore.createNewScheduleSync();
-    // Force re-render by navigating in place (the store mutates localStorage)
-    window.location.reload();
+    createNewSchedule();
   };
 
   return (

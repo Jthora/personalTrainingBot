@@ -1,7 +1,7 @@
 {
     "name": "Breathing",
     "description": "Breathing exercises to improve respiratory control, oxygen efficiency, and endurance.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Breathing",
             "description": "Improve respiratory control, oxygen efficiency, and endurance through controlled breathing exercises.",

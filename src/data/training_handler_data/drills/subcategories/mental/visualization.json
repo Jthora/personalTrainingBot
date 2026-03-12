@@ -1,7 +1,7 @@
 {
     "name": "Visualization",
     "description": "Visualization exercises to improve mental imagery skills, enhance performance, and boost cognitive function.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Visualization",
             "description": "Improve mental imagery skills to enhance performance, decision-making, and goal-setting.",

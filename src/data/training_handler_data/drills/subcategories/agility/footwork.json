@@ -1,7 +1,7 @@
 {
     "name": "Footwork",
     "description": "Footwork drills to improve agility and speed.",
-    "workout_groups":[
+    "drill_groups":[
         {
             "name": "Tactical Footwork Drills",
             "description": "Rapid direction changes and dodging techniques.",

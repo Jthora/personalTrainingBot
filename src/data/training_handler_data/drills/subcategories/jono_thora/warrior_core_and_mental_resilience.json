@@ -1,7 +1,7 @@
 {
     "name": "Warrior Core & Mental Resilience (Toughness & Focus)",
     "description": "Training designed to forge mental toughness, unshakable focus, and combat stamina through extreme resilience-building techniques.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Meditation & Focus Training",
             "description": "Developing combat-ready mental clarity, heightened awareness, and inner resilience through intense focus techniques.",

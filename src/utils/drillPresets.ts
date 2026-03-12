@@ -41,7 +41,7 @@ export const buildPresetSelections = (categories: DrillCategory[], preset: Drill
     const categoryIds = new Set<string>();
     const subCategoryIds = new Set<string>();
     const groupIds = new Set<string>();
-    const workoutIds = new Set<string>();
+    const drillIds = new Set<string>();
 
     categories.forEach(category => {
         category.subCategories.forEach(sub => {
@@ -52,12 +52,12 @@ export const buildPresetSelections = (categories: DrillCategory[], preset: Drill
                         categoryIds.add(category.id);
                         subCategoryIds.add(sub.id);
                         groupIds.add(group.id);
-                        workoutIds.add(drill.id);
+                        drillIds.add(drill.id);
                     }
                 });
             });
         });
     });
 
-    return { categoryIds, subCategoryIds, groupIds, workoutIds };
+    return { categoryIds, subCategoryIds, groupIds, drillIds };
 };

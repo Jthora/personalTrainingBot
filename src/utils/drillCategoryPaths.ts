@@ -1,6 +1,6 @@
 import type { DrillCategoryFile } from "../types/TrainingDataFiles";
 
-const rawWorkoutCategories = import.meta.glob("../data/training_handler_data/drills/*.json", { eager: true });
+const rawDrillCategories = import.meta.glob("../data/training_handler_data/drills/*.json", { eager: true });
 
 const normalize = (value: unknown): DrillCategoryFile => {
     const maybeModule = value as { default?: unknown };
@@ -11,7 +11,7 @@ const normalize = (value: unknown): DrillCategoryFile => {
 };
 
 const drillCategoryData = Object.fromEntries(
-    Object.entries(rawWorkoutCategories).map(([fullPath, mod]) => {
+    Object.entries(rawDrillCategories).map(([fullPath, mod]) => {
         const match = fullPath.match(/drills\/([^/]+)\.json$/);
         const id = match ? match[1] : undefined;
         if (!id) {
@@ -25,4 +25,4 @@ export const drillCategoryPaths = Object.fromEntries(
     Object.entries(drillCategoryData).map(([id, value]) => [id, async () => value])
 ) satisfies Record<string, () => Promise<DrillCategoryFile>>;
 
-export const totalWorkoutCategories = Object.keys(drillCategoryData).length;
+export const totalDrillCategories = Object.keys(drillCategoryData).length;

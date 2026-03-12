@@ -1,52 +1,37 @@
 # Troubleshooting Guide
 
-## Common Issues and Solutions
+## Installation & Build
 
-### Installation Issues
+### Node.js Version Mismatch
+**Symptom:** Build fails with version-related errors.
 
-#### Node.js Version Mismatch
-**Problem**: Build fails with version-related errors
-**Solution**: 
 ```bash
-# Check your Node.js version
-node --version
-
-# Install Node.js 18 or higher
-nvm install 18
-nvm use 18
+node --version   # Must be 18+
+nvm install 18 && nvm use 18
 ```
 
-#### Package Installation Failures
-**Problem**: `npm install` fails with permission or network errors
-**Solution**:
+### Package Installation Failures
 ```bash
-# Clear npm cache
 npm cache clean --force
-
-# Delete node_modules and package-lock.json
 rm -rf node_modules package-lock.json
-
-# Reinstall packages
 npm install
 ```
 
-### Build Issues
-
-#### TypeScript Compilation Errors
-**Problem**: Build fails with TypeScript errors
-**Solution**:
-1. Check for missing type definitions
-2. Verify import paths are correct
-3. Run type checking separately:
+### TypeScript Compilation Errors
 ```bash
+# Run type checking independently of the build
 npx tsc --noEmit
 ```
 
-#### Path Generation Failures
-**Problem**: Path generation scripts fail during build
-**Solution**:
+Common causes:
+- Missing type imports (check `src/types/` for available types)
+- Incorrect import paths after file moves
+- Feature-flagged code referencing types from disabled modules
+
+### Path Generation Failures
+The build generates path mappings before compilation. If these fail:
+
 ```bash
-# Run path generation manually
 npm run generate-module-paths
 npm run generate-submodule-paths
 npm run generate-carddeck-paths
@@ -54,214 +39,240 @@ npm run generate-workout-category-paths
 npm run generate-workout-subcategory-paths
 ```
 
-#### Memory Issues During Build
-**Problem**: Build process runs out of memory
-**Solution**:
+### Memory Issues During Build
 ```bash
-# Increase Node.js memory limit
 NODE_OPTIONS="--max-old-space-size=4096" npm run build
 ```
 
-### Runtime Issues
+---
 
-#### Data Loading Failures
-**Problem**: Training modules or data don't load properly
-**Solution**:
-1. Check browser console for errors
-2. Verify data files exist in correct locations
-3. Check network tab for failed requests
-4. Clear browser cache and reload
+## Runtime Issues
 
-#### Audio Not Playing
-**Problem**: Sound effects don't work
-**Solution**:
-1. Check browser audio permissions
-2. Verify audio files exist in `src/assets/sounds/`
-3. Check audio format compatibility
-4. Test with different browsers
+### Training Data Not Loading
+**Symptom:** Blank triage board, no modules visible.
 
-#### Performance Issues
-**Problem**: Application is slow or unresponsive
-**Solution**:
-1. Check browser performance tab
-2. Look for memory leaks
-3. Verify data caching is working
-4. Consider reducing concurrent animations
+1. Open DevTools → Network tab → look for failed requests to `/training_modules_manifest.json` or `/training_modules_shards/*.json`
+2. Verify the data was generated: `ls public/training_modules_shards/`
+3. Regenerate if missing: `npm run generate-training-data-combined`
+4. Check `TrainingModuleCache.getInstance().isLoaded()` in the console
 
-### Development Issues
+### Mission Flow Not Advancing
+**Symptom:** Stuck on a mission surface (Brief, Triage, Case, etc.).
 
-#### Hot Reload Not Working
-**Problem**: Changes don't appear during development
-**Solution**:
-```bash
-# Restart development server
-npm run dev
+1. Check the console for errors in `MissionEntityStore` or `lifecycle.ts`
+2. Inspect mission state: open DevTools console and run:
+   ```javascript
+   JSON.parse(localStorage.getItem('userProgress:v1'))
+   ```
+3. Check the mission schedule store for corrupted data:
+   ```javascript
+   // Look at the raw schedule
+   localStorage.getItem('missionSchedule')
+   ```
+4. Clear mission state and restart:
+   ```javascript
+   localStorage.removeItem('missionSchedule');
+   location.reload();
+   ```
 
-# Clear Vite cache
-rm -rf node_modules/.vite
-npm run dev
-```
+### Drills Not Appearing in Triage
+**Symptom:** Triage surface shows empty or limited drill options.
 
-#### Import Errors
-**Problem**: Cannot resolve module imports
-**Solution**:
-1. Check file paths are correct
-2. Verify file extensions are included
-3. Check tsconfig.json path mappings
-4. Restart TypeScript service in your editor
+1. Check drill filters are not overly restrictive:
+   ```javascript
+   JSON.parse(localStorage.getItem('drillFilters:v1'))
+   ```
+2. Reset to defaults:
+   ```javascript
+   localStorage.removeItem('drillFilters:v1');
+   location.reload();
+   ```
+3. Verify `DrillCategoryCache` loaded successfully:
+   ```javascript
+   DrillCategoryCache.getInstance().getWorkoutCategories().length
+   ```
 
-### Component Issues
+### Handler Not Displaying Correctly
+**Symptom:** Missing handler theme, no motivational quotes, default colours.
 
-#### Components Not Rendering
-**Problem**: React components don't appear or render incorrectly
-**Solution**:
-1. Check React DevTools
-2. Verify component props are correct
-3. Check for JavaScript errors in console
-4. Verify component export/import statements
+1. Check handler selection in operative profile:
+   ```javascript
+   JSON.parse(localStorage.getItem('operative:profile:v1'))
+   ```
+2. Verify handler data loaded:
+   ```javascript
+   TrainingHandlerCache.getInstance().getHandlerData('tiger_fitness_god')
+   ```
+3. Check CSS custom properties are being set — inspect the root element for `--handler-primary` and `--handler-accent`
 
-#### State Management Issues
-**Problem**: Zustand stores not updating properly
-**Solution**:
-1. Check store subscriptions
-2. Verify state mutations are immutable
-3. Use React DevTools for Zustand
-4. Check for stale closures
+---
 
-### Data Issues
+## Offline & PWA Issues
 
-#### Training Data Not Loading
-**Problem**: Training modules or workouts don't appear
-**Solution**:
-1. Check data file structure matches TypeScript interfaces
-2. Verify JSON files are valid
-3. Check data loader cache
-4. Clear application cache
+### Service Worker Not Registering
+**Symptom:** No offline capability, no install prompt.
 
-#### Schedule Data Corruption
-**Problem**: Workout schedules become corrupted
-**Solution**:
-1. Check localStorage for corrupted data
-2. Clear application data:
+- SW only registers in **production** builds (`npm run build && npm run preview`)
+- Check DevTools → Application → Service Workers
+- The SW requires HTTPS (or localhost)
+
+### Stale Content After Update
+**Symptom:** Old UI persists after a new deploy.
+
+1. Check if the SW update notification appears — `UpdateNotification` component handles this
+2. Force update via DevTools → Application → Service Workers → "Update"
+3. Hard refresh: `Ctrl+Shift+R` / `Cmd+Shift+R`
+4. Clear all caches via DevTools → Application → Storage → "Clear site data"
+
+### Offline Data Not Available
+**Symptom:** App shows blank content when offline.
+
+1. Verify the SW precache includes critical assets — run `npm run check:precache-size`
+2. Check SW cache contents in DevTools → Application → Cache Storage
+3. The manifest and shards should be cached after first successful online load
+
+---
+
+## Identity & Sync Issues
+
+### Gun.js Identity Not Generating
+**Symptom:** No operative identity, sovereignty panel empty.
+
+1. Check localStorage for the identity key:
+   ```javascript
+   localStorage.getItem('ptb:gun-identity')
+   ```
+2. If null, the SEA keypair generation may have failed — check console for Gun.js errors
+3. Regenerate identity by clearing and reloading:
+   ```javascript
+   localStorage.removeItem('ptb:gun-identity');
+   location.reload();
+   ```
+
+### Profile Not Persisting
+**Symptom:** Callsign, archetype, or handler resets on reload.
+
+1. Check the operative profile store:
+   ```javascript
+   JSON.parse(localStorage.getItem('operative:profile:v1'))
+   ```
+2. Look for storage quota issues — large telemetry queues can fill localStorage
+3. Check for private/incognito mode — storage may be cleared on close
+
+### QR Code Import Failing
+**Symptom:** Scanning a QR code doesn't restore identity.
+
+- Verify the QR contains a valid Gun.js SEA keypair JSON
+- The scanning device must have camera permissions enabled
+- Check that the exported data hasn't been truncated (QR codes have size limits)
+
+---
+
+## Performance Issues
+
+### Slow Initial Load
+**Symptom:** Long loading screen on first visit.
+
+1. Check network tab for large payloads — module shards can be substantial
+2. Run payload budget checks: `npm run check:payload-budgets`
+3. The IndexedDB cache (`loadingCacheV2` feature flag) can speed up repeat visits
+4. Check if development mode is accidentally enabled
+
+### UI Jank During Drills
+**Symptom:** Laggy timer, stuttering animations during Case surface.
+
+1. Profile with DevTools → Performance tab
+2. Check for excessive re-renders — the `DrillRunStore` subscribe pattern should prevent cascading updates
+3. Look for large component trees re-rendering on timer ticks
+4. Performance marks are instrumented — look for `ptb:` prefixed marks in the Performance timeline
+
+### Memory Growth
+**Symptom:** App slows down over extended use.
+
+1. Check DevTools → Memory → Heap snapshot
+2. Common causes: un-unsubscribed store listeners, growing telemetry queues
+3. Flush telemetry queue: `DrillRunStore.flushQueue()`
+
+---
+
+## Data Issues
+
+### Corrupted localStorage
+**Symptom:** App crashes on load or shows unexpected behaviour.
+
+Nuclear option — clear all app state:
 ```javascript
-localStorage.clear()
+Object.keys(localStorage)
+  .filter(k => k.startsWith('ptb:') || k.startsWith('userProgress') || k.startsWith('drillFilters') || k.startsWith('trainingSelection') || k.startsWith('missionSchedule') || k.startsWith('customMissionSchedule') || k.startsWith('operative:') || k.startsWith('difficultySettings') || k.startsWith('featureFlags') || k.startsWith('missionKit'))
+  .forEach(k => localStorage.removeItem(k));
+location.reload();
 ```
-3. Verify schedule data structure
-4. Check for concurrent modifications
 
-### Browser Compatibility
+### Feature Flags Misbehaving
+**Symptom:** Features appear or disappear unexpectedly.
 
-#### Unsupported Browser Features
-**Problem**: Application doesn't work in older browsers
-**Solution**:
-1. Check browser support matrix
-2. Add necessary polyfills
-3. Update browserslist configuration
-4. Test in target browsers
+1. Check current flags:
+   ```javascript
+   JSON.parse(localStorage.getItem('featureFlags:v1'))
+   ```
+2. Check config-level flags: inspect `src/config/featureFlags.ts` for hardcoded overrides
+3. Flags merge in order: defaults → config → user progress → localStorage overrides
+4. Reset to defaults:
+   ```javascript
+   localStorage.removeItem('featureFlags:v1');
+   location.reload();
+   ```
 
-#### CSS Issues
-**Problem**: Styling appears broken
-**Solution**:
-1. Check CSS module imports
-2. Verify CSS custom properties support
-3. Check for CSS specificity conflicts
-4. Use browser developer tools
+---
 
-### Deployment Issues
+## Testing Issues
 
-#### Build Artifacts Missing
-**Problem**: Built application missing files
-**Solution**:
-1. Check build output in `dist/` folder
-2. Verify all assets are included
-3. Check Vite configuration
-4. Ensure all imports are resolved
+### Tests Failing
+```bash
+# Run all tests
+npm test
 
-#### Environment Variables Not Working
-**Problem**: Environment variables not available
-**Solution**:
-1. Check variable naming (must start with `VITE_`)
-2. Verify `.env` file location
-3. Check deployment platform environment settings
-4. Restart development server
+# Run with verbose output
+npx vitest run --reporter=verbose
 
-### Performance Debugging
+# Run a specific test file
+npx vitest run src/store/__tests__/DrillHistoryStore.test.ts
 
-#### Memory Leaks
-**Problem**: Application memory usage increases over time
-**Solution**:
-1. Use browser Memory tab
-2. Check for detached DOM nodes
-3. Verify event listeners are cleaned up
-4. Monitor Zustand store subscriptions
+# Run tests matching a pattern
+npx vitest run -t "should track drill completion"
+```
 
-#### Slow Loading
-**Problem**: Application takes too long to load
-**Solution**:
-1. Check network tab for slow requests
-2. Optimize bundle size
-3. Implement code splitting
-4. Use lazy loading for components
+### Test Environment Setup
+Tests use `vitest` with `jsdom`. The setup file `vitest.setup.ts` configures:
+- localStorage mock
+- DOM environment
+- Global test utilities
 
-## Debugging Tools
+If tests fail with environment errors, check `vitest.config.ts` and `vitest.setup.ts`.
 
-### Browser Developer Tools
-- Console: Check for JavaScript errors
-- Network: Monitor API requests and asset loading
-- Performance: Analyze runtime performance
-- Memory: Debug memory usage and leaks
+---
 
-### VS Code Extensions
-- TypeScript Hero
-- ES7+ React/Redux/React-Native snippets
-- Auto Rename Tag
-- Bracket Pair Colorizer
+## Quality Gate Scripts
 
-### React DevTools
-- Install React Developer Tools browser extension
-- Monitor component state and props
-- Debug React rendering issues
+These scripts run pre-deploy checks. If any fail, investigate before deploying:
+
+| Script | What It Checks |
+|---|---|
+| `npm run check:deeplinks` | All deep link routes resolve correctly |
+| `npm run check:deeplinks-offline` | Deep links work offline |
+| `npm run check:payload-budgets` | Bundle sizes within budget |
+| `npm run check:mission-route-budgets` | Mission route payloads within limits |
+| `npm run check:precache-size` | SW precache not oversized |
+| `npm run check:encodings` | Assets properly compressed |
+| `npm run check:sw-offline` | Service worker enables offline access |
+| `npm run check:offline-indicator` | Offline indicator appears correctly |
+| `npm run smoke:headless` | Headless smoke test passes |
+
+---
 
 ## Getting Help
 
-### Before Asking for Help
-1. Check this troubleshooting guide
-2. Search existing GitHub issues
-3. Check browser console for errors
-4. Try reproducing the issue in a clean environment
-
-### When Reporting Issues
-Include:
-- Operating system and version
-- Browser and version
-- Node.js version
-- Exact error messages
-- Steps to reproduce
-- Expected vs actual behavior
-
-### Support Channels
-- GitHub Issues for bug reports
-- Discussions for questions
-- Development team for urgent issues
-
-## Common Error Messages
-
-### "Module not found"
-- Check file paths and extensions
-- Verify file exists in correct location
-- Check import statement syntax
-
-### "Cannot read property of undefined"
-- Check for null/undefined values
-- Add proper error handling
-- Verify data structure
-
-### "Permission denied"
-- Check file permissions
-- Run with appropriate user privileges
-- Check security restrictions
-
-### "Network error"
-- Check internet connection
-- Verify server is running
-- Check firewall settings
+- Check [development.md](development.md) for local setup and conventions
+- Check [api.md](api.md) for store and cache APIs
+- Check [components.md](components.md) for component architecture
+- Check [cache-system.md](cache-system.md) for data loading and caching

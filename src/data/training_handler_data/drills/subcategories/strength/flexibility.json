@@ -1,7 +1,7 @@
 {
     "name": "Flexibility",
     "description": "Flexibility exercises to improve range of motion and prevent injuries.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Beginner Flexibility Routine",
             "description": "Basic stretches and mobility work to improve flexibility and prevent stiffness.",

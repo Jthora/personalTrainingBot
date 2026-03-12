@@ -191,9 +191,9 @@ describe('MissionScheduleContext', () => {
     });
 
     it('records completion and skip metrics', async () => {
-    const workoutA = new Drill('Drill A', 'desc', '10 min', 'Medium', [1, 3]);
-    const workoutB = new Drill('Drill B', 'desc', '10 min', 'Medium', [1, 3]);
-    const schedule = new MissionSchedule('A', [new MissionSet([[workoutA, false]]), new MissionSet([[workoutB, false]])], new DifficultySetting(1, [1, 3]));
+    const drillA = new Drill('Drill A', 'desc', '10 min', 'Medium', [1, 3]);
+    const drillB = new Drill('Drill B', 'desc', '10 min', 'Medium', [1, 3]);
+    const schedule = new MissionSchedule('A', [new MissionSet([[drillA, false]]), new MissionSet([[drillB, false]])], new DifficultySetting(1, [1, 3]));
         vi.spyOn(MissionScheduleStore, 'getSchedule').mockResolvedValue(schedule);
         vi.spyOn(MissionScheduleStore, 'getScheduleSync').mockReturnValue(schedule);
         vi.spyOn(MissionScheduleStore, 'saveSchedule').mockImplementation(() => {});
@@ -263,9 +263,9 @@ describe('MissionScheduleContext', () => {
     });
 
     it('completes a set and drops empty schedule without errors', async () => {
-        const workoutA = new Drill('Drill A', 'desc', '10', 'med', [1, 3]);
-        const workoutB = new Drill('Drill B', 'desc', '10', 'med', [1, 3]);
-        const set = new MissionSet([[workoutA, false], [workoutB, false]]);
+        const drillA = new Drill('Drill A', 'desc', '10', 'med', [1, 3]);
+        const drillB = new Drill('Drill B', 'desc', '10', 'med', [1, 3]);
+        const set = new MissionSet([[drillA, false], [drillB, false]]);
         const schedule = new MissionSchedule('Edge', [set], new DifficultySetting(1, [1, 3]));
         vi.spyOn(MissionScheduleStore, 'getSchedule').mockResolvedValue(schedule);
         vi.spyOn(MissionScheduleStore, 'getScheduleSync').mockReturnValue(schedule);

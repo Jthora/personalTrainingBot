@@ -1,7 +1,7 @@
 {
     "name": "Lower Body",
     "description": "Lower body exercises to improve strength, flexibility, and endurance.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Beginner Lower Body Strength Routine",
             "description": "Basic lower body exercises to build strength, stability, and endurance.",

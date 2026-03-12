@@ -36,14 +36,14 @@ const matchesDuration = (drill: Drill, bucket: DurationBucket) => {
 
 const matchesEquipment = (drill: Drill, equipment: string[]) => {
     if (!equipment.length) return true;
-    const workoutEquipment = drill.equipment ?? [];
-    return hasOverlap(workoutEquipment, equipment);
+    const drillEquipment = drill.equipment ?? [];
+    return hasOverlap(drillEquipment, equipment);
 };
 
 const matchesThemes = (drill: Drill, themes: string[]) => {
     if (!themes.length) return true;
-    const workoutThemes = drill.themes ?? [];
-    return hasOverlap(workoutThemes, themes);
+    const drillThemes = drill.themes ?? [];
+    return hasOverlap(drillThemes, themes);
 };
 
 const fuzzyIncludes = (haystack: string, needle: string): boolean => {

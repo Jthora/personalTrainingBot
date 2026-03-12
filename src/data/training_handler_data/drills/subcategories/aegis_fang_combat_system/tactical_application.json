@@ -1,7 +1,7 @@
 {
     "name": "Tactical Application",
     "description": "Training for real-world combat applications, ensuring adaptive decision-making and practical execution of combat techniques.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Fundamental Tactical Maneuvers",
             "description": "Building a foundation of strategic movement, weapon control, and combat efficiency.",

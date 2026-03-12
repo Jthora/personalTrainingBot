@@ -1,3 +1,5 @@
+import { createStore, type Listener } from './createStore';
+
 export type DurationBucket = 'any' | '10' | '20' | '30' | '30_plus';
 
 export type DrillFilters = {
@@ -7,22 +9,6 @@ export type DrillFilters = {
     themes: string[];
     difficultyMin: number;
     difficultyMax: number;
-};
-
-const STORAGE_VERSION = 'v1';
-const STORAGE_KEY = `drillFilters:${STORAGE_VERSION}`;
-
-type FilterListener = (filters: DrillFilters) => void;
-const filterListeners = new Set<FilterListener>();
-
-const notifyFilterChange = (filters: DrillFilters) => {
-    filterListeners.forEach(listener => {
-        try {
-            listener(filters);
-        } catch (error) {
-            console.warn('DrillFilterStore: listener failed', error);
-        }
-    });
 };
 
 const getDefaultFilters = (): DrillFilters => ({
@@ -36,19 +22,6 @@ const getDefaultFilters = (): DrillFilters => ({
 
 const isStringArray = (value: unknown): value is string[] => Array.isArray(value) && value.every(entry => typeof entry === 'string');
 
-const isFiltersShape = (value: unknown): value is DrillFilters => {
-    if (!value || typeof value !== 'object') return false;
-    const candidate = value as Partial<DrillFilters>;
-    const durationValid = candidate.duration === undefined || ['any', '10', '20', '30', '30_plus'].includes(candidate.duration as string);
-    const difficultyValid = (candidate.difficultyMin === undefined || typeof candidate.difficultyMin === 'number')
-        && (candidate.difficultyMax === undefined || typeof candidate.difficultyMax === 'number');
-    return typeof candidate.search === 'string'
-        && durationValid
-        && (!candidate.equipment || isStringArray(candidate.equipment))
-        && (!candidate.themes || isStringArray(candidate.themes))
-        && difficultyValid;
-};
-
 const mergeWithDefaults = (candidate: Partial<DrillFilters>): DrillFilters => {
     const defaults = getDefaultFilters();
     return {
@@ -61,46 +34,37 @@ const mergeWithDefaults = (candidate: Partial<DrillFilters>): DrillFilters => {
     };
 };
 
+const store = createStore<DrillFilters>({
+    key: 'drillFilters:v1',
+    defaultValue: getDefaultFilters(),
+    validate: (raw): DrillFilters | null => {
+        if (!raw || typeof raw !== 'object') return null;
+        const candidate = raw as Partial<DrillFilters>;
+        const durationValid = candidate.duration === undefined || ['any', '10', '20', '30', '30_plus'].includes(candidate.duration as string);
+        const difficultyValid = (candidate.difficultyMin === undefined || typeof candidate.difficultyMin === 'number')
+            && (candidate.difficultyMax === undefined || typeof candidate.difficultyMax === 'number');
+        if (!(typeof candidate.search === 'string' && durationValid && (!candidate.equipment || isStringArray(candidate.equipment)) && (!candidate.themes || isStringArray(candidate.themes)) && difficultyValid)) {
+            return null;
+        }
+        return mergeWithDefaults(candidate);
+    },
+});
+
 const DrillFilterStore = {
     getFiltersSync(): DrillFilters {
-        try {
-            const raw = localStorage.getItem(STORAGE_KEY);
-            if (!raw) return getDefaultFilters();
-            const parsed = JSON.parse(raw) as unknown;
-            if (!isFiltersShape(parsed)) {
-                console.warn('DrillFilterStore: stored filters have invalid shape; resetting to defaults.');
-                this.saveFilters(getDefaultFilters());
-                return getDefaultFilters();
-            }
-            return mergeWithDefaults(parsed);
-        } catch (error) {
-            console.error('DrillFilterStore: failed to read filters; using defaults.', error);
-            return getDefaultFilters();
-        }
+        return store.get();
     },
     async getFilters(): Promise<DrillFilters> {
-        return this.getFiltersSync();
+        return store.get();
     },
     saveFilters(filters: DrillFilters) {
-        try {
-            localStorage.setItem(STORAGE_KEY, JSON.stringify(filters));
-            notifyFilterChange(filters);
-        } catch (error) {
-            console.error('DrillFilterStore: failed to save filters', error);
-        }
+        store.set(filters);
     },
     clearFilters() {
-        try {
-            localStorage.removeItem(STORAGE_KEY);
-            const defaults = getDefaultFilters();
-            notifyFilterChange(defaults);
-        } catch (error) {
-            console.error('DrillFilterStore: failed to clear filters', error);
-        }
+        store.reset();
     },
-    addListener(listener: FilterListener): () => void {
-        filterListeners.add(listener);
-        return () => filterListeners.delete(listener);
+    addListener(listener: Listener<DrillFilters>): () => void {
+        return store.subscribe(listener);
     },
 };
 

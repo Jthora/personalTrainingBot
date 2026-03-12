@@ -1,17 +1,17 @@
-# Contributing Guidelines
+# Contributing to the Archangel Knights Training Console
 
-## Welcome Contributors!
+## Welcome
 
-Thank you for your interest in contributing to the Personal Training Bot project. This guide will help you understand how to contribute effectively.
+You're contributing to the training infrastructure of the Earth Alliance. Every contribution directly strengthens the operative development pipeline. This guide will help you contribute effectively.
 
 ## Code of Conduct
 
 ### Our Pledge
-We are committed to providing a welcoming and inclusive environment for all contributors, regardless of background, experience level, or identity.
+We are committed to providing a welcoming and inclusive environment for all contributors, regardless of background, experience level, or identity. The Earth Alliance is built on the principle that sovereignty and mutual respect are foundational.
 
 ### Expected Behavior
 - Be respectful and constructive in all interactions
-- Focus on what is best for the community
+- Focus on what strengthens the mission
 - Show empathy towards other contributors
 - Accept constructive criticism gracefully
 
@@ -28,7 +28,7 @@ We are committed to providing a welcoming and inclusive environment for all cont
 2. Clone your fork:
 ```bash
 git clone https://github.com/your-username/personalTrainingBot.git
-cd personalTrainingBot/my-training-bot
+cd personalTrainingBot
 ```
 
 3. Install dependencies:
@@ -43,60 +43,43 @@ npm run dev
 
 ### Project Structure
 Familiarize yourself with the project structure:
-- `src/components/` - React components
-- `src/pages/` - Page components
-- `src/hooks/` - Custom React hooks
-- `src/store/` - Zustand stores
-- `src/types/` - TypeScript type definitions
-- `src/utils/` - Utility functions
-- `src/data/` - Training data and configurations
-- `docs/` - Documentation files
+- `src/components/` — React components (49 feature directories)
+- `src/pages/` — Mission flow surfaces (Brief, Triage, Case, Signal, Checklist, Debrief, Stats, Plan)
+- `src/hooks/` — Custom React hooks (timer, readiness, telemetry, badges)
+- `src/store/` — Hand-rolled localStorage stores with pub/sub
+- `src/types/` — TypeScript type definitions
+- `src/utils/` — Loaders, telemetry, performance, scheduling utilities
+- `src/data/` — Static JSON training curriculum (988 files)
+- `src/services/` — Gun.js identity, P2P sync
+- `src/cache/` — Singleton data caches
+- `src/context/` — React context providers
+- `docs/` — Documentation
+
+See [README.md](README.md) for the full architecture overview.
 
 ## How to Contribute
 
-### Reporting Bugs
-When reporting bugs, please include:
-- Clear description of the issue
+### Reporting Issues
+When reporting issues, include:
+- Clear description of the problem
 - Steps to reproduce
 - Expected vs actual behavior
 - Browser and OS information
 - Screenshots if applicable
 
-Use the bug report template:
-```markdown
-## Bug Description
-Brief description of the bug
-
-## Steps to Reproduce
-1. Go to '...'
-2. Click on '...'
-3. See error
-
-## Expected Behavior
-What should happen
-
-## Actual Behavior
-What actually happened
-
-## Environment
-- OS: [e.g., macOS, Windows, Linux]
-- Browser: [e.g., Chrome, Firefox, Safari]
-- Version: [e.g., 1.0.0]
-```
-
 ### Suggesting Features
-For feature requests, please include:
+For feature requests, include:
 - Clear description of the feature
-- Use case and motivation
+- How it serves the mission (operative training, ecosystem integration, identity, etc.)
 - Proposed implementation approach
-- Potential impact on existing functionality
+- Impact on existing functionality
 
 ### Pull Requests
 
 #### Before Submitting
-1. Check if similar PR already exists
+1. Check if a similar PR already exists
 2. Ensure your changes follow project conventions
-3. Test your changes thoroughly
+3. Test your changes thoroughly (`npm run test`)
 4. Update documentation if needed
 
 #### PR Process
@@ -128,167 +111,146 @@ git push origin feature/your-feature-name
 - Use strict TypeScript configuration
 - Define interfaces for all data structures
 - Use meaningful variable and function names
+- Avoid `any` type usage
 - Add JSDoc comments for public APIs
 
 ```typescript
 /**
- * Loads training module data from cache or API
- * @param moduleId - The ID of the module to load
- * @returns Promise resolving to training module data
+ * Records a completed drill and updates operative progress
+ * @param drillId - The ID of the completed drill
+ * @param elapsedMs - Time spent on the drill in milliseconds
  */
-async function loadTrainingModule(moduleId: string): Promise<TrainingModule> {
+function recordDrillCompletion(drillId: string, elapsedMs: number): void {
   // Implementation
 }
 ```
 
 ### React Components
 - Use functional components with hooks
-- Implement proper prop types
-- Use CSS modules for styling
-- Follow component naming conventions
+- Implement proper TypeScript prop interfaces
+- Use CSS Modules for styling (`.module.css`)
+- Follow component naming conventions (PascalCase directories)
 
 ```typescript
-interface ComponentProps {
-  title: string;
-  onAction?: () => void;
+interface DrillCardProps {
+  drill: Drill;
+  onStart?: () => void;
 }
 
-const MyComponent: React.FC<ComponentProps> = ({ title, onAction }) => {
+const DrillCard: React.FC<DrillCardProps> = ({ drill, onStart }) => {
   return (
     <div className={styles.container}>
-      <h1>{title}</h1>
-      {onAction && <button onClick={onAction}>Action</button>}
+      <h3>{drill.name}</h3>
+      {onStart && <button onClick={onStart}>Begin Drill</button>}
     </div>
   );
 };
 ```
 
+### State Management
+- Stores are hand-rolled singletons with localStorage persistence
+- Follow the existing pattern: `subscribe()`, `notify()`, `getState()`
+- No external state libraries (no Redux, Zustand, MobX)
+- Use React context for cross-component shared state that doesn't need persistence
+
+### Handler-Aware Theming
+- Handler themes are defined in `src/data/handlerThemes.ts`
+- `HandlerSelectionContext` applies handler colors to CSS custom properties
+- In CSS Modules, use semantic tokens (`var(--surface-card)`, `var(--coach-accent)`)
+- When adding new handler-themed components, extend via CSS custom properties — don't hardcode colors
+
 ### File Organization
-- One component per file
-- Use PascalCase for component files
-- Use camelCase for utility files
-- Group related files in directories
+- One component per directory
+- PascalCase for component directories and files
+- camelCase for utility files
+- Group related files together
 
 ### Git Commit Messages
 Use conventional commit format:
 - `feat:` New feature
 - `fix:` Bug fix
 - `docs:` Documentation changes
-- `style:` Code style changes
+- `style:` Code style changes (not CSS)
 - `refactor:` Code refactoring
 - `test:` Test additions or modifications
 - `chore:` Maintenance tasks
 
-Examples:
-```
-feat: add new workout category selection
-fix: resolve timer synchronization issue
-docs: update API documentation
-style: improve component styling consistency
-refactor: simplify data loading logic
-test: add unit tests for card dealer
-chore: update dependencies
-```
+## Mission Copy Standards
+
+When a PR changes user-visible text, ensure mission-aligned language:
+
+- Use **operative**, not "user" or "player"
+- Use **handler**, not "coach" or "trainer"
+- Use **drill**, not "workout" or "exercise" (unless specifically referring to physical exercises within a drill)
+- Use **mission cycle**, not "session" or "workflow" for the Brief→Debrief flow
+- Use **Training Console**, not "app" or "tool" when referencing the application by name
+- Use mission vocabulary for surfaces: Brief, Triage, Case, Signal, Checklist, Debrief
 
 ## Testing
 
 ### Running Tests
 ```bash
 # Run all tests
-npm test
+npm run test
 
 # Run tests in watch mode
-npm test -- --watch
+npx vitest --watch
 
 # Run tests with coverage
-npm test -- --coverage
+npx vitest --coverage
+
+# Headless smoke test
+npm run smoke:headless
+
+# Operative scenario simulation
+BASE_URL=http://localhost:4173 npm run test:psi-scenario
 ```
 
 ### Writing Tests
-- Write tests for new features
-- Test both happy path and error cases
+- Write tests for new features — stores, components, and domain logic
+- Test both success paths and error cases
 - Use descriptive test names
-- Mock external dependencies
+- Mock external dependencies (localStorage, Gun.js)
 
 ```typescript
-describe('CardDealer', () => {
-  it('should shuffle deck randomly', () => {
-    const deck = createMockDeck();
-    const shuffled = CardDealer.shuffleDeck(deck);
-    expect(shuffled).not.toEqual(deck);
-  });
+describe('DrillHistoryStore', () => {
+  it('should record a completed drill with elapsed time', () => {
+    DrillHistoryStore.record({
+      drillId: 'cardio-sprint-01',
+      title: 'Sprint Intervals',
+      elapsedMs: 45000,
+      stepCount: 3,
+    });
 
-  it('should deal specified number of cards', () => {
-    const deck = createMockDeck();
-    const dealt = CardDealer.dealCards(deck, 5);
-    expect(dealt).toHaveLength(5);
+    const history = DrillHistoryStore.getHistory();
+    expect(history).toHaveLength(1);
+    expect(history[0].drillId).toBe('cardio-sprint-01');
   });
 });
 ```
 
-## Documentation
-
-### Code Documentation
-- Add JSDoc comments for functions and classes
-- Document complex algorithms
-- Explain non-obvious business logic
-- Keep comments up to date
-
-### README Updates
-- Update README for new features
-- Add usage examples
-- Update installation instructions
-- Keep feature lists current
-
-## Mission Copy Review (Overhaul)
-
-When a PR changes user-visible copy, complete the mission lexicon checklist before requesting review.
-
-- Checklist source: `docs/major-overhaul/ia-and-copy/mission-lexicon-checklist.md`
-- Scope: headings, buttons, helper text, status/empty/error copy, and ARIA labels
-- Requirement: no residual fitness/Web3 phrasing in active mission routes unless explicitly documented as a compatibility exception
-
-### Copy Review Workflow
-1. Validate changed copy against required/forbidden terminology in the checklist.
-2. Confirm ARIA labels and visible labels use the same mission vocabulary.
-3. Document any unavoidable legacy-visible terms and add a follow-up item to `docs/major-overhaul/progress-tracker.md`.
-4. Include a short “Mission Copy Check” note in the PR description with checklist completion status.
-
 ## Release Process
 
 ### Versioning
-We use semantic versioning (SemVer):
-- Major version: Breaking changes
-- Minor version: New features
-- Patch version: Bug fixes
+Semantic versioning (SemVer):
+- **Major:** Breaking changes to data structures, store APIs, or identity system
+- **Minor:** New features (training modules, surfaces, integrations)
+- **Patch:** Bug fixes, content updates, documentation
 
-### Release Notes
-Include in release notes:
-- New features
-- Bug fixes
-- Breaking changes
-- Migration instructions
-
-## Community
-
-### Communication
-- Use GitHub Issues for bugs and features
-- Use GitHub Discussions for questions
-- Be patient and respectful
-- Help others when possible
-
-### Recognition
-Contributors are recognized in:
-- Release notes
-- README contributors section
-- Special mentions for significant contributions
+### Pre-Release Checks
+All of the following should pass before cutting a release:
+```bash
+npm run test
+npm run build
+npm run smoke:headless
+```
 
 ## Questions?
 
 If you have questions about contributing:
-1. Check existing documentation
-2. Search GitHub issues
-3. Ask in GitHub Discussions
-4. Contact the development team
+1. Check the [documentation index](README.md)
+2. Search existing GitHub issues
+3. Open a new discussion
 
-Thank you for contributing to the Personal Training Bot! 🚀
+Thank you for contributing to the Earth Alliance. Every improvement matters.
+

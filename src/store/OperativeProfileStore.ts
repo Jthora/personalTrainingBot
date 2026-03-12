@@ -3,6 +3,8 @@
  * This is the identity store, separate from UserProgressStore (which tracks XP/streaks/badges).
  */
 
+import { createStore } from './createStore';
+
 export interface OperativeProfile {
     archetypeId: string;
     handlerId: string;
@@ -10,53 +12,40 @@ export interface OperativeProfile {
     enrolledAt: string;
 }
 
-const STORE_KEY = 'operative:profile:v1';
+const store = createStore<OperativeProfile | null>({
+    key: 'operative:profile:v1',
+    defaultValue: null,
+    validate: (raw): OperativeProfile | null => {
+        if (typeof raw !== 'object' || !raw) return null;
+        const p = raw as Record<string, unknown>;
+        if (typeof p.archetypeId !== 'string' || !p.archetypeId) return null;
+        if (typeof p.handlerId !== 'string' || !p.handlerId) return null;
+        return {
+            archetypeId: p.archetypeId,
+            handlerId: p.handlerId,
+            callsign: typeof p.callsign === 'string' ? p.callsign : '',
+            enrolledAt: typeof p.enrolledAt === 'string' ? p.enrolledAt : new Date().toISOString(),
+        };
+    },
+});
 
-type Listener = () => void;
-const listeners = new Set<Listener>();
+// Stateless listener adapter (backward compat: existing consumers use () => void)
+type StatelessListener = () => void;
+const statelessListeners = new Set<StatelessListener>();
 let version = 0;
 
-const notify = () => {
+store.subscribe(() => {
     version += 1;
-    listeners.forEach((fn) => fn());
-};
-
-const safeParse = (raw: string | null): OperativeProfile | null => {
-    if (!raw) return null;
-    try {
-        const parsed = JSON.parse(raw);
-        if (typeof parsed !== 'object' || !parsed) return null;
-        if (typeof parsed.archetypeId !== 'string' || !parsed.archetypeId) return null;
-        if (typeof parsed.handlerId !== 'string' || !parsed.handlerId) return null;
-        return {
-            archetypeId: parsed.archetypeId,
-            handlerId: parsed.handlerId,
-            callsign: typeof parsed.callsign === 'string' ? parsed.callsign : '',
-            enrolledAt: typeof parsed.enrolledAt === 'string' ? parsed.enrolledAt : new Date().toISOString(),
-        };
-    } catch {
-        return null;
-    }
-};
+    statelessListeners.forEach((fn) => fn());
+});
 
 const OperativeProfileStore = {
     get(): OperativeProfile | null {
-        if (typeof window === 'undefined') return null;
-        try {
-            return safeParse(window.localStorage.getItem(STORE_KEY));
-        } catch {
-            return null;
-        }
+        return store.get();
     },
 
     set(profile: OperativeProfile): void {
-        if (typeof window === 'undefined') return;
-        try {
-            window.localStorage.setItem(STORE_KEY, JSON.stringify(profile));
-        } catch (err) {
-            console.warn('[OperativeProfileStore] write failed', err);
-        }
-        notify();
+        store.set(profile);
     },
 
     /** Update specific fields without replacing the entire profile. */
@@ -67,18 +56,12 @@ const OperativeProfileStore = {
     },
 
     reset(): void {
-        if (typeof window === 'undefined') return;
-        try {
-            window.localStorage.removeItem(STORE_KEY);
-        } catch {
-            // ignore
-        }
-        notify();
+        store.reset();
     },
 
-    subscribe(cb: Listener): () => void {
-        listeners.add(cb);
-        return () => { listeners.delete(cb); };
+    subscribe(cb: StatelessListener): () => void {
+        statelessListeners.add(cb);
+        return () => { statelessListeners.delete(cb); };
     },
 
     getVersion(): number {

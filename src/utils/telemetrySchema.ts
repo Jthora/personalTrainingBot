@@ -106,7 +106,7 @@ export const exampleTimingEvent: TimingEvent = {
 
 export const exampleCacheEvent: CacheEvent = {
     type: 'cache',
-    name: 'cache:workout_schedule',
+    name: 'cache:mission_schedule',
     value: 'hit',
     unit: 'status',
     data: { ageMs: 120000, ttlMs: 600000, source: 'localStorage', sizeBytes: 2048 },
@@ -119,12 +119,12 @@ export const exampleErrorEvent: ErrorEvent = {
     name: 'schedule_load_failure',
     value: 'network_error',
     unit: 'status',
-    data: { dataset: 'workout_schedule', phase: 'boot', attempt: 1, error: 'HTTP 500' },
+    data: { dataset: 'mission_schedule', phase: 'boot', attempt: 1, error: 'HTTP 500' },
 };
 
 export const exampleRetryEvent: RetryEvent = {
     type: 'retry',
-    name: 'workout_schedule_fetch',
+    name: 'mission_schedule_fetch',
     value: 1,
     unit: 'count',
     data: { requestName: 'schedule', attempt: 1, backoffMs: 200, error: 'network' },

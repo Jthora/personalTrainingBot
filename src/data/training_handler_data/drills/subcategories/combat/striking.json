@@ -1,7 +1,7 @@
 {
     "name": "Striking",
     "description": "Striking exercises to improve combat skills and techniques.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Striking Techniques Training",
             "description": "Specific techniques for striking training.",

@@ -1,26 +1,27 @@
 import { DifficultySetting, DifficultyLevel, DifficultyRange, DifficultySettingJSON } from '../types/DifficultySetting';
+import { createStore } from './createStore';
+
+const store = createStore<DifficultySettingJSON>({
+    key: 'difficultySettings',
+    defaultValue: new DifficultySetting(7, [1, 10]).toJSON(),
+    validate: (raw): DifficultySettingJSON | null => {
+        if (!raw || typeof raw !== 'object') return null;
+        const c = raw as Record<string, unknown>;
+        if (typeof c.level !== 'number' || !Array.isArray(c.range)) return null;
+        return raw as DifficultySettingJSON;
+    },
+});
 
 const DifficultySettingsStore = {
     getSettings(): DifficultySetting {
-        const settings = localStorage.getItem('difficultySettings');
-        if (!settings) {
-            return new DifficultySetting(7, [1, 10]);
-        }
-
-        try {
-            const parsed = JSON.parse(settings) as DifficultySettingJSON;
-            return DifficultySetting.fromJSON(parsed);
-        } catch (error) {
-            console.warn('DifficultySettingsStore: Failed to parse stored difficulty settings. Using defaults.', error);
-            return new DifficultySetting(7, [1, 10]);
-        }
+        return DifficultySetting.fromJSON(store.get());
     },
     saveSettings(setting: DifficultySetting | DifficultySettingJSON) {
         const payload = setting instanceof DifficultySetting ? setting.toJSON() : setting;
-        localStorage.setItem('difficultySettings', JSON.stringify(payload));
+        store.set(payload);
     },
     clearSettings() {
-        localStorage.removeItem('difficultySettings');
+        store.reset();
     },
     getWeightedRandomDifficultyFromCurrentSelectedSetting(): DifficultyLevel {
         const setting = this.getSettings();

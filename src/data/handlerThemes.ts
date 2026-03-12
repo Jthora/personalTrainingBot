@@ -103,16 +103,16 @@ export const handlerPalettes: Record<string, HandlerPalette> = {
     }, basePalette),
 };
 
-export const getHandlerPalette = (coachId: string): HandlerPalette => {
-    return handlerPalettes[coachId] ?? handlerPalettes.default;
+export const getHandlerPalette = (handlerId: string): HandlerPalette => {
+    return handlerPalettes[handlerId] ?? handlerPalettes.default;
 };
 
-export const applyHandlerPaletteToRoot = (coachId: string): void => {
+export const applyHandlerPaletteToRoot = (handlerId: string): void => {
     if (typeof document === 'undefined') {
         return;
     }
 
-    const paletteToApply = getHandlerPalette(coachId);
+    const paletteToApply = getHandlerPalette(handlerId);
     const root = document.documentElement;
 
     root.style.setProperty('--handler-accent', paletteToApply.accent);

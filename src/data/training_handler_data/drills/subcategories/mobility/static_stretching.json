@@ -1,7 +1,7 @@
 {
     "name": "Static Stretching",
     "description": "Static stretching exercises to improve flexibility and mobility.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Beginner Static Stretching",
             "description": "Basic static stretches to improve flexibility and mobility, ideal for beginners.",

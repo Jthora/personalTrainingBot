@@ -13,7 +13,7 @@ class TrainingHandlerCache {
     private ranks: DrillRank[] = [];
     private difficultyLevels: DrillDifficultyLevel[] = [];
     private handlerData: { [key: string]: HandlerData } = {};
-    private defaultCoach: string = "tiger_fitness_god";
+    private defaultHandler: string = "tiger_fitness_god";
 
     private constructor() {
         this.dataLoader = new HandlerDataLoader();
@@ -30,12 +30,12 @@ class TrainingHandlerCache {
         if (isFeatureEnabled('loadingCacheV2')) {
             const appVersion = ((import.meta as any).env?.VITE_APP_VERSION as string | undefined) ?? APP_VERSION;
             const bundleResult = await withCache<HandlerDataBundle>(
-                'coachCatalog',
+                'handlerCatalog',
                 'all',
-                TTL_MS.coachCatalog,
-                `coachCatalog-${appVersion}`,
+                TTL_MS.handlerCatalog,
+                `handlerCatalog-${appVersion}`,
                 async () => this.dataLoader.loadAllData(),
-                { logger: (msg, meta) => console.info(`coachCache: ${msg}`, meta) }
+                { logger: (msg, meta) => console.info(`handlerCache: ${msg}`, meta) }
             );
             this.applyBundle(bundleResult.data);
             return;
@@ -61,24 +61,24 @@ class TrainingHandlerCache {
 
     public async loadHandlerData(): Promise<void> {
         if (Object.keys(this.handlerData).length === 0) {
-            const data = await this.dataLoader.loadCoachSpeech();
+            const data = await this.dataLoader.loadHandlerSpeech();
             this.handlerData = Object.keys(data).length ? data : this.dataLoader.getHandlerData();
         }
     }
 
-    public getHandlerData(handler: string = this.defaultCoach): HandlerData {
+    public getHandlerData(handler: string = this.defaultHandler): HandlerData {
         return this.handlerData[handler] || {} as HandlerData;
     }
 
-    public getRandomMotivationalQuote(handler: string = this.defaultCoach): string {
+    public getRandomMotivationalQuote(handler: string = this.defaultHandler): string {
         return this.getRandomItem(this.getHandlerData(handler).motivational_quotes || []);
     }
 
-    public getRandomBoast(handler: string = this.defaultCoach): string {
+    public getRandomBoast(handler: string = this.defaultHandler): string {
         return this.getRandomItem(this.getHandlerData(handler).boasts || []);
     }
 
-    public getRandomGrowl(handler: string = this.defaultCoach): string {
+    public getRandomGrowl(handler: string = this.defaultHandler): string {
         return this.getRandomItem(this.getHandlerData(handler).growls || []);
     }
 

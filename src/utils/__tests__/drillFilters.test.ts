@@ -3,9 +3,9 @@ import { applyDrillFilters, parseDurationMinutes } from '../drillFilters';
 import { Drill } from '../../types/DrillCategory';
 import { DrillFilters } from '../../store/DrillFilterStore';
 
-type PartialWorkout = Partial<Drill> & Pick<Drill, 'id' | 'name' | 'description' | 'duration' | 'intensity' | 'difficulty_range'>;
+type PartialDrill = Partial<Drill> & Pick<Drill, 'id' | 'name' | 'description' | 'duration' | 'intensity' | 'difficulty_range'>;
 
-const drill = (overrides: PartialWorkout): Drill => ({
+const drill = (overrides: PartialDrill): Drill => ({
     id: overrides.id,
     name: overrides.name,
     description: overrides.description,

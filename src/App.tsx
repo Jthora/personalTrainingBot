@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, Suspense, lazy } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import AppRoutes from './routes/Routes';
 import InitialDataLoader from './utils/InitialDataLoader';
@@ -6,10 +6,11 @@ import LoadingMessage from './components/LoadingMessage/LoadingMessage'; // Impo
 import { MissionScheduleProvider } from './context/MissionScheduleContext';
 import { HandlerSelectionProvider } from './context/HandlerSelectionContext';
 import { warmCaches } from './utils/cacheWarmHints';
-import RecapModal from './components/RecapModal/RecapModal';
-import RecapToast from './components/RecapToast/RecapToast';
 import { mark, measure } from './utils/perf';
 import { schedulePostPaintTasks } from './utils/phaseTasks';
+
+const RecapModal = lazy(() => import('./components/RecapModal/RecapModal'));
+const RecapToast = lazy(() => import('./components/RecapToast/RecapToast'));
 import CacheIndicator from './components/CacheIndicator/CacheIndicator';
 import { registerScheduleRefreshInterval, registerScheduleRefreshOnFocus } from './utils/ScheduleLoader';
 import { logRuntimePayloadSample } from './utils/payloadLogging';
@@ -19,9 +20,6 @@ import InstallBanner from './components/InstallBanner/InstallBanner';
 import UpdateNotification from './components/UpdateNotification/UpdateNotification';
 import { useSettings } from './context/SettingsContext';
 import { isFeatureEnabled } from './config/featureFlags';
-import { startGunProfileBridge, stopGunProfileBridge } from './services/gunProfileBridge';
-import { startStoreSyncs, stopStoreSyncs } from './services/gunStoreSyncs';
-import { GunIdentityService } from './services/gunIdentity';
 
 const App: React.FC = () => {
   const [isDataLoaded, setIsDataLoaded] = useState(false);
@@ -100,11 +98,24 @@ const App: React.FC = () => {
   useEffect(() => {
     if (!isDataLoaded) return;
 
-    // Initialize Gun.js P2P identity bridge when flag is on
+    let gunCleanup: (() => void) | undefined;
+
+    // Dynamically import Gun.js P2P services only when flag is on
     if (isFeatureEnabled('p2pIdentity')) {
-      startGunProfileBridge();
-      startStoreSyncs();
-      GunIdentityService.login(); // auto-login if stored identity exists
+      (async () => {
+        const [{ startGunProfileBridge, stopGunProfileBridge }, { startStoreSyncs, stopStoreSyncs }, { GunIdentityService }] = await Promise.all([
+          import('./services/gunProfileBridge'),
+          import('./services/gunStoreSyncs'),
+          import('./services/gunIdentity'),
+        ]);
+        startGunProfileBridge();
+        startStoreSyncs();
+        GunIdentityService.login();
+        gunCleanup = () => {
+          stopGunProfileBridge();
+          stopStoreSyncs();
+        };
+      })();
     }
 
     schedulePostPaintTasks();
@@ -116,8 +127,7 @@ const App: React.FC = () => {
     return () => {
       unregisterFocus?.();
       unregisterInterval?.();
-      stopGunProfileBridge();
-      stopStoreSyncs();
+      gunCleanup?.();
     };
   }, [isDataLoaded]);
 
@@ -135,8 +145,10 @@ const App: React.FC = () => {
           <UpdateNotification />
           <ScheduleNavigationRefresh />
           <AppRoutes />
-          <RecapToast />
-          <RecapModal />
+          <Suspense fallback={null}>
+            <RecapToast />
+            <RecapModal />
+          </Suspense>
         </Router>
       </HandlerSelectionProvider>
     </MissionScheduleProvider>

@@ -4,7 +4,6 @@ import { applyHandlerPaletteToRoot } from '../data/handlerThemes';
 import { syncHandlerModuleSelection } from '../utils/handlerModulePreferences';
 import { HandlerSelectionContext } from './HandlerSelectionContextState';
 import { mark } from '../utils/perf';
-import { isFeatureEnabled } from '../config/featureFlags';
 import OperativeProfileStore from '../store/OperativeProfileStore';
 
 interface HandlerSelectionProviderProps {
@@ -12,53 +11,51 @@ interface HandlerSelectionProviderProps {
 }
 
 export const HandlerSelectionProvider: React.FC<HandlerSelectionProviderProps> = ({ children }) => {
-    const [coachId, setCoachIdState] = useState<string>(defaultHandlerId);
-    const coachReadyMarkedRef = useRef(false);
+    const [handlerId, setHandlerIdState] = useState<string>(defaultHandlerId);
+    const handlerReadyMarkedRef = useRef(false);
 
     useEffect(() => {
         if (typeof window === 'undefined') {
             return;
         }
 
-        // Stage 22: When archetype system is enabled, prefer handler from OperativeProfile
-        if (isFeatureEnabled('archetypeSystem')) {
-            const profile = OperativeProfileStore.get();
-            if (profile?.handlerId) {
-                setCoachIdState(profile.handlerId);
-                if (!coachReadyMarkedRef.current) {
-                    mark('load:coach_ready');
-                    coachReadyMarkedRef.current = true;
-                }
-                return;
+        // Stage 22: Prefer handler from OperativeProfile
+        const profile = OperativeProfileStore.get();
+        if (profile?.handlerId) {
+            setHandlerIdState(profile.handlerId);
+            if (!handlerReadyMarkedRef.current) {
+                mark('load:handler_ready');
+                handlerReadyMarkedRef.current = true;
             }
+            return;
         }
 
-        const storedCoach = window.localStorage.getItem('selectedHandler');
-        if (storedCoach) {
-            setCoachIdState(storedCoach);
+        const storedHandler = window.localStorage.getItem('selectedHandler');
+        if (storedHandler) {
+            setHandlerIdState(storedHandler);
         } else {
             window.localStorage.setItem('selectedHandler', defaultHandlerId);
         }
-        if (!coachReadyMarkedRef.current) {
-            mark('load:coach_ready');
-            coachReadyMarkedRef.current = true;
+        if (!handlerReadyMarkedRef.current) {
+            mark('load:handler_ready');
+            handlerReadyMarkedRef.current = true;
         }
     }, []);
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
-            window.localStorage.setItem('selectedHandler', coachId);
+            window.localStorage.setItem('selectedHandler', handlerId);
         }
-        syncHandlerModuleSelection(coachId);
-        applyHandlerPaletteToRoot(coachId);
-    }, [coachId]);
+        syncHandlerModuleSelection(handlerId);
+        applyHandlerPaletteToRoot(handlerId);
+    }, [handlerId]);
 
-    const setCoachId = (id: string) => {
-        setCoachIdState(id);
+    const setHandlerId = (id: string) => {
+        setHandlerIdState(id);
     };
 
     return (
-        <HandlerSelectionContext.Provider value={{ coachId, setCoachId }}>
+        <HandlerSelectionContext.Provider value={{ handlerId, setHandlerId }}>
             {children}
         </HandlerSelectionContext.Provider>
     );

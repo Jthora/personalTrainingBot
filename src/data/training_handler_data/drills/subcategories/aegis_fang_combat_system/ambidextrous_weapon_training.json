@@ -1,7 +1,7 @@
 {
     "name": "Ambidextrous Weapon Training",
     "description": "Developing dexterity and control in both hands for fluid weapon switching, dual-wield combat, and balanced combat proficiency.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Fundamental Ambidextrous Drills",
             "description": "Building muscle memory and coordination to wield weapons in both hands equally.",

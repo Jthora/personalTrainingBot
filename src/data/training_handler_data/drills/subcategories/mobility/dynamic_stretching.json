@@ -1,7 +1,7 @@
 {
     "name": "Dynamic Stretching",
     "description": "Dynamic stretching exercises to improve flexibility, mobility, and range of motion.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Beginner Level Dynamic Stretching",
             "description": "Improve mobility, flexibility, and movement range with beginner-friendly dynamic stretches.",

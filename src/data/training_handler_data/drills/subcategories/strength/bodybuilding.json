@@ -1,7 +1,7 @@
 {
     "name": "Bodybuilding",
     "description": "Bodybuilding exercises to improve muscle size and definition.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Hypertrophy Bodybuilding Routine",
             "description": "A muscle-growth-focused workout using moderate weights and high reps to maximize hypertrophy.",

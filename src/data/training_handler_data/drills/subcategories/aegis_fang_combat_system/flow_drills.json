@@ -1,7 +1,7 @@
 {
     "name": "Flow Drills",
     "description": "Developing continuous weapon movement, combat rhythm, and seamless transitions between attacks, defenses, and footwork.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Fundamentals of Combat Flow",
             "description": "Training to execute seamless movements with weapons while maintaining control and precision.",

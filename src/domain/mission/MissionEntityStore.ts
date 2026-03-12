@@ -1,5 +1,4 @@
 import type { TrainingModule } from '../../types/TrainingModule';
-import { isFeatureEnabled } from '../../config/featureFlags';
 import { mapTrainingModulesToMissionEntities } from './adapters/legacyTrainingModules';
 import type {
     CaseStatus,
@@ -51,7 +50,7 @@ class MissionEntityStore {
     }
 
     public getReadPath(): MissionReadPath {
-        return isFeatureEnabled('canonicalReadPath') ? 'canonical' : 'legacy';
+        return 'legacy';
     }
 
     public getCanonicalCollection(): MissionEntityCollection | null {

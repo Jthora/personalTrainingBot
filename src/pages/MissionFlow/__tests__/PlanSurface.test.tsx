@@ -13,17 +13,17 @@ const drill1 = new Drill('Push Ups', 'Upper body push', '10 min', 'moderate', [1
 const drill2 = new Drill('Squats', 'Lower body', '8 min', 'high', [2, 4]);
 const drill3 = new Drill('Plank Hold', 'Core stability', '5 min', 'low', [1, 2]);
 
-const { mockGetScheduleSync, mockCreateNewScheduleSync } = vi.hoisted(() => ({
-  mockGetScheduleSync: vi.fn(),
-  mockCreateNewScheduleSync: vi.fn(),
+const { mockCreateNewSchedule, mockScheduleRef } = vi.hoisted(() => ({
+  mockCreateNewSchedule: vi.fn(),
+  mockScheduleRef: { current: null as any },
 }));
 
 /* ── Mocks ── */
-vi.mock('../../../store/MissionScheduleStore', () => ({
-  default: {
-    getScheduleSync: mockGetScheduleSync,
-    createNewScheduleSync: mockCreateNewScheduleSync,
-  },
+vi.mock('../../../hooks/useMissionSchedule', () => ({
+  default: () => ({
+    schedule: mockScheduleRef.current,
+    createNewSchedule: mockCreateNewSchedule,
+  }),
 }));
 
 vi.mock('../../../store/CustomMissionSchedulesStore', () => ({
@@ -70,12 +70,12 @@ describe('PlanSurface', () => {
       [drill2, false],
       [drill3, false],
     ]);
-    mockGetScheduleSync.mockReturnValue({
+    mockScheduleRef.current = {
       date: todayKey,
       scheduleItems: [set1],
       difficultySettings: {},
-    });
-    mockCreateNewScheduleSync.mockClear();
+    };
+    mockCreateNewSchedule.mockClear();
   });
   it('renders the heading', () => {
     renderSurface();
@@ -162,10 +162,10 @@ describe('PlanSurface', () => {
     expect(screen.getByText('Regenerate Schedule')).toBeTruthy();
   });
 
-  it('calls createNewScheduleSync on regenerate', () => {
+  it('calls createNewSchedule on regenerate', () => {
     renderSurface();
     fireEvent.click(screen.getByTestId('plan-regenerate'));
-    expect(mockCreateNewScheduleSync).toHaveBeenCalled();
+    expect(mockCreateNewSchedule).toHaveBeenCalled();
   });
 
   it('shows empty message for days with no drills', () => {

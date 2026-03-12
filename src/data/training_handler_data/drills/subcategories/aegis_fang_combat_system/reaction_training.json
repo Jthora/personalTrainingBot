@@ -1,7 +1,7 @@
 {
     "name": "Reaction Training",
     "description": "Training to enhance reflex speed, defensive reaction time, and combat decision-making in high-pressure scenarios.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Fundamentals of Reaction Timing",
             "description": "Building core reactionary speed and instinctive defensive responses.",

@@ -2,249 +2,194 @@
 
 ## Overview
 
-This guide covers deploying the Personal Training Bot to various environments including local development, staging, and production.
+This guide covers deploying the Archangel Knights Training Console to production. The application is a static PWA — after building, it produces a `dist/` directory that can be served from any static hosting platform.
+
+**Production URL:** [personaltrainingbot.archangel.agency](https://personaltrainingbot.archangel.agency)
 
 ## Prerequisites
 
 - Node.js 18 or higher
-- npm or yarn package manager
-- Git
-
-## Environment Configuration
-
-### Environment Variables
-
-Create appropriate `.env` files for each environment:
-
-#### Development (.env.development)
-```env
-VITE_APP_NAME=Personal Training Bot (Dev)
-VITE_APP_VERSION=1.0.0
-VITE_ENVIRONMENT=development
-VITE_API_BASE_URL=http://localhost:3000
-VITE_DEBUG=true
-```
-
-#### Production (.env.production)
-```env
-VITE_APP_NAME=Personal Training Bot
-VITE_APP_VERSION=1.0.0
-VITE_ENVIRONMENT=production
-VITE_API_BASE_URL=https://your-api-domain.com
-VITE_DEBUG=false
-```
+- npm package manager
 
 ## Build Process
-
-### Development Build
-```bash
-npm run dev
-```
 
 ### Production Build
 ```bash
 npm run build
 ```
 
-The build process includes:
-1. Path generation for training modules
-2. TypeScript compilation
-3. Vite bundling and optimization
-4. Asset optimization
+The build process:
+1. Generates combined training data (`generate-training-data-combined`)
+2. Generates path mappings for modules, submodules, card decks, and workout categories
+3. TypeScript compilation (`tsc -b`)
+4. Vite bundling and optimization
+
+Output is written to `dist/`.
+
+### Environment Configuration
+
+Feature flags and environment can be configured at build time:
+
+```bash
+# Staging build with specific flags
+VITE_APP_ENV=staging npm run build
+
+# Production build with mission default routes disabled (rollback)
+npm run rollback:mission-default
+```
 
 ## Deployment Options
 
-### 1. Vercel (Recommended)
+### Vercel (Primary)
 
-The project is already configured for Vercel deployment.
+The project includes `vercel.json` for configuration. SPA fallback routing is configured to direct all requests to `index.html`.
 
 #### Automatic Deployment
-1. Connect your GitHub repository to Vercel
-2. Set environment variables in Vercel dashboard
-3. Deploy automatically on push to main branch
+1. Connect the GitHub repository to Vercel
+2. Set environment variables in the Vercel dashboard
+3. Pushes to `main` deploy automatically
 
 #### Manual Deployment
 ```bash
-npm install -g vercel
-vercel --prod
+npx vercel --prod
 ```
 
-### 2. Netlify
+### Static Hosting (Netlify, GitHub Pages, S3, etc.)
 
-#### Build Settings
-- Build command: `npm run build`
-- Publish directory: `dist`
-- Node version: 18
+Build settings for any static host:
+- **Build command:** `npm run build`
+- **Publish directory:** `dist`
+- **Node version:** 18+
+- **SPA fallback:** Route all paths to `index.html`
 
-#### Deploy Steps
-1. Connect repository to Netlify
-2. Configure build settings
-3. Set environment variables
-4. Deploy
+## Post-Deploy Verification
 
-### 3. Static Hosting (GitHub Pages, S3, etc.)
+### Caching Headers
 
-#### Build for Static Hosting
-```bash
-npm run build
-```
+The `public/_headers` file ships cache policies:
+- **HTML:** `no-cache` (always fresh)
+- **Hashed assets (`/assets/*`):** 1 year, immutable
+- **Training manifest:** 5 minutes
+- **Training shards/JSON:** 1 day with stale-while-revalidate
 
-#### Deploy to GitHub Pages
-```bash
-npm run build
-npm run deploy
-```
-
-### 4. Self-Hosted
-
-#### Using Docker
-```dockerfile
-FROM node:18-alpine
-
-WORKDIR /app
-
-COPY package*.json ./
-RUN npm ci --only=production
-
-COPY . .
-RUN npm run build
-
-EXPOSE 3000
-
-CMD ["npm", "run", "preview"]
-```
-
-#### Using PM2
-```bash
-npm install -g pm2
-npm run build
-pm2 start ecosystem.config.js
-```
-
-## Performance Optimization
-
-### Build Optimization
-- Code splitting is enabled by default
-- Assets are automatically optimized
-- Gzip compression is applied
-
-### Caching headers & verification
-- Static headers file: `public/_headers` ships cache policies for HTML (no-cache), hashed assets (1 year, immutable), training manifest (5 minutes), training shards/JSON (1 day with stale-while-revalidate).
-- When deploying to Netlify/Vercel/static hosts that honor `_headers`, ensure the file is copied to the root of the published site (Vite already copies `public/*`).
-- Verify headers after deploy:
-
+Verify headers after deploy:
 ```bash
 # Manifest should be short-lived
-curl -I https://<your-domain>/training_modules_manifest.json | grep -i cache-control
+curl -I https://personaltrainingbot.archangel.agency/training_modules_manifest.json | grep -i cache-control
 
 # Shards should be cached but revalidated daily
-curl -I https://<your-domain>/training_modules_shards/fitness.json | grep -i cache-control
+curl -I https://personaltrainingbot.archangel.agency/training_modules_shards/fitness.json | grep -i cache-control
 
 # Hashed assets should be immutable
-curl -I https://<your-domain>/assets/index-*.js | grep -i cache-control
+curl -I https://personaltrainingbot.archangel.agency/assets/index-\*.js | grep -i cache-control
 ```
 
-### Service worker + offline checks
-- Service worker at `/sw.js` registers automatically in production builds; scope is the site root. It caches the manifest + training shards cache-first with background refresh.
-- Updates call `SKIP_WAITING` so the new worker takes control without a manual page reload.
-- QA steps (requires preview/prod host):
-	1) `npm run preview -- --host --port 4173` (or use your deployed host).
-	2) Open the app, trigger training shard loads (navigate to Training), then go offline and confirm cached shards serve.
-	3) Automated checks:
-		- `npm run check:sw-offline -- --base=http://localhost:4173 --shard=/training_modules_shards/fitness.json`
-		- `npm run check:offline-indicator -- --base=http://localhost:4173` (verifies the on-screen online/offline indicator flips when connectivity is cut)
+### Service Worker Verification
 
-### Runtime Optimization
-- Implement service worker for caching
-- Use CDN for static assets
-- Enable browser caching headers
+The service worker (`/sw.js`) registers automatically in production:
+- Precaches critical assets with versioned keys
+- Cache-first for training data, stale-while-revalidate for media
+- Navigation fallback to `index.html`
+- `SKIP_WAITING` for seamless updates
 
-## Monitoring and Analytics
+QA steps (requires preview or production host):
+```bash
+# Start preview server
+npm run preview -- --host --port 4173
 
-### Error Tracking
-Consider integrating:
-- Sentry for error monitoring
-- LogRocket for session replay
-- Google Analytics for usage tracking
+# Verify offline capability
+npm run check:sw-offline -- --base=http://localhost:4173 --shard=/training_modules_shards/fitness.json
 
-### Performance Monitoring
-- Web Vitals tracking
-- Bundle size monitoring
-- Loading time metrics
+# Verify offline indicator
+npm run check:offline-indicator -- --base=http://localhost:4173
+```
+
+### Smoke Tests
+```bash
+# Headless smoke test
+npm run smoke:headless
+
+# Full operative scenario simulation
+BASE_URL=https://personaltrainingbot.archangel.agency npm run test:psi-scenario
+```
+
+### Mission Route Verification
+```bash
+# Verify deep links resolve correctly
+npm run check:deeplinks
+
+# Offline deep link verification
+npm run check:deeplinks-offline
+
+# Payload budgets within limits
+npm run check:payload-budgets
+
+# Mission route payload budgets
+npm run check:mission-route-budgets
+```
+
+## Performance Monitoring
+
+### Bundle Analysis
+```bash
+# Generate bundle visualization
+npm run analyze
+
+# Payload size report
+npm run report:sizes
+
+# Mission route payload report
+npm run report:mission-route-payloads
+
+# Render cycle profiling
+npm run report:mission-render-cycles
+```
+
+### Budget Checks
+```bash
+# Verify payload sizes are within budget
+npm run check:payload-budgets
+
+# Verify precache size is within budget
+npm run check:precache-size
+
+# Verify encoding optimization
+npm run check:encodings
+```
+
+## Rollback
+
+### Vercel
+Use the Vercel dashboard to instantly rollback to a previous deployment, or redeploy from a specific Git commit.
+
+### Manual
+```bash
+git checkout <previous-release-tag>
+npm run build
+# Deploy dist/ using your preferred method
+```
+
+### Mission Default Routes Rollback
+To disable mission default routes and revert to legacy routing:
+```bash
+npm run rollback:mission-default
+```
 
 ## Security Considerations
 
-### Content Security Policy
-```html
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';">
-```
+- **HTTPS:** Always use HTTPS in production. The service worker requires a secure context.
+- **Sovereign identity:** Operative keypairs are generated and stored client-side. No private key material should ever transit a server.
+- **Content Security Policy:** Configure CSP headers appropriate to your hosting platform. The application requires `'self'` for scripts and styles plus `'unsafe-inline'` for dynamic style injection.
 
-### HTTPS
-- Always use HTTPS in production
-- Implement proper certificate management
-- Use security headers
+## Ecosystem Deployment
 
-## Troubleshooting
+The Training Console is one part of the Earth Alliance ecosystem. Other applications:
 
-### Common Issues
+| Application | URL |
+|---|---|
+| Starcom | [starcom.app](https://starcom.app) |
+| Navcom | [navcom.app](https://navcom.app) |
+| Tactical Intel Dashboard | [tacticalinteldashboard.archangel.agency](https://tacticalinteldashboard.archangel.agency) |
+| Mecha Jono | [mecha.jono.archangel.agency](https://mecha.jono.archangel.agency) |
 
-#### Build Failures
-- Check Node.js version compatibility
-- Verify all dependencies are installed
-- Check for TypeScript errors
-
-#### Asset Loading Issues
-- Verify asset paths are correct
-- Check build output structure
-- Ensure assets are properly included
-
-#### Performance Issues
-- Analyze bundle size
-- Check for memory leaks
-- Optimize images and assets
-
-### Debugging
-
-#### Development
-```bash
-npm run dev -- --debug
-```
-
-#### Production
-- Use browser developer tools
-- Check console for errors
-- Monitor network requests
-
-## Rollback Procedures
-
-### Vercel
-- Use Vercel dashboard to rollback to previous deployment
-- Or redeploy from specific Git commit
-
-### Manual Rollback
-```bash
-# Rollback to previous version
-git checkout previous-release-tag
-npm run build
-# Deploy using your preferred method
-```
-
-## Maintenance
-
-### Regular Updates
-- Keep dependencies updated
-- Monitor for security vulnerabilities
-- Update Node.js version as needed
-
-### Backup
-- Regular database backups (if applicable)
-- Source code is backed up in Git
-- Configuration and environment variable backups
-
-## Support
-
-For deployment issues:
-1. Check this documentation
-2. Review error logs
-3. Check GitHub Issues
-4. Contact development team
+Cross-ecosystem integration (operative identity portability, telemetry bridges) should be coordinated across deployments. See [ecosystem.md](ecosystem.md) for architecture details.

@@ -1,7 +1,7 @@
 {
     "name": "Super & Hyper",
     "description": "Super & Hyper exercises to improve strength, flexibility, and endurance.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Superhero Strength & Power Mastery",
             "description": "Brutal strength training designed for extreme power output—lifting cars, smashing obstacles, and taking on massive forces.",

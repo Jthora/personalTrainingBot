@@ -51,5 +51,5 @@ export interface DrillGroupFile {
 export interface DrillSubCategoryFile {
     name: string;
     description: string;
-    workout_groups: DrillGroupFile[];
+    drill_groups: DrillGroupFile[];
 }

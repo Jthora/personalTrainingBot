@@ -4,26 +4,9 @@ import UserProgressStore from '../UserProgressStore';
 import { getFeatureFlags } from '../../config/featureFlags';
 
 const mockConfigFlags = {
-    generatorSwap: true,
-    calendarSurface: false,
-    migrationBridge: false,
     performanceInstrumentation: true,
     loadingCacheV2: false,
-    canonicalReadPath: false,
     globalKillSwitch: false,
-    missionDefaultRoutes: false,
-    missionSurfaceBrief: false,
-    missionSurfaceTriage: false,
-    missionSurfaceCase: false,
-    missionSurfaceSignal: false,
-    missionSurfaceChecklist: false,
-    missionSurfaceDebrief: false,
-    archetypeSystem: false,
-    statsSurface: false,
-    profileEditor: false,
-    drillRunnerUpgrade: false,
-    celebrations: false,
-    planSurface: false,
     p2pIdentity: false,
     ipfsContent: false,
 };

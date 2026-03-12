@@ -1,7 +1,7 @@
 {
     "name": "Strength & Endurance Mastery",
     "description": "Raw power & longevity for combat, developing elite-level endurance, explosiveness, and resilience.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Bodyweight Strength Progression",
             "description": "Progressive bodyweight training to develop maximal strength, stability, and muscular endurance.",

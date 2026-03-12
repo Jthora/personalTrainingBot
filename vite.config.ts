@@ -3,11 +3,19 @@ import react from '@vitejs/plugin-react-swc'
 import { visualizer } from 'rollup-plugin-visualizer'
 
 const chunkGroups = [
-  { name: 'coaches', patterns: [/src\/components\/Coach/i, /src\/data\/coaches/i, /src\/data\/coachModuleMapping/i] },
-  { name: 'workouts', patterns: [/src\/components\/(Workout|Training)/i] },
+  { name: 'handlers', patterns: [/src\/components\/Handler/i, /src\/data\/handlers/i, /src\/data\/handlerModuleMapping/i] },
+  { name: 'drills', patterns: [/src\/components\/(Drill|Training)/i] },
   { name: 'scheduler', patterns: [/src\/components\/(Schedule|Scheduler|Calendar)/i] },
   { name: 'share', patterns: [/src\/components\/(Share|CardTable)/i, /CardSharePage/i] },
   { name: 'sounds', patterns: [/src\/assets\/sounds/i] },
+  { name: 'mission-shell', patterns: [/src\/pages\/MissionFlow\/MissionShell/i, /src\/components\/(MissionIntakePanel|ArchetypePicker|HandlerPicker|CelebrationLayer)/i] },
+  { name: 'recap', patterns: [/src\/components\/Recap/i, /src\/data\/recapVariants/i, /src\/data\/recapCopy/i] },
+  { name: 'stores', patterns: [/src\/store\//i] },
+  { name: 'domain', patterns: [/src\/domain\//i] },
+  { name: 'gun-p2p', patterns: [/src\/services\/gun/i] },
+  { name: 'readiness', patterns: [/src\/utils\/readiness\//i] },
+  { name: 'caches', patterns: [/src\/cache\//i] },
+  { name: 'context', patterns: [/src\/context\//i] },
 ]
 
 // https://vite.dev/config/
@@ -32,12 +40,12 @@ export default defineConfig({
             return `tm-${tmMatch[1]}`
           }
 
-          const tcdWorkoutMatch = id.match(/src\/data\/training_coach_data\/workouts\/([^/]+)\.json/i)
-          if (tcdWorkoutMatch) {
-            return `tcd-workout-${tcdWorkoutMatch[1]}`
+          const tcdDrillMatch = id.match(/src\/data\/training_handler_data\/drills\/([^/]+)\.json/i)
+          if (tcdDrillMatch) {
+            return `tcd-drill-${tcdDrillMatch[1]}`
           }
 
-          const tcdMatch = id.match(/src\/data\/training_coach_data\/([^/]+)\.json/i)
+          const tcdMatch = id.match(/src\/data\/training_handler_data\/([^/]+)\.json/i)
           if (tcdMatch) {
             return `tcd-${tcdMatch[1]}`
           }

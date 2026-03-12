@@ -1,7 +1,7 @@
 {
     "name": "Tactical Conditioning & Situational Awareness",
     "description": "Developing advanced combat movement, reaction speed, and adaptive awareness for real-world combat scenarios.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Combat Footwork & Positional Mastery (Angles, Control, Evasion)",
             "description": "Training rapid footwork, strategic positioning, and controlled evasions to outmaneuver opponents.",

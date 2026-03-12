@@ -98,7 +98,7 @@ const StatsSurface: React.FC = () => {
       <OperativeIdentityCard />
 
       {/* Profile editor */}
-      {isFeatureEnabled('profileEditor') && <ProfileEditor />}
+      <ProfileEditor />
 
       {/* Sovereignty panel — data custody + keypair management */}
       {isFeatureEnabled('p2pIdentity') && <SovereigntyPanel />}

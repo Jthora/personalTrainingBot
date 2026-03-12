@@ -3,110 +3,69 @@
  * so they survive navigation between mission surfaces.
  */
 
+import { createStore } from './createStore';
+
 export type ArtifactActionRecord = {
   reviewed: boolean;
   promoted: boolean;
   updatedAt: number;
 };
 
-const STORE_KEY = 'ptb:artifact-actions';
+type State = Record<string, ArtifactActionRecord>;
 
-type Listener = (state: Record<string, ArtifactActionRecord>) => void;
-const listeners = new Set<Listener>();
-
-const readState = (): Record<string, ArtifactActionRecord> => {
-  if (typeof window === 'undefined') return {};
-  try {
-    const raw = window.localStorage.getItem(STORE_KEY);
-    return raw ? (JSON.parse(raw) as Record<string, ArtifactActionRecord>) : {};
-  } catch (err) {
-    console.warn('[ArtifactActionStore] read failed', err);
-    return {};
-  }
-};
-
-const writeState = (state: Record<string, ArtifactActionRecord>) => {
-  if (typeof window === 'undefined') return;
-  try {
-    window.localStorage.setItem(STORE_KEY, JSON.stringify(state));
-  } catch (err) {
-    console.warn('[ArtifactActionStore] write failed', err);
-  }
-};
-
-const notify = (state: Record<string, ArtifactActionRecord>) => {
-  listeners.forEach((fn) => fn(state));
-};
+const store = createStore<State>({ key: 'ptb:artifact-actions', defaultValue: {} });
 
 const ensureRecord = (existing: ArtifactActionRecord | undefined): ArtifactActionRecord =>
   existing ?? { reviewed: false, promoted: false, updatedAt: Date.now() };
 
 export const ArtifactActionStore = {
-  subscribe(cb: Listener) {
-    listeners.add(cb);
-    cb(this.getAll());
-    return () => { listeners.delete(cb); };
-  },
+  subscribe: store.subscribe.bind(store),
 
-  getAll(): Record<string, ArtifactActionRecord> {
-    return readState();
+  getAll(): State {
+    return store.get();
   },
 
   get(artifactId: string): ArtifactActionRecord | null {
-    return readState()[artifactId] ?? null;
+    return store.get()[artifactId] ?? null;
   },
 
   markReviewed(artifactId: string) {
-    const state = readState();
-    const record = ensureRecord(state[artifactId]);
-    state[artifactId] = { ...record, reviewed: true, updatedAt: Date.now() };
-    writeState(state);
-    notify(state);
+    store.update((s) => ({ ...s, [artifactId]: { ...ensureRecord(s[artifactId]), reviewed: true, updatedAt: Date.now() } }));
   },
 
   markPromoted(artifactId: string) {
-    const state = readState();
-    const record = ensureRecord(state[artifactId]);
-    state[artifactId] = { ...record, promoted: true, updatedAt: Date.now() };
-    writeState(state);
-    notify(state);
+    store.update((s) => ({ ...s, [artifactId]: { ...ensureRecord(s[artifactId]), promoted: true, updatedAt: Date.now() } }));
   },
 
   toggleReviewed(artifactId: string) {
-    const state = readState();
-    const record = ensureRecord(state[artifactId]);
-    state[artifactId] = { ...record, reviewed: !record.reviewed, updatedAt: Date.now() };
-    writeState(state);
-    notify(state);
+    store.update((s) => {
+      const record = ensureRecord(s[artifactId]);
+      return { ...s, [artifactId]: { ...record, reviewed: !record.reviewed, updatedAt: Date.now() } };
+    });
   },
 
   togglePromoted(artifactId: string) {
-    const state = readState();
-    const record = ensureRecord(state[artifactId]);
-    state[artifactId] = { ...record, promoted: !record.promoted, updatedAt: Date.now() };
-    writeState(state);
-    notify(state);
+    store.update((s) => {
+      const record = ensureRecord(s[artifactId]);
+      return { ...s, [artifactId]: { ...record, promoted: !record.promoted, updatedAt: Date.now() } };
+    });
   },
 
   clear(artifactId: string) {
-    const state = readState();
-    delete state[artifactId];
-    writeState(state);
-    notify(state);
+    store.update((s) => { const next = { ...s }; delete next[artifactId]; return next; });
   },
 
   clearAll() {
-    writeState({});
-    notify({});
+    store.set({});
   },
 
   /** Count of artifacts that have been reviewed. */
   reviewedCount(): number {
-    return Object.values(readState()).filter((r) => r.reviewed).length;
+    return Object.values(store.get()).filter((r) => r.reviewed).length;
   },
 
   /** Count of artifacts that have been promoted to intel. */
   promotedCount(): number {
-    return Object.values(readState()).filter((r) => r.promoted).length;
+    return Object.values(store.get()).filter((r) => r.promoted).length;
   },
 };

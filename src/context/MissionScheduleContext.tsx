@@ -5,14 +5,12 @@ import { DifficultySetting } from '../types/DifficultySetting';
 import MissionScheduleStore from '../store/MissionScheduleStore';
 import { recordMetric, nowMs } from '../utils/metrics';
 import { ProgressEventRecorder } from '../store/UserProgressEvents';
-import FeatureFlagsStore from '../store/FeatureFlagsStore';
 import { checkScheduleAlignment } from '../utils/alignmentCheck';
 import UserProgressStore from '../store/UserProgressStore';
 import { RecapSummary } from '../types/RecapSummary';
-import { summarizeSchedule } from '../utils/scheduleSummary';
-import { buildRecapShareText } from '../utils/recapShareText';
 import { mark } from '../utils/perf';
 import { loadScheduleStub } from '../utils/ScheduleLoader';
+import { useRecap } from '../hooks/useRecap';
 
 interface MissionScheduleContextProps {
     schedule: MissionSchedule;
@@ -56,13 +54,10 @@ export const MissionScheduleProvider: React.FC<MissionScheduleProviderProps> = (
     const [isLoading, setIsLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
     const [scheduleVersion, setScheduleVersion] = useState(0);
-    const [recap, setRecap] = useState<RecapSummary | null>(null);
-    const [recapOpen, setRecapOpen] = useState(false);
-    const [recapToastVisible, setRecapToastVisible] = useState(false);
-    const [promptShown, setPromptShown] = useState(false);
     const scheduleReadyMarkedRef = useRef(false);
     const scheduleRef = useRef<MissionSchedule | null>(schedule);
     const [scheduleStatus, setScheduleStatus] = useState<ScheduleStatus>({ source: 'network', stale: false, status: 'loading' });
+    const { recap, recapOpen, recapToastVisible, openRecap, dismissRecap, dismissRecapToast, tryBuildRecap } = useRecap();
 
     const incrementScheduleVersion = useCallback(() => {
         setScheduleVersion(prevVersion => prevVersion + 1);
@@ -232,9 +227,7 @@ export const MissionScheduleProvider: React.FC<MissionScheduleProviderProps> = (
                 console.log('MissionScheduleProvider: No items to complete');
                 return prevSchedule;
             }
-            console.log('MissionScheduleProvider: Current schedule:', prevSchedule);
             const prevProgress = UserProgressStore.get();
-            const scheduleSummary = summarizeSchedule(prevSchedule);
             const progressItem: MissionSet | MissionBlock = prevSchedule.scheduleItems[0] instanceof MissionSet
                 ? new MissionSet(prevSchedule.scheduleItems[0].drills.map(([drill, completed]) => [drill, completed]))
                 : prevSchedule.scheduleItems[0] instanceof MissionBlock
@@ -251,113 +244,34 @@ export const MissionScheduleProvider: React.FC<MissionScheduleProviderProps> = (
                 prevSchedule.difficultySettings
             );
             updatedSchedule.completeNextItem();
-            console.log('MissionScheduleProvider: Updated schedule after completion:', updatedSchedule);
             MissionScheduleStore.saveSchedule(updatedSchedule);
             recordMetric('drill_completed', { remaining: updatedSchedule.scheduleItems.length });
             const recapResult = ProgressEventRecorder.recordCompletion({ item: progressItem, scheduleAfter: updatedSchedule });
-            const progressPrefs = UserProgressStore.get();
-            const flagPrefs = FeatureFlagsStore.get();
-            const recapEnabled = flagPrefs.recapEnabled ?? true;
-            const shareEnabled = flagPrefs.recapShareEnabled ?? true;
-            const recapMotionEnabled = flagPrefs.recapAnimationsEnabled ?? true;
-            const isOffline = typeof navigator !== 'undefined' && navigator.onLine === false;
-            if (recapResult.scheduleEmpty && recapEnabled && !flagPrefs.quietMode && !promptShown) {
-                const latestProgress = UserProgressStore.get();
-                const vm = UserProgressStore.getViewModel();
-                const unlockedBadges = latestProgress.badges.filter(badge => !prevProgress.badges.includes(badge));
-                const challengeProgress = (latestProgress.challenges || []).map(challenge => ({
-                    id: challenge.id,
-                    title: challenge.title,
-                    progress: challenge.progress,
-                    target: challenge.target,
-                    timeframe: challenge.timeframe,
-                    rewardXp: challenge.rewardXp,
-                    endsAt: challenge.endsAt,
-                    completed: challenge.completed,
-                    claimed: challenge.claimed,
-                }));
-                const baseRecap: RecapSummary = {
-                    xp: recapResult.xp,
-                    minutes: recapResult.minutes,
-                    streakCount: progressPrefs.streakCount,
-                    streakStatus: vm.streakStatus,
-                    xpDelta: Math.max(0, latestProgress.xp - prevProgress.xp),
-                    streakDelta: Math.max(0, latestProgress.streakCount - prevProgress.streakCount),
-                    level: progressPrefs.level,
-                    levelProgressPercent: vm.levelProgressPercent,
-                    xpToNextLevel: vm.xpToNextLevel,
-                    dailyGoalPercent: vm.dailyGoalPercent,
-                    weeklyGoalPercent: vm.weeklyGoalPercent,
-                    badges: vm.badgesPreview,
-                    badgeTotal: progressPrefs.badges.length,
-                    selectionFocus: scheduleSummary?.focus,
-                    presetUsed: MissionScheduleStore.getLastPreset() ?? 'Custom selection',
-                    focusRationale: scheduleSummary?.rationale,
-                    animationsEnabled: recapMotionEnabled,
-                    isOffline,
-                    unlockedBadges,
-                    challengeProgress,
-                };
-                const share = shareEnabled && !isOffline ? buildRecapShareText(baseRecap) : null;
-                setRecap({
-                    ...baseRecap,
-                    shareAvailable: Boolean(share?.text),
-                    shareText: share?.text,
-                });
-                setRecapToastVisible(true);
-                setRecapOpen(false);
-                setPromptShown(true);
-            }
+            tryBuildRecap({ recapResult, prevProgress, prevSchedule });
             incrementScheduleVersion();
             return updatedSchedule;
         });
-    }, [incrementScheduleVersion, promptShown]);
+    }, [incrementScheduleVersion, tryBuildRecap]);
 
-    const skipCurrentDrill = useCallback(() => {
-        console.log('MissionScheduleProvider: skipCurrentDrill called');
+    const advanceSchedule = useCallback((reason: 'skip' | 'timeout') => {
         setSchedule(prevSchedule => {
-            if (!prevSchedule || prevSchedule.scheduleItems.length === 0) {
-                console.log('MissionScheduleProvider: No items to skip');
-                return prevSchedule;
-            }
-            console.log('MissionScheduleProvider: Current schedule:', prevSchedule);
+            if (!prevSchedule || prevSchedule.scheduleItems.length === 0) return prevSchedule;
             const updatedSchedule = new MissionSchedule(
                 prevSchedule.date,
                 [...prevSchedule.scheduleItems],
                 prevSchedule.difficultySettings
             );
             updatedSchedule.skipNextItem();
-            console.log('MissionScheduleProvider: Updated schedule after skipping:', updatedSchedule);
             MissionScheduleStore.saveSchedule(updatedSchedule);
-            recordMetric('drill_skipped', { remaining: updatedSchedule.scheduleItems.length });
-            ProgressEventRecorder.recordSkip('skip');
+            recordMetric('drill_skipped', { remaining: updatedSchedule.scheduleItems.length, ...(reason === 'timeout' && { reason }) });
+            ProgressEventRecorder.recordSkip(reason);
             incrementScheduleVersion();
             return updatedSchedule;
         });
     }, [incrementScheduleVersion]);
 
-    const timeoutCurrentDrill = useCallback(() => {
-        console.log('MissionScheduleProvider: timeoutCurrentDrill called');
-        setSchedule(prevSchedule => {
-            if (!prevSchedule || prevSchedule.scheduleItems.length === 0) {
-                console.log('MissionScheduleProvider: No items to timeout');
-                return prevSchedule;
-            }
-            console.log('MissionScheduleProvider: Current schedule:', prevSchedule);
-            const updatedSchedule = new MissionSchedule(
-                prevSchedule.date,
-                [...prevSchedule.scheduleItems],
-                prevSchedule.difficultySettings
-            );
-            updatedSchedule.skipNextItem();
-            console.log('MissionScheduleProvider: Updated schedule after timeout (treated as skip):', updatedSchedule);
-            MissionScheduleStore.saveSchedule(updatedSchedule);
-            recordMetric('drill_skipped', { remaining: updatedSchedule.scheduleItems.length, reason: 'timeout' });
-            ProgressEventRecorder.recordSkip('timeout');
-            incrementScheduleVersion();
-            return updatedSchedule;
-        });
-    }, [incrementScheduleVersion]);
+    const skipCurrentDrill = useCallback(() => advanceSchedule('skip'), [advanceSchedule]);
+    const timeoutCurrentDrill = useCallback(() => advanceSchedule('timeout'), [advanceSchedule]);
 
     useEffect(() => {
         loadSchedule();
@@ -388,23 +302,6 @@ export const MissionScheduleProvider: React.FC<MissionScheduleProviderProps> = (
             }
         };
     }, [schedule.difficultySettings.level, scheduleVersion]);
-
-    const dismissRecap = useCallback(() => {
-        setRecap(null);
-        setRecapOpen(false);
-        setRecapToastVisible(false);
-    }, []);
-
-    const openRecap = useCallback(() => {
-        if (!recap) return;
-        setRecapOpen(true);
-        setRecapToastVisible(false);
-    }, [recap]);
-
-    const dismissRecapToast = useCallback((reason?: string) => {
-        setRecapToastVisible(false);
-        if (reason) recordMetric('recap_toast_dismiss', { reason });
-    }, []);
 
     return (
         <MissionScheduleContext.Provider

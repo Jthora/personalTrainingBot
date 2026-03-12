@@ -1,7 +1,7 @@
 {
     "name": "Grip",
     "description": "Grip training exercises to improve hand strength and endurance.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Beginner Grip Endurance Routine",
             "description": "Basic grip-strengthening exercises to build endurance and foundational hand strength.",

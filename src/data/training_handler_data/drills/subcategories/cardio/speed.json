@@ -1,7 +1,7 @@
 {
     "name": "Speed",
     "description": "Speed drills to improve sprinting and running speed.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "High-Intensity Speed Drills",
             "description": "Short bursts of sprinting.",

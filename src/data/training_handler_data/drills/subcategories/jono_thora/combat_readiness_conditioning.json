@@ -1,7 +1,7 @@
 {
     "name": "Combat Readiness Conditioning",
     "description": "Combat-specific strength, endurance, and reflex training to improve striking power, resilience, and movement control.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Striking Power & Speed",
             "description": "Developing maximum striking power, explosive force, and rapid attack speed.",

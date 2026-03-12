@@ -4,14 +4,14 @@ import { MissionBlock, MissionSet } from '../../types/MissionSchedule';
 import { cloneScheduleItems, moveScheduleItem, removeScheduleItem, describeScheduleItem, getAlignmentStatus, adjustSetDifficulty, replaceSetWithSimilar } from '../schedulePreview';
 
 describe('schedulePreview helpers', () => {
-    const workoutA = new Drill('A', 'desc', '10', 'med', [1, 3]);
-    const workoutB = new Drill('B', 'desc', '10', 'med', [1, 3]);
-    const workoutC = new Drill('C', 'desc', '15', 'high', [4, 6]);
+    const drillA = new Drill('A', 'desc', '10', 'med', [1, 3]);
+    const drillB = new Drill('B', 'desc', '10', 'med', [1, 3]);
+    const drillC = new Drill('C', 'desc', '15', 'high', [4, 6]);
 
     const baseItems = [
-        new MissionSet([[workoutA, false], [workoutB, false]]),
+        new MissionSet([[drillA, false], [drillB, false]]),
         new MissionBlock('Block', 'intervals', 12, 'details'),
-        new MissionSet([[workoutC, false]])
+        new MissionSet([[drillC, false]])
     ];
 
     it('clones without mutating original items', () => {
@@ -19,7 +19,7 @@ describe('schedulePreview helpers', () => {
         expect(clone).not.toBe(baseItems);
         expect(clone[0]).toBeInstanceOf(MissionSet);
         expect((clone[0] as MissionSet).drills).not.toBe((baseItems[0] as MissionSet).drills);
-        expect((clone[0] as MissionSet).drills[0][0]).not.toBe(workoutA);
+        expect((clone[0] as MissionSet).drills[0][0]).not.toBe(drillA);
     });
 
     it('moves items between indices', () => {
@@ -55,7 +55,7 @@ describe('schedulePreview helpers', () => {
     });
 
     it('replaces a set with similar drills', () => {
-        const pool = [workoutA, workoutB, workoutC];
+        const pool = [drillA, drillB, drillC];
         const replaced = replaceSetWithSimilar(baseItems[0] as MissionSet, pool, 3);
         expect(replaced.drills.length).toBe(2);
         expect(replaced.drills[0][0].name).not.toBe('A');

@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import styles from './Header.module.css';
 import logo from '../../assets/images/WingCommanderLogo-288x162.gif';
 import UserProgressStore from '../../store/UserProgressStore';
-import MissionScheduleStore from '../../store/MissionScheduleStore';
+import useMissionSchedule from '../../hooks/useMissionSchedule';
 import { checkScheduleAlignment } from '../../utils/alignmentCheck';
 import HeaderNav from './HeaderNav';
 import HeaderDrawer from './HeaderDrawer';
@@ -23,7 +23,7 @@ const Header: React.FC = () => {
         selectionSummary: '',
     });
 
-    const schedule = useMemo(() => MissionScheduleStore.getScheduleSync(), [location.pathname]);
+    const { schedule } = useMissionSchedule();
 
     const alignment = useMemo(() => {
         if (!schedule) return 'pass' as const;

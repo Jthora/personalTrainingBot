@@ -1,7 +1,7 @@
 {
     "name": "Focus",
     "description": "Focus exercises to improve mental clarity, attention span, and cognitive processing.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Focus",
             "description": "Enhance mental clarity, attention span, and ability to maintain deep concentration.",

@@ -1,7 +1,7 @@
 {
     "name": "Offensive-Defensive Synergy",
     "description": "Training to seamlessly blend offensive strikes with defensive counters, using dual-weapon transitions, shields, and tactical redirections.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Fundamentals of Offensive-Defensive Balance",
             "description": "Building the core principles of attacking and defending in the same motion.",

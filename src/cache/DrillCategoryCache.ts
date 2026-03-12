@@ -29,15 +29,15 @@ class DrillCategoryCache {
         return DrillCategoryCache.instance;
     }
 
-    public async loadData(workoutCategories: DrillCategory[]): Promise<void> {
+    public async loadData(drillCategories: DrillCategory[]): Promise<void> {
         if (this.loading) {
             console.warn('DrillCategoryCache is already caching data.');
             return;
         }
         this.loading = true;
-        console.log(`DrillCategoryCache: Starting to cache ${workoutCategories.length} drill categories...`);
+        console.log(`DrillCategoryCache: Starting to cache ${drillCategories.length} drill categories...`);
 
-        workoutCategories.forEach(category => {
+        drillCategories.forEach(category => {
             this.cache.set(category.id, category);
             this.selectedCategories.add(category.id);
             category.subCategories.forEach(subCategory => {
@@ -55,7 +55,7 @@ class DrillCategoryCache {
         console.log(`DrillCategoryCache: Cached ${this.selectedDrillGroups.size} drill groups.`);
         console.log(`DrillCategoryCache: Cached ${this.selectedDrills.size} drills.`);
 
-        const signature = this.computeTaxonomySignature(workoutCategories);
+        const signature = this.computeTaxonomySignature(drillCategories);
         const shouldHydrate = MissionScheduleStore.syncTaxonomySignature(signature);
 
         if (shouldHydrate) {
@@ -67,21 +67,21 @@ class DrillCategoryCache {
         this.loading = false;
     }
 
-    public async reloadData(workoutCategories: DrillCategory[]): Promise<void> {
+    public async reloadData(drillCategories: DrillCategory[]): Promise<void> {
         this.clearCache();
-        await this.loadData(workoutCategories);
+        await this.loadData(drillCategories);
     }
 
     public isLoading(): boolean {
         return this.loading;
     }
 
-    public getWorkoutCategories(): DrillCategory[] {
-        // Return all WorkoutCategories from the cache
+    public getDrillCategories(): DrillCategory[] {
+        // Return all DrillCategories from the cache
         return Array.from(this.cache.values());
     }
 
-    public async fetchAllWorkoutsInCategory(categoryId: string): Promise<Drill[]> {
+    public async fetchAllDrillsInCategory(categoryId: string): Promise<Drill[]> {
         const category = this.cache.get(categoryId);
         if (!category) {
             return [];
@@ -95,7 +95,7 @@ class DrillCategoryCache {
         return drills;
     }
 
-    public getAllWorkoutsSelected(): Drill[] {
+    public getAllDrillsSelected(): Drill[] {
         const selectedDrillCategories = MissionScheduleStore.getSelectedDrillCategoriesSync();
         const selectedDrillSubCategories = MissionScheduleStore.getSelectedDrillSubCategoriesSync();
         const selectedDrillGroups = MissionScheduleStore.getSelectedDrillGroupsSync();
@@ -105,13 +105,13 @@ class DrillCategoryCache {
         console.log('Selected subcategories:', selectedDrillSubCategories);
         console.log('Selected groups:', selectedDrillGroups);
         console.log('Selected drills:', selectedDrills);
-        const selected = this.getAllWorkoutsFilteredBy(selectedDrillCategories, selectedDrillSubCategories, selectedDrillGroups, selectedDrills);
+        const selected = this.getAllDrillsFilteredBy(selectedDrillCategories, selectedDrillSubCategories, selectedDrillGroups, selectedDrills);
         const filtered = applyDrillFilters(selected, filters);
         console.log(`DrillCategoryCache: applied filters ${JSON.stringify(filters)} -> ${filtered.length}/${selected.length} drills`);
         return filtered;
     }
 
-    public getAllWorkouts(): Drill[] {
+    public getAllDrills(): Drill[] {
         const drills: Drill[] = [];
         this.cache.forEach(category => {
             category.subCategories.forEach(subCategory => {
@@ -154,7 +154,7 @@ class DrillCategoryCache {
         MissionScheduleStore.saveSelectedDrillGroups(this.convertSetToObject(this.selectedDrillGroups));
     }
 
-    public toggleWorkoutSelection(id: string): void {
+    public toggleDrillSelection(id: string): void {
         if (this.selectedDrills.has(id)) {
             this.selectedDrills.delete(id);
         } else {
@@ -165,9 +165,9 @@ class DrillCategoryCache {
 
     public applyPreset(preset: DrillPreset): void {
         const categories = Array.from(this.cache.values());
-        const { categoryIds, subCategoryIds, groupIds, workoutIds } = buildPresetSelections(categories, preset);
+        const { categoryIds, subCategoryIds, groupIds, drillIds } = buildPresetSelections(categories, preset);
 
-        if (workoutIds.size === 0) {
+        if (drillIds.size === 0) {
             console.warn(`DrillCategoryCache: preset ${preset} matched no drills; falling back to select all.`);
             this.selectAll();
             return;
@@ -176,7 +176,7 @@ class DrillCategoryCache {
         this.selectedCategories = categoryIds;
         this.selectedSubCategories = subCategoryIds;
         this.selectedDrillGroups = groupIds;
-        this.selectedDrills = workoutIds;
+        this.selectedDrills = drillIds;
         this.persistSelectionState();
         MissionScheduleStore.saveLastPreset(preset);
     }
@@ -217,7 +217,7 @@ class DrillCategoryCache {
         return this.selectedDrillGroups.has(id);
     }
 
-    public isWorkoutSelected(id: string): boolean {
+    public isDrillSelected(id: string): boolean {
         return this.selectedDrills.has(id);
     }
 
@@ -229,18 +229,18 @@ class DrillCategoryCache {
         this.selectedDrills.clear();
     }
 
-    private computeTaxonomySignature(workoutCategories: DrillCategory[]): string {
-        const parts = workoutCategories
+    private computeTaxonomySignature(drillCategories: DrillCategory[]): string {
+        const parts = drillCategories
             .map(category => {
                 const subParts = category.subCategories
                     .map(sub => {
                         const groupParts = sub.drillGroups
                             .map(group => {
-                                const workoutParts = group.drills
+                                const drillParts = group.drills
                                     .map(drill => drill.id)
                                     .sort()
                                     .join(',');
-                                return `${group.id}:${workoutParts}`;
+                                return `${group.id}:${drillParts}`;
                             })
                             .sort()
                             .join('|');
@@ -256,7 +256,7 @@ class DrillCategoryCache {
         return parts;
     }
 
-    public getWorkoutsByDifficultyRange(minLevel: number, maxLevel: number, count: number): Drill[] {
+    public getDrillsByDifficultyRange(minLevel: number, maxLevel: number, count: number): Drill[] {
         const drills: Drill[] = [];
         this.cache.forEach(category => {
             category.subCategories.forEach(subCategory => {
@@ -272,17 +272,17 @@ class DrillCategoryCache {
         return this.getRandomItems(drills, count);
     }
 
-    public getWorkoutsBySingleDifficultyLevel(level: number, count: number): Drill[] {
-        return this.getWorkoutsByDifficultyRange(level, level, count);
+    public getDrillsBySingleDifficultyLevel(level: number, count: number): Drill[] {
+        return this.getDrillsByDifficultyRange(level, level, count);
     }
 
-    public getAllWorkoutsFilteredBy(
+    public getAllDrillsFilteredBy(
         selectedCategories: SelectedDrillCategories,
         selectedSubCategories: SelectedDrillSubCategories,
         selectedGroups: SelectedDrillGroups,
         selectedDrills: SelectedDrills
     ): Drill[] {
-        console.log(`getAllWorkoutsFilteredBy: filtering`);
+        console.log(`getAllDrillsFilteredBy: filtering`);
         const drills: Drill[] = [];
         this.cache.forEach(category => {
             if (selectedCategories[category.id]) { 
@@ -306,9 +306,9 @@ class DrillCategoryCache {
             }
         });
         if (drills.length === 0) {
-            console.warn(`getAllWorkoutsFilteredBy: no drills selected?`);
+            console.warn(`getAllDrillsFilteredBy: no drills selected?`);
         } else {
-            console.log(`getAllWorkoutsFilteredBy: selected ${drills.length} drills`);
+            console.log(`getAllDrillsFilteredBy: selected ${drills.length} drills`);
         }
         return drills;
     }
@@ -337,12 +337,12 @@ class DrillCategoryCache {
         const allCategoryIds = new Set(this.selectedCategories);
         const allSubCategoryIds = new Set(this.selectedSubCategories);
         const allGroupIds = new Set(this.selectedDrillGroups);
-        const allWorkoutIds = new Set(this.selectedDrills);
+        const allDrillIds = new Set(this.selectedDrills);
 
         const persistedCategories = MissionScheduleStore.getSelectedDrillCategoriesSync();
         const persistedSubCategories = MissionScheduleStore.getSelectedDrillSubCategoriesSync();
         const persistedGroups = MissionScheduleStore.getSelectedDrillGroupsSync();
-        const persistedWorkouts = MissionScheduleStore.getSelectedDrillsSync();
+        const persistedDrills = MissionScheduleStore.getSelectedDrillsSync();
 
         this.selectedCategories.clear();
         this.selectedSubCategories.clear();
@@ -352,7 +352,7 @@ class DrillCategoryCache {
         this.applySelectionMap(persistedCategories, allCategoryIds, this.selectedCategories, 'category');
         this.applySelectionMap(persistedSubCategories, allSubCategoryIds, this.selectedSubCategories, 'subcategory');
         this.applySelectionMap(persistedGroups, allGroupIds, this.selectedDrillGroups, 'group');
-        this.applySelectionMap(persistedWorkouts, allWorkoutIds, this.selectedDrills, 'drill');
+        this.applySelectionMap(persistedDrills, allDrillIds, this.selectedDrills, 'drill');
 
         this.persistSelectionState();
     }

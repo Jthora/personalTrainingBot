@@ -1,16 +1,15 @@
 import TrainingModuleCache from '../cache/TrainingModuleCache';
-import { getCoachDefaultModules } from '../data/handlerModuleMapping';
-import { isFeatureEnabled } from '../config/featureFlags';
+import { getHandlerDefaultModules } from '../data/handlerModuleMapping';
 import OperativeProfileStore from '../store/OperativeProfileStore';
 import { resolveModulesForArchetype } from './archetypeModuleResolver';
 
 const OVERRIDES_STORAGE_KEY = 'coachModuleOverrides';
 
-type CoachModuleOverrides = Record<string, string[]>;
+type HandlerModuleOverrides = Record<string, string[]>;
 
 const isBrowser = () => typeof window !== 'undefined' && typeof window.localStorage !== 'undefined';
 
-const readOverrides = (): CoachModuleOverrides => {
+const readOverrides = (): HandlerModuleOverrides => {
     if (!isBrowser()) {
         return {};
     }
@@ -20,7 +19,7 @@ const readOverrides = (): CoachModuleOverrides => {
         if (!raw) {
             return {};
         }
-        const parsed = JSON.parse(raw) as CoachModuleOverrides;
+        const parsed = JSON.parse(raw) as HandlerModuleOverrides;
         return parsed || {};
     } catch (error) {
         console.warn('Failed to parse handler module overrides from storage.', error);
@@ -28,7 +27,7 @@ const readOverrides = (): CoachModuleOverrides => {
     }
 };
 
-const writeOverrides = (overrides: CoachModuleOverrides) => {
+const writeOverrides = (overrides: HandlerModuleOverrides) => {
     if (!isBrowser()) {
         return;
     }
@@ -40,50 +39,48 @@ const writeOverrides = (overrides: CoachModuleOverrides) => {
     }
 };
 
-export const getHandlerOverrideModules = (coachId: string): string[] | undefined => {
+export const getHandlerOverrideModules = (handlerId: string): string[] | undefined => {
     const overrides = readOverrides();
-    return overrides[coachId];
+    return overrides[handlerId];
 };
 
-export const saveHandlerOverrideModules = (coachId: string, moduleIds: string[]) => {
+export const saveHandlerOverrideModules = (handlerId: string, moduleIds: string[]) => {
     const overrides = readOverrides();
     const uniqueIds = Array.from(new Set(moduleIds));
-    overrides[coachId] = uniqueIds;
+    overrides[handlerId] = uniqueIds;
     writeOverrides(overrides);
-    syncHandlerModuleSelection(coachId);
+    syncHandlerModuleSelection(handlerId);
 };
 
-export const clearHandlerOverrideModules = (coachId: string) => {
+export const clearHandlerOverrideModules = (handlerId: string) => {
     const overrides = readOverrides();
-    if (overrides[coachId]) {
-        delete overrides[coachId];
+    if (overrides[handlerId]) {
+        delete overrides[handlerId];
         writeOverrides(overrides);
-        syncHandlerModuleSelection(coachId);
+        syncHandlerModuleSelection(handlerId);
     }
 };
 
-export const getModulesForHandler = (coachId: string): string[] | undefined => {
+export const getModulesForHandler = (handlerId: string): string[] | undefined => {
     // Priority: user overrides > archetype modules > handler defaults
-    const overrides = getHandlerOverrideModules(coachId);
+    const overrides = getHandlerOverrideModules(handlerId);
     if (overrides) return overrides;
 
-    if (isFeatureEnabled('archetypeSystem')) {
-        const profile = OperativeProfileStore.get();
-        if (profile?.archetypeId) {
-            const archetypeModules = resolveModulesForArchetype(profile.archetypeId);
-            if (archetypeModules && archetypeModules.length > 0) return archetypeModules;
-        }
+    const profile = OperativeProfileStore.get();
+    if (profile?.archetypeId) {
+        const archetypeModules = resolveModulesForArchetype(profile.archetypeId);
+        if (archetypeModules && archetypeModules.length > 0) return archetypeModules;
     }
 
-    return getCoachDefaultModules(coachId);
+    return getHandlerDefaultModules(handlerId);
 };
 
-export const hasHandlerOverride = (coachId: string): boolean => {
-    const modules = getHandlerOverrideModules(coachId);
+export const hasHandlerOverride = (handlerId: string): boolean => {
+    const modules = getHandlerOverrideModules(handlerId);
     return Array.isArray(modules) && modules.length > 0;
 };
 
-export const syncHandlerModuleSelection = (coachId: string): void => {
+export const syncHandlerModuleSelection = (handlerId: string): void => {
     const cache = TrainingModuleCache.getInstance();
-    cache.selectModules(getModulesForHandler(coachId));
+    cache.selectModules(getModulesForHandler(handlerId));
 };

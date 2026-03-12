@@ -11,7 +11,7 @@ beforeEach(() => {
 describe('MissionScheduleStore selection listeners', () => {
     it('notifies subscribers when selections change', () => {
         const listener = vi.fn();
-        const unsubscribe = MissionScheduleStore.subscribeToSelectionChanges(listener);
+        const unsubscribe = MissionScheduleStore.subscribeToScheduleStoreChanges(listener);
 
         MissionScheduleStore.saveSelectedDrills({ alpha: true });
         MissionScheduleStore.saveSelectedDrillCategories({ catA: true, catB: false });

@@ -8,7 +8,7 @@ import MissionScheduleStore from '../../store/MissionScheduleStore';
 vi.mock('../../store/MissionScheduleStore', () => {
     const getSelectionCounts = vi.fn(() => ({ categories: 1, drills: 2 }));
     let listener: (() => void) | null = null;
-    const subscribeToSelectionChanges = vi.fn((cb: () => void) => {
+    const subscribeToScheduleStoreChanges = vi.fn((cb: () => void) => {
         listener = cb;
         return () => { listener = null; };
     });
@@ -17,7 +17,7 @@ vi.mock('../../store/MissionScheduleStore', () => {
         __esModule: true,
         default: {
             getSelectionCounts,
-            subscribeToSelectionChanges,
+            subscribeToScheduleStoreChanges,
             __trigger: trigger,
         },
     };

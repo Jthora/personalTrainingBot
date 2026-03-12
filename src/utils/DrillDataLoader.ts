@@ -24,7 +24,7 @@ interface DrillGroupJSON {
 interface DrillSubCategoryJSON {
     name: string;
     description: string;
-    workout_groups: DrillGroupJSON[];
+    drill_groups: DrillGroupJSON[];
 }
 
 interface DrillCategoryJSON {
@@ -79,8 +79,8 @@ const isDrillSubCategoryJSON = (value: unknown): value is DrillSubCategoryJSON =
     const candidate = value as Partial<DrillSubCategoryJSON>;
     return typeof candidate.name === "string"
         && typeof candidate.description === "string"
-        && Array.isArray(candidate.workout_groups)
-        && candidate.workout_groups.every(isDrillGroupJSON);
+        && Array.isArray(candidate.drill_groups)
+        && candidate.drill_groups.every(isDrillGroupJSON);
 };
 
 const isRecordOfStrings = (value: unknown): value is Record<string, string> => {
@@ -106,21 +106,21 @@ class DrillDataLoader {
     async loadAllData(onProgress: () => void, onPartialFailure?: (message: string) => void): Promise<DrillCategory[]> {
         try {
             console.log("DrillDataLoader: Starting to load all drill data...");
-            const workoutCategories = await this.loadWorkoutCategories(onProgress, onPartialFailure);
-            console.log(`DrillDataLoader: Fetched ${workoutCategories.length} drill categories.`);
-            return workoutCategories;
+            const drillCategories = await this.loadDrillCategories(onProgress, onPartialFailure);
+            console.log(`DrillDataLoader: Fetched ${drillCategories.length} drill categories.`);
+            return drillCategories;
         } catch (error) {
             console.error("DrillDataLoader: Failed to load all drill data:", error);
             return [];
         }
     }
 
-    async loadWorkoutCategories(onProgress: () => void, onPartialFailure?: (message: string) => void): Promise<DrillCategory[]> {
+    async loadDrillCategories(onProgress: () => void, onPartialFailure?: (message: string) => void): Promise<DrillCategory[]> {
         const loadCategories = async () => {
-        const workoutCategories: DrillCategory[] = [];
+        const drillCategories: DrillCategory[] = [];
         let totalSubCategories = 0;
         let totalDrillGroups = 0;
-        let totalWorkouts = 0;
+        let totalDrills = 0;
         console.log(`DrillDataLoader: Total categories to load: ${Object.keys(drillCategoryPaths).length}`);
         const categoryEntries = Object.entries(drillCategoryPaths);
 
@@ -156,15 +156,15 @@ class DrillDataLoader {
 
                             const subCategoryData = subCategoryCandidate;
                             totalSubCategories++;
-                            const drillGroups: DrillGroup[] = subCategoryData.workout_groups.map(group => {
-                                const drills = group.drills.map(workoutJSON => new Drill(
-                                    workoutJSON.name,
-                                    workoutJSON.description,
-                                    workoutJSON.duration,
-                                    workoutJSON.intensity,
-                                    workoutJSON.difficulty_range
+                            const drillGroups: DrillGroup[] = subCategoryData.drill_groups.map(group => {
+                                const drills = group.drills.map(drillJSON => new Drill(
+                                    drillJSON.name,
+                                    drillJSON.description,
+                                    drillJSON.duration,
+                                    drillJSON.intensity,
+                                    drillJSON.difficulty_range
                                 ));
-                                totalWorkouts += drills.length;
+                                totalDrills += drills.length;
                                 return new DrillGroup(group.name, group.description, drills);
                             });
                             totalDrillGroups += drillGroups.length;
@@ -181,30 +181,30 @@ class DrillDataLoader {
                     })
                 );
 
-                workoutCategories.push(new DrillCategory(categoryId, categoryData.name, categoryData.description, subCategories));
+                drillCategories.push(new DrillCategory(categoryId, categoryData.name, categoryData.description, subCategories));
                 console.log(`DrillDataLoader: Loaded category ${categoryData.name} with ${subCategories.length} subcategories.`);
             } catch (error) {
                 console.error(`DrillDataLoader: Failed to load drill category ${categoryId}:`, error);
                 onPartialFailure?.(`Drill category ${categoryId} failed to load; showing fallback.`);
-                workoutCategories.push(this.createFallbackCategory(categoryId));
+                drillCategories.push(this.createFallbackCategory(categoryId));
             }
         }
-        console.log(`DrillDataLoader: Successfully loaded ${workoutCategories.length} drill categories.`);
+        console.log(`DrillDataLoader: Successfully loaded ${drillCategories.length} drill categories.`);
         console.log(`DrillDataLoader: Total subcategories: ${totalSubCategories}.`);
         console.log(`DrillDataLoader: Total drill groups: ${totalDrillGroups}.`);
-        console.log(`DrillDataLoader: Total drills: ${totalWorkouts}.`);
-        return workoutCategories;
+        console.log(`DrillDataLoader: Total drills: ${totalDrills}.`);
+        return drillCategories;
         };
 
         if (isFeatureEnabled('loadingCacheV2')) {
             const appVersion = ((import.meta as any).env?.VITE_APP_VERSION as string | undefined) ?? APP_VERSION;
             const cached = await withCache<DrillCategory[]>(
-                'workoutCategories',
+                'drillCategories',
                 'all',
-                TTL_MS.workoutCategories,
-                `workoutCategories-${appVersion}`,
+                TTL_MS.drillCategories,
+                `drillCategories-${appVersion}`,
                 loadCategories,
-                { logger: (msg, meta) => console.info(`workoutCategoriesCache: ${msg}`, meta) }
+                { logger: (msg, meta) => console.info(`drillCategoriesCache: ${msg}`, meta) }
             );
             return cached.data;
         }

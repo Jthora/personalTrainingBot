@@ -1,5 +1,4 @@
 import { type MissionRoutePath } from '../../routes/missionCutover';
-import { isFeatureEnabled } from '../../config/featureFlags';
 
 export type HeaderNavItem = {
     path: MissionRoutePath;
@@ -29,8 +28,8 @@ export const headerNavItems: HeaderNavItem[] = coreNavItems;
 export const resolveHeaderNavItems = (): HeaderResolvedNavItem[] => {
     const items = [
         ...coreNavItems,
-        ...(isFeatureEnabled('statsSurface') ? [statsNavItem] : []),
-        ...(isFeatureEnabled('planSurface') ? [planNavItem] : []),
+        statsNavItem,
+        planNavItem,
     ];
     return items.map((item) => ({
         ...item,

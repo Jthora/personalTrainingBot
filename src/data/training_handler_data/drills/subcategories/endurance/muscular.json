@@ -1,7 +1,7 @@
 {
     "name": "Muscular",
     "description": "Muscular endurance exercises to improve strength and stamina.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Muscular Endurance",
             "description": "Increase strength endurance by performing high-rep bodyweight exercises.",

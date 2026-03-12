@@ -1,7 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import CardSlugRedirect from './CardSlugRedirect';
-import MissionShell from '../pages/MissionFlow/MissionShell';
 import MissionEntryRedirect from '../pages/MissionFlow/MissionEntryRedirect';
 import ErrorBoundary from '../components/ErrorBoundary/ErrorBoundary';
 import SurfaceLoader from '../components/SurfaceLoader/SurfaceLoader';
@@ -9,6 +8,9 @@ import {
   getDefaultRootPath,
   resolveLegacyAliasPath,
 } from './missionCutover';
+
+/* ── Lazy-loaded mission shell ── */
+const MissionShell = lazy(() => import('../pages/MissionFlow/MissionShell'));
 
 /* ── Lazy-loaded mission surfaces ── */
 const BriefSurface = lazy(() => import('../pages/MissionFlow/BriefSurface'));
@@ -46,7 +48,7 @@ const AppRoutes: React.FC = () => {
       <Route path="/home/handler" element={<Navigate to="/mission/signal" replace />} />
       <Route path="/home/settings" element={<Navigate to="/mission/debrief" replace />} />
 
-      <Route path="/mission" element={<MissionShell />}>
+      <Route path="/mission" element={<Suspense fallback={<SurfaceLoader />}><MissionShell /></Suspense>}>
         <Route index element={<MissionEntryRedirect />} />
         <Route path="brief" element={<Surface><BriefSurface /></Surface>} />
         <Route path="triage" element={<Surface><TriageSurface /></Surface>} />

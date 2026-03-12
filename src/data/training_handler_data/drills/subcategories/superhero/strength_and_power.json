@@ -1,7 +1,7 @@
 {
     "name": "Strength & Power",
     "description": "Strength and power exercises to improve physical performance.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Superhuman Strength & Power",
             "description": "Extreme strength and durability training to push the limits of human potential.",

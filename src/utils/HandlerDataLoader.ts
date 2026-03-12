@@ -1,7 +1,7 @@
 import trainingChallenges from "../data/training_handler_data/training_challenges.json";
 import ranksData from "../data/training_handler_data/ranks.json";
 import difficultyLevels from "../data/training_handler_data/difficulty_levels.json";
-import coachSpeech from "../data/training_handler_data/handler_speech.json";
+import handlerSpeech from "../data/training_handler_data/handler_speech.json";
 import { DrillDifficultyLevel } from "../types/DrillDifficultyLevel";
 import { DrillRank } from "../types/DrillRank";
 import { HandlerData } from "../types/HandlerData";
@@ -21,14 +21,14 @@ class HandlerDataLoader {
     public async loadAllData(): Promise<HandlerDataBundle> {
         try {
             console.log("HandlerDataLoader: Starting to load all handler data...");
-            const [trainingChallengesData, coachSpeechData, ranks, difficultyLevelsData] = await Promise.all([
+            const [trainingChallengesData, handlerSpeechData, ranks, difficultyLevelsData] = await Promise.all([
                 this.loadTrainingChallenges(),
-                this.loadCoachSpeech(),
+                this.loadHandlerSpeech(),
                 this.loadRanks(),
                 this.loadDifficultyLevels(),
             ]);
 
-            this.handlerData = coachSpeechData;
+            this.handlerData = handlerSpeechData;
             this.ranks = ranks;
             this.difficultyLevels = difficultyLevelsData;
 
@@ -63,12 +63,12 @@ class HandlerDataLoader {
         }
     }
 
-    public async loadCoachSpeech(): Promise<{ [key: string]: HandlerData }> {
+    public async loadHandlerSpeech(): Promise<{ [key: string]: HandlerData }> {
         try {
             console.log("HandlerDataLoader: Loading handler speech...");
             // Simulate async loading
             await new Promise(resolve => setTimeout(resolve, 500));
-            this.handlerData = coachSpeech.coaches;
+            this.handlerData = handlerSpeech.coaches;
             console.log(`HandlerDataLoader: Loaded handler speech for ${Object.keys(this.handlerData).length} handlers.`);
             return this.handlerData;
         } catch (error) {

@@ -1,7 +1,7 @@
 {
     "name": "Pistol and Grenade Incorporation",
     "description": "Training to seamlessly integrate firearms and explosives into melee combat, ensuring fluid weapon transitions and combat effectiveness.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Fundamentals of Pistol and Grenade Integration",
             "description": "Developing foundational techniques for incorporating a pistol and grenades into close-quarters combat.",

@@ -1,300 +1,215 @@
-# Cache System Documentation
+# Cache System
 
 ## Overview
 
-The Personal Training Bot uses a sophisticated caching system to optimize performance and provide seamless user experience. The cache system consists of three main components that handle different types of data.
+The Archangel Knights Training Console uses three singleton cache classes to hold training content in memory after initial load. These caches sit between the static JSON data files and the UI components, providing indexed lookups, selection state, and filtering.
 
-## Architecture
+```
+Static JSON  →  Data Loaders  →  Cache Singletons  →  Components / Stores
+(public/)        (utils/)          (src/cache/)         (src/components/)
+```
 
-### Cache Classes
+## Cache Classes
 
-#### 1. TrainingModuleCache
-**Location**: `src/cache/TrainingModuleCache.ts`
-**Purpose**: Manages training modules, sub-modules, card decks, and individual cards
+### TrainingModuleCache
+**File:** `src/cache/TrainingModuleCache.ts` (364 lines)
 
-**Key Features**:
-- Singleton pattern for global access
-- Selection state management
-- Hierarchical data structure support
-- Asynchronous loading with progress tracking
+Manages the intelligence content hierarchy: modules → sub-modules → card decks → cards.
 
-**API**:
+#### Singleton Access
 ```typescript
-class TrainingModuleCache {
-  // Instance management
-  static getInstance(): TrainingModuleCache
-  
-  // Data loading
-  async loadData(trainingModules: TrainingModule[]): Promise<void>
-  
-  // Module management
-  getModule(id: string): TrainingModule | undefined
-  getAllModules(): TrainingModule[]
-  
-  // Selection management
-  selectModule(id: string): void
-  deselectModule(id: string): void
-  getSelectedModules(): Set<string>
-  
-  // Sub-module management
-  getSubModules(moduleId: string): TrainingSubModule[]
-  selectSubModule(id: string): void
-  deselectSubModule(id: string): void
-  getSelectedSubModules(): Set<string>
-  
-  // Card deck management
-  getCardDecks(subModuleId: string): CardDeck[]
-  selectCardDeck(id: string): void
-  deselectCardDeck(id: string): void
-  getSelectedCardDecks(): Set<string>
-  
-  // Individual card management
-  getCards(cardDeckId: string): Card[]
-  selectCard(id: string): void
-  deselectCard(id: string): void
-  getSelectedCards(): Set<string>
+const cache = TrainingModuleCache.getInstance();
+```
+
+#### Data Loading
+```typescript
+await cache.loadData(trainingModules: TrainingModule[]): Promise<void>
+cache.isLoaded(): boolean
+```
+
+On load, the cache:
+1. Indexes every card with metadata (`CardMeta`: module name/colour, sub-module, deck)
+2. Generates URL-safe slugs for deep-linkable card sharing
+3. Syncs selection state with `TrainingModuleSelectionStore` via a data signature check
+
+#### Module & Selection Management
+```typescript
+cache.getTrainingModule(id: string): TrainingModule | undefined
+
+// Toggle selection at each hierarchy level
+cache.toggleModuleSelection(id: string): void
+cache.toggleSubModuleSelection(id: string): void
+cache.toggleCardDeckSelection(id: string): void
+cache.toggleCardSelection(id: string): void
+
+// Check selection state
+cache.isModuleSelected(id: string): boolean
+cache.isSubModuleSelected(id: string): boolean
+cache.isCardDeckSelected(id: string): boolean
+cache.isCardSelected(id: string): boolean
+
+// Bulk selection
+cache.selectModules(selections: SelectionRecord): void
+```
+
+#### Card Index
+```typescript
+cache.getCardMeta(cardId: string): CardMeta | undefined
+cache.getCardById(cardId: string): Card | undefined
+cache.getSlugForCard(cardId: string): string | undefined
+cache.getCardIdBySlug(slug: string): string | undefined
+```
+
+The card index enables O(1) lookups by card ID or URL slug, which powers the card sharing feature (`/share/:slug`).
+
+#### Selection Change Subscription
+```typescript
+const unsubscribe = cache.subscribeToSelectionChanges(listener: () => void);
+```
+
+Components subscribe to selection changes for reactive re-renders without a global state library.
+
+#### CardMeta Type
+```typescript
+interface CardMeta {
+    moduleId: string;
+    moduleName: string;
+    moduleColor: string;
+    subModuleId: string;
+    subModuleName: string;
+    cardDeckId: string;
+    cardDeckName: string;
 }
 ```
 
-#### 2. TrainingCoachCache
-**Location**: `src/cache/TrainingCoachCache.ts`
-**Purpose**: Manages coach data and coach-specific configurations
+---
 
-**Key Features**:
-- Coach profile management
-- Specialized training approaches
-- Voice and personality settings
-- Training difficulty recommendations
+### DrillCategoryCache
+**File:** `src/cache/DrillCategoryCache.ts` (380 lines)
 
-**API**:
+Manages the physical drill hierarchy: categories → sub-categories → groups → drills.
+
+#### Singleton Access
 ```typescript
-class TrainingCoachCache {
-  static getInstance(): TrainingCoachCache
-  async loadData(coachData: CoachData[]): Promise<void>
-  
-  getCoach(id: string): CoachData | undefined
-  getAllCoaches(): CoachData[]
-  setActiveCoach(id: string): void
-  getActiveCoach(): CoachData | undefined
-  
-  getCoachTrainingModules(coachId: string): string[]
-  getCoachDifficultySettings(coachId: string): DifficultySettings
-}
+const cache = DrillCategoryCache.getInstance();
 ```
 
-#### 3. WorkoutCategoryCache
-**Location**: `src/cache/WorkoutCategoryCache.ts`
-**Purpose**: Manages workout categories and sub-categories
-
-**Key Features**:
-- Category hierarchy management
-- Workout filtering and organization
-- Performance metrics tracking
-- Difficulty progression
-
-**API**:
+#### Data Loading
 ```typescript
-class WorkoutCategoryCache {
-  static getInstance(): WorkoutCategoryCache
-  async loadData(categories: WorkoutCategory[]): Promise<void>
-  
-  getCategory(id: string): WorkoutCategory | undefined
-  getAllCategories(): WorkoutCategory[]
-  
-  getSubCategories(categoryId: string): WorkoutSubCategory[]
-  getWorkouts(categoryId: string): Workout[]
-  
-  filterWorkoutsByDifficulty(difficulty: DifficultyLevel): Workout[]
-  filterWorkoutsByDuration(minMinutes: number, maxMinutes: number): Workout[]
-}
+await cache.loadData(categories: DrillCategory[]): Promise<void>
+await cache.reloadData(categories: DrillCategory[]): Promise<void>
+cache.isLoading(): boolean
 ```
 
-## Data Flow
-
-### Initialization Process
-
-1. **Application Startup**
-   - `InitialDataLoader.initialize()` called
-   - Progress callback registered for loading updates
-   - Cache instances created
-
-2. **Data Loading Sequence**
-   ```typescript
-   // 1. Load training modules
-   await TrainingModuleCache.getInstance().loadData(trainingModules);
-   
-   // 2. Load coach data  
-   await TrainingCoachCache.getInstance().loadData(coachData);
-   
-   // 3. Load workout categories
-   await WorkoutCategoryCache.getInstance().loadData(workoutCategories);
-   ```
-
-3. **Cache Population**
-   - Data structures built in memory
-   - Cross-references established
-   - Selection state initialized
-
-### Runtime Operations
+#### Category & Drill Access
+```typescript
+cache.getWorkoutCategories(): DrillCategory[]
+cache.getDrillCategory(id: string): DrillCategory | undefined
+cache.getAllWorkouts(): Drill[]
+cache.getAllWorkoutsSelected(): Drill[]
+await cache.fetchAllWorkoutsInCategory(categoryId: string): Promise<Drill[]>
+```
 
 #### Selection Management
 ```typescript
-// Select a training module
-const moduleCache = TrainingModuleCache.getInstance();
-moduleCache.selectModule('combat');
+// Toggle selection at each hierarchy level
+cache.toggleCategorySelection(id: string): void
+cache.toggleSubCategorySelection(id: string): void
+cache.toggleDrillGroupSelection(id: string): void
+cache.toggleWorkoutSelection(id: string): void
 
-// Get selected modules
-const selectedModules = moduleCache.getSelectedModules();
+// Check selection state
+cache.isCategorySelected(id: string): boolean
+cache.isSubCategorySelected(id: string): boolean
+cache.isDrillGroupSelected(id: string): boolean
+cache.isWorkoutSelected(id: string): boolean
 
-// Select specific cards within a module
-moduleCache.selectCardDeck('combat_basics');
-moduleCache.selectCard('basic_punch');
+// Bulk operations
+cache.selectAll(): void
+cache.unselectAll(): void
+cache.applyPreset(preset: DrillPreset): void
 ```
 
-#### Data Retrieval
+#### Difficulty Filtering
 ```typescript
-// Get module with all sub-data
-const combatModule = moduleCache.getModule('combat');
-
-// Get filtered workout data
-const workoutCache = WorkoutCategoryCache.getInstance();
-const beginnerWorkouts = workoutCache.filterWorkoutsByDifficulty('beginner');
+cache.getWorkoutsByDifficultyRange(minLevel: number, maxLevel: number, count: number): Drill[]
+cache.getWorkoutsBySingleDifficultyLevel(level: number, count: number): Drill[]
+cache.getAllWorkoutsFilteredBy(/* filters */): Drill[]
 ```
 
-## Performance Optimizations
+These methods power the Triage surface, where operatives filter available drills by difficulty range and category before building a mission schedule.
 
-### Memory Management
-- **Lazy Loading**: Sub-modules and cards loaded on demand
-- **Weak References**: Prevent memory leaks in long-running sessions
-- **Garbage Collection**: Automatic cleanup of unused data
+---
 
-### Caching Strategies
-- **In-Memory Cache**: Primary storage for frequently accessed data
-- **Session Storage**: Persistent selections across page refreshes
-- **Selective Loading**: Only load data for selected modules
+### TrainingHandlerCache
+**File:** `src/cache/TrainingHandlerCache.ts` (104 lines)
 
-### Access Patterns
-- **Singleton Pattern**: Single instance per cache type
-- **Map-based Storage**: O(1) lookup time for cached data
-- **Set-based Selections**: Efficient selection state management
+Manages handler personalities, drill ranks, and difficulty level definitions.
 
-## Error Handling
-
-### Cache Failures
+#### Singleton Access
 ```typescript
-try {
-  await TrainingModuleCache.getInstance().loadData(modules);
-} catch (error) {
-  console.error('Cache loading failed:', error);
-  // Fallback to basic mode
-  initializeBasicMode();
-}
+const cache = TrainingHandlerCache.getInstance();
 ```
 
-### Data Integrity
-- **Validation**: Data structure validation on load
-- **Fallbacks**: Default values for missing data
-- **Recovery**: Automatic recovery from corrupted cache
-
-## Cache Invalidation
-
-### Strategies
-- **Time-based**: Cache expires after specified duration
-- **Event-based**: Cache invalidated on data changes
-- **Manual**: Explicit cache clearing for testing
-
-### Implementation
+#### Data Loading
 ```typescript
-// Clear specific cache
-TrainingModuleCache.getInstance().clearCache();
-
-// Clear all caches
-CacheManager.clearAllCaches();
-
-// Refresh cache with new data
-await TrainingModuleCache.getInstance().refreshCache();
+await cache.loadData(): Promise<void>          // Loads all handler data (with optional IndexedDB caching)
+await cache.loadRanks(): Promise<void>
+await cache.loadDifficultyLevels(): Promise<void>
+await cache.loadHandlerData(): Promise<void>
 ```
 
-## Monitoring and Debugging
+When the `loadingCacheV2` feature flag is enabled, `loadData()` uses IndexedDB-backed caching via `withCache()` for faster subsequent loads.
 
-### Cache Statistics
+#### Handler Voice Lines
 ```typescript
-// Get cache statistics
-const stats = TrainingModuleCache.getInstance().getStats();
-console.log(`Cache hit rate: ${stats.hitRate}%`);
-console.log(`Memory usage: ${stats.memoryUsage} MB`);
+cache.getHandlerData(handler?: string): HandlerData
+cache.getRandomMotivationalQuote(handler?: string): string
+cache.getRandomBoast(handler?: string): string
+cache.getRandomGrowl(handler?: string): string
 ```
 
-### Debug Mode
+Default handler: `"tiger_fitness_god"`. Handler voice lines are displayed during drill execution, rest intervals, and debrief.
+
+#### Reference Data
 ```typescript
-// Enable cache debugging
-TrainingModuleCache.getInstance().enableDebug();
-
-// Log cache operations
-TrainingModuleCache.getInstance().logOperations();
+cache.getRanks(): DrillRank[]
+cache.getDifficultyLevels(): DrillDifficultyLevel[]
 ```
 
-## Best Practices
+## IndexedDB Caching Layer
 
-### Usage Guidelines
-1. **Single Instance**: Always use `getInstance()` method
-2. **Async Loading**: Wait for data loading completion
-3. **Error Handling**: Implement proper error handling
-4. **Memory Awareness**: Monitor cache size in production
+**Utility:** `src/utils/cache/indexedDbCache.ts`
 
-### Performance Tips
-1. **Batch Operations**: Group related cache operations
-2. **Selective Loading**: Only load needed data
-3. **Cleanup**: Clear cache when no longer needed
-4. **Monitoring**: Track cache performance metrics
+The `withCache()` wrapper provides a secondary caching layer backed by IndexedDB:
 
-## Testing
-
-### Unit Tests
 ```typescript
-describe('TrainingModuleCache', () => {
-  beforeEach(() => {
-    TrainingModuleCache.getInstance().clearCache();
-  });
-
-  it('should load and cache modules correctly', async () => {
-    const modules = createMockModules();
-    await TrainingModuleCache.getInstance().loadData(modules);
-    
-    expect(TrainingModuleCache.getInstance().getAllModules())
-      .toHaveLength(modules.length);
-  });
-});
+const result = await withCache<T>(
+    storeName: string,
+    key: string,
+    ttlMs: number,
+    versionTag: string,
+    fetcher: () => Promise<T>,
+    options?: { logger }
+): Promise<{ data: T; source: 'cache' | 'network' }>
 ```
 
-### Integration Tests
-```typescript
-describe('Cache Integration', () => {
-  it('should coordinate between all cache types', async () => {
-    await initializeAllCaches();
-    
-    // Test cross-cache operations
-    const moduleCache = TrainingModuleCache.getInstance();
-    const workoutCache = WorkoutCategoryCache.getInstance();
-    
-    moduleCache.selectModule('fitness');
-    const fitnessWorkouts = workoutCache.filterWorkoutsByModule('fitness');
-    
-    expect(fitnessWorkouts.length).toBeGreaterThan(0);
-  });
-});
+TTL constants are defined in `src/utils/cache/constants.ts`. This layer is gated behind the `loadingCacheV2` feature flag.
+
+## Data Flow: Boot to Ready
+
+```
+1. App boots → MissionShell mounts
+2. InitialDataLoader.initialize() called with progress callback
+3. Training module manifest fetched from /training_modules_manifest.json
+4. Module shards fetched in parallel from /training_modules_shards/
+5. TrainingModuleCache.loadData() populates module/card index
+6. DrillCategoryCache.loadData() populates drill hierarchy
+7. TrainingHandlerCache.loadData() loads handler personalities + ranks
+8. Selection state hydrated from localStorage via stores
+9. UI renders with cached data — no further network requests needed
 ```
 
-## Future Enhancements
+## Persistence
 
-### Planned Features
-- **Distributed Caching**: Multi-tab synchronization
-- **Compression**: Reduce memory footprint
-- **Persistence**: Save cache to IndexedDB
-- **Analytics**: Detailed usage tracking
-
-### Performance Improvements
-- **Web Workers**: Background cache operations
-- **Streaming**: Progressive data loading
-- **Prefetching**: Anticipatory data loading
-- **Compression**: Reduce data size
+Caches are **in-memory only** — they are reconstructed from static files on every page load. Selection state and operative progress are persisted separately via localStorage stores. The IndexedDB cache layer (when enabled) avoids redundant network fetches on subsequent visits.

@@ -5,7 +5,6 @@ import { deriveCompetencySnapshot, type CompetencySnapshot } from './competencyM
 import { applyDebriefProgression, type DebriefProgression } from './progressionModel';
 import type { MissionDebriefOutcome } from '../../domain/mission/types';
 import { computeMissionMilestoneProgress, type MissionMilestoneProgress } from './milestones';
-import { isFeatureEnabled } from '../../config/featureFlags';
 import OperativeProfileStore from '../../store/OperativeProfileStore';
 import { findArchetype } from '../../data/archetypes';
 
@@ -77,12 +76,8 @@ export function computeReadiness(kit: MissionKit = sampleMissionKit, options: Re
   }
 
   // Stage 22: resolve active archetype for competency weight and milestone overrides
-  const activeArchetype = isFeatureEnabled('archetypeSystem')
-    ? (() => {
-        const profile = OperativeProfileStore.get();
-        return profile?.archetypeId ? findArchetype(profile.archetypeId) : undefined;
-      })()
-    : undefined;
+  const profile = OperativeProfileStore.get();
+  const activeArchetype = profile?.archetypeId ? findArchetype(profile.archetypeId) : undefined;
   const archetypeWeights = activeArchetype?.competencyWeights;
 
   if (!kit.drills.length) {

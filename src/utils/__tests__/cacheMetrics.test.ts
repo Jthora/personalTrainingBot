@@ -9,14 +9,14 @@ describe('cacheMetrics', () => {
     it('records cache_event when feature flag is enabled', () => {
         enablePerfFlag(true);
         const spy = vi.spyOn(metrics, 'recordMetric');
-        emitCacheMetric({ dataset: 'workout_schedule', status: 'hit', source: 'localStorage' });
-        expect(spy).toHaveBeenCalledWith('cache_event', expect.objectContaining({ dataset: 'workout_schedule', status: 'hit' }));
+        emitCacheMetric({ dataset: 'mission_schedule', status: 'hit', source: 'localStorage' });
+        expect(spy).toHaveBeenCalledWith('cache_event', expect.objectContaining({ dataset: 'mission_schedule', status: 'hit' }));
     });
 
     it('no-ops when feature flag is disabled', () => {
         enablePerfFlag(false);
         const spy = vi.spyOn(metrics, 'recordMetric');
-        emitCacheMetric({ dataset: 'workout_schedule', status: 'miss', source: 'localStorage' });
+        emitCacheMetric({ dataset: 'mission_schedule', status: 'miss', source: 'localStorage' });
         expect(spy).not.toHaveBeenCalled();
     });
 });

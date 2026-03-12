@@ -1,7 +1,7 @@
 {
     "name": "Joint Mobility",
     "description": "Joint mobility exercises to improve flexibility and range of motion.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Beginner Joint Mobility",
             "description": "Gentle joint mobility exercises to improve movement fluidity and prevent stiffness.",

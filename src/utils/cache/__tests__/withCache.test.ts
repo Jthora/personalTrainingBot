@@ -47,4 +47,35 @@ describe('withCache', () => {
         await Promise.resolve();
         expect(loader).toHaveBeenCalledTimes(2);
     });
+
+    it('invalidates cache when signature changes', async () => {
+        const loader = vi.fn(async () => 'data-v1');
+        await withCache('moduleCatalog', 'all', TTL_MS.moduleCatalog, 'sig-v1', loader);
+        expect(loader).toHaveBeenCalledTimes(1);
+
+        loader.mockResolvedValue('data-v2');
+        const result = await withCache('moduleCatalog', 'all', TTL_MS.moduleCatalog, 'sig-v2', loader, { allowStale: false });
+        expect(result.source).toBe('network');
+        expect(result.data).toBe('data-v2');
+        expect(loader).toHaveBeenCalledTimes(2);
+    });
+
+    it('clearAll removes cached entries', async () => {
+        const loader = vi.fn(async () => 'to-clear');
+        await withCache('moduleCatalog', 'all', TTL_MS.moduleCatalog, 'sig', loader);
+        expect(loader).toHaveBeenCalledTimes(1);
+
+        await clearAll();
+
+        const result = await withCache('moduleCatalog', 'all', TTL_MS.moduleCatalog, 'sig', loader);
+        expect(result.source).toBe('network');
+        expect(loader).toHaveBeenCalledTimes(2);
+    });
+
+    it('calls logger when provided', async () => {
+        const logger = vi.fn();
+        const loader = vi.fn(async () => 'logged');
+        await withCache('moduleCatalog', 'all', TTL_MS.moduleCatalog, 'sig', loader, { logger });
+        expect(logger).toHaveBeenCalled();
+    });
 });

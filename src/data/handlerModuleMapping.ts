@@ -8,8 +8,8 @@ export const handlerModuleMapping: HandlerModuleMapping = {
     star_commander_raynor: ['space_force'],
 };
 
-export const getCoachDefaultModules = (coachId: string): string[] | undefined => {
-    return handlerModuleMapping[coachId];
+export const getHandlerDefaultModules = (handlerId: string): string[] | undefined => {
+    return handlerModuleMapping[handlerId];
 };
 
 export const getAllHandlerModuleMappings = (): HandlerModuleMapping => ({ ...handlerModuleMapping });

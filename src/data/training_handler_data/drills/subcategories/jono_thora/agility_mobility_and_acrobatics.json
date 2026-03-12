@@ -1,7 +1,7 @@
 {
     "name": "Agility, Mobility & Acrobatics (Kicky Flips & Ninja Movement)",
     "description": "Training explosive speed, aerial movement, acrobatics, and evasion techniques for elite combat mobility.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Sprint, Pivot, and Evade Combos",
             "description": "Developing explosive footwork, rapid directional changes, and combat agility.",

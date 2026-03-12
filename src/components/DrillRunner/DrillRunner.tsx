@@ -7,7 +7,6 @@ import { useTimer } from '../../hooks/useTimer';
 import TimerDisplay from '../TimerDisplay/TimerDisplay';
 import RestInterval from '../RestInterval/RestInterval';
 import DrillHistoryStore from '../../store/DrillHistoryStore';
-import { isFeatureEnabled } from '../../config/featureFlags';
 import { formatTime } from '../TimerDisplay/TimerDisplay';
 
 const defaultSteps = (drillId: string, drillTitle: string) => {
@@ -23,7 +22,7 @@ const DrillRunner: React.FC = () => {
   const [completionRecorded, setCompletionRecorded] = useState(false);
   const [showRest, setShowRest] = useState(false);
   const { completeCurrentDrill } = useMissionSchedule();
-  const enhanced = isFeatureEnabled('drillRunnerUpgrade');
+  const enhanced = true;
 
   const timer = useTimer({
     durationSec: 0, // stopwatch mode

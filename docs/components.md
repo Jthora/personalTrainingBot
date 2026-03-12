@@ -1,281 +1,288 @@
-# Component Documentation
+# Component Architecture
 
 ## Overview
 
-This document provides detailed information about the React components used in the Personal Training Bot application.
+The Archangel Knights Training Console uses a component architecture organised around the **Mission Flow** — the central operative experience. Components fall into four categories: mission surfaces, drill execution, operative identity, and infrastructure.
 
-## Component Architecture
+## Mission Flow Surfaces
 
-### Component Categories
+The mission flow is rendered by `MissionShell` (`src/pages/MissionFlow/MissionShell.tsx`), which orchestrates a sequence of surfaces:
 
-#### Layout Components
-- **Header** - Main navigation and branding
-- **Sidebar** - Navigation menu for different sections
-- **LoadingMessage** - Global loading indicator
+| Surface | File | Purpose |
+|---|---|---|
+| **Brief** | `BriefSurface.tsx` | Mission overview, handler selection, schedule preview |
+| **Triage** | `TriageSurface.tsx` | Module and drill selection with filtering |
+| **Case** | `CaseSurface.tsx` | Active drill execution — delegates to `DrillRunner` |
+| **Signal** | `SignalSurface.tsx` | Mid-mission intelligence cards between drill sets |
+| **Checklist** | `ChecklistSurface.tsx` | Mission completion tracking, set/block review |
+| **Debrief** | `DebriefSurface.tsx` | After-action review — XP, badges, streak, recap |
+| **Plan** | `PlanSurface.tsx` | Schedule builder for upcoming missions |
+| **Stats** | `StatsSurface.tsx` | Operative performance metrics and history |
 
-#### Page Components
-- **HomePage** - Landing page with overview
-- **WorkoutsPage** - Workout management interface
-- **TrainingPage** - Training module interface
-- **SchedulesPage** - Schedule management
-- **SettingsPage** - Application settings
+Entry point: `MissionEntryRedirect.tsx` resolves the correct surface based on operative state and routes to the appropriate step.
 
-#### Core Training Components
-- **TrainingWindow** - Main training interface
-- **TrainingSequence** - Training progression logic
-- **CardTable** - Card display and interaction
-- **CardSelector** - Card selection interface
-- **WorkoutCard** - Individual workout display
+### Routes
 
-#### Schedule Components
-- **SchedulesSidebar** - Schedule navigation
-- **SchedulesWindow** - Schedule management interface
-- **WorkoutScheduler** - Schedule creation tool
-- **WorkoutTimer** - Timer functionality
-
-#### Settings Components
-- **SettingsPanel** - Main settings interface
-- **SettingsSidebar** - Settings navigation
-- **DifficultySettings** - Difficulty configuration
-- **SoundSettings** - Audio preferences
-
-## Component Details
-
-### TrainingWindow
-**Location**: `src/components/TrainingWindow/`
-**Purpose**: Main training interface container
-
-```typescript
-interface TrainingWindowProps {
-  moduleId: string;
-  subModuleId?: string;
-  cardDeckId?: string;
-}
+```
+/mission/brief      → BriefSurface
+/mission/triage     → TriageSurface
+/mission/case       → CaseSurface
+/mission/signal     → SignalSurface
+/mission/checklist  → ChecklistSurface
+/mission/debrief    → DebriefSurface
+/mission/plan       → PlanSurface
+/mission/stats      → StatsSurface
 ```
 
-**Features**:
-- Dynamic module loading
-- Progress tracking
-- Card navigation
-- Timer integration
-- Score calculation
+## Drill Execution Components
 
-### CardTable
-**Location**: `src/components/CardTable/`
-**Purpose**: Interactive card display and management
+### DrillRunner
+**Location:** `src/components/DrillRunner/`
 
-```typescript
-interface CardTableProps {
-  cards: Card[];
-  selectedCardId?: string;
-  onCardSelect: (cardId: string) => void;
-  difficulty: DifficultyLevel;
-}
-```
+The core training execution component. Renders the active drill, manages timer state, tracks set completion, handles rest intervals, and reports results back to stores.
 
-**Features**:
-- Card shuffling
-- Difficulty-based display
-- Interactive card selection
-- Animation effects
-- Progress indicators
+### TimerDisplay
+**Location:** `src/components/TimerDisplay/`
 
-### WorkoutScheduler
-**Location**: `src/components/WorkoutScheduler/`
-**Purpose**: Schedule creation and management
+Countdown and stopwatch display driven by `useTimer` hook. Used within drill execution and rest intervals.
 
-```typescript
-interface WorkoutSchedulerProps {
-  schedules: WorkoutSchedule[];
-  onScheduleCreate: (schedule: WorkoutSchedule) => void;
-  onScheduleUpdate: (schedule: WorkoutSchedule) => void;
-  onScheduleDelete: (scheduleId: string) => void;
-}
-```
+### RestInterval
+**Location:** `src/components/RestInterval/`
 
-**Features**:
-- Drag-and-drop scheduling
-- Time block management
-- Workout selection
-- Calendar integration
-- Schedule templates
+Between-set rest period with countdown timer and motivational handler quotes.
 
-### DifficultySettings
-**Location**: `src/components/DifficultySettings/`
-**Purpose**: Training difficulty configuration
+## Operative Identity Components
 
-```typescript
-interface DifficultySettingsProps {
-  settings: DifficultySettings;
-  onSettingsChange: (settings: DifficultySettings) => void;
-}
-```
+### OperativeIdentityCard
+**Location:** `src/components/OperativeIdentityCard/`
 
-**Features**:
-- Difficulty level adjustment
-- Time limit configuration
-- Point multiplier settings
-- Hint allowance settings
-- Preview mode
+Displays the operative's sovereign identity — callsign, rank, archetype, XP, badges. Used in Brief and Debrief surfaces.
 
-## Component Patterns
+### CallsignInput
+**Location:** `src/components/CallsignInput/`
 
-### Higher-Order Components
-- **withTimer** - Adds timer functionality
-- **withLoading** - Adds loading states
-- **withErrorBoundary** - Adds error handling
+Callsign creation and editing interface for new operatives.
 
-### Custom Hooks
-- **useTrainingData** - Training data management
-- **useWorkoutSchedule** - Schedule management
-- **useSettings** - Settings management
-- **useTimer** - Timer functionality
-- **useAudio** - Audio management
+### ProfileEditor
+**Location:** `src/components/ProfileEditor/`
 
-### Context Providers
-- **WorkoutScheduleProvider** - Schedule state management
-- **SettingsProvider** - Settings state management
-- **CardProvider** - Card state management
+Full operative profile editing — callsign, archetype selection, difficulty settings.
 
-## Component Guidelines
+### QRCodeDisplay / QRCodeScanner
+**Location:** `src/components/QRCodeDisplay/`, `src/components/QRCodeScanner/`
 
-### Props Interface
-Each component should have a well-defined props interface:
-```typescript
-interface ComponentProps {
-  // Required props
-  data: DataType;
-  onAction: (param: string) => void;
-  
-  // Optional props
-  className?: string;
-  style?: React.CSSProperties;
-  disabled?: boolean;
-  
-  // Children (if applicable)
-  children?: React.ReactNode;
-}
-```
+Export and import operative identity via QR code for cross-device portability.
 
-### State Management
-- Use local state for component-specific data
-- Use Zustand stores for global state
-- Implement proper state updates
-- Handle loading and error states
+### SovereigntyPanel
+**Location:** `src/components/SovereigntyPanel/`
 
-### Error Handling
-- Implement error boundaries
-- Handle async operation errors
-- Provide user-friendly error messages
-- Log errors for debugging
+Displays and manages the operative's Gun.js SEA keypair. Export, backup, and sovereignty status.
 
-### Performance Optimization
-- Use React.memo for expensive components
-- Implement proper dependency arrays
-- Use useMemo for expensive calculations
-- Implement virtual scrolling for large lists
+### ArchetypePicker
+**Location:** `src/components/ArchetypePicker/`
 
-### Accessibility
-- Proper ARIA labels and roles
-- Keyboard navigation support
-- Screen reader compatibility
-- Color contrast compliance
-- Focus management
+Selection interface for operative archetypes (Warrior, Tactician, Diplomat, etc.).
 
-## Component Testing
+## Handler Components
 
-### Unit Tests
-```typescript
-describe('ComponentName', () => {
-  it('renders correctly', () => {
-    render(<ComponentName {...defaultProps} />);
-    expect(screen.getByText('Expected Text')).toBeInTheDocument();
-  });
+### HandlerPicker
+**Location:** `src/components/HandlerPicker/`
 
-  it('handles user interactions', () => {
-    const mockHandler = jest.fn();
-    render(<ComponentName onAction={mockHandler} />);
-    
-    fireEvent.click(screen.getByRole('button'));
-    expect(mockHandler).toHaveBeenCalledWith('expected-param');
-  });
-});
-```
+Training handler selection interface. Each handler has a distinct personality, colour theme, and motivational style. Selection changes the visual theme of the training experience.
 
-### Integration Tests
-- Test component interactions
-- Verify data flow
-- Test user workflows
-- Validate API integrations
+## Gamification Components
 
-## Component Styling
+### BadgeGallery / BadgeStrip / BadgeToast
+**Location:** `src/components/BadgeGallery/`, `src/components/BadgeStrip/`, `src/components/BadgeToast/`
 
-### CSS Modules
-Each component uses CSS modules for styling:
-```css
-/* ComponentName.module.css */
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
+Badge display (gallery grid, horizontal strip, achievement notification toast). Badges are earned through mission completion, streaks, and challenges.
 
-.title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--primary-color);
-}
-```
+### XPTicker
+**Location:** `src/components/XPTicker/`
 
-### Style Variables
-```css
-:root {
-  --primary-color: #007bff;
-  --secondary-color: #6c757d;
-  --success-color: #28a745;
-  --danger-color: #dc3545;
-  --warning-color: #ffc107;
-  --info-color: #17a2b8;
-  
-  --font-family-sans: 'Inter', sans-serif;
-  --font-family-mono: 'Roboto Mono', monospace;
-  
-  --border-radius: 0.375rem;
-  --box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-}
-```
+Animated XP accumulation display used in debrief.
 
-### Responsive Design
-- Mobile-first approach
-- Flexible layouts
-- Touch-friendly interfaces
-- Appropriate breakpoints
+### CelebrationLayer
+**Location:** `src/components/CelebrationLayer/`
 
-## Common Patterns
+Full-screen celebration overlay for level-ups, badge unlocks, and milestone achievements.
 
-### Loading States
-```typescript
-if (loading) {
-  return <LoadingMessage message="Loading training data..." />;
-}
-```
+### LevelUpModal
+**Location:** `src/components/LevelUpModal/`
 
-### Error States
-```typescript
-if (error) {
-  return <ErrorMessage message={error.message} onRetry={handleRetry} />;
-}
-```
+Modal announcing operative level advancement with rank progression.
 
-### Conditional Rendering
-```typescript
-{isAuthenticated && <UserMenu />}
-{selectedCard && <CardDetails card={selectedCard} />}
-```
+### ChallengeBoard / ChallengePanel
+**Location:** `src/components/ChallengeBoard/`, `src/components/ChallengePanel/`
 
-### Event Handling
-```typescript
-const handleClick = useCallback((id: string) => {
-  onItemSelect(id);
-}, [onItemSelect]);
-```
+Active challenge tracking — daily, weekly, and special challenges with progress bars and reward previews.
+
+## Intelligence & Recap Components
+
+### Signals
+**Location:** `src/components/Signals/`
+
+Intelligence card presentation between drill sets. Displays training content cards with key information for the operative to review.
+
+### AAR (After-Action Review)
+**Location:** `src/components/AAR/`
+
+Structured after-action review component for mission debrief analysis.
+
+### RecapModal / RecapToast
+**Location:** `src/components/RecapModal/`, `src/components/RecapToast/`
+
+Mission recap display — summary of completed drills, XP earned, and performance metrics.
+
+### MissionCycleSummary
+**Location:** `src/components/MissionCycleSummary/`
+
+Aggregated view of the operative's mission cycle history and trends.
+
+### DebriefClosureSummary
+**Location:** `src/components/DebriefClosureSummary/`
+
+Final closure summary at the end of a debrief — total stats and next-mission recommendations.
+
+## Mission Management Components
+
+### MissionKit
+**Location:** `src/components/MissionKit/`
+
+Equipment and module selection kit for mission preparation.
+
+### MissionActionPalette
+**Location:** `src/components/MissionActionPalette/`
+
+Quick-action palette for mission state transitions and common operations.
+
+### MissionHeader
+**Location:** `src/components/MissionHeader/`
+
+Persistent header during mission flow showing current surface, handler, and progress.
+
+### MissionStepHandoff
+**Location:** `src/components/MissionStepHandoff/`
+
+Transition animation and state handoff between mission flow surfaces.
+
+### MissionRouteState
+**Location:** `src/components/MissionRouteState/`
+
+Route-level state management for mission flow navigation and deep linking.
+
+### TriageBoard
+**Location:** `src/components/TriageBoard/`
+
+Module and drill selection board used within the Triage surface. Filters by category, difficulty, and handler affiliation.
+
+## Schedule & History Components
+
+### Readiness
+**Location:** `src/components/Readiness/`
+
+Operative readiness assessment — fatigue, recovery status, and recommended intensity.
+
+### TimelineBand
+**Location:** `src/components/TimelineBand/`
+
+Visual timeline of scheduled and completed missions.
+
+### StatsPanel
+**Location:** `src/components/StatsPanel/`
+
+Detailed statistics panel — drill history, XP progression, streak tracking, category breakdowns.
+
+### CompetencyChart
+**Location:** `src/components/CompetencyChart/`
+
+Radar/spider chart showing operative competency across training domains.
+
+## Sharing Components
+
+### ShareCard
+**Location:** `src/components/ShareCard/`
+
+Generates shareable mission summary cards for social sharing.
+
+### ArtifactList
+**Location:** `src/components/ArtifactList/`
+
+Lists exportable artifacts (summaries, certificates, share cards).
+
+## Infrastructure Components
+
+### Header
+**Location:** `src/components/Header/`
+
+Top-level application header with navigation and operative status.
+
+### LoadingMessage
+**Location:** `src/components/LoadingMessage/`
+
+Boot-sequence loading indicator shown during initial data load and cache hydration.
+
+### SurfaceLoader
+**Location:** `src/components/SurfaceLoader/`
+
+Lazy-loading wrapper for mission flow surfaces with loading state.
+
+### ErrorBoundary
+**Location:** `src/components/ErrorBoundary/`
+
+React error boundary wrapping mission flow and critical paths. Catches render errors and presents recovery options.
+
+### AlertStream
+**Location:** `src/components/AlertStream/`
+
+Real-time notification stream for system alerts, sync status, and handler messages.
+
+### CacheIndicator
+**Location:** `src/components/CacheIndicator/`
+
+Visual indicator showing cache and data loading status.
+
+### NetworkStatusIndicator
+**Location:** `src/components/NetworkStatusIndicator/`
+
+Online/offline status indicator driven by `useNetworkStatus` hook.
+
+### InstallBanner
+**Location:** `src/components/InstallBanner/`
+
+PWA install prompt banner using `useInstallPrompt` hook.
+
+### UpdateNotification
+**Location:** `src/components/UpdateNotification/`
+
+Service worker update notification using `useServiceWorkerUpdate` hook.
+
+### ScheduleNavigationRefresh
+**Location:** `src/components/ScheduleNavigationRefresh/`
+
+Handles schedule data refresh on navigation events.
+
+## Hooks
+
+| Hook | Purpose |
+|---|---|
+| `useCelebrations` | Triggers celebration effects on achievements |
+| `useGunIdentity` | Manages Gun.js SEA keypair lifecycle |
+| `useInstallPrompt` | PWA install prompt detection |
+| `useIsMobile` | Responsive breakpoint detection |
+| `useMissionEntityCollection` | Domain entity collection management |
+| `useMissionFlowContinuity` | Preserves mission state across navigation |
+| `useMissionSchedule` | Mission schedule loading and management |
+| `useNetworkStatus` | Online/offline detection |
+| `useSelectionSummary` | Module/deck selection summary |
+| `useServiceWorkerUpdate` | SW update detection and prompt |
+| `useSyncStatus` | Gun.js sync status tracking |
+| `useTimer` | Countdown/stopwatch timer logic |
+
+## Component Conventions
+
+- **CSS Modules**: Each component directory contains a `.module.css` file for scoped styles
+- **Handler theming**: Components respect the active handler's colour via CSS custom properties (`--handler-primary`, `--handler-accent`)
+- **Offline-first**: All components degrade gracefully when offline
+- **Feature flags**: Components check `FeatureFlagsStore` before rendering gated features
+- **Test colocation**: Tests live in `__tests__/` directories alongside components

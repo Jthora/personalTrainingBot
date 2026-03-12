@@ -1,7 +1,7 @@
 {
     "name": "Hand-Eye",
     "description": "Hand-eye coordination exercises.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Hand-Eye Coordination Drills",
             "description": "Drills to improve hand-eye coordination.",

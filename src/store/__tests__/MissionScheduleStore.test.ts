@@ -68,10 +68,10 @@ describe('MissionScheduleStore persistence', () => {
     it('persists and returns default selections when storage is empty', async () => {
         await loadCategories();
 
-        const categories = await MissionScheduleStore.getSelectedDrillCategories();
-        const groups = await MissionScheduleStore.getSelectedDrillGroups();
-        const subCategories = await MissionScheduleStore.getSelectedDrillSubCategories();
-        const drills = await MissionScheduleStore.getSelectedDrills();
+        const categories = MissionScheduleStore.getSelectedDrillCategoriesSync();
+        const groups = MissionScheduleStore.getSelectedDrillGroupsSync();
+        const subCategories = MissionScheduleStore.getSelectedDrillSubCategoriesSync();
+        const drills = MissionScheduleStore.getSelectedDrillsSync();
 
         expect(categories['cat-strength']).toBe(true);
         expect(groups['group-push']).toBe(true);
@@ -93,10 +93,10 @@ describe('MissionScheduleStore persistence', () => {
         localStorage.setItem('workout:v2:selectedWorkoutSubCategories', JSON.stringify({ 'sub-upper': 123 }));
         localStorage.setItem('workout:v2:selectedWorkouts', JSON.stringify({ 'drill-pushup': 'nope' }));
 
-        const categories = await MissionScheduleStore.getSelectedDrillCategories();
-        const groups = await MissionScheduleStore.getSelectedDrillGroups();
-        const subCategories = await MissionScheduleStore.getSelectedDrillSubCategories();
-        const drills = await MissionScheduleStore.getSelectedDrills();
+        const categories = MissionScheduleStore.getSelectedDrillCategoriesSync();
+        const groups = MissionScheduleStore.getSelectedDrillGroupsSync();
+        const subCategories = MissionScheduleStore.getSelectedDrillSubCategoriesSync();
+        const drills = MissionScheduleStore.getSelectedDrillsSync();
 
         expect(categories['cat-strength']).toBe(true);
         expect(groups['group-push']).toBe(true);
@@ -145,7 +145,7 @@ describe('MissionScheduleStore persistence', () => {
             throw new Error('read blocked');
         });
 
-        const categories = await MissionScheduleStore.getSelectedDrillCategories();
+        const categories = MissionScheduleStore.getSelectedDrillCategoriesSync();
 
         expect(categories['cat-strength']).toBe(true);
         expect(localStorage.getItem('workout:v2:selectedWorkoutCategories')).toBeTruthy();

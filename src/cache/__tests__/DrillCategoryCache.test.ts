@@ -42,7 +42,7 @@ const sampleCategories: DrillCategory[] = [
     },
 ];
 
-const categoriesWithNewWorkout: DrillCategory[] = [
+const categoriesWithNewDrill: DrillCategory[] = [
     {
         ...sampleCategories[0],
         subCategories: [
@@ -121,12 +121,12 @@ describe('DrillCategoryCache', () => {
     it('hydrates persisted selections when the taxonomy signature matches', async () => {
         await loadCategories(sampleCategories);
 
-        cache.toggleWorkoutSelection('drill-pushup');
-        expect(cache.isWorkoutSelected('drill-pushup')).toBe(false);
+        cache.toggleDrillSelection('drill-pushup');
+        expect(cache.isDrillSelected('drill-pushup')).toBe(false);
 
         await loadCategories(sampleCategories);
 
-        expect(cache.isWorkoutSelected('drill-pushup')).toBe(false);
+        expect(cache.isDrillSelected('drill-pushup')).toBe(false);
     });
 
     it('clears stored selections when the taxonomy signature changes', async () => {
@@ -135,10 +135,10 @@ describe('DrillCategoryCache', () => {
         cache.toggleCategorySelection('cat-strength');
         expect(cache.isCategorySelected('cat-strength')).toBe(false);
 
-        await loadCategories(categoriesWithNewWorkout);
+        await loadCategories(categoriesWithNewDrill);
 
         expect(cache.isCategorySelected('cat-strength')).toBe(true);
-        expect(cache.isWorkoutSelected('drill-flyes')).toBe(true);
+        expect(cache.isDrillSelected('drill-flyes')).toBe(true);
     });
 
     it('applies quick20 preset to short drills', async () => {
@@ -146,8 +146,8 @@ describe('DrillCategoryCache', () => {
 
         cache.applyPreset('quick20');
 
-        expect(cache.isWorkoutSelected('drill-pushup')).toBe(true);
-        expect(cache.isWorkoutSelected('drill-dips')).toBe(true);
+        expect(cache.isDrillSelected('drill-pushup')).toBe(true);
+        expect(cache.isDrillSelected('drill-dips')).toBe(true);
         expect(cache.isCategorySelected('cat-strength')).toBe(true);
     });
 
@@ -156,7 +156,7 @@ describe('DrillCategoryCache', () => {
 
         cache.applyPreset('cardio');
 
-        expect(cache.isWorkoutSelected('drill-stretch')).toBe(true);
+        expect(cache.isDrillSelected('drill-stretch')).toBe(true);
         expect(cache.isCategorySelected('cat-mobility')).toBe(true);
     });
 
@@ -171,7 +171,7 @@ describe('DrillCategoryCache', () => {
         await loadCategories(sampleCategories);
 
         expect(cache.isCategorySelected('cat-strength')).toBe(true);
-        expect(cache.isWorkoutSelected('drill-pushup')).toBe(true);
+        expect(cache.isDrillSelected('drill-pushup')).toBe(true);
     });
 
     it('keeps in-memory selections even if persistence throws', async () => {
@@ -181,7 +181,7 @@ describe('DrillCategoryCache', () => {
 
         await loadCategories(sampleCategories);
 
-        expect(cache.isWorkoutSelected('drill-pushup')).toBe(true);
+        expect(cache.isDrillSelected('drill-pushup')).toBe(true);
         expect(cache.isCategorySelected('cat-strength')).toBe(true);
 
         setItemSpy.mockRestore();

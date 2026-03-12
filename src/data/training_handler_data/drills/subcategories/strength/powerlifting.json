@@ -1,7 +1,7 @@
 {
     "name": "Powerlifting",
     "description": "Powerlifting exercises to improve strength in the squat, bench press, and deadlift.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Beginner Powerlifting Foundations Routine",
             "description": "A structured program to develop strength and technique for squats, bench press, and deadlifts.",

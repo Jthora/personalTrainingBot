@@ -1,22 +1,11 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { Drill } from '../../types/DrillCategory';
 
-const flagValues: Record<'generatorSwap' | 'calendarSurface' | 'migrationBridge', boolean> = {
-    generatorSwap: true,
-    calendarSurface: false,
-    migrationBridge: false,
-};
-
 const mockCacheInstance = {
     isLoading: vi.fn(() => false),
-    getAllWorkoutsSelected: vi.fn(),
-    getAllWorkouts: vi.fn(),
+    getAllDrillsSelected: vi.fn(),
+    getAllDrills: vi.fn(),
 };
-
-vi.mock('../../config/featureFlags', () => ({
-    __esModule: true,
-    isFeatureEnabled: (flag: 'generatorSwap' | 'calendarSurface' | 'migrationBridge') => flagValues[flag],
-}));
 
 vi.mock('../../cache/DrillCategoryCache', () => ({
     __esModule: true,
@@ -36,76 +25,45 @@ vi.mock('../../store/DifficultySettingsStore', () => ({
 // Import after mocks
 import { createMissionSchedule } from '../MissionScheduleCreator';
 
-const makeWorkout = (name: string, difficulty: [number, number]) =>
+const makeDrill = (name: string, difficulty: [number, number]) =>
     new Drill(name, 'desc', '30', 'medium', difficulty);
 
-describe('createMissionSchedule (feature-flagged generator)', () => {
+describe('createMissionSchedule', () => {
     beforeEach(() => {
         vi.clearAllMocks();
-        flagValues.generatorSwap = true;
-        flagValues.calendarSurface = false;
-        flagValues.migrationBridge = false;
         mockCacheInstance.isLoading.mockReturnValue(false);
     });
 
-    it('uses modern generator when generatorSwap is on', async () => {
-        mockCacheInstance.getAllWorkoutsSelected.mockReturnValue([
-            makeWorkout('A', [0, 2]),
-            makeWorkout('B', [0, 2]),
-            makeWorkout('C', [0, 2]),
+    it('creates a schedule from selected drills', async () => {
+        mockCacheInstance.getAllDrillsSelected.mockReturnValue([
+            makeDrill('A', [0, 2]),
+            makeDrill('B', [0, 2]),
+            makeDrill('C', [0, 2]),
         ]);
 
         const schedule = await createMissionSchedule();
 
-        expect(mockCacheInstance.getAllWorkoutsSelected).toHaveBeenCalled();
-        expect(mockCacheInstance.getAllWorkouts).not.toHaveBeenCalled();
+        expect(mockCacheInstance.getAllDrillsSelected).toHaveBeenCalled();
         expect(schedule.scheduleItems.length).toBeGreaterThan(0);
         expect(schedule.scheduleItems.length).toBe(2); // 1 set + 1 block for 3 drills
     });
 
-    it('falls back to legacy when modern yields empty and migrationBridge is enabled', async () => {
-        flagValues.migrationBridge = true;
-        mockCacheInstance.getAllWorkoutsSelected.mockReturnValue([]); // modern will be empty
-        mockCacheInstance.getAllWorkouts.mockReturnValue([
-            makeWorkout('LegacyA', [0, 5]),
-            makeWorkout('LegacyB', [0, 5]),
+    it('returns empty schedule when no drills match difficulty', async () => {
+        // All drills have range [5, 10] but DifficultySettingsStore returns level 1
+        mockCacheInstance.getAllDrillsSelected.mockReturnValue([
+            makeDrill('Hard', [5, 10]),
         ]);
 
         const schedule = await createMissionSchedule();
 
-        expect(mockCacheInstance.getAllWorkoutsSelected).toHaveBeenCalled();
-        expect(mockCacheInstance.getAllWorkouts).toHaveBeenCalled();
-        expect(schedule.scheduleItems.length).toBeGreaterThan(0);
+        expect(schedule.scheduleItems.length).toBe(0);
     });
 
-    it('uses legacy generator when generatorSwap is off', async () => {
-        flagValues.generatorSwap = false;
-        mockCacheInstance.getAllWorkouts.mockReturnValue([
-            makeWorkout('LegacyA', [0, 5]),
-            makeWorkout('LegacyB', [0, 5]),
-        ]);
-
-        const schedule = await createMissionSchedule();
-
-        expect(mockCacheInstance.getAllWorkoutsSelected).not.toHaveBeenCalled();
-        expect(mockCacheInstance.getAllWorkouts).toHaveBeenCalled();
-        expect(schedule.scheduleItems.length).toBe(2); // 1 set + 1 block for 2 drills
-    });
-
-    it('falls back to legacy when modern generator throws and migrationBridge is enabled', async () => {
-        flagValues.generatorSwap = true;
-        flagValues.migrationBridge = true;
-        mockCacheInstance.getAllWorkoutsSelected.mockImplementation(() => {
+    it('propagates errors from modern generator', async () => {
+        mockCacheInstance.getAllDrillsSelected.mockImplementation(() => {
             throw new Error('modern boom');
         });
-        mockCacheInstance.getAllWorkouts.mockReturnValue([
-            makeWorkout('LegacyA', [0, 5]),
-            makeWorkout('LegacyB', [0, 5]),
-        ]);
 
-        const schedule = await createMissionSchedule();
-
-        expect(mockCacheInstance.getAllWorkouts).toHaveBeenCalled();
-        expect(schedule.scheduleItems.length).toBeGreaterThan(0);
+        await expect(createMissionSchedule()).rejects.toThrow('modern boom');
     });
 });

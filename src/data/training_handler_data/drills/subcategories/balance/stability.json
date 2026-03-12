@@ -1,7 +1,7 @@
 {
     "name": "Stability",
     "description": "Stability exercises to improve balance and core strength.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Core Stability Drills",
             "description": "Exercises to strengthen the core and improve stability.",

@@ -1,176 +1,379 @@
-# API Documentation
+# Internal API Reference
 
 ## Overview
 
-The Personal Training Bot uses a local data-driven architecture with cached data structures. This document describes the internal APIs and data management system.
+The Archangel Knights Training Console has no backend server. All state management is handled client-side through **localStorage-backed stores** with a pub/sub notification pattern, and **singleton cache classes** that hold training content in memory.
 
-## Cache System
+This document covers the store and cache APIs that components consume.
 
-### TrainingModuleCache
+## Architecture Pattern
 
-The `TrainingModuleCache` class manages the loading and caching of training modules.
+Every store follows the same hand-rolled pattern:
 
 ```typescript
-class TrainingModuleCache {
-  static getInstance(): TrainingModuleCache
-  async loadData(trainingModules: TrainingModule[]): Promise<void>
-  getModule(id: string): TrainingModule | undefined
-  getAllModules(): TrainingModule[]
-  selectModule(id: string): void
-  deselectModule(id: string): void
-  getSelectedModules(): Set<string>
-}
+// 1. localStorage key
+const STORE_KEY = 'ptb:some-key';
+
+// 2. Listener set for pub/sub
+const listeners = new Set<() => void>();
+
+// 3. Read/write helpers
+const readState = () => JSON.parse(localStorage.getItem(STORE_KEY));
+const writeState = (state) => localStorage.setItem(STORE_KEY, JSON.stringify(state));
+
+// 4. Notify subscribers
+const notify = () => listeners.forEach(fn => fn());
+
+// 5. Exported store object
+export const SomeStore = {
+  get(): State { ... },
+  set(state: State) { writeState(state); notify(); },
+  subscribe(fn: () => void): () => void { listeners.add(fn); return () => listeners.delete(fn); },
+};
 ```
 
-### TrainingCoachCache
+No external state library (Zustand, Redux, etc.) is used.
 
-Manages coach data and selections for training sessions.
+---
+
+## Operative & Progress Stores
+
+### UserProgressStore
+**File:** `src/store/UserProgressStore.ts` | **Key:** `userProgress:v1`
+
+Core operative progression tracking — XP, level, streaks, badges, challenges, goals.
 
 ```typescript
-class TrainingCoachCache {
-  static getInstance(): TrainingCoachCache
-  async loadData(coachData: CoachData[]): Promise<void>
-  getCoach(id: string): CoachData | undefined
-  getAllCoaches(): CoachData[]
+interface UserProgress {
+    xp: number;
+    level: number;
+    streak: number;
+    lastActiveDate: string;
+    weekStart: string;
+    weekEnd: string;
+    weeklyMinutes: number;
+    totalMissions: number;
+    totalMinutes: number;
+    badges: string[];
+    badgeUnlocks: BadgeUnlock[];
+    challenges: ChallengeInstance[];
+    flags: Partial<FeatureFlags>;
+    goals: GoalProgress;
+    version: number;
 }
+
+UserProgressStore.get(): UserProgress
+UserProgressStore.set(progress: UserProgress): void
+UserProgressStore.subscribe(fn: () => void): () => void
+UserProgressStore.addXP(amount: number): void
+UserProgressStore.recordMission(minutes: number): void
+UserProgressStore.awardBadge(badge: string): void
+UserProgressStore.getViewModel(): ProgressViewModel
 ```
 
-### WorkoutCategoryCache
+Level calculation: `level = floor(xp / 500) + 1`
 
-Handles workout category data and filtering.
+### OperativeProfileStore
+**File:** `src/store/OperativeProfileStore.ts` | **Key:** `operative:profile:v1`
 
-```typescript
-class WorkoutCategoryCache {
-  static getInstance(): WorkoutCategoryCache
-  async loadData(categories: WorkoutCategory[]): Promise<void>
-  getCategory(id: string): WorkoutCategory | undefined
-  getAllCategories(): WorkoutCategory[]
-}
-```
-
-## Data Loaders
-
-### InitialDataLoader
-
-Orchestrates the loading of all application data with progress tracking.
+Operative identity — callsign, archetype, handler preference.
 
 ```typescript
-class InitialDataLoader {
-  static async initialize(progressCallback?: (progress: number) => void): Promise<void>
+interface OperativeProfile {
+    callsign: string;
+    archetype: string;
+    handler: string;
+    createdAt: string;
 }
-```
 
-### CardDataLoader
-
-Loads card deck data from the training modules.
-
-```typescript
-class CardDataLoader {
-  static async loadCardData(): Promise<CardDeck[]>
-  static async loadCardDecksByModule(moduleId: string): Promise<CardDeck[]>
-}
-```
-
-### WorkoutDataLoader
-
-Manages workout data loading and processing.
-
-```typescript
-class WorkoutDataLoader {
-  static async loadWorkoutData(): Promise<WorkoutsData>
-  static async loadWorkoutsByCategory(categoryId: string): Promise<WorkoutCategory[]>
-}
-```
-
-## Store APIs
-
-### WorkoutScheduleStore
-
-Zustand store for managing workout schedules.
-
-```typescript
-interface WorkoutScheduleStore {
-  schedules: WorkoutSchedule[]
-  currentSchedule: WorkoutSchedule | null
-  addSchedule: (schedule: WorkoutSchedule) => void
-  updateSchedule: (id: string, updates: Partial<WorkoutSchedule>) => void
-  deleteSchedule: (id: string) => void
-  setCurrentSchedule: (schedule: WorkoutSchedule | null) => void
-}
+OperativeProfileStore.get(): OperativeProfile | null
+OperativeProfileStore.set(profile: OperativeProfile): void
+OperativeProfileStore.update(partial: Partial<OperativeProfile>): void
+OperativeProfileStore.subscribe(fn: () => void): () => void
 ```
 
 ### DifficultySettingsStore
-
-Manages difficulty settings across the application.
-
-```typescript
-interface DifficultySettingsStore {
-  settings: DifficultySettings
-  updateSettings: (updates: Partial<DifficultySettings>) => void
-  resetSettings: () => void
-}
-```
-
-## Utility Functions
-
-### Audio Player
-
-Handles sound effects and audio feedback.
+**File:** `src/store/DifficultySettingsStore.ts` | **Key:** `difficultySettings`
 
 ```typescript
-class AudioPlayer {
-  static play(soundFile: string): void
-  static setVolume(volume: number): void
-  static mute(): void
-  static unmute(): void
-}
+DifficultySettingsStore.getSettings(): DifficultySetting
+DifficultySettingsStore.setSettings(setting: DifficultySetting): void
+DifficultySettingsStore.getLevel(): number
+DifficultySettingsStore.generateWeightedRandom(): number
 ```
 
-### Card Dealer
+---
 
-Manages card shuffling and dealing logic.
+## Mission Execution Stores
+
+### MissionScheduleStore
+**File:** `src/store/MissionScheduleStore.ts`
+
+Manages the active mission schedule — loading, completion tracking, navigation between schedule items.
 
 ```typescript
-class CardDealer {
-  static shuffleDeck(deck: Card[]): Card[]
-  static dealCards(deck: Card[], count: number): Card[]
-  static getRandomCard(deck: Card[]): Card
-}
+MissionScheduleStore.get(): MissionSchedule | null
+MissionScheduleStore.set(schedule: MissionSchedule): void
+MissionScheduleStore.completeNextItem(): void
+MissionScheduleStore.skipNextItem(): void
+MissionScheduleStore.clear(): void
+MissionScheduleStore.subscribe(fn: () => void): () => void
 ```
 
-## Path Generation
+### CustomMissionSchedulesStore
+**File:** `src/store/CustomMissionSchedulesStore.ts` | **Key:** `customMissionSchedules`
 
-The application uses dynamic path generation for training modules:
-
-- `generateModulePaths.tsx` - Generates module path mappings
-- `generateSubModulePaths.tsx` - Generates sub-module path mappings  
-- `generateCardDeckPaths.tsx` - Generates card deck path mappings
-- `generateWorkoutCategoryPaths.tsx` - Generates workout category paths
-- `generateWorkoutSubCategoryPaths.tsx` - Generates workout sub-category paths
-
-These utilities create TypeScript files with path mappings that are used during build time.
-
-## Error Handling
-
-The application uses a standardized error handling approach:
+CRUD for operative-created custom schedules.
 
 ```typescript
-interface AppError {
-  code: string
-  message: string
-  details?: Record<string, unknown>
-}
+CustomMissionSchedulesStore.getCustomSchedules(): CustomMissionScheduleJSON[]
+CustomMissionSchedulesStore.addCustomSchedule(schedule: CustomMissionScheduleJSON): void
+CustomMissionSchedulesStore.updateCustomSchedule(schedule: CustomMissionScheduleJSON): void
+CustomMissionSchedulesStore.deleteCustomSchedule(id: string): void
 ```
 
-Common error codes:
-- `LOAD_ERROR` - Data loading failures
-- `CACHE_ERROR` - Cache operation failures
-- `VALIDATION_ERROR` - Data validation failures
-- `AUDIO_ERROR` - Audio playback failures
+### DrillRunStore
+**File:** `src/store/DrillRunStore.ts` | **Key:** `ptb:drill-run`
 
-## Performance Considerations
+Tracks the currently active drill execution — steps, completion, elapsed time.
 
-- Data is cached in memory for fast access
-- Lazy loading is used for large data sets
-- Audio files are preloaded for smooth playback
-- Build-time path generation reduces runtime overhead
+```typescript
+type DrillRunState = {
+    drillId: string;
+    drillName: string;
+    startedAt: string;
+    steps: { id: string; label: string; done: boolean }[];
+    completed: boolean;
+    elapsedSec: number;
+}
+
+DrillRunStore.get(): DrillRunState | null
+DrillRunStore.start(drill: Drill): void
+DrillRunStore.toggleStep(stepId: string): void
+DrillRunStore.complete(): void
+DrillRunStore.clear(): void
+DrillRunStore.subscribe(fn: (state: DrillRunState | null) => void): () => void
+```
+
+Also maintains a telemetry event queue (`ptb:drill-telemetry-queue`) for offline-resilient event recording.
+
+### DrillHistoryStore
+**File:** `src/store/DrillHistoryStore.ts` | **Key:** `ptb:drill-history:v1`
+
+Persists the last 100 completed drill records.
+
+```typescript
+interface DrillHistoryEntry {
+    id: string;
+    drillId: string;
+    drillName: string;
+    elapsedSec: number;
+    completedAt: string;
+    handler: string;
+}
+
+DrillHistoryStore.getAll(): DrillHistoryEntry[]
+DrillHistoryStore.record(entry: Omit<DrillHistoryEntry, 'id'>): void
+DrillHistoryStore.statsFor(drillId: string): { count, totalSec, bestSec }
+DrillHistoryStore.subscribe(fn: () => void): () => void
+```
+
+---
+
+## Selection & Filtering Stores
+
+### TrainingModuleSelectionStore
+**File:** `src/store/TrainingModuleSelectionStore.ts`
+
+Persists module/sub-module/card-deck/card selection state to localStorage with versioned keys (`trainingSelection:v2:*`).
+
+```typescript
+TrainingModuleSelectionStore.getSelectedModules(): SelectionRecord
+TrainingModuleSelectionStore.getSelectedSubModules(): SelectionRecord
+TrainingModuleSelectionStore.getSelectedCardDecks(): SelectionRecord
+TrainingModuleSelectionStore.getSelectedCards(): SelectionRecord
+TrainingModuleSelectionStore.setSelectedModules(record: SelectionRecord): void
+TrainingModuleSelectionStore.syncDataSignature(signature: string): boolean
+TrainingModuleSelectionStore.clear(): void
+```
+
+Used by `TrainingModuleCache` to restore selections on data reload.
+
+### DrillFilterStore
+**File:** `src/store/DrillFilterStore.ts` | **Key:** `drillFilters:v1`
+
+Persists drill filtering preferences.
+
+```typescript
+type DrillFilters = {
+    duration: DurationBucket;     // 'any' | '10' | '20' | '30' | '30_plus'
+    difficultyMin: number;
+    difficultyMax: number;
+    keywords: string[];
+    categories: string[];
+}
+
+DrillFilterStore.get(): DrillFilters
+DrillFilterStore.set(filters: Partial<DrillFilters>): void
+DrillFilterStore.reset(): void
+DrillFilterStore.subscribe(fn: (filters: DrillFilters) => void): () => void
+```
+
+---
+
+## Mission Intelligence Stores
+
+### SignalsStore
+**File:** `src/store/SignalsStore.ts` | **Key:** `ptb:signals`
+
+Intelligence signals displayed between drill sets.
+
+```typescript
+SignalsStore.getAll(): MissionSignal[]
+SignalsStore.updateStatus(id: string, status: SignalStatus): void
+SignalsStore.subscribe(fn: () => void): () => void
+```
+
+Includes an offline queue (`ptb:signals-queue`) for resilient status updates.
+
+### AARStore (After-Action Review)
+**File:** `src/store/AARStore.ts` | **Key:** `ptb:aar-entries`
+
+Structured after-action review entries.
+
+```typescript
+type AAREntry = {
+    id: string;
+    createdAt: number;
+    sustain: string;
+    improve: string;
+    actionItems: string;
+}
+
+AARStore.getAll(): AAREntry[]
+AARStore.add(entry: Omit<AAREntry, 'id' | 'createdAt'>): void
+AARStore.update(entry: AAREntry): void
+AARStore.exportEntry(id: string): string | null
+AARStore.subscribe(fn: () => void): () => void
+```
+
+---
+
+## Gamification & UI Stores
+
+### FeatureFlagsStore
+**File:** `src/store/FeatureFlagsStore.ts` | **Key:** `featureFlags:v1`
+
+22 feature flags controlling gated features. Merges defaults → config → user progress → overrides.
+
+```typescript
+FeatureFlagsStore.get(): FeatureFlags
+FeatureFlagsStore.set(flags: Partial<FeatureFlags>): void
+FeatureFlagsStore.reset(): void
+```
+
+### MissionKitStore
+**File:** `src/store/MissionKitStore.ts` | **Key:** `missionKit:visible`
+
+Mission kit visibility and per-drill statistics (`ptb:drill-stats`).
+
+```typescript
+MissionKitStore.getKits(): MissionKit[]
+MissionKitStore.isVisible(): boolean
+MissionKitStore.toggle(): void
+MissionKitStore.recordDrillResult(drillId: string, success: boolean): void
+```
+
+### ArtifactActionStore
+**File:** `src/store/ArtifactActionStore.ts` | **Key:** `ptb:artifact-actions`
+
+Tracks artifact interactions (shared, downloaded, viewed).
+
+### TriageActionStore
+**File:** `src/store/TriageActionStore.ts` | **Key:** `ptb:triage-actions`
+
+Records triage decisions (selected, skipped, deferred).
+
+### SettingsStore
+**File:** `src/store/SettingsStore.ts` | **Key:** `ptb:user-preferences`
+
+User preferences (sound, theme, Web3 auth integration).
+
+---
+
+## Event Systems
+
+### ProgressEventRecorder
+**File:** `src/store/UserProgressEvents.ts`
+
+Records mission completion events and calculates XP/minute rewards.
+
+```typescript
+ProgressEventRecorder.onItemCompleted(item, scheduleAfter): void
+ProgressEventRecorder.onMissionAborted(): void
+```
+
+### Celebration Events
+**File:** `src/store/celebrationEvents.ts`
+
+```typescript
+emitCelebration(event: CelebrationEvent): void
+subscribeCelebrations(fn: CelebrationListener): () => void
+detectCelebrations(before: UserProgress, after: UserProgress): CelebrationEvent[]
+```
+
+Event types: `LevelUpEvent`, `BadgeUnlockEvent`, `XPGainEvent`.
+
+### Challenge Rotation
+**File:** `src/store/challenges.ts`
+
+```typescript
+rotateChallengesIfNeeded(existing, catalog, todayIso): ChallengeRotationResult
+applyChallengeProgress(challenges, minutesDelta, missionsDelta, asOfDate): ChallengeInstance[]
+```
+
+---
+
+## Cache APIs
+
+See [cache-system.md](cache-system.md) for the full cache class reference:
+
+| Cache | File | Purpose |
+|---|---|---|
+| `TrainingModuleCache` | `src/cache/TrainingModuleCache.ts` | Intelligence content hierarchy |
+| `DrillCategoryCache` | `src/cache/DrillCategoryCache.ts` | Physical drill hierarchy |
+| `TrainingHandlerCache` | `src/cache/TrainingHandlerCache.ts` | Handler personalities, ranks, difficulty levels |
+
+---
+
+## Domain Model
+
+**Directory:** `src/domain/mission/`
+
+Higher-level business logic layered above stores and caches:
+
+| Module | Purpose |
+|---|---|
+| `MissionEntityStore.ts` | Entity collection and lifecycle management |
+| `lifecycle.ts` | Mission state machine transitions |
+| `selectors.ts` | Derived state queries |
+| `validation.ts` | Schedule validation rules |
+| `triageLifecycleBridge.ts` | Triage → mission scheduling bridge |
+| `adapters/` | Data transformation between layers |
+
+---
+
+## Services
+
+**Directory:** `src/services/`
+
+| Service | Purpose |
+|---|---|
+| `gunIdentity.ts` | Gun.js SEA keypair generation and management |
+| `gunProfileBridge.ts` | Syncs operative profile to Gun.js graph |
+| `gunStoreSyncs.ts` | Bidirectional Gun.js ↔ localStorage sync |
+| `gunSyncAdapter.ts` | Gun.js adapter layer |
+| `gunDb.ts` | Gun.js database initialisation |
+| `syncStatusStore.ts` | Gun.js sync status tracking |
+| `ipfsFetcher.ts` | IPFS content fetching |
+| `Web3AuthService.ts` | Web3 wallet authentication |

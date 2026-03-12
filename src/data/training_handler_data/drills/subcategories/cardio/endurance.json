@@ -1,7 +1,7 @@
 {
     "name": "Endurance",
     "description": "Endurance workouts to improve cardiovascular fitness and stamina.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Treadmill Endurance Protocols",
             "description": "Interval running to build endurance.",

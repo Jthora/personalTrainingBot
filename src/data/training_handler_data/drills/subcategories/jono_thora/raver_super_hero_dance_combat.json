@@ -1,7 +1,7 @@
 {
     "name": "Raver Super Hero Dance Combat",
     "description": "A fusion of dance-based movement and combat techniques, integrating rhythmic flow, evasive footwork, and momentum-based striking.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Rhythmic Combat Flow (Music-Based Footwork & Reactive Striking)",
             "description": "Training combat footwork and striking mechanics in rhythm with breakbeats, basslines, and dynamic tempo shifts.",

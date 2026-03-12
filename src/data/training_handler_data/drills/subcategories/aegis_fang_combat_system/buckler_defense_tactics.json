@@ -1,7 +1,7 @@
 {
     "name": "Buckler Defense Tactics",
     "description": "Training to master defensive techniques using twin bucklers, including redirections, counterattacks, and shield-integrated movement.",
-    "workout_groups": [
+    "drill_groups": [
         {
             "name": "Fundamentals of Buckler Defense",
             "description": "Developing core defensive skills using twin bucklers for blocking, deflecting, and tactical positioning.",

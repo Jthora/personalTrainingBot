@@ -1,25 +1,8 @@
 import { getAppEnv, AppEnv } from './env';
 
 export type FeatureFlagKey =
-    | 'generatorSwap'
-    | 'calendarSurface'
-    | 'migrationBridge'
     | 'performanceInstrumentation'
     | 'loadingCacheV2'
-    | 'canonicalReadPath'
-    | 'missionDefaultRoutes'
-    | 'missionSurfaceBrief'
-    | 'missionSurfaceTriage'
-    | 'missionSurfaceCase'
-    | 'missionSurfaceSignal'
-    | 'missionSurfaceChecklist'
-    | 'missionSurfaceDebrief'
-    | 'archetypeSystem'
-    | 'statsSurface'
-    | 'profileEditor'
-    | 'drillRunnerUpgrade'
-    | 'celebrations'
-    | 'planSurface'
     | 'p2pIdentity'
     | 'ipfsContent';
 
@@ -30,25 +13,8 @@ export type FeatureFlagConfig = Record<FeatureFlagKey, boolean> & Record<GlobalF
 const LOCAL_STORAGE_KEY = 'featureFlagOverrides';
 
 const DEFAULT_FLAGS: FeatureFlagConfig = {
-    generatorSwap: true,
-    calendarSurface: false,
-    migrationBridge: false,
     performanceInstrumentation: false,
     loadingCacheV2: false,
-    canonicalReadPath: false,
-    missionDefaultRoutes: true,
-    missionSurfaceBrief: true,
-    missionSurfaceTriage: true,
-    missionSurfaceCase: true,
-    missionSurfaceSignal: true,
-    missionSurfaceChecklist: true,
-    missionSurfaceDebrief: true,
-    archetypeSystem: false,
-    statsSurface: false,
-    profileEditor: false,
-    drillRunnerUpgrade: false,
-    celebrations: false,
-    planSurface: false,
     p2pIdentity: false,
     ipfsContent: false,
     globalKillSwitch: false,
@@ -56,73 +22,22 @@ const DEFAULT_FLAGS: FeatureFlagConfig = {
 
 const ENV_DEFAULT_FLAGS: Record<AppEnv, Partial<FeatureFlagConfig>> = {
     development: {
-        generatorSwap: true,
-        calendarSurface: true,
-        migrationBridge: true,
         performanceInstrumentation: true,
         loadingCacheV2: true,
-        canonicalReadPath: false,
-        missionDefaultRoutes: true,
-        missionSurfaceBrief: true,
-        missionSurfaceTriage: true,
-        missionSurfaceCase: true,
-        missionSurfaceSignal: true,
-        missionSurfaceChecklist: true,
-        missionSurfaceDebrief: true,
-        archetypeSystem: true,
-        statsSurface: true,
-        profileEditor: true,
-        drillRunnerUpgrade: true,
-        celebrations: true,
-        planSurface: true,
         p2pIdentity: true,
         ipfsContent: true,
         globalKillSwitch: false,
     },
     staging: {
-        generatorSwap: true,
-        calendarSurface: true,
-        migrationBridge: false,
         performanceInstrumentation: true,
-        loadingCacheV2: false,
-        canonicalReadPath: false,
-        missionDefaultRoutes: true,
-        missionSurfaceBrief: true,
-        missionSurfaceTriage: true,
-        missionSurfaceCase: true,
-        missionSurfaceSignal: true,
-        missionSurfaceChecklist: true,
-        missionSurfaceDebrief: true,
-        archetypeSystem: true,
-        statsSurface: true,
-        profileEditor: true,
-        drillRunnerUpgrade: true,
-        celebrations: true,
-        planSurface: true,
+        loadingCacheV2: true,
         p2pIdentity: true,
         ipfsContent: false,
         globalKillSwitch: false,
     },
     production: {
-        generatorSwap: true,
-        calendarSurface: false,
-        migrationBridge: false,
         performanceInstrumentation: false,
         loadingCacheV2: false,
-        canonicalReadPath: false,
-        missionDefaultRoutes: true,
-        missionSurfaceBrief: true,
-        missionSurfaceTriage: true,
-        missionSurfaceCase: true,
-        missionSurfaceSignal: true,
-        missionSurfaceChecklist: true,
-        missionSurfaceDebrief: true,
-        archetypeSystem: false,
-        statsSurface: false,
-        profileEditor: false,
-        drillRunnerUpgrade: false,
-        celebrations: false,
-        planSurface: false,
         p2pIdentity: false,
         ipfsContent: false,
         globalKillSwitch: false,
@@ -222,25 +137,8 @@ export const resetFeatureFlagOverrides = (): FeatureFlagConfig => {
 
 function isFeatureFlagKey(key: string): key is FeatureFlagKey {
     return [
-        'generatorSwap',
-        'calendarSurface',
-        'migrationBridge',
         'performanceInstrumentation',
         'loadingCacheV2',
-        'canonicalReadPath',
-        'missionDefaultRoutes',
-        'missionSurfaceBrief',
-        'missionSurfaceTriage',
-        'missionSurfaceCase',
-        'missionSurfaceSignal',
-        'missionSurfaceChecklist',
-        'missionSurfaceDebrief',
-        'archetypeSystem',
-        'statsSurface',
-        'profileEditor',
-        'drillRunnerUpgrade',
-        'celebrations',
-        'planSurface',
         'p2pIdentity',
         'ipfsContent',
     ].includes(key);

@@ -1,0 +1,123 @@
+.container {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  border: 1px solid var(--border-secondary, #333);
+  border-radius: 8px;
+  background: var(--surface-secondary, #1a1a2e);
+}
+
+.heading {
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary, #aaa);
+}
+
+.exerciseWrapper {
+  margin-bottom: 0.75rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border-secondary, #222);
+}
+
+.exerciseWrapper:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.typeLabel {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--surface-tertiary, #262640);
+  color: var(--text-tertiary, #ccc);
+  margin-bottom: 0.35rem;
+}
+
+.exercise {
+  margin-top: 0.35rem;
+}
+
+.prompt {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--text-primary, #eee);
+}
+
+.revealBtn,
+.hintBtn {
+  background: var(--accent, #4a6cf7);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  margin-bottom: 0.35rem;
+  transition: opacity 0.15s;
+}
+
+.revealBtn:hover,
+.hintBtn:hover {
+  opacity: 0.85;
+}
+
+.outcome {
+  margin-top: 0.4rem;
+  padding: 0.5rem;
+  border-left: 3px solid var(--accent, #4a6cf7);
+  background: var(--surface-tertiary, #262640);
+  border-radius: 0 6px 6px 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--text-primary, #eee);
+}
+
+.hintList {
+  margin: 0.3rem 0;
+  padding-left: 1.25rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary, #bbb);
+}
+
+.hint {
+  margin-bottom: 0.2rem;
+}
+
+.guidedReflection {
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary, #bbb);
+}
+
+.guidedReflection ul {
+  padding-left: 1.25rem;
+  margin: 0.25rem 0 0;
+}
+
+.checkList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.checkItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.25rem 0;
+  font-size: 0.85rem;
+  color: var(--text-primary, #eee);
+  cursor: pointer;
+}
+
+.checkItem input {
+  margin-top: 0.2rem;
+  cursor: pointer;
+}

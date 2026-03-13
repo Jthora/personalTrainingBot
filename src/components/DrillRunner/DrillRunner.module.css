@@ -134,3 +134,234 @@
   color: var(--text-secondary);
   font-variant-numeric: tabular-nums;
 }
+
+/* ── Expandable step card content ── */
+
+.stepExpanded {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.expandToggle {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.expandToggle:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-primary);
+}
+
+.cardContent {
+  margin-top: 8px;
+  padding: 10px 12px 10px 32px; /* indent past the checkbox */
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  display: grid;
+  gap: 8px;
+}
+
+.cardDescription {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.cardBullets {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 4px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.cardSummary {
+  margin: 0;
+  padding: 8px 12px;
+  border-left: 3px solid var(--handler-accent, #60a5fa);
+  background: rgba(96, 165, 250, 0.06);
+  font-size: 13px;
+  font-style: italic;
+  color: var(--text-secondary);
+  border-radius: 0 6px 6px 0;
+}
+
+.sectionLabel {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.learningObjectives {
+  margin-top: 8px;
+}
+
+.learningObjectives ul {
+  margin: 0;
+  padding-left: 16px;
+  font-size: 13px;
+  color: var(--text-primary);
+}
+
+.learningObjectives li {
+  margin-bottom: 2px;
+}
+
+.keyTerms {
+  margin-top: 8px;
+}
+
+.keyTermsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.keyTerm {
+  display: inline-block;
+  padding: 1px 8px;
+  font-size: 11px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.cardMeta {
+  display: flex;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.cardDifficulty {
+  padding: 1px 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* ── Reflection / self-assessment ── */
+
+.reflection {
+  padding: 14px;
+  background: rgba(96, 165, 250, 0.06);
+  border: 1px solid rgba(96, 165, 250, 0.2);
+  border-radius: 10px;
+  display: grid;
+  gap: 12px;
+}
+
+.reflectionTitle {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.reflectionField {
+  display: grid;
+  gap: 4px;
+}
+
+.reflectionLabel {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.notesInput {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: var(--text-primary);
+  padding: 8px 10px;
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+  min-height: 60px;
+}
+
+.notesInput::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.6;
+}
+
+.notesInput:focus {
+  outline: none;
+  border-color: var(--handler-accent, #60a5fa);
+}
+
+.ratingGroup {
+  display: flex;
+  gap: 6px;
+}
+
+.ratingBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-secondary);
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.ratingBtn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-primary);
+}
+
+.ratingBtnActive {
+  background: var(--handler-accent, #60a5fa);
+  color: #0a0f1a;
+  border-color: var(--handler-accent, #60a5fa);
+}
+
+.reflectionActions {
+  display: flex;
+  gap: 8px;
+}
+
+/* ── Last notes preview ── */
+
+.lastNotes {
+  padding: 8px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.02);
+  display: grid;
+  gap: 4px;
+}
+
+.lastNotesText {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  white-space: pre-wrap;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}

@@ -1,0 +1,82 @@
+/* DataSafetyPanel — Export / Import training data */
+
+.panel {
+  background: var(--surface-raised, #1a1a2e);
+  border: 1px solid var(--border-subtle, #2a2a4a);
+  border-radius: 8px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.heading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary, #e0e0e0);
+  margin: 0;
+}
+
+.description {
+  font-size: 0.85rem;
+  color: var(--text-secondary, #aaa);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.exportBtn,
+.importBtn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.exportBtn {
+  background: var(--accent, #6c63ff);
+  color: #fff;
+  border: none;
+}
+
+.exportBtn:hover {
+  opacity: 0.85;
+}
+
+.importBtn {
+  background: transparent;
+  border: 1px solid var(--accent, #6c63ff);
+  color: var(--accent, #6c63ff);
+}
+
+.importBtn:hover {
+  opacity: 0.85;
+}
+
+.importBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.success {
+  font-size: 0.8rem;
+  color: var(--success, #4caf50);
+  margin: 0;
+}
+
+.error {
+  font-size: 0.8rem;
+  color: var(--error, #f44336);
+  margin: 0;
+}

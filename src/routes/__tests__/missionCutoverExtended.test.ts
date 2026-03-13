@@ -7,10 +7,11 @@ import {
 } from '../missionCutover';
 
 describe('missionCutover – extended coverage', () => {
-  it('exports 8 mission route paths including stats and plan', () => {
-    expect(missionRoutePaths).toHaveLength(8);
+  it('exports 9 mission route paths including stats, plan, and training', () => {
+    expect(missionRoutePaths).toHaveLength(9);
     expect(missionRoutePaths).toContain('/mission/stats');
     expect(missionRoutePaths).toContain('/mission/plan');
+    expect(missionRoutePaths).toContain('/mission/training');
   });
 
   it('coreMissionRoutePaths contains the 6 core routes', () => {

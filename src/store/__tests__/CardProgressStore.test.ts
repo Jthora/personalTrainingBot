@@ -1,0 +1,137 @@
+import { describe, it, expect, beforeEach } from 'vitest';
+import CardProgressStore from '../CardProgressStore';
+
+beforeEach(() => {
+  window.localStorage.clear();
+});
+
+describe('CardProgressStore', () => {
+  it('starts empty', () => {
+    expect(CardProgressStore.list()).toEqual([]);
+    expect(CardProgressStore.count()).toBe(0);
+  });
+
+  it('records a review and creates entry', () => {
+    const entry = CardProgressStore.recordReview('card-1', 'module-a', 4);
+    expect(entry.cardId).toBe('card-1');
+    expect(entry.moduleId).toBe('module-a');
+    expect(entry.interval).toBe(1);
+    expect(entry.repetitions).toBe(1);
+    expect(entry.lapses).toBe(0);
+    expect(entry.lastReviewedAt).toBeTruthy();
+    expect(entry.nextReviewAt).toBeTruthy();
+    expect(CardProgressStore.count()).toBe(1);
+  });
+
+  it('updates existing entry on re-review', () => {
+    CardProgressStore.recordReview('card-1', 'module-a', 4);
+    const entry2 = CardProgressStore.recordReview('card-1', 'module-a', 5);
+    expect(CardProgressStore.count()).toBe(1);
+    expect(entry2.repetitions).toBe(2);
+    expect(entry2.interval).toBe(3);
+  });
+
+  it('tracks multiple cards independently', () => {
+    CardProgressStore.recordReview('card-1', 'module-a', 4);
+    CardProgressStore.recordReview('card-2', 'module-a', 5);
+    CardProgressStore.recordReview('card-3', 'module-b', 3);
+    expect(CardProgressStore.count()).toBe(3);
+  });
+
+  it('getCardProgress returns entry for known card', () => {
+    CardProgressStore.recordReview('card-x', 'mod-1', 4);
+    const progress = CardProgressStore.getCardProgress('card-x');
+    expect(progress).not.toBeNull();
+    expect(progress!.cardId).toBe('card-x');
+  });
+
+  it('getCardProgress returns null for unknown card', () => {
+    expect(CardProgressStore.getCardProgress('nonexistent')).toBeNull();
+  });
+
+  it('getCardsDueForReview returns cards past their review date', () => {
+    // Record two reviews
+    CardProgressStore.recordReview('card-1', 'mod-a', 4);
+    CardProgressStore.recordReview('card-2', 'mod-a', 4);
+    // Both have nextReviewAt ~1 day in the future
+    const now = Date.now();
+    // Nothing due right now
+    expect(CardProgressStore.getCardsDueForReview('mod-a', now)).toHaveLength(0);
+    // Simulate time travelling past their review date
+    const futureNow = now + 2 * 24 * 60 * 60 * 1000; // +2 days
+    const due = CardProgressStore.getCardsDueForReview('mod-a', futureNow);
+    expect(due).toHaveLength(2);
+  });
+
+  it('getCardsDueForReview filters by moduleId', () => {
+    CardProgressStore.recordReview('card-1', 'mod-a', 4);
+    CardProgressStore.recordReview('card-2', 'mod-b', 4);
+    const futureNow = Date.now() + 2 * 24 * 60 * 60 * 1000;
+    expect(CardProgressStore.getCardsDueForReview('mod-a', futureNow)).toHaveLength(1);
+    expect(CardProgressStore.getCardsDueForReview('mod-b', futureNow)).toHaveLength(1);
+    // No filter → all
+    expect(CardProgressStore.getCardsDueForReview(undefined, futureNow)).toHaveLength(2);
+  });
+
+  describe('getModuleReviewStats', () => {
+    it('returns zeroes for unknown module', () => {
+      const stats = CardProgressStore.getModuleReviewStats('unknown');
+      expect(stats).toEqual({ due: 0, learning: 0, mature: 0, newCards: 0, total: 0 });
+    });
+
+    it('counts learning cards (interval < 21)', () => {
+      CardProgressStore.recordReview('c1', 'mod-x', 4); // rep 1, interval 1 → learning
+      CardProgressStore.recordReview('c2', 'mod-x', 4);
+      const stats = CardProgressStore.getModuleReviewStats('mod-x');
+      expect(stats.learning).toBe(2);
+      expect(stats.total).toBe(2);
+      expect(stats.mature).toBe(0);
+    });
+
+    it('classifies mature vs learning correctly', () => {
+      // Simulate a mature card by recording many reviews
+      let entry = CardProgressStore.recordReview('c1', 'mod-z', 5);
+      // Manually push the card to mature state via repeated reviews
+      for (let i = 0; i < 6; i++) {
+        entry = CardProgressStore.recordReview('c1', 'mod-z', 5);
+      }
+      const stats = CardProgressStore.getModuleReviewStats('mod-z');
+      // After 7 easy reviews, interval should be ≥ 21 → mature
+      expect(stats.mature).toBe(entry.interval >= 21 ? 1 : 0);
+      expect(stats.total).toBe(1);
+    });
+  });
+
+  it('defaults selfAssessment to 3 when omitted', () => {
+    const entry = CardProgressStore.recordReview('card-def', 'mod-a');
+    expect(entry.repetitions).toBe(1);
+    expect(entry.interval).toBe(1);
+    // Second review with default
+    const entry2 = CardProgressStore.recordReview('card-def', 'mod-a');
+    expect(entry2.repetitions).toBe(2);
+  });
+
+  it('clear removes all data', () => {
+    CardProgressStore.recordReview('c1', 'm1', 4);
+    CardProgressStore.recordReview('c2', 'm1', 5);
+    CardProgressStore.clear();
+    expect(CardProgressStore.count()).toBe(0);
+    expect(CardProgressStore.list()).toEqual([]);
+  });
+
+  it('subscribe notifies on changes', () => {
+    let callCount = 0;
+    const unsub = CardProgressStore.subscribe(() => { callCount += 1; });
+    CardProgressStore.recordReview('c1', 'm1', 4);
+    expect(callCount).toBeGreaterThanOrEqual(1);
+    unsub();
+  });
+
+  it('persists across store re-reads (localStorage)', () => {
+    CardProgressStore.recordReview('card-persist', 'mod-p', 4);
+    // Re-reading from store.get (re-parses localStorage)
+    const progress = CardProgressStore.getCardProgress('card-persist');
+    expect(progress).not.toBeNull();
+    expect(progress!.interval).toBe(1);
+  });
+});

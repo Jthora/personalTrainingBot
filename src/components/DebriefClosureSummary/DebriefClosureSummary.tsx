@@ -3,14 +3,6 @@ import styles from './DebriefClosureSummary.module.css';
 import { useMissionEntityCollection } from '../../hooks/useMissionEntityCollection';
 import { computeReadiness } from '../../utils/readiness/model';
 import { readMissionFlowContext } from '../../store/missionFlow/continuity';
-import type { CompetencyDimension } from '../../utils/readiness/competencyModel';
-
-const competencyLabels: Record<CompetencyDimension, string> = {
-  triage_execution: 'Triage Execution',
-  signal_analysis: 'Signal Analysis',
-  artifact_traceability: 'Artifact Traceability',
-  decision_quality: 'Decision Quality',
-};
 
 const DebriefClosureSummary: React.FC = () => {
   const collection = useMissionEntityCollection();
@@ -22,9 +14,11 @@ const DebriefClosureSummary: React.FC = () => {
     const withoutProgression = computeReadiness(undefined, { debriefOutcomes: [] });
     const readinessDelta = withProgression.score - withoutProgression.score;
 
-    const dimensions = Object.entries(withProgression.competency.dimensionScores) as Array<[CompetencyDimension, number]>;
-    const strongest = [...dimensions].sort((a, b) => b[1] - a[1])[0];
-    const weakest = [...dimensions].sort((a, b) => a[1] - b[1])[0];
+    const activeDomains = withProgression.domainProgress.domains
+      .filter((d) => d.drillCount > 0)
+      .sort((a, b) => b.score - a.score);
+    const strongest = activeDomains[0] ?? null;
+    const weakest = activeDomains.length > 1 ? activeDomains[activeDomains.length - 1] : null;
 
     const operations = collection?.operations ?? [];
     const currentOperationId = context?.operationId ?? null;
@@ -63,12 +57,19 @@ const DebriefClosureSummary: React.FC = () => {
       </div>
 
       <div className={styles.feedback}>
-        <p className={styles.feedbackLine}>
-          <strong>Strongest competency:</strong> {competencyLabels[summary.strongest[0]]} ({Math.round(summary.strongest[1])})
-        </p>
-        <p className={styles.feedbackLine}>
-          <strong>Focus next:</strong> {competencyLabels[summary.weakest[0]]} ({Math.round(summary.weakest[1])})
-        </p>
+        {summary.strongest && (
+          <p className={styles.feedbackLine}>
+            <strong>Strongest domain:</strong> {summary.strongest.domainName} ({Math.round(summary.strongest.score)})
+          </p>
+        )}
+        {summary.weakest && (
+          <p className={styles.feedbackLine}>
+            <strong>Focus next:</strong> {summary.weakest.domainName} ({Math.round(summary.weakest.score)})
+          </p>
+        )}
+        {!summary.strongest && (
+          <p className={styles.feedbackLine}>Complete drills to establish domain progress.</p>
+        )}
       </div>
 
       <div className={styles.recommendation}>

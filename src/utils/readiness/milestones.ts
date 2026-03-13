@@ -1,5 +1,6 @@
 import type { DebriefProgression } from './progressionModel';
-import type { CompetencySnapshot } from './competencyModel';
+import type { DomainProgressSnapshot } from './domainProgress';
+import { averageDomainScore } from './domainProgress';
 import type { ArchetypeDefinition } from '../../data/archetypes';
 
 export type MissionMilestoneTierId = 'tier_1' | 'tier_2' | 'tier_3' | 'tier_4';
@@ -57,7 +58,7 @@ const resolveProgressPct = (score: number, tier: MissionMilestoneTier, nextTier:
 const resolveNextUnlockHint = (
   score: number,
   nextTier: MissionMilestoneTier | null,
-  competency: CompetencySnapshot,
+  domainProgress: DomainProgressSnapshot,
   progression: DebriefProgression,
   archetype?: ArchetypeDefinition,
 ): string => {
@@ -69,28 +70,31 @@ const resolveNextUnlockHint = (
     return `Increase readiness to ${nextTier.minScore} to unlock ${nextTier.label}.`;
   }
 
-  // Stage 22: archetype-specific gate checks override the hardcoded dimension thresholds
+  // Domain-based gate checks using archetype core/secondary modules
   if (archetype) {
     if (nextTier.id === 'tier_3') {
-      const { dimension, threshold } = archetype.tier3Gate;
-      if (competency.dimensionScores[dimension] < threshold) {
-        return `Increase ${dimension.replace(/_/g, ' ')} competency to ${threshold} to unlock ${nextTier.label}.`;
+      const coreAvg = averageDomainScore(domainProgress, archetype.coreModules);
+      const threshold = archetype.tier3Gate.threshold;
+      if (coreAvg < threshold) {
+        return `Increase core domain average to ${threshold} to unlock ${nextTier.label}. Current: ${coreAvg}.`;
       }
     }
     if (nextTier.id === 'tier_4') {
-      const { dimension, threshold } = archetype.tier4Gate;
-      if (competency.dimensionScores[dimension] < threshold) {
-        return `Increase ${dimension.replace(/_/g, ' ')} competency to ${threshold} to unlock ${nextTier.label}.`;
+      const allModules = [...archetype.coreModules, ...archetype.secondaryModules];
+      const allAvg = averageDomainScore(domainProgress, allModules);
+      const threshold = archetype.tier4Gate.threshold;
+      if (allAvg < threshold) {
+        return `Increase archetype domain average to ${threshold} to unlock ${nextTier.label}. Current: ${allAvg}.`;
       }
     }
   } else {
-    // Legacy hardcoded gates
-    if (nextTier.id === 'tier_3' && competency.dimensionScores.signal_analysis < 65) {
-      return 'Increase signal analysis competency to 65 by resolving more high-value signals.';
+    // Legacy gates — use composite domain score
+    if (nextTier.id === 'tier_3' && domainProgress.weightedScore < 65) {
+      return 'Increase domain progress to 65 by training across more disciplines.';
     }
 
-    if (nextTier.id === 'tier_4' && competency.dimensionScores.artifact_traceability < 70) {
-      return 'Increase artifact traceability competency to 70 by completing artifact-chain drills.';
+    if (nextTier.id === 'tier_4' && domainProgress.weightedScore < 70) {
+      return 'Increase domain progress to 70 by deepening training across disciplines.';
     }
   }
 
@@ -103,7 +107,7 @@ const resolveNextUnlockHint = (
 
 export const computeMissionMilestoneProgress = (
   score: number,
-  competency: CompetencySnapshot,
+  domainProgress: DomainProgressSnapshot,
   progression: DebriefProgression,
   archetype?: ArchetypeDefinition,
 ): MissionMilestoneProgress => {
@@ -135,6 +139,6 @@ export const computeMissionMilestoneProgress = (
     progressPct: resolveProgressPct(score, tier, nextTier),
     unlocked: true,
     nextTier,
-    nextUnlockHint: resolveNextUnlockHint(score, nextTier, competency, progression, archetype),
+    nextUnlockHint: resolveNextUnlockHint(score, nextTier, domainProgress, progression, archetype),
   };
 };

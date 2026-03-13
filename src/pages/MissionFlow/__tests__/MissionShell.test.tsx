@@ -34,6 +34,13 @@ vi.mock('react-router-dom', () => ({
 vi.mock('../../../utils/telemetry', () => ({ trackEvent: vi.fn() }));
 vi.mock('../../../hooks/useMissionFlowContinuity', () => ({ useMissionFlowContinuity: () => ({ routeSearch: '' }) }));
 vi.mock('../../../hooks/useIsMobile', () => ({ default: () => false }));
+vi.mock('../../../cache/TrainingModuleCache', () => ({
+  default: {
+    getInstance: vi.fn(() => ({
+      selectModules: vi.fn(),
+    })),
+  },
+}));
 vi.mock('../../../store/missionFlow/continuity', () => ({
   readMissionFlowContext: vi.fn(() => ({ operationId: 'op-1', caseId: 'c-1', signalId: 's-1' })),
 }));
@@ -71,7 +78,7 @@ describe('MissionShell', () => {
   it('renders step tools with current/next step badges', () => {
     render(<MissionShell />);
     expect(screen.getByText(/Current Step:.*Brief/)).toBeTruthy();
-    expect(screen.getByText(/Next Step:.*Triage/)).toBeTruthy();
+    expect(screen.getByText(/Next Step:.*Training/)).toBeTruthy();
   });
 
   it('renders main content area with Outlet', () => {
@@ -96,8 +103,8 @@ describe('MissionShell', () => {
 
   it('Continue to next step navigates', () => {
     render(<MissionShell />);
-    fireEvent.click(screen.getByText(/Continue to Triage/));
-    expect(mockNavigate).toHaveBeenCalledWith(expect.objectContaining({ pathname: '/mission/triage' }));
+    fireEvent.click(screen.getByText(/Continue to Training/));
+    expect(mockNavigate).toHaveBeenCalledWith(expect.objectContaining({ pathname: '/mission/training' }));
   });
 
   it('⌘K keyboard shortcut opens action palette', () => {

@@ -1,7 +1,7 @@
 import { trackEvent } from '../utils/telemetry';
 import { createStore } from './createStore';
 
-type DrillStep = { id: string; label: string; done: boolean };
+type DrillStep = { id: string; label: string; done: boolean; cardId?: string; routePath?: string };
 
 export type DrillRunState = {
   drillId: string;
@@ -53,11 +53,11 @@ export const DrillRunStore = {
     return runStore.get();
   },
 
-  start(drillId: string, title: string, steps: { id: string; label: string }[]) {
+  start(drillId: string, title: string, steps: { id: string; label: string; cardId?: string; routePath?: string }[]) {
     const state: DrillRunState = {
       drillId,
       title,
-      steps: steps.map((s) => ({ ...s, done: false })),
+      steps: steps.map((s) => ({ id: s.id, label: s.label, done: false, cardId: s.cardId, routePath: s.routePath })),
       startedAt: Date.now(),
       updatedAt: Date.now(),
       completed: false,

@@ -22,6 +22,7 @@ import OperativeProfileStore from '../../store/OperativeProfileStore';
 import type { ArchetypeDefinition } from '../../data/archetypes';
 import { getArchetypeHints } from '../../utils/archetypeHints';
 import CelebrationLayer from '../../components/CelebrationLayer/CelebrationLayer';
+import TrainingModuleCache from '../../cache/TrainingModuleCache';
 
 const coreTabs: Array<{ path: MissionRoutePath; label: string; icon: string }> = [
   { path: '/mission/brief', label: 'Brief', icon: missionEntityIcons.operation },
@@ -38,6 +39,10 @@ const statsTab: { path: MissionRoutePath; label: string; icon: string } = {
 
 const planTab: { path: MissionRoutePath; label: string; icon: string } = {
   path: '/mission/plan', label: 'Plan', icon: '📅',
+};
+
+const trainingTab: { path: MissionRoutePath; label: string; icon: string } = {
+  path: '/mission/training', label: 'Training', icon: '📚',
 };
 
 type GuidanceMode = 'assist' | 'ops';
@@ -83,6 +88,11 @@ const assistantHints: Partial<Record<MissionRoutePath, { sopPrompt: string; cont
     contextHint: 'Use the plan view to see your week at a glance and ensure balanced training load.',
     nextActionHint: 'When your plan is set, head to Checklist to execute today\'s drills.',
   },
+  '/mission/training': {
+    sopPrompt: 'SOP: Browse training modules, explore card decks, and launch focused drills.',
+    contextHint: 'Select modules and decks to tailor your training across 19 operational disciplines.',
+    nextActionHint: 'Pick a module or deck and start a training drill to build domain competency.',
+  },
 };
 
 const MissionShell: React.FC = () => {
@@ -120,7 +130,8 @@ const MissionShell: React.FC = () => {
         ...(statsSurfaceEnabled ? [statsTab] : []),
         ...(planSurfaceEnabled ? [planTab] : []),
       ];
-      return [...coreTabs, ...extra];
+      // Training tab at position 2 (after Brief) — it's the core value proposition
+      return [coreTabs[0], trainingTab, ...coreTabs.slice(1), ...extra];
     },
     [statsSurfaceEnabled, planSurfaceEnabled],
   );
@@ -356,6 +367,32 @@ const MissionShell: React.FC = () => {
     });
   };
 
+  /** Fast-path: skip all onboarding gates and go straight to training. */
+  const jumpToTraining = () => {
+    // Dismiss all gates
+    if (typeof window !== 'undefined') {
+      window.localStorage.setItem(guidanceOverlayStorageKey, 'seen');
+      window.localStorage.setItem(intakeStorageKey, 'seen');
+      // 5.4.1.5: Mark that the user fast-pathed so we can prompt for archetype after first drill
+      window.localStorage.setItem('mission:fast-path:v1', 'active');
+    }
+    setShowGuidanceOverlay(false);
+    setShowArchetypePicker(false);
+    setShowHandlerPicker(false);
+    setShowIntake(false);
+    navigateWithContext('/mission/training');
+    trackEvent({
+      category: 'ia',
+      action: 'tab_view',
+      route: '/mission/training',
+      data: {
+        kind: 'onboarding_fast_path',
+        skippedArchetype: true,
+      },
+      source: 'ui',
+    });
+  };
+
   // Phase 1.2 + 1.4: Determine onboarding state for sequenced rendering.
   // Guidance overlay shows first; intake shows only after overlay is dismissed.
   // While either onboarding surface is active, hide all shell chrome (MissionHeader,
@@ -369,20 +406,19 @@ const MissionShell: React.FC = () => {
       <CelebrationLayer />
       <div className={styles.shell}>
         {showGuidanceOverlay && (
-          <section className={styles.guidanceOverlay} role="dialog" aria-label="Guided training quick start">
-            <h2 className={styles.guidanceTitle}>Guided Training Quick Start</h2>
+          <section className={styles.guidanceOverlay} role="dialog" aria-label="Welcome">
+            <h2 className={styles.guidanceTitle}>Train 19 Disciplines. Track Your Growth.</h2>
             <p className={styles.guidanceBody}>
-              Assist mode is enabled for first-time operators. You will see SOP prompts, context hints, and explicit next-action guidance on each mission step.
+              Cybersecurity, intelligence, fitness, martial arts, and more — 4,300+ training cards with spaced repetition that adapts to what you know.
             </p>
             <ul className={styles.guidanceList}>
-              {!isMobile && <li><strong>⌘/Ctrl + K</strong>: Open mission action palette.</li>}
-              <li><strong>Esc</strong>: Close action palette and overlays.</li>
-              <li><strong>Assist/Ops toggle</strong>: Switch between guided and compact operating modes.</li>
+              <li><strong>Smart scheduling</strong> — the app prioritises cards you're about to forget.</li>
+              <li><strong>Works offline</strong> — train anywhere, no connection needed.</li>
+              <li><strong>Your pace</strong> — track XP, streaks, and domain mastery over time.</li>
             </ul>
             <div className={styles.guidanceActions}>
-              <button type="button" className={styles.stepButton} onClick={() => updateGuidanceMode('assist')}>Stay in Assist Mode</button>
-              <button type="button" className={styles.stepButton} onClick={() => updateGuidanceMode('ops')}>Switch to Ops Mode</button>
-              <button type="button" className={styles.stepButton} onClick={dismissGuidanceOverlay}>Continue</button>
+              <button type="button" className={styles.stepButton} onClick={jumpToTraining}>Start Training Now</button>
+              <button type="button" className={styles.stepButton} onClick={dismissGuidanceOverlay}>Choose Your Focus First</button>
             </div>
           </section>
         )}
@@ -424,8 +460,16 @@ const MissionShell: React.FC = () => {
                 callsign: '',
                 enrolledAt: new Date().toISOString(),
               });
+              // 5.4.1.5: Clear fast-path flag now that archetype is selected
+              if (typeof window !== 'undefined') {
+                window.localStorage.removeItem('mission:fast-path:v1');
+              }
+              // Auto-select archetype's core + secondary modules in training cache
+              const cache = TrainingModuleCache.getInstance();
+              if (cache.isLoaded()) {
+                cache.selectModules([...pendingArchetype.coreModules, ...pendingArchetype.secondaryModules]);
+              }
               setShowHandlerPicker(false);
-              // Intake panel shows next (or dismiss it automatically)
               trackEvent({
                 category: 'ia',
                 action: 'tab_view',

@@ -1,8 +1,19 @@
-import { describe, it, expect, vi } from 'vitest';
+import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { MissionSet } from '../../../types/MissionSchedule';
 import { Drill } from '../../../types/DrillCategory';
+
+const mockNavigate = vi.fn();
+vi.mock('react-router-dom', async () => {
+  const actual = await vi.importActual('react-router-dom');
+  return { ...actual, useNavigate: () => mockNavigate };
+});
+
+const mockDrillRunStart = vi.fn();
+vi.mock('../../../store/DrillRunStore', () => ({
+  DrillRunStore: { start: (...args: unknown[]) => mockDrillRunStart(...args) },
+}));
 
 const todayKey = (() => {
   const d = new Date();
@@ -76,6 +87,8 @@ describe('PlanSurface', () => {
       difficultySettings: {},
     };
     mockCreateNewSchedule.mockClear();
+    mockNavigate.mockClear();
+    mockDrillRunStart.mockClear();
   });
   it('renders the heading', () => {
     renderSurface();
@@ -179,5 +192,39 @@ describe('PlanSurface', () => {
       fireEvent.click(otherCell);
       expect(screen.getByText('No drills scheduled for this day.')).toBeTruthy();
     }
+  });
+
+  /* ── Phase 4.3: Run-button tests ── */
+
+  it('renders Run button for incomplete drills', () => {
+    renderSurface();
+    // drill1 is completed, drill2 and drill3 are not
+    const runButtons = screen.getAllByText('▶ Run');
+    expect(runButtons).toHaveLength(2);
+  });
+
+  it('does not render Run button for completed drills', () => {
+    renderSurface();
+    // drill1 (Push Ups) is completed — no Run button next to it
+    const pushUpsItem = screen.getByText('Push Ups').closest('li');
+    expect(pushUpsItem?.querySelector('[data-testid^="run-drill-"]')).toBeNull();
+  });
+
+  it('Run button has accessible label', () => {
+    renderSurface();
+    expect(screen.getByLabelText('Run Squats')).toBeTruthy();
+    expect(screen.getByLabelText('Run Plank Hold')).toBeTruthy();
+  });
+
+  it('clicking Run starts DrillRunStore and navigates to checklist', () => {
+    renderSurface();
+    const runBtn = screen.getByTestId('run-drill-1'); // drill2 (idx 1, first incomplete in list)
+    fireEvent.click(runBtn);
+    expect(mockDrillRunStart).toHaveBeenCalledWith(
+      drill2.id,
+      drill2.name,
+      [{ id: `plan-${drill2.id}`, label: drill2.name }],
+    );
+    expect(mockNavigate).toHaveBeenCalledWith('/mission/checklist');
   });
 });

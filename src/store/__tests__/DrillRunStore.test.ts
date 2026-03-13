@@ -72,4 +72,30 @@ describe('DrillRunStore', () => {
   it('flushTelemetry does not throw when queue is empty', () => {
     expect(() => DrillRunStore.flushTelemetry()).not.toThrow();
   });
+
+  // ── Extended fields (cardId, routePath) ──
+
+  it('start persists optional cardId and routePath on steps', () => {
+    const extendedSteps = [
+      { id: 's1', label: 'Step 1', cardId: 'card-abc', routePath: '/mission/brief' },
+      { id: 's2', label: 'Step 2' }, // no cardId — should be undefined
+    ];
+    DrillRunStore.start('d6', 'Drill Six', extendedSteps);
+    const state = DrillRunStore.get()!;
+    expect(state.steps[0].cardId).toBe('card-abc');
+    expect(state.steps[0].routePath).toBe('/mission/brief');
+    expect(state.steps[1].cardId).toBeUndefined();
+    expect(state.steps[1].routePath).toBeUndefined();
+  });
+
+  it('toggleStep preserves cardId and routePath', () => {
+    const extendedSteps = [
+      { id: 's1', label: 'Step 1', cardId: 'card-xyz' },
+    ];
+    DrillRunStore.start('d7', 'Drill Seven', extendedSteps);
+    DrillRunStore.toggleStep('s1');
+    const state = DrillRunStore.get()!;
+    expect(state.steps[0].done).toBe(true);
+    expect(state.steps[0].cardId).toBe('card-xyz');
+  });
 });

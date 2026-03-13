@@ -1,10 +1,19 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { MissionKitStore } from '../MissionKitStore';
+import type { MissionKit } from '../../data/missionKits/sampleMissionKit';
+
+vi.mock('../../utils/missionKitGenerator', () => ({
+  generateMissionKit: vi.fn(() => null), // default: no generated kit
+}));
+
+import { generateMissionKit } from '../../utils/missionKitGenerator';
+const mockGenerate = vi.mocked(generateMissionKit);
 
 describe('MissionKitStore', () => {
   beforeEach(() => {
     localStorage.clear();
     vi.restoreAllMocks();
+    MissionKitStore.regenerateKit(); // reset session cache between tests
   });
 
   afterEach(() => {
@@ -65,5 +74,77 @@ describe('MissionKitStore', () => {
     const stored = JSON.parse(localStorage.getItem('ptb:drill-stats')!);
     // (0.5 * 0 + 1) / 1 = 1, then (1 * 1 + 1) / 2 = 1, then (1 * 2 + 0) / 3 = 0.67
     expect(stored['d'].successRate).toBeCloseTo(0.67, 1);
+  });
+
+  /* ── Phase 4.3: getPrimaryKit prefers generated kit ── */
+
+  it('getPrimaryKit returns generated kit when available', () => {
+    const fakeKit: MissionKit = {
+      id: 'generated-test',
+      title: 'Dynamic Training Kit',
+      synopsis: 'Test kit',
+      missionType: 'cyber',
+      drills: [
+        { id: 'gen-drill-1', title: 'Cyber Drill', type: 'rapid-response', difficulty: 3, durationMinutes: 10, moduleId: 'cybersecurity' },
+      ],
+    };
+    mockGenerate.mockReturnValue(fakeKit);
+    const primary = MissionKitStore.getPrimaryKit();
+    expect(primary).toBeDefined();
+    expect(primary!.id).toBe('generated-test');
+    expect(primary!.title).toBe('Dynamic Training Kit');
+  });
+
+  it('getPrimaryKit returns same cached kit on repeated calls', () => {
+    const fakeKit: MissionKit = {
+      id: 'cached-kit',
+      title: 'Cached Kit',
+      synopsis: 'Test',
+      missionType: 'cyber',
+      drills: [{ id: 'gen-drill-c', title: 'D', type: 'rapid-response', difficulty: 3, durationMinutes: 5 }],
+    };
+    mockGenerate.mockReturnValue(fakeKit);
+    const first = MissionKitStore.getPrimaryKit();
+    const second = MissionKitStore.getPrimaryKit();
+    expect(first!.id).toBe('cached-kit');
+    expect(second!.id).toBe('cached-kit');
+    // generateMissionKit should only be called once because of caching
+    expect(mockGenerate).toHaveBeenCalledTimes(1);
+  });
+
+  it('regenerateKit clears the cache so next getPrimaryKit re-generates', () => {
+    mockGenerate.mockReturnValue({ id: 'kit-a', title: 'A', synopsis: '', missionType: 'cyber', drills: [] });
+    MissionKitStore.getPrimaryKit();
+    expect(mockGenerate).toHaveBeenCalledTimes(1);
+    MissionKitStore.regenerateKit();
+    mockGenerate.mockReturnValue({ id: 'kit-b', title: 'B', synopsis: '', missionType: 'cyber', drills: [] });
+    const refreshed = MissionKitStore.getPrimaryKit();
+    expect(mockGenerate).toHaveBeenCalledTimes(2);
+    expect(refreshed!.id).toBe('kit-b');
+  });
+
+  it('getPrimaryKit falls back to sample kit when generator returns null', () => {
+    mockGenerate.mockReturnValue(null);
+    const primary = MissionKitStore.getPrimaryKit();
+    expect(primary).toBeDefined();
+    // The sample kit has a known title
+    expect(primary!.drills.length).toBeGreaterThan(0);
+  });
+
+  it('getPrimaryKit applies drill stats to generated kit', () => {
+    MissionKitStore.recordDrillCompletion('gen-drill-stats', true);
+    const fakeKit: MissionKit = {
+      id: 'generated-stats-test',
+      title: 'Stats Kit',
+      synopsis: 'Test',
+      missionType: 'cyber',
+      drills: [
+        { id: 'gen-drill-stats', title: 'Stat Drill', type: 'rapid-response', difficulty: 3, durationMinutes: 10, moduleId: 'cybersecurity' },
+      ],
+    };
+    mockGenerate.mockReturnValue(fakeKit);
+    const primary = MissionKitStore.getPrimaryKit();
+    expect(primary!.drills[0].lastCompleted).toBeDefined();
+    expect(primary!.drills[0].successRate).toBe(1);
   });
 });

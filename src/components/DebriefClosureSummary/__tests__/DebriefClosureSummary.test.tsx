@@ -19,13 +19,13 @@ vi.mock('../../../store/missionFlow/continuity', () => ({
 vi.mock('../../../utils/readiness/model', () => ({
   computeReadiness: vi.fn((_: unknown, opts: { debriefOutcomes: unknown[] }) => ({
     score: opts.debriefOutcomes.length > 0 ? 72 : 60,
-    competency: {
-      dimensionScores: {
-        triage_execution: 80,
-        signal_analysis: 65,
-        artifact_traceability: 90,
-        decision_quality: 55,
-      },
+    domainProgress: {
+      weightedScore: 72,
+      domains: [
+        { domainId: 'espionage', domainName: 'Espionage', score: 90, drillCount: 8, avgAssessment: 4.5, uniqueDrills: 5, lastActiveDate: null, trend: null, coverageRatio: null },
+        { domainId: 'cybersecurity', domainName: 'Cybersecurity', score: 65, drillCount: 3, avgAssessment: 3.5, uniqueDrills: 2, lastActiveDate: null, trend: null, coverageRatio: null },
+        { domainId: 'combat', domainName: 'Combat', score: 55, drillCount: 2, avgAssessment: 3, uniqueDrills: 1, lastActiveDate: null, trend: null, coverageRatio: null },
+      ],
     },
   })),
 }));
@@ -37,10 +37,10 @@ describe('DebriefClosureSummary', () => {
     expect(screen.getByText('+12')).toBeTruthy();
   });
 
-  it('shows strongest and weakest competency', () => {
+  it('shows strongest and weakest domain', () => {
     render(<DebriefClosureSummary />);
-    expect(screen.getByText(/Artifact Traceability/)).toBeTruthy();
-    expect(screen.getByText(/Decision Quality/)).toBeTruthy();
+    expect(screen.getByText(/Espionage/)).toBeTruthy();
+    expect(screen.getByText(/Combat/)).toBeTruthy();
     expect(screen.getByText(/Focus next/)).toBeTruthy();
   });
 

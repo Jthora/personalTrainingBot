@@ -11,7 +11,7 @@ const MissionKitPanel: React.FC = () => {
   const [visible, setVisible] = useState(() => MissionKitStore.isVisible());
   const navigate = useNavigate();
 
-  const startDrill = (drillId: string, title: string, steps?: Array<{ id: string; label: string }>) => {
+  const startDrill = (drillId: string, title: string, steps?: Array<{ id: string; label: string; cardId?: string; routePath?: string }>) => {
     DrillRunStore.start(drillId, title, [
       ...(steps ?? [
         { id: `${drillId}-prep`, label: 'Prep: review scenario' },

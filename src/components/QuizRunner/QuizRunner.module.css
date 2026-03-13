@@ -1,0 +1,343 @@
+/* QuizRunner — Quiz mode styling */
+
+.runner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* ── Progress bar ── */
+
+.progressBar {
+  width: 100%;
+  height: 4px;
+  background: var(--border-subtle, #2a2a4a);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--accent, #6c63ff);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+/* ── Header ── */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.counter {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary, #e0e0e0);
+}
+
+.score {
+  font-size: 0.8rem;
+  color: var(--text-muted, #888);
+}
+
+.cancelBtn {
+  font-size: 0.8rem;
+  color: var(--text-muted, #888);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* ── Question card ── */
+
+.questionCard {
+  background: var(--surface-raised, #1a1a2e);
+  border: 1px solid var(--border-subtle, #2a2a4a);
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.prompt {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text-primary, #e0e0e0);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.sourceTag {
+  font-size: 0.7rem;
+  color: var(--text-muted, #888);
+  font-style: italic;
+}
+
+/* ── Options (MC + TF) ── */
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.option {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-subtle, #2a2a4a);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-primary, #e0e0e0);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+  line-height: 1.4;
+}
+
+.option:hover:not(:disabled) {
+  border-color: var(--accent, #6c63ff);
+}
+
+.optionSelected {
+  border-color: var(--accent, #6c63ff);
+  background: rgba(108, 99, 255, 0.1);
+}
+
+.optionCorrect {
+  border-color: var(--success, #4caf50);
+  background: rgba(76, 175, 80, 0.15);
+}
+
+.optionIncorrect {
+  border-color: var(--error, #f44336);
+  background: rgba(244, 67, 54, 0.1);
+}
+
+/* ── Fill-blank ── */
+
+.fillForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.fillInput {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--border-subtle, #2a2a4a);
+  border-radius: 6px;
+  background: var(--surface-base, #0f0f1a);
+  color: var(--text-primary, #e0e0e0);
+  font-size: 0.9rem;
+}
+
+.fillInput:focus {
+  border-color: var(--accent, #6c63ff);
+  outline: none;
+}
+
+.feedbackAnswer {
+  font-size: 0.85rem;
+  color: var(--text-secondary, #aaa);
+  margin: 0;
+  font-style: italic;
+}
+
+/* ── Term match ── */
+
+.matchGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.matchColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.matchColumn h4 {
+  font-size: 0.8rem;
+  color: var(--text-muted, #888);
+  margin: 0;
+}
+
+.matchItem {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border-subtle, #2a2a4a);
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: var(--text-primary, #e0e0e0);
+}
+
+.matchSelectable {
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.15s;
+}
+
+.matchSelectable:hover:not(:disabled) {
+  border-color: var(--accent, #6c63ff);
+}
+
+/* ── Hints ── */
+
+.hints {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.hint {
+  font-size: 0.8rem;
+  color: var(--text-secondary, #aaa);
+  margin: 0;
+  padding: 0.4rem 0.6rem;
+  background: rgba(108, 99, 255, 0.05);
+  border-radius: 4px;
+}
+
+.hintBtn {
+  font-size: 0.8rem;
+  color: var(--accent, #6c63ff);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  align-self: flex-start;
+  padding: 0;
+}
+
+/* ── Feedback ── */
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.feedbackCorrect {
+  color: var(--success, #4caf50);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.feedbackIncorrect {
+  color: var(--error, #f44336);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* ── Buttons ── */
+
+.primaryBtn {
+  padding: 0.6rem 1.25rem;
+  border: none;
+  border-radius: 6px;
+  background: var(--accent, #6c63ff);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  align-self: center;
+}
+
+.primaryBtn:hover {
+  opacity: 0.85;
+}
+
+.primaryBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ── Results screen ── */
+
+.resultsTitle {
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--text-primary, #e0e0e0);
+  margin: 0;
+}
+
+.scoreCircle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 1.5rem;
+}
+
+.scorePct {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--accent, #6c63ff);
+}
+
+.scoreLabel {
+  font-size: 0.9rem;
+  color: var(--text-muted, #888);
+}
+
+/* ── Review list ── */
+
+.reviewList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.reviewItem {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-subtle, #2a2a4a);
+}
+
+.reviewCorrect {
+  border-left: 3px solid var(--success, #4caf50);
+}
+
+.reviewIncorrect {
+  border-left: 3px solid var(--error, #f44336);
+}
+
+.reviewIcon {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.reviewContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.reviewPrompt {
+  font-size: 0.85rem;
+  color: var(--text-primary, #e0e0e0);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.reviewAnswer {
+  font-size: 0.8rem;
+  color: var(--text-secondary, #aaa);
+  margin: 0;
+  font-style: italic;
+}

@@ -9,40 +9,30 @@ type MissionIntakePanelProps = {
 const MissionIntakePanel: React.FC<MissionIntakePanelProps> = ({ onStartBriefing, onDismiss }) => {
   return (
     <section className={styles.card} aria-label="Mission intake">
-      <p className={styles.eyebrow}>Archangel Knights Intake</p>
-      <h2 className={styles.title}>Psi Operative Super Hero Cyber Investigator Training</h2>
+      <p className={styles.eyebrow}>Welcome</p>
+      <h2 className={styles.title}>Your Training Hub</h2>
       <p className={styles.body}>
-        You are entering the Advanced Internship mission flow. Use this console to assess signals, investigate cases,
-        and deliver debrief-quality outcomes.
+        This is your daily training console. Start drills, track progress across 19 disciplines, and build real competency over time.
       </p>
 
       <div className={styles.grid}>
         <article className={styles.block}>
-          <h3 className={styles.blockTitle}>Who this is for</h3>
-          <p className={styles.blockBody}>Operatives enrolled in the Archangel Knights Advanced Internship Training Program.</p>
+          <h3 className={styles.blockTitle}>How it works</h3>
+          <p className={styles.blockBody}>Pick a module, review training cards, rate your understanding, and the app schedules your next review automatically.</p>
         </article>
         <article className={styles.block}>
-          <h3 className={styles.blockTitle}>Objective</h3>
-          <p className={styles.blockBody}>Complete one mission cycle from Brief to Debrief with clear, evidence-backed decisions.</p>
+          <h3 className={styles.blockTitle}>Your first session</h3>
+          <p className={styles.blockBody}>Start with &ldquo;Today&rsquo;s Training&rdquo; on the Brief page — it picks the best cards for you right now.</p>
         </article>
         <article className={styles.block}>
-          <h3 className={styles.blockTitle}>Session outcome</h3>
-          <p className={styles.blockBody}>Leave this session with triaged signals, case findings, and a completed after-action report.</p>
+          <h3 className={styles.blockTitle}>Track your growth</h3>
+          <p className={styles.blockBody}>Earn XP, maintain streaks, unlock badges, and watch your domain scores climb in the Stats tab.</p>
         </article>
-      </div>
-
-      <div className={styles.metrics}>
-        <h3 className={styles.blockTitle}>Mission chips explained</h3>
-        <ul className={styles.metricList}>
-          <li>📅 Left: drills still queued for this cycle.</li>
-          <li>🎚️ L#: your current training intensity level.</li>
-          <li>⚖️ Aligned/Check mix: whether your current drill mix matches mission targets.</li>
-        </ul>
       </div>
 
       <div className={styles.actions}>
-        <button type="button" className={styles.primary} onClick={onStartBriefing}>Start Briefing</button>
-        <button type="button" className={styles.secondary} onClick={onDismiss}>Dismiss</button>
+        <button type="button" className={styles.primary} onClick={onStartBriefing}>Start Training</button>
+        <button type="button" className={styles.secondary} onClick={onDismiss}>Skip</button>
       </div>
     </section>
   );

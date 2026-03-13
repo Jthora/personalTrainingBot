@@ -360,6 +360,24 @@ export class TrainingModuleCache {
     public getCardIdBySlug(slug: string): string | undefined {
         return this.slugToCardId.get(slug);
     }
+
+    /**
+     * Count total cards + total decks for a given module (domain).
+     * Returns { totalCards: 0, totalDecks: 0 } if the module is not loaded.
+     */
+    public getModuleStats(moduleId: string): { totalCards: number; totalDecks: number } {
+        const mod = this.cache.get(moduleId);
+        if (!mod) return { totalCards: 0, totalDecks: 0 };
+        let totalCards = 0;
+        let totalDecks = 0;
+        for (const sub of mod.submodules) {
+            for (const deck of sub.cardDecks) {
+                totalDecks++;
+                totalCards += deck.cards.length;
+            }
+        }
+        return { totalCards, totalDecks };
+    }
 }
 
 export default TrainingModuleCache;

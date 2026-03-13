@@ -1,10 +1,12 @@
-import React, { useMemo, useState } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from './MissionFlow.module.css';
 import planStyles from './PlanSurface.module.css';
 import useMissionSchedule from '../../hooks/useMissionSchedule';
 import CustomMissionSchedulesStore from '../../store/CustomMissionSchedulesStore';
 import UserProgressStore from '../../store/UserProgressStore';
 import { MissionSet, MissionBlock } from '../../types/MissionSchedule';
+import { DrillRunStore } from '../../store/DrillRunStore';
 
 /** Day-of-week labels (Mon–Sun). */
 const DAY_LABELS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'] as const;
@@ -35,6 +37,7 @@ const formatShortDate = (d: Date): string =>
 
 /** Represents one drill entry for display. */
 interface PlanDrill {
+  id: string;
   name: string;
   duration: string;
   intensity: string;
@@ -64,6 +67,7 @@ const extractItemsForDay = (dayKey: string, schedule: { date: string; scheduleIt
         items.push({
           type: 'drill',
           drill: {
+            id: drill.id,
             name: drill.name,
             duration: drill.duration,
             intensity: drill.intensity,
@@ -83,6 +87,7 @@ const extractItemsForDay = (dayKey: string, schedule: { date: string; scheduleIt
 
 const PlanSurface: React.FC = () => {
   const { schedule, createNewSchedule } = useMissionSchedule();
+  const navigate = useNavigate();
   const today = useMemo(() => new Date(), []);
   const todayKey = formatDateKey(today);
   const weekDates = useMemo(() => getWeekDates(today), [today]);
@@ -127,6 +132,12 @@ const PlanSurface: React.FC = () => {
   const handleRegenerate = () => {
     createNewSchedule();
   };
+
+  const handleRunDrill = useCallback((drill: PlanDrill) => {
+    const steps = [{ id: `plan-${drill.id}`, label: drill.name }];
+    DrillRunStore.start(drill.id, drill.name, steps);
+    navigate('/mission/checklist');
+  }, [navigate]);
 
   return (
     <section id="section-mission-plan" className={styles.surface} aria-label="Training Plan">
@@ -224,6 +235,17 @@ const PlanSurface: React.FC = () => {
                         {item.drill.duration} · {item.drill.intensity}
                       </div>
                     </div>
+                    {!item.drill.completed && (
+                      <button
+                        type="button"
+                        className={planStyles.actionBtn}
+                        onClick={() => handleRunDrill(item.drill)}
+                        data-testid={`run-drill-${idx}`}
+                        aria-label={`Run ${item.drill.name}`}
+                      >
+                        ▶ Run
+                      </button>
+                    )}
                   </li>
                 );
               }

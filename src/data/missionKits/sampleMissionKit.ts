@@ -5,6 +5,8 @@ import { operationCharlieStepSequence } from '../../domain/mission/exemplars/ope
 export type DrillStep = {
   id: string;
   label: string;
+  cardId?: string;
+  routePath?: string;
 };
 
 export type Drill = {
@@ -16,6 +18,8 @@ export type Drill = {
   steps?: DrillStep[];
   lastCompleted?: string; // ISO date
   successRate?: number; // 0-1
+  /** Training module ID for domain attribution (e.g. 'cybersecurity'). */
+  moduleId?: string;
 };
 
 export type MissionKit = {

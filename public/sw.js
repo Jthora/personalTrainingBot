@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'v4';
+const CACHE_VERSION = 'v5';
 const CACHE_PREFIX = 'ptb-sw';
 const PRECACHE_NAME = `${CACHE_PREFIX}-precache-${CACHE_VERSION}`;
 const RUNTIME_NAME = `${CACHE_PREFIX}-runtime-${CACHE_VERSION}`;
@@ -8,7 +8,25 @@ const PRECACHE_URLS = [
   '/',
   NAV_FALLBACK,
   '/training_modules_manifest.json',
+  '/training_modules_shards/agencies.json',
+  '/training_modules_shards/anti_psn.json',
+  '/training_modules_shards/anti_tcs_idc_cbc.json',
+  '/training_modules_shards/combat.json',
+  '/training_modules_shards/counter_biochem.json',
+  '/training_modules_shards/counter_psyops.json',
+  '/training_modules_shards/cybersecurity.json',
+  '/training_modules_shards/dance.json',
+  '/training_modules_shards/equations.json',
+  '/training_modules_shards/espionage.json',
   '/training_modules_shards/fitness.json',
+  '/training_modules_shards/intelligence.json',
+  '/training_modules_shards/investigation.json',
+  '/training_modules_shards/martial_arts.json',
+  '/training_modules_shards/psiops.json',
+  '/training_modules_shards/self_sovereignty.json',
+  '/training_modules_shards/space_force.json',
+  '/training_modules_shards/war_strategy.json',
+  '/training_modules_shards/web_three.json',
 ];
 const MEDIA_CACHE_MAX = 40;
 

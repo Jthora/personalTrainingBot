@@ -7,6 +7,7 @@ export const missionRoutePaths = [
   '/mission/debrief',
   '/mission/stats',
   '/mission/plan',
+  '/mission/training',
 ] as const;
 
 export type MissionRoutePath = (typeof missionRoutePaths)[number];
@@ -43,8 +44,8 @@ const missionHomeFallbacks: Partial<Record<MissionRoutePath, string>> = {
 const legacyAliasMap: Record<LegacyAliasPath, string> = {
   '/schedules': '/mission/brief',
   '/drills': '/mission/triage',
-  '/training': '/mission/checklist',
-  '/training/run': '/mission/checklist',
+  '/training': '/mission/training',
+  '/training/run': '/mission/training',
   '/settings': '/mission/debrief',
 };
 

@@ -68,6 +68,7 @@
     "eslint": "^9.19.0",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.18",
+    "fake-indexeddb": "^6.2.5",
     "globals": "^15.14.0",
     "gzip-size": "^7.0.0",
     "jsdom": "^27.0.0",

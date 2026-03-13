@@ -1,0 +1,266 @@
+/* ModuleBrowser — Grid of training module tiles */
+
+.browser {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.75rem;
+}
+
+/* ── Module tile ── */
+
+.tile {
+  background: var(--surface-raised, #1a1a2e);
+  border: 1px solid var(--border-subtle, #2a2a4a);
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.tile:hover {
+  border-color: var(--accent, #6c63ff);
+  box-shadow: 0 2px 8px rgba(108, 99, 255, 0.15);
+}
+
+.tileCore {
+  border-color: var(--accent, #6c63ff);
+  background: var(--surface-raised, #1a1a2e);
+}
+
+.tileSecondary {
+  border-color: var(--accent-muted, #4a4280);
+}
+
+.focusBadge,
+.secondaryBadge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+.focusBadge {
+  background: var(--accent, #6c63ff);
+  color: #fff;
+}
+
+.secondaryBadge {
+  background: var(--accent-muted, #4a4280);
+  color: var(--text-primary, #e0e0e0);
+}
+
+.tileHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.moduleName {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-primary, #e0e0e0);
+  flex: 1;
+}
+
+.selectionToggle {
+  flex-shrink: 0;
+}
+
+.selectionToggle input[type='checkbox'] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: var(--accent, #6c63ff);
+}
+
+.tileStats {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+  color: var(--text-muted, #888);
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.scoreRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.scoreBar {
+  flex: 1;
+  height: 4px;
+  background: var(--border-subtle, #2a2a4a);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.scoreFill {
+  height: 100%;
+  border-radius: 2px;
+  background: var(--accent, #6c63ff);
+  transition: width 0.3s ease;
+}
+
+.selectedCount {
+  font-size: 0.75rem;
+  color: var(--text-muted, #888);
+  text-align: right;
+}
+
+/* ── Deck list within module detail ── */
+
+.deckList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.deckCard {
+  background: var(--surface-raised, #1a1a2e);
+  border: 1px solid var(--border-subtle, #2a2a4a);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.deckHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.deckName {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-primary, #e0e0e0);
+  flex: 1;
+}
+
+.deckMeta {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--text-muted, #888);
+}
+
+.deckDescription {
+  font-size: 0.8rem;
+  color: var(--text-secondary, #aaa);
+  line-height: 1.4;
+}
+
+.deckActions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.trainBtn {
+  padding: 0.35rem 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background: var(--accent, #6c63ff);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.trainBtn:hover {
+  opacity: 0.85;
+}
+
+.trainBtnSecondary {
+  composes: trainBtn;
+  background: transparent;
+  border: 1px solid var(--accent, #6c63ff);
+  color: var(--accent, #6c63ff);
+}
+
+/* ── Card preview row ── */
+
+.cardPreview {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0;
+  font-size: 0.8rem;
+  color: var(--text-secondary, #aaa);
+  border-bottom: 1px solid var(--border-subtle, #2a2a4a);
+}
+
+.cardPreview:last-child {
+  border-bottom: none;
+}
+
+.cardTitle {
+  flex: 1;
+}
+
+.badge {
+  font-size: 0.7rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  background: var(--border-subtle, #2a2a4a);
+  color: var(--text-muted, #888);
+  white-space: nowrap;
+}
+
+/* ── Breadcrumb ── */
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  color: var(--text-muted, #888);
+  margin-bottom: 0.5rem;
+}
+
+.breadcrumbLink {
+  color: var(--accent, #6c63ff);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.breadcrumbLink:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbSep {
+  color: var(--text-muted, #888);
+}
+
+/* ── Empty state ── */
+
+.empty {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-muted, #888);
+  font-size: 0.9rem;
+}

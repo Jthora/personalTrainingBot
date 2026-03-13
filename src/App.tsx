@@ -8,6 +8,7 @@ import { HandlerSelectionProvider } from './context/HandlerSelectionContext';
 import { warmCaches } from './utils/cacheWarmHints';
 import { mark, measure } from './utils/perf';
 import { schedulePostPaintTasks } from './utils/phaseTasks';
+import { restoreIfNeeded } from './utils/backupManager';
 
 const RecapModal = lazy(() => import('./components/RecapModal/RecapModal'));
 const RecapToast = lazy(() => import('./components/RecapToast/RecapToast'));
@@ -36,6 +37,11 @@ const App: React.FC = () => {
     if (!initializationPromise) {
       const initializeData = async () => {
         console.log('App: Initializing data...');
+        // Restore user data from IndexedDB if localStorage was cleared
+        const restored = await restoreIfNeeded();
+        if (restored > 0) {
+          console.log(`App: Restored ${restored} store(s) from IndexedDB backup`);
+        }
         await InitialDataLoader.initialize(
           (progress) => setLoadingProgress(progress),
           (message) => console.warn(message)

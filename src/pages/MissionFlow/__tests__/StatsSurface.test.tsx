@@ -32,14 +32,14 @@ vi.mock('../../../utils/readiness/model', () => ({
     confidence: 'medium',
     nextActions: [],
     kit: { id: 'test-kit', title: 'Test Kit', drills: [] },
-    competency: {
+    domainProgress: {
       weightedScore: 68,
-      dimensionScores: {
-        triage_execution: 75,
-        signal_analysis: 62,
-        artifact_traceability: 70,
-        decision_quality: 55,
-      },
+      domains: [
+        { domainId: 'combat', domainName: 'Combat', score: 75, drillCount: 5, avgAssessment: 4, uniqueDrills: 3, lastActiveDate: null },
+        { domainId: 'fitness', domainName: 'Fitness', score: 62, drillCount: 3, avgAssessment: 3.5, uniqueDrills: 2, lastActiveDate: null },
+        { domainId: 'cybersecurity', domainName: 'Cybersecurity', score: 70, drillCount: 4, avgAssessment: 3.8, uniqueDrills: 3, lastActiveDate: null },
+        { domainId: 'psiops', domainName: 'Psiops', score: 55, drillCount: 1, avgAssessment: 2.5, uniqueDrills: 1, lastActiveDate: null },
+      ],
     },
     progression: { appliedDelta: 3, appliedOutcomes: 2, trend: 'improving' },
     milestone: {
@@ -152,9 +152,9 @@ describe('StatsSurface', () => {
     expect(screen.getByText('Tier II · Operator')).toBeTruthy();
   });
 
-  it('renders competency chart section', () => {
+  it('renders domain progress chart section', () => {
     renderSurface();
-    expect(screen.getByText('Competency Breakdown')).toBeTruthy();
+    expect(screen.getByText('Domain Progress')).toBeTruthy();
   });
 
   it('renders badge gallery section', () => {

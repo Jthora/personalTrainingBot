@@ -1,0 +1,75 @@
+.chartContainer {
+  position: relative;
+  width: 100%;
+  padding: 12px 0;
+}
+
+.svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gridLine {
+  stroke: rgba(255, 255, 255, 0.06);
+  stroke-width: 1;
+  stroke-dasharray: 4 3;
+}
+
+.axisLabel {
+  font-size: 9px;
+  fill: rgba(227, 236, 255, 0.5);
+  font-family: inherit;
+}
+
+.dataLine {
+  transition: opacity 0.15s, stroke-width 0.15s;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.emptyMsg {
+  text-align: center;
+  color: rgba(227, 236, 255, 0.5);
+  font-size: 13px;
+  padding: 2rem 1rem;
+}
+
+/* ── Legend ── */
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  padding: 6px 0 0;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  padding: 2px 0;
+  cursor: pointer;
+  font-size: 11px;
+  color: var(--text-secondary, rgba(227, 236, 255, 0.68));
+  transition: opacity 0.15s;
+}
+
+.legendDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.legendLabel {
+  white-space: nowrap;
+}
+
+.legendScore {
+  font-weight: 700;
+  color: var(--text-primary, #E3ECFF);
+  margin-left: 2px;
+}

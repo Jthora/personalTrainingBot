@@ -7,6 +7,7 @@ import { MissionSchedule, MissionSet, MissionBlock } from '../../types/MissionSc
 import { Drill } from '../../types/DrillCategory';
 import { DifficultySetting } from '../../types/DifficultySetting';
 import MissionScheduleStore from '../../store/MissionScheduleStore';
+import DrillHistoryStore from '../../store/DrillHistoryStore';
 import * as Metrics from '../../utils/metrics';
 import * as MissionScheduleCreator from '../../utils/MissionScheduleCreator';
 
@@ -308,5 +309,74 @@ describe('MissionScheduleContext', () => {
         expect(contextValue?.schedule.scheduleItems.length).toBe(0);
         expect(saveSpy).not.toHaveBeenCalled();
         expect(metricSpy).not.toHaveBeenCalledWith('drill_skipped', expect.any(Object));
+    });
+
+    /* ── Phase 4.3 fix: completeCurrentDrill no longer records to DrillHistoryStore ── */
+    /* DrillHistoryStore.record() is now solely handled by DrillRunner.finalizeCompletion(),
+       which carries self-assessment, notes, and correct domainId. completeCurrentDrill()
+       only advances the schedule. */
+
+    it('completeCurrentDrill does not double-record to DrillHistoryStore', async () => {
+        const drillA = new Drill('Recon Sweep', 'desc', '10 min', 'Medium', [1, 3]);
+        const schedule = new MissionSchedule('History', [new MissionSet([[drillA, false]])], new DifficultySetting(1, [1, 3]));
+        vi.spyOn(MissionScheduleStore, 'getSchedule').mockResolvedValue(schedule);
+        vi.spyOn(MissionScheduleStore, 'getScheduleSync').mockReturnValue(schedule);
+        vi.spyOn(MissionScheduleStore, 'saveSchedule').mockImplementation(() => {});
+        vi.spyOn(Metrics, 'recordMetric').mockImplementation(() => {});
+        const recordSpy = vi.spyOn(DrillHistoryStore, 'record');
+
+        let contextValue: ContextValue | undefined;
+        await renderWithProvider(ctx => { contextValue = ctx; });
+
+        await act(async () => {
+            contextValue?.completeCurrentDrill();
+            await flush();
+        });
+
+        // completeCurrentDrill should NOT call DrillHistoryStore.record — DrillRunner handles that
+        expect(recordSpy).not.toHaveBeenCalled();
+    });
+
+    it('completeCurrentDrill with mismatched drillId does not advance schedule', async () => {
+        const drillA = new Drill('Push Ups', 'desc', '10 min', 'Medium', [1, 3]);
+        const schedule = new MissionSchedule('Guard', [new MissionSet([[drillA, false]])], new DifficultySetting(1, [1, 3]));
+        vi.spyOn(MissionScheduleStore, 'getSchedule').mockResolvedValue(schedule);
+        vi.spyOn(MissionScheduleStore, 'getScheduleSync').mockReturnValue(schedule);
+        const saveSpy = vi.spyOn(MissionScheduleStore, 'saveSchedule').mockImplementation(() => {});
+        vi.spyOn(Metrics, 'recordMetric').mockImplementation(() => {});
+
+        let contextValue: ContextValue | undefined;
+        await renderWithProvider(ctx => { contextValue = ctx; });
+
+        await act(async () => {
+            // Pass a card-drill ID that doesn’t match the schedule’s physical drill
+            contextValue?.completeCurrentDrill('gen-drill-cybersecurity-0');
+            await flush();
+        });
+
+        // Schedule should NOT have advanced
+        expect(contextValue?.schedule.scheduleItems.length).toBe(1);
+        expect(saveSpy).not.toHaveBeenCalled();
+    });
+
+    it('completeCurrentDrill with matching drillId advances the schedule', async () => {
+        const drillA = new Drill('Push Ups', 'desc', '10 min', 'Medium', [1, 3]);
+        const schedule = new MissionSchedule('Match', [new MissionSet([[drillA, false]])], new DifficultySetting(1, [1, 3]));
+        vi.spyOn(MissionScheduleStore, 'getSchedule').mockResolvedValue(schedule);
+        vi.spyOn(MissionScheduleStore, 'getScheduleSync').mockReturnValue(schedule);
+        const saveSpy = vi.spyOn(MissionScheduleStore, 'saveSchedule').mockImplementation(() => {});
+        vi.spyOn(Metrics, 'recordMetric').mockImplementation(() => {});
+
+        let contextValue: ContextValue | undefined;
+        await renderWithProvider(ctx => { contextValue = ctx; });
+
+        await act(async () => {
+            contextValue?.completeCurrentDrill(drillA.id);
+            await flush();
+        });
+
+        // Schedule should advance since IDs match
+        expect(contextValue?.schedule.scheduleItems.length).toBe(0);
+        expect(saveSpy).toHaveBeenCalled();
     });
 });

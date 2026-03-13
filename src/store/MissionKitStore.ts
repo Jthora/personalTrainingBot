@@ -1,9 +1,21 @@
 import { sampleMissionKit, type MissionKit, type Drill } from '../data/missionKits/sampleMissionKit';
 import { createStore } from './createStore';
+import { generateMissionKit } from '../utils/missionKitGenerator';
+import TrainingModuleCache from '../cache/TrainingModuleCache';
 
 type DrillStats = Record<string, { lastCompleted: string; successRate: number; completionCount: number }>;
 
 const missionKits: MissionKit[] = [sampleMissionKit];
+
+/** Session-scoped cache for the generated kit. Invalidated on module selection change. */
+let cachedGeneratedKit: MissionKit | null | undefined; // undefined = never generated
+
+// Invalidate the cached kit whenever the user toggles module selections.
+try {
+  TrainingModuleCache.getInstance().subscribeToSelectionChanges(() => {
+    cachedGeneratedKit = undefined;
+  });
+} catch { /* cache not yet initialized — will generate on first getPrimaryKit call */ }
 
 const visibilityStore = createStore<boolean>({
   key: 'missionKit:visible',
@@ -33,7 +45,22 @@ export const MissionKitStore = {
     }));
   },
   getPrimaryKit(): MissionKit | undefined {
+    // Use session-cached generated kit to avoid non-deterministic results on every call.
+    if (cachedGeneratedKit === undefined) {
+      cachedGeneratedKit = generateMissionKit();
+    }
+    if (cachedGeneratedKit) {
+      const stats = statsStore.get();
+      return {
+        ...cachedGeneratedKit,
+        drills: cachedGeneratedKit.drills.map(d => applyDrillStats(d, stats)),
+      };
+    }
     return this.getKits()[0];
+  },
+  /** Force regeneration of the dynamic kit (e.g. after user requests a new kit). */
+  regenerateKit(): void {
+    cachedGeneratedKit = undefined;
   },
   isVisible(): boolean {
     return visibilityStore.get();

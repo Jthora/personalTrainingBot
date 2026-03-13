@@ -52,6 +52,34 @@
 .barIcon {
   font-size: 14px;
   line-height: 1;
+  color: var(--handler-accent, #5a7fff);
+}
+
+.barMeta {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.trendUp {
+  color: #4caf50;
+  font-weight: 700;
+}
+
+.trendDown {
+  color: #f44336;
+  font-weight: 700;
+}
+
+.trendFlat {
+  color: var(--text-tertiary, #999);
+  font-weight: 700;
+}
+
+.coverage {
+  color: var(--text-tertiary, #999);
+  font-weight: 400;
 }
 
 .track {

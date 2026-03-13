@@ -1,0 +1,4283 @@
+{
+  "timestamp": "2026-03-12T22:08:53.081Z",
+  "totals": {
+    "decks": 663,
+    "cards": 3231,
+    "thinDecks": 453,
+    "cardIssues": 35
+  },
+  "issueBreakdown": {
+    "short-description": 35
+  },
+  "domainSummaries": [
+    {
+      "shardId": "psiops",
+      "totalDecks": 24,
+      "totalCards": 92,
+      "thinDecks": 18,
+      "thinCards": 5,
+      "cardsWithoutExercises": 0,
+      "cardsWithoutObjectives": 0,
+      "qualityScore": 95
+    },
+    {
+      "shardId": "fitness",
+      "totalDecks": 36,
+      "totalCards": 72,
+      "thinDecks": 36,
+      "thinCards": 3,
+      "cardsWithoutExercises": 0,
+      "cardsWithoutObjectives": 0,
+      "qualityScore": 96
+    },
+    {
+      "shardId": "agencies",
+      "totalDecks": 15,
+      "totalCards": 30,
+      "thinDecks": 15,
+      "thinCards": 1,
+      "cardsWithoutExercises": 0,
+      "cardsWithoutObjectives": 0,
+      "qualityScore": 97
+    },
+    {
+      "shardId": "combat",
+      "totalDecks": 18,
+      "totalCards": 36,
+      "thinDecks": 18,
+      "thinCards": 1,
+      "cardsWithoutExercises": 0,
+      "cardsWithoutObjectives": 0,
+      "qualityScore": 97
+    },
+    {
+      "shardId": "equations",
+      "totalDecks": 41,
+      "totalCards": 397,
+      "thinDecks": 0,
+      "thinCards": 11,
+      "cardsWithoutExercises": 0,
+      "cardsWithoutObjectives": 0,
+      "qualityScore": 97
+    },
+    {
+      "shardId": "espionage",
+      "totalDecks": 18,
+      "totalCards": 36,
+      "thinDecks": 18,
+      "thinCards": 1,
+      "cardsWithoutExercises": 0,
+      "cardsWithoutObjectives": 0,
+      "qualityScore": 97
+    },
+    {
+      "shardId": "war_strategy",
+      "totalDecks": 18,
+      "totalCards": 36,
+      "thinDecks": 18,
+      "thinCards": 1,
+      "cardsWithoutExercises": 0,
+      "cardsWithoutObjectives": 0,
+      "qualityScore": 97
+    },
+    {
+      "shardId": "dance",
+      "totalDecks": 22,
+      "totalCards": 44,
+      "thinDecks": 22,
+      "thinCards": 1,
+      "cardsWithoutExercises": 0,
+      "cardsWithoutObjectives": 0,
+      "qualityScore": 98
+    },
+    {
+      "shardId": "intelligence",
+      "totalDecks": 19,
+      "totalCards": 181,
+      "thinDecks": 0,
+      "thinCards": 4,
+      "cardsWithoutExercises": 0,
+      "cardsWithoutObjectives": 0,
+      "qualityScore": 98
+    },
+    {
+      "shardId": "web_three",
+      "totalDecks": 18,
+      "totalCards": 54,
+      "thinDecks": 18,
+      "thinCards": 1,
+      "cardsWithoutExercises": 0,
+      "cardsWithoutObjectives": 0,
+      "qualityScore": 98
+    },
+    {
+      "shardId": "anti_psn",
+      "totalDecks": 90,
+      "totalCards": 270,
+      "thinDecks": 90,
+      "thinCards": 4,
+      "cardsWithoutExercises": 0,
+      "cardsWithoutObjectives": 0,
+      "qualityScore": 99
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "totalDecks": 111,
+      "totalCards": 333,
+      "thinDecks": 111,
+      "thinCards": 1,
+      "cardsWithoutExercises": 0,
+      "cardsWithoutObjectives": 0,
+      "qualityScore": 100
+    },
+    {
+      "shardId": "counter_biochem",
+      "totalDecks": 18,
+      "totalCards": 60,
+      "thinDecks": 17,
+      "thinCards": 0,
+      "cardsWithoutExercises": 0,
+      "cardsWithoutObjectives": 0,
+      "qualityScore": 100
+    },
+    {
+      "shardId": "counter_psyops",
+      "totalDecks": 72,
+      "totalCards": 720,
+      "thinDecks": 0,
+      "thinCards": 1,
+      "cardsWithoutExercises": 0,
+      "cardsWithoutObjectives": 0,
+      "qualityScore": 100
+    },
+    {
+      "shardId": "cybersecurity",
+      "totalDecks": 23,
+      "totalCards": 89,
+      "thinDecks": 18,
+      "thinCards": 0,
+      "cardsWithoutExercises": 0,
+      "cardsWithoutObjectives": 0,
+      "qualityScore": 100
+    },
+    {
+      "shardId": "investigation",
+      "totalDecks": 18,
+      "totalCards": 36,
+      "thinDecks": 18,
+      "thinCards": 0,
+      "cardsWithoutExercises": 0,
+      "cardsWithoutObjectives": 0,
+      "qualityScore": 100
+    },
+    {
+      "shardId": "martial_arts",
+      "totalDecks": 36,
+      "totalCards": 72,
+      "thinDecks": 36,
+      "thinCards": 0,
+      "cardsWithoutExercises": 0,
+      "cardsWithoutObjectives": 0,
+      "qualityScore": 100
+    },
+    {
+      "shardId": "self_sovereignty",
+      "totalDecks": 45,
+      "totalCards": 469,
+      "thinDecks": 0,
+      "thinCards": 0,
+      "cardsWithoutExercises": 0,
+      "cardsWithoutObjectives": 0,
+      "qualityScore": 100
+    },
+    {
+      "shardId": "space_force",
+      "totalDecks": 21,
+      "totalCards": 204,
+      "thinDecks": 0,
+      "thinCards": 0,
+      "cardsWithoutExercises": 0,
+      "cardsWithoutObjectives": 0,
+      "qualityScore": 100
+    }
+  ],
+  "deckIssues": [
+    {
+      "shardId": "agencies",
+      "deckId": "agencies_cia_training_counterintelligence_tactics",
+      "deckName": "Counterintelligence Tactics",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "agencies",
+      "deckId": "agencies_cia_training_spy_tradecraft",
+      "deckName": "Spy Tradecraft",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "agencies",
+      "deckId": "agencies_cia_training_undercover_surveillance",
+      "deckName": "Undercover Surveillance",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "agencies",
+      "deckId": "agencies_fbi_training_criminal_profiling_methods",
+      "deckName": "Criminal Profiling Methods",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "agencies",
+      "deckId": "agencies_fbi_training_cyber_fraud_detection",
+      "deckName": "Cyber Fraud Detection",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "agencies",
+      "deckId": "agencies_fbi_training_forensic_analysis",
+      "deckName": "Forensic Analysis",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "agencies",
+      "deckId": "agencies_homeland_security_border_control_tactics",
+      "deckName": "Border Control Tactics",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "agencies",
+      "deckId": "agencies_homeland_security_emergency_response_drills",
+      "deckName": "Emergency Response Drills",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "agencies",
+      "deckId": "agencies_homeland_security_terrorist_threat_analysis",
+      "deckName": "Terrorist Threat Analysis",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "agencies",
+      "deckId": "agencies_interpol_training_criminal_network_tracking",
+      "deckName": "Criminal Network Tracking",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "agencies",
+      "deckId": "agencies_interpol_training_cross_border_smuggling_cases",
+      "deckName": "Cross-Border Smuggling Cases",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "agencies",
+      "deckId": "agencies_interpol_training_international_law_basics",
+      "deckName": "International Law Basics",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "agencies",
+      "deckId": "agencies_secret_service_emergency_evasion_maneuvers",
+      "deckName": "Emergency Evasion Maneuvers",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "agencies",
+      "deckId": "agencies_secret_service_financial_fraud_detection",
+      "deckName": "Financial Fraud Detection",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "agencies",
+      "deckId": "agencies_secret_service_protective_service_tactics",
+      "deckName": "Protective Service Tactics",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_behavioral_and_microexpression_analysis_high_stakes_psn_encounter_tactics",
+      "deckName": "High-Stakes PSN Encounter Tactics",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_behavioral_and_microexpression_analysis_spotting_toxic_patterns",
+      "deckName": "Spotting Toxic Patterns",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_behavioral_and_microexpression_analysis_verbal_self_defense",
+      "deckName": "Verbal Self-Defense",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_covert_psn_destruction_strategies_covertly_overthrowing_psn_controlled_systems",
+      "deckName": "Covertly Overthrowing PSN-Controlled Systems",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_covert_psn_destruction_strategies_disrupting_psn_communication_networks",
+      "deckName": "Disrupting PSN Communication Networks",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_covert_psn_destruction_strategies_eradicating_psn_command_and_control_positions",
+      "deckName": "Eradicating PSN Command and Control Positions",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_covert_psychological_self_defense_disrupting_psn_information_networks",
+      "deckName": "Disrupting PSN Information Networks",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_covert_psychological_self_defense_mental_warfare_and_cognitive_shielding",
+      "deckName": "Mental Warfare and Cognitive Shielding",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_covert_psychological_self_defense_reverse_psychological_warfare_against_psns",
+      "deckName": "Reverse Psychological Warfare Against PSNs",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_covertly_overthrowing_psn_controlled_systems_disrupting_psn_information_networks",
+      "deckName": "Disrupting PSN Information Networks",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_covertly_overthrowing_psn_controlled_systems_eradicating_psn_command_and_control_positions",
+      "deckName": "Eradicating PSN Command and Control Positions",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_covertly_overthrowing_psn_controlled_systems_leveraging_social_resistance_movements",
+      "deckName": "Leveraging Social Resistance Movements",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_creating_a_narcissist_free_life_economic_and_legal_sabotage_of_psn_power",
+      "deckName": "Economic and Legal Sabotage of PSN Power",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_creating_a_narcissist_free_life_narcissist_proofing_your_life",
+      "deckName": "Narcissist Proofing Your Life",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_creating_a_narcissist_free_life_strategic_social_disengagement",
+      "deckName": "Strategic Social Disengagement",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_destabilizing_psn_narrative_control_disrupting_psn_information_networks",
+      "deckName": "Disrupting PSN Information Networks",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_destabilizing_psn_narrative_control_social_contagion_disruption",
+      "deckName": "Social Contagion Disruption",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_destabilizing_psn_narrative_control_weaponizing_truth_against_psn_control",
+      "deckName": "Weaponizing Truth Against PSN Control",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_disrupting_psn_communication_networks_covertly_overthrowing_psn_controlled_systems",
+      "deckName": "Covertly Overthrowing PSN-Controlled Systems",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_disrupting_psn_communication_networks_disrupting_psn_information_networks",
+      "deckName": "Disrupting PSN Information Networks",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_disrupting_psn_communication_networks_reverse_psychological_warfare_against_psns",
+      "deckName": "Reverse Psychological Warfare Against PSNs",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_disrupting_psn_information_networks_destabilizing_psn_narrative_control",
+      "deckName": "Destabilizing PSN Narrative Control",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_disrupting_psn_information_networks_psychological_warfare_and_psn_social_exile",
+      "deckName": "Psychological Warfare and PSN Social Exile",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_disrupting_psn_information_networks_social_contagion_disruption",
+      "deckName": "Social Contagion Disruption",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_economic_and_legal_sabotage_of_psn_power_covert_psn_destruction_strategies",
+      "deckName": "Covert PSN Destruction Strategies",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_economic_and_legal_sabotage_of_psn_power_eradicating_psn_command_and_control_positions",
+      "deckName": "Eradicating PSN Command and Control Positions",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_economic_and_legal_sabotage_of_psn_power_leveraging_social_resistance_movements",
+      "deckName": "Leveraging Social Resistance Movements",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_eliminating_vulnerability_to_psn_tactics_gaslighting_countermeasures",
+      "deckName": "Gaslighting Countermeasures",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_eliminating_vulnerability_to_psn_tactics_psychological_self_fortification",
+      "deckName": "Psychological Self-Fortification",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_eliminating_vulnerability_to_psn_tactics_spotting_toxic_patterns",
+      "deckName": "Spotting Toxic Patterns",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_emotional_detachment_and_resistance_covert_psychological_self_defense",
+      "deckName": "Covert Psychological Self-Defense",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_emotional_detachment_and_resistance_emotional_resilience_exercises",
+      "deckName": "Emotional Resilience Exercises",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_emotional_detachment_and_resistance_mental_fortress_tactics",
+      "deckName": "Mental Fortress Tactics",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_eradicating_psn_command_and_control_positions_eliminating_power_structures",
+      "deckName": "Eliminating Power Structures",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_eradicating_psn_command_and_control_positions_forcing_accountability_and_exposure",
+      "deckName": "Forcing Accountability and Exposure",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_eradicating_psn_command_and_control_positions_targeting_corrupt_leadership",
+      "deckName": "Targeting Corrupt Leadership",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_escaping_psychopathic_relationships_minimizing_retaliation",
+      "deckName": "Minimizing Retaliation",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_escaping_psychopathic_relationships_securing_emotional_and_psychological_independence",
+      "deckName": "Securing Emotional and Psychological Independence",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_escaping_psychopathic_relationships_stealth_exit_strategies",
+      "deckName": "Stealth Exit Strategies",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_gaslighting_countermeasures_cognitive_anchoring",
+      "deckName": "Cognitive Anchoring",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_gaslighting_countermeasures_counter_gaslighting_strategies",
+      "deckName": "Counter-Gaslighting Strategies",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_gaslighting_countermeasures_pattern_recognition",
+      "deckName": "Pattern Recognition",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_high_stakes_psn_encounter_tactics_advanced_social_engineering_reversal",
+      "deckName": "Advanced Social Engineering Reversal",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_high_stakes_psn_encounter_tactics_real_time_psychological_combat",
+      "deckName": "Real-Time Psychological Combat",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_high_stakes_psn_encounter_tactics_stealth_based_counter_engagement",
+      "deckName": "Stealth-Based Counter-Engagement",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_leveraging_social_resistance_movements_activating_collective_resistance",
+      "deckName": "Activating Collective Resistance",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_leveraging_social_resistance_movements_community_based_psychological_defense",
+      "deckName": "Community-Based Psychological Defense",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_leveraging_social_resistance_movements_tactical_networking_against_psns",
+      "deckName": "Tactical Networking Against PSNs",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_mental_warfare_and_cognitive_shielding_cognitive_fortification_techniques",
+      "deckName": "Cognitive Fortification Techniques",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_mental_warfare_and_cognitive_shielding_countering_thought_inception",
+      "deckName": "Countering Thought Inception",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_mental_warfare_and_cognitive_shielding_psychological_warfare_defense",
+      "deckName": "Psychological Warfare Defense",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_narcissist_red_flag_detection_early_behavioral_recognition",
+      "deckName": "Early Behavioral Recognition",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_narcissist_red_flag_detection_identifying_covert_narcissism",
+      "deckName": "Identifying Covert Narcissism",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_narcissist_red_flag_detection_protecting_against_manipulation",
+      "deckName": "Protecting Against Manipulation",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_power_hierarchy_analysis_and_psn_mapping_hierarchical_power_structure_analysis",
+      "deckName": "Hierarchical Power Structure Analysis",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_power_hierarchy_analysis_and_psn_mapping_psn_influence_mapping",
+      "deckName": "PSN Influence Mapping",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_power_hierarchy_analysis_and_psn_mapping_weak_point_identification",
+      "deckName": "Weak Point Identification",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_psn_infiltration_detection_and_exposure_covert_exposure_tactics",
+      "deckName": "Covert Exposure Tactics",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_psn_infiltration_detection_and_exposure_deep_network_analysis",
+      "deckName": "Deep Network Analysis",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_psn_infiltration_detection_and_exposure_strategic_social_engineering",
+      "deckName": "Strategic Social Engineering",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_psychological_self_fortification_mental_immunity_training",
+      "deckName": "Mental Immunity Training",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_psychological_self_fortification_resisting_cognitive_manipulation",
+      "deckName": "Resisting Cognitive Manipulation",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_psychological_self_fortification_strengthening_core_identity",
+      "deckName": "Strengthening Core Identity",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_psychological_warfare_and_psn_social_exile_manipulation_resistance_training",
+      "deckName": "Manipulation Resistance Training",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_psychological_warfare_and_psn_social_exile_psychological_warfare_tactics",
+      "deckName": "Psychological Warfare Tactics",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_psychological_warfare_and_psn_social_exile_social_isolation_of_psns",
+      "deckName": "Social Isolation of PSNs",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_psychopath_vs_sociopath_vs_narcissist_personality_type_differentiation",
+      "deckName": "Personality Type Differentiation",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_psychopath_vs_sociopath_vs_narcissist_power_and_control_mechanisms",
+      "deckName": "Power and Control Mechanisms",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_psychopath_vs_sociopath_vs_narcissist_tactics_and_behavioral_traits",
+      "deckName": "Tactics and Behavioral Traits",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_recruiting_psn_defectors_identifying_redeemable_individuals",
+      "deckName": "Identifying Redeemable Individuals",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_recruiting_psn_defectors_leveraging_internal_sabotage",
+      "deckName": "Leveraging Internal Sabotage",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_recruiting_psn_defectors_psychological_conversion_strategies",
+      "deckName": "Psychological Conversion Strategies",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_social_contagion_disruption_breaking_social_conditioning_cycles",
+      "deckName": "Breaking Social Conditioning Cycles",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_social_contagion_disruption_countering_emotional_manipulation_in_groups",
+      "deckName": "Countering Emotional Manipulation in Groups",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_social_contagion_disruption_disrupting_mass_indoctrination",
+      "deckName": "Disrupting Mass Indoctrination",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_strategic_social_disengagement_controlled_withdrawal_tactics",
+      "deckName": "Controlled Withdrawal Tactics",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_strategic_social_disengagement_maintaining_psychological_autonomy",
+      "deckName": "Maintaining Psychological Autonomy",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_strategic_social_disengagement_recognizing_manipulative_social_structures",
+      "deckName": "Recognizing Manipulative Social Structures",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_turning_psn_tactics_against_them_destabilizing_manipulative_frameworks",
+      "deckName": "Destabilizing Manipulative Frameworks",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_turning_psn_tactics_against_them_misdirection_and_counter_deception",
+      "deckName": "Misdirection and Counter-Deception",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_turning_psn_tactics_against_them_psychological_reversal_techniques",
+      "deckName": "Psychological Reversal Techniques",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_undoing_psn_trauma_bonding_breaking_the_reward_punishment_cycle",
+      "deckName": "Breaking the Reward-Punishment Cycle",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_undoing_psn_trauma_bonding_detoxifying_emotional_attachments",
+      "deckName": "Detoxifying Emotional Attachments",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_undoing_psn_trauma_bonding_rewiring_neurological_responses",
+      "deckName": "Rewiring Neurological Responses",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_verbal_self_defense_against_manipulation_deflecting_manipulative_language",
+      "deckName": "Deflecting Manipulative Language",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_verbal_self_defense_against_manipulation_maintaining_conversational_control",
+      "deckName": "Maintaining Conversational Control",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_verbal_self_defense_against_manipulation_neutralizing_emotional_triggers",
+      "deckName": "Neutralizing Emotional Triggers",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_weaponizing_truth_against_psn_control_destroying_the_psn_illusion_of_power",
+      "deckName": "Destroying the PSN Illusion of Power",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_weaponizing_truth_against_psn_control_exposure_based_counter_tactics",
+      "deckName": "Exposure-Based Counter-Tactics",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_psn",
+      "deckId": "anti_psn_weaponizing_truth_against_psn_control_truth_as_a_disruptive_weapon",
+      "deckName": "Truth as a Disruptive Weapon",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_artificial_scarcity_as_a_control_method_exposing_fiat_currency_fraud",
+      "deckName": "Exposing Fiat Currency Fraud",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_artificial_scarcity_as_a_control_method_food_and_energy_monopoly_disruption",
+      "deckName": "Food and Energy Monopoly Disruption",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_artificial_scarcity_as_a_control_method_self_reliance_and_resource_generation",
+      "deckName": "Self-Reliance and Resource Generation",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_black_ops_and_covert_agenda_awareness_analyzing_shadow_government_tactics",
+      "deckName": "Analyzing Shadow Government Tactics",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_black_ops_and_covert_agenda_awareness_black_budget_projects_exposure",
+      "deckName": "Black Budget Projects Exposure",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_black_ops_and_covert_agenda_awareness_exposing_false_flag_operations",
+      "deckName": "Exposing False Flag Operations",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_blackmail_based_control_structures_counter_extortion_and_leverage_defense",
+      "deckName": "Counter-Extortion and Leverage Defense",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_blackmail_based_control_structures_tracking_compromised_individuals",
+      "deckName": "Tracking Compromised Individuals",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_blackmail_based_control_structures_understanding_coercion_tactics",
+      "deckName": "Understanding Coercion Tactics",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_bloodlines_and_elite_occult_pacts_breaking_the_elite_mind_control_system",
+      "deckName": "Breaking the Elite Mind Control System",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_bloodlines_and_elite_occult_pacts_historical_analysis_of_ruling_bloodlines",
+      "deckName": "Historical Analysis of Ruling Bloodlines",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_bloodlines_and_elite_occult_pacts_identifying_occult_symbols_in_power_structures",
+      "deckName": "Identifying Occult Symbols in Power Structures",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_breaking_the_cycle_of_idc_control_decentralized_autonomous_societies",
+      "deckName": "Decentralized Autonomous Societies",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_breaking_the_cycle_of_idc_control_mind_control_deconstruction",
+      "deckName": "Mind Control Deconstruction",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_breaking_the_cycle_of_idc_control_resistance_network_formation",
+      "deckName": "Resistance Network Formation",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_countering_occult_and_psionic_warfare_deciphering_occult_symbolism",
+      "deckName": "Deciphering Occult Symbolism",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_countering_occult_and_psionic_warfare_defensive_psionics_and_energy_shielding",
+      "deckName": "Defensive Psionics and Energy Shielding",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_countering_occult_and_psionic_warfare_mental_barrier_fortification",
+      "deckName": "Mental Barrier Fortification",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_covert_operations_for_dismantling_idc_counter_psyops_and_diversion_strategies",
+      "deckName": "Counter-PsyOps and Diversion Strategies",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_covert_operations_for_dismantling_idc_covert_infiltration_tactics",
+      "deckName": "Covert Infiltration Tactics",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_covert_operations_for_dismantling_idc_strategic_disruption_of_power_centers",
+      "deckName": "Strategic Disruption of Power Centers",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_creating_parallel_societies_alternative_currency_and_trade",
+      "deckName": "Alternative Currency and Trade",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_creating_parallel_societies_resilient_community_networking",
+      "deckName": "Resilient Community Networking",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_creating_parallel_societies_self_sufficient_energy_and_resources",
+      "deckName": "Self-Sufficient Energy and Resources",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_cult_network_analysis_exposing_high_profile_cult_members",
+      "deckName": "Exposing High-Profile Cult Members",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_cult_network_analysis_psychological_deprogramming_methods",
+      "deckName": "Psychological Deprogramming Methods",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_cult_network_analysis_tracking_cult_financing_and_funding",
+      "deckName": "Tracking Cult Financing and Funding",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_dark_economics_counter_economic_warfare_methods",
+      "deckName": "Counter Economic Warfare Methods",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_dark_economics_tracking_elite_money_laundering",
+      "deckName": "Tracking Elite Money Laundering",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_dark_economics_unmasking_tax_haven_operations",
+      "deckName": "Unmasking Tax Haven Operations",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_death_cult_symbolism_and_language_decoding_esoteric_and_occult_language_decoding",
+      "deckName": "Esoteric and Occult Language Decoding",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_death_cult_symbolism_and_language_decoding_hidden_symbols_in_media_and_governance",
+      "deckName": "Hidden Symbols in Media and Governance",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_death_cult_symbolism_and_language_decoding_linguistic_mind_control_patterns",
+      "deckName": "Linguistic Mind Control Patterns",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_dismantling_idc_power_centers_creating_global_resistance_movements",
+      "deckName": "Creating Global Resistance Movements",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_dismantling_idc_power_centers_exposing_key_idc_hubs",
+      "deckName": "Exposing Key IDC Hubs",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_dismantling_idc_power_centers_undermining_strategic_idc_assets",
+      "deckName": "Undermining Strategic IDC Assets",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_economic_warfare_resistance_decentralized_trade_networks",
+      "deckName": "Decentralized Trade Networks",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_economic_warfare_resistance_economic_false_flag_identification",
+      "deckName": "Economic False Flag Identification",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_economic_warfare_resistance_inflation_detection_and_response",
+      "deckName": "Inflation Detection and Response",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_energy_harvesting_exposure_breaking_the_loosh_extraction_cycles",
+      "deckName": "Breaking the Loosh Extraction Cycles",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_energy_harvesting_exposure_countering_mass_psychic_energy_extraction",
+      "deckName": "Countering Mass Psychic Energy Extraction",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_energy_harvesting_exposure_disrupting_fear_based_energy_harvesting",
+      "deckName": "Disrupting Fear-Based Energy Harvesting",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_false_messianic_movements_dissecting_religious_control_frameworks",
+      "deckName": "Dissecting Religious Control Frameworks",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_false_messianic_movements_psychological_dependency_in_movement_followers",
+      "deckName": "Psychological Dependency in Movement Followers",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_false_messianic_movements_tactics_for_disrupting_false_messiahs",
+      "deckName": "Tactics for Disrupting False Messiahs",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_financial_sovereignty_countering_financial_surveillance",
+      "deckName": "Countering Financial Surveillance",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_financial_sovereignty_cryptocurrency_and_gold_reserves",
+      "deckName": "Cryptocurrency and Gold Reserves",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_financial_sovereignty_self_sufficient_income_streams",
+      "deckName": "Self-Sufficient Income Streams",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_global_crime_network_exposure_identifying_money_laundering_channels",
+      "deckName": "Identifying Money Laundering Channels",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_global_crime_network_exposure_mapping_transnational_cartels",
+      "deckName": "Mapping Transnational Cartels",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_global_crime_network_exposure_understanding_illicit_supply_chains",
+      "deckName": "Understanding Illicit Supply Chains",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_human_trafficking_disruption_tactics_analyzing_trafficker_patterns",
+      "deckName": "Analyzing Trafficker Patterns",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_human_trafficking_disruption_tactics_covert_investigation_and_whistleblowing",
+      "deckName": "Covert Investigation and Whistleblowing",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_human_trafficking_disruption_tactics_detecting_victim_signals",
+      "deckName": "Detecting Victim Signals",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_hypernormalization_and_mass_hypnosis_breaking_breaking_out_of_social_conditioning",
+      "deckName": "Breaking Out of Social Conditioning",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_hypernormalization_and_mass_hypnosis_breaking_disrupting_mass_hypnosis_and_groupthink",
+      "deckName": "Disrupting Mass Hypnosis and Groupthink",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_hypernormalization_and_mass_hypnosis_breaking_unraveling_false_narratives",
+      "deckName": "Unraveling False Narratives",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_idc_control_in_cultural_narratives_detecting_media_mind_control",
+      "deckName": "Detecting Media Mind Control",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_idc_control_in_cultural_narratives_disrupting_cultural_psyops",
+      "deckName": "Disrupting Cultural PsyOps",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_idc_control_in_cultural_narratives_rewriting_hijacked_narratives",
+      "deckName": "Rewriting Hijacked Narratives",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_idc_hierarchical_mapping_exposing_cult_financial_backers",
+      "deckName": "Exposing Cult Financial Backers",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_idc_hierarchical_mapping_mapping_psychopathic_leadership_structures",
+      "deckName": "Mapping Psychopathic Leadership Structures",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_idc_hierarchical_mapping_tracking_occult_power_centers",
+      "deckName": "Tracking Occult Power Centers",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_infiltration_of_governments_and_institutions_analyzing_power_structures_and_hidden_agendas",
+      "deckName": "Analyzing Power Structures and Hidden Agendas",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_infiltration_of_governments_and_institutions_exposing_political_and_corporate_puppetry",
+      "deckName": "Exposing Political and Corporate Puppetry",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_infiltration_of_governments_and_institutions_identifying_compromised_governments",
+      "deckName": "Identifying Compromised Governments",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_information_warfare_and_counterintelligence_countering_psyops_and_disinformation",
+      "deckName": "Countering PsyOps and Disinformation",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_information_warfare_and_counterintelligence_covert_data_collection_and_analysis",
+      "deckName": "Covert Data Collection and Analysis",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_information_warfare_and_counterintelligence_propaganda_deconstruction",
+      "deckName": "Propaganda Deconstruction",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_legal_and_extralegal_self_protection_diplomatic_immunity_tactics",
+      "deckName": "Diplomatic Immunity Tactics",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_legal_and_extralegal_self_protection_extralegal_networks_and_protection",
+      "deckName": "Extralegal Networks and Protection",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_legal_and_extralegal_self_protection_understanding_legal_loopholes",
+      "deckName": "Understanding Legal Loopholes",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_occult_psychological_warfare_and_mind_control_breaking_subliminal_mind_control",
+      "deckName": "Breaking Subliminal Mind Control",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_occult_psychological_warfare_and_mind_control_deprogramming_occult_psychological_attacks",
+      "deckName": "Deprogramming Occult Psychological Attacks",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_occult_psychological_warfare_and_mind_control_identifying_and_disrupting_ritual_mind_warfare",
+      "deckName": "Identifying and Disrupting Ritual Mind Warfare",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_political_cults_detecting_psychopathic_leaders_in_politics",
+      "deckName": "Detecting Psychopathic Leaders in Politics",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_political_cults_neutralizing_extremist_political_cults",
+      "deckName": "Neutralizing Extremist Political Cults",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_political_cults_propaganda_resistance_and_mind_control_breaking",
+      "deckName": "Propaganda Resistance and Mind Control Breaking",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_propaganda_and_psyops_defense_breaking_mass_hypnosis",
+      "deckName": "Breaking Mass Hypnosis",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_propaganda_and_psyops_defense_identifying_fear_based_propaganda",
+      "deckName": "Identifying Fear-Based Propaganda",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_propaganda_and_psyops_defense_psychological_warfare_resilience",
+      "deckName": "Psychological Warfare Resilience",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_ritual_abuse_survivor_deprogramming_erasing_ritual_imprints",
+      "deckName": "Erasing Ritual Imprints",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_ritual_abuse_survivor_deprogramming_narrative_reframing_for_survivors",
+      "deckName": "Narrative Reframing for Survivors",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_ritual_abuse_survivor_deprogramming_strengthening_psychic_and_spiritual_defense",
+      "deckName": "Strengthening Psychic and Spiritual Defense",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_ritual_sacrifice_exposure_dismantling_sacrificial_occult_agendas",
+      "deckName": "Dismantling Sacrificial Occult Agendas",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_ritual_sacrifice_exposure_survivor_testimonies_and_decryption",
+      "deckName": "Survivor Testimonies and Decryption",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_ritual_sacrifice_exposure_tracking_ritualistic_patterns_in_crime",
+      "deckName": "Tracking Ritualistic Patterns in Crime",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_social_engineering_and_cyber_security_avoiding_ai_behavioral_profiling",
+      "deckName": "Avoiding AI Behavioral Profiling",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_social_engineering_and_cyber_security_detecting_social_engineering_attacks",
+      "deckName": "Detecting Social Engineering Attacks",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_social_engineering_and_cyber_security_secure_communications_tactics",
+      "deckName": "Secure Communications Tactics",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_spiritual_fortification_against_cult_control_breaking_cultic_psychological_manipulation",
+      "deckName": "Breaking Cultic Psychological Manipulation",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_spiritual_fortification_against_cult_control_mind_control_deprogramming",
+      "deckName": "Mind Control Deprogramming",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_spiritual_fortification_against_cult_control_spiritual_self_defense_and_energy_protection",
+      "deckName": "Spiritual Self-Defense and Energy Protection",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_strategic_disengagement_and_escape_tactics_breaking_digital_and_physical_tracking",
+      "deckName": "Breaking Digital and Physical Tracking",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_strategic_disengagement_and_escape_tactics_covert_escape_routes",
+      "deckName": "Covert Escape Routes",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_strategic_disengagement_and_escape_tactics_social_disappearance_strategies",
+      "deckName": "Social Disappearance Strategies",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_suffering_as_a_control_method_breaking_psychological_conditioning",
+      "deckName": "Breaking Psychological Conditioning",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_suffering_as_a_control_method_building_trauma_resilient_communities",
+      "deckName": "Building Trauma-Resilient Communities",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_suffering_as_a_control_method_detecting_synthetic_crises",
+      "deckName": "Detecting Synthetic Crises",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_tactical_survival_and_self_defense_close_quarters_combat_tactics",
+      "deckName": "Close Quarters Combat Tactics",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_tactical_survival_and_self_defense_covert_security_and_defensive_measures",
+      "deckName": "Covert Security and Defensive Measures",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_tactical_survival_and_self_defense_survival_training_and_escape_methods",
+      "deckName": "Survival Training and Escape Methods",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_weaponization_of_new_age_spirituality_disrupting_fake_gurus_and_occultists",
+      "deckName": "Disrupting Fake Gurus and Occultists",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_weaponization_of_new_age_spirituality_identifying_psyops_in_spirituality",
+      "deckName": "Identifying PsyOps in Spirituality",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_weaponization_of_new_age_spirituality_reclaiming_authentic_spiritual_power",
+      "deckName": "Reclaiming Authentic Spiritual Power",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_weaponization_of_religion_identifying_false_religious_authorities",
+      "deckName": "Identifying False Religious Authorities",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_weaponization_of_religion_liberating_spiritual_thought",
+      "deckName": "Liberating Spiritual Thought",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_weaponization_of_religion_tracing_historical_religious_manipulation",
+      "deckName": "Tracing Historical Religious Manipulation",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_weaponized_ai_and_surveillance_resistance_cyber_surveillance_resistance",
+      "deckName": "Cyber Surveillance Resistance",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_weaponized_ai_and_surveillance_resistance_digital_identity_concealment",
+      "deckName": "Digital Identity Concealment",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "anti_tcs_idc_cbc",
+      "deckId": "anti_tcs_idc_cbc_weaponized_ai_and_surveillance_resistance_evading_ai_behavioral_tracking",
+      "deckName": "Evading AI Behavioral Tracking",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "combat",
+      "deckId": "combat_close_quarters_combat_ground_fighting",
+      "deckName": "Ground Fighting",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "combat",
+      "deckId": "combat_close_quarters_combat_striking_and_counterattacks",
+      "deckName": "Striking and Counterattacks",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "combat",
+      "deckId": "combat_close_quarters_combat_weapon_disarm_tactics",
+      "deckName": "Weapon Disarm Tactics",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "combat",
+      "deckId": "combat_combat_scenario_simulation_high_stress_drills",
+      "deckName": "High-Stress Drills",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "combat",
+      "deckId": "combat_combat_scenario_simulation_live_fire_simulations",
+      "deckName": "Live Fire Simulations",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "combat",
+      "deckId": "combat_combat_scenario_simulation_mission_based_training",
+      "deckName": "Mission-Based Training",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "combat",
+      "deckId": "combat_firearms_training_close_range_shooting",
+      "deckName": "Close Range Shooting",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "combat",
+      "deckId": "combat_firearms_training_pistol_shooting_drills",
+      "deckName": "Pistol Shooting Drills",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "combat",
+      "deckId": "combat_firearms_training_rifle_tactics",
+      "deckName": "Rifle Tactics",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "combat",
+      "deckId": "combat_melee_weapons_training_baton_defensive_moves",
+      "deckName": "Baton Defensive Moves",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "combat",
+      "deckId": "combat_melee_weapons_training_knife_fighting_tactics",
+      "deckName": "Knife Fighting Tactics",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "combat",
+      "deckId": "combat_melee_weapons_training_weapon_retention_drills",
+      "deckName": "Weapon Retention Drills",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "combat",
+      "deckId": "combat_stealth_and_escape_tactics_camouflage_and_blending",
+      "deckName": "Camouflage and Blending",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "combat",
+      "deckId": "combat_stealth_and_escape_tactics_hostile_escape_tactics",
+      "deckName": "Hostile Escape Tactics",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "combat",
+      "deckId": "combat_stealth_and_escape_tactics_silent_movement_training",
+      "deckName": "Silent Movement Training",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "combat",
+      "deckId": "combat_tactical_movement_cover_usage_tactics",
+      "deckName": "Cover Usage Tactics",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "combat",
+      "deckId": "combat_tactical_movement_fire_and_maneuver",
+      "deckName": "Fire and Maneuver",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "combat",
+      "deckId": "combat_tactical_movement_urban_combat_movement",
+      "deckName": "Urban Combat Movement",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "counter_biochem",
+      "deckId": "counter_biochem_biochem_defense_protocols_airborne_pathogen_defense",
+      "deckName": "Airborne Pathogen Defense",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "counter_biochem",
+      "deckId": "counter_biochem_biochem_defense_protocols_chemical_shielding_tactics",
+      "deckName": "Chemical Shielding Tactics",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "counter_biochem",
+      "deckId": "counter_biochem_biochem_defense_protocols_hazmat_safety_training",
+      "deckName": "Hazmat Safety Training",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "counter_biochem",
+      "deckId": "counter_biochem_biochem_survival_medicine_emergency_first_aid_for_biochem_exposure",
+      "deckName": "Emergency First Aid for BioChem Exposure",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "counter_biochem",
+      "deckId": "counter_biochem_biochem_survival_medicine_holistic_and_herbal_remedies",
+      "deckName": "Holistic & Herbal Remedies",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "counter_biochem",
+      "deckId": "counter_biochem_contagion_containment_strategies_emergency_containment_protocols",
+      "deckName": "Emergency Containment Protocols",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "counter_biochem",
+      "deckId": "counter_biochem_contagion_containment_strategies_infection_control_tactics",
+      "deckName": "Infection Control Tactics",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "counter_biochem",
+      "deckId": "counter_biochem_contagion_containment_strategies_quarantine_zone_management",
+      "deckName": "Quarantine Zone Management",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "counter_biochem",
+      "deckId": "counter_biochem_food_water_supply_protection_detecting_tainted_food_sources",
+      "deckName": "Detecting Tainted Food Sources",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "counter_biochem",
+      "deckId": "counter_biochem_food_water_supply_protection_supply_chain_protection_tactics",
+      "deckName": "Supply Chain Protection Tactics",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "counter_biochem",
+      "deckId": "counter_biochem_food_water_supply_protection_water_supply_purification_methods",
+      "deckName": "Water Supply Purification Methods",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "counter_biochem",
+      "deckId": "counter_biochem_medical_psyops_resistance_combatting_psyops_in_healthcare",
+      "deckName": "Combatting PsyOps in Healthcare",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "counter_biochem",
+      "deckId": "counter_biochem_medical_psyops_resistance_detecting_medical_disinformation",
+      "deckName": "Detecting Medical Disinformation",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "counter_biochem",
+      "deckId": "counter_biochem_medical_psyops_resistance_verifying_legitimate_treatments",
+      "deckName": "Verifying Legitimate Treatments",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "counter_biochem",
+      "deckId": "counter_biochem_toxin_neutralization_tactics_antidote_and_detox_methods",
+      "deckName": "Antidote & Detox Methods",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "counter_biochem",
+      "deckId": "counter_biochem_toxin_neutralization_tactics_biochem_emergency_treatment",
+      "deckName": "BioChem Emergency Treatment",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "counter_biochem",
+      "deckId": "counter_biochem_toxin_neutralization_tactics_toxin_detection_and_testing",
+      "deckName": "Toxin Detection & Testing",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "cybersecurity",
+      "deckId": "cybersecurity_digital_forensics_forensic_image_analysis",
+      "deckName": "Extraction and Escape Tactics",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "cybersecurity",
+      "deckId": "cybersecurity_digital_forensics_log_analysis_and_correlation",
+      "deckName": "Log Analysis and Correlation",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "cybersecurity",
+      "deckId": "cybersecurity_digital_forensics_malware_reversing",
+      "deckName": "Malware Reversing",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "cybersecurity",
+      "deckId": "cybersecurity_malware_analysis_binary_disassembly_methods",
+      "deckName": "Binary Disassembly Methods",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "cybersecurity",
+      "deckId": "cybersecurity_malware_analysis_malware_detection_and_removal",
+      "deckName": "Malware Detection and Removal",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "cybersecurity",
+      "deckId": "cybersecurity_malware_analysis_sandbox_analysis",
+      "deckName": "Sandbox Analysis",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "cybersecurity",
+      "deckId": "cybersecurity_network_security_firewall_configuration",
+      "deckName": "Firewall Configuration",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "cybersecurity",
+      "deckId": "cybersecurity_network_security_intrusion_detection_methods",
+      "deckName": "Intrusion Detection Methods",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "cybersecurity",
+      "deckId": "cybersecurity_network_security_network_monitoring_tools",
+      "deckName": "Network Monitoring Tools",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "cybersecurity",
+      "deckId": "cybersecurity_penetration_testing_network_penetration_tests",
+      "deckName": "Network Penetration Tests",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "cybersecurity",
+      "deckId": "cybersecurity_penetration_testing_physical_security_exploitation",
+      "deckName": "Physical Security Exploitation",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "cybersecurity",
+      "deckId": "cybersecurity_penetration_testing_web_application_hacking",
+      "deckName": "Web Application Hacking",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "cybersecurity",
+      "deckId": "cybersecurity_social_engineering_defense_corporate_security_training",
+      "deckName": "Corporate Security Training",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "cybersecurity",
+      "deckId": "cybersecurity_social_engineering_defense_phishing_attack_simulation",
+      "deckName": "Phishing Attack Simulation",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "cybersecurity",
+      "deckId": "cybersecurity_social_engineering_defense_social_manipulation_tactics",
+      "deckName": "Social Manipulation Tactics",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "cybersecurity",
+      "deckId": "cybersecurity_threat_intelligence_dark_web_monitoring",
+      "deckName": "Dark Web Monitoring",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "cybersecurity",
+      "deckId": "cybersecurity_threat_intelligence_incident_response_intelligence",
+      "deckName": "Incident Response Intelligence",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "cybersecurity",
+      "deckId": "cybersecurity_threat_intelligence_osint_for_cyber_threats",
+      "deckName": "OSINT for Cyber Threats",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "dance",
+      "deckId": "dance_breakdance_basic_toprock_moves",
+      "deckName": "Basic Toprock Moves",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "dance",
+      "deckId": "dance_breakdance_freeze_techniques",
+      "deckName": "Freeze Techniques",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "dance",
+      "deckId": "dance_contact_staff_flow_advanced_flourishes",
+      "deckName": "Advanced Flourishes",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "dance",
+      "deckId": "dance_contact_staff_flow_spins_and_transitions",
+      "deckName": "Spins & Transitions",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "dance",
+      "deckId": "dance_cutting_shapes_heel_toe_variations",
+      "deckName": "Heel-Toe Variations",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "dance",
+      "deckId": "dance_cutting_shapes_speed_training",
+      "deckName": "Speed Training",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "dance",
+      "deckId": "dance_dubstep_glitch_bass_drop_isolations",
+      "deckName": "Bass Drop Isolations",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "dance",
+      "deckId": "dance_dubstep_glitch_slow_motion_effects",
+      "deckName": "Slow Motion Effects",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "dance",
+      "deckId": "dance_fan_dancing_precision_fan_techniques",
+      "deckName": "Precision Fan Techniques",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "dance",
+      "deckId": "dance_fan_dancing_veil_twirls",
+      "deckName": "Veil Twirls",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "dance",
+      "deckId": "dance_freestyle_rave_body_bounce_rhythm",
+      "deckName": "Body Bounce Rhythm",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "dance",
+      "deckId": "dance_freestyle_rave_flow_transitions",
+      "deckName": "Flow Transitions",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "dance",
+      "deckId": "dance_gloving_tutting_box_tutting_patterns",
+      "deckName": "Box Tutting Patterns",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "dance",
+      "deckId": "dance_gloving_tutting_finger_isolations",
+      "deckName": "Finger Isolations",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "dance",
+      "deckId": "dance_industrial_dance_arm_synchronization",
+      "deckName": "Arm Synchronization",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "dance",
+      "deckId": "dance_industrial_dance_footwork_patterns",
+      "deckName": "Footwork Patterns",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "dance",
+      "deckId": "dance_jumpstyle_hardstyle_kicking_sequences",
+      "deckName": "Kicking Sequences",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "dance",
+      "deckId": "dance_jumpstyle_hardstyle_stamina_drills",
+      "deckName": "Stamina Drills",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "dance",
+      "deckId": "dance_liquid_dance_hand_glides",
+      "deckName": "Hand Glides",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "dance",
+      "deckId": "dance_liquid_dance_wave_techniques",
+      "deckName": "Wave Techniques",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "dance",
+      "deckId": "dance_poi_spinning_butterfly_moves",
+      "deckName": "Butterfly Moves",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "dance",
+      "deckId": "dance_poi_spinning_weave_patterns",
+      "deckName": "Weave Patterns",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "espionage",
+      "deckId": "espionage_clandestine_surveillance_shadowing_techniques",
+      "deckName": "Shadowing Techniques",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "espionage",
+      "deckId": "espionage_clandestine_surveillance_signal_interception",
+      "deckName": "Signal Interception",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "espionage",
+      "deckId": "espionage_clandestine_surveillance_vehicle_tailing",
+      "deckName": "Vehicle Tailing",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "espionage",
+      "deckId": "espionage_counterintelligence_disinformation_strategies",
+      "deckName": "Disinformation Strategies",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "espionage",
+      "deckId": "espionage_counterintelligence_double_agent_management",
+      "deckName": "Double Agent Management",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "espionage",
+      "deckId": "espionage_counterintelligence_spy_identification",
+      "deckName": "Spy Identification",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "espionage",
+      "deckId": "espionage_covert_operations_covert_sabotage",
+      "deckName": "Covert Sabotage",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "espionage",
+      "deckId": "espionage_covert_operations_escape_and_evasion",
+      "deckName": "Escape & Evasion",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "espionage",
+      "deckId": "espionage_covert_operations_undercover_roles",
+      "deckName": "Undercover Roles",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "espionage",
+      "deckId": "espionage_disguise_and_identity_costume_and_makeup",
+      "deckName": "Costume and Makeup",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "espionage",
+      "deckId": "espionage_disguise_and_identity_identity_forging",
+      "deckName": "Identity Forging",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "espionage",
+      "deckId": "espionage_disguise_and_identity_social_deception",
+      "deckName": "Social Deception",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "espionage",
+      "deckId": "espionage_psychological_manipulation_coercion_methods",
+      "deckName": "Coercion Methods",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "espionage",
+      "deckId": "espionage_psychological_manipulation_emotional_exploitation",
+      "deckName": "Emotional Exploitation",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "espionage",
+      "deckId": "espionage_psychological_manipulation_persuasion_and_influence",
+      "deckName": "Persuasion and Influence",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "espionage",
+      "deckId": "espionage_tradecraft_dead_drop_methods",
+      "deckName": "Dead Drop Methods",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "espionage",
+      "deckId": "espionage_tradecraft_encryption_and_decryption",
+      "deckName": "Encryption and Decryption",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "espionage",
+      "deckId": "espionage_tradecraft_secure_messaging",
+      "deckName": "Secure Messaging",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_athletic_performance_olympic_lifting_basics",
+      "deckName": "Olympic Lifting Basics",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_athletic_performance_reaction_time_drills",
+      "deckName": "Reaction Time Drills",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_athletic_performance_speed_endurance_training",
+      "deckName": "Speed & Endurance Training",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_balance_and_stability_bosu_ball_exercises",
+      "deckName": "BOSU Ball Exercises",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_balance_and_stability_dynamic_balance_training",
+      "deckName": "Dynamic Balance Training",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_balance_and_stability_single_leg_stability_drills",
+      "deckName": "Single-Leg Stability Drills",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_calisthenics_bodyweight_leg_workouts",
+      "deckName": "Bodyweight Leg Workouts",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_calisthenics_pullup_and_dip_training",
+      "deckName": "Pull-Up and Dip Training",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_calisthenics_pushup_variations",
+      "deckName": "Push-Up Variations",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_cardiovascular_endurance_cycling_endurance",
+      "deckName": "Cycling Endurance",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_cardiovascular_endurance_interval_running",
+      "deckName": "Interval Running",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_cardiovascular_endurance_steady_state_cardio",
+      "deckName": "Steady State Cardio",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_core_strengthening_dynamic_core_workouts",
+      "deckName": "Dynamic Core Workouts",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_core_strengthening_planks_and_static_holds",
+      "deckName": "Planks and Static Holds",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_core_strengthening_rotational_core_exercises",
+      "deckName": "Rotational Core Exercises",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_flexibility_and_mobility_dynamic_warmups",
+      "deckName": "Dynamic Warmups",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_flexibility_and_mobility_foam_rolling_and_massage",
+      "deckName": "Foam Rolling and Massage",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_flexibility_and_mobility_static_stretching",
+      "deckName": "Static Stretching",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_functional_fitness_kettlebell_workouts",
+      "deckName": "Kettlebell Workouts",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_functional_fitness_resistance_band_exercises",
+      "deckName": "Resistance Band Exercises",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_functional_fitness_sandbag_training",
+      "deckName": "Sandbag Training",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_high_intensity_interval_training_circuit_training",
+      "deckName": "Circuit Training",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_high_intensity_interval_training_sprint_intervals",
+      "deckName": "Sprint Intervals",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_high_intensity_interval_training_tabata_protocol",
+      "deckName": "Tabata Protocol",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_mind_body_fitness_breathwork_and_meditation",
+      "deckName": "Breathwork and Meditation",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_mind_body_fitness_tai_chi_sequences",
+      "deckName": "Tai Chi Sequences",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_mind_body_fitness_yoga_flows",
+      "deckName": "Yoga Flows",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_recovery_and_injury_prevention_mobility_routines",
+      "deckName": "Mobility Routines",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_recovery_and_injury_prevention_rehabilitative_exercises",
+      "deckName": "Rehabilitative Exercises",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_recovery_and_injury_prevention_self_myofascial_release",
+      "deckName": "Self-Myofascial Release",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_speed_and_agility_ladder_drills",
+      "deckName": "Ladder Drills",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_speed_and_agility_plyometric_workouts",
+      "deckName": "Plyometric Workouts",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_speed_and_agility_sprint_training",
+      "deckName": "Sprint Training",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_strength_training_compound_lifts",
+      "deckName": "Compound Lifts",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_strength_training_isolation_exercises",
+      "deckName": "Isolation Exercises",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "fitness",
+      "deckId": "fitness_strength_training_strength_periodization",
+      "deckName": "Strength Periodization",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "investigation",
+      "deckId": "investigation_criminal_profiling_behavioral_profiling_methods",
+      "deckName": "Behavioral Profiling Methods",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "investigation",
+      "deckId": "investigation_criminal_profiling_offender_typologies",
+      "deckName": "Offender Typologies",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "investigation",
+      "deckId": "investigation_criminal_profiling_threat_assessment",
+      "deckName": "Threat Assessment",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "investigation",
+      "deckId": "investigation_cybercrime_analysis_cyber_fraud_detection",
+      "deckName": "Cyber Fraud Detection",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "investigation",
+      "deckId": "investigation_cybercrime_analysis_dark_web_investigations",
+      "deckName": "Dark Web Investigations",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "investigation",
+      "deckId": "investigation_cybercrime_analysis_malware_analysis",
+      "deckName": "Malware Analysis",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "investigation",
+      "deckId": "investigation_digital_forensics_computer_forensic_methods",
+      "deckName": "Computer Forensic Methods",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "investigation",
+      "deckId": "investigation_digital_forensics_mobile_device_exploitation",
+      "deckName": "Mobile Device Exploitation",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "investigation",
+      "deckId": "investigation_digital_forensics_network_packet_analysis",
+      "deckName": "Network Packet Analysis",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "investigation",
+      "deckId": "investigation_financial_crimes_financial_statement_analysis",
+      "deckName": "Financial Statement Analysis",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "investigation",
+      "deckId": "investigation_financial_crimes_fraud_detection_techniques",
+      "deckName": "Fraud Detection Techniques",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "investigation",
+      "deckId": "investigation_financial_crimes_money_laundering_patterns",
+      "deckName": "Money Laundering Patterns",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "investigation",
+      "deckId": "investigation_forensic_investigation_crime_scene_processing",
+      "deckName": "Crime Scene Processing",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "investigation",
+      "deckId": "investigation_forensic_investigation_dna_and_fingerprint_analysis",
+      "deckName": "DNA and Fingerprint Analysis",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "investigation",
+      "deckId": "investigation_forensic_investigation_forensic_lab_procedures",
+      "deckName": "Forensic Lab Procedures",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "investigation",
+      "deckId": "investigation_homicide_investigation_cause_of_death_forensics",
+      "deckName": "Cause of Death Forensics",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "investigation",
+      "deckId": "investigation_homicide_investigation_homicide_case_studies",
+      "deckName": "Homicide Case Studies",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "investigation",
+      "deckId": "investigation_homicide_investigation_suspect_interview_methods",
+      "deckName": "Suspect Interview Methods",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_baguazhang_circle_walking",
+      "deckName": "Circle Walking",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_baguazhang_evasive_movement",
+      "deckName": "Evasive Movement",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_baguazhang_palm_strikes",
+      "deckName": "Palm Strikes",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_capoeira_acrobatics_and_flips",
+      "deckName": "Acrobatics and Flips",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_capoeira_ginga_and_fluidity",
+      "deckName": "Ginga and Fluidity",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_capoeira_kicks_and_sweeps",
+      "deckName": "Kicks and Sweeps",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_hapkido_joint_locks",
+      "deckName": "Joint Locks",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_hapkido_pressure_points",
+      "deckName": "Pressure Points",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_hapkido_throws_and_takedowns",
+      "deckName": "Throws and Takedowns",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_jeet_kune_do_footwork_and_speed",
+      "deckName": "Footwork and Speed",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_jeet_kune_do_intercepting_fist",
+      "deckName": "Intercepting Fist",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_jeet_kune_do_trapping_hands",
+      "deckName": "Trapping Hands",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_muay_thai_clinch_and_control",
+      "deckName": "Clinch and Control",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_muay_thai_elbow_and_knee_strikes",
+      "deckName": "Elbow and Knee Strikes",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_muay_thai_power_kicks",
+      "deckName": "Power Kicks",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_shaolin_kung_fu_animal_styles",
+      "deckName": "Animal Styles",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_shaolin_kung_fu_iron_body_training",
+      "deckName": "Iron Body Training",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_shaolin_kung_fu_staff_and_weaponry",
+      "deckName": "Staff and Weaponry",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_silat_bladed_weapon_techniques",
+      "deckName": "Bladed Weapon Techniques",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_silat_low_stance_combat",
+      "deckName": "Low Stance Combat",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_silat_rapid_striking",
+      "deckName": "Rapid Striking",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_taekwondo_breaking_techniques",
+      "deckName": "Breaking Techniques",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_taekwondo_explosive_kicking",
+      "deckName": "Explosive Kicking",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_taekwondo_spinning_and_aerial_kicks",
+      "deckName": "Spinning and Aerial Kicks",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_tai_chi_internal_energy",
+      "deckName": "Internal Energy",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_tai_chi_push_hands",
+      "deckName": "Push Hands",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_tai_chi_slow_form_training",
+      "deckName": "Slow Form Training",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_wing_chun_centerline_striking",
+      "deckName": "Centerline Striking",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_wing_chun_chi_sao_sensitivity",
+      "deckName": "Chi Sao Sensitivity",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_wing_chun_wooden_dummy_drills",
+      "deckName": "Wooden Dummy Drills",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_wushu_aerial_movements",
+      "deckName": "Aerial Movements",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_wushu_dynamic_forms",
+      "deckName": "Dynamic Forms",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_wushu_long_fist_and_southern_fist",
+      "deckName": "Long Fist and Southern Fist",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_xing_yi_quan_animal_forms",
+      "deckName": "Animal Forms",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_xing_yi_quan_explosive_power",
+      "deckName": "Explosive Power",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "martial_arts",
+      "deckId": "martial_arts_xing_yi_quan_five_element_strikes",
+      "deckName": "Five Element Strikes",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "psiops",
+      "deckId": "psiops_clairvoyance_and_telepathy_clairvoyant_perception",
+      "deckName": "Clairvoyant Perception",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "psiops",
+      "deckId": "psiops_clairvoyance_and_telepathy_mind_to_mind_communication",
+      "deckName": "Mind-to-Mind Communication",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "psiops",
+      "deckId": "psiops_clairvoyance_and_telepathy_prophetic_dreams",
+      "deckName": "Prophetic Dreams",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "psiops",
+      "deckId": "psiops_energy_manipulation_aura_sensing_and_control",
+      "deckName": "Aura Sensing and Control",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "psiops",
+      "deckId": "psiops_energy_manipulation_energy_channeling",
+      "deckName": "Energy Channeling",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "psiops",
+      "deckId": "psiops_energy_manipulation_psionic_deflection",
+      "deckName": "Psionic Deflection",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "psiops",
+      "deckId": "psiops_psionic_training_mental_energy_control",
+      "deckName": "Mental Energy Control",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "psiops",
+      "deckId": "psiops_psionic_training_psi_exercises",
+      "deckName": "Psi Exercises",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "psiops",
+      "deckId": "psiops_psionic_training_psionic_meditation",
+      "deckName": "Psionic Meditation",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "psiops",
+      "deckId": "psiops_psionic_weaponry_energy_weapons_training",
+      "deckName": "Energy Weapons Training",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "psiops",
+      "deckId": "psiops_psionic_weaponry_psi_blade_techniques",
+      "deckName": "Psi Blade Techniques",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "psiops",
+      "deckId": "psiops_psionic_weaponry_telekinetic_strikes",
+      "deckName": "Telekinetic Strikes",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "psiops",
+      "deckId": "psiops_psychic_shielding_anti_psychic_countermeasures",
+      "deckName": "Anti-Psychic Countermeasures",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "psiops",
+      "deckId": "psiops_psychic_shielding_energy_barriers",
+      "deckName": "Energy Barriers",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "psiops",
+      "deckId": "psiops_psychic_shielding_mental_fortress_building",
+      "deckName": "Mental Fortress Building",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "psiops",
+      "deckId": "psiops_remote_viewing_controlled_viewing_methods",
+      "deckName": "Controlled Viewing Methods",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "psiops",
+      "deckId": "psiops_remote_viewing_psychic_perception",
+      "deckName": "Psychic Perception",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "psiops",
+      "deckId": "psiops_remote_viewing_target_acquisition",
+      "deckName": "Target Acquisition",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "war_strategy",
+      "deckId": "war_strategy_asymmetric_warfare_counter_terrorism_operations",
+      "deckName": "Counter-Terrorism Operations",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "war_strategy",
+      "deckId": "war_strategy_asymmetric_warfare_insurgency_tactics",
+      "deckName": "Insurgency Tactics",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "war_strategy",
+      "deckId": "war_strategy_asymmetric_warfare_urban_warfare_strategies",
+      "deckName": "Urban Warfare Strategies",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "war_strategy",
+      "deckId": "war_strategy_cyber_warfare_strategy_cyber_intelligence_operations",
+      "deckName": "Cyber Intelligence Operations",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "war_strategy",
+      "deckId": "war_strategy_cyber_warfare_strategy_defensive_network_security",
+      "deckName": "Defensive Network Security",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "war_strategy",
+      "deckId": "war_strategy_cyber_warfare_strategy_offensive_cyber_tactics",
+      "deckName": "Offensive Cyber Tactics",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "war_strategy",
+      "deckId": "war_strategy_geopolitical_analysis_economic_sanctions_tactics",
+      "deckName": "Economic Sanctions Tactics",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "war_strategy",
+      "deckId": "war_strategy_geopolitical_analysis_global_conflict_trends",
+      "deckName": "Global Conflict Trends",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "war_strategy",
+      "deckId": "war_strategy_geopolitical_analysis_political_warfare_analysis",
+      "deckName": "Political Warfare Analysis",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "war_strategy",
+      "deckId": "war_strategy_military_strategy_combined_arms_operations",
+      "deckName": "Combined Arms Operations",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "war_strategy",
+      "deckId": "war_strategy_military_strategy_force_maneuvering",
+      "deckName": "Force Maneuvering",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "war_strategy",
+      "deckId": "war_strategy_military_strategy_supply_chain_tactics",
+      "deckName": "Supply Chain Tactics",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "war_strategy",
+      "deckId": "war_strategy_psychological_operations_tactics_counter_psyops_strategies",
+      "deckName": "Counter-PsyOps Strategies",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "war_strategy",
+      "deckId": "war_strategy_psychological_operations_tactics_covert_psychological_warfare",
+      "deckName": "Covert Psychological Warfare",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "war_strategy",
+      "deckId": "war_strategy_psychological_operations_tactics_influence_campaigns",
+      "deckName": "Influence Campaigns",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "war_strategy",
+      "deckId": "war_strategy_special_operations_planning_covert_infiltration_methods",
+      "deckName": "Covert Infiltration Methods",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "war_strategy",
+      "deckId": "war_strategy_special_operations_planning_extraction_and_escape_tactics",
+      "deckName": "Extraction and Escape Tactics",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "war_strategy",
+      "deckId": "war_strategy_special_operations_planning_mission_planning_and_execution",
+      "deckName": "Mission Planning and Execution",
+      "cardCount": 2,
+      "issues": [
+        "thin-deck (2 cards)"
+      ]
+    },
+    {
+      "shardId": "web_three",
+      "deckId": "web_three_blockchain_fundamentals_blockchain_architecture",
+      "deckName": "Blockchain Architecture",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "web_three",
+      "deckId": "web_three_blockchain_fundamentals_consensus_algorithms",
+      "deckName": "Consensus Algorithms",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "web_three",
+      "deckId": "web_three_blockchain_fundamentals_cryptographic_primitives",
+      "deckName": "Cryptographic Primitives",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "web_three",
+      "deckId": "web_three_decentralized_applications_dapp_architecture",
+      "deckName": "dApp Architecture",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "web_three",
+      "deckId": "web_three_decentralized_applications_oracle_and_data_feeds",
+      "deckName": "Oracles and Data Feeds",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "web_three",
+      "deckId": "web_three_decentralized_applications_web_three_frontend_development",
+      "deckName": "Decentralized Frontend Development",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "web_three",
+      "deckId": "web_three_decentralized_identity_and_privacy_confidential_transactions",
+      "deckName": "Confidential Transactions",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "web_three",
+      "deckId": "web_three_decentralized_identity_and_privacy_identity_on_blockchain",
+      "deckName": "Identity on Blockchain",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "web_three",
+      "deckId": "web_three_decentralized_identity_and_privacy_zk_proofs_and_snarks",
+      "deckName": "Zero-Knowledge Proofs (ZKPs) & SNARKs",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "web_three",
+      "deckId": "web_three_smart_contract_development_gas_efficiency_optimization",
+      "deckName": "Gas Efficiency Optimization",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "web_three",
+      "deckId": "web_three_smart_contract_development_smart_contract_audits",
+      "deckName": "Smart Contract Audits",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "web_three",
+      "deckId": "web_three_smart_contract_development_solidity_basics",
+      "deckName": "Solidity Basics",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "web_three",
+      "deckId": "web_three_tokenomics_and_defi_defi_protocol_mechanics",
+      "deckName": "DeFi Protocol Mechanics",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "web_three",
+      "deckId": "web_three_tokenomics_and_defi_governance_and_daos",
+      "deckName": "Governance & DAOs",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "web_three",
+      "deckId": "web_three_tokenomics_and_defi_token_design_and_distribution",
+      "deckName": "Token Design & Distribution",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "web_three",
+      "deckId": "web_three_web_three_security_and_auditing_blockchain_pen_testing",
+      "deckName": "Blockchain Penetration Testing",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "web_three",
+      "deckId": "web_three_web_three_security_and_auditing_common_smart_contract_vulnerabilities",
+      "deckName": "Common Smart Contract Vulnerabilities",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    },
+    {
+      "shardId": "web_three",
+      "deckId": "web_three_web_three_security_and_auditing_web_three_security_frameworks",
+      "deckName": "Decentralized Security Frameworks",
+      "cardCount": 3,
+      "issues": [
+        "thin-deck (3 cards)"
+      ]
+    }
+  ]
+}

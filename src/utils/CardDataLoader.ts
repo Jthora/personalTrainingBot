@@ -73,15 +73,27 @@ class CardDataLoader {
                                                     const summaryText = typeof card.summaryText === 'string'
                                                         ? card.summaryText
                                                         : '';
+                                                    const duration = typeof card.duration === 'number'
+                                                        ? card.duration
+                                                        : typeof card.duration === 'string'
+                                                        ? parseFloat(card.duration) || 0
+                                                        : 0;
                                                     return {
                                                         id: card.id,
                                                         title: card.title,
                                                         description: card.description,
                                                         bulletpoints: bulletpoints,
-                                                        duration: card.duration,
+                                                        duration,
                                                         difficulty: card.difficulty,
                                                         summaryText,
-                                                        classification: card.classification
+                                                        classification: card.classification,
+                                                        // Pass through new optional fields when present
+                                                        ...(card.content != null && { content: card.content }),
+                                                        ...(Array.isArray(card.exercises) && card.exercises.length > 0 && { exercises: card.exercises }),
+                                                        ...(Array.isArray(card.keyTerms) && card.keyTerms.length > 0 && { keyTerms: card.keyTerms }),
+                                                        ...(Array.isArray(card.references) && card.references.length > 0 && { references: card.references }),
+                                                        ...(Array.isArray(card.prerequisites) && card.prerequisites.length > 0 && { prerequisites: card.prerequisites }),
+                                                        ...(Array.isArray(card.learningObjectives) && card.learningObjectives.length > 0 && { learningObjectives: card.learningObjectives }),
                                                     };
                                                 })
                                             };

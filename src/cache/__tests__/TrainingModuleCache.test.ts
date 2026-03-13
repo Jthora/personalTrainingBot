@@ -163,4 +163,25 @@ describe('TrainingModuleCache', () => {
         expect(cache.isCardSelected('card-one')).toBe(true);
         expect(cache.isCardDeckSelected('deck-morning')).toBe(true);
     });
+
+    it('returns module stats with correct card and deck counts', async () => {
+        await cache.loadData(sampleModules);
+        const stats = cache.getModuleStats('module-alpha');
+        expect(stats.totalDecks).toBe(1);
+        expect(stats.totalCards).toBe(2);
+    });
+
+    it('returns zero stats for an unknown module', async () => {
+        await cache.loadData(sampleModules);
+        const stats = cache.getModuleStats('nonexistent');
+        expect(stats.totalDecks).toBe(0);
+        expect(stats.totalCards).toBe(0);
+    });
+
+    it('updates module stats after reloading with additional cards', async () => {
+        await cache.loadData(modulesWithAdditionalCard);
+        const stats = cache.getModuleStats('module-alpha');
+        expect(stats.totalDecks).toBe(1);
+        expect(stats.totalCards).toBe(3);
+    });
 });

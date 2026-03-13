@@ -1,0 +1,111 @@
+.heatmapContainer {
+  position: relative;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  background: var(--surface-card, #172238);
+}
+
+.heading {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary, rgba(227, 236, 255, 0.68));
+  margin: 0 0 8px;
+  font-weight: 600;
+}
+
+.monthRow {
+  position: relative;
+  height: 14px;
+  margin-bottom: 2px;
+}
+
+.monthLabel {
+  position: absolute;
+  font-size: 9px;
+  color: var(--text-muted, rgba(227, 236, 255, 0.5));
+}
+
+.svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.dayLabel {
+  font-size: 9px;
+  fill: var(--text-muted, rgba(227, 236, 255, 0.5));
+  font-family: inherit;
+}
+
+/* ── Intensity levels ── */
+
+.level0 {
+  fill: rgba(255, 255, 255, 0.04);
+}
+
+.level1 {
+  fill: rgba(90, 127, 255, 0.25);
+}
+
+.level2 {
+  fill: rgba(90, 127, 255, 0.45);
+}
+
+.level3 {
+  fill: rgba(90, 127, 255, 0.7);
+}
+
+.level4 {
+  fill: rgba(90, 127, 255, 0.95);
+}
+
+/* ── Tooltip ── */
+
+.tooltip {
+  background: rgba(4, 7, 9, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 11px;
+  color: var(--text-primary, #E3ECFF);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  pointer-events: none;
+  z-index: 100;
+  white-space: nowrap;
+}
+
+.tooltip strong {
+  font-weight: 700;
+  margin-bottom: 1px;
+}
+
+.tooltip span {
+  color: var(--text-secondary, rgba(227, 236, 255, 0.68));
+}
+
+/* ── Intensity legend ── */
+
+.intensityLegend {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-top: 8px;
+  justify-content: flex-end;
+}
+
+.legendLabel {
+  font-size: 9px;
+  color: var(--text-muted, rgba(227, 236, 255, 0.5));
+  margin: 0 2px;
+}
+
+.legendCell {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  display: inline-block;
+}

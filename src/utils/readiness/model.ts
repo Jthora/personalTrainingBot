@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
 import { sampleMissionKit, type Drill, type MissionKit } from '../../data/missionKits/sampleMissionKit';
 import { validateMissionKit } from './validate';
-import { deriveCompetencySnapshot, type CompetencySnapshot } from './competencyModel';
+import { deriveDomainSnapshot, type DomainProgressSnapshot, type DomainWeightProfile } from './domainProgress';
 import { applyDebriefProgression, type DebriefProgression } from './progressionModel';
 import type { MissionDebriefOutcome } from '../../domain/mission/types';
 import { computeMissionMilestoneProgress, type MissionMilestoneProgress } from './milestones';
@@ -13,7 +13,7 @@ export type ReadinessResult = {
   confidence: 'low' | 'medium' | 'high';
   nextActions: Array<{ id: string; title: string; route: string }>;
   kit: MissionKit;
-  competency: CompetencySnapshot;
+  domainProgress: DomainProgressSnapshot;
   progression: DebriefProgression;
   milestone: MissionMilestoneProgress;
 };
@@ -75,24 +75,26 @@ export function computeReadiness(kit: MissionKit = sampleMissionKit, options: Re
     validatedKits.add(kit.id);
   }
 
-  // Stage 22: resolve active archetype for competency weight and milestone overrides
+  // Stage 22→25: resolve active archetype for domain weight and milestone overrides
   const profile = OperativeProfileStore.get();
   const activeArchetype = profile?.archetypeId ? findArchetype(profile.archetypeId) : undefined;
-  const archetypeWeights = activeArchetype?.competencyWeights;
+  const domainWeights: DomainWeightProfile | undefined = activeArchetype
+    ? { coreDomains: activeArchetype.coreModules, secondaryDomains: activeArchetype.secondaryModules }
+    : undefined;
 
   if (!kit.drills.length) {
-    const competency = deriveCompetencySnapshot(kit, archetypeWeights);
+    const domainProgress = deriveDomainSnapshot(domainWeights);
     const emptyProgression = applyDebriefProgression(0, options.debriefOutcomes ?? []);
     return {
       score: emptyProgression.score,
       confidence: 'low',
       nextActions: [],
       kit,
-      competency,
+      domainProgress,
       progression: emptyProgression.progression,
       milestone: computeMissionMilestoneProgress(
         emptyProgression.score,
-        competency,
+        domainProgress,
         emptyProgression.progression,
         activeArchetype,
       ),
@@ -101,18 +103,18 @@ export function computeReadiness(kit: MissionKit = sampleMissionKit, options: Re
 
   const drillScores = kit.drills.map((d) => computeDrillScore(d));
   const avg = drillScores.reduce((a, b) => a + b, 0) / drillScores.length;
-  const competency = deriveCompetencySnapshot(kit, archetypeWeights);
+  const domainProgress = deriveDomainSnapshot(domainWeights);
   const variance = drillScores.reduce((a, b) => a + Math.pow(b - avg, 2), 0) / drillScores.length;
   const stdev = Math.sqrt(variance);
 
   const confidence: ReadinessResult['confidence'] = stdev > 18 ? 'low' : stdev > 10 ? 'medium' : 'high';
   const nextActions = pickNextActions(kit.drills, 2);
 
-  const blendedBaseScore = clamp(avg * 0.7 + competency.weightedScore * 0.3, 0, 100);
+  const blendedBaseScore = clamp(avg * 0.7 + domainProgress.weightedScore * 0.3, 0, 100);
   const progressionApplied = applyDebriefProgression(blendedBaseScore, options.debriefOutcomes ?? []);
   const milestone = computeMissionMilestoneProgress(
     progressionApplied.score,
-    competency,
+    domainProgress,
     progressionApplied.progression,
     activeArchetype,
   );
@@ -122,7 +124,7 @@ export function computeReadiness(kit: MissionKit = sampleMissionKit, options: Re
     confidence,
     nextActions,
     kit,
-    competency,
+    domainProgress,
     progression: progressionApplied.progression,
     milestone,
   };

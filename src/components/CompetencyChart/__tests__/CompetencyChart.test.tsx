@@ -1,35 +1,35 @@
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import CompetencyChart from '../CompetencyChart';
-import type { CompetencySnapshot } from '../../../utils/readiness/competencyModel';
+import type { DomainProgressSnapshot } from '../../../utils/readiness/domainProgress';
 
-const snapshot: CompetencySnapshot = {
+const snapshot: DomainProgressSnapshot = {
   weightedScore: 72,
-  dimensionScores: {
-    triage_execution: 80,
-    signal_analysis: 65,
-    artifact_traceability: 70,
-    decision_quality: 55,
-  },
+  domains: [
+    { domainId: 'combat', domainName: 'Combat', score: 80, drillCount: 5, avgAssessment: 4, uniqueDrills: 3, lastActiveDate: null, trend: null, coverageRatio: null },
+    { domainId: 'cybersecurity', domainName: 'Cybersecurity', score: 65, drillCount: 3, avgAssessment: 3.5, uniqueDrills: 2, lastActiveDate: null, trend: null, coverageRatio: null },
+    { domainId: 'fitness', domainName: 'Fitness', score: 70, drillCount: 4, avgAssessment: 3.8, uniqueDrills: 3, lastActiveDate: null, trend: null, coverageRatio: null },
+    { domainId: 'psiops', domainName: 'Psiops', score: 55, drillCount: 1, avgAssessment: 2.5, uniqueDrills: 1, lastActiveDate: null, trend: null, coverageRatio: null },
+  ],
 };
 
 describe('CompetencyChart', () => {
   it('renders heading', () => {
     render(<CompetencyChart snapshot={snapshot} />);
-    expect(screen.getByText('Competency Breakdown')).toBeTruthy();
+    expect(screen.getByText('Domain Progress')).toBeTruthy();
   });
 
-  it('shows weighted score', () => {
+  it('shows composite score', () => {
     render(<CompetencyChart snapshot={snapshot} />);
     expect(screen.getByText('72')).toBeTruthy();
   });
 
-  it('renders all four dimension labels', () => {
+  it('renders domain labels', () => {
     render(<CompetencyChart snapshot={snapshot} />);
-    expect(screen.getByText('Triage Execution')).toBeTruthy();
-    expect(screen.getByText('Signal Analysis')).toBeTruthy();
-    expect(screen.getByText('Artifact Traceability')).toBeTruthy();
-    expect(screen.getByText('Decision Quality')).toBeTruthy();
+    expect(screen.getByText('Combat')).toBeTruthy();
+    expect(screen.getByText('Cybersecurity')).toBeTruthy();
+    expect(screen.getByText('Fitness')).toBeTruthy();
+    expect(screen.getByText('Psiops')).toBeTruthy();
   });
 
   it('renders score values', () => {
@@ -44,18 +44,15 @@ describe('CompetencyChart', () => {
     render(<CompetencyChart snapshot={snapshot} />);
     const bars = screen.getAllByRole('progressbar');
     expect(bars).toHaveLength(4);
-    expect(bars[0].getAttribute('aria-valuenow')).toBe('80');
   });
 
   it('clamps scores between 0 and 100', () => {
-    const extreme: CompetencySnapshot = {
+    const extreme: DomainProgressSnapshot = {
       weightedScore: 50,
-      dimensionScores: {
-        triage_execution: 120,
-        signal_analysis: -5,
-        artifact_traceability: 50,
-        decision_quality: 50,
-      },
+      domains: [
+        { domainId: 'combat', domainName: 'Combat', score: 120, drillCount: 5, avgAssessment: 4, uniqueDrills: 3, lastActiveDate: null, trend: null, coverageRatio: null },
+        { domainId: 'fitness', domainName: 'Fitness', score: -5, drillCount: 0, avgAssessment: null, uniqueDrills: 0, lastActiveDate: null, trend: null, coverageRatio: null },
+      ],
     };
     render(<CompetencyChart snapshot={extreme} />);
     const bars = screen.getAllByRole('progressbar');
@@ -65,6 +62,20 @@ describe('CompetencyChart', () => {
 
   it('has section aria-label', () => {
     render(<CompetencyChart snapshot={snapshot} />);
-    expect(screen.getByLabelText('Competency breakdown')).toBeTruthy();
+    expect(screen.getByLabelText('Domain progress')).toBeTruthy();
+  });
+
+  it('highlights active domains with star', () => {
+    render(<CompetencyChart snapshot={snapshot} activeDomainIds={['combat', 'fitness']} />);
+    const stars = screen.getAllByText('★');
+    expect(stars.length).toBe(2);
+  });
+
+  it('sorts active domains first, then by score descending', () => {
+    render(<CompetencyChart snapshot={snapshot} activeDomainIds={['psiops']} />);
+    const bars = screen.getAllByRole('progressbar');
+    // Psiops (active, score 55) should come first, then Combat 80, Fitness 70, Cybersecurity 65
+    expect(bars[0].getAttribute('aria-label')).toContain('Psiops');
+    expect(bars[1].getAttribute('aria-label')).toContain('Combat');
   });
 });

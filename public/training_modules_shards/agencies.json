@@ -1,1 +1,3373 @@
-{"module":{"id":"agencies","name":"Agencies","color":"#8B4513","description":"Training programs for intelligence and law enforcement agencies.","submodules":["cia_training","fbi_training","homeland_security","secret_service","interpol_training"]},"subModules":{"agencies_cia_training":{"id":"cia_training","name":"CIA Training","description":"Training programs for operatives focusing on intelligence gathering, tradecraft, and covert operations.","difficulty":"Advanced","estimated_time":"24-48 months","focus":["Clandestine Operations","Counterintelligence","Psychological Manipulation"],"cardDecks":["spy_tradecraft","undercover_surveillance","counterintelligence_tactics"]},"agencies_fbi_training":{"id":"fbi_training","name":"FBI Training","description":"Federal Bureau of Investigation training on criminal investigations, profiling, and forensic analysis.","difficulty":"Advanced","estimated_time":"36 months","focus":["Criminal Profiling","Cybercrime Investigation","Counterterrorism"],"cardDecks":["criminal_profiling_methods","forensic_analysis","cyber_fraud_detection"]},"agencies_homeland_security":{"id":"homeland_security","name":"Homeland Security","description":"National security training focused on terrorism prevention, border security, and emergency response.","difficulty":"Intermediate","estimated_time":"18-24 months","focus":["Terrorism Prevention","Border Security","Crisis Management"],"cardDecks":["terrorist_threat_analysis","border_control_tactics","emergency_response_drills"]},"agencies_interpol_training":{"id":"interpol_training","name":"Interpol Training","description":"International law enforcement training covering cross-border criminal investigations and international law.","difficulty":"Intermediate","estimated_time":"12-24 months","focus":["International Law","Cross-Border Investigations","Organized Crime Tracking"],"cardDecks":["international_law_basics","criminal_network_tracking","cross_border_smuggling_cases"]},"agencies_secret_service":{"id":"secret_service","name":"Secret Service","description":"Training for protective services, financial crime investigations, and high-risk security operations.","difficulty":"Advanced","estimated_time":"24-36 months","focus":["Dignitary Protection","Financial Crime Investigation","High-Risk Operations"],"cardDecks":["protective_service_tactics","financial_fraud_detection","emergency_evasion_maneuvers"]}},"cardDecks":{"agencies_cia_training_counterintelligence_tactics":{"id":"counterintelligence_tactics","name":"Counterintelligence Tactics","description":"Defensive measures to detect and neutralize enemy intelligence operations.","focus":["Spy Detection","Deception Analysis"],"cards":[{"id":"double_agent_detection","title":"Double Agent Identification","description":"Recognizing and handling infiltrators within an organization.","bulletpoints":["Analyze inconsistencies in behavior","Cross-check mission details","Implement controlled misinformation"],"duration":6,"difficulty":"Advanced","summaryText":"Expose double agents by flagging behavioral inconsistencies, cross-validating mission intel across trusted sources, and deploying controlled misinformation to confirm loyalties before threats escalate."},{"id":"disinformation_campaigns","title":"Disinformation & Psychological Warfare","description":"Using controlled leaks and deceptive strategies to mislead adversaries.","bulletpoints":["Seed false intelligence through secure channels","Use media manipulation to alter narratives","Employ psychological tactics to destabilize targets"],"duration":7,"difficulty":"Advanced","summaryText":"Run disciplined disinformation operations by seeding false intelligence through hardened channels, steering media narratives with precision, and layering psychological pressure so adversaries chase fabricated threats."}]},"agencies_cia_training_spy_tradecraft":{"id":"spy_tradecraft","name":"Spy Tradecraft","description":"Core espionage skills including deception, disguise, and clandestine communication.","focus":["Deception Tactics","Operational Security"],"cards":[{"id":"legend_building","title":"Legend Building","description":"Creating and maintaining false identities for deep cover operations.","bulletpoints":["Develop detailed backstories","Memorize false credentials","Practice consistent mannerisms"],"duration":6,"difficulty":"Advanced","summaryText":"Build a resilient cover identity by scripting deep backstories, memorizing forged credentials, and rehearsing consistent mannerisms so every interaction reinforces your legend under hostile scrutiny and withstands background probing."},{"id":"dead_drops","title":"Dead Drops & Secure Communications","description":"Using hidden drop locations for safe, anonymous intelligence exchange.","bulletpoints":["Select inconspicuous locations","Use one-time codes for retrieval","Ensure minimal exposure to counterintelligence"],"duration":5,"difficulty":"Intermediate","summaryText":"Master dead drop exchanges by choosing inconspicuous locations, pairing them with one-time retrieval codes, and choreographing low-visibility arrival windows so intelligence moves without exposing assets."}]},"agencies_cia_training_undercover_surveillance":{"id":"undercover_surveillance","name":"Undercover Surveillance","description":"Training in covert observation, intelligence gathering, and tailing suspects without detection.","focus":["Foot Surveillance","Electronic Tracking"],"cards":[{"id":"shadowing","title":"Shadowing & Tail Techniques","description":"Following a target without raising suspicion.","bulletpoints":["Maintain varying distances","Use multiple observers to avoid detection","Blend into urban and rural environments"],"duration":7,"difficulty":"Advanced","summaryText":"Conduct discreet shadowing operations by varying distance and pace, rotating observers to break patterns, and blending into urban or rural backdrops so targets never sense persistent surveillance during extended operations."},{"id":"electronic_monitoring","title":"Electronic Surveillance Basics","description":"Using high-tech methods to track and monitor targets remotely.","bulletpoints":["Deploy covert listening devices","Analyze movement patterns","Use encrypted channels for secure data transmission"],"duration":6,"difficulty":"Advanced","summaryText":"Execute covert electronic surveillance by planting low-profile sensors, mapping movement patterns in real time, and relaying encrypted intelligence to command so remote monitoring stays invisible."}]},"agencies_fbi_training_criminal_profiling_methods":{"id":"criminal_profiling_methods","name":"Criminal Profiling Methods","description":"Techniques for analyzing behavior patterns and predicting criminal actions.","focus":["Behavioral Analysis","Psychological Profiling"],"cards":[{"id":"offender_typologies","title":"Offender Typologies","description":"Classifying criminals based on behavior, motive, and crime patterns.","bulletpoints":["Identify signature behaviors","Differentiate organized vs. disorganized offenders","Analyze crime scene characteristics"],"duration":6,"difficulty":"Advanced","summaryText":"Profile offenders accurately by mapping signature behaviors, separating organized from disorganized patterns, and decoding crime scene indicators to forecast their next move."},{"id":"threat_assessment","title":"Threat Assessment & Risk Evaluation","description":"Evaluating potential threats based on historical behavioral data.","bulletpoints":["Analyze suspect psychological markers","Apply structured risk assessment models","Identify pre-incident indicators of violence"],"duration":7,"difficulty":"Advanced","summaryText":"Deliver precise threat assessments by dissecting psychological markers, running structured risk models, and flagging pre-incident signals before violence escalates."}]},"agencies_fbi_training_cyber_fraud_detection":{"id":"cyber_fraud_detection","name":"Cyber Fraud Detection","description":"Training in digital financial crime investigations and online fraud prevention.","focus":["Financial Crime","Cybersecurity Threats"],"cards":[{"id":"digital_payment_fraud","title":"Digital Payment Fraud & Identity Theft","description":"Identifying and preventing fraudulent financial transactions online.","bulletpoints":["Detect anomalies in payment transactions","Trace fraudulent cryptocurrency transfers","Use AI-based fraud detection tools"],"duration":6,"difficulty":"Advanced","summaryText":"Uncover digital payment fraud by spotting anomalous transaction patterns, tracing crypto laundering paths, and deploying AI defenses before accounts are drained."},{"id":"dark_web_financial_crime","title":"Dark Web Financial Crime Investigations","description":"Investigating illegal financial activities on encrypted online marketplaces.","bulletpoints":["Analyze blockchain transactions for illicit activity","Use OSINT to track dark web financial fraud","Understand money laundering techniques in cybercrime"],"duration":7,"difficulty":"Advanced","summaryText":"Pursue dark web fraud rings by correlating blockchain trails, fusing OSINT leads, and decoding laundering techniques that hide illicit profits online."}]},"agencies_fbi_training_forensic_analysis":{"id":"forensic_analysis","name":"Forensic Analysis","description":"Applying scientific principles to criminal investigations and evidence evaluation.","focus":["Crime Scene Processing","Evidence Examination"],"cards":[{"id":"dna_fingerprint_analysis","title":"DNA & Fingerprint Analysis","description":"Extracting and matching biological evidence to confirm suspect identities.","bulletpoints":["Collect and store DNA samples properly","Match fingerprint patterns using AFIS","Analyze trace DNA for forensic leads"],"duration":6,"difficulty":"Advanced","summaryText":"Secure convictions by harvesting pristine DNA, matching fingerprints through AFIS, and exploiting trace biological evidence to tighten suspect attribution."},{"id":"ballistics_forensics","title":"Ballistics & Firearms Forensics","description":"Identifying weapons and ammunition used in crimes through forensic techniques.","bulletpoints":["Analyze bullet striations and shell casings","Match firearm residues to specific guns","Utilize gunshot residue (GSR) testing"],"duration":7,"difficulty":"Advanced","summaryText":"Reconstruct shootings by comparing bullet striations, linking residues to specific firearms, and validating trajectories with comprehensive ballistics forensics."}]},"agencies_homeland_security_border_control_tactics":{"id":"border_control_tactics","name":"Border Control Tactics","description":"Strategies for monitoring, securing, and managing border operations to prevent illegal activities.","focus":["Border Surveillance","Smuggling Prevention"],"cards":[{"id":"human_trafficking_detection","title":"Human Trafficking Detection","description":"Identifying and intercepting human trafficking operations at national borders.","bulletpoints":["Recognize signs of coerced and trafficked individuals","Utilize biometric and database matching for identity verification","Work with international agencies to disrupt trafficking networks"],"duration":6,"difficulty":"Intermediate","summaryText":"Disrupt human trafficking at the border by spotting coercion cues, validating identities through biometric systems, and syncing with international partners to dismantle the network."},{"id":"drug_smuggling_prevention","title":"Drug Smuggling Prevention","description":"Detecting and intercepting illegal narcotics transported across borders.","bulletpoints":["Identify concealment methods used in drug smuggling","Use canine units and chemical detection systems","Implement predictive analytics for trafficking patterns"],"duration":7,"difficulty":"Advanced","summaryText":"Interdict drug smuggling by recognizing concealment tricks, pairing canine sweeps with chemical sensors, and using predictive analytics to preempt trafficking routes."}]},"agencies_homeland_security_emergency_response_drills":{"id":"emergency_response_drills","name":"Emergency Response Drills","description":"Preparing for rapid and coordinated responses to national security incidents and disasters.","focus":["Crisis Management","Disaster Response"],"cards":[{"id":"mass_casualty_incident_response","title":"Mass Casualty Incident Response","description":"Managing large-scale emergencies, including terrorist attacks and natural disasters.","bulletpoints":["Establish emergency triage protocols","Coordinate with medical and law enforcement agencies","Develop rapid deployment response plans"],"duration":6,"difficulty":"Advanced","summaryText":"Command mass-casualty incidents by standing up triage lines fast, syncing medical and law enforcement assets, and executing prebuilt deployment plans under pressure."},{"id":"active_shooter_response","title":"Active Shooter Response","description":"Strategies for neutralizing threats and securing civilians in mass attack scenarios.","bulletpoints":["Implement ALERRT (Advanced Law Enforcement Rapid Response Training)","Establish immediate incident containment zones","Coordinate tactical entry and hostage rescue operations"],"duration":7,"difficulty":"Advanced","summaryText":"Neutralize active shooters by applying ALERRT tactics, locking down containment zones, and orchestrating coordinated entries that prioritize civilian extraction."}]},"agencies_homeland_security_terrorist_threat_analysis":{"id":"terrorist_threat_analysis","name":"Terrorist Threat Analysis","description":"Identifying and assessing potential terrorist threats through intelligence and behavioral analysis.","focus":["Threat Detection","Behavioral Profiling"],"cards":[{"id":"radicalization_indicators","title":"Identifying Radicalization Indicators","description":"Understanding behavioral and ideological markers associated with terrorist recruitment.","bulletpoints":["Analyze social media activity for extremist rhetoric","Identify recruitment patterns and radicalization pipelines","Monitor changes in behavioral and financial activities"],"duration":6,"difficulty":"Intermediate","summaryText":"Spot early radicalization by scanning social feeds for extremist cues, mapping recruitment pipelines, and tracking behavioral or financial shifts before threats coagulate."},{"id":"explosive_device_recognition","title":"Explosive Device Recognition","description":"Recognizing common IED components and understanding terrorist attack methodologies.","bulletpoints":["Identify chemical precursors and suspicious purchases","Analyze past attack case studies for threat modeling","Understand bomb-making techniques used by terrorist cells"],"duration":7,"difficulty":"Advanced","summaryText":"Detect improvised explosives by flagging precursor chemical buys, dissecting historical attack playbooks, and decoding assembly techniques favored by terrorist cells."}]},"agencies_interpol_training_criminal_network_tracking":{"id":"criminal_network_tracking","name":"Criminal Network Tracking","description":"Identifying and dismantling transnational organized crime groups and syndicates.","focus":["Organized Crime","Financial Tracking"],"cards":[{"id":"money_laundering_networks","title":"Money Laundering & Financial Crime Networks","description":"Tracking illicit financial flows across international banking systems.","bulletpoints":["Analyze suspicious transaction reports (STRs)","Identify shell companies used for money laundering","Coordinate with financial intelligence units (FIUs)"],"duration":6,"difficulty":"Advanced","summaryText":"Trace global laundering webs by triaging STRs, piercing shell-company veils, and syncing with FIUs to choke off illicit cash flows."},{"id":"cartel_investigations","title":"Drug Cartel & Human Trafficking Investigations","description":"Methods for infiltrating and dismantling international criminal syndicates.","bulletpoints":["Utilize undercover operations in organized crime cases","Monitor encrypted communication channels","Analyze trafficking routes and logistics networks"],"duration":7,"difficulty":"Advanced","summaryText":"Crack transnational cartels by embedding undercover assets, surveilling encrypted comms, and mapping trafficking logistics to collapse their networks."}]},"agencies_interpol_training_cross_border_smuggling_cases":{"id":"cross_border_smuggling_cases","name":"Cross-Border Smuggling Cases","description":"Investigative strategies for combating smuggling of weapons, narcotics, and contraband.","focus":["Smuggling Tactics","International Coordination"],"cards":[{"id":"contraband_detection","title":"Contraband Detection & Seizure Operations","description":"Identifying hidden smuggling compartments in vehicles, cargo, and luggage.","bulletpoints":["Use advanced scanning and X-ray technologies","Train in physical search methods for hidden compartments","Analyze smuggling patterns based on historical data"],"duration":6,"difficulty":"Intermediate","summaryText":"Seize contraband by pairing advanced scanning tech with meticulous manual searches and mining past cases for emerging concealment patterns."},{"id":"covert_border_surveillance","title":"Covert Border Surveillance & Intelligence Sharing","description":"Monitoring border crossings for illegal smuggling activities.","bulletpoints":["Deploy real-time border surveillance technologies","Coordinate intelligence-sharing with neighboring countries","Implement tracking methods for smuggling convoys"],"duration":7,"difficulty":"Advanced","summaryText":"Thwart cross-border smuggling by deploying real-time surveillance, fusing partner intel, and tracking convoy movements before they vanish."}]},"agencies_interpol_training_international_law_basics":{"id":"international_law_basics","name":"International Law Basics","description":"Fundamental principles of international law, treaties, and jurisdictional challenges.","focus":["Legal Frameworks","Jurisdictional Coordination"],"cards":[{"id":"treaty_enforcement","title":"Treaty Enforcement & International Agreements","description":"Understanding the role of treaties and agreements in international criminal law.","bulletpoints":["Analyze key international legal agreements","Understand the role of the United Nations in enforcement","Coordinate investigations across multiple jurisdictions"],"duration":6,"difficulty":"Intermediate","summaryText":"Enforce cross-border cases by interpreting cornerstone treaties, leveraging UN mechanisms, and aligning multinational investigators under shared mandates."},{"id":"extradition_laws","title":"Extradition Laws & Procedures","description":"Mechanisms for requesting and executing extraditions across borders.","bulletpoints":["Understand bilateral and multilateral extradition treaties","Navigate legal challenges in high-profile extraditions","Identify cases where diplomatic immunity applies"],"duration":7,"difficulty":"Advanced","summaryText":"Execute airtight extraditions by mastering treaty frameworks, countering defense obstacles, and flagging immunity claims before they derail custody transfers."}]},"agencies_secret_service_emergency_evasion_maneuvers":{"id":"emergency_evasion_maneuvers","name":"Emergency Evasion Maneuvers","description":"High-speed escape and defensive driving techniques for emergency situations.","focus":["Evasive Driving","High-Risk Escape Tactics"],"cards":[{"id":"high_speed_escape_drills","title":"High-Speed Escape Drills","description":"Executing rapid escape maneuvers to evade potential threats.","bulletpoints":["Perform J-turns, PIT maneuvers, and evasive acceleration techniques","Utilize cover and concealment during high-risk pursuits","React dynamically to hostile vehicle threats"],"duration":6,"difficulty":"Advanced","summaryText":"Rip through high-speed escape drills by chaining J-turns, exploiting cover, and adapting instantly to hostile vehicles to pull principals out of danger."},{"id":"defensive_countermeasures","title":"Defensive Countermeasures in Close Quarters","description":"Applying defensive techniques in confined and high-stress situations.","bulletpoints":["Utilize emergency barricading strategies","Evade attackers using close-quarters movement","Deploy tactical response measures to neutralize immediate threats"],"duration":7,"difficulty":"Advanced","summaryText":"Survive close-quarter ambushes by locking down barricades, slipping attackers with agile footwork, and delivering decisive countermeasures before they regain initiative."}]},"agencies_secret_service_financial_fraud_detection":{"id":"financial_fraud_detection","name":"Financial Fraud Detection","description":"Investigating fraudulent financial transactions and identifying money laundering activities.","focus":["Forensic Accounting","Cyber Fraud Prevention"],"cards":[{"id":"fake_currency_detection","title":"Counterfeit Currency Detection","description":"Techniques for identifying and intercepting counterfeit currency.","bulletpoints":["Analyze security features in legal tender","Use UV scanning and microprint detection techniques","Track illegal printing operations and distribution networks"],"duration":6,"difficulty":"Intermediate","summaryText":"Stop counterfeit cash by scrutinizing security features, wielding UV and microprint tools, and mapping illicit printing pipelines before money hits circulation."},{"id":"forensic_accounting_investigations","title":"Forensic Accounting Investigations","description":"Tracing illicit financial activities through forensic auditing.","bulletpoints":["Analyze financial statements for irregularities","Identify shell companies and fraudulent bookkeeping","Work with international agencies on cross-border fraud cases"],"duration":7,"difficulty":"Advanced","summaryText":"Expose hidden fraud by dissecting financial statements, unraveling shell-company ledgers, and partnering with global teams to follow dirty money."}]},"agencies_secret_service_protective_service_tactics":{"id":"protective_service_tactics","name":"Protective Service Tactics","description":"Strategies and techniques for VIP and dignitary protection in high-risk environments.","focus":["Close Protection","Threat Neutralization"],"cards":[{"id":"advance_security_planning","title":"Advance Security Planning","description":"Developing detailed security protocols and contingency plans before a protective mission.","bulletpoints":["Conduct site assessments and vulnerability analyses","Plan primary and secondary evacuation routes","Coordinate security teams for seamless operations"],"duration":6,"difficulty":"Advanced","summaryText":"Lock in advance security plans by vetting sites, plotting redundant escape routes, and synchronizing protection teams before the principal arrives."},{"id":"protective_formation_drills","title":"Protective Formation Drills","description":"Executing defensive formations and response tactics during a live security threat.","bulletpoints":["Utilize diamond and wedge formations for optimal coverage","React dynamically to evolving threats","Manage crowd control and civilian safety under pressure"],"duration":7,"difficulty":"Advanced","summaryText":"Shield principals in motion by refining diamond and wedge formations, reacting fluidly to threats, and steering crowds without breaking protective coverage."}]}}}
+{
+  "module": {
+    "id": "agencies",
+    "name": "Agencies",
+    "color": "#8B4513",
+    "description": "Training programs for intelligence and law enforcement agencies.",
+    "submodules": [
+      "cia_training",
+      "fbi_training",
+      "homeland_security",
+      "secret_service",
+      "interpol_training"
+    ]
+  },
+  "subModules": {
+    "agencies_cia_training": {
+      "id": "cia_training",
+      "name": "CIA Training",
+      "description": "Training programs for operatives focusing on intelligence gathering, tradecraft, and covert operations.",
+      "difficulty": "Advanced",
+      "estimated_time": "24-48 months",
+      "focus": [
+        "Clandestine Operations",
+        "Counterintelligence",
+        "Psychological Manipulation"
+      ],
+      "cardDecks": [
+        "spy_tradecraft",
+        "undercover_surveillance",
+        "counterintelligence_tactics"
+      ]
+    },
+    "agencies_fbi_training": {
+      "id": "fbi_training",
+      "name": "FBI Training",
+      "description": "Federal Bureau of Investigation training on criminal investigations, profiling, and forensic analysis.",
+      "difficulty": "Advanced",
+      "estimated_time": "36 months",
+      "focus": [
+        "Criminal Profiling",
+        "Cybercrime Investigation",
+        "Counterterrorism"
+      ],
+      "cardDecks": [
+        "criminal_profiling_methods",
+        "forensic_analysis",
+        "cyber_fraud_detection"
+      ]
+    },
+    "agencies_homeland_security": {
+      "id": "homeland_security",
+      "name": "Homeland Security",
+      "description": "National security training focused on terrorism prevention, border security, and emergency response.",
+      "difficulty": "Intermediate",
+      "estimated_time": "18-24 months",
+      "focus": [
+        "Terrorism Prevention",
+        "Border Security",
+        "Crisis Management"
+      ],
+      "cardDecks": [
+        "terrorist_threat_analysis",
+        "border_control_tactics",
+        "emergency_response_drills"
+      ]
+    },
+    "agencies_interpol_training": {
+      "id": "interpol_training",
+      "name": "Interpol Training",
+      "description": "International law enforcement training covering cross-border criminal investigations and international law.",
+      "difficulty": "Intermediate",
+      "estimated_time": "12-24 months",
+      "focus": [
+        "International Law",
+        "Cross-Border Investigations",
+        "Organized Crime Tracking"
+      ],
+      "cardDecks": [
+        "international_law_basics",
+        "criminal_network_tracking",
+        "cross_border_smuggling_cases"
+      ]
+    },
+    "agencies_secret_service": {
+      "id": "secret_service",
+      "name": "Secret Service",
+      "description": "Training for protective services, financial crime investigations, and high-risk security operations.",
+      "difficulty": "Advanced",
+      "estimated_time": "24-36 months",
+      "focus": [
+        "Dignitary Protection",
+        "Financial Crime Investigation",
+        "High-Risk Operations"
+      ],
+      "cardDecks": [
+        "protective_service_tactics",
+        "financial_fraud_detection",
+        "emergency_evasion_maneuvers"
+      ]
+    }
+  },
+  "cardDecks": {
+    "agencies_cia_training_counterintelligence_tactics": {
+      "id": "counterintelligence_tactics",
+      "name": "Counterintelligence Tactics",
+      "description": "Defensive measures to detect and neutralize enemy intelligence operations.",
+      "focus": [
+        "Spy Detection",
+        "Deception Analysis"
+      ],
+      "cards": [
+        {
+          "id": "double_agent_detection",
+          "title": "Double Agent Identification",
+          "description": "Recognizing and handling infiltrators within an organization.",
+          "bulletpoints": [
+            "Analyze inconsistencies in behavior",
+            "Cross-check mission details",
+            "Implement controlled misinformation"
+          ],
+          "duration": 6,
+          "difficulty": "Advanced",
+          "summaryText": "Expose double agents by flagging behavioral inconsistencies, cross-validating mission intel across trusted sources, and deploying controlled misinformation to confirm loyalties before threats escalate.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Double Agent Identification\".",
+              "expectedOutcome": "Key points: Analyze inconsistencies in behavior; Cross-check mission details; Implement controlled misinformation"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is double agent identification important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of double agent identification."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of double agent identification",
+            "Apply knowledge of analyze inconsistencies in behavior",
+            "Evaluate the significance of recognizing and handling infiltrators within an organization"
+          ],
+          "keyTerms": [
+            "Double Agent Identification",
+            "Analyze inconsistencies",
+            "Cross-check mission",
+            "Implement controlled"
+          ]
+        },
+        {
+          "id": "disinformation_campaigns",
+          "title": "Disinformation & Psychological Warfare",
+          "description": "Using controlled leaks and deceptive strategies to mislead adversaries.",
+          "bulletpoints": [
+            "Seed false intelligence through secure channels",
+            "Use media manipulation to alter narratives",
+            "Employ psychological tactics to destabilize targets"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "summaryText": "Run disciplined disinformation operations by seeding false intelligence through hardened channels, steering media narratives with precision, and layering psychological pressure so adversaries chase fabricated threats.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Disinformation & Psychological Warfare\".",
+              "expectedOutcome": "Key points: Seed false intelligence through secure channels; Use media manipulation to alter narratives; Employ psychological tactics to destabilize targets"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is disinformation & psychological warfare important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of disinformation & psychological warfare."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of disinformation & psychological warfare",
+            "Apply knowledge of seed false intelligence through secure channels",
+            "Evaluate the significance of using controlled leaks and deceptive strategies to mislead adversaries"
+          ],
+          "keyTerms": [
+            "Disinformation",
+            "Psychological Warfare",
+            "Seed false",
+            "media manipulation",
+            "Employ psychological"
+          ]
+        },
+        {
+          "id": "counterintelligence_tactics_fundamentals",
+          "title": "Counterintelligence Tactics: Core Fundamentals",
+          "description": "Understanding the foundational principles and essential concepts that underpin counterintelligence tactics.",
+          "bulletpoints": [
+            "Define the key terminology used in counterintelligence tactics",
+            "Identify the core principles that guide effective practice",
+            "Recognize the historical context and evolution of this discipline",
+            "Understand the relationship between theory and practical application"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Counterintelligence Tactics: Core Fundamentals\".",
+              "expectedOutcome": "Key points: Define the key terminology used in counterintelligence tactics; Identify the core principles that guide effective practice; Recognize the historical context and evolution of this discipline"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is counterintelligence tactics: core fundamentals important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of counterintelligence tactics: core fundamentals."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of counterintelligence tactics: core fundamentals",
+            "Apply knowledge of define the key terminology used in counterintelligence tactics",
+            "Assess readiness in counterintelligence tactics: core fundamentals"
+          ],
+          "keyTerms": [
+            "Counterintelligence Tactics",
+            "Core Fundamentals",
+            "Define key",
+            "Identify core",
+            "Recognize historical",
+            "Understand relationship"
+          ]
+        },
+        {
+          "id": "counterintelligence_tactics_practical_application",
+          "title": "Counterintelligence Tactics: Practical Application",
+          "description": "Applying counterintelligence tactics concepts in real-world scenarios and operational contexts.",
+          "bulletpoints": [
+            "Apply counterintelligence tactics principles to realistic scenarios",
+            "Develop a step-by-step action plan for field deployment",
+            "Integrate spy detection techniques into practice",
+            "Evaluate outcomes and refine approach based on results"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Counterintelligence Tactics: Practical Application\".",
+              "expectedOutcome": "Key points: Apply counterintelligence tactics principles to realistic scenarios; Develop a step-by-step action plan for field deployment; Integrate spy detection techniques into practice"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is counterintelligence tactics: practical application important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of counterintelligence tactics: practical application."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of counterintelligence tactics: practical application",
+            "Apply knowledge of apply counterintelligence tactics principles to realistic scenarios",
+            "Assess readiness in counterintelligence tactics: practical application"
+          ],
+          "keyTerms": [
+            "Counterintelligence Tactics",
+            "Practical Application",
+            "Apply counterintelligence",
+            "Develop step-by-step",
+            "Integrate spy",
+            "Evaluate outcomes"
+          ]
+        },
+        {
+          "id": "counterintelligence_tactics_advanced_techniques",
+          "title": "Counterintelligence Tactics: Advanced Techniques",
+          "description": "Exploring sophisticated methods and nuanced approaches within counterintelligence tactics for experienced practitioners.",
+          "bulletpoints": [
+            "Master advanced methodologies specific to counterintelligence tactics",
+            "Combine multiple techniques for compound effectiveness",
+            "Synthesize spy detection and deception analysis approaches",
+            "Evaluate edge cases and unconventional scenarios"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Counterintelligence Tactics: Advanced Techniques\".",
+              "expectedOutcome": "Key points: Master advanced methodologies specific to counterintelligence tactics; Combine multiple techniques for compound effectiveness; Synthesize spy detection and deception analysis approaches"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is counterintelligence tactics: advanced techniques important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of counterintelligence tactics: advanced techniques."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of counterintelligence tactics: advanced techniques",
+            "Apply knowledge of master advanced methodologies specific to counterintelligence tactics",
+            "Assess readiness in counterintelligence tactics: advanced techniques"
+          ],
+          "keyTerms": [
+            "Counterintelligence Tactics",
+            "Advanced Techniques",
+            "Master advanced",
+            "Combine multiple",
+            "Synthesize spy",
+            "Evaluate edge"
+          ]
+        }
+      ]
+    },
+    "agencies_cia_training_spy_tradecraft": {
+      "id": "spy_tradecraft",
+      "name": "Spy Tradecraft",
+      "description": "Core espionage skills including deception, disguise, and clandestine communication.",
+      "focus": [
+        "Deception Tactics",
+        "Operational Security"
+      ],
+      "cards": [
+        {
+          "id": "legend_building",
+          "title": "Legend Building",
+          "description": "Creating and maintaining false identities for deep cover operations.",
+          "bulletpoints": [
+            "Develop detailed backstories",
+            "Memorize false credentials",
+            "Practice consistent mannerisms"
+          ],
+          "duration": 6,
+          "difficulty": "Advanced",
+          "summaryText": "Build a resilient cover identity by scripting deep backstories, memorizing forged credentials, and rehearsing consistent mannerisms so every interaction reinforces your legend under hostile scrutiny and withstands background probing.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Legend Building\".",
+              "expectedOutcome": "Key points: Develop detailed backstories; Memorize false credentials; Practice consistent mannerisms"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is legend building important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of legend building."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of legend building",
+            "Apply knowledge of develop detailed backstories",
+            "Evaluate the significance of creating and maintaining false identities for deep cover operations"
+          ],
+          "keyTerms": [
+            "Legend Building",
+            "Develop detailed",
+            "Memorize false",
+            "Practice consistent"
+          ]
+        },
+        {
+          "id": "dead_drops",
+          "title": "Dead Drops & Secure Communications",
+          "description": "Using hidden drop locations for safe, anonymous intelligence exchange.",
+          "bulletpoints": [
+            "Select inconspicuous locations",
+            "Use one-time codes for retrieval",
+            "Ensure minimal exposure to counterintelligence"
+          ],
+          "duration": 5,
+          "difficulty": "Intermediate",
+          "summaryText": "Master dead drop exchanges by choosing inconspicuous locations, pairing them with one-time retrieval codes, and choreographing low-visibility arrival windows so intelligence moves without exposing assets.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Dead Drops & Secure Communications\".",
+              "expectedOutcome": "Key points: Select inconspicuous locations; Use one-time codes for retrieval; Ensure minimal exposure to counterintelligence"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is dead drops & secure communications important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of dead drops & secure communications."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of dead drops & secure communications",
+            "Apply knowledge of select inconspicuous locations",
+            "Evaluate the significance of using hidden drop locations for safe, anonymous intelligence exchange"
+          ],
+          "keyTerms": [
+            "Dead Drops",
+            "Secure Communications",
+            "Select inconspicuous",
+            "one-time codes",
+            "Ensure minimal"
+          ]
+        },
+        {
+          "id": "spy_tradecraft_fundamentals",
+          "title": "Spy Tradecraft: Core Fundamentals",
+          "description": "Understanding the foundational principles and essential concepts that underpin spy tradecraft.",
+          "bulletpoints": [
+            "Define the key terminology used in spy tradecraft",
+            "Identify the core principles that guide effective practice",
+            "Recognize the historical context and evolution of this discipline",
+            "Understand the relationship between theory and practical application"
+          ],
+          "duration": 6,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Spy Tradecraft: Core Fundamentals\".",
+              "expectedOutcome": "Key points: Define the key terminology used in spy tradecraft; Identify the core principles that guide effective practice; Recognize the historical context and evolution of this discipline"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is spy tradecraft: core fundamentals important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of spy tradecraft: core fundamentals."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of spy tradecraft: core fundamentals",
+            "Apply knowledge of define the key terminology used in spy tradecraft",
+            "Assess readiness in spy tradecraft: core fundamentals"
+          ],
+          "keyTerms": [
+            "Spy Tradecraft",
+            "Core Fundamentals",
+            "Define key",
+            "Identify core",
+            "Recognize historical",
+            "Understand relationship"
+          ]
+        },
+        {
+          "id": "spy_tradecraft_practical_application",
+          "title": "Spy Tradecraft: Practical Application",
+          "description": "Applying spy tradecraft concepts in real-world scenarios and operational contexts.",
+          "bulletpoints": [
+            "Apply spy tradecraft principles to realistic scenarios",
+            "Develop a step-by-step action plan for field deployment",
+            "Integrate deception tactics techniques into practice",
+            "Evaluate outcomes and refine approach based on results"
+          ],
+          "duration": 6,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Spy Tradecraft: Practical Application\".",
+              "expectedOutcome": "Key points: Apply spy tradecraft principles to realistic scenarios; Develop a step-by-step action plan for field deployment; Integrate deception tactics techniques into practice"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is spy tradecraft: practical application important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of spy tradecraft: practical application."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of spy tradecraft: practical application",
+            "Apply knowledge of apply spy tradecraft principles to realistic scenarios",
+            "Assess readiness in spy tradecraft: practical application"
+          ],
+          "keyTerms": [
+            "Spy Tradecraft",
+            "Practical Application",
+            "Apply spy",
+            "Develop step-by-step",
+            "Integrate deception",
+            "Evaluate outcomes"
+          ]
+        },
+        {
+          "id": "spy_tradecraft_advanced_techniques",
+          "title": "Spy Tradecraft: Advanced Techniques",
+          "description": "Exploring sophisticated methods and nuanced approaches within spy tradecraft for experienced practitioners.",
+          "bulletpoints": [
+            "Master advanced methodologies specific to spy tradecraft",
+            "Combine multiple techniques for compound effectiveness",
+            "Synthesize deception tactics and operational security approaches",
+            "Evaluate edge cases and unconventional scenarios"
+          ],
+          "duration": 6,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Spy Tradecraft: Advanced Techniques\".",
+              "expectedOutcome": "Key points: Master advanced methodologies specific to spy tradecraft; Combine multiple techniques for compound effectiveness; Synthesize deception tactics and operational security approaches"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is spy tradecraft: advanced techniques important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of spy tradecraft: advanced techniques."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of spy tradecraft: advanced techniques",
+            "Apply knowledge of master advanced methodologies specific to spy tradecraft",
+            "Assess readiness in spy tradecraft: advanced techniques"
+          ],
+          "keyTerms": [
+            "Spy Tradecraft",
+            "Advanced Techniques",
+            "Master advanced",
+            "Combine multiple",
+            "Synthesize deception",
+            "Evaluate edge"
+          ]
+        }
+      ]
+    },
+    "agencies_cia_training_undercover_surveillance": {
+      "id": "undercover_surveillance",
+      "name": "Undercover Surveillance",
+      "description": "Training in covert observation, intelligence gathering, and tailing suspects without detection.",
+      "focus": [
+        "Foot Surveillance",
+        "Electronic Tracking"
+      ],
+      "cards": [
+        {
+          "id": "shadowing",
+          "title": "Shadowing & Tail Techniques",
+          "description": "Following a target without raising suspicion.",
+          "bulletpoints": [
+            "Maintain varying distances",
+            "Use multiple observers to avoid detection",
+            "Blend into urban and rural environments"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "summaryText": "Conduct discreet shadowing operations by varying distance and pace, rotating observers to break patterns, and blending into urban or rural backdrops so targets never sense persistent surveillance during extended operations.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Shadowing & Tail Techniques\".",
+              "expectedOutcome": "Key points: Maintain varying distances; Use multiple observers to avoid detection; Blend into urban and rural environments"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is shadowing & tail techniques important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of shadowing & tail techniques."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of shadowing & tail techniques",
+            "Apply knowledge of maintain varying distances",
+            "Evaluate the significance of following a target without raising suspicion"
+          ],
+          "keyTerms": [
+            "Shadowing",
+            "Tail Techniques",
+            "Maintain varying",
+            "multiple observers",
+            "Blend urban"
+          ]
+        },
+        {
+          "id": "electronic_monitoring",
+          "title": "Electronic Surveillance Basics",
+          "description": "Using high-tech methods to track and monitor targets remotely.",
+          "bulletpoints": [
+            "Deploy covert listening devices",
+            "Analyze movement patterns",
+            "Use encrypted channels for secure data transmission"
+          ],
+          "duration": 6,
+          "difficulty": "Advanced",
+          "summaryText": "Execute covert electronic surveillance by planting low-profile sensors, mapping movement patterns in real time, and relaying encrypted intelligence to command so remote monitoring stays invisible.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Electronic Surveillance Basics\".",
+              "expectedOutcome": "Key points: Deploy covert listening devices; Analyze movement patterns; Use encrypted channels for secure data transmission"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is electronic surveillance basics important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of electronic surveillance basics."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of electronic surveillance basics",
+            "Apply knowledge of deploy covert listening devices",
+            "Evaluate the significance of using high-tech methods to track and monitor targets remotely"
+          ],
+          "keyTerms": [
+            "Electronic Surveillance Basics",
+            "Deploy covert",
+            "Analyze movement",
+            "encrypted channels"
+          ]
+        },
+        {
+          "id": "undercover_surveillance_fundamentals",
+          "title": "Undercover Surveillance: Core Fundamentals",
+          "description": "Understanding the foundational principles and essential concepts that underpin undercover surveillance.",
+          "bulletpoints": [
+            "Define the key terminology used in undercover surveillance",
+            "Identify the core principles that guide effective practice",
+            "Recognize the historical context and evolution of this discipline",
+            "Understand the relationship between theory and practical application"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Undercover Surveillance: Core Fundamentals\".",
+              "expectedOutcome": "Key points: Define the key terminology used in undercover surveillance; Identify the core principles that guide effective practice; Recognize the historical context and evolution of this discipline"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is undercover surveillance: core fundamentals important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of undercover surveillance: core fundamentals."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of undercover surveillance: core fundamentals",
+            "Apply knowledge of define the key terminology used in undercover surveillance",
+            "Assess readiness in undercover surveillance: core fundamentals"
+          ],
+          "keyTerms": [
+            "Undercover Surveillance",
+            "Core Fundamentals",
+            "Define key",
+            "Identify core",
+            "Recognize historical",
+            "Understand relationship"
+          ]
+        },
+        {
+          "id": "undercover_surveillance_practical_application",
+          "title": "Undercover Surveillance: Practical Application",
+          "description": "Applying undercover surveillance concepts in real-world scenarios and operational contexts.",
+          "bulletpoints": [
+            "Apply undercover surveillance principles to realistic scenarios",
+            "Develop a step-by-step action plan for field deployment",
+            "Integrate foot surveillance techniques into practice",
+            "Evaluate outcomes and refine approach based on results"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Undercover Surveillance: Practical Application\".",
+              "expectedOutcome": "Key points: Apply undercover surveillance principles to realistic scenarios; Develop a step-by-step action plan for field deployment; Integrate foot surveillance techniques into practice"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is undercover surveillance: practical application important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of undercover surveillance: practical application."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of undercover surveillance: practical application",
+            "Apply knowledge of apply undercover surveillance principles to realistic scenarios",
+            "Assess readiness in undercover surveillance: practical application"
+          ],
+          "keyTerms": [
+            "Undercover Surveillance",
+            "Practical Application",
+            "Apply undercover",
+            "Develop step-by-step",
+            "Integrate foot",
+            "Evaluate outcomes"
+          ]
+        },
+        {
+          "id": "undercover_surveillance_advanced_techniques",
+          "title": "Undercover Surveillance: Advanced Techniques",
+          "description": "Exploring sophisticated methods and nuanced approaches within undercover surveillance for experienced practitioners.",
+          "bulletpoints": [
+            "Master advanced methodologies specific to undercover surveillance",
+            "Combine multiple techniques for compound effectiveness",
+            "Synthesize foot surveillance and electronic tracking approaches",
+            "Evaluate edge cases and unconventional scenarios"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Undercover Surveillance: Advanced Techniques\".",
+              "expectedOutcome": "Key points: Master advanced methodologies specific to undercover surveillance; Combine multiple techniques for compound effectiveness; Synthesize foot surveillance and electronic tracking approaches"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is undercover surveillance: advanced techniques important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of undercover surveillance: advanced techniques."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of undercover surveillance: advanced techniques",
+            "Apply knowledge of master advanced methodologies specific to undercover surveillance",
+            "Assess readiness in undercover surveillance: advanced techniques"
+          ],
+          "keyTerms": [
+            "Undercover Surveillance",
+            "Advanced Techniques",
+            "Master advanced",
+            "Combine multiple",
+            "Synthesize foot",
+            "Evaluate edge"
+          ]
+        }
+      ]
+    },
+    "agencies_fbi_training_criminal_profiling_methods": {
+      "id": "criminal_profiling_methods",
+      "name": "Criminal Profiling Methods",
+      "description": "Techniques for analyzing behavior patterns and predicting criminal actions.",
+      "focus": [
+        "Behavioral Analysis",
+        "Psychological Profiling"
+      ],
+      "cards": [
+        {
+          "id": "offender_typologies",
+          "title": "Offender Typologies",
+          "description": "Classifying criminals based on behavior, motive, and crime patterns.",
+          "bulletpoints": [
+            "Identify signature behaviors",
+            "Differentiate organized vs. disorganized offenders",
+            "Analyze crime scene characteristics"
+          ],
+          "duration": 6,
+          "difficulty": "Advanced",
+          "summaryText": "Profile offenders accurately by mapping signature behaviors, separating organized from disorganized patterns, and decoding crime scene indicators to forecast their next move.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Offender Typologies\".",
+              "expectedOutcome": "Key points: Identify signature behaviors; Differentiate organized vs. disorganized offenders; Analyze crime scene characteristics"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is offender typologies important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of offender typologies."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of offender typologies",
+            "Apply knowledge of identify signature behaviors",
+            "Evaluate the significance of classifying criminals based on behavior, motive, and crime patterns"
+          ],
+          "keyTerms": [
+            "Offender Typologies",
+            "Identify signature",
+            "Differentiate organized",
+            "Analyze crime"
+          ]
+        },
+        {
+          "id": "threat_assessment",
+          "title": "Threat Assessment & Risk Evaluation",
+          "description": "Evaluating potential threats based on historical behavioral data.",
+          "bulletpoints": [
+            "Analyze suspect psychological markers",
+            "Apply structured risk assessment models",
+            "Identify pre-incident indicators of violence"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "summaryText": "Deliver precise threat assessments by dissecting psychological markers, running structured risk models, and flagging pre-incident signals before violence escalates.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Threat Assessment & Risk Evaluation\".",
+              "expectedOutcome": "Key points: Analyze suspect psychological markers; Apply structured risk assessment models; Identify pre-incident indicators of violence"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is threat assessment & risk evaluation important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of threat assessment & risk evaluation."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of threat assessment & risk evaluation",
+            "Apply knowledge of analyze suspect psychological markers",
+            "Evaluate the significance of evaluating potential threats based on historical behavioral data"
+          ],
+          "keyTerms": [
+            "Threat Assessment",
+            "Risk Evaluation",
+            "Analyze suspect",
+            "Apply structured",
+            "Identify pre-incident"
+          ]
+        },
+        {
+          "id": "criminal_profiling_methods_fundamentals",
+          "title": "Criminal Profiling Methods: Core Fundamentals",
+          "description": "Understanding the foundational principles and essential concepts that underpin criminal profiling methods.",
+          "bulletpoints": [
+            "Define the key terminology used in criminal profiling methods",
+            "Identify the core principles that guide effective practice",
+            "Recognize the historical context and evolution of this discipline",
+            "Understand the relationship between theory and practical application"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Criminal Profiling Methods: Core Fundamentals\".",
+              "expectedOutcome": "Key points: Define the key terminology used in criminal profiling methods; Identify the core principles that guide effective practice; Recognize the historical context and evolution of this discipline"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is criminal profiling methods: core fundamentals important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of criminal profiling methods: core fundamentals."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of criminal profiling methods: core fundamentals",
+            "Apply knowledge of define the key terminology used in criminal profiling methods",
+            "Assess readiness in criminal profiling methods: core fundamentals"
+          ],
+          "keyTerms": [
+            "Criminal Profiling Methods",
+            "Core Fundamentals",
+            "Define key",
+            "Identify core",
+            "Recognize historical",
+            "Understand relationship"
+          ]
+        },
+        {
+          "id": "criminal_profiling_methods_practical_application",
+          "title": "Criminal Profiling Methods: Practical Application",
+          "description": "Applying criminal profiling methods concepts in real-world scenarios and operational contexts.",
+          "bulletpoints": [
+            "Apply criminal profiling methods principles to realistic scenarios",
+            "Develop a step-by-step action plan for field deployment",
+            "Integrate behavioral analysis techniques into practice",
+            "Evaluate outcomes and refine approach based on results"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Criminal Profiling Methods: Practical Application\".",
+              "expectedOutcome": "Key points: Apply criminal profiling methods principles to realistic scenarios; Develop a step-by-step action plan for field deployment; Integrate behavioral analysis techniques into practice"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is criminal profiling methods: practical application important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of criminal profiling methods: practical application."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of criminal profiling methods: practical application",
+            "Apply knowledge of apply criminal profiling methods principles to realistic scenarios",
+            "Assess readiness in criminal profiling methods: practical application"
+          ],
+          "keyTerms": [
+            "Criminal Profiling Methods",
+            "Practical Application",
+            "Apply criminal",
+            "Develop step-by-step",
+            "Integrate behavioral",
+            "Evaluate outcomes"
+          ]
+        },
+        {
+          "id": "criminal_profiling_methods_advanced_techniques",
+          "title": "Criminal Profiling Methods: Advanced Techniques",
+          "description": "Exploring sophisticated methods and nuanced approaches within criminal profiling methods for experienced practitioners.",
+          "bulletpoints": [
+            "Master advanced methodologies specific to criminal profiling methods",
+            "Combine multiple techniques for compound effectiveness",
+            "Synthesize behavioral analysis and psychological profiling approaches",
+            "Evaluate edge cases and unconventional scenarios"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Criminal Profiling Methods: Advanced Techniques\".",
+              "expectedOutcome": "Key points: Master advanced methodologies specific to criminal profiling methods; Combine multiple techniques for compound effectiveness; Synthesize behavioral analysis and psychological profiling approaches"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is criminal profiling methods: advanced techniques important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of criminal profiling methods: advanced techniques."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of criminal profiling methods: advanced techniques",
+            "Apply knowledge of master advanced methodologies specific to criminal profiling methods",
+            "Assess readiness in criminal profiling methods: advanced techniques"
+          ],
+          "keyTerms": [
+            "Criminal Profiling Methods",
+            "Advanced Techniques",
+            "Master advanced",
+            "Combine multiple",
+            "Synthesize behavioral",
+            "Evaluate edge"
+          ]
+        }
+      ]
+    },
+    "agencies_fbi_training_cyber_fraud_detection": {
+      "id": "cyber_fraud_detection",
+      "name": "Cyber Fraud Detection",
+      "description": "Training in digital financial crime investigations and online fraud prevention.",
+      "focus": [
+        "Financial Crime",
+        "Cybersecurity Threats"
+      ],
+      "cards": [
+        {
+          "id": "digital_payment_fraud",
+          "title": "Digital Payment Fraud & Identity Theft",
+          "description": "Identifying and preventing fraudulent financial transactions online.",
+          "bulletpoints": [
+            "Detect anomalies in payment transactions",
+            "Trace fraudulent cryptocurrency transfers",
+            "Use AI-based fraud detection tools"
+          ],
+          "duration": 6,
+          "difficulty": "Advanced",
+          "summaryText": "Uncover digital payment fraud by spotting anomalous transaction patterns, tracing crypto laundering paths, and deploying AI defenses before accounts are drained.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Digital Payment Fraud & Identity Theft\".",
+              "expectedOutcome": "Key points: Detect anomalies in payment transactions; Trace fraudulent cryptocurrency transfers; Use AI-based fraud detection tools"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is digital payment fraud & identity theft important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of digital payment fraud & identity theft."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of digital payment fraud & identity theft",
+            "Apply knowledge of detect anomalies in payment transactions",
+            "Evaluate the significance of identifying and preventing fraudulent financial transactions online"
+          ],
+          "keyTerms": [
+            "Digital Payment Fraud",
+            "Identity Theft",
+            "Detect anomalies",
+            "Trace fraudulent",
+            "AI-based fraud"
+          ]
+        },
+        {
+          "id": "dark_web_financial_crime",
+          "title": "Dark Web Financial Crime Investigations",
+          "description": "Investigating illegal financial activities on encrypted online marketplaces.",
+          "bulletpoints": [
+            "Analyze blockchain transactions for illicit activity",
+            "Use OSINT to track dark web financial fraud",
+            "Understand money laundering techniques in cybercrime"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "summaryText": "Pursue dark web fraud rings by correlating blockchain trails, fusing OSINT leads, and decoding laundering techniques that hide illicit profits online.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Dark Web Financial Crime Investigations\".",
+              "expectedOutcome": "Key points: Analyze blockchain transactions for illicit activity; Use OSINT to track dark web financial fraud; Understand money laundering techniques in cybercrime"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is dark web financial crime investigations important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of dark web financial crime investigations."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of dark web financial crime investigations",
+            "Apply knowledge of analyze blockchain transactions for illicit activity",
+            "Evaluate the significance of investigating illegal financial activities on encrypted online marketplaces"
+          ],
+          "keyTerms": [
+            "Dark Web Financial",
+            "Analyze blockchain",
+            "OSINT track",
+            "Understand money"
+          ]
+        },
+        {
+          "id": "cyber_fraud_detection_fundamentals",
+          "title": "Cyber Fraud Detection: Core Fundamentals",
+          "description": "Understanding the foundational principles and essential concepts that underpin cyber fraud detection.",
+          "bulletpoints": [
+            "Define the key terminology used in cyber fraud detection",
+            "Identify the core principles that guide effective practice",
+            "Recognize the historical context and evolution of this discipline",
+            "Understand the relationship between theory and practical application"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Cyber Fraud Detection: Core Fundamentals\".",
+              "expectedOutcome": "Key points: Define the key terminology used in cyber fraud detection; Identify the core principles that guide effective practice; Recognize the historical context and evolution of this discipline"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is cyber fraud detection: core fundamentals important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of cyber fraud detection: core fundamentals."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of cyber fraud detection: core fundamentals",
+            "Apply knowledge of define the key terminology used in cyber fraud detection",
+            "Assess readiness in cyber fraud detection: core fundamentals"
+          ],
+          "keyTerms": [
+            "Cyber Fraud Detection",
+            "Core Fundamentals",
+            "Define key",
+            "Identify core",
+            "Recognize historical",
+            "Understand relationship"
+          ]
+        },
+        {
+          "id": "cyber_fraud_detection_practical_application",
+          "title": "Cyber Fraud Detection: Practical Application",
+          "description": "Applying cyber fraud detection concepts in real-world scenarios and operational contexts.",
+          "bulletpoints": [
+            "Apply cyber fraud detection principles to realistic scenarios",
+            "Develop a step-by-step action plan for field deployment",
+            "Integrate financial crime techniques into practice",
+            "Evaluate outcomes and refine approach based on results"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Cyber Fraud Detection: Practical Application\".",
+              "expectedOutcome": "Key points: Apply cyber fraud detection principles to realistic scenarios; Develop a step-by-step action plan for field deployment; Integrate financial crime techniques into practice"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is cyber fraud detection: practical application important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of cyber fraud detection: practical application."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of cyber fraud detection: practical application",
+            "Apply knowledge of apply cyber fraud detection principles to realistic scenarios",
+            "Assess readiness in cyber fraud detection: practical application"
+          ],
+          "keyTerms": [
+            "Cyber Fraud Detection",
+            "Practical Application",
+            "Apply cyber",
+            "Develop step-by-step",
+            "Integrate financial",
+            "Evaluate outcomes"
+          ]
+        },
+        {
+          "id": "cyber_fraud_detection_advanced_techniques",
+          "title": "Cyber Fraud Detection: Advanced Techniques",
+          "description": "Exploring sophisticated methods and nuanced approaches within cyber fraud detection for experienced practitioners.",
+          "bulletpoints": [
+            "Master advanced methodologies specific to cyber fraud detection",
+            "Combine multiple techniques for compound effectiveness",
+            "Synthesize financial crime and cybersecurity threats approaches",
+            "Evaluate edge cases and unconventional scenarios"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Cyber Fraud Detection: Advanced Techniques\".",
+              "expectedOutcome": "Key points: Master advanced methodologies specific to cyber fraud detection; Combine multiple techniques for compound effectiveness; Synthesize financial crime and cybersecurity threats approaches"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is cyber fraud detection: advanced techniques important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of cyber fraud detection: advanced techniques."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of cyber fraud detection: advanced techniques",
+            "Apply knowledge of master advanced methodologies specific to cyber fraud detection",
+            "Assess readiness in cyber fraud detection: advanced techniques"
+          ],
+          "keyTerms": [
+            "Cyber Fraud Detection",
+            "Advanced Techniques",
+            "Master advanced",
+            "Combine multiple",
+            "Synthesize financial",
+            "Evaluate edge"
+          ]
+        }
+      ]
+    },
+    "agencies_fbi_training_forensic_analysis": {
+      "id": "forensic_analysis",
+      "name": "Forensic Analysis",
+      "description": "Applying scientific principles to criminal investigations and evidence evaluation.",
+      "focus": [
+        "Crime Scene Processing",
+        "Evidence Examination"
+      ],
+      "cards": [
+        {
+          "id": "dna_fingerprint_analysis",
+          "title": "DNA & Fingerprint Analysis",
+          "description": "Extracting and matching biological evidence to confirm suspect identities.",
+          "bulletpoints": [
+            "Collect and store DNA samples properly",
+            "Match fingerprint patterns using AFIS",
+            "Analyze trace DNA for forensic leads"
+          ],
+          "duration": 6,
+          "difficulty": "Advanced",
+          "summaryText": "Secure convictions by harvesting pristine DNA, matching fingerprints through AFIS, and exploiting trace biological evidence to tighten suspect attribution.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"DNA & Fingerprint Analysis\".",
+              "expectedOutcome": "Key points: Collect and store DNA samples properly; Match fingerprint patterns using AFIS; Analyze trace DNA for forensic leads"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is dna & fingerprint analysis important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of dna & fingerprint analysis."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of dna & fingerprint analysis",
+            "Apply knowledge of collect and store dna samples properly",
+            "Evaluate the significance of extracting and matching biological evidence to confirm suspect identities"
+          ],
+          "keyTerms": [
+            "DNA",
+            "Fingerprint Analysis",
+            "Collect store",
+            "Match fingerprint",
+            "Analyze trace"
+          ]
+        },
+        {
+          "id": "ballistics_forensics",
+          "title": "Ballistics & Firearms Forensics",
+          "description": "Identifying weapons and ammunition used in crimes through forensic techniques.",
+          "bulletpoints": [
+            "Analyze bullet striations and shell casings",
+            "Match firearm residues to specific guns",
+            "Utilize gunshot residue (GSR) testing"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "summaryText": "Reconstruct shootings by comparing bullet striations, linking residues to specific firearms, and validating trajectories with comprehensive ballistics forensics.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Ballistics & Firearms Forensics\".",
+              "expectedOutcome": "Key points: Analyze bullet striations and shell casings; Match firearm residues to specific guns; Utilize gunshot residue (GSR) testing"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is ballistics & firearms forensics important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of ballistics & firearms forensics."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of ballistics & firearms forensics",
+            "Apply knowledge of analyze bullet striations and shell casings",
+            "Evaluate the significance of identifying weapons and ammunition used in crimes through forensic techniques"
+          ],
+          "keyTerms": [
+            "Ballistics",
+            "Firearms Forensics",
+            "Analyze bullet",
+            "Match firearm",
+            "Utilize gunshot"
+          ]
+        },
+        {
+          "id": "forensic_analysis_fundamentals",
+          "title": "Forensic Analysis: Core Fundamentals",
+          "description": "Understanding the foundational principles and essential concepts that underpin forensic analysis.",
+          "bulletpoints": [
+            "Define the key terminology used in forensic analysis",
+            "Identify the core principles that guide effective practice",
+            "Recognize the historical context and evolution of this discipline",
+            "Understand the relationship between theory and practical application"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Forensic Analysis: Core Fundamentals\".",
+              "expectedOutcome": "Key points: Define the key terminology used in forensic analysis; Identify the core principles that guide effective practice; Recognize the historical context and evolution of this discipline"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is forensic analysis: core fundamentals important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of forensic analysis: core fundamentals."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of forensic analysis: core fundamentals",
+            "Apply knowledge of define the key terminology used in forensic analysis",
+            "Assess readiness in forensic analysis: core fundamentals"
+          ],
+          "keyTerms": [
+            "Forensic Analysis",
+            "Core Fundamentals",
+            "Define key",
+            "Identify core",
+            "Recognize historical",
+            "Understand relationship"
+          ]
+        },
+        {
+          "id": "forensic_analysis_practical_application",
+          "title": "Forensic Analysis: Practical Application",
+          "description": "Applying forensic analysis concepts in real-world scenarios and operational contexts.",
+          "bulletpoints": [
+            "Apply forensic analysis principles to realistic scenarios",
+            "Develop a step-by-step action plan for field deployment",
+            "Integrate crime scene processing techniques into practice",
+            "Evaluate outcomes and refine approach based on results"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Forensic Analysis: Practical Application\".",
+              "expectedOutcome": "Key points: Apply forensic analysis principles to realistic scenarios; Develop a step-by-step action plan for field deployment; Integrate crime scene processing techniques into practice"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is forensic analysis: practical application important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of forensic analysis: practical application."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of forensic analysis: practical application",
+            "Apply knowledge of apply forensic analysis principles to realistic scenarios",
+            "Assess readiness in forensic analysis: practical application"
+          ],
+          "keyTerms": [
+            "Forensic Analysis",
+            "Practical Application",
+            "Apply forensic",
+            "Develop step-by-step",
+            "Integrate crime",
+            "Evaluate outcomes"
+          ]
+        },
+        {
+          "id": "forensic_analysis_advanced_techniques",
+          "title": "Forensic Analysis: Advanced Techniques",
+          "description": "Exploring sophisticated methods and nuanced approaches within forensic analysis for experienced practitioners.",
+          "bulletpoints": [
+            "Master advanced methodologies specific to forensic analysis",
+            "Combine multiple techniques for compound effectiveness",
+            "Synthesize crime scene processing and evidence examination approaches",
+            "Evaluate edge cases and unconventional scenarios"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Forensic Analysis: Advanced Techniques\".",
+              "expectedOutcome": "Key points: Master advanced methodologies specific to forensic analysis; Combine multiple techniques for compound effectiveness; Synthesize crime scene processing and evidence examination approaches"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is forensic analysis: advanced techniques important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of forensic analysis: advanced techniques."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of forensic analysis: advanced techniques",
+            "Apply knowledge of master advanced methodologies specific to forensic analysis",
+            "Assess readiness in forensic analysis: advanced techniques"
+          ],
+          "keyTerms": [
+            "Forensic Analysis",
+            "Advanced Techniques",
+            "Master advanced",
+            "Combine multiple",
+            "Synthesize crime",
+            "Evaluate edge"
+          ]
+        }
+      ]
+    },
+    "agencies_homeland_security_border_control_tactics": {
+      "id": "border_control_tactics",
+      "name": "Border Control Tactics",
+      "description": "Strategies for monitoring, securing, and managing border operations to prevent illegal activities.",
+      "focus": [
+        "Border Surveillance",
+        "Smuggling Prevention"
+      ],
+      "cards": [
+        {
+          "id": "human_trafficking_detection",
+          "title": "Human Trafficking Detection",
+          "description": "Identifying and intercepting human trafficking operations at national borders.",
+          "bulletpoints": [
+            "Recognize signs of coerced and trafficked individuals",
+            "Utilize biometric and database matching for identity verification",
+            "Work with international agencies to disrupt trafficking networks"
+          ],
+          "duration": 6,
+          "difficulty": "Intermediate",
+          "summaryText": "Disrupt human trafficking at the border by spotting coercion cues, validating identities through biometric systems, and syncing with international partners to dismantle the network.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Human Trafficking Detection\".",
+              "expectedOutcome": "Key points: Recognize signs of coerced and trafficked individuals; Utilize biometric and database matching for identity verification; Work with international agencies to disrupt trafficking networks"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is human trafficking detection important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of human trafficking detection."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of human trafficking detection",
+            "Apply knowledge of recognize signs of coerced and trafficked individuals",
+            "Evaluate the significance of identifying and intercepting human trafficking operations at national borders"
+          ],
+          "keyTerms": [
+            "Human Trafficking Detection",
+            "Recognize signs",
+            "Utilize biometric",
+            "Work international"
+          ]
+        },
+        {
+          "id": "drug_smuggling_prevention",
+          "title": "Drug Smuggling Prevention",
+          "description": "Detecting and intercepting illegal narcotics transported across borders.",
+          "bulletpoints": [
+            "Identify concealment methods used in drug smuggling",
+            "Use canine units and chemical detection systems",
+            "Implement predictive analytics for trafficking patterns"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "summaryText": "Interdict drug smuggling by recognizing concealment tricks, pairing canine sweeps with chemical sensors, and using predictive analytics to preempt trafficking routes.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Drug Smuggling Prevention\".",
+              "expectedOutcome": "Key points: Identify concealment methods used in drug smuggling; Use canine units and chemical detection systems; Implement predictive analytics for trafficking patterns"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is drug smuggling prevention important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of drug smuggling prevention."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of drug smuggling prevention",
+            "Apply knowledge of identify concealment methods used in drug smuggling",
+            "Evaluate the significance of detecting and intercepting illegal narcotics transported across borders"
+          ],
+          "keyTerms": [
+            "Drug Smuggling Prevention",
+            "Identify concealment",
+            "canine units",
+            "Implement predictive"
+          ]
+        },
+        {
+          "id": "border_control_tactics_fundamentals",
+          "title": "Border Control Tactics: Core Fundamentals",
+          "description": "Understanding the foundational principles and essential concepts that underpin border control tactics.",
+          "bulletpoints": [
+            "Define the key terminology used in border control tactics",
+            "Identify the core principles that guide effective practice",
+            "Recognize the historical context and evolution of this discipline",
+            "Understand the relationship between theory and practical application"
+          ],
+          "duration": 7,
+          "difficulty": "Intermediate",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Border Control Tactics: Core Fundamentals\".",
+              "expectedOutcome": "Key points: Define the key terminology used in border control tactics; Identify the core principles that guide effective practice; Recognize the historical context and evolution of this discipline"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is border control tactics: core fundamentals important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of border control tactics: core fundamentals."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of border control tactics: core fundamentals",
+            "Apply knowledge of define the key terminology used in border control tactics",
+            "Assess readiness in border control tactics: core fundamentals"
+          ],
+          "keyTerms": [
+            "Border Control Tactics",
+            "Core Fundamentals",
+            "Define key",
+            "Identify core",
+            "Recognize historical",
+            "Understand relationship"
+          ]
+        },
+        {
+          "id": "border_control_tactics_practical_application",
+          "title": "Border Control Tactics: Practical Application",
+          "description": "Applying border control tactics concepts in real-world scenarios and operational contexts.",
+          "bulletpoints": [
+            "Apply border control tactics principles to realistic scenarios",
+            "Develop a step-by-step action plan for field deployment",
+            "Integrate border surveillance techniques into practice",
+            "Evaluate outcomes and refine approach based on results"
+          ],
+          "duration": 7,
+          "difficulty": "Intermediate",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Border Control Tactics: Practical Application\".",
+              "expectedOutcome": "Key points: Apply border control tactics principles to realistic scenarios; Develop a step-by-step action plan for field deployment; Integrate border surveillance techniques into practice"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is border control tactics: practical application important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of border control tactics: practical application."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of border control tactics: practical application",
+            "Apply knowledge of apply border control tactics principles to realistic scenarios",
+            "Assess readiness in border control tactics: practical application"
+          ],
+          "keyTerms": [
+            "Border Control Tactics",
+            "Practical Application",
+            "Apply border",
+            "Develop step-by-step",
+            "Integrate border",
+            "Evaluate outcomes"
+          ]
+        },
+        {
+          "id": "border_control_tactics_advanced_techniques",
+          "title": "Border Control Tactics: Advanced Techniques",
+          "description": "Exploring sophisticated methods and nuanced approaches within border control tactics for experienced practitioners.",
+          "bulletpoints": [
+            "Master advanced methodologies specific to border control tactics",
+            "Combine multiple techniques for compound effectiveness",
+            "Synthesize border surveillance and smuggling prevention approaches",
+            "Evaluate edge cases and unconventional scenarios"
+          ],
+          "duration": 7,
+          "difficulty": "Intermediate",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Border Control Tactics: Advanced Techniques\".",
+              "expectedOutcome": "Key points: Master advanced methodologies specific to border control tactics; Combine multiple techniques for compound effectiveness; Synthesize border surveillance and smuggling prevention approaches"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is border control tactics: advanced techniques important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of border control tactics: advanced techniques."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of border control tactics: advanced techniques",
+            "Apply knowledge of master advanced methodologies specific to border control tactics",
+            "Assess readiness in border control tactics: advanced techniques"
+          ],
+          "keyTerms": [
+            "Border Control Tactics",
+            "Advanced Techniques",
+            "Master advanced",
+            "Combine multiple",
+            "Synthesize border",
+            "Evaluate edge"
+          ]
+        }
+      ]
+    },
+    "agencies_homeland_security_emergency_response_drills": {
+      "id": "emergency_response_drills",
+      "name": "Emergency Response Drills",
+      "description": "Preparing for rapid and coordinated responses to national security incidents and disasters.",
+      "focus": [
+        "Crisis Management",
+        "Disaster Response"
+      ],
+      "cards": [
+        {
+          "id": "mass_casualty_incident_response",
+          "title": "Mass Casualty Incident Response",
+          "description": "Managing large-scale emergencies, including terrorist attacks and natural disasters.",
+          "bulletpoints": [
+            "Establish emergency triage protocols",
+            "Coordinate with medical and law enforcement agencies",
+            "Develop rapid deployment response plans"
+          ],
+          "duration": 6,
+          "difficulty": "Advanced",
+          "summaryText": "Command mass-casualty incidents by standing up triage lines fast, syncing medical and law enforcement assets, and executing prebuilt deployment plans under pressure.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Mass Casualty Incident Response\".",
+              "expectedOutcome": "Key points: Establish emergency triage protocols; Coordinate with medical and law enforcement agencies; Develop rapid deployment response plans"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is mass casualty incident response important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of mass casualty incident response."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of mass casualty incident response",
+            "Apply knowledge of establish emergency triage protocols",
+            "Evaluate the significance of managing large-scale emergencies, including terrorist attacks and natural disasters"
+          ],
+          "keyTerms": [
+            "Mass Casualty Incident",
+            "Establish emergency",
+            "Coordinate medical",
+            "Develop rapid"
+          ]
+        },
+        {
+          "id": "active_shooter_response",
+          "title": "Active Shooter Response",
+          "description": "Strategies for neutralizing threats and securing civilians in mass attack scenarios.",
+          "bulletpoints": [
+            "Implement ALERRT (Advanced Law Enforcement Rapid Response Training)",
+            "Establish immediate incident containment zones",
+            "Coordinate tactical entry and hostage rescue operations"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "summaryText": "Neutralize active shooters by applying ALERRT tactics, locking down containment zones, and orchestrating coordinated entries that prioritize civilian extraction.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Active Shooter Response\".",
+              "expectedOutcome": "Key points: Implement ALERRT (Advanced Law Enforcement Rapid Response Training); Establish immediate incident containment zones; Coordinate tactical entry and hostage rescue operations"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is active shooter response important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of active shooter response."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of active shooter response",
+            "Apply knowledge of implement alerrt (advanced law enforcement rapid response training)",
+            "Evaluate the significance of strategies for neutralizing threats and securing civilians in mass attack scenarios"
+          ],
+          "keyTerms": [
+            "Active Shooter Response",
+            "Implement ALERRT",
+            "Establish immediate",
+            "Coordinate tactical"
+          ]
+        },
+        {
+          "id": "emergency_response_drills_fundamentals",
+          "title": "Emergency Response Drills: Core Fundamentals",
+          "description": "Understanding the foundational principles and essential concepts that underpin emergency response drills.",
+          "bulletpoints": [
+            "Define the key terminology used in emergency response drills",
+            "Identify the core principles that guide effective practice",
+            "Recognize the historical context and evolution of this discipline",
+            "Understand the relationship between theory and practical application"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Emergency Response Drills: Core Fundamentals\".",
+              "expectedOutcome": "Key points: Define the key terminology used in emergency response drills; Identify the core principles that guide effective practice; Recognize the historical context and evolution of this discipline"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is emergency response drills: core fundamentals important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of emergency response drills: core fundamentals."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of emergency response drills: core fundamentals",
+            "Apply knowledge of define the key terminology used in emergency response drills",
+            "Assess readiness in emergency response drills: core fundamentals"
+          ],
+          "keyTerms": [
+            "Emergency Response Drills",
+            "Core Fundamentals",
+            "Define key",
+            "Identify core",
+            "Recognize historical",
+            "Understand relationship"
+          ]
+        },
+        {
+          "id": "emergency_response_drills_practical_application",
+          "title": "Emergency Response Drills: Practical Application",
+          "description": "Applying emergency response drills concepts in real-world scenarios and operational contexts.",
+          "bulletpoints": [
+            "Apply emergency response drills principles to realistic scenarios",
+            "Develop a step-by-step action plan for field deployment",
+            "Integrate crisis management techniques into practice",
+            "Evaluate outcomes and refine approach based on results"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Emergency Response Drills: Practical Application\".",
+              "expectedOutcome": "Key points: Apply emergency response drills principles to realistic scenarios; Develop a step-by-step action plan for field deployment; Integrate crisis management techniques into practice"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is emergency response drills: practical application important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of emergency response drills: practical application."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of emergency response drills: practical application",
+            "Apply knowledge of apply emergency response drills principles to realistic scenarios",
+            "Assess readiness in emergency response drills: practical application"
+          ],
+          "keyTerms": [
+            "Emergency Response Drills",
+            "Practical Application",
+            "Apply emergency",
+            "Develop step-by-step",
+            "Integrate crisis",
+            "Evaluate outcomes"
+          ]
+        },
+        {
+          "id": "emergency_response_drills_advanced_techniques",
+          "title": "Emergency Response Drills: Advanced Techniques",
+          "description": "Exploring sophisticated methods and nuanced approaches within emergency response drills for experienced practitioners.",
+          "bulletpoints": [
+            "Master advanced methodologies specific to emergency response drills",
+            "Combine multiple techniques for compound effectiveness",
+            "Synthesize crisis management and disaster response approaches",
+            "Evaluate edge cases and unconventional scenarios"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Emergency Response Drills: Advanced Techniques\".",
+              "expectedOutcome": "Key points: Master advanced methodologies specific to emergency response drills; Combine multiple techniques for compound effectiveness; Synthesize crisis management and disaster response approaches"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is emergency response drills: advanced techniques important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of emergency response drills: advanced techniques."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of emergency response drills: advanced techniques",
+            "Apply knowledge of master advanced methodologies specific to emergency response drills",
+            "Assess readiness in emergency response drills: advanced techniques"
+          ],
+          "keyTerms": [
+            "Emergency Response Drills",
+            "Advanced Techniques",
+            "Master advanced",
+            "Combine multiple",
+            "Synthesize crisis",
+            "Evaluate edge"
+          ]
+        }
+      ]
+    },
+    "agencies_homeland_security_terrorist_threat_analysis": {
+      "id": "terrorist_threat_analysis",
+      "name": "Terrorist Threat Analysis",
+      "description": "Identifying and assessing potential terrorist threats through intelligence and behavioral analysis.",
+      "focus": [
+        "Threat Detection",
+        "Behavioral Profiling"
+      ],
+      "cards": [
+        {
+          "id": "radicalization_indicators",
+          "title": "Identifying Radicalization Indicators",
+          "description": "Understanding behavioral and ideological markers associated with terrorist recruitment.",
+          "bulletpoints": [
+            "Analyze social media activity for extremist rhetoric",
+            "Identify recruitment patterns and radicalization pipelines",
+            "Monitor changes in behavioral and financial activities"
+          ],
+          "duration": 6,
+          "difficulty": "Intermediate",
+          "summaryText": "Spot early radicalization by scanning social feeds for extremist cues, mapping recruitment pipelines, and tracking behavioral or financial shifts before threats coagulate.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Identifying Radicalization Indicators\".",
+              "expectedOutcome": "Key points: Analyze social media activity for extremist rhetoric; Identify recruitment patterns and radicalization pipelines; Monitor changes in behavioral and financial activities"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is identifying radicalization indicators important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of identifying radicalization indicators."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of identifying radicalization indicators",
+            "Apply knowledge of analyze social media activity for extremist rhetoric",
+            "Evaluate the significance of understanding behavioral and ideological markers associated with terrorist recruitment"
+          ],
+          "keyTerms": [
+            "Identifying Radicalization Indicators",
+            "Analyze social",
+            "Identify recruitment",
+            "Monitor changes"
+          ]
+        },
+        {
+          "id": "explosive_device_recognition",
+          "title": "Explosive Device Recognition",
+          "description": "Recognizing common IED components and understanding terrorist attack methodologies.",
+          "bulletpoints": [
+            "Identify chemical precursors and suspicious purchases",
+            "Analyze past attack case studies for threat modeling",
+            "Understand bomb-making techniques used by terrorist cells"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "summaryText": "Detect improvised explosives by flagging precursor chemical buys, dissecting historical attack playbooks, and decoding assembly techniques favored by terrorist cells.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Explosive Device Recognition\".",
+              "expectedOutcome": "Key points: Identify chemical precursors and suspicious purchases; Analyze past attack case studies for threat modeling; Understand bomb-making techniques used by terrorist cells"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is explosive device recognition important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of explosive device recognition."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of explosive device recognition",
+            "Apply knowledge of identify chemical precursors and suspicious purchases",
+            "Evaluate the significance of recognizing common ied components and understanding terrorist attack methodologies"
+          ],
+          "keyTerms": [
+            "Explosive Device Recognition",
+            "Identify chemical",
+            "Analyze past",
+            "Understand bomb-making"
+          ]
+        },
+        {
+          "id": "terrorist_threat_analysis_fundamentals",
+          "title": "Terrorist Threat Analysis: Core Fundamentals",
+          "description": "Understanding the foundational principles and essential concepts that underpin terrorist threat analysis.",
+          "bulletpoints": [
+            "Define the key terminology used in terrorist threat analysis",
+            "Identify the core principles that guide effective practice",
+            "Recognize the historical context and evolution of this discipline",
+            "Understand the relationship between theory and practical application"
+          ],
+          "duration": 7,
+          "difficulty": "Intermediate",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Terrorist Threat Analysis: Core Fundamentals\".",
+              "expectedOutcome": "Key points: Define the key terminology used in terrorist threat analysis; Identify the core principles that guide effective practice; Recognize the historical context and evolution of this discipline"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is terrorist threat analysis: core fundamentals important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of terrorist threat analysis: core fundamentals."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of terrorist threat analysis: core fundamentals",
+            "Apply knowledge of define the key terminology used in terrorist threat analysis",
+            "Assess readiness in terrorist threat analysis: core fundamentals"
+          ],
+          "keyTerms": [
+            "Terrorist Threat Analysis",
+            "Core Fundamentals",
+            "Define key",
+            "Identify core",
+            "Recognize historical",
+            "Understand relationship"
+          ]
+        },
+        {
+          "id": "terrorist_threat_analysis_practical_application",
+          "title": "Terrorist Threat Analysis: Practical Application",
+          "description": "Applying terrorist threat analysis concepts in real-world scenarios and operational contexts.",
+          "bulletpoints": [
+            "Apply terrorist threat analysis principles to realistic scenarios",
+            "Develop a step-by-step action plan for field deployment",
+            "Integrate threat detection techniques into practice",
+            "Evaluate outcomes and refine approach based on results"
+          ],
+          "duration": 7,
+          "difficulty": "Intermediate",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Terrorist Threat Analysis: Practical Application\".",
+              "expectedOutcome": "Key points: Apply terrorist threat analysis principles to realistic scenarios; Develop a step-by-step action plan for field deployment; Integrate threat detection techniques into practice"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is terrorist threat analysis: practical application important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of terrorist threat analysis: practical application."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of terrorist threat analysis: practical application",
+            "Apply knowledge of apply terrorist threat analysis principles to realistic scenarios",
+            "Assess readiness in terrorist threat analysis: practical application"
+          ],
+          "keyTerms": [
+            "Terrorist Threat Analysis",
+            "Practical Application",
+            "Apply terrorist",
+            "Develop step-by-step",
+            "Integrate threat",
+            "Evaluate outcomes"
+          ]
+        },
+        {
+          "id": "terrorist_threat_analysis_advanced_techniques",
+          "title": "Terrorist Threat Analysis: Advanced Techniques",
+          "description": "Exploring sophisticated methods and nuanced approaches within terrorist threat analysis for experienced practitioners.",
+          "bulletpoints": [
+            "Master advanced methodologies specific to terrorist threat analysis",
+            "Combine multiple techniques for compound effectiveness",
+            "Synthesize threat detection and behavioral profiling approaches",
+            "Evaluate edge cases and unconventional scenarios"
+          ],
+          "duration": 7,
+          "difficulty": "Intermediate",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Terrorist Threat Analysis: Advanced Techniques\".",
+              "expectedOutcome": "Key points: Master advanced methodologies specific to terrorist threat analysis; Combine multiple techniques for compound effectiveness; Synthesize threat detection and behavioral profiling approaches"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is terrorist threat analysis: advanced techniques important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of terrorist threat analysis: advanced techniques."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of terrorist threat analysis: advanced techniques",
+            "Apply knowledge of master advanced methodologies specific to terrorist threat analysis",
+            "Assess readiness in terrorist threat analysis: advanced techniques"
+          ],
+          "keyTerms": [
+            "Terrorist Threat Analysis",
+            "Advanced Techniques",
+            "Master advanced",
+            "Combine multiple",
+            "Synthesize threat",
+            "Evaluate edge"
+          ]
+        }
+      ]
+    },
+    "agencies_interpol_training_criminal_network_tracking": {
+      "id": "criminal_network_tracking",
+      "name": "Criminal Network Tracking",
+      "description": "Identifying and dismantling transnational organized crime groups and syndicates.",
+      "focus": [
+        "Organized Crime",
+        "Financial Tracking"
+      ],
+      "cards": [
+        {
+          "id": "money_laundering_networks",
+          "title": "Money Laundering & Financial Crime Networks",
+          "description": "Tracking illicit financial flows across international banking systems.",
+          "bulletpoints": [
+            "Analyze suspicious transaction reports (STRs)",
+            "Identify shell companies used for money laundering",
+            "Coordinate with financial intelligence units (FIUs)"
+          ],
+          "duration": 6,
+          "difficulty": "Advanced",
+          "summaryText": "Trace global laundering webs by triaging STRs, piercing shell-company veils, and syncing with FIUs to choke off illicit cash flows.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Money Laundering & Financial Crime Networks\".",
+              "expectedOutcome": "Key points: Analyze suspicious transaction reports (STRs); Identify shell companies used for money laundering; Coordinate with financial intelligence units (FIUs)"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is money laundering & financial crime networks important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of money laundering & financial crime networks."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of money laundering & financial crime networks",
+            "Apply knowledge of analyze suspicious transaction reports (strs)",
+            "Evaluate the significance of tracking illicit financial flows across international banking systems"
+          ],
+          "keyTerms": [
+            "Money Laundering",
+            "Financial Crime Networks",
+            "Analyze suspicious",
+            "Identify shell",
+            "Coordinate financial"
+          ]
+        },
+        {
+          "id": "cartel_investigations",
+          "title": "Drug Cartel & Human Trafficking Investigations",
+          "description": "Methods for infiltrating and dismantling international criminal syndicates.",
+          "bulletpoints": [
+            "Utilize undercover operations in organized crime cases",
+            "Monitor encrypted communication channels",
+            "Analyze trafficking routes and logistics networks"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "summaryText": "Crack transnational cartels by embedding undercover assets, surveilling encrypted comms, and mapping trafficking logistics to collapse their networks.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Drug Cartel & Human Trafficking Investigations\".",
+              "expectedOutcome": "Key points: Utilize undercover operations in organized crime cases; Monitor encrypted communication channels; Analyze trafficking routes and logistics networks"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is drug cartel & human trafficking investigations important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of drug cartel & human trafficking investigations."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of drug cartel & human trafficking investigations",
+            "Apply knowledge of utilize undercover operations in organized crime cases",
+            "Evaluate the significance of methods for infiltrating and dismantling international criminal syndicates"
+          ],
+          "keyTerms": [
+            "Drug Cartel",
+            "Human Trafficking Investigations",
+            "Utilize undercover",
+            "Monitor encrypted",
+            "Analyze trafficking"
+          ]
+        },
+        {
+          "id": "criminal_network_tracking_fundamentals",
+          "title": "Criminal Network Tracking: Core Fundamentals",
+          "description": "Understanding the foundational principles and essential concepts that underpin criminal network tracking.",
+          "bulletpoints": [
+            "Define the key terminology used in criminal network tracking",
+            "Identify the core principles that guide effective practice",
+            "Recognize the historical context and evolution of this discipline",
+            "Understand the relationship between theory and practical application"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Criminal Network Tracking: Core Fundamentals\".",
+              "expectedOutcome": "Key points: Define the key terminology used in criminal network tracking; Identify the core principles that guide effective practice; Recognize the historical context and evolution of this discipline"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is criminal network tracking: core fundamentals important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of criminal network tracking: core fundamentals."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of criminal network tracking: core fundamentals",
+            "Apply knowledge of define the key terminology used in criminal network tracking",
+            "Assess readiness in criminal network tracking: core fundamentals"
+          ],
+          "keyTerms": [
+            "Criminal Network Tracking",
+            "Core Fundamentals",
+            "Define key",
+            "Identify core",
+            "Recognize historical",
+            "Understand relationship"
+          ]
+        },
+        {
+          "id": "criminal_network_tracking_practical_application",
+          "title": "Criminal Network Tracking: Practical Application",
+          "description": "Applying criminal network tracking concepts in real-world scenarios and operational contexts.",
+          "bulletpoints": [
+            "Apply criminal network tracking principles to realistic scenarios",
+            "Develop a step-by-step action plan for field deployment",
+            "Integrate organized crime techniques into practice",
+            "Evaluate outcomes and refine approach based on results"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Criminal Network Tracking: Practical Application\".",
+              "expectedOutcome": "Key points: Apply criminal network tracking principles to realistic scenarios; Develop a step-by-step action plan for field deployment; Integrate organized crime techniques into practice"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is criminal network tracking: practical application important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of criminal network tracking: practical application."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of criminal network tracking: practical application",
+            "Apply knowledge of apply criminal network tracking principles to realistic scenarios",
+            "Assess readiness in criminal network tracking: practical application"
+          ],
+          "keyTerms": [
+            "Criminal Network Tracking",
+            "Practical Application",
+            "Apply criminal",
+            "Develop step-by-step",
+            "Integrate organized",
+            "Evaluate outcomes"
+          ]
+        },
+        {
+          "id": "criminal_network_tracking_advanced_techniques",
+          "title": "Criminal Network Tracking: Advanced Techniques",
+          "description": "Exploring sophisticated methods and nuanced approaches within criminal network tracking for experienced practitioners.",
+          "bulletpoints": [
+            "Master advanced methodologies specific to criminal network tracking",
+            "Combine multiple techniques for compound effectiveness",
+            "Synthesize organized crime and financial tracking approaches",
+            "Evaluate edge cases and unconventional scenarios"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Criminal Network Tracking: Advanced Techniques\".",
+              "expectedOutcome": "Key points: Master advanced methodologies specific to criminal network tracking; Combine multiple techniques for compound effectiveness; Synthesize organized crime and financial tracking approaches"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is criminal network tracking: advanced techniques important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of criminal network tracking: advanced techniques."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of criminal network tracking: advanced techniques",
+            "Apply knowledge of master advanced methodologies specific to criminal network tracking",
+            "Assess readiness in criminal network tracking: advanced techniques"
+          ],
+          "keyTerms": [
+            "Criminal Network Tracking",
+            "Advanced Techniques",
+            "Master advanced",
+            "Combine multiple",
+            "Synthesize organized",
+            "Evaluate edge"
+          ]
+        }
+      ]
+    },
+    "agencies_interpol_training_cross_border_smuggling_cases": {
+      "id": "cross_border_smuggling_cases",
+      "name": "Cross-Border Smuggling Cases",
+      "description": "Investigative strategies for combating smuggling of weapons, narcotics, and contraband.",
+      "focus": [
+        "Smuggling Tactics",
+        "International Coordination"
+      ],
+      "cards": [
+        {
+          "id": "contraband_detection",
+          "title": "Contraband Detection & Seizure Operations",
+          "description": "Identifying hidden smuggling compartments in vehicles, cargo, and luggage.",
+          "bulletpoints": [
+            "Use advanced scanning and X-ray technologies",
+            "Train in physical search methods for hidden compartments",
+            "Analyze smuggling patterns based on historical data"
+          ],
+          "duration": 6,
+          "difficulty": "Intermediate",
+          "summaryText": "Seize contraband by pairing advanced scanning tech with meticulous manual searches and mining past cases for emerging concealment patterns.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Contraband Detection & Seizure Operations\".",
+              "expectedOutcome": "Key points: Use advanced scanning and X-ray technologies; Train in physical search methods for hidden compartments; Analyze smuggling patterns based on historical data"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is contraband detection & seizure operations important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of contraband detection & seizure operations."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of contraband detection & seizure operations",
+            "Apply knowledge of use advanced scanning and x-ray technologies",
+            "Evaluate the significance of identifying hidden smuggling compartments in vehicles, cargo, and luggage"
+          ],
+          "keyTerms": [
+            "Contraband Detection",
+            "Seizure Operations",
+            "advanced scanning",
+            "Train physical",
+            "Analyze smuggling"
+          ]
+        },
+        {
+          "id": "covert_border_surveillance",
+          "title": "Covert Border Surveillance & Intelligence Sharing",
+          "description": "Monitoring border crossings for illegal smuggling activities.",
+          "bulletpoints": [
+            "Deploy real-time border surveillance technologies",
+            "Coordinate intelligence-sharing with neighboring countries",
+            "Implement tracking methods for smuggling convoys"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "summaryText": "Thwart cross-border smuggling by deploying real-time surveillance, fusing partner intel, and tracking convoy movements before they vanish.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Covert Border Surveillance & Intelligence Sharing\".",
+              "expectedOutcome": "Key points: Deploy real-time border surveillance technologies; Coordinate intelligence-sharing with neighboring countries; Implement tracking methods for smuggling convoys"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is covert border surveillance & intelligence sharing important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of covert border surveillance & intelligence sharing."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of covert border surveillance & intelligence sharing",
+            "Apply knowledge of deploy real-time border surveillance technologies",
+            "Evaluate the significance of monitoring border crossings for illegal smuggling activities"
+          ],
+          "keyTerms": [
+            "Covert Border Surveillance",
+            "Intelligence Sharing",
+            "Deploy real-time",
+            "Coordinate intelligence-sharing",
+            "Implement tracking"
+          ]
+        },
+        {
+          "id": "cross_border_smuggling_cases_fundamentals",
+          "title": "Cross-Border Smuggling Cases: Core Fundamentals",
+          "description": "Understanding the foundational principles and essential concepts that underpin cross-border smuggling cases.",
+          "bulletpoints": [
+            "Define the key terminology used in cross-border smuggling cases",
+            "Identify the core principles that guide effective practice",
+            "Recognize the historical context and evolution of this discipline",
+            "Understand the relationship between theory and practical application"
+          ],
+          "duration": 7,
+          "difficulty": "Intermediate",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Cross-Border Smuggling Cases: Core Fundamentals\".",
+              "expectedOutcome": "Key points: Define the key terminology used in cross-border smuggling cases; Identify the core principles that guide effective practice; Recognize the historical context and evolution of this discipline"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is cross-border smuggling cases: core fundamentals important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of cross-border smuggling cases: core fundamentals."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of cross-border smuggling cases: core fundamentals",
+            "Apply knowledge of define the key terminology used in cross-border smuggling cases",
+            "Assess readiness in cross-border smuggling cases: core fundamentals"
+          ],
+          "keyTerms": [
+            "Cross",
+            "Border Smuggling Cases",
+            "Core Fundamentals",
+            "Define key",
+            "Identify core",
+            "Recognize historical"
+          ]
+        },
+        {
+          "id": "cross_border_smuggling_cases_practical_application",
+          "title": "Cross-Border Smuggling Cases: Practical Application",
+          "description": "Applying cross-border smuggling cases concepts in real-world scenarios and operational contexts.",
+          "bulletpoints": [
+            "Apply cross-border smuggling cases principles to realistic scenarios",
+            "Develop a step-by-step action plan for field deployment",
+            "Integrate smuggling tactics techniques into practice",
+            "Evaluate outcomes and refine approach based on results"
+          ],
+          "duration": 7,
+          "difficulty": "Intermediate",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Cross-Border Smuggling Cases: Practical Application\".",
+              "expectedOutcome": "Key points: Apply cross-border smuggling cases principles to realistic scenarios; Develop a step-by-step action plan for field deployment; Integrate smuggling tactics techniques into practice"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is cross-border smuggling cases: practical application important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of cross-border smuggling cases: practical application."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of cross-border smuggling cases: practical application",
+            "Apply knowledge of apply cross-border smuggling cases principles to realistic scenarios",
+            "Assess readiness in cross-border smuggling cases: practical application"
+          ],
+          "keyTerms": [
+            "Cross",
+            "Border Smuggling Cases",
+            "Practical Application",
+            "Apply cross-border",
+            "Develop step-by-step",
+            "Integrate smuggling"
+          ]
+        },
+        {
+          "id": "cross_border_smuggling_cases_advanced_techniques",
+          "title": "Cross-Border Smuggling Cases: Advanced Techniques",
+          "description": "Exploring sophisticated methods and nuanced approaches within cross-border smuggling cases for experienced practitioners.",
+          "bulletpoints": [
+            "Master advanced methodologies specific to cross-border smuggling cases",
+            "Combine multiple techniques for compound effectiveness",
+            "Synthesize smuggling tactics and international coordination approaches",
+            "Evaluate edge cases and unconventional scenarios"
+          ],
+          "duration": 7,
+          "difficulty": "Intermediate",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Cross-Border Smuggling Cases: Advanced Techniques\".",
+              "expectedOutcome": "Key points: Master advanced methodologies specific to cross-border smuggling cases; Combine multiple techniques for compound effectiveness; Synthesize smuggling tactics and international coordination approaches"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is cross-border smuggling cases: advanced techniques important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of cross-border smuggling cases: advanced techniques."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of cross-border smuggling cases: advanced techniques",
+            "Apply knowledge of master advanced methodologies specific to cross-border smuggling cases",
+            "Assess readiness in cross-border smuggling cases: advanced techniques"
+          ],
+          "keyTerms": [
+            "Cross",
+            "Border Smuggling Cases",
+            "Advanced Techniques",
+            "Master advanced",
+            "Combine multiple",
+            "Synthesize smuggling"
+          ]
+        }
+      ]
+    },
+    "agencies_interpol_training_international_law_basics": {
+      "id": "international_law_basics",
+      "name": "International Law Basics",
+      "description": "Fundamental principles of international law, treaties, and jurisdictional challenges.",
+      "focus": [
+        "Legal Frameworks",
+        "Jurisdictional Coordination"
+      ],
+      "cards": [
+        {
+          "id": "treaty_enforcement",
+          "title": "Treaty Enforcement & International Agreements",
+          "description": "Understanding the role of treaties and agreements in international criminal law.",
+          "bulletpoints": [
+            "Analyze key international legal agreements",
+            "Understand the role of the United Nations in enforcement",
+            "Coordinate investigations across multiple jurisdictions"
+          ],
+          "duration": 6,
+          "difficulty": "Intermediate",
+          "summaryText": "Enforce cross-border cases by interpreting cornerstone treaties, leveraging UN mechanisms, and aligning multinational investigators under shared mandates.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Treaty Enforcement & International Agreements\".",
+              "expectedOutcome": "Key points: Analyze key international legal agreements; Understand the role of the United Nations in enforcement; Coordinate investigations across multiple jurisdictions"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is treaty enforcement & international agreements important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of treaty enforcement & international agreements."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of treaty enforcement & international agreements",
+            "Apply knowledge of analyze key international legal agreements",
+            "Evaluate the significance of understanding the role of treaties and agreements in international criminal law"
+          ],
+          "keyTerms": [
+            "Treaty Enforcement",
+            "International Agreements",
+            "Analyze key",
+            "Understand role",
+            "Coordinate investigations"
+          ]
+        },
+        {
+          "id": "extradition_laws",
+          "title": "Extradition Laws & Procedures",
+          "description": "Mechanisms for requesting and executing extraditions across borders.",
+          "bulletpoints": [
+            "Understand bilateral and multilateral extradition treaties",
+            "Navigate legal challenges in high-profile extraditions",
+            "Identify cases where diplomatic immunity applies"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "summaryText": "Execute airtight extraditions by mastering treaty frameworks, countering defense obstacles, and flagging immunity claims before they derail custody transfers.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Extradition Laws & Procedures\".",
+              "expectedOutcome": "Key points: Understand bilateral and multilateral extradition treaties; Navigate legal challenges in high-profile extraditions; Identify cases where diplomatic immunity applies"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is extradition laws & procedures important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of extradition laws & procedures."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of extradition laws & procedures",
+            "Apply knowledge of understand bilateral and multilateral extradition treaties",
+            "Evaluate the significance of mechanisms for requesting and executing extraditions across borders"
+          ],
+          "keyTerms": [
+            "Extradition Laws",
+            "Procedures",
+            "Understand bilateral",
+            "Navigate legal",
+            "Identify cases"
+          ]
+        },
+        {
+          "id": "international_law_basics_fundamentals",
+          "title": "International Law Basics: Core Fundamentals",
+          "description": "Understanding the foundational principles and essential concepts that underpin international law basics.",
+          "bulletpoints": [
+            "Define the key terminology used in international law basics",
+            "Identify the core principles that guide effective practice",
+            "Recognize the historical context and evolution of this discipline",
+            "Understand the relationship between theory and practical application"
+          ],
+          "duration": 7,
+          "difficulty": "Intermediate",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"International Law Basics: Core Fundamentals\".",
+              "expectedOutcome": "Key points: Define the key terminology used in international law basics; Identify the core principles that guide effective practice; Recognize the historical context and evolution of this discipline"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is international law basics: core fundamentals important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of international law basics: core fundamentals."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of international law basics: core fundamentals",
+            "Apply knowledge of define the key terminology used in international law basics",
+            "Assess readiness in international law basics: core fundamentals"
+          ],
+          "keyTerms": [
+            "International Law Basics",
+            "Core Fundamentals",
+            "Define key",
+            "Identify core",
+            "Recognize historical",
+            "Understand relationship"
+          ]
+        },
+        {
+          "id": "international_law_basics_practical_application",
+          "title": "International Law Basics: Practical Application",
+          "description": "Applying international law basics concepts in real-world scenarios and operational contexts.",
+          "bulletpoints": [
+            "Apply international law basics principles to realistic scenarios",
+            "Develop a step-by-step action plan for field deployment",
+            "Integrate legal frameworks techniques into practice",
+            "Evaluate outcomes and refine approach based on results"
+          ],
+          "duration": 7,
+          "difficulty": "Intermediate",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"International Law Basics: Practical Application\".",
+              "expectedOutcome": "Key points: Apply international law basics principles to realistic scenarios; Develop a step-by-step action plan for field deployment; Integrate legal frameworks techniques into practice"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is international law basics: practical application important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of international law basics: practical application."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of international law basics: practical application",
+            "Apply knowledge of apply international law basics principles to realistic scenarios",
+            "Assess readiness in international law basics: practical application"
+          ],
+          "keyTerms": [
+            "International Law Basics",
+            "Practical Application",
+            "Apply international",
+            "Develop step-by-step",
+            "Integrate legal",
+            "Evaluate outcomes"
+          ]
+        },
+        {
+          "id": "international_law_basics_advanced_techniques",
+          "title": "International Law Basics: Advanced Techniques",
+          "description": "Exploring sophisticated methods and nuanced approaches within international law basics for experienced practitioners.",
+          "bulletpoints": [
+            "Master advanced methodologies specific to international law basics",
+            "Combine multiple techniques for compound effectiveness",
+            "Synthesize legal frameworks and jurisdictional coordination approaches",
+            "Evaluate edge cases and unconventional scenarios"
+          ],
+          "duration": 7,
+          "difficulty": "Intermediate",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"International Law Basics: Advanced Techniques\".",
+              "expectedOutcome": "Key points: Master advanced methodologies specific to international law basics; Combine multiple techniques for compound effectiveness; Synthesize legal frameworks and jurisdictional coordination approaches"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is international law basics: advanced techniques important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of international law basics: advanced techniques."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of international law basics: advanced techniques",
+            "Apply knowledge of master advanced methodologies specific to international law basics",
+            "Assess readiness in international law basics: advanced techniques"
+          ],
+          "keyTerms": [
+            "International Law Basics",
+            "Advanced Techniques",
+            "Master advanced",
+            "Combine multiple",
+            "Synthesize legal",
+            "Evaluate edge"
+          ]
+        }
+      ]
+    },
+    "agencies_secret_service_emergency_evasion_maneuvers": {
+      "id": "emergency_evasion_maneuvers",
+      "name": "Emergency Evasion Maneuvers",
+      "description": "High-speed escape and defensive driving techniques for emergency situations.",
+      "focus": [
+        "Evasive Driving",
+        "High-Risk Escape Tactics"
+      ],
+      "cards": [
+        {
+          "id": "high_speed_escape_drills",
+          "title": "High-Speed Escape Drills",
+          "description": "Executing rapid escape maneuvers to evade potential threats.",
+          "bulletpoints": [
+            "Perform J-turns, PIT maneuvers, and evasive acceleration techniques",
+            "Utilize cover and concealment during high-risk pursuits",
+            "React dynamically to hostile vehicle threats"
+          ],
+          "duration": 6,
+          "difficulty": "Advanced",
+          "summaryText": "Rip through high-speed escape drills by chaining J-turns, exploiting cover, and adapting instantly to hostile vehicles to pull principals out of danger.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"High-Speed Escape Drills\".",
+              "expectedOutcome": "Key points: Perform J-turns, PIT maneuvers, and evasive acceleration techniques; Utilize cover and concealment during high-risk pursuits; React dynamically to hostile vehicle threats"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is high-speed escape drills important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of high-speed escape drills."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of high-speed escape drills",
+            "Apply knowledge of perform j-turns, pit maneuvers, and evasive acceleration techniques",
+            "Evaluate the significance of executing rapid escape maneuvers to evade potential threats"
+          ],
+          "keyTerms": [
+            "High",
+            "Speed Escape Drills",
+            "Perform J-turns,",
+            "Utilize cover",
+            "React dynamically"
+          ]
+        },
+        {
+          "id": "defensive_countermeasures",
+          "title": "Defensive Countermeasures in Close Quarters",
+          "description": "Applying defensive techniques in confined and high-stress situations.",
+          "bulletpoints": [
+            "Utilize emergency barricading strategies",
+            "Evade attackers using close-quarters movement",
+            "Deploy tactical response measures to neutralize immediate threats"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "summaryText": "Survive close-quarter ambushes by locking down barricades, slipping attackers with agile footwork, and delivering decisive countermeasures before they regain initiative.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Defensive Countermeasures in Close Quarters\".",
+              "expectedOutcome": "Key points: Utilize emergency barricading strategies; Evade attackers using close-quarters movement; Deploy tactical response measures to neutralize immediate threats"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is defensive countermeasures in close quarters important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of defensive countermeasures in close quarters."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of defensive countermeasures in close quarters",
+            "Apply knowledge of utilize emergency barricading strategies",
+            "Evaluate the significance of applying defensive techniques in confined and high-stress situations"
+          ],
+          "keyTerms": [
+            "Defensive Countermeasures Close",
+            "Utilize emergency",
+            "Evade attackers",
+            "Deploy tactical"
+          ]
+        },
+        {
+          "id": "emergency_evasion_maneuvers_fundamentals",
+          "title": "Emergency Evasion Maneuvers: Core Fundamentals",
+          "description": "Understanding the foundational principles and essential concepts that underpin emergency evasion maneuvers.",
+          "bulletpoints": [
+            "Define the key terminology used in emergency evasion maneuvers",
+            "Identify the core principles that guide effective practice",
+            "Recognize the historical context and evolution of this discipline",
+            "Understand the relationship between theory and practical application"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Emergency Evasion Maneuvers: Core Fundamentals\".",
+              "expectedOutcome": "Key points: Define the key terminology used in emergency evasion maneuvers; Identify the core principles that guide effective practice; Recognize the historical context and evolution of this discipline"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is emergency evasion maneuvers: core fundamentals important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of emergency evasion maneuvers: core fundamentals."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of emergency evasion maneuvers: core fundamentals",
+            "Apply knowledge of define the key terminology used in emergency evasion maneuvers",
+            "Assess readiness in emergency evasion maneuvers: core fundamentals"
+          ],
+          "keyTerms": [
+            "Emergency Evasion Maneuvers",
+            "Core Fundamentals",
+            "Define key",
+            "Identify core",
+            "Recognize historical",
+            "Understand relationship"
+          ]
+        },
+        {
+          "id": "emergency_evasion_maneuvers_practical_application",
+          "title": "Emergency Evasion Maneuvers: Practical Application",
+          "description": "Applying emergency evasion maneuvers concepts in real-world scenarios and operational contexts.",
+          "bulletpoints": [
+            "Apply emergency evasion maneuvers principles to realistic scenarios",
+            "Develop a step-by-step action plan for field deployment",
+            "Integrate evasive driving techniques into practice",
+            "Evaluate outcomes and refine approach based on results"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Emergency Evasion Maneuvers: Practical Application\".",
+              "expectedOutcome": "Key points: Apply emergency evasion maneuvers principles to realistic scenarios; Develop a step-by-step action plan for field deployment; Integrate evasive driving techniques into practice"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is emergency evasion maneuvers: practical application important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of emergency evasion maneuvers: practical application."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of emergency evasion maneuvers: practical application",
+            "Apply knowledge of apply emergency evasion maneuvers principles to realistic scenarios",
+            "Assess readiness in emergency evasion maneuvers: practical application"
+          ],
+          "keyTerms": [
+            "Emergency Evasion Maneuvers",
+            "Practical Application",
+            "Apply emergency",
+            "Develop step-by-step",
+            "Integrate evasive",
+            "Evaluate outcomes"
+          ]
+        },
+        {
+          "id": "emergency_evasion_maneuvers_advanced_techniques",
+          "title": "Emergency Evasion Maneuvers: Advanced Techniques",
+          "description": "Exploring sophisticated methods and nuanced approaches within emergency evasion maneuvers for experienced practitioners.",
+          "bulletpoints": [
+            "Master advanced methodologies specific to emergency evasion maneuvers",
+            "Combine multiple techniques for compound effectiveness",
+            "Synthesize evasive driving and high-risk escape tactics approaches",
+            "Evaluate edge cases and unconventional scenarios"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Emergency Evasion Maneuvers: Advanced Techniques\".",
+              "expectedOutcome": "Key points: Master advanced methodologies specific to emergency evasion maneuvers; Combine multiple techniques for compound effectiveness; Synthesize evasive driving and high-risk escape tactics approaches"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is emergency evasion maneuvers: advanced techniques important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of emergency evasion maneuvers: advanced techniques."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of emergency evasion maneuvers: advanced techniques",
+            "Apply knowledge of master advanced methodologies specific to emergency evasion maneuvers",
+            "Assess readiness in emergency evasion maneuvers: advanced techniques"
+          ],
+          "keyTerms": [
+            "Emergency Evasion Maneuvers",
+            "Advanced Techniques",
+            "Master advanced",
+            "Combine multiple",
+            "Synthesize evasive",
+            "Evaluate edge"
+          ]
+        }
+      ]
+    },
+    "agencies_secret_service_financial_fraud_detection": {
+      "id": "financial_fraud_detection",
+      "name": "Financial Fraud Detection",
+      "description": "Investigating fraudulent financial transactions and identifying money laundering activities.",
+      "focus": [
+        "Forensic Accounting",
+        "Cyber Fraud Prevention"
+      ],
+      "cards": [
+        {
+          "id": "fake_currency_detection",
+          "title": "Counterfeit Currency Detection",
+          "description": "Techniques for identifying and intercepting counterfeit currency.",
+          "bulletpoints": [
+            "Analyze security features in legal tender",
+            "Use UV scanning and microprint detection techniques",
+            "Track illegal printing operations and distribution networks"
+          ],
+          "duration": 6,
+          "difficulty": "Intermediate",
+          "summaryText": "Stop counterfeit cash by scrutinizing security features, wielding UV and microprint tools, and mapping illicit printing pipelines before money hits circulation.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Counterfeit Currency Detection\".",
+              "expectedOutcome": "Key points: Analyze security features in legal tender; Use UV scanning and microprint detection techniques; Track illegal printing operations and distribution networks"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is counterfeit currency detection important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of counterfeit currency detection."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of counterfeit currency detection",
+            "Apply knowledge of analyze security features in legal tender",
+            "Evaluate the significance of techniques for identifying and intercepting counterfeit currency"
+          ],
+          "keyTerms": [
+            "Counterfeit Currency Detection",
+            "Analyze security",
+            "scanning microprint",
+            "Track illegal"
+          ]
+        },
+        {
+          "id": "forensic_accounting_investigations",
+          "title": "Forensic Accounting Investigations",
+          "description": "Tracing illicit financial activities through forensic auditing.",
+          "bulletpoints": [
+            "Analyze financial statements for irregularities",
+            "Identify shell companies and fraudulent bookkeeping",
+            "Work with international agencies on cross-border fraud cases"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "summaryText": "Expose hidden fraud by dissecting financial statements, unraveling shell-company ledgers, and partnering with global teams to follow dirty money.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Forensic Accounting Investigations\".",
+              "expectedOutcome": "Key points: Analyze financial statements for irregularities; Identify shell companies and fraudulent bookkeeping; Work with international agencies on cross-border fraud cases"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is forensic accounting investigations important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of forensic accounting investigations."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of forensic accounting investigations",
+            "Apply knowledge of analyze financial statements for irregularities",
+            "Evaluate the significance of tracing illicit financial activities through forensic auditing"
+          ],
+          "keyTerms": [
+            "Forensic Accounting Investigations",
+            "Analyze financial",
+            "Identify shell",
+            "Work international"
+          ]
+        },
+        {
+          "id": "financial_fraud_detection_fundamentals",
+          "title": "Financial Fraud Detection: Core Fundamentals",
+          "description": "Understanding the foundational principles and essential concepts that underpin financial fraud detection.",
+          "bulletpoints": [
+            "Define the key terminology used in financial fraud detection",
+            "Identify the core principles that guide effective practice",
+            "Recognize the historical context and evolution of this discipline",
+            "Understand the relationship between theory and practical application"
+          ],
+          "duration": 7,
+          "difficulty": "Intermediate",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Financial Fraud Detection: Core Fundamentals\".",
+              "expectedOutcome": "Key points: Define the key terminology used in financial fraud detection; Identify the core principles that guide effective practice; Recognize the historical context and evolution of this discipline"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is financial fraud detection: core fundamentals important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of financial fraud detection: core fundamentals."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of financial fraud detection: core fundamentals",
+            "Apply knowledge of define the key terminology used in financial fraud detection",
+            "Assess readiness in financial fraud detection: core fundamentals"
+          ],
+          "keyTerms": [
+            "Financial Fraud Detection",
+            "Core Fundamentals",
+            "Define key",
+            "Identify core",
+            "Recognize historical",
+            "Understand relationship"
+          ]
+        },
+        {
+          "id": "financial_fraud_detection_practical_application",
+          "title": "Financial Fraud Detection: Practical Application",
+          "description": "Applying financial fraud detection concepts in real-world scenarios and operational contexts.",
+          "bulletpoints": [
+            "Apply financial fraud detection principles to realistic scenarios",
+            "Develop a step-by-step action plan for field deployment",
+            "Integrate forensic accounting techniques into practice",
+            "Evaluate outcomes and refine approach based on results"
+          ],
+          "duration": 7,
+          "difficulty": "Intermediate",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Financial Fraud Detection: Practical Application\".",
+              "expectedOutcome": "Key points: Apply financial fraud detection principles to realistic scenarios; Develop a step-by-step action plan for field deployment; Integrate forensic accounting techniques into practice"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is financial fraud detection: practical application important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of financial fraud detection: practical application."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of financial fraud detection: practical application",
+            "Apply knowledge of apply financial fraud detection principles to realistic scenarios",
+            "Assess readiness in financial fraud detection: practical application"
+          ],
+          "keyTerms": [
+            "Financial Fraud Detection",
+            "Practical Application",
+            "Apply financial",
+            "Develop step-by-step",
+            "Integrate forensic",
+            "Evaluate outcomes"
+          ]
+        },
+        {
+          "id": "financial_fraud_detection_advanced_techniques",
+          "title": "Financial Fraud Detection: Advanced Techniques",
+          "description": "Exploring sophisticated methods and nuanced approaches within financial fraud detection for experienced practitioners.",
+          "bulletpoints": [
+            "Master advanced methodologies specific to financial fraud detection",
+            "Combine multiple techniques for compound effectiveness",
+            "Synthesize forensic accounting and cyber fraud prevention approaches",
+            "Evaluate edge cases and unconventional scenarios"
+          ],
+          "duration": 7,
+          "difficulty": "Intermediate",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Financial Fraud Detection: Advanced Techniques\".",
+              "expectedOutcome": "Key points: Master advanced methodologies specific to financial fraud detection; Combine multiple techniques for compound effectiveness; Synthesize forensic accounting and cyber fraud prevention approaches"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is financial fraud detection: advanced techniques important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of financial fraud detection: advanced techniques."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of financial fraud detection: advanced techniques",
+            "Apply knowledge of master advanced methodologies specific to financial fraud detection",
+            "Assess readiness in financial fraud detection: advanced techniques"
+          ],
+          "keyTerms": [
+            "Financial Fraud Detection",
+            "Advanced Techniques",
+            "Master advanced",
+            "Combine multiple",
+            "Synthesize forensic",
+            "Evaluate edge"
+          ]
+        }
+      ]
+    },
+    "agencies_secret_service_protective_service_tactics": {
+      "id": "protective_service_tactics",
+      "name": "Protective Service Tactics",
+      "description": "Strategies and techniques for VIP and dignitary protection in high-risk environments.",
+      "focus": [
+        "Close Protection",
+        "Threat Neutralization"
+      ],
+      "cards": [
+        {
+          "id": "advance_security_planning",
+          "title": "Advance Security Planning",
+          "description": "Developing detailed security protocols and contingency plans before a protective mission.",
+          "bulletpoints": [
+            "Conduct site assessments and vulnerability analyses",
+            "Plan primary and secondary evacuation routes",
+            "Coordinate security teams for seamless operations"
+          ],
+          "duration": 6,
+          "difficulty": "Advanced",
+          "summaryText": "Lock in advance security plans by vetting sites, plotting redundant escape routes, and synchronizing protection teams before the principal arrives.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Advance Security Planning\".",
+              "expectedOutcome": "Key points: Conduct site assessments and vulnerability analyses; Plan primary and secondary evacuation routes; Coordinate security teams for seamless operations"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is advance security planning important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of advance security planning."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of advance security planning",
+            "Apply knowledge of conduct site assessments and vulnerability analyses",
+            "Evaluate the significance of developing detailed security protocols and contingency plans before a protective mission"
+          ],
+          "keyTerms": [
+            "Advance Security Planning",
+            "Conduct site",
+            "Plan primary",
+            "Coordinate security"
+          ]
+        },
+        {
+          "id": "protective_formation_drills",
+          "title": "Protective Formation Drills",
+          "description": "Executing defensive formations and response tactics during a live security threat.",
+          "bulletpoints": [
+            "Utilize diamond and wedge formations for optimal coverage",
+            "React dynamically to evolving threats",
+            "Manage crowd control and civilian safety under pressure"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "summaryText": "Shield principals in motion by refining diamond and wedge formations, reacting fluidly to threats, and steering crowds without breaking protective coverage.",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Protective Formation Drills\".",
+              "expectedOutcome": "Key points: Utilize diamond and wedge formations for optimal coverage; React dynamically to evolving threats; Manage crowd control and civilian safety under pressure"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is protective formation drills important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of protective formation drills."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of protective formation drills",
+            "Apply knowledge of utilize diamond and wedge formations for optimal coverage",
+            "Evaluate the significance of executing defensive formations and response tactics during a live security threat"
+          ],
+          "keyTerms": [
+            "Protective Formation Drills",
+            "Utilize diamond",
+            "React dynamically",
+            "Manage crowd"
+          ]
+        },
+        {
+          "id": "protective_service_tactics_fundamentals",
+          "title": "Protective Service Tactics: Core Fundamentals",
+          "description": "Understanding the foundational principles and essential concepts that underpin protective service tactics.",
+          "bulletpoints": [
+            "Define the key terminology used in protective service tactics",
+            "Identify the core principles that guide effective practice",
+            "Recognize the historical context and evolution of this discipline",
+            "Understand the relationship between theory and practical application"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Protective Service Tactics: Core Fundamentals\".",
+              "expectedOutcome": "Key points: Define the key terminology used in protective service tactics; Identify the core principles that guide effective practice; Recognize the historical context and evolution of this discipline"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is protective service tactics: core fundamentals important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of protective service tactics: core fundamentals."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of protective service tactics: core fundamentals",
+            "Apply knowledge of define the key terminology used in protective service tactics",
+            "Assess readiness in protective service tactics: core fundamentals"
+          ],
+          "keyTerms": [
+            "Protective Service Tactics",
+            "Core Fundamentals",
+            "Define key",
+            "Identify core",
+            "Recognize historical",
+            "Understand relationship"
+          ]
+        },
+        {
+          "id": "protective_service_tactics_practical_application",
+          "title": "Protective Service Tactics: Practical Application",
+          "description": "Applying protective service tactics concepts in real-world scenarios and operational contexts.",
+          "bulletpoints": [
+            "Apply protective service tactics principles to realistic scenarios",
+            "Develop a step-by-step action plan for field deployment",
+            "Integrate close protection techniques into practice",
+            "Evaluate outcomes and refine approach based on results"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Protective Service Tactics: Practical Application\".",
+              "expectedOutcome": "Key points: Apply protective service tactics principles to realistic scenarios; Develop a step-by-step action plan for field deployment; Integrate close protection techniques into practice"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is protective service tactics: practical application important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of protective service tactics: practical application."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of protective service tactics: practical application",
+            "Apply knowledge of apply protective service tactics principles to realistic scenarios",
+            "Assess readiness in protective service tactics: practical application"
+          ],
+          "keyTerms": [
+            "Protective Service Tactics",
+            "Practical Application",
+            "Apply protective",
+            "Develop step-by-step",
+            "Integrate close",
+            "Evaluate outcomes"
+          ]
+        },
+        {
+          "id": "protective_service_tactics_advanced_techniques",
+          "title": "Protective Service Tactics: Advanced Techniques",
+          "description": "Exploring sophisticated methods and nuanced approaches within protective service tactics for experienced practitioners.",
+          "bulletpoints": [
+            "Master advanced methodologies specific to protective service tactics",
+            "Combine multiple techniques for compound effectiveness",
+            "Synthesize close protection and threat neutralization approaches",
+            "Evaluate edge cases and unconventional scenarios"
+          ],
+          "duration": 7,
+          "difficulty": "Advanced",
+          "exercises": [
+            {
+              "type": "recall",
+              "prompt": "From memory, list the key points of \"Protective Service Tactics: Advanced Techniques\".",
+              "expectedOutcome": "Key points: Master advanced methodologies specific to protective service tactics; Combine multiple techniques for compound effectiveness; Synthesize close protection and threat neutralization approaches"
+            },
+            {
+              "type": "analyze",
+              "prompt": "Why is protective service tactics: advanced techniques important? What happens if these principles are ignored?",
+              "hints": [
+                "Consider the consequences of inaction.",
+                "Think about how this connects to adjacent topics."
+              ],
+              "expectedOutcome": "Understanding the importance and interconnections of protective service tactics: advanced techniques."
+            }
+          ],
+          "learningObjectives": [
+            "Understand the core principles of protective service tactics: advanced techniques",
+            "Apply knowledge of master advanced methodologies specific to protective service tactics",
+            "Assess readiness in protective service tactics: advanced techniques"
+          ],
+          "keyTerms": [
+            "Protective Service Tactics",
+            "Advanced Techniques",
+            "Master advanced",
+            "Combine multiple",
+            "Synthesize close",
+            "Evaluate edge"
+          ]
+        }
+      ]
+    }
+  }
+}

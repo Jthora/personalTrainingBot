@@ -3,6 +3,7 @@ import AARComposer from '../../components/AAR/AARComposer';
 import DebriefClosureSummary from '../../components/DebriefClosureSummary/DebriefClosureSummary';
 import MissionCycleSummary from '../../components/MissionCycleSummary/MissionCycleSummary';
 import ChallengePanel from '../../components/ChallengePanel/ChallengePanel';
+import DataSafetyPanel from '../../components/DataSafetyPanel/DataSafetyPanel';
 import styles from './MissionFlow.module.css';
 import { getMissionSurfaceState } from '../../store/missionFlow/routeState';
 import MissionRouteState from '../../components/MissionRouteState/MissionRouteState';
@@ -42,6 +43,7 @@ const DebriefSurface: React.FC = () => {
       <MissionCycleSummary />
       <DebriefClosureSummary />
       <ChallengePanel />
+      <DataSafetyPanel />
       <AARComposer />
     </section>
   );

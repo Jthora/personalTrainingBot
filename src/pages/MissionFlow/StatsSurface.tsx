@@ -9,11 +9,18 @@ import { AARStore } from '../../store/AARStore';
 import { mapAllAARsToDebriefOutcomes } from '../../utils/readiness/aarBridge';
 import OperativeIdentityCard from '../../components/OperativeIdentityCard/OperativeIdentityCard';
 import CompetencyChart from '../../components/CompetencyChart/CompetencyChart';
+import ScoreLineChart from '../../components/ScoreLineChart/ScoreLineChart';
+import { getDomainColor } from '../../components/ScoreLineChart/ScoreLineChart';
+import ActivityHeatmap from '../../components/ActivityHeatmap/ActivityHeatmap';
+import ProgressSnapshotStore from '../../store/ProgressSnapshotStore';
+import { DOMAIN_CATALOG } from '../../utils/readiness/domainProgress';
 import BadgeGallery from '../../components/BadgeGallery/BadgeGallery';
 import ChallengeBoard from '../../components/ChallengeBoard/ChallengeBoard';
 import ProfileEditor from '../../components/ProfileEditor/ProfileEditor';
 import SovereigntyPanel from '../../components/SovereigntyPanel/SovereigntyPanel';
 import { isFeatureEnabled } from '../../config/featureFlags';
+import OperativeProfileStore from '../../store/OperativeProfileStore';
+import { findArchetype } from '../../data/archetypes';
 
 const StatsSurface: React.FC = () => {
   const collection = useMissionEntityCollection();
@@ -26,6 +33,20 @@ const StatsSurface: React.FC = () => {
 
   const progress = UserProgressStore.get();
   const vm = UserProgressStore.getViewModel();
+
+  // Score trend chart data — top 5 active domains
+  const chartSeries = useMemo(() => {
+    const activeDomains = readiness.domainProgress.domains
+      .filter((d) => d.drillCount > 0)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 5);
+    return activeDomains.map((d) => ({
+      domainId: d.domainId,
+      domainName: d.domainName,
+      color: getDomainColor(d.domainId),
+      data: ProgressSnapshotStore.getScoreHistory(d.domainId, 30),
+    }));
+  }, [readiness.domainProgress]);
 
   return (
     <section id="section-mission-stats" className={styles.surface} aria-label="Operative Dashboard">
@@ -103,8 +124,21 @@ const StatsSurface: React.FC = () => {
       {/* Sovereignty panel — data custody + keypair management */}
       {isFeatureEnabled('p2pIdentity') && <SovereigntyPanel />}
 
-      {/* Competency breakdown */}
-      <CompetencyChart snapshot={readiness.competency} />
+      {/* Score trend chart */}
+      <ScoreLineChart series={chartSeries} />
+
+      {/* Activity heatmap */}
+      <ActivityHeatmap />
+
+      {/* Domain progress breakdown */}
+      <CompetencyChart
+        snapshot={readiness.domainProgress}
+        activeDomainIds={(() => {
+          const profile = OperativeProfileStore.get();
+          const arch = profile?.archetypeId ? findArchetype(profile.archetypeId) : undefined;
+          return arch ? [...arch.coreModules, ...arch.secondaryModules] : undefined;
+        })()}
+      />
 
       {/* Badges */}
       <BadgeGallery />

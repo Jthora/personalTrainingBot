@@ -8,6 +8,7 @@ import { ProgressEventRecorder } from '../store/UserProgressEvents';
 import { checkScheduleAlignment } from '../utils/alignmentCheck';
 import UserProgressStore from '../store/UserProgressStore';
 import { RecapSummary } from '../types/RecapSummary';
+
 import { mark } from '../utils/perf';
 import { loadScheduleStub } from '../utils/ScheduleLoader';
 import { useRecap } from '../hooks/useRecap';
@@ -15,7 +16,7 @@ import { useRecap } from '../hooks/useRecap';
 interface MissionScheduleContextProps {
     schedule: MissionSchedule;
     loadSchedule: () => Promise<void>;
-    completeCurrentDrill: () => void;
+    completeCurrentDrill: (drillId?: string) => void;
     skipCurrentDrill: () => void;
     timeoutCurrentDrill: () => void;
     createNewSchedule: () => Promise<void>;
@@ -220,13 +221,29 @@ export const MissionScheduleProvider: React.FC<MissionScheduleProviderProps> = (
         setScheduleStatus({ source: 'cache', stale: false, status: 'ready', lastUpdated: Date.now(), message: 'Set manually' });
     }, [incrementScheduleVersion]);
 
-    const completeCurrentDrill = useCallback(() => {
-        console.log('MissionScheduleProvider: completeCurrentDrill called');
+    const completeCurrentDrill = useCallback((drillId?: string) => {
+        console.log('MissionScheduleProvider: completeCurrentDrill called', drillId ? `for ${drillId}` : '(manual)');
         setSchedule(prevSchedule => {
             if (!prevSchedule || prevSchedule.scheduleItems.length === 0) {
                 console.log('MissionScheduleProvider: No items to complete');
                 return prevSchedule;
             }
+
+            // When a specific drillId is provided (from DrillRunner), only advance the
+            // schedule if the next uncompleted item actually matches. This prevents a
+            // Training-tab card drill from accidentally marking a physical schedule
+            // drill as complete.
+            if (drillId) {
+                const firstItem = prevSchedule.scheduleItems[0];
+                if (firstItem instanceof MissionSet) {
+                    const nextDrill = firstItem.drills.find(([, done]) => !done);
+                    if (nextDrill && nextDrill[0].id !== drillId) {
+                        console.log(`MissionScheduleProvider: drillId mismatch (${drillId} vs ${nextDrill[0].id}), skipping schedule advance`);
+                        return prevSchedule;
+                    }
+                }
+            }
+
             const prevProgress = UserProgressStore.get();
             const progressItem: MissionSet | MissionBlock = prevSchedule.scheduleItems[0] instanceof MissionSet
                 ? new MissionSet(prevSchedule.scheduleItems[0].drills.map(([drill, completed]) => [drill, completed]))
@@ -243,6 +260,7 @@ export const MissionScheduleProvider: React.FC<MissionScheduleProviderProps> = (
                 [...prevSchedule.scheduleItems],
                 prevSchedule.difficultySettings
             );
+
             updatedSchedule.completeNextItem();
             MissionScheduleStore.saveSchedule(updatedSchedule);
             recordMetric('drill_completed', { remaining: updatedSchedule.scheduleItems.length });

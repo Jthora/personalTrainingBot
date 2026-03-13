@@ -1,0 +1,37 @@
+.summary {
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.heading {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary, rgba(227, 236, 255, 0.68));
+  margin: 0 0 6px;
+  font-weight: 600;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  font-size: 13px;
+}
+
+.gain {
+  color: #22c55e;
+  font-weight: 600;
+}
+
+.loss {
+  color: #f97316;
+  font-weight: 600;
+}
+
+.neutral {
+  color: var(--text-muted, rgba(227, 236, 255, 0.5));
+  font-size: 12px;
+}

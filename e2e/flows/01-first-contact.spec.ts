@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { waitForReactMount } from '../fixtures/app';
 
 test.describe('Story 01 — First Contact', () => {
   test.describe.configure({ mode: 'serial' });
@@ -8,14 +9,11 @@ test.describe('Story 01 — First Contact', () => {
   }) => {
     // Empty localStorage = fresh visitor
     await page.goto('/mission/brief', { waitUntil: 'domcontentloaded' });
-    await page.waitForFunction(
-      () => (document.getElementById('root')?.children.length ?? 0) > 0,
-      { timeout: 15_000 },
-    );
+    await waitForReactMount(page);
 
     // Welcome overlay should appear
     const overlay = page.getByRole('dialog', { name: 'Welcome' });
-    await expect(overlay).toBeVisible({ timeout: 10_000 });
+    await expect(overlay).toBeVisible();
 
     // Value-first headline
     await expect(overlay.getByText('Train 19 Disciplines')).toBeVisible();
@@ -33,21 +31,18 @@ test.describe('Story 01 — First Contact', () => {
     page,
   }) => {
     await page.goto('/mission/brief', { waitUntil: 'domcontentloaded' });
-    await page.waitForFunction(
-      () => (document.getElementById('root')?.children.length ?? 0) > 0,
-      { timeout: 15_000 },
-    );
+    await waitForReactMount(page);
 
     // Wait for overlay and click the deliberate path
     const overlay = page.getByRole('dialog', { name: 'Welcome' });
-    await expect(overlay).toBeVisible({ timeout: 10_000 });
+    await expect(overlay).toBeVisible();
     await overlay
       .getByRole('button', { name: 'Choose Your Focus First' })
       .click();
 
     // Archetype picker should appear
     const picker = page.getByTestId('archetype-picker');
-    await expect(picker).toBeVisible({ timeout: 10_000 });
+    await expect(picker).toBeVisible();
 
     // Should show heading
     await expect(picker.getByText('Choose Your Archetype')).toBeVisible();
@@ -61,20 +56,15 @@ test.describe('Story 01 — First Contact', () => {
     page,
   }) => {
     await page.goto('/mission/brief', { waitUntil: 'domcontentloaded' });
-    await page.waitForFunction(
-      () => (document.getElementById('root')?.children.length ?? 0) > 0,
-      { timeout: 15_000 },
-    );
+    await waitForReactMount(page);
 
     // Dismiss overlay → archetype picker
     const overlay = page.getByRole('dialog', { name: 'Welcome' });
-    await expect(overlay).toBeVisible({ timeout: 10_000 });
+    await expect(overlay).toBeVisible();
     await overlay
       .getByRole('button', { name: 'Choose Your Focus First' })
       .click();
-    await expect(page.getByTestId('archetype-picker')).toBeVisible({
-      timeout: 10_000,
-    });
+    await expect(page.getByTestId('archetype-picker')).toBeVisible();
 
     // Confirm button should be disabled before selection
     const confirmBtn = page.getByTestId('archetype-confirm');
@@ -91,20 +81,15 @@ test.describe('Story 01 — First Contact', () => {
     page,
   }) => {
     await page.goto('/mission/brief', { waitUntil: 'domcontentloaded' });
-    await page.waitForFunction(
-      () => (document.getElementById('root')?.children.length ?? 0) > 0,
-      { timeout: 15_000 },
-    );
+    await waitForReactMount(page);
 
     // Navigate through overlay → archetype picker
     const overlay = page.getByRole('dialog', { name: 'Welcome' });
-    await expect(overlay).toBeVisible({ timeout: 10_000 });
+    await expect(overlay).toBeVisible();
     await overlay
       .getByRole('button', { name: 'Choose Your Focus First' })
       .click();
-    await expect(page.getByTestId('archetype-picker')).toBeVisible({
-      timeout: 10_000,
-    });
+    await expect(page.getByTestId('archetype-picker')).toBeVisible();
 
     // Select psi_operative and confirm
     await page.getByTestId('archetype-card-psi_operative').click();
@@ -112,7 +97,7 @@ test.describe('Story 01 — First Contact', () => {
 
     // Handler picker should appear
     const handlerPicker = page.getByTestId('handler-picker');
-    await expect(handlerPicker).toBeVisible({ timeout: 10_000 });
+    await expect(handlerPicker).toBeVisible();
     await expect(handlerPicker.getByText('Choose Your Handler')).toBeVisible();
 
     // Tara should be first (recommended) and show badge
@@ -126,32 +111,25 @@ test.describe('Story 01 — First Contact', () => {
 
   test('1.5 — Confirming handler shows intake panel', async ({ page }) => {
     await page.goto('/mission/brief', { waitUntil: 'domcontentloaded' });
-    await page.waitForFunction(
-      () => (document.getElementById('root')?.children.length ?? 0) > 0,
-      { timeout: 15_000 },
-    );
+    await waitForReactMount(page);
 
     // Navigate: overlay → archetype → handler
     const overlay = page.getByRole('dialog', { name: 'Welcome' });
-    await expect(overlay).toBeVisible({ timeout: 10_000 });
+    await expect(overlay).toBeVisible();
     await overlay
       .getByRole('button', { name: 'Choose Your Focus First' })
       .click();
-    await expect(page.getByTestId('archetype-picker')).toBeVisible({
-      timeout: 10_000,
-    });
+    await expect(page.getByTestId('archetype-picker')).toBeVisible();
     await page.getByTestId('archetype-card-psi_operative').click();
     await page.getByTestId('archetype-confirm').click();
-    await expect(page.getByTestId('handler-picker')).toBeVisible({
-      timeout: 10_000,
-    });
+    await expect(page.getByTestId('handler-picker')).toBeVisible();
 
     // Confirm handler (auto-selected recommended: tara_van_dekar)
     await page.getByTestId('handler-confirm').click();
 
     // Intake panel should appear
     const intakePanel = page.getByRole('region', { name: 'Mission intake' });
-    await expect(intakePanel).toBeVisible({ timeout: 10_000 });
+    await expect(intakePanel).toBeVisible();
     await expect(intakePanel.getByText('Your Training Hub')).toBeVisible();
   });
 
@@ -159,35 +137,28 @@ test.describe('Story 01 — First Contact', () => {
     page,
   }) => {
     await page.goto('/mission/brief', { waitUntil: 'domcontentloaded' });
-    await page.waitForFunction(
-      () => (document.getElementById('root')?.children.length ?? 0) > 0,
-      { timeout: 15_000 },
-    );
+    await waitForReactMount(page);
 
     // Full onboarding sequence: overlay → archetype → handler → intake
     const overlay = page.getByRole('dialog', { name: 'Welcome' });
-    await expect(overlay).toBeVisible({ timeout: 10_000 });
+    await expect(overlay).toBeVisible();
     await overlay
       .getByRole('button', { name: 'Choose Your Focus First' })
       .click();
-    await expect(page.getByTestId('archetype-picker')).toBeVisible({
-      timeout: 10_000,
-    });
+    await expect(page.getByTestId('archetype-picker')).toBeVisible();
     await page.getByTestId('archetype-card-psi_operative').click();
     await page.getByTestId('archetype-confirm').click();
-    await expect(page.getByTestId('handler-picker')).toBeVisible({
-      timeout: 10_000,
-    });
+    await expect(page.getByTestId('handler-picker')).toBeVisible();
     await page.getByTestId('handler-confirm').click();
     const intakePanel = page.getByRole('region', { name: 'Mission intake' });
-    await expect(intakePanel).toBeVisible({ timeout: 10_000 });
+    await expect(intakePanel).toBeVisible();
 
     // Click "Start Training" to dismiss intake
     await intakePanel.getByRole('button', { name: 'Start Training' }).click();
 
     // Should land on Brief page with identity-aware CTA
     const launcher = page.getByTestId('today-launcher');
-    await expect(launcher).toBeVisible({ timeout: 10_000 });
+    await expect(launcher).toBeVisible();
 
     // The launch button should mention the archetype
     const launchBtn = page.getByTestId('today-launch-btn');
@@ -202,34 +173,25 @@ test.describe('Story 01 — First Contact', () => {
 
   test('1.7 — Profile persisted in localStorage', async ({ page }) => {
     await page.goto('/mission/brief', { waitUntil: 'domcontentloaded' });
-    await page.waitForFunction(
-      () => (document.getElementById('root')?.children.length ?? 0) > 0,
-      { timeout: 15_000 },
-    );
+    await waitForReactMount(page);
 
     // Full onboarding sequence
     const overlay = page.getByRole('dialog', { name: 'Welcome' });
-    await expect(overlay).toBeVisible({ timeout: 10_000 });
+    await expect(overlay).toBeVisible();
     await overlay
       .getByRole('button', { name: 'Choose Your Focus First' })
       .click();
-    await expect(page.getByTestId('archetype-picker')).toBeVisible({
-      timeout: 10_000,
-    });
+    await expect(page.getByTestId('archetype-picker')).toBeVisible();
     await page.getByTestId('archetype-card-psi_operative').click();
     await page.getByTestId('archetype-confirm').click();
-    await expect(page.getByTestId('handler-picker')).toBeVisible({
-      timeout: 10_000,
-    });
+    await expect(page.getByTestId('handler-picker')).toBeVisible();
     await page.getByTestId('handler-confirm').click();
     const intakePanel = page.getByRole('region', { name: 'Mission intake' });
-    await expect(intakePanel).toBeVisible({ timeout: 10_000 });
+    await expect(intakePanel).toBeVisible();
     await intakePanel.getByRole('button', { name: 'Start Training' }).click();
 
     // Wait for launcher to confirm app is settled
-    await expect(page.getByTestId('today-launcher')).toBeVisible({
-      timeout: 10_000,
-    });
+    await expect(page.getByTestId('today-launcher')).toBeVisible();
 
     // Check localStorage for profile
     const profile = await page.evaluate(() => {

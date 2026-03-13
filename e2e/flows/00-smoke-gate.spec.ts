@@ -1,4 +1,6 @@
 import { test, expect } from '@playwright/test';
+import { waitForReactMount } from '../fixtures/app';
+import { seedPersona } from '../fixtures/seed';
 
 test.describe('Story 00 — Smoke Gate', () => {
   test.describe.configure({ mode: 'serial' });
@@ -14,10 +16,7 @@ test.describe('Story 00 — Smoke Gate', () => {
     expect(response?.ok()).toBeTruthy();
 
     // Wait for React to paint something
-    await page.waitForFunction(
-      () => (document.getElementById('root')?.children.length ?? 0) > 0,
-      { timeout: 30_000 },
-    );
+    await waitForReactMount(page, 30_000);
 
     // If we get here, React mounted. Verify title.
     const title = await page.title();
@@ -33,22 +32,10 @@ test.describe('Story 00 — Smoke Gate', () => {
     page,
   }) => {
     // Seed as returning user to skip overlays
-    await page.addInitScript(() => {
-      window.localStorage.setItem('mission:guidance-overlay:v1', 'seen');
-      window.localStorage.setItem('mission:intake:v1', 'seen');
-      window.localStorage.setItem(
-        'operative:profile:v1',
-        JSON.stringify({
-          archetypeId: 'psi_operative',
-          handlerId: 'tara_van_dekar',
-          callsign: 'Test',
-          enrolledAt: new Date().toISOString(),
-        }),
-      );
-    });
+    await seedPersona(page, 'psi-operative');
 
-    await page.goto('/mission/brief');
-    await page.waitForLoadState('networkidle');
+    await page.goto('/mission/brief', { waitUntil: 'domcontentloaded' });
+    await waitForReactMount(page);
 
     // Should stay on /mission/brief, not redirect to 404
     expect(page.url()).toContain('/mission/brief');
@@ -63,8 +50,8 @@ test.describe('Story 00 — Smoke Gate', () => {
   });
 
   test('0.3 — Service worker registers', async ({ page }) => {
-    await page.goto('/');
-    await page.waitForLoadState('networkidle');
+    await page.goto('/', { waitUntil: 'domcontentloaded' });
+    await waitForReactMount(page);
 
     // Give SW time to register
     const swState = await page.evaluate(async () => {
@@ -129,25 +116,14 @@ test.describe('Story 00 — Smoke Gate', () => {
   test('0.7 — Legacy redirect /training/run → /mission/training', async ({
     page,
   }) => {
-    // Seed minimal profile to avoid overlay blocking
-    await page.addInitScript(() => {
-      window.localStorage.setItem('mission:guidance-overlay:v1', 'seen');
-      window.localStorage.setItem('mission:intake:v1', 'seen');
-      window.localStorage.setItem(
-        'operative:profile:v1',
-        JSON.stringify({
-          archetypeId: 'psi_operative',
-          handlerId: 'tara_van_dekar',
-          callsign: 'Test',
-          enrolledAt: new Date().toISOString(),
-        }),
-      );
-    });
+    // Seed returning user to avoid overlay blocking
+    await seedPersona(page, 'psi-operative');
 
-    await page.goto('/training/run');
-    await page.waitForLoadState('networkidle');
+    await page.goto('/training/run', { waitUntil: 'domcontentloaded' });
+    await waitForReactMount(page);
 
-    // Should have redirected to /mission/training
+    // Wait for client-side redirect to complete
+    await page.waitForURL('**/mission/training**');
     expect(page.url()).toContain('/mission/training');
 
     // Page should not be blank

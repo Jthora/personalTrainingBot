@@ -242,11 +242,9 @@ export function buildDueCardProgressEntries(
     repetitions: 1,
     lapses: 0,
   }));
+  // CardProgressStore validates raw JSON as Array.isArray — store as plain array
   return {
-    'ptb:card-progress:v1': JSON.stringify({
-      version: 1,
-      entries,
-    }),
+    'ptb:card-progress:v1': JSON.stringify(entries),
   };
 }
 

@@ -13,18 +13,30 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   timeout: 45_000,
 
-  globalSetup: resolve(__dirname, 'global-setup.ts'),
-  globalTeardown: resolve(__dirname, 'global-teardown.ts'),
-
   reporter: process.env.CI
     ? [['junit', { outputFile: '../artifacts/e2e-junit.xml' }]]
-    : [['html', { outputFolder: '../artifacts/e2e-report', open: 'never' }]],
+    : [
+        ['list'],
+        ['html', { outputFolder: '../artifacts/e2e-report', open: 'never' }],
+      ],
 
   use: {
     baseURL: 'http://localhost:4199',
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
+  },
+
+  expect: {
+    timeout: 10_000,
+  },
+
+  webServer: {
+    command: 'npx vite preview --port 4199 --host',
+    port: 4199,
+    cwd: resolve(__dirname, '..'),
+    reuseExistingServer: !process.env.CI,
+    timeout: 15_000,
   },
 
   projects: [

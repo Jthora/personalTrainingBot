@@ -214,12 +214,13 @@ const MissionShell: React.FC = () => {
     setShowIntake(!hasSeenIntake);
 
     const raw = window.localStorage.getItem(completionStorageKey);
-    if (!raw) return;
-    try {
-      const parsed = JSON.parse(raw) as Record<string, boolean>;
-      setCompletedSteps(parsed);
-    } catch {
-      setCompletedSteps({});
+    if (raw) {
+      try {
+        const parsed = JSON.parse(raw) as Record<string, boolean>;
+        setCompletedSteps(parsed);
+      } catch {
+        setCompletedSteps({});
+      }
     }
 
     const savedMode = window.localStorage.getItem(guidanceModeStorageKey);

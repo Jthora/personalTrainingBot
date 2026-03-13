@@ -38,7 +38,11 @@
     "telemetry:validate": "npx tsx scripts/validateTelemetryEvents.ts artifacts/telemetry-sample.json artifacts/telemetry-validate-report.json",
     "telemetry:drift": "npx tsx scripts/checkTelemetrySchemaDrift.ts artifacts/telemetry-headless.json artifacts/telemetry-schema-baseline.json artifacts/telemetry-schema-drift-report.json",
     "telemetry:audit": "npx tsx scripts/generateTelemetryAuditReport.ts artifacts/telemetry-validate-report.json artifacts/telemetry-schema-drift-report.json artifacts/smoke-headless-report.json artifacts/telemetry-audit-report.md",
-    "migration:drift": "npx tsx scripts/reportMissionMigrationDrift.ts"
+    "migration:drift": "npx tsx scripts/reportMissionMigrationDrift.ts",
+    "test:e2e": "npx playwright test --config=e2e/playwright.config.ts",
+    "test:e2e:mobile": "npx playwright test --config=e2e/playwright.config.ts --project=mobile",
+    "test:e2e:desktop": "npx playwright test --config=e2e/playwright.config.ts --project=desktop",
+    "test:e2e:ui": "npx playwright test --config=e2e/playwright.config.ts --ui"
   },
   "dependencies": {
     "dayjs": "^1.11.13",
@@ -54,6 +58,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
+    "@playwright/test": "^1.58.2",
     "@swc/cli": "^0.6.0",
     "@swc/core": "^1.10.14",
     "@testing-library/react": "^16.0.1",

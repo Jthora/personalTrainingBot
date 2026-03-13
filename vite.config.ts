@@ -32,6 +32,7 @@ export default defineConfig({
           if (id.includes('node_modules')) {
             if (id.includes('react')) return 'react-vendor'
             if (/qrcode|jsqr/.test(id)) return 'qr-vendor'
+            if (/\/gun\//.test(id)) return 'gun-vendor'
             return 'vendor'
           }
 

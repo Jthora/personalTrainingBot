@@ -9,6 +9,7 @@ export default defineConfig({
             ['scripts/**', 'node'],
         ],
         globals: true,
+        exclude: ['e2e/**', 'node_modules/**'],
         setupFiles: './vitest.setup.ts',
         coverage: {
             reporter: ['text', 'html'],

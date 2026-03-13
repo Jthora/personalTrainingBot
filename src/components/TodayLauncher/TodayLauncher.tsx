@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { MissionKitStore } from '../../store/MissionKitStore';
 import { DrillRunStore } from '../../store/DrillRunStore';
@@ -42,11 +42,15 @@ const TodayLauncher: React.FC = () => {
   // Count SR-due cards for review quiz button
   const dueCount = useMemo(() => CardProgressStore.getCardsDueForReview().length, []);
 
-  // 5.4.3.2: Resolve archetype for CTA personalization
+  // 5.4.3.2: Resolve archetype for CTA personalization (reactive to profile changes)
+  const [profileVersion, setProfileVersion] = useState(0);
+  useEffect(() => {
+    return OperativeProfileStore.subscribe(() => setProfileVersion((v) => v + 1));
+  }, []);
   const archetype = useMemo(() => {
     const profile = OperativeProfileStore.get();
     return profile?.archetypeId ? findArchetype(profile.archetypeId) : undefined;
-  }, []);
+  }, [profileVersion]);
 
   // Derive module names for summary
   const moduleNames = useMemo(() => {

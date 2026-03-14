@@ -276,9 +276,9 @@
 /* ── Welcome banner (first-time users) ── */
 
 .welcomeBanner {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(59, 130, 246, 0.1));
-  border: 1px solid rgba(16, 185, 129, 0.25);
-  border-radius: 12px;
+  background: linear-gradient(135deg, var(--color-action-soft, rgba(16, 185, 129, 0.1)), var(--accent-soft, rgba(59, 130, 246, 0.1)));
+  border: 1px solid var(--color-action-border, rgba(16, 185, 129, 0.25));
+  border-radius: var(--radius-lg, 14px);
   padding: 1.25rem 1.5rem;
   margin-bottom: 0.5rem;
 }
@@ -301,16 +301,16 @@
 
 .quickTrainBtn {
   margin-top: 0.5rem;
-  background: rgba(16, 185, 129, 0.15);
-  color: #10b981;
-  border: 1px solid rgba(16, 185, 129, 0.3);
-  border-radius: 6px;
+  background: var(--color-action-soft, rgba(16, 185, 129, 0.15));
+  color: var(--color-action, #10b981);
+  border: 1px solid var(--color-action-border, rgba(16, 185, 129, 0.3));
+  border-radius: var(--radius-sm, 6px);
   padding: 6px 12px;
   font-size: 0.8rem;
   font-weight: 600;
   cursor: pointer;
   width: 100%;
-  transition: background 0.15s, border-color 0.15s;
+  transition: background var(--duration-fast, 120ms), border-color var(--duration-fast, 120ms);
 }
 
 .quickTrainBtn:hover {

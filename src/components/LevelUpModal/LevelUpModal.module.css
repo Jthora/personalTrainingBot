@@ -8,10 +8,10 @@
   align-items: center;
   justify-content: center;
   background: rgba(4, 7, 9, 0.85);
-  animation: fadeIn 0.25s ease-out;
+  animation: levelUp-fadeIn 0.25s ease-out;
 }
 
-@keyframes fadeIn {
+@keyframes levelUp-fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }

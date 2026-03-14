@@ -21,10 +21,10 @@
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  animation: spin 1s linear infinite;
+  animation: loader-spin 1s linear infinite;
 }
 
-@keyframes spin {
+@keyframes loader-spin {
   to {
     transform: rotate(360deg);
   }

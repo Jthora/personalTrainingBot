@@ -4,6 +4,14 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-latin.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* ─── Design Foundation ──────────────────────────────────────────────────── */
 
 :root {
@@ -11,6 +19,7 @@
     --accent: #5A7FFF;
     --accent-strong: #3B5DCF;
     --accent-soft: rgba(90, 127, 255, 0.15);
+    --accent-muted: rgba(90, 127, 255, 0.45);
     --accent-glow: #8FAFFF;
     --accent-border: rgba(90, 127, 255, 0.35);
 
@@ -30,6 +39,9 @@
     --color-danger-soft: rgba(239, 68, 68, 0.15);
     --color-gold: #F5C542;
     --color-gold-soft: rgba(245, 197, 66, 0.15);
+    --color-action: #10b981;
+    --color-action-soft: rgba(16, 185, 129, 0.15);
+    --color-action-border: rgba(16, 185, 129, 0.3);
 
     /* ── Surfaces (dark → light elevation) ── */
     --surface-base: #040709;
@@ -37,6 +49,10 @@
     --surface-elevated: #101A2B;
     --surface-card: #172238;
     --surface-raised: #1E2D4A;
+    --surface-overlay: #1a2744;
+
+    /* Legacy surface aliases */
+    --panel-bg: var(--surface-card);
 
     /* ── Borders ── */
     --border-subtle: rgba(227, 236, 255, 0.08);
@@ -46,7 +62,7 @@
     /* ── Text ── */
     --text-primary: #E3ECFF;
     --text-secondary: rgba(227, 236, 255, 0.68);
-    --text-muted: rgba(227, 236, 255, 0.45);
+    --text-muted: rgba(227, 236, 255, 0.60);
     --text-accent: var(--accent-glow);
 
     /* ── Typography ── */
@@ -87,6 +103,14 @@
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
     --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.6);
     --shadow-glow: 0 0 20px rgba(90, 127, 255, 0.15);
+
+    /* ── Motion / animation ── */
+    --duration-fast: 120ms;
+    --duration-normal: 200ms;
+    --duration-slow: 350ms;
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-in-out: cubic-bezier(0.45, 0, 0.55, 1);
+    --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 
     /* ── Layout ── */
     --header-height: 60px;

@@ -14,12 +14,12 @@
   border: 1px solid rgba(16, 185, 129, 0.4);
   background: rgba(16, 185, 129, 0.12);
   backdrop-filter: blur(8px);
-  animation: slideUp 0.3s ease-out;
+  animation: toast-slideUp 0.3s ease-out;
   max-width: 340px;
   width: max-content;
 }
 
-@keyframes slideUp {
+@keyframes toast-slideUp {
   from { transform: translate(-50%, 16px); opacity: 0; }
   to { transform: translate(-50%, 0); opacity: 1; }
 }

@@ -71,12 +71,12 @@
 
 .success {
   font-size: 0.8rem;
-  color: var(--success, #4caf50);
+  color: var(--color-success, #22c55e);
   margin: 0;
 }
 
 .error {
   font-size: 0.8rem;
-  color: var(--error, #f44336);
+  color: var(--color-danger, #ef4444);
   margin: 0;
 }

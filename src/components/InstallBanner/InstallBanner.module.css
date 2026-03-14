@@ -12,7 +12,7 @@
   border: 1px solid var(--accent-primary, #5b9bd5);
   border-radius: 0.75rem;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
-  animation: slideUp 0.3s ease-out;
+  animation: banner-slideUp 0.3s ease-out;
   max-width: calc(100vw - 2rem);
 }
 
@@ -48,7 +48,7 @@
   line-height: 1;
 }
 
-@keyframes slideUp {
+@keyframes banner-slideUp {
   from {
     opacity: 0;
     transform: translateX(-50%) translateY(1rem);

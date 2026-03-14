@@ -4,13 +4,17 @@
  */
 export type Exercise = {
     /** The interaction pattern for this exercise. */
-    type: 'recall' | 'apply' | 'analyze' | 'self-check';
+    type: 'recall' | 'apply' | 'analyze' | 'self-check' | 'scenario';
     /** The prompt or question shown to the operative. */
     prompt: string;
     /** Optional progressive hints revealed on request. */
     hints?: string[];
     /** The expected outcome or model answer (revealed after attempt). */
     expectedOutcome?: string;
+    /** For scenario exercises: multiple-choice options. */
+    choices?: string[];
+    /** For scenario exercises: index of the correct choice. */
+    correctChoiceIndex?: number;
 };
 
 export type Card = {

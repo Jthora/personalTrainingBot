@@ -109,6 +109,35 @@ export function generateMCFromExercise(
 }
 
 /**
+ * Generate MC question from a card's scenario exercise.
+ * Uses the scenario's choices and correctChoiceIndex directly.
+ */
+export function generateMCFromScenario(card: Card): QuizQuestion | null {
+  const scenario = card.exercises?.find(
+    (ex) => ex.type === 'scenario' && ex.choices && ex.choices.length >= 2 && ex.correctChoiceIndex != null,
+  );
+  if (!scenario?.choices || scenario.correctChoiceIndex == null) return null;
+
+  const correctAnswer = scenario.choices[scenario.correctChoiceIndex];
+  if (!correctAnswer) return null;
+
+  return {
+    id: nextId(card.id),
+    cardId: card.id,
+    type: 'multiple-choice',
+    prompt: scenario.prompt,
+    options: scenario.choices,
+    correctIndex: scenario.correctChoiceIndex,
+    correctAnswer,
+    explanation: scenario.expectedOutcome
+      || card.summaryText
+      || `${card.description} Key points: ${(card.bulletpoints ?? []).slice(0, 2).join('; ')}.`,
+    hints: scenario.hints ?? [],
+    source: card.title,
+  };
+}
+
+/**
  * Generate true/false question from a card's bulletpoints.
  * Picks one bulletpoint and either presents it as-is (true) or flips a word (false).
  */
@@ -258,6 +287,12 @@ export function generateQuiz(cards: Card[], maxQuestions = 10): QuizQuestion[] {
   // Pass 4: Term-match (batch across cards)
   const tm = generateTermMatch(cards);
   if (tm) questions.push(tm);
+
+  // Pass 5: MC from scenario exercises
+  for (const card of cards) {
+    const sc = generateMCFromScenario(card);
+    if (sc) questions.push(sc);
+  }
 
   return shuffle(questions).slice(0, maxQuestions);
 }

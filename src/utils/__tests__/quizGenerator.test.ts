@@ -2,6 +2,7 @@ import { describe, it, expect, beforeEach } from 'vitest';
 import type { Card } from '../../types/Card';
 import {
   generateMCFromExercise,
+  generateMCFromScenario,
   generateTrueFalse,
   generateFillBlank,
   generateTermMatch,
@@ -72,6 +73,20 @@ const cardC = makeCard({
 const cardMinimal = makeCard({
   id: 'min',
   title: 'Minimal Card',
+});
+
+const cardScenario = makeCard({
+  id: 'sc',
+  title: 'Scenario Card',
+  exercises: [
+    {
+      type: 'scenario',
+      prompt: 'A server returns 503. What should you do?',
+      choices: ['Retry immediately', 'Wait and retry with backoff', 'Ignore the error', 'Delete the request'],
+      correctChoiceIndex: 1,
+      expectedOutcome: 'Exponential backoff is the standard approach for 503 Service Unavailable errors.',
+    },
+  ],
 });
 
 beforeEach(() => {
@@ -147,6 +162,69 @@ describe('generateMCFromExercise', () => {
     expect(q1).not.toBeNull();
     expect(q2).not.toBeNull();
     expect(q1!.id).not.toBe(q2!.id);
+  });
+});
+
+/* ── generateMCFromScenario ── */
+
+describe('generateMCFromScenario', () => {
+  it('produces an MC question from a scenario exercise with choices', () => {
+    const q = generateMCFromScenario(cardScenario);
+    expect(q).not.toBeNull();
+    expect(q!.type).toBe('multiple-choice');
+    expect(q!.cardId).toBe('sc');
+    expect(q!.prompt).toBe('A server returns 503. What should you do?');
+    expect(q!.options).toEqual([
+      'Retry immediately', 'Wait and retry with backoff', 'Ignore the error', 'Delete the request',
+    ]);
+    expect(q!.correctIndex).toBe(1);
+    expect(q!.correctAnswer).toBe('Wait and retry with backoff');
+    expect(q!.explanation).toContain('Exponential backoff');
+    expect(q!.source).toBe('Scenario Card');
+  });
+
+  it('returns null when card has no scenario exercises', () => {
+    const q = generateMCFromScenario(cardA);
+    expect(q).toBeNull();
+  });
+
+  it('returns null when card has no exercises at all', () => {
+    const q = generateMCFromScenario(cardMinimal);
+    expect(q).toBeNull();
+  });
+
+  it('returns null when scenario has no choices', () => {
+    const card = makeCard({
+      id: 'sc-no-choices',
+      title: 'No Choices',
+      exercises: [{ type: 'scenario', prompt: 'What?', choices: [] }],
+    });
+    expect(generateMCFromScenario(card)).toBeNull();
+  });
+
+  it('returns null when scenario has no correctChoiceIndex', () => {
+    const card = makeCard({
+      id: 'sc-no-idx',
+      title: 'No Index',
+      exercises: [{ type: 'scenario', prompt: 'What?', choices: ['A', 'B'] }],
+    });
+    expect(generateMCFromScenario(card)).toBeNull();
+  });
+
+  it('falls back to summaryText for explanation when expectedOutcome is missing', () => {
+    const card = makeCard({
+      id: 'sc-fallback',
+      title: 'Fallback',
+      summaryText: 'Use backoff for 503 errors.',
+      exercises: [{
+        type: 'scenario',
+        prompt: 'Server returns 503?',
+        choices: ['Retry', 'Backoff'],
+        correctChoiceIndex: 1,
+      }],
+    });
+    const q = generateMCFromScenario(card);
+    expect(q!.explanation).toBe('Use backoff for 503 errors.');
   });
 });
 

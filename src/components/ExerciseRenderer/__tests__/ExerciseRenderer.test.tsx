@@ -30,6 +30,14 @@ const selfCheck: Exercise = {
   expectedOutcome: 'Core REST concepts mastered.',
 };
 
+const scenario: Exercise = {
+  type: 'scenario',
+  prompt: 'A server returns 503. What should you do?',
+  choices: ['Retry immediately', 'Wait and retry with backoff', 'Ignore the error', 'Delete the request'],
+  correctChoiceIndex: 1,
+  expectedOutcome: 'Exponential backoff is the standard approach for 503 errors.',
+};
+
 describe('ExerciseRenderer', () => {
   it('renders nothing when exercises is empty', () => {
     const { container } = render(<ExerciseRenderer exercises={[]} />);
@@ -165,6 +173,77 @@ describe('ExerciseRenderer', () => {
       expect(screen.getByText(/Core REST concepts mastered/)).toBeTruthy();
       fireEvent.click(checkboxes[0]);
       expect(screen.queryByText(/Core REST concepts mastered/)).toBeNull();
+    });
+  });
+
+  // -- Scenario ---------------------------------------------------------------
+  describe('scenario exercise', () => {
+    it('renders prompt and radio choices', () => {
+      render(<ExerciseRenderer exercises={[scenario]} />);
+      expect(screen.getByText('A server returns 503. What should you do?')).toBeTruthy();
+      expect(screen.getByText('Retry immediately')).toBeTruthy();
+      expect(screen.getByText('Wait and retry with backoff')).toBeTruthy();
+      expect(screen.getByText('Ignore the error')).toBeTruthy();
+      expect(screen.getByText('Delete the request')).toBeTruthy();
+      expect(screen.getAllByRole('radio')).toHaveLength(4);
+    });
+
+    it('shows submit button only after selecting a choice', () => {
+      render(<ExerciseRenderer exercises={[scenario]} />);
+      expect(screen.queryByText('Submit Answer')).toBeNull();
+      const radios = screen.getAllByRole('radio');
+      fireEvent.click(radios[1]);
+      expect(screen.getByText('Submit Answer')).toBeTruthy();
+    });
+
+    it('shows correct feedback when right answer is selected', () => {
+      render(<ExerciseRenderer exercises={[scenario]} />);
+      const radios = screen.getAllByRole('radio');
+      fireEvent.click(radios[1]); // correct answer (index 1)
+      fireEvent.click(screen.getByText('Submit Answer'));
+      expect(screen.getByText(/✓ Correct!/)).toBeTruthy();
+      expect(screen.getByText(/Exponential backoff/)).toBeTruthy();
+    });
+
+    it('shows incorrect feedback when wrong answer is selected', () => {
+      render(<ExerciseRenderer exercises={[scenario]} />);
+      const radios = screen.getAllByRole('radio');
+      fireEvent.click(radios[0]); // wrong answer (index 0)
+      fireEvent.click(screen.getByText('Submit Answer'));
+      expect(screen.getByText(/✗ Incorrect/)).toBeTruthy();
+      expect(screen.getByText(/Exponential backoff/)).toBeTruthy();
+    });
+
+    it('disables radio buttons after submission', () => {
+      render(<ExerciseRenderer exercises={[scenario]} />);
+      const radios = screen.getAllByRole('radio');
+      fireEvent.click(radios[1]);
+      fireEvent.click(screen.getByText('Submit Answer'));
+      for (const radio of screen.getAllByRole('radio')) {
+        expect((radio as HTMLInputElement).disabled).toBe(true);
+      }
+    });
+
+    it('hides submit button after submission', () => {
+      render(<ExerciseRenderer exercises={[scenario]} />);
+      const radios = screen.getAllByRole('radio');
+      fireEvent.click(radios[1]);
+      fireEvent.click(screen.getByText('Submit Answer'));
+      expect(screen.queryByText('Submit Answer')).toBeNull();
+    });
+
+    it('calls onInteraction on submission', () => {
+      const handler = vi.fn();
+      render(<ExerciseRenderer exercises={[scenario]} onInteraction={handler} />);
+      const radios = screen.getAllByRole('radio');
+      fireEvent.click(radios[2]);
+      fireEvent.click(screen.getByText('Submit Answer'));
+      expect(handler).toHaveBeenCalledWith(0, 'attempted');
+    });
+
+    it('renders the 🎯 Scenario label', () => {
+      render(<ExerciseRenderer exercises={[scenario]} />);
+      expect(screen.getByText('🎯 Scenario')).toBeTruthy();
     });
   });
 

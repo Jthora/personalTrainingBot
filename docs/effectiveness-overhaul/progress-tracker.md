@@ -122,60 +122,60 @@
 
 #### Step 2.1.1 — Quiz Explanation Field
 
-- [ ] `063` Add `explanation?: string` to quiz answer type definition
-- [ ] `064` Update `EXERCISE_LABELS` map — add `scenario: '🎯 Scenario'`
-- [ ] `065` Validate no data migration needed (additive-only change)
+- [x] `063` Add `explanation?: string` to quiz answer type definition
+- [x] `064` Update `EXERCISE_LABELS` map — add `scenario: '🎯 Scenario'`
+- [x] `065` Validate no data migration needed (additive-only change)
 
 #### Step 2.1.2 — Scenario Exercise Type
 
-- [ ] `066` Define `ScenarioExercise` type with `prompt`, `choices[]`, `correctChoiceIndex`
-- [ ] `067` Add scenario exercise to `ExerciseType` union
-- [ ] `068` Build `generateMCFromScenario()` in quizGenerator.ts
-- [ ] `069` Add scenario exercise renderer component in ExerciseRenderer
-- [ ] `070` Add unit tests for scenario exercise type
+- [x] `066` Define `ScenarioExercise` type with `prompt`, `choices[]`, `correctChoiceIndex`
+- [x] `067` Add scenario exercise to `ExerciseType` union
+- [x] `068` Build `generateMCFromScenario()` in quizGenerator.ts
+- [x] `069` Add scenario exercise renderer component in ExerciseRenderer
+- [x] `070` Add unit tests for scenario exercise type
 
 #### Step 2.1.3 — Key Term Validation
 
-- [ ] `071` Build `validateKeyTerms()` function — detect 2-word fragments, too-short/generic terms
-- [ ] `072` Add unit tests for key term validation rules
+- [x] `071` Build `validateKeyTerms()` function — detect 2-word fragments, too-short/generic terms
+- [x] `072` Add unit tests for key term validation rules
 
 #### Step 2.1.4 — Summary Text Auto-Derive
 
-- [ ] `073` Build `deriveSummaryText()` function — auto-derive from `description + bulletpoints[0]`
-- [ ] `074` Decide build-time vs. runtime derivation
-- [ ] `075` Add unit tests for summary text derivation
+- [x] `073` Build `deriveSummaryText()` function — auto-derive from `description + bulletpoints[0]`
+- [x] `074` Decide build-time vs. runtime derivation
+- [x] `075` Add unit tests for summary text derivation
 
 ### Phase 2.2 — Content Validation Tooling
 
 #### Step 2.2.1 — Build Core Validation Script
 
-- [ ] `076` Create `scripts/validateContent.ts` — reads shard JSON, scores cards 0-10
-- [ ] `077` Output `artifacts/content-validation-report.json`
-- [ ] `078` Implement validation rule: `min-sentences` (description ≥ 2 sentences)
-- [ ] `079` Implement validation rule: `min-count` (bulletpoints ≥ 4 items)
-- [ ] `080` Implement validation rule: `min-word-count` (each bulletpoint ≥ 15 words)
-- [ ] `081` Implement validation rule: `no-title-substring` (bulletpoint ≠ title substring)
-- [ ] `082` Implement validation rule: `min-count` (exercises ≥ 2)
-- [ ] `083` Implement validation rule: `no-recall-template`
-- [ ] `084` Implement validation rule: `no-apply-template`
-- [ ] `085` Implement validation rule: `no-analyze-template`
-- [ ] `086` Implement validation rule: `no-selfcheck-template`
-- [ ] `087` Implement validation rule: `min-outcome-length` (expectedOutcome ≥ 50 chars)
-- [ ] `088` Implement validation rule: `outcome-not-bulletpoints`
-- [ ] `089` Implement validation rule: `type-diversity` (≥ 2 exercise types)
-- [ ] `090` Implement validation rule: `min-count` (keyTerms ≥ 3)
-- [ ] `091` Implement validation rule: `no-fragments` (no 2-word bulletpoint fragments)
-- [ ] `092` Implement validation rule: `min-count` (learningObjectives ≥ 3)
-- [ ] `093` Implement validation rule: `no-bloom-template`
-- [ ] `094` Implement validation rule: `measurable-verb` (starts with action verb)
-- [ ] `095` Implement validation rule: `present` (summaryText 140-280 chars)
-- [ ] `096` Implement validation rule: `min-cards` (≥ 5 cards per deck)
+- [x] `076` Create `scripts/validateContent.ts` — reads shard JSON, scores cards 0-10
+- [x] `077` Output `artifacts/content-validation-report.json`
+- [x] `078` Implement validation rule: `min-sentences` (description ≥ 2 sentences)
+- [x] `079` Implement validation rule: `min-count` (bulletpoints ≥ 4 items)
+- [x] `080` Implement validation rule: `min-word-count` (each bulletpoint ≥ 15 words)
+- [x] `081` Implement validation rule: `no-title-substring` (bulletpoint ≠ title substring)
+- [x] `082` Implement validation rule: `min-count` (exercises ≥ 2)
+- [x] `083` Implement validation rule: `no-recall-template`
+- [x] `084` Implement validation rule: `no-apply-template`
+- [x] `085` Implement validation rule: `no-analyze-template`
+- [x] `086` Implement validation rule: `no-selfcheck-template`
+- [x] `087` Implement validation rule: `min-outcome-length` (expectedOutcome ≥ 50 chars)
+- [x] `088` Implement validation rule: `outcome-not-bulletpoints`
+- [x] `089` Implement validation rule: `type-diversity` (≥ 2 exercise types)
+- [x] `090` Implement validation rule: `min-count` (keyTerms ≥ 3)
+- [x] `091` Implement validation rule: `no-fragments` (no 2-word bulletpoint fragments)
+- [x] `092` Implement validation rule: `min-count` (learningObjectives ≥ 3)
+- [x] `093` Implement validation rule: `no-bloom-template`
+- [x] `094` Implement validation rule: `measurable-verb` (starts with action verb)
+- [x] `095` Implement validation rule: `present` (summaryText 140-280 chars)
+- [x] `096` Implement validation rule: `min-cards` (≥ 5 cards per deck)
 
 #### Step 2.2.2 — Build Template Detection Script
 
-- [ ] `097` Create `scripts/detectTemplates.ts`
-- [ ] `098` Implement 8 template patterns: `recall_template`, `apply_template`, `analyze_template`, `selfcheck_template`, `bloom_understand`, `bloom_apply`, `bloom_evaluate`, `vague_outcome`
-- [ ] `099` Output per-module/type template counts and total remediation estimate
+- [x] `097` Create `scripts/detectTemplates.ts`
+- [x] `098` Implement 8 template patterns: `recall_template`, `apply_template`, `analyze_template`, `selfcheck_template`, `bloom_understand`, `bloom_apply`, `bloom_evaluate`, `vague_outcome`
+- [x] `099` Output per-module/type template counts and total remediation estimate
 
 #### Step 2.2.3 — Build Content Generation Pipeline
 

@@ -155,6 +155,62 @@ const SelfCheckExercise: React.FC<{ ex: Exercise; onComplete: () => void }> = ({
   );
 };
 
+const ScenarioExercise: React.FC<{ ex: Exercise; onComplete: () => void }> = ({ ex, onComplete }) => {
+  const choices = ex.choices ?? [];
+  const [selected, setSelected] = useState<number | null>(null);
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = () => {
+    if (selected === null) return;
+    setSubmitted(true);
+    onComplete();
+  };
+
+  return (
+    <div className={styles.exercise} data-type="scenario">
+      <p className={styles.prompt}>{ex.prompt}</p>
+      {choices.length > 0 && (
+        <ul className={styles.checkList}>
+          {choices.map((choice, i) => (
+            <li key={i}>
+              <label className={styles.checkItem}>
+                <input
+                  type="radio"
+                  name="scenario-choice"
+                  checked={selected === i}
+                  onChange={() => { if (!submitted) setSelected(i); }}
+                  disabled={submitted}
+                />
+                <span
+                  style={submitted ? {
+                    fontWeight: i === ex.correctChoiceIndex ? 'bold' : undefined,
+                    color: i === ex.correctChoiceIndex
+                      ? 'var(--color-success, green)'
+                      : selected === i ? 'var(--color-error, red)' : undefined,
+                  } : undefined}
+                >
+                  {choice}
+                </span>
+              </label>
+            </li>
+          ))}
+        </ul>
+      )}
+      {!submitted && selected !== null && (
+        <button className={styles.revealBtn} type="button" onClick={handleSubmit}>
+          Submit Answer
+        </button>
+      )}
+      {submitted && (
+        <div className={styles.outcome}>
+          <strong>{selected === ex.correctChoiceIndex ? '✓ Correct!' : '✗ Incorrect.'}</strong>
+          {ex.expectedOutcome && <p>{ex.expectedOutcome}</p>}
+        </div>
+      )}
+    </div>
+  );
+};
+
 // ---------------------------------------------------------------------------
 // Main renderer
 // ---------------------------------------------------------------------------
@@ -164,6 +220,7 @@ const EXERCISE_LABELS: Record<Exercise['type'], string> = {
   apply: '🔧 Apply',
   analyze: '🔍 Analyze',
   'self-check': '✅ Self-Check',
+  scenario: '🎯 Scenario',
 };
 
 const ExerciseRenderer: React.FC<ExerciseRendererProps> = ({ exercises, onInteraction, onAllCompleted }) => {
@@ -193,6 +250,7 @@ const ExerciseRenderer: React.FC<ExerciseRendererProps> = ({ exercises, onIntera
           {ex.type === 'apply' && <ApplyExercise ex={ex} onReveal={() => handleInteraction(i)} />}
           {ex.type === 'analyze' && <AnalyzeExercise ex={ex} onReveal={() => handleInteraction(i)} />}
           {ex.type === 'self-check' && <SelfCheckExercise ex={ex} onComplete={() => handleInteraction(i)} />}
+          {ex.type === 'scenario' && <ScenarioExercise ex={ex} onComplete={() => handleInteraction(i)} />}
         </div>
       ))}
     </div>

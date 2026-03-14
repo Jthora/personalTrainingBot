@@ -32,6 +32,7 @@ async function launchDrill(page: Page) {
 }
 
 /** Complete the current drill on /mission/checklist: check all steps → reflection → record.
+ *  Handles engagement warning (from fast completion) and required self-assessment.
  *  NOTE: For fast-path users, the archetype prompt replaces XP feedback immediately. */
 async function completeDrill(page: Page) {
   // Click all unchecked checkboxes via native DOM click (scoped to checklist section)
@@ -39,7 +40,7 @@ async function completeDrill(page: Page) {
   const checked = await page.evaluate(() => {
     const section = document.getElementById('section-mission-checklist');
     const cbs = Array.from(
-      (section ?? document).querySelectorAll('input[type="checkbox"]'),
+      (section ?? document).querySelectorAll('input[type="checkbox"]:not(:disabled)'),
     );
     let checkedCount = 0;
     for (const cb of cbs) {
@@ -52,11 +53,20 @@ async function completeDrill(page: Page) {
   });
   expect(checked.total).toBeGreaterThan(0);
 
-  // Reflection form appears after all steps checked
+  // Engagement warning appears when drill completed faster than steps × 15s
+  const engagementWarning = page.getByTestId('engagement-warning');
+  if (await engagementWarning.isVisible({ timeout: 3_000 }).catch(() => false)) {
+    await page.getByRole('button', { name: 'Yes, continue to reflection' }).click();
+  }
+
+  // Reflection form appears after all steps checked (or after dismissing engagement warning)
   const reflection = page.getByTestId('drill-reflection');
   await expect(reflection).toBeVisible();
 
-  // Record drill (use exact match to avoid strict mode violation with "Skip & record")
+  // Required self-assessment: select rating 4
+  await page.getByRole('button', { name: 'Rate 4 out of 5' }).click();
+
+  // Record drill
   const recordBtn = page.getByRole('button', { name: 'Record drill' });
   await expect(recordBtn).toBeVisible();
   await recordBtn.click();

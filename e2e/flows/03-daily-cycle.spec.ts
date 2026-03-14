@@ -27,7 +27,7 @@ async function completeDrillWithReflection(page: Page) {
   const checked = await page.evaluate(() => {
     const section = document.getElementById('section-mission-checklist');
     const cbs = Array.from(
-      (section ?? document).querySelectorAll('input[type="checkbox"]'),
+      (section ?? document).querySelectorAll('input[type="checkbox"]:not(:disabled)'),
     );
     let clicked = 0;
     for (const cb of cbs) {
@@ -39,6 +39,12 @@ async function completeDrillWithReflection(page: Page) {
     return { total: cbs.length, clicked };
   });
   expect(checked.total).toBeGreaterThan(0);
+
+  // Engagement warning appears when drill completed faster than steps × 15s
+  const engagementWarning = page.getByTestId('engagement-warning');
+  if (await engagementWarning.isVisible({ timeout: 3_000 }).catch(() => false)) {
+    await page.getByRole('button', { name: 'Yes, continue to reflection' }).click();
+  }
 
   // Reflection form should appear
   const reflection = page.getByTestId('drill-reflection');
@@ -181,6 +187,7 @@ test.describe('Story 03 — Daily Cycle', () => {
 
     await completeDrillWithReflection(page);
     const reflection = page.getByTestId('drill-reflection');
+    await reflection.getByRole('button', { name: /rate 4/i }).click();
     await reflection.getByRole('button', { name: 'Record drill' }).click();
 
     // Rest interval should appear (enhanced mode is always on)

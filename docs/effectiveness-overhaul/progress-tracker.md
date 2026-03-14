@@ -33,7 +33,7 @@
 - [x] `011` Disable checkbox until `hasBeenOpened` is true
 - [x] `012` Track per-panel scroll/visibility via IntersectionObserver or focus event
 - [x] `013` Add unit tests for gated checkbox behavior
-- [ ] `014` Add E2E test: checkbox disabled until exercise panel viewed
+- [x] `014` Add E2E test: checkbox disabled until exercise panel viewed
 
 #### Step 1.2.3 — Required Self-Assessment
 
@@ -42,7 +42,7 @@
 - [x] `017` Wire self-assessment result into `computeCardQuality` signal
 - [x] `018` Store self-assessment in telemetry payload
 - [x] `019` Add unit tests for self-assessment flow
-- [ ] `020` Add E2E test: self-assessment prompt appears after drill
+- [x] `020` Add E2E test: self-assessment prompt appears after drill
 
 #### Step 1.2.4 — Minimum Engagement Warning
 
@@ -51,7 +51,7 @@
 - [x] `023` Show warning toast when user completes drill in < expected time
 - [x] `024` Wire engagement time into telemetry event payload
 - [x] `025` Add unit test: warning triggers when time < threshold
-- [ ] `026` Add E2E test: speed-run a drill, verify warning appears
+- [x] `026` Add E2E test: speed-run a drill, verify warning appears
 
 #### Step 1.2.5 — ExerciseRenderer Completion Signals
 
@@ -59,8 +59,8 @@
 - [x] `028` Implement per-exercise completion tracking in ExerciseRenderer state
 - [x] `029` Fire `onAllCompleted` only when all exercises in a step are interacted with
 - [x] `030` Consume `onAllCompleted` in DrillRunner to gate step progression
-- [ ] `031` Add unit tests for ExerciseRenderer completion signal
-- [ ] `032` Add E2E test: step cannot advance until exercises completed
+- [x] `031` Add unit tests for ExerciseRenderer completion signal
+- [x] `032` Add E2E test: step cannot advance until exercises completed
 
 #### Step 1.2.6 — Per-Card SR Quality Signal
 
@@ -68,8 +68,8 @@
 - [x] `034` Replace binary pass/fail SR update with quality-weighted interval calculation
 - [x] `035` Update SR store to accept quality parameter
 - [x] `036` Ensure backward compatibility with existing SR data
-- [ ] `037` Add unit tests for `computeCardQuality()` edge cases
-- [ ] `038` Add unit tests for quality-weighted SR interval calculation
+- [x] `037` Add unit tests for `computeCardQuality()` edge cases
+- [x] `038` Add unit tests for quality-weighted SR interval calculation
 
 #### Step 1.2.7 — Quiz Explanation Field
 
@@ -79,7 +79,7 @@
 - [x] `042` Style explanation display (green border correct, amber border incorrect)
 - [x] `043` Add unit tests for explanation auto-derivation
 - [x] `044` Add unit tests for explanation rendering
-- [ ] `045` Add E2E test: answer quiz question, verify explanation shown
+- [x] `045` Add E2E test: answer quiz question, verify explanation shown
 
 ### Phase 1.3 — Test Impact
 
@@ -92,27 +92,27 @@
 
 #### Step 1.3.2 — Add New Tests
 
-- [ ] `050` Create shared `completeDrill()` E2E helper in fixtures
-- [ ] `051` Add E2E test suite: drill enforcement gating (checkbox, time, assessment)
-- [ ] `052` Add E2E test suite: quiz explanation visibility
-- [ ] `053` Add integration tests: drill → SR quality → interval calculation
-- [ ] `054` Add 10-14 new unit tests per implementation-plan spec
+- [x] `050` Create shared `completeDrill()` E2E helper in fixtures
+- [x] `051` Add E2E test suite: drill enforcement gating (checkbox, time, assessment)
+- [x] `052` Add E2E test suite: quiz explanation visibility
+- [x] `053` Add integration tests: drill → SR quality → interval calculation
+- [x] `054` Add 10-14 new unit tests per implementation-plan spec
 
 #### Step 1.3.3 — Clean Up Obsolete Tests
 
-- [ ] `055` Remove tests that assert checkbox is freely clickable without engagement
-- [ ] `056` Remove tests that assert binary SR update (replaced by quality-weighted)
+- [x] `055` Remove tests that assert checkbox is freely clickable without engagement
+- [x] `056` Remove tests that assert binary SR update (replaced by quality-weighted)
 
 ### Phase 1.4 — Validation & Measurement
 
 #### Step 1.4.1 — Score Verification
 
-- [ ] `057` Run full unit test suite — all pass
-- [ ] `058` Run full E2E test suite — all pass
-- [ ] `059` Run TypeScript compiler — zero errors
-- [ ] `060` Run production build — clean
-- [ ] `061` Re-score drill execution dimension (target: 3/10 → 7/10)
-- [ ] `062` Update scoring in `docs/effectiveness-overhaul/README.md`
+- [x] `057` Run full unit test suite — all pass
+- [x] `058` Run full E2E test suite — all pass
+- [x] `059` Run TypeScript compiler — zero errors
+- [x] `060` Run production build — clean
+- [x] `061` Re-score drill execution dimension (target: 3/10 → 7/10)
+- [x] `062` Update scoring in `docs/effectiveness-overhaul/README.md`
 
 ---
 

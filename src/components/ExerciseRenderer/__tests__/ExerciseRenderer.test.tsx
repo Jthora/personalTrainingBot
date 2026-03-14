@@ -181,4 +181,80 @@ describe('ExerciseRenderer', () => {
     fireEvent.click(screen.getByText('Reveal Answer'));
     expect(handler).toHaveBeenCalledWith(0, 'attempted');
   });
+
+  // -- Completion signal (onAllCompleted) ------------------------------------
+  describe('onAllCompleted', () => {
+    it('fires when all exercises have been interacted with', () => {
+      const onAll = vi.fn();
+      render(
+        <ExerciseRenderer exercises={[recall, selfCheck]} onAllCompleted={onAll} />,
+      );
+      // Complete first exercise (recall)
+      fireEvent.click(screen.getByText('Reveal Answer'));
+      expect(onAll).not.toHaveBeenCalled();
+      // Complete second exercise (self-check)
+      const checkboxes = screen.getAllByRole('checkbox');
+      fireEvent.click(checkboxes[0]);
+      fireEvent.click(checkboxes[1]);
+      expect(onAll).toHaveBeenCalledTimes(1);
+    });
+
+    it('fires when single exercise is completed', () => {
+      const onAll = vi.fn();
+      render(<ExerciseRenderer exercises={[recall]} onAllCompleted={onAll} />);
+      fireEvent.click(screen.getByText('Reveal Answer'));
+      expect(onAll).toHaveBeenCalledTimes(1);
+    });
+
+    it('does not fire until every exercise is interacted with', () => {
+      const onAll = vi.fn();
+      render(
+        <ExerciseRenderer exercises={[recall, apply, analyze]} onAllCompleted={onAll} />,
+      );
+      // Complete only recall
+      fireEvent.click(screen.getByText('Reveal Answer'));
+      expect(onAll).not.toHaveBeenCalled();
+      // Complete apply
+      fireEvent.click(screen.getByText('Show Expected Outcome'));
+      expect(onAll).not.toHaveBeenCalled();
+      // Complete analyze
+      fireEvent.click(screen.getByText("I've reflected on this"));
+      expect(onAll).toHaveBeenCalledTimes(1);
+    });
+
+    it('does not fire more than once for repeated interactions', () => {
+      const onAll = vi.fn();
+      render(<ExerciseRenderer exercises={[recall]} onAllCompleted={onAll} />);
+      fireEvent.click(screen.getByText('Reveal Answer'));
+      expect(onAll).toHaveBeenCalledTimes(1);
+      // Re-renders shouldn't re-fire (recall has no second interaction)
+    });
+
+    it('works without onAllCompleted prop (no crash)', () => {
+      render(<ExerciseRenderer exercises={[recall]} />);
+      // Should not throw
+      fireEvent.click(screen.getByText('Reveal Answer'));
+    });
+
+    it('fires with all four exercise types', () => {
+      const onAll = vi.fn();
+      render(
+        <ExerciseRenderer exercises={[recall, apply, analyze, selfCheck]} onAllCompleted={onAll} />,
+      );
+      // Complete recall
+      fireEvent.click(screen.getByText('Reveal Answer'));
+      expect(onAll).not.toHaveBeenCalled();
+      // Complete apply
+      fireEvent.click(screen.getByText('Show Expected Outcome'));
+      expect(onAll).not.toHaveBeenCalled();
+      // Complete analyze
+      fireEvent.click(screen.getByText("I've reflected on this"));
+      expect(onAll).not.toHaveBeenCalled();
+      // Complete self-check
+      const checkboxes = screen.getAllByRole('checkbox');
+      fireEvent.click(checkboxes[0]);
+      fireEvent.click(checkboxes[1]);
+      expect(onAll).toHaveBeenCalledTimes(1);
+    });
+  });
 });

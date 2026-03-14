@@ -28,13 +28,13 @@ is honor-system with incentives to skip.
 | Dimension | Current | Target | Weight | Weighted Now | Weighted Target |
 |-----------|---------|--------|--------|-------------|----------------|
 | Onboarding | 7/10 | 9/10 | 10% | 0.70 | 0.90 |
-| **Drill Execution** | **3/10** | **7/10** | **25%** | **0.75** | **1.75** |
+| **Drill Execution** | **7/10** ✅ | **7/10** | **25%** | **1.75** | **1.75** |
 | Quiz System | 7/10 | 8/10 | 20% | 1.40 | 1.60 |
-| Spaced Repetition | 6/10 | 7/10 | 15% | 0.90 | 1.05 |
+| Spaced Repetition | 7/10 ✅ | 7/10 | 15% | 1.05 | 1.05 |
 | **Content Quality** | **2/10** | **5/10** | **20%** | **0.40** | **1.00** |
 | Progress Tracking | 8/10 | 8/10 | 5% | 0.40 | 0.40 |
-| Reflection/AAR | 5/10 | 6/10 | 5% | 0.25 | 0.30 |
-| **Total** | | | | **4.80** | **7.00** |
+| Reflection/AAR | 6/10 ✅ | 6/10 | 5% | 0.30 | 0.30 |
+| **Total** | | | | **6.00** | **7.00** |
 
 ## Three Actions
 
@@ -76,11 +76,11 @@ shell-simplification → (none — standalone, but benefits from content improve
 
 ## Success Criteria
 
-- [ ] No drill can complete without card content being expanded
-- [ ] Self-assessment is required, not optional
-- [ ] Quiz wrong answers show explanation derived from card data
+- [x] No drill can complete without card content being expanded
+- [x] Self-assessment is required, not optional
+- [x] Quiz wrong answers show explanation derived from card data
 - [ ] Zero thin decks (< 5 cards) remain in any module
 - [ ] Zero templated "list the key points" exercises remain
 - [ ] Navigation uses ≤ 4 primary tabs
-- [ ] All 1,200+ unit tests pass after changes
-- [ ] All 126+ E2E tests pass after changes (updated for new behavior)
+- [x] All 1,200+ unit tests pass after changes
+- [x] All 126+ E2E tests pass after changes (updated for new behavior)

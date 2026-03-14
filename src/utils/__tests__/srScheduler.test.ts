@@ -232,4 +232,93 @@ describe('srScheduler', () => {
       expect(state!.interval).toBe(3);
     });
   });
+
+  // ─── Quality-weighted interval differences ─────────────────────────────
+
+  describe('quality-weighted intervals', () => {
+    it('quality 1 vs 5 produces drastically different intervals after 3 reviews', () => {
+      // Path A: always quality 5 (easy)
+      let easyPath: SRCardState | null = null;
+      for (let i = 0; i < 3; i++) easyPath = computeNextReview(easyPath, 5);
+
+      // Path B: always quality 1 (lapse)
+      let lapsePath: SRCardState | null = null;
+      for (let i = 0; i < 3; i++) lapsePath = computeNextReview(lapsePath, 1);
+
+      // Easy path should have long interval; lapse path stays at 1
+      expect(easyPath!.interval).toBeGreaterThan(3);
+      expect(lapsePath!.interval).toBe(1);
+      expect(lapsePath!.lapses).toBe(3);
+    });
+
+    it('quality 4 grows faster than quality 3 over same number of reviews', () => {
+      let goodPath: SRCardState | null = null;
+      let hardPath: SRCardState | null = null;
+      for (let i = 0; i < 5; i++) {
+        goodPath = computeNextReview(goodPath, 4);
+        hardPath = computeNextReview(hardPath, 3);
+      }
+      expect(goodPath!.interval).toBeGreaterThan(hardPath!.interval);
+      expect(goodPath!.easeFactor).toBeGreaterThan(hardPath!.easeFactor);
+    });
+
+    it('single low quality review in a good sequence reduces next interval', () => {
+      // Build up with quality 4
+      let state: SRCardState | null = null;
+      for (let i = 0; i < 4; i++) state = computeNextReview(state, 4);
+      const intervalBeforeLapse = state!.interval;
+
+      // Lapse
+      state = computeNextReview(state, 1);
+      expect(state!.interval).toBe(1); // reset
+      expect(state!.interval).toBeLessThan(intervalBeforeLapse);
+    });
+
+    it('quality 2 (hard) keeps interval but reduces ease', () => {
+      let state: SRCardState | null = null;
+      state = computeNextReview(state, 4); // interval 1
+      state = computeNextReview(state, 4); // interval 3
+      const easeBeforeHard = state!.easeFactor;
+      state = computeNextReview(state, 3); // hard: keeps interval, ease drops
+      expect(state!.easeFactor).toBeLessThan(easeBeforeHard);
+    });
+
+    it('mixed quality sequence produces intermediate intervals', () => {
+      // All-good path
+      let allGood: SRCardState | null = null;
+      for (let i = 0; i < 4; i++) allGood = computeNextReview(allGood, 4);
+
+      // Mixed path: good, hard, good, good
+      let mixed: SRCardState | null = null;
+      mixed = computeNextReview(mixed, 4);
+      mixed = computeNextReview(mixed, 3); // hard review
+      mixed = computeNextReview(mixed, 4);
+      mixed = computeNextReview(mixed, 4);
+
+      // Mixed should have shorter intervals due to hard review reducing ease
+      expect(mixed!.interval).toBeLessThanOrEqual(allGood!.interval);
+      expect(mixed!.easeFactor).toBeLessThan(allGood!.easeFactor);
+    });
+
+    it('per-card quality differences after same number of reviews diverge intervals', () => {
+      // Simulate two cards from the same drill:
+      // Card A: user engaged well → quality 5
+      // Card B: user skipped content → quality 2 (from computeCardQuality: base 4 - 2 penalties)
+      let cardA: SRCardState | null = null;
+      let cardB: SRCardState | null = null;
+
+      // First review
+      cardA = computeNextReview(cardA, 5);
+      cardB = computeNextReview(cardB, 2);
+
+      // Second review (same quality pattern)
+      cardA = computeNextReview(cardA, 5);
+      cardB = computeNextReview(cardB, 2);
+
+      // Card A should be progressing; Card B should have lapsed
+      expect(cardA!.interval).toBeGreaterThan(1);
+      expect(cardB!.interval).toBe(1); // quality 2 → lapse
+      expect(cardA!.easeFactor).toBeGreaterThan(cardB!.easeFactor);
+    });
+  });
 });

@@ -18,6 +18,7 @@ import UserProgressStore from '../../store/UserProgressStore';
 import CardProgressStore from '../../store/CardProgressStore';
 import OperativeProfileStore from '../../store/OperativeProfileStore';
 import PostDrillArchetypePrompt from './PostDrillArchetypePrompt';
+import { computeCardQuality, type StepInteractionData } from '../../utils/drillQuality';
 
 /**
  * Build default steps for a drill. If the drill has an associated moduleId and cards are loaded,
@@ -45,31 +46,6 @@ const lookupCard = (cardId: string | undefined): Card | undefined => {
     return undefined;
   }
 };
-
-/** Per-step interaction data used for computing per-card SR quality. */
-interface StepInteractionData {
-  expanded: boolean;
-  exercisesAttempted: number;
-  exercisesTotal: number;
-}
-
-/**
- * Compute per-card SR quality from base self-assessment and interaction data.
- * Cards that were never expanded or had no exercise interaction receive -1 penalty.
- */
-function computeCardQuality(
-  baseAssessment: number,
-  interaction: StepInteractionData | undefined,
-  hasContent: boolean,
-): number {
-  if (!hasContent || !interaction) return baseAssessment;
-  let quality = baseAssessment;
-  // Penalty: card content was never expanded
-  if (!interaction.expanded) quality -= 1;
-  // Penalty: exercises exist but none were attempted
-  if (interaction.exercisesTotal > 0 && interaction.exercisesAttempted === 0) quality -= 1;
-  return Math.max(1, Math.min(5, quality));
-}
 
 /** Expandable step item — shows card content when a cardId is present and the step is expanded. */
 const StepItem: React.FC<{

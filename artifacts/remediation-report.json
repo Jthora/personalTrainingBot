@@ -1,0 +1,204 @@
+{
+  "generatedAt": "2026-03-14T02:24:15.680Z",
+  "dryRun": false,
+  "modulesProcessed": 19,
+  "cardsProcessed": 4354,
+  "stats": {
+    "summaryTextAdded": 0,
+    "templatesReplaced": 3224,
+    "outcomesAdded": 0,
+    "diversityFixed": 0
+  },
+  "perModule": [
+    {
+      "moduleId": "agencies",
+      "moduleTitle": "Agencies",
+      "stats": {
+        "summaryTextAdded": 0,
+        "templatesReplaced": 0,
+        "outcomesAdded": 0,
+        "diversityFixed": 0
+      }
+    },
+    {
+      "moduleId": "anti_psn",
+      "moduleTitle": "Psychopaths/Sociopaths/Narcissists",
+      "stats": {
+        "summaryTextAdded": 0,
+        "templatesReplaced": 450,
+        "outcomesAdded": 0,
+        "diversityFixed": 0
+      }
+    },
+    {
+      "moduleId": "anti_tcs_idc_cbc",
+      "moduleTitle": "TCS/IDC/CBC",
+      "stats": {
+        "summaryTextAdded": 0,
+        "templatesReplaced": 555,
+        "outcomesAdded": 0,
+        "diversityFixed": 0
+      }
+    },
+    {
+      "moduleId": "combat",
+      "moduleTitle": "Combat",
+      "stats": {
+        "summaryTextAdded": 0,
+        "templatesReplaced": 90,
+        "outcomesAdded": 0,
+        "diversityFixed": 0
+      }
+    },
+    {
+      "moduleId": "counter_biochem",
+      "moduleTitle": "Counter BioChem",
+      "stats": {
+        "summaryTextAdded": 0,
+        "templatesReplaced": 0,
+        "outcomesAdded": 0,
+        "diversityFixed": 0
+      }
+    },
+    {
+      "moduleId": "counter_psyops",
+      "moduleTitle": "Counter PsyOps",
+      "stats": {
+        "summaryTextAdded": 0,
+        "templatesReplaced": 720,
+        "outcomesAdded": 0,
+        "diversityFixed": 0
+      }
+    },
+    {
+      "moduleId": "cybersecurity",
+      "moduleTitle": "Cybersecurity",
+      "stats": {
+        "summaryTextAdded": 0,
+        "templatesReplaced": 143,
+        "outcomesAdded": 0,
+        "diversityFixed": 0
+      }
+    },
+    {
+      "moduleId": "dance",
+      "moduleTitle": "Dance Training",
+      "stats": {
+        "summaryTextAdded": 0,
+        "templatesReplaced": 110,
+        "outcomesAdded": 0,
+        "diversityFixed": 0
+      }
+    },
+    {
+      "moduleId": "equations",
+      "moduleTitle": "Equations",
+      "stats": {
+        "summaryTextAdded": 0,
+        "templatesReplaced": 0,
+        "outcomesAdded": 0,
+        "diversityFixed": 0
+      }
+    },
+    {
+      "moduleId": "espionage",
+      "moduleTitle": "Espionage",
+      "stats": {
+        "summaryTextAdded": 0,
+        "templatesReplaced": 0,
+        "outcomesAdded": 0,
+        "diversityFixed": 0
+      }
+    },
+    {
+      "moduleId": "fitness_training",
+      "moduleTitle": "Field Conditioning",
+      "stats": {
+        "summaryTextAdded": 0,
+        "templatesReplaced": 180,
+        "outcomesAdded": 0,
+        "diversityFixed": 0
+      }
+    },
+    {
+      "moduleId": "intelligence",
+      "moduleTitle": "Intelligence",
+      "stats": {
+        "summaryTextAdded": 0,
+        "templatesReplaced": 181,
+        "outcomesAdded": 0,
+        "diversityFixed": 0
+      }
+    },
+    {
+      "moduleId": "investigation",
+      "moduleTitle": "Investigation",
+      "stats": {
+        "summaryTextAdded": 0,
+        "templatesReplaced": 0,
+        "outcomesAdded": 0,
+        "diversityFixed": 0
+      }
+    },
+    {
+      "moduleId": "martial_arts",
+      "moduleTitle": "Martial Arts Training",
+      "stats": {
+        "summaryTextAdded": 0,
+        "templatesReplaced": 180,
+        "outcomesAdded": 0,
+        "diversityFixed": 0
+      }
+    },
+    {
+      "moduleId": "psiops",
+      "moduleTitle": "PsiOps",
+      "stats": {
+        "summaryTextAdded": 0,
+        "templatesReplaced": 146,
+        "outcomesAdded": 0,
+        "diversityFixed": 0
+      }
+    },
+    {
+      "moduleId": "self_sovereignty",
+      "moduleTitle": "Self Sovereignty",
+      "stats": {
+        "summaryTextAdded": 0,
+        "templatesReplaced": 469,
+        "outcomesAdded": 0,
+        "diversityFixed": 0
+      }
+    },
+    {
+      "moduleId": "space_force",
+      "moduleTitle": "Space Force Command",
+      "stats": {
+        "summaryTextAdded": 0,
+        "templatesReplaced": 0,
+        "outcomesAdded": 0,
+        "diversityFixed": 0
+      }
+    },
+    {
+      "moduleId": "war_strategy",
+      "moduleTitle": "War Strategy",
+      "stats": {
+        "summaryTextAdded": 0,
+        "templatesReplaced": 0,
+        "outcomesAdded": 0,
+        "diversityFixed": 0
+      }
+    },
+    {
+      "moduleId": "web_three",
+      "moduleTitle": "Web3 Development & Strategy",
+      "stats": {
+        "summaryTextAdded": 0,
+        "templatesReplaced": 0,
+        "outcomesAdded": 0,
+        "diversityFixed": 0
+      }
+    }
+  ]
+}

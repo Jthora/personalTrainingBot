@@ -649,7 +649,7 @@
           ],
           "duration": 7,
           "difficulty": "Advanced",
-          "summaryText": "Evidence mishandled equals cases lost—guard it.",
+          "summaryText": "Review classification guides, retention timelines, and legal holds so data is preserved correctly. Ref: AFMAN 51-203. Check retention clocks",
           "exercises": [
             {
               "type": "recall",
@@ -2720,7 +2720,7 @@
           ],
           "duration": 10,
           "difficulty": "Advanced",
-          "summaryText": "Cueing should feel automatic between components.",
+          "summaryText": "Plan how intel from other domains triggers SDA collection and vice versa. Ref: AFDP 2-0. Define cue thresholds",
           "exercises": [
             {
               "type": "recall",
@@ -4039,7 +4039,7 @@
           ],
           "duration": 11,
           "difficulty": "Intermediate",
-          "summaryText": "Empathy is a planning tool, not a buzzword.",
+          "summaryText": "Use the empathy map (says, thinks, does, feels) before mission changes that affect crews. Ref: Guardian Ideal toolkit. Capture each quadrant",
           "exercises": [
             {
               "type": "recall",
@@ -4531,7 +4531,7 @@
           ],
           "duration": 9,
           "difficulty": "Intermediate",
-          "summaryText": "Ethical climates are measured, not assumed.",
+          "summaryText": "Use DEOCS micro-surveys to check respect, inclusion, and workload fairness metrics quarterly. Ref: DoDI 6400.11. Select DEOCS pulse",
           "exercises": [
             {
               "type": "recall",
@@ -4571,7 +4571,7 @@
           ],
           "duration": 7,
           "difficulty": "Intermediate",
-          "summaryText": "Stories make ethics tangible for new Guardians.",
+          "summaryText": "Collect real stories from your unit that illustrate Integrity First and share them during hail & farewell events. Ref: AF Core Values Handbook. Interview teammates",
           "exercises": [
             {
               "type": "recall",
@@ -5916,7 +5916,7 @@
           ],
           "duration": 7,
           "difficulty": "Standard",
-          "summaryText": "Micro-resets prevent macro burnouts.",
+          "summaryText": "Build a list of five-minute resets (walk, journal, breathwork) and post near consoles per Guardian Ideal guidance. Crowdsource ideas",
           "exercises": [
             {
               "type": "recall",
@@ -5998,7 +5998,7 @@
           ],
           "duration": 9,
           "difficulty": "Standard",
-          "summaryText": "Sleep discipline is mental armor for Guardians.",
+          "summaryText": "Execute the USAF Sleep Optimization checklist (caffeine cutoff, blue light reduction, pre-bed routine) nightly. Ref: USAF Sleep Guide. Set caffeine curfew",
           "exercises": [
             {
               "type": "recall",
@@ -6159,7 +6159,7 @@
           ],
           "duration": 5,
           "difficulty": "Standard",
-          "summaryText": "Gratitude protects morale and strengthens teams.",
+          "summaryText": "Send a weekly gratitude note or voice memo to a teammate, reinforcing optimism bias rewiring. Ref: Guardian Ideal. Pick recipient",
           "exercises": [
             {
               "type": "recall",
@@ -6211,7 +6211,7 @@
           ],
           "duration": 15,
           "difficulty": "Standard",
-          "summaryText": "Know your pacing plan before test day shows up.",
+          "summaryText": "Map pacing splits for Guardian Tiers I-III (≤9:12, ≤10:20, ≤11:30) using DAFI 36-2905 tables; log training runs weekly. Ref: DAFI 36-2905. Set target pace per tier",
           "exercises": [
             {
               "type": "recall",
@@ -6252,7 +6252,7 @@
           ],
           "duration": 10,
           "difficulty": "Standard",
-          "summaryText": "Perfect reps beat extra sloppy ones every time.",
+          "summaryText": "Film push-up technique vs. USSF standard (elbows lockout, 90° bend) and correct reps to meet Tier I count (≥57). Ref: USSF Fitness Guide 2024. Record from side view",
           "exercises": [
             {
               "type": "recall",
@@ -6333,7 +6333,7 @@
           ],
           "duration": 20,
           "difficulty": "Standard",
-          "summaryText": "Zone-2 is the aerobic cheat code for Guardians.",
+          "summaryText": "Schedule 2× weekly 45-minute Zone-2 sessions (65-75% HRmax) to lift VO2 for aerobic events. Ref: USSF Fitness Programming Guide. Calculate HR zones",
           "exercises": [
             {
               "type": "recall",
@@ -6494,7 +6494,7 @@
           ],
           "duration": 8,
           "difficulty": "Standard",
-          "summaryText": "Mobile joints fuel faster times and cleaner reps.",
+          "summaryText": "Use the USSF dynamic mobility series pre-testing (leg swings, inchworms, thoracic rotations) to reduce injury risk. Ref: USSF Fitness Guide. Perform sequence daily",
           "exercises": [
             {
               "type": "recall",
@@ -6534,7 +6534,7 @@
           ],
           "duration": 10,
           "difficulty": "Standard",
-          "summaryText": "Recovery is a standard, not an indulgence.",
+          "summaryText": "Plan weekly recovery inputs (sleep ≥7 hrs, hydration 0.7 oz/lb, periodic deload) per Guardian Resilience guidance. Ref: Guardian Resilience Framework. Set sleep targets",
           "exercises": [
             {
               "type": "recall",
@@ -6614,7 +6614,7 @@
           ],
           "duration": 13,
           "difficulty": "Standard",
-          "summaryText": "Environmental prep prevents surprise DNFs.",
+          "summaryText": "Apply gradual exposure protocols before tests at Peterson, Buckley, or overseas locations. Ref: DAFI 48-101. Increase load 10%/day",
           "exercises": [
             {
               "type": "recall",
@@ -6655,7 +6655,7 @@
           ],
           "duration": 18,
           "difficulty": "Standard",
-          "summaryText": "Diagnostics turn test day into a formality.",
+          "summaryText": "Conduct a full diagnostic every 45 days, capturing event order, rest intervals, and scoring per DAFI 36-2905. Ref: DAFI 36-2905. Simulate official order",
           "exercises": [
             {
               "type": "recall",
@@ -8105,7 +8105,7 @@
           ],
           "duration": 10,
           "difficulty": "Advanced",
-          "summaryText": "A pristine catalog underpins every SDA decision.",
+          "summaryText": "Execute add/change/delete actions with 18 SDS ensuring orbital elements and owner data stay authoritative. Ref: AFMAN 14-117. Submit precise reason codes",
           "exercises": [
             {
               "type": "recall",
@@ -8437,7 +8437,7 @@
           ],
           "duration": 12,
           "difficulty": "Standard",
-          "summaryText": "Cores keep posture honest when gravity is gone.",
+          "summaryText": "Perform plank, anti-rotation, and leg-raise holds using resistance loops anchored to the module walls. Hold each position 45 seconds",
           "exercises": [
             {
               "type": "recall",

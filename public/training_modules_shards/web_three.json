@@ -289,7 +289,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin blockchain architecture. Define the key terminology used in blockchain architecture"
         },
         {
           "id": "blockchain_architecture_practical_application",
@@ -331,7 +332,8 @@
             "Develop step-by-step",
             "Integrate distributed",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying blockchain architecture concepts in real-world scenarios and operational contexts. Apply blockchain architecture principles to realistic scenarios"
         }
       ]
     },
@@ -504,7 +506,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin consensus algorithms. Define the key terminology used in consensus algorithms"
         },
         {
           "id": "consensus_algorithms_practical_application",
@@ -546,7 +549,8 @@
             "Develop step-by-step",
             "Integrate proof",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying consensus algorithms concepts in real-world scenarios and operational contexts. Apply consensus algorithms principles to realistic scenarios"
         }
       ]
     },
@@ -720,7 +724,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin cryptographic primitives. Define the key terminology used in cryptographic primitives"
         },
         {
           "id": "cryptographic_primitives_practical_application",
@@ -762,7 +767,8 @@
             "Develop step-by-step",
             "Integrate hash",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying cryptographic primitives concepts in real-world scenarios and operational contexts. Apply cryptographic primitives principles to realistic scenarios"
         }
       ]
     },
@@ -941,7 +947,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin dapp architecture. Define the key terminology used in dapp architecture"
         },
         {
           "id": "dapp_architecture_practical_application",
@@ -983,7 +990,8 @@
             "Develop step-by-step",
             "Integrate decentralized",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying dapp architecture concepts in real-world scenarios and operational contexts. Apply dapp architecture principles to realistic scenarios"
         }
       ]
     },
@@ -1156,7 +1164,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin oracles and data feeds. Define the key terminology used in oracles and data feeds"
         },
         {
           "id": "oracle_and_data_feeds_practical_application",
@@ -1198,7 +1207,8 @@
             "Develop step-by-step",
             "Integrate chainlink",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying oracles and data feeds concepts in real-world scenarios and operational contexts. Apply oracles and data feeds principles to realistic scenarios"
         }
       ]
     },
@@ -1371,7 +1381,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin decentralized frontend development. Define the key terminology used in decentralized frontend development"
         },
         {
           "id": "web3_frontend_development_practical_application",
@@ -1413,7 +1424,8 @@
             "Develop step-by-step",
             "Integrate wallet",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying decentralized frontend development concepts in real-world scenarios and operational contexts. Apply decentralized frontend development principles to realistic scenarios"
         }
       ]
     },
@@ -1589,7 +1601,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin confidential transactions. Define the key terminology used in confidential transactions"
         },
         {
           "id": "confidential_transactions_practical_application",
@@ -1631,7 +1644,8 @@
             "Develop step-by-step",
             "Integrate ring",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying confidential transactions concepts in real-world scenarios and operational contexts. Apply confidential transactions principles to realistic scenarios"
         }
       ]
     },
@@ -1807,7 +1821,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin identity on blockchain. Define the key terminology used in identity on blockchain"
         },
         {
           "id": "identity_on_blockchain_practical_application",
@@ -1849,7 +1864,8 @@
             "Develop step-by-step",
             "Integrate self-sovereign",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying identity on blockchain concepts in real-world scenarios and operational contexts. Apply identity on blockchain principles to realistic scenarios"
         }
       ]
     },
@@ -2025,7 +2041,8 @@
             "Core Fundamentals",
             "Define key",
             "Identify core"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin zero-knowledge proofs (zkps) & snarks. Define the key terminology used in zero-knowledge proofs (zkps) & snarks"
         },
         {
           "id": "zk_proofs_and_snarks_practical_application",
@@ -2067,7 +2084,8 @@
             "Practical Application",
             "Apply zero-knowledge",
             "Develop step-by-step"
-          ]
+          ],
+          "summaryText": "Applying zero-knowledge proofs (zkps) & snarks concepts in real-world scenarios and operational contexts. Apply zero-knowledge proofs (zkps) & snarks principles to realistic scenarios"
         }
       ]
     },
@@ -2243,7 +2261,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin gas efficiency optimization. Define the key terminology used in gas efficiency optimization"
         },
         {
           "id": "gas_efficiency_optimization_practical_application",
@@ -2285,7 +2304,8 @@
             "Develop step-by-step",
             "Integrate storage",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying gas efficiency optimization concepts in real-world scenarios and operational contexts. Apply gas efficiency optimization principles to realistic scenarios"
         }
       ]
     },
@@ -2460,7 +2480,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin smart contract audits. Define the key terminology used in smart contract audits"
         },
         {
           "id": "smart_contract_audits_practical_application",
@@ -2502,7 +2523,8 @@
             "Develop step-by-step",
             "Integrate reentrancy",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying smart contract audits concepts in real-world scenarios and operational contexts. Apply smart contract audits principles to realistic scenarios"
         }
       ]
     },
@@ -2683,7 +2705,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin solidity basics. Define the key terminology used in solidity basics"
         },
         {
           "id": "solidity_basics_practical_application",
@@ -2725,7 +2748,8 @@
             "Develop step-by-step",
             "Integrate solidity",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying solidity basics concepts in real-world scenarios and operational contexts. Apply solidity basics principles to realistic scenarios"
         }
       ]
     },
@@ -2903,7 +2927,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin defi protocol mechanics. Define the key terminology used in defi protocol mechanics"
         },
         {
           "id": "defi_protocol_mechanics_practical_application",
@@ -2945,7 +2970,8 @@
             "Develop step-by-step",
             "Integrate lending",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying defi protocol mechanics concepts in real-world scenarios and operational contexts. Apply defi protocol mechanics principles to realistic scenarios"
         }
       ]
     },
@@ -3120,7 +3146,8 @@
             "Define key",
             "Identify core",
             "Recognize historical"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin governance & daos. Define the key terminology used in governance & daos"
         },
         {
           "id": "governance_and_daos_practical_application",
@@ -3162,7 +3189,8 @@
             "Apply governance",
             "Develop step-by-step",
             "Integrate dao"
-          ]
+          ],
+          "summaryText": "Applying governance & daos concepts in real-world scenarios and operational contexts. Apply governance & daos principles to realistic scenarios"
         }
       ]
     },
@@ -3344,7 +3372,8 @@
             "Define key",
             "Identify core",
             "Recognize historical"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin token design & distribution. Define the key terminology used in token design & distribution"
         },
         {
           "id": "token_design_and_distribution_practical_application",
@@ -3386,7 +3415,8 @@
             "Apply token",
             "Develop step-by-step",
             "Integrate token"
-          ]
+          ],
+          "summaryText": "Applying token design & distribution concepts in real-world scenarios and operational contexts. Apply token design & distribution principles to realistic scenarios"
         }
       ]
     },
@@ -3561,7 +3591,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin blockchain penetration testing. Define the key terminology used in blockchain penetration testing"
         },
         {
           "id": "blockchain_pen_testing_practical_application",
@@ -3603,7 +3634,8 @@
             "Develop step-by-step",
             "Integrate attack",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying blockchain penetration testing concepts in real-world scenarios and operational contexts. Apply blockchain penetration testing principles to realistic scenarios"
         }
       ]
     },
@@ -3779,7 +3811,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin common smart contract vulnerabilities. Define the key terminology used in common smart contract vulnerabilities"
         },
         {
           "id": "common_smart_contract_vulnerabilities_practical_application",
@@ -3821,7 +3854,8 @@
             "Develop step-by-step",
             "Integrate reentrancy",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying common smart contract vulnerabilities concepts in real-world scenarios and operational contexts. Apply common smart contract vulnerabilities principles to realistic scenarios"
         }
       ]
     },
@@ -3997,7 +4031,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin decentralized security frameworks. Define the key terminology used in decentralized security frameworks"
         },
         {
           "id": "web3_security_frameworks_practical_application",
@@ -4039,7 +4074,8 @@
             "Develop step-by-step",
             "Integrate secure",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying decentralized security frameworks concepts in real-world scenarios and operational contexts. Apply decentralized security frameworks principles to realistic scenarios"
         }
       ]
     }

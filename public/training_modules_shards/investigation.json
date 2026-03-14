@@ -274,7 +274,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin behavioral profiling methods. Define the key terminology used in behavioral profiling methods"
         },
         {
           "id": "behavioral_profiling_methods_practical_application",
@@ -325,7 +326,8 @@
             "Develop step-by-step",
             "Integrate behavioral",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying behavioral profiling methods concepts in real-world scenarios and operational contexts. Apply behavioral profiling methods principles to realistic scenarios"
         },
         {
           "id": "behavioral_profiling_methods_advanced_techniques",
@@ -376,7 +378,8 @@
             "Combine multiple",
             "Synthesize behavioral",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within behavioral profiling methods for experienced practitioners. Master advanced methodologies specific to behavioral profiling methods"
         }
       ]
     },
@@ -536,7 +539,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin offender typologies. Define the key terminology used in offender typologies"
         },
         {
           "id": "offender_typologies_practical_application",
@@ -587,7 +591,8 @@
             "Develop step-by-step",
             "Integrate psychological",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying offender typologies concepts in real-world scenarios and operational contexts. Apply offender typologies principles to realistic scenarios"
         },
         {
           "id": "offender_typologies_advanced_techniques",
@@ -638,7 +643,8 @@
             "Combine multiple",
             "Synthesize psychological",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within offender typologies for experienced practitioners. Master advanced methodologies specific to offender typologies"
         }
       ]
     },
@@ -798,7 +804,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin threat assessment. Define the key terminology used in threat assessment"
         },
         {
           "id": "threat_assessment_practical_application",
@@ -849,7 +856,8 @@
             "Develop step-by-step",
             "Integrate risk",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying threat assessment concepts in real-world scenarios and operational contexts. Apply threat assessment principles to realistic scenarios"
         },
         {
           "id": "threat_assessment_advanced_techniques",
@@ -900,7 +908,8 @@
             "Combine multiple",
             "Synthesize risk",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within threat assessment for experienced practitioners. Master advanced methodologies specific to threat assessment"
         }
       ]
     },
@@ -1061,7 +1070,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin cyber fraud detection. Define the key terminology used in cyber fraud detection"
         },
         {
           "id": "cyber_fraud_detection_practical_application",
@@ -1112,7 +1122,8 @@
             "Develop step-by-step",
             "Integrate online",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying cyber fraud detection concepts in real-world scenarios and operational contexts. Apply cyber fraud detection principles to realistic scenarios"
         },
         {
           "id": "cyber_fraud_detection_advanced_techniques",
@@ -1163,7 +1174,8 @@
             "Combine multiple",
             "Synthesize online",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within cyber fraud detection for experienced practitioners. Master advanced methodologies specific to cyber fraud detection"
         }
       ]
     },
@@ -1324,7 +1336,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin dark web investigations. Define the key terminology used in dark web investigations"
         },
         {
           "id": "dark_web_investigations_practical_application",
@@ -1375,7 +1388,8 @@
             "Develop step-by-step",
             "Integrate cyber",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying dark web investigations concepts in real-world scenarios and operational contexts. Apply dark web investigations principles to realistic scenarios"
         },
         {
           "id": "dark_web_investigations_advanced_techniques",
@@ -1426,7 +1440,8 @@
             "Combine multiple",
             "Synthesize cyber",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within dark web investigations for experienced practitioners. Master advanced methodologies specific to dark web investigations"
         }
       ]
     },
@@ -1587,7 +1602,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin malware analysis. Define the key terminology used in malware analysis"
         },
         {
           "id": "malware_analysis_practical_application",
@@ -1638,7 +1654,8 @@
             "Develop step-by-step",
             "Integrate hacking",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying malware analysis concepts in real-world scenarios and operational contexts. Apply malware analysis principles to realistic scenarios"
         },
         {
           "id": "malware_analysis_advanced_techniques",
@@ -1689,7 +1706,8 @@
             "Combine multiple",
             "Synthesize hacking",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within malware analysis for experienced practitioners. Master advanced methodologies specific to malware analysis"
         }
       ]
     },
@@ -1849,7 +1867,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin computer forensic methods. Define the key terminology used in computer forensic methods"
         },
         {
           "id": "computer_forensic_methods_practical_application",
@@ -1900,7 +1919,8 @@
             "Develop step-by-step",
             "Integrate data",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying computer forensic methods concepts in real-world scenarios and operational contexts. Apply computer forensic methods principles to realistic scenarios"
         },
         {
           "id": "computer_forensic_methods_advanced_techniques",
@@ -1951,7 +1971,8 @@
             "Combine multiple",
             "Synthesize data",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within computer forensic methods for experienced practitioners. Master advanced methodologies specific to computer forensic methods"
         }
       ]
     },
@@ -2111,7 +2132,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin mobile device exploitation. Define the key terminology used in mobile device exploitation"
         },
         {
           "id": "mobile_device_exploitation_practical_application",
@@ -2162,7 +2184,8 @@
             "Develop step-by-step",
             "Integrate device",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying mobile device exploitation concepts in real-world scenarios and operational contexts. Apply mobile device exploitation principles to realistic scenarios"
         },
         {
           "id": "mobile_device_exploitation_advanced_techniques",
@@ -2213,7 +2236,8 @@
             "Combine multiple",
             "Synthesize device",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within mobile device exploitation for experienced practitioners. Master advanced methodologies specific to mobile device exploitation"
         }
       ]
     },
@@ -2373,7 +2397,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin network packet analysis. Define the key terminology used in network packet analysis"
         },
         {
           "id": "network_packet_analysis_practical_application",
@@ -2424,7 +2449,8 @@
             "Develop step-by-step",
             "Integrate network",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying network packet analysis concepts in real-world scenarios and operational contexts. Apply network packet analysis principles to realistic scenarios"
         },
         {
           "id": "network_packet_analysis_advanced_techniques",
@@ -2475,7 +2501,8 @@
             "Combine multiple",
             "Synthesize network",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within network packet analysis for experienced practitioners. Master advanced methodologies specific to network packet analysis"
         }
       ]
     },
@@ -2635,7 +2662,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin financial statement analysis. Define the key terminology used in financial statement analysis"
         },
         {
           "id": "financial_statement_analysis_practical_application",
@@ -2686,7 +2714,8 @@
             "Develop step-by-step",
             "Integrate forensic",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying financial statement analysis concepts in real-world scenarios and operational contexts. Apply financial statement analysis principles to realistic scenarios"
         },
         {
           "id": "financial_statement_analysis_advanced_techniques",
@@ -2737,7 +2766,8 @@
             "Combine multiple",
             "Synthesize forensic",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within financial statement analysis for experienced practitioners. Master advanced methodologies specific to financial statement analysis"
         }
       ]
     },
@@ -2897,7 +2927,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin fraud detection techniques. Define the key terminology used in fraud detection techniques"
         },
         {
           "id": "fraud_detection_techniques_practical_application",
@@ -2948,7 +2979,8 @@
             "Develop step-by-step",
             "Integrate fraud",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying fraud detection techniques concepts in real-world scenarios and operational contexts. Apply fraud detection techniques principles to realistic scenarios"
         },
         {
           "id": "fraud_detection_techniques_advanced_techniques",
@@ -2999,7 +3031,8 @@
             "Combine multiple",
             "Synthesize fraud",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within fraud detection techniques for experienced practitioners. Master advanced methodologies specific to fraud detection techniques"
         }
       ]
     },
@@ -3159,7 +3192,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin money laundering patterns. Define the key terminology used in money laundering patterns"
         },
         {
           "id": "money_laundering_patterns_practical_application",
@@ -3210,7 +3244,8 @@
             "Develop step-by-step",
             "Integrate money",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying money laundering patterns concepts in real-world scenarios and operational contexts. Apply money laundering patterns principles to realistic scenarios"
         },
         {
           "id": "money_laundering_patterns_advanced_techniques",
@@ -3261,7 +3296,8 @@
             "Combine multiple",
             "Synthesize money",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within money laundering patterns for experienced practitioners. Master advanced methodologies specific to money laundering patterns"
         }
       ]
     },
@@ -3422,7 +3458,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin crime scene processing. Define the key terminology used in crime scene processing"
         },
         {
           "id": "crime_scene_processing_practical_application",
@@ -3473,7 +3510,8 @@
             "Develop step-by-step",
             "Integrate crime",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying crime scene processing concepts in real-world scenarios and operational contexts. Apply crime scene processing principles to realistic scenarios"
         },
         {
           "id": "crime_scene_processing_advanced_techniques",
@@ -3524,7 +3562,8 @@
             "Combine multiple",
             "Synthesize crime",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within crime scene processing for experienced practitioners. Master advanced methodologies specific to crime scene processing"
         }
       ]
     },
@@ -3686,7 +3725,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin dna and fingerprint analysis. Define the key terminology used in dna and fingerprint analysis"
         },
         {
           "id": "dna_and_fingerprint_analysis_practical_application",
@@ -3737,7 +3777,8 @@
             "Develop step-by-step",
             "Integrate dna",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying dna and fingerprint analysis concepts in real-world scenarios and operational contexts. Apply dna and fingerprint analysis principles to realistic scenarios"
         },
         {
           "id": "dna_and_fingerprint_analysis_advanced_techniques",
@@ -3788,7 +3829,8 @@
             "Combine multiple",
             "Synthesize dna",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within dna and fingerprint analysis for experienced practitioners. Master advanced methodologies specific to dna and fingerprint analysis"
         }
       ]
     },
@@ -3949,7 +3991,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin forensic lab procedures. Define the key terminology used in forensic lab procedures"
         },
         {
           "id": "forensic_lab_procedures_practical_application",
@@ -4000,7 +4043,8 @@
             "Develop step-by-step",
             "Integrate trace",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying forensic lab procedures concepts in real-world scenarios and operational contexts. Apply forensic lab procedures principles to realistic scenarios"
         },
         {
           "id": "forensic_lab_procedures_advanced_techniques",
@@ -4051,7 +4095,8 @@
             "Combine multiple",
             "Synthesize trace",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within forensic lab procedures for experienced practitioners. Master advanced methodologies specific to forensic lab procedures"
         }
       ]
     },
@@ -4213,7 +4258,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin cause of death forensics. Define the key terminology used in cause of death forensics"
         },
         {
           "id": "cause_of_death_forensics_practical_application",
@@ -4264,7 +4310,8 @@
             "Develop step-by-step",
             "Integrate forensic",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying cause of death forensics concepts in real-world scenarios and operational contexts. Apply cause of death forensics principles to realistic scenarios"
         },
         {
           "id": "cause_of_death_forensics_advanced_techniques",
@@ -4315,7 +4362,8 @@
             "Combine multiple",
             "Synthesize forensic",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within cause of death forensics for experienced practitioners. Master advanced methodologies specific to cause of death forensics"
         }
       ]
     },
@@ -4477,7 +4525,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin homicide case studies. Define the key terminology used in homicide case studies"
         },
         {
           "id": "homicide_case_studies_practical_application",
@@ -4528,7 +4577,8 @@
             "Develop step-by-step",
             "Integrate crime",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying homicide case studies concepts in real-world scenarios and operational contexts. Apply homicide case studies principles to realistic scenarios"
         },
         {
           "id": "homicide_case_studies_advanced_techniques",
@@ -4579,7 +4629,8 @@
             "Combine multiple",
             "Synthesize crime",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within homicide case studies for experienced practitioners. Master advanced methodologies specific to homicide case studies"
         }
       ]
     },
@@ -4741,7 +4792,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin suspect interview methods. Define the key terminology used in suspect interview methods"
         },
         {
           "id": "suspect_interview_methods_practical_application",
@@ -4792,7 +4844,8 @@
             "Develop step-by-step",
             "Integrate suspect",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying suspect interview methods concepts in real-world scenarios and operational contexts. Apply suspect interview methods principles to realistic scenarios"
         },
         {
           "id": "suspect_interview_methods_advanced_techniques",
@@ -4843,7 +4896,8 @@
             "Combine multiple",
             "Synthesize suspect",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within suspect interview methods for experienced practitioners. Master advanced methodologies specific to suspect interview methods"
         }
       ]
     }

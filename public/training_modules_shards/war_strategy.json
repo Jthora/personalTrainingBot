@@ -247,7 +247,8 @@
             "Define key",
             "Identify core",
             "Recognize historical"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin counter-terrorism operations. Define the key terminology used in counter-terrorism operations"
         },
         {
           "id": "counter_terrorism_operations_practical_application",
@@ -289,7 +290,8 @@
             "Apply counter-terrorism",
             "Develop step-by-step",
             "Integrate threat"
-          ]
+          ],
+          "summaryText": "Applying counter-terrorism operations concepts in real-world scenarios and operational contexts. Apply counter-terrorism operations principles to realistic scenarios"
         },
         {
           "id": "counter_terrorism_operations_advanced_techniques",
@@ -331,7 +333,8 @@
             "Master advanced",
             "Combine multiple",
             "Synthesize threat"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within counter-terrorism operations for experienced practitioners. Master advanced methodologies specific to counter-terrorism operations"
         }
       ]
     },
@@ -464,7 +467,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin insurgency tactics. Define the key terminology used in insurgency tactics"
         },
         {
           "id": "insurgency_tactics_practical_application",
@@ -506,7 +510,8 @@
             "Develop step-by-step",
             "Integrate guerrilla",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying insurgency tactics concepts in real-world scenarios and operational contexts. Apply insurgency tactics principles to realistic scenarios"
         },
         {
           "id": "insurgency_tactics_advanced_techniques",
@@ -548,7 +553,8 @@
             "Combine multiple",
             "Synthesize guerrilla",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within insurgency tactics for experienced practitioners. Master advanced methodologies specific to insurgency tactics"
         }
       ]
     },
@@ -683,7 +689,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin urban warfare strategies. Define the key terminology used in urban warfare strategies"
         },
         {
           "id": "urban_warfare_strategies_practical_application",
@@ -725,7 +732,8 @@
             "Develop step-by-step",
             "Integrate urban",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying urban warfare strategies concepts in real-world scenarios and operational contexts. Apply urban warfare strategies principles to realistic scenarios"
         },
         {
           "id": "urban_warfare_strategies_advanced_techniques",
@@ -767,7 +775,8 @@
             "Combine multiple",
             "Synthesize urban",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within urban warfare strategies for experienced practitioners. Master advanced methodologies specific to urban warfare strategies"
         }
       ]
     },
@@ -900,7 +909,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin cyber intelligence operations. Define the key terminology used in cyber intelligence operations"
         },
         {
           "id": "cyber_intelligence_operations_practical_application",
@@ -942,7 +952,8 @@
             "Develop step-by-step",
             "Integrate cyber",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying cyber intelligence operations concepts in real-world scenarios and operational contexts. Apply cyber intelligence operations principles to realistic scenarios"
         },
         {
           "id": "cyber_intelligence_operations_advanced_techniques",
@@ -984,7 +995,8 @@
             "Combine multiple",
             "Synthesize cyber",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within cyber intelligence operations for experienced practitioners. Master advanced methodologies specific to cyber intelligence operations"
         }
       ]
     },
@@ -1117,7 +1129,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin defensive network security. Define the key terminology used in defensive network security"
         },
         {
           "id": "defensive_network_security_practical_application",
@@ -1159,7 +1172,8 @@
             "Develop step-by-step",
             "Integrate cyber",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying defensive network security concepts in real-world scenarios and operational contexts. Apply defensive network security principles to realistic scenarios"
         },
         {
           "id": "defensive_network_security_advanced_techniques",
@@ -1201,7 +1215,8 @@
             "Combine multiple",
             "Synthesize cyber",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within defensive network security for experienced practitioners. Master advanced methodologies specific to defensive network security"
         }
       ]
     },
@@ -1334,7 +1349,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin offensive cyber tactics. Define the key terminology used in offensive cyber tactics"
         },
         {
           "id": "offensive_cyber_tactics_practical_application",
@@ -1376,7 +1392,8 @@
             "Develop step-by-step",
             "Integrate cyber",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying offensive cyber tactics concepts in real-world scenarios and operational contexts. Apply offensive cyber tactics principles to realistic scenarios"
         },
         {
           "id": "offensive_cyber_tactics_advanced_techniques",
@@ -1418,7 +1435,8 @@
             "Combine multiple",
             "Synthesize cyber",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within offensive cyber tactics for experienced practitioners. Master advanced methodologies specific to offensive cyber tactics"
         }
       ]
     },
@@ -1551,7 +1569,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin economic sanctions tactics. Define the key terminology used in economic sanctions tactics"
         },
         {
           "id": "economic_sanctions_tactics_practical_application",
@@ -1593,7 +1612,8 @@
             "Develop step-by-step",
             "Integrate economic",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying economic sanctions tactics concepts in real-world scenarios and operational contexts. Apply economic sanctions tactics principles to realistic scenarios"
         },
         {
           "id": "economic_sanctions_tactics_advanced_techniques",
@@ -1635,7 +1655,8 @@
             "Combine multiple",
             "Synthesize economic",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within economic sanctions tactics for experienced practitioners. Master advanced methodologies specific to economic sanctions tactics"
         }
       ]
     },
@@ -1767,7 +1788,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin global conflict trends. Define the key terminology used in global conflict trends"
         },
         {
           "id": "global_conflict_trends_practical_application",
@@ -1809,7 +1831,8 @@
             "Develop step-by-step",
             "Integrate military",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying global conflict trends concepts in real-world scenarios and operational contexts. Apply global conflict trends principles to realistic scenarios"
         },
         {
           "id": "global_conflict_trends_advanced_techniques",
@@ -1851,7 +1874,8 @@
             "Combine multiple",
             "Synthesize military",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within global conflict trends for experienced practitioners. Master advanced methodologies specific to global conflict trends"
         }
       ]
     },
@@ -1984,7 +2008,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin political warfare analysis. Define the key terminology used in political warfare analysis"
         },
         {
           "id": "political_warfare_analysis_practical_application",
@@ -2026,7 +2051,8 @@
             "Develop step-by-step",
             "Integrate influence",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying political warfare analysis concepts in real-world scenarios and operational contexts. Apply political warfare analysis principles to realistic scenarios"
         },
         {
           "id": "political_warfare_analysis_advanced_techniques",
@@ -2068,7 +2094,8 @@
             "Combine multiple",
             "Synthesize influence",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within political warfare analysis for experienced practitioners. Master advanced methodologies specific to political warfare analysis"
         }
       ]
     },
@@ -2201,7 +2228,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin combined arms operations. Define the key terminology used in combined arms operations"
         },
         {
           "id": "combined_arms_operations_practical_application",
@@ -2243,7 +2271,8 @@
             "Develop step-by-step",
             "Integrate multiforce",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying combined arms operations concepts in real-world scenarios and operational contexts. Apply combined arms operations principles to realistic scenarios"
         },
         {
           "id": "combined_arms_operations_advanced_techniques",
@@ -2285,7 +2314,8 @@
             "Combine multiple",
             "Synthesize multiforce",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within combined arms operations for experienced practitioners. Master advanced methodologies specific to combined arms operations"
         }
       ]
     },
@@ -2418,7 +2448,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin force maneuvering. Define the key terminology used in force maneuvering"
         },
         {
           "id": "force_maneuvering_practical_application",
@@ -2460,7 +2491,8 @@
             "Develop step-by-step",
             "Integrate battlefield",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying force maneuvering concepts in real-world scenarios and operational contexts. Apply force maneuvering principles to realistic scenarios"
         },
         {
           "id": "force_maneuvering_advanced_techniques",
@@ -2502,7 +2534,8 @@
             "Combine multiple",
             "Synthesize battlefield",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within force maneuvering for experienced practitioners. Master advanced methodologies specific to force maneuvering"
         }
       ]
     },
@@ -2635,7 +2668,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin supply chain tactics. Define the key terminology used in supply chain tactics"
         },
         {
           "id": "supply_chain_tactics_practical_application",
@@ -2677,7 +2711,8 @@
             "Develop step-by-step",
             "Integrate resource",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying supply chain tactics concepts in real-world scenarios and operational contexts. Apply supply chain tactics principles to realistic scenarios"
         },
         {
           "id": "supply_chain_tactics_advanced_techniques",
@@ -2719,7 +2754,8 @@
             "Combine multiple",
             "Synthesize resource",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within supply chain tactics for experienced practitioners. Master advanced methodologies specific to supply chain tactics"
         }
       ]
     },
@@ -2852,7 +2888,8 @@
             "Define key",
             "Identify core",
             "Recognize historical"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin counter-psyops strategies. Define the key terminology used in counter-psyops strategies"
         },
         {
           "id": "counter_psyops_strategies_practical_application",
@@ -2894,7 +2931,8 @@
             "Apply counter-psyops",
             "Develop step-by-step",
             "Integrate defense"
-          ]
+          ],
+          "summaryText": "Applying counter-psyops strategies concepts in real-world scenarios and operational contexts. Apply counter-psyops strategies principles to realistic scenarios"
         },
         {
           "id": "counter_psyops_strategies_advanced_techniques",
@@ -2936,7 +2974,8 @@
             "Master advanced",
             "Combine multiple",
             "Synthesize defense"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within counter-psyops strategies for experienced practitioners. Master advanced methodologies specific to counter-psyops strategies"
         }
       ]
     },
@@ -3069,7 +3108,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin covert psychological warfare. Define the key terminology used in covert psychological warfare"
         },
         {
           "id": "covert_psychological_warfare_practical_application",
@@ -3111,7 +3151,8 @@
             "Develop step-by-step",
             "Integrate disinformation",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying covert psychological warfare concepts in real-world scenarios and operational contexts. Apply covert psychological warfare principles to realistic scenarios"
         },
         {
           "id": "covert_psychological_warfare_advanced_techniques",
@@ -3153,7 +3194,8 @@
             "Combine multiple",
             "Synthesize disinformation",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within covert psychological warfare for experienced practitioners. Master advanced methodologies specific to covert psychological warfare"
         }
       ]
     },
@@ -3286,7 +3328,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin influence campaigns. Define the key terminology used in influence campaigns"
         },
         {
           "id": "influence_campaigns_practical_application",
@@ -3328,7 +3371,8 @@
             "Develop step-by-step",
             "Integrate strategic",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying influence campaigns concepts in real-world scenarios and operational contexts. Apply influence campaigns principles to realistic scenarios"
         },
         {
           "id": "influence_campaigns_advanced_techniques",
@@ -3370,7 +3414,8 @@
             "Combine multiple",
             "Synthesize strategic",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within influence campaigns for experienced practitioners. Master advanced methodologies specific to influence campaigns"
         }
       ]
     },
@@ -3503,7 +3548,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin covert infiltration methods. Define the key terminology used in covert infiltration methods"
         },
         {
           "id": "covert_infiltration_methods_practical_application",
@@ -3545,7 +3591,8 @@
             "Develop step-by-step",
             "Integrate stealth",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying covert infiltration methods concepts in real-world scenarios and operational contexts. Apply covert infiltration methods principles to realistic scenarios"
         },
         {
           "id": "covert_infiltration_methods_advanced_techniques",
@@ -3587,7 +3634,8 @@
             "Combine multiple",
             "Synthesize stealth",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within covert infiltration methods for experienced practitioners. Master advanced methodologies specific to covert infiltration methods"
         }
       ]
     },
@@ -3721,7 +3769,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin extraction and escape tactics. Define the key terminology used in extraction and escape tactics"
         },
         {
           "id": "extraction_and_escape_tactics_practical_application",
@@ -3763,7 +3812,8 @@
             "Develop step-by-step",
             "Integrate hostile",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying extraction and escape tactics concepts in real-world scenarios and operational contexts. Apply extraction and escape tactics principles to realistic scenarios"
         },
         {
           "id": "extraction_and_escape_tactics_advanced_techniques",
@@ -3805,7 +3855,8 @@
             "Combine multiple",
             "Synthesize hostile",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within extraction and escape tactics for experienced practitioners. Master advanced methodologies specific to extraction and escape tactics"
         }
       ]
     },
@@ -3938,7 +3989,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin mission planning and execution. Define the key terminology used in mission planning and execution"
         },
         {
           "id": "mission_planning_and_execution_practical_application",
@@ -3980,7 +4032,8 @@
             "Develop step-by-step",
             "Integrate operational",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying mission planning and execution concepts in real-world scenarios and operational contexts. Apply mission planning and execution principles to realistic scenarios"
         },
         {
           "id": "mission_planning_and_execution_advanced_techniques",
@@ -4022,7 +4075,8 @@
             "Combine multiple",
             "Synthesize operational",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within mission planning and execution for experienced practitioners. Master advanced methodologies specific to mission planning and execution"
         }
       ]
     }

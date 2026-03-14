@@ -142,13 +142,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Mount Escape Techniques\":",
+              "prompt": "Review: Mount Escape Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Bridge and roll",
-                "I can explain: shrimp escape",
-                "I can explain: frame and guard recovery"
+                "I can understand the core principles of mount escape techniques",
+                "I can knowledge of bridge and roll",
+                "I can the significance of methods for escaping from an opponent’s dominant mount position",
+                "I understand the concept of \"Mount Escape Techniques\"",
+                "I understand the concept of \"Bridge roll\""
               ],
-              "expectedOutcome": "Full comprehension of mount escape techniques."
+              "expectedOutcome": "You should be able to discuss mount escape techniques with confidence, covering Mount Escape Techniques, Bridge roll, shrimp escape."
             },
             {
               "type": "apply",
@@ -192,13 +194,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Rear Naked Choke Execution\":",
+              "prompt": "Review: Rear Naked Choke Execution — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Grip placement",
-                "I can explain: securing hooks",
-                "I can explain: pressure application"
+                "I can understand the core principles of rear naked choke execution",
+                "I can knowledge of grip placement",
+                "I can the significance of applying a high-percentage submission hold to neutralize opponents",
+                "I understand the concept of \"Rear Naked Choke\"",
+                "I understand the concept of \"Grip placement\""
               ],
-              "expectedOutcome": "Full comprehension of rear naked choke execution."
+              "expectedOutcome": "You should be able to discuss rear naked choke execution with confidence, covering Rear Naked Choke, Grip placement, securing hooks."
             },
             {
               "type": "apply",
@@ -242,14 +246,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Ground Fighting: Core Fundamentals\":",
+              "prompt": "Review: Ground Fighting: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in ground fighting",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of ground fighting: core fundamentals",
+                "I can knowledge of define the key terminology used in ground fighting",
+                "I can assess readiness in ground fighting: core fundamentals",
+                "I understand the concept of \"Ground Fighting\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of ground fighting: core fundamentals."
+              "expectedOutcome": "You should be able to discuss ground fighting: core fundamentals with confidence, covering Ground Fighting, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -278,7 +283,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin ground fighting. Define the key terminology used in ground fighting"
         },
         {
           "id": "ground_fighting_practical_application",
@@ -295,14 +301,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Ground Fighting: Practical Application\":",
+              "prompt": "Review: Ground Fighting: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply ground fighting principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate grappling control techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of ground fighting: practical application",
+                "I can knowledge of apply ground fighting principles to realistic scenarios",
+                "I can assess readiness in ground fighting: practical application",
+                "I understand the concept of \"Ground Fighting\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of ground fighting: practical application."
+              "expectedOutcome": "You should be able to discuss ground fighting: practical application with confidence, covering Ground Fighting, Practical Application, Apply ground."
             },
             {
               "type": "apply",
@@ -331,7 +338,8 @@
             "Develop step-by-step",
             "Integrate grappling",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying ground fighting concepts in real-world scenarios and operational contexts. Apply ground fighting principles to realistic scenarios"
         },
         {
           "id": "ground_fighting_advanced_techniques",
@@ -348,14 +356,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Ground Fighting: Advanced Techniques\":",
+              "prompt": "Review: Ground Fighting: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to ground fighting",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize grappling control and submissions and escapes approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of ground fighting: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to ground fighting",
+                "I can assess readiness in ground fighting: advanced techniques",
+                "I understand the concept of \"Ground Fighting\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of ground fighting: advanced techniques."
+              "expectedOutcome": "You should be able to discuss ground fighting: advanced techniques with confidence, covering Ground Fighting, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -384,7 +393,8 @@
             "Combine multiple",
             "Synthesize grappling",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within ground fighting for experienced practitioners. Master advanced methodologies specific to ground fighting"
         }
       ]
     },
@@ -413,14 +423,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Jab-Cross Combination\":",
+              "prompt": "Review: Jab-Cross Combination — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Proper stance",
-                "I can explain: speed",
-                "I can explain: targeting vital points",
-                "I can explain: follow-up strikes"
+                "I can understand the core principles of jab-cross combination",
+                "I can knowledge of proper stance",
+                "I can the significance of fundamental striking combination used to create openings and disrupt opponents",
+                "I understand the concept of \"Jab\"",
+                "I understand the concept of \"Cross Combination\""
               ],
-              "expectedOutcome": "Full comprehension of jab-cross combination."
+              "expectedOutcome": "You should be able to discuss jab-cross combination with confidence, covering Jab, Cross Combination, Proper stance."
             },
             {
               "type": "apply",
@@ -466,13 +477,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Elbow and Knee Strikes\":",
+              "prompt": "Review: Elbow and Knee Strikes — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Angle control",
-                "I can explain: rapid execution",
-                "I can explain: generating force from core"
+                "I can understand the core principles of elbow and knee strikes",
+                "I can knowledge of angle control",
+                "I can the significance of short-range powerful attacks used in clinch fighting",
+                "I understand the concept of \"Elbow Knee Strikes\"",
+                "I understand the concept of \"Angle control\""
               ],
-              "expectedOutcome": "Full comprehension of elbow and knee strikes."
+              "expectedOutcome": "You should be able to discuss elbow and knee strikes with confidence, covering Elbow Knee Strikes, Angle control, rapid execution."
             },
             {
               "type": "apply",
@@ -516,14 +529,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Striking and Counterattacks: Core Fundamentals\":",
+              "prompt": "Review: Striking and Counterattacks: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in striking and counterattacks",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of striking and counterattacks: core fundamentals",
+                "I can knowledge of define the key terminology used in striking and counterattacks",
+                "I can assess readiness in striking and counterattacks: core fundamentals",
+                "I understand the concept of \"Striking Counterattacks\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of striking and counterattacks: core fundamentals."
+              "expectedOutcome": "You should be able to discuss striking and counterattacks: core fundamentals with confidence, covering Striking Counterattacks, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -552,7 +566,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin striking and counterattacks. Define the key terminology used in striking and counterattacks"
         },
         {
           "id": "striking_and_counterattacks_practical_application",
@@ -569,14 +584,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Striking and Counterattacks: Practical Application\":",
+              "prompt": "Review: Striking and Counterattacks: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply striking and counterattacks principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate punching and kicking techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of striking and counterattacks: practical application",
+                "I can knowledge of apply striking and counterattacks principles to realistic scenarios",
+                "I can assess readiness in striking and counterattacks: practical application",
+                "I understand the concept of \"Striking Counterattacks\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of striking and counterattacks: practical application."
+              "expectedOutcome": "You should be able to discuss striking and counterattacks: practical application with confidence, covering Striking Counterattacks, Practical Application, Apply striking."
             },
             {
               "type": "apply",
@@ -605,7 +621,8 @@
             "Develop step-by-step",
             "Integrate punching",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying striking and counterattacks concepts in real-world scenarios and operational contexts. Apply striking and counterattacks principles to realistic scenarios"
         },
         {
           "id": "striking_and_counterattacks_advanced_techniques",
@@ -622,14 +639,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Striking and Counterattacks: Advanced Techniques\":",
+              "prompt": "Review: Striking and Counterattacks: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to striking and counterattacks",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize punching and kicking and counterattack strategies approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of striking and counterattacks: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to striking and counterattacks",
+                "I can assess readiness in striking and counterattacks: advanced techniques",
+                "I understand the concept of \"Striking Counterattacks\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of striking and counterattacks: advanced techniques."
+              "expectedOutcome": "You should be able to discuss striking and counterattacks: advanced techniques with confidence, covering Striking Counterattacks, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -658,7 +676,8 @@
             "Combine multiple",
             "Synthesize punching",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within striking and counterattacks for experienced practitioners. Master advanced methodologies specific to striking and counterattacks"
         }
       ]
     },
@@ -686,13 +705,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Knife Disarm Basics\":",
+              "prompt": "Review: Knife Disarm Basics — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Redirecting blade trajectory",
-                "I can explain: control grips",
-                "I can explain: counterattacks"
+                "I can understand the core principles of knife disarm basics",
+                "I can knowledge of redirecting blade trajectory",
+                "I can the significance of essential movements for disarming an attacker with a bladed weapon",
+                "I understand the concept of \"Knife Disarm Basics\"",
+                "I understand the concept of \"Redirecting blade\""
               ],
-              "expectedOutcome": "Full comprehension of knife disarm basics."
+              "expectedOutcome": "You should be able to discuss knife disarm basics with confidence, covering Knife Disarm Basics, Redirecting blade, control grips."
             },
             {
               "type": "apply",
@@ -736,13 +757,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Handgun Disarm Techniques\":",
+              "prompt": "Review: Handgun Disarm Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Redirecting barrel",
-                "I can explain: rapid control",
-                "I can explain: disabling opponent"
+                "I can understand the core principles of handgun disarm techniques",
+                "I can knowledge of redirecting barrel",
+                "I can the significance of neutralizing a firearm threat within arm’s reach",
+                "I understand the concept of \"Handgun Disarm Techniques\"",
+                "I understand the concept of \"Redirecting barrel\""
               ],
-              "expectedOutcome": "Full comprehension of handgun disarm techniques."
+              "expectedOutcome": "You should be able to discuss handgun disarm techniques with confidence, covering Handgun Disarm Techniques, Redirecting barrel, rapid control."
             },
             {
               "type": "apply",
@@ -786,14 +809,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Weapon Disarm Tactics: Core Fundamentals\":",
+              "prompt": "Review: Weapon Disarm Tactics: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in weapon disarm tactics",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of weapon disarm tactics: core fundamentals",
+                "I can knowledge of define the key terminology used in weapon disarm tactics",
+                "I can assess readiness in weapon disarm tactics: core fundamentals",
+                "I understand the concept of \"Weapon Disarm Tactics\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of weapon disarm tactics: core fundamentals."
+              "expectedOutcome": "You should be able to discuss weapon disarm tactics: core fundamentals with confidence, covering Weapon Disarm Tactics, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -822,7 +846,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin weapon disarm tactics. Define the key terminology used in weapon disarm tactics"
         },
         {
           "id": "weapon_disarm_tactics_practical_application",
@@ -839,14 +864,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Weapon Disarm Tactics: Practical Application\":",
+              "prompt": "Review: Weapon Disarm Tactics: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply weapon disarm tactics principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate knife and gun disarms techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of weapon disarm tactics: practical application",
+                "I can knowledge of apply weapon disarm tactics principles to realistic scenarios",
+                "I can assess readiness in weapon disarm tactics: practical application",
+                "I understand the concept of \"Weapon Disarm Tactics\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of weapon disarm tactics: practical application."
+              "expectedOutcome": "You should be able to discuss weapon disarm tactics: practical application with confidence, covering Weapon Disarm Tactics, Practical Application, Apply weapon."
             },
             {
               "type": "apply",
@@ -875,7 +901,8 @@
             "Develop step-by-step",
             "Integrate knife",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying weapon disarm tactics concepts in real-world scenarios and operational contexts. Apply weapon disarm tactics principles to realistic scenarios"
         },
         {
           "id": "weapon_disarm_tactics_advanced_techniques",
@@ -892,14 +919,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Weapon Disarm Tactics: Advanced Techniques\":",
+              "prompt": "Review: Weapon Disarm Tactics: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to weapon disarm tactics",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize knife and gun disarms and weapon retention approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of weapon disarm tactics: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to weapon disarm tactics",
+                "I can assess readiness in weapon disarm tactics: advanced techniques",
+                "I understand the concept of \"Weapon Disarm Tactics\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of weapon disarm tactics: advanced techniques."
+              "expectedOutcome": "You should be able to discuss weapon disarm tactics: advanced techniques with confidence, covering Weapon Disarm Tactics, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -928,7 +956,8 @@
             "Combine multiple",
             "Synthesize knife",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within weapon disarm tactics for experienced practitioners. Master advanced methodologies specific to weapon disarm tactics"
         }
       ]
     },
@@ -956,13 +985,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Blindfolded Reaction Drill\":",
+              "prompt": "Review: Blindfolded Reaction Drill — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Rely on auditory and tactile cues",
-                "I can explain: execute immediate defensive action",
-                "I can explain: maintain situational awareness"
+                "I can understand the core principles of blindfolded reaction drill",
+                "I can knowledge of rely on auditory and tactile cues",
+                "I can the significance of training to respond to sudden threats while deprived of vision",
+                "I understand the concept of \"Blindfolded Reaction Drill\"",
+                "I understand the concept of \"Rely auditory\""
               ],
-              "expectedOutcome": "Full comprehension of blindfolded reaction drill."
+              "expectedOutcome": "You should be able to discuss blindfolded reaction drill with confidence, covering Blindfolded Reaction Drill, Rely auditory, execute immediate."
             },
             {
               "type": "apply",
@@ -1006,13 +1037,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Disarm and Evade Under Fire\":",
+              "prompt": "Review: Disarm and Evade Under Fire — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Identify escape routes",
-                "I can explain: control attacker’s firearm",
-                "I can explain: neutralize immediate threat"
+                "I can understand the core principles of disarm and evade under fire",
+                "I can knowledge of identify escape routes",
+                "I can the significance of reacting to an armed opponent while engaging in controlled evasion",
+                "I understand the concept of \"Disarm Evade Fire\"",
+                "I understand the concept of \"Identify escape\""
               ],
-              "expectedOutcome": "Full comprehension of disarm and evade under fire."
+              "expectedOutcome": "You should be able to discuss disarm and evade under fire with confidence, covering Disarm Evade Fire, Identify escape, control attacker’s."
             },
             {
               "type": "apply",
@@ -1056,14 +1089,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"High-Stress Drills: Core Fundamentals\":",
+              "prompt": "Review: High-Stress Drills: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in high-stress drills",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of high-stress drills: core fundamentals",
+                "I can knowledge of define the key terminology used in high-stress drills",
+                "I can assess readiness in high-stress drills: core fundamentals",
+                "I understand the concept of \"High\"",
+                "I understand the concept of \"Stress Drills\""
               ],
-              "expectedOutcome": "Full comprehension of high-stress drills: core fundamentals."
+              "expectedOutcome": "You should be able to discuss high-stress drills: core fundamentals with confidence, covering High, Stress Drills, Core Fundamentals."
             },
             {
               "type": "apply",
@@ -1092,7 +1126,8 @@
             "Define key",
             "Identify core",
             "Recognize historical"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin high-stress drills. Define the key terminology used in high-stress drills"
         },
         {
           "id": "high_stress_drills_practical_application",
@@ -1109,14 +1144,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"High-Stress Drills: Practical Application\":",
+              "prompt": "Review: High-Stress Drills: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply high-stress drills principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate adrenaline management techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of high-stress drills: practical application",
+                "I can knowledge of apply high-stress drills principles to realistic scenarios",
+                "I can assess readiness in high-stress drills: practical application",
+                "I understand the concept of \"High\"",
+                "I understand the concept of \"Stress Drills\""
               ],
-              "expectedOutcome": "Full comprehension of high-stress drills: practical application."
+              "expectedOutcome": "You should be able to discuss high-stress drills: practical application with confidence, covering High, Stress Drills, Practical Application."
             },
             {
               "type": "apply",
@@ -1145,7 +1181,8 @@
             "Apply high-stress",
             "Develop step-by-step",
             "Integrate adrenaline"
-          ]
+          ],
+          "summaryText": "Applying high-stress drills concepts in real-world scenarios and operational contexts. Apply high-stress drills principles to realistic scenarios"
         },
         {
           "id": "high_stress_drills_advanced_techniques",
@@ -1162,14 +1199,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"High-Stress Drills: Advanced Techniques\":",
+              "prompt": "Review: High-Stress Drills: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to high-stress drills",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize adrenaline management and cognitive processing under stress approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of high-stress drills: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to high-stress drills",
+                "I can assess readiness in high-stress drills: advanced techniques",
+                "I understand the concept of \"High\"",
+                "I understand the concept of \"Stress Drills\""
               ],
-              "expectedOutcome": "Full comprehension of high-stress drills: advanced techniques."
+              "expectedOutcome": "You should be able to discuss high-stress drills: advanced techniques with confidence, covering High, Stress Drills, Advanced Techniques."
             },
             {
               "type": "apply",
@@ -1198,7 +1236,8 @@
             "Master advanced",
             "Combine multiple",
             "Synthesize adrenaline"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within high-stress drills for experienced practitioners. Master advanced methodologies specific to high-stress drills"
         }
       ]
     },
@@ -1226,13 +1265,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Timed Cover and Engage\":",
+              "prompt": "Review: Timed Cover and Engage — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Engage multiple targets",
-                "I can explain: seek cover effectively",
-                "I can explain: fire under pressure"
+                "I can understand the core principles of timed cover and engage",
+                "I can knowledge of engage multiple targets",
+                "I can the significance of shooting drill designed to maximize accuracy and cover usage under time constraints",
+                "I understand the concept of \"Timed Cover Engage\"",
+                "I understand the concept of \"Engage multiple\""
               ],
-              "expectedOutcome": "Full comprehension of timed cover and engage."
+              "expectedOutcome": "You should be able to discuss timed cover and engage with confidence, covering Timed Cover Engage, Engage multiple, seek cover."
             },
             {
               "type": "apply",
@@ -1276,13 +1317,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Dynamic Room Clearing\":",
+              "prompt": "Review: Dynamic Room Clearing — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Control angles of approach",
-                "I can explain: maintain sight alignment",
-                "I can explain: avoid crossfire"
+                "I can understand the core principles of dynamic room clearing",
+                "I can knowledge of control angles of approach",
+                "I can the significance of engaging threats in close quarters while maintaining a low profile",
+                "I understand the concept of \"Dynamic Room Clearing\"",
+                "I understand the concept of \"Control angles\""
               ],
-              "expectedOutcome": "Full comprehension of dynamic room clearing."
+              "expectedOutcome": "You should be able to discuss dynamic room clearing with confidence, covering Dynamic Room Clearing, Control angles, maintain sight."
             },
             {
               "type": "apply",
@@ -1326,14 +1369,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Live Fire Simulations: Core Fundamentals\":",
+              "prompt": "Review: Live Fire Simulations: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in live fire simulations",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of live fire simulations: core fundamentals",
+                "I can knowledge of define the key terminology used in live fire simulations",
+                "I can assess readiness in live fire simulations: core fundamentals",
+                "I understand the concept of \"Live Fire Simulations\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of live fire simulations: core fundamentals."
+              "expectedOutcome": "You should be able to discuss live fire simulations: core fundamentals with confidence, covering Live Fire Simulations, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -1362,7 +1406,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin live fire simulations. Define the key terminology used in live fire simulations"
         },
         {
           "id": "live_fire_simulations_practical_application",
@@ -1379,14 +1424,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Live Fire Simulations: Practical Application\":",
+              "prompt": "Review: Live Fire Simulations: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply live fire simulations principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate tactical precision techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of live fire simulations: practical application",
+                "I can knowledge of apply live fire simulations principles to realistic scenarios",
+                "I can assess readiness in live fire simulations: practical application",
+                "I understand the concept of \"Live Fire Simulations\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of live fire simulations: practical application."
+              "expectedOutcome": "You should be able to discuss live fire simulations: practical application with confidence, covering Live Fire Simulations, Practical Application, Apply live."
             },
             {
               "type": "apply",
@@ -1415,7 +1461,8 @@
             "Develop step-by-step",
             "Integrate tactical",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying live fire simulations concepts in real-world scenarios and operational contexts. Apply live fire simulations principles to realistic scenarios"
         },
         {
           "id": "live_fire_simulations_advanced_techniques",
@@ -1432,14 +1479,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Live Fire Simulations: Advanced Techniques\":",
+              "prompt": "Review: Live Fire Simulations: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to live fire simulations",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize tactical precision and live ammunition handling approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of live fire simulations: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to live fire simulations",
+                "I can assess readiness in live fire simulations: advanced techniques",
+                "I understand the concept of \"Live Fire Simulations\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of live fire simulations: advanced techniques."
+              "expectedOutcome": "You should be able to discuss live fire simulations: advanced techniques with confidence, covering Live Fire Simulations, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -1468,7 +1516,8 @@
             "Combine multiple",
             "Synthesize tactical",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within live fire simulations for experienced practitioners. Master advanced methodologies specific to live fire simulations"
         }
       ]
     },
@@ -1496,13 +1545,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Hostage Rescue Simulation\":",
+              "prompt": "Review: Hostage Rescue Simulation — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Assess threats",
-                "I can explain: secure hostages",
-                "I can explain: extract team safely"
+                "I can understand the core principles of hostage rescue simulation",
+                "I can knowledge of assess threats",
+                "I can the significance of executing a structured rescue operation in a hostile environment",
+                "I understand the concept of \"Hostage Rescue Simulation\"",
+                "I understand the concept of \"Assess threats\""
               ],
-              "expectedOutcome": "Full comprehension of hostage rescue simulation."
+              "expectedOutcome": "You should be able to discuss hostage rescue simulation with confidence, covering Hostage Rescue Simulation, Assess threats, secure hostages."
             },
             {
               "type": "apply",
@@ -1546,13 +1597,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Night Operations Tactical Raid\":",
+              "prompt": "Review: Night Operations Tactical Raid — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Use NVGs effectively",
-                "I can explain: engage in silent takedowns",
-                "I can explain: maintain minimal light exposure"
+                "I can understand the core principles of night operations tactical raid",
+                "I can knowledge of use nvgs effectively",
+                "I can the significance of executing a mission under low-visibility conditions with stealth tactics",
+                "I understand the concept of \"Night Operations Tactical\"",
+                "I understand the concept of \"NVGs effectively\""
               ],
-              "expectedOutcome": "Full comprehension of night operations tactical raid."
+              "expectedOutcome": "You should be able to discuss night operations tactical raid with confidence, covering Night Operations Tactical, NVGs effectively, engage silent."
             },
             {
               "type": "apply",
@@ -1596,14 +1649,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Mission-Based Training: Core Fundamentals\":",
+              "prompt": "Review: Mission-Based Training: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in mission-based training",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of mission-based training: core fundamentals",
+                "I can knowledge of define the key terminology used in mission-based training",
+                "I can assess readiness in mission-based training: core fundamentals",
+                "I understand the concept of \"Mission\"",
+                "I understand the concept of \"Based Training\""
               ],
-              "expectedOutcome": "Full comprehension of mission-based training: core fundamentals."
+              "expectedOutcome": "You should be able to discuss mission-based training: core fundamentals with confidence, covering Mission, Based Training, Core Fundamentals."
             },
             {
               "type": "apply",
@@ -1632,7 +1686,8 @@
             "Define key",
             "Identify core",
             "Recognize historical"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin mission-based training. Define the key terminology used in mission-based training"
         },
         {
           "id": "mission_based_training_practical_application",
@@ -1649,14 +1704,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Mission-Based Training: Practical Application\":",
+              "prompt": "Review: Mission-Based Training: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply mission-based training principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate team coordination techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of mission-based training: practical application",
+                "I can knowledge of apply mission-based training principles to realistic scenarios",
+                "I can assess readiness in mission-based training: practical application",
+                "I understand the concept of \"Mission\"",
+                "I understand the concept of \"Based Training\""
               ],
-              "expectedOutcome": "Full comprehension of mission-based training: practical application."
+              "expectedOutcome": "You should be able to discuss mission-based training: practical application with confidence, covering Mission, Based Training, Practical Application."
             },
             {
               "type": "apply",
@@ -1685,7 +1741,8 @@
             "Apply mission-based",
             "Develop step-by-step",
             "Integrate team"
-          ]
+          ],
+          "summaryText": "Applying mission-based training concepts in real-world scenarios and operational contexts. Apply mission-based training principles to realistic scenarios"
         },
         {
           "id": "mission_based_training_advanced_techniques",
@@ -1702,14 +1759,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Mission-Based Training: Advanced Techniques\":",
+              "prompt": "Review: Mission-Based Training: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to mission-based training",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize team coordination and objective-driven combat approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of mission-based training: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to mission-based training",
+                "I can assess readiness in mission-based training: advanced techniques",
+                "I understand the concept of \"Mission\"",
+                "I understand the concept of \"Based Training\""
               ],
-              "expectedOutcome": "Full comprehension of mission-based training: advanced techniques."
+              "expectedOutcome": "You should be able to discuss mission-based training: advanced techniques with confidence, covering Mission, Based Training, Advanced Techniques."
             },
             {
               "type": "apply",
@@ -1738,7 +1796,8 @@
             "Master advanced",
             "Combine multiple",
             "Synthesize team"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within mission-based training for experienced practitioners. Master advanced methodologies specific to mission-based training"
         }
       ]
     },
@@ -1766,13 +1825,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Reflexive Shooting Drill\":",
+              "prompt": "Review: Reflexive Shooting Drill — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Index shooting mechanics",
-                "I can explain: target tracking",
-                "I can explain: movement integration"
+                "I can understand the core principles of reflexive shooting drill",
+                "I can knowledge of index shooting mechanics",
+                "I can the significance of fast engagement of targets using instinctive aiming techniques",
+                "I understand the concept of \"Reflexive Shooting Drill\"",
+                "I understand the concept of \"Index shooting\""
               ],
-              "expectedOutcome": "Full comprehension of reflexive shooting drill."
+              "expectedOutcome": "You should be able to discuss reflexive shooting drill with confidence, covering Reflexive Shooting Drill, Index shooting, target tracking."
             },
             {
               "type": "apply",
@@ -1816,13 +1877,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"CQB Room Clearing\":",
+              "prompt": "Review: CQB Room Clearing — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Pie slicing tactics",
-                "I can explain: target priority assessment",
-                "I can explain: low-light adaptability"
+                "I can understand the core principles of cqb room clearing",
+                "I can knowledge of pie slicing tactics",
+                "I can the significance of clearing confined spaces using efficient shooting and movement techniques",
+                "I understand the concept of \"CQB Room Clearing\"",
+                "I understand the concept of \"Pie slicing\""
               ],
-              "expectedOutcome": "Full comprehension of cqb room clearing."
+              "expectedOutcome": "You should be able to discuss cqb room clearing with confidence, covering CQB Room Clearing, Pie slicing, target priority."
             },
             {
               "type": "apply",
@@ -1866,14 +1929,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Close Range Shooting: Core Fundamentals\":",
+              "prompt": "Review: Close Range Shooting: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in close range shooting",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of close range shooting: core fundamentals",
+                "I can knowledge of define the key terminology used in close range shooting",
+                "I can assess readiness in close range shooting: core fundamentals",
+                "I understand the concept of \"Close Range Shooting\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of close range shooting: core fundamentals."
+              "expectedOutcome": "You should be able to discuss close range shooting: core fundamentals with confidence, covering Close Range Shooting, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -1902,7 +1966,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin close range shooting. Define the key terminology used in close range shooting"
         },
         {
           "id": "close_range_shooting_practical_application",
@@ -1919,14 +1984,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Close Range Shooting: Practical Application\":",
+              "prompt": "Review: Close Range Shooting: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply close range shooting principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate point shooting techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of close range shooting: practical application",
+                "I can knowledge of apply close range shooting principles to realistic scenarios",
+                "I can assess readiness in close range shooting: practical application",
+                "I understand the concept of \"Close Range Shooting\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of close range shooting: practical application."
+              "expectedOutcome": "You should be able to discuss close range shooting: practical application with confidence, covering Close Range Shooting, Practical Application, Apply close."
             },
             {
               "type": "apply",
@@ -1955,7 +2021,8 @@
             "Develop step-by-step",
             "Integrate point",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying close range shooting concepts in real-world scenarios and operational contexts. Apply close range shooting principles to realistic scenarios"
         },
         {
           "id": "close_range_shooting_advanced_techniques",
@@ -1972,14 +2039,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Close Range Shooting: Advanced Techniques\":",
+              "prompt": "Review: Close Range Shooting: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to close range shooting",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize point shooting and rapid engagement approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of close range shooting: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to close range shooting",
+                "I can assess readiness in close range shooting: advanced techniques",
+                "I understand the concept of \"Close Range Shooting\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of close range shooting: advanced techniques."
+              "expectedOutcome": "You should be able to discuss close range shooting: advanced techniques with confidence, covering Close Range Shooting, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -2008,7 +2076,8 @@
             "Combine multiple",
             "Synthesize point",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within close range shooting for experienced practitioners. Master advanced methodologies specific to close range shooting"
         }
       ]
     },
@@ -2037,14 +2106,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Draw and Fire Drill\":",
+              "prompt": "Review: Draw and Fire Drill — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Grip stability",
-                "I can explain: sight alignment",
-                "I can explain: trigger control",
-                "I can explain: rapid target acquisition"
+                "I can understand the core principles of draw and fire drill",
+                "I can knowledge of grip stability",
+                "I can the significance of developing quick draw and precision shooting under time constraints",
+                "I understand the concept of \"Draw Fire Drill\"",
+                "I understand the concept of \"Grip stability\""
               ],
-              "expectedOutcome": "Full comprehension of draw and fire drill."
+              "expectedOutcome": "You should be able to discuss draw and fire drill with confidence, covering Draw Fire Drill, Grip stability, sight alignment."
             },
             {
               "type": "apply",
@@ -2089,13 +2159,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Failure-to-Stop Drill\":",
+              "prompt": "Review: Failure-to-Stop Drill — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Two shots to the torso",
-                "I can explain: follow-up shot to the head",
-                "I can explain: adjusting for target movement"
+                "I can understand the core principles of failure-to-stop drill",
+                "I can knowledge of two shots to the torso",
+                "I can the significance of engaging threats with precision shots to neutralize quickly",
+                "I understand the concept of \"Failure\"",
+                "I understand the concept of \"Stop Drill\""
               ],
-              "expectedOutcome": "Full comprehension of failure-to-stop drill."
+              "expectedOutcome": "You should be able to discuss failure-to-stop drill with confidence, covering Failure, Stop Drill, Two shots."
             },
             {
               "type": "apply",
@@ -2140,14 +2212,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Pistol Shooting Drills: Core Fundamentals\":",
+              "prompt": "Review: Pistol Shooting Drills: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in pistol shooting drills",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of pistol shooting drills: core fundamentals",
+                "I can knowledge of define the key terminology used in pistol shooting drills",
+                "I can assess readiness in pistol shooting drills: core fundamentals",
+                "I understand the concept of \"Pistol Shooting Drills\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of pistol shooting drills: core fundamentals."
+              "expectedOutcome": "You should be able to discuss pistol shooting drills: core fundamentals with confidence, covering Pistol Shooting Drills, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -2176,7 +2249,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin pistol shooting drills. Define the key terminology used in pistol shooting drills"
         },
         {
           "id": "pistol_shooting_drills_practical_application",
@@ -2193,14 +2267,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Pistol Shooting Drills: Practical Application\":",
+              "prompt": "Review: Pistol Shooting Drills: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply pistol shooting drills principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate handgun accuracy techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of pistol shooting drills: practical application",
+                "I can knowledge of apply pistol shooting drills principles to realistic scenarios",
+                "I can assess readiness in pistol shooting drills: practical application",
+                "I understand the concept of \"Pistol Shooting Drills\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of pistol shooting drills: practical application."
+              "expectedOutcome": "You should be able to discuss pistol shooting drills: practical application with confidence, covering Pistol Shooting Drills, Practical Application, Apply pistol."
             },
             {
               "type": "apply",
@@ -2229,7 +2304,8 @@
             "Develop step-by-step",
             "Integrate handgun",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying pistol shooting drills concepts in real-world scenarios and operational contexts. Apply pistol shooting drills principles to realistic scenarios"
         },
         {
           "id": "pistol_shooting_drills_advanced_techniques",
@@ -2246,14 +2322,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Pistol Shooting Drills: Advanced Techniques\":",
+              "prompt": "Review: Pistol Shooting Drills: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to pistol shooting drills",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize handgun accuracy and rapid target engagement approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of pistol shooting drills: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to pistol shooting drills",
+                "I can assess readiness in pistol shooting drills: advanced techniques",
+                "I understand the concept of \"Pistol Shooting Drills\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of pistol shooting drills: advanced techniques."
+              "expectedOutcome": "You should be able to discuss pistol shooting drills: advanced techniques with confidence, covering Pistol Shooting Drills, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -2282,7 +2359,8 @@
             "Combine multiple",
             "Synthesize handgun",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within pistol shooting drills for experienced practitioners. Master advanced methodologies specific to pistol shooting drills"
         }
       ]
     },
@@ -2310,13 +2388,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Controlled Pair Drill\":",
+              "prompt": "Review: Controlled Pair Drill — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Rapid sight picture acquisition",
-                "I can explain: trigger reset efficiency",
-                "I can explain: recoil management"
+                "I can understand the core principles of controlled pair drill",
+                "I can knowledge of rapid sight picture acquisition",
+                "I can the significance of firing two precise shots in succession to neutralize threats efficiently",
+                "I understand the concept of \"Controlled Pair Drill\"",
+                "I understand the concept of \"Rapid sight\""
               ],
-              "expectedOutcome": "Full comprehension of controlled pair drill."
+              "expectedOutcome": "You should be able to discuss controlled pair drill with confidence, covering Controlled Pair Drill, Rapid sight, trigger reset."
             },
             {
               "type": "apply",
@@ -2360,13 +2440,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Cover and Fire Maneuver\":",
+              "prompt": "Review: Cover and Fire Maneuver — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Shooting from cover",
-                "I can explain: movement coordination",
-                "I can explain: suppressive fire tactics"
+                "I can understand the core principles of cover and fire maneuver",
+                "I can knowledge of shooting from cover",
+                "I can the significance of using cover effectively while engaging hostile targets in tactical movement",
+                "I understand the concept of \"Cover Fire Maneuver\"",
+                "I understand the concept of \"Shooting cover\""
               ],
-              "expectedOutcome": "Full comprehension of cover and fire maneuver."
+              "expectedOutcome": "You should be able to discuss cover and fire maneuver with confidence, covering Cover Fire Maneuver, Shooting cover, movement coordination."
             },
             {
               "type": "apply",
@@ -2410,14 +2492,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Rifle Tactics: Core Fundamentals\":",
+              "prompt": "Review: Rifle Tactics: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in rifle tactics",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of rifle tactics: core fundamentals",
+                "I can knowledge of define the key terminology used in rifle tactics",
+                "I can assess readiness in rifle tactics: core fundamentals",
+                "I understand the concept of \"Rifle Tactics\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of rifle tactics: core fundamentals."
+              "expectedOutcome": "You should be able to discuss rifle tactics: core fundamentals with confidence, covering Rifle Tactics, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -2446,7 +2529,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin rifle tactics. Define the key terminology used in rifle tactics"
         },
         {
           "id": "rifle_tactics_practical_application",
@@ -2463,14 +2547,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Rifle Tactics: Practical Application\":",
+              "prompt": "Review: Rifle Tactics: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply rifle tactics principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate long-range accuracy techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of rifle tactics: practical application",
+                "I can knowledge of apply rifle tactics principles to realistic scenarios",
+                "I can assess readiness in rifle tactics: practical application",
+                "I understand the concept of \"Rifle Tactics\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of rifle tactics: practical application."
+              "expectedOutcome": "You should be able to discuss rifle tactics: practical application with confidence, covering Rifle Tactics, Practical Application, Apply rifle."
             },
             {
               "type": "apply",
@@ -2499,7 +2584,8 @@
             "Develop step-by-step",
             "Integrate long-range",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying rifle tactics concepts in real-world scenarios and operational contexts. Apply rifle tactics principles to realistic scenarios"
         },
         {
           "id": "rifle_tactics_advanced_techniques",
@@ -2516,14 +2602,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Rifle Tactics: Advanced Techniques\":",
+              "prompt": "Review: Rifle Tactics: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to rifle tactics",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize long-range accuracy and tactical movement approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of rifle tactics: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to rifle tactics",
+                "I can assess readiness in rifle tactics: advanced techniques",
+                "I understand the concept of \"Rifle Tactics\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of rifle tactics: advanced techniques."
+              "expectedOutcome": "You should be able to discuss rifle tactics: advanced techniques with confidence, covering Rifle Tactics, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -2552,7 +2639,8 @@
             "Combine multiple",
             "Synthesize long-range",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within rifle tactics for experienced practitioners. Master advanced methodologies specific to rifle tactics"
         }
       ]
     },
@@ -2580,13 +2668,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Baton Blocking Techniques\":",
+              "prompt": "Review: Baton Blocking Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Angle-based blocking",
-                "I can explain: impact absorption",
-                "I can explain: redirection tactics"
+                "I can understand the core principles of baton blocking techniques",
+                "I can knowledge of angle-based blocking",
+                "I can the significance of using the baton to block and deflect incoming attacks",
+                "I understand the concept of \"Baton Blocking Techniques\"",
+                "I understand the concept of \"Angle-based blocking\""
               ],
-              "expectedOutcome": "Full comprehension of baton blocking techniques."
+              "expectedOutcome": "You should be able to discuss baton blocking techniques with confidence, covering Baton Blocking Techniques, Angle-based blocking, impact absorption."
             },
             {
               "type": "apply",
@@ -2630,13 +2720,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Joint Manipulation with Baton\":",
+              "prompt": "Review: Joint Manipulation with Baton — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Targeting pressure points",
-                "I can explain: leverage-based control",
-                "I can explain: submission techniques"
+                "I can understand the core principles of joint manipulation with baton",
+                "I can knowledge of targeting pressure points",
+                "I can the significance of using the baton for joint locks and control holds",
+                "I understand the concept of \"Joint Manipulation Baton\"",
+                "I understand the concept of \"Targeting pressure\""
               ],
-              "expectedOutcome": "Full comprehension of joint manipulation with baton."
+              "expectedOutcome": "You should be able to discuss joint manipulation with baton with confidence, covering Joint Manipulation Baton, Targeting pressure, leverage-based control."
             },
             {
               "type": "apply",
@@ -2680,14 +2772,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Baton Defensive Moves: Core Fundamentals\":",
+              "prompt": "Review: Baton Defensive Moves: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in baton defensive moves",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of baton defensive moves: core fundamentals",
+                "I can knowledge of define the key terminology used in baton defensive moves",
+                "I can assess readiness in baton defensive moves: core fundamentals",
+                "I understand the concept of \"Baton Defensive Moves\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of baton defensive moves: core fundamentals."
+              "expectedOutcome": "You should be able to discuss baton defensive moves: core fundamentals with confidence, covering Baton Defensive Moves, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -2716,7 +2809,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin baton defensive moves. Define the key terminology used in baton defensive moves"
         },
         {
           "id": "baton_defensive_moves_practical_application",
@@ -2733,14 +2827,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Baton Defensive Moves: Practical Application\":",
+              "prompt": "Review: Baton Defensive Moves: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply baton defensive moves principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate blocking and countering techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of baton defensive moves: practical application",
+                "I can knowledge of apply baton defensive moves principles to realistic scenarios",
+                "I can assess readiness in baton defensive moves: practical application",
+                "I understand the concept of \"Baton Defensive Moves\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of baton defensive moves: practical application."
+              "expectedOutcome": "You should be able to discuss baton defensive moves: practical application with confidence, covering Baton Defensive Moves, Practical Application, Apply baton."
             },
             {
               "type": "apply",
@@ -2769,7 +2864,8 @@
             "Develop step-by-step",
             "Integrate blocking",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying baton defensive moves concepts in real-world scenarios and operational contexts. Apply baton defensive moves principles to realistic scenarios"
         },
         {
           "id": "baton_defensive_moves_advanced_techniques",
@@ -2786,14 +2882,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Baton Defensive Moves: Advanced Techniques\":",
+              "prompt": "Review: Baton Defensive Moves: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to baton defensive moves",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize blocking and countering and impact targeting approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of baton defensive moves: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to baton defensive moves",
+                "I can assess readiness in baton defensive moves: advanced techniques",
+                "I understand the concept of \"Baton Defensive Moves\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of baton defensive moves: advanced techniques."
+              "expectedOutcome": "You should be able to discuss baton defensive moves: advanced techniques with confidence, covering Baton Defensive Moves, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -2822,7 +2919,8 @@
             "Combine multiple",
             "Synthesize blocking",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within baton defensive moves for experienced practitioners. Master advanced methodologies specific to baton defensive moves"
         }
       ]
     },
@@ -2850,13 +2948,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Grip and Stance\":",
+              "prompt": "Review: Grip and Stance — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Reverse grip vs. forward grip",
-                "I can explain: defensive stance",
-                "I can explain: mobility and footwork"
+                "I can understand the core principles of grip and stance",
+                "I can knowledge of reverse grip vs. forward grip",
+                "I can the significance of understanding the proper grip techniques and stances for effective knife combat",
+                "I understand the concept of \"Grip Stance\"",
+                "I understand the concept of \"Reverse grip\""
               ],
-              "expectedOutcome": "Full comprehension of grip and stance."
+              "expectedOutcome": "You should be able to discuss grip and stance with confidence, covering Grip Stance, Reverse grip, defensive stance."
             },
             {
               "type": "apply",
@@ -2900,13 +3000,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Blade Deflections and Counters\":",
+              "prompt": "Review: Blade Deflections and Counters — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Parrying techniques",
-                "I can explain: control and counter",
-                "I can explain: quick response drills"
+                "I can understand the core principles of blade deflections and counters",
+                "I can knowledge of parrying techniques",
+                "I can the significance of techniques to deflect an incoming knife attack and counter with precision",
+                "I understand the concept of \"Blade Deflections Counters\"",
+                "I understand the concept of \"Parrying techniques\""
               ],
-              "expectedOutcome": "Full comprehension of blade deflections and counters."
+              "expectedOutcome": "You should be able to discuss blade deflections and counters with confidence, covering Blade Deflections Counters, Parrying techniques, control counter."
             },
             {
               "type": "apply",
@@ -2950,14 +3052,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Knife Fighting Tactics: Core Fundamentals\":",
+              "prompt": "Review: Knife Fighting Tactics: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in knife fighting tactics",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of knife fighting tactics: core fundamentals",
+                "I can knowledge of define the key terminology used in knife fighting tactics",
+                "I can assess readiness in knife fighting tactics: core fundamentals",
+                "I understand the concept of \"Knife Fighting Tactics\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of knife fighting tactics: core fundamentals."
+              "expectedOutcome": "You should be able to discuss knife fighting tactics: core fundamentals with confidence, covering Knife Fighting Tactics, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -2986,7 +3089,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin knife fighting tactics. Define the key terminology used in knife fighting tactics"
         },
         {
           "id": "knife_fighting_tactics_practical_application",
@@ -3003,14 +3107,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Knife Fighting Tactics: Practical Application\":",
+              "prompt": "Review: Knife Fighting Tactics: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply knife fighting tactics principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate knife defense techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of knife fighting tactics: practical application",
+                "I can knowledge of apply knife fighting tactics principles to realistic scenarios",
+                "I can assess readiness in knife fighting tactics: practical application",
+                "I understand the concept of \"Knife Fighting Tactics\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of knife fighting tactics: practical application."
+              "expectedOutcome": "You should be able to discuss knife fighting tactics: practical application with confidence, covering Knife Fighting Tactics, Practical Application, Apply knife."
             },
             {
               "type": "apply",
@@ -3039,7 +3144,8 @@
             "Develop step-by-step",
             "Integrate knife",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying knife fighting tactics concepts in real-world scenarios and operational contexts. Apply knife fighting tactics principles to realistic scenarios"
         },
         {
           "id": "knife_fighting_tactics_advanced_techniques",
@@ -3056,14 +3162,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Knife Fighting Tactics: Advanced Techniques\":",
+              "prompt": "Review: Knife Fighting Tactics: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to knife fighting tactics",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize knife defense and offensive blade techniques approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of knife fighting tactics: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to knife fighting tactics",
+                "I can assess readiness in knife fighting tactics: advanced techniques",
+                "I understand the concept of \"Knife Fighting Tactics\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of knife fighting tactics: advanced techniques."
+              "expectedOutcome": "You should be able to discuss knife fighting tactics: advanced techniques with confidence, covering Knife Fighting Tactics, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -3092,7 +3199,8 @@
             "Combine multiple",
             "Synthesize knife",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within knife fighting tactics for experienced practitioners. Master advanced methodologies specific to knife fighting tactics"
         }
       ]
     },
@@ -3120,13 +3228,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Grip Strength and Weapon Control\":",
+              "prompt": "Review: Grip Strength and Weapon Control — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Strength drills",
-                "I can explain: grip adjustment techniques",
-                "I can explain: counter-disarm maneuvers"
+                "I can understand the core principles of grip strength and weapon control",
+                "I can knowledge of strength drills",
+                "I can the significance of developing grip endurance and hand control to prevent weapon loss",
+                "I understand the concept of \"Grip Strength Weapon\"",
+                "I understand the concept of \"Strength drills\""
               ],
-              "expectedOutcome": "Full comprehension of grip strength and weapon control."
+              "expectedOutcome": "You should be able to discuss grip strength and weapon control with confidence, covering Grip Strength Weapon, Strength drills, grip adjustment."
             },
             {
               "type": "apply",
@@ -3170,13 +3280,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Retention in Close Quarters\":",
+              "prompt": "Review: Retention in Close Quarters — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Body positioning",
-                "I can explain: leverage advantage",
-                "I can explain: reactive counters"
+                "I can understand the core principles of retention in close quarters",
+                "I can knowledge of body positioning",
+                "I can the significance of defending against disarmament attempts in grappling range",
+                "I understand the concept of \"Retention Close Quarters\"",
+                "I understand the concept of \"Body positioning\""
               ],
-              "expectedOutcome": "Full comprehension of retention in close quarters."
+              "expectedOutcome": "You should be able to discuss retention in close quarters with confidence, covering Retention Close Quarters, Body positioning, leverage advantage."
             },
             {
               "type": "apply",
@@ -3220,14 +3332,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Weapon Retention Drills: Core Fundamentals\":",
+              "prompt": "Review: Weapon Retention Drills: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in weapon retention drills",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of weapon retention drills: core fundamentals",
+                "I can knowledge of define the key terminology used in weapon retention drills",
+                "I can assess readiness in weapon retention drills: core fundamentals",
+                "I understand the concept of \"Weapon Retention Drills\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of weapon retention drills: core fundamentals."
+              "expectedOutcome": "You should be able to discuss weapon retention drills: core fundamentals with confidence, covering Weapon Retention Drills, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -3256,7 +3369,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin weapon retention drills. Define the key terminology used in weapon retention drills"
         },
         {
           "id": "weapon_retention_drills_practical_application",
@@ -3273,14 +3387,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Weapon Retention Drills: Practical Application\":",
+              "prompt": "Review: Weapon Retention Drills: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply weapon retention drills principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate retention under attack techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of weapon retention drills: practical application",
+                "I can knowledge of apply weapon retention drills principles to realistic scenarios",
+                "I can assess readiness in weapon retention drills: practical application",
+                "I understand the concept of \"Weapon Retention Drills\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of weapon retention drills: practical application."
+              "expectedOutcome": "You should be able to discuss weapon retention drills: practical application with confidence, covering Weapon Retention Drills, Practical Application, Apply weapon."
             },
             {
               "type": "apply",
@@ -3309,7 +3424,8 @@
             "Develop step-by-step",
             "Integrate retention",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying weapon retention drills concepts in real-world scenarios and operational contexts. Apply weapon retention drills principles to realistic scenarios"
         },
         {
           "id": "weapon_retention_drills_advanced_techniques",
@@ -3326,14 +3442,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Weapon Retention Drills: Advanced Techniques\":",
+              "prompt": "Review: Weapon Retention Drills: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to weapon retention drills",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize retention under attack and disarm prevention approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of weapon retention drills: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to weapon retention drills",
+                "I can assess readiness in weapon retention drills: advanced techniques",
+                "I understand the concept of \"Weapon Retention Drills\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of weapon retention drills: advanced techniques."
+              "expectedOutcome": "You should be able to discuss weapon retention drills: advanced techniques with confidence, covering Weapon Retention Drills, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -3362,7 +3479,8 @@
             "Combine multiple",
             "Synthesize retention",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within weapon retention drills for experienced practitioners. Master advanced methodologies specific to weapon retention drills"
         }
       ]
     },
@@ -3390,13 +3508,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Natural Environment Camouflage\":",
+              "prompt": "Review: Natural Environment Camouflage — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Using shadows",
-                "I can explain: breaking up silhouette",
-                "I can explain: adjusting to lighting conditions"
+                "I can understand the core principles of natural environment camouflage",
+                "I can knowledge of using shadows",
+                "I can the significance of utilizing terrain and foliage to blend into outdoor environments",
+                "I understand the concept of \"Natural Environment Camouflage\"",
+                "I understand the concept of \"shadows\""
               ],
-              "expectedOutcome": "Full comprehension of natural environment camouflage."
+              "expectedOutcome": "You should be able to discuss natural environment camouflage with confidence, covering Natural Environment Camouflage, shadows, breaking silhouette."
             },
             {
               "type": "apply",
@@ -3440,13 +3560,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Social Engineering Disguises\":",
+              "prompt": "Review: Social Engineering Disguises — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Changing gait",
-                "I can explain: speech modulation",
-                "I can explain: dressing for context"
+                "I can understand the core principles of social engineering disguises",
+                "I can knowledge of changing gait",
+                "I can the significance of altering appearance and behavior to blend into social environments",
+                "I understand the concept of \"Social Engineering Disguises\"",
+                "I understand the concept of \"Changing gait\""
               ],
-              "expectedOutcome": "Full comprehension of social engineering disguises."
+              "expectedOutcome": "You should be able to discuss social engineering disguises with confidence, covering Social Engineering Disguises, Changing gait, speech modulation."
             },
             {
               "type": "apply",
@@ -3490,14 +3612,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Camouflage and Blending: Core Fundamentals\":",
+              "prompt": "Review: Camouflage and Blending: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in camouflage and blending",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of camouflage and blending: core fundamentals",
+                "I can knowledge of define the key terminology used in camouflage and blending",
+                "I can assess readiness in camouflage and blending: core fundamentals",
+                "I understand the concept of \"Camouflage Blending\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of camouflage and blending: core fundamentals."
+              "expectedOutcome": "You should be able to discuss camouflage and blending: core fundamentals with confidence, covering Camouflage Blending, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -3526,7 +3649,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin camouflage and blending. Define the key terminology used in camouflage and blending"
         },
         {
           "id": "camouflage_and_blending_practical_application",
@@ -3543,14 +3667,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Camouflage and Blending: Practical Application\":",
+              "prompt": "Review: Camouflage and Blending: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply camouflage and blending principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate concealment techniques techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of camouflage and blending: practical application",
+                "I can knowledge of apply camouflage and blending principles to realistic scenarios",
+                "I can assess readiness in camouflage and blending: practical application",
+                "I understand the concept of \"Camouflage Blending\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of camouflage and blending: practical application."
+              "expectedOutcome": "You should be able to discuss camouflage and blending: practical application with confidence, covering Camouflage Blending, Practical Application, Apply camouflage."
             },
             {
               "type": "apply",
@@ -3579,7 +3704,8 @@
             "Develop step-by-step",
             "Integrate concealment",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying camouflage and blending concepts in real-world scenarios and operational contexts. Apply camouflage and blending principles to realistic scenarios"
         },
         {
           "id": "camouflage_and_blending_advanced_techniques",
@@ -3596,14 +3722,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Camouflage and Blending: Advanced Techniques\":",
+              "prompt": "Review: Camouflage and Blending: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to camouflage and blending",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize concealment techniques and adaptive appearance approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of camouflage and blending: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to camouflage and blending",
+                "I can assess readiness in camouflage and blending: advanced techniques",
+                "I understand the concept of \"Camouflage Blending\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of camouflage and blending: advanced techniques."
+              "expectedOutcome": "You should be able to discuss camouflage and blending: advanced techniques with confidence, covering Camouflage Blending, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -3632,7 +3759,8 @@
             "Combine multiple",
             "Synthesize concealment",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within camouflage and blending for experienced practitioners. Master advanced methodologies specific to camouflage and blending"
         }
       ]
     },
@@ -3660,13 +3788,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Urban Escape Route Planning\":",
+              "prompt": "Review: Urban Escape Route Planning — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Mapping safe zones",
-                "I can explain: exploiting blind spots",
-                "I can explain: blending with crowds"
+                "I can understand the core principles of urban escape route planning",
+                "I can knowledge of mapping safe zones",
+                "I can the significance of identifying multiple escape routes in urban environments before engaging in an operation",
+                "I understand the concept of \"Urban Escape Route\"",
+                "I understand the concept of \"Mapping safe\""
               ],
-              "expectedOutcome": "Full comprehension of urban escape route planning."
+              "expectedOutcome": "You should be able to discuss urban escape route planning with confidence, covering Urban Escape Route, Mapping safe, exploiting blind."
             },
             {
               "type": "apply",
@@ -3710,13 +3840,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Restraint Evasion\":",
+              "prompt": "Review: Restraint Evasion — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Shim techniques",
-                "I can explain: breaking zip ties",
-                "I can explain: exploiting binding weaknesses"
+                "I can understand the core principles of restraint evasion",
+                "I can knowledge of shim techniques",
+                "I can the significance of techniques to escape from handcuffs, zip ties, and rope bindings",
+                "I understand the concept of \"Restraint Evasion\"",
+                "I understand the concept of \"Shim techniques\""
               ],
-              "expectedOutcome": "Full comprehension of restraint evasion."
+              "expectedOutcome": "You should be able to discuss restraint evasion with confidence, covering Restraint Evasion, Shim techniques, breaking zip."
             },
             {
               "type": "apply",
@@ -3760,14 +3892,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Hostile Escape Tactics: Core Fundamentals\":",
+              "prompt": "Review: Hostile Escape Tactics: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in hostile escape tactics",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of hostile escape tactics: core fundamentals",
+                "I can knowledge of define the key terminology used in hostile escape tactics",
+                "I can assess readiness in hostile escape tactics: core fundamentals",
+                "I understand the concept of \"Hostile Escape Tactics\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of hostile escape tactics: core fundamentals."
+              "expectedOutcome": "You should be able to discuss hostile escape tactics: core fundamentals with confidence, covering Hostile Escape Tactics, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -3796,7 +3929,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin hostile escape tactics. Define the key terminology used in hostile escape tactics"
         },
         {
           "id": "hostile_escape_tactics_practical_application",
@@ -3813,14 +3947,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Hostile Escape Tactics: Practical Application\":",
+              "prompt": "Review: Hostile Escape Tactics: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply hostile escape tactics principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate evasion techniques techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of hostile escape tactics: practical application",
+                "I can knowledge of apply hostile escape tactics principles to realistic scenarios",
+                "I can assess readiness in hostile escape tactics: practical application",
+                "I understand the concept of \"Hostile Escape Tactics\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of hostile escape tactics: practical application."
+              "expectedOutcome": "You should be able to discuss hostile escape tactics: practical application with confidence, covering Hostile Escape Tactics, Practical Application, Apply hostile."
             },
             {
               "type": "apply",
@@ -3849,7 +3984,8 @@
             "Develop step-by-step",
             "Integrate evasion",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying hostile escape tactics concepts in real-world scenarios and operational contexts. Apply hostile escape tactics principles to realistic scenarios"
         },
         {
           "id": "hostile_escape_tactics_advanced_techniques",
@@ -3866,14 +4002,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Hostile Escape Tactics: Advanced Techniques\":",
+              "prompt": "Review: Hostile Escape Tactics: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to hostile escape tactics",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize evasion techniques and counter-capture maneuvers approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of hostile escape tactics: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to hostile escape tactics",
+                "I can assess readiness in hostile escape tactics: advanced techniques",
+                "I understand the concept of \"Hostile Escape Tactics\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of hostile escape tactics: advanced techniques."
+              "expectedOutcome": "You should be able to discuss hostile escape tactics: advanced techniques with confidence, covering Hostile Escape Tactics, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -3902,7 +4039,8 @@
             "Combine multiple",
             "Synthesize evasion",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within hostile escape tactics for experienced practitioners. Master advanced methodologies specific to hostile escape tactics"
         }
       ]
     },
@@ -3930,13 +4068,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Soft Footfall Technique\":",
+              "prompt": "Review: Soft Footfall Technique — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Heel-to-toe rolling",
-                "I can explain: crouched movement",
-                "I can explain: surface adaptation"
+                "I can understand the core principles of soft footfall technique",
+                "I can knowledge of heel-to-toe rolling",
+                "I can the significance of methods for reducing footstep noise across different surfaces",
+                "I understand the concept of \"Soft Footfall Technique\"",
+                "I understand the concept of \"Heel-to-toe rolling\""
               ],
-              "expectedOutcome": "Full comprehension of soft footfall technique."
+              "expectedOutcome": "You should be able to discuss soft footfall technique with confidence, covering Soft Footfall Technique, Heel-to-toe rolling, crouched movement."
             },
             {
               "type": "apply",
@@ -3980,13 +4120,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Breath Control for Stealth\":",
+              "prompt": "Review: Breath Control for Stealth — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Slow diaphragmatic breathing",
-                "I can explain: controlled exhalation",
-                "I can explain: masking breath with environmental noise"
+                "I can understand the core principles of breath control for stealth",
+                "I can knowledge of slow diaphragmatic breathing",
+                "I can the significance of using controlled breathing to maintain calmness and reduce sound production",
+                "I understand the concept of \"Breath Control Stealth\"",
+                "I understand the concept of \"Slow diaphragmatic\""
               ],
-              "expectedOutcome": "Full comprehension of breath control for stealth."
+              "expectedOutcome": "You should be able to discuss breath control for stealth with confidence, covering Breath Control Stealth, Slow diaphragmatic, controlled exhalation."
             },
             {
               "type": "apply",
@@ -4030,14 +4172,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Silent Movement Training: Core Fundamentals\":",
+              "prompt": "Review: Silent Movement Training: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in silent movement training",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of silent movement training: core fundamentals",
+                "I can knowledge of define the key terminology used in silent movement training",
+                "I can assess readiness in silent movement training: core fundamentals",
+                "I understand the concept of \"Silent Movement Training\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of silent movement training: core fundamentals."
+              "expectedOutcome": "You should be able to discuss silent movement training: core fundamentals with confidence, covering Silent Movement Training, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -4066,7 +4209,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin silent movement training. Define the key terminology used in silent movement training"
         },
         {
           "id": "silent_movement_training_practical_application",
@@ -4083,14 +4227,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Silent Movement Training: Practical Application\":",
+              "prompt": "Review: Silent Movement Training: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply silent movement training principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate footstep control techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of silent movement training: practical application",
+                "I can knowledge of apply silent movement training principles to realistic scenarios",
+                "I can assess readiness in silent movement training: practical application",
+                "I understand the concept of \"Silent Movement Training\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of silent movement training: practical application."
+              "expectedOutcome": "You should be able to discuss silent movement training: practical application with confidence, covering Silent Movement Training, Practical Application, Apply silent."
             },
             {
               "type": "apply",
@@ -4119,7 +4264,8 @@
             "Develop step-by-step",
             "Integrate footstep",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying silent movement training concepts in real-world scenarios and operational contexts. Apply silent movement training principles to realistic scenarios"
         },
         {
           "id": "silent_movement_training_advanced_techniques",
@@ -4136,14 +4282,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Silent Movement Training: Advanced Techniques\":",
+              "prompt": "Review: Silent Movement Training: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to silent movement training",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize footstep control and environmental awareness approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of silent movement training: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to silent movement training",
+                "I can assess readiness in silent movement training: advanced techniques",
+                "I understand the concept of \"Silent Movement Training\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of silent movement training: advanced techniques."
+              "expectedOutcome": "You should be able to discuss silent movement training: advanced techniques with confidence, covering Silent Movement Training, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -4172,7 +4319,8 @@
             "Combine multiple",
             "Synthesize footstep",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within silent movement training for experienced practitioners. Master advanced methodologies specific to silent movement training"
         }
       ]
     },
@@ -4200,13 +4348,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Hard vs. Soft Cover\":",
+              "prompt": "Review: Hard vs. Soft Cover — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Recognize bullet-resistant vs. bullet-penetrable surfaces",
-                "I can explain: use depth perception",
-                "I can explain: avoid exposing limbs"
+                "I can understand the core principles of hard vs. soft cover",
+                "I can knowledge of recognize bullet-resistant vs. bullet-penetrable surfaces",
+                "I can the significance of identifying effective cover options in different combat scenarios",
+                "I understand the concept of \"Hard vs. Soft\"",
+                "I understand the concept of \"Recognize bullet-resistant\""
               ],
-              "expectedOutcome": "Full comprehension of hard vs. soft cover."
+              "expectedOutcome": "You should be able to discuss hard vs. soft cover with confidence, covering Hard vs. Soft, Recognize bullet-resistant, depth perception."
             },
             {
               "type": "apply",
@@ -4251,14 +4401,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Dynamic Cover Transitioning\":",
+              "prompt": "Review: Dynamic Cover Transitioning — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Use short",
-                "I can explain: controlled sprints",
-                "I can explain: time movement with distractions",
-                "I can explain: stay unpredictable"
+                "I can understand the core principles of dynamic cover transitioning",
+                "I can the significance of moving between cover positions while minimizing exposure",
+                "I understand the concept of \"Dynamic Cover Transitioning\"",
+                "I understand the concept of \"short\"",
+                "I understand the concept of \"controlled sprints\""
               ],
-              "expectedOutcome": "Full comprehension of dynamic cover transitioning."
+              "expectedOutcome": "You should be able to discuss dynamic cover transitioning with confidence, covering Dynamic Cover Transitioning, short, controlled sprints."
             },
             {
               "type": "apply",
@@ -4302,14 +4453,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Cover Usage Tactics: Core Fundamentals\":",
+              "prompt": "Review: Cover Usage Tactics: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in cover usage tactics",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of cover usage tactics: core fundamentals",
+                "I can knowledge of define the key terminology used in cover usage tactics",
+                "I can assess readiness in cover usage tactics: core fundamentals",
+                "I understand the concept of \"Cover Usage Tactics\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of cover usage tactics: core fundamentals."
+              "expectedOutcome": "You should be able to discuss cover usage tactics: core fundamentals with confidence, covering Cover Usage Tactics, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -4338,7 +4490,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin cover usage tactics. Define the key terminology used in cover usage tactics"
         },
         {
           "id": "cover_usage_tactics_practical_application",
@@ -4355,14 +4508,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Cover Usage Tactics: Practical Application\":",
+              "prompt": "Review: Cover Usage Tactics: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply cover usage tactics principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate cover and concealment techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of cover usage tactics: practical application",
+                "I can knowledge of apply cover usage tactics principles to realistic scenarios",
+                "I can assess readiness in cover usage tactics: practical application",
+                "I understand the concept of \"Cover Usage Tactics\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of cover usage tactics: practical application."
+              "expectedOutcome": "You should be able to discuss cover usage tactics: practical application with confidence, covering Cover Usage Tactics, Practical Application, Apply cover."
             },
             {
               "type": "apply",
@@ -4391,7 +4545,8 @@
             "Develop step-by-step",
             "Integrate cover",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying cover usage tactics concepts in real-world scenarios and operational contexts. Apply cover usage tactics principles to realistic scenarios"
         },
         {
           "id": "cover_usage_tactics_advanced_techniques",
@@ -4408,14 +4563,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Cover Usage Tactics: Advanced Techniques\":",
+              "prompt": "Review: Cover Usage Tactics: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to cover usage tactics",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize cover and concealment and survival movement approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of cover usage tactics: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to cover usage tactics",
+                "I can assess readiness in cover usage tactics: advanced techniques",
+                "I understand the concept of \"Cover Usage Tactics\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of cover usage tactics: advanced techniques."
+              "expectedOutcome": "You should be able to discuss cover usage tactics: advanced techniques with confidence, covering Cover Usage Tactics, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -4444,7 +4600,8 @@
             "Combine multiple",
             "Synthesize cover",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within cover usage tactics for experienced practitioners. Master advanced methodologies specific to cover usage tactics"
         }
       ]
     },
@@ -4472,13 +4629,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Bounding Overwatch\":",
+              "prompt": "Review: Bounding Overwatch — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Move in pairs",
-                "I can explain: suppress enemy positions",
-                "I can explain: use cover effectively"
+                "I can understand the core principles of bounding overwatch",
+                "I can knowledge of move in pairs",
+                "I can the significance of alternating cover fire while moving towards an objective",
+                "I understand the concept of \"Bounding Overwatch\"",
+                "I understand the concept of \"Move pairs\""
               ],
-              "expectedOutcome": "Full comprehension of bounding overwatch."
+              "expectedOutcome": "You should be able to discuss bounding overwatch with confidence, covering Bounding Overwatch, Move pairs, suppress enemy."
             },
             {
               "type": "apply",
@@ -4522,13 +4681,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Flanking and Envelopment\":",
+              "prompt": "Review: Flanking and Envelopment — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Identify enemy weak points",
-                "I can explain: coordinate flanking approach",
-                "I can explain: maintain team communication"
+                "I can understand the core principles of flanking and envelopment",
+                "I can knowledge of identify enemy weak points",
+                "I can the significance of executing a flanking maneuver to neutralize threats from an advantageous position",
+                "I understand the concept of \"Flanking Envelopment\"",
+                "I understand the concept of \"Identify enemy\""
               ],
-              "expectedOutcome": "Full comprehension of flanking and envelopment."
+              "expectedOutcome": "You should be able to discuss flanking and envelopment with confidence, covering Flanking Envelopment, Identify enemy, coordinate flanking."
             },
             {
               "type": "apply",
@@ -4572,14 +4733,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Fire and Maneuver: Core Fundamentals\":",
+              "prompt": "Review: Fire and Maneuver: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in fire and maneuver",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of fire and maneuver: core fundamentals",
+                "I can knowledge of define the key terminology used in fire and maneuver",
+                "I can assess readiness in fire and maneuver: core fundamentals",
+                "I understand the concept of \"Fire Maneuver\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of fire and maneuver: core fundamentals."
+              "expectedOutcome": "You should be able to discuss fire and maneuver: core fundamentals with confidence, covering Fire Maneuver, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -4608,7 +4770,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin fire and maneuver. Define the key terminology used in fire and maneuver"
         },
         {
           "id": "fire_and_maneuver_practical_application",
@@ -4625,14 +4788,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Fire and Maneuver: Practical Application\":",
+              "prompt": "Review: Fire and Maneuver: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply fire and maneuver principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate team coordination techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of fire and maneuver: practical application",
+                "I can knowledge of apply fire and maneuver principles to realistic scenarios",
+                "I can assess readiness in fire and maneuver: practical application",
+                "I understand the concept of \"Fire Maneuver\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of fire and maneuver: practical application."
+              "expectedOutcome": "You should be able to discuss fire and maneuver: practical application with confidence, covering Fire Maneuver, Practical Application, Apply fire."
             },
             {
               "type": "apply",
@@ -4661,7 +4825,8 @@
             "Develop step-by-step",
             "Integrate team",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying fire and maneuver concepts in real-world scenarios and operational contexts. Apply fire and maneuver principles to realistic scenarios"
         },
         {
           "id": "fire_and_maneuver_advanced_techniques",
@@ -4678,14 +4843,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Fire and Maneuver: Advanced Techniques\":",
+              "prompt": "Review: Fire and Maneuver: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to fire and maneuver",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize team coordination and cover fire deployment approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of fire and maneuver: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to fire and maneuver",
+                "I can assess readiness in fire and maneuver: advanced techniques",
+                "I understand the concept of \"Fire Maneuver\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of fire and maneuver: advanced techniques."
+              "expectedOutcome": "You should be able to discuss fire and maneuver: advanced techniques with confidence, covering Fire Maneuver, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -4714,7 +4880,8 @@
             "Combine multiple",
             "Synthesize team",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within fire and maneuver for experienced practitioners. Master advanced methodologies specific to fire and maneuver"
         }
       ]
     },
@@ -4743,14 +4910,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Corner Peeking and Pie Slicing\":",
+              "prompt": "Review: Corner Peeking and Pie Slicing — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Use slow",
-                "I can explain: controlled movements",
-                "I can explain: minimize silhouette exposure",
-                "I can explain: employ angle advantage"
+                "I can understand the core principles of corner peeking and pie slicing",
+                "I can the significance of minimizing exposure while peeking around corners in urban combat",
+                "I understand the concept of \"Corner Peeking Pie\"",
+                "I understand the concept of \"slow\"",
+                "I understand the concept of \"controlled movements\""
               ],
-              "expectedOutcome": "Full comprehension of corner peeking and pie slicing."
+              "expectedOutcome": "You should be able to discuss corner peeking and pie slicing with confidence, covering Corner Peeking Pie, slow, controlled movements."
             },
             {
               "type": "apply",
@@ -4794,13 +4962,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Stairwell and Hallway Tactics\":",
+              "prompt": "Review: Stairwell and Hallway Tactics — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Maintain fireteam spacing",
-                "I can explain: control vertical movement",
-                "I can explain: identify ambush points"
+                "I can understand the core principles of stairwell and hallway tactics",
+                "I can knowledge of maintain fireteam spacing",
+                "I can the significance of clearing stairwells and hallways while maintaining a tactical advantage",
+                "I understand the concept of \"Stairwell Hallway Tactics\"",
+                "I understand the concept of \"Maintain fireteam\""
               ],
-              "expectedOutcome": "Full comprehension of stairwell and hallway tactics."
+              "expectedOutcome": "You should be able to discuss stairwell and hallway tactics with confidence, covering Stairwell Hallway Tactics, Maintain fireteam, control vertical."
             },
             {
               "type": "apply",
@@ -4844,14 +5014,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Urban Combat Movement: Core Fundamentals\":",
+              "prompt": "Review: Urban Combat Movement: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in urban combat movement",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of urban combat movement: core fundamentals",
+                "I can knowledge of define the key terminology used in urban combat movement",
+                "I can assess readiness in urban combat movement: core fundamentals",
+                "I understand the concept of \"Urban Combat Movement\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of urban combat movement: core fundamentals."
+              "expectedOutcome": "You should be able to discuss urban combat movement: core fundamentals with confidence, covering Urban Combat Movement, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -4880,7 +5051,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin urban combat movement. Define the key terminology used in urban combat movement"
         },
         {
           "id": "urban_combat_movement_practical_application",
@@ -4897,14 +5069,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Urban Combat Movement: Practical Application\":",
+              "prompt": "Review: Urban Combat Movement: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply urban combat movement principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate room clearing techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of urban combat movement: practical application",
+                "I can knowledge of apply urban combat movement principles to realistic scenarios",
+                "I can assess readiness in urban combat movement: practical application",
+                "I understand the concept of \"Urban Combat Movement\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of urban combat movement: practical application."
+              "expectedOutcome": "You should be able to discuss urban combat movement: practical application with confidence, covering Urban Combat Movement, Practical Application, Apply urban."
             },
             {
               "type": "apply",
@@ -4933,7 +5106,8 @@
             "Develop step-by-step",
             "Integrate room",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying urban combat movement concepts in real-world scenarios and operational contexts. Apply urban combat movement principles to realistic scenarios"
         },
         {
           "id": "urban_combat_movement_advanced_techniques",
@@ -4950,14 +5124,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Urban Combat Movement: Advanced Techniques\":",
+              "prompt": "Review: Urban Combat Movement: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to urban combat movement",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize room clearing and cover and concealment in structures approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of urban combat movement: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to urban combat movement",
+                "I can assess readiness in urban combat movement: advanced techniques",
+                "I understand the concept of \"Urban Combat Movement\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of urban combat movement: advanced techniques."
+              "expectedOutcome": "You should be able to discuss urban combat movement: advanced techniques with confidence, covering Urban Combat Movement, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -4986,7 +5161,8 @@
             "Combine multiple",
             "Synthesize room",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within urban combat movement for experienced practitioners. Master advanced methodologies specific to urban combat movement"
         }
       ]
     }

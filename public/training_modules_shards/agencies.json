@@ -230,7 +230,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin counterintelligence tactics. Define the key terminology used in counterintelligence tactics"
         },
         {
           "id": "counterintelligence_tactics_practical_application",
@@ -272,7 +273,8 @@
             "Develop step-by-step",
             "Integrate spy",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying counterintelligence tactics concepts in real-world scenarios and operational contexts. Apply counterintelligence tactics principles to realistic scenarios"
         },
         {
           "id": "counterintelligence_tactics_advanced_techniques",
@@ -314,7 +316,8 @@
             "Combine multiple",
             "Synthesize spy",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within counterintelligence tactics for experienced practitioners. Master advanced methodologies specific to counterintelligence tactics"
         }
       ]
     },
@@ -448,7 +451,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin spy tradecraft. Define the key terminology used in spy tradecraft"
         },
         {
           "id": "spy_tradecraft_practical_application",
@@ -490,7 +494,8 @@
             "Develop step-by-step",
             "Integrate deception",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying spy tradecraft concepts in real-world scenarios and operational contexts. Apply spy tradecraft principles to realistic scenarios"
         },
         {
           "id": "spy_tradecraft_advanced_techniques",
@@ -532,7 +537,8 @@
             "Combine multiple",
             "Synthesize deception",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within spy tradecraft for experienced practitioners. Master advanced methodologies specific to spy tradecraft"
         }
       ]
     },
@@ -666,7 +672,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin undercover surveillance. Define the key terminology used in undercover surveillance"
         },
         {
           "id": "undercover_surveillance_practical_application",
@@ -708,7 +715,8 @@
             "Develop step-by-step",
             "Integrate foot",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying undercover surveillance concepts in real-world scenarios and operational contexts. Apply undercover surveillance principles to realistic scenarios"
         },
         {
           "id": "undercover_surveillance_advanced_techniques",
@@ -750,7 +758,8 @@
             "Combine multiple",
             "Synthesize foot",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within undercover surveillance for experienced practitioners. Master advanced methodologies specific to undercover surveillance"
         }
       ]
     },
@@ -884,7 +893,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin criminal profiling methods. Define the key terminology used in criminal profiling methods"
         },
         {
           "id": "criminal_profiling_methods_practical_application",
@@ -926,7 +936,8 @@
             "Develop step-by-step",
             "Integrate behavioral",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying criminal profiling methods concepts in real-world scenarios and operational contexts. Apply criminal profiling methods principles to realistic scenarios"
         },
         {
           "id": "criminal_profiling_methods_advanced_techniques",
@@ -968,7 +979,8 @@
             "Combine multiple",
             "Synthesize behavioral",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within criminal profiling methods for experienced practitioners. Master advanced methodologies specific to criminal profiling methods"
         }
       ]
     },
@@ -1102,7 +1114,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin cyber fraud detection. Define the key terminology used in cyber fraud detection"
         },
         {
           "id": "cyber_fraud_detection_practical_application",
@@ -1144,7 +1157,8 @@
             "Develop step-by-step",
             "Integrate financial",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying cyber fraud detection concepts in real-world scenarios and operational contexts. Apply cyber fraud detection principles to realistic scenarios"
         },
         {
           "id": "cyber_fraud_detection_advanced_techniques",
@@ -1186,7 +1200,8 @@
             "Combine multiple",
             "Synthesize financial",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within cyber fraud detection for experienced practitioners. Master advanced methodologies specific to cyber fraud detection"
         }
       ]
     },
@@ -1321,7 +1336,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin forensic analysis. Define the key terminology used in forensic analysis"
         },
         {
           "id": "forensic_analysis_practical_application",
@@ -1363,7 +1379,8 @@
             "Develop step-by-step",
             "Integrate crime",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying forensic analysis concepts in real-world scenarios and operational contexts. Apply forensic analysis principles to realistic scenarios"
         },
         {
           "id": "forensic_analysis_advanced_techniques",
@@ -1405,7 +1422,8 @@
             "Combine multiple",
             "Synthesize crime",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within forensic analysis for experienced practitioners. Master advanced methodologies specific to forensic analysis"
         }
       ]
     },
@@ -1538,7 +1556,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin border control tactics. Define the key terminology used in border control tactics"
         },
         {
           "id": "border_control_tactics_practical_application",
@@ -1580,7 +1599,8 @@
             "Develop step-by-step",
             "Integrate border",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying border control tactics concepts in real-world scenarios and operational contexts. Apply border control tactics principles to realistic scenarios"
         },
         {
           "id": "border_control_tactics_advanced_techniques",
@@ -1622,7 +1642,8 @@
             "Combine multiple",
             "Synthesize border",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within border control tactics for experienced practitioners. Master advanced methodologies specific to border control tactics"
         }
       ]
     },
@@ -1755,7 +1776,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin emergency response drills. Define the key terminology used in emergency response drills"
         },
         {
           "id": "emergency_response_drills_practical_application",
@@ -1797,7 +1819,8 @@
             "Develop step-by-step",
             "Integrate crisis",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying emergency response drills concepts in real-world scenarios and operational contexts. Apply emergency response drills principles to realistic scenarios"
         },
         {
           "id": "emergency_response_drills_advanced_techniques",
@@ -1839,7 +1862,8 @@
             "Combine multiple",
             "Synthesize crisis",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within emergency response drills for experienced practitioners. Master advanced methodologies specific to emergency response drills"
         }
       ]
     },
@@ -1972,7 +1996,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin terrorist threat analysis. Define the key terminology used in terrorist threat analysis"
         },
         {
           "id": "terrorist_threat_analysis_practical_application",
@@ -2014,7 +2039,8 @@
             "Develop step-by-step",
             "Integrate threat",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying terrorist threat analysis concepts in real-world scenarios and operational contexts. Apply terrorist threat analysis principles to realistic scenarios"
         },
         {
           "id": "terrorist_threat_analysis_advanced_techniques",
@@ -2056,7 +2082,8 @@
             "Combine multiple",
             "Synthesize threat",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within terrorist threat analysis for experienced practitioners. Master advanced methodologies specific to terrorist threat analysis"
         }
       ]
     },
@@ -2191,7 +2218,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin criminal network tracking. Define the key terminology used in criminal network tracking"
         },
         {
           "id": "criminal_network_tracking_practical_application",
@@ -2233,7 +2261,8 @@
             "Develop step-by-step",
             "Integrate organized",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying criminal network tracking concepts in real-world scenarios and operational contexts. Apply criminal network tracking principles to realistic scenarios"
         },
         {
           "id": "criminal_network_tracking_advanced_techniques",
@@ -2275,7 +2304,8 @@
             "Combine multiple",
             "Synthesize organized",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within criminal network tracking for experienced practitioners. Master advanced methodologies specific to criminal network tracking"
         }
       ]
     },
@@ -2410,7 +2440,8 @@
             "Define key",
             "Identify core",
             "Recognize historical"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin cross-border smuggling cases. Define the key terminology used in cross-border smuggling cases"
         },
         {
           "id": "cross_border_smuggling_cases_practical_application",
@@ -2452,7 +2483,8 @@
             "Apply cross-border",
             "Develop step-by-step",
             "Integrate smuggling"
-          ]
+          ],
+          "summaryText": "Applying cross-border smuggling cases concepts in real-world scenarios and operational contexts. Apply cross-border smuggling cases principles to realistic scenarios"
         },
         {
           "id": "cross_border_smuggling_cases_advanced_techniques",
@@ -2494,7 +2526,8 @@
             "Master advanced",
             "Combine multiple",
             "Synthesize smuggling"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within cross-border smuggling cases for experienced practitioners. Master advanced methodologies specific to cross-border smuggling cases"
         }
       ]
     },
@@ -2629,7 +2662,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin international law basics. Define the key terminology used in international law basics"
         },
         {
           "id": "international_law_basics_practical_application",
@@ -2671,7 +2705,8 @@
             "Develop step-by-step",
             "Integrate legal",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying international law basics concepts in real-world scenarios and operational contexts. Apply international law basics principles to realistic scenarios"
         },
         {
           "id": "international_law_basics_advanced_techniques",
@@ -2713,7 +2748,8 @@
             "Combine multiple",
             "Synthesize legal",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within international law basics for experienced practitioners. Master advanced methodologies specific to international law basics"
         }
       ]
     },
@@ -2847,7 +2883,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin emergency evasion maneuvers. Define the key terminology used in emergency evasion maneuvers"
         },
         {
           "id": "emergency_evasion_maneuvers_practical_application",
@@ -2889,7 +2926,8 @@
             "Develop step-by-step",
             "Integrate evasive",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying emergency evasion maneuvers concepts in real-world scenarios and operational contexts. Apply emergency evasion maneuvers principles to realistic scenarios"
         },
         {
           "id": "emergency_evasion_maneuvers_advanced_techniques",
@@ -2931,7 +2969,8 @@
             "Combine multiple",
             "Synthesize evasive",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within emergency evasion maneuvers for experienced practitioners. Master advanced methodologies specific to emergency evasion maneuvers"
         }
       ]
     },
@@ -3064,7 +3103,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin financial fraud detection. Define the key terminology used in financial fraud detection"
         },
         {
           "id": "financial_fraud_detection_practical_application",
@@ -3106,7 +3146,8 @@
             "Develop step-by-step",
             "Integrate forensic",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying financial fraud detection concepts in real-world scenarios and operational contexts. Apply financial fraud detection principles to realistic scenarios"
         },
         {
           "id": "financial_fraud_detection_advanced_techniques",
@@ -3148,7 +3189,8 @@
             "Combine multiple",
             "Synthesize forensic",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within financial fraud detection for experienced practitioners. Master advanced methodologies specific to financial fraud detection"
         }
       ]
     },
@@ -3281,7 +3323,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin protective service tactics. Define the key terminology used in protective service tactics"
         },
         {
           "id": "protective_service_tactics_practical_application",
@@ -3323,7 +3366,8 @@
             "Develop step-by-step",
             "Integrate close",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying protective service tactics concepts in real-world scenarios and operational contexts. Apply protective service tactics principles to realistic scenarios"
         },
         {
           "id": "protective_service_tactics_advanced_techniques",
@@ -3365,7 +3409,8 @@
             "Combine multiple",
             "Synthesize close",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within protective service tactics for experienced practitioners. Master advanced methodologies specific to protective service tactics"
         }
       ]
     }

@@ -221,13 +221,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Side Step\":",
+              "prompt": "Review: Side Step — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Step side to side while maintaining a slight bounce",
-                "I can explain: Keep arms relaxed and engaged",
-                "I can explain: Move to the beat to create flow"
+                "I can understand the core principles of side step",
+                "I can knowledge of step side to side while maintaining a slight bounce",
+                "I can the significance of a basic side-to-side movement that sets the rhythm for more complex footwork",
+                "I understand the concept of \"Side Step\"",
+                "I understand the concept of \"Step side\""
               ],
-              "expectedOutcome": "Full comprehension of side step."
+              "expectedOutcome": "You should be able to discuss side step with confidence, covering Side Step, Step side, Keep arms."
             },
             {
               "type": "apply",
@@ -266,13 +268,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Crossover Step\":",
+              "prompt": "Review: Crossover Step — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Step forward and cross one foot over the other",
-                "I can explain: Use your arms to guide the motion",
-                "I can explain: Stay light on your feet for quick transitions"
+                "I can understand the core principles of crossover step",
+                "I can knowledge of step forward and cross one foot over the other",
+                "I can the significance of a dynamic movement where one foot crosses over the other in sync with the beat",
+                "I understand the concept of \"Crossover Step\"",
+                "I understand the concept of \"Step forward\""
               ],
-              "expectedOutcome": "Full comprehension of crossover step."
+              "expectedOutcome": "You should be able to discuss crossover step with confidence, covering Crossover Step, Step forward, arms guide."
             },
             {
               "type": "apply",
@@ -311,14 +315,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Basic Toprock Moves: Core Fundamentals\":",
+              "prompt": "Review: Basic Toprock Moves: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in basic toprock moves",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of basic toprock moves: core fundamentals",
+                "I can knowledge of define the key terminology used in basic toprock moves",
+                "I can assess readiness in basic toprock moves: core fundamentals",
+                "I understand the concept of \"Basic Toprock Moves\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of basic toprock moves: core fundamentals."
+              "expectedOutcome": "You should be able to discuss basic toprock moves: core fundamentals with confidence, covering Basic Toprock Moves, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -342,7 +347,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin basic toprock moves. Define the key terminology used in basic toprock moves"
         },
         {
           "id": "basic_toprock_moves_practical_application",
@@ -359,14 +365,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Basic Toprock Moves: Practical Application\":",
+              "prompt": "Review: Basic Toprock Moves: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply basic toprock moves principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate footwork techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of basic toprock moves: practical application",
+                "I can knowledge of apply basic toprock moves principles to realistic scenarios",
+                "I can assess readiness in basic toprock moves: practical application",
+                "I understand the concept of \"Basic Toprock Moves\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of basic toprock moves: practical application."
+              "expectedOutcome": "You should be able to discuss basic toprock moves: practical application with confidence, covering Basic Toprock Moves, Practical Application, Apply basic."
             },
             {
               "type": "apply",
@@ -390,7 +397,8 @@
             "Develop step-by-step",
             "Integrate footwork",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying basic toprock moves concepts in real-world scenarios and operational contexts. Apply basic toprock moves principles to realistic scenarios"
         },
         {
           "id": "basic_toprock_moves_advanced_techniques",
@@ -407,14 +415,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Basic Toprock Moves: Advanced Techniques\":",
+              "prompt": "Review: Basic Toprock Moves: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to basic toprock moves",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize footwork and timing approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of basic toprock moves: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to basic toprock moves",
+                "I can assess readiness in basic toprock moves: advanced techniques",
+                "I understand the concept of \"Basic Toprock Moves\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of basic toprock moves: advanced techniques."
+              "expectedOutcome": "You should be able to discuss basic toprock moves: advanced techniques with confidence, covering Basic Toprock Moves, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -438,7 +447,8 @@
             "Combine multiple",
             "Synthesize footwork",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within basic toprock moves for experienced practitioners. Master advanced methodologies specific to basic toprock moves"
         }
       ]
     },
@@ -466,13 +476,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Baby Freeze\":",
+              "prompt": "Review: Baby Freeze — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Plant one elbow into your side for support",
-                "I can explain: Lean forward and balance using your head",
-                "I can explain: Keep legs tucked for better control"
+                "I can understand the core principles of baby freeze",
+                "I can knowledge of plant one elbow into your side for support",
+                "I can the significance of a foundational freeze where the body rests on one elbow for stability",
+                "I understand the concept of \"Baby Freeze\"",
+                "I understand the concept of \"Plant one\""
               ],
-              "expectedOutcome": "Full comprehension of baby freeze."
+              "expectedOutcome": "You should be able to discuss baby freeze with confidence, covering Baby Freeze, Plant one, Lean forward."
             },
             {
               "type": "apply",
@@ -511,13 +523,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Shoulder Freeze\":",
+              "prompt": "Review: Shoulder Freeze — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Roll onto your shoulder and plant your arm for stability",
-                "I can explain: Engage core muscles to hold position",
-                "I can explain: Use opposite leg to balance and create a dynamic shape"
+                "I can understand the core principles of shoulder freeze",
+                "I can knowledge of roll onto your shoulder and plant your arm for stability",
+                "I can the significance of a more advanced pose where the body is balanced on one shoulder",
+                "I understand the concept of \"Shoulder Freeze\"",
+                "I understand the concept of \"Roll onto\""
               ],
-              "expectedOutcome": "Full comprehension of shoulder freeze."
+              "expectedOutcome": "You should be able to discuss shoulder freeze with confidence, covering Shoulder Freeze, Roll onto, Engage core."
             },
             {
               "type": "apply",
@@ -556,14 +570,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Freeze Techniques: Core Fundamentals\":",
+              "prompt": "Review: Freeze Techniques: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in freeze techniques",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of freeze techniques: core fundamentals",
+                "I can knowledge of define the key terminology used in freeze techniques",
+                "I can assess readiness in freeze techniques: core fundamentals",
+                "I understand the concept of \"Freeze Techniques\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of freeze techniques: core fundamentals."
+              "expectedOutcome": "You should be able to discuss freeze techniques: core fundamentals with confidence, covering Freeze Techniques, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -587,7 +602,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin freeze techniques. Define the key terminology used in freeze techniques"
         },
         {
           "id": "freeze_techniques_practical_application",
@@ -604,14 +620,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Freeze Techniques: Practical Application\":",
+              "prompt": "Review: Freeze Techniques: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply freeze techniques principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate strength techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of freeze techniques: practical application",
+                "I can knowledge of apply freeze techniques principles to realistic scenarios",
+                "I can assess readiness in freeze techniques: practical application",
+                "I understand the concept of \"Freeze Techniques\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of freeze techniques: practical application."
+              "expectedOutcome": "You should be able to discuss freeze techniques: practical application with confidence, covering Freeze Techniques, Practical Application, Apply freeze."
             },
             {
               "type": "apply",
@@ -635,7 +652,8 @@
             "Develop step-by-step",
             "Integrate strength",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying freeze techniques concepts in real-world scenarios and operational contexts. Apply freeze techniques principles to realistic scenarios"
         },
         {
           "id": "freeze_techniques_advanced_techniques",
@@ -652,14 +670,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Freeze Techniques: Advanced Techniques\":",
+              "prompt": "Review: Freeze Techniques: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to freeze techniques",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize strength and balance approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of freeze techniques: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to freeze techniques",
+                "I can assess readiness in freeze techniques: advanced techniques",
+                "I understand the concept of \"Freeze Techniques\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of freeze techniques: advanced techniques."
+              "expectedOutcome": "You should be able to discuss freeze techniques: advanced techniques with confidence, covering Freeze Techniques, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -683,7 +702,8 @@
             "Combine multiple",
             "Synthesize strength",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within freeze techniques for experienced practitioners. Master advanced methodologies specific to freeze techniques"
         }
       ]
     },
@@ -711,13 +731,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Neck Wrap\":",
+              "prompt": "Review: Neck Wrap — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Start with a slow spin and guide the staff behind your head",
-                "I can explain: Tuck your chin slightly to allow the wrap",
-                "I can explain: Catch the staff smoothly without disrupting its motion"
+                "I can understand the core principles of neck wrap",
+                "I can knowledge of start with a slow spin and guide the staff behind your head",
+                "I can the significance of a seamless transition where the staff wraps around the neck before being caught",
+                "I understand the concept of \"Neck Wrap\"",
+                "I understand the concept of \"Start slow\""
               ],
-              "expectedOutcome": "Full comprehension of neck wrap."
+              "expectedOutcome": "You should be able to discuss neck wrap with confidence, covering Neck Wrap, Start slow, Tuck chin."
             },
             {
               "type": "apply",
@@ -756,13 +778,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Aerial Release\":",
+              "prompt": "Review: Aerial Release — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Use controlled force to flick the staff upwards",
-                "I can explain: Keep your eyes on the staff at all times",
-                "I can explain: Time your catch to continue the movement fluidly"
+                "I can understand the core principles of aerial release",
+                "I can knowledge of use controlled force to flick the staff upwards",
+                "I can the significance of a dynamic trick where the staff is released mid-air and caught with precision",
+                "I understand the concept of \"Aerial Release\"",
+                "I understand the concept of \"controlled force\""
               ],
-              "expectedOutcome": "Full comprehension of aerial release."
+              "expectedOutcome": "You should be able to discuss aerial release with confidence, covering Aerial Release, controlled force, Keep eyes."
             },
             {
               "type": "apply",
@@ -801,14 +825,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Advanced Flourishes: Core Fundamentals\":",
+              "prompt": "Review: Advanced Flourishes: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in advanced flourishes",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of advanced flourishes: core fundamentals",
+                "I can knowledge of define the key terminology used in advanced flourishes",
+                "I can assess readiness in advanced flourishes: core fundamentals",
+                "I understand the concept of \"Advanced Flourishes\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of advanced flourishes: core fundamentals."
+              "expectedOutcome": "You should be able to discuss advanced flourishes: core fundamentals with confidence, covering Advanced Flourishes, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -832,7 +857,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin advanced flourishes. Define the key terminology used in advanced flourishes"
         },
         {
           "id": "advanced_flourishes_practical_application",
@@ -849,14 +875,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Advanced Flourishes: Practical Application\":",
+              "prompt": "Review: Advanced Flourishes: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply advanced flourishes principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate dexterity techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of advanced flourishes: practical application",
+                "I can knowledge of apply advanced flourishes principles to realistic scenarios",
+                "I can assess readiness in advanced flourishes: practical application",
+                "I understand the concept of \"Advanced Flourishes\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of advanced flourishes: practical application."
+              "expectedOutcome": "You should be able to discuss advanced flourishes: practical application with confidence, covering Advanced Flourishes, Practical Application, Apply advanced."
             },
             {
               "type": "apply",
@@ -880,7 +907,8 @@
             "Develop step-by-step",
             "Integrate dexterity",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying advanced flourishes concepts in real-world scenarios and operational contexts. Apply advanced flourishes principles to realistic scenarios"
         },
         {
           "id": "advanced_flourishes_advanced_techniques",
@@ -897,14 +925,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Advanced Flourishes: Advanced Techniques\":",
+              "prompt": "Review: Advanced Flourishes: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to advanced flourishes",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize dexterity and advanced control approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of advanced flourishes: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to advanced flourishes",
+                "I can assess readiness in advanced flourishes: advanced techniques",
+                "I understand the concept of \"Advanced Flourishes\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of advanced flourishes: advanced techniques."
+              "expectedOutcome": "You should be able to discuss advanced flourishes: advanced techniques with confidence, covering Advanced Flourishes, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -928,7 +957,8 @@
             "Combine multiple",
             "Synthesize dexterity",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within advanced flourishes for experienced practitioners. Master advanced methodologies specific to advanced flourishes"
         }
       ]
     },
@@ -956,13 +986,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Continuous Wrist Spin\":",
+              "prompt": "Review: Continuous Wrist Spin — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Keep the grip relaxed to allow free rotation",
-                "I can explain: Use subtle wrist flicks to maintain speed",
-                "I can explain: Practice switching hands smoothly"
+                "I can understand the core principles of continuous wrist spin",
+                "I can knowledge of keep the grip relaxed to allow free rotation",
+                "I can the significance of a fluid wrist-based spin that maintains momentum",
+                "I understand the concept of \"Continuous Wrist Spin\"",
+                "I understand the concept of \"Keep grip\""
               ],
-              "expectedOutcome": "Full comprehension of continuous wrist spin."
+              "expectedOutcome": "You should be able to discuss continuous wrist spin with confidence, covering Continuous Wrist Spin, Keep grip, subtle wrist."
             },
             {
               "type": "apply",
@@ -1001,13 +1033,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Figure Eight Pass\":",
+              "prompt": "Review: Figure Eight Pass — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Engage your core to guide the movement",
-                "I can explain: Use wrist rotations for better fluidity",
-                "I can explain: Practice both clockwise and counterclockwise motions"
+                "I can understand the core principles of figure eight pass",
+                "I can knowledge of engage your core to guide the movement",
+                "I can the significance of a transition where the staff flows through a figure-eight motion between hands",
+                "I understand the concept of \"Figure Eight Pass\"",
+                "I understand the concept of \"Engage core\""
               ],
-              "expectedOutcome": "Full comprehension of figure eight pass."
+              "expectedOutcome": "You should be able to discuss figure eight pass with confidence, covering Figure Eight Pass, Engage core, wrist rotations."
             },
             {
               "type": "apply",
@@ -1046,14 +1080,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Spins & Transitions: Core Fundamentals\":",
+              "prompt": "Review: Spins & Transitions: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in spins & transitions",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of spins & transitions: core fundamentals",
+                "I can knowledge of define the key terminology used in spins & transitions",
+                "I can assess readiness in spins & transitions: core fundamentals",
+                "I understand the concept of \"Spins\"",
+                "I understand the concept of \"Transitions\""
               ],
-              "expectedOutcome": "Full comprehension of spins & transitions: core fundamentals."
+              "expectedOutcome": "You should be able to discuss spins & transitions: core fundamentals with confidence, covering Spins, Transitions, Core Fundamentals."
             },
             {
               "type": "apply",
@@ -1077,7 +1112,8 @@
             "Define key",
             "Identify core",
             "Recognize historical"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin spins & transitions. Define the key terminology used in spins & transitions"
         },
         {
           "id": "spins_and_transitions_practical_application",
@@ -1094,14 +1130,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Spins & Transitions: Practical Application\":",
+              "prompt": "Review: Spins & Transitions: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply spins & transitions principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate circular motion techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of spins & transitions: practical application",
+                "I can knowledge of apply spins & transitions principles to realistic scenarios",
+                "I can assess readiness in spins & transitions: practical application",
+                "I understand the concept of \"Spins\"",
+                "I understand the concept of \"Transitions\""
               ],
-              "expectedOutcome": "Full comprehension of spins & transitions: practical application."
+              "expectedOutcome": "You should be able to discuss spins & transitions: practical application with confidence, covering Spins, Transitions, Practical Application."
             },
             {
               "type": "apply",
@@ -1125,7 +1162,8 @@
             "Apply spins",
             "Develop step-by-step",
             "Integrate circular"
-          ]
+          ],
+          "summaryText": "Applying spins & transitions concepts in real-world scenarios and operational contexts. Apply spins & transitions principles to realistic scenarios"
         },
         {
           "id": "spins_and_transitions_advanced_techniques",
@@ -1142,14 +1180,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Spins & Transitions: Advanced Techniques\":",
+              "prompt": "Review: Spins & Transitions: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to spins & transitions",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize circular motion and seamless transitions approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of spins & transitions: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to spins & transitions",
+                "I can assess readiness in spins & transitions: advanced techniques",
+                "I understand the concept of \"Spins\"",
+                "I understand the concept of \"Transitions\""
               ],
-              "expectedOutcome": "Full comprehension of spins & transitions: advanced techniques."
+              "expectedOutcome": "You should be able to discuss spins & transitions: advanced techniques with confidence, covering Spins, Transitions, Advanced Techniques."
             },
             {
               "type": "apply",
@@ -1173,7 +1212,8 @@
             "Master advanced",
             "Combine multiple",
             "Synthesize circular"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within spins & transitions for experienced practitioners. Master advanced methodologies specific to spins & transitions"
         }
       ]
     },
@@ -1201,13 +1241,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Basic Heel-Toe Step\":",
+              "prompt": "Review: Basic Heel-Toe Step — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Lift one heel while placing weight on the opposite toe",
-                "I can explain: Switch feet in sync with the beat",
-                "I can explain: Maintain a low stance for better control"
+                "I can understand the core principles of basic heel-toe step",
+                "I can knowledge of lift one heel while placing weight on the opposite toe",
+                "I can the significance of learn the essential heel-toe motion to create smooth shuffle movements",
+                "I understand the concept of \"Basic Heel\"",
+                "I understand the concept of \"Toe Step\""
               ],
-              "expectedOutcome": "Full comprehension of basic heel-toe step."
+              "expectedOutcome": "You should be able to discuss basic heel-toe step with confidence, covering Basic Heel, Toe Step, Lift one."
             },
             {
               "type": "apply",
@@ -1247,13 +1289,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Reverse Heel-Toe Slide\":",
+              "prompt": "Review: Reverse Heel-Toe Slide — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Push forward with your heel while pulling back with the opposite toe",
-                "I can explain: Keep weight balanced between both feet",
-                "I can explain: Use subtle knee bends for better flow"
+                "I can understand the core principles of reverse heel-toe slide",
+                "I can knowledge of push forward with your heel while pulling back with the opposite toe",
+                "I can the significance of a reverse movement technique to add style to your footwork",
+                "I understand the concept of \"Reverse Heel\"",
+                "I understand the concept of \"Toe Slide\""
               ],
-              "expectedOutcome": "Full comprehension of reverse heel-toe slide."
+              "expectedOutcome": "You should be able to discuss reverse heel-toe slide with confidence, covering Reverse Heel, Toe Slide, Push forward."
             },
             {
               "type": "apply",
@@ -1293,14 +1337,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Heel-Toe Variations: Core Fundamentals\":",
+              "prompt": "Review: Heel-Toe Variations: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in heel-toe variations",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of heel-toe variations: core fundamentals",
+                "I can knowledge of define the key terminology used in heel-toe variations",
+                "I can assess readiness in heel-toe variations: core fundamentals",
+                "I understand the concept of \"Heel\"",
+                "I understand the concept of \"Toe Variations\""
               ],
-              "expectedOutcome": "Full comprehension of heel-toe variations: core fundamentals."
+              "expectedOutcome": "You should be able to discuss heel-toe variations: core fundamentals with confidence, covering Heel, Toe Variations, Core Fundamentals."
             },
             {
               "type": "apply",
@@ -1324,7 +1369,8 @@
             "Define key",
             "Identify core",
             "Recognize historical"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin heel-toe variations. Define the key terminology used in heel-toe variations"
         },
         {
           "id": "heel_toe_variations_practical_application",
@@ -1341,14 +1387,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Heel-Toe Variations: Practical Application\":",
+              "prompt": "Review: Heel-Toe Variations: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply heel-toe variations principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate foot precision techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of heel-toe variations: practical application",
+                "I can knowledge of apply heel-toe variations principles to realistic scenarios",
+                "I can assess readiness in heel-toe variations: practical application",
+                "I understand the concept of \"Heel\"",
+                "I understand the concept of \"Toe Variations\""
               ],
-              "expectedOutcome": "Full comprehension of heel-toe variations: practical application."
+              "expectedOutcome": "You should be able to discuss heel-toe variations: practical application with confidence, covering Heel, Toe Variations, Practical Application."
             },
             {
               "type": "apply",
@@ -1372,7 +1419,8 @@
             "Apply heel-toe",
             "Develop step-by-step",
             "Integrate foot"
-          ]
+          ],
+          "summaryText": "Applying heel-toe variations concepts in real-world scenarios and operational contexts. Apply heel-toe variations principles to realistic scenarios"
         },
         {
           "id": "heel_toe_variations_advanced_techniques",
@@ -1389,14 +1437,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Heel-Toe Variations: Advanced Techniques\":",
+              "prompt": "Review: Heel-Toe Variations: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to heel-toe variations",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize foot precision and rhythmic control approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of heel-toe variations: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to heel-toe variations",
+                "I can assess readiness in heel-toe variations: advanced techniques",
+                "I understand the concept of \"Heel\"",
+                "I understand the concept of \"Toe Variations\""
               ],
-              "expectedOutcome": "Full comprehension of heel-toe variations: advanced techniques."
+              "expectedOutcome": "You should be able to discuss heel-toe variations: advanced techniques with confidence, covering Heel, Toe Variations, Advanced Techniques."
             },
             {
               "type": "apply",
@@ -1420,7 +1469,8 @@
             "Master advanced",
             "Combine multiple",
             "Synthesize foot"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within heel-toe variations for experienced practitioners. Master advanced methodologies specific to heel-toe variations"
         }
       ]
     },
@@ -1448,13 +1498,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Tempo Drills\":",
+              "prompt": "Review: Tempo Drills — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Start slow and gradually increase speed",
-                "I can explain: Focus on landing softly to avoid impact stress",
-                "I can explain: Keep core engaged for better stability"
+                "I can understand the core principles of tempo drills",
+                "I can knowledge of start slow and gradually increase speed",
+                "I can the significance of increase foot speed while maintaining balance and control",
+                "I understand the concept of \"Tempo Drills\"",
+                "I understand the concept of \"Start slow\""
               ],
-              "expectedOutcome": "Full comprehension of tempo drills."
+              "expectedOutcome": "You should be able to discuss tempo drills with confidence, covering Tempo Drills, Start slow, Focus landing."
             },
             {
               "type": "apply",
@@ -1493,13 +1545,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"High-Speed Foot Switches\":",
+              "prompt": "Review: High-Speed Foot Switches — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Keep feet close to the ground to minimize effort",
-                "I can explain: Use ankle control to switch directions seamlessly",
-                "I can explain: Stay in sync with the beat to maintain rhythm"
+                "I can understand the core principles of high-speed foot switches",
+                "I can knowledge of keep feet close to the ground to minimize effort",
+                "I can the significance of rapidly alternate foot positions to create an illusion of floating movement",
+                "I understand the concept of \"High\"",
+                "I understand the concept of \"Speed Foot Switches\""
               ],
-              "expectedOutcome": "Full comprehension of high-speed foot switches."
+              "expectedOutcome": "You should be able to discuss high-speed foot switches with confidence, covering High, Speed Foot Switches, Keep feet."
             },
             {
               "type": "apply",
@@ -1539,14 +1593,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Speed Training: Core Fundamentals\":",
+              "prompt": "Review: Speed Training: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in speed training",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of speed training: core fundamentals",
+                "I can knowledge of define the key terminology used in speed training",
+                "I can assess readiness in speed training: core fundamentals",
+                "I understand the concept of \"Speed Training\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of speed training: core fundamentals."
+              "expectedOutcome": "You should be able to discuss speed training: core fundamentals with confidence, covering Speed Training, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -1570,7 +1625,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin speed training. Define the key terminology used in speed training"
         },
         {
           "id": "speed_training_practical_application",
@@ -1587,14 +1643,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Speed Training: Practical Application\":",
+              "prompt": "Review: Speed Training: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply speed training principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate foot speed techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of speed training: practical application",
+                "I can knowledge of apply speed training principles to realistic scenarios",
+                "I can assess readiness in speed training: practical application",
+                "I understand the concept of \"Speed Training\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of speed training: practical application."
+              "expectedOutcome": "You should be able to discuss speed training: practical application with confidence, covering Speed Training, Practical Application, Apply speed."
             },
             {
               "type": "apply",
@@ -1618,7 +1675,8 @@
             "Develop step-by-step",
             "Integrate foot",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying speed training concepts in real-world scenarios and operational contexts. Apply speed training principles to realistic scenarios"
         },
         {
           "id": "speed_training_advanced_techniques",
@@ -1635,14 +1693,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Speed Training: Advanced Techniques\":",
+              "prompt": "Review: Speed Training: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to speed training",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize foot speed and timing approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of speed training: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to speed training",
+                "I can assess readiness in speed training: advanced techniques",
+                "I understand the concept of \"Speed Training\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of speed training: advanced techniques."
+              "expectedOutcome": "You should be able to discuss speed training: advanced techniques with confidence, covering Speed Training, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -1666,7 +1725,8 @@
             "Combine multiple",
             "Synthesize foot",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within speed training for experienced practitioners. Master advanced methodologies specific to speed training"
         }
       ]
     },
@@ -1694,13 +1754,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Chest Pop\":",
+              "prompt": "Review: Chest Pop — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Contract and release chest muscles in sync with the bass hit",
-                "I can explain: Maintain a slight bend in the knees for better control",
-                "I can explain: Exaggerate movement for stronger impact"
+                "I can understand the core principles of chest pop",
+                "I can knowledge of contract and release chest muscles in sync with the bass hit",
+                "I can the significance of a sudden, sharp chest movement that accentuates bass-heavy beats",
+                "I understand the concept of \"Chest Pop\"",
+                "I understand the concept of \"Contract release\""
               ],
-              "expectedOutcome": "Full comprehension of chest pop."
+              "expectedOutcome": "You should be able to discuss chest pop with confidence, covering Chest Pop, Contract release, Maintain slight."
             },
             {
               "type": "apply",
@@ -1739,13 +1801,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Robotic Snap\":",
+              "prompt": "Review: Robotic Snap — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Use short, controlled arm and hand movements",
-                "I can explain: Lock joints momentarily for an instant freeze effect",
-                "I can explain: Focus on exaggerated stops to enhance illusion"
+                "I can understand the core principles of robotic snap",
+                "I can knowledge of use short, controlled arm and hand movements",
+                "I can the significance of quick, robotic movements that punctuate glitches in the music",
+                "I understand the concept of \"Robotic Snap\"",
+                "I understand the concept of \"short, controlled\""
               ],
-              "expectedOutcome": "Full comprehension of robotic snap."
+              "expectedOutcome": "You should be able to discuss robotic snap with confidence, covering Robotic Snap, short, controlled, Lock joints."
             },
             {
               "type": "apply",
@@ -1784,14 +1848,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Bass Drop Isolations: Core Fundamentals\":",
+              "prompt": "Review: Bass Drop Isolations: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in bass drop isolations",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of bass drop isolations: core fundamentals",
+                "I can knowledge of define the key terminology used in bass drop isolations",
+                "I can assess readiness in bass drop isolations: core fundamentals",
+                "I understand the concept of \"Bass Drop Isolations\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of bass drop isolations: core fundamentals."
+              "expectedOutcome": "You should be able to discuss bass drop isolations: core fundamentals with confidence, covering Bass Drop Isolations, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -1815,7 +1880,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin bass drop isolations. Define the key terminology used in bass drop isolations"
         },
         {
           "id": "bass_drop_isolations_practical_application",
@@ -1832,14 +1898,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Bass Drop Isolations: Practical Application\":",
+              "prompt": "Review: Bass Drop Isolations: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply bass drop isolations principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate precision control techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of bass drop isolations: practical application",
+                "I can knowledge of apply bass drop isolations principles to realistic scenarios",
+                "I can assess readiness in bass drop isolations: practical application",
+                "I understand the concept of \"Bass Drop Isolations\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of bass drop isolations: practical application."
+              "expectedOutcome": "You should be able to discuss bass drop isolations: practical application with confidence, covering Bass Drop Isolations, Practical Application, Apply bass."
             },
             {
               "type": "apply",
@@ -1863,7 +1930,8 @@
             "Develop step-by-step",
             "Integrate precision",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying bass drop isolations concepts in real-world scenarios and operational contexts. Apply bass drop isolations principles to realistic scenarios"
         },
         {
           "id": "bass_drop_isolations_advanced_techniques",
@@ -1880,14 +1948,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Bass Drop Isolations: Advanced Techniques\":",
+              "prompt": "Review: Bass Drop Isolations: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to bass drop isolations",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize precision control and impact timing approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of bass drop isolations: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to bass drop isolations",
+                "I can assess readiness in bass drop isolations: advanced techniques",
+                "I understand the concept of \"Bass Drop Isolations\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of bass drop isolations: advanced techniques."
+              "expectedOutcome": "You should be able to discuss bass drop isolations: advanced techniques with confidence, covering Bass Drop Isolations, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -1911,7 +1980,8 @@
             "Combine multiple",
             "Synthesize precision",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within bass drop isolations for experienced practitioners. Master advanced methodologies specific to bass drop isolations"
         }
       ]
     },
@@ -1939,13 +2009,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Drag Step\":",
+              "prompt": "Review: Drag Step — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Slow down each movement while maintaining smoothness",
-                "I can explain: Use exaggerated arm swings to create weight illusion",
-                "I can explain: Sync motion perfectly with slow breakdowns in the music"
+                "I can understand the core principles of drag step",
+                "I can knowledge of slow down each movement while maintaining smoothness",
+                "I can the significance of a technique that simulates the feeling of moving underwater in slow motion",
+                "I understand the concept of \"Drag Step\"",
+                "I understand the concept of \"Slow movement\""
               ],
-              "expectedOutcome": "Full comprehension of drag step."
+              "expectedOutcome": "You should be able to discuss drag step with confidence, covering Drag Step, Slow movement, exaggerated arm."
             },
             {
               "type": "apply",
@@ -1984,13 +2056,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Frame-by-Frame Control\":",
+              "prompt": "Review: Frame-by-Frame Control — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Hold each position for a brief second before transitioning",
-                "I can explain: Use precise pauses to mimic video frame rates",
-                "I can explain: Focus on finger and hand movements for added detail"
+                "I can understand the core principles of frame-by-frame control",
+                "I can knowledge of hold each position for a brief second before transitioning",
+                "I can the significance of breaking down movement into separate 'frames' to simulate a stop-motion effect",
+                "I understand the concept of \"Frame\"",
+                "I understand the concept of \"Frame Control\""
               ],
-              "expectedOutcome": "Full comprehension of frame-by-frame control."
+              "expectedOutcome": "You should be able to discuss frame-by-frame control with confidence, covering Frame, Frame Control, Hold position."
             },
             {
               "type": "apply",
@@ -2030,14 +2104,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Slow Motion Effects: Core Fundamentals\":",
+              "prompt": "Review: Slow Motion Effects: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in slow motion effects",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of slow motion effects: core fundamentals",
+                "I can knowledge of define the key terminology used in slow motion effects",
+                "I can assess readiness in slow motion effects: core fundamentals",
+                "I understand the concept of \"Slow Motion Effects\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of slow motion effects: core fundamentals."
+              "expectedOutcome": "You should be able to discuss slow motion effects: core fundamentals with confidence, covering Slow Motion Effects, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -2061,7 +2136,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin slow motion effects. Define the key terminology used in slow motion effects"
         },
         {
           "id": "slow_motion_effects_practical_application",
@@ -2078,14 +2154,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Slow Motion Effects: Practical Application\":",
+              "prompt": "Review: Slow Motion Effects: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply slow motion effects principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate illusion techniques techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of slow motion effects: practical application",
+                "I can knowledge of apply slow motion effects principles to realistic scenarios",
+                "I can assess readiness in slow motion effects: practical application",
+                "I understand the concept of \"Slow Motion Effects\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of slow motion effects: practical application."
+              "expectedOutcome": "You should be able to discuss slow motion effects: practical application with confidence, covering Slow Motion Effects, Practical Application, Apply slow."
             },
             {
               "type": "apply",
@@ -2109,7 +2186,8 @@
             "Develop step-by-step",
             "Integrate illusion",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying slow motion effects concepts in real-world scenarios and operational contexts. Apply slow motion effects principles to realistic scenarios"
         },
         {
           "id": "slow_motion_effects_advanced_techniques",
@@ -2126,14 +2204,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Slow Motion Effects: Advanced Techniques\":",
+              "prompt": "Review: Slow Motion Effects: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to slow motion effects",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize illusion techniques and smooth flow approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of slow motion effects: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to slow motion effects",
+                "I can assess readiness in slow motion effects: advanced techniques",
+                "I understand the concept of \"Slow Motion Effects\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of slow motion effects: advanced techniques."
+              "expectedOutcome": "You should be able to discuss slow motion effects: advanced techniques with confidence, covering Slow Motion Effects, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -2157,7 +2236,8 @@
             "Combine multiple",
             "Synthesize illusion",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within slow motion effects for experienced practitioners. Master advanced methodologies specific to slow motion effects"
         }
       ]
     },
@@ -2185,13 +2265,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Snap Open\":",
+              "prompt": "Review: Snap Open — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Hold the fan loosely before the flick",
-                "I can explain: Use a sharp, controlled wrist movement",
-                "I can explain: Ensure full extension for maximum effect"
+                "I can understand the core principles of snap open",
+                "I can knowledge of hold the fan loosely before the flick",
+                "I can the significance of a quick wrist flick to open the fan instantly with a strong visual impact",
+                "I understand the concept of \"Snap Open\"",
+                "I understand the concept of \"Hold fan\""
               ],
-              "expectedOutcome": "Full comprehension of snap open."
+              "expectedOutcome": "You should be able to discuss snap open with confidence, covering Snap Open, Hold fan, sharp, controlled."
             },
             {
               "type": "apply",
@@ -2230,13 +2312,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Wrist Twist Flourish\":",
+              "prompt": "Review: Wrist Twist Flourish — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Rotate the wrist smoothly while holding the fan",
-                "I can explain: Use small circles to maintain momentum",
-                "I can explain: Experiment with both clockwise and counterclockwise motions"
+                "I can understand the core principles of wrist twist flourish",
+                "I can knowledge of rotate the wrist smoothly while holding the fan",
+                "I can the significance of a rotational movement that creates a fluid spinning motion with the fan",
+                "I understand the concept of \"Wrist Twist Flourish\"",
+                "I understand the concept of \"Rotate wrist\""
               ],
-              "expectedOutcome": "Full comprehension of wrist twist flourish."
+              "expectedOutcome": "You should be able to discuss wrist twist flourish with confidence, covering Wrist Twist Flourish, Rotate wrist, small circles."
             },
             {
               "type": "apply",
@@ -2275,14 +2359,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Precision Fan Techniques: Core Fundamentals\":",
+              "prompt": "Review: Precision Fan Techniques: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in precision fan techniques",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of precision fan techniques: core fundamentals",
+                "I can knowledge of define the key terminology used in precision fan techniques",
+                "I can assess readiness in precision fan techniques: core fundamentals",
+                "I understand the concept of \"Precision Fan Techniques\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of precision fan techniques: core fundamentals."
+              "expectedOutcome": "You should be able to discuss precision fan techniques: core fundamentals with confidence, covering Precision Fan Techniques, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -2306,7 +2391,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin precision fan techniques. Define the key terminology used in precision fan techniques"
         },
         {
           "id": "precision_fan_techniques_practical_application",
@@ -2323,14 +2409,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Precision Fan Techniques: Practical Application\":",
+              "prompt": "Review: Precision Fan Techniques: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply precision fan techniques principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate hand control techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of precision fan techniques: practical application",
+                "I can knowledge of apply precision fan techniques principles to realistic scenarios",
+                "I can assess readiness in precision fan techniques: practical application",
+                "I understand the concept of \"Precision Fan Techniques\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of precision fan techniques: practical application."
+              "expectedOutcome": "You should be able to discuss precision fan techniques: practical application with confidence, covering Precision Fan Techniques, Practical Application, Apply precision."
             },
             {
               "type": "apply",
@@ -2354,7 +2441,8 @@
             "Develop step-by-step",
             "Integrate hand",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying precision fan techniques concepts in real-world scenarios and operational contexts. Apply precision fan techniques principles to realistic scenarios"
         },
         {
           "id": "precision_fan_techniques_advanced_techniques",
@@ -2371,14 +2459,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Precision Fan Techniques: Advanced Techniques\":",
+              "prompt": "Review: Precision Fan Techniques: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to precision fan techniques",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize hand control and fan manipulation approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of precision fan techniques: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to precision fan techniques",
+                "I can assess readiness in precision fan techniques: advanced techniques",
+                "I understand the concept of \"Precision Fan Techniques\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of precision fan techniques: advanced techniques."
+              "expectedOutcome": "You should be able to discuss precision fan techniques: advanced techniques with confidence, covering Precision Fan Techniques, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -2402,7 +2491,8 @@
             "Combine multiple",
             "Synthesize hand",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within precision fan techniques for experienced practitioners. Master advanced methodologies specific to precision fan techniques"
         }
       ]
     },
@@ -2430,13 +2520,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Basic Veil Twirl\":",
+              "prompt": "Review: Basic Veil Twirl — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Keep the arms extended while twirling",
-                "I can explain: Maintain a relaxed grip on the veil",
-                "I can explain: Use breath control to enhance fluidity"
+                "I can understand the core principles of basic veil twirl",
+                "I can knowledge of keep the arms extended while twirling",
+                "I can the significance of a smooth and controlled twirl to create flowing veil movements",
+                "I understand the concept of \"Basic Veil Twirl\"",
+                "I understand the concept of \"Keep arms\""
               ],
-              "expectedOutcome": "Full comprehension of basic veil twirl."
+              "expectedOutcome": "You should be able to discuss basic veil twirl with confidence, covering Basic Veil Twirl, Keep arms, Maintain relaxed."
             },
             {
               "type": "apply",
@@ -2475,13 +2567,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Overhead Swirls\":",
+              "prompt": "Review: Overhead Swirls — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Lift the arms and keep the veil extended",
-                "I can explain: Move in a controlled circular motion",
-                "I can explain: Ensure even weight distribution for a balanced effect"
+                "I can understand the core principles of overhead swirls",
+                "I can knowledge of lift the arms and keep the veil extended",
+                "I can the significance of a circular motion above the head for dramatic veil movement",
+                "I understand the concept of \"Overhead Swirls\"",
+                "I understand the concept of \"Lift arms\""
               ],
-              "expectedOutcome": "Full comprehension of overhead swirls."
+              "expectedOutcome": "You should be able to discuss overhead swirls with confidence, covering Overhead Swirls, Lift arms, Move controlled."
             },
             {
               "type": "apply",
@@ -2520,14 +2614,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Veil Twirls: Core Fundamentals\":",
+              "prompt": "Review: Veil Twirls: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in veil twirls",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of veil twirls: core fundamentals",
+                "I can knowledge of define the key terminology used in veil twirls",
+                "I can assess readiness in veil twirls: core fundamentals",
+                "I understand the concept of \"Veil Twirls\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of veil twirls: core fundamentals."
+              "expectedOutcome": "You should be able to discuss veil twirls: core fundamentals with confidence, covering Veil Twirls, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -2551,7 +2646,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin veil twirls. Define the key terminology used in veil twirls"
         },
         {
           "id": "veil_twirls_practical_application",
@@ -2568,14 +2664,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Veil Twirls: Practical Application\":",
+              "prompt": "Review: Veil Twirls: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply veil twirls principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate expressiveness techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of veil twirls: practical application",
+                "I can knowledge of apply veil twirls principles to realistic scenarios",
+                "I can assess readiness in veil twirls: practical application",
+                "I understand the concept of \"Veil Twirls\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of veil twirls: practical application."
+              "expectedOutcome": "You should be able to discuss veil twirls: practical application with confidence, covering Veil Twirls, Practical Application, Apply veil."
             },
             {
               "type": "apply",
@@ -2599,7 +2696,8 @@
             "Develop step-by-step",
             "Integrate expressiveness",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying veil twirls concepts in real-world scenarios and operational contexts. Apply veil twirls principles to realistic scenarios"
         },
         {
           "id": "veil_twirls_advanced_techniques",
@@ -2616,14 +2714,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Veil Twirls: Advanced Techniques\":",
+              "prompt": "Review: Veil Twirls: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to veil twirls",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize expressiveness and continuous motion approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of veil twirls: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to veil twirls",
+                "I can assess readiness in veil twirls: advanced techniques",
+                "I understand the concept of \"Veil Twirls\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of veil twirls: advanced techniques."
+              "expectedOutcome": "You should be able to discuss veil twirls: advanced techniques with confidence, covering Veil Twirls, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -2647,7 +2746,8 @@
             "Combine multiple",
             "Synthesize expressiveness",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within veil twirls for experienced practitioners. Master advanced methodologies specific to veil twirls"
         }
       ]
     },
@@ -2675,13 +2775,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Basic Bounce Step\":",
+              "prompt": "Review: Basic Bounce Step — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Keep knees soft to absorb movement",
-                "I can explain: Bounce in time with the beat",
-                "I can explain: Use slight weight shifts for variations"
+                "I can understand the core principles of basic bounce step",
+                "I can knowledge of keep knees soft to absorb movement",
+                "I can the significance of a continuous up-and-down motion that helps maintain a fluid groove",
+                "I understand the concept of \"Basic Bounce Step\"",
+                "I understand the concept of \"Keep knees\""
               ],
-              "expectedOutcome": "Full comprehension of basic bounce step."
+              "expectedOutcome": "You should be able to discuss basic bounce step with confidence, covering Basic Bounce Step, Keep knees, Bounce time."
             },
             {
               "type": "apply",
@@ -2720,13 +2822,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Dynamic Bounce Variations\":",
+              "prompt": "Review: Dynamic Bounce Variations — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Increase bounce height for emphasis",
-                "I can explain: Integrate small hops for variation",
-                "I can explain: Experiment with side-to-side weight shifts"
+                "I can understand the core principles of dynamic bounce variations",
+                "I can knowledge of increase bounce height for emphasis",
+                "I can the significance of add intensity and foot patterns to the bounce for a unique freestyle style",
+                "I understand the concept of \"Dynamic Bounce Variations\"",
+                "I understand the concept of \"Increase bounce\""
               ],
-              "expectedOutcome": "Full comprehension of dynamic bounce variations."
+              "expectedOutcome": "You should be able to discuss dynamic bounce variations with confidence, covering Dynamic Bounce Variations, Increase bounce, Integrate small."
             },
             {
               "type": "apply",
@@ -2765,14 +2869,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Body Bounce Rhythm: Core Fundamentals\":",
+              "prompt": "Review: Body Bounce Rhythm: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in body bounce rhythm",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of body bounce rhythm: core fundamentals",
+                "I can knowledge of define the key terminology used in body bounce rhythm",
+                "I can assess readiness in body bounce rhythm: core fundamentals",
+                "I understand the concept of \"Body Bounce Rhythm\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of body bounce rhythm: core fundamentals."
+              "expectedOutcome": "You should be able to discuss body bounce rhythm: core fundamentals with confidence, covering Body Bounce Rhythm, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -2796,7 +2901,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin body bounce rhythm. Define the key terminology used in body bounce rhythm"
         },
         {
           "id": "body_bounce_rhythm_practical_application",
@@ -2813,14 +2919,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Body Bounce Rhythm: Practical Application\":",
+              "prompt": "Review: Body Bounce Rhythm: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply body bounce rhythm principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate beat synchronization techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of body bounce rhythm: practical application",
+                "I can knowledge of apply body bounce rhythm principles to realistic scenarios",
+                "I can assess readiness in body bounce rhythm: practical application",
+                "I understand the concept of \"Body Bounce Rhythm\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of body bounce rhythm: practical application."
+              "expectedOutcome": "You should be able to discuss body bounce rhythm: practical application with confidence, covering Body Bounce Rhythm, Practical Application, Apply body."
             },
             {
               "type": "apply",
@@ -2844,7 +2951,8 @@
             "Develop step-by-step",
             "Integrate beat",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying body bounce rhythm concepts in real-world scenarios and operational contexts. Apply body bounce rhythm principles to realistic scenarios"
         },
         {
           "id": "body_bounce_rhythm_advanced_techniques",
@@ -2861,14 +2969,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Body Bounce Rhythm: Advanced Techniques\":",
+              "prompt": "Review: Body Bounce Rhythm: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to body bounce rhythm",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize beat synchronization and energy control approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of body bounce rhythm: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to body bounce rhythm",
+                "I can assess readiness in body bounce rhythm: advanced techniques",
+                "I understand the concept of \"Body Bounce Rhythm\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of body bounce rhythm: advanced techniques."
+              "expectedOutcome": "You should be able to discuss body bounce rhythm: advanced techniques with confidence, covering Body Bounce Rhythm, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -2892,7 +3001,8 @@
             "Combine multiple",
             "Synthesize beat",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within body bounce rhythm for experienced practitioners. Master advanced methodologies specific to body bounce rhythm"
         }
       ]
     },
@@ -2920,13 +3030,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Hand to Foot Sync\":",
+              "prompt": "Review: Hand to Foot Sync — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Use arm waves to guide foot movements",
-                "I can explain: Keep shoulders relaxed for better fluidity",
-                "I can explain: Time transitions with beat changes"
+                "I can understand the core principles of hand to foot sync",
+                "I can knowledge of use arm waves to guide foot movements",
+                "I can the significance of transition movements between upper and lower body flow",
+                "I understand the concept of \"Hand Foot Sync\"",
+                "I understand the concept of \"arm waves\""
               ],
-              "expectedOutcome": "Full comprehension of hand to foot sync."
+              "expectedOutcome": "You should be able to discuss hand to foot sync with confidence, covering Hand Foot Sync, arm waves, Keep shoulders."
             },
             {
               "type": "apply",
@@ -2965,13 +3077,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Tempo Shift Adjustment\":",
+              "prompt": "Review: Tempo Shift Adjustment — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Slow down or speed up movement gradually",
-                "I can explain: Use pauses and accents to mark transitions",
-                "I can explain: Stay aware of the music's progression"
+                "I can understand the core principles of tempo shift adjustment",
+                "I can knowledge of slow down or speed up movement gradually",
+                "I can the significance of adjust speed and intensity smoothly to match changes in the music",
+                "I understand the concept of \"Tempo Shift Adjustment\"",
+                "I understand the concept of \"Slow speed\""
               ],
-              "expectedOutcome": "Full comprehension of tempo shift adjustment."
+              "expectedOutcome": "You should be able to discuss tempo shift adjustment with confidence, covering Tempo Shift Adjustment, Slow speed, pauses accents."
             },
             {
               "type": "apply",
@@ -3010,14 +3124,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Flow Transitions: Core Fundamentals\":",
+              "prompt": "Review: Flow Transitions: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in flow transitions",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of flow transitions: core fundamentals",
+                "I can knowledge of define the key terminology used in flow transitions",
+                "I can assess readiness in flow transitions: core fundamentals",
+                "I understand the concept of \"Flow Transitions\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of flow transitions: core fundamentals."
+              "expectedOutcome": "You should be able to discuss flow transitions: core fundamentals with confidence, covering Flow Transitions, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -3041,7 +3156,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin flow transitions. Define the key terminology used in flow transitions"
         },
         {
           "id": "flow_transitions_practical_application",
@@ -3058,14 +3174,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Flow Transitions: Practical Application\":",
+              "prompt": "Review: Flow Transitions: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply flow transitions principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate smooth transitions techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of flow transitions: practical application",
+                "I can knowledge of apply flow transitions principles to realistic scenarios",
+                "I can assess readiness in flow transitions: practical application",
+                "I understand the concept of \"Flow Transitions\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of flow transitions: practical application."
+              "expectedOutcome": "You should be able to discuss flow transitions: practical application with confidence, covering Flow Transitions, Practical Application, Apply flow."
             },
             {
               "type": "apply",
@@ -3089,7 +3206,8 @@
             "Develop step-by-step",
             "Integrate smooth",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying flow transitions concepts in real-world scenarios and operational contexts. Apply flow transitions principles to realistic scenarios"
         },
         {
           "id": "flow_transitions_advanced_techniques",
@@ -3106,14 +3224,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Flow Transitions: Advanced Techniques\":",
+              "prompt": "Review: Flow Transitions: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to flow transitions",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize smooth transitions and freestyle creativity approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of flow transitions: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to flow transitions",
+                "I can assess readiness in flow transitions: advanced techniques",
+                "I understand the concept of \"Flow Transitions\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of flow transitions: advanced techniques."
+              "expectedOutcome": "You should be able to discuss flow transitions: advanced techniques with confidence, covering Flow Transitions, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -3137,7 +3256,8 @@
             "Combine multiple",
             "Synthesize smooth",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within flow transitions for experienced practitioners. Master advanced methodologies specific to flow transitions"
         }
       ]
     },
@@ -3165,13 +3285,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Basic Box Formation\":",
+              "prompt": "Review: Basic Box Formation — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Keep fingers straight and locked",
-                "I can explain: Maintain sharp 90-degree angles",
-                "I can explain: Use slow, controlled movements"
+                "I can understand the core principles of basic box formation",
+                "I can knowledge of keep fingers straight and locked",
+                "I can the significance of learn the fundamental hand positioning for creating box shapes",
+                "I understand the concept of \"Basic Box Formation\"",
+                "I understand the concept of \"Keep fingers\""
               ],
-              "expectedOutcome": "Full comprehension of basic box formation."
+              "expectedOutcome": "You should be able to discuss basic box formation with confidence, covering Basic Box Formation, Keep fingers, Maintain sharp."
             },
             {
               "type": "apply",
@@ -3210,13 +3332,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Box Rotation Transitions\":",
+              "prompt": "Review: Box Rotation Transitions — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Rotate boxes smoothly without breaking structure",
-                "I can explain: Use elbow control for fluidity",
-                "I can explain: Experiment with different speed variations"
+                "I can understand the core principles of box rotation transitions",
+                "I can knowledge of rotate boxes smoothly without breaking structure",
+                "I can the significance of practice moving box formations while maintaining clean angles",
+                "I understand the concept of \"Box Rotation Transitions\"",
+                "I understand the concept of \"Rotate boxes\""
               ],
-              "expectedOutcome": "Full comprehension of box rotation transitions."
+              "expectedOutcome": "You should be able to discuss box rotation transitions with confidence, covering Box Rotation Transitions, Rotate boxes, elbow control."
             },
             {
               "type": "apply",
@@ -3255,14 +3379,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Box Tutting Patterns: Core Fundamentals\":",
+              "prompt": "Review: Box Tutting Patterns: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in box tutting patterns",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of box tutting patterns: core fundamentals",
+                "I can knowledge of define the key terminology used in box tutting patterns",
+                "I can assess readiness in box tutting patterns: core fundamentals",
+                "I understand the concept of \"Box Tutting Patterns\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of box tutting patterns: core fundamentals."
+              "expectedOutcome": "You should be able to discuss box tutting patterns: core fundamentals with confidence, covering Box Tutting Patterns, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -3286,7 +3411,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin box tutting patterns. Define the key terminology used in box tutting patterns"
         },
         {
           "id": "box_tutting_patterns_practical_application",
@@ -3303,14 +3429,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Box Tutting Patterns: Practical Application\":",
+              "prompt": "Review: Box Tutting Patterns: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply box tutting patterns principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate precision techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of box tutting patterns: practical application",
+                "I can knowledge of apply box tutting patterns principles to realistic scenarios",
+                "I can assess readiness in box tutting patterns: practical application",
+                "I understand the concept of \"Box Tutting Patterns\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of box tutting patterns: practical application."
+              "expectedOutcome": "You should be able to discuss box tutting patterns: practical application with confidence, covering Box Tutting Patterns, Practical Application, Apply box."
             },
             {
               "type": "apply",
@@ -3334,7 +3461,8 @@
             "Develop step-by-step",
             "Integrate precision",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying box tutting patterns concepts in real-world scenarios and operational contexts. Apply box tutting patterns principles to realistic scenarios"
         },
         {
           "id": "box_tutting_patterns_advanced_techniques",
@@ -3351,14 +3479,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Box Tutting Patterns: Advanced Techniques\":",
+              "prompt": "Review: Box Tutting Patterns: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to box tutting patterns",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize precision and geometric hand control approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of box tutting patterns: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to box tutting patterns",
+                "I can assess readiness in box tutting patterns: advanced techniques",
+                "I understand the concept of \"Box Tutting Patterns\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of box tutting patterns: advanced techniques."
+              "expectedOutcome": "You should be able to discuss box tutting patterns: advanced techniques with confidence, covering Box Tutting Patterns, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -3382,7 +3511,8 @@
             "Combine multiple",
             "Synthesize precision",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within box tutting patterns for experienced practitioners. Master advanced methodologies specific to box tutting patterns"
         }
       ]
     },
@@ -3410,13 +3540,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Wave Isolation\":",
+              "prompt": "Review: Wave Isolation — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Move fingers in a controlled sequence",
-                "I can explain: Ensure smooth motion between each joint",
-                "I can explain: Practice slow-to-fast transitions for illusion effect"
+                "I can understand the core principles of wave isolation",
+                "I can knowledge of move fingers in a controlled sequence",
+                "I can the significance of control each finger independently to create seamless wave-like effects",
+                "I understand the concept of \"Wave Isolation\"",
+                "I understand the concept of \"Move fingers\""
               ],
-              "expectedOutcome": "Full comprehension of wave isolation."
+              "expectedOutcome": "You should be able to discuss wave isolation with confidence, covering Wave Isolation, Move fingers, Ensure smooth."
             },
             {
               "type": "apply",
@@ -3455,13 +3587,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Knuckle Rolls\":",
+              "prompt": "Review: Knuckle Rolls — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Engage finger joints individually",
-                "I can explain: Focus on creating a fluid rolling effect",
-                "I can explain: Combine with wrist movements for added complexity"
+                "I can understand the core principles of knuckle rolls",
+                "I can knowledge of engage finger joints individually",
+                "I can the significance of use knuckle-based finger rolls to create advanced illusionary effects",
+                "I understand the concept of \"Knuckle Rolls\"",
+                "I understand the concept of \"Engage finger\""
               ],
-              "expectedOutcome": "Full comprehension of knuckle rolls."
+              "expectedOutcome": "You should be able to discuss knuckle rolls with confidence, covering Knuckle Rolls, Engage finger, Focus creating."
             },
             {
               "type": "apply",
@@ -3500,14 +3634,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Finger Isolations: Core Fundamentals\":",
+              "prompt": "Review: Finger Isolations: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in finger isolations",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of finger isolations: core fundamentals",
+                "I can knowledge of define the key terminology used in finger isolations",
+                "I can assess readiness in finger isolations: core fundamentals",
+                "I understand the concept of \"Finger Isolations\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of finger isolations: core fundamentals."
+              "expectedOutcome": "You should be able to discuss finger isolations: core fundamentals with confidence, covering Finger Isolations, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -3531,7 +3666,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin finger isolations. Define the key terminology used in finger isolations"
         },
         {
           "id": "finger_isolations_practical_application",
@@ -3548,14 +3684,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Finger Isolations: Practical Application\":",
+              "prompt": "Review: Finger Isolations: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply finger isolations principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate finger dexterity techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of finger isolations: practical application",
+                "I can knowledge of apply finger isolations principles to realistic scenarios",
+                "I can assess readiness in finger isolations: practical application",
+                "I understand the concept of \"Finger Isolations\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of finger isolations: practical application."
+              "expectedOutcome": "You should be able to discuss finger isolations: practical application with confidence, covering Finger Isolations, Practical Application, Apply finger."
             },
             {
               "type": "apply",
@@ -3579,7 +3716,8 @@
             "Develop step-by-step",
             "Integrate finger",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying finger isolations concepts in real-world scenarios and operational contexts. Apply finger isolations principles to realistic scenarios"
         },
         {
           "id": "finger_isolations_advanced_techniques",
@@ -3596,14 +3734,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Finger Isolations: Advanced Techniques\":",
+              "prompt": "Review: Finger Isolations: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to finger isolations",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize finger dexterity and micro-movements approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of finger isolations: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to finger isolations",
+                "I can assess readiness in finger isolations: advanced techniques",
+                "I understand the concept of \"Finger Isolations\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of finger isolations: advanced techniques."
+              "expectedOutcome": "You should be able to discuss finger isolations: advanced techniques with confidence, covering Finger Isolations, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -3627,7 +3766,8 @@
             "Combine multiple",
             "Synthesize finger",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within finger isolations for experienced practitioners. Master advanced methodologies specific to finger isolations"
         }
       ]
     },
@@ -3655,13 +3795,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Linear Arm Strikes\":",
+              "prompt": "Review: Linear Arm Strikes — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Keep arms stiff and movements sharp",
-                "I can explain: Use shoulder and elbow control for precision",
-                "I can explain: Match each strike to the beat for better sync"
+                "I can understand the core principles of linear arm strikes",
+                "I can knowledge of keep arms stiff and movements sharp",
+                "I can the significance of sharp, controlled arm movements with precise stopping points",
+                "I understand the concept of \"Linear Arm Strikes\"",
+                "I understand the concept of \"Keep arms\""
               ],
-              "expectedOutcome": "Full comprehension of linear arm strikes."
+              "expectedOutcome": "You should be able to discuss linear arm strikes with confidence, covering Linear Arm Strikes, Keep arms, shoulder elbow."
             },
             {
               "type": "apply",
@@ -3700,13 +3842,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Synchronized Double Strikes\":",
+              "prompt": "Review: Synchronized Double Strikes — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Start with slow, controlled movement before increasing speed",
-                "I can explain: Keep motions robotic with clear stopping points",
-                "I can explain: Engage core for stability and balance"
+                "I can understand the core principles of synchronized double strikes",
+                "I can knowledge of start with slow, controlled movement before increasing speed",
+                "I can the significance of moving both arms in unison while maintaining mechanical precision",
+                "I understand the concept of \"Synchronized Double Strikes\"",
+                "I understand the concept of \"Start slow,\""
               ],
-              "expectedOutcome": "Full comprehension of synchronized double strikes."
+              "expectedOutcome": "You should be able to discuss synchronized double strikes with confidence, covering Synchronized Double Strikes, Start slow,, Keep motions."
             },
             {
               "type": "apply",
@@ -3745,14 +3889,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Arm Synchronization: Core Fundamentals\":",
+              "prompt": "Review: Arm Synchronization: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in arm synchronization",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of arm synchronization: core fundamentals",
+                "I can knowledge of define the key terminology used in arm synchronization",
+                "I can assess readiness in arm synchronization: core fundamentals",
+                "I understand the concept of \"Arm Synchronization\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of arm synchronization: core fundamentals."
+              "expectedOutcome": "You should be able to discuss arm synchronization: core fundamentals with confidence, covering Arm Synchronization, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -3776,7 +3921,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin arm synchronization. Define the key terminology used in arm synchronization"
         },
         {
           "id": "arm_synchronization_practical_application",
@@ -3793,14 +3939,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Arm Synchronization: Practical Application\":",
+              "prompt": "Review: Arm Synchronization: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply arm synchronization principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate precision techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of arm synchronization: practical application",
+                "I can knowledge of apply arm synchronization principles to realistic scenarios",
+                "I can assess readiness in arm synchronization: practical application",
+                "I understand the concept of \"Arm Synchronization\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of arm synchronization: practical application."
+              "expectedOutcome": "You should be able to discuss arm synchronization: practical application with confidence, covering Arm Synchronization, Practical Application, Apply arm."
             },
             {
               "type": "apply",
@@ -3824,7 +3971,8 @@
             "Develop step-by-step",
             "Integrate precision",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying arm synchronization concepts in real-world scenarios and operational contexts. Apply arm synchronization principles to realistic scenarios"
         },
         {
           "id": "arm_synchronization_advanced_techniques",
@@ -3841,14 +3989,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Arm Synchronization: Advanced Techniques\":",
+              "prompt": "Review: Arm Synchronization: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to arm synchronization",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize precision and mechanical movement approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of arm synchronization: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to arm synchronization",
+                "I can assess readiness in arm synchronization: advanced techniques",
+                "I understand the concept of \"Arm Synchronization\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of arm synchronization: advanced techniques."
+              "expectedOutcome": "You should be able to discuss arm synchronization: advanced techniques with confidence, covering Arm Synchronization, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -3872,7 +4021,8 @@
             "Combine multiple",
             "Synthesize precision",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within arm synchronization for experienced practitioners. Master advanced methodologies specific to arm synchronization"
         }
       ]
     },
@@ -3900,13 +4050,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Stomp Step\":",
+              "prompt": "Review: Stomp Step — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Keep knees slightly bent for shock absorption",
-                "I can explain: Land on the beat for maximum impact",
-                "I can explain: Use controlled energy to avoid excessive strain"
+                "I can understand the core principles of stomp step",
+                "I can knowledge of keep knees slightly bent for shock absorption",
+                "I can the significance of a strong, grounded stomp movement performed in sync with industrial beats",
+                "I understand the concept of \"Stomp Step\"",
+                "I understand the concept of \"Keep knees\""
               ],
-              "expectedOutcome": "Full comprehension of stomp step."
+              "expectedOutcome": "You should be able to discuss stomp step with confidence, covering Stomp Step, Keep knees, Land beat."
             },
             {
               "type": "apply",
@@ -3945,13 +4097,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Cross Stomp Transition\":",
+              "prompt": "Review: Cross Stomp Transition — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Shift weight smoothly between feet",
-                "I can explain: Time each movement precisely with the music",
-                "I can explain: Experiment with different tempos to build endurance"
+                "I can understand the core principles of cross stomp transition",
+                "I can knowledge of shift weight smoothly between feet",
+                "I can the significance of a footwork transition combining stomp steps with side-to-side movement",
+                "I understand the concept of \"Cross Stomp Transition\"",
+                "I understand the concept of \"Shift weight\""
               ],
-              "expectedOutcome": "Full comprehension of cross stomp transition."
+              "expectedOutcome": "You should be able to discuss cross stomp transition with confidence, covering Cross Stomp Transition, Shift weight, Time movement."
             },
             {
               "type": "apply",
@@ -3990,14 +4144,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Footwork Patterns: Core Fundamentals\":",
+              "prompt": "Review: Footwork Patterns: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in footwork patterns",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of footwork patterns: core fundamentals",
+                "I can knowledge of define the key terminology used in footwork patterns",
+                "I can assess readiness in footwork patterns: core fundamentals",
+                "I understand the concept of \"Footwork Patterns\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of footwork patterns: core fundamentals."
+              "expectedOutcome": "You should be able to discuss footwork patterns: core fundamentals with confidence, covering Footwork Patterns, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -4021,7 +4176,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin footwork patterns. Define the key terminology used in footwork patterns"
         },
         {
           "id": "footwork_patterns_practical_application",
@@ -4038,14 +4194,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Footwork Patterns: Practical Application\":",
+              "prompt": "Review: Footwork Patterns: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply footwork patterns principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate leg strength techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of footwork patterns: practical application",
+                "I can knowledge of apply footwork patterns principles to realistic scenarios",
+                "I can assess readiness in footwork patterns: practical application",
+                "I understand the concept of \"Footwork Patterns\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of footwork patterns: practical application."
+              "expectedOutcome": "You should be able to discuss footwork patterns: practical application with confidence, covering Footwork Patterns, Practical Application, Apply footwork."
             },
             {
               "type": "apply",
@@ -4069,7 +4226,8 @@
             "Develop step-by-step",
             "Integrate leg",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying footwork patterns concepts in real-world scenarios and operational contexts. Apply footwork patterns principles to realistic scenarios"
         },
         {
           "id": "footwork_patterns_advanced_techniques",
@@ -4086,14 +4244,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Footwork Patterns: Advanced Techniques\":",
+              "prompt": "Review: Footwork Patterns: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to footwork patterns",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize leg strength and beat synchronization approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of footwork patterns: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to footwork patterns",
+                "I can assess readiness in footwork patterns: advanced techniques",
+                "I understand the concept of \"Footwork Patterns\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of footwork patterns: advanced techniques."
+              "expectedOutcome": "You should be able to discuss footwork patterns: advanced techniques with confidence, covering Footwork Patterns, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -4117,7 +4276,8 @@
             "Combine multiple",
             "Synthesize leg",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within footwork patterns for experienced practitioners. Master advanced methodologies specific to footwork patterns"
         }
       ]
     },
@@ -4145,13 +4305,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Basic Jump Kick\":",
+              "prompt": "Review: Basic Jump Kick — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Kick forward with one foot while hopping off the other",
-                "I can explain: Keep your core engaged for balance",
-                "I can explain: Maintain a steady pace with the beat"
+                "I can understand the core principles of basic jump kick",
+                "I can knowledge of kick forward with one foot while hopping off the other",
+                "I can the significance of a simple alternating kick executed in rhythm with the beat",
+                "I understand the concept of \"Basic Jump Kick\"",
+                "I understand the concept of \"Kick forward\""
               ],
-              "expectedOutcome": "Full comprehension of basic jump kick."
+              "expectedOutcome": "You should be able to discuss basic jump kick with confidence, covering Basic Jump Kick, Kick forward, Keep core."
             },
             {
               "type": "apply",
@@ -4190,13 +4352,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Cross-Kick Transition\":",
+              "prompt": "Review: Cross-Kick Transition — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Lift one leg and cross it over the other while jumping",
-                "I can explain: Land softly and immediately transition into the next kick",
-                "I can explain: Use ankle and knee control to avoid impact stress"
+                "I can understand the core principles of cross-kick transition",
+                "I can knowledge of lift one leg and cross it over the other while jumping",
+                "I can the significance of a more advanced variation that involves crossing the legs mid-air",
+                "I understand the concept of \"Cross\"",
+                "I understand the concept of \"Kick Transition\""
               ],
-              "expectedOutcome": "Full comprehension of cross-kick transition."
+              "expectedOutcome": "You should be able to discuss cross-kick transition with confidence, covering Cross, Kick Transition, Lift one."
             },
             {
               "type": "apply",
@@ -4236,14 +4400,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Kicking Sequences: Core Fundamentals\":",
+              "prompt": "Review: Kicking Sequences: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in kicking sequences",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of kicking sequences: core fundamentals",
+                "I can knowledge of define the key terminology used in kicking sequences",
+                "I can assess readiness in kicking sequences: core fundamentals",
+                "I understand the concept of \"Kicking Sequences\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of kicking sequences: core fundamentals."
+              "expectedOutcome": "You should be able to discuss kicking sequences: core fundamentals with confidence, covering Kicking Sequences, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -4267,7 +4432,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin kicking sequences. Define the key terminology used in kicking sequences"
         },
         {
           "id": "kicking_sequences_practical_application",
@@ -4284,14 +4450,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Kicking Sequences: Practical Application\":",
+              "prompt": "Review: Kicking Sequences: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply kicking sequences principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate leg coordination techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of kicking sequences: practical application",
+                "I can knowledge of apply kicking sequences principles to realistic scenarios",
+                "I can assess readiness in kicking sequences: practical application",
+                "I understand the concept of \"Kicking Sequences\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of kicking sequences: practical application."
+              "expectedOutcome": "You should be able to discuss kicking sequences: practical application with confidence, covering Kicking Sequences, Practical Application, Apply kicking."
             },
             {
               "type": "apply",
@@ -4315,7 +4482,8 @@
             "Develop step-by-step",
             "Integrate leg",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying kicking sequences concepts in real-world scenarios and operational contexts. Apply kicking sequences principles to realistic scenarios"
         },
         {
           "id": "kicking_sequences_advanced_techniques",
@@ -4332,14 +4500,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Kicking Sequences: Advanced Techniques\":",
+              "prompt": "Review: Kicking Sequences: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to kicking sequences",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize leg coordination and beat synchronization approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of kicking sequences: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to kicking sequences",
+                "I can assess readiness in kicking sequences: advanced techniques",
+                "I understand the concept of \"Kicking Sequences\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of kicking sequences: advanced techniques."
+              "expectedOutcome": "You should be able to discuss kicking sequences: advanced techniques with confidence, covering Kicking Sequences, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -4363,7 +4532,8 @@
             "Combine multiple",
             "Synthesize leg",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within kicking sequences for experienced practitioners. Master advanced methodologies specific to kicking sequences"
         }
       ]
     },
@@ -4391,13 +4561,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Tempo Control Drill\":",
+              "prompt": "Review: Tempo Control Drill — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Start slow and gradually increase tempo",
-                "I can explain: Focus on controlled breathing to avoid fatigue",
-                "I can explain: Use arm movements to maintain overall balance"
+                "I can understand the core principles of tempo control drill",
+                "I can knowledge of start slow and gradually increase tempo",
+                "I can the significance of adjust speed and energy levels to build long-lasting endurance",
+                "I understand the concept of \"Tempo Control Drill\"",
+                "I understand the concept of \"Start slow\""
               ],
-              "expectedOutcome": "Full comprehension of tempo control drill."
+              "expectedOutcome": "You should be able to discuss tempo control drill with confidence, covering Tempo Control Drill, Start slow, Focus controlled."
             },
             {
               "type": "apply",
@@ -4436,13 +4608,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Non-Stop Kick Combo\":",
+              "prompt": "Review: Non-Stop Kick Combo — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Perform alternating kicks for a set duration",
-                "I can explain: Maintain form even as fatigue sets in",
-                "I can explain: Increase complexity by adding knee lifts or spins"
+                "I can understand the core principles of non-stop kick combo",
+                "I can knowledge of perform alternating kicks for a set duration",
+                "I can the significance of a continuous cycle of jumpstyle kicks to improve stamina and consistency",
+                "I understand the concept of \"Non\"",
+                "I understand the concept of \"Stop Kick Combo\""
               ],
-              "expectedOutcome": "Full comprehension of non-stop kick combo."
+              "expectedOutcome": "You should be able to discuss non-stop kick combo with confidence, covering Non, Stop Kick Combo, Perform alternating."
             },
             {
               "type": "apply",
@@ -4482,14 +4656,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Stamina Drills: Core Fundamentals\":",
+              "prompt": "Review: Stamina Drills: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in stamina drills",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of stamina drills: core fundamentals",
+                "I can knowledge of define the key terminology used in stamina drills",
+                "I can assess readiness in stamina drills: core fundamentals",
+                "I understand the concept of \"Stamina Drills\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of stamina drills: core fundamentals."
+              "expectedOutcome": "You should be able to discuss stamina drills: core fundamentals with confidence, covering Stamina Drills, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -4513,7 +4688,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin stamina drills. Define the key terminology used in stamina drills"
         },
         {
           "id": "stamina_drills_practical_application",
@@ -4530,14 +4706,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Stamina Drills: Practical Application\":",
+              "prompt": "Review: Stamina Drills: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply stamina drills principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate cardio endurance techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of stamina drills: practical application",
+                "I can knowledge of apply stamina drills principles to realistic scenarios",
+                "I can assess readiness in stamina drills: practical application",
+                "I understand the concept of \"Stamina Drills\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of stamina drills: practical application."
+              "expectedOutcome": "You should be able to discuss stamina drills: practical application with confidence, covering Stamina Drills, Practical Application, Apply stamina."
             },
             {
               "type": "apply",
@@ -4561,7 +4738,8 @@
             "Develop step-by-step",
             "Integrate cardio",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying stamina drills concepts in real-world scenarios and operational contexts. Apply stamina drills principles to realistic scenarios"
         },
         {
           "id": "stamina_drills_advanced_techniques",
@@ -4578,14 +4756,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Stamina Drills: Advanced Techniques\":",
+              "prompt": "Review: Stamina Drills: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to stamina drills",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize cardio endurance and energy control approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of stamina drills: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to stamina drills",
+                "I can assess readiness in stamina drills: advanced techniques",
+                "I understand the concept of \"Stamina Drills\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of stamina drills: advanced techniques."
+              "expectedOutcome": "You should be able to discuss stamina drills: advanced techniques with confidence, covering Stamina Drills, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -4609,7 +4788,8 @@
             "Combine multiple",
             "Synthesize cardio",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within stamina drills for experienced practitioners. Master advanced methodologies specific to stamina drills"
         }
       ]
     },
@@ -4637,13 +4817,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Basic Hand Glide\":",
+              "prompt": "Review: Basic Hand Glide — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Keep fingers slightly curved for a natural effect",
-                "I can explain: Move hands in a continuous circular motion",
-                "I can explain: Maintain even speed to enhance illusion"
+                "I can understand the core principles of basic hand glide",
+                "I can knowledge of keep fingers slightly curved for a natural effect",
+                "I can the significance of a foundational movement that creates the illusion of hands sliding through air",
+                "I understand the concept of \"Basic Hand Glide\"",
+                "I understand the concept of \"Keep fingers\""
               ],
-              "expectedOutcome": "Full comprehension of basic hand glide."
+              "expectedOutcome": "You should be able to discuss basic hand glide with confidence, covering Basic Hand Glide, Keep fingers, Move hands."
             },
             {
               "type": "apply",
@@ -4682,13 +4864,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Interweaving Hand Glide\":",
+              "prompt": "Review: Interweaving Hand Glide — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Alternate hands for a seamless effect",
-                "I can explain: Use elbow movement to enhance fluidity",
-                "I can explain: Slow down transitions for better control"
+                "I can understand the core principles of interweaving hand glide",
+                "I can knowledge of alternate hands for a seamless effect",
+                "I can the significance of a more complex hand glide technique incorporating figure-eight movements",
+                "I understand the concept of \"Interweaving Hand Glide\"",
+                "I understand the concept of \"Alternate hands\""
               ],
-              "expectedOutcome": "Full comprehension of interweaving hand glide."
+              "expectedOutcome": "You should be able to discuss interweaving hand glide with confidence, covering Interweaving Hand Glide, Alternate hands, elbow movement."
             },
             {
               "type": "apply",
@@ -4727,14 +4911,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Hand Glides: Core Fundamentals\":",
+              "prompt": "Review: Hand Glides: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in hand glides",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of hand glides: core fundamentals",
+                "I can knowledge of define the key terminology used in hand glides",
+                "I can assess readiness in hand glides: core fundamentals",
+                "I understand the concept of \"Hand Glides\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of hand glides: core fundamentals."
+              "expectedOutcome": "You should be able to discuss hand glides: core fundamentals with confidence, covering Hand Glides, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -4758,7 +4943,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin hand glides. Define the key terminology used in hand glides"
         },
         {
           "id": "hand_glides_practical_application",
@@ -4775,14 +4961,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Hand Glides: Practical Application\":",
+              "prompt": "Review: Hand Glides: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply hand glides principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate hand flow techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of hand glides: practical application",
+                "I can knowledge of apply hand glides principles to realistic scenarios",
+                "I can assess readiness in hand glides: practical application",
+                "I understand the concept of \"Hand Glides\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of hand glides: practical application."
+              "expectedOutcome": "You should be able to discuss hand glides: practical application with confidence, covering Hand Glides, Practical Application, Apply hand."
             },
             {
               "type": "apply",
@@ -4806,7 +4993,8 @@
             "Develop step-by-step",
             "Integrate hand",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying hand glides concepts in real-world scenarios and operational contexts. Apply hand glides principles to realistic scenarios"
         },
         {
           "id": "hand_glides_advanced_techniques",
@@ -4823,14 +5011,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Hand Glides: Advanced Techniques\":",
+              "prompt": "Review: Hand Glides: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to hand glides",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize hand flow and illusion techniques approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of hand glides: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to hand glides",
+                "I can assess readiness in hand glides: advanced techniques",
+                "I understand the concept of \"Hand Glides\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of hand glides: advanced techniques."
+              "expectedOutcome": "You should be able to discuss hand glides: advanced techniques with confidence, covering Hand Glides, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -4854,7 +5043,8 @@
             "Combine multiple",
             "Synthesize hand",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within hand glides for experienced practitioners. Master advanced methodologies specific to hand glides"
         }
       ]
     },
@@ -4882,13 +5072,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Basic Arm Wave\":",
+              "prompt": "Review: Basic Arm Wave — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Start with fingers and move through each joint",
-                "I can explain: Keep movements controlled and fluid",
-                "I can explain: Use both arms for symmetrical effect"
+                "I can understand the core principles of basic arm wave",
+                "I can knowledge of start with fingers and move through each joint",
+                "I can the significance of a smooth arm motion that mimics the flow of an energy wave",
+                "I understand the concept of \"Basic Arm Wave\"",
+                "I understand the concept of \"Start fingers\""
               ],
-              "expectedOutcome": "Full comprehension of basic arm wave."
+              "expectedOutcome": "You should be able to discuss basic arm wave with confidence, covering Basic Arm Wave, Start fingers, Keep movements."
             },
             {
               "type": "apply",
@@ -4927,13 +5119,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Chest Wave\":",
+              "prompt": "Review: Chest Wave — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Engage core muscles to guide movement",
-                "I can explain: Use small shoulder shifts for better transition",
-                "I can explain: Focus on controlled speed for a better illusion"
+                "I can understand the core principles of chest wave",
+                "I can knowledge of engage core muscles to guide movement",
+                "I can the significance of a full-body wave starting from the chest and rolling through the spine",
+                "I understand the concept of \"Chest Wave\"",
+                "I understand the concept of \"Engage core\""
               ],
-              "expectedOutcome": "Full comprehension of chest wave."
+              "expectedOutcome": "You should be able to discuss chest wave with confidence, covering Chest Wave, Engage core, small shoulder."
             },
             {
               "type": "apply",
@@ -4972,14 +5166,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Wave Techniques: Core Fundamentals\":",
+              "prompt": "Review: Wave Techniques: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in wave techniques",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of wave techniques: core fundamentals",
+                "I can knowledge of define the key terminology used in wave techniques",
+                "I can assess readiness in wave techniques: core fundamentals",
+                "I understand the concept of \"Wave Techniques\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of wave techniques: core fundamentals."
+              "expectedOutcome": "You should be able to discuss wave techniques: core fundamentals with confidence, covering Wave Techniques, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -5003,7 +5198,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin wave techniques. Define the key terminology used in wave techniques"
         },
         {
           "id": "wave_techniques_practical_application",
@@ -5020,14 +5216,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Wave Techniques: Practical Application\":",
+              "prompt": "Review: Wave Techniques: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply wave techniques principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate body isolation techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of wave techniques: practical application",
+                "I can knowledge of apply wave techniques principles to realistic scenarios",
+                "I can assess readiness in wave techniques: practical application",
+                "I understand the concept of \"Wave Techniques\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of wave techniques: practical application."
+              "expectedOutcome": "You should be able to discuss wave techniques: practical application with confidence, covering Wave Techniques, Practical Application, Apply wave."
             },
             {
               "type": "apply",
@@ -5051,7 +5248,8 @@
             "Develop step-by-step",
             "Integrate body",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying wave techniques concepts in real-world scenarios and operational contexts. Apply wave techniques principles to realistic scenarios"
         },
         {
           "id": "wave_techniques_advanced_techniques",
@@ -5068,14 +5266,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Wave Techniques: Advanced Techniques\":",
+              "prompt": "Review: Wave Techniques: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to wave techniques",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize body isolation and smooth flow approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of wave techniques: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to wave techniques",
+                "I can assess readiness in wave techniques: advanced techniques",
+                "I understand the concept of \"Wave Techniques\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of wave techniques: advanced techniques."
+              "expectedOutcome": "You should be able to discuss wave techniques: advanced techniques with confidence, covering Wave Techniques, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -5099,7 +5298,8 @@
             "Combine multiple",
             "Synthesize body",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within wave techniques for experienced practitioners. Master advanced methodologies specific to wave techniques"
         }
       ]
     },
@@ -5127,13 +5327,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Basic Butterfly\":",
+              "prompt": "Review: Basic Butterfly — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Keep wrists close together for better control",
-                "I can explain: Focus on maintaining even poi spacing",
-                "I can explain: Practice with slow movements before increasing speed"
+                "I can understand the core principles of basic butterfly",
+                "I can knowledge of keep wrists close together for better control",
+                "I can the significance of a simple inward butterfly movement where both poi move in opposite directions in front of the body",
+                "I understand the concept of \"Basic Butterfly\"",
+                "I understand the concept of \"Keep wrists\""
               ],
-              "expectedOutcome": "Full comprehension of basic butterfly."
+              "expectedOutcome": "You should be able to discuss basic butterfly with confidence, covering Basic Butterfly, Keep wrists, Focus maintaining."
             },
             {
               "type": "apply",
@@ -5172,13 +5374,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Split-Time Butterfly\":",
+              "prompt": "Review: Split-Time Butterfly — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Introduce slight delay in one poi movement",
-                "I can explain: Maintain relaxed wrists for better fluidity",
-                "I can explain: Gradually increase speed for smoother execution"
+                "I can understand the core principles of split-time butterfly",
+                "I can knowledge of introduce slight delay in one poi movement",
+                "I can the significance of a variation where one poi moves slightly before the other, creating a staggered effect",
+                "I understand the concept of \"Split\"",
+                "I understand the concept of \"Time Butterfly\""
               ],
-              "expectedOutcome": "Full comprehension of split-time butterfly."
+              "expectedOutcome": "You should be able to discuss split-time butterfly with confidence, covering Split, Time Butterfly, Introduce slight."
             },
             {
               "type": "apply",
@@ -5218,14 +5422,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Butterfly Moves: Core Fundamentals\":",
+              "prompt": "Review: Butterfly Moves: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in butterfly moves",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of butterfly moves: core fundamentals",
+                "I can knowledge of define the key terminology used in butterfly moves",
+                "I can assess readiness in butterfly moves: core fundamentals",
+                "I understand the concept of \"Butterfly Moves\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of butterfly moves: core fundamentals."
+              "expectedOutcome": "You should be able to discuss butterfly moves: core fundamentals with confidence, covering Butterfly Moves, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -5249,7 +5454,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin butterfly moves. Define the key terminology used in butterfly moves"
         },
         {
           "id": "butterfly_moves_practical_application",
@@ -5266,14 +5472,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Butterfly Moves: Practical Application\":",
+              "prompt": "Review: Butterfly Moves: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply butterfly moves principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate hand coordination techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of butterfly moves: practical application",
+                "I can knowledge of apply butterfly moves principles to realistic scenarios",
+                "I can assess readiness in butterfly moves: practical application",
+                "I understand the concept of \"Butterfly Moves\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of butterfly moves: practical application."
+              "expectedOutcome": "You should be able to discuss butterfly moves: practical application with confidence, covering Butterfly Moves, Practical Application, Apply butterfly."
             },
             {
               "type": "apply",
@@ -5297,7 +5504,8 @@
             "Develop step-by-step",
             "Integrate hand",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying butterfly moves concepts in real-world scenarios and operational contexts. Apply butterfly moves principles to realistic scenarios"
         },
         {
           "id": "butterfly_moves_advanced_techniques",
@@ -5314,14 +5522,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Butterfly Moves: Advanced Techniques\":",
+              "prompt": "Review: Butterfly Moves: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to butterfly moves",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize hand coordination and poi flow approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of butterfly moves: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to butterfly moves",
+                "I can assess readiness in butterfly moves: advanced techniques",
+                "I understand the concept of \"Butterfly Moves\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of butterfly moves: advanced techniques."
+              "expectedOutcome": "You should be able to discuss butterfly moves: advanced techniques with confidence, covering Butterfly Moves, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -5345,7 +5554,8 @@
             "Combine multiple",
             "Synthesize hand",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within butterfly moves for experienced practitioners. Master advanced methodologies specific to butterfly moves"
         }
       ]
     },
@@ -5373,13 +5583,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Three-Beat Weave\":",
+              "prompt": "Review: Three-Beat Weave — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Keep elbows loose to allow smooth transitions",
-                "I can explain: Use controlled wrist movements for better accuracy",
-                "I can explain: Start slow and increase speed gradually"
+                "I can understand the core principles of three-beat weave",
+                "I can knowledge of keep elbows loose to allow smooth transitions",
+                "I can the significance of a fundamental poi weave pattern that involves crossing the arms and alternating sides",
+                "I understand the concept of \"Three\"",
+                "I understand the concept of \"Beat Weave\""
               ],
-              "expectedOutcome": "Full comprehension of three-beat weave."
+              "expectedOutcome": "You should be able to discuss three-beat weave with confidence, covering Three, Beat Weave, Keep elbows."
             },
             {
               "type": "apply",
@@ -5419,13 +5631,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Reverse Weave\":",
+              "prompt": "Review: Reverse Weave — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Begin with slow reverse motions before attempting full flow",
-                "I can explain: Maintain rhythm and timing between both poi",
-                "I can explain: Experiment with transitioning between forward and reverse weaves"
+                "I can understand the core principles of reverse weave",
+                "I can knowledge of begin with slow reverse motions before attempting full flow",
+                "I can the significance of a movement where the weave pattern is reversed, adding complexity to transitions",
+                "I understand the concept of \"Reverse Weave\"",
+                "I understand the concept of \"Begin slow\""
               ],
-              "expectedOutcome": "Full comprehension of reverse weave."
+              "expectedOutcome": "You should be able to discuss reverse weave with confidence, covering Reverse Weave, Begin slow, Maintain rhythm."
             },
             {
               "type": "apply",
@@ -5464,14 +5678,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Weave Patterns: Core Fundamentals\":",
+              "prompt": "Review: Weave Patterns: Core Fundamentals — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Define the key terminology used in weave patterns",
-                "I can explain: Identify the core principles that guide effective practice",
-                "I can explain: Recognize the historical context and evolution of this discipline",
-                "I can explain: Understand the relationship between theory and practical application"
+                "I can understand the core principles of weave patterns: core fundamentals",
+                "I can knowledge of define the key terminology used in weave patterns",
+                "I can assess readiness in weave patterns: core fundamentals",
+                "I understand the concept of \"Weave Patterns\"",
+                "I understand the concept of \"Core Fundamentals\""
               ],
-              "expectedOutcome": "Full comprehension of weave patterns: core fundamentals."
+              "expectedOutcome": "You should be able to discuss weave patterns: core fundamentals with confidence, covering Weave Patterns, Core Fundamentals, Define key."
             },
             {
               "type": "apply",
@@ -5495,7 +5710,8 @@
             "Identify core",
             "Recognize historical",
             "Understand relationship"
-          ]
+          ],
+          "summaryText": "Understanding the foundational principles and essential concepts that underpin weave patterns. Define the key terminology used in weave patterns"
         },
         {
           "id": "weave_patterns_practical_application",
@@ -5512,14 +5728,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Weave Patterns: Practical Application\":",
+              "prompt": "Review: Weave Patterns: Practical Application — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Apply weave patterns principles to realistic scenarios",
-                "I can explain: Develop a step-by-step action plan for field deployment",
-                "I can explain: Integrate cross-body coordination techniques into practice",
-                "I can explain: Evaluate outcomes and refine approach based on results"
+                "I can understand the core principles of weave patterns: practical application",
+                "I can knowledge of apply weave patterns principles to realistic scenarios",
+                "I can assess readiness in weave patterns: practical application",
+                "I understand the concept of \"Weave Patterns\"",
+                "I understand the concept of \"Practical Application\""
               ],
-              "expectedOutcome": "Full comprehension of weave patterns: practical application."
+              "expectedOutcome": "You should be able to discuss weave patterns: practical application with confidence, covering Weave Patterns, Practical Application, Apply weave."
             },
             {
               "type": "apply",
@@ -5543,7 +5760,8 @@
             "Develop step-by-step",
             "Integrate cross-body",
             "Evaluate outcomes"
-          ]
+          ],
+          "summaryText": "Applying weave patterns concepts in real-world scenarios and operational contexts. Apply weave patterns principles to realistic scenarios"
         },
         {
           "id": "weave_patterns_advanced_techniques",
@@ -5560,14 +5778,15 @@
           "exercises": [
             {
               "type": "self-check",
-              "prompt": "Check your understanding of \"Weave Patterns: Advanced Techniques\":",
+              "prompt": "Review: Weave Patterns: Advanced Techniques — can you demonstrate these competencies?",
               "hints": [
-                "I can explain: Master advanced methodologies specific to weave patterns",
-                "I can explain: Combine multiple techniques for compound effectiveness",
-                "I can explain: Synthesize cross-body coordination and continuous motion approaches",
-                "I can explain: Evaluate edge cases and unconventional scenarios"
+                "I can understand the core principles of weave patterns: advanced techniques",
+                "I can knowledge of master advanced methodologies specific to weave patterns",
+                "I can assess readiness in weave patterns: advanced techniques",
+                "I understand the concept of \"Weave Patterns\"",
+                "I understand the concept of \"Advanced Techniques\""
               ],
-              "expectedOutcome": "Full comprehension of weave patterns: advanced techniques."
+              "expectedOutcome": "You should be able to discuss weave patterns: advanced techniques with confidence, covering Weave Patterns, Advanced Techniques, Master advanced."
             },
             {
               "type": "apply",
@@ -5591,7 +5810,8 @@
             "Combine multiple",
             "Synthesize cross-body",
             "Evaluate edge"
-          ]
+          ],
+          "summaryText": "Exploring sophisticated methods and nuanced approaches within weave patterns for experienced practitioners. Master advanced methodologies specific to weave patterns"
         }
       ]
     }

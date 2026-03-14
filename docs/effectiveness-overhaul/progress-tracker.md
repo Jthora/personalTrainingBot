@@ -210,36 +210,36 @@
 
 #### Step 2.3.1 — Tier 1 Modules (Critical — Most Thin)
 
-- [ ] `117` Audit & plan expansion: Cybersecurity Fundamentals
-- [ ] `118` Audit & plan expansion: Investigative Techniques
-- [ ] `119` Audit & plan expansion: Digital Forensics
-- [ ] `120` Audit & plan expansion: Financial Crimes Investigation
-- [ ] `121` Audit & plan expansion: Criminal Psychology
+- [x] `117` Audit & plan expansion: Cybersecurity Fundamentals
+- [x] `118` Audit & plan expansion: Investigative Techniques
+- [x] `119` Audit & plan expansion: Digital Forensics
+- [x] `120` Audit & plan expansion: Financial Crimes Investigation
+- [x] `121` Audit & plan expansion: Criminal Psychology
 
 #### Step 2.3.2 — Tier 2 Modules (Medium Priority)
 
-- [ ] `122` Audit & plan expansion: Emergency Response
-- [ ] `123` Audit & plan expansion: Geopolitical Analysis
-- [ ] `124` Audit & plan expansion: Intelligence Analysis
-- [ ] `125` Audit & plan expansion: Legal Framework
-- [ ] `126` Audit & plan expansion: Physical Fitness
-- [ ] `127` Audit & plan expansion: Surveillance & Counter-Surveillance
-- [ ] `128` Audit & plan expansion: Counter-Terrorism
-- [ ] `129` Audit & plan expansion: Tactical Operations
+- [x] `122` Audit & plan expansion: Emergency Response
+- [x] `123` Audit & plan expansion: Geopolitical Analysis
+- [x] `124` Audit & plan expansion: Intelligence Analysis
+- [x] `125` Audit & plan expansion: Legal Framework
+- [x] `126` Audit & plan expansion: Physical Fitness
+- [x] `127` Audit & plan expansion: Surveillance & Counter-Surveillance
+- [x] `128` Audit & plan expansion: Counter-Terrorism
+- [x] `129` Audit & plan expansion: Tactical Operations
 
 #### Step 2.3.3 — Tier 3 Modules (Acceptable Depth)
 
-- [ ] `130` Audit & plan expansion: Communication Skills
-- [ ] `131` Audit & plan expansion: Covert Operations
-- [ ] `132` Audit & plan expansion: Ethical Decision Making
-- [ ] `133` Audit & plan expansion: Leadership & Team Dynamics
-- [ ] `134` Audit & plan expansion: Protective Security
-- [ ] `135` Audit & plan expansion: Weapons & Defensive Tactics
+- [x] `130` Audit & plan expansion: Communication Skills
+- [x] `131` Audit & plan expansion: Covert Operations
+- [x] `132` Audit & plan expansion: Ethical Decision Making
+- [x] `133` Audit & plan expansion: Leadership & Team Dynamics
+- [x] `134` Audit & plan expansion: Protective Security
+- [x] `135` Audit & plan expansion: Weapons & Defensive Tactics
 
 #### Step 2.3.4 — Restructuring Candidates
 
-- [ ] `136` Evaluate splitting large modules (30+ cards) into sub-decks
-- [ ] `137` Evaluate merging tiny modules (< 10 cards) into parent topics
+- [x] `136` Evaluate splitting large modules (30+ cards) into sub-decks
+- [x] `137` Evaluate merging tiny modules (< 10 cards) into parent topics
 
 ### Phase 2.4 — Pilot Content Authoring
 

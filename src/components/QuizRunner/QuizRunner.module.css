@@ -30,7 +30,7 @@
   height: 100%;
   background: var(--quiz-accent, var(--accent, #6c63ff));
   border-radius: 2px;
-  transition: width 0.3s ease;
+  transition: width var(--duration-normal, 200ms) ease;
 }
 
 /* ── Header ── */
@@ -105,7 +105,7 @@
   color: var(--text-primary, #e0e0e0);
   font-size: 0.9rem;
   cursor: pointer;
-  transition: border-color 0.15s, background 0.15s;
+  transition: border-color var(--duration-fast, 120ms), background var(--duration-fast, 120ms);
   line-height: 1.4;
 }
 
@@ -189,7 +189,7 @@
   background: transparent;
   cursor: pointer;
   text-align: left;
-  transition: border-color 0.15s;
+  transition: border-color var(--duration-fast, 120ms);
 }
 
 .matchSelectable:hover:not(:disabled) {
@@ -262,8 +262,8 @@
 
 .explanationIncorrect {
   padding: 8px 12px;
-  border-left: 3px solid var(--warning, #fb8c00);
-  background: rgba(251, 140, 0, 0.08);
+  border-left: 3px solid var(--color-warning, #eab308);
+  background: var(--color-warning-soft, rgba(234, 179, 8, 0.15));
   font-size: 0.85rem;
   color: var(--text-secondary, #ccc);
   margin: 4px 0 0 0;

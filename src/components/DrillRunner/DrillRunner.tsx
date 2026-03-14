@@ -411,19 +411,21 @@ const DrillRunner: React.FC = () => {
     );
   }
 
+  const disc = getDiscipline(resolveDomainId() ?? '');
+
   return (
     <div
       className={styles.runner}
       style={{
-        borderLeftColor: getDiscipline(resolveDomainId() ?? '').color,
-        '--drill-accent': getDiscipline(resolveDomainId() ?? '').color,
-        '--drill-accent-soft': getDiscipline(resolveDomainId() ?? '').bgTint,
+        borderLeftColor: disc.color,
+        '--drill-accent': disc.color,
+        '--drill-accent-soft': disc.bgTint,
       } as React.CSSProperties}
     >
       <header className={styles.header}>
         <div>
           <p className={styles.label}>
-            <span className={styles.disciplineIcon}>{getDiscipline(resolveDomainId() ?? '').icon}</span>
+            <span className={styles.disciplineIcon}>{disc.icon}</span>
             Drill in progress
           </p>
           <h3 className={styles.title}>{state.title}</h3>

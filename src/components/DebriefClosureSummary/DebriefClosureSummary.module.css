@@ -49,7 +49,7 @@
 }
 
 .metricValue[data-state='down'] {
-  color: var(--mission-threat-critical);
+  color: var(--mission-severity-critical-text);
 }
 
 .feedback,

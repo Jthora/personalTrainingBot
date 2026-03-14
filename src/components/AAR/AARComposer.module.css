@@ -42,8 +42,8 @@
 }
 
 .primary {
-  background: var(--accent-primary);
-  color: var(--text-on-accent);
+  background: var(--accent);
+  color: var(--surface-base, #0a0f1a);
   border: none;
   padding: 8px 12px;
   border-radius: 10px;

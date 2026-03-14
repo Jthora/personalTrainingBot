@@ -73,12 +73,12 @@
 }
 
 .trendFlat {
-  color: var(--text-tertiary, #999);
+  color: var(--text-muted, #999);
   font-weight: 700;
 }
 
 .coverage {
-  color: var(--text-tertiary, #999);
+  color: var(--text-muted, #999);
   font-weight: 400;
 }
 

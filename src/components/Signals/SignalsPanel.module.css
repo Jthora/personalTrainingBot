@@ -81,8 +81,8 @@ textarea {
 
 .primary {
   align-self: flex-start;
-  background: var(--accent-primary);
-  color: var(--text-on-accent);
+  background: var(--accent);
+  color: var(--surface-base, #0a0f1a);
   border: none;
   padding: 8px 12px;
   border-radius: 10px;
@@ -122,9 +122,9 @@ textarea {
 }
 
 .filterActive {
-  background: var(--accent-primary);
-  color: var(--text-on-accent);
-  border-color: var(--accent-primary);
+  background: var(--accent);
+  color: var(--surface-base, #0a0f1a);
+  border-color: var(--accent);
 }
 
 .list {

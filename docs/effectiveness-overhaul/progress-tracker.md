@@ -187,9 +187,9 @@
 
 #### Step 2.2.4 — Build Card Editor Tooling
 
-- [ ] `105` Build VS Code JSON schema for Card type (Option A)
+- [x] `105` Build VS Code JSON schema for Card type (Option A)
 - [ ] `106` Build VS Code preview panel reusing ExerciseRenderer
-- [ ] `107` Create card/exercise snippet templates for VS Code
+- [x] `107` Create card/exercise snippet templates for VS Code
 - [ ] `108` _Deferred:_ Build standalone web card editor (Option B — 2-3 weeks if needed)
 
 #### Step 2.2.5 — Build Quiz Quality Metrics
@@ -202,9 +202,9 @@
 
 #### Step 2.2.6 — CI Integration
 
-- [ ] `114` Create GitHub Actions workflow triggered on PR changes to `public/training_modules_shards/**`
-- [ ] `115` Run `validateContent.ts` in CI
-- [ ] `116` Fail PR if error count > 0
+- [x] `114` Create GitHub Actions workflow triggered on PR changes to `public/training_modules_shards/**`
+- [x] `115` Run `validateContent.ts` in CI
+- [x] `116` Fail PR if error count > 0
 
 ### Phase 2.3 — Domain Audit & Expansion Planning
 

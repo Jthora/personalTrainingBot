@@ -1,0 +1,39 @@
+name: Content Validation
+
+on:
+  pull_request:
+    paths:
+      - 'public/training_modules_shards/**'
+      - 'src/utils/contentValidation.ts'
+      - 'scripts/validateContent.ts'
+      - 'scripts/detectTemplates.ts'
+
+jobs:
+  validate-content:
+    name: Validate Training Content
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci
+
+      - name: Run content validation
+        run: npx tsx scripts/validateContent.ts
+
+      - name: Run template detection
+        run: npx tsx scripts/detectTemplates.ts
+
+      - name: Upload validation reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: content-reports
+          path: |
+            artifacts/content-validation-report.json
+            artifacts/template-detection-report.json
+          retention-days: 30

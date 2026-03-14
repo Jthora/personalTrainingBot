@@ -1,5 +1,6 @@
 import React, { useCallback, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { resolveShellRoute } from '../../utils/resolveShellRoute';
 import styles from './MissionFlow.module.css';
 import planStyles from './PlanSurface.module.css';
 import useMissionSchedule from '../../hooks/useMissionSchedule';
@@ -136,7 +137,7 @@ const PlanSurface: React.FC = () => {
   const handleRunDrill = useCallback((drill: PlanDrill) => {
     const steps = [{ id: `plan-${drill.id}`, label: drill.name }];
     DrillRunStore.start(drill.id, drill.name, steps);
-    navigate('/mission/checklist');
+    navigate(resolveShellRoute('/mission/checklist'));
   }, [navigate]);
 
   return (

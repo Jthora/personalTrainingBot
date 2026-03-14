@@ -363,31 +363,31 @@
 #### Step 3.2.3 — MissionShell Deprecation
 
 - [x] `204` Phase 1: Keep MissionShell for Mission Mode `/mission/*` routes; AppShell for primary tabs
-- [ ] `205` Phase 2: Extract assistantCard into standalone component
-- [ ] `206` Phase 2: Extract stepTools into standalone component
+- [x] `205` Phase 2: Extract assistantCard into standalone component
+- [x] `206` Phase 2: Extract stepTools into standalone component
 - [ ] `207` Phase 2: Delete MissionShell.tsx
 
 ### Phase 3.3 — Navigation Updates
 
 #### Step 3.3.1 — Telemetry Updates
 
-- [ ] `208` Update `missionTelemetryContracts.ts` — add `appRoutePaths` const
-- [ ] `209` Update ~15-20 telemetry events referencing route paths (grep `route:` in `src/`)
-- [ ] `210` Build `buildAppTransitionPayload` — new transition payload builder for default mode
+- [x] `208` Update `missionTelemetryContracts.ts` — add `appRoutePaths` const
+- [x] `209` Update ~15-20 telemetry events referencing route paths (grep `route:` in `src/`)
+- [x] `210` Build `buildAppTransitionPayload` — new transition payload builder for default mode
 
 #### Step 3.3.2 — Navigate Call Updates
 
-- [ ] `211` Update `navigate()` calls in MissionShell.tsx (~10 calls) — replaced by AppShell
-- [ ] `212` Update `navigate()` calls in TodayLauncher.tsx (2-3 calls)
-- [ ] `213` Update `navigate()` calls in TrainingSurface.tsx (2-3 calls)
-- [ ] `214` Update `navigate()` call in MissionIntakePanel.tsx
-- [ ] `215` Update `navigate()` calls in useMissionFlowContinuity.ts (2-3 calls)
-- [ ] `216` Update `navigate()` calls in ~20 button/link components (search-and-replace)
+- [x] `211` Update `navigate()` calls in MissionShell.tsx (~10 calls) — replaced by AppShell
+- [x] `212` Update `navigate()` calls in TodayLauncher.tsx (2-3 calls)
+- [x] `213` Update `navigate()` calls in TrainingSurface.tsx (2-3 calls)
+- [x] `214` Update `navigate()` call in MissionIntakePanel.tsx
+- [x] `215` Update `navigate()` calls in useMissionFlowContinuity.ts (2-3 calls)
+- [x] `216` Update `navigate()` calls in ~20 button/link components (search-and-replace)
 
 #### Step 3.3.3 — Continuity & Onboarding
 
-- [ ] `217` Update continuity store — add `appRoutePaths`, update `getMissionResumeTarget` fallback to `/train`
-- [ ] `218` Update onboarding flow — fast-path → `/train`, remove `MissionIntakePanel` from default flow
+- [x] `217` Update continuity store — add `appRoutePaths`, update `getMissionResumeTarget` fallback to `/train`
+- [x] `218` Update onboarding flow — fast-path → `/train`, remove `MissionIntakePanel` from default flow
 
 #### Step 3.3.4 — Mobile & Keyboard
 
@@ -398,25 +398,25 @@
 
 #### Step 3.4.1 — localStorage Migration
 
-- [ ] `221` Build `migrateNavStorage()` function — runs once on first AppShell load
-- [ ] `222` Migrate `mission:guidance-mode:v1` → `ptb:guidance-mode:v1`
-- [ ] `223` Migrate `ptb:mission-flow-checkpoint` → `ptb:app-checkpoint:v1` (map old paths to new)
-- [ ] `224` Drop `mission:step-complete:v1` key (mission-mode only)
-- [ ] `225` Keep path-independent keys unchanged: `mission:intake:v1`, `mission:fast-path:v1`, `mission:guidance-overlay:v1`, `ptb:mission-flow-context`
+- [x] `221` Build `migrateNavStorage()` function — runs once on first AppShell load
+- [x] `222` Migrate `mission:guidance-mode:v1` → `ptb:guidance-mode:v1`
+- [x] `223` Migrate `ptb:mission-flow-checkpoint` → `ptb:app-checkpoint:v1` (map old paths to new)
+- [x] `224` Drop `mission:step-complete:v1` key (mission-mode only)
+- [x] `225` Keep path-independent keys unchanged: `mission:intake:v1`, `mission:fast-path:v1`, `mission:guidance-overlay:v1`, `ptb:mission-flow-context`
 
 #### Step 3.4.2 — PWA & Deployment Migration
 
-- [ ] `226` Update `manifest.webmanifest` — `start_url` → `/train`, `scope` → `/`
-- [ ] `227` Check `sw.js` precache paths — verify navigation fallback serves `index.html`
-- [ ] `228` Check `vercel.json` rewrite rules — extend for new paths if needed
-- [ ] `229` Add legacy `<Navigate replace />` routes in Routes.tsx (10 redirects: old → new)
+- [x] `226` Update `manifest.webmanifest` — `start_url` → `/train`, `scope` → `/`
+- [x] `227` Check `sw.js` precache paths — verify navigation fallback serves `index.html`
+- [x] `228` Check `vercel.json` rewrite rules — extend for new paths if needed
+- [x] `229` Add legacy `<Navigate replace />` routes in Routes.tsx (10 redirects: old → new)
 
 #### Step 3.4.3 — Telemetry Data Continuity
 
-- [ ] `230` Decide telemetry continuity strategy (recommended: map in dashboards)
-- [ ] `231` Emit new route paths in telemetry events going forward
-- [ ] `232` Add old + new path aliases in dashboard queries
-- [ ] `233` Document path change date in telemetry audit report
+- [x] `230` Decide telemetry continuity strategy (recommended: map in dashboards)
+- [x] `231` Emit new route paths in telemetry events going forward
+- [x] `232` Add old + new path aliases in dashboard queries
+- [x] `233` Document path change date in telemetry audit report
 
 ### Phase 3.5 — Feature Flag & Rollback
 

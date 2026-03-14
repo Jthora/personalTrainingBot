@@ -2,6 +2,16 @@ import { missionRoutePaths, type MissionRoutePath } from '../routes/missionCutov
 
 export { missionRoutePaths, type MissionRoutePath };
 
+/* ── App shell v2 route paths ── */
+export const appRoutePaths = [
+  '/train',
+  '/review',
+  '/progress',
+  '/profile',
+] as const;
+
+export type AppRoutePath = (typeof appRoutePaths)[number];
+
 export type MissionTransitionSource = 'tab' | 'select' | 'keyboard' | 'palette' | 'system';
 
 export type MissionTransitionContract = {
@@ -22,6 +32,10 @@ export const isMissionRoutePath = (value: string): value is MissionRoutePath => 
   return (missionRoutePaths as readonly string[]).includes(value);
 };
 
+export const isAppRoutePath = (value: string): value is AppRoutePath => {
+  return (appRoutePaths as readonly string[]).includes(value);
+};
+
 export const buildMissionTransitionPayload = (input: {
   fromTab: MissionRoutePath;
   toTab: MissionRoutePath;
@@ -40,4 +54,17 @@ export const buildMissionTransitionPayload = (input: {
   caseId: input.caseId ?? undefined,
   signalId: input.signalId ?? undefined,
   actionId: input.actionId,
+});
+
+export const buildAppTransitionPayload = (input: {
+  fromTab: AppRoutePath | string;
+  toTab: AppRoutePath | string;
+  source: MissionTransitionSource;
+}) => ({
+  tab: input.toTab,
+  fromTab: input.fromTab,
+  toTab: input.toTab,
+  transitionType: 'app_tab_transition',
+  source: input.source,
+  shell: 'v2',
 });

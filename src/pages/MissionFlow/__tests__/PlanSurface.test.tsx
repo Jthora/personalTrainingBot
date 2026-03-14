@@ -14,6 +14,9 @@ const mockDrillRunStart = vi.fn();
 vi.mock('../../../store/DrillRunStore', () => ({
   DrillRunStore: { start: (...args: unknown[]) => mockDrillRunStart(...args) },
 }));
+vi.mock('../../../utils/resolveShellRoute', () => ({
+  resolveShellRoute: (p: string) => p,
+}));
 
 const todayKey = (() => {
   const d = new Date();

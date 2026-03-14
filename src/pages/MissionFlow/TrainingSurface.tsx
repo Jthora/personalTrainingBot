@@ -8,6 +8,7 @@
 
 import React, { useCallback, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { resolveShellRoute } from '../../utils/resolveShellRoute';
 import styles from './MissionFlow.module.css';
 import ModuleBrowser from '../../components/ModuleBrowser/ModuleBrowser';
 import DeckBrowser from '../../components/DeckBrowser/DeckBrowser';
@@ -26,7 +27,7 @@ const TrainingSurface: React.FC = () => {
   }, []);
 
   const handleDrillStarted = useCallback(() => {
-    navigate('/mission/checklist');
+    navigate(resolveShellRoute('/mission/checklist'));
   }, [navigate]);
 
   return (

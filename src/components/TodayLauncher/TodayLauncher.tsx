@@ -6,6 +6,7 @@ import CardProgressStore from '../../store/CardProgressStore';
 import OperativeProfileStore from '../../store/OperativeProfileStore';
 import { findArchetype } from '../../data/archetypes';
 import { trackEvent } from '../../utils/telemetry';
+import { resolveShellRoute } from '../../utils/resolveShellRoute';
 import styles from './TodayLauncher.module.css';
 
 /**
@@ -79,7 +80,7 @@ const TodayLauncher: React.FC = () => {
       data: { drillId: nextDrill.id, remainingDrills: incompleteDrills.length },
       source: 'ui',
     });
-    navigate('/mission/checklist');
+    navigate(resolveShellRoute('/mission/checklist'));
   };
 
   const handleRegenerate = () => {
@@ -124,7 +125,7 @@ const TodayLauncher: React.FC = () => {
             <button
               type="button"
               className={styles.reviewBtn}
-              onClick={() => navigate('/mission/quiz?mode=review')}
+              onClick={() => navigate(resolveShellRoute('/mission/quiz?mode=review'))}
               data-testid="review-quiz-btn"
             >
               Review {dueCount} Due Card{dueCount !== 1 ? 's' : ''}

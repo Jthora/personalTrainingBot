@@ -12,6 +12,7 @@ import TrainingModuleCache from '../../cache/TrainingModuleCache';
 import CardProgressStore from '../../store/CardProgressStore';
 import { generateQuiz } from '../../utils/quizGenerator';
 import type { Card } from '../../types/Card';
+import { resolveShellRoute } from '../../utils/resolveShellRoute';
 import styles from './MissionFlow.module.css';
 
 const QuizSurface: React.FC = () => {
@@ -92,7 +93,7 @@ const QuizSurface: React.FC = () => {
   }, [deckId, moduleId, mode, cache, cacheReady]);
 
   const handleComplete = () => {
-    navigate('/mission/training');
+    navigate(resolveShellRoute('/mission/training'));
   };
 
   const handleCancel = () => {
@@ -120,7 +121,7 @@ const QuizSurface: React.FC = () => {
           </p>
           <button
             type="button"
-            onClick={() => navigate('/mission/training')}
+            onClick={() => navigate(resolveShellRoute('/mission/training'))}
             style={{
               padding: '0.5rem 1rem',
               borderRadius: '6px',

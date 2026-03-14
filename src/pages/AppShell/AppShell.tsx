@@ -15,7 +15,11 @@ import {
   isMissionModeEnabled,
   type AppShellTab,
 } from './appShellTabs';
+import { migrateNavStorage } from '../../utils/migrateNavStorage';
 import styles from './AppShell.module.css';
+
+// Run once on first import — idempotent
+migrateNavStorage();
 
 const AppShell: React.FC = () => {
   const location = useLocation();

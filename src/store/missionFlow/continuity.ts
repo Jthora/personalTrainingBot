@@ -2,6 +2,7 @@ import type { MissionEntityCollection } from '../../domain/mission/types';
 
 const CONTEXT_KEY = 'ptb:mission-flow-context';
 const CHECKPOINT_KEY = 'ptb:mission-flow-checkpoint';
+const APP_CHECKPOINT_KEY = 'ptb:app-checkpoint:v1';
 
 const missionRoutePaths = [
   '/mission/brief',
@@ -10,6 +11,13 @@ const missionRoutePaths = [
   '/mission/signal',
   '/mission/checklist',
   '/mission/debrief',
+] as const;
+
+const appRoutePaths = [
+  '/train',
+  '/review',
+  '/progress',
+  '/profile',
 ] as const;
 
 export type MissionRoutePath = (typeof missionRoutePaths)[number];
@@ -182,6 +190,37 @@ export const readMissionCheckpoint = (): { path: MissionRoutePath; updatedAt: nu
 
 export const getMissionResumeTarget = (fallback: MissionRoutePath = '/mission/brief'): MissionRoutePath => {
   const checkpoint = readMissionCheckpoint();
+  if (!checkpoint) return fallback;
+  const dayMs = 24 * 60 * 60 * 1000;
+  if (Date.now() - checkpoint.updatedAt > dayMs) return fallback;
+  return checkpoint.path;
+};
+
+/* ── App shell v2 checkpoint support ── */
+
+type AppRoutePath = (typeof appRoutePaths)[number];
+
+const normalizeAppPath = (path: string): AppRoutePath | null => {
+  return (appRoutePaths as readonly string[]).includes(path) ? (path as AppRoutePath) : null;
+};
+
+export const writeAppCheckpoint = (path: string): AppRoutePath | null => {
+  const normalized = normalizeAppPath(path);
+  if (!normalized) return null;
+  safeWrite(APP_CHECKPOINT_KEY, { path: normalized, updatedAt: Date.now() });
+  return normalized;
+};
+
+export const readAppCheckpoint = (): { path: AppRoutePath; updatedAt: number } | null => {
+  const parsed = safeRead<{ path: string; updatedAt?: number }>(APP_CHECKPOINT_KEY);
+  if (!parsed) return null;
+  const path = normalizeAppPath(parsed.path);
+  if (!path) return null;
+  return { path, updatedAt: typeof parsed.updatedAt === 'number' ? parsed.updatedAt : 0 };
+};
+
+export const getAppResumeTarget = (fallback: string = '/train'): string => {
+  const checkpoint = readAppCheckpoint();
   if (!checkpoint) return fallback;
   const dayMs = 24 * 60 * 60 * 1000;
   if (Date.now() - checkpoint.updatedAt > dayMs) return fallback;

@@ -9,6 +9,9 @@ vi.mock('react-router-dom', () => ({
 }));
 
 vi.mock('../../../utils/telemetry', () => ({ trackEvent: vi.fn() }));
+vi.mock('../../../utils/resolveShellRoute', () => ({
+  resolveShellRoute: (p: string) => p,
+}));
 
 const { mockProfileGet } = vi.hoisted(() => ({
   mockProfileGet: vi.fn(() => null) as any,

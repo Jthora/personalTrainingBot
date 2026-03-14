@@ -6,6 +6,8 @@ export interface ExerciseRendererProps {
   exercises: Exercise[];
   /** Callback when the user interacts with any exercise. */
   onInteraction?: (exerciseIndex: number, action: 'attempted' | 'skipped') => void;
+  /** Fires when all exercises in this renderer have been attempted/completed. */
+  onAllCompleted?: () => void;
 }
 
 // ---------------------------------------------------------------------------
@@ -164,11 +166,21 @@ const EXERCISE_LABELS: Record<Exercise['type'], string> = {
   'self-check': '✅ Self-Check',
 };
 
-const ExerciseRenderer: React.FC<ExerciseRendererProps> = ({ exercises, onInteraction }) => {
+const ExerciseRenderer: React.FC<ExerciseRendererProps> = ({ exercises, onInteraction, onAllCompleted }) => {
   if (!exercises || exercises.length === 0) return null;
+
+  const [completedSet, setCompletedSet] = useState<Set<number>>(new Set());
 
   const handleInteraction = (index: number) => {
     onInteraction?.(index, 'attempted');
+    setCompletedSet((prev) => {
+      const next = new Set(prev);
+      next.add(index);
+      if (next.size === exercises.length) {
+        onAllCompleted?.();
+      }
+      return next;
+    });
   };
 
   return (

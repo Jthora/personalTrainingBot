@@ -46,25 +46,66 @@ const lookupCard = (cardId: string | undefined): Card | undefined => {
   }
 };
 
+/** Per-step interaction data used for computing per-card SR quality. */
+interface StepInteractionData {
+  expanded: boolean;
+  exercisesAttempted: number;
+  exercisesTotal: number;
+}
+
+/**
+ * Compute per-card SR quality from base self-assessment and interaction data.
+ * Cards that were never expanded or had no exercise interaction receive -1 penalty.
+ */
+function computeCardQuality(
+  baseAssessment: number,
+  interaction: StepInteractionData | undefined,
+  hasContent: boolean,
+): number {
+  if (!hasContent || !interaction) return baseAssessment;
+  let quality = baseAssessment;
+  // Penalty: card content was never expanded
+  if (!interaction.expanded) quality -= 1;
+  // Penalty: exercises exist but none were attempted
+  if (interaction.exercisesTotal > 0 && interaction.exercisesAttempted === 0) quality -= 1;
+  return Math.max(1, Math.min(5, quality));
+}
+
 /** Expandable step item — shows card content when a cardId is present and the step is expanded. */
 const StepItem: React.FC<{
   step: { id: string; label: string; done: boolean; cardId?: string; routePath?: string };
   onToggle: () => void;
-}> = ({ step, onToggle }) => {
-  const [expanded, setExpanded] = useState(false);
+  onInteractionUpdate?: (stepId: string, data: StepInteractionData) => void;
+}> = ({ step, onToggle, onInteractionUpdate }) => {
+  const [expanded, setExpanded] = useState(true);
+  const [hasBeenOpened, setHasBeenOpened] = useState(true);
+  const [exercisesAttempted, setExercisesAttempted] = useState(0);
   const card = useMemo(() => lookupCard(step.cardId), [step.cardId]);
   const hasContent = Boolean(card);
+  const exercisesTotal = card?.exercises?.length ?? 0;
 
   return (
     <li className={`${styles.step} ${expanded ? styles.stepExpanded : ''}`}>
       <label className={styles.stepLabel}>
-        <input type="checkbox" checked={step.done} onChange={onToggle} />
+        <input
+          type="checkbox"
+          checked={step.done}
+          onChange={onToggle}
+          disabled={hasContent && !hasBeenOpened}
+          title={hasContent && !hasBeenOpened ? 'Review card content before checking off' : undefined}
+        />
         <span className={styles.stepText}>{step.label}</span>
         {hasContent && (
           <button
             type="button"
             className={styles.expandToggle}
-            onClick={(e) => { e.preventDefault(); setExpanded((v) => !v); }}
+            onClick={(e) => {
+              e.preventDefault();
+              setExpanded((v) => {
+                if (!v) setHasBeenOpened(true);
+                return !v;
+              });
+            }}
             aria-expanded={expanded}
             aria-label={expanded ? 'Collapse card content' : 'Expand card content'}
           >
@@ -86,7 +127,18 @@ const StepItem: React.FC<{
             <blockquote className={styles.cardSummary}>{card.summaryText}</blockquote>
           )}
           {card.exercises && card.exercises.length > 0 && (
-            <ExerciseRenderer exercises={card.exercises} />
+            <ExerciseRenderer
+              exercises={card.exercises}
+              onInteraction={(index) => {
+                const next = exercisesAttempted + 1;
+                setExercisesAttempted(next);
+                onInteractionUpdate?.(step.id, {
+                  expanded: true,
+                  exercisesAttempted: next,
+                  exercisesTotal,
+                });
+              }}
+            />
           )}
           {card.learningObjectives && card.learningObjectives.length > 0 && (
             <div className={styles.learningObjectives} data-testid={`objectives-${step.id}`}>
@@ -124,6 +176,8 @@ const DrillRunner: React.FC = () => {
   const [showRest, setShowRest] = useState(false);
   const [notes, setNotes] = useState('');
   const [selfAssessment, setSelfAssessment] = useState<number | null>(null);
+  const [showEngagementWarning, setShowEngagementWarning] = useState(false);
+  const [stepInteractions, setStepInteractions] = useState<Map<string, StepInteractionData>>(new Map());
   const [awaitingReflection, setAwaitingReflection] = useState(false);
   const [lastXpDelta, setLastXpDelta] = useState<{ xp: number; levelBefore: number; levelAfter: number; pctBefore: number; pctAfter: number } | null>(null);
   const [showArchetypePrompt, setShowArchetypePrompt] = useState(false);
@@ -152,6 +206,8 @@ const DrillRunner: React.FC = () => {
       setSelfAssessment(null);
       setAwaitingReflection(false);
       setLastXpDelta(null);
+      setShowEngagementWarning(false);
+      setStepInteractions(new Map());
       if (enhanced && timer.state === 'idle') {
         timer.start();
       }
@@ -220,16 +276,19 @@ const DrillRunner: React.FC = () => {
         domainId: resolveDomainId(),
       });
     }
-    // ── Spaced repetition: record per-card review progress ──
+    // ── Spaced repetition: record per-card review progress with quality signal ──
     const domainId = resolveDomainId();
     const cache = TrainingModuleCache.getInstance();
     for (const step of state.steps) {
       if (step.cardId) {
         const meta = cache.isLoaded() ? cache.getCardMeta(step.cardId) : undefined;
+        const interaction = stepInteractions.get(step.id);
+        const hasCardContent = Boolean(lookupCard(step.cardId));
+        const cardQuality = computeCardQuality(selfAssessment ?? 3, interaction, hasCardContent);
         CardProgressStore.recordReview(
           step.cardId,
           meta?.moduleId ?? domainId ?? 'unknown',
-          selfAssessment ?? 3,
+          cardQuality,
         );
       }
     }
@@ -269,7 +328,7 @@ const DrillRunner: React.FC = () => {
     } else if (enhanced) {
       setShowRest(true);
     }
-  }, [state, completionRecorded, completeCurrentDrill, enhanced, timer.elapsed, notes, selfAssessment, resolveDomainId]);
+  }, [state, completionRecorded, completeCurrentDrill, enhanced, timer.elapsed, notes, selfAssessment, resolveDomainId, stepInteractions]);
 
   /** When all steps are checked, pause the timer and show the reflection form. */
   const handleComplete = useCallback(() => {
@@ -286,9 +345,15 @@ const DrillRunner: React.FC = () => {
   // Auto-fire completion when all steps are checked
   useEffect(() => {
     if (state?.completed && !completionRecorded) {
-      handleComplete();
+      const minSeconds = state.steps.length * 15;
+      if (timer.elapsed < minSeconds && !showEngagementWarning) {
+        timer.pause();
+        setShowEngagementWarning(true);
+      } else if (!showEngagementWarning) {
+        handleComplete();
+      }
     }
-  }, [state?.completed, completionRecorded, handleComplete]);
+  }, [state?.completed, completionRecorded, handleComplete, showEngagementWarning, timer]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // History stats for the active drill
   const historyStats = useMemo(() => {
@@ -376,9 +441,44 @@ const DrillRunner: React.FC = () => {
             key={step.id}
             step={step}
             onToggle={() => DrillRunStore.toggleStep(step.id)}
+            onInteractionUpdate={(stepId, data) => {
+              setStepInteractions((prev) => {
+                const next = new Map(prev);
+                next.set(stepId, data);
+                return next;
+              });
+            }}
           />
         ))}
       </ul>
+
+      {/* Engagement warning — shown when drill completed too quickly */}
+      {showEngagementWarning && !awaitingReflection && (
+        <div className={styles.engagementWarning} data-testid="engagement-warning">
+          <p className={styles.engagementText}>
+            You completed all steps in {formatTime(timer.elapsed)}.
+            The expected minimum is {formatTime(state.steps.length * 15)}. Did you review the card content?
+          </p>
+          <div className={styles.reflectionActions}>
+            <button
+              className={styles.button}
+              onClick={() => { setShowEngagementWarning(false); handleComplete(); }}
+            >
+              Yes, continue to reflection
+            </button>
+            <button
+              className={styles.secondary}
+              onClick={() => {
+                state.steps.forEach((s) => { if (s.done) DrillRunStore.toggleStep(s.id); });
+                setShowEngagementWarning(false);
+                timer.resume();
+              }}
+            >
+              Go back and review
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Reflection form — shown after all steps checked, before recording */}
       {awaitingReflection && !completionRecorded && (
@@ -396,7 +496,7 @@ const DrillRunner: React.FC = () => {
             />
           </div>
           <div className={styles.reflectionField}>
-            <span className={styles.reflectionLabel}>Self-assessment (optional)</span>
+            <span className={styles.reflectionLabel}>Self-assessment <em>(required)</em></span>
             <div className={styles.ratingGroup} role="radiogroup" aria-label="Self-assessment rating">
               {[1, 2, 3, 4, 5].map((n) => (
                 <button
@@ -413,11 +513,13 @@ const DrillRunner: React.FC = () => {
             </div>
           </div>
           <div className={styles.reflectionActions}>
-            <button className={styles.button} onClick={finalizeCompletion}>
+            <button
+              className={styles.button}
+              onClick={finalizeCompletion}
+              disabled={selfAssessment === null}
+              title={selfAssessment === null ? 'Select a self-assessment rating first' : undefined}
+            >
               Record drill
-            </button>
-            <button className={styles.secondary} onClick={finalizeCompletion}>
-              Skip &amp; record
             </button>
           </div>
           {enhanced && <span className={styles.elapsed}>Elapsed: {formatTime(timer.elapsed)}</span>}

@@ -239,6 +239,11 @@ const QuizRunner: React.FC<QuizRunnerProps> = ({
                       Correct answer: {q.correctAnswer}
                     </p>
                   )}
+                  {!ans?.correct && q.explanation && (
+                    <p className={styles.reviewExplanation}>
+                      {q.explanation}
+                    </p>
+                  )}
                 </div>
               </div>
             );
@@ -405,6 +410,11 @@ const QuizRunner: React.FC<QuizRunnerProps> = ({
             <p className={answers[answers.length - 1]?.correct ? styles.feedbackCorrect : styles.feedbackIncorrect}>
               {answers[answers.length - 1]?.correct ? '✓ Correct!' : '✗ Incorrect'}
             </p>
+            {question.explanation && (
+              <p className={answers[answers.length - 1]?.correct ? styles.explanationCorrect : styles.explanationIncorrect}>
+                {question.explanation}
+              </p>
+            )}
             <button
               type="button"
               className={styles.primaryBtn}

@@ -166,7 +166,7 @@ describe('DrillRunner', () => {
     expect(screen.getByText('Elapsed')).toBeTruthy();
   });
 
-  it('shows reflection form when drill finished and enhanced', () => {
+  it('shows engagement warning when drill completed too quickly', () => {
     mockDrillRunStore.get.mockReturnValue({
       drillId: 'drill-1',
       title: 'Drill Alpha',
@@ -181,7 +181,29 @@ describe('DrillRunner', () => {
     });
 
     render(<DrillRunner />);
-    // Enhanced mode now shows reflection form before rest interval
+    // With timer at 0 and 1 step (min 15s), engagement warning should appear
+    expect(screen.getByTestId('engagement-warning')).toBeTruthy();
+    expect(screen.getByText(/Did you review the card content/i)).toBeTruthy();
+  });
+
+  it('shows reflection form after dismissing engagement warning', () => {
+    mockDrillRunStore.get.mockReturnValue({
+      drillId: 'drill-1',
+      title: 'Drill Alpha',
+      steps: [{ id: 'step-1', label: 'Step one', done: true }],
+      startedAt: Date.now(),
+      updatedAt: Date.now(),
+      completed: true,
+    });
+    mockDrillRunStore.subscribe.mockImplementation((cb: any) => {
+      cb(mockDrillRunStore.get());
+      return vi.fn();
+    });
+
+    render(<DrillRunner />);
+    // Dismiss engagement warning
+    fireEvent.click(screen.getByText('Yes, continue to reflection'));
+    // Enhanced mode now shows reflection form
     expect(screen.getByTestId('drill-reflection')).toBeTruthy();
     expect(screen.getByText(/reflect before recording/i)).toBeTruthy();
   });
@@ -201,6 +223,10 @@ describe('DrillRunner', () => {
     });
 
     render(<DrillRunner />);
+    // Dismiss engagement warning
+    fireEvent.click(screen.getByText('Yes, continue to reflection'));
+    // Select required self-assessment
+    fireEvent.click(screen.getByLabelText('Rate 4 out of 5'));
     // Click "Record drill" to finalize
     fireEvent.click(screen.getByText('Record drill'));
     // After recording, rest interval should appear
@@ -209,7 +235,7 @@ describe('DrillRunner', () => {
 
   // ── Expandable card content ──
 
-  it('renders expand toggle when step has cardId and card is found', () => {
+  it('shows card content by default when step has cardId and card is found', () => {
     mockGetCardById.mockImplementation((id: string) =>
       id === 'card-1'
         ? { id: 'card-1', title: 'Card One', description: 'Test description', bulletpoints: ['Point A', 'Point B'], duration: 10, difficulty: 'Standard', summaryText: 'A test summary' }
@@ -233,16 +259,19 @@ describe('DrillRunner', () => {
     });
 
     render(<DrillRunner />);
-    // Step with cardId should have expand toggle
-    const toggles = screen.getAllByLabelText('Expand card content');
-    expect(toggles).toHaveLength(1);
-
-    // Expand the card content
-    fireEvent.click(toggles[0]);
+    // Card content visible by default (steps start expanded)
     expect(screen.getByText('Test description')).toBeTruthy();
     expect(screen.getByText('Point A')).toBeTruthy();
     expect(screen.getByText('Point B')).toBeTruthy();
     expect(screen.getByText('A test summary')).toBeTruthy();
+
+    // Step with cardId should have collapse toggle (already expanded)
+    const toggles = screen.getAllByLabelText('Collapse card content');
+    expect(toggles).toHaveLength(1);
+
+    // Collapse hides content
+    fireEvent.click(toggles[0]);
+    expect(screen.queryByText('Test description')).toBeNull();
   });
 
   it('steps without cardId render as plain checkboxes (no expand toggle)', () => {
@@ -268,7 +297,7 @@ describe('DrillRunner', () => {
 
   // ── Notes and self-assessment in reflection form ──
 
-  it('reflection form accepts notes and self-assessment', () => {
+  it('reflection form accepts notes and requires self-assessment', () => {
     mockDrillRunStore.get.mockReturnValue({
       drillId: 'drill-1',
       title: 'Drill Alpha',
@@ -283,25 +312,32 @@ describe('DrillRunner', () => {
     });
 
     render(<DrillRunner />);
+    // Dismiss engagement warning
+    fireEvent.click(screen.getByText('Yes, continue to reflection'));
+
+    // Record drill button should be disabled without self-assessment
+    const recordBtn = screen.getByText('Record drill');
+    expect(recordBtn.hasAttribute('disabled')).toBe(true);
 
     // Fill in notes
     const textarea = screen.getByPlaceholderText(/what did you learn/i);
     fireEvent.change(textarea, { target: { value: 'Great drill session' } });
     expect((textarea as HTMLTextAreaElement).value).toBe('Great drill session');
 
-    // Select a rating
+    // Select a rating (required)
     const ratingBtn = screen.getByLabelText('Rate 4 out of 5');
     fireEvent.click(ratingBtn);
     expect(ratingBtn.getAttribute('aria-pressed')).toBe('true');
 
-    // Record drill
-    fireEvent.click(screen.getByText('Record drill'));
+    // Now Record drill should be enabled
+    expect(recordBtn.hasAttribute('disabled')).toBe(false);
+    fireEvent.click(recordBtn);
     expect(screen.getByTestId('rest-interval')).toBeTruthy();
   });
 
   // ── Learning objectives rendering ──
 
-  it('renders learning objectives when expanded card has them', () => {
+  it('renders learning objectives when card has them (default expanded)', () => {
     mockGetCardById.mockImplementation((id: string) =>
       id === 'card-obj'
         ? {
@@ -334,9 +370,7 @@ describe('DrillRunner', () => {
     });
 
     render(<DrillRunner />);
-    // Expand card content
-    fireEvent.click(screen.getByLabelText('Expand card content'));
-
+    // Content visible by default (steps start expanded)
     expect(screen.getByTestId('objectives-step-1')).toBeTruthy();
     expect(screen.getByText('Learning Objectives')).toBeTruthy();
     expect(screen.getByText('Understand threat modeling')).toBeTruthy();
@@ -345,7 +379,7 @@ describe('DrillRunner', () => {
 
   // ── Key terms rendering ──
 
-  it('renders key terms when expanded card has them', () => {
+  it('renders key terms when card has them (default expanded)', () => {
     mockGetCardById.mockImplementation((id: string) =>
       id === 'card-terms'
         ? {
@@ -378,8 +412,7 @@ describe('DrillRunner', () => {
     });
 
     render(<DrillRunner />);
-    fireEvent.click(screen.getByLabelText('Expand card content'));
-
+    // Content visible by default (steps start expanded)
     expect(screen.getByTestId('keyterms-step-1')).toBeTruthy();
     expect(screen.getByText('Key Terms')).toBeTruthy();
     expect(screen.getByText('OSINT')).toBeTruthy();
@@ -387,7 +420,7 @@ describe('DrillRunner', () => {
     expect(screen.getByText('SIGINT')).toBeTruthy();
   });
 
-  it('omits objectives and terms sections when card lacks them', () => {
+  it('omits objectives and terms sections when card lacks them (default expanded)', () => {
     mockGetCardById.mockImplementation((id: string) =>
       id === 'card-plain'
         ? {
@@ -418,8 +451,8 @@ describe('DrillRunner', () => {
     });
 
     render(<DrillRunner />);
-    fireEvent.click(screen.getByLabelText('Expand card content'));
-
+    // Content visible by default — verify card content shows but no objectives/terms
+    expect(screen.getByText('Desc')).toBeTruthy();
     expect(screen.queryByTestId('objectives-step-1')).toBeNull();
     expect(screen.queryByTestId('keyterms-step-1')).toBeNull();
   });
@@ -448,7 +481,9 @@ describe('DrillRunner', () => {
     });
 
     render(<DrillRunner />);
-    // Record to trigger finalizeCompletion
+    // Dismiss engagement warning → select self-assessment → record
+    fireEvent.click(screen.getByText('Yes, continue to reflection'));
+    fireEvent.click(screen.getByLabelText('Rate 4 out of 5'));
     fireEvent.click(screen.getByText('Record drill'));
 
     expect(mockDrillHistoryRecord).toHaveBeenCalledWith(
@@ -474,6 +509,9 @@ describe('DrillRunner', () => {
     });
 
     render(<DrillRunner />);
+    // Dismiss engagement warning → select self-assessment → record
+    fireEvent.click(screen.getByText('Yes, continue to reflection'));
+    fireEvent.click(screen.getByLabelText('Rate 4 out of 5'));
     fireEvent.click(screen.getByText('Record drill'));
 
     expect(mockDrillHistoryRecord).toHaveBeenCalledWith(
@@ -502,7 +540,9 @@ describe('DrillRunner', () => {
     });
 
     render(<DrillRunner />);
-    // Click "Record drill" to finalize
+    // Dismiss engagement warning → select self-assessment → record
+    fireEvent.click(screen.getByText('Yes, continue to reflection'));
+    fireEvent.click(screen.getByLabelText('Rate 4 out of 5'));
     fireEvent.click(screen.getByText('Record drill'));
 
     // Archetype prompt should appear instead of rest interval
@@ -533,6 +573,9 @@ describe('DrillRunner', () => {
     });
 
     render(<DrillRunner />);
+    // Dismiss engagement warning → select self-assessment → record
+    fireEvent.click(screen.getByText('Yes, continue to reflection'));
+    fireEvent.click(screen.getByLabelText('Rate 4 out of 5'));
     fireEvent.click(screen.getByText('Record drill'));
 
     // Should go straight to rest, not archetype prompt
@@ -558,6 +601,9 @@ describe('DrillRunner', () => {
     });
 
     render(<DrillRunner />);
+    // Dismiss engagement warning → select self-assessment → record
+    fireEvent.click(screen.getByText('Yes, continue to reflection'));
+    fireEvent.click(screen.getByLabelText('Rate 4 out of 5'));
     fireEvent.click(screen.getByText('Record drill'));
 
     // Should go straight to rest, not archetype prompt

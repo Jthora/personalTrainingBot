@@ -19,6 +19,8 @@ export interface QuizQuestion {
   correctIndex?: number;
   /** Exact correct answer text (fill-blank, TF). */
   correctAnswer: string;
+  /** Explanation shown after answering — why the correct answer is correct. */
+  explanation?: string;
   /** Progressive hints (from card exercises). */
   hints: string[];
   /** Human-readable source label (card title). */

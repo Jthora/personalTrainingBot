@@ -240,6 +240,38 @@
   margin: 0;
 }
 
+/* ── Explanations ── */
+
+.explanationCorrect {
+  padding: 8px 12px;
+  border-left: 3px solid var(--success, #4caf50);
+  background: rgba(76, 175, 80, 0.08);
+  font-size: 0.85rem;
+  color: var(--text-secondary, #ccc);
+  margin: 4px 0 0 0;
+  line-height: 1.4;
+  border-radius: 0 6px 6px 0;
+}
+
+.explanationIncorrect {
+  padding: 8px 12px;
+  border-left: 3px solid var(--warning, #fb8c00);
+  background: rgba(251, 140, 0, 0.08);
+  font-size: 0.85rem;
+  color: var(--text-secondary, #ccc);
+  margin: 4px 0 0 0;
+  line-height: 1.4;
+  border-radius: 0 6px 6px 0;
+}
+
+.reviewExplanation {
+  font-size: 0.8rem;
+  color: var(--text-secondary, #aaa);
+  margin: 4px 0 0 0;
+  font-style: italic;
+  line-height: 1.4;
+}
+
 /* ── Buttons ── */
 
 .primaryBtn {

@@ -101,6 +101,8 @@ export function generateMCFromExercise(
     options,
     correctIndex,
     correctAnswer: correct,
+    explanation: card.summaryText
+      || `${card.description} Key points: ${(card.bulletpoints ?? []).slice(0, 2).join('; ')}.`,
     hints: exercise.hints ?? [],
     source: card.title,
   };
@@ -148,6 +150,7 @@ export function generateTrueFalse(card: Card, allCards: Card[]): QuizQuestion | 
     options: ['True', 'False'],
     correctIndex: actualTruth ? 0 : 1,
     correctAnswer: actualTruth ? 'True' : 'False',
+    explanation: `From "${card.title}": ${bp}`,
     hints: card.exercises?.[0]?.hints ?? [],
     source: card.title,
   };
@@ -174,6 +177,7 @@ export function generateFillBlank(card: Card): QuizQuestion | null {
     type: 'fill-blank',
     prompt: `Fill in the blank: "${blanked}"`,
     correctAnswer: phrase,
+    explanation: card.summaryText || `The complete statement is: "${obj}"`,
     hints: card.exercises?.[0]?.hints ?? [],
     source: card.title,
   };
@@ -213,6 +217,7 @@ export function generateTermMatch(cards: Card[]): QuizQuestion | null {
     prompt: 'Match each term to its description:',
     correctAnswer: selected.map(([t, d]) => `${t}: ${d}`).join('; '),
     matchPairs: selected,
+    explanation: 'Terms are matched to their descriptions from the training material.',
     hints: [],
     source: 'Multiple cards',
   };

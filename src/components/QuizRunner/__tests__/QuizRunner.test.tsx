@@ -7,6 +7,7 @@ import type { QuizQuestion } from '../../../types/Quiz';
 
 const mockRecordReview = vi.fn();
 const mockRecord = vi.fn();
+const mockRecordSession = vi.fn().mockReturnValue({ id: 'qs-mock' });
 
 vi.mock('../../../store/CardProgressStore', () => ({
   default: {
@@ -17,6 +18,12 @@ vi.mock('../../../store/CardProgressStore', () => ({
 vi.mock('../../../store/DrillHistoryStore', () => ({
   default: {
     record: (...args: unknown[]) => mockRecord(...args),
+  },
+}));
+
+vi.mock('../../../store/QuizSessionStore', () => ({
+  default: {
+    record: (...args: unknown[]) => mockRecordSession(...args),
   },
 }));
 
@@ -401,5 +408,122 @@ describe('QuizRunner', () => {
 
     const fill = container.querySelector('[class*="progressFill"]');
     expect(fill).toBeTruthy();
+  });
+
+  /* ── QuizSessionStore integration ── */
+
+  it('records quiz session to QuizSessionStore on results', () => {
+    render(
+      <QuizRunner
+        questions={[mcQuestion]}
+        sourceId="test-deck"
+        sourceType="deck"
+        onComplete={vi.fn()}
+      />,
+    );
+
+    fireEvent.click(screen.getByTestId('option-0'));
+    fireEvent.click(screen.getByTestId('next-btn'));
+
+    expect(mockRecordSession).toHaveBeenCalledTimes(1);
+    expect(mockRecordSession).toHaveBeenCalledWith(
+      expect.objectContaining({
+        sourceId: 'test-deck',
+        sourceType: 'deck',
+        questions: [mcQuestion],
+      }),
+    );
+
+    // answers array should have one correct entry
+    const callArgs = mockRecordSession.mock.calls[0][0];
+    expect(callArgs.answers).toHaveLength(1);
+    expect(callArgs.answers[0].correct).toBe(true);
+    expect(callArgs.answers[0].cardId).toBe('card-a');
+  });
+
+  /* ── Per-question timing ── */
+
+  it('shows time summary on results screen', () => {
+    render(
+      <QuizRunner
+        questions={[mcQuestion]}
+        sourceId="test"
+        sourceType="deck"
+        onComplete={vi.fn()}
+      />,
+    );
+
+    fireEvent.click(screen.getByTestId('option-0'));
+    fireEvent.click(screen.getByTestId('next-btn'));
+
+    expect(screen.getByTestId('time-summary')).toBeTruthy();
+    expect(screen.getByTestId('time-summary').textContent).toMatch(/Total time:.*Avg:/);
+  });
+
+  /* ── Retry wrong questions ── */
+
+  it('shows retry button when there are wrong answers', () => {
+    render(
+      <QuizRunner
+        questions={twoQuestions}
+        sourceId="test"
+        sourceType="deck"
+        onComplete={vi.fn()}
+      />,
+    );
+
+    // Answer Q1 correct
+    fireEvent.click(screen.getByTestId('option-0'));
+    fireEvent.click(screen.getByTestId('next-btn'));
+
+    // Answer Q2 incorrect (True is 0, pick False = 1)
+    fireEvent.click(screen.getByTestId('option-1'));
+    fireEvent.click(screen.getByTestId('next-btn'));
+
+    expect(screen.getByTestId('retry-wrong-btn')).toBeTruthy();
+    expect(screen.getByTestId('retry-wrong-btn').textContent).toContain('Retry 1 Wrong Question');
+  });
+
+  it('does not show retry button when all answers correct', () => {
+    render(
+      <QuizRunner
+        questions={[mcQuestion]}
+        sourceId="test"
+        sourceType="deck"
+        onComplete={vi.fn()}
+      />,
+    );
+
+    fireEvent.click(screen.getByTestId('option-0'));
+    fireEvent.click(screen.getByTestId('next-btn'));
+
+    expect(screen.queryByTestId('retry-wrong-btn')).toBeNull();
+  });
+
+  it('retry wrong restarts quiz with only wrong questions', () => {
+    render(
+      <QuizRunner
+        questions={twoQuestions}
+        sourceId="test"
+        sourceType="deck"
+        onComplete={vi.fn()}
+      />,
+    );
+
+    // Answer Q1 correct
+    fireEvent.click(screen.getByTestId('option-0'));
+    fireEvent.click(screen.getByTestId('next-btn'));
+
+    // Answer Q2 incorrect
+    fireEvent.click(screen.getByTestId('option-1'));
+    fireEvent.click(screen.getByTestId('next-btn'));
+
+    // Click retry
+    fireEvent.click(screen.getByTestId('retry-wrong-btn'));
+
+    // Should be back in quiz mode with only the wrong question (TF)
+    expect(screen.getByTestId('quiz-runner')).toBeTruthy();
+    expect(screen.getByText('1 / 1')).toBeTruthy();
+    expect(screen.getByText(/True or false/)).toBeTruthy();
   });
 });

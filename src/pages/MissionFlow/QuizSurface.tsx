@@ -88,9 +88,22 @@ const QuizSurface: React.FC = () => {
       srcType = 'module';
     }
 
-    const generated = generateQuiz(cards, 10);
+    const generated = generateQuiz(cards, 10, buildProgressMap());
     return { questions: generated, sourceId: srcId, sourceType: srcType };
   }, [deckId, moduleId, mode, cache, cacheReady]);
+
+  /** Build SR progress map so quiz generator can prioritise struggling cards. */
+  function buildProgressMap(): Map<string, { interval: number; lapses: number }> {
+    const map = new Map<string, { interval: number; lapses: number }>();
+    const allProgress = CardProgressStore.list();
+    for (const entry of allProgress) {
+      map.set(entry.cardId, {
+        interval: entry.interval ?? 1,
+        lapses: entry.lapses ?? 0,
+      });
+    }
+    return map;
+  }
 
   const handleComplete = () => {
     navigate(resolveShellRoute('/mission/training'));

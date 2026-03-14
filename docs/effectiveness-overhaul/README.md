@@ -29,12 +29,12 @@ is honor-system with incentives to skip.
 |-----------|---------|--------|--------|-------------|----------------|
 | Onboarding | 8/10 ✅ | 9/10 | 10% | 0.80 | 0.90 |
 | **Drill Execution** | **7/10** ✅ | **7/10** | **25%** | **1.75** | **1.75** |
-| Quiz System | 7/10 | 8/10 | 20% | 1.40 | 1.60 |
+| Quiz System | 8/10 ✅ | 8/10 | 20% | 1.60 | 1.60 |
 | Spaced Repetition | 7/10 ✅ | 7/10 | 15% | 1.05 | 1.05 |
 | **Content Quality** | **8/10** ✅ | **5/10** | **20%** | **1.60** | **1.00** |
 | Progress Tracking | 8/10 | 8/10 | 5% | 0.40 | 0.40 |
 | Reflection/AAR | 6/10 ✅ | 6/10 | 5% | 0.30 | 0.30 |
-| **Total** | | | | **7.30** | **7.00** |
+| **Total** | | | | **7.50** | **7.00** |
 
 ## Three Actions
 
@@ -82,5 +82,5 @@ shell-simplification → (none — standalone, but benefits from content improve
 - [x] Zero thin decks (< 5 cards) remain in any module
 - [x] Zero templated "list the key points" exercises remain
 - [x] Navigation uses ≤ 4 primary tabs (AppShell v2 behind `shellV2` feature flag)
-- [x] All 1,200+ unit tests pass after changes (1,361 passing across 170 files)
+- [x] All 1,200+ unit tests pass after changes (1,381 passing across 171 files)
 - [x] All 126+ E2E tests pass after changes (145 passing)

@@ -89,11 +89,16 @@ const mockGetCardsDueForReview = vi.fn(() => []);
 vi.mock('../../../store/CardProgressStore', () => ({
   default: {
     getCardsDueForReview: () => mockGetCardsDueForReview(),
+    list: () => [],
   },
 }));
 
 vi.mock('../../../store/DrillHistoryStore', () => ({
   default: { record: vi.fn() },
+}));
+
+vi.mock('../../../store/QuizSessionStore', () => ({
+  default: { record: vi.fn().mockReturnValue({ id: 'qs-mock' }) },
 }));
 
 const sampleModule = {

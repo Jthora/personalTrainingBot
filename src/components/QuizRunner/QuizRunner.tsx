@@ -9,6 +9,7 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import type { QuizQuestion, QuizAnswer, QuizSession } from '../../types/Quiz';
 import CardProgressStore from '../../store/CardProgressStore';
 import DrillHistoryStore from '../../store/DrillHistoryStore';
+import QuizSessionStore from '../../store/QuizSessionStore';
 import styles from './QuizRunner.module.css';
 
 /** Shuffle array (Fisher-Yates). */
@@ -58,7 +59,7 @@ function fuzzyMatch(input: string, expected: string): boolean {
 type Phase = 'answering' | 'feedback' | 'results';
 
 const QuizRunner: React.FC<QuizRunnerProps> = ({
-  questions,
+  questions: initialQuestions,
   sourceId,
   sourceType,
   onComplete,
@@ -74,8 +75,10 @@ const QuizRunner: React.FC<QuizRunnerProps> = ({
   const questionStartRef = useRef(Date.now());
   const sessionStartRef = useRef(new Date().toISOString());
 
-  const question = questions[currentIndex];
-  const isLastQuestion = currentIndex === questions.length - 1;
+  const [questionPool, setQuestionPool] = useState(initialQuestions);
+
+  const question = questionPool[currentIndex];
+  const isLastQuestion = currentIndex === questionPool.length - 1;
   const correctCount = answers.filter((a) => a.correct).length;
 
   // Reset state when question changes
@@ -161,6 +164,18 @@ const QuizRunner: React.FC<QuizRunnerProps> = ({
     setHintsRevealed((h) => h + 1);
   }, []);
 
+  /** Restart quiz with only the questions the user got wrong. */
+  const handleRetryWrong = useCallback(() => {
+    const wrongIds = new Set(answers.filter((a) => !a.correct).map((a) => a.questionId));
+    const wrongQs = questionPool.filter((q) => wrongIds.has(q.id));
+    if (wrongQs.length === 0) return;
+    setQuestionPool(wrongQs);
+    setCurrentIndex(0);
+    setAnswers([]);
+    setPhase('answering');
+    sessionStartRef.current = new Date().toISOString();
+  }, [answers, questionPool]);
+
   /* ── Record results to stores ── */
 
   const finalAnswers = phase === 'results' ? answers : null;
@@ -168,8 +183,8 @@ const QuizRunner: React.FC<QuizRunnerProps> = ({
   useEffect(() => {
     if (!finalAnswers) return;
 
-    const pct = questions.length > 0
-      ? (finalAnswers.filter((a) => a.correct).length / questions.length) * 100
+    const pct = questionPool.length > 0
+      ? (finalAnswers.filter((a) => a.correct).length / questionPool.length) * 100
       : 0;
     const overallQuality = scoreToQuality(pct);
 
@@ -190,17 +205,26 @@ const QuizRunner: React.FC<QuizRunnerProps> = ({
       elapsedSec: Math.round(
         finalAnswers.reduce((sum, a) => sum + a.timeTakenMs, 0) / 1000,
       ),
-      stepCount: questions.length,
+      stepCount: questionPool.length,
       completedAt: new Date().toISOString(),
       selfAssessment: overallQuality,
       domainId: sourceType === 'module' ? sourceId : undefined,
     });
-  }, [finalAnswers, questions, sourceId, sourceType]);
+
+    // Persist quiz session for review / analytics
+    QuizSessionStore.record({
+      questions: questionPool,
+      answers: finalAnswers,
+      sourceId,
+      sourceType,
+      startedAt: sessionStartRef.current,
+    });
+  }, [finalAnswers, questionPool, sourceId, sourceType]);
 
   /* ── Render sections ── */
 
-  const progressPct = questions.length > 0
-    ? ((currentIndex + (phase === 'results' ? 1 : 0)) / questions.length) * 100
+  const progressPct = questionPool.length > 0
+    ? ((currentIndex + (phase === 'results' ? 1 : 0)) / questionPool.length) * 100
     : 0;
 
   // Shuffle descriptions for term-match (stable per question)
@@ -211,9 +235,11 @@ const QuizRunner: React.FC<QuizRunnerProps> = ({
 
   // Results screen
   if (phase === 'results') {
-    const total = questions.length;
+    const total = questionPool.length;
     const correct = answers.filter((a) => a.correct).length;
+    const wrong = total - correct;
     const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
+    const totalTimeMs = answers.reduce((sum, a) => sum + a.timeTakenMs, 0);
 
     return (
       <div className={styles.runner} data-testid="quiz-results">
@@ -223,9 +249,16 @@ const QuizRunner: React.FC<QuizRunnerProps> = ({
           <span className={styles.scoreLabel}>{correct}/{total} correct</span>
         </div>
 
+        <p className={styles.timeSummary} data-testid="time-summary">
+          Total time: {Math.round(totalTimeMs / 1000)}s
+          {' · '}
+          Avg: {total > 0 ? (totalTimeMs / total / 1000).toFixed(1) : '0'}s per question
+        </p>
+
         <div className={styles.reviewList}>
-          {questions.map((q, i) => {
+          {questionPool.map((q, i) => {
             const ans = answers[i];
+            const timeSec = ans ? (ans.timeTakenMs / 1000).toFixed(1) : '—';
             return (
               <div
                 key={q.id}
@@ -233,7 +266,10 @@ const QuizRunner: React.FC<QuizRunnerProps> = ({
               >
                 <span className={styles.reviewIcon}>{ans?.correct ? '✓' : '✗'}</span>
                 <div className={styles.reviewContent}>
-                  <p className={styles.reviewPrompt}>{q.prompt}</p>
+                  <p className={styles.reviewPrompt}>
+                    {q.prompt}
+                    <span className={styles.reviewTime}>{timeSec}s</span>
+                  </p>
                   {!ans?.correct && (
                     <p className={styles.reviewAnswer}>
                       Correct answer: {q.correctAnswer}
@@ -250,9 +286,21 @@ const QuizRunner: React.FC<QuizRunnerProps> = ({
           })}
         </div>
 
-        <button type="button" className={styles.primaryBtn} onClick={onComplete}>
-          Done
-        </button>
+        <div className={styles.resultActions}>
+          {wrong > 0 && (
+            <button
+              type="button"
+              className={styles.secondaryBtn}
+              onClick={handleRetryWrong}
+              data-testid="retry-wrong-btn"
+            >
+              Retry {wrong} Wrong Question{wrong > 1 ? 's' : ''}
+            </button>
+          )}
+          <button type="button" className={styles.primaryBtn} onClick={onComplete}>
+            Done
+          </button>
+        </div>
       </div>
     );
   }
@@ -269,7 +317,7 @@ const QuizRunner: React.FC<QuizRunnerProps> = ({
       </div>
       <div className={styles.header}>
         <span className={styles.counter}>
-          {currentIndex + 1} / {questions.length}
+          {currentIndex + 1} / {questionPool.length}
         </span>
         <span className={styles.score} data-testid="running-score">
           {correctCount} correct

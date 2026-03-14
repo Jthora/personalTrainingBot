@@ -370,4 +370,58 @@ describe('generateQuiz', () => {
     expect(q1[0]?.id).toBeTruthy();
     expect(q2[0]?.id).toBeTruthy();
   });
+
+  it('deduplicates so the same card+type combo never appears twice', () => {
+    // Generate many questions; check no card+type combo is repeated
+    const questions = generateQuiz([cardA, cardB, cardC], 20);
+    const seen = new Set<string>();
+    for (const q of questions) {
+      const key = `${q.cardId}:${q.type}`;
+      expect(seen.has(key)).toBe(false);
+      seen.add(key);
+    }
+  });
+
+  it('type-balance: when enough questions exist, includes multiple types', () => {
+    // With rich cards we should get at least 2 different types
+    const questions = generateQuiz([cardA, cardB, cardC, cardScenario], 10);
+    const types = new Set(questions.map((q) => q.type));
+    expect(types.size).toBeGreaterThanOrEqual(2);
+  });
+
+  it('accepts optional progressMap parameter for SR-informed ordering', () => {
+    const progressMap = new Map<string, { interval: number; lapses: number }>();
+    // Card C has high lapses + low interval → should appear first
+    progressMap.set('c', { interval: 1, lapses: 5 });
+    // Card A is mature → should appear later
+    progressMap.set('a', { interval: 30, lapses: 0 });
+
+    const questions = generateQuiz([cardA, cardB, cardC], 10, progressMap);
+    expect(questions.length).toBeGreaterThan(0);
+    // All questions should still be valid
+    for (const q of questions) {
+      expect(q.id).toBeTruthy();
+      expect(q.type).toMatch(/^(multiple-choice|true-false|fill-blank|term-match)$/);
+    }
+  });
+
+  it('SR ordering prioritises struggling cards (high lapses, low interval)', () => {
+    const progressMap = new Map<string, { interval: number; lapses: number }>();
+    // Card C: struggling (many lapses, low interval)
+    progressMap.set('c', { interval: 1, lapses: 10 });
+    // Card A: mature (high interval, zero lapses)
+    progressMap.set('a', { interval: 60, lapses: 0 });
+    // Card B: no entry → treated as new (neutral)
+
+    const questions = generateQuiz([cardA, cardB, cardC], 10, progressMap);
+    if (questions.length > 0) {
+      // First question should come from the struggling card (C)
+      // or at least C should appear before A
+      const indexC = questions.findIndex((q) => q.cardId === 'c');
+      const indexA = questions.findIndex((q) => q.cardId === 'a');
+      if (indexC !== -1 && indexA !== -1) {
+        expect(indexC).toBeLessThan(indexA);
+      }
+    }
+  });
 });

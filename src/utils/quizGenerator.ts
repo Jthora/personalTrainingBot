@@ -258,41 +258,101 @@ export function generateTermMatch(cards: Card[]): QuizQuestion | null {
  * Generate a set of quiz questions from an array of cards.
  * Tries multiple generators per card and shuffles the result.
  *
+ * Features:
+ *   - Per-card deduplication (max 1 question per card per type)
+ *   - Type-balanced selection (at least 1 of each available type)
+ *   - Optional SR-informed ordering (harder cards first when progressMap given)
+ *
  * @param cards  Source cards for question generation.
  * @param maxQuestions  Maximum questions to return (default 10).
+ * @param progressMap  Optional map of cardId → { interval, lapses } for SR-informed ordering.
  */
-export function generateQuiz(cards: Card[], maxQuestions = 10): QuizQuestion[] {
+export function generateQuiz(
+  cards: Card[],
+  maxQuestions = 10,
+  progressMap?: Map<string, { interval: number; lapses: number }>,
+): QuizQuestion[] {
   if (cards.length === 0) return [];
 
-  const questions: QuizQuestion[] = [];
+  // Sort cards by difficulty (struggling cards first) if progressMap provided
+  const orderedCards = progressMap
+    ? [...cards].sort((a, b) => {
+        const pa = progressMap.get(a.id);
+        const pb = progressMap.get(b.id);
+        // Prioritize: high lapses, low interval (struggling cards)
+        const scoreA = pa ? pa.lapses * 10 - pa.interval : 0;
+        const scoreB = pb ? pb.lapses * 10 - pb.interval : 0;
+        return scoreB - scoreA; // descending — harder cards first
+      })
+    : cards;
+
+  // Generate all possible questions per type
+  const byType: Record<string, QuizQuestion[]> = {
+    'multiple-choice': [],
+    'true-false': [],
+    'fill-blank': [],
+    'term-match': [],
+  };
+
+  // Track card+type combos to prevent duplicates
+  const seen = new Set<string>();
+  function dedupPush(q: QuizQuestion): boolean {
+    const key = `${q.cardId}:${q.type}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    byType[q.type].push(q);
+    return true;
+  }
 
   // Pass 1: MC from exercises
-  for (const card of cards) {
-    const mc = generateMCFromExercise(card, cards);
-    if (mc) questions.push(mc);
+  for (const card of orderedCards) {
+    const mc = generateMCFromExercise(card, orderedCards);
+    if (mc) dedupPush(mc);
   }
 
   // Pass 2: True/false from bulletpoints
-  for (const card of cards) {
-    const tf = generateTrueFalse(card, cards);
-    if (tf) questions.push(tf);
+  for (const card of orderedCards) {
+    const tf = generateTrueFalse(card, orderedCards);
+    if (tf) dedupPush(tf);
   }
 
   // Pass 3: Fill-blank from learningObjectives
-  for (const card of cards) {
+  for (const card of orderedCards) {
     const fb = generateFillBlank(card);
-    if (fb) questions.push(fb);
+    if (fb) dedupPush(fb);
   }
 
   // Pass 4: Term-match (batch across cards)
-  const tm = generateTermMatch(cards);
-  if (tm) questions.push(tm);
+  const tm = generateTermMatch(orderedCards);
+  if (tm) dedupPush(tm);
 
-  // Pass 5: MC from scenario exercises
-  for (const card of cards) {
+  // Pass 5: MC from scenario exercises (deduplicate against pass 1 MC)
+  for (const card of orderedCards) {
     const sc = generateMCFromScenario(card);
-    if (sc) questions.push(sc);
+    if (sc) dedupPush(sc);
   }
 
-  return shuffle(questions).slice(0, maxQuestions);
+  // Type-balanced selection: ensure at least 1 of each available type
+  const result: QuizQuestion[] = [];
+  const availableTypes = Object.entries(byType).filter(([, qs]) => qs.length > 0);
+
+  // First pass: take 1 from each available type
+  for (const [, qs] of availableTypes) {
+    if (result.length >= maxQuestions) break;
+    result.push(qs.shift()!);
+  }
+
+  // Second pass: fill remaining slots from all pools, round-robin
+  let typeIdx = 0;
+  while (result.length < maxQuestions) {
+    const remaining = availableTypes.filter(([, qs]) => qs.length > 0);
+    if (remaining.length === 0) break;
+    const [, qs] = remaining[typeIdx % remaining.length];
+    if (qs.length > 0) {
+      result.push(qs.shift()!);
+    }
+    typeIdx++;
+  }
+
+  return progressMap ? result : shuffle(result);
 }

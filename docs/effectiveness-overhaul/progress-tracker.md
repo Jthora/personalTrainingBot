@@ -465,6 +465,61 @@
 
 ---
 
+## Stage 4 — Quiz System Enhancement (Score 7→8)
+
+> **Goal:** Improve quiz system from 7/10 to 8/10 (20% weight = +0.20 → overall 7.30→7.50)
+
+### Phase 4.1 — Quiz Generator Improvements
+
+#### Step 4.1.1 — Deduplication + Type Balance + SR Ordering
+
+- [x] `258` Add per-card+type deduplication to `generateQuiz()` via `seen` Set
+- [x] `259` Implement type-balanced selection (at least 1 of each available type, then round-robin)
+- [x] `260` Add optional `progressMap` parameter for SR-informed card ordering (struggling cards first)
+- [x] `261` Preserve SR order when progressMap provided (skip shuffle)
+
+### Phase 4.2 — Quiz Session Persistence
+
+#### Step 4.2.1 — QuizSessionStore
+
+- [x] `262` Create `QuizSessionStore` with `createStore` factory (key: `ptb:quiz-sessions:v1`, 50 max)
+- [x] `263` Implement `record()`, `get()`, `list()`, `listBySource()`, `getWrongQuestions()`
+- [x] `264` Add `cardAccuracy()` and `cardTiming()` analytics methods
+- [x] `265` Record quiz sessions from `QuizRunner` results `useEffect`
+
+### Phase 4.3 — Results Screen Enhancements
+
+#### Step 4.3.1 — Retry Wrong Questions
+
+- [x] `266` Add internal `questionPool` state for retry flow
+- [x] `267` Add `handleRetryWrong` callback that filters to incorrect answers and resets quiz
+- [x] `268` Render "Retry N Wrong Questions" button on results screen (hidden when 100%)
+
+#### Step 4.3.2 — Per-Question Timing Display
+
+- [x] `269` Add time summary (total + average) to results screen
+- [x] `270` Show per-question timing badge in review list items
+- [x] `271` Add CSS for `timeSummary`, `reviewTime`, `resultActions`, `secondaryBtn`
+
+### Phase 4.4 — Integration + Tests
+
+#### Step 4.4.1 — QuizSurface SR Integration
+
+- [x] `272` Wire `QuizSurface.tsx` to build `progressMap` from `CardProgressStore.list()`
+- [x] `273` Pass `progressMap` to `generateQuiz()` for SR-informed question ordering
+
+#### Step 4.4.2 — Test Coverage
+
+- [x] `274` Add QuizSessionStore unit tests (11 tests: CRUD, accuracy, timing, subscribe)
+- [x] `275` Add QuizRunner tests for session recording, timing display, retry flow (5 tests)
+- [x] `276` Add quizGenerator tests for dedup, type balance, SR ordering (4 tests)
+- [x] `277` Fix QuizSurface test mock (add `list()` to CardProgressStore mock)
+- [x] `278` Verify full test suite: 1,381 tests across 171 files — all passing
+- [x] `279` TypeScript compiler check — zero errors
+- [x] `280` Update scoring: Quiz 7→8, overall 7.30→7.50
+
+---
+
 ## Summary
 
 | Stage | Phases | Steps | Tasks | Timeline |
@@ -472,11 +527,12 @@
 | 1 — Drill Enforcement | 4 | 14 | 62 | Weeks 1–3 |
 | 2 — Content Pipeline | 6 | 17 | 117 | Months 1–8 |
 | 3 — Shell Simplification | 7 | 18 | 78 | Weeks 3–7 |
-| **Total** | **17** | **49** | **257** | **4–8 months** |
+| 4 — Quiz Enhancement | 4 | 6 | 23 | 1 session |
+| **Total** | **21** | **55** | **280** | **4–8 months** |
 
 ### Completion Formula
 
-$$\text{Progress} = \frac{\text{checked tasks}}{257} \times 100\%$$
+$$\text{Progress} = \frac{\text{checked tasks}}{280} \times 100\%$$
 
 ### Milestone Checkpoints
 

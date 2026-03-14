@@ -71,3 +71,14 @@
 .dismissBtn:hover {
   background: var(--handler-accent-strong);
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .overlay {
+    animation: none !important;
+    transition: none !important;
+  }
+  .modal {
+    animation: none !important;
+    transition: none !important;
+  }
+}

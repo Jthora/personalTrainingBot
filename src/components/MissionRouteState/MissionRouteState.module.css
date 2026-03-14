@@ -74,3 +74,11 @@
     background-position: -180% 0;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .skeletonLine,
+  .skeletonLineShort {
+    animation: none !important;
+    transition: none !important;
+  }
+}

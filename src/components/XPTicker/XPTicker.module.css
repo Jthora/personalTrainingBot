@@ -25,3 +25,10 @@
   60% { transform: scale(1.1) translateY(-2px); }
   100% { transform: scale(1) translateY(0); opacity: 1; }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker {
+    animation: none !important;
+    transition: none !important;
+  }
+}

@@ -21,7 +21,7 @@
 
 .input {
   flex: 1;
-  font-family: 'Aldrich', monospace;
+  font-family: var(--font-display), monospace;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.02em;

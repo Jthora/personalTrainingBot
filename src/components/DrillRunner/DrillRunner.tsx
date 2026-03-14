@@ -20,6 +20,7 @@ import OperativeProfileStore from '../../store/OperativeProfileStore';
 import PostDrillArchetypePrompt from './PostDrillArchetypePrompt';
 import { computeCardQuality, type StepInteractionData } from '../../utils/drillQuality';
 import { buildDrillStepsFromCards } from '../../utils/drillStepBuilder';
+import { getDiscipline } from '../../data/disciplineTheme';
 
 /**
  * Build default steps for a drill. If the drill has an associated moduleId and cards are loaded,
@@ -411,10 +412,20 @@ const DrillRunner: React.FC = () => {
   }
 
   return (
-    <div className={styles.runner}>
+    <div
+      className={styles.runner}
+      style={{
+        borderLeftColor: getDiscipline(resolveDomainId() ?? '').color,
+        '--drill-accent': getDiscipline(resolveDomainId() ?? '').color,
+        '--drill-accent-soft': getDiscipline(resolveDomainId() ?? '').bgTint,
+      } as React.CSSProperties}
+    >
       <header className={styles.header}>
         <div>
-          <p className={styles.label}>Drill in progress</p>
+          <p className={styles.label}>
+            <span className={styles.disciplineIcon}>{getDiscipline(resolveDomainId() ?? '').icon}</span>
+            Drill in progress
+          </p>
           <h3 className={styles.title}>{state.title}</h3>
           {activeDrill?.durationMinutes ? <p className={styles.meta}>{activeDrill.durationMinutes} min · {activeDrill.type}</p> : null}
           <p className={styles.meta}>Started {new Date(state.startedAt).toLocaleString()}</p>

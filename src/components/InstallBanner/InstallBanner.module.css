@@ -58,3 +58,10 @@
     transform: translateX(-50%) translateY(0);
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .banner {
+    animation: none !important;
+    transition: none !important;
+  }
+}

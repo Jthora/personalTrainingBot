@@ -7,6 +7,13 @@
   max-width: 640px;
   margin: 0 auto;
   padding: 1rem;
+  border-left: 3px solid var(--quiz-accent, transparent);
+  animation: quizFadeIn var(--duration-normal, 200ms) var(--ease-out, ease-out);
+}
+
+@keyframes quizFadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* ── Progress bar ── */
@@ -21,7 +28,7 @@
 
 .progressFill {
   height: 100%;
-  background: var(--accent, #6c63ff);
+  background: var(--quiz-accent, var(--accent, #6c63ff));
   border-radius: 2px;
   transition: width 0.3s ease;
 }
@@ -103,12 +110,12 @@
 }
 
 .option:hover:not(:disabled) {
-  border-color: var(--accent, #6c63ff);
+  border-color: var(--quiz-accent, var(--accent, #6c63ff));
 }
 
 .optionSelected {
-  border-color: var(--accent, #6c63ff);
-  background: rgba(108, 99, 255, 0.1);
+  border-color: var(--quiz-accent, var(--accent, #6c63ff));
+  background: var(--quiz-accent-soft, rgba(108, 99, 255, 0.1));
 }
 
 .optionCorrect {
@@ -139,7 +146,7 @@
 }
 
 .fillInput:focus {
-  border-color: var(--accent, #6c63ff);
+  border-color: var(--quiz-accent, var(--accent, #6c63ff));
   outline: none;
 }
 
@@ -186,7 +193,7 @@
 }
 
 .matchSelectable:hover:not(:disabled) {
-  border-color: var(--accent, #6c63ff);
+  border-color: var(--quiz-accent, var(--accent, #6c63ff));
 }
 
 /* ── Hints ── */
@@ -202,13 +209,13 @@
   color: var(--text-secondary, #aaa);
   margin: 0;
   padding: 0.4rem 0.6rem;
-  background: rgba(108, 99, 255, 0.05);
+  background: var(--quiz-accent-soft, rgba(108, 99, 255, 0.05));
   border-radius: 4px;
 }
 
 .hintBtn {
   font-size: 0.8rem;
-  color: var(--accent, #6c63ff);
+  color: var(--quiz-accent, var(--accent, #6c63ff));
   background: none;
   border: none;
   cursor: pointer;
@@ -278,17 +285,23 @@
   padding: 0.6rem 1.25rem;
   border: none;
   border-radius: 6px;
-  background: var(--accent, #6c63ff);
+  background: var(--quiz-accent, var(--accent, #6c63ff));
   color: #fff;
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
-  transition: opacity 0.15s;
+  transition: opacity var(--duration-fast, 120ms),
+              transform var(--duration-fast, 120ms) var(--ease-out, ease-out);
   align-self: center;
 }
 
 .primaryBtn:hover {
   opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.primaryBtn:active {
+  transform: scale(0.97);
 }
 
 .primaryBtn:disabled {
@@ -316,7 +329,7 @@
 .scorePct {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--accent, #6c63ff);
+  color: var(--quiz-accent, var(--accent, #6c63ff));
 }
 
 .scoreLabel {
@@ -403,17 +416,30 @@
 
 .secondaryBtn {
   padding: 0.6rem 1.25rem;
-  border: 1px solid var(--accent, #6c63ff);
+  border: 1px solid var(--quiz-accent, var(--accent, #6c63ff));
   border-radius: 6px;
   background: transparent;
-  color: var(--accent, #6c63ff);
+  color: var(--quiz-accent, var(--accent, #6c63ff));
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
-  transition: background 0.15s, color 0.15s;
+  transition: background var(--duration-fast, 120ms),
+              color var(--duration-fast, 120ms);
 }
 
 .secondaryBtn:hover {
-  background: var(--accent, #6c63ff);
+  background: var(--quiz-accent, var(--accent, #6c63ff));
   color: #fff;
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .runner,
+  .primaryBtn,
+  .secondaryBtn,
+  .option,
+  .progressFill {
+    animation: none !important;
+    transition: none !important;
+  }
 }

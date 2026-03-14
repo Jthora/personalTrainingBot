@@ -79,7 +79,7 @@
 }
 
 .headerTitle {
-    font-family: 'Aldrich', sans-serif;
+    font-family: var(--font-display), sans-serif;
     font-size: 1.75rem;
     padding: 0;
     margin: 0;
@@ -208,7 +208,7 @@
     border-radius: 3px;
     padding: 8px 12px;
     font-size: 0.75rem;
-    font-family: 'Aldrich', sans-serif;
+    font-family: var(--font-display), sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.12em;
     cursor: pointer;

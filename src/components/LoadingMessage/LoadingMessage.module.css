@@ -115,3 +115,14 @@
     transform: translateX(100%);
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner {
+    animation: none !important;
+    transition: none !important;
+  }
+  .loading-bar-animation {
+    animation: none !important;
+    transition: none !important;
+  }
+}

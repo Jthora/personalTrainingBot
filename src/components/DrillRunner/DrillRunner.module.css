@@ -1,10 +1,22 @@
 .runner {
-  background: var(--surface-card);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
+  background: var(--drill-accent-soft, var(--surface-card));
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--drill-accent, var(--accent));
+  border-radius: var(--radius-lg, 14px);
   padding: 14px;
   display: grid;
   gap: 12px;
+  animation: drillFadeIn var(--duration-normal, 200ms) var(--ease-out, ease-out);
+}
+
+@keyframes drillFadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.disciplineIcon {
+  font-size: 1rem;
+  margin-right: 0.3em;
 }
 
 .header {
@@ -43,10 +55,16 @@
 }
 
 .step {
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 10px;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md, 10px);
   padding: 8px 10px;
   background: rgba(255, 255, 255, 0.02);
+  animation: stepSlideIn var(--duration-normal, 200ms) var(--ease-out, ease-out) both;
+}
+
+@keyframes stepSlideIn {
+  from { opacity: 0; transform: translateX(-6px); }
+  to { opacity: 1; transform: translateX(0); }
 }
 
 .stepLabel {
@@ -62,30 +80,60 @@
 
 .success {
   padding: 10px 12px;
-  background: rgba(16, 185, 129, 0.15);
-  color: #22c55e;
-  border-radius: 10px;
+  background: var(--color-success-soft, rgba(16, 185, 129, 0.15));
+  color: var(--color-success, #22c55e);
+  border-radius: var(--radius-md, 10px);
   font-weight: 700;
 }
 
 .button {
-  background: var(--handler-accent);
-  color: #0a0f1a;
+  background: var(--drill-accent, var(--accent));
+  color: var(--surface-base, #0a0f1a);
   border: none;
-  border-radius: 10px;
+  border-radius: var(--radius-md, 10px);
   padding: 10px 14px;
   font-weight: 700;
   cursor: pointer;
   min-width: 140px;
+  transition: transform var(--duration-fast, 120ms) var(--ease-out, ease-out),
+              box-shadow var(--duration-fast, 120ms) var(--ease-out, ease-out),
+              opacity var(--duration-fast, 120ms);
+}
+
+.button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button:active:not(:disabled) {
+  transform: translateY(0) scale(0.97);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .secondary {
   background: transparent;
   color: var(--text-secondary);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
+  border: 1px solid var(--border-default, rgba(255, 255, 255, 0.2));
+  border-radius: var(--radius-md, 10px);
   padding: 8px 12px;
   cursor: pointer;
+  transition: border-color var(--duration-fast, 120ms),
+              background var(--duration-fast, 120ms),
+              color var(--duration-fast, 120ms);
+}
+
+.secondary:hover {
+  border-color: var(--drill-accent, var(--accent));
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.secondary:active {
+  transform: scale(0.97);
 }
 
 .empty {
@@ -187,8 +235,8 @@
 .cardSummary {
   margin: 0;
   padding: 8px 12px;
-  border-left: 3px solid var(--handler-accent, #60a5fa);
-  background: rgba(96, 165, 250, 0.06);
+  border-left: 3px solid var(--drill-accent, var(--accent));
+  background: var(--drill-accent-soft, rgba(96, 165, 250, 0.06));
   font-size: 13px;
   font-style: italic;
   color: var(--text-secondary);
@@ -276,9 +324,9 @@
 
 .reflection {
   padding: 14px;
-  background: rgba(96, 165, 250, 0.06);
-  border: 1px solid rgba(96, 165, 250, 0.2);
-  border-radius: 10px;
+  background: var(--drill-accent-soft, var(--accent-soft));
+  border: 1px solid var(--drill-accent, var(--accent-muted, rgba(96, 165, 250, 0.2)));
+  border-radius: var(--radius-md, 10px);
   display: grid;
   gap: 12px;
 }
@@ -322,7 +370,7 @@
 
 .notesInput:focus {
   outline: none;
-  border-color: var(--handler-accent, #60a5fa);
+  border-color: var(--drill-accent, var(--accent));
 }
 
 .ratingGroup {
@@ -349,9 +397,9 @@
 }
 
 .ratingBtnActive {
-  background: var(--handler-accent, #60a5fa);
-  color: #0a0f1a;
-  border-color: var(--handler-accent, #60a5fa);
+  background: var(--drill-accent, var(--accent));
+  color: var(--surface-base, #0a0f1a);
+  border-color: var(--drill-accent, var(--accent));
 }
 
 .reflectionActions {
@@ -437,4 +485,15 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .runner,
+  .step,
+  .button,
+  .secondary {
+    animation: none !important;
+    transition: none !important;
+  }
 }

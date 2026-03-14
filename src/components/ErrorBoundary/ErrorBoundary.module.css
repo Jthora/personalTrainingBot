@@ -19,7 +19,7 @@
 }
 
 .title {
-  font-family: 'Aldrich', sans-serif;
+  font-family: var(--font-display), sans-serif;
   font-size: clamp(18px, 3vw, 24px);
   margin: 0 0 12px;
   color: var(--mission-severity-high-text);
@@ -56,7 +56,7 @@
 
 .retryButton,
 .reloadButton {
-  font-family: 'Aldrich', sans-serif;
+  font-family: var(--font-display), sans-serif;
   font-size: 14px;
   padding: 10px 20px;
   border-radius: 8px;

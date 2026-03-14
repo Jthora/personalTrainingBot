@@ -448,3 +448,14 @@
   text-align: center;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .syncPill[data-status='syncing'] .syncPillStatus {
+    animation: none !important;
+    transition: none !important;
+  }
+  .overlay {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+

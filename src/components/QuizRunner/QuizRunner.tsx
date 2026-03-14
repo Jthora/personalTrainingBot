@@ -10,6 +10,7 @@ import type { QuizQuestion, QuizAnswer, QuizSession } from '../../types/Quiz';
 import CardProgressStore from '../../store/CardProgressStore';
 import DrillHistoryStore from '../../store/DrillHistoryStore';
 import QuizSessionStore from '../../store/QuizSessionStore';
+import { getDiscipline } from '../../data/disciplineTheme';
 import styles from './QuizRunner.module.css';
 
 /** Shuffle array (Fisher-Yates). */
@@ -76,6 +77,15 @@ const QuizRunner: React.FC<QuizRunnerProps> = ({
   const sessionStartRef = useRef(new Date().toISOString());
 
   const [questionPool, setQuestionPool] = useState(initialQuestions);
+
+  const discipline = sourceType === 'module' ? getDiscipline(sourceId) : null;
+  const disciplineStyle = discipline
+    ? ({
+        borderLeftColor: discipline.color,
+        '--quiz-accent': discipline.color,
+        '--quiz-accent-soft': discipline.bgTint,
+      } as React.CSSProperties)
+    : undefined;
 
   const question = questionPool[currentIndex];
   const isLastQuestion = currentIndex === questionPool.length - 1;
@@ -242,7 +252,7 @@ const QuizRunner: React.FC<QuizRunnerProps> = ({
     const totalTimeMs = answers.reduce((sum, a) => sum + a.timeTakenMs, 0);
 
     return (
-      <div className={styles.runner} data-testid="quiz-results">
+      <div className={styles.runner} data-testid="quiz-results" style={disciplineStyle}>
         <h2 className={styles.resultsTitle}>Quiz Complete</h2>
         <div className={styles.scoreCircle}>
           <span className={styles.scorePct}>{pct}%</span>
@@ -310,7 +320,7 @@ const QuizRunner: React.FC<QuizRunnerProps> = ({
   const hasMoreHints = hintsRevealed < question.hints.length;
 
   return (
-    <div className={styles.runner} data-testid="quiz-runner">
+    <div className={styles.runner} data-testid="quiz-runner" style={disciplineStyle}>
       {/* Progress bar */}
       <div className={styles.progressBar}>
         <div className={styles.progressFill} style={{ width: `${progressPct}%` }} />

@@ -21,7 +21,7 @@
 }
 
 .display {
-  font-family: 'Aldrich', monospace;
+  font-family: var(--font-display), monospace;
   font-size: 22px;
   font-weight: 700;
   letter-spacing: 0.04em;

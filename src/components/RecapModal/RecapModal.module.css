@@ -35,14 +35,14 @@
 }
 
 .modal {
-    background: #0d1525;
-    border: 1px solid #1f2937;
-    border-radius: 14px;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+    background: var(--surface-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg, 14px);
+    box-shadow: var(--shadow-lg, 0 12px 40px rgba(0, 0, 0, 0.35));
     width: 420px;
     max-width: 90vw;
     padding: 20px;
-    color: #e5e7eb;
+    color: var(--text-primary);
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -61,14 +61,14 @@
 }
 
 .subtitle {
-    color: #9ca3af;
+    color: var(--text-muted);
     font-size: 0.95rem;
 }
 
 .highlightCard {
-    background: linear-gradient(135deg, rgba(37, 99, 235, 0.16), rgba(16, 185, 129, 0.14));
-    border: 1px solid #1f2937;
-    border-radius: 10px;
+    background: linear-gradient(135deg, var(--accent-soft, rgba(37, 99, 235, 0.16)), var(--color-success-soft, rgba(16, 185, 129, 0.14)));
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md, 10px);
     padding: 12px;
     display: flex;
     flex-direction: column;
@@ -81,14 +81,14 @@
 }
 
 .subhead {
-    color: #cbd5e1;
+    color: var(--text-secondary);
     font-size: 0.95rem;
 }
 
 .closeButton {
     background: transparent;
-    border: 1px solid #334155;
-    color: #e5e7eb;
+    border: 1px solid var(--border-default);
+    color: var(--text-primary);
     border-radius: 8px;
     width: 32px;
     height: 32px;
@@ -102,14 +102,14 @@
 }
 
 .card {
-    background: #0a101b;
-    border: 1px solid #1f2937;
-    border-radius: 10px;
+    background: var(--surface-elevated);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md, 10px);
     padding: 10px;
 }
 
 .cardTitle {
-    color: #9ca3af;
+    color: var(--text-muted);
     font-size: 0.85rem;
     margin-bottom: 4px;
 
@@ -137,7 +137,7 @@
 .progressBar {
     position: relative;
     height: 8px;
-    background: #111827;
+    background: var(--surface-muted);
     border-radius: 999px;
     overflow: hidden;
     margin-top: 6px;
@@ -148,20 +148,20 @@
     left: 0;
     top: 0;
     bottom: 0;
-    background: linear-gradient(135deg, #22c55e, #16a34a);
+    background: linear-gradient(135deg, var(--color-success), var(--color-success));
 }
 
 .badges {
     display: flex;
     gap: 6px;
     flex-wrap: wrap;
-    color: #fcd34d;
+    color: var(--color-gold);
 }
 
 .badgeOverflow {
-    color: #93c5fd;
-    background: rgba(37, 99, 235, 0.12);
-    border: 1px solid rgba(37, 99, 235, 0.4);
+    color: var(--accent-glow, #93c5fd);
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-border);
     border-radius: 6px;
     padding: 2px 6px;
 }
@@ -179,27 +179,27 @@
 
 .calloutLine {
     font-size: 0.95rem;
-    color: #e5e7eb;
+    color: var(--text-primary);
 }
 
 .celebration {
-    border-color: #2563eb;
-    box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.3);
+    border-color: var(--accent);
+    box-shadow: 0 0 0 1px var(--accent-muted);
 }
 
 .badgeCelebration {
-    color: #fcd34d;
+    color: var(--color-gold);
     font-weight: 700;
     font-size: 1rem;
 }
 
 .meta {
-    color: #9ca3af;
+    color: var(--text-muted);
     font-size: 0.9rem;
 }
 
 .nextSteps {
-    color: #e5e7eb;
+    color: var(--text-primary);
     margin: 0;
     padding-left: 18px;
     display: flex;
@@ -209,7 +209,7 @@
 }
 
 .rationale {
-    color: #9ca3af;
+    color: var(--text-muted);
     font-size: 0.9rem;
     line-height: 1.4;
     margin: 4px 0 0;
@@ -222,9 +222,9 @@
 }
 
 .shareSection {
-    background: #0a101b;
-    border: 1px solid #1f2937;
-    border-radius: 10px;
+    background: var(--surface-elevated);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md, 10px);
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -232,11 +232,11 @@
 }
 
 .shareText {
-    background: #0d1525;
-    border: 1px dashed #334155;
+    background: var(--surface-card);
+    border: 1px dashed var(--border-default);
     border-radius: 8px;
     padding: 10px;
-    color: #e5e7eb;
+    color: var(--text-primary);
     font-size: 0.95rem;
     line-height: 1.4;
 }
@@ -249,32 +249,50 @@
 }
 
 .shareStatus {
-    color: #a3e635;
+    color: var(--color-success);
     font-size: 0.85rem;
 }
 
 .offlineNote {
-    color: #9ca3af;
+    color: var(--text-muted);
     font-size: 0.9rem;
     padding: 6px 8px;
-    border: 1px dashed #334155;
+    border: 1px dashed var(--border-default);
     border-radius: 8px;
 }
 
 .cta {
-    background: linear-gradient(135deg, #2563eb, #1d4ed8);
-    border: 1px solid #1d4ed8;
-    color: #e5e7eb;
-    border-radius: 10px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+    border: 1px solid var(--accent-strong);
+    color: var(--text-primary);
+    border-radius: var(--radius-md, 10px);
     padding: 10px 14px;
     cursor: pointer;
+    transition: transform var(--duration-fast, 120ms) var(--ease-out, ease-out),
+                box-shadow var(--duration-fast, 120ms);
+}
+
+.cta:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.cta:active {
+    transform: scale(0.97);
 }
 
 .secondary {
     background: transparent;
-    border: 1px solid #334155;
-    color: #e5e7eb;
-    border-radius: 10px;
+    border: 1px solid var(--border-default);
+    color: var(--text-primary);
+    border-radius: var(--radius-md, 10px);
     padding: 10px 14px;
     cursor: pointer;
+    transition: border-color var(--duration-fast, 120ms),
+                background var(--duration-fast, 120ms);
+}
+
+.secondary:hover {
+    border-color: var(--accent);
+    background: rgba(255, 255, 255, 0.04);
 }

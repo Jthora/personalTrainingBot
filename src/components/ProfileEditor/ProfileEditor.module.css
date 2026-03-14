@@ -91,3 +91,10 @@
 .closeBtn:hover {
   background: rgba(255, 255, 255, 0.08);
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .overlay {
+    animation: none !important;
+    transition: none !important;
+  }
+}

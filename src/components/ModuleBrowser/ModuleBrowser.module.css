@@ -17,18 +17,26 @@
 .tile {
   background: var(--surface-raised, #1a1a2e);
   border: 1px solid var(--border-subtle, #2a2a4a);
-  border-radius: 8px;
+  border-left: 3px solid var(--accent, #6c63ff);
+  border-radius: var(--radius-md, 10px);
   padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   cursor: pointer;
-  transition: border-color 0.15s, box-shadow 0.15s;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
 
 .tile:hover {
   border-color: var(--accent, #6c63ff);
-  box-shadow: 0 2px 8px rgba(108, 99, 255, 0.15);
+  box-shadow: var(--shadow-md, 0 4px 16px rgba(0, 0, 0, 0.35));
+  transform: translateY(-2px);
+}
+
+.disciplineIcon {
+  font-size: 1.1rem;
+  margin-right: 0.35rem;
+  vertical-align: middle;
 }
 
 .tileCore {

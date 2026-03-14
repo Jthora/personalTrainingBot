@@ -7,6 +7,7 @@
 
 import React, { useMemo, useState } from 'react';
 import type { ScoreDataPoint } from '../../store/ProgressSnapshotStore';
+import { getDisciplineColor } from '../../data/disciplineTheme';
 import styles from './ScoreLineChart.module.css';
 
 export interface DomainSeries {
@@ -27,31 +28,11 @@ export interface ScoreLineChartProps {
   days?: number;
 }
 
-/* ── Domain color palette ── */
-const DOMAIN_COLORS: Record<string, string> = {
-  cybersecurity: '#5A7FFF',
-  fitness: '#22c55e',
-  combat: '#ef4444',
-  espionage: '#a855f7',
-  intelligence: '#06b6d4',
-  martial_arts: '#f97316',
-  dance: '#ec4899',
-  equations: '#14b8a6',
-  psiops: '#8b5cf6',
-  war_strategy: '#eab308',
-  web_three: '#3b82f6',
-  investigation: '#64748b',
-  agencies: '#6366f1',
-  counter_biochem: '#84cc16',
-  counter_psyops: '#f43f5e',
-  self_sovereignty: '#d946ef',
-  anti_psn: '#0ea5e9',
-  anti_tcs_idc_cbc: '#78716c',
-  space_force: '#818cf8',
-};
-
+/**
+ * @deprecated Use getDisciplineColor from disciplineTheme instead.
+ */
 export function getDomainColor(domainId: string): string {
-  return DOMAIN_COLORS[domainId] ?? '#5A7FFF';
+  return getDisciplineColor(domainId);
 }
 
 const PADDING = { top: 20, right: 16, bottom: 28, left: 36 };

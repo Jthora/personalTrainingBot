@@ -10,7 +10,7 @@ import { mapAllAARsToDebriefOutcomes } from '../../utils/readiness/aarBridge';
 import OperativeIdentityCard from '../../components/OperativeIdentityCard/OperativeIdentityCard';
 import CompetencyChart from '../../components/CompetencyChart/CompetencyChart';
 import ScoreLineChart from '../../components/ScoreLineChart/ScoreLineChart';
-import { getDomainColor } from '../../components/ScoreLineChart/ScoreLineChart';
+import { getDisciplineColor } from '../../data/disciplineTheme';
 import ActivityHeatmap from '../../components/ActivityHeatmap/ActivityHeatmap';
 import ProgressSnapshotStore from '../../store/ProgressSnapshotStore';
 import { DOMAIN_CATALOG } from '../../utils/readiness/domainProgress';
@@ -43,7 +43,7 @@ const StatsSurface: React.FC = () => {
     return activeDomains.map((d) => ({
       domainId: d.domainId,
       domainName: d.domainName,
-      color: getDomainColor(d.domainId),
+      color: getDisciplineColor(d.domainId),
       data: ProgressSnapshotStore.getScoreHistory(d.domainId, 30),
     }));
   }, [readiness.domainProgress]);

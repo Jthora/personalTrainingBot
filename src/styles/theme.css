@@ -1,26 +1,97 @@
 @font-face {
     font-family: 'Aldrich';
     src: url('../assets/fonts/Aldrich-Regular.ttf') format('truetype');
+    font-display: swap;
 }
 
+/* ─── Design Foundation ──────────────────────────────────────────────────── */
+
 :root {
-    --handler-accent: #5A7FFF;
-    --handler-accent-strong: #3B5DCF;
-    --handler-accent-soft: rgba(90, 127, 255, 0.2);
-    --handler-glow: #8FAFFF;
-    --handler-border: rgba(90, 127, 255, 0.4);
+    /* ── Accent palette ── */
+    --accent: #5A7FFF;
+    --accent-strong: #3B5DCF;
+    --accent-soft: rgba(90, 127, 255, 0.15);
+    --accent-glow: #8FAFFF;
+    --accent-border: rgba(90, 127, 255, 0.35);
 
-    --header-height: 60px;
+    /* Legacy aliases — keeping for backward compat */
+    --handler-accent: var(--accent);
+    --handler-accent-strong: var(--accent-strong);
+    --handler-accent-soft: var(--accent-soft);
+    --handler-glow: var(--accent-glow);
+    --handler-border: var(--accent-border);
 
+    /* ── Semantic colors ── */
+    --color-success: #22c55e;
+    --color-success-soft: rgba(34, 197, 94, 0.15);
+    --color-warning: #eab308;
+    --color-warning-soft: rgba(234, 179, 8, 0.15);
+    --color-danger: #ef4444;
+    --color-danger-soft: rgba(239, 68, 68, 0.15);
+    --color-gold: #F5C542;
+    --color-gold-soft: rgba(245, 197, 66, 0.15);
+
+    /* ── Surfaces (dark → light elevation) ── */
     --surface-base: #040709;
     --surface-muted: #0A0F1A;
     --surface-elevated: #101A2B;
     --surface-card: #172238;
+    --surface-raised: #1E2D4A;
 
+    /* ── Borders ── */
+    --border-subtle: rgba(227, 236, 255, 0.08);
+    --border-default: rgba(227, 236, 255, 0.12);
+    --border-strong: rgba(227, 236, 255, 0.2);
+
+    /* ── Text ── */
     --text-primary: #E3ECFF;
-    --text-muted: rgba(227, 236, 255, 0.75);
     --text-secondary: rgba(227, 236, 255, 0.68);
+    --text-muted: rgba(227, 236, 255, 0.45);
+    --text-accent: var(--accent-glow);
 
+    /* ── Typography ── */
+    --font-display: 'Aldrich', 'Arial Black', sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+
+    --type-h1: clamp(22px, 3.5vw, 28px);
+    --type-h2: clamp(18px, 2.8vw, 22px);
+    --type-h3: clamp(16px, 2.2vw, 18px);
+    --type-body: clamp(13px, 1.6vw, 15px);
+    --type-caption: clamp(11px, 1.3vw, 12px);
+
+    /* Legacy aliases */
+    --mission-type-h1: var(--type-h1);
+    --mission-type-h2: var(--type-h2);
+    --mission-type-h3: var(--type-h3);
+    --mission-type-body: var(--type-body);
+    --mission-type-caption: var(--type-caption);
+
+    /* ── Spacing scale (4px base) ── */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 12px;
+    --space-lg: 16px;
+    --space-xl: 24px;
+    --space-2xl: 32px;
+    --space-3xl: 48px;
+
+    /* ── Radius ── */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+    --radius-pill: 999px;
+
+    /* ── Shadows (elevation) ── */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.6);
+    --shadow-glow: 0 0 20px rgba(90, 127, 255, 0.15);
+
+    /* ── Layout ── */
+    --header-height: 60px;
+
+    /* ── Severity (mission system) ── */
     --mission-severity-low-bg: rgba(59, 130, 246, 0.14);
     --mission-severity-low-border: rgba(59, 130, 246, 0.35);
     --mission-severity-low-text: #93c5fd;
@@ -45,28 +116,69 @@
     --mission-state-error-border: rgba(239, 68, 68, 0.3);
     --mission-state-ready-bg: var(--surface-card);
 
-    --mission-type-h1: clamp(22px, 3.5vw, 28px);
-    --mission-type-h2: clamp(18px, 2.8vw, 22px);
-    --mission-type-h3: clamp(16px, 2.2vw, 18px);
-    --mission-type-body: clamp(13px, 1.6vw, 15px);
-    --mission-type-caption: clamp(11px, 1.3vw, 12px);
-
+    /* ── Legacy compat ── */
     --primary-bg-color: var(--surface-base);
     --secondary-bg-color: var(--surface-elevated);
     --primary-text-color: var(--text-primary);
-    --secondary-text-color: var(--handler-glow);
-    --border-color: var(--handler-border);
+    --secondary-text-color: var(--accent-glow);
+    --border-color: var(--accent-border);
     --padding: 0px;
     --border-radius: 5px;
 }
 
+/* ─── Base ───────────────────────────────────────────────────────────────── */
+
 body {
-    background-color: var(--primary-bg-color);
-    color: var(--primary-text-color);
-    font-family: 'Aldrich', Arial, sans-serif;
+    background-color: var(--surface-base);
+    background-image:
+        radial-gradient(ellipse at 20% 0%, rgba(90, 127, 255, 0.04) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 100%, rgba(139, 92, 246, 0.03) 0%, transparent 60%);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: var(--type-body);
+    line-height: 1.5;
     margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+}
+
+code, pre, .mono {
+    font-family: var(--font-mono);
 }
 
 html {
     scroll-padding-top: calc(var(--header-height, 60px) + 16px);
+}
+
+/* ─── Scrollbar ──────────────────────────────────────────────────────────── */
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(227, 236, 255, 0.12);
+    border-radius: var(--radius-pill);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(227, 236, 255, 0.2);
+}
+
+/* ─── Focus visible ──────────────────────────────────────────────────────── */
+
+:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
 }

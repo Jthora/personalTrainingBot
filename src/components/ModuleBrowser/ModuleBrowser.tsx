@@ -17,7 +17,7 @@ import OperativeProfileStore from '../../store/OperativeProfileStore';
 import { DOMAIN_CATALOG, deriveDomainSnapshot } from '../../utils/readiness/domainProgress';
 import type { DomainProgress } from '../../utils/readiness/domainProgress';
 import Sparkline from '../Sparkline/Sparkline';
-import { getDomainColor } from '../ScoreLineChart/ScoreLineChart';
+import { getDiscipline, getDisciplineColor } from '../../data/disciplineTheme';
 import ProgressSnapshotStore from '../../store/ProgressSnapshotStore';
 import styles from './ModuleBrowser.module.css';
 
@@ -108,6 +108,7 @@ const ModuleBrowser: React.FC<ModuleBrowserProps> = ({ onSelectModule, onQuickTr
           const isSelected = cache.isModuleSelected(domain.id);
           const sr = CardProgressStore.getModuleReviewStats(domain.id);
           const isCore = coreSet.has(domain.id);
+          const disc = getDiscipline(domain.id);
           const isSecondary = secondarySet.has(domain.id);
 
           const tileClass = [
@@ -125,9 +126,11 @@ const ModuleBrowser: React.FC<ModuleBrowserProps> = ({ onSelectModule, onQuickTr
               role="button"
               tabIndex={0}
               onKeyDown={(e) => e.key === 'Enter' && onSelectModule(domain.id)}
+              style={{ borderLeftColor: disc.color, background: disc.bgTint }}
             >
               <div className={styles.tileHeader}>
                 <span className={styles.moduleName}>
+                  <span className={styles.disciplineIcon}>{disc.icon}</span>
                   {domain.name}
                   {isCore && <span className={styles.focusBadge}>Core</span>}
                   {isSecondary && <span className={styles.secondaryBadge}>Focus</span>}
@@ -164,13 +167,13 @@ const ModuleBrowser: React.FC<ModuleBrowserProps> = ({ onSelectModule, onQuickTr
 
               <div className={styles.scoreRow}>
                 <div className={styles.scoreBar}>
-                  <div className={styles.scoreFill} style={{ width: `${score}%` }} />
+                  <div className={styles.scoreFill} style={{ width: `${score}%`, background: disc.color }} />
                 </div>
                 <Sparkline
                   data={ProgressSnapshotStore.getScoreHistory(domain.id, 7)}
                   width={48}
                   height={16}
-                  color={getDomainColor(domain.id)}
+                  color={getDisciplineColor(domain.id)}
                 />
               </div>
 

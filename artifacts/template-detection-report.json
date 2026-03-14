@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-03-14T02:24:36.624Z",
+  "generatedAt": "2026-03-14T03:44:16.787Z",
   "totalModules": 19,
-  "totalExercises": 11732,
+  "totalExercises": 20640,
   "totalTemplated": 0,
   "templatePct": 0,
   "byPattern": {},
@@ -10,7 +10,7 @@
     {
       "moduleId": "agencies",
       "moduleTitle": "Agencies",
-      "totalExercises": 150,
+      "totalExercises": 300,
       "templatedExercises": 0,
       "byType": {},
       "byPattern": {},
@@ -19,7 +19,7 @@
     {
       "moduleId": "anti_psn",
       "moduleTitle": "Psychopaths/Sociopaths/Narcissists",
-      "totalExercises": 1350,
+      "totalExercises": 2250,
       "templatedExercises": 0,
       "byType": {},
       "byPattern": {},
@@ -28,7 +28,7 @@
     {
       "moduleId": "anti_tcs_idc_cbc",
       "moduleTitle": "TCS/IDC/CBC",
-      "totalExercises": 1665,
+      "totalExercises": 2775,
       "templatedExercises": 0,
       "byType": {},
       "byPattern": {},
@@ -37,7 +37,7 @@
     {
       "moduleId": "combat",
       "moduleTitle": "Combat",
-      "totalExercises": 270,
+      "totalExercises": 450,
       "templatedExercises": 0,
       "byType": {},
       "byPattern": {},
@@ -46,7 +46,7 @@
     {
       "moduleId": "counter_biochem",
       "moduleTitle": "Counter BioChem",
-      "totalExercises": 188,
+      "totalExercises": 376,
       "templatedExercises": 0,
       "byType": {},
       "byPattern": {},
@@ -55,7 +55,7 @@
     {
       "moduleId": "counter_psyops",
       "moduleTitle": "Counter PsyOps",
-      "totalExercises": 2160,
+      "totalExercises": 3600,
       "templatedExercises": 0,
       "byType": {},
       "byPattern": {},
@@ -64,7 +64,7 @@
     {
       "moduleId": "cybersecurity",
       "moduleTitle": "Cybersecurity",
-      "totalExercises": 429,
+      "totalExercises": 715,
       "templatedExercises": 0,
       "byType": {},
       "byPattern": {},
@@ -73,7 +73,7 @@
     {
       "moduleId": "dance",
       "moduleTitle": "Dance Training",
-      "totalExercises": 220,
+      "totalExercises": 550,
       "templatedExercises": 0,
       "byType": {},
       "byPattern": {},
@@ -82,7 +82,7 @@
     {
       "moduleId": "equations",
       "moduleTitle": "Equations",
-      "totalExercises": 794,
+      "totalExercises": 1588,
       "templatedExercises": 0,
       "byType": {},
       "byPattern": {},
@@ -91,7 +91,7 @@
     {
       "moduleId": "espionage",
       "moduleTitle": "Espionage",
-      "totalExercises": 180,
+      "totalExercises": 360,
       "templatedExercises": 0,
       "byType": {},
       "byPattern": {},
@@ -100,7 +100,7 @@
     {
       "moduleId": "fitness_training",
       "moduleTitle": "Field Conditioning",
-      "totalExercises": 360,
+      "totalExercises": 900,
       "templatedExercises": 0,
       "byType": {},
       "byPattern": {},
@@ -109,7 +109,7 @@
     {
       "moduleId": "intelligence",
       "moduleTitle": "Intelligence",
-      "totalExercises": 543,
+      "totalExercises": 905,
       "templatedExercises": 0,
       "byType": {},
       "byPattern": {},
@@ -118,7 +118,7 @@
     {
       "moduleId": "investigation",
       "moduleTitle": "Investigation",
-      "totalExercises": 270,
+      "totalExercises": 360,
       "templatedExercises": 0,
       "byType": {},
       "byPattern": {},
@@ -127,7 +127,7 @@
     {
       "moduleId": "martial_arts",
       "moduleTitle": "Martial Arts Training",
-      "totalExercises": 540,
+      "totalExercises": 900,
       "templatedExercises": 0,
       "byType": {},
       "byPattern": {},
@@ -136,7 +136,7 @@
     {
       "moduleId": "psiops",
       "moduleTitle": "PsiOps",
-      "totalExercises": 438,
+      "totalExercises": 730,
       "templatedExercises": 0,
       "byType": {},
       "byPattern": {},
@@ -145,7 +145,7 @@
     {
       "moduleId": "self_sovereignty",
       "moduleTitle": "Self Sovereignty",
-      "totalExercises": 1407,
+      "totalExercises": 2345,
       "templatedExercises": 0,
       "byType": {},
       "byPattern": {},
@@ -154,7 +154,7 @@
     {
       "moduleId": "space_force",
       "moduleTitle": "Space Force Command",
-      "totalExercises": 408,
+      "totalExercises": 816,
       "templatedExercises": 0,
       "byType": {},
       "byPattern": {},
@@ -163,7 +163,7 @@
     {
       "moduleId": "war_strategy",
       "moduleTitle": "War Strategy",
-      "totalExercises": 180,
+      "totalExercises": 360,
       "templatedExercises": 0,
       "byType": {},
       "byPattern": {},
@@ -172,7 +172,7 @@
     {
       "moduleId": "web_three",
       "moduleTitle": "Web3 Development & Strategy",
-      "totalExercises": 180,
+      "totalExercises": 360,
       "templatedExercises": 0,
       "byType": {},
       "byPattern": {},

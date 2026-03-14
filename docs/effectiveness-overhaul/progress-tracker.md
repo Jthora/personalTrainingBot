@@ -179,11 +179,11 @@
 
 #### Step 2.2.3 — Build Content Generation Pipeline
 
-- [ ] `100` Create `scripts/generateContent.ts` — AI-generates card JSON
-- [ ] `101` Integrate automated rubric validation (reject cards scoring < 6/10)
-- [ ] `102` Output to `generated-cards/{module}/{deck}.json` for human review
-- [ ] `103` Create per-module LLM system prompts with domain-specific context
-- [ ] `104` Integrate validation script with generation pipeline
+- [x] `100` Create `scripts/generateContent.ts` — AI-generates card JSON
+- [x] `101` Integrate automated rubric validation (reject cards scoring < 6/10)
+- [x] `102` Output to `generated-cards/{module}/{deck}.json` for human review
+- [x] `103` Create per-module LLM system prompts with domain-specific context
+- [x] `104` Integrate validation script with generation pipeline
 
 #### Step 2.2.4 — Build Card Editor Tooling
 
@@ -194,11 +194,11 @@
 
 #### Step 2.2.5 — Build Quiz Quality Metrics
 
-- [ ] `109` Create `scripts/quizQualityReport.ts`
-- [ ] `110` Derive accuracy rate per card from telemetry
-- [ ] `111` Derive time-per-question per card from telemetry
-- [ ] `112` Derive retry rate per deck from telemetry
-- [ ] `113` Derive SR interval distribution per module from telemetry
+- [x] `109` Create `scripts/quizQualityReport.ts`
+- [x] `110` Derive accuracy rate per card from telemetry
+- [x] `111` Derive time-per-question per card from telemetry
+- [x] `112` Derive retry rate per deck from telemetry
+- [x] `113` Derive SR interval distribution per module from telemetry
 
 #### Step 2.2.6 — CI Integration
 
@@ -245,73 +245,73 @@
 
 #### Step 2.4.1 — Pilot Module 1: Cybersecurity Fundamentals
 
-- [ ] `138` Generate initial card batch via content pipeline
-- [ ] `139` Human review & editing pass
-- [ ] `140` Validate all cards score ≥ 6/10 on rubric
-- [ ] `141` Replace templated exercises with domain-specific exercises
-- [ ] `142` Add scenario exercises where applicable
-- [ ] `143` Add quiz explanations to all quiz answers
-- [ ] `144` Deploy pilot cards and gather telemetry
+- [x] `138` Generate initial card batch via content pipeline
+- [x] `139` Human review & editing pass
+- [x] `140` Validate all cards score ≥ 6/10 on rubric
+- [x] `141` Replace templated exercises with domain-specific exercises
+- [x] `142` Add scenario exercises where applicable
+- [x] `143` Add quiz explanations to all quiz answers
+- [x] `144` Deploy pilot cards and gather telemetry
 
 #### Step 2.4.2 — Pilot Module 2: Investigative Techniques
 
-- [ ] `145` Generate initial card batch via content pipeline
-- [ ] `146` Human review & editing pass
-- [ ] `147` Validate all cards score ≥ 6/10 on rubric
-- [ ] `148` Replace templated exercises with domain-specific exercises
-- [ ] `149` Add scenario exercises where applicable
-- [ ] `150` Add quiz explanations to all quiz answers
-- [ ] `151` Deploy pilot cards and gather telemetry
+- [x] `145` Generate initial card batch via content pipeline
+- [x] `146` Human review & editing pass
+- [x] `147` Validate all cards score ≥ 6/10 on rubric
+- [x] `148` Replace templated exercises with domain-specific exercises
+- [x] `149` Add scenario exercises where applicable
+- [x] `150` Add quiz explanations to all quiz answers
+- [x] `151` Deploy pilot cards and gather telemetry
 
 #### Step 2.4.3 — Pilot Retrospective
 
-- [ ] `152` Analyze telemetry from pilot modules (accuracy, time, retry rate)
-- [ ] `153` Compare pilot quiz metrics to pre-overhaul baseline
-- [ ] `154` Refine AI prompts and rubric based on pilot learnings
-- [ ] `155` Document authoring process improvements
+- [x] `152` Analyze telemetry from pilot modules (accuracy, time, retry rate)
+- [x] `153` Compare pilot quiz metrics to pre-overhaul baseline
+- [x] `154` Refine AI prompts and rubric based on pilot learnings
+- [x] `155` Document authoring process improvements
 
 ### Phase 2.5 — Scale Content Authoring
 
 #### Step 2.5.1 — Tier 1 Remaining Modules
 
-- [ ] `156` Author: Digital Forensics (generate → review → validate → deploy)
-- [ ] `157` Author: Financial Crimes Investigation
-- [ ] `158` Author: Criminal Psychology
+- [x] `156` Author: Digital Forensics (generate → review → validate → deploy)
+- [x] `157` Author: Financial Crimes Investigation
+- [x] `158` Author: Criminal Psychology
 
 #### Step 2.5.2 — Tier 2 Modules
 
-- [ ] `159` Author: Emergency Response
-- [ ] `160` Author: Geopolitical Analysis
-- [ ] `161` Author: Intelligence Analysis
-- [ ] `162` Author: Legal Framework
-- [ ] `163` Author: Physical Fitness
-- [ ] `164` Author: Surveillance & Counter-Surveillance
-- [ ] `165` Author: Counter-Terrorism
-- [ ] `166` Author: Tactical Operations
+- [x] `159` Author: Emergency Response
+- [x] `160` Author: Geopolitical Analysis
+- [x] `161` Author: Intelligence Analysis
+- [x] `162` Author: Legal Framework
+- [x] `163` Author: Physical Fitness
+- [x] `164` Author: Surveillance & Counter-Surveillance
+- [x] `165` Author: Counter-Terrorism
+- [x] `166` Author: Tactical Operations
 
 #### Step 2.5.3 — Tier 3 Modules
 
-- [ ] `167` Author: Communication Skills
-- [ ] `168` Author: Covert Operations
-- [ ] `169` Author: Ethical Decision Making
-- [ ] `170` Author: Leadership & Team Dynamics
-- [ ] `171` Author: Protective Security
-- [ ] `172` Author: Weapons & Defensive Tactics
+- [x] `167` Author: Communication Skills
+- [x] `168` Author: Covert Operations
+- [x] `169` Author: Ethical Decision Making
+- [x] `170` Author: Leadership & Team Dynamics
+- [x] `171` Author: Protective Security
+- [x] `172` Author: Weapons & Defensive Tactics
 
 ### Phase 2.6 — Content Validation & Measurement
 
 #### Step 2.6.1 — Final Quality Gate
 
-- [ ] `173` Run `validateContent.ts` across all 19 modules — zero errors
+- [x] `173` Run `validateContent.ts` across all 19 modules — zero errors
 - [x] `174` Run `detectTemplates.ts` — zero templated exercises remaining
-- [ ] `175` Run `quizQualityReport.ts` — all modules meet quality thresholds
-- [ ] `176` Verify total card count target (~5,500-6,400 cards)
+- [x] `175` Run `quizQualityReport.ts` — all modules meet quality thresholds
+- [x] `176` Verify total card count target (~5,500-6,400 cards)
 
 #### Step 2.6.2 — Score Verification
 
-- [ ] `177` Re-score content quality dimension (target: 2/10 → 7/10)
-- [ ] `178` Re-score quiz effectiveness dimension (maintain 7/10 or improve)
-- [ ] `179` Update scoring in `docs/effectiveness-overhaul/README.md`
+- [x] `177` Re-score content quality dimension (target: 2/10 → 7/10)
+- [x] `178` Re-score quiz effectiveness dimension (maintain 7/10 or improve)
+- [x] `179` Update scoring in `docs/effectiveness-overhaul/README.md`
 
 ---
 

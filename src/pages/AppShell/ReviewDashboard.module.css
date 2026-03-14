@@ -1,0 +1,131 @@
+@import '../../styles/theme.css';
+
+.dashboard {
+  display: grid;
+  gap: 16px;
+}
+
+.title {
+  margin: 0;
+  font-size: var(--mission-type-h2, 1.4rem);
+  color: var(--mission-trust-verified, var(--text-primary));
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: var(--mission-type-body, 0.9rem);
+}
+
+.statsRow {
+  display: flex;
+  gap: 12px;
+}
+
+.stat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  background: var(--surface-card);
+}
+
+.statValue {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--handler-accent, #5a7fff);
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+.startButton {
+  background: var(--handler-accent, #5a7fff);
+  color: #0a0f1a;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.startButton:hover {
+  opacity: 0.9;
+}
+
+.startButton:active {
+  transform: scale(0.98);
+}
+
+.moduleList {
+  display: grid;
+  gap: 8px;
+}
+
+.moduleListTitle {
+  margin: 0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+}
+
+.moduleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  background: var(--surface-card);
+}
+
+.moduleName {
+  font-size: 0.85rem;
+  color: var(--text-primary);
+}
+
+.moduleBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 24px;
+  padding: 0 6px;
+  border-radius: 12px;
+  background: rgba(248, 113, 113, 0.2);
+  color: #f87171;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 32px 16px;
+  text-align: center;
+}
+
+.emptyIcon {
+  font-size: 2.5rem;
+}
+
+.emptyText {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: var(--mission-type-body, 0.9rem);
+  max-width: 360px;
+}

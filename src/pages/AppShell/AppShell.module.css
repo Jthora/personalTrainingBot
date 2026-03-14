@@ -1,0 +1,216 @@
+@import '../../styles/theme.css';
+
+/* ── Shell layout ── */
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--surface-base);
+  color: var(--text-primary);
+}
+
+.shell {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: calc(var(--header-height, 60px) + env(safe-area-inset-top, 0px) + 16px) 20px 24px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-height: 70vh;
+  overflow: visible;
+}
+
+/* ── Desktop tab bar ── */
+.tabBar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  background: var(--surface-card);
+}
+
+.tab {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--text-primary);
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  font-size: var(--mission-type-caption, 0.8rem);
+  transition: border-color 0.2s ease, background 0.2s ease;
+  white-space: nowrap;
+}
+
+.tab:hover {
+  border-color: var(--handler-accent);
+  background: rgba(90, 127, 255, 0.08);
+}
+
+.tabActive {
+  border-color: var(--handler-accent);
+  background: rgba(90, 127, 255, 0.12);
+}
+
+.tabDivider {
+  width: 1px;
+  align-self: stretch;
+  background: rgba(255, 255, 255, 0.12);
+  margin: 4px 4px;
+}
+
+.tabBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  margin-left: 6px;
+  border-radius: 9px;
+  background: var(--handler-accent);
+  color: #0a0f1a;
+  font-size: 0.65rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* ── Mission Mode section ── */
+.missionSection {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  background: var(--surface-card);
+  padding: 6px 8px;
+}
+
+.missionLabel {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+  padding-left: 6px;
+}
+
+.missionTabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+/* ── Mobile bottom nav ── */
+.bottomNav {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: calc(56px + env(safe-area-inset-bottom, 0px));
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  background: var(--surface-card);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.bottomNavItem {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 6px 0;
+  transition: color 0.15s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.bottomNavItem:active {
+  opacity: 0.7;
+}
+
+.bottomNavActive {
+  color: var(--handler-accent);
+}
+
+.bottomNavIcon {
+  position: relative;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.bottomNavBadge {
+  position: absolute;
+  top: -4px;
+  right: -10px;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  border-radius: 8px;
+  background: #f87171;
+  color: #fff;
+  font-size: 0.55rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.bottomNavLabel {
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* ── Action palette button ── */
+.paletteButton {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: var(--text-primary);
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: var(--mission-type-caption, 0.8rem);
+  font-weight: 600;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.paletteButton:hover {
+  border-color: var(--handler-accent);
+  background: rgba(90, 127, 255, 0.1);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .shell {
+    padding: calc(var(--header-height, 60px) + env(safe-area-inset-top, 0px) + 12px) 14px 20px;
+    padding-bottom: calc(56px + env(safe-area-inset-bottom, 0px) + 16px);
+  }
+
+  .tabBar {
+    display: none;
+  }
+
+  .missionSection {
+    display: none;
+  }
+
+  .bottomNav {
+    display: flex;
+  }
+}

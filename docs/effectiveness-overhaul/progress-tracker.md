@@ -303,7 +303,7 @@
 #### Step 2.6.1 — Final Quality Gate
 
 - [ ] `173` Run `validateContent.ts` across all 19 modules — zero errors
-- [ ] `174` Run `detectTemplates.ts` — zero templated exercises remaining
+- [x] `174` Run `detectTemplates.ts` — zero templated exercises remaining
 - [ ] `175` Run `quizQualityReport.ts` — all modules meet quality thresholds
 - [ ] `176` Verify total card count target (~5,500-6,400 cards)
 
@@ -321,48 +321,48 @@
 
 #### Step 3.1.1 — Tab & Surface Mapping
 
-- [ ] `180` Design Train tab surface — module browser, deck selection, drill, quiz, TodayLauncher
-- [ ] `181` Design Train tab sub-routes — `/train`, `/train/module/:moduleId`, `/train/deck/:deckId`, `/train/drill`, `/train/quiz`
-- [ ] `182` Design Review tab surface — SR due cards, review quiz, future flashcard mode
-- [ ] `183` Design Review tab sub-routes — `/review`, `/review/quiz`, `/review/flashcards`
-- [ ] `184` Design Progress tab surface — StatsSurface, charts, XP, badges, challenges
-- [ ] `185` Design Profile tab surface — identity, settings, data management, journal, Mission Mode toggle
-- [ ] `186` Design Profile sub-routes — `/profile`, `/profile/edit`, `/profile/journal`, `/profile/data`
-- [ ] `187` Map all 10 current surfaces to 4 new tabs (document surface disposition)
+- [x] `180` Design Train tab surface — module browser, deck selection, drill, quiz, TodayLauncher
+- [x] `181` Design Train tab sub-routes — `/train`, `/train/module/:moduleId`, `/train/deck/:deckId`, `/train/drill`, `/train/quiz`
+- [x] `182` Design Review tab surface — SR due cards, review quiz, future flashcard mode
+- [x] `183` Design Review tab sub-routes — `/review`, `/review/quiz`, `/review/flashcards`
+- [x] `184` Design Progress tab surface — StatsSurface, charts, XP, badges, challenges
+- [x] `185` Design Profile tab surface — identity, settings, data management, journal, Mission Mode toggle
+- [x] `186` Design Profile sub-routes — `/profile`, `/profile/edit`, `/profile/journal`, `/profile/data`
+- [x] `187` Map all 10 current surfaces to 4 new tabs (document surface disposition)
 
 #### Step 3.1.2 — Mission Mode Design
 
-- [ ] `188` Design Mission Mode toggle — off by default, Profile → Settings, persisted localStorage
-- [ ] `189` Design Mission Mode secondary nav bar — Brief → Triage → Case → Signal → Debrief
-- [ ] `190` Decide route accessibility policy (recommended: routes always accessible, toggle controls tab visibility)
+- [x] `188` Design Mission Mode toggle — off by default, Profile → Settings, persisted localStorage
+- [x] `189` Design Mission Mode secondary nav bar — Brief → Triage → Case → Signal → Debrief
+- [x] `190` Decide route accessibility policy (recommended: routes always accessible, toggle controls tab visibility)
 
 #### Step 3.1.3 — Mobile & Interaction Design
 
-- [ ] `191` Design mobile bottom nav — 4 icons (📚 Train, 🔄 Review, 📊 Progress, 👤 Profile)
-- [ ] `192` Update MissionActionPalette design — default mode vs Mission Mode action sets
-- [ ] `193` Design keyboard shortcuts — ⌘1-4 default, ⌘5-0 Mission Mode
+- [x] `191` Design mobile bottom nav — 4 icons (📚 Train, 🔄 Review, 📊 Progress, 👤 Profile)
+- [x] `192` Update MissionActionPalette design — default mode vs Mission Mode action sets
+- [x] `193` Design keyboard shortcuts — ⌘1-4 default, ⌘5-0 Mission Mode
 
 ### Phase 3.2 — AppShell Implementation
 
 #### Step 3.2.1 — Create AppShell Component
 
-- [ ] `194` Create `src/pages/AppShell/AppShell.tsx` (~250 lines, simplified from MissionShell 654 lines)
-- [ ] `195` Implement `primaryTabs` array — 4 tabs with paths, labels, icons
-- [ ] `196` Implement `missionTabs` array — 5 mission tabs with entity icons
-- [ ] `197` Implement tab array `useMemo` — conditionally concat `missionTabs` when Mission Mode enabled
-- [ ] `198` Retain: Header, CelebrationLayer, 4-tab bar, Action Palette (⌘K), onboarding, mobile bottom nav
-- [ ] `199` Remove from MissionShell: stepTools, assistantCard, completedSteps, guidanceMode toggle
+- [x] `194` Create `src/pages/AppShell/AppShell.tsx` (~250 lines, simplified from MissionShell 654 lines)
+- [x] `195` Implement `primaryTabs` array — 4 tabs with paths, labels, icons
+- [x] `196` Implement `missionTabs` array — 5 mission tabs with entity icons
+- [x] `197` Implement tab array `useMemo` — conditionally concat `missionTabs` when Mission Mode enabled
+- [x] `198` Retain: Header, CelebrationLayer, 4-tab bar, Action Palette (⌘K), onboarding, mobile bottom nav
+- [x] `199` Remove from MissionShell: stepTools, assistantCard, completedSteps, guidanceMode toggle
 
 #### Step 3.2.2 — Route Configuration
 
-- [ ] `200` Build new route tree in Routes.tsx — all primary routes
-- [ ] `201` Add Mission Mode routes — `/mission/brief` through `/mission/debrief`
-- [ ] `202` Add legacy redirect routes — 5+ `<Navigate replace />` redirects
-- [ ] `203` Implement conditional redirect logic — mission routes redirect to `/train` only when Mission Mode off
+- [x] `200` Build new route tree in Routes.tsx — all primary routes
+- [x] `201` Add Mission Mode routes — `/mission/brief` through `/mission/debrief`
+- [x] `202` Add legacy redirect routes — 5+ `<Navigate replace />` redirects
+- [x] `203` Implement conditional redirect logic — mission routes redirect to `/train` only when Mission Mode off
 
 #### Step 3.2.3 — MissionShell Deprecation
 
-- [ ] `204` Phase 1: Keep MissionShell for Mission Mode `/mission/*` routes; AppShell for primary tabs
+- [x] `204` Phase 1: Keep MissionShell for Mission Mode `/mission/*` routes; AppShell for primary tabs
 - [ ] `205` Phase 2: Extract assistantCard into standalone component
 - [ ] `206` Phase 2: Extract stepTools into standalone component
 - [ ] `207` Phase 2: Delete MissionShell.tsx
@@ -391,8 +391,8 @@
 
 #### Step 3.3.4 — Mobile & Keyboard
 
-- [ ] `219` Update mobile tab bar component — 4 primary tab icons
-- [ ] `220` Update keyboard shortcuts — ⌘1-4 primary, ⌘5-0 Mission Mode only
+- [x] `219` Update mobile tab bar component — 4 primary tab icons
+- [x] `220` Update keyboard shortcuts — ⌘1-4 primary, ⌘5-0 Mission Mode only
 
 ### Phase 3.4 — Migration
 
@@ -422,8 +422,8 @@
 
 #### Step 3.5.1 — Staged Rollout
 
-- [ ] `234` Implement feature flag `ptb:shell-v2` in localStorage
-- [ ] `235` Build `ShellLayout` gate component — renders AppShell or MissionShell based on flag
+- [x] `234` Implement feature flag `ptb:shell-v2` in localStorage
+- [x] `235` Build `ShellLayout` gate component — renders AppShell or MissionShell based on flag
 - [ ] `236` Test both shells in parallel for 2-4 weeks
 
 #### Step 3.5.2 — Flag Removal
@@ -449,16 +449,16 @@
 #### Step 3.6.2 — Unit Test Updates
 
 - [ ] `249` Update ~8 MissionShell tests for route/tab assertion changes
-- [ ] `250` Add AppShell unit tests — tab rendering, Mission Mode toggle, route matching
+- [x] `250` Add AppShell unit tests — tab rendering, Mission Mode toggle, route matching
 
 ### Phase 3.7 — Validation & Measurement
 
 #### Step 3.7.1 — Score Verification
 
-- [ ] `251` Run full unit test suite — all pass
+- [x] `251` Run full unit test suite — all pass
 - [ ] `252` Run full E2E test suite — all pass
-- [ ] `253` Run TypeScript compiler — zero errors
-- [ ] `254` Run production build — clean
+- [x] `253` Run TypeScript compiler — zero errors
+- [x] `254` Run production build — clean
 - [ ] `255` Verify localStorage migration works for existing users
 - [ ] `256` Re-score shell/navigation dimension (target: 7/10 → 9/10)
 - [ ] `257` Update scoring in `docs/effectiveness-overhaul/README.md`

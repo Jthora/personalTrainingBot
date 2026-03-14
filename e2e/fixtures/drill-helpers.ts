@@ -117,14 +117,16 @@ export async function answerQuizQuestions(
       }
     }
 
-    // Advance to next question
+    // Advance to next question — wait for phase transition instead of sleeping
     const nextBtn = page.getByTestId('next-btn');
     if (await nextBtn.isVisible().catch(() => false)) {
       await nextBtn.click();
+      // Wait for next-btn to disappear (question transition) or results to show
+      await Promise.race([
+        nextBtn.waitFor({ state: 'hidden' }).catch(() => {}),
+        page.getByTestId('quiz-results').waitFor({ state: 'visible' }).catch(() => {}),
+      ]);
     }
-
-    // Hint: sometimes need a short pause for transitions
-    await page.waitForTimeout(300);
   }
 
   return answered;

@@ -1,4 +1,5 @@
 import React, { useState, useCallback, useSyncExternalStore } from 'react';
+import { createPortal } from 'react-dom';
 import styles from './ProfileEditor.module.css';
 import CallsignInput from '../CallsignInput/CallsignInput';
 import OperativeProfileStore from '../../store/OperativeProfileStore';
@@ -72,7 +73,7 @@ const ProfileEditor: React.FC = () => {
         </div>
       </div>
 
-      {overlayMode === 'archetype' && (
+      {overlayMode === 'archetype' && createPortal(
         <div className={styles.overlay} role="dialog" aria-label="Change archetype" data-testid="archetype-overlay">
           <div className={styles.overlayHeader}>
             <button
@@ -89,10 +90,11 @@ const ProfileEditor: React.FC = () => {
             onSelect={handleArchetypeSelect}
             onSkip={() => setOverlayMode(null)}
           />
-        </div>
+        </div>,
+        document.body,
       )}
 
-      {overlayMode === 'handler' && (
+      {overlayMode === 'handler' && createPortal(
         <div className={styles.overlay} role="dialog" aria-label="Change handler" data-testid="handler-overlay">
           <div className={styles.overlayHeader}>
             <button
@@ -110,7 +112,8 @@ const ProfileEditor: React.FC = () => {
             onSelect={handleHandlerSelect}
             onBack={() => setOverlayMode(null)}
           />
-        </div>
+        </div>,
+        document.body,
       )}
     </>
   );

@@ -5,7 +5,7 @@
  * renders QuizRunner, and navigates back on completion.
  */
 
-import React, { useMemo } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import QuizRunner from '../../components/QuizRunner/QuizRunner';
 import TrainingModuleCache from '../../cache/TrainingModuleCache';
@@ -24,7 +24,27 @@ const QuizSurface: React.FC = () => {
 
   const cache = TrainingModuleCache.getInstance();
 
+  const [cacheReady, setCacheReady] = useState(() => cache.isLoaded());
+
+  // Wait for training module cache to be loaded before generating questions
+  useEffect(() => {
+    if (cache.isLoaded()) {
+      setCacheReady(true);
+      return;
+    }
+    // Poll until cache is loaded (shards load async on app boot)
+    const id = setInterval(() => {
+      if (cache.isLoaded()) {
+        setCacheReady(true);
+        clearInterval(id);
+      }
+    }, 100);
+    return () => clearInterval(id);
+  }, [cache]);
+
   const { questions, sourceId, sourceType } = useMemo(() => {
+    if (!cacheReady) return { questions: [], sourceId: 'loading', sourceType: 'module' as const };
+
     let cards: Card[] = [];
     let srcId = 'unknown';
     let srcType: 'deck' | 'module' | 'review' = 'module';
@@ -69,7 +89,7 @@ const QuizSurface: React.FC = () => {
 
     const generated = generateQuiz(cards, 10);
     return { questions: generated, sourceId: srcId, sourceType: srcType };
-  }, [deckId, moduleId, mode, cache]);
+  }, [deckId, moduleId, mode, cache, cacheReady]);
 
   const handleComplete = () => {
     navigate('/mission/training');
@@ -78,6 +98,16 @@ const QuizSurface: React.FC = () => {
   const handleCancel = () => {
     navigate(-1);
   };
+
+  if (!cacheReady) {
+    return (
+      <section className={styles.surface} aria-label="Quiz">
+        <div style={{ textAlign: 'center', padding: '2rem' }}>
+          <p className={styles.body}>Loading training data…</p>
+        </div>
+      </section>
+    );
+  }
 
   if (questions.length === 0) {
     return (

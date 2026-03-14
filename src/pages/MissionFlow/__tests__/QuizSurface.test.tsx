@@ -78,6 +78,7 @@ const mockGetCardById = vi.fn();
 vi.mock('../../../cache/TrainingModuleCache', () => ({
   default: {
     getInstance: vi.fn(() => ({
+      isLoaded: () => true,
       getTrainingModule: (...args: unknown[]) => mockGetTrainingModule(...args),
       getCardById: (...args: unknown[]) => mockGetCardById(...args),
     })),

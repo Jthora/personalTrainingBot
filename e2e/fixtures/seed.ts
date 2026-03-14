@@ -7,7 +7,8 @@ export type Persona =
   | 'psi-operative'
   | 'cyber-sentinel'
   | 'returning-operative'
-  | 'veteran';
+  | 'veteran'
+  | 'grinder';
 
 // ── Concrete card IDs (verified against production shards) ────────
 export const FITNESS_MODULE_ID = 'fitness_training';
@@ -31,22 +32,35 @@ export const PSIOPS_CARD_IDS = [
 ] as const;
 
 // ── Today helper ──────────────────────────────────────────────────
+// Use LOCAL time (YYYY-MM-DD) to match the app's dayjs().format('YYYY-MM-DD').
+function localDateStr(d: Date): string {
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
 function todayStr(): string {
-  return new Date().toISOString().slice(0, 10);
+  return localDateStr(new Date());
+}
+
+function yesterdayStr(): string {
+  const d = new Date();
+  d.setDate(d.getDate() - 1);
+  return localDateStr(d);
 }
 
 function mondayStr(): string {
   const d = new Date();
   const day = d.getDay();
   const diff = d.getDate() - day + (day === 0 ? -6 : 1);
-  return new Date(d.setDate(diff)).toISOString().slice(0, 10);
+  d.setDate(diff);
+  return localDateStr(d);
 }
 
 function sundayStr(): string {
   const d = new Date();
   const day = d.getDay();
   const diff = d.getDate() - day + (day === 0 ? 0 : 7);
-  return new Date(d.setDate(diff)).toISOString().slice(0, 10);
+  d.setDate(diff);
+  return localDateStr(d);
 }
 
 // ── Persona presets ───────────────────────────────────────────────
@@ -166,6 +180,60 @@ export const PERSONAS: Record<Persona, Record<string, string>> = {
       lastRecap: null,
       quietMode: false,
     }),
+  },
+
+  grinder: {
+    'mission:guidance-overlay:v1': 'seen',
+    'mission:intake:v1': 'seen',
+    'operative:profile:v1': JSON.stringify({
+      archetypeId: 'psi_operative',
+      handlerId: 'tara_van_dekar',
+      callsign: 'Ironclad',
+      enrolledAt: '2026-01-10T00:00:00.000Z',
+    }),
+    'userProgress:v1': JSON.stringify({
+      version: 1,
+      streakCount: 5,
+      lastActiveDate: todayStr(),
+      streakFrozen: false,
+      xp: 2350,
+      level: 5,
+      totalDrillsCompleted: 47,
+      badges: ['streak_3', 'streak_7', 'completion_10'],
+      badgeUnlocks: [
+        { id: 'streak_3', unlockedAt: '2026-01-13T10:00:00.000Z' },
+        { id: 'streak_7', unlockedAt: '2026-01-17T10:00:00.000Z' },
+        { id: 'completion_10', unlockedAt: '2026-01-20T10:00:00.000Z' },
+      ],
+      dailyGoal: { target: 5, unit: 'ops', progress: 2, updatedAt: todayStr() },
+      weeklyGoal: {
+        target: 20,
+        unit: 'ops',
+        progress: 8,
+        updatedAt: todayStr(),
+        weekStart: mondayStr(),
+        weekEnd: sundayStr(),
+      },
+      challenges: [],
+      lastRecap: null,
+      quietMode: false,
+    }),
+    'ptb:drill-history:v1': JSON.stringify(
+      Array.from({ length: 10 }, (_, i) => {
+        const d = new Date();
+        d.setDate(d.getDate() - i);
+        return {
+          id: `drill-hist-${i}`,
+          drillId: `drill-${i}`,
+          title: `Training session ${i + 1}`,
+          elapsedSec: 120 + i * 30,
+          stepCount: 4,
+          completedAt: d.toISOString(),
+          selfAssessment: 3 + (i % 3),
+          domainId: 'psiops',
+        };
+      }),
+    ),
   },
 };
 

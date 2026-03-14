@@ -203,6 +203,12 @@ const QuizRunner: React.FC<QuizRunnerProps> = ({
     ? ((currentIndex + (phase === 'results' ? 1 : 0)) / questions.length) * 100
     : 0;
 
+  // Shuffle descriptions for term-match (stable per question)
+  const shuffledDescriptions = useMemo(
+    () => question?.matchPairs ? shuffle(question.matchPairs.map(([, d]) => d)) : [],
+    [question?.matchPairs],
+  );
+
   // Results screen
   if (phase === 'results') {
     const total = questions.length;
@@ -343,10 +349,7 @@ const QuizRunner: React.FC<QuizRunnerProps> = ({
             </div>
             <div className={styles.matchColumn}>
               <h4>Descriptions</h4>
-              {useMemo(
-                () => shuffle(question.matchPairs!.map(([, d]) => d)),
-                [question.matchPairs],
-              ).map((desc) => (
+              {shuffledDescriptions.map((desc) => (
                 <button
                   key={desc}
                   type="button"

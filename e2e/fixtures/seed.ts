@@ -325,3 +325,20 @@ export function withMissionContext(routePath: string): string {
     ? `${routePath}&${MISSION_CONTEXT_QUERY}`
     : `${routePath}?${MISSION_CONTEXT_QUERY}`;
 }
+
+/**
+ * Enable shellV2 feature flag via localStorage override.
+ * Call BEFORE page.goto() — uses addInitScript like seedPersona.
+ *
+ * When shellV2 is enabled, the root redirect goes to /train and
+ * AppShell renders with 4-tab layout instead of MissionShell.
+ */
+export async function seedShellV2(page: Page, enabled = true): Promise<void> {
+  await page.addInitScript((on) => {
+    const key = 'featureFlagOverrides';
+    const raw = window.localStorage.getItem(key);
+    const existing = raw ? JSON.parse(raw) : {};
+    existing.shellV2 = on;
+    window.localStorage.setItem(key, JSON.stringify(existing));
+  }, enabled);
+}

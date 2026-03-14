@@ -27,14 +27,14 @@ is honor-system with incentives to skip.
 
 | Dimension | Current | Target | Weight | Weighted Now | Weighted Target |
 |-----------|---------|--------|--------|-------------|----------------|
-| Onboarding | 7/10 | 9/10 | 10% | 0.70 | 0.90 |
+| Onboarding | 8/10 ✅ | 9/10 | 10% | 0.80 | 0.90 |
 | **Drill Execution** | **7/10** ✅ | **7/10** | **25%** | **1.75** | **1.75** |
 | Quiz System | 7/10 | 8/10 | 20% | 1.40 | 1.60 |
 | Spaced Repetition | 7/10 ✅ | 7/10 | 15% | 1.05 | 1.05 |
 | **Content Quality** | **4/10** ✅ | **5/10** | **20%** | **0.80** | **1.00** |
 | Progress Tracking | 8/10 | 8/10 | 5% | 0.40 | 0.40 |
 | Reflection/AAR | 6/10 ✅ | 6/10 | 5% | 0.30 | 0.30 |
-| **Total** | | | | **6.40** | **7.00** |
+| **Total** | | | | **6.50** | **7.00** |
 
 ## Three Actions
 

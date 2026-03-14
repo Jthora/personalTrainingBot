@@ -436,19 +436,19 @@
 
 #### Step 3.6.1 — E2E Test Updates
 
-- [ ] `240` Create route mapping constant in `e2e/fixtures/` — all new paths
-- [ ] `241` Update `00-smoke-gate.spec.ts` — URLs and selectors
-- [ ] `242` Update `01-first-contact.spec.ts` — onboarding flow targets
-- [ ] `243` Update `02-impatient-recruit.spec.ts` — drill route
-- [ ] `244` Update `03-daily-cycle.spec.ts` — mission route references
-- [ ] `245` Update `04-mission-loop.spec.ts` — mission cycle routes, Mission Mode toggle
-- [ ] `246` Update `05-knowledge-retention.spec.ts` — quiz route
-- [ ] `247` Update `06-proving-yourself.spec.ts` — stats/profile routes
-- [ ] `248` Update E2E seed helpers — all `page.goto('/mission/...')` calls
+- [x] `240` Create route mapping constant in `e2e/fixtures/` — all new paths
+- [x] `241` Update `00-smoke-gate.spec.ts` — URLs and selectors
+- [x] `242` Update `01-first-contact.spec.ts` — onboarding flow targets
+- [x] `243` Update `02-impatient-recruit.spec.ts` — drill route
+- [x] `244` Update `03-daily-cycle.spec.ts` — mission route references
+- [x] `245` Update `04-mission-loop.spec.ts` — mission cycle routes, Mission Mode toggle
+- [x] `246` Update `05-knowledge-retention.spec.ts` — quiz route
+- [x] `247` Update `06-proving-yourself.spec.ts` — stats/profile routes
+- [x] `248` Update E2E seed helpers — all `page.goto('/mission/...')` calls
 
 #### Step 3.6.2 — Unit Test Updates
 
-- [ ] `249` Update ~8 MissionShell tests for route/tab assertion changes
+- [x] `249` Update ~8 MissionShell tests for route/tab assertion changes
 - [x] `250` Add AppShell unit tests — tab rendering, Mission Mode toggle, route matching
 
 ### Phase 3.7 — Validation & Measurement
@@ -456,12 +456,12 @@
 #### Step 3.7.1 — Score Verification
 
 - [x] `251` Run full unit test suite — all pass
-- [ ] `252` Run full E2E test suite — all pass
+- [x] `252` Run full E2E test suite — all pass
 - [x] `253` Run TypeScript compiler — zero errors
 - [x] `254` Run production build — clean
-- [ ] `255` Verify localStorage migration works for existing users
-- [ ] `256` Re-score shell/navigation dimension (target: 7/10 → 9/10)
-- [ ] `257` Update scoring in `docs/effectiveness-overhaul/README.md`
+- [x] `255` Verify localStorage migration works for existing users
+- [x] `256` Re-score shell/navigation dimension (target: 7/10 → 9/10)
+- [x] `257` Update scoring in `docs/effectiveness-overhaul/README.md`
 
 ---
 

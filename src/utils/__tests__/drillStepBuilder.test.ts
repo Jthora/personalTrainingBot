@@ -2,7 +2,7 @@ import { describe, it, expect, beforeEach } from 'vitest';
 import TrainingModuleCache from '../../cache/TrainingModuleCache';
 import CardProgressStore from '../../store/CardProgressStore';
 import type { TrainingModule } from '../../types/TrainingModule';
-import { buildDrillStepsFromDeck, buildDrillStepsFromModule } from '../drillStepBuilder';
+import { buildDrillStepsFromDeck, buildDrillStepsFromModule, buildDrillStepsFromCards } from '../drillStepBuilder';
 
 const sampleModules: TrainingModule[] = [
   {
@@ -185,6 +185,58 @@ describe('drillStepBuilder', () => {
       // card-fw-1 is future, all others unseen → fw-1 goes last
       const ids = steps.map((s) => s.cardId);
       expect(ids.indexOf('card-fw-1')).toBe(ids.length - 1);
+    });
+  });
+
+  describe('buildDrillStepsFromCards', () => {
+    it('builds steps from specific card IDs', () => {
+      const steps = buildDrillStepsFromCards(['card-fw-1', 'card-fw-3']);
+      expect(steps).toHaveLength(2);
+      expect(steps[0].cardId).toBe('card-fw-1');
+      expect(steps[1].cardId).toBe('card-fw-3');
+    });
+
+    it('preserves order of provided card IDs', () => {
+      const steps = buildDrillStepsFromCards(['card-fw-3', 'card-fw-1', 'card-fw-2']);
+      expect(steps.map((s) => s.cardId)).toEqual(['card-fw-3', 'card-fw-1', 'card-fw-2']);
+    });
+
+    it('sets label to card title', () => {
+      const steps = buildDrillStepsFromCards(['card-fw-1']);
+      expect(steps[0].label).toBe('Packet Filtering');
+    });
+
+    it('generates retry-prefixed step IDs', () => {
+      const steps = buildDrillStepsFromCards(['card-fw-1', 'card-fw-2']);
+      expect(steps[0].id).toMatch(/^retry-step-0-card-fw-1$/);
+      expect(steps[1].id).toMatch(/^retry-step-1-card-fw-2$/);
+    });
+
+    it('skips unknown card IDs gracefully', () => {
+      const steps = buildDrillStepsFromCards(['card-fw-1', 'nonexistent', 'card-fw-2']);
+      expect(steps).toHaveLength(2);
+      expect(steps.map((s) => s.cardId)).toEqual(['card-fw-1', 'card-fw-2']);
+    });
+
+    it('respects maxCards limit', () => {
+      const steps = buildDrillStepsFromCards(['card-fw-1', 'card-fw-2', 'card-fw-3'], 2);
+      expect(steps).toHaveLength(2);
+    });
+
+    it('returns empty array for empty input', () => {
+      expect(buildDrillStepsFromCards([])).toEqual([]);
+    });
+
+    it('returns empty array when cache is not loaded', () => {
+      cache.clearCache();
+      expect(buildDrillStepsFromCards(['card-fw-1'])).toEqual([]);
+    });
+
+    it('finds cards across different decks', () => {
+      const steps = buildDrillStepsFromCards(['card-fw-1', 'card-ids-1']);
+      expect(steps).toHaveLength(2);
+      expect(steps[0].label).toBe('Packet Filtering');
+      expect(steps[1].label).toBe('Signature-Based Detection');
     });
   });
 });

@@ -319,10 +319,14 @@ describe('DrillRunner', () => {
     const recordBtn = screen.getByText('Record drill');
     expect(recordBtn.hasAttribute('disabled')).toBe(true);
 
-    // Fill in notes
-    const textarea = screen.getByPlaceholderText(/what did you learn/i);
-    fireEvent.change(textarea, { target: { value: 'Great drill session' } });
-    expect((textarea as HTMLTextAreaElement).value).toBe('Great drill session');
+    // Fill in structured reflection fields
+    const wentWell = screen.getByPlaceholderText(/skills applied/i);
+    fireEvent.change(wentWell, { target: { value: 'Applied key concepts well' } });
+    expect((wentWell as HTMLTextAreaElement).value).toBe('Applied key concepts well');
+
+    const challenging = screen.getByPlaceholderText(/confusing concepts/i);
+    fireEvent.change(challenging, { target: { value: 'The advanced exercises' } });
+    expect((challenging as HTMLTextAreaElement).value).toBe('The advanced exercises');
 
     // Select a rating (required)
     const ratingBtn = screen.getByLabelText('Rate 4 out of 5');

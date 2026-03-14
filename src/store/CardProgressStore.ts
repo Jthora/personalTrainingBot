@@ -176,6 +176,72 @@ const CardProgressStore = {
   },
 
   /**
+   * Forecast how many cards come due over the next N days.
+   * Returns an array of { day, date, count } where day=0 is today.
+   */
+  forecastDue(days = 7, now?: number): Array<{ day: number; date: string; count: number }> {
+    const ts = now ?? Date.now();
+    const DAY_MS = 86_400_000;
+    const startOfToday = new Date(ts);
+    startOfToday.setHours(0, 0, 0, 0);
+    const todayMs = startOfToday.getTime();
+
+    const buckets: Array<{ day: number; date: string; count: number }> = [];
+    for (let d = 0; d < days; d++) {
+      const date = new Date(todayMs + d * DAY_MS);
+      buckets.push({ day: d, date: date.toISOString().slice(0, 10), count: 0 });
+    }
+
+    for (const entry of store.get()) {
+      const dueAt = new Date(entry.nextReviewAt).getTime();
+      if (dueAt <= ts) {
+        buckets[0].count++;
+      } else {
+        const dayIdx = Math.floor((dueAt - todayMs) / DAY_MS);
+        if (dayIdx >= 0 && dayIdx < days) {
+          buckets[dayIdx].count++;
+        }
+      }
+    }
+
+    return buckets;
+  },
+
+  /**
+   * Aggregate SR stats across all tracked cards.
+   */
+  getOverallStats(): { total: number; due: number; learning: number; mature: number; newCards: number; avgEase: number; totalLapses: number } {
+    const entries = store.get();
+    const now = Date.now();
+    let due = 0;
+    let learning = 0;
+    let mature = 0;
+    let newCards = 0;
+    let easeSum = 0;
+    let totalLapses = 0;
+
+    for (const e of entries) {
+      const cls = classifyCard(e);
+      if (cls === 'learning') learning++;
+      else if (cls === 'mature') mature++;
+      else newCards++;
+      if (isDue(e.nextReviewAt, now)) due++;
+      easeSum += e.easeFactor;
+      totalLapses += e.lapses;
+    }
+
+    return {
+      total: entries.length,
+      due,
+      learning,
+      mature,
+      newCards,
+      avgEase: entries.length > 0 ? Math.round((easeSum / entries.length) * 100) / 100 : 2.5,
+      totalLapses,
+    };
+  },
+
+  /**
    * Total tracked cards.
    */
   count(): number {

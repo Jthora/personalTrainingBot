@@ -19,6 +19,7 @@ import CardProgressStore from '../../store/CardProgressStore';
 import OperativeProfileStore from '../../store/OperativeProfileStore';
 import PostDrillArchetypePrompt from './PostDrillArchetypePrompt';
 import { computeCardQuality, type StepInteractionData } from '../../utils/drillQuality';
+import { buildDrillStepsFromCards } from '../../utils/drillStepBuilder';
 
 /**
  * Build default steps for a drill. If the drill has an associated moduleId and cards are loaded,
@@ -155,6 +156,10 @@ const DrillRunner: React.FC = () => {
   const [showEngagementWarning, setShowEngagementWarning] = useState(false);
   const [stepInteractions, setStepInteractions] = useState<Map<string, StepInteractionData>>(new Map());
   const [awaitingReflection, setAwaitingReflection] = useState(false);
+  const [reflectionWentWell, setReflectionWentWell] = useState('');
+  const [reflectionChallenging, setReflectionChallenging] = useState('');
+  const [reflectionImprove, setReflectionImprove] = useState('');
+  const [cardBreakdown, setCardBreakdown] = useState<Array<{ cardId: string; label: string; quality: number }>>([]);
   const [lastXpDelta, setLastXpDelta] = useState<{ xp: number; levelBefore: number; levelAfter: number; pctBefore: number; pctAfter: number } | null>(null);
   const [showArchetypePrompt, setShowArchetypePrompt] = useState(false);
   const { completeCurrentDrill } = useMissionSchedule();
@@ -181,6 +186,10 @@ const DrillRunner: React.FC = () => {
       setNotes('');
       setSelfAssessment(null);
       setAwaitingReflection(false);
+      setReflectionWentWell('');
+      setReflectionChallenging('');
+      setReflectionImprove('');
+      setCardBreakdown([]);
       setLastXpDelta(null);
       setShowEngagementWarning(false);
       setStepInteractions(new Map());
@@ -240,6 +249,13 @@ const DrillRunner: React.FC = () => {
   /** Record the drill to history and fire the progression loop. */
   const finalizeCompletion = useCallback(() => {
     if (!state || completionRecorded) return;
+    // Build structured notes from reflection fields
+    const structuredNotes = [
+      reflectionWentWell.trim() && `What went well: ${reflectionWentWell.trim()}`,
+      reflectionChallenging.trim() && `What was challenging: ${reflectionChallenging.trim()}`,
+      reflectionImprove.trim() && `To improve: ${reflectionImprove.trim()}`,
+      notes.trim() && `Notes: ${notes.trim()}`,
+    ].filter(Boolean).join('\n');
     if (enhanced) {
       DrillHistoryStore.record({
         drillId: state.drillId,
@@ -247,7 +263,7 @@ const DrillRunner: React.FC = () => {
         elapsedSec: timer.elapsed,
         stepCount: state.steps.length,
         completedAt: new Date().toISOString(),
-        notes: notes.trim() || undefined,
+        notes: structuredNotes || undefined,
         selfAssessment: selfAssessment ?? undefined,
         domainId: resolveDomainId(),
       });
@@ -255,6 +271,7 @@ const DrillRunner: React.FC = () => {
     // ── Spaced repetition: record per-card review progress with quality signal ──
     const domainId = resolveDomainId();
     const cache = TrainingModuleCache.getInstance();
+    const breakdown: Array<{ cardId: string; label: string; quality: number }> = [];
     for (const step of state.steps) {
       if (step.cardId) {
         const meta = cache.isLoaded() ? cache.getCardMeta(step.cardId) : undefined;
@@ -266,8 +283,10 @@ const DrillRunner: React.FC = () => {
           meta?.moduleId ?? domainId ?? 'unknown',
           cardQuality,
         );
+        breakdown.push({ cardId: step.cardId, label: step.label, quality: cardQuality });
       }
     }
+    setCardBreakdown(breakdown);
     // Award XP: base 35 + 5 per step (mirrors ProgressEventRecorder.XP_REWARDS.drill)
     const xpAwarded = 35 + state.steps.length * 5;
     const progressBefore = UserProgressStore.get();
@@ -304,7 +323,18 @@ const DrillRunner: React.FC = () => {
     } else if (enhanced) {
       setShowRest(true);
     }
-  }, [state, completionRecorded, completeCurrentDrill, enhanced, timer.elapsed, notes, selfAssessment, resolveDomainId, stepInteractions]);
+  }, [state, completionRecorded, completeCurrentDrill, enhanced, timer.elapsed, notes, reflectionWentWell, reflectionChallenging, reflectionImprove, selfAssessment, resolveDomainId, stepInteractions]);
+
+  /** Retry only the cards where quality was ≤ 2 (weak cards). */
+  const handleRetryWeak = useCallback(() => {
+    if (!state) return;
+    const weakCardIds = cardBreakdown.filter((c) => c.quality <= 2).map((c) => c.cardId);
+    if (weakCardIds.length === 0) return;
+    const weakSteps = buildDrillStepsFromCards(weakCardIds, weakCardIds.length);
+    if (weakSteps.length > 0) {
+      DrillRunStore.start(state.drillId + '-retry', state.title + ' (Review)', weakSteps);
+    }
+  }, [state, cardBreakdown]);
 
   /** When all steps are checked, pause the timer and show the reflection form. */
   const handleComplete = useCallback(() => {
@@ -341,7 +371,7 @@ const DrillRunner: React.FC = () => {
     return (
       <div className={styles.empty}>
         <p className={styles.title}>No active drill</p>
-        <p className={styles.body}>Start a drill from the mission kit to stage offline steps and preserve continuity.</p>
+        <p className={styles.body}>Pick a training module, choose a deck, and tap &ldquo;Train this deck&rdquo; to start learning.</p>
         <button className={styles.button} onClick={startFromKit}>Start drill</button>
       </div>
     );
@@ -461,14 +491,39 @@ const DrillRunner: React.FC = () => {
         <div className={styles.reflection} data-testid="drill-reflection">
           <p className={styles.reflectionTitle}>Drill complete — reflect before recording</p>
           <div className={styles.reflectionField}>
-            <label className={styles.reflectionLabel} htmlFor="drill-notes">Notes (optional)</label>
+            <label className={styles.reflectionLabel} htmlFor="drill-went-well">What went well?</label>
             <textarea
-              id="drill-notes"
+              id="drill-went-well"
               className={styles.notesInput}
-              value={notes}
-              onChange={(e) => setNotes(e.target.value)}
-              placeholder="What did you learn? What was difficult?"
-              rows={3}
+              value={reflectionWentWell}
+              onChange={(e) => setReflectionWentWell(e.target.value)}
+              placeholder="Skills applied, concepts understood…"
+              rows={2}
+              data-testid="reflection-went-well"
+            />
+          </div>
+          <div className={styles.reflectionField}>
+            <label className={styles.reflectionLabel} htmlFor="drill-challenging">What was challenging?</label>
+            <textarea
+              id="drill-challenging"
+              className={styles.notesInput}
+              value={reflectionChallenging}
+              onChange={(e) => setReflectionChallenging(e.target.value)}
+              placeholder="Confusing concepts, difficult exercises…"
+              rows={2}
+              data-testid="reflection-challenging"
+            />
+          </div>
+          <div className={styles.reflectionField}>
+            <label className={styles.reflectionLabel} htmlFor="drill-improve">One thing to improve</label>
+            <textarea
+              id="drill-improve"
+              className={styles.notesInput}
+              value={reflectionImprove}
+              onChange={(e) => setReflectionImprove(e.target.value)}
+              placeholder="What would you do differently next time?"
+              rows={2}
+              data-testid="reflection-improve"
             />
           </div>
           <div className={styles.reflectionField}>
@@ -503,15 +558,44 @@ const DrillRunner: React.FC = () => {
       )}
 
       {state.completed && completionRecorded ? (
-        <div className={styles.success} data-testid="drill-completion-xp">
-          Drill complete{lastXpDelta ? ` · +${lastXpDelta.xp} XP` : ' · XP awarded'}
-          {lastXpDelta && lastXpDelta.levelBefore !== lastXpDelta.levelAfter
-            ? ` · Level Up! → Level ${lastXpDelta.levelAfter}`
-            : lastXpDelta
-              ? ` · Level ${lastXpDelta.levelAfter} (${lastXpDelta.pctAfter}%)`
-              : ''}
-          {enhanced && <span className={styles.elapsed}> · {formatTime(timer.elapsed)}</span>}
-        </div>
+        <>
+          <div className={styles.success} data-testid="drill-completion-xp">
+            Drill complete{lastXpDelta ? ` · +${lastXpDelta.xp} XP` : ' · XP awarded'}
+            {lastXpDelta && lastXpDelta.levelBefore !== lastXpDelta.levelAfter
+              ? ` · Level Up! → Level ${lastXpDelta.levelAfter}`
+              : lastXpDelta
+                ? ` · Level ${lastXpDelta.levelAfter} (${lastXpDelta.pctAfter}%)`
+                : ''}
+            {enhanced && <span className={styles.elapsed}> · {formatTime(timer.elapsed)}</span>}
+          </div>
+
+          {/* Per-card quality breakdown */}
+          {cardBreakdown.length > 0 && (
+            <div className={styles.cardBreakdown} data-testid="card-breakdown">
+              <span className={styles.label}>Card Mastery</span>
+              <div className={styles.breakdownList}>
+                {cardBreakdown.map((card) => (
+                  <div key={card.cardId} className={styles.breakdownItem}>
+                    <span className={styles.breakdownBadge} data-quality={card.quality <= 2 ? 'weak' : card.quality >= 4 ? 'strong' : 'ok'}>
+                      {card.quality}/5
+                    </span>
+                    <span className={styles.breakdownLabel}>{card.label}</span>
+                  </div>
+                ))}
+              </div>
+              {cardBreakdown.some((c) => c.quality <= 2) && (
+                <button
+                  type="button"
+                  className={styles.secondary}
+                  onClick={handleRetryWeak}
+                  data-testid="retry-weak-btn"
+                >
+                  Retry {cardBreakdown.filter((c) => c.quality <= 2).length} weak card{cardBreakdown.filter((c) => c.quality <= 2).length !== 1 ? 's' : ''}
+                </button>
+              )}
+            </div>
+          )}
+        </>
       ) : state.completed && !awaitingReflection ? (
         <div className={styles.success}>Drill complete · recording…</div>
       ) : null}

@@ -44,7 +44,7 @@ const ENV_DEFAULT_FLAGS: Record<AppEnv, Partial<FeatureFlagConfig>> = {
         loadingCacheV2: false,
         p2pIdentity: false,
         ipfsContent: false,
-        shellV2: false,
+        shellV2: true,
         globalKillSwitch: false,
     },
 };

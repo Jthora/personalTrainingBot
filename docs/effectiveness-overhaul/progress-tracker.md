@@ -1,8 +1,8 @@
 # Effectiveness Overhaul — Progress Tracker
 
-> Baseline: **4.8 / 10** → Target: **7.0+**
+> Baseline: **4.8 / 10** → Current: **7.95 / 10** → Target: **7.0+** ✅
 > Estimated timeline: **4–8 months**
-> Total items: 257 tasks across 3 stages
+> Total items: 297 tasks across 5 stages
 
 ---
 
@@ -520,6 +520,48 @@
 
 ---
 
+## Stage 5 — Multi-Dimension Enhancement _(Drill 7→8, SR 7→8, Reflection 6→7)_
+
+### Phase 5.1 — Drill Execution Enhancement (7→8)
+
+#### Step 5.1.1 — Per-Card Quality Breakdown
+
+- [x] `281` Add `cardBreakdown` state to DrillRunner tracking per-card quality (1-5)
+- [x] `282` Render per-card breakdown panel after drill completion with color-coded badges (weak/ok/strong)
+- [x] `283` Add CSS for `.cardBreakdown`, `.breakdownItem`, `.breakdownBadge[data-quality]`
+
+#### Step 5.1.2 — Retry Weak Cards
+
+- [x] `284` Add `buildDrillStepsFromCards(cardIds, maxCards?)` to drillStepBuilder
+- [x] `285` Add "Retry N weak cards" button for cards with quality ≤ 2
+- [x] `286` Wire `handleRetryWeak` callback to restart drill with weak-card steps
+
+### Phase 5.2 — Reflection/AAR Enhancement (6→7)
+
+#### Step 5.2.1 — Structured Mini-AAR
+
+- [x] `287` Replace single notes textarea with 3-field structured reflection form
+- [x] `288` Add "What went well?", "What was challenging?", "One thing to improve" fields
+- [x] `289` Wire structured fields into `finalizeCompletion` to build combined notes string
+
+### Phase 5.3 — Spaced Repetition Enhancement (7→8)
+
+#### Step 5.3.1 — SR Forecast & Stats
+
+- [x] `290` Add `forecastDue(days, now?)` to CardProgressStore — bucket cards by due-day
+- [x] `291` Add `getOverallStats()` to CardProgressStore — total/due/learning/mature/new/avgEase/lapses
+- [x] `292` Add SR Health Stats panel to ReviewDashboard (Mature/Learning/New with color coding)
+- [x] `293` Add 7-day forecast bar chart to ReviewDashboard
+- [x] `294` Add CSS for `.srStats`, `.forecast`, `.forecastBars`, `.forecastCol`, `.forecastBar`
+
+### Phase 5.4 — Test Coverage & Scoring
+
+- [x] `295` Fix existing test regressions (DrillRunner + ReviewDashboard test ambiguities)
+- [x] `296` Add 21 new tests: forecastDue (6), getOverallStats (5), buildDrillStepsFromCards (9), ReviewDashboard mock update (1)
+- [x] `297` Update scoring: Drill 7→8, SR 7→8, Reflection 6→7, overall 7.50→7.95
+
+---
+
 ## Summary
 
 | Stage | Phases | Steps | Tasks | Timeline |
@@ -528,11 +570,12 @@
 | 2 — Content Pipeline | 6 | 17 | 117 | Months 1–8 |
 | 3 — Shell Simplification | 7 | 18 | 78 | Weeks 3–7 |
 | 4 — Quiz Enhancement | 4 | 6 | 23 | 1 session |
-| **Total** | **21** | **55** | **280** | **4–8 months** |
+| 5 — Multi-Dimension Enhancement | 3 | 5 | 17 | 1 session |
+| **Total** | **24** | **60** | **297** | **4–8 months** |
 
 ### Completion Formula
 
-$$\text{Progress} = \frac{\text{checked tasks}}{280} \times 100\%$$
+$$\text{Progress} = \frac{\text{checked tasks}}{297} \times 100\%$$
 
 ### Milestone Checkpoints
 
@@ -545,3 +588,5 @@ $$\text{Progress} = \frac{\text{checked tasks}}{280} \times 100\%$$
 | All content authored | `156`–`179` | Content dimension ≥ 7/10 |
 | AppShell deployed | `194`–`239` | Feature flag removed |
 | Shell tests green | `240`–`257` | Shell dimension ≥ 9/10 |
+| Quiz enhancement complete | `258`–`280` | Quiz dimension ≥ 8/10 |
+| Multi-dimension scored | `281`–`297` | Drill 8, SR 8, Reflection 7 |

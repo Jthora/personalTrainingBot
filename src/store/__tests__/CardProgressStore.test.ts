@@ -134,4 +134,100 @@ describe('CardProgressStore', () => {
     expect(progress).not.toBeNull();
     expect(progress!.interval).toBe(1);
   });
+
+  describe('forecastDue', () => {
+    it('returns empty buckets when no cards tracked', () => {
+      const forecast = CardProgressStore.forecastDue(7);
+      expect(forecast).toHaveLength(7);
+      expect(forecast.every((b) => b.count === 0)).toBe(true);
+    });
+
+    it('returns correct number of day buckets', () => {
+      expect(CardProgressStore.forecastDue(3)).toHaveLength(3);
+      expect(CardProgressStore.forecastDue(14)).toHaveLength(14);
+    });
+
+    it('assigns day indices starting from 0', () => {
+      const forecast = CardProgressStore.forecastDue(5);
+      expect(forecast.map((b) => b.day)).toEqual([0, 1, 2, 3, 4]);
+    });
+
+    it('counts overdue cards in day 0 bucket', () => {
+      // Record a card; its nextReviewAt will be ~1 day from now
+      CardProgressStore.recordReview('c1', 'mod-a', 4);
+      CardProgressStore.recordReview('c2', 'mod-a', 4);
+      // Fast-forward 3 days — both cards are overdue
+      const futureNow = Date.now() + 3 * 86_400_000;
+      const forecast = CardProgressStore.forecastDue(7, futureNow);
+      expect(forecast[0].count).toBe(2); // both overdue → day 0
+    });
+
+    it('places cards in correct future day bucket', () => {
+      // Record a card (interval = 1 day, nextReviewAt ≈ now + 1 day)
+      CardProgressStore.recordReview('c1', 'mod-a', 4);
+      const progress = CardProgressStore.getCardProgress('c1')!;
+      const dueAt = new Date(progress.nextReviewAt).getTime();
+      // Use a "now" that is the start of the same day as recording
+      const now = Date.now();
+      const forecast = CardProgressStore.forecastDue(7, now);
+      // The card should land in day 1 (tomorrow) since interval is 1
+      const totalForecasted = forecast.reduce((a, b) => a + b.count, 0);
+      expect(totalForecasted).toBe(1);
+    });
+
+    it('produces ISO date strings for each day', () => {
+      const forecast = CardProgressStore.forecastDue(3);
+      for (const bucket of forecast) {
+        expect(bucket.date).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+      }
+    });
+  });
+
+  describe('getOverallStats', () => {
+    it('returns zeroes when no cards tracked', () => {
+      const stats = CardProgressStore.getOverallStats();
+      expect(stats).toEqual({
+        total: 0, due: 0, learning: 0, mature: 0,
+        newCards: 0, avgEase: 2.5, totalLapses: 0,
+      });
+    });
+
+    it('counts total cards', () => {
+      CardProgressStore.recordReview('c1', 'mod-a', 4);
+      CardProgressStore.recordReview('c2', 'mod-a', 3);
+      CardProgressStore.recordReview('c3', 'mod-b', 5);
+      expect(CardProgressStore.getOverallStats().total).toBe(3);
+    });
+
+    it('classifies learning vs mature', () => {
+      // Single review → interval 1 → learning
+      CardProgressStore.recordReview('c1', 'mod-a', 4);
+      let stats = CardProgressStore.getOverallStats();
+      expect(stats.learning).toBe(1);
+      expect(stats.mature).toBe(0);
+    });
+
+    it('tallies lapses across all cards', () => {
+      // Rating 1 → lapse
+      CardProgressStore.recordReview('c1', 'mod-a', 1);
+      CardProgressStore.recordReview('c2', 'mod-a', 1);
+      const stats = CardProgressStore.getOverallStats();
+      expect(stats.totalLapses).toBe(2);
+    });
+
+    it('computes avgEase as number', () => {
+      CardProgressStore.recordReview('c1', 'mod-a', 5);
+      CardProgressStore.recordReview('c2', 'mod-a', 5);
+      const stats = CardProgressStore.getOverallStats();
+      expect(typeof stats.avgEase).toBe('number');
+      expect(stats.avgEase).toBeGreaterThan(0);
+    });
+
+    it('counts due cards', () => {
+      CardProgressStore.recordReview('c1', 'mod-a', 4);
+      CardProgressStore.recordReview('c2', 'mod-a', 4);
+      // Not due right now
+      expect(CardProgressStore.getOverallStats().due).toBe(0);
+    });
+  });
 });

@@ -381,3 +381,60 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
+
+/* ── Per-card breakdown ── */
+
+.cardBreakdown {
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  display: grid;
+  gap: 8px;
+}
+
+.breakdownList {
+  display: grid;
+  gap: 4px;
+}
+
+.breakdownItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.breakdownBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.breakdownBadge[data-quality="weak"] {
+  background: rgba(248, 113, 113, 0.2);
+  color: #f87171;
+}
+
+.breakdownBadge[data-quality="ok"] {
+  background: rgba(251, 191, 36, 0.2);
+  color: #fbbf24;
+}
+
+.breakdownBadge[data-quality="strong"] {
+  background: rgba(74, 222, 128, 0.2);
+  color: #4ade80;
+}
+
+.breakdownLabel {
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

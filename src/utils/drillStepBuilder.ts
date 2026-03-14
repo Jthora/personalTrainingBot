@@ -120,3 +120,34 @@ function cardsToSteps(cards: Card[], maxCards?: number): DrillStepInput[] {
     cardId: card.id,
   }));
 }
+
+/**
+ * Build drill steps from specific card IDs (for retry-weak-cards flows).
+ * Looks up each card in TrainingModuleCache and creates steps in the given order.
+ *
+ * @param cardIds — Array of card IDs to include.
+ * @param maxCards — Optional cap on steps.
+ * @returns Array of step inputs with `cardId` set, or empty if cache not loaded.
+ */
+export function buildDrillStepsFromCards(
+  cardIds: string[],
+  maxCards?: number,
+): DrillStepInput[] {
+  const cache = TrainingModuleCache.getInstance();
+  if (!cache.isLoaded()) return [];
+
+  const cards: Card[] = [];
+  for (const id of cardIds) {
+    const card = cache.getCardById(id);
+    if (card) cards.push(card);
+  }
+
+  const limited =
+    maxCards != null && maxCards > 0 ? cards.slice(0, maxCards) : cards;
+
+  return limited.map((card, i) => ({
+    id: `retry-step-${i}-${card.id}`,
+    label: card.title,
+    cardId: card.id,
+  }));
+}

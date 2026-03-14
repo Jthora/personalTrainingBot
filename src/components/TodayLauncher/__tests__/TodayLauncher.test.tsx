@@ -90,16 +90,16 @@ describe('TodayLauncher', () => {
     expect(screen.getByTestId('regenerate-btn')).toBeTruthy();
   });
 
-  it('returns null when no kit is available', () => {
+  it('shows guidance message when no kit is available', () => {
     mockKit = undefined;
-    const { container } = render(<TodayLauncher />);
-    expect(container.innerHTML).toBe('');
+    render(<TodayLauncher />);
+    expect(screen.getByText(/no training session yet/i)).toBeTruthy();
   });
 
-  it('returns null when kit has no drills', () => {
+  it('shows guidance message when kit has no drills', () => {
     mockKit = { drills: [] };
-    const { container } = render(<TodayLauncher />);
-    expect(container.innerHTML).toBe('');
+    render(<TodayLauncher />);
+    expect(screen.getByText(/no training session yet/i)).toBeTruthy();
   });
 
   // ── 5.4.3.2: Archetype CTA ──

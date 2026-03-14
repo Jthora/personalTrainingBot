@@ -129,3 +129,58 @@
   font-size: var(--mission-type-body, 0.9rem);
   max-width: 360px;
 }
+
+/* ── SR Stats ── */
+
+.srStats {
+  display: grid;
+  gap: 8px;
+}
+
+/* ── 7-Day Forecast ── */
+
+.forecast {
+  display: grid;
+  gap: 8px;
+}
+
+.forecastBars {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  height: 80px;
+  padding: 4px 0;
+}
+
+.forecastCol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.forecastCount {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  min-height: 14px;
+}
+
+.forecastBar {
+  width: 100%;
+  max-width: 32px;
+  border-radius: 4px 4px 0 0;
+  background: var(--handler-accent, #5a7fff);
+  transition: height 0.3s ease;
+  min-height: 0;
+}
+
+.forecastDay {
+  font-size: 0.6rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

@@ -22,6 +22,24 @@ vi.mock('../../../store/CardProgressStore', () => ({
   default: {
     getCardsDueForReview: vi.fn(() => mockDueCards),
     count: vi.fn(() => mockCount),
+    forecastDue: vi.fn(() => [
+      { day: 0, date: '2026-03-13', count: mockDueCards.length },
+      { day: 1, date: '2026-03-14', count: 0 },
+      { day: 2, date: '2026-03-15', count: 0 },
+      { day: 3, date: '2026-03-16', count: 0 },
+      { day: 4, date: '2026-03-17', count: 0 },
+      { day: 5, date: '2026-03-18', count: 0 },
+      { day: 6, date: '2026-03-19', count: 0 },
+    ]),
+    getOverallStats: vi.fn(() => ({
+      total: mockCount,
+      due: mockDueCards.length,
+      learning: 0,
+      mature: 0,
+      newCards: mockCount,
+      avgEase: 2.5,
+      totalLapses: 0,
+    })),
   },
 }));
 
@@ -63,8 +81,9 @@ describe('ReviewDashboard', () => {
     ];
     mockCount = 100;
     render(<ReviewDashboard />);
-    expect(screen.getByText('3')).toBeTruthy(); // Due Now stat
-    expect(screen.getByText('100')).toBeTruthy(); // Tracked stat
+    // Stats panel exists — due/tracked numbers may appear in multiple places
+    expect(screen.getAllByText('3').length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByText('100').length).toBeGreaterThanOrEqual(1);
     expect(screen.getByText('Start Review (3 cards)')).toBeTruthy();
   });
 

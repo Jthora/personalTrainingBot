@@ -90,3 +90,11 @@
 .regenerateBtn:hover {
   border-color: rgba(255, 255, 255, 0.35);
 }
+
+.emptyMessage {
+  color: var(--text-secondary, #aaa);
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0;
+}

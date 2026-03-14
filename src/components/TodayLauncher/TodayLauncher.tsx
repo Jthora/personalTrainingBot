@@ -90,7 +90,13 @@ const TodayLauncher: React.FC = () => {
   };
 
   if (!kit || drills.length === 0) {
-    return null;
+    return (
+      <div className={styles.launcher} data-testid="today-launcher">
+        <p className={styles.emptyMessage}>
+          No training session yet. Browse modules in the <strong>Training</strong> tab to start your first drill.
+        </p>
+      </div>
+    );
   }
 
   return (

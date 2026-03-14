@@ -19,6 +19,8 @@ const ReviewDashboard: React.FC = () => {
 
   const dueCards = useMemo(() => CardProgressStore.getCardsDueForReview(), []);
   const totalTracked = useMemo(() => CardProgressStore.count(), []);
+  const forecast = useMemo(() => CardProgressStore.forecastDue(7), []);
+  const overallStats = useMemo(() => CardProgressStore.getOverallStats(), []);
 
   const moduleGroups: ModuleReviewGroup[] = useMemo(() => {
     const cache = TrainingModuleCache.getInstance();
@@ -63,6 +65,48 @@ const ReviewDashboard: React.FC = () => {
           <span className={styles.statLabel}>Tracked</span>
         </div>
       </div>
+
+      {/* SR Health Stats */}
+      {overallStats.total > 0 && (
+        <div className={styles.srStats} data-testid="sr-stats">
+          <h3 className={styles.moduleListTitle}>Card Health</h3>
+          <div className={styles.statsRow}>
+            <div className={styles.stat}>
+              <span className={styles.statValue} style={{ color: '#4ade80' }}>{overallStats.mature}</span>
+              <span className={styles.statLabel}>Mature</span>
+            </div>
+            <div className={styles.stat}>
+              <span className={styles.statValue} style={{ color: '#fbbf24' }}>{overallStats.learning}</span>
+              <span className={styles.statLabel}>Learning</span>
+            </div>
+            <div className={styles.stat}>
+              <span className={styles.statValue} style={{ color: '#94a3b8' }}>{overallStats.newCards}</span>
+              <span className={styles.statLabel}>New</span>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 7-day forecast */}
+      {totalTracked > 0 && (
+        <div className={styles.forecast} data-testid="review-forecast">
+          <h3 className={styles.moduleListTitle}>7-Day Forecast</h3>
+          <div className={styles.forecastBars}>
+            {forecast.map((bucket) => {
+              const maxCount = Math.max(1, ...forecast.map((b) => b.count));
+              const heightPct = bucket.count > 0 ? Math.max(8, (bucket.count / maxCount) * 100) : 0;
+              const dayLabel = bucket.day === 0 ? 'Today' : bucket.day === 1 ? 'Tmrw' : new Date(bucket.date).toLocaleDateString('en', { weekday: 'short' });
+              return (
+                <div key={bucket.day} className={styles.forecastCol}>
+                  <span className={styles.forecastCount}>{bucket.count || ''}</span>
+                  <div className={styles.forecastBar} style={{ height: `${heightPct}%` }} />
+                  <span className={styles.forecastDay}>{dayLabel}</span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
 
       {dueCards.length > 0 ? (
         <>

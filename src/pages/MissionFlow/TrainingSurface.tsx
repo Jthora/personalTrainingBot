@@ -1,22 +1,43 @@
 /**
  * TrainingSurface — Mission surface for browsing and launching training content.
  *
+ * In v2 shell: also renders DrillRunner inline when a drill is active,
+ * so users never leave the Train tab during a drill.
+ *
  * Renders ModuleBrowser (19-domain grid) at the top level, and DeckBrowser
  * (submodule/deck detail) when a module is selected — using simple component
  * state for sub-navigation (no nested routes needed).
  */
 
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { resolveShellRoute } from '../../utils/resolveShellRoute';
+import { isFeatureEnabled } from '../../config/featureFlags';
+import { DrillRunStore } from '../../store/DrillRunStore';
 import styles from './MissionFlow.module.css';
 import ModuleBrowser from '../../components/ModuleBrowser/ModuleBrowser';
 import DeckBrowser from '../../components/DeckBrowser/DeckBrowser';
+import DrillRunner from '../../components/DrillRunner/DrillRunner';
 import CardProgressStore from '../../store/CardProgressStore';
 
 const TrainingSurface: React.FC = () => {
   const navigate = useNavigate();
   const [selectedModule, setSelectedModule] = useState<string | null>(null);
+  const isV2 = isFeatureEnabled('shellV2');
+
+  // Track active drill state so we can show DrillRunner inline in v2
+  const [hasActiveDrill, setHasActiveDrill] = useState(() => {
+    const run = DrillRunStore.get();
+    return run !== null && !run.completed;
+  });
+
+  useEffect(() => {
+    if (!isV2) return;
+    const unsub = DrillRunStore.subscribe((state) => {
+      setHasActiveDrill(state !== null && !state.completed);
+    });
+    return unsub;
+  }, [isV2]);
 
   const handleModuleSelect = useCallback((moduleId: string) => {
     setSelectedModule(moduleId);
@@ -27,8 +48,27 @@ const TrainingSurface: React.FC = () => {
   }, []);
 
   const handleDrillStarted = useCallback(() => {
-    navigate(resolveShellRoute('/mission/checklist'));
-  }, [navigate]);
+    if (isV2) {
+      // In v2, DrillRunner renders inline — just trigger state update
+      setHasActiveDrill(true);
+      setSelectedModule(null);
+    } else {
+      navigate(resolveShellRoute('/mission/checklist'));
+    }
+  }, [isV2, navigate]);
+
+  // In v2, if there's an active drill, show DrillRunner inline
+  if (isV2 && hasActiveDrill) {
+    return (
+      <section
+        id="section-mission-training"
+        className={styles.surface}
+        aria-label="Active Drill"
+      >
+        <DrillRunner />
+      </section>
+    );
+  }
 
   return (
     <section
@@ -38,8 +78,7 @@ const TrainingSurface: React.FC = () => {
     >
       <h2 className={styles.title}>Training</h2>
       <p className={styles.body}>
-        Browse 19 operational training modules. Select modules and decks to focus your training,
-        then launch drills to build domain competency.
+        Browse training modules below. Pick a module, choose a deck, and start a drill to learn.
       </p>
 
       {(() => {
@@ -60,7 +99,7 @@ const TrainingSurface: React.FC = () => {
           onDrillStarted={handleDrillStarted}
         />
       ) : (
-        <ModuleBrowser onSelectModule={handleModuleSelect} />
+        <ModuleBrowser onSelectModule={handleModuleSelect} onQuickTrain={handleDrillStarted} />
       )}
     </section>
   );

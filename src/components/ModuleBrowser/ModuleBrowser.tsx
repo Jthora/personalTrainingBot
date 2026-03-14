@@ -9,6 +9,9 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import TrainingModuleCache from '../../cache/TrainingModuleCache';
 import CardProgressStore from '../../store/CardProgressStore';
+import UserProgressStore from '../../store/UserProgressStore';
+import { DrillRunStore } from '../../store/DrillRunStore';
+import { buildDrillStepsFromModule } from '../../utils/drillStepBuilder';
 import { findArchetype } from '../../data/archetypes';
 import OperativeProfileStore from '../../store/OperativeProfileStore';
 import { DOMAIN_CATALOG, deriveDomainSnapshot } from '../../utils/readiness/domainProgress';
@@ -21,12 +24,15 @@ import styles from './ModuleBrowser.module.css';
 export interface ModuleBrowserProps {
   /** Called when user clicks a module tile to drill into its decks. */
   onSelectModule: (moduleId: string) => void;
+  /** Called when a Quick Train action starts a drill directly. */
+  onQuickTrain?: () => void;
 }
 
-const ModuleBrowser: React.FC<ModuleBrowserProps> = ({ onSelectModule }) => {
+const ModuleBrowser: React.FC<ModuleBrowserProps> = ({ onSelectModule, onQuickTrain }) => {
   const cache = TrainingModuleCache.getInstance();
   const snapshot = deriveDomainSnapshot();
   const domainMap = new Map(snapshot.domains.map((d) => [d.domainId, d]));
+  const isFirstTime = UserProgressStore.get().totalDrillsCompleted === 0;
 
   // Selection state — subscribe to changes so checkbox toggles re-render
   const [, setTick] = useState(0);
@@ -67,12 +73,33 @@ const ModuleBrowser: React.FC<ModuleBrowserProps> = ({ onSelectModule }) => {
     [cache],
   );
 
+  const handleQuickTrain = useCallback(
+    (e: React.MouseEvent, moduleId: string, moduleName: string) => {
+      e.stopPropagation();
+      const steps = buildDrillStepsFromModule(moduleId, 10);
+      if (steps.length === 0) return;
+      DrillRunStore.start(`module-${moduleId}`, moduleName, steps);
+      onQuickTrain?.();
+    },
+    [onQuickTrain],
+  );
+
   if (!cache.isLoaded()) {
     return <div className={styles.empty}>Loading training modules…</div>;
   }
 
   return (
     <div className={styles.browser} data-testid="module-browser">
+      {isFirstTime && (
+        <div className={styles.welcomeBanner} data-testid="welcome-banner">
+          <h3 className={styles.welcomeHeading}>Welcome to Archangel Knights Training</h3>
+          <p className={styles.welcomeBody}>
+            Pick any module below to start your first drill. Each module covers a different discipline
+            — from cybersecurity to fitness to martial arts.
+            {coreSet.size > 0 && ' Your core modules are highlighted.'}
+          </p>
+        </div>
+      )}
       <div className={styles.grid}>
         {orderedDomains.map((domain) => {
           const stats = cache.getModuleStats(domain.id);
@@ -152,6 +179,15 @@ const ModuleBrowser: React.FC<ModuleBrowserProps> = ({ onSelectModule }) => {
                   {Math.round(progress.coverageRatio * 100)}% coverage
                 </span>
               )}
+
+              <button
+                type="button"
+                className={styles.quickTrainBtn}
+                onClick={(e) => handleQuickTrain(e, domain.id, domain.name)}
+                data-testid={`quick-train-${domain.id}`}
+              >
+                ▶ Quick Train
+              </button>
             </div>
           );
         })}

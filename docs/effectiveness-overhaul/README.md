@@ -1,6 +1,6 @@
 # Effectiveness Overhaul
 
-> **Baseline Score: 4.8/10** → **Target: 7.0+**
+> **Baseline Score: 4.8/10** → **Current: 7.95/10** → **Target: 7.0+** ✅
 >
 > Audit date: 2026-03-13 · Commit baseline: `003ddc5`
 
@@ -28,13 +28,13 @@ is honor-system with incentives to skip.
 | Dimension | Current | Target | Weight | Weighted Now | Weighted Target |
 |-----------|---------|--------|--------|-------------|----------------|
 | Onboarding | 8/10 ✅ | 9/10 | 10% | 0.80 | 0.90 |
-| **Drill Execution** | **7/10** ✅ | **7/10** | **25%** | **1.75** | **1.75** |
+| **Drill Execution** | **8/10** ✅ | **7/10** | **25%** | **2.00** | **1.75** |
 | Quiz System | 8/10 ✅ | 8/10 | 20% | 1.60 | 1.60 |
-| Spaced Repetition | 7/10 ✅ | 7/10 | 15% | 1.05 | 1.05 |
+| Spaced Repetition | 8/10 ✅ | 7/10 | 15% | 1.20 | 1.05 |
 | **Content Quality** | **8/10** ✅ | **5/10** | **20%** | **1.60** | **1.00** |
 | Progress Tracking | 8/10 | 8/10 | 5% | 0.40 | 0.40 |
-| Reflection/AAR | 6/10 ✅ | 6/10 | 5% | 0.30 | 0.30 |
-| **Total** | | | | **7.50** | **7.00** |
+| Reflection/AAR | 7/10 ✅ | 6/10 | 5% | 0.35 | 0.30 |
+| **Total** | | | | **7.95** | **7.00** |
 
 ## Three Actions
 

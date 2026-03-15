@@ -70,7 +70,7 @@ test.describe('Story 01 — First Contact', () => {
     const confirmBtn = page.getByTestId('archetype-confirm');
     await expect(confirmBtn).toBeDisabled();
 
-    // Click Psi Operative card
+    // Click Psi Corps card
     await page.getByTestId('archetype-card-psi_operative').click();
 
     // Confirm button should now be enabled
@@ -98,7 +98,7 @@ test.describe('Story 01 — First Contact', () => {
     // Handler picker should appear
     const handlerPicker = page.getByTestId('handler-picker');
     await expect(handlerPicker).toBeVisible();
-    await expect(handlerPicker.getByText('Choose Your Handler')).toBeVisible();
+    await expect(handlerPicker.getByText('Choose Your Instructor')).toBeVisible();
 
     // Tara should be first (recommended) and show badge
     const taraCard = page.getByTestId('handler-card-tara_van_dekar');
@@ -163,11 +163,11 @@ test.describe('Story 01 — First Contact', () => {
     // The launch button should mention the archetype
     const launchBtn = page.getByTestId('today-launch-btn');
     await expect(launchBtn).toBeVisible();
-    await expect(launchBtn).toContainText('Psi Operative');
+    await expect(launchBtn).toContainText('Psi Corps');
 
     // Archetype kit label should be present
     await expect(page.getByTestId('archetype-kit-label')).toContainText(
-      'Psi Operative',
+      'Psi Corps',
     );
   });
 

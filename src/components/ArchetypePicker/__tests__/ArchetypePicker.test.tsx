@@ -91,7 +91,7 @@ describe('ArchetypePicker', () => {
             <ArchetypePicker onSelect={onSelect} />,
         );
         const card = getByTestId('archetype-card-rescue_ranger');
-        // Rescue Ranger has core modules: combat, counter_biochem, fitness, investigation
+        // Search & Rescue has core modules: combat, counter_biochem, fitness, investigation
         expect(card.textContent).toContain('combat');
         expect(card.textContent).toContain('fitness');
     });

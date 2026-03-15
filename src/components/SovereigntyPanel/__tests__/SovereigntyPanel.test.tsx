@@ -150,11 +150,11 @@ describe('SovereigntyPanel', () => {
       expect(mockCreate).toHaveBeenCalledWith('Ghost');
     });
 
-    it('falls back to "Operative" when no callsign in profile', () => {
+    it('falls back to "Cadet" when no callsign in profile', () => {
       mockProfileStore.get.mockReturnValueOnce({ callsign: '', archetypeId: 'guardian', handlerId: 'h1', enrolledAt: '' });
       render(<SovereigntyPanel />);
       fireEvent.click(screen.getByTestId('sovereignty-generate-keypair-btn'));
-      expect(mockCreate).toHaveBeenCalledWith('Operative');
+      expect(mockCreate).toHaveBeenCalledWith('Cadet');
     });
 
     it('shows loading state on the button while creating', () => {

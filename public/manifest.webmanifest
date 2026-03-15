@@ -1,8 +1,8 @@
 {
   "id": "/",
-  "name": "Archangel Knights Training Console",
-  "short_name": "AK Console",
-  "description": "Psi Operative mission briefing, triage, and training console for Archangel Knights Advanced Internship Program",
+  "name": "Starcom Academy",
+  "short_name": "Starcom",
+  "description": "Earth Alliance officer training, mission readiness, and field certification console",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

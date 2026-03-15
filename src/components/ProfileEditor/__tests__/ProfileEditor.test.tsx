@@ -55,7 +55,7 @@ vi.mock('../../../data/handlers', () => ({
   handlers: [
     {
       id: 'tiger_fitness_god',
-      name: 'Tiger War God',
+      name: 'Commander Tygan',
       icon: '/tiger.png',
       personality: 'Ferocious Motivator',
       description: '',

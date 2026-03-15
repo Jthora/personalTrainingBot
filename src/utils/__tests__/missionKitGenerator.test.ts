@@ -33,7 +33,7 @@ vi.mock('../../store/OperativeProfileStore', () => ({
 vi.mock('../../data/archetypes', () => ({
   findArchetype: vi.fn(() => ({
     id: 'shadow_agent',
-    name: 'Shadow Agent',
+    name: 'Intelligence Division',
     coreModules: ['cybersecurity', 'espionage'],
     secondaryModules: ['intelligence', 'combat'],
   })),

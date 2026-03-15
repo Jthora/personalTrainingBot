@@ -279,7 +279,7 @@ export async function readLocalStorage(
 }
 
 /**
- * Seed mission flow context for Psi Operative scenario.
+ * Seed mission flow context for Psi Corps scenario.
  */
 export async function seedMissionContext(page: Page): Promise<void> {
   await seedLocalStorage(page, {

@@ -33,9 +33,9 @@ describe('HandlerPicker', () => {
         const { getByText } = render(
             <HandlerPicker onSelect={onSelect} />,
         );
-        expect(getByText('Tiger War God')).toBeTruthy();
+        expect(getByText('Commander Tygan')).toBeTruthy();
         expect(getByText('Agent Simon')).toBeTruthy();
-        expect(getByText('Star Commander Raynor')).toBeTruthy();
+        expect(getByText('Captain Raynor')).toBeTruthy();
     });
 
     it('shows recommended badge on the recommended handler', () => {

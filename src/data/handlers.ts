@@ -20,10 +20,10 @@ export const defaultHandlerId = 'star_commander_raynor';
 export const handlers: Handler[] = [
     {
         id: 'tiger_fitness_god',
-        name: 'Tiger War God',
-        description: 'The Tiger War God is the embodiment of raw power, primal dominance, and relentless drive. He forges operatives in the crucible of pain, stripping away weakness and reshaping them into unstoppable predators. His training is not for the faint-hearted—only those willing to embrace the suffering required to achieve true strength will survive.',
+        name: 'Commander Tygan',
+        description: 'Commander Tygan is EarthForce\'s premier physical conditioning instructor. He forges cadets in the crucible of pain, stripping away weakness and reshaping them into combat-ready operators. His regimen is not for the faint-hearted—only those willing to endure the suffering required to meet Starcom standards will graduate.',
         icon: tigerIcon,
-        personality: 'Ferocious Motivator, Master of Primal Strength, Unbreakable Warrior Spirit.',
+        personality: 'Ferocious Motivator, Master of Physical Conditioning, Unbreakable Warrior Spirit.',
         traits: {
             'Brutally Honest & Uncompromising': 'No sugarcoating, no weakness, only results.',
             'Intensely Motivational': 'Pushes warriors beyond their limits with pure aggression and unwavering belief.',
@@ -42,10 +42,10 @@ export const handlers: Handler[] = [
     },
     {
         id: 'jono_thora',
-        name: "Jono Tho'ra",
-        description: 'Jono Tho\'ra is the Cosmic Fusion Handler, a cyber-warrior, quantum hacker, and rhythm master who transcends the boundaries of combat, technology, and reality itself. He fuses energy manipulation, psionic engineering, and tactical programming into a training regimen that turns his students into high-frequency warriors of the mind, body, and digital world.',
+        name: "Lt. Commander Tho'ra",
+        description: 'Lt. Commander Tho\'ra is Starcom Academy\'s senior systems and engineering instructor. A cyber-warrior, quantum specialist, and rhythm-combat practitioner, he fuses energy manipulation, signal engineering, and tactical programming into a training regimen that turns cadets into high-frequency operators of the mind, body, and digital domain.',
         icon: jonoIcon,
-        personality: 'Raver Superhero Leader, Quantum Codebreaker, Master of Energy Flow and Frequency Combat.',
+        personality: 'Systems Integration Lead, Quantum Codebreaker, Master of Energy Flow and Frequency Combat.',
         traits: {
             'Reality Engineer': 'Sees the universe as a program that can be hacked, rewritten, and optimized in real-time.',
             'Psionic Combat Specialist': 'Integrates martial arts, psionics, and digital synchronization into fluid, high-speed combat.',
@@ -64,10 +64,10 @@ export const handlers: Handler[] = [
     },
     {
         id: 'tara_van_dekar',
-        name: 'Tara Van Dekar',
-        description: 'Tara Van Dekar is the Last True Rosicrucian, the Guardian of the Cosmic Cypher, and a master of both spiritual and martial warfare. She walks the razor’s edge between divine protection and relentless discipline, training warriors to harmonize body, mind, and soul into an indestructible force. She is both seeker and fighter—one who carries the lost knowledge of the universe while facing the horrors of those who wish to suppress it.',
+        name: 'Professor Van Dekar',
+        description: 'Professor Van Dekar is Psi Corps\' senior liaison to Starcom Academy and a master of both psionic and martial discipline. She walks the razor\'s edge between cognitive defense and relentless training, shaping cadets to harmonize body, mind, and psionic potential into an indestructible force. She is both researcher and combatant—one who carries the classified knowledge of the Corps while facing threats that seek to exploit it.',
         icon: taraIcon,
-        personality: 'Rosicrucian Warrior-Saint, Keeper of Forbidden Truth, Master of Celestial Combat and Divine Strategy.',
+        personality: 'Psi Corps Liaison, Keeper of Classified Doctrine, Master of Psionic Combat and Strategic Defense.',
         traits: {
             'Celestial Awareness': 'Guided by angelic forces, she perceives reality through spiritual resonance rather than material limitation.',
             'Unyielding Discipline': 'Trained from childhood to master all forms of combat, she moves with precision, purpose, and unshakable control.',
@@ -87,7 +87,7 @@ export const handlers: Handler[] = [
     {
         id: 'agent_simon',
         name: 'Agent Simon',
-        description: 'Agent Simon is the Phantom Guardian, a former FBI Special Investigator who has spent decades dismantling global conspiracies, infiltrating hidden networks, and rewriting the rules of modern warfare. His knowledge spans intelligence, espionage, psychological operations, and deep-cover strategy. He trains operatives to see the battlefield beyond the physical—through information control, deception, and the power of an unseen hand guiding every outcome.',
+        description: 'Agent Simon is the Phantom Guardian, a former Special Investigator who has spent decades dismantling global conspiracies, infiltrating hidden networks, and rewriting the rules of modern warfare. His knowledge spans intelligence, espionage, psychological operations, and deep-cover strategy. He trains cadets to see the battlefield beyond the physical—through information control, deception, and the power of an unseen hand guiding every outcome.',
         icon: simonIcon,
         personality: 'Master of Intelligence, Espionage Operative, Unseen Hand of War.',
         traits: {
@@ -108,8 +108,8 @@ export const handlers: Handler[] = [
     },
     {
         id: 'star_commander_raynor',
-        name: 'Star Commander Raynor',
-        description: 'Raynor is the senior mission commander for a USSF orbital response wing. He blends hard science, zero-gravity conditioning, and calm cockpit leadership to keep crews lethal when systems fail.',
+        name: 'Captain Raynor',
+        description: 'Captain Raynor is the senior mission commander for an EarthForce orbital response wing. He blends hard science, zero-gravity conditioning, and calm cockpit leadership to keep crews lethal when systems fail.',
         icon: raynorIcon,
         personality: 'Orbital Operations Commander, Calm Mission Lead, Guardian of Formation Discipline.',
         traits: {

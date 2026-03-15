@@ -53,8 +53,8 @@ describe('Header', () => {
 
   it('renders logo and title', () => {
     render(<Header />);
-    expect(screen.getByText('Archangel Knights Training Console')).toBeTruthy();
-    expect(screen.getByAltText('Wing Commander Logo')).toBeTruthy();
+    expect(screen.getByText('Starcom Academy')).toBeTruthy();
+    expect(screen.getByAltText('Starcom Academy Insignia')).toBeTruthy();
   });
 
   it('renders skip link', () => {

@@ -93,7 +93,7 @@ describe('findArchetype', () => {
     it('returns the matching archetype', () => {
         const result = findArchetype('rescue_ranger');
         expect(result).toBeDefined();
-        expect(result!.name).toBe('Rescue Ranger');
+        expect(result!.name).toBe('Search & Rescue');
     });
 
     it('returns undefined for unknown id', () => {

@@ -48,7 +48,7 @@ const ProfileSurface: React.FC = () => {
 
       {/* ── Identity section ── */}
       <section className={styles.section}>
-        <h3 className={styles.sectionTitle}>Operative Identity</h3>
+        <h3 className={styles.sectionTitle}>Cadet Dossier</h3>
         {profile ? (
           <div className={styles.identityCard}>
             <div className={styles.identityRow}>
@@ -56,11 +56,11 @@ const ProfileSurface: React.FC = () => {
               <span className={styles.identityValue}>{profile.callsign || 'Unassigned'}</span>
             </div>
             <div className={styles.identityRow}>
-              <span className={styles.identityLabel}>Archetype</span>
+              <span className={styles.identityLabel}>Division</span>
               <span className={styles.identityValue}>{profile.archetypeId || 'None'}</span>
             </div>
             <div className={styles.identityRow}>
-              <span className={styles.identityLabel}>Handler</span>
+              <span className={styles.identityLabel}>Instructor</span>
               <span className={styles.identityValue}>{profile.handlerId || 'None'}</span>
             </div>
             <div className={styles.identityRow}>
@@ -71,7 +71,7 @@ const ProfileSurface: React.FC = () => {
             </div>
           </div>
         ) : (
-          <p className={styles.placeholder}>No operative profile configured.</p>
+          <p className={styles.placeholder}>No cadet profile configured.</p>
         )}
       </section>
 
@@ -81,7 +81,7 @@ const ProfileSurface: React.FC = () => {
 
         <label className={styles.toggleRow}>
           <span className={styles.toggleLabel}>
-            Mission Mode
+            Active Duty
             <span className={styles.toggleHint}>
               Show full mission workflow tabs (Brief, Triage, Case, Signal, Debrief)
             </span>

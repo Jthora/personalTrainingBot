@@ -67,14 +67,14 @@ const HandlerPicker: React.FC<HandlerPickerProps> = ({
         : handlers;
 
     return (
-        <section className={styles.panel} aria-label="Choose your handler" data-testid="handler-picker">
-            <p className={styles.eyebrow}>Archangel Knights Intake</p>
-            <h2 className={styles.title}>Choose Your Handler</h2>
+        <section className={styles.panel} aria-label="Choose your instructor" data-testid="handler-picker">
+            <p className={styles.eyebrow}>Starcom Academy Enrollment</p>
+            <h2 className={styles.title}>Choose Your Instructor</h2>
             <p className={styles.subtitle}>
-                Your handler shapes mission personality, SOP tone, and training style. The recommended handler is matched to your archetype.
+                Your instructor shapes mission personality, SOP tone, and training style. The recommended instructor is matched to your division.
             </p>
 
-            <div className={styles.grid} role="radiogroup" aria-label="Handler options">
+            <div className={styles.grid} role="radiogroup" aria-label="Instructor options">
                 {sorted.map((handler) => {
                     const isSelected = selectedId === handler.id;
                     const isRecommended = handler.id === recommendedHandlerId;

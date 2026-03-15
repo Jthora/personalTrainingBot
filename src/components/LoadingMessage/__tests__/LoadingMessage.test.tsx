@@ -7,7 +7,7 @@ describe('LoadingMessage', () => {
     const { container } = render(<LoadingMessage progress={45} />);
     const bar = container.querySelector('[style*="width: 45%"]');
     expect(bar).toBeTruthy();
-    expect(screen.getByText('Archangel Knights Training Console')).toBeTruthy();
+    expect(screen.getByText('Starcom Academy')).toBeTruthy();
   });
 
   it('animates loading dots over time', () => {

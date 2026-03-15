@@ -24,20 +24,20 @@ describe('ProfileSurface', () => {
     expect(screen.getByText('Profile')).toBeTruthy();
   });
 
-  it('shows operative identity', () => {
+  it('shows cadet dossier', () => {
     render(<ProfileSurface />);
     expect(screen.getByText('SHADOW-7')).toBeTruthy();
     expect(screen.getByText('red-team')).toBeTruthy();
     expect(screen.getByText('handler-alpha')).toBeTruthy();
   });
 
-  it('shows mission mode toggle (off by default)', () => {
+  it('shows active duty toggle (off by default)', () => {
     render(<ProfileSurface />);
     const toggle = screen.getByRole('switch');
     expect(toggle.getAttribute('aria-checked')).toBe('false');
   });
 
-  it('toggles mission mode on click', () => {
+  it('toggles active duty on click', () => {
     render(<ProfileSurface />);
     const toggle = screen.getByRole('switch');
     fireEvent.click(toggle);
@@ -45,7 +45,7 @@ describe('ProfileSurface', () => {
     expect(localStorage.getItem(MISSION_MODE_STORAGE_KEY)).toBe('enabled');
   });
 
-  it('toggles mission mode off on second click', () => {
+  it('toggles active duty off on second click', () => {
     render(<ProfileSurface />);
     const toggle = screen.getByRole('switch');
     fireEvent.click(toggle); // on

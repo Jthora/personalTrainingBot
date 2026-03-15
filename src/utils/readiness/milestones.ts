@@ -25,7 +25,7 @@ export const missionMilestoneTiers: MissionMilestoneTier[] = [
     id: 'tier_1',
     label: 'Tier I · Trainee',
     minScore: 0,
-    prerequisites: ['Establish baseline readiness above 0.', 'Complete at least one mission drill path.'],
+    prerequisites: ['Establish baseline readiness above 0.', 'Complete at least one training exercise path.'],
   },
   {
     id: 'tier_2',

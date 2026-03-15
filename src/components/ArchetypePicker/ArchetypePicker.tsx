@@ -52,11 +52,11 @@ const ArchetypePicker: React.FC<ArchetypePickerProps> = ({
     };
 
     return (
-        <section className={styles.panel} aria-label="Choose your operative archetype" data-testid="archetype-picker">
-            <p className={styles.eyebrow}>Archangel Knights Intake</p>
-            <h2 className={styles.title}>Choose Your Archetype</h2>
+        <section className={styles.panel} aria-label="Choose your training division" data-testid="archetype-picker">
+            <p className={styles.eyebrow}>Starcom Academy Enrollment</p>
+            <h2 className={styles.title}>Choose Your Division</h2>
             <p className={styles.subtitle}>
-                Your archetype determines your core training modules, recommended handler, and milestone progression path. You can change this later.
+                Your division determines your core training modules, recommended instructor, and milestone progression path. You can change this later.
             </p>
 
             <div className={styles.grid} role="radiogroup" aria-label="Archetype options">

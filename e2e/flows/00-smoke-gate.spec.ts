@@ -21,7 +21,7 @@ test.describe('Story 00 — Smoke Gate', () => {
     // If we get here, React mounted. Verify title.
     const title = await page.title();
     expect(
-      title.includes('Archangel Knights') || title.includes('Training Console'),
+      title.includes('Starcom Academy') || title.includes('Starcom'),
     ).toBeTruthy();
 
     // No uncaught page errors

@@ -18,7 +18,7 @@ const InstallBanner: React.FC = () => {
 
   return (
     <div className={styles.banner} role="status" aria-label="Install app" data-testid="install-banner">
-      <span className={styles.text}>Install the Training Console for offline access</span>
+      <span className={styles.text}>Install Starcom Academy for offline access</span>
       <button type="button" className={styles.installBtn} onClick={handleInstall} data-testid="install-btn">
         Install
       </button>

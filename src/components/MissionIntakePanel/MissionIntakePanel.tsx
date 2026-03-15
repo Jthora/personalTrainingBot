@@ -12,7 +12,7 @@ const MissionIntakePanel: React.FC<MissionIntakePanelProps> = ({ onStartBriefing
       <p className={styles.eyebrow}>Welcome</p>
       <h2 className={styles.title}>Your Training Hub</h2>
       <p className={styles.body}>
-        This is your daily training console. Start drills, track progress across 19 disciplines, and build real competency over time.
+        This is your Starcom Academy training console. Start drills, track progress across 19 disciplines, and build real competency over time.
       </p>
 
       <div className={styles.grid}>

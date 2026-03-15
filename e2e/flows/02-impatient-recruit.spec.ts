@@ -207,7 +207,7 @@ test.describe('Story 02 — Impatient Recruit', () => {
 
     const launchBtn = page.getByTestId('today-launch-btn');
     await expect(launchBtn).toBeVisible();
-    await expect(launchBtn).toContainText('Psi Operative');
+    await expect(launchBtn).toContainText('Psi Corps');
   });
 
   test('2.8 — Fast path flag cleared, profile saved', async ({ page }) => {

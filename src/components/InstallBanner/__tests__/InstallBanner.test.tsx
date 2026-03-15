@@ -31,7 +31,7 @@ describe('InstallBanner', () => {
 
     render(<InstallBanner />);
     expect(screen.getByTestId('install-banner')).toBeTruthy();
-    expect(screen.getByText(/Install the Training Console/)).toBeTruthy();
+    expect(screen.getByText(/Install Starcom Academy/)).toBeTruthy();
   });
 
   it('calls promptInstall when Install button is clicked', () => {

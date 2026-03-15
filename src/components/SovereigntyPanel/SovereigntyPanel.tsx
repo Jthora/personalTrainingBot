@@ -124,7 +124,7 @@ const SovereigntyPanel: React.FC = () => {
 
   const handleGenerate = useCallback(async () => {
     const profile = OperativeProfileStore.get();
-    const alias = profile?.callsign?.trim() || 'Operative';
+    const alias = profile?.callsign?.trim() || 'Cadet';
     await create(alias);
   }, [create]);
 
@@ -133,7 +133,7 @@ const SovereigntyPanel: React.FC = () => {
     setExportWorking(true);
     try {
       const json = await exportIdentity(exportPassphrase || undefined);
-      const alias = identity?.alias ?? 'operative';
+      const alias = identity?.alias ?? 'cadet';
       downloadJson(json, `ptb-keypair-${alias}.json`);
       setOverlayMode(null);
       setExportPassphrase('');
@@ -218,7 +218,7 @@ const SovereigntyPanel: React.FC = () => {
 
   const handleRemove = useCallback(() => {
     if (window.confirm(
-      'Remove operative keypair from this device?\n\n' +
+      'Remove cadet keypair from this device?\n\n' +
       'Your training data will remain locally. ' +
       'Export your key first if you want to restore P2P sync on another device.'
     )) {
@@ -250,7 +250,7 @@ const SovereigntyPanel: React.FC = () => {
         {/* ── Keypair section ── */}
         {!identity ? (
           <div className={styles.uninitializedBlock} data-testid="sovereignty-no-identity">
-            <p className={styles.uninitializedTitle}>Operative keypair not initialized</p>
+            <p className={styles.uninitializedTitle}>Cadet credentials not initialized</p>
             <p className={styles.uninitializedDesc}>
               A cryptographic keypair is the foundation of your data sovereignty.
               No server holds it. No authority can revoke it. Your key is your identity.
@@ -384,11 +384,11 @@ const SovereigntyPanel: React.FC = () => {
         <div
           className={styles.overlay}
           role="dialog"
-          aria-label="Export operative keypair"
+          aria-label="Export cadet keypair"
           data-testid="sovereignty-export-overlay"
         >
           <div className={styles.overlayHeader}>
-            <h3 className={styles.overlayTitle}>Export Operative Keypair</h3>
+            <h3 className={styles.overlayTitle}>Export Cadet Keypair</h3>
             <button
               type="button"
               className={styles.closeBtn}
@@ -516,7 +516,7 @@ const SovereigntyPanel: React.FC = () => {
                       <QRCodeDisplay
                         value={qrJson}
                         size={240}
-                        label="Operative keypair QR code"
+                        label="Cadet keypair QR code"
                       />
                     </Suspense>
                   </div>
@@ -542,11 +542,11 @@ const SovereigntyPanel: React.FC = () => {
         <div
           className={styles.overlay}
           role="dialog"
-          aria-label="Import operative keypair"
+          aria-label="Import cadet keypair"
           data-testid="sovereignty-import-overlay"
         >
           <div className={styles.overlayHeader}>
-            <h3 className={styles.overlayTitle}>Import Operative Keypair</h3>
+            <h3 className={styles.overlayTitle}>Import Cadet Keypair</h3>
             <button
               type="button"
               className={styles.closeBtn}

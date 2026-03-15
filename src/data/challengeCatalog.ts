@@ -14,7 +14,7 @@ const CHALLENGE_CATALOG: ChallengeDefinition[] = [
     {
         id: 'daily_minutes_20',
         title: 'Daily Recon',
-        description: 'Log at least 20 minutes of operations today',
+        description: 'Log at least 20 minutes of training today',
         timeframe: 'daily',
         target: 20,
         unit: 'minutes',
@@ -23,7 +23,7 @@ const CHALLENGE_CATALOG: ChallengeDefinition[] = [
     {
         id: 'daily_two_missions',
         title: 'Double Deployment',
-        description: 'Complete 2 mission drills today',
+        description: 'Complete 2 training exercises today',
         timeframe: 'daily',
         target: 2,
         unit: 'missions',
@@ -32,7 +32,7 @@ const CHALLENGE_CATALOG: ChallengeDefinition[] = [
     {
         id: 'weekly_minutes_90',
         title: 'Weekly Surveillance',
-        description: 'Accumulate 90 minutes of operations this week',
+        description: 'Accumulate 90 minutes of training this week',
         timeframe: 'weekly',
         target: 90,
         unit: 'minutes',
@@ -41,7 +41,7 @@ const CHALLENGE_CATALOG: ChallengeDefinition[] = [
     {
         id: 'weekly_five_missions',
         title: 'Five-Op Sprint',
-        description: 'Complete 5 mission drills this week',
+        description: 'Complete 5 training exercises this week',
         timeframe: 'weekly',
         target: 5,
         unit: 'missions',

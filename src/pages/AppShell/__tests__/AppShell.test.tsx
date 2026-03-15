@@ -102,9 +102,9 @@ describe('AppShell', () => {
     expect(mockNavigate).toHaveBeenCalledWith({ pathname: '/review', search: '' });
   });
 
-  it('does not render mission tabs when mission mode is off', () => {
+  it('does not render mission tabs when active duty is off', () => {
     render(<AppShell />);
-    expect(screen.queryByText('Mission Mode')).toBeNull();
+    expect(screen.queryByText('Active Duty')).toBeNull();
   });
 
   it('responds to ⌘K keyboard shortcut', () => {

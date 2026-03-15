@@ -92,7 +92,7 @@ const ModuleBrowser: React.FC<ModuleBrowserProps> = ({ onSelectModule, onQuickTr
     <div className={styles.browser} data-testid="module-browser">
       {isFirstTime && (
         <div className={styles.welcomeBanner} data-testid="welcome-banner">
-          <h3 className={styles.welcomeHeading}>Welcome to Archangel Knights Training</h3>
+          <h3 className={styles.welcomeHeading}>Welcome to Starcom Academy</h3>
           <p className={styles.welcomeBody}>
             Pick any module below to start your first drill. Each module covers a different discipline
             — from cybersecurity to fitness to martial arts.

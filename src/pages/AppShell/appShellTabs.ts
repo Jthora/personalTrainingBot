@@ -2,14 +2,14 @@
  * Tab configuration for the simplified 4-tab AppShell (v2).
  *
  * Primary tabs are always visible. Mission tabs appear only when
- * the user enables Mission Mode via Profile → Settings.
+ * the user enables Active Duty via Profile → Settings.
  */
 
 export interface AppShellTab {
   path: string;
   label: string;
   icon: string;
-  /** Only visible when Mission Mode is enabled */
+  /** Only visible when Active Duty is enabled */
   missionOnly?: boolean;
 }
 

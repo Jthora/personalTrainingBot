@@ -67,19 +67,19 @@ const Header: React.FC = () => {
             <div className={styles.leftSection}>
                 <div className={styles.logoContainer}>
                     <a
-                        href="https://archangel.agency/hub"
+                        href="https://starcom.academy"
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label="Visit the Archangel Agency hub"
+                        aria-label="Visit Earth Alliance Command"
                     >
-                        <img src={logo} alt="Wing Commander Logo" className={styles.logo} />
+                        <img src={logo} alt="Starcom Academy Insignia" className={styles.logo} />
                     </a>
                 </div>
             </div>
 
             {/* Center - Title (hugging the logo) */}
             <div className={styles.centerSection}>
-                <h1 className={styles.headerTitle}>Archangel Knights Training Console</h1>
+                <h1 className={styles.headerTitle}>Starcom Academy</h1>
                 <div className={styles.chipsRow}>
                     <span
                         className={styles.chip}

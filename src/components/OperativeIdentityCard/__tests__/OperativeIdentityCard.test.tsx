@@ -14,7 +14,7 @@ vi.mock('../../../data/archetypes', () => ({
     if (id === 'rescue_ranger') {
       return {
         id: 'rescue_ranger',
-        name: 'Rescue Ranger',
+        name: 'Search & Rescue',
         icon: '🦅',
         description: 'Rescue-focused operative specialising in disaster triage.',
         coreModules: ['combat', 'fitness', 'martial_arts'],
@@ -34,7 +34,7 @@ vi.mock('../../../data/handlers', () => ({
   handlers: [
     {
       id: 'tiger_fitness_god',
-      name: 'Tiger War God',
+      name: 'Commander Tygan',
       icon: '/tiger.png',
       personality: 'Ferocious Motivator',
       description: '',
@@ -54,7 +54,7 @@ beforeEach(() => {
 describe('OperativeIdentityCard', () => {
   it('renders empty state when no profile exists', () => {
     render(<OperativeIdentityCard />);
-    expect(screen.getByText('No operative profile configured.')).toBeTruthy();
+    expect(screen.getByText('No cadet profile configured.')).toBeTruthy();
   });
 
   it('renders archetype + handler when profile props provided', () => {
@@ -66,8 +66,8 @@ describe('OperativeIdentityCard', () => {
       />,
     );
     expect(screen.getByText('Phoenix')).toBeTruthy();
-    expect(screen.getByText('Rescue Ranger')).toBeTruthy();
-    expect(screen.getByText('Tiger War God')).toBeTruthy();
+    expect(screen.getByText('Search & Rescue')).toBeTruthy();
+    expect(screen.getByText('Commander Tygan')).toBeTruthy();
   });
 
   it('renders core module tags', () => {
@@ -86,17 +86,17 @@ describe('OperativeIdentityCard', () => {
     });
     render(<OperativeIdentityCard />);
     expect(screen.getByText('Shadow')).toBeTruthy();
-    expect(screen.getByText('Rescue Ranger')).toBeTruthy();
+    expect(screen.getByText('Search & Rescue')).toBeTruthy();
   });
 
   it('has aria-label for accessibility', () => {
     render(<OperativeIdentityCard archetypeId="rescue_ranger" />);
-    expect(screen.getByLabelText('Operative identity')).toBeTruthy();
+    expect(screen.getByLabelText('Cadet identity')).toBeTruthy();
   });
 
   it('renders handler icon as img', () => {
     render(<OperativeIdentityCard handlerId="tiger_fitness_god" />);
-    const img = screen.getByAltText('Tiger War God') as HTMLImageElement;
+    const img = screen.getByAltText('Commander Tygan') as HTMLImageElement;
     expect(img.src).toContain('tiger.png');
   });
 });

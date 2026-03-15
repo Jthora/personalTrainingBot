@@ -114,7 +114,7 @@ describe('TodayLauncher', () => {
 
     render(<TodayLauncher />);
     const btn = screen.getByTestId('today-launch-btn');
-    expect(btn.textContent).toContain('Rescue Ranger Training');
+    expect(btn.textContent).toContain('Search & Rescue Exercises');
   });
 
   it('shows archetype kit label in summary when profile is set', () => {
@@ -127,7 +127,7 @@ describe('TodayLauncher', () => {
 
     render(<TodayLauncher />);
     expect(screen.getByTestId('archetype-kit-label')).toBeTruthy();
-    expect(screen.getByTestId('archetype-kit-label').textContent).toContain('Rescue Ranger kit');
+    expect(screen.getByTestId('archetype-kit-label').textContent).toContain('Search & Rescue curriculum');
   });
 
   it('shows generic CTA when no archetype is set', () => {

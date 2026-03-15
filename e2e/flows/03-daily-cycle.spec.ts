@@ -66,11 +66,11 @@ test.describe('Story 03 — Daily Cycle', () => {
     // Launch button text contains archetype name
     const launchBtn = page.getByTestId('today-launch-btn');
     await expect(launchBtn).toBeVisible();
-    await expect(launchBtn).toContainText('Psi Operative');
+    await expect(launchBtn).toContainText('Psi Corps');
 
     // Archetype kit label visible
     await expect(page.getByTestId('archetype-kit-label')).toContainText(
-      'Psi Operative',
+      'Psi Corps',
     );
   });
 
@@ -78,7 +78,7 @@ test.describe('Story 03 — Daily Cycle', () => {
     await seedReturning(page);
     await gotoBrief(page);
 
-    // The kit summary should include at least one core Psi Operative module
+    // The kit summary should include at least one core Psi Corps module
     const launcher = page.getByTestId('today-launcher');
     const text = await launcher.textContent();
     const coreModules = ['Psiops', 'Counter Psyops', 'Self Sovereignty', 'Martial Arts'];

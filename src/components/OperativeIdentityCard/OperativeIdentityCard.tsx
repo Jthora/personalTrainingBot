@@ -26,14 +26,14 @@ const OperativeIdentityCard: React.FC<OperativeIdentityCardProps> = ({
 
   if (!archetype && !handler) {
     return (
-      <section className={styles.card} aria-label="Operative identity">
-        <p className={styles.empty}>No operative profile configured.</p>
+      <section className={styles.card} aria-label="Cadet identity">
+        <p className={styles.empty}>No cadet profile configured.</p>
       </section>
     );
   }
 
   return (
-    <section className={styles.card} aria-label="Operative identity">
+    <section className={styles.card} aria-label="Cadet identity">
       <div className={styles.header}>
         {archetype && <span className={styles.archetypeIcon}>{archetype.icon}</span>}
         <div className={styles.names}>
@@ -54,7 +54,7 @@ const OperativeIdentityCard: React.FC<OperativeIdentityCardProps> = ({
             height={32}
           />
           <div className={styles.handlerMeta}>
-            <span className={styles.handlerLabel}>Handler</span>
+            <span className={styles.handlerLabel}>Instructor</span>
             <span className={styles.handlerName}>{handler.name}</span>
           </div>
         </div>

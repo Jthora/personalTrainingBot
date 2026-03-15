@@ -125,7 +125,7 @@ const TodayLauncher: React.FC = () => {
             disabled={launching}
             data-testid="today-launch-btn"
           >
-            {launching ? 'Launching…' : archetype ? `${archetype.icon} ${archetype.name} Training` : "Start Today's Training"}
+            {launching ? 'Launching…' : archetype ? `${archetype.icon} ${archetype.name} Exercises` : "Start Today's Training"}
           </button>
           {dueCount > 0 && (
             <button
@@ -140,7 +140,7 @@ const TodayLauncher: React.FC = () => {
           <p className={styles.summary}>
             {incompleteDrills.length} of {drills.length} drill{drills.length !== 1 ? 's' : ''} remaining
             {archetype && (
-              <span className={styles.modules} data-testid="archetype-kit-label"> · {archetype.name} kit</span>
+              <span className={styles.modules} data-testid="archetype-kit-label"> · {archetype.name} curriculum</span>
             )}
             {moduleNames.length > 0 && (
               <span className={styles.modules}> · {moduleNames.slice(0, 3).join(', ')}{moduleNames.length > 3 ? ` +${moduleNames.length - 3} more` : ''}</span>

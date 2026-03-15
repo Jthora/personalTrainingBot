@@ -79,7 +79,7 @@ const assistantHints: Partial<Record<MissionRoutePath, { sopPrompt: string; cont
     nextActionHint: 'When AAR is complete, start the next mission brief.',
   },
   '/mission/stats': {
-    sopPrompt: 'SOP: Review operative metrics, competency trends, and progress toward next milestone.',
+    sopPrompt: 'SOP: Review cadet metrics, competency trends, and progress toward next milestone.',
     contextHint: 'Use the dashboard to identify weak competency dimensions and prioritize drills.',
     nextActionHint: 'After reviewing stats, return to Brief to start your next mission cycle.',
   },

@@ -167,7 +167,7 @@ const AppShell: React.FC = () => {
         {/* ── Mission Mode tabs (desktop only) ── */}
         {!isMobile && missionMode && (
           <div className={styles.missionSection}>
-            <div className={styles.missionLabel}>Mission Mode</div>
+            <div className={styles.missionLabel}>Active Duty</div>
             <div className={styles.missionTabs} role="tablist" aria-label="Mission navigation">
               {missionTabs.map((tab) => (
                 <button

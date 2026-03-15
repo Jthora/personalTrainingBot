@@ -5,7 +5,7 @@ describe('resolveModulesForArchetype', () => {
     it('returns core + secondary modules for a valid archetype', () => {
         const modules = resolveModulesForArchetype('rescue_ranger');
         expect(modules).toBeDefined();
-        // Rescue Ranger: core=[combat, counter_biochem, fitness, investigation], secondary=[intelligence, psiops]
+        // Search & Rescue: core=[combat, counter_biochem, fitness, investigation], secondary=[intelligence, psiops]
         expect(modules).toEqual(['combat', 'counter_biochem', 'fitness', 'investigation', 'intelligence', 'psiops']);
     });
 

@@ -7,14 +7,167 @@
     <link rel="apple-touch-icon" href="/favicon.png">
     <link rel="manifest" href="/manifest.webmanifest">
     <meta name="theme-color" content="#5A7FFF">
-    <meta name="description" content="Starcom Academy — Earth Alliance officer training console">
+    <meta name="description" content="Starcom Academy — Earth Alliance officer training console. Multi-domain curriculum: combat, intelligence, cyber ops, psionic defense, strategic command, and self-sovereignty. 19 modules, 663 card decks, 3,231 training cards. Offline-first PWA with sovereign cryptographic identity.">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <title>Starcom Academy</title>
+    <title>Starcom Academy — Earth Alliance Officer Training</title>
+
+    <!-- Author & Keywords -->
+    <meta name="author" content="Jono Tho'ra">
+    <meta name="keywords" content="Starcom Academy, Earth Alliance, Jono Tho'ra, officer training, OSINT, intelligence, cybersecurity, self-sovereignty, psionic defense, counter-psyops, combat training, Earth Intelligence Network, sovereign identity, decentralized identity, PWA">
+    <meta name="application-name" content="Starcom Academy">
+    <meta name="generator" content="Vite 6 + React 19">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Starcom Academy — Earth Alliance Officer Training">
+    <meta property="og:description" content="Academy and commissioning authority for the Earth Alliance. Multi-domain training across combat, intelligence, cyber, psionic, strategic, and sovereignty domains. 19 modules, 3,231 training cards. Sovereign identity. Offline-first.">
+    <meta property="og:url" content="https://personaltrainingbot.archangel.agency">
+    <meta property="og:site_name" content="Starcom Academy">
+    <meta property="og:image" content="https://personaltrainingbot.archangel.agency/favicon.png">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Starcom Academy — Earth Alliance Officer Training">
+    <meta name="twitter:description" content="Multi-domain officer training console for the Earth Alliance. 19 training modules. Sovereign cryptographic identity. Offline-first PWA.">
+    <meta name="twitter:image" content="https://personaltrainingbot.archangel.agency/favicon.png">
+
+    <!-- Canonical & Discovery -->
+    <link rel="canonical" href="https://personaltrainingbot.archangel.agency">
+    <link rel="author" href="/humans.txt">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://personaltrainingbot.archangel.agency/#organization",
+          "name": "Earth Alliance Command",
+          "description": "Global organization unifying physical readiness, intelligence tradecraft, cyber operations, strategic thinking, and sovereign self-determination into a single officer development pipeline.",
+          "url": "https://archangel.agency/hub",
+          "founder": {
+            "@type": "Person",
+            "@id": "https://jono.archangel.agency/#creator",
+            "name": "Jono Tho'ra",
+            "url": "https://jono.archangel.agency"
+          },
+          "sameAs": [
+            "https://github.com/Jthora/personalTrainingBot",
+            "https://starcom.app",
+            "https://navcom.app",
+            "https://tacticalinteldashboard.archangel.agency"
+          ]
+        },
+        {
+          "@type": "WebApplication",
+          "@id": "https://personaltrainingbot.archangel.agency/#application",
+          "name": "Starcom Academy",
+          "alternateName": "Starcom",
+          "description": "Earth Alliance officer training, mission readiness, and field certification console. Multi-domain curriculum with 19 training modules, 663 card decks, and 3,231 training cards spanning combat, intelligence, cyber operations, psionic defense, strategic command, and self-sovereignty.",
+          "url": "https://personaltrainingbot.archangel.agency",
+          "applicationCategory": ["EducationalApplication", "SecurityApplication"],
+          "operatingSystem": "Any (Progressive Web App)",
+          "browserRequirements": "Requires a modern browser with JavaScript and Service Worker support",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "creator": {
+            "@type": "Person",
+            "@id": "https://jono.archangel.agency/#creator",
+            "name": "Jono Tho'ra",
+            "url": "https://jono.archangel.agency",
+            "sameAs": [
+              "https://github.com/Jthora",
+              "https://mecha.jono.archangel.agency"
+            ]
+          },
+          "license": "https://github.com/Jthora/personalTrainingBot/blob/main/LICENSE",
+          "isAccessibleForFree": true,
+          "inLanguage": "en"
+        },
+        {
+          "@type": "Course",
+          "@id": "https://personaltrainingbot.archangel.agency/#curriculum",
+          "name": "Earth Alliance Officer Training Curriculum",
+          "description": "Multi-domain officer development pipeline with 19 training modules across combat, intelligence, cybersecurity, psionic operations, strategic command, self-sovereignty, and specialized domains. Progression from Cadet through Ensign, Lieutenant, to Commander across eight specialized divisions.",
+          "provider": {
+            "@id": "https://personaltrainingbot.archangel.agency/#organization"
+          },
+          "educationalLevel": "Professional",
+          "numberOfCredits": 19,
+          "hasCourseInstance": [
+            {
+              "@type": "CourseInstance",
+              "name": "Intelligence & Espionage Track",
+              "description": "Espionage tradecraft, intelligence analysis, investigation methods, and agency operations training."
+            },
+            {
+              "@type": "CourseInstance",
+              "name": "Cyber Operations Track",
+              "description": "Cybersecurity, decentralized systems (Web3), and technical infrastructure training."
+            },
+            {
+              "@type": "CourseInstance",
+              "name": "Combat & Physical Readiness Track",
+              "description": "Combat training, martial arts, field conditioning, and movement disciplines."
+            },
+            {
+              "@type": "CourseInstance",
+              "name": "Psionic & Cognitive Defense Track",
+              "description": "PsiOps training, counter-psyops, and consciousness defense."
+            },
+            {
+              "@type": "CourseInstance",
+              "name": "Strategic Command Track",
+              "description": "War strategy, space force command, counter-biochem defense."
+            },
+            {
+              "@type": "CourseInstance",
+              "name": "Sovereignty & Counter-Institutional Track",
+              "description": "Self-sovereignty, anti-PSN, anti-TCS/IDC/CBC counter-institutional warfare."
+            }
+          ],
+          "isAccessibleForFree": true,
+          "inLanguage": "en"
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <noscript>
+      <h1>Starcom Academy</h1>
+      <p>Earth Alliance officer training, mission readiness, and field certification console.</p>
+      <p>Starcom Academy is the commissioning authority for the Earth Alliance — a sovereign, offline-first progressive web application that trains cadets across 19 multi-domain training modules spanning combat, intelligence, cyber operations, psionic defense, strategic command, and self-sovereignty.</p>
+      <p>This application requires JavaScript to run. Enable JavaScript to begin your training.</p>
+      <h2>Training Domains</h2>
+      <ul>
+        <li>Combat / Physical — Combat Training, Martial Arts, Field Conditioning, Dance</li>
+        <li>Intelligence / Espionage — Espionage, Intelligence, Investigation, Agency Training</li>
+        <li>Psionic / Cognitive — PsiOps Training, Counter PsyOps</li>
+        <li>Cyber / Technical — Cybersecurity, Decentralized Systems (Web3)</li>
+        <li>Strategic / Command — War Strategy, Space Force Command, Counter BioChem</li>
+        <li>Sovereignty — Self Sovereignty, Anti-PSN, Anti-TCS/IDC/CBC</li>
+        <li>Specialized — Equation Training</li>
+      </ul>
+      <h2>Earth Alliance Ecosystem</h2>
+      <ul>
+        <li><a href="https://personaltrainingbot.archangel.agency">Starcom Academy</a> — Officer training and cadet commissioning</li>
+        <li><a href="https://starcom.app">Starcom</a> — 3D Global Cyber Command Interface</li>
+        <li><a href="https://navcom.app">Navcom</a> — Decentralized secure communications</li>
+        <li><a href="https://tacticalinteldashboard.archangel.agency">Tactical Intel Dashboard</a> — Open source intelligence</li>
+        <li><a href="https://mecha.jono.archangel.agency">Mecha Jono</a> — AI agent and organizational memory</li>
+      </ul>
+      <p>Created by <a href="https://jono.archangel.agency">Jono Tho'ra</a>.</p>
+      <p>Source: <a href="https://github.com/Jthora/personalTrainingBot">github.com/Jthora/personalTrainingBot</a> (MIT License)</p>
+    </noscript>
   </body>
 </html>

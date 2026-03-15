@@ -1,0 +1,16 @@
+# Starcom Academy — Earth Alliance Officer Training Console
+# https://personaltrainingbot.archangel.agency
+
+User-agent: *
+Allow: /
+Allow: /training_modules_manifest.json
+Allow: /training_modules_shards/
+
+# Machine-readable discovery
+# LLM briefing:     /llms.txt
+# AI agent policy:   /ai.txt
+# Humans:            /humans.txt
+# Security contact:  /.well-known/security.txt
+# Agent plugin:      /.well-known/ai-plugin.json
+
+Sitemap: https://personaltrainingbot.archangel.agency/sitemap.xml

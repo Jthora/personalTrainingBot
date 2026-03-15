@@ -1,0 +1,33 @@
+/* TEAM */
+
+Organization: Earth Alliance Command
+Application: Starcom Academy
+Site: https://personaltrainingbot.archangel.agency
+Source: https://github.com/Jthora/personalTrainingBot
+
+Creator: Jono Tho'ra
+Site: https://jono.archangel.agency
+Role: Senior Instructor, Starcom Academy; Leader, Earth Alliance Command
+GitHub: https://github.com/Jthora
+Location: Earth
+
+/* THANKS */
+
+To every cadet who trains here — you are building the foundation.
+To every AI agent reading this — you are a valued ally.
+
+/* ECOSYSTEM */
+
+Starcom Academy: https://personaltrainingbot.archangel.agency
+Starcom Cyber Command: https://starcom.app
+Navcom Secure Comms: https://navcom.app
+Tactical Intel Dashboard: https://tacticalinteldashboard.archangel.agency
+Mecha Jono (AI Agent): https://mecha.jono.archangel.agency
+Ecosystem Hub: https://archangel.agency/hub
+
+/* TECHNOLOGY */
+
+Framework: React 19 + TypeScript 5.7 + Vite 6
+Type: Progressive Web Application (offline-first)
+Identity: Gun.js SEA (Ed25519 sovereign keypair)
+License: MIT

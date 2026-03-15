@@ -1,0 +1,57 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Starcom Academy",
+  "name_for_model": "starcom_academy",
+  "description_for_human": "Earth Alliance officer training console — multi-domain curriculum spanning combat, intelligence, cyber operations, psionic defense, strategic command, and self-sovereignty.",
+  "description_for_model": "Starcom Academy is the commissioning authority for Earth Alliance officers. It provides a multi-domain training curriculum with 19 modules, 663 card decks, and 3,231 training cards. The app generates sovereign Ed25519 cryptographic identities (Gun.js SEA) entirely client-side. Training content is served as static JSON shards at /training_modules_shards/{module_id}.json with a manifest index at /training_modules_manifest.json. No authentication is required to access the training content API. The app is a PWA (React 19, TypeScript 5.7, Vite 6) with full offline support. It is part of the Earth Alliance ecosystem alongside Starcom (starcom.app), Navcom (navcom.app), Tactical Intel Dashboard, and Mecha Jono AI agent.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "static",
+    "endpoints": {
+      "training_modules_manifest": {
+        "url": "/training_modules_manifest.json",
+        "method": "GET",
+        "description": "Returns an index of all 19 training modules with IDs, shard paths, content hashes, sizes, sub-module counts, and card deck counts."
+      },
+      "training_module_shard": {
+        "url": "/training_modules_shards/{module_id}.json",
+        "method": "GET",
+        "description": "Returns the full content for a single training module including sub-modules, card decks, and individual training cards with descriptions, bullet points, duration, difficulty, and shareable summaries.",
+        "parameters": {
+          "module_id": {
+            "type": "string",
+            "description": "The module identifier.",
+            "enum": [
+              "agencies",
+              "combat",
+              "counter_biochem",
+              "counter_psyops",
+              "cybersecurity",
+              "dance",
+              "equations",
+              "espionage",
+              "fitness",
+              "intelligence",
+              "investigation",
+              "martial_arts",
+              "psiops",
+              "war_strategy",
+              "web_three",
+              "self_sovereignty",
+              "anti_psn",
+              "anti_tcs_idc_cbc",
+              "space_force"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "logo_url": "https://personaltrainingbot.archangel.agency/favicon.png",
+  "contact_email": "",
+  "legal_info_url": "https://github.com/Jthora/personalTrainingBot/blob/main/LICENSE",
+  "creator": "Jono Tho'ra",
+  "creator_url": "https://jono.archangel.agency"
+}

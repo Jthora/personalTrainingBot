@@ -1,7 +1,7 @@
 # Architecture & UX Assessment (Psi Operative Beta) — 2026-03-04
 
 ## Context
-- Persona: Psi Operative Super Hero Cyber Investigator, Archangel Knights Advanced Internship.
+- Persona: Psi Corps Super Hero Cyber Investigator, Starcom Academy Advanced Training.
 - Current app: Vite/React SPA, fitness/coach-oriented IA; routing shell intact but domain-misaligned; offline posture weak without explicit SW precache.
 - Recent fixes: Removed focus-mode auto-redirect; SPA rewrites (vercel.json, _redirects, 404 fallback). Build now passes.
 

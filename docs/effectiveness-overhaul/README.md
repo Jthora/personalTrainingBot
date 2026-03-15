@@ -6,8 +6,8 @@
 
 ## The Problem
 
-The Training Console has world-class plumbing — SM-2 spaced repetition, a 4-type quiz
-generator, 19-module architecture, offline PWA, telemetry, badges, operative identity —
+Starcom Academy has world-class plumbing — SM-2 spaced repetition, a 4-type quiz
+generator, 19-module architecture, offline PWA, telemetry, badges, cadet identity —
 wrapped around placeholder content. The [refined-approach](../roadmap/refined-approach.md)
 document already diagnosed this: **"systems outran the content."**
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Archangel Knights Training Console uses three singleton cache classes to hold training content in memory after initial load. These caches sit between the static JSON data files and the UI components, providing indexed lookups, selection state, and filtering.
+Starcom Academy uses three singleton cache classes to hold training content in memory after initial load. These caches sit between the static JSON data files and the UI components, providing indexed lookups, selection state, and filtering.
 
 ```
 Static JSON  →  Data Loaders  →  Cache Singletons  →  Components / Stores

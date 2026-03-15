@@ -2,7 +2,7 @@
 
 ## Overview
 
-This guide covers deploying the Archangel Knights Training Console to production. The application is a static PWA — after building, it produces a `dist/` directory that can be served from any static hosting platform.
+This guide covers deploying Starcom Academy to production. The application is a static PWA — after building, it produces a `dist/` directory that can be served from any static hosting platform.
 
 **Production URL:** [personaltrainingbot.archangel.agency](https://personaltrainingbot.archangel.agency)
 
@@ -183,7 +183,7 @@ npm run rollback:mission-default
 
 ## Ecosystem Deployment
 
-The Training Console is one part of the Earth Alliance ecosystem. Other applications:
+Starcom Academy is one part of the Earth Alliance ecosystem. Other applications:
 
 | Application | URL |
 |---|---|

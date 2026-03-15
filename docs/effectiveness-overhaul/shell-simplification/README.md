@@ -4,7 +4,7 @@
 
 ## Problem Statement
 
-The Training Console wraps a training app in a 10-tab mission operations shell:
+The Academy wraps a training app in a 10-tab mission operations shell:
 
 ```
 Brief → Training → Triage → Case → Signal → Checklist → Debrief → Stats → Plan

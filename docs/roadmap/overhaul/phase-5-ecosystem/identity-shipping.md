@@ -121,7 +121,7 @@ If critical issues found after shipping:
 
 Once identity is stable in production, the next step is making it portable:
 
-1. **Deep-link handoff** — `https://starcom.app/import?identity=<encrypted-fragment>` allows one-click import from PTB to Starcom
+1. **Deep-link handoff** — `https://starcom.app/import?identity=<encrypted-fragment>` allows one-click import from the Academy to Starcom
 2. **Shared Gun namespace** — all ecosystem apps use the same relay and same `~/` user graph, so profile data appears everywhere automatically
 3. **QR-based device transfer** — already implemented and working; just needs to be promoted in onboarding
 

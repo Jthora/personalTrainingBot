@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Archangel Knights Training Console organises training content in two parallel hierarchies — **intelligence content** (training modules → card decks → cards) and **physical drills** (drill categories → subcategories → groups → drills). These hierarchies converge in the **mission schedule**, which interleaves card signals between drill sets.
+Starcom Academy organises training content in two parallel hierarchies — **intelligence content** (training modules → card decks → cards) and **physical drills** (drill categories → subcategories → groups → drills). These hierarchies converge in the **mission schedule**, which interleaves card signals between drill sets.
 
 ## Content Hierarchy
 

@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="src/assets/images/icons/handlers/StarcomCommander_01.png" alt="Archangel Knights Training Console" width="200" />
+<img src="src/assets/images/icons/handlers/StarcomCommander_01.png" alt="Starcom Academy" width="200" />
 
-# Archangel Knights Training Console
+# Starcom Academy
 
 **Academy and Commissioning Authority for the Earth Alliance**
 
-[![Live App](https://img.shields.io/badge/Live-Training%20Console-5A7FFF?style=for-the-badge)](https://personaltrainingbot.archangel.agency)
+[![Live App](https://img.shields.io/badge/Live-Starcom%20Academy-5A7FFF?style=for-the-badge)](https://personaltrainingbot.archangel.agency)
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org)
 [![PWA](https://img.shields.io/badge/PWA-Offline%20First-5A0FC8?style=flat-square&logo=pwa)](https://web.dev/progressive-web-apps/)
@@ -27,26 +27,26 @@
 
 ## Why This Exists
 
-There is no Earth Alliance. There are no Earth Intelligence Network operatives. There are no trained Archangel Knights. There are no Arch Angel Agency agents.
+There is no Earth Alliance. There are no Earth Intelligence Network operatives. There are no trained Starcom cadets. There are no Earth Alliance Command agents.
 
 **We need them. This app makes them.**
 
-There is presently no global organization that unifies physical readiness, intelligence tradecraft, cyber operations, strategic thinking, and sovereign self-determination into a single operative development pipeline. No Earth Alliance protects humanity's collective interests across these domains. No Earth Intelligence Network coordinates the information. No Archangel Knights stand ready.
+There is presently no global organization that unifies physical readiness, intelligence tradecraft, cyber operations, strategic thinking, and sovereign self-determination into a single officer development pipeline. No Earth Alliance protects humanity's collective interests across these domains. No Earth Intelligence Network coordinates the information. No Starcom cadets stand ready.
 
-The Archangel Knights Training Console is where that changes. It takes a person from interested civilian to operational Earth Alliance operative — providing a multi-domain training curriculum, assigning an operative identity, and preparing individuals to operate within the wider Earth Intelligence Network ecosystem.
+Starcom Academy is where that changes. It takes a person from interested civilian to operational Earth Alliance officer — providing a multi-domain training curriculum, assigning a cadet identity, and preparing individuals to operate within the wider Earth Intelligence Network ecosystem.
 
-This is not a fitness app with military theming. It is institutional training infrastructure for an organization being manifested into existence. Every operative who completes training here becomes part of the foundation.
+This is not a fitness app with military theming. It is institutional training infrastructure for an organization being manifested into existence. Every cadet who completes training here becomes part of the foundation.
 
 ---
 
 ## The Ecosystem
 
-The Training Console is one node in a distributed organizational infrastructure. These applications work together: training produces operatives, operatives conduct operations, operations produce intelligence, and AI provides organizational continuity.
+The Academy is one node in a distributed organizational infrastructure. These applications work together: training produces officers, officers conduct operations, operations produce intelligence, and AI provides organizational continuity.
 
 <table>
 <tr>
-<td width="160" align="center"><strong>Training Console</strong><br/><a href="https://personaltrainingbot.archangel.agency">personaltrainingbot.archangel.agency</a></td>
-<td><strong>Academy</strong> — Trains operatives across all domains and issues sovereign operative credentials. The front door of the Earth Alliance. <em>You are here.</em></td>
+<td width="160" align="center"><strong>Starcom Academy</strong><br/><a href="https://personaltrainingbot.archangel.agency">personaltrainingbot.archangel.agency</a></td>
+<td><strong>Academy</strong> — Trains cadets across all domains and issues sovereign cadet credentials. The front door of the Earth Alliance. <em>You are here.</em></td>
 </tr>
 <tr>
 <td width="160" align="center"><strong>Starcom</strong><br/><a href="https://starcom.app">starcom.app</a></td>
@@ -62,43 +62,43 @@ The Training Console is one node in a distributed organizational infrastructure.
 </tr>
 <tr>
 <td width="160" align="center"><strong>Mecha Jono</strong><br/><a href="https://mecha.jono.archangel.agency">mecha.jono.archangel.agency</a></td>
-<td><strong>AI Agent</strong> — Digital doppelganger of Jono Tho'ra, leader of Arch Angel Agency and Knight Commander of the Archangel Knights. Organizational memory and continuity.</td>
+<td><strong>AI Agent</strong> — Digital doppelganger of Lt. Commander Tho'ra, leader of Earth Alliance Command and senior instructor at Starcom Academy. Organizational memory and continuity.</td>
 </tr>
 </table>
 
-The ecosystem is not finite — it will expand as the Earth Alliance grows. The operative identity generated in the Training Console is the sovereign credential an operative carries across every application.
+The ecosystem is not finite — it will expand as the Earth Alliance grows. The cadet identity generated in the Academy is the sovereign credential a cadet carries across every application.
 
 > For detailed ecosystem architecture, see [docs/ecosystem.md](docs/ecosystem.md).
 
 ---
 
-## What the Training Console Does
+## What Starcom Academy Does
 
-### Operative Formation
+### Cadet Formation
 
-New operatives are onboarded through a commissioning sequence: guidance orientation → archetype selection → handler assignment → mission intake. This isn't character creation — it's role assignment within the organization.
+New cadets are onboarded through a commissioning sequence: guidance orientation → division selection → instructor assignment → mission intake. This isn't character creation — it's role assignment within the organization.
 
 <details>
-<summary><strong>Eight Operative Archetypes</strong></summary>
+<summary><strong>Eight Training Divisions</strong></summary>
 
-| Archetype | Specialization | Training Domains |
+| Division | Specialization | Training Domains |
 |---|---|---|
-| **Rescue Ranger** 🛡️ | Field triage and extraction | Combat, BioChem Defense, Fitness |
-| **Cyber Sentinel** 🔒 | Network intrusion and forensics | Cybersecurity, Intelligence, Espionage |
-| **Psi Operative** 🔮 | Consciousness defense and psychic combat | PsiOps, Martial Arts |
-| **Shadow Agent** 🕵️ | Covert operations and infiltration | Espionage, Intelligence, War Strategy |
-| **Cosmic Engineer** ⚡ | Systems and reality architecture | Cybersecurity, Equations, Web3, Space Command |
-| **Tactical Guardian** ⚔️ | Close-quarters combat leadership | Combat, Martial Arts, Fitness |
-| **Star Commander** 🌟 | Space defense strategy | Space Force, War Strategy, Intelligence |
-| **Field Scholar** 📖 | Counter-institutional warfare | Self-Sovereignty, Counter-PsyOps |
+| **Search & Rescue** 🛡️ | Field triage and extraction | Combat, BioChem Defense, Fitness |
+| **CyberCom** 🔒 | Network intrusion and forensics | Cybersecurity, Intelligence, Espionage |
+| **Psi Corps** 🔮 | Consciousness defense and psionic combat | PsiOps, Martial Arts |
+| **Intelligence Division** 🕵️ | Covert operations and infiltration | Espionage, Intelligence, War Strategy |
+| **Engineering Corps** ⚡ | Systems and quantum-domain architecture | Cybersecurity, Equations, Web3, Fleet Ops |
+| **GroundForce** ⚔️ | Close-quarters combat leadership | Combat, Martial Arts, Fitness |
+| **Fleet Command** 🌟 | Space defense strategy | Fleet Ops, Tactical Doctrine, Intelligence |
+| **Diplomatic Corps** 📖 | Counter-institutional warfare | Self-Sovereignty, Counter-PsyOps |
 
-Each archetype has four progression tiers (e.g., Cadet → Specialist → Commander → Director).
+Each division has four progression tiers (Cadet → Ensign → Lieutenant → Commander).
 
 </details>
 
 ### Multi-Domain Training Curriculum
 
-**19 training modules** with **663 card decks** containing **3,231 training cards** span the full operative development spectrum:
+**19 training modules** with **663 card decks** containing **3,231 training cards** span the full cadet development spectrum:
 
 | Domain | Modules |
 |---|---|
@@ -124,7 +124,7 @@ The operational rhythm operatives internalize through training:
      └────────────────────────────────────────────────────────────────────────┘
 ```
 
-This six-phase cycle mirrors the real operational workflow the ecosystem will eventually execute across Navcom, Starcom, and the Tactical Intel Dashboard. In the Training Console, it structures each training session. In the field, it becomes doctrine.
+This six-phase cycle mirrors the real operational workflow the ecosystem will eventually execute across Navcom, Starcom, and the Tactical Intel Dashboard. In Starcom Academy, it structures each training session. In the field, it becomes doctrine.
 
 ### Drill Execution
 
@@ -149,30 +149,30 @@ Physical drill categories: agility, balance, cardio, combat, coordination, endur
 | **Challenges** | Rotating daily and weekly missions from a curated catalog with XP rewards |
 | **After-Action Reviews** | Structured debrief journaling — context, actions, outcomes, lessons, follow-ups |
 
-### Operative Identity
+### Cadet Identity
 
-Each operative receives a **sovereign cryptographic identity** (SEA keypair) — not a server-managed account:
+Each cadet receives a **sovereign cryptographic identity** (SEA keypair) — not a server-managed account:
 
 - 🔐 Generated locally with no central authority
 - 📦 Exportable and importable (optionally encrypted with a passphrase)
 - 🌐 Designed to be recognized across the ecosystem (Navcom, Starcom, Tactical Intel Dashboard)
 - 🔄 Synced peer-to-peer via Gun.js — no central server dependency
 
-The Training Console is the **root of trust** — the place where an operative identity is born.
+Starcom Academy is the **root of trust** — the place where a cadet identity is born.
 
 > For the full identity specification, see [docs/operative-identity.md](docs/operative-identity.md).
 
-### Handler System
+### Instructor System
 
-Five handler characters serve as training mentors, each embodying a domain philosophy:
+Five instructor characters serve as training mentors, each embodying a domain philosophy:
 
-| Handler | Domain | Philosophy |
+| Instructor | Domain | Philosophy |
 |---|---|---|
-| **Tiger War God** | Combat & Physical | Primal discipline and physical supremacy |
-| **Jono Tho'ra** | Cosmic & Quantum | Rhythm combat, systems fusion, quantum hacking |
-| **Tara Van Dekar** | Esoteric & Spiritual | Rosicrucian martial tradition and spiritual fortitude |
+| **Commander Tygan** | Combat & Physical | Primal discipline and physical supremacy |
+| **Lt. Commander Tho'ra** | Systems & Engineering | Rhythm combat, systems fusion, quantum operations |
+| **Professor Van Dekar** | Psionic & Cognitive | Psi Corps doctrine and consciousness defense |
 | **Agent Simon** | Intelligence & Espionage | Tradecraft, information control, tactical deception |
-| **Star Commander Raynor** | Space & Strategy | Orbital operations, space defense command |
+| **Captain Raynor** | Fleet & Strategy | Orbital operations, fleet coordination, contingency command |
 
 ---
 
@@ -269,12 +269,12 @@ public/             # Service worker, manifest, static assets
 
 **The Earth Alliance doesn't exist yet.**
 
-Every line of code, every training card, every drill completion, every operative identity generated brings it closer to reality. This is not a product looking for product-market fit — it is infrastructure for an organization that is being willed into existence.
+Every line of code, every training card, every drill completion, every cadet identity generated brings it closer to reality. This is not a product looking for product-market fit — it is infrastructure for an organization that is being willed into existence.
 
 **Train. Prepare. Build. The Alliance starts here.**
 
 ---
 
-*Arch Angel Agency · Archangel Knights · Earth Intelligence Network*
+*Earth Alliance Command · Starcom Academy · Earth Intelligence Network*
 
 </div>

@@ -1,6 +1,6 @@
 # Story 8: The Offline Operative
 
-> *The Archangel Knights Training Console is built for operatives who may not always have connectivity. An outpost with no signal. A subway tunnel. A compromised network. The app promises: if you loaded it once, you can train forever — offline. That promise is backed by a custom service worker, precached training content, and client-side state that never phones home.*
+> *Starcom Academy is built for cadets who may not always have connectivity. An outpost with no signal. A subway tunnel. A compromised network. The app promises: if you loaded it once, you can train forever — offline. That promise is backed by a custom service worker, precached training content, and client-side state that never phones home.*
 
 ## The Promise
 

@@ -4,7 +4,7 @@
 
 ## Problem Statement
 
-The Training Console has 4,354 cards across 663 decks in 19 modules. The infrastructure
+Starcom Academy has 4,354 cards across 663 decks in 19 modules. The infrastructure
 works — cards render, quizzes generate, SR schedules reviews. But the content itself is
 **templated filler produced by automation**, not curriculum authored by domain experts.
 

@@ -8,7 +8,7 @@
 
 ## Context: The Core Problem
 
-The Archangel Knights Training Console was built **systems-first, content-last**. The infrastructure is real — gamification loop, schedule generation, offline story, mission-flow surfaces, P2P identity — but the actual training experience is hollow.
+Starcom Academy was built **systems-first, content-last**. The infrastructure is real — gamification loop, schedule generation, offline story, mission-flow surfaces, P2P identity — but the actual training experience is hollow.
 
 **Seven interconnected symptoms:**
 

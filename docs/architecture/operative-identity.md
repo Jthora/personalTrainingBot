@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Archangel Knights Training Console serves as the **commissioning authority** for Earth Alliance operatives. Every operative receives a sovereign cryptographic identity — not a server-managed account, not a username/password pair, but a cryptographic keypair that the operative owns outright. This identity is the credential that travels across the entire Earth Alliance ecosystem.
+Starcom Academy serves as the **commissioning authority** for Earth Alliance cadets. Every cadet receives a sovereign cryptographic identity — not a server-managed account, not a username/password pair, but a cryptographic keypair that the cadet owns outright. This identity is the credential that travels across the entire Earth Alliance ecosystem.
 
 ## Why Sovereign Identity
 
@@ -11,7 +11,7 @@ Traditional applications create user accounts on a central server. The server ow
 The Earth Alliance operates on different principles:
 
 - **No central authority controls operative identity.** The keypair is generated locally on the operative's device.
-- **The operative owns their keys.** Not Arch Angel Agency, not the Training Console, not any server.
+- **The cadet owns their keys.** Not Earth Alliance Command, not the Academy, not any server.
 - **Identity is portable.** The same credential works across Navcom, Starcom, Tactical Intel Dashboard, and any future ecosystem application.
 - **Identity survives infrastructure.** If any single server or application goes offline, the operative's identity persists because it was never stored on that server.
 
@@ -21,7 +21,7 @@ This is sovereignty-first design. The operative is not a row in someone else's d
 
 ### Keypair Generation
 
-The Training Console uses **Gun.js SEA (Security, Encryption, Authorization)** to generate operative keypairs:
+The Academy uses **Gun.js SEA (Security, Encryption, Authorization)** to generate cadet keypairs:
 
 ```
 SEA.pair() → {
@@ -65,7 +65,7 @@ Profile data syncs peer-to-peer via Gun.js user graph (`~/profile`). No central 
 
 ### How Identity Travels
 
-1. **Commissioning:** Operative generates keypair in the Training Console during onboarding
+1. **Commissioning:** Cadet generates keypair in the Academy during onboarding
 2. **Export:** Operative exports their credential (encrypted file or QR code)
 3. **Import elsewhere:** Operative imports the same credential into Navcom, Starcom, or other ecosystem apps
 4. **Recognition:** Each application verifies the operative's identity using their public key
@@ -75,7 +75,7 @@ Profile data syncs peer-to-peer via Gun.js user graph (`~/profile`). No central 
 
 The operative's public key is their canonical identifier across the ecosystem:
 
-- In the **Training Console** → Training history, XP, level, archetype, certifications
+- In **Starcom Academy** → Training history, XP, level, division, certifications
 - In **Navcom** → Communication identity, encrypted channel membership
 - In **Starcom** → Operational role, investigation access, OSINT contributions
 - In **Tactical Intel Dashboard** → Intelligence product authorship, analysis history
@@ -87,7 +87,7 @@ The ecosystem uses a **peer trust** model, not a central authority model:
 
 - **Self-sovereign:** Each operative generates and controls their own identity
 - **Peer attestation:** Operatives can attest to each other's capabilities (future)
-- **Training certification:** Completed training modules produce verifiable credentials signed by the Training Console (future)
+- **Training certification:** Completed training modules produce verifiable credentials signed by the Academy (future)
 - **Reputation accrual:** Operational activity across ecosystem apps builds a reputation associated with the public key (future)
 
 ## Current Implementation Status

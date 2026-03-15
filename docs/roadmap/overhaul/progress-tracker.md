@@ -864,7 +864,7 @@
 
 #### 5.2.1 Create ecosystem app config
 - [ ] 5.2.1.1 Create `src/config/ecosystemApps.ts` with `EcosystemApp` interface
-- [ ] 5.2.1.2 Define 5 apps: PTB, Starcom, Navcom, Tactical Intel Dashboard, Mecha Jono
+- [ ] 5.2.1.2 Define 5 apps: Academy, Starcom, Navcom, Tactical Intel Dashboard, Mecha Jono
 - [ ] 5.2.1.3 Each entry: `id`, `name`, `shortName`, `url`, `icon`, `description`, `current?`
 
 #### 5.2.2 Create EcosystemSwitcher component
@@ -893,7 +893,7 @@
 
 #### 5.3.1 Add flush sink
 - [ ] 5.3.1.1 `TELEMETRY_ENDPOINT` from `import.meta.env.VITE_TELEMETRY_ENDPOINT`
-- [ ] 5.3.1.2 `flushToCollector(events)`: POST batch with `appId: 'ptb'`
+- [ ] 5.3.1.2 `flushToCollector(events)`: POST batch with `appId: 'starcom-academy'`
 - [ ] 5.3.1.3 Use `sendBeacon` when `document.visibilityState === 'hidden'`
 - [ ] 5.3.1.4 Use `fetch` with `keepalive: true` for normal flush
 - [ ] 5.3.1.5 Silent fail on errors
@@ -942,12 +942,12 @@
 - [ ] 5.5.1 `p2pIdentity` ON in production, stable 2+ weeks
 - [ ] 5.5.2 Header has ecosystem app switcher with all 5 apps
 - [ ] 5.5.3 Telemetry events POST to shared endpoint
-- [ ] 5.5.4 Operative can export identity from PTB and import into ≥1 sibling app
+- [ ] 5.5.4 Cadet can export identity from the Academy and import into ≥1 sibling app
 - [ ] 5.5.5 `sendBeacon` fires on tab close
 - [ ] 5.5.6 Offline queue drains on reconnect
 - [ ] 5.5.7 Zero telemetry errors in prod console
 - [ ] 5.5.8 `globalKillSwitch` disables all outbound
-- [ ] 5.5.9 Tactical Intel Dashboard can query collector for PTB events
+- [ ] 5.5.9 Tactical Intel Dashboard can query collector for Academy events
 - [ ] 5.5.10 ARIA: nav with proper label, `aria-current` on current app
 
 ---

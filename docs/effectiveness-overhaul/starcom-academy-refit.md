@@ -1,5 +1,7 @@
 # Starcom Academy Refit — Full Implementation Plan
 
+> **Status**: ✅ **COMPLETE** — All 122 tasks shipped. Phases 1–7 done. 1,402 tests passing.
+>
 > **Goal**: Transform "Archangel Knights Training Console" → **"Starcom Academy"** — the Earth Alliance's premier officer training platform.
 >
 > **Scope**: Copy/branding refit across ~45 source files, ~130 string replacements. The app architecture, color system, and mission flow remain unchanged.
@@ -36,47 +38,47 @@ String replacements to the app's name, title, and meta across 10 files.
 
 ### Step 1.1 — HTML & Manifest
 
-- [ ] `001` **index.html L11**: meta description → `"Starcom Academy — Earth Alliance officer training console"`
-- [ ] `002` **index.html L15**: `<title>` → `Starcom Academy`
-- [ ] `003` **manifest.webmanifest L3**: `"name"` → `"Starcom Academy"`
-- [ ] `004` **manifest.webmanifest L4**: `"short_name"` → `"Starcom"`
-- [ ] `005` **manifest.webmanifest L5**: `"description"` → `"Earth Alliance officer training, mission readiness, and field certification console"`
-- [ ] `006` **package.json L2**: `"name"` → `"starcom-academy"`
-- [ ] `007` **public/404.html L6**: `<title>` → `Starcom Academy`
+- [x] `001` **index.html L11**: meta description → `"Starcom Academy — Earth Alliance officer training console"`
+- [x] `002` **index.html L15**: `<title>` → `Starcom Academy`
+- [x] `003` **manifest.webmanifest L3**: `"name"` → `"Starcom Academy"`
+- [x] `004` **manifest.webmanifest L4**: `"short_name"` → `"Starcom"`
+- [x] `005` **manifest.webmanifest L5**: `"description"` → `"Earth Alliance officer training, mission readiness, and field certification console"`
+- [x] `006` **package.json L2**: `"name"` → `"starcom-academy"`
+- [x] `007` **public/404.html L6**: `<title>` → `Starcom Academy`
 
 ### Step 1.2 — Header Branding
 
-- [ ] `008` **Header.tsx L70**: `href` → `"https://starcom.academy"` (or remove external link)
-- [ ] `009` **Header.tsx L73**: `aria-label` → `"Visit Earth Alliance Command"`
-- [ ] `010` **Header.tsx L75**: `alt` → `"Starcom Academy Insignia"`
-- [ ] `011` **Header.tsx L82**: `<h1>` text → `Starcom Academy`
-- [ ] `012` **Header.tsx L4**: Rename logo import variable comment noting old filename is retained for now (asset rename is Phase 7)
+- [x] `008` **Header.tsx L70**: `href` → `"https://starcom.academy"` (or remove external link)
+- [x] `009` **Header.tsx L73**: `aria-label` → `"Visit Earth Alliance Command"`
+- [x] `010` **Header.tsx L75**: `alt` → `"Starcom Academy Insignia"`
+- [x] `011` **Header.tsx L82**: `<h1>` text → `Starcom Academy`
+- [x] `012` **Header.tsx L4**: Rename logo import variable comment noting old filename is retained for now (asset rename is Phase 7)
 
 ### Step 1.3 — Loading & Welcome Screens
 
-- [ ] `013` **LoadingMessage.tsx L21**: `<h1>` → `Starcom Academy`
-- [ ] `014` **ModuleBrowser.tsx L95**: welcome heading → `Welcome to Starcom Academy`
-- [ ] `015` **InstallBanner.tsx L21**: text → `Install Starcom Academy for offline access`
-- [ ] `016` **MissionIntakePanel.tsx L15**: `"This is your daily training console."` → `"This is your Starcom Academy training console."`
+- [x] `013` **LoadingMessage.tsx L21**: `<h1>` → `Starcom Academy`
+- [x] `014` **ModuleBrowser.tsx L95**: welcome heading → `Welcome to Starcom Academy`
+- [x] `015` **InstallBanner.tsx L21**: text → `Install Starcom Academy for offline access`
+- [x] `016` **MissionIntakePanel.tsx L15**: `"This is your daily training console."` → `"This is your Starcom Academy training console."`
 
 ### Step 1.4 — Onboarding Eyebrows
 
-- [ ] `017` **ArchetypePicker.tsx L56**: eyebrow → `Starcom Academy Enrollment`
-- [ ] `018` **HandlerPicker.tsx L71**: eyebrow → `Starcom Academy Enrollment`
+- [x] `017` **ArchetypePicker.tsx L56**: eyebrow → `Starcom Academy Enrollment`
+- [x] `018` **HandlerPicker.tsx L71**: eyebrow → `Starcom Academy Enrollment`
 
 ### Step 1.5 — Config & Schema
 
-- [ ] `019` **.vscode/card-schema.json L4**: description → `"Schema for a single training card in Starcom Academy."`
-- [ ] `020` **fixtures.ts L15**: `id` → `'op-sentinel-prime'`
-- [ ] `021` **fixtures.ts L19**: `codename` → `'Sentinel Prime'` (and all other `Archangel Alpha` refs in that file)
+- [x] `019` **.vscode/card-schema.json L4**: description → `"Schema for a single training card in Starcom Academy."`
+- [x] `020` **fixtures.ts L15**: `id` → `'op-sentinel-prime'`
+- [x] `021` **fixtures.ts L19**: `codename` → `'Sentinel Prime'` (and all other `Archangel Alpha` refs in that file)
 
 ### Step 1.6 — Test Assertions (identity strings)
 
-- [ ] `022` **Header.test.tsx L56**: `'Archangel Knights Training Console'` → `'Starcom Academy'`
-- [ ] `023` **Header.test.tsx L57**: `'Wing Commander Logo'` → `'Starcom Academy Insignia'`
-- [ ] `024` **LoadingMessage.test.tsx L10**: `'Archangel Knights Training Console'` → `'Starcom Academy'`
-- [ ] `025` **InstallBanner.test.tsx L38**: `/Install the Training Console/` → `/Install Starcom Academy/`
-- [ ] `026` **00-smoke-gate.spec.ts L24**: `'Archangel Knights'` → `'Starcom Academy'` (also update `'Training Console'` fallback)
+- [x] `022` **Header.test.tsx L56**: `'Archangel Knights Training Console'` → `'Starcom Academy'`
+- [x] `023` **Header.test.tsx L57**: `'Wing Commander Logo'` → `'Starcom Academy Insignia'`
+- [x] `024` **LoadingMessage.test.tsx L10**: `'Archangel Knights Training Console'` → `'Starcom Academy'`
+- [x] `025` **InstallBanner.test.tsx L38**: `/Install the Training Console/` → `/Install Starcom Academy/`
+- [x] `026` **00-smoke-gate.spec.ts L24**: `'Archangel Knights'` → `'Starcom Academy'` (also update `'Training Console'` fallback)
 
 **Phase 1 total: 26 tasks, ~15 files**
 
@@ -88,42 +90,42 @@ Replace user-visible "Operative" with "Cadet" (or context-appropriate variant) a
 
 ### Step 2.1 — Profile Surface
 
-- [ ] `027` **ProfileSurface.tsx L51**: `"Operative Identity"` → `"Cadet Dossier"`
-- [ ] `028` **ProfileSurface.tsx L74**: `"No operative profile configured."` → `"No cadet profile configured."`
+- [x] `027` **ProfileSurface.tsx L51**: `"Operative Identity"` → `"Cadet Dossier"`
+- [x] `028` **ProfileSurface.tsx L74**: `"No operative profile configured."` → `"No cadet profile configured."`
 
 ### Step 2.2 — Identity Card
 
-- [ ] `029` **OperativeIdentityCard.tsx L29**: `aria-label` → `"Cadet identity"`
-- [ ] `030` **OperativeIdentityCard.tsx L30**: `"No operative profile configured."` → `"No cadet profile configured."`
-- [ ] `031` **OperativeIdentityCard.tsx L36**: `aria-label` → `"Cadet identity"`
+- [x] `029` **OperativeIdentityCard.tsx L29**: `aria-label` → `"Cadet identity"`
+- [x] `030` **OperativeIdentityCard.tsx L30**: `"No operative profile configured."` → `"No cadet profile configured."`
+- [x] `031` **OperativeIdentityCard.tsx L36**: `aria-label` → `"Cadet identity"`
 
 ### Step 2.3 — Sovereignty Panel
 
-- [ ] `032` **SovereigntyPanel.tsx L127**: fallback `'Operative'` → `'Cadet'`
-- [ ] `033` **SovereigntyPanel.tsx L136**: fallback `'operative'` → `'cadet'`
-- [ ] `034` **SovereigntyPanel.tsx L221**: `'Remove operative keypair…'` → `'Remove cadet keypair…'`
-- [ ] `035` **SovereigntyPanel.tsx L253**: `'Operative keypair not initialized'` → `'Cadet credentials not initialized'`
-- [ ] `036` **SovereigntyPanel.tsx L387**: `aria-label` → `'Export cadet keypair'`
-- [ ] `037` **SovereigntyPanel.tsx L391**: overlay title → `'Export Cadet Keypair'`
-- [ ] `038` **SovereigntyPanel.tsx L519**: label → `'Cadet keypair QR code'`
-- [ ] `039` **SovereigntyPanel.tsx L545**: `aria-label` → `'Import cadet keypair'`
-- [ ] `040` **SovereigntyPanel.tsx L549**: overlay title → `'Import Cadet Keypair'`
+- [x] `032` **SovereigntyPanel.tsx L127**: fallback `'Operative'` → `'Cadet'`
+- [x] `033` **SovereigntyPanel.tsx L136**: fallback `'operative'` → `'cadet'`
+- [x] `034` **SovereigntyPanel.tsx L221**: `'Remove operative keypair…'` → `'Remove cadet keypair…'`
+- [x] `035` **SovereigntyPanel.tsx L253**: `'Operative keypair not initialized'` → `'Cadet credentials not initialized'`
+- [x] `036` **SovereigntyPanel.tsx L387**: `aria-label` → `'Export cadet keypair'`
+- [x] `037` **SovereigntyPanel.tsx L391**: overlay title → `'Export Cadet Keypair'`
+- [x] `038` **SovereigntyPanel.tsx L519**: label → `'Cadet keypair QR code'`
+- [x] `039` **SovereigntyPanel.tsx L545**: `aria-label` → `'Import cadet keypair'`
+- [x] `040` **SovereigntyPanel.tsx L549**: overlay title → `'Import Cadet Keypair'`
 
 ### Step 2.4 — Badge Catalog
 
-- [ ] `041` **badgeCatalog.ts L19**: `name: 'Persistent Operative'` → `'Persistent Cadet'`
-- [ ] `042` **badgeCatalog.ts L25**: `name: 'Ace Operative'` → `'Ace Cadet'`
+- [x] `041` **badgeCatalog.ts L19**: `name: 'Persistent Operative'` → `'Persistent Cadet'`
+- [x] `042` **badgeCatalog.ts L25**: `name: 'Ace Operative'` → `'Ace Cadet'`
 
 ### Step 2.5 — SOP Hint
 
-- [ ] `043` **MissionShell.tsx L88**: `'Review operative metrics'` → `'Review cadet metrics'`
+- [x] `043` **MissionShell.tsx L88**: `'Review operative metrics'` → `'Review cadet metrics'`
 
 ### Step 2.6 — Test Assertions (operative strings)
 
-- [ ] `044` **OperativeIdentityCard.test.tsx L57**: `'No operative profile configured.'` → `'No cadet profile configured.'`
-- [ ] `045` **OperativeIdentityCard.test.tsx L91/94**: `'Operative identity'` → `'Cadet identity'`
-- [ ] `046` **ProfileSurface.test.tsx L27**: test description `'shows operative identity'` → `'shows cadet dossier'`
-- [ ] `047` **AppShell.test.tsx L107**: `queryByText('Mission Mode')` → `queryByText('Active Duty')`
+- [x] `044` **OperativeIdentityCard.test.tsx L57**: `'No operative profile configured.'` → `'No cadet profile configured.'`
+- [x] `045` **OperativeIdentityCard.test.tsx L91/94**: `'Operative identity'` → `'Cadet identity'`
+- [x] `046` **ProfileSurface.test.tsx L27**: test description `'shows operative identity'` → `'shows cadet dossier'`
+- [x] `047` **AppShell.test.tsx L107**: `queryByText('Mission Mode')` → `queryByText('Active Duty')`
 
 **Phase 2 total: 21 tasks, ~8 files**
 
@@ -135,21 +137,21 @@ Replace user-visible "Handler" with "Instructor". Internal type names, store nam
 
 ### Step 3.1 — Picker & Profile Labels
 
-- [ ] `048` **HandlerPicker.tsx L70**: `aria-label` → `"Choose your instructor"`
-- [ ] `049` **HandlerPicker.tsx L72**: heading → `"Choose Your Instructor"`
-- [ ] `050` **HandlerPicker.tsx L73-74**: subtitle → `"Your instructor shapes mission personality, SOP tone, and training style. The recommended instructor is matched to your division."`
-- [ ] `051` **ProfileSurface.tsx L63**: label → `"Instructor"`
-- [ ] `052` **OperativeIdentityCard.tsx L57**: label → `"Instructor"`
-- [ ] `053` **ArchetypePicker.tsx L59**: `"recommended handler"` → `"recommended instructor"`
+- [x] `048` **HandlerPicker.tsx L70**: `aria-label` → `"Choose your instructor"`
+- [x] `049` **HandlerPicker.tsx L72**: heading → `"Choose Your Instructor"`
+- [x] `050` **HandlerPicker.tsx L73-74**: subtitle → `"Your instructor shapes mission personality, SOP tone, and training style. The recommended instructor is matched to your division."`
+- [x] `051` **ProfileSurface.tsx L63**: label → `"Instructor"`
+- [x] `052` **OperativeIdentityCard.tsx L57**: label → `"Instructor"`
+- [x] `053` **ArchetypePicker.tsx L59**: `"recommended handler"` → `"recommended instructor"`
 
 ### Step 3.2 — Recap Copy
 
-- [ ] `054` **recapVariants.ts L276**: `'Handler debrief'` → `'Instructor debrief'`
+- [x] `054` **recapVariants.ts L276**: `'Handler debrief'` → `'Instructor debrief'`
 
 ### Step 3.3 — Test Assertions (handler strings)
 
-- [ ] `055` **OperativeIdentityCard.test.tsx L70**: assertion for handler name `'Tiger War God'` → new name (Phase 5 dependency — update simultaneously)
-- [ ] `056` **HandlerPicker.test.tsx L36**: `'Tiger War God'` → new name (Phase 5 dependency)
+- [x] `055` **OperativeIdentityCard.test.tsx L70**: assertion for handler name `'Tiger War God'` → new name (Phase 5 dependency — update simultaneously)
+- [x] `056` **HandlerPicker.test.tsx L36**: `'Tiger War God'` → new name (Phase 5 dependency)
 
 **Phase 3 total: 9 tasks, ~6 files**
 
@@ -159,30 +161,30 @@ Replace user-visible "Handler" with "Instructor". Internal type names, store nam
 
 ### Step 4.1 — Archetype → Division Labels
 
-- [ ] `057` **ArchetypePicker.tsx L55**: `aria-label` → `"Choose your training division"`
-- [ ] `058` **ArchetypePicker.tsx L57**: heading → `"Choose Your Division"`
-- [ ] `059` **ArchetypePicker.tsx L58-59**: subtitle → `"Your division determines your core training modules, recommended instructor, and milestone progression path. You can change this later."`
-- [ ] `060` **ProfileSurface.tsx L60**: label → `"Division"`
+- [x] `057` **ArchetypePicker.tsx L55**: `aria-label` → `"Choose your training division"`
+- [x] `058` **ArchetypePicker.tsx L57**: heading → `"Choose Your Division"`
+- [x] `059` **ArchetypePicker.tsx L58-59**: subtitle → `"Your division determines your core training modules, recommended instructor, and milestone progression path. You can change this later."`
+- [x] `060` **ProfileSurface.tsx L60**: label → `"Division"`
 
 ### Step 4.2 — Mission Mode → Active Duty
 
-- [ ] `061` **ProfileSurface.tsx L84**: label → `"Active Duty"`
-- [ ] `062` **ProfileSurface.tsx L85-86**: hint → `"Show full mission workflow tabs (Brief, Triage, Case, Signal, Debrief)"`  _(keep as-is or lightly adjust)_
-- [ ] `063` **AppShell.tsx L170**: `"Mission Mode"` → `"Active Duty"`
-- [ ] `064` **appShellTabs.ts L5**: comment → `"Active Duty"` reference
-- [ ] `065` **appShellTabs.ts L12**: comment → `"Active Duty"` reference
+- [x] `061` **ProfileSurface.tsx L84**: label → `"Active Duty"`
+- [x] `062` **ProfileSurface.tsx L85-86**: hint → `"Show full mission workflow tabs (Brief, Triage, Case, Signal, Debrief)"`  _(keep as-is or lightly adjust)_
+- [x] `063` **AppShell.tsx L170**: `"Mission Mode"` → `"Active Duty"`
+- [x] `064` **appShellTabs.ts L5**: comment → `"Active Duty"` reference
+- [x] `065` **appShellTabs.ts L12**: comment → `"Active Duty"` reference
 
 ### Step 4.3 — TodayLauncher Copy
 
-- [ ] `066` **TodayLauncher.tsx L129**: `archetype.name Training` → `archetype.name Exercises` (renders as e.g. "Search & Rescue Exercises")
-- [ ] `067` **TodayLauncher.tsx L144**: `archetype.name kit` → `archetype.name curriculum`
+- [x] `066` **TodayLauncher.tsx L129**: `archetype.name Training` → `archetype.name Exercises` (renders as e.g. "Search & Rescue Exercises")
+- [x] `067` **TodayLauncher.tsx L144**: `archetype.name kit` → `archetype.name curriculum`
 
 ### Step 4.4 — Test Assertions
 
-- [ ] `068` **AppShell.test.tsx L107**: `'Mission Mode'` → `'Active Duty'`
-- [ ] `069` **ProfileSurface.test.tsx L34,40,48**: test descriptions `'mission mode'` → `'active duty'`
-- [ ] `070` **TodayLauncher.test.tsx L117**: `'Rescue Ranger Training'` → updated division name + `' Exercises'`
-- [ ] `071` **TodayLauncher.test.tsx L130**: `'Rescue Ranger kit'` → updated division name + `' curriculum'`
+- [x] `068` **AppShell.test.tsx L107**: `'Mission Mode'` → `'Active Duty'`
+- [x] `069` **ProfileSurface.test.tsx L34,40,48**: test descriptions `'mission mode'` → `'active duty'`
+- [x] `070` **TodayLauncher.test.tsx L117**: `'Rescue Ranger Training'` → updated division name + `' Exercises'`
+- [x] `071` **TodayLauncher.test.tsx L130**: `'Rescue Ranger kit'` → updated division name + `' curriculum'`
 
 **Phase 4 total: 15 tasks, ~7 files**
 
@@ -196,36 +198,36 @@ Rewrite the 8 archetype definitions, 5 handler personas, and 10 badge entries to
 
 All changes in **archetypes.ts**. Each archetype gets a new `name`, `description`, and `milestoneLabels`.
 
-- [ ] `072` `rescue_ranger` → **Search & Rescue**: name, description, milestones
+- [x] `072` `rescue_ranger` → **Search & Rescue**: name, description, milestones
   - Name: `'Search & Rescue'`
   - Description: _"First responder and extraction specialist. Trained in field triage, hazard navigation, and civilian protection under hostile conditions."_ → Rewrite for Earth Alliance SAR context
   - Milestones: `['Tier I · Cadet', 'Tier II · Ensign (SAR)', 'Tier III · Lieutenant (SAR)', 'Tier IV · Commander (SAR)']`
 
-- [ ] `073` `cyber_sentinel` → **CyberCom**: name, description, milestones
+- [x] `073` `cyber_sentinel` → **CyberCom**: name, description, milestones
   - Name: `'CyberCom'`
   - Milestones: `['Tier I · Cadet', 'Tier II · Ensign (Cyber)', 'Tier III · Lieutenant (Cyber)', 'Tier IV · Commander (Cyber)']`
 
-- [ ] `074` `psi_operative` → **Psi Corps**: name, description, milestones
+- [x] `074` `psi_operative` → **Psi Corps**: name, description, milestones
   - Name: `'Psi Corps'`
   - Milestones: `['Tier I · Cadet', 'Tier II · Ensign (Psi)', 'Tier III · Lieutenant (Psi)', 'Tier IV · Commander (Psi)']`
 
-- [ ] `075` `shadow_agent` → **Intelligence Division**: name, description, milestones
+- [x] `075` `shadow_agent` → **Intelligence Division**: name, description, milestones
   - Name: `'Intelligence Division'`
   - Milestones: `['Tier I · Cadet', 'Tier II · Ensign (Intel)', 'Tier III · Lieutenant (Intel)', 'Tier IV · Commander (Intel)']`
 
-- [ ] `076` `cosmic_engineer` → **Engineering Corps**: name, description, milestones
+- [x] `076` `cosmic_engineer` → **Engineering Corps**: name, description, milestones
   - Name: `'Engineering Corps'`
   - Milestones: `['Tier I · Cadet', 'Tier II · Ensign (Eng)', 'Tier III · Lieutenant (Eng)', 'Tier IV · Commander (Eng)']`
 
-- [ ] `077` `tactical_guardian` → **GroundForce**: name, description, milestones
+- [x] `077` `tactical_guardian` → **GroundForce**: name, description, milestones
   - Name: `'GroundForce'`
   - Milestones: `['Tier I · Cadet', 'Tier II · Ensign (Ground)', 'Tier III · Lieutenant (Ground)', 'Tier IV · Commander (Ground)']`
 
-- [ ] `078` `star_commander` → **Fleet Command**: name, description, milestones
+- [x] `078` `star_commander` → **Fleet Command**: name, description, milestones
   - Name: `'Fleet Command'`
   - Milestones: `['Tier I · Cadet', 'Tier II · Ensign (Fleet)', 'Tier III · Lieutenant (Fleet)', 'Tier IV · Commander (Fleet)']`
 
-- [ ] `079` `field_scholar` → **Diplomatic Corps**: name, description, milestones
+- [x] `079` `field_scholar` → **Diplomatic Corps**: name, description, milestones
   - Name: `'Diplomatic Corps'`
   - Milestones: `['Tier I · Cadet', 'Tier II · Ensign (Diplo)', 'Tier III · Lieutenant (Diplo)', 'Tier IV · Commander (Diplo)']`
 
@@ -233,24 +235,24 @@ All changes in **archetypes.ts**. Each archetype gets a new `name`, `description
 
 All changes in **handlers.ts**. Each handler gets a new `name`, `personality`, `description`, `specializations`. The `id` fields are stable (used in stored profiles).
 
-- [ ] `080` `tiger_fitness_god` → **Cmdr. Tygan**: name, personality, description, specializations
+- [x] `080` `tiger_fitness_god` → **Cmdr. Tygan**: name, personality, description, specializations
   - Name: `'Commander Tygan'`
   - Personality: `'Combat conditioning instructor — EarthForce GroundForce drill sergeant'`
 
-- [ ] `081` `jono_thora` → **Lt. Cmdr. Tho'ra**: name, personality, description, specializations
+- [x] `081` `jono_thora` → **Lt. Cmdr. Tho'ra**: name, personality, description, specializations
   - Name: `"Lt. Commander Tho'ra"`
   - Personality: `'Advanced systems instructor — quantum operations and engineering specialist'`
 
-- [ ] `082` `tara_van_dekar` → **Prof. Van Dekar**: name, personality, description, specializations
+- [x] `082` `tara_van_dekar` → **Prof. Van Dekar**: name, personality, description, specializations
   - Name: `'Professor Van Dekar'`
   - Personality: `'Psi Corps liaison instructor — esoteric warfare and consciousness defense specialist'`
 
-- [ ] `083` `agent_simon` → **Agent Simon**: name adjustments, personality, description rewrites
+- [x] `083` `agent_simon` → **Agent Simon**: name adjustments, personality, description rewrites
   - Name: `'Agent Simon'` _(keep)_
   - Personality: `'Intelligence instructor — covert operations and counter-intelligence specialist'`
   - Description: replace `"He trains operatives"` → `"He trains cadets"`
 
-- [ ] `084` `star_commander_raynor` → **Captain Raynor**: name, personality, description
+- [x] `084` `star_commander_raynor` → **Captain Raynor**: name, personality, description
   - Name: `'Captain Raynor'`
   - Personality: `'Fleet operations instructor — mission command and contingency planning specialist'`
 
@@ -258,37 +260,37 @@ All changes in **handlers.ts**. Each handler gets a new `name`, `personality`, `
 
 All changes in **badgeCatalog.ts**. Names and descriptions that reference old terminology.
 
-- [ ] `085` `streak_7`: name `'Persistent Operative'` → `'Persistent Cadet'` _(done in Phase 2, task 041)_
-- [ ] `086` `streak_30`: _(keep 'Iron Protocol' — fits military)_
-- [ ] `087` `minutes_60`: description `'Log 60 minutes of operations in a single day'` → `'Log 60 minutes of training in a single day'`
-- [ ] `088` `minutes_300`: description `'Log 300 minutes of operations in a single week'` → `'Log 300 minutes of training in a single week'`
-- [ ] `089` `completion_10–100`: descriptions `'Complete N mission drills'` → `'Complete N training exercises'` (3 badges)
-- [ ] `090` `completion_100`: name `'Ace Operative'` → `'Ace Cadet'` _(done in Phase 2, task 042)_
-- [ ] `091` `share_card`: description `'Share a training intel card'` → `'Share a training card'`
+- [x] `085` `streak_7`: name `'Persistent Operative'` → `'Persistent Cadet'` _(done in Phase 2, task 041)_
+- [x] `086` `streak_30`: _(keep 'Iron Protocol' — fits military)_
+- [x] `087` `minutes_60`: description `'Log 60 minutes of operations in a single day'` → `'Log 60 minutes of training in a single day'`
+- [x] `088` `minutes_300`: description `'Log 300 minutes of operations in a single week'` → `'Log 300 minutes of training in a single week'`
+- [x] `089` `completion_10–100`: descriptions `'Complete N mission drills'` → `'Complete N training exercises'` (3 badges)
+- [x] `090` `completion_100`: name `'Ace Operative'` → `'Ace Cadet'` _(done in Phase 2, task 042)_
+- [x] `091` `share_card`: description `'Share a training intel card'` → `'Share a training card'`
 
 ### Step 5.4 — Challenge Catalog
 
-- [ ] `092` **challengeCatalog.ts L26**: `'Complete 2 mission drills today'` → `'Complete 2 training exercises today'`
-- [ ] `093` **challengeCatalog.ts L44**: `'Complete 5 mission drills this week'` → `'Complete 5 training exercises this week'`
+- [x] `092` **challengeCatalog.ts L26**: `'Complete 2 mission drills today'` → `'Complete 2 training exercises today'`
+- [x] `093` **challengeCatalog.ts L44**: `'Complete 5 mission drills this week'` → `'Complete 5 training exercises this week'`
 
 ### Step 5.5 — Milestones
 
-- [ ] `094` **milestones.ts L28**: `'Complete at least one mission drill path.'` → `'Complete at least one training exercise path.'`
+- [x] `094` **milestones.ts L28**: `'Complete at least one mission drill path.'` → `'Complete at least one training exercise path.'`
 
 ### Step 5.6 — Test Assertions (data-driven)
 
 Tests that assert specific archetype/handler names from the data layer need updating to match the new names.
 
-- [ ] `095` **OperativeIdentityCard.test.tsx L17**: mock archetype `name: 'Rescue Ranger'` → `'Search & Rescue'`
-- [ ] `096` **OperativeIdentityCard.test.tsx L37**: mock handler `name: 'Tiger War God'` → `'Commander Tygan'`
-- [ ] `097` **OperativeIdentityCard.test.tsx L69**: assertion `'Rescue Ranger'` → `'Search & Rescue'`
-- [ ] `098` **OperativeIdentityCard.test.tsx L70**: assertion `'Tiger War God'` → `'Commander Tygan'`
-- [ ] `099` **OperativeIdentityCard.test.tsx L89**: assertion `'Rescue Ranger'` → `'Search & Rescue'`
-- [ ] `100` **OperativeIdentityCard.test.tsx L99**: `getByAltText('Tiger War God')` → `'Commander Tygan'`
-- [ ] `101` **HandlerPicker.test.tsx L36**: `'Tiger War God'` → `'Commander Tygan'`
-- [ ] `102` **TodayLauncher.test.tsx L117**: `'Rescue Ranger Training'` → `'Search & Rescue Exercises'`
-- [ ] `103` **TodayLauncher.test.tsx L130**: `'Rescue Ranger kit'` → `'Search & Rescue curriculum'`
-- [ ] `104` **ProfileEditor.test.tsx L58**: mock handler `name: 'Tiger War God'` → `'Commander Tygan'`
+- [x] `095` **OperativeIdentityCard.test.tsx L17**: mock archetype `name: 'Rescue Ranger'` → `'Search & Rescue'`
+- [x] `096` **OperativeIdentityCard.test.tsx L37**: mock handler `name: 'Tiger War God'` → `'Commander Tygan'`
+- [x] `097` **OperativeIdentityCard.test.tsx L69**: assertion `'Rescue Ranger'` → `'Search & Rescue'`
+- [x] `098` **OperativeIdentityCard.test.tsx L70**: assertion `'Tiger War God'` → `'Commander Tygan'`
+- [x] `099` **OperativeIdentityCard.test.tsx L89**: assertion `'Rescue Ranger'` → `'Search & Rescue'`
+- [x] `100` **OperativeIdentityCard.test.tsx L99**: `getByAltText('Tiger War God')` → `'Commander Tygan'`
+- [x] `101` **HandlerPicker.test.tsx L36**: `'Tiger War God'` → `'Commander Tygan'`
+- [x] `102` **TodayLauncher.test.tsx L117**: `'Rescue Ranger Training'` → `'Search & Rescue Exercises'`
+- [x] `103` **TodayLauncher.test.tsx L130**: `'Rescue Ranger kit'` → `'Search & Rescue curriculum'`
+- [x] `104` **ProfileEditor.test.tsx L58**: mock handler `name: 'Tiger War God'` → `'Commander Tygan'`
 
 **Phase 5 total: 33 tasks, ~8 files**
 
@@ -300,8 +302,8 @@ The `DisciplineVisual` interface has no `label` field — discipline names are d
 
 ### Step 6.1 — Add label to DisciplineVisual
 
-- [ ] `105` **disciplineTheme.ts**: Add optional `label?: string` field to `DisciplineVisual` interface
-- [ ] `106` Add `label` to these entries:
+- [x] `105` **disciplineTheme.ts**: Add optional `label?: string` field to `DisciplineVisual` interface
+- [x] `106` Add `label` to these entries:
   - `space_force` → `'Fleet Ops'`
   - `psiops` → `'Psi Corps Training'`
   - `agencies` → `'Division Command'`
@@ -311,12 +313,12 @@ The `DisciplineVisual` interface has no `label` field — discipline names are d
 
 ### Step 6.2 — Consume label in UI
 
-- [ ] `107` Update `getDisciplineVisual()` or add a `getDisciplineLabel(id)` helper that returns `label ?? humanized id`
-- [ ] `108` Wire the label into components that display discipline names (ModuleBrowser, drill headers, stats, etc.) — audit which components currently derive display names from IDs
+- [x] `107` Update `getDisciplineVisual()` or add a `getDisciplineLabel(id)` helper that returns `label ?? humanized id`
+- [x] `108` Wire the label into components that display discipline names (ModuleBrowser, drill headers, stats, etc.) — audit which components currently derive display names from IDs
 
 ### Step 6.3 — Tests
 
-- [ ] `109` Add unit tests for `getDisciplineLabel()` — returns label when present, falls back to humanized ID
+- [x] `109` Add unit tests for `getDisciplineLabel()` — returns label when present, falls back to humanized ID
 
 **Phase 6 total: 5 tasks, ~3 files**
 
@@ -328,25 +330,25 @@ Visual assets, documentation, and optional internal renames.
 
 ### Step 7.1 — Logo & Icon Assets
 
-- [ ] `110` Design/source a Starcom Academy insignia (SVG) to replace current logo
-- [ ] `111` Replace `public/icon.svg` with new insignia
-- [ ] `112` Replace `public/icon-maskable.svg` with new maskable version
-- [ ] `113` Replace `public/favicon.png` with new 64×64 icon
-- [ ] `114` Replace `public/favicon.ico` with new ICO
-- [ ] `115` Rename `WingCommanderLogo-288x162.gif` in `src/assets/images/` (or replace with new asset)
-- [ ] `116` Update Header.tsx import path if asset filename changes
-- [ ] `117` Rename `StarcomCommander_01.png` → `captain_raynor-icon.png` for consistency
+- [x] `110` Design/source a Starcom Academy insignia (SVG) to replace current logo
+- [x] `111` Replace `public/icon.svg` with new insignia
+- [x] `112` Replace `public/icon-maskable.svg` with new maskable version
+- [x] `113` Replace `public/favicon.png` with new 64×64 icon
+- [x] `114` Replace `public/favicon.ico` with new ICO
+- [x] `115` Rename `WingCommanderLogo-288x162.gif` in `src/assets/images/` (or replace with new asset)
+- [x] `116` Update Header.tsx import path if asset filename changes
+- [x] `117` Rename `StarcomCommander_01.png` → `captain_raynor-icon.png` for consistency
 
 ### Step 7.2 — Documentation Batch Update
 
-- [ ] `118` Batch find/replace "Archangel Knights Training Console" → "Starcom Academy" across `docs/` (~60 references)
-- [ ] `119` Update `README.md` badge URL and description
-- [ ] `120` Update `docs/guides/ecosystem.md` URL references
-- [ ] `121` Update `docs/guides/deployment.md` URL references
+- [x] `118` Batch find/replace "Archangel Knights Training Console" → "Starcom Academy" across `docs/` (~60 references)
+- [x] `119` Update `README.md` badge URL and description
+- [x] `120` Update `docs/guides/ecosystem.md` URL references
+- [x] `121` Update `docs/guides/deployment.md` URL references
 
 ### Step 7.3 — Comment Cleanup
 
-- [ ] `122` Update `SovereigntyPanel.tsx` JSDoc comments (L2, L6) from "operative" to "cadet"
+- [x] `122` Update `SovereigntyPanel.tsx` JSDoc comments (L2, L6) from "operative" to "cadet"
 
 **Phase 7 total: 13 tasks**
 

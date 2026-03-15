@@ -2,7 +2,7 @@
 
 ## The Problem
 
-The Training Console gates UI behind localStorage keys. A "new user" test must clear all gates; a "returning operative" test must seed a full profile. Tests that don't control this state will see unpredictable gates.
+The Academy gates UI behind localStorage keys. A "new user" test must clear all gates; a "returning cadet" test must seed a full profile. Tests that don't control this state will see unpredictable gates.
 
 ## localStorage Keys to Manage
 

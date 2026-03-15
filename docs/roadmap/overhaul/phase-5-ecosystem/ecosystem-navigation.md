@@ -38,8 +38,8 @@ export interface EcosystemApp {
 export const ECOSYSTEM_APPS: EcosystemApp[] = [
   {
     id: 'ptb',
-    name: 'Personal Training Bot',
-    shortName: 'Training',
+    name: 'Starcom Academy',
+    shortName: 'Academy',
     url: 'https://personaltrainingbot.archangel.agency',
     icon: '⚔️',
     description: 'Drill execution & readiness',
@@ -204,15 +204,15 @@ https://starcom.app/?import-identity=<base64-encrypted-keypair>
 ```
 
 Flow:
-1. Operative exports identity from PTB SovereigntyPanel
+1. Cadet exports identity from Academy SovereigntyPanel
 2. Clicks "Connect to Starcom" → navigates to Starcom with encrypted keypair in URL
 3. Starcom reads query param, decrypts (using shared passphrase or challenge), imports identity
-4. Operative is now authenticated in Starcom with the same keypair
+4. Cadet is now authenticated in Starcom with the same keypair
 
 This requires:
 - A shared encryption scheme (SEA.encrypt with a deterministic passphrase, e.g., derived from pub key)
 - Starcom to implement the import handler
-- PTB to add "Connect to [App]" buttons in SovereigntyPanel
+- Academy to add "Connect to [App]" buttons in SovereigntyPanel
 
 ---
 

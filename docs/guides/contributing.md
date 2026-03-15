@@ -1,4 +1,4 @@
-# Contributing to the Archangel Knights Training Console
+# Contributing to Starcom Academy
 
 ## Welcome
 
@@ -179,11 +179,11 @@ Use conventional commit format:
 
 When a PR changes user-visible text, ensure mission-aligned language:
 
-- Use **operative**, not "user" or "player"
-- Use **handler**, not "coach" or "trainer"
+- Use **cadet**, not "user" or "player"
+- Use **instructor**, not "coach" or "trainer"
 - Use **drill**, not "workout" or "exercise" (unless specifically referring to physical exercises within a drill)
 - Use **mission cycle**, not "session" or "workflow" for the Brief→Debrief flow
-- Use **Training Console**, not "app" or "tool" when referencing the application by name
+- Use **Starcom Academy**, not "app" or "tool" when referencing the application by name
 - Use mission vocabulary for surfaces: Brief, Triage, Case, Signal, Checklist, Debrief
 
 ## Testing

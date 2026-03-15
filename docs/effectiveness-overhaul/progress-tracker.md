@@ -2,7 +2,7 @@
 
 > Baseline: **4.8 / 10** → Current: **7.95 / 10** → Target: **7.0+** ✅
 > Estimated timeline: **4–8 months**
-> Total items: 297 tasks across 5 stages
+> Total items: 297 tasks across 5 stages + 122-task Starcom Academy refit
 
 ---
 
@@ -562,6 +562,43 @@
 
 ---
 
+## Stage 6 — Starcom Academy Refit _(1 session)_
+
+> **Goal:** Transform "Archangel Knights Training Console" into "Starcom Academy" — Earth Alliance officer training platform. 122 tasks across 7 phases. Full plan: [starcom-academy-refit.md](starcom-academy-refit.md)
+
+### Phase 6.1–6.4 — Identity & Terminology Refits
+
+- [x] `R01` Phase 1 — App Identity: title, manifest, header, loading, install banner, fixtures → "Starcom Academy" (26 tasks)
+- [x] `R02` Phase 2 — Operative → Cadet: identity card, sovereignty panel, badges, mission shell SOP (21 tasks)
+- [x] `R03` Phase 3 — Handler → Instructor: picker, profile, recap variants (9 tasks)
+- [x] `R04` Phase 4 — Archetype → Division, Mission Mode → Active Duty: picker, profile, app shell, challenges, milestones (15 tasks)
+
+### Phase 6.5 — Data Refit
+
+- [x] `R05` 8 archetypes renamed + descriptions rewritten (Search & Rescue, CyberCom, Psi Corps, Intelligence Division, Engineering Corps, GroundForce, Fleet Command, Diplomatic Corps)
+- [x] `R06` 5 handlers renamed + descriptions rewritten (Commander Tygan, Lt. Commander Tho'ra, Professor Van Dekar, Agent Simon, Captain Raynor)
+- [x] `R07` Milestones standardised to Cadet → Ensign → Lieutenant → Commander rank structure
+- [x] `R08` All test assertions updated for new names (~25 replacements across 11 test files)
+
+### Phase 6.6 — Discipline Labels
+
+- [x] `R09` Optional `label` field on `DisciplineVisual`, `getDisciplineLabel()` helper
+- [x] `R10` Starcom labels: Fleet Ops, Psi Corps Training, Tactical Doctrine, Division Command
+
+### Phase 6.7 — Polish
+
+- [x] `R11` Documentation batch update: ~86 references across 22 doc files updated
+- [x] `R12` SovereigntyPanel JSDoc comment cleanup
+- [x] `R13` README rewrite: new archetype table, handler table, narrative framing
+- [ ] `R14` Logo & icon assets (deferred — requires design work)
+
+### Verification
+
+- [x] `R15` All 1,402 unit tests passing after Phases 1–6
+- [x] `R16` Refit plan: 122/122 tasks checked
+
+---
+
 ## Summary
 
 | Stage | Phases | Steps | Tasks | Timeline |
@@ -571,7 +608,8 @@
 | 3 — Shell Simplification | 7 | 18 | 78 | Weeks 3–7 |
 | 4 — Quiz Enhancement | 4 | 6 | 23 | 1 session |
 | 5 — Multi-Dimension Enhancement | 3 | 5 | 17 | 1 session |
-| **Total** | **24** | **60** | **297** | **4–8 months** |
+| 6 — Starcom Academy Refit | 7 | 16 | 122 | 1 session |
+| **Total** | **31** | **76** | **419** | **4–8 months** |
 
 ### Completion Formula
 

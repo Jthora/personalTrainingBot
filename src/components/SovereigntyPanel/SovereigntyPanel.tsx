@@ -1,9 +1,9 @@
 /**
- * SovereigntyPanel — The operative's data sovereignty interface.
+ * SovereigntyPanel — The cadet's data sovereignty interface.
  *
  * Makes the decentralized architecture visible and comprehensible to the user.
  *
- * Section 1 — Operative Keypair:
+ * Section 1 — Cadet Keypair:
  *   Shows whether a cryptographic identity has been initialized. If not,
  *   presents the initiation moment with a clear statement of what the keypair
  *   is and why it matters. If initialized, shows identity info and allows

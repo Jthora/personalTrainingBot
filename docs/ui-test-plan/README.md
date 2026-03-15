@@ -1,10 +1,10 @@
-# UI Test Plan — Archangel Knights Training Console
+# UI Test Plan — Starcom Academy
 
 ## Philosophy
 
-This test plan is organized around **user stories**, not routes or components. Each story tests a *promise the app makes to its users* — an emotional contract between the Training Console and the operative it's forming.
+This test plan is organized around **user stories**, not routes or components. Each story tests a *promise the app makes to its users* — an emotional contract between the Academy and the cadet it's forming.
 
-The app's core purpose: **Transform a civilian into an operative through daily disciplined training across 19 domains, wrapped in a fictional identity that makes the grind meaningful.**
+The app's core purpose: **Transform a civilian into a cadet through daily disciplined training across 19 domains, wrapped in an identity that makes the grind meaningful.**
 
 Every test must be traceable back to that purpose. If a test doesn't verify a promise, it doesn't belong here.
 

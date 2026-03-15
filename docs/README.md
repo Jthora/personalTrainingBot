@@ -1,6 +1,6 @@
 # Documentation
 
-> Archangel Knights Training Console — a gamified, offline-first PWA for self-study across 19 training disciplines.
+> Starcom Academy — a gamified, offline-first PWA for self-study across 19 training disciplines.
 
 ## Quick Navigation
 
@@ -37,7 +37,7 @@ Active planning and strategy.
 |----------|-------------|
 | **[Refined Approach](roadmap/refined-approach.md)** | **The current plan: 3 priorities to fix the core training loop** |
 | [Assessments](roadmap/assessments/) | Strategic assessments (latest: March 2026 architecture & UX review) |
-| [Major Overhaul](roadmap/major-overhaul/) | Governing plan for the Psi Operative / Archangel Knights reframe (~55 files) |
+| [Major Overhaul](roadmap/major-overhaul/) | Governing plan for the Psi Corps / Starcom Academy reframe (~55 files) |
 | [Engineering Overhaul](roadmap/overhaul/) | 7-phase engineering plan: terminology, store factory, flags, tests, bundle, ecosystem, schedule (~26 files) |
 
 ### [Features](features/)

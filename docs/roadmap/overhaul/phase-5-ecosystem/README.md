@@ -1,6 +1,6 @@
 # Phase 5 — Ecosystem Wiring
 
-> Connect the Personal Training Bot to the Earth Intelligence Network.
+> Connect Starcom Academy to the Earth Intelligence Network.
 
 ## Current State
 
@@ -51,5 +51,5 @@ The app exists in isolation. It has a single external link (`archangel.agency/hu
 - [ ] `p2pIdentity` ON in production, stable for 2+ weeks
 - [ ] Header has ecosystem app switcher with all 5 apps
 - [ ] Telemetry events POST to shared endpoint
-- [ ] Operative can export identity from PTB and import into at least one sibling app
+- [ ] Cadet can export identity from the Academy and import into at least one sibling app
 - [ ] Update [docs/overhaul/README.md](../README.md) Phase 5 status to ✅

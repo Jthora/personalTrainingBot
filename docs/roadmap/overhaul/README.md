@@ -1,12 +1,12 @@
-# Overhaul Plan — Archangel Knights Training Console
+# Overhaul Plan — Starcom Academy
 
 ## The WHY Behind This Overhaul
 
-The Training Console exists to manifest the Earth Alliance — a sovereign intelligence network where operatives train body and mind through gamified mission-driven experiences. The app is the front door to an ecosystem spanning Starcom, Navcom, Tactical Intel Dashboard, and Mecha Jono.
+Starcom Academy exists to manifest the Earth Alliance — a sovereign intelligence network where cadets train body and mind through gamified mission-driven experiences. The app is the front door to an ecosystem spanning Starcom, Navcom, Tactical Intel Dashboard, and Mecha Jono.
 
 **The codebase doesn't yet match that ambition.**
 
-The mission flow works. The 19 training modules load. Operatives can run drills and earn XP. But underneath, the engine still speaks the language of a generic "Personal Training Bot" with "coaches" and "workouts." Features that would make the ecosystem real — sovereign identity, celebrations, the stats surface, the archetype system — are written but flagged off in production. The store layer is 500+ lines of copy-pasted boilerplate. The main bundle ships 684KB to operatives, including libraries for features they can't access.
+The mission flow works. The 19 training modules load. Cadets can run drills and earn XP. But underneath, the engine still spoke the language of a generic "Personal Training Bot" with "coaches" and "workouts." Features that would make the ecosystem real — sovereign identity, celebrations, the stats surface, the division system — are written but flagged off in production. The store layer is 500+ lines of copy-pasted boilerplate. The main bundle ships 684KB to cadets, including libraries for features they can't access.
 
 This overhaul closes the gap between what the app says it is and what the code actually does.
 

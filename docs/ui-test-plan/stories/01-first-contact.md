@@ -1,10 +1,10 @@
 # Story 1: First Contact
 
-> *A civilian discovers the Training Console. In under 3 minutes, they go from "what is this?" to "I am a Psi Operative in training, mentored by Tara Van Dekar." The app must earn that identity transformation through clear messaging at every step.*
+> *A civilian discovers Starcom Academy. In under 3 minutes, they go from "what is this?" to "I am a Psi Corps cadet in training, mentored by Professor Van Dekar." The app must earn that identity transformation through clear messaging at every step.*
 
 ## The Promise
 
-A new person becomes an operative with a real identity — archetype, handler, and training curriculum — through a sequence that feels like induction, not configuration.
+A new person becomes a cadet with a real identity — division, instructor, and training curriculum — through a sequence that feels like induction, not configuration.
 
 ## Emotional Arc
 
@@ -42,10 +42,10 @@ EXPECT button: "Choose Your Focus First"
 
 ```
 CLICK: "Choose Your Focus First"
-EXPECT visible: "Archangel Knights Intake" (eyebrow)
-EXPECT visible: "Choose Your Archetype" (title)
-EXPECT visible: "Your archetype determines your core training modules"
-EXPECT 8 archetype cards visible
+EXPECT visible: "Starcom Academy Enrollment" (eyebrow)
+EXPECT visible: "Choose Your Division" (title)
+EXPECT visible: "Your division determines your core training modules"
+EXPECT 8 division cards visible
 EXPECT each card has: icon, name, description text
 ```
 

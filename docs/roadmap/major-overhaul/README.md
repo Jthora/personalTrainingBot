@@ -1,4 +1,4 @@
-# Major Overhaul Plan (Psi Operative / Archangel Knights)
+# Major Overhaul Plan (Psi Corps / Starcom Academy)
 
 ## Overview
 - Objective: Reframe the product into a mission-first Psi Operative training hub with reliable offline behavior, and do it solo without blocking on teams or infra changes.

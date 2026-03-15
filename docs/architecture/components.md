@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Archangel Knights Training Console uses a component architecture organised around the **Mission Flow** — the central operative experience. Components fall into four categories: mission surfaces, drill execution, operative identity, and infrastructure.
+Starcom Academy uses a component architecture organised around the **Mission Flow** — the central cadet experience. Components fall into four categories: mission surfaces, drill execution, cadet identity, and infrastructure.
 
 ## Mission Flow Surfaces
 

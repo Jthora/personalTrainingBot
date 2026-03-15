@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Archangel Knights Training Console has no backend server. All state management is handled client-side through **localStorage-backed stores** with a pub/sub notification pattern, and **singleton cache classes** that hold training content in memory.
+Starcom Academy has no backend server. All state management is handled client-side through **localStorage-backed stores** with a pub/sub notification pattern, and **singleton cache classes** that hold training content in memory.
 
 This document covers the store and cache APIs that components consume.
 

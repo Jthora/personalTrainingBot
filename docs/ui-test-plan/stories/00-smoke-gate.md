@@ -18,7 +18,7 @@ The app loads, the SPA shell renders, client-side routing works, and the foundat
 Navigate to /
 EXPECT: #root has child elements (React mounted)
 EXPECT: no uncaught console errors
-EXPECT: document.title contains "Archangel Knights" or "Training Console"
+EXPECT: document.title contains "Starcom Academy"
 ```
 
 ### 0.2 — Client-side routing resolves /mission/brief

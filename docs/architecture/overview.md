@@ -1,8 +1,8 @@
-# Archangel Knights Training Console — Architecture
+# Starcom Academy — Architecture
 
 ## Overview
 
-The Archangel Knights Training Console is the academy and commissioning authority for the Earth Alliance. It is a React 19 + TypeScript progressive web application built with Vite, designed to train Earth Alliance operatives and Archangel Knights across 19 domains spanning physical combat, intelligence tradecraft, cyber operations, psionic disciplines, and sovereign self-determination.
+Starcom Academy is the academy and commissioning authority for the Earth Alliance. It is a React 19 + TypeScript progressive web application built with Vite, designed to train Earth Alliance cadets across 19 domains spanning physical combat, intelligence tradecraft, cyber operations, psionic disciplines, and sovereign self-determination.
 
 This document covers the system architecture, data flow, and key design decisions.
 

@@ -599,6 +599,75 @@
 
 ---
 
+## Stage 7 — Mobile-First E2E Tests
+
+### Phase 1: Mobile Test Infrastructure
+
+#### Step 7.1.1 — Mobile Fixtures & Story Plan
+
+- [x] `M01` Audit existing E2E coverage (170 unit, 8 E2E specs, 10 stories)
+- [x] `M02` Create mobile assertion fixtures (`e2e/fixtures/mobile.ts`): tap targets, viewport, overflow, scrollability
+- [x] `M03` Create Story 10 plan doc (`docs/ui-test-plan/stories/10-mobile-first.md`)
+
+#### Step 7.1.2 — Mobile Navigation Tests (10.1–10.4)
+
+- [x] `M04` 10.1 — Hamburger menu visible at mobile width
+- [x] `M05` 10.2 — Hamburger menu opens drawer and closes
+- [x] `M06` 10.3 — BottomNav navigates between surfaces
+- [x] `M07` 10.4 — No horizontal overflow on Brief surface
+
+#### Step 7.1.3 — Mobile Onboarding Tests (10.5–10.8)
+
+- [x] `M08` 10.5 — Welcome overlay buttons full-width and tappable
+- [x] `M09` 10.6 — Archetype cards render in scrollable 2-column grid
+- [x] `M10` 10.7 — Archetype confirm/skip buttons meet 44px tap target
+- [x] `M11` 10.8 — Handler cards are single-column and scrollable
+
+### Phase 2: Mobile Drill & Quiz
+
+#### Step 7.2.1 — Mobile Drill Tests (10.9–10.11)
+
+- [x] `M12` 10.9 — DrillRunner content scrollable, not clipped
+- [x] `M13` 10.10 — Self-assessment rating buttons tappable
+- [x] `M14` 10.11 — Rest interval visible after recording
+
+#### Step 7.2.2 — Mobile Mission Loop Tests (10.12–10.13)
+
+- [x] `M15` 10.12 — stepActions don't push content below fold
+- [x] `M16` 10.13 — Step action buttons are reachable
+
+#### Step 7.2.3 — Mobile Quiz Tests (10.14–10.15)
+
+- [x] `M17` 10.14 — Quiz option buttons full-width and tappable
+- [x] `M18` 10.15 — Next Question button reachable after answering
+
+### Phase 3: Mobile Stats & Accessibility
+
+#### Step 7.3.1 — Mobile Stats Tests (10.16–10.18)
+
+- [x] `M19` 10.16 — Stats surface renders without horizontal overflow
+- [x] `M20` 10.17 — Activity heatmap renders at mobile width
+- [x] `M21` 10.18 — Profile editor usable at mobile width
+
+#### Step 7.3.2 — Mobile Accessibility Audits (10.19–10.21)
+
+- [x] `M22` 10.19 — Mobile onboarding passes axe audit
+- [x] `M23` 10.20 — Mobile drill passes axe audit
+- [x] `M24` 10.21 — Mobile stats passes axe audit
+
+### Bug Fixes Discovered During Testing
+
+- [x] `M25` Fix TrainingSurface unmounting DrillRunner on completion in v2 shell
+- [x] `M26` Add `disableRules` option to `scanAccessibility` fixture
+
+### Verification
+
+- [x] `M27` All 21 mobile-first E2E tests passing
+- [x] `M28` All 1,402 unit tests still passing
+- [x] `M29` Existing E2E suites regression clean (Story 04: 11/11 pass)
+
+---
+
 ## Summary
 
 | Stage | Phases | Steps | Tasks | Timeline |
@@ -609,7 +678,8 @@
 | 4 — Quiz Enhancement | 4 | 6 | 23 | 1 session |
 | 5 — Multi-Dimension Enhancement | 3 | 5 | 17 | 1 session |
 | 6 — Starcom Academy Refit | 7 | 16 | 122 | 1 session |
-| **Total** | **31** | **76** | **419** | **4–8 months** |
+| 7 — Mobile-First E2E Tests | 3 | 8 | 29 | 1 session |
+| **Total** | **34** | **84** | **448** | **4–8 months** |
 
 ### Completion Formula
 

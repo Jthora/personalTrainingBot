@@ -25,16 +25,19 @@ const TrainingSurface: React.FC = () => {
   const [selectedModule, setSelectedModule] = useState<string | null>(null);
   const isV2 = isFeatureEnabled('shellV2');
 
-  // Track active drill state so we can show DrillRunner inline in v2
+  // Track active drill state so we can show DrillRunner inline in v2.
+  // Keep DrillRunner mounted while any drill state exists (even completed —
+  // DrillRunner handles engagement warning, reflection, and rest interval
+  // internally). Only unmount when DrillRunStore.clear() sets state to null.
   const [hasActiveDrill, setHasActiveDrill] = useState(() => {
     const run = DrillRunStore.get();
-    return run !== null && !run.completed;
+    return run !== null;
   });
 
   useEffect(() => {
     if (!isV2) return;
     const unsub = DrillRunStore.subscribe((state) => {
-      setHasActiveDrill(state !== null && !state.completed);
+      setHasActiveDrill(state !== null);
     });
     return unsub;
   }, [isV2]);

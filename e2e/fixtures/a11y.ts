@@ -14,13 +14,17 @@ export interface A11yResult {
  */
 export async function scanAccessibility(
   page: Page,
-  opts: { exclude?: string[]; include?: string } = {},
+  opts: { exclude?: string[]; include?: string; disableRules?: string[] } = {},
 ): Promise<A11yResult> {
   let builder = new AxeBuilder({ page })
     .withTags(['wcag2a', 'wcag2aa', 'best-practice'])
     // color-contrast can be noisy on dark-themed apps; test separately if needed
     // region rule requires all content in landmark regions — tracked separately
-    .disableRules(['color-contrast', 'region']);
+    .disableRules([
+      'color-contrast',
+      'region',
+      ...(opts.disableRules ?? []),
+    ]);
 
   if (opts.include) {
     builder = builder.include(opts.include);

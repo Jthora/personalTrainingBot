@@ -24,8 +24,10 @@ Every test must be traceable back to that purpose. If a test doesn't verify a pr
 | 7 | [Data Sovereignty](stories/07-data-sovereignty.md) | Your identity is yours — backup/restore works because there's no password reset | P1 |
 | 8 | [Offline Operative](stories/08-offline-operative.md) | Train anywhere — the entire console works without connectivity | P2 |
 | 9 | [Graceful Failures](stories/09-graceful-failures.md) | When things break, the app fails visibly — not silently | P1 |
+| 10 | [Mobile-First Experience](stories/10-mobile-first.md) | Every journey works on a phone — touch targets, scroll, layout | P0-cross-cutting |
 
 **Priority key:**
+- **P0-cross-cutting** — Validates mobile ergonomics across all stories.
 - **P0-gate** — Runs first. If this fails, nothing else runs.
 - **P0** — Must pass before any release. These are the daily-use promises.
 - **P1** — Must pass weekly. These are the loyalty/retention/resilience promises.
@@ -57,7 +59,8 @@ docs/ui-test-plan/
     ├── 06-proving-yourself.md         ← P1: Progression, badges, competency
     ├── 07-data-sovereignty.md         ← P1: Backup, restore, identity change
     ├── 08-offline-operative.md        ← P2: PWA offline resilience
-    └── 09-graceful-failures.md        ← P1: Error boundaries, corrupt data, missing shards
+    ├── 09-graceful-failures.md        ← P1: Error boundaries, corrupt data, missing shards
+    └── 10-mobile-first.md             ← P0-cross-cutting: Touch targets, scroll, mobile nav
 ```
 
 ---

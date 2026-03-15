@@ -176,6 +176,7 @@ const ScoreLineChart: React.FC<ScoreLineChartProps> = ({
             className={styles.dataLine}
             onMouseEnter={() => setHoveredSeries(pl.domainId)}
             onMouseLeave={() => setHoveredSeries(null)}
+            onClick={() => setHoveredSeries(hoveredSeries === pl.domainId ? null : pl.domainId)}
           />
         ))}
       </svg>
@@ -190,6 +191,7 @@ const ScoreLineChart: React.FC<ScoreLineChartProps> = ({
               className={styles.legendItem}
               onMouseEnter={() => setHoveredSeries(pl.domainId)}
               onMouseLeave={() => setHoveredSeries(null)}
+              onClick={() => setHoveredSeries(hoveredSeries === pl.domainId ? null : pl.domainId)}
               style={{ opacity: hoveredSeries && hoveredSeries !== pl.domainId ? 0.4 : 1 }}
             >
               <span className={styles.legendDot} style={{ background: pl.color }} />

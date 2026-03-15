@@ -38,8 +38,8 @@
 }
 
 .loading-text {
-  font-size: 1.5em;
-  white-space: nowrap; /* Ensure single line */
+  font-size: clamp(1rem, 4vw, 1.5em);
+  overflow-wrap: break-word;
 }
 
 .loading-dots {

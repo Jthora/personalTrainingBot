@@ -109,8 +109,20 @@
   line-height: 1.4;
 }
 
-.option:hover:not(:disabled) {
+.option:focus-visible {
   border-color: var(--quiz-accent, var(--accent, #6c63ff));
+  outline: 2px solid var(--quiz-accent, var(--accent, #6c63ff));
+  outline-offset: 2px;
+}
+
+.option:active:not(:disabled) {
+  background: var(--quiz-accent-soft, rgba(108, 99, 255, 0.1));
+}
+
+@media (hover: hover) {
+  .option:hover:not(:disabled) {
+    border-color: var(--quiz-accent, var(--accent, #6c63ff));
+  }
 }
 
 .optionSelected {
@@ -192,8 +204,20 @@
   transition: border-color var(--duration-fast, 120ms);
 }
 
-.matchSelectable:hover:not(:disabled) {
+.matchSelectable:focus-visible {
   border-color: var(--quiz-accent, var(--accent, #6c63ff));
+  outline: 2px solid var(--quiz-accent, var(--accent, #6c63ff));
+  outline-offset: 2px;
+}
+
+.matchSelectable:active:not(:disabled) {
+  border-color: var(--quiz-accent, var(--accent, #6c63ff));
+}
+
+@media (hover: hover) {
+  .matchSelectable:hover:not(:disabled) {
+    border-color: var(--quiz-accent, var(--accent, #6c63ff));
+  }
 }
 
 /* ── Hints ── */
@@ -295,13 +319,15 @@
   align-self: center;
 }
 
-.primaryBtn:hover {
-  opacity: 0.85;
-  transform: translateY(-1px);
-}
-
 .primaryBtn:active {
   transform: scale(0.97);
+}
+
+@media (hover: hover) {
+  .primaryBtn:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+  }
 }
 
 .primaryBtn:disabled {
@@ -427,9 +453,16 @@
               color var(--duration-fast, 120ms);
 }
 
-.secondaryBtn:hover {
+.secondaryBtn:active {
   background: var(--quiz-accent, var(--accent, #6c63ff));
   color: #fff;
+}
+
+@media (hover: hover) {
+  .secondaryBtn:hover {
+    background: var(--quiz-accent, var(--accent, #6c63ff));
+    color: #fff;
+  }
 }
 
 /* ---------- Reduced motion ---------- */

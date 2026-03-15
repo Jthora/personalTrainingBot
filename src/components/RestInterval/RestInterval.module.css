@@ -29,7 +29,8 @@
   justify-self: center;
   font-size: 12px;
   font-weight: 600;
-  padding: 6px 16px;
+  padding: 10px 20px;
+  min-height: 44px;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   background: rgba(255, 255, 255, 0.04);
@@ -38,6 +39,12 @@
   transition: background 0.15s;
 }
 
-.skipBtn:hover {
+.skipBtn:active {
   background: rgba(255, 255, 255, 0.1);
+}
+
+@media (hover: hover) {
+  .skipBtn:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
 }

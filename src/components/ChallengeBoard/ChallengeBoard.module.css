@@ -103,15 +103,22 @@
   color: #0a0f1a;
   border: none;
   border-radius: 8px;
-  padding: 8px 14px;
+  padding: 10px 16px;
+  min-height: 44px;
   font-weight: 700;
   font-size: 12px;
   cursor: pointer;
   justify-self: start;
 }
 
-.claimButton:hover {
+.claimButton:active {
   opacity: 0.9;
+}
+
+@media (hover: hover) {
+  .claimButton:hover {
+    opacity: 0.9;
+  }
 }
 
 .claimed {

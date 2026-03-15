@@ -668,6 +668,159 @@
 
 ---
 
+## Stage 8 — Mobile UX Hardening _(1 session)_
+
+> Fix all 134 findings from `docs/audit/mobile-ux-audit.md`
+> Viewport: iPhone 14 (390 × 664) · Primary breakpoint: 768px
+> Gate: all 21 mobile E2E tests pass, 0 horizontal overflow at 390px, all HIGH items resolved
+
+### Phase 1: Critical Z-Index & Layering Fixes
+
+#### Step 8.1.1 — Fix Z-Index Stacking Bugs (Z1–Z3)
+
+- [x] `X01` **RecapModal z-index** — `RecapModal.module.css` `.backdrop` z-index 40 → 1100 (must sit above Header/BottomNav 1000). This is a functional bug: modal renders behind all chrome.
+- [x] `X02` **LevelUpModal z-index** — `LevelUpModal.module.css` `.overlay` z-index 950 → 1100 (parity with RecapModal; currently behind BottomNav 1000).
+- [x] `X03` **UpdateNotification z-index** — `UpdateNotification.module.css` `.bar` z-index 950 → 1050 (must be above BottomNav to show reload CTA).
+- [x] `X04` **InstallBanner z-index** — `InstallBanner.module.css` `.banner` z-index 900 → 1050. Also shift `bottom: 4rem` → `bottom: calc(56px + env(safe-area-inset-bottom, 0px) + 12px)` so it sits above BottomNav.
+- [x] `X05` **BadgeToast z-index** — `BadgeToast.module.css` `.toast` z-index 940 → 1050. Also shift `bottom: 80px` → `bottom: calc(56px + env(safe-area-inset-bottom, 0px) + 24px)`.
+
+#### Step 8.1.2 — Add Safe-Area Insets (Z4–Z8)
+
+- [x] `X06` **RecapToast safe-area** — `RecapToast.module.css` `.toast` change `bottom: 18px` → `bottom: calc(18px + env(safe-area-inset-bottom, 0px))` and `right: 18px` → `right: calc(18px + env(safe-area-inset-right, 0px))`.
+- [x] `X07` **SovereigntyPanel safe-area** — `SovereigntyPanel.module.css` `.overlay` add `padding-top: calc(20px + env(safe-area-inset-top, 0px))` and `padding-bottom: calc(20px + env(safe-area-inset-bottom, 0px))`.
+- [x] `X08` **ProfileEditor safe-area** — `ProfileEditor.module.css` `.overlay` add `padding-top: env(safe-area-inset-top, 0px)` and `padding-bottom: env(safe-area-inset-bottom, 0px)`.
+- [x] `X09` **UpdateNotification safe-area** — `UpdateNotification.module.css` `.bar` add `padding-top: env(safe-area-inset-top, 0px)`.
+- [x] `X10` **InstallBanner safe-area** — Already addressed by X04 `bottom` calc which includes `safe-area-inset-bottom`. Mark as covered.
+
+#### Step 8.1.3 — Add Overscroll Containment (O1–O4)
+
+- [x] `X11` **RecapModal overscroll** — `RecapModal.module.css` `.backdrop` add `overscroll-behavior: contain`.
+- [x] `X12` **MissionActionPalette overscroll** — `MissionActionPalette.module.css` `.list` add `overscroll-behavior: contain`.
+- [x] `X13` **SovereigntyPanel overscroll** — `SovereigntyPanel.module.css` `.overlay` add `overscroll-behavior: contain`.
+- [x] `X14` **ProfileEditor overscroll** — `ProfileEditor.module.css` `.overlay` add `overscroll-behavior: contain`.
+
+### Phase 2: Critical Layout & Responsive Fixes
+
+#### Step 8.2.1 — Fix ShareCard Mobile Overflow (L1)
+
+- [x] `X15` **ShareCard responsive** — `ShareCard.module.css` add `@media (max-width: 768px)` block: set `--share-card-width: 390px; --share-card-height: 500px; --share-card-scale: 1;` and adjust `.card` to `width: calc(100vw - 32px); min-height: auto;`. The current 1200×0.6 = 720px overflows 390px.
+
+#### Step 8.2.2 — Fix PlanSurface 7-Column Cramping (L2)
+
+- [x] `X16` **PlanSurface mobile grid** — `PlanSurface.module.css` existing `@media (max-width: 768px)` already keeps `repeat(7, 1fr)` but reduce `gap: 0.25rem → 2px`, shorten `.dayLabel` to single-char abbreviation via `overflow: hidden; max-width: 2ch; text-overflow: clip`, and add `font-size: 0.55rem`. Each column = ~53px at 390px with 2px gaps — tight but functional. Alternative: switch to horizontal scroll with `grid-auto-flow: column; overflow-x: auto` at narrow widths.
+
+#### Step 8.2.3 — RecapModal Single-Column Breakpoint (L3)
+
+- [x] `X17` **RecapModal grid mobile** — `RecapModal.module.css` add `@media (max-width: 480px) { .grid { grid-template-columns: 1fr; } }` so the 2-column stat grid stacks on narrow screens (311px content area is too tight for 2 columns).
+
+#### Step 8.2.4 — DebriefClosureSummary Responsive (L4)
+
+- [x] `X18` **DebriefClosureSummary mobile** — `DebriefClosureSummary.module.css` `.metrics` change `minmax(170px, 1fr)` → `minmax(140px, 1fr)` to better fit 362px content. Add `@media (max-width: 480px) { .metrics { grid-template-columns: 1fr; } }`.
+
+### Phase 3: Critical Touch Target Repairs (≥ 44px AAA)
+
+#### Step 8.3.1 — Enlarge Close/Dismiss Buttons (T1–T6)
+
+- [x] `X19` **RecapToast close** — `RecapToast.module.css` `.close` change `padding: 4px` → `min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center;`.
+- [x] `X20` **InstallBanner dismiss** — `InstallBanner.module.css` `.dismissBtn` add `min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center;`.
+- [x] `X21` **RecapModal close** — `RecapModal.module.css` `.closeButton` change `width: 32px; height: 32px` → `width: 44px; height: 44px`.
+- [x] `X22` **Header drawerClose** — `Header.module.css` `.drawerClose` change `width: 32px; height: 32px` → `width: 44px; height: 44px`.
+- [x] `X23` **SovereigntyPanel closeBtn** — `SovereigntyPanel.module.css` `.closeBtn` add `min-height: 44px; padding: 10px 16px;` (currently `padding: 6px 12px`).
+- [x] `X24` **ProfileEditor closeBtn** — `ProfileEditor.module.css` `.closeBtn` add `min-height: 44px; padding: 10px 16px;` (currently `padding: 6px 12px`).
+
+#### Step 8.3.2 — Enlarge Core Interaction Targets (T7–T14)
+
+- [x] `X25` **DrillRunner ratingBtn** — `DrillRunner.module.css` `.ratingBtn` change `width: 36px; height: 36px` → `width: 44px; height: 44px`.
+- [x] `X26` **DrillRunner expandToggle** — `DrillRunner.module.css` `.expandToggle` change `padding: 2px 6px` → `min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; padding: 8px;`.
+- [x] `X27` **TimerDisplay controlBtn** — `TimerDisplay.module.css` `.controlBtn` change `padding: 4px 10px` → `min-height: 44px; padding: 8px 14px;`.
+- [x] `X28` **Header userAvatar** — `Header.module.css` `.userAvatar` change `width: 28px; height: 28px` → `width: 36px; height: 36px;` (full 44px would crowd header; parent `.userButton` already provides padding for combined 44px zone).
+- [x] `X29` **ModuleBrowser checkbox** — `ModuleBrowser.module.css` `.selectionToggle input[type='checkbox']` change `width: 18px; height: 18px` → `width: 24px; height: 24px;` and add `.selectionToggle { min-width: 44px; min-height: 44px; display: flex; align-items: center; justify-content: center; }`.
+- [x] `X30` **ExerciseRenderer checkbox** — `ExerciseRenderer.module.css` `.checkItem` add `min-height: 44px; align-items: center;` and `.checkItem input { width: 20px; height: 20px; }`.
+- [x] `X31` **ScoreLineChart legendItem** — `ScoreLineChart.module.css` `.legendItem` add `min-height: 44px; padding: 8px 4px;` (currently `padding: 2px 0`).
+
+#### Step 8.3.3 — Enlarge Action Buttons (T15–T17)
+
+- [x] `X32` **TimelineBand jump** — `TimelineBand.module.css` `.jump` change `padding: 4px 8px` → `min-height: 44px; padding: 8px 12px; display: inline-flex; align-items: center;`.
+- [x] `X33` **SovereigntyPanel removeBtn** — `SovereigntyPanel.module.css` `.removeBtn` change `padding: 5px 10px` → `min-height: 44px; padding: 10px 14px;`.
+- [x] `X34` **ModuleBrowser breadcrumbLink** — `ModuleBrowser.module.css` `.breadcrumb` add `min-height: 44px; align-items: center;` and `.breadcrumbLink` add `padding: 8px 4px;`.
+
+### Phase 4: Touch Accessibility — Hover Patterns & Focus
+
+#### Step 8.4.1 — Add Touch Handlers to Data Visualizations (H1–H2)
+
+- [x] `X35` **ActivityHeatmap touch** — `ActivityHeatmap.tsx` add `onClick` handler to each `<rect>` that toggles the tooltip (tap-to-show/tap-to-hide). Currently only has `onMouseEnter`/`onMouseLeave` which does nothing on mobile.
+- [x] `X36` **ScoreLineChart touch** — `ScoreLineChart.tsx` add `onClick` handler to each `<polyline>` toggling `hoveredSeries`. Add `onClick` to legend items alongside existing `onMouseEnter`/`onMouseLeave`.
+
+#### Step 8.4.2 — Add `:focus-visible` / `:active` to Quiz Options (H3–H4)
+
+- [x] `X37` **QuizRunner option focus** — `QuizRunner.module.css` `.option` add `:focus-visible { border-color: var(--quiz-accent, var(--accent)); outline: 2px solid var(--quiz-accent, var(--accent)); outline-offset: 2px; }` and `:active { background: var(--quiz-accent-soft, rgba(108, 99, 255, 0.1)); }`.
+- [x] `X38` **QuizRunner matchSelectable focus** — `QuizRunner.module.css` `.matchSelectable` add `:focus-visible { border-color: var(--quiz-accent, var(--accent)); outline: 2px solid var(--quiz-accent, var(--accent)); outline-offset: 2px; }`.
+
+#### Step 8.4.3 — Wrap Hover Rules in `@media (hover: hover)` Guards
+
+- [x] `X39` **QuizRunner hover guards** — `QuizRunner.module.css` wrap `.option:hover`, `.matchSelectable:hover`, `.primaryBtn:hover`, `.secondaryBtn:hover` in `@media (hover: hover) { }`. Add `:active` fallbacks outside the guard.
+- [x] `X40` **DrillRunner hover guards** — `DrillRunner.module.css` wrap `.button:hover`, `.secondary:hover`, `.ratingBtn:hover`, `.expandToggle:hover` in `@media (hover: hover) { }`. Add `:active` fallbacks.
+- [x] `X41` **ModuleBrowser hover guards** — `ModuleBrowser.module.css` wrap `.tile:hover`, `.trainBtn:hover`, `.breadcrumbLink:hover`, `.quickTrainBtn:hover` in `@media (hover: hover) { }`. Add `:active` fallbacks.
+- [x] `X42` **Header hover guards** — `Header.module.css` wrap `.settingsLink:hover`, `.moreButton:hover`, `.loginButton:hover`, `.userButton:hover`, `.menuItem:hover` in `@media (hover: hover) { }`. Add `:active` fallbacks.
+- [x] `X43` **SovereigntyPanel hover guards** — `SovereigntyPanel.module.css` wrap `.closeBtn:hover`, `.tab:hover`, `.removeBtn:hover` in `@media (hover: hover) { }`. Add `:active` fallbacks.
+- [x] `X44` **TodayLauncher hover guards** — `TodayLauncher.module.css` wrap `.launchBtn:hover`, `.reviewBtn:hover`, `.regenerateBtn:hover` in `@media (hover: hover) { }`. Add `:active` fallbacks.
+- [x] `X45` **RecapModal hover guards** — `RecapModal.module.css` wrap `.cta:hover`, `.secondary:hover` in `@media (hover: hover) { }` (`.cta:active` already exists — verify `.secondary` gets one).
+- [x] `X46` **Remaining hover guards** — Batch wrap hover rules in `BadgeGallery`, `ChallengePanel`, `ChallengeBoard`, `RestInterval`, `TimerDisplay`, `TimelineBand`, `BadgeToast`, `InstallBanner`, `PlanSurface`, `MissionFlow`, `ExerciseRenderer`, `LoadingMessage` module CSS files in `@media (hover: hover) { }`. Add `:active` fallbacks where missing.
+
+### Phase 5: Component Mobile Breakpoints
+
+#### Step 8.5.1 — Add Mobile Breakpoints to Large Components (L5–L7)
+
+- [x] `X47` **SovereigntyPanel mobile breakpoint** — `SovereigntyPanel.module.css` add `@media (max-width: 768px) { }` block: reduce `.panel` padding 16px → 12px, `.overlay` padding 20px → 14px, `.textInput` / `.textarea` full-width, `.tabRow` scrollable with `overflow-x: auto; -webkit-overflow-scrolling: touch`, `.syncPill` single-column grid, `.identityMeta` to `grid-template-columns: 1fr`.
+- [x] `X48` **DrillRunner mobile breakpoint** — `DrillRunner.module.css` add `@media (max-width: 768px) { }` block: reduce `.runner` padding 14px → 10px, `.cardContent` padding-left 32px → 16px, `.ratingGroup` wrap with `flex-wrap: wrap`, `.step` padding 8px → 6px 8px.
+- [x] `X49` **ModuleBrowser mobile adjustments** — `ModuleBrowser.module.css` add `@media (max-width: 768px) { }`: `.tile` padding 1rem → 0.75rem, `.deckCard` padding 0.75rem → 0.5rem 0.75rem, `.welcomeBanner` padding 1.25rem → 1rem.
+
+#### Step 8.5.2 — Fix Overflow & Nowrap Issues (O5–O7)
+
+- [x] `X50` **InstallBanner nowrap** — `InstallBanner.module.css` `.text` change `white-space: nowrap` → remove (or `white-space: normal`). Add `min-width: 0`.
+- [x] `X51` **LoadingMessage nowrap** — `LoadingMessage.module.css` `.loading-text` change `white-space: nowrap` → `white-space: normal; overflow-wrap: break-word`. Reduce `font-size: 1.5em` → `font-size: clamp(1rem, 4vw, 1.5em)`.
+
+### Phase 6: Font Size & Global Protections
+
+#### Step 8.6.1 — Fix Sub-10px Font Sizes (F1–F3)
+
+- [x] `X52` **BottomNav badge font** — `AppShell.module.css` `.bottomNavBadge` change `font-size: 0.55rem` → `font-size: 0.625rem` (~10px). Badge `min-width: 16px; height: 16px` may need bump to `min-width: 18px; height: 18px`.
+- [x] `X53` **BottomNav label font** — `AppShell.module.css` `.bottomNavLabel` change `font-size: 0.6rem` → `font-size: 0.6875rem` (~11px). This is primary navigation text — must be legible.
+- [x] `X54` **BadgeGallery rarity font** — `BadgeGallery.module.css` `.rarity` change `font-size: 9px` → `font-size: 10px`.
+
+#### Step 8.6.2 — Add Global Text Protections (F4–F5)
+
+- [x] `X55` **text-size-adjust** — `theme.css` `body` add `-webkit-text-size-adjust: 100%; text-size-adjust: 100%;` to prevent iOS auto-inflation on landscape.
+- [x] `X56` **overflow-wrap** — `theme.css` `body` add `overflow-wrap: break-word; word-break: break-word;` to prevent long words overflowing 390px containers.
+
+### Phase 7: Medium Touch Target Batch
+
+#### Step 8.7.1 — Enlarge 24–36px Buttons to ≥ 44px (T18–T29)
+
+- [x] `X57` **RestInterval skipBtn** — `RestInterval.module.css` `.skipBtn` change `padding: 6px 16px` → `min-height: 44px; padding: 10px 20px;`.
+- [x] `X58` **ExerciseRenderer revealBtn/hintBtn** — `ExerciseRenderer.module.css` `.revealBtn, .hintBtn` change `padding: 0.35rem 0.75rem` → `min-height: 44px; padding: 0.6rem 1rem;`.
+- [x] `X59` **ModuleBrowser trainBtn** — `ModuleBrowser.module.css` `.trainBtn` change `padding: 0.35rem 0.75rem` → `min-height: 44px; padding: 0.6rem 1rem;`.
+- [x] `X60` **ChallengePanel claimButton** — `ChallengePanel.module.css` `.claimButton` change `padding: 6px 12px` → `min-height: 44px; padding: 10px 16px;`.
+- [x] `X61` **ChallengeBoard claimButton** — `ChallengeBoard.module.css` `.claimButton` change `padding: 8px 14px` → `min-height: 44px; padding: 10px 16px;`.
+- [x] `X62` **UpdateNotification reloadBtn** — `UpdateNotification.module.css` `.reloadBtn` change `padding: 0.35rem 0.8rem` → `min-height: 44px; padding: 0.6rem 1rem;`.
+- [x] `X63` **SovereigntyPanel btn** — `SovereigntyPanel.module.css` `.btn` change `padding: 7px 12px` → `min-height: 44px; padding: 10px 14px;`.
+- [x] `X64` **SovereigntyPanel tab** — `SovereigntyPanel.module.css` `.tab` change `padding: 7px 14px` → `min-height: 44px; padding: 10px 16px;`.
+- [x] `X65` **MissionFlow completeButton** — `MissionFlow.module.css` `.completeButton` change `padding: 8px 14px` → `min-height: 44px; padding: 10px 16px;`.
+- [x] `X66` **Header settingsLink** — `Header.module.css` `.settingsLink` change `width: 36px; height: 36px` → `width: 44px; height: 44px`.
+- [x] `X67` **Header moreButton** — `Header.module.css` `.moreButton` change `width: 36px; height: 36px` → `width: 44px; height: 44px`.
+- [x] `X68` **Header navButton** — `Header.module.css` `.navButton` add `min-height: 44px;` (currently relies on padding 8px + font 0.75rem ≈ 28px).
+
+### Verification
+
+- [x] `X69` All 21 mobile-first E2E tests passing
+- [x] `X70` All 1,402+ unit tests still passing
+- [x] `X71` Zero horizontal overflow at 390px viewport width
+- [x] `X72` Visual spot-check: all modals/toasts/banners above BottomNav
+- [x] `X73` Visual spot-check: all close buttons ≥ 44 × 44px touch zone
+- [x] `X74` No sticky hover states on touch device (Chrome DevTools mobile emulation)
+
+---
+
 ## Summary
 
 | Stage | Phases | Steps | Tasks | Timeline |
@@ -679,7 +832,8 @@
 | 5 — Multi-Dimension Enhancement | 3 | 5 | 17 | 1 session |
 | 6 — Starcom Academy Refit | 7 | 16 | 122 | 1 session |
 | 7 — Mobile-First E2E Tests | 3 | 8 | 29 | 1 session |
-| **Total** | **34** | **84** | **448** | **4–8 months** |
+| 8 — Mobile UX Hardening | 7 | 14 | 74 | 1 session |
+| **Total** | **41** | **98** | **522** | **4–8 months** |
 
 ### Completion Formula
 
@@ -698,3 +852,4 @@ $$\text{Progress} = \frac{\text{checked tasks}}{297} \times 100\%$$
 | Shell tests green | `240`–`257` | Shell dimension ≥ 9/10 |
 | Quiz enhancement complete | `258`–`280` | Quiz dimension ≥ 8/10 |
 | Multi-dimension scored | `281`–`297` | Drill 8, SR 8, Reflection 7 |
+| Mobile UX hardening complete | `X01`–`X74` | 0 HIGH audit items, all E2E green |

@@ -27,10 +27,16 @@
   transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
 
-.tile:hover {
+.tile:active {
   border-color: var(--accent, #6c63ff);
-  box-shadow: var(--shadow-md, 0 4px 16px rgba(0, 0, 0, 0.35));
-  transform: translateY(-2px);
+}
+
+@media (hover: hover) {
+  .tile:hover {
+    border-color: var(--accent, #6c63ff);
+    box-shadow: var(--shadow-md, 0 4px 16px rgba(0, 0, 0, 0.35));
+    transform: translateY(-2px);
+  }
 }
 
 .disciplineIcon {
@@ -87,11 +93,16 @@
 
 .selectionToggle {
   flex-shrink: 0;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .selectionToggle input[type='checkbox'] {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   cursor: pointer;
   accent-color: var(--accent, #6c63ff);
 }
@@ -188,7 +199,8 @@
 }
 
 .trainBtn {
-  padding: 0.35rem 0.75rem;
+  padding: 0.6rem 1rem;
+  min-height: 44px;
   border: none;
   border-radius: 4px;
   background: var(--accent, #6c63ff);
@@ -199,8 +211,14 @@
   transition: opacity 0.15s;
 }
 
-.trainBtn:hover {
+.trainBtn:active {
   opacity: 0.85;
+}
+
+@media (hover: hover) {
+  .trainBtn:hover {
+    opacity: 0.85;
+  }
 }
 
 .trainBtnSecondary {
@@ -248,16 +266,24 @@
   font-size: 0.8rem;
   color: var(--text-muted, #888);
   margin-bottom: 0.5rem;
+  min-height: 44px;
 }
 
 .breadcrumbLink {
   color: var(--accent, #6c63ff);
   cursor: pointer;
   text-decoration: none;
+  padding: 8px 4px;
 }
 
-.breadcrumbLink:hover {
+.breadcrumbLink:active {
   text-decoration: underline;
+}
+
+@media (hover: hover) {
+  .breadcrumbLink:hover {
+    text-decoration: underline;
+  }
 }
 
 .breadcrumbSep {
@@ -313,7 +339,29 @@
   transition: background var(--duration-fast, 120ms), border-color var(--duration-fast, 120ms);
 }
 
-.quickTrainBtn:hover {
+.quickTrainBtn:active {
   background: rgba(16, 185, 129, 0.25);
   border-color: rgba(16, 185, 129, 0.5);
+}
+
+@media (hover: hover) {
+  .quickTrainBtn:hover {
+    background: rgba(16, 185, 129, 0.25);
+    border-color: rgba(16, 185, 129, 0.5);
+  }
+}
+
+/* ── Mobile adjustments ── */
+@media (max-width: 768px) {
+  .tile {
+    padding: 0.75rem;
+  }
+
+  .deckCard {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .welcomeBanner {
+    padding: 1rem;
+  }
 }

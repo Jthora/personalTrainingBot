@@ -20,8 +20,10 @@
   gap: 0.25rem;
 }
 
-.dayCard:hover {
-  border-color: var(--accent-primary, #5b9bd5);
+@media (hover: hover) {
+  .dayCard:hover {
+    border-color: var(--accent-primary, #5b9bd5);
+  }
 }
 
 .dayCardActive {
@@ -186,8 +188,14 @@
   transition: background 0.15s ease;
 }
 
-.actionBtn:hover {
+.actionBtn:active {
   background: var(--surface-accent, #1a2a3e);
+}
+
+@media (hover: hover) {
+  .actionBtn:hover {
+    background: var(--surface-accent, #1a2a3e);
+  }
 }
 
 /* ── Responsive ── */
@@ -195,20 +203,27 @@
 @media (max-width: 768px) {
   .planGrid {
     grid-template-columns: repeat(7, 1fr);
-    gap: 0.25rem;
+    gap: 2px;
   }
 
   .dayCard {
-    padding: 0.5rem 0.25rem;
+    padding: 0.4rem 0.15rem;
     min-height: 3.5rem;
   }
 
   .dayLabel {
-    font-size: 0.6rem;
+    font-size: 0.55rem;
+    overflow: hidden;
+    max-width: 2.5ch;
+    text-overflow: clip;
   }
 
   .dayDate {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
+  }
+
+  .dayDrillCount {
+    font-size: 0.6rem;
   }
 
   .weeklySummary {

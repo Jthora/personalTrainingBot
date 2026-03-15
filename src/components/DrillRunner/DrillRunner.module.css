@@ -100,13 +100,15 @@
               opacity var(--duration-fast, 120ms);
 }
 
-.button:hover:not(:disabled) {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
 .button:active:not(:disabled) {
   transform: translateY(0) scale(0.97);
+}
+
+@media (hover: hover) {
+  .button:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
 }
 
 .button:disabled {
@@ -126,14 +128,16 @@
               color var(--duration-fast, 120ms);
 }
 
-.secondary:hover {
-  border-color: var(--drill-accent, var(--accent));
-  color: var(--text-primary);
-  background: rgba(255, 255, 255, 0.04);
-}
-
 .secondary:active {
   transform: scale(0.97);
+}
+
+@media (hover: hover) {
+  .secondary:hover {
+    border-color: var(--drill-accent, var(--accent));
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.04);
+  }
 }
 
 .empty {
@@ -196,14 +200,25 @@
   color: var(--text-secondary);
   cursor: pointer;
   font-size: 14px;
-  padding: 2px 6px;
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 4px;
   flex-shrink: 0;
 }
 
-.expandToggle:hover {
+.expandToggle:active {
   background: rgba(255, 255, 255, 0.08);
   color: var(--text-primary);
+}
+
+@media (hover: hover) {
+  .expandToggle:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-primary);
+  }
 }
 
 .cardContent {
@@ -379,8 +394,8 @@
 }
 
 .ratingBtn {
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   background: rgba(255, 255, 255, 0.04);
@@ -391,9 +406,16 @@
   transition: background var(--duration-fast, 120ms), color var(--duration-fast, 120ms), border-color var(--duration-fast, 120ms);
 }
 
-.ratingBtn:hover {
+.ratingBtn:active {
   background: rgba(255, 255, 255, 0.08);
   color: var(--text-primary);
+}
+
+@media (hover: hover) {
+  .ratingBtn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-primary);
+  }
 }
 
 .ratingBtnActive {
@@ -485,6 +507,25 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* ── Mobile adjustments ── */
+@media (max-width: 768px) {
+  .runner {
+    padding: 10px;
+  }
+
+  .cardContent {
+    padding: 10px 12px 10px 16px;
+  }
+
+  .ratingGroup {
+    flex-wrap: wrap;
+  }
+
+  .step {
+    padding: 6px 8px;
+  }
 }
 
 /* ---------- Reduced motion ---------- */

@@ -47,7 +47,8 @@
 .controlBtn {
   font-size: 12px;
   font-weight: 600;
-  padding: 4px 10px;
+  min-height: 44px;
+  padding: 8px 14px;
   border-radius: 6px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   background: rgba(255, 255, 255, 0.04);
@@ -56,6 +57,12 @@
   transition: background 0.15s;
 }
 
-.controlBtn:hover {
+.controlBtn:active {
   background: rgba(255, 255, 255, 0.08);
+}
+
+@media (hover: hover) {
+  .controlBtn:hover {
+    background: rgba(255, 255, 255, 0.08);
+  }
 }

@@ -161,9 +161,11 @@
     transition: border-color 0.2s ease, background 0.2s ease;
 }
 
-.hamburger:hover {
-    border-color: var(--handler-accent);
-    background: rgba(90, 127, 255, 0.12);
+@media (hover: hover) {
+    .hamburger:hover {
+        border-color: var(--handler-accent);
+        background: rgba(90, 127, 255, 0.12);
+    }
 }
 
 .hamburger:active {
@@ -175,8 +177,8 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
-    height: 36px;
+    width: 44px;
+    height: 44px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 4px;
     background: var(--surface-muted);
@@ -184,9 +186,16 @@
     text-decoration: none;
 }
 
-.settingsLink:hover {
+.settingsLink:active {
     border-color: var(--handler-accent);
     background: rgba(90, 127, 255, 0.1);
+}
+
+@media (hover: hover) {
+    .settingsLink:hover {
+        border-color: var(--handler-accent);
+        background: rgba(90, 127, 255, 0.1);
+    }
 }
 
 .statsWrapper {
@@ -207,6 +216,7 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 3px;
     padding: 8px 12px;
+    min-height: 44px;
     font-size: 0.75rem;
     font-family: var(--font-display), sans-serif;
     text-transform: uppercase;
@@ -215,9 +225,11 @@
     transition: border-color 0.2s ease, background 0.2s ease;
 }
 
-.navButton:hover {
-    border-color: var(--handler-accent);
-    background: rgba(90, 127, 255, 0.08);
+@media (hover: hover) {
+    .navButton:hover {
+        border-color: var(--handler-accent);
+        background: rgba(90, 127, 255, 0.08);
+    }
 }
 
 .navButton:active {
@@ -240,8 +252,8 @@
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: var(--text-primary);
-    width: 36px;
-    height: 36px;
+    width: 44px;
+    height: 44px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -250,9 +262,16 @@
     transition: border-color 0.2s ease, background 0.2s ease;
 }
 
-.moreButton:hover {
+.moreButton:active {
     border-color: var(--handler-accent);
     background: rgba(90, 127, 255, 0.12);
+}
+
+@media (hover: hover) {
+    .moreButton:hover {
+        border-color: var(--handler-accent);
+        background: rgba(90, 127, 255, 0.12);
+    }
 }
 
 .loginButton {
@@ -268,9 +287,16 @@
     transition: border-color 0.2s ease, background 0.2s ease;
 }
 
-.loginButton:hover {
+.loginButton:active {
     border-color: var(--handler-accent);
     background: rgba(90, 127, 255, 0.1);
+}
+
+@media (hover: hover) {
+    .loginButton:hover {
+        border-color: var(--handler-accent);
+        background: rgba(90, 127, 255, 0.1);
+    }
 }
 
 .userProfile {
@@ -291,8 +317,14 @@
     letter-spacing: 0.08em;
 }
 
-.userButton:hover {
+.userButton:active {
     border-color: var(--handler-accent);
+}
+
+@media (hover: hover) {
+    .userButton:hover {
+        border-color: var(--handler-accent);
+    }
 }
 
 .userInfo {
@@ -307,8 +339,8 @@
 }
 
 .userAvatar {
-    width: 28px;
-    height: 28px;
+    width: 36px;
+    height: 36px;
     border: 1px solid rgba(255, 255, 255, 0.16);
     display: flex;
     align-items: center;
@@ -341,8 +373,14 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.menuItem:hover {
+.menuItem:active {
     background: rgba(90, 127, 255, 0.12);
+}
+
+@media (hover: hover) {
+    .menuItem:hover {
+        background: rgba(90, 127, 255, 0.12);
+    }
 }
 
 .menuItem:last-child {
@@ -423,8 +461,8 @@
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.16);
     color: var(--text-primary);
-    width: 32px;
-    height: 32px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     cursor: pointer;
 }

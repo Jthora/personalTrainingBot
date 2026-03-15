@@ -25,9 +25,11 @@
   letter-spacing: 0.5px;
 }
 
-.launchBtn:hover:not(:disabled) {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.3);
+@media (hover: hover) {
+  .launchBtn:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(16, 185, 129, 0.3);
+  }
 }
 
 .launchBtn:disabled {
@@ -48,8 +50,14 @@
   transition: background 0.15s;
 }
 
-.reviewBtn:hover {
+.reviewBtn:active {
   background: rgba(108, 99, 255, 0.1);
+}
+
+@media (hover: hover) {
+  .reviewBtn:hover {
+    background: rgba(108, 99, 255, 0.1);
+  }
 }
 
 .summary {
@@ -87,8 +95,14 @@
   transition: border-color 0.15s;
 }
 
-.regenerateBtn:hover {
+.regenerateBtn:active {
   border-color: rgba(255, 255, 255, 0.35);
+}
+
+@media (hover: hover) {
+  .regenerateBtn:hover {
+    border-color: rgba(255, 255, 255, 0.35);
+  }
 }
 
 .emptyMessage {

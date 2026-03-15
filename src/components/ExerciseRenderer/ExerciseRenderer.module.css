@@ -55,7 +55,8 @@
   color: #fff;
   border: none;
   border-radius: 6px;
-  padding: 0.35rem 0.75rem;
+  padding: 0.6rem 1rem;
+  min-height: 44px;
   font-size: 0.8rem;
   cursor: pointer;
   margin-right: 0.5rem;
@@ -63,9 +64,16 @@
   transition: opacity 0.15s;
 }
 
-.revealBtn:hover,
-.hintBtn:hover {
+.revealBtn:active,
+.hintBtn:active {
   opacity: 0.85;
+}
+
+@media (hover: hover) {
+  .revealBtn:hover,
+  .hintBtn:hover {
+    opacity: 0.85;
+  }
 }
 
 .outcome {
@@ -109,15 +117,18 @@
 
 .checkItem {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.5rem;
   padding: 0.25rem 0;
+  min-height: 44px;
   font-size: 0.85rem;
   color: var(--text-primary, #eee);
   cursor: pointer;
 }
 
 .checkItem input {
-  margin-top: 0.2rem;
+  width: 20px;
+  height: 20px;
+  margin-top: 0;
   cursor: pointer;
 }

@@ -56,11 +56,20 @@
   text-decoration: none;
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 6px;
-  padding: 4px 8px;
+  min-height: 44px;
+  padding: 8px 12px;
+  display: inline-flex;
+  align-items: center;
 }
 
-.jump:hover {
+.jump:active {
   border-color: rgba(255, 255, 255, 0.28);
+}
+
+@media (hover: hover) {
+  .jump:hover {
+    border-color: rgba(255, 255, 255, 0.28);
+  }
 }
 
 .empty {

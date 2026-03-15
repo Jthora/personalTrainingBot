@@ -2,8 +2,8 @@
 
 .toast {
     position: fixed;
-    right: 18px;
-    bottom: 18px;
+    right: calc(18px + env(safe-area-inset-right, 0px));
+    bottom: calc(18px + env(safe-area-inset-bottom, 0px));
     background: var(--surface-card);
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 12px;
@@ -101,7 +101,11 @@
     color: var(--text-secondary);
     cursor: pointer;
     font-size: 1rem;
-    padding: 4px;
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes fadeIn {

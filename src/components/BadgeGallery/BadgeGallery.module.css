@@ -49,8 +49,14 @@
   transition: transform 0.15s ease, border-color 0.15s ease;
 }
 
-.badgeCard:hover {
+.badgeCard:active {
   transform: translateY(-2px);
+}
+
+@media (hover: hover) {
+  .badgeCard:hover {
+    transform: translateY(-2px);
+  }
 }
 
 .earned {
@@ -58,8 +64,10 @@
   background: rgba(74, 222, 128, 0.06);
 }
 
-.earned:hover {
-  border-color: rgba(74, 222, 128, 0.5);
+@media (hover: hover) {
+  .earned:hover {
+    border-color: rgba(74, 222, 128, 0.5);
+  }
 }
 
 .locked {
@@ -80,7 +88,7 @@
 }
 
 .rarity {
-  font-size: 9px;
+  font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--text-secondary);

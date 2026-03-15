@@ -1,9 +1,9 @@
 .banner {
   position: fixed;
-  bottom: 4rem;
+  bottom: calc(56px + env(safe-area-inset-bottom, 0px) + 12px);
   left: 50%;
   transform: translateX(-50%);
-  z-index: 900;
+  z-index: 1050;
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -19,7 +19,7 @@
 .text {
   font-size: 0.85rem;
   color: var(--text-primary, #eee);
-  white-space: nowrap;
+  min-width: 0;
 }
 
 .installBtn {
@@ -34,12 +34,22 @@
   transition: opacity 0.15s ease;
 }
 
-.installBtn:hover {
+.installBtn:active {
   opacity: 0.85;
 }
 
+@media (hover: hover) {
+  .installBtn:hover {
+    opacity: 0.85;
+  }
+}
+
 .dismissBtn {
-  padding: 0.2rem 0.5rem;
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   background: transparent;
   color: var(--text-muted, #aaa);

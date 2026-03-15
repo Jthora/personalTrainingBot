@@ -139,9 +139,11 @@
   font-weight: 600;
 }
 
-.stepButton:hover {
-  border-color: var(--handler-accent);
-  background: rgba(90, 127, 255, 0.1);
+@media (hover: hover) {
+  .stepButton:hover {
+    border-color: var(--handler-accent);
+    background: rgba(90, 127, 255, 0.1);
+  }
 }
 
 .stepButton:active {
@@ -253,13 +255,20 @@
   color: #0a0f1a;
   border: none;
   border-radius: 8px;
-  padding: 8px 14px;
+  padding: 10px 16px;
+  min-height: 44px;
   font-weight: 700;
   font-size: 13px;
   cursor: pointer;
   white-space: nowrap;
 }
 
-.completeButton:hover {
+.completeButton:active {
   opacity: 0.9;
+}
+
+@media (hover: hover) {
+  .completeButton:hover {
+    opacity: 0.9;
+  }
 }

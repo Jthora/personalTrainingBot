@@ -84,6 +84,15 @@ const ActivityHeatmap: React.FC = () => {
 
   const handleCellLeave = () => setTooltip(null);
 
+  const handleCellClick = (e: React.MouseEvent, data: DayData) => {
+    if (tooltip?.data.date === data.date) {
+      setTooltip(null);
+    } else {
+      const rect = (e.target as SVGElement).getBoundingClientRect();
+      setTooltip({ x: rect.left + rect.width / 2, y: rect.top - 4, data });
+    }
+  };
+
   // Month labels on top
   const monthLabels = useMemo(() => {
     const labels: Array<{ weekIndex: number; label: string }> = [];
@@ -151,6 +160,7 @@ const ActivityHeatmap: React.FC = () => {
               data-testid={`cell-${day.date}`}
               onMouseEnter={(e) => handleCellEnter(e, day)}
               onMouseLeave={handleCellLeave}
+              onClick={(e) => handleCellClick(e, day)}
             />
           )),
         )}

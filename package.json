@@ -42,7 +42,13 @@
     "test:e2e": "npx playwright test --config=e2e/playwright.config.ts",
     "test:e2e:mobile": "npx playwright test --config=e2e/playwright.config.ts --project=mobile",
     "test:e2e:desktop": "npx playwright test --config=e2e/playwright.config.ts --project=desktop",
-    "test:e2e:ui": "npx playwright test --config=e2e/playwright.config.ts --ui"
+    "test:e2e:ui": "npx playwright test --config=e2e/playwright.config.ts --ui",
+    "test:beta": "npx playwright test --config=e2e/beta/playwright.config.ts",
+    "test:beta:ui": "npx playwright test --config=e2e/beta/playwright.config.ts --ui",
+    "test:beta:phase1": "npx playwright test --config=e2e/beta/playwright.config.ts --grep 'Fresh Cadet|Navigation Atlas'",
+    "test:beta:phase2": "npx playwright test --config=e2e/beta/playwright.config.ts --grep 'Returning Operative|Mission Commander|Knowledge Seeker'",
+    "test:beta:phase3": "npx playwright test --config=e2e/beta/playwright.config.ts --grep 'Profile|Module Explorer'",
+    "test:beta:phase4": "npx playwright test --config=e2e/beta/playwright.config.ts --grep 'Edge Gremlin'"
   },
   "dependencies": {
     "dayjs": "^1.11.13",

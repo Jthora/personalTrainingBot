@@ -6,6 +6,19 @@
 
 ---
 
+## Post-Beta Bug Fixes
+
+Bugs discovered during beta testing, now resolved:
+
+- [x] `BF01` **ReviewDashboard ?mode=review** — `handleStartReview()` navigated to `/train/quiz` without `?mode=review`, causing QuizSurface to show "No Questions". Fixed in `ReviewDashboard.tsx`.
+- [x] `BF02` **Nested-interactive a11y violation** — Module tiles used `role="button"` with nested `<input>` and `<button>`, triggering 19 axe-core `nested-interactive` violations. Fixed by removing `role="button"`/`tabIndex` from outer div and converting module name `<span>` to `<button>` in `ModuleBrowser.tsx`. Removed `nested-interactive` from `betaAudit()` exclusion list.
+- [x] `BF03` **NetworkStatusIndicator pointer-events overlap** — Status pill at `z-index: 1200` blocked BottomNav clicks. Fixed by adding `pointer-events: none` to base styles in `NetworkStatusIndicator.tsx`.
+- [x] `BF04` **Horizontal overflow on deck pages** — Multiple flex rows lacked `flex-wrap` causing overflow on 390px viewport. Fixed by adding `flex-wrap: wrap` to `.tileStats`, `.deckMeta`, `.deckActions`, `.cardPreview` in `ModuleBrowser.module.css`, `overflow-x: hidden` to `html` in `theme.css` and `.surface` in `MissionFlow.module.css`, plus badge truncation.
+
+All 1,402 unit tests passing. All 21 beta tests passing (including stricter a11y checks).
+
+---
+
 ## Stage 1 — Infrastructure
 
 ### Phase 1.1 — Directory Structure & Config

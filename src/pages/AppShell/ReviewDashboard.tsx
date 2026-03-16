@@ -45,7 +45,7 @@ const ReviewDashboard: React.FC = () => {
   }, [dueCards]);
 
   const handleStartReview = () => {
-    navigate('/train/quiz');
+    navigate('/train/quiz?mode=review');
   };
 
   return (

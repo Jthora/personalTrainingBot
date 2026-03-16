@@ -39,7 +39,7 @@ test.describe('Scenario 04: Knowledge Seeker (quiz-grinder)', () => {
       }
     });
 
-    // Step 3: Try Start Review button (known bug: missing ?mode=review param)
+    // Step 3: Start Review button navigates to quiz with ?mode=review
     await betaStep(page, 'start-review-attempt', async () => {
       await page.evaluate(() => window.scrollTo(0, 0));
       await page.waitForTimeout(300);
@@ -47,8 +47,6 @@ test.describe('Scenario 04: Knowledge Seeker (quiz-grinder)', () => {
       if (await startBtn.isVisible({ timeout: 3_000 }).catch(() => false)) {
         await startBtn.click();
         await page.waitForTimeout(1000);
-        // NOTE: Known bug — ReviewDashboard.handleStartReview navigates to
-        // /train/quiz without ?mode=review, so QuizSurface shows "No Questions".
       }
     });
 

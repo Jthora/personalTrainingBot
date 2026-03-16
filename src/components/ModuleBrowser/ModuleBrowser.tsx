@@ -123,18 +123,19 @@ const ModuleBrowser: React.FC<ModuleBrowserProps> = ({ onSelectModule, onQuickTr
               className={tileClass}
               data-testid={`module-tile-${domain.id}`}
               onClick={() => onSelectModule(domain.id)}
-              role="button"
-              tabIndex={0}
-              onKeyDown={(e) => e.key === 'Enter' && onSelectModule(domain.id)}
               style={{ borderLeftColor: disc.color, background: disc.bgTint }}
             >
               <div className={styles.tileHeader}>
-                <span className={styles.moduleName}>
+                <button
+                  type="button"
+                  className={styles.moduleName}
+                  onClick={(e) => { e.stopPropagation(); onSelectModule(domain.id); }}
+                >
                   <span className={styles.disciplineIcon}>{disc.icon}</span>
                   {domain.name}
                   {isCore && <span className={styles.focusBadge}>Core</span>}
                   {isSecondary && <span className={styles.secondaryBadge}>Focus</span>}
-                </span>
+                </button>
                 <span
                   className={styles.selectionToggle}
                   onClick={(e) => handleToggleModule(e, domain.id)}

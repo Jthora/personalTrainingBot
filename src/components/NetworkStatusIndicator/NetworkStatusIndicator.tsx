@@ -12,6 +12,8 @@ const baseStyles: React.CSSProperties = {
   boxShadow: '0 4px 14px rgba(0,0,0,0.08)',
   backdropFilter: 'blur(6px)',
   zIndex: 1200,
+  pointerEvents: 'none',
+  pointerEvents: 'none',
 };
 
 const onlineStyles: React.CSSProperties = {

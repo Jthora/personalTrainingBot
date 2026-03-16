@@ -167,7 +167,6 @@ export async function betaAudit(page: Page): Promise<void> {
     // Known pre-existing app issues — tracked separately, not beta blockers
     disableRules: [
       'color-contrast',
-      'nested-interactive', // Module tiles use role="button" with nested interactive children
     ],
   });
 

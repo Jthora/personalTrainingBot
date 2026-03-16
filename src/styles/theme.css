@@ -182,6 +182,7 @@ code, pre, .mono {
 
 html {
     scroll-padding-top: calc(var(--header-height, 60px) + 16px);
+    overflow-x: hidden;
 }
 
 /* ─── Scrollbar ──────────────────────────────────────────────────────────── */

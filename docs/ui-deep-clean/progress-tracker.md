@@ -197,11 +197,11 @@
 <details><summary>Tasks P3-001 through P3-039</summary>
 
 ### HTML Splash (5)
-- [ ] `P3-001` Design splash markup
-- [ ] `P3-002` Inline `<style>` in index.html
-- [ ] `P3-003` Add splash HTML inside `<div id="root">`
-- [ ] `P3-004` Set body background color
-- [ ] `P3-005` Reduced motion media query
+- [x] `P3-001` Design splash markup — logo text + spinner, dark theme
+- [x] `P3-002` Inline `<style>` in index.html — minified <2KB
+- [x] `P3-003` Add splash HTML inside `<div id="root">` — React replaces on mount
+- [x] `P3-004` Set body background color — `#040709` on `<body style>`
+- [x] `P3-005` Reduced motion media query — disables spinner animation
 
 ### LoadingMessage Redesign (8)
 - [ ] `P3-006` Replace "App Loading" text
@@ -385,8 +385,8 @@
 
 ### Inline Style Consolidation (12)
 - [x] `P6-001` ReviewDashboard inline colors — done via P2-077
-- [ ] `P6-002` NetworkStatusIndicator → CSS module
-- [ ] `P6-003` CacheIndicator → CSS module
+- [x] `P6-002` NetworkStatusIndicator → CSS module (3 classes: indicator/online/offline)
+- [x] `P6-003` CacheIndicator → CSS module (2 classes: indicator/hidden)
 - [ ] `P6-004` QuizRunner disciplineStyle
 - [ ] `P6-005` ActivityHeatmap inline styles
 - [ ] `P6-006` ScoreLineChart inline styles
@@ -418,8 +418,8 @@
 ### CSS Naming (4)
 - [x] `P6-027` LoadingMessage kebab → camel
 - [ ] `P6-028` Rename MissionFlow.module.css — deferred to Phase 4
-- [ ] `P6-029` Audit kebab-case classes
-- [ ] `P6-030` Update contributing.md
+- [x] `P6-029` Audit kebab-case classes — zero remaining after P6-027
+- [x] `P6-030` Update contributing.md — added CSS Module Conventions section
 
 ### Verification
 - [ ] `P6-V01` Visual regression screenshots

@@ -156,8 +156,16 @@ const DrillCard: React.FC<DrillCardProps> = ({ drill, onStart }) => {
 ### Handler-Aware Theming
 - Handler themes are defined in `src/data/handlerThemes.ts`
 - `HandlerSelectionContext` applies handler colors to CSS custom properties
-- In CSS Modules, use semantic tokens (`var(--surface-card)`, `var(--coach-accent)`)
+- In CSS Modules, use semantic tokens (`var(--surface-card)`, `var(--accent)`)
 - When adding new handler-themed components, extend via CSS custom properties — don't hardcode colors
+
+### CSS Module Conventions
+- **Class names**: always camelCase (`loadingContainer`, `progressBar`) — never kebab-case
+- **Access**: dot notation (`styles.loadingContainer`) — never bracket notation (`styles['loading-container']`)
+- **Inline styles**: avoid in favor of CSS module classes. Exceptions: dynamic values set via `style` prop (e.g., computed width, chart positioning)
+- **Colors**: use design tokens (`var(--accent)`, `var(--color-success)`) — never hardcode hex values
+- **Z-index**: use token scale (`var(--z-chrome)`, `var(--z-modal)`, `var(--z-dropdown)`) — see `theme.css`
+- **One module per component**: co-locate `ComponentName.module.css` alongside `ComponentName.tsx`
 
 ### File Organization
 - One component per directory

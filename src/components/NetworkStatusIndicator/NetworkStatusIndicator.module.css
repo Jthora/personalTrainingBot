@@ -1,0 +1,27 @@
+/* NetworkStatusIndicator — fixed glass-pill status badge */
+
+.indicator {
+    position: fixed;
+    bottom: 12px;
+    left: 12px;
+    padding: 8px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(6px);
+    z-index: var(--z-dropdown);
+    pointer-events: none;
+}
+
+.online {
+    background: rgba(0, 128, 96, 0.14);
+    color: #0f5132;
+    border: 1px solid rgba(0, 128, 96, 0.35);
+}
+
+.offline {
+    background: rgba(128, 0, 32, 0.14);
+    color: #641220;
+    border: 1px solid rgba(128, 0, 32, 0.35);
+}

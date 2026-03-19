@@ -140,8 +140,25 @@
     }
     </script>
   </head>
-  <body>
-    <div id="root"></div>
+  <body style="background:#040709;margin:0">
+    <div id="root">
+      <!-- Splash: replaced by React on mount -->
+      <style>
+        .splash{display:flex;flex-direction:column;align-items:center;justify-content:center;
+          height:100vh;height:100dvh;background:#040709;color:#E3ECFF;
+          font-family:'Inter',system-ui,-apple-system,sans-serif}
+        .splash-logo{font-family:'Aldrich',system-ui,sans-serif;font-size:clamp(18px,4vw,26px);
+          letter-spacing:0.06em;text-transform:uppercase;margin-bottom:28px;opacity:0.92}
+        .splash-spinner{width:32px;height:32px;border:3px solid rgba(90,127,255,0.15);
+          border-left-color:#5A7FFF;border-radius:50%;animation:splash-spin .8s linear infinite}
+        @keyframes splash-spin{to{transform:rotate(360deg)}}
+        @media(prefers-reduced-motion:reduce){.splash-spinner{animation:none;opacity:0.4}}
+      </style>
+      <div class="splash" role="status" aria-label="Loading Starcom Academy">
+        <div class="splash-logo">Starcom Academy</div>
+        <div class="splash-spinner" aria-hidden="true"></div>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
     <noscript>
       <h1>Starcom Academy</h1>

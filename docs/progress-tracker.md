@@ -3,8 +3,8 @@
 > Single source of truth for all active work streams.
 >
 > **Last updated**: 2026-03-19
-> **Branch**: `main` @ `72e08ec` (2 commits ahead of origin)
-> **Unit tests**: 1,395/1,395 passing | **Beta tests**: 21/21 passing | **Build**: clean (4.83s)
+> **Branch**: `main` @ `e78e3fc` (5 commits ahead of origin)
+> **Unit tests**: 1,395/1,395 passing | **Beta tests**: 21/21 passing | **Build**: clean (4.78s)
 
 ---
 
@@ -16,12 +16,12 @@
 | Bug Fixes (from beta) | **DONE** | 4/4 | Committed `72e08ec` |
 | UI Deep Clean — Audit | **DONE** | 4/4 docs | `docs/ui-deep-clean/audit/` |
 | UI Deep Clean — Planning | **DONE** | 21/21 docs | `docs/ui-deep-clean/` |
-| UI Deep Clean — Phase 1 | Not started | 0/35 | Domain & URL migration |
+| UI Deep Clean — Phase 1 | **DONE** | 28/35 | Domain migration (7 conditional on repo rename) |
 | UI Deep Clean — Phase 2 | **DONE** | 93/93 | CSS token cleanup |
-| UI Deep Clean — Phase 3 | **In progress** | 1/39 | Loading & first impression |
+| UI Deep Clean — Phase 3 | **In progress** | 6/39 | Loading & first impression |
 | UI Deep Clean — Phase 4 | Not started | 0/46 | Shell unification |
-| UI Deep Clean — Phase 5 | **In progress** | 15/23 | Dead code purge |
-| UI Deep Clean — Phase 6 | **In progress** | 2/30 | Component polish |
+| UI Deep Clean — Phase 5 | **DONE** | 23/23 | Dead code purge |
+| UI Deep Clean — Phase 6 | **In progress** | 9/30 | Component polish |
 
 ---
 
@@ -192,26 +192,27 @@ Consolidate inline styles, add missing UX states, fix misc bugs.
 | Beta test suite | 269 | 269 | 0 |
 | Bug fixes | 4 | 4 | 0 |
 | UI deep clean audit/docs | 21 | 21 | 0 |
-| Phase 1: Domain migration | 39 | 0 | 39 |
-| Phase 2: CSS tokens | 97 | 0 | 97 |
-| Phase 3: First impression | 45 | 0 | 45 |
+| Phase 1: Domain migration | 39 | 32 | 7 |
+| Phase 2: CSS tokens | 97 | 97 | 0 |
+| Phase 3: First impression | 45 | 6 | 39 |
 | Phase 4: Shell unification | 55 | 0 | 55 |
-| Phase 5: Dead code | 27 | 0 | 27 |
-| Phase 6: Component polish | 36 | 0 | 36 |
-| **Total** | **593** | **294** | **299** |
+| Phase 5: Dead code | 27 | 27 | 0 |
+| Phase 6: Component polish | 36 | 9 | 27 |
+| **Total** | **593** | **465** | **128** |
 
 ---
 
 ## Unpushed Commits
 
-These 2 commits are on `main` but not yet on `origin/main`:
+These 5 commits are on `main` but not yet on `origin/main`:
 
 | Commit | Summary | Files |
 |--------|---------|-------|
 | `d877bc3` | Beta test suite — 21 tests, 8 scenarios, 148 screenshots | 16 files |
 | `72e08ec` | Bug fixes — ReviewDashboard, ModuleBrowser a11y, NetworkStatusIndicator, overflow | 24 files |
-
-Unstaged: `docs/ui-deep-clean/` (21 new files), `e2e/beta/fixtures/betaPersonas.ts` (modified)
+| `e706160` | UI Deep Clean Batch 1 — CSS token migration, dead code removal, bug fixes | 48 files |
+| `2480c36` | UI Deep Clean Batch 2 — Complete Phase 2, extend Phase 5 | 38 files |
+| `e78e3fc` | UI Deep Clean Batch 3 — Domain migration, dead redirect cleanup, CSS naming | 16 files |
 
 ---
 
@@ -219,9 +220,9 @@ Unstaged: `docs/ui-deep-clean/` (21 new files), `e2e/beta/fixtures/betaPersonas.
 
 | Gate | Command | Current Status |
 |------|---------|---------------|
-| Unit tests | `npx vitest run` | 1,402/1,402 passing |
+| Unit tests | `npx vitest run` | 1,395/1,395 passing |
 | Beta tests | `npm run test:beta` | 21/21 passing |
-| Build | `npx vite build` | Clean (4.66s) |
+| Build | `npx vite build` | Clean (4.78s) |
 | Lint | `npx eslint src/` | — (run before committing) |
 
 > **Note**: `npm run build` fails due to missing `src/utils/generateCombinedTrainingData.ts`. Use `npx vite build` directly.

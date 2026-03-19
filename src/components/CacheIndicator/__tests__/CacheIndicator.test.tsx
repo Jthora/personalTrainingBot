@@ -3,7 +3,7 @@ import { render, screen, act } from '@testing-library/react';
 import CacheIndicator from '../CacheIndicator';
 
 const getStatus = () => screen.getByRole('status', { hidden: true });
-const isHidden = (el: HTMLElement) => el.style.display === 'none';
+const isHidden = (el: HTMLElement) => el.className.includes('hidden');
 
 describe('CacheIndicator', () => {
   beforeEach(() => {

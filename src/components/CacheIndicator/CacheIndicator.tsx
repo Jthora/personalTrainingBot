@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import type { CacheSource } from '../../utils/cache/types';
+import styles from './CacheIndicator.module.css';
 
 interface CacheEventDetail {
     store: string;
@@ -7,24 +8,6 @@ interface CacheEventDetail {
     source: CacheSource;
     stale?: boolean;
 }
-
-const styles: React.CSSProperties = {
-    position: 'fixed',
-    bottom: '12px',
-    right: '12px',
-    padding: '8px 12px',
-    borderRadius: '999px',
-    background: 'rgba(0, 128, 96, 0.14)',
-    color: '#0f5132',
-    border: '1px solid rgba(0, 128, 96, 0.35)',
-    fontSize: '12px',
-    fontWeight: 600,
-    boxShadow: '0 4px 14px rgba(0,0,0,0.08)',
-    backdropFilter: 'blur(6px)',
-    zIndex: 1200,
-};
-
-const hiddenStyles: React.CSSProperties = { display: 'none' };
 
 const CacheIndicator = () => {
     const [visible, setVisible] = useState(false);
@@ -49,7 +32,11 @@ const CacheIndicator = () => {
     }, []);
 
     return (
-        <div style={visible ? styles : hiddenStyles} role="status" aria-live="polite">
+        <div
+            className={`${styles.indicator} ${!visible ? styles.hidden : ''}`}
+            role="status"
+            aria-live="polite"
+        >
             {message}
         </div>
     );

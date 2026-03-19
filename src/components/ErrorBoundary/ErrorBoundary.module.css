@@ -34,7 +34,7 @@
 
 .details {
   background: var(--surface-muted);
-  border: 1px solid var(--handler-border);
+  border: 1px solid var(--accent-border);
   border-radius: 6px;
   padding: 12px;
   margin: 0 0 20px;
@@ -73,12 +73,12 @@
 }
 
 .retryButton {
-  background: var(--handler-accent-soft);
-  color: var(--handler-accent);
-  border: 1px solid var(--handler-border);
+  background: var(--accent-soft);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
 }
 
 .reloadButton {
-  background: var(--handler-accent);
+  background: var(--accent);
   color: #fff;
 }

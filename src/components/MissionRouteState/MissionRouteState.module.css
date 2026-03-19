@@ -24,13 +24,13 @@
 
 .title {
   margin: 0;
-  font-size: var(--mission-type-h3);
+  font-size: var(--type-h3);
 }
 
 .body {
   margin: 0;
   color: var(--text-secondary);
-  font-size: var(--mission-type-body);
+  font-size: var(--type-body);
 }
 
 .actions {
@@ -40,7 +40,7 @@
 
 .primary {
   border: 1px solid rgba(255, 255, 255, 0.2);
-  background: var(--handler-accent);
+  background: var(--accent);
   color: #0a0f1a;
   padding: 8px 12px;
   border-radius: 10px;

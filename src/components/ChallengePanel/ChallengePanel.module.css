@@ -68,7 +68,7 @@
 
 .progressFill {
   height: 100%;
-  background: var(--handler-accent);
+  background: var(--accent);
   border-radius: 3px;
   transition: width 0.3s ease;
 }
@@ -116,5 +116,5 @@
 
 .xpReward {
   font-weight: 600;
-  color: var(--handler-accent);
+  color: var(--accent);
 }

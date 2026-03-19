@@ -7,7 +7,7 @@
 
 .title {
   margin: 0;
-  font-size: var(--mission-type-h2, 1.4rem);
+  font-size: var(--type-h2, 1.4rem);
   color: var(--mission-trust-verified, var(--text-primary));
 }
 
@@ -53,7 +53,7 @@
 .placeholder {
   margin: 0;
   color: var(--text-secondary);
-  font-size: var(--mission-type-body, 0.9rem);
+  font-size: var(--type-body, 0.9rem);
   font-style: italic;
 }
 
@@ -92,8 +92,8 @@
 }
 
 .toggleOn {
-  background: var(--handler-accent, #5a7fff);
-  border-color: var(--handler-accent, #5a7fff);
+  background: var(--accent, #5a7fff);
+  border-color: var(--accent, #5a7fff);
 }
 
 .toggleKnob {
@@ -131,6 +131,6 @@
 }
 
 .actionButton:hover {
-  border-color: var(--handler-accent);
+  border-color: var(--accent);
   background: rgba(90, 127, 255, 0.1);
 }

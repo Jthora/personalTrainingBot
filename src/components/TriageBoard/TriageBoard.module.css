@@ -15,7 +15,7 @@
 .shortcutsHint {
   margin: 0;
   color: var(--text-secondary);
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
 }
 
 .toggleGroup {
@@ -29,13 +29,13 @@
   color: var(--text-primary);
   border-radius: 8px;
   padding: 5px 9px;
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
   cursor: pointer;
 }
 
 .toggleActive {
-  border-color: var(--handler-accent);
-  background: var(--handler-accent-soft);
+  border-color: var(--accent);
+  background: var(--accent-soft);
 }
 
 .grid {
@@ -55,7 +55,7 @@
 
 .columnTitle {
   margin: 0;
-  font-size: var(--mission-type-body);
+  font-size: var(--type-body);
 }
 
 .list {
@@ -76,8 +76,8 @@
 }
 
 .card[data-selected='true'] {
-  border-color: var(--handler-accent);
-  background: color-mix(in srgb, var(--handler-accent) 16%, var(--surface-muted));
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 16%, var(--surface-muted));
 }
 
 .cardButton {
@@ -93,20 +93,20 @@
 }
 
 .cardButton:focus-visible {
-  outline: 2px solid var(--handler-accent);
+  outline: 2px solid var(--accent);
   outline-offset: 2px;
   border-radius: 6px;
 }
 
 .cardTitle {
   margin: 0;
-  font-size: var(--mission-type-body);
+  font-size: var(--type-body);
 }
 
 .cardBody {
   margin: 0;
   color: var(--text-secondary);
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
 }
 
 .badges {
@@ -119,7 +119,7 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 999px;
   padding: 2px 7px;
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
   font-weight: 700;
 }
 
@@ -169,7 +169,7 @@
 .empty {
   margin: 0;
   color: var(--text-secondary);
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
 }
 
 .boardCompact .column {
@@ -187,7 +187,7 @@
 }
 
 .boardCompact .cardTitle {
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
 }
 
 .boardCompact .cardBody,

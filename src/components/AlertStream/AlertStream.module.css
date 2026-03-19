@@ -7,7 +7,7 @@
 
 .title {
   margin: 0;
-  font-size: var(--mission-type-h3);
+  font-size: var(--type-h3);
 }
 
 .group {
@@ -23,7 +23,7 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
   font-weight: 700;
 }
 
@@ -46,13 +46,13 @@
 
 .itemTitle {
   margin: 0;
-  font-size: var(--mission-type-body);
+  font-size: var(--type-body);
 }
 
 .itemBody {
   margin: 0;
   color: var(--text-secondary);
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
 }
 
 .itemMeta {
@@ -68,5 +68,5 @@
 .empty {
   margin: 0;
   color: var(--text-secondary);
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
 }

@@ -42,7 +42,7 @@
 .archetype {
   margin: 0;
   font-size: 13px;
-  color: var(--handler-accent, #5a7fff);
+  color: var(--accent, #5a7fff);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -111,7 +111,7 @@
   padding: 3px 8px;
   border-radius: 999px;
   background: rgba(90, 127, 255, 0.12);
-  color: var(--handler-accent, #5a7fff);
+  color: var(--accent, #5a7fff);
   border: 1px solid rgba(90, 127, 255, 0.2);
   font-weight: 600;
   text-transform: capitalize;

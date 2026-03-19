@@ -26,7 +26,7 @@
     color: var(--text-primary);
     padding: 10px 14px;
     z-index: 1500;
-    border: 1px solid var(--handler-accent);
+    border: 1px solid var(--accent);
     border-radius: 6px;
 }
 
@@ -41,7 +41,7 @@
     left: 18px;
     right: 18px;
     height: 2px;
-    background: linear-gradient(90deg, transparent, var(--handler-accent), transparent);
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
     opacity: 0.35;
 }
 
@@ -163,7 +163,7 @@
 
 @media (hover: hover) {
     .hamburger:hover {
-        border-color: var(--handler-accent);
+        border-color: var(--accent);
         background: rgba(90, 127, 255, 0.12);
     }
 }
@@ -187,13 +187,13 @@
 }
 
 .settingsLink:active {
-    border-color: var(--handler-accent);
+    border-color: var(--accent);
     background: rgba(90, 127, 255, 0.1);
 }
 
 @media (hover: hover) {
     .settingsLink:hover {
-        border-color: var(--handler-accent);
+        border-color: var(--accent);
         background: rgba(90, 127, 255, 0.1);
     }
 }
@@ -227,7 +227,7 @@
 
 @media (hover: hover) {
     .navButton:hover {
-        border-color: var(--handler-accent);
+        border-color: var(--accent);
         background: rgba(90, 127, 255, 0.08);
     }
 }
@@ -238,7 +238,7 @@
 }
 
 .active {
-    border-color: var(--handler-accent);
+    border-color: var(--accent);
     background: rgba(90, 127, 255, 0.15);
 }
 
@@ -263,13 +263,13 @@
 }
 
 .moreButton:active {
-    border-color: var(--handler-accent);
+    border-color: var(--accent);
     background: rgba(90, 127, 255, 0.12);
 }
 
 @media (hover: hover) {
     .moreButton:hover {
-        border-color: var(--handler-accent);
+        border-color: var(--accent);
         background: rgba(90, 127, 255, 0.12);
     }
 }
@@ -288,13 +288,13 @@
 }
 
 .loginButton:active {
-    border-color: var(--handler-accent);
+    border-color: var(--accent);
     background: rgba(90, 127, 255, 0.1);
 }
 
 @media (hover: hover) {
     .loginButton:hover {
-        border-color: var(--handler-accent);
+        border-color: var(--accent);
         background: rgba(90, 127, 255, 0.1);
     }
 }
@@ -318,12 +318,12 @@
 }
 
 .userButton:active {
-    border-color: var(--handler-accent);
+    border-color: var(--accent);
 }
 
 @media (hover: hover) {
     .userButton:hover {
-        border-color: var(--handler-accent);
+        border-color: var(--accent);
     }
 }
 
@@ -350,7 +350,7 @@
 
 .connectionStatus {
     font-size: 0.65rem;
-    color: var(--handler-accent);
+    color: var(--accent);
     letter-spacing: 0.1em;
 }
 

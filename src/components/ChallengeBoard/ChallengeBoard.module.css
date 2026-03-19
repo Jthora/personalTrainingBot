@@ -75,7 +75,7 @@
 
 .progressFill {
   height: 100%;
-  background: var(--handler-accent, #5a7fff);
+  background: var(--accent, #5a7fff);
   border-radius: 3px;
   transition: width 0.3s ease;
 }
@@ -95,7 +95,7 @@
 
 .xpReward {
   font-weight: 600;
-  color: var(--handler-accent, #5a7fff);
+  color: var(--accent, #5a7fff);
 }
 
 .claimButton {

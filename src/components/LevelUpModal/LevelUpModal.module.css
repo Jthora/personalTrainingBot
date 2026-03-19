@@ -18,7 +18,7 @@
 
 .modal {
   background: var(--surface-elevated);
-  border: 1px solid var(--handler-accent);
+  border: 1px solid var(--accent);
   border-radius: 16px;
   padding: 28px 24px;
   text-align: center;
@@ -44,7 +44,7 @@
   margin: 0;
   font-size: 22px;
   font-weight: 800;
-  color: var(--handler-accent);
+  color: var(--accent);
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
@@ -62,14 +62,14 @@
   padding: 10px 28px;
   border-radius: 10px;
   border: none;
-  background: var(--handler-accent);
+  background: var(--accent);
   color: #0a0f1a;
   cursor: pointer;
   transition: background 0.15s;
 }
 
 .dismissBtn:hover {
-  background: var(--handler-accent-strong);
+  background: var(--accent-strong);
 }
 
 @media (prefers-reduced-motion: reduce) {

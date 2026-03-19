@@ -40,10 +40,10 @@
 .reviewBtn {
   width: 100%;
   padding: 0.6rem 1rem;
-  border: 1px solid var(--accent, #6c63ff);
+  border: 1px solid var(--accent, #5A7FFF);
   border-radius: 10px;
   background: transparent;
-  color: var(--accent, #6c63ff);
+  color: var(--accent, #5A7FFF);
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;

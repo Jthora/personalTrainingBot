@@ -28,7 +28,7 @@
 
 .progressFill {
   height: 100%;
-  background: var(--quiz-accent, var(--accent, #6c63ff));
+  background: var(--quiz-accent, var(--accent, #5A7FFF));
   border-radius: 2px;
   transition: width var(--duration-normal, 200ms) ease;
 }
@@ -110,8 +110,8 @@
 }
 
 .option:focus-visible {
-  border-color: var(--quiz-accent, var(--accent, #6c63ff));
-  outline: 2px solid var(--quiz-accent, var(--accent, #6c63ff));
+  border-color: var(--quiz-accent, var(--accent, #5A7FFF));
+  outline: 2px solid var(--quiz-accent, var(--accent, #5A7FFF));
   outline-offset: 2px;
 }
 
@@ -121,12 +121,12 @@
 
 @media (hover: hover) {
   .option:hover:not(:disabled) {
-    border-color: var(--quiz-accent, var(--accent, #6c63ff));
+    border-color: var(--quiz-accent, var(--accent, #5A7FFF));
   }
 }
 
 .optionSelected {
-  border-color: var(--quiz-accent, var(--accent, #6c63ff));
+  border-color: var(--quiz-accent, var(--accent, #5A7FFF));
   background: var(--quiz-accent-soft, rgba(108, 99, 255, 0.1));
 }
 
@@ -158,7 +158,7 @@
 }
 
 .fillInput:focus {
-  border-color: var(--quiz-accent, var(--accent, #6c63ff));
+  border-color: var(--quiz-accent, var(--accent, #5A7FFF));
   outline: none;
 }
 
@@ -205,18 +205,18 @@
 }
 
 .matchSelectable:focus-visible {
-  border-color: var(--quiz-accent, var(--accent, #6c63ff));
-  outline: 2px solid var(--quiz-accent, var(--accent, #6c63ff));
+  border-color: var(--quiz-accent, var(--accent, #5A7FFF));
+  outline: 2px solid var(--quiz-accent, var(--accent, #5A7FFF));
   outline-offset: 2px;
 }
 
 .matchSelectable:active:not(:disabled) {
-  border-color: var(--quiz-accent, var(--accent, #6c63ff));
+  border-color: var(--quiz-accent, var(--accent, #5A7FFF));
 }
 
 @media (hover: hover) {
   .matchSelectable:hover:not(:disabled) {
-    border-color: var(--quiz-accent, var(--accent, #6c63ff));
+    border-color: var(--quiz-accent, var(--accent, #5A7FFF));
   }
 }
 
@@ -239,7 +239,7 @@
 
 .hintBtn {
   font-size: 0.8rem;
-  color: var(--quiz-accent, var(--accent, #6c63ff));
+  color: var(--quiz-accent, var(--accent, #5A7FFF));
   background: none;
   border: none;
   cursor: pointer;
@@ -309,7 +309,7 @@
   padding: 0.6rem 1.25rem;
   border: none;
   border-radius: 6px;
-  background: var(--quiz-accent, var(--accent, #6c63ff));
+  background: var(--quiz-accent, var(--accent, #5A7FFF));
   color: #fff;
   font-size: 0.9rem;
   font-weight: 500;
@@ -355,7 +355,7 @@
 .scorePct {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--quiz-accent, var(--accent, #6c63ff));
+  color: var(--quiz-accent, var(--accent, #5A7FFF));
 }
 
 .scoreLabel {
@@ -442,10 +442,10 @@
 
 .secondaryBtn {
   padding: 0.6rem 1.25rem;
-  border: 1px solid var(--quiz-accent, var(--accent, #6c63ff));
+  border: 1px solid var(--quiz-accent, var(--accent, #5A7FFF));
   border-radius: 6px;
   background: transparent;
-  color: var(--quiz-accent, var(--accent, #6c63ff));
+  color: var(--quiz-accent, var(--accent, #5A7FFF));
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
@@ -454,13 +454,13 @@
 }
 
 .secondaryBtn:active {
-  background: var(--quiz-accent, var(--accent, #6c63ff));
+  background: var(--quiz-accent, var(--accent, #5A7FFF));
   color: #fff;
 }
 
 @media (hover: hover) {
   .secondaryBtn:hover {
-    background: var(--quiz-accent, var(--accent, #6c63ff));
+    background: var(--quiz-accent, var(--accent, #5A7FFF));
     color: #fff;
   }
 }

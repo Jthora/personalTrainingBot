@@ -10,7 +10,7 @@
 
 .eyebrow {
   margin: 0;
-  font-size: var(--mission-type-caption, 11px);
+  font-size: var(--type-caption, 11px);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--text-secondary);
@@ -18,14 +18,14 @@
 
 .title {
   margin: 0;
-  font-size: var(--mission-type-h2, 20px);
+  font-size: var(--type-h2, 20px);
   color: var(--mission-trust-verified);
 }
 
 .subtitle {
   margin: 0;
   color: var(--text-secondary);
-  font-size: var(--mission-type-body, 14px);
+  font-size: var(--type-body, 14px);
   line-height: 1.45;
 }
 
@@ -54,8 +54,8 @@
 
 .card:hover,
 .card:focus-visible {
-  border-color: var(--handler-accent);
-  box-shadow: 0 0 0 2px var(--handler-accent-soft, rgba(90, 127, 255, 0.2));
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-soft, rgba(90, 127, 255, 0.2));
   outline: none;
 }
 
@@ -64,8 +64,8 @@
 }
 
 .cardSelected {
-  border-color: var(--handler-accent);
-  box-shadow: 0 0 0 2px var(--handler-accent-soft, rgba(90, 127, 255, 0.2)),
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-soft, rgba(90, 127, 255, 0.2)),
     0 4px 16px rgba(90, 127, 255, 0.18);
 }
 
@@ -129,7 +129,7 @@
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: var(--handler-accent);
+  background: var(--accent);
   color: #fff;
   font-size: 13px;
   font-weight: 700;
@@ -154,7 +154,7 @@
 }
 
 .primary {
-  border: 1px solid var(--handler-accent);
+  border: 1px solid var(--accent);
   background: rgba(90, 127, 255, 0.16);
   color: var(--text-primary);
 }

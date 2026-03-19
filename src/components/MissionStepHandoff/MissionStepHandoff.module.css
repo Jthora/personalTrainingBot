@@ -26,14 +26,14 @@
 
 .title {
   margin: 0;
-  font-size: var(--mission-type-body);
+  font-size: var(--type-body);
   color: var(--text-primary);
 }
 
 .body {
   margin: 0;
   color: var(--text-secondary);
-  font-size: var(--mission-type-body);
+  font-size: var(--type-body);
 }
 
 .list {
@@ -57,12 +57,12 @@
 .next {
   margin: 0;
   color: var(--text-secondary);
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
 }
 
 .cta {
   justify-self: start;
-  border: 1px solid var(--handler-accent);
+  border: 1px solid var(--accent);
   background: rgba(90, 127, 255, 0.16);
   color: var(--text-primary);
   border-radius: 8px;

@@ -1,7 +1,7 @@
 @import '../../styles/theme.css';
 
 .card {
-  border: 1px solid var(--handler-accent);
+  border: 1px solid var(--accent);
   border-radius: 12px;
   background: var(--surface-card);
   padding: 14px;
@@ -13,7 +13,7 @@
 
 .eyebrow {
   margin: 0;
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--text-secondary);
@@ -21,7 +21,7 @@
 
 .title {
   margin: 0;
-  font-size: var(--mission-type-h2);
+  font-size: var(--type-h2);
   color: var(--mission-trust-verified);
 }
 
@@ -47,14 +47,14 @@
 
 .blockTitle {
   margin: 0;
-  font-size: var(--mission-type-body);
+  font-size: var(--type-body);
   color: var(--text-primary);
 }
 
 .blockBody {
   margin: 0;
   color: var(--text-secondary);
-  font-size: var(--mission-type-body);
+  font-size: var(--type-body);
 }
 
 .metrics {
@@ -89,7 +89,7 @@
 }
 
 .primary {
-  border: 1px solid var(--handler-accent);
+  border: 1px solid var(--accent);
   background: rgba(90, 127, 255, 0.16);
   color: var(--text-primary);
 }

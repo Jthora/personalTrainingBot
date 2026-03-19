@@ -34,7 +34,7 @@
 
 .tabSelectLabel {
   font-weight: 600;
-  font-size: var(--mission-type-body);
+  font-size: var(--type-body);
 }
 
 .tabSelect {
@@ -55,11 +55,11 @@
   cursor: pointer;
   font-weight: 600;
   letter-spacing: 0.03em;
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
 }
 
 .tabActive {
-  border-color: var(--handler-accent);
+  border-color: var(--accent);
   background: rgba(90, 127, 255, 0.12);
 }
 
@@ -83,14 +83,14 @@
 
 .title {
   margin: 0;
-  font-size: var(--mission-type-h2);
+  font-size: var(--type-h2);
   color: var(--mission-trust-verified);
 }
 
 .body {
   margin: 0;
   color: var(--text-secondary);
-  font-size: var(--mission-type-body);
+  font-size: var(--type-body);
 }
 
 .stepTools {
@@ -112,7 +112,7 @@
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 999px;
   padding: 6px 10px;
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
   color: var(--text-secondary);
   background: var(--surface-muted);
 }
@@ -136,13 +136,13 @@
   padding: 8px 12px;
   border-radius: 8px;
   cursor: pointer;
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
   font-weight: 600;
 }
 
 @media (hover: hover) {
   .stepButton:hover {
-    border-color: var(--handler-accent);
+    border-color: var(--accent);
     background: rgba(90, 127, 255, 0.1);
   }
 }
@@ -153,7 +153,7 @@
 }
 
 .guidanceOverlay {
-  border: 1px solid var(--handler-accent);
+  border: 1px solid var(--accent);
   border-radius: 12px;
   background: var(--surface-card);
   padding: 12px;
@@ -165,7 +165,7 @@
 
 .guidanceTitle {
   margin: 0;
-  font-size: var(--mission-type-h2);
+  font-size: var(--type-h2);
   color: var(--mission-trust-verified);
 }
 
@@ -199,14 +199,14 @@
 
 .assistantTitle {
   margin: 0;
-  font-size: var(--mission-type-body);
+  font-size: var(--type-body);
   color: var(--text-primary);
 }
 
 .assistantHint {
   margin: 0;
   color: var(--text-secondary);
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
 }
 
 @media (max-width: 768px) {
@@ -252,7 +252,7 @@
 }
 
 .completeButton {
-  background: var(--handler-accent);
+  background: var(--accent);
   color: #0a0f1a;
   border: none;
   border-radius: 8px;

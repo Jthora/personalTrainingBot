@@ -15,7 +15,7 @@ export interface SparklineProps {
   width?: number;
   /** SVG height (default 20). */
   height?: number;
-  /** Stroke color (default var(--handler-accent)). */
+  /** Stroke color (default var(--accent)). */
   color?: string;
   /** Stroke width (default 1.5). */
   strokeWidth?: number;

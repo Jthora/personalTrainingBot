@@ -24,7 +24,7 @@
   color: var(--text-primary);
   border-radius: 8px;
   padding: 7px 9px;
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
 }
 
 .list {
@@ -46,7 +46,7 @@
 }
 
 .itemButton:focus-visible {
-  outline: 2px solid var(--handler-accent);
+  outline: 2px solid var(--accent);
   outline-offset: 2px;
   border-radius: 6px;
 }
@@ -61,31 +61,31 @@
 }
 
 .item[data-selected='true'] {
-  border-color: var(--handler-accent);
-  background: color-mix(in srgb, var(--handler-accent) 16%, var(--surface-muted));
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 16%, var(--surface-muted));
 }
 
 .title {
   margin: 0;
-  font-size: var(--mission-type-body);
+  font-size: var(--type-body);
 }
 
 .meta {
   margin: 0;
   color: var(--text-secondary);
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
 }
 
 .desc {
   margin: 0;
   color: var(--text-secondary);
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
 }
 
 .empty {
   margin: 0;
   color: var(--text-secondary);
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
 }
 
 .detail {
@@ -99,13 +99,13 @@
 
 .detailTitle {
   margin: 0;
-  font-size: var(--mission-type-body);
+  font-size: var(--type-body);
 }
 
 .detailDescription {
   margin: 0;
   color: var(--text-secondary);
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
 }
 
 .metaGrid {
@@ -130,7 +130,7 @@
 
 .metaValue {
   margin: 0;
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
 }
 
 .actions {
@@ -151,7 +151,7 @@
   color: var(--text-primary);
   border-radius: 8px;
   padding: 6px 10px;
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
   cursor: pointer;
 }
 

@@ -138,7 +138,7 @@ const QuizSurface: React.FC = () => {
             style={{
               padding: '0.5rem 1rem',
               borderRadius: '6px',
-              background: 'var(--accent, #6c63ff)',
+              background: 'var(--accent, #5A7FFF)',
               color: '#fff',
               border: 'none',
               cursor: 'pointer',

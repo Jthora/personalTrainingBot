@@ -41,7 +41,7 @@
 }
 
 .exportBtn {
-  background: var(--accent, #6c63ff);
+  background: var(--accent, #5A7FFF);
   color: #fff;
   border: none;
 }
@@ -52,8 +52,8 @@
 
 .importBtn {
   background: transparent;
-  border: 1px solid var(--accent, #6c63ff);
-  color: var(--accent, #6c63ff);
+  border: 1px solid var(--accent, #5A7FFF);
+  color: var(--accent, #5A7FFF);
 }
 
 .importBtn:hover {

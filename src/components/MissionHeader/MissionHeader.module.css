@@ -33,7 +33,7 @@
 
 .eyebrow {
   margin: 0;
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
   color: var(--text-secondary);
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -41,7 +41,7 @@
 
 .title {
   margin: 2px 0 0;
-  font-size: var(--mission-type-h2);
+  font-size: var(--type-h2);
 }
 
 .status {
@@ -50,7 +50,7 @@
   color: var(--mission-severity-medium-text);
   border-radius: 999px;
   padding: 4px 8px;
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
   font-weight: 700;
 }
 
@@ -70,7 +70,7 @@
 .objective {
   margin: 0;
   color: var(--text-secondary);
-  font-size: var(--mission-type-body);
+  font-size: var(--type-body);
 }
 
 .metricRow {
@@ -83,5 +83,5 @@
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 8px;
   padding: 4px 8px;
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
 }

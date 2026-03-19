@@ -11,7 +11,7 @@
 
 .title {
   margin: 0;
-  font-size: var(--mission-type-h3, 1.05rem);
+  font-size: var(--type-h3, 1.05rem);
   color: var(--text-primary);
 }
 
@@ -39,7 +39,7 @@
 .metricLabel {
   margin: 0;
   color: var(--text-secondary);
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -47,7 +47,7 @@
 .metricValue {
   margin: 0;
   color: var(--text-primary);
-  font-size: var(--mission-type-h2);
+  font-size: var(--type-h2);
 }
 
 .metricValue[data-state='up'] {
@@ -71,12 +71,12 @@
 .feedbackLine {
   margin: 0;
   color: var(--text-secondary);
-  font-size: var(--mission-type-body);
+  font-size: var(--type-body);
 }
 
 .recommendationTitle {
   margin: 0;
   color: var(--text-primary);
-  font-size: var(--mission-type-body);
+  font-size: var(--type-body);
   font-weight: 700;
 }

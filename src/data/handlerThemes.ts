@@ -115,22 +115,15 @@ export const applyHandlerPaletteToRoot = (handlerId: string): void => {
     const paletteToApply = getHandlerPalette(handlerId);
     const root = document.documentElement;
 
-    root.style.setProperty('--handler-accent', paletteToApply.accent);
-    root.style.setProperty('--handler-accent-strong', paletteToApply.accentStrong);
-    root.style.setProperty('--handler-accent-soft', paletteToApply.accentSoft);
-    root.style.setProperty('--handler-glow', paletteToApply.glow);
+    root.style.setProperty('--accent', paletteToApply.accent);
+    root.style.setProperty('--accent-strong', paletteToApply.accentStrong);
+    root.style.setProperty('--accent-soft', paletteToApply.accentSoft);
+    root.style.setProperty('--accent-glow', paletteToApply.glow);
     root.style.setProperty('--surface-base', paletteToApply.background);
     root.style.setProperty('--surface-muted', paletteToApply.surface);
     root.style.setProperty('--surface-elevated', paletteToApply.surfaceRaised);
     root.style.setProperty('--surface-card', paletteToApply.surfaceCard);
     root.style.setProperty('--text-primary', paletteToApply.text);
     root.style.setProperty('--text-muted', paletteToApply.textMuted);
-    root.style.setProperty('--handler-border', paletteToApply.border);
-
-    // Maintain legacy variables for existing CSS
-    root.style.setProperty('--primary-bg-color', paletteToApply.background);
-    root.style.setProperty('--secondary-bg-color', paletteToApply.surfaceRaised);
-    root.style.setProperty('--primary-text-color', paletteToApply.text);
-    root.style.setProperty('--secondary-text-color', paletteToApply.glow);
-    root.style.setProperty('--border-color', paletteToApply.border);
+    root.style.setProperty('--accent-border', paletteToApply.border);
 };

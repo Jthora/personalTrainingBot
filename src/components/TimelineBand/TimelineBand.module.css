@@ -7,7 +7,7 @@
 
 .title {
   margin: 0;
-  font-size: var(--mission-type-h3);
+  font-size: var(--type-h3);
 }
 
 .list {
@@ -40,18 +40,18 @@
 
 .itemTitle {
   margin: 0;
-  font-size: var(--mission-type-body);
+  font-size: var(--type-body);
 }
 
 .itemMeta {
   margin: 0;
   color: var(--text-secondary);
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
 }
 
 .jump {
   color: var(--text-primary);
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
   font-weight: 700;
   text-decoration: none;
   border: 1px solid rgba(255, 255, 255, 0.16);
@@ -75,5 +75,5 @@
 .empty {
   margin: 0;
   color: var(--text-secondary);
-  font-size: var(--mission-type-caption);
+  font-size: var(--type-caption);
 }

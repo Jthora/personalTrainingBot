@@ -51,7 +51,7 @@
 
 .revealBtn,
 .hintBtn {
-  background: var(--accent, #4a6cf7);
+  background: var(--accent, #5A7FFF);
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -79,7 +79,7 @@
 .outcome {
   margin-top: 0.4rem;
   padding: 0.5rem;
-  border-left: 3px solid var(--accent, #4a6cf7);
+  border-left: 3px solid var(--accent, #5A7FFF);
   background: var(--surface-raised, #262640);
   border-radius: 0 6px 6px 0;
   font-size: 0.85rem;

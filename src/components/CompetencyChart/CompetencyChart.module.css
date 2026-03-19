@@ -52,7 +52,7 @@
 .barIcon {
   font-size: 14px;
   line-height: 1;
-  color: var(--handler-accent, #5a7fff);
+  color: var(--accent, #5a7fff);
 }
 
 .barMeta {
@@ -91,7 +91,7 @@
 
 .fill {
   height: 100%;
-  background: var(--handler-accent, #5a7fff);
+  background: var(--accent, #5a7fff);
   border-radius: 4px;
   transition: width 0.4s ease;
 }

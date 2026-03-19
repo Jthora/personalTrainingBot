@@ -97,7 +97,7 @@
 
 .xpFill {
   height: 100%;
-  background: linear-gradient(90deg, var(--handler-accent, #5a7fff), #a78bfa);
+  background: linear-gradient(90deg, var(--accent, #5a7fff), #a78bfa);
   border-radius: 5px;
   transition: width 0.4s ease;
 }

@@ -111,7 +111,7 @@ const Header: React.FC = () => {
                 {/* Inline nav + controls (desktop only) */}
                 <div className={styles.desktopOnly}>
                     {renderNav()}
-                    <a className={styles.settingsLink} href="/mission/debrief" aria-label="Open settings">⚙️</a>
+                    <button type="button" className={styles.settingsLink} onClick={() => navigateTo('/profile')} aria-label="Open settings">⚙️</button>
                 </div>
                 {/* Hamburger trigger (mobile only) */}
                 <button
@@ -127,7 +127,7 @@ const Header: React.FC = () => {
             <HeaderDrawer
                 open={drawerOpen}
                 onClose={() => setDrawerOpen(false)}
-                handlerColor="var(--handler-accent)"
+                handlerColor="var(--accent)"
                 summary={summary}
                 renderLogin={() => null}
                 activePath={location.pathname}

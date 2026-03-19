@@ -16,7 +16,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--handler-accent);
+  color: var(--accent);
 }
 
 .hint {

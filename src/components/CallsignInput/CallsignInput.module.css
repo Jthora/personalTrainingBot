@@ -35,8 +35,8 @@
 }
 
 .input:focus {
-  border-color: var(--handler-accent);
-  box-shadow: 0 0 0 2px var(--handler-accent-soft);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-soft);
 }
 
 .input::placeholder {

@@ -23,13 +23,6 @@
     --accent-glow: #8FAFFF;
     --accent-border: rgba(90, 127, 255, 0.35);
 
-    /* Legacy aliases — keeping for backward compat */
-    --handler-accent: var(--accent);
-    --handler-accent-strong: var(--accent-strong);
-    --handler-accent-soft: var(--accent-soft);
-    --handler-glow: var(--accent-glow);
-    --handler-border: var(--accent-border);
-
     /* ── Semantic colors ── */
     --color-success: #22c55e;
     --color-success-soft: rgba(34, 197, 94, 0.15);
@@ -50,9 +43,6 @@
     --surface-card: #172238;
     --surface-raised: #1E2D4A;
     --surface-overlay: #1a2744;
-
-    /* Legacy surface aliases */
-    --panel-bg: var(--surface-card);
 
     /* ── Borders ── */
     --border-subtle: rgba(227, 236, 255, 0.08);
@@ -75,13 +65,6 @@
     --type-h3: clamp(16px, 2.2vw, 18px);
     --type-body: clamp(13px, 1.6vw, 15px);
     --type-caption: clamp(11px, 1.3vw, 12px);
-
-    /* Legacy aliases */
-    --mission-type-h1: var(--type-h1);
-    --mission-type-h2: var(--type-h2);
-    --mission-type-h3: var(--type-h3);
-    --mission-type-body: var(--type-body);
-    --mission-type-caption: var(--type-caption);
 
     /* ── Spacing scale (4px base) ── */
     --space-xs: 4px;
@@ -140,14 +123,6 @@
     --mission-state-error-border: rgba(239, 68, 68, 0.3);
     --mission-state-ready-bg: var(--surface-card);
 
-    /* ── Legacy compat ── */
-    --primary-bg-color: var(--surface-base);
-    --secondary-bg-color: var(--surface-elevated);
-    --primary-text-color: var(--text-primary);
-    --secondary-text-color: var(--accent-glow);
-    --border-color: var(--accent-border);
-    --padding: 0px;
-    --border-radius: 5px;
 }
 
 /* ─── Base ───────────────────────────────────────────────────────────────── */

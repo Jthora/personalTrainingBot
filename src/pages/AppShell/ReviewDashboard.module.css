@@ -7,14 +7,14 @@
 
 .title {
   margin: 0;
-  font-size: var(--mission-type-h2, 1.4rem);
+  font-size: var(--type-h2, 1.4rem);
   color: var(--mission-trust-verified, var(--text-primary));
 }
 
 .subtitle {
   margin: 0;
   color: var(--text-secondary);
-  font-size: var(--mission-type-body, 0.9rem);
+  font-size: var(--type-body, 0.9rem);
 }
 
 .statsRow {
@@ -36,7 +36,7 @@
 .statValue {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--handler-accent, #5a7fff);
+  color: var(--accent, #5a7fff);
   line-height: 1;
 }
 
@@ -49,7 +49,7 @@
 }
 
 .startButton {
-  background: var(--handler-accent, #5a7fff);
+  background: var(--accent, #5a7fff);
   color: #0a0f1a;
   border: none;
   border-radius: 8px;
@@ -126,7 +126,7 @@
 .emptyText {
   margin: 0;
   color: var(--text-secondary);
-  font-size: var(--mission-type-body, 0.9rem);
+  font-size: var(--type-body, 0.9rem);
   max-width: 360px;
 }
 
@@ -173,7 +173,7 @@
   width: 100%;
   max-width: 32px;
   border-radius: 4px 4px 0 0;
-  background: var(--handler-accent, #5a7fff);
+  background: var(--accent, #5a7fff);
   transition: height 0.3s ease;
   min-height: 0;
 }

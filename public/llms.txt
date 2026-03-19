@@ -8,7 +8,7 @@ This is not a fitness app with military theming. It is institutional training in
 
 ## Quick Facts
 
-- URL: https://personaltrainingbot.archangel.agency
+- URL: https://academy.starcom.app
 - Creator: Jono Tho'ra (https://jono.archangel.agency)
 - Source: https://github.com/Jthora/personalTrainingBot
 - License: MIT
@@ -83,7 +83,7 @@ Starcom Academy is one node in a distributed organizational infrastructure:
 
 | Application | URL | Role |
 |---|---|---|
-| Starcom Academy | https://personaltrainingbot.archangel.agency | Academy — trains cadets, issues sovereign credentials |
+| Starcom Academy | https://academy.starcom.app | Academy — trains cadets, issues sovereign credentials |
 | Starcom | https://starcom.app | Cyber Command — 3D global cyber command interface |
 | Navcom | https://navcom.app | Secure Communications — decentralized comms with post-quantum crypto |
 | Tactical Intel Dashboard | https://tacticalinteldashboard.archangel.agency | Intelligence — actionable OSINT for operative decision-making |

@@ -6,7 +6,7 @@
 
 **Academy and Commissioning Authority for the Earth Alliance**
 
-[![Live App](https://img.shields.io/badge/Live-Starcom%20Academy-5A7FFF?style=for-the-badge)](https://personaltrainingbot.archangel.agency)
+[![Live App](https://img.shields.io/badge/Live-Starcom%20Academy-5A7FFF?style=for-the-badge)](https://academy.starcom.app)
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org)
 [![PWA](https://img.shields.io/badge/PWA-Offline%20First-5A0FC8?style=flat-square&logo=pwa)](https://web.dev/progressive-web-apps/)
@@ -45,7 +45,7 @@ The Academy is one node in a distributed organizational infrastructure. These ap
 
 <table>
 <tr>
-<td width="160" align="center"><strong>Starcom Academy</strong><br/><a href="https://personaltrainingbot.archangel.agency">personaltrainingbot.archangel.agency</a></td>
+<td width="160" align="center"><strong>Starcom Academy</strong><br/><a href="https://academy.starcom.app">academy.starcom.app</a></td>
 <td><strong>Academy</strong> — Trains cadets across all domains and issues sovereign cadet credentials. The front door of the Earth Alliance. <em>You are here.</em></td>
 </tr>
 <tr>

@@ -40,7 +40,7 @@ export const ECOSYSTEM_APPS: EcosystemApp[] = [
     id: 'ptb',
     name: 'Starcom Academy',
     shortName: 'Academy',
-    url: 'https://personaltrainingbot.archangel.agency',
+    url: 'https://academy.starcom.app',
     icon: '⚔️',
     description: 'Drill execution & readiness',
     current: true,

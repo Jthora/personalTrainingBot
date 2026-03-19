@@ -4,7 +4,7 @@
 
 This guide covers deploying Starcom Academy to production. The application is a static PWA — after building, it produces a `dist/` directory that can be served from any static hosting platform.
 
-**Production URL:** [personaltrainingbot.archangel.agency](https://personaltrainingbot.archangel.agency)
+**Production URL:** [academy.starcom.app](https://academy.starcom.app)
 
 ## Prerequisites
 
@@ -75,13 +75,13 @@ The `public/_headers` file ships cache policies:
 Verify headers after deploy:
 ```bash
 # Manifest should be short-lived
-curl -I https://personaltrainingbot.archangel.agency/training_modules_manifest.json | grep -i cache-control
+curl -I https://academy.starcom.app/training_modules_manifest.json | grep -i cache-control
 
 # Shards should be cached but revalidated daily
-curl -I https://personaltrainingbot.archangel.agency/training_modules_shards/fitness.json | grep -i cache-control
+curl -I https://academy.starcom.app/training_modules_shards/fitness.json | grep -i cache-control
 
 # Hashed assets should be immutable
-curl -I https://personaltrainingbot.archangel.agency/assets/index-\*.js | grep -i cache-control
+curl -I https://academy.starcom.app/assets/index-\*.js | grep -i cache-control
 ```
 
 ### Service Worker Verification
@@ -110,7 +110,7 @@ npm run check:offline-indicator -- --base=http://localhost:4173
 npm run smoke:headless
 
 # Full operative scenario simulation
-BASE_URL=https://personaltrainingbot.archangel.agency npm run test:psi-scenario
+BASE_URL=https://academy.starcom.app npm run test:psi-scenario
 ```
 
 ### Mission Route Verification

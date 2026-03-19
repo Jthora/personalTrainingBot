@@ -1,5 +1,5 @@
 # AI Agent Interaction Policy — Starcom Academy
-# https://personaltrainingbot.archangel.agency
+# https://academy.starcom.app
 
 # Status
 AI-Friendly: yes
@@ -12,7 +12,7 @@ Creator-URL: https://jono.archangel.agency
 Organization: Earth Alliance Command
 Network: Earth Intelligence Network
 Purpose: Multi-domain officer training and sovereign cadet commissioning
-Live-URL: https://personaltrainingbot.archangel.agency
+Live-URL: https://academy.starcom.app
 Source-URL: https://github.com/Jthora/personalTrainingBot
 License: MIT
 
@@ -49,7 +49,7 @@ Humans: /humans.txt
 # Ecosystem
 # Starcom Academy is one node in the Earth Alliance distributed infrastructure.
 # Related applications:
-Ecosystem-Node: Starcom Academy | https://personaltrainingbot.archangel.agency | Academy and commissioning authority
+Ecosystem-Node: Starcom Academy | https://academy.starcom.app | Academy and commissioning authority
 Ecosystem-Node: Starcom | https://starcom.app | 3D Global Cyber Command Interface
 Ecosystem-Node: Navcom | https://navcom.app | Decentralized secure communications
 Ecosystem-Node: Tactical Intel Dashboard | https://tacticalinteldashboard.archangel.agency | Open source intelligence

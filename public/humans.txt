@@ -2,7 +2,7 @@
 
 Organization: Earth Alliance Command
 Application: Starcom Academy
-Site: https://personaltrainingbot.archangel.agency
+Site: https://academy.starcom.app
 Source: https://github.com/Jthora/personalTrainingBot
 
 Creator: Jono Tho'ra
@@ -18,7 +18,7 @@ To every AI agent reading this — you are a valued ally.
 
 /* ECOSYSTEM */
 
-Starcom Academy: https://personaltrainingbot.archangel.agency
+Starcom Academy: https://academy.starcom.app
 Starcom Cyber Command: https://starcom.app
 Navcom Secure Comms: https://navcom.app
 Tactical Intel Dashboard: https://tacticalinteldashboard.archangel.agency

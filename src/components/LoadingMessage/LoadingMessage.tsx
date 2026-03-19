@@ -17,21 +17,21 @@ const LoadingMessage: React.FC<LoadingMessageProps> = ({ progress }) => {
   }, []);
 
   return (
-    <div className={styles['loading-container']}>
-      <h1 className={styles['title']}>Starcom Academy</h1>
+    <div className={styles.loadingContainer}>
+      <h1 className={styles.title}>Starcom Academy</h1>
       <div className={styles.spinner}></div>
-      <div className={styles['loading-text-container']}>
-        <div className={styles['loading-text']}>App Loading<span className={styles['loading-dots']}>{dots}</span></div>
+      <div className={styles.loadingTextContainer}>
+        <div className={styles.loadingText}>App Loading<span className={styles.loadingDots}>{dots}</span></div>
       </div>
-      <div className={styles['line-space']}></div> {/* Add this line */}
-      <div className={styles['loading-bar-top']}>
+      <div className={styles.lineSpace}></div> {/* Add this line */}
+      <div className={styles.loadingBarTop}>
         <div
-          className={styles['loading-bar-progress']}
+          className={styles.loadingBarProgress}
           style={{ width: `${progress}%` }}
         ></div>
       </div>
-      <div className={styles['loading-bar-bottom']}>
-        <div className={styles['loading-bar-animation']}></div>
+      <div className={styles.loadingBarBottom}>
+        <div className={styles.loadingBarAnimation}></div>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-.loading-container {
+.loadingContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,28 +30,28 @@
   }
 }
 
-.loading-text-container {
+.loadingTextContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
 }
 
-.loading-text {
+.loadingText {
   font-size: clamp(1rem, 4vw, 1.5em);
   overflow-wrap: break-word;
 }
 
-.loading-dots {
+.loadingDots {
   font-size: 1.5em;
   margin-left: 5px;
 }
 
-.line-space {
+.lineSpace {
   height: 20px;
 }
 
-.loading-bar-top {
+.loadingBarTop {
   margin-top: 20px;
   width: 80%;
   height: 10px;
@@ -60,7 +60,7 @@
   overflow: hidden;
 }
 
-.loading-bar-bottom {
+.loadingBarBottom {
   width: 80%;
   height: 2px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -68,20 +68,20 @@
   overflow: hidden;
 }
 
-.loading-bar-animation {
+.loadingBarAnimation {
   height: 100%;
   width: 100%;
   background: linear-gradient(90deg, transparent, var(--text-primary), transparent);
   animation: loading 2s infinite;
 }
 
-.loading-bar-progress {
+.loadingBarProgress {
   height: 100%;
   background-color: var(--text-primary);
   transition: width 0.5s ease;
 }
 
-.warning-box {
+.warningBox {
   margin-top: 18px;
   padding: 12px;
   width: 80%;
@@ -92,12 +92,12 @@
   text-align: left;
 }
 
-.warning-title {
+.warningTitle {
   font-weight: 700;
   margin-bottom: 8px;
 }
 
-.warning-list {
+.warningList {
   margin: 0;
   padding-left: 18px;
   font-size: 0.95em;
@@ -121,7 +121,7 @@
     animation: none !important;
     transition: none !important;
   }
-  .loading-bar-animation {
+  .loadingBarAnimation {
     animation: none !important;
     transition: none !important;
   }

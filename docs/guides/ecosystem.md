@@ -9,7 +9,7 @@ The ecosystem is not finite — it will expand as the Earth Alliance grows. This
 ## Applications
 
 ### Starcom Academy
-- **URL:** [personaltrainingbot.archangel.agency](https://personaltrainingbot.archangel.agency)
+- **URL:** [academy.starcom.app](https://academy.starcom.app)
 - **Role:** Academy and commissioning authority
 - **Function:** Takes civilians through cadet formation — division selection, instructor assignment, multi-domain training curriculum, drill execution, progression tracking. Issues sovereign cadet credentials (SEA keypairs).
 - **Ecosystem Position:** Front door. This is where every cadet's journey begins. Starcom Academy is the root of trust for cadet identity.

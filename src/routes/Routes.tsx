@@ -7,7 +7,6 @@ import SurfaceLoader from '../components/SurfaceLoader/SurfaceLoader';
 import {
   resolveLegacyAliasPath,
 } from './missionCutover';
-import { isFeatureEnabled } from '../config/featureFlags';
 
 /* ── Lazy-loaded v1 mission shell ── */
 const MissionShell = lazy(() => import('../pages/MissionFlow/MissionShell'));
@@ -42,7 +41,6 @@ const Surface: React.FC<{ children: React.ReactNode }> = ({ children }) => (
 );
 
 const AppRoutes: React.FC = () => {
-  const shellV2 = isFeatureEnabled('shellV2');
   const defaultRoot = '/train';
 
   return (
@@ -50,23 +48,21 @@ const AppRoutes: React.FC = () => {
       <Route path="/" element={<Navigate to={defaultRoot} replace />} />
 
       {/* ── v2 shell routes ── */}
-      {shellV2 && (
-        <Route path="/" element={<Suspense fallback={<SurfaceLoader />}><AppShell /></Suspense>}>
-          <Route path="train" element={<Surface><TrainingSurface /></Surface>} />
-          <Route path="train/quiz" element={<Surface><QuizSurface /></Surface>} />
-          <Route path="review" element={<Surface><ReviewDashboard /></Surface>} />
-          <Route path="progress" element={<Surface><StatsSurface /></Surface>} />
-          <Route path="profile" element={<Surface><ProfileSurface /></Surface>} />
-        </Route>
-      )}
+      <Route path="/" element={<Suspense fallback={<SurfaceLoader />}><AppShell /></Suspense>}>
+        <Route path="train" element={<Surface><TrainingSurface /></Surface>} />
+        <Route path="train/quiz" element={<Surface><QuizSurface /></Surface>} />
+        <Route path="review" element={<Surface><ReviewDashboard /></Surface>} />
+        <Route path="progress" element={<Surface><StatsSurface /></Surface>} />
+        <Route path="profile" element={<Surface><ProfileSurface /></Surface>} />
+      </Route>
 
-      {/* ── Legacy /home redirects ── */}
-      <Route path="/home" element={<Navigate to={shellV2 ? '/train' : '/mission/brief'} replace />} />
-      <Route path="/home/plan" element={<Navigate to={shellV2 ? '/train' : '/mission/brief'} replace />} />
-      <Route path="/home/cards" element={<Navigate to={shellV2 ? '/train' : '/mission/triage'} replace />} />
-      <Route path="/home/progress" element={<Navigate to={shellV2 ? '/progress' : '/mission/case'} replace />} />
-      <Route path="/home/handler" element={<Navigate to={shellV2 ? '/profile' : '/mission/signal'} replace />} />
-      <Route path="/home/settings" element={<Navigate to={shellV2 ? '/profile' : '/mission/debrief'} replace />} />
+      {/* ── Legacy /home redirects (remove after 2025-09-01) ── */}
+      <Route path="/home" element={<Navigate to="/train" replace />} />
+      <Route path="/home/plan" element={<Navigate to="/train" replace />} />
+      <Route path="/home/cards" element={<Navigate to="/train" replace />} />
+      <Route path="/home/progress" element={<Navigate to="/progress" replace />} />
+      <Route path="/home/handler" element={<Navigate to="/profile" replace />} />
+      <Route path="/home/settings" element={<Navigate to="/profile" replace />} />
 
       {/* ── v1 mission shell (always mounted — routes always accessible) ── */}
       <Route path="/mission" element={<Suspense fallback={<SurfaceLoader />}><MissionShell /></Suspense>}>

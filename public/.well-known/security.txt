@@ -2,7 +2,7 @@ Contact: https://github.com/Jthora/personalTrainingBot/security
 Contact: https://jono.archangel.agency
 Expires: 2027-03-15T00:00:00.000Z
 Preferred-Languages: en
-Canonical: https://personaltrainingbot.archangel.agency/.well-known/security.txt
+Canonical: https://academy.starcom.app/.well-known/security.txt
 Policy: https://github.com/Jthora/personalTrainingBot/blob/main/LICENSE
 
 # Starcom Academy — Earth Alliance Officer Training Console

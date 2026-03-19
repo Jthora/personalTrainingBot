@@ -11,59 +11,59 @@
 <details><summary>Tasks P1-001 through P1-035</summary>
 
 ### index.html (10 tasks)
-- [ ] `P1-001` OG URL
-- [ ] `P1-002` OG image URL
-- [ ] `P1-003` Twitter image URL
-- [ ] `P1-004` Canonical URL
-- [ ] `P1-005` humans.txt link
-- [ ] `P1-006` JSON-LD Organization URL
-- [ ] `P1-007` JSON-LD Organization sameAs
-- [ ] `P1-008` JSON-LD WebApplication URL
-- [ ] `P1-009` WebApplication operatingSystem offers URL
-- [ ] `P1-010` JSON-LD Course provider URL
+- [x] `P1-001` OG URL
+- [x] `P1-002` OG image URL
+- [x] `P1-003` Twitter image URL
+- [x] `P1-004` Canonical URL
+- [x] `P1-005` humans.txt link
+- [x] `P1-006` JSON-LD Organization URL
+- [x] `P1-007` JSON-LD Organization sameAs
+- [x] `P1-008` JSON-LD WebApplication URL
+- [x] `P1-009` WebApplication operatingSystem offers URL
+- [x] `P1-010` JSON-LD Course provider URL
 
 ### manifest.webmanifest (3 tasks)
-- [ ] `P1-011` start_url
-- [ ] `P1-012` id
-- [ ] `P1-013` scope
+- [x] `P1-011` start_url — N/A (uses relative paths)
+- [x] `P1-012` id — N/A (uses relative paths)
+- [x] `P1-013` scope — N/A (uses relative paths)
 
 ### Service Worker (2 tasks)
-- [ ] `P1-014` Cache names referencing old domain
-- [ ] `P1-015` Offline fallback URLs
+- [x] `P1-014` Cache names referencing old domain — N/A (no domain refs)
+- [x] `P1-015` Offline fallback URLs — N/A (no domain refs)
 
 ### Source Code (8 tasks)
-- [ ] `P1-016` telemetryContracts.ts appUrl
-- [ ] `P1-017` CardDataLoader.ts share URLs
-- [ ] `P1-018` ShareCard.tsx share URLs
-- [ ] `P1-019` p2pService.ts relay URLs
-- [ ] `P1-020` p2pService.ts topic prefixes
-- [ ] `P1-021` SovereigntyPanel.tsx export URLs
-- [ ] `P1-022` All GitHub repo URL references
-- [ ] `P1-023` package.json homepage field
+- [x] `P1-016` telemetryContracts.ts appUrl — N/A (no domain refs)
+- [x] `P1-017` CardDataLoader.ts share URLs — N/A (no domain refs)
+- [x] `P1-018` ShareCard.tsx share URLs — N/A (no domain refs)
+- [x] `P1-019` p2pService.ts relay URLs — N/A (no domain refs)
+- [x] `P1-020` p2pService.ts topic prefixes — N/A (no domain refs)
+- [x] `P1-021` SovereigntyPanel.tsx export URLs — N/A (no domain refs)
+- [x] `P1-022` All GitHub repo URL references — deferred (conditional on repo rename)
+- [x] `P1-023` package.json homepage field — N/A (no domain refs)
 
 ### Config Files (6 tasks)
-- [ ] `P1-024` vercel.json headers/rewrites
-- [ ] `P1-025` _redirects file
-- [ ] `P1-026` _headers file
-- [ ] `P1-027` robots.txt (if exists)
-- [ ] `P1-028` sitemap.xml (if exists)
-- [ ] `P1-029` CNAME / DNS config docs
+- [x] `P1-024` vercel.json headers/rewrites — N/A (no domain refs)
+- [x] `P1-025` _redirects file — N/A (no domain refs)
+- [x] `P1-026` _headers file — N/A (no domain refs)
+- [x] `P1-027` robots.txt (if exists) — updated
+- [x] `P1-028` sitemap.xml (if exists) — N/A (no sitemap file)
+- [x] `P1-029` CNAME / DNS config docs — N/A (no CNAME file)
 
 ### Documentation (4 tasks)
-- [ ] `P1-030` README.md URLs
-- [ ] `P1-031` docs/ folder references
-- [ ] `P1-032` LICENSE file
-- [ ] `P1-033` CONTRIBUTING.md URLs
+- [x] `P1-030` README.md URLs
+- [x] `P1-031` docs/ folder references
+- [x] `P1-032` LICENSE file — N/A (no domain refs)
+- [x] `P1-033` CONTRIBUTING.md URLs — N/A (no domain refs)
 
 ### localStorage (2 tasks)
-- [ ] `P1-034` Audit `ptb:` prefixed keys — document migration path
-- [ ] `P1-035` Audit `mission:` prefixed keys — document as-is
+- [x] `P1-034` Audit `ptb:` prefixed keys — internal prefixes, no migration needed
+- [x] `P1-035` Audit `mission:` prefixed keys — internal prefixes, documented as-is
 
 ### Verification
-- [ ] `P1-V01` grep for old domain → 0 results
-- [ ] `P1-V02` Build succeeds
-- [ ] `P1-V03` All tests pass
-- [ ] `P1-V04` Lighthouse SEO 100
+- [x] `P1-V01` grep for old domain → 0 results (excluding docs/ui-deep-clean)
+- [x] `P1-V02` Build succeeds
+- [x] `P1-V03` All tests pass (1,395/1,395)
+- [ ] `P1-V04` Lighthouse SEO 100 — deferred to post-deployment
 
 </details>
 
@@ -358,22 +358,22 @@
 - [x] `P5-015` Delete --border-radius
 
 ### Dead Redirects (5)
-- [ ] `P5-016` Remove /profile-old redirect
-- [ ] `P5-017` Audit remaining redirects
-- [ ] `P5-018` Add removal date comments
-- [ ] `P5-019` Evaluate 404.html SPA fallback
-- [ ] `P5-020` Check _redirects/vercel.json
+- [x] `P5-016` Remove /profile-old redirect — N/A (no such redirect exists)
+- [x] `P5-017` Audit remaining redirects — simplified shellV2 ternaries in Routes.tsx
+- [x] `P5-018` Add removal date comments — added "remove after 2025-09-01" to /home/* redirects
+- [x] `P5-019` Evaluate 404.html SPA fallback — functional, no changes needed
+- [x] `P5-020` Check _redirects/vercel.json — clean, standard SPA config
 
 ### Dead CSS Classes (3)
-- [ ] `P5-021` Rename MissionFlow.module.css
-- [ ] `P5-022` Audit .assistantCard class
-- [ ] `P5-023` Audit .stepTools class
+- [x] `P5-021` Rename MissionFlow.module.css — deferred to Phase 4 (11 importers)
+- [x] `P5-022` Audit .assistantCard class — alive (used by MissionShell.tsx)
+- [x] `P5-023` Audit .stepTools class — alive (used by MissionShell.tsx)
 
 ### Verification
-- [ ] `P5-V01` Unit tests pass
+- [x] `P5-V01` Unit tests pass (1,395/1,395)
 - [ ] `P5-V02` Beta tests pass
-- [ ] `P5-V03` Build succeeds
-- [ ] `P5-V04` Dead code grep → 0
+- [x] `P5-V03` Build succeeds
+- [x] `P5-V04` Dead code grep → 0
 
 </details>
 
@@ -384,7 +384,7 @@
 <details><summary>Tasks P6-001 through P6-030</summary>
 
 ### Inline Style Consolidation (12)
-- [ ] `P6-001` ReviewDashboard inline colors
+- [x] `P6-001` ReviewDashboard inline colors — done via P2-077
 - [ ] `P6-002` NetworkStatusIndicator → CSS module
 - [ ] `P6-003` CacheIndicator → CSS module
 - [ ] `P6-004` QuizRunner disciplineStyle
@@ -412,12 +412,12 @@
 ### Bug Fixes (4)
 - [x] `P6-023` Header settings link → /profile
 - [x] `P6-024` Header <a> → <Link>
-- [ ] `P6-025` SovereigntyPanel font fix
-- [ ] `P6-026` ShareCard font fix
+- [x] `P6-025` SovereigntyPanel font fix — done via P2-091
+- [x] `P6-026` ShareCard font fix — done via P2-092
 
 ### CSS Naming (4)
-- [ ] `P6-027` LoadingMessage kebab → camel
-- [ ] `P6-028` Rename MissionFlow.module.css
+- [x] `P6-027` LoadingMessage kebab → camel
+- [ ] `P6-028` Rename MissionFlow.module.css — deferred to Phase 4
 - [ ] `P6-029` Audit kebab-case classes
 - [ ] `P6-030` Update contributing.md
 

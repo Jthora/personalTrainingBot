@@ -72,15 +72,15 @@ const ReviewDashboard: React.FC = () => {
           <h3 className={styles.moduleListTitle}>Card Health</h3>
           <div className={styles.statsRow}>
             <div className={styles.stat}>
-              <span className={styles.statValue} style={{ color: '#4ade80' }}>{overallStats.mature}</span>
+              <span className={styles.statValue} style={{ color: 'var(--color-success)' }}>{overallStats.mature}</span>
               <span className={styles.statLabel}>Mature</span>
             </div>
             <div className={styles.stat}>
-              <span className={styles.statValue} style={{ color: '#fbbf24' }}>{overallStats.learning}</span>
+              <span className={styles.statValue} style={{ color: 'var(--color-warning)' }}>{overallStats.learning}</span>
               <span className={styles.statLabel}>Learning</span>
             </div>
             <div className={styles.stat}>
-              <span className={styles.statValue} style={{ color: '#94a3b8' }}>{overallStats.newCards}</span>
+              <span className={styles.statValue} style={{ color: 'var(--text-muted)' }}>{overallStats.newCards}</span>
               <span className={styles.statLabel}>New</span>
             </div>
           </div>

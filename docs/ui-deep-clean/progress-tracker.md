@@ -144,49 +144,49 @@
 - [x] `P2-060` TodayLauncher: `#6c63ff` → `#5A7FFF`
 - [x] `P2-061` ExerciseRenderer: `#4a6cf7` → `#5A7FFF`
 - [x] `P2-062` ModuleBrowser: `#6c63ff` → `#5A7FFF`
-- [ ] `P2-063` DrillRunner: audit fallbacks
+- [x] `P2-063` DrillRunner: audit fallbacks
 - [x] `P2-064` All remaining `var(--accent, #...)` mismatches
 
 ### Hardcoded hex → tokens (13)
-- [ ] `P2-065` SovereigntyPanel (7 colors)
-- [ ] `P2-066` ChallengeBoard (5 colors)
-- [ ] `P2-067` ChallengePanel (4 colors)
-- [ ] `P2-068` BadgeStrip (4 colors)
-- [ ] `P2-069` CardSharePage (3 colors)
-- [ ] `P2-070` LoadingMessage (3 colors)
-- [ ] `P2-071` AppShell (3 colors)
-- [ ] `P2-072` WeeklySummary (2 colors)
-- [ ] `P2-073` StatsPanel (2 colors)
-- [ ] `P2-074` BadgeGallery (2 colors)
-- [ ] `P2-075` CompetencyChart (2 colors)
-- [ ] `P2-076` XPTicker (1 color)
-- [ ] `P2-077` ReviewDashboard.tsx inline colors
+- [x] `P2-065` SovereigntyPanel (7 colors)
+- [x] `P2-066` ChallengeBoard (5 colors)
+- [x] `P2-067` ChallengePanel (4 colors)
+- [x] `P2-068` BadgeStrip (4 colors)
+- [x] `P2-069` CardSharePage (3 colors)
+- [x] `P2-070` LoadingMessage (3 colors)
+- [x] `P2-071` AppShell (3 colors)
+- [x] `P2-072` WeeklySummary (2 colors)
+- [x] `P2-073` StatsPanel (2 colors)
+- [x] `P2-074` BadgeGallery (2 colors)
+- [x] `P2-075` CompetencyChart (2 colors)
+- [x] `P2-076` XPTicker (1 color)
+- [x] `P2-077` ReviewDashboard.tsx inline colors
 
 ### Z-index tokenization (13)
-- [ ] `P2-078` Add z-index tokens to theme.css
-- [ ] `P2-079` Header.module.css
-- [ ] `P2-080` MissionActionPalette.module.css
-- [ ] `P2-081` RecapToast.module.css
-- [ ] `P2-082` LevelUpModal.module.css
-- [ ] `P2-083` ProfileEditor.module.css
-- [ ] `P2-084` RecapModal.module.css
-- [ ] `P2-085` UpdateNotification.module.css
-- [ ] `P2-086` InstallBanner.module.css
-- [ ] `P2-087` BadgeToast.module.css
-- [ ] `P2-088` AppShell.module.css
-- [ ] `P2-089` XPTicker.module.css
-- [ ] `P2-090` SovereigntyPanel.module.css
+- [x] `P2-078` Add z-index tokens to theme.css
+- [x] `P2-079` Header.module.css
+- [x] `P2-080` MissionActionPalette.module.css
+- [x] `P2-081` RecapToast.module.css
+- [x] `P2-082` LevelUpModal.module.css
+- [x] `P2-083` ProfileEditor.module.css
+- [x] `P2-084` RecapModal.module.css
+- [x] `P2-085` UpdateNotification.module.css
+- [x] `P2-086` InstallBanner.module.css
+- [x] `P2-087` BadgeToast.module.css
+- [x] `P2-088` AppShell.module.css
+- [x] `P2-089` XPTicker.module.css
+- [x] `P2-090` SovereigntyPanel.module.css
 
 ### Font & misc (3)
-- [ ] `P2-091` SovereigntyPanel: `'Courier New'` → `var(--font-mono)`
-- [ ] `P2-092` ShareCard: remove `'Roboto Mono'`
-- [ ] `P2-093` Breakpoint documentation in theme.css
+- [x] `P2-091` SovereigntyPanel: `'Courier New'` → `var(--font-mono)`
+- [x] `P2-092` ShareCard: remove `'Roboto Mono'`
+- [x] `P2-093` Breakpoint documentation in theme.css
 
 ### Verification
 - [x] `P2-V01` Legacy alias grep → 0 results
 - [x] `P2-V02` Unit tests pass
-- [ ] `P2-V03` Beta tests pass
-- [ ] `P2-V04` Visual comparison — no rendering changes
+- [x] `P2-V03` Beta tests pass
+- [x] `P2-V04` Visual comparison — no rendering changes
 
 </details>
 
@@ -342,11 +342,11 @@
 - [x] `P5-003` Delete react.svg
 
 ### Dead Exports (5)
-- [ ] `P5-004` Remove isMissionRouteEnabled
-- [ ] `P5-005` Remove toHomeFallbackPath
-- [ ] `P5-006` Remove missionHomeFallbacks
-- [ ] `P5-007` Remove getDefaultRootPath
-- [ ] `P5-008` Update/delete test files
+- [x] `P5-004` Remove isMissionRouteEnabled
+- [x] `P5-005` Remove toHomeFallbackPath
+- [x] `P5-006` Remove missionHomeFallbacks
+- [x] `P5-007` Remove getDefaultRootPath
+- [x] `P5-008` Update/delete test files
 
 ### Dead CSS (7)
 - [x] `P5-009` Delete --primary-bg-color

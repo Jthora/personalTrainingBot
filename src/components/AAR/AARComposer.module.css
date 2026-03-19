@@ -43,7 +43,7 @@
 
 .primary {
   background: var(--accent);
-  color: var(--surface-base, #0a0f1a);
+  color: var(--surface-base);
   border: none;
   padding: 8px 12px;
   border-radius: 10px;

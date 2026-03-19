@@ -22,12 +22,12 @@
 }
 
 .gain {
-  color: #22c55e;
+  color: var(--color-success);
   font-weight: 600;
 }
 
 .loss {
-  color: #f97316;
+  color: var(--color-orange);
   font-weight: 600;
 }
 

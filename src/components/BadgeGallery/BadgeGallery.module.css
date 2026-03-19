@@ -103,9 +103,9 @@
 }
 
 .badgeCard[data-rarity='rare'] .rarity {
-  color: #60a5fa;
+  color: var(--accent);
 }
 
 .badgeCard[data-rarity='epic'] .rarity {
-  color: #c084fc;
+  color: var(--color-purple);
 }

@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: var(--z-fixed);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,7 +25,7 @@
     background: var(--surface-card);
     color: var(--text-primary);
     padding: 10px 14px;
-    z-index: 1500;
+    z-index: var(--z-drawer);
     border: 1px solid var(--accent);
     border-radius: 6px;
 }
@@ -399,7 +399,7 @@
 .drawerOverlay {
     position: fixed;
     inset: 0;
-    z-index: 1200;
+    z-index: var(--z-overlay);
     display: flex;
     justify-content: flex-end;
     align-items: stretch;

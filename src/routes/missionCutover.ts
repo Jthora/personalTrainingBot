@@ -32,15 +32,6 @@ export const legacyAliasPaths = [
 
 export type LegacyAliasPath = (typeof legacyAliasPaths)[number];
 
-const missionHomeFallbacks: Partial<Record<MissionRoutePath, string>> = {
-  '/mission/brief': '/home/plan',
-  '/mission/triage': '/home/cards',
-  '/mission/case': '/home/progress',
-  '/mission/signal': '/home/handler',
-  '/mission/checklist': '/home/cards',
-  '/mission/debrief': '/home/settings',
-};
-
 const legacyAliasMap: Record<LegacyAliasPath, string> = {
   '/schedules': '/mission/brief',
   '/drills': '/mission/triage',
@@ -49,15 +40,4 @@ const legacyAliasMap: Record<LegacyAliasPath, string> = {
   '/settings': '/mission/debrief',
 };
 
-export const getDefaultRootPath = (
-): string => '/mission/brief';
-
 export const resolveLegacyAliasPath = (route: LegacyAliasPath): string => legacyAliasMap[route];
-
-export const toHomeFallbackPath = (route: MissionRoutePath): string | undefined => missionHomeFallbacks[route];
-
-export const isMissionRouteEnabled = (
-  _route: MissionRoutePath,
-): boolean => {
-  return true;
-};

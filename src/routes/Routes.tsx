@@ -5,7 +5,6 @@ import MissionEntryRedirect from '../pages/MissionFlow/MissionEntryRedirect';
 import ErrorBoundary from '../components/ErrorBoundary/ErrorBoundary';
 import SurfaceLoader from '../components/SurfaceLoader/SurfaceLoader';
 import {
-  getDefaultRootPath,
   resolveLegacyAliasPath,
 } from './missionCutover';
 import { isFeatureEnabled } from '../config/featureFlags';
@@ -44,7 +43,7 @@ const Surface: React.FC<{ children: React.ReactNode }> = ({ children }) => (
 
 const AppRoutes: React.FC = () => {
   const shellV2 = isFeatureEnabled('shellV2');
-  const defaultRoot = shellV2 ? '/train' : getDefaultRootPath();
+  const defaultRoot = '/train';
 
   return (
     <Routes>

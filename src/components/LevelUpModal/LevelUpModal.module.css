@@ -3,7 +3,7 @@
 .overlay {
   position: fixed;
   inset: 0;
-  z-index: 1100;
+  z-index: var(--z-modal);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,7 +63,7 @@
   border-radius: 10px;
   border: none;
   background: var(--accent);
-  color: #0a0f1a;
+  color: var(--surface-muted);
   cursor: pointer;
   transition: background 0.15s;
 }

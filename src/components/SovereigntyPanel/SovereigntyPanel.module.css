@@ -81,7 +81,7 @@
 .metaFingerprint {
   font-size: 11px;
   font-weight: 600;
-  font-family: 'Courier New', monospace;
+  font-family: var(--font-mono);
   color: var(--accent-glow);
   letter-spacing: 0.03em;
   word-break: break-all;
@@ -183,14 +183,14 @@
 .removeBtn:active {
   background: rgba(239, 68, 68, 0.12);
   border-color: rgba(239, 68, 68, 0.5);
-  color: #fca5a5;
+  color: var(--color-danger-text);
 }
 
 @media (hover: hover) {
   .removeBtn:hover {
     background: rgba(239, 68, 68, 0.12);
     border-color: rgba(239, 68, 68, 0.5);
-    color: #fca5a5;
+    color: var(--color-danger-text);
   }
 }
 
@@ -203,7 +203,7 @@
 .errorText {
   margin: 0;
   font-size: 12px;
-  color: #fca5a5;
+  color: var(--color-danger-text);
 }
 
 /* ── Data custody (sync status) ─────────────────────────────────────────────── */
@@ -274,16 +274,16 @@
 }
 
 .syncPill[data-status='syncing'] .syncPillStatus {
-  color: #93c5fd;
+  color: var(--color-info);
   animation: pulse 1.4s ease-in-out infinite;
 }
 
 .syncPill[data-status='synced'] .syncPillStatus {
-  color: #6ee7b7;
+  color: var(--color-success-text);
 }
 
 .syncPill[data-status='error'] .syncPillStatus {
-  color: #fca5a5;
+  color: var(--color-danger-text);
 }
 
 .syncPillError {
@@ -304,7 +304,7 @@
 .overlay {
   position: fixed;
   inset: 0;
-  z-index: 900;
+  z-index: var(--z-sticky);
   background: var(--surface-base);
   overflow-y: auto;
   overscroll-behavior: contain;
@@ -350,7 +350,7 @@
   border-radius: 8px;
   border: 1px solid rgba(250, 204, 21, 0.3);
   background: rgba(250, 204, 21, 0.08);
-  color: #fde68a;
+  color: var(--color-warning-text);
 }
 
 .fieldLabel {
@@ -382,7 +382,7 @@
 
 .textarea {
   font-size: 12px;
-  font-family: 'Courier New', monospace;
+  font-family: var(--font-mono);
   padding: 10px 12px;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.12);

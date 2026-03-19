@@ -75,7 +75,7 @@
 
 .progressFillComplete {
   composes: progressFill;
-  background: #22c55e;
+  background: var(--color-success);
 }
 
 .meta {
@@ -87,8 +87,8 @@
 }
 
 .claimButton {
-  background: #22c55e;
-  color: #0a0f1a;
+  background: var(--color-success);
+  color: var(--surface-muted);
   border: none;
   border-radius: 8px;
   padding: 10px 16px;
@@ -109,7 +109,7 @@
 }
 
 .claimed {
-  color: #22c55e;
+  color: var(--color-success);
   font-weight: 700;
   font-size: 12px;
 }

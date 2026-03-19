@@ -63,12 +63,12 @@
 }
 
 .trendUp {
-  color: #4caf50;
+  color: var(--color-success);
   font-weight: 700;
 }
 
 .trendDown {
-  color: #f44336;
+  color: var(--color-danger);
   font-weight: 700;
 }
 

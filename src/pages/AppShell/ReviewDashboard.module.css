@@ -50,7 +50,7 @@
 
 .startButton {
   background: var(--accent, #5a7fff);
-  color: #0a0f1a;
+  color: var(--surface-muted);
   border: none;
   border-radius: 8px;
   padding: 12px 20px;

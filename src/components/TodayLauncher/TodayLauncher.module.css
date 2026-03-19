@@ -12,7 +12,7 @@
 
 .launchBtn {
   background: var(--color-action, #10b981);
-  color: var(--surface-base, #0a0f1a);
+  color: var(--surface-base);
   border: none;
   border-radius: var(--radius-lg, 14px);
   padding: 14px 32px;

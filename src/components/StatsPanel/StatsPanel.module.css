@@ -38,6 +38,6 @@
 }
 
 .warn {
-	border-color: #f97316;
-	color: #f97316;
+	border-color: var(--color-orange);
+	color: var(--color-orange);
 }

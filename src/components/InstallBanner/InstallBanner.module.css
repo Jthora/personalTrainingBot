@@ -3,7 +3,7 @@
   bottom: calc(56px + env(safe-area-inset-bottom, 0px) + 12px);
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1050;
+  z-index: var(--z-toast);
   display: flex;
   align-items: center;
   gap: 0.75rem;

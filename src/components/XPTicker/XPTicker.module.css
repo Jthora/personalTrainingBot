@@ -4,7 +4,7 @@
   position: fixed;
   top: 70px;
   right: 16px;
-  z-index: 930;
+  z-index: var(--z-sticky);
   display: flex;
   align-items: center;
   gap: 6px;
@@ -15,7 +15,7 @@
   backdrop-filter: blur(8px);
   font-weight: 700;
   font-size: 14px;
-  color: #fde68a;
+  color: var(--color-warning-text);
   animation: pop 0.4s ease-out;
   pointer-events: none;
 }

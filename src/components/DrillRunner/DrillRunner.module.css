@@ -88,7 +88,7 @@
 
 .button {
   background: var(--drill-accent, var(--accent));
-  color: var(--surface-base, #0a0f1a);
+  color: var(--surface-base);
   border: none;
   border-radius: var(--radius-md, 10px);
   padding: 10px 14px;
@@ -420,7 +420,7 @@
 
 .ratingBtnActive {
   background: var(--drill-accent, var(--accent));
-  color: var(--surface-base, #0a0f1a);
+  color: var(--surface-base);
   border-color: var(--drill-accent, var(--accent));
 }
 

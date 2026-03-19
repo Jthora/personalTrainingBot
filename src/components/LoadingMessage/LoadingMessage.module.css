@@ -71,13 +71,13 @@
 .loading-bar-animation {
   height: 100%;
   width: 100%;
-  background: linear-gradient(90deg, transparent, #ffffff, transparent);
+  background: linear-gradient(90deg, transparent, var(--text-primary), transparent);
   animation: loading 2s infinite;
 }
 
 .loading-bar-progress {
   height: 100%;
-  background-color: #ffffff;
+  background-color: var(--text-primary);
   transition: width 0.5s ease;
 }
 
@@ -88,7 +88,7 @@
   background: rgba(255, 184, 76, 0.12);
   border: 1px solid rgba(255, 184, 76, 0.6);
   border-radius: 8px;
-  color: #ffe1b3;
+  color: var(--color-warning-text);
   text-align: left;
 }
 

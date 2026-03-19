@@ -253,7 +253,7 @@
 
 .completeButton {
   background: var(--accent);
-  color: #0a0f1a;
+  color: var(--surface-muted);
   border: none;
   border-radius: 8px;
   padding: 10px 16px;

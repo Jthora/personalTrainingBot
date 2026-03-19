@@ -54,11 +54,11 @@
   line-height: 1;
 }
 
-/* Picker overlay – must sit above Header (z-index: 1000) */
+/* Picker overlay – must sit above Header (var(--z-fixed)) */
 .overlay {
   position: fixed;
   inset: 0;
-  z-index: 1100;
+  z-index: var(--z-modal);
   background: var(--surface-base);
   overflow-y: auto;
   overscroll-behavior: contain;

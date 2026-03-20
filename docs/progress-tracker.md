@@ -295,10 +295,9 @@ All commits through `9a7dae2` are synced with `origin/main`.
 | Lighthouse (local) | `CHROME_PATH=... npx lighthouse` | SEO 100 / A11y 98 / Best Practices 96 |
 | Unit tests | `npx vitest run` | 1,454/1,454 passing |
 | Beta tests | `npm run test:beta` | 21/21 passing |
-| Build | `npx vite build` | Clean (5.54s) |
+| Build | `npm run build` | Clean (5.01s) |
+| Typecheck | `npm run typecheck` | 36 errors (tracked — unused locals + type mismatches) |
 | Lint | `npx eslint src/` | — (run before committing) |
-
-> **Note**: `npm run build` fails due to missing `src/utils/generateCombinedTrainingData.ts`. Use `npx vite build` directly.
 
 ---
 

@@ -417,17 +417,17 @@
 
 ### CSS Naming (4)
 - [x] `P6-027` LoadingMessage kebab → camel
-- [ ] `P6-028` Rename MissionFlow.module.css — deferred to Phase 4
+- [x] `P6-028` Rename MissionFlow.module.css → MissionSurfaces.module.css — 13 importers updated
 - [x] `P6-029` Audit kebab-case classes — zero remaining after P6-027
 - [x] `P6-030` Update contributing.md — added CSS Module Conventions section
 
 ### Verification
-- [ ] `P6-V01` Visual regression screenshots
-- [ ] `P6-V02` 404 route works
-- [ ] `P6-V03` Skeletons visible on slow network
-- [ ] `P6-V04` Settings link works
-- [ ] `P6-V05` Unit tests pass
-- [ ] `P6-V06` Beta tests pass
+- [ ] `P6-V01` Visual regression screenshots — requires live browser
+- [x] `P6-V02` 404 route works — NotFound component renders, 2 tests pass
+- [ ] `P6-V03` Skeletons visible on slow network — requires live browser
+- [x] `P6-V04` Settings link works — Header links to /profile
+- [x] `P6-V05` Unit tests pass — 1,453/1,453
+- [ ] `P6-V06` Beta tests pass — requires live browser (CI gate)
 
 </details>
 

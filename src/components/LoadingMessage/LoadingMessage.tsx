@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import styles from './LoadingMessage.module.css';
+import iconSrc from '/icon.svg';
 
 interface LoadingMessageProps {
   progress: number;
@@ -28,6 +29,7 @@ const LoadingMessage: React.FC<LoadingMessageProps> = ({ progress }) => {
 
   return (
     <div className={styles.loadingContainer} aria-label="Loading application">
+      <img src={iconSrc} alt="" className={styles.brandIcon} width="64" height="64" />
       <h1 className={styles.title}>Starcom Academy</h1>
       <div className={styles.spinner}></div>
       <div className={styles.loadingTextContainer}>

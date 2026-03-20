@@ -53,4 +53,11 @@ describe('LoadingMessage', () => {
     const animBar = container.querySelector('[class*="loadingBarAnimation"]');
     expect(animBar).toBeTruthy();
   });
+
+  it('renders branded icon', () => {
+    const { container } = render(<LoadingMessage progress={0} />);
+    const icon = container.querySelector('img[class*="brandIcon"]');
+    expect(icon).toBeTruthy();
+    expect(icon?.getAttribute('width')).toBe('64');
+  });
 });

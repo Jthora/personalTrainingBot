@@ -61,11 +61,11 @@ const RecapModal: React.FC = () => {
 
     useEffect(() => {
         if (!recap || !recapOpen) return;
-        if (process.env.NODE_ENV !== 'production') {
+        if (import.meta.env.DEV) {
             console.debug('[overlay] recap-modal mounted');
         }
         return () => {
-            if (process.env.NODE_ENV !== 'production') {
+            if (import.meta.env.DEV) {
                 console.debug('[overlay] recap-modal unmounted');
             }
         };

@@ -12,4 +12,6 @@ export const TTL_MS = {
     drillDetails: 6 * 60 * 60 * 1000,
 } as const;
 
-export const APP_VERSION = (import.meta as any).env?.VITE_APP_VERSION ?? process.env.VITE_APP_VERSION ?? 'dev';
+export const APP_VERSION = (import.meta as any).env?.VITE_APP_VERSION
+    ?? (typeof process !== 'undefined' ? process.env.VITE_APP_VERSION : undefined)
+    ?? 'dev';

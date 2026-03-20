@@ -85,11 +85,11 @@ const HeaderDrawer: React.FC<HeaderDrawerProps> = ({ open, onClose, handlerColor
 
     useEffect(() => {
         if (!open) return;
-        if (process.env.NODE_ENV !== 'production') {
+        if (import.meta.env.DEV) {
             console.debug('[overlay] header-drawer mounted');
         }
         return () => {
-            if (process.env.NODE_ENV !== 'production') {
+            if (import.meta.env.DEV) {
                 console.debug('[overlay] header-drawer unmounted');
             }
         };

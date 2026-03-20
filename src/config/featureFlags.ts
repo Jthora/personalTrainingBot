@@ -69,7 +69,8 @@ const parseOverrides = (): Partial<FeatureFlagConfig> => {
 
 const envOverrides = (): Partial<FeatureFlagConfig> => {
     // Supports a JSON string in VITE_FEATURE_FLAGS, e.g. '{"calendarSurface":true}'
-    const envValue = ((import.meta as any).env?.VITE_FEATURE_FLAGS as string | undefined) || process.env.VITE_FEATURE_FLAGS;
+    const envValue = (import.meta as any).env?.VITE_FEATURE_FLAGS as string | undefined
+        ?? (typeof process !== 'undefined' ? process.env.VITE_FEATURE_FLAGS : undefined);
     if (!envValue) {
         return {};
     }

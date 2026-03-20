@@ -5,104 +5,27 @@ import styles from './MissionFlow.module.css';
 import { trackEvent } from '../../utils/telemetry';
 import { useMissionFlowContinuity } from '../../hooks/useMissionFlowContinuity';
 import useIsMobile from '../../hooks/useIsMobile';
-import { missionEntityIcons } from '../../utils/mission/iconography';
 import MissionHeader from '../../components/MissionHeader/MissionHeader';
 import MissionActionPalette from '../../components/MissionActionPalette/MissionActionPalette';
 import OnboardingFlow from '../../components/Onboarding/OnboardingFlow';
 import { useOnboardingState } from '../../hooks/useOnboardingState';
 import type { MissionPaletteAction } from '../../components/MissionActionPalette/model';
-import { readMissionFlowContext } from '../../store/missionFlow/continuity';
-import {
-  buildMissionTransitionPayload,
-  missionRoutePaths,
-  type MissionRoutePath,
-} from '../../utils/missionTelemetryContracts';
-import OperativeProfileStore from '../../store/OperativeProfileStore';
-import { getArchetypeHints } from '../../utils/archetypeHints';
+import { missionRoutePaths, type MissionRoutePath } from '../../utils/missionTelemetryContracts';
 import CelebrationLayer from '../../components/CelebrationLayer/CelebrationLayer';
-
-const coreTabs: Array<{ path: MissionRoutePath; label: string; icon: string }> = [
-  { path: '/mission/brief', label: 'Brief', icon: missionEntityIcons.operation },
-  { path: '/mission/triage', label: 'Triage', icon: missionEntityIcons.lead },
-  { path: '/mission/case', label: 'Case', icon: missionEntityIcons.case },
-  { path: '/mission/signal', label: 'Signal', icon: missionEntityIcons.signal },
-  { path: '/mission/checklist', label: 'Checklist', icon: missionEntityIcons.artifact },
-  { path: '/mission/debrief', label: 'Debrief', icon: missionEntityIcons.debrief },
-];
-
-const statsTab: { path: MissionRoutePath; label: string; icon: string } = {
-  path: '/mission/stats', label: 'Stats', icon: '📊',
-};
-
-const planTab: { path: MissionRoutePath; label: string; icon: string } = {
-  path: '/mission/plan', label: 'Plan', icon: '📅',
-};
-
-const trainingTab: { path: MissionRoutePath; label: string; icon: string } = {
-  path: '/mission/training', label: 'Training', icon: '📚',
-};
-
-type GuidanceMode = 'assist' | 'ops';
-
-const assistantHints: Partial<Record<MissionRoutePath, { sopPrompt: string; contextHint: string; nextActionHint: string }>> = {
-  '/mission/brief': {
-    sopPrompt: 'SOP: Confirm objective, constraints, and escalation threshold before moving to Triage.',
-    contextHint: 'Use Mission Header and Readiness to anchor priorities before acting.',
-    nextActionHint: 'When objective and constraints are clear, continue to Triage.',
-  },
-  '/mission/triage': {
-    sopPrompt: 'SOP: Acknowledge critical signals first, then assign/defer lower-priority items.',
-    contextHint: 'Keep one primary case in focus to avoid split decision paths.',
-    nextActionHint: 'Once triage queue is stable, continue to Case.',
-  },
-  '/mission/case': {
-    sopPrompt: 'SOP: Promote only evidence-backed findings; avoid assumptions without artifacts.',
-    contextHint: 'Cross-check Timeline and Artifact List before escalating conclusions.',
-    nextActionHint: 'When findings are traceable, continue to Signal.',
-  },
-  '/mission/signal': {
-    sopPrompt: 'SOP: Resolve or escalate each active signal with explicit rationale.',
-    contextHint: 'Keep signal actions synchronized with case evidence and mission constraints.',
-    nextActionHint: 'When signal actions are clear, continue to Checklist.',
-  },
-  '/mission/checklist': {
-    sopPrompt: 'SOP: Execute checklist in order, recording outcomes and exceptions immediately.',
-    contextHint: 'Use drill completion outcomes as direct input to Debrief quality.',
-    nextActionHint: 'After execution outcomes are captured, continue to Debrief.',
-  },
-  '/mission/debrief': {
-    sopPrompt: 'SOP: Capture outcomes, lessons learned, and readiness impact before closing cycle.',
-    contextHint: 'Ensure unresolved risks are clearly listed for next mission brief.',
-    nextActionHint: 'When AAR is complete, start the next mission brief.',
-  },
-  '/mission/stats': {
-    sopPrompt: 'SOP: Review cadet metrics, competency trends, and progress toward next milestone.',
-    contextHint: 'Use the dashboard to identify weak competency dimensions and prioritize drills.',
-    nextActionHint: 'After reviewing stats, return to Brief to start your next mission cycle.',
-  },
-  '/mission/plan': {
-    sopPrompt: 'SOP: Review weekly training plan, adjust schedule, and confirm upcoming drills.',
-    contextHint: 'Use the plan view to see your week at a glance and ensure balanced training load.',
-    nextActionHint: 'When your plan is set, head to Checklist to execute today\'s drills.',
-  },
-  '/mission/training': {
-    sopPrompt: 'SOP: Browse training modules, explore card decks, and launch focused drills.',
-    contextHint: 'Select modules and decks to tailor your training across 19 operational disciplines.',
-    nextActionHint: 'Pick a module or deck and start a training drill to build domain competency.',
-  },
-};
+import { composeMissionTabs } from '../../data/missionTabs';
+import { assistantHints, FALLBACK_ROUTE } from '../../data/sopHints';
+import { useStepCompletion } from '../../hooks/useStepCompletion';
+import { useGuidanceMode } from '../../hooks/useGuidanceMode';
+import { useMissionTelemetry } from '../../hooks/useMissionTelemetry';
+import OperatorAssistant from '../../components/OperatorAssistant/OperatorAssistant';
+import StepToolsBar from '../../components/StepToolsBar/StepToolsBar';
 
 const MissionShell: React.FC = () => {
-  const completionStorageKey = 'mission:step-complete:v1';
-  const guidanceModeStorageKey = 'mission:guidance-mode:v1';
   const location = useLocation();
   const navigate = useNavigate();
   const isMobile = useIsMobile();
   const { routeSearch } = useMissionFlowContinuity();
   const [paletteOpen, setPaletteOpen] = useState(false);
-  const [completedSteps, setCompletedSteps] = useState<Record<string, boolean>>({});
-  const [guidanceMode, setGuidanceMode] = useState<GuidanceMode>('assist');
-  const stepStartedAtRef = useRef<number>(Date.now());
   const paletteOpenedAtRef = useRef<number | null>(null);
   const paletteSelectedRef = useRef<boolean>(false);
 
@@ -115,35 +38,26 @@ const MissionShell: React.FC = () => {
     onNavigate: navigateWithContext,
   });
 
-  // ── Feature flags ──
-  const archetypeEnabled = true;
-  const statsSurfaceEnabled = true;
-  const planSurfaceEnabled = true;
+  // ── Tabs ──
+  const tabs = useMemo(() => composeMissionTabs(), []);
 
-  const tabs = useMemo(
-    () => {
-      const extra = [
-        ...(statsSurfaceEnabled ? [statsTab] : []),
-        ...(planSurfaceEnabled ? [planTab] : []),
-      ];
-      // Training tab at position 2 (after Brief) — it's the core value proposition
-      return [coreTabs[0], trainingTab, ...coreTabs.slice(1), ...extra];
-    },
-    [statsSurfaceEnabled, planSurfaceEnabled],
-  );
-
-  const activePath = tabs.find((tab) => location.pathname.startsWith(tab.path))?.path ?? '/mission/brief';
+  const activePath = (tabs.find((tab) => location.pathname.startsWith(tab.path))?.path ?? FALLBACK_ROUTE) as MissionRoutePath;
   const currentStepIndex = tabs.findIndex((tab) => tab.path === activePath);
   const currentStep = currentStepIndex >= 0 ? tabs[currentStepIndex] : tabs[0];
   const nextStep = currentStepIndex >= 0 && currentStepIndex < tabs.length - 1 ? tabs[currentStepIndex + 1] : null;
-  const currentHints = assistantHints[activePath] ?? assistantHints['/mission/brief']!;
+  const currentHints = assistantHints[activePath] ?? assistantHints[FALLBACK_ROUTE]!;
 
-  const missionContext = readMissionFlowContext();
+  // ── Extracted hooks ──
+  const stepCompletion = useStepCompletion();
+  const guidance = useGuidanceMode(activePath);
+  const telemetry = useMissionTelemetry(activePath, stepCompletion.completedSteps);
 
+  // ── Palette actions ──
   const paletteActions: MissionPaletteAction[] = useMemo(() => {
+    const ctx = telemetry.missionContext;
     const tabActions: MissionPaletteAction[] = tabs.map((tab) => ({
       id: `tab:${tab.path}`,
-      label: `${tab.label}`,
+      label: tab.label,
       keywords: [tab.label.toLowerCase(), 'mission'],
       path: tab.path,
       search: routeSearch ? `?${routeSearch}` : '',
@@ -152,108 +66,31 @@ const MissionShell: React.FC = () => {
     const contextActions: MissionPaletteAction[] = [
       {
         id: 'context:brief',
-        label: `Operation Brief${missionContext?.operationId ? ` (${missionContext.operationId})` : ''}`,
-        keywords: ['operation', 'brief', missionContext?.operationId ?? ''],
+        label: `Operation Brief${ctx?.operationId ? ` (${ctx.operationId})` : ''}`,
+        keywords: ['operation', 'brief', ctx?.operationId ?? ''],
         path: '/mission/brief',
         search: routeSearch ? `?${routeSearch}` : '',
       },
       {
         id: 'context:case',
-        label: `Active Case${missionContext?.caseId ? ` (${missionContext.caseId})` : ''}`,
-        keywords: ['case', 'investigation', missionContext?.caseId ?? ''],
+        label: `Active Case${ctx?.caseId ? ` (${ctx.caseId})` : ''}`,
+        keywords: ['case', 'investigation', ctx?.caseId ?? ''],
         path: '/mission/case',
         search: routeSearch ? `?${routeSearch}` : '',
       },
       {
         id: 'context:signal',
-        label: `Active Signal${missionContext?.signalId ? ` (${missionContext.signalId})` : ''}`,
-        keywords: ['signal', 'alert', missionContext?.signalId ?? ''],
+        label: `Active Signal${ctx?.signalId ? ` (${ctx.signalId})` : ''}`,
+        keywords: ['signal', 'alert', ctx?.signalId ?? ''],
         path: '/mission/signal',
         search: routeSearch ? `?${routeSearch}` : '',
       },
     ];
 
     return [...contextActions, ...tabActions];
-  }, [missionContext?.caseId, missionContext?.operationId, missionContext?.signalId, routeSearch]);
+  }, [telemetry.missionContext?.caseId, telemetry.missionContext?.operationId, telemetry.missionContext?.signalId, routeSearch]);
 
-  const trackMissionTransition = (
-    nextPath: MissionRoutePath,
-    source: 'tab' | 'select' | 'keyboard' | 'palette',
-    extra?: Record<string, unknown>,
-  ) => {
-    trackEvent({
-      category: 'ia',
-      action: 'tab_view',
-      route: nextPath,
-      data: {
-        ...buildMissionTransitionPayload({
-          fromTab: activePath,
-          toTab: nextPath,
-          source,
-          operationId: missionContext?.operationId,
-          caseId: missionContext?.caseId,
-          signalId: missionContext?.signalId,
-          actionId: typeof extra?.actionId === 'string' ? extra.actionId : undefined,
-        }),
-      },
-      source: 'ui',
-    });
-  };
-
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-
-    const raw = window.localStorage.getItem(completionStorageKey);
-    if (raw) {
-      try {
-        const parsed = JSON.parse(raw) as Record<string, boolean>;
-        setCompletedSteps(parsed);
-      } catch {
-        setCompletedSteps({});
-      }
-    }
-
-    const savedMode = window.localStorage.getItem(guidanceModeStorageKey);
-    if (savedMode === 'assist' || savedMode === 'ops') {
-      setGuidanceMode(savedMode);
-    }
-  }, []);
-
-  useEffect(() => {
-    const now = Date.now();
-    stepStartedAtRef.current = now;
-
-    trackEvent({
-      category: 'ia',
-      action: 'tab_view',
-      route: activePath,
-      data: {
-        kind: 'step_view_start',
-        step: activePath,
-      },
-      source: 'ui',
-    });
-
-    return () => {
-      const durationMs = Date.now() - now;
-      const completed = Boolean(completedSteps[activePath]);
-      if (!completed && durationMs > 45000) {
-        trackEvent({
-          category: 'ia',
-          action: 'nav_error',
-          route: activePath,
-          data: {
-            kind: 'step_abandon_risk',
-            step: activePath,
-            durationMs,
-            completed,
-          },
-          source: 'ui',
-        });
-      }
-    };
-  }, [activePath]);
-
+  // ── Keyboard shortcut: ⌘K palette ──
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
       const isMetaShortcut = (event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k';
@@ -262,51 +99,13 @@ const MissionShell: React.FC = () => {
         setPaletteOpen((prev) => !prev);
         return;
       }
-
       if (event.key === 'Escape') {
         setPaletteOpen(false);
       }
     };
-
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
   }, []);
-
-  const toggleStepCompleted = () => {
-    const next = { ...completedSteps, [activePath]: !completedSteps[activePath] };
-    setCompletedSteps(next);
-    if (typeof window !== 'undefined') {
-      window.localStorage.setItem(completionStorageKey, JSON.stringify(next));
-    }
-    trackEvent({
-      category: 'ia',
-      action: 'tab_view',
-      route: activePath,
-      data: {
-        kind: 'step_complete_toggle',
-        tab: activePath,
-        completed: !completedSteps[activePath],
-      },
-      source: 'ui',
-    });
-  };
-
-  const updateGuidanceMode = (mode: GuidanceMode) => {
-    setGuidanceMode(mode);
-    if (typeof window !== 'undefined') {
-      window.localStorage.setItem(guidanceModeStorageKey, mode);
-    }
-    trackEvent({
-      category: 'ia',
-      action: 'tab_view',
-      route: activePath,
-      data: {
-        kind: 'guidance_mode_change',
-        mode,
-      },
-      source: 'ui',
-    });
-  };
 
   return (
     <div className={styles.pageContainer}>
@@ -321,122 +120,40 @@ const MissionShell: React.FC = () => {
           />
         )}
 
-        {/* Phase 1.4: Hide shell chrome while onboarding is active */}
+        {/* Hide shell chrome while onboarding is active */}
         {!onboarding.isOnboarding && (
           <>
             <MissionHeader />
 
-        <div className={styles.stepTools} aria-label="Mission step tools">
-          <div className={styles.stepMeta}>
-            <span className={styles.stepBadge}>Current Step: {currentStep.icon} {currentStep.label}</span>
-            <span className={styles.stepBadge}>
-              Next Step: {nextStep ? `${nextStep.icon} ${nextStep.label}` : 'Mission cycle complete'}
-            </span>
-          </div>
-
-          <div className={styles.stepActions}>
-            <div className={styles.modeToggle} role="group" aria-label="Guidance mode">
-              <button
-                type="button"
-                className={styles.stepButton}
-                aria-pressed={guidanceMode === 'assist'}
-                onClick={() => updateGuidanceMode('assist')}
-              >
-                Assist Mode
-              </button>
-              <button
-                type="button"
-                className={styles.stepButton}
-                aria-pressed={guidanceMode === 'ops'}
-                onClick={() => updateGuidanceMode('ops')}
-              >
-                Ops Mode
-              </button>
-            </div>
-
-            <button type="button" className={styles.stepButton} onClick={toggleStepCompleted}>
-              {completedSteps[activePath] ? '✓ Step Complete' : 'Mark Step Complete'}
-            </button>
-
-            {nextStep && (
-              <button
-                type="button"
-                className={styles.stepButton}
-                onClick={() => {
-                  const durationMs = Date.now() - stepStartedAtRef.current;
-                  if (durationMs > 30000) {
-                    trackEvent({
-                      category: 'ia',
-                      action: 'nav_error',
-                      route: activePath,
-                      data: {
-                        kind: 'step_transition_friction',
-                        fromStep: activePath,
-                        toStep: nextStep.path,
-                        durationMs,
-                      },
-                      source: 'ui',
-                    });
-                  }
-                  trackMissionTransition(nextStep.path, 'keyboard');
+            <StepToolsBar
+              currentStep={currentStep}
+              nextStep={nextStep}
+              activePath={activePath}
+              guidanceMode={guidance.mode}
+              isCompleted={stepCompletion.isCompleted(activePath)}
+              isMobile={isMobile}
+              stepStartedAtRef={telemetry.stepStartedAtRef}
+              onToggleComplete={() => stepCompletion.toggle(activePath)}
+              onUpdateGuidanceMode={guidance.update}
+              onContinueToNext={() => {
+                if (nextStep) {
+                  telemetry.trackTransition(nextStep.path, 'keyboard');
                   navigateWithContext(nextStep.path);
-                }}
-              >
-                Continue to {nextStep.label}
-              </button>
-            )}
-
-            <button
-              type="button"
-              className={styles.stepButton}
-              onClick={() => {
+                }
+              }}
+              onOpenPalette={() => {
                 paletteOpenedAtRef.current = Date.now();
                 paletteSelectedRef.current = false;
                 setPaletteOpen(true);
               }}
-              aria-label="Open mission action palette"
-            >
-              {isMobile ? 'Actions' : '⌘K Actions'}
-            </button>
-          </div>
-        </div>
+            />
 
-        <section className={styles.assistantCard} aria-label="Operator assistant guidance">
-          <h2 className={styles.assistantTitle}>Operator Assistant · {guidanceMode === 'assist' ? 'Assist Mode' : 'Ops Mode'}</h2>
-          <p className={styles.assistantHint}><strong>SOP prompt:</strong> {currentHints.sopPrompt}</p>
-
-          {guidanceMode === 'assist' ? (
-            <>
-              <p className={styles.assistantHint}><strong>Context hint:</strong> {
-                (() => {
-                  if (archetypeEnabled) {
-                    const profile = OperativeProfileStore.get();
-                    if (profile?.archetypeId) {
-                      const archetypeHint = getArchetypeHints(profile.archetypeId, activePath);
-                      if (archetypeHint) return archetypeHint.contextHint;
-                    }
-                  }
-                  return currentHints.contextHint;
-                })()
-              }</p>
-              <p className={styles.assistantHint}><strong>Next action:</strong> {
-                (() => {
-                  if (archetypeEnabled) {
-                    const profile = OperativeProfileStore.get();
-                    if (profile?.archetypeId) {
-                      const archetypeHint = getArchetypeHints(profile.archetypeId, activePath);
-                      if (archetypeHint) return archetypeHint.nextActionHint;
-                    }
-                  }
-                  return currentHints.nextActionHint;
-                })()
-              }</p>
-              {!isMobile && <p className={styles.assistantHint}><strong>Keyboard:</strong> Use ⌘/Ctrl + K for fast actions, Esc to close overlays.</p>}
-            </>
-          ) : (
-            !isMobile && <p className={styles.assistantHint}><strong>Keyboard:</strong> ⌘/Ctrl + K actions · Esc close.</p>
-          )}
-        </section>
+            <OperatorAssistant
+              guidanceMode={guidance.mode}
+              hints={currentHints}
+              activePath={activePath}
+              isMobile={isMobile}
+            />
           </>
         )}
 
@@ -468,7 +185,7 @@ const MissionShell: React.FC = () => {
             paletteSelectedRef.current = true;
             const nextPath = missionRoutePaths.find((path) => path === action.path);
             if (nextPath) {
-              trackMissionTransition(nextPath, 'palette', { actionId: action.id });
+              telemetry.trackTransition(nextPath, 'palette', { actionId: action.id });
             } else {
               trackEvent({ category: 'ia', action: 'tab_view', route: action.path, data: { tab: action.path, source: 'palette', actionId: action.id }, source: 'ui' });
             }

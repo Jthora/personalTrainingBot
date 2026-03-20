@@ -55,7 +55,6 @@ describe('FeatureFlagsStore', () => {
         vi.clearAllMocks();
     vi.mocked(getFeatureFlags).mockImplementation(() => ({ ...mockConfigFlags }));
         mockConfigFlags.globalKillSwitch = false;
-        mockConfigFlags.calendarSurface = false;
         UserProgressStore.save({
             quietMode: undefined as any,
             flags: {

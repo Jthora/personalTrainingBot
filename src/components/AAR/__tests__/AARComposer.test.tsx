@@ -23,14 +23,12 @@ const mockEntries: AAREntry[] = [
   makeEntry({ id: 'aar-2', title: 'Second AAR' }),
 ];
 
-let subscribeCb: ((entries: AAREntry[]) => void) | null = null;
 
 vi.mock('../../../store/AARStore', () => ({
   AARStore: {
     list: vi.fn(() => mockEntries),
-    subscribe: vi.fn((cb: (entries: AAREntry[]) => void) => {
-      subscribeCb = cb;
-      return () => { subscribeCb = null; };
+    subscribe: vi.fn((_cb: (entries: AAREntry[]) => void) => {
+      return () => {};
     }),
     create: vi.fn(() => makeEntry({ id: 'aar-new', title: '' })),
     save: vi.fn(),
@@ -43,7 +41,6 @@ import { AARStore } from '../../../store/AARStore';
 describe('AARComposer', () => {
   beforeEach(() => {
     vi.clearAllMocks();
-    subscribeCb = null;
   });
 
   it('renders entry list from store', () => {

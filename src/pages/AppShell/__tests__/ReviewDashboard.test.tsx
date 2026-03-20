@@ -10,7 +10,7 @@ vi.mock('react-router-dom', () => ({
 vi.mock('../../../cache/TrainingModuleCache', () => ({
   default: {
     getInstance: vi.fn(() => ({
-      getModule: vi.fn((id: string) => ({ name: `Module ${id}` })),
+      getTrainingModule: vi.fn((id: string) => ({ name: `Module ${id}` })),
     })),
   },
 }));

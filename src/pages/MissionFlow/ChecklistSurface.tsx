@@ -52,7 +52,7 @@ const ChecklistSurface: React.FC = () => {
       {remainingItems > 0 && (
         <div className={styles.completeBar}>
           <span className={styles.remainingCount}>{remainingItems} item{remainingItems !== 1 ? 's' : ''} remaining</span>
-          <button className={styles.completeButton} onClick={completeCurrentDrill} disabled={drillRunActive}>
+          <button className={styles.completeButton} onClick={() => completeCurrentDrill()} disabled={drillRunActive}>
             {drillRunActive ? 'Drill in progress — auto-completes' : 'Mark current item complete'}
           </button>
         </div>

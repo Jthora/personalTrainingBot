@@ -6,7 +6,7 @@
  */
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import type { QuizQuestion, QuizAnswer, QuizSession } from '../../types/Quiz';
+import type { QuizQuestion, QuizAnswer } from '../../types/Quiz';
 import CardProgressStore from '../../store/CardProgressStore';
 import DrillHistoryStore from '../../store/DrillHistoryStore';
 import QuizSessionStore from '../../store/QuizSessionStore';

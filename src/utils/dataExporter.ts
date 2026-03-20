@@ -9,7 +9,7 @@
  * Import validates the schema version and merges data into stores.
  */
 
-import { BACKUP_KEYS, type BackupKey } from './backupManager';
+import { BACKUP_KEYS } from './backupManager';
 
 export const EXPORT_SCHEMA_VERSION = 1;
 

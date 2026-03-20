@@ -14,7 +14,7 @@ const makeSig = (overrides: Partial<SignalEntry> = {}): SignalEntry => ({
   ...overrides,
 });
 
-let subscribeCb: ((signals: SignalEntry[], queue: number) => void) | null = null;
+
 const mockSignals: SignalEntry[] = [
   makeSig({ id: 'sig-1', title: 'Signal One', role: 'ops', status: 'open' }),
   makeSig({ id: 'sig-2', title: 'Signal Two', role: 'intel', status: 'ack' }),
@@ -25,9 +25,8 @@ vi.mock('../../../store/SignalsStore', () => ({
   SignalsStore: {
     list: vi.fn(() => mockSignals),
     queueLength: vi.fn(() => 0),
-    subscribe: vi.fn((cb: (signals: SignalEntry[], queue: number) => void) => {
-      subscribeCb = cb;
-      return () => { subscribeCb = null; };
+    subscribe: vi.fn((_cb: (signals: SignalEntry[], queue: number) => void) => {
+      return () => {};
     }),
     add: vi.fn(),
     acknowledge: vi.fn(),
@@ -40,7 +39,6 @@ import { SignalsStore } from '../../../store/SignalsStore';
 describe('SignalsPanel', () => {
   beforeEach(() => {
     vi.clearAllMocks();
-    subscribeCb = null;
   });
 
   it('renders existing signals from store', () => {

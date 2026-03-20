@@ -33,8 +33,8 @@ const mockBuildDrillStepsFromModule = vi.fn(() => [
 ]);
 
 vi.mock('../../../utils/drillStepBuilder', () => ({
-  buildDrillStepsFromDeck: (...args: unknown[]) => mockBuildDrillStepsFromDeck(...args),
-  buildDrillStepsFromModule: (...args: unknown[]) => mockBuildDrillStepsFromModule(...args),
+  buildDrillStepsFromDeck: (...args: any[]) => mockBuildDrillStepsFromDeck.apply(null, args as any),
+  buildDrillStepsFromModule: (...args: any[]) => mockBuildDrillStepsFromModule.apply(null, args as any),
 }));
 
 const mockDrillRunStoreStart = vi.fn();

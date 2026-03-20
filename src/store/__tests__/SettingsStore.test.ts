@@ -16,7 +16,7 @@ import SettingsStore from '../SettingsStore';
 const STORAGE_KEY = 'ptb:user-preferences';
 
 describe('SettingsStore', () => {
-  let store: InstanceType<typeof SettingsStore>;
+  let store: SettingsStore;
 
   beforeEach(() => {
     localStorage.clear();

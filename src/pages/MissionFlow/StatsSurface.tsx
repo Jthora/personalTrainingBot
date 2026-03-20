@@ -13,7 +13,6 @@ import ScoreLineChart from '../../components/ScoreLineChart/ScoreLineChart';
 import { getDisciplineColor } from '../../data/disciplineTheme';
 import ActivityHeatmap from '../../components/ActivityHeatmap/ActivityHeatmap';
 import ProgressSnapshotStore from '../../store/ProgressSnapshotStore';
-import { DOMAIN_CATALOG } from '../../utils/readiness/domainProgress';
 import BadgeGallery from '../../components/BadgeGallery/BadgeGallery';
 import ChallengeBoard from '../../components/ChallengeBoard/ChallengeBoard';
 import ProfileEditor from '../../components/ProfileEditor/ProfileEditor';

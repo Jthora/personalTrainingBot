@@ -165,8 +165,6 @@ describe('CardProgressStore', () => {
     it('places cards in correct future day bucket', () => {
       // Record a card (interval = 1 day, nextReviewAt ≈ now + 1 day)
       CardProgressStore.recordReview('c1', 'mod-a', 4);
-      const progress = CardProgressStore.getCardProgress('c1')!;
-      const dueAt = new Date(progress.nextReviewAt).getTime();
       // Use a "now" that is the start of the same day as recording
       const now = Date.now();
       const forecast = CardProgressStore.forecastDue(7, now);

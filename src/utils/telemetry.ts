@@ -21,7 +21,8 @@ export type OfflineAction =
   | 'sw_install'
   | 'sw_update_available'
   | 'sw_update_applied';
-export type DrillsAction = 'drill_start' | 'step_complete' | 'drill_complete' | 'drill_abort' | 'drill_export';
+export type DrillsAction = 'drill_start' | 'step_complete' | 'drill_complete' | 'drill_abort' | 'drill_export' | 'drill_reflection';
+export type TrainingAction = 'today_launcher_start';
 export type SignalsAction = 'signal_create' | 'signal_ack' | 'signal_resolve';
 export type AarAction = 'aar_create' | 'aar_save' | 'aar_export';
 export type SettingsAction = 'toggle_low_data' | 'toggle_mute' | 'preload_trigger';
@@ -34,7 +35,8 @@ export type AppTelemetryEvent =
   | { category: 'drills'; action: DrillsAction; route?: string; label?: string; value?: string | number; data?: Record<string, unknown>; source?: 'ui' | 'system'; ts?: string }
   | { category: 'signals'; action: SignalsAction; route?: string; label?: string; value?: string | number; data?: Record<string, unknown>; source?: 'ui' | 'system'; ts?: string }
   | { category: 'aar'; action: AarAction; route?: string; label?: string; value?: string | number; data?: Record<string, unknown>; source?: 'ui' | 'system'; ts?: string }
-  | { category: 'settings'; action: SettingsAction; route?: string; label?: string; value?: string | number; data?: Record<string, unknown>; source?: 'ui' | 'system'; ts?: string };
+  | { category: 'settings'; action: SettingsAction; route?: string; label?: string; value?: string | number; data?: Record<string, unknown>; source?: 'ui' | 'system'; ts?: string }
+  | { category: 'training'; action: TrainingAction; route?: string; label?: string; value?: string | number; data?: Record<string, unknown>; source?: 'ui' | 'system'; ts?: string };
 
 export type TrackedEvent = AppTelemetryEvent & {
   ts: string;

@@ -20,7 +20,6 @@ vi.mock('../../utils/telemetry', () => ({ trackEvent: (...args: unknown[]) => tr
 
 // Re-import mocks for assertions
 import OperativeProfileStore from '../../store/OperativeProfileStore';
-import TrainingModuleCache from '../../cache/TrainingModuleCache';
 
 const baseOptions = {
   fastPathTarget: '/train',

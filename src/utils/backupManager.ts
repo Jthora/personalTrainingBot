@@ -53,15 +53,6 @@ function idbPut(db: IDBDatabase, key: string, value: string): Promise<void> {
   });
 }
 
-function idbGet(db: IDBDatabase, key: string): Promise<string | undefined> {
-  return new Promise((resolve, reject) => {
-    const tx = db.transaction(STORE_NAME, 'readonly');
-    const req = tx.objectStore(STORE_NAME).get(key);
-    req.onsuccess = () => resolve(req.result as string | undefined);
-    req.onerror = () => reject(req.error ?? new Error('IDB get failed'));
-  });
-}
-
 function idbGetAll(db: IDBDatabase): Promise<Map<string, string>> {
   return new Promise((resolve, reject) => {
     const tx = db.transaction(STORE_NAME, 'readonly');

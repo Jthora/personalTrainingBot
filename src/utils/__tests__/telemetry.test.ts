@@ -56,7 +56,6 @@ describe('telemetry', () => {
 
   describe('logEvent', () => {
     it('maps home_tab_switch to ia/tab_view', () => {
-      const spy = vi.spyOn({ trackEvent }, 'trackEvent');
       logEvent({ type: 'home_tab_switch', tab: 'plan' });
       const buffer = readEventBuffer();
       expect(buffer.length).toBeGreaterThan(0);

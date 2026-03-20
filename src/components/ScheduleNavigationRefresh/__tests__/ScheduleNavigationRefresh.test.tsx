@@ -4,7 +4,7 @@ import ScheduleNavigationRefresh from '../ScheduleNavigationRefresh';
 
 const mockLoadScheduleStub = vi.fn(() => Promise.resolve());
 vi.mock('../../../utils/ScheduleLoader', () => ({
-  loadScheduleStub: (...args: unknown[]) => mockLoadScheduleStub(...args),
+  loadScheduleStub: (...args: any[]) => mockLoadScheduleStub.apply(null, args as any),
 }));
 
 let mockPathname = '/schedules';

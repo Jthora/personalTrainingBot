@@ -160,7 +160,7 @@ describe('QuizSurface', () => {
       { cardId: 'card-1', moduleId: 'cybersecurity' },
       { cardId: 'card-2', moduleId: 'cybersecurity' },
       { cardId: 'card-3', moduleId: 'cybersecurity' },
-    ]);
+    ] as any);
     mockGetCardById
       .mockReturnValueOnce(sampleCard)
       .mockReturnValueOnce(sampleCard2)

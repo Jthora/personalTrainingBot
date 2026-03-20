@@ -31,7 +31,7 @@ const ReviewDashboard: React.FC = () => {
       if (!moduleMap.has(moduleId)) {
         let moduleName = moduleId;
         try {
-          const mod = cache.getModule(moduleId);
+          const mod = cache.getTrainingModule(moduleId);
           if (mod?.name) moduleName = mod.name;
         } catch {
           // Module not cached

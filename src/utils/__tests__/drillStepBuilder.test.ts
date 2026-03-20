@@ -135,7 +135,6 @@ describe('drillStepBuilder', () => {
 
       // All other cards are unseen → card-fw-2 should come first when due
       // We need to fast-forward time to make it due
-      const futureNow = Date.now() + 2 * 24 * 60 * 60 * 1000;
       // Can't inject time into buildDrillStepsFromDeck easily, but we can
       // verify the ordering by manipulating store directly
       // For now, test that reviewed card is NOT at its original position

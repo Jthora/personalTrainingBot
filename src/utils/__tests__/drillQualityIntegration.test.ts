@@ -7,7 +7,7 @@
  */
 import { describe, it, expect, beforeEach } from 'vitest';
 import { computeCardQuality, type StepInteractionData } from '../../utils/drillQuality';
-import { computeNextReview, type SRCardState } from '../../utils/srScheduler';
+import { computeNextReview } from '../../utils/srScheduler';
 import CardProgressStore from '../../store/CardProgressStore';
 
 beforeEach(() => {

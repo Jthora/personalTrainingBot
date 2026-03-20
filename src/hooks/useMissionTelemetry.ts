@@ -2,7 +2,6 @@ import { useEffect, useRef } from 'react';
 import { trackEvent } from '../utils/telemetry';
 import {
   buildMissionTransitionPayload,
-  missionRoutePaths,
   type MissionRoutePath,
 } from '../utils/missionTelemetryContracts';
 import { readMissionFlowContext } from '../store/missionFlow/continuity';

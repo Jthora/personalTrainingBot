@@ -26,8 +26,8 @@ const mockProfileSubscribe = vi.fn(() => vi.fn());
 
 vi.mock('../../../store/OperativeProfileStore', () => ({
   default: {
-    get: (...args: unknown[]) => mockProfileGet(...args),
-    subscribe: (...args: unknown[]) => mockProfileSubscribe(...args),
+    get: (...args: any[]) => mockProfileGet.apply(null, args as any),
+    subscribe: (...args: any[]) => mockProfileSubscribe.apply(null, args as any),
   },
 }));
 

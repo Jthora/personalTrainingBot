@@ -80,8 +80,6 @@ export const DOMAIN_CATALOG: DomainEntry[] = [
   { id: 'space_force', name: 'Space Force' },
 ];
 
-const DOMAIN_NAME_MAP = new Map(DOMAIN_CATALOG.map((d) => [d.id, d.name]));
-
 // ---------------------------------------------------------------------------
 // Scoring tuning knobs
 // ---------------------------------------------------------------------------

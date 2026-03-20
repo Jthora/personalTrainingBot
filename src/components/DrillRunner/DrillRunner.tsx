@@ -107,7 +107,7 @@ const StepItem: React.FC<{
           {card.exercises && card.exercises.length > 0 && (
             <ExerciseRenderer
               exercises={card.exercises}
-              onInteraction={(index) => {
+              onInteraction={(_index) => {
                 const next = exercisesAttempted + 1;
                 setExercisesAttempted(next);
                 onInteractionUpdate?.(step.id, {

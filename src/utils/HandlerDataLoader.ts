@@ -68,7 +68,7 @@ class HandlerDataLoader {
             console.log("HandlerDataLoader: Loading handler speech...");
             // Simulate async loading
             await new Promise(resolve => setTimeout(resolve, 500));
-            this.handlerData = handlerSpeech.coaches;
+            this.handlerData = (handlerSpeech as any).handlers ?? handlerSpeech;
             console.log(`HandlerDataLoader: Loaded handler speech for ${Object.keys(this.handlerData).length} handlers.`);
             return this.handlerData;
         } catch (error) {

@@ -226,7 +226,7 @@ const EXERCISE_LABELS: Record<Exercise['type'], string> = {
 const ExerciseRenderer: React.FC<ExerciseRendererProps> = ({ exercises, onInteraction, onAllCompleted }) => {
   if (!exercises || exercises.length === 0) return null;
 
-  const [completedSet, setCompletedSet] = useState<Set<number>>(new Set());
+  const [_completedSet, setCompletedSet] = useState<Set<number>>(new Set());
 
   const handleInteraction = (index: number) => {
     onInteraction?.(index, 'attempted');

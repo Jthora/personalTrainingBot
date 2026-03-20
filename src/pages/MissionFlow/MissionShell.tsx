@@ -8,9 +8,8 @@ import useIsMobile from '../../hooks/useIsMobile';
 import { missionEntityIcons } from '../../utils/mission/iconography';
 import MissionHeader from '../../components/MissionHeader/MissionHeader';
 import MissionActionPalette from '../../components/MissionActionPalette/MissionActionPalette';
-import MissionIntakePanel from '../../components/MissionIntakePanel/MissionIntakePanel';
-import ArchetypePicker from '../../components/ArchetypePicker/ArchetypePicker';
-import HandlerPicker from '../../components/HandlerPicker/HandlerPicker';
+import OnboardingFlow from '../../components/Onboarding/OnboardingFlow';
+import { useOnboardingState } from '../../hooks/useOnboardingState';
 import type { MissionPaletteAction } from '../../components/MissionActionPalette/model';
 import { readMissionFlowContext } from '../../store/missionFlow/continuity';
 import {
@@ -19,10 +18,8 @@ import {
   type MissionRoutePath,
 } from '../../utils/missionTelemetryContracts';
 import OperativeProfileStore from '../../store/OperativeProfileStore';
-import type { ArchetypeDefinition } from '../../data/archetypes';
 import { getArchetypeHints } from '../../utils/archetypeHints';
 import CelebrationLayer from '../../components/CelebrationLayer/CelebrationLayer';
-import TrainingModuleCache from '../../cache/TrainingModuleCache';
 
 const coreTabs: Array<{ path: MissionRoutePath; label: string; icon: string }> = [
   { path: '/mission/brief', label: 'Brief', icon: missionEntityIcons.operation },
@@ -96,33 +93,32 @@ const assistantHints: Partial<Record<MissionRoutePath, { sopPrompt: string; cont
 };
 
 const MissionShell: React.FC = () => {
-  const intakeStorageKey = 'mission:intake:v1';
   const completionStorageKey = 'mission:step-complete:v1';
   const guidanceModeStorageKey = 'mission:guidance-mode:v1';
-  const guidanceOverlayStorageKey = 'mission:guidance-overlay:v1';
   const location = useLocation();
   const navigate = useNavigate();
   const isMobile = useIsMobile();
   const { routeSearch } = useMissionFlowContinuity();
   const [paletteOpen, setPaletteOpen] = useState(false);
-  const [showIntake, setShowIntake] = useState(false);
   const [completedSteps, setCompletedSteps] = useState<Record<string, boolean>>({});
   const [guidanceMode, setGuidanceMode] = useState<GuidanceMode>('assist');
-  const [showGuidanceOverlay, setShowGuidanceOverlay] = useState(false);
   const stepStartedAtRef = useRef<number>(Date.now());
   const paletteOpenedAtRef = useRef<number | null>(null);
   const paletteSelectedRef = useRef<boolean>(false);
 
-  // ── Stage 22: Archetype/Handler intake gates ────────────────────────
+  // ── Onboarding flow (shared with AppShell) ──
+  const navigateWithContext = (pathname: string) => {
+    navigate({ pathname, search: routeSearch ? `?${routeSearch}` : '' });
+  };
+  const onboarding = useOnboardingState({
+    fastPathTarget: '/mission/training',
+    onNavigate: navigateWithContext,
+  });
+
+  // ── Feature flags ──
   const archetypeEnabled = true;
   const statsSurfaceEnabled = true;
   const planSurfaceEnabled = true;
-  const existingProfile = OperativeProfileStore.get();
-  const [showArchetypePicker, setShowArchetypePicker] = useState(
-      archetypeEnabled && !existingProfile,
-  );
-  const [showHandlerPicker, setShowHandlerPicker] = useState(false);
-  const [pendingArchetype, setPendingArchetype] = useState<ArchetypeDefinition | null>(null);
 
   const tabs = useMemo(
     () => {
@@ -180,10 +176,6 @@ const MissionShell: React.FC = () => {
     return [...contextActions, ...tabActions];
   }, [missionContext?.caseId, missionContext?.operationId, missionContext?.signalId, routeSearch]);
 
-  const navigateWithContext = (pathname: string) => {
-    navigate({ pathname, search: routeSearch ? `?${routeSearch}` : '' });
-  };
-
   const trackMissionTransition = (
     nextPath: MissionRoutePath,
     source: 'tab' | 'select' | 'keyboard' | 'palette',
@@ -210,8 +202,6 @@ const MissionShell: React.FC = () => {
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
-    const hasSeenIntake = window.localStorage.getItem(intakeStorageKey) === 'seen';
-    setShowIntake(!hasSeenIntake);
 
     const raw = window.localStorage.getItem(completionStorageKey);
     if (raw) {
@@ -226,22 +216,6 @@ const MissionShell: React.FC = () => {
     const savedMode = window.localStorage.getItem(guidanceModeStorageKey);
     if (savedMode === 'assist' || savedMode === 'ops') {
       setGuidanceMode(savedMode);
-    }
-
-    const hasSeenGuidanceOverlay = window.localStorage.getItem(guidanceOverlayStorageKey) === 'seen';
-    setShowGuidanceOverlay(!hasSeenGuidanceOverlay);
-
-    if (!hasSeenGuidanceOverlay) {
-      trackEvent({
-        category: 'ia',
-        action: 'tab_view',
-        route: activePath,
-        data: {
-          kind: 'onboarding_overlay_shown',
-          step: activePath,
-        },
-        source: 'ui',
-      });
     }
   }, []);
 
@@ -298,23 +272,6 @@ const MissionShell: React.FC = () => {
     return () => window.removeEventListener('keydown', onKeyDown);
   }, []);
 
-  const dismissIntake = () => {
-    if (typeof window !== 'undefined') {
-      window.localStorage.setItem(intakeStorageKey, 'seen');
-    }
-    setShowIntake(false);
-    trackEvent({
-      category: 'ia',
-      action: 'tab_view',
-      route: activePath,
-      data: {
-        kind: 'onboarding_intake_dismiss',
-        step: activePath,
-      },
-      source: 'ui',
-    });
-  };
-
   const toggleStepCompleted = () => {
     const next = { ...completedSteps, [activePath]: !completedSteps[activePath] };
     setCompletedSteps(next);
@@ -351,147 +308,21 @@ const MissionShell: React.FC = () => {
     });
   };
 
-  const dismissGuidanceOverlay = () => {
-    if (typeof window !== 'undefined') {
-      window.localStorage.setItem(guidanceOverlayStorageKey, 'seen');
-    }
-    setShowGuidanceOverlay(false);
-    trackEvent({
-      category: 'ia',
-      action: 'tab_view',
-      route: activePath,
-      data: {
-        kind: 'onboarding_overlay_dismiss',
-        step: activePath,
-      },
-      source: 'ui',
-    });
-  };
-
-  /** Fast-path: skip all onboarding gates and go straight to training. */
-  const jumpToTraining = () => {
-    // Dismiss all gates
-    if (typeof window !== 'undefined') {
-      window.localStorage.setItem(guidanceOverlayStorageKey, 'seen');
-      window.localStorage.setItem(intakeStorageKey, 'seen');
-      // 5.4.1.5: Mark that the user fast-pathed so we can prompt for archetype after first drill
-      window.localStorage.setItem('mission:fast-path:v1', 'active');
-    }
-    setShowGuidanceOverlay(false);
-    setShowArchetypePicker(false);
-    setShowHandlerPicker(false);
-    setShowIntake(false);
-    navigateWithContext('/mission/training');
-    trackEvent({
-      category: 'ia',
-      action: 'tab_view',
-      route: '/mission/training',
-      data: {
-        kind: 'onboarding_fast_path',
-        skippedArchetype: true,
-      },
-      source: 'ui',
-    });
-  };
-
-  // Phase 1.2 + 1.4: Determine onboarding state for sequenced rendering.
-  // Guidance overlay shows first; intake shows only after overlay is dismissed.
-  // While either onboarding surface is active, hide all shell chrome (MissionHeader,
-  // stepTools, assistantCard, Outlet) so the onboarding surface fills the viewport.
-  // Stage 22: Archetype and handler pickers gate between guidance overlay and intake.
-  const isOnboarding = showGuidanceOverlay || showArchetypePicker || showHandlerPicker || showIntake;
-
   return (
     <div className={styles.pageContainer}>
       <Header />
       <CelebrationLayer />
       <div className={styles.shell}>
-        {showGuidanceOverlay && (
-          <section className={styles.guidanceOverlay} role="dialog" aria-label="Welcome">
-            <h2 className={styles.guidanceTitle}>Train 19 Disciplines. Track Your Growth.</h2>
-            <p className={styles.guidanceBody}>
-              Cybersecurity, intelligence, fitness, martial arts, and more — 4,300+ training cards with spaced repetition that adapts to what you know.
-            </p>
-            <ul className={styles.guidanceList}>
-              <li><strong>Smart scheduling</strong> — the app prioritises cards you're about to forget.</li>
-              <li><strong>Works offline</strong> — train anywhere, no connection needed.</li>
-              <li><strong>Your pace</strong> — track XP, streaks, and domain mastery over time.</li>
-            </ul>
-            <div className={styles.guidanceActions}>
-              <button type="button" className={styles.stepButton} onClick={jumpToTraining}>Start Training Now</button>
-              <button type="button" className={styles.stepButton} onClick={dismissGuidanceOverlay}>Choose Your Focus First</button>
-            </div>
-          </section>
-        )}
-
-        {/* Phase 1.2: Intake only shows after guidance overlay is dismissed */}
-        {!showGuidanceOverlay && !showArchetypePicker && !showHandlerPicker && showIntake && (
-          <MissionIntakePanel
-            onStartBriefing={() => {
-              dismissIntake();
-              navigateWithContext('/mission/brief');
-            }}
-            onDismiss={dismissIntake}
-          />
-        )}
-
-        {/* Stage 22: Archetype picker — shows after guidance overlay dismissed, before handler */}
-        {!showGuidanceOverlay && showArchetypePicker && (
-          <ArchetypePicker
-            onSelect={(archetype) => {
-              setPendingArchetype(archetype);
-              setShowArchetypePicker(false);
-              setShowHandlerPicker(true);
-            }}
-            onSkip={() => {
-              setShowArchetypePicker(false);
-              // Skip both pickers, proceed to intake/brief
-            }}
-          />
-        )}
-
-        {/* Stage 22: Handler picker — shows after archetype confirmed */}
-        {!showGuidanceOverlay && !showArchetypePicker && showHandlerPicker && pendingArchetype && (
-          <HandlerPicker
-            recommendedHandlerId={pendingArchetype.recommendedHandler}
-            onSelect={(handler) => {
-              OperativeProfileStore.set({
-                archetypeId: pendingArchetype.id,
-                handlerId: handler.id,
-                callsign: '',
-                enrolledAt: new Date().toISOString(),
-              });
-              // 5.4.1.5: Clear fast-path flag now that archetype is selected
-              if (typeof window !== 'undefined') {
-                window.localStorage.removeItem('mission:fast-path:v1');
-              }
-              // Auto-select archetype's core + secondary modules in training cache
-              const cache = TrainingModuleCache.getInstance();
-              if (cache.isLoaded()) {
-                cache.selectModules([...pendingArchetype.coreModules, ...pendingArchetype.secondaryModules]);
-              }
-              setShowHandlerPicker(false);
-              trackEvent({
-                category: 'ia',
-                action: 'tab_view',
-                route: '/mission/brief',
-                data: {
-                  kind: 'archetype_intake_complete',
-                  archetypeId: pendingArchetype.id,
-                  handlerId: handler.id,
-                },
-                source: 'ui',
-              });
-            }}
-            onBack={() => {
-              setShowHandlerPicker(false);
-              setShowArchetypePicker(true);
-            }}
+        {/* ── Onboarding gates (shared flow) ── */}
+        {onboarding.isOnboarding && (
+          <OnboardingFlow
+            state={onboarding}
+            onStartBriefing={() => navigateWithContext('/mission/brief')}
           />
         )}
 
         {/* Phase 1.4: Hide shell chrome while onboarding is active */}
-        {!isOnboarding && (
+        {!onboarding.isOnboarding && (
           <>
             <MissionHeader />
 

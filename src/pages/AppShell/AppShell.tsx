@@ -4,6 +4,8 @@ import Header from '../../components/Header/Header';
 import CelebrationLayer from '../../components/CelebrationLayer/CelebrationLayer';
 import MissionActionPalette from '../../components/MissionActionPalette/MissionActionPalette';
 import type { MissionPaletteAction } from '../../components/MissionActionPalette/model';
+import OnboardingFlow from '../../components/Onboarding/OnboardingFlow';
+import { useOnboardingState } from '../../hooks/useOnboardingState';
 import BottomNav from './BottomNav';
 import useIsMobile from '../../hooks/useIsMobile';
 import { trackEvent } from '../../utils/telemetry';
@@ -28,6 +30,12 @@ const AppShell: React.FC = () => {
 
   const [paletteOpen, setPaletteOpen] = useState(false);
   const [missionMode, setMissionMode] = useState(isMissionModeEnabled);
+
+  // ── Onboarding flow (shared with MissionShell) ──
+  const onboarding = useOnboardingState({
+    fastPathTarget: '/train',
+    onNavigate: (path) => navigate(path),
+  });
 
   // Re-check mission mode when navigating (handles Profile toggle)
   useEffect(() => {
@@ -132,6 +140,14 @@ const AppShell: React.FC = () => {
       <CelebrationLayer />
 
       <div className={styles.shell}>
+        {/* ── Onboarding gates (first-run flow) ── */}
+        {onboarding.isOnboarding ? (
+          <OnboardingFlow
+            state={onboarding}
+            onStartBriefing={() => navigate('/train')}
+          />
+        ) : (
+        <>
         {/* ── Desktop tab bar ── */}
         {!isMobile && (
           <div className={styles.tabBar} role="tablist" aria-label="Primary navigation">
@@ -189,6 +205,8 @@ const AppShell: React.FC = () => {
         <main id="main-content" className={styles.content} aria-live="polite">
           <Outlet />
         </main>
+        </>
+        )}
       </div>
 
       {/* ── Mobile bottom nav ── */}

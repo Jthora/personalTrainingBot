@@ -25,6 +25,17 @@ vi.mock('react-router-dom', () => ({
 
 vi.mock('../../../utils/telemetry', () => ({ trackEvent: vi.fn() }));
 vi.mock('../../../hooks/useIsMobile', () => ({ default: () => false }));
+vi.mock('../../../store/OperativeProfileStore', () => ({
+  default: { get: vi.fn(() => ({ archetypeId: 'test', handlerId: 'h1' })), set: vi.fn() },
+}));
+vi.mock('../../../cache/TrainingModuleCache', () => ({
+  default: {
+    getInstance: vi.fn(() => ({
+      selectModules: vi.fn(),
+      isLoaded: vi.fn(() => false),
+    })),
+  },
+}));
 vi.mock('../../../store/CardProgressStore', () => ({
   default: {
     getCardsDueForReview: vi.fn(() => [{ cardId: 'c1' }, { cardId: 'c2' }]),
@@ -44,6 +55,9 @@ describe('AppShell', () => {
     vi.clearAllMocks();
     mockPathname = '/train';
     window.localStorage.clear();
+    // Bypass onboarding gates for shell tests
+    window.localStorage.setItem('mission:guidance-overlay:v1', 'seen');
+    window.localStorage.setItem('mission:intake:v1', 'seen');
   });
 
   it('renders Header, CelebrationLayer, and Outlet', () => {

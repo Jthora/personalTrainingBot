@@ -3,8 +3,8 @@
 > Single source of truth for all active work streams.
 >
 > **Last updated**: 2026-03-19
-> **Branch**: `main` @ `c215528` (8 commits ahead of origin) + uncommitted Batch 7
-> **Unit tests**: 1,405/1,405 passing | **Beta tests**: 21/21 passing | **Build**: clean (4.86s)
+> **Branch**: `main` @ `3d272c9` (9 commits ahead of origin) + uncommitted Batch 8
+> **Unit tests**: 1,435/1,435 passing | **Beta tests**: 21/21 passing | **Build**: clean (5.18s)
 
 ---
 
@@ -18,10 +18,10 @@
 | UI Deep Clean — Planning | **DONE** | 21/21 docs | `docs/ui-deep-clean/` |
 | UI Deep Clean — Phase 1 | **DONE** | 28/35 | Domain migration (7 conditional on repo rename) |
 | UI Deep Clean — Phase 2 | **DONE** | 93/93 | CSS token cleanup |
-| UI Deep Clean — Phase 3 | **In progress** | 18/39 | Loading & first impression |
-| UI Deep Clean — Phase 4 | Not started | 0/46 | Shell unification |
+| UI Deep Clean — Phase 3 | **In progress** | 33/39 | Loading & first impression |
+| UI Deep Clean — Phase 4 | Not started | 0/46 | Shell unification (unblocked by P3-020–034) |
 | UI Deep Clean — Phase 5 | **DONE** | 23/23 | Dead code purge |
-| UI Deep Clean — Phase 6 | **In progress** | 28/30 | Component polish |
+| UI Deep Clean — Phase 6 | **DONE** | 30/30 | Component polish |
 
 ---
 
@@ -132,10 +132,17 @@ Migrate legacy aliases, fix mismatched fallbacks, tokenize z-index, replace hard
 
 Eliminate white flash, brand the loading screen, port onboarding to AppShell v2.
 
-- [ ] **Step 3.1** — HTML splash screen in index.html (P3-001 → P3-005)
-- [ ] **Step 3.2** — LoadingMessage redesign (P3-006 → P3-013)
-- [ ] **Step 3.3** — Suspense fallback audit (P3-014 → P3-019)
-- [ ] **Step 3.4** — Onboarding port: MissionShell → shared component (P3-020 → P3-034)
+- [x] **Step 3.1** — HTML splash screen in index.html (P3-001 → P3-005) `bf59a7b`
+- [x] **Step 3.2** — LoadingMessage redesign (P3-006 → P3-013) `ed993a5` + `c215528`
+- [x] **Step 3.3** — Suspense fallback audit (P3-014 → P3-019) `3d272c9`
+- [x] **Step 3.4** — Onboarding port: MissionShell → shared component (P3-020 → P3-034) — Batch 8
+  - `useOnboardingState` hook — shared state machine for both shells
+  - `OnboardingFlow` orchestrator — renders correct step (guidance/archetype/handler/intake)
+  - `GuidanceOverlay` — extracted first-run welcome screen
+  - MissionShell refactored: ~150 lines of inline onboarding → `<OnboardingFlow>` (654→520 LOC)
+  - AppShell wired: onboarding gates added with early-return pattern
+  - 30 new tests: OnboardingFlow (14), useOnboardingState (16) — localStorage compat verified
+  - All 5 telemetry events preserved, all 3 localStorage keys backward-compatible
 - [ ] **Step 3.5** — Boot performance budget (P3-035 → P3-039)
 - [ ] **Verification** — white flash, onboarding paths, reduced motion, tests (P3-V01 → P3-V06)
 
@@ -177,10 +184,10 @@ Remove dead components, dead exports, dead CSS, stale redirects.
 
 Consolidate inline styles, add missing UX states, fix misc bugs.
 
-- [ ] **Step 6.1** — Move 39 inline styles to CSS modules across 22 files (P6-001 → P6-012)
-- [ ] **Step 6.2** — Add missing UX states: 404 page, skeletons, empty states (P6-013 → P6-022)
-- [ ] **Step 6.3** — Bug fixes: Header settings link, font issues (P6-023 → P6-026)
-- [ ] **Step 6.4** — CSS naming consistency (P6-027 → P6-030)
+- [x] **Step 6.1** — Move 39 inline styles to CSS modules across 22 files (P6-001 → P6-012) `bf59a7b` + `ed993a5`
+- [x] **Step 6.2** — Add missing UX states: 404 page, skeletons, empty states (P6-013 → P6-022) `c215528` + `3d272c9`
+- [x] **Step 6.3** — Bug fixes: Header settings link, font issues (P6-023 → P6-026) `3d272c9`
+- [x] **Step 6.4** — CSS naming consistency (P6-027 → P6-030) `3d272c9`
 - [ ] **Verification** — visual regression, 404, skeletons, tests (P6-V01 → P6-V06)
 
 ---
@@ -194,11 +201,11 @@ Consolidate inline styles, add missing UX states, fix misc bugs.
 | UI deep clean audit/docs | 21 | 21 | 0 |
 | Phase 1: Domain migration | 39 | 32 | 7 |
 | Phase 2: CSS tokens | 97 | 97 | 0 |
-| Phase 3: First impression | 45 | 18 | 27 |
+| Phase 3: First impression | 45 | 33 | 12 |
 | Phase 4: Shell unification | 55 | 0 | 55 |
 | Phase 5: Dead code | 27 | 27 | 0 |
-| Phase 6: Component polish | 36 | 28 | 8 |
-| **Total** | **593** | **495** | **98** |
+| Phase 6: Component polish | 36 | 36 | 0 |
+| **Total** | **593** | **518** | **75** |
 
 ---
 
@@ -216,6 +223,7 @@ These 8 commits are on `main` but not yet on `origin/main`:
 | `bf59a7b` | UI Deep Clean Batch 4 — CSS modules, splash screen, conventions | 9 files |
 | `ed993a5` | UI Deep Clean Batch 5 — Loading redesign, Suspense fallback, inline styles | 7 files |
 | `c215528` | UI Deep Clean Batch 6 — 404 page, SurfaceLoader a11y, reduced motion | 9 files |
+| `3d272c9` | UI Deep Clean Batch 7 — Skeleton loaders, empty states, component polish | 14 files |
 
 ---
 
@@ -223,9 +231,9 @@ These 8 commits are on `main` but not yet on `origin/main`:
 
 | Gate | Command | Current Status |
 |------|---------|---------------|
-| Unit tests | `npx vitest run` | 1,405/1,405 passing |
+| Unit tests | `npx vitest run` | 1,435/1,435 passing |
 | Beta tests | `npm run test:beta` | 21/21 passing |
-| Build | `npx vite build` | Clean (4.86s) |
+| Build | `npx vite build` | Clean (5.18s) |
 | Lint | `npx eslint src/` | — (run before committing) |
 
 > **Note**: `npm run build` fails due to missing `src/utils/generateCombinedTrainingData.ts`. Use `npx vite build` directly.

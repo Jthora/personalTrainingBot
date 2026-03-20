@@ -1,0 +1,85 @@
+/* ── Onboarding Flow shared styles ──
+   Used by GuidanceOverlay and OnboardingFlow container.
+   Guidance overlay classes migrated from MissionFlow.module.css.
+*/
+
+.container {
+  display: grid;
+  gap: 8px;
+  min-height: calc(100vh - var(--header-height, 60px) - 56px);
+  align-content: center;
+}
+
+/* ── Guidance Overlay ── */
+.guidanceOverlay {
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  background: var(--surface-card);
+  padding: 12px;
+  display: grid;
+  gap: 8px;
+  min-height: calc(100vh - var(--header-height, 60px) - 56px);
+  align-content: center;
+}
+
+.guidanceTitle {
+  margin: 0;
+  font-size: var(--type-h2);
+  color: var(--mission-trust-verified);
+}
+
+.guidanceBody {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.guidanceList {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--text-secondary);
+  display: grid;
+  gap: 4px;
+}
+
+.guidanceActions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* ── Shared step button ── */
+.stepButton {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: var(--text-primary);
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: var(--type-caption);
+  font-weight: 600;
+}
+
+@media (hover: hover) {
+  .stepButton:hover {
+    border-color: var(--accent);
+    background: rgba(90, 127, 255, 0.1);
+  }
+}
+
+.stepButton:active {
+  transform: scale(0.97);
+  opacity: 0.85;
+}
+
+/* ── Mobile adjustments ── */
+@media (max-width: 600px) {
+  .stepButton {
+    min-height: 44px;
+    padding: 12px 16px;
+  }
+
+  .guidanceOverlay {
+    min-height: auto;
+    align-content: start;
+  }
+}

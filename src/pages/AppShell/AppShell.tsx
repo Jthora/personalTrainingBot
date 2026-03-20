@@ -19,6 +19,9 @@ import {
 } from './appShellTabs';
 import { migrateNavStorage } from '../../utils/migrateNavStorage';
 import { useShellKeyboardShortcuts } from '../../hooks/useShellKeyboardShortcuts';
+import { useMissionPaletteActions } from '../../hooks/useMissionPaletteActions';
+import { useMissionFlowContinuity } from '../../hooks/useMissionFlowContinuity';
+import { PaletteContext } from '../../contexts/PaletteContext';
 import styles from './AppShell.module.css';
 
 // Run once on first import — idempotent
@@ -32,7 +35,10 @@ const AppShell: React.FC = () => {
   const [paletteOpen, setPaletteOpen] = useState(false);
   const [missionMode, setMissionMode] = useState(isMissionModeEnabled);
 
-  // ── Onboarding flow (shared with MissionShell) ──
+  const isMissionRoute = location.pathname.startsWith('/mission/') || location.pathname === '/mission';
+  const { routeSearch } = useMissionFlowContinuity();
+
+  // ── Onboarding flow ──
   const onboarding = useOnboardingState({
     fastPathTarget: '/train',
     onNavigate: (path) => navigate(path),
@@ -78,7 +84,9 @@ const AppShell: React.FC = () => {
     });
   }, [activePath]);
 
-  // ── Palette actions ──
+  // ── Palette actions (merges mission-specific actions when on mission route) ──
+  const missionPaletteActions = useMissionPaletteActions(isMissionRoute, routeSearch);
+
   const paletteActions: MissionPaletteAction[] = useMemo(() => {
     const actions: MissionPaletteAction[] = tabs.map((tab) => ({
       id: `tab:${tab.path}`,
@@ -96,8 +104,8 @@ const AppShell: React.FC = () => {
       search: '',
     });
 
-    return actions;
-  }, [tabs]);
+    return [...missionPaletteActions, ...actions];
+  }, [tabs, missionPaletteActions]);
 
   const handleTabClick = (tab: AppShellTab) => {
     trackEvent({
@@ -110,7 +118,13 @@ const AppShell: React.FC = () => {
     navigate(tab.path);
   };
 
+  const paletteControl = useMemo(
+    () => ({ open: () => setPaletteOpen(true) }),
+    [],
+  );
+
   return (
+    <PaletteContext.Provider value={paletteControl}>
     <div className={styles.pageContainer}>
       <Header />
       <CelebrationLayer />
@@ -206,6 +220,7 @@ const AppShell: React.FC = () => {
         }}
       />
     </div>
+    </PaletteContext.Provider>
   );
 };
 

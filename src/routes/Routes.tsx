@@ -8,15 +8,12 @@ import NotFound from '../pages/NotFound/NotFound';
 import TrainingSurfaceSkeleton from '../pages/MissionFlow/TrainingSurfaceSkeleton';
 import ReviewDashboardSkeleton from '../pages/AppShell/ReviewDashboardSkeleton';
 import ProfileSurfaceSkeleton from '../pages/AppShell/ProfileSurfaceSkeleton';
-import {
-  resolveLegacyAliasPath,
-} from './missionCutover';
 
-/* ── Lazy-loaded v1 mission shell ── */
-const MissionShell = lazy(() => import('../pages/MissionFlow/MissionShell'));
-
-/* ── Lazy-loaded v2 app shell ── */
+/* ── Lazy-loaded app shell (single unified shell) ── */
 const AppShell = lazy(() => import('../pages/AppShell/AppShell'));
+const MissionLayout = lazy(() => import('../pages/MissionFlow/MissionLayout'));
+
+/* ── Lazy-loaded primary surfaces ── */
 const ReviewDashboard = lazy(() => import('../pages/AppShell/ReviewDashboard'));
 const ProfileSurface = lazy(() => import('../pages/AppShell/ProfileSurface'));
 
@@ -45,49 +42,44 @@ const Surface: React.FC<{ children: React.ReactNode; skeleton?: React.ReactNode 
 );
 
 const AppRoutes: React.FC = () => {
-  const defaultRoot = '/train';
-
   return (
     <Routes>
-      <Route path="/" element={<Navigate to={defaultRoot} replace />} />
+      <Route path="/" element={<Navigate to="/train" replace />} />
 
-      {/* ── v2 shell routes ── */}
+      {/* ── Unified shell — all routes under AppShell ── */}
       <Route path="/" element={<Suspense fallback={<SurfaceLoader />}><AppShell /></Suspense>}>
+        {/* Primary surfaces */}
         <Route path="train" element={<Surface skeleton={<TrainingSurfaceSkeleton />}><TrainingSurface /></Surface>} />
         <Route path="train/quiz" element={<Surface><QuizSurface /></Surface>} />
         <Route path="review" element={<Surface skeleton={<ReviewDashboardSkeleton />}><ReviewDashboard /></Surface>} />
         <Route path="progress" element={<Surface><StatsSurface /></Surface>} />
         <Route path="profile" element={<Surface skeleton={<ProfileSurfaceSkeleton />}><ProfileSurface /></Surface>} />
+
+        {/* Mission surfaces — nested layout adds mission chrome */}
+        <Route path="mission" element={<Suspense fallback={<SurfaceLoader />}><MissionLayout /></Suspense>}>
+          <Route index element={<MissionEntryRedirect />} />
+          <Route path="brief" element={<Surface><BriefSurface /></Surface>} />
+          <Route path="triage" element={<Surface><TriageSurface /></Surface>} />
+          <Route path="case" element={<Surface><CaseSurface /></Surface>} />
+          <Route path="signal" element={<Surface><SignalSurface /></Surface>} />
+          <Route path="checklist" element={<Surface><ChecklistSurface /></Surface>} />
+          <Route path="debrief" element={<Surface><DebriefSurface /></Surface>} />
+          <Route path="stats" element={<Surface><StatsSurface /></Surface>} />
+          <Route path="plan" element={<Surface><PlanSurface /></Surface>} />
+          <Route path="training" element={<Surface><TrainingSurface /></Surface>} />
+          <Route path="quiz" element={<Surface><QuizSurface /></Surface>} />
+        </Route>
       </Route>
 
-      {/* ── Legacy /home redirects (remove after 2025-09-01) ── */}
-      <Route path="/home" element={<Navigate to="/train" replace />} />
-      <Route path="/home/plan" element={<Navigate to="/train" replace />} />
-      <Route path="/home/cards" element={<Navigate to="/train" replace />} />
-      <Route path="/home/progress" element={<Navigate to="/progress" replace />} />
-      <Route path="/home/handler" element={<Navigate to="/profile" replace />} />
-      <Route path="/home/settings" element={<Navigate to="/profile" replace />} />
+      {/* ── Legacy alias redirects ── */}
+      <Route path="/schedules" element={<Navigate to="/mission/brief" replace />} />
+      <Route path="/drills" element={<Navigate to="/mission/triage" replace />} />
+      <Route path="/training" element={<Navigate to="/mission/training" replace />} />
+      <Route path="/training/run" element={<Navigate to="/mission/training" replace />} />
+      <Route path="/settings" element={<Navigate to="/mission/debrief" replace />} />
 
-      {/* ── v1 mission shell (always mounted — routes always accessible) ── */}
-      <Route path="/mission" element={<Suspense fallback={<SurfaceLoader />}><MissionShell /></Suspense>}>
-        <Route index element={<MissionEntryRedirect />} />
-        <Route path="brief" element={<Surface><BriefSurface /></Surface>} />
-        <Route path="triage" element={<Surface><TriageSurface /></Surface>} />
-        <Route path="case" element={<Surface><CaseSurface /></Surface>} />
-        <Route path="signal" element={<Surface><SignalSurface /></Surface>} />
-        <Route path="checklist" element={<Surface><ChecklistSurface /></Surface>} />
-        <Route path="debrief" element={<Surface><DebriefSurface /></Surface>} />
-        <Route path="stats" element={<Surface><StatsSurface /></Surface>} />
-        <Route path="plan" element={<Surface><PlanSurface /></Surface>} />
-        <Route path="training" element={<Surface><TrainingSurface /></Surface>} />
-        <Route path="quiz" element={<Surface><QuizSurface /></Surface>} />
-      </Route>
-
-      <Route path="/schedules" element={<Navigate to={resolveLegacyAliasPath('/schedules')} replace />} />
-      <Route path="/drills" element={<Navigate to={resolveLegacyAliasPath('/drills')} replace />} />
-      <Route path="/training" element={<Navigate to={resolveLegacyAliasPath('/training')} replace />} />
-      <Route path="/training/run" element={<Navigate to={resolveLegacyAliasPath('/training/run')} replace />} />
-      <Route path="/settings" element={<Navigate to={resolveLegacyAliasPath('/settings')} replace />} />
+      {/* ── Legacy /home redirects (consolidated) ── */}
+      <Route path="/home/*" element={<Navigate to="/train" replace />} />
 
       <Route path="/c/:slug" element={<CardSlugRedirect />} />
       <Route path="/share/:slug" element={<Surface><CardSharePage /></Surface>} />

@@ -1,0 +1,87 @@
+/* ── Shared skeleton primitives ──
+   Import into any component that needs shimmer placeholder UI.
+   Combines with surface-specific layout classes.
+*/
+
+.container {
+  display: grid;
+  gap: 12px;
+  padding: 4px 0;
+}
+
+/* ── Shimmer base ── */
+.line,
+.lineShort,
+.lineNarrow,
+.block,
+.chip {
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.04)
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+
+/* ── Line variants ── */
+.line {
+  height: 14px;
+  width: 100%;
+}
+
+.lineShort {
+  height: 14px;
+  width: 60%;
+}
+
+.lineNarrow {
+  height: 10px;
+  width: 40%;
+}
+
+/* ── Block — card/chart placeholder ── */
+.block {
+  height: 80px;
+  width: 100%;
+}
+
+/* ── Chip — stat chip placeholder ── */
+.chip {
+  height: 56px;
+  border-radius: 10px;
+}
+
+/* ── Row helpers ── */
+.row {
+  display: flex;
+  gap: 12px;
+}
+
+.row > * {
+  flex: 1;
+}
+
+/* ── Shimmer keyframes ── */
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  .line,
+  .lineShort,
+  .lineNarrow,
+  .block,
+  .chip {
+    animation: none !important;
+    opacity: 0.5;
+  }
+}

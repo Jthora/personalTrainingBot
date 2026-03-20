@@ -21,6 +21,7 @@ import SovereigntyPanel from '../../components/SovereigntyPanel/SovereigntyPanel
 import { isFeatureEnabled } from '../../config/featureFlags';
 import OperativeProfileStore from '../../store/OperativeProfileStore';
 import { findArchetype } from '../../data/archetypes';
+import EmptyState from '../../components/EmptyState/EmptyState';
 
 const StatsSurface: React.FC = () => {
   const collection = useMissionEntityCollection();
@@ -33,6 +34,9 @@ const StatsSurface: React.FC = () => {
 
   const progress = UserProgressStore.get();
   const vm = UserProgressStore.getViewModel();
+
+  // Show welcome state for brand-new operatives
+  const hasActivity = progress.totalDrillsCompleted > 0 || progress.xp > 0;
 
   // Score trend chart data — top 5 active domains
   const chartSeries = useMemo(() => {
@@ -51,6 +55,14 @@ const StatsSurface: React.FC = () => {
   return (
     <section id="section-mission-stats" className={styles.surface} aria-label="Operative Dashboard">
       <h2 className={styles.title}>Operative Dashboard</h2>
+
+      {!hasActivity && (
+        <EmptyState
+          icon="🛰️"
+          title="Welcome, Operative"
+          message="Complete your first training drill to start tracking progress. Your stats, readiness score, and badges will appear here."
+        />
+      )}
 
       {/* Quick stats row */}
       <div className={statsStyles.quickStats}>

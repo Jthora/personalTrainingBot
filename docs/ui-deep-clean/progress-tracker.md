@@ -218,8 +218,8 @@
 - [x] `P3-015` Brand SurfaceLoader spinner — uses --accent/--accent-soft tokens, added reduced-motion opacity + SR text
 - [x] `P3-016` Add aria-live to SurfaceLoader — added aria-live="polite" + visually hidden loading text
 - [x] `P3-017` Verify SovereigntyPanel Suspense styles — uses styled .overlayDesc fallback, appropriate as-is
-- [ ] `P3-018` Add skeleton states for heavy surfaces
-- [ ] `P3-019` Measure lazy-load waterfall
+- [x] `P3-018` Add skeleton states for heavy surfaces — shared Skeleton component + 3 surface-specific skeletons wired into Routes.tsx
+- [x] `P3-019` Measure lazy-load waterfall — skeletons now visible during code-split load; index bundle +1.5KB
 
 ### Onboarding Port (15)
 - [ ] `P3-020` Create OnboardingFlow.tsx
@@ -401,13 +401,13 @@
 - [x] `P6-013` Create 404 page — NotFound.tsx with CSS module
 - [x] `P6-014` Add 404 catch-all route — replaced Navigate with NotFound in Routes.tsx
 - [x] `P6-015` Design 404 with branding — "Sector Not Found" theme, accent tokens, Return to Base link
-- [ ] `P6-016` TrainingSurface skeleton
-- [ ] `P6-017` ReviewDashboard skeleton
-- [ ] `P6-018` ProfileSurface skeleton
-- [ ] `P6-019` Shared Skeleton CSS module
-- [ ] `P6-020` Audit all surface empty states
-- [ ] `P6-021` ProgressSurface empty state
-- [ ] `P6-022` Standardize empty state styling
+- [x] `P6-016` TrainingSurface skeleton — TrainingSurfaceSkeleton.tsx (title + 3x2 grid blocks)
+- [x] `P6-017` ReviewDashboard skeleton — ReviewDashboardSkeleton.tsx (title + chips + blocks)
+- [x] `P6-018` ProfileSurface skeleton — ProfileSurfaceSkeleton.tsx (title + section lines + blocks)
+- [x] `P6-019` Shared Skeleton CSS module — Skeleton component with Line/LineShort/LineNarrow/Block/Chip/Row primitives
+- [x] `P6-020` Audit all surface empty states — ReviewDashboard has one, TodayLauncher has one, PlanSurface has .emptyDay; StatsSurface had none
+- [x] `P6-021` ProgressSurface empty state — added EmptyState "Welcome, Operative" in StatsSurface when zero drills/XP
+- [x] `P6-022` Standardize empty state styling — created shared EmptyState component (icon/title/message/children)
 
 ### Bug Fixes (4)
 - [x] `P6-023` Header settings link → /profile

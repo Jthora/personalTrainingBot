@@ -5,6 +5,9 @@ import MissionEntryRedirect from '../pages/MissionFlow/MissionEntryRedirect';
 import ErrorBoundary from '../components/ErrorBoundary/ErrorBoundary';
 import SurfaceLoader from '../components/SurfaceLoader/SurfaceLoader';
 import NotFound from '../pages/NotFound/NotFound';
+import TrainingSurfaceSkeleton from '../pages/MissionFlow/TrainingSurfaceSkeleton';
+import ReviewDashboardSkeleton from '../pages/AppShell/ReviewDashboardSkeleton';
+import ProfileSurfaceSkeleton from '../pages/AppShell/ProfileSurfaceSkeleton';
 import {
   resolveLegacyAliasPath,
 } from './missionCutover';
@@ -33,9 +36,9 @@ const QuizSurface = lazy(() => import('../pages/MissionFlow/QuizSurface'));
 const CardSharePage = lazy(() => import('../pages/CardSharePage/CardSharePage'));
 
 /** Wrap a lazy surface in Suspense + route-level error boundary */
-const Surface: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+const Surface: React.FC<{ children: React.ReactNode; skeleton?: React.ReactNode }> = ({ children, skeleton }) => (
   <ErrorBoundary level="route">
-    <Suspense fallback={<SurfaceLoader />}>
+    <Suspense fallback={skeleton ?? <SurfaceLoader />}>
       {children}
     </Suspense>
   </ErrorBoundary>
@@ -50,11 +53,11 @@ const AppRoutes: React.FC = () => {
 
       {/* ── v2 shell routes ── */}
       <Route path="/" element={<Suspense fallback={<SurfaceLoader />}><AppShell /></Suspense>}>
-        <Route path="train" element={<Surface><TrainingSurface /></Surface>} />
+        <Route path="train" element={<Surface skeleton={<TrainingSurfaceSkeleton />}><TrainingSurface /></Surface>} />
         <Route path="train/quiz" element={<Surface><QuizSurface /></Surface>} />
-        <Route path="review" element={<Surface><ReviewDashboard /></Surface>} />
+        <Route path="review" element={<Surface skeleton={<ReviewDashboardSkeleton />}><ReviewDashboard /></Surface>} />
         <Route path="progress" element={<Surface><StatsSurface /></Surface>} />
-        <Route path="profile" element={<Surface><ProfileSurface /></Surface>} />
+        <Route path="profile" element={<Surface skeleton={<ProfileSurfaceSkeleton />}><ProfileSurface /></Surface>} />
       </Route>
 
       {/* ── Legacy /home redirects (remove after 2025-09-01) ── */}

@@ -2,9 +2,9 @@
 
 > Single source of truth for all active work streams.
 >
-> **Last updated**: 2026-03-19
-> **Branch**: `main` @ `391d42e` (synced with origin)
-> **Unit tests**: 1,454/1,454 passing | **Beta tests**: 21/21 passing | **Build**: clean (5.54s)
+> **Last updated**: 2026-03-20
+> **Branch**: `main` @ `9a7dae2` (synced with origin)
+> **Unit tests**: 1,454/1,454 passing | **Beta tests**: 21/21 passing | **Build**: clean (5.71s)
 
 ---
 
@@ -22,6 +22,7 @@
 | UI Deep Clean — Phase 4 | **DONE** | 46/46 | Shell unification |
 | UI Deep Clean — Phase 5 | **DONE** | 23/23 | Dead code purge |
 | UI Deep Clean — Phase 6 | **DONE** | 30/30 | Component polish |
+| SEO & AI-Agent Audit | **DONE** | 15/15 | OG image, sitemap, llms-full.txt, JSON-LD, security headers |
 
 ---
 
@@ -105,7 +106,7 @@ Migrate all references from `personaltrainingbot.archangel.agency` to `academy.s
 - [x] **Step 1.6** — Documentation (4 tasks: P1-030 → P1-033)
 - [x] **Step 1.7** — localStorage key audit (2 tasks: P1-034 → P1-035)
 - [x] **Verification** — grep, build, tests (P1-V01 → P1-V03) ✔️
-  - P1-V04 (Lighthouse SEO 100) deferred to post-deployment
+  - P1-V04 (Lighthouse SEO 100) ✔️ confirmed locally
 
 ---
 
@@ -217,6 +218,28 @@ Consolidate inline styles, add missing UX states, fix misc bugs.
 
 ---
 
+### SEO & AI-Agent Audit `9a7dae2`
+
+> Audit of public-facing content for Starcom Academy identity at `academy.starcom.app`.
+
+- [x] **OG Image** — Created 1200×630 og-image.svg + og-image.png (replaced 64×64 favicon)
+- [x] **OG Meta** — Added og:image:width/height/type for proper social card rendering
+- [x] **Sitemap** — Created sitemap.xml (was declared in robots.txt but missing)
+- [x] **Twitter** — Added twitter:site + twitter:creator (@StarcomApp)
+- [x] **Stale Counts** — Fixed test count 1,402→1,454 in llms.txt; 100→180 test files in README
+- [x] **Contact** — Added contact@starcom.app to ai-plugin.json
+- [x] **llms-full.txt** — Created complete curriculum reference (19 modules, sub-module listings, API endpoints)
+- [x] **SVG Favicon** — Added `<link rel="icon" type="image/svg+xml">` to head
+- [x] **Security Headers** — Added X-Content-Type-Options, X-Frame-Options, Referrer-Policy
+- [x] **JSON-LD** — Enriched Course: courseCode, teaches, audience, about, per-track codes
+- [x] **Manifest** — Added PWA shortcuts (Start Training, View Stats)
+- [x] **Discovery** — Updated robots.txt and ai.txt with llms-full.txt reference
+- [ ] **Remaining** — GitHub repo rename `personalTrainingBot` → `starcom-academy` (conditional)
+- [ ] **Remaining** — Manifest screenshots (needs live app screenshots)
+- [ ] **Remaining** — security.txt Acknowledgments URL (needs page)
+
+---
+
 ## Totals
 
 | Category | Tasks | Complete | Remaining |
@@ -224,19 +247,20 @@ Consolidate inline styles, add missing UX states, fix misc bugs.
 | Beta test suite | 269 | 269 | 0 |
 | Bug fixes | 4 | 4 | 0 |
 | UI deep clean audit/docs | 21 | 21 | 0 |
-| Phase 1: Domain migration | 39 | 32 | 7 |
+| Phase 1: Domain migration | 39 | 33 | 6 |
 | Phase 2: CSS tokens | 97 | 97 | 0 |
 | Phase 3: First impression | 45 | 45 | 0 |
 | Phase 4: Shell unification | 55 | 54 | 1 |
 | Phase 5: Dead code | 27 | 27 | 0 |
 | Phase 6: Component polish | 36 | 33 | 3 |
-| **Total** | **593** | **583** | **10** |
+| SEO & AI-agent audit | 15 | 12 | 3 |
+| **Total** | **608** | **595** | **13** |
 
 ---
 
 ## Unpushed Commits
 
-These 18 commits are on `main` but not yet on `origin/main`:
+All commits through `9a7dae2` are synced with `origin/main`.
 
 | Commit | Summary | Files |
 |--------|---------|-------|
@@ -258,6 +282,9 @@ These 18 commits are on `main` but not yet on `origin/main`:
 | `9ec57ac` | P6-028: MissionFlow.module.css → MissionSurfaces.module.css | 15 files |
 | `1da1d7a` | Progress tracker updates | 1 file |
 | `3fd286b` | P3-007: Branded icon in LoadingMessage | 3 files |
+| `391d42e` | Sync both progress trackers | 2 files |
+| `28ece11` | Mark origin synced | 1 file |
+| `9a7dae2` | SEO & AI-agent audit fixes — OG image, sitemap, llms-full.txt, enriched JSON-LD | 12 files |
 
 ---
 
@@ -265,6 +292,7 @@ These 18 commits are on `main` but not yet on `origin/main`:
 
 | Gate | Command | Current Status |
 |------|---------|---------------|
+| Lighthouse (local) | `CHROME_PATH=... npx lighthouse` | SEO 100 / A11y 98 / Best Practices 96 |
 | Unit tests | `npx vitest run` | 1,454/1,454 passing |
 | Beta tests | `npm run test:beta` | 21/21 passing |
 | Build | `npx vite build` | Clean (5.54s) |

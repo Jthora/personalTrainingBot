@@ -16,12 +16,12 @@
 
 .online {
     background: rgba(0, 128, 96, 0.14);
-    color: #0f5132;
+    color: #2dd4a0;
     border: 1px solid rgba(0, 128, 96, 0.35);
 }
 
 .offline {
     background: rgba(128, 0, 32, 0.14);
-    color: #641220;
+    color: #f0756e;
     border: 1px solid rgba(128, 0, 32, 0.35);
 }

@@ -46,7 +46,7 @@
 - [x] `P1-025` _redirects file — N/A (no domain refs)
 - [x] `P1-026` _headers file — N/A (no domain refs)
 - [x] `P1-027` robots.txt (if exists) — updated
-- [x] `P1-028` sitemap.xml (if exists) — N/A (no sitemap file)
+- [x] `P1-028` sitemap.xml (if exists) — created in SEO audit `9a7dae2`
 - [x] `P1-029` CNAME / DNS config docs — N/A (no CNAME file)
 
 ### Documentation (4 tasks)
@@ -62,8 +62,8 @@
 ### Verification
 - [x] `P1-V01` grep for old domain → 0 results (excluding docs/ui-deep-clean)
 - [x] `P1-V02` Build succeeds
-- [x] `P1-V03` All tests pass (1,395/1,395)
-- [ ] `P1-V04` Lighthouse SEO 100 — deferred to post-deployment
+- [x] `P1-V03` All tests pass (1,454/1,454)
+- [x] `P1-V04` Lighthouse SEO 100 — confirmed locally (Lighthouse 12.6, Chromium headless)
 
 </details>
 

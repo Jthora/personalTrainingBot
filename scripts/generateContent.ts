@@ -21,6 +21,17 @@
  *   npx tsx scripts/generateContent.ts --dry-run
  *   npx tsx scripts/generateContent.ts --apply   # write improved cards back to shards
  *
+ * AI backends (free — requires API key):
+ *   npx tsx scripts/generateContent.ts --backend=groq   --module=cybersecurity
+ *   npx tsx scripts/generateContent.ts --backend=gemini --module=cybersecurity
+ *   npx tsx scripts/generateContent.ts --backend=groq   --apply
+ *   API key via env:  GROQ_API_KEY=<key>  or  GEMINI_API_KEY=<key>
+ *   Or via flag:      --api-key=<key>
+ *   Rate limit delay: --delay=1200  (ms between cards, default 1200 = 50 req/min)
+ *
+ *   Get free Groq key (14 400 req/day):   https://console.groq.com
+ *   Get free Gemini key (1 500 req/day):  https://aistudio.google.com
+ *
  * Output:  generated-cards/{module}/{deck}.json  (for human review)
  *          artifacts/content-generation-report.json
  *
@@ -653,9 +664,172 @@ function improveSummaryText(card: Card): string {
   return summary;
 }
 
+// ─── AI Backend Integration ───────────────────────────────────────
+
+function sleep(ms: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+/**
+ * Call Groq's free chat API (llama-3.3-70b-versatile).
+ * Free tier: 14 400 req/day, 30 req/min.  Sign up at https://console.groq.com
+ */
+async function callGroq(prompt: string, apiKey: string): Promise<string> {
+  const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
+    body: JSON.stringify({
+      model: 'llama-3.3-70b-versatile',
+      messages: [{ role: 'user', content: prompt }],
+      temperature: 0.7,
+      max_tokens: 1400,
+      response_format: { type: 'json_object' },
+    }),
+  });
+  if (!response.ok) throw new Error(`Groq ${response.status}: ${await response.text()}`);
+  const data = (await response.json()) as { choices: { message: { content: string } }[] };
+  return data.choices[0].message.content;
+}
+
+/**
+ * Call Google Gemini Flash 2.0 (free tier: 1 500 req/day, 15 req/min).
+ * Sign up at https://aistudio.google.com
+ */
+async function callGemini(prompt: string, apiKey: string): Promise<string> {
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      contents: [{ parts: [{ text: prompt }] }],
+      generationConfig: {
+        responseMimeType: 'application/json',
+        temperature: 0.7,
+        maxOutputTokens: 1400,
+      },
+    }),
+  });
+  if (!response.ok) throw new Error(`Gemini ${response.status}: ${await response.text()}`);
+  const data = (await response.json()) as {
+    candidates: { content: { parts: { text: string }[] } }[];
+  };
+  return data.candidates?.[0]?.content?.parts?.[0]?.text ?? '{}';
+}
+
+function buildCardPrompt(
+  card: Card,
+  ctx: { domain: string; scenarioContext: string; exerciseHints: string[] },
+): string {
+  const { title, description = '', keyTerms = [] } = card;
+  const ktList = keyTerms.slice(0, 5).join(', ') || 'N/A';
+  const hints = ctx.exerciseHints.slice(0, 3).join(', ');
+  const klass = title.replace(/^(the|a|an)\s+/i, '').toLowerCase();
+
+  return `You are an expert instructor in ${ctx.domain}. Generate training card content for a recruit-level course.
+
+CARD TITLE: ${title}
+EXISTING DESCRIPTION: ${description || '(none)'}
+KEY TERMS: ${ktList}
+DOMAIN HINTS: ${hints}
+SCENARIO CONTEXT: ${ctx.scenarioContext}
+
+Respond ONLY with a JSON object matching this exact schema. ALL content must be specific to "${title}" in "${ctx.domain}". No generic filler phrases.
+
+{
+  "description": "2-3 sentences explaining ${title} specifically in ${ctx.domain}. Minimum 60 chars.",
+  "bulletpoints": [
+    "Specific fact or principle about ${klass} (minimum 20 words, domain-specific, no template filler)",
+    "Second specific fact (minimum 20 words)",
+    "Third specific fact (minimum 20 words)",
+    "Fourth specific fact (minimum 20 words)"
+  ],
+  "exercises": [
+    {
+      "type": "recall",
+      "prompt": "Define ${title} and explain its significance in ${ctx.domain}.",
+      "expectedOutcome": "Specific answer criteria describing what ${title} means and why it matters in ${ctx.domain}."
+    },
+    {
+      "type": "apply",
+      "prompt": "Describe step-by-step how you would apply ${title} in ${ctx.domain}.",
+      "steps": ["Concrete step 1", "Concrete step 2", "Concrete step 3"],
+      "expectedOutcome": "Specific outcomes showing correct application of ${title}."
+    },
+    {
+      "type": "analyze",
+      "prompt": "Compare an effective vs flawed approach to ${title} in ${ctx.domain}. What distinguishes success from failure?",
+      "expectedOutcome": "A comparative analysis identifying key differentiators for ${title}."
+    },
+    {
+      "type": "self-check",
+      "prompt": "Without notes: explain ${title}. Rate your confidence 1-5 and identify any gaps.",
+      "checklist": ["Can I define ${title}?", "Can I apply it under pressure?", "Can I explain why it matters?"],
+      "expectedOutcome": "Honest self-assessment identifying specific knowledge gaps in ${title}."
+    },
+    {
+      "type": "scenario",
+      "prompt": "${ctx.scenarioContext} You encounter a situation requiring immediate application of ${title}. What is your first action?",
+      "context": "Brief operational context specific to ${title}.",
+      "options": [
+        "Take immediate action without assessment",
+        "Assess the situation, then apply ${title} principles systematically",
+        "Defer to higher authority and wait for orders",
+        "Fall back to generic protocol regardless of context"
+      ],
+      "correctIndex": 1,
+      "explanation": "Option B is correct because effective ${title} in ${ctx.domain} requires situational assessment before action — impulsive action (A) ignores critical variables, deferral (C) causes dangerous delays, and generic protocol (D) misses context-specific factors.",
+      "expectedOutcome": "Correct selection with a specific justification grounded in ${title} principles."
+    }
+  ]
+}`;
+}
+
+/**
+ * Call the selected AI backend and return improved card fields.
+ * Returns an empty object on failure (caller falls back to templates).
+ */
+async function generateWithAI(
+  card: Card,
+  moduleId: string,
+  backend: 'groq' | 'gemini',
+  apiKey: string,
+): Promise<Partial<Card>> {
+  const ctx = MODULE_CONTEXT[moduleId] ?? {
+    domain: 'operations',
+    scenarioContext: 'You are a practitioner facing a complex situation.',
+    exerciseHints: ['practical application', 'critical analysis', 'problem solving'],
+  };
+
+  const prompt = buildCardPrompt(card, ctx);
+  const raw = backend === 'groq' ? await callGroq(prompt, apiKey) : await callGemini(prompt, apiKey);
+
+  const parsed = JSON.parse(raw) as {
+    description?: string;
+    bulletpoints?: string[];
+    exercises?: Exercise[];
+  };
+
+  const result: Partial<Card> = {};
+  if (typeof parsed.description === 'string' && parsed.description.length >= 50) {
+    result.description = parsed.description;
+  }
+  if (Array.isArray(parsed.bulletpoints) && parsed.bulletpoints.length >= 4) {
+    result.bulletpoints = parsed.bulletpoints.slice(0, 6);
+  }
+  if (Array.isArray(parsed.exercises) && parsed.exercises.length >= 3) {
+    result.exercises = parsed.exercises.slice(0, 5) as Exercise[];
+  }
+  return result;
+}
+
 // ─── Card Improvement Pipeline ───────────────────────────────────
 
-function improveCard(card: Card, moduleId: string): { card: Card; changes: string[] } {
+async function improveCard(
+  card: Card,
+  moduleId: string,
+  aiBackend: 'groq' | 'gemini' | 'none' = 'none',
+  apiKey?: string,
+): Promise<{ card: Card; changes: string[] }> {
   const ctx = MODULE_CONTEXT[moduleId] ?? {
     domain: 'the field',
     exerciseHints: ['practical application', 'critical analysis', 'problem solving', 'effective implementation'],
@@ -665,44 +839,71 @@ function improveCard(card: Card, moduleId: string): { card: Card; changes: strin
   const changes: string[] = [];
   const improved = { ...card };
 
-  // 1. Description
-  const newDesc = improveDescription(card, ctx);
-  if (newDesc !== card.description) {
-    improved.description = newDesc;
-    changes.push('description-expanded');
+  // 0. AI-driven generation — replaces description, bulletpoints, exercises when available
+  if (aiBackend !== 'none' && apiKey) {
+    try {
+      const aiResult = await generateWithAI(card, moduleId, aiBackend, apiKey);
+      if (aiResult.description) {
+        improved.description = aiResult.description;
+        changes.push('description-ai');
+      }
+      if (aiResult.bulletpoints) {
+        improved.bulletpoints = aiResult.bulletpoints;
+        changes.push('bulletpoints-ai');
+      }
+      if (aiResult.exercises) {
+        improved.exercises = aiResult.exercises;
+        changes.push('exercises-ai');
+      }
+    } catch (err) {
+      process.stderr.write(`    ⚠ AI failed for "${card.title}": ${(err as Error).message} — using template\n`);
+    }
   }
 
-  // 2. Bulletpoints
-  const newBps = improveBulletpoints(card, ctx);
-  if (JSON.stringify(newBps) !== JSON.stringify(card.bulletpoints)) {
-    improved.bulletpoints = newBps;
-    changes.push('bulletpoints-improved');
+  // 1. Description (template fallback if AI did not generate one)
+  if (!changes.includes('description-ai')) {
+    const newDesc = improveDescription(improved, ctx);
+    if (newDesc !== improved.description) {
+      improved.description = newDesc;
+      changes.push('description-expanded');
+    }
   }
 
-  // 3. Exercises
-  const newExercises = improveExercises(card, ctx);
-  if (JSON.stringify(newExercises) !== JSON.stringify(card.exercises)) {
-    improved.exercises = newExercises;
-    changes.push('exercises-improved');
+  // 2. Bulletpoints (template fallback)
+  if (!changes.includes('bulletpoints-ai')) {
+    const newBps = improveBulletpoints(improved, ctx);
+    if (JSON.stringify(newBps) !== JSON.stringify(improved.bulletpoints)) {
+      improved.bulletpoints = newBps;
+      changes.push('bulletpoints-improved');
+    }
   }
 
-  // 4. Learning objectives
-  const newObjectives = improveLearningObjectives(card, ctx);
-  if (JSON.stringify(newObjectives) !== JSON.stringify(card.learningObjectives)) {
+  // 3. Exercises (template fallback)
+  if (!changes.includes('exercises-ai')) {
+    const newExercises = improveExercises(improved, ctx);
+    if (JSON.stringify(newExercises) !== JSON.stringify(improved.exercises)) {
+      improved.exercises = newExercises;
+      changes.push('exercises-improved');
+    }
+  }
+
+  // 4. Learning objectives (always template — AI doesn't generate these)
+  const newObjectives = improveLearningObjectives(improved, ctx);
+  if (JSON.stringify(newObjectives) !== JSON.stringify(improved.learningObjectives)) {
     improved.learningObjectives = newObjectives;
     changes.push('objectives-improved');
   }
 
   // 5. Key terms
-  const newTerms = improveKeyTerms(card, ctx);
-  if (JSON.stringify(newTerms) !== JSON.stringify(card.keyTerms)) {
+  const newTerms = improveKeyTerms(improved, ctx);
+  if (JSON.stringify(newTerms) !== JSON.stringify(improved.keyTerms)) {
     improved.keyTerms = newTerms;
     changes.push('keyTerms-improved');
   }
 
   // 6. Summary text
   const newSummary = improveSummaryText({ ...card, ...improved });
-  if (newSummary !== card.summaryText) {
+  if (newSummary !== improved.summaryText) {
     improved.summaryText = newSummary;
     changes.push('summaryText-improved');
   }
@@ -717,21 +918,39 @@ function parseArgs() {
   let moduleFilter: string | undefined;
   let dryRun = false;
   let apply = false;
+  let backend: 'groq' | 'gemini' | 'none' = 'none';
+  let apiKey: string | undefined;
+  let delayMs = 1200; // ~50 req/min — safe for Groq free tier (30 req/min hard limit)
 
   for (const arg of args) {
     if (arg.startsWith('--module=')) moduleFilter = arg.split('=')[1];
     if (arg === '--dry-run') dryRun = true;
     if (arg === '--apply') apply = true;
+    if (arg.startsWith('--backend=')) backend = arg.split('=')[1] as 'groq' | 'gemini' | 'none';
+    if (arg.startsWith('--api-key=')) apiKey = arg.split('=')[1];
+    if (arg.startsWith('--delay=')) delayMs = parseInt(arg.split('=')[1] ?? '1200', 10) || 1200;
   }
 
-  return { moduleFilter, dryRun, apply };
+  // Fall back to environment variables
+  if (backend === 'groq' && !apiKey) apiKey = process.env['GROQ_API_KEY'];
+  if (backend === 'gemini' && !apiKey) apiKey = process.env['GEMINI_API_KEY'] ?? process.env['GOOGLE_AI_KEY'];
+
+  return { moduleFilter, dryRun, apply, backend, apiKey, delayMs };
 }
 
-function main() {
-  const { moduleFilter, dryRun, apply } = parseArgs();
+async function main() {
+  const { moduleFilter, dryRun, apply, backend, apiKey, delayMs } = parseArgs();
 
   console.log('🔧 Content Generation Pipeline — Improving card quality…\n');
   if (dryRun) console.log('  (DRY RUN — no files will be written)\n');
+
+  if (backend !== 'none') {
+    if (!apiKey) {
+      console.error(`  ✗ --backend=${backend} requires an API key.\n    Set ${backend === 'groq' ? 'GROQ_API_KEY' : 'GEMINI_API_KEY'} or pass --api-key=<key>\n`);
+      process.exit(1);
+    }
+    console.log(`  AI backend: ${backend}  (delay: ${delayMs}ms/card)\n`);
+  }
 
   const modules = loadModules(moduleFilter);
   console.log(`  Found ${modules.length} module${modules.length !== 1 ? 's' : ''}\n`);
@@ -739,21 +958,25 @@ function main() {
   const moduleReports: ModuleGenerationReport[] = [];
   let grandTotalCards = 0;
   let grandTotalImproved = 0;
-  let grandOriginalScores: number[] = [];
-  let grandImprovedScores: number[] = [];
+  const grandOriginalScores: number[] = [];
+  const grandImprovedScores: number[] = [];
   let grandStillBelow6 = 0;
 
   for (const mod of modules) {
     const improvements: CardImprovement[] = [];
-    let moduleOriginalScores: number[] = [];
-    let moduleImprovedScores: number[] = [];
+    const moduleOriginalScores: number[] = [];
+    const moduleImprovedScores: number[] = [];
 
     for (const deck of mod.decks) {
       const improvedCards: Card[] = [];
 
       for (const card of deck.cards) {
         const originalResult = scoreCard(card);
-        const { card: improved, changes } = improveCard(card, mod.id);
+        const { card: improved, changes } = await improveCard(card, mod.id, backend, apiKey);
+
+        // Throttle AI requests to stay within free-tier rate limits
+        if (backend !== 'none' && apiKey) await sleep(delayMs);
+
         const improvedResult = scoreCard(improved);
 
         improvedCards.push(improved);
@@ -856,7 +1079,7 @@ function main() {
   console.log(`  Improved:         ${grandTotalImproved}`);
   console.log(`  Original Avg:     ${overallOrigAvg}/10`);
   console.log(`  Improved Avg:     ${overallImprovedAvg}/10`);
-  console.log(`  Still Below 6:    ${grandStillBelow6} cards (${grandTotalCards > 0 ? Math.round(grandStillBelow6 / grandTotalCards * 100) : 0}%)`);
+  console.log(`  Still Below 6:    ${grandStillBelow6} cards (${grandTotalCards > 0 ? Math.round((grandStillBelow6 / grandTotalCards) * 100) : 0}%)`);
   if (!dryRun) {
     console.log(`\n  Review:  ${OUTPUT_DIR}`);
     console.log(`  Report:  ${REPORT_PATH}`);
@@ -866,4 +1089,7 @@ function main() {
   }
 }
 
-main();
+main().catch((err) => {
+  console.error('Fatal:', err);
+  process.exit(1);
+});

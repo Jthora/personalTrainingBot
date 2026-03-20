@@ -13,10 +13,10 @@ export type FeatureFlagConfig = Record<FeatureFlagKey, boolean> & Record<GlobalF
 const LOCAL_STORAGE_KEY = 'featureFlagOverrides';
 
 const DEFAULT_FLAGS: FeatureFlagConfig = {
-    performanceInstrumentation: false,
-    loadingCacheV2: false,
-    p2pIdentity: false,
-    ipfsContent: false,
+    performanceInstrumentation: true,
+    loadingCacheV2: true,
+    p2pIdentity: true,
+    ipfsContent: true,
     globalKillSwitch: false,
 };
 
@@ -32,14 +32,14 @@ const ENV_DEFAULT_FLAGS: Record<AppEnv, Partial<FeatureFlagConfig>> = {
         performanceInstrumentation: true,
         loadingCacheV2: true,
         p2pIdentity: true,
-        ipfsContent: false,
+        ipfsContent: true,
         globalKillSwitch: false,
     },
     production: {
-        performanceInstrumentation: false,
-        loadingCacheV2: false,
-        p2pIdentity: false,
-        ipfsContent: false,
+        performanceInstrumentation: true,
+        loadingCacheV2: true,
+        p2pIdentity: true,
+        ipfsContent: true,
         globalKillSwitch: false,
     },
 };

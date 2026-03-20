@@ -7,6 +7,8 @@ const mockEnv = (mode: string, featureJson?: string) => {
     vi.stubEnv('MODE', mode);
     if (featureJson) {
         vi.stubEnv('VITE_FEATURE_FLAGS', featureJson);
+    } else {
+        vi.stubEnv('VITE_FEATURE_FLAGS', '');
     }
     (import.meta as any).env = { MODE: mode, VITE_FEATURE_FLAGS: featureJson };
 };
@@ -22,19 +24,19 @@ describe('featureFlags', () => {
     it('uses production defaults when in production', async () => {
         mockEnv('production');
         const mod = await loadModule();
-        expect(mod.isFeatureEnabled('performanceInstrumentation')).toBe(false);
-        expect(mod.isFeatureEnabled('loadingCacheV2')).toBe(false);
-        expect(mod.isFeatureEnabled('p2pIdentity')).toBe(false);
-        expect(mod.isFeatureEnabled('ipfsContent')).toBe(false);
+        expect(mod.isFeatureEnabled('performanceInstrumentation')).toBe(true);
+        expect(mod.isFeatureEnabled('loadingCacheV2')).toBe(true);
+        expect(mod.isFeatureEnabled('p2pIdentity')).toBe(true);
+        expect(mod.isFeatureEnabled('ipfsContent')).toBe(true);
     });
 
-    it('uses development defaults when in staging', async () => {
+    it('uses default-on behavior when in staging', async () => {
         mockEnv('staging');
         const mod = await loadModule();
         expect(mod.isFeatureEnabled('performanceInstrumentation')).toBe(true);
         expect(mod.isFeatureEnabled('loadingCacheV2')).toBe(true);
         expect(mod.isFeatureEnabled('p2pIdentity')).toBe(true);
-        expect(mod.isFeatureEnabled('ipfsContent')).toBe(false);
+        expect(mod.isFeatureEnabled('ipfsContent')).toBe(true);
     });
 
     it('honors VITE_FEATURE_FLAGS overrides', async () => {
@@ -65,7 +67,7 @@ describe('featureFlags', () => {
         vi.resetModules();
         mockEnv('production');
         mod = await loadModule();
-        expect(mod.isFeatureEnabled('p2pIdentity')).toBe(false);
-        expect(mod.isFeatureEnabled('performanceInstrumentation')).toBe(false);
+        expect(mod.isFeatureEnabled('p2pIdentity')).toBe(true);
+        expect(mod.isFeatureEnabled('performanceInstrumentation')).toBe(true);
     });
 });

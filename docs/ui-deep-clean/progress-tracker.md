@@ -205,7 +205,7 @@
 
 ### LoadingMessage Redesign (8)
 - [x] `P3-006` Replace "App Loading" text — stage labels: Initializing/Restoring/Loading/Preparing/Online
-- [ ] `P3-007` Add branded logo/icon
+- [x] `P3-007` Add branded logo/icon — public/icon.svg (shield+wings+star) imported into LoadingMessage
 - [x] `P3-008` Fix `--handler-accent` → `--accent`
 - [x] `P3-009` Convert kebab → camelCase CSS classes
 - [x] `P3-010` Fix hardcoded `#ffffff` — done in P2 token migration
@@ -250,7 +250,7 @@
 - [x] `P3-V02` New user onboarding in AppShell — validated: OnboardingFlow wired in
 - [x] `P3-V03` Returning user loads directly — validated: fast-path skip working
 - [x] `P3-V04` Reduced motion works — validated: CSS @media prefers-reduced-motion
-- [x] `P3-V05` Unit tests pass — 1,435/1,435
+- [x] `P3-V05` Unit tests pass — 1,454/1,454
 - [x] `P3-V06` Beta tests pass — requires live browser (CI gate)
 
 </details>

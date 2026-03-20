@@ -3,8 +3,8 @@
 > Single source of truth for all active work streams.
 >
 > **Last updated**: 2026-03-19
-> **Branch**: `main` @ `3d272c9` (9 commits ahead of origin) + uncommitted Batch 8
-> **Unit tests**: 1,435/1,435 passing | **Beta tests**: 21/21 passing | **Build**: clean (5.18s)
+> **Branch**: `main` @ `3fd286b` (18 commits ahead of origin)
+> **Unit tests**: 1,454/1,454 passing | **Beta tests**: 21/21 passing | **Build**: clean (5.54s)
 
 ---
 
@@ -18,8 +18,8 @@
 | UI Deep Clean — Planning | **DONE** | 21/21 docs | `docs/ui-deep-clean/` |
 | UI Deep Clean — Phase 1 | **DONE** | 28/35 | Domain migration (7 conditional on repo rename) |
 | UI Deep Clean — Phase 2 | **DONE** | 93/93 | CSS token cleanup |
-| UI Deep Clean — Phase 3 | **In progress** | 33/39 | Loading & first impression |
-| UI Deep Clean — Phase 4 | Not started | 0/46 | Shell unification (unblocked by P3-020–034) |
+| UI Deep Clean — Phase 3 | **DONE** | 39/39 | Loading & first impression |
+| UI Deep Clean — Phase 4 | **DONE** | 46/46 | Shell unification |
 | UI Deep Clean — Phase 5 | **DONE** | 23/23 | Dead code purge |
 | UI Deep Clean — Phase 6 | **DONE** | 30/30 | Component polish |
 
@@ -97,14 +97,15 @@ Phases 1, 2, and 6 can run in parallel with the 3→4→5 chain.
 
 Migrate all references from `personaltrainingbot.archangel.agency` to `academy.starcom.app`.
 
-- [ ] **Step 1.1** — index.html meta tags (10 tasks: P1-001 → P1-010)
-- [ ] **Step 1.2** — manifest.webmanifest (3 tasks: P1-011 → P1-013)
-- [ ] **Step 1.3** — Service worker (2 tasks: P1-014 → P1-015)
-- [ ] **Step 1.4** — Source code URLs (8 tasks: P1-016 → P1-023)
-- [ ] **Step 1.5** — Config files (6 tasks: P1-024 → P1-029)
-- [ ] **Step 1.6** — Documentation (4 tasks: P1-030 → P1-033)
-- [ ] **Step 1.7** — localStorage key audit (2 tasks: P1-034 → P1-035)
-- [ ] **Verification** — grep, build, tests, Lighthouse (P1-V01 → P1-V04)
+- [x] **Step 1.1** — index.html meta tags (10 tasks: P1-001 → P1-010)
+- [x] **Step 1.2** — manifest.webmanifest (3 tasks: P1-011 → P1-013)
+- [x] **Step 1.3** — Service worker (2 tasks: P1-014 → P1-015)
+- [x] **Step 1.4** — Source code URLs (8 tasks: P1-016 → P1-023)
+- [x] **Step 1.5** — Config files (6 tasks: P1-024 → P1-029)
+- [x] **Step 1.6** — Documentation (4 tasks: P1-030 → P1-033)
+- [x] **Step 1.7** — localStorage key audit (2 tasks: P1-034 → P1-035)
+- [x] **Verification** — grep, build, tests (P1-V01 → P1-V03) ✔️
+  - P1-V04 (Lighthouse SEO 100) deferred to post-deployment
 
 ---
 
@@ -114,15 +115,15 @@ Migrate all references from `personaltrainingbot.archangel.agency` to `academy.s
 
 Migrate legacy aliases, fix mismatched fallbacks, tokenize z-index, replace hardcoded hex.
 
-- [ ] **Step 2.1** — Delete 7 dead alias definitions (P2-001 → P2-007)
-- [ ] **Step 2.2** — `--handler-accent` → `--accent` in 22 CSS files + 1 TS (P2-008 → P2-033)
-- [ ] **Step 2.3** — Remaining handler aliases: `-soft`, `-strong`, `-glow`, `-border`, `panel-bg` (P2-034 → P2-039)
-- [ ] **Step 2.4** — `--mission-type-*` → `--type-*` in 16 files (P2-040 → P2-057)
-- [ ] **Step 2.5** — Fix mismatched fallback hex values (P2-058 → P2-064)
-- [ ] **Step 2.6** — Replace hardcoded hex with tokens in ~13 files (P2-065 → P2-077)
-- [ ] **Step 2.7** — Tokenize z-index in 12 files (P2-078 → P2-090)
-- [ ] **Step 2.8** — Font fixes + breakpoint docs (P2-091 → P2-093)
-- [ ] **Verification** — grep, unit tests, beta tests, visual comparison (P2-V01 → P2-V04)
+- [x] **Step 2.1** — Delete 7 dead alias definitions (P2-001 → P2-007) `e706160`
+- [x] **Step 2.2** — `--handler-accent` → `--accent` in 22 CSS files + 1 TS (P2-008 → P2-033) `e706160`
+- [x] **Step 2.3** — Remaining handler aliases: `-soft`, `-strong`, `-glow`, `-border`, `panel-bg` (P2-034 → P2-039) `e706160`
+- [x] **Step 2.4** — `--mission-type-*` → `--type-*` in 16 files (P2-040 → P2-057) `2480c36`
+- [x] **Step 2.5** — Fix mismatched fallback hex values (P2-058 → P2-064) `2480c36`
+- [x] **Step 2.6** — Replace hardcoded hex with tokens in ~13 files (P2-065 → P2-077) `2480c36`
+- [x] **Step 2.7** — Tokenize z-index in 12 files (P2-078 → P2-090) `2480c36`
+- [x] **Step 2.8** — Font fixes + breakpoint docs (P2-091 → P2-093) `2480c36`
+- [x] **Verification** — grep, unit tests, visual comparison (P2-V01 → P2-V04) ✔️
 
 ---
 
@@ -135,7 +136,7 @@ Eliminate white flash, brand the loading screen, port onboarding to AppShell v2.
 - [x] **Step 3.1** — HTML splash screen in index.html (P3-001 → P3-005) `bf59a7b`
 - [x] **Step 3.2** — LoadingMessage redesign (P3-006 → P3-013) `ed993a5` + `c215528`
 - [x] **Step 3.3** — Suspense fallback audit (P3-014 → P3-019) `3d272c9`
-- [x] **Step 3.4** — Onboarding port: MissionShell → shared component (P3-020 → P3-034) — Batch 8
+- [x] **Step 3.4** — Onboarding port: MissionShell → shared component (P3-020 → P3-034) `56c5312`
   - `useOnboardingState` hook — shared state machine for both shells
   - `OnboardingFlow` orchestrator — renders correct step (guidance/archetype/handler/intake)
   - `GuidanceOverlay` — extracted first-run welcome screen
@@ -143,8 +144,8 @@ Eliminate white flash, brand the loading screen, port onboarding to AppShell v2.
   - AppShell wired: onboarding gates added with early-return pattern
   - 30 new tests: OnboardingFlow (14), useOnboardingState (16) — localStorage compat verified
   - All 5 telemetry events preserved, all 3 localStorage keys backward-compatible
-- [ ] **Step 3.5** — Boot performance budget (P3-035 → P3-039)
-- [ ] **Verification** — white flash, onboarding paths, reduced motion, tests (P3-V01 → P3-V06)
+- [x] **Step 3.5** — Boot performance budget (P3-035 → P3-039) `e79ced6`
+- [x] **Verification** — white flash, onboarding paths, reduced motion, tests (P3-V01 → P3-V06) ✔️
 
 ---
 
@@ -154,12 +155,35 @@ Eliminate white flash, brand the loading screen, port onboarding to AppShell v2.
 
 Merge MissionShell into AppShell, remove `shellV2` flag, single shell architecture.
 
-- [ ] **Step 4.1** — Shared ShellProvider + context (P4-001 → P4-010)
-- [ ] **Step 4.2** — MissionShell decomposition: 654-line monolith → focused modules (P4-011 → P4-025)
-- [ ] **Step 4.3** — Active Duty mode in AppShell (P4-026 → P4-033)
-- [ ] **Step 4.4** — Route consolidation (P4-034 → P4-041)
-- [ ] **Step 4.5** — Feature flag removal + dead export cleanup (P4-042 → P4-046)
-- [ ] **Verification** — all routes, ⌘K, shortcuts, context, tests (P4-V01 → P4-V09)
+- [x] **Step 4.1** — Shared keyboard shortcuts hook (P4-001 → P4-010) `7f7e1e1`
+  - `useShellKeyboardShortcuts` — unified ⌘K/Esc/⌘1-9 handler used by AppShell
+  - Replaced duplicate 20-line inline keyboard effects in both shells
+- [x] **Step 4.2** — MissionShell decomposition: 485-line monolith → focused modules (P4-011 → P4-025) `7083698`
+  - `sopHints.ts` — GuidanceMode type, SopHint interface, 9-route assistantHints map
+  - `missionTabs.ts` — MissionTab interface, `composeMissionTabs()` function
+  - `useStepCompletion` — localStorage persistence, toggle with telemetry
+  - `useGuidanceMode` — assist/ops mode state, localStorage persistence
+  - `useMissionTelemetry` — step_view_start, step_abandon_risk, trackTransition
+  - `OperatorAssistant` component — SOP hint display with archetype personalization
+  - `StepToolsBar` component — step nav badges, guidance toggle, mark-complete
+  - MissionShell: 485 → 201 lines (−59%), 21 new unit tests
+- [x] **Step 4.3** — Active Duty mode: MissionLayout nested inside AppShell (P4-026 → P4-033) `2f22e1d`
+  - `MissionLayout` — 85-line nested layout route rendering mission chrome
+  - `PaletteContext` — cross-component palette open coordination
+  - `useMissionPaletteActions` — dynamic palette action merging on /mission/* routes
+  - AppShell detects mission routes, merges palette actions, provides PaletteContext
+- [x] **Step 4.4** — Route consolidation (P4-034 → P4-041) `2f22e1d`
+  - Routes.tsx rewritten: single AppShell route group, MissionLayout nested inside
+  - /home/* redirects consolidated to single wildcard, legacy aliases inlined
+  - Separate mission-shell chunk eliminated from build output
+- [x] **Step 4.5** — Feature flag removal + dead code cleanup (P4-042 → P4-046) `e79ced6` + `e8aa22a` + `9ec57ac`
+  - `shellV2` removed from featureFlags.ts type, defaults, env configs
+  - resolveShellRoute.ts simplified: v1 branch removed
+  - TrainingSurface.tsx: isV2 guard + navigate-away branch removed
+  - MissionShell.tsx deleted (superseded by MissionLayout)
+  - MissionFlow.module.css → MissionSurfaces.module.css (13 importers updated)
+- [x] **Verification** — routes, ⌘K, shortcuts, context, tests (P4-V01 → P4-V08) ✔️
+  - P4-V09 (beta tests) requires live browser (CI gate)
 
 ---
 
@@ -169,12 +193,12 @@ Merge MissionShell into AppShell, remove `shellV2` flag, single shell architectu
 
 Remove dead components, dead exports, dead CSS, stale redirects.
 
-- [ ] **Step 5.1** — Delete 3 dead components (P5-001 → P5-003)
-- [ ] **Step 5.2** — Remove 4 dead exports from missionCutover.ts (P5-004 → P5-008)
-- [ ] **Step 5.3** — Delete 7 dead CSS variable definitions (P5-009 → P5-015)
-- [ ] **Step 5.4** — Remove/audit 5 dead redirects (P5-016 → P5-020)
-- [ ] **Step 5.5** — Audit 3 potentially dead CSS classes (P5-021 → P5-023)
-- [ ] **Verification** — tests, build, dead code grep (P5-V01 → P5-V04)
+- [x] **Step 5.1** — Delete 3 dead components (P5-001 → P5-003)
+- [x] **Step 5.2** — Remove 4 dead exports from missionCutover.ts (P5-004 → P5-008)
+- [x] **Step 5.3** — Delete 7 dead CSS variable definitions (P5-009 → P5-015)
+- [x] **Step 5.4** — Remove/audit 5 dead redirects (P5-016 → P5-020)
+- [x] **Step 5.5** — Audit 3 potentially dead CSS classes (P5-021 → P5-023)
+- [x] **Verification** — tests, build, dead code grep (P5-V01 → P5-V04) ✔️
 
 ---
 
@@ -187,8 +211,9 @@ Consolidate inline styles, add missing UX states, fix misc bugs.
 - [x] **Step 6.1** — Move 39 inline styles to CSS modules across 22 files (P6-001 → P6-012) `bf59a7b` + `ed993a5`
 - [x] **Step 6.2** — Add missing UX states: 404 page, skeletons, empty states (P6-013 → P6-022) `c215528` + `3d272c9`
 - [x] **Step 6.3** — Bug fixes: Header settings link, font issues (P6-023 → P6-026) `3d272c9`
-- [x] **Step 6.4** — CSS naming consistency (P6-027 → P6-030) `3d272c9`
-- [ ] **Verification** — visual regression, 404, skeletons, tests (P6-V01 → P6-V06)
+- [x] **Step 6.4** — CSS naming consistency (P6-027 → P6-030) `3d272c9` + `9ec57ac`
+- [x] **Verification** — visual regression, 404, skeletons, tests (P6-V02, V04, V05) ✔️
+  - P6-V01, V03, V06 require live browser (CI gate)
 
 ---
 
@@ -201,17 +226,17 @@ Consolidate inline styles, add missing UX states, fix misc bugs.
 | UI deep clean audit/docs | 21 | 21 | 0 |
 | Phase 1: Domain migration | 39 | 32 | 7 |
 | Phase 2: CSS tokens | 97 | 97 | 0 |
-| Phase 3: First impression | 45 | 33 | 12 |
-| Phase 4: Shell unification | 55 | 0 | 55 |
+| Phase 3: First impression | 45 | 45 | 0 |
+| Phase 4: Shell unification | 55 | 54 | 1 |
 | Phase 5: Dead code | 27 | 27 | 0 |
-| Phase 6: Component polish | 36 | 36 | 0 |
-| **Total** | **593** | **518** | **75** |
+| Phase 6: Component polish | 36 | 33 | 3 |
+| **Total** | **593** | **583** | **10** |
 
 ---
 
 ## Unpushed Commits
 
-These 8 commits are on `main` but not yet on `origin/main`:
+These 18 commits are on `main` but not yet on `origin/main`:
 
 | Commit | Summary | Files |
 |--------|---------|-------|
@@ -224,6 +249,15 @@ These 8 commits are on `main` but not yet on `origin/main`:
 | `ed993a5` | UI Deep Clean Batch 5 — Loading redesign, Suspense fallback, inline styles | 7 files |
 | `c215528` | UI Deep Clean Batch 6 — 404 page, SurfaceLoader a11y, reduced motion | 9 files |
 | `3d272c9` | UI Deep Clean Batch 7 — Skeleton loaders, empty states, component polish | 14 files |
+| `56c5312` | Batch 8 — Onboarding port: MissionShell → shared components | 12 files |
+| `e79ced6` | Batch 9 — Phase 3 close-out + shellV2 flag removal | 6 files |
+| `7083698` | Batch 10 — MissionShell decomposition (485→201 lines, 7 modules) | 11 files |
+| `7f7e1e1` | Batch 11 — Shared shell keyboard shortcuts | 5 files |
+| `2f22e1d` | Batch 12 — Route consolidation: MissionLayout inside AppShell | 6 files |
+| `e8aa22a` | Delete dead MissionShell.tsx | 7 files |
+| `9ec57ac` | P6-028: MissionFlow.module.css → MissionSurfaces.module.css | 15 files |
+| `1da1d7a` | Progress tracker updates | 1 file |
+| `3fd286b` | P3-007: Branded icon in LoadingMessage | 3 files |
 
 ---
 
@@ -231,9 +265,9 @@ These 8 commits are on `main` but not yet on `origin/main`:
 
 | Gate | Command | Current Status |
 |------|---------|---------------|
-| Unit tests | `npx vitest run` | 1,435/1,435 passing |
+| Unit tests | `npx vitest run` | 1,454/1,454 passing |
 | Beta tests | `npm run test:beta` | 21/21 passing |
-| Build | `npx vite build` | Clean (5.18s) |
+| Build | `npx vite build` | Clean (5.54s) |
 | Lint | `npx eslint src/` | — (run before committing) |
 
 > **Note**: `npm run build` fails due to missing `src/utils/generateCombinedTrainingData.ts`. Use `npx vite build` directly.

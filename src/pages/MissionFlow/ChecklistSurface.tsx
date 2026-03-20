@@ -1,6 +1,6 @@
 import React from 'react';
 import DrillRunner from '../../components/DrillRunner/DrillRunner';
-import styles from './MissionFlow.module.css';
+import styles from './MissionSurfaces.module.css';
 import { getMissionSurfaceState } from '../../store/missionFlow/routeState';
 import MissionRouteState from '../../components/MissionRouteState/MissionRouteState';
 import MissionStepHandoff from '../../components/MissionStepHandoff/MissionStepHandoff';

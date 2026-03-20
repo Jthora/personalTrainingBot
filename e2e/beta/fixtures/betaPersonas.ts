@@ -9,7 +9,16 @@ export type BetaPersona =
   | 'quiz-grinder'
   | 'veteran-operative'
   | 'settings-tweaker'
-  | 'empty-cache';
+  | 'empty-cache'
+  // ── Phase 2 personas ──
+  | 'rescue-ranger'
+  | 'psi-adept'
+  | 'drill-rusher'
+  | 'near-levelup'
+  | 'quiz-completionist'
+  | 'plan-executor'
+  | 'mission-navigator'
+  | 'deck-diver';
 
 // ── Date helpers (match app's dayjs().format('YYYY-MM-DD')) ───────
 function localDateStr(d: Date): string {

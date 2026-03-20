@@ -11,7 +11,7 @@
 
 import React, { useCallback, useEffect, useState } from 'react';
 import { DrillRunStore } from '../../store/DrillRunStore';
-import styles from './MissionFlow.module.css';
+import styles from './MissionSurfaces.module.css';
 import ModuleBrowser from '../../components/ModuleBrowser/ModuleBrowser';
 import DeckBrowser from '../../components/DeckBrowser/DeckBrowser';
 import DrillRunner from '../../components/DrillRunner/DrillRunner';

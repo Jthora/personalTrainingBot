@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beta Test Suite — Screenshot Gallery</title>
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --surface: #12121a;
+      --text: #e0e0e8;
+      --muted: #888;
+      --accent: #4fc3f7;
+      --border: #1e1e2e;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    header h1 { font-size: 1.8rem; color: var(--accent); margin-bottom: .5rem; }
+    .summary {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+    .summary strong { color: var(--text); }
+    .scenario { margin-bottom: 3rem; }
+    .scenario h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      padding-bottom: .5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .scenario h2 .count { color: var(--muted); font-weight: normal; font-size: .85rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+    figure {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: border-color .2s;
+    }
+    figure:hover { border-color: var(--accent); }
+    figure a { display: block; }
+    figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+      cursor: zoom-in;
+    }
+    figcaption {
+      padding: .6rem .8rem;
+      font-size: .8rem;
+      color: var(--muted);
+      font-family: 'SF Mono', Monaco, monospace;
+    }
+    .empty { color: var(--muted); font-style: italic; }
+    @media (max-width: 600px) {
+      body { padding: 1rem; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Starcom Academy — Beta Test Screenshots</h1>
+    <div class="summary">
+      <span><strong>9</strong> scenarios</span>
+      <span><strong>148</strong> screenshots</span>
+      <span>Generated 2026-03-16 03:18:34 UTC</span>
+    </div>
+  </header>
+  
+    <section class="scenario">
+      <h2>Fresh Cadet <span class="count">(11 screenshots)</span></h2>
+      <div class="grid">
+        
+          <figure>
+            <a href="01-fresh-cadet/01-welcome-overlay.png" target="_blank">
+              <img src="01-fresh-cadet/01-welcome-overlay.png" alt="01-welcome-overlay.png" loading="lazy" />
+            </a>
+            <figcaption>01 welcome overlay</figcaption>
+          </figure>
+
+          <figure>
+            <a href="01-fresh-cadet/02-archetype-picker.png" target="_blank">
+              <img src="01-fresh-cadet/02-archetype-picker.png" alt="02-archetype-picker.png" loading="lazy" />
+            </a>
+            <figcaption>02 archetype picker</figcaption>
+          </figure>
+
+          <figure>
+            <a href="01-fresh-cadet/03-archetype-selected.png" target="_blank">
+              <img src="01-fresh-cadet/03-archetype-selected.png" alt="03-archetype-selected.png" loading="lazy" />
+            </a>
+            <figcaption>03 archetype selected</figcaption>
+          </figure>
+
+          <figure>
+            <a href="01-fresh-cadet/04-handler-picker.png" target="_blank">
+              <img src="01-fresh-cadet/04-handler-picker.png" alt="04-handler-picker.png" loading="lazy" />
+            </a>
+            <figcaption>04 handler picker</figcaption>
+          </figure>
+
+          <figure>
+            <a href="01-fresh-cadet/05-handler-confirmed.png" target="_blank">
+              <img src="01-fresh-cadet/05-handler-confirmed.png" alt="05-handler-confirmed.png" loading="lazy" />
+            </a>
+            <figcaption>05 handler confirmed</figcaption>
+          </figure>
+
+          <figure>
+            <a href="01-fresh-cadet/06-intake-panel.png" target="_blank">
+              <img src="01-fresh-cadet/06-intake-panel.png" alt="06-intake-panel.png" loading="lazy" />
+            </a>
+            <figcaption>06 intake panel</figcaption>
+          </figure>
+
+          <figure>
+            <a href="01-fresh-cadet/07-navigate-to-train.png" target="_blank">
+              <img src="01-fresh-cadet/07-navigate-to-train.png" alt="07-navigate-to-train.png" loading="lazy" />
+            </a>
+            <figcaption>07 navigate to train</figcaption>
+          </figure>
+
+          <figure>
+            <a href="01-fresh-cadet/08-drill-started.png" target="_blank">
+              <img src="01-fresh-cadet/08-drill-started.png" alt="08-drill-started.png" loading="lazy" />
+            </a>
+            <figcaption>08 drill started</figcaption>
+          </figure>
+
+          <figure>
+            <a href="01-fresh-cadet/09-steps-toggled.png" target="_blank">
+              <img src="01-fresh-cadet/09-steps-toggled.png" alt="09-steps-toggled.png" loading="lazy" />
+            </a>
+            <figcaption>09 steps toggled</figcaption>
+          </figure>
+
+          <figure>
+            <a href="01-fresh-cadet/10-drill-complete.png" target="_blank">
+              <img src="01-fresh-cadet/10-drill-complete.png" alt="10-drill-complete.png" loading="lazy" />
+            </a>
+            <figcaption>10 drill complete</figcaption>
+          </figure>
+
+          <figure>
+            <a href="01-fresh-cadet/11-return-to-train.png" target="_blank">
+              <img src="01-fresh-cadet/11-return-to-train.png" alt="11-return-to-train.png" loading="lazy" />
+            </a>
+            <figcaption>11 return to train</figcaption>
+          </figure>
+      </div>
+    </section>
+
+    <section class="scenario">
+      <h2>Fresh Cadet Fast <span class="count">(2 screenshots)</span></h2>
+      <div class="grid">
+        
+          <figure>
+            <a href="01-fresh-cadet-fast/01-fast-path-landing.png" target="_blank">
+              <img src="01-fresh-cadet-fast/01-fast-path-landing.png" alt="01-fast-path-landing.png" loading="lazy" />
+            </a>
+            <figcaption>01 fast path landing</figcaption>
+          </figure>
+
+          <figure>
+            <a href="01-fresh-cadet-fast/02-training-surface.png" target="_blank">
+              <img src="01-fresh-cadet-fast/02-training-surface.png" alt="02-training-surface.png" loading="lazy" />
+            </a>
+            <figcaption>02 training surface</figcaption>
+          </figure>
+      </div>
+    </section>
+
+    <section class="scenario">
+      <h2>Returning Operative <span class="count">(13 screenshots)</span></h2>
+      <div class="grid">
+        
+          <figure>
+            <a href="02-returning-operative/01-training-surface.png" target="_blank">
+              <img src="02-returning-operative/01-training-surface.png" alt="01-training-surface.png" loading="lazy" />
+            </a>
+            <figcaption>01 training surface</figcaption>
+          </figure>
+
+          <figure>
+            <a href="02-returning-operative/02-bottom-nav.png" target="_blank">
+              <img src="02-returning-operative/02-bottom-nav.png" alt="02-bottom-nav.png" loading="lazy" />
+            </a>
+            <figcaption>02 bottom nav</figcaption>
+          </figure>
+
+          <figure>
+            <a href="02-returning-operative/03-module-list-scroll.png" target="_blank">
+              <img src="02-returning-operative/03-module-list-scroll.png" alt="03-module-list-scroll.png" loading="lazy" />
+            </a>
+            <figcaption>03 module list scroll</figcaption>
+          </figure>
+
+          <figure>
+            <a href="02-returning-operative/04-deck-browser.png" target="_blank">
+              <img src="02-returning-operative/04-deck-browser.png" alt="04-deck-browser.png" loading="lazy" />
+            </a>
+            <figcaption>04 deck browser</figcaption>
+          </figure>
+
+          <figure>
+            <a href="02-returning-operative/05-deck-details.png" target="_blank">
+              <img src="02-returning-operative/05-deck-details.png" alt="05-deck-details.png" loading="lazy" />
+            </a>
+            <figcaption>05 deck details</figcaption>
+          </figure>
+
+          <figure>
+            <a href="02-returning-operative/06-drill-from-deck.png" target="_blank">
+              <img src="02-returning-operative/06-drill-from-deck.png" alt="06-drill-from-deck.png" loading="lazy" />
+            </a>
+            <figcaption>06 drill from deck</figcaption>
+          </figure>
+
+          <figure>
+            <a href="02-returning-operative/07-engagement-warning.png" target="_blank">
+              <img src="02-returning-operative/07-engagement-warning.png" alt="07-engagement-warning.png" loading="lazy" />
+            </a>
+            <figcaption>07 engagement warning</figcaption>
+          </figure>
+
+          <figure>
+            <a href="02-returning-operative/08-handle-warning.png" target="_blank">
+              <img src="02-returning-operative/08-handle-warning.png" alt="08-handle-warning.png" loading="lazy" />
+            </a>
+            <figcaption>08 handle warning</figcaption>
+          </figure>
+
+          <figure>
+            <a href="02-returning-operative/09-reflection-form.png" target="_blank">
+              <img src="02-returning-operative/09-reflection-form.png" alt="09-reflection-form.png" loading="lazy" />
+            </a>
+            <figcaption>09 reflection form</figcaption>
+          </figure>
+
+          <figure>
+            <a href="02-returning-operative/10-drill-recorded.png" target="_blank">
+              <img src="02-returning-operative/10-drill-recorded.png" alt="10-drill-recorded.png" loading="lazy" />
+            </a>
+            <figcaption>10 drill recorded</figcaption>
+          </figure>
+
+          <figure>
+            <a href="02-returning-operative/11-stats-surface.png" target="_blank">
+              <img src="02-returning-operative/11-stats-surface.png" alt="11-stats-surface.png" loading="lazy" />
+            </a>
+            <figcaption>11 stats surface</figcaption>
+          </figure>
+
+          <figure>
+            <a href="02-returning-operative/12-activity-heatmap.png" target="_blank">
+              <img src="02-returning-operative/12-activity-heatmap.png" alt="12-activity-heatmap.png" loading="lazy" />
+            </a>
+            <figcaption>12 activity heatmap</figcaption>
+          </figure>
+
+          <figure>
+            <a href="02-returning-operative/13-profile-surface.png" target="_blank">
+              <img src="02-returning-operative/13-profile-surface.png" alt="13-profile-surface.png" loading="lazy" />
+            </a>
+            <figcaption>13 profile surface</figcaption>
+          </figure>
+      </div>
+    </section>
+
+    <section class="scenario">
+      <h2>Mission Commander <span class="count">(19 screenshots)</span></h2>
+      <div class="grid">
+        
+          <figure>
+            <a href="03-mission-commander/01-shell-with-mission-tabs.png" target="_blank">
+              <img src="03-mission-commander/01-shell-with-mission-tabs.png" alt="01-shell-with-mission-tabs.png" loading="lazy" />
+            </a>
+            <figcaption>01 shell with mission tabs</figcaption>
+          </figure>
+
+          <figure>
+            <a href="03-mission-commander/02-brief-surface.png" target="_blank">
+              <img src="03-mission-commander/02-brief-surface.png" alt="02-brief-surface.png" loading="lazy" />
+            </a>
+            <figcaption>02 brief surface</figcaption>
+          </figure>
+
+          <figure>
+            <a href="03-mission-commander/03-brief-content.png" target="_blank">
+              <img src="03-mission-commander/03-brief-content.png" alt="03-brief-content.png" loading="lazy" />
+            </a>
+            <figcaption>03 brief content</figcaption>
+          </figure>
+
+          <figure>
+            <a href="03-mission-commander/04-triage-surface.png" target="_blank">
+              <img src="03-mission-commander/04-triage-surface.png" alt="04-triage-surface.png" loading="lazy" />
+            </a>
+            <figcaption>04 triage surface</figcaption>
+          </figure>
+
+          <figure>
+            <a href="03-mission-commander/05-triage-density-toggle.png" target="_blank">
+              <img src="03-mission-commander/05-triage-density-toggle.png" alt="05-triage-density-toggle.png" loading="lazy" />
+            </a>
+            <figcaption>05 triage density toggle</figcaption>
+          </figure>
+
+          <figure>
+            <a href="03-mission-commander/06-triage-view-toggle.png" target="_blank">
+              <img src="03-mission-commander/06-triage-view-toggle.png" alt="06-triage-view-toggle.png" loading="lazy" />
+            </a>
+            <figcaption>06 triage view toggle</figcaption>
+          </figure>
+
+          <figure>
+            <a href="03-mission-commander/07-triage-acknowledge.png" target="_blank">
+              <img src="03-mission-commander/07-triage-acknowledge.png" alt="07-triage-acknowledge.png" loading="lazy" />
+            </a>
+            <figcaption>07 triage acknowledge</figcaption>
+          </figure>
+
+          <figure>
+            <a href="03-mission-commander/08-triage-escalate.png" target="_blank">
+              <img src="03-mission-commander/08-triage-escalate.png" alt="08-triage-escalate.png" loading="lazy" />
+            </a>
+            <figcaption>08 triage escalate</figcaption>
+          </figure>
+
+          <figure>
+            <a href="03-mission-commander/09-triage-defer.png" target="_blank">
+              <img src="03-mission-commander/09-triage-defer.png" alt="09-triage-defer.png" loading="lazy" />
+            </a>
+            <figcaption>09 triage defer</figcaption>
+          </figure>
+
+          <figure>
+            <a href="03-mission-commander/10-case-surface.png" target="_blank">
+              <img src="03-mission-commander/10-case-surface.png" alt="10-case-surface.png" loading="lazy" />
+            </a>
+            <figcaption>10 case surface</figcaption>
+          </figure>
+
+          <figure>
+            <a href="03-mission-commander/11-artifact-review.png" target="_blank">
+              <img src="03-mission-commander/11-artifact-review.png" alt="11-artifact-review.png" loading="lazy" />
+            </a>
+            <figcaption>11 artifact review</figcaption>
+          </figure>
+
+          <figure>
+            <a href="03-mission-commander/12-artifact-actions.png" target="_blank">
+              <img src="03-mission-commander/12-artifact-actions.png" alt="12-artifact-actions.png" loading="lazy" />
+            </a>
+            <figcaption>12 artifact actions</figcaption>
+          </figure>
+
+          <figure>
+            <a href="03-mission-commander/13-signal-surface.png" target="_blank">
+              <img src="03-mission-commander/13-signal-surface.png" alt="13-signal-surface.png" loading="lazy" />
+            </a>
+            <figcaption>13 signal surface</figcaption>
+          </figure>
+
+          <figure>
+            <a href="03-mission-commander/14-signal-create.png" target="_blank">
+              <img src="03-mission-commander/14-signal-create.png" alt="14-signal-create.png" loading="lazy" />
+            </a>
+            <figcaption>14 signal create</figcaption>
+          </figure>
+
+          <figure>
+            <a href="03-mission-commander/15-signal-acknowledge.png" target="_blank">
+              <img src="03-mission-commander/15-signal-acknowledge.png" alt="15-signal-acknowledge.png" loading="lazy" />
+            </a>
+            <figcaption>15 signal acknowledge</figcaption>
+          </figure>
+
+          <figure>
+            <a href="03-mission-commander/16-signal-resolve.png" target="_blank">
+              <img src="03-mission-commander/16-signal-resolve.png" alt="16-signal-resolve.png" loading="lazy" />
+            </a>
+            <figcaption>16 signal resolve</figcaption>
+          </figure>
+
+          <figure>
+            <a href="03-mission-commander/17-debrief-surface.png" target="_blank">
+              <img src="03-mission-commander/17-debrief-surface.png" alt="17-debrief-surface.png" loading="lazy" />
+            </a>
+            <figcaption>17 debrief surface</figcaption>
+          </figure>
+
+          <figure>
+            <a href="03-mission-commander/18-aar-create.png" target="_blank">
+              <img src="03-mission-commander/18-aar-create.png" alt="18-aar-create.png" loading="lazy" />
+            </a>
+            <figcaption>18 aar create</figcaption>
+          </figure>
+
+          <figure>
+            <a href="03-mission-commander/19-mission-complete.png" target="_blank">
+              <img src="03-mission-commander/19-mission-complete.png" alt="19-mission-complete.png" loading="lazy" />
+            </a>
+            <figcaption>19 mission complete</figcaption>
+          </figure>
+      </div>
+    </section>
+
+    <section class="scenario">
+      <h2>Knowledge Seeker <span class="count">(9 screenshots)</span></h2>
+      <div class="grid">
+        
+          <figure>
+            <a href="04-knowledge-seeker/01-review-dashboard.png" target="_blank">
+              <img src="04-knowledge-seeker/01-review-dashboard.png" alt="01-review-dashboard.png" loading="lazy" />
+            </a>
+            <figcaption>01 review dashboard</figcaption>
+          </figure>
+
+          <figure>
+            <a href="04-knowledge-seeker/02-review-stats.png" target="_blank">
+              <img src="04-knowledge-seeker/02-review-stats.png" alt="02-review-stats.png" loading="lazy" />
+            </a>
+            <figcaption>02 review stats</figcaption>
+          </figure>
+
+          <figure>
+            <a href="04-knowledge-seeker/03-start-review-attempt.png" target="_blank">
+              <img src="04-knowledge-seeker/03-start-review-attempt.png" alt="03-start-review-attempt.png" loading="lazy" />
+            </a>
+            <figcaption>03 start review attempt</figcaption>
+          </figure>
+
+          <figure>
+            <a href="04-knowledge-seeker/04-quiz-runner.png" target="_blank">
+              <img src="04-knowledge-seeker/04-quiz-runner.png" alt="04-quiz-runner.png" loading="lazy" />
+            </a>
+            <figcaption>04 quiz runner</figcaption>
+          </figure>
+
+          <figure>
+            <a href="04-knowledge-seeker/05-answer-questions.png" target="_blank">
+              <img src="04-knowledge-seeker/05-answer-questions.png" alt="05-answer-questions.png" loading="lazy" />
+            </a>
+            <figcaption>05 answer questions</figcaption>
+          </figure>
+
+          <figure>
+            <a href="04-knowledge-seeker/06-quiz-complete.png" target="_blank">
+              <img src="04-knowledge-seeker/06-quiz-complete.png" alt="06-quiz-complete.png" loading="lazy" />
+            </a>
+            <figcaption>06 quiz complete</figcaption>
+          </figure>
+
+          <figure>
+            <a href="04-knowledge-seeker/07-quiz-results-screen.png" target="_blank">
+              <img src="04-knowledge-seeker/07-quiz-results-screen.png" alt="07-quiz-results-screen.png" loading="lazy" />
+            </a>
+            <figcaption>07 quiz results screen</figcaption>
+          </figure>
+
+          <figure>
+            <a href="04-knowledge-seeker/08-module-quiz.png" target="_blank">
+              <img src="04-knowledge-seeker/08-module-quiz.png" alt="08-module-quiz.png" loading="lazy" />
+            </a>
+            <figcaption>08 module quiz</figcaption>
+          </figure>
+
+          <figure>
+            <a href="04-knowledge-seeker/09-return-to-review.png" target="_blank">
+              <img src="04-knowledge-seeker/09-return-to-review.png" alt="09-return-to-review.png" loading="lazy" />
+            </a>
+            <figcaption>09 return to review</figcaption>
+          </figure>
+      </div>
+    </section>
+
+    <section class="scenario">
+      <h2>Profile Sovereign <span class="count">(14 screenshots)</span></h2>
+      <div class="grid">
+        
+          <figure>
+            <a href="05-profile-sovereign/01-profile-surface.png" target="_blank">
+              <img src="05-profile-sovereign/01-profile-surface.png" alt="01-profile-surface.png" loading="lazy" />
+            </a>
+            <figcaption>01 profile surface</figcaption>
+          </figure>
+
+          <figure>
+            <a href="05-profile-sovereign/02-callsign-edit.png" target="_blank">
+              <img src="05-profile-sovereign/02-callsign-edit.png" alt="02-callsign-edit.png" loading="lazy" />
+            </a>
+            <figcaption>02 callsign edit</figcaption>
+          </figure>
+
+          <figure>
+            <a href="05-profile-sovereign/03-callsign-persisted.png" target="_blank">
+              <img src="05-profile-sovereign/03-callsign-persisted.png" alt="03-callsign-persisted.png" loading="lazy" />
+            </a>
+            <figcaption>03 callsign persisted</figcaption>
+          </figure>
+
+          <figure>
+            <a href="05-profile-sovereign/04-change-archetype.png" target="_blank">
+              <img src="05-profile-sovereign/04-change-archetype.png" alt="04-change-archetype.png" loading="lazy" />
+            </a>
+            <figcaption>04 change archetype</figcaption>
+          </figure>
+
+          <figure>
+            <a href="05-profile-sovereign/05-select-psi-corps.png" target="_blank">
+              <img src="05-profile-sovereign/05-select-psi-corps.png" alt="05-select-psi-corps.png" loading="lazy" />
+            </a>
+            <figcaption>05 select psi corps</figcaption>
+          </figure>
+
+          <figure>
+            <a href="05-profile-sovereign/06-active-duty-on.png" target="_blank">
+              <img src="05-profile-sovereign/06-active-duty-on.png" alt="06-active-duty-on.png" loading="lazy" />
+            </a>
+            <figcaption>06 active duty on</figcaption>
+          </figure>
+
+          <figure>
+            <a href="05-profile-sovereign/07-active-duty-off.png" target="_blank">
+              <img src="05-profile-sovereign/07-active-duty-off.png" alt="07-active-duty-off.png" loading="lazy" />
+            </a>
+            <figcaption>07 active duty off</figcaption>
+          </figure>
+
+          <figure>
+            <a href="05-profile-sovereign/08-export-data.png" target="_blank">
+              <img src="05-profile-sovereign/08-export-data.png" alt="08-export-data.png" loading="lazy" />
+            </a>
+            <figcaption>08 export data</figcaption>
+          </figure>
+
+          <figure>
+            <a href="05-profile-sovereign/09-stats-surface.png" target="_blank">
+              <img src="05-profile-sovereign/09-stats-surface.png" alt="09-stats-surface.png" loading="lazy" />
+            </a>
+            <figcaption>09 stats surface</figcaption>
+          </figure>
+
+          <figure>
+            <a href="05-profile-sovereign/10-badge-gallery.png" target="_blank">
+              <img src="05-profile-sovereign/10-badge-gallery.png" alt="10-badge-gallery.png" loading="lazy" />
+            </a>
+            <figcaption>10 badge gallery</figcaption>
+          </figure>
+
+          <figure>
+            <a href="05-profile-sovereign/11-challenge-board.png" target="_blank">
+              <img src="05-profile-sovereign/11-challenge-board.png" alt="11-challenge-board.png" loading="lazy" />
+            </a>
+            <figcaption>11 challenge board</figcaption>
+          </figure>
+
+          <figure>
+            <a href="05-profile-sovereign/12-competency-chart.png" target="_blank">
+              <img src="05-profile-sovereign/12-competency-chart.png" alt="12-competency-chart.png" loading="lazy" />
+            </a>
+            <figcaption>12 competency chart</figcaption>
+          </figure>
+
+          <figure>
+            <a href="05-profile-sovereign/13-score-trends.png" target="_blank">
+              <img src="05-profile-sovereign/13-score-trends.png" alt="13-score-trends.png" loading="lazy" />
+            </a>
+            <figcaption>13 score trends</figcaption>
+          </figure>
+
+          <figure>
+            <a href="05-profile-sovereign/14-activity-heatmap.png" target="_blank">
+              <img src="05-profile-sovereign/14-activity-heatmap.png" alt="14-activity-heatmap.png" loading="lazy" />
+            </a>
+            <figcaption>14 activity heatmap</figcaption>
+          </figure>
+      </div>
+    </section>
+
+    <section class="scenario">
+      <h2>Edge Gremlin <span class="count">(19 screenshots)</span></h2>
+      <div class="grid">
+        
+          <figure>
+            <a href="06-edge-gremlin/01-emoji-callsign.png" target="_blank">
+              <img src="06-edge-gremlin/01-emoji-callsign.png" alt="01-emoji-callsign.png" loading="lazy" />
+            </a>
+            <figcaption>01 emoji callsign</figcaption>
+          </figure>
+
+          <figure>
+            <a href="06-edge-gremlin/01-error-boundary.png" target="_blank">
+              <img src="06-edge-gremlin/01-error-boundary.png" alt="01-error-boundary.png" loading="lazy" />
+            </a>
+            <figcaption>01 error boundary</figcaption>
+          </figure>
+
+          <figure>
+            <a href="06-edge-gremlin/01-go-offline.png" target="_blank">
+              <img src="06-edge-gremlin/01-go-offline.png" alt="01-go-offline.png" loading="lazy" />
+            </a>
+            <figcaption>01 go offline</figcaption>
+          </figure>
+
+          <figure>
+            <a href="06-edge-gremlin/01-invalid-route.png" target="_blank">
+              <img src="06-edge-gremlin/01-invalid-route.png" alt="01-invalid-route.png" loading="lazy" />
+            </a>
+            <figcaption>01 invalid route</figcaption>
+          </figure>
+
+          <figure>
+            <a href="06-edge-gremlin/01-refresh-mid-drill.png" target="_blank">
+              <img src="06-edge-gremlin/01-refresh-mid-drill.png" alt="01-refresh-mid-drill.png" loading="lazy" />
+            </a>
+            <figcaption>01 refresh mid drill</figcaption>
+          </figure>
+
+          <figure>
+            <a href="06-edge-gremlin/02-bad-deeplink-params.png" target="_blank">
+              <img src="06-edge-gremlin/02-bad-deeplink-params.png" alt="02-bad-deeplink-params.png" loading="lazy" />
+            </a>
+            <figcaption>02 bad deeplink params</figcaption>
+          </figure>
+
+          <figure>
+            <a href="06-edge-gremlin/02-clear-localstorage.png" target="_blank">
+              <img src="06-edge-gremlin/02-clear-localstorage.png" alt="02-clear-localstorage.png" loading="lazy" />
+            </a>
+            <figcaption>02 clear localstorage</figcaption>
+          </figure>
+
+          <figure>
+            <a href="06-edge-gremlin/02-drill-offline.png" target="_blank">
+              <img src="06-edge-gremlin/02-drill-offline.png" alt="02-drill-offline.png" loading="lazy" />
+            </a>
+            <figcaption>02 drill offline</figcaption>
+          </figure>
+
+          <figure>
+            <a href="06-edge-gremlin/02-error-recovery.png" target="_blank">
+              <img src="06-edge-gremlin/02-error-recovery.png" alt="02-error-recovery.png" loading="lazy" />
+            </a>
+            <figcaption>02 error recovery</figcaption>
+          </figure>
+
+          <figure>
+            <a href="06-edge-gremlin/02-long-callsign.png" target="_blank">
+              <img src="06-edge-gremlin/02-long-callsign.png" alt="02-long-callsign.png" loading="lazy" />
+            </a>
+            <figcaption>02 long callsign</figcaption>
+          </figure>
+
+          <figure>
+            <a href="06-edge-gremlin/03-bad-share-slug.png" target="_blank">
+              <img src="06-edge-gremlin/03-bad-share-slug.png" alt="03-bad-share-slug.png" loading="lazy" />
+            </a>
+            <figcaption>03 bad share slug</figcaption>
+          </figure>
+
+          <figure>
+            <a href="06-edge-gremlin/03-come-online.png" target="_blank">
+              <img src="06-edge-gremlin/03-come-online.png" alt="03-come-online.png" loading="lazy" />
+            </a>
+            <figcaption>03 come online</figcaption>
+          </figure>
+
+          <figure>
+            <a href="06-edge-gremlin/03-corrupt-json.png" target="_blank">
+              <img src="06-edge-gremlin/03-corrupt-json.png" alt="03-corrupt-json.png" loading="lazy" />
+            </a>
+            <figcaption>03 corrupt json</figcaption>
+          </figure>
+
+          <figure>
+            <a href="06-edge-gremlin/03-empty-callsign.png" target="_blank">
+              <img src="06-edge-gremlin/03-empty-callsign.png" alt="03-empty-callsign.png" loading="lazy" />
+            </a>
+            <figcaption>03 empty callsign</figcaption>
+          </figure>
+
+          <figure>
+            <a href="06-edge-gremlin/04-bad-card-redirect.png" target="_blank">
+              <img src="06-edge-gremlin/04-bad-card-redirect.png" alt="04-bad-card-redirect.png" loading="lazy" />
+            </a>
+            <figcaption>04 bad card redirect</figcaption>
+          </figure>
+
+          <figure>
+            <a href="06-edge-gremlin/04-rapid-step-toggle.png" target="_blank">
+              <img src="06-edge-gremlin/04-rapid-step-toggle.png" alt="04-rapid-step-toggle.png" loading="lazy" />
+            </a>
+            <figcaption>04 rapid step toggle</figcaption>
+          </figure>
+
+          <figure>
+            <a href="06-edge-gremlin/05-legacy-routes.png" target="_blank">
+              <img src="06-edge-gremlin/05-legacy-routes.png" alt="05-legacy-routes.png" loading="lazy" />
+            </a>
+            <figcaption>05 legacy routes</figcaption>
+          </figure>
+
+          <figure>
+            <a href="06-edge-gremlin/05-rapid-tab-switch.png" target="_blank">
+              <img src="06-edge-gremlin/05-rapid-tab-switch.png" alt="05-rapid-tab-switch.png" loading="lazy" />
+            </a>
+            <figcaption>05 rapid tab switch</figcaption>
+          </figure>
+
+          <figure>
+            <a href="06-edge-gremlin/06-back-button-stress.png" target="_blank">
+              <img src="06-edge-gremlin/06-back-button-stress.png" alt="06-back-button-stress.png" loading="lazy" />
+            </a>
+            <figcaption>06 back button stress</figcaption>
+          </figure>
+      </div>
+    </section>
+
+    <section class="scenario">
+      <h2>Navigation Atlas <span class="count">(34 screenshots)</span></h2>
+      <div class="grid">
+        
+          <figure>
+            <a href="07-navigation-atlas/01-enable-active-duty.png" target="_blank">
+              <img src="07-navigation-atlas/01-enable-active-duty.png" alt="01-enable-active-duty.png" loading="lazy" />
+            </a>
+            <figcaption>01 enable active duty</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/01-forward-navigation.png" target="_blank">
+              <img src="07-navigation-atlas/01-forward-navigation.png" alt="01-forward-navigation.png" loading="lazy" />
+            </a>
+            <figcaption>01 forward navigation</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/01-home-to-train.png" target="_blank">
+              <img src="07-navigation-atlas/01-home-to-train.png" alt="01-home-to-train.png" loading="lazy" />
+            </a>
+            <figcaption>01 home to train</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/01-mission-deeplink.png" target="_blank">
+              <img src="07-navigation-atlas/01-mission-deeplink.png" alt="01-mission-deeplink.png" loading="lazy" />
+            </a>
+            <figcaption>01 mission deeplink</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/01-reload-train.png" target="_blank">
+              <img src="07-navigation-atlas/01-reload-train.png" alt="01-reload-train.png" loading="lazy" />
+            </a>
+            <figcaption>01 reload train</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/01-train-tab.png" target="_blank">
+              <img src="07-navigation-atlas/01-train-tab.png" alt="01-train-tab.png" loading="lazy" />
+            </a>
+            <figcaption>01 train tab</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/02-back-navigation.png" target="_blank">
+              <img src="07-navigation-atlas/02-back-navigation.png" alt="02-back-navigation.png" loading="lazy" />
+            </a>
+            <figcaption>02 back navigation</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/02-brief-tab.png" target="_blank">
+              <img src="07-navigation-atlas/02-brief-tab.png" alt="02-brief-tab.png" loading="lazy" />
+            </a>
+            <figcaption>02 brief tab</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/02-card-share-link.png" target="_blank">
+              <img src="07-navigation-atlas/02-card-share-link.png" alt="02-card-share-link.png" loading="lazy" />
+            </a>
+            <figcaption>02 card share link</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/02-home-plan-to-train.png" target="_blank">
+              <img src="07-navigation-atlas/02-home-plan-to-train.png" alt="02-home-plan-to-train.png" loading="lazy" />
+            </a>
+            <figcaption>02 home plan to train</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/02-reload-review.png" target="_blank">
+              <img src="07-navigation-atlas/02-reload-review.png" alt="02-reload-review.png" loading="lazy" />
+            </a>
+            <figcaption>02 reload review</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/02-review-tab.png" target="_blank">
+              <img src="07-navigation-atlas/02-review-tab.png" alt="02-review-tab.png" loading="lazy" />
+            </a>
+            <figcaption>02 review tab</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/03-card-redirect.png" target="_blank">
+              <img src="07-navigation-atlas/03-card-redirect.png" alt="03-card-redirect.png" loading="lazy" />
+            </a>
+            <figcaption>03 card redirect</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/03-forward-after-back.png" target="_blank">
+              <img src="07-navigation-atlas/03-forward-after-back.png" alt="03-forward-after-back.png" loading="lazy" />
+            </a>
+            <figcaption>03 forward after back</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/03-home-cards-to-train.png" target="_blank">
+              <img src="07-navigation-atlas/03-home-cards-to-train.png" alt="03-home-cards-to-train.png" loading="lazy" />
+            </a>
+            <figcaption>03 home cards to train</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/03-progress-tab.png" target="_blank">
+              <img src="07-navigation-atlas/03-progress-tab.png" alt="03-progress-tab.png" loading="lazy" />
+            </a>
+            <figcaption>03 progress tab</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/03-reload-progress.png" target="_blank">
+              <img src="07-navigation-atlas/03-reload-progress.png" alt="03-reload-progress.png" loading="lazy" />
+            </a>
+            <figcaption>03 reload progress</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/03-triage-tab.png" target="_blank">
+              <img src="07-navigation-atlas/03-triage-tab.png" alt="03-triage-tab.png" loading="lazy" />
+            </a>
+            <figcaption>03 triage tab</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/04-case-tab.png" target="_blank">
+              <img src="07-navigation-atlas/04-case-tab.png" alt="04-case-tab.png" loading="lazy" />
+            </a>
+            <figcaption>04 case tab</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/04-home-progress.png" target="_blank">
+              <img src="07-navigation-atlas/04-home-progress.png" alt="04-home-progress.png" loading="lazy" />
+            </a>
+            <figcaption>04 home progress</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/04-profile-tab.png" target="_blank">
+              <img src="07-navigation-atlas/04-profile-tab.png" alt="04-profile-tab.png" loading="lazy" />
+            </a>
+            <figcaption>04 profile tab</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/04-reload-profile.png" target="_blank">
+              <img src="07-navigation-atlas/04-reload-profile.png" alt="04-reload-profile.png" loading="lazy" />
+            </a>
+            <figcaption>04 reload profile</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/05-home-handler.png" target="_blank">
+              <img src="07-navigation-atlas/05-home-handler.png" alt="05-home-handler.png" loading="lazy" />
+            </a>
+            <figcaption>05 home handler</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/05-reload-mission-brief.png" target="_blank">
+              <img src="07-navigation-atlas/05-reload-mission-brief.png" alt="05-reload-mission-brief.png" loading="lazy" />
+            </a>
+            <figcaption>05 reload mission brief</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/05-signal-tab.png" target="_blank">
+              <img src="07-navigation-atlas/05-signal-tab.png" alt="05-signal-tab.png" loading="lazy" />
+            </a>
+            <figcaption>05 signal tab</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/06-catchall-404.png" target="_blank">
+              <img src="07-navigation-atlas/06-catchall-404.png" alt="06-catchall-404.png" loading="lazy" />
+            </a>
+            <figcaption>06 catchall 404</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/06-debrief-tab.png" target="_blank">
+              <img src="07-navigation-atlas/06-debrief-tab.png" alt="06-debrief-tab.png" loading="lazy" />
+            </a>
+            <figcaption>06 debrief tab</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/06-home-settings.png" target="_blank">
+              <img src="07-navigation-atlas/06-home-settings.png" alt="06-home-settings.png" loading="lazy" />
+            </a>
+            <figcaption>06 home settings</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/07-root-redirect.png" target="_blank">
+              <img src="07-navigation-atlas/07-root-redirect.png" alt="07-root-redirect.png" loading="lazy" />
+            </a>
+            <figcaption>07 root redirect</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/07-schedules.png" target="_blank">
+              <img src="07-navigation-atlas/07-schedules.png" alt="07-schedules.png" loading="lazy" />
+            </a>
+            <figcaption>07 schedules</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/08-drills.png" target="_blank">
+              <img src="07-navigation-atlas/08-drills.png" alt="08-drills.png" loading="lazy" />
+            </a>
+            <figcaption>08 drills</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/09-training.png" target="_blank">
+              <img src="07-navigation-atlas/09-training.png" alt="09-training.png" loading="lazy" />
+            </a>
+            <figcaption>09 training</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/10-training-run.png" target="_blank">
+              <img src="07-navigation-atlas/10-training-run.png" alt="10-training-run.png" loading="lazy" />
+            </a>
+            <figcaption>10 training run</figcaption>
+          </figure>
+
+          <figure>
+            <a href="07-navigation-atlas/11-settings.png" target="_blank">
+              <img src="07-navigation-atlas/11-settings.png" alt="11-settings.png" loading="lazy" />
+            </a>
+            <figcaption>11 settings</figcaption>
+          </figure>
+      </div>
+    </section>
+
+    <section class="scenario">
+      <h2>Module Explorer <span class="count">(27 screenshots)</span></h2>
+      <div class="grid">
+        
+          <figure>
+            <a href="08-module-explorer/01-module-agencies.png" target="_blank">
+              <img src="08-module-explorer/01-module-agencies.png" alt="01-module-agencies.png" loading="lazy" />
+            </a>
+            <figcaption>01 module agencies</figcaption>
+          </figure>
+
+          <figure>
+            <a href="08-module-explorer/01-module-browser.png" target="_blank">
+              <img src="08-module-explorer/01-module-browser.png" alt="01-module-browser.png" loading="lazy" />
+            </a>
+            <figcaption>01 module browser</figcaption>
+          </figure>
+
+          <figure>
+            <a href="08-module-explorer/01-module-selection.png" target="_blank">
+              <img src="08-module-explorer/01-module-selection.png" alt="01-module-selection.png" loading="lazy" />
+            </a>
+            <figcaption>01 module selection</figcaption>
+          </figure>
+
+          <figure>
+            <a href="08-module-explorer/01-quick-train-combat.png" target="_blank">
+              <img src="08-module-explorer/01-quick-train-combat.png" alt="01-quick-train-combat.png" loading="lazy" />
+            </a>
+            <figcaption>01 quick train combat</figcaption>
+          </figure>
+
+          <figure>
+            <a href="08-module-explorer/02-module-combat.png" target="_blank">
+              <img src="08-module-explorer/02-module-combat.png" alt="02-module-combat.png" loading="lazy" />
+            </a>
+            <figcaption>02 module combat</figcaption>
+          </figure>
+
+          <figure>
+            <a href="08-module-explorer/02-module-count.png" target="_blank">
+              <img src="08-module-explorer/02-module-count.png" alt="02-module-count.png" loading="lazy" />
+            </a>
+            <figcaption>02 module count</figcaption>
+          </figure>
+
+          <figure>
+            <a href="08-module-explorer/02-quick-train-cybersecurity.png" target="_blank">
+              <img src="08-module-explorer/02-quick-train-cybersecurity.png" alt="02-quick-train-cybersecurity.png" loading="lazy" />
+            </a>
+            <figcaption>02 quick train cybersecurity</figcaption>
+          </figure>
+
+          <figure>
+            <a href="08-module-explorer/02-selection-persists.png" target="_blank">
+              <img src="08-module-explorer/02-selection-persists.png" alt="02-selection-persists.png" loading="lazy" />
+            </a>
+            <figcaption>02 selection persists</figcaption>
+          </figure>
+
+          <figure>
+            <a href="08-module-explorer/03-module-counter_biochem.png" target="_blank">
+              <img src="08-module-explorer/03-module-counter_biochem.png" alt="03-module-counter_biochem.png" loading="lazy" />
+            </a>
+            <figcaption>03 module counter_biochem</figcaption>
+          </figure>
+
+          <figure>
+            <a href="08-module-explorer/03-module-metadata.png" target="_blank">
+              <img src="08-module-explorer/03-module-metadata.png" alt="03-module-metadata.png" loading="lazy" />
+            </a>
+            <figcaption>03 module metadata</figcaption>
+          </figure>
+
+          <figure>
+            <a href="08-module-explorer/03-quick-train-espionage.png" target="_blank">
+              <img src="08-module-explorer/03-quick-train-espionage.png" alt="03-quick-train-espionage.png" loading="lazy" />
+            </a>
+            <figcaption>03 quick train espionage</figcaption>
+          </figure>
+
+          <figure>
+            <a href="08-module-explorer/04-module-counter_psyops.png" target="_blank">
+              <img src="08-module-explorer/04-module-counter_psyops.png" alt="04-module-counter_psyops.png" loading="lazy" />
+            </a>
+            <figcaption>04 module counter_psyops</figcaption>
+          </figure>
+
+          <figure>
+            <a href="08-module-explorer/05-module-cybersecurity.png" target="_blank">
+              <img src="08-module-explorer/05-module-cybersecurity.png" alt="05-module-cybersecurity.png" loading="lazy" />
+            </a>
+            <figcaption>05 module cybersecurity</figcaption>
+          </figure>
+
+          <figure>
+            <a href="08-module-explorer/06-module-dance.png" target="_blank">
+              <img src="08-module-explorer/06-module-dance.png" alt="06-module-dance.png" loading="lazy" />
+            </a>
+            <figcaption>06 module dance</figcaption>
+          </figure>
+
+          <figure>
+            <a href="08-module-explorer/07-module-equations.png" target="_blank">
+              <img src="08-module-explorer/07-module-equations.png" alt="07-module-equations.png" loading="lazy" />
+            </a>
+            <figcaption>07 module equations</figcaption>
+          </figure>
+
+          <figure>
+            <a href="08-module-explorer/08-module-espionage.png" target="_blank">
+              <img src="08-module-explorer/08-module-espionage.png" alt="08-module-espionage.png" loading="lazy" />
+            </a>
+            <figcaption>08 module espionage</figcaption>
+          </figure>
+
+          <figure>
+            <a href="08-module-explorer/09-module-fitness.png" target="_blank">
+              <img src="08-module-explorer/09-module-fitness.png" alt="09-module-fitness.png" loading="lazy" />
+            </a>
+            <figcaption>09 module fitness</figcaption>
+          </figure>
+
+          <figure>
+            <a href="08-module-explorer/10-module-intelligence.png" target="_blank">
+              <img src="08-module-explorer/10-module-intelligence.png" alt="10-module-intelligence.png" loading="lazy" />
+            </a>
+            <figcaption>10 module intelligence</figcaption>
+          </figure>
+
+          <figure>
+            <a href="08-module-explorer/11-module-investigation.png" target="_blank">
+              <img src="08-module-explorer/11-module-investigation.png" alt="11-module-investigation.png" loading="lazy" />
+            </a>
+            <figcaption>11 module investigation</figcaption>
+          </figure>
+
+          <figure>
+            <a href="08-module-explorer/12-module-martial_arts.png" target="_blank">
+              <img src="08-module-explorer/12-module-martial_arts.png" alt="12-module-martial_arts.png" loading="lazy" />
+            </a>
+            <figcaption>12 module martial_arts</figcaption>
+          </figure>
+
+          <figure>
+            <a href="08-module-explorer/13-module-psiops.png" target="_blank">
+              <img src="08-module-explorer/13-module-psiops.png" alt="13-module-psiops.png" loading="lazy" />
+            </a>
+            <figcaption>13 module psiops</figcaption>
+          </figure>
+
+          <figure>
+            <a href="08-module-explorer/14-module-war_strategy.png" target="_blank">
+              <img src="08-module-explorer/14-module-war_strategy.png" alt="14-module-war_strategy.png" loading="lazy" />
+            </a>
+            <figcaption>14 module war_strategy</figcaption>
+          </figure>
+
+          <figure>
+            <a href="08-module-explorer/15-module-web_three.png" target="_blank">
+              <img src="08-module-explorer/15-module-web_three.png" alt="15-module-web_three.png" loading="lazy" />
+            </a>
+            <figcaption>15 module web_three</figcaption>
+          </figure>
+
+          <figure>
+            <a href="08-module-explorer/16-module-self_sovereignty.png" target="_blank">
+              <img src="08-module-explorer/16-module-self_sovereignty.png" alt="16-module-self_sovereignty.png" loading="lazy" />
+            </a>
+            <figcaption>16 module self_sovereignty</figcaption>
+          </figure>
+
+          <figure>
+            <a href="08-module-explorer/17-module-anti_psn.png" target="_blank">
+              <img src="08-module-explorer/17-module-anti_psn.png" alt="17-module-anti_psn.png" loading="lazy" />
+            </a>
+            <figcaption>17 module anti_psn</figcaption>
+          </figure>
+
+          <figure>
+            <a href="08-module-explorer/18-module-anti_tcs_idc_cbc.png" target="_blank">
+              <img src="08-module-explorer/18-module-anti_tcs_idc_cbc.png" alt="18-module-anti_tcs_idc_cbc.png" loading="lazy" />
+            </a>
+            <figcaption>18 module anti_tcs_idc_cbc</figcaption>
+          </figure>
+
+          <figure>
+            <a href="08-module-explorer/19-module-space_force.png" target="_blank">
+              <img src="08-module-explorer/19-module-space_force.png" alt="19-module-space_force.png" loading="lazy" />
+            </a>
+            <figcaption>19 module space_force</figcaption>
+          </figure>
+      </div>
+    </section>
+</body>
+</html>

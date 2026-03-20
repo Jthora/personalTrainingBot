@@ -19,7 +19,7 @@ import { usePalette } from '../../contexts/PaletteContext';
 import OperatorAssistant from '../../components/OperatorAssistant/OperatorAssistant';
 import StepToolsBar from '../../components/StepToolsBar/StepToolsBar';
 import type { MissionRoutePath } from '../../utils/missionTelemetryContracts';
-import styles from './MissionFlow.module.css';
+import styles from './MissionSurfaces.module.css';
 
 const MissionLayout: React.FC = () => {
   const location = useLocation();

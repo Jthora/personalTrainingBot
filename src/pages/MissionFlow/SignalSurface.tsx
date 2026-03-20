@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './MissionFlow.module.css';
+import styles from './MissionSurfaces.module.css';
 import { getMissionSurfaceState } from '../../store/missionFlow/routeState';
 import MissionRouteState from '../../components/MissionRouteState/MissionRouteState';
 import SignalsPanel from '../../components/Signals/SignalsPanel';

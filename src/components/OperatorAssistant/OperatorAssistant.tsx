@@ -8,7 +8,7 @@ import React from 'react';
 import type { GuidanceMode, SopHint } from '../../data/sopHints';
 import { getArchetypeHints } from '../../utils/archetypeHints';
 import OperativeProfileStore from '../../store/OperativeProfileStore';
-import styles from '../../pages/MissionFlow/MissionFlow.module.css';
+import styles from '../../pages/MissionFlow/MissionSurfaces.module.css';
 
 interface OperatorAssistantProps {
   guidanceMode: GuidanceMode;

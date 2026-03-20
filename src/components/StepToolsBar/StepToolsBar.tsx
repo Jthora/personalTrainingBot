@@ -9,7 +9,7 @@ import type { MissionTab } from '../../data/missionTabs';
 import type { GuidanceMode } from '../../data/sopHints';
 import type { MissionRoutePath } from '../../utils/missionTelemetryContracts';
 import { trackEvent } from '../../utils/telemetry';
-import styles from '../../pages/MissionFlow/MissionFlow.module.css';
+import styles from '../../pages/MissionFlow/MissionSurfaces.module.css';
 
 interface StepToolsBarProps {
   currentStep: MissionTab;

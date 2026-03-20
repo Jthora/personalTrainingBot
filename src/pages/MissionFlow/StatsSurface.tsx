@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import styles from './MissionFlow.module.css';
+import styles from './MissionSurfaces.module.css';
 import statsStyles from './StatsSurface.module.css';
 import UserProgressStore from '../../store/UserProgressStore';
 import { computeReadiness } from '../../utils/readiness/model';

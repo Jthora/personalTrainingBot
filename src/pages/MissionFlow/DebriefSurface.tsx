@@ -4,7 +4,7 @@ import DebriefClosureSummary from '../../components/DebriefClosureSummary/Debrie
 import MissionCycleSummary from '../../components/MissionCycleSummary/MissionCycleSummary';
 import ChallengePanel from '../../components/ChallengePanel/ChallengePanel';
 import DataSafetyPanel from '../../components/DataSafetyPanel/DataSafetyPanel';
-import styles from './MissionFlow.module.css';
+import styles from './MissionSurfaces.module.css';
 import { getMissionSurfaceState } from '../../store/missionFlow/routeState';
 import MissionRouteState from '../../components/MissionRouteState/MissionRouteState';
 import MissionStepHandoff from '../../components/MissionStepHandoff/MissionStepHandoff';

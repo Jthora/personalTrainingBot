@@ -13,7 +13,7 @@ import CardProgressStore from '../../store/CardProgressStore';
 import { generateQuiz } from '../../utils/quizGenerator';
 import type { Card } from '../../types/Card';
 import { resolveShellRoute } from '../../utils/resolveShellRoute';
-import styles from './MissionFlow.module.css';
+import styles from './MissionSurfaces.module.css';
 
 const QuizSurface: React.FC = () => {
   const navigate = useNavigate();

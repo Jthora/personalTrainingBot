@@ -4,6 +4,7 @@ import CardSlugRedirect from './CardSlugRedirect';
 import MissionEntryRedirect from '../pages/MissionFlow/MissionEntryRedirect';
 import ErrorBoundary from '../components/ErrorBoundary/ErrorBoundary';
 import SurfaceLoader from '../components/SurfaceLoader/SurfaceLoader';
+import NotFound from '../pages/NotFound/NotFound';
 import {
   resolveLegacyAliasPath,
 } from './missionCutover';
@@ -87,7 +88,7 @@ const AppRoutes: React.FC = () => {
 
       <Route path="/c/:slug" element={<CardSlugRedirect />} />
       <Route path="/share/:slug" element={<Surface><CardSharePage /></Surface>} />
-      <Route path="*" element={<Navigate to={defaultRoot} replace />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };

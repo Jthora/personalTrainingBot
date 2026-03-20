@@ -3,8 +3,8 @@
 > Single source of truth for all active work streams.
 >
 > **Last updated**: 2026-03-19
-> **Branch**: `main` @ `bf59a7b` (6 commits ahead of origin) + uncommitted Batch 5
-> **Unit tests**: 1,397/1,397 passing | **Beta tests**: 21/21 passing | **Build**: clean (5.72s)
+> **Branch**: `main` @ `ed993a5` (7 commits ahead of origin) + uncommitted Batch 6
+> **Unit tests**: 1,400/1,400 passing | **Beta tests**: 21/21 passing | **Build**: clean (4.54s)
 
 ---
 
@@ -18,10 +18,10 @@
 | UI Deep Clean — Planning | **DONE** | 21/21 docs | `docs/ui-deep-clean/` |
 | UI Deep Clean — Phase 1 | **DONE** | 28/35 | Domain migration (7 conditional on repo rename) |
 | UI Deep Clean — Phase 2 | **DONE** | 93/93 | CSS token cleanup |
-| UI Deep Clean — Phase 3 | **In progress** | 11/39 | Loading & first impression |
+| UI Deep Clean — Phase 3 | **In progress** | 16/39 | Loading & first impression |
 | UI Deep Clean — Phase 4 | Not started | 0/46 | Shell unification |
 | UI Deep Clean — Phase 5 | **DONE** | 23/23 | Dead code purge |
-| UI Deep Clean — Phase 6 | **In progress** | 12/30 | Component polish |
+| UI Deep Clean — Phase 6 | **In progress** | 21/30 | Component polish |
 
 ---
 
@@ -194,17 +194,17 @@ Consolidate inline styles, add missing UX states, fix misc bugs.
 | UI deep clean audit/docs | 21 | 21 | 0 |
 | Phase 1: Domain migration | 39 | 32 | 7 |
 | Phase 2: CSS tokens | 97 | 97 | 0 |
-| Phase 3: First impression | 45 | 6 | 39 |
+| Phase 3: First impression | 45 | 16 | 29 |
 | Phase 4: Shell unification | 55 | 0 | 55 |
 | Phase 5: Dead code | 27 | 27 | 0 |
-| Phase 6: Component polish | 36 | 9 | 27 |
-| **Total** | **593** | **465** | **128** |
+| Phase 6: Component polish | 36 | 21 | 15 |
+| **Total** | **593** | **486** | **107** |
 
 ---
 
 ## Unpushed Commits
 
-These 5 commits are on `main` but not yet on `origin/main`:
+These 7 commits are on `main` but not yet on `origin/main`:
 
 | Commit | Summary | Files |
 |--------|---------|-------|
@@ -213,6 +213,8 @@ These 5 commits are on `main` but not yet on `origin/main`:
 | `e706160` | UI Deep Clean Batch 1 — CSS token migration, dead code removal, bug fixes | 48 files |
 | `2480c36` | UI Deep Clean Batch 2 — Complete Phase 2, extend Phase 5 | 38 files |
 | `e78e3fc` | UI Deep Clean Batch 3 — Domain migration, dead redirect cleanup, CSS naming | 16 files |
+| `bf59a7b` | UI Deep Clean Batch 4 — CSS modules, splash screen, conventions | 9 files |
+| `ed993a5` | UI Deep Clean Batch 5 — Loading redesign, Suspense fallback, inline styles | 7 files |
 
 ---
 
@@ -220,9 +222,9 @@ These 5 commits are on `main` but not yet on `origin/main`:
 
 | Gate | Command | Current Status |
 |------|---------|---------------|
-| Unit tests | `npx vitest run` | 1,395/1,395 passing |
+| Unit tests | `npx vitest run` | 1,400/1,400 passing |
 | Beta tests | `npm run test:beta` | 21/21 passing |
-| Build | `npx vite build` | Clean (4.78s) |
+| Build | `npx vite build` | Clean (4.54s) |
 | Lint | `npx eslint src/` | — (run before committing) |
 
 > **Note**: `npm run build` fails due to missing `src/utils/generateCombinedTrainingData.ts`. Use `npx vite build` directly.

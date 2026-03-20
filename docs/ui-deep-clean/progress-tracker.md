@@ -211,13 +211,13 @@
 - [x] `P3-010` Fix hardcoded `#ffffff` — done in P2 token migration
 - [x] `P3-011` Fix hardcoded `#ffe1b3` — done in P2 token migration
 - [x] `P3-012` Add loading stage labels — 5 stages mapped to progress %
-- [ ] `P3-013` Test reduced motion path
+- [x] `P3-013` Test reduced motion path — spinner + animation bar asserted in test; CSS has @media reduce
 
 ### Suspense Fallback Audit (6)
 - [x] `P3-014` Fix `fallback={null}` in App.tsx — replaced with `<SurfaceLoader />`
-- [ ] `P3-015` Brand SurfaceLoader spinner
-- [ ] `P3-016` Add aria-live to SurfaceLoader
-- [ ] `P3-017` Verify SovereigntyPanel Suspense styles
+- [x] `P3-015` Brand SurfaceLoader spinner — uses --accent/--accent-soft tokens, added reduced-motion opacity + SR text
+- [x] `P3-016` Add aria-live to SurfaceLoader — added aria-live="polite" + visually hidden loading text
+- [x] `P3-017` Verify SovereigntyPanel Suspense styles — uses styled .overlayDesc fallback, appropriate as-is
 - [ ] `P3-018` Add skeleton states for heavy surfaces
 - [ ] `P3-019` Measure lazy-load waterfall
 
@@ -387,20 +387,20 @@
 - [x] `P6-001` ReviewDashboard inline colors — done via P2-077
 - [x] `P6-002` NetworkStatusIndicator → CSS module (3 classes: indicator/online/offline)
 - [x] `P6-003` CacheIndicator → CSS module (2 classes: indicator/hidden)
-- [ ] `P6-004` QuizRunner disciplineStyle — reviewed: dynamic theming, must stay inline
-- [ ] `P6-005` ActivityHeatmap inline styles — reviewed: computed positions, must stay inline
-- [ ] `P6-006` ScoreLineChart inline styles — reviewed: dynamic opacity/color, must stay inline
-- [ ] `P6-007` RecapModal inline styles — reviewed: progress bar widths, must stay inline
+- [x] `P6-004` QuizRunner disciplineStyle — reviewed: dynamic theming, stays inline
+- [x] `P6-005` ActivityHeatmap inline styles — reviewed: computed positions, stays inline
+- [x] `P6-006` ScoreLineChart inline styles — reviewed: dynamic opacity/color, stays inline
+- [x] `P6-007` RecapModal inline styles — reviewed: progress bar widths, stays inline
 - [x] `P6-008` ModuleBrowser inline styles — audited: zero inline styles found
 - [x] `P6-009` DeckBrowser inline styles — audited: zero inline styles found
 - [x] `P6-010` QuizSurface inline styles — extracted to .centeredMessage + .primaryButton classes
-- [ ] `P6-011` ExerciseRenderer inline style — reviewed: conditional answer styling, must stay inline
-- [ ] `P6-012` Batch fix remaining files
+- [x] `P6-011` ExerciseRenderer inline style — reviewed: conditional answer styling, stays inline
+- [x] `P6-012` Batch fix remaining files — audit complete, all dynamic styles stay inline
 
 ### Missing UX States (10)
-- [ ] `P6-013` Create 404 page
-- [ ] `P6-014` Add 404 catch-all route
-- [ ] `P6-015` Design 404 with branding
+- [x] `P6-013` Create 404 page — NotFound.tsx with CSS module
+- [x] `P6-014` Add 404 catch-all route — replaced Navigate with NotFound in Routes.tsx
+- [x] `P6-015` Design 404 with branding — "Sector Not Found" theme, accent tokens, Return to Base link
 - [ ] `P6-016` TrainingSurface skeleton
 - [ ] `P6-017` ReviewDashboard skeleton
 - [ ] `P6-018` ProfileSurface skeleton

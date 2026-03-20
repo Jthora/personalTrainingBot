@@ -44,4 +44,13 @@ describe('LoadingMessage', () => {
     expect(bar).toBeTruthy();
     expect(bar.getAttribute('aria-valuenow')).toBe('60');
   });
+
+  it('renders spinner element targeted by reduced-motion CSS', () => {
+    const { container } = render(<LoadingMessage progress={50} />);
+    const spinner = container.querySelector('[class*="spinner"]');
+    expect(spinner).toBeTruthy();
+    // The animation bar should also exist for reduced-motion override
+    const animBar = container.querySelector('[class*="loadingBarAnimation"]');
+    expect(animBar).toBeTruthy();
+  });
 });

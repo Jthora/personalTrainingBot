@@ -13,7 +13,7 @@ interface ShellKeyboardOptions {
 }
 
 /**
- * Shared keyboard shortcuts for both AppShell and MissionShell:
+ * Shared keyboard shortcuts for AppShell (unified shell):
  * - ⌘/Ctrl + K → toggle action palette
  * - Escape → close palette
  * - ⌘/Ctrl + 1-9 → jump to tab (when tabs provided)

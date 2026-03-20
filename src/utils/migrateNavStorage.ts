@@ -54,7 +54,7 @@ export const migrateNavStorage = (): void => {
     }
 
     // Task 224: Step-complete is mission-mode only — no migration needed
-    // (mission:step-complete:v1 stays for MissionShell, irrelevant to AppShell)
+    // (mission:step-complete:v1 stays for MissionLayout mission chrome)
 
     // Task 225: These path-independent keys stay unchanged:
     // - mission:intake:v1

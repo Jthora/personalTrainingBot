@@ -1,7 +1,7 @@
 /**
  * Mission tab definitions and composition logic.
  *
- * Centralizes all tab data so MissionShell simply composes from here.
+ * Centralizes all tab data so MissionLayout simply composes from here.
  */
 import { missionEntityIcons } from '../utils/mission/iconography';
 import type { MissionRoutePath } from '../utils/missionTelemetryContracts';
@@ -34,7 +34,7 @@ export const trainingTab: MissionTab = {
 };
 
 /**
- * Compose the full ordered tab list for MissionShell.
+ * Compose the full ordered tab list for MissionLayout.
  * Training tab is placed at position 2 (after Brief) — the core value proposition.
  */
 export const composeMissionTabs = (opts?: {

@@ -32,7 +32,7 @@ interface UseOnboardingStateOptions {
 }
 
 /**
- * Shared onboarding state hook — used by both AppShell and MissionShell.
+ * Shared onboarding state hook — used by both AppShell and MissionLayout.
  * Reads/writes the same localStorage keys for backward compatibility.
  */
 export function useOnboardingState(options: UseOnboardingStateOptions): OnboardingState {

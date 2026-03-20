@@ -14,7 +14,7 @@ interface OnboardingFlowProps {
 /**
  * Shared onboarding flow orchestrator.
  * Renders the correct step based on the state machine in useOnboardingState.
- * Used by both AppShell and MissionShell.
+ * Used by both AppShell and MissionLayout.
  */
 const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ state, onStartBriefing }) => {
   const {

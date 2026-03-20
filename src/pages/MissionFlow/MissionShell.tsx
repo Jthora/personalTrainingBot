@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 import styles from './MissionFlow.module.css';
@@ -17,6 +17,7 @@ import { assistantHints, FALLBACK_ROUTE } from '../../data/sopHints';
 import { useStepCompletion } from '../../hooks/useStepCompletion';
 import { useGuidanceMode } from '../../hooks/useGuidanceMode';
 import { useMissionTelemetry } from '../../hooks/useMissionTelemetry';
+import { useShellKeyboardShortcuts } from '../../hooks/useShellKeyboardShortcuts';
 import OperatorAssistant from '../../components/OperatorAssistant/OperatorAssistant';
 import StepToolsBar from '../../components/StepToolsBar/StepToolsBar';
 
@@ -91,21 +92,12 @@ const MissionShell: React.FC = () => {
   }, [telemetry.missionContext?.caseId, telemetry.missionContext?.operationId, telemetry.missionContext?.signalId, routeSearch]);
 
   // ── Keyboard shortcut: ⌘K palette ──
-  useEffect(() => {
-    const onKeyDown = (event: KeyboardEvent) => {
-      const isMetaShortcut = (event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k';
-      if (isMetaShortcut) {
-        event.preventDefault();
-        setPaletteOpen((prev) => !prev);
-        return;
-      }
-      if (event.key === 'Escape') {
-        setPaletteOpen(false);
-      }
-    };
-    window.addEventListener('keydown', onKeyDown);
-    return () => window.removeEventListener('keydown', onKeyDown);
-  }, []);
+  const togglePalette = useCallback(() => setPaletteOpen((prev) => !prev), []);
+  const closePalette = useCallback(() => setPaletteOpen(false), []);
+  useShellKeyboardShortcuts({
+    onTogglePalette: togglePalette,
+    onClosePalette: closePalette,
+  });
 
   return (
     <div className={styles.pageContainer}>

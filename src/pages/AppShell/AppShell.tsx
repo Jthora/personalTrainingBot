@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState, useCallback } from 'react';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 import CelebrationLayer from '../../components/CelebrationLayer/CelebrationLayer';
@@ -18,6 +18,7 @@ import {
   type AppShellTab,
 } from './appShellTabs';
 import { migrateNavStorage } from '../../utils/migrateNavStorage';
+import { useShellKeyboardShortcuts } from '../../hooks/useShellKeyboardShortcuts';
 import styles from './AppShell.module.css';
 
 // Run once on first import — idempotent
@@ -57,39 +58,14 @@ const AppShell: React.FC = () => {
   }, [tabs, location.pathname]);
 
   // ── Keyboard shortcuts: ⌘1-9 for tabs, ⌘K for palette ──
-  useEffect(() => {
-    const onKeyDown = (event: KeyboardEvent) => {
-      if (!(event.metaKey || event.ctrlKey)) {
-        if (event.key === 'Escape') setPaletteOpen(false);
-        return;
-      }
-
-      const key = event.key.toLowerCase();
-
-      if (key === 'k') {
-        event.preventDefault();
-        setPaletteOpen((prev) => !prev);
-        return;
-      }
-
-      const digit = parseInt(key, 10);
-      if (digit >= 1 && digit <= tabs.length) {
-        event.preventDefault();
-        const target = tabs[digit - 1];
-        trackEvent({
-          category: 'ia',
-          action: 'tab_view',
-          route: target.path,
-          data: { source: 'keyboard', shortcut: `⌘${digit}` },
-          source: 'ui',
-        });
-        navigate(target.path);
-      }
-    };
-
-    window.addEventListener('keydown', onKeyDown);
-    return () => window.removeEventListener('keydown', onKeyDown);
-  }, [tabs, navigate]);
+  const togglePalette = useCallback(() => setPaletteOpen((prev) => !prev), []);
+  const closePalette = useCallback(() => setPaletteOpen(false), []);
+  useShellKeyboardShortcuts({
+    tabs,
+    onTogglePalette: togglePalette,
+    onClosePalette: closePalette,
+    onNavigate: navigate,
+  });
 
   // ── Tab-view telemetry ──
   useEffect(() => {

@@ -13,14 +13,35 @@ describe('LoadingMessage', () => {
   it('animates loading dots over time', () => {
     vi.useFakeTimers();
     render(<LoadingMessage progress={0} />);
-    // initial: empty
-    expect(screen.getByText('App Loading')).toBeTruthy();
-    // after 500ms: '.'
+    expect(screen.getByText(/Initializing systems/)).toBeTruthy();
     act(() => { vi.advanceTimersByTime(500); });
-    expect(screen.getByText(/App Loading/)).toBeTruthy();
-    // after 2000ms total: cycles through
+    expect(screen.getByText(/Initializing systems/)).toBeTruthy();
     act(() => { vi.advanceTimersByTime(1500); });
-    expect(screen.getByText(/App Loading/)).toBeTruthy();
+    expect(screen.getByText(/Initializing systems/)).toBeTruthy();
     vi.useRealTimers();
+  });
+
+  it('shows correct stage label based on progress', () => {
+    const { rerender } = render(<LoadingMessage progress={0} />);
+    expect(screen.getByText(/Initializing systems/)).toBeTruthy();
+
+    rerender(<LoadingMessage progress={15} />);
+    expect(screen.getByText(/Restoring cached data/)).toBeTruthy();
+
+    rerender(<LoadingMessage progress={50} />);
+    expect(screen.getByText(/Loading training modules/)).toBeTruthy();
+
+    rerender(<LoadingMessage progress={80} />);
+    expect(screen.getByText(/Preparing interface/)).toBeTruthy();
+
+    rerender(<LoadingMessage progress={100} />);
+    expect(screen.getByText(/Systems online/)).toBeTruthy();
+  });
+
+  it('has accessible progressbar role', () => {
+    render(<LoadingMessage progress={60} />);
+    const bar = screen.getByRole('progressbar');
+    expect(bar).toBeTruthy();
+    expect(bar.getAttribute('aria-valuenow')).toBe('60');
   });
 });

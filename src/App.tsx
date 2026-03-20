@@ -12,6 +12,7 @@ import { restoreIfNeeded } from './utils/backupManager';
 
 const RecapModal = lazy(() => import('./components/RecapModal/RecapModal'));
 const RecapToast = lazy(() => import('./components/RecapToast/RecapToast'));
+import SurfaceLoader from './components/SurfaceLoader/SurfaceLoader';
 import CacheIndicator from './components/CacheIndicator/CacheIndicator';
 import { registerScheduleRefreshInterval, registerScheduleRefreshOnFocus } from './utils/ScheduleLoader';
 import { logRuntimePayloadSample } from './utils/payloadLogging';
@@ -151,7 +152,7 @@ const App: React.FC = () => {
           <UpdateNotification />
           <ScheduleNavigationRefresh />
           <AppRoutes />
-          <Suspense fallback={null}>
+          <Suspense fallback={<SurfaceLoader />}>
             <RecapToast />
             <RecapModal />
           </Suspense>

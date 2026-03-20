@@ -1,8 +1,16 @@
 import { useEffect, useState } from 'react';
-import styles from './LoadingMessage.module.css'; // Import the CSS module
+import styles from './LoadingMessage.module.css';
 
 interface LoadingMessageProps {
-  progress: number; // Add progress prop
+  progress: number;
+}
+
+function getStageLabel(progress: number): string {
+  if (progress < 10) return 'Initializing systems';
+  if (progress < 40) return 'Restoring cached data';
+  if (progress < 70) return 'Loading training modules';
+  if (progress < 95) return 'Preparing interface';
+  return 'Systems online';
 }
 
 const LoadingMessage: React.FC<LoadingMessageProps> = ({ progress }) => {
@@ -16,15 +24,23 @@ const LoadingMessage: React.FC<LoadingMessageProps> = ({ progress }) => {
     return () => clearInterval(interval);
   }, []);
 
+  const stageLabel = getStageLabel(progress);
+
   return (
-    <div className={styles.loadingContainer}>
+    <div className={styles.loadingContainer} aria-label="Loading application">
       <h1 className={styles.title}>Starcom Academy</h1>
       <div className={styles.spinner}></div>
       <div className={styles.loadingTextContainer}>
-        <div className={styles.loadingText}>App Loading<span className={styles.loadingDots}>{dots}</span></div>
+        <div className={styles.loadingText}>{stageLabel}<span className={styles.loadingDots}>{dots}</span></div>
       </div>
-      <div className={styles.lineSpace}></div> {/* Add this line */}
-      <div className={styles.loadingBarTop}>
+      <div className={styles.lineSpace}></div>
+      <div
+        className={styles.loadingBarTop}
+        role="progressbar"
+        aria-valuenow={progress}
+        aria-valuemin={0}
+        aria-valuemax={100}
+      >
         <div
           className={styles.loadingBarProgress}
           style={{ width: `${progress}%` }}

@@ -204,17 +204,17 @@
 - [x] `P3-005` Reduced motion media query — disables spinner animation
 
 ### LoadingMessage Redesign (8)
-- [ ] `P3-006` Replace "App Loading" text
+- [x] `P3-006` Replace "App Loading" text — stage labels: Initializing/Restoring/Loading/Preparing/Online
 - [ ] `P3-007` Add branded logo/icon
 - [x] `P3-008` Fix `--handler-accent` → `--accent`
-- [ ] `P3-009` Convert kebab → camelCase CSS classes
-- [ ] `P3-010` Fix hardcoded `#ffffff`
-- [ ] `P3-011` Fix hardcoded `#ffe1b3`
-- [ ] `P3-012` Add loading stage labels
+- [x] `P3-009` Convert kebab → camelCase CSS classes
+- [x] `P3-010` Fix hardcoded `#ffffff` — done in P2 token migration
+- [x] `P3-011` Fix hardcoded `#ffe1b3` — done in P2 token migration
+- [x] `P3-012` Add loading stage labels — 5 stages mapped to progress %
 - [ ] `P3-013` Test reduced motion path
 
 ### Suspense Fallback Audit (6)
-- [ ] `P3-014` Fix `fallback={null}` in App.tsx
+- [x] `P3-014` Fix `fallback={null}` in App.tsx — replaced with `<SurfaceLoader />`
 - [ ] `P3-015` Brand SurfaceLoader spinner
 - [ ] `P3-016` Add aria-live to SurfaceLoader
 - [ ] `P3-017` Verify SovereigntyPanel Suspense styles
@@ -387,14 +387,14 @@
 - [x] `P6-001` ReviewDashboard inline colors — done via P2-077
 - [x] `P6-002` NetworkStatusIndicator → CSS module (3 classes: indicator/online/offline)
 - [x] `P6-003` CacheIndicator → CSS module (2 classes: indicator/hidden)
-- [ ] `P6-004` QuizRunner disciplineStyle
-- [ ] `P6-005` ActivityHeatmap inline styles
-- [ ] `P6-006` ScoreLineChart inline styles
-- [ ] `P6-007` RecapModal inline styles
-- [ ] `P6-008` ModuleBrowser inline styles
-- [ ] `P6-009` DeckBrowser inline styles
-- [ ] `P6-010` QuizSurface inline styles
-- [ ] `P6-011` ExerciseRenderer inline style
+- [ ] `P6-004` QuizRunner disciplineStyle — reviewed: dynamic theming, must stay inline
+- [ ] `P6-005` ActivityHeatmap inline styles — reviewed: computed positions, must stay inline
+- [ ] `P6-006` ScoreLineChart inline styles — reviewed: dynamic opacity/color, must stay inline
+- [ ] `P6-007` RecapModal inline styles — reviewed: progress bar widths, must stay inline
+- [x] `P6-008` ModuleBrowser inline styles — audited: zero inline styles found
+- [x] `P6-009` DeckBrowser inline styles — audited: zero inline styles found
+- [x] `P6-010` QuizSurface inline styles — extracted to .centeredMessage + .primaryButton classes
+- [ ] `P6-011` ExerciseRenderer inline style — reviewed: conditional answer styling, must stay inline
 - [ ] `P6-012` Batch fix remaining files
 
 ### Missing UX States (10)

@@ -273,3 +273,27 @@
     opacity: 0.9;
   }
 }
+
+/* ── QuizSurface empty/loading states ── */
+
+.centeredMessage {
+  text-align: center;
+  padding: 2rem;
+}
+
+.primaryButton {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background: var(--accent, #5A7FFF);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: var(--type-body, 1rem);
+}
+
+@media (hover: hover) {
+  .primaryButton:hover {
+    opacity: 0.85;
+  }
+}

@@ -116,7 +116,7 @@ const QuizSurface: React.FC = () => {
   if (!cacheReady) {
     return (
       <section className={styles.surface} aria-label="Quiz">
-        <div style={{ textAlign: 'center', padding: '2rem' }}>
+        <div className={styles.centeredMessage}>
           <p className={styles.body}>Loading training data…</p>
         </div>
       </section>
@@ -126,7 +126,7 @@ const QuizSurface: React.FC = () => {
   if (questions.length === 0) {
     return (
       <section className={styles.surface} aria-label="Quiz">
-        <div style={{ textAlign: 'center', padding: '2rem' }}>
+        <div className={styles.centeredMessage}>
           <h2 className={styles.title}>No Questions Available</h2>
           <p className={styles.body}>
             Not enough card data to generate quiz questions.
@@ -135,15 +135,7 @@ const QuizSurface: React.FC = () => {
           <button
             type="button"
             onClick={() => navigate(resolveShellRoute('/mission/training'))}
-            style={{
-              padding: '0.5rem 1rem',
-              borderRadius: '6px',
-              background: 'var(--accent, #5A7FFF)',
-              color: '#fff',
-              border: 'none',
-              cursor: 'pointer',
-              marginTop: '1rem',
-            }}
+            className={styles.primaryButton}
           >
             Back to Training
           </button>

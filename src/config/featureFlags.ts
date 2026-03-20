@@ -4,8 +4,7 @@ export type FeatureFlagKey =
     | 'performanceInstrumentation'
     | 'loadingCacheV2'
     | 'p2pIdentity'
-    | 'ipfsContent'
-    | 'shellV2';
+    | 'ipfsContent';
 
 type GlobalFlagKey = 'globalKillSwitch';
 
@@ -18,7 +17,6 @@ const DEFAULT_FLAGS: FeatureFlagConfig = {
     loadingCacheV2: false,
     p2pIdentity: false,
     ipfsContent: false,
-    shellV2: false,
     globalKillSwitch: false,
 };
 
@@ -28,7 +26,6 @@ const ENV_DEFAULT_FLAGS: Record<AppEnv, Partial<FeatureFlagConfig>> = {
         loadingCacheV2: true,
         p2pIdentity: true,
         ipfsContent: true,
-        shellV2: true,
         globalKillSwitch: false,
     },
     staging: {
@@ -36,7 +33,6 @@ const ENV_DEFAULT_FLAGS: Record<AppEnv, Partial<FeatureFlagConfig>> = {
         loadingCacheV2: true,
         p2pIdentity: true,
         ipfsContent: false,
-        shellV2: true,
         globalKillSwitch: false,
     },
     production: {
@@ -44,7 +40,6 @@ const ENV_DEFAULT_FLAGS: Record<AppEnv, Partial<FeatureFlagConfig>> = {
         loadingCacheV2: false,
         p2pIdentity: false,
         ipfsContent: false,
-        shellV2: true,
         globalKillSwitch: false,
     },
 };
@@ -146,7 +141,6 @@ function isFeatureFlagKey(key: string): key is FeatureFlagKey {
         'loadingCacheV2',
         'p2pIdentity',
         'ipfsContent',
-        'shellV2',
     ].includes(key);
 }
 

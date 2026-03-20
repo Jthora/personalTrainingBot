@@ -127,9 +127,11 @@ async function capturePass({ client, url, label, clearStorage }) {
         expression: `(() => {
             const marks = performance.getEntriesByType('mark').map(m => ({ type: 'mark', name: m.name, startTime: m.startTime }));
             const measures = performance.getEntriesByType('measure').map(m => ({ type: 'timing', name: m.name, value: m.duration }));
+            const paints = performance.getEntriesByType('paint').map(p => ({ type: 'paint', name: p.name, startTime: p.startTime }));
             return [
                 ...marks,
                 ...measures,
+                ...paints,
             ];
         })()`,
         returnByValue: true,

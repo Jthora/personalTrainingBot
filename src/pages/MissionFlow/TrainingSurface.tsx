@@ -1,8 +1,8 @@
 /**
  * TrainingSurface — Mission surface for browsing and launching training content.
  *
- * In v2 shell: also renders DrillRunner inline when a drill is active,
- * so users never leave the Train tab during a drill.
+ * Renders DrillRunner inline when a drill is active, so users never leave the
+ * Train tab during a drill.
  *
  * Renders ModuleBrowser (19-domain grid) at the top level, and DeckBrowser
  * (submodule/deck detail) when a module is selected — using simple component
@@ -10,9 +10,6 @@
  */
 
 import React, { useCallback, useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { resolveShellRoute } from '../../utils/resolveShellRoute';
-import { isFeatureEnabled } from '../../config/featureFlags';
 import { DrillRunStore } from '../../store/DrillRunStore';
 import styles from './MissionFlow.module.css';
 import ModuleBrowser from '../../components/ModuleBrowser/ModuleBrowser';
@@ -21,11 +18,9 @@ import DrillRunner from '../../components/DrillRunner/DrillRunner';
 import CardProgressStore from '../../store/CardProgressStore';
 
 const TrainingSurface: React.FC = () => {
-  const navigate = useNavigate();
   const [selectedModule, setSelectedModule] = useState<string | null>(null);
-  const isV2 = isFeatureEnabled('shellV2');
 
-  // Track active drill state so we can show DrillRunner inline in v2.
+  // Track active drill state so we can show DrillRunner inline.
   // Keep DrillRunner mounted while any drill state exists (even completed —
   // DrillRunner handles engagement warning, reflection, and rest interval
   // internally). Only unmount when DrillRunStore.clear() sets state to null.
@@ -35,12 +30,11 @@ const TrainingSurface: React.FC = () => {
   });
 
   useEffect(() => {
-    if (!isV2) return;
     const unsub = DrillRunStore.subscribe((state) => {
       setHasActiveDrill(state !== null);
     });
     return unsub;
-  }, [isV2]);
+  }, []);
 
   const handleModuleSelect = useCallback((moduleId: string) => {
     setSelectedModule(moduleId);
@@ -51,17 +45,13 @@ const TrainingSurface: React.FC = () => {
   }, []);
 
   const handleDrillStarted = useCallback(() => {
-    if (isV2) {
-      // In v2, DrillRunner renders inline — just trigger state update
-      setHasActiveDrill(true);
-      setSelectedModule(null);
-    } else {
-      navigate(resolveShellRoute('/mission/checklist'));
-    }
-  }, [isV2, navigate]);
+    // DrillRunner renders inline — just trigger state update
+    setHasActiveDrill(true);
+    setSelectedModule(null);
+  }, []);
 
-  // In v2, if there's an active drill, show DrillRunner inline
-  if (isV2 && hasActiveDrill) {
+  // If there's an active drill, show DrillRunner inline
+  if (hasActiveDrill) {
     return (
       <section
         id="section-mission-training"

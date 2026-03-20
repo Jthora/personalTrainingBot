@@ -21,6 +21,7 @@
     "report:mission-route-payloads": "npx tsx scripts/reportMissionRoutePayloads.ts",
     "report:mission-render-cycles": "npx tsx scripts/profileMissionRenderCycles.ts",
     "check:payload-budgets": "npx tsx scripts/checkPayloadBudgets.ts",
+    "check:boot-budget": "npx tsx scripts/checkBootBudget.ts",
     "check:mission-route-budgets": "npx tsx scripts/checkMissionRouteBudgets.ts",
     "check:encodings": "npx tsx scripts/checkEncodings.ts",
     "check:sw-offline": "npx tsx scripts/checkOfflineSW.ts",

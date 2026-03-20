@@ -3,7 +3,7 @@
 > Single source of truth for all active work streams.
 >
 > **Last updated**: 2026-03-20
-> **Branch**: `main` @ `9a7dae2` (synced with origin)
+> **Branch**: `main` @ `05e2d74` (synced with origin)
 > **Unit tests**: 1,454/1,454 passing | **Beta tests**: 21/21 passing | **Build**: clean (5.71s)
 
 ---
@@ -23,6 +23,49 @@
 | UI Deep Clean — Phase 5 | **DONE** | 23/23 | Dead code purge |
 | UI Deep Clean — Phase 6 | **DONE** | 30/30 | Component polish |
 | SEO & AI-Agent Audit | **DONE** | 15/15 | OG image, sitemap, llms-full.txt, JSON-LD, security headers |
+| Feature flags default-on | **DONE** | 4/4 | Committed `f9d7900` |
+| AI content generation | **DONE** | — | Groq/Gemini free backends, committed `1f2c9c1` |
+| Typecheck clean | **DONE** | 0 errors | Was 36 — committed `05e2d74` |
+
+---
+
+## Recent Completions (2026-03-20)
+
+### Navigation Fix `c52e418`
+
+- [x] Root cause: `process is not defined` ReferenceError crashed React before mount
+- [x] Guarded all bare `process.env.*` refs with `typeof process !== 'undefined'` checks
+- [x] `RecapModal.tsx` + `HeaderDrawer.tsx` switched to `import.meta.env.DEV`
+- [x] Verified: all 4 tabs (Train / Review / Progress / Profile) navigate correctly
+
+### Feature Flags Default-On `f9d7900`
+
+- [x] All 4 flags now default `true`: `performanceInstrumentation`, `loadingCacheV2`, `p2pIdentity`, `ipfsContent`
+- [x] All env tiers (dev / staging / production) set to all-true
+- [x] 5/5 feature flag tests pass
+
+### AI Content Generation Backend `1f2c9c1`
+
+Free alternative to paid APIs for bulk card content regeneration (98% of 4,354 cards have template content):
+
+- [x] `--backend=groq` — free tier 14,400 req/day, Llama 3.3 70B, ~2.5 hrs for all cards
+- [x] `--backend=gemini` — free tier 1,500 req/day, Gemini Flash 2.0, ~3 days for all cards
+- [x] `--api-key=<key>` or `GROQ_API_KEY` / `GEMINI_API_KEY` env vars
+- [x] `--delay=<ms>` rate-limit throttle (default 1200ms)
+- [x] Full `buildCardPrompt()` with domain context, all 5 exercise types, structured JSON output
+- [x] Template fallback when AI call fails or no key provided
+- [x] Get keys: https://console.groq.com (Groq) · https://aistudio.google.com (Gemini)
+
+### Typecheck Clean `05e2d74`
+
+- [x] Resolved all 36 TypeScript errors (was "tracked — do not fix")
+- [x] 21 × TS6133 unused imports/variables removed or prefixed
+- [x] 5 × TS2556 spread-argument errors fixed (`apply(null, args as any)`)
+- [x] 4 × TS2322 type mismatches fixed (`drill_reflection`, `training` category, `ChecklistSurface` onClick, `QuizSurface` mock)
+- [x] 3 × TS2339 property-missing errors fixed (`getTrainingModule`, `handlers`, `getTrainingModule` mock)
+- [x] 1 × TS2344 constraint fixed (`InstanceType<typeof SettingsStore>` → `SettingsStore`)
+- [x] 1 × TS6196 unused type import removed (`QuizSession`)
+- [x] 1454/1454 tests still passing after all fixes
 
 ---
 
@@ -260,7 +303,7 @@ Consolidate inline styles, add missing UX states, fix misc bugs.
 
 ## Unpushed Commits
 
-All commits through `9a7dae2` are synced with `origin/main`.
+All commits through `05e2d74` are synced with `origin/main`.
 
 | Commit | Summary | Files |
 |--------|---------|-------|
@@ -280,11 +323,11 @@ All commits through `9a7dae2` are synced with `origin/main`.
 | `2f22e1d` | Batch 12 — Route consolidation: MissionLayout inside AppShell | 6 files |
 | `e8aa22a` | Delete dead MissionShell.tsx | 7 files |
 | `9ec57ac` | P6-028: MissionFlow.module.css → MissionSurfaces.module.css | 15 files |
-| `1da1d7a` | Progress tracker updates | 1 file |
-| `3fd286b` | P3-007: Branded icon in LoadingMessage | 3 files |
-| `391d42e` | Sync both progress trackers | 2 files |
-| `28ece11` | Mark origin synced | 1 file |
 | `9a7dae2` | SEO & AI-agent audit fixes — OG image, sitemap, llms-full.txt, enriched JSON-LD | 12 files |
+| `c52e418` | fix: replace bare process.env refs that crash browser runtime | — |
+| `f9d7900` | feat: enable all feature flags by default | 2 files |
+| `1f2c9c1` | feat: add free AI backend (Groq / Gemini Flash) to generateContent pipeline | 1 file |
+| `05e2d74` | fix: resolve all 36 typecheck errors (unused vars, type mismatches, spread args) | 30 files |
 
 ---
 
@@ -296,7 +339,7 @@ All commits through `9a7dae2` are synced with `origin/main`.
 | Unit tests | `npx vitest run` | 1,454/1,454 passing |
 | Beta tests | `npm run test:beta` | 21/21 passing |
 | Build | `npm run build` | Clean (5.01s) |
-| Typecheck | `npm run typecheck` | 36 errors (tracked — unused locals + type mismatches) |
+| Typecheck | `npm run typecheck` | ✔️ 0 errors |
 | Lint | `npx eslint src/` | — (run before committing) |
 
 ---

@@ -185,7 +185,7 @@ Five instructor characters serve as training mentors, each embodying a domain ph
 | **Identity** | Gun.js SEA keypair generation with P2P profile sync — sovereignty-first |
 | **Offline** | Service worker with versioned precache, cache-first assets, navigation fallback |
 | **Styling** | CSS custom properties + CSS Modules — dark-mode military aesthetic |
-| **Testing** | Vitest with 100 test files — stores, components, domain models, utilities |
+| **Testing** | Vitest with 180 test files — stores, components, domain models, utilities |
 | **Content** | 988 static data files loaded and cached at boot |
 
 > For detailed architecture, see [docs/README.md](docs/README.md). For the development guide, see [docs/development.md](docs/development.md).

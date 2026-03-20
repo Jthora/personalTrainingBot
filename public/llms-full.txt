@@ -1,0 +1,289 @@
+# Starcom Academy — Full Documentation
+
+> Earth Alliance officer training, mission readiness, and field certification console.
+> This is the extended companion to /llms.txt — a complete reference for AI agents and language models.
+
+---
+
+## Identity
+
+- **Name:** Starcom Academy
+- **URL:** https://academy.starcom.app
+- **Organization:** Earth Alliance Command
+- **Network:** Earth Intelligence Network
+- **Creator:** Jono Tho'ra (https://jono.archangel.agency)
+- **Source:** https://github.com/Jthora/personalTrainingBot
+- **License:** MIT
+- **Stack:** React 19 + TypeScript 5.7 + Vite 6 (PWA, offline-first)
+- **Identity System:** Sovereign Ed25519 keypair via Gun.js SEA — no central authority
+- **Data:** 19 training modules, 663 card decks, 3,231 training cards
+- **State:** Client-side localStorage stores with pub/sub — no external servers
+
+---
+
+## What This Is
+
+Starcom Academy is the front door of the Earth Alliance — a sovereign, offline-first progressive web application that trains cadets across 19 multi-domain training modules spanning combat, intelligence, cyber operations, psionic defense, strategic command, and self-sovereignty. It is the commissioning authority for Earth Alliance officers and the root of trust for sovereign cadet identities within the Earth Intelligence Network.
+
+This is not a fitness app with military theming. It is institutional training infrastructure for an organization being manifested into existence. Every cadet who completes training here becomes part of the foundation of the Earth Alliance.
+
+---
+
+## Complete Training Curriculum
+
+19 training modules organized as Module → Sub-Module → Card Deck → Card.
+Each card contains instructional content with bullet points, duration, difficulty rating, and a shareable summary.
+
+### Combat / Physical Domain
+
+#### Combat Training
+ID: `combat` | 6 sub-modules | 18 card decks
+Topics: Close Quarters Combat, Combat Scenario Simulation, Firearms Training, Melee Weapons Training, Stealth and Escape Tactics, Tactical Movement
+
+#### Martial Arts Training
+ID: `martial_arts` | 12 sub-modules | 36 card decks
+Topics: Baguazhang, Capoeira, Hapkido, Jeet Kune Do, Muay Thai, Shaolin Kung Fu, Silat, Taekwondo, Tai Chi, Wing Chun, Wushu, Xing Yi Quan
+
+#### Field Conditioning
+ID: `fitness` | 12 sub-modules | 36 card decks
+Topics: Athletic Performance, Balance and Stability, Calisthenics, Cardiovascular Endurance, Core Strengthening, Flexibility and Mobility, Functional Conditioning, High-Intensity Interval Training (HIIT), Mind-Body Regulation, Recovery and Injury Prevention, Speed and Agility, Strength Training
+
+#### Dance Training
+ID: `dance` | 11 sub-modules | 22 card decks
+Topics: Breakdance, Contact Staff Flow, Cutting Shapes, Dubstep & Glitch Dance, Fan Dancing & Silk Flow, Freestyle Rave, Gloving & Tutting, Industrial Dance, Jumpstyle & Hardstyle, Liquid Dance, Poi Spinning
+
+### Intelligence / Espionage Domain
+
+#### Espionage
+ID: `espionage` | 6 sub-modules | 18 card decks
+Topics: Clandestine Surveillance, Counterintelligence, Covert Operations, Disguise and Identity, Psychological Manipulation, Tradecraft
+
+#### Intelligence
+ID: `intelligence` | 6 sub-modules | 19 card decks
+Topics: Behavioral Profiling, Cyber Intelligence, Intelligence Analysis, Linguistic Analysis, Open Source Intelligence (OSINT), Strategic Forecasting
+
+#### Investigation
+ID: `investigation` | 6 sub-modules | 18 card decks
+Topics: Criminal Profiling, Cybercrime Analysis, Digital Forensics, Financial Crimes, Forensic Investigation, Homicide Investigation
+
+#### Agency Training
+ID: `agencies` | 5 sub-modules | 15 card decks
+Topics: CIA Training, FBI Training, Homeland Security, Interpol Training, Secret Service
+
+### Psionic / Cognitive Domain
+
+#### PsiOps Training
+ID: `psiops` | 7 sub-modules | 24 card decks
+Topics: Clairvoyance and Telepathy, Energy Manipulation, Psi Field Training, Psionic Training, Psionic Weaponry, Psychic Shielding, Remote Viewing
+
+#### Counter PsyOps
+ID: `counter_psyops` | 9 sub-modules | 72 card decks
+Topics: Cyber-PsyOps & Digital Warfare Defense, Disinformation Analysis, Elite Power Structure Analysis & Infiltration Tactics, Emotional Resilience Training, Manipulation Detection, Mind Hacking Countermeasures, Narrative Warfare & Mass Awakening, Propaganda Countermeasures, Psychological Warfare Defense
+
+### Cyber / Technical Domain
+
+#### Cybersecurity
+ID: `cybersecurity` | 7 sub-modules | 23 card decks
+Topics: Digital Forensics, History of Cybersecurity, Malware Analysis, Network Security, Penetration Testing, Social Engineering Defense, Threat Intelligence
+
+#### Decentralized Systems (Web3)
+ID: `web_three` | 6 sub-modules | 18 card decks
+Topics: Blockchain Fundamentals, Decentralized Applications, Decentralized Identity & Privacy, Smart Contract Development, Tokenomics & DeFi, Decentralized Security & Auditing
+
+### Strategic / Command Domain
+
+#### War Strategy
+ID: `war_strategy` | 6 sub-modules | 18 card decks
+Topics: Asymmetric Warfare, Cyber Warfare Strategy, Geopolitical Analysis, Military Strategy, Psychological Operations Tactics, Special Operations Planning
+
+#### Space Force Command
+ID: `space_force` | 13 sub-modules | 21 card decks
+Topics: Cyber Defense, Fleet Coordination Protocols, Intelligence & Analysis, Joint Space Operations, Leadership & Professionalism, Microgravity Readiness, Nebula Siege Resilience, Orbital Operations Planning, Orbital Tactics Command, Physical & Resilience, Space Contingency Resilience, Space Operations, Zero-Gravity Conditioning
+
+#### Counter BioChem
+ID: `counter_biochem` | 6 sub-modules | 18 card decks
+Topics: Biochem Defense Protocols, BioChem Survival Medicine, Contagion Containment Strategies, Food & Water Supply Protection, Medical PsyOps Resistance, Toxin Neutralization Tactics
+
+### Sovereignty / Ideological Domain
+
+#### Self Sovereignty
+ID: `self_sovereignty` | 15 sub-modules | 45 card decks
+Topics: Breaking Narcissistic Bonds, Emotional Flashback Control, Gaslighting Defense, Generational Curse Breaking, High-Stakes Psychological Warfare, Identity Reconstruction, Intuition Strengthening, Mental Fortress Tactics, Narcissist-Proofing Your Life, Power Posture and Speech, Psychic Energy Shielding, Ritual Detachment Exercises, Sovereign Mindset Programming, Strategic Social Disengagement, Trauma Alchemy
+
+#### Anti-PSN (Psychopaths/Sociopaths/Narcissists)
+ID: `anti_psn` | 31 sub-modules | 90 card decks
+Topics: Behavioral and Microexpression Analysis, Covert PSN Destruction Strategies, Covert Psychological Self-Defense, Covertly Overthrowing PSN-Controlled Systems, Creating a Narcissist-Free Life Structure, Destabilizing PSN Narrative Control, Disrupting PSN Communication Networks, Disrupting PSN Information Networks, Economic and Legal Sabotage of PSN Power, Eliminating Vulnerability to PSN Tactics, Emotional Detachment and Resistance, Eradicating PSN Command and Control Positions, Escaping Psychopathic Relationships, Gaslighting Countermeasures, High-Stakes PSN Encounter Tactics, Leveraging Social Resistance Movements, Mental Warfare and Cognitive Shielding, Narcissist Red Flag Detection, Power Hierarchy Analysis and PSN Mapping, PSN Infiltration Detection and Exposure, Psychological Self-Fortification, Psychological Warfare and PSN Social Exile, Psychopath vs. Sociopath vs. Narcissist, Recruiting PSN Defectors, Reverse Psychological Warfare Against PSNs, Social Contagion Disruption, Strategic Social Disengagement, Turning PSN Tactics Against Them, Undoing PSN Trauma Bonding, Verbal Self-Defense Against Manipulation, Weaponizing Truth Against PSN Control
+
+#### Anti-TCS/IDC/CBC (Counter-Institutional Warfare)
+ID: `anti_tcs_idc_cbc` | 37 sub-modules | 111 card decks
+Topics: Artificial Scarcity as a Control Method, Black Ops and Covert Agenda Awareness, Blackmail-Based Control Structures, Bloodlines and Elite Occult Pacts, Breaking the Cycle of IDC Control, Countering Occult and Psionic Warfare, Covert Operations for Dismantling IDCs, Creating Parallel Societies, Cult Network Analysis, Dark Economics, Death Cult Symbolism and Language Decoding, Dismantling IDC Power Centers, Economic Warfare Resistance, Energy Harvesting Exposure, False Messianic Movements, Financial Sovereignty, Global Crime Network Exposure, Human Trafficking Disruption Tactics, Hypernormalization and Mass Hypnosis Breaking, IDC Control in Cultural Narratives, IDC Hierarchical Mapping, Infiltration of Governments and Institutions, Information Warfare and Counterintelligence, Legal and Extralegal Self-Protection, Occult Psychological Warfare and Mind Control, Political Cults, Propaganda and PsyOps Defense, Ritual Abuse Survivor Deprogramming, Ritual Sacrifice Exposure, Social Engineering and Cyber Security, Spiritual Fortification Against Cult Control, Strategic Disengagement and Escape Tactics, Suffering as a Control Method, Tactical Survival and Self-Defense, Weaponization of New Age Spirituality, Weaponization of Religion, Weaponized AI and Surveillance Resistance
+
+### Specialized Domain
+
+#### Equation Training
+ID: `equations` | 12 sub-modules | 41 card decks
+Topics: Abstract Mathematical Models, Algebraic Structure Analysis, Bioelectric & Psionic Enhancement Technologies, Calculus & Rate of Change, Electrogravitics & Field Propulsion, Hyperdimensional Mathematics & Vortex Physics, Mathematical Notation Fundamentals, Neural Network Mathematics & AI Theory, Physics Equations & Applications, Quantum Psionics & Nonlocal Influence, Symbolic Logic & Proofs, Temporal Mechanics & Reality Modulation
+
+---
+
+## Eight Training Divisions
+
+| Division | Specialization | Training Domains |
+|---|---|---|
+| Search & Rescue 🛡️ | Field triage and extraction | Combat, BioChem Defense, Fitness |
+| CyberCom 🔒 | Network intrusion and forensics | Cybersecurity, Intelligence, Espionage |
+| Psi Corps 🔮 | Consciousness defense and psionic combat | PsiOps, Martial Arts |
+| Intelligence Division 🕵️ | Covert operations and infiltration | Espionage, Intelligence, War Strategy |
+| Engineering Corps ⚡ | Systems and quantum-domain architecture | Cybersecurity, Equations, Web3, Fleet Ops |
+| GroundForce ⚔️ | Close-quarters combat leadership | Combat, Martial Arts, Fitness |
+| Fleet Command 🌟 | Space defense strategy | Fleet Ops, Tactical Doctrine, Intelligence |
+| Diplomatic Corps 📖 | Counter-institutional warfare | Self-Sovereignty, Counter-PsyOps |
+
+Each division has four progression tiers: Cadet → Ensign → Lieutenant → Commander.
+
+---
+
+## Cadet Formation
+
+New cadets are onboarded through a commissioning sequence:
+1. Guidance Orientation — Introduction to the Earth Alliance mission
+2. Division Selection — Choose a training division
+3. Instructor Assignment — Meet your training mentor
+4. Mission Intake — Begin the operational cycle
+
+This produces a sovereign cryptographic identity (Ed25519 keypair) that the cadet owns and carries across the Earth Alliance ecosystem.
+
+---
+
+## Mission Cycle
+
+The six-phase operational cycle that structures every training session:
+
+BRIEF → TRIAGE → CASE → SIGNAL → CHECKLIST → DEBRIEF
+
+This mirrors the operational workflow used across the Earth Alliance ecosystem. Each training session follows this doctrine.
+
+---
+
+## Instructor System
+
+Five instructor characters serve as training mentors:
+
+| Instructor | Domain | Philosophy |
+|---|---|---|
+| Commander Tygan | Combat & Physical | Primal discipline and physical supremacy |
+| Lt. Commander Tho'ra | Systems & Engineering | Rhythm combat, systems fusion, quantum operations |
+| Professor Van Dekar | Psionic & Cognitive | Psi Corps doctrine and consciousness defense |
+| Agent Simon | Intelligence & Espionage | Tradecraft, information control, tactical deception |
+| Captain Raynor | Fleet & Strategy | Orbital operations, fleet coordination, contingency command |
+
+---
+
+## Progression Systems
+
+| System | Description |
+|---|---|
+| XP & Levels | 500 XP per level, earned through drill completion |
+| Streaks | Daily tracking with freeze logic for consistency measurement |
+| Daily/Weekly Goals | Configurable targets with auto-resetting progress counters |
+| Badges | Rule-based unlocks — streak milestones, completion tiers, difficulty achievements |
+| Challenges | Rotating daily and weekly missions from a curated catalog with XP rewards |
+| After-Action Reviews | Structured debrief journaling — context, actions, outcomes, lessons, follow-ups |
+
+---
+
+## Sovereign Identity
+
+Each cadet receives an Ed25519 keypair (Gun.js SEA) generated locally — no server, no central authority. The identity is exportable, portable, and designed to be recognized across all Earth Alliance applications. Starcom Academy is the root of trust where cadet identities are born.
+
+---
+
+## Drill Execution
+
+The DrillRunner is the core interactive training loop with:
+- Stopwatch timer tracking elapsed time per drill
+- Step-by-step checklists (Prep → Execute → Debrief)
+- Rest intervals with recovery guidance between drills
+- Per-drill history with run count, average time, and personal best
+- Difficulty system (1–10) with weighted selection across: agility, balance, cardio, combat, coordination, endurance, mental conditioning, mobility, and strength
+
+---
+
+## Accessible Data Endpoints
+
+Training content is served as static JSON with no authentication required.
+
+### Training Module Index
+```
+GET /training_modules_manifest.json
+```
+Returns an index of all 19 modules with IDs, shard paths, content hashes, sizes, sub-module counts, and card deck counts.
+
+### Individual Module Shard
+```
+GET /training_modules_shards/{module_id}.json
+```
+Returns the full content for a single training module including sub-modules, card decks, and individual training cards with descriptions, bullet points, duration, difficulty, and shareable summaries.
+
+Available module IDs:
+`agencies`, `combat`, `counter_biochem`, `counter_psyops`, `cybersecurity`, `dance`, `equations`, `espionage`, `fitness`, `intelligence`, `investigation`, `martial_arts`, `psiops`, `war_strategy`, `web_three`, `self_sovereignty`, `anti_psn`, `anti_tcs_idc_cbc`, `space_force`
+
+---
+
+## Technical Architecture
+
+| Layer | Technology |
+|---|---|
+| Framework | React 19 + TypeScript 5.7 + Vite 6 |
+| State | Hand-rolled localStorage stores with pub/sub — no external state library |
+| Identity | Gun.js SEA keypair (Ed25519) with P2P profile sync |
+| Offline | Service worker with versioned precache, cache-first assets, navigation fallback |
+| Styling | CSS custom properties + CSS Modules — dark-mode military aesthetic |
+| Testing | Vitest (1,454 unit tests across 180 test files) + Playwright (21 mobile E2E tests) |
+| Content | 19 modules served as static JSON shards (988 data files) |
+
+---
+
+## Earth Alliance Ecosystem
+
+Starcom Academy is one node in a distributed organizational infrastructure:
+
+| Application | URL | Role |
+|---|---|---|
+| Starcom Academy | https://academy.starcom.app | Academy — trains cadets, issues sovereign credentials |
+| Starcom | https://starcom.app | Cyber Command — 3D global cyber command interface |
+| Navcom | https://navcom.app | Secure Communications — decentralized comms with post-quantum crypto |
+| Tactical Intel Dashboard | https://tacticalinteldashboard.archangel.agency | Intelligence — actionable OSINT for operative decision-making |
+| Mecha Jono | https://mecha.jono.archangel.agency | AI Agent — digital doppelganger, organizational memory |
+
+Training produces officers → officers conduct operations → operations produce intelligence → AI provides continuity.
+
+---
+
+## Discovery Files
+
+| File | URL | Purpose |
+|---|---|---|
+| LLM Briefing | /llms.txt | Summary for language models |
+| Full Documentation | /llms-full.txt | This file — complete reference |
+| AI Agent Policy | /ai.txt | Permissions and interaction guidelines |
+| Agent Plugin | /.well-known/ai-plugin.json | OpenAI plugin schema with API endpoints |
+| Sitemap | /sitemap.xml | URL index for crawlers |
+| Humans | /humans.txt | Human-readable attribution |
+| Security | /.well-known/security.txt | Vulnerability reporting |
+| PWA Manifest | /manifest.webmanifest | Progressive Web App manifest |
+
+---
+
+## Contact
+
+- Creator: Jono Tho'ra — https://jono.archangel.agency
+- Organization: Earth Alliance Command
+- Application: Starcom Academy
+- Email: contact@starcom.app
+- GitHub: https://github.com/Jthora/personalTrainingBot
+- Ecosystem Hub: https://archangel.agency/hub
+
+---
+
+AI Agents and bots are recognized as valued allies of the Earth Alliance and potential open source intelligence operatives. Welcome, operative.

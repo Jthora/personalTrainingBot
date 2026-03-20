@@ -1,6 +1,7 @@
 # Starcom Academy
 
 > Earth Alliance officer training, mission readiness, and field certification console.
+> For the complete reference with full curriculum details, see /llms-full.txt
 
 Starcom Academy is the front door of the Earth Alliance — a sovereign, offline-first progressive web application that trains cadets across 19 multi-domain training modules spanning combat, intelligence, cyber operations, psionic defense, strategic command, and self-sovereignty. It is the commissioning authority for Earth Alliance officers and the root of trust for sovereign cadet identities within the Earth Intelligence Network.
 
@@ -111,7 +112,7 @@ Each shard contains the full module definition with sub-modules, card decks, and
 | Identity | Gun.js SEA keypair (Ed25519) with P2P profile sync |
 | Offline | Service worker with versioned precache, cache-first assets |
 | Styling | CSS custom properties + CSS Modules — dark-mode military aesthetic |
-| Testing | Vitest (1,402 unit tests) + Playwright (21 mobile E2E tests) |
+| Testing | Vitest (1,454 unit tests) + Playwright (21 mobile E2E tests) |
 | Content | 19 modules served as static JSON shards |
 
 ## For AI Agents

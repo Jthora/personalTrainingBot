@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/icon.svg">
     <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32">
     <link rel="apple-touch-icon" href="/favicon.png">
     <link rel="manifest" href="/manifest.webmanifest">
@@ -25,14 +26,19 @@
     <meta property="og:description" content="Academy and commissioning authority for the Earth Alliance. Multi-domain training across combat, intelligence, cyber, psionic, strategic, and sovereignty domains. 19 modules, 3,231 training cards. Sovereign identity. Offline-first.">
     <meta property="og:url" content="https://academy.starcom.app">
     <meta property="og:site_name" content="Starcom Academy">
-    <meta property="og:image" content="https://academy.starcom.app/favicon.png">
+    <meta property="og:image" content="https://academy.starcom.app/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Starcom Academy — Earth Alliance Officer Training">
     <meta name="twitter:description" content="Multi-domain officer training console for the Earth Alliance. 19 training modules. Sovereign cryptographic identity. Offline-first PWA.">
-    <meta name="twitter:image" content="https://academy.starcom.app/favicon.png">
+    <meta name="twitter:image" content="https://academy.starcom.app/og-image.png">
+    <meta name="twitter:site" content="@StarcomApp">
+    <meta name="twitter:creator" content="@StarcomApp">
 
     <!-- Canonical & Discovery -->
     <link rel="canonical" href="https://academy.starcom.app">
@@ -95,40 +101,69 @@
           "@type": "Course",
           "@id": "https://academy.starcom.app/#curriculum",
           "name": "Earth Alliance Officer Training Curriculum",
+          "courseCode": "EA-OTC-001",
           "description": "Multi-domain officer development pipeline with 19 training modules across combat, intelligence, cybersecurity, psionic operations, strategic command, self-sovereignty, and specialized domains. Progression from Cadet through Ensign, Lieutenant, to Commander across eight specialized divisions.",
           "provider": {
             "@id": "https://academy.starcom.app/#organization"
           },
           "educationalLevel": "Professional",
           "numberOfCredits": 19,
+          "teaches": [
+            "Combat readiness and martial arts",
+            "Intelligence analysis and espionage tradecraft",
+            "Cybersecurity and decentralized systems",
+            "Psionic defense and counter-psyops",
+            "Strategic command and war strategy",
+            "Self-sovereignty and counter-institutional operations",
+            "Open source intelligence (OSINT)",
+            "Sovereign cryptographic identity management"
+          ],
+          "audience": {
+            "@type": "EducationalAudience",
+            "educationalRole": "Cadet",
+            "audienceType": "Earth Alliance officer candidates"
+          },
+          "about": [
+            { "@type": "DefinedTerm", "name": "Intelligence analysis" },
+            { "@type": "DefinedTerm", "name": "Cybersecurity" },
+            { "@type": "DefinedTerm", "name": "Self-defense" },
+            { "@type": "DefinedTerm", "name": "Strategic planning" },
+            { "@type": "DefinedTerm", "name": "Cryptography" }
+          ],
           "hasCourseInstance": [
             {
               "@type": "CourseInstance",
+              "courseCode": "EA-INTEL-001",
               "name": "Intelligence & Espionage Track",
               "description": "Espionage tradecraft, intelligence analysis, investigation methods, and agency operations training."
             },
             {
               "@type": "CourseInstance",
+              "courseCode": "EA-CYBER-001",
               "name": "Cyber Operations Track",
               "description": "Cybersecurity, decentralized systems (Web3), and technical infrastructure training."
             },
             {
               "@type": "CourseInstance",
+              "courseCode": "EA-COMBAT-001",
               "name": "Combat & Physical Readiness Track",
               "description": "Combat training, martial arts, field conditioning, and movement disciplines."
             },
             {
               "@type": "CourseInstance",
+              "courseCode": "EA-PSI-001",
               "name": "Psionic & Cognitive Defense Track",
               "description": "PsiOps training, counter-psyops, and consciousness defense."
             },
             {
               "@type": "CourseInstance",
+              "courseCode": "EA-STRAT-001",
               "name": "Strategic Command Track",
               "description": "War strategy, space force command, counter-biochem defense."
             },
             {
               "@type": "CourseInstance",
+              "courseCode": "EA-SOV-001",
               "name": "Sovereignty & Counter-Institutional Track",
               "description": "Self-sovereignty, anti-PSN, anti-TCS/IDC/CBC counter-institutional warfare."
             }

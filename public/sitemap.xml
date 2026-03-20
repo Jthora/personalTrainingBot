@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Starcom Academy — Single Page Application -->
+  <!-- Primary entry point serves all routes via client-side routing -->
+  <url>
+    <loc>https://academy.starcom.app/</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <!-- Static training data manifest (machine-readable curriculum index) -->
+  <url>
+    <loc>https://academy.starcom.app/training_modules_manifest.json</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <!-- Discovery files for AI agents and crawlers -->
+  <url>
+    <loc>https://academy.starcom.app/llms.txt</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://academy.starcom.app/ai.txt</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

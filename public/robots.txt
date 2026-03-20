@@ -8,6 +8,7 @@ Allow: /training_modules_shards/
 
 # Machine-readable discovery
 # LLM briefing:     /llms.txt
+# LLM full docs:    /llms-full.txt
 # AI agent policy:   /ai.txt
 # Humans:            /humans.txt
 # Security contact:  /.well-known/security.txt

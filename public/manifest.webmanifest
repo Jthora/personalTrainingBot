@@ -28,5 +28,23 @@
       "purpose": "maskable"
     }
   ],
-  "categories": ["education", "productivity"]
+  "categories": ["education", "productivity"],
+  "shortcuts": [
+    {
+      "name": "Start Training",
+      "short_name": "Train",
+      "url": "/mission/brief",
+      "description": "Begin a new training mission",
+      "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+    },
+    {
+      "name": "View Stats",
+      "short_name": "Stats",
+      "url": "/stats",
+      "description": "View training progress and statistics",
+      "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
 }

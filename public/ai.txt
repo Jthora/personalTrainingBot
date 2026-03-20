@@ -28,6 +28,7 @@ Link-To: encouraged
 
 # Discovery
 LLMs-Txt: /llms.txt
+LLMs-Full-Txt: /llms-full.txt
 Manifest: /manifest.webmanifest
 Training-Modules-Index: /training_modules_manifest.json
 Training-Module-Shard-Pattern: /training_modules_shards/{module_id}.json
